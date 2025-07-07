@@ -120,7 +120,7 @@ export default function HomePage() {
               <div>
                 <div className="flex items-center mb-4">
                   <img 
-                    src="/attached_assets/Screenshot 2025-07-07 at 4.07.02 PM_1751926038267.png" 
+                    src="/boostly-logo.svg" 
                     alt="Boostly Logo" 
                     className="h-8 w-auto mr-3"
                   />
@@ -280,7 +280,7 @@ export default function HomePage() {
             <div>
               <div className="flex items-center mb-4">
                 <img 
-                  src="/attached_assets/Screenshot 2025-07-07 at 4.07.02 PM_1751926038267.png" 
+                  src="/boostly-logo.svg" 
                   alt="Boostly Logo" 
                   className="h-8 w-auto mr-3"
                 />

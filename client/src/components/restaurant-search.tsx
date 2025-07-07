@@ -25,7 +25,7 @@ export default function RestaurantSearch({ onRestaurantSelect }: RestaurantSearc
     return () => clearTimeout(timer);
   }, [searchQuery]);
 
-  const { data: restaurants = [], isLoading } = useQuery({
+  const { data: restaurants = [], isLoading, error } = useQuery({
     queryKey: ["/api/restaurants/search", debouncedQuery],
     queryFn: () => searchRestaurants(debouncedQuery),
     enabled: debouncedQuery.length > 2,
@@ -55,6 +55,12 @@ export default function RestaurantSearch({ onRestaurantSelect }: RestaurantSearc
             )}
           </div>
         </div>
+
+        {error && (
+          <div className="text-center py-4 text-red-500">
+            Error: {error.message}
+          </div>
+        )}
 
         {restaurants.length > 0 && (
           <div className="space-y-3 mb-6">

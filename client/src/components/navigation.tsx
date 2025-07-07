@@ -12,7 +12,7 @@ export default function Navigation() {
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
               <img 
-                src="/attached_assets/Screenshot 2025-07-07 at 4.07.02 PM_1751926038267.png" 
+                src="/boostly-logo.svg" 
                 alt="Boostly Logo" 
                 className="h-8 w-auto mr-3"
               />
