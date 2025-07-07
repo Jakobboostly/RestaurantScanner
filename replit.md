@@ -77,6 +77,16 @@ This is a comprehensive restaurant website scanner application built with React 
 ## Changelog
 
 - July 07, 2025. Initial setup
+- July 07, 2025. Enhanced scanning animation with dynamic loading features:
+  - Added floating background particles with movement and pulsing effects
+  - Implemented scanning beam effects that sweep across the screen
+  - Created double-ring spinning loader with counter-rotation
+  - Enhanced progress bar with animated shine effect and pulsing indicator dot
+  - Added colorful gradients and animations for each scanning step
+  - Implemented minimum 3-second delays for each scanning phase
+  - Added sub-step progress updates for more detailed feedback
+  - Created floating action indicators with rotation animations
+  - Applied glass-morphism design with backdrop blur effects
 
 ## User Preferences
 

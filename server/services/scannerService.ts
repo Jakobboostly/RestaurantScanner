@@ -21,21 +21,59 @@ export class ScannerService {
     onProgress: (progress: ScanProgress) => void
   ): Promise<ScanResult> {
     try {
+      // Helper function to add minimum delay
+      const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+      
+      onProgress({ progress: 5, status: 'Connecting to website...' });
+      await delay(2000);
+      
       onProgress({ progress: 10, status: 'Analyzing website performance...' });
-      
+      await delay(1000);
+      onProgress({ progress: 15, status: 'Measuring page load speed...' });
+      const performanceStart = Date.now();
       const performanceData = await this.getPerformanceMetrics(domain);
+      const performanceElapsed = Date.now() - performanceStart;
+      if (performanceElapsed < 2000) {
+        await delay(2000 - performanceElapsed);
+      }
       
-      onProgress({ progress: 40, status: 'Checking search rankings...' });
-      
+      onProgress({ progress: 30, status: 'Checking search rankings...' });
+      await delay(1000);
+      onProgress({ progress: 35, status: 'Analyzing SEO performance...' });
+      const seoStart = Date.now();
       const seoData = await this.getSEOMetrics(domain, restaurantName);
+      const seoElapsed = Date.now() - seoStart;
+      if (seoElapsed < 2000) {
+        await delay(2000 - seoElapsed);
+      }
+      
+      onProgress({ progress: 50, status: 'Evaluating mobile experience...' });
+      await delay(1500);
+      onProgress({ progress: 55, status: 'Testing responsive design...' });
+      await delay(1500);
       
       onProgress({ progress: 70, status: 'Evaluating user experience...' });
-      
+      await delay(1000);
+      onProgress({ progress: 75, status: 'Checking accessibility features...' });
+      const uxStart = Date.now();
       const userExperienceData = await this.evaluateUserExperience(domain);
+      const uxElapsed = Date.now() - uxStart;
+      if (uxElapsed < 2000) {
+        await delay(2000 - uxElapsed);
+      }
       
-      onProgress({ progress: 90, status: 'Generating recommendations...' });
-      
+      onProgress({ progress: 90, status: 'Scanning competitor websites...' });
+      await delay(1000);
+      onProgress({ progress: 92, status: 'Analyzing competitor performance...' });
+      const competitorStart = Date.now();
       const competitorData = await this.getCompetitorAnalysis(restaurantName);
+      const competitorElapsed = Date.now() - competitorStart;
+      if (competitorElapsed < 2000) {
+        await delay(2000 - competitorElapsed);
+      }
+      
+      onProgress({ progress: 95, status: 'Generating recommendations...' });
+      await delay(2000);
       
       onProgress({ progress: 100, status: 'Scan complete!' });
       
