@@ -11,7 +11,11 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
-              <div className="w-8 h-8 bg-[#28008F] rounded-lg mr-3"></div>
+              <img 
+                src="/attached_assets/Screenshot 2025-07-07 at 4.07.02 PM_1751926038267.png" 
+                alt="Boostly Logo" 
+                className="h-8 w-auto mr-3"
+              />
               <span className="text-xl font-bold text-gray-900">Restaurant Scanner</span>
             </div>
           </div>
