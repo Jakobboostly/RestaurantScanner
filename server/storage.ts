@@ -41,6 +41,11 @@ export class MemStorage implements IStorage {
     const restaurant: Restaurant = {
       ...insertRestaurant,
       id,
+      placeId: insertRestaurant.placeId ?? null,
+      domain: insertRestaurant.domain ?? null,
+      rating: insertRestaurant.rating ?? null,
+      totalRatings: insertRestaurant.totalRatings ?? null,
+      priceLevel: insertRestaurant.priceLevel ?? null,
       createdAt: new Date(),
     };
     this.restaurants.set(id, restaurant);
@@ -65,6 +70,8 @@ export class MemStorage implements IStorage {
     const scan: Scan = {
       ...insertScan,
       id,
+      restaurantId: insertScan.restaurantId ?? null,
+      competitorData: insertScan.competitorData ?? null,
       createdAt: new Date(),
     };
     this.scans.set(id, scan);
