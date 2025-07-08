@@ -68,12 +68,12 @@ function getMockRestaurants(query: string) {
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Get API keys from environment variables
-  const googlePlacesApiKey = process.env.GOOGLE_PLACES_API_KEY;
+  const googlePlacesApiKey = process.env.GOOGLE_API_KEY || process.env.GOOGLE_PLACES_API_KEY;
   const pagespeedApiKey = process.env.PAGESPEED_API_KEY;
   const serpApiKey = process.env.SERP_API_KEY;
 
   if (!googlePlacesApiKey) {
-    console.warn("GOOGLE_PLACES_API_KEY not configured - restaurant search may not work");
+    console.warn("GOOGLE_API_KEY not configured - restaurant search may not work");
   }
 
   const restaurantService = new RestaurantService(googlePlacesApiKey || "");
