@@ -82,6 +82,8 @@ export default function ResultsDashboard({ scanResult, restaurantName }: Results
   };
 
   const getSearchIntentIcon = (intent: string) => {
+    if (!intent) return Target;
+    
     switch (intent.toLowerCase()) {
       case 'navigational': return Navigation;
       case 'informational': return Info;

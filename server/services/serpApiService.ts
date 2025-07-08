@@ -44,6 +44,11 @@ export class SerpApiService {
     location: string = 'United States'
   ): Promise<KeywordRankingAnalysis[]> {
     return limit(async () => {
+      if (!keywords || keywords.length === 0) {
+        console.log('No keywords provided for SERP analysis');
+        return [];
+      }
+      
       const cacheKey = `serp_${domain}_${keywords.join('_')}_${location}`;
       const cached = cache.get<KeywordRankingAnalysis[]>(cacheKey);
       

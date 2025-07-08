@@ -640,7 +640,8 @@ export class ProfessionalScannerService {
     }
     
     // Fallback to Google Places reviews if needed
-    if (reviews.length === 0 && businessProfile.reviews.recent) {
+    if (reviews.length === 0 && businessProfile.reviews && businessProfile.reviews.recent) {
+      console.log('Using Google Places reviews for streaming:', businessProfile.reviews.recent.length);
       const googleReviews = businessProfile.reviews.recent.map((review: any) => ({
         author: review.author_name || 'Anonymous',
         rating: review.rating || 5,
@@ -651,14 +652,21 @@ export class ProfessionalScannerService {
       reviews.push(...googleReviews);
     }
     
+    console.log(`Total reviews available for streaming: ${reviews.length}`);
+    
     // Only proceed with authentic reviews - no synthetic data
     
-    // Stream 10 reviews with proper timing
-    for (let i = 0; i < Math.min(10, reviews.length); i++) {
+    // Stream up to 10 reviews with proper timing
+    const reviewCount = Math.min(10, reviews.length);
+    console.log(`Streaming ${reviewCount} reviews...`);
+    
+    for (let i = 0; i < reviewCount; i++) {
       const review = reviews[i];
+      console.log(`Streaming review ${i + 1}: ${review.author} - ${review.rating} stars`);
+      
       onProgress({ 
         progress: 42 + Math.floor(i * 1.3), // Progress from 42 to 55
-        status: `Analyzing customer review ${i + 1}/10...`,
+        status: `Analyzing customer review ${i + 1}/${reviewCount}...`,
         review: {
           author: review.author,
           rating: review.rating,
@@ -668,6 +676,10 @@ export class ProfessionalScannerService {
         }
       });
       await new Promise(resolve => setTimeout(resolve, 1800)); // 1.8 second delay per review
+    }
+    
+    if (reviewCount === 0) {
+      console.log('No reviews available for streaming - continuing without review display');
     }
   }
   
