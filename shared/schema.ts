@@ -54,6 +54,10 @@ export const restaurantSearchResultSchema = z.object({
   priceLevel: z.number().optional(),
   placeId: z.string().optional(),
   domain: z.string().optional(),
+  location: z.object({
+    lat: z.number(),
+    lng: z.number()
+  }).optional(),
 });
 
 export const scanResultSchema = z.object({

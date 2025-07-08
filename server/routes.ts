@@ -85,6 +85,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
         priceLevel: result.price_level,
         placeId: result.place_id,
         domain: result.website ? new URL(result.website).hostname : null,
+        location: result.geometry?.location ? {
+          lat: result.geometry.location.lat,
+          lng: result.geometry.location.lng
+        } : null,
       }));
 
       res.json(results);
