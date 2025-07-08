@@ -116,19 +116,23 @@ export class ProfessionalScannerService {
     // Step 3.5: Stream real-time reviews if available
     if (this.zembraReviewsService) {
       try {
-        await this.zembraReviewsService.streamReviews(restaurantName, (review) => {
-          onProgress({ 
-            progress: 42, 
-            status: 'Analyzing customer reviews...',
-            review: {
-              author: review.author,
-              rating: review.rating,
-              text: review.text,
-              platform: review.platform,
-              sentiment: review.sentiment
-            }
-          });
-        });
+        const reviews = await this.zembraReviewsService.getRestaurantReviews(restaurantName);
+        if (reviews.recentReviews && reviews.recentReviews.length > 0) {
+          for (const review of reviews.recentReviews.slice(0, 3)) {
+            onProgress({ 
+              progress: 42, 
+              status: 'Analyzing customer reviews...',
+              review: {
+                author: review.author,
+                rating: review.rating,
+                text: review.text,
+                platform: review.platform,
+                sentiment: review.sentiment
+              }
+            });
+            await new Promise(resolve => setTimeout(resolve, 1500));
+          }
+        }
       } catch (error) {
         console.log('Zembratech reviews service unavailable, continuing without reviews');
       }
@@ -254,7 +258,8 @@ export class ProfessionalScannerService {
       const puppeteer = await import('puppeteer');
       const browser = await puppeteer.launch({
         headless: true,
-        args: ['--no-sandbox', '--disable-setuid-sandbox']
+        args: ['--no-sandbox', '--disable-setuid-sandbox'],
+        executablePath: '/nix/store/zi4f80l169xlmivz8vja8wlphq74qqk0-chromium-125.0.6422.141/bin/chromium'
       });
       
       const page = await browser.newPage();
@@ -296,7 +301,8 @@ export class ProfessionalScannerService {
       const puppeteer = await import('puppeteer');
       const browser = await puppeteer.launch({
         headless: true,
-        args: ['--no-sandbox', '--disable-setuid-sandbox']
+        args: ['--no-sandbox', '--disable-setuid-sandbox'],
+        executablePath: '/nix/store/zi4f80l169xlmivz8vja8wlphq74qqk0-chromium-125.0.6422.141/bin/chromium'
       });
       
       const page = await browser.newPage();

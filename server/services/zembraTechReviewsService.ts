@@ -164,57 +164,8 @@ export class ZembraTechReviewsService {
         
         return reviews;
       } catch (error) {
-        console.error('Review streaming failed, using sample data for demonstration:', error);
-        
-        // For demonstration purposes, stream sample reviews
-        const sampleReviews: ZembraReview[] = [
-          {
-            id: '1',
-            author: 'Sarah M.',
-            rating: 5,
-            title: 'Excellent Experience',
-            text: 'Amazing food quality and outstanding service. The atmosphere was perfect for our date night.',
-            date: new Date().toISOString(),
-            sentiment: 'positive',
-            platform: 'Google',
-            helpful: true,
-            verified: true
-          },
-          {
-            id: '2',
-            author: 'Michael R.',
-            rating: 4,
-            title: 'Great Local Spot',
-            text: 'Really enjoyed the fresh ingredients and friendly staff. Will definitely come back.',
-            date: new Date().toISOString(),
-            sentiment: 'positive',
-            platform: 'Yelp',
-            helpful: false,
-            verified: false
-          },
-          {
-            id: '3',
-            author: 'Jessica L.',
-            rating: 5,
-            title: 'Fantastic Restaurant',
-            text: 'Best dining experience in the area. The chef knows how to create incredible flavors.',
-            date: new Date().toISOString(),
-            sentiment: 'positive',
-            platform: 'Google',
-            helpful: true,
-            verified: true
-          }
-        ];
-        
-        if (onReview) {
-          for (const review of sampleReviews) {
-            onReview(review);
-            // 1.5-second delay between reviews for streaming effect
-            await new Promise(resolve => setTimeout(resolve, 1500));
-          }
-        }
-        
-        return sampleReviews;
+        console.error('Review streaming failed:', error);
+        return [];
       }
     });
   }
