@@ -9,6 +9,16 @@ export interface MobileExperience {
   navigationEasy: boolean;
   issues: string[];
   recommendations: string[];
+  screenshot?: string;
+  contentAnalysis?: {
+    title: string;
+    metaDescription: string;
+    hasSchemaMarkup: boolean;
+    h1Tags: string[];
+    imageCount: number;
+    internalLinks: number;
+    externalLinks: number;
+  };
 }
 
 export class MobileExperienceService {
@@ -40,6 +50,38 @@ export class MobileExperienceService {
         timeout: 30000
       });
       const loadTime = Date.now() - startTime;
+
+      // Capture mobile screenshot
+      console.log('Capturing mobile screenshot...');
+      const screenshot = await page.screenshot({ 
+        encoding: 'base64',
+        fullPage: false,
+        type: 'png'
+      });
+      console.log('Screenshot captured, size:', screenshot.length);
+
+      // Analyze page content
+      console.log('Analyzing page content...');
+      const contentAnalysis = await page.evaluate(() => {
+        const title = document.querySelector('title')?.textContent || '';
+        const metaDescription = document.querySelector('meta[name="description"]')?.getAttribute('content') || '';
+        const hasSchemaMarkup = document.querySelector('script[type="application/ld+json"]') !== null;
+        const h1Tags = Array.from(document.querySelectorAll('h1')).map(h1 => h1.textContent || '');
+        const imageCount = document.querySelectorAll('img').length;
+        const internalLinks = document.querySelectorAll('a[href^="/"], a[href^="./"], a[href^="../"]').length;
+        const externalLinks = document.querySelectorAll('a[href^="http"]:not([href*="' + window.location.hostname + '"])').length;
+        
+        return {
+          title,
+          metaDescription,
+          hasSchemaMarkup,
+          h1Tags,
+          imageCount,
+          internalLinks,
+          externalLinks
+        };
+      });
+      console.log('Content analysis result:', contentAnalysis);
 
       // Analyze mobile experience
       const analysis = await page.evaluate(() => {
@@ -121,6 +163,8 @@ export class MobileExperienceService {
         navigationEasy: analysis.navigationEasy,
         issues: analysis.issues,
         recommendations: analysis.recommendations,
+        screenshot: `data:image/png;base64,${screenshot}`,
+        contentAnalysis
       };
 
     } catch (error) {

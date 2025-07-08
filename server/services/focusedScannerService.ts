@@ -34,11 +34,17 @@ export class FocusedScannerService {
 
       // Phase 2: Competitor Analysis
       onProgress({ progress: 30, status: 'Finding nearby competitors...' });
-      const competitors = await this.googleBusinessService.findCompetitors(
-        restaurantName,
-        latitude,
-        longitude
-      );
+      let competitors = [];
+      try {
+        competitors = await this.googleBusinessService.findCompetitors(
+          restaurantName,
+          latitude,
+          longitude
+        );
+      } catch (error) {
+        console.error('Competitor analysis failed:', error);
+        // Continue without competitor data
+      }
       await delay(1000);
 
       // Phase 3: Mobile Experience Analysis
@@ -120,15 +126,15 @@ export class FocusedScannerService {
         overallScore: Math.round(comp.rating * 20),
         isYou: false,
       })),
-      screenshot: null,
+      screenshot: mobileExperience.screenshot || null,
       seoAnalysis: {
-        title: businessProfile.name,
-        metaDescription: `${businessProfile.name} - ${businessProfile.totalReviews} reviews`,
-        h1Tags: [businessProfile.name],
-        imageCount: businessProfile.photos.total,
-        internalLinks: 0,
-        externalLinks: 0,
-        schemaMarkup: true, // Most restaurant sites have basic schema
+        title: mobileExperience.contentAnalysis?.title || businessProfile.name,
+        metaDescription: mobileExperience.contentAnalysis?.metaDescription || `${businessProfile.name} - ${businessProfile.totalReviews} reviews`,
+        h1Tags: mobileExperience.contentAnalysis?.h1Tags || [businessProfile.name],
+        imageCount: mobileExperience.contentAnalysis?.imageCount || businessProfile.photos.total,
+        internalLinks: mobileExperience.contentAnalysis?.internalLinks || 0,
+        externalLinks: mobileExperience.contentAnalysis?.externalLinks || 0,
+        schemaMarkup: mobileExperience.contentAnalysis?.hasSchemaMarkup || false
       },
       metrics: {
         fcp: mobileExperience.loadTime / 1000,
