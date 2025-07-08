@@ -3,6 +3,7 @@ import { LighthouseService } from './lighthouseService';
 import { SerpApiService } from './serpApiService';
 import { ContentAnalysisService } from './contentAnalysisService';
 import { CompetitorService } from './competitorService';
+import { ZembraTechReviewsService } from './zembraTechReviewsService';
 import { ScanResult } from '../../../shared/schema';
 
 export interface ScanProgress {
@@ -63,17 +64,23 @@ export class ProfessionalScannerService {
   private serpApiService: SerpApiService;
   private contentAnalysisService: ContentAnalysisService;
   private competitorService: CompetitorService;
+  private zembraReviewsService: ZembraTechReviewsService | null = null;
 
   constructor(
     googleApiKey: string,
     serpApiKey: string,
-    pageSpeedApiKey: string
+    pageSpeedApiKey: string,
+    zembraApiKey?: string
   ) {
     this.googleBusinessService = new GoogleBusinessService(googleApiKey);
     this.lighthouseService = new LighthouseService();
     this.serpApiService = new SerpApiService(serpApiKey);
     this.contentAnalysisService = new ContentAnalysisService();
     this.competitorService = new CompetitorService(googleApiKey);
+    
+    if (zembraApiKey) {
+      this.zembraReviewsService = new ZembraTechReviewsService(zembraApiKey);
+    }
   }
 
   async scanRestaurantProfessional(
@@ -98,6 +105,23 @@ export class ProfessionalScannerService {
     const contentAnalysis = await this.contentAnalysisService.analyzeContent(domain);
     const metaTags = await this.extractMetaTags(domain);
     const socialLinks = await this.extractSocialLinks(domain);
+    
+    // Step 3.5: Stream real-time reviews if available
+    if (this.zembraReviewsService) {
+      this.zembraReviewsService.streamReviews(restaurantName, (review) => {
+        onProgress({ 
+          progress: 42, 
+          status: 'Analyzing customer reviews...',
+          review: {
+            author: review.author,
+            rating: review.rating,
+            text: review.text,
+            platform: review.platform,
+            sentiment: review.sentiment
+          }
+        });
+      });
+    }
     
     // Step 4: Keyword ranking analysis
     onProgress({ progress: 55, status: 'Analyzing keyword rankings...' });

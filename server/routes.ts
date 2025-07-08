@@ -37,9 +37,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
     professionalScannerService = new ProfessionalScannerService(
       GOOGLE_API_KEY,
       SERP_API_KEY,
-      PAGESPEED_API_KEY
+      PAGESPEED_API_KEY,
+      ZEMBRATECH_API_KEY
     );
-    console.log("Professional scanner enabled with Google Places, Lighthouse, SERP, and Puppeteer");
+    console.log("Professional scanner enabled with Google Places, Lighthouse, SERP, Puppeteer, and Zembratech Reviews");
   } else {
     console.log("Professional scanner disabled - requires GOOGLE_API_KEY, SERP_API_KEY, and PAGESPEED_API_KEY");
   }
