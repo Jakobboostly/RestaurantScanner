@@ -71,26 +71,28 @@ export default function RestaurantSearch({ onRestaurantSelect }: RestaurantSearc
             </p>
           </div>
           
-          <div className="relative max-w-2xl mx-auto">
-            <div className="relative">
-              <Input
-                type="text"
-                placeholder="Search restaurant name or city..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-14 pr-4 py-6 text-lg border-0 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg focus:ring-4 focus:ring-white/30 focus:bg-white transition-all duration-300"
-              />
-              <Search className="absolute left-4 top-6 h-6 w-6 text-gray-400" />
-              {isLoading && (
-                <div className="absolute right-4 top-6">
-                  <div className="animate-spin rounded-full h-6 w-6 border-2 border-purple-500 border-t-transparent"></div>
-                </div>
-              )}
-            </div>
-            
-            <div className="flex items-center justify-center mt-4 text-purple-200 text-sm">
-              <Zap className="h-4 w-4 mr-1" />
-              No signup required • Get results in 30 seconds
+          <div className="flex flex-col items-center justify-center">
+            <div className="relative w-full max-w-2xl mx-auto">
+              <div className="relative">
+                <Input
+                  type="text"
+                  placeholder="Search restaurant name or city..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-full pl-14 pr-4 py-6 text-lg border-0 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg focus:ring-4 focus:ring-white/30 focus:bg-white transition-all duration-300 text-center"
+                />
+                <Search className="absolute left-4 top-6 h-6 w-6 text-gray-400" />
+                {isLoading && (
+                  <div className="absolute right-4 top-6">
+                    <div className="animate-spin rounded-full h-6 w-6 border-2 border-purple-500 border-t-transparent"></div>
+                  </div>
+                )}
+              </div>
+              
+              <div className="flex items-center justify-center mt-4 text-purple-200 text-sm">
+                <Zap className="h-4 w-4 mr-1" />
+                No signup required • Get results in 30 seconds
+              </div>
             </div>
           </div>
         </div>
