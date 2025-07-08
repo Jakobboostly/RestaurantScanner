@@ -162,7 +162,7 @@ export class ProfessionalScannerService {
     
     for (const keyword of keywords) {
       try {
-        const serpResult = await this.serpApiService.searchKeyword(keyword);
+        const serpResult = await this.serpApiService.searchGoogle(keyword);
         const position = this.findDomainPosition(serpResult, domain);
         
         rankings.push({
