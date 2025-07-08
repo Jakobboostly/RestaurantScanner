@@ -79,9 +79,9 @@ export default function RestaurantSearch({ onRestaurantSelect }: RestaurantSearc
                   placeholder="Search restaurant name or city..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-14 pr-14 py-6 text-lg border-0 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg focus:ring-4 focus:ring-white/30 focus:bg-white transition-all duration-300 text-center"
+                  className="w-full pl-14 pr-4 py-6 text-lg border-0 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg focus:ring-4 focus:ring-white/30 focus:bg-white transition-all duration-300 text-center"
                 />
-                <Search className="absolute left-1/2 top-6 h-6 w-6 text-gray-400 transform -translate-x-1/2" />
+                <Search className="absolute left-4 top-1/2 h-6 w-6 text-gray-400 transform -translate-y-1/2" />
                 {isLoading && (
                   <div className="absolute right-4 top-6">
                     <div className="animate-spin rounded-full h-6 w-6 border-2 border-purple-500 border-t-transparent"></div>
