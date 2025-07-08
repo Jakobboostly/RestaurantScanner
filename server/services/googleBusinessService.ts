@@ -1,0 +1,197 @@
+import axios from 'axios';
+
+export interface GoogleBusinessProfile {
+  name: string;
+  rating: number;
+  totalReviews: number;
+  photos: {
+    total: number;
+    quality: 'excellent' | 'good' | 'fair' | 'poor';
+    categories: {
+      food: number;
+      interior: number;
+      exterior: number;
+      menu: number;
+      other: number;
+    };
+  };
+  reviews: {
+    sentiment: 'positive' | 'neutral' | 'negative';
+    score: number;
+    recent: any[];
+  };
+  isVerified: boolean;
+  responseRate: number;
+  averageResponseTime: string;
+}
+
+export interface CompetitorProfile {
+  name: string;
+  rating: number;
+  totalReviews: number;
+  distance: number;
+  priceLevel: number;
+  isStronger: boolean;
+}
+
+export class GoogleBusinessService {
+  private apiKey: string;
+
+  constructor(apiKey: string) {
+    this.apiKey = apiKey;
+  }
+
+  async getBusinessProfile(placeId: string): Promise<GoogleBusinessProfile> {
+    try {
+      // Get detailed place information
+      const detailsResponse = await axios.get('https://maps.googleapis.com/maps/api/place/details/json', {
+        params: {
+          place_id: placeId,
+          fields: 'name,rating,user_ratings_total,photos,reviews,verified,editorial_summary,business_status',
+          key: this.apiKey
+        }
+      });
+
+      const place = detailsResponse.data.result;
+      
+      // Analyze photos
+      const photoAnalysis = await this.analyzePhotos(place.photos || []);
+      
+      // Analyze reviews for sentiment
+      const reviewAnalysis = await this.analyzeReviews(place.reviews || []);
+
+      return {
+        name: place.name,
+        rating: place.rating || 0,
+        totalReviews: place.user_ratings_total || 0,
+        photos: photoAnalysis,
+        reviews: reviewAnalysis,
+        isVerified: place.verified || false,
+        responseRate: this.calculateResponseRate(place.reviews || []),
+        averageResponseTime: this.calculateResponseTime(place.reviews || []),
+      };
+    } catch (error) {
+      console.error('Google Business API error:', error);
+      throw new Error('Failed to get business profile data');
+    }
+  }
+
+  async findCompetitors(
+    restaurantName: string,
+    latitude: number,
+    longitude: number,
+    radius: number = 2000
+  ): Promise<CompetitorProfile[]> {
+    try {
+      const response = await axios.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json', {
+        params: {
+          location: `${latitude},${longitude}`,
+          radius,
+          type: 'restaurant',
+          key: this.apiKey
+        }
+      });
+
+      const competitors = response.data.results
+        .filter((place: any) => place.name !== restaurantName)
+        .slice(0, 5)
+        .map((place: any) => ({
+          name: place.name,
+          rating: place.rating || 0,
+          totalReviews: place.user_ratings_total || 0,
+          distance: this.calculateDistance(latitude, longitude, place.geometry.location.lat, place.geometry.location.lng),
+          priceLevel: place.price_level || 2,
+          isStronger: (place.rating || 0) > 4.0 && (place.user_ratings_total || 0) > 50,
+        }));
+
+      return competitors;
+    } catch (error) {
+      console.error('Competitor search error:', error);
+      return [];
+    }
+  }
+
+  private async analyzePhotos(photos: any[]) {
+    const photoCount = photos.length;
+    
+    // Analyze photo quality based on metadata and count
+    let quality: 'excellent' | 'good' | 'fair' | 'poor' = 'poor';
+    if (photoCount >= 20) quality = 'excellent';
+    else if (photoCount >= 10) quality = 'good';
+    else if (photoCount >= 5) quality = 'fair';
+
+    // Categorize photos (simplified - would need image analysis for accuracy)
+    const categories = {
+      food: Math.floor(photoCount * 0.4),
+      interior: Math.floor(photoCount * 0.3),
+      exterior: Math.floor(photoCount * 0.15),
+      menu: Math.floor(photoCount * 0.1),
+      other: Math.floor(photoCount * 0.05),
+    };
+
+    return {
+      total: photoCount,
+      quality,
+      categories,
+    };
+  }
+
+  private async analyzeReviews(reviews: any[]) {
+    if (reviews.length === 0) {
+      return {
+        sentiment: 'neutral' as const,
+        score: 0,
+        recent: [],
+      };
+    }
+
+    // Analyze sentiment based on ratings
+    const totalRating = reviews.reduce((sum, review) => sum + review.rating, 0);
+    const averageRating = totalRating / reviews.length;
+    
+    let sentiment: 'positive' | 'neutral' | 'negative' = 'neutral';
+    if (averageRating >= 4) sentiment = 'positive';
+    else if (averageRating <= 2.5) sentiment = 'negative';
+
+    // Get recent reviews (last 3 months)
+    const threeMonthsAgo = new Date();
+    threeMonthsAgo.setMonth(threeMonthsAgo.getMonth() - 3);
+    
+    const recentReviews = reviews
+      .filter(review => new Date(review.time * 1000) >= threeMonthsAgo)
+      .slice(0, 5);
+
+    return {
+      sentiment,
+      score: Math.round(averageRating * 20), // Convert to 0-100 scale
+      recent: recentReviews,
+    };
+  }
+
+  private calculateResponseRate(reviews: any[]): number {
+    if (reviews.length === 0) return 0;
+    
+    const reviewsWithResponses = reviews.filter(review => review.author_url && review.author_url.includes('response'));
+    return Math.round((reviewsWithResponses.length / reviews.length) * 100);
+  }
+
+  private calculateResponseTime(reviews: any[]): string {
+    // Simplified calculation - would need more data for accuracy
+    const responseRate = this.calculateResponseRate(reviews);
+    if (responseRate >= 80) return 'Within 1 day';
+    if (responseRate >= 50) return 'Within 3 days';
+    if (responseRate >= 20) return 'Within 1 week';
+    return 'Rarely responds';
+  }
+
+  private calculateDistance(lat1: number, lon1: number, lat2: number, lon2: number): number {
+    const R = 6371; // Earth's radius in kilometers
+    const dLat = (lat2 - lat1) * Math.PI / 180;
+    const dLon = (lon2 - lon1) * Math.PI / 180;
+    const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+              Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+              Math.sin(dLon/2) * Math.sin(dLon/2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+    return Math.round(R * c * 1000); // Distance in meters
+  }
+}

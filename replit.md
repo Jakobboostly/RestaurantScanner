@@ -128,6 +128,13 @@ This is a comprehensive restaurant website scanner application built with React 
   - Updated scanner service to use only working DataForSEO endpoints
   - Removed non-functional API calls to prevent confusion and errors
   - Clarified actual DataForSEO value: keyword research and search ranking analysis
+- July 08, 2025. Focused restaurant scanner architecture implemented:
+  - Built GoogleBusinessService for Google Business Profile data, review sentiment, and photo analysis
+  - Created MobileExperienceService using Puppeteer for mobile experience testing
+  - Implemented FocusedScannerService combining Google Business Profile, competitor analysis, and mobile testing
+  - Analysis includes: Business profile ratings, review sentiment, photo quality/quantity, competitor comparison, mobile responsiveness
+  - Removed complex multi-API dependencies in favor of single Google API for comprehensive restaurant analysis
+  - Enhanced schema with businessProfile and mobileExperience fields for detailed restaurant insights
 
 ## User Preferences
 

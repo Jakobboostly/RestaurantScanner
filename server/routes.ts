@@ -2,7 +2,7 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { RestaurantService } from "./services/restaurantService";
-import { DataForSeoScannerService } from "./services/dataForSeoScannerService";
+import { FocusedScannerService } from "./services/focusedScannerService";
 import { restaurantSearchResultSchema, scanResultSchema } from "@shared/schema";
 import { z } from "zod";
 
@@ -10,16 +10,14 @@ import { z } from "zod";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // API credentials
-  const GOOGLE_PLACES_API_KEY = process.env.GOOGLE_PLACES_API_KEY || process.env.GOOGLE_API_KEY;
-  const DATAFORSEO_LOGIN = "jakob@boostly.com";
-  const DATAFORSEO_PASSWORD = "eba05fd94be85e56";
+  const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY || process.env.GOOGLE_PLACES_API_KEY;
 
-  if (!GOOGLE_PLACES_API_KEY) {
-    console.warn("GOOGLE_PLACES_API_KEY not configured - restaurant search may not work");
+  if (!GOOGLE_API_KEY) {
+    console.warn("GOOGLE_API_KEY not configured - restaurant search and analysis may not work");
   }
 
-  const restaurantService = new RestaurantService(GOOGLE_PLACES_API_KEY || "");
-  const scannerService = new DataForSeoScannerService(DATAFORSEO_LOGIN, DATAFORSEO_PASSWORD);
+  const restaurantService = new RestaurantService(GOOGLE_API_KEY || "");
+  const scannerService = new FocusedScannerService(GOOGLE_API_KEY || "");
 
   // Restaurant search endpoint
   app.get("/api/restaurants/search", async (req, res) => {
@@ -93,14 +91,15 @@ export async function registerRoutes(app: Express): Promise<Server> {
         'Access-Control-Allow-Origin': '*',
       });
 
-      const scanResult = await scannerService.scanWebsite(
+      const scanResult = await scannerService.scanRestaurant(
+        placeId,
         domain,
         restaurantName,
+        latitude || 0,
+        longitude || 0,
         (progress) => {
           res.write(`data: ${JSON.stringify(progress)}\n\n`);
-        },
-        latitude,
-        longitude
+        }
       );
 
       // Send final result
