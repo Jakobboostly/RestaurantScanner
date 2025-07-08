@@ -1,22 +1,34 @@
 import { GoogleBusinessService } from './googleBusinessService.js';
 import { MobileExperienceService } from './mobileExperienceService.js';
 import { PerformanceService } from './performanceService.js';
+import { ZembraTechReviewsService } from './zembraTechReviewsService.js';
 import { ScanResult } from '@shared/schema';
 
 export interface ScanProgress {
   progress: number;
   status: string;
+  review?: {
+    author: string;
+    rating: number;
+    text: string;
+    platform: string;
+    sentiment: 'positive' | 'neutral' | 'negative';
+  };
 }
 
 export class FocusedScannerService {
   private googleBusinessService: GoogleBusinessService;
   private mobileExperienceService: MobileExperienceService;
   private performanceService: PerformanceService;
+  private zembraReviewsService: ZembraTechReviewsService | null = null;
 
-  constructor(googleApiKey: string, pageSpeedApiKey: string) {
+  constructor(googleApiKey: string, pageSpeedApiKey: string, zembraApiKey?: string) {
     this.googleBusinessService = new GoogleBusinessService(googleApiKey);
     this.mobileExperienceService = new MobileExperienceService();
     this.performanceService = new PerformanceService(pageSpeedApiKey);
+    if (zembraApiKey) {
+      this.zembraReviewsService = new ZembraTechReviewsService(zembraApiKey);
+    }
   }
 
   async scanRestaurant(
@@ -35,7 +47,7 @@ export class FocusedScannerService {
       const businessProfile = await this.googleBusinessService.getBusinessProfile(placeId);
       await delay(1000);
 
-      // Phase 2: Competitor Analysis
+      // Phase 2: Competitor Analysis & Reviews
       onProgress({ progress: 30, status: 'Finding nearby competitors...' });
       let competitors = [];
       try {
@@ -44,11 +56,40 @@ export class FocusedScannerService {
           latitude,
           longitude
         );
+        console.log('Found competitors:', competitors.length);
       } catch (error) {
         console.error('Competitor analysis failed:', error);
         // Continue without competitor data
       }
       await delay(1000);
+
+      // Phase 2b: Fetch Reviews with streaming
+      if (this.zembraReviewsService) {
+        onProgress({ progress: 35, status: 'Analyzing customer reviews...' });
+        try {
+          await this.zembraReviewsService.getReviewsStream(
+            restaurantName,
+            domain,
+            undefined,
+            (review) => {
+              onProgress({ 
+                progress: 35, 
+                status: 'Analyzing customer reviews...',
+                review: {
+                  author: review.author,
+                  rating: review.rating,
+                  text: review.text,
+                  platform: review.platform,
+                  sentiment: review.sentiment
+                }
+              });
+            }
+          );
+        } catch (error) {
+          console.error('Review analysis failed:', error);
+        }
+        await delay(1000);
+      }
 
       // Phase 3: Performance Analysis
       onProgress({ progress: 50, status: 'Analyzing website performance metrics...' });

@@ -19,6 +19,13 @@ export default function HomePage() {
   const [scanProgress, setScanProgress] = useState(0);
   const [scanStatus, setScanStatus] = useState('');
   const [scanResult, setScanResult] = useState<ScanResult | null>(null);
+  const [currentReview, setCurrentReview] = useState<{
+    author: string;
+    rating: number;
+    text: string;
+    platform: string;
+    sentiment: 'positive' | 'neutral' | 'negative';
+  } | null>(null);
   const { toast } = useToast();
 
   const handleRestaurantSelect = async (restaurant: RestaurantSearchResult) => {
@@ -46,6 +53,9 @@ export default function HomePage() {
         (progress) => {
           setScanProgress(progress.progress);
           setScanStatus(progress.status);
+          if (progress.review) {
+            setCurrentReview(progress.review);
+          }
         },
         restaurant.location?.lat,
         restaurant.location?.lng
@@ -80,6 +90,7 @@ export default function HomePage() {
           progress={scanProgress}
           status={scanStatus}
           restaurantName={selectedRestaurant.name}
+          currentReview={currentReview}
         />
       </div>
     );

@@ -26,7 +26,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
   }
 
   const restaurantService = new RestaurantService(GOOGLE_API_KEY || "");
-  const scannerService = new FocusedScannerService(GOOGLE_API_KEY || "", PAGESPEED_API_KEY || "");
+  const ZEMBRATECH_API_KEY = process.env.ZEMBRATECH_API_KEY;
+  const scannerService = new FocusedScannerService(GOOGLE_API_KEY || "", PAGESPEED_API_KEY || "", ZEMBRATECH_API_KEY);
   
   // Advanced scanner with SEO intelligence (if credentials available)
   let advancedScannerService: AdvancedScannerService | null = null;

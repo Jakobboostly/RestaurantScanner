@@ -77,7 +77,7 @@ export class ScreenshotService {
         });
 
         // Wait a bit for dynamic content
-        await page.waitForTimeout(1000);
+        await new Promise(resolve => setTimeout(resolve, 1000));
 
         // Capture screenshot
         const screenshot = await page.screenshot({

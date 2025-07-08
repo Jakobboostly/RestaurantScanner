@@ -1,5 +1,5 @@
 import { ContentAnalysisService } from './contentAnalysisService';
-import { screenshotService } from './screenshotService';
+import { lighthouseScreenshotService } from './lighthouseScreenshotService';
 
 export interface MobileExperience {
   score: number;
@@ -33,14 +33,14 @@ export class MobileExperienceService {
     try {
       console.log('Starting mobile experience analysis for:', url);
 
-      // Run content analysis and screenshot capture in parallel
-      const [contentAnalysis, screenshotResult] = await Promise.all([
+      // Run content analysis and lighthouse screenshot capture in parallel
+      const [contentAnalysis, lighthouseResult] = await Promise.all([
         this.contentAnalysisService.analyzeContent(url),
-        screenshotService.captureScreenshot(url)
+        lighthouseScreenshotService.captureScreenshotWithMetrics(url)
       ]);
 
       console.log('Content analysis completed:', contentAnalysis.success);
-      console.log('Screenshot captured:', screenshotResult.success);
+      console.log('Lighthouse screenshot captured:', lighthouseResult.success);
 
       // Analyze mobile experience based on content analysis
       const issues: string[] = [];
@@ -107,7 +107,7 @@ export class MobileExperienceService {
         navigationEasy,
         issues,
         recommendations,
-        screenshot: screenshotResult.screenshot || undefined,
+        screenshot: lighthouseResult.screenshot || undefined,
         contentAnalysis: contentAnalysis.success ? {
           title: contentAnalysis.title,
           metaDescription: contentAnalysis.metaDescription,

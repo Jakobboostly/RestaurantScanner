@@ -769,7 +769,7 @@ export default function ResultsDashboard({ scanResult, restaurantName }: Results
 
           {/* Competitors Tab */}
           <TabsContent value="competitors" className="space-y-6">
-            {scanResult.competitorData && scanResult.competitorData.length > 0 && (
+            {scanResult.competitors && scanResult.competitors.length > 0 && (
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -786,7 +786,7 @@ export default function ResultsDashboard({ scanResult, restaurantName }: Results
                   </CardHeader>
                   <CardContent>
                     <div className="space-y-4">
-                      {scanResult.competitorData.map((competitor, index) => (
+                      {scanResult.competitors.map((competitor, index) => (
                         <div key={index} className={`p-4 rounded-lg border-2 ${competitor.isYou ? 'bg-blue-50 border-blue-200' : 'bg-gray-50 border-gray-200'}`}>
                           <div className="flex items-center justify-between">
                             <div className="flex items-center space-x-3">
@@ -805,19 +805,19 @@ export default function ResultsDashboard({ scanResult, restaurantName }: Results
                                   )}
                                 </div>
                                 <div className="text-sm text-gray-500">
-                                  Overall Score: {competitor.score}/100
+                                  Overall Score: {competitor.overallScore || competitor.score || 0}/100
                                 </div>
                               </div>
                             </div>
                             <div className="text-right">
-                              <div className={`text-2xl font-bold ${getScoreColor(competitor.score)}`}>
-                                {competitor.score}
+                              <div className={`text-2xl font-bold ${getScoreColor(competitor.overallScore || competitor.score || 0)}`}>
+                                {competitor.overallScore || competitor.score || 0}
                               </div>
                               <div className="text-xs text-gray-500">Score</div>
                             </div>
                           </div>
                           <div className="mt-3">
-                            <Progress value={competitor.score} className="h-2" />
+                            <Progress value={competitor.overallScore || competitor.score || 0} className="h-2" />
                           </div>
                         </div>
                       ))}
@@ -825,6 +825,16 @@ export default function ResultsDashboard({ scanResult, restaurantName }: Results
                   </CardContent>
                 </Card>
               </motion.div>
+            )}
+            
+            {(!scanResult.competitors || scanResult.competitors.length === 0) && (
+              <div className="text-center py-12">
+                <Users className="w-16 h-16 text-gray-300 mx-auto mb-4" />
+                <h3 className="text-lg font-medium text-gray-900 mb-2">No Competitors Found</h3>
+                <p className="text-gray-500">
+                  We couldn't find any nearby competitors to analyze. This could be due to location data or API limitations.
+                </p>
+              </div>
             )}
           </TabsContent>
 
