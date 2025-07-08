@@ -244,22 +244,22 @@ export default function ResultsDashboard({ scanResult, restaurantName }: Results
                 <div className="grid grid-cols-2 gap-4">
                   <div className="text-center p-4 bg-gray-50 rounded-lg">
                     <Zap className="h-6 w-6 text-orange-500 mx-auto mb-2" />
-                    <div className="text-lg font-semibold text-gray-900">{scanResult.performanceScore}</div>
+                    <div className="text-lg font-semibold text-gray-900">{scanResult.performance}</div>
                     <div className="text-sm text-gray-500">Performance</div>
                   </div>
                   <div className="text-center p-4 bg-gray-50 rounded-lg">
                     <Search className="h-6 w-6 text-blue-500 mx-auto mb-2" />
-                    <div className="text-lg font-semibold text-gray-900">{scanResult.seoScore}</div>
+                    <div className="text-lg font-semibold text-gray-900">{scanResult.seo}</div>
                     <div className="text-sm text-gray-500">SEO</div>
                   </div>
                   <div className="text-center p-4 bg-gray-50 rounded-lg">
                     <Smartphone className="h-6 w-6 text-green-500 mx-auto mb-2" />
-                    <div className="text-lg font-semibold text-gray-900">{scanResult.mobileScore}</div>
+                    <div className="text-lg font-semibold text-gray-900">{scanResult.mobile}</div>
                     <div className="text-sm text-gray-500">Mobile</div>
                   </div>
                   <div className="text-center p-4 bg-gray-50 rounded-lg">
                     <Users className="h-6 w-6 text-purple-500 mx-auto mb-2" />
-                    <div className="text-lg font-semibold text-gray-900">{scanResult.userExperienceScore}</div>
+                    <div className="text-lg font-semibold text-gray-900">{scanResult.userExperience}</div>
                     <div className="text-sm text-gray-500">User Experience</div>
                   </div>
                 </div>
@@ -315,24 +315,24 @@ export default function ResultsDashboard({ scanResult, restaurantName }: Results
                         </div>
                         <CardTitle className="text-lg">Performance</CardTitle>
                       </div>
-                      <Badge className={getScoreBadgeColor(scanResult.performanceScore)}>
-                        {scanResult.performanceScore}/100
+                      <Badge className={getScoreBadgeColor(scanResult.performance)}>
+                        {scanResult.performance}/100
                       </Badge>
                     </div>
                   </CardHeader>
                   <CardContent>
                     <div className="space-y-3">
                       <Progress 
-                        value={scanResult.performanceScore} 
+                        value={scanResult.performance} 
                         className="h-2"
-                        style={{ '--progress-background': getProgressColor(scanResult.performanceScore) } as any}
+                        style={{ '--progress-background': getProgressColor(scanResult.performance) } as any}
                       />
                       <div className="flex items-center justify-between text-sm">
                         <span className="text-gray-600">Speed & Loading</span>
-                        <span className={getScoreColor(scanResult.performanceScore)}>
-                          {scanResult.performanceScore >= 80 ? 'Excellent' : 
-                           scanResult.performanceScore >= 60 ? 'Good' : 
-                           scanResult.performanceScore >= 40 ? 'Fair' : 'Poor'}
+                        <span className={getScoreColor(scanResult.performance)}>
+                          {scanResult.performance >= 80 ? 'Excellent' : 
+                           scanResult.performance >= 60 ? 'Good' : 
+                           scanResult.performance >= 40 ? 'Fair' : 'Poor'}
                         </span>
                       </div>
                     </div>
@@ -355,24 +355,24 @@ export default function ResultsDashboard({ scanResult, restaurantName }: Results
                         </div>
                         <CardTitle className="text-lg">SEO</CardTitle>
                       </div>
-                      <Badge className={getScoreBadgeColor(scanResult.seoScore)}>
-                        {scanResult.seoScore}/100
+                      <Badge className={getScoreBadgeColor(scanResult.seo)}>
+                        {scanResult.seo}/100
                       </Badge>
                     </div>
                   </CardHeader>
                   <CardContent>
                     <div className="space-y-3">
                       <Progress 
-                        value={scanResult.seoScore} 
+                        value={scanResult.seo} 
                         className="h-2"
-                        style={{ '--progress-background': getProgressColor(scanResult.seoScore) } as any}
+                        style={{ '--progress-background': getProgressColor(scanResult.seo) } as any}
                       />
                       <div className="flex items-center justify-between text-sm">
                         <span className="text-gray-600">Search Visibility</span>
-                        <span className={getScoreColor(scanResult.seoScore)}>
-                          {scanResult.seoScore >= 80 ? 'Excellent' : 
-                           scanResult.seoScore >= 60 ? 'Good' : 
-                           scanResult.seoScore >= 40 ? 'Fair' : 'Poor'}
+                        <span className={getScoreColor(scanResult.seo)}>
+                          {scanResult.seo >= 80 ? 'Excellent' : 
+                           scanResult.seo >= 60 ? 'Good' : 
+                           scanResult.seo >= 40 ? 'Fair' : 'Poor'}
                         </span>
                       </div>
                     </div>
@@ -395,24 +395,24 @@ export default function ResultsDashboard({ scanResult, restaurantName }: Results
                         </div>
                         <CardTitle className="text-lg">Mobile</CardTitle>
                       </div>
-                      <Badge className={getScoreBadgeColor(scanResult.mobileScore)}>
-                        {scanResult.mobileScore}/100
+                      <Badge className={getScoreBadgeColor(scanResult.mobile)}>
+                        {scanResult.mobile}/100
                       </Badge>
                     </div>
                   </CardHeader>
                   <CardContent>
                     <div className="space-y-3">
                       <Progress 
-                        value={scanResult.mobileScore} 
+                        value={scanResult.mobile} 
                         className="h-2"
-                        style={{ '--progress-background': getProgressColor(scanResult.mobileScore) } as any}
+                        style={{ '--progress-background': getProgressColor(scanResult.mobile) } as any}
                       />
                       <div className="flex items-center justify-between text-sm">
                         <span className="text-gray-600">Mobile Experience</span>
-                        <span className={getScoreColor(scanResult.mobileScore)}>
-                          {scanResult.mobileScore >= 80 ? 'Excellent' : 
-                           scanResult.mobileScore >= 60 ? 'Good' : 
-                           scanResult.mobileScore >= 40 ? 'Fair' : 'Poor'}
+                        <span className={getScoreColor(scanResult.mobile)}>
+                          {scanResult.mobile >= 80 ? 'Excellent' : 
+                           scanResult.mobile >= 60 ? 'Good' : 
+                           scanResult.mobile >= 40 ? 'Fair' : 'Poor'}
                         </span>
                       </div>
                     </div>
@@ -729,21 +729,21 @@ export default function ResultsDashboard({ scanResult, restaurantName }: Results
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
                       <span className="text-sm">Mobile Score</span>
-                      <Badge className={getScoreBadgeColor(scanResult.mobileScore)}>
-                        {scanResult.mobileScore}/100
+                      <Badge className={getScoreBadgeColor(scanResult.mobile)}>
+                        {scanResult.mobile}/100
                       </Badge>
                     </div>
-                    <Progress value={scanResult.mobileScore} className="h-2" />
+                    <Progress value={scanResult.mobile} className="h-2" />
                   </div>
 
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
                       <span className="text-sm">User Experience</span>
-                      <Badge className={getScoreBadgeColor(scanResult.userExperienceScore)}>
-                        {scanResult.userExperienceScore}/100
+                      <Badge className={getScoreBadgeColor(scanResult.userExperience)}>
+                        {scanResult.userExperience}/100
                       </Badge>
                     </div>
-                    <Progress value={scanResult.userExperienceScore} className="h-2" />
+                    <Progress value={scanResult.userExperience} className="h-2" />
                   </div>
 
                   <div className="pt-4 border-t">
