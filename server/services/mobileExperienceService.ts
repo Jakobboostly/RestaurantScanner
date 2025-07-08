@@ -63,9 +63,9 @@ export class MobileExperienceService {
       // Analyze page content
       console.log('Analyzing page content...');
       const contentAnalysis = await page.evaluate(() => {
-        const sanitizeText = (text) => {
+        function sanitizeText(text) {
           return text.replace(/[\x00-\x1f\x7f-\x9f"'\\]/g, '').replace(/\s+/g, ' ').trim();
-        };
+        }
         
         const title = sanitizeText(document.querySelector('title')?.textContent || '');
         const metaDescription = sanitizeText(document.querySelector('meta[name="description"]')?.getAttribute('content') || '');
