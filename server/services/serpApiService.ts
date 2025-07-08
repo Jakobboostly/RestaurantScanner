@@ -245,6 +245,53 @@ export class SerpApiService {
     return opportunities;
   }
 
+  async searchGoogle(keyword: string, location: string = 'United States'): Promise<any> {
+    return limit(async () => {
+      const cacheKey = `google_${keyword}_${location}`;
+      const cached = cache.get(cacheKey);
+      
+      if (cached) {
+        return cached;
+      }
+
+      try {
+        const response = await axios.get(this.baseUrl, {
+          params: {
+            q: keyword,
+            location,
+            hl: 'en',
+            gl: 'us',
+            api_key: this.apiKey,
+            engine: 'google',
+            num: 10
+          },
+          timeout: 15000
+        });
+
+        const result = {
+          organic_results: response.data.organic_results || [],
+          local_results: response.data.local_results || [],
+          keyword,
+          location
+        };
+
+        // Cache the results
+        cache.set(cacheKey, result);
+        
+        return result;
+
+      } catch (error) {
+        console.error(`SERP search failed for keyword "${keyword}":`, error);
+        return {
+          organic_results: [],
+          local_results: [],
+          keyword,
+          location
+        };
+      }
+    });
+  }
+
   clearCache(): void {
     cache.flushAll();
   }
