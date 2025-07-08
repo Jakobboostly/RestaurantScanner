@@ -381,56 +381,108 @@ export default function ScanningAnimation({ progress, status, restaurantName, cu
           </motion.div>
         </motion.div>
 
-        {/* Review Streaming Display */}
+        {/* Review Streaming Display - Left Side */}
         <AnimatePresence>
           {currentReview && (
-            <motion.div
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -100 }}
-              className="fixed right-6 top-1/2 transform -translate-y-1/2 z-50"
-            >
-              <Card className="w-80 bg-white/95 backdrop-blur-sm border-l-4 border-l-[#28008F] shadow-xl">
-                <CardContent className="p-4">
-                  <div className="flex items-start space-x-3">
-                    <div className="flex-shrink-0">
-                      <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
-                        currentReview.sentiment === 'positive' ? 'bg-green-100 text-green-600' :
-                        currentReview.sentiment === 'negative' ? 'bg-red-100 text-red-600' :
-                        'bg-gray-100 text-gray-600'
-                      }`}>
-                        <MessageCircle className="w-4 h-4" />
-                      </div>
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center space-x-2 mb-1">
-                        <p className="text-sm font-medium text-gray-900 truncate">
-                          {currentReview.author}
-                        </p>
-                        <div className="flex items-center space-x-1">
-                          {[...Array(5)].map((_, i) => (
-                            <Star
-                              key={i}
-                              className={`w-3 h-3 ${
-                                i < currentReview.rating 
-                                  ? 'text-yellow-400 fill-current' 
-                                  : 'text-gray-300'
-                              }`}
-                            />
-                          ))}
+            <>
+              <motion.div
+                initial={{ opacity: 0, x: -100 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -100 }}
+                className="fixed left-6 top-1/3 transform -translate-y-1/2 z-50"
+              >
+                <Card className="w-80 bg-white/95 backdrop-blur-sm border-l-4 border-l-[#28008F] shadow-xl">
+                  <CardContent className="p-4">
+                    <div className="flex items-start space-x-3">
+                      <div className="flex-shrink-0">
+                        <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
+                          currentReview.sentiment === 'positive' ? 'bg-green-100 text-green-600' :
+                          currentReview.sentiment === 'negative' ? 'bg-red-100 text-red-600' :
+                          'bg-gray-100 text-gray-600'
+                        }`}>
+                          <MessageCircle className="w-4 h-4" />
                         </div>
                       </div>
-                      <p className="text-xs text-gray-500 mb-2 capitalize">
-                        {currentReview.platform}
-                      </p>
-                      <p className="text-sm text-gray-700 line-clamp-3">
-                        {currentReview.text}
-                      </p>
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center space-x-2 mb-1">
+                          <p className="text-sm font-medium text-gray-900 truncate">
+                            {currentReview.author}
+                          </p>
+                          <div className="flex items-center space-x-1">
+                            {[...Array(5)].map((_, i) => (
+                              <Star
+                                key={i}
+                                className={`w-3 h-3 ${
+                                  i < currentReview.rating 
+                                    ? 'text-yellow-400 fill-current' 
+                                    : 'text-gray-300'
+                                }`}
+                              />
+                            ))}
+                          </div>
+                        </div>
+                        <p className="text-xs text-gray-500 mb-2 capitalize">
+                          {currentReview.platform}
+                        </p>
+                        <p className="text-sm text-gray-700 line-clamp-3">
+                          {currentReview.text}
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </motion.div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+
+              {/* Review Streaming Display - Right Side */}
+              <motion.div
+                initial={{ opacity: 0, x: 100 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: 100 }}
+                className="fixed right-6 top-2/3 transform -translate-y-1/2 z-50"
+                transition={{ delay: 0.5 }}
+              >
+                <Card className="w-80 bg-white/95 backdrop-blur-sm border-r-4 border-r-[#28008F] shadow-xl">
+                  <CardContent className="p-4">
+                    <div className="flex items-start space-x-3">
+                      <div className="flex-shrink-0">
+                        <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
+                          currentReview.sentiment === 'positive' ? 'bg-green-100 text-green-600' :
+                          currentReview.sentiment === 'negative' ? 'bg-red-100 text-red-600' :
+                          'bg-gray-100 text-gray-600'
+                        }`}>
+                          <MessageCircle className="w-4 h-4" />
+                        </div>
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center space-x-2 mb-1">
+                          <p className="text-sm font-medium text-gray-900 truncate">
+                            Customer Review
+                          </p>
+                          <div className="flex items-center space-x-1">
+                            {[...Array(5)].map((_, i) => (
+                              <Star
+                                key={i}
+                                className={`w-3 h-3 ${
+                                  i < currentReview.rating 
+                                    ? 'text-yellow-400 fill-current' 
+                                    : 'text-gray-300'
+                                }`}
+                              />
+                            ))}
+                          </div>
+                        </div>
+                        <p className="text-xs text-gray-500 mb-2 capitalize">
+                          {currentReview.platform} Review
+                        </p>
+                        <p className="text-sm text-gray-700 line-clamp-3">
+                          "{currentReview.text}"
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            </>
           )}
         </AnimatePresence>
       </div>

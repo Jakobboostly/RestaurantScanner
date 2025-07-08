@@ -103,9 +103,11 @@ export class ContentAnalysisService {
 
   private sanitizeText(text: string): string {
     return text
-      .replace(/[\x00-\x1f\x7f-\x9f"'\\]/g, '') // Remove control characters and quotes
+      .replace(/[\x00-\x1f\x7f-\x9f]/g, '') // Remove control characters
+      .replace(/["'\\]/g, '') // Remove quotes and backslashes that break JSON
       .replace(/\s+/g, ' ') // Normalize whitespace
+      .replace(/[^\w\s\.\,\!\?\-\(\)]/g, '') // Keep only safe characters
       .trim()
-      .substring(0, 500); // Limit length
+      .substring(0, 200); // Limit length
   }
 }
