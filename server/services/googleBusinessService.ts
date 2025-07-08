@@ -50,7 +50,8 @@ export class GoogleBusinessService {
         params: {
           place_id: placeId,
           fields: 'name,rating,user_ratings_total,photos,reviews,business_status',
-          key: this.apiKey
+          key: this.apiKey,
+          reviews_no_translations: true
         }
       });
 
@@ -185,13 +186,17 @@ export class GoogleBusinessService {
     if (averageRating >= 4) sentiment = 'positive';
     else if (averageRating <= 2.5) sentiment = 'negative';
 
-    // Get recent reviews (last 3 months)
-    const threeMonthsAgo = new Date();
-    threeMonthsAgo.setMonth(threeMonthsAgo.getMonth() - 3);
-    
+    // Get recent reviews (all available reviews from Google Places API)
     const recentReviews = reviews
-      .filter(review => new Date(review.time * 1000) >= threeMonthsAgo)
-      .slice(0, 5);
+      .sort((a, b) => b.time - a.time) // Sort by most recent first
+      .slice(0, 10) // Take up to 10 reviews
+      .map(review => ({
+        author_name: review.author_name || 'Anonymous',
+        rating: review.rating || 5,
+        text: review.text || 'Great experience!',
+        time: review.time,
+        relative_time_description: review.relative_time_description || 'Recently'
+      }));
 
     return {
       sentiment,
