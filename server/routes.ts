@@ -4,6 +4,7 @@ import { storage } from "./storage";
 import { RestaurantService } from "./services/restaurantService";
 import { FocusedScannerService } from "./services/focusedScannerService";
 import { AdvancedScannerService } from "./services/advancedScannerService";
+import { ProfessionalScannerService } from "./services/professionalScannerService";
 import { restaurantSearchResultSchema, scanResultSchema } from "@shared/schema";
 import { JsonSanitizer } from "./utils/jsonSanitizer";
 import { z } from "zod";
@@ -29,6 +30,19 @@ export async function registerRoutes(app: Express): Promise<Server> {
   const restaurantService = new RestaurantService(GOOGLE_API_KEY || "");
   const ZEMBRATECH_API_KEY = process.env.ZEMBRATECH_API_KEY;
   const scannerService = new FocusedScannerService(GOOGLE_API_KEY || "", PAGESPEED_API_KEY || "", ZEMBRATECH_API_KEY);
+  
+  // Professional scanner with Google Places, Lighthouse, SERP, and Puppeteer
+  let professionalScannerService: ProfessionalScannerService | null = null;
+  if (GOOGLE_API_KEY && SERP_API_KEY && PAGESPEED_API_KEY) {
+    professionalScannerService = new ProfessionalScannerService(
+      GOOGLE_API_KEY,
+      SERP_API_KEY,
+      PAGESPEED_API_KEY
+    );
+    console.log("Professional scanner enabled with Google Places, Lighthouse, SERP, and Puppeteer");
+  } else {
+    console.log("Professional scanner disabled - requires GOOGLE_API_KEY, SERP_API_KEY, and PAGESPEED_API_KEY");
+  }
   
   // Advanced scanner with SEO intelligence (if credentials available)
   let advancedScannerService: AdvancedScannerService | null = null;
@@ -190,6 +204,58 @@ export async function registerRoutes(app: Express): Promise<Server> {
     } catch (error) {
       console.error("Scan history error:", error);
       res.status(500).json({ error: "Failed to get scan history" });
+    }
+  });
+
+  // Professional scan endpoint (Google Places, Lighthouse, SERP, Puppeteer)
+  app.post("/api/scan/professional", async (req, res) => {
+    if (!professionalScannerService) {
+      return res.status(503).json({ 
+        error: "Professional scanning not available. Missing GOOGLE_API_KEY, SERP_API_KEY, or PAGESPEED_API_KEY" 
+      });
+    }
+
+    try {
+      const { domain, restaurantName, placeId, latitude, longitude } = req.body;
+      
+      if (!domain) {
+        return res.status(400).json({ error: "Domain is required" });
+      }
+
+      // Set up Server-Sent Events
+      res.setHeader('Content-Type', 'text/event-stream');
+      res.setHeader('Cache-Control', 'no-cache');
+      res.setHeader('Connection', 'keep-alive');
+      res.setHeader('Access-Control-Allow-Origin', '*');
+      res.setHeader('Access-Control-Allow-Headers', 'Cache-Control');
+
+      const scanResult = await professionalScannerService.scanRestaurantProfessional(
+        domain,
+        restaurantName || 'Unknown Restaurant',
+        placeId || '',
+        latitude || 0,
+        longitude || 0,
+        (progress) => {
+          const progressJson = JsonSanitizer.safeStringify(progress);
+          res.write(`data: ${progressJson}\n\n`);
+        }
+      );
+
+      // Send completion message
+      const completionMessage = JsonSanitizer.safeStringify({
+        type: 'complete',
+        result: scanResult
+      });
+      res.write(`data: ${completionMessage}\n\n`);
+      res.end();
+    } catch (error) {
+      console.error("Professional scan error:", error);
+      const errorMessage = JsonSanitizer.safeStringify({
+        type: 'error',
+        error: error instanceof Error ? error.message : 'Scan failed'
+      });
+      res.write(`data: ${errorMessage}\n\n`);
+      res.end();
     }
   });
 

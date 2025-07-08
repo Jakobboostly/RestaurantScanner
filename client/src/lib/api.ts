@@ -29,7 +29,8 @@ export async function scanWebsite(
   latitude?: number,
   longitude?: number
 ): Promise<ScanResult> {
-  const response = await fetch('/api/scan', {
+  // Use professional scanner for comprehensive analysis
+  const response = await fetch('/api/scan/professional', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

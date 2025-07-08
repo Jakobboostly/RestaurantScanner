@@ -187,3 +187,5 @@ This is a comprehensive restaurant website scanner application built with React 
 
 Preferred communication style: Simple, everyday language.
 Data integrity: No mock data - system must work with authentic data only, gracefully handling API failures with empty states.
+Required APIs: Google Places API for restaurant search, Lighthouse for performance audit, SERP API for keyword rankings, Puppeteer for mobile screenshots.
+Core requirements: Performance scores, SEO analysis, mobile testing, keyword rankings (10 keywords), 5 competitors analysis, action plan with priority issues, meta tags extraction, social links detection.
