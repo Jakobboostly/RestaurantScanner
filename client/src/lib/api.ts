@@ -58,15 +58,21 @@ export async function scanWebsite(
       const lines = chunk.split('\n');
 
       for (const line of lines) {
-        if (line.startsWith('data: ')) {
-          const data = JSON.parse(line.slice(6));
-          
-          if (data.type === 'complete') {
-            scanResult = data.result;
-          } else if (data.type === 'error') {
-            throw new Error(data.error);
-          } else if (onProgress) {
-            onProgress(data);
+        if (line.startsWith('data: ') && line.length > 6) {
+          try {
+            const data = JSON.parse(line.slice(6));
+            console.log('SSE message received:', data);
+            
+            if (data.type === 'complete') {
+              scanResult = data.result;
+              console.log('Scan complete, result received');
+            } else if (data.type === 'error') {
+              throw new Error(data.error);
+            } else if (onProgress) {
+              onProgress(data);
+            }
+          } catch (parseError) {
+            console.error('Failed to parse SSE message:', line, parseError);
           }
         }
       }
