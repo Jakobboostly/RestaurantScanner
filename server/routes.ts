@@ -5,6 +5,7 @@ import { RestaurantService } from "./services/restaurantService";
 import { FocusedScannerService } from "./services/focusedScannerService";
 import { AdvancedScannerService } from "./services/advancedScannerService";
 import { restaurantSearchResultSchema, scanResultSchema } from "@shared/schema";
+import { JsonSanitizer } from "./utils/jsonSanitizer";
 import { z } from "zod";
 
 
@@ -123,17 +124,24 @@ export async function registerRoutes(app: Express): Promise<Server> {
         latitude || 0,
         longitude || 0,
         (progress) => {
-          res.write(`data: ${JSON.stringify(progress)}\n\n`);
+          const jsonString = JsonSanitizer.safeStringify(progress);
+          if (JsonSanitizer.isValidJson(jsonString)) {
+            res.write(`data: ${jsonString}\n\n`);
+          } else {
+            console.error('Invalid JSON in progress update:', jsonString);
+            res.write(`data: ${JsonSanitizer.safeStringify({ progress: 0, status: 'Processing...' })}\n\n`);
+          }
         }
       );
 
-      // Send final result with proper JSON sanitization
-      try {
-        const sanitizedResult = JSON.parse(JSON.stringify(scanResult));
-        res.write(`data: ${JSON.stringify({ type: 'complete', result: sanitizedResult })}\n\n`);
-      } catch (jsonError) {
-        console.error('JSON serialization error:', jsonError);
-        res.write(`data: ${JSON.stringify({ type: 'error', error: 'Failed to serialize scan result' })}\n\n`);
+      // Send final result with robust JSON sanitization
+      const finalResult = { type: 'complete', result: scanResult };
+      const jsonString = JsonSanitizer.safeStringify(finalResult);
+      if (JsonSanitizer.isValidJson(jsonString)) {
+        res.write(`data: ${jsonString}\n\n`);
+      } else {
+        console.error('Failed to serialize final scan result');
+        res.write(`data: ${JsonSanitizer.safeStringify({ type: 'error', error: 'Failed to serialize scan result' })}\n\n`);
       }
       res.end();
 
@@ -167,7 +175,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
       }
     } catch (error) {
       console.error("Website scan error:", error);
-      res.write(`data: ${JSON.stringify({ type: 'error', error: 'Failed to scan website' })}\n\n`);
+      const errorMsg = JsonSanitizer.safeStringify({ type: 'error', error: 'Failed to scan website' });
+      res.write(`data: ${errorMsg}\n\n`);
       res.end();
     }
   });
@@ -216,17 +225,24 @@ export async function registerRoutes(app: Express): Promise<Server> {
         latitude || 0,
         longitude || 0,
         (progress) => {
-          res.write(`data: ${JSON.stringify(progress)}\n\n`);
+          const jsonString = JsonSanitizer.safeStringify(progress);
+          if (JsonSanitizer.isValidJson(jsonString)) {
+            res.write(`data: ${jsonString}\n\n`);
+          } else {
+            console.error('Invalid JSON in advanced progress update:', jsonString);
+            res.write(`data: ${JsonSanitizer.safeStringify({ progress: 0, status: 'Processing...' })}\n\n`);
+          }
         }
       );
 
-      // Send final result with proper JSON sanitization
-      try {
-        const sanitizedResult = JSON.parse(JSON.stringify(scanResult));
-        res.write(`data: ${JSON.stringify({ type: 'complete', result: sanitizedResult })}\n\n`);
-      } catch (jsonError) {
-        console.error('JSON serialization error:', jsonError);
-        res.write(`data: ${JSON.stringify({ type: 'error', error: 'Failed to serialize advanced scan result' })}\n\n`);
+      // Send final result with robust JSON sanitization
+      const finalResult = { type: 'complete', result: scanResult };
+      const jsonString = JsonSanitizer.safeStringify(finalResult);
+      if (JsonSanitizer.isValidJson(jsonString)) {
+        res.write(`data: ${jsonString}\n\n`);
+      } else {
+        console.error('Failed to serialize advanced scan result');
+        res.write(`data: ${JsonSanitizer.safeStringify({ type: 'error', error: 'Failed to serialize advanced scan result' })}\n\n`);
       }
       res.end();
 
