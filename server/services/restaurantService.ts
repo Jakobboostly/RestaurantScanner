@@ -44,6 +44,9 @@ export class RestaurantService {
 
   async getRestaurantDetails(placeId: string): Promise<{ website?: string; phone?: string }> {
     try {
+      console.log(`Fetching details for place ID: ${placeId}`);
+      console.log(`API Key present: ${!!this.googlePlacesApiKey}`);
+      
       const response = await axios.get(
         `https://maps.googleapis.com/maps/api/place/details/json`,
         {
@@ -55,6 +58,9 @@ export class RestaurantService {
         }
       );
 
+      console.log(`API Response status: ${response.data.status}`);
+      console.log(`API Response:`, response.data);
+
       if (response.data.status !== 'OK') {
         throw new Error(`Google Places API error: ${response.data.status}`);
       }
@@ -62,6 +68,10 @@ export class RestaurantService {
       return response.data.result;
     } catch (error) {
       console.error('Restaurant details error:', error);
+      if (error.response) {
+        console.error('Response data:', error.response.data);
+        console.error('Response status:', error.response.status);
+      }
       throw new Error('Failed to get restaurant details');
     }
   }

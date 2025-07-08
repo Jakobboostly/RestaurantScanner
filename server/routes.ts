@@ -58,8 +58,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
     try {
       const { placeId } = req.params;
       
-      if (!GOOGLE_PLACES_API_KEY) {
-        return res.status(500).json({ error: "Google Places API key not configured" });
+      if (!GOOGLE_API_KEY) {
+        return res.status(500).json({ error: "Google API key not configured" });
       }
 
       const details = await restaurantService.getRestaurantDetails(placeId);
