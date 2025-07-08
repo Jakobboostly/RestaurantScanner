@@ -109,17 +109,32 @@ export class ScannerService {
         }
       );
 
+      console.log('PageSpeed API response status:', response.status);
+      console.log('PageSpeed API response keys:', Object.keys(response.data));
+      
       const { lighthouseResult } = response.data;
       
+      if (!lighthouseResult) {
+        console.error('No lighthouseResult in response:', response.data);
+        throw new Error('Invalid PageSpeed API response structure');
+      }
+      
+      if (!lighthouseResult.categories) {
+        console.error('No categories in lighthouseResult:', lighthouseResult);
+        throw new Error('Missing categories in PageSpeed API response');
+      }
+      
+      console.log('Available categories:', Object.keys(lighthouseResult.categories));
+      
       return {
-        performance: Math.round(lighthouseResult.categories.performance.score * 100),
-        seo: Math.round(lighthouseResult.categories.seo.score * 100),
-        accessibility: Math.round(lighthouseResult.categories.accessibility.score * 100),
-        bestPractices: Math.round(lighthouseResult.categories['best-practices'].score * 100),
-        metrics: lighthouseResult.audits,
+        performance: lighthouseResult.categories.performance?.score ? Math.round(lighthouseResult.categories.performance.score * 100) : 0,
+        seo: lighthouseResult.categories.seo?.score ? Math.round(lighthouseResult.categories.seo.score * 100) : 0,
+        accessibility: lighthouseResult.categories.accessibility?.score ? Math.round(lighthouseResult.categories.accessibility.score * 100) : 0,
+        bestPractices: lighthouseResult.categories['best-practices']?.score ? Math.round(lighthouseResult.categories['best-practices'].score * 100) : 0,
+        metrics: lighthouseResult.audits || {},
       };
     } catch (error) {
-      console.warn('PageSpeed API failed, using mock data:', error);
+      console.error('PageSpeed API failed, using mock data:', error);
       return this.getMockPerformanceData();
     }
   }
