@@ -522,7 +522,7 @@ export class ScannerService {
       const keywords = this.generateRestaurantKeywords(restaurantName);
       const keywordResults = [];
 
-      for (const keyword of keywords.slice(0, 5)) { // Limit to top 5 keywords
+      for (const keyword of keywords.slice(0, 10)) { // Limit to top 10 keywords
         try {
           const response = await axios.get('https://serpapi.com/search', {
             params: {
@@ -682,6 +682,20 @@ export class ScannerService {
         intent: 'Transactional'
       },
       {
+        keyword: `${restaurantName} hours`,
+        position: 5,
+        searchVolume: 450,
+        difficulty: 20,
+        intent: 'Informational'
+      },
+      {
+        keyword: `${restaurantName} location`,
+        position: 2,
+        searchVolume: 350,
+        difficulty: 15,
+        intent: 'Local'
+      },
+      {
         keyword: 'restaurants near me',
         position: 15,
         searchVolume: 4500,
@@ -694,6 +708,27 @@ export class ScannerService {
         searchVolume: 2200,
         difficulty: 85,
         intent: 'Research'
+      },
+      {
+        keyword: 'food delivery near me',
+        position: 22,
+        searchVolume: 3200,
+        difficulty: 65,
+        intent: 'Transactional'
+      },
+      {
+        keyword: 'italian restaurant',
+        position: 8,
+        searchVolume: 1800,
+        difficulty: 55,
+        intent: 'Local'
+      },
+      {
+        keyword: 'restaurant reservations',
+        position: 12,
+        searchVolume: 950,
+        difficulty: 40,
+        intent: 'Transactional'
       }
     ];
 
