@@ -28,7 +28,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         return res.status(400).json({ error: "Query parameter 'q' is required" });
       }
 
-      if (!GOOGLE_PLACES_API_KEY) {
+      if (!GOOGLE_API_KEY) {
         return res.status(500).json({ 
           error: "Google Places API key not configured. Please configure API key to search restaurants." 
         });

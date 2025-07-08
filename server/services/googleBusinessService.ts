@@ -43,16 +43,40 @@ export class GoogleBusinessService {
 
   async getBusinessProfile(placeId: string): Promise<GoogleBusinessProfile> {
     try {
+      console.log('Fetching business profile for place ID:', placeId);
+      
       // Get detailed place information
       const detailsResponse = await axios.get('https://maps.googleapis.com/maps/api/place/details/json', {
         params: {
           place_id: placeId,
-          fields: 'name,rating,user_ratings_total,photos,reviews,verified,editorial_summary,business_status',
+          fields: 'name,rating,user_ratings_total,photos,reviews,business_status',
           key: this.apiKey
         }
       });
 
+      console.log('Google API Response Status:', detailsResponse.data.status);
+      
+      if (detailsResponse.data.status !== 'OK') {
+        console.error('Google Places API Error:', detailsResponse.data);
+        throw new Error(`Google Places API error: ${detailsResponse.data.status}`);
+      }
+
       const place = detailsResponse.data.result;
+      
+      if (!place) {
+        console.error('Google Places API Response:', detailsResponse.data);
+        throw new Error('No place data found');
+      }
+      
+      console.log('Place data received:', {
+        name: place.name,
+        rating: place.rating,
+        totalReviews: place.user_ratings_total,
+        hasPhotos: !!place.photos,
+        photoCount: place.photos ? place.photos.length : 0,
+        hasReviews: !!place.reviews,
+        reviewCount: place.reviews ? place.reviews.length : 0
+      });
       
       // Analyze photos
       const photoAnalysis = await this.analyzePhotos(place.photos || []);
@@ -61,12 +85,12 @@ export class GoogleBusinessService {
       const reviewAnalysis = await this.analyzeReviews(place.reviews || []);
 
       return {
-        name: place.name,
+        name: place.name || 'Unknown Restaurant',
         rating: place.rating || 0,
         totalReviews: place.user_ratings_total || 0,
         photos: photoAnalysis,
         reviews: reviewAnalysis,
-        isVerified: place.verified || false,
+        isVerified: place.business_status === 'OPERATIONAL',
         responseRate: this.calculateResponseRate(place.reviews || []),
         averageResponseTime: this.calculateResponseTime(place.reviews || []),
       };
