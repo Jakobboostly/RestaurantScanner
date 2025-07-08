@@ -95,6 +95,8 @@ export default function ResultsDashboard({ scanResult, restaurantName }: Results
   };
 
   const getSearchIntentColor = (intent: string) => {
+    if (!intent) return 'text-gray-600 bg-gray-100';
+    
     switch (intent.toLowerCase()) {
       case 'navigational': return 'text-blue-600 bg-blue-100';
       case 'informational': return 'text-purple-600 bg-purple-100';
@@ -465,7 +467,7 @@ export default function ResultsDashboard({ scanResult, restaurantName }: Results
 
           {/* Keywords Tab */}
           <TabsContent value="keywords" className="space-y-6">
-            {scanResult.keywordData && (
+            {scanResult.keywords && scanResult.keywords.length > 0 && (
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -476,21 +478,25 @@ export default function ResultsDashboard({ scanResult, restaurantName }: Results
                   <Card className="text-center">
                     <CardContent className="p-4">
                       <Target className="h-8 w-8 text-blue-500 mx-auto mb-2" />
-                      <div className="text-2xl font-bold text-gray-900">{scanResult.keywordData.totalKeywords}</div>
+                      <div className="text-2xl font-bold text-gray-900">{scanResult.keywords.length || 0}</div>
                       <div className="text-sm text-gray-500">Total Keywords</div>
                     </CardContent>
                   </Card>
                   <Card className="text-center">
                     <CardContent className="p-4">
                       <TrendingUp className="h-8 w-8 text-green-500 mx-auto mb-2" />
-                      <div className="text-2xl font-bold text-gray-900">{scanResult.keywordData.averagePosition || 'N/A'}</div>
+                      <div className="text-2xl font-bold text-gray-900">
+                        {scanResult.keywords.length > 0 ? Math.round(scanResult.keywords.filter(k => k.position).reduce((acc, k) => acc + k.position!, 0) / scanResult.keywords.filter(k => k.position).length) || 'N/A' : 'N/A'}
+                      </div>
                       <div className="text-sm text-gray-500">Avg Position</div>
                     </CardContent>
                   </Card>
                   <Card className="text-center">
                     <CardContent className="p-4">
                       <Eye className="h-8 w-8 text-purple-500 mx-auto mb-2" />
-                      <div className="text-2xl font-bold text-gray-900">{scanResult.keywordData.visibilityScore}%</div>
+                      <div className="text-2xl font-bold text-gray-900">
+                        {scanResult.keywords.length > 0 ? Math.round((scanResult.keywords.filter(k => k.position && k.position <= 10).length / scanResult.keywords.length) * 100) : 0}%
+                      </div>
                       <div className="text-sm text-gray-500">Visibility</div>
                     </CardContent>
                   </Card>
@@ -498,7 +504,7 @@ export default function ResultsDashboard({ scanResult, restaurantName }: Results
                     <CardContent className="p-4">
                       <Award className="h-8 w-8 text-yellow-500 mx-auto mb-2" />
                       <div className="text-2xl font-bold text-gray-900">
-                        {scanResult.keywordData.keywords.filter(k => k.position && k.position <= 10).length}
+                        {scanResult.keywords.filter(k => k.position && k.position <= 10).length}
                       </div>
                       <div className="text-sm text-gray-500">Top 10 Rankings</div>
                     </CardContent>
@@ -517,7 +523,7 @@ export default function ResultsDashboard({ scanResult, restaurantName }: Results
                   </CardHeader>
                   <CardContent>
                     <div className="space-y-4">
-                      {scanResult.keywordData.keywords.slice(0, 10).map((keyword, index) => {
+                      {scanResult.keywords.slice(0, 10).map((keyword, index) => {
                         const PositionIcon = getPositionIcon(keyword.position);
                         const IntentIcon = getSearchIntentIcon(keyword.intent);
                         
@@ -601,13 +607,13 @@ export default function ResultsDashboard({ scanResult, restaurantName }: Results
                             <FileText className="h-4 w-4 text-purple-500" />
                             <span className="text-sm">Meta Description</span>
                           </div>
-                          <Badge variant={scanResult.seoAnalysis.description ? "default" : "destructive"}>
-                            {scanResult.seoAnalysis.description ? "Found" : "Missing"}
+                          <Badge variant={scanResult.seoAnalysis.metaDescription ? "default" : "destructive"}>
+                            {scanResult.seoAnalysis.metaDescription ? "Found" : "Missing"}
                           </Badge>
                         </div>
-                        {scanResult.seoAnalysis.description && (
+                        {scanResult.seoAnalysis.metaDescription && (
                           <div className="text-sm text-gray-600 bg-gray-50 p-2 rounded">
-                            {scanResult.seoAnalysis.description}
+                            {scanResult.seoAnalysis.metaDescription}
                           </div>
                         )}
                       </div>
