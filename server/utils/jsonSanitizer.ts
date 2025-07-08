@@ -48,13 +48,8 @@ export class JsonSanitizer {
     
     return str
       .replace(/[\x00-\x1f\x7f-\x9f]/g, '') // Remove control characters
-      .replace(/\\/g, '\\\\') // Escape backslashes
-      .replace(/"/g, '\\"') // Escape double quotes
-      .replace(/\n/g, '\\n') // Escape newlines
-      .replace(/\r/g, '\\r') // Escape carriage returns
-      .replace(/\t/g, '\\t') // Escape tabs
-      .replace(/\f/g, '\\f') // Escape form feeds
-      .replace(/\b/g, '\\b') // Escape backspace
+      .replace(/\s+/g, ' ') // Normalize whitespace
+      .replace(/[^\w\s\.\,\!\?\-\(\)\:\/]/g, '') // Keep only safe characters
       .trim()
       .substring(0, 1000); // Limit length
   }
@@ -64,8 +59,13 @@ export class JsonSanitizer {
    */
   static safeStringify(obj: any): string {
     try {
-      const sanitized = this.sanitizeValue(obj);
-      return JSON.stringify(sanitized);
+      // Use built-in JSON.stringify with proper error handling
+      return JSON.stringify(obj, (key, value) => {
+        if (typeof value === 'string') {
+          return this.sanitizeString(value);
+        }
+        return value;
+      });
     } catch (error) {
       console.error('JSON stringify error:', error);
       return JSON.stringify({ error: 'Serialization failed' });
