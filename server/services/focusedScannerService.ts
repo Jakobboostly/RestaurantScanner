@@ -76,9 +76,9 @@ export class FocusedScannerService {
                 progress: 35, 
                 status: 'Analyzing customer reviews...',
                 review: {
-                  author: review.author,
+                  author: this.sanitizeForJson(review.author),
                   rating: review.rating,
-                  text: review.text,
+                  text: this.sanitizeForJson(review.text),
                   platform: review.platform,
                   sentiment: review.sentiment
                 }
@@ -538,5 +538,18 @@ export class FocusedScannerService {
     }
 
     return [...baseKeywords, ...cuisineKeywords];
+  }
+
+  private sanitizeForJson(text: string): string {
+    return text
+      .replace(/[\x00-\x1f\x7f-\x9f]/g, '') // Remove control characters
+      .replace(/["'\\]/g, '') // Remove quotes and backslashes that break JSON
+      .replace(/\n/g, ' ') // Replace newlines with spaces
+      .replace(/\r/g, ' ') // Replace carriage returns with spaces
+      .replace(/\t/g, ' ') // Replace tabs with spaces
+      .replace(/\s+/g, ' ') // Normalize whitespace
+      .replace(/[^\w\s\.\,\!\?\-\(\)]/g, '') // Keep only safe characters
+      .trim()
+      .substring(0, 200); // Limit length
   }
 }

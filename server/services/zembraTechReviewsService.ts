@@ -150,16 +150,17 @@ export class ZembraTechReviewsService {
   ): Promise<ZembraReview[]> {
     return limit(async () => {
       try {
+        // Attempt to get authentic reviews from the API
         const analysis = await this.getRestaurantReviews(restaurantName, domain, location);
         
-        // Stream reviews with delay for real-time effect
+        // Stream authentic reviews with delay for real-time effect
         const reviews = analysis.recentReviews;
         
-        if (onReview) {
+        if (onReview && reviews.length > 0) {
           for (const review of reviews) {
             onReview(review);
-            // Small delay between reviews for streaming effect
-            await new Promise(resolve => setTimeout(resolve, 500));
+            // 2-second delay between reviews for streaming effect
+            await new Promise(resolve => setTimeout(resolve, 2000));
           }
         }
         
