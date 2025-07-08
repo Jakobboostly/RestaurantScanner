@@ -1,77 +1,24 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
-import { DataForSeoRestaurantService } from "./services/dataForSeoRestaurantService";
+import { RestaurantService } from "./services/restaurantService";
 import { DataForSeoScannerService } from "./services/dataForSeoScannerService";
 import { restaurantSearchResultSchema, scanResultSchema } from "@shared/schema";
 import { z } from "zod";
 
-function getMockRestaurants(query: string) {
-  const allRestaurants = [
-    {
-      id: "mock-1",
-      name: "Joe's Pizza",
-      address: "123 Main St, New York, NY 10001",
-      rating: 4.5,
-      totalRatings: 1247,
-      priceLevel: 2,
-      placeId: "mock-place-1",
-      domain: "joespizzanyc.com"
-    },
-    {
-      id: "mock-2", 
-      name: "The French Laundry",
-      address: "6640 Washington St, Yountville, CA 94599",
-      rating: 4.7,
-      totalRatings: 3421,
-      priceLevel: 4,
-      placeId: "mock-place-2",
-      domain: "thomaskeller.com"
-    },
-    {
-      id: "mock-3",
-      name: "Taco Bell",
-      address: "456 Broadway, Los Angeles, CA 90012",
-      rating: 3.8,
-      totalRatings: 892,
-      priceLevel: 1,
-      placeId: "mock-place-3", 
-      domain: "tacobell.com"
-    },
-    {
-      id: "mock-4",
-      name: "Olive Garden",
-      address: "789 Oak Ave, Chicago, IL 60601",
-      rating: 4.1,
-      totalRatings: 2156,
-      priceLevel: 2,
-      placeId: "mock-place-4",
-      domain: "olivegarden.com"
-    },
-    {
-      id: "mock-5",
-      name: "McDonald's",
-      address: "321 Pine St, Miami, FL 33101", 
-      rating: 3.6,
-      totalRatings: 1834,
-      priceLevel: 1,
-      placeId: "mock-place-5",
-      domain: "mcdonalds.com"
-    }
-  ];
 
-  return allRestaurants.filter(restaurant => 
-    restaurant.name.toLowerCase().includes(query.toLowerCase()) ||
-    restaurant.address.toLowerCase().includes(query.toLowerCase())
-  ).slice(0, 5);
-}
 
 export async function registerRoutes(app: Express): Promise<Server> {
-  // DataForSEO credentials
+  // API credentials
+  const GOOGLE_PLACES_API_KEY = process.env.GOOGLE_PLACES_API_KEY || process.env.GOOGLE_API_KEY;
   const DATAFORSEO_LOGIN = "jakob@boostly.com";
   const DATAFORSEO_PASSWORD = "eba05fd94be85e56";
 
-  const restaurantService = new DataForSeoRestaurantService(DATAFORSEO_LOGIN, DATAFORSEO_PASSWORD);
+  if (!GOOGLE_PLACES_API_KEY) {
+    console.warn("GOOGLE_PLACES_API_KEY not configured - restaurant search may not work");
+  }
+
+  const restaurantService = new RestaurantService(GOOGLE_PLACES_API_KEY || "");
   const scannerService = new DataForSeoScannerService(DATAFORSEO_LOGIN, DATAFORSEO_PASSWORD);
 
   // Restaurant search endpoint
@@ -83,7 +30,24 @@ export async function registerRoutes(app: Express): Promise<Server> {
         return res.status(400).json({ error: "Query parameter 'q' is required" });
       }
 
-      const results = await restaurantService.searchRestaurants(query);
+      if (!GOOGLE_PLACES_API_KEY) {
+        return res.status(500).json({ 
+          error: "Google Places API key not configured. Please configure API key to search restaurants." 
+        });
+      }
+
+      const apiResults = await restaurantService.searchRestaurants(query);
+      const results = apiResults.map(result => ({
+        id: result.place_id,
+        name: result.name,
+        address: result.formatted_address,
+        rating: result.rating,
+        totalRatings: result.user_ratings_total,
+        priceLevel: result.price_level,
+        placeId: result.place_id,
+        domain: result.website ? new URL(result.website).hostname : null,
+      }));
+
       res.json(results);
     } catch (error) {
       console.error("Restaurant search error:", error);
@@ -95,6 +59,11 @@ export async function registerRoutes(app: Express): Promise<Server> {
   app.get("/api/restaurants/:placeId", async (req, res) => {
     try {
       const { placeId } = req.params;
+      
+      if (!GOOGLE_PLACES_API_KEY) {
+        return res.status(500).json({ error: "Google Places API key not configured" });
+      }
+
       const details = await restaurantService.getRestaurantDetails(placeId);
       res.json(details);
     } catch (error) {

@@ -63,17 +63,18 @@ export class DataForSeoScannerService {
       
       // Phase 5: Competitor Analysis
       onProgress({ progress: 70, status: 'Analyzing competitors...' });
-      let competitorData;
+      let competitorData = [];
       try {
         if (latitude && longitude) {
           competitorData = await this.getCompetitorAnalysis(restaurantName, latitude, longitude);
         } else {
-          competitorData = await this.getMockCompetitorData(restaurantName);
+          console.warn('No location data provided for competitor analysis');
+          competitorData = [];
         }
         onProgress({ progress: 80, status: 'Competitor analysis complete' });
       } catch (error) {
         console.error('Competitor analysis failed:', error);
-        competitorData = await this.getMockCompetitorData(restaurantName);
+        competitorData = [];
       }
       
       // Phase 6: Domain Analytics
@@ -189,7 +190,7 @@ export class DataForSeoScannerService {
       });
 
       if (!competitors || !competitors.items) {
-        return this.getMockCompetitorData(restaurantName);
+        return [];
       }
 
       return competitors.items.map((competitor: any) => ({
@@ -204,7 +205,7 @@ export class DataForSeoScannerService {
       }));
     } catch (error) {
       console.error('Competitor analysis failed:', error);
-      return this.getMockCompetitorData(restaurantName);
+      return [];
     }
   }
 
@@ -355,30 +356,7 @@ export class DataForSeoScannerService {
     }));
   }
 
-  private getMockCompetitorData(restaurantName: string) {
-    return [
-      {
-        name: "Local Competitor 1",
-        domain: "competitor1.com",
-        performance: 78,
-        seo: 85,
-        accessibility: 82,
-        bestPractices: 79,
-        overallScore: 81,
-        isYou: false,
-      },
-      {
-        name: "Local Competitor 2", 
-        domain: "competitor2.com",
-        performance: 72,
-        seo: 68,
-        accessibility: 90,
-        bestPractices: 85,
-        overallScore: 79,
-        isYou: false,
-      },
-    ];
-  }
+
 
   private estimateSearchVolume(keyword: string): number {
     const baseVolume = keyword.includes('menu') ? 800 : 
