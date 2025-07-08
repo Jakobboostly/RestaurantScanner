@@ -9,6 +9,13 @@ import { ScanResult } from '../../../shared/schema';
 export interface ScanProgress {
   progress: number;
   status: string;
+  review?: {
+    author: string;
+    rating: number;
+    text: string;
+    platform: string;
+    sentiment: 'positive' | 'neutral' | 'negative';
+  };
 }
 
 export interface KeywordRanking {
@@ -108,19 +115,23 @@ export class ProfessionalScannerService {
     
     // Step 3.5: Stream real-time reviews if available
     if (this.zembraReviewsService) {
-      this.zembraReviewsService.streamReviews(restaurantName, (review) => {
-        onProgress({ 
-          progress: 42, 
-          status: 'Analyzing customer reviews...',
-          review: {
-            author: review.author,
-            rating: review.rating,
-            text: review.text,
-            platform: review.platform,
-            sentiment: review.sentiment
-          }
+      try {
+        await this.zembraReviewsService.streamReviews(restaurantName, (review) => {
+          onProgress({ 
+            progress: 42, 
+            status: 'Analyzing customer reviews...',
+            review: {
+              author: review.author,
+              rating: review.rating,
+              text: review.text,
+              platform: review.platform,
+              sentiment: review.sentiment
+            }
+          });
         });
-      });
+      } catch (error) {
+        console.log('Zembratech reviews service unavailable, continuing without reviews');
+      }
     }
     
     // Step 4: Keyword ranking analysis

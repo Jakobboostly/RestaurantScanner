@@ -19,6 +19,13 @@ export async function getRestaurantDetails(placeId: string) {
 export interface ScanProgress {
   progress: number;
   status: string;
+  review?: {
+    author: string;
+    rating: number;
+    text: string;
+    platform: string;
+    sentiment: 'positive' | 'neutral' | 'negative';
+  };
 }
 
 export async function scanWebsite(
