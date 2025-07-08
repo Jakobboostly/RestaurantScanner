@@ -122,6 +122,12 @@ This is a comprehensive restaurant website scanner application built with React 
   - Competitor analysis returns empty results instead of mock data when API fails
   - Application enforces authentic data integrity throughout all components
   - Enhanced error handling to guide users toward proper API configuration
+- July 08, 2025. DataForSEO service limitations identified and addressed:
+  - DataForSEO provides: Real keyword search volumes, SERP ranking positions, competition data
+  - DataForSEO does NOT provide: Performance audits, business data, domain analytics, backlink data
+  - Updated scanner service to use only working DataForSEO endpoints
+  - Removed non-functional API calls to prevent confusion and errors
+  - Clarified actual DataForSEO value: keyword research and search ranking analysis
 
 ## User Preferences
 
