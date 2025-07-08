@@ -1,8 +1,8 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
-import { RestaurantService } from "./services/restaurantService";
-import { ScannerService } from "./services/scannerService";
+import { DataForSeoRestaurantService } from "./services/dataForSeoRestaurantService";
+import { DataForSeoScannerService } from "./services/dataForSeoScannerService";
 import { restaurantSearchResultSchema, scanResultSchema } from "@shared/schema";
 import { z } from "zod";
 
@@ -67,17 +67,12 @@ function getMockRestaurants(query: string) {
 }
 
 export async function registerRoutes(app: Express): Promise<Server> {
-  // Get API keys from environment variables
-  const googlePlacesApiKey = process.env.GOOGLE_API_KEY || process.env.GOOGLE_PLACES_API_KEY;
-  const pagespeedApiKey = process.env.PAGESPEED_API_KEY;
-  const serpApiKey = process.env.SERP_API_KEY;
+  // DataForSEO credentials
+  const DATAFORSEO_LOGIN = "jakob@boostly.com";
+  const DATAFORSEO_PASSWORD = "eba05fd94be85e56";
 
-  if (!googlePlacesApiKey) {
-    console.warn("GOOGLE_API_KEY not configured - restaurant search may not work");
-  }
-
-  const restaurantService = new RestaurantService(googlePlacesApiKey || "");
-  const scannerService = new ScannerService(pagespeedApiKey, serpApiKey, googlePlacesApiKey);
+  const restaurantService = new DataForSeoRestaurantService(DATAFORSEO_LOGIN, DATAFORSEO_PASSWORD);
+  const scannerService = new DataForSeoScannerService(DATAFORSEO_LOGIN, DATAFORSEO_PASSWORD);
 
   // Restaurant search endpoint
   app.get("/api/restaurants/search", async (req, res) => {
@@ -88,29 +83,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         return res.status(400).json({ error: "Query parameter 'q' is required" });
       }
 
-      let results;
-      
-      // Try Google Places API first, fallback to mock data if it fails
-      if (googlePlacesApiKey) {
-        try {
-          const apiResults = await restaurantService.searchRestaurants(query);
-          results = apiResults.map(result => ({
-            id: result.place_id,
-            name: result.name,
-            address: result.formatted_address,
-            rating: result.rating,
-            totalRatings: result.user_ratings_total,
-            priceLevel: result.price_level,
-            placeId: result.place_id,
-          }));
-        } catch (apiError) {
-          console.warn("Google Places API failed, using mock data:", apiError);
-          results = getMockRestaurants(query);
-        }
-      } else {
-        results = getMockRestaurants(query);
-      }
-
+      const results = await restaurantService.searchRestaurants(query);
       res.json(results);
     } catch (error) {
       console.error("Restaurant search error:", error);
@@ -122,11 +95,6 @@ export async function registerRoutes(app: Express): Promise<Server> {
   app.get("/api/restaurants/:placeId", async (req, res) => {
     try {
       const { placeId } = req.params;
-      
-      if (!googlePlacesApiKey) {
-        return res.status(500).json({ error: "Google Places API key not configured" });
-      }
-
       const details = await restaurantService.getRestaurantDetails(placeId);
       res.json(details);
     } catch (error) {
@@ -138,7 +106,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Website scan endpoint
   app.post("/api/scan", async (req, res) => {
     try {
-      const { domain, restaurantName, placeId } = req.body;
+      const { domain, restaurantName, placeId, latitude, longitude } = req.body;
       
       if (!domain) {
         return res.status(400).json({ error: "Domain is required" });
@@ -146,14 +114,6 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
       if (!restaurantName) {
         return res.status(400).json({ error: "Restaurant name is required" });
-      }
-
-      if (!pagespeedApiKey) {
-        return res.status(500).json({ error: "PageSpeed API key not configured" });
-      }
-
-      if (!serpApiKey) {
-        return res.status(500).json({ error: "SERP API key not configured" });
       }
 
       // Set up SSE for progress updates
@@ -169,7 +129,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
         restaurantName,
         (progress) => {
           res.write(`data: ${JSON.stringify(progress)}\n\n`);
-        }
+        },
+        latitude,
+        longitude
       );
 
       // Send final result

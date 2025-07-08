@@ -46,7 +46,9 @@ export default function HomePage() {
         (progress) => {
           setScanProgress(progress.progress);
           setScanStatus(progress.status);
-        }
+        },
+        restaurant.location?.lat,
+        restaurant.location?.lng
       );
 
       setScanResult(result);

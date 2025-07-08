@@ -25,14 +25,16 @@ export async function scanWebsite(
   domain: string,
   restaurantName: string,
   placeId?: string,
-  onProgress?: (progress: ScanProgress) => void
+  onProgress?: (progress: ScanProgress) => void,
+  latitude?: number,
+  longitude?: number
 ): Promise<ScanResult> {
   const response = await fetch('/api/scan', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ domain, restaurantName, placeId }),
+    body: JSON.stringify({ domain, restaurantName, placeId, latitude, longitude }),
   });
 
   if (!response.ok) {
