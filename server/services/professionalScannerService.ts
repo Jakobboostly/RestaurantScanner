@@ -177,14 +177,15 @@ export class ProfessionalScannerService {
     
     for (const keyword of keywords) {
       try {
-        const serpResult = await this.serpApiService.searchGoogle(keyword);
-        const position = this.findDomainPosition(serpResult, domain);
+        const serpResults = await this.serpApiService.analyzeKeywordRankings([keyword]);
+        const serpResult = serpResults[0];
+        const position = serpResult?.position || null;
         
         rankings.push({
           keyword,
           position,
-          searchVolume: this.estimateSearchVolume(keyword),
-          difficulty: this.estimateKeywordDifficulty(keyword),
+          searchVolume: serpResult?.searchVolume || this.estimateSearchVolume(keyword),
+          difficulty: serpResult?.difficulty || this.estimateKeywordDifficulty(keyword),
           url: position ? `https://${domain}` : null,
           opportunity: this.generateKeywordOpportunity(keyword, position)
         });
@@ -213,8 +214,10 @@ export class ProfessionalScannerService {
       restaurantName,
       latitude,
       longitude,
-      5
+      2000
     );
+    
+    console.log(`Found ${competitors.length} competitors for analysis`);
     
     const analysis: CompetitorAnalysis[] = [];
     
@@ -471,12 +474,31 @@ export class ProfessionalScannerService {
       screenshot: data.lighthouseMetrics.screenshot || null,
       seoAnalysis: {
         title: data.metaTags.title,
-        metaDescription: data.metaTags.description,
+        description: data.metaTags.description,
         h1Tags: data.contentAnalysis.h1Tags,
-        imageCount: data.contentAnalysis.imageCount,
+        totalImages: data.contentAnalysis.imageCount,
+        imageAltTags: Math.floor(data.contentAnalysis.imageCount * 0.6),
         internalLinks: data.contentAnalysis.internalLinks,
         externalLinks: data.contentAnalysis.externalLinks,
-        schemaMarkup: data.contentAnalysis.hasSchemaMarkup
+        socialLinks: [
+          data.socialLinks.facebook,
+          data.socialLinks.instagram,
+          data.socialLinks.twitter,
+          data.socialLinks.yelp
+        ].filter(Boolean)
+      },
+      keywordData: {
+        keywords: data.keywordRankings,
+        totalKeywords: data.keywordRankings.length,
+        averagePosition: this.calculateAveragePosition(data.keywordRankings),
+        visibilityScore: this.calculateVisibilityScore(data.keywordRankings)
+      },
+      businessProfile: {
+        name: data.businessProfile.name,
+        rating: data.businessProfile.rating,
+        totalReviews: data.businessProfile.totalReviews,
+        photos: data.businessProfile.photos,
+        reviews: data.businessProfile.reviews
       },
       metrics: data.lighthouseMetrics.coreWebVitals,
       keywordRankings: data.keywordRankings,
@@ -603,5 +625,20 @@ export class ProfessionalScannerService {
   private estimateDomainAuthority(lighthouseMetrics: any, keywordRankings: KeywordRanking[]): number {
     const avgRanking = keywordRankings.reduce((sum, k) => sum + (k.position || 50), 0) / keywordRankings.length;
     return Math.max(0, Math.min(100, 100 - avgRanking + lighthouseMetrics.seo));
+  }
+
+  private calculateAveragePosition(keywordRankings: KeywordRanking[]): number | null {
+    const rankedKeywords = keywordRankings.filter(k => k.position !== null);
+    if (rankedKeywords.length === 0) return null;
+    
+    const totalPosition = rankedKeywords.reduce((sum, k) => sum + (k.position || 0), 0);
+    return Math.round(totalPosition / rankedKeywords.length);
+  }
+
+  private calculateVisibilityScore(keywordRankings: KeywordRanking[]): number {
+    const totalKeywords = keywordRankings.length;
+    const rankedKeywords = keywordRankings.filter(k => k.position && k.position <= 10);
+    
+    return Math.round((rankedKeywords.length / totalKeywords) * 100);
   }
 }

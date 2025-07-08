@@ -107,6 +107,8 @@ export class GoogleBusinessService {
     radius: number = 2000
   ): Promise<CompetitorProfile[]> {
     try {
+      console.log(`Finding competitors for ${restaurantName} at ${latitude},${longitude}`);
+      
       const response = await axios.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json', {
         params: {
           location: `${latitude},${longitude}`,
@@ -115,6 +117,11 @@ export class GoogleBusinessService {
           key: this.apiKey
         }
       });
+
+      if (!response.data.results || response.data.results.length === 0) {
+        console.log('No nearby restaurants found');
+        return [];
+      }
 
       const competitors = response.data.results
         .filter((place: any) => place.name !== restaurantName)
@@ -128,6 +135,7 @@ export class GoogleBusinessService {
           isStronger: (place.rating || 0) > 4.0 && (place.user_ratings_total || 0) > 50,
         }));
 
+      console.log(`Processed ${competitors.length} competitors:`, competitors.map(c => c.name));
       return competitors;
     } catch (error) {
       console.error('Competitor search error:', error);
