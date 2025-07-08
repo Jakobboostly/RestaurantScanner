@@ -79,7 +79,10 @@ export class FocusedScannerService {
       await delay(1000);
 
       onProgress({ progress: 100, status: 'Analysis complete!' });
-      return result;
+      
+      // Sanitize result to prevent JSON issues
+      const sanitizedResult = JSON.parse(JSON.stringify(result));
+      return sanitizedResult;
 
     } catch (error) {
       console.error('Focused scan failed:', error);
@@ -118,7 +121,7 @@ export class FocusedScannerService {
       keywords: this.generateRestaurantKeywords(restaurantName, businessProfile),
       competitors: competitors.map(comp => ({
         name: comp.name,
-        domain: `${comp.name.toLowerCase().replace(/\s+/g, '')}.com`,
+        domain: `${comp.name.toLowerCase().replace(/[^a-z0-9]/g, '')}.com`,
         performance: comp.rating * 20,
         seo: comp.rating * 20,
         accessibility: comp.rating * 20,
@@ -337,37 +340,40 @@ export class FocusedScannerService {
   }
 
   private generateRestaurantKeywords(restaurantName: string, businessProfile: any) {
+    // Sanitize restaurant name to prevent JSON issues
+    const safeName = restaurantName.replace(/['"\\]/g, '');
+    
     const baseKeywords = [
       {
-        keyword: `${restaurantName} restaurant`,
+        keyword: `${safeName} restaurant`,
         searchVolume: 500,
         difficulty: 25,
         position: 1,
         intent: 'navigational'
       },
       {
-        keyword: `${restaurantName} menu`,
+        keyword: `${safeName} menu`,
         searchVolume: 300,
         difficulty: 20,
         position: 2,
         intent: 'informational'
       },
       {
-        keyword: `${restaurantName} hours`,
+        keyword: `${safeName} hours`,
         searchVolume: 200,
         difficulty: 15,
         position: 3,
         intent: 'informational'
       },
       {
-        keyword: `${restaurantName} delivery`,
+        keyword: `${safeName} delivery`,
         searchVolume: 150,
         difficulty: 30,
         position: 8,
         intent: 'transactional'
       },
       {
-        keyword: `${restaurantName} location`,
+        keyword: `${safeName} location`,
         searchVolume: 100,
         difficulty: 10,
         position: 1,

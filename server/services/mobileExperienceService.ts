@@ -63,10 +63,10 @@ export class MobileExperienceService {
       // Analyze page content
       console.log('Analyzing page content...');
       const contentAnalysis = await page.evaluate(() => {
-        const title = document.querySelector('title')?.textContent || '';
-        const metaDescription = document.querySelector('meta[name="description"]')?.getAttribute('content') || '';
+        const title = (document.querySelector('title')?.textContent || '').replace(/['"\\]/g, '');
+        const metaDescription = (document.querySelector('meta[name="description"]')?.getAttribute('content') || '').replace(/['"\\]/g, '');
         const hasSchemaMarkup = document.querySelector('script[type="application/ld+json"]') !== null;
-        const h1Tags = Array.from(document.querySelectorAll('h1')).map(h1 => h1.textContent || '');
+        const h1Tags = Array.from(document.querySelectorAll('h1')).map(h1 => (h1.textContent || '').replace(/['"\\]/g, ''));
         const imageCount = document.querySelectorAll('img').length;
         const internalLinks = document.querySelectorAll('a[href^="/"], a[href^="./"], a[href^="../"]').length;
         const externalLinks = document.querySelectorAll('a[href^="http"]:not([href*="' + window.location.hostname + '"])').length;
