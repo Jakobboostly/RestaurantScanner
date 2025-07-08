@@ -87,6 +87,12 @@ This is a comprehensive restaurant website scanner application built with React 
   - Added sub-step progress updates for more detailed feedback
   - Created floating action indicators with rotation animations
   - Applied glass-morphism design with backdrop blur effects
+- July 08, 2025. Fixed online ordering detection system:
+  - Removed hardcoded "no online ordering" assumption that flagged all restaurants
+  - Implemented real website content analysis to detect ordering systems
+  - Added keyword detection for common ordering platforms (DoorDash, UberEats, etc.)
+  - Only shows online ordering issue when actually confirmed missing
+  - Improved PageSpeed API to request performance category only for reliability
 
 ## User Preferences
 

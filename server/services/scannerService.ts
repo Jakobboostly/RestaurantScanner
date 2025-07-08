@@ -220,14 +220,48 @@ export class ScannerService {
   }
 
   private async evaluateUserExperience(domain: string) {
-    // This would typically involve more sophisticated analysis
-    // For now, we'll return a basic evaluation
-    return {
-      navigation: 75,
-      contentQuality: 80,
-      mobileOptimization: 60,
-      loadingSpeed: 45,
-    };
+    try {
+      // Attempt to fetch the website's homepage to analyze content
+      const response = await axios.get(`https://${domain}`, {
+        timeout: 10000,
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (compatible; RestaurantScanner/1.0)',
+        },
+      });
+      
+      const content = response.data.toLowerCase();
+      
+      // Check for online ordering indicators
+      const orderingKeywords = [
+        'order online', 'order now', 'place order', 'online ordering',
+        'doordash', 'ubereats', 'grubhub', 'delivery', 'takeout',
+        'add to cart', 'menu', 'checkout', 'postmates', 'seamless',
+        'pickup', 'delivery available', 'order for pickup'
+      ];
+      
+      const hasOnlineOrdering = orderingKeywords.some(keyword => 
+        content.includes(keyword)
+      );
+      
+      return {
+        navigation: 75,
+        contentQuality: 80,
+        mobileOptimization: 60,
+        loadingSpeed: 45,
+        hasOnlineOrdering,
+      };
+    } catch (error) {
+      console.log(`Could not analyze website content for ${domain}:`, error.message);
+      
+      // Fallback to basic evaluation without ordering detection
+      return {
+        navigation: 75,
+        contentQuality: 80,
+        mobileOptimization: 60,
+        loadingSpeed: 45,
+        hasOnlineOrdering: null, // Unknown
+      };
+    }
   }
 
   private async getCompetitorAnalysis(restaurantName: string) {
@@ -270,7 +304,7 @@ export class ScannerService {
       comp.isYou ? { ...comp, score: overallScore } : comp
     );
 
-    const issues = this.generateIssues(performanceScore, seoScore, mobileScore, userExperienceScore);
+    const issues = this.generateIssues(performanceScore, seoScore, mobileScore, userExperienceScore, userExperienceData.hasOnlineOrdering);
     const recommendations = this.generateRecommendations(issues);
 
     return {
@@ -286,7 +320,7 @@ export class ScannerService {
     };
   }
 
-  private generateIssues(performance: number, seo: number, mobile: number, ux: number) {
+  private generateIssues(performance: number, seo: number, mobile: number, ux: number, hasOnlineOrdering?: boolean | null) {
     const issues = [];
 
     if (performance < 50) {
@@ -329,14 +363,16 @@ export class ScannerService {
       });
     }
 
-    // Always add online ordering issue for restaurants
-    issues.push({
-      type: 'warning' as const,
-      category: 'features',
-      title: 'No online ordering system',
-      description: '75% of customers expect to order directly from your website.',
-      impact: 'Missing 40% revenue opportunity',
-    });
+    // Only flag online ordering as an issue if we confirmed it's missing
+    if (hasOnlineOrdering === false) {
+      issues.push({
+        type: 'warning' as const,
+        category: 'features',
+        title: 'No online ordering system',
+        description: '75% of customers expect to order directly from your website.',
+        impact: 'Missing 40% revenue opportunity',
+      });
+    }
 
     return issues;
   }
