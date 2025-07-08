@@ -120,7 +120,7 @@ export class FocusedScannerService {
       recommendations,
       keywords: this.generateRestaurantKeywords(restaurantName, businessProfile),
       competitors: competitors.map(comp => ({
-        name: comp.name,
+        name: comp.name.replace(/[\x00-\x1f\x7f-\x9f"'\\]/g, '').replace(/\s+/g, ' ').trim(),
         domain: `${comp.name.toLowerCase().replace(/[^a-z0-9]/g, '')}.com`,
         performance: comp.rating * 20,
         seo: comp.rating * 20,
@@ -340,8 +340,12 @@ export class FocusedScannerService {
   }
 
   private generateRestaurantKeywords(restaurantName: string, businessProfile: any) {
-    // Sanitize restaurant name to prevent JSON issues
-    const safeName = restaurantName.replace(/['"\\]/g, '');
+    // Comprehensive sanitization to prevent JSON issues
+    const sanitizeText = (text: string) => {
+      return text.replace(/[\x00-\x1f\x7f-\x9f"'\\]/g, '').replace(/\s+/g, ' ').trim();
+    };
+    
+    const safeName = sanitizeText(restaurantName);
     
     const baseKeywords = [
       {

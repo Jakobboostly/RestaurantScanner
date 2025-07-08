@@ -102,8 +102,14 @@ export async function registerRoutes(app: Express): Promise<Server> {
         }
       );
 
-      // Send final result
-      res.write(`data: ${JSON.stringify({ type: 'complete', result: scanResult })}\n\n`);
+      // Send final result with proper JSON sanitization
+      try {
+        const sanitizedResult = JSON.parse(JSON.stringify(scanResult));
+        res.write(`data: ${JSON.stringify({ type: 'complete', result: sanitizedResult })}\n\n`);
+      } catch (jsonError) {
+        console.error('JSON serialization error:', jsonError);
+        res.write(`data: ${JSON.stringify({ type: 'error', error: 'Failed to serialize scan result' })}\n\n`);
+      }
       res.end();
 
       // Store scan result in database

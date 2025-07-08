@@ -63,10 +63,14 @@ export class MobileExperienceService {
       // Analyze page content
       console.log('Analyzing page content...');
       const contentAnalysis = await page.evaluate(() => {
-        const title = (document.querySelector('title')?.textContent || '').replace(/['"\\]/g, '');
-        const metaDescription = (document.querySelector('meta[name="description"]')?.getAttribute('content') || '').replace(/['"\\]/g, '');
+        const sanitizeText = (text) => {
+          return text.replace(/[\x00-\x1f\x7f-\x9f"'\\]/g, '').replace(/\s+/g, ' ').trim();
+        };
+        
+        const title = sanitizeText(document.querySelector('title')?.textContent || '');
+        const metaDescription = sanitizeText(document.querySelector('meta[name="description"]')?.getAttribute('content') || '');
         const hasSchemaMarkup = document.querySelector('script[type="application/ld+json"]') !== null;
-        const h1Tags = Array.from(document.querySelectorAll('h1')).map(h1 => (h1.textContent || '').replace(/['"\\]/g, ''));
+        const h1Tags = Array.from(document.querySelectorAll('h1')).map(h1 => sanitizeText(h1.textContent || ''));
         const imageCount = document.querySelectorAll('img').length;
         const internalLinks = document.querySelectorAll('a[href^="/"], a[href^="./"], a[href^="../"]').length;
         const externalLinks = document.querySelectorAll('a[href^="http"]:not([href*="' + window.location.hostname + '"])').length;
