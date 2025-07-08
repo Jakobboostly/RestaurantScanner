@@ -151,13 +151,19 @@ export class ProfessionalScannerService {
     businessProfile: any
   ): Promise<KeywordRanking[]> {
     const keywords = this.generateRestaurantKeywords(restaurantName, businessProfile);
-    const rankings: KeywordRanking[] = [];
+    console.log(`Analyzing ${keywords.length} keywords for ${domain}:`, keywords);
     
-    for (const keyword of keywords) {
-      try {
-        const serpResults = await this.serpApiService.analyzeKeywordRankings([keyword]);
-        const serpResult = serpResults[0];
-        const position = serpResult?.position || null;
+    try {
+      // Call SERP API with correct parameters: domain, keywords array, location
+      const serpResults = await this.serpApiService.analyzeKeywordRankings(domain, keywords, 'United States');
+      console.log(`Received ${serpResults.length} SERP results`);
+      
+      const rankings: KeywordRanking[] = [];
+      
+      for (let i = 0; i < keywords.length; i++) {
+        const keyword = keywords[i];
+        const serpResult = serpResults[i];
+        const position = serpResult?.currentPosition || null;
         
         rankings.push({
           keyword,
@@ -167,20 +173,22 @@ export class ProfessionalScannerService {
           url: position ? `https://${domain}` : null,
           opportunity: this.generateKeywordOpportunity(keyword, position)
         });
-      } catch (error) {
-        console.error(`Error analyzing keyword ${keyword}:`, error);
-        rankings.push({
-          keyword,
-          position: null,
-          searchVolume: this.estimateSearchVolume(keyword),
-          difficulty: this.estimateKeywordDifficulty(keyword),
-          url: null,
-          opportunity: 'Keyword analysis unavailable'
-        });
       }
+      
+      return rankings;
+    } catch (error) {
+      console.error('Error analyzing keyword rankings:', error);
+      
+      // Return basic keyword data without rankings
+      return keywords.map(keyword => ({
+        keyword,
+        position: null,
+        searchVolume: this.estimateSearchVolume(keyword),
+        difficulty: this.estimateKeywordDifficulty(keyword),
+        url: null,
+        opportunity: 'Keyword analysis unavailable - check SERP API'
+      }));
     }
-    
-    return rankings;
   }
 
   private async analyzeCompetitors(
