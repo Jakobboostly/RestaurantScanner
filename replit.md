@@ -179,3 +179,4 @@ This is a comprehensive restaurant website scanner application built with React 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Data integrity: No mock data - system must work with authentic data only, gracefully handling API failures with empty states.

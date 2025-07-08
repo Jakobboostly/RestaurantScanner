@@ -128,54 +128,15 @@ export class ZembraTechReviewsService {
       } catch (error) {
         console.error('Zembratech reviews fetch failed:', error);
         
-        // Return mock reviews for testing purposes
-        const mockReviews: ZembraReview[] = [
-          {
-            id: '1',
-            author: 'Sarah M.',
-            rating: 5,
-            title: 'Amazing Food!',
-            text: 'The food here is absolutely incredible. Fresh ingredients and amazing flavors.',
-            date: new Date().toISOString(),
-            sentiment: 'positive',
-            platform: 'google',
-            helpful: true,
-            verified: true
-          },
-          {
-            id: '2',
-            author: 'Mike R.',
-            rating: 4,
-            title: 'Great Service',
-            text: 'Staff was very friendly and attentive. The atmosphere was perfect for dinner.',
-            date: new Date(Date.now() - 86400000).toISOString(),
-            sentiment: 'positive',
-            platform: 'yelp',
-            helpful: false,
-            verified: false
-          },
-          {
-            id: '3',
-            author: 'Lisa K.',
-            rating: 5,
-            title: 'Perfect Date Night',
-            text: 'This place exceeded our expectations. The ambiance was romantic and the food was outstanding.',
-            date: new Date(Date.now() - 172800000).toISOString(),
-            sentiment: 'positive',
-            platform: 'google',
-            helpful: true,
-            verified: true
-          }
-        ];
-        
+        // Return empty data structure when API fails
         return {
-          averageRating: 4.7,
-          totalReviews: mockReviews.length,
-          sentimentDistribution: { positive: 3, neutral: 0, negative: 0 },
-          recentReviews: mockReviews,
-          keyThemes: ['food quality', 'service', 'atmosphere', 'staff', 'ambiance'],
-          responseRate: 75,
-          recommendationScore: 95
+          averageRating: 0,
+          totalReviews: 0,
+          sentimentDistribution: { positive: 0, neutral: 0, negative: 0 },
+          recentReviews: [],
+          keyThemes: [],
+          responseRate: 0,
+          recommendationScore: 0
         };
       }
     });
