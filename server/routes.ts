@@ -77,7 +77,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   }
 
   const restaurantService = new RestaurantService(googlePlacesApiKey || "");
-  const scannerService = new ScannerService(pagespeedApiKey, serpApiKey);
+  const scannerService = new ScannerService(pagespeedApiKey, serpApiKey, googlePlacesApiKey);
 
   // Restaurant search endpoint
   app.get("/api/restaurants/search", async (req, res) => {

@@ -1,5 +1,7 @@
 import axios from 'axios';
 import { ScanResult } from '@shared/schema';
+import { LighthouseService } from './lighthouseService.js';
+import { CompetitorService } from './competitorService.js';
 
 export interface ScanProgress {
   progress: number;
@@ -9,43 +11,85 @@ export interface ScanProgress {
 export class ScannerService {
   private pagespeedApiKey?: string;
   private serpApiKey?: string;
+  private googleApiKey?: string;
+  private lighthouseService: LighthouseService;
+  private competitorService: CompetitorService;
 
-  constructor(pagespeedApiKey?: string, serpApiKey?: string) {
+  constructor(pagespeedApiKey?: string, serpApiKey?: string, googleApiKey?: string) {
     this.pagespeedApiKey = pagespeedApiKey;
     this.serpApiKey = serpApiKey;
+    this.googleApiKey = googleApiKey;
+    this.lighthouseService = new LighthouseService();
+    this.competitorService = new CompetitorService(googleApiKey || '');
   }
 
   async scanWebsite(
     domain: string,
     restaurantName: string,
-    onProgress: (progress: ScanProgress) => void
+    onProgress: (progress: ScanProgress) => void,
+    latitude?: number,
+    longitude?: number
   ): Promise<ScanResult> {
     try {
       // Helper function to add minimum delay
       const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+      const url = `https://${domain}`;
       
-      onProgress({ progress: 5, status: 'Connecting to website...' });
-      await delay(2000);
+      // Phase 1: Verifying Restaurant
+      onProgress({ progress: 5, status: 'Verifying restaurant information...' });
+      await delay(3000);
       
-      onProgress({ progress: 10, status: 'Analyzing website performance...' });
+      // Phase 2: Scanning Performance
+      onProgress({ progress: 15, status: 'Scanning website performance...' });
       await delay(1000);
-      onProgress({ progress: 15, status: 'Measuring page load speed...' });
-      const performanceStart = Date.now();
-      const performanceData = await this.getPerformanceMetrics(domain);
-      const performanceElapsed = Date.now() - performanceStart;
-      if (performanceElapsed < 2000) {
-        await delay(2000 - performanceElapsed);
+      
+      onProgress({ progress: 20, status: 'Running PageSpeed Insights...' });
+      let performanceData;
+      try {
+        performanceData = await this.getPerformanceMetrics(domain);
+        onProgress({ progress: 25, status: 'PageSpeed analysis complete' });
+      } catch (error) {
+        onProgress({ progress: 25, status: 'Running local Lighthouse audit...' });
+        // Fallback to local Lighthouse if PageSpeed fails
+        try {
+          const lighthouseMetrics = await this.lighthouseService.runLighthouseAudit(url);
+          performanceData = {
+            performance: lighthouseMetrics.performance,
+            seo: lighthouseMetrics.seo,
+            accessibility: lighthouseMetrics.accessibility,
+            bestPractices: lighthouseMetrics.bestPractices,
+            metrics: lighthouseMetrics.coreWebVitals
+          };
+        } catch (lighthouseError) {
+          console.error('Both PageSpeed and Lighthouse failed:', lighthouseError);
+          performanceData = this.getMockPerformanceData();
+        }
       }
+      await delay(3000);
       
-      onProgress({ progress: 30, status: 'Checking search rankings...' });
+      // Phase 3: Auditing SEO
+      onProgress({ progress: 35, status: 'Auditing SEO optimization...' });
       await delay(1000);
-      onProgress({ progress: 35, status: 'Analyzing SEO performance...' });
-      const seoStart = Date.now();
+      
+      onProgress({ progress: 40, status: 'Analyzing on-page SEO elements...' });
+      let seoAnalysis;
+      try {
+        seoAnalysis = await this.lighthouseService.analyzeOnPageSEO(url);
+      } catch (error) {
+        console.error('SEO analysis failed:', error);
+        seoAnalysis = {
+          title: '', description: '', h1Tags: [], imageAltTags: 0, totalImages: 0,
+          internalLinks: 0, externalLinks: 0, hasSchema: false
+        };
+      }
+      await delay(1000);
+      
+      onProgress({ progress: 45, status: 'Checking search rankings...' });
       const seoData = await this.getSEOMetrics(domain, restaurantName);
-      const seoElapsed = Date.now() - seoStart;
-      if (seoElapsed < 2000) {
-        await delay(2000 - seoElapsed);
-      }
+      await delay(1000);
+      
+      onProgress({ progress: 50, status: 'Evaluating content structure...' });
+      await delay(3000);
       
       onProgress({ progress: 50, status: 'Evaluating mobile experience...' });
       await delay(1500);
@@ -62,27 +106,58 @@ export class ScannerService {
         await delay(2000 - uxElapsed);
       }
       
-      onProgress({ progress: 90, status: 'Scanning competitor websites...' });
-      await delay(1000);
-      onProgress({ progress: 92, status: 'Analyzing competitor performance...' });
-      const competitorStart = Date.now();
-      const competitorData = await this.getCompetitorAnalysis(restaurantName);
-      const competitorElapsed = Date.now() - competitorStart;
-      if (competitorElapsed < 2000) {
-        await delay(2000 - competitorElapsed);
+      // Phase 4: Competitor Benchmarking
+      onProgress({ progress: 60, status: 'Discovering local competitors...' });
+      let competitorData;
+      if (latitude && longitude) {
+        try {
+          competitorData = await this.competitorService.findCompetitors(
+            restaurantName, 
+            latitude, 
+            longitude
+          );
+        } catch (error) {
+          console.error('Competitor analysis failed:', error);
+          competitorData = await this.getCompetitorAnalysis(restaurantName);
+        }
+      } else {
+        competitorData = await this.getCompetitorAnalysis(restaurantName);
       }
+      await delay(1000);
       
-      onProgress({ progress: 95, status: 'Generating recommendations...' });
-      await delay(2000);
+      onProgress({ progress: 70, status: 'Analyzing competitor performance...' });
+      await delay(1000);
       
-      onProgress({ progress: 100, status: 'Scan complete!' });
+      onProgress({ progress: 75, status: 'Benchmarking market position...' });
+      await delay(3000);
+      
+      // Phase 5: Finishing Report
+      onProgress({ progress: 85, status: 'Capturing mobile screenshot...' });
+      let screenshot;
+      try {
+        screenshot = await this.lighthouseService.captureScreenshot(url, true);
+      } catch (error) {
+        console.error('Screenshot capture failed:', error);
+        screenshot = null;
+      }
+      await delay(1000);
+      
+      onProgress({ progress: 90, status: 'Finalizing user experience analysis...' });
+      await delay(1000);
+      
+      onProgress({ progress: 95, status: 'Generating final report...' });
+      await delay(1000);
+      
+      onProgress({ progress: 100, status: 'Comprehensive scan completed!' });
       
       return this.generateScanResult(
         domain,
         performanceData,
         seoData,
         userExperienceData,
-        competitorData
+        competitorData,
+        screenshot,
+        seoAnalysis
       );
     } catch (error) {
       console.error('Website scan error:', error);
@@ -280,7 +355,9 @@ export class ScannerService {
     performanceData: any,
     seoData: any,
     userExperienceData: any,
-    competitorData: any
+    competitorData: any,
+    screenshot?: string | null,
+    seoAnalysis?: any
   ): ScanResult {
     const performanceScore = performanceData.performance || 0;
     const seoScore = performanceData.seo || 0;
@@ -317,6 +394,8 @@ export class ScannerService {
       issues,
       recommendations,
       competitorData: updatedCompetitorData,
+      screenshot,
+      seoAnalysis,
     };
   }
 

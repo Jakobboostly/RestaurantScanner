@@ -82,6 +82,17 @@ export const scanResultSchema = z.object({
     score: z.number(),
     isYou: z.boolean().optional(),
   })).optional(),
+  screenshot: z.string().optional(),
+  seoAnalysis: z.object({
+    title: z.string(),
+    description: z.string(),
+    h1Tags: z.array(z.string()),
+    imageAltTags: z.number(),
+    totalImages: z.number(),
+    internalLinks: z.number(),
+    externalLinks: z.number(),
+    hasSchema: z.boolean(),
+  }).optional(),
 });
 
 export type RestaurantSearchResult = z.infer<typeof restaurantSearchResultSchema>;

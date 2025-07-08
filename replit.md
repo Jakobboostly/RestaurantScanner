@@ -93,6 +93,15 @@ This is a comprehensive restaurant website scanner application built with React 
   - Added keyword detection for common ordering platforms (DoorDash, UberEats, etc.)
   - Only shows online ordering issue when actually confirmed missing
   - Improved PageSpeed API to request performance category only for reliability
+- July 08, 2025. Major architecture upgrade with advanced scanning capabilities:
+  - Integrated Lighthouse + Puppeteer for comprehensive website analysis
+  - Added mobile screenshot capture (375x667 viewport)
+  - Implemented local Lighthouse fallback when PageSpeed API fails
+  - Enhanced SEO analysis with on-page element extraction (title, meta, H1 tags, images)
+  - Added competitor discovery using Google Places API with location-based search
+  - Upgraded scanning phases: Restaurant Verification → Performance → SEO → Competitors → Final Report
+  - Added proper error handling with graceful fallbacks for all external services
+  - Enhanced schema with screenshot and detailed SEO analysis fields
 
 ## User Preferences
 
