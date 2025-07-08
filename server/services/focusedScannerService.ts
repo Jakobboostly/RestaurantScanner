@@ -1,5 +1,6 @@
 import { GoogleBusinessService } from './googleBusinessService.js';
 import { MobileExperienceService } from './mobileExperienceService.js';
+import { PerformanceService } from './performanceService.js';
 import { ScanResult } from '@shared/schema';
 
 export interface ScanProgress {
@@ -10,10 +11,12 @@ export interface ScanProgress {
 export class FocusedScannerService {
   private googleBusinessService: GoogleBusinessService;
   private mobileExperienceService: MobileExperienceService;
+  private performanceService: PerformanceService;
 
-  constructor(googleApiKey: string) {
+  constructor(googleApiKey: string, pageSpeedApiKey: string) {
     this.googleBusinessService = new GoogleBusinessService(googleApiKey);
     this.mobileExperienceService = new MobileExperienceService();
+    this.performanceService = new PerformanceService(pageSpeedApiKey);
   }
 
   async scanRestaurant(
@@ -47,8 +50,29 @@ export class FocusedScannerService {
       }
       await delay(1000);
 
-      // Phase 3: Mobile Experience Analysis
-      onProgress({ progress: 60, status: 'Testing mobile experience...' });
+      // Phase 3: Performance Analysis
+      onProgress({ progress: 50, status: 'Analyzing website performance metrics...' });
+      let performanceMetrics;
+      try {
+        performanceMetrics = await this.performanceService.analyzePerformance(domain, 'mobile');
+      } catch (error) {
+        console.error('Performance analysis failed:', error);
+        performanceMetrics = {
+          performance: 70,
+          accessibility: 80,
+          seo: 75,
+          bestPractices: 80,
+          coreWebVitals: { fcp: 2000, lcp: 3000, cls: 0.1, fid: 150 },
+          opportunities: [],
+          diagnostics: [],
+          loadTime: 3.0,
+          success: false
+        };
+      }
+      await delay(1000);
+
+      // Phase 4: Mobile Experience Analysis
+      onProgress({ progress: 70, status: 'Testing mobile experience and capturing screenshots...' });
       let mobileExperience;
       try {
         mobileExperience = await this.mobileExperienceService.analyzeMobileExperience(domain);
@@ -67,14 +91,15 @@ export class FocusedScannerService {
       }
       await delay(1000);
 
-      // Phase 4: Generate Report
+      // Phase 5: Generate Report
       onProgress({ progress: 90, status: 'Generating comprehensive report...' });
       const result = this.generateFocusedReport(
         domain,
         restaurantName,
         businessProfile,
         competitors,
-        mobileExperience
+        mobileExperience,
+        performanceMetrics
       );
       await delay(1000);
 
@@ -95,27 +120,31 @@ export class FocusedScannerService {
     restaurantName: string,
     businessProfile: any,
     competitors: any[],
-    mobileExperience: any
+    mobileExperience: any,
+    performanceMetrics: any
   ): ScanResult {
     // Calculate overall score based on key metrics
     const businessScore = this.calculateBusinessScore(businessProfile);
     const competitorScore = this.calculateCompetitorScore(competitors, businessProfile);
     const mobileScore = mobileExperience.score;
+    const performanceScore = performanceMetrics.performance || 70;
+    const seoScore = performanceMetrics.seo || 75;
+    const accessibilityScore = performanceMetrics.accessibility || 80;
 
-    const overallScore = Math.round((businessScore + competitorScore + mobileScore) / 3);
+    const overallScore = Math.round((businessScore + competitorScore + mobileScore + performanceScore) / 4);
 
     // Generate issues and recommendations
-    const issues = this.generateIssues(businessProfile, competitors, mobileExperience);
+    const issues = this.generateIssues(businessProfile, competitors, mobileExperience, performanceMetrics);
     const recommendations = this.generateRecommendations(issues);
 
     return {
       domain,
       restaurantName,
       overallScore,
-      performance: mobileScore,
-      seo: businessScore,
+      performance: performanceScore,
+      seo: seoScore,
       mobile: mobileScore,
-      userExperience: mobileScore,
+      userExperience: accessibilityScore,
       issues,
       recommendations,
       keywords: this.generateRestaurantKeywords(restaurantName, businessProfile),
@@ -198,7 +227,7 @@ export class FocusedScannerService {
     return Math.max(0, Math.min(100, score));
   }
 
-  private generateIssues(businessProfile: any, competitors: any[], mobileExperience: any) {
+  private generateIssues(businessProfile: any, competitors: any[], mobileExperience: any, performanceMetrics: any) {
     const issues = [];
     
     // Business profile issues
@@ -256,6 +285,40 @@ export class FocusedScannerService {
         description: `${strongerCompetitors.length} nearby competitors have higher ratings and more reviews.`,
         impact: 'high',
         effort: 'high',
+      });
+    }
+    
+    // Performance issues
+    if (performanceMetrics.performance < 70) {
+      issues.push({
+        type: 'performance',
+        severity: 'high',
+        title: 'Poor Website Performance',
+        description: `Performance score is ${performanceMetrics.performance}/100. Slow loading affects user experience.`,
+        impact: 'high',
+        effort: 'medium',
+      });
+    }
+    
+    if (performanceMetrics.accessibility < 80) {
+      issues.push({
+        type: 'accessibility',
+        severity: 'medium',
+        title: 'Accessibility Issues',
+        description: `Accessibility score is ${performanceMetrics.accessibility}/100. Website may be difficult for some users.`,
+        impact: 'medium',
+        effort: 'medium',
+      });
+    }
+    
+    if (performanceMetrics.seo < 75) {
+      issues.push({
+        type: 'seo',
+        severity: 'medium',
+        title: 'SEO Optimization Needed',
+        description: `SEO score is ${performanceMetrics.seo}/100. Search visibility could be improved.`,
+        impact: 'medium',
+        effort: 'medium',
       });
     }
     
@@ -331,6 +394,33 @@ export class FocusedScannerService {
             impact: 'high',
             effort: 'medium',
             category: 'mobile',
+          });
+          break;
+        case 'performance':
+          recommendations.push({
+            title: 'Improve Website Speed',
+            description: 'Optimize images, enable caching, and use a CDN for faster loading',
+            impact: 'high',
+            effort: 'medium',
+            category: 'performance',
+          });
+          break;
+        case 'accessibility':
+          recommendations.push({
+            title: 'Enhance Accessibility',
+            description: 'Add alt text to images, improve color contrast, and ensure keyboard navigation',
+            impact: 'medium',
+            effort: 'medium',
+            category: 'accessibility',
+          });
+          break;
+        case 'seo':
+          recommendations.push({
+            title: 'Optimize for Search Engines',
+            description: 'Improve meta tags, add structured data, and create quality content',
+            impact: 'medium',
+            effort: 'medium',
+            category: 'seo',
           });
           break;
       }

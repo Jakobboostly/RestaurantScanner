@@ -11,13 +11,18 @@ import { z } from "zod";
 export async function registerRoutes(app: Express): Promise<Server> {
   // API credentials
   const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY || process.env.GOOGLE_PLACES_API_KEY;
+  const PAGESPEED_API_KEY = process.env.PAGESPEED_API_KEY || process.env.GOOGLE_API_KEY;
 
   if (!GOOGLE_API_KEY) {
     console.warn("GOOGLE_API_KEY not configured - restaurant search and analysis may not work");
   }
 
+  if (!PAGESPEED_API_KEY) {
+    console.warn("PAGESPEED_API_KEY not configured - performance analysis may not work");
+  }
+
   const restaurantService = new RestaurantService(GOOGLE_API_KEY || "");
-  const scannerService = new FocusedScannerService(GOOGLE_API_KEY || "");
+  const scannerService = new FocusedScannerService(GOOGLE_API_KEY || "", PAGESPEED_API_KEY || "");
 
   // Restaurant search endpoint
   app.get("/api/restaurants/search", async (req, res) => {
