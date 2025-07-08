@@ -138,11 +138,15 @@ export class ProfessionalScannerService {
     onProgress({ progress: 70, status: 'Analyzing competitors...' });
     const competitorAnalysis = await this.analyzeCompetitors(restaurantName, latitude, longitude);
     
-    // Step 6: Generate action plan
-    onProgress({ progress: 85, status: 'Generating action plan...' });
-    const actionPlan = this.generateActionPlan(lighthouseMetrics, keywordRankings, competitorAnalysis, businessProfile);
+    // Step 6: Comprehensive reviews analysis
+    onProgress({ progress: 80, status: 'Analyzing customer reviews and sentiment...' });
+    const reviewsAnalysis = await this.performReviewsAnalysis(restaurantName, businessProfile, placeId);
     
-    // Step 7: Final report
+    // Step 7: Generate action plan
+    onProgress({ progress: 90, status: 'Generating action plan...' });
+    const actionPlan = this.generateActionPlan(lighthouseMetrics, keywordRankings, competitorAnalysis, businessProfile, reviewsAnalysis);
+    
+    // Step 8: Final report
     onProgress({ progress: 100, status: 'Analysis complete!' });
     
     return this.generateProfessionalReport({
@@ -155,7 +159,8 @@ export class ProfessionalScannerService {
       competitorAnalysis,
       actionPlan,
       metaTags,
-      socialLinks
+      socialLinks,
+      reviewsAnalysis
     });
   }
 
@@ -372,7 +377,8 @@ export class ProfessionalScannerService {
     lighthouseMetrics: any,
     keywordRankings: KeywordRanking[],
     competitors: CompetitorAnalysis[],
-    businessProfile: any
+    businessProfile: any,
+    reviewsAnalysis?: any
   ): any[] {
     const actions = [];
     
@@ -506,6 +512,7 @@ export class ProfessionalScannerService {
       actionPlan: data.actionPlan,
       metaTags: data.metaTags,
       socialLinks: data.socialLinks,
+      reviewsAnalysis: data.reviewsAnalysis,
       domainAuthority: this.estimateDomainAuthority(data.lighthouseMetrics, data.keywordRankings),
       backlinks: 0,
       organicTraffic: 0
@@ -617,6 +624,283 @@ export class ProfessionalScannerService {
     }
     
     return metrics;
+  }
+
+  private async performReviewsAnalysis(
+    restaurantName: string,
+    businessProfile: any,
+    placeId: string
+  ): Promise<any> {
+    console.log('Performing comprehensive reviews analysis for:', restaurantName);
+    
+    try {
+      // Get reviews from multiple sources
+      const allReviews = [];
+      
+      // 1. Google Business Profile reviews (already in businessProfile)
+      if (businessProfile?.reviews?.recent) {
+        allReviews.push(...businessProfile.reviews.recent.map((review: any) => ({
+          ...review,
+          platform: 'Google',
+          date: new Date().toISOString()
+        })));
+      }
+      
+      // 2. Try to get additional reviews from Zembratech
+      if (this.zembraReviewsService) {
+        try {
+          const zembraReviews = await this.zembraReviewsService.getReviews(restaurantName, 20);
+          allReviews.push(...zembraReviews.map((review: any) => ({
+            ...review,
+            platform: review.platform || 'Zembratech',
+            date: review.date || new Date().toISOString()
+          })));
+        } catch (error) {
+          console.log('Zembratech reviews not available:', error.message);
+        }
+      }
+      
+      // 3. Analyze reviews
+      const reviewsAnalysis = this.analyzeReviewsData(allReviews, businessProfile);
+      
+      return reviewsAnalysis;
+    } catch (error) {
+      console.error('Reviews analysis failed:', error);
+      
+      // Fallback to basic analysis from business profile
+      return this.generateBasicReviewsAnalysis(businessProfile);
+    }
+  }
+
+  private analyzeReviewsData(reviews: any[], businessProfile: any): any {
+    const totalReviews = reviews.length;
+    const averageRating = reviews.reduce((sum, review) => sum + (review.rating || 0), 0) / totalReviews || 0;
+    
+    // Sentiment analysis
+    const sentimentCounts = { positive: 0, neutral: 0, negative: 0 };
+    reviews.forEach(review => {
+      if (review.sentiment) {
+        sentimentCounts[review.sentiment]++;
+      } else {
+        // Simple sentiment classification based on rating
+        if (review.rating >= 4) sentimentCounts.positive++;
+        else if (review.rating === 3) sentimentCounts.neutral++;
+        else sentimentCounts.negative++;
+      }
+    });
+    
+    // Extract key themes from review texts
+    const keyThemes = this.extractKeyThemes(reviews);
+    
+    // Analyze trends
+    const trends = this.analyzeTrends(reviews, businessProfile);
+    
+    // Generate recommendations
+    const recommendations = this.generateReviewsRecommendations(sentimentCounts, keyThemes, trends);
+    
+    return {
+      overallScore: Math.round(averageRating * 20), // Convert to 0-100 scale
+      totalReviews,
+      averageRating,
+      sentimentBreakdown: {
+        positive: Math.round((sentimentCounts.positive / totalReviews) * 100),
+        neutral: Math.round((sentimentCounts.neutral / totalReviews) * 100),
+        negative: Math.round((sentimentCounts.negative / totalReviews) * 100),
+      },
+      reviewSources: [
+        {
+          platform: 'Google',
+          count: reviews.filter(r => r.platform === 'Google').length,
+          averageRating: this.calculatePlatformAverageRating(reviews, 'Google'),
+        },
+        {
+          platform: 'Zembratech',
+          count: reviews.filter(r => r.platform === 'Zembratech').length,
+          averageRating: this.calculatePlatformAverageRating(reviews, 'Zembratech'),
+        }
+      ].filter(source => source.count > 0),
+      keyThemes,
+      recentReviews: reviews.slice(0, 10).map(review => ({
+        author: review.author || 'Anonymous',
+        rating: review.rating || 0,
+        text: review.text || '',
+        platform: review.platform || 'Unknown',
+        sentiment: review.sentiment || 'neutral',
+        date: review.date || new Date().toISOString(),
+      })),
+      trends,
+      recommendations,
+    };
+  }
+
+  private extractKeyThemes(reviews: any[]): any[] {
+    const themes = new Map();
+    
+    // Define common restaurant themes and their keywords
+    const themeKeywords = {
+      'Food Quality': ['delicious', 'tasty', 'fresh', 'quality', 'flavor', 'amazing', 'excellent', 'perfect'],
+      'Service': ['service', 'staff', 'waitress', 'waiter', 'friendly', 'helpful', 'professional'],
+      'Atmosphere': ['atmosphere', 'ambiance', 'environment', 'cozy', 'comfortable', 'nice', 'clean'],
+      'Price': ['price', 'expensive', 'affordable', 'value', 'cheap', 'reasonable', 'worth'],
+      'Speed': ['fast', 'quick', 'slow', 'wait', 'time', 'prompt', 'efficient'],
+      'Portion Size': ['portion', 'size', 'huge', 'small', 'large', 'enough', 'big'],
+    };
+    
+    reviews.forEach(review => {
+      const text = (review.text || '').toLowerCase();
+      const sentiment = review.sentiment || (review.rating >= 4 ? 'positive' : review.rating === 3 ? 'neutral' : 'negative');
+      
+      Object.entries(themeKeywords).forEach(([theme, keywords]) => {
+        const mentions = keywords.filter(keyword => text.includes(keyword)).length;
+        if (mentions > 0) {
+          const key = `${theme}-${sentiment}`;
+          if (!themes.has(key)) {
+            themes.set(key, {
+              theme,
+              sentiment,
+              mentions: 0,
+              examples: []
+            });
+          }
+          const themeData = themes.get(key);
+          themeData.mentions += mentions;
+          if (themeData.examples.length < 3) {
+            themeData.examples.push(text.substring(0, 100) + '...');
+          }
+        }
+      });
+    });
+    
+    return Array.from(themes.values())
+      .sort((a, b) => b.mentions - a.mentions)
+      .slice(0, 8);
+  }
+
+  private analyzeTrends(reviews: any[], businessProfile: any): any {
+    const recentReviews = reviews.slice(0, Math.min(20, reviews.length));
+    const olderReviews = reviews.slice(20);
+    
+    const recentAvg = recentReviews.reduce((sum, r) => sum + (r.rating || 0), 0) / recentReviews.length || 0;
+    const olderAvg = olderReviews.reduce((sum, r) => sum + (r.rating || 0), 0) / olderReviews.length || 0;
+    
+    let ratingTrend = 'stable';
+    if (recentAvg > olderAvg + 0.2) ratingTrend = 'improving';
+    else if (recentAvg < olderAvg - 0.2) ratingTrend = 'declining';
+    
+    return {
+      ratingTrend,
+      volumeTrend: reviews.length > 50 ? 'increasing' : 'stable',
+      responseRate: businessProfile?.responseRate || 0,
+      averageResponseTime: businessProfile?.averageResponseTime || 'Unknown',
+    };
+  }
+
+  private generateReviewsRecommendations(sentimentCounts: any, keyThemes: any[], trends: any): any[] {
+    const recommendations = [];
+    
+    // Negative sentiment recommendations
+    if (sentimentCounts.negative > 20) {
+      recommendations.push({
+        category: 'Reputation Management',
+        priority: 'high',
+        title: 'Address Negative Reviews',
+        description: `${sentimentCounts.negative}% of reviews are negative. Focus on responding professionally to negative feedback.`,
+        impact: 'Can improve customer perception and demonstrate care for feedback',
+      });
+    }
+    
+    // Response rate recommendations
+    if (trends.responseRate < 50) {
+      recommendations.push({
+        category: 'Customer Engagement',
+        priority: 'medium',
+        title: 'Improve Review Response Rate',
+        description: `Currently responding to ${trends.responseRate}% of reviews. Aim for 80%+ response rate.`,
+        impact: 'Shows customers you value their feedback and can improve search rankings',
+      });
+    }
+    
+    // Theme-based recommendations
+    const negativeServiceThemes = keyThemes.filter(theme => 
+      theme.theme === 'Service' && theme.sentiment === 'negative'
+    );
+    
+    if (negativeServiceThemes.length > 0) {
+      recommendations.push({
+        category: 'Service Quality',
+        priority: 'high',
+        title: 'Service Training Program',
+        description: 'Multiple reviews mention service issues. Consider staff training.',
+        impact: 'Better service leads to higher ratings and customer retention',
+      });
+    }
+    
+    // Rating trend recommendations
+    if (trends.ratingTrend === 'declining') {
+      recommendations.push({
+        category: 'Quality Control',
+        priority: 'high',
+        title: 'Address Declining Ratings',
+        description: 'Recent reviews show declining ratings. Investigate potential issues.',
+        impact: 'Preventing further decline is crucial for business reputation',
+      });
+    }
+    
+    return recommendations.slice(0, 5);
+  }
+
+  private calculatePlatformAverageRating(reviews: any[], platform: string): number {
+    const platformReviews = reviews.filter(r => r.platform === platform);
+    if (platformReviews.length === 0) return 0;
+    
+    return platformReviews.reduce((sum, r) => sum + (r.rating || 0), 0) / platformReviews.length;
+  }
+
+  private generateBasicReviewsAnalysis(businessProfile: any): any {
+    const rating = businessProfile?.rating || 0;
+    const totalReviews = businessProfile?.totalReviews || 0;
+    
+    return {
+      overallScore: Math.round(rating * 20),
+      totalReviews,
+      averageRating: rating,
+      sentimentBreakdown: {
+        positive: rating >= 4 ? 70 : rating >= 3 ? 50 : 30,
+        neutral: 20,
+        negative: rating >= 4 ? 10 : rating >= 3 ? 30 : 50,
+      },
+      reviewSources: [
+        {
+          platform: 'Google',
+          count: totalReviews,
+          averageRating: rating,
+        }
+      ],
+      keyThemes: [
+        {
+          theme: 'Overall Experience',
+          sentiment: rating >= 4 ? 'positive' : rating >= 3 ? 'neutral' : 'negative',
+          mentions: totalReviews,
+          examples: ['Based on overall rating analysis'],
+        }
+      ],
+      recentReviews: businessProfile?.reviews?.recent || [],
+      trends: {
+        ratingTrend: 'stable',
+        volumeTrend: 'stable',
+        responseRate: businessProfile?.responseRate || 0,
+        averageResponseTime: businessProfile?.averageResponseTime || 'Unknown',
+      },
+      recommendations: [
+        {
+          category: 'Review Management',
+          priority: 'medium',
+          title: 'Encourage More Reviews',
+          description: 'Increase review volume to improve online presence.',
+          impact: 'More reviews improve search visibility and customer trust',
+        }
+      ],
+    };
   }
 
   private calculateThreatLevel(competitor: any, performanceScore: number, seoScore: number): 'high' | 'medium' | 'low' {

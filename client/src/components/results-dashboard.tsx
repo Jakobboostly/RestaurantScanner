@@ -48,6 +48,7 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import ReviewsAnalysis from "./reviews-analysis";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
@@ -274,7 +275,7 @@ export default function ResultsDashboard({ scanResult, restaurantName }: Results
 
         {/* Main Content Tabs */}
         <Tabs defaultValue="overview" className="space-y-6">
-          <TabsList className="grid w-full grid-cols-6 bg-white border shadow-sm">
+          <TabsList className="grid w-full grid-cols-7 bg-white border shadow-sm">
             <TabsTrigger value="overview" className="flex items-center space-x-2">
               <BarChart3 className="h-4 w-4" />
               <span>Overview</span>
@@ -294,6 +295,10 @@ export default function ResultsDashboard({ scanResult, restaurantName }: Results
             <TabsTrigger value="competitors" className="flex items-center space-x-2">
               <Users className="h-4 w-4" />
               <span>Competitors</span>
+            </TabsTrigger>
+            <TabsTrigger value="reviews" className="flex items-center space-x-2">
+              <Star className="h-4 w-4" />
+              <span>Reviews</span>
             </TabsTrigger>
             <TabsTrigger value="recommendations" className="flex items-center space-x-2">
               <Sparkles className="h-4 w-4" />
@@ -894,6 +899,29 @@ export default function ResultsDashboard({ scanResult, restaurantName }: Results
                         );
                       })}
                     </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            )}
+          </TabsContent>
+
+          {/* Reviews Analysis Tab */}
+          <TabsContent value="reviews" className="space-y-6">
+            {scanResult.reviewsAnalysis ? (
+              <ReviewsAnalysis reviewsAnalysis={scanResult.reviewsAnalysis} />
+            ) : (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="space-y-6"
+              >
+                <Card>
+                  <CardContent className="p-8 text-center">
+                    <Star className="h-12 w-12 text-gray-400 mx-auto mb-4" />
+                    <h3 className="text-lg font-semibold mb-2">Reviews Analysis Coming Soon</h3>
+                    <p className="text-gray-600">
+                      Comprehensive review analysis will be available in the next scan.
+                    </p>
                   </CardContent>
                 </Card>
               </motion.div>

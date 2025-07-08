@@ -154,6 +154,48 @@ export const scanResultSchema = z.object({
     issues: z.array(z.string()),
     recommendations: z.array(z.string()),
   }).optional(),
+  reviewsAnalysis: z.object({
+    overallScore: z.number(),
+    totalReviews: z.number(),
+    averageRating: z.number(),
+    sentimentBreakdown: z.object({
+      positive: z.number(),
+      neutral: z.number(),
+      negative: z.number(),
+    }),
+    reviewSources: z.array(z.object({
+      platform: z.string(),
+      count: z.number(),
+      averageRating: z.number(),
+    })),
+    keyThemes: z.array(z.object({
+      theme: z.string(),
+      sentiment: z.enum(['positive', 'neutral', 'negative']),
+      mentions: z.number(),
+      examples: z.array(z.string()),
+    })),
+    recentReviews: z.array(z.object({
+      author: z.string(),
+      rating: z.number(),
+      text: z.string(),
+      platform: z.string(),
+      sentiment: z.enum(['positive', 'neutral', 'negative']),
+      date: z.string(),
+    })),
+    trends: z.object({
+      ratingTrend: z.enum(['improving', 'stable', 'declining']),
+      volumeTrend: z.enum(['increasing', 'stable', 'decreasing']),
+      responseRate: z.number(),
+      averageResponseTime: z.string(),
+    }),
+    recommendations: z.array(z.object({
+      category: z.string(),
+      priority: z.enum(['high', 'medium', 'low']),
+      title: z.string(),
+      description: z.string(),
+      impact: z.string(),
+    })),
+  }).optional(),
 });
 
 export type RestaurantSearchResult = z.infer<typeof restaurantSearchResultSchema>;
