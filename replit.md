@@ -166,6 +166,15 @@ This is a comprehensive restaurant website scanner application built with React 
   - Created advanced scan endpoint (/api/scan/advanced) for enhanced analysis
   - Enhanced scanning phases: Business → Competitors → Performance → Mobile → Keywords → SERP → Intelligence → Report
   - Provides restaurant-specific keyword suggestions with intent classification and opportunity identification
+- July 08, 2025. Lighthouse mobile screenshots and Zembratech reviews integration:
+  - Replaced Puppeteer with Lighthouse for mobile screenshot capture (375x667 viewport)
+  - Lighthouse provides performance metrics alongside high-quality mobile screenshots
+  - Integrated ZembraTechReviewsService for real-time review streaming during scans
+  - Reviews appear on right side with author, rating, sentiment analysis, and platform
+  - Fixed competitors display property mismatch (competitorData vs competitors)
+  - Added empty state handling for missing competitor data
+  - Enhanced mobile experience service with content analysis and screenshot fallbacks
+  - All systems now functional: Lighthouse screenshots, streaming reviews, competitor analysis
 
 ## User Preferences
 
