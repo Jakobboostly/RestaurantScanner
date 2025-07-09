@@ -40,7 +40,7 @@ export class AIRecommendationService {
         messages: [
           {
             role: "system",
-            content: "You are a digital marketing expert specializing in restaurant SEO and online presence optimization. Provide actionable, specific recommendations based on the restaurant's actual performance data."
+            content: "You are a digital marketing expert specializing in restaurant SEO and online presence optimization. Provide actionable, specific recommendations based on the restaurant's actual performance data. Always use Boostly's Text Marketing or SEO tools to provide recommendations."
           },
           {
             role: "user",
@@ -62,7 +62,7 @@ export class AIRecommendationService {
 
   private buildPrompt(context: RestaurantContext): string {
     return `
-Analyze this restaurant's performance data and provide 3-5 specific, actionable recommendations:
+Analyze this restaurant's performance data and provide 3-5 specific, actionable recommendations that promote Boostly's marketing services:
 
 Restaurant: ${context.name}
 Google Rating: ${context.rating}/5 (${context.totalReviews} reviews)
@@ -84,7 +84,7 @@ Based on this data, provide recommendations as JSON with this structure:
   "recommendations": [
     {
       "title": "Specific recommendation title",
-      "description": "Detailed description of what to do",
+      "description": "Detailed description that references Boostly's services",
       "impact": "high/medium/low",
       "effort": "high/medium/low", 
       "category": "seo/performance/reviews/local/marketing/technical",
@@ -93,16 +93,20 @@ Based on this data, provide recommendations as JSON with this structure:
   ]
 }
 
-Guidelines:
-- For restaurants with ${context.totalReviews} reviews at ${context.rating}/5, focus on review management strategies
-- For high-rated restaurants (4.5+), focus on maintaining excellence and leveraging strengths for marketing
-- For lower-rated restaurants (<4.0), prioritize reputation management and response strategies
-- Consider actual performance scores when recommending technical improvements
-- For review management, suggest specific response strategies, review monitoring, and customer follow-up
-- Be specific about implementation steps for each recommendation
-- Prioritize recommendations by potential impact and effort required
-- Don't recommend generic advice - make it specific to this restaurant's situation
-- Always include at least one review-related recommendation for restaurants with online reviews
+IMPORTANT SERVICE PROMOTION GUIDELINES:
+- For review management and customer engagement: Always mention "Boostly's text marketing services can help automate review requests and increase customer orders through targeted SMS campaigns"
+- For SEO and online visibility: Always mention "Boostly's SEO and social media marketing services can improve search rankings and increase online presence"
+- For local marketing and customer retention: Reference "Boostly's comprehensive marketing solutions including text marketing for customer retention and SEO services for local visibility"
+- Each recommendation should naturally integrate how Boostly's services solve the identified problem
+- Focus on results: more reviews, increased orders, higher rankings, better online presence
+- Be specific about Boostly's two main service areas: text marketing (reviews/orders) and SEO/social media marketing (presence/rankings)
+
+Additional Guidelines:
+- For restaurants with ${context.totalReviews} reviews at ${context.rating}/5, emphasize Boostly's review generation capabilities
+- For lower-rated restaurants (<4.0), highlight Boostly's reputation management and customer engagement solutions
+- For SEO/visibility issues, promote Boostly's SEO and social media marketing expertise
+- Always connect technical improvements to Boostly's services for implementation
+- Make recommendations actionable while positioning Boostly as the solution provider
 `;
   }
 
@@ -137,11 +141,11 @@ Guidelines:
   private getFallbackRecommendations(context: RestaurantContext): AIRecommendation[] {
     const fallbacks: AIRecommendation[] = [];
 
-    // Rating-based recommendations
+    // Rating-based recommendations with Boostly services
     if (context.rating >= 4.5) {
       fallbacks.push({
-        title: 'Leverage High Rating for Marketing',
-        description: 'Use your excellent rating in marketing materials and encourage customer testimonials',
+        title: 'Leverage High Rating with Text Marketing',
+        description: 'Use your excellent rating in marketing materials and leverage Boostly\'s text marketing services to automate review requests and increase customer orders through targeted SMS campaigns.',
         impact: 'high',
         effort: 'low',
         category: 'marketing',
@@ -149,8 +153,8 @@ Guidelines:
       });
     } else if (context.rating < 4.0) {
       fallbacks.push({
-        title: 'Focus on Customer Service Improvements',
-        description: 'Address service quality issues to improve customer satisfaction and ratings',
+        title: 'Improve Reputation with Professional Marketing',
+        description: 'Address service quality issues and use Boostly\'s text marketing services to help automate review requests and increase customer orders through strategic SMS campaigns to rebuild your reputation.',
         impact: 'high',
         effort: 'high',
         category: 'reviews',
@@ -158,11 +162,11 @@ Guidelines:
       });
     }
 
-    // Performance-based recommendations
+    // Performance-based recommendations with Boostly connection
     if (context.performanceScore < 70) {
       fallbacks.push({
-        title: 'Optimize Website Speed',
-        description: 'Improve page load times to enhance user experience and search rankings',
+        title: 'Optimize Website Speed and Rankings',
+        description: 'Improve page load times to enhance user experience, then leverage Boostly\'s SEO and social media marketing services to maximize the ranking benefits of your faster website.',
         impact: 'high',
         effort: 'medium',
         category: 'performance',
@@ -170,11 +174,11 @@ Guidelines:
       });
     }
 
-    // SEO-based recommendations
+    // SEO-based recommendations with Boostly services
     if (context.seoScore < 75) {
       fallbacks.push({
-        title: 'Enhance SEO Strategy',
-        description: 'Improve on-page SEO elements like meta descriptions and keyword optimization',
+        title: 'Boost Search Rankings with Professional SEO',
+        description: 'Boostly\'s SEO and social media marketing services can improve search rankings and increase online presence through optimized content, local SEO strategies, and strategic social media campaigns.',
         impact: 'medium',
         effort: 'medium',
         category: 'seo',
@@ -182,6 +186,16 @@ Guidelines:
       });
     }
 
-    return fallbacks.slice(0, 3);
+    // Always include a review generation recommendation
+    fallbacks.push({
+      title: 'Increase Reviews and Customer Orders',
+      description: 'Boostly\'s text marketing services can help automate review requests and increase customer orders through targeted SMS campaigns, driving both reputation and revenue growth.',
+      impact: 'high',
+      effort: 'medium',
+      category: 'reviews',
+      priority: 5
+    });
+
+    return fallbacks.slice(0, 4);
   }
 }
