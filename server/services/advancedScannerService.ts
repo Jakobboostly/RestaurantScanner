@@ -167,9 +167,17 @@ export class AdvancedScannerService {
       let competitorInsights = [];
       try {
         const primaryKeywords = this.generatePrimaryKeywords(restaurantName, businessProfile);
+        
+        // Get competitor domains from Google Places data
+        const competitorDomains = competitors
+          .filter(c => c.name && c.name !== restaurantName)
+          .map(c => `${c.name.toLowerCase().replace(/\s+/g, '')}.com`)
+          .slice(0, 5); // Limit to top 5 competitors
+        
         competitorInsights = await this.dataForSeoService.analyzeCompetitors(
           domain,
-          primaryKeywords
+          primaryKeywords,
+          competitorDomains
         );
       } catch (error) {
         console.error('Competitor intelligence failed:', error);

@@ -76,6 +76,16 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 09, 2025. Upgraded to comprehensive DataForSEO professional endpoints:
+  - Integrated keyword difficulty analysis via `/keywords_data/google/keyword_difficulty/live`
+  - Added comprehensive keyword suggestions via `/keywords_data/google/keyword_suggestions/live`
+  - Implemented backlink analysis via `/backlinks/backlinks/live` with quality scoring
+  - Added technical SEO auditing via `/on_page/pages/live` for page issues detection
+  - Enhanced competitor analysis with content gap analysis via `/dataforseo_labs/google/bulk_traffic_estimation/live`
+  - Created technical SEO audit endpoint `/api/audit/technical` for domain analysis
+  - Upgraded from basic search volume to professional competitive intelligence
+  - Added domain authority calculation and backlink quality scoring
+  - Enhanced competitor discovery using Google Places data for real restaurant competitors
 - July 09, 2025. Fixed critical scan failures preventing complete results:
   - Fixed business profile error handling to continue scanning even when Google Places API fails
   - Fixed competitor data missing placeId fields causing "undefined" errors

@@ -5,6 +5,7 @@ import { RestaurantService } from "./services/restaurantService";
 import { AdvancedScannerService } from "./services/advancedScannerService";
 import { restaurantSearchResultSchema, scanResultSchema } from "@shared/schema";
 import { JsonSanitizer } from "./utils/jsonSanitizer";
+import { EnhancedDataForSeoService } from "./services/enhancedDataForSeoService";
 import { z } from "zod";
 
 
@@ -113,6 +114,34 @@ export async function registerRoutes(app: Express): Promise<Server> {
     } catch (error) {
       console.error("Scan history error:", error);
       res.status(500).json({ error: "Failed to get scan history" });
+    }
+  });
+
+  // Technical SEO audit endpoint
+  app.post("/api/audit/technical", async (req, res) => {
+    try {
+      const { domain } = req.body;
+      
+      if (!domain) {
+        return res.status(400).json({ error: "Domain is required" });
+      }
+
+      if (!DATAFOREO_LOGIN || !DATAFOREO_PASSWORD) {
+        return res.status(500).json({ 
+          error: "DataForSEO credentials not configured. Please configure API credentials for technical SEO audit." 
+        });
+      }
+
+      const dataForSeoService = new EnhancedDataForSeoService(
+        DATAFOREO_LOGIN,
+        DATAFOREO_PASSWORD
+      );
+
+      const auditResult = await dataForSeoService.getTechnicalSeoAudit(domain);
+      res.json(auditResult);
+    } catch (error) {
+      console.error("Technical SEO audit error:", error);
+      res.status(500).json({ error: "Technical SEO audit failed" });
     }
   });
 
