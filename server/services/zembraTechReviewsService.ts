@@ -40,7 +40,7 @@ export class ZembraTechReviewsService {
     this.apiKey = apiKey;
   }
 
-  async getRestaurantReviews(
+  async getReviewAnalysis(
     restaurantName: string,
     domain?: string,
     location?: string

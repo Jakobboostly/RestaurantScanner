@@ -103,7 +103,7 @@ export class GoogleBusinessService {
       };
     } catch (error) {
       console.error('Google Business API error:', error);
-      throw new Error('Failed to get business profile data');
+      throw error; // Re-throw the original error for better handling
     }
   }
 
@@ -140,6 +140,7 @@ export class GoogleBusinessService {
           distance: this.calculateDistance(latitude, longitude, place.geometry.location.lat, place.geometry.location.lng),
           priceLevel: place.price_level || 2,
           isStronger: (place.rating || 0) > 4.0 && (place.user_ratings_total || 0) > 50,
+          placeId: place.place_id, // Add missing placeId field
         }));
 
       console.log(`Processed ${competitors.length} competitors:`, competitors.map(c => c.name));
