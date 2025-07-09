@@ -14,11 +14,17 @@ export interface GoogleBusinessProfile {
       menu: number;
       other: number;
     };
+    businessPhotos: string[];
   };
   reviews: {
     sentiment: 'positive' | 'neutral' | 'negative';
     score: number;
     recent: any[];
+    examples: {
+      positive: any[];
+      neutral: any[];
+      negative: any[];
+    };
   };
   isVerified: boolean;
   responseRate: number;
@@ -79,10 +85,10 @@ export class GoogleBusinessService {
         reviewCount: place.reviews ? place.reviews.length : 0
       });
       
-      // Analyze photos
+      // Analyze photos and get business photo URLs
       const photoAnalysis = await this.analyzePhotos(place.photos || []);
       
-      // Analyze reviews for sentiment
+      // Analyze reviews for sentiment and categorize examples
       const reviewAnalysis = await this.analyzeReviews(place.reviews || []);
 
       return {
@@ -147,6 +153,12 @@ export class GoogleBusinessService {
   private async analyzePhotos(photos: any[]) {
     const photoCount = photos.length;
     
+    // Get actual photo URLs from Google Places API
+    const businessPhotos = photos.slice(0, 6).map(photo => {
+      const photoReference = photo.photo_reference;
+      return `https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${photoReference}&key=${this.apiKey}`;
+    });
+    
     // Analyze photo quality based on metadata and count
     let quality: 'excellent' | 'good' | 'fair' | 'poor' = 'poor';
     if (photoCount >= 20) quality = 'excellent';
@@ -166,6 +178,7 @@ export class GoogleBusinessService {
       total: photoCount,
       quality,
       categories,
+      businessPhotos
     };
   }
 
@@ -175,6 +188,11 @@ export class GoogleBusinessService {
         sentiment: 'neutral' as const,
         score: 0,
         recent: [],
+        examples: {
+          positive: [],
+          neutral: [],
+          negative: []
+        }
       };
     }
 
@@ -198,10 +216,40 @@ export class GoogleBusinessService {
         relative_time_description: review.relative_time_description || 'Recently'
       }));
 
+    // Categorize reviews by sentiment for examples
+    const positiveReviews = reviews.filter(r => r.rating >= 4).slice(0, 3);
+    const neutralReviews = reviews.filter(r => r.rating === 3).slice(0, 2);
+    const negativeReviews = reviews.filter(r => r.rating <= 2).slice(0, 2);
+
+    const examples = {
+      positive: positiveReviews.map(review => ({
+        author: review.author_name || 'Anonymous',
+        rating: review.rating,
+        text: review.text || 'Great experience!',
+        date: review.relative_time_description || 'Recently',
+        platform: 'Google'
+      })),
+      neutral: neutralReviews.map(review => ({
+        author: review.author_name || 'Anonymous', 
+        rating: review.rating,
+        text: review.text || 'Average experience',
+        date: review.relative_time_description || 'Recently',
+        platform: 'Google'
+      })),
+      negative: negativeReviews.map(review => ({
+        author: review.author_name || 'Anonymous',
+        rating: review.rating,
+        text: review.text || 'Could be better',
+        date: review.relative_time_description || 'Recently',
+        platform: 'Google'
+      }))
+    };
+
     return {
       sentiment,
       score: Math.round(averageRating * 20), // Convert to 0-100 scale
       recent: recentReviews,
+      examples
     };
   }
 

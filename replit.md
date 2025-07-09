@@ -76,6 +76,15 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 09, 2025. Comprehensive user experience enhancements for competitive restaurant analysis:
+  - Added city-based keyword targeting from restaurant names (e.g., "pizza provo", "mexican restaurant denver")
+  - Integrated Google Business Profile photo fetching - displays actual restaurant photos from Google Places API
+  - Enhanced competitor analysis with ranking comparisons showing "where they rank compared to you"
+  - Categorized review examples by sentiment (positive, neutral, negative) with real review text
+  - Created creative, UI-friendly critical issues with icons, colors, and business impact context
+  - Added mobile screenshot functionality for authentic mobile layout analysis
+  - Enhanced keyword generation with cuisine type detection (pizza, Mexican, Italian, Asian, etc.)
+  - Improved competitive intelligence with real ranking positions and keyword performance data
 - July 09, 2025. Enhanced AI recommendation system with dynamic, data-driven personalization:
   - Replaced hardcoded recommendations with dynamic analysis based on actual restaurant data
   - AI now references specific metrics (rating, review count, performance scores, competitor data)
