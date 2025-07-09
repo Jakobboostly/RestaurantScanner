@@ -1,0 +1,143 @@
+Restaurant Scanner - DataForSEO Live API Workflow
+Core Architecture
+Single HTTP Webhook → Parallel Live API Calls → AI Analysis → Instant Report
+
+Input Parameters
+json{
+  "restaurant_name": "Joe's Pizza",
+  "location": "New York, NY",
+  "website": "https://joespizza.com",
+  "owner_email": "owner@joespizza.com"
+}
+
+Workflow Steps
+1. Restaurant Discovery (5 seconds)
+Endpoint: POST /v3/business_data/business_listings/search/live
+json{
+  "keyword": "Joe's Pizza",
+  "location_name": "New York, NY",
+  "limit": 10
+}
+Returns: Business listings with Google My Business data, addresses, phone numbers, categories
+2. Parallel Live Analysis (15-30 seconds total)
+Execute all these calls simultaneously:
+A) Google My Business Data
+Endpoint: POST /v3/business_data/google/my_business_info/live
+json{
+  "keyword": "Joe's Pizza New York",
+  "location_name": "New York, NY",
+  "language_name": "English"
+}
+Returns: Reviews, ratings, photos, hours, Q&A, posts
+B) Website Performance Audit
+Endpoint: POST /v3/on_page/lighthouse/live/json
+json{
+  "url": "https://joespizza.com",
+  "language_name": "English"
+}
+Returns: Page speed, mobile experience, SEO scores, accessibility, performance metrics
+C) Restaurant Keyword Analysis
+Endpoint: POST /v3/dataforseo_labs/google/keywords_for_site/live
+json{
+  "target": "joespizza.com",
+  "location_name": "New York, NY",
+  "language_name": "English",
+  "limit": 100
+}
+Returns: Keywords the site ranks for, positions, search volumes, difficulty scores
+D) Local Competition Analysis
+Endpoint: POST /v3/dataforseo_labs/google/serp_competitors/live
+json{
+  "target": "joespizza.com",
+  "location_name": "New York, NY",
+  "language_name": "English",
+  "limit": 20
+}
+Returns: Direct competitors, their ranking positions, competitive keywords
+E) Local Search Performance
+Endpoint: POST /v3/serp/google/maps/live/advanced
+json{
+  "keyword": "pizza restaurant",
+  "location_name": "New York, NY",
+  "language_name": "English"
+}
+Returns: Local pack rankings, map positions, competitor analysis
+F) Domain Analytics
+Endpoint: POST /v3/dataforseo_labs/google/domain_rank_overview/live
+json{
+  "target": "joespizza.com",
+  "location_name": "New York, NY",
+  "language_name": "English"
+}
+Returns: Domain authority, traffic estimates, ranking distribution
+3. AI-Powered SERP Analysis (10 seconds)
+Endpoint: POST /v3/serp/ai_summary
+json{
+  "task_id": "[from_previous_serp_call]",
+  "prompt": "Analyze this restaurant's local search performance. Identify: 1) Ranking position vs competitors 2) Review sentiment issues 3) Missing keyword opportunities 4) Technical SEO problems 5) Actionable recommendations for improvement",
+  "include_links": true,
+  "fetch_content": true
+}
+Returns: AI-generated insights and recommendations
+4. Data Processing & Scoring (5 seconds)
+Calculate performance scores:
+
+SEO Score: Lighthouse + keyword rankings (0-100)
+Local Visibility: Maps ranking + GMB completeness (0-100)
+Review Health: Rating + sentiment + response rate (0-100)
+Competition: Relative performance vs local competitors (0-100)
+Technical: Website speed + mobile + technical issues (0-100)
+
+5. Report Generation (5 seconds)
+Generate structured report with:
+
+Executive Summary: AI-generated insights
+Performance Scores: Visual dashboard
+Competitive Analysis: Position vs competitors
+Keyword Opportunities: Missing keywords with difficulty scores
+Technical Issues: Prioritized action items
+Recommendations: Next steps to improve rankings
+
+6. Delivery (Instant)
+
+Email: Send formatted report to owner
+CRM: Store analysis data
+Webhook Response: Return success status
+
+
+Key Benefits of Live API Approach
+Speed
+
+Total Time: 30-45 seconds (vs 3 minutes with polling)
+No Polling: Instant results from Live endpoints
+Parallel Processing: All API calls run simultaneously
+
+Cost Efficiency
+
+No Task Storage: Live method doesn't store results
+Single Requests: No POST + GET pattern needed
+Reduced Complexity: No task ID management
+
+Data Freshness
+
+Real-time Data: All information is current
+No Cached Results: Every scan gets fresh data
+Accurate Insights: Latest rankings and reviews
+
+
+Error Handling
+Primary Failure Points
+
+Restaurant Not Found: Business listings search returns empty
+Website Down: On-page analysis fails
+API Rate Limits: 2000 calls/minute limit reached
+Invalid Location: Location name not recognized
+
+Fallback Strategy
+javascript// Graceful degradation
+if (businessListing.length === 0) {
+  // Skip GMB analysis, focus on website + keyword data
+}
+if (websiteAudit.status_code !== 20000) {
+  // Skip technical analysis, provide SEO recommendations only
+}
