@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import boostlyLogo from "@assets/boostlylogo_1752026376541.png";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,7 +13,7 @@ export default function Navigation() {
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
               <img 
-                src="/boostly-logo.svg" 
+                src={boostlyLogo} 
                 alt="Boostly Logo" 
                 className="h-8 w-auto mr-3"
               />
