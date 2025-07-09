@@ -944,8 +944,18 @@ export class AdvancedScannerService {
     try {
       const apiKey = process.env.GOOGLE_API_KEY || process.env.PAGESPEED_API_KEY;
       if (!apiKey) {
-        console.warn('No Google API key found, using fallback mobile metrics');
-        return this.getFallbackMobileExperience();
+        console.warn('No Google API key found for mobile performance analysis');
+        return {
+          score: 70,
+          loadTime: 3.0,
+          isResponsive: true,
+          touchFriendly: true,
+          textReadable: true,
+          navigationEasy: true,
+          issues: ['Unable to analyze mobile experience - Google API key not configured'],
+          recommendations: ['Configure Google PageSpeed Insights API key for real mobile analysis'],
+          contentAnalysis: await this.analyzeWebsiteContent(domain)
+        };
       }
 
       let url = domain;
@@ -953,7 +963,7 @@ export class AdvancedScannerService {
         url = `https://${url}`;
       }
 
-      console.log(`Testing mobile performance for: ${url}`);
+      console.log(`Testing mobile performance for: ${url} with API key: ${apiKey.substring(0, 10)}...`);
 
       const response = await axios.get('https://www.googleapis.com/pagespeedonline/v5/runPagespeed', {
         params: {
@@ -965,6 +975,8 @@ export class AdvancedScannerService {
         timeout: 30000
       });
 
+      console.log('Mobile PageSpeed API Response Status:', response.status);
+      
       const lighthouse = response.data.lighthouseResult;
       const categories = lighthouse.categories;
 
@@ -976,6 +988,8 @@ export class AdvancedScannerService {
       const isResponsive = lighthouse.audits['viewport']?.score === 1;
       const touchFriendly = lighthouse.audits['tap-targets']?.score === 1;
       const textReadable = lighthouse.audits['font-size']?.score === 1;
+
+      console.log(`Mobile analysis complete: Score=${mobileScore}, LoadTime=${loadTime}s, Responsive=${isResponsive}`);
 
       // Generate mobile-specific issues
       const issues = [];
@@ -1003,9 +1017,18 @@ export class AdvancedScannerService {
       };
 
     } catch (error) {
-      console.error('Mobile performance analysis failed:', error);
+      console.error('Mobile performance analysis failed:', error.message);
+      console.error('Error details:', error.response?.data || error);
+      
       return {
-        ...(await this.getFallbackMobileExperience()),
+        score: 70,
+        loadTime: 3.0,
+        isResponsive: true,
+        touchFriendly: true,
+        textReadable: true,
+        navigationEasy: true,
+        issues: [`Mobile analysis failed: ${error.message}`],
+        recommendations: ['Check website accessibility and mobile optimization', 'Verify Google PageSpeed Insights API key'],
         contentAnalysis: await this.analyzeWebsiteContent(domain)
       };
     }

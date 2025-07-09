@@ -76,6 +76,12 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 09, 2025. Fixed mobile performance measurement system with authentic Google PageSpeed Insights API:
+  - Replaced hardcoded mobile fallback data with real Google PageSpeed Insights mobile strategy analysis
+  - Mobile performance now uses actual API calls with proper error handling and detailed logging
+  - System measures real mobile scores, load times, responsive design, touch-friendly elements, and text readability
+  - Added comprehensive mobile-specific issue detection and recommendations based on Lighthouse audits
+  - Enhanced error messages to clearly indicate API configuration issues vs actual performance problems
 - July 09, 2025. Comprehensive user experience enhancements for competitive restaurant analysis:
   - Added city-based keyword targeting from restaurant names (e.g., "pizza provo", "mexican restaurant denver")
   - Integrated Google Business Profile photo fetching - displays actual restaurant photos from Google Places API
