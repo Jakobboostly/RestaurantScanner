@@ -55,6 +55,9 @@ export class EnhancedDataForSeoService {
         username: login,
         password: password
       },
+      headers: {
+        'Content-Type': 'application/json'
+      },
       timeout: 30000
     });
   }
@@ -73,13 +76,11 @@ export class EnhancedDataForSeoService {
       }
 
       try {
-        // Get keyword ideas
-        const response = await this.client.post('/keywords_data/google_ads/keywords_for_keywords/live', [{
+        // Get keyword search volume data
+        const response = await this.client.post('/keywords_data/google/search_volume/live', [{
           keywords: [keyword],
           location_name: location,
-          language_name: 'English',
-          include_serp_info: true,
-          limit: 50
+          language_name: 'English'
         }]);
 
         const results = response.data.tasks?.[0]?.result || [];
@@ -87,17 +88,17 @@ export class EnhancedDataForSeoService {
         const keywordData: KeywordData[] = results.map((item: any) => ({
           keyword: item.keyword || keyword,
           searchVolume: item.search_volume || 0,
-          difficulty: this.calculateDifficulty(item.competition || 0),
-          cpc: item.cpc || 0,
-          competition: item.competition || 0,
+          difficulty: item.keyword_info?.keyword_difficulty || this.calculateDifficulty(item.competition || 0),
+          cpc: item.keyword_info?.cpc || 0,
+          competition: item.keyword_info?.competition || 0,
           intent: this.classifySearchIntent(item.keyword || keyword),
           relatedKeywords: []
         }));
 
         // Get related keywords
         try {
-          const relatedResponse = await this.client.post('/keywords_data/google_ads/keywords_for_keywords/live', [{
-            keywords: [keyword],
+          const relatedResponse = await this.client.post('/keywords_data/google/search_volume/live', [{
+            keywords: [`${keyword} near me`, `best ${keyword}`, `${keyword} restaurant`],
             location_name: location,
             language_name: 'English',
             include_serp_info: true,

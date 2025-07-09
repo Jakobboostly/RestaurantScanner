@@ -1008,9 +1008,9 @@ export class AdvancedScannerService {
 
   private async analyzeWebsitePerformance(domain: string): Promise<any> {
     try {
-      const apiKey = process.env.GOOGLE_API_KEY || process.env.PAGESPEED_API_KEY;
+      const apiKey = process.env.PAGESPEED_API_KEY || process.env.GOOGLE_API_KEY;
       if (!apiKey) {
-        console.warn('No Google API key found, using fallback performance metrics');
+        console.warn('No PageSpeed API key found, using fallback performance metrics');
         return this.getFallbackPerformanceMetrics();
       }
 
@@ -1026,7 +1026,7 @@ export class AdvancedScannerService {
           url: url,
           key: apiKey,
           strategy: 'desktop',
-          category: ['performance', 'accessibility', 'best-practices', 'seo']
+          category: 'performance'
         },
         timeout: 30000
       });
@@ -1055,9 +1055,9 @@ export class AdvancedScannerService {
 
   private async analyzeMobilePerformance(domain: string): Promise<any> {
     try {
-      const apiKey = process.env.GOOGLE_API_KEY || process.env.PAGESPEED_API_KEY;
+      const apiKey = process.env.PAGESPEED_API_KEY || process.env.GOOGLE_API_KEY;
       if (!apiKey) {
-        console.warn('No Google API key found for mobile performance analysis');
+        console.warn('No PageSpeed API key found for mobile performance analysis');
         return {
           score: 70,
           loadTime: 3.0,
@@ -1083,7 +1083,7 @@ export class AdvancedScannerService {
           url: url,
           key: apiKey,
           strategy: 'mobile',
-          category: ['performance', 'accessibility', 'best-practices', 'seo']
+          category: 'performance'
         },
         timeout: 30000
       });

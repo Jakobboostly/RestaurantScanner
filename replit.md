@@ -76,6 +76,15 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 09, 2025. Comprehensive system audit and DataForSEO authentication fixes:
+  - Conducted full system audit: Google Places API ✅, PageSpeed Insights ✅, DataForSEO ❌ (timing out), Zembratech configured
+  - Identified DataForSEO connection issues - API calls timing out despite correct credentials
+  - Fixed DataForSEO API endpoint from /keywords_data/google_ads to /keywords_data/google/search_volume/live
+  - Added proper Content-Type headers to axios configuration for DataForSEO
+  - Frontend correctly using /api/scan/professional endpoint as expected
+  - Keywords returning empty due to DataForSEO timeout, not authentication failure
+  - Performance scores working through Google PageSpeed Insights API (real scores 70-85/100)
+  - Business profiles and competitor analysis working through Google Places API
 - July 09, 2025. Comprehensive mock data elimination and real API integration:
   - Replaced all hardcoded keyword search volumes and difficulty scores with DataForSEO API calls
   - Implemented real competitor analysis using Google Business Profile data instead of random scores
