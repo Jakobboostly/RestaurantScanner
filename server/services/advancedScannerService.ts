@@ -552,18 +552,44 @@ export class AdvancedScannerService {
   }
 
   private generatePrimaryKeywords(restaurantName: string, businessProfile: any): string[] {
-    return [
-      restaurantName,
-      `${restaurantName} menu`,
-      `${restaurantName} near me`,
-      `${restaurantName} delivery`,
-      `${restaurantName} reviews`
-    ];
+    // Generate competitive keywords based on cuisine type
+    const cuisineType = this.extractCuisineType(businessProfile);
+    const isPizza = cuisineType.includes('pizza') || restaurantName.toLowerCase().includes('pizza');
+    const isMexican = cuisineType.includes('mexican') || restaurantName.toLowerCase().includes('mexican');
+    const isItalian = cuisineType.includes('italian') || restaurantName.toLowerCase().includes('italian');
+    const isAsian = cuisineType.includes('asian') || cuisineType.includes('chinese') || cuisineType.includes('japanese');
+
+    if (isPizza) {
+      return ['pizza near me', 'best pizza delivery', 'pizza restaurant'];
+    } else if (isMexican) {
+      return ['mexican restaurant near me', 'best tacos near me', 'mexican food delivery'];
+    } else if (isItalian) {
+      return ['italian restaurant near me', 'pasta restaurant', 'authentic italian food'];
+    } else if (isAsian) {
+      return ['asian restaurant near me', 'chinese food delivery', 'sushi restaurant'];
+    } else {
+      return ['restaurant near me', 'food delivery near me', 'local restaurant'];
+    }
   }
 
   private extractCuisineType(businessProfile: any): string {
-    // Extract cuisine type from business profile if available
-    return 'restaurant'; // Simplified for now
+    // Extract cuisine type from business profile name and categories
+    const name = (businessProfile?.name || '').toLowerCase();
+    
+    // Check for specific cuisine types in restaurant name
+    if (name.includes('pizza') || name.includes('pizzeria')) return 'pizza';
+    if (name.includes('mexican') || name.includes('taco') || name.includes('burrito')) return 'mexican';
+    if (name.includes('italian') || name.includes('pasta') || name.includes('spaghetti')) return 'italian';
+    if (name.includes('chinese') || name.includes('asian') || name.includes('sushi') || name.includes('thai')) return 'asian';
+    if (name.includes('bbq') || name.includes('barbecue') || name.includes('grill')) return 'american';
+    if (name.includes('indian') || name.includes('curry')) return 'indian';
+    if (name.includes('burger') || name.includes('sandwich')) return 'american';
+    if (name.includes('seafood') || name.includes('fish')) return 'seafood';
+    if (name.includes('steakhouse') || name.includes('steak')) return 'steakhouse';
+    if (name.includes('deli') || name.includes('sub')) return 'deli';
+    
+    // Default to general restaurant
+    return 'restaurant';
   }
 
   private calculateBusinessScore(businessProfile: any): number {
@@ -622,28 +648,76 @@ export class AdvancedScannerService {
   }
 
   private generateRestaurantKeywords(restaurantName: string, businessProfile: any): any[] {
-    const baseKeywords = [
-      { keyword: restaurantName, searchVolume: 1200, difficulty: 25, intent: 'navigational' },
-      { keyword: `${restaurantName} menu`, searchVolume: 800, difficulty: 30, intent: 'informational' },
-      { keyword: `${restaurantName} near me`, searchVolume: 950, difficulty: 35, intent: 'local' },
-      { keyword: `${restaurantName} delivery`, searchVolume: 650, difficulty: 40, intent: 'transactional' },
-      { keyword: `${restaurantName} hours`, searchVolume: 400, difficulty: 20, intent: 'informational' },
-      { keyword: `${restaurantName} reviews`, searchVolume: 350, difficulty: 25, intent: 'informational' }
-    ];
+    // Extract cuisine type and location for competitive keywords
+    const cuisineType = this.extractCuisineType(businessProfile);
+    const isDelivery = restaurantName.toLowerCase().includes('delivery') || restaurantName.toLowerCase().includes('takeout');
+    const isPizza = cuisineType.includes('pizza') || restaurantName.toLowerCase().includes('pizza');
+    const isMexican = cuisineType.includes('mexican') || restaurantName.toLowerCase().includes('mexican');
+    const isItalian = cuisineType.includes('italian') || restaurantName.toLowerCase().includes('italian');
+    const isAsian = cuisineType.includes('asian') || cuisineType.includes('chinese') || cuisineType.includes('japanese');
 
-    // Add location-based keywords if available
-    if (businessProfile?.name) {
-      const locationKeywords = [
-        { keyword: `pizza restaurant`, searchVolume: 2200, difficulty: 55, intent: 'local' },
-        { keyword: `best pizza near me`, searchVolume: 1800, difficulty: 50, intent: 'local' },
-        { keyword: `pizza delivery`, searchVolume: 1500, difficulty: 45, intent: 'transactional' },
-        { keyword: `pizza menu`, searchVolume: 900, difficulty: 35, intent: 'informational' }
+    // Generate competitive industry keywords instead of restaurant-specific ones
+    let competitiveKeywords = [];
+
+    if (isPizza) {
+      competitiveKeywords = [
+        { keyword: 'pizza near me', searchVolume: 8900, difficulty: 65, intent: 'local' },
+        { keyword: 'best pizza delivery', searchVolume: 3400, difficulty: 55, intent: 'transactional' },
+        { keyword: 'pizza restaurant', searchVolume: 2200, difficulty: 50, intent: 'local' },
+        { keyword: 'wood fired pizza', searchVolume: 1800, difficulty: 45, intent: 'informational' },
+        { keyword: 'brick oven pizza', searchVolume: 1500, difficulty: 40, intent: 'informational' },
+        { keyword: 'authentic pizza', searchVolume: 1200, difficulty: 35, intent: 'informational' }
       ];
-      
-      baseKeywords.push(...locationKeywords);
+    } else if (isMexican) {
+      competitiveKeywords = [
+        { keyword: 'mexican restaurant near me', searchVolume: 7200, difficulty: 60, intent: 'local' },
+        { keyword: 'best tacos near me', searchVolume: 4100, difficulty: 55, intent: 'local' },
+        { keyword: 'authentic mexican food', searchVolume: 2800, difficulty: 50, intent: 'informational' },
+        { keyword: 'mexican food delivery', searchVolume: 2400, difficulty: 45, intent: 'transactional' },
+        { keyword: 'taco restaurant', searchVolume: 1900, difficulty: 40, intent: 'local' },
+        { keyword: 'mexican cuisine', searchVolume: 1600, difficulty: 35, intent: 'informational' }
+      ];
+    } else if (isItalian) {
+      competitiveKeywords = [
+        { keyword: 'italian restaurant near me', searchVolume: 6800, difficulty: 65, intent: 'local' },
+        { keyword: 'authentic italian food', searchVolume: 3200, difficulty: 50, intent: 'informational' },
+        { keyword: 'pasta restaurant', searchVolume: 2600, difficulty: 45, intent: 'local' },
+        { keyword: 'italian cuisine', searchVolume: 2100, difficulty: 40, intent: 'informational' },
+        { keyword: 'fine dining italian', searchVolume: 1700, difficulty: 55, intent: 'local' },
+        { keyword: 'italian food delivery', searchVolume: 1400, difficulty: 40, intent: 'transactional' }
+      ];
+    } else if (isAsian) {
+      competitiveKeywords = [
+        { keyword: 'asian restaurant near me', searchVolume: 5900, difficulty: 60, intent: 'local' },
+        { keyword: 'chinese food delivery', searchVolume: 4300, difficulty: 50, intent: 'transactional' },
+        { keyword: 'sushi restaurant', searchVolume: 3700, difficulty: 55, intent: 'local' },
+        { keyword: 'authentic asian cuisine', searchVolume: 2400, difficulty: 45, intent: 'informational' },
+        { keyword: 'thai restaurant', searchVolume: 2100, difficulty: 40, intent: 'local' },
+        { keyword: 'asian food near me', searchVolume: 1800, difficulty: 35, intent: 'local' }
+      ];
+    } else {
+      // Generic restaurant keywords for unidentified cuisine
+      competitiveKeywords = [
+        { keyword: 'restaurant near me', searchVolume: 12000, difficulty: 70, intent: 'local' },
+        { keyword: 'best restaurant nearby', searchVolume: 4800, difficulty: 60, intent: 'local' },
+        { keyword: 'local restaurant', searchVolume: 3200, difficulty: 50, intent: 'local' },
+        { keyword: 'food delivery near me', searchVolume: 7200, difficulty: 65, intent: 'transactional' },
+        { keyword: 'family restaurant', searchVolume: 2400, difficulty: 45, intent: 'local' },
+        { keyword: 'casual dining', searchVolume: 1900, difficulty: 40, intent: 'informational' }
+      ];
     }
 
-    return baseKeywords.slice(0, 10);
+    // Add high-value generic restaurant keywords
+    const genericKeywords = [
+      { keyword: 'online ordering', searchVolume: 3600, difficulty: 55, intent: 'transactional' },
+      { keyword: 'takeout near me', searchVolume: 2800, difficulty: 50, intent: 'local' },
+      { keyword: 'dinner restaurant', searchVolume: 2100, difficulty: 45, intent: 'local' },
+      { keyword: 'lunch specials', searchVolume: 1700, difficulty: 40, intent: 'informational' }
+    ];
+
+    // Combine and return top 10 competitive keywords
+    const allKeywords = [...competitiveKeywords, ...genericKeywords];
+    return allKeywords.slice(0, 10);
   }
 
   private getFallbackReviewsAnalysis(businessProfile?: any): any {
