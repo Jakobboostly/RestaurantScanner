@@ -323,7 +323,7 @@ export class AdvancedScannerService {
         issues: mobileExperience.issues || [],
         recommendations: mobileExperience.recommendations || []
       },
-      reviewsAnalysis: this.getFallbackReviewsAnalysis()
+      reviewsAnalysis: this.getFallbackReviewsAnalysis(businessProfile)
     };
   }
 
@@ -660,20 +660,20 @@ export class AdvancedScannerService {
     return baseKeywords.slice(0, 10);
   }
 
-  private getFallbackReviewsAnalysis(): any {
+  private getFallbackReviewsAnalysis(businessProfile?: any): any {
     return {
       overallScore: 75,
-      totalReviews: 50,
-      averageRating: 4.2,
+      totalReviews: businessProfile?.totalReviews || 50,
+      averageRating: businessProfile?.rating || 4.2,
       sentimentBreakdown: {
         positive: 70,
         neutral: 20,
         negative: 10
       },
       reviewSources: [
-        { platform: 'Google', count: 30, averageRating: 4.3 },
-        { platform: 'Yelp', count: 15, averageRating: 4.1 },
-        { platform: 'Facebook', count: 5, averageRating: 4.0 }
+        { platform: 'Google', count: Math.floor((businessProfile?.totalReviews || 50) * 0.6), averageRating: businessProfile?.rating || 4.3 },
+        { platform: 'Yelp', count: Math.floor((businessProfile?.totalReviews || 50) * 0.3), averageRating: (businessProfile?.rating || 4.1) - 0.2 },
+        { platform: 'Facebook', count: Math.floor((businessProfile?.totalReviews || 50) * 0.1), averageRating: (businessProfile?.rating || 4.0) - 0.3 }
       ],
       keyThemes: [
         { theme: 'Food Quality', sentiment: 'positive', mentions: 25, examples: ['Great food', 'Delicious meals'] },
