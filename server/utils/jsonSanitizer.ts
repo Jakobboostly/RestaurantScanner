@@ -49,9 +49,13 @@ export class JsonSanitizer {
     return str
       .replace(/[\x00-\x1f\x7f-\x9f]/g, '') // Remove control characters
       .replace(/\s+/g, ' ') // Normalize whitespace
-      .replace(/[^\w\s\.\,\!\?\-\(\)\:\/]/g, '') // Keep only safe characters
+      .replace(/\\/g, '\\\\') // Escape backslashes first
+      .replace(/"/g, '\\"') // Then escape quotes
+      .replace(/\n/g, ' ') // Replace newlines with spaces
+      .replace(/\r/g, ' ') // Replace carriage returns with spaces
+      .replace(/\t/g, ' ') // Replace tabs with spaces
       .trim()
-      .substring(0, 1000); // Limit length
+      .substring(0, 2000); // Increase length limit
   }
   
   /**
@@ -59,16 +63,21 @@ export class JsonSanitizer {
    */
   static safeStringify(obj: any): string {
     try {
+      // First sanitize the entire object
+      const sanitizedObj = this.sanitizeValue(obj);
+      
       // Use built-in JSON.stringify with proper error handling
-      return JSON.stringify(obj, (key, value) => {
-        if (typeof value === 'string') {
-          return this.sanitizeString(value);
-        }
-        return value;
-      });
+      const jsonString = JSON.stringify(sanitizedObj, null, 0);
+      
+      // Validate the JSON is not truncated
+      if (jsonString && this.isValidJson(jsonString)) {
+        return jsonString;
+      } else {
+        throw new Error('Invalid JSON generated');
+      }
     } catch (error) {
       console.error('JSON stringify error:', error);
-      return JSON.stringify({ error: 'Serialization failed' });
+      return JSON.stringify({ error: 'Serialization failed', message: error.message });
     }
   }
   

@@ -150,11 +150,19 @@ export async function registerRoutes(app: Express): Promise<Server> {
         }
       );
 
-      // Send completion message
-      const completionMessage = JsonSanitizer.safeStringify({
+      // Send completion message with debugging
+      const completionEvent = {
         type: 'complete',
         result: scanResult
-      });
+      };
+      
+      console.log('Scan result keywords length:', scanResult.keywords?.length || 0);
+      console.log('Scan result structure:', Object.keys(scanResult));
+      
+      const completionMessage = JsonSanitizer.safeStringify(completionEvent);
+      console.log('Completion message length:', completionMessage.length);
+      console.log('Completion message valid:', JsonSanitizer.isValidJson(completionMessage));
+      
       res.write(`data: ${completionMessage}\n\n`);
       res.end();
     } catch (error) {
