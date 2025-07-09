@@ -1,6 +1,7 @@
 import { GoogleBusinessService } from './googleBusinessService.js';
 import { EnhancedDataForSeoService } from './enhancedDataForSeoService.js';
 import { ZembraTechReviewsService } from './zembraTechReviewsService.js';
+import { AIRecommendationService } from './aiRecommendationService.js';
 import { ScanResult } from '@shared/schema';
 
 export interface ScanProgress {
@@ -28,6 +29,7 @@ export class AdvancedScannerService {
   private googleBusinessService: GoogleBusinessService;
   private dataForSeoService: EnhancedDataForSeoService;
   private zembraReviewsService: ZembraTechReviewsService | null = null;
+  private aiRecommendationService: AIRecommendationService;
 
   constructor(
     googleApiKey: string,
@@ -39,6 +41,7 @@ export class AdvancedScannerService {
   ) {
     this.googleBusinessService = new GoogleBusinessService(googleApiKey);
     this.dataForSeoService = new EnhancedDataForSeoService(dataForSeoLogin, dataForSeoPassword);
+    this.aiRecommendationService = new AIRecommendationService();
     
     if (zembraApiKey) {
       this.zembraReviewsService = new ZembraTechReviewsService(zembraApiKey);
@@ -166,7 +169,7 @@ export class AdvancedScannerService {
 
       // Phase 8: Generate Enhanced Report
       onProgress({ progress: 95, status: 'Generating comprehensive intelligence report...' });
-      const enhancedResult = this.generateEnhancedReport(
+      const enhancedResult = await this.generateEnhancedReport(
         domain,
         restaurantName,
         businessProfile,
@@ -188,7 +191,7 @@ export class AdvancedScannerService {
     }
   }
 
-  private generateEnhancedReport(
+  private async generateEnhancedReport(
     domain: string,
     restaurantName: string,
     businessProfile: any,
@@ -227,7 +230,27 @@ export class AdvancedScannerService {
       keywordData,
       serpAnalysis
     );
-    const recommendations = this.generateEnhancedRecommendations(issues, keywordData);
+    // Generate AI-powered recommendations
+    const aiRecommendations = await this.aiRecommendationService.generateRecommendations({
+      name: restaurantName,
+      rating: businessProfile.rating || 4.0,
+      totalReviews: businessProfile.totalReviews || 0,
+      domain,
+      performanceScore,
+      seoScore: enhancedSeoScore,
+      mobileScore,
+      competitors,
+      keywordData,
+      issues
+    });
+    
+    const recommendations = aiRecommendations.map(rec => ({
+      title: rec.title,
+      description: rec.description,
+      impact: rec.impact,
+      effort: rec.effort,
+      category: rec.category
+    }));
 
     // Process keyword analysis
     const keywordAnalysis = {
