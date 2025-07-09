@@ -94,12 +94,15 @@ Based on this data, provide recommendations as JSON with this structure:
 }
 
 Guidelines:
-- For high-rated restaurants (4.5+), focus on maintaining excellence and leveraging strengths
-- For lower-rated restaurants (<4.0), prioritize reputation management
+- For restaurants with ${context.totalReviews} reviews at ${context.rating}/5, focus on review management strategies
+- For high-rated restaurants (4.5+), focus on maintaining excellence and leveraging strengths for marketing
+- For lower-rated restaurants (<4.0), prioritize reputation management and response strategies
 - Consider actual performance scores when recommending technical improvements
-- Be specific about implementation steps
+- For review management, suggest specific response strategies, review monitoring, and customer follow-up
+- Be specific about implementation steps for each recommendation
 - Prioritize recommendations by potential impact and effort required
 - Don't recommend generic advice - make it specific to this restaurant's situation
+- Always include at least one review-related recommendation for restaurants with online reviews
 `;
   }
 
