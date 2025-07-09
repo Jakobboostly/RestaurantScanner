@@ -56,33 +56,62 @@ export async function scanWebsite(
 
   const decoder = new TextDecoder();
   let scanResult: ScanResult | null = null;
+  let buffer = '';
 
   try {
     while (true) {
       const { done, value } = await reader.read();
       if (done) break;
 
-      const chunk = decoder.decode(value);
-      const lines = chunk.split('\n');
+      const chunk = decoder.decode(value, { stream: true });
+      buffer += chunk;
+      
+      // Process complete lines from buffer
+      const lines = buffer.split('\n');
+      // Keep the last incomplete line in buffer
+      buffer = lines.pop() || '';
 
       for (const line of lines) {
         if (line.startsWith('data: ') && line.length > 6) {
           try {
-            const data = JSON.parse(line.slice(6));
-            console.log('SSE message received:', data);
-            
-            if (data.type === 'complete') {
-              scanResult = data.result;
-              console.log('Scan complete, result received');
-            } else if (data.type === 'error') {
-              throw new Error(data.error);
-            } else if (onProgress) {
-              onProgress(data);
+            const jsonData = line.slice(6).trim();
+            if (jsonData) {
+              const data = JSON.parse(jsonData);
+              console.log('SSE message received:', data);
+              
+              if (data.type === 'complete') {
+                scanResult = data.result;
+                console.log('Scan complete, result received');
+              } else if (data.type === 'error') {
+                throw new Error(data.error);
+              } else if (onProgress) {
+                onProgress(data);
+              }
             }
           } catch (parseError) {
-            console.error('Failed to parse SSE message:', line, parseError);
+            console.error('Failed to parse SSE message:', line.slice(0, 100) + '...', parseError);
           }
         }
+      }
+    }
+    
+    // Process any remaining data in buffer
+    if (buffer.startsWith('data: ') && buffer.length > 6) {
+      try {
+        const jsonData = buffer.slice(6).trim();
+        if (jsonData) {
+          const data = JSON.parse(jsonData);
+          console.log('SSE message received (final):', data);
+          
+          if (data.type === 'complete') {
+            scanResult = data.result;
+            console.log('Scan complete, result received');
+          } else if (data.type === 'error') {
+            throw new Error(data.error);
+          }
+        }
+      } catch (parseError) {
+        console.error('Failed to parse final SSE message:', buffer.slice(0, 100) + '...', parseError);
       }
     }
   } finally {
