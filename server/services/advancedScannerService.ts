@@ -80,35 +80,14 @@ export class AdvancedScannerService {
       }
       await delay(1000);
 
-      // Phase 3: Performance Analysis using DataForSEO
+      // Phase 3: Performance Analysis using Google PageSpeed Insights
       onProgress({ progress: 35, status: 'Analyzing website performance metrics...' });
-      let performanceMetrics = {
-        performance: 75, // DataForSEO provides performance data
-        accessibility: 80,
-        seo: 85,
-        bestPractices: 85,
-        coreWebVitals: {
-          fcp: 1.8,
-          lcp: 2.5,
-          cls: 0.1,
-          fid: 100
-        }
-      };
+      let performanceMetrics = await this.analyzeWebsitePerformance(domain);
       await delay(1000);
 
       // Phase 4: Mobile Experience Analysis & Real Content Scraping
       onProgress({ progress: 50, status: 'Testing mobile experience and capturing screenshots...' });
-      let mobileExperience = {
-        score: 85,
-        loadTime: 2.1,
-        isResponsive: true,
-        touchFriendly: true,
-        textReadable: true,
-        navigationEasy: true,
-        issues: [],
-        recommendations: [],
-        contentAnalysis: await this.analyzeWebsiteContent(domain)
-      };
+      let mobileExperience = await this.analyzeMobilePerformance(domain);
       await delay(1000);
 
       // Phase 5: Advanced Keyword Research
@@ -637,16 +616,8 @@ export class AdvancedScannerService {
       touchFriendly: true,
       textReadable: true,
       navigationEasy: true,
-      issues: ['Unable to analyze mobile experience'],
-      recommendations: ['Check website accessibility and mobile optimization'],
-      contentAnalysis: {
-        title: 'Restaurant Title',
-        metaDescription: 'Restaurant description',
-        h1Tags: ['Main Heading'],
-        imageCount: 10,
-        internalLinks: 15,
-        externalLinks: 5
-      }
+      issues: ['Unable to analyze mobile experience - API not available'],
+      recommendations: ['Check website accessibility and mobile optimization', 'Test manually on mobile devices']
     };
   }
 
@@ -774,6 +745,124 @@ export class AdvancedScannerService {
       return Math.floor(Math.random() * 20) + 10; // Page 2-3 for medium keywords
     } else {
       return Math.floor(Math.random() * 50) + 20; // Page 3+ for difficult keywords
+    }
+  }
+
+  private async analyzeWebsitePerformance(domain: string): Promise<any> {
+    try {
+      const apiKey = process.env.GOOGLE_API_KEY || process.env.PAGESPEED_API_KEY;
+      if (!apiKey) {
+        console.warn('No Google API key found, using fallback performance metrics');
+        return this.getFallbackPerformanceMetrics();
+      }
+
+      let url = domain;
+      if (!url.startsWith('http://') && !url.startsWith('https://')) {
+        url = `https://${url}`;
+      }
+
+      console.log(`Testing website performance for: ${url}`);
+
+      const response = await axios.get('https://www.googleapis.com/pagespeedonline/v5/runPagespeed', {
+        params: {
+          url: url,
+          key: apiKey,
+          strategy: 'desktop',
+          category: ['performance', 'accessibility', 'best-practices', 'seo']
+        },
+        timeout: 30000
+      });
+
+      const lighthouse = response.data.lighthouseResult;
+      const categories = lighthouse.categories;
+
+      return {
+        performance: Math.round(categories.performance.score * 100),
+        accessibility: Math.round(categories.accessibility.score * 100),
+        seo: Math.round(categories.seo.score * 100),
+        bestPractices: Math.round(categories['best-practices'].score * 100),
+        coreWebVitals: {
+          fcp: lighthouse.audits['first-contentful-paint']?.numericValue || 0,
+          lcp: lighthouse.audits['largest-contentful-paint']?.numericValue || 0,
+          cls: lighthouse.audits['cumulative-layout-shift']?.numericValue || 0,
+          fid: lighthouse.audits['max-potential-fid']?.numericValue || 0
+        }
+      };
+
+    } catch (error) {
+      console.error('PageSpeed API failed:', error);
+      return this.getFallbackPerformanceMetrics();
+    }
+  }
+
+  private async analyzeMobilePerformance(domain: string): Promise<any> {
+    try {
+      const apiKey = process.env.GOOGLE_API_KEY || process.env.PAGESPEED_API_KEY;
+      if (!apiKey) {
+        console.warn('No Google API key found, using fallback mobile metrics');
+        return this.getFallbackMobileExperience();
+      }
+
+      let url = domain;
+      if (!url.startsWith('http://') && !url.startsWith('https://')) {
+        url = `https://${url}`;
+      }
+
+      console.log(`Testing mobile performance for: ${url}`);
+
+      const response = await axios.get('https://www.googleapis.com/pagespeedonline/v5/runPagespeed', {
+        params: {
+          url: url,
+          key: apiKey,
+          strategy: 'mobile',
+          category: ['performance', 'accessibility', 'best-practices', 'seo']
+        },
+        timeout: 30000
+      });
+
+      const lighthouse = response.data.lighthouseResult;
+      const categories = lighthouse.categories;
+
+      // Extract mobile-specific metrics
+      const mobileScore = Math.round(categories.performance.score * 100);
+      const loadTime = (lighthouse.audits['speed-index']?.numericValue || 0) / 1000;
+      
+      // Check for mobile-friendly features
+      const isResponsive = lighthouse.audits['viewport']?.score === 1;
+      const touchFriendly = lighthouse.audits['tap-targets']?.score === 1;
+      const textReadable = lighthouse.audits['font-size']?.score === 1;
+
+      // Generate mobile-specific issues
+      const issues = [];
+      if (!isResponsive) issues.push('Not optimized for mobile viewport');
+      if (!touchFriendly) issues.push('Touch targets too small');
+      if (!textReadable) issues.push('Text too small to read');
+      if (loadTime > 3) issues.push('Slow loading on mobile');
+
+      // Generate mobile-specific recommendations
+      const recommendations = [];
+      if (mobileScore < 70) recommendations.push('Optimize images and reduce mobile load times');
+      if (!isResponsive) recommendations.push('Add responsive design and mobile viewport');
+      if (!touchFriendly) recommendations.push('Increase touch target sizes for mobile');
+
+      return {
+        score: mobileScore,
+        loadTime: Math.round(loadTime * 10) / 10,
+        isResponsive,
+        touchFriendly,
+        textReadable,
+        navigationEasy: mobileScore > 70,
+        issues,
+        recommendations,
+        contentAnalysis: await this.analyzeWebsiteContent(domain)
+      };
+
+    } catch (error) {
+      console.error('Mobile performance analysis failed:', error);
+      return {
+        ...(await this.getFallbackMobileExperience()),
+        contentAnalysis: await this.analyzeWebsiteContent(domain)
+      };
     }
   }
 
