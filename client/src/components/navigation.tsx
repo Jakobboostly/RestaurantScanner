@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { Menu, X, Zap } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from "wouter";
 import boostlyLogo from "@assets/boostlylogo_1752026376541.png";
 
 export default function Navigation() {
@@ -23,18 +22,14 @@ export default function Navigation() {
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-gray-700 hover:text-[#28008F] transition-colors">
-              Standard Scanner
-            </Link>
-            <Link href="/live" className="text-gray-700 hover:text-[#28008F] transition-colors flex items-center space-x-1">
-              <Zap className="h-4 w-4" />
-              <span>Live API</span>
-            </Link>
             <a href="#features" className="text-gray-700 hover:text-[#28008F] transition-colors">
               Features
             </a>
             <a href="#pricing" className="text-gray-700 hover:text-[#28008F] transition-colors">
               Pricing
+            </a>
+            <a href="#about" className="text-gray-700 hover:text-[#28008F] transition-colors">
+              About
             </a>
             <Button className="bg-[#28008F] hover:bg-[#28008F]/90">
               Get Started
