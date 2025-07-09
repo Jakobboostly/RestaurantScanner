@@ -76,6 +76,13 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 09, 2025. Enhanced AI recommendation system with dynamic, data-driven personalization:
+  - Replaced hardcoded recommendations with dynamic analysis based on actual restaurant data
+  - AI now references specific metrics (rating, review count, performance scores, competitor data)
+  - Recommendations are personalized to each restaurant's unique situation and performance gaps
+  - Maintained Boostly service promotion while making each recommendation contextually relevant
+  - Fallback recommendations also dynamically generated using restaurant-specific data points
+  - System now provides truly customized business advice rather than generic templates
 - July 09, 2025. Major API consolidation to DataForSEO architecture:
   - Activated DataForSEO for keyword rankings, competitor analysis, SERP analysis, and performance metrics
   - Maintained Google Places API for restaurant search (user requirement)
