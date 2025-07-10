@@ -67,18 +67,9 @@ export class AdvancedScannerService {
       try {
         businessProfile = await this.googleBusinessService.getBusinessProfile(placeId);
       } catch (error) {
-        console.error('Business profile fetch failed:', error);
-        // Create minimal business profile for scanning to continue
-        businessProfile = {
-          name: restaurantName,
-          rating: 4.0,
-          totalReviews: 50,
-          photos: { total: 5, quality: 'fair', categories: {}, businessPhotos: [] },
-          reviews: { sentiment: 'neutral', score: 75, recent: [], examples: {} },
-          isVerified: false,
-          responseRate: 50,
-          averageResponseTime: '3 days'
-        };
+        console.error('Business profile fetch failed - Google Places API configuration required:', error);
+        // NO MOCK DATA - Return null to indicate missing data
+        businessProfile = null;
       }
       await delay(1000);
 
@@ -741,76 +732,36 @@ export class AdvancedScannerService {
   }
 
   private generateRestaurantKeywords(restaurantName: string, businessProfile: any): any[] {
-    // Extract cuisine type and city for competitive keywords
+    // NO MOCK DATA - Generate basic keyword structure for DataForSEO enrichment only
     const cuisineType = this.extractCuisineType(businessProfile);
     const city = this.extractCity(restaurantName);
-    const isPizza = cuisineType.includes('pizza') || restaurantName.toLowerCase().includes('pizza');
-    const isMexican = cuisineType.includes('mexican') || restaurantName.toLowerCase().includes('mexican');
-    const isItalian = cuisineType.includes('italian') || restaurantName.toLowerCase().includes('italian');
-    const isAsian = cuisineType.includes('asian') || cuisineType.includes('chinese') || cuisineType.includes('japanese');
-
-    // Generate competitive industry keywords with city inclusion
-    let competitiveKeywords = [];
-
-    if (isPizza) {
-      competitiveKeywords = [
-        { keyword: 'pizza near me', searchVolume: 8900, difficulty: 65, intent: 'local' },
-        { keyword: city ? `pizza ${city}` : 'best pizza delivery', searchVolume: city ? 2400 : 3400, difficulty: 55, intent: 'local' },
-        { keyword: 'pizza restaurant', searchVolume: 2200, difficulty: 50, intent: 'local' },
-        { keyword: city ? `pizza delivery ${city}` : 'wood fired pizza', searchVolume: city ? 1900 : 1800, difficulty: 45, intent: 'transactional' },
-        { keyword: 'brick oven pizza', searchVolume: 1500, difficulty: 40, intent: 'informational' },
-        { keyword: 'authentic pizza', searchVolume: 1200, difficulty: 35, intent: 'informational' }
-      ];
-    } else if (isMexican) {
-      competitiveKeywords = [
-        { keyword: 'mexican restaurant near me', searchVolume: 7200, difficulty: 60, intent: 'local' },
-        { keyword: city ? `mexican restaurant ${city}` : 'best tacos near me', searchVolume: city ? 2800 : 4100, difficulty: 55, intent: 'local' },
-        { keyword: 'authentic mexican food', searchVolume: 2800, difficulty: 50, intent: 'informational' },
-        { keyword: city ? `tacos ${city}` : 'mexican food delivery', searchVolume: city ? 2100 : 2400, difficulty: 45, intent: 'local' },
-        { keyword: 'taco restaurant', searchVolume: 1900, difficulty: 40, intent: 'local' },
-        { keyword: 'mexican cuisine', searchVolume: 1600, difficulty: 35, intent: 'informational' }
-      ];
-    } else if (isItalian) {
-      competitiveKeywords = [
-        { keyword: 'italian restaurant near me', searchVolume: 6800, difficulty: 65, intent: 'local' },
-        { keyword: city ? `italian restaurant ${city}` : 'authentic italian food', searchVolume: city ? 2600 : 3200, difficulty: 50, intent: 'local' },
-        { keyword: 'pasta restaurant', searchVolume: 2600, difficulty: 45, intent: 'local' },
-        { keyword: city ? `italian food ${city}` : 'italian cuisine', searchVolume: city ? 1800 : 2100, difficulty: 40, intent: 'local' },
-        { keyword: 'fine dining italian', searchVolume: 1700, difficulty: 55, intent: 'local' },
-        { keyword: 'italian food delivery', searchVolume: 1400, difficulty: 40, intent: 'transactional' }
-      ];
-    } else if (isAsian) {
-      competitiveKeywords = [
-        { keyword: 'asian restaurant near me', searchVolume: 5900, difficulty: 60, intent: 'local' },
-        { keyword: city ? `asian restaurant ${city}` : 'chinese food delivery', searchVolume: city ? 2200 : 4300, difficulty: 50, intent: 'local' },
-        { keyword: 'sushi restaurant', searchVolume: 3700, difficulty: 55, intent: 'local' },
-        { keyword: city ? `chinese food ${city}` : 'authentic asian cuisine', searchVolume: city ? 1900 : 2400, difficulty: 45, intent: 'local' },
-        { keyword: 'thai restaurant', searchVolume: 2100, difficulty: 40, intent: 'local' },
-        { keyword: 'asian food near me', searchVolume: 1800, difficulty: 35, intent: 'local' }
-      ];
-    } else {
-      // Generic restaurant keywords with city inclusion
-      competitiveKeywords = [
-        { keyword: 'restaurant near me', searchVolume: 12000, difficulty: 70, intent: 'local' },
-        { keyword: city ? `restaurant ${city}` : 'best restaurant nearby', searchVolume: city ? 4200 : 4800, difficulty: 60, intent: 'local' },
-        { keyword: city ? `food delivery ${city}` : 'local restaurant', searchVolume: city ? 3800 : 3200, difficulty: 50, intent: 'transactional' },
-        { keyword: city ? `dining ${city}` : 'food delivery near me', searchVolume: city ? 2800 : 7200, difficulty: 65, intent: 'local' },
-        { keyword: 'family restaurant', searchVolume: 2400, difficulty: 45, intent: 'local' },
-        { keyword: 'casual dining', searchVolume: 1900, difficulty: 40, intent: 'informational' }
-      ];
+    
+    // Generate keyword strings only (no volumes/difficulty - these come from DataForSEO)
+    const keywordStrings = [];
+    
+    // Restaurant name based keywords
+    keywordStrings.push(restaurantName);
+    keywordStrings.push(`${restaurantName} menu`);
+    keywordStrings.push(`${restaurantName} hours`);
+    
+    // Cuisine-based keywords
+    if (cuisineType !== 'restaurant') {
+      keywordStrings.push(`${cuisineType} restaurant near me`);
+      if (city) keywordStrings.push(`${cuisineType} ${city}`);
     }
-
-    // Add high-value generic restaurant keywords with city
-    const genericKeywords = [
-      { keyword: city ? `takeout ${city}` : 'online ordering', searchVolume: city ? 2200 : 3600, difficulty: 55, intent: 'transactional' },
-      { keyword: 'takeout near me', searchVolume: 2800, difficulty: 50, intent: 'local' },
-      { keyword: city ? `lunch ${city}` : 'dinner restaurant', searchVolume: city ? 1800 : 2100, difficulty: 45, intent: 'local' },
-      { keyword: 'lunch specials', searchVolume: 1700, difficulty: 40, intent: 'informational' }
-    ];
-
-    // Combine and return top 10 competitive keywords
-    const allKeywords = [...competitiveKeywords, ...genericKeywords];
-    return allKeywords.slice(0, 10);
+    
+    // Generic local keywords
+    keywordStrings.push('restaurant near me');
+    if (city) keywordStrings.push(`restaurant ${city}`);
+    keywordStrings.push('takeout near me');
+    
+    // Return basic structure for DataForSEO enrichment (no fake data)
+    return keywordStrings.slice(0, 10).map(keyword => ({
+      keyword,
+      searchVolume: 0, // Will be populated by DataForSEO
+      difficulty: 0,   // Will be populated by DataForSEO
+      intent: this.classifySearchIntent(keyword)
+    }));
   }
 
   private async generateEnhancedReviewsAnalysis(businessProfile?: any, placeId?: string): Promise<any> {

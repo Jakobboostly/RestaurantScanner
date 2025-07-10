@@ -130,18 +130,10 @@ export class EnhancedDataForSeoService {
         return keywordData;
 
       } catch (error) {
-        console.error('Keyword research failed:', error);
+        console.error('DataForSEO keyword research failed - API configuration required:', error);
         
-        // Return fallback data
-        return [{
-          keyword,
-          searchVolume: this.estimateSearchVolume(keyword),
-          difficulty: 50,
-          cpc: 1.0,
-          competition: 0.5,
-          intent: this.classifySearchIntent(keyword),
-          relatedKeywords: []
-        }];
+        // NO MOCK DATA - Return empty array when DataForSEO fails
+        return [];
       }
     });
   }
