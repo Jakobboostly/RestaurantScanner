@@ -103,7 +103,7 @@ export class AdvancedScannerService {
       try {
         keywordData = await this.dataForSeoService.getRestaurantKeywordSuggestions(
           restaurantName,
-          `${latitude},${longitude}`,
+          'United States',
           this.extractCuisineType(businessProfile)
         );
       } catch (error) {
@@ -115,7 +115,7 @@ export class AdvancedScannerService {
         const baseKeywords = this.generateRestaurantKeywords(restaurantName, businessProfile);
         // Try to get real search volume data for these keywords
         try {
-          keywordData = await this.enrichKeywordsWithRealData(baseKeywords, `${latitude},${longitude}`);
+          keywordData = await this.enrichKeywordsWithRealData(baseKeywords, 'United States');
         } catch (error) {
           console.error('Keyword enrichment failed, using base keywords:', error);
           keywordData = baseKeywords; // Use base keywords if enrichment fails
@@ -132,7 +132,7 @@ export class AdvancedScannerService {
           const analysis = await this.dataForSeoService.getSerpAnalysis(
             keyword,
             domain,
-            `${latitude},${longitude}`
+            'United States'
           );
           serpAnalysis.push(analysis);
         }
@@ -760,7 +760,7 @@ export class AdvancedScannerService {
       keyword,
       searchVolume: 0, // Will be populated by DataForSEO
       difficulty: 0,   // Will be populated by DataForSEO
-      intent: this.classifySearchIntent(keyword)
+      intent: 'informational' // Default intent, will be classified by DataForSEO
     }));
   }
 
