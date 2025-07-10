@@ -298,6 +298,22 @@ export class AdvancedScannerService {
       competitorInsights
     );
 
+    const processedKeywords = keywordData.length > 0 ? keywordData.slice(0, 15).map(k => {
+      // Find ranking position from SERP analysis
+      const serpResult = serpAnalysis.find(s => s.keyword === k.keyword);
+      const position = serpResult?.position || this.estimateKeywordPosition(k.keyword, k.difficulty);
+      
+      return {
+        keyword: k.keyword || 'Unknown',
+        position: position === 0 ? null : position,
+        searchVolume: k.searchVolume || 0,
+        difficulty: k.difficulty || 0,
+        intent: k.intent || 'informational',
+        cpc: k.cpc || 0,
+        competition: k.competition || 0
+      };
+    }) : this.generateRestaurantKeywords(restaurantName, businessProfile);
+
     return {
       domain,
       restaurantName,
@@ -308,20 +324,12 @@ export class AdvancedScannerService {
       userExperience: accessibilityScore,
       issues,
       recommendations,
-      keywords: keywordData.length > 0 ? keywordData.slice(0, 15).map(k => {
-        // Find ranking position from SERP analysis
-        const serpResult = serpAnalysis.find(s => s.keyword === k.keyword);
-        const position = serpResult?.position || this.estimateKeywordPosition(k.keyword, k.difficulty);
-        
-        return {
-          keyword: k.keyword || 'Unknown',
-          position: position === 0 ? null : position,
-          searchVolume: k.searchVolume || 0,
-          difficulty: k.difficulty || 0,
-          intent: k.intent || 'informational'
-        };
-      }) : this.generateRestaurantKeywords(restaurantName, businessProfile),
+      keywords: processedKeywords,
+      keywordAnalysis,
       competitors: await this.generateDetailedCompetitorAnalysis(competitors, restaurantName, businessProfile, keywordData),
+      competitorIntelligence,
+      serpFeatures,
+      domainAuthority,
       screenshot: null,
       seoAnalysis: {
         title: mobileExperience.contentAnalysis?.title || 'No title found',
@@ -967,7 +975,12 @@ export class AdvancedScannerService {
           keywords: Math.round((competitorProfile.rating * competitorProfile.totalReviews * 10) + Math.random() * 500),
           domainAuthority: Math.round(competitorProfile.rating * 15 + Math.random() * 20),
           backlinks: Math.round((competitorProfile.rating * competitorProfile.totalReviews * 20) + Math.random() * 1000),
-          rankingComparison: await this.generateRealRankingComparison(competitorProfile, businessProfile, keywordData)
+          rankingComparison: await this.generateRealRankingComparison(competitorProfile, businessProfile, keywordData),
+          
+          // Calculate competitive advantages
+          trafficAdvantage: this.calculateTrafficAdvantage(competitorProfile, businessProfile),
+          keywordLead: this.calculateKeywordLead(competitorProfile, businessProfile),
+          authorityGap: this.calculateAuthorityGap(competitorProfile, businessProfile)
         });
       } catch (error) {
         console.error(`Failed to get detailed data for competitor ${comp.name}:`, error);
@@ -990,6 +1003,11 @@ export class AdvancedScannerService {
           traffic: Math.round((comp.rating * (comp.totalReviews || 50) * 50) + Math.random() * 5000),
           keywords: Math.round((comp.rating * (comp.totalReviews || 50) * 10) + Math.random() * 500),
           domainAuthority: Math.round(comp.rating * 15 + Math.random() * 20),
+          
+          // Calculate competitive advantages
+          trafficAdvantage: this.calculateTrafficAdvantage(comp, businessProfile),
+          keywordLead: this.calculateKeywordLead(comp, businessProfile),
+          authorityGap: this.calculateAuthorityGap(comp, businessProfile),
           backlinks: Math.round((comp.rating * (comp.totalReviews || 50) * 20) + Math.random() * 1000)
         });
       }
@@ -1454,5 +1472,35 @@ export class AdvancedScannerService {
     if (keyword.includes('delivery')) baseRanking += 1;
     
     return Math.min(50, Math.max(1, baseRanking));
+  }
+
+  private calculateTrafficAdvantage(competitor: any, businessProfile: any): string {
+    const competitorTraffic = Math.round((competitor.rating || 4.0) * (competitor.totalReviews || 50) * 50);
+    const currentTraffic = Math.round((businessProfile.rating || 4.0) * (businessProfile.totalReviews || 50) * 50);
+    
+    const multiplier = Math.max(1, Math.round(competitorTraffic / Math.max(currentTraffic, 1)));
+    
+    if (multiplier > 3) return `${multiplier}x more traffic`;
+    if (multiplier > 1) return `${multiplier}x more traffic`;
+    return 'Similar traffic';
+  }
+
+  private calculateKeywordLead(competitor: any, businessProfile: any): string {
+    const competitorKeywords = Math.round((competitor.rating || 4.0) * (competitor.totalReviews || 50) * 10);
+    const currentKeywords = Math.round((businessProfile.rating || 4.0) * (businessProfile.totalReviews || 50) * 10);
+    
+    const lead = Math.max(0, competitorKeywords - currentKeywords);
+    
+    if (lead > 1000) return `+${Math.round(lead/100)*100} keywords`;
+    if (lead > 100) return `+${Math.round(lead/10)*10} keywords`;
+    if (lead > 0) return `+${lead} keywords`;
+    return 'Similar keywords';
+  }
+
+  private calculateAuthorityGap(competitor: any, businessProfile: any): number {
+    const competitorAuthority = Math.round((competitor.rating || 4.0) * 15);
+    const currentAuthority = Math.round((businessProfile.rating || 4.0) * 15);
+    
+    return Math.max(0, competitorAuthority - currentAuthority);
   }
 }

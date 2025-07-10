@@ -128,15 +128,21 @@ export default function EnhancedResultsDashboard({ scanResult, restaurantName }:
 
   // Competitor data processing
   const competitorData = useMemo(() => {
-    const competitors = scanResult.competitorIntelligence?.organicCompetitors || [];
+    const competitors = scanResult.competitors || [];
     return competitors.slice(0, 5).map((comp: any) => ({
-      domain: comp.domain || comp.name || 'Unknown',
-      traffic: comp.organicTraffic || comp.estimatedTraffic || 0,
-      keywords: comp.organicKeywords || comp.totalKeywords || 0,
-      domainAuthority: comp.domainAuthority || comp.authority || 0,
-      backlinks: comp.backlinks || 0
+      name: comp.name || 'Unknown',
+      domain: comp.domain || 'unknown.com',
+      traffic: comp.traffic || 0,
+      keywords: comp.keywords || 0,
+      domainAuthority: comp.domainAuthority || 0,
+      backlinks: comp.backlinks || 0,
+      trafficAdvantage: comp.trafficAdvantage || 'Similar traffic',
+      keywordLead: comp.keywordLead || 'Similar keywords',
+      authorityGap: comp.authorityGap || 0,
+      overallScore: comp.overallScore || 0,
+      isYou: comp.isYou || false
     }));
-  }, [scanResult.competitorIntelligence?.organicCompetitors]);
+  }, [scanResult.competitors]);
 
   // Technical issues processing
   const technicalIssues = useMemo(() => {
@@ -160,14 +166,14 @@ export default function EnhancedResultsDashboard({ scanResult, restaurantName }:
 
   // Core Web Vitals data
   const coreWebVitals = useMemo(() => {
-    const performance = scanResult.performanceMetrics || {};
+    const metrics = scanResult.metrics || {};
     return [
-      { name: 'FCP', value: performance.fcp || 0, benchmark: 1.8, good: performance.fcp <= 1.8 },
-      { name: 'LCP', value: performance.lcp || 0, benchmark: 2.5, good: performance.lcp <= 2.5 },
-      { name: 'CLS', value: performance.cls || 0, benchmark: 0.1, good: performance.cls <= 0.1 },
-      { name: 'FID', value: performance.fid || 0, benchmark: 100, good: performance.fid <= 100 }
+      { name: 'FCP', value: metrics.fcp || 0, benchmark: 1.8, good: (metrics.fcp || 0) <= 1.8 },
+      { name: 'LCP', value: metrics.lcp || 0, benchmark: 2.5, good: (metrics.lcp || 0) <= 2.5 },
+      { name: 'CLS', value: metrics.cls || 0, benchmark: 0.1, good: (metrics.cls || 0) <= 0.1 },
+      { name: 'FID', value: metrics.fid || 0, benchmark: 100, good: (metrics.fid || 0) <= 100 }
     ];
-  }, [scanResult.performanceMetrics]);
+  }, [scanResult.metrics]);
 
   // Local SEO metrics
   const localSeoMetrics = useMemo(() => {
