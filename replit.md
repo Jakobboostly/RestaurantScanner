@@ -76,6 +76,14 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 10, 2025. Eliminated all hardcoded search volume estimates for authentic DataForSEO-only approach:
+  - Removed all hardcoded search volume fallback estimates (800-18,000/month ranges)
+  - System now displays only authentic DataForSEO API search volume data or 0 when unavailable
+  - Fixed critical bug in classifySearchIntent function that was preventing DataForSEO keyword research from completing
+  - DataForSEO search volume endpoint (/keywords_data/google/search_volume/live) now working correctly
+  - All keyword metrics (search volume, difficulty, CPC) use only authentic API data - no synthetic estimates
+  - Review sentiment analysis also uses only authentic Zembratech API data with proper percentage calculations
+  - System maintains data integrity: displays 0 values when API data unavailable rather than fake estimates
 - July 10, 2025. Complete API integration fixes and payment resolution:
   - Fixed DataForSEO keyword difficulty endpoint to use `/dataforseo_labs/google/bulk_keyword_difficulty/live`
   - Resolved DataForSEO payment issues - account now active with live API access

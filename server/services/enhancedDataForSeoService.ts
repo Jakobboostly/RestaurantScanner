@@ -111,7 +111,7 @@ export class EnhancedDataForSeoService {
           searchVolumeData = volumeResponse.data.tasks?.[0]?.result || [];
           console.log('Search volume data received:', searchVolumeData.length);
         } catch (error) {
-          console.log('Search volume endpoint failed, using estimated data');
+          console.log('Search volume endpoint failed - no data available');
         }
 
         // Try getting keyword difficulty using the correct endpoint
@@ -124,12 +124,12 @@ export class EnhancedDataForSeoService {
           }]);
           const difficultyResults = difficultyResponse.data.tasks?.[0]?.result || [];
           difficultyData = difficultyResults.reduce((acc: any, item: any) => {
-            acc[item.keyword] = item.keyword_difficulty_index || item.difficulty || 50;
+            acc[item.keyword] = item.keyword_difficulty_index || item.difficulty || 0;
             return acc;
           }, {});
           console.log('Keyword difficulty data received:', Object.keys(difficultyData).length);
         } catch (error) {
-          console.log('Keyword difficulty endpoint failed, using estimated data');
+          console.log('Keyword difficulty endpoint failed - no data available');
         }
 
         // Create combined keyword data with fallbacks
@@ -140,10 +140,10 @@ export class EnhancedDataForSeoService {
           
           return {
             keyword: kw,
-            searchVolume: volumeItem?.search_volume || this.estimateSearchVolume(kw),
-            difficulty: difficultyData[kw] || this.estimateKeywordDifficulty(kw),
+            searchVolume: volumeItem?.search_volume || 0, // Only use DataForSEO API data
+            difficulty: difficultyData[kw] || 0, // Only use DataForSEO API data
             cpc: volumeItem?.keyword_info?.cpc || suggestion?.cpc || 0,
-            competition: volumeItem?.keyword_info?.competition || suggestion?.competition || 0.5,
+            competition: volumeItem?.keyword_info?.competition || suggestion?.competition || 0,
             intent: this.classifySearchIntent(kw),
             relatedKeywords: keywordSuggestions.slice(0, 10).map((s: any) => s.keyword || s).filter(Boolean)
           };
@@ -528,80 +528,24 @@ export class EnhancedDataForSeoService {
   }
 
   private classifySearchIntent(keyword: string): string {
-    if (keyword.includes('buy') || keyword.includes('order') || keyword.includes('delivery')) {
+    const keywordStr = String(keyword || '').toLowerCase();
+    if (keywordStr.includes('buy') || keywordStr.includes('order') || keywordStr.includes('delivery')) {
       return 'transactional';
     }
-    if (keyword.includes('how') || keyword.includes('what') || keyword.includes('why')) {
+    if (keywordStr.includes('how') || keywordStr.includes('what') || keywordStr.includes('why')) {
       return 'informational';
     }
-    if (keyword.includes('best') || keyword.includes('review') || keyword.includes('vs')) {
+    if (keywordStr.includes('best') || keywordStr.includes('review') || keywordStr.includes('vs')) {
       return 'investigational';
     }
-    if (keyword.includes('near me') || keyword.includes('location')) {
+    if (keywordStr.includes('near me') || keywordStr.includes('location')) {
       return 'local';
     }
     return 'navigational';
   }
 
-  private estimateSearchVolume(keyword: string): number {
-    // Ensure keyword is a string
-    const keywordStr = String(keyword || '').toLowerCase();
-    
-    // Realistic search volume estimation based on keyword patterns
-    let baseVolume = 800;
-    
-    // Brand-specific keywords (restaurant names)
-    if (keywordStr.includes('taco bell') || keywordStr.includes('mcdonald') || keywordStr.includes('subway')) {
-      baseVolume = 15000;
-    } else if (keywordStr.match(/\b\w+\s+(restaurant|pizza|burgers?|tacos?|chinese|mexican|italian)\b/)) {
-      baseVolume = 5000; // Specific restaurant names
-    }
-    
-    // High-volume generic terms
-    if (keywordStr.includes('near me')) baseVolume = 12000;
-    if (keywordStr.includes('delivery')) baseVolume = 8000;
-    if (keywordStr.includes('takeout')) baseVolume = 4000;
-    if (keywordStr.includes('food delivery')) baseVolume = 18000;
-    if (keywordStr.includes('restaurant')) baseVolume = 6000;
-    if (keywordStr.includes('best restaurant')) baseVolume = 3500;
-    
-    // Menu and hours are medium volume
-    if (keywordStr.includes('menu')) baseVolume = 2800;
-    if (keywordStr.includes('hours')) baseVolume = 2200;
-    if (keywordStr.includes('reviews')) baseVolume = 1800;
-    if (keywordStr.includes('location')) baseVolume = 1600;
-    
-    // Add some randomness to make it more realistic
-    const variation = Math.random() * 0.4 + 0.8; // 80-120% variation
-    return Math.round(baseVolume * variation);
-  }
-
-  private estimateKeywordDifficulty(keyword: string): number {
-    // Ensure keyword is a string
-    const keywordStr = String(keyword || '');
-    
-    // Estimate keyword difficulty based on keyword characteristics
-    let baseDifficulty = 50; // Default medium difficulty
-    
-    // Length-based difficulty (shorter = more competitive)
-    if (keywordStr.length < 10) baseDifficulty = 70;
-    else if (keywordStr.length < 20) baseDifficulty = 50;
-    else baseDifficulty = 30;
-    
-    // Keyword type multipliers for difficulty
-    if (keywordStr.includes('restaurant')) baseDifficulty += 10;
-    if (keywordStr.includes('near me')) baseDifficulty += 15;
-    if (keywordStr.includes('best')) baseDifficulty += 20;
-    if (keywordStr.includes('reviews')) baseDifficulty += 5;
-    if (keywordStr.includes('delivery')) baseDifficulty += 10;
-    if (keywordStr.includes('menu')) baseDifficulty += 5;
-    
-    // Brand-specific keywords are easier
-    if (keywordStr.includes('yogi') || keywordStr.includes('honey')) baseDifficulty -= 15;
-    
-    // Keep within bounds
-    return Math.max(10, Math.min(90, baseDifficulty));
-  }
+  // Note: All search volume and difficulty data now comes exclusively from DataForSEO API
+  // No hardcoded estimates - system displays 0 when API data is unavailable
 
   private calculateBacklinkQuality(backlinks: any[]): number {
     if (!backlinks || backlinks.length === 0) return 0;
