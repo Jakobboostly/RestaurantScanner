@@ -76,6 +76,14 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 10, 2025. Created comprehensive DataForSEO MCP server:
+  - Built Model Context Protocol server exposing all DataForSEO capabilities to AI systems
+  - Implemented 6 professional SEO tools: keyword research, competitor analysis, SERP analysis, technical audit, backlink analysis, restaurant SEO
+  - Added real-time keyword difficulty scoring, search volume data, and competitor intelligence
+  - Created standardized tool interfaces for seamless AI integration (Claude Desktop, VS Code, etc.)
+  - Included comprehensive documentation and integration examples
+  - Supports restaurant-specific SEO analysis with local optimization recommendations
+  - Enables other AI systems to access your DataForSEO infrastructure through MCP protocol
 - July 09, 2025. Upgraded to comprehensive DataForSEO professional endpoints:
   - Integrated keyword difficulty analysis via `/keywords_data/google/keyword_difficulty/live`
   - Added comprehensive keyword suggestions via `/keywords_data/google/keyword_suggestions/live`
