@@ -128,14 +128,23 @@ export class AdvancedScannerService {
       let serpAnalysis = [];
       try {
         const primaryKeywords = this.generatePrimaryKeywords(restaurantName, businessProfile);
+        console.log('Generated primary keywords for SERP analysis:', primaryKeywords);
+        
         for (const keyword of primaryKeywords.slice(0, 3)) { // Limit to 3 keywords
+          console.log(`Running SERP analysis for keyword: "${keyword}" on domain: ${domain}`);
           const analysis = await this.dataForSeoService.getSerpAnalysis(
             keyword,
             domain,
             'United States'
           );
+          console.log(`SERP result for "${keyword}":`, {
+            position: analysis.position,
+            features: analysis.features,
+            topCompetitors: analysis.topCompetitors.length
+          });
           serpAnalysis.push(analysis);
         }
+        console.log('Total SERP analyses completed:', serpAnalysis.length);
       } catch (error) {
         console.error('SERP analysis failed:', error);
       }
@@ -267,7 +276,7 @@ export class AdvancedScannerService {
       targetKeywords: keywordData.slice(0, 10),
       rankingPositions: serpAnalysis.map(s => ({
         keyword: s.keyword,
-        position: s.currentPosition,
+        position: s.position, // Fixed: was s.currentPosition
         difficulty: s.difficulty
       })),
       searchVolumes: keywordData.reduce((acc, k) => {
@@ -377,7 +386,7 @@ export class AdvancedScannerService {
     enhancedScore += highVolumeKeywords.length * 2;
 
     // Boost for current rankings
-    const rankedKeywords = serpAnalysis.filter(s => s.currentPosition && s.currentPosition <= 20);
+    const rankedKeywords = serpAnalysis.filter(s => s.position && s.position <= 20);
     enhancedScore += rankedKeywords.length * 3;
 
     // Penalty for no rankings
@@ -431,7 +440,7 @@ export class AdvancedScannerService {
     }
 
     // SERP ranking issues with competitive context
-    const unrankedKeywords = serpAnalysis.filter(s => !s.currentPosition);
+    const unrankedKeywords = serpAnalysis.filter(s => !s.position);
     if (unrankedKeywords.length > 0) {
       issues.push({
         type: 'seo',
@@ -565,7 +574,7 @@ export class AdvancedScannerService {
     }
 
     // Ranking improvement opportunities
-    const improvableRankings = serpAnalysis.filter(s => s.currentPosition && s.currentPosition > 10);
+    const improvableRankings = serpAnalysis.filter(s => s.position && s.position > 10);
     if (improvableRankings.length > 0) {
       opportunities.push(`Improve ${improvableRankings.length} keywords from page 2+ to page 1`);
     }
