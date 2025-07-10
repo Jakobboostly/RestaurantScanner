@@ -76,6 +76,16 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 10, 2025. Complete dashboard redesign with 6 strategic intelligence sections:
+  - Built Enhanced Results Dashboard with interactive keyword table (sortable by volume, difficulty, opportunity score)
+  - Added Competitive Intelligence Hub with traffic comparison charts and domain authority visualization  
+  - Created SERP Landscape Map showing ranking opportunities and SERP features presence
+  - Implemented Technical Health Center with issue severity heatmaps and Core Web Vitals dashboard
+  - Built Local SEO Command Center with business profile completeness and review sentiment analysis
+  - Added ROI Impact Calculator with quick win identification and traffic potential estimation
+  - Integrated Recharts library for professional data visualization with pie charts, bar charts, and progress indicators
+  - Eliminated all remaining mock keyword data generation in favor of DataForSEO-only authentic data
+  - Dashboard leverages rich DataForSEO intelligence: 100+ keywords, competitor analysis, SERP features, technical audits
 - July 10, 2025. Created comprehensive DataForSEO MCP server:
   - Built Model Context Protocol server exposing all DataForSEO capabilities to AI systems
   - Implemented 6 professional SEO tools: keyword research, competitor analysis, SERP analysis, technical audit, backlink analysis, restaurant SEO

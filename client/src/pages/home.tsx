@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import Navigation from "@/components/navigation";
 import RestaurantSearch from "@/components/restaurant-search";
 import ScanningAnimation from "@/components/scanning-animation";
-import ResultsDashboard from "@/components/results-dashboard";
+import EnhancedResultsDashboard from "@/components/enhanced-results-dashboard";
 import { scanWebsite, getRestaurantDetails } from "@/lib/api";
 import { RestaurantSearchResult, ScanResult } from "@shared/schema";
 
@@ -100,7 +100,7 @@ export default function HomePage() {
     return (
       <div className="min-h-screen bg-white">
         <Navigation />
-        <ResultsDashboard
+        <EnhancedResultsDashboard
           scanResult={scanResult}
           restaurantName={selectedRestaurant.name}
         />
