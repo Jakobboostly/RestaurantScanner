@@ -299,6 +299,7 @@ export class AdvancedScannerService {
 
     // Extract SERP features
     const serpFeatures = this.extractSerpFeatures(serpAnalysis);
+    console.log('Extracted SERP features:', serpFeatures);
 
     // Calculate domain authority estimate
     const domainAuthority = this.estimateDomainAuthority(
@@ -307,10 +308,20 @@ export class AdvancedScannerService {
       competitorInsights
     );
 
+    // Debug log SERP analysis structure
+    console.log('SERP Analysis data being sent to frontend:');
+    console.log('- serpAnalysis length:', serpAnalysis.length);
+    console.log('- serpAnalysis sample:', serpAnalysis.slice(0, 2));
+    console.log('- keywordAnalysis.rankingPositions:', keywordAnalysis.rankingPositions);
+    console.log('- competitorIntelligence.keywordGaps:', competitorIntelligence.keywordGaps);
+    console.log('- serpFeatures:', serpFeatures);
+
     const processedKeywords = keywordData.length > 0 ? keywordData.slice(0, 15).map(k => {
       // Find ranking position from SERP analysis
       const serpResult = serpAnalysis.find(s => s.keyword === k.keyword);
       const position = serpResult?.position || this.estimateKeywordPosition(k.keyword, k.difficulty);
+      
+      console.log(`Processing keyword "${k.keyword}": volume=${k.searchVolume}, difficulty=${k.difficulty}, serpPosition=${serpResult?.position}, estimatedPosition=${position}`);
       
       return {
         keyword: k.keyword || 'Unknown',
@@ -322,6 +333,9 @@ export class AdvancedScannerService {
         competition: k.competition || 0
       };
     }) : this.generateRestaurantKeywords(restaurantName, businessProfile);
+
+    console.log('Final processed keywords sent to frontend:', processedKeywords.length);
+    console.log('Sample processed keyword:', processedKeywords[0]);
 
     return {
       domain,

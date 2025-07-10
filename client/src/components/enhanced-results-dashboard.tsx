@@ -92,19 +92,25 @@ export default function EnhancedResultsDashboard({ scanResult, restaurantName }:
                      scanResult.keywords || 
                      [];
     
-    console.log('Processing keywords:', keywords);
-    console.log('Keyword analysis:', scanResult.keywordAnalysis);
+    console.log('Frontend processing keywords:', keywords);
+    console.log('SERP features from backend:', scanResult.serpFeatures);
+    console.log('Ranking positions:', scanResult.keywordAnalysis?.rankingPositions);
     
-    return keywords.map((keyword: any) => ({
-      keyword: keyword.keyword || '',
-      searchVolume: keyword.searchVolume || 0,
-      difficulty: keyword.difficulty || 0,
-      intent: keyword.intent || 'informational',
-      cpc: keyword.cpc || 0,
-      competition: keyword.competition || 0,
-      position: keyword.position || null,
-      opportunity: calculateOpportunityScore(keyword.searchVolume || 0, keyword.difficulty || 0)
-    }));
+    return keywords.map((keyword: any) => {
+      const opportunity = calculateOpportunityScore(keyword.searchVolume || 0, keyword.difficulty || 0);
+      console.log(`Frontend keyword "${keyword.keyword}": volume=${keyword.searchVolume}, difficulty=${keyword.difficulty}, opportunity=${opportunity}`);
+      
+      return {
+        keyword: keyword.keyword || '',
+        searchVolume: keyword.searchVolume || 0,
+        difficulty: keyword.difficulty || 0,
+        intent: keyword.intent || 'informational',
+        cpc: keyword.cpc || 0,
+        competition: keyword.competition || 0,
+        position: keyword.position || null,
+        opportunity
+      };
+    });
   }, [scanResult.keywordAnalysis?.targetKeywords, scanResult.keywords]);
 
   const sortedKeywords = useMemo(() => {
