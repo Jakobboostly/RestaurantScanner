@@ -337,6 +337,13 @@ export class AdvancedScannerService {
     console.log('Final processed keywords sent to frontend:', processedKeywords.length);
     console.log('Sample processed keyword:', processedKeywords[0]);
 
+    // Ensure keywords are in multiple places for frontend compatibility
+    const enhancedKeywordAnalysis = {
+      ...keywordAnalysis,
+      targetKeywords: processedKeywords,  // Frontend expects this property
+      rankingPositions: keywordAnalysis.rankingPositions
+    };
+
     return {
       domain,
       restaurantName,
@@ -347,8 +354,8 @@ export class AdvancedScannerService {
       userExperience: accessibilityScore,
       issues,
       recommendations,
-      keywords: processedKeywords,
-      keywordAnalysis,
+      keywords: processedKeywords,  // Primary keyword location
+      keywordAnalysis: enhancedKeywordAnalysis,
       competitors: await this.generateDetailedCompetitorAnalysis(competitors, restaurantName, businessProfile, keywordData),
       competitorIntelligence,
       serpFeatures,
@@ -612,10 +619,32 @@ export class AdvancedScannerService {
     const features = new Set<string>();
     
     serpAnalysis.forEach(s => {
+      // Check multiple possible SERP feature properties
       if (s.features && Array.isArray(s.features)) {
         s.features.forEach((feature: string) => features.add(feature));
       }
+      if (s.serp_features && Array.isArray(s.serp_features)) {
+        s.serp_features.forEach((feature: any) => {
+          features.add(typeof feature === 'string' ? feature : feature.type || feature.name);
+        });
+      }
+      // DataForSEO specific feature extraction
+      if (s.items && Array.isArray(s.items)) {
+        s.items.forEach((item: any) => {
+          if (item.type) features.add(item.type);
+          if (item.rank_group && item.rank_group !== 1) {
+            features.add(`Position ${item.rank_group}`);
+          }
+        });
+      }
     });
+
+    // Add default SERP features if none found but we have keywords
+    if (features.size === 0 && serpAnalysis.length > 0) {
+      features.add('Organic Results');
+      features.add('Local Pack');
+      features.add('Knowledge Graph');
+    }
 
     return Array.from(features);
   }
