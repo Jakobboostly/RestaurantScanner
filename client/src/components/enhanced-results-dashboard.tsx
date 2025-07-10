@@ -487,44 +487,113 @@ export default function EnhancedResultsDashboard({ scanResult, restaurantName }:
               </Card>
             </motion.div>
 
-            {/* Competitor Details Table */}
+            {/* Competitor Performance Comparison */}
             <Card>
               <CardHeader>
-                <CardTitle>Competitive Analysis Details</CardTitle>
+                <CardTitle>How Your Competitors Are Outperforming You</CardTitle>
               </CardHeader>
               <CardContent>
                 <Table>
                   <TableHeader>
                     <TableRow>
-                      <TableHead>Domain</TableHead>
-                      <TableHead>Organic Traffic</TableHead>
-                      <TableHead>Keywords</TableHead>
-                      <TableHead>Domain Authority</TableHead>
-                      <TableHead>Backlinks</TableHead>
-                      <TableHead>Competitive Strength</TableHead>
+                      <TableHead>Competitor</TableHead>
+                      <TableHead>Traffic Advantage</TableHead>
+                      <TableHead>Keyword Lead</TableHead>
+                      <TableHead>Authority Gap</TableHead>
+                      <TableHead>Performance Summary</TableHead>
+                      <TableHead>Key Advantage</TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>
-                    {competitorData.map((competitor, index) => (
-                      <TableRow key={index}>
-                        <TableCell className="font-medium">{competitor.domain}</TableCell>
-                        <TableCell>{competitor.traffic.toLocaleString()}</TableCell>
-                        <TableCell>{competitor.keywords.toLocaleString()}</TableCell>
-                        <TableCell>
-                          <Badge variant={competitor.domainAuthority > 50 ? 'default' : 'secondary'}>
-                            {competitor.domainAuthority}/100
-                          </Badge>
-                        </TableCell>
-                        <TableCell>{competitor.backlinks.toLocaleString()}</TableCell>
-                        <TableCell>
-                          <Badge variant={competitor.traffic > 10000 ? 'destructive' : competitor.traffic > 1000 ? 'secondary' : 'default'}>
-                            {competitor.traffic > 10000 ? 'High' : competitor.traffic > 1000 ? 'Medium' : 'Low'}
-                          </Badge>
-                        </TableCell>
-                      </TableRow>
-                    ))}
+                    {competitorData.map((competitor, index) => {
+                      const yourTraffic = scanResult.estimatedTraffic || 100;
+                      const yourKeywords = keywordData.length || 10;
+                      const yourAuthority = scanResult.domainAuthority || 20;
+                      
+                      const trafficMultiplier = Math.round(competitor.traffic / yourTraffic);
+                      const keywordLead = competitor.keywords - yourKeywords;
+                      const authorityGap = competitor.domainAuthority - yourAuthority;
+                      
+                      const keyAdvantage = (() => {
+                        if (trafficMultiplier > 10) return 'Massive SEO presence';
+                        if (competitor.domainAuthority > 70) return 'Strong domain authority';
+                        if (competitor.keywords > 1000) return 'Broad keyword coverage';
+                        if (competitor.backlinks > 500) return 'Link building success';
+                        return 'Better optimization';
+                      })();
+                      
+                      return (
+                        <TableRow key={index}>
+                          <TableCell className="font-medium">{competitor.domain}</TableCell>
+                          <TableCell>
+                            <div className="flex items-center gap-2">
+                              <ArrowUp className="w-4 h-4 text-red-500" />
+                              <span className="text-red-600 font-semibold">
+                                {trafficMultiplier}x more traffic
+                              </span>
+                            </div>
+                          </TableCell>
+                          <TableCell>
+                            <div className="flex items-center gap-2">
+                              {keywordLead > 0 ? (
+                                <>
+                                  <ArrowUp className="w-4 h-4 text-red-500" />
+                                  <span className="text-red-600">+{keywordLead.toLocaleString()} keywords</span>
+                                </>
+                              ) : (
+                                <>
+                                  <ArrowDown className="w-4 h-4 text-green-500" />
+                                  <span className="text-green-600">You lead by {Math.abs(keywordLead)}</span>
+                                </>
+                              )}
+                            </div>
+                          </TableCell>
+                          <TableCell>
+                            <div className="flex items-center gap-2">
+                              {authorityGap > 0 ? (
+                                <>
+                                  <ArrowUp className="w-4 h-4 text-red-500" />
+                                  <span className="text-red-600">+{authorityGap} points higher</span>
+                                </>
+                              ) : (
+                                <>
+                                  <ArrowDown className="w-4 h-4 text-green-500" />
+                                  <span className="text-green-600">You lead by {Math.abs(authorityGap)}</span>
+                                </>
+                              )}
+                            </div>
+                          </TableCell>
+                          <TableCell>
+                            <Badge variant={trafficMultiplier > 5 ? 'destructive' : trafficMultiplier > 2 ? 'secondary' : 'default'}>
+                              {trafficMultiplier > 5 ? 'Dominating' : trafficMultiplier > 2 ? 'Leading' : 'Competitive'}
+                            </Badge>
+                          </TableCell>
+                          <TableCell>
+                            <Badge variant="outline" className="text-xs">
+                              {keyAdvantage}
+                            </Badge>
+                          </TableCell>
+                        </TableRow>
+                      );
+                    })}
                   </TableBody>
                 </Table>
+                
+                {competitorData.length > 0 && (
+                  <div className="mt-6 p-4 bg-red-50 rounded-lg border border-red-200">
+                    <div className="flex items-start gap-3">
+                      <AlertTriangle className="w-5 h-5 text-red-500 mt-0.5" />
+                      <div>
+                        <h4 className="font-semibold text-red-900 mb-1">Competitive Gap Analysis</h4>
+                        <p className="text-red-700 text-sm">
+                          Your competitors are significantly outperforming you in organic search. 
+                          The average competitor has {Math.round(competitorData.reduce((sum, c) => sum + c.traffic, 0) / competitorData.length / 100)}x 
+                          more traffic and stronger domain authority. Focus on content creation, link building, and local SEO optimization.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                )}
               </CardContent>
             </Card>
           </TabsContent>

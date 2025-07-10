@@ -736,31 +736,39 @@ export class AdvancedScannerService {
     const cuisineType = this.extractCuisineType(businessProfile);
     const city = this.extractCity(restaurantName);
     
-    // Generate keyword strings only (no volumes/difficulty - these come from DataForSEO)
-    const keywordStrings = [];
+    // Generate keyword strings with varied intents
+    const keywords = [];
     
-    // Restaurant name based keywords
-    keywordStrings.push(restaurantName);
-    keywordStrings.push(`${restaurantName} menu`);
-    keywordStrings.push(`${restaurantName} hours`);
+    // Informational keywords (5)
+    keywords.push({ keyword: restaurantName, intent: 'informational' });
+    keywords.push({ keyword: `${restaurantName} menu`, intent: 'informational' });
+    keywords.push({ keyword: `${restaurantName} hours`, intent: 'informational' });
+    keywords.push({ keyword: `${restaurantName} reviews`, intent: 'informational' });
+    keywords.push({ keyword: `${restaurantName} location`, intent: 'informational' });
     
-    // Cuisine-based keywords
-    if (cuisineType !== 'restaurant') {
-      keywordStrings.push(`${cuisineType} restaurant near me`);
-      if (city) keywordStrings.push(`${cuisineType} ${city}`);
-    }
+    // Local keywords (5)
+    keywords.push({ keyword: 'restaurant near me', intent: 'local' });
+    keywords.push({ keyword: `${cuisineType} restaurant near me`, intent: 'local' });
+    if (city) keywords.push({ keyword: `restaurant ${city}`, intent: 'local' });
+    if (city) keywords.push({ keyword: `${cuisineType} ${city}`, intent: 'local' });
+    keywords.push({ keyword: 'takeout near me', intent: 'local' });
     
-    // Generic local keywords
-    keywordStrings.push('restaurant near me');
-    if (city) keywordStrings.push(`restaurant ${city}`);
-    keywordStrings.push('takeout near me');
+    // Commercial keywords (5)
+    keywords.push({ keyword: `best ${cuisineType} restaurant`, intent: 'commercial' });
+    keywords.push({ keyword: `${cuisineType} restaurant delivery`, intent: 'commercial' });
+    keywords.push({ keyword: `order ${cuisineType} food online`, intent: 'commercial' });
+    if (city) keywords.push({ keyword: `best restaurant ${city}`, intent: 'commercial' });
+    keywords.push({ keyword: `${restaurantName} vs ${cuisineType} restaurant`, intent: 'commercial' });
     
-    // Return basic structure for DataForSEO enrichment (no fake data)
-    return keywordStrings.slice(0, 10).map(keyword => ({
-      keyword,
+    // Return structured data for DataForSEO enrichment
+    return keywords.slice(0, 15).map(item => ({
+      keyword: item.keyword,
       searchVolume: 0, // Will be populated by DataForSEO
       difficulty: 0,   // Will be populated by DataForSEO
-      intent: 'informational' // Default intent, will be classified by DataForSEO
+      intent: item.intent,
+      cpc: 0,
+      competition: 0,
+      position: null
     }));
   }
 
