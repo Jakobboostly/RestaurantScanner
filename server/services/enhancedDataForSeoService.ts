@@ -557,6 +557,30 @@ export class EnhancedDataForSeoService {
     return Math.round(baseVolume * multiplier);
   }
 
+  private estimateKeywordDifficulty(keyword: string): number {
+    // Estimate keyword difficulty based on keyword characteristics
+    let baseDifficulty = 50; // Default medium difficulty
+    
+    // Length-based difficulty (shorter = more competitive)
+    if (keyword.length < 10) baseDifficulty = 70;
+    else if (keyword.length < 20) baseDifficulty = 50;
+    else baseDifficulty = 30;
+    
+    // Keyword type multipliers for difficulty
+    if (keyword.includes('restaurant')) baseDifficulty += 10;
+    if (keyword.includes('near me')) baseDifficulty += 15;
+    if (keyword.includes('best')) baseDifficulty += 20;
+    if (keyword.includes('reviews')) baseDifficulty += 5;
+    if (keyword.includes('delivery')) baseDifficulty += 10;
+    if (keyword.includes('menu')) baseDifficulty += 5;
+    
+    // Brand-specific keywords are easier
+    if (keyword.includes('yogi') || keyword.includes('honey')) baseDifficulty -= 15;
+    
+    // Keep within bounds
+    return Math.max(10, Math.min(90, baseDifficulty));
+  }
+
   private calculateBacklinkQuality(backlinks: any[]): number {
     if (!backlinks || backlinks.length === 0) return 0;
     
