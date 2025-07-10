@@ -1011,9 +1011,9 @@ export class AdvancedScannerService {
 
   private async analyzeWebsitePerformance(domain: string): Promise<any> {
     try {
-      const apiKey = process.env.PAGESPEED_API_KEY || process.env.GOOGLE_API_KEY;
+      const apiKey = process.env.GOOGLE_API_KEY;
       if (!apiKey) {
-        console.warn('No PageSpeed API key found, using fallback performance metrics');
+        console.warn('No Google API key found, using fallback performance metrics');
         return this.getFallbackPerformanceMetrics();
       }
 
@@ -1058,7 +1058,7 @@ export class AdvancedScannerService {
 
   private async analyzeMobilePerformance(domain: string): Promise<any> {
     try {
-      const apiKey = process.env.PAGESPEED_API_KEY || process.env.GOOGLE_API_KEY;
+      const apiKey = process.env.GOOGLE_API_KEY;
       if (!apiKey) {
         console.warn('No PageSpeed API key found for mobile performance analysis');
         return {
