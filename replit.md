@@ -76,6 +76,12 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 10, 2025. Fixed DataForSEO keyword difficulty API endpoint:
+  - Updated keyword difficulty endpoint to use correct `/dataforseo_labs/google/bulk_keyword_difficulty/live`
+  - Fixed all 404 errors that were preventing proper keyword analysis
+  - System now successfully retrieves real keyword difficulty scores from DataForSEO
+  - Enhanced keyword analysis with authentic difficulty data instead of estimated values
+  - Scanner now completes successfully with comprehensive keyword intelligence
 - July 10, 2025. Complete dashboard redesign with 6 strategic intelligence sections:
   - Built Enhanced Results Dashboard with interactive keyword table (sortable by volume, difficulty, opportunity score)
   - Added Competitive Intelligence Hub with traffic comparison charts and domain authority visualization  

@@ -114,6 +114,24 @@ export class EnhancedDataForSeoService {
           console.log('Search volume endpoint failed, using estimated data');
         }
 
+        // Try getting keyword difficulty using the correct endpoint
+        let difficultyData = {};
+        try {
+          const difficultyResponse = await this.client.post('/dataforseo_labs/google/bulk_keyword_difficulty/live', [{
+            keywords: [keyword, ...keywordSuggestions.slice(0, 9).map((s: any) => s.keyword || s)].filter(Boolean),
+            location_name: location,
+            language_name: 'English'
+          }]);
+          const difficultyResults = difficultyResponse.data.tasks?.[0]?.result || [];
+          difficultyData = difficultyResults.reduce((acc: any, item: any) => {
+            acc[item.keyword] = item.keyword_difficulty_index || item.difficulty || 50;
+            return acc;
+          }, {});
+          console.log('Keyword difficulty data received:', Object.keys(difficultyData).length);
+        } catch (error) {
+          console.log('Keyword difficulty endpoint failed, using estimated data');
+        }
+
         // Create combined keyword data with fallbacks
         const baseKeywords = [keyword, ...keywordSuggestions.slice(0, 9).map((s: any) => s.keyword || s)].filter(Boolean);
         const keywordData: KeywordData[] = baseKeywords.map((kw: string, index: number) => {
@@ -123,7 +141,7 @@ export class EnhancedDataForSeoService {
           return {
             keyword: kw,
             searchVolume: volumeItem?.search_volume || this.estimateSearchVolume(kw),
-            difficulty: this.estimateKeywordDifficulty(kw),
+            difficulty: difficultyData[kw] || this.estimateKeywordDifficulty(kw),
             cpc: volumeItem?.keyword_info?.cpc || suggestion?.cpc || 0,
             competition: volumeItem?.keyword_info?.competition || suggestion?.competition || 0.5,
             intent: this.classifySearchIntent(kw),
