@@ -68,7 +68,7 @@ interface EnhancedResultsDashboardProps {
   restaurantName: string;
 }
 
-export default function EnhancedResultsDashboard({ scanResult, restaurantName }: EnhancedResultsDashboardProps) {
+function EnhancedResultsDashboard({ scanResult, restaurantName }: EnhancedResultsDashboardProps) {
   const [selectedTab, setSelectedTab] = useState("keywords");
   const [sortColumn, setSortColumn] = useState<string>('searchVolume');
   const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('desc');
@@ -84,6 +84,12 @@ export default function EnhancedResultsDashboard({ scanResult, restaurantName }:
   };
 
   const INTENT_COLORS = ['#0066CC', '#10B981', '#F59E0B', '#EF4444', '#8B5CF6'];
+
+  // Helper function to calculate opportunity score
+  const calculateOpportunityScore = (searchVolume: number, difficulty: number): number => {
+    if (difficulty === 0) return 0;
+    return Math.round((searchVolume / difficulty) * 100);
+  };
 
   // Process keyword data for visualizations
   const keywordData = useMemo(() => {
@@ -201,11 +207,7 @@ export default function EnhancedResultsDashboard({ scanResult, restaurantName }:
     };
   }, [scanResult.businessProfile]);
 
-  // Utility functions
-  function calculateOpportunityScore(volume: number, difficulty: number): number {
-    if (volume === 0 || difficulty === 0) return 0;
-    return Math.round((volume / 1000) * (100 - difficulty));
-  }
+
 
   function calculateProfileCompleteness(profile: any): number {
     const fields = ['name', 'address', 'phone', 'website', 'hours', 'description'];
@@ -1091,3 +1093,5 @@ export default function EnhancedResultsDashboard({ scanResult, restaurantName }:
     </div>
   );
 }
+
+export default EnhancedResultsDashboard;
