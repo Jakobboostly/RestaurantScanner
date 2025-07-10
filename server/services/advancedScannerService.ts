@@ -341,10 +341,10 @@ export class AdvancedScannerService {
         schemaMarkup: false
       },
       metrics: {
-        fcp: performanceMetrics.coreWebVitals?.fcp || 0,
-        lcp: performanceMetrics.coreWebVitals?.lcp || 0,
-        cls: performanceMetrics.coreWebVitals?.cls || 0,
-        fid: performanceMetrics.coreWebVitals?.fid || 0
+        fcp: performanceMetrics?.coreWebVitals?.fcp || 0,
+        lcp: performanceMetrics?.coreWebVitals?.lcp || 0,
+        cls: performanceMetrics?.coreWebVitals?.cls || 0,
+        fid: performanceMetrics?.coreWebVitals?.fid || 0
       },
       domainAuthority,
       backlinks: 0,
@@ -352,14 +352,14 @@ export class AdvancedScannerService {
       scanDate: new Date().toISOString(),
       businessProfile,
       mobileExperience: {
-        score: mobileExperience.score || 85,
-        loadTime: mobileExperience.loadTime || 2.1,
-        isResponsive: mobileExperience.isResponsive || true,
-        touchFriendly: mobileExperience.touchFriendly || true,
-        textReadable: mobileExperience.textReadable || true,
-        navigationEasy: mobileExperience.navigationEasy || true,
-        issues: mobileExperience.issues || [],
-        recommendations: mobileExperience.recommendations || []
+        score: mobileExperience?.score || performanceMetrics?.performance || 0,
+        loadTime: mobileExperience?.loadTime || 0,
+        isResponsive: mobileExperience?.isResponsive !== false,
+        touchFriendly: mobileExperience?.touchFriendly !== false,
+        textReadable: mobileExperience?.textReadable !== false,
+        navigationEasy: mobileExperience?.navigationEasy !== false,
+        issues: mobileExperience?.issues || [],
+        recommendations: mobileExperience?.recommendations || []
       },
       reviewsAnalysis: reviewsAnalysis || this.generateEnhancedReviewsAnalysis(businessProfile)
     };
@@ -1052,19 +1052,24 @@ export class AdvancedScannerService {
         timeout: 30000
       });
 
-      const lighthouse = response.data.lighthouseResult;
+      const lighthouse = response.data?.lighthouseResult;
+      if (!lighthouse || !lighthouse.categories) {
+        console.log('Invalid PageSpeed API response structure');
+        return this.getFallbackPerformanceMetrics();
+      }
+
       const categories = lighthouse.categories;
 
       return {
-        performance: Math.round(categories.performance.score * 100),
-        accessibility: Math.round(categories.accessibility.score * 100),
-        seo: Math.round(categories.seo.score * 100),
-        bestPractices: Math.round(categories['best-practices'].score * 100),
+        performance: Math.round((categories.performance?.score || 0) * 100),
+        accessibility: Math.round((categories.accessibility?.score || 0) * 100),
+        seo: Math.round((categories.seo?.score || 0) * 100),
+        bestPractices: Math.round((categories['best-practices']?.score || 0) * 100),
         coreWebVitals: {
-          fcp: lighthouse.audits['first-contentful-paint']?.numericValue || 0,
-          lcp: lighthouse.audits['largest-contentful-paint']?.numericValue || 0,
-          cls: lighthouse.audits['cumulative-layout-shift']?.numericValue || 0,
-          fid: lighthouse.audits['max-potential-fid']?.numericValue || 0
+          fcp: lighthouse.audits?.['first-contentful-paint']?.numericValue || 0,
+          lcp: lighthouse.audits?.['largest-contentful-paint']?.numericValue || 0,
+          cls: lighthouse.audits?.['cumulative-layout-shift']?.numericValue || 0,
+          fid: lighthouse.audits?.['max-potential-fid']?.numericValue || 0
         }
       };
 
@@ -1111,12 +1116,17 @@ export class AdvancedScannerService {
 
       console.log('Mobile PageSpeed API Response Status:', response.status);
       
-      const lighthouse = response.data.lighthouseResult;
+      const lighthouse = response.data?.lighthouseResult;
+      if (!lighthouse || !lighthouse.categories) {
+        console.log('Invalid mobile PageSpeed API response structure');
+        return this.getFallbackMobileExperience();
+      }
+
       const categories = lighthouse.categories;
 
       // Extract mobile-specific metrics
-      const mobileScore = Math.round(categories.performance.score * 100);
-      const loadTime = (lighthouse.audits['speed-index']?.numericValue || 0) / 1000;
+      const mobileScore = Math.round((categories.performance?.score || 0) * 100);
+      const loadTime = (lighthouse.audits?.['speed-index']?.numericValue || 0) / 1000;
       
       // Check for mobile-friendly features
       const isResponsive = lighthouse.audits['viewport']?.score === 1;

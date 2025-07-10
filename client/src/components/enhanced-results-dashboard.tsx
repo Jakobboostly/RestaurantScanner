@@ -87,7 +87,14 @@ export default function EnhancedResultsDashboard({ scanResult, restaurantName }:
 
   // Process keyword data for visualizations
   const keywordData = useMemo(() => {
-    const keywords = scanResult.keywordAnalysis?.targetKeywords || [];
+    // Try multiple possible keyword sources
+    const keywords = scanResult.keywordAnalysis?.targetKeywords || 
+                     scanResult.keywords || 
+                     [];
+    
+    console.log('Processing keywords:', keywords);
+    console.log('Keyword analysis:', scanResult.keywordAnalysis);
+    
     return keywords.map((keyword: any) => ({
       keyword: keyword.keyword || '',
       searchVolume: keyword.searchVolume || 0,
@@ -98,7 +105,7 @@ export default function EnhancedResultsDashboard({ scanResult, restaurantName }:
       position: keyword.position || null,
       opportunity: calculateOpportunityScore(keyword.searchVolume || 0, keyword.difficulty || 0)
     }));
-  }, [scanResult.keywordAnalysis?.targetKeywords]);
+  }, [scanResult.keywordAnalysis?.targetKeywords, scanResult.keywords]);
 
   const sortedKeywords = useMemo(() => {
     return [...keywordData].sort((a, b) => {
@@ -609,28 +616,33 @@ export default function EnhancedResultsDashboard({ scanResult, restaurantName }:
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="space-y-6"
+              className="grid grid-cols-1 lg:grid-cols-2 gap-6"
             >
-              {/* SERP Features */}
+              {/* SERP Features Presence */}
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Eye className="w-5 h-5" />
-                    SERP Features Presence
+                    SERP Features Found
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    {(scanResult.serpFeatures || []).map((feature: string, index: number) => (
-                      <div key={index} className="flex items-center gap-2 p-3 bg-blue-50 rounded-lg">
-                        <CheckCircle className="w-4 h-4 text-blue-500" />
-                        <span className="text-sm font-medium">{feature}</span>
-                      </div>
-                    ))}
-                    {(!scanResult.serpFeatures || scanResult.serpFeatures.length === 0) && (
-                      <div className="col-span-full text-center py-8 text-gray-500">
+                  <div className="space-y-3">
+                    {(scanResult.serpFeatures && scanResult.serpFeatures.length > 0) ? (
+                      scanResult.serpFeatures.map((feature: string, index: number) => (
+                        <div key={index} className="flex items-center justify-between p-3 bg-green-50 rounded-lg">
+                          <div className="flex items-center gap-2">
+                            <CheckCircle className="w-4 h-4 text-green-500" />
+                            <span className="font-medium">{feature}</span>
+                          </div>
+                          <Badge variant="default">Active</Badge>
+                        </div>
+                      ))
+                    ) : (
+                      <div className="text-center py-8 text-gray-500">
                         <Eye className="w-12 h-12 mx-auto mb-4 opacity-50" />
-                        <p>No SERP features data available</p>
+                        <p>No SERP features detected</p>
+                        <p className="text-sm">Your website may not appear in enhanced search results</p>
                       </div>
                     )}
                   </div>
@@ -641,35 +653,70 @@ export default function EnhancedResultsDashboard({ scanResult, restaurantName }:
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
-                    <TrendingUp className="w-5 h-5" />
-                    Ranking Opportunities (Position 11-20)
+                    <Target className="w-5 h-5" />
+                    Ranking Opportunities
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
-                    {keywordData
-                      .filter(keyword => keyword.position && keyword.position > 10 && keyword.position <= 20)
-                      .slice(0, 8)
-                      .map((keyword, index) => (
-                        <div key={index} className="flex items-center justify-between p-3 bg-yellow-50 rounded-lg">
-                          <div className="flex items-center gap-3">
-                            <Badge variant="secondary">#{keyword.position}</Badge>
-                            <span className="font-medium">{keyword.keyword}</span>
-                            <Badge variant="outline">{keyword.searchVolume.toLocaleString()} searches</Badge>
+                    {keywordData.filter(k => k.position === null || k.position > 10).slice(0, 5).map((keyword, index) => (
+                      <div key={index} className="flex items-center justify-between p-3 bg-yellow-50 rounded-lg">
+                        <div>
+                          <div className="font-medium">{keyword.keyword}</div>
+                          <div className="text-sm text-gray-600">
+                            Volume: {keyword.searchVolume.toLocaleString()} | Difficulty: {keyword.difficulty}%
                           </div>
-                          <Badge variant="default">Quick Win Opportunity</Badge>
                         </div>
-                      ))}
-                    {keywordData.filter(keyword => keyword.position && keyword.position > 10 && keyword.position <= 20).length === 0 && (
+                        <Badge variant={keyword.difficulty > 50 ? 'destructive' : 'secondary'}>
+                          {keyword.position ? `Position #${keyword.position}` : 'Not ranking'}
+                        </Badge>
+                      </div>
+                    ))}
+                    {keywordData.filter(k => k.position === null || k.position > 10).length === 0 && (
                       <div className="text-center py-8 text-gray-500">
-                        <TrendingUp className="w-12 h-12 mx-auto mb-4 opacity-50" />
-                        <p>No ranking opportunities found on page 2</p>
+                        <Target className="w-12 h-12 mx-auto mb-4 opacity-50" />
+                        <p>All keywords are ranking well</p>
+                        <p className="text-sm">Great job! Focus on maintaining current positions</p>
                       </div>
                     )}
                   </div>
                 </CardContent>
               </Card>
             </motion.div>
+
+            {/* Keyword Position Tracking Chart */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <BarChart3 className="w-5 h-5" />
+                  Current Keyword Positions
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ResponsiveContainer width="100%" height={400}>
+                  <BarChart data={keywordData.filter(k => k.position !== null && k.position > 0).slice(0, 10)}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis 
+                      dataKey="keyword" 
+                      angle={-45} 
+                      textAnchor="end" 
+                      height={100}
+                      interval={0}
+                    />
+                    <YAxis 
+                      domain={[0, 50]} 
+                      tickFormatter={(value) => `#${value}`}
+                      reversed
+                    />
+                    <Tooltip 
+                      formatter={(value) => [`Position #${value}`, 'Ranking']}
+                      labelFormatter={(label) => `Keyword: ${label}`}
+                    />
+                    <Bar dataKey="position" fill={COLORS.primary} />
+                  </BarChart>
+                </ResponsiveContainer>
+              </CardContent>
+            </Card>
           </TabsContent>
 
           {/* 4. Technical Health Center */}
