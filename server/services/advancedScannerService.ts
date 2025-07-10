@@ -810,7 +810,11 @@ export class AdvancedScannerService {
         overallScore: realReviewsData.overallScore || 75,
         totalReviews: realReviewsData.totalReviews || businessProfile?.totalReviews || 0,
         averageRating: realReviewsData.averageRating || businessProfile?.rating || 0,
-        sentimentBreakdown: realReviewsData.sentimentBreakdown || {
+        sentimentBreakdown: realReviewsData.sentimentDistribution ? {
+          positive: Math.round((realReviewsData.sentimentDistribution.positive / realReviewsData.totalReviews) * 100) || 0,
+          neutral: Math.round((realReviewsData.sentimentDistribution.neutral / realReviewsData.totalReviews) * 100) || 0,
+          negative: Math.round((realReviewsData.sentimentDistribution.negative / realReviewsData.totalReviews) * 100) || 0
+        } : {
           positive: 0,
           neutral: 0,
           negative: 0
