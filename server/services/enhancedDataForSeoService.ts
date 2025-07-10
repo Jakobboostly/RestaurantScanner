@@ -544,38 +544,44 @@ export class EnhancedDataForSeoService {
   }
 
   private estimateSearchVolume(keyword: string): number {
+    // Ensure keyword is a string
+    const keywordStr = String(keyword || '');
+    
     // Fallback search volume estimation
     const baseVolume = 500;
     let multiplier = 1;
 
-    if (keyword.includes('restaurant')) multiplier *= 2;
-    if (keyword.includes('menu')) multiplier *= 1.5;
-    if (keyword.includes('near me')) multiplier *= 3;
-    if (keyword.includes('delivery')) multiplier *= 2;
-    if (keyword.includes('hours')) multiplier *= 1.2;
+    if (keywordStr.includes('restaurant')) multiplier *= 2;
+    if (keywordStr.includes('menu')) multiplier *= 1.5;
+    if (keywordStr.includes('near me')) multiplier *= 3;
+    if (keywordStr.includes('delivery')) multiplier *= 2;
+    if (keywordStr.includes('hours')) multiplier *= 1.2;
 
     return Math.round(baseVolume * multiplier);
   }
 
   private estimateKeywordDifficulty(keyword: string): number {
+    // Ensure keyword is a string
+    const keywordStr = String(keyword || '');
+    
     // Estimate keyword difficulty based on keyword characteristics
     let baseDifficulty = 50; // Default medium difficulty
     
     // Length-based difficulty (shorter = more competitive)
-    if (keyword.length < 10) baseDifficulty = 70;
-    else if (keyword.length < 20) baseDifficulty = 50;
+    if (keywordStr.length < 10) baseDifficulty = 70;
+    else if (keywordStr.length < 20) baseDifficulty = 50;
     else baseDifficulty = 30;
     
     // Keyword type multipliers for difficulty
-    if (keyword.includes('restaurant')) baseDifficulty += 10;
-    if (keyword.includes('near me')) baseDifficulty += 15;
-    if (keyword.includes('best')) baseDifficulty += 20;
-    if (keyword.includes('reviews')) baseDifficulty += 5;
-    if (keyword.includes('delivery')) baseDifficulty += 10;
-    if (keyword.includes('menu')) baseDifficulty += 5;
+    if (keywordStr.includes('restaurant')) baseDifficulty += 10;
+    if (keywordStr.includes('near me')) baseDifficulty += 15;
+    if (keywordStr.includes('best')) baseDifficulty += 20;
+    if (keywordStr.includes('reviews')) baseDifficulty += 5;
+    if (keywordStr.includes('delivery')) baseDifficulty += 10;
+    if (keywordStr.includes('menu')) baseDifficulty += 5;
     
     // Brand-specific keywords are easier
-    if (keyword.includes('yogi') || keyword.includes('honey')) baseDifficulty -= 15;
+    if (keywordStr.includes('yogi') || keywordStr.includes('honey')) baseDifficulty -= 15;
     
     // Keep within bounds
     return Math.max(10, Math.min(90, baseDifficulty));
