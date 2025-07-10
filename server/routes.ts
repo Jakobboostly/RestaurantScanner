@@ -11,8 +11,8 @@ import { z } from "zod";
 
 
 export async function registerRoutes(app: Express): Promise<Server> {
-  // API credentials
-  const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY || process.env.GOOGLE_PLACES_API_KEY;
+  // API credentials with fallback priority
+  const GOOGLE_API_KEY = process.env.GOOGLE_PLACES_API_KEY || process.env.GOOGLE_API_KEY;
   const DATAFOREO_LOGIN = process.env.DATAFOREO_LOGIN;
   const DATAFOREO_PASSWORD = process.env.DATAFOREO_PASSWORD;
   const ZEMBRATECH_API_KEY = process.env.ZEMBRATECH_API_KEY;
