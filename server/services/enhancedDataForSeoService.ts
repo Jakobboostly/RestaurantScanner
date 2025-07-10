@@ -61,7 +61,7 @@ export class EnhancedDataForSeoService {
       headers: {
         'Content-Type': 'application/json'
       },
-      timeout: 45000
+      timeout: 15000
     });
   }
 
@@ -460,25 +460,25 @@ export class EnhancedDataForSeoService {
     location: string,
     cuisineType?: string
   ): Promise<KeywordData[]> {
+    // Limit to 5 core keywords for speed
     const baseKeywords = [
       `${restaurantName}`,
       `${restaurantName} menu`,
-      `${restaurantName} hours`,
-      `${restaurantName} delivery`,
-      `${restaurantName} reservations`,
-      `${restaurantName} reviews`,
-      `${restaurantName} near me`,
-      `${restaurantName} ${location}`,
-      `best restaurant ${location}`,
-      `${cuisineType} restaurant ${location}`
-    ].filter(Boolean);
-
-    const keywordPromises = baseKeywords.map(keyword => 
-      this.getKeywordResearch(keyword, location)
-    );
+      `${cuisineType} restaurant`,
+      `restaurant ${location}`,
+      `${restaurantName} reviews`
+    ].filter(Boolean).slice(0, 5);
 
     try {
-      const results = await Promise.allSettled(keywordPromises);
+      // Use Promise.race with timeout for faster fallback
+      const results = await Promise.race([
+        Promise.allSettled(baseKeywords.map(keyword => 
+          this.getKeywordResearch(keyword, location)
+        )),
+        new Promise<never>((_, reject) => 
+          setTimeout(() => reject(new Error('Keyword research timeout')), 8000)
+        )
+      ]);
       
       const allKeywords: KeywordData[] = [];
       results.forEach(result => {
@@ -487,13 +487,13 @@ export class EnhancedDataForSeoService {
         }
       });
 
-      // Sort by search volume and return top keywords
+      // Return top 10 keywords for speed
       return allKeywords
         .sort((a, b) => b.searchVolume - a.searchVolume)
-        .slice(0, 15);
+        .slice(0, 10);
 
     } catch (error) {
-      console.error('Restaurant keyword suggestions failed:', error);
+      console.error('Restaurant keyword suggestions timed out:', error);
       return [];
     }
   }
