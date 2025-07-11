@@ -61,7 +61,15 @@ export class DataForSeoService {
     return data.tasks[0]?.result || null;
   }
 
-  /* ── Removed keyword research - using Google Keyword Planner API instead ── */
+  /* ── 8. Keyword Research ──────────────────────────────────────────── */
+  async getKeywordResearch(keyword: string, location_name = "United States") {
+    const { data } = await this.client.post(
+      "/dataforseo_labs/google/keyword_suggestions/live",
+      [{ keyword, location_name, language_code: "en" }],
+    );
+    
+    return data.tasks[0]?.result || null;
+  }
 
   /* ── 9. SERP Features ──────────────────────────────────────────────── */
   async getSerpFeatures(keyword: string, location_name = "United States") {

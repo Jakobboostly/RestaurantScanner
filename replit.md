@@ -79,11 +79,8 @@ This is a comprehensive restaurant website scanner application built with React 
 - July 10, 2025. Major DataForSEO cleanup and Google API integration:
   - Removed DataForSEO Lighthouse endpoint - now using Google PageSpeed Insights API exclusively for performance data
   - Removed unused DataForSEO business data endpoints - Google Places API provides superior restaurant data
-  - Integrated Google Keyword Planner API to replace DataForSEO keyword research endpoints
   - Cleaned up duplicate performance auditing functionality
-  - Streamlined to use Google APIs where available, keeping only unique DataForSEO capabilities (technical SEO, competitor analysis, SERP analysis)
-  - Added Google Ads API dependency for comprehensive keyword research
-  - Updated environment variables to include Google Ads API credentials
+  - Streamlined to use Google APIs where available, keeping only unique DataForSEO capabilities (technical SEO, competitor analysis, SERP analysis, keyword research)
   - Maintained data integrity principle - no mock data, only authentic API responses
 - July 10, 2025. Eliminated all hardcoded search volume estimates for authentic DataForSEO-only approach:
   - Removed all hardcoded search volume fallback estimates (800-18,000/month ranges)
