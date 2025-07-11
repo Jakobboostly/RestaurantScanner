@@ -1,6 +1,7 @@
 import axios, { AxiosInstance } from 'axios';
 import NodeCache from 'node-cache';
 import pLimit from 'p-limit';
+import { GoogleKeywordPlannerService } from './googleKeywordPlannerService';
 
 const limit = pLimit(2); // Limit concurrent DataForSEO API calls
 const cache = new NodeCache({ stdTTL: 3600 }); // 1 hour cache
@@ -47,10 +48,22 @@ export class EnhancedDataForSeoService {
   private client: AxiosInstance;
   private login: string;
   private password: string;
+  private googleKeywordPlanner: GoogleKeywordPlannerService | null = null;
 
   constructor(login: string, password: string) {
     this.login = login;
     this.password = password;
+    
+    // Initialize Google Keyword Planner if credentials are available
+    if (process.env.GOOGLE_ADS_CUSTOMER_ID && process.env.GOOGLE_ADS_DEVELOPER_TOKEN) {
+      this.googleKeywordPlanner = new GoogleKeywordPlannerService(
+        process.env.GOOGLE_ADS_CUSTOMER_ID,
+        process.env.GOOGLE_ADS_DEVELOPER_TOKEN,
+        process.env.GOOGLE_ADS_CLIENT_ID || '',
+        process.env.GOOGLE_ADS_CLIENT_SECRET || '',
+        process.env.GOOGLE_ADS_REFRESH_TOKEN || ''
+      );
+    }
     
     this.client = axios.create({
       baseURL: 'https://api.dataforseo.com/v3',
@@ -86,73 +99,33 @@ export class EnhancedDataForSeoService {
         let keywordSuggestions = [];
         let searchVolumeData = [];
 
-        // Try multiple DataForSEO endpoints to find working ones
-        try {
-          // Try getting keyword suggestions
-          const suggestionsResponse = await this.client.post('/dataforseo_labs/google/keyword_suggestions/live', [{
-            keyword: keyword,
-            location_name: location,
-            language_name: 'English',
-            limit: 50
-          }]);
-          keywordSuggestions = suggestionsResponse.data.tasks?.[0]?.result || [];
-          console.log('Keyword suggestions received:', keywordSuggestions.length);
-        } catch (error) {
-          console.log('Keyword suggestions endpoint failed, using fallback');
-        }
-
-        // Try getting search volume data for main keyword
-        try {
-          const volumeResponse = await this.client.post('/keywords_data/google/search_volume/live', [{
-            keywords: [keyword],
-            location_name: location,
-            language_name: 'English'
-          }]);
-          searchVolumeData = volumeResponse.data.tasks?.[0]?.result || [];
-          console.log('Search volume data received:', searchVolumeData.length);
-        } catch (error) {
-          console.log('Search volume endpoint failed - no data available');
-        }
-
-        // Try getting keyword difficulty using the correct endpoint
-        let difficultyData = {};
-        try {
-          const difficultyResponse = await this.client.post('/dataforseo_labs/google/bulk_keyword_difficulty/live', [{
-            keywords: [keyword, ...keywordSuggestions.slice(0, 9).map((s: any) => s.keyword || s)].filter(Boolean),
-            location_name: location,
-            language_name: 'English'
-          }]);
-          const difficultyResults = difficultyResponse.data.tasks?.[0]?.result || [];
-          difficultyData = difficultyResults.reduce((acc: any, item: any) => {
-            acc[item.keyword] = item.keyword_difficulty_index || item.difficulty || 0;
-            return acc;
-          }, {});
-          console.log('Keyword difficulty data received:', Object.keys(difficultyData).length);
-        } catch (error) {
-          console.log('Keyword difficulty endpoint failed - no data available');
-        }
-
-        // Create combined keyword data with fallbacks
-        const baseKeywords = [keyword, ...keywordSuggestions.slice(0, 9).map((s: any) => s.keyword || s)].filter(Boolean);
-        const keywordData: KeywordData[] = baseKeywords.map((kw: string, index: number) => {
-          const volumeItem = searchVolumeData.find((item: any) => item.keyword === kw);
-          const suggestion = keywordSuggestions.find((s: any) => (s.keyword || s) === kw);
+        // Use Google Keyword Planner API instead of DataForSEO
+        if (this.googleKeywordPlanner) {
+          console.log('Using Google Keyword Planner API for keyword research');
           
-          return {
-            keyword: kw,
-            searchVolume: volumeItem?.search_volume || 0, // Only use DataForSEO API data
-            difficulty: difficultyData[kw] || 0, // Only use DataForSEO API data
-            cpc: volumeItem?.keyword_info?.cpc || suggestion?.cpc || 0,
-            competition: volumeItem?.keyword_info?.competition || suggestion?.competition || 0,
-            intent: this.classifySearchIntent(kw),
-            relatedKeywords: keywordSuggestions.slice(0, 10).map((s: any) => s.keyword || s).filter(Boolean)
-          };
-        });
+          const googleKeywordData = await this.googleKeywordPlanner.getKeywordResearch(keyword, location);
+          
+          // Convert Google Keyword Planner data to expected format
+          const keywordData: KeywordData[] = googleKeywordData.map(gkd => ({
+            keyword: gkd.keyword,
+            searchVolume: gkd.searchVolume,
+            difficulty: Math.round(gkd.competition * 100), // Convert 0-1 to 0-100 scale
+            cpc: gkd.cpc,
+            competition: gkd.competition,
+            intent: gkd.intent,
+            relatedKeywords: gkd.relatedKeywords
+          }));
 
-        // Cache the results
-        cache.set(cacheKey, keywordData);
-        
-        return keywordData;
+          // Cache the results
+          cache.set(cacheKey, keywordData);
+          
+          return keywordData;
+        } else {
+          console.log('Google Keyword Planner not configured - returning empty results');
+          return [];
+        }
+
+
 
       } catch (error) {
         console.error('DataForSEO keyword research failed - API configuration required:', error);

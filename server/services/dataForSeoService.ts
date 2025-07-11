@@ -11,54 +11,8 @@ export class DataForSeoService {
     });
   }
 
-  /* ── 1. Restaurant search ───────────────────────────────────────────── */
-  async searchRestaurants({
-    query,
-    lat,
-    lng,
-    radiusMeters = 5000,
-    limit = 10,
-  }: {
-    query: string;
-    lat?: number;
-    lng?: number;
-    radiusMeters?: number;
-    limit?: number;
-  }) {
-    const task = {
-      keyword: query,
-      location_coordinates: lat && lng ? `${lat},${lng}` : undefined,
-      radius: radiusMeters,
-      limit,
-    };
-    
-    const { data } = await this.client.post(
-      "/business_data/business_listings/search/live",
-      [task],
-    );
-    
-    return data.tasks[0]?.result || [];
-  }
-
-  /* ── 2. Restaurant details (GMB profile) ────────────────────────────── */
-  async getRestaurantDetails(cid: string) {
-    const { data } = await this.client.post(
-      "/business_data/google/my_business_info/live",
-      [{ id: cid }],
-    );
-    
-    return data.tasks[0]?.result || null;
-  }
-
-  /* ── 3. Core Web Vitals via Lighthouse ──────────────────────────────── */
-  async auditPerformance(url: string) {
-    const { data } = await this.client.post(
-      "/on_page/lighthouse/live/json",
-      [{ url, tag: "live-audit" }],
-    );
-    
-    return data.tasks[0]?.result || null;
-  }
+  /* ── Removed business data endpoints - using Google Places API instead ── */
+  /* ── Removed Lighthouse endpoint - using Google PageSpeed Insights API instead ── */
 
   /* ── 4. Keyword rank check ──────────────────────────────────────────── */
   async trackKeyword({
@@ -85,26 +39,7 @@ export class DataForSeoService {
     return data.tasks[0]?.result || null;
   }
 
-  /* ── 5. Nearby competitors (reuse search) ───────────────────────────── */
-  async findCompetitors({
-    lat,
-    lng,
-    radiusMeters = 3000,
-    limit = 10,
-  }: {
-    lat: number;
-    lng: number;
-    radiusMeters?: number;
-    limit?: number;
-  }) {
-    return this.searchRestaurants({ 
-      query: "restaurant", 
-      lat, 
-      lng, 
-      radiusMeters, 
-      limit 
-    });
-  }
+  /* ── Removed competitors search - using Google Places API instead ── */
 
   /* ── 6. SEO Analysis ──────────────────────────────────────────────── */
   async getOnPageSEO(url: string) {
@@ -126,15 +61,7 @@ export class DataForSeoService {
     return data.tasks[0]?.result || null;
   }
 
-  /* ── 8. Keyword Research ──────────────────────────────────────────── */
-  async getKeywordResearch(keyword: string, location_name = "United States") {
-    const { data } = await this.client.post(
-      "/dataforseo_labs/google/keyword_suggestions/live",
-      [{ keyword, location_name, language_code: "en" }],
-    );
-    
-    return data.tasks[0]?.result || null;
-  }
+  /* ── Removed keyword research - using Google Keyword Planner API instead ── */
 
   /* ── 9. SERP Features ──────────────────────────────────────────────── */
   async getSerpFeatures(keyword: string, location_name = "United States") {
