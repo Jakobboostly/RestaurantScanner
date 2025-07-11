@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Facebook, Instagram, Twitter, Youtube, Linkedin } from "lucide-react";
-import { SiFacebook, SiInstagram, SiTwitter, SiYoutube, SiTiktok, SiLinkedin } from "react-icons/si";
+import { SiFacebook, SiInstagram, SiX, SiYoutube, SiTiktok, SiLinkedin } from "react-icons/si";
 
 interface SocialMediaLinks {
   facebook?: string;
@@ -37,8 +37,8 @@ export default function SocialMediaDisplay({ socialMediaLinks }: SocialMediaDisp
     },
     {
       key: 'twitter',
-      name: 'Twitter',
-      icon: SiTwitter,
+      name: 'Twitter/X',
+      icon: SiX,
       color: 'text-sky-600',
       bgColor: 'bg-sky-50',
       url: socialMediaLinks.twitter
