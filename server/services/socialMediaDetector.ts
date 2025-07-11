@@ -178,9 +178,9 @@ export class SocialMediaDetector {
 
   private async fetchFacebookPageData(facebookId: string): Promise<FacebookPageData | null> {
     try {
-      console.log(`Fetching Facebook page data for ID: ${facebookId}`);
+      console.log(`Fetching Facebook page posts for ID: ${facebookId}`);
       
-      const response = await axios.get(`https://api.zembra.io/social/facebook/page/${facebookId}`, {
+      const response = await axios.get(`https://api.zembra.io/social/facebook/page/${facebookId}/posts`, {
         headers: {
           'Accept': 'application/json',
           'Authorization': `Bearer ${this.zembraApiKey}`
@@ -191,26 +191,42 @@ export class SocialMediaDetector {
       if (response.data) {
         const data = response.data;
         
+        // Calculate engagement metrics from posts data
+        const posts = data.posts || data.data || [];
+        const totalPosts = posts.length;
+        const totalLikes = posts.reduce((sum: number, post: any) => sum + (post.likes_count || post.like_count || 0), 0);
+        const totalComments = posts.reduce((sum: number, post: any) => sum + (post.comments_count || post.comment_count || 0), 0);
+        const totalShares = posts.reduce((sum: number, post: any) => sum + (post.shares_count || post.share_count || 0), 0);
+        const totalEngagement = totalLikes + totalComments + totalShares;
+        
+        // Calculate engagement rate (engagement per post)
+        const engagementRate = totalPosts > 0 ? (totalEngagement / totalPosts) : 0;
+        
+        // Extract page info from posts response or use data directly
+        const pageInfo = data.page || data;
+        
         // Map Zembra API response to our interface
         const facebookData: FacebookPageData = {
-          id: data.id || facebookId,
-          name: data.name || '',
-          username: data.username || data.handle || '',
-          likes: data.likes || data.fan_count || 0,
-          followers: data.followers || data.follower_count || 0,
-          checkins: data.checkins || data.were_here_count || 0,
-          posts: data.posts || data.posts_count || 0,
-          engagement_rate: data.engagement_rate || 0,
-          verified: data.verified || data.is_verified || false,
-          category: data.category || data.category_list?.[0]?.name || '',
-          description: data.description || data.about || '',
-          website: data.website || data.link || '',
-          phone: data.phone || '',
-          address: data.address || data.location?.street || '',
-          cover_photo: data.cover_photo?.source || data.cover?.source || '',
-          profile_picture: data.profile_picture?.url || data.picture?.data?.url || ''
+          id: pageInfo.id || facebookId,
+          name: pageInfo.name || pageInfo.page_name || '',
+          username: pageInfo.username || pageInfo.handle || '',
+          likes: pageInfo.likes || pageInfo.fan_count || totalLikes,
+          followers: pageInfo.followers || pageInfo.follower_count || 0,
+          checkins: pageInfo.checkins || pageInfo.were_here_count || 0,
+          posts: totalPosts || pageInfo.posts_count || 0,
+          engagement_rate: engagementRate > 0 ? engagementRate : (pageInfo.engagement_rate || 0),
+          verified: pageInfo.verified || pageInfo.is_verified || false,
+          category: pageInfo.category || pageInfo.category_list?.[0]?.name || '',
+          description: pageInfo.description || pageInfo.about || '',
+          website: pageInfo.website || pageInfo.link || '',
+          phone: pageInfo.phone || '',
+          address: pageInfo.address || pageInfo.location?.street || '',
+          cover_photo: pageInfo.cover_photo?.source || pageInfo.cover?.source || '',
+          profile_picture: pageInfo.profile_picture?.url || pageInfo.picture?.data?.url || ''
         };
 
+        console.log(`Facebook data extracted: ${facebookData.name}, ${facebookData.posts} posts, ${facebookData.engagement_rate} engagement rate`);
+        
         return facebookData;
       }
       

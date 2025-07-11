@@ -85,7 +85,7 @@ export default function SocialMediaDisplay({ socialMediaLinks }: SocialMediaDisp
                 <div className="text-2xl font-bold text-blue-600">
                   {facebookData.likes?.toLocaleString() || 0}
                 </div>
-                <div className="text-sm text-gray-600">Likes</div>
+                <div className="text-sm text-gray-600">Page Likes</div>
               </div>
               <div className="text-center p-3 bg-gray-50 rounded-lg">
                 <div className="text-2xl font-bold text-blue-600">
@@ -95,17 +95,38 @@ export default function SocialMediaDisplay({ socialMediaLinks }: SocialMediaDisp
               </div>
               <div className="text-center p-3 bg-gray-50 rounded-lg">
                 <div className="text-2xl font-bold text-blue-600">
-                  {facebookData.checkins?.toLocaleString() || 0}
+                  {facebookData.posts?.toLocaleString() || 0}
                 </div>
-                <div className="text-sm text-gray-600">Check-ins</div>
+                <div className="text-sm text-gray-600">Recent Posts</div>
               </div>
               <div className="text-center p-3 bg-gray-50 rounded-lg">
                 <div className="text-2xl font-bold text-blue-600">
-                  {facebookData.engagement_rate ? `${facebookData.engagement_rate.toFixed(1)}%` : 'N/A'}
+                  {facebookData.engagement_rate ? 
+                    (facebookData.engagement_rate > 10 ? 
+                      `${facebookData.engagement_rate.toFixed(0)}` : 
+                      `${facebookData.engagement_rate.toFixed(1)}%`) 
+                    : 'N/A'}
                 </div>
-                <div className="text-sm text-gray-600">Engagement</div>
+                <div className="text-sm text-gray-600">
+                  {facebookData.engagement_rate && facebookData.engagement_rate > 10 ? 'Avg Engagement' : 'Engagement Rate'}
+                </div>
               </div>
             </div>
+
+            {/* Additional Facebook Insights */}
+            {facebookData.checkins && facebookData.checkins > 0 && (
+              <div className="p-3 bg-green-50 border border-green-200 rounded-lg">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <div className="text-sm font-medium text-green-800">Customer Check-ins</div>
+                    <div className="text-xs text-green-600">People who visited and checked in on Facebook</div>
+                  </div>
+                  <div className="text-xl font-bold text-green-700">
+                    {facebookData.checkins.toLocaleString()}
+                  </div>
+                </div>
+              </div>
+            )}
 
             {/* Facebook Details */}
             {(facebookData.category || facebookData.description) && (
