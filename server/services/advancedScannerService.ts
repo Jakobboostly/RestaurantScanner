@@ -3,6 +3,7 @@ import { EnhancedDataForSeoService } from './enhancedDataForSeoService.js';
 import { ZembraTechReviewsService } from './zembraTechReviewsService.js';
 import { AIRecommendationService } from './aiRecommendationService.js';
 import { GoogleReviewsService } from './googleReviewsService.js';
+import { SocialMediaDetector } from './socialMediaDetector.js';
 import { ScanResult } from '@shared/schema';
 import axios from 'axios';
 import * as cheerio from 'cheerio';
@@ -34,6 +35,7 @@ export class AdvancedScannerService {
   private zembraReviewsService: ZembraTechReviewsService | null = null;
   private aiRecommendationService: AIRecommendationService;
   private googleReviewsService: GoogleReviewsService;
+  private socialMediaDetector: SocialMediaDetector;
 
   constructor(
     googleApiKey: string,
@@ -47,6 +49,7 @@ export class AdvancedScannerService {
     this.dataForSeoService = new EnhancedDataForSeoService(dataForSeoLogin, dataForSeoPassword);
     this.aiRecommendationService = new AIRecommendationService();
     this.googleReviewsService = new GoogleReviewsService(googleApiKey);
+    this.socialMediaDetector = new SocialMediaDetector();
     
     if (zembraApiKey) {
       this.zembraReviewsService = new ZembraTechReviewsService(zembraApiKey);
@@ -80,7 +83,8 @@ export class AdvancedScannerService {
         performanceMetrics,
         mobileExperience,
         keywordData,
-        reviewsAnalysis
+        reviewsAnalysis,
+        socialMediaLinks
       ] = await Promise.allSettled([
         // Competitor analysis
         this.googleBusinessService.findCompetitors(restaurantName, latitude, longitude)
@@ -103,6 +107,13 @@ export class AdvancedScannerService {
           .catch(error => {
             console.error('Reviews analysis failed:', error);
             return this.generateEnhancedReviewsAnalysis(businessProfile);
+          }),
+        
+        // Social media detection
+        this.socialMediaDetector.detectSocialMediaLinks(domain)
+          .catch(error => {
+            console.error('Social media detection failed:', error);
+            return {};
           })
       ]);
 
@@ -112,6 +123,7 @@ export class AdvancedScannerService {
       const mobileResult = mobileExperience.status === 'fulfilled' ? mobileExperience.value : this.getFallbackMobileExperience();
       const keywordResult = keywordData.status === 'fulfilled' ? keywordData.value : this.generateRestaurantKeywords(restaurantName, businessProfile);
       const reviewsResult = reviewsAnalysis.status === 'fulfilled' ? reviewsAnalysis.value : null;
+      const socialMediaResult = socialMediaLinks.status === 'fulfilled' ? socialMediaLinks.value : {};
 
       // Phase 3: SERP Analysis (Parallel processing for speed)
       onProgress({ progress: 70, status: 'Analyzing search rankings...' });
@@ -159,7 +171,8 @@ export class AdvancedScannerService {
         keywordResult,
         serpAnalysis,
         competitorInsights,
-        reviewsResult
+        reviewsResult,
+        socialMediaResult
       );
 
       onProgress({ progress: 100, status: 'Analysis complete!' });
@@ -181,7 +194,8 @@ export class AdvancedScannerService {
     keywordData: any[],
     serpAnalysis: any[],
     competitorInsights: any[],
-    reviewsAnalysis: any
+    reviewsAnalysis: any,
+    socialMediaLinks: any
   ): EnhancedScanResult {
     // Calculate enhanced scores
     const businessScore = this.calculateBusinessScore(businessProfile);
@@ -353,7 +367,8 @@ export class AdvancedScannerService {
         issues: mobileExperience?.issues || [],
         recommendations: mobileExperience?.recommendations || []
       },
-      reviewsAnalysis: reviewsAnalysis || this.generateEnhancedReviewsAnalysis(businessProfile)
+      reviewsAnalysis: reviewsAnalysis || this.generateEnhancedReviewsAnalysis(businessProfile),
+      socialMediaLinks: socialMediaLinks || {}
     };
   }
 

@@ -62,6 +62,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, PieChart as RechartsPieChart, Cell, ResponsiveContainer, LineChart, Line, RadialBarChart, RadialBar, Pie } from 'recharts';
 import ScoreGauge from "./score-gauge";
 import GoogleReviewsDisplay from './google-reviews-display';
+import SocialMediaDisplay from './social-media-display';
 import { ScanResult } from "@shared/schema";
 
 interface EnhancedResultsDashboardProps {
@@ -938,6 +939,17 @@ function EnhancedResultsDashboard({ scanResult, restaurantName }: EnhancedResult
                   rating={scanResult.reviewsAnalysis.googleReviews.rating || 0}
                   totalReviews={scanResult.reviewsAnalysis.googleReviews.user_ratings_total || 0}
                 />
+              </motion.div>
+            )}
+
+            {/* Social Media Display */}
+            {scanResult.socialMediaLinks && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3 }}
+              >
+                <SocialMediaDisplay socialMediaLinks={scanResult.socialMediaLinks} />
               </motion.div>
             )}
 

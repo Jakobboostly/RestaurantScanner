@@ -235,6 +235,14 @@ export const scanResultSchema = z.object({
       impact: z.string(),
     })),
   }).optional(),
+  socialMediaLinks: z.object({
+    facebook: z.string().optional(),
+    instagram: z.string().optional(),
+    twitter: z.string().optional(),
+    youtube: z.string().optional(),
+    tiktok: z.string().optional(),
+    linkedin: z.string().optional(),
+  }).optional(),
 });
 
 export type RestaurantSearchResult = z.infer<typeof restaurantSearchResultSchema>;
