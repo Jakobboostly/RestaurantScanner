@@ -190,35 +190,11 @@ export class EnhancedDataForSeoService {
 
         const competitorResults = competitorsResponse.data.tasks?.[0]?.result || [];
         
-        // 2. Get backlink analysis for top competitors
-        const topCompetitorDomains = competitorResults.slice(0, 5).map((c: any) => c.domain);
-        const backlinkPromises = topCompetitorDomains.map(async (competitorDomain: string) => {
-          try {
-            const backlinkResponse = await this.client.post('/backlinks/backlinks/live', [{
-              target: competitorDomain,
-              limit: 1000,
-              filters: [["dofollow", "=", true]]
-            }]);
-            
-            const backlinks = backlinkResponse.data.tasks?.[0]?.result || [];
-            return {
-              domain: competitorDomain,
-              totalBacklinks: backlinks.length,
-              qualityScore: this.calculateBacklinkQuality(backlinks)
-            };
-          } catch (error) {
-            console.error(`Backlink analysis failed for ${competitorDomain}:`, error);
-            return { domain: competitorDomain, totalBacklinks: 0, qualityScore: 0 };
-          }
-        });
-
-        const backlinkData = await Promise.all(backlinkPromises);
-        const backlinkMap = backlinkData.reduce((acc: any, item: any) => {
-          acc[item.domain] = item;
-          return acc;
-        }, {});
+        // 2. Skip backlink analysis - removed per user request
+        const backlinkMap = {};
 
         // 3. Get technical SEO issues for competitors
+        const topCompetitorDomains = competitorResults.slice(0, 5).map((c: any) => c.domain);
         const technicalPromises = topCompetitorDomains.map(async (competitorDomain: string) => {
           try {
             const technicalResponse = await this.client.post('/on_page/pages/live', [{
@@ -406,14 +382,8 @@ export class EnhancedDataForSeoService {
 
         const technicalIssues = technicalResponse.data.tasks?.[0]?.result || [];
         
-        // Get backlink profile
-        const backlinkResponse = await this.client.post('/backlinks/backlinks/live', [{
-          target: domain,
-          limit: 1000,
-          filters: [["dofollow", "=", true]]
-        }]);
-        
-        const backlinks = backlinkResponse.data.tasks?.[0]?.result || [];
+        // Skip backlink analysis - removed per user request
+        const backlinks = [];
         
         const auditResult = {
           domain,

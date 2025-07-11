@@ -146,13 +146,5 @@ export class DataForSeoService {
     return data.tasks[0]?.result || null;
   }
 
-  /* ── 10. Backlink Analysis ──────────────────────────────────────────── */
-  async getBacklinkData(domain: string) {
-    const { data } = await this.client.post(
-      "/backlinks/summary/live",
-      [{ target: domain }],
-    );
-    
-    return data.tasks[0]?.result || null;
-  }
+
 }
