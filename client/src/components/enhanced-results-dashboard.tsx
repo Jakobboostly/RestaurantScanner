@@ -61,6 +61,7 @@ import { Separator } from "@/components/ui/separator";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, PieChart as RechartsPieChart, Cell, ResponsiveContainer, LineChart, Line, RadialBarChart, RadialBar, Pie } from 'recharts';
 import ScoreGauge from "./score-gauge";
+import GoogleReviewsDisplay from './google-reviews-display';
 import { ScanResult } from "@shared/schema";
 
 interface EnhancedResultsDashboardProps {
@@ -924,6 +925,21 @@ function EnhancedResultsDashboard({ scanResult, restaurantName }: EnhancedResult
                 </CardContent>
               </Card>
             </motion.div>
+
+            {/* Google Reviews Display */}
+            {scanResult.reviewsAnalysis?.googleReviews && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
+              >
+                <GoogleReviewsDisplay 
+                  reviews={scanResult.reviewsAnalysis.googleReviews.reviews || []}
+                  rating={scanResult.reviewsAnalysis.googleReviews.rating || 0}
+                  totalReviews={scanResult.reviewsAnalysis.googleReviews.user_ratings_total || 0}
+                />
+              </motion.div>
+            )}
 
             {/* Local Keyword Rankings */}
             <Card>

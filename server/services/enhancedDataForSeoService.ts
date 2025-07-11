@@ -132,8 +132,8 @@ export class EnhancedDataForSeoService {
           console.log('Keyword difficulty endpoint failed - no data available');
         }
 
-        // Create combined keyword data with fallbacks
-        const baseKeywords = [keyword, ...keywordSuggestions.slice(0, 9).map((s: any) => s.keyword || s)].filter(Boolean);
+        // Create combined keyword data with fallbacks - limit to 8 keywords
+        const baseKeywords = [keyword, ...keywordSuggestions.slice(0, 7).map((s: any) => s.keyword || s)].filter(Boolean);
         const keywordData: KeywordData[] = baseKeywords.map((kw: string, index: number) => {
           const volumeItem = searchVolumeData.find((item: any) => item.keyword === kw);
           const suggestion = keywordSuggestions.find((s: any) => (s.keyword || s) === kw);

@@ -132,7 +132,7 @@ export class GoogleBusinessService {
 
       const competitors = response.data.results
         .filter((place: any) => place.name !== restaurantName)
-        .slice(0, 5)
+        .slice(0, 3)
         .map((place: any) => ({
           name: place.name,
           rating: place.rating || 0,

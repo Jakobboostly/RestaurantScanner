@@ -2,6 +2,7 @@ import { GoogleBusinessService } from './googleBusinessService.js';
 import { EnhancedDataForSeoService } from './enhancedDataForSeoService.js';
 import { ZembraTechReviewsService } from './zembraTechReviewsService.js';
 import { AIRecommendationService } from './aiRecommendationService.js';
+import { GoogleReviewsService } from './googleReviewsService.js';
 import { ScanResult } from '@shared/schema';
 import axios from 'axios';
 import * as cheerio from 'cheerio';
@@ -32,6 +33,7 @@ export class AdvancedScannerService {
   private dataForSeoService: EnhancedDataForSeoService;
   private zembraReviewsService: ZembraTechReviewsService | null = null;
   private aiRecommendationService: AIRecommendationService;
+  private googleReviewsService: GoogleReviewsService;
 
   constructor(
     googleApiKey: string,
@@ -44,6 +46,7 @@ export class AdvancedScannerService {
     this.googleBusinessService = new GoogleBusinessService(googleApiKey);
     this.dataForSeoService = new EnhancedDataForSeoService(dataForSeoLogin, dataForSeoPassword);
     this.aiRecommendationService = new AIRecommendationService();
+    this.googleReviewsService = new GoogleReviewsService(googleApiKey);
     
     if (zembraApiKey) {
       this.zembraReviewsService = new ZembraTechReviewsService(zembraApiKey);
@@ -793,6 +796,17 @@ export class AdvancedScannerService {
 
   private async generateEnhancedReviewsAnalysis(businessProfile?: any, placeId?: string): Promise<any> {
     let realReviewsData = null;
+    let googleReviews = null;
+    
+    // Get Google Reviews if placeId is available
+    if (placeId) {
+      try {
+        googleReviews = await this.googleReviewsService.getReviews(placeId);
+        console.log('Google reviews retrieved:', googleReviews.reviews.length);
+      } catch (error) {
+        console.error('Google reviews failed:', error);
+      }
+    }
     
     // Try to get real reviews from Zembratech API
     if (this.zembraReviewsService && placeId) {
@@ -833,7 +847,8 @@ export class AdvancedScannerService {
           responseRate: businessProfile?.responseRate || this.calculateResponseRate(businessProfile),
           averageResponseTime: businessProfile?.averageResponseTime || this.calculateAverageResponseTime(businessProfile)
         },
-        recommendations: this.generateReviewRecommendations(realReviewsData, businessProfile)
+        recommendations: this.generateReviewRecommendations(realReviewsData, businessProfile),
+        googleReviews: googleReviews // Include Google Reviews data
       };
     }
     
@@ -861,7 +876,8 @@ export class AdvancedScannerService {
         responseRate: businessProfile?.responseRate || this.calculateResponseRate(businessProfile),
         averageResponseTime: businessProfile?.averageResponseTime || this.calculateAverageResponseTime(businessProfile)
       },
-      recommendations: this.generateReviewRecommendations(null, businessProfile)
+      recommendations: this.generateReviewRecommendations(null, businessProfile),
+      googleReviews: googleReviews // Include Google Reviews data
     };
   }
 
