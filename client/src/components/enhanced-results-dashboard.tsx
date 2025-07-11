@@ -105,20 +105,42 @@ function EnhancedResultsDashboard({ scanResult, restaurantName }: EnhancedResult
     console.log('Ranking positions:', scanResult.keywordAnalysis?.rankingPositions);
     
     return keywords.map((keyword: any) => {
-      const opportunity = calculateOpportunityScore(keyword.searchVolume || 0, keyword.difficulty || 0);
-      console.log(`Frontend keyword "${keyword.keyword}": volume=${keyword.searchVolume}, difficulty=${keyword.difficulty}, opportunity=${opportunity}`);
+      // Handle potential DataForSEO API response objects
+      let keywordString = '';
+      let searchVolume = 0;
+      let difficulty = 0;
+      let intent = 'informational';
+      let cpc = 0;
+      let competition = 0;
+      let position = null;
+      
+      if (typeof keyword === 'string') {
+        keywordString = keyword;
+      } else if (keyword && typeof keyword === 'object') {
+        // Extract from various possible structures
+        keywordString = keyword.keyword || keyword.seed_keyword || keyword.target || String(keyword).replace(/[^a-zA-Z0-9\s]/g, '');
+        searchVolume = keyword.searchVolume || keyword.search_volume || 0;
+        difficulty = keyword.difficulty || keyword.keyword_difficulty || 0;
+        intent = keyword.intent || keyword.search_intent || 'informational';
+        cpc = keyword.cpc || keyword.cost_per_click || 0;
+        competition = keyword.competition || keyword.competition_level || 0;
+        position = keyword.position || keyword.rank || null;
+      }
+      
+      const opportunity = calculateOpportunityScore(searchVolume, difficulty);
+      console.log(`Frontend keyword "${keywordString}": volume=${searchVolume}, difficulty=${difficulty}, opportunity=${opportunity}`);
       
       return {
-        keyword: keyword.keyword || '',
-        searchVolume: keyword.searchVolume || 0,
-        difficulty: keyword.difficulty || 0,
-        intent: keyword.intent || 'informational',
-        cpc: keyword.cpc || 0,
-        competition: keyword.competition || 0,
-        position: keyword.position || null,
+        keyword: keywordString,
+        searchVolume,
+        difficulty,
+        intent,
+        cpc,
+        competition,
+        position,
         opportunity
       };
-    });
+    }).filter(k => k.keyword && k.keyword.length > 0); // Filter out empty keywords
   }, [scanResult.keywordAnalysis?.targetKeywords, scanResult.keywords]);
 
   const sortedKeywords = useMemo(() => {
