@@ -457,13 +457,13 @@ export class EnhancedDataForSeoService {
     location: string,
     cuisineType?: string
   ): Promise<KeywordData[]> {
-    // Limit to 5 core keywords for speed
+    // Focus on commercial and local keywords only - no informational keywords
     const baseKeywords = [
-      `${restaurantName}`,
-      `${restaurantName} menu`,
-      `${cuisineType} restaurant`,
+      `${cuisineType} restaurant near me`,
+      `${cuisineType} delivery`,
+      `${cuisineType} takeout`,
       `restaurant ${location}`,
-      `${restaurantName} reviews`
+      `${cuisineType} ${location}`
     ].filter(Boolean).slice(0, 5);
 
     try {
@@ -484,8 +484,9 @@ export class EnhancedDataForSeoService {
         }
       });
 
-      // Return top 10 keywords for speed
+      // Filter out informational keywords and return top commercial/local keywords
       return allKeywords
+        .filter(keyword => this.isCommercialOrLocalKeyword(keyword.keyword))
         .sort((a, b) => b.searchVolume - a.searchVolume)
         .slice(0, 10);
 
@@ -493,6 +494,39 @@ export class EnhancedDataForSeoService {
       console.error('Restaurant keyword suggestions timed out:', error);
       return [];
     }
+  }
+
+  private isCommercialOrLocalKeyword(keyword: string): boolean {
+    const keywordStr = String(keyword || '').toLowerCase();
+    
+    // Exclude informational keywords
+    const informationalPatterns = [
+      'menu', 'hours', 'phone', 'contact', 'address', 'reviews', 'review',
+      'about', 'history', 'story', 'location', 'directions', 'info',
+      'what is', 'how to', 'when', 'where', 'why', 'who'
+    ];
+    
+    for (const pattern of informationalPatterns) {
+      if (keywordStr.includes(pattern)) {
+        return false;
+      }
+    }
+    
+    // Include commercial and local keywords
+    const commercialLocalPatterns = [
+      'near me', 'delivery', 'takeout', 'order', 'best', 'buy',
+      'restaurant', 'food', 'catering', 'online', 'booking',
+      'reservation', 'table', 'dine', 'eat'
+    ];
+    
+    for (const pattern of commercialLocalPatterns) {
+      if (keywordStr.includes(pattern)) {
+        return true;
+      }
+    }
+    
+    // Default to excluding if unclear
+    return false;
   }
 
   private calculateDifficulty(competition: number): number {

@@ -80,10 +80,13 @@ This is a comprehensive restaurant website scanner application built with React 
   - Refactored social media detection to focus exclusively on Facebook analysis
   - Integrated Zembra API (api.zembra.io) posts endpoint for comprehensive Facebook page data extraction
   - Added Facebook ID extraction from various URL formats (facebook.com/pagename, facebook.com/pages/name/id, facebook.com/profile.php?id=)
+  - Enhanced Facebook detection to handle SVG icons with xlink:href patterns (e.g., `<use xlink:href="#facebook-icon">`)
   - Created detailed Facebook analytics display with page likes, followers, recent posts count, and calculated engagement metrics
   - Updated social media display component to show rich Facebook page data including category, description, and check-ins
   - System now extracts Facebook URLs from website content and enriches them with authentic Zembra API posts data
   - Enhanced engagement rate calculation based on actual posts data (likes + comments + shares per post)
+  - Removed all informational keywords from keyword analysis - now focuses only on commercial and local keywords
+  - Added keyword filtering to exclude informational terms (menu, hours, reviews, location, etc.) and prioritize business-value keywords
   - Fixed Twitter icon import error (SiTwitter → SiX for Twitter/X rebrand)
   - Enhanced scanner to pass ZEMBRA_API key to social media detector for live Facebook data fetching
 - July 10, 2025. Major DataForSEO cleanup and Google API integration:

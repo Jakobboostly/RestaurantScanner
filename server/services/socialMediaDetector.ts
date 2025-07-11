@@ -70,14 +70,41 @@ export class SocialMediaDetector {
         }
       });
 
-      // Method 2: Facebook icon-based detection
+      // Method 2: Facebook icon-based detection (including SVG icons)
       if (!socialLinks.facebook) {
+        // Check for CSS class-based icons
         const facebookIcon = $('a[class*="facebook"], a[class*="fb"], i[class*="facebook"], i[class*="fb"]').closest('a');
         if (facebookIcon.length > 0) {
           const href = facebookIcon.attr('href');
           if (href && this.isValidFacebookUrl(href)) {
             socialLinks.facebook = this.cleanUrl(href);
           }
+        }
+        
+        // Check for SVG icons with xlink:href
+        if (!socialLinks.facebook) {
+          const svgFacebookIcons = $('use[xlink\\:href*="facebook"], use[href*="facebook"]').closest('a');
+          if (svgFacebookIcons.length > 0) {
+            const href = svgFacebookIcons.attr('href');
+            if (href && this.isValidFacebookUrl(href)) {
+              socialLinks.facebook = this.cleanUrl(href);
+            }
+          }
+        }
+        
+        // Check for SVG symbols and their parent links
+        if (!socialLinks.facebook) {
+          const svgElements = $('svg use[xlink\\:href="#facebook-icon"], svg use[href="#facebook-icon"], svg use[xlink\\:href*="facebook"], svg use[href*="facebook"]');
+          svgElements.each((_, element) => {
+            const parentLink = $(element).closest('a');
+            if (parentLink.length > 0) {
+              const href = parentLink.attr('href');
+              if (href && this.isValidFacebookUrl(href)) {
+                socialLinks.facebook = this.cleanUrl(href);
+                return false; // Break the loop
+              }
+            }
+          });
         }
       }
 
