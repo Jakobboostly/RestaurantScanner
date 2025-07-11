@@ -1,16 +1,32 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Facebook, Instagram, Twitter, Youtube, Linkedin } from "lucide-react";
-import { SiFacebook, SiInstagram, SiX, SiYoutube, SiTiktok, SiLinkedin } from "react-icons/si";
+import { ExternalLink } from "lucide-react";
+import { SiFacebook } from "react-icons/si";
+
+interface FacebookPageData {
+  id: string;
+  name: string;
+  username?: string;
+  likes?: number;
+  followers?: number;
+  checkins?: number;
+  posts?: number;
+  engagement_rate?: number;
+  verified?: boolean;
+  category?: string;
+  description?: string;
+  website?: string;
+  phone?: string;
+  address?: string;
+  cover_photo?: string;
+  profile_picture?: string;
+}
 
 interface SocialMediaLinks {
   facebook?: string;
-  instagram?: string;
-  twitter?: string;
-  youtube?: string;
-  tiktok?: string;
-  linkedin?: string;
+  facebookId?: string;
+  facebookData?: FacebookPageData;
 }
 
 interface SocialMediaDisplayProps {
@@ -18,147 +34,142 @@ interface SocialMediaDisplayProps {
 }
 
 export default function SocialMediaDisplay({ socialMediaLinks }: SocialMediaDisplayProps) {
-  const socialPlatforms = [
-    {
-      key: 'facebook',
-      name: 'Facebook',
-      icon: SiFacebook,
-      color: 'text-blue-600',
-      bgColor: 'bg-blue-50',
-      url: socialMediaLinks.facebook
-    },
-    {
-      key: 'instagram',
-      name: 'Instagram',
-      icon: SiInstagram,
-      color: 'text-pink-600',
-      bgColor: 'bg-pink-50',
-      url: socialMediaLinks.instagram
-    },
-    {
-      key: 'twitter',
-      name: 'Twitter/X',
-      icon: SiX,
-      color: 'text-sky-600',
-      bgColor: 'bg-sky-50',
-      url: socialMediaLinks.twitter
-    },
-    {
-      key: 'youtube',
-      name: 'YouTube',
-      icon: SiYoutube,
-      color: 'text-red-600',
-      bgColor: 'bg-red-50',
-      url: socialMediaLinks.youtube
-    },
-    {
-      key: 'tiktok',
-      name: 'TikTok',
-      icon: SiTiktok,
-      color: 'text-black',
-      bgColor: 'bg-gray-50',
-      url: socialMediaLinks.tiktok
-    },
-    {
-      key: 'linkedin',
-      name: 'LinkedIn',
-      icon: SiLinkedin,
-      color: 'text-blue-700',
-      bgColor: 'bg-blue-50',
-      url: socialMediaLinks.linkedin
-    }
-  ];
-
-  const activePlatforms = socialPlatforms.filter(platform => platform.url);
-  const inactivePlatforms = socialPlatforms.filter(platform => !platform.url);
-
-  if (activePlatforms.length === 0 && inactivePlatforms.length === 0) {
-    return null;
-  }
+  const facebookData = socialMediaLinks.facebookData;
+  const hasFacebook = socialMediaLinks.facebook;
 
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle className="flex items-center gap-2">
-          <ExternalLink className="w-5 h-5" />
-          Social Media Presence
-        </CardTitle>
-      </CardHeader>
-      <CardContent>
-        <div className="space-y-4">
-          {/* Active Social Media Links */}
-          {activePlatforms.length > 0 && (
-            <div>
-              <div className="text-sm font-medium text-gray-700 mb-3">
-                Found Social Media Links ({activePlatforms.length})
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {activePlatforms.map((platform) => {
-                  const IconComponent = platform.icon;
-                  return (
-                    <div
-                      key={platform.key}
-                      className={`flex items-center justify-between p-3 rounded-lg border ${platform.bgColor}`}
-                    >
-                      <div className="flex items-center gap-3">
-                        <IconComponent className={`w-5 h-5 ${platform.color}`} />
-                        <div>
-                          <div className="font-medium">{platform.name}</div>
-                          <div className="text-sm text-gray-600 truncate max-w-32">
-                            {platform.url?.replace(/^https?:\/\//, '')}
-                          </div>
-                        </div>
-                      </div>
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        onClick={() => window.open(platform.url, '_blank')}
-                        className="shrink-0"
-                      >
-                        <ExternalLink className="w-4 h-4" />
-                      </Button>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          )}
-
-          {/* Missing Social Media Platforms */}
-          {inactivePlatforms.length > 0 && (
-            <div>
-              <div className="text-sm font-medium text-gray-700 mb-3">
-                Missing Social Media Presence ({inactivePlatforms.length})
-              </div>
-              <div className="grid grid-cols-3 sm:grid-cols-6 gap-2">
-                {inactivePlatforms.map((platform) => {
-                  const IconComponent = platform.icon;
-                  return (
-                    <div
-                      key={platform.key}
-                      className="flex flex-col items-center p-3 rounded-lg border border-gray-200 bg-gray-50"
-                    >
-                      <IconComponent className="w-5 h-5 text-gray-400 mb-1" />
-                      <div className="text-xs text-gray-500 text-center">
-                        {platform.name}
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          )}
-
-          {/* Summary */}
-          <div className="flex items-center justify-between pt-3 border-t">
-            <div className="text-sm text-gray-600">
-              Social Media Coverage
-            </div>
-            <Badge variant={activePlatforms.length >= 3 ? 'default' : activePlatforms.length >= 1 ? 'secondary' : 'destructive'}>
-              {activePlatforms.length} of {socialPlatforms.length} platforms
-            </Badge>
-          </div>
+    <Card className="border-0 shadow-sm">
+      <CardHeader className="pb-3">
+        <div className="flex items-center justify-between">
+          <CardTitle className="text-lg font-semibold flex items-center gap-2">
+            <SiFacebook className="w-5 h-5 text-blue-600" />
+            Facebook Analysis
+          </CardTitle>
+          <Badge variant={hasFacebook ? "default" : "secondary"} className="text-xs">
+            {hasFacebook ? "Connected" : "Not Found"}
+          </Badge>
         </div>
+      </CardHeader>
+      <CardContent className="space-y-4">
+        {hasFacebook && facebookData ? (
+          <div className="space-y-4">
+            {/* Facebook Page Overview */}
+            <div className="flex items-center justify-between p-4 rounded-lg bg-blue-50 border border-blue-200">
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                  <SiFacebook className="w-6 h-6 text-blue-600" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-blue-900">{facebookData.name}</h4>
+                  <p className="text-sm text-blue-700">
+                    {facebookData.username ? `@${facebookData.username}` : 'Facebook Page'}
+                    {facebookData.verified && (
+                      <span className="ml-2 text-blue-600">✓ Verified</span>
+                    )}
+                  </p>
+                </div>
+              </div>
+              <Button
+                variant="ghost"
+                size="sm"
+                className="h-8 px-2 text-xs"
+                onClick={() => window.open(socialMediaLinks.facebook, '_blank')}
+              >
+                View Page <ExternalLink className="w-3 h-3 ml-1" />
+              </Button>
+            </div>
+
+            {/* Facebook Metrics */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="text-center p-3 bg-gray-50 rounded-lg">
+                <div className="text-2xl font-bold text-blue-600">
+                  {facebookData.likes?.toLocaleString() || 0}
+                </div>
+                <div className="text-sm text-gray-600">Likes</div>
+              </div>
+              <div className="text-center p-3 bg-gray-50 rounded-lg">
+                <div className="text-2xl font-bold text-blue-600">
+                  {facebookData.followers?.toLocaleString() || 0}
+                </div>
+                <div className="text-sm text-gray-600">Followers</div>
+              </div>
+              <div className="text-center p-3 bg-gray-50 rounded-lg">
+                <div className="text-2xl font-bold text-blue-600">
+                  {facebookData.checkins?.toLocaleString() || 0}
+                </div>
+                <div className="text-sm text-gray-600">Check-ins</div>
+              </div>
+              <div className="text-center p-3 bg-gray-50 rounded-lg">
+                <div className="text-2xl font-bold text-blue-600">
+                  {facebookData.engagement_rate ? `${facebookData.engagement_rate.toFixed(1)}%` : 'N/A'}
+                </div>
+                <div className="text-sm text-gray-600">Engagement</div>
+              </div>
+            </div>
+
+            {/* Facebook Details */}
+            {(facebookData.category || facebookData.description) && (
+              <div className="space-y-2">
+                {facebookData.category && (
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm font-medium text-gray-700">Category:</span>
+                    <Badge variant="outline" className="text-xs">{facebookData.category}</Badge>
+                  </div>
+                )}
+                {facebookData.description && (
+                  <div>
+                    <span className="text-sm font-medium text-gray-700">About:</span>
+                    <p className="text-sm text-gray-600 mt-1">{facebookData.description}</p>
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+        ) : hasFacebook ? (
+          <div className="space-y-2">
+            <div className="flex items-center justify-between p-3 rounded-lg bg-blue-50 border border-blue-200">
+              <div className="flex items-center gap-3">
+                <SiFacebook className="w-5 h-5 text-blue-600" />
+                <span className="font-medium">Facebook Page Found</span>
+              </div>
+              <Button
+                variant="ghost"
+                size="sm"
+                className="h-8 px-2 text-xs"
+                onClick={() => window.open(socialMediaLinks.facebook, '_blank')}
+              >
+                View Page <ExternalLink className="w-3 h-3 ml-1" />
+              </Button>
+            </div>
+            <p className="text-sm text-muted-foreground">
+              Facebook page detected but detailed analytics unavailable.
+            </p>
+          </div>
+        ) : (
+          <div className="space-y-2">
+            <div className="flex items-center justify-between p-3 rounded-lg border border-gray-200 bg-gray-50">
+              <div className="flex items-center gap-3">
+                <SiFacebook className="w-5 h-5 text-gray-400" />
+                <span className="font-medium text-gray-600">Facebook Page</span>
+              </div>
+              <Badge variant="secondary" className="text-xs">
+                Not Found
+              </Badge>
+            </div>
+            <p className="text-sm text-muted-foreground">
+              No Facebook page detected on the website. Consider adding a Facebook presence to engage with customers and build your online community.
+            </p>
+          </div>
+        )}
+
+        {/* Facebook ID Info */}
+        {socialMediaLinks.facebookId && (
+          <div className="pt-2 border-t">
+            <p className="text-xs text-muted-foreground">
+              Facebook ID: {socialMediaLinks.facebookId}
+            </p>
+          </div>
+        )}
       </CardContent>
     </Card>
   );

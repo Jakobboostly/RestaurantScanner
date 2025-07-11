@@ -49,7 +49,7 @@ export class AdvancedScannerService {
     this.dataForSeoService = new EnhancedDataForSeoService(dataForSeoLogin, dataForSeoPassword);
     this.aiRecommendationService = new AIRecommendationService();
     this.googleReviewsService = new GoogleReviewsService(googleApiKey);
-    this.socialMediaDetector = new SocialMediaDetector();
+    this.socialMediaDetector = new SocialMediaDetector(zembraApiKey);
     
     if (zembraApiKey) {
       this.zembraReviewsService = new ZembraTechReviewsService(zembraApiKey);
