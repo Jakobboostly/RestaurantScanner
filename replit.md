@@ -76,6 +76,15 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 11, 2025. Removed technical section entirely from dashboard and simplified keyword analysis:
+  - Completely removed Technical Health Center section with Core Web Vitals, technical issues, and performance metrics
+  - Removed search volume endpoint from DataForSEO integration per user request
+  - Simplified keyword analysis to focus on difficulty scoring and intent classification only
+  - Fixed React rendering errors by properly handling keyword data sanitization
+  - Dashboard now has 5 tabs: Keywords, Competitors, SERP, Local SEO, and ROI Impact
+  - Removed all hardcoded technical performance metrics and mock data
+  - Keywords display 0 search volume but maintain difficulty scoring and commercial/local filtering
+  - Enhanced keyword data processing to prevent DataForSEO API object rendering errors
 - July 11, 2025. Facebook-focused social media integration with Zembra API:
   - Refactored social media detection to focus exclusively on Facebook analysis
   - Integrated Zembra API (api.zembra.io) posts endpoint for comprehensive Facebook page data extraction

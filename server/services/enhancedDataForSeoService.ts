@@ -101,18 +101,7 @@ export class EnhancedDataForSeoService {
           console.log('Keyword suggestions endpoint failed, using fallback');
         }
 
-        // Try getting search volume data for main keyword
-        try {
-          const volumeResponse = await this.client.post('/keywords_data/google/search_volume/live', [{
-            keywords: [keyword],
-            location_name: location,
-            language_name: 'English'
-          }]);
-          searchVolumeData = volumeResponse.data.tasks?.[0]?.result || [];
-          console.log('Search volume data received:', searchVolumeData.length);
-        } catch (error) {
-          console.log('Search volume endpoint failed - no data available');
-        }
+        // Search volume endpoint removed - no longer using search_volume/live
 
         // Try getting keyword difficulty using the correct endpoint
         let difficultyData = {};
@@ -132,18 +121,17 @@ export class EnhancedDataForSeoService {
           console.log('Keyword difficulty endpoint failed - no data available');
         }
 
-        // Create combined keyword data with fallbacks - limit to 8 keywords
+        // Create combined keyword data with fallbacks - limit to 8 keywords (no search volume)
         const baseKeywords = [keyword, ...keywordSuggestions.slice(0, 7).map((s: any) => s.keyword || s)].filter(Boolean);
         const keywordData: KeywordData[] = baseKeywords.map((kw: string, index: number) => {
-          const volumeItem = searchVolumeData.find((item: any) => item.keyword === kw);
           const suggestion = keywordSuggestions.find((s: any) => (s.keyword || s) === kw);
           
           return {
             keyword: kw,
-            searchVolume: volumeItem?.search_volume || 0, // Only use DataForSEO API data
+            searchVolume: 0, // No search volume data
             difficulty: difficultyData[kw] || 0, // Only use DataForSEO API data
-            cpc: volumeItem?.keyword_info?.cpc || suggestion?.cpc || 0,
-            competition: volumeItem?.keyword_info?.competition || suggestion?.competition || 0,
+            cpc: 0, // No CPC data without search volume
+            competition: suggestion?.competition || 0,
             intent: this.classifySearchIntent(kw),
             relatedKeywords: keywordSuggestions.slice(0, 10).map((s: any) => s.keyword || s).filter(Boolean)
           };
