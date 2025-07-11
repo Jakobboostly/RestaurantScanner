@@ -4,6 +4,8 @@ export interface GoogleBusinessProfile {
   name: string;
   rating: number;
   totalReviews: number;
+  website?: string;
+  phone?: string;
   photos: {
     total: number;
     quality: 'excellent' | 'good' | 'fair' | 'poor';
@@ -55,7 +57,7 @@ export class GoogleBusinessService {
       const detailsResponse = await axios.get('https://maps.googleapis.com/maps/api/place/details/json', {
         params: {
           place_id: placeId,
-          fields: 'name,rating,user_ratings_total,photos,reviews,business_status',
+          fields: 'name,rating,user_ratings_total,photos,reviews,business_status,website,formatted_phone_number',
           key: this.apiKey,
           reviews_no_translations: true
         }
@@ -79,6 +81,8 @@ export class GoogleBusinessService {
         name: place.name,
         rating: place.rating,
         totalReviews: place.user_ratings_total,
+        website: place.website ? 'Available' : 'Not available',
+        phone: place.formatted_phone_number ? 'Available' : 'Not available',
         hasPhotos: !!place.photos,
         photoCount: place.photos ? place.photos.length : 0,
         hasReviews: !!place.reviews,
@@ -95,6 +99,8 @@ export class GoogleBusinessService {
         name: place.name || 'Unknown Restaurant',
         rating: place.rating || 0,
         totalReviews: place.user_ratings_total || 0,
+        website: place.website || undefined,
+        phone: place.formatted_phone_number || undefined,
         photos: photoAnalysis,
         reviews: reviewAnalysis,
         isVerified: place.business_status === 'OPERATIONAL',
