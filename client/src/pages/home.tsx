@@ -2,23 +2,20 @@ import { useState } from "react";
 import { TrendingUp, Users, Award, Zap, ChefHat, Search, Target, Sparkles, BarChart3, Globe, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+
 import { useToast } from "@/hooks/use-toast";
 import { motion } from "framer-motion";
 import Navigation from "@/components/navigation";
 import RestaurantSearch from "@/components/restaurant-search";
 import ScanningAnimation from "@/components/scanning-animation";
 import EnhancedResultsDashboard from "@/components/enhanced-results-dashboard";
-import { GoogleBusinessProfileScanner } from "@/components/google-business-profile-scanner";
 import { scanWebsite, getRestaurantDetails } from "@/lib/api";
 import { RestaurantSearchResult, ScanResult } from "@shared/schema";
 
-type ViewState = 'search' | 'scanning' | 'results' | 'profile-analysis';
-type ScanMode = 'website' | 'google-profile';
+type ViewState = 'search' | 'scanning' | 'results';
 
 export default function HomePage() {
   const [viewState, setViewState] = useState<ViewState>('search');
-  const [scanMode, setScanMode] = useState<ScanMode>('website');
   const [selectedRestaurant, setSelectedRestaurant] = useState<RestaurantSearchResult | null>(null);
   const [scanProgress, setScanProgress] = useState(0);
   const [scanStatus, setScanStatus] = useState('');
@@ -35,14 +32,6 @@ export default function HomePage() {
   const handleRestaurantSelect = async (restaurant: RestaurantSearchResult) => {
     try {
       setSelectedRestaurant(restaurant);
-      
-      if (scanMode === 'google-profile') {
-        // For Google Business Profile scanning, go directly to profile analysis
-        setViewState('profile-analysis');
-        return;
-      }
-      
-      // For website scanning
       setViewState('scanning');
       setScanProgress(0);
       setScanStatus('Initializing scan...');
@@ -108,25 +97,7 @@ export default function HomePage() {
     );
   }
 
-  if (viewState === 'profile-analysis' && selectedRestaurant) {
-    return (
-      <div className="min-h-screen bg-white">
-        <Navigation />
-        <div className="container mx-auto px-4 py-8">
-          <GoogleBusinessProfileScanner
-            placeId={selectedRestaurant.placeId}
-            restaurantName={selectedRestaurant.name}
-          />
-          <div className="mt-8 text-center">
-            <Button onClick={handleStartOver} variant="outline">
-              <Search className="w-4 h-4 mr-2" />
-              Analyze Another Restaurant
-            </Button>
-          </div>
-        </div>
-      </div>
-    );
-  }
+
 
   if (viewState === 'results' && scanResult && selectedRestaurant) {
     return (
@@ -318,34 +289,11 @@ export default function HomePage() {
             transition={{ delay: 0.3 }}
             id="restaurant-search"
           >
-            <Tabs value={scanMode} onValueChange={(value) => setScanMode(value as ScanMode)} className="w-full">
-              <TabsList className="grid w-full grid-cols-2 max-w-md mx-auto mb-8">
-                <TabsTrigger value="website" className="flex items-center gap-2">
-                  <Globe className="w-4 h-4" />
-                  Website Scanner
-                </TabsTrigger>
-                <TabsTrigger value="google-profile" className="flex items-center gap-2">
-                  <MapPin className="w-4 h-4" />
-                  Google Business Profile
-                </TabsTrigger>
-              </TabsList>
-              
-              <TabsContent value="website" className="mt-0">
-                <div className="text-center mb-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Website Performance Analysis</h3>
-                  <p className="text-gray-600">Analyze your restaurant's website performance, SEO, and customer experience</p>
-                </div>
-                <RestaurantSearch onRestaurantSelect={handleRestaurantSelect} />
-              </TabsContent>
-              
-              <TabsContent value="google-profile" className="mt-0">
-                <div className="text-center mb-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Google Business Profile Analysis</h3>
-                  <p className="text-gray-600">Analyze your Google Business Profile for optimization opportunities</p>
-                </div>
-                <RestaurantSearch onRestaurantSelect={handleRestaurantSelect} />
-              </TabsContent>
-            </Tabs>
+            <div className="text-center mb-6">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Restaurant Analysis</h3>
+              <p className="text-gray-600">Comprehensive analysis including website performance, SEO, Google Business Profile, and customer experience</p>
+            </div>
+            <RestaurantSearch onRestaurantSelect={handleRestaurantSelect} />
           </motion.div>
 
           <motion.div 
