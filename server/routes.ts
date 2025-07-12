@@ -44,6 +44,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
     console.log("DataForSEO scanner disabled - requires GOOGLE_API_KEY, DATAFORSEO_LOGIN, and DATAFORSEO_PASSWORD");
   }
 
+  // Google Business Profile scanner service
+  const { GoogleBusinessService } = await import('./services/googleBusinessService.js');
+  const googleBusinessService = new GoogleBusinessService(GOOGLE_API_KEY || "");
+
   // Restaurant search endpoint
   app.get("/api/restaurants/search", async (req, res) => {
     try {
@@ -206,6 +210,53 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Google Business Profile scan endpoint
+  app.post("/api/scan/google-business-profile", async (req, res) => {
+    try {
+      const { placeId } = req.body;
+      
+      if (!placeId) {
+        return res.status(400).json({ error: "Place ID is required" });
+      }
+
+      if (!GOOGLE_API_KEY) {
+        return res.status(500).json({ 
+          error: "Google Places API key not configured. Please configure API key to scan Google Business Profiles." 
+        });
+      }
+
+      console.log('Starting Google Business Profile scan for place ID:', placeId);
+      
+      // Get comprehensive Google Business Profile data
+      const businessProfile = await googleBusinessService.getBusinessProfile(placeId);
+      
+      // Enhanced profile analysis
+      const profileAnalysis = {
+        completeness: calculateProfileCompleteness(businessProfile),
+        optimization: analyzeProfileOptimization(businessProfile),
+        competitiveness: calculateCompetitiveScore(businessProfile),
+        recommendations: generateProfileRecommendations(businessProfile),
+        strengths: identifyProfileStrengths(businessProfile),
+        weaknesses: identifyProfileWeaknesses(businessProfile)
+      };
+
+      const result = {
+        profile: businessProfile,
+        analysis: profileAnalysis,
+        scanDate: new Date().toISOString(),
+        scanType: 'google-business-profile'
+      };
+
+      return res.json(result);
+      
+    } catch (error) {
+      console.error("Google Business Profile scan error:", error);
+      return res.status(500).json({ 
+        error: error instanceof Error ? error.message : 'Google Business Profile scan failed' 
+      });
+    }
+  });
+
   // Legacy advanced scan endpoint (disabled)
   app.post("/api/scan/advanced", async (req, res) => {
     return res.status(503).json({ 
@@ -215,4 +266,153 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   const httpServer = createServer(app);
   return httpServer;
+}
+
+// Helper functions for Google Business Profile analysis
+function calculateProfileCompleteness(profile: any): { score: number; missingElements: string[] } {
+  const elements = [
+    { key: 'name', weight: 10, present: !!profile.name },
+    { key: 'phone', weight: 15, present: !!profile.phone },
+    { key: 'website', weight: 20, present: !!profile.website },
+    { key: 'photos', weight: 25, present: profile.photos?.total > 0 },
+    { key: 'reviews', weight: 20, present: profile.totalReviews > 0 },
+    { key: 'rating', weight: 10, present: profile.rating > 0 }
+  ];
+
+  const totalWeight = elements.reduce((sum, el) => sum + el.weight, 0);
+  const completedWeight = elements.filter(el => el.present).reduce((sum, el) => sum + el.weight, 0);
+  
+  const score = Math.round((completedWeight / totalWeight) * 100);
+  const missingElements = elements.filter(el => !el.present).map(el => el.key);
+
+  return { score, missingElements };
+}
+
+function analyzeProfileOptimization(profile: any): { score: number; issues: string[] } {
+  const issues = [];
+  let score = 100;
+
+  // Check photo quality and quantity
+  if (profile.photos?.total < 5) {
+    issues.push('Need more photos (minimum 5 recommended)');
+    score -= 15;
+  }
+
+  // Check review engagement
+  if (profile.responseRate < 50) {
+    issues.push('Low response rate to reviews');
+    score -= 20;
+  }
+
+  // Check rating
+  if (profile.rating < 4.0) {
+    issues.push('Rating below 4.0 stars');
+    score -= 25;
+  }
+
+  // Check review volume
+  if (profile.totalReviews < 50) {
+    issues.push('Low number of reviews');
+    score -= 15;
+  }
+
+  return { score: Math.max(0, score), issues };
+}
+
+function calculateCompetitiveScore(profile: any): number {
+  let score = 0;
+  
+  // Rating contribution (40%)
+  score += (profile.rating / 5) * 40;
+  
+  // Review volume contribution (30%)
+  const reviewScore = Math.min(profile.totalReviews / 100, 1) * 30;
+  score += reviewScore;
+  
+  // Photo quality contribution (20%)
+  const photoScore = Math.min(profile.photos?.total / 20, 1) * 20;
+  score += photoScore;
+  
+  // Response rate contribution (10%)
+  score += (profile.responseRate / 100) * 10;
+  
+  return Math.round(score);
+}
+
+function generateProfileRecommendations(profile: any): string[] {
+  const recommendations = [];
+  
+  if (profile.photos?.total < 10) {
+    recommendations.push('Add more high-quality photos of your food, interior, and exterior');
+  }
+  
+  if (profile.responseRate < 70) {
+    recommendations.push('Respond to more customer reviews to improve engagement');
+  }
+  
+  if (profile.rating < 4.5) {
+    recommendations.push('Focus on improving customer experience to boost ratings');
+  }
+  
+  if (profile.totalReviews < 50) {
+    recommendations.push('Encourage satisfied customers to leave reviews');
+  }
+  
+  if (!profile.website) {
+    recommendations.push('Add a website link to your business profile');
+  }
+  
+  return recommendations;
+}
+
+function identifyProfileStrengths(profile: any): string[] {
+  const strengths = [];
+  
+  if (profile.rating >= 4.5) {
+    strengths.push('Excellent customer rating');
+  }
+  
+  if (profile.totalReviews >= 100) {
+    strengths.push('Strong review volume');
+  }
+  
+  if (profile.photos?.total >= 15) {
+    strengths.push('Good photo collection');
+  }
+  
+  if (profile.responseRate >= 80) {
+    strengths.push('Excellent review response rate');
+  }
+  
+  if (profile.isVerified) {
+    strengths.push('Verified business profile');
+  }
+  
+  return strengths;
+}
+
+function identifyProfileWeaknesses(profile: any): string[] {
+  const weaknesses = [];
+  
+  if (profile.rating < 4.0) {
+    weaknesses.push('Low customer rating');
+  }
+  
+  if (profile.totalReviews < 25) {
+    weaknesses.push('Insufficient review volume');
+  }
+  
+  if (profile.photos?.total < 5) {
+    weaknesses.push('Limited photo content');
+  }
+  
+  if (profile.responseRate < 50) {
+    weaknesses.push('Poor review response rate');
+  }
+  
+  if (!profile.website) {
+    weaknesses.push('Missing website link');
+  }
+  
+  return weaknesses;
 }

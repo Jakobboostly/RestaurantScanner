@@ -132,3 +132,12 @@ export async function getScanHistory(domain: string) {
   }
   return response.json();
 }
+
+export async function apiRequest<T>(url: string, options?: RequestInit): Promise<T> {
+  const response = await fetch(url, options);
+  if (!response.ok) {
+    const errorText = await response.text();
+    throw new Error(`API request failed: ${response.status} ${response.statusText} - ${errorText}`);
+  }
+  return response.json();
+}
