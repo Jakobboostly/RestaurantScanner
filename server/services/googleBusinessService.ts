@@ -261,19 +261,15 @@ export class GoogleBusinessService {
   }
 
   private calculateResponseRate(reviews: any[]): number {
-    if (reviews.length === 0) return 0;
-    
-    const reviewsWithResponses = reviews.filter(review => review.author_url && review.author_url.includes('response'));
-    return Math.round((reviewsWithResponses.length / reviews.length) * 100);
+    // Google Places API doesn't provide business owner response data
+    // This would need to be manually tracked or obtained from other sources
+    return 0; // Return 0 to indicate data unavailable
   }
 
   private calculateResponseTime(reviews: any[]): string {
-    // Simplified calculation - would need more data for accuracy
-    const responseRate = this.calculateResponseRate(reviews);
-    if (responseRate >= 80) return 'Within 1 day';
-    if (responseRate >= 50) return 'Within 3 days';
-    if (responseRate >= 20) return 'Within 1 week';
-    return 'Rarely responds';
+    // Google Places API doesn't provide business owner response time data
+    // This would need to be manually tracked or obtained from other sources
+    return 'Data not available';
   }
 
   private calculateDistance(lat1: number, lon1: number, lat2: number, lon2: number): number {

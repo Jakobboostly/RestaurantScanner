@@ -120,7 +120,7 @@ export function GoogleBusinessProfileScanner({ placeId, restaurantName }: Google
           </div>
           <div className="flex items-center gap-2">
             <MessageCircle className="h-4 w-4 text-muted-foreground" />
-            <span>{profile.responseRate}% response rate</span>
+            <span>{profile.responseRate > 0 ? `${profile.responseRate}% response rate` : 'Response rate not available'}</span>
           </div>
         </div>
       </CardContent>

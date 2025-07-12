@@ -298,11 +298,8 @@ function analyzeProfileOptimization(profile: any): { score: number; issues: stri
     score -= 15;
   }
 
-  // Check review engagement
-  if (profile.responseRate < 50) {
-    issues.push('Low response rate to reviews');
-    score -= 20;
-  }
+  // Note: Response rate data not available from Google Places API
+  // This would need to be manually tracked or obtained from other sources
 
   // Check rating
   if (profile.rating < 4.0) {
@@ -333,8 +330,8 @@ function calculateCompetitiveScore(profile: any): number {
   const photoScore = Math.min(profile.photos?.total / 20, 1) * 20;
   score += photoScore;
   
-  // Response rate contribution (10%)
-  score += (profile.responseRate / 100) * 10;
+  // Note: Response rate data not available from Google Places API
+  // Skip response rate contribution to competitive score
   
   return Math.round(score);
 }
@@ -346,9 +343,8 @@ function generateProfileRecommendations(profile: any): string[] {
     recommendations.push('Add more high-quality photos of your food, interior, and exterior');
   }
   
-  if (profile.responseRate < 70) {
-    recommendations.push('Respond to more customer reviews to improve engagement');
-  }
+  // Note: Response rate data not available from Google Places API
+  // Consider adding review response tracking through other means
   
   if (profile.rating < 4.5) {
     recommendations.push('Focus on improving customer experience to boost ratings');
@@ -380,9 +376,7 @@ function identifyProfileStrengths(profile: any): string[] {
     strengths.push('Good photo collection');
   }
   
-  if (profile.responseRate >= 80) {
-    strengths.push('Excellent review response rate');
-  }
+  // Note: Response rate data not available from Google Places API
   
   if (profile.isVerified) {
     strengths.push('Verified business profile');
@@ -406,9 +400,7 @@ function identifyProfileWeaknesses(profile: any): string[] {
     weaknesses.push('Limited photo content');
   }
   
-  if (profile.responseRate < 50) {
-    weaknesses.push('Poor review response rate');
-  }
+  // Note: Response rate data not available from Google Places API
   
   if (!profile.website) {
     weaknesses.push('Missing website link');

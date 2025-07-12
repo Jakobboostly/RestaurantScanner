@@ -338,3 +338,4 @@ Data integrity: No mock data - system must work with authentic data only, gracef
 Required APIs: Google Places API for restaurant search, DataForSEO for performance analysis and keyword rankings, Zembratech for reviews analysis.
 Core requirements: Performance scores, SEO analysis, mobile testing, keyword rankings (10 keywords), 5 competitors analysis, action plan with priority issues, meta tags extraction, social links detection.
 GitHub Integration: Successfully connected to GitHub with complete repository deployment including custom Boostly branding.
+Google Business Profile limitations: Response rate and response time data not available from Google Places API - requires manual tracking or alternative data sources.
