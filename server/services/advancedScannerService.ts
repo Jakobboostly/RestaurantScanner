@@ -68,11 +68,24 @@ export class AdvancedScannerService {
       // Phase 1: Initial Setup & Business Profile
       onProgress({ progress: 10, status: 'Gathering initial business data...' });
       let businessProfile = null;
+      let profileAnalysis = null;
       try {
         businessProfile = await this.googleBusinessService.getBusinessProfile(placeId);
+        // Add comprehensive profile analysis
+        if (businessProfile) {
+          profileAnalysis = {
+            completeness: this.calculateProfileCompleteness(businessProfile),
+            optimization: this.analyzeProfileOptimization(businessProfile),
+            competitiveness: this.calculateCompetitiveScore(businessProfile),
+            recommendations: this.generateProfileRecommendations(businessProfile),
+            strengths: this.identifyProfileStrengths(businessProfile),
+            weaknesses: this.identifyProfileWeaknesses(businessProfile)
+          };
+        }
       } catch (error) {
         console.error('Business profile fetch failed - Google Places API configuration required:', error);
         businessProfile = null;
+        profileAnalysis = null;
       }
 
       // Phase 2: Parallel Data Collection (Major Speed Improvement)
@@ -172,7 +185,8 @@ export class AdvancedScannerService {
         serpAnalysis,
         competitorInsights,
         reviewsResult,
-        socialMediaResult
+        socialMediaResult,
+        profileAnalysis
       );
 
       onProgress({ progress: 100, status: 'Analysis complete!' });
@@ -195,7 +209,8 @@ export class AdvancedScannerService {
     serpAnalysis: any[],
     competitorInsights: any[],
     reviewsAnalysis: any,
-    socialMediaLinks: any
+    socialMediaLinks: any,
+    profileAnalysis: any = null
   ): EnhancedScanResult {
     // Calculate enhanced scores
     const businessScore = this.calculateBusinessScore(businessProfile);
@@ -368,7 +383,8 @@ export class AdvancedScannerService {
         recommendations: mobileExperience?.recommendations || []
       },
       reviewsAnalysis: reviewsAnalysis || this.generateEnhancedReviewsAnalysis(businessProfile),
-      socialMediaLinks: socialMediaLinks || {}
+      socialMediaLinks: socialMediaLinks || {},
+      profileAnalysis: profileAnalysis
     };
   }
 
@@ -1558,5 +1574,181 @@ export class AdvancedScannerService {
     const currentAuthority = Math.round((businessProfile.rating || 4.0) * 15);
     
     return Math.max(0, competitorAuthority - currentAuthority);
+  }
+
+  // Google Business Profile Analysis Methods
+  private calculateProfileCompleteness(profile: any): { score: number; missingElements: string[] } {
+    const elements = [
+      { key: 'name', weight: 10, present: !!profile.name },
+      { key: 'phone', weight: 15, present: !!profile.phone },
+      { key: 'website', weight: 20, present: !!profile.website },
+      { key: 'photos', weight: 25, present: profile.photos?.total > 0 },
+      { key: 'reviews', weight: 20, present: profile.totalReviews > 0 },
+      { key: 'rating', weight: 10, present: profile.rating > 0 }
+    ];
+
+    const totalWeight = elements.reduce((sum, el) => sum + el.weight, 0);
+    const completedWeight = elements.filter(el => el.present).reduce((sum, el) => sum + el.weight, 0);
+    
+    const score = Math.round((completedWeight / totalWeight) * 100);
+    const missingElements = elements.filter(el => !el.present).map(el => el.key);
+
+    return { score, missingElements };
+  }
+
+  private analyzeProfileOptimization(profile: any): { score: number; issues: string[] } {
+    const issues = [];
+    let score = 100;
+
+    // Check photo quality and quantity
+    if (profile.photos?.total < 5) {
+      issues.push('Need more photos (minimum 5 recommended)');
+      score -= 15;
+    }
+
+    // Check rating
+    if (profile.rating < 4.0) {
+      issues.push('Rating below 4.0 stars');
+      score -= 25;
+    }
+
+    // Check review volume
+    if (profile.totalReviews < 50) {
+      issues.push('Low number of reviews');
+      score -= 15;
+    }
+
+    // Check business verification
+    if (!profile.isVerified) {
+      issues.push('Business not verified');
+      score -= 20;
+    }
+
+    // Check website presence
+    if (!profile.website) {
+      issues.push('Missing website link');
+      score -= 10;
+    }
+
+    // Check phone number
+    if (!profile.phone) {
+      issues.push('Missing phone number');
+      score -= 10;
+    }
+
+    return { score: Math.max(0, score), issues };
+  }
+
+  private calculateCompetitiveScore(profile: any): number {
+    let score = 0;
+
+    // Rating contribution (40%)
+    score += (profile.rating / 5) * 40;
+
+    // Review volume contribution (30%)
+    const reviewScore = Math.min(profile.totalReviews / 100, 1) * 30;
+    score += reviewScore;
+
+    // Photo quality contribution (20%)
+    const photoScore = Math.min(profile.photos?.total / 20, 1) * 20;
+    score += photoScore;
+    
+    // Note: Response rate data not available from Google Places API
+    // Skip response rate contribution to competitive score
+    
+    return Math.round(score);
+  }
+
+  private generateProfileRecommendations(profile: any): string[] {
+    const recommendations = [];
+
+    if (profile.photos?.total < 10) {
+      recommendations.push('Add more high-quality photos of your food, interior, and exterior');
+    }
+    
+    // Note: Response rate data not available from Google Places API
+    // Consider adding review response tracking through other means
+    
+    if (profile.rating < 4.5) {
+      recommendations.push('Focus on improving customer experience to boost ratings');
+    }
+
+    if (profile.totalReviews < 100) {
+      recommendations.push('Encourage more customers to leave reviews');
+    }
+
+    if (!profile.isVerified) {
+      recommendations.push('Verify your business listing for increased credibility');
+    }
+
+    if (!profile.website) {
+      recommendations.push('Add your website URL to complete your profile');
+    }
+
+    if (!profile.phone) {
+      recommendations.push('Add your phone number for better customer contact');
+    }
+
+    return recommendations;
+  }
+
+  private identifyProfileStrengths(profile: any): string[] {
+    const strengths = [];
+
+    if (profile.rating >= 4.5) {
+      strengths.push('Excellent customer rating');
+    }
+
+    if (profile.totalReviews >= 100) {
+      strengths.push('Strong review volume');
+    }
+
+    if (profile.photos?.total >= 15) {
+      strengths.push('Good photo collection');
+    }
+    
+    // Note: Response rate data not available from Google Places API
+    
+    if (profile.isVerified) {
+      strengths.push('Verified business profile');
+    }
+
+    if (profile.website) {
+      strengths.push('Website linked to profile');
+    }
+
+    return strengths;
+  }
+
+  private identifyProfileWeaknesses(profile: any): string[] {
+    const weaknesses = [];
+
+    if (profile.rating < 4.0) {
+      weaknesses.push('Rating needs improvement');
+    }
+
+    if (profile.totalReviews < 50) {
+      weaknesses.push('Low review volume');
+    }
+
+    if (profile.photos?.total < 5) {
+      weaknesses.push('Limited photo content');
+    }
+    
+    // Note: Response rate data not available from Google Places API
+    
+    if (!profile.website) {
+      weaknesses.push('Missing website link');
+    }
+
+    if (!profile.phone) {
+      weaknesses.push('Missing phone number');
+    }
+
+    if (!profile.isVerified) {
+      weaknesses.push('Unverified business listing');
+    }
+
+    return weaknesses;
   }
 }

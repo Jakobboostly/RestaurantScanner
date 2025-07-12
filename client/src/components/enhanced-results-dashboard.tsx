@@ -275,7 +275,7 @@ function EnhancedResultsDashboard({ scanResult, restaurantName }: EnhancedResult
 
         {/* Main Dashboard Tabs */}
         <Tabs value={selectedTab} onValueChange={setSelectedTab} className="w-full">
-          <TabsList className="grid w-full grid-cols-5">
+          <TabsList className="grid w-full grid-cols-6">
             <TabsTrigger value="keywords" className="flex items-center gap-2">
               <Search className="w-4 h-4" />
               Keywords
@@ -291,6 +291,10 @@ function EnhancedResultsDashboard({ scanResult, restaurantName }: EnhancedResult
             <TabsTrigger value="local" className="flex items-center gap-2">
               <MapPin className="w-4 h-4" />
               Local SEO
+            </TabsTrigger>
+            <TabsTrigger value="profile" className="flex items-center gap-2">
+              <Shield className="w-4 h-4" />
+              Profile
             </TabsTrigger>
             <TabsTrigger value="roi" className="flex items-center gap-2">
               <DollarSign className="w-4 h-4" />
@@ -721,7 +725,194 @@ function EnhancedResultsDashboard({ scanResult, restaurantName }: EnhancedResult
             )}
           </TabsContent>
 
-          {/* 5. ROI Impact Calculator */}
+          {/* 5. Google Business Profile Analysis */}
+          <TabsContent value="profile" className="space-y-6">
+            {scanResult.profileAnalysis ? (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="grid grid-cols-1 lg:grid-cols-2 gap-6"
+              >
+                {/* Profile Completeness Card */}
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5" />
+                      Profile Completeness
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-4">
+                      <div className="flex items-center justify-between">
+                        <span className="text-lg font-semibold">Completeness Score</span>
+                        <Badge variant={scanResult.profileAnalysis.completeness.score > 80 ? 'default' : 'secondary'}>
+                          {scanResult.profileAnalysis.completeness.score}%
+                        </Badge>
+                      </div>
+                      <Progress value={scanResult.profileAnalysis.completeness.score} className="h-3" />
+                      
+                      {scanResult.profileAnalysis.completeness.missingElements.length > 0 && (
+                        <div className="space-y-2">
+                          <h4 className="font-medium text-sm">Missing Elements:</h4>
+                          <div className="flex flex-wrap gap-2">
+                            {scanResult.profileAnalysis.completeness.missingElements.map((element: string) => (
+                              <Badge key={element} variant="outline" className="text-xs">
+                                {element}
+                              </Badge>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Profile Optimization Card */}
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2">
+                      <Settings className="w-5 h-5" />
+                      Optimization Score
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-4">
+                      <div className="flex items-center justify-between">
+                        <span className="text-lg font-semibold">Optimization Score</span>
+                        <Badge variant={scanResult.profileAnalysis.optimization.score > 80 ? 'default' : 'secondary'}>
+                          {scanResult.profileAnalysis.optimization.score}%
+                        </Badge>
+                      </div>
+                      <Progress value={scanResult.profileAnalysis.optimization.score} className="h-3" />
+                      
+                      {scanResult.profileAnalysis.optimization.issues.length > 0 && (
+                        <div className="space-y-2">
+                          <h4 className="font-medium text-sm">Issues:</h4>
+                          <div className="space-y-1">
+                            {scanResult.profileAnalysis.optimization.issues.map((issue: string, index: number) => (
+                              <div key={index} className="flex items-center gap-2 text-sm">
+                                <AlertCircle className="w-4 h-4 text-orange-500" />
+                                {issue}
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Competitive Score Card */}
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2">
+                      <Award className="w-5 h-5" />
+                      Competitive Score
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-4">
+                      <div className="flex items-center justify-between">
+                        <span className="text-lg font-semibold">Market Position</span>
+                        <Badge variant={scanResult.profileAnalysis.competitiveness > 80 ? 'default' : 'secondary'}>
+                          {scanResult.profileAnalysis.competitiveness}%
+                        </Badge>
+                      </div>
+                      <Progress value={scanResult.profileAnalysis.competitiveness} className="h-3" />
+                      
+                      <div className="text-sm text-gray-600">
+                        Based on rating, reviews, photos, and verification status
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Recommendations Card */}
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2">
+                      <Sparkles className="w-5 h-5" />
+                      Recommendations
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-3">
+                      {scanResult.profileAnalysis.recommendations.map((rec: string, index: number) => (
+                        <div key={index} className="flex items-start gap-2 text-sm">
+                          <ChevronRight className="w-4 h-4 text-blue-500 mt-0.5" />
+                          <span>{rec}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ) : (
+              <div className="text-center py-12">
+                <Shield className="w-16 h-16 mx-auto mb-4 text-gray-400" />
+                <h3 className="text-lg font-semibold mb-2">Profile Analysis Unavailable</h3>
+                <p className="text-gray-600">Google Business Profile analysis requires valid Google Places API configuration</p>
+              </div>
+            )}
+
+            {/* Strengths and Weaknesses */}
+            {scanResult.profileAnalysis && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
+                className="grid grid-cols-1 lg:grid-cols-2 gap-6"
+              >
+                {/* Strengths */}
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2 text-green-600">
+                      <CheckCircle className="w-5 h-5" />
+                      Profile Strengths
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-2">
+                      {scanResult.profileAnalysis.strengths.map((strength: string, index: number) => (
+                        <div key={index} className="flex items-center gap-2 text-sm">
+                          <CheckCircle className="w-4 h-4 text-green-500" />
+                          {strength}
+                        </div>
+                      ))}
+                      {scanResult.profileAnalysis.strengths.length === 0 && (
+                        <div className="text-gray-500 text-sm">No major strengths identified</div>
+                      )}
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Weaknesses */}
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2 text-red-600">
+                      <XCircle className="w-5 h-5" />
+                      Areas for Improvement
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-2">
+                      {scanResult.profileAnalysis.weaknesses.map((weakness: string, index: number) => (
+                        <div key={index} className="flex items-center gap-2 text-sm">
+                          <XCircle className="w-4 h-4 text-red-500" />
+                          {weakness}
+                        </div>
+                      ))}
+                      {scanResult.profileAnalysis.weaknesses.length === 0 && (
+                        <div className="text-gray-500 text-sm">No major weaknesses identified</div>
+                      )}
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            )}
+          </TabsContent>
+
+          {/* 6. ROI Impact Calculator */}
           <TabsContent value="roi" className="space-y-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}

@@ -76,6 +76,15 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 12, 2025. Combined Google Business Profile analysis with main restaurant scan:
+  - Integrated comprehensive Google Business Profile analysis directly into main scan endpoint
+  - Added profileAnalysis field to scan results containing completeness, optimization, competitiveness, recommendations, strengths, and weaknesses
+  - Added new "Profile" tab to enhanced results dashboard showing detailed Google Business Profile insights
+  - Profile analysis includes completeness scoring, optimization issues, competitive positioning, and actionable recommendations
+  - Enhanced dashboard now has 6 tabs: Keywords, Competitors, SERP, Local SEO, Profile, and ROI Impact
+  - Maintained data integrity by using only authentic Google Places API data and clearly marking unavailable fields
+  - Response rate and response time analysis properly marked as "not available" since Google Places API doesn't provide business owner response data
+  - Combined functionality eliminates need for separate Google Business Profile scanning workflow
 - July 11, 2025. Removed technical section entirely from dashboard and simplified keyword analysis:
   - Completely removed Technical Health Center section with Core Web Vitals, technical issues, and performance metrics
   - Removed search volume endpoint from DataForSEO integration per user request
