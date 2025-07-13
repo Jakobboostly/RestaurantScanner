@@ -61,7 +61,7 @@ export class EnhancedDataForSeoService {
       headers: {
         'Content-Type': 'application/json'
       },
-      timeout: 15000
+      timeout: 10000 // Reduced timeout for faster scanning
     });
   }
 

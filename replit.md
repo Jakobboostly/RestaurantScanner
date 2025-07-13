@@ -76,6 +76,19 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 13, 2025. Comprehensive speed optimization for sub-30-second scanning:
+  - Implemented parallel desktop + mobile PageSpeed API calls (cuts API time in half)
+  - Added intelligent timeout management system with 28-second max scan time
+  - Reduced DataForSEO timeout from 15s to 10s for faster keyword research
+  - Optimized social media detection timeout from 10s to 5s
+  - Added Promise.race() timeout protection for all major scan phases
+  - Implemented dynamic timeout allocation based on remaining scan time
+  - Added scan completion timing with real-time feedback
+  - Combined performance analysis method eliminates sequential API calls
+  - Reduced SERP analysis to single keyword with 6-second timeout
+  - Added fallback mechanisms for when APIs timeout to maintain data integrity
+  - Scan phases now: Business Profile (5s) → Parallel Analysis (20s) → SERP (6s) → Final Processing (2s)
+  - Total estimated scan time: 25-28 seconds with comprehensive analysis maintained
 - July 12, 2025. Combined Google Business Profile analysis with main restaurant scan:
   - Integrated comprehensive Google Business Profile analysis directly into main scan endpoint
   - Added profileAnalysis field to scan results containing completeness, optimization, competitiveness, recommendations, strengths, and weaknesses

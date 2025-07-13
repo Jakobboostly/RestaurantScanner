@@ -30,7 +30,7 @@ export interface SocialMediaLinks {
 }
 
 export class SocialMediaDetector {
-  private timeout = 10000; // 10 seconds
+  private timeout = 5000; // 5 seconds for faster scanning
   private zembraApiKey: string;
 
   constructor(zembraApiKey?: string) {

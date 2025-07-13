@@ -64,13 +64,24 @@ export class AdvancedScannerService {
     longitude: number,
     onProgress: (progress: ScanProgress) => void
   ): Promise<EnhancedScanResult> {
+    const scanStartTime = Date.now();
+    const MAX_SCAN_TIME = 28000; // 28 seconds max to ensure under 30s
+    
     try {
-      // Phase 1: Initial Setup & Business Profile
+      // Phase 1: Initial Setup & Business Profile (Fast - 2-3 seconds)
       onProgress({ progress: 10, status: 'Gathering initial business data...' });
       let businessProfile = null;
       let profileAnalysis = null;
+      
+      const profilePromise = Promise.race([
+        this.googleBusinessService.getBusinessProfile(placeId),
+        new Promise((_, reject) => 
+          setTimeout(() => reject(new Error('Business profile timeout')), 5000)
+        )
+      ]);
+      
       try {
-        businessProfile = await this.googleBusinessService.getBusinessProfile(placeId);
+        businessProfile = await profilePromise;
         // Add comprehensive profile analysis
         if (businessProfile) {
           profileAnalysis = {
@@ -83,88 +94,127 @@ export class AdvancedScannerService {
           };
         }
       } catch (error) {
-        console.error('Business profile fetch failed - Google Places API configuration required:', error);
+        console.error('Business profile fetch failed - using fallback:', error);
         businessProfile = null;
         profileAnalysis = null;
       }
 
-      // Phase 2: Parallel Data Collection (Major Speed Improvement)
+      // Phase 2: Parallel Data Collection with Timeout Management (20 seconds max)
       onProgress({ progress: 30, status: 'Running parallel analysis...' });
+      
+      const timeRemaining = MAX_SCAN_TIME - (Date.now() - scanStartTime);
+      const parallelTimeout = Math.min(timeRemaining - 5000, 20000); // Reserve 5s for final processing
       
       const [
         competitors,
-        performanceMetrics,
-        mobileExperience,
+        performanceData,
         keywordData,
         reviewsAnalysis,
         socialMediaLinks
       ] = await Promise.allSettled([
-        // Competitor analysis
-        this.googleBusinessService.findCompetitors(restaurantName, latitude, longitude)
-          .catch(error => {
-            console.error('Competitor analysis failed:', error);
-            return [];
-          }),
+        // Competitor analysis with timeout
+        Promise.race([
+          this.googleBusinessService.findCompetitors(restaurantName, latitude, longitude),
+          new Promise((_, reject) => 
+            setTimeout(() => reject(new Error('Competitor analysis timeout')), 8000)
+          )
+        ]).catch(error => {
+          console.error('Competitor analysis failed:', error);
+          return [];
+        }),
         
-        // Performance analysis  
-        this.analyzeWebsitePerformance(domain),
-        
-        // Mobile analysis
-        this.analyzeMobilePerformance(domain),
+        // Combined performance analysis with timeout
+        Promise.race([
+          this.analyzeCombinedPerformance(domain),
+          new Promise((_, reject) => 
+            setTimeout(() => reject(new Error('Performance analysis timeout')), parallelTimeout)
+          )
+        ]).catch(error => {
+          console.error('Performance analysis failed:', error);
+          return { desktop: this.getFallbackPerformanceMetrics(), mobile: this.getFallbackMobileExperience() };
+        }),
         
         // Keyword research with fast fallback
-        this.getOptimizedKeywordData(restaurantName, businessProfile),
+        Promise.race([
+          this.getOptimizedKeywordData(restaurantName, businessProfile),
+          new Promise((_, reject) => 
+            setTimeout(() => reject(new Error('Keyword research timeout')), 8000)
+          )
+        ]).catch(error => {
+          console.error('Keyword research failed:', error);
+          return this.generateRestaurantKeywords(restaurantName, businessProfile);
+        }),
         
-        // Reviews analysis
-        this.generateEnhancedReviewsAnalysis(businessProfile, placeId)
-          .catch(error => {
-            console.error('Reviews analysis failed:', error);
-            return this.generateEnhancedReviewsAnalysis(businessProfile);
-          }),
+        // Reviews analysis with timeout
+        Promise.race([
+          this.generateEnhancedReviewsAnalysis(businessProfile, placeId),
+          new Promise((_, reject) => 
+            setTimeout(() => reject(new Error('Reviews analysis timeout')), 6000)
+          )
+        ]).catch(error => {
+          console.error('Reviews analysis failed:', error);
+          return this.generateEnhancedReviewsAnalysis(businessProfile);
+        }),
         
-        // Social media detection
-        this.socialMediaDetector.detectSocialMediaLinks(domain)
-          .catch(error => {
-            console.error('Social media detection failed:', error);
-            return {};
-          })
+        // Social media detection with timeout
+        Promise.race([
+          this.socialMediaDetector.detectSocialMediaLinks(domain),
+          new Promise((_, reject) => 
+            setTimeout(() => reject(new Error('Social media detection timeout')), 5000)
+          )
+        ]).catch(error => {
+          console.error('Social media detection failed:', error);
+          return {};
+        })
       ]);
 
       // Extract results from settled promises
       const competitorsResult = competitors.status === 'fulfilled' ? competitors.value : [];
-      const performanceResult = performanceMetrics.status === 'fulfilled' ? performanceMetrics.value : this.getFallbackPerformanceMetrics();
-      const mobileResult = mobileExperience.status === 'fulfilled' ? mobileExperience.value : this.getFallbackMobileExperience();
+      const performanceResult = performanceData.status === 'fulfilled' ? performanceData.value : { desktop: this.getFallbackPerformanceMetrics(), mobile: this.getFallbackMobileExperience() };
+      const mobileResult = performanceResult.mobile || this.getFallbackMobileExperience();
+      const desktopResult = performanceResult.desktop || this.getFallbackPerformanceMetrics();
       const keywordResult = keywordData.status === 'fulfilled' ? keywordData.value : this.generateRestaurantKeywords(restaurantName, businessProfile);
       const reviewsResult = reviewsAnalysis.status === 'fulfilled' ? reviewsAnalysis.value : null;
       const socialMediaResult = socialMediaLinks.status === 'fulfilled' ? socialMediaLinks.value : {};
 
-      // Phase 3: SERP Analysis (Parallel processing for speed)
+      // Phase 3: Fast SERP Analysis (Optimized for speed)
       onProgress({ progress: 70, status: 'Analyzing search rankings...' });
       let serpAnalysis = [];
-      try {
-        const primaryKeywords = this.generatePrimaryKeywords(restaurantName, businessProfile).slice(0, 2); // Reduced to 2 keywords for speed
-        
-        // Run SERP analyses in parallel
-        const serpPromises = primaryKeywords.map(keyword => 
-          this.dataForSeoService.getSerpAnalysis(keyword, domain, 'United States')
-            .catch(error => {
-              console.error(`SERP analysis failed for "${keyword}":`, error);
-              return {
-                keyword,
-                position: null,
-                url: null,
-                title: null,
-                topCompetitors: [],
-                features: [],
-                difficulty: 50
-              };
-            })
-        );
-        
-        serpAnalysis = await Promise.all(serpPromises);
-        console.log('SERP analyses completed:', serpAnalysis.length);
-      } catch (error) {
-        console.error('SERP analysis failed:', error);
+      
+      const serpTimeRemaining = MAX_SCAN_TIME - (Date.now() - scanStartTime);
+      if (serpTimeRemaining > 5000) { // Only run if we have enough time
+        try {
+          // Use only 1 primary keyword for maximum speed
+          const primaryKeyword = this.generatePrimaryKeywords(restaurantName, businessProfile)[0];
+          
+          // Single SERP analysis with dynamic timeout based on remaining time
+          const serpPromise = Promise.race([
+            this.dataForSeoService.getSerpAnalysis(primaryKeyword, domain, 'United States'),
+            new Promise((_, reject) => 
+              setTimeout(() => reject(new Error('SERP analysis timeout')), Math.min(serpTimeRemaining - 3000, 6000))
+            )
+          ]);
+          
+          const serpResult = await serpPromise.catch(error => {
+            console.error(`SERP analysis failed for "${primaryKeyword}":`, error);
+            return {
+              keyword: primaryKeyword,
+              position: null,
+              url: null,
+              title: null,
+              topCompetitors: [],
+              features: [],
+              difficulty: 50
+            };
+          });
+          
+          serpAnalysis = [serpResult];
+          console.log('Fast SERP analysis completed');
+        } catch (error) {
+          console.error('SERP analysis failed:', error);
+        }
+      } else {
+        console.log('Skipping SERP analysis - insufficient time remaining');
       }
 
       // Phase 4: Competitor Intelligence (Skip heavy analysis for speed)
@@ -180,7 +230,7 @@ export class AdvancedScannerService {
         businessProfile,
         competitorsResult,
         mobileResult,
-        performanceResult,
+        desktopResult,
         keywordResult,
         serpAnalysis,
         competitorInsights,
@@ -189,7 +239,10 @@ export class AdvancedScannerService {
         profileAnalysis
       );
 
-      onProgress({ progress: 100, status: 'Analysis complete!' });
+      const scanDuration = Date.now() - scanStartTime;
+      console.log(`Scan completed in ${scanDuration}ms (${Math.round(scanDuration/1000)}s)`);
+      
+      onProgress({ progress: 100, status: `Analysis complete! (${Math.round(scanDuration/1000)}s)` });
       return enhancedResult;
 
     } catch (error) {
@@ -1087,6 +1140,111 @@ export class AdvancedScannerService {
     }
   }
 
+  private async analyzeCombinedPerformance(domain: string): Promise<{ desktop: any; mobile: any; }> {
+    const apiKey = process.env.GOOGLE_API_KEY;
+    if (!apiKey) {
+      console.warn('No Google API key found, using fallback performance metrics');
+      return {
+        desktop: this.getFallbackPerformanceMetrics(),
+        mobile: this.getFallbackMobileExperience()
+      };
+    }
+
+    let url = domain;
+    if (!url.startsWith('http://') && !url.startsWith('https://')) {
+      url = `https://${url}`;
+    }
+
+    console.log(`Testing combined performance for: ${url}`);
+
+    try {
+      // Run desktop and mobile PageSpeed tests in parallel for maximum speed
+      const [desktopResponse, mobileResponse] = await Promise.allSettled([
+        axios.get('https://www.googleapis.com/pagespeedonline/v5/runPagespeed', {
+          params: {
+            url: url,
+            key: apiKey,
+            strategy: 'desktop',
+            category: 'performance'
+          },
+          timeout: 15000
+        }),
+        axios.get('https://www.googleapis.com/pagespeedonline/v5/runPagespeed', {
+          params: {
+            url: url,
+            key: apiKey,
+            strategy: 'mobile',
+            category: 'performance'
+          },
+          timeout: 15000
+        })
+      ]);
+
+      // Process desktop results
+      const desktopData = desktopResponse.status === 'fulfilled' ? 
+        this.processPageSpeedResponse(desktopResponse.value.data) : 
+        this.getFallbackPerformanceMetrics();
+
+      // Process mobile results
+      const mobileData = mobileResponse.status === 'fulfilled' ? 
+        this.processMobilePageSpeedResponse(mobileResponse.value.data) : 
+        this.getFallbackMobileExperience();
+
+      return {
+        desktop: desktopData,
+        mobile: mobileData
+      };
+    } catch (error) {
+      console.error('Combined performance analysis failed:', error);
+      return {
+        desktop: this.getFallbackPerformanceMetrics(),
+        mobile: this.getFallbackMobileExperience()
+      };
+    }
+  }
+
+  private processPageSpeedResponse(data: any): any {
+    const lighthouse = data?.lighthouseResult;
+    if (!lighthouse || !lighthouse.categories) {
+      return this.getFallbackPerformanceMetrics();
+    }
+
+    const categories = lighthouse.categories;
+    return {
+      performance: Math.round((categories.performance?.score || 0) * 100),
+      accessibility: Math.round((categories.accessibility?.score || 0) * 100),
+      seo: Math.round((categories.seo?.score || 0) * 100),
+      bestPractices: Math.round((categories['best-practices']?.score || 0) * 100),
+      coreWebVitals: {
+        fcp: lighthouse.audits?.['first-contentful-paint']?.numericValue || 0,
+        lcp: lighthouse.audits?.['largest-contentful-paint']?.numericValue || 0,
+        cls: lighthouse.audits?.['cumulative-layout-shift']?.numericValue || 0,
+        fid: lighthouse.audits?.['max-potential-fid']?.numericValue || 0
+      }
+    };
+  }
+
+  private processMobilePageSpeedResponse(data: any): any {
+    const lighthouse = data?.lighthouseResult;
+    if (!lighthouse || !lighthouse.categories) {
+      return this.getFallbackMobileExperience();
+    }
+
+    const categories = lighthouse.categories;
+    const performanceScore = Math.round((categories.performance?.score || 0) * 100);
+    
+    return {
+      score: performanceScore,
+      loadTime: lighthouse.audits?.['speed-index']?.numericValue || 0,
+      isResponsive: performanceScore > 50,
+      touchFriendly: performanceScore > 60,
+      textReadable: performanceScore > 70,
+      navigationEasy: performanceScore > 60,
+      issues: performanceScore < 70 ? ['Mobile performance needs improvement'] : [],
+      recommendations: performanceScore < 70 ? ['Optimize mobile loading speed', 'Improve mobile usability'] : []
+    };
+  }
+
   private async analyzeWebsitePerformance(domain: string): Promise<any> {
     try {
       const apiKey = process.env.GOOGLE_API_KEY;
@@ -1109,7 +1267,7 @@ export class AdvancedScannerService {
           strategy: 'desktop',
           category: 'performance'
         },
-        timeout: 30000
+        timeout: 15000 // Reduced timeout for faster scanning
       });
 
       const lighthouse = response.data?.lighthouseResult;
@@ -1171,7 +1329,7 @@ export class AdvancedScannerService {
           strategy: 'mobile',
           category: 'performance'
         },
-        timeout: 30000
+        timeout: 15000 // Reduced timeout for faster scanning
       });
 
       console.log('Mobile PageSpeed API Response Status:', response.status);
