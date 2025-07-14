@@ -63,7 +63,6 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, PieChart as Rechar
 import ScoreGauge from "./score-gauge";
 import GoogleReviewsDisplay from './google-reviews-display';
 import SocialMediaDisplay from './social-media-display';
-import { TrafficLightScorecard } from './traffic-light-scorecard';
 import { ScanResult } from "@shared/schema";
 
 interface EnhancedResultsDashboardProps {
@@ -72,7 +71,7 @@ interface EnhancedResultsDashboardProps {
 }
 
 function EnhancedResultsDashboard({ scanResult, restaurantName }: EnhancedResultsDashboardProps) {
-  const [selectedTab, setSelectedTab] = useState("health");
+  const [selectedTab, setSelectedTab] = useState("keywords");
   const [sortColumn, setSortColumn] = useState<string>('searchVolume');
   const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('desc');
 
@@ -276,11 +275,7 @@ function EnhancedResultsDashboard({ scanResult, restaurantName }: EnhancedResult
 
         {/* Main Dashboard Tabs */}
         <Tabs value={selectedTab} onValueChange={setSelectedTab} className="w-full">
-          <TabsList className="grid w-full grid-cols-7">
-            <TabsTrigger value="health" className="flex items-center gap-2">
-              <Heart className="w-4 h-4" />
-              Health
-            </TabsTrigger>
+          <TabsList className="grid w-full grid-cols-6">
             <TabsTrigger value="keywords" className="flex items-center gap-2">
               <Search className="w-4 h-4" />
               Keywords
@@ -307,10 +302,7 @@ function EnhancedResultsDashboard({ scanResult, restaurantName }: EnhancedResult
             </TabsTrigger>
           </TabsList>
 
-          {/* 0. Traffic Light Health Scorecard */}
-          <TabsContent value="health" className="space-y-6">
-            <TrafficLightScorecard scanResult={scanResult} />
-          </TabsContent>
+
 
           {/* 1. Keyword Opportunity Dashboard */}
           <TabsContent value="keywords" className="space-y-6">

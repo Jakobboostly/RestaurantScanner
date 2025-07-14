@@ -76,6 +76,21 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 14, 2025. Removed health section from dashboard:
+  - Removed Traffic Light Scorecard component and its health tab
+  - Dashboard now has 6 tabs: Keywords, Competitors, SERP, Local SEO, Profile, and ROI Impact
+  - Keywords tab is now the default tab when results load
+  - Streamlined interface focuses on actionable SEO and marketing intelligence
+- July 14, 2025. Implemented fixed 6-phase × 4-second scanning timing system:
+  - Phase 1: Finding restaurant website (4 seconds)
+  - Phase 2: Analyzing performance (4 seconds) 
+  - Phase 3: Checking search rankings (4 seconds)
+  - Phase 4: Evaluating mobile experience (4 seconds)
+  - Phase 5: Scanning competitor websites (4 seconds)
+  - Phase 6: Generating recommendations (4 seconds)
+  - Total scan time: 24 seconds with consistent, professional timing
+  - Each phase maintains full 4-second duration regardless of API completion time
+  - Provides smooth, predictable scanning experience with even-paced progress
 - July 13, 2025. Comprehensive speed optimization for sub-30-second scanning:
   - Implemented parallel desktop + mobile PageSpeed API calls (cuts API time in half)
   - Added intelligent timeout management system with 28-second max scan time
