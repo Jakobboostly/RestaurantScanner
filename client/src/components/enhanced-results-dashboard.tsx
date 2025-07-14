@@ -999,7 +999,7 @@ function EnhancedResultsDashboard({ scanResult, restaurantName }: EnhancedResult
                       <div className="flex items-center justify-between">
                         <span className="text-sm">Commercial keywords</span>
                         <Badge variant="secondary">
-                          {keywordData.filter(k => k.intent === 'transactional').length}
+                          {keywordData.filter(k => k.intent === 'commercial').length}
                         </Badge>
                       </div>
                     </div>
