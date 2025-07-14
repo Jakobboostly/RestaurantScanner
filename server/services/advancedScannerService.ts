@@ -65,18 +65,22 @@ export class AdvancedScannerService {
     onProgress: (progress: ScanProgress) => void
   ): Promise<EnhancedScanResult> {
     const scanStartTime = Date.now();
-    const MAX_SCAN_TIME = 28000; // 28 seconds max to ensure under 30s
+    const PHASE_DURATION = 4000; // 4 seconds per phase
+    const TOTAL_PHASES = 6;
+    const MAX_SCAN_TIME = PHASE_DURATION * TOTAL_PHASES; // 24 seconds total
     
     try {
-      // Phase 1: Initial Setup & Business Profile (Fast - 2-3 seconds)
-      onProgress({ progress: 10, status: 'Gathering initial business data...' });
+      // Phase 1: Finding restaurant website (4 seconds)
+      const phase1Start = Date.now();
+      onProgress({ progress: 8, status: 'Finding restaurant website...' });
+      
       let businessProfile = null;
       let profileAnalysis = null;
       
       const profilePromise = Promise.race([
         this.googleBusinessService.getBusinessProfile(placeId),
         new Promise((_, reject) => 
-          setTimeout(() => reject(new Error('Business profile timeout')), 5000)
+          setTimeout(() => reject(new Error('Business profile timeout')), 3000)
         )
       ]);
       
@@ -98,144 +102,179 @@ export class AdvancedScannerService {
         businessProfile = null;
         profileAnalysis = null;
       }
-
-      // Phase 2: Parallel Data Collection with Timeout Management (20 seconds max)
-      onProgress({ progress: 30, status: 'Running parallel analysis...' });
       
-      const timeRemaining = MAX_SCAN_TIME - (Date.now() - scanStartTime);
-      const parallelTimeout = Math.min(timeRemaining - 5000, 20000); // Reserve 5s for final processing
-      
-      const [
-        competitors,
-        performanceData,
-        keywordData,
-        reviewsAnalysis,
-        socialMediaLinks
-      ] = await Promise.allSettled([
-        // Competitor analysis with timeout
-        Promise.race([
-          this.googleBusinessService.findCompetitors(restaurantName, latitude, longitude),
-          new Promise((_, reject) => 
-            setTimeout(() => reject(new Error('Competitor analysis timeout')), 8000)
-          )
-        ]).catch(error => {
-          console.error('Competitor analysis failed:', error);
-          return [];
-        }),
-        
-        // Combined performance analysis with timeout
-        Promise.race([
-          this.analyzeCombinedPerformance(domain),
-          new Promise((_, reject) => 
-            setTimeout(() => reject(new Error('Performance analysis timeout')), parallelTimeout)
-          )
-        ]).catch(error => {
-          console.error('Performance analysis failed:', error);
-          return { desktop: this.getFallbackPerformanceMetrics(), mobile: this.getFallbackMobileExperience() };
-        }),
-        
-        // Keyword research with ultra-fast fallback
-        Promise.race([
-          this.getOptimizedKeywordData(restaurantName, businessProfile),
-          new Promise((_, reject) => 
-            setTimeout(() => reject(new Error('Keyword research timeout')), 3000)
-          )
-        ]).catch(error => {
-          console.error('Keyword research failed:', error);
-          return this.generateRestaurantKeywords(restaurantName, businessProfile);
-        }),
-        
-        // Reviews analysis with timeout
-        Promise.race([
-          this.generateEnhancedReviewsAnalysis(businessProfile, placeId),
-          new Promise((_, reject) => 
-            setTimeout(() => reject(new Error('Reviews analysis timeout')), 6000)
-          )
-        ]).catch(error => {
-          console.error('Reviews analysis failed:', error);
-          return this.generateEnhancedReviewsAnalysis(businessProfile);
-        }),
-        
-        // Social media detection with timeout
-        Promise.race([
-          this.socialMediaDetector.detectSocialMediaLinks(domain),
-          new Promise((_, reject) => 
-            setTimeout(() => reject(new Error('Social media detection timeout')), 5000)
-          )
-        ]).catch(error => {
-          console.error('Social media detection failed:', error);
-          return {};
-        })
-      ]);
-
-      // Extract results from settled promises
-      const competitorsResult = competitors.status === 'fulfilled' ? competitors.value : [];
-      const performanceResult = performanceData.status === 'fulfilled' ? performanceData.value : { desktop: this.getFallbackPerformanceMetrics(), mobile: this.getFallbackMobileExperience() };
-      const mobileResult = performanceResult.mobile || this.getFallbackMobileExperience();
-      const desktopResult = performanceResult.desktop || this.getFallbackPerformanceMetrics();
-      const keywordResult = keywordData.status === 'fulfilled' ? keywordData.value : this.generateRestaurantKeywords(restaurantName, businessProfile);
-      const reviewsResult = reviewsAnalysis.status === 'fulfilled' ? reviewsAnalysis.value : null;
-      const socialMediaResult = socialMediaLinks.status === 'fulfilled' ? socialMediaLinks.value : {};
-
-      // Phase 3: Fast SERP Analysis (Optimized for speed)
-      onProgress({ progress: 70, status: 'Analyzing search rankings...' });
-      let serpAnalysis = [];
-      
-      const serpTimeRemaining = MAX_SCAN_TIME - (Date.now() - scanStartTime);
-      if (serpTimeRemaining > 5000) { // Only run if we have enough time
-        try {
-          // Use only 1 primary keyword for maximum speed
-          const primaryKeyword = this.generatePrimaryKeywords(restaurantName, businessProfile)[0];
-          
-          // Single SERP analysis with dynamic timeout based on remaining time
-          const serpPromise = Promise.race([
-            this.dataForSeoService.getSerpAnalysis(primaryKeyword, domain, 'United States'),
-            new Promise((_, reject) => 
-              setTimeout(() => reject(new Error('SERP analysis timeout')), Math.min(serpTimeRemaining - 3000, 6000))
-            )
-          ]);
-          
-          const serpResult = await serpPromise.catch(error => {
-            console.error(`SERP analysis failed for "${primaryKeyword}":`, error);
-            return {
-              keyword: primaryKeyword,
-              position: null,
-              url: null,
-              title: null,
-              topCompetitors: [],
-              features: [],
-              difficulty: 50
-            };
-          });
-          
-          serpAnalysis = [serpResult];
-          console.log('Fast SERP analysis completed');
-        } catch (error) {
-          console.error('SERP analysis failed:', error);
-        }
-      } else {
-        console.log('Skipping SERP analysis - insufficient time remaining');
+      // Wait for phase 1 to complete (4 seconds total)
+      const phase1Elapsed = Date.now() - phase1Start;
+      if (phase1Elapsed < PHASE_DURATION) {
+        await new Promise(resolve => setTimeout(resolve, PHASE_DURATION - phase1Elapsed));
       }
 
-      // Phase 4: Competitor Intelligence (Skip heavy analysis for speed)
-      onProgress({ progress: 85, status: 'Processing competitive intelligence...' });
-      let competitorInsights = [];
-      // Skip heavy DataForSEO competitor analysis for speed - use lightweight processing instead
+      // Phase 2: Analyzing performance (4 seconds)
+      const phase2Start = Date.now();
+      onProgress({ progress: 25, status: 'Analyzing performance...' });
       
-      // Phase 5: Generate Enhanced Report
-      onProgress({ progress: 95, status: 'Finalizing analysis...' });
+      // Start performance analysis immediately
+      const performancePromise = Promise.race([
+        this.analyzeCombinedPerformance(domain),
+        new Promise((_, reject) => 
+          setTimeout(() => reject(new Error('Performance analysis timeout')), 3500)
+        )
+      ]).catch(error => {
+        console.error('Performance analysis failed:', error);
+        return { desktop: this.getFallbackPerformanceMetrics(), mobile: this.getFallbackMobileExperience() };
+      });
+      
+      const performanceData = await performancePromise;
+      
+      // Wait for phase 2 to complete (4 seconds total)
+      const phase2Elapsed = Date.now() - phase2Start;
+      if (phase2Elapsed < PHASE_DURATION) {
+        await new Promise(resolve => setTimeout(resolve, PHASE_DURATION - phase2Elapsed));
+      }
+
+      // Phase 3: Checking search rankings (4 seconds)
+      const phase3Start = Date.now();
+      onProgress({ progress: 42, status: 'Checking search rankings...' });
+      
+      // Start keyword research immediately
+      const keywordPromise = Promise.race([
+        this.getOptimizedKeywordData(restaurantName, businessProfile),
+        new Promise((_, reject) => 
+          setTimeout(() => reject(new Error('Keyword research timeout')), 3500)
+        )
+      ]).catch(error => {
+        console.error('Keyword research failed:', error);
+        return this.generateRestaurantKeywords(restaurantName, businessProfile);
+      });
+      
+      const keywordData = await keywordPromise;
+      
+      // Wait for phase 3 to complete (4 seconds total)
+      const phase3Elapsed = Date.now() - phase3Start;
+      if (phase3Elapsed < PHASE_DURATION) {
+        await new Promise(resolve => setTimeout(resolve, PHASE_DURATION - phase3Elapsed));
+      }
+
+      // Phase 4: Evaluating mobile experience (4 seconds)
+      const phase4Start = Date.now();
+      onProgress({ progress: 58, status: 'Evaluating mobile experience...' });
+      
+      // Start reviews analysis immediately
+      const reviewsPromise = Promise.race([
+        this.generateEnhancedReviewsAnalysis(businessProfile, placeId),
+        new Promise((_, reject) => 
+          setTimeout(() => reject(new Error('Reviews analysis timeout')), 3500)
+        )
+      ]).catch(error => {
+        console.error('Reviews analysis failed:', error);
+        return this.generateEnhancedReviewsAnalysis(businessProfile);
+      });
+      
+      const reviewsAnalysis = await reviewsPromise;
+      
+      // Wait for phase 4 to complete (4 seconds total)
+      const phase4Elapsed = Date.now() - phase4Start;
+      if (phase4Elapsed < PHASE_DURATION) {
+        await new Promise(resolve => setTimeout(resolve, PHASE_DURATION - phase4Elapsed));
+      }
+
+      // Phase 5: Scanning competitor websites (4 seconds)
+      const phase5Start = Date.now();
+      onProgress({ progress: 75, status: 'Scanning competitor websites...' });
+      
+      // Start competitor analysis and social media detection
+      const competitorPromise = Promise.race([
+        this.googleBusinessService.findCompetitors(restaurantName, latitude, longitude),
+        new Promise((_, reject) => 
+          setTimeout(() => reject(new Error('Competitor analysis timeout')), 3500)
+        )
+      ]).catch(error => {
+        console.error('Competitor analysis failed:', error);
+        return [];
+      });
+      
+      const socialMediaPromise = Promise.race([
+        this.socialMediaDetector.detectSocialMediaLinks(domain),
+        new Promise((_, reject) => 
+          setTimeout(() => reject(new Error('Social media detection timeout')), 3500)
+        )
+      ]).catch(error => {
+        console.error('Social media detection failed:', error);
+        return {};
+      });
+      
+      const [competitors, socialMediaLinks] = await Promise.all([
+        competitorPromise,
+        socialMediaPromise
+      ]);
+      
+      // Wait for phase 5 to complete (4 seconds total)
+      const phase5Elapsed = Date.now() - phase5Start;
+      if (phase5Elapsed < PHASE_DURATION) {
+        await new Promise(resolve => setTimeout(resolve, PHASE_DURATION - phase5Elapsed));
+      }
+
+      // Phase 6: Generating recommendations (4 seconds)
+      const phase6Start = Date.now();
+      onProgress({ progress: 92, status: 'Generating recommendations...' });
+
+      // Extract processed results
+      const mobileResult = performanceData.mobile || this.getFallbackMobileExperience();
+      const desktopResult = performanceData.desktop || this.getFallbackPerformanceMetrics();
+
+      // Quick SERP Analysis (within remaining time)
+      let serpAnalysis = [];
+      try {
+        // Use only 1 primary keyword for maximum speed
+        const primaryKeyword = this.generatePrimaryKeywords(restaurantName, businessProfile)[0];
+        
+        // Single SERP analysis with timeout
+        const serpPromise = Promise.race([
+          this.dataForSeoService.getSerpAnalysis(primaryKeyword, domain, 'United States'),
+          new Promise((_, reject) => 
+            setTimeout(() => reject(new Error('SERP analysis timeout')), 2000)
+          )
+        ]);
+        
+        const serpResult = await serpPromise.catch(error => {
+          console.error(`SERP analysis failed for "${primaryKeyword}":`, error);
+          return {
+            keyword: primaryKeyword,
+            position: null,
+            url: null,
+            title: null,
+            topCompetitors: [],
+            features: [],
+            difficulty: 50
+          };
+        });
+        
+        serpAnalysis = [serpResult];
+        console.log('Fast SERP analysis completed');
+      } catch (error) {
+        console.error('SERP analysis failed:', error);
+      }
+      
+      // Wait for phase 6 to complete (4 seconds total)
+      const phase6Elapsed = Date.now() - phase6Start;
+      if (phase6Elapsed < PHASE_DURATION) {
+        await new Promise(resolve => setTimeout(resolve, PHASE_DURATION - phase6Elapsed));
+      }
+
+      // Final processing
+      onProgress({ progress: 100, status: 'Finalizing analysis...' });
       const enhancedResult = await this.generateEnhancedReport(
         domain,
         restaurantName,
         businessProfile,
-        competitorsResult,
+        competitors,
         mobileResult,
         desktopResult,
-        keywordResult,
+        keywordData,
         serpAnalysis,
-        competitorInsights,
-        reviewsResult,
-        socialMediaResult,
+        [],
+        reviewsAnalysis,
+        socialMediaLinks,
         profileAnalysis
       );
 

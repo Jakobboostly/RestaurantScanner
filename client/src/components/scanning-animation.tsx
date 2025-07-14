@@ -22,12 +22,12 @@ export default function ScanningAnimation({ progress, status, restaurantName, cu
   const [scanBeams, setScanBeams] = useState<Array<{ id: number; delay: number }>>([]);
 
   const steps = [
-    { icon: Search, label: "Finding restaurant website", threshold: 10, color: "from-blue-500 to-cyan-500" },
-    { icon: Zap, label: "Analyzing performance", threshold: 30, color: "from-yellow-500 to-orange-500" },
+    { icon: Search, label: "Finding restaurant website", threshold: 16.67, color: "from-blue-500 to-cyan-500" },
+    { icon: Zap, label: "Analyzing performance", threshold: 33.33, color: "from-yellow-500 to-orange-500" },
     { icon: TrendingUp, label: "Checking search rankings", threshold: 50, color: "from-green-500 to-emerald-500" },
-    { icon: Smartphone, label: "Evaluating mobile experience", threshold: 70, color: "from-purple-500 to-violet-500" },
-    { icon: Users, label: "Scanning competitor websites", threshold: 90, color: "from-pink-500 to-rose-500" },
-    { icon: Globe, label: "Generating recommendations", threshold: 95, color: "from-indigo-500 to-blue-500" },
+    { icon: Smartphone, label: "Evaluating mobile experience", threshold: 66.67, color: "from-purple-500 to-violet-500" },
+    { icon: Users, label: "Scanning competitor websites", threshold: 83.33, color: "from-pink-500 to-rose-500" },
+    { icon: Globe, label: "Generating recommendations", threshold: 100, color: "from-indigo-500 to-blue-500" },
   ];
 
   // Generate floating particles
