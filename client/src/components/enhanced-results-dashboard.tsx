@@ -64,6 +64,7 @@ import ScoreGauge from "./score-gauge";
 import GoogleReviewsDisplay from './google-reviews-display';
 import SocialMediaDisplay from './social-media-display';
 import { ScanResult } from "@shared/schema";
+import { PremiumScoreDashboard } from "./premium-score-dashboard";
 
 interface EnhancedResultsDashboardProps {
   scanResult: ScanResult;
@@ -71,9 +72,7 @@ interface EnhancedResultsDashboardProps {
 }
 
 function EnhancedResultsDashboard({ scanResult, restaurantName }: EnhancedResultsDashboardProps) {
-  const [selectedTab, setSelectedTab] = useState("keywords");
-  const [sortColumn, setSortColumn] = useState<string>('searchVolume');
-  const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('desc');
+  return <PremiumScoreDashboard scanResult={scanResult} restaurantName={restaurantName} />;
 
   // Color schemes
   const COLORS = {
