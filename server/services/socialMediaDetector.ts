@@ -68,6 +68,7 @@ export class SocialMediaDetector {
         const href = $(element).attr('href');
         if (href && this.isValidFacebookUrl(href)) {
           socialLinks.facebook = this.cleanUrl(href);
+          console.log('Facebook link found via direct detection:', socialLinks.facebook);
           return false; // Break after first match
         }
       });
