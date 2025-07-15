@@ -72,18 +72,18 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
             setActualRestaurantName(data.actualRestaurant);
           }
           
-          // Initialize position for first fact
+          // Initialize position for first fact - keep above bottom squares
           const positions = [
-            { side: 'left', top: '20%' },
-            { side: 'right', top: '25%' },
-            { side: 'left', top: '40%' },
-            { side: 'right', top: '45%' },
-            { side: 'left', top: '65%' },
-            { side: 'right', top: '70%' },
-            { side: 'left', top: '85%' },
-            { side: 'right', top: '30%' },
-            { side: 'left', top: '55%' },
-            { side: 'right', top: '80%' }
+            { side: 'left', top: '15%' },
+            { side: 'right', top: '20%' },
+            { side: 'left', top: '30%' },
+            { side: 'right', top: '35%' },
+            { side: 'left', top: '45%' },
+            { side: 'right', top: '50%' },
+            { side: 'left', top: '60%' },
+            { side: 'right', top: '65%' },
+            { side: 'left', top: '25%' },
+            { side: 'right', top: '40%' }
           ];
           setFactPosition(positions[Math.floor(Math.random() * positions.length)]);
         }
@@ -107,16 +107,16 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
       // Set initial position if not already set
       if (!factPosition || factPosition.side === 'right' && factPosition.top === '50%') {
         const positions = [
-          { side: 'left', top: '20%' },
-          { side: 'right', top: '25%' },
-          { side: 'left', top: '40%' },
-          { side: 'right', top: '45%' },
-          { side: 'left', top: '65%' },
-          { side: 'right', top: '70%' },
-          { side: 'left', top: '85%' },
-          { side: 'right', top: '30%' },
-          { side: 'left', top: '55%' },
-          { side: 'right', top: '80%' }
+          { side: 'left', top: '15%' },
+          { side: 'right', top: '20%' },
+          { side: 'left', top: '30%' },
+          { side: 'right', top: '35%' },
+          { side: 'left', top: '45%' },
+          { side: 'right', top: '50%' },
+          { side: 'left', top: '60%' },
+          { side: 'right', top: '65%' },
+          { side: 'left', top: '25%' },
+          { side: 'right', top: '40%' }
         ];
         setFactPosition(positions[Math.floor(Math.random() * positions.length)]);
       }
@@ -136,18 +136,18 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
           const newIndex = (prevIndex + 1) % funFacts.length;
           console.log(`[${timestamp}] Cycling to fun fact ${newIndex} (${prevIndex} → ${newIndex}):`, funFacts[newIndex]);
           
-          // Generate random position for next fact
+          // Generate random position for next fact - keep above bottom squares
           const positions = [
-            { side: 'left', top: '20%' },
-            { side: 'right', top: '25%' },
-            { side: 'left', top: '40%' },
-            { side: 'right', top: '45%' },
-            { side: 'left', top: '65%' },
-            { side: 'right', top: '70%' },
-            { side: 'left', top: '85%' },
-            { side: 'right', top: '30%' },
-            { side: 'left', top: '55%' },
-            { side: 'right', top: '80%' }
+            { side: 'left', top: '15%' },
+            { side: 'right', top: '20%' },
+            { side: 'left', top: '30%' },
+            { side: 'right', top: '35%' },
+            { side: 'left', top: '45%' },
+            { side: 'right', top: '50%' },
+            { side: 'left', top: '60%' },
+            { side: 'right', top: '65%' },
+            { side: 'left', top: '25%' },
+            { side: 'right', top: '40%' }
           ];
           
           setFactPosition(positions[Math.floor(Math.random() * positions.length)]);
