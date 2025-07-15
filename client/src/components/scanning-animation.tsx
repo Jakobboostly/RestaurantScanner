@@ -258,7 +258,7 @@ export default function ScanningAnimation({ progress, status, restaurantName, cu
                   </div>
                   
                   <div className="relative h-3">
-                    {/* Progress fill */}
+                    {/* Clean purple progress bar */}
                     <motion.div
                       className="h-3 bg-gradient-to-r from-[#5F5FFF] to-[#9090FD] rounded-full relative overflow-hidden"
                       initial={{ width: 0 }}
@@ -277,37 +277,7 @@ export default function ScanningAnimation({ progress, status, restaurantName, cu
                           ease: "linear",
                         }}
                       />
-                      
-                      {/* Pulsing core */}
-                      <motion.div
-                        className="absolute inset-0 bg-gradient-to-r from-cyan-400/30 to-purple-400/30"
-                        animate={{
-                          opacity: [0.3, 0.8, 0.3],
-                        }}
-                        transition={{
-                          duration: 1.5,
-                          repeat: Infinity,
-                          ease: "easeInOut",
-                        }}
-                      />
                     </motion.div>
-                    
-                    {/* Progress indicator dot */}
-                    <motion.div
-                      className="absolute top-0 w-3 h-3 bg-[#5F5FFF] rounded-full shadow-md"
-                      style={{ 
-                        left: `calc(${progress}% - 6px)`,
-                        top: '0px',
-                      }}
-                      animate={{
-                        scale: [1, 1.4, 1],
-                        rotate: [0, 360],
-                      }}
-                      transition={{ 
-                        scale: { duration: 1.5, repeat: Infinity, ease: "easeInOut" },
-                        rotate: { duration: 3, repeat: Infinity, ease: "linear" }
-                      }}
-                    />
                   </div>
                 </div>
 
