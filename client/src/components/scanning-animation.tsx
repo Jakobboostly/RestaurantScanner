@@ -767,117 +767,131 @@ export default function ScanningAnimation({ progress, status, restaurantName, cu
                   ease: "easeInOut"
                 }}
               >
-                <Card className="w-72 bg-gradient-to-br from-[#5F5FFF] via-[#7B7BFF] to-[#9090FD] text-white border-0 shadow-2xl relative overflow-hidden">
-                  {/* Animated background sparkles */}
-                  <div className="absolute inset-0 opacity-20">
-                    {[...Array(8)].map((_, i) => (
-                      <motion.div
-                        key={i}
-                        className="absolute w-1 h-1 bg-white rounded-full"
-                        style={{
-                          left: `${Math.random() * 100}%`,
-                          top: `${Math.random() * 100}%`,
-                        }}
-                        animate={{
-                          scale: [0, 1, 0],
-                          opacity: [0, 1, 0],
-                        }}
-                        transition={{
-                          duration: 2,
-                          repeat: Infinity,
-                          delay: i * 0.3,
-                        }}
-                      />
-                    ))}
-                  </div>
+                {/* Speech Bubble */}
+                <div className="relative w-80">
+                  {/* Speech bubble tail */}
+                  <div 
+                    className={`absolute w-0 h-0 z-10 ${
+                      factPosition.side === 'left' 
+                        ? 'right-[-8px] border-l-[16px] border-l-[#5F5FFF] border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent' 
+                        : 'left-[-8px] border-r-[16px] border-r-[#5F5FFF] border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent'
+                    }`}
+                    style={{ top: '24px' }}
+                  />
                   
-                  <CardContent className="p-5 relative z-10">
-                    <div className="flex items-start space-x-3">
-                      <motion.div 
-                        className="flex-shrink-0"
-                        animate={{
-                          scale: [1, 1.05, 1],
-                        }}
-                        transition={{
-                          scale: { duration: 2, repeat: Infinity, ease: "easeInOut" }
-                        }}
-                      >
-                        <div className="w-10 h-10 rounded-full bg-white/25 flex items-center justify-center backdrop-blur-sm border border-white/30">
-                          {funFacts[currentFactIndex]?.type === 'city' ? (
-                            <MapPin className="w-5 h-5 text-white" />
-                          ) : (
-                            <Star className="w-5 h-5 text-white" />
-                          )}
-                        </div>
-                      </motion.div>
-                      <div className="flex-1 min-w-0">
-                        <motion.div 
-                          className="flex items-center space-x-2 mb-2"
-                          initial={{ opacity: 0, y: 10 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ delay: 0.3 }}
-                        >
-                          <div className="px-3 py-1 bg-white/25 rounded-full backdrop-blur-sm border border-white/30">
-                            <span className="text-xs font-bold text-white uppercase tracking-wide">
-                              Fun Fact About {funFacts[currentFactIndex]?.type === 'city' ? cityName : 'This Restaurant'}
-                            </span>
-                          </div>
-                        </motion.div>
-                        <motion.p 
-                          className="text-sm text-white/95 leading-relaxed font-medium"
-                          initial={{ opacity: 0, y: 10 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ delay: 0.5 }}
-                        >
-                          {funFacts[currentFactIndex]?.text}
-                        </motion.p>
-                      </div>
-                    </div>
-                    
-                    {/* Progress dots */}
-                    <motion.div 
-                      className="flex justify-center space-x-1 mt-4"
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ delay: 0.7 }}
-                    >
-                      {funFacts.map((_, index) => (
+                  {/* Speech bubble content */}
+                  <div className="relative bg-gradient-to-br from-[#5F5FFF] via-[#7B7BFF] to-[#9090FD] text-white rounded-2xl shadow-2xl overflow-hidden">
+                    {/* Animated background sparkles */}
+                    <div className="absolute inset-0 opacity-20">
+                      {[...Array(6)].map((_, i) => (
                         <motion.div
-                          key={index}
-                          className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
-                            index === currentFactIndex ? 'bg-white' : 'bg-white/40'
-                          }`}
+                          key={i}
+                          className="absolute w-1 h-1 bg-white rounded-full"
+                          style={{
+                            left: `${Math.random() * 100}%`,
+                            top: `${Math.random() * 100}%`,
+                          }}
                           animate={{
-                            scale: index === currentFactIndex ? [1, 1.3, 1] : 1,
+                            scale: [0, 1, 0],
+                            opacity: [0, 1, 0],
                           }}
                           transition={{
-                            duration: 0.6,
-                            repeat: index === currentFactIndex ? Infinity : 0,
-                            repeatType: "reverse",
+                            duration: 2,
+                            repeat: Infinity,
+                            delay: i * 0.4,
                           }}
                         />
                       ))}
-                    </motion.div>
-                  </CardContent>
-                  
-                  {/* Animated border glow */}
-                  <motion.div
-                    className="absolute inset-0 rounded-lg border-2 border-white/40"
-                    animate={{
-                      borderColor: ['rgba(255,255,255,0.4)', 'rgba(255,255,255,0.8)', 'rgba(255,255,255,0.4)'],
-                      boxShadow: [
-                        '0 0 10px rgba(255,255,255,0.3)',
-                        '0 0 20px rgba(255,255,255,0.6)',
-                        '0 0 10px rgba(255,255,255,0.3)'
-                      ]
-                    }}
-                    transition={{
-                      duration: 2,
-                      repeat: Infinity,
-                      ease: "easeInOut",
-                    }}
-                  />
-                </Card>
+                    </div>
+                    
+                    <div className="p-5 relative z-10">
+                      <div className="flex items-start space-x-3">
+                        <motion.div 
+                          className="flex-shrink-0"
+                          animate={{
+                            scale: [1, 1.05, 1],
+                          }}
+                          transition={{
+                            scale: { duration: 2, repeat: Infinity, ease: "easeInOut" }
+                          }}
+                        >
+                          <div className="w-10 h-10 rounded-full bg-white/25 flex items-center justify-center backdrop-blur-sm border border-white/30">
+                            {funFacts[currentFactIndex]?.type === 'city' ? (
+                              <MapPin className="w-5 h-5 text-white" />
+                            ) : (
+                              <Star className="w-5 h-5 text-white" />
+                            )}
+                          </div>
+                        </motion.div>
+                        <div className="flex-1 min-w-0">
+                          <motion.div 
+                            className="flex items-center space-x-2 mb-2"
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.3 }}
+                          >
+                            <div className="px-3 py-1 bg-white/25 rounded-full backdrop-blur-sm border border-white/30">
+                              <span className="text-xs font-bold text-white uppercase tracking-wide">
+                                Fun Fact About {funFacts[currentFactIndex]?.type === 'city' ? cityName : 'This Restaurant'}
+                              </span>
+                            </div>
+                          </motion.div>
+                          <motion.p 
+                            className="text-sm text-white/95 leading-relaxed font-medium"
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.5 }}
+                          >
+                            {funFacts[currentFactIndex]?.text}
+                          </motion.p>
+                        </div>
+                      </div>
+                      
+                      {/* Progress dots */}
+                      <motion.div 
+                        className="flex justify-center space-x-1 mt-4"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.7 }}
+                      >
+                        {funFacts.map((_, index) => (
+                          <motion.div
+                            key={index}
+                            className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
+                              index === currentFactIndex ? 'bg-white' : 'bg-white/40'
+                            }`}
+                            animate={{
+                              scale: index === currentFactIndex ? [1, 1.3, 1] : 1,
+                            }}
+                            transition={{
+                              duration: 0.6,
+                              repeat: index === currentFactIndex ? Infinity : 0,
+                              repeatType: "reverse",
+                            }}
+                          />
+                        ))}
+                      </motion.div>
+                    </div>
+                    
+                    {/* Animated border glow */}
+                    <motion.div
+                      className="absolute inset-0 rounded-2xl border-2 border-white/40"
+                      animate={{
+                        borderColor: ['rgba(255,255,255,0.4)', 'rgba(255,255,255,0.8)', 'rgba(255,255,255,0.4)'],
+                        boxShadow: [
+                          '0 0 10px rgba(255,255,255,0.3)',
+                          '0 0 20px rgba(255,255,255,0.6)',
+                          '0 0 10px rgba(255,255,255,0.3)'
+                        ]
+                      }}
+                      transition={{
+                        duration: 2,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                      }}
+                    />
+                  </div>
+                </div>
               </motion.div>
             </motion.div>
           )}
