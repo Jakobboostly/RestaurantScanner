@@ -27,7 +27,8 @@ import {
   Monitor,
   MessageCircle,
   Brain,
-  Lightbulb
+  Lightbulb,
+  AlertCircle
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -470,22 +471,79 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
             <CardContent className="space-y-4 pt-6">
               {/* Search Tab Content */}
               {activeTab === 'search' && (
-                <div className="space-y-4">
-                  <div className="flex items-center gap-2 mb-3">
-                    <Brain className="w-5 h-5 text-[#5F5FFF]" />
-                    <span className="text-sm font-semibold text-gray-700">Boostly's AI Recommendations</span>
+                <div className="space-y-6">
+                  {/* Where You're Going Wrong */}
+                  <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+                    <h3 className="font-bold text-red-800 mb-3 flex items-center gap-2">
+                      <AlertCircle className="w-5 h-5" />
+                      Where You're Going Wrong
+                    </h3>
+                    <div className="space-y-3">
+                      {/* High Priority Issues */}
+                      {scores.search < 50 && (
+                        <div className="bg-red-100 border border-red-300 rounded p-3">
+                          <span className="text-xs font-bold text-red-700 bg-red-200 px-2 py-1 rounded">HIGH PRIORITY</span>
+                          <ul className="mt-2 text-sm text-red-700 space-y-1">
+                            <li>• Not ranking for key restaurant keywords in your area</li>
+                            <li>• Missing from local search results when customers look for food</li>
+                            <li>• Competitors are capturing your potential customers</li>
+                          </ul>
+                        </div>
+                      )}
+                      
+                      {/* Medium Priority Issues */}
+                      {scores.search >= 50 && scores.search < 75 && (
+                        <div className="bg-yellow-100 border border-yellow-300 rounded p-3">
+                          <span className="text-xs font-bold text-yellow-700 bg-yellow-200 px-2 py-1 rounded">MEDIUM PRIORITY</span>
+                          <ul className="mt-2 text-sm text-yellow-700 space-y-1">
+                            <li>• Limited visibility for high-value search terms</li>
+                            <li>• Missing opportunities for delivery and takeout searches</li>
+                            <li>• Inconsistent local search presence</li>
+                          </ul>
+                        </div>
+                      )}
+                      
+                      {/* Low Priority Issues */}
+                      {scores.search >= 75 && (
+                        <div className="bg-blue-100 border border-blue-300 rounded p-3">
+                          <span className="text-xs font-bold text-blue-700 bg-blue-200 px-2 py-1 rounded">LOW PRIORITY</span>
+                          <ul className="mt-2 text-sm text-blue-700 space-y-1">
+                            <li>• Could optimize for seasonal menu keywords</li>
+                            <li>• Opportunity to target more specific cuisine terms</li>
+                            <li>• Fine-tune for voice search optimization</li>
+                          </ul>
+                        </div>
+                      )}
+                    </div>
                   </div>
-                  <p className="text-sm text-gray-700 leading-relaxed mb-4">
-                    {aiExplanations.search}
-                  </p>
-                  <ul className="text-sm text-gray-700 space-y-2">
-                    {generateBoostlyNextSteps('search', scores.search, scanResult).map((step, index) => (
-                      <li key={index} className="flex items-start gap-2">
-                        <span className="text-[#5F5FFF] font-medium">•</span>
-                        <span>{step}</span>
-                      </li>
-                    ))}
-                  </ul>
+
+                  {/* How Boostly Can Solve It */}
+                  <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                    <h3 className="font-bold text-purple-800 mb-3 flex items-center gap-2">
+                      <Zap className="w-5 h-5" />
+                      How Boostly Can Solve It For You
+                    </h3>
+                    <div className="space-y-3">
+                      <div className="bg-gradient-to-r from-[#5F5FFF] to-[#7375FD] text-white rounded p-3">
+                        <h4 className="font-semibold mb-2">🎯 Boostly SEO Service</h4>
+                        <ul className="text-sm space-y-1">
+                          <li>• Get your restaurant ranking #1 for "restaurant near me" searches</li>
+                          <li>• Target high-value keywords like "delivery", "takeout", and your cuisine type</li>
+                          <li>• Build local authority with restaurant-specific link building</li>
+                          <li>• Monthly keyword rankings reports to track your progress</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-gradient-to-r from-[#16A34A] to-[#4ADE80] text-white rounded p-3">
+                        <h4 className="font-semibold mb-2">📱 Boostly Text Marketing</h4>
+                        <ul className="text-sm space-y-1">
+                          <li>• Send targeted promotions to customers searching for food</li>
+                          <li>• Automated "order now" messages during peak dining hours</li>
+                          <li>• Drive repeat visits with personalized menu recommendations</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                   
                   <div className="pt-4 border-t border-gray-200 space-y-3">
                     <div className="flex justify-between items-center">
@@ -510,22 +568,79 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
 
               {/* Social Tab Content */}
               {activeTab === 'social' && (
-                <div className="space-y-4">
-                  <div className="flex items-center gap-2 mb-3">
-                    <Brain className="w-5 h-5 text-[#16A34A]" />
-                    <span className="text-sm font-semibold text-gray-700">Boostly's AI Recommendations</span>
+                <div className="space-y-6">
+                  {/* Where You're Going Wrong */}
+                  <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+                    <h3 className="font-bold text-red-800 mb-3 flex items-center gap-2">
+                      <AlertCircle className="w-5 h-5" />
+                      Where You're Going Wrong
+                    </h3>
+                    <div className="space-y-3">
+                      {/* High Priority Issues */}
+                      {scores.social < 50 && (
+                        <div className="bg-red-100 border border-red-300 rounded p-3">
+                          <span className="text-xs font-bold text-red-700 bg-red-200 px-2 py-1 rounded">HIGH PRIORITY</span>
+                          <ul className="mt-2 text-sm text-red-700 space-y-1">
+                            <li>• No active social media presence - customers can't find you</li>
+                            <li>• Missing out on free marketing through social posts</li>
+                            <li>• Competitors are building loyal followings while you're invisible</li>
+                          </ul>
+                        </div>
+                      )}
+                      
+                      {/* Medium Priority Issues */}
+                      {scores.social >= 50 && scores.social < 75 && (
+                        <div className="bg-yellow-100 border border-yellow-300 rounded p-3">
+                          <span className="text-xs font-bold text-yellow-700 bg-yellow-200 px-2 py-1 rounded">MEDIUM PRIORITY</span>
+                          <ul className="mt-2 text-sm text-yellow-700 space-y-1">
+                            <li>• Limited social media activity - posts are infrequent</li>
+                            <li>• Low engagement rates with followers</li>
+                            <li>• Missing key platforms where your customers are active</li>
+                          </ul>
+                        </div>
+                      )}
+                      
+                      {/* Low Priority Issues */}
+                      {scores.social >= 75 && (
+                        <div className="bg-blue-100 border border-blue-300 rounded p-3">
+                          <span className="text-xs font-bold text-blue-700 bg-blue-200 px-2 py-1 rounded">LOW PRIORITY</span>
+                          <ul className="mt-2 text-sm text-blue-700 space-y-1">
+                            <li>• Could optimize post timing for better engagement</li>
+                            <li>• Opportunity to showcase more behind-the-scenes content</li>
+                            <li>• Could leverage user-generated content more effectively</li>
+                          </ul>
+                        </div>
+                      )}
+                    </div>
                   </div>
-                  <p className="text-sm text-gray-700 leading-relaxed mb-4">
-                    {aiExplanations.social}
-                  </p>
-                  <ul className="text-sm text-gray-700 space-y-2">
-                    {generateBoostlyNextSteps('social', scores.social, scanResult).map((step, index) => (
-                      <li key={index} className="flex items-start gap-2">
-                        <span className="text-[#5F5FFF] font-medium">•</span>
-                        <span>{step}</span>
-                      </li>
-                    ))}
-                  </ul>
+
+                  {/* How Boostly Can Solve It */}
+                  <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                    <h3 className="font-bold text-purple-800 mb-3 flex items-center gap-2">
+                      <Zap className="w-5 h-5" />
+                      How Boostly Can Solve It For You
+                    </h3>
+                    <div className="space-y-3">
+                      <div className="bg-gradient-to-r from-[#16A34A] to-[#4ADE80] text-white rounded p-3">
+                        <h4 className="font-semibold mb-2">📲 Boostly Social Media Service</h4>
+                        <ul className="text-sm space-y-1">
+                          <li>• Professional content creation with mouth-watering food photography</li>
+                          <li>• Daily posts across Instagram, Facebook, and TikTok</li>
+                          <li>• Engage with customers and respond to comments professionally</li>
+                          <li>• Hashtag strategy to reach local food lovers</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-gradient-to-r from-[#5F5FFF] to-[#7375FD] text-white rounded p-3">
+                        <h4 className="font-semibold mb-2">📱 Boostly Text Marketing</h4>
+                        <ul className="text-sm space-y-1">
+                          <li>• Convert social media followers into loyal customers</li>
+                          <li>• Send exclusive deals to customers who follow you</li>
+                          <li>• Automated birthday and anniversary specials</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                   
                   <div className="pt-4 border-t border-gray-200 space-y-3">
                     <div className="flex justify-between items-center">
@@ -558,22 +673,79 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
 
               {/* Local Tab Content */}
               {activeTab === 'local' && (
-                <div className="space-y-4">
-                  <div className="flex items-center gap-2 mb-3">
-                    <Brain className="w-5 h-5 text-[#F59E0B]" />
-                    <span className="text-sm font-semibold text-gray-700">Boostly's AI Recommendations</span>
+                <div className="space-y-6">
+                  {/* Where You're Going Wrong */}
+                  <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+                    <h3 className="font-bold text-red-800 mb-3 flex items-center gap-2">
+                      <AlertCircle className="w-5 h-5" />
+                      Where You're Going Wrong
+                    </h3>
+                    <div className="space-y-3">
+                      {/* High Priority Issues */}
+                      {scores.local < 50 && (
+                        <div className="bg-red-100 border border-red-300 rounded p-3">
+                          <span className="text-xs font-bold text-red-700 bg-red-200 px-2 py-1 rounded">HIGH PRIORITY</span>
+                          <ul className="mt-2 text-sm text-red-700 space-y-1">
+                            <li>• Google Business Profile incomplete or not optimized</li>
+                            <li>• Missing from local "near me" searches</li>
+                            <li>• Competitors dominate local map results</li>
+                          </ul>
+                        </div>
+                      )}
+                      
+                      {/* Medium Priority Issues */}
+                      {scores.local >= 50 && scores.local < 75 && (
+                        <div className="bg-yellow-100 border border-yellow-300 rounded p-3">
+                          <span className="text-xs font-bold text-yellow-700 bg-yellow-200 px-2 py-1 rounded">MEDIUM PRIORITY</span>
+                          <ul className="mt-2 text-sm text-yellow-700 space-y-1">
+                            <li>• Inconsistent business information across platforms</li>
+                            <li>• Limited local reviews and ratings</li>
+                            <li>• Not responding to customer reviews regularly</li>
+                          </ul>
+                        </div>
+                      )}
+                      
+                      {/* Low Priority Issues */}
+                      {scores.local >= 75 && (
+                        <div className="bg-blue-100 border border-blue-300 rounded p-3">
+                          <span className="text-xs font-bold text-blue-700 bg-blue-200 px-2 py-1 rounded">LOW PRIORITY</span>
+                          <ul className="mt-2 text-sm text-blue-700 space-y-1">
+                            <li>• Could add more high-quality photos to Google Business</li>
+                            <li>• Opportunity to showcase more menu items</li>
+                            <li>• Could improve local directory listings</li>
+                          </ul>
+                        </div>
+                      )}
+                    </div>
                   </div>
-                  <p className="text-sm text-gray-700 leading-relaxed mb-4">
-                    {aiExplanations.local}
-                  </p>
-                  <ul className="text-sm text-gray-700 space-y-2">
-                    {generateBoostlyNextSteps('local', scores.local, scanResult).map((step, index) => (
-                      <li key={index} className="flex items-start gap-2">
-                        <span className="text-[#5F5FFF] font-medium">•</span>
-                        <span>{step}</span>
-                      </li>
-                    ))}
-                  </ul>
+
+                  {/* How Boostly Can Solve It */}
+                  <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                    <h3 className="font-bold text-purple-800 mb-3 flex items-center gap-2">
+                      <Zap className="w-5 h-5" />
+                      How Boostly Can Solve It For You
+                    </h3>
+                    <div className="space-y-3">
+                      <div className="bg-gradient-to-r from-[#F59E0B] to-[#FCD34D] text-white rounded p-3">
+                        <h4 className="font-semibold mb-2">📍 Boostly Local SEO Service</h4>
+                        <ul className="text-sm space-y-1">
+                          <li>• Optimize your Google Business Profile for maximum visibility</li>
+                          <li>• Get you ranking #1 in local map results</li>
+                          <li>• Manage and respond to reviews professionally</li>
+                          <li>• Consistent business listings across 50+ directories</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-gradient-to-r from-[#5F5FFF] to-[#7375FD] text-white rounded p-3">
+                        <h4 className="font-semibold mb-2">📱 Boostly Text Marketing</h4>
+                        <ul className="text-sm space-y-1">
+                          <li>• Send review requests to satisfied customers automatically</li>
+                          <li>• Promote local events and specials to nearby customers</li>
+                          <li>• Build a local customer loyalty program</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                   
                   <div className="pt-4 border-t border-gray-200 space-y-3">
                     <div className="flex justify-between items-center">
@@ -594,22 +766,79 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
 
               {/* Website Tab Content */}
               {activeTab === 'website' && (
-                <div className="space-y-4">
-                  <div className="flex items-center gap-2 mb-3">
-                    <Brain className="w-5 h-5 text-[#9090FD]" />
-                    <span className="text-sm font-semibold text-gray-700">Boostly's AI Recommendations</span>
+                <div className="space-y-6">
+                  {/* Where You're Going Wrong */}
+                  <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+                    <h3 className="font-bold text-red-800 mb-3 flex items-center gap-2">
+                      <AlertCircle className="w-5 h-5" />
+                      Where You're Going Wrong
+                    </h3>
+                    <div className="space-y-3">
+                      {/* High Priority Issues */}
+                      {scores.website < 50 && (
+                        <div className="bg-red-100 border border-red-300 rounded p-3">
+                          <span className="text-xs font-bold text-red-700 bg-red-200 px-2 py-1 rounded">HIGH PRIORITY</span>
+                          <ul className="mt-2 text-sm text-red-700 space-y-1">
+                            <li>• Website loads too slowly - customers are leaving</li>
+                            <li>• Mobile experience is broken - 60% of orders are mobile</li>
+                            <li>• Missing online ordering system</li>
+                          </ul>
+                        </div>
+                      )}
+                      
+                      {/* Medium Priority Issues */}
+                      {scores.website >= 50 && scores.website < 75 && (
+                        <div className="bg-yellow-100 border border-yellow-300 rounded p-3">
+                          <span className="text-xs font-bold text-yellow-700 bg-yellow-200 px-2 py-1 rounded">MEDIUM PRIORITY</span>
+                          <ul className="mt-2 text-sm text-yellow-700 space-y-1">
+                            <li>• Website performance could be faster</li>
+                            <li>• Mobile layout needs optimization</li>
+                            <li>• Missing key restaurant website features</li>
+                          </ul>
+                        </div>
+                      )}
+                      
+                      {/* Low Priority Issues */}
+                      {scores.website >= 75 && (
+                        <div className="bg-blue-100 border border-blue-300 rounded p-3">
+                          <span className="text-xs font-bold text-blue-700 bg-blue-200 px-2 py-1 rounded">LOW PRIORITY</span>
+                          <ul className="mt-2 text-sm text-blue-700 space-y-1">
+                            <li>• Could optimize images for faster loading</li>
+                            <li>• Opportunity to improve user experience</li>
+                            <li>• Could add more interactive menu features</li>
+                          </ul>
+                        </div>
+                      )}
+                    </div>
                   </div>
-                  <p className="text-sm text-gray-700 leading-relaxed mb-4">
-                    {aiExplanations.website}
-                  </p>
-                  <ul className="text-sm text-gray-700 space-y-2">
-                    {generateBoostlyNextSteps('website', scores.website, scanResult).map((step, index) => (
-                      <li key={index} className="flex items-start gap-2">
-                        <span className="text-[#5F5FFF] font-medium">•</span>
-                        <span>{step}</span>
-                      </li>
-                    ))}
-                  </ul>
+
+                  {/* How Boostly Can Solve It */}
+                  <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                    <h3 className="font-bold text-purple-800 mb-3 flex items-center gap-2">
+                      <Zap className="w-5 h-5" />
+                      How Boostly Can Solve It For You
+                    </h3>
+                    <div className="space-y-3">
+                      <div className="bg-gradient-to-r from-[#9090FD] to-[#7375FD] text-white rounded p-3">
+                        <h4 className="font-semibold mb-2">🚀 Boostly Website Optimization</h4>
+                        <ul className="text-sm space-y-1">
+                          <li>• Lightning-fast website that loads in under 2 seconds</li>
+                          <li>• Mobile-first design optimized for food ordering</li>
+                          <li>• Integrated online ordering and payment system</li>
+                          <li>• SEO-optimized for local restaurant searches</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-gradient-to-r from-[#5F5FFF] to-[#7375FD] text-white rounded p-3">
+                        <h4 className="font-semibold mb-2">📱 Boostly Text Marketing</h4>
+                        <ul className="text-sm space-y-1">
+                          <li>• Drive website traffic with targeted promotions</li>
+                          <li>• Abandoned cart recovery for online orders</li>
+                          <li>• Direct customers to specific menu items</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                   
                   <div className="pt-4 border-t border-gray-200 space-y-3">
                     <div className="flex justify-between items-center">
@@ -630,22 +859,79 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
 
               {/* Reviews Tab Content */}
               {activeTab === 'reviews' && (
-                <div className="space-y-4">
-                  <div className="flex items-center gap-2 mb-3">
-                    <Brain className="w-5 h-5 text-[#FCD34D]" />
-                    <span className="text-sm font-semibold text-gray-700">Boostly's AI Recommendations</span>
+                <div className="space-y-6">
+                  {/* Where You're Going Wrong */}
+                  <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+                    <h3 className="font-bold text-red-800 mb-3 flex items-center gap-2">
+                      <AlertCircle className="w-5 h-5" />
+                      Where You're Going Wrong
+                    </h3>
+                    <div className="space-y-3">
+                      {/* High Priority Issues */}
+                      {scores.reviews < 50 && (
+                        <div className="bg-red-100 border border-red-300 rounded p-3">
+                          <span className="text-xs font-bold text-red-700 bg-red-200 px-2 py-1 rounded">HIGH PRIORITY</span>
+                          <ul className="mt-2 text-sm text-red-700 space-y-1">
+                            <li>• Low rating is driving customers away</li>
+                            <li>• Not enough reviews to build trust</li>
+                            <li>• Negative reviews left unanswered</li>
+                          </ul>
+                        </div>
+                      )}
+                      
+                      {/* Medium Priority Issues */}
+                      {scores.reviews >= 50 && scores.reviews < 75 && (
+                        <div className="bg-yellow-100 border border-yellow-300 rounded p-3">
+                          <span className="text-xs font-bold text-yellow-700 bg-yellow-200 px-2 py-1 rounded">MEDIUM PRIORITY</span>
+                          <ul className="mt-2 text-sm text-yellow-700 space-y-1">
+                            <li>• Need more positive reviews to stand out</li>
+                            <li>• Inconsistent review response strategy</li>
+                            <li>• Missing opportunities to get more reviews</li>
+                          </ul>
+                        </div>
+                      )}
+                      
+                      {/* Low Priority Issues */}
+                      {scores.reviews >= 75 && (
+                        <div className="bg-blue-100 border border-blue-300 rounded p-3">
+                          <span className="text-xs font-bold text-blue-700 bg-blue-200 px-2 py-1 rounded">LOW PRIORITY</span>
+                          <ul className="mt-2 text-sm text-blue-700 space-y-1">
+                            <li>• Could systematize review collection process</li>
+                            <li>• Opportunity to showcase reviews on website</li>
+                            <li>• Could improve review response timing</li>
+                          </ul>
+                        </div>
+                      )}
+                    </div>
                   </div>
-                  <p className="text-sm text-gray-700 leading-relaxed mb-4">
-                    {aiExplanations.reviews}
-                  </p>
-                  <ul className="text-sm text-gray-700 space-y-2">
-                    {generateBoostlyNextSteps('reviews', scores.reviews, scanResult).map((step, index) => (
-                      <li key={index} className="flex items-start gap-2">
-                        <span className="text-[#5F5FFF] font-medium">•</span>
-                        <span>{step}</span>
-                      </li>
-                    ))}
-                  </ul>
+
+                  {/* How Boostly Can Solve It */}
+                  <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                    <h3 className="font-bold text-purple-800 mb-3 flex items-center gap-2">
+                      <Zap className="w-5 h-5" />
+                      How Boostly Can Solve It For You
+                    </h3>
+                    <div className="space-y-3">
+                      <div className="bg-gradient-to-r from-[#FCD34D] to-[#F59E0B] text-white rounded p-3">
+                        <h4 className="font-semibold mb-2">⭐ Boostly Review Management</h4>
+                        <ul className="text-sm space-y-1">
+                          <li>• Automated review requests sent to happy customers</li>
+                          <li>• Professional responses to all reviews (positive and negative)</li>
+                          <li>• Review monitoring and alerts for immediate response</li>
+                          <li>• Reputation recovery for restaurants with low ratings</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-gradient-to-r from-[#5F5FFF] to-[#7375FD] text-white rounded p-3">
+                        <h4 className="font-semibold mb-2">📱 Boostly Text Marketing</h4>
+                        <ul className="text-sm space-y-1">
+                          <li>• Send review requests immediately after positive dining experiences</li>
+                          <li>• Follow up with customers to address any issues before they review</li>
+                          <li>• Reward customers for leaving positive reviews</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                   
                   <div className="pt-4 border-t border-gray-200 space-y-3">
                     <div className="flex justify-between items-center">

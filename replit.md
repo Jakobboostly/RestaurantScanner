@@ -76,6 +76,18 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 15, 2025. Enhanced post-scan dashboard with actionable insights and priority-based recommendations:
+  - Added "Where You're Going Wrong" sections to all 5 dashboard tabs with specific improvement areas
+  - Implemented priority-based action items (HIGH/MEDIUM/LOW) based on score ranges across all categories
+  - Created "How Boostly Can Solve It For You" sections with targeted service recommendations
+  - Enhanced user understanding with clear impact messaging and business-focused language
+  - Search tab: SEO service for ranking improvements, text marketing for customer acquisition
+  - Social tab: Social media service for content creation, text marketing for follower conversion
+  - Local tab: Local SEO service for Google Business optimization, text marketing for reviews
+  - Website tab: Website optimization service for performance, text marketing for traffic
+  - Reviews tab: Review management service for reputation, text marketing for review requests
+  - All sections use educated guessing based on scan results to provide relevant recommendations
+  - Maintained sub-30-second scan times while significantly improving actionable insights
 - July 15, 2025. Fixed critical fun facts API issue - now uses authentic Google Places data:
   - Resolved "Local Area" and "This Restaurant" placeholder text by adding formatted_address field to Google Places API request
   - Fun facts now display real city names (e.g., "Omaha") extracted from Google Places API business profile addresses
