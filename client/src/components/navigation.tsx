@@ -17,7 +17,7 @@ export default function Navigation() {
                 alt="Boostly Logo" 
                 className="h-8 w-auto mr-3"
               />
-              <span className="text-xl font-bold text-gray-900">Restaurant Scanner</span>
+              <span className="text-xl font-bold text-gray-900">Boostly Restaurant Health Scan</span>
             </div>
           </div>
           

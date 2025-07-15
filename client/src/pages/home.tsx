@@ -180,7 +180,7 @@ export default function HomePage() {
                   <div className="p-2 bg-[#28008F] rounded-lg mr-3">
                     <ChefHat className="h-6 w-6 text-white" />
                   </div>
-                  <span className="text-xl font-bold">Restaurant Scanner</span>
+                  <span className="text-xl font-bold">Boostly Restaurant Health Scan</span>
                 </div>
                 <p className="text-gray-400 mb-6">
                   Helping restaurants improve their online presence and drive more customers through data-driven insights.
@@ -226,7 +226,7 @@ export default function HomePage() {
             
             <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
               <p className="text-gray-400 text-sm">
-                &copy; 2024 Restaurant Scanner. All rights reserved.
+                &copy; 2024 Boostly Restaurant Health Scan. All rights reserved.
               </p>
               <div className="flex space-x-6 mt-4 md:mt-0">
                 <span className="text-gray-400 text-sm">Built with ❤️ for restaurants</span>
