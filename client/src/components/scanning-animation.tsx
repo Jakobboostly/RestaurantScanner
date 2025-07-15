@@ -79,7 +79,6 @@ export default function ScanningAnimation({ progress, status, restaurantName, cu
           backgroundSize: '40px 40px'
         }} />
       </div>
-
       {/* Subtle Floating Particles */}
       <div className="absolute inset-0 overflow-hidden">
         {particles.map((particle) => (
@@ -108,7 +107,6 @@ export default function ScanningAnimation({ progress, status, restaurantName, cu
           />
         ))}
       </div>
-
       {/* Data Stream Effects */}
       <div className="absolute inset-0 overflow-hidden">
         {dataStreams.map((stream) => (
@@ -132,7 +130,6 @@ export default function ScanningAnimation({ progress, status, restaurantName, cu
           />
         ))}
       </div>
-
       {/* Holographic Scanning Beams */}
       <div className="absolute inset-0 overflow-hidden">
         {scanBeams.map((beam) => (
@@ -155,7 +152,6 @@ export default function ScanningAnimation({ progress, status, restaurantName, cu
           />
         ))}
       </div>
-
       {/* Pulsing Radar Effect */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <motion.div
@@ -184,7 +180,6 @@ export default function ScanningAnimation({ progress, status, restaurantName, cu
           }}
         />
       </div>
-
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -265,7 +260,7 @@ export default function ScanningAnimation({ progress, status, restaurantName, cu
                   <div className="relative">
                     {/* Background track */}
                     <div className="w-full h-3 bg-gray-200 rounded-full overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#5F5FFF]/10 to-transparent animate-pulse"></div>
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#5F5FFF]/10 to-transparent animate-pulse text-[#0c0a0900]"></div>
                     </div>
                     
                     {/* Progress fill */}
