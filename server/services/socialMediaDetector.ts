@@ -43,6 +43,11 @@ export class SocialMediaDetector {
     
     if (cached) {
       console.log('Using cached social media links for:', websiteUrl);
+      // Still log if we found Facebook in cache
+      if (cached.facebook) {
+        console.log('Cached Facebook link:', cached.facebook);
+        console.log('Cached Facebook ID:', cached.facebookId);
+      }
       return cached;
     }
 
@@ -63,17 +68,37 @@ export class SocialMediaDetector {
       const $ = cheerio.load(response.data);
       const socialLinks: SocialMediaLinks = {};
 
-      // Method 1: Direct Facebook link detection
-      $('a[href*="facebook.com"], a[href*="fb.com"], a[href*="m.facebook.com"]').each((_, element) => {
-        const href = $(element).attr('href');
-        if (href && this.isValidFacebookUrl(href)) {
-          socialLinks.facebook = this.cleanUrl(href);
-          console.log('Facebook link found via direct detection:', socialLinks.facebook);
-          return false; // Break after first match
+      // Method 1: JSON-LD schema detection
+      $('script[type="application/ld+json"]').each((_, element) => {
+        try {
+          const jsonData = JSON.parse($(element).html() || '{}');
+          if (jsonData.sameAs && Array.isArray(jsonData.sameAs)) {
+            for (const url of jsonData.sameAs) {
+              if (this.isValidFacebookUrl(url)) {
+                socialLinks.facebook = this.cleanUrl(url);
+                console.log('Facebook link found via JSON-LD schema:', socialLinks.facebook);
+                return false;
+              }
+            }
+          }
+        } catch (e) {
+          // Skip malformed JSON
         }
       });
 
-      // Method 2: Facebook icon-based detection (including SVG icons)
+      // Method 2: Direct Facebook link detection
+      if (!socialLinks.facebook) {
+        $('a[href*="facebook.com"], a[href*="fb.com"], a[href*="m.facebook.com"]').each((_, element) => {
+          const href = $(element).attr('href');
+          if (href && this.isValidFacebookUrl(href)) {
+            socialLinks.facebook = this.cleanUrl(href);
+            console.log('Facebook link found via direct detection:', socialLinks.facebook);
+            return false; // Break after first match
+          }
+        });
+      }
+
+      // Method 3: Facebook icon-based detection (including SVG icons)
       if (!socialLinks.facebook) {
         // Check for CSS class-based icons
         const facebookIcon = $('a[class*="facebook"], a[class*="fb"], i[class*="facebook"], i[class*="fb"]').closest('a');
@@ -111,7 +136,7 @@ export class SocialMediaDetector {
         }
       }
 
-      // Method 3: Facebook data attribute detection
+      // Method 4: Facebook data attribute detection
       $('[data-social], [data-platform]').each((_, element) => {
         const href = $(element).attr('href');
         const platform = $(element).attr('data-social') || $(element).attr('data-platform');
@@ -123,7 +148,7 @@ export class SocialMediaDetector {
         }
       });
 
-      // Method 4: Facebook text content analysis
+      // Method 5: Facebook text content analysis
       const textContent = $('body').text();
       if (!socialLinks.facebook) {
         const fbMatch = textContent.match(/facebook\.com\/([a-zA-Z0-9._-]+)/i);
