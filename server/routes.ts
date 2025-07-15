@@ -381,7 +381,11 @@ export async function registerRoutes(app: Express): Promise<Server> {
       console.log('Generating fun facts for:', { actualCity, actualRestaurant, originalCity: city, originalRestaurant: restaurant });
       const funFacts = await funFactsService.generateFunFacts(actualCity, actualRestaurant);
       console.log('Generated fun facts:', funFacts);
-      res.json({ facts: funFacts });
+      res.json({ 
+        facts: funFacts,
+        actualCity: actualCity,
+        actualRestaurant: actualRestaurant
+      });
     } catch (error) {
       console.error('Error generating fun facts:', error);
       res.status(500).json({ error: "Failed to generate fun facts" });

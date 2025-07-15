@@ -33,6 +33,8 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
   const [showFunFact, setShowFunFact] = useState(false);
   const [factPosition, setFactPosition] = useState({ side: 'right', top: '50%' });
   const [cityName, setCityName] = useState<string>('Local Area');
+  const [actualCityName, setActualCityName] = useState<string>('Local Area');
+  const [actualRestaurantName, setActualRestaurantName] = useState<string>('This Restaurant');
 
   const steps = [
     { icon: Search, label: "Finding restaurant website", threshold: 16.67, color: "from-blue-500 to-cyan-500", shadowColor: "shadow-blue-500/20" },
@@ -63,6 +65,12 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
           const data = await response.json();
           console.log('Fun facts received:', data.facts);
           setFunFacts(data.facts);
+          if (data.actualCity) {
+            setActualCityName(data.actualCity);
+          }
+          if (data.actualRestaurant) {
+            setActualRestaurantName(data.actualRestaurant);
+          }
           
           // Initialize position for first fact
           const positions = [
@@ -838,7 +846,7 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
                           >
                             <div className="px-3 py-1 bg-white/25 rounded-full backdrop-blur-sm border border-white/30">
                               <span className="text-xs font-bold text-white uppercase tracking-wide">
-                                Fun Fact About {funFacts[currentFactIndex]?.type === 'city' ? cityName : 'This Restaurant'}
+                                Fun Fact About {funFacts[currentFactIndex]?.type === 'city' ? actualCityName : actualRestaurantName}
                               </span>
                             </div>
                           </motion.div>
