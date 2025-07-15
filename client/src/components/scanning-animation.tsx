@@ -30,6 +30,7 @@ export default function ScanningAnimation({ progress, status, restaurantName, cu
   const [funFacts, setFunFacts] = useState<FunFact[]>([]);
   const [currentFactIndex, setCurrentFactIndex] = useState(0);
   const [showFunFact, setShowFunFact] = useState(false);
+  const [factPosition, setFactPosition] = useState({ side: 'right', top: '50%' });
 
   const steps = [
     { icon: Search, label: "Finding restaurant website", threshold: 16.67, color: "from-blue-500 to-cyan-500", shadowColor: "shadow-blue-500/20" },
@@ -77,9 +78,26 @@ export default function ScanningAnimation({ progress, status, restaurantName, cu
         setCurrentFactIndex((prevIndex) => {
           const newIndex = (prevIndex + 1) % funFacts.length;
           console.log('Cycling to fun fact:', newIndex, funFacts[newIndex]);
+          
+          // Generate random position for next fact
+          const positions = [
+            { side: 'left', top: '20%' },
+            { side: 'right', top: '25%' },
+            { side: 'left', top: '40%' },
+            { side: 'right', top: '45%' },
+            { side: 'left', top: '65%' },
+            { side: 'right', top: '70%' },
+            { side: 'left', top: '85%' },
+            { side: 'right', top: '30%' },
+            { side: 'left', top: '55%' },
+            { side: 'right', top: '80%' }
+          ];
+          
+          setFactPosition(positions[Math.floor(Math.random() * positions.length)]);
+          
           return newIndex;
         });
-      }, 4000); // Change fact every 4 seconds
+      }, 3000); // Change fact every 3 seconds for more action
 
       return () => clearInterval(interval);
     } else {
@@ -668,66 +686,158 @@ export default function ScanningAnimation({ progress, status, restaurantName, cu
         </AnimatePresence>
 
         {/* Fun Facts Display */}
-        <AnimatePresence>
+        <AnimatePresence mode="wait">
           {funFacts.length > 0 && progress > 0 && progress < 100 && (
             <motion.div
-              key={currentFactIndex}
+              key={`${currentFactIndex}-${factPosition.side}-${factPosition.top}`}
               initial={{ 
                 opacity: 0, 
-                x: currentFactIndex % 2 === 0 ? -100 : 100, 
-                scale: 0.8 
+                x: factPosition.side === 'left' ? -150 : 150, 
+                y: Math.random() * 40 - 20,
+                scale: 0.6,
+                rotate: factPosition.side === 'left' ? -10 : 10
               }}
-              animate={{ opacity: 1, x: 0, scale: 1 }}
+              animate={{ 
+                opacity: 1, 
+                x: 0, 
+                y: 0,
+                scale: 1,
+                rotate: 0
+              }}
               exit={{ 
                 opacity: 0, 
-                x: currentFactIndex % 2 === 0 ? 100 : -100, 
-                scale: 0.8 
+                x: factPosition.side === 'left' ? 150 : -150, 
+                y: Math.random() * 60 - 30,
+                scale: 0.8,
+                rotate: factPosition.side === 'left' ? 15 : -15
               }}
-              className={`fixed top-1/2 transform -translate-y-1/2 z-50 ${
-                currentFactIndex % 2 === 0 ? 'left-8' : 'right-8'
+              transition={{
+                type: "spring",
+                stiffness: 300,
+                damping: 30,
+                duration: 0.8
+              }}
+              className={`fixed z-50 ${
+                factPosition.side === 'left' ? 'left-6' : 'right-6'
               }`}
+              style={{ top: factPosition.top, transform: 'translateY(-50%)' }}
             >
-              <Card className="w-80 bg-gradient-to-br from-[#5F5FFF] to-[#9090FD] text-white border-0 shadow-2xl">
-                <CardContent className="p-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm">
-                        {funFacts[currentFactIndex]?.type === 'city' ? (
-                          <MapPin className="w-6 h-6 text-white" />
-                        ) : (
-                          <Star className="w-6 h-6 text-white" />
-                        )}
-                      </div>
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center space-x-2 mb-2">
-                        <div className="px-3 py-1 bg-white/20 rounded-full backdrop-blur-sm">
-                          <span className="text-xs font-semibold text-white uppercase tracking-wide">
-                            Fun Fact About {funFacts[currentFactIndex]?.type === 'city' ? 'Your City' : 'This Restaurant'}
-                          </span>
-                        </div>
-                        <div className="flex space-x-1">
-                          {funFacts.map((_, index) => (
-                            <div
-                              key={index}
-                              className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                                index === currentFactIndex ? 'bg-white' : 'bg-white/30'
-                              }`}
-                            />
-                          ))}
-                        </div>
-                      </div>
-                      <p className="text-sm text-white/90 leading-relaxed">
-                        {funFacts[currentFactIndex]?.text}
-                      </p>
-                    </div>
+              <motion.div
+                animate={{
+                  y: [0, -8, 0],
+                  rotateY: [0, 5, 0, -5, 0],
+                }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+              >
+                <Card className="w-72 bg-gradient-to-br from-[#5F5FFF] via-[#7B7BFF] to-[#9090FD] text-white border-0 shadow-2xl relative overflow-hidden">
+                  {/* Animated background sparkles */}
+                  <div className="absolute inset-0 opacity-20">
+                    {[...Array(8)].map((_, i) => (
+                      <motion.div
+                        key={i}
+                        className="absolute w-1 h-1 bg-white rounded-full"
+                        style={{
+                          left: `${Math.random() * 100}%`,
+                          top: `${Math.random() * 100}%`,
+                        }}
+                        animate={{
+                          scale: [0, 1, 0],
+                          opacity: [0, 1, 0],
+                        }}
+                        transition={{
+                          duration: 2,
+                          repeat: Infinity,
+                          delay: i * 0.3,
+                        }}
+                      />
+                    ))}
                   </div>
                   
-                  {/* Animated border */}
+                  <CardContent className="p-5 relative z-10">
+                    <div className="flex items-start space-x-3">
+                      <motion.div 
+                        className="flex-shrink-0"
+                        animate={{
+                          rotate: [0, 360],
+                          scale: [1, 1.1, 1],
+                        }}
+                        transition={{
+                          rotate: { duration: 3, repeat: Infinity, ease: "linear" },
+                          scale: { duration: 2, repeat: Infinity, ease: "easeInOut" }
+                        }}
+                      >
+                        <div className="w-10 h-10 rounded-full bg-white/25 flex items-center justify-center backdrop-blur-sm border border-white/30">
+                          {funFacts[currentFactIndex]?.type === 'city' ? (
+                            <MapPin className="w-5 h-5 text-white" />
+                          ) : (
+                            <Star className="w-5 h-5 text-white" />
+                          )}
+                        </div>
+                      </motion.div>
+                      <div className="flex-1 min-w-0">
+                        <motion.div 
+                          className="flex items-center space-x-2 mb-2"
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: 0.3 }}
+                        >
+                          <div className="px-3 py-1 bg-white/25 rounded-full backdrop-blur-sm border border-white/30">
+                            <span className="text-xs font-bold text-white uppercase tracking-wide">
+                              Fun Fact About {funFacts[currentFactIndex]?.type === 'city' ? 'Your City' : 'This Restaurant'}
+                            </span>
+                          </div>
+                        </motion.div>
+                        <motion.p 
+                          className="text-sm text-white/95 leading-relaxed font-medium"
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: 0.5 }}
+                        >
+                          {funFacts[currentFactIndex]?.text}
+                        </motion.p>
+                      </div>
+                    </div>
+                    
+                    {/* Progress dots */}
+                    <motion.div 
+                      className="flex justify-center space-x-1 mt-4"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ delay: 0.7 }}
+                    >
+                      {funFacts.map((_, index) => (
+                        <motion.div
+                          key={index}
+                          className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
+                            index === currentFactIndex ? 'bg-white' : 'bg-white/40'
+                          }`}
+                          animate={{
+                            scale: index === currentFactIndex ? [1, 1.3, 1] : 1,
+                          }}
+                          transition={{
+                            duration: 0.6,
+                            repeat: index === currentFactIndex ? Infinity : 0,
+                            repeatType: "reverse",
+                          }}
+                        />
+                      ))}
+                    </motion.div>
+                  </CardContent>
+                  
+                  {/* Animated border glow */}
                   <motion.div
-                    className="absolute inset-0 rounded-lg border-2 border-white/30"
+                    className="absolute inset-0 rounded-lg border-2 border-white/40"
                     animate={{
-                      borderColor: ['rgba(255,255,255,0.3)', 'rgba(255,255,255,0.6)', 'rgba(255,255,255,0.3)'],
+                      borderColor: ['rgba(255,255,255,0.4)', 'rgba(255,255,255,0.8)', 'rgba(255,255,255,0.4)'],
+                      boxShadow: [
+                        '0 0 10px rgba(255,255,255,0.3)',
+                        '0 0 20px rgba(255,255,255,0.6)',
+                        '0 0 10px rgba(255,255,255,0.3)'
+                      ]
                     }}
                     transition={{
                       duration: 2,
@@ -735,8 +845,8 @@ export default function ScanningAnimation({ progress, status, restaurantName, cu
                       ease: "easeInOut",
                     }}
                   />
-                </CardContent>
-              </Card>
+                </Card>
+              </motion.div>
             </motion.div>
           )}
         </AnimatePresence>
