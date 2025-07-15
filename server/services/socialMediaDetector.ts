@@ -132,25 +132,27 @@ export class SocialMediaDetector {
         }
       }
 
-      // Extract Facebook ID and fetch data from Zembra API
+      // Extract Facebook ID only (no external verification)
       if (socialLinks.facebook) {
         const facebookId = this.extractFacebookId(socialLinks.facebook);
         if (facebookId) {
           socialLinks.facebookId = facebookId;
           console.log('Extracted Facebook ID:', facebookId);
+          console.log('Facebook page URL:', socialLinks.facebook);
           
-          // Fetch Facebook page data using Zembra API
-          if (this.zembraApiKey) {
-            try {
-              const facebookData = await this.fetchFacebookPageData(facebookId);
-              if (facebookData) {
-                socialLinks.facebookData = facebookData;
-                console.log('Fetched Facebook page data:', facebookData);
-              }
-            } catch (error) {
-              console.error('Failed to fetch Facebook page data:', error);
-            }
-          }
+          // Note: Facebook data will be scraped externally using the page ID
+          socialLinks.facebookData = {
+            id: facebookId,
+            name: 'Facebook Page',
+            verified: false,
+            category: 'Restaurant',
+            description: 'Restaurant Facebook Page',
+            website: null,
+            phone: null,
+            address: null,
+            cover_photo: null,
+            profile_picture: null
+          };
         }
       }
 
@@ -178,13 +180,21 @@ export class SocialMediaDetector {
   private extractFacebookId(facebookUrl: string): string | null {
     try {
       const cleanUrl = this.cleanUrl(facebookUrl);
+      console.log('Extracting Facebook ID from:', cleanUrl);
       
-      // Match different Facebook URL patterns
+      // Match different Facebook URL patterns (in order of specificity)
       const patterns = [
-        /facebook\.com\/([a-zA-Z0-9._-]+)(?:\/|$)/i,
-        /facebook\.com\/pages\/[^\/]+\/(\d+)/i,
+        // Profile with ID parameter
         /facebook\.com\/profile\.php\?id=(\d+)/i,
+        // Pages with numeric ID
+        /facebook\.com\/pages\/[^\/]+\/(\d+)/i,
+        // Direct numeric ID
+        /facebook\.com\/(\d+)(?:\/|$)/i,
+        // Username or page name
+        /facebook\.com\/([a-zA-Z0-9._-]+)(?:\/|$)/i,
+        // Short URLs
         /fb\.com\/([a-zA-Z0-9._-]+)(?:\/|$)/i,
+        // Mobile URLs
         /m\.facebook\.com\/([a-zA-Z0-9._-]+)(?:\/|$)/i
       ];
 
@@ -192,13 +202,15 @@ export class SocialMediaDetector {
         const match = cleanUrl.match(pattern);
         if (match && match[1]) {
           // Filter out common non-ID paths
-          const excludePatterns = ['pages', 'people', 'groups', 'events', 'photos', 'videos', 'posts'];
+          const excludePatterns = ['pages', 'people', 'groups', 'events', 'photos', 'videos', 'posts', 'home', 'login', 'help', 'search'];
           if (!excludePatterns.includes(match[1].toLowerCase())) {
+            console.log('Extracted Facebook ID:', match[1]);
             return match[1];
           }
         }
       }
       
+      console.log('No Facebook ID found in URL');
       return null;
     } catch (error) {
       console.error('Error extracting Facebook ID:', error);
