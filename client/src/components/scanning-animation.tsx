@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { Search, Zap, TrendingUp, Users, Smartphone, Globe, Wifi, Shield, BarChart3, Star, MessageCircle } from "lucide-react";
+import { Search, Zap, TrendingUp, Users, Smartphone, Globe, Wifi, Shield, BarChart3, Star, MessageCircle, MapPin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { useEffect, useState } from "react";
@@ -17,10 +17,19 @@ interface ScanningAnimationProps {
   } | null;
 }
 
+interface FunFact {
+  id: number;
+  text: string;
+  type: 'city' | 'restaurant';
+}
+
 export default function ScanningAnimation({ progress, status, restaurantName, currentReview }: ScanningAnimationProps) {
   const [particles, setParticles] = useState<Array<{ id: number; x: number; y: number; delay: number; color: string }>>([]);
   const [scanBeams, setScanBeams] = useState<Array<{ id: number; delay: number }>>([]);
   const [dataStreams, setDataStreams] = useState<Array<{ id: number; delay: number; direction: 'left' | 'right' }>>([]);
+  const [funFacts, setFunFacts] = useState<FunFact[]>([]);
+  const [currentFactIndex, setCurrentFactIndex] = useState(0);
+  const [showFunFact, setShowFunFact] = useState(false);
 
   const steps = [
     { icon: Search, label: "Finding restaurant website", threshold: 16.67, color: "from-blue-500 to-cyan-500", shadowColor: "shadow-blue-500/20" },
@@ -30,6 +39,43 @@ export default function ScanningAnimation({ progress, status, restaurantName, cu
     { icon: Users, label: "Scanning competitor websites", threshold: 83.33, color: "from-pink-500 to-rose-500", shadowColor: "shadow-pink-500/20" },
     { icon: Globe, label: "Generating recommendations", threshold: 100, color: "from-indigo-500 to-blue-500", shadowColor: "shadow-indigo-500/20" },
   ];
+
+  // Fetch fun facts when component mounts
+  useEffect(() => {
+    const fetchFunFacts = async () => {
+      try {
+        // Extract city from restaurant name (simple heuristic)
+        const cityMatch = restaurantName.match(/\b(New York|Los Angeles|Chicago|Houston|Phoenix|Philadelphia|San Antonio|San Diego|Dallas|San Jose|Austin|Jacksonville|Fort Worth|Columbus|Charlotte|San Francisco|Indianapolis|Seattle|Denver|Washington|Boston|Nashville|Baltimore|Louisville|Portland|Oklahoma City|Memphis|Las Vegas|Milwaukee|Albuquerque|Tucson|Fresno|Sacramento|Mesa|Kansas City|Atlanta|Long Beach|Colorado Springs|Raleigh|Miami|Virginia Beach|Omaha|Oakland|Minneapolis|Tulsa|Arlington|Tampa|New Orleans|Wichita|Cleveland|Bakersfield|Aurora|Anaheim|Honolulu|Santa Ana|Riverside|Corpus Christi|Lexington|Stockton|Henderson|Saint Paul|St. Louis|Cincinnati|Pittsburgh|Greensboro|Anchorage|Plano|Lincoln|Orlando|Irvine|Newark|Toledo|Durham|Chula Vista|Fort Wayne|Jersey City|St. Petersburg|Laredo|Madison|Chandler|Buffalo|Lubbock|Scottsdale|Reno|Glendale|Gilbert|Winston-Salem|North Las Vegas|Norfolk|Chesapeake|Garland|Irving|Hialeah|Fremont|Boise|Richmond|Baton Rouge|Spokane|Des Moines|Modesto|Fayetteville|Tacoma|Oxnard|Fontana|Columbus|Montgomery|Moreno Valley|Shreveport|Aurora|Yonkers|Akron|Huntington Beach|Little Rock|Augusta|Amarillo|Glendale|Mobile|Grand Rapids|Salt Lake City|Tallahassee|Huntsville|Grand Prairie|Knoxville|Worcester|Newport News|Brownsville|Overland Park|Santa Clarita|Providence|Garden Grove|Chattanooga|Oceanside|Jackson|Fort Lauderdale|Santa Rosa|Rancho Cucamonga|Port St. Lucie|Tempe|Ontario|Vancouver|Cape Coral|Sioux Falls|Springfield|Peoria|Pembroke Pines|Elk Grove|Salem|Lancaster|Corona|Eugene|Palmdale|Salinas|Springfield|Pasadena|Fort Collins|Hayward|Pomona|Cary|Rockford|Alexandria|Escondido|McKinney|Kansas City|Joliet|Sunnyvale|Torrance|Bridgeport|Lakewood|Hollywood|Paterson|Naperville|Syracuse|Mesquite|Dayton|Savannah|Clarksville|Orange|Pasadena|Fullerton|Killeen|Frisco|Hampton|McAllen|Warren|Bellevue|West Valley City|Columbia|Olathe|Sterling Heights|New Haven|Miramar|Waco|Thousand Oaks|Cedar Rapids|Charleston|Visalia|Topeka|Elizabeth|Gainesville|Thornton|Roseville|Carrollton|Coral Springs|Stamford|Simi Valley|Concord|Hartford|Kent|Lafayette|Midland|Surprise|Denton|Victorville|Evansville|Santa Clara|Abilene|Athens|Vallejo|Allentown|Norman|Beaumont|Independence|Murfreesboro|Ann Arbor|Fargo|Wilmington|Provo|Syracuse|Miami Gardens|Clearwater|Reading|Westminster|Yonkers|Pearland|Richardson|Broken Arrow|Richmond|League City|Lakeland|Solon|Odessa|High Point|Greeley|Inglewood|Lowell|Elgin|Miami Beach|Waterbury|Downey|Pompano Beach|Miami Gardens|Largo|Sandy Springs|Hillsboro|Arvada|Pueblo|Sandy|West Jordan|Inglewood|Centennial|Gresham|Fairfield|Billings|Lowell|San Mateo|Norwalk|Danbury|Toms River|Yakima|Westminster|Livermore|Daly City|Bloomington|Merced|Redding|Bethlehem|Duluth|Clifton|Levittown|Nashua|Albany|Longmont|Trenton|Wichita Falls|Green Bay|San Angelo|Huntington|Appleton|Hoover|Laredo|Roanoke|Spokane Valley|Davenport|Joliet|Burbank|Denton|Wyoming|Lakeland|Tuscaloosa|Chico|Edinburg|Cranston|Parma|New Bedford|Quincy|Brockton|Warwick|Broken Arrow|Rialto|Beaverton|Compton|Bloomington|Carson|Renton|Tracy|Whittier|Lacey|Clovis|Woodbridge|Cicero|Gary|Lawrence|Hamilton|Roswell|Scranton|Evanston|Springfield|Palmdale|Peoria|Antioch|Richmond|Everett|West Palm Beach|Provo|Ventura|Norwalk|Arvada|Inglewood|Lansing|Ann Arbor|Flint|Cedar Falls|Janesville|Napa|Redwood City|Chico|Danbury|Eau Claire|Appleton|Racine|Kalamazoo|St. Cloud|Bloomington|Billings|Missoula|Bismarck|Casper|Cheyenne|Pueblo|Fort Collins|Boulder|Lakewood|Thornton|Westminster|Arvada|Centennial|Colorado Springs|Aurora|Denver|Colorado|Utah|Nevada|Arizona|California|Oregon|Washington|Idaho|Montana|Wyoming|New Mexico|Texas|Oklahoma|Kansas|Nebraska|South Dakota|North Dakota|Minnesota|Iowa|Missouri|Arkansas|Louisiana|Mississippi|Alabama|Tennessee|Kentucky|Illinois|Wisconsin|Michigan|Indiana|Ohio|West Virginia|Virginia|North Carolina|South Carolina|Georgia|Florida|Delaware|Maryland|Pennsylvania|New Jersey|New York|Connecticut|Rhode Island|Massachusetts|Vermont|New Hampshire|Maine|Alaska|Hawaii)\b/i);
+        const city = cityMatch ? cityMatch[1] : 'Local Area';
+        
+        const response = await fetch(`/api/fun-facts?city=${encodeURIComponent(city)}&restaurantName=${encodeURIComponent(restaurantName)}`);
+        if (response.ok) {
+          const data = await response.json();
+          setFunFacts(data.funFacts);
+        }
+      } catch (error) {
+        console.error('Error fetching fun facts:', error);
+      }
+    };
+
+    fetchFunFacts();
+  }, [restaurantName]);
+
+  // Cycle through fun facts during scanning
+  useEffect(() => {
+    if (funFacts.length > 0 && progress > 0 && progress < 100) {
+      const interval = setInterval(() => {
+        setCurrentFactIndex((prevIndex) => (prevIndex + 1) % funFacts.length);
+        setShowFunFact(true);
+        
+        setTimeout(() => {
+          setShowFunFact(false);
+        }, 3000); // Show each fact for 3 seconds
+      }, 4000); // Change fact every 4 seconds (1 second gap)
+
+      return () => clearInterval(interval);
+    }
+  }, [funFacts, progress]);
 
   // Generate enhanced floating particles with colors
   useEffect(() => {
@@ -608,6 +654,69 @@ export default function ScanningAnimation({ progress, status, restaurantName, cu
                 </Card>
               </motion.div>
             </>
+          )}
+        </AnimatePresence>
+
+        {/* Fun Facts Display */}
+        <AnimatePresence>
+          {showFunFact && funFacts.length > 0 && (
+            <motion.div
+              initial={{ opacity: 0, x: 100, scale: 0.8 }}
+              animate={{ opacity: 1, x: 0, scale: 1 }}
+              exit={{ opacity: 0, x: -100, scale: 0.8 }}
+              className="fixed right-6 top-1/4 transform -translate-y-1/2 z-50"
+            >
+              <Card className="w-80 bg-gradient-to-br from-[#5F5FFF] to-[#9090FD] text-white border-0 shadow-2xl">
+                <CardContent className="p-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm">
+                        {funFacts[currentFactIndex]?.type === 'city' ? (
+                          <MapPin className="w-6 h-6 text-white" />
+                        ) : (
+                          <Star className="w-6 h-6 text-white" />
+                        )}
+                      </div>
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center space-x-2 mb-2">
+                        <div className="px-3 py-1 bg-white/20 rounded-full backdrop-blur-sm">
+                          <span className="text-xs font-semibold text-white uppercase tracking-wide">
+                            {funFacts[currentFactIndex]?.type === 'city' ? 'City Fact' : 'Restaurant Fact'}
+                          </span>
+                        </div>
+                        <div className="flex space-x-1">
+                          {funFacts.map((_, index) => (
+                            <div
+                              key={index}
+                              className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                                index === currentFactIndex ? 'bg-white' : 'bg-white/30'
+                              }`}
+                            />
+                          ))}
+                        </div>
+                      </div>
+                      <p className="text-sm text-white/90 leading-relaxed">
+                        {funFacts[currentFactIndex]?.text}
+                      </p>
+                    </div>
+                  </div>
+                  
+                  {/* Animated border */}
+                  <motion.div
+                    className="absolute inset-0 rounded-lg border-2 border-white/30"
+                    animate={{
+                      borderColor: ['rgba(255,255,255,0.3)', 'rgba(255,255,255,0.6)', 'rgba(255,255,255,0.3)'],
+                    }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }}
+                  />
+                </CardContent>
+              </Card>
+            </motion.div>
           )}
         </AnimatePresence>
       </div>

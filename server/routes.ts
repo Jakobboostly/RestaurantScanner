@@ -6,6 +6,7 @@ import { AdvancedScannerService } from "./services/advancedScannerService";
 import { restaurantSearchResultSchema, scanResultSchema } from "@shared/schema";
 import { JsonSanitizer } from "./utils/jsonSanitizer";
 import { EnhancedDataForSeoService } from "./services/enhancedDataForSeoService";
+import { FunFactsService } from "./services/funFactsService";
 import { z } from "zod";
 import OpenAI from "openai";
 
@@ -48,6 +49,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Google Business Profile scanner service
   const { GoogleBusinessService } = await import('./services/googleBusinessService.js');
   const googleBusinessService = new GoogleBusinessService(GOOGLE_API_KEY || "");
+  
+  // Fun facts service
+  const funFactsService = new FunFactsService();
 
   // Restaurant search endpoint
   app.get("/api/restaurants/search", async (req, res) => {
@@ -318,6 +322,23 @@ export async function registerRoutes(app: Express): Promise<Server> {
           reviews: `Customer sentiment is ${req.body.scanResult.reviewsAnalysis?.sentiment?.positive || 0}% positive. Maintaining high review scores and addressing concerns quickly strengthens your reputation and attracts new diners.`
         }
       });
+    }
+  });
+
+  // Fun facts endpoint
+  app.get("/api/fun-facts", async (req, res) => {
+    try {
+      const { city, restaurantName } = req.query;
+      
+      if (!city || !restaurantName) {
+        return res.status(400).json({ error: "City and restaurant name are required" });
+      }
+      
+      const funFacts = await funFactsService.generateFunFacts(city as string, restaurantName as string);
+      res.json({ funFacts });
+    } catch (error) {
+      console.error('Error generating fun facts:', error);
+      res.status(500).json({ error: "Failed to generate fun facts" });
     }
   });
 
