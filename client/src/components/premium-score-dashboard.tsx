@@ -214,7 +214,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
             ) : (
               <>
                 <Target className="w-4 h-4 text-orange-600" />
-                <span className="text-sm font-medium text-orange-600">
+                <span className="text-sm font-medium text-[#ffffff]">
                   Improvement Needed
                 </span>
               </>
