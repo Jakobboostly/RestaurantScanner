@@ -302,12 +302,12 @@ export default function ScanningAnimation({ progress, status, restaurantName, cu
                       />
                     </motion.div>
                     
-                    {/* Holographic progress indicator */}
+                    {/* Progress indicator dot */}
                     <motion.div
-                      className="absolute top-0 w-4 h-4 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full shadow-lg"
+                      className="absolute top-0 w-3 h-3 bg-[#5F5FFF] rounded-full shadow-md"
                       style={{ 
-                        left: `calc(${progress}% - 8px)`,
-                        boxShadow: '0 0 15px rgba(34, 211, 238, 0.8), 0 0 30px rgba(168, 85, 247, 0.6)',
+                        left: `calc(${progress}% - 6px)`,
+                        top: '0px',
                       }}
                       animate={{
                         scale: [1, 1.4, 1],

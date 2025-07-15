@@ -224,10 +224,10 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
               <Icon className={`${isLarge ? 'w-6 h-6' : 'w-5 h-5'} text-white`} />
             </div>
             <div>
-              <h3 className="font-bold text-xl text-[#ffffff]">
+              <h3 className="font-bold text-xl text-white">
                 {title}
               </h3>
-              {isLarge && <p className="text-sm text-[#ffffff]">vs. Industry Average ({averageScore}%)</p>}
+              {isLarge && <p className="text-sm text-white/90">vs. Industry Average ({averageScore}%)</p>}
             </div>
           </div>
           <div className={`text-right ${isLarge ? 'text-3xl' : 'text-2xl'} font-bold`}>
@@ -290,7 +290,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
             ) : (
               <>
                 <Target className="w-4 h-4 text-orange-600" />
-                <span className="text-sm font-medium text-[#ffffff]">
+                <span className="text-sm font-medium text-white">
                   Improvement Needed
                 </span>
               </>
@@ -331,7 +331,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2 }}
         >
-          <Card className="border-0 shadow-2xl bg-gradient-to-r from-[#5F5FFF] to-[#9090FD] text-white">
+          <Card className="border-0 shadow-2xl bg-gradient-to-r from-[#8B8BFF] to-[#B8B8FF] text-white">
             <CardContent className="p-0">
               <PremiumMeter 
                 score={scores.overall}
