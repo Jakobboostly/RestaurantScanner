@@ -86,6 +86,15 @@ This is a comprehensive restaurant website scanner application built with React 
   - Added brain icon for AI analysis sections and lightbulb icon for actionable next steps
   - Created `/api/ai/analyze-performance` endpoint that uses OpenAI gpt-4o model for contextual insights
   - Premium design features hover effects, shadow transitions, and gradient backgrounds
+  - Integrated dynamic Boostly service recommendations that adapt to restaurant performance:
+    - Search Performance: Boostly SEO services for local keywords, backlinks, and optimization
+    - Social Presence: Boostly Social Media services for Instagram, Facebook, and engagement
+    - Local Presence: Boostly Text Marketing for review requests and customer follow-ups
+    - Website Performance: Boostly SEO for speed optimization and mobile improvements
+    - Reviews & Reputation: Boostly Text for surveys, testimonials, and response strategies
+  - "Boostly Solutions" section replaces generic next steps with service-specific recommendations
+  - Each recommendation dynamically changes based on actual performance scores and scan data
+  - All three Boostly services (Text Marketing, SEO, Social Media) strategically integrated across all categories
 - July 14, 2025. Removed health section from dashboard:
   - Removed Traffic Light Scorecard component and its health tab
   - Dashboard now has 6 tabs: Keywords, Competitors, SERP, Local SEO, Profile, and ROI Impact

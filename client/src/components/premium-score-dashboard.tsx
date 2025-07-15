@@ -129,6 +129,82 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
     fetchAIExplanations();
   }, [scanResult, restaurantName]);
 
+  // Generate dynamic Boostly next steps for each category
+  const generateBoostlyNextSteps = (category: string, score: number, scanResult: any) => {
+    const steps = [];
+    
+    switch (category) {
+      case 'search':
+        if (score < 75) {
+          steps.push('🔍 Boostly SEO: Optimize for local search keywords');
+          steps.push('📈 Boostly SEO: Build quality backlinks & citations');
+          steps.push('💬 Boostly Text: Send SEO tips to subscribers');
+        } else {
+          steps.push('🏆 Boostly SEO: Maintain your strong search presence');
+          steps.push('📱 Boostly Social: Share SEO wins with followers');
+        }
+        if (scanResult.keywordAnalysis?.targetKeywords?.length < 10) {
+          steps.push('💡 Boostly SEO: Target more high-value keywords');
+        }
+        break;
+        
+      case 'social':
+        const activePlatforms = Object.keys(scanResult.socialMediaLinks || {}).filter(k => scanResult.socialMediaLinks[k]).length;
+        if (activePlatforms < 2) {
+          steps.push('📱 Boostly Social: Create Instagram & Facebook profiles');
+          steps.push('📸 Boostly Social: Post daily food photos & stories');
+          steps.push('💬 Boostly Text: Invite customers to follow you');
+        } else {
+          steps.push('🎯 Boostly Social: Increase engagement with contests');
+          steps.push('📱 Boostly Social: Cross-promote on all platforms');
+        }
+        steps.push('💬 Boostly Text: Send exclusive social offers');
+        break;
+        
+      case 'local':
+        if (scanResult.businessProfile?.rating < 4.5) {
+          steps.push('📧 Boostly Text: Send review requests after visits');
+          steps.push('🎯 Boostly Social: Promote positive reviews');
+          steps.push('🔍 Boostly SEO: Optimize local search listings');
+        } else {
+          steps.push('🏆 Boostly Text: Leverage reviews in promotions');
+          steps.push('📱 Boostly Social: Showcase 5-star reviews');
+        }
+        if (scanResult.businessProfile?.totalReviews < 50) {
+          steps.push('💬 Boostly Text: Follow up with happy customers');
+        }
+        break;
+        
+      case 'website':
+        if (scanResult.performance < 75) {
+          steps.push('⚡ Boostly SEO: Improve website speed & mobile');
+          steps.push('🔧 Boostly SEO: Optimize images & code');
+          steps.push('💬 Boostly Text: Direct traffic to faster pages');
+        } else {
+          steps.push('🎯 Boostly SEO: Maintain excellent performance');
+          steps.push('📱 Boostly Social: Highlight fast website');
+        }
+        if (scanResult.mobile < 80) {
+          steps.push('📱 Boostly Social: Drive mobile traffic campaigns');
+        }
+        break;
+        
+      case 'reviews':
+        if (scanResult.reviewsAnalysis?.sentiment?.positive < 80) {
+          steps.push('📧 Boostly Text: Send satisfaction surveys');
+          steps.push('🎯 Boostly Social: Address concerns publicly');
+          steps.push('🔍 Boostly SEO: Optimize review response strategy');
+        } else {
+          steps.push('🏆 Boostly Text: Share testimonials via SMS');
+          steps.push('📱 Boostly Social: Feature happy customers');
+        }
+        steps.push('💬 Boostly Text: Follow up after dining experience');
+        break;
+    }
+    
+    return steps;
+  };
+
   // Premium meter component
   const PremiumMeter = ({ score, title, icon: Icon, color, size = "large" }: {
     score: number;
@@ -384,12 +460,12 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
               <div className="pt-3">
                 <div className="flex items-center gap-2">
                   <Lightbulb className="w-4 h-4 text-yellow-500" />
-                  <span className="text-xs font-medium text-gray-600">Next Steps</span>
+                  <span className="text-xs font-medium text-gray-600">Boostly Solutions</span>
                 </div>
                 <ul className="mt-2 text-xs text-gray-600 space-y-1">
-                  <li>• Optimize for local search terms</li>
-                  <li>• Improve meta descriptions</li>
-                  <li>• Build quality backlinks</li>
+                  {generateBoostlyNextSteps('search', scores.search, scanResult).map((step, index) => (
+                    <li key={index}>• {step}</li>
+                  ))}
                 </ul>
               </div>
             </CardContent>
@@ -444,12 +520,12 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
               <div className="pt-3">
                 <div className="flex items-center gap-2">
                   <Lightbulb className="w-4 h-4 text-yellow-500" />
-                  <span className="text-xs font-medium text-gray-600">Next Steps</span>
+                  <span className="text-xs font-medium text-gray-600">Boostly Solutions</span>
                 </div>
                 <ul className="mt-2 text-xs text-gray-600 space-y-1">
-                  <li>• Create Instagram business profile</li>
-                  <li>• Post daily on social media</li>
-                  <li>• Engage with customer comments</li>
+                  {generateBoostlyNextSteps('social', scores.social, scanResult).map((step, index) => (
+                    <li key={index}>• {step}</li>
+                  ))}
                 </ul>
               </div>
             </CardContent>
@@ -502,12 +578,12 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
               <div className="pt-3">
                 <div className="flex items-center gap-2">
                   <Lightbulb className="w-4 h-4 text-yellow-500" />
-                  <span className="text-xs font-medium text-gray-600">Next Steps</span>
+                  <span className="text-xs font-medium text-gray-600">Boostly Solutions</span>
                 </div>
                 <ul className="mt-2 text-xs text-gray-600 space-y-1">
-                  <li>• Verify your business listing</li>
-                  <li>• Add business hours & photos</li>
-                  <li>• Respond to customer reviews</li>
+                  {generateBoostlyNextSteps('local', scores.local, scanResult).map((step, index) => (
+                    <li key={index}>• {step}</li>
+                  ))}
                 </ul>
               </div>
             </CardContent>
@@ -556,12 +632,12 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
               <div className="pt-3">
                 <div className="flex items-center gap-2">
                   <Lightbulb className="w-4 h-4 text-yellow-500" />
-                  <span className="text-xs font-medium text-gray-600">Next Steps</span>
+                  <span className="text-xs font-medium text-gray-600">Boostly Solutions</span>
                 </div>
                 <ul className="mt-2 text-xs text-gray-600 space-y-1">
-                  <li>• Optimize image sizes</li>
-                  <li>• Enable browser caching</li>
-                  <li>• Improve mobile responsiveness</li>
+                  {generateBoostlyNextSteps('website', scores.website, scanResult).map((step, index) => (
+                    <li key={index}>• {step}</li>
+                  ))}
                 </ul>
               </div>
             </CardContent>
@@ -615,12 +691,12 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
               <div className="pt-3">
                 <div className="flex items-center gap-2">
                   <Lightbulb className="w-4 h-4 text-yellow-500" />
-                  <span className="text-xs font-medium text-gray-600">Next Steps</span>
+                  <span className="text-xs font-medium text-gray-600">Boostly Solutions</span>
                 </div>
                 <ul className="mt-2 text-xs text-gray-600 space-y-1">
-                  <li>• Respond to all reviews</li>
-                  <li>• Ask happy customers to review</li>
-                  <li>• Address negative feedback</li>
+                  {generateBoostlyNextSteps('reviews', scores.reviews, scanResult).map((step, index) => (
+                    <li key={index}>• {step}</li>
+                  ))}
                 </ul>
               </div>
             </CardContent>

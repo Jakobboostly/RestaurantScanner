@@ -275,15 +275,15 @@ export async function registerRoutes(app: Express): Promise<Server> {
       
       const systemPrompt = `You are a digital marketing expert analyzing restaurant performance data. Generate concise, personalized insights based on actual data. Each explanation should be 2-3 sentences that reference specific metrics and provide actionable context. Write in a professional yet friendly tone.`;
       
-      const userPrompt = `Generate personalized explanations for ${restaurantName}'s performance scores:
-      
+      const userPrompt = `Generate personalized explanations for ${restaurantName}'s performance scores. Return your response in JSON format with keys for each category:
+
       Search Score: ${scores.search}/100 (SEO: ${scanResult.seo}/100, Keywords: ${scanResult.keywordAnalysis?.targetKeywords?.length || 0})
       Social Score: ${scores.social}/100 (Platforms: ${Object.keys(scanResult.socialMediaLinks || {}).filter(k => scanResult.socialMediaLinks[k]).length})
       Local Score: ${scores.local}/100 (Rating: ${scanResult.businessProfile?.rating || 0}/5, Reviews: ${scanResult.businessProfile?.totalReviews || 0})
       Website Score: ${scores.website}/100 (Performance: ${scanResult.performance}/100, Mobile: ${scanResult.mobile}/100)
       Reviews Score: ${scores.reviews}/100 (Sentiment: ${scanResult.reviewsAnalysis?.sentiment?.positive || 0}% positive)
       
-      For each category, explain what's working well or needs improvement based on the actual data.`;
+      For each category, explain what's working well or needs improvement based on the actual data. Return JSON with keys: search, social, local, website, reviews.`;
       
       const completion = await openai.chat.completions.create({
         model: "gpt-4o",
