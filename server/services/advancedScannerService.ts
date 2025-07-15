@@ -197,7 +197,7 @@ export class AdvancedScannerService {
       });
       
       const socialMediaPromise = Promise.race([
-        this.enhancedSocialMediaDetection(domain, restaurantName, businessProfile, placeId),
+        this.socialMediaDetector.detectSocialMediaLinks(domain),
         new Promise((_, reject) => 
           setTimeout(() => reject(new Error('Social media detection timeout')), 3500)
         )
