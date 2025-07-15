@@ -328,14 +328,36 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Fun facts endpoint
   app.get("/api/fun-facts", async (req, res) => {
     try {
-      const { city, restaurant } = req.query;
+      const { city, restaurant, placeId } = req.query;
       
-      if (!city || !restaurant) {
-        return res.status(400).json({ error: "City and restaurant name are required" });
+      if (!restaurant) {
+        return res.status(400).json({ error: "Restaurant name is required" });
       }
       
-      console.log('Generating fun facts for:', { city, restaurant });
-      const funFacts = await funFactsService.generateFunFacts(city as string, restaurant as string);
+      let actualCity = city as string;
+      let actualRestaurant = restaurant as string;
+      
+      // If placeId is provided, get the actual business profile data
+      if (placeId && GOOGLE_API_KEY) {
+        try {
+          const businessProfile = await googleBusinessService.getBusinessProfile(placeId as string);
+          if (businessProfile) {
+            actualRestaurant = businessProfile.name || restaurant as string;
+            // Extract city from business profile address
+            if (businessProfile.address) {
+              const cityMatch = businessProfile.address.match(/,\s*([^,]+),\s*[A-Z]{2}/);
+              if (cityMatch) {
+                actualCity = cityMatch[1];
+              }
+            }
+          }
+        } catch (error) {
+          console.error('Error fetching business profile for fun facts:', error);
+        }
+      }
+      
+      console.log('Generating fun facts for:', { actualCity, actualRestaurant, originalCity: city, originalRestaurant: restaurant });
+      const funFacts = await funFactsService.generateFunFacts(actualCity, actualRestaurant);
       console.log('Generated fun facts:', funFacts);
       res.json({ facts: funFacts });
     } catch (error) {

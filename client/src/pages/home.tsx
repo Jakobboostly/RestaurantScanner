@@ -91,6 +91,7 @@ export default function HomePage() {
           progress={scanProgress}
           status={scanStatus}
           restaurantName={selectedRestaurant.name}
+          placeId={selectedRestaurant.placeId}
           currentReview={currentReview}
         />
       </div>

@@ -8,6 +8,7 @@ interface ScanningAnimationProps {
   progress: number;
   status: string;
   restaurantName: string;
+  placeId?: string;
   currentReview?: {
     author: string;
     rating: number;
@@ -23,7 +24,7 @@ interface FunFact {
   type: 'city' | 'restaurant';
 }
 
-export default function ScanningAnimation({ progress, status, restaurantName, currentReview }: ScanningAnimationProps) {
+export default function ScanningAnimation({ progress, status, restaurantName, placeId, currentReview }: ScanningAnimationProps) {
   const [particles, setParticles] = useState<Array<{ id: number; x: number; y: number; delay: number; color: string }>>([]);
   const [scanBeams, setScanBeams] = useState<Array<{ id: number; delay: number }>>([]);
   const [dataStreams, setDataStreams] = useState<Array<{ id: number; delay: number; direction: 'left' | 'right' }>>([]);
@@ -51,8 +52,9 @@ export default function ScanningAnimation({ progress, status, restaurantName, cu
         const city = cityMatch ? cityMatch[1] : 'Local Area';
         setCityName(city);
         
-        console.log('Fetching fun facts for:', city, restaurantName);
-        const response = await fetch(`/api/fun-facts?city=${encodeURIComponent(city)}&restaurant=${encodeURIComponent(restaurantName)}`);
+        console.log('Fetching fun facts for:', city, restaurantName, 'with placeId:', placeId);
+        const placeIdParam = placeId ? `&placeId=${encodeURIComponent(placeId)}` : '';
+        const response = await fetch(`/api/fun-facts?city=${encodeURIComponent(city)}&restaurant=${encodeURIComponent(restaurantName)}${placeIdParam}`);
         if (response.ok) {
           const data = await response.json();
           console.log('Fun facts received:', data.facts);
