@@ -671,10 +671,21 @@ export default function ScanningAnimation({ progress, status, restaurantName, cu
         <AnimatePresence>
           {funFacts.length > 0 && progress > 0 && progress < 100 && (
             <motion.div
-              initial={{ opacity: 0, x: 100, scale: 0.8 }}
+              key={currentFactIndex}
+              initial={{ 
+                opacity: 0, 
+                x: currentFactIndex % 2 === 0 ? -100 : 100, 
+                scale: 0.8 
+              }}
               animate={{ opacity: 1, x: 0, scale: 1 }}
-              exit={{ opacity: 0, x: -100, scale: 0.8 }}
-              className="fixed right-8 top-1/2 transform -translate-y-1/2 z-50"
+              exit={{ 
+                opacity: 0, 
+                x: currentFactIndex % 2 === 0 ? 100 : -100, 
+                scale: 0.8 
+              }}
+              className={`fixed top-1/2 transform -translate-y-1/2 z-50 ${
+                currentFactIndex % 2 === 0 ? 'left-8' : 'right-8'
+              }`}
             >
               <Card className="w-80 bg-gradient-to-br from-[#5F5FFF] to-[#9090FD] text-white border-0 shadow-2xl">
                 <CardContent className="p-6">
@@ -692,7 +703,7 @@ export default function ScanningAnimation({ progress, status, restaurantName, cu
                       <div className="flex items-center space-x-2 mb-2">
                         <div className="px-3 py-1 bg-white/20 rounded-full backdrop-blur-sm">
                           <span className="text-xs font-semibold text-white uppercase tracking-wide">
-                            {funFacts[currentFactIndex]?.type === 'city' ? 'City Fact' : 'Restaurant Fact'}
+                            Fun Fact About {funFacts[currentFactIndex]?.type === 'city' ? 'Your City' : 'This Restaurant'}
                           </span>
                         </div>
                         <div className="flex space-x-1">
