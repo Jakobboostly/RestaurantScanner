@@ -257,15 +257,10 @@ export default function ScanningAnimation({ progress, status, restaurantName, cu
                     </motion.span>
                   </div>
                   
-                  <div className="relative">
-                    {/* Background track */}
-                    <div className="w-full h-3 bg-gray-200 rounded-full overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#5F5FFF]/10 to-transparent animate-pulse text-[#0c0a0900]"></div>
-                    </div>
-                    
+                  <div className="relative h-3">
                     {/* Progress fill */}
                     <motion.div
-                      className="absolute top-0 left-0 h-3 bg-gradient-to-r from-[#5F5FFF] to-[#9090FD] rounded-full relative overflow-hidden"
+                      className="h-3 bg-gradient-to-r from-[#5F5FFF] to-[#9090FD] rounded-full relative overflow-hidden"
                       initial={{ width: 0 }}
                       animate={{ width: `${progress}%` }}
                       transition={{ duration: 0.6, ease: "easeOut" }}
