@@ -148,7 +148,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
               <Icon className={`${isLarge ? 'w-6 h-6' : 'w-5 h-5'} text-white`} />
             </div>
             <div>
-              <h3 className={`font-bold text-gray-900 ${isLarge ? 'text-xl' : 'text-lg'}`}>
+              <h3 className="font-bold text-xl text-[#ffffff]">
                 {title}
               </h3>
               {isLarge && <p className="text-sm text-gray-600">vs. Industry Average ({averageScore}%)</p>}
@@ -161,7 +161,6 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
             <span className="text-gray-400 text-lg">/100</span>
           </div>
         </div>
-        
         {/* Premium Progress Track */}
         <div className="relative">
           <div className={`w-full ${isLarge ? 'h-4' : 'h-3'} bg-gray-200 rounded-full overflow-hidden shadow-inner`}>
@@ -202,7 +201,6 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
             </div>
           )}
         </div>
-        
         {/* Performance indicator */}
         <div className="flex items-center justify-between mt-3">
           <div className="flex items-center gap-2">
