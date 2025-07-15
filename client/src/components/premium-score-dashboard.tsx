@@ -151,7 +151,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
               <h3 className="font-bold text-xl text-[#ffffff]">
                 {title}
               </h3>
-              {isLarge && <p className="text-sm text-gray-600">vs. Industry Average ({averageScore}%)</p>}
+              {isLarge && <p className="text-sm text-[#ffffff]">vs. Industry Average ({averageScore}%)</p>}
             </div>
           </div>
           <div className={`text-right ${isLarge ? 'text-3xl' : 'text-2xl'} font-bold`}>
