@@ -76,6 +76,15 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 15, 2025. Updated scanning animation to professional light purple design:
+  - Changed background from dark futuristic theme to light purple gradient using Boostly color palette (#F6F3FE, #E8E2FF)
+  - Removed excessive glow effects and spinning logo animations for more professional appearance
+  - Updated scanner icon to simple spinning rings with subtle pulse animation
+  - Simplified progress bar with clean design using Boostly purple colors (#5F5FFF, #9090FD)
+  - Professional scanning steps with light backgrounds and subtle animations
+  - Clean data visualization panels with minimal effects and proper contrast
+  - Maintained all functionality while creating more business-appropriate visual design
+  - Updated review cards to use consistent Boostly purple accent color
 - July 15, 2025. Fixed Facebook page detection URL formatting issues:
   - Resolved critical URL formatting bug where domains like "theblindpigpub.net" were causing Facebook detection to fail
   - Fixed social media detector to properly add https:// prefix to domain-only URLs
