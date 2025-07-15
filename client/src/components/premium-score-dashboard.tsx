@@ -64,6 +64,8 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
     website: 'Analyzing website performance...',
     reviews: 'Analyzing reviews and reputation...'
   });
+  
+  const [activeTab, setActiveTab] = useState<'search' | 'social' | 'local' | 'website' | 'reviews'>('search');
 
   // Calculate authentic scores from scan data
   const calculateScores = (): ScoreData => {
@@ -344,335 +346,321 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
           </Card>
         </motion.div>
 
-        {/* Individual Scores Grid */}
+        {/* Tabbed Interface */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6"
+          className="space-y-6"
         >
-          <Card className="border-0 shadow-xl hover:shadow-2xl transition-shadow duration-300 bg-white">
-            <CardContent className="p-0">
-              <PremiumMeter 
-                score={scores.search}
-                title="Search"
-                icon={Search}
-                color="from-[#5F5FFF] to-[#7375FD]"
-                size="medium"
-              />
-            </CardContent>
-          </Card>
-
-          <Card className="border-0 shadow-xl hover:shadow-2xl transition-shadow duration-300 bg-white">
-            <CardContent className="p-0">
-              <PremiumMeter 
-                score={scores.social}
-                title="Social"
-                icon={Users}
-                color="from-[#16A34A] to-[#4ADE80]"
-                size="medium"
-              />
-            </CardContent>
-          </Card>
-
-          <Card className="border-0 shadow-xl hover:shadow-2xl transition-shadow duration-300 bg-white">
-            <CardContent className="p-0">
-              <PremiumMeter 
-                score={scores.local}
-                title="Local"
-                icon={MapPin}
-                color="from-[#F59E0B] to-[#FCD34D]"
-                size="medium"
-              />
-            </CardContent>
-          </Card>
-
-          <Card className="border-0 shadow-xl hover:shadow-2xl transition-shadow duration-300 bg-white">
-            <CardContent className="p-0">
-              <PremiumMeter 
-                score={scores.website}
-                title="Website"
-                icon={Globe}
-                color="from-[#9090FD] to-[#7375FD]"
-                size="medium"
-              />
-            </CardContent>
-          </Card>
-
-          <Card className="border-0 shadow-xl hover:shadow-2xl transition-shadow duration-300 bg-white">
-            <CardContent className="p-0">
-              <PremiumMeter 
-                score={scores.reviews}
-                title="Reviews"
-                icon={Star}
-                color="from-[#FCD34D] to-[#F59E0B]"
-                size="medium"
-              />
-            </CardContent>
-          </Card>
+          {/* Tab Headers */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+            {[
+              { key: 'search', title: 'Search', icon: Search, color: 'from-[#5F5FFF] to-[#7375FD]', score: scores.search },
+              { key: 'social', title: 'Social', icon: Users, color: 'from-[#16A34A] to-[#4ADE80]', score: scores.social },
+              { key: 'local', title: 'Local', icon: MapPin, color: 'from-[#F59E0B] to-[#FCD34D]', score: scores.local },
+              { key: 'website', title: 'Website', icon: Globe, color: 'from-[#9090FD] to-[#7375FD]', score: scores.website },
+              { key: 'reviews', title: 'Reviews', icon: Star, color: 'from-[#FCD34D] to-[#F59E0B]', score: scores.reviews }
+            ].map((tab) => (
+              <motion.div
+                key={tab.key}
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                onClick={() => setActiveTab(tab.key as any)}
+                className={`cursor-pointer transition-all duration-300 ${
+                  activeTab === tab.key 
+                    ? 'ring-2 ring-[#5F5FFF] ring-offset-2 shadow-xl' 
+                    : 'hover:shadow-lg'
+                }`}
+              >
+                <Card className={`border-0 shadow-xl ${
+                  activeTab === tab.key 
+                    ? 'bg-gradient-to-br from-[#5F5FFF] to-[#7375FD] text-white' 
+                    : 'bg-white hover:shadow-2xl'
+                } transition-all duration-300`}>
+                  <CardContent className="p-4">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <div className={`p-2 rounded-lg ${
+                          activeTab === tab.key 
+                            ? 'bg-white/20' 
+                            : `bg-gradient-to-br ${tab.color}`
+                        }`}>
+                          <tab.icon className={`w-5 h-5 ${
+                            activeTab === tab.key ? 'text-white' : 'text-white'
+                          }`} />
+                        </div>
+                        <h3 className={`font-bold text-lg ${
+                          activeTab === tab.key ? 'text-white' : 'text-gray-800'
+                        }`}>
+                          {tab.title}
+                        </h3>
+                      </div>
+                      <div className="text-right">
+                        <span className={`text-2xl font-bold ${
+                          activeTab === tab.key 
+                            ? 'text-white' 
+                            : tab.score >= averageScore ? 'text-green-600' : 'text-orange-600'
+                        }`}>
+                          {tab.score}
+                        </span>
+                        <span className={`text-sm ${
+                          activeTab === tab.key ? 'text-white/70' : 'text-gray-400'
+                        }`}>/100</span>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
         </motion.div>
 
-        {/* Detailed Breakdown Sections - Horizontal Layout */}
+        {/* Tab Content Area */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6"
+          className="w-full"
         >
-          {/* Search Details */}
-          <Card className="border-0 shadow-xl hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white to-purple-50">
-            <CardHeader className="bg-gradient-to-r from-[#5F5FFF] to-[#7375FD] text-white">
+          {/* Dynamic Tab Content */}
+          <Card className="border-0 shadow-xl bg-gradient-to-br from-white to-purple-50">
+            <CardHeader className={`bg-gradient-to-r ${
+              activeTab === 'search' ? 'from-[#5F5FFF] to-[#7375FD]' :
+              activeTab === 'social' ? 'from-[#16A34A] to-[#4ADE80]' :
+              activeTab === 'local' ? 'from-[#F59E0B] to-[#FCD34D]' :
+              activeTab === 'website' ? 'from-[#9090FD] to-[#7375FD]' :
+              'from-[#FCD34D] to-[#F59E0B]'
+            } text-white`}>
               <CardTitle className="flex items-center gap-2">
-                <Search className="w-5 h-5" />
-                Search Performance
+                {activeTab === 'search' && (
+                  <>
+                    <Search className="w-5 h-5" />
+                    Search Performance
+                  </>
+                )}
+                {activeTab === 'social' && (
+                  <>
+                    <Users className="w-5 h-5" />
+                    Social Presence
+                  </>
+                )}
+                {activeTab === 'local' && (
+                  <>
+                    <MapPin className="w-5 h-5" />
+                    Local SEO
+                  </>
+                )}
+                {activeTab === 'website' && (
+                  <>
+                    <Globe className="w-5 h-5" />
+                    Website Performance
+                  </>
+                )}
+                {activeTab === 'reviews' && (
+                  <>
+                    <Star className="w-5 h-5" />
+                    Reviews & Reputation
+                  </>
+                )}
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4 pt-6">
-              <div className="space-y-4">
-                <div className="flex items-center gap-2 mb-3">
-                  <Brain className="w-5 h-5 text-[#5F5FFF]" />
-                  <span className="text-sm font-semibold text-gray-700">Boostly's AI Recommendations</span>
+              {/* Search Tab Content */}
+              {activeTab === 'search' && (
+                <div className="space-y-4">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Brain className="w-5 h-5 text-[#5F5FFF]" />
+                    <span className="text-sm font-semibold text-gray-700">Boostly's AI Recommendations</span>
+                  </div>
+                  <p className="text-sm text-gray-700 leading-relaxed mb-4">
+                    {aiExplanations.search}
+                  </p>
+                  <ul className="text-sm text-gray-700 space-y-2">
+                    {generateBoostlyNextSteps('search', scores.search, scanResult).map((step, index) => (
+                      <li key={index} className="flex items-start gap-2">
+                        <span className="text-[#5F5FFF] font-medium">•</span>
+                        <span>{step}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  
+                  <div className="pt-4 border-t border-gray-200 space-y-3">
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-600">SEO Score</span>
+                      <span className="font-bold text-lg text-[#5F5FFF]">{scanResult.seo || 0}/100</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-600">Keywords Tracked</span>
+                      <span className="font-medium">{scanResult.keywordAnalysis?.targetKeywords?.length || 0}</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-600">SERP Features</span>
+                      <span className="font-medium">{scanResult.serpFeatures?.length || 0}</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-600">Ranking Keywords</span>
+                      <span className="font-medium">{scanResult.keywords?.filter(k => k.position && k.position <= 20).length || 0}</span>
+                    </div>
+                  </div>
                 </div>
-                <p className="text-sm text-gray-700 leading-relaxed mb-4">
-                  {aiExplanations.search}
-                </p>
-                <ul className="text-sm text-gray-700 space-y-2">
-                  {generateBoostlyNextSteps('search', scores.search, scanResult).map((step, index) => (
-                    <li key={index} className="flex items-start gap-2">
-                      <span className="text-[#5F5FFF] font-medium">•</span>
-                      <span>{step}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              
-              <div className="pt-4 border-t border-gray-200 space-y-3">
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-600">SEO Score</span>
-                  <span className="font-bold text-lg text-[#5F5FFF]">{scanResult.seo || 0}/100</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-600">Keywords Tracked</span>
-                  <span className="font-medium">{scanResult.keywordAnalysis?.targetKeywords?.length || 0}</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-600">SERP Features</span>
-                  <span className="font-medium">{scanResult.serpFeatures?.length || 0}</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-600">Ranking Keywords</span>
-                  <span className="font-medium">{scanResult.keywords?.filter(k => k.position && k.position <= 20).length || 0}</span>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+              )}
 
-          {/* Social Details */}
-          <Card className="border-0 shadow-xl hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white to-green-50">
-            <CardHeader className="bg-gradient-to-r from-[#16A34A] to-[#4ADE80] text-white">
-              <CardTitle className="flex items-center gap-2">
-                <Users className="w-5 h-5" />
-                Social Presence
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4 pt-6">
-              <div className="space-y-4">
-                <div className="flex items-center gap-2 mb-3">
-                  <Brain className="w-5 h-5 text-[#16A34A]" />
-                  <span className="text-sm font-semibold text-gray-700">Boostly's AI Recommendations</span>
+              {/* Social Tab Content */}
+              {activeTab === 'social' && (
+                <div className="space-y-4">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Brain className="w-5 h-5 text-[#16A34A]" />
+                    <span className="text-sm font-semibold text-gray-700">Boostly's AI Recommendations</span>
+                  </div>
+                  <p className="text-sm text-gray-700 leading-relaxed mb-4">
+                    {aiExplanations.social}
+                  </p>
+                  <ul className="text-sm text-gray-700 space-y-2">
+                    {generateBoostlyNextSteps('social', scores.social, scanResult).map((step, index) => (
+                      <li key={index} className="flex items-start gap-2">
+                        <span className="text-[#5F5FFF] font-medium">•</span>
+                        <span>{step}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  
+                  <div className="pt-4 border-t border-gray-200 space-y-3">
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-600">Active Platforms</span>
+                      <span className="font-bold text-lg text-[#16A34A]">
+                        {Object.keys(scanResult.socialMediaLinks || {}).filter(key => scanResult.socialMediaLinks?.[key]).length}/4
+                      </span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-600">Facebook</span>
+                      <span className={scanResult.socialMediaLinks?.facebook ? "text-[#16A34A]" : "text-gray-400"}>
+                        {scanResult.socialMediaLinks?.facebook ? "✓ Active" : "✗ Missing"}
+                      </span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-600">Instagram</span>
+                      <span className={scanResult.socialMediaLinks?.instagram ? "text-[#16A34A]" : "text-gray-400"}>
+                        {scanResult.socialMediaLinks?.instagram ? "✓ Active" : "✗ Missing"}
+                      </span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-600">Engagement Rate</span>
+                      <span className="font-medium">
+                        {scanResult.socialMediaLinks?.facebook?.engagement || "N/A"}
+                      </span>
+                    </div>
+                  </div>
                 </div>
-                <p className="text-sm text-gray-700 leading-relaxed mb-4">
-                  {aiExplanations.social}
-                </p>
-                <ul className="text-sm text-gray-700 space-y-2">
-                  {generateBoostlyNextSteps('social', scores.social, scanResult).map((step, index) => (
-                    <li key={index} className="flex items-start gap-2">
-                      <span className="text-[#5F5FFF] font-medium">•</span>
-                      <span>{step}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              
-              <div className="pt-4 border-t border-gray-200 space-y-3">
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-600">Active Platforms</span>
-                  <span className="font-bold text-lg text-[#16A34A]">
-                    {Object.keys(scanResult.socialMediaLinks || {}).filter(key => scanResult.socialMediaLinks?.[key]).length}/4
-                  </span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-600">Facebook</span>
-                  <span className={scanResult.socialMediaLinks?.facebook ? "text-[#16A34A]" : "text-gray-400"}>
-                    {scanResult.socialMediaLinks?.facebook ? "✓ Active" : "✗ Missing"}
-                  </span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-600">Instagram</span>
-                  <span className={scanResult.socialMediaLinks?.instagram ? "text-[#16A34A]" : "text-gray-400"}>
-                    {scanResult.socialMediaLinks?.instagram ? "✓ Active" : "✗ Missing"}
-                  </span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-600">Engagement Rate</span>
-                  <span className="font-medium">
-                    {scanResult.socialMediaLinks?.facebook?.engagement || "N/A"}
-                  </span>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+              )}
 
-          {/* Local Details */}
-          <Card className="border-0 shadow-xl hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white to-yellow-50">
-            <CardHeader className="bg-gradient-to-r from-[#F59E0B] to-[#FCD34D] text-white">
-              <CardTitle className="flex items-center gap-2">
-                <MapPin className="w-5 h-5" />
-                Local Presence
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4 pt-6">
-              <div className="space-y-4">
-                <div className="flex items-center gap-2 mb-3">
-                  <Brain className="w-5 h-5 text-[#F59E0B]" />
-                  <span className="text-sm font-semibold text-gray-700">Boostly's AI Recommendations</span>
+              {/* Local Tab Content */}
+              {activeTab === 'local' && (
+                <div className="space-y-4">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Brain className="w-5 h-5 text-[#F59E0B]" />
+                    <span className="text-sm font-semibold text-gray-700">Boostly's AI Recommendations</span>
+                  </div>
+                  <p className="text-sm text-gray-700 leading-relaxed mb-4">
+                    {aiExplanations.local}
+                  </p>
+                  <ul className="text-sm text-gray-700 space-y-2">
+                    {generateBoostlyNextSteps('local', scores.local, scanResult).map((step, index) => (
+                      <li key={index} className="flex items-start gap-2">
+                        <span className="text-[#5F5FFF] font-medium">•</span>
+                        <span>{step}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  
+                  <div className="pt-4 border-t border-gray-200 space-y-3">
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-600">Google Rating</span>
+                      <span className="font-bold text-lg text-[#F59E0B]">{scanResult.businessProfile?.rating || 0}/5</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-600">Total Reviews</span>
+                      <span className="font-medium">{scanResult.businessProfile?.totalReviews || 0}</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-600">Profile Completeness</span>
+                      <span className="font-medium">{scanResult.profileAnalysis?.completeness?.score || 0}%</span>
+                    </div>
+                  </div>
                 </div>
-                <p className="text-sm text-gray-700 leading-relaxed mb-4">
-                  {aiExplanations.local}
-                </p>
-                <ul className="text-sm text-gray-700 space-y-2">
-                  {generateBoostlyNextSteps('local', scores.local, scanResult).map((step, index) => (
-                    <li key={index} className="flex items-start gap-2">
-                      <span className="text-[#5F5FFF] font-medium">•</span>
-                      <span>{step}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              
-              <div className="pt-4 border-t border-gray-200 space-y-3">
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-600">Google Rating</span>
-                  <span className="font-bold text-lg text-[#F59E0B]">
-                    {scanResult.businessProfile?.rating || 0}/5 ⭐
-                  </span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-600">Total Reviews</span>
-                  <span className="font-medium">{scanResult.businessProfile?.totalReviews || 0}</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-600">Verified Business</span>
-                  <span className={scanResult.businessProfile?.isVerified ? "text-[#16A34A]" : "text-gray-400"}>
-                    {scanResult.businessProfile?.isVerified ? "✓ Verified" : "✗ Not Verified"}
-                  </span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-600">Profile Complete</span>
-                  <span className="font-medium">
-                    {scanResult.profileAnalysis?.completeness?.score || 0}%
-                  </span>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+              )}
 
-          {/* Website Details */}
-          <Card className="border-0 shadow-xl hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white to-purple-50">
-            <CardHeader className="bg-gradient-to-r from-[#9090FD] to-[#7375FD] text-white">
-              <CardTitle className="flex items-center gap-2">
-                <Globe className="w-5 h-5" />
-                Website Performance
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4 pt-6">
-              <div className="space-y-4">
-                <div className="flex items-center gap-2 mb-3">
-                  <Brain className="w-5 h-5 text-[#7375FD]" />
-                  <span className="text-sm font-semibold text-gray-700">Boostly's AI Recommendations</span>
+              {/* Website Tab Content */}
+              {activeTab === 'website' && (
+                <div className="space-y-4">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Brain className="w-5 h-5 text-[#9090FD]" />
+                    <span className="text-sm font-semibold text-gray-700">Boostly's AI Recommendations</span>
+                  </div>
+                  <p className="text-sm text-gray-700 leading-relaxed mb-4">
+                    {aiExplanations.website}
+                  </p>
+                  <ul className="text-sm text-gray-700 space-y-2">
+                    {generateBoostlyNextSteps('website', scores.website, scanResult).map((step, index) => (
+                      <li key={index} className="flex items-start gap-2">
+                        <span className="text-[#5F5FFF] font-medium">•</span>
+                        <span>{step}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  
+                  <div className="pt-4 border-t border-gray-200 space-y-3">
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-600">Performance Score</span>
+                      <span className="font-bold text-lg text-[#9090FD]">{scanResult.performance || 0}/100</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-600">Mobile Score</span>
+                      <span className="font-medium">{scanResult.mobile || 0}/100</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-600">Domain Authority</span>
+                      <span className="font-medium">{scanResult.domainAuthority || 0}</span>
+                    </div>
+                  </div>
                 </div>
-                <p className="text-sm text-gray-700 leading-relaxed mb-4">
-                  {aiExplanations.website}
-                </p>
-                <ul className="text-sm text-gray-700 space-y-2">
-                  {generateBoostlyNextSteps('website', scores.website, scanResult).map((step, index) => (
-                    <li key={index} className="flex items-start gap-2">
-                      <span className="text-[#5F5FFF] font-medium">•</span>
-                      <span>{step}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              
-              <div className="pt-4 border-t border-gray-200 space-y-3">
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-600">Speed Score</span>
-                  <span className="font-bold text-lg text-[#7375FD]">{scanResult.performance || 0}/100</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-600">Mobile Score</span>
-                  <span className="font-medium">{scanResult.mobile || 0}/100</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-600">Domain Authority</span>
-                  <span className="font-medium">{scanResult.domainAuthority || 0}/100</span>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+              )}
 
-          {/* Reviews Details */}
-          <Card className="border-0 shadow-xl hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white to-orange-50">
-            <CardHeader className="bg-gradient-to-r from-[#FCD34D] to-[#F59E0B] text-white">
-              <CardTitle className="flex items-center gap-2">
-                <Star className="w-5 h-5" />
-                Reviews & Reputation
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4 pt-6">
-              <div className="space-y-4">
-                <div className="flex items-center gap-2 mb-3">
-                  <Brain className="w-5 h-5 text-[#F59E0B]" />
-                  <span className="text-sm font-semibold text-gray-700">Boostly's AI Recommendations</span>
+              {/* Reviews Tab Content */}
+              {activeTab === 'reviews' && (
+                <div className="space-y-4">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Brain className="w-5 h-5 text-[#FCD34D]" />
+                    <span className="text-sm font-semibold text-gray-700">Boostly's AI Recommendations</span>
+                  </div>
+                  <p className="text-sm text-gray-700 leading-relaxed mb-4">
+                    {aiExplanations.reviews}
+                  </p>
+                  <ul className="text-sm text-gray-700 space-y-2">
+                    {generateBoostlyNextSteps('reviews', scores.reviews, scanResult).map((step, index) => (
+                      <li key={index} className="flex items-start gap-2">
+                        <span className="text-[#5F5FFF] font-medium">•</span>
+                        <span>{step}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  
+                  <div className="pt-4 border-t border-gray-200 space-y-3">
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-600">Overall Rating</span>
+                      <span className="font-bold text-lg text-[#FCD34D]">{scanResult.businessProfile?.rating || 0}/5</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-600">Positive Sentiment</span>
+                      <span className="font-medium">{scanResult.reviewsAnalysis?.sentiment?.positive || 0}%</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-600">Review Volume</span>
+                      <span className="font-medium">{scanResult.businessProfile?.totalReviews || 0}</span>
+                    </div>
+                  </div>
                 </div>
-                <p className="text-sm text-gray-700 leading-relaxed mb-4">
-                  {aiExplanations.reviews}
-                </p>
-                <ul className="text-sm text-gray-700 space-y-2">
-                  {generateBoostlyNextSteps('reviews', scores.reviews, scanResult).map((step, index) => (
-                    <li key={index} className="flex items-start gap-2">
-                      <span className="text-[#5F5FFF] font-medium">•</span>
-                      <span>{step}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              
-              <div className="pt-4 border-t border-gray-200 space-y-3">
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-600">Average Rating</span>
-                  <span className="font-bold text-lg text-[#F59E0B]">
-                    {scanResult.businessProfile?.rating || 0}/5 ⭐
-                  </span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-600">Total Reviews</span>
-                  <span className="font-medium">{scanResult.businessProfile?.totalReviews || 0}</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-600">Sentiment Score</span>
-                  <span className="font-medium">
-                    {scanResult.reviewsAnalysis?.sentiment?.positive > 70 ? "😊 Positive" : 
-                     scanResult.reviewsAnalysis?.sentiment?.positive > 40 ? "😐 Mixed" : "😔 Needs Work"}
-                  </span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-600">Response Rate</span>
-                  <span className="font-medium">
-                    {scanResult.businessProfile?.responseRate || 0}%
-                  </span>
-                </div>
-              </div>
+              )}
             </CardContent>
           </Card>
         </motion.div>
