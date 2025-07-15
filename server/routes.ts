@@ -340,20 +340,38 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // If placeId is provided, get the actual business profile data
       if (placeId && GOOGLE_API_KEY) {
         try {
+          console.log('Fetching business profile for fun facts with placeId:', placeId);
           const businessProfile = await googleBusinessService.getBusinessProfile(placeId as string);
+          console.log('Business profile received:', {
+            name: businessProfile?.name,
+            address: businessProfile?.address,
+            originalCity: city,
+            originalRestaurant: restaurant
+          });
+          
           if (businessProfile) {
             actualRestaurant = businessProfile.name || restaurant as string;
             // Extract city from business profile address
             if (businessProfile.address) {
+              console.log('Extracting city from address:', businessProfile.address);
               const cityMatch = businessProfile.address.match(/,\s*([^,]+),\s*[A-Z]{2}/);
               if (cityMatch) {
                 actualCity = cityMatch[1];
+                console.log('Extracted city:', actualCity);
+              } else {
+                console.log('No city match found in address');
               }
+            } else {
+              console.log('No address found in business profile');
             }
+          } else {
+            console.log('No business profile returned');
           }
         } catch (error) {
           console.error('Error fetching business profile for fun facts:', error);
         }
+      } else {
+        console.log('No placeId or Google API key available:', { placeId: !!placeId, googleApiKey: !!GOOGLE_API_KEY });
       }
       
       console.log('Generating fun facts for:', { actualCity, actualRestaurant, originalCity: city, originalRestaurant: restaurant });
