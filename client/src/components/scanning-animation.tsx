@@ -97,12 +97,11 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
     }
   }, [restaurantName]);
 
-  // Cycle through fun facts during scanning
+  // Show/hide fun facts based on scan progress
   useEffect(() => {
-    console.log('Fun facts cycling effect:', { funFactsLength: funFacts.length, progress, showFunFact });
+    console.log('Fun facts visibility effect:', { funFactsLength: funFacts.length, progress, showFunFact });
     
     if (funFacts.length > 0 && progress > 0 && progress <= 100) {
-      // Show first fact immediately
       setShowFunFact(true);
       
       // Set initial position if not already set
@@ -121,11 +120,21 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
         ];
         setFactPosition(positions[Math.floor(Math.random() * positions.length)]);
       }
+    } else {
+      setShowFunFact(false);
+    }
+  }, [funFacts, progress]);
+
+  // Separate effect for cycling through fun facts with consistent timing
+  useEffect(() => {
+    if (funFacts.length > 0 && showFunFact) {
+      console.log('Starting fun facts cycling timer at:', new Date().toLocaleTimeString());
       
       const interval = setInterval(() => {
+        const timestamp = new Date().toLocaleTimeString();
         setCurrentFactIndex((prevIndex) => {
           const newIndex = (prevIndex + 1) % funFacts.length;
-          console.log('Cycling to fun fact:', newIndex, funFacts[newIndex]);
+          console.log(`[${timestamp}] Cycling to fun fact ${newIndex} (${prevIndex} → ${newIndex}):`, funFacts[newIndex]);
           
           // Generate random position for next fact
           const positions = [
@@ -145,13 +154,14 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
           
           return newIndex;
         });
-      }, 5000); // Change fact every 5 seconds per user request
+      }, 5000); // Change fact every 5 seconds consistently
 
-      return () => clearInterval(interval);
-    } else {
-      setShowFunFact(false);
+      return () => {
+        console.log('Clearing fun facts cycling timer at:', new Date().toLocaleTimeString());
+        clearInterval(interval);
+      };
     }
-  }, [funFacts, progress]);
+  }, [funFacts.length, showFunFact]); // Only restart when facts change or visibility changes
 
   // Generate enhanced floating particles with colors
   useEffect(() => {
