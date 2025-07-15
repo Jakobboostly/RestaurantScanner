@@ -76,6 +76,19 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 15, 2025. Fixed Facebook page detection URL formatting issues:
+  - Resolved critical URL formatting bug where domains like "theblindpigpub.net" were causing Facebook detection to fail
+  - Fixed social media detector to properly add https:// prefix to domain-only URLs
+  - Facebook detection now successfully finds pages like "http://www.facebook.com/100000343564478" from restaurant websites
+  - Enhanced logging shows actual Facebook links being detected and validated
+  - Zembra API Facebook page verification working (shows "page not found" for private/deleted pages, confirming detection works)
+  - Enhanced Facebook detector system is functional and significantly more effective at finding restaurant Facebook pages
+- July 15, 2025. Zembratech sentiment analysis investigation:
+  - Discovered that sophisticated sentiment analysis system exists in ZembraTechReviewsService but is not functioning
+  - System has complete sentiment analysis: analyzeSentiment() method, sentiment distribution, key themes extraction
+  - Issue: Zembratech API (api.zembratech.com) returning network errors (ENOTFOUND) preventing actual sentiment analysis
+  - Current state: Reviews section shows basic Google Business Profile data without sentiment analysis
+  - Recommendation: Verify Zembratech API credentials and endpoints to enable full sentiment analysis capabilities
 - July 15, 2025. Enhanced Facebook page detection with multi-layered approach:
   - Created EnhancedFacebookDetector service with comprehensive 6-step detection strategy
   - Step 1: Enhanced HTML/DOM scanning with expanded selectors and patterns

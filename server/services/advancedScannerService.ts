@@ -981,10 +981,16 @@ export class AdvancedScannerService {
     }
     
     // Try to get real reviews from Zembratech API
-    if (this.zembraReviewsService && placeId) {
+    if (this.zembraReviewsService && businessProfile?.name) {
       try {
-        realReviewsData = await this.zembraReviewsService.getReviewAnalysis(placeId);
+        realReviewsData = await this.zembraReviewsService.getReviewAnalysis(
+          businessProfile.name,
+          businessProfile.domain,
+          businessProfile.location || businessProfile.address
+        );
         console.log('Successfully got real reviews data from Zembratech');
+        console.log('Reviews sentiment distribution:', realReviewsData.sentimentDistribution);
+        console.log('Key themes found:', realReviewsData.keyThemes);
       } catch (error) {
         console.error('Failed to get real reviews from Zembratech:', error);
       }
