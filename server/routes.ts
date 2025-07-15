@@ -328,14 +328,16 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Fun facts endpoint
   app.get("/api/fun-facts", async (req, res) => {
     try {
-      const { city, restaurantName } = req.query;
+      const { city, restaurant } = req.query;
       
-      if (!city || !restaurantName) {
+      if (!city || !restaurant) {
         return res.status(400).json({ error: "City and restaurant name are required" });
       }
       
-      const funFacts = await funFactsService.generateFunFacts(city as string, restaurantName as string);
-      res.json({ funFacts });
+      console.log('Generating fun facts for:', { city, restaurant });
+      const funFacts = await funFactsService.generateFunFacts(city as string, restaurant as string);
+      console.log('Generated fun facts:', funFacts);
+      res.json({ facts: funFacts });
     } catch (error) {
       console.error('Error generating fun facts:', error);
       res.status(500).json({ error: "Failed to generate fun facts" });

@@ -52,11 +52,11 @@ export default function ScanningAnimation({ progress, status, restaurantName, cu
         setCityName(city);
         
         console.log('Fetching fun facts for:', city, restaurantName);
-        const response = await fetch(`/api/fun-facts?city=${encodeURIComponent(city)}&restaurantName=${encodeURIComponent(restaurantName)}`);
+        const response = await fetch(`/api/fun-facts?city=${encodeURIComponent(city)}&restaurant=${encodeURIComponent(restaurantName)}`);
         if (response.ok) {
           const data = await response.json();
-          console.log('Fun facts received:', data.funFacts);
-          setFunFacts(data.funFacts);
+          console.log('Fun facts received:', data.facts);
+          setFunFacts(data.facts);
           
           // Initialize position for first fact
           const positions = [
@@ -131,7 +131,7 @@ export default function ScanningAnimation({ progress, status, restaurantName, cu
           
           return newIndex;
         });
-      }, 3000); // Change fact every 3 seconds for more action
+      }, 5000); // Change fact every 5 seconds per user request
 
       return () => clearInterval(interval);
     } else {
