@@ -457,14 +457,17 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                 </div>
               </div>
               
-              <div className="pt-3">
-                <div className="flex items-center gap-2">
-                  <Lightbulb className="w-4 h-4 text-yellow-500" />
-                  <span className="text-xs font-medium text-gray-600">Boostly Solutions</span>
+              <div className="pt-4 border-t border-gray-200">
+                <div className="flex items-center gap-2 mb-3">
+                  <Lightbulb className="w-5 h-5 text-yellow-500" />
+                  <span className="text-sm font-semibold text-gray-700">Boostly Solutions</span>
                 </div>
-                <ul className="mt-2 text-xs text-gray-600 space-y-1">
+                <ul className="mt-3 text-sm text-gray-700 space-y-2">
                   {generateBoostlyNextSteps('search', scores.search, scanResult).map((step, index) => (
-                    <li key={index}>• {step}</li>
+                    <li key={index} className="flex items-start gap-2">
+                      <span className="text-[#5F5FFF] font-medium">•</span>
+                      <span>{step}</span>
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -517,14 +520,17 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                 </div>
               </div>
               
-              <div className="pt-3">
-                <div className="flex items-center gap-2">
-                  <Lightbulb className="w-4 h-4 text-yellow-500" />
-                  <span className="text-xs font-medium text-gray-600">Boostly Solutions</span>
+              <div className="pt-4 border-t border-gray-200">
+                <div className="flex items-center gap-2 mb-3">
+                  <Lightbulb className="w-5 h-5 text-yellow-500" />
+                  <span className="text-sm font-semibold text-gray-700">Boostly Solutions</span>
                 </div>
-                <ul className="mt-2 text-xs text-gray-600 space-y-1">
+                <ul className="mt-3 text-sm text-gray-700 space-y-2">
                   {generateBoostlyNextSteps('social', scores.social, scanResult).map((step, index) => (
-                    <li key={index}>• {step}</li>
+                    <li key={index} className="flex items-start gap-2">
+                      <span className="text-[#5F5FFF] font-medium">•</span>
+                      <span>{step}</span>
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -575,14 +581,17 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                 </div>
               </div>
               
-              <div className="pt-3">
-                <div className="flex items-center gap-2">
-                  <Lightbulb className="w-4 h-4 text-yellow-500" />
-                  <span className="text-xs font-medium text-gray-600">Boostly Solutions</span>
+              <div className="pt-4 border-t border-gray-200">
+                <div className="flex items-center gap-2 mb-3">
+                  <Lightbulb className="w-5 h-5 text-yellow-500" />
+                  <span className="text-sm font-semibold text-gray-700">Boostly Solutions</span>
                 </div>
-                <ul className="mt-2 text-xs text-gray-600 space-y-1">
+                <ul className="mt-3 text-sm text-gray-700 space-y-2">
                   {generateBoostlyNextSteps('local', scores.local, scanResult).map((step, index) => (
-                    <li key={index}>• {step}</li>
+                    <li key={index} className="flex items-start gap-2">
+                      <span className="text-[#5F5FFF] font-medium">•</span>
+                      <span>{step}</span>
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -617,26 +626,24 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                   <span className="text-sm text-gray-600">Mobile Score</span>
                   <span className="font-medium">{scanResult.mobile || 0}/100</span>
                 </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-600">Load Time</span>
-                  <span className="font-medium">
-                    {scanResult.mobileExperience?.loadTime || "N/A"}
-                  </span>
-                </div>
+
                 <div className="flex justify-between items-center">
                   <span className="text-sm text-gray-600">Domain Authority</span>
                   <span className="font-medium">{scanResult.domainAuthority || 0}/100</span>
                 </div>
               </div>
               
-              <div className="pt-3">
-                <div className="flex items-center gap-2">
-                  <Lightbulb className="w-4 h-4 text-yellow-500" />
-                  <span className="text-xs font-medium text-gray-600">Boostly Solutions</span>
+              <div className="pt-4 border-t border-gray-200">
+                <div className="flex items-center gap-2 mb-3">
+                  <Lightbulb className="w-5 h-5 text-yellow-500" />
+                  <span className="text-sm font-semibold text-gray-700">Boostly Solutions</span>
                 </div>
-                <ul className="mt-2 text-xs text-gray-600 space-y-1">
+                <ul className="mt-3 text-sm text-gray-700 space-y-2">
                   {generateBoostlyNextSteps('website', scores.website, scanResult).map((step, index) => (
-                    <li key={index}>• {step}</li>
+                    <li key={index} className="flex items-start gap-2">
+                      <span className="text-[#5F5FFF] font-medium">•</span>
+                      <span>{step}</span>
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -688,14 +695,17 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                 </div>
               </div>
               
-              <div className="pt-3">
-                <div className="flex items-center gap-2">
-                  <Lightbulb className="w-4 h-4 text-yellow-500" />
-                  <span className="text-xs font-medium text-gray-600">Boostly Solutions</span>
+              <div className="pt-4 border-t border-gray-200">
+                <div className="flex items-center gap-2 mb-3">
+                  <Lightbulb className="w-5 h-5 text-yellow-500" />
+                  <span className="text-sm font-semibold text-gray-700">Boostly Solutions</span>
                 </div>
-                <ul className="mt-2 text-xs text-gray-600 space-y-1">
+                <ul className="mt-3 text-sm text-gray-700 space-y-2">
                   {generateBoostlyNextSteps('reviews', scores.reviews, scanResult).map((step, index) => (
-                    <li key={index}>• {step}</li>
+                    <li key={index} className="flex items-start gap-2">
+                      <span className="text-[#5F5FFF] font-medium">•</span>
+                      <span>{step}</span>
+                    </li>
                   ))}
                 </ul>
               </div>
