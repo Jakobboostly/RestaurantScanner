@@ -265,10 +265,10 @@ export default function HomePage() {
               transition={{ delay: 0.1 }}
               className="text-5xl md:text-7xl font-bold text-gray-900 mb-8 leading-tight"
             >
-              Restaurant Website
+              Restaurant
               <br />
               <span className="bg-gradient-to-r from-[#28008F] to-purple-600 bg-clip-text text-transparent">
-                Performance Scanner
+                Health Scan
               </span>
             </motion.h1>
             
@@ -278,8 +278,7 @@ export default function HomePage() {
               transition={{ delay: 0.2 }}
               className="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed"
             >
-              See why you're losing customers online. Get instant analysis of your restaurant's 
-              website performance, SEO rankings, and customer experience.
+              "How healthy is your restaurant?" Use our free scan to run a custom analysis on your restaurant.
             </motion.p>
           </div>
 
