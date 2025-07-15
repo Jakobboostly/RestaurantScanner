@@ -55,6 +55,21 @@ export default function ScanningAnimation({ progress, status, restaurantName, cu
           const data = await response.json();
           console.log('Fun facts received:', data.funFacts);
           setFunFacts(data.funFacts);
+          
+          // Initialize position for first fact
+          const positions = [
+            { side: 'left', top: '20%' },
+            { side: 'right', top: '25%' },
+            { side: 'left', top: '40%' },
+            { side: 'right', top: '45%' },
+            { side: 'left', top: '65%' },
+            { side: 'right', top: '70%' },
+            { side: 'left', top: '85%' },
+            { side: 'right', top: '30%' },
+            { side: 'left', top: '55%' },
+            { side: 'right', top: '80%' }
+          ];
+          setFactPosition(positions[Math.floor(Math.random() * positions.length)]);
         }
       } catch (error) {
         console.error('Error fetching fun facts:', error);
@@ -70,9 +85,26 @@ export default function ScanningAnimation({ progress, status, restaurantName, cu
   useEffect(() => {
     console.log('Fun facts cycling effect:', { funFactsLength: funFacts.length, progress, showFunFact });
     
-    if (funFacts.length > 0 && progress > 0 && progress < 100) {
+    if (funFacts.length > 0 && progress > 0 && progress <= 100) {
       // Show first fact immediately
       setShowFunFact(true);
+      
+      // Set initial position if not already set
+      if (!factPosition || factPosition.side === 'right' && factPosition.top === '50%') {
+        const positions = [
+          { side: 'left', top: '20%' },
+          { side: 'right', top: '25%' },
+          { side: 'left', top: '40%' },
+          { side: 'right', top: '45%' },
+          { side: 'left', top: '65%' },
+          { side: 'right', top: '70%' },
+          { side: 'left', top: '85%' },
+          { side: 'right', top: '30%' },
+          { side: 'left', top: '55%' },
+          { side: 'right', top: '80%' }
+        ];
+        setFactPosition(positions[Math.floor(Math.random() * positions.length)]);
+      }
       
       const interval = setInterval(() => {
         setCurrentFactIndex((prevIndex) => {
@@ -687,7 +719,7 @@ export default function ScanningAnimation({ progress, status, restaurantName, cu
 
         {/* Fun Facts Display */}
         <AnimatePresence mode="wait">
-          {funFacts.length > 0 && progress > 0 && progress < 100 && (
+          {funFacts.length > 0 && progress > 0 && progress <= 100 && (
             <motion.div
               key={`${currentFactIndex}-${factPosition.side}-${factPosition.top}`}
               initial={{ 
