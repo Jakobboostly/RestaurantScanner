@@ -76,6 +76,16 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 15, 2025. Implemented premium AI-powered scoring dashboard with Boostly branding:
+  - Completely replaced tabbed interface with premium scoring system featuring 5 category meters
+  - Added OpenAI API integration for personalized AI explanations of each scoring section
+  - Implemented Boostly color palette throughout: purple (#5F5FFF, #9090FD), green (#16A34A, #4ADE80), yellow (#F59E0B, #FCD34D), and gradient combinations
+  - Created horizontal layout with 5 breakdown cards (Search, Social, Local, Website, Reviews) that display AI insights
+  - Each category shows AI analysis, key metrics, and next steps with premium gradient headers
+  - Overall score displayed prominently with comparison to 75% industry average
+  - Added brain icon for AI analysis sections and lightbulb icon for actionable next steps
+  - Created `/api/ai/analyze-performance` endpoint that uses OpenAI gpt-4o model for contextual insights
+  - Premium design features hover effects, shadow transitions, and gradient backgrounds
 - July 14, 2025. Removed health section from dashboard:
   - Removed Traffic Light Scorecard component and its health tab
   - Dashboard now has 6 tabs: Keywords, Competitors, SERP, Local SEO, Profile, and ROI Impact

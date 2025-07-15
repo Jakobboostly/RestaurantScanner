@@ -7,6 +7,7 @@ import { restaurantSearchResultSchema, scanResultSchema } from "@shared/schema";
 import { JsonSanitizer } from "./utils/jsonSanitizer";
 import { EnhancedDataForSeoService } from "./services/enhancedDataForSeoService";
 import { z } from "zod";
+import OpenAI from "openai";
 
 
 
@@ -262,6 +263,62 @@ export async function registerRoutes(app: Express): Promise<Server> {
     return res.status(503).json({ 
       error: "Advanced scanning endpoint has been migrated to /api/scan/professional" 
     });
+  });
+
+  // AI analyze performance endpoint
+  app.post("/api/ai/analyze-performance", async (req, res) => {
+    try {
+      const { scanResult, restaurantName, scores } = req.body;
+      
+      // Use OpenAI to generate insightful explanations
+      const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+      
+      const systemPrompt = `You are a digital marketing expert analyzing restaurant performance data. Generate concise, personalized insights based on actual data. Each explanation should be 2-3 sentences that reference specific metrics and provide actionable context. Write in a professional yet friendly tone.`;
+      
+      const userPrompt = `Generate personalized explanations for ${restaurantName}'s performance scores:
+      
+      Search Score: ${scores.search}/100 (SEO: ${scanResult.seo}/100, Keywords: ${scanResult.keywordAnalysis?.targetKeywords?.length || 0})
+      Social Score: ${scores.social}/100 (Platforms: ${Object.keys(scanResult.socialMediaLinks || {}).filter(k => scanResult.socialMediaLinks[k]).length})
+      Local Score: ${scores.local}/100 (Rating: ${scanResult.businessProfile?.rating || 0}/5, Reviews: ${scanResult.businessProfile?.totalReviews || 0})
+      Website Score: ${scores.website}/100 (Performance: ${scanResult.performance}/100, Mobile: ${scanResult.mobile}/100)
+      Reviews Score: ${scores.reviews}/100 (Sentiment: ${scanResult.reviewsAnalysis?.sentiment?.positive || 0}% positive)
+      
+      For each category, explain what's working well or needs improvement based on the actual data.`;
+      
+      const completion = await openai.chat.completions.create({
+        model: "gpt-4o",
+        messages: [
+          { role: "system", content: systemPrompt },
+          { role: "user", content: userPrompt }
+        ],
+        response_format: { type: "json_object" },
+      });
+      
+      const result = JSON.parse(completion.choices[0].message.content || '{}');
+      
+      res.json({
+        explanations: {
+          search: result.search || `With an SEO score of ${scanResult.seo}/100 and ${scanResult.keywordAnalysis?.targetKeywords?.length || 0} keywords tracked, ${restaurantName} has room to improve search visibility. Focus on optimizing meta descriptions and building quality backlinks to compete better in local search results.`,
+          social: result.social || `${restaurantName} currently has ${Object.keys(scanResult.socialMediaLinks || {}).filter(k => scanResult.socialMediaLinks[k]).length} active social platforms. ${scores.social >= 75 ? "Great social presence!" : "Consider expanding to Instagram and posting regular updates to engage with customers."}`,
+          local: result.local || `With a ${scanResult.businessProfile?.rating || 0}/5 rating from ${scanResult.businessProfile?.totalReviews || 0} reviews, ${restaurantName} ${scores.local >= 75 ? "shows strong local presence" : "needs to focus on reputation management"}. ${scanResult.businessProfile?.isVerified ? "Being verified helps credibility." : "Verify your listing to boost trust."}`,
+          website: result.website || `Your website scores ${scanResult.performance}/100 for speed and ${scanResult.mobile}/100 for mobile experience. ${scores.website >= 75 ? "Performance is solid" : "Improving load times will reduce bounce rates"} and directly impact customer conversions.`,
+          reviews: result.reviews || `With ${scanResult.reviewsAnalysis?.sentiment?.positive || 0}% positive sentiment across ${scanResult.businessProfile?.totalReviews || 0} reviews, ${restaurantName} ${scores.reviews >= 75 ? "maintains excellent reputation" : "has opportunities to improve customer satisfaction"}. Responding to reviews shows you care about feedback.`
+        }
+      });
+    } catch (error) {
+      console.error('AI analysis error:', error);
+      
+      // Fallback explanations if AI fails
+      res.json({
+        explanations: {
+          search: `Your SEO score of ${req.body.scanResult.seo}/100 indicates opportunities to improve search visibility. Focus on local keywords and optimizing your Google Business Profile to attract more nearby customers.`,
+          social: `You're active on ${Object.keys(req.body.scanResult.socialMediaLinks || {}).filter(k => req.body.scanResult.socialMediaLinks[k]).length} social platforms. Regular posting and customer engagement on Facebook and Instagram can significantly boost your online presence.`,
+          local: `With ${req.body.scanResult.businessProfile?.totalReviews || 0} reviews and a ${req.body.scanResult.businessProfile?.rating || 0}/5 rating, you're building local trust. Keep encouraging satisfied customers to leave reviews and respond promptly to all feedback.`,
+          website: `Your website performance score of ${req.body.scanResult.performance}/100 affects customer experience. Optimizing images and improving mobile responsiveness will help convert more visitors into customers.`,
+          reviews: `Customer sentiment is ${req.body.scanResult.reviewsAnalysis?.sentiment?.positive || 0}% positive. Maintaining high review scores and addressing concerns quickly strengthens your reputation and attracts new diners.`
+        }
+      });
+    }
   });
 
   const httpServer = createServer(app);
