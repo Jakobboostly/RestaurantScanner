@@ -76,6 +76,18 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 15, 2025. Enhanced Facebook page detection with multi-layered approach:
+  - Created EnhancedFacebookDetector service with comprehensive 6-step detection strategy
+  - Step 1: Enhanced HTML/DOM scanning with expanded selectors and patterns
+  - Step 2: Google Places API integration for social media links
+  - Step 3: Recursive scanning of contact, about, and social pages
+  - Step 4: Facebook Pixel and Open Graph meta tag detection
+  - Step 5: Business name + location search with heuristic verification
+  - Step 6: External database fallback support (framework ready)
+  - Integrated enhanced detector into AdvancedScannerService for improved social media analysis
+  - Added confidence scoring (high/medium/low) and source tracking for Facebook page results
+  - Enhanced social media detection now provides verification status and detection method
+  - System maintains authentic data integrity while significantly improving Facebook page discovery rates
 - July 15, 2025. Implemented premium AI-powered scoring dashboard with Boostly branding:
   - Completely replaced tabbed interface with premium scoring system featuring 5 category meters
   - Added OpenAI API integration for personalized AI explanations of each scoring section

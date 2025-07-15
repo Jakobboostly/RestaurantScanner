@@ -4,6 +4,7 @@ import { ZembraTechReviewsService } from './zembraTechReviewsService.js';
 import { AIRecommendationService } from './aiRecommendationService.js';
 import { GoogleReviewsService } from './googleReviewsService.js';
 import { SocialMediaDetector } from './socialMediaDetector.js';
+import { EnhancedFacebookDetector } from './enhancedFacebookDetector.js';
 import { ScanResult } from '@shared/schema';
 import axios from 'axios';
 import * as cheerio from 'cheerio';
@@ -36,6 +37,7 @@ export class AdvancedScannerService {
   private aiRecommendationService: AIRecommendationService;
   private googleReviewsService: GoogleReviewsService;
   private socialMediaDetector: SocialMediaDetector;
+  private enhancedFacebookDetector: EnhancedFacebookDetector;
 
   constructor(
     googleApiKey: string,
@@ -50,6 +52,7 @@ export class AdvancedScannerService {
     this.aiRecommendationService = new AIRecommendationService();
     this.googleReviewsService = new GoogleReviewsService(googleApiKey);
     this.socialMediaDetector = new SocialMediaDetector(zembraApiKey);
+    this.enhancedFacebookDetector = new EnhancedFacebookDetector();
     
     if (zembraApiKey) {
       this.zembraReviewsService = new ZembraTechReviewsService(zembraApiKey);
@@ -194,7 +197,7 @@ export class AdvancedScannerService {
       });
       
       const socialMediaPromise = Promise.race([
-        this.socialMediaDetector.detectSocialMediaLinks(domain),
+        this.enhancedSocialMediaDetection(domain, restaurantName, businessProfile, placeId),
         new Promise((_, reject) => 
           setTimeout(() => reject(new Error('Social media detection timeout')), 3500)
         )
@@ -1982,5 +1985,45 @@ export class AdvancedScannerService {
     }
 
     return weaknesses;
+  }
+
+  private async enhancedSocialMediaDetection(
+    domain: string,
+    restaurantName: string,
+    businessProfile: any,
+    placeId: string
+  ): Promise<any> {
+    try {
+      // Get traditional social media links
+      const traditionalLinks = await this.socialMediaDetector.detectSocialMediaLinks(domain);
+      
+      // Use enhanced Facebook detection
+      const businessAddress = businessProfile?.address || businessProfile?.vicinity;
+      const businessPhone = businessProfile?.phone;
+      
+      const facebookResult = await this.enhancedFacebookDetector.detectFacebookPage(
+        `https://${domain}`,
+        restaurantName,
+        businessAddress,
+        businessPhone,
+        placeId
+      );
+      
+      // Merge results
+      const enhancedLinks = { ...traditionalLinks };
+      
+      if (facebookResult) {
+        enhancedLinks.facebook = facebookResult.url;
+        enhancedLinks.facebookVerified = facebookResult.verified;
+        enhancedLinks.facebookConfidence = facebookResult.confidence;
+        enhancedLinks.facebookSource = facebookResult.source;
+      }
+      
+      return enhancedLinks;
+    } catch (error) {
+      console.error('Enhanced social media detection failed:', error);
+      // Fallback to traditional detection
+      return await this.socialMediaDetector.detectSocialMediaLinks(domain);
+    }
   }
 }
