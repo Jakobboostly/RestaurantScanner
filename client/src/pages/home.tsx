@@ -278,7 +278,7 @@ export default function HomePage() {
               transition={{ delay: 0.2 }}
               className="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed"
             >
-              How healthy is your restaurant? Use our free scan to run a custom analysis on your restaurant.
+              How healthy is your restaurant? Use our free scan to run a custom analysis on your restaurant & see how you compare to restaurants in your area.
             </motion.p>
           </div>
 
