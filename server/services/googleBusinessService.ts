@@ -6,6 +6,7 @@ export interface GoogleBusinessProfile {
   totalReviews: number;
   website?: string;
   phone?: string;
+  address?: string;
   photos: {
     total: number;
     quality: 'excellent' | 'good' | 'fair' | 'poor';
@@ -57,7 +58,7 @@ export class GoogleBusinessService {
       const detailsResponse = await axios.get('https://maps.googleapis.com/maps/api/place/details/json', {
         params: {
           place_id: placeId,
-          fields: 'name,rating,user_ratings_total,photos,reviews,business_status,website,formatted_phone_number',
+          fields: 'name,rating,user_ratings_total,photos,reviews,business_status,website,formatted_phone_number,formatted_address',
           key: this.apiKey,
           reviews_no_translations: true
         }
@@ -71,6 +72,8 @@ export class GoogleBusinessService {
       }
 
       const place = detailsResponse.data.result;
+      console.log('Raw place data keys:', Object.keys(place || {}));
+      console.log('Raw formatted_address:', place?.formatted_address);
       
       if (!place) {
         console.error('Google Places API Response:', detailsResponse.data);
@@ -83,6 +86,7 @@ export class GoogleBusinessService {
         totalReviews: place.user_ratings_total,
         website: place.website ? 'Available' : 'Not available',
         phone: place.formatted_phone_number ? 'Available' : 'Not available',
+        address: place.formatted_address ? place.formatted_address : 'Not available',
         hasPhotos: !!place.photos,
         photoCount: place.photos ? place.photos.length : 0,
         hasReviews: !!place.reviews,
@@ -101,6 +105,7 @@ export class GoogleBusinessService {
         totalReviews: place.user_ratings_total || 0,
         website: place.website || undefined,
         phone: place.formatted_phone_number || undefined,
+        address: place.formatted_address || undefined,
         photos: photoAnalysis,
         reviews: reviewAnalysis,
         isVerified: place.business_status === 'OPERATIONAL',

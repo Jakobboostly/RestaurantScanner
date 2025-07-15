@@ -76,6 +76,15 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 15, 2025. Fixed critical fun facts API issue - now uses authentic Google Places data:
+  - Resolved "Local Area" and "This Restaurant" placeholder text by adding formatted_address field to Google Places API request
+  - Fun facts now display real city names (e.g., "Omaha") extracted from Google Places API business profile addresses
+  - Restaurant names use authentic Google Places API data instead of fallback text
+  - Enhanced debugging system tracks Google Places API response data and city extraction process
+  - OpenAI GPT-4o generates contextual fun facts using real business profile data (restaurant name, city, address)
+  - Speech bubbles now display location-specific facts (e.g., "Omaha is home to the Henry Doorly Zoo") and business-specific facts
+  - Fixed placeId parameter flow from frontend ScanningAnimation component to fun facts API endpoint
+  - GoogleBusinessService now fetches formatted_address field and passes to fun facts generation system
 - July 15, 2025. Updated scanning animation to professional light purple design:
   - Changed background from dark futuristic theme to light purple gradient using Boostly color palette (#F6F3FE, #E8E2FF)
   - Removed excessive glow effects and spinning logo animations for more professional appearance

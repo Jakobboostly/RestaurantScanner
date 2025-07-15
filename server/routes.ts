@@ -371,7 +371,11 @@ export async function registerRoutes(app: Express): Promise<Server> {
           console.error('Error fetching business profile for fun facts:', error);
         }
       } else {
-        console.log('No placeId or Google API key available:', { placeId: !!placeId, googleApiKey: !!GOOGLE_API_KEY });
+        console.log('No placeId or Google API key available:', { 
+          placeId: !!placeId, 
+          googleApiKey: !!GOOGLE_API_KEY,
+          actualApiKey: GOOGLE_API_KEY?.substring(0, 10) + '...' || 'undefined'
+        });
       }
       
       console.log('Generating fun facts for:', { actualCity, actualRestaurant, originalCity: city, originalRestaurant: restaurant });
