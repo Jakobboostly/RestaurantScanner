@@ -329,6 +329,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
 
         {/* Overall Score - Hero Section */}
         <motion.div
+          key="overall-score"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2 }}
@@ -418,9 +419,10 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
 
         {/* Tab Content Area */}
         <motion.div
+          key={`tab-content-${activeTab}`}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6 }}
+          transition={{ delay: 0.1 }}
           className="w-full"
         >
           {/* Dynamic Tab Content */}
