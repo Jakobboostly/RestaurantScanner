@@ -79,6 +79,7 @@ This is a comprehensive restaurant website scanner application built with React 
 - July 16, 2025. Successfully fixed SERP screenshot functionality for restaurant ranking visualization:
   - Resolved Google search result selector timeout issues by removing problematic element waits
   - Screenshot service now successfully captures Google search results (36KB+ screenshot files)
+  - Fixed UI display issue where screenshots showed as alt text instead of actual images
   - Screenshots display actual Google search results with restaurant ranking positions
   - Enhanced timeout handling and error recovery for reliable screenshot capture
   - Screenshot service works within 30-second scan timeframes with proper browser management

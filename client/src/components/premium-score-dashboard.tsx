@@ -628,7 +628,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                               {/* Screenshot */}
                               <div className="relative">
                                 <img
-                                  src={`data:image/png;base64,${screenshot.screenshot}`}
+                                  src={`data:image/png;base64,${screenshot.screenshotBase64}`}
                                   alt={`Google search results for "${screenshot.keyword}"`}
                                   className="w-full h-auto rounded border border-gray-300 shadow-sm"
                                 />
