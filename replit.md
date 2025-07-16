@@ -76,11 +76,24 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
-- July 16, 2025. Enhanced social media detection with comprehensive Instagram URL support:
+- July 16, 2025. Implemented Google SERP screenshot functionality for ranking visualization:
+  - Created SerpScreenshotService using Puppeteer to capture Google search results
+  - Added SERP screenshot capture with restaurant ranking analysis and local pack detection
+  - Integrated screenshot functionality into advanced scanner workflow during Phase 6
+  - Enhanced schema with serpScreenshots array containing keyword, location, base64 image, and ranking data
+  - Added comprehensive SERP analysis including restaurant position, local pack results, and competitor visibility
+  - Created dedicated Google Search Rankings section in premium dashboard
+  - Screenshots show actual Google search results with restaurant ranking positions highlighted
+  - System captures desktop screenshots (1366x768) and analyzes organic results plus local pack
+  - Added ranking position detection, search result metadata, and live search result links
+  - Enhanced user experience with visual proof of search visibility and competitive positioning
+- July 16, 2025. Enhanced social media detection with Instagram URL support (Facebook + Instagram scoring only):
   - Created EnhancedSocialMediaDetector for complete platform detection (Facebook, Instagram, Twitter, YouTube, TikTok, LinkedIn)
   - Added Instagram URL detection with multiple pattern matching (profile URLs, post URLs, reel URLs)
-  - Enhanced premium dashboard Social tab to display all 6 social media platforms with clickable links
-  - Updated social media scoring to account for 6 platforms (16 points each for 100% max score)
+  - Updated social media scoring to focus on Facebook and Instagram only (50 points each for 100% max score)
+  - Enhanced premium dashboard Social tab to display Facebook and Instagram with clickable "View" links
+  - Removed other platforms from scoring but maintains detection capability
+  - Updated social media recommendations to focus on Facebook and Instagram marketing strategies
   - Added comprehensive URL validation and cleaning for all social media platforms
   - Implemented recursive website scanning for social media links across contact/about pages
   - Added meta tags and structured data scanning for social media discovery

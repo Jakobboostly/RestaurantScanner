@@ -7,6 +7,7 @@ import { SocialMediaDetector } from './socialMediaDetector.js';
 import { EnhancedFacebookDetector } from './enhancedFacebookDetector.js';
 import { EnhancedSocialMediaDetector } from './enhancedSocialMediaDetector.js';
 import { FacebookPostsScraperService } from './facebookPostsScraperService.js';
+import { SerpScreenshotService } from './serpScreenshotService.js';
 import { ScanResult } from '@shared/schema';
 import axios from 'axios';
 import * as cheerio from 'cheerio';
@@ -43,6 +44,7 @@ export class AdvancedScannerService {
   private enhancedFacebookDetector: EnhancedFacebookDetector;
   private enhancedSocialMediaDetector: EnhancedSocialMediaDetector;
   private facebookPostsScraperService: FacebookPostsScraperService;
+  private serpScreenshotService: SerpScreenshotService;
 
   constructor(
     googleApiKey: string,
@@ -61,6 +63,7 @@ export class AdvancedScannerService {
     this.enhancedFacebookDetector = new EnhancedFacebookDetector();
     this.enhancedSocialMediaDetector = new EnhancedSocialMediaDetector();
     this.facebookPostsScraperService = new FacebookPostsScraperService(apifyApiKey || '');
+    this.serpScreenshotService = new SerpScreenshotService();
     
     if (zembraApiKey) {
       this.zembraReviewsService = new ZembraTechReviewsService(zembraApiKey);
@@ -254,13 +257,15 @@ export class AdvancedScannerService {
       const mobileResult = performanceData.mobile || this.getFallbackMobileExperience();
       const desktopResult = performanceData.desktop || this.getFallbackPerformanceMetrics();
 
-      // Quick SERP Analysis (within remaining time)
+      // Quick SERP Analysis with Screenshot (within remaining time)
       let serpAnalysis = [];
+      let serpScreenshots = [];
+      
       try {
         // Use only 1 primary keyword for maximum speed
         const primaryKeyword = this.generatePrimaryKeywords(restaurantName, businessProfile)[0];
         
-        // Single SERP analysis with timeout
+        // Parallel SERP analysis and screenshot capture
         const serpPromise = Promise.race([
           this.dataForSeoService.getSerpAnalysis(primaryKeyword, domain, 'United States'),
           new Promise((_, reject) => 
@@ -268,20 +273,27 @@ export class AdvancedScannerService {
           )
         ]);
         
-        const serpResult = await serpPromise.catch(error => {
-          console.error(`SERP analysis failed for "${primaryKeyword}":`, error);
-          return {
-            keyword: primaryKeyword,
-            position: null,
-            url: null,
-            title: null,
-            topCompetitors: [],
-            features: [],
-            difficulty: 50
-          };
-        });
+        const screenshotPromise = Promise.race([
+          this.serpScreenshotService.captureSearchResults(primaryKeyword, restaurantName, domain, this.extractCity(restaurantName) || 'United States'),
+          new Promise((_, reject) => 
+            setTimeout(() => reject(new Error('SERP screenshot timeout')), 3000)
+          )
+        ]);
         
-        serpAnalysis = [serpResult];
+        const [serpResult, screenshotResult] = await Promise.allSettled([serpPromise, screenshotPromise]);
+        
+        if (serpResult.status === 'fulfilled') {
+          serpAnalysis = serpResult.value || [];
+        } else {
+          console.error(`SERP analysis failed for "${primaryKeyword}":`, serpResult.reason);
+        }
+        
+        if (screenshotResult.status === 'fulfilled') {
+          serpScreenshots = [screenshotResult.value];
+        } else {
+          console.error(`SERP screenshot failed for "${primaryKeyword}":`, screenshotResult.reason);
+        }
+        
         console.log('Fast SERP analysis completed');
       } catch (error) {
         console.error('SERP analysis failed:', error);
@@ -307,7 +319,8 @@ export class AdvancedScannerService {
         [],
         reviewsAnalysis,
         socialMediaLinks,
-        profileAnalysis
+        profileAnalysis,
+        serpScreenshots
       );
 
       const scanDuration = Date.now() - scanStartTime;
@@ -334,7 +347,8 @@ export class AdvancedScannerService {
     competitorInsights: any[],
     reviewsAnalysis: any,
     socialMediaLinks: any,
-    profileAnalysis: any = null
+    profileAnalysis: any = null,
+    serpScreenshots: any[] = []
   ): EnhancedScanResult {
     // Calculate enhanced scores
     const businessScore = this.calculateBusinessScore(businessProfile);
@@ -513,7 +527,8 @@ export class AdvancedScannerService {
       },
       reviewsAnalysis: reviewsAnalysis || this.generateEnhancedReviewsAnalysis(businessProfile),
       socialMediaLinks: socialMediaLinks || {},
-      profileAnalysis: profileAnalysis
+      profileAnalysis: profileAnalysis,
+      serpScreenshots: serpScreenshots || []
     };
   }
 
