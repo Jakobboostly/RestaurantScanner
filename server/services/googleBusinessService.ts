@@ -54,11 +54,11 @@ export class GoogleBusinessService {
     try {
       console.log('Fetching business profile for place ID:', placeId);
       
-      // Get detailed place information
+      // Get detailed place information including social media fields
       const detailsResponse = await axios.get('https://maps.googleapis.com/maps/api/place/details/json', {
         params: {
           place_id: placeId,
-          fields: 'name,rating,user_ratings_total,photos,reviews,business_status,website,formatted_phone_number,formatted_address',
+          fields: 'name,rating,user_ratings_total,photos,reviews,business_status,website,formatted_phone_number,formatted_address,url,editorial_summary,vicinity,plus_code,geometry,opening_hours,types,price_level,secondary_phone_number,international_phone_number,utc_offset,adr_address,place_id,reference,scope,alt_ids,permanently_closed',
           key: this.apiKey,
           reviews_no_translations: true
         }

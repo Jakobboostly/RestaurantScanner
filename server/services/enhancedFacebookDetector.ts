@@ -232,26 +232,52 @@ export class EnhancedFacebookDetector {
     phone?: string
   ): Promise<FacebookPageResult | null> {
     try {
-      // This would require Facebook Graph API or similar service
-      // For now, we'll implement a heuristic approach
-      const searchQuery = `${businessName} ${address}`;
-      const potentialUrl = this.generatePotentialFacebookUrl(businessName);
+      console.log(`Searching Facebook for business: ${businessName} at ${address}`);
       
-      if (potentialUrl) {
-        return {
-          url: potentialUrl,
-          name: businessName,
-          confidence: 'low',
-          source: 'name_search',
-          verified: false
-        };
+      // Strategy 1: Generate likely Facebook page URLs based on business name
+      const possibleUrls = this.generateLikelyFacebookUrls(businessName);
+      
+      for (const url of possibleUrls) {
+        const result = await this.verifyFacebookUrl(url, businessName);
+        if (result) {
+          console.log(`Found Facebook page via URL generation: ${url}`);
+          return {
+            ...result,
+            source: 'name_search',
+            confidence: 'medium'
+          };
+        }
       }
-
+      
+      // Strategy 2: Advanced Google search for Facebook page
+      const googleResult = await this.advancedGoogleSearch(businessName, address);
+      if (googleResult) {
+        console.log(`Found Facebook page via Google search: ${googleResult.url}`);
+        return googleResult;
+      }
+      
+      // Strategy 3: Search using business name variations
+      const nameVariations = this.generateBusinessNameVariations(businessName);
+      for (const variation of nameVariations) {
+        const possibleUrls = this.generateLikelyFacebookUrls(variation);
+        for (const url of possibleUrls) {
+          const result = await this.verifyFacebookUrl(url, businessName);
+          if (result) {
+            console.log(`Found Facebook page via name variation: ${url}`);
+            return {
+              ...result,
+              source: 'name_search',
+              confidence: 'low'
+            };
+          }
+        }
+      }
+      
+      return null;
     } catch (error) {
       console.error('Facebook search by name/location error:', error);
+      return null;
     }
-
-    return null;
   }
 
   private cleanFacebookUrl(url: string): string | null {
@@ -338,6 +364,115 @@ export class EnhancedFacebookDetector {
 
       return `https://www.facebook.com/${slug}`;
     } catch (error) {
+      return null;
+    }
+  }
+
+  private generateLikelyFacebookUrls(businessName: string): string[] {
+    const urls: string[] = [];
+    const cleanName = businessName
+      .toLowerCase()
+      .replace(/[^a-z0-9\s]/g, '')
+      .replace(/\s+/g, '');
+    
+    // Different URL formats businesses might use
+    urls.push(`https://www.facebook.com/${cleanName}`);
+    urls.push(`https://www.facebook.com/${cleanName}restaurant`);
+    urls.push(`https://www.facebook.com/${cleanName}official`);
+    urls.push(`https://www.facebook.com/${businessName.toLowerCase().replace(/\s+/g, '')}`);
+    urls.push(`https://www.facebook.com/${businessName.toLowerCase().replace(/\s+/g, '.')}`);
+    urls.push(`https://www.facebook.com/${businessName.toLowerCase().replace(/\s+/g, '-')}`);
+    
+    return urls;
+  }
+
+  private generateBusinessNameVariations(businessName: string): string[] {
+    const variations: string[] = [];
+    
+    // Remove common business suffixes
+    const suffixes = ['restaurant', 'cafe', 'bar', 'grill', 'kitchen', 'bistro', 'diner', 'eatery', 'pub', 'tavern', 'steakhouse', 'pizzeria', 'bakery'];
+    let cleanName = businessName;
+    
+    for (const suffix of suffixes) {
+      cleanName = cleanName.replace(new RegExp(`\\s+${suffix}$`, 'i'), '');
+    }
+    
+    variations.push(cleanName);
+    variations.push(businessName);
+    
+    // Add common prefixes
+    variations.push(`The ${cleanName}`);
+    variations.push(`${cleanName} Restaurant`);
+    variations.push(`${cleanName} Cafe`);
+    
+    return variations;
+  }
+
+  private async advancedGoogleSearch(businessName: string, address: string): Promise<FacebookPageResult | null> {
+    try {
+      // Use Google search to find Facebook page
+      const searchQuery = `site:facebook.com "${businessName}" "${address}"`;
+      const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}`;
+      
+      const response = await axios.get(searchUrl, {
+        timeout: 5000,
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+        }
+      });
+      
+      const $ = cheerio.load(response.data);
+      
+      // Look for Facebook links in search results
+      const fbLinks = $('a[href*="facebook.com"]');
+      
+      for (let i = 0; i < fbLinks.length; i++) {
+        const link = fbLinks.eq(i);
+        const href = link.attr('href');
+        
+        if (href) {
+          const cleanUrl = this.cleanFacebookUrl(href);
+          if (cleanUrl && this.isValidFacebookPageUrl(cleanUrl)) {
+            return {
+              url: cleanUrl,
+              name: businessName,
+              confidence: 'medium',
+              source: 'name_search',
+              verified: false
+            };
+          }
+        }
+      }
+      
+      return null;
+    } catch (error) {
+      console.error('Advanced Google search error:', error);
+      return null;
+    }
+  }
+
+  private async verifyFacebookUrl(url: string, businessName: string): Promise<FacebookPageResult | null> {
+    try {
+      const response = await axios.head(url, {
+        timeout: 5000,
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        }
+      });
+      
+      if (response.status === 200) {
+        return {
+          url: url,
+          name: businessName,
+          confidence: 'medium',
+          source: 'name_search',
+          verified: true
+        };
+      }
+      
+      return null;
+    } catch (error) {
+      // Page doesn't exist or is not accessible
       return null;
     }
   }
