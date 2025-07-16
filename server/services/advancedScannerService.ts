@@ -874,37 +874,27 @@ export class AdvancedScannerService {
   }
 
   private calculateBusinessScore(businessProfile: any): number {
-    // Existing business score calculation with null checks
+    // Existing business score calculation
     let score = 0;
-    
-    // Add rating score (40% of total)
-    if (businessProfile?.rating) {
-      score += (businessProfile.rating / 5) * 40;
-    }
-    
-    // Add review count score (30% of total)
-    const reviewCount = businessProfile?.totalReviews || 0;
-    if (reviewCount >= 100) score += 30;
-    else if (reviewCount >= 50) score += 20;
-    else if (reviewCount >= 20) score += 10;
+    score += (businessProfile.rating / 5) * 40;
+    if (businessProfile.totalReviews >= 100) score += 30;
+    else if (businessProfile.totalReviews >= 50) score += 20;
+    else if (businessProfile.totalReviews >= 20) score += 10;
     
     return Math.round(score);
   }
 
   private calculateCompetitorScore(competitors: any[], businessProfile: any): number {
-    // Existing competitor score calculation with null checks
-    if (!competitors || competitors.length === 0) return 50;
+    // Existing competitor score calculation
+    if (competitors.length === 0) return 50;
     
-    const validCompetitors = competitors.filter(comp => comp?.rating);
-    if (validCompetitors.length === 0) return 50;
-    
-    const averageCompetitorRating = validCompetitors.reduce((sum, comp) => sum + comp.rating, 0) / validCompetitors.length;
-    const strongerCompetitors = validCompetitors.filter(comp => comp.isStronger).length;
+    const averageCompetitorRating = competitors.reduce((sum, comp) => sum + comp.rating, 0) / competitors.length;
+    const strongerCompetitors = competitors.filter(comp => comp.isStronger).length;
     
     let score = 100;
     score -= strongerCompetitors * 20;
     
-    if (businessProfile?.rating && businessProfile.rating < averageCompetitorRating) {
+    if (businessProfile.rating < averageCompetitorRating) {
       score -= 20;
     }
     

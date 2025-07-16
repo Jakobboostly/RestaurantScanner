@@ -76,14 +76,6 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
-- July 16, 2025. Debugging Facebook page detection from Google Places API:
-  - User reported Facebook page visible in Google Business Profile but not detected by scanner
-  - Enhanced Facebook detector with direct Google Places API access to check social_media_links field
-  - Added comprehensive logging to trace Facebook URL detection process
-  - Updated Google Places API request to include editorial_summary and social_media_links fields
-  - Facebook URL validation working correctly (profile.php?id= URLs properly cleaned)
-  - Issue appears to be Google Places API not returning social media links in expected format
-  - Enhanced debugging system to identify exact API response structure and fix detection gaps
 - July 15, 2025. Integrated Google Places business images into post-scan dashboard and scanning animation:
   - Added restaurant image gallery in main header showing up to 6 high-quality business photos
   - Enhanced Social tab with 3x3 photo grid for content planning and social media strategy

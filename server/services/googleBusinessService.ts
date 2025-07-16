@@ -58,7 +58,7 @@ export class GoogleBusinessService {
       const detailsResponse = await axios.get('https://maps.googleapis.com/maps/api/place/details/json', {
         params: {
           place_id: placeId,
-          fields: 'name,rating,user_ratings_total,photos,reviews,business_status,website,formatted_phone_number,formatted_address,editorial_summary,social_media_links',
+          fields: 'name,rating,user_ratings_total,photos,reviews,business_status,website,formatted_phone_number,formatted_address',
           key: this.apiKey,
           reviews_no_translations: true
         }

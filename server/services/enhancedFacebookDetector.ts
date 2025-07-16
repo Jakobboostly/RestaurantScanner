@@ -151,79 +151,23 @@ export class EnhancedFacebookDetector {
 
   private async checkGooglePlacesForFacebook(placeId: string): Promise<FacebookPageResult | null> {
     try {
-      console.log('Checking Google Places for Facebook links, placeId:', placeId);
+      const businessProfile = await this.googleBusinessService.getBusinessProfile(placeId);
       
-      // Get raw Google Places API response to access all fields
-      const response = await axios.get('https://maps.googleapis.com/maps/api/place/details/json', {
-        params: {
-          place_id: placeId,
-          fields: 'name,website,formatted_phone_number,formatted_address,editorial_summary,social_media_links',
-          key: process.env.GOOGLE_PLACES_API_KEY || process.env.GOOGLE_PAGESPEED_API_KEY,
-        }
-      });
-
-      if (response.data.status === 'OK') {
-        const place = response.data.result;
-        console.log('Google Places API raw response:', JSON.stringify(place, null, 2));
-        console.log('Available fields in place:', Object.keys(place || {}));
-
-        // Check social_media_links field first
-        if (place.social_media_links && Array.isArray(place.social_media_links)) {
-          console.log('Found social_media_links:', place.social_media_links);
-          
-          for (const link of place.social_media_links) {
-            if (link.url && link.url.includes('facebook.com')) {
-              const cleanUrl = this.cleanFacebookUrl(link.url);
-              if (cleanUrl) {
-                console.log('Found Facebook URL in social_media_links:', cleanUrl);
-                return {
-                  url: cleanUrl,
-                  name: place.name || 'Facebook Page',
-                  confidence: 'high',
-                  source: 'google_places',
-                  verified: true
-                };
-              }
-            }
-          }
-        }
-
-        // Check website field (fallback)
-        if (place.website && place.website.includes('facebook.com')) {
-          const cleanUrl = this.cleanFacebookUrl(place.website);
+      // Check if Google Places has social media links
+      if (businessProfile && businessProfile.website) {
+        // Sometimes Google stores Facebook URLs in the website field
+        if (businessProfile.website.includes('facebook.com')) {
+          const cleanUrl = this.cleanFacebookUrl(businessProfile.website);
           if (cleanUrl) {
-            console.log('Found Facebook URL in website field:', cleanUrl);
             return {
               url: cleanUrl,
-              name: place.name || 'Facebook Page',
+              name: businessProfile.name || 'Facebook Page',
               confidence: 'high',
               source: 'google_places',
               verified: true
             };
           }
         }
-
-        // Check editorial_summary for Facebook mentions
-        if (place.editorial_summary && place.editorial_summary.overview) {
-          const fbMatch = place.editorial_summary.overview.match(/facebook\.com\/[^\s]+/i);
-          if (fbMatch) {
-            const cleanUrl = this.cleanFacebookUrl(fbMatch[0]);
-            if (cleanUrl) {
-              console.log('Found Facebook URL in editorial_summary:', cleanUrl);
-              return {
-                url: cleanUrl,
-                name: place.name || 'Facebook Page',
-                confidence: 'medium',
-                source: 'google_places',
-                verified: true
-              };
-            }
-          }
-        }
-
-        console.log('No Facebook links found in Google Places API response');
-      } else {
-        console.error('Google Places API error:', response.data.status);
       }
 
     } catch (error) {

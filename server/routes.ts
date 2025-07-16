@@ -351,46 +351,15 @@ export async function registerRoutes(app: Express): Promise<Server> {
           
           if (businessProfile) {
             actualRestaurant = businessProfile.name || restaurant as string;
-            // Extract city from business profile address with multiple patterns
+            // Extract city from business profile address
             if (businessProfile.address) {
               console.log('Extracting city from address:', businessProfile.address);
-              
-              // Try multiple address patterns
-              const cityPatterns = [
-                /,\s*([^,]+),\s*[A-Z]{2}/,           // Standard: "Street, City, State"
-                /,\s*([^,\d]+),/,                    // "Street, City, ..."
-                /\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\s*,\s*[A-Z]{2}\b/,  // "City, State"
-                /\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\b(?=\s*\d{5})/,     // "City ZIP"
-              ];
-              
-              for (const pattern of cityPatterns) {
-                const cityMatch = businessProfile.address.match(pattern);
-                if (cityMatch && cityMatch[1]) {
-                  const extractedCity = cityMatch[1].trim();
-                  // Filter out common non-city terms
-                  if (!extractedCity.match(/^\d+$/) && 
-                      !extractedCity.toLowerCase().includes('street') && 
-                      !extractedCity.toLowerCase().includes('avenue') &&
-                      !extractedCity.toLowerCase().includes('road') &&
-                      extractedCity.length > 2) {
-                    actualCity = extractedCity;
-                    console.log('Extracted city:', actualCity);
-                    break;
-                  }
-                }
-              }
-              
-              if (actualCity === city) {
-                console.log('No valid city match found in address, using fallback');
-                // Try to extract from common city names in the address
-                const commonCities = ['Provo', 'Salt Lake City', 'Denver', 'Austin', 'Phoenix', 'Miami', 'Atlanta', 'Seattle', 'Portland', 'Chicago', 'New York', 'Los Angeles', 'San Francisco', 'Boston', 'Philadelphia', 'Detroit', 'Houston', 'Dallas', 'Charlotte', 'Nashville', 'Orlando', 'Tampa', 'Las Vegas', 'Sacramento', 'San Diego'];
-                for (const cityName of commonCities) {
-                  if (businessProfile.address.includes(cityName)) {
-                    actualCity = cityName;
-                    console.log('Found city via common names:', actualCity);
-                    break;
-                  }
-                }
+              const cityMatch = businessProfile.address.match(/,\s*([^,]+),\s*[A-Z]{2}/);
+              if (cityMatch) {
+                actualCity = cityMatch[1];
+                console.log('Extracted city:', actualCity);
+              } else {
+                console.log('No city match found in address');
               }
             } else {
               console.log('No address found in business profile');
