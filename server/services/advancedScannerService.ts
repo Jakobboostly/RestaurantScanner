@@ -360,8 +360,8 @@ export class AdvancedScannerService {
     // Generate AI-powered recommendations
     const aiRecommendations = await this.aiRecommendationService.generateRecommendations({
       name: restaurantName,
-      rating: businessProfile.rating || 4.0,
-      totalReviews: businessProfile.totalReviews || 0,
+      rating: businessProfile?.rating || 4.0,
+      totalReviews: businessProfile?.totalReviews || 0,
       domain,
       performanceScore,
       seoScore: enhancedSeoScore,
@@ -874,9 +874,17 @@ export class AdvancedScannerService {
   }
 
   private calculateBusinessScore(businessProfile: any): number {
+    // Handle null business profile
+    if (!businessProfile) {
+      return 50; // Default neutral score
+    }
+    
     // Existing business score calculation
     let score = 0;
-    score += (businessProfile.rating / 5) * 40;
+    if (businessProfile.rating) {
+      score += (businessProfile.rating / 5) * 40;
+    }
+    
     if (businessProfile.totalReviews >= 100) score += 30;
     else if (businessProfile.totalReviews >= 50) score += 20;
     else if (businessProfile.totalReviews >= 20) score += 10;
@@ -894,7 +902,7 @@ export class AdvancedScannerService {
     let score = 100;
     score -= strongerCompetitors * 20;
     
-    if (businessProfile.rating < averageCompetitorRating) {
+    if (businessProfile && businessProfile.rating && businessProfile.rating < averageCompetitorRating) {
       score -= 20;
     }
     

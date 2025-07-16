@@ -58,7 +58,7 @@ export class GoogleBusinessService {
       const detailsResponse = await axios.get('https://maps.googleapis.com/maps/api/place/details/json', {
         params: {
           place_id: placeId,
-          fields: 'name,rating,user_ratings_total,photos,reviews,business_status,website,formatted_phone_number,formatted_address,url,editorial_summary,vicinity,plus_code,geometry,opening_hours,types,price_level,secondary_phone_number,international_phone_number,utc_offset,adr_address,place_id,reference,scope,alt_ids,permanently_closed',
+          fields: 'name,rating,user_ratings_total,photos,reviews,business_status,website,formatted_phone_number,formatted_address,url,editorial_summary,vicinity,plus_code,geometry,opening_hours,types,price_level,international_phone_number,utc_offset,adr_address,place_id,reference,scope,alt_ids,permanently_closed',
           key: this.apiKey,
           reviews_no_translations: true
         }
@@ -286,5 +286,17 @@ export class GoogleBusinessService {
               Math.sin(dLon/2) * Math.sin(dLon/2);
     const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
     return Math.round(R * c * 1000); // Distance in meters
+  }
+
+  async getBusinessPhotos(placeId: string): Promise<{ businessPhotos: string[] }> {
+    try {
+      const profile = await this.getBusinessProfile(placeId);
+      return {
+        businessPhotos: profile.photos.businessPhotos || []
+      };
+    } catch (error) {
+      console.error('Error fetching business photos:', error);
+      return { businessPhotos: [] };
+    }
   }
 }

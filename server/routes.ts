@@ -354,12 +354,27 @@ export async function registerRoutes(app: Express): Promise<Server> {
             // Extract city from business profile address
             if (businessProfile.address) {
               console.log('Extracting city from address:', businessProfile.address);
-              const cityMatch = businessProfile.address.match(/,\s*([^,]+),\s*[A-Z]{2}/);
-              if (cityMatch) {
-                actualCity = cityMatch[1];
-                console.log('Extracted city:', actualCity);
-              } else {
-                console.log('No city match found in address');
+              // Try multiple patterns to extract city
+              const cityPatterns = [
+                /,\s*([^,]+),\s*[A-Z]{2}/,  // Standard format: "123 Main St, City, ST 12345"
+                /,\s*([^,]+)\s+[A-Z]{2}\s+\d{5}/,  // "123 Main St, City ST 12345" 
+                /,\s*([^,\d]+),/,  // "123 Main St, City, ..." (no state)
+                /,\s*([A-Za-z\s]+),\s*[A-Z]{2}/  // More flexible city pattern
+              ];
+              
+              let cityFound = false;
+              for (const pattern of cityPatterns) {
+                const cityMatch = businessProfile.address.match(pattern);
+                if (cityMatch && cityMatch[1]) {
+                  actualCity = cityMatch[1].trim();
+                  console.log('Extracted city:', actualCity);
+                  cityFound = true;
+                  break;
+                }
+              }
+              
+              if (!cityFound) {
+                console.log('No city match found in address:', businessProfile.address);
               }
             } else {
               console.log('No address found in business profile');
