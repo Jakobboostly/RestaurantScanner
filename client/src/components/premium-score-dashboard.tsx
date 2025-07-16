@@ -75,8 +75,10 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
     
     // Social Score (based on social media presence)
     const socialMediaLinks = scanResult.socialMediaLinks || {};
-    const socialCount = Object.keys(socialMediaLinks).filter(key => socialMediaLinks[key]).length;
-    const socialScore = Math.min(socialCount * 25, 100);
+    const socialCount = Object.keys(socialMediaLinks).filter(key => 
+      key !== 'facebookAnalysis' && socialMediaLinks[key]
+    ).length;
+    const socialScore = Math.min(socialCount * 16, 100); // Adjusted for 6 platforms
     
     // Local Score (based on business profile completeness)
     const businessProfile = scanResult.businessProfile || {};
@@ -771,20 +773,82 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-gray-600">Active Platforms</span>
                       <span className="font-bold text-lg text-[#5F5FFF]">
-                        {Object.keys(scanResult.socialMediaLinks || {}).filter(key => scanResult.socialMediaLinks?.[key]).length}/4
+                        {Object.keys(scanResult.socialMediaLinks || {}).filter(key => 
+                          key !== 'facebookAnalysis' && scanResult.socialMediaLinks?.[key]
+                        ).length}/6
                       </span>
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-gray-600">Facebook</span>
-                      <span className={scanResult.socialMediaLinks?.facebook ? "text-[#5F5FFF]" : "text-gray-400"}>
-                        {scanResult.socialMediaLinks?.facebook ? "✓ Active" : "✗ Missing"}
-                      </span>
+                      <div className="flex items-center gap-2">
+                        <span className={scanResult.socialMediaLinks?.facebook ? "text-[#5F5FFF]" : "text-gray-400"}>
+                          {scanResult.socialMediaLinks?.facebook ? "✓ Active" : "✗ Missing"}
+                        </span>
+                        {scanResult.socialMediaLinks?.facebook && (
+                          <a 
+                            href={scanResult.socialMediaLinks.facebook} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-xs text-blue-600 hover:underline"
+                          >
+                            View
+                          </a>
+                        )}
+                      </div>
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-gray-600">Instagram</span>
-                      <span className={scanResult.socialMediaLinks?.instagram ? "text-[#5F5FFF]" : "text-gray-400"}>
-                        {scanResult.socialMediaLinks?.instagram ? "✓ Active" : "✗ Missing"}
-                      </span>
+                      <div className="flex items-center gap-2">
+                        <span className={scanResult.socialMediaLinks?.instagram ? "text-[#5F5FFF]" : "text-gray-400"}>
+                          {scanResult.socialMediaLinks?.instagram ? "✓ Active" : "✗ Missing"}
+                        </span>
+                        {scanResult.socialMediaLinks?.instagram && (
+                          <a 
+                            href={scanResult.socialMediaLinks.instagram} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-xs text-blue-600 hover:underline"
+                          >
+                            View
+                          </a>
+                        )}
+                      </div>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-600">Twitter</span>
+                      <div className="flex items-center gap-2">
+                        <span className={scanResult.socialMediaLinks?.twitter ? "text-[#5F5FFF]" : "text-gray-400"}>
+                          {scanResult.socialMediaLinks?.twitter ? "✓ Active" : "✗ Missing"}
+                        </span>
+                        {scanResult.socialMediaLinks?.twitter && (
+                          <a 
+                            href={scanResult.socialMediaLinks.twitter} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-xs text-blue-600 hover:underline"
+                          >
+                            View
+                          </a>
+                        )}
+                      </div>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-600">YouTube</span>
+                      <div className="flex items-center gap-2">
+                        <span className={scanResult.socialMediaLinks?.youtube ? "text-[#5F5FFF]" : "text-gray-400"}>
+                          {scanResult.socialMediaLinks?.youtube ? "✓ Active" : "✗ Missing"}
+                        </span>
+                        {scanResult.socialMediaLinks?.youtube && (
+                          <a 
+                            href={scanResult.socialMediaLinks.youtube} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-xs text-blue-600 hover:underline"
+                          >
+                            View
+                          </a>
+                        )}
+                      </div>
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-gray-600">Engagement Rate</span>

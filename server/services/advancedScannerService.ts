@@ -5,6 +5,7 @@ import { AIRecommendationService } from './aiRecommendationService.js';
 import { GoogleReviewsService } from './googleReviewsService.js';
 import { SocialMediaDetector } from './socialMediaDetector.js';
 import { EnhancedFacebookDetector } from './enhancedFacebookDetector.js';
+import { EnhancedSocialMediaDetector } from './enhancedSocialMediaDetector.js';
 import { FacebookPostsScraperService } from './facebookPostsScraperService.js';
 import { ScanResult } from '@shared/schema';
 import axios from 'axios';
@@ -40,6 +41,7 @@ export class AdvancedScannerService {
   private googleReviewsService: GoogleReviewsService;
   private socialMediaDetector: SocialMediaDetector;
   private enhancedFacebookDetector: EnhancedFacebookDetector;
+  private enhancedSocialMediaDetector: EnhancedSocialMediaDetector;
   private facebookPostsScraperService: FacebookPostsScraperService;
 
   constructor(
@@ -57,6 +59,7 @@ export class AdvancedScannerService {
     this.googleReviewsService = new GoogleReviewsService(googleApiKey);
     this.socialMediaDetector = new SocialMediaDetector(zembraApiKey);
     this.enhancedFacebookDetector = new EnhancedFacebookDetector();
+    this.enhancedSocialMediaDetector = new EnhancedSocialMediaDetector();
     this.facebookPostsScraperService = new FacebookPostsScraperService(apifyApiKey || '');
     
     if (zembraApiKey) {
@@ -2034,53 +2037,11 @@ export class AdvancedScannerService {
     placeId: string
   ): Promise<any> {
     try {
-      // First check if the business profile website is already a Facebook URL
-      const websiteUrl = businessProfile?.website;
-      if (websiteUrl && (websiteUrl.includes('facebook.com') || websiteUrl.includes('fb.com'))) {
-        console.log('Business profile website is a Facebook URL:', websiteUrl);
-        
-        // Clean the Facebook URL and return it directly
-        const cleanedFacebookUrl = this.cleanFacebookUrl(websiteUrl);
-        if (cleanedFacebookUrl) {
-          // Try to get enhanced Facebook data using the posts scraper
-          const facebookAnalysis = await this.facebookPostsScraperService.analyzeFacebookPage(cleanedFacebookUrl);
-          
-          const result = {
-            facebook: cleanedFacebookUrl,
-            facebookVerified: true,
-            facebookConfidence: 'high' as const,
-            facebookSource: 'google_places' as const
-          };
-
-          // Add enhanced Facebook data if available
-          if (facebookAnalysis) {
-            return {
-              ...result,
-              facebookAnalysis: {
-                totalPosts: facebookAnalysis.totalPosts,
-                averageEngagement: facebookAnalysis.averageEngagement,
-                postingFrequency: facebookAnalysis.postingFrequency,
-                engagementRate: facebookAnalysis.engagementRate,
-                recentPosts: facebookAnalysis.recentPosts.slice(0, 5), // Latest 5 posts
-                contentTypes: facebookAnalysis.contentTypes,
-                postingPatterns: facebookAnalysis.postingPatterns,
-                topPerformingPost: facebookAnalysis.topPerformingPost
-              }
-            };
-          }
-          
-          return result;
-        }
-      }
-      
-      // Get traditional social media links
-      const traditionalLinks = await this.socialMediaDetector.detectSocialMediaLinks(domain);
-      
-      // Use enhanced Facebook detection
+      // Use enhanced social media detector for comprehensive platform detection
       const businessAddress = businessProfile?.address || businessProfile?.vicinity;
       const businessPhone = businessProfile?.phone;
       
-      const facebookResult = await this.enhancedFacebookDetector.detectFacebookPage(
+      const allSocialLinks = await this.enhancedSocialMediaDetector.detectAllSocialMedia(
         `https://${domain}`,
         restaurantName,
         businessAddress,
@@ -2088,17 +2049,42 @@ export class AdvancedScannerService {
         placeId
       );
       
-      // Merge results
-      const enhancedLinks = { ...traditionalLinks };
+      console.log('Enhanced social media detection results:', allSocialLinks);
       
-      if (facebookResult) {
-        enhancedLinks.facebook = facebookResult.url;
-        enhancedLinks.facebookVerified = facebookResult.verified;
-        enhancedLinks.facebookConfidence = facebookResult.confidence;
-        enhancedLinks.facebookSource = facebookResult.source;
+      // If Facebook is detected, try to get enhanced Facebook data
+      let facebookAnalysis = null;
+      if (allSocialLinks.facebook) {
+        try {
+          facebookAnalysis = await this.facebookPostsScraperService.analyzeFacebookPage(allSocialLinks.facebook);
+          console.log('Facebook posts analysis:', facebookAnalysis ? 'Success' : 'No data');
+        } catch (fbError) {
+          console.error('Facebook posts analysis failed:', fbError);
+        }
       }
       
-      return enhancedLinks;
+      // Build the result object
+      const result = {
+        ...allSocialLinks,
+        facebookVerified: !!allSocialLinks.facebook,
+        facebookConfidence: allSocialLinks.facebook ? 'high' as const : 'low' as const,
+        facebookSource: allSocialLinks.facebook ? 'enhanced_detection' as const : 'none' as const
+      };
+      
+      // Add enhanced Facebook data if available
+      if (facebookAnalysis) {
+        result.facebookAnalysis = {
+          totalPosts: facebookAnalysis.totalPosts,
+          averageEngagement: facebookAnalysis.averageEngagement,
+          postingFrequency: facebookAnalysis.postingFrequency,
+          engagementRate: facebookAnalysis.engagementRate,
+          recentPosts: facebookAnalysis.recentPosts.slice(0, 5), // Latest 5 posts
+          contentTypes: facebookAnalysis.contentTypes,
+          postingPatterns: facebookAnalysis.postingPatterns,
+          topPerformingPost: facebookAnalysis.topPerformingPost
+        };
+      }
+      
+      return result;
     } catch (error) {
       console.error('Enhanced social media detection failed:', error);
       // Fallback to traditional detection

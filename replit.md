@@ -76,6 +76,15 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 16, 2025. Enhanced social media detection with comprehensive Instagram URL support:
+  - Created EnhancedSocialMediaDetector for complete platform detection (Facebook, Instagram, Twitter, YouTube, TikTok, LinkedIn)
+  - Added Instagram URL detection with multiple pattern matching (profile URLs, post URLs, reel URLs)
+  - Enhanced premium dashboard Social tab to display all 6 social media platforms with clickable links
+  - Updated social media scoring to account for 6 platforms (16 points each for 100% max score)
+  - Added comprehensive URL validation and cleaning for all social media platforms
+  - Implemented recursive website scanning for social media links across contact/about pages
+  - Added meta tags and structured data scanning for social media discovery
+  - System now detects and displays Instagram profiles alongside existing Facebook functionality
 - July 16, 2025. Successfully integrated Apify Facebook Posts Scraper API into restaurant scanner:
   - Added FacebookPostsScraperService with comprehensive social media analysis capabilities
   - Integrated Facebook posts data extraction (engagement metrics, posting frequency, content analysis)
