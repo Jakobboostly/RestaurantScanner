@@ -91,18 +91,11 @@ export class SerpScreenshotService {
       
       console.log('Page loaded successfully, waiting for search results...');
       
-      // Wait for page to fully load - use more reliable approach
+      // Wait for page to fully load - simplified approach
       console.log('Waiting for page content to load...');
-      await page.waitForFunction(() => {
-        return document.readyState === 'complete' && 
-               document.querySelector('body') && 
-               document.querySelector('body').children.length > 0;
-      }, { timeout: 5000 }).catch(() => {
-        console.log('Page load timeout, proceeding with screenshot...');
-      });
       
-      // Additional wait for search results to populate
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      // Give Google time to render search results (no complex selector waits)
+      await new Promise(resolve => setTimeout(resolve, 4000));
       console.log('Page content loaded, proceeding with screenshot...');
       
       // Remove cookie banners, ads, and other distractions
@@ -215,9 +208,9 @@ export class SerpScreenshotService {
       });
     }
     
-    // Find restaurant ranking in organic results
+    // Find restaurant ranking in organic results - use more flexible selectors
     let restaurantRanking = null;
-    const organicResults = $('[data-sokoban-container] .g, .g').slice(0, 20);
+    const organicResults = $('div[data-ved], .g, .tF2Cxc, .yuRUbf').slice(0, 20);
     
     organicResults.each((index, element) => {
       const linkEl = $(element).find('h3').parent();
