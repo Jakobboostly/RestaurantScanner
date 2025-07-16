@@ -36,9 +36,10 @@ export class SerpScreenshotService {
     let browser;
     
     try {
+      console.log('Launching browser for SERP screenshot...');
       browser = await puppeteer.launch({
         headless: true,
-        executablePath: '/nix/store/zi4f80l169xlmivz8vja8wlphq74qqk0-chromium-125.0.6422.141/bin/chromium-browser',
+        executablePath: '/nix/store/zi4f80l169xlmivz8vja8wlphq74qqk0-chromium-125.0.6422.141/bin/chromium',
         args: [
           '--no-sandbox',
           '--disable-setuid-sandbox',
@@ -54,9 +55,15 @@ export class SerpScreenshotService {
           '--disable-backgrounding-occluded-windows',
           '--disable-renderer-backgrounding',
           '--disable-field-trial-config',
-          '--disable-ipc-flooding-protection'
+          '--disable-ipc-flooding-protection',
+          '--disable-extensions',
+          '--disable-plugins',
+          '--disable-images',
+          '--disable-javascript-harmony-promises',
+          '--disable-blink-features=AutomationControlled'
         ]
       });
+      console.log('Browser launched successfully');
       
       const page = await browser.newPage();
       await page.setUserAgent(this.userAgent);
@@ -73,15 +80,27 @@ export class SerpScreenshotService {
       const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}&num=20`;
       
       console.log(`Capturing SERP screenshot for: ${searchQuery}`);
+      console.log(`Screenshot service URL: ${searchUrl}`);
       
       // Navigate to Google search results
+      console.log('Navigating to search URL...');
       await page.goto(searchUrl, { 
-        waitUntil: 'networkidle0',
-        timeout: 15000 
+        waitUntil: 'domcontentloaded',
+        timeout: 12000 
       });
       
+      console.log('Page loaded successfully, waiting for search results...');
+      
       // Wait for search results to load
-      await page.waitForSelector('#search', { timeout: 5000 });
+      try {
+        await page.waitForSelector('#search', { timeout: 8000 });
+        console.log('Search results loaded successfully');
+      } catch (error) {
+        console.log('Search selector not found, trying alternative selectors...');
+        // Try alternative selectors
+        await page.waitForSelector('div[data-ved], .g, .tF2Cxc', { timeout: 3000 });
+        console.log('Alternative search results found');
+      }
       
       // Remove cookie banners, ads, and other distractions
       await page.evaluate(() => {
@@ -99,6 +118,7 @@ export class SerpScreenshotService {
       });
       
       // Capture screenshot of search results
+      console.log('Capturing screenshot...');
       const screenshotBuffer = await page.screenshot({
         fullPage: false,
         clip: {
@@ -108,6 +128,7 @@ export class SerpScreenshotService {
           height: 768
         }
       });
+      console.log('Screenshot captured, size:', screenshotBuffer.length, 'bytes');
       
       // Analyze the search results
       const pageContent = await page.content();

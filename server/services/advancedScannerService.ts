@@ -276,7 +276,7 @@ export class AdvancedScannerService {
         const screenshotPromise = Promise.race([
           this.serpScreenshotService.captureSearchResults(primaryKeyword, restaurantName, domain, this.extractCity(restaurantName) || 'United States'),
           new Promise((_, reject) => 
-            setTimeout(() => reject(new Error('SERP screenshot timeout')), 8000)
+            setTimeout(() => reject(new Error('SERP screenshot timeout')), 15000)
           )
         ]);
         
@@ -290,8 +290,10 @@ export class AdvancedScannerService {
         
         if (screenshotResult.status === 'fulfilled') {
           serpScreenshots = [screenshotResult.value];
+          console.log(`SERP screenshot captured successfully for "${primaryKeyword}"`);
         } else {
           console.error(`SERP screenshot failed for "${primaryKeyword}":`, screenshotResult.reason);
+          console.error('Screenshot service error details:', screenshotResult.reason?.message || screenshotResult.reason);
         }
         
         console.log('Fast SERP analysis completed');
