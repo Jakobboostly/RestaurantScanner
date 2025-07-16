@@ -76,6 +76,13 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 15, 2025. Integrated Google Places business images into post-scan dashboard:
+  - Added restaurant image gallery in main header showing up to 6 high-quality business photos
+  - Enhanced Social tab with 3x3 photo grid for content planning and social media strategy
+  - Added photo quality metrics to Local tab (total count + quality rating)
+  - Images use professional hover effects and error handling for optimal user experience
+  - All photos sourced directly from Google Places API with proper photo references
+  - Images display with purple-themed borders and hover states for brand consistency
 - July 15, 2025. Updated post-scan dashboard to professional purple color scheme for cohesive branding:
   - Replaced colorful red/yellow/blue priority indicators with professional Boostly purple variations
   - Used purple opacity levels (5F5FFF/10, 7375FD/10, 9090FD/10) for subtle priority differentiation

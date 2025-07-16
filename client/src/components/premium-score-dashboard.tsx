@@ -326,6 +326,29 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
             <Sparkles className="w-8 h-8 text-[#9090FD]" />
           </div>
           <p className="text-lg text-gray-600">Professional Marketing Intelligence Dashboard</p>
+          
+          {/* Restaurant Images */}
+          {scanResult.businessProfile?.photos?.businessPhotos && 
+           scanResult.businessProfile.photos.businessPhotos.length > 0 && (
+            <div className="mt-6">
+              <div className="flex justify-center gap-3 overflow-x-auto pb-2">
+                {scanResult.businessProfile.photos.businessPhotos.slice(0, 6).map((photoUrl, index) => (
+                  <img
+                    key={index}
+                    src={photoUrl}
+                    alt={`${restaurantName} photo ${index + 1}`}
+                    className="w-20 h-20 object-cover rounded-xl border-2 border-[#5F5FFF]/20 flex-shrink-0 hover:border-[#5F5FFF]/40 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                    }}
+                  />
+                ))}
+              </div>
+              <p className="text-sm text-gray-500 mt-3 text-center">
+                {scanResult.businessProfile.photos.total} Google Photos • {scanResult.businessProfile.photos.quality} quality
+              </p>
+            </div>
+          )}
         </motion.div>
 
         {/* Overall Score - Hero Section */}
@@ -642,22 +665,55 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                     </div>
                   </div>
                   
+                  {/* Business Photo Gallery */}
+                  {scanResult.businessProfile?.photos?.businessPhotos && 
+                   scanResult.businessProfile.photos.businessPhotos.length > 0 && (
+                    <div className="bg-[#5F5FFF]/5 border border-[#5F5FFF]/20 rounded-lg p-4">
+                      <h3 className="font-bold text-[#5F5FFF] mb-3 flex items-center gap-2">
+                        <Eye className="w-5 h-5" />
+                        Content Library from Google Business
+                      </h3>
+                      <div className="grid grid-cols-3 gap-3">
+                        {scanResult.businessProfile.photos.businessPhotos.slice(0, 9).map((photoUrl, index) => (
+                          <div key={index} className="relative group">
+                            <img
+                              src={photoUrl}
+                              alt={`${restaurantName} content ${index + 1}`}
+                              className="w-full h-24 object-cover rounded-lg border border-[#5F5FFF]/20 hover:border-[#5F5FFF]/40 transition-all duration-300 shadow-sm hover:shadow-md"
+                              onError={(e) => {
+                                e.currentTarget.style.display = 'none';
+                              }}
+                            />
+                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                              <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <Share2 className="w-5 h-5 text-white" />
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                      <p className="text-sm text-gray-600 mt-3">
+                        {scanResult.businessProfile.photos.total} total photos • Perfect for social media content
+                      </p>
+                    </div>
+                  )}
+                  
                   <div className="pt-4 border-t border-gray-200 space-y-3">
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-gray-600">Active Platforms</span>
-                      <span className="font-bold text-lg text-[#16A34A]">
+                      <span className="font-bold text-lg text-[#5F5FFF]">
                         {Object.keys(scanResult.socialMediaLinks || {}).filter(key => scanResult.socialMediaLinks?.[key]).length}/4
                       </span>
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-gray-600">Facebook</span>
-                      <span className={scanResult.socialMediaLinks?.facebook ? "text-[#16A34A]" : "text-gray-400"}>
+                      <span className={scanResult.socialMediaLinks?.facebook ? "text-[#5F5FFF]" : "text-gray-400"}>
                         {scanResult.socialMediaLinks?.facebook ? "✓ Active" : "✗ Missing"}
                       </span>
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-gray-600">Instagram</span>
-                      <span className={scanResult.socialMediaLinks?.instagram ? "text-[#16A34A]" : "text-gray-400"}>
+                      <span className={scanResult.socialMediaLinks?.instagram ? "text-[#5F5FFF]" : "text-gray-400"}>
                         {scanResult.socialMediaLinks?.instagram ? "✓ Active" : "✗ Missing"}
                       </span>
                     </div>
@@ -760,6 +816,14 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                       <span className="text-sm text-gray-600">Profile Completeness</span>
                       <span className="font-medium">{scanResult.profileAnalysis?.completeness?.score || 0}%</span>
                     </div>
+                    {scanResult.businessProfile?.photos && (
+                      <div className="flex justify-between items-center">
+                        <span className="text-sm text-gray-600">Business Photos</span>
+                        <span className="font-medium">
+                          {scanResult.businessProfile.photos.total} ({scanResult.businessProfile.photos.quality})
+                        </span>
+                      </div>
+                    )}
                   </div>
                 </div>
               )}
