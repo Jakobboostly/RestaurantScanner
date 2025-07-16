@@ -527,6 +527,17 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                         </div>
                       )}
                       
+                      {/* Low Priority Issues */}
+                      {scores.search >= 75 && (
+                        <div className="bg-[#9090FD]/10 border border-[#9090FD]/30 rounded p-3">
+                          <span className="text-xs font-bold text-[#9090FD] bg-[#9090FD]/20 px-2 py-1 rounded">LOW PRIORITY</span>
+                          <ul className="mt-2 text-sm text-gray-700 space-y-1">
+                            <li>• Fine-tune keyword targeting for seasonal menu items</li>
+                            <li>• Optimize for voice search queries like "Hey Google, best restaurant near me"</li>
+                            <li>• Enhance content for featured snippet opportunities</li>
+                          </ul>
+                        </div>
+                      )}
 
                     </div>
                   </div>
@@ -614,6 +625,17 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                         </div>
                       )}
                       
+                      {/* Low Priority Issues */}
+                      {scores.social >= 75 && (
+                        <div className="bg-[#9090FD]/10 border border-[#9090FD]/30 rounded p-3">
+                          <span className="text-xs font-bold text-[#9090FD] bg-[#9090FD]/20 px-2 py-1 rounded">LOW PRIORITY</span>
+                          <ul className="mt-2 text-sm text-gray-700 space-y-1">
+                            <li>• Expand to additional social platforms like TikTok or YouTube</li>
+                            <li>• Implement Instagram Stories and Facebook Live for real-time engagement</li>
+                            <li>• Create user-generated content campaigns and hashtag strategies</li>
+                          </ul>
+                        </div>
+                      )}
 
                     </div>
                   </div>
@@ -859,6 +881,17 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                         </div>
                       )}
                       
+                      {/* Low Priority Issues */}
+                      {scores.local >= 75 && (
+                        <div className="bg-[#9090FD]/10 border border-[#9090FD]/30 rounded p-3">
+                          <span className="text-xs font-bold text-[#9090FD] bg-[#9090FD]/20 px-2 py-1 rounded">LOW PRIORITY</span>
+                          <ul className="mt-2 text-sm text-gray-700 space-y-1">
+                            <li>• Optimize Google Business Profile with additional categories</li>
+                            <li>• Add more business photos and keep them updated seasonally</li>
+                            <li>• Create Google Posts for special events and promotions</li>
+                          </ul>
+                        </div>
+                      )}
 
                     </div>
                   </div>
@@ -950,6 +983,17 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                         </div>
                       )}
                       
+                      {/* Low Priority Issues */}
+                      {scores.website >= 75 && (
+                        <div className="bg-[#9090FD]/10 border border-[#9090FD]/30 rounded p-3">
+                          <span className="text-xs font-bold text-[#9090FD] bg-[#9090FD]/20 px-2 py-1 rounded">LOW PRIORITY</span>
+                          <ul className="mt-2 text-sm text-gray-700 space-y-1">
+                            <li>• Implement progressive web app features for better mobile experience</li>
+                            <li>• Add schema markup for better search engine understanding</li>
+                            <li>• Optimize images and implement lazy loading for faster load times</li>
+                          </ul>
+                        </div>
+                      )}
 
                     </div>
                   </div>
@@ -1033,6 +1077,17 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                         </div>
                       )}
                       
+                      {/* Low Priority Issues */}
+                      {scores.reviews >= 75 && (
+                        <div className="bg-[#9090FD]/10 border border-[#9090FD]/30 rounded p-3">
+                          <span className="text-xs font-bold text-[#9090FD] bg-[#9090FD]/20 px-2 py-1 rounded">LOW PRIORITY</span>
+                          <ul className="mt-2 text-sm text-gray-700 space-y-1">
+                            <li>• Implement review sentiment analysis to identify improvement areas</li>
+                            <li>• Create a systematic approach to generate more reviews from satisfied customers</li>
+                            <li>• Develop template responses for common review themes</li>
+                          </ul>
+                        </div>
+                      )}
 
                     </div>
                   </div>

@@ -76,6 +76,15 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 16, 2025. Fixed "Where You're Going Wrong" sections to always display actionable insights:
+  - Added LOW PRIORITY sections for high-performing categories (scores ≥75) so content always appears
+  - Complete priority system now includes HIGH (scores <50), MEDIUM (50-74), and LOW (≥75) priority recommendations
+  - Search tab: Added voice search optimization, featured snippets, and seasonal content suggestions for high performers
+  - Social tab: Added TikTok/YouTube expansion, Instagram Stories, and user-generated content strategies for high performers
+  - Local tab: Added Google Business Profile optimization and Google Posts suggestions for high performers
+  - Website tab: Added progressive web app features, schema markup, and performance optimization for high performers
+  - Reviews tab: Added sentiment analysis, systematic review generation, and response templates for high performers
+  - Ensures every restaurant scan provides valuable actionable insights regardless of performance level
 - July 16, 2025. Fixed Facebook page detection accuracy and SERP screenshot timeout issues:
   - Enhanced Facebook URL validation with comprehensive exclude patterns to filter out API endpoints, system URLs, and false positives
   - Added specific exclusion patterns for Facebook plugins, trackers, shares, login pages, and API endpoints
