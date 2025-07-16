@@ -76,10 +76,13 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
-- July 15, 2025. Integrated Google Places business images into post-scan dashboard:
+- July 15, 2025. Integrated Google Places business images into post-scan dashboard and scanning animation:
   - Added restaurant image gallery in main header showing up to 6 high-quality business photos
   - Enhanced Social tab with 3x3 photo grid for content planning and social media strategy
   - Added photo quality metrics to Local tab (total count + quality rating)
+  - Implemented live restaurant photos display during scanning on opposite side of fun facts
+  - Business photos cycle every 5 seconds synchronized with fun facts updates
+  - Photos appear with professional animations and purple-themed gradients
   - Images use professional hover effects and error handling for optimal user experience
   - All photos sourced directly from Google Places API with proper photo references
   - Images display with purple-themed borders and hover states for brand consistency

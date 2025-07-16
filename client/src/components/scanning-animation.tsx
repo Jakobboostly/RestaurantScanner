@@ -35,6 +35,9 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
   const [cityName, setCityName] = useState<string>('Local Area');
   const [actualCityName, setActualCityName] = useState<string>('Local Area');
   const [actualRestaurantName, setActualRestaurantName] = useState<string>('This Restaurant');
+  const [businessPhotos, setBusinessPhotos] = useState<string[]>([]);
+  const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
+  const [showPhoto, setShowPhoto] = useState(false);
 
   const steps = [
     { icon: Search, label: "Finding restaurant website", threshold: 16.67, color: "from-blue-500 to-cyan-500", shadowColor: "shadow-blue-500/20" },
@@ -45,7 +48,7 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
     { icon: Globe, label: "Generating recommendations", threshold: 100, color: "from-indigo-500 to-blue-500", shadowColor: "shadow-indigo-500/20" },
   ];
 
-  // Fetch fun facts when component mounts
+  // Fetch fun facts and business photos when component mounts
   useEffect(() => {
     const fetchFunFacts = async () => {
       try {
@@ -92,10 +95,30 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
       }
     };
 
+    const fetchBusinessPhotos = async () => {
+      if (!placeId) return;
+      
+      try {
+        console.log('Fetching business photos for placeId:', placeId);
+        const response = await fetch(`/api/business-profile/${placeId}`);
+        if (response.ok) {
+          const data = await response.json();
+          console.log('Business profile received:', data);
+          if (data.photos?.businessPhotos && data.photos.businessPhotos.length > 0) {
+            setBusinessPhotos(data.photos.businessPhotos);
+            console.log('Business photos set:', data.photos.businessPhotos.length);
+          }
+        }
+      } catch (error) {
+        console.error('Error fetching business photos:', error);
+      }
+    };
+
     if (restaurantName) {
       fetchFunFacts();
+      fetchBusinessPhotos();
     }
-  }, [restaurantName]);
+  }, [restaurantName, placeId]);
 
   // Show/hide fun facts based on scan progress
   useEffect(() => {
@@ -154,6 +177,12 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
           
           return newIndex;
         });
+        
+        // Cycle through business photos at the same time
+        if (businessPhotos.length > 0) {
+          setCurrentPhotoIndex((prevIndex) => (prevIndex + 1) % businessPhotos.length);
+          setShowPhoto(true);
+        }
       }, 5000); // Change fact every 5 seconds consistently
 
       return () => {
@@ -895,6 +924,135 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
                           />
                         ))}
                       </motion.div>
+                    </div>
+                    
+                    {/* Animated border glow */}
+                    <motion.div
+                      className="absolute inset-0 rounded-2xl border-2 border-white/40"
+                      animate={{
+                        borderColor: ['rgba(255,255,255,0.4)', 'rgba(255,255,255,0.8)', 'rgba(255,255,255,0.4)'],
+                        boxShadow: [
+                          '0 0 10px rgba(255,255,255,0.3)',
+                          '0 0 20px rgba(255,255,255,0.6)',
+                          '0 0 10px rgba(255,255,255,0.3)'
+                        ]
+                      }}
+                      transition={{
+                        duration: 2,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                      }}
+                    />
+                  </div>
+                </div>
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        {/* Business Photos Display - Opposite Side of Fun Facts */}
+        <AnimatePresence mode="wait">
+          {businessPhotos.length > 0 && showPhoto && progress > 0 && progress <= 100 && (
+            <motion.div
+              key={`photo-${currentPhotoIndex}-${factPosition.side === 'left' ? 'right' : 'left'}`}
+              initial={{ 
+                opacity: 0, 
+                x: factPosition.side === 'left' ? 150 : -150, 
+                y: Math.random() * 40 - 20,
+                scale: 0.6,
+                rotate: factPosition.side === 'left' ? 10 : -10
+              }}
+              animate={{ 
+                opacity: 1, 
+                x: 0, 
+                y: 0,
+                scale: 1,
+                rotate: 0
+              }}
+              exit={{ 
+                opacity: 0, 
+                x: factPosition.side === 'left' ? -150 : 150, 
+                y: Math.random() * 60 - 30,
+                scale: 0.8,
+                rotate: factPosition.side === 'left' ? -15 : 15
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 300,
+                damping: 30,
+                duration: 0.8
+              }}
+              className={`fixed z-50 ${
+                factPosition.side === 'left' ? 'right-6' : 'left-6'
+              }`}
+              style={{ 
+                top: factPosition.side === 'left' ? '25%' : '55%', 
+                transform: 'translateY(-50%)' 
+              }}
+            >
+              <motion.div
+                animate={{
+                  y: [0, -5, 0],
+                  rotateY: [0, -3, 0, 3, 0],
+                }}
+                transition={{
+                  duration: 5,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+              >
+                <div className="relative w-64">
+                  {/* Photo container */}
+                  <div className="relative bg-gradient-to-br from-[#5F5FFF] via-[#7B7BFF] to-[#9090FD] rounded-2xl shadow-2xl overflow-hidden p-2">
+                    {/* Photo */}
+                    <div className="relative">
+                      <img
+                        src={businessPhotos[currentPhotoIndex]}
+                        alt={`${restaurantName} photo ${currentPhotoIndex + 1}`}
+                        className="w-full h-48 object-cover rounded-xl"
+                        onError={(e) => {
+                          e.currentTarget.style.display = 'none';
+                        }}
+                      />
+                      
+                      {/* Overlay gradient */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-xl" />
+                      
+                      {/* Photo info */}
+                      <div className="absolute bottom-0 left-0 right-0 p-3">
+                        <div className="flex items-center justify-between">
+                          <div className="px-3 py-1 bg-white/90 rounded-full backdrop-blur-sm">
+                            <span className="text-xs font-bold text-[#5F5FFF] uppercase tracking-wide">
+                              {restaurantName}
+                            </span>
+                          </div>
+                          <div className="px-2 py-1 bg-black/30 rounded-full backdrop-blur-sm">
+                            <span className="text-xs font-medium text-white">
+                              {currentPhotoIndex + 1}/{businessPhotos.length}
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Progress dots */}
+                    <div className="flex justify-center space-x-1 mt-3">
+                      {businessPhotos.slice(0, 8).map((_, index) => (
+                        <motion.div
+                          key={index}
+                          className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
+                            index === currentPhotoIndex ? 'bg-white' : 'bg-white/40'
+                          }`}
+                          animate={{
+                            scale: index === currentPhotoIndex ? [1, 1.3, 1] : 1,
+                          }}
+                          transition={{
+                            duration: 0.6,
+                            repeat: index === currentPhotoIndex ? Infinity : 0,
+                            repeatType: "reverse",
+                          }}
+                        />
+                      ))}
                     </div>
                     
                     {/* Animated border glow */}

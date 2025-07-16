@@ -526,17 +526,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                         </div>
                       )}
                       
-                      {/* Low Priority Issues */}
-                      {scores.search >= 75 && (
-                        <div className="bg-[#9090FD]/10 border border-[#9090FD]/30 rounded p-3">
-                          <span className="text-xs font-bold text-[#9090FD] bg-[#9090FD]/20 px-2 py-1 rounded">LOW PRIORITY</span>
-                          <ul className="mt-2 text-sm text-gray-700 space-y-1">
-                            <li>• Could optimize for seasonal menu keywords</li>
-                            <li>• Opportunity to target more specific cuisine terms</li>
-                            <li>• Fine-tune for voice search optimization</li>
-                          </ul>
-                        </div>
-                      )}
+
                     </div>
                   </div>
 
@@ -623,17 +613,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                         </div>
                       )}
                       
-                      {/* Low Priority Issues */}
-                      {scores.social >= 75 && (
-                        <div className="bg-[#9090FD]/10 border border-[#9090FD]/30 rounded p-3">
-                          <span className="text-xs font-bold text-[#9090FD] bg-[#9090FD]/20 px-2 py-1 rounded">LOW PRIORITY</span>
-                          <ul className="mt-2 text-sm text-gray-700 space-y-1">
-                            <li>• Could optimize post timing for better engagement</li>
-                            <li>• Opportunity to showcase more behind-the-scenes content</li>
-                            <li>• Could leverage user-generated content more effectively</li>
-                          </ul>
-                        </div>
-                      )}
+
                     </div>
                   </div>
 
@@ -761,17 +741,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                         </div>
                       )}
                       
-                      {/* Low Priority Issues */}
-                      {scores.local >= 75 && (
-                        <div className="bg-[#9090FD]/10 border border-[#9090FD]/30 rounded p-3">
-                          <span className="text-xs font-bold text-[#9090FD] bg-[#9090FD]/20 px-2 py-1 rounded">LOW PRIORITY</span>
-                          <ul className="mt-2 text-sm text-gray-700 space-y-1">
-                            <li>• Could add more high-quality photos to Google Business</li>
-                            <li>• Opportunity to showcase more menu items</li>
-                            <li>• Could improve local directory listings</li>
-                          </ul>
-                        </div>
-                      )}
+
                     </div>
                   </div>
 
@@ -862,17 +832,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                         </div>
                       )}
                       
-                      {/* Low Priority Issues */}
-                      {scores.website >= 75 && (
-                        <div className="bg-[#9090FD]/10 border border-[#9090FD]/30 rounded p-3">
-                          <span className="text-xs font-bold text-[#9090FD] bg-[#9090FD]/20 px-2 py-1 rounded">LOW PRIORITY</span>
-                          <ul className="mt-2 text-sm text-gray-700 space-y-1">
-                            <li>• Could optimize images for faster loading</li>
-                            <li>• Opportunity to improve user experience</li>
-                            <li>• Could add more interactive menu features</li>
-                          </ul>
-                        </div>
-                      )}
+
                     </div>
                   </div>
 
@@ -955,17 +915,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                         </div>
                       )}
                       
-                      {/* Low Priority Issues */}
-                      {scores.reviews >= 75 && (
-                        <div className="bg-[#9090FD]/10 border border-[#9090FD]/30 rounded p-3">
-                          <span className="text-xs font-bold text-[#9090FD] bg-[#9090FD]/20 px-2 py-1 rounded">LOW PRIORITY</span>
-                          <ul className="mt-2 text-sm text-gray-700 space-y-1">
-                            <li>• Could systematize review collection process</li>
-                            <li>• Opportunity to showcase reviews on website</li>
-                            <li>• Could improve review response timing</li>
-                          </ul>
-                        </div>
-                      )}
+
                     </div>
                   </div>
 
