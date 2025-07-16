@@ -677,6 +677,95 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                       </p>
                     </div>
                   )}
+
+                  {/* Facebook Posts Analysis */}
+                  {scanResult.socialMediaLinks?.facebookAnalysis && (
+                    <div className="bg-[#5F5FFF]/5 border border-[#5F5FFF]/20 rounded-lg p-4">
+                      <h3 className="font-bold text-[#5F5FFF] mb-3 flex items-center gap-2">
+                        <Users className="w-5 h-5" />
+                        Facebook Activity Analysis
+                      </h3>
+                      
+                      <div className="grid grid-cols-2 gap-4 mb-4">
+                        <div className="bg-white/70 rounded-lg p-3">
+                          <div className="text-sm text-gray-600">Total Posts</div>
+                          <div className="text-2xl font-bold text-[#5F5FFF]">
+                            {scanResult.socialMediaLinks.facebookAnalysis.totalPosts}
+                          </div>
+                        </div>
+                        <div className="bg-white/70 rounded-lg p-3">
+                          <div className="text-sm text-gray-600">Avg. Engagement</div>
+                          <div className="text-2xl font-bold text-[#5F5FFF]">
+                            {scanResult.socialMediaLinks.facebookAnalysis.averageEngagement}
+                          </div>
+                        </div>
+                        <div className="bg-white/70 rounded-lg p-3">
+                          <div className="text-sm text-gray-600">Post Frequency</div>
+                          <div className="text-sm font-medium text-[#5F5FFF]">
+                            {scanResult.socialMediaLinks.facebookAnalysis.postingFrequency}
+                          </div>
+                        </div>
+                        <div className="bg-white/70 rounded-lg p-3">
+                          <div className="text-sm text-gray-600">Most Active</div>
+                          <div className="text-sm font-medium text-[#5F5FFF]">
+                            {scanResult.socialMediaLinks.facebookAnalysis.postingPatterns?.mostActiveDay || 'N/A'}
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Recent Posts Preview */}
+                      {scanResult.socialMediaLinks.facebookAnalysis.recentPosts && 
+                       scanResult.socialMediaLinks.facebookAnalysis.recentPosts.length > 0 && (
+                        <div className="space-y-3">
+                          <h4 className="font-semibold text-gray-800">Recent Posts</h4>
+                          <div className="space-y-2 max-h-64 overflow-y-auto">
+                            {scanResult.socialMediaLinks.facebookAnalysis.recentPosts.slice(0, 3).map((post, index) => (
+                              <div key={index} className="bg-white/70 rounded-lg p-3 text-sm">
+                                <div className="flex justify-between items-start mb-2">
+                                  <div className="text-xs text-gray-500">
+                                    {new Date(post.timestamp).toLocaleDateString()}
+                                  </div>
+                                  <div className="flex gap-2 text-xs text-gray-500">
+                                    <span>👍 {post.likes}</span>
+                                    <span>💬 {post.comments}</span>
+                                    <span>📤 {post.shares}</span>
+                                  </div>
+                                </div>
+                                <div className="text-gray-700 line-clamp-2">
+                                  {post.text || 'Visual content post'}
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
+                      {/* Content Type Breakdown */}
+                      {scanResult.socialMediaLinks.facebookAnalysis.contentTypes && (
+                        <div className="mt-4 pt-4 border-t border-gray-200">
+                          <h4 className="font-semibold text-gray-800 mb-3">Content Mix</h4>
+                          <div className="grid grid-cols-2 gap-2 text-sm">
+                            <div className="flex justify-between">
+                              <span>📸 Photos</span>
+                              <span className="font-medium">{scanResult.socialMediaLinks.facebookAnalysis.contentTypes.photo}</span>
+                            </div>
+                            <div className="flex justify-between">
+                              <span>🎥 Videos</span>
+                              <span className="font-medium">{scanResult.socialMediaLinks.facebookAnalysis.contentTypes.video}</span>
+                            </div>
+                            <div className="flex justify-between">
+                              <span>📝 Text</span>
+                              <span className="font-medium">{scanResult.socialMediaLinks.facebookAnalysis.contentTypes.text}</span>
+                            </div>
+                            <div className="flex justify-between">
+                              <span>🔗 Links</span>
+                              <span className="font-medium">{scanResult.socialMediaLinks.facebookAnalysis.contentTypes.link}</span>
+                            </div>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  )}
                   
                   <div className="pt-4 border-t border-gray-200 space-y-3">
                     <div className="flex justify-between items-center">
@@ -700,7 +789,9 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-gray-600">Engagement Rate</span>
                       <span className="font-medium">
-                        {scanResult.socialMediaLinks?.facebook?.engagement || "N/A"}
+                        {scanResult.socialMediaLinks?.facebookAnalysis?.engagementRate 
+                          ? `${scanResult.socialMediaLinks.facebookAnalysis.engagementRate}%`
+                          : "N/A"}
                       </span>
                     </div>
                   </div>

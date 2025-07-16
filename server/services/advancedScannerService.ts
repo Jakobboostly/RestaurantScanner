@@ -5,6 +5,7 @@ import { AIRecommendationService } from './aiRecommendationService.js';
 import { GoogleReviewsService } from './googleReviewsService.js';
 import { SocialMediaDetector } from './socialMediaDetector.js';
 import { EnhancedFacebookDetector } from './enhancedFacebookDetector.js';
+import { FacebookPostsScraperService } from './facebookPostsScraperService.js';
 import { ScanResult } from '@shared/schema';
 import axios from 'axios';
 import * as cheerio from 'cheerio';
@@ -39,6 +40,7 @@ export class AdvancedScannerService {
   private googleReviewsService: GoogleReviewsService;
   private socialMediaDetector: SocialMediaDetector;
   private enhancedFacebookDetector: EnhancedFacebookDetector;
+  private facebookPostsScraperService: FacebookPostsScraperService;
 
   constructor(
     googleApiKey: string,
@@ -46,7 +48,8 @@ export class AdvancedScannerService {
     serpApiKey: string,      // Not used but kept for compatibility
     dataForSeoLogin: string,
     dataForSeoPassword: string,
-    zembraApiKey?: string
+    zembraApiKey?: string,
+    apifyApiKey?: string
   ) {
     this.googleBusinessService = new GoogleBusinessService(googleApiKey);
     this.dataForSeoService = new EnhancedDataForSeoService(dataForSeoLogin, dataForSeoPassword);
@@ -54,6 +57,7 @@ export class AdvancedScannerService {
     this.googleReviewsService = new GoogleReviewsService(googleApiKey);
     this.socialMediaDetector = new SocialMediaDetector(zembraApiKey);
     this.enhancedFacebookDetector = new EnhancedFacebookDetector();
+    this.facebookPostsScraperService = new FacebookPostsScraperService(apifyApiKey || '');
     
     if (zembraApiKey) {
       this.zembraReviewsService = new ZembraTechReviewsService(zembraApiKey);
@@ -2038,12 +2042,34 @@ export class AdvancedScannerService {
         // Clean the Facebook URL and return it directly
         const cleanedFacebookUrl = this.cleanFacebookUrl(websiteUrl);
         if (cleanedFacebookUrl) {
-          return {
+          // Try to get enhanced Facebook data using the posts scraper
+          const facebookAnalysis = await this.facebookPostsScraperService.analyzeFacebookPage(cleanedFacebookUrl);
+          
+          const result = {
             facebook: cleanedFacebookUrl,
             facebookVerified: true,
-            facebookConfidence: 'high',
-            facebookSource: 'google_places'
+            facebookConfidence: 'high' as const,
+            facebookSource: 'google_places' as const
           };
+
+          // Add enhanced Facebook data if available
+          if (facebookAnalysis) {
+            return {
+              ...result,
+              facebookAnalysis: {
+                totalPosts: facebookAnalysis.totalPosts,
+                averageEngagement: facebookAnalysis.averageEngagement,
+                postingFrequency: facebookAnalysis.postingFrequency,
+                engagementRate: facebookAnalysis.engagementRate,
+                recentPosts: facebookAnalysis.recentPosts.slice(0, 5), // Latest 5 posts
+                contentTypes: facebookAnalysis.contentTypes,
+                postingPatterns: facebookAnalysis.postingPatterns,
+                topPerformingPost: facebookAnalysis.topPerformingPost
+              }
+            };
+          }
+          
+          return result;
         }
       }
       

@@ -18,6 +18,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   const DATAFOREO_LOGIN = process.env.DATAFORSEO_LOGIN || process.env.DATAFOREO_LOGIN;
   const DATAFOREO_PASSWORD = process.env.DATAFORSEO_PASSWORD || process.env.DATAFOREO_PASSWORD;
   const ZEMBRATECH_API_KEY = process.env.ZEMBRA_API || process.env.ZEMBRATECH_API_KEY;
+  const APIFY_API_KEY = process.env.APIFY_API_KEY;
 
   if (!GOOGLE_API_KEY) {
     console.warn("GOOGLE_API_KEY not configured - restaurant search may not work");
@@ -39,7 +40,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
       "", // No SERP API needed - using DataForSEO
       DATAFOREO_LOGIN,
       DATAFOREO_PASSWORD,
-      ZEMBRATECH_API_KEY
+      ZEMBRATECH_API_KEY,
+      APIFY_API_KEY
     );
     console.log("DataForSEO scanner enabled with Google Places (restaurant search), DataForSEO (performance, keywords, SERP), and Zembratech (reviews)");
   } else {

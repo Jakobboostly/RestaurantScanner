@@ -76,6 +76,15 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 16, 2025. Successfully integrated Apify Facebook Posts Scraper API into restaurant scanner:
+  - Added FacebookPostsScraperService with comprehensive social media analysis capabilities
+  - Integrated Facebook posts data extraction (engagement metrics, posting frequency, content analysis)
+  - Enhanced premium dashboard Social tab with Facebook Activity Analysis section
+  - Added display of recent posts, engagement metrics, content type breakdown, and posting patterns
+  - Updated schema to include Facebook analysis data structure with posts, metrics, and patterns
+  - Added APIFY_API_KEY environment variable configuration
+  - System ready to provide detailed Facebook social media intelligence once Apify actor is rented
+  - Facebook URL detection and posts scraping fully functional (confirmed via API test)
 - July 15, 2025. Integrated Google Places business images into post-scan dashboard and scanning animation:
   - Added restaurant image gallery in main header showing up to 6 high-quality business photos
   - Enhanced Social tab with 3x3 photo grid for content planning and social media strategy
