@@ -76,6 +76,13 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 16, 2025. Successfully integrated Facebook Posts Scraper with fallback functionality:
+  - Added working APIFY_API_KEY for Facebook posts analysis
+  - Implemented multi-actor approach to try different Facebook scraper options
+  - Created robust fallback system when specialized Facebook actors aren't available
+  - Facebook analysis now provides basic structure even when scraper subscription is needed
+  - System maintains data integrity by clearly indicating when full Facebook data requires subscription
+  - Facebook posts analysis successfully integrated into restaurant scanner workflow
 - July 16, 2025. Successfully fixed SERP screenshot functionality for restaurant ranking visualization:
   - Resolved Google search result selector timeout issues by removing problematic element waits
   - Screenshot service now successfully captures Google search results (36KB+ screenshot files)
