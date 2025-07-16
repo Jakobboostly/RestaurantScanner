@@ -9,6 +9,7 @@ interface ScanningAnimationProps {
   status: string;
   restaurantName: string;
   placeId?: string;
+  businessPhotos?: string[];
   currentReview?: {
     author: string;
     rating: number;
@@ -24,7 +25,7 @@ interface FunFact {
   type: 'city' | 'restaurant';
 }
 
-export default function ScanningAnimation({ progress, status, restaurantName, placeId, currentReview }: ScanningAnimationProps) {
+export default function ScanningAnimation({ progress, status, restaurantName, placeId, businessPhotos = [], currentReview }: ScanningAnimationProps) {
   const [particles, setParticles] = useState<Array<{ id: number; x: number; y: number; delay: number; color: string }>>([]);
   const [scanBeams, setScanBeams] = useState<Array<{ id: number; delay: number }>>([]);
   const [dataStreams, setDataStreams] = useState<Array<{ id: number; delay: number; direction: 'left' | 'right' }>>([]);
@@ -35,7 +36,6 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
   const [cityName, setCityName] = useState<string>('Local Area');
   const [actualCityName, setActualCityName] = useState<string>('Local Area');
   const [actualRestaurantName, setActualRestaurantName] = useState<string>('This Restaurant');
-  const [businessPhotos, setBusinessPhotos] = useState<string[]>([]);
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
   const [showPhoto, setShowPhoto] = useState(false);
 
@@ -95,28 +95,8 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
       }
     };
 
-    const fetchBusinessPhotos = async () => {
-      if (!placeId) return;
-      
-      try {
-        console.log('Fetching business photos for placeId:', placeId);
-        const response = await fetch(`/api/business-profile/${placeId}`);
-        if (response.ok) {
-          const data = await response.json();
-          console.log('Business profile received:', data);
-          if (data.photos?.businessPhotos && data.photos.businessPhotos.length > 0) {
-            setBusinessPhotos(data.photos.businessPhotos);
-            console.log('Business photos set:', data.photos.businessPhotos.length);
-          }
-        }
-      } catch (error) {
-        console.error('Error fetching business photos:', error);
-      }
-    };
-
     if (restaurantName) {
       fetchFunFacts();
-      fetchBusinessPhotos();
     }
   }, [restaurantName, placeId]);
 
@@ -179,7 +159,7 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
         });
         
         // Cycle through business photos at the same time
-        if (businessPhotos.length > 0) {
+        if (businessPhotos && businessPhotos.length > 0) {
           setCurrentPhotoIndex((prevIndex) => (prevIndex + 1) % businessPhotos.length);
           setShowPhoto(true);
         }
@@ -952,7 +932,7 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
 
         {/* Business Photos Display - Opposite Side of Fun Facts */}
         <AnimatePresence mode="wait">
-          {businessPhotos.length > 0 && showPhoto && progress > 0 && progress <= 100 && (
+          {businessPhotos && businessPhotos.length > 0 && showPhoto && progress > 0 && progress <= 100 && (
             <motion.div
               key={`photo-${currentPhotoIndex}-${factPosition.side === 'left' ? 'right' : 'left'}`}
               initial={{ 
@@ -1037,7 +1017,7 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
                     
                     {/* Progress dots */}
                     <div className="flex justify-center space-x-1 mt-3">
-                      {businessPhotos.slice(0, 8).map((_, index) => (
+                      {businessPhotos && businessPhotos.slice(0, 8).map((_, index) => (
                         <motion.div
                           key={index}
                           className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${

@@ -12,6 +12,7 @@ import * as cheerio from 'cheerio';
 export interface ScanProgress {
   progress: number;
   status: string;
+  businessPhotos?: string[];
 }
 
 export interface EnhancedScanResult extends ScanResult {
@@ -104,6 +105,27 @@ export class AdvancedScannerService {
         console.error('Business profile fetch failed - using fallback:', error);
         businessProfile = null;
         profileAnalysis = null;
+      }
+      
+      // Fetch business photos early in the process for scanning animation
+      let businessPhotos: string[] = [];
+      if (placeId) {
+        try {
+          const photoDetails = await this.googleBusinessService.getBusinessPhotos(placeId);
+          businessPhotos = photoDetails.businessPhotos || [];
+          console.log(`Fetched ${businessPhotos.length} business photos for scanning animation`);
+          
+          // Send photos to client via progress callback if available
+          if (businessPhotos.length > 0) {
+            onProgress({ 
+              progress: 12, 
+              status: 'Finding restaurant website...',
+              businessPhotos: businessPhotos 
+            });
+          }
+        } catch (error) {
+          console.error('Failed to fetch business photos for scanning:', error);
+        }
       }
       
       // Wait for phase 1 to complete (4 seconds total)
