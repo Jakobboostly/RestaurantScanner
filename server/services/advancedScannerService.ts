@@ -219,7 +219,7 @@ export class AdvancedScannerService {
       });
       
       const socialMediaPromise = Promise.race([
-        this.socialMediaDetector.detectSocialMediaLinks(domain),
+        this.enhancedSocialMediaDetection(domain, restaurantName, businessProfile, placeId),
         new Promise((_, reject) => 
           setTimeout(() => reject(new Error('Social media detection timeout')), 3500)
         )
@@ -2030,6 +2030,23 @@ export class AdvancedScannerService {
     placeId: string
   ): Promise<any> {
     try {
+      // First check if the business profile website is already a Facebook URL
+      const websiteUrl = businessProfile?.website;
+      if (websiteUrl && (websiteUrl.includes('facebook.com') || websiteUrl.includes('fb.com'))) {
+        console.log('Business profile website is a Facebook URL:', websiteUrl);
+        
+        // Clean the Facebook URL and return it directly
+        const cleanedFacebookUrl = this.cleanFacebookUrl(websiteUrl);
+        if (cleanedFacebookUrl) {
+          return {
+            facebook: cleanedFacebookUrl,
+            facebookVerified: true,
+            facebookConfidence: 'high',
+            facebookSource: 'google_places'
+          };
+        }
+      }
+      
       // Get traditional social media links
       const traditionalLinks = await this.socialMediaDetector.detectSocialMediaLinks(domain);
       
@@ -2060,6 +2077,23 @@ export class AdvancedScannerService {
       console.error('Enhanced social media detection failed:', error);
       // Fallback to traditional detection
       return await this.socialMediaDetector.detectSocialMediaLinks(domain);
+    }
+  }
+
+  private cleanFacebookUrl(url: string): string | null {
+    try {
+      // Remove any extra parameters and clean the URL
+      const cleanUrl = url.replace(/[?&]ref=[^&]*/, '').replace(/[?&]fref=[^&]*/, '');
+      
+      // Validate that it's a proper Facebook URL
+      if (cleanUrl.includes('facebook.com') || cleanUrl.includes('fb.com')) {
+        return cleanUrl;
+      }
+      
+      return null;
+    } catch (error) {
+      console.error('Error cleaning Facebook URL:', error);
+      return null;
     }
   }
 }

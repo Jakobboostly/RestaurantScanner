@@ -98,11 +98,13 @@ export class EnhancedFacebookDetector {
 
       const $ = cheerio.load(response.data);
       
-      // Enhanced Facebook link detection patterns
+      // Enhanced Facebook link detection patterns including newer formats
       const facebookSelectors = [
         'a[href*="facebook.com"]',
         'a[href*="fb.com"]',
         'a[href*="m.facebook.com"]',
+        'a[href*="profile.php?id="]',
+        'a[href*="facebook.com/profile.php"]',
         'iframe[src*="facebook.com"]',
         'script[src*="facebook.com"]'
       ];
@@ -282,11 +284,37 @@ export class EnhancedFacebookDetector {
 
   private cleanFacebookUrl(url: string): string | null {
     try {
-      // Remove tracking parameters and clean up URL
-      const cleanUrl = url
-        .replace(/\?.*$/, '') // Remove query parameters
+      // Handle newer Facebook profile format (profile.php?id=)
+      if (url.includes('profile.php?id=')) {
+        // Keep the id parameter for profile.php URLs
+        const idMatch = url.match(/profile\.php\?id=(\d+)/);
+        if (idMatch) {
+          return `https://www.facebook.com/profile.php?id=${idMatch[1]}`;
+        }
+      }
+      
+      // For regular Facebook page URLs, remove tracking parameters
+      let cleanUrl = url
         .replace(/#.*$/, '') // Remove fragments
         .replace(/\/$/, ''); // Remove trailing slash
+
+      // Remove specific tracking parameters but keep essential ones
+      if (cleanUrl.includes('?')) {
+        const urlObj = new URL(cleanUrl);
+        const allowedParams = ['id', 'ref', 'fref']; // Keep essential Facebook parameters
+        const paramsToKeep = new URLSearchParams();
+        
+        for (const [key, value] of urlObj.searchParams) {
+          if (allowedParams.includes(key)) {
+            paramsToKeep.set(key, value);
+          }
+        }
+        
+        cleanUrl = urlObj.origin + urlObj.pathname;
+        if (paramsToKeep.toString()) {
+          cleanUrl += '?' + paramsToKeep.toString();
+        }
+      }
 
       // Ensure it's a valid Facebook URL
       if (cleanUrl.includes('facebook.com') && !cleanUrl.includes('/sharer/')) {
@@ -300,6 +328,11 @@ export class EnhancedFacebookDetector {
   }
 
   private isValidFacebookPageUrl(url: string): boolean {
+    // Include newer Facebook profile format
+    if (url.includes('profile.php?id=')) {
+      return true;
+    }
+    
     // Exclude common non-page Facebook URLs
     const excludePatterns = [
       '/sharer/',
@@ -382,6 +415,10 @@ export class EnhancedFacebookDetector {
     urls.push(`https://www.facebook.com/${businessName.toLowerCase().replace(/\s+/g, '')}`);
     urls.push(`https://www.facebook.com/${businessName.toLowerCase().replace(/\s+/g, '.')}`);
     urls.push(`https://www.facebook.com/${businessName.toLowerCase().replace(/\s+/g, '-')}`);
+    
+    // Add common page name variations
+    urls.push(`https://www.facebook.com/pages/${cleanName}`);
+    urls.push(`https://www.facebook.com/pages/${businessName.replace(/\s+/g, '-')}`);
     
     return urls;
   }

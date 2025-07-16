@@ -84,7 +84,7 @@ export class GoogleBusinessService {
         name: place.name,
         rating: place.rating,
         totalReviews: place.user_ratings_total,
-        website: place.website ? 'Available' : 'Not available',
+        website: place.website || 'Not available',
         phone: place.formatted_phone_number ? 'Available' : 'Not available',
         address: place.formatted_address ? place.formatted_address : 'Not available',
         hasPhotos: !!place.photos,
