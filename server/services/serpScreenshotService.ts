@@ -91,16 +91,19 @@ export class SerpScreenshotService {
       
       console.log('Page loaded successfully, waiting for search results...');
       
-      // Wait for search results to load
-      try {
-        await page.waitForSelector('#search', { timeout: 8000 });
-        console.log('Search results loaded successfully');
-      } catch (error) {
-        console.log('Search selector not found, trying alternative selectors...');
-        // Try alternative selectors
-        await page.waitForSelector('div[data-ved], .g, .tF2Cxc', { timeout: 3000 });
-        console.log('Alternative search results found');
-      }
+      // Wait for page to fully load - use more reliable approach
+      console.log('Waiting for page content to load...');
+      await page.waitForFunction(() => {
+        return document.readyState === 'complete' && 
+               document.querySelector('body') && 
+               document.querySelector('body').children.length > 0;
+      }, { timeout: 5000 }).catch(() => {
+        console.log('Page load timeout, proceeding with screenshot...');
+      });
+      
+      // Additional wait for search results to populate
+      await new Promise(resolve => setTimeout(resolve, 2000));
+      console.log('Page content loaded, proceeding with screenshot...');
       
       // Remove cookie banners, ads, and other distractions
       await page.evaluate(() => {
@@ -155,10 +158,17 @@ export class SerpScreenshotService {
       
     } catch (error) {
       console.error('Error capturing SERP screenshot:', error);
+      console.error('Error details:', error.message);
+      console.error('Error stack:', error.stack);
       throw error;
     } finally {
       if (browser) {
-        await browser.close();
+        try {
+          await browser.close();
+          console.log('Browser closed successfully');
+        } catch (closeError) {
+          console.error('Error closing browser:', closeError);
+        }
       }
     }
   }

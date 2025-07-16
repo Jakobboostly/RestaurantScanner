@@ -264,6 +264,7 @@ export class AdvancedScannerService {
       try {
         // Use only 1 primary keyword for maximum speed
         const primaryKeyword = this.generatePrimaryKeywords(restaurantName, businessProfile)[0];
+        console.log(`Starting SERP analysis and screenshot capture for keyword: "${primaryKeyword}"`);
         
         // Parallel SERP analysis and screenshot capture
         const serpPromise = Promise.race([
@@ -273,10 +274,11 @@ export class AdvancedScannerService {
           )
         ]);
         
+        console.log('Initiating screenshot capture...');
         const screenshotPromise = Promise.race([
           this.serpScreenshotService.captureSearchResults(primaryKeyword, restaurantName, domain, this.extractCity(restaurantName) || 'United States'),
           new Promise((_, reject) => 
-            setTimeout(() => reject(new Error('SERP screenshot timeout')), 15000)
+            setTimeout(() => reject(new Error('SERP screenshot timeout')), 25000)
           )
         ]);
         
@@ -288,12 +290,33 @@ export class AdvancedScannerService {
           console.error(`SERP analysis failed for "${primaryKeyword}":`, serpResult.reason);
         }
         
+        console.log(`Screenshot result status: ${screenshotResult.status}`);
         if (screenshotResult.status === 'fulfilled') {
           serpScreenshots = [screenshotResult.value];
           console.log(`SERP screenshot captured successfully for "${primaryKeyword}"`);
+          console.log('Screenshot data size:', screenshotResult.value.screenshotBase64?.length || 0);
         } else {
           console.error(`SERP screenshot failed for "${primaryKeyword}":`, screenshotResult.reason);
           console.error('Screenshot service error details:', screenshotResult.reason?.message || screenshotResult.reason);
+          
+          // Create a fallback screenshot structure to test the UI
+          const fallbackScreenshot = {
+            keyword: primaryKeyword,
+            location: this.extractCity(restaurantName) || 'United States',
+            screenshot: '', // Empty for now
+            restaurantRanking: {
+              found: false,
+              position: 0,
+              title: '',
+              url: '',
+              snippet: ''
+            },
+            totalResults: 0,
+            searchUrl: `https://www.google.com/search?q=${encodeURIComponent(primaryKeyword)}`
+          };
+          
+          console.log('Using fallback screenshot structure for UI testing');
+          // serpScreenshots = [fallbackScreenshot]; // Temporarily disabled to avoid empty screenshots
         }
         
         console.log('Fast SERP analysis completed');
@@ -567,8 +590,8 @@ export class AdvancedScannerService {
   ): any[] {
     const issues = [];
 
-    // Creative, UI-friendly critical issues
-    if (businessProfile.rating < 4.0) {
+    // Creative, UI-friendly critical issues - with null safety
+    if (businessProfile && businessProfile.rating && businessProfile.rating < 4.0) {
       issues.push({
         type: 'reputation',
         severity: 'critical',
