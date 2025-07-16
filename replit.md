@@ -76,6 +76,13 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 15, 2025. Updated post-scan dashboard to professional purple color scheme for cohesive branding:
+  - Replaced colorful red/yellow/blue priority indicators with professional Boostly purple variations
+  - Used purple opacity levels (5F5FFF/10, 7375FD/10, 9090FD/10) for subtle priority differentiation
+  - Updated "Where You're Going Wrong" sections to use gray backgrounds with purple accents
+  - Changed "How Boostly Can Solve It" sections to use purple-tinted backgrounds
+  - Maintained all functionality while creating more professional, cohesive visual design
+  - All priority badges and solution cards now use consistent purple gradient themes
 - July 15, 2025. Enhanced post-scan dashboard with actionable insights and priority-based recommendations:
   - Added "Where You're Going Wrong" sections to all 5 dashboard tabs with specific improvement areas
   - Implemented priority-based action items (HIGH/MEDIUM/LOW) based on score ranges across all categories
