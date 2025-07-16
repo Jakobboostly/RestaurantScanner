@@ -76,6 +76,14 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 16, 2025. Integrated SERP screenshots into search tab layout with enhanced user experience:
+  - Moved Google Search Rankings from bottom section to right side of search tab
+  - Created responsive grid layout: left side shows dropdown summary, right side shows search screenshots
+  - Added compact screenshot display with keyword, location, and ranking position badges
+  - Enhanced screenshot cards with search result details, ranking overlays, and live search links
+  - Improved visual hierarchy with consistent Boostly purple branding throughout
+  - Screenshots now appear immediately alongside search performance analysis for better context
+  - Removed duplicate SERP screenshots section to streamline dashboard navigation
 - July 16, 2025. Fixed "Where You're Going Wrong" sections to always display actionable insights:
   - Added LOW PRIORITY sections for high-performing categories (scores ≥75) so content always appears
   - Complete priority system now includes HIGH (scores <50), MEDIUM (50-74), and LOW (≥75) priority recommendations

@@ -495,97 +495,174 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
             <CardContent className="space-y-4 pt-6">
               {/* Search Tab Content */}
               {activeTab === 'search' && (
-                <div className="space-y-6">
-                  {/* Where You're Going Wrong */}
-                  <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
-                    <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
-                      <AlertCircle className="w-5 h-5 text-[#5F5FFF]" />
-                      Where You're Going Wrong
-                    </h3>
-                    <div className="space-y-3">
-                      {/* High Priority Issues */}
-                      {scores.search < 50 && (
-                        <div className="bg-[#5F5FFF]/10 border border-[#5F5FFF]/30 rounded p-3">
-                          <span className="text-xs font-bold text-[#5F5FFF] bg-[#5F5FFF]/20 px-2 py-1 rounded">HIGH PRIORITY</span>
-                          <ul className="mt-2 text-sm text-gray-700 space-y-1">
-                            <li>• Not ranking for key restaurant keywords in your area</li>
-                            <li>• Missing from local search results when customers look for food</li>
-                            <li>• Competitors are capturing your potential customers</li>
-                          </ul>
-                        </div>
-                      )}
-                      
-                      {/* Medium Priority Issues */}
-                      {scores.search >= 50 && scores.search < 75 && (
-                        <div className="bg-[#7375FD]/10 border border-[#7375FD]/30 rounded p-3">
-                          <span className="text-xs font-bold text-[#7375FD] bg-[#7375FD]/20 px-2 py-1 rounded">MEDIUM PRIORITY</span>
-                          <ul className="mt-2 text-sm text-gray-700 space-y-1">
-                            <li>• Limited visibility for high-value search terms</li>
-                            <li>• Missing opportunities for delivery and takeout searches</li>
-                            <li>• Inconsistent local search presence</li>
-                          </ul>
-                        </div>
-                      )}
-                      
-                      {/* Low Priority Issues */}
-                      {scores.search >= 75 && (
-                        <div className="bg-[#9090FD]/10 border border-[#9090FD]/30 rounded p-3">
-                          <span className="text-xs font-bold text-[#9090FD] bg-[#9090FD]/20 px-2 py-1 rounded">LOW PRIORITY</span>
-                          <ul className="mt-2 text-sm text-gray-700 space-y-1">
-                            <li>• Fine-tune keyword targeting for seasonal menu items</li>
-                            <li>• Optimize for voice search queries like "Hey Google, best restaurant near me"</li>
-                            <li>• Enhance content for featured snippet opportunities</li>
-                          </ul>
-                        </div>
-                      )}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  {/* Left Side - Dropdown Summary */}
+                  <div className="space-y-6">
+                    {/* Where You're Going Wrong */}
+                    <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+                      <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                        <AlertCircle className="w-5 h-5 text-[#5F5FFF]" />
+                        Where You're Going Wrong
+                      </h3>
+                      <div className="space-y-3">
+                        {/* High Priority Issues */}
+                        {scores.search < 50 && (
+                          <div className="bg-[#5F5FFF]/10 border border-[#5F5FFF]/30 rounded p-3">
+                            <span className="text-xs font-bold text-[#5F5FFF] bg-[#5F5FFF]/20 px-2 py-1 rounded">HIGH PRIORITY</span>
+                            <ul className="mt-2 text-sm text-gray-700 space-y-1">
+                              <li>• Not ranking for key restaurant keywords in your area</li>
+                              <li>• Missing from local search results when customers look for food</li>
+                              <li>• Competitors are capturing your potential customers</li>
+                            </ul>
+                          </div>
+                        )}
+                        
+                        {/* Medium Priority Issues */}
+                        {scores.search >= 50 && scores.search < 75 && (
+                          <div className="bg-[#7375FD]/10 border border-[#7375FD]/30 rounded p-3">
+                            <span className="text-xs font-bold text-[#7375FD] bg-[#7375FD]/20 px-2 py-1 rounded">MEDIUM PRIORITY</span>
+                            <ul className="mt-2 text-sm text-gray-700 space-y-1">
+                              <li>• Limited visibility for high-value search terms</li>
+                              <li>• Missing opportunities for delivery and takeout searches</li>
+                              <li>• Inconsistent local search presence</li>
+                            </ul>
+                          </div>
+                        )}
+                        
+                        {/* Low Priority Issues */}
+                        {scores.search >= 75 && (
+                          <div className="bg-[#9090FD]/10 border border-[#9090FD]/30 rounded p-3">
+                            <span className="text-xs font-bold text-[#9090FD] bg-[#9090FD]/20 px-2 py-1 rounded">LOW PRIORITY</span>
+                            <ul className="mt-2 text-sm text-gray-700 space-y-1">
+                              <li>• Fine-tune keyword targeting for seasonal menu items</li>
+                              <li>• Optimize for voice search queries like "Hey Google, best restaurant near me"</li>
+                              <li>• Enhance content for featured snippet opportunities</li>
+                            </ul>
+                          </div>
+                        )}
+                      </div>
+                    </div>
 
+                    {/* How Boostly Can Solve It */}
+                    <div className="bg-[#5F5FFF]/5 border border-[#5F5FFF]/20 rounded-lg p-4">
+                      <h3 className="font-bold text-[#5F5FFF] mb-3 flex items-center gap-2">
+                        <Zap className="w-5 h-5" />
+                        How Boostly Can Solve It For You
+                      </h3>
+                      <div className="space-y-3">
+                        <div className="bg-gradient-to-r from-[#5F5FFF] to-[#7375FD] text-white rounded p-3">
+                          <h4 className="font-semibold mb-2">🎯 Boostly SEO Service</h4>
+                          <ul className="text-sm space-y-1">
+                            <li>• Get your restaurant ranking #1 for "restaurant near me" searches</li>
+                            <li>• Target high-value keywords like "delivery", "takeout", and your cuisine type</li>
+                            <li>• Build local authority with restaurant-specific link building</li>
+                            <li>• Monthly keyword rankings reports to track your progress</li>
+                          </ul>
+                        </div>
+                        
+                        <div className="bg-gradient-to-r from-[#7375FD] to-[#9090FD] text-white rounded p-3">
+                          <h4 className="font-semibold mb-2">📱 Boostly Text Marketing</h4>
+                          <ul className="text-sm space-y-1">
+                            <li>• Send targeted promotions to customers searching for food</li>
+                            <li>• Automated "order now" messages during peak dining hours</li>
+                            <li>• Drive repeat visits with personalized menu recommendations</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="pt-4 border-t border-gray-200 space-y-3">
+                      <div className="flex justify-between items-center">
+                        <span className="text-sm text-gray-600">SEO Score</span>
+                        <span className="font-bold text-lg text-[#5F5FFF]">{scanResult.seo || 0}/100</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-sm text-gray-600">Keywords Tracked</span>
+                        <span className="font-medium">{scanResult.keywordAnalysis?.targetKeywords?.length || 0}</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-sm text-gray-600">SERP Features</span>
+                        <span className="font-medium">{scanResult.serpFeatures?.length || 0}</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-sm text-gray-600">Ranking Keywords</span>
+                        <span className="font-medium">{scanResult.keywords?.filter(k => k.position && k.position <= 20).length || 0}</span>
+                      </div>
                     </div>
                   </div>
 
-                  {/* How Boostly Can Solve It */}
-                  <div className="bg-[#5F5FFF]/5 border border-[#5F5FFF]/20 rounded-lg p-4">
-                    <h3 className="font-bold text-[#5F5FFF] mb-3 flex items-center gap-2">
-                      <Zap className="w-5 h-5" />
-                      How Boostly Can Solve It For You
-                    </h3>
-                    <div className="space-y-3">
-                      <div className="bg-gradient-to-r from-[#5F5FFF] to-[#7375FD] text-white rounded p-3">
-                        <h4 className="font-semibold mb-2">🎯 Boostly SEO Service</h4>
-                        <ul className="text-sm space-y-1">
-                          <li>• Get your restaurant ranking #1 for "restaurant near me" searches</li>
-                          <li>• Target high-value keywords like "delivery", "takeout", and your cuisine type</li>
-                          <li>• Build local authority with restaurant-specific link building</li>
-                          <li>• Monthly keyword rankings reports to track your progress</li>
-                        </ul>
-                      </div>
+                  {/* Right Side - SERP Screenshots */}
+                  <div className="space-y-4">
+                    <div className="bg-white border border-gray-200 rounded-lg p-4">
+                      <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                        <Search className="w-5 h-5 text-[#5F5FFF]" />
+                        Google Search Rankings
+                      </h3>
                       
-                      <div className="bg-gradient-to-r from-[#7375FD] to-[#9090FD] text-white rounded p-3">
-                        <h4 className="font-semibold mb-2">📱 Boostly Text Marketing</h4>
-                        <ul className="text-sm space-y-1">
-                          <li>• Send targeted promotions to customers searching for food</li>
-                          <li>• Automated "order now" messages during peak dining hours</li>
-                          <li>• Drive repeat visits with personalized menu recommendations</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="pt-4 border-t border-gray-200 space-y-3">
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">SEO Score</span>
-                      <span className="font-bold text-lg text-[#5F5FFF]">{scanResult.seo || 0}/100</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">Keywords Tracked</span>
-                      <span className="font-medium">{scanResult.keywordAnalysis?.targetKeywords?.length || 0}</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">SERP Features</span>
-                      <span className="font-medium">{scanResult.serpFeatures?.length || 0}</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">Ranking Keywords</span>
-                      <span className="font-medium">{scanResult.keywords?.filter(k => k.position && k.position <= 20).length || 0}</span>
+                      {scanResult.serpScreenshots && scanResult.serpScreenshots.length > 0 ? (
+                        <div className="space-y-4">
+                          {scanResult.serpScreenshots.map((screenshot, index) => (
+                            <div key={index} className="border border-gray-200 rounded-lg p-3">
+                              <div className="flex items-center justify-between mb-3">
+                                <div>
+                                  <h4 className="font-medium text-sm text-gray-900">
+                                    "{screenshot.keyword}"
+                                  </h4>
+                                  <p className="text-xs text-gray-500">
+                                    {screenshot.location}
+                                  </p>
+                                </div>
+                                <div className="text-right">
+                                  {screenshot.restaurantRanking?.found ? (
+                                    <div className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-medium">
+                                      #{screenshot.restaurantRanking.position}
+                                    </div>
+                                  ) : (
+                                    <div className="bg-red-100 text-red-800 px-2 py-1 rounded text-xs font-medium">
+                                      Not found
+                                    </div>
+                                  )}
+                                </div>
+                              </div>
+                              
+                              {/* Screenshot */}
+                              <div className="relative">
+                                <img
+                                  src={`data:image/png;base64,${screenshot.screenshot}`}
+                                  alt={`Google search results for "${screenshot.keyword}"`}
+                                  className="w-full h-auto rounded border border-gray-300 shadow-sm"
+                                />
+                                {screenshot.restaurantRanking?.found && (
+                                  <div className="absolute top-2 right-2 bg-green-500 text-white px-2 py-1 rounded text-xs font-bold">
+                                    Found at #{screenshot.restaurantRanking.position}
+                                  </div>
+                                )}
+                              </div>
+                              
+                              {/* Search Result Details */}
+                              {screenshot.restaurantRanking?.found && (
+                                <div className="mt-3 bg-blue-50 border border-blue-200 rounded p-2">
+                                  <p className="text-xs font-medium text-blue-900 mb-1">
+                                    {screenshot.restaurantRanking.title}
+                                  </p>
+                                  <p className="text-xs text-blue-700 mb-1">
+                                    {screenshot.restaurantRanking.url}
+                                  </p>
+                                  <p className="text-xs text-blue-800">
+                                    {screenshot.restaurantRanking.snippet}
+                                  </p>
+                                </div>
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      ) : (
+                        <div className="text-center py-8 text-gray-500">
+                          <Search className="w-12 h-12 mx-auto mb-3 text-gray-300" />
+                          <p className="text-sm">No search rankings captured yet</p>
+                          <p className="text-xs mt-1">Rankings will appear here after scanning</p>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -1140,119 +1217,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
           </Card>
         </motion.div>
       </div>
-      
-      {/* SERP Screenshots Section */}
-      {scanResult.serpScreenshots && scanResult.serpScreenshots.length > 0 && (
-        <div className="mt-8">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="bg-white rounded-lg border border-gray-200 shadow-sm"
-          >
-            <div className="p-6 border-b border-gray-200">
-              <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
-                <Search className="w-6 h-6 text-[#5F5FFF]" />
-                Google Search Rankings
-              </h2>
-              <p className="text-gray-600 mt-1">See how your restaurant appears in Google search results</p>
-            </div>
-            
-            <div className="p-6 space-y-6">
-              {scanResult.serpScreenshots.map((screenshot, index) => (
-                <div key={index} className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                  <div className="flex items-center justify-between mb-4">
-                    <div>
-                      <h3 className="font-semibold text-lg text-gray-900">
-                        "{screenshot.keyword}"
-                      </h3>
-                      <p className="text-sm text-gray-600">
-                        Search location: {screenshot.location}
-                      </p>
-                    </div>
-                    <div className="text-right">
-                      {screenshot.restaurantRanking?.found ? (
-                        <div className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
-                          Found at position #{screenshot.restaurantRanking.position}
-                        </div>
-                      ) : (
-                        <div className="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium">
-                          Not found in top 20
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                  
-                  {/* Search Result Details */}
-                  {screenshot.restaurantRanking?.found && (
-                    <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 mb-4">
-                      <h4 className="font-medium text-blue-900 mb-1">
-                        {screenshot.restaurantRanking.title}
-                      </h4>
-                      <p className="text-sm text-blue-700 mb-2">
-                        {screenshot.restaurantRanking.url}
-                      </p>
-                      <p className="text-sm text-blue-800">
-                        {screenshot.restaurantRanking.snippet}
-                      </p>
-                    </div>
-                  )}
-                  
-                  {/* Local Pack Results */}
-                  {screenshot.localPackPresent && screenshot.localPackResults.length > 0 && (
-                    <div className="bg-purple-50 border border-purple-200 rounded-lg p-3 mb-4">
-                      <h4 className="font-medium text-purple-900 mb-2">Local Pack Results</h4>
-                      <div className="space-y-2">
-                        {screenshot.localPackResults.map((result, idx) => (
-                          <div key={idx} className="flex justify-between items-center">
-                            <span className="text-sm text-purple-800">
-                              {result.position}. {result.name}
-                            </span>
-                            <span className="text-sm text-purple-700">
-                              {result.rating}★ ({result.reviews} reviews)
-                            </span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                  
-                  {/* Screenshot Display */}
-                  <div className="bg-white rounded-lg border border-gray-300 overflow-hidden">
-                    <div className="bg-gray-100 px-3 py-2 border-b border-gray-300">
-                      <p className="text-sm text-gray-600 flex items-center gap-2">
-                        <Eye className="w-4 h-4" />
-                        Google Search Results Screenshot
-                      </p>
-                    </div>
-                    <div className="p-2">
-                      <img 
-                        src={`data:image/png;base64,${screenshot.screenshotBase64}`}
-                        alt={`Search results for "${screenshot.keyword}"`}
-                        className="w-full h-auto rounded border"
-                        style={{ maxHeight: '500px', objectFit: 'contain' }}
-                      />
-                    </div>
-                  </div>
-                  
-                  {/* Search Stats */}
-                  <div className="mt-4 flex justify-between items-center text-sm text-gray-600">
-                    <span>Total results: {screenshot.totalResults.toLocaleString()}</span>
-                    <a 
-                      href={screenshot.searchUrl} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-blue-600 hover:underline"
-                    >
-                      View live search results
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      )}
+
     </div>
   );
 }
