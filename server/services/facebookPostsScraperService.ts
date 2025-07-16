@@ -105,29 +105,31 @@ export class FacebookPostsScraperService {
 
   private async startFacebookScraper(facebookUrl: string): Promise<any> {
     try {
-      // Extract business name from Facebook URL for the actor
-      const businessName = this.extractBusinessNameFromUrl(facebookUrl);
-      
+      // Use the new Facebook page scraper with direct URL input
       const input = {
-        categories: ["Restaurant", "Pub", "Bar", "Food"],
-        locations: [],
-        resultsLimit: 20,
-        searchQuery: businessName
+        startUrls: [
+          {
+            url: facebookUrl
+          }
+        ]
       };
 
-      console.log(`Starting Facebook business scraper for: ${businessName}`);
+      console.log(`Starting Facebook page scraper for: ${facebookUrl}`);
       
       // Run the Actor and wait for it to finish
-      const run = await this.client.actor("Us34x9p7VgjCz99H6").call(input);
+      const run = await this.client.actor("4Hv5RhChiaDk6iwad").call(input);
       
       // Fetch results from the run's dataset
       const { items } = await this.client.dataset(run.defaultDatasetId).listItems();
       
-      console.log('Facebook scraper completed, found items:', items.length);
+      console.log('Facebook page scraper completed, found items:', items.length);
+      if (items.length > 0) {
+        console.log('Sample item keys:', Object.keys(items[0]));
+      }
       return { id: run.id, items };
 
     } catch (error) {
-      console.error('Failed to start Facebook scraper:', error);
+      console.error('Failed to start Facebook page scraper:', error);
       return null;
     }
   }
