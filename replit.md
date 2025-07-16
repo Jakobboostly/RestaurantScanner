@@ -76,6 +76,14 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 16, 2025. Enhanced SERP screenshots with food-type and city-based search queries:
+  - Updated screenshot service to use cuisine-specific search queries instead of generic "restaurant near me"
+  - Enhanced extractCuisineType method to detect brewery, pub, coffee, bakery, chicken, french, mediterranean types
+  - Implemented city extraction from Google Places API business profile addresses
+  - SERP screenshots now capture searches like "brewery omaha" instead of "restaurant near me"
+  - System generates more relevant search results showing actual local competition
+  - Enhanced search relevance improves ranking analysis and competitive positioning insights
+  - Screenshots display authentic local search landscape for specific food types in actual cities
 - July 16, 2025. Successfully integrated Facebook Posts Scraper with correct Apify actor:
   - Added working APIFY_API_KEY (apify_api_YFMjKbBOcRTgXymahUpYTBpkg1eA3A0aWkVD) for Facebook analysis
   - Implemented Facebook business scraper using actor Us34x9p7VgjCz99H6 (active subscription confirmed)

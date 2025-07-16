@@ -262,9 +262,18 @@ export class AdvancedScannerService {
       let serpScreenshots = [];
       
       try {
-        // Use only 1 primary keyword for maximum speed
+        // Generate a more relevant search query based on cuisine type and city
+        const cuisineType = this.extractCuisineType(businessProfile);
+        const city = (businessProfile as any)?.address ? this.extractCity((businessProfile as any).address) : null;
         const primaryKeyword = this.generatePrimaryKeywords(restaurantName, businessProfile)[0];
+        
+        // Create a food-type and location-specific search query
+        const foodSearchQuery = city ? `${cuisineType} ${city}` : `${cuisineType} near me`;
+        
         console.log(`Starting SERP analysis and screenshot capture for keyword: "${primaryKeyword}"`);
+        console.log(`Food-specific screenshot query: "${foodSearchQuery}"`);
+        console.log(`Extracted cuisine type: "${cuisineType}", city: "${city}"`);
+        console.log(`Business profile address: "${(businessProfile as any)?.address}"`);
         
         // Parallel SERP analysis and screenshot capture
         const serpPromise = Promise.race([
@@ -276,7 +285,7 @@ export class AdvancedScannerService {
         
         console.log('Initiating screenshot capture...');
         const screenshotPromise = Promise.race([
-          this.serpScreenshotService.captureSearchResults(primaryKeyword, restaurantName, domain, this.extractCity(restaurantName) || 'United States'),
+          this.serpScreenshotService.captureSearchResults(foodSearchQuery, restaurantName, domain, city || 'United States'),
           new Promise((_, reject) => 
             setTimeout(() => reject(new Error('SERP screenshot timeout')), 25000)
           )
@@ -890,28 +899,46 @@ export class AdvancedScannerService {
     if (name.includes('steakhouse') || name.includes('steak')) return 'steakhouse';
     if (name.includes('deli') || name.includes('sub')) return 'deli';
     
+    // Enhanced detection for brewery/pub types
+    if (name.includes('brewing') || name.includes('brewery') || name.includes('brewhouse')) return 'brewery';
+    if (name.includes('pub') || name.includes('tavern') || name.includes('bar & grill')) return 'pub';
+    if (name.includes('coffee') || name.includes('cafe') || name.includes('espresso')) return 'coffee';
+    if (name.includes('bakery') || name.includes('pastry')) return 'bakery';
+    if (name.includes('wings') || name.includes('chicken')) return 'chicken';
+    if (name.includes('french') || name.includes('bistro')) return 'french';
+    if (name.includes('mediterranean') || name.includes('greek')) return 'mediterranean';
+    
     // Default to general restaurant
     return 'restaurant';
   }
 
-  private extractCity(restaurantName: string): string | null {
-    // Extract city from restaurant name - common patterns
-    const name = restaurantName.toLowerCase();
+  private extractCity(addressString: string): string | null {
+    if (!addressString) return null;
     
-    // Look for city patterns like "Restaurant - City, State" or "Restaurant City"
+    // Extract city from address string like "514 S 11th St, Omaha, NE 68102, USA"
+    const parts = addressString.split(',');
+    
+    if (parts.length >= 2) {
+      // City is typically the second part after the first comma
+      const city = parts[1].trim();
+      
+      // Return the city name (clean up any extra whitespace)
+      if (city && city.length > 0) {
+        return city.toLowerCase();
+      }
+    }
+    
+    // Fallback: Look for city patterns in the full address
     const cityPatterns = [
-      /- ([a-z\s]+),?\s*[a-z]{2}$/i,  // "Restaurant - City, State" 
-      /\s-\s([a-z\s]+)$/i,           // "Restaurant - City"
-      /\s([a-z]+),?\s*[a-z]{2}$/i,   // "Restaurant City, State"
+      /,\s*([a-z\s]+),?\s*[a-z]{2}\s*\d{5}/i,  // "Street, City, State ZIP"
+      /,\s*([a-z\s]+),?\s*[a-z]{2}/i,          // "Street, City, State"
     ];
     
     for (const pattern of cityPatterns) {
-      const match = restaurantName.match(pattern);
+      const match = addressString.match(pattern);
       if (match && match[1]) {
         const city = match[1].trim().toLowerCase();
-        // Common city names to include
-        const commonCities = ['provo', 'salt lake city', 'denver', 'austin', 'phoenix', 'miami', 'atlanta', 'seattle', 'portland', 'chicago', 'new york', 'los angeles', 'san francisco', 'boston', 'philadelphia', 'detroit', 'houston', 'dallas', 'san antonio', 'charlotte', 'nashville', 'orlando', 'tampa', 'las vegas', 'sacramento', 'san diego'];
-        if (commonCities.some(c => city.includes(c))) {
+        if (city.length > 0) {
           return city;
         }
       }
