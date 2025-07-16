@@ -471,10 +471,101 @@ export class EnhancedSocialMediaDetector {
       /^https?:\/\/(m\.)?facebook\.com\/[a-zA-Z0-9\._-]+\/?$/
     ];
 
-    return facebookPatterns.some(pattern => pattern.test(url)) && 
-           !url.includes('/posts/') && 
-           !url.includes('/photos/') && 
-           !url.includes('/videos/');
+    // Exclude common Facebook system URLs and API endpoints
+    const excludePatterns = [
+      /facebook\.com\/plugins/,
+      /facebook\.com\/tr\?/,
+      /facebook\.com\/sharer/,
+      /facebook\.com\/share/,
+      /facebook\.com\/login/,
+      /facebook\.com\/v\d+/,
+      /facebook\.com\/dialog/,
+      /facebook\.com\/connect/,
+      /facebook\.com\/oauth/,
+      /facebook\.com\/security/,
+      /facebook\.com\/privacy/,
+      /facebook\.com\/help/,
+      /facebook\.com\/support/,
+      /facebook\.com\/policy/,
+      /facebook\.com\/terms/,
+      /facebook\.com\/about/,
+      /facebook\.com\/business/,
+      /facebook\.com\/developers/,
+      /facebook\.com\/ads/,
+      /facebook\.com\/api/,
+      /facebook\.com\/ajax/,
+      /facebook\.com\/rsrc/,
+      /facebook\.com\/l\.php/,
+      /facebook\.com\/r\.php/,
+      /facebook\.com\/n\.php/,
+      /facebook\.com\/posts/,
+      /facebook\.com\/photos/,
+      /facebook\.com\/videos/,
+      /facebook\.com\/groups/,
+      /facebook\.com\/events/,
+      /facebook\.com\/marketplace/,
+      /facebook\.com\/gaming/,
+      /facebook\.com\/watch/,
+      /facebook\.com\/stories/,
+      /facebook\.com\/reels/,
+      /facebook\.com\/live/,
+      /facebook\.com\/photo/,
+      /facebook\.com\/video/,
+      /facebook\.com\/comment/,
+      /facebook\.com\/like/,
+      /facebook\.com\/reaction/,
+      /facebook\.com\/tag/,
+      /facebook\.com\/checkpoint/,
+      /facebook\.com\/recover/,
+      /facebook\.com\/reset/,
+      /facebook\.com\/confirm/,
+      /facebook\.com\/verify/,
+      /facebook\.com\/reg/,
+      /facebook\.com\/logout/,
+      /facebook\.com\/home/,
+      /facebook\.com\/feed/,
+      /facebook\.com\/timeline/,
+      /facebook\.com\/profile/,
+      /facebook\.com\/friends/,
+      /facebook\.com\/messages/,
+      /facebook\.com\/notifications/,
+      /facebook\.com\/settings/,
+      /facebook\.com\/saved/,
+      /facebook\.com\/bookmarks/,
+      /facebook\.com\/search/,
+      /facebook\.com\/find-friends/,
+      /facebook\.com\/dating/,
+      /facebook\.com\/jobs/,
+      /facebook\.com\/fundraisers/,
+      /facebook\.com\/donate/,
+      /facebook\.com\/weather/,
+      /facebook\.com\/news/,
+      /facebook\.com\/memories/,
+      /facebook\.com\/external/,
+      /facebook\.com\/common/,
+      /facebook\.com\/intern/,
+      /facebook\.com\/desktop/,
+      /facebook\.com\/mobile/,
+      /facebook\.com\/touch/,
+      /facebook\.com\/lite/,
+      /facebook\.com\/zero/,
+      /facebook\.com\/basic/
+    ];
+
+    // Check if URL matches any exclude pattern
+    for (const pattern of excludePatterns) {
+      if (pattern.test(url)) {
+        console.log(`Facebook URL excluded (${pattern.toString()}):`, url);
+        return false;
+      }
+    }
+
+    const isValidPattern = facebookPatterns.some(pattern => pattern.test(url));
+    if (isValidPattern) {
+      console.log('Valid Facebook URL found:', url);
+    }
+    
+    return isValidPattern;
   }
 
   private isValidInstagramUrl(url: string): boolean {

@@ -76,6 +76,14 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 16, 2025. Fixed Facebook page detection accuracy and SERP screenshot timeout issues:
+  - Enhanced Facebook URL validation with comprehensive exclude patterns to filter out API endpoints, system URLs, and false positives
+  - Added specific exclusion patterns for Facebook plugins, trackers, shares, login pages, and API endpoints
+  - Fixed SERP screenshot service to use proper Chromium browser path for Replit environment
+  - Increased screenshot timeout from 3 seconds to 8 seconds for better reliability
+  - Added extensive logging for Facebook URL validation to help debug detection issues
+  - Improved browser launch arguments for better Puppeteer compatibility in Replit
+  - Enhanced error handling for SERP screenshot capture with proper fallback mechanisms
 - July 16, 2025. Implemented Google SERP screenshot functionality for ranking visualization:
   - Created SerpScreenshotService using Puppeteer to capture Google search results
   - Added SERP screenshot capture with restaurant ranking analysis and local pack detection

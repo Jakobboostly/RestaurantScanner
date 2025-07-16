@@ -276,7 +276,7 @@ export class AdvancedScannerService {
         const screenshotPromise = Promise.race([
           this.serpScreenshotService.captureSearchResults(primaryKeyword, restaurantName, domain, this.extractCity(restaurantName) || 'United States'),
           new Promise((_, reject) => 
-            setTimeout(() => reject(new Error('SERP screenshot timeout')), 3000)
+            setTimeout(() => reject(new Error('SERP screenshot timeout')), 8000)
           )
         ]);
         

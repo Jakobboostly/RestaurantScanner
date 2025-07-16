@@ -38,6 +38,7 @@ export class SerpScreenshotService {
     try {
       browser = await puppeteer.launch({
         headless: true,
+        executablePath: '/nix/store/zi4f80l169xlmivz8vja8wlphq74qqk0-chromium-125.0.6422.141/bin/chromium-browser',
         args: [
           '--no-sandbox',
           '--disable-setuid-sandbox',
@@ -46,7 +47,14 @@ export class SerpScreenshotService {
           '--no-first-run',
           '--no-zygote',
           '--single-process',
-          '--disable-gpu'
+          '--disable-gpu',
+          '--disable-web-security',
+          '--disable-features=VizDisplayCompositor',
+          '--disable-background-timer-throttling',
+          '--disable-backgrounding-occluded-windows',
+          '--disable-renderer-backgrounding',
+          '--disable-field-trial-config',
+          '--disable-ipc-flooding-protection'
         ]
       });
       
@@ -68,12 +76,12 @@ export class SerpScreenshotService {
       
       // Navigate to Google search results
       await page.goto(searchUrl, { 
-        waitUntil: 'networkidle2',
-        timeout: 30000 
+        waitUntil: 'networkidle0',
+        timeout: 15000 
       });
       
       // Wait for search results to load
-      await page.waitForSelector('#search', { timeout: 10000 });
+      await page.waitForSelector('#search', { timeout: 5000 });
       
       // Remove cookie banners, ads, and other distractions
       await page.evaluate(() => {
