@@ -112,44 +112,20 @@ export class FacebookPostsScraperService {
         captionText: true
       };
 
-      // Try different Facebook scraper actors
-      const facebookActors = [
-        'KoJrdxJCTtpon81KY', // Original actor
-        'facebook-pages-scraper', // Alternative actor
-        'apify/facebook-posts-scraper', // Another alternative
-        'facebook-scraper' // Generic scraper
-      ];
-
-      let response;
-      let lastError;
+      // Use the correct Facebook Posts Scraper actor with active subscription
+      console.log(`Starting Facebook Posts Scraper for: ${facebookUrl}`);
       
-      for (const actorId of facebookActors) {
-        try {
-          console.log(`Trying Facebook actor: ${actorId}`);
-          response = await axios.post(
-            `https://api.apify.com/v2/acts/${actorId}/runs?token=${this.apiToken}`,
-            input,
-            {
-              headers: { 'Content-Type': 'application/json' },
-              timeout: 30000
-            }
-          );
-          
-          // If successful, break out of the loop
-          if (response.data && !response.data.error) {
-            console.log(`Successfully started Facebook scraper with actor: ${actorId}`);
-            break;
-          }
-        } catch (error) {
-          console.log(`Actor ${actorId} failed:`, error.response?.status || error.message);
-          lastError = error;
-          continue;
+      const response = await axios.post(
+        `https://api.apify.com/v2/acts/KoJrdxJCTtpon81KY/runs?token=${this.apiToken}`,
+        input,
+        {
+          headers: { 'Content-Type': 'application/json' },
+          timeout: 30000
         }
-      }
+      );
       
-      if (!response || response.data.error) {
-        console.error('All Facebook actors failed. Last error:', lastError);
-        throw lastError || new Error('No Facebook actors available');
+      if (!response.data) {
+        throw new Error('No response from Facebook Posts Scraper');
       }
 
       if (response.data.error) {
