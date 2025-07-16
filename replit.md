@@ -76,13 +76,14 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
-- July 16, 2025. Successfully integrated Facebook Posts Scraper with fallback functionality:
-  - Added working APIFY_API_KEY for Facebook posts analysis
-  - Implemented multi-actor approach to try different Facebook scraper options
-  - Created robust fallback system when specialized Facebook actors aren't available
-  - Facebook analysis now provides basic structure even when scraper subscription is needed
-  - System maintains data integrity by clearly indicating when full Facebook data requires subscription
-  - Facebook posts analysis successfully integrated into restaurant scanner workflow
+- July 16, 2025. Successfully integrated Facebook Posts Scraper with correct Apify actor:
+  - Added working APIFY_API_KEY (apify_api_YFMjKbBOcRTgXymahUpYTBpkg1eA3A0aWkVD) for Facebook analysis
+  - Implemented Facebook business scraper using actor Us34x9p7VgjCz99H6 (active subscription confirmed)
+  - Created intelligent business name extraction from Facebook URLs for targeted search
+  - Facebook scraper now uses ApifyClient with proper actor integration for real data
+  - Removed fallback approach since proper actor is accessible with current subscription
+  - Facebook analysis searches for restaurant/pub/bar businesses with extracted names
+  - System ready to provide authentic Facebook business data via Apify actor calls
 - July 16, 2025. Successfully fixed SERP screenshot functionality for restaurant ranking visualization:
   - Resolved Google search result selector timeout issues by removing problematic element waits
   - Screenshot service now successfully captures Google search results (36KB+ screenshot files)

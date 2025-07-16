@@ -1,4 +1,4 @@
-import axios from 'axios';
+import { ApifyClient } from 'apify-client';
 
 export interface FacebookPost {
   postId: string;
@@ -36,10 +36,12 @@ export interface FacebookPageAnalysis {
 }
 
 export class FacebookPostsScraperService {
-  private apiToken: string;
+  private client: ApifyClient;
 
   constructor(apiToken: string) {
-    this.apiToken = apiToken;
+    this.client = new ApifyClient({
+      token: apiToken,
+    });
   }
 
   async analyzeFacebookPage(facebookUrl: string): Promise<FacebookPageAnalysis | null> {
@@ -49,19 +51,16 @@ export class FacebookPostsScraperService {
       // First, try the full scraper approach
       try {
         const runResponse = await this.startFacebookScraper(facebookUrl);
-        if (runResponse) {
-          const scrapingResults = await this.waitForResults(runResponse.id);
-          if (scrapingResults && scrapingResults.length > 0) {
-            const analysis = await this.analyzePostsData(scrapingResults, facebookUrl);
-            console.log('Facebook posts analysis completed via scraper:', {
-              totalPosts: analysis.totalPosts,
-              averageEngagement: analysis.averageEngagement,
-              postingFrequency: analysis.postingFrequency
-            });
-            return analysis;
-          }
+        if (runResponse && runResponse.items && runResponse.items.length > 0) {
+          const analysis = await this.analyzePostsData(runResponse.items, facebookUrl);
+          console.log('Facebook posts analysis completed via scraper:', {
+            totalPosts: analysis.totalPosts,
+            averageEngagement: analysis.averageEngagement,
+            postingFrequency: analysis.postingFrequency
+          });
+          return analysis;
         }
-      } catch (scraperError) {
+      } catch (scraperError: any) {
         console.log('Facebook scraper failed, using fallback analysis:', scraperError.message);
       }
 
@@ -106,35 +105,26 @@ export class FacebookPostsScraperService {
 
   private async startFacebookScraper(facebookUrl: string): Promise<any> {
     try {
+      // Extract business name from Facebook URL for the actor
+      const businessName = this.extractBusinessNameFromUrl(facebookUrl);
+      
       const input = {
-        startUrls: [{ url: facebookUrl }],
+        categories: ["Restaurant", "Pub", "Bar", "Food"],
+        locations: [],
         resultsLimit: 20,
-        captionText: true
+        searchQuery: businessName
       };
 
-      // Use the correct Facebook Posts Scraper actor with active subscription
-      console.log(`Starting Facebook Posts Scraper for: ${facebookUrl}`);
+      console.log(`Starting Facebook business scraper for: ${businessName}`);
       
-      const response = await axios.post(
-        `https://api.apify.com/v2/acts/KoJrdxJCTtpon81KY/runs?token=${this.apiToken}`,
-        input,
-        {
-          headers: { 'Content-Type': 'application/json' },
-          timeout: 30000
-        }
-      );
+      // Run the Actor and wait for it to finish
+      const run = await this.client.actor("Us34x9p7VgjCz99H6").call(input);
       
-      if (!response.data) {
-        throw new Error('No response from Facebook Posts Scraper');
-      }
-
-      if (response.data.error) {
-        console.error('Apify API error:', response.data.error);
-        return null;
-      }
-
-      console.log('Facebook scraper started, run ID:', response.data.data.id);
-      return response.data.data;
+      // Fetch results from the run's dataset
+      const { items } = await this.client.dataset(run.defaultDatasetId).listItems();
+      
+      console.log('Facebook scraper completed, found items:', items.length);
+      return { id: run.id, items };
 
     } catch (error) {
       console.error('Failed to start Facebook scraper:', error);
@@ -142,48 +132,35 @@ export class FacebookPostsScraperService {
     }
   }
 
-  private async waitForResults(runId: string): Promise<any[] | null> {
+  private extractBusinessNameFromUrl(facebookUrl: string): string {
     try {
-      const maxAttempts = 30; // 5 minutes max wait
-      const delay = 10000; // 10 seconds between checks
-
-      for (let attempt = 0; attempt < maxAttempts; attempt++) {
-        console.log(`Checking Facebook scraper status (${attempt + 1}/${maxAttempts})...`);
-
-        // Check run status (use generic actor endpoint)
-        const statusResponse = await axios.get(
-          `https://api.apify.com/v2/runs/${runId}?token=${this.apiToken}`
-        );
-
-        const status = statusResponse.data.data.status;
-        console.log('Facebook scraper status:', status);
-
-        if (status === 'SUCCEEDED') {
-          // Get the results using generic endpoint
-          const resultsResponse = await axios.get(
-            `https://api.apify.com/v2/runs/${runId}/dataset/items?token=${this.apiToken}`
-          );
-
-          return resultsResponse.data || [];
+      // Extract business name from Facebook URL patterns
+      const url = new URL(facebookUrl);
+      const pathname = url.pathname;
+      
+      // Handle different Facebook URL formats
+      if (pathname.includes('/pages/')) {
+        // Format: /pages/Business-Name/123456789
+        const parts = pathname.split('/');
+        const nameIndex = parts.findIndex(part => part === 'pages') + 1;
+        if (nameIndex > 0 && nameIndex < parts.length) {
+          return parts[nameIndex].replace(/-/g, ' ');
         }
-
-        if (status === 'FAILED' || status === 'ABORTED') {
-          console.error('Facebook scraper failed with status:', status);
-          return null;
-        }
-
-        // Wait before next check
-        await new Promise(resolve => setTimeout(resolve, delay));
+      } else if (pathname.startsWith('/')) {
+        // Format: /BusinessName or /Business-Name
+        const name = pathname.substring(1).split('/')[0];
+        // Remove numbers and clean up the name
+        return name.replace(/-/g, ' ').replace(/\./g, ' ').replace(/\d+/g, '').trim();
       }
-
-      console.error('Facebook scraper timed out after 5 minutes');
-      return null;
-
+      
+      return 'Restaurant'; // Fallback
     } catch (error) {
-      console.error('Error waiting for Facebook scraper results:', error);
-      return null;
+      console.error('Error extracting business name:', error);
+      return 'Restaurant'; // Fallback
     }
   }
+
+  // This method is no longer needed since client.actor().call() waits for completion
 
   private async analyzePostsData(posts: any[], pageUrl: string): Promise<FacebookPageAnalysis> {
     const processedPosts: FacebookPost[] = posts.map(post => ({
