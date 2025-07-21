@@ -7,6 +7,7 @@ import { restaurantSearchResultSchema, scanResultSchema } from "@shared/schema";
 import { JsonSanitizer } from "./utils/jsonSanitizer";
 import { EnhancedDataForSeoService } from "./services/enhancedDataForSeoService";
 import { FunFactsService } from "./services/funFactsService";
+import { RestaurantSearchScreenshotService } from "./services/restaurantSearchScreenshotService";
 import screenshotsRouter from "./routes/screenshots";
 import { z } from "zod";
 import OpenAI from "openai";
@@ -54,6 +55,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
   
   // Fun facts service
   const funFactsService = new FunFactsService();
+  
+  // Restaurant search screenshot service
+  const restaurantScreenshotService = new RestaurantSearchScreenshotService();
 
   // Restaurant search endpoint
   app.get("/api/restaurants/search", async (req, res) => {
@@ -412,6 +416,33 @@ export async function registerRoutes(app: Express): Promise<Server> {
     } catch (error) {
       console.error('Error generating fun facts:', error);
       res.status(500).json({ error: "Failed to generate fun facts" });
+    }
+  });
+
+  // Restaurant search screenshot endpoint  
+  app.post("/api/screenshot/restaurant-search", async (req, res) => {
+    try {
+      const { searchQuery, location, cuisineType } = req.body;
+      
+      let result;
+      if (cuisineType && location) {
+        result = await restaurantScreenshotService.searchWithCuisineType(cuisineType, location);
+      } else if (location) {
+        result = await restaurantScreenshotService.searchWithCustomLocation(location);
+      } else if (searchQuery) {
+        result = await restaurantScreenshotService.searchRestaurantsAndScreenshot(searchQuery);
+      } else {
+        result = await restaurantScreenshotService.searchRestaurantsAndScreenshot();
+      }
+      
+      res.json(result);
+    } catch (error) {
+      console.error("Restaurant search screenshot error:", error);
+      res.status(500).json({ 
+        success: false,
+        error: "Failed to capture restaurant search screenshot",
+        timestamp: new Date().toISOString()
+      });
     }
   });
 
