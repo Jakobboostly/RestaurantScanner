@@ -73,11 +73,12 @@ export class EnhancedSocialMediaDetector {
       const $ = cheerio.load(response.data);
       const socialLinks: SocialMediaLinks = {};
 
-      // Facebook detection patterns
+      // Facebook detection patterns including new business page format
       const facebookPatterns = [
         /(?:https?:\/\/)?(?:www\.)?facebook\.com\/([a-zA-Z0-9\._-]+)/gi,
         /(?:https?:\/\/)?(?:www\.)?facebook\.com\/pages\/([^\/]+)\/(\d+)/gi,
         /(?:https?:\/\/)?(?:www\.)?facebook\.com\/profile\.php\?id=(\d+)/gi,
+        /(?:https?:\/\/)?(?:www\.)?facebook\.com\/p\/([^\/]+)\/(\d+)/gi, // New business page format
         /(?:https?:\/\/)?(?:m\.)?facebook\.com\/([a-zA-Z0-9\._-]+)/gi
       ];
 

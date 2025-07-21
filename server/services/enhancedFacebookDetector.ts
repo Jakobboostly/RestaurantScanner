@@ -333,6 +333,25 @@ export class EnhancedFacebookDetector {
       return true;
     }
     
+    // Include newer Facebook business page format with /p/
+    if (url.includes('/p/')) {
+      return true;
+    }
+    
+    // Standard Facebook page patterns
+    const validPatterns = [
+      /^https?:\/\/(www\.)?facebook\.com\/[a-zA-Z0-9._-]+\/?$/,
+      /^https?:\/\/(www\.)?facebook\.com\/pages\/[^\/]+\/\d+\/?$/,
+      /^https?:\/\/(www\.)?facebook\.com\/profile\.php\?id=\d+$/,
+      /^https?:\/\/(www\.)?facebook\.com\/p\/[^\/]+\/\d+\/?$/  // New business page format
+    ];
+    
+    // Check if URL matches any valid pattern
+    const matchesValidPattern = validPatterns.some(pattern => pattern.test(url));
+    if (matchesValidPattern) {
+      return true;
+    }
+    
     // Exclude common non-page Facebook URLs
     const excludePatterns = [
       '/sharer/',
@@ -341,7 +360,10 @@ export class EnhancedFacebookDetector {
       '/connect/',
       '/login/',
       '/share.php',
-      '/dialog/'
+      '/dialog/',
+      '/events/',
+      '/groups/',
+      '/marketplace/'
     ];
 
     return !excludePatterns.some(pattern => url.includes(pattern));
@@ -351,6 +373,29 @@ export class EnhancedFacebookDetector {
     try {
       const urlObj = new URL(url);
       const pathParts = urlObj.pathname.split('/').filter(part => part.length > 0);
+      
+      // Handle newer business page format /p/Business-Name-ID/
+      if (pathParts[0] === 'p' && pathParts[1]) {
+        // Extract business name from the ID, remove the numeric ID part
+        const businessPart = pathParts[1].split('-');
+        // Remove the last part if it's all numbers (the ID)
+        if (businessPart.length > 1 && /^\d+$/.test(businessPart[businessPart.length - 1])) {
+          businessPart.pop();
+        }
+        return businessPart.join(' ').replace(/([A-Z])/g, ' $1').trim() || 'Facebook Page';
+      }
+      
+      // Handle profile.php format
+      if (pathParts[0] === 'profile.php') {
+        return 'Facebook Profile';
+      }
+      
+      // Handle pages format
+      if (pathParts[0] === 'pages' && pathParts[1]) {
+        return pathParts[1].replace(/-/g, ' ') || 'Facebook Page';
+      }
+      
+      // Standard format
       return pathParts[0] || 'Facebook Page';
     } catch (error) {
       return 'Facebook Page';

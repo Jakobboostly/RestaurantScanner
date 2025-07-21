@@ -76,6 +76,15 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 21, 2025. Enhanced Facebook detection system to support newer Facebook business page formats:
+  - Fixed Facebook detection to recognize new '/p/' business page format (e.g., facebook.com/p/Business-Name-ID/)
+  - Updated isValidFacebookPageUrl() method to include /p/ pattern validation
+  - Enhanced extractPageNameFromUrl() to properly parse business names from /p/ URLs
+  - Added new regex pattern for /p/ format in enhancedSocialMediaDetector.ts
+  - Fixed validation patterns to catch URLs like "https://www.facebook.com/p/Wolfeys-Wapsi-Outback-100055314674794/"
+  - Improved Facebook URL validation with comprehensive pattern matching for all Facebook formats
+  - Enhanced social media detection now covers: standard pages, business pages (/p/), profile.php, and pages/ formats
+  - Facebook detection system now properly handles both legacy and modern Facebook business page URLs
 - July 21, 2025. Successfully implemented Selenium screenshot service with PostgreSQL database storage:
   - Fixed "mobileExperience is not defined" error by declaring variables at function scope
   - Fixed "desktopResult is not defined" error with proper variable initialization  
