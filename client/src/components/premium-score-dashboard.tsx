@@ -593,6 +593,53 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
 
                   {/* Right Side - SERP Screenshots */}
                   <div className="space-y-4">
+                    {/* Restaurant Search Screenshot */}
+                    {scanResult.restaurantSearchScreenshot && scanResult.restaurantSearchScreenshot.success && (
+                      <div className="bg-white border border-gray-200 rounded-lg p-4">
+                        <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                          <Search className="w-5 h-5 text-[#5F5FFF]" />
+                          Restaurant Search Results
+                        </h3>
+                        
+                        <div className="border border-gray-200 rounded-lg p-3">
+                          <div className="flex items-center justify-between mb-3">
+                            <div>
+                              <h4 className="font-medium text-sm text-gray-900">
+                                "{scanResult.restaurantSearchScreenshot.searchQuery}"
+                              </h4>
+                              <p className="text-xs text-gray-500">
+                                {scanResult.restaurantSearchScreenshot.timestamp ? 
+                                  new Date(scanResult.restaurantSearchScreenshot.timestamp).toLocaleString() : 
+                                  'Recent search'}
+                              </p>
+                            </div>
+                            <div className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-medium">
+                              Live Results
+                            </div>
+                          </div>
+                          
+                          {/* Screenshot */}
+                          <div className="relative">
+                            <img
+                              src={`data:image/png;base64,${scanResult.restaurantSearchScreenshot.screenshotBase64}`}
+                              alt={`Google search results for "${scanResult.restaurantSearchScreenshot.searchQuery}"`}
+                              className="w-full h-auto rounded border border-gray-300 shadow-sm"
+                            />
+                          </div>
+                          
+                          {/* Search Info */}
+                          <div className="mt-3 bg-purple-50 border border-purple-200 rounded p-2">
+                            <p className="text-xs font-medium text-purple-900 mb-1">
+                              Restaurant Search Analysis
+                            </p>
+                            <p className="text-xs text-purple-700">
+                              This shows how your restaurant appears when customers search for "{scanResult.restaurantSearchScreenshot.searchQuery}" on Google.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+
                     <div className="bg-white border border-gray-200 rounded-lg p-4">
                       <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
                         <Search className="w-5 h-5 text-[#5F5FFF]" />

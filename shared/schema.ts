@@ -330,6 +330,12 @@ export const scanResultSchema = z.object({
       position: z.number(),
     })),
   })).optional(),
+  restaurantSearchScreenshot: z.object({
+    searchQuery: z.string(),
+    screenshotBase64: z.string(),
+    timestamp: z.string(),
+    success: z.boolean(),
+  }).nullable(),
 });
 
 export type RestaurantSearchResult = z.infer<typeof restaurantSearchResultSchema>;
