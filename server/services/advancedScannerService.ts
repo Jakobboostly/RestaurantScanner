@@ -258,16 +258,23 @@ export class AdvancedScannerService {
       try {
         // Generate a more relevant search query based on cuisine type and city
         const cuisineType = this.extractCuisineType(businessProfile);
-        const city = (businessProfile as any)?.address ? this.extractCity((businessProfile as any).address) : null;
         const primaryKeyword = this.generatePrimaryKeywords(restaurantName, businessProfile)[0];
         
+        // Extract city and state from Google Places API business profile
+        const locationData = businessProfile?.formatted_address ? 
+          this.serpScreenshotService.extractCityState(businessProfile.formatted_address) : 
+          { city: 'Unknown', state: 'Unknown' };
+        
         // Create a food-type and location-specific search query
-        const foodSearchQuery = city ? `${cuisineType} ${city}` : `${cuisineType} near me`;
+        const foodSearchQuery = locationData.city !== 'Unknown' ? 
+          `${cuisineType} ${locationData.city} ${locationData.state}` : 
+          `${cuisineType} near me`;
         
         console.log(`Starting SERP analysis and screenshot capture for keyword: "${primaryKeyword}"`);
         console.log(`Food-specific screenshot query: "${foodSearchQuery}"`);
-        console.log(`Extracted cuisine type: "${cuisineType}", city: "${city}"`);
-        console.log(`Business profile address: "${(businessProfile as any)?.address}"`);
+        console.log(`Extracted cuisine type: "${cuisineType}"`);
+        console.log(`Google Places formatted_address: "${businessProfile?.formatted_address}"`);
+        console.log(`Extracted location: ${locationData.city}, ${locationData.state}`);
         
         // Parallel SERP analysis and screenshot capture
         const serpPromise = Promise.race([
@@ -278,10 +285,6 @@ export class AdvancedScannerService {
         ]);
         
         console.log('Initiating screenshot capture...');
-        // Extract city and state from business profile address
-        const locationData = businessProfile?.address ? 
-          this.serpScreenshotService.extractCityState(businessProfile.address) : 
-          { city: 'Unknown', state: 'Unknown' };
         
         const screenshotPromise = Promise.race([
           this.serpScreenshotService.captureSearchResults(
@@ -354,7 +357,7 @@ export class AdvancedScannerService {
         restaurantName,
         businessProfile,
         competitors,
-        mobileResult,
+        mobileExperience,
         desktopResult,
         keywordData,
         serpAnalysis,
@@ -372,8 +375,13 @@ export class AdvancedScannerService {
       return enhancedResult;
 
     } catch (error) {
-      console.error('Advanced scan failed:', error);
-      throw new Error('Advanced restaurant analysis failed');
+      console.error('❌ Advanced scan failed with error:', error);
+      console.error('❌ Error details:', {
+        message: (error as Error).message,
+        stack: (error as Error).stack,
+        name: (error as Error).name
+      });
+      throw new Error(`Advanced restaurant analysis failed: ${(error as Error).message}`);
     }
   }
 

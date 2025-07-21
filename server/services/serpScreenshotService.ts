@@ -105,7 +105,7 @@ export class SerpScreenshotService {
           console.log('📄 Storage record:', record ? 'Found' : 'Not found');
           if (record) {
             console.log('📄 Record keys:', Object.keys(record));
-            screenshotUrl = record.url || record.screenshotUrl;
+            screenshotUrl = (record as any).url || (record as any).screenshotUrl;
           }
         }
         
@@ -118,7 +118,7 @@ export class SerpScreenshotService {
         console.log(`✅ Screenshot captured successfully: ${screenshotUrl}`);
       } catch (storageError) {
         console.error('❌ Error accessing Apify storage:', storageError);
-        throw new Error(`Failed to retrieve screenshot: ${storageError.message}`);
+        throw new Error(`Failed to retrieve screenshot: ${(storageError as Error).message}`);
       }
 
       // Basic restaurant ranking analysis (simplified for Apify approach)
