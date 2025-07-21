@@ -1,4 +1,4 @@
-import puppeteer from 'puppeteer';
+import { chromium } from 'playwright';
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 
@@ -37,34 +37,25 @@ export class SerpScreenshotService {
     let browser;
     
     try {
-      console.log('Launching browser for SERP screenshot...');
-      browser = await puppeteer.launch({
+      console.log('Launching Playwright browser for SERP screenshot...');
+      browser = await chromium.launch({
         headless: true,
-        executablePath: '/nix/store/zi4f80l169xlmivz8vja8wlphq74qqk0-chromium-125.0.6422.141/bin/chromium',
         args: [
           '--no-sandbox',
           '--disable-setuid-sandbox',
           '--disable-dev-shm-usage',
-          '--disable-accelerated-2d-canvas',
-          '--no-first-run',
-          '--no-zygote',
-          '--single-process',
-          '--disable-gpu',
+          '--disable-blink-features=AutomationControlled',
           '--disable-web-security',
           '--disable-features=VizDisplayCompositor',
+          '--no-first-run',
+          '--disable-gpu',
+          '--single-process',
           '--disable-background-timer-throttling',
           '--disable-backgrounding-occluded-windows',
-          '--disable-renderer-backgrounding',
-          '--disable-field-trial-config',
-          '--disable-ipc-flooding-protection',
-          '--disable-extensions',
-          '--disable-plugins',
-          '--disable-images',
-          '--disable-javascript-harmony-promises',
-          '--disable-blink-features=AutomationControlled'
+          '--disable-renderer-backgrounding'
         ]
       });
-      console.log('Browser launched successfully');
+      console.log('Playwright browser launched successfully');
       
       const page = await browser.newPage();
       
@@ -84,10 +75,9 @@ export class SerpScreenshotService {
       });
       
       // Set viewport to standard desktop size
-      await page.setViewport({
+      await page.setViewportSize({
         width: 1366,
-        height: 768,
-        deviceScaleFactor: 1,
+        height: 768
       });
       
       // Add random delay to appear more human-like
@@ -108,36 +98,31 @@ export class SerpScreenshotService {
       
       console.log('Page loaded successfully, waiting for search results...');
       
-      // Wait for page to fully load - simplified approach
-      console.log('Waiting for page content to load...');
-      
-      // Give Google time to render search results
-      await new Promise(resolve => setTimeout(resolve, 3000));
-      
-      // Check for captcha or bot detection
-      const pageContent = await page.content();
-      const isCaptcha = pageContent.includes('recaptcha') || 
-                       pageContent.includes('captcha') || 
-                       pageContent.includes('verify you are human') ||
-                       pageContent.includes('unusual traffic') ||
-                       pageContent.includes('robot') ||
-                       pageContent.includes('automated queries');
-      
-      if (isCaptcha) {
-        console.log('CAPTCHA detected! Google is blocking automated access.');
-        console.log('Page title:', await page.title());
+      // Wait for the search results container to load (as you suggested)
+      try {
+        await page.waitForSelector('#search', { timeout: 8000 });
+        console.log('Search results container found successfully!');
+      } catch (error) {
+        console.log('Search results container not found, checking for captcha...');
         
-        // Try to wait a bit more and check again
-        await new Promise(resolve => setTimeout(resolve, 5000));
-        const newContent = await page.content();
-        const stillCaptcha = newContent.includes('recaptcha') || newContent.includes('captcha');
+        // Check for captcha or bot detection
+        const pageContent = await page.content();
+        const isCaptcha = pageContent.includes('recaptcha') || 
+                         pageContent.includes('captcha') || 
+                         pageContent.includes('verify you are human') ||
+                         pageContent.includes('unusual traffic') ||
+                         pageContent.includes('robot') ||
+                         pageContent.includes('automated queries');
         
-        if (stillCaptcha) {
+        if (isCaptcha) {
+          console.log('CAPTCHA detected! Google is blocking automated access.');
+          console.log('Page title:', await page.title());
           throw new Error('CAPTCHA blocking screenshot capture - Google detected automated access');
         }
+        
+        // If no captcha, continue anyway
+        console.log('No captcha detected, proceeding with screenshot...');
       }
-      
-      console.log('Page content loaded, proceeding with screenshot...');
       
       // Remove cookie banners, ads, and other distractions
       await page.evaluate(() => {
@@ -158,16 +143,10 @@ export class SerpScreenshotService {
         captchaElements.forEach(el => el.remove());
       });
       
-      // Capture screenshot of search results
+      // Capture screenshot of search results (using Playwright syntax)
       console.log('Capturing screenshot...');
       const screenshotBuffer = await page.screenshot({
-        fullPage: false,
-        clip: {
-          x: 0,
-          y: 0,
-          width: 1366,
-          height: 768
-        }
+        fullPage: true  // Use full page as you suggested
       });
       console.log('Screenshot captured, size:', screenshotBuffer.length, 'bytes');
       

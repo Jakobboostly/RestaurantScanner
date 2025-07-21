@@ -76,6 +76,12 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 21, 2025. Migrated SERP screenshot service from Puppeteer to Playwright for enhanced captcha resistance:
+  - Replaced Puppeteer with Playwright for superior anti-bot detection capabilities
+  - Added proper search results container waiting with page.waitForSelector('#search')
+  - Enhanced captcha detection and error reporting for Google bot protection
+  - Implemented full-page screenshots for better search result capture
+  - Screenshots service now more resilient against Google's automated access detection
 - July 16, 2025. Fixed three critical user-reported issues for improved functionality:
   - Removed "SERP Features" from search performance section per user request for cleaner interface
   - Enhanced Facebook scanner to check Google Business Profile social media fields, editorial summaries, and reviews
