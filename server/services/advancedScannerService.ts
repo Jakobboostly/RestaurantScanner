@@ -63,7 +63,7 @@ export class AdvancedScannerService {
     this.enhancedFacebookDetector = new EnhancedFacebookDetector();
     this.enhancedSocialMediaDetector = new EnhancedSocialMediaDetector();
     this.facebookPostsScraperService = new FacebookPostsScraperService(apifyApiKey || '');
-    this.serpScreenshotService = new SerpScreenshotService();
+    this.serpScreenshotService = new SerpScreenshotService(apifyApiKey);
   }
 
   async scanRestaurantAdvanced(
@@ -310,7 +310,8 @@ export class AdvancedScannerService {
         if (screenshotResult.status === 'fulfilled') {
           serpScreenshots = [screenshotResult.value];
           console.log(`SERP screenshot captured successfully for "${primaryKeyword}"`);
-          console.log('Screenshot data size:', screenshotResult.value.screenshotBase64?.length || 0);
+          console.log('Screenshot URL:', screenshotResult.value.screenshotUrl || 'No URL provided');
+          console.log('Full screenshot result:', JSON.stringify(screenshotResult.value, null, 2));
         } else {
           console.error(`SERP screenshot failed for "${primaryKeyword}":`, screenshotResult.reason);
           console.error('Screenshot service error details:', screenshotResult.reason?.message || screenshotResult.reason);
