@@ -685,40 +685,26 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                     </div>
                   </div>
 
-                  {/* HUGE CAUTION RANKING WARNING */}
-                  <div className="bg-gradient-to-r from-red-600 via-red-500 to-orange-500 border-4 border-red-400 rounded-2xl p-8 text-center text-white shadow-2xl mb-6 mt-[144px] transform hover:scale-105 transition-transform duration-300">
-                    <div className="flex items-center justify-center mb-4">
-                      <AlertCircle className="w-12 h-12 text-white mr-4 animate-pulse" />
-                      <div>
-                        <h2 className="text-3xl font-black tracking-tight">
+                  {/* Right Side - Where You Rank Button */}
+                  <div className="space-y-4 mt-[144px] mb-[144px]">
+                    {/* Compact Ranking Warning */}
+                    <div className="bg-gradient-to-r from-[#5F5FFF] to-[#7375FD] border-2 border-[#9090FD] rounded-xl p-4 text-center text-white shadow-lg">
+                      <div className="flex items-center justify-center mb-2">
+                        <AlertCircle className="w-6 h-6 text-white mr-2 animate-pulse" />
+                        <h3 className="text-lg font-bold">
                           ⚠️ RANKING ALERT
-                        </h2>
-                        <p className="text-red-100 text-sm font-semibold">
-                          IMMEDIATE ATTENTION REQUIRED
-                        </p>
+                        </h3>
+                        <AlertCircle className="w-6 h-6 text-white ml-2 animate-pulse" />
                       </div>
-                      <AlertCircle className="w-12 h-12 text-white ml-4 animate-pulse" />
-                    </div>
-                    
-                    <div className="bg-white/20 backdrop-blur-sm border-2 border-white/30 rounded-xl p-6 mb-4">
-                      <p className="text-white font-bold text-2xl mb-3">
+                      
+                      <p className="text-white font-bold text-xl mb-1">
                         You are not in the top 10 (you're #12)
                       </p>
-                      <p className="text-white/95 text-lg font-semibold">
-                        Your competitors are ranking higher for searches customers use
-                      </p>
-                      <p className="text-red-100 text-sm font-medium mt-2">
-                        This means potential customers are finding your competitors first
+                      <p className="text-white/90 text-sm">
+                        Your competitors are ranking higher for customer searches
                       </p>
                     </div>
-                    
-                    <div className="text-white/90 text-sm font-medium">
-                      📉 Lower rankings = Less visibility = Fewer customers
-                    </div>
-                  </div>
 
-                  {/* Right Side - Where You Rank Button */}
-                  <div className="space-y-4 mb-[144px]">
                     <div className="bg-gradient-to-br from-[#5F5FFF] via-[#7375FD] to-[#9090FD] rounded-lg p-8 text-center text-white shadow-lg">
                       
                       <div className="mb-6">
