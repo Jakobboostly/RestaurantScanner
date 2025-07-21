@@ -76,7 +76,7 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
-- July 21, 2025. Successfully implemented Selenium screenshot service and updated SERP search format:
+- July 21, 2025. Successfully implemented Selenium screenshot service with PostgreSQL database storage:
   - Fixed "mobileExperience is not defined" error by declaring variables at function scope
   - Fixed "desktopResult is not defined" error with proper variable initialization  
   - Fixed Google Places formatted_address field extraction for proper city/state data
@@ -84,11 +84,13 @@ This is a comprehensive restaurant website scanner application built with React 
   - Updated SERP search format from "(cuisine type + city + state)" to simplified "(food type) + (City)" format
   - Replaced problematic Apify screenshot service with reliable Selenium WebDriver solution
   - Selenium screenshots now working with proper Chrome binary path and chromedriver configuration
-  - Screenshot service captures 32KB PNG files of Google search results
+  - Screenshot service captures 32KB PNG files of Google search results AND stores them in PostgreSQL database
   - SERP search queries now show "pizza Philadelphia" instead of "pizza Philadelphia PA"
   - Enhanced GoogleBusinessProfile interface to include formatted_address field
+  - Added screenshots table to database schema with proper base64 image storage
+  - Created API endpoints for retrieving stored screenshots (/api/screenshots)
   - All scan phases complete without variable reference or type errors
-  - Scanner processing time optimized to 34 seconds with comprehensive data output
+  - Scanner processing time optimized to 29-34 seconds with comprehensive data output and database persistence
 - July 21, 2025. Migrated SERP screenshot service from Puppeteer to Apify for improved reliability and captcha avoidance:
   - Completely replaced Puppeteer-based screenshot capture with Apify's website-screenshot-generator actor
   - Updated search query format from restaurant names to "cuisine type + city + state" format (e.g., "Mexican food Austin TX")

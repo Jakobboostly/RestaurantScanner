@@ -44,6 +44,31 @@ export type Restaurant = typeof restaurants.$inferSelect;
 export type InsertScan = z.infer<typeof insertScanSchema>;
 export type Scan = typeof scans.$inferSelect;
 
+// Screenshots table for storing SERP screenshot images
+export const screenshots = pgTable("screenshots", {
+  id: serial("id").primaryKey(),
+  keyword: text("keyword").notNull(),
+  location: text("location").notNull(),
+  searchUrl: text("search_url").notNull(),
+  imageData: text("image_data").notNull(), // base64 encoded PNG
+  fileSize: integer("file_size"), // size in bytes
+  restaurantName: text("restaurant_name"),
+  restaurantDomain: text("restaurant_domain"),
+  restaurantRanking: jsonb("restaurant_ranking"),
+  captureDate: timestamp("capture_date").defaultNow().notNull(),
+  localPackPresent: boolean("local_pack_present").default(false),
+  localPackResults: jsonb("local_pack_results"),
+  totalResults: integer("total_results").default(0)
+});
+
+export const insertScreenshotSchema = createInsertSchema(screenshots).omit({
+  id: true,
+  captureDate: true,
+});
+
+export type InsertScreenshot = z.infer<typeof insertScreenshotSchema>;
+export type Screenshot = typeof screenshots.$inferSelect;
+
 // API Response Types
 export const restaurantSearchResultSchema = z.object({
   id: z.string(),

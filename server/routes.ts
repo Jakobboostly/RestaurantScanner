@@ -7,6 +7,7 @@ import { restaurantSearchResultSchema, scanResultSchema } from "@shared/schema";
 import { JsonSanitizer } from "./utils/jsonSanitizer";
 import { EnhancedDataForSeoService } from "./services/enhancedDataForSeoService";
 import { FunFactsService } from "./services/funFactsService";
+import screenshotsRouter from "./routes/screenshots";
 import { z } from "zod";
 import OpenAI from "openai";
 
@@ -407,6 +408,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.status(500).json({ error: "Failed to generate fun facts" });
     }
   });
+
+  // Add screenshots API routes
+  app.use('/api/screenshots', screenshotsRouter);
 
   const httpServer = createServer(app);
   return httpServer;

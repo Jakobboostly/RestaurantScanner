@@ -2,6 +2,8 @@ import { Builder, By, until, WebDriver } from 'selenium-webdriver';
 import chrome from 'selenium-webdriver/chrome';
 import fs from 'fs/promises';
 import path from 'path';
+import { db } from '../db';
+import { screenshots, type InsertScreenshot } from '@shared/schema';
 
 export interface SeleniumScreenshotResult {
   keyword: string;
@@ -83,9 +85,26 @@ export class SeleniumScreenshotService {
       console.log('📸 Taking screenshot...');
       const screenshotBase64 = await driver.takeScreenshot();
       
-      // Save screenshot to file
+      // Save screenshot to file (for backup)
       await fs.writeFile(screenshotPath, screenshotBase64, 'base64');
-      console.log(`✅ Screenshot saved: ${screenshotPath}`);
+      
+      // Save screenshot to database
+      const screenshotRecord: InsertScreenshot = {
+        keyword,
+        location: city,
+        searchUrl,
+        imageData: screenshotBase64,
+        fileSize: Math.round(screenshotBase64.length * 0.75), // approximate size in bytes
+        restaurantName,
+        restaurantDomain,
+        restaurantRanking: null,
+        localPackPresent: true,
+        localPackResults: [],
+        totalResults: 0
+      };
+
+      const [dbResult] = await db.insert(screenshots).values(screenshotRecord).returning();
+      console.log(`✅ Screenshot saved to database: ID ${dbResult.id}, Size: ${Math.round(screenshotBase64.length * 0.75 / 1024)} KB`);
 
       // Basic restaurant ranking analysis
       let restaurantRanking = null;
