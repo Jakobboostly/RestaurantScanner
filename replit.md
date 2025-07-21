@@ -76,6 +76,12 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 21, 2025. Updated review volume scoring system with specific user-defined ranges:
+  - Modified calculateOverallReviewScore function to use new review count categories: 0-250 (okay +5), 250-500 (good +10), 501-750 (great +15), 750+ (excellent +25)
+  - Updated identifyProfileStrengths functions to recognize "excellent review volume" at 750+, "great" at 501-750, and "good" at 250+ instead of previous 100+ threshold
+  - Modified generateProfileRecommendations functions to encourage reviews when count is below 250 instead of previous 50-100 thresholds
+  - Applied changes across both server/routes.ts and server/services/advancedScannerService.ts for consistency
+  - Review volume categorization now matches user specifications: okay (0-250), good (250-500), great (501-750), excellent (750+)
 - July 21, 2025. Enhanced Facebook detection system to support newer Facebook business page formats:
   - Fixed Facebook detection to recognize new '/p/' business page format (e.g., facebook.com/p/Business-Name-ID/)
   - Updated isValidFacebookPageUrl() method to include /p/ pattern validation

@@ -1184,11 +1184,13 @@ export class AdvancedScannerService {
     
     let score = businessProfile.rating * 15; // Base score from rating
     
-    // Add score based on review volume
-    if (businessProfile.totalReviews > 100) score += 20;
-    else if (businessProfile.totalReviews > 50) score += 15;
-    else if (businessProfile.totalReviews > 20) score += 10;
-    else if (businessProfile.totalReviews > 5) score += 5;
+    // Add score based on review volume using new ranges:
+    // 0-250: okay (+5), 250-500: good (+10), 501-750: great (+15), 750+: excellent (+25)
+    const reviewCount = businessProfile.totalReviews || 0;
+    if (reviewCount >= 750) score += 25; // excellent
+    else if (reviewCount >= 501) score += 15; // great  
+    else if (reviewCount >= 250) score += 10; // good
+    else if (reviewCount > 0) score += 5; // okay (any reviews)
     
     // Add score for verification
     if (businessProfile.isVerified) score += 10;
@@ -2060,7 +2062,9 @@ export class AdvancedScannerService {
       recommendations.push('Focus on improving customer experience to boost ratings');
     }
 
-    if (profile.totalReviews < 100) {
+    // Updated review volume recommendations based on new ranges
+    const reviewCount = profile.totalReviews || 0;
+    if (reviewCount < 250) {
       recommendations.push('Encourage more customers to leave reviews');
     }
 
@@ -2096,10 +2100,16 @@ export class AdvancedScannerService {
       strengths.push('Excellent customer rating');
     }
 
-    if (profile.totalReviews >= 100) {
-      strengths.push('Strong review volume');
+    // Updated review volume categories: 750+ excellent, 501-750 great, 250-500 good, 0-250 okay
+    const reviewCount = profile.totalReviews || 0;
+    if (reviewCount >= 750) {
+      strengths.push('Excellent review volume');
+    } else if (reviewCount >= 501) {
+      strengths.push('Great review volume');
+    } else if (reviewCount >= 250) {
+      strengths.push('Good review volume');
     }
-
+    
     if (profile.photos?.total >= 15) {
       strengths.push('Good photo collection');
     }
