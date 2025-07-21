@@ -249,13 +249,11 @@ export class AdvancedScannerService {
       const phase6Start = Date.now();
       onProgress({ progress: 92, status: 'Generating recommendations...' });
 
-      // Extract processed results
-      const mobileResult = performanceData.mobile || this.getFallbackMobileExperience();
-      const desktopResult = performanceData.desktop || this.getFallbackPerformanceMetrics();
-
       // Quick SERP Analysis with Screenshot (within remaining time)
       let serpAnalysis = [];
       let serpScreenshots = [];
+      
+      console.log('🎯 Phase 6: Starting SERP Analysis and Screenshot Capture');
       
       try {
         // Generate a more relevant search query based on cuisine type and city
@@ -320,7 +318,7 @@ export class AdvancedScannerService {
           const fallbackScreenshot = {
             keyword: primaryKeyword,
             location: this.extractCity(restaurantName) || 'United States',
-            screenshot: '', // Empty for now
+            screenshotUrl: '', // Empty for now
             restaurantRanking: {
               found: false,
               position: 0,
@@ -329,7 +327,9 @@ export class AdvancedScannerService {
               snippet: ''
             },
             totalResults: 0,
-            searchUrl: `https://www.google.com/search?q=${encodeURIComponent(primaryKeyword)}`
+            searchUrl: `https://www.google.com/search?q=${encodeURIComponent(primaryKeyword)}`,
+            localPackPresent: false,
+            localPackResults: []
           };
           
           console.log('Using fallback screenshot structure for UI testing');
