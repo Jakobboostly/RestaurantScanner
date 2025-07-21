@@ -210,6 +210,54 @@ export class AdvancedScannerService {
       const realRankings = await realRankingsPromise;
       console.log('Real rankings received:', realRankings);
       
+      // Process keywords with real rankings
+      const processedKeywords = realRankings.length > 0 ? realRankings.map(ranking => {
+        console.log(`Real ranking for "${ranking.keyword}": position=${ranking.position}`);
+        
+        return {
+          keyword: ranking.keyword,
+          position: ranking.position,
+          searchVolume: 0, // Real search volume would require additional API calls
+          difficulty: 0,   // Real difficulty would require additional API calls  
+          intent: ranking.keyword.includes('near me') ? 'local' : 'commercial',
+          cpc: 0,
+          competition: 0,
+          opportunity: ranking.position && ranking.position <= 10 ? 100 : 50
+        };
+      }) : [
+        // Fallback if API fails - only show these are NOT real rankings
+        {
+          keyword: `${cuisineType} near me`,
+          position: null,
+          searchVolume: 0,
+          difficulty: 0,
+          intent: 'local',
+          cpc: 0,
+          competition: 0,
+          opportunity: 0
+        },
+        {
+          keyword: `${cuisineType} restaurant near me`,
+          position: null,
+          searchVolume: 0,
+          difficulty: 0,
+          intent: 'local',
+          cpc: 0,
+          competition: 0,
+          opportunity: 0
+        },
+        {
+          keyword: `${cuisineType}`,
+          position: null,
+          searchVolume: 0,
+          difficulty: 0,
+          intent: 'commercial',
+          cpc: 0,
+          competition: 0,
+          opportunity: 0
+        }
+      ];
+      
       // Wait for phase 3 to complete (4 seconds total)
       const phase3Elapsed = Date.now() - phase3Start;
       if (phase3Elapsed < PHASE_DURATION) {
@@ -402,7 +450,7 @@ export class AdvancedScannerService {
         competitors,
         mobileExperience,
         desktopResult,
-        keywordData,
+        processedKeywords,
         serpAnalysis,
         [],
         reviewsAnalysis,
@@ -540,61 +588,15 @@ export class AdvancedScannerService {
     console.log('- competitorIntelligence.keywordGaps:', competitorIntelligence.keywordGaps);
     console.log('- serpFeatures:', serpFeatures);
 
-    // Use real rankings from DataForSEO SERP API
-    const processedKeywords = realRankings.length > 0 ? realRankings.map(ranking => {
-      console.log(`Real ranking for "${ranking.keyword}": position=${ranking.position}`);
-      
-      return {
-        keyword: ranking.keyword,
-        position: ranking.position,
-        searchVolume: 0, // Real search volume would require additional API calls
-        difficulty: 0,   // Real difficulty would require additional API calls  
-        intent: ranking.keyword.includes('near me') ? 'local' : 'commercial',
-        cpc: 0,
-        competition: 0,
-        opportunity: ranking.position && ranking.position <= 10 ? 100 : 50
-      };
-    }) : [
-      // Fallback if API fails - only show these are NOT real rankings
-      {
-        keyword: `${cuisineType} near me`,
-        position: null,
-        searchVolume: 0,
-        difficulty: 0,
-        intent: 'local',
-        cpc: 0,
-        competition: 0,
-        opportunity: 0
-      },
-      {
-        keyword: `${cuisineType} restaurant near me`,
-        position: null,
-        searchVolume: 0,
-        difficulty: 0,
-        intent: 'local',
-        cpc: 0,
-        competition: 0,
-        opportunity: 0
-      },
-      {
-        keyword: `${cuisineType}`,
-        position: null,
-        searchVolume: 0,
-        difficulty: 0,
-        intent: 'commercial',
-        cpc: 0,
-        competition: 0,
-        opportunity: 0
-      }
-    ];
+    // Keywords are now passed in from the main scan method
 
-    console.log('Final processed keywords sent to frontend:', processedKeywords.length);
-    console.log('Sample processed keyword:', processedKeywords[0]);
+    console.log('Final processed keywords sent to frontend:', keywordData.length);
+    console.log('Sample processed keyword:', keywordData[0]);
 
     // Ensure keywords are in multiple places for frontend compatibility
     const enhancedKeywordAnalysis = {
       ...keywordAnalysis,
-      targetKeywords: processedKeywords,  // Frontend expects this property
+      targetKeywords: keywordData,  // Frontend expects this property
       rankingPositions: keywordAnalysis.rankingPositions
     };
 
