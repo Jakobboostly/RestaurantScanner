@@ -75,8 +75,6 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
   });
   
   const [activeTab, setActiveTab] = useState<'search' | 'social' | 'local' | 'website' | 'reviews'>('search');
-  const [restaurantSearchScreenshot, setRestaurantSearchScreenshot] = useState<RestaurantSearchScreenshot | null>(null);
-  const [loadingScreenshot, setLoadingScreenshot] = useState(false);
 
   // Function to fetch restaurant search screenshot
   const fetchRestaurantSearchScreenshot = async () => {
@@ -108,12 +106,46 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
     }
   };
 
-  // Fetch restaurant search screenshot when search tab becomes active
-  useEffect(() => {
-    if (activeTab === 'search' && !restaurantSearchScreenshot && !loadingScreenshot) {
-      fetchRestaurantSearchScreenshot();
+  // Helper function to extract search terms for manual search
+  const getSearchTerms = () => {
+    const businessProfile = scanResult.businessProfile;
+    const address = businessProfile?.address || '';
+    
+    // Extract city and state from address
+    const addressParts = address.split(',').map(part => part.trim());
+    let city = '';
+    let state = '';
+    
+    if (addressParts.length >= 3) {
+      city = addressParts[addressParts.length - 3] || '';
+      const stateZip = addressParts[addressParts.length - 2] || '';
+      state = stateZip.split(' ')[0] || '';
     }
-  }, [activeTab, restaurantSearchScreenshot, loadingScreenshot]);
+    
+    // Extract food type from restaurant name or use generic "restaurant"
+    const restaurantLower = restaurantName.toLowerCase();
+    let foodType = 'restaurant';
+    
+    if (restaurantLower.includes('pizza')) foodType = 'pizza';
+    else if (restaurantLower.includes('italian')) foodType = 'italian restaurant';
+    else if (restaurantLower.includes('greek')) foodType = 'greek restaurant';
+    else if (restaurantLower.includes('mexican')) foodType = 'mexican restaurant';
+    else if (restaurantLower.includes('chinese')) foodType = 'chinese restaurant';
+    else if (restaurantLower.includes('thai')) foodType = 'thai restaurant';
+    else if (restaurantLower.includes('indian')) foodType = 'indian restaurant';
+    else if (restaurantLower.includes('sushi')) foodType = 'sushi restaurant';
+    else if (restaurantLower.includes('steakhouse') || restaurantLower.includes('steak')) foodType = 'steakhouse';
+    else if (restaurantLower.includes('burger')) foodType = 'burger restaurant';
+    else if (restaurantLower.includes('bbq') || restaurantLower.includes('barbecue')) foodType = 'bbq restaurant';
+    else if (restaurantLower.includes('seafood')) foodType = 'seafood restaurant';
+    else if (restaurantLower.includes('cafe') || restaurantLower.includes('coffee')) foodType = 'cafe';
+    else if (restaurantLower.includes('deli')) foodType = 'deli';
+    else if (restaurantLower.includes('bakery')) foodType = 'bakery';
+    else if (restaurantLower.includes('brewery') || restaurantLower.includes('brew')) foodType = 'brewery';
+    else if (restaurantLower.includes('bar') || restaurantLower.includes('pub')) foodType = 'restaurant bar';
+    
+    return { foodType, city, state };
+  };
 
   // Calculate authentic scores from scan data
   const calculateScores = (): ScoreData => {
@@ -638,138 +670,47 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                     </div>
                   </div>
 
-                  {/* Right Side - SERP Screenshots */}
+                  {/* Right Side - Where You Rank Button */}
                   <div className="space-y-4">
-                    <div className="bg-white border border-gray-200 rounded-lg p-4">
-                      <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
-                        <Search className="w-5 h-5 text-[#5F5FFF]" />
-                        Google Search Rankings
-                      </h3>
-
-                      {/* Restaurant Search Screenshot */}
-                      {loadingScreenshot ? (
-                        <div className="border border-gray-200 rounded-lg p-8 text-center mb-4">
-                          <div className="animate-spin w-8 h-8 border-4 border-[#5F5FFF] border-t-transparent rounded-full mx-auto mb-3"></div>
-                          <p className="text-sm text-gray-600">Capturing restaurant search screenshot...</p>
+                    <div className="bg-gradient-to-br from-[#5F5FFF] via-[#7375FD] to-[#9090FD] rounded-lg p-8 text-center text-white shadow-lg">
+                      <div className="mb-6">
+                        <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
+                          <Search className="w-8 h-8 text-white" />
                         </div>
-                      ) : restaurantSearchScreenshot && restaurantSearchScreenshot.success ? (
-                        <div className="border border-gray-200 rounded-lg p-3 mb-4">
-                          <div className="flex items-center justify-between mb-3">
-                            <div>
-                              <h4 className="font-medium text-sm text-gray-900">
-                                "{restaurantSearchScreenshot.searchQuery}"
-                              </h4>
-                              <p className="text-xs text-gray-500">
-                                {restaurantSearchScreenshot.screenshotSize} • {new Date(restaurantSearchScreenshot.timestamp).toLocaleTimeString()}
-                              </p>
-                            </div>
-                            <div className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-medium">
-                              Live Results
-                            </div>
-                          </div>
-                          
-                          {/* Screenshot */}
-                          <div className="relative">
-                            <img
-                              src={restaurantSearchScreenshot.screenshotBase64}
-                              alt={`Google search results for "${restaurantSearchScreenshot.searchQuery}"`}
-                              className="w-full h-auto rounded border border-gray-300 shadow-sm"
-                            />
-                          </div>
-                          
-                          {/* Search Info */}
-                          <div className="mt-3 bg-purple-50 border border-purple-200 rounded p-2">
-                            <p className="text-xs font-medium text-purple-900 mb-1">
-                              Restaurant Search Analysis
-                            </p>
-                            <p className="text-xs text-purple-700">
-                              This shows how your restaurant appears when customers search for "{restaurantSearchScreenshot.searchQuery}" on Google.
-                            </p>
-                          </div>
-                        </div>
-                      ) : (
-                        <div className="border border-gray-200 rounded-lg p-8 text-center mb-4">
-                          <Search className="w-12 h-12 mx-auto mb-3 text-gray-300" />
-                          <p className="text-sm text-gray-600 mb-2">Restaurant search screenshot not available</p>
-                          <button 
-                            onClick={fetchRestaurantSearchScreenshot}
-                            className="text-[#5F5FFF] text-sm hover:underline"
-                          >
-                            Try again
-                          </button>
-                        </div>
-                      )}
+                        <h3 className="text-xl font-bold mb-2">See Where You Rank</h3>
+                        <p className="text-white/90 text-sm leading-relaxed">
+                          Check your restaurant's position on Google for the search terms your customers actually use
+                        </p>
+                      </div>
                       
-                      {scanResult.serpScreenshots && scanResult.serpScreenshots.length > 0 ? (
-                        <div className="space-y-4">
-                          {scanResult.serpScreenshots.map((screenshot, index) => (
-                            <div key={index} className="border border-gray-200 rounded-lg p-3">
-                              <div className="flex items-center justify-between mb-3">
-                                <div>
-                                  <h4 className="font-medium text-sm text-gray-900">
-                                    "{screenshot.keyword}"
-                                  </h4>
-                                  <p className="text-xs text-gray-500">
-                                    {screenshot.location}
-                                  </p>
-                                </div>
-                                <div className="text-right">
-                                  {screenshot.restaurantRanking?.found ? (
-                                    <div className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-medium">
-                                      #{screenshot.restaurantRanking.position}
-                                    </div>
-                                  ) : (
-                                    <div className="bg-red-100 text-red-800 px-2 py-1 rounded text-xs font-medium">
-                                      Not found
-                                    </div>
-                                  )}
-                                </div>
-                              </div>
-                              
-                              {/* Screenshot */}
-                              <div className="relative">
-                                {screenshot.screenshotUrl ? (
-                                  <img
-                                    src={screenshot.screenshotUrl}
-                                    alt={`Google search results for "${screenshot.keyword}"`}
-                                    className="w-full h-auto rounded border border-gray-300 shadow-sm"
-                                  />
-                                ) : (
-                                  <div className="w-full h-48 rounded border border-gray-300 bg-gray-100 flex items-center justify-center text-gray-500">
-                                    Screenshot not available
-                                  </div>
-                                )}
-                                {screenshot.restaurantRanking?.found && (
-                                  <div className="absolute top-2 right-2 bg-green-500 text-white px-2 py-1 rounded text-xs font-bold">
-                                    Found at #{screenshot.restaurantRanking.position}
-                                  </div>
-                                )}
-                              </div>
-                              
-                              {/* Search Result Details */}
-                              {screenshot.restaurantRanking?.found && (
-                                <div className="mt-3 bg-blue-50 border border-blue-200 rounded p-2">
-                                  <p className="text-xs font-medium text-blue-900 mb-1">
-                                    {screenshot.restaurantRanking.title}
-                                  </p>
-                                  <p className="text-xs text-blue-700 mb-1">
-                                    {screenshot.restaurantRanking.url}
-                                  </p>
-                                  <p className="text-xs text-blue-800">
-                                    {screenshot.restaurantRanking.snippet}
-                                  </p>
-                                </div>
-                              )}
+                      {(() => {
+                        const { foodType, city, state } = getSearchTerms();
+                        const searchQuery = `${foodType} ${city} ${state}`.trim();
+                        const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}`;
+                        
+                        return (
+                          <div className="space-y-4">
+                            <div className="bg-white/10 rounded-lg p-4 border border-white/20">
+                              <p className="text-sm text-white/80 mb-2">Your customers search for:</p>
+                              <p className="text-lg font-semibold text-white">"{searchQuery}"</p>
                             </div>
-                          ))}
-                        </div>
-                      ) : (
-                        <div className="text-center py-8 text-gray-500">
-                          <Search className="w-12 h-12 mx-auto mb-3 text-gray-300" />
-                          <p className="text-sm">No search rankings captured yet</p>
-                          <p className="text-xs mt-1">Rankings will appear here after scanning</p>
-                        </div>
-                      )}
+                            
+                            <a 
+                              href={searchUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center justify-center w-full bg-white text-[#5F5FFF] font-bold py-4 px-6 rounded-lg hover:bg-white/95 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl group"
+                            >
+                              <span className="mr-3">Where You Rank</span>
+                              <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                            </a>
+                            
+                            <p className="text-xs text-white/70 leading-relaxed">
+                              This opens a live Google search. Look for your restaurant in the results to see where you rank compared to competitors.
+                            </p>
+                          </div>
+                        );
+                      })()}
                     </div>
                   </div>
                 </div>
