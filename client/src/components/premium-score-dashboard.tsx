@@ -643,7 +643,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                   </div>
 
                   {/* Right Side - Where You Rank Button */}
-                  <div className="space-y-4">
+                  <div className="space-y-4 mt-[144px] mb-[144px]">
                     <div className="bg-gradient-to-br from-[#5F5FFF] via-[#7375FD] to-[#9090FD] rounded-lg p-8 text-center text-white shadow-lg">
                       <div className="mb-6">
                         <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
@@ -1152,7 +1152,6 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
           </Card>
         </motion.div>
       </div>
-
     </div>
   );
 }
