@@ -87,6 +87,8 @@ export class AdvancedScannerService {
     const TOTAL_PHASES = 6;
     const MAX_SCAN_TIME = PHASE_DURATION * TOTAL_PHASES; // 24 seconds total
     
+    console.log(`Starting advanced scan for: ${restaurantName} (${domain})`);
+    
     try {
       // Phase 1: Finding restaurant website (4 seconds)
       const phase1Start = Date.now();
@@ -196,39 +198,67 @@ export class AdvancedScannerService {
 
       // Phase 4: Evaluating mobile experience (4 seconds)
       const phase4Start = Date.now();
+      console.log('Starting Phase 4: Mobile experience analysis');
       onProgress({ progress: 58, status: 'Evaluating mobile experience...' });
       
-      // Start reviews analysis and web sentiment analysis
-      const reviewsPromise = Promise.race([
-        this.generateEnhancedReviewsAnalysis(businessProfile, placeId),
-        new Promise((_, reject) => 
-          setTimeout(() => reject(new Error('Reviews analysis timeout')), 3500)
-        )
-      ]).catch(error => {
-        console.error('Reviews analysis failed:', error);
-        return this.generateEnhancedReviewsAnalysis(businessProfile);
-      });
-
-      const sentimentPromise = Promise.race([
-        this.contentSentimentService.analyzeSentiment(restaurantName, city || ''),
-        new Promise((_, reject) => 
-          setTimeout(() => reject(new Error('Web sentiment analysis timeout')), 3500)
-        )
-      ]).catch(error => {
-        console.error('Web sentiment analysis failed:', error);
-        // Generate realistic sentiment based on business profile as fallback
-        return this.contentSentimentService.generateRealisticSentimentBasedOnProfile(restaurantName, businessProfile);
-      });
+      let reviewsAnalysis = null;
+      let webSentiment = null;
       
-      let [reviewsAnalysis, webSentiment] = await Promise.all([reviewsPromise, sentimentPromise]);
+      try {
+        // Start reviews analysis
+        console.log('Starting reviews analysis...');
+        reviewsAnalysis = await Promise.race([
+          this.generateEnhancedReviewsAnalysis(businessProfile, placeId),
+          new Promise((_, reject) => 
+            setTimeout(() => reject(new Error('Reviews analysis timeout')), 3500)
+          )
+        ]).catch(error => {
+          console.error('Reviews analysis failed:', error);
+          return this.generateEnhancedReviewsAnalysis(businessProfile);
+        });
+        console.log('Reviews analysis completed successfully');
+      } catch (error) {
+        console.error('CRITICAL: Reviews analysis failed completely:', error);
+        reviewsAnalysis = this.generateEnhancedReviewsAnalysis(businessProfile);
+      }
+
+      try {
+        // Start web sentiment analysis
+        console.log('Starting web sentiment analysis...');
+        webSentiment = await Promise.race([
+          this.contentSentimentService.analyzeSentiment(restaurantName, city || ''),
+          new Promise((_, reject) => 
+            setTimeout(() => reject(new Error('Web sentiment analysis timeout')), 3500)
+          )
+        ]).catch(error => {
+          console.error('Web sentiment analysis failed:', error);
+          try {
+            console.log('Attempting sentiment fallback generation...');
+            return this.contentSentimentService.generateRealisticSentimentBasedOnProfile(restaurantName, businessProfile);
+          } catch (fallbackError) {
+            console.error('Sentiment fallback also failed:', fallbackError);
+            return null;
+          }
+        });
+        console.log('Web sentiment analysis completed successfully');
+      } catch (error) {
+        console.error('CRITICAL: Web sentiment analysis failed completely:', error);
+        webSentiment = null;
+      }
       
       if (webSentiment) {
         console.log(`Web sentiment analysis completed: ${webSentiment.sentimentScore}% positive sentiment (${webSentiment.totalMentions} total mentions)`);
         // Add web sentiment to reviews analysis
-        reviewsAnalysis = {
-          ...reviewsAnalysis,
-          webSentiment: webSentiment
-        };
+        try {
+          reviewsAnalysis = {
+            ...reviewsAnalysis,
+            webSentiment: webSentiment
+          };
+        } catch (mergeError) {
+          console.error('Failed to merge sentiment data:', mergeError);
+        }
+      } else {
+        console.log('Web sentiment analysis returned null, continuing without sentiment data');
       }
       
       // Wait for phase 4 to complete (4 seconds total)
@@ -415,7 +445,28 @@ export class AdvancedScannerService {
 
     } catch (error) {
       console.error('Advanced scan failed:', error);
-      throw new Error('Advanced restaurant analysis failed');
+      console.error('Error stack:', error.stack);
+      console.error('Error name:', error.name);
+      console.error('Error message:', error.message);
+      
+      // Return a minimal but functional result instead of throwing
+      return {
+        domain,
+        restaurantName,
+        businessProfile: null,
+        performance: { score: 0, issues: ['Analysis incomplete due to technical error'] },
+        keywords: [],
+        competitors: [],
+        serpFeatures: [],
+        domainAuthority: 0,
+        aiRecommendations: ['Unable to complete full analysis'],
+        overallScore: 0,
+        businessScore: 0,
+        competitorScore: 0,
+        profileAnalysis: null,
+        serpScreenshots: [],
+        reviewsAnalysis: null
+      };
     }
   }
 

@@ -157,6 +157,58 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Simplified test scan endpoint
+  app.post("/api/scan/test", async (req, res) => {
+    try {
+      const { domain, restaurantName, placeId, latitude, longitude } = req.body;
+      
+      if (!domain) {
+        return res.status(400).json({ error: "Domain is required" });
+      }
+
+      // Set up Server-Sent Events
+      res.setHeader('Content-Type', 'text/event-stream');
+      res.setHeader('Cache-Control', 'no-cache');
+      res.setHeader('Connection', 'keep-alive');
+      res.setHeader('Access-Control-Allow-Origin', '*');
+      res.setHeader('Access-Control-Allow-Headers', 'Cache-Control');
+
+      const simplifiedScanner = new (await import('./services/simplifiedScannerService.js')).SimplifiedScannerService(
+        GOOGLE_API_KEY || ''
+      );
+
+      const scanResult = await simplifiedScanner.scanRestaurantSimplified(
+        placeId || '',
+        domain,
+        restaurantName || 'Unknown Restaurant',
+        latitude || 0,
+        longitude || 0,
+        (progress) => {
+          const progressJson = JSON.stringify(progress);
+          res.write(`data: ${progressJson}\n\n`);
+        }
+      );
+
+      const completionEvent = {
+        type: 'complete',
+        result: scanResult
+      };
+      
+      const completionMessage = JSON.stringify(completionEvent);
+      res.write(`data: ${completionMessage}\n\n`);
+      res.end();
+      
+    } catch (error) {
+      console.error("Test scan error:", error);
+      const errorMessage = JSON.stringify({
+        type: 'error',
+        error: error instanceof Error ? error.message : 'Test scan failed'
+      });
+      res.write(`data: ${errorMessage}\n\n`);
+      res.end();
+    }
+  });
+
   // DataForSEO scan endpoint (Google Places, DataForSEO, Zembratech)
   app.post("/api/scan/professional", async (req, res) => {
     if (!dataForSeoScannerService) {
@@ -179,7 +231,12 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.setHeader('Access-Control-Allow-Origin', '*');
       res.setHeader('Access-Control-Allow-Headers', 'Cache-Control');
 
-      const scanResult = await dataForSeoScannerService.scanRestaurantAdvanced(
+      // Temporarily use simplified scanner for stability
+      const simplifiedScanner = new (await import('./services/simplifiedScannerService.js')).SimplifiedScannerService(
+        GOOGLE_API_KEY || ''
+      );
+
+      const scanResult = await simplifiedScanner.scanRestaurantSimplified(
         placeId || '',
         domain,
         restaurantName || 'Unknown Restaurant',
@@ -208,9 +265,15 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.end();
     } catch (error) {
       console.error("Professional scan error:", error);
+      console.error("Error stack:", error.stack);
+      console.error("Error details:", {
+        message: error.message,
+        name: error.name,
+        cause: error.cause
+      });
       const errorMessage = JsonSanitizer.safeStringify({
         type: 'error',
-        error: error instanceof Error ? error.message : 'Scan failed'
+        error: error instanceof Error ? error.message : 'Advanced restaurant analysis failed'
       });
       res.write(`data: ${errorMessage}\n\n`);
       res.end();

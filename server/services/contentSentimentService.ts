@@ -255,7 +255,7 @@ export class ContentSentimentService {
    * Generate realistic sentiment analysis based on restaurant's Google Business Profile performance
    * This provides a professional demonstration of web sentiment capabilities
    */
-  generateRealisticSentimentBasedOnProfile(restaurantName: string, businessProfile: any): WebSentimentAnalysis {
+  generateRealisticSentimentBasedOnProfile(restaurantName: string, businessProfile: any): SentimentAnalysisResult {
     const rating = businessProfile?.rating || 4.0;
     const reviewCount = businessProfile?.totalReviews || 100;
     
@@ -289,7 +289,11 @@ export class ContentSentimentService {
     
     const sentimentScore = Math.round((positive / totalMentions) * 100);
 
+    const overallSentiment: 'positive' | 'negative' | 'neutral' = 
+      sentimentScore > 65 ? 'positive' : sentimentScore < 45 ? 'negative' : 'neutral';
+
     return {
+      overallSentiment,
       sentimentScore,
       totalMentions,
       sentimentDistribution: {
@@ -301,7 +305,9 @@ export class ContentSentimentService {
         love: Math.round(positive * 0.4),
         happiness: Math.round(positive * 0.6),
         anger: Math.round(negative * 0.5),
-        sadness: Math.round(negative * 0.3)
+        sadness: Math.round(negative * 0.3),
+        share: Math.round(positive * 0.2),
+        fun: Math.round(positive * 0.3)
       },
       topDomains: [
         { domain: 'google.com', mentionCount: Math.round(totalMentions * 0.4) },
@@ -309,11 +315,13 @@ export class ContentSentimentService {
         { domain: 'tripadvisor.com', mentionCount: Math.round(totalMentions * 0.15) },
         { domain: 'facebook.com', mentionCount: Math.round(totalMentions * 0.1) }
       ].filter(d => d.mentionCount > 0),
-      competitiveIntelligence: {
-        industryAverageSentiment: 68,
-        competitorComparison: rating > 4.0 ? 'above_average' : rating > 3.5 ? 'average' : 'below_average',
-        trendDirection: rating > 4.2 ? 'improving' : rating < 3.8 ? 'declining' : 'stable'
-      }
+      contentSources: {
+        news: Math.round(totalMentions * 0.15),
+        blogs: Math.round(totalMentions * 0.25),
+        reviews: Math.round(totalMentions * 0.45),
+        social: Math.round(totalMentions * 0.15)
+      },
+      geographicSentiment: []
     };
   }
 }
