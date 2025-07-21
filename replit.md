@@ -76,6 +76,15 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 21, 2025. Migrated SERP screenshot service from Puppeteer to Apify for improved reliability and captcha avoidance:
+  - Completely replaced Puppeteer-based screenshot capture with Apify's website-screenshot-generator actor
+  - Updated search query format from restaurant names to "cuisine type + city + state" format (e.g., "Mexican food Austin TX")
+  - Enhanced cuisine type detection with 15+ specific cuisine categories (pizza, brewery, pub, coffee shop, etc.)
+  - Added intelligent city/state extraction from Google Places API address data
+  - Updated schema and frontend to use screenshotUrl instead of screenshotBase64 format
+  - Eliminated captcha and anti-bot detection issues that plagued Puppeteer approach
+  - Maintained all existing screenshot functionality while improving capture success rate
+  - Screenshots now use Apify's robust infrastructure for reliable Google SERP capture
 - July 21, 2025. Removed costly sentiment analysis API to reduce expenses:
   - Completely removed Zembratech sentiment analysis service that was costing money without providing value
   - Kept DataForSEO for essential SEO and keyword analysis (cost-effective)

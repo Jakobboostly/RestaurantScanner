@@ -627,11 +627,17 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                               
                               {/* Screenshot */}
                               <div className="relative">
-                                <img
-                                  src={`data:image/png;base64,${screenshot.screenshotBase64}`}
-                                  alt={`Google search results for "${screenshot.keyword}"`}
-                                  className="w-full h-auto rounded border border-gray-300 shadow-sm"
-                                />
+                                {screenshot.screenshotUrl ? (
+                                  <img
+                                    src={screenshot.screenshotUrl}
+                                    alt={`Google search results for "${screenshot.keyword}"`}
+                                    className="w-full h-auto rounded border border-gray-300 shadow-sm"
+                                  />
+                                ) : (
+                                  <div className="w-full h-48 rounded border border-gray-300 bg-gray-100 flex items-center justify-center text-gray-500">
+                                    Screenshot not available
+                                  </div>
+                                )}
                                 {screenshot.restaurantRanking?.found && (
                                   <div className="absolute top-2 right-2 bg-green-500 text-white px-2 py-1 rounded text-xs font-bold">
                                     Found at #{screenshot.restaurantRanking.position}

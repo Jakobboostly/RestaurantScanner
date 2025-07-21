@@ -287,7 +287,7 @@ export const scanResultSchema = z.object({
   serpScreenshots: z.array(z.object({
     keyword: z.string(),
     location: z.string(),
-    screenshotBase64: z.string(),
+    screenshotUrl: z.string(),
     restaurantRanking: z.object({
       position: z.number(),
       found: z.boolean(),

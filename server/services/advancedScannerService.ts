@@ -280,8 +280,19 @@ export class AdvancedScannerService {
         ]);
         
         console.log('Initiating screenshot capture...');
+        // Extract city and state from business profile address
+        const locationData = businessProfile?.address ? 
+          this.serpScreenshotService.extractCityState(businessProfile.address) : 
+          { city: 'Unknown', state: 'Unknown' };
+        
         const screenshotPromise = Promise.race([
-          this.serpScreenshotService.captureSearchResults(foodSearchQuery, restaurantName, domain, city || 'United States'),
+          this.serpScreenshotService.captureSearchResults(
+            cuisineType, 
+            locationData.city, 
+            locationData.state, 
+            restaurantName, 
+            domain
+          ),
           new Promise((_, reject) => 
             setTimeout(() => reject(new Error('SERP screenshot timeout')), 25000)
           )
