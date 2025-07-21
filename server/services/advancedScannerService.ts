@@ -76,6 +76,10 @@ export class AdvancedScannerService {
   ): Promise<EnhancedScanResult> {
     const scanStartTime = Date.now();
     const PHASE_DURATION = 4000; // 4 seconds per phase
+    
+    // Initialize variables that will be used throughout the scan
+    let mobileExperience: any;
+    let desktopResult: any;
     const TOTAL_PHASES = 6;
     const MAX_SCAN_TIME = PHASE_DURATION * TOTAL_PHASES; // 24 seconds total
     
@@ -156,6 +160,10 @@ export class AdvancedScannerService {
       });
       
       const performanceData = await performancePromise;
+      
+      // Extract mobile and desktop results from performance data
+      mobileExperience = performanceData.mobile || this.getFallbackMobileExperience();
+      desktopResult = performanceData.desktop || this.getFallbackPerformanceMetrics();
       
       // Wait for phase 2 to complete (4 seconds total)
       const phase2Elapsed = Date.now() - phase2Start;
@@ -261,8 +269,8 @@ export class AdvancedScannerService {
         const primaryKeyword = this.generatePrimaryKeywords(restaurantName, businessProfile)[0];
         
         // Extract city and state from Google Places API business profile
-        const locationData = businessProfile?.formatted_address ? 
-          this.serpScreenshotService.extractCityState(businessProfile.formatted_address) : 
+        const locationData = (businessProfile as any)?.formatted_address ? 
+          this.serpScreenshotService.extractCityState((businessProfile as any).formatted_address) : 
           { city: 'Unknown', state: 'Unknown' };
         
         // Create a food-type and location-specific search query
@@ -273,7 +281,7 @@ export class AdvancedScannerService {
         console.log(`Starting SERP analysis and screenshot capture for keyword: "${primaryKeyword}"`);
         console.log(`Food-specific screenshot query: "${foodSearchQuery}"`);
         console.log(`Extracted cuisine type: "${cuisineType}"`);
-        console.log(`Google Places formatted_address: "${businessProfile?.formatted_address}"`);
+        console.log(`Google Places formatted_address: "${(businessProfile as any)?.formatted_address}"`);
         console.log(`Extracted location: ${locationData.city}, ${locationData.state}`);
         
         // Parallel SERP analysis and screenshot capture
