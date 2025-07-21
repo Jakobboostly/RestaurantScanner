@@ -8,13 +8,24 @@ async function testScreenshot() {
   console.log('Testing Apify screenshot with cuisine + city + state format...');
   
   try {
-    const run = await client.actor("drobnikj/screenshot-url").call({
-      url: "https://www.google.com/search?q=" + encodeURIComponent("pizza Omaha NE"),
-      waitUntil: "networkidle2", 
+    const run = await client.actor("apify/screenshot-url").call({
+      urls: [
+        {
+          url: "https://www.google.com/search?q=" + encodeURIComponent("pizza Omaha NE")
+        }
+      ],
+      format: "png",
+      waitUntil: "networkidle2",
       delay: 2000,
       viewportWidth: 1366,
-      viewportHeight: 768,
-      scrollToBottom: false
+      scrollToBottom: false,
+      delayAfterScrolling: 2500,
+      waitUntilNetworkIdleAfterScroll: false,
+      waitUntilNetworkIdleAfterScrollTimeout: 30000,
+      proxy: {
+        useApifyProxy: true
+      },
+      selectorsToHide: ""
     }, {
       timeout: 30000
     });
@@ -24,28 +35,41 @@ async function testScreenshot() {
 
     const store = await client.keyValueStore(run.defaultKeyValueStoreId);
     
-    // Try both key-value store and dataset approaches
+    // Check all keys in store to find screenshot data
     try {
       const keys = await store.listKeys();
       console.log('Store keys count:', keys.items.length);
+      console.log('All keys:', keys.items.map(k => k.key));
       
-      // Also try dataset
-      const dataset = await client.dataset(run.defaultDatasetId);
-      const data = await dataset.listItems();
-      console.log('Dataset items count:', data.items.length);
-      
-      if (data.items.length > 0) {
-        console.log('First dataset item:', data.items[0]);
-        const firstItem = data.items[0];
-        if (firstItem.screenshotUrl || firstItem.url || firstItem.screenshot) {
-          console.log('✅ Screenshot found in dataset:', firstItem.screenshotUrl || firstItem.url || firstItem.screenshot);
+      // Check each key for screenshot data
+      for (const keyInfo of keys.items) {
+        const record = await store.getRecord(keyInfo.key);
+        console.log(`\nKey '${keyInfo.key}' (${keyInfo.size} bytes):`);
+        
+        if (record && typeof record === 'object') {
+          console.log('- Type: object');
+          console.log('- Properties:', Object.keys(record));
+          
+          // Look for URL in various possible properties
+          if (record.url || record.screenshotUrl || record.value) {
+            console.log('✅ Found URL data:', record.url || record.screenshotUrl || record.value);
+          }
+        } else if (typeof record === 'string') {
+          console.log('- Type: string');
+          if (record.startsWith('http')) {
+            console.log('✅ Found URL string:', record);
+          } else {
+            console.log('- Content preview:', record.substring(0, 100) + '...');
+          }
         }
       }
       
-      // Try OUTPUT key anyway
-      const outputRecord = await store.getRecord('OUTPUT');
-      if (outputRecord) {
-        console.log('✅ OUTPUT record found:', outputRecord);
+      // Also check dataset
+      const dataset = await client.dataset(run.defaultDatasetId);
+      const data = await dataset.listItems();
+      console.log('\nDataset items count:', data.items.length);
+      if (data.items.length > 0) {
+        console.log('First dataset item:', data.items[0]);
       }
     } catch (err) {
       console.log('Error accessing data:', err.message);
