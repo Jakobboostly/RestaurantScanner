@@ -166,7 +166,12 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
 
     try {
-      const { domain, restaurantName, placeId, latitude, longitude } = req.body;
+      const { domain, restaurantName, placeId, latitude, longitude, manualFacebookUrl } = req.body;
+      
+      console.log('📨 Professional scan request received:');
+      console.log('  - domain:', domain);
+      console.log('  - restaurantName:', restaurantName);  
+      console.log('  - manualFacebookUrl:', manualFacebookUrl || 'NOT provided');
       
       if (!domain) {
         return res.status(400).json({ error: "Domain is required" });
@@ -188,7 +193,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
         (progress) => {
           const progressJson = JsonSanitizer.safeStringify(progress);
           res.write(`data: ${progressJson}\n\n`);
-        }
+        },
+        manualFacebookUrl
       );
 
       // Send completion message with debugging

@@ -72,8 +72,14 @@ export class AdvancedScannerService {
     restaurantName: string,
     latitude: number,
     longitude: number,
-    onProgress: (progress: ScanProgress) => void
+    onProgress: (progress: ScanProgress) => void,
+    manualFacebookUrl?: string
   ): Promise<EnhancedScanResult> {
+    console.log('🚀 Advanced scan starting with parameters:');
+    console.log('  - placeId:', placeId);
+    console.log('  - domain:', domain);
+    console.log('  - restaurantName:', restaurantName);
+    console.log('  - manualFacebookUrl:', manualFacebookUrl || 'None provided');
     const scanStartTime = Date.now();
     const PHASE_DURATION = 4000; // 4 seconds per phase
     
@@ -221,6 +227,9 @@ export class AdvancedScannerService {
       const phase5Start = Date.now();
       onProgress({ progress: 75, status: 'Scanning competitor websites...' });
       
+      console.log('🔍 Phase 5: Starting competitor and social media analysis...');
+      console.log('📥 Manual Facebook URL for Phase 5:', manualFacebookUrl || 'None');
+      
       // Start competitor analysis and social media detection
       const competitorPromise = Promise.race([
         this.googleBusinessService.findCompetitors(restaurantName, latitude, longitude),
@@ -233,12 +242,22 @@ export class AdvancedScannerService {
       });
       
       const socialMediaPromise = Promise.race([
-        this.enhancedSocialMediaDetection(domain, restaurantName, businessProfile, placeId),
+        this.enhancedSocialMediaDetection(domain, restaurantName, businessProfile, placeId, manualFacebookUrl),
         new Promise((_, reject) => 
           setTimeout(() => reject(new Error('Social media detection timeout')), 3500)
         )
       ]).catch(error => {
         console.error('Social media detection failed:', error);
+        // If we have a manual Facebook URL, return it even on timeout
+        if (manualFacebookUrl) {
+          console.log('🔧 Timeout occurred - using manual Facebook URL fallback:', manualFacebookUrl);
+          return {
+            facebook: manualFacebookUrl,
+            facebookVerified: true,
+            facebookConfidence: 'high' as const,
+            facebookSource: 'manual_override' as const
+          };
+        }
         return {};
       });
       
@@ -2140,32 +2159,46 @@ export class AdvancedScannerService {
     domain: string,
     restaurantName: string,
     businessProfile: any,
-    placeId: string
+    placeId: string,
+    manualFacebookUrl?: string
   ): Promise<any> {
     try {
-      // Use enhanced social media detector for comprehensive platform detection
-      const businessAddress = businessProfile?.address || businessProfile?.vicinity;
-      const businessPhone = businessProfile?.phone;
+      console.log('🔍 Enhanced social media detection starting...');
+      console.log('📥 Manual Facebook URL provided:', manualFacebookUrl || 'None');
       
-      const allSocialLinks = await this.enhancedSocialMediaDetector.detectAllSocialMedia(
-        `https://${domain}`,
-        restaurantName,
-        businessAddress,
-        businessPhone,
-        placeId
-      );
+      // Use manual Facebook URL if provided, otherwise run detection
+      let allSocialLinks = {};
+      if (manualFacebookUrl) {
+        console.log('✅ Using manual Facebook URL override:', manualFacebookUrl);
+        allSocialLinks = { facebook: manualFacebookUrl };
+      } else {
+        // Use enhanced social media detector for comprehensive platform detection
+        const businessAddress = businessProfile?.address || businessProfile?.vicinity;
+        const businessPhone = businessProfile?.phone;
+        
+        allSocialLinks = await this.enhancedSocialMediaDetector.detectAllSocialMedia(
+          `https://${domain}`,
+          restaurantName,
+          businessAddress,
+          businessPhone,
+          placeId
+        );
+      }
       
-      console.log('Enhanced social media detection results:', allSocialLinks);
+      console.log('📘 Final social media detection results:', allSocialLinks);
       
-      // If Facebook is detected, try to get enhanced Facebook data
+      // If Facebook is detected, try to get enhanced Facebook data (but don't wait for it to complete)
       let facebookAnalysis = null;
       if (allSocialLinks.facebook) {
-        try {
-          facebookAnalysis = await this.facebookPostsScraperService.analyzeFacebookPage(allSocialLinks.facebook);
-          console.log('Facebook posts analysis:', facebookAnalysis ? 'Success' : 'No data');
-        } catch (fbError) {
-          console.error('Facebook posts analysis failed:', fbError);
-        }
+        // Start Facebook analysis but don't await it - it can complete in background
+        this.facebookPostsScraperService.analyzeFacebookPage(allSocialLinks.facebook)
+          .then(result => {
+            console.log('Facebook posts analysis completed:', result ? 'Success' : 'No data');
+          })
+          .catch(fbError => {
+            console.error('Facebook posts analysis failed:', fbError);
+          });
+        console.log('Facebook posts analysis started in background');
       }
       
       // Build the result object
@@ -2173,22 +2206,11 @@ export class AdvancedScannerService {
         ...allSocialLinks,
         facebookVerified: !!allSocialLinks.facebook,
         facebookConfidence: allSocialLinks.facebook ? 'high' as const : 'low' as const,
-        facebookSource: allSocialLinks.facebook ? 'enhanced_detection' as const : 'none' as const
+        facebookSource: allSocialLinks.facebook ? 'manual_override' as const : 'none' as const
       };
       
-      // Add enhanced Facebook data if available
-      if (facebookAnalysis) {
-        result.facebookAnalysis = {
-          totalPosts: facebookAnalysis.totalPosts,
-          averageEngagement: facebookAnalysis.averageEngagement,
-          postingFrequency: facebookAnalysis.postingFrequency,
-          engagementRate: facebookAnalysis.engagementRate,
-          recentPosts: facebookAnalysis.recentPosts.slice(0, 5), // Latest 5 posts
-          contentTypes: facebookAnalysis.contentTypes,
-          postingPatterns: facebookAnalysis.postingPatterns,
-          topPerformingPost: facebookAnalysis.topPerformingPost
-        };
-      }
+      // Enhanced Facebook data will be available in background - not included in immediate results
+      console.log('📘 Social media detection result prepared:', result);
       
       return result;
     } catch (error) {

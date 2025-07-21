@@ -1,6 +1,7 @@
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 import { GoogleBusinessService } from './googleBusinessService';
+import { EnhancedFacebookDetector } from './enhancedFacebookDetector';
 
 export interface SocialMediaResult {
   url: string;
@@ -22,10 +23,13 @@ export interface SocialMediaLinks {
 
 export class EnhancedSocialMediaDetector {
   private googleBusinessService: GoogleBusinessService;
+  private enhancedFacebookDetector: EnhancedFacebookDetector;
   private timeout = 8000; // 8 seconds for comprehensive scanning
 
   constructor() {
-    this.googleBusinessService = new GoogleBusinessService();
+    const apiKey = process.env.GOOGLE_PLACES_API_KEY || process.env.GOOGLE_API_KEY || '';
+    this.googleBusinessService = new GoogleBusinessService(apiKey);
+    this.enhancedFacebookDetector = new EnhancedFacebookDetector();
   }
 
   async detectAllSocialMedia(
@@ -37,21 +41,47 @@ export class EnhancedSocialMediaDetector {
   ): Promise<SocialMediaLinks> {
     const results: SocialMediaLinks = {};
     
-    // Step 1: Enhanced website scanning for all platforms
+    // Step 1: Use enhanced Facebook detector with business override capability
+    console.log('🔍 Running enhanced Facebook detection with business override support...');
+    try {
+      const facebookResult = await this.enhancedFacebookDetector.detectFacebookPage(
+        websiteUrl,
+        businessName,
+        address,
+        phone,
+        placeId
+      );
+      
+      if (facebookResult) {
+        results.facebook = facebookResult.url;
+        console.log('✅ Enhanced Facebook detection successful:', facebookResult.url);
+      } else {
+        console.log('❌ Enhanced Facebook detection found no results');
+      }
+    } catch (error) {
+      console.error('Enhanced Facebook detection failed:', error);
+    }
+    
+    // Step 2: Enhanced website scanning for other platforms
     const websiteLinks = await this.enhancedWebsiteScan(websiteUrl);
-    Object.assign(results, websiteLinks);
+    // Only merge non-Facebook results to avoid overriding enhanced Facebook detection
+    Object.keys(websiteLinks).forEach(platform => {
+      if (platform !== 'facebook') {
+        results[platform as keyof SocialMediaLinks] = websiteLinks[platform as keyof SocialMediaLinks];
+      }
+    });
 
-    // Step 2: Google Places API social media fields
+    // Step 3: Google Places API social media fields
     if (placeId) {
       const googleLinks = await this.checkGooglePlacesForSocialMedia(placeId);
       Object.assign(results, googleLinks);
     }
 
-    // Step 3: Meta tags and structured data
+    // Step 4: Meta tags and structured data
     const metaLinks = await this.scanMetaTagsAndStructuredData(websiteUrl);
     Object.assign(results, metaLinks);
 
-    // Step 4: Recursive page scanning for social links
+    // Step 5: Recursive page scanning for social links
     const recursiveLinks = await this.recursiveSocialScan(websiteUrl);
     Object.assign(results, recursiveLinks);
 
