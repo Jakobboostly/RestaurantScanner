@@ -7,7 +7,7 @@ import { SocialMediaDetector } from './socialMediaDetector.js';
 import { EnhancedFacebookDetector } from './enhancedFacebookDetector.js';
 import { EnhancedSocialMediaDetector } from './enhancedSocialMediaDetector.js';
 import { FacebookPostsScraperService } from './facebookPostsScraperService.js';
-import { SerpScreenshotService } from './serpScreenshotService.js';
+import { SeleniumScreenshotService } from './seleniumScreenshotService.js';
 import { ScanResult } from '@shared/schema';
 import axios from 'axios';
 import * as cheerio from 'cheerio';
@@ -44,7 +44,7 @@ export class AdvancedScannerService {
   private enhancedFacebookDetector: EnhancedFacebookDetector;
   private enhancedSocialMediaDetector: EnhancedSocialMediaDetector;
   private facebookPostsScraperService: FacebookPostsScraperService;
-  private serpScreenshotService: SerpScreenshotService;
+  private seleniumScreenshotService: SeleniumScreenshotService;
 
   constructor(
     googleApiKey: string,
@@ -63,7 +63,7 @@ export class AdvancedScannerService {
     this.enhancedFacebookDetector = new EnhancedFacebookDetector();
     this.enhancedSocialMediaDetector = new EnhancedSocialMediaDetector();
     this.facebookPostsScraperService = new FacebookPostsScraperService(apifyApiKey || '');
-    this.serpScreenshotService = new SerpScreenshotService(apifyApiKey);
+    this.seleniumScreenshotService = new SeleniumScreenshotService();
   }
 
   async scanRestaurantAdvanced(
@@ -270,7 +270,7 @@ export class AdvancedScannerService {
         
         // Extract city and state from Google Places API business profile
         const locationData = businessProfile?.formatted_address ? 
-          this.serpScreenshotService.extractCityState(businessProfile.formatted_address) : 
+          this.seleniumScreenshotService.extractCityState(businessProfile.formatted_address) : 
           { city: 'Unknown', state: 'Unknown' };
         
         // Create a food-type and location-specific search query
@@ -295,10 +295,9 @@ export class AdvancedScannerService {
         console.log('Initiating screenshot capture...');
         
         const screenshotPromise = Promise.race([
-          this.serpScreenshotService.captureSearchResults(
+          this.seleniumScreenshotService.captureGoogleSearch(
             cuisineType, 
             locationData.city, 
-            locationData.state, 
             restaurantName, 
             domain
           ),
