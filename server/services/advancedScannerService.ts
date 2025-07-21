@@ -288,8 +288,8 @@ export class AdvancedScannerService {
         const primaryKeyword = this.generatePrimaryKeywords(restaurantName, businessProfile)[0];
         
         // Extract city and state from Google Places API business profile
-        const locationData = businessProfile?.formatted_address ? 
-          this.seleniumScreenshotService.extractCityState(businessProfile.formatted_address) : 
+        const locationData = businessProfile?.address ? 
+          this.extractCityFromAddress(businessProfile.address) : 
           { city: 'Unknown', state: 'Unknown' };
         
         // Create a food-type and location-specific search query
@@ -300,7 +300,7 @@ export class AdvancedScannerService {
         console.log(`Starting SERP analysis and screenshot capture for keyword: "${primaryKeyword}"`);
         console.log(`Food-specific screenshot query: "${foodSearchQuery}"`);
         console.log(`Extracted cuisine type: "${cuisineType}"`);
-        console.log(`Google Places formatted_address: "${businessProfile?.formatted_address}"`);
+        console.log(`Google Places address: "${businessProfile?.address}"`);
         console.log(`Extracted location: ${locationData.city}, ${locationData.state}`);
         
         // Parallel SERP analysis and screenshot capture
@@ -361,8 +361,8 @@ export class AdvancedScannerService {
             localPackResults: []
           };
           
-          console.log('Using fallback screenshot structure for UI testing');
-          // serpScreenshots = [fallbackScreenshot]; // Temporarily disabled to avoid empty screenshots
+          console.log('Using fallback screenshot structure - screenshots will show search URL');
+          serpScreenshots = [fallbackScreenshot]; // Enable fallback to provide UI content
         }
         
         console.log('Fast SERP analysis completed');
@@ -987,6 +987,26 @@ export class AdvancedScannerService {
     }
     
     return null;
+  }
+
+  private extractCityFromAddress(address: string): { city: string; state: string } {
+    if (!address) return { city: 'Unknown', state: 'Unknown' };
+    
+    // Extract city from address string like "514 S 11th St, Omaha, NE 68102, USA"
+    const parts = address.split(',');
+    
+    if (parts.length >= 3) {
+      const city = parts[1].trim();
+      const stateZip = parts[2].trim();
+      const state = stateZip.split(' ')[0].trim();
+      
+      return { 
+        city: city || 'Unknown',
+        state: state || 'Unknown'
+      };
+    }
+    
+    return { city: 'Unknown', state: 'Unknown' };
   }
 
   private calculateBusinessScore(businessProfile: any): number {
