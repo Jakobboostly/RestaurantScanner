@@ -184,18 +184,31 @@ export class AdvancedScannerService {
       const phase3Start = Date.now();
       onProgress({ progress: 42, status: 'Checking search rankings...' });
       
-      // Start keyword research
-      const keywordPromise = Promise.race([
-        this.getOptimizedKeywordData(restaurantName, businessProfile),
+      // Get real ranking data for the three key keywords
+      const cuisineType = this.extractCuisineType(businessProfile);
+      const locationData = businessProfile?.address ? 
+        this.extractCityFromAddress(businessProfile.address) : 
+        { city: 'Unknown', state: 'Unknown' };
+      
+      console.log(`Getting real rankings for ${cuisineType} in ${locationData.city}, ${locationData.state}`);
+      
+      const realRankingsPromise = Promise.race([
+        this.dataForSeoService.getRealRestaurantRankings(
+          domain, 
+          cuisineType, 
+          locationData.city, 
+          locationData.state
+        ),
         new Promise((_, reject) => 
-          setTimeout(() => reject(new Error('Keyword research timeout')), 3500)
+          setTimeout(() => reject(new Error('Real rankings timeout')), 3000)
         )
       ]).catch(error => {
-        console.error('Keyword research failed:', error);
-        return this.generateRestaurantKeywords(restaurantName, businessProfile);
+        console.error('Real rankings failed:', error);
+        return [];
       });
       
-      const keywordData = await keywordPromise;
+      const realRankings = await realRankingsPromise;
+      console.log('Real rankings received:', realRankings);
       
       // Wait for phase 3 to complete (4 seconds total)
       const phase3Elapsed = Date.now() - phase3Start;
@@ -527,28 +540,53 @@ export class AdvancedScannerService {
     console.log('- competitorIntelligence.keywordGaps:', competitorIntelligence.keywordGaps);
     console.log('- serpFeatures:', serpFeatures);
 
-    const processedKeywords = keywordData.length > 0 ? keywordData.slice(0, 15).map(k => {
-      // Find ranking position from SERP analysis
-      const serpResult = serpAnalysis.find(s => s.keyword === k.keyword);
-      const position = serpResult?.position || this.estimateKeywordPosition(k.keyword, k.difficulty);
-      
-      console.log(`Processing keyword "${k.keyword}": volume=${k.searchVolume}, difficulty=${k.difficulty}, serpPosition=${serpResult?.position}, estimatedPosition=${position}`);
-      
-      const searchVolume = k.searchVolume || 0;
-      const difficulty = k.difficulty || 0;
-      const opportunity = searchVolume > 0 && difficulty > 0 ? Math.round((searchVolume / (difficulty + 1)) * 100) : 0;
+    // Use real rankings from DataForSEO SERP API
+    const processedKeywords = realRankings.length > 0 ? realRankings.map(ranking => {
+      console.log(`Real ranking for "${ranking.keyword}": position=${ranking.position}`);
       
       return {
-        keyword: k.keyword || 'Unknown',
-        position: position === 0 ? null : position,
-        searchVolume,
-        difficulty,
-        intent: k.intent || 'informational',
-        cpc: k.cpc || 0,
-        competition: k.competition || 0,
-        opportunity
+        keyword: ranking.keyword,
+        position: ranking.position,
+        searchVolume: 0, // Real search volume would require additional API calls
+        difficulty: 0,   // Real difficulty would require additional API calls  
+        intent: ranking.keyword.includes('near me') ? 'local' : 'commercial',
+        cpc: 0,
+        competition: 0,
+        opportunity: ranking.position && ranking.position <= 10 ? 100 : 50
       };
-    }) : this.generateRestaurantKeywords(restaurantName, businessProfile);
+    }) : [
+      // Fallback if API fails - only show these are NOT real rankings
+      {
+        keyword: `${cuisineType} near me`,
+        position: null,
+        searchVolume: 0,
+        difficulty: 0,
+        intent: 'local',
+        cpc: 0,
+        competition: 0,
+        opportunity: 0
+      },
+      {
+        keyword: `${cuisineType} restaurant near me`,
+        position: null,
+        searchVolume: 0,
+        difficulty: 0,
+        intent: 'local',
+        cpc: 0,
+        competition: 0,
+        opportunity: 0
+      },
+      {
+        keyword: `${cuisineType}`,
+        position: null,
+        searchVolume: 0,
+        difficulty: 0,
+        intent: 'commercial',
+        cpc: 0,
+        competition: 0,
+        opportunity: 0
+      }
+    ];
 
     console.log('Final processed keywords sent to frontend:', processedKeywords.length);
     console.log('Sample processed keyword:', processedKeywords[0]);

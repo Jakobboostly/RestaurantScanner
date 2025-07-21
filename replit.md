@@ -76,6 +76,14 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 21, 2025. Implemented real ranking keyword API integration replacing estimates with authentic DataForSEO SERP data:
+  - Added getRealRestaurantRankings() method to EnhancedDataForSeoService using `/serp/google/organic/live` endpoint
+  - Replaced estimated keyword positions with actual Google search rankings for three key patterns: "(food type) near me", "(food type) restaurant near me", "(food type)"
+  - System now makes real DataForSEO SERP API calls to find restaurant domain in Google search results up to position 100
+  - Updated dashboard to show actual verified rankings instead of algorithmic estimates
+  - Added proper error handling and fallback that clearly indicates when real data is unavailable (position: null)
+  - Enhanced logging to track real vs estimated ranking data for transparency
+  - Real ranking data costs ~$0.01-0.02 per keyword but provides authentic search position verification
 - July 21, 2025. Successfully resolved Google reCAPTCHA blocking with robust fallback architecture:
   - Implemented intelligent captcha detection that automatically detects blocked Google access
   - Built reliable DuckDuckGo fallback system when Google blocks automated requests

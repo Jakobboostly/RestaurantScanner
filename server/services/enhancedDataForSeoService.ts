@@ -484,6 +484,72 @@ export class EnhancedDataForSeoService {
     }
   }
 
+  /**
+   * Get real ranking positions for the three key restaurant keywords
+   * Returns actual positions from DataForSEO SERP API, not estimates
+   */
+  async getRealRestaurantRankings(
+    domain: string,
+    foodType: string,
+    city: string,
+    state: string
+  ): Promise<{ keyword: string; position: number | null }[]> {
+    const cleanDomain = domain.replace(/^https?:\/\//, '').replace(/^www\./, '');
+    
+    // The three key keywords you requested
+    const targetKeywords = [
+      `${foodType} near me`,
+      `${foodType} restaurant near me`, 
+      `${foodType}`
+    ];
+
+    console.log(`Getting real rankings for ${cleanDomain} with keywords:`, targetKeywords);
+
+    const rankings = [];
+
+    for (const keyword of targetKeywords) {
+      try {
+        const response = await this.client.post('/serp/google/organic/live', [{
+          keyword,
+          location_name: `${city}, ${state}, United States`,
+          language_name: 'English',
+          device: 'desktop',
+          os: 'windows'
+        }]);
+
+        const items = response.data.tasks?.[0]?.result?.[0]?.items || [];
+        let position = null;
+
+        // Look for the restaurant's domain in search results
+        for (let i = 0; i < items.length && i < 100; i++) { // Check first 10 pages
+          const item = items[i];
+          const itemDomain = (item.domain || '').replace(/^www\./, '');
+          
+          if (itemDomain === cleanDomain) {
+            position = item.rank_group || (i + 1);
+            console.log(`Found ${cleanDomain} at position ${position} for "${keyword}"`);
+            break;
+          }
+        }
+
+        if (!position) {
+          console.log(`${cleanDomain} not found in top 100 results for "${keyword}"`);
+        }
+
+        rankings.push({ keyword, position });
+
+        // Add small delay between requests to avoid rate limiting
+        await new Promise(resolve => setTimeout(resolve, 500));
+
+      } catch (error) {
+        console.error(`SERP API error for keyword "${keyword}":`, error);
+        rankings.push({ keyword, position: null });
+      }
+    }
+
+    return rankings;
+  }
+
   private isCommercialOrLocalKeyword(keyword: string): boolean {
     const keywordStr = String(keyword || '').toLowerCase();
     
