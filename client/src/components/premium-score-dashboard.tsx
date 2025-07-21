@@ -28,7 +28,8 @@ import {
   MessageCircle,
   Brain,
   Lightbulb,
-  AlertCircle
+  AlertCircle,
+  X
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -72,6 +73,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
   });
   
   const [activeTab, setActiveTab] = useState<'search' | 'social' | 'local' | 'reviews'>('search');
+  const [showEmbeddedSearch, setShowEmbeddedSearch] = useState(false);
 
   // Function to fetch restaurant search screenshot
   const fetchRestaurantSearchScreenshot = async () => {
@@ -667,15 +669,13 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                               <p className="text-lg font-semibold text-white">"{searchQuery}"</p>
                             </div>
                             
-                            <a 
-                              href={searchUrl}
-                              target="_blank"
-                              rel="noopener noreferrer"
+                            <button 
+                              onClick={() => setShowEmbeddedSearch(true)}
                               className="inline-flex items-center justify-center w-full bg-white text-[#5F5FFF] font-bold py-4 px-6 rounded-lg hover:bg-white/95 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl group"
                             >
                               <span className="mr-3">Where You Rank</span>
                               <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-                            </a>
+                            </button>
                             
                             <p className="text-xs text-white/70 leading-relaxed">
                               This opens a live Google search. Look for your restaurant in the results to see where you rank compared to competitors.
@@ -1152,6 +1152,66 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
           </Card>
         </motion.div>
       </div>
+      
+      {/* Embedded Google Search Modal */}
+      {showEmbeddedSearch && (
+        <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4">
+          <div className="bg-white rounded-xl shadow-2xl w-full max-w-6xl h-[80vh] flex flex-col">
+            {/* Modal Header */}
+            <div className="flex items-center justify-between p-4 border-b border-gray-200">
+              <div className="flex items-center gap-3">
+                <div className="p-2 bg-[#5F5FFF] rounded-lg">
+                  <Search className="w-5 h-5 text-white" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg text-gray-800">Where You Rank on Google</h3>
+                  <p className="text-sm text-gray-600">
+                    Live Google search results for "{(() => {
+                      const { foodType, city, state } = getSearchTerms();
+                      return `${foodType} ${city} ${state}`.trim();
+                    })()}"
+                  </p>
+                </div>
+              </div>
+              <button
+                onClick={() => setShowEmbeddedSearch(false)}
+                className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+              >
+                <X className="w-5 h-5 text-gray-500" />
+              </button>
+            </div>
+            
+            {/* Embedded Google Search */}
+            <div className="flex-1 overflow-hidden">
+              <iframe
+                src={(() => {
+                  const { foodType, city, state } = getSearchTerms();
+                  const searchQuery = `${foodType} ${city} ${state}`.trim();
+                  return `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}&igu=1`;
+                })()}
+                className="w-full h-full border-0"
+                title="Google Search Results"
+                sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+              />
+            </div>
+            
+            {/* Modal Footer */}
+            <div className="p-4 border-t border-gray-200 bg-gray-50">
+              <div className="flex items-center justify-between">
+                <div className="text-sm text-gray-600">
+                  Look for <span className="font-semibold text-[#5F5FFF]">{restaurantName}</span> in the search results to see your ranking
+                </div>
+                <button
+                  onClick={() => setShowEmbeddedSearch(false)}
+                  className="px-4 py-2 bg-[#5F5FFF] text-white rounded-lg hover:bg-[#4F4FEF] transition-colors"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
