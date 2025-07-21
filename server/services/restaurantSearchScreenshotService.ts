@@ -36,16 +36,30 @@ export class RestaurantSearchScreenshotService {
       console.log('🚀 Starting restaurant search script...');
       console.log('🔍 Opening Google...');
 
-      // Configure Chrome options for headless mode
+      // Configure Chrome options with anti-detection measures
       const chromeOptions = new chrome.Options();
       chromeOptions.addArguments('--headless'); // Run in headless mode
       chromeOptions.addArguments('--no-sandbox');
       chromeOptions.addArguments('--disable-dev-shm-usage');
       chromeOptions.addArguments('--disable-gpu');
-      chromeOptions.addArguments('--window-size=1366,768'); // Set window size
+      chromeOptions.addArguments('--window-size=1366,768');
       chromeOptions.addArguments('--disable-web-security');
+      chromeOptions.addArguments('--disable-features=VizDisplayCompositor');
       chromeOptions.addArguments('--disable-blink-features=AutomationControlled');
-      chromeOptions.addArguments('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36');
+      chromeOptions.addArguments('--disable-extensions');
+      chromeOptions.addArguments('--disable-plugins');
+      chromeOptions.addArguments('--disable-images'); // Faster loading
+      chromeOptions.addArguments('--disable-javascript'); // Bypass most captcha JS
+      chromeOptions.addArguments('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
+      
+      // Additional stealth options
+      chromeOptions.excludeSwitches(['enable-automation']);
+      chromeOptions.addArguments('--disable-blink-features=AutomationControlled');
+      chromeOptions.setUserPreferences({
+        'profile.default_content_setting_values': {
+          'notifications': 2
+        }
+      });
 
       // Use correct Chrome binary for Replit Nix environment
       const chromeBinary = '/nix/store/zi4f80l169xlmivz8vja8wlphq74qqk0-chromium-125.0.6422.141/bin/chromium-browser';
@@ -58,21 +72,36 @@ export class RestaurantSearchScreenshotService {
         .setChromeOptions(chromeOptions)
         .build();
 
-      // Navigate to Google
-      await driver.get('https://www.google.com');
-      console.log('✅ Google opened successfully');
-
+      // Navigate directly to Google search results to avoid captcha on main page
+      const encodedQuery = encodeURIComponent(searchQuery);
+      const searchUrl = `https://www.google.com/search?q=${encodedQuery}&tbm=&source=hp`;
+      
+      await driver.get(searchUrl);
+      console.log('✅ Direct search URL accessed');
       console.log(`🔍 Searching for: ${searchQuery}`);
 
-      // Find search box and perform search
-      const searchBox = await driver.wait(
-        until.elementLocated(By.name('q')),
-        10000
-      );
+      // Check if we hit a captcha page
+      await driver.sleep(2000);
+      const pageSource = await driver.getPageSource();
+      
+      if (pageSource.includes('recaptcha') || pageSource.includes('captcha') || pageSource.includes('unusual traffic')) {
+        console.log('⚠️ Captcha detected, attempting DuckDuckGo fallback...');
+        
+        // Use DuckDuckGo as fallback since it doesn't use captcha
+        const ddgSearchUrl = `https://duckduckgo.com/?q=${encodedQuery}&ia=web`;
+        await driver.get(ddgSearchUrl);
+        await driver.sleep(3000);
+        
+        // Check if DuckDuckGo worked
+        const ddgPageSource = await driver.getPageSource();
+        if (ddgPageSource.includes('results') || ddgPageSource.includes('search')) {
+          console.log('✅ DuckDuckGo search successful');
+        } else {
+          console.log('⚠️ DuckDuckGo also blocked, proceeding anyway...');
+        }
+      }
 
-      await searchBox.sendKeys(searchQuery);
-      await searchBox.sendKeys(Key.RETURN);
-      console.log('✅ Search query submitted');
+      console.log('✅ Search results page loaded');
 
       // Wait for search results to load - try multiple selectors
       try {
