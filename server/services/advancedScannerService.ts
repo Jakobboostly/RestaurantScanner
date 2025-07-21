@@ -269,8 +269,8 @@ export class AdvancedScannerService {
         const primaryKeyword = this.generatePrimaryKeywords(restaurantName, businessProfile)[0];
         
         // Extract city and state from Google Places API business profile
-        const locationData = (businessProfile as any)?.formatted_address ? 
-          this.serpScreenshotService.extractCityState((businessProfile as any).formatted_address) : 
+        const locationData = businessProfile?.formatted_address ? 
+          this.serpScreenshotService.extractCityState(businessProfile.formatted_address) : 
           { city: 'Unknown', state: 'Unknown' };
         
         // Create a food-type and location-specific search query
@@ -281,7 +281,7 @@ export class AdvancedScannerService {
         console.log(`Starting SERP analysis and screenshot capture for keyword: "${primaryKeyword}"`);
         console.log(`Food-specific screenshot query: "${foodSearchQuery}"`);
         console.log(`Extracted cuisine type: "${cuisineType}"`);
-        console.log(`Google Places formatted_address: "${(businessProfile as any)?.formatted_address}"`);
+        console.log(`Google Places formatted_address: "${businessProfile?.formatted_address}"`);
         console.log(`Extracted location: ${locationData.city}, ${locationData.state}`);
         
         // Parallel SERP analysis and screenshot capture
@@ -310,7 +310,7 @@ export class AdvancedScannerService {
         const [serpResult, screenshotResult] = await Promise.allSettled([serpPromise, screenshotPromise]);
         
         if (serpResult.status === 'fulfilled') {
-          serpAnalysis = serpResult.value || [];
+          serpAnalysis = Array.isArray(serpResult.value) ? serpResult.value : [];
         } else {
           console.error(`SERP analysis failed for "${primaryKeyword}":`, serpResult.reason);
         }

@@ -7,6 +7,7 @@ export interface GoogleBusinessProfile {
   website?: string;
   phone?: string;
   address?: string;
+  formatted_address?: string;
   photos: {
     total: number;
     quality: 'excellent' | 'good' | 'fair' | 'poor';
@@ -106,6 +107,7 @@ export class GoogleBusinessService {
         website: place.website || undefined,
         phone: place.formatted_phone_number || undefined,
         address: place.formatted_address || undefined,
+        formatted_address: place.formatted_address || undefined,
         photos: photoAnalysis,
         reviews: reviewAnalysis,
         isVerified: place.business_status === 'OPERATIONAL',

@@ -76,15 +76,16 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
-- July 21, 2025. Successfully fixed critical scanner failures and variable scope issues:
+- July 21, 2025. Successfully fixed critical scanner failures and Google Places API integration issues:
   - Fixed "mobileExperience is not defined" error by declaring variables at function scope
-  - Fixed "desktopResult is not defined" error with proper variable initialization
+  - Fixed "desktopResult is not defined" error with proper variable initialization  
+  - Fixed Google Places formatted_address field extraction for proper city/state data in screenshots
+  - Fixed "serpAnalysis.filter is not a function" error with proper array handling
   - Scanner now completes successfully with full restaurant analysis results
-  - Enhanced error handling shows specific failure details instead of generic messages
-  - Improved TypeScript error resolution in screenshot service
-  - Scanner processing time optimized to 32 seconds with complete data output
-  - Google Places API integration working for restaurant data extraction
-  - All scan phases now complete without variable reference errors
+  - SERP screenshots now show accurate location data (e.g., "pizza Philadelphia PA" instead of "pizza Unknown Unknown")
+  - Enhanced GoogleBusinessProfile interface to include formatted_address field
+  - All scan phases complete without variable reference or type errors
+  - Scanner processing time optimized to 33 seconds with comprehensive data output
 - July 21, 2025. Migrated SERP screenshot service from Puppeteer to Apify for improved reliability and captcha avoidance:
   - Completely replaced Puppeteer-based screenshot capture with Apify's website-screenshot-generator actor
   - Updated search query format from restaurant names to "cuisine type + city + state" format (e.g., "Mexican food Austin TX")

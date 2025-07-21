@@ -193,12 +193,17 @@ export class SerpScreenshotService {
 
   // Helper method to extract city and state from address
   extractCityState(address: string): { city: string; state: string } {
+    console.log(`🗺️ Extracting city/state from address: "${address}"`);
+    
     const addressParts = address.split(',').map(part => part.trim());
+    console.log(`Address parts:`, addressParts);
     
     if (addressParts.length >= 3) {
       const cityPart = addressParts[addressParts.length - 3];
       const stateZip = addressParts[addressParts.length - 2];
       const statePart = stateZip.split(' ')[0];
+      
+      console.log(`Extracted - City: "${cityPart}", State: "${statePart}"`);
       
       return {
         city: cityPart || 'Unknown',
@@ -206,6 +211,7 @@ export class SerpScreenshotService {
       };
     }
     
+    console.log(`Address parsing failed - not enough parts`);
     return { city: 'Unknown', state: 'Unknown' };
   }
 }
