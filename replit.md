@@ -76,6 +76,13 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 16, 2025. Fixed three critical user-reported issues for improved functionality:
+  - Removed "SERP Features" from search performance section per user request for cleaner interface
+  - Enhanced Facebook scanner to check Google Business Profile social media fields, editorial summaries, and reviews
+  - Fixed SERP screenshot query duplication (was showing "brewery omaha omaha", now shows "brewery omaha")
+  - Optimized social media detection with comprehensive Google Places API integration
+  - Screenshots now properly capture food-type and city-based searches without location duplication
+  - Enhanced Facebook detection now scans Google Places reviews and editorial content for social links
 - July 16, 2025. Enhanced SERP screenshots with food-type and city-based search queries:
   - Updated screenshot service to use cuisine-specific search queries instead of generic "restaurant near me"
   - Enhanced extractCuisineType method to detect brewery, pub, coffee, bakery, chicken, french, mediterranean types

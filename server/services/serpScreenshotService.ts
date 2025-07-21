@@ -75,11 +75,10 @@ export class SerpScreenshotService {
         deviceScaleFactor: 1,
       });
       
-      // Construct Google search URL with location
-      const searchQuery = `${keyword} ${location}`;
-      const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}&num=20`;
+      // Use the keyword as-is since it already contains location info
+      const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(keyword)}&num=20`;
       
-      console.log(`Capturing SERP screenshot for: ${searchQuery}`);
+      console.log(`Capturing SERP screenshot for: ${keyword}`);
       console.log(`Screenshot service URL: ${searchUrl}`);
       
       // Navigate to Google search results

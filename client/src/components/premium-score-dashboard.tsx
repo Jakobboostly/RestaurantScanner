@@ -581,12 +581,12 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                         <span className="font-medium">{scanResult.keywordAnalysis?.targetKeywords?.length || 0}</span>
                       </div>
                       <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">SERP Features</span>
-                        <span className="font-medium">{scanResult.serpFeatures?.length || 0}</span>
-                      </div>
-                      <div className="flex justify-between items-center">
                         <span className="text-sm text-gray-600">Ranking Keywords</span>
                         <span className="font-medium">{scanResult.keywords?.filter(k => k.position && k.position <= 20).length || 0}</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-sm text-gray-600">Domain Authority</span>
+                        <span className="font-medium">{scanResult.domainAuthority || 0}</span>
                       </div>
                     </div>
                   </div>

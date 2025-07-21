@@ -273,24 +273,83 @@ export class EnhancedSocialMediaDetector {
 
   private async checkGooglePlacesForSocialMedia(placeId: string): Promise<SocialMediaLinks> {
     try {
-      const businessProfile = await this.googleBusinessService.getBusinessProfile(placeId);
+      // Use enhanced Google Places API call to get all available fields including social media
+      const response = await axios.get('https://maps.googleapis.com/maps/api/place/details/json', {
+        params: {
+          place_id: placeId,
+          fields: 'name,website,url,editorial_summary,reviews',
+          key: process.env.GOOGLE_PLACES_API_KEY,
+          reviews_no_translations: true
+        }
+      });
+
+      console.log('Google Places social media check - Status:', response.data.status);
+      
+      if (response.data.status !== 'OK') {
+        console.log('Google Places API unavailable for social media check');
+        return {};
+      }
+
+      const place = response.data.result;
       const socialLinks: SocialMediaLinks = {};
 
-      // Google Places API doesn't provide direct social media fields,
-      // but website field might contain social media URLs
-      if (businessProfile?.website) {
-        const websiteUrl = businessProfile.website;
+      // Check if the website field contains social media URLs
+      if (place?.website) {
+        const websiteUrl = place.website;
+        console.log('Checking Google Places website field for social media:', websiteUrl);
         
-        // Check if the website field itself is a social media URL
         if (websiteUrl.includes('facebook.com') && this.isValidFacebookUrl(websiteUrl)) {
           socialLinks.facebook = this.cleanSocialUrl(websiteUrl, 'facebook');
+          console.log('Facebook found in Google Places website field:', socialLinks.facebook);
         } else if (websiteUrl.includes('instagram.com') && this.isValidInstagramUrl(websiteUrl)) {
           socialLinks.instagram = this.cleanSocialUrl(websiteUrl, 'instagram');
+          console.log('Instagram found in Google Places website field:', socialLinks.instagram);
         } else if ((websiteUrl.includes('twitter.com') || websiteUrl.includes('x.com')) && this.isValidTwitterUrl(websiteUrl)) {
           socialLinks.twitter = this.cleanSocialUrl(websiteUrl, 'twitter');
+          console.log('Twitter found in Google Places website field:', socialLinks.twitter);
         }
       }
 
+      // Check editorial summary for social media mentions
+      if (place?.editorial_summary?.overview) {
+        const overview = place.editorial_summary.overview;
+        console.log('Checking Google Places editorial summary for social media mentions');
+        
+        // Look for social media URLs in the editorial summary
+        const facebookMatch = overview.match(/facebook\.com\/[^\s\)]+/);
+        if (facebookMatch && this.isValidFacebookUrl(`https://${facebookMatch[0]}`)) {
+          socialLinks.facebook = this.cleanSocialUrl(`https://${facebookMatch[0]}`, 'facebook');
+          console.log('Facebook found in editorial summary:', socialLinks.facebook);
+        }
+        
+        const instagramMatch = overview.match(/instagram\.com\/[^\s\)]+/);
+        if (instagramMatch && this.isValidInstagramUrl(`https://${instagramMatch[0]}`)) {
+          socialLinks.instagram = this.cleanSocialUrl(`https://${instagramMatch[0]}`, 'instagram');
+          console.log('Instagram found in editorial summary:', socialLinks.instagram);
+        }
+      }
+
+      // Check recent reviews for social media mentions
+      if (place?.reviews && Array.isArray(place.reviews)) {
+        console.log('Checking Google Places reviews for social media mentions');
+        for (const review of place.reviews.slice(0, 3)) { // Check first 3 reviews
+          if (review.text) {
+            const facebookMatch = review.text.match(/facebook\.com\/[^\s\)]+/);
+            if (facebookMatch && !socialLinks.facebook && this.isValidFacebookUrl(`https://${facebookMatch[0]}`)) {
+              socialLinks.facebook = this.cleanSocialUrl(`https://${facebookMatch[0]}`, 'facebook');
+              console.log('Facebook found in review text:', socialLinks.facebook);
+            }
+            
+            const instagramMatch = review.text.match(/instagram\.com\/[^\s\)]+/);
+            if (instagramMatch && !socialLinks.instagram && this.isValidInstagramUrl(`https://${instagramMatch[0]}`)) {
+              socialLinks.instagram = this.cleanSocialUrl(`https://${instagramMatch[0]}`, 'instagram');
+              console.log('Instagram found in review text:', socialLinks.instagram);
+            }
+          }
+        }
+      }
+
+      console.log('Google Places social media detection results:', socialLinks);
       return socialLinks;
     } catch (error) {
       console.error('Error checking Google Places for social media:', error);
