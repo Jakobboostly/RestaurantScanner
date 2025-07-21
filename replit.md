@@ -76,22 +76,6 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
-- July 21, 2025. Successfully integrated DataForSEO web sentiment analysis for comprehensive brand reputation insights:
-  - Added ContentSentimentService with DataForSEO sentiment analysis API integration for web-wide brand monitoring
-  - Enhanced Reviews & Reputation section with comprehensive web sentiment tracking beyond Google reviews
-  - Implemented realistic sentiment generation based on Google Business Profile data as intelligent fallback
-  - Added sentiment score display with positive/negative/neutral distribution and emotional reaction analysis
-  - Created web mention tracking with top domains analysis and competitive intelligence insights
-  - Web sentiment analysis provides industry average comparison and trend direction for strategic positioning
-  - System analyzes restaurant brand mentions across news, blogs, reviews, and social media platforms
-  - Enhanced dashboard shows sentiment score, mention volume, emotional reactions, and reputation sources
-  - Professional web sentiment intelligence helps restaurants understand brand perception beyond review platforms
-- July 21, 2025. Migrated SERP screenshot service from Puppeteer to Playwright for enhanced captcha resistance:
-  - Replaced Puppeteer with Playwright for superior anti-bot detection capabilities
-  - Added proper search results container waiting with page.waitForSelector('#search')
-  - Enhanced captcha detection and error reporting for Google bot protection
-  - Implemented full-page screenshots for better search result capture
-  - Screenshots service now more resilient against Google's automated access detection
 - July 16, 2025. Fixed three critical user-reported issues for improved functionality:
   - Removed "SERP Features" from search performance section per user request for cleaner interface
   - Enhanced Facebook scanner to check Google Business Profile social media fields, editorial summaries, and reviews

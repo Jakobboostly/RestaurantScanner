@@ -8,8 +8,6 @@ import { EnhancedFacebookDetector } from './enhancedFacebookDetector.js';
 import { EnhancedSocialMediaDetector } from './enhancedSocialMediaDetector.js';
 import { FacebookPostsScraperService } from './facebookPostsScraperService.js';
 import { SerpScreenshotService } from './serpScreenshotService.js';
-import { HttpScreenshotService } from './httpScreenshotService.js';
-import { ContentSentimentService } from './contentSentimentService.js';
 import { ScanResult } from '@shared/schema';
 import axios from 'axios';
 import * as cheerio from 'cheerio';
@@ -47,7 +45,6 @@ export class AdvancedScannerService {
   private enhancedSocialMediaDetector: EnhancedSocialMediaDetector;
   private facebookPostsScraperService: FacebookPostsScraperService;
   private serpScreenshotService: SerpScreenshotService;
-  private contentSentimentService: ContentSentimentService;
 
   constructor(
     googleApiKey: string,
@@ -67,7 +64,6 @@ export class AdvancedScannerService {
     this.enhancedSocialMediaDetector = new EnhancedSocialMediaDetector();
     this.facebookPostsScraperService = new FacebookPostsScraperService(apifyApiKey || '');
     this.serpScreenshotService = new SerpScreenshotService();
-    this.contentSentimentService = new ContentSentimentService();
     
     if (zembraApiKey) {
       this.zembraReviewsService = new ZembraTechReviewsService(zembraApiKey);
@@ -86,8 +82,6 @@ export class AdvancedScannerService {
     const PHASE_DURATION = 4000; // 4 seconds per phase
     const TOTAL_PHASES = 6;
     const MAX_SCAN_TIME = PHASE_DURATION * TOTAL_PHASES; // 24 seconds total
-    
-    console.log(`Starting advanced scan for: ${restaurantName} (${domain})`);
     
     try {
       // Phase 1: Finding restaurant website (4 seconds)
@@ -198,68 +192,20 @@ export class AdvancedScannerService {
 
       // Phase 4: Evaluating mobile experience (4 seconds)
       const phase4Start = Date.now();
-      console.log('Starting Phase 4: Mobile experience analysis');
       onProgress({ progress: 58, status: 'Evaluating mobile experience...' });
       
-      let reviewsAnalysis = null;
-      let webSentiment = null;
+      // Start reviews analysis immediately
+      const reviewsPromise = Promise.race([
+        this.generateEnhancedReviewsAnalysis(businessProfile, placeId),
+        new Promise((_, reject) => 
+          setTimeout(() => reject(new Error('Reviews analysis timeout')), 3500)
+        )
+      ]).catch(error => {
+        console.error('Reviews analysis failed:', error);
+        return this.generateEnhancedReviewsAnalysis(businessProfile);
+      });
       
-      try {
-        // Start reviews analysis
-        console.log('Starting reviews analysis...');
-        reviewsAnalysis = await Promise.race([
-          this.generateEnhancedReviewsAnalysis(businessProfile, placeId),
-          new Promise((_, reject) => 
-            setTimeout(() => reject(new Error('Reviews analysis timeout')), 3500)
-          )
-        ]).catch(error => {
-          console.error('Reviews analysis failed:', error);
-          return this.generateEnhancedReviewsAnalysis(businessProfile);
-        });
-        console.log('Reviews analysis completed successfully');
-      } catch (error) {
-        console.error('CRITICAL: Reviews analysis failed completely:', error);
-        reviewsAnalysis = this.generateEnhancedReviewsAnalysis(businessProfile);
-      }
-
-      try {
-        // Start web sentiment analysis
-        console.log('Starting web sentiment analysis...');
-        webSentiment = await Promise.race([
-          this.contentSentimentService.analyzeSentiment(restaurantName, city || ''),
-          new Promise((_, reject) => 
-            setTimeout(() => reject(new Error('Web sentiment analysis timeout')), 3500)
-          )
-        ]).catch(error => {
-          console.error('Web sentiment analysis failed:', error);
-          try {
-            console.log('Attempting sentiment fallback generation...');
-            return this.contentSentimentService.generateRealisticSentimentBasedOnProfile(restaurantName, businessProfile);
-          } catch (fallbackError) {
-            console.error('Sentiment fallback also failed:', fallbackError);
-            return null;
-          }
-        });
-        console.log('Web sentiment analysis completed successfully');
-      } catch (error) {
-        console.error('CRITICAL: Web sentiment analysis failed completely:', error);
-        webSentiment = null;
-      }
-      
-      if (webSentiment) {
-        console.log(`Web sentiment analysis completed: ${webSentiment.sentimentScore}% positive sentiment (${webSentiment.totalMentions} total mentions)`);
-        // Add web sentiment to reviews analysis
-        try {
-          reviewsAnalysis = {
-            ...reviewsAnalysis,
-            webSentiment: webSentiment
-          };
-        } catch (mergeError) {
-          console.error('Failed to merge sentiment data:', mergeError);
-        }
-      } else {
-        console.log('Web sentiment analysis returned null, continuing without sentiment data');
-      }
+      const reviewsAnalysis = await reviewsPromise;
       
       // Wait for phase 4 to complete (4 seconds total)
       const phase4Elapsed = Date.now() - phase4Start;
@@ -339,30 +285,7 @@ export class AdvancedScannerService {
         
         console.log('Initiating screenshot capture...');
         const screenshotPromise = Promise.race([
-          this.serpScreenshotService.captureSearchResults(foodSearchQuery, restaurantName, domain, city || 'United States').catch(error => {
-            console.log('Playwright screenshot failed, using HTTP screenshot service...');
-            
-            // Use simple HTTP-based screenshot as fallback
-            const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(foodSearchQuery)}`;
-            console.log(`Creating HTTP screenshot for: ${searchUrl}`);
-            
-            return {
-              keyword: foodSearchQuery,
-              location: city || 'United States',
-              screenshotBase64: 'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==', // 1x1 transparent PNG as placeholder
-              restaurantRanking: {
-                found: false,
-                position: 0,
-                title: `Search for "${foodSearchQuery}"`,
-                url: searchUrl,
-                snippet: `Click to view live Google search results for "${foodSearchQuery}"`
-              },
-              totalResults: 0,
-              searchUrl: searchUrl,
-              localPackPresent: false,
-              localPackResults: []
-            };
-          }),
+          this.serpScreenshotService.captureSearchResults(foodSearchQuery, restaurantName, domain, city || 'United States'),
           new Promise((_, reject) => 
             setTimeout(() => reject(new Error('SERP screenshot timeout')), 25000)
           )
@@ -385,27 +308,24 @@ export class AdvancedScannerService {
           console.error(`SERP screenshot failed for "${primaryKeyword}":`, screenshotResult.reason);
           console.error('Screenshot service error details:', screenshotResult.reason?.message || screenshotResult.reason);
           
-          // Create a working fallback screenshot with live search link
-          const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(foodSearchQuery)}`;
+          // Create a fallback screenshot structure to test the UI
           const fallbackScreenshot = {
-            keyword: foodSearchQuery,
-            location: city || 'United States',
-            screenshotBase64: 'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==', // 1x1 transparent PNG placeholder
+            keyword: primaryKeyword,
+            location: this.extractCity(restaurantName) || 'United States',
+            screenshot: '', // Empty for now
             restaurantRanking: {
               found: false,
               position: 0,
-              title: `Live Search: "${foodSearchQuery}"`,
-              url: searchUrl,
-              snippet: `Click to view current Google search results for "${foodSearchQuery}" and see where ${restaurantName} ranks`
+              title: '',
+              url: '',
+              snippet: ''
             },
             totalResults: 0,
-            searchUrl: searchUrl,
-            localPackPresent: false,
-            localPackResults: []
+            searchUrl: `https://www.google.com/search?q=${encodeURIComponent(primaryKeyword)}`
           };
           
-          serpScreenshots = [fallbackScreenshot]; // Enable fallback for live search functionality
-          console.log('Using fallback screenshot with live search functionality');
+          console.log('Using fallback screenshot structure for UI testing');
+          // serpScreenshots = [fallbackScreenshot]; // Temporarily disabled to avoid empty screenshots
         }
         
         console.log('Fast SERP analysis completed');
@@ -445,28 +365,7 @@ export class AdvancedScannerService {
 
     } catch (error) {
       console.error('Advanced scan failed:', error);
-      console.error('Error stack:', error.stack);
-      console.error('Error name:', error.name);
-      console.error('Error message:', error.message);
-      
-      // Return a minimal but functional result instead of throwing
-      return {
-        domain,
-        restaurantName,
-        businessProfile: null,
-        performance: { score: 0, issues: ['Analysis incomplete due to technical error'] },
-        keywords: [],
-        competitors: [],
-        serpFeatures: [],
-        domainAuthority: 0,
-        aiRecommendations: ['Unable to complete full analysis'],
-        overallScore: 0,
-        businessScore: 0,
-        competitorScore: 0,
-        profileAnalysis: null,
-        serpScreenshots: [],
-        reviewsAnalysis: null
-      };
+      throw new Error('Advanced restaurant analysis failed');
     }
   }
 
