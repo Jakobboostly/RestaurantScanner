@@ -610,7 +610,7 @@ export class AdvancedScannerService {
       userExperience: accessibilityScore,
       issues,
       recommendations,
-      keywords: processedKeywords,  // Primary keyword location
+      keywords: keywordData,  // Primary keyword location
       keywordAnalysis: enhancedKeywordAnalysis,
       competitors: await this.generateDetailedCompetitorAnalysis(competitors, restaurantName, businessProfile, keywordData),
       competitorIntelligence,
