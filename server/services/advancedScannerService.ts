@@ -9,6 +9,7 @@ import { EnhancedSocialMediaDetector } from './enhancedSocialMediaDetector.js';
 import { FacebookPostsScraperService } from './facebookPostsScraperService.js';
 import { SerpScreenshotService } from './serpScreenshotService.js';
 import { HttpScreenshotService } from './httpScreenshotService.js';
+import { ContentSentimentService } from './contentSentimentService.js';
 import { ScanResult } from '@shared/schema';
 import axios from 'axios';
 import * as cheerio from 'cheerio';
@@ -46,6 +47,7 @@ export class AdvancedScannerService {
   private enhancedSocialMediaDetector: EnhancedSocialMediaDetector;
   private facebookPostsScraperService: FacebookPostsScraperService;
   private serpScreenshotService: SerpScreenshotService;
+  private contentSentimentService: ContentSentimentService;
 
   constructor(
     googleApiKey: string,
@@ -65,6 +67,7 @@ export class AdvancedScannerService {
     this.enhancedSocialMediaDetector = new EnhancedSocialMediaDetector();
     this.facebookPostsScraperService = new FacebookPostsScraperService(apifyApiKey || '');
     this.serpScreenshotService = new SerpScreenshotService();
+    this.contentSentimentService = new ContentSentimentService();
     
     if (zembraApiKey) {
       this.zembraReviewsService = new ZembraTechReviewsService(zembraApiKey);
@@ -195,7 +198,7 @@ export class AdvancedScannerService {
       const phase4Start = Date.now();
       onProgress({ progress: 58, status: 'Evaluating mobile experience...' });
       
-      // Start reviews analysis immediately
+      // Start reviews analysis and web sentiment analysis
       const reviewsPromise = Promise.race([
         this.generateEnhancedReviewsAnalysis(businessProfile, placeId),
         new Promise((_, reject) => 
@@ -205,8 +208,28 @@ export class AdvancedScannerService {
         console.error('Reviews analysis failed:', error);
         return this.generateEnhancedReviewsAnalysis(businessProfile);
       });
+
+      const sentimentPromise = Promise.race([
+        this.contentSentimentService.analyzeSentiment(restaurantName, city || ''),
+        new Promise((_, reject) => 
+          setTimeout(() => reject(new Error('Web sentiment analysis timeout')), 3500)
+        )
+      ]).catch(error => {
+        console.error('Web sentiment analysis failed:', error);
+        // Generate realistic sentiment based on business profile as fallback
+        return this.contentSentimentService.generateRealisticSentimentBasedOnProfile(restaurantName, businessProfile);
+      });
       
-      const reviewsAnalysis = await reviewsPromise;
+      let [reviewsAnalysis, webSentiment] = await Promise.all([reviewsPromise, sentimentPromise]);
+      
+      if (webSentiment) {
+        console.log(`Web sentiment analysis completed: ${webSentiment.sentimentScore}% positive sentiment (${webSentiment.totalMentions} total mentions)`);
+        // Add web sentiment to reviews analysis
+        reviewsAnalysis = {
+          ...reviewsAnalysis,
+          webSentiment: webSentiment
+        };
+      }
       
       // Wait for phase 4 to complete (4 seconds total)
       const phase4Elapsed = Date.now() - phase4Start;

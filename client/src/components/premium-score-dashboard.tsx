@@ -1197,6 +1197,103 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                     </div>
                   </div>
                   
+                  {/* Web Sentiment Analysis Section */}
+                  <div className="bg-white border border-gray-200 rounded-lg p-4">
+                    <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                      <Globe className="w-5 h-5 text-[#5F5FFF]" />
+                      Web Sentiment Analysis
+                    </h3>
+                    {scanResult.reviewsAnalysis?.webSentiment ? (
+                      <div className="space-y-4">
+                        {/* Overall Sentiment Score */}
+                        <div className="text-center">
+                          <div className="text-2xl font-bold text-[#5F5FFF] mb-1">
+                            {scanResult.reviewsAnalysis.webSentiment.sentimentScore}%
+                          </div>
+                          <div className="text-sm text-gray-600 mb-2">
+                            Overall Positive Sentiment
+                          </div>
+                          <div className="text-xs text-gray-500">
+                            Based on {scanResult.reviewsAnalysis.webSentiment.totalMentions} web mentions
+                          </div>
+                        </div>
+
+                        {/* Sentiment Distribution */}
+                        <div className="grid grid-cols-3 gap-3 text-center">
+                          <div className="bg-green-50 border border-green-200 rounded p-2">
+                            <div className="text-lg font-bold text-green-600">
+                              {scanResult.reviewsAnalysis.webSentiment.sentimentDistribution.positive}
+                            </div>
+                            <div className="text-xs text-green-700">Positive</div>
+                          </div>
+                          <div className="bg-gray-50 border border-gray-200 rounded p-2">
+                            <div className="text-lg font-bold text-gray-600">
+                              {scanResult.reviewsAnalysis.webSentiment.sentimentDistribution.neutral}
+                            </div>
+                            <div className="text-xs text-gray-700">Neutral</div>
+                          </div>
+                          <div className="bg-red-50 border border-red-200 rounded p-2">
+                            <div className="text-lg font-bold text-red-600">
+                              {scanResult.reviewsAnalysis.webSentiment.sentimentDistribution.negative}
+                            </div>
+                            <div className="text-xs text-red-700">Negative</div>
+                          </div>
+                        </div>
+
+                        {/* Emotional Reactions */}
+                        <div>
+                          <h4 className="font-semibold text-gray-700 mb-2">Emotional Reactions</h4>
+                          <div className="grid grid-cols-2 gap-2 text-sm">
+                            <div className="flex justify-between">
+                              <span>❤️ Love:</span>
+                              <span>{scanResult.reviewsAnalysis.webSentiment.emotionalReactions.love}</span>
+                            </div>
+                            <div className="flex justify-between">
+                              <span>😊 Happiness:</span>
+                              <span>{scanResult.reviewsAnalysis.webSentiment.emotionalReactions.happiness}</span>
+                            </div>
+                            <div className="flex justify-between">
+                              <span>😠 Anger:</span>
+                              <span>{scanResult.reviewsAnalysis.webSentiment.emotionalReactions.anger}</span>
+                            </div>
+                            <div className="flex justify-between">
+                              <span>😢 Sadness:</span>
+                              <span>{scanResult.reviewsAnalysis.webSentiment.emotionalReactions.sadness}</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Top Domains */}
+                        {scanResult.reviewsAnalysis.webSentiment.topDomains.length > 0 && (
+                          <div>
+                            <h4 className="font-semibold text-gray-700 mb-2">Where You're Mentioned</h4>
+                            <div className="space-y-1 text-sm">
+                              {scanResult.reviewsAnalysis.webSentiment.topDomains.slice(0, 3).map((domain, idx) => (
+                                <div key={idx} className="flex justify-between">
+                                  <span className="text-blue-600">{domain.domain}</span>
+                                  <span>{domain.mentionCount} mentions</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    ) : (
+                      <div className="text-center py-4">
+                        <div className="text-gray-500 mb-2">
+                          <Brain className="w-8 h-8 mx-auto mb-2 text-[#5F5FFF]" />
+                          Web Sentiment Analysis Available
+                        </div>
+                        <div className="text-sm text-gray-600 mb-3">
+                          Analyze your restaurant's reputation across the entire web beyond just Google reviews
+                        </div>
+                        <Badge variant="outline" className="text-[#5F5FFF] border-[#5F5FFF]">
+                          Premium Feature
+                        </Badge>
+                      </div>
+                    )}
+                  </div>
+
                   <div className="pt-4 border-t border-gray-200 space-y-3">
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-gray-600">Overall Rating</span>
@@ -1210,6 +1307,12 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                       <span className="text-sm text-gray-600">Review Volume</span>
                       <span className="font-medium">{scanResult.businessProfile?.totalReviews || 0}</span>
                     </div>
+                    {scanResult.reviewsAnalysis?.webSentiment && (
+                      <div className="flex justify-between items-center">
+                        <span className="text-sm text-gray-600">Web Sentiment</span>
+                        <span className="font-medium text-[#5F5FFF]">{scanResult.reviewsAnalysis.webSentiment.sentimentScore}%</span>
+                      </div>
+                    )}
                   </div>
                 </div>
               )}
