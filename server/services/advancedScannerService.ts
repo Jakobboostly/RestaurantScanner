@@ -1,6 +1,6 @@
 import { GoogleBusinessService } from './googleBusinessService.js';
 import { EnhancedDataForSeoService } from './enhancedDataForSeoService.js';
-import { ZembraTechReviewsService } from './zembraTechReviewsService.js';
+
 import { AIRecommendationService } from './aiRecommendationService.js';
 import { GoogleReviewsService } from './googleReviewsService.js';
 import { SocialMediaDetector } from './socialMediaDetector.js';
@@ -37,7 +37,7 @@ export interface EnhancedScanResult extends ScanResult {
 export class AdvancedScannerService {
   private googleBusinessService: GoogleBusinessService;
   private dataForSeoService: EnhancedDataForSeoService;
-  private zembraReviewsService: ZembraTechReviewsService | null = null;
+
   private aiRecommendationService: AIRecommendationService;
   private googleReviewsService: GoogleReviewsService;
   private socialMediaDetector: SocialMediaDetector;
@@ -52,22 +52,18 @@ export class AdvancedScannerService {
     serpApiKey: string,      // Not used but kept for compatibility
     dataForSeoLogin: string,
     dataForSeoPassword: string,
-    zembraApiKey?: string,
+
     apifyApiKey?: string
   ) {
     this.googleBusinessService = new GoogleBusinessService(googleApiKey);
     this.dataForSeoService = new EnhancedDataForSeoService(dataForSeoLogin, dataForSeoPassword);
     this.aiRecommendationService = new AIRecommendationService();
     this.googleReviewsService = new GoogleReviewsService(googleApiKey);
-    this.socialMediaDetector = new SocialMediaDetector(zembraApiKey);
+    this.socialMediaDetector = new SocialMediaDetector();
     this.enhancedFacebookDetector = new EnhancedFacebookDetector();
     this.enhancedSocialMediaDetector = new EnhancedSocialMediaDetector();
     this.facebookPostsScraperService = new FacebookPostsScraperService(apifyApiKey || '');
     this.serpScreenshotService = new SerpScreenshotService();
-    
-    if (zembraApiKey) {
-      this.zembraReviewsService = new ZembraTechReviewsService(zembraApiKey);
-    }
   }
 
   async scanRestaurantAdvanced(
@@ -1071,7 +1067,6 @@ export class AdvancedScannerService {
   }
 
   private async generateEnhancedReviewsAnalysis(businessProfile?: any, placeId?: string): Promise<any> {
-    let realReviewsData = null;
     let googleReviews = null;
     
     // Get Google Reviews if placeId is available
@@ -1084,57 +1079,32 @@ export class AdvancedScannerService {
       }
     }
     
-    // Try to get real reviews from Zembratech API
-    if (this.zembraReviewsService && businessProfile?.name) {
-      try {
-        realReviewsData = await this.zembraReviewsService.getReviewAnalysis(
-          businessProfile.name,
-          businessProfile.domain,
-          businessProfile.location || businessProfile.address
-        );
-        console.log('Successfully got real reviews data from Zembratech');
-        console.log('Reviews sentiment distribution:', realReviewsData.sentimentDistribution);
-        console.log('Key themes found:', realReviewsData.keyThemes);
-      } catch (error) {
-        console.error('Failed to get real reviews from Zembratech:', error);
-      }
-    }
-    
-    // If we have real reviews data, use it
-    if (realReviewsData) {
+    // Use Google reviews data for analysis (cost-effective, no external APIs)
+    if (googleReviews && googleReviews.reviews.length > 0) {
+      // Calculate sentiment from Google reviews
+      const sentimentAnalysis = this.analyzeSentimentFromGoogleReviews(googleReviews.reviews);
+      
       return {
-        overallScore: realReviewsData.overallScore || 75,
-        totalReviews: realReviewsData.totalReviews || businessProfile?.totalReviews || 0,
-        averageRating: realReviewsData.averageRating || businessProfile?.rating || 0,
-        sentimentBreakdown: realReviewsData.sentimentDistribution ? {
-          positive: Math.round((realReviewsData.sentimentDistribution.positive / realReviewsData.totalReviews) * 100) || 0,
-          neutral: Math.round((realReviewsData.sentimentDistribution.neutral / realReviewsData.totalReviews) * 100) || 0,
-          negative: Math.round((realReviewsData.sentimentDistribution.negative / realReviewsData.totalReviews) * 100) || 0
-        } : {
-          positive: 0,
-          neutral: 0,
-          negative: 0
-        },
-        reviewSources: realReviewsData.reviewSources || [],
-        keyThemes: realReviewsData.keyThemes || [],
-        recentReviews: realReviewsData.recentReviews || [],
-        examples: realReviewsData.examples || {
-          positive: [],
-          neutral: [],
-          negative: []
-        },
+        overallScore: Math.min(businessProfile?.rating * 20 || 75, 100), // Convert 5-star to 100-point scale
+        totalReviews: businessProfile?.totalReviews || googleReviews.reviews.length,
+        averageRating: businessProfile?.rating || googleReviews.averageRating,
+        sentimentBreakdown: sentimentAnalysis.sentimentBreakdown,
+        reviewSources: ['Google Business Profile'],
+        keyThemes: sentimentAnalysis.keyThemes,
+        recentReviews: googleReviews.reviews.slice(0, 5),
+        examples: sentimentAnalysis.examples,
         trends: {
-          ratingTrend: this.calculateRatingTrend(businessProfile),
-          volumeTrend: this.calculateVolumeTrend(businessProfile),
+          ratingTrend: businessProfile?.rating >= 4.0 ? 'positive' : 'stable',
+          volumeTrend: businessProfile?.totalReviews > 50 ? 'increasing' : 'stable',
           responseRate: businessProfile?.responseRate || this.calculateResponseRate(businessProfile),
           averageResponseTime: businessProfile?.averageResponseTime || this.calculateAverageResponseTime(businessProfile)
         },
-        recommendations: this.generateReviewRecommendations(realReviewsData, businessProfile),
-        googleReviews: googleReviews // Include Google Reviews data
+        recommendations: this.generateReviewRecommendations(null, businessProfile),
+        googleReviews: googleReviews
       };
     }
     
-    // Fallback: Use business profile data only (no mock reviews)
+    // Fallback: Use business profile data only (no external API costs)
     return {
       overallScore: this.calculateOverallReviewScore(businessProfile),
       totalReviews: businessProfile?.totalReviews || 0,
@@ -1146,7 +1116,7 @@ export class AdvancedScannerService {
         averageRating: businessProfile?.rating || 0
       }],
       keyThemes: this.extractThemesFromBusinessProfile(businessProfile),
-      recentReviews: [], // No mock reviews
+      recentReviews: [],
       examples: {
         positive: [],
         neutral: [],
@@ -1159,7 +1129,7 @@ export class AdvancedScannerService {
         averageResponseTime: businessProfile?.averageResponseTime || this.calculateAverageResponseTime(businessProfile)
       },
       recommendations: this.generateReviewRecommendations(null, businessProfile),
-      googleReviews: googleReviews // Include Google Reviews data
+      googleReviews: googleReviews
     };
   }
 
@@ -1178,6 +1148,48 @@ export class AdvancedScannerService {
     if (businessProfile.isVerified) score += 10;
     
     return Math.min(100, Math.max(0, score));
+  }
+
+  private analyzeSentimentFromGoogleReviews(reviews: any[]): any {
+    const sentiments = { positive: 0, neutral: 0, negative: 0 };
+    const themes: string[] = [];
+    const examples = { positive: [], neutral: [], negative: [] };
+    
+    for (const review of reviews) {
+      const rating = review.rating || 0;
+      const text = review.text || '';
+      
+      // Basic sentiment classification based on rating
+      if (rating >= 4) {
+        sentiments.positive++;
+        if (examples.positive.length < 3) examples.positive.push(review);
+      } else if (rating >= 3) {
+        sentiments.neutral++;
+        if (examples.neutral.length < 3) examples.neutral.push(review);
+      } else {
+        sentiments.negative++;
+        if (examples.negative.length < 3) examples.negative.push(review);
+      }
+      
+      // Extract basic themes from review text
+      if (text) {
+        if (text.toLowerCase().includes('food')) themes.push('Food Quality');
+        if (text.toLowerCase().includes('service')) themes.push('Service');
+        if (text.toLowerCase().includes('price')) themes.push('Pricing');
+        if (text.toLowerCase().includes('atmosphere')) themes.push('Atmosphere');
+      }
+    }
+    
+    const total = reviews.length;
+    return {
+      sentimentBreakdown: {
+        positive: Math.round((sentiments.positive / total) * 100),
+        neutral: Math.round((sentiments.neutral / total) * 100),
+        negative: Math.round((sentiments.negative / total) * 100)
+      },
+      keyThemes: [...new Set(themes)].slice(0, 5),
+      examples
+    };
   }
 
   private calculateSentimentFromRating(rating: number): { positive: number; neutral: number; negative: number } {

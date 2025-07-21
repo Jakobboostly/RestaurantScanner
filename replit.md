@@ -76,6 +76,13 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 21, 2025. Removed costly sentiment analysis API to reduce expenses:
+  - Completely removed Zembratech sentiment analysis service that was costing money without providing value
+  - Kept DataForSEO for essential SEO and keyword analysis (cost-effective)
+  - Enhanced Google Reviews analysis to provide sentiment data at no additional cost
+  - System now uses only Google Places API for review data - zero external sentiment API costs
+  - Added basic sentiment analysis based on Google review ratings and text patterns
+  - Maintained all review analysis functionality while eliminating unnecessary API expenses
 - July 16, 2025. Fixed three critical user-reported issues for improved functionality:
   - Removed "SERP Features" from search performance section per user request for cleaner interface
   - Enhanced Facebook scanner to check Google Business Profile social media fields, editorial summaries, and reviews
