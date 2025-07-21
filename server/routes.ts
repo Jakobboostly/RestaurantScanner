@@ -274,6 +274,70 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Restaurant search screenshot endpoint
+  app.post("/api/screenshot/restaurant-search", async (req, res) => {
+    try {
+      const { placeId, restaurantName } = req.body;
+      
+      if (!placeId) {
+        return res.status(400).json({ error: "Place ID is required" });
+      }
+      
+      if (!GOOGLE_API_KEY) {
+        return res.status(500).json({ 
+          error: "Google Places API key not configured. Please configure API key to capture restaurant search screenshots." 
+        });
+      }
+
+      console.log('Starting restaurant search screenshot for place ID:', placeId);
+      
+      // Get business profile to extract cuisine type and location
+      const businessProfile = await googleBusinessService.getBusinessProfile(placeId);
+      
+      // Extract cuisine type and location for search query
+      const cuisineType = dataForSeoScannerService ? 
+        (dataForSeoScannerService as any).extractCuisineType(businessProfile) : 
+        'restaurant';
+      
+      const locationData = businessProfile?.address ? 
+        (dataForSeoScannerService as any).extractCityFromAddress(businessProfile.address) : 
+        { city: 'Unknown', state: 'Unknown' };
+
+      console.log(`🔍 Capturing restaurant search screenshot for "${cuisineType}" in "${locationData.city}"`);
+      
+      // Capture screenshot
+      const screenshotResult = await restaurantScreenshotService.searchWithCuisineType(
+        cuisineType, 
+        locationData.city
+      );
+
+      if (screenshotResult.success && screenshotResult.screenshotBase64) {
+        const result = {
+          searchQuery: `${cuisineType} ${locationData.city}`,
+          screenshotBase64: screenshotResult.screenshotBase64,
+          timestamp: screenshotResult.timestamp,
+          success: true,
+          screenshotSize: Math.round(screenshotResult.screenshotBase64.length / 1024) + 'KB'
+        };
+        
+        console.log(`✅ Restaurant search screenshot captured: ${result.screenshotSize}`);
+        return res.json(result);
+      } else {
+        console.log('❌ Restaurant search screenshot failed:', screenshotResult.error);
+        return res.status(500).json({
+          error: screenshotResult.error || 'Screenshot capture failed',
+          success: false
+        });
+      }
+      
+    } catch (error) {
+      console.error("Restaurant search screenshot error:", error);
+      return res.status(500).json({ 
+        error: error instanceof Error ? error.message : 'Restaurant search screenshot failed' 
+      });
+    }
+  });
+
   // Legacy advanced scan endpoint (disabled)
   app.post("/api/scan/advanced", async (req, res) => {
     return res.status(503).json({ 

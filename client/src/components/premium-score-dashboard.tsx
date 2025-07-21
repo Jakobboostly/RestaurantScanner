@@ -35,6 +35,14 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { ScanResult } from "@shared/schema";
 
+interface RestaurantSearchScreenshot {
+  searchQuery: string;
+  screenshotBase64: string;
+  timestamp: string;
+  success: boolean;
+  screenshotSize?: string;
+}
+
 interface PremiumScoreDashboardProps {
   scanResult: ScanResult;
   restaurantName: string;
@@ -67,6 +75,45 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
   });
   
   const [activeTab, setActiveTab] = useState<'search' | 'social' | 'local' | 'website' | 'reviews'>('search');
+  const [restaurantSearchScreenshot, setRestaurantSearchScreenshot] = useState<RestaurantSearchScreenshot | null>(null);
+  const [loadingScreenshot, setLoadingScreenshot] = useState(false);
+
+  // Function to fetch restaurant search screenshot
+  const fetchRestaurantSearchScreenshot = async () => {
+    if (!scanResult.domain) return;
+    
+    setLoadingScreenshot(true);
+    try {
+      const response = await fetch('/api/screenshot/restaurant-search', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          domain: scanResult.domain,
+          restaurantName: restaurantName
+        }),
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        if (result.success) {
+          setRestaurantSearchScreenshot(result);
+        }
+      }
+    } catch (error) {
+      console.error('Failed to fetch restaurant search screenshot:', error);
+    } finally {
+      setLoadingScreenshot(false);
+    }
+  };
+
+  // Fetch restaurant search screenshot when search tab becomes active
+  useEffect(() => {
+    if (activeTab === 'search' && !restaurantSearchScreenshot && !loadingScreenshot) {
+      fetchRestaurantSearchScreenshot();
+    }
+  }, [activeTab, restaurantSearchScreenshot, loadingScreenshot]);
 
   // Calculate authentic scores from scan data
   const calculateScores = (): ScoreData => {
@@ -594,23 +641,26 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                   {/* Right Side - SERP Screenshots */}
                   <div className="space-y-4">
                     {/* Restaurant Search Screenshot */}
-                    {scanResult.restaurantSearchScreenshot && scanResult.restaurantSearchScreenshot.success && (
-                      <div className="bg-white border border-gray-200 rounded-lg p-4">
-                        <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
-                          <Search className="w-5 h-5 text-[#5F5FFF]" />
-                          Restaurant Search Results
-                        </h3>
-                        
+                    <div className="bg-white border border-gray-200 rounded-lg p-4">
+                      <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                        <Search className="w-5 h-5 text-[#5F5FFF]" />
+                        Restaurant Search Results
+                      </h3>
+                      
+                      {loadingScreenshot ? (
+                        <div className="border border-gray-200 rounded-lg p-8 text-center">
+                          <div className="animate-spin w-8 h-8 border-4 border-[#5F5FFF] border-t-transparent rounded-full mx-auto mb-3"></div>
+                          <p className="text-sm text-gray-600">Capturing restaurant search screenshot...</p>
+                        </div>
+                      ) : restaurantSearchScreenshot && restaurantSearchScreenshot.success ? (
                         <div className="border border-gray-200 rounded-lg p-3">
                           <div className="flex items-center justify-between mb-3">
                             <div>
                               <h4 className="font-medium text-sm text-gray-900">
-                                "{scanResult.restaurantSearchScreenshot.searchQuery}"
+                                "{restaurantSearchScreenshot.searchQuery}"
                               </h4>
                               <p className="text-xs text-gray-500">
-                                {scanResult.restaurantSearchScreenshot.timestamp ? 
-                                  new Date(scanResult.restaurantSearchScreenshot.timestamp).toLocaleString() : 
-                                  'Recent search'}
+                                {restaurantSearchScreenshot.screenshotSize} • {new Date(restaurantSearchScreenshot.timestamp).toLocaleTimeString()}
                               </p>
                             </div>
                             <div className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-medium">
@@ -621,8 +671,8 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                           {/* Screenshot */}
                           <div className="relative">
                             <img
-                              src={`data:image/png;base64,${scanResult.restaurantSearchScreenshot.screenshotBase64}`}
-                              alt={`Google search results for "${scanResult.restaurantSearchScreenshot.searchQuery}"`}
+                              src={restaurantSearchScreenshot.screenshotBase64}
+                              alt={`Google search results for "${restaurantSearchScreenshot.searchQuery}"`}
                               className="w-full h-auto rounded border border-gray-300 shadow-sm"
                             />
                           </div>
@@ -633,12 +683,23 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                               Restaurant Search Analysis
                             </p>
                             <p className="text-xs text-purple-700">
-                              This shows how your restaurant appears when customers search for "{scanResult.restaurantSearchScreenshot.searchQuery}" on Google.
+                              This shows how your restaurant appears when customers search for "{restaurantSearchScreenshot.searchQuery}" on Google.
                             </p>
                           </div>
                         </div>
-                      </div>
-                    )}
+                      ) : (
+                        <div className="border border-gray-200 rounded-lg p-8 text-center">
+                          <Search className="w-12 h-12 mx-auto mb-3 text-gray-300" />
+                          <p className="text-sm text-gray-600 mb-2">Restaurant search screenshot not available</p>
+                          <button 
+                            onClick={fetchRestaurantSearchScreenshot}
+                            className="text-[#5F5FFF] text-sm hover:underline"
+                          >
+                            Try again
+                          </button>
+                        </div>
+                      )}
+                    </div>
 
                     <div className="bg-white border border-gray-200 rounded-lg p-4">
                       <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">

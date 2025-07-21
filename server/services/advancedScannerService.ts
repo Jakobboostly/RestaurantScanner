@@ -89,7 +89,6 @@ export class AdvancedScannerService {
     // Initialize variables that will be used throughout the scan
     let mobileExperience: any;
     let desktopResult: any;
-    let restaurantSearchScreenshot: any = null;
     const TOTAL_PHASES = 6;
     const MAX_SCAN_TIME = PHASE_DURATION * TOTAL_PHASES; // 24 seconds total
     
@@ -185,7 +184,7 @@ export class AdvancedScannerService {
       const phase3Start = Date.now();
       onProgress({ progress: 42, status: 'Checking search rankings...' });
       
-      // Start keyword research and restaurant search screenshot simultaneously
+      // Start keyword research
       const keywordPromise = Promise.race([
         this.getOptimizedKeywordData(restaurantName, businessProfile),
         new Promise((_, reject) => 
@@ -195,47 +194,8 @@ export class AdvancedScannerService {
         console.error('Keyword research failed:', error);
         return this.generateRestaurantKeywords(restaurantName, businessProfile);
       });
-
-      // Extract cuisine type and location for screenshot
-      const cuisineType = this.extractCuisineType(businessProfile);
-      const locationData = businessProfile?.address ? 
-        this.extractCityFromAddress(businessProfile.address) : 
-        { city: 'Unknown', state: 'Unknown' };
-
-      console.log(`🔍 Phase 3: Capturing restaurant search screenshot for "${cuisineType}" in "${locationData.city}"`);
       
-      // Restaurant search screenshot promise
-      const restaurantScreenshotPromise = Promise.race([
-        this.restaurantSearchScreenshotService.searchWithCuisineType(cuisineType, locationData.city),
-        new Promise((_, reject) => 
-          setTimeout(() => reject(new Error('Restaurant screenshot timeout')), 3500)
-        )
-      ]).catch(error => {
-        console.error('Restaurant search screenshot failed:', error);
-        return { 
-          success: false, 
-          error: error.message, 
-          timestamp: new Date().toISOString() 
-        };
-      });
-      
-      const [keywordData, restaurantScreenshotResult] = await Promise.all([
-        keywordPromise,
-        restaurantScreenshotPromise
-      ]);
-
-      // Store restaurant search screenshot result for later use in the result
-      if (restaurantScreenshotResult.success && restaurantScreenshotResult.screenshotBase64) {
-        restaurantSearchScreenshot = {
-          searchQuery: `${cuisineType} ${locationData.city}`,
-          screenshotBase64: restaurantScreenshotResult.screenshotBase64,
-          timestamp: restaurantScreenshotResult.timestamp,
-          success: true
-        };
-        console.log(`✅ Restaurant search screenshot captured: ${(restaurantScreenshotResult.screenshotBase64.length / 1024).toFixed(2)}KB`);
-      } else {
-        console.log('❌ Restaurant search screenshot failed:', restaurantScreenshotResult.error);
-      }
+      const keywordData = await keywordPromise;
       
       // Wait for phase 3 to complete (4 seconds total)
       const phase3Elapsed = Date.now() - phase3Start;
@@ -421,6 +381,7 @@ export class AdvancedScannerService {
 
       // Final processing
       onProgress({ progress: 100, status: 'Finalizing analysis...' });
+      
       const enhancedResult = await this.generateEnhancedReport(
         domain,
         restaurantName,
@@ -434,7 +395,8 @@ export class AdvancedScannerService {
         reviewsAnalysis,
         socialMediaLinks,
         profileAnalysis,
-        serpScreenshots
+        serpScreenshots,
+        null // Remove restaurant search screenshot for now
       );
 
       const scanDuration = Date.now() - scanStartTime;
@@ -467,7 +429,8 @@ export class AdvancedScannerService {
     reviewsAnalysis: any,
     socialMediaLinks: any,
     profileAnalysis: any = null,
-    serpScreenshots: any[] = []
+    serpScreenshots: any[] = [],
+    restaurantSearchScreenshot: any = null
   ): EnhancedScanResult {
     // Calculate enhanced scores
     const businessScore = this.calculateBusinessScore(businessProfile);
