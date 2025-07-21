@@ -52,7 +52,6 @@ interface ScoreData {
   search: number;
   social: number;
   local: number;
-  website: number;
   reviews: number;
   overall: number;
 }
@@ -61,7 +60,6 @@ interface AIExplanations {
   search: string;
   social: string;
   local: string;
-  website: string;
   reviews: string;
 }
 
@@ -70,11 +68,10 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
     search: 'Analyzing search performance...',
     social: 'Analyzing social presence...',
     local: 'Analyzing local SEO...',
-    website: 'Analyzing website performance...',
     reviews: 'Analyzing reviews and reputation...'
   });
   
-  const [activeTab, setActiveTab] = useState<'search' | 'social' | 'local' | 'website' | 'reviews'>('search');
+  const [activeTab, setActiveTab] = useState<'search' | 'social' | 'local' | 'reviews'>('search');
 
   // Function to fetch restaurant search screenshot
   const fetchRestaurantSearchScreenshot = async () => {
@@ -165,23 +162,19 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
       (businessProfile.totalReviews ? Math.min(businessProfile.totalReviews / 10, 30) : 0)
     );
     
-    // Website Score (based on performance + mobile)
-    const websiteScore = Math.round(((scanResult.performance || 0) + (scanResult.mobile || 0)) / 2);
-    
     // Reviews Score (based on rating and review count)
     const reviewsScore = Math.round(
       (businessProfile.rating || 0) * 15 + 
       (businessProfile.totalReviews ? Math.min(businessProfile.totalReviews / 20, 25) : 0)
     );
     
-    // Overall Score (average of all 5)
-    const overall = Math.round((searchScore + socialScore + localScore + websiteScore + reviewsScore) / 5);
+    // Overall Score (average of all 4 categories)
+    const overall = Math.round((searchScore + socialScore + localScore + reviewsScore) / 4);
     
     return {
       search: Math.min(searchScore, 100),
       social: Math.min(socialScore, 100),
       local: Math.min(localScore, 100),
-      website: Math.min(websiteScore, 100),
       reviews: Math.min(reviewsScore, 100),
       overall: Math.min(overall, 100)
     };
@@ -258,20 +251,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
         }
         break;
         
-      case 'website':
-        if (scanResult.performance < 75) {
-          steps.push('⚡ Boostly SEO: Improve website speed & mobile');
-          steps.push('🔧 Boostly SEO: Optimize images & code');
-          steps.push('💬 Boostly Text: Direct traffic to faster pages');
-        } else {
-          steps.push('🎯 Boostly SEO: Maintain excellent performance');
-          steps.push('📱 Boostly Social: Highlight fast website');
-        }
-        if (scanResult.mobile < 80) {
-          steps.push('📱 Boostly Social: Drive mobile traffic campaigns');
-        }
-        break;
-        
+
       case 'reviews':
         if (scanResult.reviewsAnalysis?.sentiment?.positive < 80) {
           steps.push('📧 Boostly Text: Send satisfaction surveys');
@@ -459,12 +439,11 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
           className="space-y-6"
         >
           {/* Tab Headers */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               { key: 'search', title: 'Search', icon: Search, color: 'from-[#5F5FFF] to-[#7375FD]', score: scores.search },
               { key: 'social', title: 'Social', icon: Users, color: 'from-[#16A34A] to-[#4ADE80]', score: scores.social },
               { key: 'local', title: 'Local', icon: MapPin, color: 'from-[#F59E0B] to-[#FCD34D]', score: scores.local },
-              { key: 'website', title: 'Website', icon: Globe, color: 'from-[#9090FD] to-[#7375FD]', score: scores.website },
               { key: 'reviews', title: 'Reviews', icon: Star, color: 'from-[#FCD34D] to-[#F59E0B]', score: scores.reviews }
             ].map((tab) => (
               <motion.div
@@ -535,7 +514,6 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
               activeTab === 'search' ? 'from-[#5F5FFF] to-[#7375FD]' :
               activeTab === 'social' ? 'from-[#16A34A] to-[#4ADE80]' :
               activeTab === 'local' ? 'from-[#F59E0B] to-[#FCD34D]' :
-              activeTab === 'website' ? 'from-[#9090FD] to-[#7375FD]' :
               'from-[#FCD34D] to-[#F59E0B]'
             } text-white`}>
               <CardTitle className="flex items-center gap-2">
@@ -555,12 +533,6 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                   <>
                     <MapPin className="w-5 h-5" />
                     Local SEO
-                  </>
-                )}
-                {activeTab === 'website' && (
-                  <>
-                    <Globe className="w-5 h-5" />
-                    Website Performance
                   </>
                 )}
                 {activeTab === 'reviews' && (
@@ -1074,99 +1046,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                 </div>
               )}
 
-              {/* Website Tab Content */}
-              {activeTab === 'website' && (
-                <div className="space-y-6">
-                  {/* Where You're Going Wrong */}
-                  <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
-                    <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
-                      <AlertCircle className="w-5 h-5 text-[#5F5FFF]" />
-                      Where You're Going Wrong
-                    </h3>
-                    <div className="space-y-3">
-                      {/* High Priority Issues */}
-                      {scores.website < 50 && (
-                        <div className="bg-[#5F5FFF]/10 border border-[#5F5FFF]/30 rounded p-3">
-                          <span className="text-xs font-bold text-[#5F5FFF] bg-[#5F5FFF]/20 px-2 py-1 rounded">HIGH PRIORITY</span>
-                          <ul className="mt-2 text-sm text-gray-700 space-y-1">
-                            <li>• Website loads too slowly - customers are leaving</li>
-                            <li>• Mobile experience is broken - 60% of orders are mobile</li>
-                            <li>• Missing online ordering system</li>
-                          </ul>
-                        </div>
-                      )}
-                      
-                      {/* Medium Priority Issues */}
-                      {scores.website >= 50 && scores.website < 75 && (
-                        <div className="bg-[#7375FD]/10 border border-[#7375FD]/30 rounded p-3">
-                          <span className="text-xs font-bold text-[#7375FD] bg-[#7375FD]/20 px-2 py-1 rounded">MEDIUM PRIORITY</span>
-                          <ul className="mt-2 text-sm text-gray-700 space-y-1">
-                            <li>• Website performance could be faster</li>
-                            <li>• Mobile layout needs optimization</li>
-                            <li>• Missing key restaurant website features</li>
-                          </ul>
-                        </div>
-                      )}
-                      
-                      {/* Low Priority Issues */}
-                      {scores.website >= 75 && (
-                        <div className="bg-[#9090FD]/10 border border-[#9090FD]/30 rounded p-3">
-                          <span className="text-xs font-bold text-[#9090FD] bg-[#9090FD]/20 px-2 py-1 rounded">LOW PRIORITY</span>
-                          <ul className="mt-2 text-sm text-gray-700 space-y-1">
-                            <li>• Implement progressive web app features for better mobile experience</li>
-                            <li>• Add schema markup for better search engine understanding</li>
-                            <li>• Optimize images and implement lazy loading for faster load times</li>
-                          </ul>
-                        </div>
-                      )}
 
-                    </div>
-                  </div>
-
-                  {/* How Boostly Can Solve It */}
-                  <div className="bg-[#5F5FFF]/5 border border-[#5F5FFF]/20 rounded-lg p-4">
-                    <h3 className="font-bold text-[#5F5FFF] mb-3 flex items-center gap-2">
-                      <Zap className="w-5 h-5" />
-                      How Boostly Can Solve It For You
-                    </h3>
-                    <div className="space-y-3">
-                      <div className="bg-gradient-to-r from-[#5F5FFF] to-[#7375FD] text-white rounded p-3">
-                        <h4 className="font-semibold mb-2">🚀 Boostly Website Optimization</h4>
-                        <ul className="text-sm space-y-1">
-                          <li>• Lightning-fast website that loads in under 2 seconds</li>
-                          <li>• Mobile-first design optimized for food ordering</li>
-                          <li>• Integrated online ordering and payment system</li>
-                          <li>• SEO-optimized for local restaurant searches</li>
-                        </ul>
-                      </div>
-                      
-                      <div className="bg-gradient-to-r from-[#7375FD] to-[#9090FD] text-white rounded p-3">
-                        <h4 className="font-semibold mb-2">📱 Boostly Text Marketing</h4>
-                        <ul className="text-sm space-y-1">
-                          <li>• Drive website traffic with targeted promotions</li>
-                          <li>• Abandoned cart recovery for online orders</li>
-                          <li>• Direct customers to specific menu items</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="pt-4 border-t border-gray-200 space-y-3">
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">Performance Score</span>
-                      <span className="font-bold text-lg text-[#9090FD]">{scanResult.performance || 0}/100</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">Mobile Score</span>
-                      <span className="font-medium">{scanResult.mobile || 0}/100</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">Domain Authority</span>
-                      <span className="font-medium">{scanResult.domainAuthority || 0}</span>
-                    </div>
-                  </div>
-                </div>
-              )}
 
               {/* Reviews Tab Content */}
               {activeTab === 'reviews' && (
