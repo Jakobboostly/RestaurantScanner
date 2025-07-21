@@ -145,36 +145,131 @@ export class EnhancedSocialMediaDetector {
         /(?:https?:\/\/)?(?:www\.)?linkedin\.com\/in\/([a-zA-Z0-9\._-]+)/gi
       ];
 
-      // Search through all text content
+      // Enhanced detection: Look for clickable social media icons with href attributes
+      console.log('🔍 Enhanced social media detection: Looking for clickable social icons...');
+
+      // Check for Facebook icons with clickable links
+      if (!socialLinks.facebook) {
+        const facebookSelectors = [
+          'a[href*="facebook.com"]',
+          'a i.fab.fa-facebook, a i.fab.fa-facebook-f',
+          'a[class*="facebook"]',
+          'a svg[data-icon="facebook"]',
+          'a use[href*="facebook"]',
+          'a use[*|href*="facebook"]'
+        ];
+
+        for (const selector of facebookSelectors) {
+          const $link = $(selector).first();
+          if ($link.length) {
+            const href = $link.attr('href');
+            if (href && href.includes('facebook.com')) {
+              const cleanUrl = this.cleanSocialUrl(href, 'facebook');
+              if (cleanUrl && this.isValidFacebookUrl(cleanUrl)) {
+                socialLinks.facebook = cleanUrl;
+                console.log('✅ Facebook URL extracted from clickable icon:', cleanUrl);
+                break;
+              }
+            }
+          }
+        }
+
+        // Also check for clickable elements containing Facebook icons
+        const facebookIconElements = $('i.fab.fa-facebook, i.fab.fa-facebook-f, svg use[*|href*="facebook"], use[href*="facebook"]');
+        facebookIconElements.each((_, element) => {
+          const $parent = $(element).closest('a[href]');
+          if ($parent.length) {
+            const href = $parent.attr('href');
+            if (href && href.includes('facebook.com')) {
+              const cleanUrl = this.cleanSocialUrl(href, 'facebook');
+              if (cleanUrl && this.isValidFacebookUrl(cleanUrl)) {
+                socialLinks.facebook = cleanUrl;
+                console.log('✅ Facebook URL found from parent link of icon:', cleanUrl);
+                return false; // Break out of each loop
+              }
+            }
+          }
+        });
+      }
+
+      // Check for Instagram icons with clickable links
+      if (!socialLinks.instagram) {
+        const instagramSelectors = [
+          'a[href*="instagram.com"]',
+          'a i.fab.fa-instagram',
+          'a[class*="instagram"]',
+          'a svg[data-icon="instagram"]',
+          'a use[href*="instagram"]',
+          'a use[*|href*="instagram"]'
+        ];
+
+        for (const selector of instagramSelectors) {
+          const $link = $(selector).first();
+          if ($link.length) {
+            const href = $link.attr('href');
+            if (href && href.includes('instagram.com')) {
+              const cleanUrl = this.cleanSocialUrl(href, 'instagram');
+              if (cleanUrl && this.isValidInstagramUrl(cleanUrl)) {
+                socialLinks.instagram = cleanUrl;
+                console.log('✅ Instagram URL extracted from clickable icon:', cleanUrl);
+                break;
+              }
+            }
+          }
+        }
+
+        // Also check for clickable elements containing Instagram icons
+        const instagramIconElements = $('i.fab.fa-instagram, svg use[*|href*="instagram"], use[href*="instagram"]');
+        instagramIconElements.each((_, element) => {
+          const $parent = $(element).closest('a[href]');
+          if ($parent.length) {
+            const href = $parent.attr('href');
+            if (href && href.includes('instagram.com')) {
+              const cleanUrl = this.cleanSocialUrl(href, 'instagram');
+              if (cleanUrl && this.isValidInstagramUrl(cleanUrl)) {
+                socialLinks.instagram = cleanUrl;
+                console.log('✅ Instagram URL found from parent link of icon:', cleanUrl);
+                return false; // Break out of each loop
+              }
+            }
+          }
+        });
+      }
+
+      // Search through all text content for additional patterns
       const pageText = response.data;
       const htmlText = $.html();
 
-      // Search for Facebook links
-      for (const pattern of facebookPatterns) {
-        const matches = [...pageText.matchAll(pattern)];
-        for (const match of matches) {
-          const url = this.cleanSocialUrl(match[0], 'facebook');
-          if (url && this.isValidFacebookUrl(url)) {
-            socialLinks.facebook = url;
-            console.log('Facebook detected via pattern:', url);
-            break;
+      // Search for Facebook links in text content
+      if (!socialLinks.facebook) {
+        for (const pattern of facebookPatterns) {
+          const matches = [...pageText.matchAll(pattern)];
+          for (const match of matches) {
+            const url = this.cleanSocialUrl(match[0], 'facebook');
+            if (url && this.isValidFacebookUrl(url)) {
+              socialLinks.facebook = url;
+              console.log('Facebook detected via text pattern:', url);
+              break;
+            }
           }
+          if (socialLinks.facebook) break;
         }
-        if (socialLinks.facebook) break;
       }
 
-      // Search for Instagram links
-      for (const pattern of instagramPatterns) {
-        const matches = [...pageText.matchAll(pattern)];
-        for (const match of matches) {
-          const url = this.cleanSocialUrl(match[0], 'instagram');
-          if (url && this.isValidInstagramUrl(url)) {
-            socialLinks.instagram = url;
-            console.log('Instagram detected via pattern:', url);
-            break;
+      // Search for Instagram links in text content
+      if (!socialLinks.instagram) {
+        for (const pattern of instagramPatterns) {
+          const matches = [...pageText.matchAll(pattern)];
+          for (const match of matches) {
+            const url = this.cleanSocialUrl(match[0], 'instagram');
+            if (url && this.isValidInstagramUrl(url)) {
+              socialLinks.instagram = url;
+              console.log('Instagram detected via text pattern:', url);
+              break;
+            }
           }
+          if (socialLinks.instagram) break;
         }
-        if (socialLinks.instagram) break;
       }
 
       // Search for Twitter links

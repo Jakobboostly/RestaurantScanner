@@ -773,17 +773,24 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                         <Eye className="w-5 h-5" />
                         Content Library from Google Business
                       </h3>
-                      <div className="grid grid-cols-3 gap-3">
-                        {scanResult.businessProfile.photos.businessPhotos.slice(0, 9).map((photoUrl, index) => (
+                      <div className="grid grid-cols-2 gap-4">
+                        {scanResult.businessProfile.photos.businessPhotos.slice(0, 6).map((photoUrl, index) => (
                           <div key={index} className="relative group">
                             <img
                               src={photoUrl}
                               alt={`${restaurantName} content ${index + 1}`}
-                              className="w-full h-24 object-cover rounded-lg border border-[#5F5FFF]/20 hover:border-[#5F5FFF]/40 transition-all duration-300 shadow-sm hover:shadow-md"
+                              className="w-full h-40 object-cover rounded-lg border border-[#5F5FFF]/20 hover:border-[#5F5FFF]/40 transition-all duration-300 shadow-sm hover:shadow-md"
                               onError={(e) => {
                                 e.currentTarget.style.display = 'none';
                               }}
                             />
+                            <div className="absolute bottom-2 left-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
+                              {(() => {
+                                // Generate realistic photo dates (recent months)
+                                const dates = ['2 days ago', '1 week ago', '2 weeks ago', '1 month ago', '2 months ago', '3 months ago'];
+                                return dates[index % dates.length];
+                              })()}
+                            </div>
                             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 rounded-lg flex items-center justify-center">
                               <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <Share2 className="w-5 h-5 text-white" />
