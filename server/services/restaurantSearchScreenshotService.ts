@@ -74,11 +74,19 @@ export class RestaurantSearchScreenshotService {
       await searchBox.sendKeys(Key.RETURN);
       console.log('✅ Search query submitted');
 
-      // Wait for search results to load
-      await driver.wait(
-        until.elementLocated(By.id('search')),
-        10000
-      );
+      // Wait for search results to load - try multiple selectors
+      try {
+        await driver.wait(
+          until.elementLocated(By.css('#search, .g, [data-ved], #rso')),
+          10000
+        );
+      } catch {
+        // Fallback: just wait for page to be ready
+        await driver.wait(
+          until.elementLocated(By.css('body')),
+          5000
+        );
+      }
 
       // Wait a bit more for dynamic content to load
       await driver.sleep(3000);

@@ -277,10 +277,11 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Restaurant search screenshot endpoint
   app.post("/api/screenshot/restaurant-search", async (req, res) => {
     try {
-      const { placeId, restaurantName } = req.body;
+      const { placeId, restaurantName, domain, searchQuery, location, cuisineType } = req.body;
       
-      if (!placeId) {
-        return res.status(400).json({ error: "Place ID is required" });
+      // Support multiple input formats for flexibility
+      if (!placeId && !searchQuery && !restaurantName) {
+        return res.status(400).json({ error: "Place ID, search query, or restaurant name is required" });
       }
       
       if (!GOOGLE_API_KEY) {
@@ -289,31 +290,40 @@ export async function registerRoutes(app: Express): Promise<Server> {
         });
       }
 
-      console.log('Starting restaurant search screenshot for place ID:', placeId);
+      let searchQueryToUse = searchQuery;
+      let locationToUse = location;
       
-      // Get business profile to extract cuisine type and location
-      const businessProfile = await googleBusinessService.getBusinessProfile(placeId);
+      // If we have a restaurant name but no specific search query, use restaurant search
+      if (!searchQueryToUse && restaurantName) {
+        searchQueryToUse = `${restaurantName} restaurant`;
+        console.log(`🔍 Using restaurant name for search: "${searchQueryToUse}"`);
+      }
       
-      // Extract cuisine type and location for search query
-      const cuisineType = dataForSeoScannerService ? 
-        (dataForSeoScannerService as any).extractCuisineType(businessProfile) : 
-        'restaurant';
-      
-      const locationData = businessProfile?.address ? 
-        (dataForSeoScannerService as any).extractCityFromAddress(businessProfile.address) : 
-        { city: 'Unknown', state: 'Unknown' };
+      // If we have a placeId, get business details for more accurate search
+      if (placeId && GOOGLE_API_KEY) {
+        console.log('Getting business profile for place ID:', placeId);
+        const businessProfile = await googleBusinessService.getBusinessProfile(placeId);
+        
+        const extractedCuisine = dataForSeoScannerService ? 
+          (dataForSeoScannerService as any).extractCuisineType(businessProfile) : 
+          'restaurant';
+        
+        const locationData = businessProfile?.address ? 
+          (dataForSeoScannerService as any).extractCityFromAddress(businessProfile.address) : 
+          { city: 'Unknown', state: 'Unknown' };
 
-      console.log(`🔍 Capturing restaurant search screenshot for "${cuisineType}" in "${locationData.city}"`);
+        searchQueryToUse = `${extractedCuisine} ${locationData.city}`;
+        console.log(`🔍 Capturing restaurant search screenshot for "${searchQueryToUse}"`);
+      }
       
-      // Capture screenshot
-      const screenshotResult = await restaurantScreenshotService.searchWithCuisineType(
-        cuisineType, 
-        locationData.city
-      );
+      // Capture screenshot with the determined search query
+      const screenshotResult = searchQueryToUse ? 
+        await restaurantScreenshotService.searchRestaurantsAndScreenshot(searchQueryToUse) :
+        await restaurantScreenshotService.searchRestaurantsAndScreenshot();
 
       if (screenshotResult.success && screenshotResult.screenshotBase64) {
         const result = {
-          searchQuery: `${cuisineType} ${locationData.city}`,
+          searchQuery: searchQueryToUse || 'restaurants near me',
           screenshotBase64: screenshotResult.screenshotBase64,
           timestamp: screenshotResult.timestamp,
           success: true,

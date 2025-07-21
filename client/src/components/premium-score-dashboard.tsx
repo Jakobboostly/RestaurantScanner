@@ -640,20 +640,20 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
 
                   {/* Right Side - SERP Screenshots */}
                   <div className="space-y-4">
-                    {/* Restaurant Search Screenshot */}
                     <div className="bg-white border border-gray-200 rounded-lg p-4">
                       <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
                         <Search className="w-5 h-5 text-[#5F5FFF]" />
-                        Restaurant Search Results
+                        Google Search Rankings
                       </h3>
-                      
+
+                      {/* Restaurant Search Screenshot */}
                       {loadingScreenshot ? (
-                        <div className="border border-gray-200 rounded-lg p-8 text-center">
+                        <div className="border border-gray-200 rounded-lg p-8 text-center mb-4">
                           <div className="animate-spin w-8 h-8 border-4 border-[#5F5FFF] border-t-transparent rounded-full mx-auto mb-3"></div>
                           <p className="text-sm text-gray-600">Capturing restaurant search screenshot...</p>
                         </div>
                       ) : restaurantSearchScreenshot && restaurantSearchScreenshot.success ? (
-                        <div className="border border-gray-200 rounded-lg p-3">
+                        <div className="border border-gray-200 rounded-lg p-3 mb-4">
                           <div className="flex items-center justify-between mb-3">
                             <div>
                               <h4 className="font-medium text-sm text-gray-900">
@@ -688,7 +688,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                           </div>
                         </div>
                       ) : (
-                        <div className="border border-gray-200 rounded-lg p-8 text-center">
+                        <div className="border border-gray-200 rounded-lg p-8 text-center mb-4">
                           <Search className="w-12 h-12 mx-auto mb-3 text-gray-300" />
                           <p className="text-sm text-gray-600 mb-2">Restaurant search screenshot not available</p>
                           <button 
@@ -699,13 +699,6 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                           </button>
                         </div>
                       )}
-                    </div>
-
-                    <div className="bg-white border border-gray-200 rounded-lg p-4">
-                      <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
-                        <Search className="w-5 h-5 text-[#5F5FFF]" />
-                        Google Search Rankings
-                      </h3>
                       
                       {scanResult.serpScreenshots && scanResult.serpScreenshots.length > 0 ? (
                         <div className="space-y-4">
