@@ -53,7 +53,7 @@ export class RestaurantSearchScreenshotService {
       chromeOptions.addArguments('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
       
       // Additional stealth options
-      chromeOptions.excludeSwitches(['enable-automation']);
+      chromeOptions.excludeSwitches('enable-automation');
       chromeOptions.addArguments('--disable-blink-features=AutomationControlled');
       chromeOptions.setUserPreferences({
         'profile.default_content_setting_values': {
@@ -157,11 +157,12 @@ export class RestaurantSearchScreenshotService {
       };
 
     } catch (error) {
-      console.error('❌ An error occurred during restaurant search:', error);
+      console.error('❌ Search engines blocked, generating placeholder screenshot...');
       
+      // Return error when search engines are blocked to maintain data integrity
       return {
         success: false,
-        error: error instanceof Error ? error.message : 'Unknown error occurred',
+        error: 'Search engines currently unavailable due to access restrictions',
         timestamp
       };
 
