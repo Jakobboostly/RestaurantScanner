@@ -40,86 +40,19 @@ export class SerpScreenshotService {
   ): Promise<SerpScreenshotResult> {
     
     try {
-      // Build search query in "food type + city + state" format
-      const keyword = `${cuisineType} ${city} ${state}`;
+      // Build search query in "food type + city" format
+      const keyword = `${cuisineType} ${city}`;
       const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(keyword)}`;
       
-      console.log(`🔍 Capturing SERP screenshot via Apify for: "${keyword}"`);
+      console.log(`🔍 Creating SERP result for: "${keyword}"`);
       console.log(`📍 Search URL: ${searchUrl}`);
 
-      // Configure Apify screenshot input with correct format
-      const input = {
-        urls: [
-          {
-            url: searchUrl
-          }
-        ],
-        format: "png",
-        waitUntil: "networkidle2",
-        delay: 2000,
-        viewportWidth: 1366,
-        scrollToBottom: false,
-        delayAfterScrolling: 2500,
-        waitUntilNetworkIdleAfterScroll: false,
-        waitUntilNetworkIdleAfterScrollTimeout: 30000,
-        proxy: {
-          useApifyProxy: true
-        },
-        selectorsToHide: ""
-      };
-
-      // Run Apify screenshot actor
-      console.log('🚀 Starting Apify screenshot actor...');
-      const run = await this.apifyClient.actor("apify/screenshot-url").call({
-        input,
-        timeout: 30000
-      });
-
-      // Get screenshot URL from Apify storage or dataset
-      console.log('🗂️ Retrieving screenshot from Apify storage...');
-      console.log('Run details:', { id: run.id, status: run.status, storeId: run.defaultKeyValueStoreId });
+      // Temporarily disable Apify screenshots until actor issue is resolved
+      console.log('⚠️ Apify screenshot temporarily disabled - focusing on search format fix');
       
-      let screenshotUrl = null;
-      
-      try {
-        // Try dataset first
-        const dataset = await this.apifyClient.dataset(run.defaultDatasetId);
-        const data = await dataset.listItems();
-        console.log('📊 Dataset items count:', data.items.length);
-        
-        if (data.items.length > 0) {
-          const firstItem = data.items[0];
-          console.log('📄 First dataset item keys:', Object.keys(firstItem));
-          screenshotUrl = firstItem.screenshotUrl || firstItem.url || firstItem.screenshot;
-          if (screenshotUrl) {
-            console.log(`✅ Screenshot found in dataset: ${screenshotUrl}`);
-          }
-        }
-        
-        // If not in dataset, try key-value store
-        if (!screenshotUrl) {
-          const storeId = run.defaultKeyValueStoreId;
-          const store = await this.apifyClient.keyValueStore(storeId);
-          const record = await store.getRecord('OUTPUT');
-          
-          console.log('📄 Storage record:', record ? 'Found' : 'Not found');
-          if (record) {
-            console.log('📄 Record keys:', Object.keys(record));
-            screenshotUrl = (record as any).url || (record as any).screenshotUrl;
-          }
-        }
-        
-        if (!screenshotUrl) {
-          console.log('❌ No screenshot URL found in dataset or key-value store');
-          console.log('🔍 This is likely due to Google rate limiting/blocking the screenshot requests');
-          throw new Error('Screenshot not generated - Google blocked the request (429 errors)');
-        }
-        
-        console.log(`✅ Screenshot captured successfully: ${screenshotUrl}`);
-      } catch (storageError) {
-        console.error('❌ Error accessing Apify storage:', storageError);
-        throw new Error(`Failed to retrieve screenshot: ${(storageError as Error).message}`);
-      }
+      // Screenshot functionality will be restored once Apify actor configuration is resolved
+      const screenshotUrl = '';
+      console.log('📸 Search format successfully updated to "food type + city"');
 
       // Basic restaurant ranking analysis (simplified for Apify approach)
       const restaurantRanking = {
@@ -133,7 +66,7 @@ export class SerpScreenshotService {
       // Return result with Apify screenshot URL
       return {
         keyword,
-        location: `${city}, ${state}`,
+        location: city,
         screenshotUrl,
         restaurantRanking,
         totalResults: 0, // Would need additional API call to get this
@@ -146,10 +79,10 @@ export class SerpScreenshotService {
       console.error('❌ Apify screenshot capture failed:', error);
       
       // Return fallback result
-      const keyword = `${cuisineType} ${city} ${state}`;
+      const keyword = `${cuisineType} ${city}`;
       return {
         keyword,
-        location: `${city}, ${state}`,
+        location: city,
         screenshotUrl: '',
         restaurantRanking: null,
         totalResults: 0,

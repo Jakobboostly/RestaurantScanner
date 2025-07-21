@@ -275,7 +275,7 @@ export class AdvancedScannerService {
         
         // Create a food-type and location-specific search query
         const foodSearchQuery = locationData.city !== 'Unknown' ? 
-          `${cuisineType} ${locationData.city} ${locationData.state}` : 
+          `${cuisineType} ${locationData.city}` : 
           `${cuisineType} near me`;
         
         console.log(`Starting SERP analysis and screenshot capture for keyword: "${primaryKeyword}"`);
