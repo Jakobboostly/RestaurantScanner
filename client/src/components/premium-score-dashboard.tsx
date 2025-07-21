@@ -688,6 +688,16 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                   {/* Right Side - Where You Rank Button */}
                   <div className="space-y-4 mt-[144px] mb-[144px]">
                     <div className="bg-gradient-to-br from-[#5F5FFF] via-[#7375FD] to-[#9090FD] rounded-lg p-8 text-center text-white shadow-lg">
+                      {/* Ranking Status Message - Now at the top */}
+                      <div className="bg-red-500/30 border-2 border-red-400/50 rounded-xl p-6 mb-6 text-center">
+                        <p className="text-white font-bold text-xl mb-2">
+                          You are not in the top 10 (you're #12)
+                        </p>
+                        <p className="text-white/90 text-base">
+                          Your competitors are ranking higher for searches customers use
+                        </p>
+                      </div>
+                      
                       <div className="mb-6">
                         <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
                           <Search className="w-8 h-8 text-white" />
