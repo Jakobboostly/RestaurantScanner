@@ -76,6 +76,15 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 21, 2025. Successfully fixed Selenium screenshot service for Replit environment:
+  - Identified correct Chrome binary path: `/nix/store/zi4f80l169xlmivz8vja8wlphq74qqk0-chromium-125.0.6422.141/bin/chromium-browser`
+  - Fixed RestaurantSearchScreenshotService to use Nix-specific Chrome installation
+  - Screenshots now capture successfully (366KB images) in under 8 seconds
+  - API endpoint `/api/screenshot/restaurant-search` returning proper JSON responses with base64 image data
+  - Chrome driver working with headless configuration and proper browser arguments
+  - Frontend React component ready at `/screenshot-test` with search controls and image display
+  - Service supports three modes: basic search, location-specific, and cuisine-type searches
+  - Environment-specific Chrome binary path resolution eliminates "browser not found" errors
 - July 21, 2025. Updated review volume scoring system with specific user-defined ranges:
   - Modified calculateOverallReviewScore function to use new review count categories: 0-250 (okay +5), 250-500 (good +10), 501-750 (great +15), 750+ (excellent +25)
   - Updated identifyProfileStrengths functions to recognize "excellent review volume" at 750+, "great" at 501-750, and "good" at 250+ instead of previous 100+ threshold

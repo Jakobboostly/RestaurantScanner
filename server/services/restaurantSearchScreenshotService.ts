@@ -47,15 +47,10 @@ export class RestaurantSearchScreenshotService {
       chromeOptions.addArguments('--disable-blink-features=AutomationControlled');
       chromeOptions.addArguments('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36');
 
-      // Use system Chrome binary if available
-      const chromeBinary = process.env.CHROME_BIN || '/usr/bin/google-chrome' || '/usr/bin/chromium-browser';
-      try {
-        await fs.access(chromeBinary);
-        chromeOptions.setChromeBinaryPath(chromeBinary);
-        console.log(`Using Chrome binary: ${chromeBinary}`);
-      } catch {
-        console.log('Using default Chrome installation');
-      }
+      // Use correct Chrome binary for Replit Nix environment
+      const chromeBinary = '/nix/store/zi4f80l169xlmivz8vja8wlphq74qqk0-chromium-125.0.6422.141/bin/chromium-browser';
+      chromeOptions.setChromeBinaryPath(chromeBinary);
+      console.log(`Using Chrome binary: ${chromeBinary}`);
 
       // Create WebDriver
       driver = await new Builder()
