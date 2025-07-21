@@ -26,6 +26,7 @@ export interface SerpScreenshotResult {
 
 export class SerpScreenshotService {
   private userAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
+  private requestCounter = 0;
   
   async captureSearchResults(
     keyword: string,
@@ -66,7 +67,21 @@ export class SerpScreenshotService {
       console.log('Browser launched successfully');
       
       const page = await browser.newPage();
-      await page.setUserAgent(this.userAgent);
+      
+      // Randomize user agent slightly to avoid detection
+      this.requestCounter++;
+      const randomizedUserAgent = this.userAgent.replace('120.0.0.0', `120.${this.requestCounter % 10}.0.${this.requestCounter % 100}`);
+      await page.setUserAgent(randomizedUserAgent);
+      
+      // Set additional headers to appear more human-like
+      await page.setExtraHTTPHeaders({
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.9',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'DNT': '1',
+        'Connection': 'keep-alive',
+        'Upgrade-Insecure-Requests': '1',
+      });
       
       // Set viewport to standard desktop size
       await page.setViewport({
@@ -74,6 +89,9 @@ export class SerpScreenshotService {
         height: 768,
         deviceScaleFactor: 1,
       });
+      
+      // Add random delay to appear more human-like
+      await new Promise(resolve => setTimeout(resolve, Math.random() * 2000 + 1000));
       
       // Use the keyword as-is since it already contains location info
       const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(keyword)}&num=20`;
@@ -93,8 +111,32 @@ export class SerpScreenshotService {
       // Wait for page to fully load - simplified approach
       console.log('Waiting for page content to load...');
       
-      // Give Google time to render search results (no complex selector waits)
-      await new Promise(resolve => setTimeout(resolve, 4000));
+      // Give Google time to render search results
+      await new Promise(resolve => setTimeout(resolve, 3000));
+      
+      // Check for captcha or bot detection
+      const pageContent = await page.content();
+      const isCaptcha = pageContent.includes('recaptcha') || 
+                       pageContent.includes('captcha') || 
+                       pageContent.includes('verify you are human') ||
+                       pageContent.includes('unusual traffic') ||
+                       pageContent.includes('robot') ||
+                       pageContent.includes('automated queries');
+      
+      if (isCaptcha) {
+        console.log('CAPTCHA detected! Google is blocking automated access.');
+        console.log('Page title:', await page.title());
+        
+        // Try to wait a bit more and check again
+        await new Promise(resolve => setTimeout(resolve, 5000));
+        const newContent = await page.content();
+        const stillCaptcha = newContent.includes('recaptcha') || newContent.includes('captcha');
+        
+        if (stillCaptcha) {
+          throw new Error('CAPTCHA blocking screenshot capture - Google detected automated access');
+        }
+      }
+      
       console.log('Page content loaded, proceeding with screenshot...');
       
       // Remove cookie banners, ads, and other distractions
@@ -110,6 +152,10 @@ export class SerpScreenshotService {
         // Remove "People also ask" section to focus on organic results
         const paaElements = document.querySelectorAll('[data-initq], .related-question-pair');
         paaElements.forEach(el => el.remove());
+        
+        // Remove captcha elements if any
+        const captchaElements = document.querySelectorAll('[id*="captcha"], [class*="captcha"], [id*="recaptcha"], [class*="recaptcha"]');
+        captchaElements.forEach(el => el.remove());
       });
       
       // Capture screenshot of search results
@@ -126,9 +172,9 @@ export class SerpScreenshotService {
       console.log('Screenshot captured, size:', screenshotBuffer.length, 'bytes');
       
       // Analyze the search results
-      const pageContent = await page.content();
+      const finalPageContent = await page.content();
       const analysisResult = await this.analyzeSearchResults(
-        pageContent,
+        finalPageContent,
         restaurantName,
         restaurantDomain,
         keyword,
