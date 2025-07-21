@@ -1,7 +1,8 @@
 const { ApifyClient } = require('apify-client');
+require('dotenv').config();
 
-// Replace with your Apify API token
-const APIFY_API_TOKEN = 'your-apify-api-token-here';
+// Use your actual Apify API token from environment
+const APIFY_API_TOKEN = process.env.APIFY_API_KEY;
 
 // Initialize Apify client
 const client = new ApifyClient({
