@@ -1190,7 +1190,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                                   <div>• Business Name: 10 points</div>
                                   <div>• Phone Number: 15 points</div>
                                   <div>• Website: 20 points</div>
-                                  <div>• Photos: 25 points (2.5 per photo, max 10)</div>
+                                  <div>• Photos: 25 points (0.5 per photo, max 50)</div>
                                   <div>• Reviews: 20 points (1 per 15 reviews, max 20)</div>
                                   <div>• Rating: 10 points (4.0+ = full, 3.6-3.9 = 7pts, 3.3-3.5 = 5pts, 3.0-3.2 = 2pts)</div>
                                 </div>

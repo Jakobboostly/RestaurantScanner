@@ -2194,10 +2194,10 @@ export class AdvancedScannerService {
       missingElements.push('website');
     }
 
-    // Photos (25% weight) - 2.5% per photo up to 10 photos
+    // Photos (25% weight) - 0.5% per photo up to 50 photos
     const photoCount = profile.photos?.total || 0;
     if (photoCount > 0) {
-      const photoScore = Math.min(10, photoCount) * 2.5; // Cap at 10 photos
+      const photoScore = Math.min(50, photoCount) * 0.5; // Cap at 50 photos for full 25 points
       totalScore += photoScore;
     } else {
       missingElements.push('photos');

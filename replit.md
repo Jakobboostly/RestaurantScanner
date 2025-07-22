@@ -76,6 +76,12 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 22, 2025. Increased Google Places photo query limit from 10 to 50 photos with updated scoring system:
+  - **Enhanced photo analysis**: Now queries up to 50 business photos from Google Places API instead of previous 10-photo limit
+  - **Updated profile completeness scoring**: Photos now worth 0.5 points each (up to 50 photos = 25 points total) instead of 2.5 points each for 10 photos
+  - **Better photo coverage**: Businesses with extensive photo galleries now receive more accurate profile completeness scores
+  - **Improved user experience**: Restaurant photo galleries display up to 50 high-quality images for better visual analysis
+  - **Updated tooltip information**: Profile completeness tooltip now reflects new "0.5 per photo, max 50" scoring methodology
 - July 22, 2025. Successfully fixed Instagram detection workflow by resolving timeout and CSS selector issues:
   - **Fixed critical timeout issue**: Increased social media detection timeout from 8 seconds to 15 seconds in advancedScannerService
   - **Instagram detection now working**: System successfully detects Instagram URLs like "https://www.instagram.com/ribshacksmokehouse"
