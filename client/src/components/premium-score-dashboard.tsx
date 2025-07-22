@@ -1267,7 +1267,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                         <div className="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full border-2 border-white shadow-sm"></div>
                       </div>
                       <div>
-                        <h3 className="text-xl font-bold bg-gradient-to-r from-[#5F5FFF] to-[#7375FD] bg-clip-text text-transparent">Customer Review AI Report</h3>
+                        <h3 className="text-xl font-bold bg-gradient-to-r from-[#5F5FFF] to-[#7375FD] bg-clip-text text-transparent">Customer Sentiment AI Report</h3>
                         <p className="text-sm text-gray-600">AI analysis of 100+ authentic reviews</p>
                       </div>
                     </div>
