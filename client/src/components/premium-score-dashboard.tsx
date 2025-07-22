@@ -29,11 +29,13 @@ import {
   Brain,
   Lightbulb,
   AlertCircle,
-  X
+  X,
+  Info
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { ScanResult } from "@shared/schema";
 
 interface RestaurantSearchScreenshot {
@@ -1174,7 +1176,32 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                       <span className="font-medium">{scanResult.businessProfile?.totalReviews || 0}</span>
                     </div>
                     <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">Profile Completeness</span>
+                      <div className="flex items-center gap-2">
+                        <span className="text-sm text-gray-600">Profile Completeness</span>
+                        <TooltipProvider>
+                          <Tooltip>
+                            <TooltipTrigger asChild>
+                              <Info className="w-4 h-4 text-gray-400 hover:text-gray-600 cursor-help" />
+                            </TooltipTrigger>
+                            <TooltipContent side="top" className="max-w-xs">
+                              <div className="space-y-2 text-sm">
+                                <div className="font-semibold border-b pb-1">Profile Completeness Scoring:</div>
+                                <div className="space-y-1">
+                                  <div>• Business Name: 10 points</div>
+                                  <div>• Phone Number: 15 points</div>
+                                  <div>• Website: 20 points</div>
+                                  <div>• Photos: 25 points (2.5 per photo, max 10)</div>
+                                  <div>• Reviews: 20 points (1 per 15 reviews, max 20)</div>
+                                  <div>• Rating: 10 points (4.0+ = full, 3.6-3.9 = 7pts, 3.3-3.5 = 5pts, 3.0-3.2 = 2pts)</div>
+                                </div>
+                                <div className="text-xs text-gray-500 pt-1 border-t">
+                                  Total: 100 points maximum
+                                </div>
+                              </div>
+                            </TooltipContent>
+                          </Tooltip>
+                        </TooltipProvider>
+                      </div>
                       <span className="font-medium">{scanResult.profileAnalysis?.completeness?.score || 0}%</span>
                     </div>
                     {scanResult.businessProfile?.photos && (
