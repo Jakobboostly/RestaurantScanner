@@ -844,12 +844,42 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                         </div>
                         
                         <div className="bg-[#5F5FFF]/30 border-2 border-yellow-300 rounded-lg p-4 mb-3 backdrop-blur-sm">
-                          <p className="text-white font-black text-2xl mb-2 drop-shadow-lg">
-                            You are not in the top 10 (you're #12)
-                          </p>
-                          <p className="text-yellow-200 text-base font-bold">
-                            🔥 COMPETITORS ARE STEALING YOUR CUSTOMERS
-                          </p>
+                          {(() => {
+                            const competitiveKeywords = scanResult.competitiveOpportunityKeywords || [];
+                            const keywordCount = competitiveKeywords.length;
+                            
+                            return (
+                              <>
+                                <p className="text-white font-black text-2xl mb-2 drop-shadow-lg">
+                                  You're at risk of losing customers by not ranking on {keywordCount} keywords!
+                                </p>
+                                {keywordCount > 0 && (
+                                  <div className="text-yellow-200 text-sm font-bold mb-2">
+                                    Where your competition is beating you:
+                                  </div>
+                                )}
+                                {keywordCount > 0 && (
+                                  <div className="space-y-1 text-left max-h-32 overflow-y-auto">
+                                    {competitiveKeywords.slice(0, 3).map((keyword, index) => (
+                                      <div key={index} className="flex justify-between items-center text-xs bg-white/10 rounded px-2 py-1">
+                                        <span className="text-white truncate pr-2">
+                                          "{keyword.keyword}"
+                                        </span>
+                                        <span className="text-yellow-300 font-bold">
+                                          #{keyword.position}
+                                        </span>
+                                      </div>
+                                    ))}
+                                  </div>
+                                )}
+                                {keywordCount === 0 && (
+                                  <p className="text-yellow-200 text-base font-bold">
+                                    🔥 Your competition is strong across all keywords
+                                  </p>
+                                )}
+                              </>
+                            );
+                          })()}
                         </div>
                         
                         <div className="text-yellow-200 text-sm font-bold uppercase">
