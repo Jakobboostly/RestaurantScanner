@@ -1019,14 +1019,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                       </div>
                     </div>
 
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">Engagement Rate</span>
-                      <span className="font-medium">
-                        {scanResult.socialMediaLinks?.facebookAnalysis?.engagementRate 
-                          ? `${scanResult.socialMediaLinks.facebookAnalysis.engagementRate}%`
-                          : "N/A"}
-                      </span>
-                    </div>
+
                   </div>
                 </div>
               )}

@@ -653,46 +653,53 @@ function EnhancedResultsDashboard({ scanResult, restaurantName }: EnhancedResult
                 </CardContent>
               </Card>
 
-              {/* Review Sentiment Trend */}
+              {/* Google Business Profile Reviews */}
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Heart className="w-5 h-5" />
-                    Review Sentiment Analysis
+                    Reviews & Reputation
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  {scanResult.reviewsAnalysis ? (
+                  {scanResult.businessProfile ? (
                     <div className="space-y-4">
                       <div className="flex items-center justify-between">
-                        <span>Overall Score</span>
-                        <Badge variant="default">{scanResult.reviewsAnalysis.overallScore}/100</Badge>
+                        <span>Google Rating</span>
+                        <div className="flex items-center gap-1">
+                          <Star className="w-4 h-4 text-yellow-500" />
+                          <Badge variant="default">{scanResult.businessProfile.rating}/5</Badge>
+                        </div>
                       </div>
                       
-                      <div className="space-y-2">
+                      <div className="space-y-3">
                         <div className="flex items-center justify-between text-sm">
-                          <span className="text-green-600">Positive</span>
-                          <span>{scanResult.reviewsAnalysis.sentimentBreakdown?.positive || 0}%</span>
+                          <span className="text-blue-600">Total Reviews</span>
+                          <span className="font-medium">{scanResult.businessProfile.totalReviews}</span>
                         </div>
-                        <Progress value={scanResult.reviewsAnalysis.sentimentBreakdown?.positive || 0} className="h-2" />
                         
                         <div className="flex items-center justify-between text-sm">
-                          <span className="text-yellow-600">Neutral</span>
-                          <span>{scanResult.reviewsAnalysis.sentimentBreakdown?.neutral || 0}%</span>
+                          <span className="text-purple-600">Business Verified</span>
+                          <Badge variant={scanResult.businessProfile.isVerified ? 'default' : 'destructive'}>
+                            {scanResult.businessProfile.isVerified ? 'Yes' : 'No'}
+                          </Badge>
                         </div>
-                        <Progress value={scanResult.reviewsAnalysis.sentimentBreakdown?.neutral || 0} className="h-2" />
                         
                         <div className="flex items-center justify-between text-sm">
-                          <span className="text-red-600">Negative</span>
-                          <span>{scanResult.reviewsAnalysis.sentimentBreakdown?.negative || 0}%</span>
+                          <span className="text-green-600">Photo Quality</span>
+                          <span className="font-medium capitalize">{scanResult.businessProfile.photos?.quality || 'N/A'}</span>
                         </div>
-                        <Progress value={scanResult.reviewsAnalysis.sentimentBreakdown?.negative || 0} className="h-2" />
+                        
+                        <div className="flex items-center justify-between text-sm">
+                          <span className="text-orange-600">Response Rate</span>
+                          <span className="font-medium">{scanResult.businessProfile.responseRate}%</span>
+                        </div>
                       </div>
                     </div>
                   ) : (
                     <div className="text-center py-8 text-gray-500">
                       <Heart className="w-12 h-12 mx-auto mb-4 opacity-50" />
-                      <p>Review analysis unavailable</p>
+                      <p>Business profile data unavailable</p>
                     </div>
                   )}
                 </CardContent>
