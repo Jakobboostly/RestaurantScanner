@@ -1210,14 +1210,8 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                       <span className="text-sm text-gray-600">Overall Rating</span>
                       <span className="font-bold text-lg text-[#FCD34D]">{scanResult.businessProfile?.rating || 0}/5</span>
                     </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">Positive Sentiment</span>
-                      <span className="font-medium">{scanResult.reviewsAnalysis?.sentiment?.positive || 0}%</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">Review Volume</span>
-                      <span className="font-medium">{scanResult.businessProfile?.totalReviews || 0}</span>
-                    </div>
+                    
+                    
                   </div>
                 </div>
               )}
