@@ -1257,44 +1257,70 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                     </div>
                   </div>
 
-                  {/* OpenAI Customer Mood Analysis with Loading State */}
-                  <div className="bg-[#5F5FFF]/5 border border-[#5F5FFF]/20 rounded-lg p-4 mt-6">
-                    <h3 className="font-bold text-[#5F5FFF] mb-3 flex items-center gap-2">
-                      <div className="w-2 h-2 bg-[#5F5FFF] rounded-full"></div>
-                      Customer Mood Insights (100+ Reviews Analyzed)
-                    </h3>
+                  {/* Enhanced Customer Mood Insights with Sexy Design */}
+                  <div className="bg-gradient-to-br from-[#5F5FFF]/10 via-[#7375FD]/5 to-[#9090FD]/10 border border-[#5F5FFF]/30 rounded-xl p-6 mt-6 shadow-lg">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="relative">
+                        <div className="w-10 h-10 bg-gradient-to-r from-[#5F5FFF] to-[#7375FD] rounded-full flex items-center justify-center shadow-lg">
+                          <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                        </div>
+                        <div className="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full border-2 border-white shadow-sm"></div>
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold bg-gradient-to-r from-[#5F5FFF] to-[#7375FD] bg-clip-text text-transparent">
+                          Customer Psychology Report
+                        </h3>
+                        <p className="text-sm text-gray-600">AI analysis of 100+ authentic reviews</p>
+                      </div>
+                    </div>
                     
                     {moodAnalysis ? (
-                      <div className="mb-4">
-                        <div className="flex items-center gap-2 mb-3">
-                          <span className="text-sm text-gray-600">Overall Mood:</span>
-                          <span className={`px-3 py-1 rounded-full text-xs font-bold text-white ${
-                            moodAnalysis.overallMood === 'delighted' ? 'bg-green-500' :
-                            moodAnalysis.overallMood === 'satisfied' ? 'bg-blue-500' :
-                            moodAnalysis.overallMood === 'mixed' ? 'bg-yellow-500' :
-                            moodAnalysis.overallMood === 'frustrated' ? 'bg-orange-500' :
-                            'bg-red-500'
-                          }`}>
-                            {moodAnalysis.overallMood.charAt(0).toUpperCase() + 
-                             moodAnalysis.overallMood.slice(1)}
-                          </span>
-                        </div>
-                        
-                        <div className="bg-white/70 rounded-lg p-4 mb-4">
-                          <p className="text-sm text-gray-700 leading-relaxed">
-                            {moodAnalysis.sentimentSummary}
-                          </p>
+                      <div className="space-y-6">
+                        {/* Overall Mood with Dynamic Background */}
+                        <div className="relative overflow-hidden rounded-xl p-5 bg-gradient-to-r from-white/80 to-white/60 backdrop-blur-sm border border-white/50 shadow-lg">
+                          <div className="absolute inset-0 bg-gradient-to-r from-[#5F5FFF]/5 to-[#7375FD]/5"></div>
+                          <div className="relative z-10">
+                            <div className="flex items-center justify-between mb-3">
+                              <span className="text-sm font-medium text-gray-700">Customer Emotional State</span>
+                              <div className={`px-4 py-2 rounded-full font-bold text-sm shadow-lg transform transition-all duration-300 hover:scale-105 ${
+                                moodAnalysis.overallMood === 'delighted' ? 'bg-gradient-to-r from-green-400 to-green-600 text-white' :
+                                moodAnalysis.overallMood === 'satisfied' ? 'bg-gradient-to-r from-blue-400 to-blue-600 text-white' :
+                                moodAnalysis.overallMood === 'mixed' ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-white' :
+                                moodAnalysis.overallMood === 'frustrated' ? 'bg-gradient-to-r from-orange-400 to-red-500 text-white' :
+                                'bg-gradient-to-r from-red-400 to-red-600 text-white'
+                              }`}>
+                                {moodAnalysis.overallMood === 'delighted' ? '😍 DELIGHTED' :
+                                 moodAnalysis.overallMood === 'satisfied' ? '😊 SATISFIED' :
+                                 moodAnalysis.overallMood === 'mixed' ? '😐 MIXED FEELINGS' :
+                                 moodAnalysis.overallMood === 'frustrated' ? '😤 FRUSTRATED' :
+                                 '😞 DISAPPOINTED'}
+                              </div>
+                            </div>
+                            
+                            <div className="bg-white/90 rounded-lg p-4 border border-gray-200/50 shadow-sm">
+                              <p className="text-sm text-gray-800 leading-relaxed font-medium">
+                                {moodAnalysis.sentimentSummary}
+                              </p>
+                            </div>
+                          </div>
                         </div>
 
-                        {moodAnalysis.keyMoodIndicators && 
-                         moodAnalysis.keyMoodIndicators.length > 0 && (
-                          <div className="mb-4">
-                            <h4 className="text-sm font-medium text-gray-700 mb-2">Key Mood Indicators:</h4>
+                        {/* Emotional Indicators Cloud */}
+                        {moodAnalysis.keyMoodIndicators && moodAnalysis.keyMoodIndicators.length > 0 && (
+                          <div className="bg-white/50 rounded-xl p-5 border border-gray-200/50 shadow-sm">
+                            <h4 className="text-sm font-bold text-gray-800 mb-3 flex items-center gap-2">
+                              <div className="w-2 h-2 bg-gradient-to-r from-[#5F5FFF] to-[#7375FD] rounded-full"></div>
+                              Emotional Keywords Found in Reviews
+                            </h4>
                             <div className="flex flex-wrap gap-2">
-                              {moodAnalysis.keyMoodIndicators.slice(0, 4).map((indicator, index) => (
+                              {moodAnalysis.keyMoodIndicators.slice(0, 6).map((indicator, index) => (
                                 <span 
                                   key={index}
-                                  className="text-xs bg-[#5F5FFF]/20 text-[#5F5FFF] px-2 py-1 rounded-full"
+                                  className={`px-3 py-2 rounded-full text-xs font-semibold transform transition-all duration-300 hover:scale-105 hover:shadow-lg ${
+                                    index % 3 === 0 ? 'bg-gradient-to-r from-[#5F5FFF]/20 to-[#7375FD]/20 text-[#5F5FFF] border border-[#5F5FFF]/30' :
+                                    index % 3 === 1 ? 'bg-gradient-to-r from-purple-100 to-pink-100 text-purple-700 border border-purple-200' :
+                                    'bg-gradient-to-r from-indigo-100 to-blue-100 text-indigo-700 border border-indigo-200'
+                                  }`}
                                 >
                                   {indicator}
                                 </span>
@@ -1303,47 +1329,127 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                           </div>
                         )}
 
+                        {/* Business Intelligence Cards */}
                         {moodAnalysis.businessInsights && (
-                          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                            {/* Customer Praise Card */}
                             {moodAnalysis.businessInsights.strengthsPerceived && 
                              moodAnalysis.businessInsights.strengthsPerceived.length > 0 && (
-                              <div className="bg-green-50 rounded-lg p-3">
-                                <h5 className="text-xs font-bold text-green-700 mb-2">🎯 Customer Praise</h5>
-                                <ul className="text-xs text-gray-700 space-y-1">
-                                  {moodAnalysis.businessInsights.strengthsPerceived.slice(0, 2).map((strength, index) => (
-                                    <li key={index}>• {strength}</li>
+                              <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-5 border border-green-200/50 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                                <div className="flex items-center gap-3 mb-3">
+                                  <div className="w-8 h-8 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full flex items-center justify-center shadow-lg">
+                                    <div className="text-white text-sm font-bold">❤️</div>
+                                  </div>
+                                  <h5 className="font-bold text-green-800 text-sm">What Customers Love About You</h5>
+                                </div>
+                                <div className="space-y-2">
+                                  {moodAnalysis.businessInsights.strengthsPerceived.slice(0, 3).map((strength, index) => (
+                                    <div key={index} className="flex items-start gap-2">
+                                      <div className="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                                      <p className="text-xs text-green-800 font-medium leading-relaxed">{strength}</p>
+                                    </div>
                                   ))}
-                                </ul>
+                                </div>
                               </div>
                             )}
                             
+                            {/* Improvement Opportunities Card */}
                             {moodAnalysis.businessInsights.improvementOpportunities && 
                              moodAnalysis.businessInsights.improvementOpportunities.length > 0 && (
-                              <div className="bg-orange-50 rounded-lg p-3">
-                                <h5 className="text-xs font-bold text-orange-700 mb-2">🔧 Improvement Areas</h5>
-                                <ul className="text-xs text-gray-700 space-y-1">
-                                  {moodAnalysis.businessInsights.improvementOpportunities.slice(0, 2).map((opportunity, index) => (
-                                    <li key={index}>• {opportunity}</li>
+                              <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-5 border border-amber-200/50 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                                <div className="flex items-center gap-3 mb-3">
+                                  <div className="w-8 h-8 bg-gradient-to-r from-amber-400 to-orange-500 rounded-full flex items-center justify-center shadow-lg">
+                                    <div className="text-white text-sm font-bold">⚡</div>
+                                  </div>
+                                  <h5 className="font-bold text-amber-800 text-sm">Growth Opportunities</h5>
+                                </div>
+                                <div className="space-y-2">
+                                  {moodAnalysis.businessInsights.improvementOpportunities.slice(0, 3).map((opportunity, index) => (
+                                    <div key={index} className="flex items-start gap-2">
+                                      <div className="w-1.5 h-1.5 bg-amber-500 rounded-full mt-2 flex-shrink-0"></div>
+                                      <p className="text-xs text-amber-800 font-medium leading-relaxed">{opportunity}</p>
+                                    </div>
                                   ))}
-                                </ul>
+                                </div>
                               </div>
                             )}
                           </div>
                         )}
+
+                        {/* Additional Emotional Themes */}
+                        {moodAnalysis.emotionalThemes && moodAnalysis.emotionalThemes.length > 0 && (
+                          <div className="bg-gradient-to-r from-white/70 to-gray-50/70 rounded-xl p-5 border border-gray-200/50 shadow-sm">
+                            <h4 className="text-sm font-bold text-gray-800 mb-3 flex items-center gap-2">
+                              <div className="w-6 h-6 bg-gradient-to-r from-[#5F5FFF] to-[#7375FD] rounded-lg flex items-center justify-center">
+                                <div className="text-white text-xs">📊</div>
+                              </div>
+                              Top Emotional Themes in Customer Reviews
+                            </h4>
+                            <div className="grid grid-cols-2 gap-3">
+                              {moodAnalysis.emotionalThemes.slice(0, 4).map((theme, index) => (
+                                <div key={index} className="bg-white/80 rounded-lg p-3 border border-gray-100 shadow-sm">
+                                  <div className="flex justify-between items-center mb-1">
+                                    <span className="text-xs font-semibold text-gray-700 capitalize">{theme.theme}</span>
+                                    <span className="text-xs text-gray-500">{theme.frequency}%</span>
+                                  </div>
+                                  <div className="w-full bg-gray-200 rounded-full h-1.5">
+                                    <div 
+                                      className={`h-1.5 rounded-full transition-all duration-500 ${
+                                        theme.emotion === 'excitement' ? 'bg-gradient-to-r from-green-400 to-green-600' :
+                                        theme.emotion === 'satisfaction' ? 'bg-gradient-to-r from-blue-400 to-blue-600' :
+                                        theme.emotion === 'frustration' ? 'bg-gradient-to-r from-red-400 to-red-600' :
+                                        'bg-gradient-to-r from-[#5F5FFF] to-[#7375FD]'
+                                      }`}
+                                      style={{ width: `${theme.frequency}%` }}
+                                    ></div>
+                                  </div>
+                                  <span className={`text-xs font-medium capitalize ${
+                                    theme.emotion === 'excitement' ? 'text-green-600' :
+                                    theme.emotion === 'satisfaction' ? 'text-blue-600' :
+                                    theme.emotion === 'frustration' ? 'text-red-600' :
+                                    'text-[#5F5FFF]'
+                                  }`}>
+                                    {theme.emotion}
+                                  </span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        )}
                       </div>
                     ) : isLoadingMoodAnalysis ? (
-                      // Loading state for OpenAI analysis
-                      <div className="bg-white/70 rounded-lg p-4 text-center">
-                        <div className="flex items-center justify-center gap-2 mb-2">
-                          <div className="w-4 h-4 border-2 border-[#5F5FFF] border-t-transparent rounded-full animate-spin"></div>
-                          <span className="text-sm text-gray-600">Generating your review analysis...</span>
+                      // Enhanced Loading state
+                      <div className="bg-gradient-to-r from-white/80 to-gray-50/80 rounded-xl p-8 text-center border border-gray-200/50 shadow-sm">
+                        <div className="flex items-center justify-center gap-3 mb-4">
+                          <div className="relative">
+                            <div className="w-8 h-8 border-4 border-[#5F5FFF]/20 border-t-[#5F5FFF] rounded-full animate-spin"></div>
+                            <div className="absolute inset-0 w-8 h-8 border-4 border-transparent border-r-[#7375FD] rounded-full animate-ping"></div>
+                          </div>
+                          <div className="space-y-1">
+                            <span className="text-base font-semibold text-gray-700">AI Analyzing Customer Psychology...</span>
+                            <div className="flex items-center gap-2 text-xs text-gray-500">
+                              <div className="w-1 h-1 bg-[#5F5FFF] rounded-full animate-pulse"></div>
+                              <span>Processing 100+ authentic reviews with OpenAI GPT-4o</span>
+                            </div>
+                          </div>
                         </div>
-                        <p className="text-xs text-gray-500">This may take a few moments while we analyze 100+ reviews with AI</p>
+                        <div className="bg-white/60 rounded-lg p-4 border border-gray-100">
+                          <div className="flex items-center justify-center gap-2 text-sm text-gray-600">
+                            <div className="w-2 h-2 bg-[#5F5FFF] rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></div>
+                            <div className="w-2 h-2 bg-[#7375FD] rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></div>
+                            <div className="w-2 h-2 bg-[#9090FD] rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></div>
+                            <span className="ml-2">Generating emotional insights...</span>
+                          </div>
+                        </div>
                       </div>
                     ) : (
-                      // Error/unavailable state
-                      <div className="bg-gray-50 rounded-lg p-4 text-center">
-                        <p className="text-sm text-gray-500">Customer mood analysis unavailable - OpenAI analysis could not be completed.</p>
+                      // Enhanced Error state
+                      <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl p-6 text-center border border-gray-200 shadow-sm">
+                        <div className="w-12 h-12 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center">
+                          <div className="text-gray-400 text-lg">📊</div>
+                        </div>
+                        <h4 className="font-semibold text-gray-700 mb-2">Customer Mood Analysis Unavailable</h4>
+                        <p className="text-sm text-gray-500">The AI analysis couldn't be completed at this time. This usually happens when there aren't enough reviews to analyze or the service is temporarily unavailable.</p>
                       </div>
                     )}
                   </div>
