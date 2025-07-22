@@ -464,6 +464,7 @@ export class AdvancedScannerService {
       onProgress({ progress: 100, status: 'Finalizing analysis...' });
       
       const enhancedResult = await this.generateEnhancedReport(
+        placeId,
         domain,
         restaurantName,
         businessProfile,
@@ -498,6 +499,7 @@ export class AdvancedScannerService {
   }
 
   private async generateEnhancedReport(
+    placeId: string,
     domain: string,
     restaurantName: string,
     businessProfile: any,
