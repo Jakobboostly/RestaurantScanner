@@ -695,6 +695,85 @@ function EnhancedResultsDashboard({ scanResult, restaurantName }: EnhancedResult
                           <span className="font-medium">{scanResult.businessProfile.responseRate}%</span>
                         </div>
                       </div>
+
+                      {/* OpenAI Customer Mood Analysis */}
+                      {scanResult.reviewsAnalysis?.customerMoodAnalysis && (
+                        <div className="mt-6 pt-4 border-t border-gray-200">
+                          <div className="mb-4">
+                            <h4 className="font-semibold text-gray-800 mb-2 flex items-center gap-2">
+                              <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
+                              Customer Mood Insights
+                            </h4>
+                            <div className="flex items-center gap-2 mb-3">
+                              <span className="text-sm text-gray-600">Overall Mood:</span>
+                              <Badge 
+                                variant="default" 
+                                className={`${
+                                  scanResult.reviewsAnalysis.customerMoodAnalysis.overallMood === 'delighted' ? 'bg-green-500' :
+                                  scanResult.reviewsAnalysis.customerMoodAnalysis.overallMood === 'satisfied' ? 'bg-blue-500' :
+                                  scanResult.reviewsAnalysis.customerMoodAnalysis.overallMood === 'mixed' ? 'bg-yellow-500' :
+                                  scanResult.reviewsAnalysis.customerMoodAnalysis.overallMood === 'frustrated' ? 'bg-orange-500' :
+                                  'bg-red-500'
+                                } text-white`}
+                              >
+                                {scanResult.reviewsAnalysis.customerMoodAnalysis.overallMood.charAt(0).toUpperCase() + 
+                                 scanResult.reviewsAnalysis.customerMoodAnalysis.overallMood.slice(1)}
+                              </Badge>
+                            </div>
+                          </div>
+                          
+                          <div className="bg-gray-50 rounded-lg p-4">
+                            <p className="text-sm text-gray-700 leading-relaxed">
+                              {scanResult.reviewsAnalysis.customerMoodAnalysis.sentimentSummary}
+                            </p>
+                          </div>
+
+                          {scanResult.reviewsAnalysis.customerMoodAnalysis.keyMoodIndicators && 
+                           scanResult.reviewsAnalysis.customerMoodAnalysis.keyMoodIndicators.length > 0 && (
+                            <div className="mt-4">
+                              <h5 className="text-sm font-medium text-gray-700 mb-2">Key Mood Indicators:</h5>
+                              <div className="flex flex-wrap gap-2">
+                                {scanResult.reviewsAnalysis.customerMoodAnalysis.keyMoodIndicators.slice(0, 4).map((indicator, index) => (
+                                  <span 
+                                    key={index}
+                                    className="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded-full"
+                                  >
+                                    {indicator}
+                                  </span>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+
+                          {scanResult.reviewsAnalysis.customerMoodAnalysis.businessInsights && (
+                            <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-3">
+                              {scanResult.reviewsAnalysis.customerMoodAnalysis.businessInsights.strengthsPerceived && 
+                               scanResult.reviewsAnalysis.customerMoodAnalysis.businessInsights.strengthsPerceived.length > 0 && (
+                                <div>
+                                  <h5 className="text-xs font-medium text-green-600 mb-1">Strengths</h5>
+                                  <ul className="text-xs text-gray-600 space-y-1">
+                                    {scanResult.reviewsAnalysis.customerMoodAnalysis.businessInsights.strengthsPerceived.slice(0, 2).map((strength, index) => (
+                                      <li key={index}>• {strength}</li>
+                                    ))}
+                                  </ul>
+                                </div>
+                              )}
+                              
+                              {scanResult.reviewsAnalysis.customerMoodAnalysis.businessInsights.improvementOpportunities && 
+                               scanResult.reviewsAnalysis.customerMoodAnalysis.businessInsights.improvementOpportunities.length > 0 && (
+                                <div>
+                                  <h5 className="text-xs font-medium text-orange-600 mb-1">Opportunities</h5>
+                                  <ul className="text-xs text-gray-600 space-y-1">
+                                    {scanResult.reviewsAnalysis.customerMoodAnalysis.businessInsights.improvementOpportunities.slice(0, 2).map((opportunity, index) => (
+                                      <li key={index}>• {opportunity}</li>
+                                    ))}
+                                  </ul>
+                                </div>
+                              )}
+                            </div>
+                          )}
+                        </div>
+                      )}
                     </div>
                   ) : (
                     <div className="text-center py-8 text-gray-500">
