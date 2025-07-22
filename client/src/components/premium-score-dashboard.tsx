@@ -1359,7 +1359,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                                   <div className="w-8 h-8 bg-gradient-to-r from-amber-400 to-orange-500 rounded-full flex items-center justify-center shadow-lg">
                                     <div className="text-white text-sm font-bold">⚡</div>
                                   </div>
-                                  <h5 className="font-bold text-amber-800 text-sm">Growth Opportunities</h5>
+                                  <h5 className="font-bold text-amber-800 text-sm">Where Customers want you to Grow</h5>
                                 </div>
                                 <div className="space-y-2">
                                   {moodAnalysis.businessInsights.improvementOpportunities.slice(0, 3).map((opportunity, index) => (
