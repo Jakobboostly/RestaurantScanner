@@ -208,14 +208,10 @@ export class EnhancedSocialMediaDetector {
         const instagramSelectors = [
           'a[href*="instagram.com"]',
           'a[href*="www.instagram.com"]',
-          'a.contact-icon[href*="instagram.com"]', // Specific pattern from SLABpizza
-          'a i.fab.fa-instagram',
-          'a i.fa-instagram', // FontAwesome shorthand
-          'a i.social-icon.fa-instagram', // Specific class combination from SLABpizza
+          'a.contact-icon[href*="instagram.com"]', // Specific pattern from Rib Shack
           'a[class*="instagram"]',
           'a svg[data-icon="instagram"]',
           'a use[href*="instagram"]',
-          'a use[*|href*="instagram"]',
           'a[data-testid="social-link"][href*="instagram.com"]',
           'a img[alt*="Instagram"]',
           'a img[src*="instagram"]'
@@ -239,23 +235,61 @@ export class EnhancedSocialMediaDetector {
         }
 
         // Also check for clickable elements containing Instagram icons (enhanced patterns)
-        const instagramIconElements = $('i.fab.fa-instagram, i.fa-instagram, i.social-icon.fa-instagram, svg use[*|href*="instagram"], use[href*="instagram"]');
-        instagramIconElements.each((_, element) => {
-          const $parent = $(element).closest('a[href]');
-          if ($parent.length) {
-            const href = $parent.attr('href');
-            console.log(`🔍 Instagram icon element found parent link with href: ${href}`);
-            if (href && href.includes('instagram.com')) {
-              const cleanUrl = this.cleanSocialUrl(href, 'instagram');
-              console.log(`🔍 Instagram icon URL cleaned: ${cleanUrl}, valid: ${this.isValidInstagramUrl(cleanUrl)}`);
-              if (cleanUrl && this.isValidInstagramUrl(cleanUrl)) {
-                socialLinks.instagram = cleanUrl;
-                console.log('✅ Instagram URL found from parent link of icon:', cleanUrl);
-                return false; // Break out of each loop
+        console.log('🔍 Scanning for Instagram icon elements...');
+        
+        // Check for FontAwesome Instagram icons inside links
+        const instagramIconSelectors = [
+          'i.fab.fa-instagram',
+          'i.fa-instagram', 
+          'i.social-icon.fa-instagram',
+          'i.fa.fa-instagram'
+        ];
+        
+        for (const iconSelector of instagramIconSelectors) {
+          const $icons = $(iconSelector);
+          console.log(`🔍 Found ${$icons.length} icons with selector: ${iconSelector}`);
+          
+          $icons.each((_, element) => {
+            const $parent = $(element).closest('a[href]');
+            if ($parent.length) {
+              const href = $parent.attr('href');
+              console.log(`🔍 Instagram icon element found parent link with href: ${href}`);
+              if (href && href.includes('instagram.com')) {
+                const cleanUrl = this.cleanSocialUrl(href, 'instagram');
+                console.log(`🔍 Instagram icon URL cleaned: ${cleanUrl}, valid: ${this.isValidInstagramUrl(cleanUrl)}`);
+                if (cleanUrl && this.isValidInstagramUrl(cleanUrl)) {
+                  socialLinks.instagram = cleanUrl;
+                  console.log('✅ Instagram URL found from parent link of icon:', cleanUrl);
+                  return false; // Break out of each loop
+                }
               }
             }
-          }
-        });
+          });
+          
+          if (socialLinks.instagram) break;
+        }
+        
+        // Additional check for SVG use elements (safer approach)
+        if (!socialLinks.instagram) {
+          const $svgUseElements = $('use[href*="instagram"]');
+          console.log(`🔍 Found ${$svgUseElements.length} SVG use elements with Instagram`);
+          
+          $svgUseElements.each((_, element) => {
+            const $parent = $(element).closest('a[href]');
+            if ($parent.length) {
+              const href = $parent.attr('href');
+              console.log(`🔍 SVG Instagram element found parent link with href: ${href}`);
+              if (href && href.includes('instagram.com')) {
+                const cleanUrl = this.cleanSocialUrl(href, 'instagram');
+                if (cleanUrl && this.isValidInstagramUrl(cleanUrl)) {
+                  socialLinks.instagram = cleanUrl;
+                  console.log('✅ Instagram URL found from SVG icon parent:', cleanUrl);
+                  return false;
+                }
+              }
+            }
+          });
+        }
       }
 
       // Search through all text content for additional patterns
