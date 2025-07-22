@@ -76,6 +76,16 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 22, 2025. Implemented competitive opportunity analysis showing "Where your competition is winning":
+  - **Added getCompetitiveOpportunityKeywords() method** - queries DataForSEO for keywords ranking in positions 6+ where competition outranks the restaurant
+  - **Updated premium dashboard display** - changed "Keywords Generated" section to "Where your competition is winning" 
+  - **Enhanced competitive intelligence** - system now identifies keywords where restaurant ranks but not in top 5 positions (optimization opportunities)
+  - **Added competitive opportunity keywords field** - scan results include competitiveOpportunityKeywords array with position 6+ rankings
+  - **Optimized API calls** - competitive opportunities limited to 5 keywords to minimize DataForSEO costs while providing actionable insights
+  - **Enhanced ranking badges** - updated color coding for positions 6-10 (orange), 11-20 (red), 20+ (gray) to highlight competitive gaps
+  - **Improved user messaging** - shows "No competitive opportunities found. Your competition is strong!" when no rankings 6+ exist
+  - **Maintained data authenticity** - uses only real DataForSEO ranked keywords API data with filter ["ranked_serp_element.serp_item.rank_group", ">", 5]
+  - **Strategic focus** - helps restaurants identify specific keywords where competitors are winning and optimization could improve rankings
 - July 22, 2025. Enhanced DataForSEO ranked keywords API with website URL validation and optimized keyword limits:
   - **Fixed business website URL validation** - system now extracts actual business website from Google Business Profile instead of using social media URLs
   - **Added social media domain filtering** - created `isSocialMediaDomain()` helper to exclude Facebook, Instagram, Twitter, etc. from DataForSEO queries

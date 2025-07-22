@@ -701,39 +701,25 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                         <span className="font-medium">{scanResult.domainAuthority || 0}</span>
                       </div>
                       
-                      {/* Keywords Generated List */}
+                      {/* Where your competition is winning */}
                       <div className="bg-[#5F5FFF]/5 border border-[#5F5FFF]/20 rounded-lg p-3 space-y-2">
-                        <h4 className="text-sm font-semibold text-[#5F5FFF] mb-2">Keywords Generated</h4>
+                        <h4 className="text-sm font-semibold text-[#5F5FFF] mb-2">Where your competition is winning</h4>
                         <div className="space-y-1">
                           {(() => {
-                            // Show all keywords from multiple sources
-                            const allKeywords = scanResult.keywords || [];
-                            const targetKeywords = scanResult.keywordAnalysis?.targetKeywords || [];
-                            const rankingKeywords = scanResult.keywordAnalysis?.rankingPositions || [];
+                            // Show competitive opportunity keywords (ranking 6+)
+                            const competitiveKeywords = scanResult.competitiveOpportunityKeywords || [];
                             
-                            // Combine all keyword sources
-                            const combinedKeywords = [
-                              ...allKeywords,
-                              ...targetKeywords,
-                              ...rankingKeywords
-                            ];
+                            console.log('🔍 Frontend displaying competitive opportunity keywords:', competitiveKeywords);
                             
-                            // Remove duplicates and get unique keywords
-                            const uniqueKeywords = combinedKeywords.filter((item, index, self) => 
-                              index === self.findIndex(k => (k.keyword || k) === (item.keyword || item))
-                            );
-                            
-                            console.log('🔍 Frontend displaying all keywords:', uniqueKeywords);
-                            
-                            if (uniqueKeywords.length === 0) {
+                            if (competitiveKeywords.length === 0) {
                               return (
                                 <div className="text-xs text-gray-500 text-center py-2">
-                                  No keywords detected. API configuration may be required.
+                                  No competitive opportunities found. Your competition is strong!
                                 </div>
                               );
                             }
                             
-                            return uniqueKeywords.slice(0, 8).map((keyword, index) => (
+                            return competitiveKeywords.slice(0, 8).map((keyword, index) => (
                               <div key={index} className="flex justify-between items-center text-xs">
                                 <span className="text-gray-700 flex-1 truncate pr-2">
                                   "{keyword.keyword || keyword}"
@@ -743,13 +729,13 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                                     <Badge 
                                       variant="outline" 
                                       className={`text-xs px-2 py-0 ${
-                                        keyword.position <= 3 
-                                          ? 'bg-green-100 text-green-800 border-green-200'
-                                          : keyword.position <= 10
-                                          ? 'bg-yellow-100 text-yellow-800 border-yellow-200'
-                                          : keyword.position <= 20
+                                        keyword.position >= 6 && keyword.position <= 10
                                           ? 'bg-orange-100 text-orange-800 border-orange-200'
-                                          : 'bg-gray-100 text-gray-600 border-gray-200'
+                                          : keyword.position > 10 && keyword.position <= 20
+                                          ? 'bg-red-100 text-red-800 border-red-200'
+                                          : keyword.position > 20
+                                          ? 'bg-gray-100 text-gray-600 border-gray-200'
+                                          : 'bg-yellow-100 text-yellow-800 border-yellow-200'
                                       }`}
                                     >
                                       #{keyword.position}
@@ -765,21 +751,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                             ));
                           })()}
                           
-                          {(() => {
-                            const allKeywords = scanResult.keywords || [];
-                            const targetKeywords = scanResult.keywordAnalysis?.targetKeywords || [];
-                            const rankingKeywords = scanResult.keywordAnalysis?.rankingPositions || [];
-                            const combinedKeywords = [...allKeywords, ...targetKeywords, ...rankingKeywords];
-                            const uniqueKeywords = combinedKeywords.filter((item, index, self) => 
-                              index === self.findIndex(k => (k.keyword || k) === (item.keyword || item))
-                            );
-                            
-                            return uniqueKeywords.length > 8 && (
-                              <div className="text-xs text-gray-500 text-center pt-1">
-                                +{uniqueKeywords.length - 8} more keywords
-                              </div>
-                            );
-                          })()}
+
                         </div>
                       </div>
                       

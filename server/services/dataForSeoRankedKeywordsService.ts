@@ -103,6 +103,85 @@ export class DataForSeoRankedKeywordsService {
   }
 
   /**
+   * Get competitive opportunity keywords (ranking positions 6+)
+   * These are keywords where the restaurant ranks but not in top 5 - optimization opportunities
+   */
+  async getCompetitiveOpportunityKeywords(
+    domain: string, 
+    locationName: string = 'United States',
+    languageCode: string = 'en',
+    limit: number = 5
+  ): Promise<ProcessedKeyword[]> {
+    try {
+      console.log(`🔍 COMPETITIVE OPPORTUNITIES API: Getting opportunity keywords (rank 6+) for domain: ${domain}`);
+      console.log(`🔍 COMPETITIVE OPPORTUNITIES API: Request parameters:`, {
+        target: domain,
+        location_name: locationName,
+        language_code: languageCode,
+        filters: [["ranked_serp_element.serp_item.rank_group", ">", 5]],
+        order_by: ["ranked_serp_element.serp_item.rank_group,asc"],
+        limit: limit
+      });
+      
+      const response = await this.client.post<DataForSeoRankedKeywordsResponse>(
+        '/dataforseo_labs/google/ranked_keywords/live',
+        [{
+          target: domain,
+          location_name: locationName,
+          language_code: languageCode,
+          filters: [["ranked_serp_element.serp_item.rank_group", ">", 5]],
+          order_by: ["ranked_serp_element.serp_item.rank_group,asc"],
+          limit: limit
+        }]
+      );
+
+      console.log(`🔍 COMPETITIVE OPPORTUNITIES API: Response status_code: ${response.data.status_code}`);
+      console.log(`🔍 COMPETITIVE OPPORTUNITIES API: Response status_message: ${response.data.status_message}`);
+
+      if (response.data.status_code !== 20000) {
+        console.error(`🔍 COMPETITIVE OPPORTUNITIES API: Error - ${response.data.status_message}`);
+        throw new Error(`DataForSEO API error: ${response.data.status_message}`);
+      }
+
+      const task = response.data.tasks[0];
+      console.log(`🔍 COMPETITIVE OPPORTUNITIES API: Task status_code: ${task?.status_code}`);
+      console.log(`🔍 COMPETITIVE OPPORTUNITIES API: Task status_message: ${task?.status_message}`);
+      
+      if (!task || task.status_code !== 20000) {
+        console.error(`🔍 COMPETITIVE OPPORTUNITIES API: Task failed - ${task?.status_message || 'Unknown error'}`);
+        throw new Error(`Task failed: ${task?.status_message || 'Unknown error'}`);
+      }
+
+      const result = task.result && task.result[0];
+      if (!result || !result.items) {
+        console.log(`🔍 COMPETITIVE OPPORTUNITIES API: No opportunity keywords found for domain: ${domain}`);
+        return [];
+      }
+
+      console.log(`🔍 COMPETITIVE OPPORTUNITIES API: Total count: ${result.total_count}`);
+      console.log(`🔍 COMPETITIVE OPPORTUNITIES API: Items count: ${result.items_count}`);
+      console.log(`🔍 COMPETITIVE OPPORTUNITIES API: Requested limit: ${limit}`);
+
+      const keywords = result.items.map((item: any) => this.processKeywordFromAPI(item));
+      
+      // Apply the requested limit to the returned keywords
+      const limitedKeywords = keywords.slice(0, limit);
+      
+      console.log(`🔍 COMPETITIVE OPPORTUNITIES API: Found ${keywords.length} opportunity keywords, returning ${limitedKeywords.length} (limit: ${limit}) for ${domain}`);
+      console.log(`🔍 COMPETITIVE OPPORTUNITIES API: Sample opportunity keyword:`, limitedKeywords[0] || 'No keywords');
+      return limitedKeywords;
+
+    } catch (error) {
+      console.error('🔍 COMPETITIVE OPPORTUNITIES API: Error fetching opportunity keywords:', error);
+      if (axios.isAxiosError(error)) {
+        console.error('🔍 COMPETITIVE OPPORTUNITIES API: Response data:', error.response?.data);
+        console.error('🔍 COMPETITIVE OPPORTUNITIES API: Response status:', error.response?.status);
+      }
+      return [];
+    }
+  }
+
+  /**
    * Get ranked keywords for a restaurant domain
    */
   async getRankedKeywords(

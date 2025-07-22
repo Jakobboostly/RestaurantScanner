@@ -103,6 +103,7 @@ export class AdvancedScannerService {
     // Initialize variables that will be used throughout the scan
     let mobileExperience: any;
     let desktopResult: any;
+    let processedCompetitiveKeywords: any[] = [];
     const TOTAL_PHASES = 6;
     const MAX_SCAN_TIME = PHASE_DURATION * TOTAL_PHASES; // 24 seconds total
     
@@ -231,7 +232,23 @@ export class AdvancedScannerService {
       });
       
       const rankedKeywords = await rankedKeywordsPromise as any[];
-      console.log(`Found ${rankedKeywords.length} ranked keywords for ${domain}`);
+      console.log(`Found ${rankedKeywords.length} ranked keywords for ${actualDomain}`);
+      
+      // Get competitive opportunity keywords (ranking 6+) - "Where your competition is winning"
+      console.log(`🔍 ADVANCED SCANNER: Getting competitive opportunity keywords (rank 6+) for domain: ${actualDomain}`);
+      
+      const competitiveOpportunityPromise = Promise.race([
+        this.rankedKeywordsService.getCompetitiveOpportunityKeywords(actualDomain, 'United States', 'en', 5),
+        new Promise((_, reject) => 
+          setTimeout(() => reject(new Error('Competitive opportunity keywords timeout')), 8000)
+        )
+      ]).catch(error => {
+        console.error('Competitive opportunity keywords failed:', error);
+        return [];
+      });
+      
+      const competitiveOpportunityKeywords = await competitiveOpportunityPromise as any[];
+      console.log(`Found ${competitiveOpportunityKeywords.length} competitive opportunity keywords for ${actualDomain}`);
       
       // Process the authentic ranked keywords
       const processedKeywords = rankedKeywords.map((keyword: any) => ({
@@ -243,6 +260,25 @@ export class AdvancedScannerService {
         cpc: keyword.cpc,
         competition: keyword.competition,
         opportunity: keyword.position <= 10 ? 100 : (keyword.position <= 20 ? 75 : 50),
+        url: keyword.url,
+        title: keyword.title,
+        description: keyword.description,
+        isNew: keyword.isNew,
+        isLost: keyword.isLost,
+        positionChange: keyword.positionChange,
+        previousPosition: keyword.previousPosition
+      }));
+      
+      // Process competitive opportunity keywords
+      processedCompetitiveKeywords = competitiveOpportunityKeywords.map((keyword: any) => ({
+        keyword: keyword.keyword,
+        position: keyword.position,
+        searchVolume: keyword.searchVolume,
+        difficulty: keyword.difficulty,
+        intent: keyword.intent,
+        cpc: keyword.cpc,
+        competition: keyword.competition,
+        opportunity: keyword.position > 20 ? 25 : (keyword.position > 10 ? 50 : 75),
         url: keyword.url,
         title: keyword.title,
         description: keyword.description,
@@ -642,6 +678,7 @@ export class AdvancedScannerService {
       issues,
       recommendations,
       keywords: enrichedKeywordData,  // Primary keyword location with position data
+      competitiveOpportunityKeywords: processedCompetitiveKeywords || [],  // "Where your competition is winning"
       keywordAnalysis: enhancedKeywordAnalysis,
       competitors: await this.generateDetailedCompetitorAnalysis(competitors, restaurantName, businessProfile, keywordData),
       competitorIntelligence,
