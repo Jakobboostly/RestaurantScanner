@@ -770,9 +770,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                             <h3 className="font-black text-white tracking-wide drop-shadow-lg text-[31px]">
                               ⚠️ CRITICAL RANKING ALERT
                             </h3>
-                            <p className="text-yellow-200 text-xs font-bold uppercase tracking-widest">
-                              CUSTOMERS CAN'T FIND YOU
-                            </p>
+                            <p className="text-yellow-200 font-bold uppercase tracking-widest text-[16px]">CUSTOMERS CAN'T FIND YOU!</p>
                           </div>
                         </div>
                         
