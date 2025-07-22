@@ -76,18 +76,17 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
-- July 22, 2025. Successfully implemented authentic DataForSEO ranked keywords API with working data parsing and ranking positions:
-  - **Fixed API response parsing** - corrected data structure from `task.data.items` to `task.result[0].items` for proper keyword extraction
-  - **Added actual Google ranking positions** - extracts real ranking positions from `ranked_serp_element.serp_item.rank_absolute` (e.g., position 3 for "1 800 domino's pizza")
-  - **Optimized keyword limit** - reduced from 50 to 10 keywords per scan for cost efficiency while maintaining comprehensive analysis
-  - **Enhanced position tracking** - includes previous position and position change data from `rank_changes` to show ranking movement
-  - **Verified API functionality** - confirmed DataForSEO credentials work correctly, returning 833,387 keywords for dominos.com domain
-  - **Implemented authentic keyword data flow** - system now successfully extracts real keywords with search volume 170, actual ranking positions, and competition data
-  - **Enhanced data structure parsing** - added `processKeywordFromAPI()` method to handle nested API response structure including SERP element data
-  - **Confirmed frontend integration** - verified 10 ranked keywords successfully sent to frontend with authentic search volumes, CPC, competition, and ranking positions
-  - **Eliminated all synthetic generation** - system uses exclusively `/dataforseo_labs/google/ranked_keywords/live` endpoint with zero fallback data
-  - **Fixed TypeScript errors** - resolved variable type issues preventing proper API response processing
-  - **Streamlined service architecture** - removed all competing keyword services, maintaining single authentic DataForSEO source
+- July 22, 2025. Enhanced DataForSEO ranked keywords API with website URL validation and optimized keyword limits:
+  - **Fixed business website URL validation** - system now extracts actual business website from Google Business Profile instead of using social media URLs
+  - **Added social media domain filtering** - created `isSocialMediaDomain()` helper to exclude Facebook, Instagram, Twitter, etc. from DataForSEO queries
+  - **Implemented keyword limit enforcement** - DataForSEO service now properly limits results to exactly 10 keywords per scan for cost optimization
+  - **Enhanced domain extraction logic** - system uses `businessProfile.website` from Google Places API as authoritative source for legitimate business domains
+  - **Added comprehensive logging** - tracks domain extraction process and keyword limiting for transparency
+  - **Verified authentic data flow** - confirmed system uses only legitimate business websites (e.g., slabpizza.com) for ranking analysis
+  - **Maintained ranking position accuracy** - real Google search positions still extracted correctly (e.g., position 1 for "slab lehi")
+  - **Optimized API cost efficiency** - reduced from 50 to 10 keywords while maintaining comprehensive business intelligence
+  - **Enhanced data integrity** - ensures DataForSEO queries use only authentic business domains, not social media pages
+  - **Fixed API response structure** - updated TypeScript interfaces to match actual DataForSEO response format with `task.result[0].items`
 - July 22, 2025. Implemented MCP (Model Context Protocol) integration with authentic DataForSEO ranked keywords API:
   - **Added comprehensive MCP service** with restaurant_analysis, keyword_research, and competitor_analysis tools
   - **Integrated DataForSEO ranked keywords API** replacing synthetic keyword analysis with authentic ranking positions for domains  

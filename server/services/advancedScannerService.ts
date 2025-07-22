@@ -198,11 +198,30 @@ export class AdvancedScannerService {
       const phase3Start = Date.now();
       onProgress({ progress: 42, status: 'Checking search rankings...' });
       
+      // Extract the actual business website domain from Google Business Profile
+      let actualDomain = domain;
+      if (businessProfile?.website) {
+        try {
+          const websiteUrl = new URL(businessProfile.website);
+          const extractedDomain = websiteUrl.hostname.replace(/^www\./, '');
+          
+          // Only use legitimate business domains, not social media URLs
+          if (!this.isSocialMediaDomain(extractedDomain)) {
+            actualDomain = extractedDomain;
+            console.log(`🔍 ADVANCED SCANNER: Using actual business website domain: ${actualDomain} (from Google Business Profile)`);
+          } else {
+            console.log(`🔍 ADVANCED SCANNER: Skipping social media URL: ${extractedDomain}, using fallback domain: ${actualDomain}`);
+          }
+        } catch (error) {
+          console.error('Failed to parse business website URL:', error);
+        }
+      }
+      
       // Get authentic ranked keywords using DataForSEO ranked keywords API
-      console.log(`🔍 ADVANCED SCANNER: Getting real ranked keywords for domain: ${domain}`);
+      console.log(`🔍 ADVANCED SCANNER: Getting real ranked keywords for domain: ${actualDomain}`);
       
       const rankedKeywordsPromise = Promise.race([
-        this.rankedKeywordsService.getRankedKeywords(domain, 'United States', 'en', 50),
+        this.rankedKeywordsService.getRankedKeywords(actualDomain, 'United States', 'en', 10),
         new Promise((_, reject) => 
           setTimeout(() => reject(new Error('Ranked keywords timeout')), 8000)
         )
@@ -2583,5 +2602,29 @@ export class AdvancedScannerService {
     } else {
       return 'negative';
     }
+  }
+
+  /**
+   * Check if a domain is a social media platform
+   */
+  private isSocialMediaDomain(domain: string): boolean {
+    const socialMediaDomains = [
+      'facebook.com',
+      'instagram.com',
+      'twitter.com',
+      'x.com',
+      'tiktok.com',
+      'youtube.com',
+      'linkedin.com',
+      'snapchat.com',
+      'pinterest.com',
+      'whatsapp.com',
+      'telegram.org',
+      'discord.com'
+    ];
+    
+    return socialMediaDomains.some(socialDomain => 
+      domain === socialDomain || domain.endsWith('.' + socialDomain)
+    );
   }
 }

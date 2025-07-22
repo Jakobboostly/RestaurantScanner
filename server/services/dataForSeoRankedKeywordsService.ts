@@ -56,18 +56,14 @@ interface DataForSeoRankedKeywordsResponse {
     cost: number;
     result_count: number;
     path: string[];
-    data: {
-      api: string;
-      function: string;
-      se: string;
-      language_code: string;
-      location_code: number;
-      target: string;
+    result: Array<{
       se_type: string;
-      device: string;
+      location_code: number;
+      language_code: string;
+      total_count: number;
       items_count: number;
-      items: RankedKeyword[];
-    };
+      items: any[];
+    }>;
   }>;
 }
 
@@ -164,12 +160,16 @@ export class DataForSeoRankedKeywordsService {
 
       console.log(`🔍 RANKED KEYWORDS API: Total count: ${result.total_count}`);
       console.log(`🔍 RANKED KEYWORDS API: Items count: ${result.items_count}`);
+      console.log(`🔍 RANKED KEYWORDS API: Requested limit: ${limit}`);
 
       const keywords = result.items.map((item: any) => this.processKeywordFromAPI(item));
       
-      console.log(`🔍 RANKED KEYWORDS API: Found ${keywords.length} ranked keywords for ${domain}`);
-      console.log(`🔍 RANKED KEYWORDS API: Sample keyword:`, keywords[0] || 'No keywords');
-      return keywords;
+      // Apply the requested limit to the returned keywords
+      const limitedKeywords = keywords.slice(0, limit);
+      
+      console.log(`🔍 RANKED KEYWORDS API: Found ${keywords.length} ranked keywords, returning ${limitedKeywords.length} (limit: ${limit}) for ${domain}`);
+      console.log(`🔍 RANKED KEYWORDS API: Sample keyword:`, limitedKeywords[0] || 'No keywords');
+      return limitedKeywords;
 
     } catch (error) {
       console.error('🔍 RANKED KEYWORDS API: Error fetching ranked keywords:', error);
