@@ -2,6 +2,7 @@ import axios from 'axios';
 import * as cheerio from 'cheerio';
 import { GoogleBusinessService } from './googleBusinessService';
 import { EnhancedFacebookDetector } from './enhancedFacebookDetector';
+import { EnhancedInstagramDetector } from './enhancedInstagramDetector';
 
 export interface SocialMediaResult {
   url: string;
@@ -24,12 +25,14 @@ export interface SocialMediaLinks {
 export class EnhancedSocialMediaDetector {
   private googleBusinessService: GoogleBusinessService;
   private enhancedFacebookDetector: EnhancedFacebookDetector;
+  private enhancedInstagramDetector: EnhancedInstagramDetector;
   private timeout = 12000; // 12 seconds for comprehensive scanning
 
   constructor() {
     const apiKey = process.env.GOOGLE_PLACES_API_KEY || process.env.GOOGLE_API_KEY || '';
     this.googleBusinessService = new GoogleBusinessService(apiKey);
     this.enhancedFacebookDetector = new EnhancedFacebookDetector();
+    this.enhancedInstagramDetector = new EnhancedInstagramDetector();
   }
 
   async detectAllSocialMedia(
@@ -62,13 +65,34 @@ export class EnhancedSocialMediaDetector {
       console.error('Enhanced Facebook detection failed:', error);
     }
     
-    // Step 2: Enhanced website scanning for other platforms
-    console.log('🔍 Step 2: Starting enhanced website scanning...');
+    // Step 1.5: Use enhanced Instagram detector with comprehensive workflow
+    console.log('🔍 Running enhanced Instagram detection with comprehensive workflow...');
+    try {
+      const instagramResult = await this.enhancedInstagramDetector.detectInstagramPage(
+        websiteUrl,
+        businessName,
+        address,
+        phone,
+        placeId
+      );
+      
+      if (instagramResult) {
+        results.instagram = instagramResult.url;
+        console.log('✅ Enhanced Instagram detection successful:', instagramResult.url);
+      } else {
+        console.log('❌ Enhanced Instagram detection found no results');
+      }
+    } catch (error) {
+      console.error('Enhanced Instagram detection failed:', error);
+    }
+    
+    // Step 2: Enhanced website scanning for other platforms (excluding Facebook and Instagram)
+    console.log('🔍 Step 2: Starting enhanced website scanning for remaining platforms...');
     const websiteLinks = await this.enhancedWebsiteScan(websiteUrl);
     console.log('🔍 Website scan results:', websiteLinks);
-    // Only merge non-Facebook results to avoid overriding enhanced Facebook detection
+    // Only merge non-Facebook and non-Instagram results to avoid overriding enhanced detection
     Object.keys(websiteLinks).forEach(platform => {
-      if (platform !== 'facebook') {
+      if (platform !== 'facebook' && platform !== 'instagram') {
         results[platform as keyof SocialMediaLinks] = websiteLinks[platform as keyof SocialMediaLinks];
         console.log(`✅ Added ${platform}: ${websiteLinks[platform as keyof SocialMediaLinks]}`);
       }
@@ -164,8 +188,8 @@ export class EnhancedSocialMediaDetector {
           'a i.fab.fa-facebook, a i.fab.fa-facebook-f',
           'a[class*="facebook"]',
           'a svg[data-icon="facebook"]',
-          'a use[href*="facebook"]',
-          'a use[*|href*="facebook"]'
+          // 'a use[href*="facebook"]', // Removed: namespaced attributes not supported
+          // 'a use[*|href*="facebook"]' // Removed: namespaced attributes not supported
         ];
 
         for (const selector of facebookSelectors) {
@@ -211,7 +235,7 @@ export class EnhancedSocialMediaDetector {
           'a.contact-icon[href*="instagram.com"]', // Specific pattern from Rib Shack
           'a[class*="instagram"]',
           'a svg[data-icon="instagram"]',
-          'a use[href*="instagram"]',
+          // 'a use[href*="instagram"]', // Removed: namespaced attributes not supported
           'a[data-testid="social-link"][href*="instagram.com"]',
           'a img[alt*="Instagram"]',
           'a img[src*="instagram"]'

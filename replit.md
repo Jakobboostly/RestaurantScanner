@@ -76,6 +76,14 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 22, 2025. Successfully fixed Instagram detection workflow by resolving timeout and CSS selector issues:
+  - **Fixed critical timeout issue**: Increased social media detection timeout from 8 seconds to 15 seconds in advancedScannerService
+  - **Instagram detection now working**: System successfully detects Instagram URLs like "https://www.instagram.com/ribshacksmokehouse"
+  - **Fixed CSS selector errors**: Removed problematic namespaced attribute selectors (use[href*="instagram"], use[*|href*="facebook"]) that caused "Namespaced attributes are not yet supported by css-select" errors
+  - **Enhanced comprehensive workflow**: Instagram detection now runs with same 6-step process as Facebook detection (website scan, Google Places integration, recursive scanning, business overrides, name+location search)
+  - **Verified end-to-end functionality**: Instagram detection logs show all 5 steps running successfully with proper error handling
+  - **Improved debugging**: Added comprehensive step-by-step logging to track Instagram detection progress through each phase
+  - **Performance optimization**: Instagram detection completes within 15-second timeframe while maintaining thorough scanning approach
 - July 22, 2025. Enhanced Instagram detection to capture contact icon links like "https://www.instagram.com/slabpizza":
   - Added specific selectors for `a.contact-icon[href*="instagram.com"]` pattern found on SLABpizza website
   - Enhanced Instagram icon detection with FontAwesome shorthand patterns (`i.fa-instagram`, `i.social-icon.fa-instagram`)
