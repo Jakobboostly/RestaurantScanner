@@ -76,6 +76,12 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 22, 2025. Enhanced Instagram detection to capture contact icon links like "https://www.instagram.com/slabpizza":
+  - Added specific selectors for `a.contact-icon[href*="instagram.com"]` pattern found on SLABpizza website
+  - Enhanced Instagram icon detection with FontAwesome shorthand patterns (`i.fa-instagram`, `i.social-icon.fa-instagram`)
+  - Improved Instagram URL validation to handle query parameters and edge cases
+  - Added comprehensive debug logging to track Instagram detection process step-by-step
+  - Fixed detection gap where contact icon Instagram links were being missed by existing selectors
 - July 22, 2025. Fixed OpenAI customer mood analysis display and enhanced Instagram detection:
   - Resolved race condition where OpenAI analysis completed after main scan, preventing data from reaching frontend
   - Implemented asynchronous mood analysis with background processing and polling architecture

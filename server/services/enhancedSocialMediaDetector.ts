@@ -196,12 +196,16 @@ export class EnhancedSocialMediaDetector {
       if (!socialLinks.instagram) {
         const instagramSelectors = [
           'a[href*="instagram.com"]',
+          'a[href*="www.instagram.com"]',
+          'a.contact-icon[href*="instagram.com"]', // Specific pattern from SLABpizza
           'a i.fab.fa-instagram',
+          'a i.fa-instagram', // FontAwesome shorthand
+          'a i.social-icon.fa-instagram', // Specific class combination from SLABpizza
           'a[class*="instagram"]',
           'a svg[data-icon="instagram"]',
           'a use[href*="instagram"]',
           'a use[*|href*="instagram"]',
-          'a[data-testid="social-link"][href*="instagram.com"]', // Specific pattern from your example
+          'a[data-testid="social-link"][href*="instagram.com"]',
           'a img[alt*="Instagram"]',
           'a img[src*="instagram"]'
         ];
@@ -210,8 +214,10 @@ export class EnhancedSocialMediaDetector {
           const $link = $(selector).first();
           if ($link.length) {
             const href = $link.attr('href');
+            console.log(`🔍 Instagram selector "${selector}" found element with href: ${href}`);
             if (href && href.includes('instagram.com')) {
               const cleanUrl = this.cleanSocialUrl(href, 'instagram');
+              console.log(`🔍 Instagram URL cleaned: ${cleanUrl}, valid: ${this.isValidInstagramUrl(cleanUrl)}`);
               if (cleanUrl && this.isValidInstagramUrl(cleanUrl)) {
                 socialLinks.instagram = cleanUrl;
                 console.log('✅ Instagram URL extracted from clickable icon:', cleanUrl);
@@ -221,14 +227,16 @@ export class EnhancedSocialMediaDetector {
           }
         }
 
-        // Also check for clickable elements containing Instagram icons
-        const instagramIconElements = $('i.fab.fa-instagram, svg use[*|href*="instagram"], use[href*="instagram"]');
+        // Also check for clickable elements containing Instagram icons (enhanced patterns)
+        const instagramIconElements = $('i.fab.fa-instagram, i.fa-instagram, i.social-icon.fa-instagram, svg use[*|href*="instagram"], use[href*="instagram"]');
         instagramIconElements.each((_, element) => {
           const $parent = $(element).closest('a[href]');
           if ($parent.length) {
             const href = $parent.attr('href');
+            console.log(`🔍 Instagram icon element found parent link with href: ${href}`);
             if (href && href.includes('instagram.com')) {
               const cleanUrl = this.cleanSocialUrl(href, 'instagram');
+              console.log(`🔍 Instagram icon URL cleaned: ${cleanUrl}, valid: ${this.isValidInstagramUrl(cleanUrl)}`);
               if (cleanUrl && this.isValidInstagramUrl(cleanUrl)) {
                 socialLinks.instagram = cleanUrl;
                 console.log('✅ Instagram URL found from parent link of icon:', cleanUrl);
@@ -757,16 +765,23 @@ export class EnhancedSocialMediaDetector {
   }
 
   private isValidInstagramUrl(url: string): boolean {
+    // Enhanced Instagram URL validation with better pattern matching
     const instagramPatterns = [
       /^https?:\/\/(www\.)?instagram\.com\/[a-zA-Z0-9\._-]+\/?$/,
-      /^https?:\/\/(www\.)?instagram\.com\/[a-zA-Z0-9\._-]+\/$/
+      /^https?:\/\/(www\.)?instagram\.com\/[a-zA-Z0-9\._-]+$/,
+      /^https?:\/\/(www\.)?instagram\.com\/[a-zA-Z0-9\._-]+\/?.*$/  // Allow query parameters
     ];
 
-    return instagramPatterns.some(pattern => pattern.test(url)) && 
+    const isValid = instagramPatterns.some(pattern => pattern.test(url)) && 
            !url.includes('/p/') && 
            !url.includes('/reel/') && 
            !url.includes('/tv/') &&
-           !url.includes('/stories/');
+           !url.includes('/stories/') &&
+           !url.includes('/explore/') &&
+           !url.includes('/accounts/');
+    
+    console.log(`🔍 Instagram URL validation: ${url} -> ${isValid ? 'VALID' : 'INVALID'}`);
+    return isValid;
   }
 
   private isValidTwitterUrl(url: string): boolean {
