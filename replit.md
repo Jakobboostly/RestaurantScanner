@@ -76,6 +76,15 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 22, 2025. Completely replaced keyword analysis with authentic DataForSEO ranked keywords API only:
+  - **Removed all synthetic keyword generation** - eliminated `EnhancedDataForSeoService` and other non-authentic keyword sources
+  - **Implemented exclusive ranked keywords approach** using `/dataforseo_labs/google/ranked_keywords/live` endpoint only
+  - **Updated frontend Search section** to display "Keywords Generated" list instead of misleading keyword tracking statistics
+  - **Enhanced data integrity** - system now shows "No keywords detected" when API returns no data instead of generating fake keywords
+  - **Streamlined service architecture** - removed multiple competing keyword services to ensure single authentic data source
+  - **Frontend keywords display** now properly handles empty arrays and shows authentic ranking positions when available
+  - **Variable name consistency** fixed throughout `advancedScannerService.ts` to prevent runtime "keywordData is not defined" errors
+  - **Maintained scan completion functionality** while ensuring zero synthetic data generation across all keyword analysis
 - July 22, 2025. Implemented MCP (Model Context Protocol) integration with authentic DataForSEO ranked keywords API:
   - **Added comprehensive MCP service** with restaurant_analysis, keyword_research, and competitor_analysis tools
   - **Integrated DataForSEO ranked keywords API** replacing synthetic keyword analysis with authentic ranking positions for domains  

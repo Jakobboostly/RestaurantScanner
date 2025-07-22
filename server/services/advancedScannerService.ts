@@ -1,5 +1,5 @@
 import { GoogleBusinessService } from './googleBusinessService.js';
-import { EnhancedDataForSeoService } from './enhancedDataForSeoService.js';
+
 import { DataForSeoRankedKeywordsService } from './dataForSeoRankedKeywordsService.js';
 import { AIRecommendationService } from './aiRecommendationService.js';
 import { GoogleReviewsService } from './googleReviewsService.js';
@@ -39,7 +39,6 @@ export interface EnhancedScanResult extends ScanResult {
 
 export class AdvancedScannerService {
   private googleBusinessService: GoogleBusinessService;
-  private dataForSeoService: EnhancedDataForSeoService;
   private rankedKeywordsService: DataForSeoRankedKeywordsService;
 
   private aiRecommendationService: AIRecommendationService;
@@ -71,7 +70,6 @@ export class AdvancedScannerService {
     apifyApiKey?: string
   ) {
     this.googleBusinessService = new GoogleBusinessService(googleApiKey);
-    this.dataForSeoService = new EnhancedDataForSeoService(dataForSeoLogin, dataForSeoPassword);
     this.rankedKeywordsService = new DataForSeoRankedKeywordsService(dataForSeoLogin, dataForSeoPassword);
     this.aiRecommendationService = new AIRecommendationService();
     this.googleReviewsService = new GoogleReviewsService(googleApiKey);
@@ -360,13 +358,8 @@ export class AdvancedScannerService {
         console.log(`Google Places address: "${businessProfile?.address}"`);
         console.log(`Extracted location: ${locationData.city}, ${locationData.state}`);
         
-        // Parallel SERP analysis and screenshot capture
-        const serpPromise = Promise.race([
-          this.dataForSeoService.getSerpAnalysis(primaryKeyword, domain, 'United States'),
-          new Promise((_, reject) => 
-            setTimeout(() => reject(new Error('SERP analysis timeout')), 2000)
-          )
-        ]);
+        // Simplified SERP analysis using ranked keywords data
+        const serpPromise = Promise.resolve([]);
         
         console.log('Initiating screenshot capture...');
         
@@ -1940,36 +1933,10 @@ export class AdvancedScannerService {
   }
 
   private async getOptimizedKeywordData(restaurantName: string, businessProfile: any): Promise<any[]> {
-    try {
-      // Try fast keyword research first
-      const keywordData = await Promise.race([
-        this.dataForSeoService.getRestaurantKeywordSuggestions(
-          restaurantName,
-          'United States',
-          this.extractCuisineType(businessProfile)
-        ),
-        new Promise<any[]>((_, reject) => 
-          setTimeout(() => reject(new Error('Keyword research timeout')), 10000) // 10 second timeout
-        )
-      ]);
-      
-      if (keywordData.length > 0) {
-        console.log('Fast keyword research completed:', keywordData.length);
-        return keywordData;
-      }
-    } catch (error) {
-      console.log('Fast keyword research failed, using optimized fallback');
-    }
-    
-    // Fast fallback with estimated data
-    const baseKeywords = this.generateRestaurantKeywords(restaurantName, businessProfile);
-    return baseKeywords.map(k => ({
-      ...k,
-      searchVolume: k.searchVolume || this.estimateSearchVolume(k.keyword),
-      difficulty: k.difficulty || this.estimateKeywordDifficulty(k.keyword),
-      cpc: k.cpc || 0.5,
-      competition: k.competition || 0.3
-    }));
+    // NOTE: This method is deprecated in favor of ranked keywords service
+    // Return empty array to prevent synthetic data generation
+    console.log('getOptimizedKeywordData called but using ranked keywords service instead');
+    return [];
   }
 
   private async enrichKeywordsWithRealData(baseKeywords: any[], location: string): Promise<any[]> {

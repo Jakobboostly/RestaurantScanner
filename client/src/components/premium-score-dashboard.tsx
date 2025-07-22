@@ -697,19 +697,90 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                         <span className="font-bold text-lg text-[#5F5FFF]">{scanResult.seo || 0}/100</span>
                       </div>
                       <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">Keywords Tracked</span>
-                        <span className="font-medium">{scanResult.keywordAnalysis?.targetKeywords?.length || 0}</span>
+                        <span className="text-sm text-gray-600">Domain Authority</span>
+                        <span className="font-medium">{scanResult.domainAuthority || 0}</span>
                       </div>
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">Ranking Keywords</span>
-                        <span className="font-medium">{(() => {
-                          // Check multiple data sources for ranking keywords
-                          const keywordsRanked = scanResult.keywords?.filter(k => k.position && k.position <= 20).length || 0;
-                          const serpRanked = scanResult.keywordAnalysis?.rankingPositions?.filter(r => r.position && r.position <= 20).length || 0;
-                          const maxRanked = Math.max(keywordsRanked, serpRanked);
-                          console.log('🔍 Frontend ranking keywords count:', { keywordsRanked, serpRanked, maxRanked });
-                          return maxRanked;
-                        })()}</span>
+                      
+                      {/* Keywords Generated List */}
+                      <div className="bg-[#5F5FFF]/5 border border-[#5F5FFF]/20 rounded-lg p-3 space-y-2">
+                        <h4 className="text-sm font-semibold text-[#5F5FFF] mb-2">Keywords Generated</h4>
+                        <div className="space-y-1">
+                          {(() => {
+                            // Show all keywords from multiple sources
+                            const allKeywords = scanResult.keywords || [];
+                            const targetKeywords = scanResult.keywordAnalysis?.targetKeywords || [];
+                            const rankingKeywords = scanResult.keywordAnalysis?.rankingPositions || [];
+                            
+                            // Combine all keyword sources
+                            const combinedKeywords = [
+                              ...allKeywords,
+                              ...targetKeywords,
+                              ...rankingKeywords
+                            ];
+                            
+                            // Remove duplicates and get unique keywords
+                            const uniqueKeywords = combinedKeywords.filter((item, index, self) => 
+                              index === self.findIndex(k => (k.keyword || k) === (item.keyword || item))
+                            );
+                            
+                            console.log('🔍 Frontend displaying all keywords:', uniqueKeywords);
+                            
+                            if (uniqueKeywords.length === 0) {
+                              return (
+                                <div className="text-xs text-gray-500 text-center py-2">
+                                  No keywords detected. API configuration may be required.
+                                </div>
+                              );
+                            }
+                            
+                            return uniqueKeywords.slice(0, 8).map((keyword, index) => (
+                              <div key={index} className="flex justify-between items-center text-xs">
+                                <span className="text-gray-700 flex-1 truncate pr-2">
+                                  "{keyword.keyword || keyword}"
+                                </span>
+                                <div className="flex items-center gap-2">
+                                  {keyword.position && (
+                                    <Badge 
+                                      variant="outline" 
+                                      className={`text-xs px-2 py-0 ${
+                                        keyword.position <= 3 
+                                          ? 'bg-green-100 text-green-800 border-green-200'
+                                          : keyword.position <= 10
+                                          ? 'bg-yellow-100 text-yellow-800 border-yellow-200'
+                                          : keyword.position <= 20
+                                          ? 'bg-orange-100 text-orange-800 border-orange-200'
+                                          : 'bg-gray-100 text-gray-600 border-gray-200'
+                                      }`}
+                                    >
+                                      #{keyword.position}
+                                    </Badge>
+                                  )}
+                                  {keyword.searchVolume && (
+                                    <span className="text-xs text-gray-500">
+                                      {keyword.searchVolume > 1000 ? `${Math.round(keyword.searchVolume / 1000)}k` : keyword.searchVolume}
+                                    </span>
+                                  )}
+                                </div>
+                              </div>
+                            ));
+                          })()}
+                          
+                          {(() => {
+                            const allKeywords = scanResult.keywords || [];
+                            const targetKeywords = scanResult.keywordAnalysis?.targetKeywords || [];
+                            const rankingKeywords = scanResult.keywordAnalysis?.rankingPositions || [];
+                            const combinedKeywords = [...allKeywords, ...targetKeywords, ...rankingKeywords];
+                            const uniqueKeywords = combinedKeywords.filter((item, index, self) => 
+                              index === self.findIndex(k => (k.keyword || k) === (item.keyword || item))
+                            );
+                            
+                            return uniqueKeywords.length > 8 && (
+                              <div className="text-xs text-gray-500 text-center pt-1">
+                                +{uniqueKeywords.length - 8} more keywords
+                              </div>
+                            );
+                          })()}
+                        </div>
                       </div>
                       
                       {/* Show actual ranking keywords from multiple sources */}
