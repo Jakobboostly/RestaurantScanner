@@ -928,13 +928,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                                 e.currentTarget.style.display = 'none';
                               }}
                             />
-                            <div className="absolute bottom-1 left-1 bg-black/70 text-white text-xs px-1.5 py-0.5 rounded">
-                              {(() => {
-                                // Generate realistic photo dates (recent months)
-                                const dates = ['2 days ago', '1 week ago', '2 weeks ago', '1 month ago', '2 months ago', '3 months ago', '4 months ago', '5 months ago', '6 months ago', '7 months ago'];
-                                return dates[index % dates.length];
-                              })()}
-                            </div>
+
                             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 rounded-lg flex items-center justify-center">
                               <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <Share2 className="w-4 h-4 text-white" />
