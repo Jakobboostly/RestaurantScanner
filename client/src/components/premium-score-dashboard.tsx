@@ -830,7 +830,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                   </div>
 
                   {/* Right Side - Where You Rank Button */}
-                  <div className="space-y-4">
+                  <div className="space-y-4 pt-[65px] pb-[65px]">
                     {/* URGENT BOOSTLY RANKING WARNING */}
                     <div className="bg-gradient-to-r from-[#4C1D95] via-[#5B21B6] to-[#6B21A8] border-4 border-yellow-400 rounded-xl p-6 text-center text-white shadow-2xl relative overflow-hidden">
                       <div className="relative z-10">
