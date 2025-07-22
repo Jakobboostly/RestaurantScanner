@@ -11,7 +11,6 @@ import { RestaurantSearchScreenshotService } from "./services/restaurantSearchSc
 import screenshotsRouter from "./routes/screenshots";
 import { z } from "zod";
 import OpenAI from "openai";
-import { PlayfulTooltipService } from "./services/playfulTooltipService";
 
 
 
@@ -443,48 +442,6 @@ export async function registerRoutes(app: Express): Promise<Server> {
       console.error('Mood analysis endpoint error:', error);
       return res.status(500).json({ 
         error: 'Failed to get mood analysis status' 
-      });
-    }
-  });
-
-  // Playful tooltips endpoint
-  app.post("/api/playful-tooltips", async (req, res) => {
-    try {
-      const { requests } = req.body;
-      
-      if (!requests || !Array.isArray(requests)) {
-        return res.status(400).json({ error: "Requests array is required" });
-      }
-
-      const tooltips = await PlayfulTooltipService.generateMultipleTooltips(requests);
-      
-      res.json({ tooltips });
-    } catch (error) {
-      console.error('Playful tooltips generation failed:', error);
-      res.status(500).json({ 
-        error: 'Failed to generate playful tooltips',
-        tooltips: requests?.map(() => "Here's some helpful info! ✨") || []
-      });
-    }
-  });
-
-  // Single playful tooltip endpoint
-  app.post("/api/playful-tooltip", async (req, res) => {
-    try {
-      const { context, element, data } = req.body;
-      
-      if (!context || !element) {
-        return res.status(400).json({ error: "Context and element are required" });
-      }
-
-      const tooltip = await PlayfulTooltipService.generateTooltip(context, element, data);
-      
-      res.json({ tooltip });
-    } catch (error) {
-      console.error('Playful tooltip generation failed:', error);
-      res.status(500).json({ 
-        error: 'Failed to generate playful tooltip',
-        tooltip: "Here's some helpful info! ✨"
       });
     }
   });
