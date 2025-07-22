@@ -76,6 +76,16 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 22, 2025. Implemented MCP (Model Context Protocol) integration with authentic DataForSEO ranked keywords API:
+  - **Added comprehensive MCP service** with restaurant_analysis, keyword_research, and competitor_analysis tools
+  - **Integrated DataForSEO ranked keywords API** replacing synthetic keyword analysis with authentic ranking positions for domains  
+  - **Created MCP endpoints** at /api/mcp/tools, /api/mcp/call, and /api/mcp/analyze for external AI system integration
+  - **Enhanced keyword analysis** with real Google search ranking data using DataForSEO's `/serp/google/organic/live` endpoint
+  - **Maintained data integrity** by using only authentic ranking data instead of algorithmic estimates
+  - **Added proper authentication** for DataForSEO API with Base64 Basic auth (login:password format)
+  - **Fixed syntax errors** in routes.ts that were preventing server startup during MCP integration
+  - **Updated advanced scanner service** to use processedKeywords from ranked keywords API for accurate position data
+  - **Preserved existing functionality** while adding MCP capabilities for AI system interoperability
 - July 22, 2025. Increased Google Places photo query limit from 10 to 50 photos with updated scoring system:
   - **Enhanced photo analysis**: Now queries up to 50 business photos from Google Places API instead of previous 10-photo limit
   - **Updated profile completeness scoring**: Photos now worth 0.5 points each (up to 50 photos = 25 points total) instead of 2.5 points each for 10 photos

@@ -1,6 +1,6 @@
 import { GoogleBusinessService } from './googleBusinessService.js';
 import { EnhancedDataForSeoService } from './enhancedDataForSeoService.js';
-
+import { DataForSeoRankedKeywordsService } from './dataForSeoRankedKeywordsService.js';
 import { AIRecommendationService } from './aiRecommendationService.js';
 import { GoogleReviewsService } from './googleReviewsService.js';
 import { ApifyReviewsService } from './apifyReviewsService.js';
@@ -40,6 +40,7 @@ export interface EnhancedScanResult extends ScanResult {
 export class AdvancedScannerService {
   private googleBusinessService: GoogleBusinessService;
   private dataForSeoService: EnhancedDataForSeoService;
+  private rankedKeywordsService: DataForSeoRankedKeywordsService;
 
   private aiRecommendationService: AIRecommendationService;
   private googleReviewsService: GoogleReviewsService;
@@ -71,6 +72,7 @@ export class AdvancedScannerService {
   ) {
     this.googleBusinessService = new GoogleBusinessService(googleApiKey);
     this.dataForSeoService = new EnhancedDataForSeoService(dataForSeoLogin, dataForSeoPassword);
+    this.rankedKeywordsService = new DataForSeoRankedKeywordsService(dataForSeoLogin, dataForSeoPassword);
     this.aiRecommendationService = new AIRecommendationService();
     this.googleReviewsService = new GoogleReviewsService(googleApiKey);
     this.apifyReviewsService = apifyApiKey ? new ApifyReviewsService(apifyApiKey) : undefined;
@@ -198,80 +200,40 @@ export class AdvancedScannerService {
       const phase3Start = Date.now();
       onProgress({ progress: 42, status: 'Checking search rankings...' });
       
-      // Get real ranking data for the three key keywords
-      const cuisineType = this.extractCuisineType(businessProfile);
-      const locationData = businessProfile?.address ? 
-        this.extractCityFromAddress(businessProfile.address) : 
-        { city: 'Unknown', state: 'Unknown' };
+      // Get authentic ranked keywords using DataForSEO ranked keywords API
+      console.log(`🔍 ADVANCED SCANNER: Getting real ranked keywords for domain: ${domain}`);
       
-      console.log(`🔍 ADVANCED SCANNER: Getting real rankings for ${cuisineType} in ${locationData.city}, ${locationData.state} for restaurant: ${restaurantName}`);
-      
-      const realRankingsPromise = Promise.race([
-        this.dataForSeoService.getRealRestaurantRankings(
-          domain, 
-          cuisineType, 
-          locationData.city, 
-          locationData.state,
-          restaurantName
-        ),
+      const rankedKeywordsPromise = Promise.race([
+        this.rankedKeywordsService.getRankedKeywords(domain, 'United States', 'en', 50),
         new Promise((_, reject) => 
-          setTimeout(() => reject(new Error('Real rankings timeout')), 8000)
+          setTimeout(() => reject(new Error('Ranked keywords timeout')), 8000)
         )
       ]).catch(error => {
-        console.error('Real rankings failed:', error);
+        console.error('Ranked keywords failed:', error);
         return [];
       });
       
-      const realRankings = await realRankingsPromise;
-      console.log('Real rankings received:', realRankings);
+      const rankedKeywords = await rankedKeywordsPromise;
+      console.log(`Found ${rankedKeywords.length} ranked keywords for ${domain}`);
       
-      // Process keywords with real rankings
-      const processedKeywords = realRankings.length > 0 ? realRankings.map(ranking => {
-        console.log(`Real ranking for "${ranking.keyword}": position=${ranking.position}`);
-        
-        return {
-          keyword: ranking.keyword,
-          position: ranking.position,
-          searchVolume: 0, // Real search volume would require additional API calls
-          difficulty: 0,   // Real difficulty would require additional API calls  
-          intent: ranking.keyword.includes('near me') ? 'local' : 'commercial',
-          cpc: 0,
-          competition: 0,
-          opportunity: ranking.position && ranking.position <= 10 ? 100 : 50
-        };
-      }) : [
-        // Fallback if API fails - only show these are NOT real rankings
-        {
-          keyword: `${cuisineType} near me`,
-          position: null,
-          searchVolume: 0,
-          difficulty: 0,
-          intent: 'local',
-          cpc: 0,
-          competition: 0,
-          opportunity: 0
-        },
-        {
-          keyword: `${cuisineType} restaurant near me`,
-          position: null,
-          searchVolume: 0,
-          difficulty: 0,
-          intent: 'local',
-          cpc: 0,
-          competition: 0,
-          opportunity: 0
-        },
-        {
-          keyword: `${cuisineType}`,
-          position: null,
-          searchVolume: 0,
-          difficulty: 0,
-          intent: 'commercial',
-          cpc: 0,
-          competition: 0,
-          opportunity: 0
-        }
-      ];
+      // Process the authentic ranked keywords
+      const processedKeywords = rankedKeywords.map(keyword => ({
+        keyword: keyword.keyword,
+        position: keyword.position,
+        searchVolume: keyword.searchVolume,
+        difficulty: keyword.difficulty,
+        intent: keyword.intent,
+        cpc: keyword.cpc,
+        competition: keyword.competition,
+        opportunity: keyword.position <= 10 ? 100 : (keyword.position <= 20 ? 75 : 50),
+        url: keyword.url,
+        title: keyword.title,
+        description: keyword.description,
+        isNew: keyword.isNew,
+        isLost: keyword.isLost,
+        positionChange: keyword.positionChange,
+        previousPosition: keyword.previousPosition
+      }));
       
       // Wait for phase 3 to complete (4 seconds total)
       const phase3Elapsed = Date.now() - phase3Start;
@@ -585,19 +547,19 @@ export class AdvancedScannerService {
       };
     });
 
-    // Process keyword analysis
+    // Process keyword analysis using authentic ranked keywords
     const keywordAnalysis = {
-      targetKeywords: enrichedKeywordData.slice(0, 10),
-      rankingPositions: serpAnalysis.map(s => ({
-        keyword: s.keyword,
-        position: s.position, // Fixed: was s.currentPosition
-        difficulty: s.difficulty
+      targetKeywords: processedKeywords.slice(0, 10),
+      rankingPositions: processedKeywords.map(k => ({
+        keyword: k.keyword,
+        position: k.position,
+        difficulty: k.difficulty
       })),
-      searchVolumes: keywordData.reduce((acc, k) => {
+      searchVolumes: processedKeywords.reduce((acc, k) => {
         acc[k.keyword] = k.searchVolume;
         return acc;
       }, {} as { [key: string]: number }),
-      opportunities: this.generateKeywordOpportunities(keywordData, serpAnalysis)
+      opportunities: this.generateKeywordOpportunities(processedKeywords, processedKeywords)
     };
 
     // Process competitor intelligence
