@@ -182,7 +182,7 @@ export class AdvancedScannerService {
         return { desktop: this.getFallbackPerformanceMetrics(), mobile: this.getFallbackMobileExperience() };
       });
       
-      const performanceData = await performancePromise;
+      const performanceData = await performancePromise as any;
       
       // Extract mobile and desktop results from performance data
       mobileExperience = performanceData.mobile || this.getFallbackMobileExperience();
@@ -211,11 +211,11 @@ export class AdvancedScannerService {
         return [];
       });
       
-      const rankedKeywords = await rankedKeywordsPromise;
+      const rankedKeywords = await rankedKeywordsPromise as any[];
       console.log(`Found ${rankedKeywords.length} ranked keywords for ${domain}`);
       
       // Process the authentic ranked keywords
-      const processedKeywords = rankedKeywords.map(keyword => ({
+      const processedKeywords = rankedKeywords.map((keyword: any) => ({
         keyword: keyword.keyword,
         position: keyword.position,
         searchVolume: keyword.searchVolume,

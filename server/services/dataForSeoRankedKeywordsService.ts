@@ -116,7 +116,13 @@ export class DataForSeoRankedKeywordsService {
     limit: number = 50
   ): Promise<ProcessedKeyword[]> {
     try {
-      console.log(`Getting ranked keywords for domain: ${domain}`);
+      console.log(`🔍 RANKED KEYWORDS API: Getting ranked keywords for domain: ${domain}`);
+      console.log(`🔍 RANKED KEYWORDS API: Request parameters:`, {
+        target: domain,
+        location_name: locationName,
+        language_code: languageCode,
+        limit: limit
+      });
       
       const response = await this.client.post<DataForSeoRankedKeywordsResponse>(
         '/dataforseo_labs/google/ranked_keywords/live',
@@ -128,37 +134,84 @@ export class DataForSeoRankedKeywordsService {
         }]
       );
 
+      console.log(`🔍 RANKED KEYWORDS API: Response status_code: ${response.data.status_code}`);
+      console.log(`🔍 RANKED KEYWORDS API: Response status_message: ${response.data.status_message}`);
+
       if (response.data.status_code !== 20000) {
+        console.error(`🔍 RANKED KEYWORDS API: Error - ${response.data.status_message}`);
         throw new Error(`DataForSEO API error: ${response.data.status_message}`);
       }
 
       const task = response.data.tasks[0];
+      console.log(`🔍 RANKED KEYWORDS API: Task status_code: ${task?.status_code}`);
+      console.log(`🔍 RANKED KEYWORDS API: Task status_message: ${task?.status_message}`);
+      
       if (!task || task.status_code !== 20000) {
+        console.error(`🔍 RANKED KEYWORDS API: Task failed - ${task?.status_message || 'Unknown error'}`);
         throw new Error(`Task failed: ${task?.status_message || 'Unknown error'}`);
       }
 
-      if (!task.data || !task.data.items) {
-        console.log('No ranked keywords found for domain:', domain);
+      // The data structure is task.result[0].items, not task.data.items
+      const result = task.result && task.result[0];
+      if (!result || !result.items) {
+        console.log(`🔍 RANKED KEYWORDS API: No result or items found for domain: ${domain}`);
+        console.log(`🔍 RANKED KEYWORDS API: Task result exists: ${!!task.result}`);
+        console.log(`🔍 RANKED KEYWORDS API: Result[0] exists: ${!!result}`);
+        console.log(`🔍 RANKED KEYWORDS API: Items exists: ${!!result?.items}`);
+        console.log(`🔍 RANKED KEYWORDS API: Items length: ${result?.items?.length || 0}`);
         return [];
       }
 
-      const keywords = task.data.items.map(item => this.processKeyword(item));
+      console.log(`🔍 RANKED KEYWORDS API: Total count: ${result.total_count}`);
+      console.log(`🔍 RANKED KEYWORDS API: Items count: ${result.items_count}`);
+
+      const keywords = result.items.map((item: any) => this.processKeywordFromAPI(item));
       
-      console.log(`Found ${keywords.length} ranked keywords for ${domain}`);
+      console.log(`🔍 RANKED KEYWORDS API: Found ${keywords.length} ranked keywords for ${domain}`);
+      console.log(`🔍 RANKED KEYWORDS API: Sample keyword:`, keywords[0] || 'No keywords');
       return keywords;
 
     } catch (error) {
-      console.error('Error fetching ranked keywords:', error);
+      console.error('🔍 RANKED KEYWORDS API: Error fetching ranked keywords:', error);
       if (axios.isAxiosError(error)) {
-        console.error('Response data:', error.response?.data);
-        console.error('Response status:', error.response?.status);
+        console.error('🔍 RANKED KEYWORDS API: Response data:', error.response?.data);
+        console.error('🔍 RANKED KEYWORDS API: Response status:', error.response?.status);
+        console.error('🔍 RANKED KEYWORDS API: Response headers:', error.response?.headers);
       }
       return [];
     }
   }
 
   /**
-   * Process raw keyword data into structured format
+   * Process raw keyword data from API response into structured format
+   */
+  private processKeywordFromAPI(item: any): ProcessedKeyword {
+    const keywordData = item.keyword_data;
+    const keywordInfo = keywordData?.keyword_info || {};
+    const rankingData = item.ranking_data || {};
+    
+    return {
+      keyword: keywordData?.keyword || '',
+      position: rankingData.position || 0,
+      searchVolume: keywordInfo.search_volume || 0,
+      difficulty: keywordInfo.keyword_difficulty || 0,
+      cpc: keywordInfo.cpc || 0,
+      competition: keywordInfo.competition || 0,
+      url: rankingData.url || '',
+      title: rankingData.title || '',
+      description: rankingData.description || '',
+      isNew: rankingData.is_new || false,
+      isLost: rankingData.is_lost || false,
+      positionChange: rankingData.position_change || 0,
+      previousPosition: rankingData.previous_position || 0,
+      impressions: rankingData.impressions || 0,
+      clickthroughRate: rankingData.clickthrough_rate || 0,
+      intent: this.classifyKeywordIntent(keywordData?.keyword || '')
+    };
+  }
+
+  /**
+   * Process raw keyword data into structured format (legacy method kept for compatibility)
    */
   private processKeyword(item: RankedKeyword): ProcessedKeyword {
     return {
