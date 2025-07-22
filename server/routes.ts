@@ -84,9 +84,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
         priceLevel: result.price_level,
         placeId: result.place_id,
         domain: result.website ? new URL(result.website).hostname : null,
-        location: result.geometry?.location ? {
-          lat: result.geometry.location.lat,
-          lng: result.geometry.location.lng
+        location: (result as any).geometry?.location ? {
+          lat: (result as any).geometry.location.lat,
+          lng: (result as any).geometry.location.lng
         } : null,
       }));
 
@@ -522,6 +522,50 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   // Add screenshots API routes
   app.use('/api/screenshots', screenshotsRouter);
+
+  // Test endpoint for Apify reviews service
+  app.get("/api/test/apify-reviews/:placeId", async (req, res) => {
+    try {
+      const { placeId } = req.params;
+      
+      if (!APIFY_API_KEY) {
+        return res.status(500).json({ 
+          error: "Apify API key not configured. Please add APIFY_API_KEY environment variable." 
+        });
+      }
+
+      if (!dataForSeoScannerService) {
+        return res.status(500).json({ 
+          error: "Scanner service not available. Please configure required API keys." 
+        });
+      }
+
+      // Use the scanner service's apify reviews service
+      const apifyService = (dataForSeoScannerService as any).apifyReviewsService;
+      if (!apifyService) {
+        return res.status(500).json({ 
+          error: "Apify reviews service not available in scanner." 
+        });
+      }
+
+      console.log(`Testing Apify reviews service for place: ${placeId}`);
+      const result = await apifyService.getGoogleReviews(placeId);
+      
+      res.json({
+        success: result.success,
+        reviewCount: result.success ? result.data?.length || 0 : 0,
+        metadata: result.metadata,
+        sampleReviews: result.success && result.data ? result.data.slice(0, 3) : [],
+        error: result.success ? null : result.error
+      });
+    } catch (error) {
+      console.error("Apify reviews test error:", error);
+      res.status(500).json({ 
+        error: "Failed to test Apify reviews service", 
+        details: error.message 
+      });
+    }
+  });
 
   const httpServer = createServer(app);
   return httpServer;

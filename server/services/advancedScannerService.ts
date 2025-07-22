@@ -3,6 +3,7 @@ import { EnhancedDataForSeoService } from './enhancedDataForSeoService.js';
 
 import { AIRecommendationService } from './aiRecommendationService.js';
 import { GoogleReviewsService } from './googleReviewsService.js';
+import { ApifyReviewsService } from './apifyReviewsService.js';
 import { SocialMediaDetector } from './socialMediaDetector.js';
 import { EnhancedFacebookDetector } from './enhancedFacebookDetector.js';
 import { EnhancedSocialMediaDetector } from './enhancedSocialMediaDetector.js';
@@ -41,6 +42,7 @@ export class AdvancedScannerService {
 
   private aiRecommendationService: AIRecommendationService;
   private googleReviewsService: GoogleReviewsService;
+  private apifyReviewsService?: ApifyReviewsService;
   private socialMediaDetector: SocialMediaDetector;
   private enhancedFacebookDetector: EnhancedFacebookDetector;
   private enhancedSocialMediaDetector: EnhancedSocialMediaDetector;
@@ -61,6 +63,7 @@ export class AdvancedScannerService {
     this.dataForSeoService = new EnhancedDataForSeoService(dataForSeoLogin, dataForSeoPassword);
     this.aiRecommendationService = new AIRecommendationService();
     this.googleReviewsService = new GoogleReviewsService(googleApiKey);
+    this.apifyReviewsService = apifyApiKey ? new ApifyReviewsService(apifyApiKey) : undefined;
     this.socialMediaDetector = new SocialMediaDetector();
     this.enhancedFacebookDetector = new EnhancedFacebookDetector();
     this.enhancedSocialMediaDetector = new EnhancedSocialMediaDetector();
@@ -1181,28 +1184,63 @@ export class AdvancedScannerService {
 
   private async generateEnhancedReviewsAnalysis(businessProfile?: any, placeId?: string): Promise<any> {
     let googleReviews = null;
+    let apifyReviews = null;
     
-    // Get Google Reviews if placeId is available
-    if (placeId) {
+    // Try Apify service first for comprehensive reviews (100 reviews)
+    if (placeId && this.apifyReviewsService) {
+      try {
+        console.log('Attempting Apify comprehensive review fetch...');
+        apifyReviews = await this.apifyReviewsService.getGoogleReviews(placeId);
+        console.log('Apify reviews retrieved:', apifyReviews.success ? apifyReviews.data?.length : 'failed');
+      } catch (error) {
+        console.error('Apify reviews failed:', error);
+      }
+    }
+    
+    // Fallback to Google Places API (limited to 5 reviews)
+    if (placeId && (!apifyReviews || !apifyReviews.success)) {
       try {
         googleReviews = await this.googleReviewsService.getReviews(placeId);
-        console.log('Google reviews retrieved:', googleReviews.reviews.length);
+        console.log('Google reviews retrieved (fallback):', googleReviews.reviews.length);
       } catch (error) {
         console.error('Google reviews failed:', error);
       }
     }
     
-    // Use Google reviews data for analysis (cost-effective, no external APIs)
-    if (googleReviews && googleReviews.reviews.length > 0) {
-      // Calculate sentiment from Google reviews
+    // Use Apify comprehensive reviews if available (100 reviews)
+    if (apifyReviews && apifyReviews.success && apifyReviews.data && apifyReviews.data.length > 0) {
+      const sentimentAnalysis = this.analyzeSentimentFromApifyReviews(apifyReviews.data);
+      
+      return {
+        overallScore: Math.min((apifyReviews.metadata?.averageRating || businessProfile?.rating || 0) * 20, 100),
+        totalReviews: apifyReviews.metadata?.totalReviews || apifyReviews.data.length,
+        averageRating: apifyReviews.metadata?.averageRating || businessProfile?.rating || 0,
+        sentimentBreakdown: sentimentAnalysis.sentimentBreakdown,
+        reviewSources: ['Google Places API (Apify Enhanced)'],
+        keyThemes: sentimentAnalysis.keyThemes,
+        recentReviews: apifyReviews.data.slice(0, 10), // Show top 10 recent reviews
+        examples: sentimentAnalysis.examples,
+        trends: {
+          ratingTrend: this.calculateRatingTrendFromReviews(apifyReviews.data),
+          volumeTrend: this.calculateVolumeTrendFromReviews(apifyReviews.data),
+          responseRate: this.calculateResponseRateFromReviews(apifyReviews.data),
+          averageResponseTime: this.calculateAverageResponseTimeFromReviews(apifyReviews.data)
+        },
+        recommendations: this.generateReviewRecommendations(apifyReviews.data, businessProfile),
+        apifyReviews: apifyReviews
+      };
+    }
+    
+    // Fallback: Use Google Places API reviews (limited to 5 reviews)
+    else if (googleReviews && googleReviews.reviews.length > 0) {
       const sentimentAnalysis = this.analyzeSentimentFromGoogleReviews(googleReviews.reviews);
       
       return {
-        overallScore: Math.min(businessProfile?.rating * 20 || 75, 100), // Convert 5-star to 100-point scale
+        overallScore: Math.min(businessProfile?.rating * 20 || 75, 100),
         totalReviews: businessProfile?.totalReviews || googleReviews.reviews.length,
         averageRating: businessProfile?.rating || googleReviews.averageRating,
         sentimentBreakdown: sentimentAnalysis.sentimentBreakdown,
-        reviewSources: ['Google Business Profile'],
+        reviewSources: ['Google Business Profile (Limited)'],
         keyThemes: sentimentAnalysis.keyThemes,
         recentReviews: googleReviews.reviews.slice(0, 5),
         examples: sentimentAnalysis.examples,
@@ -2312,5 +2350,140 @@ export class AdvancedScannerService {
       console.error('Error cleaning Facebook URL:', error);
       return null;
     }
+  }
+
+  // Apify Review Analysis Methods
+  private analyzeSentimentFromApifyReviews(reviews: any[]): any {
+    const sentiments = { positive: 0, neutral: 0, negative: 0 };
+    const themes: string[] = [];
+    const examples = { positive: [], neutral: [], negative: [] };
+    
+    for (const review of reviews) {
+      const rating = review.rating || 0;
+      const text = review.text || '';
+      
+      // Enhanced sentiment classification based on rating and text
+      let sentiment: 'positive' | 'neutral' | 'negative';
+      if (rating >= 4) {
+        sentiment = 'positive';
+        sentiments.positive++;
+        if (examples.positive.length < 3) examples.positive.push(review);
+      } else if (rating >= 3) {
+        sentiment = 'neutral';
+        sentiments.neutral++;
+        if (examples.neutral.length < 3) examples.neutral.push(review);
+      } else {
+        sentiment = 'negative';
+        sentiments.negative++;
+        if (examples.negative.length < 3) examples.negative.push(review);
+      }
+      
+      // Extract themes from review text (more comprehensive than Google API)
+      if (text) {
+        const lowerText = text.toLowerCase();
+        if (lowerText.includes('food') || lowerText.includes('meal') || lowerText.includes('dish')) themes.push('Food Quality');
+        if (lowerText.includes('service') || lowerText.includes('staff') || lowerText.includes('waiter')) themes.push('Service');
+        if (lowerText.includes('price') || lowerText.includes('value') || lowerText.includes('expensive')) themes.push('Pricing');
+        if (lowerText.includes('atmosphere') || lowerText.includes('ambiance') || lowerText.includes('decor')) themes.push('Atmosphere');
+        if (lowerText.includes('location') || lowerText.includes('parking')) themes.push('Location');
+        if (lowerText.includes('wait') || lowerText.includes('fast') || lowerText.includes('slow')) themes.push('Wait Time');
+        if (lowerText.includes('clean') || lowerText.includes('dirty') || lowerText.includes('hygiene')) themes.push('Cleanliness');
+        if (lowerText.includes('portion') || lowerText.includes('size') || lowerText.includes('amount')) themes.push('Portion Size');
+      }
+    }
+    
+    const total = reviews.length;
+    return {
+      sentimentBreakdown: {
+        positive: Math.round((sentiments.positive / total) * 100),
+        neutral: Math.round((sentiments.neutral / total) * 100),
+        negative: Math.round((sentiments.negative / total) * 100)
+      },
+      keyThemes: [...new Set(themes)].slice(0, 8), // Up to 8 themes from comprehensive data
+      examples
+    };
+  }
+
+  private calculateRatingTrendFromReviews(reviews: any[]): 'improving' | 'stable' | 'declining' {
+    if (reviews.length < 10) return 'stable';
+    
+    // Sort reviews by date (most recent first)
+    const sortedReviews = reviews.sort((a, b) => 
+      new Date(b.publishedAtDate).getTime() - new Date(a.publishedAtDate).getTime()
+    );
+    
+    // Compare recent vs older reviews
+    const recentReviews = sortedReviews.slice(0, Math.floor(reviews.length / 3));
+    const olderReviews = sortedReviews.slice(-Math.floor(reviews.length / 3));
+    
+    const recentAvg = recentReviews.reduce((sum, r) => sum + (r.rating || 0), 0) / recentReviews.length;
+    const olderAvg = olderReviews.reduce((sum, r) => sum + (r.rating || 0), 0) / olderReviews.length;
+    
+    if (recentAvg > olderAvg + 0.3) return 'improving';
+    if (recentAvg < olderAvg - 0.3) return 'declining';
+    return 'stable';
+  }
+
+  private calculateVolumeTrendFromReviews(reviews: any[]): 'increasing' | 'stable' | 'decreasing' {
+    if (reviews.length < 20) return 'increasing'; // New businesses with fewer reviews
+    
+    // Analyze review frequency over time
+    const now = new Date();
+    const threeMonthsAgo = new Date(now.getTime() - (90 * 24 * 60 * 60 * 1000));
+    const sixMonthsAgo = new Date(now.getTime() - (180 * 24 * 60 * 60 * 1000));
+    
+    const recentReviews = reviews.filter(r => 
+      new Date(r.publishedAtDate) > threeMonthsAgo
+    ).length;
+    
+    const olderReviews = reviews.filter(r => {
+      const date = new Date(r.publishedAtDate);
+      return date <= threeMonthsAgo && date > sixMonthsAgo;
+    }).length;
+    
+    if (recentReviews > olderReviews * 1.5) return 'increasing';
+    if (recentReviews < olderReviews * 0.5) return 'decreasing';
+    return 'stable';
+  }
+
+  private calculateResponseRateFromReviews(reviews: any[]): number {
+    const reviewsWithResponses = reviews.filter(r => r.responseFromOwner).length;
+    const responseRate = reviews.length > 0 ? (reviewsWithResponses / reviews.length) * 100 : 0;
+    return Math.round(responseRate);
+  }
+
+  private calculateAverageResponseTimeFromReviews(reviews: any[]): string {
+    const reviewsWithResponses = reviews.filter(r => r.responseFromOwner);
+    
+    if (reviewsWithResponses.length === 0) return 'No responses';
+    
+    let totalResponseTimeHours = 0;
+    let validResponses = 0;
+    
+    for (const review of reviewsWithResponses) {
+      try {
+        const reviewDate = new Date(review.publishedAtDate);
+        const responseDate = new Date(review.responseFromOwner.publishedAtDate);
+        const timeDiffHours = (responseDate.getTime() - reviewDate.getTime()) / (1000 * 60 * 60);
+        
+        if (timeDiffHours > 0 && timeDiffHours < 24 * 30) { // Valid response within 30 days
+          totalResponseTimeHours += timeDiffHours;
+          validResponses++;
+        }
+      } catch (error) {
+        // Skip invalid dates
+        continue;
+      }
+    }
+    
+    if (validResponses === 0) return 'Variable';
+    
+    const avgHours = totalResponseTimeHours / validResponses;
+    
+    if (avgHours < 24) return '< 1 day';
+    if (avgHours < 48) return '1-2 days';
+    if (avgHours < 72) return '2-3 days';
+    if (avgHours < 168) return '< 1 week';
+    return '> 1 week';
   }
 }
