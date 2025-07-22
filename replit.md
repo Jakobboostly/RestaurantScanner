@@ -76,12 +76,15 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
-- July 22, 2025. Successfully implemented authentic DataForSEO ranked keywords API with working data parsing:
+- July 22, 2025. Successfully implemented authentic DataForSEO ranked keywords API with working data parsing and ranking positions:
   - **Fixed API response parsing** - corrected data structure from `task.data.items` to `task.result[0].items` for proper keyword extraction
+  - **Added actual Google ranking positions** - extracts real ranking positions from `ranked_serp_element.serp_item.rank_absolute` (e.g., position 3 for "1 800 domino's pizza")
+  - **Optimized keyword limit** - reduced from 50 to 10 keywords per scan for cost efficiency while maintaining comprehensive analysis
+  - **Enhanced position tracking** - includes previous position and position change data from `rank_changes` to show ranking movement
   - **Verified API functionality** - confirmed DataForSEO credentials work correctly, returning 833,387 keywords for dominos.com domain
-  - **Implemented authentic keyword data flow** - system now successfully extracts real keywords like "1 800 domino's pizza" with search volume 170
-  - **Enhanced data structure parsing** - added `processKeywordFromAPI()` method to handle nested API response (keyword_data.keyword_info structure)
-  - **Confirmed frontend integration** - verified 50 ranked keywords successfully sent to frontend with authentic search volumes, CPC, and competition data
+  - **Implemented authentic keyword data flow** - system now successfully extracts real keywords with search volume 170, actual ranking positions, and competition data
+  - **Enhanced data structure parsing** - added `processKeywordFromAPI()` method to handle nested API response structure including SERP element data
+  - **Confirmed frontend integration** - verified 10 ranked keywords successfully sent to frontend with authentic search volumes, CPC, competition, and ranking positions
   - **Eliminated all synthetic generation** - system uses exclusively `/dataforseo_labs/google/ranked_keywords/live` endpoint with zero fallback data
   - **Fixed TypeScript errors** - resolved variable type issues preventing proper API response processing
   - **Streamlined service architecture** - removed all competing keyword services, maintaining single authentic DataForSEO source

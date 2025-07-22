@@ -113,7 +113,7 @@ export class DataForSeoRankedKeywordsService {
     domain: string, 
     locationName: string = 'United States',
     languageCode: string = 'en',
-    limit: number = 50
+    limit: number = 10
   ): Promise<ProcessedKeyword[]> {
     try {
       console.log(`🔍 RANKED KEYWORDS API: Getting ranked keywords for domain: ${domain}`);
@@ -188,24 +188,30 @@ export class DataForSeoRankedKeywordsService {
   private processKeywordFromAPI(item: any): ProcessedKeyword {
     const keywordData = item.keyword_data;
     const keywordInfo = keywordData?.keyword_info || {};
-    const rankingData = item.ranking_data || {};
+    const serpElement = item.ranked_serp_element || {};
+    const serpItem = serpElement.serp_item || {};
+    
+    // Extract ranking position from the correct location in the API response
+    const position = serpItem.rank_absolute || serpItem.rank_group || 0;
+    const previousPosition = serpItem.rank_changes?.previous_rank_absolute || 0;
+    const positionChange = previousPosition > 0 ? (previousPosition - position) : 0;
     
     return {
       keyword: keywordData?.keyword || '',
-      position: rankingData.position || 0,
+      position: position,
       searchVolume: keywordInfo.search_volume || 0,
-      difficulty: keywordInfo.keyword_difficulty || 0,
+      difficulty: serpElement.keyword_difficulty || keywordInfo.keyword_difficulty || 0,
       cpc: keywordInfo.cpc || 0,
       competition: keywordInfo.competition || 0,
-      url: rankingData.url || '',
-      title: rankingData.title || '',
-      description: rankingData.description || '',
-      isNew: rankingData.is_new || false,
-      isLost: rankingData.is_lost || false,
-      positionChange: rankingData.position_change || 0,
-      previousPosition: rankingData.previous_position || 0,
-      impressions: rankingData.impressions || 0,
-      clickthroughRate: rankingData.clickthrough_rate || 0,
+      url: serpItem.url || '',
+      title: serpItem.title || '',
+      description: serpItem.description || '',
+      isNew: serpItem.rank_changes?.is_new || false,
+      isLost: serpElement.is_lost || false,
+      positionChange: positionChange,
+      previousPosition: previousPosition,
+      impressions: serpItem.impressions || 0,
+      clickthroughRate: serpItem.clickthrough_rate || 0,
       intent: this.classifyKeywordIntent(keywordData?.keyword || '')
     };
   }
