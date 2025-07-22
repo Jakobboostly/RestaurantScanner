@@ -479,7 +479,7 @@ export class AdvancedScannerService {
     competitors: any[],
     mobileExperience: any,
     performanceMetrics: any,
-    keywordData: any[],
+    processedKeywords: any[],
     serpAnalysis: any[],
     competitorInsights: any[],
     reviewsAnalysis: any,
@@ -488,6 +488,9 @@ export class AdvancedScannerService {
     serpScreenshots: any[] = [],
     restaurantSearchScreenshot: any = null
   ): EnhancedScanResult {
+    // Map processedKeywords to keywordData for compatibility with existing methods
+    const keywordData = processedKeywords;
+    
     // Calculate enhanced scores
     const businessScore = this.calculateBusinessScore(businessProfile);
     const competitorScore = this.calculateCompetitorScore(competitors, businessProfile);
@@ -549,17 +552,17 @@ export class AdvancedScannerService {
 
     // Process keyword analysis using authentic ranked keywords
     const keywordAnalysis = {
-      targetKeywords: processedKeywords.slice(0, 10),
-      rankingPositions: processedKeywords.map(k => ({
+      targetKeywords: keywordData.slice(0, 10),
+      rankingPositions: keywordData.map(k => ({
         keyword: k.keyword,
         position: k.position,
         difficulty: k.difficulty
       })),
-      searchVolumes: processedKeywords.reduce((acc, k) => {
+      searchVolumes: keywordData.reduce((acc, k) => {
         acc[k.keyword] = k.searchVolume;
         return acc;
       }, {} as { [key: string]: number }),
-      opportunities: this.generateKeywordOpportunities(processedKeywords, processedKeywords)
+      opportunities: this.generateKeywordOpportunities(keywordData, keywordData)
     };
 
     // Process competitor intelligence
