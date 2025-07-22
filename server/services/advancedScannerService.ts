@@ -274,18 +274,20 @@ export class AdvancedScannerService {
       const phase4Start = Date.now();
       onProgress({ progress: 58, status: 'Evaluating mobile experience...' });
       
-      // Start reviews analysis immediately
+      // Start reviews analysis immediately - increased timeout for OpenAI processing
+      console.log('🚀 Starting reviews analysis with placeId:', placeId);
       const reviewsPromise = Promise.race([
         this.generateEnhancedReviewsAnalysis(businessProfile, placeId),
         new Promise((_, reject) => 
-          setTimeout(() => reject(new Error('Reviews analysis timeout')), 3500)
+          setTimeout(() => reject(new Error('Reviews analysis timeout')), 8000) // Increased timeout for OpenAI
         )
       ]).catch(error => {
-        console.error('Reviews analysis failed:', error);
-        return this.generateEnhancedReviewsAnalysis(businessProfile);
+        console.error('❌ Reviews analysis failed with timeout, falling back without OpenAI:', error);
+        return this.generateEnhancedReviewsAnalysis(businessProfile); // Fallback without placeId
       });
       
       const reviewsAnalysis = await reviewsPromise;
+      console.log('📊 Reviews analysis completed, customerMoodAnalysis present:', !!reviewsAnalysis?.customerMoodAnalysis);
       
       // Wait for phase 4 to complete (4 seconds total)
       const phase4Elapsed = Date.now() - phase4Start;
