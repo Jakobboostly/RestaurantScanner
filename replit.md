@@ -76,12 +76,16 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
-- July 22, 2025. Integrated Apify Google Maps Scraper for comprehensive review analysis:
-  - Added ApifyReviewsService using 'compass/google-maps-scraper' actor for up to 100 reviews per restaurant
+- July 22, 2025. Enhanced Apify integration with OpenAI-powered customer mood analysis:
+  - Updated Apify actor to correct 'compass/crawler-google-places' for reliable 100-review collection
   - Optimized to use Place IDs directly (placeIds parameter) instead of search strings for efficient data retrieval
   - Implemented intelligent fallback system: Apify (100 reviews) → Google Places API (5 reviews) → Business profile
-  - Enhanced review sentiment analysis with 8 comprehensive themes: Food Quality, Service, Pricing, Atmosphere, Location, Wait Time, Cleanliness, Portion Size
-  - Added advanced review trend analysis: rating trends (improving/stable/declining), volume trends (increasing/stable/decreasing)
+  - **NEW: OpenAI customer mood analysis** - GPT-4o analyzes all 100 reviews to generate comprehensive mood summaries
+  - Added customerMoodAnalysis with overallMood classification (delighted/satisfied/mixed/frustrated/disappointed)
+  - Enhanced sentiment analysis includes emotional themes, customer patterns, and loyalty signals
+  - OpenAI generates narrative summaries capturing customer feelings, attitudes, and psychology beyond basic positive/negative
+  - Business insights include perceived strengths, improvement opportunities, and customer expectations
+  - Advanced review trend analysis: rating trends (improving/stable/declining), volume trends (increasing/stable/decreasing)
   - Implemented owner response rate calculation and average response time analysis from review data
   - Enhanced review recommendations based on comprehensive review patterns and business performance
   - System prioritizes authentic data: uses real review text, ratings, dates, and reviewer information

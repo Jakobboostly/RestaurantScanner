@@ -276,6 +276,38 @@ export const scanResultSchema = z.object({
       description: z.string(),
       impact: z.string(),
     })),
+    customerMoodAnalysis: z.object({
+      overallMood: z.enum(['delighted', 'satisfied', 'mixed', 'frustrated', 'disappointed']),
+      sentimentSummary: z.string(),
+      keyMoodIndicators: z.array(z.string()),
+      commonFeelings: z.object({
+        positive: z.array(z.string()),
+        negative: z.array(z.string()),
+        neutral: z.array(z.string()),
+      }),
+      customerPatterns: z.object({
+        frequentPraise: z.array(z.string()),
+        commonComplaints: z.array(z.string()),
+        surprisingInsights: z.array(z.string()),
+      }),
+      emotionalThemes: z.array(z.object({
+        theme: z.string(),
+        emotion: z.string(),
+        frequency: z.number(),
+        impact: z.enum(['high', 'medium', 'low']),
+      })),
+      businessInsights: z.object({
+        strengthsPerceived: z.array(z.string()),
+        improvementOpportunities: z.array(z.string()),
+        customerExpectations: z.array(z.string()),
+      }),
+      recommendationConfidence: z.number(),
+      loyaltySignals: z.object({
+        repeatCustomerMentions: z.number(),
+        recommendationLanguage: z.array(z.string()),
+        disappointmentPatterns: z.array(z.string()),
+      }),
+    }).optional(),
   }).optional(),
   socialMediaLinks: z.object({
     facebook: z.string().optional(),

@@ -10,6 +10,7 @@ import { EnhancedSocialMediaDetector } from './enhancedSocialMediaDetector.js';
 import { FacebookPostsScraperService } from './facebookPostsScraperService.js';
 import { SeleniumScreenshotService } from './seleniumScreenshotService.js';
 import { RestaurantSearchScreenshotService } from './restaurantSearchScreenshotService.js';
+import { OpenAIReviewAnalysisService } from './openaiReviewAnalysisService.js';
 import { ScanResult } from '@shared/schema';
 import axios from 'axios';
 import * as cheerio from 'cheerio';
@@ -49,6 +50,7 @@ export class AdvancedScannerService {
   private facebookPostsScraperService: FacebookPostsScraperService;
   private seleniumScreenshotService: SeleniumScreenshotService;
   private restaurantSearchScreenshotService: RestaurantSearchScreenshotService;
+  private openaiReviewAnalysisService: OpenAIReviewAnalysisService;
 
   constructor(
     googleApiKey: string,
@@ -70,6 +72,7 @@ export class AdvancedScannerService {
     this.facebookPostsScraperService = new FacebookPostsScraperService(apifyApiKey || '');
     this.seleniumScreenshotService = new SeleniumScreenshotService();
     this.restaurantSearchScreenshotService = new RestaurantSearchScreenshotService();
+    this.openaiReviewAnalysisService = new OpenAIReviewAnalysisService();
   }
 
   async scanRestaurantAdvanced(
@@ -1211,6 +1214,11 @@ export class AdvancedScannerService {
     if (apifyReviews && apifyReviews.success && apifyReviews.data && apifyReviews.data.length > 0) {
       const sentimentAnalysis = this.analyzeSentimentFromApifyReviews(apifyReviews.data);
       
+      // Generate OpenAI mood analysis from all reviews
+      console.log('Generating OpenAI customer mood analysis...');
+      const customerMoodAnalysis = await this.openaiReviewAnalysisService.analyzeCustomerMood(apifyReviews.data);
+      console.log('OpenAI mood analysis completed:', customerMoodAnalysis.overallMood);
+      
       return {
         overallScore: Math.min((apifyReviews.metadata?.averageRating || businessProfile?.rating || 0) * 20, 100),
         totalReviews: apifyReviews.metadata?.totalReviews || apifyReviews.data.length,
@@ -1231,6 +1239,7 @@ export class AdvancedScannerService {
           platform: 'Google Places (Apify)',
           sentiment: this.classifyReviewSentiment(review.text, review.rating),
         })),
+        customerMoodAnalysis,
         examples: sentimentAnalysis.examples,
         trends: {
           ratingTrend: this.calculateRatingTrendFromReviews(apifyReviews.data),
