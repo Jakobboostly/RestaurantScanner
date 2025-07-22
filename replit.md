@@ -76,6 +76,16 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 22, 2025. Fixed OpenAI customer mood analysis display and enhanced Instagram detection:
+  - Resolved race condition where OpenAI analysis completed after main scan, preventing data from reaching frontend
+  - Implemented asynchronous mood analysis with background processing and polling architecture
+  - Added loading state showing "Generating your review analysis..." with animated spinner
+  - Frontend now polls `/api/mood-analysis/:placeId` endpoint every 3 seconds until analysis completes
+  - OpenAI analysis runs in background without blocking scan completion (sub-30 second scan times maintained)
+  - Enhanced Instagram detection with additional selector patterns including `data-testid="social-link"` format
+  - Fixed Instagram URL detection for links like `https://www.instagram.com/bombayhouseutah/?hl=en`
+  - Customer mood analysis now appears dynamically when OpenAI processing completes
+  - System maintains authentic data flow: Apify (100 reviews) → OpenAI GPT-4o → Frontend display
 - July 22, 2025. Enhanced Apify integration with OpenAI-powered customer mood analysis:
   - Updated Apify actor to correct 'compass/crawler-google-places' for reliable 100-review collection
   - Optimized to use Place IDs directly (placeIds parameter) instead of search strings for efficient data retrieval

@@ -59,6 +59,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Restaurant search screenshot service
   const restaurantScreenshotService = new RestaurantSearchScreenshotService();
 
+  // In-memory store for mood analysis results
+  const moodAnalysisCache = new Map<string, any>();
+
   // Restaurant search endpoint
   app.get("/api/restaurants/search", async (req, res) => {
     try {
@@ -407,6 +410,38 @@ export async function registerRoutes(app: Express): Promise<Server> {
           website: `Your website performance score of ${req.body.scanResult.performance}/100 affects customer experience. Optimizing images and improving mobile responsiveness will help convert more visitors into customers.`,
           reviews: `Customer sentiment is ${req.body.scanResult.reviewsAnalysis?.sentiment?.positive || 0}% positive. Maintaining high review scores and addressing concerns quickly strengthens your reputation and attracts new diners.`
         }
+      });
+    }
+  });
+
+  // Mood analysis endpoint
+  app.get("/api/mood-analysis/:placeId", async (req, res) => {
+    try {
+      const placeId = req.params.placeId;
+      
+      // Import AdvancedScannerService dynamically to access static cache
+      const { AdvancedScannerService } = await import('./services/advancedScannerService.js');
+      const cache = AdvancedScannerService.getMoodAnalysisCache();
+      
+      // Check if analysis is already cached
+      if (cache.has(placeId)) {
+        const cachedResult = cache.get(placeId);
+        return res.json({ 
+          status: 'complete',
+          data: cachedResult 
+        });
+      }
+      
+      // Analysis not ready yet
+      return res.json({ 
+        status: 'generating',
+        message: 'Generating your review analysis...' 
+      });
+      
+    } catch (error) {
+      console.error('Mood analysis endpoint error:', error);
+      return res.status(500).json({ 
+        error: 'Failed to get mood analysis status' 
       });
     }
   });

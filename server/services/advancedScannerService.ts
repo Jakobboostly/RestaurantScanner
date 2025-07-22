@@ -51,6 +51,14 @@ export class AdvancedScannerService {
   private seleniumScreenshotService: SeleniumScreenshotService;
   private restaurantSearchScreenshotService: RestaurantSearchScreenshotService;
   private openaiReviewAnalysisService: OpenAIReviewAnalysisService;
+  
+  // Static cache for mood analysis results
+  private static moodAnalysisCache = new Map<string, any>();
+  
+  // Static method to access the cache from routes
+  static getMoodAnalysisCache() {
+    return AdvancedScannerService.moodAnalysisCache;
+  }
 
   constructor(
     googleApiKey: string,
@@ -274,20 +282,24 @@ export class AdvancedScannerService {
       const phase4Start = Date.now();
       onProgress({ progress: 58, status: 'Evaluating mobile experience...' });
       
-      // Start reviews analysis immediately - increased timeout for OpenAI processing
+      // Start reviews analysis asynchronously to avoid blocking scan
       console.log('🚀 Starting reviews analysis with placeId:', placeId);
-      const reviewsPromise = Promise.race([
-        this.generateEnhancedReviewsAnalysis(businessProfile, placeId),
-        new Promise((_, reject) => 
-          setTimeout(() => reject(new Error('Reviews analysis timeout')), 8000) // Increased timeout for OpenAI
-        )
-      ]).catch(error => {
-        console.error('❌ Reviews analysis failed with timeout, falling back without OpenAI:', error);
-        return this.generateEnhancedReviewsAnalysis(businessProfile); // Fallback without placeId
-      });
       
-      const reviewsAnalysis = await reviewsPromise;
-      console.log('📊 Reviews analysis completed, customerMoodAnalysis present:', !!reviewsAnalysis?.customerMoodAnalysis);
+      // Start OpenAI analysis in background and cache result when ready
+      this.generateEnhancedReviewsAnalysis(businessProfile, placeId)
+        .then((analysis) => {
+          if (analysis?.customerMoodAnalysis) {
+            console.log('✅ Caching OpenAI mood analysis for placeId:', placeId);
+            AdvancedScannerService.moodAnalysisCache.set(placeId, analysis.customerMoodAnalysis);
+          }
+        })
+        .catch(error => {
+          console.error('❌ Background OpenAI analysis failed:', error);
+        });
+      
+      // Return basic analysis immediately to not block scan
+      const reviewsAnalysis = this.generateEnhancedReviewsAnalysis(businessProfile);
+      console.log('📊 Using basic reviews analysis (OpenAI running in background)');
       
       // Wait for phase 4 to complete (4 seconds total)
       const phase4Elapsed = Date.now() - phase4Start;

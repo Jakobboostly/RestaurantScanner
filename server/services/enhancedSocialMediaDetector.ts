@@ -192,7 +192,7 @@ export class EnhancedSocialMediaDetector {
         });
       }
 
-      // Check for Instagram icons with clickable links
+      // Check for Instagram icons with clickable links (enhanced detection)
       if (!socialLinks.instagram) {
         const instagramSelectors = [
           'a[href*="instagram.com"]',
@@ -200,7 +200,10 @@ export class EnhancedSocialMediaDetector {
           'a[class*="instagram"]',
           'a svg[data-icon="instagram"]',
           'a use[href*="instagram"]',
-          'a use[*|href*="instagram"]'
+          'a use[*|href*="instagram"]',
+          'a[data-testid="social-link"][href*="instagram.com"]', // Specific pattern from your example
+          'a img[alt*="Instagram"]',
+          'a img[src*="instagram"]'
         ];
 
         for (const selector of instagramSelectors) {

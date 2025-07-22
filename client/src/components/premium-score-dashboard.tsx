@@ -74,6 +74,36 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
   
   const [activeTab, setActiveTab] = useState<'search' | 'social' | 'local' | 'reviews'>('search');
   const [showEmbeddedSearch, setShowEmbeddedSearch] = useState(false);
+  
+  // State for mood analysis polling
+  const [moodAnalysis, setMoodAnalysis] = useState<any>(scanResult.reviewsAnalysis?.customerMoodAnalysis || null);
+  const [isLoadingMoodAnalysis, setIsLoadingMoodAnalysis] = useState(!scanResult.reviewsAnalysis?.customerMoodAnalysis);
+  
+  // Poll for mood analysis results if not available initially
+  useEffect(() => {
+    if (!moodAnalysis && scanResult.businessProfile?.placeId) {
+      const pollMoodAnalysis = async () => {
+        try {
+          const response = await fetch(`/api/mood-analysis/${scanResult.businessProfile.placeId}`);
+          const result = await response.json();
+          
+          if (result.status === 'complete') {
+            setMoodAnalysis(result.data);
+            setIsLoadingMoodAnalysis(false);
+          } else if (result.status === 'generating') {
+            // Continue polling
+            setTimeout(pollMoodAnalysis, 3000); // Poll every 3 seconds
+          }
+        } catch (error) {
+          console.error('Error polling mood analysis:', error);
+          setIsLoadingMoodAnalysis(false);
+        }
+      };
+      
+      // Start polling after initial delay
+      setTimeout(pollMoodAnalysis, 2000);
+    }
+  }, [moodAnalysis, scanResult.businessProfile?.placeId]);
 
   // Function to fetch restaurant search screenshot
   const fetchRestaurantSearchScreenshot = async () => {
@@ -1216,41 +1246,41 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                     </div>
                   </div>
 
-                  {/* OpenAI Customer Mood Analysis */}
-                  {scanResult.reviewsAnalysis?.customerMoodAnalysis && (
-                    <div className="bg-[#5F5FFF]/5 border border-[#5F5FFF]/20 rounded-lg p-4 mt-6">
-                      <h3 className="font-bold text-[#5F5FFF] mb-3 flex items-center gap-2">
-                        <div className="w-2 h-2 bg-[#5F5FFF] rounded-full"></div>
-                        Customer Mood Insights (100+ Reviews Analyzed)
-                      </h3>
-                      
+                  {/* OpenAI Customer Mood Analysis with Loading State */}
+                  <div className="bg-[#5F5FFF]/5 border border-[#5F5FFF]/20 rounded-lg p-4 mt-6">
+                    <h3 className="font-bold text-[#5F5FFF] mb-3 flex items-center gap-2">
+                      <div className="w-2 h-2 bg-[#5F5FFF] rounded-full"></div>
+                      Customer Mood Insights (100+ Reviews Analyzed)
+                    </h3>
+                    
+                    {moodAnalysis ? (
                       <div className="mb-4">
                         <div className="flex items-center gap-2 mb-3">
                           <span className="text-sm text-gray-600">Overall Mood:</span>
                           <span className={`px-3 py-1 rounded-full text-xs font-bold text-white ${
-                            scanResult.reviewsAnalysis.customerMoodAnalysis.overallMood === 'delighted' ? 'bg-green-500' :
-                            scanResult.reviewsAnalysis.customerMoodAnalysis.overallMood === 'satisfied' ? 'bg-blue-500' :
-                            scanResult.reviewsAnalysis.customerMoodAnalysis.overallMood === 'mixed' ? 'bg-yellow-500' :
-                            scanResult.reviewsAnalysis.customerMoodAnalysis.overallMood === 'frustrated' ? 'bg-orange-500' :
+                            moodAnalysis.overallMood === 'delighted' ? 'bg-green-500' :
+                            moodAnalysis.overallMood === 'satisfied' ? 'bg-blue-500' :
+                            moodAnalysis.overallMood === 'mixed' ? 'bg-yellow-500' :
+                            moodAnalysis.overallMood === 'frustrated' ? 'bg-orange-500' :
                             'bg-red-500'
                           }`}>
-                            {scanResult.reviewsAnalysis.customerMoodAnalysis.overallMood.charAt(0).toUpperCase() + 
-                             scanResult.reviewsAnalysis.customerMoodAnalysis.overallMood.slice(1)}
+                            {moodAnalysis.overallMood.charAt(0).toUpperCase() + 
+                             moodAnalysis.overallMood.slice(1)}
                           </span>
                         </div>
                         
                         <div className="bg-white/70 rounded-lg p-4 mb-4">
                           <p className="text-sm text-gray-700 leading-relaxed">
-                            {scanResult.reviewsAnalysis.customerMoodAnalysis.sentimentSummary}
+                            {moodAnalysis.sentimentSummary}
                           </p>
                         </div>
 
-                        {scanResult.reviewsAnalysis.customerMoodAnalysis.keyMoodIndicators && 
-                         scanResult.reviewsAnalysis.customerMoodAnalysis.keyMoodIndicators.length > 0 && (
+                        {moodAnalysis.keyMoodIndicators && 
+                         moodAnalysis.keyMoodIndicators.length > 0 && (
                           <div className="mb-4">
                             <h4 className="text-sm font-medium text-gray-700 mb-2">Key Mood Indicators:</h4>
                             <div className="flex flex-wrap gap-2">
-                              {scanResult.reviewsAnalysis.customerMoodAnalysis.keyMoodIndicators.slice(0, 4).map((indicator, index) => (
+                              {moodAnalysis.keyMoodIndicators.slice(0, 4).map((indicator, index) => (
                                 <span 
                                   key={index}
                                   className="text-xs bg-[#5F5FFF]/20 text-[#5F5FFF] px-2 py-1 rounded-full"
@@ -1262,26 +1292,26 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                           </div>
                         )}
 
-                        {scanResult.reviewsAnalysis.customerMoodAnalysis.businessInsights && (
+                        {moodAnalysis.businessInsights && (
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                            {scanResult.reviewsAnalysis.customerMoodAnalysis.businessInsights.strengthsPerceived && 
-                             scanResult.reviewsAnalysis.customerMoodAnalysis.businessInsights.strengthsPerceived.length > 0 && (
+                            {moodAnalysis.businessInsights.strengthsPerceived && 
+                             moodAnalysis.businessInsights.strengthsPerceived.length > 0 && (
                               <div className="bg-green-50 rounded-lg p-3">
                                 <h5 className="text-xs font-bold text-green-700 mb-2">🎯 Customer Praise</h5>
                                 <ul className="text-xs text-gray-700 space-y-1">
-                                  {scanResult.reviewsAnalysis.customerMoodAnalysis.businessInsights.strengthsPerceived.slice(0, 2).map((strength, index) => (
+                                  {moodAnalysis.businessInsights.strengthsPerceived.slice(0, 2).map((strength, index) => (
                                     <li key={index}>• {strength}</li>
                                   ))}
                                 </ul>
                               </div>
                             )}
                             
-                            {scanResult.reviewsAnalysis.customerMoodAnalysis.businessInsights.improvementOpportunities && 
-                             scanResult.reviewsAnalysis.customerMoodAnalysis.businessInsights.improvementOpportunities.length > 0 && (
+                            {moodAnalysis.businessInsights.improvementOpportunities && 
+                             moodAnalysis.businessInsights.improvementOpportunities.length > 0 && (
                               <div className="bg-orange-50 rounded-lg p-3">
                                 <h5 className="text-xs font-bold text-orange-700 mb-2">🔧 Improvement Areas</h5>
                                 <ul className="text-xs text-gray-700 space-y-1">
-                                  {scanResult.reviewsAnalysis.customerMoodAnalysis.businessInsights.improvementOpportunities.slice(0, 2).map((opportunity, index) => (
+                                  {moodAnalysis.businessInsights.improvementOpportunities.slice(0, 2).map((opportunity, index) => (
                                     <li key={index}>• {opportunity}</li>
                                   ))}
                                 </ul>
@@ -1290,8 +1320,22 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                           </div>
                         )}
                       </div>
-                    </div>
-                  )}
+                    ) : isLoadingMoodAnalysis ? (
+                      // Loading state for OpenAI analysis
+                      <div className="bg-white/70 rounded-lg p-4 text-center">
+                        <div className="flex items-center justify-center gap-2 mb-2">
+                          <div className="w-4 h-4 border-2 border-[#5F5FFF] border-t-transparent rounded-full animate-spin"></div>
+                          <span className="text-sm text-gray-600">Generating your review analysis...</span>
+                        </div>
+                        <p className="text-xs text-gray-500">This may take a few moments while we analyze 100+ reviews with AI</p>
+                      </div>
+                    ) : (
+                      // Error/unavailable state
+                      <div className="bg-gray-50 rounded-lg p-4 text-center">
+                        <p className="text-sm text-gray-500">Customer mood analysis unavailable - OpenAI analysis could not be completed.</p>
+                      </div>
+                    )}
+                  </div>
                 </div>
               )}
             </CardContent>
