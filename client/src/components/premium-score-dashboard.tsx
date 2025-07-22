@@ -761,16 +761,13 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                   </div>
 
                   {/* Right Side - Where You Rank Button */}
-                  <div className="space-y-4 mt-[144px] mb-[144px]">
+                  <div className="space-y-4">
                     {/* URGENT BOOSTLY RANKING WARNING */}
-                    <div className="bg-gradient-to-r from-[#4C1D95] via-[#5B21B6] to-[#6B21A8] border-4 border-yellow-400 rounded-xl p-6 text-center text-white shadow-2xl animate-pulse relative overflow-hidden">
-                      {/* Animated background stripes */}
-                      <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/10 via-transparent to-yellow-400/10 animate-pulse"></div>
-                      
+                    <div className="bg-gradient-to-r from-[#4C1D95] via-[#5B21B6] to-[#6B21A8] border-4 border-yellow-400 rounded-xl p-6 text-center text-white shadow-2xl relative overflow-hidden">
                       <div className="relative z-10">
                         <div className="flex items-center justify-center mb-3">
                           <div className="bg-yellow-500 rounded-full p-2 mr-3">
-                            <AlertCircle className="w-8 h-8 text-purple-900 animate-bounce" />
+                            <AlertCircle className="w-8 h-8 text-purple-900" />
                           </div>
                           <div>
                             <h3 className="text-2xl font-black text-white tracking-wide drop-shadow-lg">
@@ -781,7 +778,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                             </p>
                           </div>
                           <div className="bg-yellow-500 rounded-full p-2 ml-3">
-                            <AlertCircle className="w-8 h-8 text-purple-900 animate-bounce" />
+                            <AlertCircle className="w-8 h-8 text-purple-900" />
                           </div>
                         </div>
                         
@@ -794,7 +791,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                           </p>
                         </div>
                         
-                        <div className="text-yellow-200 text-sm font-bold uppercase animate-bounce">
+                        <div className="text-yellow-200 text-sm font-bold uppercase">
                           ⚡ IMMEDIATE ACTION REQUIRED
                         </div>
                       </div>
