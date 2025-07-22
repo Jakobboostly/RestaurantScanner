@@ -63,11 +63,14 @@ export class EnhancedSocialMediaDetector {
     }
     
     // Step 2: Enhanced website scanning for other platforms
+    console.log('🔍 Step 2: Starting enhanced website scanning...');
     const websiteLinks = await this.enhancedWebsiteScan(websiteUrl);
+    console.log('🔍 Website scan results:', websiteLinks);
     // Only merge non-Facebook results to avoid overriding enhanced Facebook detection
     Object.keys(websiteLinks).forEach(platform => {
       if (platform !== 'facebook') {
         results[platform as keyof SocialMediaLinks] = websiteLinks[platform as keyof SocialMediaLinks];
+        console.log(`✅ Added ${platform}: ${websiteLinks[platform as keyof SocialMediaLinks]}`);
       }
     });
 
@@ -89,8 +92,10 @@ export class EnhancedSocialMediaDetector {
   }
 
   private async enhancedWebsiteScan(websiteUrl: string): Promise<SocialMediaLinks> {
+    console.log(`🔍 Enhanced website scan starting for: ${websiteUrl}`);
     try {
       const formattedUrl = websiteUrl.startsWith('http') ? websiteUrl : `https://${websiteUrl}`;
+      console.log(`🔍 Fetching website content from: ${formattedUrl}`);
       
       const response = await axios.get(formattedUrl, {
         timeout: this.timeout,
@@ -99,6 +104,8 @@ export class EnhancedSocialMediaDetector {
         },
         maxRedirects: 5
       });
+      
+      console.log(`✅ Website content fetched successfully, status: ${response.status}`);
 
       const $ = cheerio.load(response.data);
       const socialLinks: SocialMediaLinks = {};
@@ -147,6 +154,8 @@ export class EnhancedSocialMediaDetector {
 
       // Enhanced detection: Look for clickable social media icons with href attributes
       console.log('🔍 Enhanced social media detection: Looking for clickable social icons...');
+      console.log(`🔍 Website content length: ${response.data.length} characters`);
+      console.log(`🔍 Found ${$('a[href*="instagram.com"]').length} direct Instagram links`);
 
       // Check for Facebook icons with clickable links
       if (!socialLinks.facebook) {
@@ -193,7 +202,9 @@ export class EnhancedSocialMediaDetector {
       }
 
       // Check for Instagram icons with clickable links (enhanced detection)
+      console.log('🔍 Starting Instagram detection phase...');
       if (!socialLinks.instagram) {
+        console.log('🔍 Instagram not yet found, running enhanced detection...');
         const instagramSelectors = [
           'a[href*="instagram.com"]',
           'a[href*="www.instagram.com"]',
