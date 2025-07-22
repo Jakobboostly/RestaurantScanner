@@ -608,20 +608,66 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
 // Helper functions for Google Business Profile analysis
 function calculateProfileCompleteness(profile: any): { score: number; missingElements: string[] } {
-  const elements = [
-    { key: 'name', weight: 10, present: !!profile.name },
-    { key: 'phone', weight: 15, present: !!profile.phone },
-    { key: 'website', weight: 20, present: !!profile.website },
-    { key: 'photos', weight: 25, present: profile.photos?.total > 0 },
-    { key: 'reviews', weight: 20, present: profile.totalReviews > 0 },
-    { key: 'rating', weight: 10, present: profile.rating > 0 }
-  ];
+  let totalScore = 0;
+  const missingElements = [];
 
-  const totalWeight = elements.reduce((sum, el) => sum + el.weight, 0);
-  const completedWeight = elements.filter(el => el.present).reduce((sum, el) => sum + el.weight, 0);
-  
-  const score = Math.round((completedWeight / totalWeight) * 100);
-  const missingElements = elements.filter(el => !el.present).map(el => el.key);
+  // Name (10% weight) - all or nothing
+  if (profile.name) {
+    totalScore += 10;
+  } else {
+    missingElements.push('name');
+  }
+
+  // Phone (15% weight) - all or nothing  
+  if (profile.phone) {
+    totalScore += 15;
+  } else {
+    missingElements.push('phone');
+  }
+
+  // Website (20% weight) - all or nothing
+  if (profile.website) {
+    totalScore += 20;
+  } else {
+    missingElements.push('website');
+  }
+
+  // Photos (25% weight) - 2.5% per photo up to 10 photos
+  const photoCount = profile.photos?.total || 0;
+  if (photoCount > 0) {
+    const photoScore = Math.min(10, photoCount) * 2.5; // Cap at 10 photos
+    totalScore += photoScore;
+  } else {
+    missingElements.push('photos');
+  }
+
+  // Reviews (20% weight) - 1% per 15 reviews up to 20% cap
+  const reviewCount = profile.totalReviews || 0;
+  if (reviewCount > 0) {
+    const reviewScore = Math.min(20, Math.floor(reviewCount / 15)); // 1% per 15 reviews, capped at 20%
+    totalScore += reviewScore;
+  } else {
+    missingElements.push('reviews');
+  }
+
+  // Rating (10% weight) - tiered system
+  const rating = profile.rating || 0;
+  if (rating >= 3.9) {
+    totalScore += 10; // 3.9-4.0+ gets full 10%
+  } else if (rating >= 3.6) {
+    totalScore += 7;  // 3.6-3.8 gets 7%
+  } else if (rating >= 3.3) {
+    totalScore += 5;  // 3.3-3.5 gets 5%
+  } else if (rating >= 3.0) {
+    totalScore += 2;  // 3.0-3.2 gets 2%
+  } else {
+    // 0-2.9 gets 0%, but only add to missing if truly 0
+    if (rating === 0) {
+      missingElements.push('rating');
+    }
+  }
+
+  const score = Math.round(totalScore);
 
   return { score, missingElements };
 }
