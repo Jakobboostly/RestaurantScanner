@@ -76,6 +76,15 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 22, 2025. Removed non-functional Zembratech service and enhanced Google Reviews functionality:
+  - Deleted zembraTechReviewsService.ts completely as API was returning network errors (ENOTFOUND)
+  - Removed all Zembratech references from socialMediaDetector.ts and environment variables
+  - Enhanced Google Reviews service to fetch ALL available reviews instead of limiting to 5
+  - Simplified review sentiment analysis to use only Google Places API data with built-in keyword analysis
+  - Fixed TypeScript errors in social media detector by removing broken external API dependencies
+  - System now relies solely on Google Places API for authentic review data with sentiment classification
+  - Review analysis uses rating-based sentiment (4+ stars = positive, 3 stars = neutral, <3 stars = negative)
+  - Added comprehensive key phrase extraction for food quality, service, atmosphere, value, and location themes
 - July 21, 2025. Implemented real ranking keyword API integration replacing estimates with authentic DataForSEO SERP data:
   - Added getRealRestaurantRankings() method to EnhancedDataForSeoService using `/serp/google/organic/live` endpoint
   - Replaced estimated keyword positions with actual Google search rankings for three key patterns: "(food type) near me", "(food type) restaurant near me", "(food type)"

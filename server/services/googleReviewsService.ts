@@ -45,8 +45,8 @@ export class GoogleReviewsService {
       const result = response.data.result;
       const reviews = result.reviews || [];
       
-      // Process and enhance reviews with sentiment analysis
-      const processedReviews: GoogleReview[] = reviews.slice(0, 5).map((review: any) => ({
+      // Process and enhance ALL reviews with sentiment analysis
+      const processedReviews: GoogleReview[] = reviews.map((review: any) => ({
         author_name: review.author_name,
         author_url: review.author_url,
         language: review.language,
