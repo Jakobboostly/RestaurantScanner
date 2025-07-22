@@ -659,6 +659,16 @@ export class AdvancedScannerService {
       serpScreenshots: serpScreenshots || [],
       restaurantSearchScreenshot: restaurantSearchScreenshot
     };
+
+    // Debug: Log the final scan result structure to verify customerMoodAnalysis inclusion
+    console.log('🔍 Final scan result structure keys:', Object.keys(result));
+    console.log('📊 reviewsAnalysis keys:', result.reviewsAnalysis ? Object.keys(result.reviewsAnalysis) : 'null');
+    console.log('🧠 customerMoodAnalysis present:', !!result.reviewsAnalysis?.customerMoodAnalysis);
+    if (result.reviewsAnalysis?.customerMoodAnalysis) {
+      console.log('✅ CustomerMoodAnalysis overallMood:', result.reviewsAnalysis.customerMoodAnalysis.overallMood);
+    }
+
+    return result;
   }
 
   private calculateEnhancedSeoScore(
@@ -1186,17 +1196,22 @@ export class AdvancedScannerService {
   }
 
   private async generateEnhancedReviewsAnalysis(businessProfile?: any, placeId?: string): Promise<any> {
+    console.log('📊 Starting enhanced reviews analysis...');
+    console.log('Business profile rating:', businessProfile?.rating);
+    console.log('Business profile totalReviews:', businessProfile?.totalReviews);
+    console.log('PlaceId provided:', !!placeId);
+    
     let googleReviews = null;
     let apifyReviews = null;
     
     // Try Apify service first for comprehensive reviews (100 reviews)
     if (placeId && this.apifyReviewsService) {
       try {
-        console.log('Attempting Apify comprehensive review fetch...');
+        console.log('🔍 Attempting Apify comprehensive review fetch...');
         apifyReviews = await this.apifyReviewsService.getGoogleReviews(placeId);
-        console.log('Apify reviews retrieved:', apifyReviews.success ? apifyReviews.data?.length : 'failed');
+        console.log('📝 Apify reviews retrieved:', apifyReviews.success ? apifyReviews.data?.length : 'failed');
       } catch (error) {
-        console.error('Apify reviews failed:', error);
+        console.error('❌ Apify reviews failed:', error);
       }
     }
     
@@ -1212,12 +1227,14 @@ export class AdvancedScannerService {
     
     // Use Apify comprehensive reviews if available (100 reviews)
     if (apifyReviews && apifyReviews.success && apifyReviews.data && apifyReviews.data.length > 0) {
+      console.log('✅ Using Apify path - comprehensive reviews available');
       const sentimentAnalysis = this.analyzeSentimentFromApifyReviews(apifyReviews.data);
       
       // Generate OpenAI mood analysis from all reviews
-      console.log('Generating OpenAI customer mood analysis...');
+      console.log('🧠 Generating OpenAI customer mood analysis...');
       const customerMoodAnalysis = await this.openaiReviewAnalysisService.analyzeCustomerMood(apifyReviews.data);
-      console.log('OpenAI mood analysis completed:', customerMoodAnalysis.overallMood);
+      console.log('✅ OpenAI mood analysis completed:', customerMoodAnalysis.overallMood);
+      console.log('🔍 CustomerMoodAnalysis object keys:', Object.keys(customerMoodAnalysis));
       
       return {
         overallScore: Math.min((apifyReviews.metadata?.averageRating || businessProfile?.rating || 0) * 20, 100),
@@ -1255,6 +1272,11 @@ export class AdvancedScannerService {
     else if (googleReviews && googleReviews.reviews.length > 0) {
       const sentimentAnalysis = this.analyzeSentimentFromGoogleReviews(googleReviews.reviews);
       
+      // Generate OpenAI mood analysis from limited Google reviews
+      console.log('Generating OpenAI customer mood analysis from Google Places reviews...');
+      const customerMoodAnalysis = await this.openaiReviewAnalysisService.analyzeCustomerMood(googleReviews.reviews);
+      console.log('OpenAI mood analysis completed (Google fallback):', customerMoodAnalysis.overallMood);
+      
       return {
         overallScore: Math.min(businessProfile?.rating * 20 || 75, 100),
         totalReviews: businessProfile?.totalReviews || googleReviews.reviews.length,
@@ -1264,6 +1286,7 @@ export class AdvancedScannerService {
         keyThemes: sentimentAnalysis.keyThemes,
         recentReviews: googleReviews.reviews.slice(0, 5),
         examples: sentimentAnalysis.examples,
+        customerMoodAnalysis,
         trends: {
           ratingTrend: businessProfile?.rating >= 4.0 ? 'positive' : 'stable',
           volumeTrend: businessProfile?.totalReviews > 50 ? 'increasing' : 'stable',
@@ -1276,6 +1299,9 @@ export class AdvancedScannerService {
     }
     
     // Fallback: Use business profile data only (no external API costs)
+    console.log('Using business profile fallback - no review data available for OpenAI analysis');
+    const defaultMoodAnalysis = await this.openaiReviewAnalysisService.getDefaultAnalysis();
+    
     return {
       overallScore: this.calculateOverallReviewScore(businessProfile),
       totalReviews: businessProfile?.totalReviews || 0,
@@ -1293,6 +1319,7 @@ export class AdvancedScannerService {
         neutral: [],
         negative: []
       },
+      customerMoodAnalysis: defaultMoodAnalysis,
       trends: {
         ratingTrend: this.calculateRatingTrend(businessProfile),
         volumeTrend: this.calculateVolumeTrend(businessProfile),

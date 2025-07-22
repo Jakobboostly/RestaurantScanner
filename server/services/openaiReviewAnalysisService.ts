@@ -134,7 +134,7 @@ Focus on capturing the emotional undertones, mood patterns, and customer psychol
     }
   }
 
-  private getDefaultAnalysis(): CustomerMoodAnalysis {
+  getDefaultAnalysis(): CustomerMoodAnalysis {
     return {
       overallMood: 'mixed',
       sentimentSummary: 'Customer mood analysis unavailable - OpenAI analysis could not be completed.',
