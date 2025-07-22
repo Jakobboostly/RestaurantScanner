@@ -766,9 +766,6 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                     <div className="bg-gradient-to-r from-[#4C1D95] via-[#5B21B6] to-[#6B21A8] border-4 border-yellow-400 rounded-xl p-6 text-center text-white shadow-2xl relative overflow-hidden">
                       <div className="relative z-10">
                         <div className="flex items-center justify-center mb-3">
-                          <div className="bg-yellow-500 rounded-full p-2 mr-3">
-                            <AlertCircle className="w-8 h-8 text-purple-900" />
-                          </div>
                           <div>
                             <h3 className="text-2xl font-black text-white tracking-wide drop-shadow-lg">
                               ⚠️ CRITICAL RANKING ALERT
@@ -776,9 +773,6 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                             <p className="text-yellow-200 text-xs font-bold uppercase tracking-widest">
                               CUSTOMERS CAN'T FIND YOU
                             </p>
-                          </div>
-                          <div className="bg-yellow-500 rounded-full p-2 ml-3">
-                            <AlertCircle className="w-8 h-8 text-purple-900" />
                           </div>
                         </div>
                         
