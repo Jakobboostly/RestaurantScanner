@@ -1210,9 +1210,88 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                       <span className="text-sm text-gray-600">Overall Rating</span>
                       <span className="font-bold text-lg text-[#FCD34D]">{scanResult.businessProfile?.rating || 0}/5</span>
                     </div>
-                    
-                    
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-600">Review Volume</span>
+                      <span className="font-medium">{scanResult.businessProfile?.totalReviews || 0}</span>
+                    </div>
                   </div>
+
+                  {/* OpenAI Customer Mood Analysis */}
+                  {scanResult.reviewsAnalysis?.customerMoodAnalysis && (
+                    <div className="bg-[#5F5FFF]/5 border border-[#5F5FFF]/20 rounded-lg p-4 mt-6">
+                      <h3 className="font-bold text-[#5F5FFF] mb-3 flex items-center gap-2">
+                        <div className="w-2 h-2 bg-[#5F5FFF] rounded-full"></div>
+                        Customer Mood Insights (100+ Reviews Analyzed)
+                      </h3>
+                      
+                      <div className="mb-4">
+                        <div className="flex items-center gap-2 mb-3">
+                          <span className="text-sm text-gray-600">Overall Mood:</span>
+                          <span className={`px-3 py-1 rounded-full text-xs font-bold text-white ${
+                            scanResult.reviewsAnalysis.customerMoodAnalysis.overallMood === 'delighted' ? 'bg-green-500' :
+                            scanResult.reviewsAnalysis.customerMoodAnalysis.overallMood === 'satisfied' ? 'bg-blue-500' :
+                            scanResult.reviewsAnalysis.customerMoodAnalysis.overallMood === 'mixed' ? 'bg-yellow-500' :
+                            scanResult.reviewsAnalysis.customerMoodAnalysis.overallMood === 'frustrated' ? 'bg-orange-500' :
+                            'bg-red-500'
+                          }`}>
+                            {scanResult.reviewsAnalysis.customerMoodAnalysis.overallMood.charAt(0).toUpperCase() + 
+                             scanResult.reviewsAnalysis.customerMoodAnalysis.overallMood.slice(1)}
+                          </span>
+                        </div>
+                        
+                        <div className="bg-white/70 rounded-lg p-4 mb-4">
+                          <p className="text-sm text-gray-700 leading-relaxed">
+                            {scanResult.reviewsAnalysis.customerMoodAnalysis.sentimentSummary}
+                          </p>
+                        </div>
+
+                        {scanResult.reviewsAnalysis.customerMoodAnalysis.keyMoodIndicators && 
+                         scanResult.reviewsAnalysis.customerMoodAnalysis.keyMoodIndicators.length > 0 && (
+                          <div className="mb-4">
+                            <h4 className="text-sm font-medium text-gray-700 mb-2">Key Mood Indicators:</h4>
+                            <div className="flex flex-wrap gap-2">
+                              {scanResult.reviewsAnalysis.customerMoodAnalysis.keyMoodIndicators.slice(0, 4).map((indicator, index) => (
+                                <span 
+                                  key={index}
+                                  className="text-xs bg-[#5F5FFF]/20 text-[#5F5FFF] px-2 py-1 rounded-full"
+                                >
+                                  {indicator}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+
+                        {scanResult.reviewsAnalysis.customerMoodAnalysis.businessInsights && (
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            {scanResult.reviewsAnalysis.customerMoodAnalysis.businessInsights.strengthsPerceived && 
+                             scanResult.reviewsAnalysis.customerMoodAnalysis.businessInsights.strengthsPerceived.length > 0 && (
+                              <div className="bg-green-50 rounded-lg p-3">
+                                <h5 className="text-xs font-bold text-green-700 mb-2">🎯 Customer Praise</h5>
+                                <ul className="text-xs text-gray-700 space-y-1">
+                                  {scanResult.reviewsAnalysis.customerMoodAnalysis.businessInsights.strengthsPerceived.slice(0, 2).map((strength, index) => (
+                                    <li key={index}>• {strength}</li>
+                                  ))}
+                                </ul>
+                              </div>
+                            )}
+                            
+                            {scanResult.reviewsAnalysis.customerMoodAnalysis.businessInsights.improvementOpportunities && 
+                             scanResult.reviewsAnalysis.customerMoodAnalysis.businessInsights.improvementOpportunities.length > 0 && (
+                              <div className="bg-orange-50 rounded-lg p-3">
+                                <h5 className="text-xs font-bold text-orange-700 mb-2">🔧 Improvement Areas</h5>
+                                <ul className="text-xs text-gray-700 space-y-1">
+                                  {scanResult.reviewsAnalysis.customerMoodAnalysis.businessInsights.improvementOpportunities.slice(0, 2).map((opportunity, index) => (
+                                    <li key={index}>• {opportunity}</li>
+                                  ))}
+                                </ul>
+                              </div>
+                            )}
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  )}
                 </div>
               )}
             </CardContent>
