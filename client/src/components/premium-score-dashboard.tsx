@@ -81,9 +81,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
   
   // Poll for mood analysis results if not available initially
   useEffect(() => {
-    // For now, we need to extract placeId from the URL or store it properly
-    // Based on logs, we know the current placeId is ChIJk35yNb0zjIcRRho6plJwDEE
-    const currentPlaceId = 'ChIJk35yNb0zjIcRRho6plJwDEE'; // TODO: Get this dynamically from scan context
+    const currentPlaceId = scanResult.placeId;
     
     if (!moodAnalysis && currentPlaceId && isLoadingMoodAnalysis) {
       console.log('Starting mood analysis polling for placeId:', currentPlaceId);
@@ -116,7 +114,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
       // Start polling after initial delay
       setTimeout(pollMoodAnalysis, 2000);
     }
-  }, [isLoadingMoodAnalysis]); // Remove dependencies issues
+  }, [scanResult.placeId, isLoadingMoodAnalysis]); // Use the actual placeId from scan result
 
   // Function to fetch restaurant search screenshot
   const fetchRestaurantSearchScreenshot = async () => {

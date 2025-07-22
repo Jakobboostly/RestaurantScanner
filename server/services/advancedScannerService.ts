@@ -623,6 +623,7 @@ export class AdvancedScannerService {
     return {
       domain,
       restaurantName,
+      placeId,
       overallScore,
       performance: performanceScore,
       seo: enhancedSeoScore,

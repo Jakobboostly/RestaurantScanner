@@ -88,6 +88,7 @@ export const restaurantSearchResultSchema = z.object({
 export const scanResultSchema = z.object({
   domain: z.string(),
   restaurantName: z.string(),
+  placeId: z.string().optional(),
   overallScore: z.number(),
   performance: z.number(),
   seo: z.number(),
