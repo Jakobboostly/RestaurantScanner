@@ -676,45 +676,79 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-sm text-gray-600">Ranking Keywords</span>
-                        <span className="font-medium">{scanResult.keywords?.filter(k => k.position && k.position <= 20).length || 0}</span>
+                        <span className="font-medium">{(() => {
+                          // Check multiple data sources for ranking keywords
+                          const keywordsRanked = scanResult.keywords?.filter(k => k.position && k.position <= 20).length || 0;
+                          const serpRanked = scanResult.keywordAnalysis?.rankingPositions?.filter(r => r.position && r.position <= 20).length || 0;
+                          const maxRanked = Math.max(keywordsRanked, serpRanked);
+                          console.log('🔍 Frontend ranking keywords count:', { keywordsRanked, serpRanked, maxRanked });
+                          return maxRanked;
+                        })()}</span>
                       </div>
                       
-                      {/* Show actual ranking keywords */}
-                      {scanResult.keywords && scanResult.keywords.filter(k => k.position && k.position <= 20).length > 0 && (
+                      {/* Show actual ranking keywords from multiple sources */}
+                      {(() => {
+                        const keywordsWithRanking = scanResult.keywords?.filter(k => k.position && k.position <= 20) || [];
+                        const serpWithRanking = scanResult.keywordAnalysis?.rankingPositions?.filter(r => r.position && r.position <= 20) || [];
+                        const allRankedKeywords = [...keywordsWithRanking, ...serpWithRanking];
+                        const uniqueRankedKeywords = allRankedKeywords.filter((item, index, self) => 
+                          index === self.findIndex(k => k.keyword === item.keyword)
+                        );
+                        return uniqueRankedKeywords.length > 0;
+                      })() && (
                         <div className="bg-[#5F5FFF]/5 border border-[#5F5FFF]/20 rounded-lg p-3 space-y-2">
                           <h4 className="text-sm font-semibold text-[#5F5FFF] mb-2">Your Ranking Keywords</h4>
                           <div className="space-y-1">
-                            {scanResult.keywords
-                              .filter(k => k.position && k.position <= 20)
-                              .sort((a, b) => (a.position || 99) - (b.position || 99))
-                              .slice(0, 5)
-                              .map((keyword, index) => (
-                                <div key={index} className="flex justify-between items-center text-xs">
-                                  <span className="text-gray-700 flex-1 truncate pr-2">
-                                    "{keyword.keyword}"
-                                  </span>
-                                  <div className="flex items-center gap-2">
-                                    <Badge 
-                                      variant="outline" 
-                                      className={`text-xs px-2 py-0 ${
-                                        keyword.position <= 3 
-                                          ? 'bg-green-100 text-green-800 border-green-200'
-                                          : keyword.position <= 10
-                                          ? 'bg-yellow-100 text-yellow-800 border-yellow-200'
-                                          : 'bg-orange-100 text-orange-800 border-orange-200'
-                                      }`}
-                                    >
-                                      #{keyword.position}
-                                    </Badge>
+                            {(() => {
+                              // Merge ranking keywords from multiple sources
+                              const keywordsWithRanking = scanResult.keywords?.filter(k => k.position && k.position <= 20) || [];
+                              const serpWithRanking = scanResult.keywordAnalysis?.rankingPositions?.filter(r => r.position && r.position <= 20) || [];
+                              const allRankedKeywords = [...keywordsWithRanking, ...serpWithRanking];
+                              const uniqueRankedKeywords = allRankedKeywords.filter((item, index, self) => 
+                                index === self.findIndex(k => k.keyword === item.keyword)
+                              );
+                              
+                              console.log('🔍 Frontend displaying ranked keywords:', uniqueRankedKeywords);
+                              
+                              return uniqueRankedKeywords
+                                .sort((a, b) => (a.position || 99) - (b.position || 99))
+                                .slice(0, 5)
+                                .map((keyword, index) => (
+                                  <div key={index} className="flex justify-between items-center text-xs">
+                                    <span className="text-gray-700 flex-1 truncate pr-2">
+                                      "{keyword.keyword}"
+                                    </span>
+                                    <div className="flex items-center gap-2">
+                                      <Badge 
+                                        variant="outline" 
+                                        className={`text-xs px-2 py-0 ${
+                                          keyword.position <= 3 
+                                            ? 'bg-green-100 text-green-800 border-green-200'
+                                            : keyword.position <= 10
+                                            ? 'bg-yellow-100 text-yellow-800 border-yellow-200'
+                                            : 'bg-orange-100 text-orange-800 border-orange-200'
+                                        }`}
+                                      >
+                                        #{keyword.position}
+                                      </Badge>
+                                    </div>
                                   </div>
+                                ));
+                            })()}
+                            {(() => {
+                              const keywordsWithRanking = scanResult.keywords?.filter(k => k.position && k.position <= 20) || [];
+                              const serpWithRanking = scanResult.keywordAnalysis?.rankingPositions?.filter(r => r.position && r.position <= 20) || [];
+                              const allRankedKeywords = [...keywordsWithRanking, ...serpWithRanking];
+                              const uniqueRankedKeywords = allRankedKeywords.filter((item, index, self) => 
+                                index === self.findIndex(k => k.keyword === item.keyword)
+                              );
+                              
+                              return uniqueRankedKeywords.length > 5 && (
+                                <div className="text-xs text-gray-500 text-center pt-1">
+                                  +{uniqueRankedKeywords.length - 5} more keywords
                                 </div>
-                              ))
-                            }
-                            {scanResult.keywords.filter(k => k.position && k.position <= 20).length > 5 && (
-                              <div className="text-xs text-gray-500 text-center pt-1">
-                                +{scanResult.keywords.filter(k => k.position && k.position <= 20).length - 5} more keywords
-                              </div>
-                            )}
+                              );
+                            })()}
                           </div>
                         </div>
                       )}

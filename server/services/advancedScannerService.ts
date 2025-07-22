@@ -575,9 +575,18 @@ export class AdvancedScannerService {
       category: rec.category
     }));
 
+    // Merge SERP position data into keyword data
+    const enrichedKeywordData = keywordData.map(keyword => {
+      const serpData = serpAnalysis.find(s => s.keyword === keyword.keyword);
+      return {
+        ...keyword,
+        position: serpData?.position || null // Add position from SERP analysis
+      };
+    });
+
     // Process keyword analysis
     const keywordAnalysis = {
-      targetKeywords: keywordData.slice(0, 10),
+      targetKeywords: enrichedKeywordData.slice(0, 10),
       rankingPositions: serpAnalysis.map(s => ({
         keyword: s.keyword,
         position: s.position, // Fixed: was s.currentPosition
@@ -619,16 +628,27 @@ export class AdvancedScannerService {
     console.log('- keywordAnalysis.rankingPositions:', keywordAnalysis.rankingPositions);
     console.log('- competitorIntelligence.keywordGaps:', competitorIntelligence.keywordGaps);
     console.log('- serpFeatures:', serpFeatures);
+    
+    // Debug keyword position data specifically
+    console.log('🔍 DEBUG: Keyword position analysis:');
+    console.log('- enrichedKeywordData with positions:', enrichedKeywordData.map(k => ({ keyword: k.keyword, position: k.position, hasPosition: !!k.position })));
+    console.log('- serpAnalysis with positions:', serpAnalysis.map(s => ({ keyword: s.keyword, position: s.position, hasPosition: !!s.position })));
+    
+    // Check for ranking keywords in multiple data sources
+    const enrichedKeywordDataRanked = enrichedKeywordData.filter(k => k.position && k.position <= 20);
+    const serpAnalysisRanked = serpAnalysis.filter(s => s.position && s.position <= 20);
+    console.log('- enrichedKeywordData ranked (≤20):', enrichedKeywordDataRanked.length, enrichedKeywordDataRanked);
+    console.log('- serpAnalysis ranked (≤20):', serpAnalysisRanked.length, serpAnalysisRanked);
 
     // Keywords are now passed in from the main scan method
 
-    console.log('Final processed keywords sent to frontend:', keywordData.length);
-    console.log('Sample processed keyword:', keywordData[0]);
+    console.log('Final processed keywords sent to frontend:', enrichedKeywordData.length);
+    console.log('Sample processed keyword:', enrichedKeywordData[0]);
 
     // Ensure keywords are in multiple places for frontend compatibility
     const enhancedKeywordAnalysis = {
       ...keywordAnalysis,
-      targetKeywords: keywordData,  // Frontend expects this property
+      targetKeywords: enrichedKeywordData,  // Frontend expects this property with position data
       rankingPositions: keywordAnalysis.rankingPositions
     };
 
@@ -643,7 +663,7 @@ export class AdvancedScannerService {
       userExperience: accessibilityScore,
       issues,
       recommendations,
-      keywords: keywordData,  // Primary keyword location
+      keywords: enrichedKeywordData,  // Primary keyword location with position data
       keywordAnalysis: enhancedKeywordAnalysis,
       competitors: await this.generateDetailedCompetitorAnalysis(competitors, restaurantName, businessProfile, keywordData),
       competitorIntelligence,
