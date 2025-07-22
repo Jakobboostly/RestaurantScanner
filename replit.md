@@ -78,6 +78,7 @@ This is a comprehensive restaurant website scanner application built with React 
 
 - July 22, 2025. Integrated Apify Google Maps Scraper for comprehensive review analysis:
   - Added ApifyReviewsService using 'compass/google-maps-scraper' actor for up to 100 reviews per restaurant
+  - Optimized to use Place IDs directly (placeIds parameter) instead of search strings for efficient data retrieval
   - Implemented intelligent fallback system: Apify (100 reviews) → Google Places API (5 reviews) → Business profile
   - Enhanced review sentiment analysis with 8 comprehensive themes: Food Quality, Service, Pricing, Atmosphere, Location, Wait Time, Cleanliness, Portion Size
   - Added advanced review trend analysis: rating trends (improving/stable/declining), volume trends (increasing/stable/decreasing)
@@ -86,6 +87,7 @@ This is a comprehensive restaurant website scanner application built with React 
   - System prioritizes authentic data: uses real review text, ratings, dates, and reviewer information
   - Review data includes reviewer details: name, photo, review count, Local Guide status, likes count
   - Added support for owner responses with publication dates for response time calculations
+  - Apify configuration eliminates need for domain, location, or search parameters when using Place IDs
 - July 22, 2025. Removed non-functional Zembratech service:
   - Deleted zembraTechReviewsService.ts completely as API was returning network errors (ENOTFOUND)
   - Removed all Zembratech references from socialMediaDetector.ts and environment variables
