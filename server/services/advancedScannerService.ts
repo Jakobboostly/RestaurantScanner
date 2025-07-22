@@ -328,10 +328,11 @@ export class AdvancedScannerService {
       const socialMediaPromise = Promise.race([
         this.enhancedSocialMediaDetection(domain, restaurantName, businessProfile, placeId, manualFacebookUrl),
         new Promise((_, reject) => 
-          setTimeout(() => reject(new Error('Social media detection timeout')), 3500)
+          setTimeout(() => reject(new Error('Social media detection timeout')), 8000) // Increased to 8 seconds
         )
       ]).catch(error => {
-        console.error('Social media detection failed:', error);
+        console.error('❌ Social media detection failed:', error);
+        console.error('❌ This might be why Instagram detection is not working');
         // If we have a manual Facebook URL, return it even on timeout
         if (manualFacebookUrl) {
           console.log('🔧 Timeout occurred - using manual Facebook URL fallback:', manualFacebookUrl);

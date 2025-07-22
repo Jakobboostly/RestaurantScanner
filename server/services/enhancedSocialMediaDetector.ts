@@ -24,7 +24,7 @@ export interface SocialMediaLinks {
 export class EnhancedSocialMediaDetector {
   private googleBusinessService: GoogleBusinessService;
   private enhancedFacebookDetector: EnhancedFacebookDetector;
-  private timeout = 8000; // 8 seconds for comprehensive scanning
+  private timeout = 12000; // 12 seconds for comprehensive scanning
 
   constructor() {
     const apiKey = process.env.GOOGLE_PLACES_API_KEY || process.env.GOOGLE_API_KEY || '';
