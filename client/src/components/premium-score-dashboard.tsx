@@ -1267,9 +1267,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                         <div className="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full border-2 border-white shadow-sm"></div>
                       </div>
                       <div>
-                        <h3 className="text-xl font-bold bg-gradient-to-r from-[#5F5FFF] to-[#7375FD] bg-clip-text text-transparent">
-                          Customer Psychology Report
-                        </h3>
+                        <h3 className="text-xl font-bold bg-gradient-to-r from-[#5F5FFF] to-[#7375FD] bg-clip-text text-transparent">Customer Review AI Report</h3>
                         <p className="text-sm text-gray-600">AI analysis of 100+ authentic reviews</p>
                       </div>
                     </div>
@@ -1419,7 +1417,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                       </div>
                     ) : isLoadingMoodAnalysis ? (
                       // Enhanced Loading state
-                      <div className="bg-gradient-to-r from-white/80 to-gray-50/80 rounded-xl p-8 text-center border border-gray-200/50 shadow-sm">
+                      (<div className="bg-gradient-to-r from-white/80 to-gray-50/80 rounded-xl p-8 text-center border border-gray-200/50 shadow-sm">
                         <div className="flex items-center justify-center gap-3 mb-4">
                           <div className="relative">
                             <div className="w-8 h-8 border-4 border-[#5F5FFF]/20 border-t-[#5F5FFF] rounded-full animate-spin"></div>
@@ -1441,16 +1439,16 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                             <span className="ml-2">Generating emotional insights...</span>
                           </div>
                         </div>
-                      </div>
+                      </div>)
                     ) : (
                       // Enhanced Error state
-                      <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl p-6 text-center border border-gray-200 shadow-sm">
+                      (<div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl p-6 text-center border border-gray-200 shadow-sm">
                         <div className="w-12 h-12 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center">
                           <div className="text-gray-400 text-lg">📊</div>
                         </div>
                         <h4 className="font-semibold text-gray-700 mb-2">Customer Mood Analysis Unavailable</h4>
                         <p className="text-sm text-gray-500">The AI analysis couldn't be completed at this time. This usually happens when there aren't enough reviews to analyze or the service is temporarily unavailable.</p>
-                      </div>
+                      </div>)
                     )}
                   </div>
                 </div>
