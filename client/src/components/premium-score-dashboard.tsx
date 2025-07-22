@@ -762,40 +762,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
 
                   {/* Right Side - Where You Rank Button */}
                   <div className="space-y-4">
-                    {/* URGENT BOOSTLY RANKING WARNING */}
-                    <div className="bg-gradient-to-r from-[#4C1D95] via-[#5B21B6] to-[#6B21A8] border-4 border-yellow-400 rounded-xl p-6 text-center text-white shadow-2xl relative overflow-hidden">
-                      <div className="relative z-10">
-                        <div className="flex items-center justify-center mb-3">
-                          <div className="bg-yellow-500 rounded-full p-2 mr-3">
-                            <AlertCircle className="w-8 h-8 text-purple-900" />
-                          </div>
-                          <div>
-                            <h3 className="text-2xl font-black text-white tracking-wide drop-shadow-lg">
-                              ⚠️ CRITICAL RANKING ALERT
-                            </h3>
-                            <p className="text-yellow-200 text-xs font-bold uppercase tracking-widest">
-                              CUSTOMERS CAN'T FIND YOU
-                            </p>
-                          </div>
-                          <div className="bg-yellow-500 rounded-full p-2 ml-3">
-                            <AlertCircle className="w-8 h-8 text-purple-900" />
-                          </div>
-                        </div>
-                        
-                        <div className="bg-[#5F5FFF]/30 border-2 border-yellow-300 rounded-lg p-4 mb-3 backdrop-blur-sm">
-                          <p className="text-white font-black text-2xl mb-2 drop-shadow-lg">
-                            You are not in the top 10 (you're #12)
-                          </p>
-                          <p className="text-yellow-200 text-base font-bold">
-                            🔥 COMPETITORS ARE STEALING YOUR CUSTOMERS
-                          </p>
-                        </div>
-                        
-                        <div className="text-yellow-200 text-sm font-bold uppercase">
-                          ⚡ IMMEDIATE ACTION REQUIRED
-                        </div>
-                      </div>
-                    </div>
+                    
 
                     <div className="bg-gradient-to-br from-[#5F5FFF] via-[#7375FD] to-[#9090FD] rounded-lg p-8 text-center text-white shadow-lg mt-[5px] mb-[5px]">
                       
