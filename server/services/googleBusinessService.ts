@@ -167,8 +167,8 @@ export class GoogleBusinessService {
   private async analyzePhotos(photos: any[]) {
     const photoCount = photos.length;
     
-    // Get actual photo URLs from Google Places API
-    const businessPhotos = photos.slice(0, 6).map(photo => {
+    // Get actual photo URLs from Google Places API - display up to 10 photos but show total count
+    const businessPhotos = photos.slice(0, 10).map(photo => {
       const photoReference = photo.photo_reference;
       return `https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${photoReference}&key=${this.apiKey}`;
     });
@@ -189,10 +189,10 @@ export class GoogleBusinessService {
     };
 
     return {
-      total: photoCount,
+      total: photoCount, // This shows the actual total number of photos available
       quality,
       categories,
-      businessPhotos
+      businessPhotos // This array contains up to 10 photo URLs for display
     };
   }
 

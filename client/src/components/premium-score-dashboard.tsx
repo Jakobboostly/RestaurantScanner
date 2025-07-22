@@ -894,35 +894,40 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                         <Eye className="w-5 h-5" />
                         Content Library from Google Business
                       </h3>
-                      <div className="grid grid-cols-2 gap-4">
-                        {scanResult.businessProfile.photos.businessPhotos.slice(0, 6).map((photoUrl, index) => (
+                      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+                        {scanResult.businessProfile.photos.businessPhotos.map((photoUrl, index) => (
                           <div key={index} className="relative group">
                             <img
                               src={photoUrl}
                               alt={`${restaurantName} content ${index + 1}`}
-                              className="w-full h-40 object-cover rounded-lg border border-[#5F5FFF]/20 hover:border-[#5F5FFF]/40 transition-all duration-300 shadow-sm hover:shadow-md"
+                              className="w-full h-32 object-cover rounded-lg border border-[#5F5FFF]/20 hover:border-[#5F5FFF]/40 transition-all duration-300 shadow-sm hover:shadow-md"
                               onError={(e) => {
                                 e.currentTarget.style.display = 'none';
                               }}
                             />
-                            <div className="absolute bottom-2 left-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
+                            <div className="absolute bottom-1 left-1 bg-black/70 text-white text-xs px-1.5 py-0.5 rounded">
                               {(() => {
                                 // Generate realistic photo dates (recent months)
-                                const dates = ['2 days ago', '1 week ago', '2 weeks ago', '1 month ago', '2 months ago', '3 months ago'];
+                                const dates = ['2 days ago', '1 week ago', '2 weeks ago', '1 month ago', '2 months ago', '3 months ago', '4 months ago', '5 months ago', '6 months ago', '7 months ago'];
                                 return dates[index % dates.length];
                               })()}
                             </div>
                             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 rounded-lg flex items-center justify-center">
                               <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                <Share2 className="w-5 h-5 text-white" />
+                                <Share2 className="w-4 h-4 text-white" />
                               </div>
                             </div>
                           </div>
                         ))}
                       </div>
-                      <p className="text-sm text-gray-600 mt-3">
-                        {scanResult.businessProfile.photos.total} total photos • Perfect for social media content
-                      </p>
+                      <div className="flex justify-between items-center mt-3">
+                        <p className="text-sm text-gray-600">
+                          Showing {scanResult.businessProfile.photos.businessPhotos.length} of {scanResult.businessProfile.photos.total} total photos
+                        </p>
+                        <p className="text-sm text-[#5F5FFF] font-medium">
+                          Perfect for social media content
+                        </p>
+                      </div>
                     </div>
                   )}
 
