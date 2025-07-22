@@ -499,7 +499,8 @@ export class AdvancedScannerService {
         socialMediaLinks,
         profileAnalysis,
         serpScreenshots,
-        null // Remove restaurant search screenshot for now
+        null, // Remove restaurant search screenshot for now
+        processedCompetitiveKeywords
       );
 
       const scanDuration = Date.now() - scanStartTime;
@@ -534,7 +535,8 @@ export class AdvancedScannerService {
     socialMediaLinks: any,
     profileAnalysis: any = null,
     serpScreenshots: any[] = [],
-    restaurantSearchScreenshot: any = null
+    restaurantSearchScreenshot: any = null,
+    processedCompetitiveKeywords: any[] = []
   ): EnhancedScanResult {
     // Map processedKeywords to keywordData for compatibility with existing methods
     const keywordData = processedKeywords;
