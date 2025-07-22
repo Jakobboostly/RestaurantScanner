@@ -725,7 +725,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                       </div>
                     </div>
 
-                    <div className="bg-gradient-to-br from-[#5F5FFF] via-[#7375FD] to-[#9090FD] rounded-lg p-8 text-center text-white shadow-lg">
+                    <div className="bg-gradient-to-br from-[#5F5FFF] via-[#7375FD] to-[#9090FD] rounded-lg p-8 text-center text-white shadow-lg mt-[5px] mb-[5px]">
                       
                       <div className="mb-6">
                         <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
@@ -1232,7 +1232,6 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
           </Card>
         </motion.div>
       </div>
-      
       {/* Embedded Google Search Modal */}
       {showEmbeddedSearch && (
         <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4">
