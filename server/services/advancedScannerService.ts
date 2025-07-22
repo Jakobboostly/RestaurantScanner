@@ -1218,7 +1218,19 @@ export class AdvancedScannerService {
         sentimentBreakdown: sentimentAnalysis.sentimentBreakdown,
         reviewSources: ['Google Places API (Apify Enhanced)'],
         keyThemes: sentimentAnalysis.keyThemes,
-        recentReviews: apifyReviews.data.slice(0, 10), // Show top 10 recent reviews
+        recentReviews: apifyReviews.data.slice(0, 10).map(review => ({
+          author: review.reviewerName,
+          rating: review.rating,
+          text: review.text,
+          platform: 'Google Places (Apify)',
+          sentiment: this.classifyReviewSentiment(review.text, review.rating),
+          date: review.publishedAtDate,
+        })),
+        detailedReviews: apifyReviews.data.map(review => ({
+          ...review,
+          platform: 'Google Places (Apify)',
+          sentiment: this.classifyReviewSentiment(review.text, review.rating),
+        })),
         examples: sentimentAnalysis.examples,
         trends: {
           ratingTrend: this.calculateRatingTrendFromReviews(apifyReviews.data),
@@ -1226,8 +1238,7 @@ export class AdvancedScannerService {
           responseRate: this.calculateResponseRateFromReviews(apifyReviews.data),
           averageResponseTime: this.calculateAverageResponseTimeFromReviews(apifyReviews.data)
         },
-        recommendations: this.generateReviewRecommendations(apifyReviews.data, businessProfile),
-        apifyReviews: apifyReviews
+        recommendations: this.generateReviewRecommendations(apifyReviews.data, businessProfile)
       };
     }
     
@@ -2485,5 +2496,30 @@ export class AdvancedScannerService {
     if (avgHours < 72) return '2-3 days';
     if (avgHours < 168) return '< 1 week';
     return '> 1 week';
+  }
+
+  private classifyReviewSentiment(text: string, rating: number): 'positive' | 'neutral' | 'negative' {
+    // Simple sentiment classification based on rating and text analysis
+    if (rating >= 4) {
+      return 'positive';
+    } else if (rating >= 3) {
+      // Check text for positive/negative words for rating 3
+      const positiveWords = ['good', 'great', 'excellent', 'amazing', 'love', 'recommend', 'fantastic'];
+      const negativeWords = ['bad', 'terrible', 'awful', 'horrible', 'hate', 'worst', 'disappointed'];
+      
+      const textLower = text.toLowerCase();
+      const positiveCount = positiveWords.filter(word => textLower.includes(word)).length;
+      const negativeCount = negativeWords.filter(word => textLower.includes(word)).length;
+      
+      if (positiveCount > negativeCount) {
+        return 'positive';
+      } else if (negativeCount > positiveCount) {
+        return 'negative';
+      } else {
+        return 'neutral';
+      }
+    } else {
+      return 'negative';
+    }
   }
 }

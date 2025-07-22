@@ -30,7 +30,7 @@ export interface ApifyReviewsResponse {
 
 export class ApifyReviewsService {
   private client: ApifyClient;
-  private actorId = 'compass/google-maps-scraper';
+  private actorId = 'compass/crawler-google-places';
 
   constructor(apiToken: string) {
     this.client = new ApifyClient({

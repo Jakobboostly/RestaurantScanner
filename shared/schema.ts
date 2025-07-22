@@ -246,6 +246,23 @@ export const scanResultSchema = z.object({
       sentiment: z.enum(['positive', 'neutral', 'negative']),
       date: z.string(),
     })),
+    detailedReviews: z.array(z.object({
+      reviewId: z.string(),
+      reviewerName: z.string(),
+      reviewerPhotoUrl: z.string().optional(),
+      reviewerNumberOfReviews: z.number().optional(),
+      isLocalGuide: z.boolean().optional(),
+      rating: z.number(),
+      text: z.string(),
+      publishedAtDate: z.string(),
+      likesCount: z.number().optional(),
+      responseFromOwner: z.object({
+        text: z.string(),
+        publishedAtDate: z.string(),
+      }).optional(),
+      platform: z.string(),
+      sentiment: z.enum(['positive', 'neutral', 'negative']),
+    })).optional(),
     trends: z.object({
       ratingTrend: z.enum(['improving', 'stable', 'declining']),
       volumeTrend: z.enum(['increasing', 'stable', 'decreasing']),
