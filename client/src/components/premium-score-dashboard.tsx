@@ -543,66 +543,11 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                             activeTab === tab.key ? 'text-white' : 'text-white'
                           }`} />
                         </div>
-                        <div className="flex items-center gap-2">
-                          <h3 className={`font-bold text-lg ${
-                            activeTab === tab.key ? 'text-white' : 'text-gray-800'
-                          }`}>
-                            {tab.title}
-                          </h3>
-                          <TooltipProvider>
-                            <Tooltip>
-                              <TooltipTrigger asChild>
-                                <Info className={`w-4 h-4 cursor-help ${
-                                  activeTab === tab.key ? 'text-white/70 hover:text-white' : 'text-gray-400 hover:text-gray-600'
-                                }`} />
-                              </TooltipTrigger>
-                              <TooltipContent side="top" className="max-w-xs">
-                                <div className="space-y-2 text-sm">
-                                  {tab.key === 'search' && (
-                                    <>
-                                      <div className="font-semibold border-b pb-1">{tab.title} Score Calculation:</div>
-                                      <div className="space-y-1">
-                                        <div>• SEO Performance: {scanResult.seo || 0} points</div>
-                                        <div>• Keyword Analysis: {(scanResult.keywordAnalysis?.targetKeywords?.length || 0) * 2} points</div>
-                                        <div>• Formula: (SEO + Keywords × 2) ÷ 1.2</div>
-                                      </div>
-                                    </>
-                                  )}
-                                  {tab.key === 'social' && (
-                                    <>
-                                      <div className="font-semibold border-b pb-1">{tab.title} Score Calculation:</div>
-                                      <div className="space-y-1">
-                                        <div>• Facebook Present: {scanResult.socialMediaLinks?.facebook ? '50' : '0'} points</div>
-                                        <div>• Instagram Present: {scanResult.socialMediaLinks?.instagram ? '50' : '0'} points</div>
-                                        <div>• Total: Facebook + Instagram (100 max)</div>
-                                      </div>
-                                    </>
-                                  )}
-                                  {tab.key === 'local' && (
-                                    <>
-                                      <div className="font-semibold border-b pb-1">{tab.title} Score Calculation:</div>
-                                      <div className="space-y-1">
-                                        <div>• Rating Component: {((scanResult.businessProfile?.rating || 0) * 10).toFixed(0)} points (rating × 10)</div>
-                                        <div>• Review Volume: {Math.min((scanResult.businessProfile?.totalReviews || 0) / 10, 30).toFixed(0)} points (reviews ÷ 10, max 30)</div>
-                                        <div>• Total: Rating × 10 + Reviews ÷ 10</div>
-                                      </div>
-                                    </>
-                                  )}
-                                  {tab.key === 'reviews' && (
-                                    <>
-                                      <div className="font-semibold border-b pb-1">{tab.title} Score Calculation:</div>
-                                      <div className="space-y-1">
-                                        <div>• Rating Quality: {((scanResult.businessProfile?.rating || 0) * 15).toFixed(0)} points (rating × 15)</div>
-                                        <div>• Review Volume: {Math.min((scanResult.businessProfile?.totalReviews || 0) / 20, 25).toFixed(0)} points (reviews ÷ 20, max 25)</div>
-                                        <div>• Total: Rating × 15 + Reviews ÷ 20</div>
-                                      </div>
-                                    </>
-                                  )}
-                                </div>
-                              </TooltipContent>
-                            </Tooltip>
-                          </TooltipProvider>
-                        </div>
+                        <h3 className={`font-bold text-lg ${
+                          activeTab === tab.key ? 'text-white' : 'text-gray-800'
+                        }`}>
+                          {tab.title}
+                        </h3>
                       </div>
                       <div className="text-right">
                         <span className={`text-2xl font-bold ${
