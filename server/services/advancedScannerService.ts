@@ -351,6 +351,15 @@ export class AdvancedScannerService {
         socialMediaPromise
       ]);
       
+      // DEBUG: Check what social media links were actually detected
+      console.log('🔍 INSTAGRAM DEBUG: Social media detection result:', JSON.stringify(socialMediaLinks, null, 2));
+      if (socialMediaLinks.instagram) {
+        console.log('✅ INSTAGRAM FOUND:', socialMediaLinks.instagram);
+      } else {
+        console.log('❌ INSTAGRAM NOT FOUND - checking individual platforms...');
+        console.log('🔍 Available platforms:', Object.keys(socialMediaLinks));
+      }
+      
       // Wait for phase 5 to complete (4 seconds total)
       const phase5Elapsed = Date.now() - phase5Start;
       if (phase5Elapsed < PHASE_DURATION) {
