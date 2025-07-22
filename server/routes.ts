@@ -800,3 +800,77 @@ function identifyProfileWeaknesses(profile: any): string[] {
   
   return weaknesses;
 }
+
+// Add MCP integration endpoints
+app.post("/api/mcp/tools", async (req, res) => {
+  try {
+    const { McpService } = await import('./services/mcpService.js');
+    const mcpService = new McpService();
+    
+    const tools = mcpService.getAvailableTools();
+    res.json({ tools });
+  } catch (error) {
+    console.error('MCP tools error:', error);
+    res.status(500).json({ 
+      error: "Failed to get MCP tools",
+      details: error instanceof Error ? error.message : 'Unknown error'
+    });
+  }
+});
+
+app.post("/api/mcp/call", async (req, res) => {
+  try {
+    const { toolName, arguments: toolArgs } = req.body;
+    
+    if (!toolName) {
+      return res.status(400).json({ error: "Tool name is required" });
+    }
+
+    const { McpService } = await import('./services/mcpService.js');
+    const mcpService = new McpService();
+    
+    const result = await mcpService.callTool({
+      name: toolName,
+      arguments: toolArgs || {}
+    });
+    
+    res.json({ result });
+  } catch (error) {
+    console.error('MCP call error:', error);
+    res.status(500).json({ 
+      error: "Failed to execute MCP tool",
+      details: error instanceof Error ? error.message : 'Unknown error'
+    });
+  }
+});
+
+// MCP-powered restaurant analysis endpoint
+app.post("/api/mcp/analyze", async (req, res) => {
+  try {
+    const { restaurantData, analysisType = 'performance' } = req.body;
+    
+    if (!restaurantData) {
+      return res.status(400).json({ error: "Restaurant data is required" });
+    }
+
+    const { McpService } = await import('./services/mcpService.js');
+    const mcpService = new McpService();
+    
+    const result = await mcpService.callTool({
+      name: 'restaurant_analysis',
+      arguments: { restaurantData, analysisType }
+    });
+    
+    res.json({ 
+      analysis: result.content[0]?.text || 'No analysis available',
+      analysisType,
+      timestamp: new Date().toISOString()
+    });
+  } catch (error) {
+    console.error('MCP analysis error:', error);
+    res.status(500).json({ 
+      error: "Failed to analyze restaurant data",
+      details: error instanceof Error ? error.message : 'Unknown error'
+    });
+  }
+});
