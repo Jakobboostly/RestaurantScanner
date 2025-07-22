@@ -492,8 +492,7 @@ export class EnhancedDataForSeoService {
     domain: string,
     foodType: string,
     city: string,
-    state: string,
-    restaurantName?: string
+    state: string
   ): Promise<{ keyword: string; position: number | null }[]> {
     const cleanDomain = domain.replace(/^https?:\/\//, '').replace(/^www\./, '');
     
@@ -504,9 +503,7 @@ export class EnhancedDataForSeoService {
       `${foodType}`
     ];
 
-    console.log(`🔍 ENHANCED RANKING CHECK: Getting real rankings for ${cleanDomain} with keywords:`, targetKeywords);
-    console.log(`🔍 Restaurant name for matching: "${restaurantName}"`);
-    console.log(`🔍 Location: ${city}, ${state}`);
+    console.log(`Getting real rankings for ${cleanDomain} with keywords:`, targetKeywords);
 
     const rankings = [];
 
@@ -521,52 +518,22 @@ export class EnhancedDataForSeoService {
         }]);
 
         const items = response.data.tasks?.[0]?.result?.[0]?.items || [];
-        const result = response.data.tasks?.[0]?.result?.[0];
-        console.log(`🔍 Full SERP response structure for "${keyword}":`, JSON.stringify(result, null, 2));
-        
-        // Try multiple possible local pack locations in the API response
-        const localPackResults = result?.local_pack?.local_pack || 
-                                result?.local_pack || 
-                                result?.items?.filter(item => item.type === 'local_pack')?.[0]?.items || 
-                                [];
         let position = null;
 
-        // First check Local Pack results (where restaurants typically appear)
-        console.log(`Checking Local Pack for "${keyword}" - found ${localPackResults.length} local results`);
-        for (let i = 0; i < localPackResults.length; i++) {
-          const localItem = localPackResults[i];
-          const localDomain = (localItem.domain || '').replace(/^www\./, '');
-          const localTitle = (localItem.title || '').toLowerCase();
+        // Look for the restaurant's domain in search results
+        for (let i = 0; i < items.length && i < 100; i++) { // Check first 10 pages
+          const item = items[i];
+          const itemDomain = (item.domain || '').replace(/^www\./, '');
           
-          // Match by domain OR restaurant name
-          const domainMatch = localDomain === cleanDomain;
-          const nameMatch = restaurantName && localTitle.includes(restaurantName.toLowerCase());
-          
-          if (domainMatch || nameMatch) {
-            position = i + 1; // Local pack positions start at 1
-            const matchType = domainMatch ? 'DOMAIN' : 'NAME';
-            console.log(`Found ${cleanDomain} at LOCAL PACK position ${position} for "${keyword}" (matched by ${matchType})`);
+          if (itemDomain === cleanDomain) {
+            position = item.rank_group || (i + 1);
+            console.log(`Found ${cleanDomain} at position ${position} for "${keyword}"`);
             break;
           }
         }
 
-        // If not found in local pack, check organic search results
         if (!position) {
-          console.log(`Not found in local pack, checking organic results for "${keyword}"`);
-          for (let i = 0; i < items.length && i < 100; i++) { // Check first 10 pages
-            const item = items[i];
-            const itemDomain = (item.domain || '').replace(/^www\./, '');
-            
-            if (itemDomain === cleanDomain) {
-              position = item.rank_group || (i + 1);
-              console.log(`Found ${cleanDomain} at ORGANIC position ${position} for "${keyword}"`);
-              break;
-            }
-          }
-        }
-
-        if (!position) {
-          console.log(`${cleanDomain} not found in local pack OR top 100 organic results for "${keyword}"`);
+          console.log(`${cleanDomain} not found in top 100 results for "${keyword}"`);
         }
 
         rankings.push({ keyword, position });

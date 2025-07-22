@@ -204,18 +204,17 @@ export class AdvancedScannerService {
         this.extractCityFromAddress(businessProfile.address) : 
         { city: 'Unknown', state: 'Unknown' };
       
-      console.log(`🔍 ADVANCED SCANNER: Getting real rankings for ${cuisineType} in ${locationData.city}, ${locationData.state} for restaurant: ${restaurantName}`);
+      console.log(`Getting real rankings for ${cuisineType} in ${locationData.city}, ${locationData.state}`);
       
       const realRankingsPromise = Promise.race([
         this.dataForSeoService.getRealRestaurantRankings(
           domain, 
           cuisineType, 
           locationData.city, 
-          locationData.state,
-          restaurantName
+          locationData.state
         ),
         new Promise((_, reject) => 
-          setTimeout(() => reject(new Error('Real rankings timeout')), 8000)
+          setTimeout(() => reject(new Error('Real rankings timeout')), 3000)
         )
       ]).catch(error => {
         console.error('Real rankings failed:', error);
