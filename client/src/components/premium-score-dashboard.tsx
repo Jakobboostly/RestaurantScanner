@@ -36,6 +36,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import { PlayfulTooltip, PlayfulInfoIcon } from "@/components/playful-tooltip";
 import { ScanResult } from "@shared/schema";
 
 interface RestaurantSearchScreenshot {
@@ -337,26 +338,18 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                   {title}
                 </h3>
                 {title === "Overall Performance" && (
-                  <TooltipProvider>
-                    <Tooltip>
-                      <TooltipTrigger asChild>
-                        <Info className="w-4 h-4 text-white/70 hover:text-white cursor-help" />
-                      </TooltipTrigger>
-                      <TooltipContent side="top" className="max-w-xs">
-                        <div className="space-y-2 text-sm">
-                          <div className="font-semibold border-b pb-1">Overall Performance Calculation:</div>
-                          <div className="space-y-1">
-                            <div>• Search: {scores.search} points</div>
-                            <div>• Social: {scores.social} points</div>
-                            <div>• Local: {scores.local} points</div>
-                            <div>• Reviews: {scores.reviews} points</div>
-                            <div>• Formula: Average of all 4 categories</div>
-                            <div>• Total: {scores.overall}/100</div>
-                          </div>
-                        </div>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
+                  <PlayfulInfoIcon
+                    context="overall-performance"
+                    element="score-calculation"
+                    data={{ 
+                      search: scores.search, 
+                      social: scores.social, 
+                      local: scores.local, 
+                      reviews: scores.reviews,
+                      total: scores.overall 
+                    }}
+                    className="text-white/70 hover:text-white"
+                  />
                 )}
               </div>
               {isLarge && <p className="text-sm text-white/90">vs. Industry Average ({averageScore}%)</p>}
@@ -543,11 +536,19 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                             activeTab === tab.key ? 'text-white' : 'text-white'
                           }`} />
                         </div>
-                        <h3 className={`font-bold text-lg ${
-                          activeTab === tab.key ? 'text-white' : 'text-gray-800'
-                        }`}>
-                          {tab.title}
-                        </h3>
+                        <div className="flex items-center gap-1">
+                          <h3 className={`font-bold text-lg ${
+                            activeTab === tab.key ? 'text-white' : 'text-gray-800'
+                          }`}>
+                            {tab.title}
+                          </h3>
+                          <PlayfulInfoIcon
+                            context="restaurant-dashboard"
+                            element={`${tab.title.toLowerCase()}-score`}
+                            data={{ score: tab.score, category: tab.title }}
+                            className={activeTab === tab.key ? 'text-white/70 hover:text-white' : 'text-gray-500 hover:text-gray-700'}
+                          />
+                        </div>
                       </div>
                       <div className="text-right">
                         <span className={`text-2xl font-bold ${
@@ -623,6 +624,12 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                       <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
                         <AlertCircle className="w-5 h-5 text-[#5F5FFF]" />
                         Where You're Going Wrong
+                        <PlayfulInfoIcon
+                          context="search-analysis"
+                          element="problem-identification"
+                          data={{ score: scores.search, priority: scores.search < 50 ? 'high' : scores.search < 75 ? 'medium' : 'low' }}
+                          className="text-gray-500 hover:text-gray-700"
+                        />
                       </h3>
                       <div className="space-y-3">
                         {/* High Priority Issues */}
@@ -668,6 +675,12 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                       <h3 className="font-bold text-[#5F5FFF] mb-3 flex items-center gap-2">
                         <Zap className="w-5 h-5" />
                         How Boostly Can Solve It For You
+                        <PlayfulInfoIcon
+                          context="boostly-solutions"
+                          element="service-recommendations"
+                          data={{ category: 'search', services: ['SEO', 'Text Marketing'] }}
+                          className="text-[#5F5FFF]/60 hover:text-[#5F5FFF]"
+                        />
                       </h3>
                       <div className="space-y-3">
                         <div className="bg-gradient-to-r from-[#5F5FFF] to-[#7375FD] text-white rounded p-3">
@@ -1202,29 +1215,17 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                     <div className="flex justify-between items-center">
                       <div className="flex items-center gap-2">
                         <span className="text-sm text-gray-600">Profile Completeness</span>
-                        <TooltipProvider>
-                          <Tooltip>
-                            <TooltipTrigger asChild>
-                              <Info className="w-4 h-4 text-gray-400 hover:text-gray-600 cursor-help" />
-                            </TooltipTrigger>
-                            <TooltipContent side="top" className="max-w-xs">
-                              <div className="space-y-2 text-sm">
-                                <div className="font-semibold border-b pb-1">Profile Completeness Scoring:</div>
-                                <div className="space-y-1">
-                                  <div>• Business Name: 10 points</div>
-                                  <div>• Phone Number: 15 points</div>
-                                  <div>• Website: 20 points</div>
-                                  <div>• Photos: 25 points (0.5 per photo, max 50)</div>
-                                  <div>• Reviews: 20 points (1 per 15 reviews, max 20)</div>
-                                  <div>• Rating: 10 points (4.0+ = full, 3.6-3.9 = 7pts, 3.3-3.5 = 5pts, 3.0-3.2 = 2pts)</div>
-                                </div>
-                                <div className="text-xs text-gray-500 pt-1 border-t">
-                                  Total: 100 points maximum
-                                </div>
-                              </div>
-                            </TooltipContent>
-                          </Tooltip>
-                        </TooltipProvider>
+                        <PlayfulInfoIcon
+                          context="google-business-profile"
+                          element="completeness-scoring"
+                          data={{ 
+                            score: scanResult.profileAnalysis?.completeness?.score || 0,
+                            photos: scanResult.businessProfile?.photos?.total || 0,
+                            reviews: scanResult.businessProfile?.totalReviews || 0,
+                            rating: scanResult.businessProfile?.rating || 0
+                          }}
+                          className="text-gray-400 hover:text-gray-600"
+                        />
                       </div>
                       <span className="font-medium">{scanResult.profileAnalysis?.completeness?.score || 0}%</span>
                     </div>
@@ -1382,6 +1383,16 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                             <h4 className="text-sm font-bold text-gray-800 mb-3 flex items-center gap-2">
                               <div className="w-2 h-2 bg-gradient-to-r from-[#5F5FFF] to-[#7375FD] rounded-full"></div>
                               Emotional Keywords Found in Reviews
+                              <PlayfulInfoIcon
+                                context="customer-reviews"
+                                element="emotional-keywords"
+                                data={{ 
+                                  mood: moodAnalysis.overallMood,
+                                  keywords: moodAnalysis.keyMoodIndicators?.length || 0,
+                                  totalReviews: scanResult.businessProfile?.totalReviews || 0
+                                }}
+                                className="text-gray-400 hover:text-gray-600"
+                              />
                             </h4>
                             <div className="flex flex-wrap gap-2">
                               {moodAnalysis.keyMoodIndicators.slice(0, 6).map((indicator, index) => (
