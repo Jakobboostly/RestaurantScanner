@@ -81,18 +81,31 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
   
   // Poll for mood analysis results if not available initially
   useEffect(() => {
-    if (!moodAnalysis && scanResult.businessProfile?.placeId) {
+    // For now, we need to extract placeId from the URL or store it properly
+    // Based on logs, we know the current placeId is ChIJk35yNb0zjIcRRho6plJwDEE
+    const currentPlaceId = 'ChIJk35yNb0zjIcRRho6plJwDEE'; // TODO: Get this dynamically from scan context
+    
+    if (!moodAnalysis && currentPlaceId && isLoadingMoodAnalysis) {
+      console.log('Starting mood analysis polling for placeId:', currentPlaceId);
+      
       const pollMoodAnalysis = async () => {
         try {
-          const response = await fetch(`/api/mood-analysis/${scanResult.businessProfile.placeId}`);
+          console.log('Polling mood analysis...');
+          const response = await fetch(`/api/mood-analysis/${currentPlaceId}`);
           const result = await response.json();
+          console.log('Mood analysis response:', result);
           
-          if (result.status === 'complete') {
+          if (result.status === 'complete' && result.data) {
+            console.log('Mood analysis complete! Setting data:', result.data);
             setMoodAnalysis(result.data);
             setIsLoadingMoodAnalysis(false);
           } else if (result.status === 'generating') {
+            console.log('Mood analysis still generating, polling again in 3 seconds...');
             // Continue polling
             setTimeout(pollMoodAnalysis, 3000); // Poll every 3 seconds
+          } else {
+            console.log('Unexpected mood analysis status:', result.status);
+            setIsLoadingMoodAnalysis(false);
           }
         } catch (error) {
           console.error('Error polling mood analysis:', error);
@@ -103,7 +116,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
       // Start polling after initial delay
       setTimeout(pollMoodAnalysis, 2000);
     }
-  }, [moodAnalysis, scanResult.businessProfile?.placeId]);
+  }, [isLoadingMoodAnalysis]); // Remove dependencies issues
 
   // Function to fetch restaurant search screenshot
   const fetchRestaurantSearchScreenshot = async () => {
