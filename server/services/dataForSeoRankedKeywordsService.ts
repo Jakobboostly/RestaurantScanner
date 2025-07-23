@@ -177,23 +177,39 @@ export class DataForSeoRankedKeywordsService {
         ];
         const hasLocation = locationTerms.some(location => kw.includes(location));
         
-        // ONLY include keywords that don't have location terms
+        // Include high-value competitive keywords that are actionable
+        
+        // 1. Always include "near me" searches - these are crucial for local restaurants
         const isNearMe = kw.includes('near me');
-        const isDeliveryKeyword = kw.includes('delivery') && !hasLocation;
-        const isTakeoutKeyword = kw.includes('takeout') && !hasLocation;
-        const isCateringKeyword = kw.includes('catering') && !hasLocation;
-        const isMenuKeyword = kw.includes('menu') && !hasLocation;
-        const isOrderKeyword = kw.includes('order') && !hasLocation;
-        const isHoursKeyword = kw.includes('hours') && !hasLocation;
-        const isLocationsKeyword = kw.includes('locations') && !hasLocation;
         
-        // Brand + service keywords without location (these are useful for competitive analysis)
-        const hasBrandServiceKeyword = (kw.includes('pizza') || kw.includes('burger') || kw.includes('chicken') || kw.includes('mexican') || kw.includes('italian') || kw.includes('chinese') || kw.includes('sushi') || kw.includes('thai') || kw.includes('indian') || kw.includes('mediterranean')) && !hasLocation;
+        // 2. Include broad food type keywords (huge opportunity keywords)
+        const isBroadFoodKeyword = !hasLocation && (
+          kw === 'pizza' || kw === 'burger' || kw === 'chicken' || kw === 'mexican' || 
+          kw === 'italian' || kw === 'chinese' || kw === 'sushi' || kw === 'thai' || 
+          kw === 'indian' || kw === 'mediterranean' || kw === 'seafood' || kw === 'steak'
+        );
         
-        // Allow branded keywords as long as they don't contain location terms
-        const isBrandedKeyword = !hasLocation && (kw.includes('pizza') || kw.includes('burger') || kw.includes('restaurant') || kw.includes('food') || kw.includes('menu') || kw.includes('delivery') || kw.includes('takeout') || kw.includes('catering') || kw.includes('order') || kw.includes('hours') || kw.includes('locations'));
+        // 3. Include service keywords without location
+        const isServiceKeyword = !hasLocation && (
+          kw.includes('delivery') || kw.includes('takeout') || kw.includes('pickup') || 
+          kw.includes('catering') || kw.includes('order') || kw.includes('menu') || 
+          kw.includes('hours') || kw.includes('locations')
+        );
         
-        return (isNearMe || isDeliveryKeyword || isTakeoutKeyword || isCateringKeyword || isMenuKeyword || isOrderKeyword || isHoursKeyword || isLocationsKeyword || hasBrandServiceKeyword || isBrandedKeyword) && !hasLocation;
+        // 4. Include food + service combinations without location  
+        const isFoodServiceCombo = !hasLocation && (
+          (kw.includes('pizza') && (kw.includes('delivery') || kw.includes('takeout') || kw.includes('near'))) ||
+          (kw.includes('burger') && (kw.includes('delivery') || kw.includes('takeout') || kw.includes('near'))) ||
+          (kw.includes('chicken') && (kw.includes('delivery') || kw.includes('takeout') || kw.includes('near')))
+        );
+        
+        // 5. Include brand keywords without location (competitive intelligence)
+        const isBrandKeyword = !hasLocation && (
+          kw.includes('pizza') || kw.includes('burger') || kw.includes('restaurant') || 
+          kw.includes('food') || kw.includes('menu') || kw.includes('delivery')
+        );
+        
+        return isNearMe || isBroadFoodKeyword || isServiceKeyword || isFoodServiceCombo || isBrandKeyword;
       });
       
       // Apply the requested limit to the filtered keywords

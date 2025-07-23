@@ -224,7 +224,7 @@ export class AdvancedScannerService {
       const rankedKeywordsPromise = Promise.race([
         this.rankedKeywordsService.getRankedKeywords(actualDomain, 'United States', 'en', 10),
         new Promise((_, reject) => 
-          setTimeout(() => reject(new Error('Ranked keywords timeout')), 5000)
+          setTimeout(() => reject(new Error('Ranked keywords timeout')), 6000)
         )
       ]).catch(error => {
         console.error('Ranked keywords failed:', error);
@@ -238,9 +238,9 @@ export class AdvancedScannerService {
       console.log(`🔍 ADVANCED SCANNER: Getting competitive opportunity keywords (rank 6+) for domain: ${actualDomain}`);
       
       const competitiveOpportunityPromise = Promise.race([
-        this.rankedKeywordsService.getCompetitiveOpportunityKeywords(actualDomain, 'United States', 'en', 5),
+        this.rankedKeywordsService.getCompetitiveOpportunityKeywords(actualDomain, 'United States', 'en', 10),
         new Promise((_, reject) => 
-          setTimeout(() => reject(new Error('Competitive opportunity keywords timeout')), 5000)
+          setTimeout(() => reject(new Error('Competitive opportunity keywords timeout')), 6000)
         )
       ]).catch(error => {
         console.error('Competitive opportunity keywords failed:', error);
