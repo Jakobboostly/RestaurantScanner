@@ -1,5 +1,5 @@
 import { Builder, By, Key, until, WebDriver } from 'selenium-webdriver';
-import chrome from 'selenium-webdriver/chrome';
+import chrome from 'selenium-webdriver/chrome.js';
 import fs from 'fs/promises';
 import path from 'path';
 
@@ -61,10 +61,35 @@ export class RestaurantSearchScreenshotService {
         }
       });
 
-      // Use correct Chrome binary for Replit Nix environment
-      const chromeBinary = '/nix/store/zi4f80l169xlmivz8vja8wlphq74qqk0-chromium-125.0.6422.141/bin/chromium-browser';
-      chromeOptions.setChromeBinaryPath(chromeBinary);
-      console.log(`Using Chrome binary: ${chromeBinary}`);
+      // Configure Chrome binary path for different environments
+      const possibleChromePaths = [
+        process.env.CHROME_BIN, // Cloud Run environment variable
+        '/usr/bin/google-chrome-stable', // Standard Linux
+        '/usr/bin/google-chrome', // Alternative Linux
+        '/usr/bin/chromium-browser', // Chromium on Ubuntu
+        '/usr/bin/chromium', // Alternative Chromium
+        '/nix/store/zi4f80l169xlmivz8vja8wlphq74qqk0-chromium-125.0.6422.141/bin/chromium-browser', // Replit Nix
+        '/opt/google/chrome/google-chrome' // Cloud Run
+      ].filter(Boolean);
+
+      let chromeBinary = null;
+      for (const path of possibleChromePaths) {
+        try {
+          const { execSync } = await import('child_process');
+          execSync(`test -f "${path}"`, { stdio: 'ignore' });
+          chromeBinary = path;
+          break;
+        } catch {
+          continue;
+        }
+      }
+
+      if (chromeBinary) {
+        chromeOptions.setChromeBinaryPath(chromeBinary);
+        console.log(`Using Chrome binary: ${chromeBinary}`);
+      } else {
+        console.log('Using default Chrome binary (system PATH)');
+      }
 
       // Create WebDriver
       driver = await new Builder()

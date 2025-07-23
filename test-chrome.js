@@ -1,5 +1,5 @@
 import { Builder } from 'selenium-webdriver';
-import chrome from 'selenium-webdriver/chrome';
+import chrome from 'selenium-webdriver/chrome.js';
 
 async function testChrome() {
   console.log('Testing Chrome/Selenium setup...');

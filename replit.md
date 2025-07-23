@@ -76,6 +76,12 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 23, 2025. Fixed ES module import issues for deployment compatibility:  
+  - **Fixed selenium-webdriver chrome imports** - Updated import statements from `'selenium-webdriver/chrome'` to `'selenium-webdriver/chrome.js'` for proper ES module compatibility
+  - **Enhanced Chrome binary path detection** - Implemented flexible Chrome binary detection for different deployment environments including Cloud Run, standard Linux, and Replit Nix
+  - **Improved deployment readiness** - System now automatically detects available Chrome binaries from multiple possible paths for better Cloud Run compatibility
+  - **Maintained development functionality** - All changes preserve existing development environment functionality while adding deployment flexibility
+  - **Fixed application startup** - Application now starts successfully without module resolution failures related to selenium-webdriver imports
 - July 22, 2025. Implemented competitive opportunity analysis showing "Where your competition is winning":
   - **Added getCompetitiveOpportunityKeywords() method** - queries DataForSEO for keywords ranking in positions 6+ where competition outranks the restaurant
   - **Updated premium dashboard display** - changed "Keywords Generated" section to "Where your competition is winning" 
