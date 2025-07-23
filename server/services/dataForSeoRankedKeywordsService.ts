@@ -110,7 +110,8 @@ export class DataForSeoRankedKeywordsService {
     domain: string, 
     locationName: string = 'United States',
     languageCode: string = 'en',
-    limit: number = 5
+    limit: number = 5,
+    restaurantCity?: string
   ): Promise<ProcessedKeyword[]> {
     try {
       console.log(`🔍 COMPETITIVE OPPORTUNITIES API: Getting opportunity keywords (rank 6+) for domain: ${domain}`);
@@ -166,69 +167,46 @@ export class DataForSeoRankedKeywordsService {
       
       console.log(`🔍 COMPETITIVE OPPORTUNITIES API: Raw keywords before filtering:`, keywords.slice(0, 5).map(k => k.keyword));
       
-      // Filter for restaurant-relevant keywords only (strict filtering for actionable keywords)
+      // Filter for high-value competitive keywords (much less restrictive approach)
       const relevantKeywords = keywords.filter(keyword => {
         const kw = keyword.keyword.toLowerCase();
         
-        // EXCLUDE specific cities/states that are NOT where the restaurant is located (irrelevant locations)
-        const specificLocationTerms = [
-          // Nebraska cities that are NOT the restaurant location
-          'gretna ne', 'gretna nebraska', 'bellevue ne', 'papillion ne', 'la vista ne',
-          'lincoln ne', 'omaha ne', 'kearney ne', 'fremont ne', 'grand island ne', 'hastings ne',
-          // Iowa cities that are NOT the restaurant location (except Council Bluffs which is OK)
-          'des moines ia', 'cedar rapids ia', 'davenport ia', 'sioux city ia', 'ames ia', 'waterloo ia',
-          // Other major cities that are irrelevant
-          'salt lake city ut', 'provo ut', 'denver co', 'kansas city mo', 'wichita ks', 'chicago il',
-          'new york ny', 'los angeles ca', 'houston tx', 'phoenix az', 'philadelphia pa',
-          // Generic city terms that are too vague
-          'downtown', 'midtown', 'uptown', 'eastside', 'westside'
-        ];
-        const hasSpecificLocation = specificLocationTerms.some(location => kw.includes(location));
-        
-        // EXCLUDE demographic terms that are inappropriate for business recommendations
+        // EXCLUDE demographic terms only 
         const demographicTerms = [
           'black owned', 'white owned', 'asian owned', 'hispanic owned', 'latino owned', 'native owned',
-          'black', 'white', 'asian', 'hispanic', 'latino', 'native', 'indigenous',
-          'african american', 'caucasian', 'chinese american', 'mexican american',
           'minority owned', 'women owned', 'female owned', 'male owned'
         ];
         const hasDemographic = demographicTerms.some(term => kw.includes(term));
         
-        // Include high-value competitive keywords that are actionable
+        // EXCLUDE very low commercial value keywords
+        const lowValueTerms = [
+          'hours', 'phone', 'address', 'directions', 'contact', 'about us',
+          'history', 'story', 'owner', 'staff', 'jobs', 'careers', 'hiring'
+        ];
+        const hasLowValue = lowValueTerms.some(term => kw.includes(term));
         
-        // 1. Always include "near me" searches - these are crucial for local restaurants
-        const isNearMe = kw.includes('near me');
-        
-        // 2. Include broad food type keywords (huge opportunity keywords)
-        const isBroadFoodKeyword = !hasSpecificLocation && (
+        // INCLUDE high-value competitive opportunities
+        const isHighValueKeyword = (
+          // Food types (huge opportunities)
           kw.includes('pizza') || kw.includes('burger') || kw.includes('chicken') || kw.includes('mexican') || 
           kw.includes('italian') || kw.includes('chinese') || kw.includes('sushi') || kw.includes('thai') || 
           kw.includes('indian') || kw.includes('mediterranean') || kw.includes('seafood') || kw.includes('steak') ||
-          kw.includes('food') || kw.includes('restaurant') || kw.includes('dining') || kw.includes('wings') ||
-          kw.includes('sandwich') || kw.includes('salad') || kw.includes('lunch') || kw.includes('dinner')
-        );
-        
-        // 3. Include service keywords without location
-        const isServiceKeyword = !hasSpecificLocation && (
+          kw.includes('wings') || kw.includes('sandwich') || kw.includes('salad') || kw.includes('pasta') ||
+          
+          // Service keywords (competitive opportunities)
           kw.includes('delivery') || kw.includes('takeout') || kw.includes('pickup') || 
-          kw.includes('catering') || kw.includes('order') || kw.includes('menu') || 
-          kw.includes('hours') || kw.includes('locations')
+          kw.includes('catering') || kw.includes('order') || kw.includes('menu') ||
+          
+          // Local searches (crucial for restaurants)
+          kw.includes('near me') || kw.includes('restaurant') || kw.includes('food') || 
+          kw.includes('dining') || kw.includes('lunch') || kw.includes('dinner') ||
+          
+          // Quality/comparison terms (high commercial intent)
+          kw.includes('best') || kw.includes('top') || kw.includes('good') || kw.includes('great') ||
+          kw.includes('reviews') || kw.includes('rating') || kw.includes('recommended')
         );
         
-        // 4. Include food + service combinations without location  
-        const isFoodServiceCombo = !hasSpecificLocation && (
-          (kw.includes('pizza') && (kw.includes('delivery') || kw.includes('takeout') || kw.includes('near'))) ||
-          (kw.includes('burger') && (kw.includes('delivery') || kw.includes('takeout') || kw.includes('near'))) ||
-          (kw.includes('chicken') && (kw.includes('delivery') || kw.includes('takeout') || kw.includes('near')))
-        );
-        
-        // 5. Include brand keywords without location (competitive intelligence)
-        const isBrandKeyword = !hasSpecificLocation && (
-          kw.includes('pizza') || kw.includes('burger') || kw.includes('restaurant') || 
-          kw.includes('food') || kw.includes('menu') || kw.includes('delivery')
-        );
-        
-        return (isNearMe || isBroadFoodKeyword || isServiceKeyword || isFoodServiceCombo || isBrandKeyword) && !hasDemographic;
+        return isHighValueKeyword && !hasDemographic && !hasLowValue;
       });
       
       // Apply the requested limit to the filtered keywords
