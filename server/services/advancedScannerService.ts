@@ -238,7 +238,7 @@ export class AdvancedScannerService {
       console.log(`🔍 ADVANCED SCANNER: Getting competitive opportunity keywords (rank 6+) for domain: ${actualDomain}`);
       
       const competitiveOpportunityPromise = Promise.race([
-        this.rankedKeywordsService.getCompetitiveOpportunityKeywords(actualDomain, 'United States', 'en', 10),
+        this.rankedKeywordsService.getCompetitiveOpportunityKeywords(actualDomain, 'United States', 'en', 5),
         new Promise((_, reject) => 
           setTimeout(() => reject(new Error('Competitive opportunity keywords timeout')), 6000)
         )
