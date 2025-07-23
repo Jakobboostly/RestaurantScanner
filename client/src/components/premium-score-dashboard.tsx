@@ -1165,11 +1165,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-gray-600">Facebook</span>
                       <div className="flex items-center gap-2">
-                        {(() => {
-                          console.log('🔍 Frontend socialMediaLinks object:', scanResult.socialMediaLinks);
-                          console.log('🔍 Frontend Facebook URL:', scanResult.socialMediaLinks?.facebook);
-                          return null;
-                        })()}
+
                         <span className={scanResult.socialMediaLinks?.facebook ? "text-[#5F5FFF]" : "text-gray-400"}>
                           {scanResult.socialMediaLinks?.facebook ? "✓ Active" : "✗ Missing"}
                         </span>

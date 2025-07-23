@@ -341,17 +341,11 @@ export class AdvancedScannerService {
         return [];
       });
       
-      const socialMediaPromise = Promise.race([
-        this.enhancedSocialMediaDetection(domain, restaurantName, businessProfile, placeId, manualFacebookUrl),
-        new Promise((_, reject) => 
-          setTimeout(() => reject(new Error('Social media detection timeout')), 15000) // Increased to 15 seconds for Instagram detection
-        )
-      ]).catch(error => {
+      const socialMediaPromise = this.enhancedSocialMediaDetection(domain, restaurantName, businessProfile, placeId, manualFacebookUrl).catch(error => {
         console.error('❌ Social media detection failed:', error);
-        console.error('❌ This might be why Instagram detection is not working');
         // If we have a manual Facebook URL, return it even on timeout
         if (manualFacebookUrl) {
-          console.log('🔧 Timeout occurred - using manual Facebook URL fallback:', manualFacebookUrl);
+          console.log('🔧 Error occurred - using manual Facebook URL fallback:', manualFacebookUrl);
           return {
             facebook: manualFacebookUrl,
             facebookVerified: true,
@@ -378,7 +372,10 @@ export class AdvancedScannerService {
       
       // Ensure social media links are properly structured
       const socialMediaLinks = socialMediaLinksRaw || {};
+      console.log('🔍 POST-PROMISE socialMediaLinksRaw:', JSON.stringify(socialMediaLinksRaw, null, 2));
       console.log('🔍 POST-PROMISE socialMediaLinks:', JSON.stringify(socialMediaLinks, null, 2));
+      console.log('🔍 POST-PROMISE socialMediaLinks.facebook:', socialMediaLinks.facebook);
+      console.log('🔍 POST-PROMISE socialMediaLinks.instagram:', socialMediaLinks.instagram);
       
       // DEBUG: Check what social media links were actually detected
       console.log('🔍 SOCIAL MEDIA DEBUG: Final detection result:', JSON.stringify(socialMediaLinks, null, 2));
