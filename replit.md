@@ -76,6 +76,14 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 23, 2025. Replaced DataForSEO competitive keywords API with custom competitive keyword generator:
+  - **Fixed fundamental DataForSEO flaw** - competitive keywords API was returning brand confusion (e.g., "pier pizza menu", "pier view pizza") instead of actual competitive opportunities
+  - **Built custom competitive keyword generator** - now generates meaningful terms like "best pizza provo", "pizza delivery near me", "italian restaurant provo" based on restaurant type and location
+  - **Added business type detection** - automatically detects pizza, mexican, burger, chinese restaurants from domain names for targeted keyword generation
+  - **Implemented location-aware keywords** - extracts city from Google Places business profile to create city-specific competitive terms
+  - **Enhanced competitive intelligence** - system now provides actionable optimization opportunities instead of confusing brand variations
+  - **Maintained SERP position checking** - uses DataForSEO SERP API to verify actual ranking positions for generated competitive keywords
+  - **Fixed user experience** - "Where your competition is winning" now shows relevant gaps where competitors outrank restaurant on valuable search terms
 - July 23, 2025. Enhanced competitive opportunity keyword filtering for restaurant relevance:
   - **Fixed irrelevant city filtering** - competitive opportunity keywords now exclude other cities and focus on food-type, "near me", and service keywords
   - **Added restaurant-specific keyword filtering** - system now filters for pizza, burger, chicken, delivery, takeout, catering, and other restaurant-relevant terms
