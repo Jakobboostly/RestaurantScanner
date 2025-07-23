@@ -11,6 +11,7 @@ import ScanningAnimation from "@/components/scanning-animation";
 import EnhancedResultsDashboard from "@/components/enhanced-results-dashboard";
 import { scanWebsite, getRestaurantDetails } from "@/lib/api";
 import { RestaurantSearchResult, ScanResult } from "@shared/schema";
+import boostlyLogo from "@assets/boostlylogo_1752026376541.png";
 
 type ViewState = 'search' | 'scanning' | 'results';
 
@@ -183,9 +184,11 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               <div>
                 <div className="flex items-center mb-6">
-                  <div className="p-2 bg-[#28008F] rounded-lg mr-3">
-                    <ChefHat className="h-6 w-6 text-white" />
-                  </div>
+                  <img 
+                    src={boostlyLogo} 
+                    alt="Boostly Logo" 
+                    className="h-8 w-auto mr-3"
+                  />
                   <span className="text-xl font-bold">Boostly Restaurant Health Scan</span>
                 </div>
                 <p className="text-gray-400 mb-6">
