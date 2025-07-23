@@ -26,6 +26,21 @@ export interface ApifyReviewsResponse {
     placeId: string;
     averageRating?: number;
   };
+  socialMedia?: {
+    facebooks: string[];
+    instagrams: string[];
+    twitters: string[];
+    youtubes: string[];
+    linkedIns: string[];
+    tiktoks: string[];
+    pinterests: string[];
+    discords: string[];
+  };
+  contacts?: {
+    emails: string[];
+    phones: string[];
+    phonesUncertain: string[];
+  };
 }
 
 export class ApifyReviewsService {
@@ -48,6 +63,7 @@ export class ApifyReviewsService {
         maxReviews: 100,
         reviewsSort: "newest",
         scrapeReviewsPersonalData: true,
+        scrapeContacts: true,
         language: "en"
       });
 
@@ -89,6 +105,28 @@ export class ApifyReviewsService {
         } : undefined
       }));
 
+      // Extract social media and contact data
+      const socialMedia = {
+        facebooks: placeData.facebooks || [],
+        instagrams: placeData.instagrams || [],
+        twitters: placeData.twitters || [],
+        youtubes: placeData.youtubes || [],
+        linkedIns: placeData.linkedIns || [],
+        tiktoks: placeData.tiktoks || [],
+        pinterests: placeData.pinterests || [],
+        discords: placeData.discords || []
+      };
+
+      const contacts = {
+        emails: placeData.emails || [],
+        phones: placeData.phones || [],
+        phonesUncertain: placeData.phonesUncertain || []
+      };
+
+      console.log(`Social media found: ${Object.values(socialMedia).flat().length} total links`);
+      if (socialMedia.facebooks.length > 0) console.log(`Facebook: ${socialMedia.facebooks.join(', ')}`);
+      if (socialMedia.instagrams.length > 0) console.log(`Instagram: ${socialMedia.instagrams.join(', ')}`);
+
       return {
         success: true,
         data: processedReviews,
@@ -97,7 +135,9 @@ export class ApifyReviewsService {
           placeName: String(placeData.title || 'Unknown Place'),
           placeId,
           averageRating: Number(placeData.totalScore || placeData.averageRating || 0)
-        }
+        },
+        socialMedia,
+        contacts
       };
 
     } catch (error: any) {
