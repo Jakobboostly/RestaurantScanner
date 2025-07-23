@@ -371,10 +371,14 @@ export class AdvancedScannerService {
         };
       });
       
-      const [competitors, socialMediaLinks] = await Promise.all([
+      const [competitors, socialMediaLinksRaw] = await Promise.all([
         competitorPromise,
         socialMediaPromise
       ]);
+      
+      // Ensure social media links are properly structured
+      const socialMediaLinks = socialMediaLinksRaw || {};
+      console.log('🔍 POST-PROMISE socialMediaLinks:', JSON.stringify(socialMediaLinks, null, 2));
       
       // DEBUG: Check what social media links were actually detected
       console.log('🔍 SOCIAL MEDIA DEBUG: Final detection result:', JSON.stringify(socialMediaLinks, null, 2));
@@ -735,7 +739,14 @@ export class AdvancedScannerService {
         recommendations: mobileExperience?.recommendations || []
       },
       reviewsAnalysis: reviewsAnalysis || this.generateEnhancedReviewsAnalysis(businessProfile),
-      socialMediaLinks: socialMediaLinks || {},
+      socialMediaLinks: {
+        facebook: socialMediaLinks?.facebook || null,
+        instagram: socialMediaLinks?.instagram || null,
+        twitter: socialMediaLinks?.twitter || null,
+        youtube: socialMediaLinks?.youtube || null,
+        tiktok: socialMediaLinks?.tiktok || null,
+        linkedin: socialMediaLinks?.linkedin || null
+      },
       profileAnalysis: profileAnalysis,
       serpScreenshots: serpScreenshots || [],
       restaurantSearchScreenshot: restaurantSearchScreenshot
@@ -748,6 +759,9 @@ export class AdvancedScannerService {
     console.log('📱 socialMediaLinks in final result:', JSON.stringify(result.socialMediaLinks, null, 2));
     console.log('📱 socialMediaLinks Facebook:', result.socialMediaLinks?.facebook || 'Not found');
     console.log('📱 socialMediaLinks Instagram:', result.socialMediaLinks?.instagram || 'Not found');
+    console.log('🔍 DEBUG: Raw socialMediaLinks variable:', JSON.stringify(socialMediaLinks, null, 2));
+    console.log('🔍 DEBUG: socialMediaLinks type:', typeof socialMediaLinks);
+    console.log('🔍 DEBUG: socialMediaLinks keys:', socialMediaLinks ? Object.keys(socialMediaLinks) : 'null');
     if (result.reviewsAnalysis?.customerMoodAnalysis) {
       console.log('✅ CustomerMoodAnalysis overallMood:', result.reviewsAnalysis.customerMoodAnalysis.overallMood);
     }
