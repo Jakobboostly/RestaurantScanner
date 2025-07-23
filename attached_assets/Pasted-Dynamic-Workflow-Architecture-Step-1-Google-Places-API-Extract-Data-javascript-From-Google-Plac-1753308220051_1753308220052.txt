@@ -1,0 +1,360 @@
+Dynamic Workflow Architecture
+Step 1: Google Places API → Extract Data
+javascript// From Google Places API response, extract:
+const restaurantData = {
+  website: "slabpizza.com",
+  city: "Provo", 
+  state: "Utah",
+  name: "Slab Pizza",
+  cuisine: "Pizza" // or extract from business type
+}
+Step 2: Build Dynamic Keywords
+javascript// Generate location-based keywords dynamically
+const generateKeywords = (city, cuisine) => {
+  return [
+    `${cuisine.toLowerCase()} ${city.toLowerCase()}`,
+    `${cuisine.toLowerCase()} in ${city.toLowerCase()}`,
+    `best ${cuisine.toLowerCase()} ${city.toLowerCase()}`,
+    `${city.toLowerCase()} ${cuisine.toLowerCase()}`,
+    `${cuisine.toLowerCase()} near me ${city.toLowerCase()}`
+  ];
+};
+
+// Example output for Provo pizza place:
+// ["pizza provo", "pizza in provo", "best pizza provo", "provo pizza", "pizza near me provo"]
+Step 3: Dynamic API Call Template
+javascriptconst getDynamicKeywordRankings = (website, city, cuisine, state) => {
+  const apiCall = {
+    "target": website.replace('https://', '').replace('http://', ''),
+    "language_code": "en",
+    "location_name": state, // or "United States" for broader
+    "limit": 50,
+    "order_by": ["keyword_data.keyword_info.search_volume,desc"],
+    "filters": [
+      ["keyword_data.keyword", "like", `%${cuisine.toLowerCase()}%`],
+      "and",
+      ["keyword_data.keyword", "like", `%${city.toLowerCase()}%`],
+      "and", 
+      ["keyword_data.keyword_info.search_volume", ">", 100]
+    ]
+  };
+  
+  return fetch('https://api.dataforseo.com/v3/dataforseo_labs/google/ranked_keywords/live', {
+    method: 'POST',
+    headers: {
+      'Authorization': 'Basic YOUR_BASE64_ENCODED_CREDENTIALS',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify([apiCall])
+  });
+};
+Step 4: Universal Template for Any Restaurant
+bash# Dynamic curl template (populate variables from Google Places data)
+curl -X POST "https://api.dataforseo.com/v3/dataforseo_labs/google/ranked_keywords/live" \
+-H "Authorization: Basic YOUR_BASE64_ENCODED_CREDENTIALS" \
+-H "Content-Type: application/json" \
+-d '[
+  {
+    "target": "${WEBSITE_DOMAIN}",
+    "language_code": "en", 
+    "location_name": "${STATE}",
+    "limit": 50,
+    "order_by": ["keyword_data.keyword_info.search_volume,desc"],
+    "filters": [
+      ["keyword_data.keyword", "like", "%${CUISINE_TYPE}%"],
+      "and",
+      ["keyword_data.keyword", "like", "%${CITY_NAME}%"],
+      "and",
+      ["keyword_data.keyword_info.search_volume", ">", 100]
+    ]
+  }
+]'
+Step 5: Handle Multiple Cuisine Types
+javascript// Extract cuisine from Google Places business types
+const extractCuisine = (googlePlacesTypes) => {
+  const cuisineMap = {
+    'meal_delivery': 'restaurant',
+    'meal_takeaway': 'restaurant', 
+    'restaurant': 'restaurant',
+    'pizza_restaurant': 'pizza',
+    'italian_restaurant': 'italian',
+    'mexican_restaurant': 'mexican',
+    'chinese_restaurant': 'chinese',
+    'bakery': 'bakery',
+    'cafe': 'coffee'
+  };
+  
+  for (let type of googlePlacesTypes) {
+    if (cuisineMap[type]) return cuisineMap[type];
+  }
+  return 'restaurant'; // fallback
+};
+Complete Dynamic Function
+javascriptasync function getRestaurantKeywordData(googlePlacesResult) {
+  const {
+    website,
+    name,
+    formatted_address,  
+    types
+  } = googlePlacesResult;
+  
+  // Extract city/state from address
+  const addressParts = formatted_address.split(', ');
+  const city = addressParts[addressParts.length - 3];
+  const state = addressParts[addressParts.length - 2].split(' ')[0];
+  
+  // Extract cuisine type
+  const cuisine = extractCuisine(types);
+  
+  // Build dynamic API call
+  const rankings = await getDynamicKeywordRankings(website, city, cuisine, state);
+  
+  return {
+    restaurant: name,
+    location: `${city}, ${state}`,
+    website: website,
+    topKeywords: rankings.data // formatted ranking results
+  };
+}
+This gives you a completely dynamic system that works for:
+
+🍕 "Pizza Chicago" for Chicago pizza places
+🍜 "Ramen Seattle" for Seattle ramen shops
+🥩 "Steakhouse Dallas" for Dallas steakhouses
+☕ "Coffee Portland" for Portland coffee shops
+
+The system automatically adapts the keywords and location targeting based on the Google Places data!RetryJcan you give me more cuisine types maybe? just in case? or what's the handling for one that sn not codedEditAbsolutely! Here's a comprehensive cuisine mapping with fallback handling:
+Extended Cuisine Mapping
+javascriptconst extractCuisine = (googlePlacesTypes, businessName = '') => {
+  // Primary cuisine mapping from Google Places types
+  const cuisineMap = {
+    // Pizza & Italian
+    'pizza_restaurant': 'pizza',
+    'italian_restaurant': 'italian',
+    
+    // Asian Cuisines
+    'chinese_restaurant': 'chinese',
+    'japanese_restaurant': 'japanese', 
+    'korean_restaurant': 'korean',
+    'thai_restaurant': 'thai',
+    'vietnamese_restaurant': 'vietnamese',
+    'indian_restaurant': 'indian',
+    'asian_restaurant': 'asian',
+    
+    // Mexican & Latin
+    'mexican_restaurant': 'mexican',
+    'latin_american_restaurant': 'latin',
+    
+    // American & Western
+    'american_restaurant': 'american',
+    'hamburger_restaurant': 'burger',
+    'steak_house': 'steakhouse',
+    'barbecue_restaurant': 'bbq',
+    'sandwich_shop': 'sandwich',
+    
+    // Fast Food & Casual
+    'meal_delivery': 'restaurant',
+    'meal_takeaway': 'restaurant',
+    'fast_food_restaurant': 'fast food',
+    
+    // Breakfast & Cafe
+    'breakfast_restaurant': 'breakfast',
+    'brunch_restaurant': 'brunch',
+    'cafe': 'coffee',
+    'coffee_shop': 'coffee',
+    
+    // Specialty
+    'seafood_restaurant': 'seafood',
+    'sushi_restaurant': 'sushi',
+    'bakery': 'bakery',
+    'ice_cream_shop': 'ice cream',
+    'deli': 'deli',
+    'food_truck': 'food truck',
+    
+    // Broad categories
+    'restaurant': 'restaurant',
+    'bar': 'bar',
+    'night_club': 'bar'
+  };
+  
+  // Check Google Places types first
+  for (let type of googlePlacesTypes) {
+    if (cuisineMap[type]) {
+      return cuisineMap[type];
+    }
+  }
+  
+  // Fallback: Parse business name for cuisine keywords
+  const nameKeywords = businessName.toLowerCase();
+  const nameBasedCuisine = {
+    'pizza': 'pizza',
+    'burger': 'burger', 
+    'taco': 'mexican',
+    'sushi': 'sushi',
+    'chinese': 'chinese',
+    'thai': 'thai',
+    'indian': 'indian',
+    'italian': 'italian',
+    'mexican': 'mexican',
+    'bbq': 'bbq',
+    'barbecue': 'bbq',
+    'steakhouse': 'steakhouse',
+    'steak': 'steakhouse',
+    'seafood': 'seafood',
+    'deli': 'deli',
+    'bakery': 'bakery',
+    'cafe': 'coffee',
+    'coffee': 'coffee',
+    'sandwich': 'sandwich',
+    'wings': 'wings',
+    'chicken': 'chicken',
+    'ramen': 'ramen',
+    'pho': 'vietnamese',
+    'korean': 'korean',
+    'mediterranean': 'mediterranean',
+    'greek': 'greek',
+    'french': 'french',
+    'soul food': 'soul food',
+    'cajun': 'cajun',
+    'creole': 'creole'
+  };
+  
+  for (let keyword in nameBasedCuisine) {
+    if (nameKeywords.includes(keyword)) {
+      return nameBasedCuisine[keyword];
+    }
+  }
+  
+  // Ultimate fallback: return 'restaurant'
+  return 'restaurant';
+};
+Enhanced Dynamic Keyword Generator
+javascriptconst generateKeywords = (city, cuisine, restaurantName) => {
+  const baseKeywords = [
+    `${cuisine} ${city.toLowerCase()}`,
+    `${cuisine} in ${city.toLowerCase()}`,
+    `best ${cuisine} ${city.toLowerCase()}`,
+    `${city.toLowerCase()} ${cuisine}`,
+    `${cuisine} near me`,
+    `${cuisine} delivery ${city.toLowerCase()}`,
+    `${cuisine} takeout ${city.toLowerCase()}`
+  ];
+  
+  // Add cuisine-specific variations
+  const cuisineSpecific = {
+    'pizza': [
+      `pizza places ${city.toLowerCase()}`,
+      `pizza delivery ${city.toLowerCase()}`,
+      `best pizza ${city.toLowerCase()}`
+    ],
+    'burger': [
+      `burger joint ${city.toLowerCase()}`,
+      `hamburger ${city.toLowerCase()}`,
+      `best burgers ${city.toLowerCase()}`
+    ],
+    'chinese': [
+      `chinese food ${city.toLowerCase()}`,
+      `chinese takeout ${city.toLowerCase()}`,
+      `chinese delivery ${city.toLowerCase()}`
+    ],
+    'mexican': [
+      `mexican food ${city.toLowerCase()}`,
+      `tacos ${city.toLowerCase()}`,
+      `mexican restaurant ${city.toLowerCase()}`
+    ],
+    'coffee': [
+      `coffee shop ${city.toLowerCase()}`,
+      `cafe ${city.toLowerCase()}`,
+      `coffee ${city.toLowerCase()}`
+    ],
+    'restaurant': [
+      `restaurants ${city.toLowerCase()}`,
+      `dining ${city.toLowerCase()}`,
+      `food ${city.toLowerCase()}`
+    ]
+  };
+  
+  if (cuisineSpecific[cuisine]) {
+    baseKeywords.push(...cuisineSpecific[cuisine]);
+  }
+  
+  return baseKeywords;
+};
+Smart Fallback API Strategy
+javascriptconst getDynamicKeywordRankings = async (website, city, cuisine, state, restaurantName) => {
+  
+  // Strategy 1: Cuisine-specific search
+  const cuisineCall = {
+    "target": website,
+    "language_code": "en",
+    "location_name": state,
+    "limit": 30,
+    "order_by": ["keyword_data.keyword_info.search_volume,desc"],
+    "filters": [
+      ["keyword_data.keyword", "like", `%${cuisine}%`],
+      "and",
+      ["keyword_data.keyword", "like", `%${city.toLowerCase()}%`],
+      "and", 
+      ["keyword_data.keyword_info.search_volume", ">", 100]
+    ]
+  };
+  
+  try {
+    const cuisineResults = await callAPI(cuisineCall);
+    if (cuisineResults.length > 5) {
+      return cuisineResults; // Good results, return them
+    }
+  } catch (error) {
+    console.log('Cuisine-specific search failed, trying fallback...');
+  }
+  
+  // Strategy 2: Generic restaurant search (fallback)
+  const genericCall = {
+    "target": website,
+    "language_code": "en", 
+    "location_name": state,
+    "limit": 50,
+    "order_by": ["keyword_data.keyword_info.search_volume,desc"],
+    "filters": [
+      [
+        ["keyword_data.keyword", "like", "%restaurant%"],
+        "or",
+        ["keyword_data.keyword", "like", "%food%"],
+        "or", 
+        ["keyword_data.keyword", "like", "%dining%"]
+      ],
+      "and",
+      ["keyword_data.keyword", "like", `%${city.toLowerCase()}%`],
+      "and",
+      ["keyword_data.keyword_info.search_volume", ">", 50] // Lower threshold
+    ]
+  };
+  
+  return await callAPI(genericCall);
+};
+Complete Usage Example
+javascript// Example: Unknown cuisine type handling
+const restaurantData = {
+  name: "Panda Garden", // Contains "garden" - not in our map
+  types: ["establishment", "food", "point_of_interest"], // No specific cuisine
+  city: "Austin",
+  state: "Texas",
+  website: "pandagarden.com"
+};
+
+const cuisine = extractCuisine(restaurantData.types, restaurantData.name);
+// Result: 'restaurant' (fallback)
+
+// But the API will still find relevant keywords like:
+// "restaurants austin" - 8,100 searches/month - Position #45
+// "food austin" - 12,000 searches/month - Position #67  
+// "dining austin" - 3,200 searches/month - Position #23
+This system gracefully handles:
+
+✅ 40+ specific cuisine types
+✅ Name-based cuisine detection
+✅ Generic restaurant fallback
+✅ Multiple API strategies
+✅ Automatic keyword generation per cuisine type
+
+No restaurant gets left behind! 🚀
