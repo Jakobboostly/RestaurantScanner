@@ -170,15 +170,16 @@ export class DataForSeoRankedKeywordsService {
       const relevantKeywords = keywords.filter(keyword => {
         const kw = keyword.keyword.toLowerCase();
         
-        // EXCLUDE specific cities/states that user doesn't want (too location-specific)
+        // EXCLUDE specific cities/states that are NOT where the restaurant is located (irrelevant locations)
         const specificLocationTerms = [
-          // Nebraska specific locations user wants to exclude
-          'gretna ne', 'gretna nebraska', 'council bluffs', 'bellevue ne', 'papillion ne', 'la vista ne',
+          // Nebraska cities that are NOT the restaurant location
+          'gretna ne', 'gretna nebraska', 'bellevue ne', 'papillion ne', 'la vista ne',
           'lincoln ne', 'omaha ne', 'kearney ne', 'fremont ne', 'grand island ne', 'hastings ne',
-          // Iowa specific locations 
-          'council bluffs iowa', 'council bluffs ia', 'des moines ia', 'cedar rapids ia', 'davenport ia', 'sioux city ia',
-          // Other specific city/state combinations that are too narrow
-          'salt lake city ut', 'provo ut', 'denver co', 'kansas city mo', 'wichita ks',
+          // Iowa cities that are NOT the restaurant location (except Council Bluffs which is OK)
+          'des moines ia', 'cedar rapids ia', 'davenport ia', 'sioux city ia', 'ames ia', 'waterloo ia',
+          // Other major cities that are irrelevant
+          'salt lake city ut', 'provo ut', 'denver co', 'kansas city mo', 'wichita ks', 'chicago il',
+          'new york ny', 'los angeles ca', 'houston tx', 'phoenix az', 'philadelphia pa',
           // Generic city terms that are too vague
           'downtown', 'midtown', 'uptown', 'eastside', 'westside'
         ];
