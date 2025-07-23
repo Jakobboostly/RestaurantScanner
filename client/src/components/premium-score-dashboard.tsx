@@ -619,11 +619,11 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                   {/* Left Side - Dropdown Summary */}
                   <div className="space-y-6">
-                    {/* Missing Ingredients */}
+                    {/* Where You're Going Wrong */}
                     <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
                       <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
                         <AlertCircle className="w-5 h-5 text-[#5F5FFF]" />
-                        Missing Ingredients
+                        Where You're Going Wrong
                       </h3>
                       <div className="space-y-3">
                         {/* High Priority Issues */}
@@ -933,11 +933,11 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
               {/* Social Tab Content */}
               {activeTab === 'social' && (
                 <div className="space-y-6">
-                  {/* Missing Ingredients */}
+                  {/* Where You're Going Wrong */}
                   <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
                     <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
                       <AlertCircle className="w-5 h-5 text-[#5F5FFF]" />
-                      Missing Ingredients
+                      Where You're Going Wrong
                     </h3>
                     <div className="space-y-3">
                       {/* High Priority Issues */}
@@ -1208,11 +1208,11 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
               {/* Local Tab Content */}
               {activeTab === 'local' && (
                 <div className="space-y-6">
-                  {/* Missing Ingredients */}
+                  {/* Where You're Going Wrong */}
                   <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
                     <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
                       <AlertCircle className="w-5 h-5 text-[#5F5FFF]" />
-                      Missing Ingredients
+                      Where You're Going Wrong
                     </h3>
                     <div className="space-y-3">
                       {/* High Priority Issues */}
@@ -1337,11 +1337,11 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
               {/* Reviews Tab Content */}
               {activeTab === 'reviews' && (
                 <div className="space-y-6">
-                  {/* Missing Ingredients */}
+                  {/* Where You're Going Wrong */}
                   <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
                     <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
                       <AlertCircle className="w-5 h-5 text-[#5F5FFF]" />
-                      Missing Ingredients
+                      Where You're Going Wrong
                     </h3>
                     <div className="space-y-3">
                       {/* High Priority Issues */}
@@ -1626,7 +1626,6 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
           </Card>
         </motion.div>
       </div>
-
       {/* Embedded Google Search Modal */}
       {showEmbeddedSearch && (
         <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4">
@@ -1655,28 +1654,18 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
               </button>
             </div>
             
-            {/* Google Search Results */}
-            <div className="flex-1 p-4 bg-gray-50">
-              <div className="bg-white rounded-lg p-6 h-full flex items-center justify-center border-2 border-dashed border-gray-300">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-[#5F5FFF]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Search className="w-8 h-8 text-[#5F5FFF]" />
-                  </div>
-                  <h4 className="font-semibold text-gray-800 mb-2">Search Results Would Appear Here</h4>
-                  <p className="text-sm text-gray-600 mb-4">
-                    In a live environment, this would show Google search results for "{(() => {
-                      const { foodType, city, state } = getSearchTerms();
-                      return `${foodType} ${city} ${state}`.trim();
-                    })()}"
-                  </p>
-                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-3">
-                    <p className="text-xs text-blue-700">
-                      <strong>Note:</strong> Google restricts embedding search results for security reasons. 
-                      In production, this would use alternative search visualization or open in a new tab.
-                    </p>
-                  </div>
-                </div>
-              </div>
+            {/* Embedded Google Search */}
+            <div className="flex-1 overflow-hidden">
+              <iframe
+                src={(() => {
+                  const { foodType, city, state } = getSearchTerms();
+                  const searchQuery = `${foodType} ${city} ${state}`.trim();
+                  return `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}&igu=1`;
+                })()}
+                className="w-full h-full border-0"
+                title="Google Search Results"
+                sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+              />
             </div>
             
             {/* Modal Footer */}

@@ -12,19 +12,12 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
-              <a 
-                href="https://www.boostly.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center hover:opacity-80 transition-opacity duration-200"
-              >
-                <img 
-                  src={boostlyLogo} 
-                  alt="Boostly Logo" 
-                  className="h-8 w-auto mr-3"
-                />
-                <span className="text-xl font-bold text-gray-900">Boostly Restaurant Health Scan</span>
-              </a>
+              <img 
+                src={boostlyLogo} 
+                alt="Boostly Logo" 
+                className="h-8 w-auto mr-3"
+              />
+              <span className="text-xl font-bold text-gray-900">Boostly Restaurant Health Scan</span>
             </div>
           </div>
           
