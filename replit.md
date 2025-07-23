@@ -76,6 +76,12 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 23, 2025. Enhanced competitive opportunity keyword filtering for restaurant relevance:
+  - **Fixed irrelevant city filtering** - competitive opportunity keywords now exclude other cities and focus on food-type, "near me", and service keywords
+  - **Added restaurant-specific keyword filtering** - system now filters for pizza, burger, chicken, delivery, takeout, catering, and other restaurant-relevant terms
+  - **Improved local relevance** - "where your competition is winning" now shows actionable keywords like "pizza delivery" instead of random city names
+  - **Enhanced keyword quality** - filters out 40+ major city names while preserving food types, service keywords, and local search terms
+  - **Better user experience** - competitive analysis now provides relevant optimization opportunities instead of confusing location-based keywords
 - July 23, 2025. Fixed ES module import issues for deployment compatibility:  
   - **Fixed selenium-webdriver chrome imports** - Updated import statements from `'selenium-webdriver/chrome'` to `'selenium-webdriver/chrome.js'` for proper ES module compatibility
   - **Enhanced Chrome binary path detection** - Implemented flexible Chrome binary detection for different deployment environments including Cloud Run, standard Linux, and Replit Nix

@@ -164,11 +164,35 @@ export class DataForSeoRankedKeywordsService {
 
       const keywords = result.items.map((item: any) => this.processKeywordFromAPI(item));
       
-      // Apply the requested limit to the returned keywords
-      const limitedKeywords = keywords.slice(0, limit);
+      // Filter for restaurant-relevant keywords only (food types, "near me", local terms)
+      const relevantKeywords = keywords.filter(keyword => {
+        const kw = keyword.keyword.toLowerCase();
+        
+        // Include food-type keywords
+        const foodTypes = ['pizza', 'burger', 'chicken', 'mexican', 'italian', 'chinese', 'sushi', 'thai', 'indian', 'mediterranean', 'american', 'seafood', 'steak', 'bbq', 'sandwich', 'salad', 'breakfast', 'lunch', 'dinner', 'coffee', 'cafe', 'bakery', 'deli', 'bar', 'pub', 'brewery', 'wings', 'tacos', 'burrito', 'pasta', 'ramen', 'pho'];
+        const hasFoodType = foodTypes.some(food => kw.includes(food));
+        
+        // Include "near me" searches
+        const hasNearMe = kw.includes('near me');
+        
+        // Include delivery/takeout keywords
+        const hasServiceKeywords = kw.includes('delivery') || kw.includes('takeout') || kw.includes('pickup') || kw.includes('catering') || kw.includes('order') || kw.includes('menu');
+        
+        // Include restaurant-specific terms
+        const hasRestaurantTerms = kw.includes('restaurant') || kw.includes('dining') || kw.includes('food');
+        
+        // Exclude other cities/states that aren't relevant
+        const irrelevantCities = ['new york', 'los angeles', 'chicago', 'houston', 'phoenix', 'philadelphia', 'san antonio', 'san diego', 'dallas', 'austin', 'jacksonville', 'fort worth', 'columbus', 'charlotte', 'san francisco', 'indianapolis', 'seattle', 'denver', 'washington', 'boston', 'nashville', 'baltimore', 'oklahoma city', 'louisville', 'portland', 'las vegas', 'milwaukee', 'albuquerque', 'tucson', 'fresno', 'sacramento', 'mesa', 'kansas city', 'atlanta', 'omaha', 'colorado springs', 'raleigh', 'miami', 'virginia beach', 'oakland', 'minneapolis', 'tulsa', 'arlington', 'tampa', 'new orleans', 'wichita', 'cleveland', 'bakersfield', 'aurora', 'anaheim', 'honolulu', 'santa ana', 'riverside', 'corpus christi', 'lexington', 'stockton', 'henderson', 'saint paul', 'st paul', 'cincinnati', 'pittsburgh'];
+        const hasIrrelevantCity = irrelevantCities.some(city => kw.includes(city));
+        
+        return (hasFoodType || hasNearMe || hasServiceKeywords || hasRestaurantTerms) && !hasIrrelevantCity;
+      });
       
-      console.log(`🔍 COMPETITIVE OPPORTUNITIES API: Found ${keywords.length} opportunity keywords, returning ${limitedKeywords.length} (limit: ${limit}) for ${domain}`);
-      console.log(`🔍 COMPETITIVE OPPORTUNITIES API: Sample opportunity keyword:`, limitedKeywords[0] || 'No keywords');
+      // Apply the requested limit to the filtered keywords
+      const limitedKeywords = relevantKeywords.slice(0, limit);
+      
+      console.log(`🔍 COMPETITIVE OPPORTUNITIES API: Found ${keywords.length} total keywords, ${relevantKeywords.length} relevant, returning ${limitedKeywords.length} (limit: ${limit}) for ${domain}`);
+      console.log(`🔍 COMPETITIVE OPPORTUNITIES API: Sample relevant keyword:`, limitedKeywords[0] || 'No relevant keywords');
       return limitedKeywords;
 
     } catch (error) {
