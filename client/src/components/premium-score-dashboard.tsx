@@ -619,11 +619,11 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                   {/* Left Side - Dropdown Summary */}
                   <div className="space-y-6">
-                    {/* Where You're Going Wrong */}
+                    {/* Missing Ingredients? */}
                     <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
                       <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
                         <AlertCircle className="w-5 h-5 text-[#5F5FFF]" />
-                        Where You're Going Wrong
+                        Missing Ingredients?
                       </h3>
                       <div className="space-y-3">
                         {/* High Priority Issues */}
@@ -933,11 +933,11 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
               {/* Social Tab Content */}
               {activeTab === 'social' && (
                 <div className="space-y-6">
-                  {/* Where You're Going Wrong */}
+                  {/* Missing Ingredients? */}
                   <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
                     <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
                       <AlertCircle className="w-5 h-5 text-[#5F5FFF]" />
-                      Where You're Going Wrong
+                      Missing Ingredients?
                     </h3>
                     <div className="space-y-3">
                       {/* High Priority Issues */}
@@ -1208,11 +1208,11 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
               {/* Local Tab Content */}
               {activeTab === 'local' && (
                 <div className="space-y-6">
-                  {/* Where You're Going Wrong */}
+                  {/* Missing Ingredients? */}
                   <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
                     <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
                       <AlertCircle className="w-5 h-5 text-[#5F5FFF]" />
-                      Where You're Going Wrong
+                      Missing Ingredients?
                     </h3>
                     <div className="space-y-3">
                       {/* High Priority Issues */}
@@ -1337,11 +1337,11 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
               {/* Reviews Tab Content */}
               {activeTab === 'reviews' && (
                 <div className="space-y-6">
-                  {/* Where You're Going Wrong */}
+                  {/* Missing Ingredients? */}
                   <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
                     <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
                       <AlertCircle className="w-5 h-5 text-[#5F5FFF]" />
-                      Where You're Going Wrong
+                      Missing Ingredients?
                     </h3>
                     <div className="space-y-3">
                       {/* High Priority Issues */}
