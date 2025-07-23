@@ -207,10 +207,11 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
       (businessProfile.totalReviews ? Math.min(businessProfile.totalReviews / 10, 30) : 0)
     );
     
-    // Reviews Score (based on rating and review count)
+    // Reviews Score (based on rating and review count from reviewsAnalysis)
+    const reviewsAnalysis = scanResult.reviewsAnalysis || {};
     const reviewsScore = Math.round(
-      (businessProfile.rating || 0) * 15 + 
-      (businessProfile.totalReviews ? Math.min(businessProfile.totalReviews / 20, 25) : 0)
+      (reviewsAnalysis.averageRating || businessProfile.rating || 0) * 15 + 
+      (reviewsAnalysis.totalReviews || businessProfile.totalReviews ? Math.min((reviewsAnalysis.totalReviews || businessProfile.totalReviews) / 20, 25) : 0)
     );
     
     // Overall Score (average of all 4 categories)
@@ -1412,11 +1413,15 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                   <div className="pt-4 border-t border-gray-200 space-y-3">
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-gray-600">Overall Rating</span>
-                      <span className="font-bold text-lg text-[#FCD34D]">{scanResult.businessProfile?.rating || 0}/5</span>
+                      <span className="font-bold text-lg text-[#FCD34D]">
+                        {scanResult.reviewsAnalysis?.averageRating || scanResult.businessProfile?.rating || 0}/5
+                      </span>
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-gray-600">Review Volume</span>
-                      <span className="font-medium">{scanResult.businessProfile?.totalReviews || 0}</span>
+                      <span className="font-medium">
+                        {scanResult.reviewsAnalysis?.totalReviews || scanResult.businessProfile?.totalReviews || 0}
+                      </span>
                     </div>
                   </div>
 
