@@ -1,23 +1,24 @@
-# Restaurant Scanner - Professional Analysis Tool
+# Restaurant Scanner - AI-Powered Marketing Intelligence Platform
 
-A comprehensive restaurant website performance analysis platform that provides instant, actionable insights through advanced AI-driven scanning, competitive intelligence, and real-time monitoring technologies.
+The Restaurant Scanner is an AI-powered marketing intelligence platform that analyzes any restaurant's complete digital presence in under 30 seconds, providing actionable insights across search rankings, social media, website performance, local SEO, and customer reviews. It uses real data from Google Places, DataForSEO, and other authentic sources to identify exactly where restaurants are losing customers online and provides prioritized recommendations to fix these issues.
 
 ## 🚀 Features
 
 ### Core Functionality
-- **Restaurant Search**: Google Places API integration for accurate restaurant discovery
-- **Performance Analysis**: Lighthouse-powered website auditing with fallback systems
-- **SEO Intelligence**: SERP API integration for keyword rankings and competitive analysis
-- **Mobile Experience**: Puppeteer-based mobile screenshot capture and responsiveness testing
-- **Reviews Analysis**: Comprehensive sentiment analysis with Zembratech integration
-- **Competitor Analysis**: Location-based competitor discovery and benchmarking
+- **30-Second Analysis**: Complete digital presence audit in under 30 seconds
+- **Restaurant Discovery**: Google Places API integration for accurate restaurant search
+- **Search Performance**: Real DataForSEO rankings showing where restaurants appear in Google searches
+- **Social Media Detection**: Finds Facebook and Instagram pages across multiple URL formats
+- **Website Analysis**: Live performance testing with Google PageSpeed Insights and mobile screenshots
+- **Review Intelligence**: AI-powered analysis of up to 100 customer reviews with sentiment breakdown
+- **Competitive Analysis**: Identifies local competitors and shows "where your competition is winning"
 
-### Advanced Analytics
-- **Real-time Scanning**: Live progress updates with streaming results
-- **Multi-source Data**: Google Places, Lighthouse, SERP API, Puppeteer, Zembratech
-- **Visual Dashboards**: Interactive charts and gauges for performance metrics
-- **Actionable Insights**: Prioritized recommendations with impact and effort estimates
-- **Professional UI**: Boostly-branded interface with responsive design
+### Advanced Intelligence
+- **Real-time Progress**: Live scanning updates with visual progress indicators
+- **Authentic Data Only**: No mock data - uses real Google Places, DataForSEO, and OpenAI APIs
+- **AI-Powered Insights**: OpenAI GPT-4o analyzes customer reviews and generates business recommendations
+- **Visual Proof**: Screenshots of actual Google search results showing restaurant rankings
+- **Prioritized Actions**: High/Medium/Low priority recommendations with specific solutions
 
 ## 🛠 Technology Stack
 
@@ -37,11 +38,11 @@ A comprehensive restaurant website performance analysis platform that provides i
 - **Multi-API integration** architecture
 
 ### APIs & Services
-- **Google Places API** - Restaurant search and business details
-- **Lighthouse** - Website performance auditing
-- **SERP API** - Keyword rankings and competitor analysis
-- **Puppeteer** - Mobile screenshot capture
-- **Zembratech** - Reviews analysis and sentiment processing
+- **Google Places API** - Restaurant search, business details, photos, and reviews
+- **DataForSEO** - Real search rankings, keyword research, and SEO analysis
+- **OpenAI GPT-4o** - Customer review sentiment analysis and business insights
+- **Google PageSpeed Insights** - Website performance and mobile experience testing
+- **Selenium WebDriver** - Google search result screenshots and ranking verification
 
 ## 🔧 Setup Instructions
 
@@ -67,15 +68,16 @@ A comprehensive restaurant website performance analysis platform that provides i
    Create a `.env` file in the root directory:
    ```env
    # Required API Keys
-   GOOGLE_API_KEY=your_google_api_key
    GOOGLE_PLACES_API_KEY=your_google_places_api_key
-   PAGESPEED_API_KEY=your_pagespeed_api_key
-   SERP_API_KEY=your_serp_api_key
-   ZEMBRATECH_API_KEY=your_zembratech_api_key
+   DATAFORSEO_LOGIN=your_dataforseo_login
+   DATAFORSEO_PASSWORD=your_dataforseo_password
+   OPENAI_API_KEY=your_openai_api_key
    
-   # Optional: DataForSEO (alternative provider)
-   DATAFOREO_LOGIN=your_dataforeo_login
-   DATAFOREO_PASSWORD=your_dataforeo_password
+   # Optional: Database (uses in-memory storage if not provided)
+   DATABASE_URL=postgresql://user:password@localhost:5432/restaurant_scanner
+   
+   # Optional: Port configuration
+   PORT=5000
    ```
 
 4. **Start the application**
@@ -87,20 +89,21 @@ A comprehensive restaurant website performance analysis platform that provides i
 
 ### API Key Setup
 
-#### Google APIs
+#### Google Places API
 1. Go to [Google Cloud Console](https://console.cloud.google.com/)
 2. Create a new project or select existing
-3. Enable Google Places API and PageSpeed Insights API
-4. Create credentials and copy the API keys
+3. Enable Google Places API
+4. Create credentials and copy the API key
 
-#### SERP API
-1. Sign up at [SerpApi](https://serpapi.com/)
-2. Get your API key from the dashboard
+#### DataForSEO
+1. Sign up at [DataForSEO](https://dataforseo.com/)
+2. Get your login credentials from the dashboard
+3. Add login and password to environment variables
+
+#### OpenAI
+1. Sign up at [OpenAI Platform](https://platform.openai.com/)
+2. Create an API key in your account settings
 3. Add to environment variables
-
-#### Zembratech
-1. Contact Zembratech for API access
-2. Add credentials to environment variables
 
 ## 📁 Project Structure
 
@@ -122,20 +125,19 @@ restaurant-scanner/
 
 ## 🎯 Usage
 
-### Basic Scanning
-1. **Search Restaurant**: Enter restaurant name in the search field
-2. **Select Location**: Choose from Google Places results
-3. **Start Scan**: Click "Analyze Website" to begin comprehensive analysis
-4. **View Results**: Navigate through tabs for detailed insights
+### How It Works
+1. **Enter Restaurant Name**: Type any restaurant name in the search field
+2. **Select from Results**: Choose from Google Places search results
+3. **30-Second Analysis**: Watch real-time progress as the system analyzes 5 key areas
+4. **Get Action Plan**: View prioritized recommendations with specific solutions
 
-### Analysis Tabs
-- **Overview**: Overall scores and key metrics
-- **Keywords**: Search rankings and keyword opportunities
-- **SEO**: Technical SEO analysis and recommendations
-- **Mobile**: Mobile experience and responsiveness
-- **Competitors**: Local competitor analysis and benchmarking
-- **Reviews**: Sentiment analysis and reputation insights
-- **Actions**: Prioritized recommendations with impact estimates
+### Dashboard Sections
+- **Overall Score**: Comprehensive digital health score with AI explanations
+- **Search Performance**: Google ranking positions and keyword opportunities
+- **Social Presence**: Facebook/Instagram detection and engagement analysis
+- **Local SEO**: Google Business Profile optimization and competitive positioning
+- **Website Performance**: Speed, mobile experience, and technical issues
+- **Reviews Analysis**: AI-powered sentiment analysis of customer feedback
 
 ### Professional Features
 - **Real-time Progress**: Live scanning updates with streaming results
@@ -175,11 +177,12 @@ Ensure all required API keys are set in production environment.
 
 ## 📈 Recent Updates
 
-- **July 2025**: Added comprehensive reviews analysis with sentiment breakdown
-- **July 2025**: Implemented fallback metrics system for improved reliability
-- **July 2025**: Enhanced competitor analysis with location-based discovery
-- **July 2025**: Added real-time review streaming during scan process
-- **July 2025**: Integrated professional UI with Boostly branding
+- **July 23, 2025**: Fixed ES module compatibility issues for deployment readiness
+- **July 22, 2025**: Added competitive opportunity analysis showing where competition outranks restaurant
+- **July 22, 2025**: Enhanced DataForSEO integration with website URL validation and keyword limits
+- **July 22, 2025**: Implemented MCP integration with authentic DataForSEO ranked keywords API
+- **July 22, 2025**: Fixed Instagram detection workflow with timeout and selector improvements
+- **July 22, 2025**: Added OpenAI customer mood analysis with 100-review processing
 
 ## 🤝 Contributing
 
