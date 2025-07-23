@@ -101,10 +101,12 @@ export class DynamicKeywordService {
       'night_club': 'bar'
     };
     
-    // Check Google Places types first
-    for (let type of googlePlacesTypes) {
-      if (cuisineMap[type]) {
-        return cuisineMap[type];
+    // Check Google Places types first (with safety check)
+    if (googlePlacesTypes && Array.isArray(googlePlacesTypes)) {
+      for (let type of googlePlacesTypes) {
+        if (cuisineMap[type]) {
+          return cuisineMap[type];
+        }
       }
     }
     
@@ -396,6 +398,10 @@ export class DynamicKeywordService {
     try {
       // Extract location and cuisine data
       const { city, state } = this.extractLocationData(businessProfile.formatted_address);
+      
+      console.log(`🔍 DEBUG: businessProfile.types =`, businessProfile.types, typeof businessProfile.types);
+      console.log(`🔍 DEBUG: businessProfile.name =`, businessProfile.name);
+      
       const cuisine = this.extractCuisine(businessProfile.types, businessProfile.name);
 
       console.log(`🔍 Dynamic keyword analysis for ${businessProfile.name} - ${cuisine} in ${city}, ${state}`);
@@ -410,7 +416,9 @@ export class DynamicKeywordService {
       }
 
       // Call DataForSEO API with dynamic parameters
+      console.log(`🔍 DEBUG: Calling DataForSEO API with website: ${businessProfile.website}, city: ${city}, cuisine: ${cuisine}, state: ${state}`);
       const apiResults = await this.callDataForSeoAPI(businessProfile.website, city, cuisine, state);
+      console.log(`🔍 DEBUG: DataForSEO API returned:`, apiResults.length, 'results');
       
       // Process results
       const { rankedKeywords, competitiveOpportunityKeywords } = this.processKeywordResults(apiResults);
