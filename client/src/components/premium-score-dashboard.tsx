@@ -920,7 +920,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                             </button>
                             
                             <p className="text-xs text-white/70 leading-relaxed">
-                              This opens a live Google search. Look for your restaurant in the results to see where you rank compared to competitors.
+                              This opens an unbiased Google search (incognito mode) showing non-personalized results. Look for your restaurant to see your true ranking compared to competitors.
                             </p>
                           </div>
                         );
@@ -1639,7 +1639,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                 <div>
                   <h3 className="font-bold text-lg text-gray-800">Where You Rank on Google</h3>
                   <p className="text-sm text-gray-600">
-                    Live Google search results for "{(() => {
+                    Unbiased search results (incognito mode) for "{(() => {
                       const { foodType, city, state } = getSearchTerms();
                       return `${foodType} ${city} ${state}`.trim();
                     })()}"
@@ -1660,10 +1660,11 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                 src={(() => {
                   const { foodType, city, state } = getSearchTerms();
                   const searchQuery = `${foodType} ${city} ${state}`.trim();
-                  return `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}&igu=1`;
+                  // Use incognito/private browsing parameters for unbiased search results
+                  return `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}&pws=0&gl=us&hl=en&safe=off&filter=0&pf=p&source=hp`;
                 })()}
                 className="w-full h-full border-0"
-                title="Google Search Results"
+                title="Google Search Results (Incognito Mode)"
                 sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
               />
             </div>

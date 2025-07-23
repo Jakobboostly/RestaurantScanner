@@ -76,6 +76,13 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 23, 2025. Implemented Google Incognito mode for "Where You Rank" search functionality:
+  - **Enhanced search accuracy** - Updated Google search iframe to use incognito/private browsing parameters for unbiased results
+  - **Removed personalization bias** - Search results now use `pws=0` (personalized web search disabled) and other parameters to ensure consistent, non-personalized rankings
+  - **Improved parameter configuration** - Added `gl=us`, `hl=en`, `safe=off`, `filter=0`, `pf=p`, and `source=hp` for standardized search results
+  - **Updated user messaging** - Modal header and button description now clearly indicate "incognito mode" and "unbiased search results"
+  - **Enhanced competitor analysis** - Restaurant owners now see true ranking positions without Google's algorithmic personalization affecting results
+  - **Professional search experience** - iframe title updated to "Google Search Results (Incognito Mode)" for transparency
 - July 23, 2025. Updated user interface terminology to be more restaurant-themed:
   - **Changed "Where You're Going Wrong" to "Missing Ingredients"** across all dashboard tabs (Search, Social, Local, Reviews)
   - Enhanced restaurant industry alignment with ingredient metaphor for missing marketing elements
