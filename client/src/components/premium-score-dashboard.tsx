@@ -75,7 +75,6 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
   });
   
   const [activeTab, setActiveTab] = useState<'search' | 'social' | 'local' | 'reviews'>('search');
-  const [showEmbeddedSearch, setShowEmbeddedSearch] = useState(false);
   
   // State for mood analysis polling
   const [moodAnalysis, setMoodAnalysis] = useState<any>(scanResult.reviewsAnalysis?.customerMoodAnalysis || null);
@@ -912,7 +911,13 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                             </div>
                             
                             <button 
-                              onClick={() => setShowEmbeddedSearch(true)}
+                              onClick={() => {
+                                const { foodType, city, state } = getSearchTerms();
+                                const searchQuery = `${foodType} ${city} ${state}`.trim();
+                                // Open Google search in new tab with incognito parameters for unbiased results
+                                const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}&pws=0&gl=us&hl=en&safe=off&filter=0&pf=p&source=hp`;
+                                window.open(searchUrl, '_blank');
+                              }}
                               className="inline-flex items-center justify-center w-full bg-white text-[#5F5FFF] font-bold py-4 px-6 rounded-lg hover:bg-white/95 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl group"
                             >
                               <span className="mr-3">Where You Rank</span>
@@ -920,7 +925,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                             </button>
                             
                             <p className="text-xs text-white/70 leading-relaxed">
-                              This opens an unbiased Google search (incognito mode) showing non-personalized results. Look for your restaurant to see your true ranking compared to competitors.
+                              Opens an unbiased Google search in a new tab (incognito parameters) showing non-personalized results. Look for your restaurant to see your true ranking compared to competitors.
                             </p>
                           </div>
                         );
@@ -1626,66 +1631,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
           </Card>
         </motion.div>
       </div>
-      {/* Embedded Google Search Modal */}
-      {showEmbeddedSearch && (
-        <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="bg-white rounded-xl shadow-2xl w-full max-w-6xl h-[80vh] flex flex-col">
-            {/* Modal Header */}
-            <div className="flex items-center justify-between p-4 border-b border-gray-200">
-              <div className="flex items-center gap-3">
-                <div className="p-2 bg-[#5F5FFF] rounded-lg">
-                  <Search className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg text-gray-800">Where You Rank on Google</h3>
-                  <p className="text-sm text-gray-600">
-                    Unbiased search results (incognito mode) for "{(() => {
-                      const { foodType, city, state } = getSearchTerms();
-                      return `${foodType} ${city} ${state}`.trim();
-                    })()}"
-                  </p>
-                </div>
-              </div>
-              <button
-                onClick={() => setShowEmbeddedSearch(false)}
-                className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
-              >
-                <X className="w-5 h-5 text-gray-500" />
-              </button>
-            </div>
-            
-            {/* Embedded Google Search */}
-            <div className="flex-1 overflow-hidden">
-              <iframe
-                src={(() => {
-                  const { foodType, city, state } = getSearchTerms();
-                  const searchQuery = `${foodType} ${city} ${state}`.trim();
-                  // Use incognito/private browsing parameters for unbiased search results
-                  return `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}&pws=0&gl=us&hl=en&safe=off&filter=0&pf=p&source=hp`;
-                })()}
-                className="w-full h-full border-0"
-                title="Google Search Results (Incognito Mode)"
-                sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
-              />
-            </div>
-            
-            {/* Modal Footer */}
-            <div className="p-4 border-t border-gray-200 bg-gray-50">
-              <div className="flex items-center justify-between">
-                <div className="text-sm text-gray-600">
-                  Look for <span className="font-semibold text-[#5F5FFF]">{restaurantName}</span> in the search results to see your ranking
-                </div>
-                <button
-                  onClick={() => setShowEmbeddedSearch(false)}
-                  className="px-4 py-2 bg-[#5F5FFF] text-white rounded-lg hover:bg-[#4F4FEF] transition-colors"
-                >
-                  Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
+
     </div>
   );
 }
