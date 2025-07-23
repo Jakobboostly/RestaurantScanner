@@ -720,7 +720,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                               );
                             }
                             
-                            return competitiveKeywords.slice(0, 8).map((keyword, index) => (
+                            return competitiveKeywords.slice(0, 10).map((keyword, index) => (
                               <div key={index} className="flex justify-between items-center text-xs">
                                 <span className="text-gray-700 flex-1 truncate pr-2">
                                   "{keyword.keyword || keyword}"
