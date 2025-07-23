@@ -185,6 +185,13 @@ export class DataForSeoRankedKeywordsService {
         ];
         const hasLowValue = lowValueTerms.some(term => kw.includes(term));
         
+        // EXCLUDE confusing brand variations that don't match the actual restaurant
+        const confusingBrandTerms = [
+          'piazza on the pier', 'pier 39', 'pier one', 'pier imports', 'pier 1',
+          'fishermans wharf', 'san francisco pier', 'ferry building'
+        ];
+        const hasConfusingBrand = confusingBrandTerms.some(term => kw.includes(term));
+        
         // INCLUDE high-value competitive opportunities
         const isHighValueKeyword = (
           // Food types (huge opportunities)
@@ -206,7 +213,7 @@ export class DataForSeoRankedKeywordsService {
           kw.includes('reviews') || kw.includes('rating') || kw.includes('recommended')
         );
         
-        return isHighValueKeyword && !hasDemographic && !hasLowValue;
+        return isHighValueKeyword && !hasDemographic && !hasLowValue && !hasConfusingBrand;
       });
       
       // Apply the requested limit to the filtered keywords
