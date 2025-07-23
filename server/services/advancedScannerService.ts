@@ -1,6 +1,5 @@
 import { GoogleBusinessService } from './googleBusinessService.js';
-
-import { DataForSeoRankedKeywordsService } from './dataForSeoRankedKeywordsService.js';
+import { DynamicKeywordService } from './dynamicKeywordService.js';
 import { AIRecommendationService } from './aiRecommendationService.js';
 import { GoogleReviewsService } from './googleReviewsService.js';
 import { ApifyReviewsService } from './apifyReviewsService.js';
@@ -39,7 +38,7 @@ export interface EnhancedScanResult extends ScanResult {
 
 export class AdvancedScannerService {
   private googleBusinessService: GoogleBusinessService;
-  private rankedKeywordsService: DataForSeoRankedKeywordsService;
+  private dynamicKeywordService: DynamicKeywordService;
 
   private aiRecommendationService: AIRecommendationService;
   private googleReviewsService: GoogleReviewsService;
@@ -70,7 +69,7 @@ export class AdvancedScannerService {
     apifyApiKey?: string
   ) {
     this.googleBusinessService = new GoogleBusinessService(googleApiKey);
-    this.rankedKeywordsService = new DataForSeoRankedKeywordsService(dataForSeoLogin, dataForSeoPassword);
+    this.dynamicKeywordService = new DynamicKeywordService();
     this.aiRecommendationService = new AIRecommendationService();
     this.googleReviewsService = new GoogleReviewsService(googleApiKey);
     this.apifyReviewsService = apifyApiKey ? new ApifyReviewsService(apifyApiKey) : undefined;
@@ -218,40 +217,30 @@ export class AdvancedScannerService {
         }
       }
       
-      // Get authentic ranked keywords using DataForSEO ranked keywords API
-      console.log(`🔍 ADVANCED SCANNER: Getting real ranked keywords for domain: ${actualDomain}`);
+      // Get dynamic keyword rankings using the new location-aware system
+      console.log(`🔍 ADVANCED SCANNER: Getting dynamic keyword rankings based on restaurant location and cuisine`);
       
-      const rankedKeywordsPromise = Promise.race([
-        this.rankedKeywordsService.getRankedKeywords(actualDomain, 'United States', 'en', 10),
-        new Promise((_, reject) => 
-          setTimeout(() => reject(new Error('Ranked keywords timeout')), 8000)
-        )
-      ]).catch(error => {
-        console.error('Ranked keywords failed:', error);
-        return [];
-      });
+      let dynamicKeywordData = { rankedKeywords: [], competitiveOpportunityKeywords: [], locationData: { city: 'Unknown', state: 'Unknown', cuisine: 'restaurant' } };
       
-      const rankedKeywords = await rankedKeywordsPromise as any[];
-      console.log(`Found ${rankedKeywords.length} ranked keywords for ${actualDomain}`);
+      if (businessProfile) {
+        try {
+          const dynamicKeywordPromise = Promise.race([
+            this.dynamicKeywordService.getDynamicKeywordRankings(businessProfile),
+            new Promise((_, reject) => 
+              setTimeout(() => reject(new Error('Dynamic keyword analysis timeout')), 8000)
+            )
+          ]);
+          
+          dynamicKeywordData = await dynamicKeywordPromise as any;
+          console.log(`Found ${dynamicKeywordData.rankedKeywords.length} ranked keywords and ${dynamicKeywordData.competitiveOpportunityKeywords.length} competitive opportunities`);
+          console.log(`Location data: ${dynamicKeywordData.locationData.cuisine} in ${dynamicKeywordData.locationData.city}, ${dynamicKeywordData.locationData.state}`);
+        } catch (error) {
+          console.error('Dynamic keyword analysis failed:', error);
+        }
+      }
       
-      // Get competitive opportunity keywords (ranking 6+) - "Where your competition is winning"
-      console.log(`🔍 ADVANCED SCANNER: Getting competitive opportunity keywords (rank 6+) for domain: ${actualDomain}`);
-      
-      const competitiveOpportunityPromise = Promise.race([
-        this.rankedKeywordsService.getCompetitiveOpportunityKeywords(actualDomain, 'United States', 'en', 5),
-        new Promise((_, reject) => 
-          setTimeout(() => reject(new Error('Competitive opportunity keywords timeout')), 8000)
-        )
-      ]).catch(error => {
-        console.error('Competitive opportunity keywords failed:', error);
-        return [];
-      });
-      
-      const competitiveOpportunityKeywords = await competitiveOpportunityPromise as any[];
-      console.log(`Found ${competitiveOpportunityKeywords.length} competitive opportunity keywords for ${actualDomain}`);
-      
-      // Process the authentic ranked keywords
-      const processedKeywords = rankedKeywords.map((keyword: any) => ({
+      // Process the dynamic ranked keywords
+      const processedKeywords = dynamicKeywordData.rankedKeywords.map((keyword: any) => ({
         keyword: keyword.keyword,
         position: keyword.position,
         searchVolume: keyword.searchVolume,
@@ -259,7 +248,7 @@ export class AdvancedScannerService {
         intent: keyword.intent,
         cpc: keyword.cpc,
         competition: keyword.competition,
-        opportunity: keyword.position <= 10 ? 100 : (keyword.position <= 20 ? 75 : 50),
+        opportunity: keyword.opportunity,
         url: keyword.url,
         title: keyword.title,
         description: keyword.description,
@@ -270,7 +259,7 @@ export class AdvancedScannerService {
       }));
       
       // Process competitive opportunity keywords
-      processedCompetitiveKeywords = competitiveOpportunityKeywords.map((keyword: any) => ({
+      processedCompetitiveKeywords = dynamicKeywordData.competitiveOpportunityKeywords.map((keyword: any) => ({
         keyword: keyword.keyword,
         position: keyword.position,
         searchVolume: keyword.searchVolume,

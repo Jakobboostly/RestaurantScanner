@@ -76,6 +76,19 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 23, 2025. Implemented dynamic keyword analysis system replacing static DataForSEO keyword functionality:
+  - **Created DynamicKeywordService** - new location-aware keyword analysis using Google Places data to generate city/cuisine-specific keywords
+  - **Enhanced cuisine mapping** - comprehensive mapping from Google Places business types to searchable cuisine terms with intelligent fallbacks
+  - **Dynamic location extraction** - automatically extracts city/state from Google Places formatted_address for location-specific keyword targeting
+  - **Replaced static keyword analysis** - removed dataForSeoRankedKeywordsService.ts and integrated dynamic keyword generation into advancedScannerService.ts
+  - **Smart keyword generation** - creates location-specific keywords like "pizza provo", "best mexican austin" instead of generic restaurant terms
+  - **Multi-tier fallback system** - Google Places types → business name parsing → generic restaurant fallback ensures no restaurant gets missed
+  - **Authentic ranking data** - uses DataForSEO ranked keywords API with dynamic city/cuisine filters for real ranking positions
+  - **Competitive opportunity analysis** - identifies keywords ranking position 6+ where competitors are winning
+  - **40+ cuisine types supported** - handles everything from pizza/burger to specialized cuisines like ramen/pho/mediterranean
+  - **Search volume filtering** - only shows keywords with meaningful search volume (>100) for commercial viability
+  - **Intent classification** - categorizes keywords as local/commercial/informational for strategic insights
+  - **Removed test files** - cleaned up screenshot-test.tsx and other development test files for cleaner codebase
 - July 23, 2025. Fixed ES module import issues for deployment compatibility:  
   - **Fixed selenium-webdriver chrome imports** - Updated import statements from `'selenium-webdriver/chrome'` to `'selenium-webdriver/chrome.js'` for proper ES module compatibility
   - **Enhanced Chrome binary path detection** - Implemented flexible Chrome binary detection for different deployment environments including Cloud Run, standard Linux, and Replit Nix
