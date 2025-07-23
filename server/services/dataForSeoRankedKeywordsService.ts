@@ -179,6 +179,15 @@ export class DataForSeoRankedKeywordsService {
         ];
         const hasLocation = locationTerms.some(location => kw.includes(location));
         
+        // EXCLUDE demographic terms that are inappropriate for business recommendations
+        const demographicTerms = [
+          'black owned', 'white owned', 'asian owned', 'hispanic owned', 'latino owned', 'native owned',
+          'black', 'white', 'asian', 'hispanic', 'latino', 'native', 'indigenous',
+          'african american', 'caucasian', 'chinese american', 'mexican american',
+          'minority owned', 'women owned', 'female owned', 'male owned'
+        ];
+        const hasDemographic = demographicTerms.some(term => kw.includes(term));
+        
         // Include high-value competitive keywords that are actionable
         
         // 1. Always include "near me" searches - these are crucial for local restaurants
@@ -213,7 +222,7 @@ export class DataForSeoRankedKeywordsService {
           kw.includes('food') || kw.includes('menu') || kw.includes('delivery')
         );
         
-        return isNearMe || isBroadFoodKeyword || isServiceKeyword || isFoodServiceCombo || isBrandKeyword;
+        return (isNearMe || isBroadFoodKeyword || isServiceKeyword || isFoodServiceCombo || isBrandKeyword) && !hasDemographic;
       });
       
       // Apply the requested limit to the filtered keywords
