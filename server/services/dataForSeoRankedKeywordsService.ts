@@ -200,7 +200,15 @@ export class DataForSeoRankedKeywordsService {
       const limitedKeywords = relevantKeywords.slice(0, limit);
       
       console.log(`🔍 COMPETITIVE OPPORTUNITIES API: Found ${keywords.length} total keywords, ${relevantKeywords.length} relevant, returning ${limitedKeywords.length} (limit: ${limit}) for ${domain}`);
+      console.log(`🔍 COMPETITIVE OPPORTUNITIES API: Filtered out ${keywords.length - relevantKeywords.length} location-based keywords`);
       console.log(`🔍 COMPETITIVE OPPORTUNITIES API: Sample relevant keyword:`, limitedKeywords[0] || 'No relevant keywords');
+      
+      // Log examples of what was filtered out for debugging
+      const filteredOut = keywords.filter(k => !relevantKeywords.includes(k)).slice(0, 3);
+      if (filteredOut.length > 0) {
+        console.log(`🔍 COMPETITIVE OPPORTUNITIES API: Examples of filtered out keywords:`, filteredOut.map(k => k.keyword));
+      }
+      
       return limitedKeywords;
 
     } catch (error) {
