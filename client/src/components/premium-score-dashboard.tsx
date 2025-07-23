@@ -1139,8 +1139,27 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                       <span className="text-sm text-gray-600">Key Platforms</span>
                       <span className="font-bold text-lg text-[#5F5FFF]">
                         {((scanResult.socialMediaLinks?.facebook ? 1 : 0) + 
-                          (scanResult.socialMediaLinks?.instagram ? 1 : 0))}/2
+                          (scanResult.socialMediaLinks?.instagram ? 1 : 0) +
+                          (scanResult.businessProfile?.website ? 1 : 0))}/3
                       </span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-gray-600">Website URL</span>
+                      <div className="flex items-center gap-2">
+                        <span className={scanResult.businessProfile?.website ? "text-[#5F5FFF]" : "text-gray-400"}>
+                          {scanResult.businessProfile?.website ? "✓ Active" : "✗ Missing"}
+                        </span>
+                        {scanResult.businessProfile?.website && (
+                          <a 
+                            href={scanResult.businessProfile.website} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-xs text-blue-600 hover:underline"
+                          >
+                            View
+                          </a>
+                        )}
+                      </div>
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-gray-600">Facebook</span>
