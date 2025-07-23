@@ -14,16 +14,19 @@
 Copy and run these commands in the Replit shell:
 
 ```bash
-# Add your GitHub repository as origin (replace YOUR_USERNAME)
-git remote add origin https://github.com/YOUR_USERNAME/restaurant-scanner.git
+# Set the correct remote URL for your new repository
+git remote set-url origin https://github.com/Jakobthompson15/restaurant-scanner.git
+
+# Verify the remote is set correctly
+git remote -v
 
 # Add all files to staging
 git add .
 
 # Commit with a descriptive message
-git commit -m "Initial commit: Restaurant Scanner v1.0 - Production ready"
+git commit -m "Initial commit: Restaurant Scanner v1.0 - Production ready AI-powered marketing intelligence platform"
 
-# Push to GitHub
+# Push to your GitHub repository
 git push -u origin main
 ```
 
