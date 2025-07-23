@@ -2412,6 +2412,23 @@ export class AdvancedScannerService {
       console.log('🔍 Enhanced social media detection starting...');
       console.log('📥 Manual Facebook URL provided:', manualFacebookUrl || 'None');
       
+      // Step 0: Get Apify social media data first
+      let apifySocialData = null;
+      if (placeId && this.apifyReviewsService) {
+        try {
+          console.log('🎯 Getting Apify social media data for comprehensive detection...');
+          const apifyResult = await this.apifyReviewsService.getGoogleReviews(placeId);
+          if (apifyResult.success && apifyResult.socialMedia) {
+            apifySocialData = apifyResult.socialMedia;
+            console.log(`🎯 Apify found ${Object.values(apifySocialData).flat().length} total social media links`);
+            if (apifySocialData.facebooks.length > 0) console.log(`Facebook via Apify: ${apifySocialData.facebooks[0]}`);
+            if (apifySocialData.instagrams.length > 0) console.log(`Instagram via Apify: ${apifySocialData.instagrams[0]}`);
+          }
+        } catch (error) {
+          console.error('Failed to get Apify social media data:', error);
+        }
+      }
+      
       // Use manual Facebook URL if provided, otherwise run detection
       let allSocialLinks = {};
       if (manualFacebookUrl) {
@@ -2427,7 +2444,8 @@ export class AdvancedScannerService {
           restaurantName,
           businessAddress,
           businessPhone,
-          placeId
+          placeId,
+          apifySocialData
         );
       }
       

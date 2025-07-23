@@ -9,7 +9,7 @@ export interface SocialMediaResult {
   platform: 'facebook' | 'instagram' | 'twitter' | 'youtube' | 'tiktok' | 'linkedin';
   name: string;
   confidence: 'high' | 'medium' | 'low';
-  source: 'website_scan' | 'google_places' | 'manual_input' | 'name_search' | 'meta_tags';
+  source: 'website_scan' | 'google_places' | 'manual_input' | 'name_search' | 'meta_tags' | 'apify_contacts';
   verified: boolean;
 }
 
@@ -20,6 +20,15 @@ export interface SocialMediaLinks {
   youtube?: string;
   tiktok?: string;
   linkedin?: string;
+}
+
+export interface ApifySocialMediaData {
+  facebooks: string[];
+  instagrams: string[];
+  twitters: string[];
+  youtubes: string[];
+  linkedIns: string[];
+  tiktoks: string[];
 }
 
 export class EnhancedSocialMediaDetector {
@@ -40,12 +49,52 @@ export class EnhancedSocialMediaDetector {
     businessName: string,
     address?: string,
     phone?: string,
-    placeId?: string
+    placeId?: string,
+    apifySocialData?: ApifySocialMediaData
   ): Promise<SocialMediaLinks> {
     const results: SocialMediaLinks = {};
     
-    // Step 1: Use enhanced Facebook detector with business override capability
-    console.log('🔍 Running enhanced Facebook detection with business override support...');
+    // Step 0: Check Apify scrapeContacts data first (highest priority)
+    if (apifySocialData) {
+      console.log('🎯 Step 0: Processing Apify scrapeContacts social media data...');
+      
+      if (apifySocialData.facebooks.length > 0) {
+        results.facebook = apifySocialData.facebooks[0];
+        console.log('✅ Facebook found via Apify:', results.facebook);
+      }
+      
+      if (apifySocialData.instagrams.length > 0) {
+        results.instagram = apifySocialData.instagrams[0];
+        console.log('✅ Instagram found via Apify:', results.instagram);
+      }
+      
+      if (apifySocialData.twitters.length > 0) {
+        results.twitter = apifySocialData.twitters[0];
+        console.log('✅ X (Twitter) found via Apify:', results.twitter);
+      }
+      
+      if (apifySocialData.youtubes.length > 0) {
+        results.youtube = apifySocialData.youtubes[0];
+        console.log('✅ YouTube found via Apify:', results.youtube);
+      }
+      
+      if (apifySocialData.linkedIns.length > 0) {
+        results.linkedin = apifySocialData.linkedIns[0];
+        console.log('✅ LinkedIn found via Apify:', results.linkedin);
+      }
+      
+      if (apifySocialData.tiktoks.length > 0) {
+        results.tiktok = apifySocialData.tiktoks[0];
+        console.log('✅ TikTok found via Apify:', results.tiktok);
+      }
+      
+      const foundPlatforms = Object.keys(results).length;
+      console.log(`🎯 Apify found ${foundPlatforms} social media platforms`);
+    }
+    
+    // Step 1: Use enhanced Facebook detector (only if not found via Apify)
+    if (!results.facebook) {
+      console.log('🔍 Step 1: Running enhanced Facebook detection with business override support...');
     try {
       const facebookResult = await this.enhancedFacebookDetector.detectFacebookPage(
         websiteUrl,
@@ -64,26 +113,33 @@ export class EnhancedSocialMediaDetector {
     } catch (error) {
       console.error('Enhanced Facebook detection failed:', error);
     }
+    } else {
+      console.log('✅ Facebook already found via Apify, skipping enhanced detection');
+    }
     
-    // Step 1.5: Use enhanced Instagram detector with comprehensive workflow
-    console.log('🔍 Running enhanced Instagram detection with comprehensive workflow...');
-    try {
-      const instagramResult = await this.enhancedInstagramDetector.detectInstagramPage(
-        websiteUrl,
-        businessName,
-        address,
-        phone,
-        placeId
-      );
-      
-      if (instagramResult) {
-        results.instagram = instagramResult.url;
-        console.log('✅ Enhanced Instagram detection successful:', instagramResult.url);
-      } else {
-        console.log('❌ Enhanced Instagram detection found no results');
+    // Step 1.5: Use enhanced Instagram detector (only if not found via Apify)
+    if (!results.instagram) {
+      console.log('🔍 Step 1.5: Running enhanced Instagram detection with comprehensive workflow...');
+      try {
+        const instagramResult = await this.enhancedInstagramDetector.detectInstagramPage(
+          websiteUrl,
+          businessName,
+          address,
+          phone,
+          placeId
+        );
+        
+        if (instagramResult) {
+          results.instagram = instagramResult.url;
+          console.log('✅ Enhanced Instagram detection successful:', instagramResult.url);
+        } else {
+          console.log('❌ Enhanced Instagram detection found no results');
+        }
+      } catch (error) {
+        console.error('Enhanced Instagram detection failed:', error);
       }
-    } catch (error) {
-      console.error('Enhanced Instagram detection failed:', error);
+    } else {
+      console.log('✅ Instagram already found via Apify, skipping enhanced detection');
     }
     
     // Step 2: Enhanced website scanning for other platforms (excluding Facebook and Instagram)
