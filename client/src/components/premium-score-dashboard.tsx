@@ -894,7 +894,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                         </div>
                         <h3 className="text-xl font-bold mb-2">See Where You Rank</h3>
                         <p className="text-white/90 text-sm leading-relaxed">
-                          Check your restaurant's position on Google for the search terms your customers actually use
+                          Check your restaurant's unbiased search ranking for the terms your customers actually use
                         </p>
                       </div>
                       
@@ -914,8 +914,8 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                               onClick={() => {
                                 const { foodType, city, state } = getSearchTerms();
                                 const searchQuery = `${foodType} ${city} ${state}`.trim();
-                                // Open Google search in new tab with incognito parameters for unbiased results
-                                const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}&pws=0&gl=us&hl=en&safe=off&filter=0&pf=p&source=hp`;
+                                // Use DuckDuckGo for truly unbiased, non-personalized search results
+                                const searchUrl = `https://duckduckgo.com/?q=${encodeURIComponent(searchQuery)}&ia=web`;
                                 window.open(searchUrl, '_blank');
                               }}
                               className="inline-flex items-center justify-center w-full bg-white text-[#5F5FFF] font-bold py-4 px-6 rounded-lg hover:bg-white/95 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl group"
@@ -925,7 +925,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                             </button>
                             
                             <p className="text-xs text-white/70 leading-relaxed">
-                              Opens an unbiased Google search in a new tab (incognito parameters) showing non-personalized results. Look for your restaurant to see your true ranking compared to competitors.
+                              Opens DuckDuckGo search in a new tab - no tracking, no personalization, no location bias. See your true ranking compared to competitors with completely unbiased results.
                             </p>
                           </div>
                         );

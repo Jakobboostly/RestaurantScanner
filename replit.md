@@ -76,14 +76,14 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
-- July 23, 2025. Implemented Google Incognito mode for "Where You Rank" search functionality:
-  - **Enhanced search accuracy** - Configured Google search with incognito/private browsing parameters for unbiased results
-  - **Removed personalization bias** - Search results now use `pws=0` (personalized web search disabled) and other parameters to ensure consistent, non-personalized rankings
-  - **Improved parameter configuration** - Added `gl=us`, `hl=en`, `safe=off`, `filter=0`, `pf=p`, and `source=hp` for standardized search results
-  - **Fixed iframe embedding issue** - Replaced problematic embedded iframe with new tab functionality since Google blocks iframe embedding for security
-  - **Enhanced user experience** - "Where You Rank" button now opens Google search in new tab with incognito parameters applied
-  - **Professional search experience** - Clear messaging indicates "unbiased search results" and "incognito parameters" for transparency
-  - **Improved competitor analysis** - Restaurant owners now see true ranking positions without Google's algorithmic personalization affecting results
+- July 23, 2025. Implemented DuckDuckGo for completely unbiased "Where You Rank" search functionality:
+  - **Eliminated all personalization** - Switched from Google to DuckDuckGo search engine which doesn't track users or personalize results
+  - **Removed location bias** - DuckDuckGo provides consistent search results regardless of user's physical location or search history
+  - **Enhanced search accuracy** - Restaurant owners now see truly unbiased rankings without Google's algorithmic personalization affecting results
+  - **Fixed Google limitations** - Resolved issues with Google's aggressive location detection and personalization that were showing biased results
+  - **Professional search experience** - Clear messaging explains DuckDuckGo provides "no tracking, no personalization, no location bias"
+  - **Improved competitor analysis** - Restaurant owners get authentic view of how their business appears in unbiased search results
+  - **Better user experience** - "Where You Rank" button opens DuckDuckGo in new tab with completely neutral search results
 - July 23, 2025. Updated user interface terminology to be more restaurant-themed:
   - **Changed "Where You're Going Wrong" to "Missing Ingredients"** across all dashboard tabs (Search, Social, Local, Reviews)
   - Enhanced restaurant industry alignment with ingredient metaphor for missing marketing elements
