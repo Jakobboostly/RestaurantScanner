@@ -170,14 +170,19 @@ export class DataForSeoRankedKeywordsService {
       const relevantKeywords = keywords.filter(keyword => {
         const kw = keyword.keyword.toLowerCase();
         
-        // EXCLUDE any location-specific keywords (cities, neighborhoods, states)
-        const locationTerms = [
-          // Major cities
-          'nyc', 'new york', 'los angeles', 'chicago', 'houston', 'phoenix', 'philadelphia', 'san antonio', 'san diego', 'dallas', 'austin', 'jacksonville', 'fort worth', 'columbus', 'charlotte', 'san francisco', 'indianapolis', 'seattle', 'denver', 'washington', 'boston', 'nashville', 'baltimore', 'oklahoma city', 'louisville', 'portland', 'las vegas', 'milwaukee', 'albuquerque', 'tucson', 'fresno', 'sacramento', 'mesa', 'kansas city', 'atlanta', 'omaha', 'colorado springs', 'raleigh', 'miami', 'virginia beach', 'oakland', 'minneapolis', 'tulsa', 'arlington', 'tampa', 'new orleans', 'wichita', 'cleveland', 'bakersfield', 'aurora', 'anaheim', 'honolulu', 'santa ana', 'riverside', 'corpus christi', 'lexington', 'stockton', 'henderson', 'saint paul', 'st paul', 'cincinnati', 'pittsburgh',
-          // Utah specific locations that aren't useful for competitive analysis
-          'utah', 'salt lake', 'provo', 'ogden', 'west valley', 'sandy', 'orem', 'west jordan', 'layton', 'taylorsville', 'murray', 'draper', 'bountiful', 'riverton', 'roy', 'spanish fork', 'pleasant grove', 'lehi', 'american fork', 'payson', 'springville', 'cedar city', 'st george', 'logan', 'tooele', 'park city', 'magna', 'kearns', 'millcreek', 'cottonwood heights', 'midvale', 'holladay', 'south jordan', 'herriman', 'eagle mountain', 'saratoga springs', 'vineyard', 'bluffdale', 'south salt lake', 'north salt lake', 'woods cross', 'clearfield', 'kaysville', 'farmington', 'centerville', 'clinton', 'sunset', 'north ogden', 'pleasant view', 'harrisville', 'washington terrace', 'south ogden', 'riverdale', 'syracuse', 'clearfield', 'west point', 'clinton', 'sunset', 'brigham city', 'tremonton', 'garland', 'corinne', 'willard', 'perry', 'honeyville', 'bear river city', 'mantua', 'paradise', 'hyrum', 'nibley', 'north logan', 'smithfield', 'richmond', 'lewiston', 'cornish', 'trenton', 'clarkston', 'newton', 'amalga', 'river heights', 'millville', 'providence', 'mendon', 'wellsville', 'cache', 'nob hill', 'downtown', 'midtown', 'uptown', 'eastside', 'westside', 'north', 'south', 'east', 'west'
+        // EXCLUDE specific cities/states that user doesn't want (too location-specific)
+        const specificLocationTerms = [
+          // Nebraska specific locations user wants to exclude
+          'gretna ne', 'gretna nebraska', 'council bluffs', 'bellevue ne', 'papillion ne', 'la vista ne',
+          'lincoln ne', 'omaha ne', 'kearney ne', 'fremont ne', 'grand island ne', 'hastings ne',
+          // Iowa specific locations 
+          'council bluffs iowa', 'council bluffs ia', 'des moines ia', 'cedar rapids ia', 'davenport ia', 'sioux city ia',
+          // Other specific city/state combinations that are too narrow
+          'salt lake city ut', 'provo ut', 'denver co', 'kansas city mo', 'wichita ks',
+          // Generic city terms that are too vague
+          'downtown', 'midtown', 'uptown', 'eastside', 'westside'
         ];
-        const hasLocation = locationTerms.some(location => kw.includes(location));
+        const hasSpecificLocation = specificLocationTerms.some(location => kw.includes(location));
         
         // EXCLUDE demographic terms that are inappropriate for business recommendations
         const demographicTerms = [
@@ -194,7 +199,7 @@ export class DataForSeoRankedKeywordsService {
         const isNearMe = kw.includes('near me');
         
         // 2. Include broad food type keywords (huge opportunity keywords)
-        const isBroadFoodKeyword = !hasLocation && (
+        const isBroadFoodKeyword = !hasSpecificLocation && (
           kw.includes('pizza') || kw.includes('burger') || kw.includes('chicken') || kw.includes('mexican') || 
           kw.includes('italian') || kw.includes('chinese') || kw.includes('sushi') || kw.includes('thai') || 
           kw.includes('indian') || kw.includes('mediterranean') || kw.includes('seafood') || kw.includes('steak') ||
@@ -203,21 +208,21 @@ export class DataForSeoRankedKeywordsService {
         );
         
         // 3. Include service keywords without location
-        const isServiceKeyword = !hasLocation && (
+        const isServiceKeyword = !hasSpecificLocation && (
           kw.includes('delivery') || kw.includes('takeout') || kw.includes('pickup') || 
           kw.includes('catering') || kw.includes('order') || kw.includes('menu') || 
           kw.includes('hours') || kw.includes('locations')
         );
         
         // 4. Include food + service combinations without location  
-        const isFoodServiceCombo = !hasLocation && (
+        const isFoodServiceCombo = !hasSpecificLocation && (
           (kw.includes('pizza') && (kw.includes('delivery') || kw.includes('takeout') || kw.includes('near'))) ||
           (kw.includes('burger') && (kw.includes('delivery') || kw.includes('takeout') || kw.includes('near'))) ||
           (kw.includes('chicken') && (kw.includes('delivery') || kw.includes('takeout') || kw.includes('near')))
         );
         
         // 5. Include brand keywords without location (competitive intelligence)
-        const isBrandKeyword = !hasLocation && (
+        const isBrandKeyword = !hasSpecificLocation && (
           kw.includes('pizza') || kw.includes('burger') || kw.includes('restaurant') || 
           kw.includes('food') || kw.includes('menu') || kw.includes('delivery')
         );
