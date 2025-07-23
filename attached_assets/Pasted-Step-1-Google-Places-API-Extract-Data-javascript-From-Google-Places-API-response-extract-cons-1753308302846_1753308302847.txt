@@ -1,0 +1,70 @@
+Step 1: Google Places API → Extract Data
+javascript// From Google Places API response, extract:
+const restaurantData = {
+  website: "slabpizza.com",
+  city: "Provo", 
+  state: "Utah",
+  name: "Slab Pizza",
+  cuisine: "Pizza" // or extract from business type
+}
+Step 2: Build Dynamic Keywords
+javascript// Generate location-based keywords dynamically
+const generateKeywords = (city, cuisine) => {
+  return [
+    `${cuisine.toLowerCase()} ${city.toLowerCase()}`,
+    `${cuisine.toLowerCase()} in ${city.toLowerCase()}`,
+    `best ${cuisine.toLowerCase()} ${city.toLowerCase()}`,
+    `${city.toLowerCase()} ${cuisine.toLowerCase()}`,
+    `${cuisine.toLowerCase()} near me ${city.toLowerCase()}`
+  ];
+};
+
+// Example output for Provo pizza place:
+// ["pizza provo", "pizza in provo", "best pizza provo", "provo pizza", "pizza near me provo"]
+Step 3: Dynamic API Call Template
+javascriptconst getDynamicKeywordRankings = (website, city, cuisine, state) => {
+  const apiCall = {
+    "target": website.replace('https://', '').replace('http://', ''),
+    "language_code": "en",
+    "location_name": state, // or "United States" for broader
+    "limit": 50,
+    "order_by": ["keyword_data.keyword_info.search_volume,desc"],
+    "filters": [
+      ["keyword_data.keyword", "like", `%${cuisine.toLowerCase()}%`],
+      "and",
+      ["keyword_data.keyword", "like", `%${city.toLowerCase()}%`],
+      "and", 
+      ["keyword_data.keyword_info.search_volume", ">", 100]
+    ]
+  };
+  
+  return fetch('https://api.dataforseo.com/v3/dataforseo_labs/google/ranked_keywords/live', {
+    method: 'POST',
+    headers: {
+      'Authorization': 'Basic YOUR_BASE64_ENCODED_CREDENTIALS',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify([apiCall])
+  });
+};
+Step 4: Universal Template for Any Restaurant
+bash# Dynamic curl template (populate variables from Google Places data)
+curl -X POST "https://api.dataforseo.com/v3/dataforseo_labs/google/ranked_keywords/live" \
+-H "Authorization: Basic YOUR_BASE64_ENCODED_CREDENTIALS" \
+-H "Content-Type: application/json" \
+-d '[
+  {
+    "target": "${WEBSITE_DOMAIN}",
+    "language_code": "en", 
+    "location_name": "${STATE}",
+    "limit": 50,
+    "order_by": ["keyword_data.keyword_info.search_volume,desc"],
+    "filters": [
+      ["keyword_data.keyword", "like", "%${CUISINE_TYPE}%"],
+      "and",
+      ["keyword_data.keyword", "like", "%${CITY_NAME}%"],
+      "and",
+      ["keyword_data.keyword_info.search_volume", ">", 100]
+    ]
+  }
+]'
