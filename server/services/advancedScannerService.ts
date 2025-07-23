@@ -359,7 +359,16 @@ export class AdvancedScannerService {
             facebookSource: 'manual_override' as const
           };
         }
-        return {};
+        // Return empty object with proper structure instead of just {}
+        console.log('🔧 Social media detection failed - returning empty structure');
+        return {
+          facebook: null,
+          instagram: null,
+          twitter: null,
+          youtube: null,
+          tiktok: null,
+          linkedin: null
+        };
       });
       
       const [competitors, socialMediaLinks] = await Promise.all([
@@ -368,12 +377,20 @@ export class AdvancedScannerService {
       ]);
       
       // DEBUG: Check what social media links were actually detected
-      console.log('🔍 INSTAGRAM DEBUG: Social media detection result:', JSON.stringify(socialMediaLinks, null, 2));
+      console.log('🔍 SOCIAL MEDIA DEBUG: Final detection result:', JSON.stringify(socialMediaLinks, null, 2));
+      console.log('🔍 SOCIAL MEDIA DEBUG: Facebook:', socialMediaLinks.facebook || 'Not found');
+      console.log('🔍 SOCIAL MEDIA DEBUG: Instagram:', socialMediaLinks.instagram || 'Not found');
+      console.log('🔍 SOCIAL MEDIA DEBUG: Available platforms:', Object.keys(socialMediaLinks || {}));
+      
       if (socialMediaLinks.instagram) {
         console.log('✅ INSTAGRAM FOUND:', socialMediaLinks.instagram);
       } else {
         console.log('❌ INSTAGRAM NOT FOUND - checking individual platforms...');
-        console.log('🔍 Available platforms:', Object.keys(socialMediaLinks));
+      }
+      if (socialMediaLinks.facebook) {
+        console.log('✅ FACEBOOK FOUND:', socialMediaLinks.facebook);
+      } else {
+        console.log('❌ FACEBOOK NOT FOUND');
       }
       
       // Wait for phase 5 to complete (4 seconds total)
@@ -724,10 +741,13 @@ export class AdvancedScannerService {
       restaurantSearchScreenshot: restaurantSearchScreenshot
     };
 
-    // Debug: Log the final scan result structure to verify customerMoodAnalysis inclusion
+    // Debug: Log the final scan result structure to verify all data inclusion
     console.log('🔍 Final scan result structure keys:', Object.keys(result));
     console.log('📊 reviewsAnalysis keys:', result.reviewsAnalysis ? Object.keys(result.reviewsAnalysis) : 'null');
     console.log('🧠 customerMoodAnalysis present:', !!result.reviewsAnalysis?.customerMoodAnalysis);
+    console.log('📱 socialMediaLinks in final result:', JSON.stringify(result.socialMediaLinks, null, 2));
+    console.log('📱 socialMediaLinks Facebook:', result.socialMediaLinks?.facebook || 'Not found');
+    console.log('📱 socialMediaLinks Instagram:', result.socialMediaLinks?.instagram || 'Not found');
     if (result.reviewsAnalysis?.customerMoodAnalysis) {
       console.log('✅ CustomerMoodAnalysis overallMood:', result.reviewsAnalysis.customerMoodAnalysis.overallMood);
     }
@@ -2479,8 +2499,18 @@ export class AdvancedScannerService {
       return result;
     } catch (error) {
       console.error('Enhanced social media detection failed:', error);
-      // Fallback to traditional detection
-      return await this.socialMediaDetector.detectSocialMediaLinks(domain);
+      // Return proper structure even on complete failure
+      return {
+        facebook: null,
+        instagram: null,
+        twitter: null,
+        youtube: null,
+        tiktok: null,
+        linkedin: null,
+        facebookVerified: false,
+        facebookConfidence: 'low' as const,
+        facebookSource: 'none' as const
+      };
     }
   }
 

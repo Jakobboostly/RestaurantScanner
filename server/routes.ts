@@ -590,6 +590,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
         success: result.success,
         reviewCount: result.success ? result.data?.length || 0 : 0,
         metadata: result.metadata,
+        socialMedia: result.socialMedia,
+        contacts: result.contacts,
         sampleReviews: result.success && result.data ? result.data.slice(0, 3) : [],
         error: result.success ? null : result.error
       });

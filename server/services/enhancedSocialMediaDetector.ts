@@ -264,7 +264,7 @@ export class EnhancedSocialMediaDetector {
         }
 
         // Also check for clickable elements containing Facebook icons
-        const facebookIconElements = $('i.fab.fa-facebook, i.fab.fa-facebook-f, svg use[*|href*="facebook"], use[href*="facebook"]');
+        const facebookIconElements = $('i.fab.fa-facebook, i.fab.fa-facebook-f');
         facebookIconElements.each((_, element) => {
           const $parent = $(element).closest('a[href]');
           if ($parent.length) {
