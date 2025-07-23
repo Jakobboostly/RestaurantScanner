@@ -76,6 +76,11 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 23, 2025. Updated user interface terminology to be more restaurant-themed:
+  - **Changed "Where You're Going Wrong" to "Missing Ingredients"** across all dashboard tabs (Search, Social, Local, Reviews)
+  - Enhanced restaurant industry alignment with ingredient metaphor for missing marketing elements
+  - Maintained all priority levels and recommendations while improving user-friendly language
+  - Updated sections provide same actionable insights with more consultative, solution-oriented tone
 - July 23, 2025. Fixed ES module import issues for deployment compatibility:  
   - **Fixed selenium-webdriver chrome imports** - Updated import statements from `'selenium-webdriver/chrome'` to `'selenium-webdriver/chrome.js'` for proper ES module compatibility
   - **Enhanced Chrome binary path detection** - Implemented flexible Chrome binary detection for different deployment environments including Cloud Run, standard Linux, and Replit Nix
