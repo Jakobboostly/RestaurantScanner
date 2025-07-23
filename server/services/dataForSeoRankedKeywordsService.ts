@@ -167,54 +167,8 @@ export class DataForSeoRankedKeywordsService {
       
       console.log(`🔍 COMPETITIVE OPPORTUNITIES API: Raw keywords before filtering:`, keywords.slice(0, 5).map(k => k.keyword));
       
-      // Filter for high-value competitive keywords (much less restrictive approach)
-      const relevantKeywords = keywords.filter(keyword => {
-        const kw = keyword.keyword.toLowerCase();
-        
-        // EXCLUDE demographic terms only 
-        const demographicTerms = [
-          'black owned', 'white owned', 'asian owned', 'hispanic owned', 'latino owned', 'native owned',
-          'minority owned', 'women owned', 'female owned', 'male owned'
-        ];
-        const hasDemographic = demographicTerms.some(term => kw.includes(term));
-        
-        // EXCLUDE very low commercial value keywords
-        const lowValueTerms = [
-          'hours', 'phone', 'address', 'directions', 'contact', 'about us',
-          'history', 'story', 'owner', 'staff', 'jobs', 'careers', 'hiring'
-        ];
-        const hasLowValue = lowValueTerms.some(term => kw.includes(term));
-        
-        // EXCLUDE confusing brand variations that don't match the actual restaurant
-        const confusingBrandTerms = [
-          'piazza on the pier', 'pier 39', 'pier one', 'pier imports', 'pier 1',
-          'fishermans wharf', 'san francisco pier', 'ferry building'
-        ];
-        const hasConfusingBrand = confusingBrandTerms.some(term => kw.includes(term));
-        
-        // INCLUDE high-value competitive opportunities
-        const isHighValueKeyword = (
-          // Food types (huge opportunities)
-          kw.includes('pizza') || kw.includes('burger') || kw.includes('chicken') || kw.includes('mexican') || 
-          kw.includes('italian') || kw.includes('chinese') || kw.includes('sushi') || kw.includes('thai') || 
-          kw.includes('indian') || kw.includes('mediterranean') || kw.includes('seafood') || kw.includes('steak') ||
-          kw.includes('wings') || kw.includes('sandwich') || kw.includes('salad') || kw.includes('pasta') ||
-          
-          // Service keywords (competitive opportunities)
-          kw.includes('delivery') || kw.includes('takeout') || kw.includes('pickup') || 
-          kw.includes('catering') || kw.includes('order') || kw.includes('menu') ||
-          
-          // Local searches (crucial for restaurants)
-          kw.includes('near me') || kw.includes('restaurant') || kw.includes('food') || 
-          kw.includes('dining') || kw.includes('lunch') || kw.includes('dinner') ||
-          
-          // Quality/comparison terms (high commercial intent)
-          kw.includes('best') || kw.includes('top') || kw.includes('good') || kw.includes('great') ||
-          kw.includes('reviews') || kw.includes('rating') || kw.includes('recommended')
-        );
-        
-        return isHighValueKeyword && !hasDemographic && !hasLowValue && !hasConfusingBrand;
-      });
+      // No filtering - show all competitive opportunity keywords as requested
+      const relevantKeywords = keywords;
       
       // Apply the requested limit to the filtered keywords
       const limitedKeywords = relevantKeywords.slice(0, limit);
