@@ -715,12 +715,12 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                             if (competitiveKeywords.length === 0) {
                               return (
                                 <div className="text-xs text-gray-500 text-center py-2">
-                                  No relevant competitive opportunities found. You're ranking well for actionable keywords!
+                                  No competitive opportunities found. Your competition is strong!
                                 </div>
                               );
                             }
                             
-                            return competitiveKeywords.slice(0, 5).map((keyword, index) => (
+                            return competitiveKeywords.slice(0, 8).map((keyword, index) => (
                               <div key={index} className="flex justify-between items-center text-xs">
                                 <span className="text-gray-700 flex-1 truncate pr-2">
                                   "{keyword.keyword || keyword}"

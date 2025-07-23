@@ -76,20 +76,6 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
-- July 23, 2025. Replaced DataForSEO competitive keywords API with custom competitive keyword generator:
-  - **Fixed fundamental DataForSEO flaw** - competitive keywords API was returning brand confusion (e.g., "pier pizza menu", "pier view pizza") instead of actual competitive opportunities
-  - **Built custom competitive keyword generator** - now generates meaningful terms like "best pizza provo", "pizza delivery near me", "italian restaurant provo" based on restaurant type and location
-  - **Added business type detection** - automatically detects pizza, mexican, burger, chinese restaurants from domain names for targeted keyword generation
-  - **Implemented location-aware keywords** - extracts city from Google Places business profile to create city-specific competitive terms
-  - **Enhanced competitive intelligence** - system now provides actionable optimization opportunities instead of confusing brand variations
-  - **Maintained SERP position checking** - uses DataForSEO SERP API to verify actual ranking positions for generated competitive keywords
-  - **Fixed user experience** - "Where your competition is winning" now shows relevant gaps where competitors outrank restaurant on valuable search terms
-- July 23, 2025. Enhanced competitive opportunity keyword filtering for restaurant relevance:
-  - **Fixed irrelevant city filtering** - competitive opportunity keywords now exclude other cities and focus on food-type, "near me", and service keywords
-  - **Added restaurant-specific keyword filtering** - system now filters for pizza, burger, chicken, delivery, takeout, catering, and other restaurant-relevant terms
-  - **Improved local relevance** - "where your competition is winning" now shows actionable keywords like "pizza delivery" instead of random city names
-  - **Enhanced keyword quality** - filters out 40+ major city names while preserving food types, service keywords, and local search terms
-  - **Better user experience** - competitive analysis now provides relevant optimization opportunities instead of confusing location-based keywords
 - July 23, 2025. Fixed ES module import issues for deployment compatibility:  
   - **Fixed selenium-webdriver chrome imports** - Updated import statements from `'selenium-webdriver/chrome'` to `'selenium-webdriver/chrome.js'` for proper ES module compatibility
   - **Enhanced Chrome binary path detection** - Implemented flexible Chrome binary detection for different deployment environments including Cloud Run, standard Linux, and Replit Nix

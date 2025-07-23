@@ -224,7 +224,7 @@ export class AdvancedScannerService {
       const rankedKeywordsPromise = Promise.race([
         this.rankedKeywordsService.getRankedKeywords(actualDomain, 'United States', 'en', 10),
         new Promise((_, reject) => 
-          setTimeout(() => reject(new Error('Ranked keywords timeout')), 6000)
+          setTimeout(() => reject(new Error('Ranked keywords timeout')), 8000)
         )
       ]).catch(error => {
         console.error('Ranked keywords failed:', error);
@@ -237,15 +237,10 @@ export class AdvancedScannerService {
       // Get competitive opportunity keywords (ranking 6+) - "Where your competition is winning"
       console.log(`🔍 ADVANCED SCANNER: Getting competitive opportunity keywords (rank 6+) for domain: ${actualDomain}`);
       
-      // Extract city from business profile for location-aware competitive keywords
-      const locationData = businessProfile?.address ? 
-        this.extractCityFromAddress(businessProfile.address) : 
-        { city: undefined, state: 'United States' };
-      
       const competitiveOpportunityPromise = Promise.race([
-        this.rankedKeywordsService.getCompetitiveOpportunityKeywords(actualDomain, 'United States', 'en', 5, locationData.city),
+        this.rankedKeywordsService.getCompetitiveOpportunityKeywords(actualDomain, 'United States', 'en', 5),
         new Promise((_, reject) => 
-          setTimeout(() => reject(new Error('Competitive opportunity keywords timeout')), 6000)
+          setTimeout(() => reject(new Error('Competitive opportunity keywords timeout')), 8000)
         )
       ]).catch(error => {
         console.error('Competitive opportunity keywords failed:', error);
