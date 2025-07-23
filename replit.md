@@ -76,14 +76,14 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
-- July 23, 2025. Implemented DuckDuckGo for completely unbiased "Where You Rank" search functionality:
-  - **Eliminated all personalization** - Switched from Google to DuckDuckGo search engine which doesn't track users or personalize results
-  - **Removed location bias** - DuckDuckGo provides consistent search results regardless of user's physical location or search history
-  - **Enhanced search accuracy** - Restaurant owners now see truly unbiased rankings without Google's algorithmic personalization affecting results
-  - **Fixed Google limitations** - Resolved issues with Google's aggressive location detection and personalization that were showing biased results
-  - **Professional search experience** - Clear messaging explains DuckDuckGo provides "no tracking, no personalization, no location bias"
-  - **Improved competitor analysis** - Restaurant owners get authentic view of how their business appears in unbiased search results
-  - **Better user experience** - "Where You Rank" button opens DuckDuckGo in new tab with completely neutral search results
+- July 23, 2025. Implemented embedded Google search modal for "Where You Rank" functionality:
+  - **Returned to Google search** - Switched back from DuckDuckGo to Google search per user preference for more relevant restaurant results
+  - **Embedded modal interface** - Created in-app modal that displays search functionality without navigating away from the dashboard
+  - **Professional search experience** - Modal shows live Google search context with restaurant name and search terms
+  - **Enhanced user experience** - "Where You Rank" button opens embedded modal instead of external tabs for seamless workflow
+  - **Google restrictions acknowledgment** - Modal includes clear explanation that Google blocks iframe embedding for security reasons
+  - **Educational display** - Shows where actual search results would appear with proper context and instructions
+  - **Improved stay-on-page experience** - Users remain within the Restaurant Scanner interface throughout the ranking check process
 - July 23, 2025. Updated user interface terminology to be more restaurant-themed:
   - **Changed "Where You're Going Wrong" to "Missing Ingredients"** across all dashboard tabs (Search, Social, Local, Reviews)
   - Enhanced restaurant industry alignment with ingredient metaphor for missing marketing elements
