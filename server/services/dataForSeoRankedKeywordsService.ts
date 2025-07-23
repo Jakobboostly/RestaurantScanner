@@ -164,28 +164,44 @@ export class DataForSeoRankedKeywordsService {
 
       const keywords = result.items.map((item: any) => this.processKeywordFromAPI(item));
       
-      // Filter for restaurant-relevant keywords only (food types, "near me", local terms)
+      // Filter for restaurant-relevant keywords only (strict filtering for actionable keywords)
       const relevantKeywords = keywords.filter(keyword => {
         const kw = keyword.keyword.toLowerCase();
         
-        // Include food-type keywords
-        const foodTypes = ['pizza', 'burger', 'chicken', 'mexican', 'italian', 'chinese', 'sushi', 'thai', 'indian', 'mediterranean', 'american', 'seafood', 'steak', 'bbq', 'sandwich', 'salad', 'breakfast', 'lunch', 'dinner', 'coffee', 'cafe', 'bakery', 'deli', 'bar', 'pub', 'brewery', 'wings', 'tacos', 'burrito', 'pasta', 'ramen', 'pho'];
-        const hasFoodType = foodTypes.some(food => kw.includes(food));
+        // EXCLUDE any location-specific keywords (cities, neighborhoods, states)
+        const locationTerms = [
+          // Major cities
+          'nyc', 'new york', 'los angeles', 'chicago', 'houston', 'phoenix', 'philadelphia', 'san antonio', 'san diego', 'dallas', 'austin', 'jacksonville', 'fort worth', 'columbus', 'charlotte', 'san francisco', 'indianapolis', 'seattle', 'denver', 'washington', 'boston', 'nashville', 'baltimore', 'oklahoma city', 'louisville', 'portland', 'las vegas', 'milwaukee', 'albuquerque', 'tucson', 'fresno', 'sacramento', 'mesa', 'kansas city', 'atlanta', 'omaha', 'colorado springs', 'raleigh', 'miami', 'virginia beach', 'oakland', 'minneapolis', 'tulsa', 'arlington', 'tampa', 'new orleans', 'wichita', 'cleveland', 'bakersfield', 'aurora', 'anaheim', 'honolulu', 'santa ana', 'riverside', 'corpus christi', 'lexington', 'stockton', 'henderson', 'saint paul', 'st paul', 'cincinnati', 'pittsburgh',
+          // Utah specific locations that aren't useful for competitive analysis
+          'utah', 'salt lake', 'provo', 'ogden', 'west valley', 'sandy', 'orem', 'west jordan', 'layton', 'taylorsville', 'murray', 'draper', 'bountiful', 'riverton', 'roy', 'spanish fork', 'pleasant grove', 'lehi', 'american fork', 'payson', 'springville', 'cedar city', 'st george', 'logan', 'tooele', 'park city', 'magna', 'kearns', 'millcreek', 'cottonwood heights', 'midvale', 'holladay', 'south jordan', 'herriman', 'eagle mountain', 'saratoga springs', 'vineyard', 'bluffdale', 'south salt lake', 'north salt lake', 'woods cross', 'clearfield', 'kaysville', 'farmington', 'centerville', 'clinton', 'sunset', 'north ogden', 'pleasant view', 'harrisville', 'washington terrace', 'south ogden', 'riverdale', 'syracuse', 'clearfield', 'west point', 'clinton', 'sunset', 'brigham city', 'tremonton', 'garland', 'corinne', 'willard', 'perry', 'honeyville', 'bear river city', 'mantua', 'paradise', 'hyrum', 'nibley', 'north logan', 'smithfield', 'richmond', 'lewiston', 'cornish', 'trenton', 'clarkston', 'newton', 'amalga', 'river heights', 'millville', 'providence', 'mendon', 'wellsville', 'cache', 'nob hill', 'downtown', 'midtown', 'uptown', 'eastside', 'westside', 'north', 'south', 'east', 'west'
+        ];
+        const hasLocation = locationTerms.some(location => kw.includes(location));
         
-        // Include "near me" searches
-        const hasNearMe = kw.includes('near me');
+        // EXCLUDE brand-specific keywords (competitor names)
+        const brandNames = ['pier 49', 'dominos', 'papa johns', 'little caesars', 'pizza hut', 'subway', 'mcdonalds', 'burger king', 'wendys', 'taco bell', 'kfc', 'chipotle', 'panda express', 'olive garden', 'applebees', 'chilis', 'outback', 'red lobster', 'ihop', 'dennys', 'starbucks', 'panera'];
+        const hasBrandName = brandNames.some(brand => kw.includes(brand));
         
-        // Include delivery/takeout keywords
-        const hasServiceKeywords = kw.includes('delivery') || kw.includes('takeout') || kw.includes('pickup') || kw.includes('catering') || kw.includes('order') || kw.includes('menu');
+        // ONLY include these specific patterns that are universally useful:
+        const isNearMe = kw.includes('near me');
+        const isDeliveryKeyword = kw.includes('delivery') && !hasLocation;
+        const isTakeoutKeyword = kw.includes('takeout') && !hasLocation;
+        const isCateringKeyword = kw.includes('catering') && !hasLocation;
+        const isMenuKeyword = kw.includes('menu') && !hasLocation && !hasBrandName;
+        const isOrderKeyword = kw.includes('order') && !hasLocation;
+        const isHoursKeyword = kw.includes('hours') && !hasLocation && !hasBrandName;
         
-        // Include restaurant-specific terms
-        const hasRestaurantTerms = kw.includes('restaurant') || kw.includes('dining') || kw.includes('food');
+        // Generic food type keywords without location
+        const genericFoodKeywords = [
+          'pizza delivery', 'burger delivery', 'chicken delivery', 'mexican delivery', 'italian delivery',
+          'pizza takeout', 'burger takeout', 'chicken takeout', 'mexican takeout', 'italian takeout',
+          'pizza catering', 'burger catering', 'chicken catering', 'mexican catering', 'italian catering',
+          'pizza menu', 'burger menu', 'chicken menu', 'mexican menu', 'italian menu',
+          'pizza hours', 'burger hours', 'chicken hours', 'mexican hours', 'italian hours',
+          'pizza restaurant', 'burger restaurant', 'chicken restaurant', 'mexican restaurant', 'italian restaurant'
+        ];
+        const isGenericFoodKeyword = genericFoodKeywords.some(pattern => kw.includes(pattern)) && !hasLocation;
         
-        // Exclude other cities/states that aren't relevant
-        const irrelevantCities = ['new york', 'los angeles', 'chicago', 'houston', 'phoenix', 'philadelphia', 'san antonio', 'san diego', 'dallas', 'austin', 'jacksonville', 'fort worth', 'columbus', 'charlotte', 'san francisco', 'indianapolis', 'seattle', 'denver', 'washington', 'boston', 'nashville', 'baltimore', 'oklahoma city', 'louisville', 'portland', 'las vegas', 'milwaukee', 'albuquerque', 'tucson', 'fresno', 'sacramento', 'mesa', 'kansas city', 'atlanta', 'omaha', 'colorado springs', 'raleigh', 'miami', 'virginia beach', 'oakland', 'minneapolis', 'tulsa', 'arlington', 'tampa', 'new orleans', 'wichita', 'cleveland', 'bakersfield', 'aurora', 'anaheim', 'honolulu', 'santa ana', 'riverside', 'corpus christi', 'lexington', 'stockton', 'henderson', 'saint paul', 'st paul', 'cincinnati', 'pittsburgh'];
-        const hasIrrelevantCity = irrelevantCities.some(city => kw.includes(city));
-        
-        return (hasFoodType || hasNearMe || hasServiceKeywords || hasRestaurantTerms) && !hasIrrelevantCity;
+        return (isNearMe || isDeliveryKeyword || isTakeoutKeyword || isCateringKeyword || isMenuKeyword || isOrderKeyword || isHoursKeyword || isGenericFoodKeyword) && !hasLocation && !hasBrandName;
       });
       
       // Apply the requested limit to the filtered keywords

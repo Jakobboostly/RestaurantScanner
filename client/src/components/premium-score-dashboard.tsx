@@ -715,7 +715,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                             if (competitiveKeywords.length === 0) {
                               return (
                                 <div className="text-xs text-gray-500 text-center py-2">
-                                  No competitive opportunities found. Your competition is strong!
+                                  No relevant competitive opportunities found. You're ranking well for actionable keywords!
                                 </div>
                               );
                             }
