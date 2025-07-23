@@ -177,31 +177,23 @@ export class DataForSeoRankedKeywordsService {
         ];
         const hasLocation = locationTerms.some(location => kw.includes(location));
         
-        // EXCLUDE brand-specific keywords (competitor names)
-        const brandNames = ['pier 49', 'dominos', 'papa johns', 'little caesars', 'pizza hut', 'subway', 'mcdonalds', 'burger king', 'wendys', 'taco bell', 'kfc', 'chipotle', 'panda express', 'olive garden', 'applebees', 'chilis', 'outback', 'red lobster', 'ihop', 'dennys', 'starbucks', 'panera'];
-        const hasBrandName = brandNames.some(brand => kw.includes(brand));
-        
-        // ONLY include these specific patterns that are universally useful:
+        // ONLY include keywords that don't have location terms
         const isNearMe = kw.includes('near me');
         const isDeliveryKeyword = kw.includes('delivery') && !hasLocation;
         const isTakeoutKeyword = kw.includes('takeout') && !hasLocation;
         const isCateringKeyword = kw.includes('catering') && !hasLocation;
-        const isMenuKeyword = kw.includes('menu') && !hasLocation && !hasBrandName;
+        const isMenuKeyword = kw.includes('menu') && !hasLocation;
         const isOrderKeyword = kw.includes('order') && !hasLocation;
-        const isHoursKeyword = kw.includes('hours') && !hasLocation && !hasBrandName;
+        const isHoursKeyword = kw.includes('hours') && !hasLocation;
+        const isLocationsKeyword = kw.includes('locations') && !hasLocation;
         
-        // Generic food type keywords without location
-        const genericFoodKeywords = [
-          'pizza delivery', 'burger delivery', 'chicken delivery', 'mexican delivery', 'italian delivery',
-          'pizza takeout', 'burger takeout', 'chicken takeout', 'mexican takeout', 'italian takeout',
-          'pizza catering', 'burger catering', 'chicken catering', 'mexican catering', 'italian catering',
-          'pizza menu', 'burger menu', 'chicken menu', 'mexican menu', 'italian menu',
-          'pizza hours', 'burger hours', 'chicken hours', 'mexican hours', 'italian hours',
-          'pizza restaurant', 'burger restaurant', 'chicken restaurant', 'mexican restaurant', 'italian restaurant'
-        ];
-        const isGenericFoodKeyword = genericFoodKeywords.some(pattern => kw.includes(pattern)) && !hasLocation;
+        // Brand + service keywords without location (these are useful for competitive analysis)
+        const hasBrandServiceKeyword = (kw.includes('pizza') || kw.includes('burger') || kw.includes('chicken') || kw.includes('mexican') || kw.includes('italian') || kw.includes('chinese') || kw.includes('sushi') || kw.includes('thai') || kw.includes('indian') || kw.includes('mediterranean')) && !hasLocation;
         
-        return (isNearMe || isDeliveryKeyword || isTakeoutKeyword || isCateringKeyword || isMenuKeyword || isOrderKeyword || isHoursKeyword || isGenericFoodKeyword) && !hasLocation && !hasBrandName;
+        // Allow branded keywords as long as they don't contain location terms
+        const isBrandedKeyword = !hasLocation && (kw.includes('pizza') || kw.includes('burger') || kw.includes('restaurant') || kw.includes('food') || kw.includes('menu') || kw.includes('delivery') || kw.includes('takeout') || kw.includes('catering') || kw.includes('order') || kw.includes('hours') || kw.includes('locations'));
+        
+        return (isNearMe || isDeliveryKeyword || isTakeoutKeyword || isCateringKeyword || isMenuKeyword || isOrderKeyword || isHoursKeyword || isLocationsKeyword || hasBrandServiceKeyword || isBrandedKeyword) && !hasLocation;
       });
       
       // Apply the requested limit to the filtered keywords
