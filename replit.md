@@ -76,6 +76,11 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 24, 2025. Updated competitive opportunity section terminology:
+  - **Changed "Where your competition is winning" to "Missing Ingredients"** to align with restaurant-themed terminology throughout the dashboard
+  - Updated section headers, labels, and comments to use the new "Missing Ingredients" terminology for competitive opportunity keywords (rankings 6+)
+  - Maintained all existing functionality while improving restaurant industry alignment and user-friendly language
+  - Enhanced consistency with existing "Missing Ingredients" terminology used in other dashboard sections
 - July 23, 2025. Implemented embedded Google search modal for "Where You Rank" functionality:
   - **Returned to Google search** - Switched back from DuckDuckGo to Google search per user preference for more relevant restaurant results
   - **Embedded modal interface** - Created in-app modal that displays search functionality without navigating away from the dashboard
