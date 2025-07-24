@@ -219,33 +219,43 @@ export class LocalKeywordRankingService {
     businessProfile: any,
     domain: string
   ): Promise<LocalKeywordRanking[]> {
-    console.log('🔍 LOCAL RANKING: Starting local keyword ranking analysis');
-    
-    // Extract cuisine and location data
-    const cuisineType = this.extractCuisineType(businessProfile);
-    const { city, state } = this.extractCityState(businessProfile);
-    const restaurantName = businessProfile.name || '';
-    
-    const cuisineLocationData: CuisineLocationData = {
-      cuisineType,
-      city,
-      state,
-      restaurantName,
-      domain
-    };
+    try {
+      console.log('🔍 LOCAL RANKING: Starting local keyword ranking analysis');
+      console.log('🔍 LOCAL RANKING: Input domain:', domain);
+      console.log('🔍 LOCAL RANKING: Business profile exists:', !!businessProfile);
+      
+      if (!businessProfile) {
+        console.error('🔍 LOCAL RANKING: No business profile provided');
+        return [];
+      }
+      
+      // Extract cuisine and location data
+      const cuisineType = this.extractCuisineType(businessProfile);
+      const { city, state } = this.extractCityState(businessProfile);
+      const restaurantName = businessProfile.name || '';
+      
+      const cuisineLocationData: CuisineLocationData = {
+        cuisineType,
+        city,
+        state,
+        restaurantName,
+        domain
+      };
 
-    console.log('🔍 LOCAL RANKING: Extracted data:', cuisineLocationData);
+      console.log('🔍 LOCAL RANKING: Extracted data:', cuisineLocationData);
 
     // Generate the 8 local keywords
     const localKeywords = this.generateLocalKeywords(cuisineLocationData);
     console.log('🔍 LOCAL RANKING: Generated keywords:', localKeywords);
+
+    // Create location string for API calls
+    const locationString = `${city}, ${state}, United States`;
 
     // First, get search volume data for all keywords
     const keywordVolumeData = await this.getSearchVolumeData(localKeywords, locationString);
     console.log('🔍 LOCAL RANKING: Search volume data received:', keywordVolumeData.length);
 
     const rankings: LocalKeywordRanking[] = [];
-    const locationString = `${city}, ${state}, United States`;
 
     // Process each keyword with DataForSEO SERP API
     for (const keyword of localKeywords) {
@@ -320,5 +330,15 @@ export class LocalKeywordRankingService {
     console.log(`🔍 LOCAL RANKING: Completed analysis. Found rankings for ${rankings.filter(r => r.found).length}/${rankings.length} keywords`);
     
     return rankings;
+    
+    } catch (error) {
+      console.error('🔍 LOCAL RANKING: Service failed with error:', error);
+      console.error('🔍 LOCAL RANKING: Error details:', {
+        message: (error as Error).message,
+        stack: (error as Error).stack,
+        name: (error as Error).name
+      });
+      return [];
+    }
   }
 }

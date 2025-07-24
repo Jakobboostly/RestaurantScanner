@@ -211,6 +211,8 @@ export class AdvancedScannerService {
       
       // Get local keyword rankings using the 8 specific patterns
       console.log(`🔍 ADVANCED SCANNER: Getting local keyword rankings for business profile`);
+      console.log(`🔍 ADVANCED SCANNER: actualDomain = ${actualDomain}`);
+      console.log(`🔍 ADVANCED SCANNER: businessProfile exists = ${!!businessProfile}`);
       
       const localKeywordPromise = Promise.race([
         this.localKeywordRankingService.getLocalKeywordRankings(businessProfile, actualDomain),
@@ -218,7 +220,8 @@ export class AdvancedScannerService {
           setTimeout(() => reject(new Error('Local keyword rankings timeout')), 15000)
         )
       ]).catch(error => {
-        console.error('Local keyword rankings failed:', error);
+        console.error('🔍 ADVANCED SCANNER: Local keyword rankings failed:', error);
+        console.error('🔍 ADVANCED SCANNER: Error details:', error);
         return [];
       });
       
