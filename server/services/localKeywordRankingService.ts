@@ -103,7 +103,7 @@ export class LocalKeywordRankingService {
     
     // Try to extract city and state from formatted address
     // Format is usually: "Street, City, State ZIP, Country"
-    const parts = address.split(',').map(part => part.trim());
+    const parts = address.split(',').map((part: string) => part.trim());
     
     let city = '';
     let state = '';
@@ -330,10 +330,10 @@ export class LocalKeywordRankingService {
         
         // Log first few results for debugging
         if (localPack.length > 0) {
-          console.log(`🔍 LOCAL RANKING: Local pack sample:`, localPack.slice(0, 3).map(item => ({domain: item.domain, title: item.title})));
+          console.log(`🔍 LOCAL RANKING: Local pack sample:`, localPack.slice(0, 3).map((item: any) => ({domain: item.domain, title: item.title})));
         }
         if (items.length > 0) {
-          console.log(`🔍 LOCAL RANKING: Organic results sample:`, items.slice(0, 5).map(item => ({domain: item.domain, title: item.title})));
+          console.log(`🔍 LOCAL RANKING: Organic results sample:`, items.slice(0, 5).map((item: any) => ({domain: item.domain, title: item.title})));
         }
 
         // Find restaurant position

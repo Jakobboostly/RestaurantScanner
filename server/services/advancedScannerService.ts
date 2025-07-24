@@ -213,6 +213,7 @@ export class AdvancedScannerService {
       console.log(`🔍 ADVANCED SCANNER: Getting local keyword rankings for business profile`);
       console.log(`🔍 ADVANCED SCANNER: actualDomain = ${actualDomain}`);
       console.log(`🔍 ADVANCED SCANNER: businessProfile exists = ${!!businessProfile}`);
+      console.log(`🔍 ADVANCED SCANNER: About to call localKeywordRankingService.getLocalKeywordRankings()`);
       
       const localKeywordPromise = Promise.race([
         this.localKeywordRankingService.getLocalKeywordRankings(businessProfile, actualDomain),
