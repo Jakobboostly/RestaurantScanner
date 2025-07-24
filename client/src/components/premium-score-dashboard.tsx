@@ -702,126 +702,102 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                         <span className="font-medium">{scanResult.domainAuthority || 0}</span>
                       </div>
                       
-                      {/* Where your competition is winning */}
-                      <div className="bg-[#5F5FFF]/5 border border-[#5F5FFF]/20 rounded-lg p-3 space-y-2">
-                        <h4 className="text-sm font-semibold text-[#5F5FFF] mb-2">Where your competition is winning</h4>
-                        <div className="space-y-1">
+                      {/* Local Search Rankings - 8 Keywords */}
+                      <div className="bg-[#5F5FFF]/5 border border-[#5F5FFF]/20 rounded-lg p-4 space-y-3">
+                        <h4 className="text-sm font-semibold text-[#5F5FFF] mb-3 flex items-center gap-2">
+                          <Search className="w-4 h-4" />
+                          Local Search Rankings (8 Keywords)
+                        </h4>
+                        <div className="space-y-2">
                           {(() => {
-                            // Show local keyword rankings instead of competitive opportunities
+                            // Show local keyword rankings with clear positioning
                             const localKeywords = scanResult.localKeywordRankings || [];
                             
                             console.log('🔍 Frontend displaying local keyword rankings:', localKeywords);
                             
                             if (localKeywords.length === 0) {
                               return (
-                                <div className="text-xs text-gray-500 text-center py-2">
-                                  No local keyword data available.
+                                <div className="text-sm text-gray-500 text-center py-4">
+                                  Local keyword ranking data is being generated...
                                 </div>
                               );
                             }
                             
                             return localKeywords.slice(0, 8).map((keyword, index) => (
-                              <div key={index} className="flex justify-between items-center text-xs">
-                                <span className="text-gray-700 flex-1 truncate pr-2">
-                                  "{keyword.keyword || keyword}"
-                                </span>
-                                <div className="flex items-center gap-2">
-                                  {keyword.position && (
-                                    <Badge 
-                                      variant="outline" 
-                                      className={`text-xs px-2 py-0 ${
-                                        keyword.position >= 6 && keyword.position <= 10
-                                          ? 'bg-orange-100 text-orange-800 border-orange-200'
-                                          : keyword.position > 10 && keyword.position <= 20
-                                          ? 'bg-red-100 text-red-800 border-red-200'
-                                          : keyword.position > 20
-                                          ? 'bg-gray-100 text-gray-600 border-gray-200'
-                                          : 'bg-yellow-100 text-yellow-800 border-yellow-200'
-                                      }`}
-                                    >
-                                      #{keyword.position}
-                                    </Badge>
-                                  )}
+                              <div key={index} className="flex justify-between items-center p-2 bg-white rounded border">
+                                <div className="flex-1">
+                                  <span className="text-sm font-medium text-gray-800">
+                                    "{keyword.keyword || keyword}"
+                                  </span>
                                   {keyword.searchVolume && (
-                                    <span className="text-xs text-gray-500">
-                                      {keyword.searchVolume > 1000 ? `${Math.round(keyword.searchVolume / 1000)}k` : keyword.searchVolume}
-                                    </span>
+                                    <div className="text-xs text-gray-500 mt-1">
+                                      {keyword.searchVolume > 1000 
+                                        ? `${Math.round(keyword.searchVolume / 1000)}k monthly searches` 
+                                        : `${keyword.searchVolume} monthly searches`}
+                                    </div>
+                                  )}
+                                </div>
+                                <div className="flex items-center gap-2">
+                                  {keyword.position ? (
+                                    <>
+                                      <Badge 
+                                        variant="outline" 
+                                        className={`text-sm px-3 py-1 font-bold ${
+                                          keyword.position <= 3 
+                                            ? 'bg-green-100 text-green-800 border-green-300'
+                                            : keyword.position <= 10
+                                            ? 'bg-yellow-100 text-yellow-800 border-yellow-300'
+                                            : keyword.position <= 20
+                                            ? 'bg-orange-100 text-orange-800 border-orange-300'
+                                            : 'bg-red-100 text-red-800 border-red-300'
+                                        }`}
+                                      >
+                                        Position #{keyword.position}
+                                      </Badge>
+                                      <a 
+                                        href={keyword.searchUrl} 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                        className="text-[#5F5FFF] hover:text-[#7375FD] text-xs underline"
+                                      >
+                                        View
+                                      </a>
+                                    </>
+                                  ) : (
+                                    <Badge variant="outline" className="text-sm px-3 py-1 bg-gray-100 text-gray-600 border-gray-300">
+                                      Not Found (50+)
+                                    </Badge>
                                   )}
                                 </div>
                               </div>
                             ));
                           })()}
-                          
-
                         </div>
-                      </div>
-                      
-                      {/* Show actual ranking keywords from multiple sources */}
-                      {(() => {
-                        const keywordsWithRanking = scanResult.localKeywordRankings?.filter(k => k.position && k.position <= 20) || [];
-                        const serpWithRanking = [];
-                        const allRankedKeywords = [...keywordsWithRanking, ...serpWithRanking];
-                        const uniqueRankedKeywords = allRankedKeywords.filter((item, index, self) => 
-                          index === self.findIndex(k => k.keyword === item.keyword)
-                        );
-                        return uniqueRankedKeywords.length > 0;
-                      })() && (
-                        <div className="bg-[#5F5FFF]/5 border border-[#5F5FFF]/20 rounded-lg p-3 space-y-2">
-                          <h4 className="text-sm font-semibold text-[#5F5FFF] mb-2">Your Ranking Keywords</h4>
-                          <div className="space-y-1">
-                            {(() => {
-                              // Use local keyword rankings instead of multiple sources
-                              const keywordsWithRanking = scanResult.localKeywordRankings?.filter(k => k.position && k.position <= 20) || [];
-                              const serpWithRanking = [];
-                              const allRankedKeywords = [...keywordsWithRanking, ...serpWithRanking];
-                              const uniqueRankedKeywords = allRankedKeywords.filter((item, index, self) => 
-                                index === self.findIndex(k => k.keyword === item.keyword)
-                              );
-                              
-                              console.log('🔍 Frontend displaying ranked keywords:', uniqueRankedKeywords);
-                              
-                              return uniqueRankedKeywords
-                                .sort((a, b) => (a.position || 99) - (b.position || 99))
-                                .slice(0, 5)
-                                .map((keyword, index) => (
-                                  <div key={index} className="flex justify-between items-center text-xs">
-                                    <span className="text-gray-700 flex-1 truncate pr-2">
-                                      "{keyword.keyword}"
-                                    </span>
-                                    <div className="flex items-center gap-2">
-                                      <Badge 
-                                        variant="outline" 
-                                        className={`text-xs px-2 py-0 ${
-                                          keyword.position <= 3 
-                                            ? 'bg-green-100 text-green-800 border-green-200'
-                                            : keyword.position <= 10
-                                            ? 'bg-yellow-100 text-yellow-800 border-yellow-200'
-                                            : 'bg-orange-100 text-orange-800 border-orange-200'
-                                        }`}
-                                      >
-                                        #{keyword.position}
-                                      </Badge>
-                                    </div>
-                                  </div>
-                                ));
-                            })()}
-                            {(() => {
-                              const keywordsWithRanking = scanResult.keywords?.filter(k => k.position && k.position <= 20) || [];
-                              const serpWithRanking = scanResult.keywordAnalysis?.rankingPositions?.filter(r => r.position && r.position <= 20) || [];
-                              const allRankedKeywords = [...keywordsWithRanking, ...serpWithRanking];
-                              const uniqueRankedKeywords = allRankedKeywords.filter((item, index, self) => 
-                                index === self.findIndex(k => k.keyword === item.keyword)
-                              );
-                              
-                              return uniqueRankedKeywords.length > 5 && (
-                                <div className="text-xs text-gray-500 text-center pt-1">
-                                  +{uniqueRankedKeywords.length - 5} more keywords
-                                </div>
-                              );
-                            })()}
+                        
+                        {/* Legend */}
+                        <div className="mt-3 pt-3 border-t border-gray-200">
+                          <div className="text-xs text-gray-600 mb-2 font-semibold">Position Guide:</div>
+                          <div className="grid grid-cols-2 gap-2 text-xs">
+                            <div className="flex items-center gap-2">
+                              <span className="w-3 h-3 bg-green-100 border border-green-300 rounded"></span>
+                              <span>Top 3: Excellent</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                              <span className="w-3 h-3 bg-yellow-100 border border-yellow-300 rounded"></span>
+                              <span>4-10: Good</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                              <span className="w-3 h-3 bg-orange-100 border border-orange-300 rounded"></span>
+                              <span>11-20: Needs work</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                              <span className="w-3 h-3 bg-red-100 border border-red-300 rounded"></span>
+                              <span>21+: Poor</span>
+                            </div>
                           </div>
                         </div>
-                      )}
+                      </div>
+
                       
                       <div className="flex justify-between items-center">
                         <span className="text-sm text-gray-600">Domain Authority</span>
