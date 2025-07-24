@@ -318,8 +318,14 @@ export class DynamicKeywordService {
 
       return fallbackResponse.data?.tasks?.[0]?.result?.[0]?.items || [];
 
-    } catch (error) {
-      console.log('DataForSEO API error:', error);
+    } catch (error: any) {
+      console.log('🚨 DataForSEO API error:', error.message);
+      console.log('🚨 API URL:', 'https://api.dataforseo.com/v3/dataforseo_labs/google/ranked_keywords/live');
+      console.log('🚨 Auth header configured:', !!this.authHeader);
+      if (error.response) {
+        console.log('🚨 Response status:', error.response.status);
+        console.log('🚨 Response data:', JSON.stringify(error.response.data, null, 2));
+      }
       return [];
     }
   }
