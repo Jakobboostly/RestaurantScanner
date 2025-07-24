@@ -314,35 +314,73 @@ export class LocalKeywordRankingService {
       try {
         console.log(`🔍 LOCAL RANKING: Checking ranking for "${keyword}"`);
 
-        const response = await this.client.post('/serp/google/organic/live/advanced', [{
+        const requestPayload = [{
           language_code: 'en',
           location_name: locationString,
           keyword: keyword,
-          depth: 50,
+          depth: 100,
           max_crawl_pages: 1
-        }]);
+        }];
+
+        console.log(`🔍 LOCAL RANKING: API request for "${keyword}":`, JSON.stringify(requestPayload, null, 2));
+
+        const response = await this.client.post('/serp/google/organic/live/advanced', requestPayload);
 
         const result = response.data.tasks?.[0]?.result?.[0];
         const items = result?.items || [];
 
         console.log(`🔍 LOCAL RANKING: Found ${items.length} results for "${keyword}"`);
+        console.log(`🔍 LOCAL RANKING: Looking for domain "${domain}" (cleaned: "${domain.replace(/^https?:\/\//, '').replace(/^www\./, '')}")`);
 
-        // FIND YOUR URL IN THE RESULTS (using the exact logic from your solution)
+        // FIND YOUR URL IN THE RESULTS (using improved domain matching)
         let position: number | null = null;
         let matchType: 'domain' | 'name' | 'none' = 'none';
         const cleanDomain = domain.replace(/^https?:\/\//, '').replace(/^www\./, '');
         
+        // Extract base domain (e.g., jimmyjohns.com from locations.jimmyjohns.com)
+        const domainParts = cleanDomain.split('/')[0].split('.');
+        const baseDomain = domainParts.slice(-2).join('.');
+        
+        console.log(`🔍 LOCAL RANKING: Looking for domain "${cleanDomain}" or base domain "${baseDomain}"`);
+        
+        // Debug: Log all domains found in search results
+        console.log(`🔍 LOCAL RANKING: Search results domains for "${keyword}":`);
+        items.slice(0, 10).forEach((item: any, index: number) => {
+          if (item.type === 'organic') {
+            console.log(`  ${index + 1}. ${item.domain || 'No domain'} - ${item.title || 'No title'}`);
+          }
+        });
+        
+        // Try multiple matching strategies
         for (let item of items) {
-          if (item.type === 'organic' && item.domain && item.domain.includes(cleanDomain)) {
-            position = item.rank_absolute; // This is your position!
-            matchType = 'domain';
-            console.log(`🔍 LOCAL RANKING: ✅ FOUND ${restaurantName} at position ${position} for "${keyword}"`);
-            break;
+          if (item.type === 'organic' && item.domain) {
+            // Strategy 1: Exact domain match
+            if (item.domain.includes(cleanDomain.split('/')[0])) {
+              position = item.rank_absolute;
+              matchType = 'domain';
+              console.log(`🔍 LOCAL RANKING: ✅ FOUND ${restaurantName} at position ${position} for "${keyword}" (exact domain match)`);
+              break;
+            }
+            // Strategy 2: Base domain match (e.g., jimmyjohns.com matches locations.jimmyjohns.com)
+            if (item.domain.includes(baseDomain)) {
+              position = item.rank_absolute;
+              matchType = 'domain';
+              console.log(`🔍 LOCAL RANKING: ✅ FOUND ${restaurantName} at position ${position} for "${keyword}" (base domain match)`);
+              break;
+            }
+            // Strategy 3: Restaurant name match in title (fallback for franchises)
+            if (item.title && item.title.toLowerCase().includes(restaurantName.toLowerCase())) {
+              position = item.rank_absolute;
+              matchType = 'name';
+              console.log(`🔍 LOCAL RANKING: ✅ FOUND ${restaurantName} at position ${position} for "${keyword}" (name match)`);
+              break;
+            }
           }
         }
         
         if (!position) {
-          console.log(`🔍 LOCAL RANKING: ❌ ${restaurantName} not found in top 50 results for "${keyword}"`);
+          console.log(`🔍 LOCAL RANKING: ❌ ${restaurantName} (domain: ${cleanDomain}) not found in top 100 results for "${keyword}"`);
+          console.log(`🔍 LOCAL RANKING: Search was geo-targeted to: ${locationString}`);
         }
 
         // Get search volume data for this keyword
