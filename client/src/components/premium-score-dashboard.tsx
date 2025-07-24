@@ -765,7 +765,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                                     </>
                                   ) : (
                                     <Badge variant="outline" className="text-sm px-3 py-1 bg-gray-100 text-gray-600 border-gray-300">
-                                      Position 50+
+                                      Position 20+
                                     </Badge>
                                   )}
                                 </div>
