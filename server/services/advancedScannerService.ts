@@ -106,8 +106,8 @@ export class AdvancedScannerService {
       onProgress({ progress: 8, status: 'Finding restaurant website...' });
       console.log('🔍 ADVANCED SCANNER: Phase 1 started');
       
-      let businessProfile = null;
-      let profileAnalysis = null;
+      let businessProfile: any = null;
+      let profileAnalysis: any = null;
       
       const profilePromise = Promise.race([
         this.googleBusinessService.getBusinessProfile(placeId),
@@ -197,7 +197,7 @@ export class AdvancedScannerService {
       
       // Extract the actual business website domain from Google Business Profile
       let actualDomain = domain;
-      if (businessProfile?.website) {
+      if (businessProfile && businessProfile.website) {
         try {
           const websiteUrl = new URL(businessProfile.website);
           const extractedDomain = websiteUrl.hostname.replace(/^www\./, '');
@@ -219,8 +219,8 @@ export class AdvancedScannerService {
       console.log(`🔍 ADVANCED SCANNER: actualDomain = ${actualDomain}`);
       console.log(`🔍 ADVANCED SCANNER: businessProfile exists = ${!!businessProfile}`);
       console.log(`🔍 ADVANCED SCANNER: About to call localKeywordRankingService.getLocalKeywordRankings()`);
-      console.log(`🔍 ADVANCED SCANNER: businessProfile.name = ${businessProfile?.name}`);
-      console.log(`🔍 ADVANCED SCANNER: businessProfile.address = ${businessProfile?.address}`);
+      console.log(`🔍 ADVANCED SCANNER: businessProfile.name = ${businessProfile && businessProfile.name ? businessProfile.name : 'undefined'}`);
+      console.log(`🔍 ADVANCED SCANNER: businessProfile.address = ${businessProfile && businessProfile.address ? businessProfile.address : 'undefined'}`);
       
       const localKeywordPromise = Promise.race([
         this.localKeywordRankingService.getLocalKeywordRankings(businessProfile, actualDomain),
