@@ -156,36 +156,69 @@ export class LocalKeywordRankingService {
     restaurantName: string
   ): { position: number | null; matchType: 'domain' | 'name' | 'none' } {
     const cleanDomain = domain.replace(/^https?:\/\//, '').replace(/^www\./, '');
+    const cleanRestaurantName = restaurantName.toLowerCase().trim();
     
-    // First check Local Pack results (positions 1-3 in local pack)
+    console.log(`🔍 LOCAL RANKING: Looking for domain "${cleanDomain}" or name "${cleanRestaurantName}"`);
+    
+    // PRIORITY 1: Check Local Pack results (this is LOCAL SEO!)
+    console.log(`🔍 LOCAL RANKING: Checking ${localPack.length} Local Pack results...`);
     for (let i = 0; i < localPack.length; i++) {
       const localItem = localPack[i];
-      const localDomain = (localItem.domain || '').replace(/^www\./, '');
+      const localDomain = (localItem.domain || '').replace(/^www\./, '').toLowerCase();
       const localTitle = (localItem.title || '').toLowerCase();
+      const localAddress = (localItem.address || '').toLowerCase();
       
-      // Match by domain
-      if (localDomain && localDomain === cleanDomain) {
+      console.log(`🔍 LOCAL RANKING: Local Pack #${i + 1}: "${localTitle}" - ${localDomain} - ${localAddress}`);
+      
+      // Enhanced matching for local results
+      // 1. Domain match
+      if (localDomain && cleanDomain && localDomain === cleanDomain.toLowerCase()) {
+        console.log(`🔍 LOCAL RANKING: ✅ FOUND via domain match at Local Pack position ${i + 1}`);
         return { position: i + 1, matchType: 'domain' };
       }
       
-      // Match by restaurant name
-      if (restaurantName && localTitle.includes(restaurantName.toLowerCase())) {
-        return { position: i + 1, matchType: 'name' };
+      // 2. Restaurant name match (flexible)
+      if (cleanRestaurantName && localTitle) {
+        const nameWords = cleanRestaurantName.split(' ').filter(word => word.length > 2);
+        const titleContainsName = nameWords.some(word => localTitle.includes(word.toLowerCase()));
+        
+        if (titleContainsName || localTitle.includes(cleanRestaurantName)) {
+          console.log(`🔍 LOCAL RANKING: ✅ FOUND via name match at Local Pack position ${i + 1}`);
+          return { position: i + 1, matchType: 'name' };
+        }
       }
     }
 
-    // Then check organic search results (positions start after local pack)
-    const localPackOffset = localPack.length > 0 ? 3 : 0; // Local pack typically takes 3 positions
+    // PRIORITY 2: Check organic results but focus on local/restaurant-related results
+    console.log(`🔍 LOCAL RANKING: Local Pack search complete. Checking ${Math.min(items.length, 20)} organic results...`);
     
     for (let i = 0; i < items.length && i < 20; i++) {
       const item = items[i];
-      const itemDomain = (item.domain || '').replace(/^www\./, '');
+      const itemDomain = (item.domain || '').replace(/^www\./, '').toLowerCase();
+      const itemTitle = (item.title || '').toLowerCase();
       
-      if (itemDomain && itemDomain === cleanDomain) {
-        return { position: (item.rank_group || (i + 1)) + localPackOffset, matchType: 'domain' };
+      // Enhanced organic matching
+      // 1. Domain match
+      if (itemDomain && cleanDomain && itemDomain === cleanDomain.toLowerCase()) {
+        const organicPosition = i + 1 + (localPack.length > 0 ? 3 : 0); // Account for local pack
+        console.log(`🔍 LOCAL RANKING: ✅ FOUND via domain match at organic position ${organicPosition}`);
+        return { position: organicPosition, matchType: 'domain' };
+      }
+      
+      // 2. Title/name match for organic results
+      if (cleanRestaurantName && itemTitle) {
+        const nameWords = cleanRestaurantName.split(' ').filter(word => word.length > 2);
+        const titleContainsName = nameWords.some(word => itemTitle.includes(word.toLowerCase()));
+        
+        if (titleContainsName && (itemTitle.includes('restaurant') || itemTitle.includes('menu') || itemTitle.includes('delivery'))) {
+          const organicPosition = i + 1 + (localPack.length > 0 ? 3 : 0);
+          console.log(`🔍 LOCAL RANKING: ✅ FOUND via name match at organic position ${organicPosition}`);
+          return { position: organicPosition, matchType: 'name' };
+        }
       }
     }
 
+    console.log(`🔍 LOCAL RANKING: ❌ Restaurant not found in Local Pack or top 20 organic results`);
     return { position: null, matchType: 'none' };
   }
 
@@ -280,7 +313,9 @@ export class LocalKeywordRankingService {
           language_code: 'en',
           device: 'desktop',
           depth: 20,
-          max_crawl_pages: 1
+          max_crawl_pages: 1,
+          include_local_pack: true,
+          include_serp_features: true
         }]);
 
         const result = response.data.tasks?.[0]?.result?.[0];

@@ -752,7 +752,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                                             : 'bg-red-100 text-red-800 border-red-300'
                                         }`}
                                       >
-                                        Position #{keyword.position}
+                                        {keyword.position <= 3 ? `Local Pack #${keyword.position}` : `Position #${keyword.position}`}
                                       </Badge>
                                       <a 
                                         href={keyword.searchUrl} 
@@ -776,24 +776,27 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                         
                         {/* Legend */}
                         <div className="mt-3 pt-3 border-t border-gray-200">
-                          <div className="text-xs text-gray-600 mb-2 font-semibold">Position Guide:</div>
+                          <div className="text-xs text-gray-600 mb-2 font-semibold">Local SEO Position Guide:</div>
                           <div className="grid grid-cols-2 gap-2 text-xs">
                             <div className="flex items-center gap-2">
                               <span className="w-3 h-3 bg-green-100 border border-green-300 rounded"></span>
-                              <span>Top 3: Excellent</span>
+                              <span>Local Pack (1-3): Excellent</span>
                             </div>
                             <div className="flex items-center gap-2">
                               <span className="w-3 h-3 bg-yellow-100 border border-yellow-300 rounded"></span>
-                              <span>4-10: Good</span>
+                              <span>Top 10: Good</span>
                             </div>
                             <div className="flex items-center gap-2">
                               <span className="w-3 h-3 bg-orange-100 border border-orange-300 rounded"></span>
                               <span>11-20: Needs work</span>
                             </div>
                             <div className="flex items-center gap-2">
-                              <span className="w-3 h-3 bg-red-100 border border-red-300 rounded"></span>
-                              <span>21+: Poor</span>
+                              <span className="w-3 h-3 bg-gray-100 border border-gray-300 rounded"></span>
+                              <span>Not Found: Poor</span>
                             </div>
+                          </div>
+                          <div className="mt-2 text-xs text-gray-500 italic">
+                            Local Pack positions (1-3) are the map results that appear at the top of local searches - these are the most valuable for restaurants.
                           </div>
                         </div>
                       </div>
