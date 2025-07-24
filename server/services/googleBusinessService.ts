@@ -8,7 +8,6 @@ export interface GoogleBusinessProfile {
   phone?: string;
   address?: string;
   formatted_address?: string;
-  types?: string[];
   photos: {
     total: number;
     quality: 'excellent' | 'good' | 'fair' | 'poor';
@@ -89,7 +88,6 @@ export class GoogleBusinessService {
         website: place.website || 'Not available',
         phone: place.formatted_phone_number ? 'Available' : 'Not available',
         address: place.formatted_address ? place.formatted_address : 'Not available',
-        types: place.types || [],
         hasPhotos: !!place.photos,
         photoCount: place.photos ? place.photos.length : 0,
         hasReviews: !!place.reviews,
@@ -110,7 +108,6 @@ export class GoogleBusinessService {
         phone: place.formatted_phone_number || undefined,
         address: place.formatted_address || undefined,
         formatted_address: place.formatted_address || undefined,
-        types: place.types || [],
         photos: photoAnalysis,
         reviews: reviewAnalysis,
         isVerified: place.business_status === 'OPERATIONAL',

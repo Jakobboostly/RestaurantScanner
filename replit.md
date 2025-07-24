@@ -76,25 +76,19 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
-- July 23, 2025. Updated dashboard UI messaging from "Where You're Going Wrong" to "Missing Ingredients":
-  - **Replaced section headers** - changed all instances of "Where You're Going Wrong" to "Missing Ingredients" across all 4 dashboard tabs (Search, Social, Local, Reviews)
-  - **Enhanced user experience** - friendlier, more solution-focused messaging that feels less confrontational for restaurant owners
-  - **Maintained functionality** - all scoring logic, priority levels (HIGH/MEDIUM/LOW), and actionable insights remain unchanged
-  - **Consistent branding** - updated messaging aligns with restaurant/food industry terminology using "Missing Ingredients" metaphor
-  - **Improved psychology** - reframes issues as missing components rather than failures, encouraging positive action
-- July 23, 2025. Implemented dynamic keyword analysis system replacing static DataForSEO keyword functionality:
-  - **Created DynamicKeywordService** - new location-aware keyword analysis using Google Places data to generate city/cuisine-specific keywords
-  - **Enhanced cuisine mapping** - comprehensive mapping from Google Places business types to searchable cuisine terms with intelligent fallbacks
-  - **Dynamic location extraction** - automatically extracts city/state from Google Places formatted_address for location-specific keyword targeting
-  - **Replaced static keyword analysis** - removed dataForSeoRankedKeywordsService.ts and integrated dynamic keyword generation into advancedScannerService.ts
-  - **Smart keyword generation** - creates location-specific keywords like "pizza provo", "best mexican austin" instead of generic restaurant terms
-  - **Multi-tier fallback system** - Google Places types → business name parsing → generic restaurant fallback ensures no restaurant gets missed
-  - **Authentic ranking data** - uses DataForSEO ranked keywords API with dynamic city/cuisine filters for real ranking positions
-  - **Competitive opportunity analysis** - identifies keywords ranking position 6+ where competitors are winning
-  - **40+ cuisine types supported** - handles everything from pizza/burger to specialized cuisines like ramen/pho/mediterranean
-  - **Search volume filtering** - only shows keywords with meaningful search volume (>100) for commercial viability
-  - **Intent classification** - categorizes keywords as local/commercial/informational for strategic insights
-  - **Removed test files** - cleaned up screenshot-test.tsx and other development test files for cleaner codebase
+- July 23, 2025. Implemented embedded Google search modal for "Where You Rank" functionality:
+  - **Returned to Google search** - Switched back from DuckDuckGo to Google search per user preference for more relevant restaurant results
+  - **Embedded modal interface** - Created in-app modal that displays search functionality without navigating away from the dashboard
+  - **Professional search experience** - Modal shows live Google search context with restaurant name and search terms
+  - **Enhanced user experience** - "Where You Rank" button opens embedded modal instead of external tabs for seamless workflow
+  - **Google restrictions acknowledgment** - Modal includes clear explanation that Google blocks iframe embedding for security reasons
+  - **Educational display** - Shows where actual search results would appear with proper context and instructions
+  - **Improved stay-on-page experience** - Users remain within the Restaurant Scanner interface throughout the ranking check process
+- July 23, 2025. Updated user interface terminology to be more restaurant-themed:
+  - **Changed "Where You're Going Wrong" to "Missing Ingredients"** across all dashboard tabs (Search, Social, Local, Reviews)
+  - Enhanced restaurant industry alignment with ingredient metaphor for missing marketing elements
+  - Maintained all priority levels and recommendations while improving user-friendly language
+  - Updated sections provide same actionable insights with more consultative, solution-oriented tone
 - July 23, 2025. Fixed ES module import issues for deployment compatibility:  
   - **Fixed selenium-webdriver chrome imports** - Updated import statements from `'selenium-webdriver/chrome'` to `'selenium-webdriver/chrome.js'` for proper ES module compatibility
   - **Enhanced Chrome binary path detection** - Implemented flexible Chrome binary detection for different deployment environments including Cloud Run, standard Linux, and Replit Nix
