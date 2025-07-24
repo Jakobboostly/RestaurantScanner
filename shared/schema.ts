@@ -117,6 +117,9 @@ export const scanResultSchema = z.object({
     matchType: z.enum(['domain', 'name', 'none']),
     searchEngine: z.literal('google'),
     location: z.string(),
+    searchVolume: z.number().optional(),
+    difficulty: z.number().optional(),
+    cpc: z.number().optional(),
   })),
   // Removed keywordAnalysis - replaced with localKeywordRankings
   competitors: z.array(z.object({

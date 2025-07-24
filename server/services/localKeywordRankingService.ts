@@ -15,6 +15,9 @@ export interface LocalKeywordRanking {
   matchType: 'domain' | 'name' | 'none';
   searchEngine: 'google';
   location: string;
+  searchVolume?: number;
+  difficulty?: number;
+  cpc?: number;
 }
 
 export interface CuisineLocationData {
@@ -187,6 +190,29 @@ export class LocalKeywordRankingService {
   }
 
   /**
+   * Get search volume data for keywords
+   */
+  private async getSearchVolumeData(keywords: string[], location: string): Promise<any[]> {
+    try {
+      console.log('🔍 LOCAL RANKING: Fetching search volume for keywords:', keywords);
+      
+      const response = await this.client.post('/keywords_data/google/search_volume/live', [{
+        keywords: keywords,
+        location_name: location,
+        language_code: 'en'
+      }]);
+
+      const result = response.data.tasks?.[0]?.result || [];
+      console.log('🔍 LOCAL RANKING: Search volume API response:', result.length, 'items');
+      
+      return result;
+    } catch (error) {
+      console.error('🔍 LOCAL RANKING: Error fetching search volume:', error);
+      return [];
+    }
+  }
+
+  /**
    * Get local keyword rankings for a restaurant using the 8 specified patterns
    */
   async getLocalKeywordRankings(
@@ -214,8 +240,12 @@ export class LocalKeywordRankingService {
     const localKeywords = this.generateLocalKeywords(cuisineLocationData);
     console.log('🔍 LOCAL RANKING: Generated keywords:', localKeywords);
 
+    // First, get search volume data for all keywords
+    const keywordVolumeData = await this.getSearchVolumeData(localKeywords, locationString);
+    console.log('🔍 LOCAL RANKING: Search volume data received:', keywordVolumeData.length);
+
     const rankings: LocalKeywordRanking[] = [];
-    const location = `${city}, ${state}, United States`;
+    const locationString = `${city}, ${state}, United States`;
 
     // Process each keyword with DataForSEO SERP API
     for (const keyword of localKeywords) {
@@ -224,7 +254,7 @@ export class LocalKeywordRankingService {
 
         const response = await this.client.post('/serp/google/organic/live', [{
           keyword,
-          location_name: location,
+          location_name: locationString,
           language_code: 'en',
           device: 'desktop',
           depth: 50
@@ -239,14 +269,20 @@ export class LocalKeywordRankingService {
         // Find restaurant position
         const { position, matchType } = this.findRestaurantInResults(items, localPack, domain, restaurantName);
 
+        // Get search volume data for this keyword
+        const volumeData = keywordVolumeData.find(item => item.keyword === keyword);
+        
         const ranking: LocalKeywordRanking = {
           keyword,
           position,
-          searchUrl: `https://www.google.com/search?q=${encodeURIComponent(keyword)}&near=${encodeURIComponent(location)}`,
+          searchUrl: `https://www.google.com/search?q=${encodeURIComponent(keyword)}&near=${encodeURIComponent(locationString)}`,
           found: position !== null,
           matchType,
           searchEngine: 'google',
-          location
+          location: locationString,
+          searchVolume: volumeData?.search_volume || 0,
+          difficulty: volumeData?.keyword_info?.keyword_difficulty || 0,
+          cpc: volumeData?.keyword_info?.cpc || 0
         };
 
         rankings.push(ranking);
@@ -263,6 +299,9 @@ export class LocalKeywordRankingService {
       } catch (error) {
         console.error(`🔍 LOCAL RANKING: Error checking "${keyword}":`, error);
         
+        // Get search volume data for this keyword even on error
+        const volumeData = keywordVolumeData.find(item => item.keyword === keyword);
+        
         rankings.push({
           keyword,
           position: null,
@@ -270,7 +309,10 @@ export class LocalKeywordRankingService {
           found: false,
           matchType: 'none',
           searchEngine: 'google',
-          location
+          location: locationString,
+          searchVolume: volumeData?.search_volume || 0,
+          difficulty: volumeData?.keyword_info?.keyword_difficulty || 0,
+          cpc: volumeData?.keyword_info?.cpc || 0
         });
       }
     }
