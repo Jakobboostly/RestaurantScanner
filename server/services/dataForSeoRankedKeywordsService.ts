@@ -180,8 +180,8 @@ export class DataForSeoRankedKeywordsService {
             }
           }
 
-          // Only include if ranking in positions 6+ (competitors beating you)
-          if (position > 5) {
+          // Include all keywords that have a ranking position
+          if (position > 0) {
             results.push({
               keyword: keyword,
               position: position,
@@ -189,7 +189,7 @@ export class DataForSeoRankedKeywordsService {
               difficulty: volumeData?.keyword_info?.keyword_difficulty || 0,
               cpc: volumeData?.keyword_info?.cpc || 0,
               competition: volumeData?.keyword_info?.competition || 0,
-              // Calculate opportunity score
+              // Calculate opportunity score (higher for positions 6+ where competitors beat you)
               opportunityScore: this.calculateOpportunityScore(position, volumeData?.keyword_info?.search_volume || 0)
             });
           }

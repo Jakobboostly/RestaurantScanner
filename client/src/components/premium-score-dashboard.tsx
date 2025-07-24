@@ -707,10 +707,10 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                       
                       {/* Where your competition is winning */}
                       <div className="bg-[#5F5FFF]/5 border border-[#5F5FFF]/20 rounded-lg p-3 space-y-2">
-                        <h4 className="text-sm font-semibold text-[#5F5FFF] mb-2">Where your competition is winning</h4>
+                        <h4 className="text-sm font-semibold text-[#5F5FFF] mb-2">Key Restaurant Keywords</h4>
                         <div className="space-y-1">
                           {(() => {
-                            // Show competitive opportunity keywords (ranking 6+)
+                            // Show targeted competitive keywords (all positions)
                             const competitiveKeywords = scanResult.competitiveOpportunityKeywords || [];
                             
                             console.log('🔍 Frontend displaying competitive opportunity keywords:', competitiveKeywords);
@@ -718,7 +718,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                             if (competitiveKeywords.length === 0) {
                               return (
                                 <div className="text-xs text-gray-500 text-center py-2">
-                                  No competitive opportunities found. Your competition is strong!
+                                  No targeted keyword data available yet.
                                 </div>
                               );
                             }
@@ -849,34 +849,37 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                           {(() => {
                             const competitiveKeywords = scanResult.competitiveOpportunityKeywords || [];
                             const keywordCount = competitiveKeywords.length;
+                            const competitiveOpportunityCount = competitiveKeywords.filter(k => k.position > 5).length;
                             
                             return (
                               <>
                                 <p className="text-white font-black text-2xl mb-2 drop-shadow-lg">
-                                  You're at risk of losing customers by not ranking on {keywordCount} keywords!
+                                  Tracking {keywordCount} key restaurant keywords for your area!
                                 </p>
-                                {keywordCount > 0 && (
+                                {competitiveOpportunityCount > 0 && (
                                   <div className="text-yellow-200 text-sm font-bold mb-2">
-                                    Where your competition is beating you:
+                                    Keywords where competitors are beating you (positions 6+):
                                   </div>
                                 )}
-                                {keywordCount > 0 && (
+                                {competitiveKeywords.length > 0 && (
                                   <div className="space-y-1 text-left max-h-32 overflow-y-auto">
                                     {competitiveKeywords.slice(0, 3).map((keyword, index) => (
                                       <div key={index} className="flex justify-between items-center text-xs bg-white/10 rounded px-2 py-1">
                                         <span className="text-white truncate pr-2">
                                           "{keyword.keyword}"
                                         </span>
-                                        <span className="text-yellow-300 font-bold">
+                                        <span className={`font-bold ${
+                                          keyword.position <= 5 ? 'text-green-300' : 'text-yellow-300'
+                                        }`}>
                                           #{keyword.position}
                                         </span>
                                       </div>
                                     ))}
                                   </div>
                                 )}
-                                {keywordCount === 0 && (
+                                {competitiveKeywords.length === 0 && (
                                   <p className="text-yellow-200 text-base font-bold">
-                                    🔥 Your competition is strong across all keywords
+                                    🔍 Gathering targeted keyword data...
                                   </p>
                                 )}
                               </>

@@ -76,6 +76,13 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 24, 2025. Enhanced competitive keywords to show all targeted keywords with rankings:
+  - **Updated keyword display logic** - Changed from showing only competitive opportunities (positions 6+) to showing all targeted keywords with their actual ranking positions
+  - **Enhanced frontend display** - "Key Restaurant Keywords" section now displays all 8 targeted keywords with color-coded position badges (green for positions 1-5, yellow/orange for 6+)
+  - **Improved user experience** - Users can now see complete picture of how they rank for all targeted restaurant keywords, not just areas where competitors are winning
+  - **Better data visualization** - Alert section updated to show total keyword count being tracked with distinction between good rankings (1-5) and competitive opportunities (6+)
+  - **Maintained authenticity** - All rankings still use real DataForSEO API data with targeted restaurant-specific keywords based on cuisine type and location
+  - **Updated messaging** - Changed from warning-focused "Where your competition is winning" to informative "Key Restaurant Keywords" tracking display
 - July 24, 2025. Updated competitive opportunity section terminology:
   - **Changed "Where your competition is winning" to "Missing Ingredients"** to align with restaurant-themed terminology throughout the dashboard
   - Updated section headers, labels, and comments to use the new "Missing Ingredients" terminology for competitive opportunity keywords (rankings 6+)
