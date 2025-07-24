@@ -99,9 +99,12 @@ export class AdvancedScannerService {
     const MAX_SCAN_TIME = PHASE_DURATION * TOTAL_PHASES; // 24 seconds total
     
     try {
+      console.log('🔍 ADVANCED SCANNER: Starting scan phases...');
+      
       // Phase 1: Finding restaurant website (4 seconds)
       const phase1Start = Date.now();
       onProgress({ progress: 8, status: 'Finding restaurant website...' });
+      console.log('🔍 ADVANCED SCANNER: Phase 1 started');
       
       let businessProfile = null;
       let profileAnalysis = null;
@@ -162,6 +165,7 @@ export class AdvancedScannerService {
       // Phase 2: Analyzing performance (4 seconds)
       const phase2Start = Date.now();
       onProgress({ progress: 25, status: 'Analyzing performance...' });
+      console.log('🔍 ADVANCED SCANNER: Phase 2 started');
       
       // Start performance analysis immediately
       const performancePromise = Promise.race([
@@ -215,6 +219,8 @@ export class AdvancedScannerService {
       console.log(`🔍 ADVANCED SCANNER: actualDomain = ${actualDomain}`);
       console.log(`🔍 ADVANCED SCANNER: businessProfile exists = ${!!businessProfile}`);
       console.log(`🔍 ADVANCED SCANNER: About to call localKeywordRankingService.getLocalKeywordRankings()`);
+      console.log(`🔍 ADVANCED SCANNER: businessProfile.name = ${businessProfile?.name}`);
+      console.log(`🔍 ADVANCED SCANNER: businessProfile.address = ${businessProfile?.address}`);
       
       const localKeywordPromise = Promise.race([
         this.localKeywordRankingService.getLocalKeywordRankings(businessProfile, actualDomain),
