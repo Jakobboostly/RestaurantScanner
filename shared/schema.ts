@@ -109,19 +109,33 @@ export const scanResultSchema = z.object({
     effort: z.enum(['low', 'medium', 'high']),
     category: z.string(),
   })),
-  localKeywordRankings: z.array(z.object({
+  keywords: z.array(z.object({
     keyword: z.string(),
     position: z.number().nullable(),
-    searchUrl: z.string(),
-    found: z.boolean(),
-    matchType: z.enum(['domain', 'name', 'none']),
-    searchEngine: z.literal('google'),
-    location: z.string(),
-    searchVolume: z.number().optional(),
-    difficulty: z.number().optional(),
+    searchVolume: z.number(),
+    difficulty: z.number(),
+    intent: z.string(),
     cpc: z.number().optional(),
+    competition: z.number().optional(),
   })),
-  // Removed keywordAnalysis - replaced with localKeywordRankings
+  keywordAnalysis: z.object({
+    targetKeywords: z.array(z.object({
+      keyword: z.string(),
+      position: z.number().nullable(),
+      searchVolume: z.number(),
+      difficulty: z.number(),
+      intent: z.string(),
+      cpc: z.number().optional(),
+      competition: z.number().optional(),
+    })),
+    rankingPositions: z.array(z.object({
+      keyword: z.string(),
+      position: z.number().nullable(),
+      difficulty: z.number(),
+    })),
+    searchVolumes: z.record(z.string(), z.number()),
+    opportunities: z.array(z.string()),
+  }),
   competitors: z.array(z.object({
     name: z.string(),
     domain: z.string(),
@@ -168,6 +182,9 @@ export const scanResultSchema = z.object({
     cls: z.number(),
     fid: z.number(),
   }),
+  backlinks: z.number(),
+  organicTraffic: z.number(),
+  scanDate: z.string(),
   businessProfile: z.object({
     name: z.string(),
     rating: z.number(),
@@ -342,7 +359,33 @@ export const scanResultSchema = z.object({
       }),
     }).optional(),
   }).optional(),
-
+  serpScreenshots: z.array(z.object({
+    keyword: z.string(),
+    location: z.string(),
+    screenshotUrl: z.string(),
+    restaurantRanking: z.object({
+      position: z.number(),
+      found: z.boolean(),
+      title: z.string(),
+      url: z.string(),
+      snippet: z.string(),
+    }).nullable(),
+    totalResults: z.number(),
+    searchUrl: z.string(),
+    localPackPresent: z.boolean(),
+    localPackResults: z.array(z.object({
+      name: z.string(),
+      rating: z.number(),
+      reviews: z.number(),
+      position: z.number(),
+    })),
+  })).optional(),
+  restaurantSearchScreenshot: z.object({
+    searchQuery: z.string(),
+    screenshotBase64: z.string(),
+    timestamp: z.string(),
+    success: z.boolean(),
+  }).nullable(),
 });
 
 export type RestaurantSearchResult = z.infer<typeof restaurantSearchResultSchema>;

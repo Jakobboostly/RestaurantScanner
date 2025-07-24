@@ -1,5 +1,6 @@
 import { GoogleBusinessService } from './googleBusinessService.js';
-import { LocalKeywordRankingService } from './localKeywordRankingService.js';
+
+import { DataForSeoRankedKeywordsService } from './dataForSeoRankedKeywordsService.js';
 import { AIRecommendationService } from './aiRecommendationService.js';
 import { GoogleReviewsService } from './googleReviewsService.js';
 import { ApifyReviewsService } from './apifyReviewsService.js';
@@ -7,7 +8,8 @@ import { SocialMediaDetector } from './socialMediaDetector.js';
 import { EnhancedFacebookDetector } from './enhancedFacebookDetector.js';
 import { EnhancedSocialMediaDetector } from './enhancedSocialMediaDetector.js';
 import { FacebookPostsScraperService } from './facebookPostsScraperService.js';
-
+import { SeleniumScreenshotService } from './seleniumScreenshotService.js';
+import { RestaurantSearchScreenshotService } from './restaurantSearchScreenshotService.js';
 import { OpenAIReviewAnalysisService } from './openaiReviewAnalysisService.js';
 import { ScanResult } from '@shared/schema';
 import axios from 'axios';
@@ -20,7 +22,12 @@ export interface ScanProgress {
 }
 
 export interface EnhancedScanResult extends ScanResult {
-  // Removed keywordAnalysis - now using localKeywordRankings from ScanResult
+  keywordAnalysis: {
+    targetKeywords: any[];
+    rankingPositions: any[];
+    searchVolumes: { [key: string]: number };
+    opportunities: string[];
+  };
   competitorIntelligence: {
     organicCompetitors: any[];
     keywordGaps: string[];
@@ -32,7 +39,7 @@ export interface EnhancedScanResult extends ScanResult {
 
 export class AdvancedScannerService {
   private googleBusinessService: GoogleBusinessService;
-  private localKeywordRankingService: LocalKeywordRankingService;
+  private rankedKeywordsService: DataForSeoRankedKeywordsService;
 
   private aiRecommendationService: AIRecommendationService;
   private googleReviewsService: GoogleReviewsService;
@@ -41,7 +48,8 @@ export class AdvancedScannerService {
   private enhancedFacebookDetector: EnhancedFacebookDetector;
   private enhancedSocialMediaDetector: EnhancedSocialMediaDetector;
   private facebookPostsScraperService: FacebookPostsScraperService;
-
+  private seleniumScreenshotService: SeleniumScreenshotService;
+  private restaurantSearchScreenshotService: RestaurantSearchScreenshotService;
   private openaiReviewAnalysisService: OpenAIReviewAnalysisService;
   
   // Static cache for mood analysis results
@@ -61,9 +69,8 @@ export class AdvancedScannerService {
 
     apifyApiKey?: string
   ) {
-    console.log('🚀🚀🚀 CRITICAL DEBUG: AdvancedScannerService constructor called!');
     this.googleBusinessService = new GoogleBusinessService(googleApiKey);
-    this.localKeywordRankingService = new LocalKeywordRankingService();
+    this.rankedKeywordsService = new DataForSeoRankedKeywordsService(dataForSeoLogin, dataForSeoPassword);
     this.aiRecommendationService = new AIRecommendationService();
     this.googleReviewsService = new GoogleReviewsService(googleApiKey);
     this.apifyReviewsService = apifyApiKey ? new ApifyReviewsService(apifyApiKey) : undefined;
@@ -71,9 +78,9 @@ export class AdvancedScannerService {
     this.enhancedFacebookDetector = new EnhancedFacebookDetector();
     this.enhancedSocialMediaDetector = new EnhancedSocialMediaDetector();
     this.facebookPostsScraperService = new FacebookPostsScraperService(apifyApiKey || '');
-
+    this.seleniumScreenshotService = new SeleniumScreenshotService();
+    this.restaurantSearchScreenshotService = new RestaurantSearchScreenshotService();
     this.openaiReviewAnalysisService = new OpenAIReviewAnalysisService();
-    console.log('🚀🚀🚀 CRITICAL DEBUG: AdvancedScannerService constructor completed successfully!');
   }
 
   async scanRestaurantAdvanced(
@@ -85,7 +92,6 @@ export class AdvancedScannerService {
     onProgress: (progress: ScanProgress) => void,
     manualFacebookUrl?: string
   ): Promise<EnhancedScanResult> {
-    console.log('🚀🚀🚀 CRITICAL DEBUG: scanRestaurantAdvanced method called!');
     console.log('🚀 Advanced scan starting with parameters:');
     console.log('  - placeId:', placeId);
     console.log('  - domain:', domain);
@@ -102,15 +108,12 @@ export class AdvancedScannerService {
     const MAX_SCAN_TIME = PHASE_DURATION * TOTAL_PHASES; // 24 seconds total
     
     try {
-      console.log('🔍 ADVANCED SCANNER: Starting scan phases...');
-      
       // Phase 1: Finding restaurant website (4 seconds)
       const phase1Start = Date.now();
       onProgress({ progress: 8, status: 'Finding restaurant website...' });
-      console.log('🔍 ADVANCED SCANNER: Phase 1 started');
       
-      let businessProfile: any = null;
-      let profileAnalysis: any = null;
+      let businessProfile = null;
+      let profileAnalysis = null;
       
       const profilePromise = Promise.race([
         this.googleBusinessService.getBusinessProfile(placeId),
@@ -168,7 +171,6 @@ export class AdvancedScannerService {
       // Phase 2: Analyzing performance (4 seconds)
       const phase2Start = Date.now();
       onProgress({ progress: 25, status: 'Analyzing performance...' });
-      console.log('🔍 ADVANCED SCANNER: Phase 2 started');
       
       // Start performance analysis immediately
       const performancePromise = Promise.race([
@@ -196,11 +198,10 @@ export class AdvancedScannerService {
       // Phase 3: Checking search rankings (4 seconds)
       const phase3Start = Date.now();
       onProgress({ progress: 42, status: 'Checking search rankings...' });
-      console.log('🔍 ADVANCED SCANNER: Phase 3 started - Checking search rankings');
       
       // Extract the actual business website domain from Google Business Profile
       let actualDomain = domain;
-      if (businessProfile && businessProfile.website) {
+      if (businessProfile?.website) {
         try {
           const websiteUrl = new URL(businessProfile.website);
           const extractedDomain = websiteUrl.hostname.replace(/^www\./, '');
@@ -217,31 +218,75 @@ export class AdvancedScannerService {
         }
       }
       
-      // Get local keyword rankings using the 8 specific patterns
-      console.log(`🔍 ADVANCED SCANNER: Getting local keyword rankings for business profile`);
-      console.log(`🔍 ADVANCED SCANNER: actualDomain = ${actualDomain}`);
-      console.log(`🔍 ADVANCED SCANNER: businessProfile exists = ${!!businessProfile}`);
-      console.log(`🔍 ADVANCED SCANNER: About to call localKeywordRankingService.getLocalKeywordRankings()`);
-      console.log(`🔍 ADVANCED SCANNER: businessProfile.name = ${businessProfile && businessProfile.name ? businessProfile.name : 'undefined'}`);
-      console.log(`🔍 ADVANCED SCANNER: businessProfile.address = ${businessProfile && businessProfile.address ? businessProfile.address : 'undefined'}`);
+      // Get authentic ranked keywords using DataForSEO ranked keywords API
+      console.log(`🔍 ADVANCED SCANNER: Getting real ranked keywords for domain: ${actualDomain}`);
       
-      const localKeywordPromise = Promise.race([
-        this.localKeywordRankingService.getLocalKeywordRankings(businessProfile, actualDomain),
+      const rankedKeywordsPromise = Promise.race([
+        this.rankedKeywordsService.getRankedKeywords(actualDomain, 'United States', 'en', 10),
         new Promise((_, reject) => 
-          setTimeout(() => reject(new Error('Local keyword rankings timeout after 25 seconds')), 25000)
+          setTimeout(() => reject(new Error('Ranked keywords timeout')), 8000)
         )
       ]).catch(error => {
-        console.error('🔍 ADVANCED SCANNER: Local keyword rankings failed:', error);
-        console.error('🔍 ADVANCED SCANNER: Error message:', error.message);
-        console.error('🔍 ADVANCED SCANNER: Error stack:', error.stack);
+        console.error('Ranked keywords failed:', error);
         return [];
       });
       
-      const localKeywordRankings = await localKeywordPromise as any[];
-      console.log(`Found rankings for ${localKeywordRankings.filter(r => r.found).length}/${localKeywordRankings.length} local keywords`);
+      const rankedKeywords = await rankedKeywordsPromise as any[];
+      console.log(`Found ${rankedKeywords.length} ranked keywords for ${actualDomain}`);
       
-      // No more competitive opportunity keywords - replaced with local focus
-      processedCompetitiveKeywords = [];
+      // Get competitive opportunity keywords (ranking 6+) - "Where your competition is winning"
+      console.log(`🔍 ADVANCED SCANNER: Getting competitive opportunity keywords (rank 6+) for domain: ${actualDomain}`);
+      
+      const competitiveOpportunityPromise = Promise.race([
+        this.rankedKeywordsService.getCompetitiveOpportunityKeywords(actualDomain, 'United States', 'en', 5),
+        new Promise((_, reject) => 
+          setTimeout(() => reject(new Error('Competitive opportunity keywords timeout')), 8000)
+        )
+      ]).catch(error => {
+        console.error('Competitive opportunity keywords failed:', error);
+        return [];
+      });
+      
+      const competitiveOpportunityKeywords = await competitiveOpportunityPromise as any[];
+      console.log(`Found ${competitiveOpportunityKeywords.length} competitive opportunity keywords for ${actualDomain}`);
+      
+      // Process the authentic ranked keywords
+      const processedKeywords = rankedKeywords.map((keyword: any) => ({
+        keyword: keyword.keyword,
+        position: keyword.position,
+        searchVolume: keyword.searchVolume,
+        difficulty: keyword.difficulty,
+        intent: keyword.intent,
+        cpc: keyword.cpc,
+        competition: keyword.competition,
+        opportunity: keyword.position <= 10 ? 100 : (keyword.position <= 20 ? 75 : 50),
+        url: keyword.url,
+        title: keyword.title,
+        description: keyword.description,
+        isNew: keyword.isNew,
+        isLost: keyword.isLost,
+        positionChange: keyword.positionChange,
+        previousPosition: keyword.previousPosition
+      }));
+      
+      // Process competitive opportunity keywords
+      processedCompetitiveKeywords = competitiveOpportunityKeywords.map((keyword: any) => ({
+        keyword: keyword.keyword,
+        position: keyword.position,
+        searchVolume: keyword.searchVolume,
+        difficulty: keyword.difficulty,
+        intent: keyword.intent,
+        cpc: keyword.cpc,
+        competition: keyword.competition,
+        opportunity: keyword.position > 20 ? 25 : (keyword.position > 10 ? 50 : 75),
+        url: keyword.url,
+        title: keyword.title,
+        description: keyword.description,
+        isNew: keyword.isNew,
+        isLost: keyword.isLost,
+        positionChange: keyword.positionChange,
+        previousPosition: keyword.previousPosition
+      }));
       
       // Wait for phase 3 to complete (4 seconds total)
       const phase3Elapsed = Date.now() - phase3Start;
@@ -359,10 +404,94 @@ export class AdvancedScannerService {
       const phase6Start = Date.now();
       onProgress({ progress: 92, status: 'Generating recommendations...' });
 
-      console.log('🎯 Phase 6: Finalizing analysis...');
-      
-      // Simple empty SERP analysis since screenshots are disabled
+      // Quick SERP Analysis with Screenshot (within remaining time)
       let serpAnalysis = [];
+      let serpScreenshots = [];
+      
+      console.log('🎯 Phase 6: Starting SERP Analysis and Screenshot Capture');
+      
+      try {
+        // Generate a more relevant search query based on cuisine type and city
+        const cuisineType = this.extractCuisineType(businessProfile);
+        const primaryKeyword = this.generatePrimaryKeywords(restaurantName, businessProfile)[0];
+        
+        // Extract city and state from Google Places API business profile
+        const locationData = businessProfile?.address ? 
+          this.extractCityFromAddress(businessProfile.address) : 
+          { city: 'Unknown', state: 'Unknown' };
+        
+        // Create a food-type and location-specific search query
+        const foodSearchQuery = locationData.city !== 'Unknown' ? 
+          `${cuisineType} ${locationData.city}` : 
+          `${cuisineType} near me`;
+        
+        console.log(`Starting SERP analysis and screenshot capture for keyword: "${primaryKeyword}"`);
+        console.log(`Food-specific screenshot query: "${foodSearchQuery}"`);
+        console.log(`Extracted cuisine type: "${cuisineType}"`);
+        console.log(`Google Places address: "${businessProfile?.address}"`);
+        console.log(`Extracted location: ${locationData.city}, ${locationData.state}`);
+        
+        // Simplified SERP analysis using ranked keywords data
+        const serpPromise = Promise.resolve([]);
+        
+        console.log('Initiating screenshot capture...');
+        
+        const screenshotPromise = Promise.race([
+          this.seleniumScreenshotService.captureGoogleSearch(
+            cuisineType, 
+            locationData.city, 
+            restaurantName, 
+            domain
+          ),
+          new Promise((_, reject) => 
+            setTimeout(() => reject(new Error('SERP screenshot timeout')), 25000)
+          )
+        ]);
+        
+        const [serpResult, screenshotResult] = await Promise.allSettled([serpPromise, screenshotPromise]);
+        
+        if (serpResult.status === 'fulfilled') {
+          serpAnalysis = Array.isArray(serpResult.value) ? serpResult.value : [];
+        } else {
+          console.error(`SERP analysis failed for "${primaryKeyword}":`, serpResult.reason);
+        }
+        
+        console.log(`Screenshot result status: ${screenshotResult.status}`);
+        if (screenshotResult.status === 'fulfilled') {
+          serpScreenshots = [screenshotResult.value];
+          console.log(`SERP screenshot captured successfully for "${primaryKeyword}"`);
+          console.log('Screenshot URL:', screenshotResult.value.screenshotUrl || 'No URL provided');
+          console.log('Full screenshot result:', JSON.stringify(screenshotResult.value, null, 2));
+        } else {
+          console.error(`SERP screenshot failed for "${primaryKeyword}":`, screenshotResult.reason);
+          console.error('Screenshot service error details:', screenshotResult.reason?.message || screenshotResult.reason);
+          
+          // Create a fallback screenshot structure to test the UI
+          const fallbackScreenshot = {
+            keyword: primaryKeyword,
+            location: this.extractCity(restaurantName) || 'United States',
+            screenshotUrl: '', // Empty for now
+            restaurantRanking: {
+              found: false,
+              position: 0,
+              title: '',
+              url: '',
+              snippet: ''
+            },
+            totalResults: 0,
+            searchUrl: `https://www.google.com/search?q=${encodeURIComponent(primaryKeyword)}`,
+            localPackPresent: false,
+            localPackResults: []
+          };
+          
+          console.log('Using fallback screenshot structure - screenshots will show search URL');
+          serpScreenshots = [fallbackScreenshot]; // Enable fallback to provide UI content
+        }
+        
+        console.log('Fast SERP analysis completed');
+      } catch (error) {
+        console.error('SERP analysis failed:', error);
+      }
       
       // Wait for phase 6 to complete (4 seconds total)
       const phase6Elapsed = Date.now() - phase6Start;
@@ -381,12 +510,14 @@ export class AdvancedScannerService {
         competitors,
         mobileExperience,
         desktopResult,
-        localKeywordRankings,
+        processedKeywords,
         serpAnalysis,
         [],
         reviewsAnalysis,
         socialMediaLinks,
         profileAnalysis,
+        serpScreenshots,
+        null, // Remove restaurant search screenshot for now
         processedCompetitiveKeywords
       );
 
@@ -415,16 +546,18 @@ export class AdvancedScannerService {
     competitors: any[],
     mobileExperience: any,
     performanceMetrics: any,
-    localKeywordRankings: any[],
+    processedKeywords: any[],
     serpAnalysis: any[],
     competitorInsights: any[],
     reviewsAnalysis: any,
     socialMediaLinks: any,
     profileAnalysis: any = null,
+    serpScreenshots: any[] = [],
+    restaurantSearchScreenshot: any = null,
     processedCompetitiveKeywords: any[] = []
   ): EnhancedScanResult {
-    // localKeywordRankings now contains the 8 specific local search patterns
-    const keywordData = localKeywordRankings;
+    // Map processedKeywords to keywordData for compatibility with existing methods
+    const keywordData = processedKeywords;
     
     // Calculate enhanced scores
     const businessScore = this.calculateBusinessScore(businessProfile);
@@ -564,8 +697,9 @@ export class AdvancedScannerService {
       userExperience: accessibilityScore,
       issues,
       recommendations,
-      localKeywordRankings: keywordData,  // 8 specific local search patterns with authentic rankings
-      competitiveOpportunityKeywords: processedCompetitiveKeywords || [],  // Removed - replaced with local focus
+      keywords: enrichedKeywordData,  // Primary keyword location with position data
+      competitiveOpportunityKeywords: processedCompetitiveKeywords || [],  // "Where your competition is winning"
+      keywordAnalysis: enhancedKeywordAnalysis,
       competitors: await this.generateDetailedCompetitorAnalysis(competitors, restaurantName, businessProfile, keywordData),
       competitorIntelligence,
       serpFeatures,
@@ -610,7 +744,9 @@ export class AdvancedScannerService {
         tiktok: socialMediaLinks?.tiktok || null,
         linkedin: socialMediaLinks?.linkedin || null
       },
-      profileAnalysis: profileAnalysis
+      profileAnalysis: profileAnalysis,
+      serpScreenshots: serpScreenshots || [],
+      restaurantSearchScreenshot: restaurantSearchScreenshot
     };
 
     // Debug: Log the final scan result structure to verify all data inclusion

@@ -92,13 +92,16 @@ function EnhancedResultsDashboard({ scanResult, restaurantName }: EnhancedResult
     return Math.round((searchVolume / difficulty) * 100);
   };
 
-  // Process local keyword ranking data for visualizations
+  // Process keyword data for visualizations
   const keywordData = useMemo(() => {
-    // Use the new local keyword rankings structure
-    const keywords = scanResult.localKeywordRankings || [];
+    // Try multiple possible keyword sources
+    const keywords = scanResult.keywordAnalysis?.targetKeywords || 
+                     scanResult.keywords || 
+                     [];
     
-    console.log('Frontend processing local keyword rankings:', keywords);
+    console.log('Frontend processing keywords:', keywords);
     console.log('SERP features from backend:', scanResult.serpFeatures);
+    console.log('Ranking positions:', scanResult.keywordAnalysis?.rankingPositions);
     
     return keywords.map((keyword: any) => {
       // Handle potential DataForSEO API response objects
