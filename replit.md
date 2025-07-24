@@ -84,6 +84,7 @@ This is a comprehensive restaurant website scanner application built with React 
   - **Fixed duplicate properties** - Resolved schema errors caused by duplicate `backlinks`, `organicTraffic`, and `scanDate` properties
   - **Maintained core functionality** - Restaurant scanner still provides comprehensive analysis including SEO, competitor insights, and performance metrics without visual capture
   - **Eliminated screenshot dependencies** - Removed Selenium WebDriver, Puppeteer, and Apify screenshot integrations while preserving other Apify services
+  - **Complete file cleanup** - Deleted screenshots folder and all test files (test-*.js, test-*.cjs, test-*.ts) for clean project structure
 - July 23, 2025. Implemented embedded Google search modal for "Where You Rank" functionality:
   - **Returned to Google search** - Switched back from DuckDuckGo to Google search per user preference for more relevant restaurant results
   - **Embedded modal interface** - Created in-app modal that displays search functionality without navigating away from the dashboard
