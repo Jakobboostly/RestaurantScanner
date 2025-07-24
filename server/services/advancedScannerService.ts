@@ -61,6 +61,7 @@ export class AdvancedScannerService {
 
     apifyApiKey?: string
   ) {
+    console.log('🚀🚀🚀 CRITICAL DEBUG: AdvancedScannerService constructor called!');
     this.googleBusinessService = new GoogleBusinessService(googleApiKey);
     this.localKeywordRankingService = new LocalKeywordRankingService(dataForSeoLogin, dataForSeoPassword);
     this.aiRecommendationService = new AIRecommendationService();
@@ -72,6 +73,7 @@ export class AdvancedScannerService {
     this.facebookPostsScraperService = new FacebookPostsScraperService(apifyApiKey || '');
 
     this.openaiReviewAnalysisService = new OpenAIReviewAnalysisService();
+    console.log('🚀🚀🚀 CRITICAL DEBUG: AdvancedScannerService constructor completed successfully!');
   }
 
   async scanRestaurantAdvanced(
