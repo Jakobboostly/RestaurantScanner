@@ -189,6 +189,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.setHeader('Access-Control-Allow-Origin', '*');
       res.setHeader('Access-Control-Allow-Headers', 'Cache-Control');
 
+      console.log('🚀🚀🚀 CRITICAL DEBUG: About to call scanRestaurantAdvanced method!');
       const scanResult = await dataForSeoScannerService.scanRestaurantAdvanced(
         placeId || '',
         domain,
@@ -201,6 +202,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         },
         manualFacebookUrl
       );
+      console.log('🚀🚀🚀 CRITICAL DEBUG: scanRestaurantAdvanced method completed!');
 
       // Send completion message with debugging
       const completionEvent = {
