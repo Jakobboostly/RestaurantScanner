@@ -705,9 +705,9 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                         <span className="font-medium">{scanResult.domainAuthority || 0}</span>
                       </div>
                       
-                      {/* Missing Ingredients */}
+                      {/* Where your competition is winning */}
                       <div className="bg-[#5F5FFF]/5 border border-[#5F5FFF]/20 rounded-lg p-3 space-y-2">
-                        <h4 className="text-sm font-semibold text-[#5F5FFF] mb-2">Missing Ingredients</h4>
+                        <h4 className="text-sm font-semibold text-[#5F5FFF] mb-2">Where your competition is winning</h4>
                         <div className="space-y-1">
                           {(() => {
                             // Show competitive opportunity keywords (ranking 6+)
@@ -857,7 +857,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                                 </p>
                                 {keywordCount > 0 && (
                                   <div className="text-yellow-200 text-sm font-bold mb-2">
-                                    Missing Ingredients:
+                                    Where your competition is beating you:
                                   </div>
                                 )}
                                 {keywordCount > 0 && (
