@@ -8,8 +8,7 @@ import { SocialMediaDetector } from './socialMediaDetector.js';
 import { EnhancedFacebookDetector } from './enhancedFacebookDetector.js';
 import { EnhancedSocialMediaDetector } from './enhancedSocialMediaDetector.js';
 import { FacebookPostsScraperService } from './facebookPostsScraperService.js';
-import { SeleniumScreenshotService } from './seleniumScreenshotService.js';
-import { RestaurantSearchScreenshotService } from './restaurantSearchScreenshotService.js';
+
 import { OpenAIReviewAnalysisService } from './openaiReviewAnalysisService.js';
 import { ScanResult } from '@shared/schema';
 import axios from 'axios';
@@ -48,8 +47,7 @@ export class AdvancedScannerService {
   private enhancedFacebookDetector: EnhancedFacebookDetector;
   private enhancedSocialMediaDetector: EnhancedSocialMediaDetector;
   private facebookPostsScraperService: FacebookPostsScraperService;
-  private seleniumScreenshotService: SeleniumScreenshotService;
-  private restaurantSearchScreenshotService: RestaurantSearchScreenshotService;
+
   private openaiReviewAnalysisService: OpenAIReviewAnalysisService;
   
   // Static cache for mood analysis results
@@ -78,8 +76,7 @@ export class AdvancedScannerService {
     this.enhancedFacebookDetector = new EnhancedFacebookDetector();
     this.enhancedSocialMediaDetector = new EnhancedSocialMediaDetector();
     this.facebookPostsScraperService = new FacebookPostsScraperService(apifyApiKey || '');
-    this.seleniumScreenshotService = new SeleniumScreenshotService();
-    this.restaurantSearchScreenshotService = new RestaurantSearchScreenshotService();
+
     this.openaiReviewAnalysisService = new OpenAIReviewAnalysisService();
   }
 
@@ -404,94 +401,10 @@ export class AdvancedScannerService {
       const phase6Start = Date.now();
       onProgress({ progress: 92, status: 'Generating recommendations...' });
 
-      // Quick SERP Analysis with Screenshot (within remaining time)
+      console.log('🎯 Phase 6: Finalizing analysis...');
+      
+      // Simple empty SERP analysis since screenshots are disabled
       let serpAnalysis = [];
-      let serpScreenshots = [];
-      
-      console.log('🎯 Phase 6: Starting SERP Analysis and Screenshot Capture');
-      
-      try {
-        // Generate a more relevant search query based on cuisine type and city
-        const cuisineType = this.extractCuisineType(businessProfile);
-        const primaryKeyword = this.generatePrimaryKeywords(restaurantName, businessProfile)[0];
-        
-        // Extract city and state from Google Places API business profile
-        const locationData = businessProfile?.address ? 
-          this.extractCityFromAddress(businessProfile.address) : 
-          { city: 'Unknown', state: 'Unknown' };
-        
-        // Create a food-type and location-specific search query
-        const foodSearchQuery = locationData.city !== 'Unknown' ? 
-          `${cuisineType} ${locationData.city}` : 
-          `${cuisineType} near me`;
-        
-        console.log(`Starting SERP analysis and screenshot capture for keyword: "${primaryKeyword}"`);
-        console.log(`Food-specific screenshot query: "${foodSearchQuery}"`);
-        console.log(`Extracted cuisine type: "${cuisineType}"`);
-        console.log(`Google Places address: "${businessProfile?.address}"`);
-        console.log(`Extracted location: ${locationData.city}, ${locationData.state}`);
-        
-        // Simplified SERP analysis using ranked keywords data
-        const serpPromise = Promise.resolve([]);
-        
-        console.log('Initiating screenshot capture...');
-        
-        const screenshotPromise = Promise.race([
-          this.seleniumScreenshotService.captureGoogleSearch(
-            cuisineType, 
-            locationData.city, 
-            restaurantName, 
-            domain
-          ),
-          new Promise((_, reject) => 
-            setTimeout(() => reject(new Error('SERP screenshot timeout')), 25000)
-          )
-        ]);
-        
-        const [serpResult, screenshotResult] = await Promise.allSettled([serpPromise, screenshotPromise]);
-        
-        if (serpResult.status === 'fulfilled') {
-          serpAnalysis = Array.isArray(serpResult.value) ? serpResult.value : [];
-        } else {
-          console.error(`SERP analysis failed for "${primaryKeyword}":`, serpResult.reason);
-        }
-        
-        console.log(`Screenshot result status: ${screenshotResult.status}`);
-        if (screenshotResult.status === 'fulfilled') {
-          serpScreenshots = [screenshotResult.value];
-          console.log(`SERP screenshot captured successfully for "${primaryKeyword}"`);
-          console.log('Screenshot URL:', screenshotResult.value.screenshotUrl || 'No URL provided');
-          console.log('Full screenshot result:', JSON.stringify(screenshotResult.value, null, 2));
-        } else {
-          console.error(`SERP screenshot failed for "${primaryKeyword}":`, screenshotResult.reason);
-          console.error('Screenshot service error details:', screenshotResult.reason?.message || screenshotResult.reason);
-          
-          // Create a fallback screenshot structure to test the UI
-          const fallbackScreenshot = {
-            keyword: primaryKeyword,
-            location: this.extractCity(restaurantName) || 'United States',
-            screenshotUrl: '', // Empty for now
-            restaurantRanking: {
-              found: false,
-              position: 0,
-              title: '',
-              url: '',
-              snippet: ''
-            },
-            totalResults: 0,
-            searchUrl: `https://www.google.com/search?q=${encodeURIComponent(primaryKeyword)}`,
-            localPackPresent: false,
-            localPackResults: []
-          };
-          
-          console.log('Using fallback screenshot structure - screenshots will show search URL');
-          serpScreenshots = [fallbackScreenshot]; // Enable fallback to provide UI content
-        }
-        
-        console.log('Fast SERP analysis completed');
-      } catch (error) {
-        console.error('SERP analysis failed:', error);
-      }
       
       // Wait for phase 6 to complete (4 seconds total)
       const phase6Elapsed = Date.now() - phase6Start;
@@ -516,8 +429,6 @@ export class AdvancedScannerService {
         reviewsAnalysis,
         socialMediaLinks,
         profileAnalysis,
-        serpScreenshots,
-        null, // Remove restaurant search screenshot for now
         processedCompetitiveKeywords
       );
 
@@ -552,8 +463,6 @@ export class AdvancedScannerService {
     reviewsAnalysis: any,
     socialMediaLinks: any,
     profileAnalysis: any = null,
-    serpScreenshots: any[] = [],
-    restaurantSearchScreenshot: any = null,
     processedCompetitiveKeywords: any[] = []
   ): EnhancedScanResult {
     // Map processedKeywords to keywordData for compatibility with existing methods
@@ -744,9 +653,7 @@ export class AdvancedScannerService {
         tiktok: socialMediaLinks?.tiktok || null,
         linkedin: socialMediaLinks?.linkedin || null
       },
-      profileAnalysis: profileAnalysis,
-      serpScreenshots: serpScreenshots || [],
-      restaurantSearchScreenshot: restaurantSearchScreenshot
+      profileAnalysis: profileAnalysis
     };
 
     // Debug: Log the final scan result structure to verify all data inclusion

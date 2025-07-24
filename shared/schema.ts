@@ -182,9 +182,6 @@ export const scanResultSchema = z.object({
     cls: z.number(),
     fid: z.number(),
   }),
-  backlinks: z.number(),
-  organicTraffic: z.number(),
-  scanDate: z.string(),
   businessProfile: z.object({
     name: z.string(),
     rating: z.number(),
@@ -359,33 +356,7 @@ export const scanResultSchema = z.object({
       }),
     }).optional(),
   }).optional(),
-  serpScreenshots: z.array(z.object({
-    keyword: z.string(),
-    location: z.string(),
-    screenshotUrl: z.string(),
-    restaurantRanking: z.object({
-      position: z.number(),
-      found: z.boolean(),
-      title: z.string(),
-      url: z.string(),
-      snippet: z.string(),
-    }).nullable(),
-    totalResults: z.number(),
-    searchUrl: z.string(),
-    localPackPresent: z.boolean(),
-    localPackResults: z.array(z.object({
-      name: z.string(),
-      rating: z.number(),
-      reviews: z.number(),
-      position: z.number(),
-    })),
-  })).optional(),
-  restaurantSearchScreenshot: z.object({
-    searchQuery: z.string(),
-    screenshotBase64: z.string(),
-    timestamp: z.string(),
-    success: z.boolean(),
-  }).nullable(),
+
 });
 
 export type RestaurantSearchResult = z.infer<typeof restaurantSearchResultSchema>;

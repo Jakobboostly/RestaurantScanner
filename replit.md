@@ -76,6 +76,14 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 24, 2025. Completely removed screenshot functionality as requested:
+  - **Eliminated all screenshot services** - Removed SeleniumScreenshotService, RestaurantSearchScreenshotService, and SerpScreenshotService
+  - **Removed screenshot API endpoints** - Deleted `/api/screenshot/restaurant-search` and `/api/screenshots` endpoints from server routes
+  - **Updated scanner service** - Removed screenshot capture logic from Phase 6 of advancedScannerService, simplified to focus on analysis only
+  - **Cleaned up schema** - Removed `serpScreenshots` and `restaurantSearchScreenshot` fields from scan result schema
+  - **Fixed duplicate properties** - Resolved schema errors caused by duplicate `backlinks`, `organicTraffic`, and `scanDate` properties
+  - **Maintained core functionality** - Restaurant scanner still provides comprehensive analysis including SEO, competitor insights, and performance metrics without visual capture
+  - **Eliminated screenshot dependencies** - Removed Selenium WebDriver, Puppeteer, and Apify screenshot integrations while preserving other Apify services
 - July 23, 2025. Implemented embedded Google search modal for "Where You Rank" functionality:
   - **Returned to Google search** - Switched back from DuckDuckGo to Google search per user preference for more relevant restaurant results
   - **Embedded modal interface** - Created in-app modal that displays search functionality without navigating away from the dashboard
