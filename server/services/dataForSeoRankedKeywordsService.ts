@@ -74,16 +74,17 @@ export interface ProcessedKeyword {
   difficulty: number;
   cpc: number;
   competition: number;
-  url: string;
-  title: string;
-  description: string;
-  isNew: boolean;
-  isLost: boolean;
-  positionChange: number;
-  previousPosition: number;
-  impressions: number;
-  clickthroughRate: number;
-  intent: 'local' | 'commercial' | 'informational' | 'navigational';
+  url?: string;
+  title?: string;
+  description?: string;
+  isNew?: boolean;
+  isLost?: boolean;
+  positionChange?: number;
+  previousPosition?: number;
+  impressions?: number;
+  clickthroughRate?: number;
+  intent?: 'local' | 'commercial' | 'informational' | 'navigational';
+  opportunityScore?: number;
 }
 
 export class DataForSeoRankedKeywordsService {
@@ -393,8 +394,8 @@ export class DataForSeoRankedKeywordsService {
     const totalSearchVolume = keywords.reduce((sum, k) => sum + k.searchVolume, 0);
     const newKeywords = keywords.filter(k => k.isNew).length;
     const lostKeywords = keywords.filter(k => k.isLost).length;
-    const improvedPositions = keywords.filter(k => k.positionChange > 0).length;
-    const declinedPositions = keywords.filter(k => k.positionChange < 0).length;
+    const improvedPositions = keywords.filter(k => k.positionChange && k.positionChange > 0).length;
+    const declinedPositions = keywords.filter(k => k.positionChange && k.positionChange < 0).length;
 
     return {
       totalKeywords: keywords.length,
@@ -430,5 +431,160 @@ export class DataForSeoRankedKeywordsService {
         return b.searchVolume - a.searchVolume;
       })
       .slice(0, limit);
+  }
+
+  /**
+   * Get targeted competitive keywords for restaurant based on cuisine, city, and state
+   * Returns 8 specific keywords with their rankings and search data
+   */
+  async getTargetedCompetitiveKeywords(
+    domain: string,
+    cuisine: string,
+    city: string,
+    state: string,
+    locationName: string = 'United States',
+    languageCode: string = 'en'
+  ): Promise<ProcessedKeyword[]> {
+    try {
+      console.log(`🔍 TARGETED COMPETITIVE KEYWORDS: Getting 8 specific keywords for ${domain}`);
+      console.log(`🔍 Parameters: cuisine="${cuisine}", city="${city}", state="${state}"`);
+
+      // Step 1: Generate the 8 specific keywords
+      const targetKeywords = [
+        `${cuisine} near me`,
+        `${cuisine} delivery ${city}`,
+        `best ${cuisine} ${city}`,
+        `${city} ${cuisine}`,
+        `${cuisine} places near me`,
+        `${cuisine} ${city} ${state}`,
+        `${cuisine} delivery near me`,
+        `${cuisine} open now`
+      ];
+
+      console.log(`🔍 Target keywords:`, targetKeywords);
+
+      // Step 2: Get search volume and difficulty for these keywords
+      const keywordResponse = await this.client.post('/dataforseo_labs/google/keyword_overview/live', [{
+        keywords: targetKeywords,
+        location_name: locationName,
+        language_code: languageCode
+      }]);
+
+      console.log(`🔍 Keyword overview API response status: ${keywordResponse.data.status_code}`);
+
+      if (keywordResponse.data.status_code !== 20000) {
+        console.error(`🔍 Keyword overview API error: ${keywordResponse.data.status_message}`);
+        throw new Error(`Keyword overview API error: ${keywordResponse.data.status_message}`);
+      }
+
+      const keywordData = keywordResponse.data.tasks[0]?.result?.[0]?.items || [];
+      console.log(`🔍 Got keyword data for ${keywordData.length} keywords`);
+
+      // Step 3: Check rankings for each keyword
+      const results: ProcessedKeyword[] = [];
+      
+      for (let i = 0; i < targetKeywords.length; i++) {
+        const keyword = targetKeywords[i];
+        const volumeData = keywordData[i];
+        
+        try {
+          console.log(`🔍 Checking SERP rankings for: "${keyword}"`);
+          
+          // Check where domain ranks for this specific keyword
+          const serpResponse = await this.client.post('/serp/google/organic/live/advanced', [{
+            keyword: keyword,
+            location_name: locationName,
+            language_code: languageCode,
+            depth: 50
+          }]);
+
+          console.log(`🔍 SERP API response status for "${keyword}": ${serpResponse.data.status_code}`);
+
+          if (serpResponse.data.status_code !== 20000) {
+            console.error(`🔍 SERP API error for "${keyword}": ${serpResponse.data.status_message}`);
+            continue;
+          }
+
+          const serpItems = serpResponse.data.tasks[0]?.result?.[0]?.items || [];
+          let position = 0;
+          let url = '';
+          let title = '';
+          let description = '';
+          
+          // Find domain position in search results
+          for (let j = 0; j < serpItems.length; j++) {
+            const item = serpItems[j];
+            if (item.type === 'organic' && 
+                (item.domain?.includes(domain.replace(/^https?:\/\//, '').replace(/^www\./, '')) || 
+                 item.url?.includes(domain.replace(/^https?:\/\//, '').replace(/^www\./, '')))) {
+              position = item.rank_absolute || (j + 1);
+              url = item.url || '';
+              title = item.title || '';
+              description = item.description || '';
+              break;
+            }
+          }
+
+          console.log(`🔍 Found position ${position} for "${keyword}"`);
+
+          // Only include if ranking in positions 6+ (competitors beating you)
+          if (position > 5) {
+            const searchVolume = volumeData?.keyword_info?.search_volume || 0;
+            const difficulty = volumeData?.keyword_info?.keyword_difficulty || 0;
+            const cpc = volumeData?.keyword_info?.cpc || 0;
+            const competition = volumeData?.keyword_info?.competition || 0;
+
+            results.push({
+              keyword: keyword,
+              position: position,
+              searchVolume: searchVolume,
+              difficulty: difficulty,
+              cpc: cpc,
+              competition: competition,
+              url: url,
+              title: title,
+              description: description,
+              // Calculate opportunity score
+              opportunityScore: this.calculateOpportunityScore(position, searchVolume),
+              intent: this.classifyKeywordIntent(keyword)
+            });
+
+            console.log(`🔍 Added competitive keyword: "${keyword}" at position ${position} with opportunity score ${this.calculateOpportunityScore(position, searchVolume)}`);
+          } else if (position > 0) {
+            console.log(`🔍 Skipping "${keyword}" - already ranking well at position ${position}`);
+          } else {
+            console.log(`🔍 Skipping "${keyword}" - not found in top 50 results`);
+          }
+
+        } catch (error) {
+          console.error(`🔍 Error checking keyword "${keyword}":`, error);
+        }
+      }
+
+      // Sort by opportunity score (high volume + close to top 5 = best opportunity)
+      const sortedResults = results
+        .sort((a, b) => (b.opportunityScore || 0) - (a.opportunityScore || 0))
+        .slice(0, 8);
+
+      console.log(`🔍 TARGETED COMPETITIVE KEYWORDS: Found ${sortedResults.length} competitive opportunities for ${domain}`);
+      console.log(`🔍 Results:`, sortedResults.map(r => `${r.keyword} (pos: ${r.position}, vol: ${r.searchVolume})`));
+
+      return sortedResults;
+
+    } catch (error) {
+      console.error('🔍 TARGETED COMPETITIVE KEYWORDS: Error:', error);
+      return [];
+    }
+  }
+
+  /**
+   * Calculate opportunity score for targeted competitive keywords
+   */
+  private calculateOpportunityScore(position: number, searchVolume: number): number {
+    // Higher score = better opportunity
+    // Closer to position 6 + higher volume = higher score
+    const positionScore = Math.max(0, 20 - position); // Position 6 gets 14 points, position 15 gets 5 points
+    const volumeScore = Math.log10(searchVolume + 1) * 5; // Logarithmic scale for volume
+    return Math.round((positionScore + volumeScore) * 10) / 10;
   }
 }
