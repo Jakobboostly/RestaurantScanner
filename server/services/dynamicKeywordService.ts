@@ -244,31 +244,130 @@ export class DynamicKeywordService {
   }
 
   /**
-   * Call DataForSEO ranked keywords API with dynamic filters
+   * Build local relevance filters for restaurant SEO
    */
-  private async callDataForSeoAPI(website: string, city: string, cuisine: string, state: string): Promise<any> {
-    const cleanedWebsite = website.replace(/^https?:\/\//, '').replace(/\/$/, '');
-    
-    // Strategy 1: Cuisine-specific search
-    const cuisineCall = {
-      "target": cleanedWebsite,
-      "language_code": "en",
-      "location_name": state,
-      "limit": 30,
-      "order_by": ["keyword_data.keyword_info.search_volume,desc"],
-      "filters": [
-        ["keyword_data.keyword", "like", `%${cuisine}%`],
-        "and",
-        ["keyword_data.keyword", "like", `%${city.toLowerCase()}%`],
-        "and", 
-        ["keyword_data.keyword_info.search_volume", ">", 100]
+  private buildLocalRelevanceFilters(restaurantData: any): any[] {
+    const { name, cuisine, city, state } = restaurantData;
+
+    // Core restaurant-relevant terms
+    const relevantTerms = [
+      // Cuisine-specific terms
+      cuisine.toLowerCase(),
+      ...this.getCuisineSpecificTerms(cuisine),
+      
+      // Location terms (critical for local SEO)
+      city.toLowerCase(),
+      state.toLowerCase(),
+      
+      // Local intent keywords (high value for restaurants)
+      'near me', 'nearby', 'delivery', 'takeout', 'open now',
+      'menu', 'hours', 'phone', 'address', 'location',
+      
+      // Restaurant business terms
+      'restaurant', 'food', 'dining', 'eat', 'order',
+      
+      // Local qualifiers
+      'best', 'top', 'good', 'great', 'reviews', 'rated'
+    ];
+
+    // Add restaurant name (first significant word)
+    const nameWords = name.toLowerCase().split(' ');
+    const significantName = nameWords.find((word: string) => word.length > 3);
+    if (significantName) {
+      relevantTerms.push(significantName);
+    }
+
+    // Convert to DataForSEO filter format (OR logic)
+    return relevantTerms.map(term => 
+      ["keyword_data.keyword", "like", `%${term}%`]
+    );
+  }
+
+  /**
+   * Get cuisine-specific terms for enhanced relevance
+   */
+  private getCuisineSpecificTerms(cuisine: string): string[] {
+    const cuisineTermsMap: { [key: string]: string[] } = {
+      'pizza': ['pizza', 'pizzeria', 'pizza place', 'pizza shop', 'slice'],
+      'burger': ['burger', 'hamburger', 'cheeseburger', 'burger joint'],
+      'chinese': ['chinese food', 'chinese restaurant', 'asian food', 'wok'],
+      'mexican': ['mexican food', 'tacos', 'burrito', 'tex mex', 'mexican restaurant'],
+      'italian': ['italian food', 'italian restaurant', 'pasta', 'spaghetti'],
+      'thai': ['thai food', 'thai restaurant', 'pad thai'],
+      'indian': ['indian food', 'indian restaurant', 'curry', 'tandoori'],
+      'japanese': ['japanese food', 'sushi', 'ramen', 'japanese restaurant'],
+      'coffee': ['coffee shop', 'cafe', 'coffee', 'espresso', 'latte'],
+      'bakery': ['bakery', 'fresh bread', 'pastries', 'baked goods'],
+      'seafood': ['seafood restaurant', 'fresh fish', 'shrimp', 'crab'],
+      'steakhouse': ['steakhouse', 'steak restaurant', 'beef', 'prime rib'],
+      'bbq': ['bbq', 'barbecue', 'ribs', 'bbq restaurant', 'smoked'],
+      'breakfast': ['breakfast', 'brunch', 'breakfast spot', 'pancakes'],
+      'sandwich': ['sandwich shop', 'deli', 'subs', 'hoagie']
+    };
+
+    return cuisineTermsMap[cuisine.toLowerCase()] || [cuisine.toLowerCase()];
+  }
+
+  /**
+   * Get best performing keywords (rankings 1-20)
+   */
+  private async getBestPerformingKeywords(restaurantData: any): Promise<any[]> {
+    const relevanceFilters = this.buildLocalRelevanceFilters(restaurantData);
+    const localLocation = `${restaurantData.city}, ${restaurantData.state}`;
+
+    const query = {
+      target: restaurantData.website,
+      language_code: 'en',
+      location_name: localLocation,
+      limit: 10,
+      order_by: ['ranked_serp_element.serp_item.rank_absolute,asc'],
+      filters: [
+        relevanceFilters,
+        'and',
+        ['keyword_data.keyword_info.search_volume', '>', 50],
+        'and',
+        ['ranked_serp_element.serp_item.rank_absolute', '<=', 20]
       ]
     };
 
+    return await this.makeDataForSEORequest(query);
+  }
+
+  /**
+   * Get opportunity keywords (rankings 21+)
+   */
+  private async getOpportunityKeywords(restaurantData: any): Promise<any[]> {
+    const relevanceFilters = this.buildLocalRelevanceFilters(restaurantData);
+    const localLocation = `${restaurantData.city}, ${restaurantData.state}`;
+
+    const query = {
+      target: restaurantData.website,
+      language_code: 'en',
+      location_name: localLocation,
+      limit: 10,
+      order_by: ['keyword_data.keyword_info.search_volume,desc'],
+      filters: [
+        relevanceFilters,
+        'and',
+        ['ranked_serp_element.serp_item.rank_absolute', '>', 20],
+        'and',
+        ['keyword_data.keyword_info.search_volume', '>', 100]
+      ]
+    };
+
+    return await this.makeDataForSEORequest(query);
+  }
+
+  /**
+   * Make DataForSEO API request
+   */
+  private async makeDataForSEORequest(queryData: any): Promise<any[]> {
     try {
+      console.log('🎯 DataForSEO Query:', JSON.stringify(queryData, null, 2));
+      
       const response = await axios.post(
         'https://api.dataforseo.com/v3/dataforseo_labs/google/ranked_keywords/live',
-        [cuisineCall],
+        [queryData],
         {
           headers: {
             'Authorization': `Basic ${this.authHeader}`,
@@ -278,45 +377,9 @@ export class DynamicKeywordService {
         }
       );
 
-      if (response.data?.tasks?.[0]?.result?.[0]?.items) {
-        return response.data.tasks[0].result[0].items;
-      }
-
-      // Strategy 2: Generic restaurant search (fallback)
-      const genericCall = {
-        "target": cleanedWebsite,
-        "language_code": "en", 
-        "location_name": state,
-        "limit": 50,
-        "order_by": ["keyword_data.keyword_info.search_volume,desc"],
-        "filters": [
-          [
-            ["keyword_data.keyword", "like", "%restaurant%"],
-            "or",
-            ["keyword_data.keyword", "like", "%food%"],
-            "or", 
-            ["keyword_data.keyword", "like", "%dining%"]
-          ],
-          "and",
-          ["keyword_data.keyword", "like", `%${city.toLowerCase()}%`],
-          "and",
-          ["keyword_data.keyword_info.search_volume", ">", 50]
-        ]
-      };
-
-      const fallbackResponse = await axios.post(
-        'https://api.dataforseo.com/v3/dataforseo_labs/google/ranked_keywords/live',
-        [genericCall],
-        {
-          headers: {
-            'Authorization': `Basic ${this.authHeader}`,
-            'Content-Type': 'application/json'
-          },
-          timeout: 15000
-        }
-      );
-
-      return fallbackResponse.data?.tasks?.[0]?.result?.[0]?.items || [];
+      const items = response.data?.tasks?.[0]?.result?.[0]?.items || [];
+      console.log(`🔍 DataForSEO returned ${items.length} keywords`);
+      return items;
 
     } catch (error: any) {
       console.log('🚨 DataForSEO API error:', error.message);
@@ -330,87 +393,22 @@ export class DynamicKeywordService {
     }
   }
 
-  /**
-   * Process API results into structured keyword data
-   */
-  private processKeywordResults(apiResults: any[]): { rankedKeywords: KeywordResult[], competitiveOpportunityKeywords: KeywordResult[] } {
-    const rankedKeywords: KeywordResult[] = [];
-    const competitiveOpportunityKeywords: KeywordResult[] = [];
 
-    for (const item of apiResults.slice(0, 10)) { // Limit to 10 keywords for cost control
-      const keywordData = {
-        keyword: item.keyword_data?.keyword || '',
-        position: item.ranked_serp_element?.serp_item?.rank_group || 0,
-        searchVolume: item.keyword_data?.keyword_info?.search_volume || 0,
-        difficulty: item.keyword_data?.keyword_info?.competition || 0,
-        intent: this.classifyIntent(item.keyword_data?.keyword || ''),
-        cpc: item.keyword_data?.keyword_info?.cpc || 0,
-        competition: item.keyword_data?.keyword_info?.competition || 0,
-        opportunity: this.calculateOpportunity(item.ranked_serp_element?.serp_item?.rank_group || 0),
-        url: item.ranked_serp_element?.serp_item?.url || '',
-        title: item.ranked_serp_element?.serp_item?.title || '',
-        description: item.ranked_serp_element?.serp_item?.description || '',
-        isNew: false,
-        isLost: false,
-        positionChange: 0,
-        previousPosition: item.ranked_serp_element?.serp_item?.rank_group || 0
-      };
-
-      // Categorize by ranking position
-      if (keywordData.position <= 5) {
-        rankedKeywords.push(keywordData);
-      } else if (keywordData.position >= 6) {
-        competitiveOpportunityKeywords.push(keywordData);
-      }
-    }
-
-    return { rankedKeywords, competitiveOpportunityKeywords };
-  }
 
   /**
-   * Classify search intent
-   */
-  private classifyIntent(keyword: string): string {
-    const local = ['near me', 'delivery', 'takeout', 'hours', 'location'];
-    const commercial = ['best', 'top', 'reviews', 'menu', 'order'];
-    
-    for (const term of local) {
-      if (keyword.toLowerCase().includes(term)) return 'local';
-    }
-    
-    for (const term of commercial) {
-      if (keyword.toLowerCase().includes(term)) return 'commercial';
-    }
-    
-    return 'informational';
-  }
-
-  /**
-   * Calculate opportunity score based on ranking position
-   */
-  private calculateOpportunity(position: number): number {
-    if (position === 0) return 0;
-    if (position <= 3) return 90;
-    if (position <= 5) return 75;
-    if (position <= 10) return 50;
-    if (position <= 20) return 25;
-    return 10;
-  }
-
-  /**
-   * Main method to get dynamic keyword rankings for a restaurant
+   * Main method to get dynamic keyword rankings for a restaurant using local SEO approach
    */
   async getDynamicKeywordRankings(businessProfile: GoogleBusinessProfile): Promise<DynamicKeywordResponse> {
     try {
-      // Extract location and cuisine data
-      const { city, state } = this.extractLocationData(businessProfile.formatted_address);
+      // Extract location and cuisine data from address field
+      const { city, state } = this.extractLocationData(businessProfile.address || businessProfile);
       
       console.log(`🔍 DEBUG: businessProfile.types =`, businessProfile.types, typeof businessProfile.types);
       console.log(`🔍 DEBUG: businessProfile.name =`, businessProfile.name);
       
       const cuisine = this.extractCuisine(businessProfile.types, businessProfile.name);
 
-      console.log(`🔍 Dynamic keyword analysis for ${businessProfile.name} - ${cuisine} in ${city}, ${state}`);
+      console.log(`🎯 Local SEO keyword analysis for ${businessProfile.name} - ${cuisine} in ${city}, ${state}`);
 
       if (!businessProfile.website) {
         console.log('No website found for keyword analysis');
@@ -421,13 +419,38 @@ export class DynamicKeywordService {
         };
       }
 
-      // Call DataForSEO API with dynamic parameters
-      console.log(`🔍 DEBUG: Calling DataForSEO API with website: ${businessProfile.website}, city: ${city}, cuisine: ${cuisine}, state: ${state}`);
-      const apiResults = await this.callDataForSeoAPI(businessProfile.website, city, cuisine, state);
-      console.log(`🔍 DEBUG: DataForSEO API returned:`, apiResults.length, 'results');
+      // Get the actual business website domain
+      let website = '';
+      try {
+        const websiteUrl = new URL(businessProfile.website);
+        website = websiteUrl.hostname.replace(/^www\./, '');
+      } catch (error) {
+        console.error('Failed to parse business website URL:', error);
+        return {
+          rankedKeywords: [],
+          competitiveOpportunityKeywords: [],
+          locationData: { city, state, cuisine }
+        };
+      }
+
+      // Prepare restaurant data for local SEO analysis
+      const restaurantData = {
+        name: businessProfile.name,
+        website: website,
+        city: city,
+        state: state,
+        cuisine: cuisine
+      };
+
+      console.log(`🏆 Getting best performing keywords (ranks 1-20) for ${website}...`);
+      const bestKeywords = await this.getBestPerformingKeywords(restaurantData);
       
-      // Process results
-      const { rankedKeywords, competitiveOpportunityKeywords } = this.processKeywordResults(apiResults);
+      console.log(`🚀 Getting opportunity keywords (ranks 21+) for ${website}...`);
+      const opportunityKeywords = await this.getOpportunityKeywords(restaurantData);
+
+      // Format results for frontend compatibility
+      const rankedKeywords = this.formatKeywordResults(bestKeywords, 'best');
+      const competitiveOpportunityKeywords = this.formatKeywordResults(opportunityKeywords, 'opportunity');
 
       console.log(`✅ Found ${rankedKeywords.length} ranked keywords and ${competitiveOpportunityKeywords.length} competitive opportunities`);
 
@@ -445,6 +468,45 @@ export class DynamicKeywordService {
         locationData: { city: 'Unknown', state: 'Unknown', cuisine: 'restaurant' }
       };
     }
+  }
+
+  /**
+   * Format keyword results for frontend display
+   */
+  private formatKeywordResults(results: any[], type: string = 'best'): KeywordResult[] {
+    if (!results || results.length === 0) {
+      return [];
+    }
+
+    return results.map(item => ({
+      keyword: item.keyword_data.keyword,
+      position: item.ranked_serp_element.serp_item.rank_absolute,
+      searchVolume: item.keyword_data.keyword_info.search_volume,
+      difficulty: this.calculateDifficulty(item.keyword_data.keyword_info.competition_level),
+      intent: item.keyword_data.search_intent_info?.main_intent || 'local',
+      cpc: item.keyword_data.keyword_info.cpc || 0,
+      competition: item.keyword_data.keyword_info.competition_level,
+      opportunity: type === 'opportunity' ? (item.ranked_serp_element.serp_item.rank_absolute > 20 ? 25 : 50) : 90,
+      url: item.ranked_serp_element.serp_item.url,
+      title: item.ranked_serp_element.serp_item.title || '',
+      description: item.ranked_serp_element.serp_item.description || '',
+      isNew: false,
+      isLost: false,
+      positionChange: 0,
+      previousPosition: item.ranked_serp_element.serp_item.rank_absolute
+    }));
+  }
+
+  /**
+   * Calculate difficulty score from competition level
+   */
+  private calculateDifficulty(competitionLevel: string): number {
+    const difficultyMap: { [key: string]: number } = {
+      'low': 25,
+      'medium': 50,
+      'high': 75
+    };
+    return difficultyMap[competitionLevel?.toLowerCase()] || 50;
   }
 }
 
