@@ -299,8 +299,8 @@ export class LocalKeywordRankingService {
     console.log('🔍 LOCAL RANKING: Generated keywords:', localKeywords);
 
     // Create location string for API calls - this is critical for LOCAL SEO targeting
-    // Try different location formats for DataForSEO
-    const locationString = `${city}, ${state}, United States`;
+    // Format: "City,State,United States" (no spaces after commas for DataForSEO)
+    const locationString = `${city},${state},United States`;
     console.log('🔍 LOCAL RANKING: Using location string for geo-targeting:', locationString);
 
     // First, get search volume data for all keywords (using location-specific targeting)
