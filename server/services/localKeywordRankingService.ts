@@ -328,8 +328,8 @@ export class LocalKeywordRankingService {
         console.log(`🔍 LOCAL RANKING: Found ${items.length} results for "${keyword}"`);
 
         // FIND YOUR URL IN THE RESULTS (using the exact logic from your solution)
-        let position = null;
-        let matchType = 'none';
+        let position: number | null = null;
+        let matchType: 'domain' | 'name' | 'none' = 'none';
         const cleanDomain = domain.replace(/^https?:\/\//, '').replace(/^www\./, '');
         
         for (let item of items) {
