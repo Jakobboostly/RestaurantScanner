@@ -289,6 +289,18 @@ export class LocalKeywordRankingService {
 
         console.log(`🔍 LOCAL RANKING: Found ${items.length} organic results and ${localPack.length} local pack results for "${keyword}"`);
 
+        // Debug: Log what we're searching for
+        console.log(`🔍 LOCAL RANKING: Searching for domain "${domain}" or restaurant "${restaurantName}" in results`);
+        console.log(`🔍 LOCAL RANKING: Found ${localPack.length} local pack items, ${items.length} organic items`);
+        
+        // Log first few results for debugging
+        if (localPack.length > 0) {
+          console.log(`🔍 LOCAL RANKING: Local pack sample:`, localPack.slice(0, 3).map(item => ({domain: item.domain, title: item.title})));
+        }
+        if (items.length > 0) {
+          console.log(`🔍 LOCAL RANKING: Organic results sample:`, items.slice(0, 5).map(item => ({domain: item.domain, title: item.title})));
+        }
+
         // Find restaurant position
         const { position, matchType } = this.findRestaurantInResults(items, localPack, domain, restaurantName);
 
