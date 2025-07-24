@@ -217,11 +217,12 @@ export class AdvancedScannerService {
       const localKeywordPromise = Promise.race([
         this.localKeywordRankingService.getLocalKeywordRankings(businessProfile, actualDomain),
         new Promise((_, reject) => 
-          setTimeout(() => reject(new Error('Local keyword rankings timeout')), 15000)
+          setTimeout(() => reject(new Error('Local keyword rankings timeout after 25 seconds')), 25000)
         )
       ]).catch(error => {
         console.error('🔍 ADVANCED SCANNER: Local keyword rankings failed:', error);
-        console.error('🔍 ADVANCED SCANNER: Error details:', error);
+        console.error('🔍 ADVANCED SCANNER: Error message:', error.message);
+        console.error('🔍 ADVANCED SCANNER: Error stack:', error.stack);
         return [];
       });
       
