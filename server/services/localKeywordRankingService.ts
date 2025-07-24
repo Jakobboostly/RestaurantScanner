@@ -235,10 +235,10 @@ export class LocalKeywordRankingService {
       console.log('🔍 LOCAL RANKING: Fetching search volume for keywords:', keywords);
       console.log('🔍 LOCAL RANKING: Location string for search volume:', location);
       
-      const response = await this.client.post('/keywords_data/google/search_volume/live', [{
+      const response = await this.client.post('/keywords_data/google_ads/search_volume/live', [{
         keywords: keywords,
-        location_name: location,
-        language_code: 'en'
+        language_code: 'en',
+        location_name: 'United States'
       }]);
 
       console.log('🔍 LOCAL RANKING: Raw search volume response:', JSON.stringify(response.data, null, 2));
@@ -301,8 +301,8 @@ export class LocalKeywordRankingService {
     // Create location string for API calls
     const locationString = `${city}, ${state}, United States`;
 
-    // First, get search volume data for all keywords
-    const keywordVolumeData = await this.getSearchVolumeData(localKeywords, locationString);
+    // First, get search volume data for all keywords (using your solution approach)
+    const keywordVolumeData = await this.getSearchVolumeData(localKeywords, 'United States');
     console.log('🔍 LOCAL RANKING: Search volume data received:', keywordVolumeData.length);
 
     const rankings: LocalKeywordRanking[] = [];
@@ -314,31 +314,33 @@ export class LocalKeywordRankingService {
 
         const response = await this.client.post('/serp/google/organic/live/advanced', [{
           language_code: 'en',
-          location_code: 2840, // United States
+          location_name: `${city},${state},United States`,
           keyword: keyword,
-          calculate_rectangles: true
+          depth: 50
         }]);
 
         const result = response.data.tasks?.[0]?.result?.[0];
         const items = result?.items || [];
-        const localPack = result?.local_pack?.local_pack || result?.local_pack || [];
 
-        console.log(`🔍 LOCAL RANKING: Found ${items.length} organic results and ${localPack.length} local pack results for "${keyword}"`);
+        console.log(`🔍 LOCAL RANKING: Found ${items.length} results for "${keyword}"`);
 
-        // Debug: Log what we're searching for
-        console.log(`🔍 LOCAL RANKING: Searching for domain "${domain}" or restaurant "${restaurantName}" in results`);
-        console.log(`🔍 LOCAL RANKING: Found ${localPack.length} local pack items, ${items.length} organic items`);
+        // FIND YOUR URL IN THE RESULTS (using the exact logic from your solution)
+        let position = null;
+        let matchType = 'none';
+        const cleanDomain = domain.replace(/^https?:\/\//, '').replace(/^www\./, '');
         
-        // Log first few results for debugging
-        if (localPack.length > 0) {
-          console.log(`🔍 LOCAL RANKING: Local pack sample:`, localPack.slice(0, 3).map((item: any) => ({domain: item.domain, title: item.title})));
+        for (let item of items) {
+          if (item.type === 'organic' && item.domain && item.domain.includes(cleanDomain)) {
+            position = item.rank_absolute; // This is your position!
+            matchType = 'domain';
+            console.log(`🔍 LOCAL RANKING: ✅ FOUND ${restaurantName} at position ${position} for "${keyword}"`);
+            break;
+          }
         }
-        if (items.length > 0) {
-          console.log(`🔍 LOCAL RANKING: Organic results sample:`, items.slice(0, 5).map((item: any) => ({domain: item.domain, title: item.title})));
+        
+        if (!position) {
+          console.log(`🔍 LOCAL RANKING: ❌ ${restaurantName} not found in top 50 results for "${keyword}"`);
         }
-
-        // Find restaurant position
-        const { position, matchType } = this.findRestaurantInResults(items, localPack, domain, restaurantName);
 
         // Get search volume data for this keyword
         const volumeData = keywordVolumeData.find(item => 
