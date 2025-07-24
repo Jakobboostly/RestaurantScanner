@@ -109,33 +109,16 @@ export const scanResultSchema = z.object({
     effort: z.enum(['low', 'medium', 'high']),
     category: z.string(),
   })),
-  keywords: z.array(z.object({
+  localKeywordRankings: z.array(z.object({
     keyword: z.string(),
     position: z.number().nullable(),
-    searchVolume: z.number(),
-    difficulty: z.number(),
-    intent: z.string(),
-    cpc: z.number().optional(),
-    competition: z.number().optional(),
+    searchUrl: z.string(),
+    found: z.boolean(),
+    matchType: z.enum(['domain', 'name', 'none']),
+    searchEngine: z.literal('google'),
+    location: z.string(),
   })),
-  keywordAnalysis: z.object({
-    targetKeywords: z.array(z.object({
-      keyword: z.string(),
-      position: z.number().nullable(),
-      searchVolume: z.number(),
-      difficulty: z.number(),
-      intent: z.string(),
-      cpc: z.number().optional(),
-      competition: z.number().optional(),
-    })),
-    rankingPositions: z.array(z.object({
-      keyword: z.string(),
-      position: z.number().nullable(),
-      difficulty: z.number(),
-    })),
-    searchVolumes: z.record(z.string(), z.number()),
-    opportunities: z.array(z.string()),
-  }),
+  // Removed keywordAnalysis - replaced with localKeywordRankings
   competitors: z.array(z.object({
     name: z.string(),
     domain: z.string(),

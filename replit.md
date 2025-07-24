@@ -76,6 +76,15 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 24, 2025. Implemented 8-keyword local search ranking system with authentic DataForSEO API integration:
+  - **Created localKeywordRankingService.ts** - New service to handle 8 specific local search patterns using DataForSEO SERP API
+  - **8 specific search queries implemented** - "[cuisine type] near me", "[cuisine type] delivery [city]", "best [cuisine type] [city]", "[city] [cuisine type]", "[cuisine type] places near me", "[cuisine type] [city] [state]", "[cuisine type] delivery near me", "[cuisine type] open now"
+  - **Updated schema structure** - Replaced keywords field with localKeywordRankings containing position, searchUrl, found, matchType, searchEngine, location
+  - **Enhanced backend integration** - Modified advancedScannerService.ts to use new local keyword ranking system with depth=50 SERP queries
+  - **Updated frontend components** - Fixed premium-score-dashboard.tsx to display local keyword rankings instead of old keyword structure
+  - **Authentic ranking data** - System now provides real search positions for 8 critical local search patterns using DataForSEO's serp_organic_live_advanced API
+  - **Cuisine and location extraction** - Automatically detects restaurant cuisine type and location from Google Business Profile to generate relevant local searches
+  - **Comprehensive local focus** - Replaced general keyword analysis with targeted local search visibility assessment
 - July 24, 2025. Completely removed screenshot functionality as requested:
   - **Eliminated all screenshot services** - Removed SeleniumScreenshotService, RestaurantSearchScreenshotService, and SerpScreenshotService
   - **Removed screenshot API endpoints** - Deleted `/api/screenshot/restaurant-search` and `/api/screenshots` endpoints from server routes

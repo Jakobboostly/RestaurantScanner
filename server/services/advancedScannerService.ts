@@ -1,6 +1,5 @@
 import { GoogleBusinessService } from './googleBusinessService.js';
-
-import { DataForSeoRankedKeywordsService } from './dataForSeoRankedKeywordsService.js';
+import { LocalKeywordRankingService } from './localKeywordRankingService.js';
 import { AIRecommendationService } from './aiRecommendationService.js';
 import { GoogleReviewsService } from './googleReviewsService.js';
 import { ApifyReviewsService } from './apifyReviewsService.js';
@@ -21,12 +20,7 @@ export interface ScanProgress {
 }
 
 export interface EnhancedScanResult extends ScanResult {
-  keywordAnalysis: {
-    targetKeywords: any[];
-    rankingPositions: any[];
-    searchVolumes: { [key: string]: number };
-    opportunities: string[];
-  };
+  // Removed keywordAnalysis - now using localKeywordRankings from ScanResult
   competitorIntelligence: {
     organicCompetitors: any[];
     keywordGaps: string[];
@@ -38,7 +32,7 @@ export interface EnhancedScanResult extends ScanResult {
 
 export class AdvancedScannerService {
   private googleBusinessService: GoogleBusinessService;
-  private rankedKeywordsService: DataForSeoRankedKeywordsService;
+  private localKeywordRankingService: LocalKeywordRankingService;
 
   private aiRecommendationService: AIRecommendationService;
   private googleReviewsService: GoogleReviewsService;
@@ -68,7 +62,7 @@ export class AdvancedScannerService {
     apifyApiKey?: string
   ) {
     this.googleBusinessService = new GoogleBusinessService(googleApiKey);
-    this.rankedKeywordsService = new DataForSeoRankedKeywordsService(dataForSeoLogin, dataForSeoPassword);
+    this.localKeywordRankingService = new LocalKeywordRankingService(dataForSeoLogin, dataForSeoPassword);
     this.aiRecommendationService = new AIRecommendationService();
     this.googleReviewsService = new GoogleReviewsService(googleApiKey);
     this.apifyReviewsService = apifyApiKey ? new ApifyReviewsService(apifyApiKey) : undefined;
@@ -215,75 +209,24 @@ export class AdvancedScannerService {
         }
       }
       
-      // Get authentic ranked keywords using DataForSEO ranked keywords API
-      console.log(`🔍 ADVANCED SCANNER: Getting real ranked keywords for domain: ${actualDomain}`);
+      // Get local keyword rankings using the 8 specific patterns
+      console.log(`🔍 ADVANCED SCANNER: Getting local keyword rankings for business profile`);
       
-      const rankedKeywordsPromise = Promise.race([
-        this.rankedKeywordsService.getRankedKeywords(actualDomain, 'United States', 'en', 10),
+      const localKeywordPromise = Promise.race([
+        this.localKeywordRankingService.getLocalKeywordRankings(businessProfile, actualDomain),
         new Promise((_, reject) => 
-          setTimeout(() => reject(new Error('Ranked keywords timeout')), 8000)
+          setTimeout(() => reject(new Error('Local keyword rankings timeout')), 15000)
         )
       ]).catch(error => {
-        console.error('Ranked keywords failed:', error);
+        console.error('Local keyword rankings failed:', error);
         return [];
       });
       
-      const rankedKeywords = await rankedKeywordsPromise as any[];
-      console.log(`Found ${rankedKeywords.length} ranked keywords for ${actualDomain}`);
+      const localKeywordRankings = await localKeywordPromise as any[];
+      console.log(`Found rankings for ${localKeywordRankings.filter(r => r.found).length}/${localKeywordRankings.length} local keywords`);
       
-      // Get competitive opportunity keywords (ranking 6+) - "Where your competition is winning"
-      console.log(`🔍 ADVANCED SCANNER: Getting competitive opportunity keywords (rank 6+) for domain: ${actualDomain}`);
-      
-      const competitiveOpportunityPromise = Promise.race([
-        this.rankedKeywordsService.getCompetitiveOpportunityKeywords(actualDomain, 'United States', 'en', 5),
-        new Promise((_, reject) => 
-          setTimeout(() => reject(new Error('Competitive opportunity keywords timeout')), 8000)
-        )
-      ]).catch(error => {
-        console.error('Competitive opportunity keywords failed:', error);
-        return [];
-      });
-      
-      const competitiveOpportunityKeywords = await competitiveOpportunityPromise as any[];
-      console.log(`Found ${competitiveOpportunityKeywords.length} competitive opportunity keywords for ${actualDomain}`);
-      
-      // Process the authentic ranked keywords
-      const processedKeywords = rankedKeywords.map((keyword: any) => ({
-        keyword: keyword.keyword,
-        position: keyword.position,
-        searchVolume: keyword.searchVolume,
-        difficulty: keyword.difficulty,
-        intent: keyword.intent,
-        cpc: keyword.cpc,
-        competition: keyword.competition,
-        opportunity: keyword.position <= 10 ? 100 : (keyword.position <= 20 ? 75 : 50),
-        url: keyword.url,
-        title: keyword.title,
-        description: keyword.description,
-        isNew: keyword.isNew,
-        isLost: keyword.isLost,
-        positionChange: keyword.positionChange,
-        previousPosition: keyword.previousPosition
-      }));
-      
-      // Process competitive opportunity keywords
-      processedCompetitiveKeywords = competitiveOpportunityKeywords.map((keyword: any) => ({
-        keyword: keyword.keyword,
-        position: keyword.position,
-        searchVolume: keyword.searchVolume,
-        difficulty: keyword.difficulty,
-        intent: keyword.intent,
-        cpc: keyword.cpc,
-        competition: keyword.competition,
-        opportunity: keyword.position > 20 ? 25 : (keyword.position > 10 ? 50 : 75),
-        url: keyword.url,
-        title: keyword.title,
-        description: keyword.description,
-        isNew: keyword.isNew,
-        isLost: keyword.isLost,
-        positionChange: keyword.positionChange,
-        previousPosition: keyword.previousPosition
-      }));
+      // No more competitive opportunity keywords - replaced with local focus
+      processedCompetitiveKeywords = [];
       
       // Wait for phase 3 to complete (4 seconds total)
       const phase3Elapsed = Date.now() - phase3Start;
@@ -423,7 +366,7 @@ export class AdvancedScannerService {
         competitors,
         mobileExperience,
         desktopResult,
-        processedKeywords,
+        localKeywordRankings,
         serpAnalysis,
         [],
         reviewsAnalysis,
@@ -457,7 +400,7 @@ export class AdvancedScannerService {
     competitors: any[],
     mobileExperience: any,
     performanceMetrics: any,
-    processedKeywords: any[],
+    localKeywordRankings: any[],
     serpAnalysis: any[],
     competitorInsights: any[],
     reviewsAnalysis: any,
@@ -465,8 +408,8 @@ export class AdvancedScannerService {
     profileAnalysis: any = null,
     processedCompetitiveKeywords: any[] = []
   ): EnhancedScanResult {
-    // Map processedKeywords to keywordData for compatibility with existing methods
-    const keywordData = processedKeywords;
+    // localKeywordRankings now contains the 8 specific local search patterns
+    const keywordData = localKeywordRankings;
     
     // Calculate enhanced scores
     const businessScore = this.calculateBusinessScore(businessProfile);
@@ -606,9 +549,8 @@ export class AdvancedScannerService {
       userExperience: accessibilityScore,
       issues,
       recommendations,
-      keywords: enrichedKeywordData,  // Primary keyword location with position data
-      competitiveOpportunityKeywords: processedCompetitiveKeywords || [],  // "Where your competition is winning"
-      keywordAnalysis: enhancedKeywordAnalysis,
+      localKeywordRankings: keywordData,  // 8 specific local search patterns with authentic rankings
+      competitiveOpportunityKeywords: processedCompetitiveKeywords || [],  // Removed - replaced with local focus
       competitors: await this.generateDetailedCompetitorAnalysis(competitors, restaurantName, businessProfile, keywordData),
       competitorIntelligence,
       serpFeatures,

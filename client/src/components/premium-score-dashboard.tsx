@@ -707,20 +707,20 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                         <h4 className="text-sm font-semibold text-[#5F5FFF] mb-2">Where your competition is winning</h4>
                         <div className="space-y-1">
                           {(() => {
-                            // Show competitive opportunity keywords (ranking 6+)
-                            const competitiveKeywords = scanResult.competitiveOpportunityKeywords || [];
+                            // Show local keyword rankings instead of competitive opportunities
+                            const localKeywords = scanResult.localKeywordRankings || [];
                             
-                            console.log('🔍 Frontend displaying competitive opportunity keywords:', competitiveKeywords);
+                            console.log('🔍 Frontend displaying local keyword rankings:', localKeywords);
                             
-                            if (competitiveKeywords.length === 0) {
+                            if (localKeywords.length === 0) {
                               return (
                                 <div className="text-xs text-gray-500 text-center py-2">
-                                  No competitive opportunities found. Your competition is strong!
+                                  No local keyword data available.
                                 </div>
                               );
                             }
                             
-                            return competitiveKeywords.slice(0, 8).map((keyword, index) => (
+                            return localKeywords.slice(0, 8).map((keyword, index) => (
                               <div key={index} className="flex justify-between items-center text-xs">
                                 <span className="text-gray-700 flex-1 truncate pr-2">
                                   "{keyword.keyword || keyword}"
@@ -758,8 +758,8 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                       
                       {/* Show actual ranking keywords from multiple sources */}
                       {(() => {
-                        const keywordsWithRanking = scanResult.keywords?.filter(k => k.position && k.position <= 20) || [];
-                        const serpWithRanking = scanResult.keywordAnalysis?.rankingPositions?.filter(r => r.position && r.position <= 20) || [];
+                        const keywordsWithRanking = scanResult.localKeywordRankings?.filter(k => k.position && k.position <= 20) || [];
+                        const serpWithRanking = [];
                         const allRankedKeywords = [...keywordsWithRanking, ...serpWithRanking];
                         const uniqueRankedKeywords = allRankedKeywords.filter((item, index, self) => 
                           index === self.findIndex(k => k.keyword === item.keyword)
@@ -770,9 +770,9 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                           <h4 className="text-sm font-semibold text-[#5F5FFF] mb-2">Your Ranking Keywords</h4>
                           <div className="space-y-1">
                             {(() => {
-                              // Merge ranking keywords from multiple sources
-                              const keywordsWithRanking = scanResult.keywords?.filter(k => k.position && k.position <= 20) || [];
-                              const serpWithRanking = scanResult.keywordAnalysis?.rankingPositions?.filter(r => r.position && r.position <= 20) || [];
+                              // Use local keyword rankings instead of multiple sources
+                              const keywordsWithRanking = scanResult.localKeywordRankings?.filter(k => k.position && k.position <= 20) || [];
+                              const serpWithRanking = [];
                               const allRankedKeywords = [...keywordsWithRanking, ...serpWithRanking];
                               const uniqueRankedKeywords = allRankedKeywords.filter((item, index, self) => 
                                 index === self.findIndex(k => k.keyword === item.keyword)
@@ -844,28 +844,29 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                         
                         <div className="bg-[#5F5FFF]/30 border-2 border-yellow-300 rounded-lg p-4 mb-3 backdrop-blur-sm">
                           {(() => {
-                            const competitiveKeywords = scanResult.competitiveOpportunityKeywords || [];
-                            const keywordCount = competitiveKeywords.length;
+                            const localKeywords = scanResult.localKeywordRankings || [];
+                            const nonRankingKeywords = localKeywords.filter(k => !k.position || k.position > 10);
+                            const keywordCount = nonRankingKeywords.length;
                             
                             return (
                               <>
                                 <p className="text-white font-black text-2xl mb-2 drop-shadow-lg">
-                                  You're at risk of losing customers by not ranking on {keywordCount} keywords!
+                                  You're missing out on {keywordCount} local search opportunities!
                                 </p>
                                 {keywordCount > 0 && (
                                   <div className="text-yellow-200 text-sm font-bold mb-2">
-                                    Where your competition is beating you:
+                                    Local searches where you're not visible:
                                   </div>
                                 )}
                                 {keywordCount > 0 && (
                                   <div className="space-y-1 text-left max-h-32 overflow-y-auto">
-                                    {competitiveKeywords.slice(0, 3).map((keyword, index) => (
+                                    {nonRankingKeywords.slice(0, 3).map((keyword, index) => (
                                       <div key={index} className="flex justify-between items-center text-xs bg-white/10 rounded px-2 py-1">
                                         <span className="text-white truncate pr-2">
                                           "{keyword.keyword}"
                                         </span>
                                         <span className="text-yellow-300 font-bold">
-                                          #{keyword.position}
+                                          {keyword.position ? `#${keyword.position}` : 'Not found'}
                                         </span>
                                       </div>
                                     ))}
@@ -873,7 +874,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                                 )}
                                 {keywordCount === 0 && (
                                   <p className="text-yellow-200 text-base font-bold">
-                                    🔥 Your competition is strong across all keywords
+                                    🔥 You're ranking well on all local searches!
                                   </p>
                                 )}
                               </>
