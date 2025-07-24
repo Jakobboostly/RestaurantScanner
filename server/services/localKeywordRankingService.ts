@@ -190,9 +190,9 @@ export class LocalKeywordRankingService {
     }
 
     // PRIORITY 2: Check organic results but focus on local/restaurant-related results
-    console.log(`🔍 LOCAL RANKING: Local Pack search complete. Checking ${Math.min(items.length, 20)} organic results...`);
+    console.log(`🔍 LOCAL RANKING: Local Pack search complete. Checking ${Math.min(items.length, 50)} organic results...`);
     
-    for (let i = 0; i < items.length && i < 20; i++) {
+    for (let i = 0; i < items.length && i < 50; i++) {
       const item = items[i];
       const itemDomain = (item.domain || '').replace(/^www\./, '').toLowerCase();
       const itemTitle = (item.title || '').toLowerCase();
@@ -218,7 +218,7 @@ export class LocalKeywordRankingService {
       }
     }
 
-    console.log(`🔍 LOCAL RANKING: ❌ Restaurant not found in Local Pack or top 20 organic results`);
+    console.log(`🔍 LOCAL RANKING: ❌ Restaurant not found in Local Pack or top 50 organic results`);
     return { position: null, matchType: 'none' };
   }
 
@@ -312,7 +312,7 @@ export class LocalKeywordRankingService {
           location_name: locationString,
           language_code: 'en',
           device: 'desktop',
-          depth: 20,
+          depth: 50,
           max_crawl_pages: 1,
           include_local_pack: true,
           include_serp_features: true
