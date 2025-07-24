@@ -76,6 +76,13 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 24, 2025. Fixed "Key Restaurant Keywords" section to display the 8 targeted keywords instead of restaurant's existing ranked keywords:
+  - **Fixed frontend data source** - "Key Restaurant Keywords" section now pulls from `competitiveOpportunityKeywords` instead of `keywords` array
+  - **Updated backend to return ALL 8 targeted keywords** - Changed from filtering only positions 6+ to returning all targeted keywords with their actual positions (or "Not Ranked")
+  - **Enhanced position handling** - System now shows position 0 as "Not Ranked" with gray badges, actual positions with color-coded badges
+  - **Fixed TypeScript errors** - Resolved position type issues and missing method references in DataForSEO service
+  - **8 targeted keywords displayed** - Shows cuisine-specific keywords like "chicken near me", "chicken delivery [city]", "best chicken [city]", etc.
+  - **Improved user experience** - Users now see the exact 8 targeted keywords they expect with clear ranking indicators
 - July 24, 2025. Enhanced competitive keywords to show all targeted keywords with rankings:
   - **Updated keyword display logic** - Changed from showing only competitive opportunities (positions 6+) to showing all targeted keywords with their actual ranking positions
   - **Enhanced frontend display** - "Key Restaurant Keywords" section now displays all 8 targeted keywords with color-coded position badges (green for positions 1-5, yellow/orange for 6+)

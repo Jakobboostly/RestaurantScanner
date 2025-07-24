@@ -180,32 +180,34 @@ export class DataForSeoRankedKeywordsService {
             }
           }
 
-          // Include all keywords that have a ranking position
-          if (position > 0) {
-            results.push({
-              keyword: keyword,
-              position: position,
-              searchVolume: volumeData?.keyword_info?.search_volume || 0,
-              difficulty: volumeData?.keyword_info?.keyword_difficulty || 0,
-              cpc: volumeData?.keyword_info?.cpc || 0,
-              competition: volumeData?.keyword_info?.competition || 0,
-              // Calculate opportunity score (higher for positions 6+ where competitors beat you)
-              opportunityScore: this.calculateOpportunityScore(position, volumeData?.keyword_info?.search_volume || 0)
-            });
-          }
+          // Include ALL targeted keywords with their positions (whether ranked or not)
+          results.push({
+            keyword: keyword,
+            position: position > 0 ? position : 0, // Show 0 if not ranked, actual position if ranked
+            searchVolume: volumeData?.keyword_info?.search_volume || 0,
+            difficulty: volumeData?.keyword_info?.keyword_difficulty || 0,
+            cpc: volumeData?.keyword_info?.cpc || 0,
+            competition: volumeData?.keyword_info?.competition || 0,
+            intent: position > 0 ? 'commercial' : 'local', // Default intent classification
+            // Calculate opportunity score (higher for positions 6+ where competitors beat you)
+            opportunityScore: position > 0 ? this.calculateOpportunityScore(position, volumeData?.keyword_info?.search_volume || 0) : 0
+          });
 
         } catch (error) {
           console.error(`Error checking keyword "${keyword}":`, error);
         }
       }
 
-      // Sort by opportunity score (high volume + close to top 5 = best opportunity)
-      const sortedResults = results
-        .sort((a, b) => (b.opportunityScore || 0) - (a.opportunityScore || 0))
-        .slice(0, 8);
+      // Return all 8 targeted keywords sorted by position (best ranked first, unranked last)
+      const sortedResults = results.sort((a, b) => {
+        if (a.position === 0 && b.position === 0) return 0;
+        if (a.position === 0) return 1;
+        if (b.position === 0) return -1;
+        return a.position - b.position;
+      });
 
-      console.log(`🔍 TARGETED COMPETITIVE KEYWORDS: Found ${sortedResults.length} competitive opportunities for ${domain}`);
-      console.log(`🔍 Results:`, sortedResults.map(r => `${r.keyword} (pos: ${r.position}, vol: ${r.searchVolume})`));
+      console.log(`🔍 TARGETED COMPETITIVE KEYWORDS: Found ${sortedResults.length} targeted keywords for ${domain}`);
+      console.log(`🔍 Results:`, sortedResults.map(r => `${r.keyword} (pos: ${r.position || 'not ranked'}, vol: ${r.searchVolume})`));
 
       return sortedResults;
 

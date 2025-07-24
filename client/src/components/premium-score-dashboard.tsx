@@ -710,20 +710,12 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                         <h4 className="text-sm font-semibold text-[#5F5FFF] mb-2">Key Restaurant Keywords</h4>
                         <div className="space-y-1">
                           {(() => {
-                            // Show actual ranked keywords from scanResult.keywords with positions
-                            const rankedKeywords = scanResult.keywords?.filter(k => k.position && k.position > 0) || [];
-                            const serpKeywords = scanResult.keywordAnalysis?.rankingPositions?.filter(r => r.position && r.position > 0) || [];
+                            // Show the 8 specific targeted keywords (cuisine near me, delivery, etc.)
                             const targetedKeywords = scanResult.competitiveOpportunityKeywords || [];
                             
-                            // Combine all sources for complete keyword list, prioritize ones with positions
-                            const allKeywords = [...rankedKeywords, ...serpKeywords, ...targetedKeywords].filter((item, index, self) => 
-                              index === self.findIndex(k => k.keyword === item.keyword)
-                            );
+                            console.log('🔍 Frontend displaying targeted keywords:', targetedKeywords);
                             
-                            console.log('🔍 Frontend displaying competitive opportunity keywords:', targetedKeywords);
-                            console.log('🔍 Frontend displaying ranked keywords:', rankedKeywords);
-                            
-                            if (allKeywords.length === 0) {
+                            if (targetedKeywords.length === 0) {
                               return (
                                 <div className="text-xs text-gray-500 text-center py-2">
                                   No targeted keyword data available yet.
@@ -731,7 +723,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                               );
                             }
                             
-                            return allKeywords
+                            return targetedKeywords
                               .sort((a, b) => (a.position || 99) - (b.position || 99))
                               .slice(0, 8).map((keyword: any, index: number) => (
                               <div key={index} className="flex justify-between items-center text-xs">
@@ -739,22 +731,22 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                                   "{typeof keyword === 'string' ? keyword : keyword.keyword}"
                                 </span>
                                 <div className="flex items-center gap-2">
-                                  {keyword.position && (
-                                    <Badge 
-                                      variant="outline" 
-                                      className={`text-xs px-2 py-0 ${
-                                        keyword.position <= 5
-                                          ? 'bg-green-100 text-green-800 border-green-200'
-                                          : keyword.position <= 10
-                                          ? 'bg-yellow-100 text-yellow-800 border-yellow-200'
-                                          : keyword.position <= 20
-                                          ? 'bg-orange-100 text-orange-800 border-orange-200'
-                                          : 'bg-red-100 text-red-800 border-red-200'
-                                      }`}
-                                    >
-                                      #{keyword.position}
-                                    </Badge>
-                                  )}
+                                  <Badge 
+                                    variant="outline" 
+                                    className={`text-xs px-2 py-0 ${
+                                      keyword.position === null || keyword.position === 0 || keyword.position === undefined
+                                        ? 'bg-gray-100 text-gray-600 border-gray-200'
+                                        : keyword.position <= 5
+                                        ? 'bg-green-100 text-green-800 border-green-200'
+                                        : keyword.position <= 10
+                                        ? 'bg-yellow-100 text-yellow-800 border-yellow-200'
+                                        : keyword.position <= 20
+                                        ? 'bg-orange-100 text-orange-800 border-orange-200'
+                                        : 'bg-red-100 text-red-800 border-red-200'
+                                    }`}
+                                  >
+                                    {keyword.position === null || keyword.position === 0 || keyword.position === undefined ? 'Not Ranked' : `#${keyword.position}`}
+                                  </Badge>
                                   {keyword.searchVolume && (
                                     <span className="text-xs text-gray-500">
                                       {keyword.searchVolume > 1000 ? `${Math.round(keyword.searchVolume / 1000)}k` : keyword.searchVolume}
