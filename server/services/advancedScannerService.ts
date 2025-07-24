@@ -83,6 +83,7 @@ export class AdvancedScannerService {
     onProgress: (progress: ScanProgress) => void,
     manualFacebookUrl?: string
   ): Promise<EnhancedScanResult> {
+    console.log('🚀🚀🚀 CRITICAL DEBUG: scanRestaurantAdvanced method called!');
     console.log('🚀 Advanced scan starting with parameters:');
     console.log('  - placeId:', placeId);
     console.log('  - domain:', domain);
