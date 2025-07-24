@@ -238,7 +238,7 @@ export class LocalKeywordRankingService {
       const response = await this.client.post('/keywords_data/google_ads/search_volume/live', [{
         keywords: keywords,
         language_code: 'en',
-        location_name: 'United States'
+        location_name: location
       }]);
 
       console.log('🔍 LOCAL RANKING: Raw search volume response:', JSON.stringify(response.data, null, 2));
@@ -298,11 +298,13 @@ export class LocalKeywordRankingService {
     const localKeywords = this.generateLocalKeywords(cuisineLocationData);
     console.log('🔍 LOCAL RANKING: Generated keywords:', localKeywords);
 
-    // Create location string for API calls
-    const locationString = `${city}, ${state}, United States`;
+    // Create location string for API calls - this is critical for LOCAL SEO targeting
+    // Format: "City,State,United States" (no spaces after commas for DataForSEO)
+    const locationString = `${city},${state},United States`;
+    console.log('🔍 LOCAL RANKING: Using location string for geo-targeting:', locationString);
 
-    // First, get search volume data for all keywords (using your solution approach)
-    const keywordVolumeData = await this.getSearchVolumeData(localKeywords, 'United States');
+    // First, get search volume data for all keywords (using location-specific targeting)
+    const keywordVolumeData = await this.getSearchVolumeData(localKeywords, locationString);
     console.log('🔍 LOCAL RANKING: Search volume data received:', keywordVolumeData.length);
 
     const rankings: LocalKeywordRanking[] = [];
@@ -314,9 +316,10 @@ export class LocalKeywordRankingService {
 
         const response = await this.client.post('/serp/google/organic/live/advanced', [{
           language_code: 'en',
-          location_name: `${city},${state},United States`,
+          location_name: locationString,
           keyword: keyword,
-          depth: 50
+          depth: 50,
+          max_crawl_pages: 1
         }]);
 
         const result = response.data.tasks?.[0]?.result?.[0];

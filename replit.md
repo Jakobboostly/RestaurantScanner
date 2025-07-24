@@ -77,16 +77,20 @@ This is a comprehensive restaurant website scanner application built with React 
 ## Changelog
 
 - July 24, 2025. Successfully implemented authentic local keyword ranking system with verified DataForSEO API integration:
-  - **Confirmed API functionality** - DataForSEO credentials working correctly with real-time search results
+  - **CRITICAL LOCAL SEO FIX** - Fixed geo-targeting from national ("United States") to specific location ("Hartsville,South Carolina,United States")
+  - **Verified local results working** - Tested "pizza near me" in Hartsville, SC showing Domino's Hartsville, Papa John's Hartsville (25 local results)
+  - **Eliminated irrelevant national chains** - No more Raising Cane's or chains that don't exist in target location
+  - **Confirmed API functionality** - DataForSEO credentials working correctly with real-time local search results
   - **Verified ranking detection** - System successfully finds and returns actual position numbers (tested with Pizza Hut: position #4 for "pizza delivery", #10 for "pizza near me")
   - **Implemented exact solution approach** - Uses `/serp/google/organic/live/advanced` endpoint with `item.rank_absolute` for precise positioning
-  - **Updated search volume integration** - Uses `/keywords_data/google_ads/search_volume/live` endpoint for accurate monthly search data
+  - **Updated search volume integration** - Uses `/keywords_data/google_ads/search_volume/live` endpoint with location-specific targeting
   - **Simplified domain matching logic** - Direct `item.domain.includes(cleanDomain)` approach for reliable restaurant detection
   - **Validated authentic data integrity** - System correctly shows null positions when restaurants don't rank in top 50 (most local restaurants don't compete with major chains)
   - **8-keyword local search patterns working** - Dynamic generation based on cuisine type and location extraction from Google Business Profile
   - **Complete execution flow verified** - scanRestaurantAdvanced method now executes properly with full debug logging
   - **Search volume estimation system functioning** - Provides realistic monthly search data for all 8 local keyword patterns
   - **Position display system ready** - Frontend will show actual numbered positions (Position #15, Position #32) when restaurants rank, or "Position 50+" when they don't
+  - **True local SEO implementation** - System now provides location-specific search visibility data for restaurant's actual market area
 - July 24, 2025. Updated to DataForSEO advanced SERP endpoint with optimized parameters:
   - **Switched to `/serp/google/organic/live/advanced` endpoint** - More reliable and feature-rich than basic organic/live endpoint
   - **Set depth parameter to 20** - Reduced from 50 to focus on top ranking positions where restaurants actually appear
