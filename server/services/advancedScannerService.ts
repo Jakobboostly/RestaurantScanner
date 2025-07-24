@@ -189,6 +189,7 @@ export class AdvancedScannerService {
       // Phase 3: Checking search rankings (4 seconds)
       const phase3Start = Date.now();
       onProgress({ progress: 42, status: 'Checking search rankings...' });
+      console.log('🔍 ADVANCED SCANNER: Phase 3 started - Checking search rankings');
       
       // Extract the actual business website domain from Google Business Profile
       let actualDomain = domain;
