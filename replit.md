@@ -76,6 +76,14 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 24, 2025. Updated to DataForSEO advanced SERP endpoint with optimized parameters:
+  - **Switched to `/serp/google/organic/live/advanced` endpoint** - More reliable and feature-rich than basic organic/live endpoint
+  - **Set depth parameter to 20** - Reduced from 50 to focus on top ranking positions where restaurants actually appear
+  - **Added max_crawl_pages: 1** - Optimizes API performance by limiting page crawling for faster results
+  - **Updated ranking detection logic** - Now searches top 20 positions instead of 50 for more realistic restaurant ranking analysis
+  - **Enhanced frontend display** - Shows "Not Found (20+)" instead of "Not Found (50+)" to match new depth parameter
+  - **Maintained all functionality** - Search volume estimation, keyword generation, and position matching all preserved
+  - **Cost optimization** - Advanced endpoint with focused depth provides better results with improved API efficiency
 - July 24, 2025. Implemented 8-keyword local search ranking system with authentic DataForSEO API integration:
   - **Created localKeywordRankingService.ts** - New service to handle 8 specific local search patterns using DataForSEO SERP API
   - **8 specific search queries implemented** - "[cuisine type] near me", "[cuisine type] delivery [city]", "best [cuisine type] [city]", "[city] [cuisine type]", "[cuisine type] places near me", "[cuisine type] [city] [state]", "[cuisine type] delivery near me", "[cuisine type] open now"

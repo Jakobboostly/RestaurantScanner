@@ -177,7 +177,7 @@ export class LocalKeywordRankingService {
     // Then check organic search results (positions start after local pack)
     const localPackOffset = localPack.length > 0 ? 3 : 0; // Local pack typically takes 3 positions
     
-    for (let i = 0; i < items.length && i < 50; i++) {
+    for (let i = 0; i < items.length && i < 20; i++) {
       const item = items[i];
       const itemDomain = (item.domain || '').replace(/^www\./, '');
       
@@ -274,12 +274,13 @@ export class LocalKeywordRankingService {
       try {
         console.log(`🔍 LOCAL RANKING: Checking ranking for "${keyword}"`);
 
-        const response = await this.client.post('/serp/google/organic/live', [{
+        const response = await this.client.post('/serp/google/organic/live/advanced', [{
           keyword,
           location_name: locationString,
           language_code: 'en',
           device: 'desktop',
-          depth: 50
+          depth: 20,
+          max_crawl_pages: 1
         }]);
 
         const result = response.data.tasks?.[0]?.result?.[0];
@@ -337,7 +338,7 @@ export class LocalKeywordRankingService {
         if (position) {
           console.log(`🔍 LOCAL RANKING: Found ${restaurantName} at position ${position} for "${keyword}" (matched by ${matchType})`);
         } else {
-          console.log(`🔍 LOCAL RANKING: ${restaurantName} not found in top 50 results for "${keyword}"`);
+          console.log(`🔍 LOCAL RANKING: ${restaurantName} not found in top 20 results for "${keyword}"`);
         }
 
         // Add delay between requests to avoid rate limiting
