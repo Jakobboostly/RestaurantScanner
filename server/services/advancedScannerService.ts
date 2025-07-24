@@ -63,7 +63,7 @@ export class AdvancedScannerService {
   ) {
     console.log('🚀🚀🚀 CRITICAL DEBUG: AdvancedScannerService constructor called!');
     this.googleBusinessService = new GoogleBusinessService(googleApiKey);
-    this.localKeywordRankingService = new LocalKeywordRankingService(dataForSeoLogin, dataForSeoPassword);
+    this.localKeywordRankingService = new LocalKeywordRankingService();
     this.aiRecommendationService = new AIRecommendationService();
     this.googleReviewsService = new GoogleReviewsService(googleApiKey);
     this.apifyReviewsService = apifyApiKey ? new ApifyReviewsService(apifyApiKey) : undefined;

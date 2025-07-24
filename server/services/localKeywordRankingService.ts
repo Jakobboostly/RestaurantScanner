@@ -31,17 +31,22 @@ export interface CuisineLocationData {
 export class LocalKeywordRankingService {
   private client: AxiosInstance;
 
-  constructor(login: string, password: string) {
-    const credentials = Buffer.from(`${login}:${password}`).toString('base64');
+  constructor() {
+    // Use the provided base64 credentials directly
+    const credentials = 'amFrb2JAYm9vc3RseS5jb206ZWJhMDVmZDk0YmU4NWU1Ng==';
     
+    console.log('🔍 LOCAL RANKING: Initializing DataForSEO client with provided credentials');
+
     this.client = axios.create({
       baseURL: 'https://api.dataforseo.com/v3',
       headers: {
         'Authorization': `Basic ${credentials}`,
         'Content-Type': 'application/json'
       },
-      timeout: 30000
+      timeout: 30000 // 30 second timeout
     });
+
+    console.log('🔍 LOCAL RANKING: DataForSEO client initialized successfully');
   }
 
   /**
@@ -308,14 +313,10 @@ export class LocalKeywordRankingService {
         console.log(`🔍 LOCAL RANKING: Checking ranking for "${keyword}"`);
 
         const response = await this.client.post('/serp/google/organic/live/advanced', [{
-          keyword,
-          location_name: locationString,
           language_code: 'en',
-          device: 'desktop',
-          depth: 50,
-          max_crawl_pages: 1,
-          include_local_pack: true,
-          include_serp_features: true
+          location_code: 2840, // United States
+          keyword: keyword,
+          calculate_rectangles: true
         }]);
 
         const result = response.data.tasks?.[0]?.result?.[0];
