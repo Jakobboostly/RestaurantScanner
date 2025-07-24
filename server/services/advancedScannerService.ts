@@ -234,16 +234,31 @@ export class AdvancedScannerService {
       const rankedKeywords = await rankedKeywordsPromise as any[];
       console.log(`Found ${rankedKeywords.length} ranked keywords for ${actualDomain}`);
       
-      // Get competitive opportunity keywords (ranking 6+) - "Where your competition is winning"
-      console.log(`🔍 ADVANCED SCANNER: Getting competitive opportunity keywords (rank 6+) for domain: ${actualDomain}`);
+      // Get targeted competitive keywords for restaurants - "Where your competition is winning"
+      console.log(`🔍 ADVANCED SCANNER: Getting targeted competitive keywords for domain: ${actualDomain}`);
+      
+      // Extract restaurant details for targeted keyword analysis
+      const cuisineType = this.extractCuisineType(businessProfile);
+      const locationData = businessProfile?.address ? 
+        this.extractCityFromAddress(businessProfile.address) : 
+        { city: 'Unknown', state: 'Unknown' };
+      
+      console.log(`🔍 Restaurant details - Cuisine: ${cuisineType}, Location: ${locationData.city}, ${locationData.state}`);
       
       const competitiveOpportunityPromise = Promise.race([
-        this.rankedKeywordsService.getCompetitiveOpportunityKeywords(actualDomain, 'United States', 'en', 5),
+        this.rankedKeywordsService.getTargetedCompetitiveKeywords(
+          actualDomain, 
+          cuisineType, 
+          locationData.city, 
+          locationData.state,
+          'United States', 
+          'en'
+        ),
         new Promise((_, reject) => 
-          setTimeout(() => reject(new Error('Competitive opportunity keywords timeout')), 8000)
+          setTimeout(() => reject(new Error('Targeted competitive keywords timeout')), 15000)
         )
       ]).catch(error => {
-        console.error('Competitive opportunity keywords failed:', error);
+        console.error('Targeted competitive keywords failed:', error);
         return [];
       });
       
