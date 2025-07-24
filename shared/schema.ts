@@ -118,6 +118,23 @@ export const scanResultSchema = z.object({
     cpc: z.number().optional(),
     competition: z.number().optional(),
   })),
+  competitiveOpportunityKeywords: z.array(z.object({
+    keyword: z.string(),
+    position: z.number(),
+    searchVolume: z.number(),
+    difficulty: z.number(),
+    intent: z.string(),
+    cpc: z.number().optional(),
+    competition: z.number().optional(),
+    opportunity: z.number().optional(),
+    url: z.string().optional(),
+    title: z.string().optional(),
+    description: z.string().optional(),
+    isNew: z.boolean().optional(),
+    isLost: z.boolean().optional(),
+    positionChange: z.number().optional(),
+    previousPosition: z.number().optional(),
+  })).optional(),
   keywordAnalysis: z.object({
     targetKeywords: z.array(z.object({
       keyword: z.string(),
@@ -182,16 +199,16 @@ export const scanResultSchema = z.object({
     cls: z.number(),
     fid: z.number(),
   }),
-  backlinks: z.number(),
-  organicTraffic: z.number(),
-  scanDate: z.string(),
   businessProfile: z.object({
     name: z.string(),
     rating: z.number(),
     totalReviews: z.number(),
+    address: z.string().optional(),
+    website: z.string().optional(),
     photos: z.object({
       total: z.number(),
       quality: z.enum(['excellent', 'good', 'fair', 'poor']),
+      businessPhotos: z.array(z.string()).optional(),
       categories: z.object({
         food: z.number(),
         interior: z.number(),
@@ -208,6 +225,24 @@ export const scanResultSchema = z.object({
     isVerified: z.boolean(),
     responseRate: z.number(),
     averageResponseTime: z.string(),
+  }).optional(),
+  profileAnalysis: z.object({
+    completenessScore: z.number(),
+    strengths: z.array(z.string()),
+    weaknesses: z.array(z.string()),
+    recommendations: z.array(z.object({
+      category: z.string(),
+      priority: z.enum(['high', 'medium', 'low']),
+      title: z.string(),
+      description: z.string(),
+      impact: z.string(),
+    })),
+    competitivePosition: z.string(),
+    optimization: z.object({
+      photoOptimization: z.string(),
+      infoCompleteness: z.string(),
+      engagementLevel: z.string(),
+    }),
   }).optional(),
   mobileExperience: z.object({
     score: z.number(),

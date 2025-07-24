@@ -74,6 +74,9 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
     reviews: 'Analyzing reviews and reputation...'
   });
   
+  const [loadingScreenshot, setLoadingScreenshot] = useState(false);
+  const [restaurantSearchScreenshot, setRestaurantSearchScreenshot] = useState<RestaurantSearchScreenshot | null>(null);
+  
   const [activeTab, setActiveTab] = useState<'search' | 'social' | 'local' | 'reviews'>('search');
   const [showEmbeddedSearch, setShowEmbeddedSearch] = useState(false);
   
@@ -201,17 +204,17 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
     const socialScore = (facebookPresent ? 50 : 0) + (instagramPresent ? 50 : 0); // 50 points each for Facebook and Instagram
     
     // Local Score (based on business profile completeness)
-    const businessProfile = scanResult.businessProfile || {};
+    const businessProfile = scanResult.businessProfile;
     const localScore = Math.round(
-      (businessProfile.rating || 0) * 10 + 
-      (businessProfile.totalReviews ? Math.min(businessProfile.totalReviews / 10, 30) : 0)
+      (businessProfile?.rating || 0) * 10 + 
+      (businessProfile?.totalReviews ? Math.min(businessProfile.totalReviews / 10, 30) : 0)
     );
     
     // Reviews Score (based on rating and review count from reviewsAnalysis)
-    const reviewsAnalysis = scanResult.reviewsAnalysis || {};
+    const reviewsAnalysis = scanResult.reviewsAnalysis;
     const reviewsScore = Math.round(
-      (reviewsAnalysis.averageRating || businessProfile.rating || 0) * 15 + 
-      (reviewsAnalysis.totalReviews || businessProfile.totalReviews ? Math.min((reviewsAnalysis.totalReviews || businessProfile.totalReviews) / 20, 25) : 0)
+      (reviewsAnalysis?.averageRating || businessProfile?.rating || 0) * 15 + 
+      (reviewsAnalysis?.totalReviews || businessProfile?.totalReviews ? Math.min((reviewsAnalysis?.totalReviews || businessProfile?.totalReviews || 0) / 20, 25) : 0)
     );
     
     // Overall Score (average of all 4 categories)
@@ -720,10 +723,10 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                               );
                             }
                             
-                            return competitiveKeywords.slice(0, 8).map((keyword, index) => (
+                            return competitiveKeywords.slice(0, 8).map((keyword: any, index: number) => (
                               <div key={index} className="flex justify-between items-center text-xs">
                                 <span className="text-gray-700 flex-1 truncate pr-2">
-                                  "{keyword.keyword || keyword}"
+                                  "{typeof keyword === 'string' ? keyword : keyword.keyword}"
                                 </span>
                                 <div className="flex items-center gap-2">
                                   {keyword.position && (
@@ -792,14 +795,14 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                                       <Badge 
                                         variant="outline" 
                                         className={`text-xs px-2 py-0 ${
-                                          keyword.position <= 3 
+                                          (keyword.position || 0) <= 3 
                                             ? 'bg-green-100 text-green-800 border-green-200'
-                                            : keyword.position <= 10
+                                            : (keyword.position || 0) <= 10
                                             ? 'bg-yellow-100 text-yellow-800 border-yellow-200'
                                             : 'bg-orange-100 text-orange-800 border-orange-200'
                                         }`}
                                       >
-                                        #{keyword.position}
+                                        #{keyword.position || 'N/A'}
                                       </Badge>
                                     </div>
                                   </div>
@@ -1318,7 +1321,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                           </Tooltip>
                         </TooltipProvider>
                       </div>
-                      <span className="font-medium">{scanResult.profileAnalysis?.completeness?.score || 0}%</span>
+                      <span className="font-medium">{scanResult.profileAnalysis?.completenessScore || 0}%</span>
                     </div>
                     {scanResult.businessProfile?.photos && (
                       <div className="flex justify-between items-center">
@@ -1480,7 +1483,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                               Emotional Keywords Found in Reviews
                             </h4>
                             <div className="flex flex-wrap gap-2">
-                              {moodAnalysis.keyMoodIndicators.slice(0, 6).map((indicator, index) => (
+                              {moodAnalysis.keyMoodIndicators.slice(0, 6).map((indicator: string, index: number) => (
                                 <span 
                                   key={index}
                                   className={`px-3 py-2 rounded-full text-xs font-semibold transform transition-all duration-300 hover:scale-105 hover:shadow-lg ${
@@ -1510,7 +1513,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                                   <h5 className="font-bold text-green-800 text-sm">What Customers Love About You</h5>
                                 </div>
                                 <div className="space-y-2">
-                                  {moodAnalysis.businessInsights.strengthsPerceived.slice(0, 3).map((strength, index) => (
+                                  {moodAnalysis.businessInsights.strengthsPerceived.slice(0, 3).map((strength: string, index: number) => (
                                     <div key={index} className="flex items-start gap-2">
                                       <div className="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
                                       <p className="text-xs text-green-800 font-medium leading-relaxed">{strength}</p>
@@ -1531,7 +1534,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                                   <h5 className="font-bold text-amber-800 text-sm">Where Customers want you to Grow</h5>
                                 </div>
                                 <div className="space-y-2">
-                                  {moodAnalysis.businessInsights.improvementOpportunities.slice(0, 3).map((opportunity, index) => (
+                                  {moodAnalysis.businessInsights.improvementOpportunities.slice(0, 3).map((opportunity: string, index: number) => (
                                     <div key={index} className="flex items-start gap-2">
                                       <div className="w-1.5 h-1.5 bg-amber-500 rounded-full mt-2 flex-shrink-0"></div>
                                       <p className="text-xs text-amber-800 font-medium leading-relaxed">{opportunity}</p>
@@ -1553,7 +1556,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                               Top Emotional Themes in Customer Reviews
                             </h4>
                             <div className="grid grid-cols-2 gap-3">
-                              {moodAnalysis.emotionalThemes.slice(0, 4).map((theme, index) => (
+                              {moodAnalysis.emotionalThemes.slice(0, 4).map((theme: any, index: number) => (
                                 <div key={index} className="bg-white/80 rounded-lg p-3 border border-gray-100 shadow-sm">
                                   <div className="flex justify-between items-center mb-1">
                                     <span className="text-xs font-semibold text-gray-700 capitalize">{theme.theme}</span>
