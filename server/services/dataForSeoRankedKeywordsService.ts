@@ -34,11 +34,12 @@ export class DataForSeoRankedKeywordsService {
           try {
             console.log(`🔍 Querying Local Finder API for: "${keyword}"`);
             
+            // Use Provo-specific location code for accurate local targeting
             const post_array = [{
-              location_code: 2840, // Utah location code for Google Maps API
+              location_code: 1026201, // Provo, Utah specific location code
               language_code: "en",
               keyword: keyword,
-              depth: 20 // Check first 20 local results
+              depth: 10 // Check first 10 local results
             }];
 
             const response = await fetch('https://api.dataforseo.com/v3/serp/google/maps/live/advanced', {
@@ -60,19 +61,46 @@ export class DataForSeoRankedKeywordsService {
             if (data.tasks && data.tasks[0] && data.tasks[0].result && data.tasks[0].result[0]) {
               const localResults = data.tasks[0].result[0].items || [];
               
-              // Find business by name matching (flexible matching)
-              const businessPosition = localResults.findIndex((item: any) => {
+              // Find business by name matching (strict matching)
+              console.log(`🔍 Looking for business: "${businessName}" in ${localResults.length} results`);
+              
+              const businessPosition = localResults.findIndex((item: any, index: number) => {
                 const itemTitle = (item.title || '').toLowerCase();
                 const searchName = businessName.toLowerCase();
                 
-                // Multiple matching strategies
-                return itemTitle.includes(searchName) || 
-                       searchName.includes(itemTitle.split(' ')[0]) ||
-                       itemTitle.includes(cuisine.toLowerCase());
+                console.log(`  - Position ${index + 1}: "${item.title}" (domain: ${item.domain})`);
+                
+                // Very strict matching - significant word overlap required
+                const titleWords = itemTitle.split(' ').filter(word => word.length > 2);
+                const nameWords = searchName.split(' ').filter(word => word.length > 2);
+                
+                // Check for significant word overlap (at least 2 words or exact name match)
+                const matchingWords = titleWords.filter(titleWord => 
+                  nameWords.some(nameWord => 
+                    titleWord.includes(nameWord) || nameWord.includes(titleWord)
+                  )
+                );
+                
+                const isExactMatch = itemTitle.includes(searchName) || searchName.includes(itemTitle);
+                const hasSignificantOverlap = matchingWords.length >= 2;
+                const isMatch = isExactMatch || hasSignificantOverlap;
+                
+                if (isMatch) {
+                  console.log(`    ✅ MATCH FOUND: "${itemTitle}" matches "${searchName}" (${matchingWords.length} matching words: ${matchingWords.join(', ')})`);
+                } else {
+                  console.log(`    ❌ No match: "${itemTitle}" vs "${searchName}" (${matchingWords.length} matching words)`);
+                }
+                
+                return isMatch;
               });
 
               const position = businessPosition >= 0 ? businessPosition + 1 : 0;
-              console.log(`✅ "${keyword}" - Business found at position: ${position}`);
+              
+              if (position > 0) {
+                console.log(`✅ "${keyword}" - Business "${businessName}" found at position: ${position}`);
+              } else {
+                console.log(`❌ "${keyword}" - Business "${businessName}" NOT FOUND in local results`);
+              }
               
               return {
                 keyword,
