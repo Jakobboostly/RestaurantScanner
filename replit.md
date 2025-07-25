@@ -76,6 +76,12 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 25, 2025. Fixed frontend data source for "Your Ranking Keywords" section to display authentic Local Finder API results:
+  - **Fixed data source mismatch** - "Your Ranking Keywords" section now correctly pulls from `competitiveOpportunityKeywords` (Local Finder API data) instead of random `keywords` array (DataForSEO ranked keywords)
+  - **Eliminated unrelated keyword display** - Removed display of irrelevant keywords like "fort collins salsa", "is all tequila made in jalisco" that had no connection to the scanned restaurant
+  - **Verified authentic data flow** - System now displays only the 8 targeted restaurant-specific keywords generated for each business with their actual Local Finder API positions
+  - **Enhanced position filtering** - Only shows keywords with actual ranking positions (position > 0) from Local Finder API results
+  - **Improved user experience** - Users now see relevant keywords like "pizza near me", "pizza delivery [city]", "best pizza [city]" with authentic Google Local Pack positions
 - July 25, 2025. Fixed Local Finder API business name matching for accurate restaurant keyword rankings:
   - **Enhanced business name matching logic** - Improved matching algorithms to find restaurants in Local Pack results using multiple strategies (name match, domain match, first word match)
   - **Fixed rankings display** - Keywords now show actual positions instead of "Not Ranked" when restaurant appears in local search results
