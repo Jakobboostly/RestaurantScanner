@@ -16,7 +16,7 @@ import OpenAI from "openai";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // API credentials with fallback priority
-  const GOOGLE_API_KEY = process.env.GOOGLE_PLACES_API_KEY || process.env.GOOGLE_API_KEY;
+  const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY || process.env.GOOGLE_PLACES_API_KEY;
   const DATAFOREO_LOGIN = process.env.DATAFORSEO_LOGIN || process.env.DATAFOREO_LOGIN;
   const DATAFOREO_PASSWORD = process.env.DATAFORSEO_PASSWORD || process.env.DATAFOREO_PASSWORD;
 
