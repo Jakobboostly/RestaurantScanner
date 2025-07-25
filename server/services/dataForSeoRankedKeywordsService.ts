@@ -34,9 +34,13 @@ export class DataForSeoRankedKeywordsService {
           try {
             console.log(`🔍 Querying Local Finder API for: "${keyword}"`);
             
-            // Use Provo-specific location code for accurate local targeting
+            // Use dynamic location targeting based on actual city
+            const locationConfig = city.toLowerCase().includes('provo') 
+              ? { location_code: 1026201 } // Provo, Utah
+              : { location_name: `${city}, ${state}, United States` }; // Dynamic city targeting
+            
             const post_array = [{
-              location_code: 1026201, // Provo, Utah specific location code
+              ...locationConfig,
               language_code: "en",
               keyword: keyword,
               depth: 10 // Check first 10 local results
@@ -70,25 +74,35 @@ export class DataForSeoRankedKeywordsService {
                 
                 console.log(`  - Position ${index + 1}: "${item.title}" (domain: ${item.domain})`);
                 
-                // Very strict matching - significant word overlap required
-                const titleWords = itemTitle.split(' ').filter(word => word.length > 2);
-                const nameWords = searchName.split(' ').filter(word => word.length > 2);
+                // Balanced matching - exact match or significant word overlap
+                const titleWords = itemTitle.split(/\s+/).filter((word: string) => word.length > 2);
+                const nameWords = searchName.split(/\s+/).filter((word: string) => word.length > 2);
                 
-                // Check for significant word overlap (at least 2 words or exact name match)
-                const matchingWords = titleWords.filter(titleWord => 
-                  nameWords.some(nameWord => 
+                // 1. Exact substring match (most reliable)
+                const isExactMatch = itemTitle.includes(searchName) || searchName.includes(itemTitle);
+                
+                // 2. Domain-based matching (if available)
+                const domainMatch = item.domain && item.domain.toLowerCase().includes(searchName.replace(/\s+/g, ''));
+                
+                // 3. Word overlap matching (at least 50% of unique words)
+                const matchingWords = titleWords.filter((titleWord: string) => 
+                  nameWords.some((nameWord: string) => 
                     titleWord.includes(nameWord) || nameWord.includes(titleWord)
                   )
                 );
+                const wordOverlapRatio = matchingWords.length / Math.max(nameWords.length, 1);
+                const hasGoodOverlap = wordOverlapRatio >= 0.5 && matchingWords.length >= 1;
                 
-                const isExactMatch = itemTitle.includes(searchName) || searchName.includes(itemTitle);
-                const hasSignificantOverlap = matchingWords.length >= 2;
-                const isMatch = isExactMatch || hasSignificantOverlap;
+                const isMatch = isExactMatch || domainMatch || hasGoodOverlap;
                 
                 if (isMatch) {
-                  console.log(`    ✅ MATCH FOUND: "${itemTitle}" matches "${searchName}" (${matchingWords.length} matching words: ${matchingWords.join(', ')})`);
+                  const matchType = isExactMatch ? 'exact' : domainMatch ? 'domain' : 'word-overlap';
+                  console.log(`    ✅ MATCH FOUND (${matchType}): "${itemTitle}" matches "${searchName}"`);
+                  if (matchingWords.length > 0) {
+                    console.log(`      Matching words: ${matchingWords.join(', ')} (${Math.round(wordOverlapRatio * 100)}%)`);
+                  }
                 } else {
-                  console.log(`    ❌ No match: "${itemTitle}" vs "${searchName}" (${matchingWords.length} matching words)`);
+                  console.log(`    ❌ No match: "${itemTitle}" vs "${searchName}" (${matchingWords.length}/${nameWords.length} words)`);
                 }
                 
                 return isMatch;
