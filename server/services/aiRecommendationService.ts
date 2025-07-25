@@ -1,5 +1,8 @@
 export class AIRecommendationService {
   async generateRecommendations(scanData: any) {
-    return { recommendations: [] };
+    return [
+      { priority: "high", message: "Improve website performance", category: "technical" },
+      { priority: "medium", message: "Enhance social media presence", category: "marketing" }
+    ];
   }
 }

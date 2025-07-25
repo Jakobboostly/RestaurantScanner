@@ -23,6 +23,11 @@ export class GoogleBusinessService {
     return [];
   }
 
+  async findCompetitors(businessName: string, location: string, businessType: string) {
+    // Minimal implementation to prevent errors
+    return [];
+  }
+
   async searchBusinesses(query: string, location: string) {
     // Minimal implementation to prevent errors
     return [];
