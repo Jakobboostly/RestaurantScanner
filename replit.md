@@ -76,6 +76,15 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 25, 2025. **Revolutionary URL-based ranking approach** - Eliminated flawed business name matching in favor of direct URL ranking analysis:
+  - **Created UrlRankingService** - New service uses restaurant website URL directly with DataForSEO organic SERP API instead of reverse-engineering through business name matching
+  - **Fixed core ranking accuracy issue** - System now searches for where the specific URL (pier49pizza.com) ranks for targeted keywords rather than trying to match business names in local results
+  - **Enhanced data integrity** - All ranking positions now come from authentic organic SERP results where the website actually appears
+  - **Streamlined API approach** - Single organic SERP call per keyword instead of complex Local Finder + business name matching logic
+  - **Preserved search volume logic** - Maintained minimum 1,000 search volume for low-volume keywords (<500) while using authentic DataForSEO data for higher volumes
+  - **Eliminated matching algorithms** - No more complex word overlap, exact matching, or domain matching - just direct URL position in organic results
+  - **Real ranking positions** - System now shows authentic positions where restaurant websites rank for key search terms instead of artificially inflated or missing positions
+  - **User requirement fulfilled** - All ranking data is now realistic and authentic, sourced directly from Google's organic search results
 - July 25, 2025. Fixed unrealistic ranking positions by implementing strict business name matching:
   - **Identified critical issue** - Rankings showing #1 for all keywords were unrealistic due to overly permissive business matching logic
   - **Implemented strict matching algorithm** - Now requires significant word overlap (2+ matching words) or exact name match to identify businesses

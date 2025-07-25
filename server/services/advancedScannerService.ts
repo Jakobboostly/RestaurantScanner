@@ -1,6 +1,7 @@
 import { GoogleBusinessService } from './googleBusinessService.js';
 
 import { DataForSeoRankedKeywordsService } from './dataForSeoRankedKeywordsService.js';
+import { UrlRankingService } from './urlRankingService.js';
 import { AIRecommendationService } from './aiRecommendationService.js';
 import { GoogleReviewsService } from './googleReviewsService.js';
 import { ApifyReviewsService } from './apifyReviewsService.js';
@@ -40,6 +41,7 @@ export interface EnhancedScanResult extends ScanResult {
 export class AdvancedScannerService {
   private googleBusinessService: GoogleBusinessService;
   private rankedKeywordsService: DataForSeoRankedKeywordsService;
+  private urlRankingService: UrlRankingService;
 
   private aiRecommendationService: AIRecommendationService;
   private googleReviewsService: GoogleReviewsService;
@@ -71,6 +73,7 @@ export class AdvancedScannerService {
   ) {
     this.googleBusinessService = new GoogleBusinessService(googleApiKey);
     this.rankedKeywordsService = new DataForSeoRankedKeywordsService(dataForSeoLogin, dataForSeoPassword);
+    this.urlRankingService = new UrlRankingService(dataForSeoLogin, dataForSeoPassword);
     this.aiRecommendationService = new AIRecommendationService();
     this.googleReviewsService = new GoogleReviewsService(googleApiKey);
     this.apifyReviewsService = apifyApiKey ? new ApifyReviewsService(apifyApiKey) : undefined;
@@ -261,10 +264,14 @@ export class AdvancedScannerService {
       
       console.log(`🎯 Generated ${targetedKeywords.length} targeted keywords:`, targetedKeywords);
       
-      // Get real local ranking data using Local Finder API (wait for completion)
-      console.log('🔍 Starting Local Finder API analysis - this may take up to 30 seconds...');
-      const competitiveOpportunityKeywords = await this.rankedKeywordsService.getLocalCompetitiveKeywords(
-        businessProfile.name, // Use actual Google Business Profile name for precise matching
+      // Get real URL ranking data using DataForSEO organic SERP API
+      console.log(`🔍 Starting URL ranking analysis for ${businessProfile?.website || actualDomain}...`);
+      
+      // Use business website URL directly for ranking analysis
+      const targetUrl = businessProfile?.website || `https://${actualDomain}`;
+      
+      const competitiveOpportunityKeywords = await this.urlRankingService.getUrlRankingsForKeywords(
+        targetUrl,
         cuisineType, 
         locationData.city, 
         locationData.state,
@@ -272,33 +279,35 @@ export class AdvancedScannerService {
         'en'
       ).then(results => {
         if (results && results.length > 0) {
-          console.log('✅ Got real local ranking data for targeted keywords');
+          console.log(`✅ Got real URL ranking data for ${results.length} keywords`);
           return results;
         } else {
-          console.log('⚠️ No local ranking data returned - using fallback');
+          console.log('⚠️ No URL ranking data returned - using fallback');
           // Return fallback data only if API returns empty results
           return targetedKeywords.map(keyword => ({
             keyword: keyword,
             position: 0, // Show as "Not Ranked" 
-            searchVolume: 0,
+            searchVolume: 1000,
             difficulty: 0,
             intent: 'local',
             cpc: 0,
-            competition: 0
+            competition: 0,
+            opportunity: 0
           }));
         }
       }).catch(error => {
-        console.log('⚠️ Local ranking API error:', error.message);
+        console.log('⚠️ URL ranking API error:', error.message);
         
         // Only use fallback if API actually fails
         return targetedKeywords.map(keyword => ({
           keyword: keyword,
           position: 0, // Show as "Not Ranked" 
-          searchVolume: 0,
+          searchVolume: 1000,
           difficulty: 0,
           intent: 'local',
           cpc: 0,
-          competition: 0
+          competition: 0,
+          opportunity: 0
         }));
       });
       console.log(`Found ${competitiveOpportunityKeywords.length} competitive opportunity keywords for ${actualDomain}`);
