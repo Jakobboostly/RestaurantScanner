@@ -279,7 +279,7 @@ export class AdvancedScannerService {
           }
         }),
         new Promise((_, reject) => 
-          setTimeout(() => reject(new Error('Local competitive keywords timeout')), 10000)
+          setTimeout(() => reject(new Error('Local competitive keywords timeout')), 25000)
         )
       ]).catch(error => {
         console.log('⚠️ Using fallback ranking data for targeted keywords:', error.message);

@@ -167,28 +167,45 @@ export class DataForSeoRankedKeywordsService {
         for (let i = 0; i < localBusinesses.length; i++) {
           const business = localBusinesses[i];
           
-          // Enhanced matching logic for restaurant names
+          // Enhanced matching logic focusing on business names (not domains)
           const businessTitle = business.title?.toLowerCase() || '';
           const targetName = businessName.toLowerCase();
           const businessDomain = business.domain?.toLowerCase() || '';
           
-          console.log(`    🔍 Checking business #${i+1}: "${business.title}" (domain: ${business.domain})`);
+          console.log(`    🔍 Checking business #${i+1}: "${business.title}" (domain: ${business.domain || 'none'})`);
           
-          // Multiple matching strategies:
-          // 1. Exact name match
-          // 2. Name contains target or target contains name
-          // 3. Domain match
-          // 4. First word match for abbreviated names
-          const nameMatch = businessTitle.includes(targetName) || targetName.includes(businessTitle);
-          const domainMatch = businessDomain.includes(targetName.replace(/\s+/g, '')) || 
-                             businessDomain.includes(targetName.replace(/\s+/g, '').replace('pizza', ''));
-          const firstWordMatch = businessTitle.split(' ')[0] === targetName.split(' ')[0];
+          // Clean names for better matching
+          const cleanBusinessTitle = businessTitle.replace(/[&\-\s]+/g, ' ').trim();
+          const cleanTargetName = targetName.replace(/[&\-\s]+/g, ' ').trim();
           
-          if (nameMatch || domainMatch || firstWordMatch) {
+          // Multiple matching strategies prioritizing name matching:
+          // 1. Exact name match (after cleaning)
+          const exactMatch = cleanBusinessTitle === cleanTargetName;
+          
+          // 2. Core business name contains target or target contains business name
+          const nameContainsMatch = cleanBusinessTitle.includes(cleanTargetName) || cleanTargetName.includes(cleanBusinessTitle);
+          
+          // 3. First significant word match (skip articles like "the", "a")
+          const businessWords = cleanBusinessTitle.split(' ').filter(w => w.length > 2);
+          const targetWords = cleanTargetName.split(' ').filter(w => w.length > 2);
+          const firstWordMatch = businessWords[0] && targetWords[0] && businessWords[0] === targetWords[0];
+          
+          // 4. Domain match (only if domain exists)
+          const domainMatch = businessDomain && (
+            businessDomain.includes(cleanTargetName.replace(/\s+/g, '')) || 
+            businessDomain.includes(cleanTargetName.replace(/\s+/g, '').replace(/pizza|restaurant|cafe|grill/g, ''))
+          );
+          
+          // 5. Partial word matching for restaurant names
+          const partialMatch = businessWords.some(bWord => 
+            targetWords.some(tWord => bWord.includes(tWord) || tWord.includes(bWord))
+          );
+          
+          if (exactMatch || nameContainsMatch || firstWordMatch || domainMatch || partialMatch) {
             position = business.rank_absolute || (i + 1);
             foundBusiness = business;
             console.log(`    ✅ MATCH FOUND! Position ${position} - "${business.title}" matched "${businessName}"`);
-            console.log(`    🔍 Match type: name=${nameMatch}, domain=${domainMatch}, firstWord=${firstWordMatch}`);
+            console.log(`    🔍 Match type: exact=${exactMatch}, nameContains=${nameContainsMatch}, firstWord=${firstWordMatch}, domain=${domainMatch}, partial=${partialMatch}`);
             break;
           }
         }
