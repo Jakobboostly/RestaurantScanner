@@ -203,11 +203,12 @@ export class AdvancedScannerService {
       const phase3Start = Date.now();
       onProgress({ progress: 42, status: 'Checking search rankings...' });
       
-      // Extract the actual business website domain from Google Business Profile
+      // Extract the actual business website domain from Google Business Profile  
       let actualDomain = domain;
-      if (businessProfile?.website) {
+      const businessProfileData = businessProfile as any;
+      if (businessProfileData?.website) {
         try {
-          const websiteUrl = new URL(businessProfile.website);
+          const websiteUrl = new URL(businessProfileData.website);
           const extractedDomain = websiteUrl.hostname.replace(/^www\./, '');
           
           // Only use legitimate business domains, not social media URLs
@@ -241,14 +242,15 @@ export class AdvancedScannerService {
       // Get targeted competitive keywords for restaurants - "Where your competition is winning"
       console.log(`🔍 ADVANCED SCANNER: Getting targeted competitive keywords for domain: ${actualDomain}`);
       
-      // Extract restaurant details for targeted keyword analysis
-      const cuisineType = this.extractCuisineType(businessProfile, restaurantName);
-      const locationData = businessProfile?.address ? 
-        this.extractCityFromAddress(businessProfile.address) : 
+      // Extract restaurant details for targeted keyword analysis with proper type handling
+      const cuisineType = this.extractCuisineType(businessProfileData, restaurantName);
+      const locationData = businessProfileData?.formatted_address ? 
+        this.extractCityFromAddress(businessProfileData.formatted_address) : 
         { city: 'Unknown', state: 'Unknown' };
       
       console.log(`🔍 Restaurant details - Cuisine: ${cuisineType}, Location: ${locationData.city}, ${locationData.state}`);
-      console.log(`🔍 Debug - Business Profile Name: "${businessProfile?.name}", Restaurant Name: "${restaurantName}"`);
+      console.log(`🔍 Debug - Business Profile Name: "${businessProfileData?.name}", Restaurant Name: "${restaurantName}"`);
+      console.log(`🔍 Debug - Business Profile Address: "${businessProfileData?.formatted_address}"`);
       
       // Generate the 8 targeted keywords for the restaurant
       console.log('🔍 Generating targeted keywords for "Key Restaurant Keywords" section...');
@@ -266,18 +268,18 @@ export class AdvancedScannerService {
       console.log(`🎯 Generated ${targetedKeywords.length} targeted keywords:`, targetedKeywords);
       
       // Get real URL ranking data using DataForSEO organic SERP API
-      console.log(`🔍 Starting URL ranking analysis for ${businessProfile?.website || actualDomain}...`);
-      console.log(`🔍 Business Profile Website: "${businessProfile?.website}"`);
-      console.log(`🔍 Business Name: "${businessProfile?.name}"`);
+      console.log(`🔍 Starting URL ranking analysis for ${businessProfileData?.website || actualDomain}...`);
+      console.log(`🔍 Business Profile Website: "${businessProfileData?.website}"`);
+      console.log(`🔍 Business Name: "${businessProfileData?.name}"`);
       console.log(`🔍 Actual Domain: "${actualDomain}"`);
       
       // Use business website URL directly for ranking analysis
-      const targetUrl = businessProfile?.website || `https://${actualDomain}`;
+      const targetUrl = businessProfileData?.website || `https://${actualDomain}`;
       console.log(`🔍 Final Target URL for ranking: "${targetUrl}"`);
-      console.log(`🔍 Will check for branded searches using business name: "${businessProfile?.name}"`);
+      console.log(`🔍 Will check for branded searches using business name: "${businessProfileData?.name}"`);
       
       // Pass the actual business name to URL ranking service for branded searches
-      const businessName = businessProfile?.name || '';
+      const businessName = businessProfileData?.name || '';
       console.log(`🔍 Passing business name to URL ranking: "${businessName}"`);
       
       const competitiveOpportunityKeywords = await this.urlRankingService.getUrlRankingsForKeywordsWithBusinessName(

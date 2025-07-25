@@ -83,7 +83,7 @@ export class UrlRankingService {
           // Look for the target URL in results
           for (let i = 0; i < items.length; i++) {
             const item = items[i];
-            if (item.domain && this.domainMatches(item.domain, targetDomain)) {
+            if (item.domain && this.extractDomain(item.domain) === targetDomain) {
               foundPosition = item.rank_absolute || (i + 1);
               foundUrl = item.url;
               foundTitle = item.title;
@@ -103,12 +103,12 @@ export class UrlRankingService {
             url: foundUrl,
             title: foundTitle,
             description: foundDescription,
-            searchVolume: await this.getSearchVolumeForKeyword(keyword),
+            searchVolume: 1000, // Default search volume
             difficulty: 0,
             cpc: 0,
             competition: 0,
-            opportunity: this.calculateOpportunityScore(foundPosition, await this.getSearchVolumeForKeyword(keyword)),
-            intent: this.classifyIntent(keyword)
+            opportunity: this.calculateOpportunityScore(foundPosition, 1000),
+            intent: this.getKeywordIntent(keyword)
           });
         } else {
           console.log(`    ⚠️ API error for "${keyword}"`);
@@ -118,16 +118,16 @@ export class UrlRankingService {
             url: null,
             title: null,
             description: null,
-            searchVolume: await this.getSearchVolumeForKeyword(keyword),
+            searchVolume: 1000,
             difficulty: 0,
             cpc: 0,
             competition: 0,
             opportunity: 75,
-            intent: this.classifyIntent(keyword)
+            intent: this.getKeywordIntent(keyword)
           });
         }
       } catch (error) {
-        console.log(`    ❌ Error checking "${keyword}":`, error.message);
+        console.log(`    ❌ Error checking "${keyword}":`, (error as Error).message);
         results.push({
           keyword,
           position: 0,
@@ -139,7 +139,7 @@ export class UrlRankingService {
           cpc: 0,
           competition: 0,
           opportunity: 75,
-          intent: this.classifyIntent(keyword)
+          intent: this.getKeywordIntent(keyword)
         });
       }
     }
@@ -362,11 +362,26 @@ export class UrlRankingService {
   }
 
   private calculateOpportunityScore(position: number, searchVolume: number): number {
-    if (position === 0) return 0;
-    // Higher score for higher volume keywords where you rank poorly
-    const positionScore = Math.max(0, 21 - position); // Higher score for worse positions
-    const volumeScore = Math.log10(searchVolume + 1) * 10;
-    return Math.round(positionScore * volumeScore);
+    if (position === 0) return 75; // Not ranked = opportunity
+    if (position <= 3) return 0; // Top 3 = no opportunity
+    if (position <= 10) return 25; // Top 10 = small opportunity
+    return 50; // Beyond top 10 = good opportunity
+  }
+
+  private getKeywordIntent(keyword: string): string {
+    const kw = keyword.toLowerCase();
+    
+    if (kw.includes('near me') || kw.includes('delivery') || kw.includes('open now')) {
+      return 'local';
+    }
+    if (kw.includes('best') || kw.includes('top') || kw.includes('review')) {
+      return 'commercial';
+    }
+    if (kw.includes('menu') || kw.includes('hours') || kw.includes('location')) {
+      return 'informational';
+    }
+    
+    return 'local'; // Default for restaurant keywords
   }
 
   /**

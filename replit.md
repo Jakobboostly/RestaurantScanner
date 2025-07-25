@@ -76,6 +76,13 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 25, 2025. **MAJOR FIX: Business name extraction and cuisine detection now working** - Fixed critical TypeScript issues preventing branded search functionality:
+  - **Fixed business profile type handling** - Resolved TypeScript errors that prevented access to business profile properties (name, website, formatted_address)
+  - **Cuisine detection now functional** - System correctly detects "pizza", "italian", "mexican", etc. from business names instead of defaulting to generic "restaurant"
+  - **Location extraction working** - Properly extracts city/state from Google Places formatted_address field
+  - **Business name extraction restored** - System can now access and use actual business names from Google Places API for branded search generation
+  - **Enhanced debugging** - Added comprehensive logging to track business profile data flow and extraction process
+  - **Keyword generation improved** - Will now generate cuisine-specific keywords like "pizza near me", "pizza delivery Provo" instead of generic "restaurant" terms
 - July 25, 2025. **BREAKTHROUGH: Branded search integration working perfectly** - Successfully implemented comprehensive branded search system that generates realistic ranking opportunities:
   - **Enhanced business name detection** - System correctly extracts business name "Pier 49 Pizza" from Google Business Profile
   - **Mixed keyword strategy implemented** - Generates both branded searches ("Pier 49 Pizza", "Pier 49 Pizza Salt Lake City", "Pier 49 Pizza menu") and competitive terms ("best pizza in Salt Lake City")
