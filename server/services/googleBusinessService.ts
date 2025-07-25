@@ -61,15 +61,32 @@ export class GoogleBusinessService {
       const profile = await this.getBusinessProfile(placeId);
       const photos = profile.photos || [];
       
-      return photos.map((photo: any) => ({
-        photo_reference: photo.photo_reference,
-        height: photo.height,
-        width: photo.width,
-        html_attributions: photo.html_attributions || []
-      }));
+      console.log(`📸 Found ${photos.length} photos for place ID: ${placeId}`);
+      
+      // Convert photo references to actual photo URLs
+      const photoUrls = photos.slice(0, 10).map((photo: any) => {
+        const photoUrl = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=${photo.photo_reference}&key=${this.apiKey}`;
+        console.log(`📸 Generated photo URL: ${photoUrl}`);
+        return photoUrl;
+      });
+      
+      console.log(`📸 Returning ${photoUrls.length} photo URLs`);
+      
+      return {
+        businessPhotos: photoUrls,
+        photoDetails: photos.slice(0, 10).map((photo: any) => ({
+          photo_reference: photo.photo_reference,
+          height: photo.height,
+          width: photo.width,
+          html_attributions: photo.html_attributions || []
+        }))
+      };
     } catch (error) {
       console.error('Error fetching business photos:', error);
-      return [];
+      return {
+        businessPhotos: [],
+        photoDetails: []
+      };
     }
   }
 

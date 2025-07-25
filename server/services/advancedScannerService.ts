@@ -149,9 +149,9 @@ export class AdvancedScannerService {
       let businessPhotos: string[] = [];
       if (placeId) {
         try {
-          const photoDetails = await this.googleBusinessService.getBusinessPhotos(placeId);
-          businessPhotos = photoDetails.businessPhotos || [];
-          console.log(`Fetched ${businessPhotos.length} business photos for scanning animation`);
+          const photoResult = await this.googleBusinessService.getBusinessPhotos(placeId);
+          businessPhotos = photoResult?.businessPhotos || [];
+          console.log(`📸 Fetched ${businessPhotos.length} business photos for scanning animation`);
           
           // Send photos to client via progress callback if available
           if (businessPhotos.length > 0) {
@@ -807,6 +807,7 @@ export class AdvancedScannerService {
       organicTraffic: 0,
       scanDate: new Date().toISOString(),
       businessProfile,
+      businessPhotos: businessProfile?.photos || [],
       mobileExperience: {
         score: mobileExperience?.score || performanceMetrics?.performance || 0,
         loadTime: mobileExperience?.loadTime || 0,

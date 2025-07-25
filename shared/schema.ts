@@ -226,6 +226,7 @@ export const scanResultSchema = z.object({
     responseRate: z.number(),
     averageResponseTime: z.string(),
   }).optional(),
+  businessPhotos: z.array(z.string()).optional(),
   profileAnalysis: z.object({
     completenessScore: z.number(),
     strengths: z.array(z.string()),
