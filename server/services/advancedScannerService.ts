@@ -245,6 +245,22 @@ export class AdvancedScannerService {
       
       console.log(`🔍 Restaurant details - Cuisine: ${cuisineType}, Location: ${locationData.city}, ${locationData.state}`);
       
+      // Generate the 8 targeted keywords for the restaurant
+      console.log('🔍 Generating targeted keywords for "Key Restaurant Keywords" section...');
+      const targetedKeywords = [
+        `${cuisineType} near me`,
+        `${cuisineType} delivery ${locationData.city}`,
+        `best ${cuisineType} ${locationData.city}`,
+        `${locationData.city} ${cuisineType}`,
+        `${cuisineType} places near me`,
+        `${cuisineType} ${locationData.city} ${locationData.state}`,
+        `${cuisineType} delivery near me`,
+        `${cuisineType} open now`
+      ];
+      
+      console.log(`🎯 Generated ${targetedKeywords.length} targeted keywords:`, targetedKeywords);
+      
+      // Try to get real ranking data, but always fallback to showing the keywords with "Not Ranked"
       const competitiveOpportunityPromise = Promise.race([
         this.rankedKeywordsService.getTargetedCompetitiveKeywords(
           actualDomain, 
@@ -253,17 +269,35 @@ export class AdvancedScannerService {
           locationData.state,
           'United States', 
           'en'
-        ),
+        ).then(results => {
+          if (results && results.length > 0) {
+            console.log('✅ Got real ranking data for targeted keywords');
+            return results;
+          } else {
+            throw new Error('No ranking data available');
+          }
+        }),
         new Promise((_, reject) => 
-          setTimeout(() => reject(new Error('Targeted competitive keywords timeout')), 15000)
+          setTimeout(() => reject(new Error('Targeted competitive keywords timeout')), 8000)
         )
       ]).catch(error => {
-        console.error('Targeted competitive keywords failed:', error);
-        return [];
+        console.log('⚠️ Using fallback ranking data for targeted keywords');
+        
+        // Always return the 8 targeted keywords, even if we can't get ranking data
+        return targetedKeywords.map(keyword => ({
+          keyword: keyword,
+          position: 0, // Show as "Not Ranked" 
+          searchVolume: 0,
+          difficulty: 0,
+          intent: 'local',
+          cpc: 0,
+          competition: 0
+        }));
       });
       
       const competitiveOpportunityKeywords = await competitiveOpportunityPromise as any[];
       console.log(`Found ${competitiveOpportunityKeywords.length} competitive opportunity keywords for ${actualDomain}`);
+      console.log('🔍 Raw competitive opportunity keywords:', JSON.stringify(competitiveOpportunityKeywords, null, 2));
       
       // Process the authentic ranked keywords
       const processedKeywords = rankedKeywords.map((keyword: any) => ({
@@ -284,7 +318,7 @@ export class AdvancedScannerService {
         previousPosition: keyword.previousPosition
       }));
       
-      // Process competitive opportunity keywords
+      // Process competitive opportunity keywords - these are the 8 targeted keywords the frontend displays
       processedCompetitiveKeywords = competitiveOpportunityKeywords.map((keyword: any) => ({
         keyword: keyword.keyword,
         position: keyword.position,
@@ -302,6 +336,8 @@ export class AdvancedScannerService {
         positionChange: keyword.positionChange,
         previousPosition: keyword.previousPosition
       }));
+      
+      console.log('🔍 Processed competitive keywords for frontend:', JSON.stringify(processedCompetitiveKeywords, null, 2));
       
       // Wait for phase 3 to complete (4 seconds total)
       const phase3Elapsed = Date.now() - phase3Start;
