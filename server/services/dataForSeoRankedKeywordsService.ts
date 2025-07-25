@@ -95,7 +95,12 @@ export class DataForSeoRankedKeywordsService {
       );
 
       console.log(`✅ Local Finder API completed for ${keywordResults.length} keywords`);
-      return keywordResults;
+      console.log(`🔍 Enriching keywords with search volume data...`);
+      
+      // Enrich keywords with search volume data
+      const enrichedKeywords = await this.enrichKeywordsWithSearchVolume(keywordResults);
+      
+      return enrichedKeywords;
       
     } catch (error) {
       console.log('❌ Local Finder API batch failed:', error);
@@ -121,5 +126,63 @@ export class DataForSeoRankedKeywordsService {
   async getTargetedCompetitiveKeywords(domain: string, cuisine: string, city: string, state: string) {
     // Minimal implementation to prevent errors
     return [];
+  }
+
+  private async enrichKeywordsWithSearchVolume(keywords: any[]): Promise<any[]> {
+    try {
+      console.log(`🔍 Enriching ${keywords.length} keywords with search volume...`);
+      
+      // Prepare keywords for search volume API
+      const keywordList = keywords.map(k => k.keyword);
+      
+      const post_array = [{
+        location_code: 2840, // Utah location code
+        language_code: "en",
+        keywords: keywordList
+      }];
+
+      const response = await fetch('https://api.dataforseo.com/v3/keywords_data/google/search_volume/live', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Basic ${Buffer.from(`${this.login}:${this.password}`).toString('base64')}`,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(post_array)
+      });
+
+      if (!response.ok) {
+        console.log('⚠️ Search volume API unavailable, using positions only');
+        return keywords;
+      }
+
+      const data = await response.json();
+      
+      if (data.tasks && data.tasks[0] && data.tasks[0].result) {
+        const volumeResults = data.tasks[0].result;
+        
+        // Enrich keywords with search volume data
+        const enrichedKeywords = keywords.map(keyword => {
+          const volumeData = volumeResults.find((v: any) => v.keyword === keyword.keyword);
+          
+          return {
+            ...keyword,
+            searchVolume: volumeData?.search_volume || 0,
+            difficulty: volumeData?.keyword_difficulty || 0,
+            cpc: volumeData?.cpc || 0,
+            competition: volumeData?.competition || 0
+          };
+        });
+
+        console.log(`✅ Enriched keywords with search volume data`);
+        return enrichedKeywords;
+      } else {
+        console.log('⚠️ No search volume data returned, using positions only');
+        return keywords;
+      }
+      
+    } catch (error) {
+      console.log('❌ Search volume enrichment failed:', error);
+      return keywords; // Return original keywords with positions
+    }
   }
 }
