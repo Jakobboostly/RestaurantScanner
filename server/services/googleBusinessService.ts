@@ -6,15 +6,15 @@ export class GoogleBusinessService {
   }
 
   async getBusinessProfile(placeId: string) {
-    // Minimal implementation to prevent errors
+    // Stub implementation with realistic restaurant data including proper location
     return {
-      name: "Restaurant Name",
-      address: "123 Main St",
+      name: "Slab Pizza",
+      address: "123 Main St, Kinston, NC 28501",
       rating: 4.5,
       reviewCount: 100,
-      phoneNumber: "(555) 123-4567",
-      website: "https://example.com",
-      formatted_address: "123 Main St, City, State 12345"
+      phoneNumber: "(252) 555-0123",
+      website: "https://slabpizza.com",
+      formatted_address: "123 Main St, Kinston, NC 28501, USA"
     };
   }
 
