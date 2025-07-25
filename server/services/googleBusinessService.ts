@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 export class GoogleBusinessService {
   private apiKey: string;
 
@@ -6,30 +8,133 @@ export class GoogleBusinessService {
   }
 
   async getBusinessProfile(placeId: string) {
-    // Stub implementation with realistic restaurant data including proper location
-    return {
-      name: "Slab Pizza",
-      address: "123 Main St, Kinston, NC 28501",
-      rating: 4.5,
-      reviewCount: 100,
-      phoneNumber: "(252) 555-0123",
-      website: "https://slabpizza.com",
-      formatted_address: "123 Main St, Kinston, NC 28501, USA"
-    };
+    try {
+      const response = await axios.get(
+        `https://maps.googleapis.com/maps/api/place/details/json`,
+        {
+          params: {
+            place_id: placeId,
+            fields: 'name,formatted_address,rating,user_ratings_total,formatted_phone_number,website,types,reviews,photos,opening_hours,price_level,business_status',
+            key: this.apiKey
+          }
+        }
+      );
+
+      if (response.data?.result) {
+        const result = response.data.result;
+        return {
+          name: result.name || 'Unknown Restaurant',
+          address: result.formatted_address || 'Address not available',
+          rating: result.rating || 0,
+          reviewCount: result.user_ratings_total || 0,
+          phoneNumber: result.formatted_phone_number || null,
+          website: result.website || null,
+          formatted_address: result.formatted_address || 'Address not available',
+          place_id: placeId,
+          business_status: result.business_status || 'UNKNOWN',
+          types: result.types || [],
+          reviews: result.reviews || [],
+          photos: result.photos || [],
+          opening_hours: result.opening_hours || null,
+          price_level: result.price_level || null
+        };
+      }
+
+      throw new Error('No business data found');
+    } catch (error) {
+      console.error('Google Places API error:', error);
+      // Fallback with error indication
+      return {
+        name: 'Restaurant Data Unavailable',
+        address: 'Google Places API Error',
+        rating: 0,
+        reviewCount: 0,
+        phoneNumber: null,
+        website: null,
+        formatted_address: 'API Error - Please check Google Places API key'
+      };
+    }
   }
 
   async getBusinessPhotos(placeId: string) {
-    // Minimal implementation to prevent errors
-    return [];
+    try {
+      const profile = await this.getBusinessProfile(placeId);
+      const photos = profile.photos || [];
+      
+      return photos.map((photo: any) => ({
+        photo_reference: photo.photo_reference,
+        height: photo.height,
+        width: photo.width,
+        html_attributions: photo.html_attributions || []
+      }));
+    } catch (error) {
+      console.error('Error fetching business photos:', error);
+      return [];
+    }
   }
 
   async findCompetitors(businessName: string, location: string, businessType: string) {
-    // Minimal implementation to prevent errors
-    return [];
+    try {
+      const response = await axios.get(
+        `https://maps.googleapis.com/maps/api/place/textsearch/json`,
+        {
+          params: {
+            query: `${businessType} restaurants near ${location}`,
+            key: this.apiKey,
+            type: 'restaurant'
+          }
+        }
+      );
+
+      if (response.data?.results) {
+        return response.data.results
+          .filter((place: any) => place.name !== businessName)
+          .slice(0, 5)
+          .map((place: any) => ({
+            name: place.name,
+            place_id: place.place_id,
+            rating: place.rating || 0,
+            user_ratings_total: place.user_ratings_total || 0,
+            formatted_address: place.formatted_address || 'Address not available',
+            types: place.types || []
+          }));
+      }
+
+      return [];
+    } catch (error) {
+      console.error('Error finding competitors:', error);
+      return [];
+    }
   }
 
   async searchBusinesses(query: string, location: string) {
-    // Minimal implementation to prevent errors
-    return [];
+    try {
+      const response = await axios.get(
+        `https://maps.googleapis.com/maps/api/place/textsearch/json`,
+        {
+          params: {
+            query: `${query} ${location}`,
+            key: this.apiKey,
+            type: 'restaurant'
+          }
+        }
+      );
+
+      if (response.data?.results) {
+        return response.data.results.map((place: any) => ({
+          name: place.name,
+          place_id: place.place_id,
+          rating: place.rating || 0,
+          user_ratings_total: place.user_ratings_total || 0,
+          formatted_address: place.formatted_address || 'Address not available',
+          types: place.types || []
+        }));
+      }
+
+      return [];
+    } catch (error) {
+      console.error('Error searching businesses:', error);
+      return [];
+    }
   }
 }
