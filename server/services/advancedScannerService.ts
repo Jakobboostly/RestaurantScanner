@@ -238,12 +238,13 @@ export class AdvancedScannerService {
       console.log(`🔍 ADVANCED SCANNER: Getting targeted competitive keywords for domain: ${actualDomain}`);
       
       // Extract restaurant details for targeted keyword analysis
-      const cuisineType = this.extractCuisineType(businessProfile);
+      const cuisineType = this.extractCuisineType(businessProfile, restaurantName);
       const locationData = businessProfile?.address ? 
         this.extractCityFromAddress(businessProfile.address) : 
         { city: 'Unknown', state: 'Unknown' };
       
       console.log(`🔍 Restaurant details - Cuisine: ${cuisineType}, Location: ${locationData.city}, ${locationData.state}`);
+      console.log(`🔍 Debug - Business Profile Name: "${businessProfile?.name}", Restaurant Name: "${restaurantName}"`);
       
       // Generate the 8 targeted keywords for the restaurant
       console.log('🔍 Generating targeted keywords for "Key Restaurant Keywords" section...');
@@ -463,7 +464,7 @@ export class AdvancedScannerService {
       
       try {
         // Generate a more relevant search query based on cuisine type and city
-        const cuisineType = this.extractCuisineType(businessProfile);
+        const cuisineType = this.extractCuisineType(businessProfile, restaurantName);
         const primaryKeyword = this.generatePrimaryKeywords(restaurantName, businessProfile)[0];
         
         // Extract city and state from Google Places API business profile
@@ -1115,7 +1116,7 @@ export class AdvancedScannerService {
 
   private generatePrimaryKeywords(restaurantName: string, businessProfile: any): string[] {
     // Generate competitive keywords based on cuisine type
-    const cuisineType = this.extractCuisineType(businessProfile);
+    const cuisineType = this.extractCuisineType(businessProfile, restaurantName);
     const isPizza = cuisineType.includes('pizza') || restaurantName.toLowerCase().includes('pizza');
     const isMexican = cuisineType.includes('mexican') || restaurantName.toLowerCase().includes('mexican');
     const isItalian = cuisineType.includes('italian') || restaurantName.toLowerCase().includes('italian');
@@ -1134,30 +1135,39 @@ export class AdvancedScannerService {
     }
   }
 
-  private extractCuisineType(businessProfile: any): string {
+  private extractCuisineType(businessProfile: any, restaurantName?: string): string {
     // Extract cuisine type from business profile name and categories
-    const name = (businessProfile?.name || '').toLowerCase();
+    const profileName = (businessProfile?.name || '').toLowerCase();
+    const fallbackName = (restaurantName || '').toLowerCase();
+    
+    // Combine both names for comprehensive detection
+    const combinedName = `${profileName} ${fallbackName}`.toLowerCase();
+    
+    console.log(`🔍 CUISINE DEBUG - Profile: "${profileName}", Restaurant: "${fallbackName}", Combined: "${combinedName}"`);
     
     // Check for specific cuisine types in restaurant name
-    if (name.includes('pizza') || name.includes('pizzeria')) return 'pizza';
-    if (name.includes('mexican') || name.includes('taco') || name.includes('burrito')) return 'mexican';
-    if (name.includes('italian') || name.includes('pasta') || name.includes('spaghetti')) return 'italian';
-    if (name.includes('chinese') || name.includes('asian') || name.includes('sushi') || name.includes('thai')) return 'asian';
-    if (name.includes('bbq') || name.includes('barbecue') || name.includes('grill')) return 'american';
-    if (name.includes('indian') || name.includes('curry')) return 'indian';
-    if (name.includes('burger') || name.includes('sandwich')) return 'american';
-    if (name.includes('seafood') || name.includes('fish')) return 'seafood';
-    if (name.includes('steakhouse') || name.includes('steak')) return 'steakhouse';
-    if (name.includes('deli') || name.includes('sub')) return 'deli';
+    if (combinedName.includes('pizza') || combinedName.includes('pizzeria')) {
+      console.log(`🍕 DETECTED PIZZA from: "${combinedName}"`);
+      return 'pizza';
+    }
+    if (combinedName.includes('mexican') || combinedName.includes('taco') || combinedName.includes('burrito')) return 'mexican';
+    if (combinedName.includes('italian') || combinedName.includes('pasta') || combinedName.includes('spaghetti')) return 'italian';
+    if (combinedName.includes('chinese') || combinedName.includes('asian') || combinedName.includes('sushi') || combinedName.includes('thai')) return 'asian';
+    if (combinedName.includes('bbq') || combinedName.includes('barbecue') || combinedName.includes('grill')) return 'american';
+    if (combinedName.includes('indian') || combinedName.includes('curry')) return 'indian';
+    if (combinedName.includes('burger') || combinedName.includes('sandwich')) return 'american';
+    if (combinedName.includes('seafood') || combinedName.includes('fish')) return 'seafood';
+    if (combinedName.includes('steakhouse') || combinedName.includes('steak')) return 'steakhouse';
+    if (combinedName.includes('deli') || combinedName.includes('sub')) return 'deli';
     
     // Enhanced detection for brewery/pub types
-    if (name.includes('brewing') || name.includes('brewery') || name.includes('brewhouse')) return 'brewery';
-    if (name.includes('pub') || name.includes('tavern') || name.includes('bar & grill')) return 'pub';
-    if (name.includes('coffee') || name.includes('cafe') || name.includes('espresso')) return 'coffee';
-    if (name.includes('bakery') || name.includes('pastry')) return 'bakery';
-    if (name.includes('wings') || name.includes('chicken')) return 'chicken';
-    if (name.includes('french') || name.includes('bistro')) return 'french';
-    if (name.includes('mediterranean') || name.includes('greek')) return 'mediterranean';
+    if (combinedName.includes('brewing') || combinedName.includes('brewery') || combinedName.includes('brewhouse')) return 'brewery';
+    if (combinedName.includes('pub') || combinedName.includes('tavern') || combinedName.includes('bar & grill')) return 'pub';
+    if (combinedName.includes('coffee') || combinedName.includes('cafe') || combinedName.includes('espresso')) return 'coffee';
+    if (combinedName.includes('bakery') || combinedName.includes('pastry')) return 'bakery';
+    if (combinedName.includes('wings') || combinedName.includes('chicken')) return 'chicken';
+    if (combinedName.includes('french') || combinedName.includes('bistro')) return 'french';
+    if (combinedName.includes('mediterranean') || combinedName.includes('greek')) return 'mediterranean';
     
     // Default to general restaurant
     return 'restaurant';
@@ -1285,7 +1295,7 @@ export class AdvancedScannerService {
 
   private generateRestaurantKeywords(restaurantName: string, businessProfile: any): any[] {
     // NO MOCK DATA - Generate commercial and local keywords only (no informational keywords)
-    const cuisineType = this.extractCuisineType(businessProfile);
+    const cuisineType = this.extractCuisineType(businessProfile, restaurantName);
     const city = this.extractCity(restaurantName);
     
     // Generate keyword strings focused on commercial and local intent only
