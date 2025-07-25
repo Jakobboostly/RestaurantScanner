@@ -267,9 +267,13 @@ export class AdvancedScannerService {
       
       // Get real URL ranking data using DataForSEO organic SERP API
       console.log(`🔍 Starting URL ranking analysis for ${businessProfile?.website || actualDomain}...`);
+      console.log(`🔍 Business Profile Website: "${businessProfile?.website}"`);
+      console.log(`🔍 Actual Domain: "${actualDomain}"`);
+      console.log(`🔍 Business Profile Full Data:`, JSON.stringify(businessProfile, null, 2));
       
       // Use business website URL directly for ranking analysis
       const targetUrl = businessProfile?.website || `https://${actualDomain}`;
+      console.log(`🔍 Final Target URL for ranking: "${targetUrl}"`);
       
       const competitiveOpportunityKeywords = await this.urlRankingService.getUrlRankingsForKeywords(
         targetUrl,
