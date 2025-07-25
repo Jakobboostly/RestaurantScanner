@@ -104,11 +104,11 @@ export class DataForSeoRankedKeywordsService {
   }
 
   /**
-   * Get targeted competitive keywords for restaurants
-   * Checks specific restaurant-relevant keywords to see where competitors are beating you
+   * Get local competitive keywords using Local Finder API for more accurate restaurant rankings
+   * Returns ALL 8 targeted keywords with their local pack positions
    */
-  async getTargetedCompetitiveKeywords(
-    domain: string,
+  async getLocalCompetitiveKeywords(
+    businessName: string,
     cuisine: string,
     city: string,
     state: string,
@@ -116,8 +116,8 @@ export class DataForSeoRankedKeywordsService {
     languageCode: string = 'en'
   ): Promise<ProcessedKeyword[]> {
 
-    // Step 1: Generate the 8 specific keywords
-    const targetKeywords = [
+    // Generate the 8 local keyword patterns
+    const localKeywordPatterns = [
       `${cuisine} near me`,
       `${cuisine} delivery ${city}`,
       `best ${cuisine} ${city}`,
@@ -128,93 +128,160 @@ export class DataForSeoRankedKeywordsService {
       `${cuisine} open now`
     ];
 
-    try {
-      console.log(`🔍 TARGETED COMPETITIVE KEYWORDS: Checking ${targetKeywords.length} keywords for ${domain}`);
-      console.log(`🔍 Keywords:`, targetKeywords);
+    const results: ProcessedKeyword[] = [];
+    const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
-      // Step 2: Get search volume and difficulty for these keywords
-      const keywordData = await this.client.post('/dataforseo_labs/google/keyword_overview/live', [{
-        keywords: targetKeywords,
-        location_name: locationName,
-        language_code: languageCode
-      }]);
+    console.log(`🔍 LOCAL COMPETITIVE KEYWORDS: Starting analysis for ${businessName}`);
+    console.log(`🔍 Restaurant details: ${cuisine} cuisine in ${city}, ${state}`);
+    console.log(`🔍 Generated ${localKeywordPatterns.length} targeted keywords:`, localKeywordPatterns);
 
-      if (keywordData.data.status_code !== 20000) {
-        throw new Error(`Keyword overview API error: ${keywordData.data.status_message}`);
-      }
-
-      const volumeResults = keywordData.data.tasks[0]?.result?.[0]?.items || [];
-      console.log(`🔍 Got volume data for ${volumeResults.length} keywords`);
-
-      // Step 3: Check rankings for each keyword
-      const results: ProcessedKeyword[] = [];
-      
-      for (let i = 0; i < targetKeywords.length; i++) {
-        const keyword = targetKeywords[i];
-        const volumeData = volumeResults[i];
+    // Use Local Finder API for each keyword
+    for (const keyword of localKeywordPatterns) {
+      try {
+        console.log(`🔍 Checking local rankings for: "${keyword}"`);
         
-        try {
-          // Check where domain ranks for this specific keyword
-          const serpResponse = await this.client.post('/serp/google/organic/live/advanced', [{
-            keyword: keyword,
-            location_name: locationName,
-            language_code: languageCode,
-            depth: 50
-          }]);
+        // Add delay to avoid rate limiting
+        await delay(1000);
+        
+        // Use Local Finder API instead of regular SERP
+        const response = await this.client.post('/serp/google/local_finder/live/advanced', [{
+          keyword: keyword,
+          location_name: locationName,
+          language_code: languageCode,
+          depth: 50, // Check up to 50 local businesses
+          device: 'desktop',
+          min_rating: 3.5 // Only businesses with decent ratings
+        }]);
 
-          if (serpResponse.data.status_code !== 20000) {
-            console.error(`SERP API error for keyword "${keyword}": ${serpResponse.data.status_message}`);
-            continue;
-          }
-
-          const serpItems = serpResponse.data.tasks[0]?.result?.[0]?.items || [];
-          let position = 0;
+        const result = response.data.tasks?.[0]?.result?.[0];
+        const localBusinesses = result?.items || [];
+        
+        console.log(`    📊 Found ${localBusinesses.length} local businesses`);
+        
+        // Find where your business ranks in local pack
+        let position = 0;
+        let foundBusiness = null;
+        
+        for (let i = 0; i < localBusinesses.length; i++) {
+          const business = localBusinesses[i];
           
-          // Find domain position
-          for (let j = 0; j < serpItems.length; j++) {
-            const item = serpItems[j];
-            if (item.type === 'organic' && 
-                (item.domain?.includes(domain) || item.url?.includes(domain))) {
-              position = item.rank_absolute || (j + 1);
-              break;
-            }
+          // Match by business name (more flexible matching)
+          const businessTitle = business.title?.toLowerCase() || '';
+          const targetName = businessName.toLowerCase();
+          
+          if (businessTitle.includes(targetName) || 
+              targetName.includes(businessTitle.split(' ')[0]) || // Match first word
+              business.domain?.includes(targetName.replace(/\s+/g, ''))) { // Match domain
+            
+            position = business.rank_absolute || (i + 1);
+            foundBusiness = business;
+            break;
           }
-
-          // Include ALL targeted keywords with their positions (whether ranked or not)
-          results.push({
-            keyword: keyword,
-            position: position > 0 ? position : 0, // Show 0 if not ranked, actual position if ranked
-            searchVolume: volumeData?.keyword_info?.search_volume || 0,
-            difficulty: volumeData?.keyword_info?.keyword_difficulty || 0,
-            cpc: volumeData?.keyword_info?.cpc || 0,
-            competition: volumeData?.keyword_info?.competition || 0,
-            intent: position > 0 ? 'commercial' : 'local', // Default intent classification
-            // Calculate opportunity score (higher for positions 6+ where competitors beat you)
-            opportunityScore: position > 0 ? this.calculateOpportunityScore(position, volumeData?.keyword_info?.search_volume || 0) : 0
-          });
-
-        } catch (error) {
-          console.error(`Error checking keyword "${keyword}":`, error);
         }
+
+        // Get search volume data separately
+        let volumeData = null;
+        try {
+          const volumeResponse = await this.client.post('/dataforseo_labs/google/keyword_overview/live', [{
+            keywords: [keyword],
+            location_name: locationName,
+            language_code: languageCode
+          }]);
+          
+          volumeData = volumeResponse.data.tasks[0].result[0].items[0];
+        } catch (volumeError) {
+          console.log(`    ⚠️ Could not get volume data for "${keyword}"`);
+        }
+
+        // Include ALL keywords regardless of position (show complete picture)
+        results.push({
+          keyword: keyword,
+          position: position || 0, // 0 means "Not Ranked"
+          searchVolume: volumeData?.keyword_info?.search_volume || 0,
+          difficulty: volumeData?.keyword_info?.keyword_difficulty || 0,
+          cpc: volumeData?.keyword_info?.cpc || 0,
+          competition: volumeData?.keyword_info?.competition || 0,
+          intent: 'local',
+          
+          opportunityScore: this.calculateLocalOpportunityScore(
+            position, 
+            volumeData?.keyword_info?.search_volume || 0,
+            foundBusiness?.rating?.value || 0
+          )
+        });
+        
+        if (position > 0) {
+          console.log(`    ✅ Found at position ${position} for "${keyword}"`);
+        } else {
+          console.log(`    ❌ Not found in local results for "${keyword}"`);
+        }
+
+      } catch (error) {
+        console.error(`    ❌ Error checking "${keyword}":`, error.message);
+        
+        // Still include the keyword even if API call fails
+        results.push({
+          keyword: keyword,
+          position: 0,
+          searchVolume: 0,
+          difficulty: 0,
+          cpc: 0,
+          competition: 0,
+          intent: 'local',
+          opportunityScore: 0
+        });
       }
-
-      // Return all 8 targeted keywords sorted by position (best ranked first, unranked last)
-      const sortedResults = results.sort((a, b) => {
-        if (a.position === 0 && b.position === 0) return 0;
-        if (a.position === 0) return 1;
-        if (b.position === 0) return -1;
-        return a.position - b.position;
-      });
-
-      console.log(`🔍 TARGETED COMPETITIVE KEYWORDS: Found ${sortedResults.length} targeted keywords for ${domain}`);
-      console.log(`🔍 Results:`, sortedResults.map(r => `${r.keyword} (pos: ${r.position || 'not ranked'}, vol: ${r.searchVolume})`));
-
-      return sortedResults;
-
-    } catch (error) {
-      console.error('🔍 TARGETED COMPETITIVE KEYWORDS: Error:', error);
-      return [];
     }
+
+    // Sort by opportunity score and return all 8 keywords
+    const sortedResults = results.sort((a, b) => {
+      if (a.position === 0 && b.position === 0) return 0;
+      if (a.position === 0) return 1;
+      if (b.position === 0) return -1;
+      return a.position - b.position;
+    });
+
+    console.log(`🔍 LOCAL COMPETITIVE KEYWORDS: Returning ${sortedResults.length} targeted keywords`);
+    console.log(`🔍 Results:`, sortedResults.map(r => `${r.keyword} (pos: ${r.position || 'not ranked'}, vol: ${r.searchVolume})`));
+
+    return sortedResults;
+  }
+
+  private calculateLocalOpportunityScore(
+    position: number, 
+    searchVolume: number, 
+    currentRating: number
+  ): number {
+    // Local opportunity scoring factors:
+    const positionScore = Math.max(0, 25 - position); // Closer to top = higher score
+    const volumeScore = Math.log10(searchVolume + 1) * 5; // Higher volume = higher score
+    const ratingScore = currentRating * 2; // Better rating = easier to improve
+    
+    return positionScore + volumeScore + ratingScore;
+  }
+
+  /**
+   * Legacy method for backward compatibility - now calls the improved local method
+   */
+  async getTargetedCompetitiveKeywords(
+    domain: string,
+    cuisine: string,
+    city: string,
+    state: string,
+    locationName: string = 'United States',
+    languageCode: string = 'en'
+  ): Promise<ProcessedKeyword[]> {
+    // Extract business name from domain for better matching
+    const businessName = domain.replace(/\.(com|net|org|co|io)$/, '').replace(/www\./, '');
+    
+    return this.getLocalCompetitiveKeywords(
+      businessName,
+      cuisine,
+      city,
+      state,
+      locationName,
+      languageCode
+    );
   }
 
   /**

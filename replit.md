@@ -76,6 +76,13 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 25, 2025. Implemented Local Finder API for more accurate restaurant keyword rankings:
+  - **Upgraded to Local Finder API** - Replaced regular SERP API with Google Local Finder API for more accurate local business rankings
+  - **Enhanced business name matching** - System now uses flexible business name matching instead of domain-only matching for better restaurant identification
+  - **Improved local keyword analysis** - 8 targeted keywords now analyzed through local search results (Local Pack) rather than organic search
+  - **Added local business intelligence** - System captures local competitor data, ratings, and review counts for comprehensive analysis
+  - **Enhanced fallback system** - Guaranteed display of all 8 targeted keywords even if API calls timeout or fail
+  - **Better restaurant relevance** - Local Finder API specifically designed for local businesses like restaurants, providing more accurate positioning data
 - July 24, 2025. Fixed "Key Restaurant Keywords" section to display the 8 targeted keywords instead of restaurant's existing ranked keywords:
   - **Fixed frontend data source** - "Key Restaurant Keywords" section now pulls from `competitiveOpportunityKeywords` instead of `keywords` array
   - **Updated backend to return ALL 8 targeted keywords** - Changed from filtering only positions 6+ to returning all targeted keywords with their actual positions (or "Not Ranked")

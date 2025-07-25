@@ -260,10 +260,10 @@ export class AdvancedScannerService {
       
       console.log(`🎯 Generated ${targetedKeywords.length} targeted keywords:`, targetedKeywords);
       
-      // Try to get real ranking data, but always fallback to showing the keywords with "Not Ranked"
+      // Try to get real local ranking data using Local Finder API
       const competitiveOpportunityPromise = Promise.race([
-        this.rankedKeywordsService.getTargetedCompetitiveKeywords(
-          actualDomain, 
+        this.rankedKeywordsService.getLocalCompetitiveKeywords(
+          restaurantName, // Use business name for better matching
           cuisineType, 
           locationData.city, 
           locationData.state,
@@ -271,17 +271,17 @@ export class AdvancedScannerService {
           'en'
         ).then(results => {
           if (results && results.length > 0) {
-            console.log('✅ Got real ranking data for targeted keywords');
+            console.log('✅ Got real local ranking data for targeted keywords');
             return results;
           } else {
-            throw new Error('No ranking data available');
+            throw new Error('No local ranking data available');
           }
         }),
         new Promise((_, reject) => 
-          setTimeout(() => reject(new Error('Targeted competitive keywords timeout')), 8000)
+          setTimeout(() => reject(new Error('Local competitive keywords timeout')), 10000)
         )
       ]).catch(error => {
-        console.log('⚠️ Using fallback ranking data for targeted keywords');
+        console.log('⚠️ Using fallback ranking data for targeted keywords:', error.message);
         
         // Always return the 8 targeted keywords, even if we can't get ranking data
         return targetedKeywords.map(keyword => ({
