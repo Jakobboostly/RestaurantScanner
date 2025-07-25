@@ -167,7 +167,7 @@ export class DataForSeoRankedKeywordsService {
           
           return {
             ...keyword,
-            searchVolume: searchVolume === 0 ? 1000 : searchVolume, // Use 1k as minimum for 0 values
+            searchVolume: searchVolume < 500 ? 1000 : searchVolume, // Use 1k minimum for keywords under 500
             difficulty: volumeData?.keyword_difficulty || 0,
             cpc: volumeData?.cpc || 0,
             competition: volumeData?.competition || 0
