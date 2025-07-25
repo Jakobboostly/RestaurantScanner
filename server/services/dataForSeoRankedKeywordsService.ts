@@ -140,8 +140,8 @@ export class DataForSeoRankedKeywordsService {
       try {
         console.log(`🔍 Checking local rankings for: "${keyword}"`);
         
-        // Add delay to avoid rate limiting
-        await delay(1000);
+        // Add minimal delay to avoid rate limiting
+        await delay(500);
         
         // Use Local Finder API instead of regular SERP
         const response = await this.client.post('/serp/google/local_finder/live/advanced', [{
@@ -196,10 +196,14 @@ export class DataForSeoRankedKeywordsService {
             businessDomain.includes(cleanTargetName.replace(/\s+/g, '').replace(/pizza|restaurant|cafe|grill/g, ''))
           );
           
-          // 5. Partial word matching for restaurant names
-          const partialMatch = businessWords.some(bWord => 
-            targetWords.some(tWord => bWord.includes(tWord) || tWord.includes(bWord))
-          );
+          // 5. Strict partial word matching for restaurant names (more selective)
+          const partialMatch = businessWords.length >= 2 && targetWords.length >= 2 && 
+            businessWords.slice(0, 2).some(bWord => 
+              targetWords.slice(0, 2).some(tWord => 
+                (bWord.length > 3 && tWord.length > 3) && // Only match meaningful words
+                (bWord.includes(tWord) || tWord.includes(bWord))
+              )
+            );
           
           if (exactMatch || nameContainsMatch || firstWordMatch || domainMatch || partialMatch) {
             position = business.rank_absolute || (i + 1);

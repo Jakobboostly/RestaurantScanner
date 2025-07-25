@@ -261,30 +261,36 @@ export class AdvancedScannerService {
       
       console.log(`🎯 Generated ${targetedKeywords.length} targeted keywords:`, targetedKeywords);
       
-      // Try to get real local ranking data using Local Finder API
-      const competitiveOpportunityPromise = Promise.race([
-        this.rankedKeywordsService.getLocalCompetitiveKeywords(
-          restaurantName, // Use business name for better matching
-          cuisineType, 
-          locationData.city, 
-          locationData.state,
-          'United States', 
-          'en'
-        ).then(results => {
-          if (results && results.length > 0) {
-            console.log('✅ Got real local ranking data for targeted keywords');
-            return results;
-          } else {
-            throw new Error('No local ranking data available');
-          }
-        }),
-        new Promise((_, reject) => 
-          setTimeout(() => reject(new Error('Local competitive keywords timeout')), 25000)
-        )
-      ]).catch(error => {
-        console.log('⚠️ Using fallback ranking data for targeted keywords:', error.message);
+      // Get real local ranking data using Local Finder API (wait for completion)
+      console.log('🔍 Starting Local Finder API analysis - this may take up to 30 seconds...');
+      const competitiveOpportunityKeywords = await this.rankedKeywordsService.getLocalCompetitiveKeywords(
+        businessProfile.name, // Use actual Google Business Profile name for precise matching
+        cuisineType, 
+        locationData.city, 
+        locationData.state,
+        'United States', 
+        'en'
+      ).then(results => {
+        if (results && results.length > 0) {
+          console.log('✅ Got real local ranking data for targeted keywords');
+          return results;
+        } else {
+          console.log('⚠️ No local ranking data returned - using fallback');
+          // Return fallback data only if API returns empty results
+          return targetedKeywords.map(keyword => ({
+            keyword: keyword,
+            position: 0, // Show as "Not Ranked" 
+            searchVolume: 0,
+            difficulty: 0,
+            intent: 'local',
+            cpc: 0,
+            competition: 0
+          }));
+        }
+      }).catch(error => {
+        console.log('⚠️ Local ranking API error:', error.message);
         
-        // Always return the 8 targeted keywords, even if we can't get ranking data
+        // Only use fallback if API actually fails
         return targetedKeywords.map(keyword => ({
           keyword: keyword,
           position: 0, // Show as "Not Ranked" 
@@ -295,8 +301,6 @@ export class AdvancedScannerService {
           competition: 0
         }));
       });
-      
-      const competitiveOpportunityKeywords = await competitiveOpportunityPromise as any[];
       console.log(`Found ${competitiveOpportunityKeywords.length} competitive opportunity keywords for ${actualDomain}`);
       console.log('🔍 Raw competitive opportunity keywords:', JSON.stringify(competitiveOpportunityKeywords, null, 2));
       
@@ -320,23 +324,27 @@ export class AdvancedScannerService {
       }));
       
       // Process competitive opportunity keywords - these are the 8 targeted keywords the frontend displays
-      processedCompetitiveKeywords = competitiveOpportunityKeywords.map((keyword: any) => ({
-        keyword: keyword.keyword,
-        position: keyword.position,
-        searchVolume: keyword.searchVolume,
-        difficulty: keyword.difficulty,
-        intent: keyword.intent,
-        cpc: keyword.cpc,
-        competition: keyword.competition,
-        opportunity: keyword.position > 20 ? 25 : (keyword.position > 10 ? 50 : 75),
-        url: keyword.url,
-        title: keyword.title,
-        description: keyword.description,
-        isNew: keyword.isNew,
-        isLost: keyword.isLost,
-        positionChange: keyword.positionChange,
-        previousPosition: keyword.previousPosition
-      }));
+      // Ensure positions are preserved exactly as returned from Local Finder API
+      processedCompetitiveKeywords = competitiveOpportunityKeywords.map((keyword: any) => {
+        console.log(`🔍 PROCESSING KEYWORD: "${keyword.keyword}" with position: ${keyword.position}`);
+        return {
+          keyword: keyword.keyword,
+          position: keyword.position || 0, // Preserve exact position from Local Finder API
+          searchVolume: keyword.searchVolume || 0,
+          difficulty: keyword.difficulty || 0,
+          intent: keyword.intent || 'local',
+          cpc: keyword.cpc || 0,
+          competition: keyword.competition || 0,
+          opportunity: keyword.position > 20 ? 25 : (keyword.position > 10 ? 50 : 75),
+          url: keyword.url || null,
+          title: keyword.title || null,
+          description: keyword.description || null,
+          isNew: keyword.isNew || null,
+          isLost: keyword.isLost || null,
+          positionChange: keyword.positionChange || null,
+          previousPosition: keyword.previousPosition || null
+        };
+      });
       
       console.log('🔍 Processed competitive keywords for frontend:', JSON.stringify(processedCompetitiveKeywords, null, 2));
       
