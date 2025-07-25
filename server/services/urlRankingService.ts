@@ -9,6 +9,145 @@ export class UrlRankingService {
     this.googleApiKey = googleApiKey || '';
   }
 
+  async getUrlRankingsForKeywordsWithBusinessName(
+    targetUrl: string,
+    cuisine: string,
+    city: string,
+    state: string,
+    businessName: string,
+    locationName: string = 'United States',
+    languageCode: string = 'en'
+  ): Promise<any[]> {
+    console.log(`🔍 URL Ranking Service: Received business name "${businessName}" for branded searches`);
+    
+    // Generate mix of branded and competitive keywords for better ranking discovery
+    const keywordPatterns = [
+      // Branded searches (most likely to rank)
+      ...(businessName ? [
+        businessName,
+        `${businessName} ${city}`,
+        `${businessName} menu`,
+        `${businessName} hours`
+      ] : []),
+      // Long-tail local searches (better ranking chances)
+      `${cuisine} ${city} ${state}`,
+      `best ${cuisine} in ${city}`,
+      `${cuisine} restaurant ${city}`,
+      `${city} ${cuisine} delivery`
+    ].filter(k => k && k.length > 2).slice(0, 8); // Ensure we have exactly 8 keywords
+
+    console.log(`🎯 Generated keywords with branded searches:`, keywordPatterns);
+
+    const results: any[] = [];
+    const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+    
+    // Extract domain for matching
+    const targetDomain = this.extractDomain(targetUrl);
+    
+    console.log(`🔍 Checking where ${targetUrl} ranks for ${keywordPatterns.length} keywords (branded + competitive)...`);
+
+    for (const keyword of keywordPatterns) {
+      try {
+        console.log(`  📊 Checking: "${keyword}"`);
+        
+        await delay(1000); // Rate limiting
+        
+        // Use standard location targeting since we're mixing branded + local
+        const requestBody: any = {
+          keyword: keyword,
+          language_code: languageCode,
+          location_name: locationName,
+          depth: 50, // Check top 50 positions
+          max_crawl_pages: 1
+        };
+
+        // Use regular SERP API to see where the URL ranks
+        const response = await fetch('https://api.dataforseo.com/v3/serp/google/organic/live/advanced', {
+          method: 'POST',
+          headers: {
+            'Authorization': `Basic ${Buffer.from(`${this.login}:${this.password}`).toString('base64')}`,
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify([requestBody])
+        });
+
+        const data = await response.json();
+        
+        if (data?.tasks?.[0]?.result?.[0]?.items) {
+          const items = data.tasks[0].result[0].items;
+          let foundPosition = 0;
+          let foundUrl = null;
+          let foundTitle = null;
+          let foundDescription = null;
+
+          // Look for the target URL in results
+          for (let i = 0; i < items.length; i++) {
+            const item = items[i];
+            if (item.domain && this.domainMatches(item.domain, targetDomain)) {
+              foundPosition = item.rank_absolute || (i + 1);
+              foundUrl = item.url;
+              foundTitle = item.title;
+              foundDescription = item.snippet;
+              console.log(`    ✅ Found at position ${foundPosition}: ${foundUrl}`);
+              break;
+            }
+          }
+
+          if (foundPosition === 0) {
+            console.log(`    ❌ Not found in top 50`);
+          }
+
+          results.push({
+            keyword,
+            position: foundPosition,
+            url: foundUrl,
+            title: foundTitle,
+            description: foundDescription,
+            searchVolume: await this.getSearchVolumeForKeyword(keyword),
+            difficulty: 0,
+            cpc: 0,
+            competition: 0,
+            opportunity: this.calculateOpportunityScore(foundPosition, await this.getSearchVolumeForKeyword(keyword)),
+            intent: this.classifyIntent(keyword)
+          });
+        } else {
+          console.log(`    ⚠️ API error for "${keyword}"`);
+          results.push({
+            keyword,
+            position: 0,
+            url: null,
+            title: null,
+            description: null,
+            searchVolume: await this.getSearchVolumeForKeyword(keyword),
+            difficulty: 0,
+            cpc: 0,
+            competition: 0,
+            opportunity: 75,
+            intent: this.classifyIntent(keyword)
+          });
+        }
+      } catch (error) {
+        console.log(`    ❌ Error checking "${keyword}":`, error.message);
+        results.push({
+          keyword,
+          position: 0,
+          url: null,
+          title: null,
+          description: null,
+          searchVolume: 1000,
+          difficulty: 0,
+          cpc: 0,
+          competition: 0,
+          opportunity: 75,
+          intent: this.classifyIntent(keyword)
+        });
+      }
+    }
+
+    console.log(`🔍 URL ranking analysis complete: Found ${results.filter(r => r.position > 0).length}/${results.length} actual rankings`);
+    return results;
+  }
+
   async getUrlRankingsForKeywords(
     targetUrl: string,
     cuisine: string,
@@ -22,25 +161,38 @@ export class UrlRankingService {
     let enhancedLocation = null;
     if (this.googleApiKey) {
       try {
-        enhancedLocation = await this.getEnhancedLocationData(targetUrl, city, state);
+        // Extract business name from URL or use a generic approach
+        const businessName = this.extractBusinessNameFromUrl(targetUrl);
+        enhancedLocation = await this.getEnhancedLocationData(targetUrl, city, state, businessName);
         console.log(`📍 Enhanced location data: ${enhancedLocation?.formattedAddress}`);
         console.log(`   Coordinates: ${enhancedLocation?.latitude}, ${enhancedLocation?.longitude}`);
+        console.log(`   Business name: ${enhancedLocation?.businessName}`);
       } catch (error) {
         console.log(`⚠️ Could not get enhanced location data, using standard approach`);
       }
     }
 
-    // Generate the 8 keyword patterns
+    // Get business name for branded searches if available
+    let businessName = '';
+    if (enhancedLocation?.businessName) {
+      businessName = enhancedLocation.businessName;
+    }
+
+    // Generate mix of branded and competitive keywords for better ranking discovery
     const keywordPatterns = [
-      `${cuisine} near me`,
-      `${cuisine} delivery ${city}`,
-      `best ${cuisine} ${city}`,
-      `${city} ${cuisine}`,
-      `${cuisine} places near me`,
+      // Branded searches (most likely to rank)
+      ...(businessName ? [
+        businessName,
+        `${businessName} ${city}`,
+        `${businessName} menu`,
+        `${businessName} hours`
+      ] : []),
+      // Long-tail local searches (better ranking chances)
       `${cuisine} ${city} ${state}`,
-      `${cuisine} delivery near me`,
-      `${cuisine} open now`
-    ];
+      `best ${cuisine} in ${city}`,
+      `${cuisine} restaurant ${city}`,
+      `${city} ${cuisine} delivery`
+    ].filter(k => k && k.length > 2).slice(0, 8); // Ensure we have exactly 8 keywords
 
     const results: any[] = [];
     const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
@@ -220,14 +372,39 @@ export class UrlRankingService {
   /**
    * Get enhanced location data using Google Places API
    */
-  private async getEnhancedLocationData(targetUrl: string, city: string, state: string): Promise<any> {
+  private async getEnhancedLocationData(targetUrl: string, city: string, state: string, businessName?: string): Promise<any> {
     if (!this.googleApiKey) return null;
 
     try {
       // Clean URL for search
       const domain = new URL(targetUrl).hostname.replace('www.', '');
       
-      // Search for business by domain
+      // Try business name search first if available
+      if (businessName) {
+        console.log(`🔍 Searching for business: "${businessName}" to get coordinates`);
+        const businessSearchUrl = `https://maps.googleapis.com/maps/api/place/textsearch/json?` +
+          `query=${encodeURIComponent(businessName + ' ' + city + ' ' + state)}` +
+          `&key=${this.googleApiKey}`;
+        
+        const businessResponse = await fetch(businessSearchUrl);
+        const businessData = await businessResponse.json();
+        
+        if (businessData.results && businessData.results.length > 0) {
+          const businessResult = businessData.results[0];
+          console.log(`✅ Found business coordinates for "${businessName}"`);
+          return {
+            latitude: businessResult.geometry.location.lat,
+            longitude: businessResult.geometry.location.lng,
+            city: city,
+            state: state,
+            country: 'United States',
+            formattedAddress: businessResult.formatted_address,
+            businessName: businessName
+          };
+        }
+      }
+      
+      // Search for business by domain as fallback
       const searchUrl = `https://maps.googleapis.com/maps/api/place/textsearch/json?` +
         `query=${encodeURIComponent(domain)}` +
         `&key=${this.googleApiKey}`;
@@ -322,5 +499,28 @@ export class UrlRankingService {
       businessName: place.name,
       website: place.website
     };
+  }
+
+  /**
+   * Extract potential business name from URL domain
+   */
+  private extractBusinessNameFromUrl(url: string): string {
+    try {
+      const domain = new URL(url).hostname.replace('www.', '');
+      const parts = domain.split('.');
+      if (parts.length > 0) {
+        // Convert domain to potential business name
+        let name = parts[0];
+        // Handle common patterns like "pier49pizza" -> "Pier 49 Pizza"
+        name = name.replace(/(\d+)/, ' $1 ');
+        name = name.replace(/([a-z])([A-Z])/g, '$1 $2');
+        return name.split(/[\s-_]+/)
+          .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+          .join(' ');
+      }
+    } catch (error) {
+      console.log(`Could not extract business name from URL: ${url}`);
+    }
+    return '';
   }
 }

@@ -268,18 +268,24 @@ export class AdvancedScannerService {
       // Get real URL ranking data using DataForSEO organic SERP API
       console.log(`🔍 Starting URL ranking analysis for ${businessProfile?.website || actualDomain}...`);
       console.log(`🔍 Business Profile Website: "${businessProfile?.website}"`);
+      console.log(`🔍 Business Name: "${businessProfile?.name}"`);
       console.log(`🔍 Actual Domain: "${actualDomain}"`);
-      console.log(`🔍 Business Profile Full Data:`, JSON.stringify(businessProfile, null, 2));
       
       // Use business website URL directly for ranking analysis
       const targetUrl = businessProfile?.website || `https://${actualDomain}`;
       console.log(`🔍 Final Target URL for ranking: "${targetUrl}"`);
+      console.log(`🔍 Will check for branded searches using business name: "${businessProfile?.name}"`);
       
-      const competitiveOpportunityKeywords = await this.urlRankingService.getUrlRankingsForKeywords(
+      // Pass the actual business name to URL ranking service for branded searches
+      const businessName = businessProfile?.name || '';
+      console.log(`🔍 Passing business name to URL ranking: "${businessName}"`);
+      
+      const competitiveOpportunityKeywords = await this.urlRankingService.getUrlRankingsForKeywordsWithBusinessName(
         targetUrl,
         cuisineType, 
         locationData.city, 
         locationData.state,
+        businessName,
         'United States', 
         'en'
       ).then(results => {
