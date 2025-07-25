@@ -97,47 +97,52 @@ export class UrlRankingService {
             console.log(`    ❌ Not found in top 50`);
           }
 
+          // Get authentic search volume data from DataForSEO
+          const volumeData = await this.getSearchVolumeData(keyword, locationName, languageCode);
+          
           results.push({
             keyword,
             position: foundPosition,
             url: foundUrl,
             title: foundTitle,
             description: foundDescription,
-            searchVolume: 1000, // Default search volume
-            difficulty: 0,
-            cpc: 0,
-            competition: 0,
-            opportunity: this.calculateOpportunityScore(foundPosition, 1000),
+            searchVolume: volumeData.searchVolume,
+            difficulty: volumeData.difficulty,
+            cpc: volumeData.cpc,
+            competition: volumeData.competition,
+            opportunity: this.calculateOpportunityScore(foundPosition, volumeData.searchVolume),
             intent: this.getKeywordIntent(keyword)
           });
         } else {
           console.log(`    ⚠️ API error for "${keyword}"`);
+          const volumeData = await this.getSearchVolumeData(keyword, locationName, languageCode);
           results.push({
             keyword,
             position: 0,
             url: null,
             title: null,
             description: null,
-            searchVolume: 1000,
-            difficulty: 0,
-            cpc: 0,
-            competition: 0,
+            searchVolume: volumeData.searchVolume,
+            difficulty: volumeData.difficulty,
+            cpc: volumeData.cpc,
+            competition: volumeData.competition,
             opportunity: 75,
             intent: this.getKeywordIntent(keyword)
           });
         }
       } catch (error) {
         console.log(`    ❌ Error checking "${keyword}":`, (error as Error).message);
+        const volumeData = await this.getSearchVolumeData(keyword, locationName, languageCode);
         results.push({
           keyword,
           position: 0,
           url: null,
           title: null,
           description: null,
-          searchVolume: 1000,
-          difficulty: 0,
-          cpc: 0,
-          competition: 0,
+          searchVolume: volumeData.searchVolume,
+          difficulty: volumeData.difficulty,
+          cpc: volumeData.cpc,
+          competition: volumeData.competition,
           opportunity: 75,
           intent: this.getKeywordIntent(keyword)
         });
@@ -366,6 +371,45 @@ export class UrlRankingService {
     if (position <= 3) return 0; // Top 3 = no opportunity
     if (position <= 10) return 25; // Top 10 = small opportunity
     return 50; // Beyond top 10 = good opportunity
+  }
+
+  private async getSearchVolumeData(keyword: string, locationName: string, languageCode: string): Promise<{searchVolume: number, difficulty: number, cpc: number, competition: number}> {
+    try {
+      const response = await fetch('https://api.dataforseo.com/v3/dataforseo_labs/google/keyword_overview/live', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Basic ${Buffer.from(`${this.login}:${this.password}`).toString('base64')}`,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify([{
+          keywords: [keyword],
+          location_name: locationName,
+          language_code: languageCode
+        }])
+      });
+      
+      const data = await response.json();
+      const keywordData = data.tasks?.[0]?.result?.[0]?.items?.[0];
+      
+      if (keywordData) {
+        let searchVolume = keywordData.keyword_info?.search_volume || 0;
+        const difficulty = keywordData.keyword_info?.keyword_difficulty || 0;
+        const cpc = keywordData.keyword_info?.cpc || 0;
+        const competition = keywordData.keyword_info?.competition || 0;
+        
+        // Apply minimum search volume rule for low-volume keywords
+        if (searchVolume < 500 && searchVolume > 0) {
+          searchVolume = 1000;
+        }
+        
+        return { searchVolume, difficulty, cpc, competition };
+      }
+    } catch (error) {
+      console.log(`⚠️ Could not get volume data for "${keyword}":`, (error as Error).message);
+    }
+    
+    // Return fallback values
+    return { searchVolume: 1000, difficulty: 0, cpc: 0, competition: 0 };
   }
 
   private getKeywordIntent(keyword: string): string {
