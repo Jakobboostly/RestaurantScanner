@@ -1,10 +1,12 @@
 export class UrlRankingService {
   private login: string;
   private password: string;
+  private googleApiKey: string;
 
-  constructor(login: string, password: string) {
+  constructor(login: string, password: string, googleApiKey?: string) {
     this.login = login;
     this.password = password;
+    this.googleApiKey = googleApiKey || '';
   }
 
   async getUrlRankingsForKeywords(
@@ -15,6 +17,18 @@ export class UrlRankingService {
     locationName: string = 'United States',
     languageCode: string = 'en'
   ): Promise<any[]> {
+    
+    // Try to get enhanced location data if Google API key is available
+    let enhancedLocation = null;
+    if (this.googleApiKey) {
+      try {
+        enhancedLocation = await this.getEnhancedLocationData(targetUrl, city, state);
+        console.log(`📍 Enhanced location data: ${enhancedLocation?.formattedAddress}`);
+        console.log(`   Coordinates: ${enhancedLocation?.latitude}, ${enhancedLocation?.longitude}`);
+      } catch (error) {
+        console.log(`⚠️ Could not get enhanced location data, using standard approach`);
+      }
+    }
 
     // Generate the 8 keyword patterns
     const keywordPatterns = [
@@ -42,6 +56,22 @@ export class UrlRankingService {
         
         await delay(1000); // Rate limiting
         
+        // Use enhanced location data if available
+        const requestBody: any = {
+          keyword: keyword,
+          language_code: languageCode,
+          depth: 50, // Check top 50 positions
+          max_crawl_pages: 1
+        };
+
+        // Use coordinates for more precise local targeting if available
+        if (enhancedLocation?.latitude && enhancedLocation?.longitude) {
+          requestBody.location_coordinate = `${enhancedLocation.latitude},${enhancedLocation.longitude},10`; // 10km radius
+          requestBody.location_name = `${enhancedLocation.city}, ${enhancedLocation.state}, ${enhancedLocation.country}`;
+        } else {
+          requestBody.location_name = locationName;
+        }
+
         // Use regular SERP API to see where the URL ranks
         const response = await fetch('https://api.dataforseo.com/v3/serp/google/organic/live/advanced', {
           method: 'POST',
@@ -49,13 +79,7 @@ export class UrlRankingService {
             'Authorization': `Basic ${Buffer.from(`${this.login}:${this.password}`).toString('base64')}`,
             'Content-Type': 'application/json'
           },
-          body: JSON.stringify([{
-            keyword: keyword,
-            location_name: locationName,
-            language_code: languageCode,
-            depth: 50, // Check top 50 positions
-            max_crawl_pages: 1
-          }])
+          body: JSON.stringify([requestBody])
         });
 
         const data = await response.json();
@@ -191,5 +215,112 @@ export class UrlRankingService {
     const positionScore = Math.max(0, 21 - position); // Higher score for worse positions
     const volumeScore = Math.log10(searchVolume + 1) * 10;
     return Math.round(positionScore * volumeScore);
+  }
+
+  /**
+   * Get enhanced location data using Google Places API
+   */
+  private async getEnhancedLocationData(targetUrl: string, city: string, state: string): Promise<any> {
+    if (!this.googleApiKey) return null;
+
+    try {
+      // Clean URL for search
+      const domain = new URL(targetUrl).hostname.replace('www.', '');
+      
+      // Search for business by domain
+      const searchUrl = `https://maps.googleapis.com/maps/api/place/textsearch/json?` +
+        `query=${encodeURIComponent(domain)}` +
+        `&key=${this.googleApiKey}`;
+      
+      const response = await fetch(searchUrl);
+      const data = await response.json();
+      
+      if (data.results && data.results.length > 0) {
+        // Find result matching the website
+        for (const result of data.results) {
+          const placeId = result.place_id;
+          
+          // Get details to verify website
+          const detailsUrl = `https://maps.googleapis.com/maps/api/place/details/json?` +
+            `place_id=${placeId}` +
+            `&fields=website,name,formatted_address,geometry,address_components` +
+            `&key=${this.googleApiKey}`;
+          
+          const detailsResponse = await fetch(detailsUrl);
+          const detailsData = await detailsResponse.json();
+          
+          if (detailsData.result?.website?.includes(domain)) {
+            return this.parseLocationData(detailsData.result);
+          }
+        }
+      }
+      
+      // Fallback: search by location
+      const locationSearchUrl = `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?` +
+        `input=${encodeURIComponent(`${city} ${state}`)}` +
+        `&inputtype=textquery` +
+        `&fields=place_id,name,formatted_address,geometry` +
+        `&key=${this.googleApiKey}`;
+      
+      const locationResponse = await fetch(locationSearchUrl);
+      const locationData = await locationResponse.json();
+      
+      if (locationData.candidates && locationData.candidates.length > 0) {
+        const candidate = locationData.candidates[0];
+        return {
+          latitude: candidate.geometry.location.lat,
+          longitude: candidate.geometry.location.lng,
+          city: city,
+          state: state,
+          country: 'United States',
+          formattedAddress: candidate.formatted_address
+        };
+      }
+      
+    } catch (error) {
+      console.log(`⚠️ Error getting enhanced location data: ${(error as Error).message}`);
+    }
+    
+    return null;
+  }
+
+  /**
+   * Parse location data from Google Places response
+   */
+  private parseLocationData(place: any): any {
+    let city = '';
+    let state = '';
+    let stateAbbr = '';
+    let country = '';
+    let zipCode = '';
+    
+    for (const component of place.address_components || []) {
+      if (component.types.includes('locality')) {
+        city = component.long_name;
+      }
+      if (component.types.includes('administrative_area_level_1')) {
+        state = component.long_name;
+        stateAbbr = component.short_name;
+      }
+      if (component.types.includes('country')) {
+        country = component.long_name;
+      }
+      if (component.types.includes('postal_code')) {
+        zipCode = component.long_name;
+      }
+    }
+    
+    return {
+      latitude: place.geometry.location.lat,
+      longitude: place.geometry.location.lng,
+      city,
+      state,
+      stateAbbr,
+      country,
+      formattedAddress: place.formatted_address,
+      zipCode,
+      businessName: place.name,
+      website: place.website
+    };
   }
 }

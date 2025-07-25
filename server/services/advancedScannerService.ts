@@ -74,7 +74,7 @@ export class AdvancedScannerService {
   ) {
     this.googleBusinessService = new GoogleBusinessService(googleApiKey);
     this.rankedKeywordsService = new DataForSeoRankedKeywordsService(dataForSeoLogin, dataForSeoPassword);
-    this.urlRankingService = new UrlRankingService(dataForSeoLogin, dataForSeoPassword);
+    this.urlRankingService = new UrlRankingService(dataForSeoLogin, dataForSeoPassword, googleApiKey);
     this.aiRecommendationService = new AIRecommendationService();
     this.googleReviewsService = new GoogleReviewsService(googleApiKey);
     this.apifyReviewsService = apifyApiKey ? new ApifyReviewsService(apifyApiKey) : undefined;
