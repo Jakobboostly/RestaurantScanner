@@ -76,6 +76,7 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 25, 2025. **UI cleanup** - Removed "Your Ranking Keywords" section from dashboard as requested to streamline interface
 - July 25, 2025. **Revolutionary URL-based ranking approach** - Eliminated flawed business name matching in favor of direct URL ranking analysis:
   - **Created UrlRankingService** - New service uses restaurant website URL directly with DataForSEO organic SERP API instead of reverse-engineering through business name matching
   - **Fixed core ranking accuracy issue** - System now searches for where the specific URL (pier49pizza.com) ranks for targeted keywords rather than trying to match business names in local results
