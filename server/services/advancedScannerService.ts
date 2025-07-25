@@ -2,6 +2,7 @@ import { GoogleBusinessService } from './googleBusinessService.js';
 
 import { DataForSeoRankedKeywordsService } from './dataForSeoRankedKeywordsService.js';
 import { UrlRankingService } from './urlRankingService.js';
+import { LocalSEOAnalyzer } from './localSEOAnalyzer.js';
 import { AIRecommendationService } from './aiRecommendationService.js';
 import { GoogleReviewsService } from './googleReviewsService.js';
 import { ApifyReviewsService } from './apifyReviewsService.js';
