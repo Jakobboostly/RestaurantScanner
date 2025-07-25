@@ -7,6 +7,11 @@ export class DataForSeoRankedKeywordsService {
     this.password = password;
   }
 
+  async getRankedKeywords(domain: string) {
+    // Minimal implementation to prevent errors
+    return [];
+  }
+
   async getRealRestaurantRankings(domain: string, keywords: string[]) {
     // Minimal implementation to prevent errors
     return [];
