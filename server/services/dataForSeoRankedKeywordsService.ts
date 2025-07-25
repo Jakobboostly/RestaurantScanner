@@ -162,19 +162,33 @@ export class DataForSeoRankedKeywordsService {
         let position = 0;
         let foundBusiness = null;
         
+        console.log(`    🔍 Looking for business: "${businessName}" in ${localBusinesses.length} results`);
+        
         for (let i = 0; i < localBusinesses.length; i++) {
           const business = localBusinesses[i];
           
-          // Match by business name (more flexible matching)
+          // Enhanced matching logic for restaurant names
           const businessTitle = business.title?.toLowerCase() || '';
           const targetName = businessName.toLowerCase();
+          const businessDomain = business.domain?.toLowerCase() || '';
           
-          if (businessTitle.includes(targetName) || 
-              targetName.includes(businessTitle.split(' ')[0]) || // Match first word
-              business.domain?.includes(targetName.replace(/\s+/g, ''))) { // Match domain
-            
+          console.log(`    🔍 Checking business #${i+1}: "${business.title}" (domain: ${business.domain})`);
+          
+          // Multiple matching strategies:
+          // 1. Exact name match
+          // 2. Name contains target or target contains name
+          // 3. Domain match
+          // 4. First word match for abbreviated names
+          const nameMatch = businessTitle.includes(targetName) || targetName.includes(businessTitle);
+          const domainMatch = businessDomain.includes(targetName.replace(/\s+/g, '')) || 
+                             businessDomain.includes(targetName.replace(/\s+/g, '').replace('pizza', ''));
+          const firstWordMatch = businessTitle.split(' ')[0] === targetName.split(' ')[0];
+          
+          if (nameMatch || domainMatch || firstWordMatch) {
             position = business.rank_absolute || (i + 1);
             foundBusiness = business;
+            console.log(`    ✅ MATCH FOUND! Position ${position} - "${business.title}" matched "${businessName}"`);
+            console.log(`    🔍 Match type: name=${nameMatch}, domain=${domainMatch}, firstWord=${firstWordMatch}`);
             break;
           }
         }

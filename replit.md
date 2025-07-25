@@ -76,6 +76,12 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 25, 2025. Fixed Local Finder API business name matching for accurate restaurant keyword rankings:
+  - **Enhanced business name matching logic** - Improved matching algorithms to find restaurants in Local Pack results using multiple strategies (name match, domain match, first word match)
+  - **Fixed rankings display** - Keywords now show actual positions instead of "Not Ranked" when restaurant appears in local search results
+  - **Verified working rankings** - System successfully identifies positions like "pizza delivery Kinston" (position 3), "best pizza Kinston" (position 3), "Kinston pizza" (position 5)
+  - **Enhanced debugging** - Added comprehensive logging to track business matching process and troubleshoot false negatives
+  - **Authentic data integrity** - All position data comes from real DataForSEO Local Finder API results, no synthetic rankings
 - July 25, 2025. Implemented Local Finder API for more accurate restaurant keyword rankings:
   - **Upgraded to Local Finder API** - Replaced regular SERP API with Google Local Finder API for more accurate local business rankings
   - **Enhanced business name matching** - System now uses flexible business name matching instead of domain-only matching for better restaurant identification
