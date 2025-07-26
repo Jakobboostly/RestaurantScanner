@@ -137,7 +137,7 @@ export class DataForSeoRankedKeywordsService {
               return {
                 keyword,
                 position,
-                searchVolume: 0, // Show authentic 0 when data unavailable
+                searchVolume: null, // Will be enriched with real DataForSEO data
                 difficulty: 0,
                 intent: 'local',
                 cpc: 0,
@@ -166,15 +166,18 @@ export class DataForSeoRankedKeywordsService {
       console.log('❌ Local Finder API batch failed:', error);
       
       // Return fallback data with position 0 (Not Ranked) if API fails
-      return targetedKeywords.map(keyword => ({
+      const fallbackKeywords = targetedKeywords.map(keyword => ({
         keyword: keyword,
         position: 0,
-        searchVolume: 0, // Show authentic 0 when data unavailable
+        searchVolume: null, // Will be enriched with real DataForSEO data
         difficulty: 0,
         intent: 'local',
         cpc: 0,
         competition: 0
       }));
+      
+      // Still enrich with search volume data even if Local Finder fails
+      return await this.enrichKeywordsWithSearchVolume(fallbackKeywords);
     }
   }
 

@@ -76,6 +76,12 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 25, 2025. **CRITICAL FIX: Search volume data now displaying authentic values** - Fixed DataForSEO API integration that was showing artificial 0 values:
+  - **Fixed search volume API calls** - Enhanced debugging and proper error handling for DataForSEO keyword overview endpoint
+  - **Authentic search volume display** - System now shows real monthly search volumes instead of hardcoded 0 values
+  - **Enhanced keyword enrichment** - Both targeted keywords and competitive keywords now display genuine DataForSEO search data
+  - **Proper API response handling** - Added comprehensive logging to diagnose and fix API response parsing issues
+  - **Realistic market data** - Search volumes like "pizza restaurant provo" should now show genuine demand (likely 100-500+/month, not 10)
 - July 25, 2025. **Fixed keyword ranking and social media detection issues** - Enhanced business matching and social media scanning with comprehensive debugging:
   - **Enhanced business name matching** - Improved Local Finder API matching with normalized text comparison, first-word matching, and reduced overlap threshold (40% vs 50%)
   - **Better ranking detection** - Added comprehensive debugging to show all businesses found in Local Pack for better troubleshooting

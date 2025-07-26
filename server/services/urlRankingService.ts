@@ -372,38 +372,50 @@ export class UrlRankingService {
 
   async getSearchVolumeData(keyword: string, locationName: string, languageCode: string): Promise<{searchVolume: number, difficulty: number, cpc: number, competition: number}> {
     try {
+      console.log(`    🔍 Getting search volume for "${keyword}" in ${locationName}...`);
+      
+      const requestBody = [{
+        keywords: [keyword],
+        location_name: locationName,
+        language_code: languageCode
+      }];
+      
       const response = await fetch('https://api.dataforseo.com/v3/dataforseo_labs/google/keyword_overview/live', {
         method: 'POST',
         headers: {
           'Authorization': `Basic ${Buffer.from(`${this.login}:${this.password}`).toString('base64')}`,
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify([{
-          keywords: [keyword],
-          location_name: locationName,
-          language_code: languageCode
-        }])
+        body: JSON.stringify(requestBody)
       });
       
+      if (!response.ok) {
+        console.log(`    ❌ DataForSEO API error for "${keyword}": ${response.status} ${response.statusText}`);
+        return { searchVolume: 0, difficulty: 0, cpc: 0, competition: 0 };
+      }
+      
       const data = await response.json();
+      console.log(`    🔍 DataForSEO response for "${keyword}":`, JSON.stringify(data, null, 2));
+      
       const keywordData = data.tasks?.[0]?.result?.[0]?.items?.[0];
       
       if (keywordData) {
-        let searchVolume = keywordData.keyword_info?.search_volume || 0;
+        const searchVolume = keywordData.keyword_info?.search_volume || 0;
         const difficulty = keywordData.keyword_info?.keyword_difficulty || 0;
         const cpc = keywordData.keyword_info?.cpc || 0;
         const competition = keywordData.keyword_info?.competition || 0;
         
-        // Show authentic search volumes - no artificial inflation
+        console.log(`    📊 "${keyword}": ${searchVolume} searches/month (difficulty: ${difficulty}, cpc: $${cpc}, competition: ${competition})`);
         
         return { searchVolume, difficulty, cpc, competition };
+      } else {
+        console.log(`    ⚠️ No keyword data found for "${keyword}" in response`);
+        return { searchVolume: 0, difficulty: 0, cpc: 0, competition: 0 };
       }
     } catch (error) {
-      console.log(`⚠️ Could not get volume data for "${keyword}":`, (error as Error).message);
+      console.log(`    ❌ Search volume API failed for "${keyword}":`, (error as Error).message);
+      return { searchVolume: 0, difficulty: 0, cpc: 0, competition: 0 };
     }
-    
-    // Return fallback values
-    return { searchVolume: 0, difficulty: 0, cpc: 0, competition: 0 };
   }
 
   private getKeywordIntent(keyword: string): string {
