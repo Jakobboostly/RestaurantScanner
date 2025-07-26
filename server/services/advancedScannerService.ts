@@ -418,24 +418,10 @@ export class AdvancedScannerService {
       const phase4Start = Date.now();
       onProgress({ progress: 58, status: 'Evaluating mobile experience...' });
       
-      // Start reviews analysis asynchronously to avoid blocking scan
+      // Start reviews analysis with placeId to get actual review data
       console.log('🚀 Starting reviews analysis with placeId:', placeId);
-      
-      // Start OpenAI analysis in background and cache result when ready
-      this.generateEnhancedReviewsAnalysis(businessProfile, placeId)
-        .then((analysis) => {
-          if (analysis?.customerMoodAnalysis) {
-            console.log('✅ Caching OpenAI mood analysis for placeId:', placeId);
-            AdvancedScannerService.moodAnalysisCache.set(placeId, analysis.customerMoodAnalysis);
-          }
-        })
-        .catch(error => {
-          console.error('❌ Background OpenAI analysis failed:', error);
-        });
-      
-      // Return basic analysis immediately to not block scan
-      const reviewsAnalysis = this.generateEnhancedReviewsAnalysis(businessProfile);
-      console.log('📊 Using basic reviews analysis (OpenAI running in background)');
+      const reviewsAnalysis = await this.generateEnhancedReviewsAnalysis(businessProfile, placeId);
+      console.log('📊 Reviews analysis completed - reviews found:', reviewsAnalysis?.recentReviews?.length || 0);
       
       // Wait for phase 4 to complete (4 seconds total)
       const phase4Elapsed = Date.now() - phase4Start;
@@ -1440,13 +1426,14 @@ export class AdvancedScannerService {
       }
     }
     
-    // Fallback to Google Places API (limited to 5 reviews)
-    if (placeId && (!apifyReviews || !apifyReviews.success)) {
+    // Fallback to Google Places API (limited to 5 reviews) - Always try this since Apify isn't working
+    if (placeId) {
       try {
+        console.log('🔍 Attempting Google Places API review fetch...');
         googleReviews = await this.googleReviewsService.getReviews(placeId);
-        console.log('Google reviews retrieved (fallback):', googleReviews.reviews.length);
+        console.log('📝 Google reviews retrieved:', googleReviews?.reviews?.length || 0);
       } catch (error) {
-        console.error('Google reviews failed:', error);
+        console.error('❌ Google reviews failed:', error);
       }
     }
     
