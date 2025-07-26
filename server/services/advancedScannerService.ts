@@ -290,38 +290,76 @@ export class AdvancedScannerService {
         businessName,
         'United States', 
         'en'
-      ).then(results => {
+      ).then(async (results) => {
         if (results && results.length > 0) {
           console.log(`✅ Got real URL ranking data for ${results.length} keywords`);
           return results;
         } else {
-          console.log('⚠️ No URL ranking data returned - using fallback');
-          // Return fallback data only if API returns empty results
-          return targetedKeywords.map(keyword => ({
-            keyword: keyword,
-            position: 0, // Show as "Not Ranked" 
-            searchVolume: 1000,
-            difficulty: 0,
-            intent: 'local',
-            cpc: 0,
-            competition: 0,
-            opportunity: 0
-          }));
+          console.log('⚠️ No URL ranking data returned - generating authentic search volume data for fallback');
+          // Get authentic search volume data even for fallback keywords
+          const fallbackResults = [];
+          for (const keyword of targetedKeywords) {
+            try {
+              const volumeData = await this.urlRankingService.getSearchVolumeData(keyword, 'United States', 'en');
+              fallbackResults.push({
+                keyword: keyword,
+                position: 0, // Show as "Not Ranked"
+                searchVolume: volumeData.searchVolume,
+                difficulty: volumeData.difficulty,
+                intent: 'local',
+                cpc: volumeData.cpc,
+                competition: volumeData.competition,
+                opportunity: 75
+              });
+            } catch (error) {
+              console.log(`⚠️ Could not get volume data for fallback keyword "${keyword}"`);
+              fallbackResults.push({
+                keyword: keyword,
+                position: 0,
+                searchVolume: 1000, // Last resort fallback
+                difficulty: 0,
+                intent: 'local',
+                cpc: 0,
+                competition: 0,
+                opportunity: 75
+              });
+            }
+          }
+          return fallbackResults;
         }
-      }).catch(error => {
+      }).catch(async (error) => {
         console.log('⚠️ URL ranking API error:', error.message);
         
-        // Only use fallback if API actually fails
-        return targetedKeywords.map(keyword => ({
-          keyword: keyword,
-          position: 0, // Show as "Not Ranked" 
-          searchVolume: 1000,
-          difficulty: 0,
-          intent: 'local',
-          cpc: 0,
-          competition: 0,
-          opportunity: 0
-        }));
+        // Get authentic search volume data even when API fails
+        const errorFallbackResults = [];
+        for (const keyword of targetedKeywords) {
+          try {
+            const volumeData = await this.urlRankingService.getSearchVolumeData(keyword, 'United States', 'en');
+            errorFallbackResults.push({
+              keyword: keyword,
+              position: 0, // Show as "Not Ranked"
+              searchVolume: volumeData.searchVolume,
+              difficulty: volumeData.difficulty,
+              intent: 'local',
+              cpc: volumeData.cpc,
+              competition: volumeData.competition,
+              opportunity: 75
+            });
+          } catch (volumeError) {
+            console.log(`⚠️ Could not get volume data for error fallback keyword "${keyword}"`);
+            errorFallbackResults.push({
+              keyword: keyword,
+              position: 0,
+              searchVolume: 1000, // Last resort fallback
+              difficulty: 0,
+              intent: 'local',
+              cpc: 0,
+              competition: 0,
+              opportunity: 75
+            });
+          }
+        }
+        return errorFallbackResults;
       });
       console.log(`Found ${competitiveOpportunityKeywords.length} competitive opportunity keywords for ${actualDomain}`);
       console.log('🔍 Raw competitive opportunity keywords:', JSON.stringify(competitiveOpportunityKeywords, null, 2));

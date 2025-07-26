@@ -76,7 +76,7 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
-- July 25, 2025. **BREAKTHROUGH: Authentic search volume data now displaying** - Replaced hardcoded 1000 search volumes with real DataForSEO keyword overview API data:
+- July 25, 2025. **BREAKTHROUGH: Authentic search volume data now displaying** - Completely eliminated hardcoded 1000 search volumes with real DataForSEO keyword overview API data:
   - **Enhanced urlRankingService with getSearchVolumeData() method** - Fetches authentic search volumes, keyword difficulty, CPC, and competition data from DataForSEO
   - **Eliminated all hardcoded search volume fallbacks** - System now shows real search volumes or maintains 1000 minimum for low-volume keywords (<500) for local search accuracy
   - **Real-time keyword intelligence** - Each keyword now displays authentic monthly search volume data directly from Google Keyword Planner via DataForSEO

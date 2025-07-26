@@ -373,7 +373,7 @@ export class UrlRankingService {
     return 50; // Beyond top 10 = good opportunity
   }
 
-  private async getSearchVolumeData(keyword: string, locationName: string, languageCode: string): Promise<{searchVolume: number, difficulty: number, cpc: number, competition: number}> {
+  async getSearchVolumeData(keyword: string, locationName: string, languageCode: string): Promise<{searchVolume: number, difficulty: number, cpc: number, competition: number}> {
     try {
       const response = await fetch('https://api.dataforseo.com/v3/dataforseo_labs/google/keyword_overview/live', {
         method: 'POST',
