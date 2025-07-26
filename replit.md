@@ -88,7 +88,7 @@ This is a comprehensive restaurant website scanner application built with React 
   - **Changed percentage format to prefix style** - Emotional breakdown now displays "%25" instead of "25%" format per user preference
   - **Enhanced critical ranking alert to show worst performers** - Updated alert section to display the 3 worst-performing keywords (NOT ranked #1) from the list of 8 targeted keywords, sorted by worst position first
   - **Removed website preview from local section** - Removed WebsiteEmbed component from local tab per user request, to be fixed later
-  - **Fixed percentage display format in emotional breakdown** - Changed sentiment display from "%25" format back to standard "25%" format per user request for clarity
+  - **Fixed percentage display format in emotional breakdown** - Changed sentiment display from "%25" format back to standard "25%" format per user request for clarity (applied restart to clear cache)
 - July 26, 2025. **Website embed integration completed** - Added website preview to local section and removed duplicate test section:
   - **Added Website Preview to local tab** - Integrated WebsiteEmbed component into local section with proper styling and conditional rendering
   - **Removed duplicate Website Embed Test section** - Eliminated redundant test section at bottom of dashboard per user request
