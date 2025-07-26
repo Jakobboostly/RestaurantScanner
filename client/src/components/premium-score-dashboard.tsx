@@ -1656,25 +1656,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
         </div>
       )}
 
-      {/* Website Embeddability Test */}
-      {scanResult.businessProfile?.website && (
-        <div className="mt-8 max-w-4xl mx-auto">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Globe className="w-5 h-5 text-[#5F5FFF]" />
-                Website Embed Test
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <WebsiteEmbed 
-                url={scanResult.businessProfile.website}
-                restaurantName={scanResult.restaurantName}
-              />
-            </CardContent>
-          </Card>
-        </div>
-      )}
+
     </div>
   );
 }

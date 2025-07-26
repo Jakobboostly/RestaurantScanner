@@ -76,6 +76,11 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 26, 2025. **Website embed integration completed** - Added website preview to local section and removed duplicate test section:
+  - **Added Website Preview to local tab** - Integrated WebsiteEmbed component into local section with proper styling and conditional rendering
+  - **Removed duplicate Website Embed Test section** - Eliminated redundant test section at bottom of dashboard per user request
+  - **Enhanced local section** - Website preview now appears alongside Google Business Profile data and local SEO information  
+  - **Maintained single embed instance** - Clean implementation with website preview in appropriate local context only
 - July 26, 2025. **BREAKTHROUGH: Google Places API reviews system fully implemented and working** - Fixed critical reviews analysis architecture and integrated authentic review data processing:
   - **Fixed reviews system architecture** - Eliminated duplicate analysis calls that were overriding placeId-based review fetching
   - **Implemented authentic Google Places API reviews service** - Replaced stub implementation with real API calls and proper review data processing
