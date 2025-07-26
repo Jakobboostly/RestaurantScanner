@@ -395,7 +395,8 @@ export class UrlRankingService {
       }
       
       const data = await response.json();
-      console.log(`    🔍 DataForSEO response for "${keyword}":`, JSON.stringify(data, null, 2));
+      // Don't log full response to avoid spam, just key data
+      console.log(`    🔍 DataForSEO API called for "${keyword}" - Status: ${response.status}`);
       
       const keywordData = data.tasks?.[0]?.result?.[0]?.items?.[0];
       

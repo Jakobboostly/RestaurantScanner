@@ -46,13 +46,22 @@ export class EnhancedSocialMediaDetector {
       try {
         console.log('🔍 Scanning website for social media links...');
         console.log('🔍 Target domain:', domain);
-        const response = await axios.get(domain, {
-          timeout: 10000,
+        
+        // Ensure domain has protocol
+        const targetUrl = domain.startsWith('http') ? domain : `https://${domain}`;
+        console.log('🔍 Normalized URL:', targetUrl);
+        
+        const response = await axios.get(targetUrl, {
+          timeout: 15000, // Increased timeout
           headers: {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
           },
           maxRedirects: 5
         });
+        
+        console.log(`🔍 Website loaded successfully (${response.data.length} characters)`);
+        console.log(`🔍 Response status: ${response.status}`);
+        console.log(`🔍 Content preview: ${response.data.substring(0, 200)}...`);
 
         const $ = cheerio.load(response.data);
         
@@ -73,10 +82,15 @@ export class EnhancedSocialMediaDetector {
 
         // Find Facebook links
         if (!result.facebook) {
+          console.log('🔍 Searching for Facebook links...');
           for (const selector of facebookSelectors) {
+            console.log(`   Trying selector: ${selector}`);
             const links = $(selector);
+            console.log(`   Found ${links.length} potential matches`);
+            
             links.each((i, element) => {
               const href = $(element).attr('href') || $(element).attr('data-href') || $(element).attr('src');
+              console.log(`   Checking href: ${href}`);
               if (href && this.isValidFacebookUrl(href)) {
                 result.facebook = this.cleanSocialUrl(href);
                 console.log('📘 Facebook found via website scan:', result.facebook);
@@ -85,14 +99,34 @@ export class EnhancedSocialMediaDetector {
             });
             if (result.facebook) break;
           }
+          
+          if (!result.facebook) {
+            console.log('🔍 No Facebook found with selectors, trying text search...');
+            // Fallback: search for Facebook URLs in the HTML text
+            const facebookMatches = response.data.match(/https?:\/\/(?:www\.)?facebook\.com\/[^\s"'<>]+/g);
+            if (facebookMatches) {
+              for (const match of facebookMatches) {
+                if (this.isValidFacebookUrl(match)) {
+                  result.facebook = this.cleanSocialUrl(match);
+                  console.log('📘 Facebook found via text search:', result.facebook);
+                  break;
+                }
+              }
+            }
+          }
         }
 
         // Find Instagram links
         if (!result.instagram) {
+          console.log('🔍 Searching for Instagram links...');
           for (const selector of instagramSelectors) {
+            console.log(`   Trying selector: ${selector}`);
             const links = $(selector);
+            console.log(`   Found ${links.length} potential matches`);
+            
             links.each((i, element) => {
               const href = $(element).attr('href') || $(element).attr('data-href');
+              console.log(`   Checking href: ${href}`);
               if (href && this.isValidInstagramUrl(href)) {
                 result.instagram = this.cleanSocialUrl(href);
                 console.log('📷 Instagram found via website scan:', result.instagram);
@@ -100,6 +134,21 @@ export class EnhancedSocialMediaDetector {
               }
             });
             if (result.instagram) break;
+          }
+          
+          if (!result.instagram) {
+            console.log('🔍 No Instagram found with selectors, trying text search...');
+            // Fallback: search for Instagram URLs in the HTML text
+            const instagramMatches = response.data.match(/https?:\/\/(?:www\.)?instagram\.com\/[^\s"'<>]+/g);
+            if (instagramMatches) {
+              for (const match of instagramMatches) {
+                if (this.isValidInstagramUrl(match)) {
+                  result.instagram = this.cleanSocialUrl(match);
+                  console.log('📷 Instagram found via text search:', result.instagram);
+                  break;
+                }
+              }
+            }
           }
         }
 

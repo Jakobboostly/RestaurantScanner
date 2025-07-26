@@ -2600,6 +2600,11 @@ export class AdvancedScannerService {
         const businessAddress = businessProfile?.address || businessProfile?.vicinity;
         const businessPhone = businessProfile?.phone;
         
+        console.log('🔍 Starting comprehensive social media detection...');
+        console.log(`   Target domain: https://${domain}`);
+        console.log(`   Business name: ${restaurantName}`);
+        console.log(`   Has Apify data: ${!!apifySocialData}`);
+        
         allSocialLinks = await this.enhancedSocialMediaDetector.detectAllSocialMedia(
           `https://${domain}`,
           restaurantName,
@@ -2608,6 +2613,32 @@ export class AdvancedScannerService {
           placeId,
           apifySocialData
         );
+        
+        console.log('📱 Social media detection completed. Results:');
+        console.log(`   Facebook: ${allSocialLinks.facebook || 'Not found'}`);
+        console.log(`   Instagram: ${allSocialLinks.instagram || 'Not found'}`);
+        
+        // If no social media found from website/Apify, try Google Business Profile
+        if (!allSocialLinks.facebook && !allSocialLinks.instagram && businessProfile) {
+          console.log('🔍 No social media found, checking Google Business Profile...');
+          // Google Places API doesn't provide social_media field by default
+          // But we can check for it in the business profile data
+          const profile = businessProfile as any;
+          if (profile.social_media) {
+            console.log('📱 Found social media in Business Profile:', profile.social_media);
+            // Extract Facebook and Instagram from Google Business Profile
+            for (const social of profile.social_media) {
+              if (social.includes('facebook.com') && !allSocialLinks.facebook) {
+                allSocialLinks.facebook = social;
+                console.log('📘 Facebook from Business Profile:', social);
+              }
+              if (social.includes('instagram.com') && !allSocialLinks.instagram) {
+                allSocialLinks.instagram = social;
+                console.log('📷 Instagram from Business Profile:', social);
+              }
+            }
+          }
+        }
       }
       
       console.log('📘 Final social media detection results:', allSocialLinks);
@@ -2616,26 +2647,33 @@ export class AdvancedScannerService {
       let facebookAnalysis = null;
       if (allSocialLinks.facebook) {
         // Start Facebook analysis but don't await it - it can complete in background
-        this.facebookPostsScraperService.analyzeFacebookPage(allSocialLinks.facebook)
-          .then(result => {
-            console.log('Facebook posts analysis completed:', result ? 'Success' : 'No data');
-          })
-          .catch(fbError => {
-            console.error('Facebook posts analysis failed:', fbError);
-          });
-        console.log('Facebook posts analysis started in background');
+        // Only if the service exists and has the method
+        if (this.facebookPostsScraperService && typeof this.facebookPostsScraperService.analyzeFacebookPage === 'function') {
+          this.facebookPostsScraperService.analyzeFacebookPage(allSocialLinks.facebook)
+            .then(result => {
+              console.log('Facebook posts analysis completed:', result ? 'Success' : 'No data');
+            })
+            .catch(fbError => {
+              console.error('Facebook posts analysis failed:', fbError);
+            });
+          console.log('Facebook posts analysis started in background');
+        } else {
+          console.log('Facebook posts scraper service not available - skipping enhanced analysis');
+        }
       }
       
-      // Build the result object
+      // Build the result object - ENSURE we return the detected social links
       const result = {
         ...allSocialLinks,
         facebookVerified: !!allSocialLinks.facebook,
         facebookConfidence: allSocialLinks.facebook ? 'high' as const : 'low' as const,
-        facebookSource: allSocialLinks.facebook ? 'manual_override' as const : 'none' as const
+        facebookSource: manualFacebookUrl ? 'manual_override' as const : (allSocialLinks.facebook ? 'website_scan' as const : 'none' as const)
       };
       
       // Enhanced Facebook data will be available in background - not included in immediate results
       console.log('📘 Social media detection result prepared:', result);
+      console.log('📘 Result Facebook:', result.facebook);
+      console.log('📘 Result Instagram:', result.instagram);
       
       return result;
     } catch (error) {

@@ -76,6 +76,13 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 26, 2025. **BREAKTHROUGH: Fixed three critical system failures identified by user** - Resolved social media detection, photo extraction, and search volume issues:
+  - **Fixed social media detection crash** - Eliminated TypeError preventing Facebook/Instagram links from being returned to frontend despite successful detection
+  - **Enhanced social media website scanning** - Added comprehensive debugging, text search fallbacks, and proper URL normalization for more reliable detection
+  - **Added Google Business photo count extraction** - Successfully extracting photoCount field from Google Places API and displaying business photo galleries
+  - **Fixed Facebook detection workflow** - Social media scanner now properly returns detected links (e.g., "https://www.facebook.com/saltydogpublications") instead of empty results
+  - **Enhanced error handling** - Facebook posts analysis service check prevents crashes when service unavailable, allowing core detection to complete
+  - **Improved debugging transparency** - Added comprehensive logging throughout social media detection pipeline for better troubleshooting
 - July 25, 2025. **CRITICAL FIX: Search volume data now displaying authentic values** - Fixed DataForSEO API integration that was showing artificial 0 values:
   - **Fixed search volume API calls** - Enhanced debugging and proper error handling for DataForSEO keyword overview endpoint
   - **Authentic search volume display** - System now shows real monthly search volumes instead of hardcoded 0 values
