@@ -139,9 +139,17 @@ export class AdvancedScannerService {
             weaknesses: this.identifyProfileWeaknesses(businessProfile)
           };
         }
-      } catch (error) {
+      } catch (error: any) {
         console.error('Business profile fetch failed - using fallback:', error);
-        businessProfile = null;
+        
+        // If placeId is invalid, try to extract business info from domain
+        if (error.message === 'PLACE_ID_NOT_FOUND') {
+          console.log('🔧 Invalid placeId detected - extracting business info from domain');
+          businessProfile = this.createBusinessProfileFromDomain(domain, restaurantName);
+        } else {
+          console.log('🔧 Business profile failed - attempting domain fallback anyway');
+          businessProfile = this.createBusinessProfileFromDomain(domain, restaurantName);
+        }
         profileAnalysis = null;
       }
       
@@ -1317,6 +1325,53 @@ export class AdvancedScannerService {
     }
     
     return Math.max(0, Math.min(100, score));
+  }
+
+  private createBusinessProfileFromDomain(domain: string, restaurantName: string) {
+    // Extract business name from domain
+    const domainName = domain.replace(/^www\./, '').split('.')[0];
+    
+    // Convert domain to readable business name
+    const businessName = restaurantName !== 'Unknown Restaurant' 
+      ? restaurantName 
+      : this.domainToBusinessName(domainName);
+    
+    console.log(`🏢 Created business profile from domain: "${businessName}" (from ${domain})`);
+    
+    return {
+      name: businessName,
+      address: 'Location data unavailable - using domain analysis',
+      rating: 0,
+      reviewCount: 0,
+      phoneNumber: null,
+      website: `https://${domain}`,
+      formatted_address: 'Location data unavailable - using domain analysis',
+      place_id: null,
+      business_status: 'UNKNOWN',
+      types: ['restaurant'],
+      reviews: [],
+      photos: [],
+      photoCount: 0,
+      opening_hours: null,
+      price_level: null,
+      editorial_summary: null
+    };
+  }
+
+  private domainToBusinessName(domainName: string): string {
+    // Handle common domain patterns
+    const cleanDomain = domainName
+      .replace(/[-_]/g, ' ')  // Replace hyphens and underscores with spaces
+      .replace(/\b\w/g, l => l.toUpperCase())  // Capitalize first letter of each word
+      .trim();
+    
+    // Add "Restaurant" if it doesn't contain food-related words
+    const foodWords = ['pizza', 'burger', 'cafe', 'grill', 'restaurant', 'bar', 'diner', 'bistro', 'kitchen'];
+    const containsFoodWord = foodWords.some(word => 
+      cleanDomain.toLowerCase().includes(word.toLowerCase())
+    );
+    
+    return containsFoodWord ? cleanDomain : `${cleanDomain} Restaurant`;
   }
 
   private getFallbackPerformanceMetrics(): any {

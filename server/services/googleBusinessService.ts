@@ -43,18 +43,17 @@ export class GoogleBusinessService {
       }
 
       throw new Error('No business data found');
-    } catch (error) {
+    } catch (error: any) {
       console.error('Google Places API error:', error);
-      // Fallback with error indication
-      return {
-        name: 'Restaurant Data Unavailable',
-        address: 'Google Places API Error',
-        rating: 0,
-        reviewCount: 0,
-        phoneNumber: null,
-        website: null,
-        formatted_address: 'API Error - Please check Google Places API key'
-      };
+      
+      // Check if it's a NOT_FOUND error (invalid placeId)
+      if (error.response?.data?.status === 'NOT_FOUND') {
+        console.log('⚠️ PlaceId not found - using domain-only analysis mode');
+        throw new Error('PLACE_ID_NOT_FOUND');
+      }
+      
+      // For any other error (API issues, etc.), throw PLACE_ID_NOT_FOUND to trigger domain fallback
+      throw new Error('PLACE_ID_NOT_FOUND');
     }
   }
 

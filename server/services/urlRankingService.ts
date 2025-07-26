@@ -44,6 +44,8 @@ export class UrlRankingService {
     // Extract domain for matching
     const targetDomain = this.extractDomain(targetUrl);
     
+    console.log(`🔍 Target URL: ${targetUrl}`);
+    console.log(`🔍 Target Domain: ${targetDomain}`);
     console.log(`🔍 Checking where ${targetUrl} ranks for ${keywordPatterns.length} keywords (branded + competitive)...`);
 
     for (const keyword of keywordPatterns) {
@@ -81,14 +83,21 @@ export class UrlRankingService {
           let foundDescription = null;
 
           // Look for the target URL in results
+          console.log(`    🔍 Scanning ${items.length} search results for domain "${targetDomain}"`);
           for (let i = 0; i < items.length; i++) {
             const item = items[i];
-            if (item.domain && this.extractDomain(item.domain) === targetDomain) {
+            const itemDomain = item.domain ? this.extractDomain(item.domain) : null;
+            const itemUrl = item.url ? this.extractDomain(item.url) : null;
+            
+            console.log(`      Result ${i + 1}: domain="${itemDomain}", url="${itemUrl}", target="${targetDomain}"`);
+            
+            // Check both domain field and URL field for matches
+            if ((itemDomain && itemDomain === targetDomain) || (itemUrl && itemUrl === targetDomain)) {
               foundPosition = item.rank_absolute || (i + 1);
               foundUrl = item.url;
               foundTitle = item.title;
               foundDescription = item.snippet;
-              console.log(`    ✅ Found at position ${foundPosition}: ${foundUrl}`);
+              console.log(`    ✅ Found match at position ${foundPosition}: ${foundUrl} (matched via ${itemDomain === targetDomain ? 'domain' : 'URL'})`);
               break;
             }
           }
