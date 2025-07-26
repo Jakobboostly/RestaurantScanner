@@ -86,6 +86,7 @@ This is a comprehensive restaurant website scanner application built with React 
   - **Enhanced Apify reviews data processing** - Comprehensive review data including author details, ratings, text, dates, reviewer information, and owner responses for better sentiment analysis
   - **Updated sentiment visualization to show percentages only** - All emotional breakdown displays now show clear percentage values relative to total review count with contextual labels for better user comprehension
   - **Changed percentage format to prefix style** - Emotional breakdown now displays "%25" instead of "25%" format per user preference
+  - **Enhanced critical ranking alert to show worst performers** - Updated alert section to display the 3 worst-performing keywords (NOT ranked #1) from the list of 8 targeted keywords, sorted by worst position first
 - July 26, 2025. **Website embed integration completed** - Added website preview to local section and removed duplicate test section:
   - **Added Website Preview to local tab** - Integrated WebsiteEmbed component into local section with proper styling and conditional rendering
   - **Removed duplicate Website Embed Test section** - Eliminated redundant test section at bottom of dashboard per user request

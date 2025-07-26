@@ -793,34 +793,46 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                         <div className="bg-[#5F5FFF]/30 border-2 border-yellow-300 rounded-lg p-4 mb-3 backdrop-blur-sm">
                           {(() => {
                             const competitiveKeywords = scanResult.competitiveOpportunityKeywords || [];
+                            
+                            // Filter to get the 3 worst performing keywords (NOT ranked #1)
+                            const worstKeywords = competitiveKeywords
+                              .filter(k => k.position !== 1) // Exclude #1 rankings
+                              .sort((a, b) => (b.position || 999) - (a.position || 999)) // Sort by worst position first
+                              .slice(0, 3); // Take top 3 worst
+                            
                             const keywordCount = competitiveKeywords.length;
-                            const competitiveOpportunityCount = competitiveKeywords.filter(k => k.position > 5).length;
                             
                             return (
                               <>
                                 <p className="text-white font-black text-2xl mb-2 drop-shadow-lg">
                                   Tracking {keywordCount} key restaurant keywords for your area!
                                 </p>
-                                {competitiveOpportunityCount > 0 && (
+                                {worstKeywords.length > 0 && (
                                   <div className="text-yellow-200 text-sm font-bold mb-2">
-                                    Keywords where competitors are beating you (positions 6+):
+                                    Your 3 worst performing keywords (NOT ranked #1):
                                   </div>
                                 )}
-                                {competitiveKeywords.length > 0 && (
+                                {worstKeywords.length > 0 && (
                                   <div className="space-y-1 text-left max-h-32 overflow-y-auto">
-                                    {competitiveKeywords.slice(0, 3).map((keyword, index) => (
+                                    {worstKeywords.map((keyword, index) => (
                                       <div key={index} className="flex justify-between items-center text-xs bg-white/10 rounded px-2 py-1">
                                         <span className="text-white truncate pr-2">
                                           "{keyword.keyword}"
                                         </span>
                                         <span className={`font-bold ${
-                                          keyword.position <= 5 ? 'text-green-300' : 'text-yellow-300'
+                                          keyword.position === 0 || keyword.position === null || keyword.position === undefined ? 'text-red-300' :
+                                          keyword.position <= 5 ? 'text-yellow-300' : 'text-red-300'
                                         }`}>
-                                          #{keyword.position}
+                                          {keyword.position === 0 || keyword.position === null || keyword.position === undefined ? 'Not Ranked' : `#${keyword.position}`}
                                         </span>
                                       </div>
                                     ))}
                                   </div>
+                                )}
+                                {worstKeywords.length === 0 && competitiveKeywords.length > 0 && (
+                                  <p className="text-green-200 text-base font-bold">
+                                    🎉 All your keywords are ranked #1! Amazing performance!
+                                  </p>
                                 )}
                                 {competitiveKeywords.length === 0 && (
                                   <p className="text-yellow-200 text-base font-bold">
