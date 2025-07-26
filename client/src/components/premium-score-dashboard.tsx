@@ -1245,20 +1245,6 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                     </div>
                   </div>
 
-                  {/* Website Embed */}
-                  {scanResult.businessProfile?.website && (
-                    <div className="space-y-4">
-                      <h3 className="font-bold text-gray-800 flex items-center gap-2">
-                        <Globe className="w-5 h-5 text-[#5F5FFF]" />
-                        Website Preview
-                      </h3>
-                      <WebsiteEmbed 
-                        url={scanResult.businessProfile.website}
-                        restaurantName={scanResult.restaurantName}
-                        className="shadow-sm"
-                      />
-                    </div>
-                  )}
                   
                   <div className="pt-4 border-t border-gray-200 space-y-3">
                     <div className="flex justify-between items-center">
