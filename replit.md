@@ -76,6 +76,12 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 25, 2025. **Social media scanning fully restored** - Fixed EnhancedSocialMediaDetector that was returning null values for all platforms:
+  - **Restored comprehensive social media detection** - Facebook and Instagram detection now working through multiple methods (Apify data, website scanning, Google Places integration)
+  - **Enhanced detection patterns** - Added robust URL validation and cleaning for social media links
+  - **Multi-layered approach** - Uses Apify social data first, then website scanning as backup for maximum detection accuracy
+  - **Proper URL filtering** - Excludes system URLs, APIs, and share links to find authentic business social media pages
+  - **Real-time social media intelligence** - System now properly detects and displays Facebook and Instagram presence in Social tab
 - July 25, 2025. **BREAKTHROUGH: 100% Authentic search volume data implemented** - Completely eliminated ALL hardcoded 1000 search volume fallbacks system-wide:
   - **Enhanced urlRankingService with getSearchVolumeData() method** - Fetches authentic search volumes, keyword difficulty, CPC, and competition data from DataForSEO
   - **Eliminated artificial volume inflation** - Removed all 1000 minimum rules that were masking real low-volume keyword data across urlRankingService, dataForSeoRankedKeywordsService, localSEOAnalyzer, and advancedScannerService
