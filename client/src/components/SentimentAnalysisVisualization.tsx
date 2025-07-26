@@ -20,7 +20,10 @@ interface SentimentAnalysisProps {
 export function SentimentAnalysisVisualization({ moodAnalysis, scanResult }: SentimentAnalysisProps) {
   if (!moodAnalysis) return null;
 
-  // Prepare sentiment distribution data for pie chart
+  // Calculate total review count for context
+  const totalReviews = moodAnalysis.detailedMetrics?.totalReviews || scanResult.reviewsAnalysis?.reviewsFound || 0;
+
+  // Prepare sentiment distribution data for pie chart (already in percentages from backend)
   const sentimentData = moodAnalysis.sentimentDistribution ? [
     { name: 'Ecstatic', value: moodAnalysis.sentimentDistribution.ecstatic, color: '#10B981', icon: '🤩' },
     { name: 'Delighted', value: moodAnalysis.sentimentDistribution.delighted, color: '#22C55E', icon: '😍' },
@@ -47,7 +50,7 @@ export function SentimentAnalysisVisualization({ moodAnalysis, scanResult }: Sen
           <div>
             <h4 className="font-semibold text-gray-800">AI Customer Sentiment Analysis</h4>
             <p className="text-sm text-gray-600">
-              Generated from {moodAnalysis.detailedMetrics?.totalReviews || scanResult.reviewsAnalysis?.reviewsFound || 'available'} customer reviews
+              Based on {totalReviews} customer reviews • Results shown as percentages
             </p>
           </div>
         </div>
@@ -86,6 +89,7 @@ export function SentimentAnalysisVisualization({ moodAnalysis, scanResult }: Sen
           <div className="flex items-center gap-2 mb-4">
             <PieChart className="w-5 h-5 text-purple-600" />
             <h5 className="font-semibold text-gray-800">Sentiment Distribution</h5>
+            <span className="text-xs text-gray-500 ml-2">(% of {totalReviews} reviews)</span>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">

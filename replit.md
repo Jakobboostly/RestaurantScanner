@@ -84,6 +84,7 @@ This is a comprehensive restaurant website scanner application built with React 
   - **Enhanced customer psychology insights** - Multiple visual representations including sentiment distribution, emotional trends, and customer feedback categorization
   - **Switched from Google Places API to Apify reviews scraper** - Implemented proper ApifyReviewsService using compass/crawler-google-places actor to get 100+ authentic Google reviews instead of limited 5-review Google Places API
   - **Enhanced Apify reviews data processing** - Comprehensive review data including author details, ratings, text, dates, reviewer information, and owner responses for better sentiment analysis
+  - **Updated sentiment visualization to show percentages only** - All emotional breakdown displays now show clear percentage values relative to total review count with contextual labels for better user comprehension
 - July 26, 2025. **Website embed integration completed** - Added website preview to local section and removed duplicate test section:
   - **Added Website Preview to local tab** - Integrated WebsiteEmbed component into local section with proper styling and conditional rendering
   - **Removed duplicate Website Embed Test section** - Eliminated redundant test section at bottom of dashboard per user request
