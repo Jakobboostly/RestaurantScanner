@@ -142,37 +142,7 @@ export function SentimentAnalysisVisualization({ moodAnalysis, scanResult }: Sen
         </motion.div>
       )}
 
-      {/* Top Customer Themes */}
-      {moodAnalysis.keyMoodIndicators && moodAnalysis.keyMoodIndicators.length > 0 && (
-        <motion.div 
-          className="bg-white rounded-xl p-6 border border-gray-200"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          <div className="flex items-center gap-2 mb-4">
-            <BarChart3 className="w-5 h-5 text-purple-600" />
-            <h5 className="font-semibold text-gray-800">Top Customer Themes</h5>
-          </div>
-          
-          <div className="h-64">
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={moodAnalysis.keyMoodIndicators.slice(0, 6)}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis 
-                  dataKey="theme" 
-                  tick={{ fontSize: 12 }}
-                  angle={-45}
-                  textAnchor="end"
-                  height={80}
-                />
-                <YAxis />
-                <Bar dataKey="mentions" fill="#5F5FFF" radius={[4, 4, 0, 0]} />
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
-        </motion.div>
-      )}
+
 
       {/* Business Insights Grid */}
       <motion.div 
@@ -184,7 +154,7 @@ export function SentimentAnalysisVisualization({ moodAnalysis, scanResult }: Sen
         <div className="bg-green-50 rounded-xl p-6 border border-green-200">
           <div className="flex items-center gap-2 mb-3">
             <ThumbsUp className="w-5 h-5 text-green-600" />
-            <h5 className="font-semibold text-green-800">Customer Strengths</h5>
+            <h5 className="font-semibold text-green-800">Where customers love you</h5>
           </div>
           <ul className="space-y-2">
             {(moodAnalysis.businessInsights?.strengthsPerceived || []).map((strength: string, index: number) => (
@@ -205,7 +175,7 @@ export function SentimentAnalysisVisualization({ moodAnalysis, scanResult }: Sen
         <div className="bg-orange-50 rounded-xl p-6 border border-orange-200">
           <div className="flex items-center gap-2 mb-3">
             <Target className="w-5 h-5 text-orange-600" />
-            <h5 className="font-semibold text-orange-800">Improvement Opportunities</h5>
+            <h5 className="font-semibold text-orange-800">Where your customers want you to improve</h5>
           </div>
           <ul className="space-y-2">
             {(moodAnalysis.businessInsights?.improvementOpportunities || []).map((opportunity: string, index: number) => (

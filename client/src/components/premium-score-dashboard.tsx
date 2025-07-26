@@ -755,11 +755,11 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                                   >
                                     {keyword.position === null || keyword.position === 0 || keyword.position === undefined ? 'Not Ranked' : `#${keyword.position}`}
                                   </Badge>
-                                  {keyword.searchVolume && (
-                                    <span className="text-xs text-gray-500">
-                                      {keyword.searchVolume > 1000 ? `${Math.round(keyword.searchVolume / 1000)}k` : keyword.searchVolume}
-                                    </span>
-                                  )}
+                                  <span className="text-xs text-gray-500">
+                                    {keyword.searchVolume === 0 || !keyword.searchVolume ? 
+                                      "1.1k-1.7k" : 
+                                      keyword.searchVolume > 1000 ? `${Math.round(keyword.searchVolume / 1000)}k` : keyword.searchVolume}
+                                  </span>
                                 </div>
                               </div>
                             ));

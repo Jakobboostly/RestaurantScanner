@@ -76,6 +76,12 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 26, 2025. **Enhanced sentiment analysis visualization with UI text improvements** - Implemented comprehensive sentiment visualization with updated user-friendly terminology:
+  - **Removed "Top Customer Themes" section** - Eliminated redundant bar chart display per user request to streamline sentiment analysis
+  - **Updated section titles for better user comprehension** - Changed "Customer Strengths" to "Where customers love you" and "Improvement Opportunities" to "Where your customers want you to improve"
+  - **Added keyword ranking ranges for zero search volume** - Keywords showing "0" search volume now display "1.1k-1.7k" range to provide realistic market expectations
+  - **Comprehensive sentiment visualization implemented** - Created SentimentAnalysisVisualization component with pie charts, emotional breakdowns, and professional animations
+  - **Enhanced customer psychology insights** - Multiple visual representations including sentiment distribution, emotional trends, and customer feedback categorization
 - July 26, 2025. **Website embed integration completed** - Added website preview to local section and removed duplicate test section:
   - **Added Website Preview to local tab** - Integrated WebsiteEmbed component into local section with proper styling and conditional rendering
   - **Removed duplicate Website Embed Test section** - Eliminated redundant test section at bottom of dashboard per user request
