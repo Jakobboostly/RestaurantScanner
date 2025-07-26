@@ -45,11 +45,13 @@ export class EnhancedSocialMediaDetector {
       // Step 2: Website scanning for social media links
       try {
         console.log('🔍 Scanning website for social media links...');
+        console.log('🔍 Target domain:', domain);
         const response = await axios.get(domain, {
-          timeout: 8000,
+          timeout: 10000,
           headers: {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-          }
+          },
+          maxRedirects: 5
         });
 
         const $ = cheerio.load(response.data);

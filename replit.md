@@ -76,6 +76,12 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
+- July 25, 2025. **Fixed keyword ranking and social media detection issues** - Enhanced business matching and social media scanning with comprehensive debugging:
+  - **Enhanced business name matching** - Improved Local Finder API matching with normalized text comparison, first-word matching, and reduced overlap threshold (40% vs 50%)
+  - **Better ranking detection** - Added comprehensive debugging to show all businesses found in Local Pack for better troubleshooting
+  - **Enhanced social media debugging** - Added detailed logging and improved timeout handling for website scanning
+  - **Robust URL handling** - Social media detector now handles redirects and provides better error reporting
+  - **Real-time diagnostic data** - System now logs all available businesses and matching attempts for transparency
 - July 25, 2025. **Social media scanning fully restored** - Fixed EnhancedSocialMediaDetector that was returning null values for all platforms:
   - **Restored comprehensive social media detection** - Facebook and Instagram detection now working through multiple methods (Apify data, website scanning, Google Places integration)
   - **Enhanced detection patterns** - Added robust URL validation and cleaning for social media links

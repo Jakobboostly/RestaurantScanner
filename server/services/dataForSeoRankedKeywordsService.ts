@@ -65,44 +65,62 @@ export class DataForSeoRankedKeywordsService {
             if (data.tasks && data.tasks[0] && data.tasks[0].result && data.tasks[0].result[0]) {
               const localResults = data.tasks[0].result[0].items || [];
               
-              // Find business by name matching (strict matching)
+              // Find business by name matching (enhanced matching with debugging)
               console.log(`🔍 Looking for business: "${businessName}" in ${localResults.length} results`);
+              console.log(`🔍 Available businesses in Local Pack:`);
+              localResults.forEach((item: any, index: number) => {
+                console.log(`  ${index + 1}. "${item.title}" (${item.domain || 'no domain'})`);
+              });
               
               const businessPosition = localResults.findIndex((item: any, index: number) => {
-                const itemTitle = (item.title || '').toLowerCase();
-                const searchName = businessName.toLowerCase();
+                const itemTitle = (item.title || '').toLowerCase().trim();
+                const searchName = businessName.toLowerCase().trim();
                 
-                console.log(`  - Position ${index + 1}: "${item.title}" (domain: ${item.domain})`);
+                // Normalized comparison - removes extra spaces and punctuation
+                const normalizeText = (text: string) => text.replace(/[^\w\s]/g, '').replace(/\s+/g, ' ').trim();
+                const normalizedTitle = normalizeText(itemTitle);
+                const normalizedSearch = normalizeText(searchName);
                 
-                // Balanced matching - exact match or significant word overlap
-                const titleWords = itemTitle.split(/\s+/).filter((word: string) => word.length > 2);
-                const nameWords = searchName.split(/\s+/).filter((word: string) => word.length > 2);
+                console.log(`  🔍 Comparing: "${normalizedTitle}" vs "${normalizedSearch}"`);
                 
-                // 1. Exact substring match (most reliable)
-                const isExactMatch = itemTitle.includes(searchName) || searchName.includes(itemTitle);
+                // Enhanced matching strategies
+                const titleWords = normalizedTitle.split(/\s+/).filter((word: string) => word.length > 2);
+                const nameWords = normalizedSearch.split(/\s+/).filter((word: string) => word.length > 2);
                 
-                // 2. Domain-based matching (if available)
-                const domainMatch = item.domain && item.domain.toLowerCase().includes(searchName.replace(/\s+/g, ''));
+                // 1. Exact match (normalized)
+                const isExactMatch = normalizedTitle === normalizedSearch || 
+                                   normalizedTitle.includes(normalizedSearch) || 
+                                   normalizedSearch.includes(normalizedTitle);
                 
-                // 3. Word overlap matching (at least 50% of unique words)
+                // 2. Domain-based matching
+                const domainMatch = item.domain && 
+                  item.domain.toLowerCase().includes(normalizedSearch.replace(/\s+/g, ''));
+                
+                // 3. First word match (often restaurant names start the same)
+                const firstWordMatch = titleWords.length > 0 && nameWords.length > 0 && 
+                  titleWords[0] === nameWords[0] && titleWords[0].length >= 3;
+                
+                // 4. Word overlap matching (more lenient - at least 40% of words)
                 const matchingWords = titleWords.filter((titleWord: string) => 
                   nameWords.some((nameWord: string) => 
-                    titleWord.includes(nameWord) || nameWord.includes(titleWord)
+                    titleWord.includes(nameWord) || nameWord.includes(titleWord) ||
+                    titleWord === nameWord
                   )
                 );
                 const wordOverlapRatio = matchingWords.length / Math.max(nameWords.length, 1);
-                const hasGoodOverlap = wordOverlapRatio >= 0.5 && matchingWords.length >= 1;
+                const hasGoodOverlap = wordOverlapRatio >= 0.4 && matchingWords.length >= 1;
                 
-                const isMatch = isExactMatch || domainMatch || hasGoodOverlap;
+                const isMatch = isExactMatch || domainMatch || firstWordMatch || hasGoodOverlap;
                 
                 if (isMatch) {
-                  const matchType = isExactMatch ? 'exact' : domainMatch ? 'domain' : 'word-overlap';
+                  const matchType = isExactMatch ? 'exact' : domainMatch ? 'domain' : 
+                                  firstWordMatch ? 'first-word' : 'word-overlap';
                   console.log(`    ✅ MATCH FOUND (${matchType}): "${itemTitle}" matches "${searchName}"`);
                   if (matchingWords.length > 0) {
                     console.log(`      Matching words: ${matchingWords.join(', ')} (${Math.round(wordOverlapRatio * 100)}%)`);
                   }
                 } else {
-                  console.log(`    ❌ No match: "${itemTitle}" vs "${searchName}" (${matchingWords.length}/${nameWords.length} words)`);
+                  console.log(`    ❌ No match: "${itemTitle}" vs "${searchName}" (${matchingWords.length}/${nameWords.length} words, ${Math.round(wordOverlapRatio * 100)}%)`);
                 }
                 
                 return isMatch;
