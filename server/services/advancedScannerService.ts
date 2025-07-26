@@ -316,7 +316,7 @@ export class AdvancedScannerService {
               fallbackResults.push({
                 keyword: keyword,
                 position: 0,
-                searchVolume: 1000, // Last resort fallback
+                searchVolume: 0, // Show 0 when volume data fails
                 difficulty: 0,
                 intent: 'local',
                 cpc: 0,
@@ -350,7 +350,7 @@ export class AdvancedScannerService {
             errorFallbackResults.push({
               keyword: keyword,
               position: 0,
-              searchVolume: 1000, // Last resort fallback
+              searchVolume: 0, // Show 0 when API fails
               difficulty: 0,
               intent: 'local',
               cpc: 0,

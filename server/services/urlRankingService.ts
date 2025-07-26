@@ -300,10 +300,7 @@ export class UrlRankingService {
           console.log(`    ⚠️ Could not get volume data for "${keyword}"`);
         }
 
-        // Apply minimum search volume rule
-        if (searchVolume < 500) {
-          searchVolume = 1000;
-        }
+        // Show authentic search volumes without artificial inflation
 
         // Add to results (show all keywords with their positions)
         results.push({
@@ -397,10 +394,7 @@ export class UrlRankingService {
         const cpc = keywordData.keyword_info?.cpc || 0;
         const competition = keywordData.keyword_info?.competition || 0;
         
-        // Apply minimum search volume rule for low-volume keywords
-        if (searchVolume < 500 && searchVolume > 0) {
-          searchVolume = 1000;
-        }
+        // Show authentic search volumes - no artificial inflation
         
         return { searchVolume, difficulty, cpc, competition };
       }
@@ -409,7 +403,7 @@ export class UrlRankingService {
     }
     
     // Return fallback values
-    return { searchVolume: 1000, difficulty: 0, cpc: 0, competition: 0 };
+    return { searchVolume: 0, difficulty: 0, cpc: 0, competition: 0 };
   }
 
   private getKeywordIntent(keyword: string): string {

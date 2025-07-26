@@ -291,12 +291,12 @@ export class LocalSEOAnalyzer {
       const data = await response.json();
       const volume = data.tasks?.[0]?.result?.[0]?.search_volume || 0;
       
-      // Apply minimum threshold for low-volume local keywords
-      return volume < 500 && volume > 0 ? 1000 : volume;
+      // Show authentic search volumes without artificial inflation
+      return volume;
       
     } catch (error) {
       console.error('Error getting search volume:', error);
-      return 1000; // Default fallback
+      return 0; // Show 0 when API unavailable
     }
   }
   

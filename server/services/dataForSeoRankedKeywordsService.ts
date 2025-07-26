@@ -119,7 +119,7 @@ export class DataForSeoRankedKeywordsService {
               return {
                 keyword,
                 position,
-                searchVolume: 1000, // Use 1k as minimum placeholder
+                searchVolume: 0, // Show authentic 0 when data unavailable
                 difficulty: 0,
                 intent: 'local',
                 cpc: 0,
@@ -151,7 +151,7 @@ export class DataForSeoRankedKeywordsService {
       return targetedKeywords.map(keyword => ({
         keyword: keyword,
         position: 0,
-        searchVolume: 1000, // Use 1k as minimum placeholder
+        searchVolume: 0, // Show authentic 0 when data unavailable
         difficulty: 0,
         intent: 'local',
         cpc: 0,
@@ -209,7 +209,7 @@ export class DataForSeoRankedKeywordsService {
           
           return {
             ...keyword,
-            searchVolume: searchVolume < 500 ? 1000 : searchVolume, // Use 1k minimum for keywords under 500
+            searchVolume: searchVolume, // Show authentic search volumes
             difficulty: volumeData?.keyword_difficulty || 0,
             cpc: volumeData?.cpc || 0,
             competition: volumeData?.competition || 0
