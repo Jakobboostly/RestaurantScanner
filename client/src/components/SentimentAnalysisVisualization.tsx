@@ -137,7 +137,7 @@ export function SentimentAnalysisVisualization({ moodAnalysis, scanResult }: Sen
                         transition={{ duration: 1, delay: 0.5 }}
                       />
                     </div>
-                    <span className="text-sm font-medium text-gray-600 w-8">{sentiment.value}%</span>
+                    <span className="text-sm font-medium text-gray-600 w-8">%{sentiment.value}</span>
                   </div>
                 </motion.div>
               ))}
