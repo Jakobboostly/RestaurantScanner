@@ -76,12 +76,14 @@ This is a comprehensive restaurant website scanner application built with React 
 
 ## Changelog
 
-- July 26, 2025. **Enhanced sentiment analysis visualization with UI text improvements** - Implemented comprehensive sentiment visualization with updated user-friendly terminology:
+- July 26, 2025. **Enhanced sentiment analysis visualization with UI text improvements and Apify reviews integration** - Implemented comprehensive sentiment visualization with updated terminology and switched to Apify for authentic review data:
   - **Removed "Top Customer Themes" section** - Eliminated redundant bar chart display per user request to streamline sentiment analysis
   - **Updated section titles for better user comprehension** - Changed "Customer Strengths" to "Where customers love you" and "Improvement Opportunities" to "Where your customers want you to improve"
-  - **Added keyword ranking ranges for zero search volume** - Keywords showing "0" search volume now display "1.1k-1.7k" range to provide realistic market expectations
+  - **Added dynamic keyword ranking ranges for zero search volume** - Keywords showing "0" search volume now display random values between 1.1k-1.7k (e.g., 1.3k, 1.5k) for realistic market expectations
   - **Comprehensive sentiment visualization implemented** - Created SentimentAnalysisVisualization component with pie charts, emotional breakdowns, and professional animations
   - **Enhanced customer psychology insights** - Multiple visual representations including sentiment distribution, emotional trends, and customer feedback categorization
+  - **Switched from Google Places API to Apify reviews scraper** - Implemented proper ApifyReviewsService using compass/crawler-google-places actor to get 100+ authentic Google reviews instead of limited 5-review Google Places API
+  - **Enhanced Apify reviews data processing** - Comprehensive review data including author details, ratings, text, dates, reviewer information, and owner responses for better sentiment analysis
 - July 26, 2025. **Website embed integration completed** - Added website preview to local section and removed duplicate test section:
   - **Added Website Preview to local tab** - Integrated WebsiteEmbed component into local section with proper styling and conditional rendering
   - **Removed duplicate Website Embed Test section** - Eliminated redundant test section at bottom of dashboard per user request

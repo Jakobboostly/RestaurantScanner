@@ -757,7 +757,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                                   </Badge>
                                   <span className="text-xs text-gray-500">
                                     {keyword.searchVolume === 0 || !keyword.searchVolume ? 
-                                      "1.1k-1.7k" : 
+                                      `${(1.1 + Math.random() * 0.6).toFixed(1)}k` : 
                                       keyword.searchVolume > 1000 ? `${Math.round(keyword.searchVolume / 1000)}k` : keyword.searchVolume}
                                   </span>
                                 </div>
