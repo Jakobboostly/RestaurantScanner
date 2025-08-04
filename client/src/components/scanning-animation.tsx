@@ -220,9 +220,9 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
           backgroundSize: '40px 40px'
         }} />
       </div>
-      {/* Subtle Floating Particles */}
-      <div className="absolute inset-0 overflow-hidden">
-        {particles.map((particle) => (
+      {/* Subtle Floating Particles - Reduced on Mobile */}
+      <div className="absolute inset-0 overflow-hidden hidden md:block">
+        {particles.slice(0, 8).map((particle) => (
           <motion.div
             key={particle.id}
             className="absolute rounded-full"
@@ -248,9 +248,9 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
           />
         ))}
       </div>
-      {/* Data Stream Effects */}
-      <div className="absolute inset-0 overflow-hidden">
-        {dataStreams.map((stream) => (
+      {/* Data Stream Effects - Hidden on Mobile */}
+      <div className="absolute inset-0 overflow-hidden hidden md:block">
+        {dataStreams.slice(0, 4).map((stream) => (
           <motion.div
             key={stream.id}
             className="absolute h-0.5 w-20 bg-gradient-to-r from-transparent via-cyan-400 to-transparent"
@@ -271,9 +271,9 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
           />
         ))}
       </div>
-      {/* Holographic Scanning Beams */}
-      <div className="absolute inset-0 overflow-hidden">
-        {scanBeams.map((beam) => (
+      {/* Holographic Scanning Beams - Simplified on Mobile */}
+      <div className="absolute inset-0 overflow-hidden hidden md:block">
+        {scanBeams.slice(0, 2).map((beam) => (
           <motion.div
             key={beam.id}
             className="absolute inset-0 bg-gradient-to-r from-transparent via-purple-500/20 to-transparent"
@@ -293,10 +293,10 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
           />
         ))}
       </div>
-      {/* Pulsing Radar Effect - Smaller on Mobile */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+      {/* Pulsing Radar Effect - Hidden on Mobile for Performance */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none hidden md:block">
         <motion.div
-          className="w-48 h-48 md:w-96 md:h-96 border border-purple-500/30 rounded-full"
+          className="w-96 h-96 border border-purple-500/30 rounded-full"
           animate={{
             scale: [1, 1.5, 1],
             opacity: [0.3, 0.1, 0.3],
@@ -308,7 +308,7 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
           }}
         />
         <motion.div
-          className="absolute w-32 h-32 md:w-64 md:h-64 border border-cyan-500/40 rounded-full"
+          className="absolute w-64 h-64 border border-cyan-500/40 rounded-full"
           animate={{
             scale: [1.2, 1.8, 1.2],
             opacity: [0.4, 0.1, 0.4],
@@ -331,24 +331,24 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
 
             <CardContent className="p-4 md:p-8 relative z-10">
               <div className="text-center mb-4 md:mb-8">
-                {/* Professional Scanner */}
+                {/* Professional Scanner - Simplified on Mobile */}
                 <motion.div
                   className="relative inline-block mb-6"
                   animate={{ 
-                    scale: [1, 1.05, 1],
+                    scale: [1, 1.02, 1],
                   }}
                   transition={{ 
-                    scale: { duration: 2, repeat: Infinity, ease: "easeInOut" }
+                    scale: { duration: 3, repeat: Infinity, ease: "easeInOut" }
                   }}
                 >
                   {/* Outer ring */}
-                  <div className="w-16 h-16 border-4 border-[#5F5FFF]/30 rounded-full relative">
+                  <div className="w-12 h-12 md:w-16 md:h-16 border-4 border-[#5F5FFF]/30 rounded-full relative">
                     <div className="absolute inset-0 rounded-full border-4 border-transparent border-t-[#5F5FFF] animate-spin"></div>
                   </div>
                   
-                  {/* Inner ring */}
+                  {/* Inner ring - Hidden on Mobile */}
                   <motion.div
-                    className="absolute inset-2 w-12 h-12 border-2 border-[#9090FD]/60 rounded-full"
+                    className="hidden md:block absolute inset-2 w-8 h-8 md:w-12 md:h-12 border-2 border-[#9090FD]/60 rounded-full"
                     animate={{ rotate: -360 }}
                     transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
                   >
@@ -356,7 +356,7 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
                   </motion.div>
 
                   {/* Center core */}
-                  <div className="absolute inset-4 w-8 h-8 bg-gradient-to-r from-[#5F5FFF] to-[#9090FD] rounded-full animate-pulse" />
+                  <div className="absolute inset-2 md:inset-4 w-8 h-8 md:w-8 md:h-8 bg-gradient-to-r from-[#5F5FFF] to-[#9090FD] rounded-full animate-pulse" />
                 </motion.div>
                 
                 <motion.h2 
@@ -435,7 +435,7 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: index * 0.1 }}
-                        className={`relative overflow-hidden flex items-center space-x-4 p-4 rounded-xl transition-all duration-500 ${
+                        className={`relative overflow-hidden flex items-center space-x-3 md:space-x-4 p-3 md:p-4 rounded-xl transition-all duration-500 ${
                           isComplete
                             ? "bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200"
                             : isActive
@@ -459,7 +459,7 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
                         )}
 
                         <motion.div
-                          className={`relative w-12 h-12 rounded-lg flex items-center justify-center transition-all duration-300 ${
+                          className={`relative w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center transition-all duration-300 ${
                             isComplete
                               ? "bg-gradient-to-br from-green-500 to-emerald-600"
                               : isActive
@@ -467,11 +467,11 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
                               : "bg-gray-300"
                           }`}
                           animate={isActive && !isComplete ? {
-                            scale: [1, 1.05, 1],
+                            scale: [1, 1.02, 1],
                           } : {}}
-                          transition={{ duration: 2, repeat: Infinity }}
+                          transition={{ duration: 3, repeat: Infinity }}
                         >
-                          <Icon className="w-6 h-6 text-white" />
+                          <Icon className="w-5 h-5 md:w-6 md:h-6 text-white" />
                         </motion.div>
 
                         <div className="flex-1 relative z-10">
