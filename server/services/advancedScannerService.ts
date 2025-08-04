@@ -632,7 +632,8 @@ export class AdvancedScannerService {
         profileAnalysis,
         serpScreenshots,
         null, // Remove restaurant search screenshot for now
-        processedCompetitiveKeywords
+        processedCompetitiveKeywords,
+        businessPhotos
       );
 
       const scanDuration = Date.now() - scanStartTime;
@@ -668,7 +669,8 @@ export class AdvancedScannerService {
     profileAnalysis: any = null,
     serpScreenshots: any[] = [],
     restaurantSearchScreenshot: any = null,
-    processedCompetitiveKeywords: any[] = []
+    processedCompetitiveKeywords: any[] = [],
+    businessPhotos: string[] = []
   ): EnhancedScanResult {
     // Map processedKeywords to keywordData for compatibility with existing methods
     const keywordData = processedKeywords;
@@ -839,7 +841,7 @@ export class AdvancedScannerService {
       organicTraffic: 0,
       scanDate: new Date().toISOString(),
       businessProfile,
-      businessPhotos: businessProfile?.photos || [],
+      businessPhotos: businessPhotos || [],
       mobileExperience: {
         score: mobileExperience?.score || performanceMetrics?.performance || 0,
         loadTime: mobileExperience?.loadTime || 0,

@@ -469,11 +469,10 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
           <p className="text-lg text-gray-600">Professional Marketing Intelligence Dashboard</p>
           
           {/* Restaurant Images */}
-          {scanResult.businessProfile?.photos?.businessPhotos && 
-           scanResult.businessProfile.photos.businessPhotos.length > 0 && (
+          {((scanResult.businessPhotos && scanResult.businessPhotos.length > 0) || (scanResult.businessProfile?.photos?.businessPhotos && scanResult.businessProfile.photos.businessPhotos.length > 0)) && (
             <div className="mt-6">
               <div className="flex justify-center gap-3 overflow-x-auto pb-2">
-                {scanResult.businessProfile.photos.businessPhotos.slice(0, 6).map((photoUrl, index) => (
+                {(scanResult.businessPhotos || scanResult.businessProfile?.photos?.businessPhotos || []).slice(0, 6).map((photoUrl, index) => (
                   <img
                     key={index}
                     src={photoUrl}
@@ -486,7 +485,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                 ))}
               </div>
               <p className="text-sm text-gray-500 mt-3 text-center">
-                {scanResult.businessProfile.photos.total} Google Photos • {scanResult.businessProfile.photos.quality} quality
+                {(scanResult.businessPhotos?.length || scanResult.businessProfile?.photos?.total || 0)} Google Photos • {scanResult.businessProfile?.photos?.quality || 'Standard'} quality
               </p>
             </div>
           )}
@@ -971,15 +970,14 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                   </div>
                   
                   {/* Business Photo Gallery */}
-                  {scanResult.businessProfile?.photos?.businessPhotos && 
-                   scanResult.businessProfile.photos.businessPhotos.length > 0 && (
+                  {((scanResult.businessPhotos && scanResult.businessPhotos.length > 0) || (scanResult.businessProfile?.photos?.businessPhotos && scanResult.businessProfile.photos.businessPhotos.length > 0)) && (
                     <div className="bg-[#5F5FFF]/5 border border-[#5F5FFF]/20 rounded-lg p-4">
                       <h3 className="font-bold text-[#5F5FFF] mb-3 flex items-center gap-2">
                         <Eye className="w-5 h-5" />
                         Content Library from Google Business
                       </h3>
                       <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-3">
-                        {scanResult.businessProfile.photos.businessPhotos.map((photoUrl, index) => (
+                        {(scanResult.businessPhotos || scanResult.businessProfile?.photos?.businessPhotos || []).map((photoUrl, index) => (
                           <div key={index} className="relative group">
                             <img
                               src={photoUrl}
@@ -1000,7 +998,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                       </div>
                       <div className="flex justify-between items-center mt-3">
                         <p className="text-sm text-gray-600">
-                          Showing {scanResult.businessProfile.photos.businessPhotos.length} of {scanResult.businessProfile.photos.total} total photos
+                          Showing {(scanResult.businessPhotos?.length || scanResult.businessProfile?.photos?.businessPhotos?.length || 0)} of {(scanResult.businessPhotos?.length || scanResult.businessProfile?.photos?.total || 0)} total photos
                         </p>
                         <p className="text-sm text-[#5F5FFF] font-medium">
                           Perfect for social media content
