@@ -705,7 +705,7 @@ export class AdvancedScannerService {
     const aiRecommendations = await this.aiRecommendationService.generateRecommendations({
       name: restaurantName,
       rating: businessProfile?.rating || 4.0,
-      totalReviews: businessProfile?.totalReviews || 0,
+      totalReviews: businessProfile?.reviewCount || businessProfile?.totalReviews || 0,
       domain,
       performanceScore,
       seoScore: enhancedSeoScore,
@@ -1303,9 +1303,10 @@ export class AdvancedScannerService {
       score += (businessProfile.rating / 5) * 40;
     }
     
-    if (businessProfile.totalReviews >= 100) score += 30;
-    else if (businessProfile.totalReviews >= 50) score += 20;
-    else if (businessProfile.totalReviews >= 20) score += 10;
+    const reviewCount = businessProfile.reviewCount || businessProfile.totalReviews || 0;
+    if (reviewCount >= 100) score += 30;
+    else if (reviewCount >= 50) score += 20;
+    else if (reviewCount >= 20) score += 10;
     
     return Math.round(score);
   }
@@ -1546,7 +1547,7 @@ export class AdvancedScannerService {
       
       return {
         overallScore: Math.min(businessProfile?.rating * 20 || 75, 100),
-        totalReviews: businessProfile?.totalReviews || googleReviews.reviews.length,
+        totalReviews: businessProfile?.reviewCount || businessProfile?.totalReviews || googleReviews.reviews.length,
         averageRating: businessProfile?.rating || googleReviews.averageRating,
         sentimentBreakdown: sentimentAnalysis.sentimentBreakdown,
         reviewSources: ['Google Business Profile (Limited)'],
@@ -1556,7 +1557,7 @@ export class AdvancedScannerService {
         customerMoodAnalysis,
         trends: {
           ratingTrend: businessProfile?.rating >= 4.0 ? 'positive' : 'stable',
-          volumeTrend: businessProfile?.totalReviews > 50 ? 'increasing' : 'stable',
+          volumeTrend: (businessProfile?.reviewCount || businessProfile?.totalReviews || 0) > 50 ? 'increasing' : 'stable',
           responseRate: businessProfile?.responseRate || this.calculateResponseRate(businessProfile),
           averageResponseTime: businessProfile?.averageResponseTime || this.calculateAverageResponseTime(businessProfile)
         },
@@ -1571,12 +1572,12 @@ export class AdvancedScannerService {
     
     return {
       overallScore: this.calculateOverallReviewScore(businessProfile),
-      totalReviews: businessProfile?.totalReviews || 0,
+      totalReviews: businessProfile?.reviewCount || businessProfile?.totalReviews || 0,
       averageRating: businessProfile?.rating || 0,
       sentimentBreakdown: this.calculateSentimentFromRating(businessProfile?.rating || 0),
       reviewSources: [{
         platform: 'Google',
-        count: businessProfile?.totalReviews || 0,
+        count: businessProfile?.reviewCount || businessProfile?.totalReviews || 0,
         averageRating: businessProfile?.rating || 0
       }],
       keyThemes: this.extractThemesFromBusinessProfile(businessProfile),
@@ -1605,7 +1606,7 @@ export class AdvancedScannerService {
     
     // Add score based on review volume using new ranges:
     // 0-250: okay (+5), 250-500: good (+10), 501-750: great (+15), 750+: excellent (+25)
-    const reviewCount = businessProfile.totalReviews || 0;
+    const reviewCount = businessProfile.reviewCount || businessProfile.totalReviews || 0;
     if (reviewCount >= 750) score += 25; // excellent
     else if (reviewCount >= 501) score += 15; // great  
     else if (reviewCount >= 250) score += 10; // good
@@ -2444,7 +2445,8 @@ export class AdvancedScannerService {
     }
 
     // Check review volume
-    if (profile.totalReviews < 50) {
+    const reviewCount = profile.reviewCount || profile.totalReviews || 0;
+    if (reviewCount < 50) {
       issues.push('Low number of reviews');
       score -= 15;
     }

@@ -1253,7 +1253,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-gray-600">Total Reviews</span>
-                      <span className="font-medium">{scanResult.businessProfile?.totalReviews || 0}</span>
+                      <span className="font-medium">{scanResult.businessProfile?.reviewCount || scanResult.businessProfile?.totalReviews || 0}</span>
                     </div>
                     <div className="flex justify-between items-center">
                       <div className="flex items-center gap-2">
