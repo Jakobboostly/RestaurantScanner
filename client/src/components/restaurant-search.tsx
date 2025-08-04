@@ -61,12 +61,12 @@ export default function RestaurantSearch({ onRestaurantSelect }: RestaurantSearc
         animate={{ opacity: 1, y: 0 }}
         className="relative mb-8"
       >
-        <div className="bg-gradient-to-br from-[#28008F] via-[#4a1fb8] to-[#6b46c1] rounded-2xl p-8 shadow-2xl">
-          <div className="text-center mb-6">
-            <h2 className="text-3xl font-bold text-white mb-2">
+        <div className="bg-gradient-to-br from-[#28008F] via-[#4a1fb8] to-[#6b46c1] rounded-2xl p-4 md:p-8 shadow-2xl">
+          <div className="text-center mb-4 md:mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
               Find Your Restaurant
             </h2>
-            <p className="text-purple-200 text-lg">
+            <p className="text-purple-200 text-base md:text-lg">
               Get instant website analysis and competitor insights
             </p>
           </div>
@@ -135,8 +135,59 @@ export default function RestaurantSearch({ onRestaurantSelect }: RestaurantSearc
                   onMouseLeave={() => setHoveredRestaurant(null)}
                   onClick={() => onRestaurantSelect(restaurant)}
                 >
-                  <div className="p-6">
-                    <div className="flex items-center justify-between">
+                  <div className="p-3 md:p-6">
+                    {/* Mobile Layout */}
+                    <div className="block md:hidden space-y-3">
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center space-x-3">
+                          <div className="relative">
+                            <img
+                              src={`https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=60&h=60&q=80`}
+                              alt={`${restaurant.name} restaurant`}
+                              className="w-12 h-12 rounded-lg object-cover shadow-md"
+                            />
+                            <div className="absolute -top-1 -right-1 w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
+                              <Utensils className="h-2.5 w-2.5 text-white" />
+                            </div>
+                          </div>
+                          
+                          <div className="flex-1 min-w-0">
+                            <h3 className="text-lg font-semibold text-gray-900 group-hover:text-[#28008F] transition-colors truncate">
+                              {restaurant.name}
+                            </h3>
+                            <div className="flex items-center space-x-2 mt-1">
+                              {restaurant.rating && (
+                                <div className="flex items-center">
+                                  <Star className="h-3 w-3 fill-current text-yellow-400 mr-1" />
+                                  <span className={`text-sm font-semibold ${getScoreColor(restaurant.rating)}`}>
+                                    {restaurant.rating}
+                                  </span>
+                                </div>
+                              )}
+                              <Badge className={`px-2 py-0.5 text-xs font-medium ${priceLevel.color}`}>
+                                {priceLevel.text}
+                              </Badge>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <Button
+                          className="bg-gradient-to-r from-[#28008F] to-[#4a1fb8] hover:from-[#1f0068] hover:to-[#28008F] text-white shadow-lg hover:shadow-xl transition-all duration-300 px-4 py-2 text-sm"
+                          size="sm"
+                        >
+                          <Zap className="h-3 w-3 mr-1" />
+                          Scan
+                        </Button>
+                      </div>
+                      
+                      <p className="text-gray-600 text-sm flex items-center truncate">
+                        <MapPin className="h-3 w-3 mr-1 text-gray-400 flex-shrink-0" />
+                        {restaurant.address}
+                      </p>
+                    </div>
+
+                    {/* Desktop Layout */}
+                    <div className="hidden md:flex items-center justify-between">
                       <div className="flex items-center space-x-4">
                         <div className="relative">
                           <img

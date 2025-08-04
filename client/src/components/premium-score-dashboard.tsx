@@ -520,7 +520,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
           className="space-y-6"
         >
           {/* Tab Headers */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-4">
             {[
               { key: 'search', title: 'Search', icon: Search, color: 'from-[#5F5FFF] to-[#7375FD]', score: scores.search },
               { key: 'social', title: 'Social', icon: Users, color: 'from-[#16A34A] to-[#4ADE80]', score: scores.social },
@@ -543,26 +543,26 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                     ? 'bg-gradient-to-br from-[#5F5FFF] to-[#7375FD] text-white' 
                     : 'bg-white hover:shadow-2xl'
                 } transition-all duration-300`}>
-                  <CardContent className="p-4">
+                  <CardContent className="p-2 md:p-4">
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2">
-                        <div className={`p-2 rounded-lg ${
+                      <div className="flex items-center gap-1 md:gap-2">
+                        <div className={`p-1.5 md:p-2 rounded-lg ${
                           activeTab === tab.key 
                             ? 'bg-white/20' 
                             : `bg-gradient-to-br ${tab.color}`
                         }`}>
-                          <tab.icon className={`w-5 h-5 ${
+                          <tab.icon className={`w-4 h-4 md:w-5 md:h-5 ${
                             activeTab === tab.key ? 'text-white' : 'text-white'
                           }`} />
                         </div>
-                        <h3 className={`font-bold text-lg ${
+                        <h3 className={`font-bold text-sm md:text-lg ${
                           activeTab === tab.key ? 'text-white' : 'text-gray-800'
                         }`}>
                           {tab.title}
                         </h3>
                       </div>
                       <div className="text-right">
-                        <span className={`text-2xl font-bold ${
+                        <span className={`text-lg md:text-2xl font-bold ${
                           activeTab === tab.key 
                             ? 'text-white' 
                             : tab.score >= averageScore ? 'text-green-600' : 'text-orange-600'
@@ -627,7 +627,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
             <CardContent className="space-y-4 pt-6">
               {/* Search Tab Content */}
               {activeTab === 'search' && (
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 gap-4 md:gap-6">
                   {/* Left Side - Dropdown Summary */}
                   <div className="space-y-6">
                     {/* Missing Ingredients */}
@@ -978,7 +978,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                         <Eye className="w-5 h-5" />
                         Content Library from Google Business
                       </h3>
-                      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+                      <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-3">
                         {scanResult.businessProfile.photos.businessPhotos.map((photoUrl, index) => (
                           <div key={index} className="relative group">
                             <img

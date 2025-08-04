@@ -92,9 +92,9 @@ export function SentimentAnalysisVisualization({ moodAnalysis, scanResult }: Sen
             <span className="text-xs text-gray-500 ml-2">(% of {totalReviews} reviews)</span>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 gap-4 md:gap-6">
             {/* Pie Chart */}
-            <div className="h-64">
+            <div className="h-48 md:h-64">
               <ResponsiveContainer width="100%" height="100%">
                 <RechartsPieChart>
                   <Pie
@@ -150,7 +150,7 @@ export function SentimentAnalysisVisualization({ moodAnalysis, scanResult }: Sen
 
       {/* Business Insights Grid */}
       <motion.div 
-        className="grid grid-cols-1 md:grid-cols-2 gap-4"
+        className="grid grid-cols-1 gap-4"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
