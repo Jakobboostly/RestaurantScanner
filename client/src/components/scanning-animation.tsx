@@ -209,7 +209,7 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
   }, []);
 
   return (
-    <div className="py-16 bg-gradient-to-br from-[#F6F3FE] via-purple-100 to-[#E8E2FF] min-h-screen relative overflow-hidden">
+    <div className="py-4 md:py-16 bg-gradient-to-br from-[#F6F3FE] via-purple-100 to-[#E8E2FF] min-h-screen relative overflow-hidden">
       {/* Subtle Grid Background */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -293,10 +293,10 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
           />
         ))}
       </div>
-      {/* Pulsing Radar Effect */}
+      {/* Pulsing Radar Effect - Smaller on Mobile */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <motion.div
-          className="w-96 h-96 border border-purple-500/30 rounded-full"
+          className="w-48 h-48 md:w-96 md:h-96 border border-purple-500/30 rounded-full"
           animate={{
             scale: [1, 1.5, 1],
             opacity: [0.3, 0.1, 0.3],
@@ -308,7 +308,7 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
           }}
         />
         <motion.div
-          className="absolute w-64 h-64 border border-cyan-500/40 rounded-full"
+          className="absolute w-32 h-32 md:w-64 md:h-64 border border-cyan-500/40 rounded-full"
           animate={{
             scale: [1.2, 1.8, 1.2],
             opacity: [0.4, 0.1, 0.4],
@@ -321,7 +321,7 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
           }}
         />
       </div>
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-4xl mx-auto px-2 md:px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -329,8 +329,8 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
         >
           <Card className="backdrop-blur-sm bg-white/90 shadow-xl border border-[#5F5FFF]/20 relative overflow-hidden">
 
-            <CardContent className="p-8 relative z-10">
-              <div className="text-center mb-8">
+            <CardContent className="p-4 md:p-8 relative z-10">
+              <div className="text-center mb-4 md:mb-8">
                 {/* Professional Scanner */}
                 <motion.div
                   className="relative inline-block mb-6"
@@ -360,7 +360,7 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
                 </motion.div>
                 
                 <motion.h2 
-                  className="text-3xl font-bold text-gray-800 mb-4"
+                  className="text-xl md:text-3xl font-bold text-gray-800 mb-2 md:mb-4"
                   animate={{ 
                     opacity: [0.8, 1, 0.8],
                   }}
@@ -370,7 +370,7 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
                 </motion.h2>
                 
                 <motion.p 
-                  className="text-[#5F5FFF] text-lg font-medium"
+                  className="text-[#5F5FFF] text-sm md:text-lg font-medium"
                   key={status}
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -380,7 +380,7 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
                 </motion.p>
               </div>
 
-              <div className="space-y-8">
+              <div className="space-y-4 md:space-y-8">
                 {/* Professional Progress Bar */}
                 <div className="space-y-4">
                   <div className="flex justify-between text-sm">
@@ -557,9 +557,9 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
             </CardContent>
           </Card>
           
-          {/* Professional Data Visualization Panels */}
+          {/* Professional Data Visualization Panels - Hidden on Mobile */}
           <motion.div
-            className="mt-8 grid grid-cols-3 gap-4"
+            className="mt-4 md:mt-8 hidden md:grid grid-cols-3 gap-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
@@ -647,7 +647,7 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
           </motion.div>
         </motion.div>
 
-        {/* Review Streaming Display - Left Side */}
+        {/* Review Streaming Display - Left Side - Hidden on Mobile */}
         <AnimatePresence>
           {currentReview && (
             <>
@@ -655,7 +655,7 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
                 initial={{ opacity: 0, x: -100 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -100 }}
-                className="fixed left-6 top-1/3 transform -translate-y-1/2 z-50"
+                className="hidden lg:block fixed left-6 top-1/3 transform -translate-y-1/2 z-50"
               >
                 <Card className="w-80 bg-white/95 backdrop-blur-sm border-l-4 border-l-[#5F5FFF] shadow-lg">
                   <CardContent className="p-4">
@@ -699,12 +699,12 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
                 </Card>
               </motion.div>
 
-              {/* Review Streaming Display - Right Side */}
+              {/* Review Streaming Display - Right Side - Hidden on Mobile */}
               <motion.div
                 initial={{ opacity: 0, x: 100 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 100 }}
-                className="fixed right-6 top-2/3 transform -translate-y-1/2 z-50"
+                className="hidden lg:block fixed right-6 top-2/3 transform -translate-y-1/2 z-50"
                 transition={{ delay: 0.5 }}
               >
                 <Card className="w-80 bg-white/95 backdrop-blur-sm border-r-4 border-r-[#28008F] shadow-xl">
@@ -752,7 +752,7 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
           )}
         </AnimatePresence>
 
-        {/* Fun Facts Display */}
+        {/* Fun Facts Display - Hidden on Mobile */}
         <AnimatePresence mode="wait">
           {funFacts.length > 0 && progress > 0 && progress <= 100 && (
             <motion.div
@@ -784,7 +784,7 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
                 damping: 30,
                 duration: 0.8
               }}
-              className={`fixed z-50 ${
+              className={`hidden lg:block fixed z-50 ${
                 factPosition.side === 'left' ? 'left-6' : 'right-6'
               }`}
               style={{ top: factPosition.top, transform: 'translateY(-50%)' }}
@@ -930,7 +930,7 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
           )}
         </AnimatePresence>
 
-        {/* Business Photos Display - Opposite Side of Fun Facts */}
+        {/* Business Photos Display - Opposite Side of Fun Facts - Hidden on Mobile */}
         <AnimatePresence mode="wait">
           {businessPhotos && businessPhotos.length > 0 && showPhoto && progress > 0 && progress <= 100 && (
             <motion.div
@@ -962,7 +962,7 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
                 damping: 30,
                 duration: 0.8
               }}
-              className={`fixed z-50 ${
+              className={`hidden lg:block fixed z-50 ${
                 factPosition.side === 'left' ? 'right-6' : 'left-6'
               }`}
               style={{ 
