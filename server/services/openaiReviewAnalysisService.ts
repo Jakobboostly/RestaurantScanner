@@ -156,7 +156,8 @@ export class OpenAIReviewAnalysisService {
 
     // Convert to percentages
     Object.keys(distribution).forEach(key => {
-      distribution[key as keyof typeof distribution] = Math.round((distribution[key as keyof typeof distribution] / total) * 100);
+      const numKey = parseInt(key) as keyof typeof distribution;
+      distribution[numKey] = Math.round((distribution[numKey] / total) * 100);
     });
 
     return distribution;
