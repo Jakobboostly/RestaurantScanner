@@ -1,0 +1,62 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+import time
+from datetime import datetime
+import os
+
+def search_restaurants_and_screenshot():
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+    
+    try:
+        print("Opening Google...")
+        driver.get("https://www.google.com")
+        
+        print("Searching for restaurants...")
+        search_box = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.NAME, "q"))
+        )
+        
+        search_box.send_keys("restaurants near me")
+        search_box.send_keys(Keys.RETURN)
+        
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.ID, "search"))
+        )
+        
+        time.sleep(3)
+        
+        driver.maximize_window()
+        
+        if not os.path.exists("screenshots"):
+            os.makedirs("screenshots")
+            print("Created screenshots directory")
+        
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        filename = f"screenshots/restaurants_near_me_{timestamp}.png"
+        
+        driver.save_screenshot(filename)
+        print(f"Screenshot saved successfully: {filename}")
+        
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight/2);")
+        time.sleep(1)
+        
+        filename_scrolled = f"screenshots/restaurants_near_me_{timestamp}_scrolled.png"
+        driver.save_screenshot(filename_scrolled)
+        print(f"Scrolled screenshot saved: {filename_scrolled}")
+        
+    except Exception as e:
+        print(f"An error occurred: {str(e)}")
+        
+    finally:
+        print("Closing browser...")
+        driver.quit()
+
+if __name__ == "__main__":
+    print("Starting restaurant search script...")
+    search_restaurants_and_screenshot()
+    print("Script completed!")

@@ -1,0 +1,89 @@
+async getTargetedCompetitiveKeywords(
+  domain: string,
+  cuisine: string,
+  city: string,
+  state: string,
+  locationName: string = 'United States',
+  languageCode: string = 'en'
+): Promise<ProcessedKeyword[]> {
+
+  // Step 1: Generate the 8 specific keywords
+  const targetKeywords = [
+    `${cuisine} near me`,
+    `${cuisine} delivery ${city}`,
+    `best ${cuisine} ${city}`,
+    `${city} ${cuisine}`,
+    `${cuisine} places near me`,
+    `${cuisine} ${city} ${state}`,
+    `${cuisine} delivery near me`,
+    `${cuisine} open now`
+  ];
+
+  // Step 2: Get search volume and difficulty for these keywords
+  const keywordData = await this.client.post('/dataforseo_labs/google/keyword_overview/live', [{
+    keywords: targetKeywords,
+    location_name: locationName,
+    language_code: languageCode
+  }]);
+
+  // Step 3: Check rankings for each keyword
+  const results: ProcessedKeyword[] = [];
+  
+  for (let i = 0; i < targetKeywords.length; i++) {
+    const keyword = targetKeywords[i];
+    const volumeData = keywordData.data.tasks[0].result[0].items[i];
+    
+    try {
+      // Check where domain ranks for this specific keyword
+      const serpResponse = await this.client.post('/serp/google/organic/live/advanced', [{
+        keyword: keyword,
+        location_name: locationName,
+        language_code: languageCode,
+        depth: 50
+      }]);
+
+      const serpItems = serpResponse.data.tasks[0].result[0].items || [];
+      let position = 0;
+      
+      // Find domain position
+      for (let j = 0; j < serpItems.length; j++) {
+        const item = serpItems[j];
+        if (item.type === 'organic' && 
+            (item.domain?.includes(domain) || item.url?.includes(domain))) {
+          position = item.rank_absolute || (j + 1);
+          break;
+        }
+      }
+
+      // Only include if ranking in positions 6+ (competitors beating you)
+      if (position > 5) {
+        results.push({
+          keyword: keyword,
+          position: position,
+          searchVolume: volumeData?.keyword_info?.search_volume || 0,
+          difficulty: volumeData?.keyword_info?.keyword_difficulty || 0,
+          cpc: volumeData?.keyword_info?.cpc || 0,
+          competition: volumeData?.keyword_info?.competition || 0,
+          // Calculate opportunity score
+          opportunityScore: this.calculateOpportunityScore(position, volumeData?.keyword_info?.search_volume || 0)
+        });
+      }
+
+    } catch (error) {
+      console.error(`Error checking keyword "${keyword}":`, error);
+    }
+  }
+
+  // Sort by opportunity score (high volume + close to top 5 = best opportunity)
+  return results
+    .sort((a, b) => b.opportunityScore - a.opportunityScore)
+    .slice(0, 8);
+}
+
+private calculateOpportunityScore(position: number, searchVolume: number): number {
+  // Higher score = better opportunity
+  // Closer to position 6 + higher volume = higher score
+  const positionScore = Math.max(0, 20 - position); // Position 6 gets 14 points, position 15 gets 5 points
+  const volumeScore = Math.log10(searchVolume + 1) * 5; // Logarithmic scale for volume
+  return positionScore + volumeScore;
+}

@@ -1,0 +1,126 @@
+# Restaurant Scanner Performance & Accuracy Optimization
+
+## Context
+I have a Restaurant Scanner app built with Node.js/Express backend that analyzes restaurant websites and Google Business profiles. Currently experiencing performance issues and accuracy problems due to over-reliance on Puppeteer for content scraping. Need to optimize for better reliability and scale.
+
+## Current Tech Stack
+- **Backend**: Node.js/Express with PostgreSQL + Drizzle ORM
+- **Frontend**: React 18 + TypeScript + Tailwind CSS + shadcn/ui
+- **Current Tools**: Google Places API, Puppeteer + Chromium, custom analysis algorithms
+
+## Required Optimizations
+
+### 1. Replace Puppeteer-based Content Analysis
+**Problem**: Puppeteer is slow and unreliable for content scraping
+**Solution**: Implement Cheerio + Axios for faster, more reliable content extraction
+
+**Requirements**:
+- Replace Puppeteer content scraping with Cheerio + Axios
+- Extract: title tags, meta descriptions, H1 tags, internal/external links, schema markup
+- Add proper error handling and timeouts
+- Maintain same data structure as current implementation
+
+### 2. Implement Queue System for Reliability
+**Problem**: Sequential processing causes failures and poor UX
+**Solution**: Bull Queue with Redis for job management
+
+**Requirements**:
+- Install and configure Bull Queue with Redis
+- Convert restaurant scanning to queued jobs
+- Implement job status tracking and progress updates
+- Add retry logic for failed jobs
+- Create endpoints for job status checking
+
+### 3. Add Specialized Performance APIs
+**Problem**: Custom performance calculations are inaccurate
+**Solution**: Use Google PageSpeed Insights API for real performance data
+
+**Requirements**:
+- Integrate Google PageSpeed Insights API
+- Replace custom performance scoring with real metrics
+- Add mobile-specific performance analysis
+- Cache API responses to avoid rate limits
+
+### 4. Optimize Puppeteer Usage
+**Problem**: Creating new browser instances for each screenshot
+**Solution**: Browser instance pooling and page reuse
+
+**Requirements**:
+- Create ScreenshotService class with browser pooling
+- Implement page reuse pattern
+- Keep Puppeteer only for mobile screenshots
+- Add proper error handling and cleanup
+
+### 5. Implement Caching Strategy
+**Problem**: Redundant API calls slowing down analysis
+**Solution**: Redis/Node-cache for API response caching
+
+**Requirements**:
+- Add node-cache for API response caching
+- Cache Google Places API responses (1 hour TTL)
+- Cache PageSpeed Insights results (6 hours TTL)
+- Implement cache invalidation strategy
+
+### 6. Add Rate Limiting & Concurrency Control
+**Problem**: API rate limits and resource exhaustion
+**Solution**: p-limit for concurrency control and proper retry logic
+
+**Requirements**:
+- Install p-limit for concurrency control
+- Implement retry logic with exponential backoff
+- Add rate limiting for external API calls
+- Monitor and log API usage
+
+## Implementation Specifications
+
+### New Dependencies to Add
+```json
+{
+  "bull": "^4.10.4",
+  "redis": "^4.6.5",
+  "cheerio": "^1.0.0-rc.12",
+  "axios": "^1.4.0",
+  "node-cache": "^5.1.2",
+  "p-limit": "^3.1.0"
+}
+```
+
+### Expected Performance Improvements
+- **90% faster content analysis** (Cheerio vs Puppeteer)
+- **Reliable job processing** with queue system
+- **Better error handling** and automatic retries
+- **Scalable architecture** for high-volume processing
+- **Real performance metrics** from Google APIs
+
+### API Integration Requirements
+- **Google PageSpeed Insights API v5** for performance metrics
+- Maintain existing **Google Places API** integration
+- Add proper **API key management** and rate limiting
+- Implement **caching strategy** for all external APIs
+
+## Deliverables Needed
+
+1. **Refactored content analysis service** using Cheerio + Axios
+2. **Queue system implementation** with Bull + Redis
+3. **Performance API integration** with Google PageSpeed Insights
+4. **Optimized screenshot service** with Puppeteer pooling
+5. **Caching layer** with node-cache
+6. **Rate limiting and retry logic** throughout the application
+7. **Updated API endpoints** for job management
+8. **Error handling improvements** across all services
+
+## Success Criteria
+- Content analysis completes in under 5 seconds (currently 10-30 seconds)
+- 99% reliability for restaurant scans (currently ~70%)
+- Proper job queuing with real-time status updates
+- Scalable to handle 100+ concurrent scans
+- Accurate performance metrics from Google APIs
+
+## Current File Structure Context
+The app currently has services for:
+- `RestaurantService` - Google Places API integration
+- `GoogleBusinessService` - Business profile analysis
+- `MobileExperienceService` - Puppeteer-based analysis
+- `FocusedScannerService` - Main scanning logic
+
+Please refactor these services according to the optimization requirements above, maintaining the same external API interface but improving internal performance and reliability.

@@ -1,0 +1,199 @@
+async getUrlRankingsForKeywords(
+  targetUrl: string,
+  cuisine: string,
+  city: string,
+  state: string,
+  locationName: string = 'United States',
+  languageCode: string = 'en'
+): Promise<ProcessedKeyword[]> {
+
+  // Generate the 8 keyword patterns
+  const keywordPatterns = [
+    `${cuisine} near me`,
+    `${cuisine} delivery ${city}`,
+    `best ${cuisine} ${city}`,
+    `${city} ${cuisine}`,
+    `${cuisine} places near me`,
+    `${cuisine} ${city} ${state}`,
+    `${cuisine} delivery near me`,
+    `${cuisine} open now`
+  ];
+
+  const results: ProcessedKeyword[] = [];
+  const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
+  
+  // Extract domain for matching
+  const targetDomain = this.extractDomain(targetUrl);
+  
+  console.log(`🔍 Checking where ${targetUrl} ranks for 8 local keywords...`);
+
+  for (const keyword of keywordPatterns) {
+    try {
+      console.log(`  📊 Checking: "${keyword}"`);
+      
+      await delay(1000); // Rate limiting
+      
+      // Use regular SERP API to see where the URL ranks
+      const response = await this.client.post('/serp/google/organic/live/advanced', [{
+        keyword: keyword,
+        location_name: locationName,
+        language_code: languageCode,
+        depth: 50, // Check top 50 positions
+        max_crawl_pages: 1
+      }]);
+
+      const result = response.data.tasks?.[0]?.result?.[0];
+      const items = result?.items || [];
+      
+      // Find where YOUR URL ranks
+      let position = 0;
+      let matchedItem = null;
+      
+      for (let i = 0; i < items.length; i++) {
+        const item = items[i];
+        
+        if (item.type === 'organic') {
+          // Check for exact URL match or domain match
+          const itemUrl = item.url || '';
+          const itemDomain = item.domain || '';
+          
+          if (itemUrl === targetUrl || 
+              itemUrl.includes(targetUrl.replace(/^https?:\/\//, '')) ||
+              itemDomain === targetDomain) {
+            
+            position = item.rank_absolute || (i + 1);
+            matchedItem = item;
+            break;
+          }
+        }
+      }
+
+      // Only include if ranking in positions 6+ (where competitors beat you)
+      if (position > 5) {
+        // Get search volume data
+        const volumeResponse = await this.client.post('/dataforseo_labs/google/keyword_overview/live', [{
+          keywords: [keyword],
+          location_name: locationName,
+          language_code: languageCode
+        }]);
+        
+        const volumeData = volumeResponse.data.tasks[0].result[0].items[0];
+        
+        results.push({
+          keyword: keyword,
+          position: position,
+          url: matchedItem?.url || targetUrl,
+          title: matchedItem?.title || '',
+          searchVolume: volumeData?.keyword_info?.search_volume || 0,
+          difficulty: volumeData?.keyword_info?.keyword_difficulty || 0,
+          cpc: volumeData?.keyword_info?.cpc || 0,
+          competition: volumeData?.keyword_info?.competition || 0,
+          opportunityScore: this.calculateOpportunityScore(position, volumeData?.keyword_info?.search_volume || 0)
+        });
+        
+        console.log(`    ✅ Found at position ${position}`);
+      } else if (position > 0) {
+        console.log(`    🎯 Already in top 5 (position ${position})`);
+      } else {
+        console.log(`    ❌ Not found in top 50`);
+      }
+
+    } catch (error) {
+      console.error(`    ❌ Error checking "${keyword}":`, error.message);
+    }
+  }
+
+  return results.sort((a, b) => b.opportunityScore - a.opportunityScore);
+}
+
+private extractDomain(url: string): string {
+  try {
+    return new URL(url).hostname.replace(/^www\./, '');
+  } catch {
+    return url.replace(/^https?:\/\/(www\.)?/, '').split('/')[0];
+  }
+}
+
+// Alternative: Check both organic AND local pack results
+async getComprehensiveUrlRankings(
+  targetUrl: string,
+  cuisine: string,
+  city: string,
+  state: string,
+  locationName: string = 'United States'
+): Promise<{
+  organicRankings: ProcessedKeyword[],
+  localPackRankings: ProcessedKeyword[],
+  totalOpportunities: number
+}> {
+  
+  const keywordPatterns = [
+    `${cuisine} near me`,
+    `${cuisine} delivery ${city}`,
+    `best ${cuisine} ${city}`,
+    `${city} ${cuisine}`,
+    `${cuisine} places near me`,
+    `${cuisine} ${city} ${state}`,
+    `${cuisine} delivery near me`,
+    `${cuisine} open now`
+  ];
+
+  const organicRankings: ProcessedKeyword[] = [];
+  const localPackRankings: ProcessedKeyword[] = [];
+  const targetDomain = this.extractDomain(targetUrl);
+
+  for (const keyword of keywordPatterns) {
+    try {
+      // Check organic results
+      const organicResponse = await this.client.post('/serp/google/organic/live/advanced', [{
+        keyword: keyword,
+        location_name: locationName,
+        depth: 50
+      }]);
+
+      const organicItems = organicResponse.data.tasks[0].result[0].items || [];
+      
+      // Find organic ranking
+      for (let i = 0; i < organicItems.length; i++) {
+        const item = organicItems[i];
+        if (item.type === 'organic' && 
+            (item.domain === targetDomain || item.url === targetUrl)) {
+          
+          if (item.rank_absolute > 5) {
+            organicRankings.push({
+              keyword: keyword,
+              position: item.rank_absolute,
+              type: 'organic',
+              url: item.url,
+              title: item.title
+            });
+          }
+          break;
+        }
+      }
+
+      // Also check local pack (if applicable)
+      for (let item of organicItems) {
+        if (item.type === 'local_pack' && item.domain === targetDomain) {
+          if (item.rank_absolute > 5) {
+            localPackRankings.push({
+              keyword: keyword,
+              position: item.rank_absolute,
+              type: 'local_pack',
+              title: item.title
+            });
+          }
+        }
+      }
+
+    } catch (error) {
+      console.error(`Error checking ${keyword}:`, error);
+    }
+  }
+
+  return {
+    organicRankings,
+    localPackRankings,
+    totalOpportunities: organicRankings.length + localPackRankings.length
+  };
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Embed Test</title>
+</head>
+<body>
+    <h2>Testing Website Embeddability</h2>
+    
+    <h3>Pier 49 Pizza (HTTP)</h3>
+    <iframe src="http://www.pier49.com/" width="600" height="400" style="border: 1px solid #ccc;">
+        Cannot embed this website
+    </iframe>
+    
+    <h3>Pier 49 Pizza (HTTPS)</h3>
+    <iframe src="https://pier49pizza.com/" width="600" height="400" style="border: 1px solid #ccc;">
+        Cannot embed this website
+    </iframe>
+    
+    <script>
+        // Check for iframe loading errors
+        document.querySelectorAll('iframe').forEach((iframe, index) => {
+            iframe.onload = () => console.log(`Iframe ${index + 1} loaded successfully`);
+            iframe.onerror = () => console.log(`Iframe ${index + 1} failed to load`);
+        });
+    </script>
+</body>
+</html>
