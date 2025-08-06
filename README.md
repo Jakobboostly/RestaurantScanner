@@ -76,7 +76,7 @@ The Restaurant Scanner is a **high-performance** AI-powered marketing intelligen
 1. **Clone the repository**
    ```bash
    git clone https://github.com/Jakobboostly/RestaurantScanner.git
-   cd RestaurantScanner/scanner/mainscanner
+   cd RestaurantScanner
    ```
 
 2. **Install dependencies**
