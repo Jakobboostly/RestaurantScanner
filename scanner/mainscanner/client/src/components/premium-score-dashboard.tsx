@@ -16,6 +16,7 @@ import {
   Crown,
   Sparkles,
   ChevronRight,
+  ChevronLeft,
   ExternalLink,
   Phone,
   Mail,
@@ -114,6 +115,9 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
   const [restaurantSearchScreenshot, setRestaurantSearchScreenshot] = useState<RestaurantSearchScreenshot | null>(null);
   
   const [activeTab, setActiveTab] = useState<'search' | 'social' | 'local' | 'reviews'>('search');
+  
+  // State for selected keyword index in "See Where You Rank" section
+  const [selectedKeywordIndex, setSelectedKeywordIndex] = useState(0);
   
   // State for mood analysis polling
   const [moodAnalysis, setMoodAnalysis] = useState<any>(scanResult.reviewsAnalysis?.customerMoodAnalysis || null);
@@ -889,24 +893,98 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                       </div>
                       
                       {(() => {
-                        const { foodType, city, state } = getSearchTerms();
-                        const searchQuery = `${foodType} ${city} ${state}`.trim();
+                        // Get the list of competitive keywords to toggle between
+                        const competitiveKeywords = scanResult.competitiveOpportunityKeywords || [];
+                        
+                        if (competitiveKeywords.length === 0) {
+                          // Fallback to original behavior if no competitive keywords
+                          const { foodType, city, state } = getSearchTerms();
+                          const searchQuery = `${foodType} ${city} ${state}`.trim();
+                          const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}`;
+                          
+                          return (
+                            <div className="space-y-4">
+                              <div className="bg-white/10 rounded-lg p-4 border border-white/20">
+                                <p className="text-sm text-white/80 mb-2">Your customers search for:</p>
+                                <p className="text-lg font-semibold text-white">"{searchQuery}"</p>
+                              </div>
+                              
+                              <button 
+                                onClick={() => {
+                                  window.open(searchUrl, '_blank', 'noopener,noreferrer');
+                                }}
+                                className="inline-flex items-center justify-center w-full bg-white text-[#5F5FFF] font-bold py-4 px-6 rounded-lg hover:bg-white/95 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl group"
+                              >
+                                <span className="mr-3">See Where You Rank</span>
+                                <ExternalLink className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                              </button>
+                              
+                              <p className="text-xs text-white/70 leading-relaxed">
+                                This opens a live Google search. Look for your restaurant in the results to see where you rank compared to competitors.
+                              </p>
+                            </div>
+                          );
+                        }
+                        
+                        // Use competitive keywords with navigation
+                        const currentKeyword = competitiveKeywords[selectedKeywordIndex] || competitiveKeywords[0];
+                        const searchQuery = currentKeyword?.keyword || '';
                         const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}`;
+                        
+                        const handlePrevKeyword = () => {
+                          setSelectedKeywordIndex(prev => prev === 0 ? competitiveKeywords.length - 1 : prev - 1);
+                        };
+                        
+                        const handleNextKeyword = () => {
+                          setSelectedKeywordIndex(prev => prev === competitiveKeywords.length - 1 ? 0 : prev + 1);
+                        };
                         
                         return (
                           <div className="space-y-4">
                             <div className="bg-white/10 rounded-lg p-4 border border-white/20">
-                              <p className="text-sm text-white/80 mb-2">Your customers search for:</p>
+                              <div className="flex items-center justify-between mb-3">
+                                <p className="text-sm text-white/80">Your customers search for:</p>
+                                <div className="flex items-center gap-2">
+                                  <button 
+                                    onClick={handlePrevKeyword}
+                                    className="p-1 text-white/60 hover:text-white hover:bg-white/10 rounded transition-colors"
+                                    disabled={competitiveKeywords.length <= 1}
+                                  >
+                                    <ChevronLeft className="w-4 h-4" />
+                                  </button>
+                                  <span className="text-xs text-white/60 px-2">
+                                    {selectedKeywordIndex + 1} / {competitiveKeywords.length}
+                                  </span>
+                                  <button 
+                                    onClick={handleNextKeyword}
+                                    className="p-1 text-white/60 hover:text-white hover:bg-white/10 rounded transition-colors"
+                                    disabled={competitiveKeywords.length <= 1}
+                                  >
+                                    <ChevronRight className="w-4 h-4" />
+                                  </button>
+                                </div>
+                              </div>
                               <p className="text-lg font-semibold text-white">"{searchQuery}"</p>
+                              {currentKeyword && (
+                                <div className="flex items-center gap-2 mt-2">
+                                  <span className="text-xs text-white/60">Current rank:</span>
+                                  <span className={`text-xs px-2 py-1 rounded ${
+                                    !currentKeyword.position || currentKeyword.position === 0
+                                      ? 'bg-red-500/20 text-red-300'
+                                      : currentKeyword.position <= 3 
+                                        ? 'bg-green-500/20 text-green-300' 
+                                        : currentKeyword.position <= 10 
+                                          ? 'bg-yellow-500/20 text-yellow-300'
+                                          : 'bg-red-500/20 text-red-300'
+                                  }`}>
+                                    {!currentKeyword.position || currentKeyword.position === 0 ? 'Not ranked' : `#${currentKeyword.position}`}
+                                  </span>
+                                </div>
+                              )}
                             </div>
                             
                             <button 
                               onClick={() => {
-                                const searchQuery = (() => {
-                                  const { foodType, city, state } = getSearchTerms();
-                                  return `${foodType} ${city} ${state}`.trim();
-                                })();
-                                const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}`;
                                 window.open(searchUrl, '_blank', 'noopener,noreferrer');
                               }}
                               className="inline-flex items-center justify-center w-full bg-white text-[#5F5FFF] font-bold py-4 px-6 rounded-lg hover:bg-white/95 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl group"
@@ -916,7 +994,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                             </button>
                             
                             <p className="text-xs text-white/70 leading-relaxed">
-                              This opens a live Google search. Look for your restaurant in the results to see where you rank compared to competitors.
+                              This opens a live Google search for "{searchQuery}". Look for your restaurant in the results to see where you rank compared to competitors.
                             </p>
                           </div>
                         );
