@@ -11,7 +11,7 @@ import ScanningAnimation from "@/components/scanning-animation";
 import EnhancedResultsDashboard from "@/components/enhanced-results-dashboard";
 import { scanWebsite, getRestaurantDetails } from "@/lib/api";
 import { RestaurantSearchResult, ScanResult } from "@shared/schema";
-import boostlyLogo from "/boostlylogo.png";
+import boostlyLogo from "/boostlylogo.png?url";
 
 type ViewState = 'search' | 'scanning' | 'results';
 
