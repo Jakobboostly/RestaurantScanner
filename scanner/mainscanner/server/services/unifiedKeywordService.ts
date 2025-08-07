@@ -398,7 +398,7 @@ export class UnifiedKeywordService {
     console.log('📈 BATCH SEARCH VOLUME: Getting data for all keywords in single API call');
 
     try {
-      const locationName = config.locationName || 'United States';
+      const locationName = config.locationName || `${config.city}, ${config.state}, United States`;
       
       const response = await fetch('https://api.dataforseo.com/v3/keywords_data/google/search_volume/live', {
         method: 'POST',
