@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: boostly-restaurant-scanner
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: GOOGLE_PLACES_API_KEY
+        sync: false
+      - key: DATAFORSEO_LOGIN
+        sync: false
+      - key: DATAFORSEO_PASSWORD
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: APIFY_API_KEY
+        sync: false
+      - key: DATABASE_URL
+        fromDatabase:
+          name: boostly-scanner-db
+          property: connectionString
+    autoDeploy: true
+
+databases:
+  - name: boostly-scanner-db
+    plan: free
+    databaseName: boostly_scanner
+    user: scanner_user
