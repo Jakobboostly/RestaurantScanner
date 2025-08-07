@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import boostlyLogo from "/boostlylogo.png";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +18,7 @@ export default function Navigation() {
                 className="flex items-center hover:opacity-80 transition-opacity duration-200"
               >
                 <img 
-                  src={boostlyLogo} 
+                  src="/boostlylogo.png" 
                   alt="Boostly Logo" 
                   className="h-8 w-auto mr-3"
                 />
