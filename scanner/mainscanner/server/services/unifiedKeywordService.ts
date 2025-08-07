@@ -94,7 +94,7 @@ export class UnifiedKeywordService {
     languageCode?: string;
   }): Promise<UnifiedKeywordResults> {
     return limit(async () => {
-      const cacheKey = `unified_keywords_${config.businessName}_${config.cuisine}_${config.city}_${config.state}`;
+      const cacheKey = `unified_keywords_v2_${config.businessName}_${config.cuisine}_${config.city}_${config.state}`;
       const cached = cache.get<UnifiedKeywordResults>(cacheKey);
       
       if (cached) {
