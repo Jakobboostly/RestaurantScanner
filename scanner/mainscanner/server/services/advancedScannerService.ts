@@ -344,7 +344,7 @@ export class AdvancedScannerService {
         const fallbackResults = [];
           for (const keyword of targetedKeywords) {
             try {
-              const volumeData = await this.urlRankingService.getSearchVolumeData(keyword, 'United States', 'en');
+              const volumeData = await this.urlRankingService.getSearchVolumeData(keyword, `${locationData.city}, ${locationData.state}, United States`, 'en');
               fallbackResults.push({
                 keyword: keyword,
                 position: 0, // Show as "Not Ranked"
