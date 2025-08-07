@@ -3,6 +3,7 @@ services:
     name: boostly-restaurant-scanner
     env: node
     plan: free
+    rootDir: scanner/mainscanner
     buildCommand: npm install && npm run build
     startCommand: npm start
     envVars:
