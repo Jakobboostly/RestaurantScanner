@@ -1,37 +1,47 @@
 import { VercelRequest, VercelResponse } from '@vercel/node';
 import express from 'express';
-import { routes } from '../server/routes.js';
+import { registerRoutes } from '../server/routes';
 
-const app = express();
+let app: express.Express | null = null;
 
-// Add middleware
-app.use(express.json({ limit: '10mb' }));
-app.use(express.urlencoded({ extended: true }));
+// Initialize the app once
+const getApp = async () => {
+  if (!app) {
+    app = express();
+    
+    // Add middleware
+    app.use(express.json({ limit: '10mb' }));
+    app.use(express.urlencoded({ extended: true }));
 
-// Enable CORS for development
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
-  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, X-Requested-With');
-  
-  if (req.method === 'OPTIONS') {
-    res.sendStatus(200);
-  } else {
-    next();
+    // Enable CORS
+    app.use((req, res, next) => {
+      res.header('Access-Control-Allow-Origin', '*');
+      res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
+      res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, X-Requested-With');
+      
+      if (req.method === 'OPTIONS') {
+        res.sendStatus(200);
+      } else {
+        next();
+      }
+    });
+
+    // Register routes
+    await registerRoutes(app);
   }
-});
-
-// Mount routes
-app.use('/api', routes);
+  
+  return app;
+};
 
 // Export as serverless function
 export default async (req: VercelRequest, res: VercelResponse) => {
-  return new Promise((resolve) => {
-    app(req as any, res as any, (result) => {
-      if (result instanceof Error) {
-        return resolve(result);
-      }
-      return resolve(result);
-    });
-  });
+  try {
+    const app = await getApp();
+    
+    // Handle the request
+    app(req as any, res as any);
+  } catch (error) {
+    console.error('Serverless function error:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
 };
