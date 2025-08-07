@@ -11,7 +11,6 @@ import ScanningAnimation from "@/components/scanning-animation";
 import EnhancedResultsDashboard from "@/components/enhanced-results-dashboard";
 import { scanWebsite, getRestaurantDetails } from "@/lib/api";
 import { RestaurantSearchResult, ScanResult } from "@shared/schema";
-import boostlyLogo from "/boostlylogo.png?url";
 
 type ViewState = 'search' | 'scanning' | 'results';
 
@@ -185,7 +184,7 @@ export default function HomePage() {
               <div>
                 <div className="flex items-center mb-6">
                   <img 
-                    src={boostlyLogo} 
+                    src="/boostlylogo.png" 
                     alt="Boostly Logo" 
                     className="h-8 w-auto mr-3"
                   />
