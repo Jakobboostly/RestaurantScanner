@@ -507,6 +507,83 @@ export async function registerRoutes(app: Express): Promise<Server> {
   });
 
   // MCP integration endpoints (disabled - service not available)
+  // Keyword search tool - gets top 5 rankings for any keyword
+  app.post("/api/keyword-search", async (req, res) => {
+    console.log('🔍 KEYWORD SEARCH API: Route hit!');
+    console.log('🔍 Request body:', req.body);
+    
+    try {
+      const { keyword, location } = req.body;
+      
+      if (!keyword) {
+        console.log('❌ KEYWORD SEARCH: No keyword provided');
+        return res.status(400).json({ error: "Keyword is required" });
+      }
+      
+      if (!DATAFOREO_LOGIN || !DATAFOREO_PASSWORD) {
+        console.log('❌ KEYWORD SEARCH: DataForSEO credentials missing');
+        return res.status(503).json({ error: "DataForSEO credentials not configured" });
+      }
+      
+      console.log(`🔍 KEYWORD SEARCH: Searching for "${keyword}" in location: ${location || 'US'}`);
+      
+      // Use DataForSEO organic search to get top 5 results
+      const response = await fetch('https://api.dataforseo.com/v3/serp/google/organic/live/advanced', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Basic ${Buffer.from(`${DATAFOREO_LOGIN}:${DATAFOREO_PASSWORD}`).toString('base64')}`,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify([{
+          language_code: 'en',
+          location_name: location ? location.replace(/,\s+/g, ',') : 'United States',  // Remove spaces after commas
+          keyword: keyword,
+          depth: 5  // Only get top 5 results
+        }])
+      });
+      
+      if (!response.ok) {
+        console.log(`❌ Keyword search API failed: ${response.status}`);
+        return res.status(500).json({ error: 'Failed to fetch search results' });
+      }
+      
+      const data = await response.json();
+      console.log('🔍 DataForSEO response structure:', JSON.stringify({
+        tasks: data.tasks?.length,
+        result: data.tasks?.[0]?.result?.length,
+        items: data.tasks?.[0]?.result?.[0]?.items?.length,
+        firstItem: data.tasks?.[0]?.result?.[0]?.items?.[0]
+      }, null, 2));
+      
+      const items = data.tasks?.[0]?.result?.[0]?.items || [];
+      
+      // Extract top 5 organic results
+      const results = items
+        .filter((item: any) => item.type === 'organic')
+        .slice(0, 5)
+        .map((item: any, index: number) => ({
+          position: index + 1,
+          title: item.title || 'No title',
+          url: item.url || '',
+          domain: item.domain || '',
+          description: item.description || ''
+        }));
+      
+      console.log(`✅ KEYWORD SEARCH: Found ${results.length} results for "${keyword}"`);
+      
+      res.json({
+        keyword,
+        location: location || 'United States',
+        results,
+        timestamp: new Date().toISOString()
+      });
+      
+    } catch (error) {
+      console.error('❌ Keyword search error:', error);
+      res.status(500).json({ error: 'Internal server error' });
+    }
+  });
+
   app.post("/api/mcp/tools", async (req, res) => {
     res.status(503).json({ 
       error: "MCP service not available",

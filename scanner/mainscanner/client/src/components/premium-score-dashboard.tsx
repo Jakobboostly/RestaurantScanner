@@ -43,6 +43,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import { KeywordSearchTool } from "./keyword-search-tool";
 import { PieChart as RechartsPieChart, Cell, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, CartesianGrid, Legend } from 'recharts';
 import { WebsiteEmbed } from "./WebsiteEmbed";
 import { SentimentAnalysisVisualization } from "./SentimentAnalysisVisualization";
@@ -977,76 +978,11 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                     </div>
                   </div>
 
-                  {/* Right Side - Where You Rank Button */}
+                  {/* Right Side - Keyword Search Tool */}
                   <div className="space-y-4 pt-[65px] pb-[65px]">
-                    {/* URGENT BOOSTLY RANKING WARNING */}
-                    <div className="bg-gradient-to-r from-[#4C1D95] via-[#5B21B6] to-[#6B21A8] border-4 border-yellow-400 rounded-xl p-6 text-center text-white shadow-2xl relative overflow-hidden">
-                      <div className="relative z-10">
-                        <div className="flex items-center justify-center mb-3">
-                          <div>
-                            <h3 className="font-black text-white tracking-wide drop-shadow-lg text-[27px]">⚠️ CRITICAL RANKING ALERT ⚠️</h3>
-                            <p className="text-yellow-200 font-bold uppercase tracking-widest text-[16px]">CUSTOMERS CAN'T FIND YOU!</p>
-                          </div>
-                        </div>
-                        
-                        <div className="bg-[#5F5FFF]/30 border-2 border-yellow-300 rounded-lg p-4 mb-3 backdrop-blur-sm">
-                          {(() => {
-                            const competitiveKeywords = scanResult.competitiveOpportunityKeywords || [];
-                            
-                            // Filter to get the 3 worst performing keywords (NOT ranked #1)
-                            const worstKeywords = competitiveKeywords
-                              .filter(k => k.position !== 1) // Exclude #1 rankings
-                              .sort((a, b) => (b.position || 999) - (a.position || 999)) // Sort by worst position first
-                              .slice(0, 3); // Take top 3 worst
-                            
-                            const keywordCount = competitiveKeywords.length;
-                            
-                            return (
-                              <>
-                                <p className="text-white font-black text-2xl mb-2 drop-shadow-lg">
-                                  Tracking {keywordCount} key restaurant keywords for your area!
-                                </p>
-                                {worstKeywords.length > 0 && (
-                                  <div className="text-yellow-200 text-sm font-bold mb-2">
-                                    Your 3 worst performing keywords (NOT ranked #1):
-                                  </div>
-                                )}
-                                {worstKeywords.length > 0 && (
-                                  <div className="space-y-1 text-left max-h-32 overflow-y-auto">
-                                    {worstKeywords.map((keyword, index) => (
-                                      <div key={index} className="flex justify-between items-center text-xs bg-white/10 rounded px-2 py-1">
-                                        <span className="text-white truncate pr-2">
-                                          "{keyword.keyword}"
-                                        </span>
-                                        <span className={`font-bold ${
-                                          keyword.position === 0 || keyword.position === null || keyword.position === undefined ? 'text-red-300' :
-                                          keyword.position <= 5 ? 'text-yellow-300' : 'text-red-300'
-                                        }`}>
-                                          {keyword.position === 0 || keyword.position === null || keyword.position === undefined ? 'Not Ranked' : `#${keyword.position}`}
-                                        </span>
-                                      </div>
-                                    ))}
-                                  </div>
-                                )}
-                                {worstKeywords.length === 0 && competitiveKeywords.length > 0 && (
-                                  <p className="text-green-200 text-base font-bold">
-                                    🎉 All your keywords are ranked #1! Amazing performance!
-                                  </p>
-                                )}
-                                {competitiveKeywords.length === 0 && (
-                                  <p className="text-yellow-200 text-base font-bold">
-                                    🔍 Gathering targeted keyword data...
-                                  </p>
-                                )}
-                              </>
-                            );
-                          })()}
-                        </div>
-                        
-                        <div className="text-yellow-200 text-sm font-bold uppercase">
-                          ⚡ IMMEDIATE ACTION REQUIRED
-                        </div>
-                      </div>
+                    {/* Keyword Search Tool */}
+                    <div className="bg-gradient-to-br from-[#4C1D95] via-[#5B21B6] to-[#6B21A8] rounded-lg p-6 text-white shadow-lg mt-[5px] mb-[5px]">
+                      <KeywordSearchTool defaultLocation={scanResult.businessProfile?.location || "United States"} />
                     </div>
 
                     <div className="bg-gradient-to-br from-[#5F5FFF] via-[#7375FD] to-[#9090FD] rounded-lg p-8 text-center text-white shadow-lg mt-[5px] mb-[5px]">
