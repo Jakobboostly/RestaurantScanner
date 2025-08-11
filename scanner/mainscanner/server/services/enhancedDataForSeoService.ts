@@ -1,5 +1,4 @@
 import axios, { AxiosInstance } from 'axios';
-import NodeCache from 'node-cache';
 import pLimit from 'p-limit';
 import { UnifiedKeywordService } from './unifiedKeywordService';
 import { 
@@ -11,7 +10,6 @@ import {
 } from '../utils/keywordUtils';
 
 const limit = pLimit(2); // Limit concurrent DataForSEO API calls
-const cache = new NodeCache({ stdTTL: 3600 }); // 1 hour cache
 
 // KeywordData interface now imported from utils
 
@@ -72,13 +70,6 @@ export class EnhancedDataForSeoService {
     location: string = 'United States'
   ): Promise<KeywordData[]> {
     return limit(async () => {
-      const cacheKey = `keyword_research_${keyword}_${location}`;
-      const cached = cache.get<KeywordData[]>(cacheKey);
-      
-      if (cached) {
-        console.log('Using cached keyword research for:', keyword);
-        return cached;
-      }
 
       try {
         console.log('Getting comprehensive keyword data for:', keyword);
@@ -139,8 +130,6 @@ export class EnhancedDataForSeoService {
           };
         });
 
-        // Cache the results
-        cache.set(cacheKey, keywordData);
         
         return keywordData;
 
@@ -161,13 +150,6 @@ export class EnhancedDataForSeoService {
     competitors: string[] = []
   ): Promise<CompetitorInsight[]> {
     return limit(async () => {
-      const cacheKey = `competitors_${domain}_${keywords.join('_')}`;
-      const cached = cache.get<CompetitorInsight[]>(cacheKey);
-      
-      if (cached) {
-        console.log('Using cached competitor analysis for:', domain);
-        return cached;
-      }
 
       try {
         console.log('Analyzing competitors for domain:', domain);
@@ -241,8 +223,6 @@ export class EnhancedDataForSeoService {
           };
         });
 
-        // Cache the results
-        cache.set(cacheKey, competitors);
         
         return competitors;
 
@@ -259,13 +239,6 @@ export class EnhancedDataForSeoService {
     location: string = 'United States'
   ): Promise<SerpAnalysis> {
     return limit(async () => {
-      const cacheKey = `serp_${keyword}_${domain}_${location}`;
-      const cached = cache.get<SerpAnalysis>(cacheKey);
-      
-      if (cached) {
-        console.log('Using cached SERP analysis for:', keyword);
-        return cached;
-      }
 
       try {
         const response = await this.client.post('/serp/google/organic/live/advanced', [{
@@ -327,8 +300,6 @@ export class EnhancedDataForSeoService {
           difficulty: this.calculateDifficulty(items.length / 10)
         };
 
-        // Cache the results
-        cache.set(cacheKey, analysis);
         
         return analysis;
 
@@ -350,13 +321,6 @@ export class EnhancedDataForSeoService {
 
   async getTechnicalSeoAudit(domain: string): Promise<any> {
     return limit(async () => {
-      const cacheKey = `technical_seo_${domain}`;
-      const cached = cache.get(cacheKey);
-      
-      if (cached) {
-        console.log('Using cached technical SEO audit for:', domain);
-        return cached;
-      }
 
       try {
         console.log('Conducting technical SEO audit for:', domain);
@@ -401,8 +365,6 @@ export class EnhancedDataForSeoService {
           timestamp: new Date().toISOString()
         };
 
-        // Cache the results
-        cache.set(cacheKey, auditResult);
         
         return auditResult;
 
@@ -629,7 +591,4 @@ export class EnhancedDataForSeoService {
     return contentGaps;
   }
 
-  clearCache(): void {
-    cache.flushAll();
-  }
 }

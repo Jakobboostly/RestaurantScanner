@@ -192,6 +192,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.setHeader('Access-Control-Allow-Origin', '*');
       res.setHeader('Access-Control-Allow-Headers', 'Cache-Control');
 
+
       const scanResult = await dataForSeoScannerService.scanRestaurantAdvanced(
         placeId || '',
         domain,
@@ -346,19 +347,6 @@ export async function registerRoutes(app: Express): Promise<Server> {
   app.get("/api/mood-analysis/:placeId", async (req, res) => {
     try {
       const placeId = req.params.placeId;
-      
-      // Import AdvancedScannerService dynamically to access static cache
-      const { AdvancedScannerService } = await import('./services/advancedScannerService.js');
-      const cache = AdvancedScannerService.getMoodAnalysisCache();
-      
-      // Check if analysis is already cached
-      if (cache.has(placeId)) {
-        const cachedResult = cache.get(placeId);
-        return res.json({ 
-          status: 'complete',
-          data: cachedResult 
-        });
-      }
       
       // Analysis not ready yet
       return res.json({ 

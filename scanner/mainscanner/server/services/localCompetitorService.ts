@@ -3,11 +3,9 @@
  * Uses DataForSEO Google Local Finder API and Maps API for accurate local results
  */
 
-import NodeCache from 'node-cache';
 import pLimit from 'p-limit';
 
 const limit = pLimit(3); // Limit concurrent API calls
-const cache = new NodeCache({ stdTTL: 3600 }); // 1 hour cache
 
 export interface LocalCompetitor {
   name: string;
@@ -47,13 +45,6 @@ export class LocalCompetitorService {
     state: string;
     keywords: string[];
   }): Promise<KeywordCompetitors[]> {
-    const cacheKey = `local_competitors_${config.businessName}_${config.city}_${config.state}`;
-    const cached = cache.get<KeywordCompetitors[]>(cacheKey);
-    
-    if (cached) {
-      console.log('🚀 Using cached local competitor results');
-      return cached;
-    }
 
     console.log('🏆 LOCAL COMPETITOR ANALYSIS: Starting for', config.businessName);
     console.log(`   Location: ${config.city}, ${config.state}`);
@@ -74,8 +65,6 @@ export class LocalCompetitorService {
       }
     });
 
-    // Cache the results
-    cache.set(cacheKey, results);
     
     console.log(`✅ LOCAL COMPETITOR ANALYSIS: Found competitors for ${results.length}/${config.keywords.length} keywords`);
     
@@ -381,11 +370,4 @@ export class LocalCompetitorService {
     return (matches / maxLength) >= 0.7;
   }
 
-  /**
-   * Clear cache
-   */
-  clearCache(): void {
-    cache.flushAll();
-    console.log('🗑️ Local competitor service cache cleared');
-  }
 }

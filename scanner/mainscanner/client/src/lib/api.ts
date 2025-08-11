@@ -77,11 +77,9 @@ export async function scanWebsite(
             const jsonData = line.slice(6).trim();
             if (jsonData) {
               const data = JSON.parse(jsonData);
-              console.log('SSE message received:', data);
               
               if (data.type === 'complete') {
                 scanResult = data.result;
-                console.log('Scan complete, result received');
               } else if (data.type === 'error') {
                 throw new Error(data.error);
               } else if (onProgress) {
@@ -89,7 +87,7 @@ export async function scanWebsite(
               }
             }
           } catch (parseError) {
-            console.error('Failed to parse SSE message:', line.slice(0, 100) + '...', parseError);
+            console.error('Failed to parse SSE message:', parseError);
           }
         }
       }
@@ -101,17 +99,15 @@ export async function scanWebsite(
         const jsonData = buffer.slice(6).trim();
         if (jsonData) {
           const data = JSON.parse(jsonData);
-          console.log('SSE message received (final):', data);
           
           if (data.type === 'complete') {
             scanResult = data.result;
-            console.log('Scan complete, result received');
           } else if (data.type === 'error') {
             throw new Error(data.error);
           }
         }
       } catch (parseError) {
-        console.error('Failed to parse final SSE message:', buffer.slice(0, 100) + '...', parseError);
+        console.error('Failed to parse final SSE message:', parseError);
       }
     }
   } finally {

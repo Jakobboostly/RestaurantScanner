@@ -50,13 +50,6 @@ export class AdvancedScannerService {
   private facebookPostsScraperService: FacebookPostsScraperService;
   private openaiReviewAnalysisService: OpenAIReviewAnalysisService;
   
-  // Static cache for mood analysis results
-  private static moodAnalysisCache = new Map<string, any>();
-  
-  // Static method to access the cache from routes
-  static getMoodAnalysisCache() {
-    return AdvancedScannerService.moodAnalysisCache;
-  }
 
   constructor(
     googleApiKey: string,

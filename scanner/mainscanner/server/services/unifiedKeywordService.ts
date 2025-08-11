@@ -4,7 +4,6 @@
  * Reduces API calls from ~50 to ~5 per restaurant analysis
  */
 
-import NodeCache from 'node-cache';
 import pLimit from 'p-limit';
 import {
   generateLocalKeywords,
@@ -18,7 +17,6 @@ import {
 } from '../utils/keywordUtils';
 
 const limit = pLimit(2); // Limit concurrent DataForSEO API calls
-const cache = new NodeCache({ stdTTL: 3600 }); // 1 hour cache
 
 export interface UnifiedKeywordResults {
   keywords: string[];
@@ -94,13 +92,6 @@ export class UnifiedKeywordService {
     languageCode?: string;
   }): Promise<UnifiedKeywordResults> {
     return limit(async () => {
-      const cacheKey = `unified_keywords_v2_${config.businessName}_${config.cuisine}_${config.city}_${config.state}`;
-      const cached = cache.get<UnifiedKeywordResults>(cacheKey);
-      
-      if (cached) {
-        console.log('🚀 Using cached unified keyword results for:', config.businessName);
-        return cached;
-      }
 
       console.log('🚀 UNIFIED KEYWORD ANALYSIS: Starting batch processing for:', config.businessName);
       console.log(`   Location: ${config.city}, ${config.state}`);
@@ -142,8 +133,6 @@ export class UnifiedKeywordService {
         // Enrich results with cross-referenced data
         const enrichedResults = this.enrichResults(results);
 
-        // Cache the results
-        cache.set(cacheKey, enrichedResults);
         
         console.log('✅ UNIFIED KEYWORD ANALYSIS: Completed batch processing');
         console.log(`   📊 Local Rankings: ${enrichedResults.localRankings.length}`);
@@ -628,11 +617,4 @@ export class UnifiedKeywordService {
     return results;
   }
 
-  /**
-   * Clear cache for testing purposes
-   */
-  clearCache(): void {
-    cache.flushAll();
-    console.log('🗑️ Unified keyword service cache cleared');
-  }
 }

@@ -4,11 +4,9 @@
  * for local search keywords using DataForSEO API
  */
 
-import NodeCache from 'node-cache';
 import pLimit from 'p-limit';
 
 const limit = pLimit(2); // Limit concurrent API calls
-const cache = new NodeCache({ stdTTL: 86400 }); // 24 hour cache
 
 export interface ClientRestaurant {
   business_name: string;
@@ -83,13 +81,6 @@ export class RestaurantLocalPackScanner {
     console.log(`   Location: ${location}`);
     console.log(`   Keywords: ${keywords.length}`);
 
-    const cacheKey = `local_pack_${this.normalizeBusinessName(clientInfo.business_name)}_${location}_${keywords.join('|')}`;
-    const cached = cache.get<ScanReport>(cacheKey);
-    
-    if (cached) {
-      console.log('🚀 Using cached Local Pack results');
-      return cached;
-    }
 
     const keywordResults: LocalPackResult[] = [];
 
@@ -129,8 +120,6 @@ export class RestaurantLocalPackScanner {
       }
     };
 
-    // Cache the results
-    cache.set(cacheKey, report);
 
     console.log(`✅ LOCAL PACK SCAN: Completed ${keywordResults.length} keywords`);
     console.log(`   Visibility Score: ${summary.visibility_score}%`);
@@ -418,11 +407,4 @@ export class RestaurantLocalPackScanner {
   }
 
 
-  /**
-   * Clear cache for testing
-   */
-  clearCache(): void {
-    cache.flushAll();
-    console.log('🗑️ Local Pack scanner cache cleared');
-  }
 }

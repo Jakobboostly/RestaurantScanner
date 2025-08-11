@@ -97,6 +97,19 @@ const getServiceEmoji = (serviceType: string): string => {
 };
 
 export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumScoreDashboardProps) {
+  try {
+    // Debug logging
+    console.log('PremiumScoreDashboard render - scanResult:', scanResult);
+    console.log('PremiumScoreDashboard render - restaurantName:', restaurantName);
+    
+    // Basic validation
+    if (!scanResult) {
+      return <div className="min-h-screen bg-slate-50 p-6"><div className="text-center">No scan result data available</div></div>;
+    }
+  } catch (error) {
+    console.error('Error in PremiumScoreDashboard:', error);
+    return <div className="min-h-screen bg-red-50 p-6"><div className="text-center">Error rendering dashboard: {String(error)}</div></div>;
+  }
   const [aiExplanations, setAiExplanations] = useState<AIExplanations>({
     search: 'Analyzing search performance...',
     social: 'Analyzing social presence...',
@@ -116,6 +129,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
   // State for mood analysis polling
   const [moodAnalysis, setMoodAnalysis] = useState<any>(scanResult.reviewsAnalysis?.customerMoodAnalysis || null);
   const [isLoadingMoodAnalysis, setIsLoadingMoodAnalysis] = useState(!scanResult.reviewsAnalysis?.customerMoodAnalysis);
+  
   
   // Poll for mood analysis results if not available initially
   useEffect(() => {
@@ -235,6 +249,139 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
 
   const scores = calculateScores();
   const averageScore = 75; // Industry average benchmark
+
+  // Generate dynamic local SEO opportunities based on actual scan data
+  const generateLocalSEOOpportunities = () => {
+    const opportunities = {
+      high: [] as string[],
+      medium: [] as string[],
+      low: [] as string[]
+    };
+
+    // Check local pack visibility
+    const localPackReport = scanResult.localPackReport;
+    if (localPackReport) {
+      const visibilityScore = localPackReport.summary.visibility_score;
+      const keywordsAppeared = localPackReport.summary.keywords_appeared;
+      const totalKeywords = localPackReport.summary.total_keywords;
+      const avgPosition = localPackReport.summary.average_position;
+
+      // High priority: Not appearing in local pack at all or very low visibility
+      if (visibilityScore < 20) {
+        opportunities.high.push(`Missing from ${totalKeywords - keywordsAppeared} out of ${totalKeywords} local search results`);
+        if (keywordsAppeared === 0) {
+          opportunities.high.push('Not appearing in ANY local "near me" searches');
+        }
+      } else if (visibilityScore < 50) {
+        opportunities.medium.push(`Only appearing in ${keywordsAppeared} out of ${totalKeywords} local searches`);
+      }
+
+      // Check average position when appearing
+      if (avgPosition > 5 && keywordsAppeared > 0) {
+        opportunities.high.push(`Average position is #${avgPosition.toFixed(0)} - competitors appear higher`);
+      } else if (avgPosition > 3 && keywordsAppeared > 0) {
+        opportunities.medium.push(`Average position is #${avgPosition.toFixed(0)} - room to improve visibility`);
+      }
+    }
+
+    // Check competitor dominance
+    const localCompetitorData = scanResult.localCompetitorData;
+    if (localCompetitorData && localCompetitorData.length > 0) {
+      // Find most dominant competitors
+      const competitorAppearances: { [key: string]: number } = {};
+      localCompetitorData.forEach(keyword => {
+        keyword.topCompetitors?.forEach(competitor => {
+          if (competitor.position <= 3) {
+            competitorAppearances[competitor.name] = (competitorAppearances[competitor.name] || 0) + 1;
+          }
+        });
+      });
+
+      const dominantCompetitors = Object.entries(competitorAppearances)
+        .sort(([,a], [,b]) => b - a)
+        .slice(0, 2);
+
+      if (dominantCompetitors.length > 0 && dominantCompetitors[0][1] >= 3) {
+        opportunities.high.push(`${dominantCompetitors[0][0]} dominates ${dominantCompetitors[0][1]} top local searches`);
+      }
+
+      // Check keywords where we're not ranking but competitors are
+      const missingKeywords = localCompetitorData.filter(k => k.yourPosition === 0 || k.yourPosition > 20);
+      if (missingKeywords.length > 5) {
+        opportunities.high.push(`Not ranking for ${missingKeywords.length} keywords where competitors appear`);
+      } else if (missingKeywords.length > 2) {
+        opportunities.medium.push(`Missing from ${missingKeywords.length} competitive local searches`);
+      }
+    }
+
+    // Check Google Business Profile optimization
+    const businessProfile = scanResult.businessProfile;
+    const reviewsAnalysis = scanResult.reviewsAnalysis;
+    
+    if (businessProfile) {
+      // Check review count compared to competitors
+      if (localCompetitorData && localCompetitorData.length > 0) {
+        const competitorReviews = localCompetitorData
+          .flatMap(k => k.topCompetitors || [])
+          .map(c => c.reviewCount)
+          .filter(r => r > 0);
+        
+        const avgCompetitorReviews = competitorReviews.length > 0 
+          ? competitorReviews.reduce((a, b) => a + b, 0) / competitorReviews.length 
+          : 0;
+
+        const ourReviews = reviewsAnalysis?.totalReviews || businessProfile.totalReviews || 0;
+        
+        if (avgCompetitorReviews > ourReviews * 2) {
+          opportunities.high.push(`You have ${Math.round((avgCompetitorReviews - ourReviews) / ourReviews * 100)}% fewer reviews than competitors`);
+        } else if (avgCompetitorReviews > ourReviews * 1.5) {
+          opportunities.medium.push(`Competitors average ${Math.round(avgCompetitorReviews)} reviews vs your ${ourReviews}`);
+        }
+      }
+
+      // Check rating
+      if (businessProfile.rating < 4.0) {
+        opportunities.high.push(`Rating of ${businessProfile.rating} is below the 4.0 threshold for local visibility`);
+      } else if (businessProfile.rating < 4.5) {
+        opportunities.medium.push(`Rating of ${businessProfile.rating} could be improved for better local rankings`);
+      }
+
+      // Check for missing business information (these fields might not exist in the type)
+      const profileInfo = businessProfile as any;
+      if (!profileInfo.phone || !profileInfo.website) {
+        opportunities.high.push('Google Business Profile missing critical contact information');
+      }
+      
+      if (!profileInfo.hours) {
+        opportunities.medium.push('Business hours not listed on Google Business Profile');
+      }
+
+      // Low priority optimizations
+      if (profileInfo.photos && profileInfo.photos.length < 20) {
+        opportunities.low.push(`Only ${profileInfo.photos?.length || 0} photos on profile - add more for better engagement`);
+      }
+    }
+
+    // Check for missing "near me" rankings
+    const nearMeKeywords = scanResult.competitiveOpportunityKeywords?.filter(k => 
+      k.keyword.includes('near me') && (k.position === 0 || k.position > 20)
+    );
+    if (nearMeKeywords && nearMeKeywords.length > 0) {
+      opportunities.high.push(`Not appearing for ${nearMeKeywords.length} "near me" searches in your area`);
+    }
+
+    // Add some low priority optimization opportunities
+    if (opportunities.high.length === 0 && opportunities.medium.length === 0) {
+      opportunities.low.push('Consider adding Google Posts for events and promotions');
+      opportunities.low.push('Update business photos seasonally to show freshness');
+      opportunities.low.push('Expand service area settings if applicable');
+    }
+
+    return opportunities;
+  };
+
+  const localSEOOpportunities = generateLocalSEOOpportunities();
+
 
   // Fetch AI explanations on component mount
   useEffect(() => {
@@ -1667,7 +1814,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                     </div>
                   )}
 
-                  {/* Missing Ingredients */}
+                  {/* Missing Ingredients - Dynamic Local SEO Opportunities */}
                   <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
                     <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
                       <AlertCircle className="w-5 h-5 text-[#5F5FFF]" />
@@ -1675,38 +1822,50 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                     </h3>
                     <div className="space-y-3">
                       {/* High Priority Issues */}
-                      {scores.local < 50 && (
+                      {localSEOOpportunities.high.length > 0 && (
                         <div className="bg-[#5F5FFF]/10 border border-[#5F5FFF]/30 rounded p-3">
                           <span className="text-xs font-bold text-[#5F5FFF] bg-[#5F5FFF]/20 px-2 py-1 rounded">HIGH PRIORITY</span>
                           <ul className="mt-2 text-sm text-gray-700 space-y-1">
-                            <li>• Google Business Profile incomplete or not optimized</li>
-                            <li>• Missing from local "near me" searches</li>
-                            <li>• Competitors dominate local map results</li>
+                            {localSEOOpportunities.high.map((opportunity, index) => (
+                              <li key={index}>• {opportunity}</li>
+                            ))}
                           </ul>
                         </div>
                       )}
                       
                       {/* Medium Priority Issues */}
-                      {scores.local >= 50 && scores.local < 75 && (
+                      {localSEOOpportunities.medium.length > 0 && (
                         <div className="bg-[#7375FD]/10 border border-[#7375FD]/30 rounded p-3">
                           <span className="text-xs font-bold text-[#7375FD] bg-[#7375FD]/20 px-2 py-1 rounded">MEDIUM PRIORITY</span>
                           <ul className="mt-2 text-sm text-gray-700 space-y-1">
-                            <li>• Inconsistent business information across platforms</li>
-                            <li>• Limited local reviews and ratings</li>
-                            <li>• Not responding to customer reviews regularly</li>
+                            {localSEOOpportunities.medium.map((opportunity, index) => (
+                              <li key={index}>• {opportunity}</li>
+                            ))}
                           </ul>
                         </div>
                       )}
                       
                       {/* Low Priority Issues */}
-                      {scores.local >= 75 && (
+                      {localSEOOpportunities.low.length > 0 && (
                         <div className="bg-[#9090FD]/10 border border-[#9090FD]/30 rounded p-3">
                           <span className="text-xs font-bold text-[#9090FD] bg-[#9090FD]/20 px-2 py-1 rounded">LOW PRIORITY</span>
                           <ul className="mt-2 text-sm text-gray-700 space-y-1">
-                            <li>• Optimize Google Business Profile with additional categories</li>
-                            <li>• Add more business photos and keep them updated seasonally</li>
-                            <li>• Create Google Posts for special events and promotions</li>
+                            {localSEOOpportunities.low.map((opportunity, index) => (
+                              <li key={index}>• {opportunity}</li>
+                            ))}
                           </ul>
+                        </div>
+                      )}
+
+                      {/* Fallback if no opportunities detected */}
+                      {localSEOOpportunities.high.length === 0 && 
+                       localSEOOpportunities.medium.length === 0 && 
+                       localSEOOpportunities.low.length === 0 && (
+                        <div className="bg-green-50 border border-green-200 rounded p-3">
+                          <span className="text-xs font-bold text-green-600 bg-green-100 px-2 py-1 rounded">WELL OPTIMIZED</span>
+                          <p className="mt-2 text-sm text-gray-700">
+                            Your local SEO is performing well! Continue monitoring and maintaining your presence.
+                          </p>
                         </div>
                       )}
 
@@ -2005,6 +2164,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
             </CardContent>
           </Card>
         </motion.div>
+
       </div>
 
 
