@@ -509,7 +509,7 @@ export class EnhancedDataForSeoService {
         city: city,
         state: state,
         targetDomain: domain,
-        locationName: `${city}, ${state}, United States`
+        locationName: `${city},${state},United States`
       });
 
       // Convert to expected format - use both local and organic rankings

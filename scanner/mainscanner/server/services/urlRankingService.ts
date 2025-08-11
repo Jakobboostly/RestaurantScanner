@@ -19,50 +19,123 @@ export class UrlRankingService {
     this.unifiedService = new UnifiedKeywordService(login, password);
   }
 
-  async getUrlRankingsForKeywordsWithBusinessName(
+  async getOrganicSearchRankings(
     targetUrl: string,
-    cuisine: string,
+    keywords: string[],
     city: string,
     state: string,
-    businessName: string,
-    locationName: string = 'United States',
-    languageCode: string = 'en'
+    businessName: string
   ): Promise<any[]> {
-    console.log(`🚀 OPTIMIZED URL RANKING: Using unified service for ${targetUrl}`);
+    console.log(`🚀 ORGANIC SEARCH RANKINGS: Using DataForSEO organic search for ${targetUrl}`);
+    console.log(`🔍 Checking ${keywords.length} keywords:`, keywords);
 
+    const locationName = `${city},${state},United States`;
+    const targetDomain = extractDomain(targetUrl);
+    
     try {
-      // Use unified service for batch processing
-      const results = await this.unifiedService.analyzeKeywordsBatch({
-        businessName: businessName,
-        cuisine: cuisine,
-        city: city,
-        state: state,
-        targetDomain: targetUrl,
-        locationName: locationName,
-        languageCode: languageCode
+      // Make separate API calls for each keyword simultaneously
+      const rankingPromises = keywords.map(async (keyword) => {
+        const requestBody = [{
+          language_code: "en",
+          location_name: locationName,
+          keyword: keyword,
+          calculate_rectangles: true
+        }];
+
+        const response = await fetch('https://api.dataforseo.com/v3/serp/google/organic/live/advanced', {
+          method: 'POST',
+          headers: {
+            'Authorization': `Basic ${Buffer.from(`${this.login}:${this.password}`).toString('base64')}`,
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(requestBody)
+        });
+
+        if (!response.ok) {
+          console.log(`❌ Organic search API failed for "${keyword}": ${response.status}`);
+          return {
+            keyword,
+            position: 0,
+            url: null,
+            title: null,
+            searchVolume: 0,
+            difficulty: 0,
+            cpc: 0,
+            competition: 0,
+            opportunity: 0,
+            intent: classifyKeywordIntent(keyword)
+          };
+        }
+
+        const data = await response.json();
+        const organicResults = data.tasks?.[0]?.result?.[0]?.items || [];
+        
+        // Find the target domain in organic results
+        let position = 0;
+        let matchedResult = null;
+        
+        for (let i = 0; i < organicResults.length; i++) {
+          const result = organicResults[i];
+          if (result.type === 'organic' && result.domain) {
+            // Normalize domains for comparison (remove www, protocols, etc.)
+            const resultDomain = result.domain.replace(/^www\./, '').toLowerCase();
+            const normalizedTargetDomain = targetDomain.replace(/^www\./, '').toLowerCase();
+            
+            // Check for exact match or subdomain match
+            if (resultDomain === normalizedTargetDomain || 
+                resultDomain.endsWith('.' + normalizedTargetDomain) ||
+                normalizedTargetDomain.endsWith('.' + resultDomain)) {
+              position = result.rank_group || (i + 1);
+              matchedResult = result;
+              console.log(`✅ Found "${keyword}" ranking at position ${position} for ${targetDomain}`);
+              break;
+            }
+          }
+        }
+
+        if (position === 0) {
+          console.log(`❌ "${keyword}" not found in top 100 for ${targetDomain}`);
+        }
+
+        // Get search volume data (fallback to 0 if not available)
+        const searchVolume = data.tasks?.[0]?.result?.[0]?.keyword_info?.search_volume || 0;
+        const difficulty = data.tasks?.[0]?.result?.[0]?.keyword_info?.keyword_difficulty || 0;
+        const cpc = data.tasks?.[0]?.result?.[0]?.keyword_info?.cpc || 0;
+
+        return {
+          keyword,
+          position,
+          url: matchedResult?.url || null,
+          title: matchedResult?.title || null,
+          searchVolume,
+          difficulty,
+          cpc,
+          competition: difficulty / 100, // Convert to 0-1 scale
+          opportunity: calculateOpportunityScore(searchVolume, difficulty, cpc, position),
+          intent: classifyKeywordIntent(keyword)
+        };
       });
 
-      // Convert unified results to expected format
-      const urlRankings = results.organicRankings.map(ranking => ({
-        keyword: ranking.keyword,
-        position: ranking.position || 0,
-        url: ranking.url,
-        title: ranking.title,
-        description: null, // Not provided by unified service
-        searchVolume: ranking.searchVolume,
-        difficulty: ranking.difficulty,
-        cpc: ranking.cpc,
-        competition: ranking.competition,
-        opportunity: ranking.opportunity,
-        intent: ranking.intent
-      }));
-
-      console.log(`✅ OPTIMIZED URL RANKING: Found ${urlRankings.filter(r => r.position > 0).length}/${urlRankings.length} actual rankings`);
-      return urlRankings;
+      const results = await Promise.all(rankingPromises);
+      const rankedResults = results.filter(r => r.position > 0);
+      
+      console.log(`✅ ORGANIC SEARCH RANKINGS: Found ${rankedResults.length}/${keywords.length} actual rankings`);
+      return results;
 
     } catch (error) {
-      console.error('Optimized URL ranking failed:', error);
-      return [];
+      console.error('Organic search rankings failed:', error);
+      return keywords.map(keyword => ({
+        keyword,
+        position: 0,
+        url: null,
+        title: null,
+        searchVolume: 0,
+        difficulty: 0,
+        cpc: 0,
+        competition: 0,
+        opportunity: 0,
+        intent: classifyKeywordIntent(keyword)
+      }));
     }
   }
 
@@ -288,8 +361,8 @@ export class UrlRankingService {
   }
 
   /**
-   * Get comprehensive keyword data for a restaurant's domain using DataForSEO Google Ads API
-   * This discovers actual keywords the restaurant/competitors are ranking for
+   * Get comprehensive keyword data for a restaurant's domain using DataForSEO SERP API
+   * This discovers actual keywords the restaurant/competitors are ranking for with better local targeting
    */
   async getKeywordsForSite(
     domain: string, 
@@ -298,20 +371,18 @@ export class UrlRankingService {
     limit: number = 50
   ): Promise<any[]> {
     try {
-      console.log(`🔍 Keywords for Site API: Discovering actual keywords for ${domain}`);
-      
-      const locationName = `${city}, ${state}, United States`;
+      console.log(`🔍 Keywords for Site SERP API: Discovering actual keywords for ${domain}`);
       
       const requestBody = [{
         target: domain,
-        target_type: "site", // Get keywords for entire site
-        location_name: locationName,
+        target_type: "domain",
+        location_code: 2840, // US-wide
         language_code: "en",
-        search_partners: true,
-        sort_by: "search_volume" // Show highest volume keywords first
+        include_clickstream_data: true,
+        sort_by: "search_volume"
       }];
 
-      const response = await fetch('https://api.dataforseo.com/v3/keywords_data/google_ads/keywords_for_site/live', {
+      const response = await fetch('https://api.dataforseo.com/v3/dataforseo_labs/google/ranked_keywords/live', {
         method: 'POST',
         headers: {
           'Authorization': `Basic ${Buffer.from(`${this.login}:${this.password}`).toString('base64')}`,
@@ -328,29 +399,32 @@ export class UrlRankingService {
       const data = await response.json();
       const keywords = data.tasks?.[0]?.result || [];
       
-      console.log(`✅ Keywords for Site API: Found ${keywords.length} keywords for ${domain}`);
+      console.log(`✅ Keywords for Site SERP API: Found ${keywords.length} keywords for ${domain}`);
       
-      // Process and enhance keywords with opportunity scoring
+      // Process and enhance keywords with opportunity scoring from SERP API response
       const processedKeywords = keywords
         .slice(0, limit) // Limit results
         .map((keyword: any) => ({
-          keyword: keyword.keyword,
-          searchVolume: keyword.search_volume || 0,
-          competition: keyword.competition || 'UNKNOWN',
-          competitionIndex: keyword.competition_index || 0,
+          keyword: keyword.se_results_keywords,
+          searchVolume: keyword.impressions || keyword.search_volume || 0,
+          competition: 'MEDIUM', // SERP API doesn't provide competition data
+          competitionIndex: keyword.keyword_difficulty || 50,
           cpc: keyword.cpc || 0,
-          lowTopBid: keyword.low_top_of_page_bid || 0,
-          highTopBid: keyword.high_top_of_page_bid || 0,
-          monthlySearches: keyword.monthly_searches || [],
+          lowTopBid: 0,
+          highTopBid: 0,
+          monthlySearches: [],
+          position: keyword.se_results_position || 0,
+          clicks: keyword.clicks || 0,
           opportunityScore: this.calculateKeywordOpportunityScore(
-            keyword.search_volume || 0,
-            keyword.competition_index || 100,
-            keyword.cpc || 10
+            keyword.impressions || keyword.search_volume || 0,
+            keyword.keyword_difficulty || 50,
+            keyword.cpc || 1
           ),
-          intent: this.classifyKeywordIntent(keyword.keyword),
-          isLocal: this.isLocalKeyword(keyword.keyword, city, state),
-          trends: this.analyzeTrends(keyword.monthly_searches || [])
+          intent: this.classifyKeywordIntent(keyword.se_results_keywords),
+          isLocal: this.isLocalKeyword(keyword.se_results_keywords, city, state),
+          trends: { trend: 'stable', change: 0 }
         }))
+        .filter((k: any) => k.keyword && k.searchVolume > 0) // Filter valid keywords
         .sort((a: any, b: any) => b.opportunityScore - a.opportunityScore); // Sort by opportunity
 
       return processedKeywords;

@@ -833,50 +833,158 @@ function EnhancedResultsDashboard({ scanResult, restaurantName }: EnhancedResult
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2">
                       <Users className="w-5 h-5" />
-                      Local Competition
+                      Local Competition Analysis
                     </CardTitle>
                     <p className="text-sm text-gray-600 mt-1">
-                      Top competitors in your local market
+                      Top 5 restaurants ranking for your keywords
                     </p>
                   </CardHeader>
                   <CardContent>
-                    <div className="space-y-3">
-                      {scanResult.competitorIntelligence.organicCompetitors.slice(0, 4).map((competitor, index) => {
-                        const rating = competitor.rating || 0;
-                        const reviews = competitor.reviewCount || 0;
-                        
-                        return (
-                          <div key={index} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
-                            <div className="flex-1">
-                              <div className="font-medium text-sm">{competitor.title}</div>
-                              <div className="text-xs text-gray-500">
-                                {competitor.url}
-                              </div>
-                              {(rating > 0 || reviews > 0) && (
-                                <div className="flex items-center gap-2 mt-1">
-                                  {rating > 0 && (
-                                    <div className="flex items-center gap-1">
-                                      <Star className="w-3 h-3 text-yellow-500" />
-                                      <span className="text-xs">{rating}</span>
+                    {scanResult.localCompetitorData && scanResult.localCompetitorData.length > 0 ? (
+                      <div className="space-y-4">
+                        {/* Keyword selector */}
+                        <div className="flex items-center gap-2">
+                          <select 
+                            className="flex-1 px-3 py-2 border rounded-lg text-sm"
+                            value={selectedCompetitorKeyword || scanResult.localCompetitorData[0]?.keyword}
+                            onChange={(e) => setSelectedCompetitorKeyword(e.target.value)}
+                          >
+                            {scanResult.localCompetitorData.map((kw: any) => (
+                              <option key={kw.keyword} value={kw.keyword}>
+                                {kw.keyword} ({kw.searchVolume?.toLocaleString() || 0} searches)
+                              </option>
+                            ))}
+                          </select>
+                        </div>
+
+                        {/* Competitors for selected keyword */}
+                        {(() => {
+                          const selectedData = scanResult.localCompetitorData.find(
+                            (kw: any) => kw.keyword === (selectedCompetitorKeyword || scanResult.localCompetitorData[0]?.keyword)
+                          );
+                          
+                          if (!selectedData) return null;
+                          
+                          return (
+                            <div className="space-y-3">
+                              {/* Your position indicator */}
+                              {selectedData.yourPosition > 0 && (
+                                <div className="p-3 bg-purple-50 border border-purple-200 rounded-lg">
+                                  <div className="flex items-center justify-between">
+                                    <div className="font-medium text-sm text-purple-700">
+                                      Your Position: #{selectedData.yourPosition}
                                     </div>
-                                  )}
-                                  {reviews > 0 && (
-                                    <span className="text-xs text-gray-500">
-                                      {reviews.toLocaleString()} reviews
-                                    </span>
-                                  )}
+                                    <Badge variant={selectedData.yourPosition <= 3 ? 'default' : 'secondary'}>
+                                      {selectedData.yourPosition <= 3 ? 'Top 3' : selectedData.yourPosition <= 10 ? 'Page 1' : 'Needs Improvement'}
+                                    </Badge>
+                                  </div>
+                                </div>
+                              )}
+                              
+                              {/* Top 5 competitors */}
+                              {selectedData.topCompetitors?.slice(0, 5).map((competitor: any, index: number) => {
+                                const isYourRestaurant = competitor.position === selectedData.yourPosition;
+                                
+                                return (
+                                  <div 
+                                    key={index} 
+                                    className={`flex items-center justify-between p-3 rounded-lg ${
+                                      isYourRestaurant ? 'bg-purple-50 border border-purple-200' : 'bg-gray-50'
+                                    }`}
+                                  >
+                                    <div className="flex-1">
+                                      <div className="flex items-center gap-2">
+                                        <div className="font-medium text-sm">
+                                          {competitor.name}
+                                          {isYourRestaurant && <span className="ml-2 text-purple-600">(You)</span>}
+                                        </div>
+                                      </div>
+                                      <div className="text-xs text-gray-500 mt-1">
+                                        {competitor.address}
+                                      </div>
+                                      {(competitor.rating > 0 || competitor.reviewCount > 0) && (
+                                        <div className="flex items-center gap-3 mt-1">
+                                          {competitor.rating > 0 && (
+                                            <div className="flex items-center gap-1">
+                                              <Star className="w-3 h-3 text-yellow-500 fill-yellow-500" />
+                                              <span className="text-xs font-medium">{competitor.rating.toFixed(1)}</span>
+                                            </div>
+                                          )}
+                                          {competitor.reviewCount > 0 && (
+                                            <span className="text-xs text-gray-500">
+                                              {competitor.reviewCount.toLocaleString()} reviews
+                                            </span>
+                                          )}
+                                          {competitor.priceLevel && (
+                                            <span className="text-xs text-gray-500">
+                                              {competitor.priceLevel}
+                                            </span>
+                                          )}
+                                        </div>
+                                      )}
+                                    </div>
+                                    <div className="text-right">
+                                      <Badge 
+                                        variant={competitor.position <= 3 ? 'default' : 'secondary'} 
+                                        className="text-xs"
+                                      >
+                                        #{competitor.position}
+                                      </Badge>
+                                    </div>
+                                  </div>
+                                );
+                              })}
+                              
+                              {/* No competitors found */}
+                              {(!selectedData.topCompetitors || selectedData.topCompetitors.length === 0) && (
+                                <div className="text-sm text-gray-500 text-center py-4">
+                                  No competitor data available for this keyword
                                 </div>
                               )}
                             </div>
-                            <div className="text-right">
-                              <Badge variant="secondary" className="text-xs">
-                                #{index + 1}
-                              </Badge>
+                          );
+                        })()}
+                      </div>
+                    ) : (
+                      /* Fallback to original competitor display */
+                      <div className="space-y-3">
+                        {scanResult.competitorIntelligence.organicCompetitors.slice(0, 4).map((competitor, index) => {
+                          const rating = competitor.rating || 0;
+                          const reviews = competitor.reviewCount || 0;
+                          
+                          return (
+                            <div key={index} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                              <div className="flex-1">
+                                <div className="font-medium text-sm">{competitor.title}</div>
+                                <div className="text-xs text-gray-500">
+                                  {competitor.url}
+                                </div>
+                                {(rating > 0 || reviews > 0) && (
+                                  <div className="flex items-center gap-2 mt-1">
+                                    {rating > 0 && (
+                                      <div className="flex items-center gap-1">
+                                        <Star className="w-3 h-3 text-yellow-500" />
+                                        <span className="text-xs">{rating}</span>
+                                      </div>
+                                    )}
+                                    {reviews > 0 && (
+                                      <span className="text-xs text-gray-500">
+                                        {reviews.toLocaleString()} reviews
+                                      </span>
+                                    )}
+                                  </div>
+                                )}
+                              </div>
+                              <div className="text-right">
+                                <Badge variant="secondary" className="text-xs">
+                                  #{index + 1}
+                                </Badge>
+                              </div>
                             </div>
-                          </div>
-                        );
-                      })}
-                    </div>
+                          );
+                        })}
+                      </div>
+                    )}
                   </CardContent>
                 </Card>
 

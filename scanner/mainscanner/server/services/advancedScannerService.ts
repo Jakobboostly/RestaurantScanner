@@ -2,17 +2,14 @@ import { GoogleBusinessService } from './googleBusinessService.js';
 
 import { DataForSeoRankedKeywordsService } from './dataForSeoRankedKeywordsService.js';
 import { UrlRankingService } from './urlRankingService.js';
-import { LocalSEOAnalyzer } from './localSEOAnalyzer.js';
 import { AIRecommendationService } from './aiRecommendationService.js';
 import { GoogleReviewsService } from './googleReviewsService.js';
 import { ApifyReviewsService } from './apifyReviewsService.js';
-import { SocialMediaDetector } from './socialMediaDetector.js';
-import { EnhancedFacebookDetector } from './enhancedFacebookDetector.js';
 import { EnhancedSocialMediaDetector } from './enhancedSocialMediaDetector.js';
 import { FacebookPostsScraperService } from './facebookPostsScraperService.js';
-import { SeleniumScreenshotService } from './seleniumScreenshotService.js';
-import { RestaurantSearchScreenshotService } from './restaurantSearchScreenshotService.js';
 import { OpenAIReviewAnalysisService } from './openaiReviewAnalysisService.js';
+import { LocalCompetitorService } from './localCompetitorService.js';
+import { RestaurantLocalPackScanner } from './restaurantLocalPackScanner.js';
 import { ScanResult } from '@shared/schema';
 import axios from 'axios';
 import * as cheerio from 'cheerio';
@@ -43,16 +40,14 @@ export class AdvancedScannerService {
   private googleBusinessService: GoogleBusinessService;
   private rankedKeywordsService: DataForSeoRankedKeywordsService;
   private urlRankingService: UrlRankingService;
+  private localCompetitorService: LocalCompetitorService;
+  private localPackScanner: RestaurantLocalPackScanner;
 
   private aiRecommendationService: AIRecommendationService;
   private googleReviewsService: GoogleReviewsService;
   private apifyReviewsService?: ApifyReviewsService;
-  private socialMediaDetector: SocialMediaDetector;
-  private enhancedFacebookDetector: EnhancedFacebookDetector;
   private enhancedSocialMediaDetector: EnhancedSocialMediaDetector;
   private facebookPostsScraperService: FacebookPostsScraperService;
-  private seleniumScreenshotService: SeleniumScreenshotService;
-  private restaurantSearchScreenshotService: RestaurantSearchScreenshotService;
   private openaiReviewAnalysisService: OpenAIReviewAnalysisService;
   
   // Static cache for mood analysis results
@@ -75,15 +70,13 @@ export class AdvancedScannerService {
     this.googleBusinessService = new GoogleBusinessService(googleApiKey);
     this.rankedKeywordsService = new DataForSeoRankedKeywordsService(dataForSeoLogin, dataForSeoPassword);
     this.urlRankingService = new UrlRankingService(dataForSeoLogin, dataForSeoPassword, googleApiKey);
+    this.localCompetitorService = new LocalCompetitorService(dataForSeoLogin, dataForSeoPassword);
+    this.localPackScanner = new RestaurantLocalPackScanner(dataForSeoLogin, dataForSeoPassword);
     this.aiRecommendationService = new AIRecommendationService();
     this.googleReviewsService = new GoogleReviewsService(googleApiKey);
     this.apifyReviewsService = apifyApiKey ? new ApifyReviewsService(apifyApiKey) : undefined;
-    this.socialMediaDetector = new SocialMediaDetector();
-    this.enhancedFacebookDetector = new EnhancedFacebookDetector();
     this.enhancedSocialMediaDetector = new EnhancedSocialMediaDetector();
-    this.facebookPostsScraperService = new FacebookPostsScraperService(apifyApiKey || '');
-    this.seleniumScreenshotService = new SeleniumScreenshotService();
-    this.restaurantSearchScreenshotService = new RestaurantSearchScreenshotService();
+    this.facebookPostsScraperService = new FacebookPostsScraperService();
     this.openaiReviewAnalysisService = new OpenAIReviewAnalysisService(process.env.OPENAI_API_KEY);
   }
 
@@ -277,19 +270,19 @@ export class AdvancedScannerService {
       const businessName = businessProfileData?.name || '';
       console.log(`🔍 Passing business name to URL ranking: "${businessName}"`);
       
-      // Get both organic search rankings AND local pack rankings
-      const [organicRankings, localPackRankings] = await Promise.allSettled([
-        // Organic search results (regular blue links)
-        this.urlRankingService.getUrlRankingsForKeywordsWithBusinessName(
+      // Get organic search rankings for the 8 targeted keywords
+      const organicRankings = await Promise.resolve(
+        this.urlRankingService.getOrganicSearchRankings(
           targetUrl,
-          cuisineType, 
-          locationData.city, 
+          targetedKeywords,
+          locationData.city,
           locationData.state,
-          businessName,
-          'United States', 
-          'en'
-        ),
-        // Local pack results (map with 3 restaurants)  
+          businessName
+        )
+      );
+      
+      // Get local pack rankings for comparison (keeping existing local pack functionality)
+      const localPackRankings = await Promise.resolve(
         this.rankedKeywordsService.getLocalCompetitiveKeywords(
           businessName,
           cuisineType,
@@ -299,22 +292,22 @@ export class AdvancedScannerService {
           'en',
           businessProfileData?.website // Pass website URL for hybrid keyword analysis
         )
-      ]);
+      );
       
       let competitiveOpportunityKeywords: any[] = [];
       
       // Process organic rankings
-      if (organicRankings.status === 'fulfilled' && organicRankings.value?.length > 0) {
-        console.log(`✅ Got organic rankings for ${organicRankings.value.length} keywords`);
-        competitiveOpportunityKeywords = organicRankings.value;
+      if (organicRankings && organicRankings.length > 0) {
+        console.log(`✅ Got organic rankings for ${organicRankings.length} keywords`);
+        competitiveOpportunityKeywords = organicRankings;
       }
       
       // Merge with local pack rankings (prioritize local pack positions)
-      if (localPackRankings.status === 'fulfilled' && localPackRankings.value?.length > 0) {
-        console.log(`✅ Got local pack rankings for ${localPackRankings.value.length} keywords`);
+      if (localPackRankings && localPackRankings.length > 0) {
+        console.log(`✅ Got local pack rankings for ${localPackRankings.length} keywords`);
         
         // Create a merged result that shows both types of rankings
-        const localResults = localPackRankings.value;
+        const localResults = localPackRankings;
         
         competitiveOpportunityKeywords = competitiveOpportunityKeywords.map(organicKeyword => {
           // Find matching local keyword
@@ -344,7 +337,7 @@ export class AdvancedScannerService {
         const fallbackResults = [];
           for (const keyword of targetedKeywords) {
             try {
-              const volumeData = await this.urlRankingService.getSearchVolumeData(keyword, `${locationData.city}, ${locationData.state}, United States`, 'en');
+              const volumeData = await this.urlRankingService.getSearchVolumeData(keyword, `${locationData.city},${locationData.state},United States`, 'en');
               fallbackResults.push({
                 keyword: keyword,
                 position: 0, // Show as "Not Ranked"
@@ -418,6 +411,75 @@ export class AdvancedScannerService {
       
       console.log('🔍 Processed competitive keywords for frontend:', JSON.stringify(processedCompetitiveKeywords, null, 2));
       
+      // Get local competitor data for the 8 targeted keywords
+      console.log('🏆 Fetching local competitor data for keywords...');
+      let localCompetitorData = [];
+      try {
+        // Add timeout to prevent hanging
+        const competitorPromise = this.localCompetitorService.getLocalCompetitors({
+          businessName: businessName,
+          cuisine: cuisineType,
+          city: locationData.city,
+          state: locationData.state,
+          keywords: targetedKeywords
+        });
+        
+        const timeoutPromise = new Promise((_, reject) => 
+          setTimeout(() => reject(new Error('Competitor analysis timeout')), 15000)
+        );
+        
+        localCompetitorData = await Promise.race([
+          competitorPromise,
+          timeoutPromise
+        ]).catch(error => {
+          console.log('⚠️ Competitor data fetch failed or timed out:', error.message);
+          return [];
+        }) as any[];
+        
+        console.log(`✅ Found competitor data for ${localCompetitorData.length} keywords`);
+      } catch (error) {
+        console.log('❌ Failed to fetch local competitor data:', error);
+        localCompetitorData = [];
+      }
+      
+      // Get Local Pack visibility analysis
+      console.log('📍 Analyzing Local Pack visibility...');
+      let localPackReport = null;
+      try {
+        // Build client restaurant info from business profile
+        const clientRestaurant = {
+          business_name: businessName,
+          website: businessProfileData?.website || `https://${domain}`,
+          address: businessProfileData?.formatted_address || `${locationData.city}, ${locationData.state}`,
+          phone: businessProfileData?.phoneNumber || '',
+          google_cid: businessProfileData?.place_id || ''
+        };
+        
+        // Generate Local Pack specific keywords
+        const localPackKeywords = [
+          `${cuisineType} near me`,
+          `${cuisineType} ${locationData.city}`,
+          `best ${cuisineType} ${locationData.city}`,
+          `${cuisineType} delivery near me`,
+          `${cuisineType} ${locationData.city} ${locationData.state}`,
+          `top ${cuisineType} ${locationData.city}`,
+          `${cuisineType} restaurant near me`,
+          `${cuisineType} food ${locationData.city}`
+        ];
+        
+        const locationString = `${locationData.city},${locationData.state},United States`;
+        
+        localPackReport = await this.localPackScanner.scanKeywords(
+          clientRestaurant,
+          localPackKeywords,
+          locationString
+        );
+        
+        console.log(`✅ Local Pack analysis completed - Visibility: ${localPackReport.summary.visibility_score}%`);
+      } catch (error) {
+        console.log('❌ Failed to analyze Local Pack visibility:', error);
+      }
+      
       // Phase 3 complete - no artificial delay
 
       // Phase 4: Evaluating mobile experience (4 seconds)
@@ -439,15 +501,15 @@ export class AdvancedScannerService {
       console.log('📥 Manual Facebook URL for Phase 5:', manualFacebookUrl || 'None');
       
       // Start competitor analysis and social media detection
-      const competitorPromise = Promise.race([
-        this.googleBusinessService.findCompetitors(restaurantName, latitude, longitude),
-        new Promise((_, reject) => 
-          setTimeout(() => reject(new Error('Competitor analysis timeout')), 3500)
-        )
-      ]).catch(error => {
-        console.error('Competitor analysis failed:', error);
-        return [];
-      });
+              const competitorPromise = Promise.race([
+          this.googleBusinessService.findCompetitors(restaurantName, `${locationData.city}, ${locationData.state}`, 'restaurant'),
+          new Promise((_, reject) => 
+            setTimeout(() => reject(new Error('Competitor analysis timeout')), 3500)
+          )
+        ]).catch(error => {
+          console.error('Competitor analysis failed:', error);
+          return [];
+        });
       
       const socialMediaPromise = this.enhancedSocialMediaDetection(domain, restaurantName, businessProfile, placeId, manualFacebookUrl).catch(error => {
         console.error('❌ Social media detection failed:', error);
@@ -542,89 +604,12 @@ export class AdvancedScannerService {
       onProgress({ progress: 92, status: 'Building growth strategy...' });
 
       // Skip SERP screenshots to prevent crashes - use data-only approach
-      let serpAnalysis = [];
-      let serpScreenshots = [];
+      let serpAnalysis: any[] = [];
+      let serpScreenshots: any[] = [];
       
-      console.log('🎯 Phase 6: Starting SERP Analysis and Screenshot Capture');
-      
+      console.log('🎯 Phase 6: Skipping SERP screenshots and SERP analysis');
       try {
-        // Generate a more relevant search query based on cuisine type and city
-        const cuisineType = this.extractCuisineType(businessProfile, restaurantName);
-        const primaryKeyword = this.generatePrimaryKeywords(restaurantName, businessProfile)[0];
-        
-        // Extract city and state from Google Places API business profile
-        const locationData = businessProfile?.address ? 
-          this.extractCityFromAddress(businessProfile.address) : 
-          { city: 'Unknown', state: 'Unknown' };
-        
-        // Create a food-type and location-specific search query
-        const foodSearchQuery = locationData.city !== 'Unknown' ? 
-          `${cuisineType} ${locationData.city}` : 
-          `${cuisineType} near me`;
-        
-        console.log(`Starting SERP analysis and screenshot capture for keyword: "${primaryKeyword}"`);
-        console.log(`Food-specific screenshot query: "${foodSearchQuery}"`);
-        console.log(`Extracted cuisine type: "${cuisineType}"`);
-        console.log(`Google Places address: "${businessProfile?.address}"`);
-        console.log(`Extracted location: ${locationData.city}, ${locationData.state}`);
-        
-        // Simplified SERP analysis using ranked keywords data
-        const serpPromise = Promise.resolve([]);
-        
-        console.log('Initiating screenshot capture...');
-        
-        const screenshotPromise = Promise.race([
-          this.seleniumScreenshotService.captureGoogleSearch(
-            cuisineType, 
-            locationData.city, 
-            restaurantName, 
-            domain
-          ),
-          new Promise((_, reject) => 
-            setTimeout(() => reject(new Error('SERP screenshot timeout')), 8000)
-          )
-        ]);
-        
-        const [serpResult, screenshotResult] = await Promise.allSettled([serpPromise, screenshotPromise]);
-        
-        if (serpResult.status === 'fulfilled') {
-          serpAnalysis = Array.isArray(serpResult.value) ? serpResult.value : [];
-        } else {
-          console.error(`SERP analysis failed for "${primaryKeyword}":`, serpResult.reason);
-        }
-        
-        console.log(`Screenshot result status: ${screenshotResult.status}`);
-        if (screenshotResult.status === 'fulfilled') {
-          serpScreenshots = [screenshotResult.value];
-          console.log(`SERP screenshot captured successfully for "${primaryKeyword}"`);
-          console.log('Screenshot URL:', screenshotResult.value.screenshotUrl || 'No URL provided');
-          console.log('Full screenshot result:', JSON.stringify(screenshotResult.value, null, 2));
-        } else {
-          console.error(`SERP screenshot failed for "${primaryKeyword}":`, screenshotResult.reason);
-          console.error('Screenshot service error details:', screenshotResult.reason?.message || screenshotResult.reason);
-          
-          // Create a fallback screenshot structure to test the UI
-          const fallbackScreenshot = {
-            keyword: primaryKeyword,
-            location: this.extractCity(restaurantName) || 'United States',
-            screenshotUrl: '', // Empty for now
-            restaurantRanking: {
-              found: false,
-              position: 0,
-              title: '',
-              url: '',
-              snippet: ''
-            },
-            totalResults: 0,
-            searchUrl: `https://www.google.com/search?q=${encodeURIComponent(primaryKeyword)}`,
-            localPackPresent: false,
-            localPackResults: []
-          };
-          
-          console.log('Using fallback screenshot structure - screenshots will show search URL');
-          serpScreenshots = [fallbackScreenshot]; // Enable fallback to provide UI content
-        }
-        
+        // Intentionally left blank: screenshots and SERP analysis removed
         console.log('Fast SERP analysis completed');
       } catch (error) {
         console.error('SERP analysis failed:', error);
@@ -634,7 +619,7 @@ export class AdvancedScannerService {
 
       // Final processing
       onProgress({ progress: 100, status: 'Finalizing analysis...' });
-      
+
       const enhancedResult = await this.generateEnhancedReport(
         placeId,
         domain,
@@ -653,7 +638,9 @@ export class AdvancedScannerService {
         null, // Remove restaurant search screenshot for now
         processedCompetitiveKeywords,
         enhancedKeywordDiscovery,
-        competitiveGaps
+        competitiveGaps,
+        localCompetitorData,
+        localPackReport
       );
 
       const scanDuration = Date.now() - scanStartTime;
@@ -691,8 +678,10 @@ export class AdvancedScannerService {
     restaurantSearchScreenshot: any = null,
     processedCompetitiveKeywords: any[] = [],
     enhancedKeywordDiscovery: any[] = [],
-    competitiveGaps: any[] = []
-  ): EnhancedScanResult {
+    competitiveGaps: any[] = [],
+    localCompetitorData: any[] = [],
+    localPackReport: any = null
+  ): Promise<EnhancedScanResult> {
     // Map processedKeywords to keywordData for compatibility with existing methods
     const keywordData = processedKeywords;
     
@@ -725,7 +714,7 @@ export class AdvancedScannerService {
       serpAnalysis
     );
     // Generate AI-powered recommendations
-    const aiRecommendations = await this.aiRecommendationService.generateRecommendations({
+              const aiRecommendations = await this.aiRecommendationService.generateRecommendations({
       name: restaurantName,
       rating: businessProfile?.rating || 4.0,
       totalReviews: businessProfile?.reviewCount || businessProfile?.totalReviews || 0,
@@ -738,12 +727,12 @@ export class AdvancedScannerService {
       issues
     });
     
-    const recommendations = aiRecommendations.map(rec => ({
-      title: rec.title,
-      description: rec.description,
-      impact: rec.impact,
-      effort: rec.effort,
-      category: rec.category
+    const recommendations: { title: string; description: string; impact: 'low' | 'medium' | 'high'; effort: 'low' | 'medium' | 'high'; category: string; }[] = aiRecommendations.map((rec: any) => ({
+      title: rec.message,
+      description: rec.message,
+      impact: 'medium',
+      effort: 'medium',
+      category: rec.category || 'general'
     }));
 
     // Merge SERP position data into keyword data
@@ -817,13 +806,30 @@ export class AdvancedScannerService {
     console.log('Sample processed keyword:', enrichedKeywordData[0]);
 
     // Ensure keywords are in multiple places for frontend compatibility
-    const enhancedKeywordAnalysis = {
+           // Fetch domain ranked keywords (DataForSEO Labs)
+       let domainRankedKeywords: any[] = [];
+       try {
+         const rankedService = new DataForSeoRankedKeywordsService(this.rankedKeywordsService['login'] as any, this.rankedKeywordsService['password'] as any);
+         const locationName = `${(businessProfile?.address && this.extractCityFromAddress(businessProfile.address).city) || 'United States'},${this.extractCityFromAddress(businessProfile?.address || '').state || ''},United States`.replace(/,\s+,/g, ',').replace(/\s+,\s+United States$/, ',United States');
+                   domainRankedKeywords = await rankedService.getDomainRankedKeywords({
+            target: domain,
+            location_code: 2840,
+            language_code: 'en',
+            limit: 100,
+            include_subdomains: false,
+            order_by: ['keyword_data.keyword_info.search_volume,desc']
+          });
+       } catch (err) {
+         console.log('⚠️ Domain ranked keywords fetch failed:', (err as any)?.message || err);
+       }
+
+            const enhancedKeywordAnalysis = {
       ...keywordAnalysis,
       targetKeywords: enrichedKeywordData,  // Frontend expects this property with position data
       rankingPositions: keywordAnalysis.rankingPositions
     };
-
-    return {
+ 
+    const result = {
       domain,
       restaurantName,
       placeId,
@@ -839,6 +845,9 @@ export class AdvancedScannerService {
       enhancedKeywordDiscovery: enhancedKeywordDiscovery || [],  // Actual keywords website ranks for
       competitiveGaps: competitiveGaps || [],  // Keywords competitors rank for but target doesn't
       keywordAnalysis: enhancedKeywordAnalysis,
+      domainRankedKeywords,
+      localCompetitorData: localCompetitorData || [],  // Top 5 competitors for each keyword
+      localPackReport: localPackReport || null,  // Local Pack visibility analysis
       competitors: await this.generateDetailedCompetitorAnalysis(competitors, restaurantName, businessProfile, keywordData),
       competitorIntelligence,
       serpFeatures,
@@ -1471,15 +1480,36 @@ export class AdvancedScannerService {
     if (parts.length >= 3) {
       const city = parts[1].trim();
       const stateZip = parts[2].trim();
-      const state = stateZip.split(' ')[0].trim();
+      const stateAbbrev = stateZip.split(' ')[0].trim();
+      
+      // Convert state abbreviation to full name for DataForSEO API
+      const fullStateName = this.convertStateAbbrevToFullName(stateAbbrev);
       
       return { 
         city: city || 'Unknown',
-        state: state || 'Unknown'
+        state: fullStateName || stateAbbrev || 'Unknown'
       };
     }
     
     return { city: 'Unknown', state: 'Unknown' };
+  }
+
+  private convertStateAbbrevToFullName(abbrev: string): string {
+    const stateMap: { [key: string]: string } = {
+      'AL': 'Alabama', 'AK': 'Alaska', 'AZ': 'Arizona', 'AR': 'Arkansas', 'CA': 'California',
+      'CO': 'Colorado', 'CT': 'Connecticut', 'DE': 'Delaware', 'FL': 'Florida', 'GA': 'Georgia',
+      'HI': 'Hawaii', 'ID': 'Idaho', 'IL': 'Illinois', 'IN': 'Indiana', 'IA': 'Iowa',
+      'KS': 'Kansas', 'KY': 'Kentucky', 'LA': 'Louisiana', 'ME': 'Maine', 'MD': 'Maryland',
+      'MA': 'Massachusetts', 'MI': 'Michigan', 'MN': 'Minnesota', 'MS': 'Mississippi', 'MO': 'Missouri',
+      'MT': 'Montana', 'NE': 'Nebraska', 'NV': 'Nevada', 'NH': 'New Hampshire', 'NJ': 'New Jersey',
+      'NM': 'New Mexico', 'NY': 'New York', 'NC': 'North Carolina', 'ND': 'North Dakota', 'OH': 'Ohio',
+      'OK': 'Oklahoma', 'OR': 'Oregon', 'PA': 'Pennsylvania', 'RI': 'Rhode Island', 'SC': 'South Carolina',
+      'SD': 'South Dakota', 'TN': 'Tennessee', 'TX': 'Texas', 'UT': 'Utah', 'VT': 'Vermont',
+      'VA': 'Virginia', 'WA': 'Washington', 'WV': 'West Virginia', 'WI': 'Wisconsin', 'WY': 'Wyoming',
+      'DC': 'District of Columbia'
+    };
+    
+    return stateMap[abbrev.toUpperCase()] || abbrev;
   }
 
   private calculateBusinessScore(businessProfile: any): number {
@@ -1704,7 +1734,7 @@ export class AdvancedScannerService {
         sentimentBreakdown: sentimentAnalysis.sentimentBreakdown,
         reviewSources: ['Google Places API (Apify Enhanced)'],
         keyThemes: sentimentAnalysis.keyThemes,
-        recentReviews: apifyReviews.data.slice(0, 10).map(review => ({
+        recentReviews: apifyReviews.data.slice(0, 10).map((review: any) => ({
           author: review.reviewerName,
           rating: review.rating,
           text: review.text,
@@ -1712,7 +1742,7 @@ export class AdvancedScannerService {
           sentiment: this.classifyReviewSentiment(review.text, review.rating),
           date: review.publishedAtDate,
         })),
-        detailedReviews: apifyReviews.data.map(review => ({
+        detailedReviews: apifyReviews.data.map((review: any) => ({
           ...review,
           platform: 'Google Places (Apify)',
           sentiment: this.classifyReviewSentiment(review.text, review.rating),
@@ -1815,7 +1845,7 @@ export class AdvancedScannerService {
   private analyzeSentimentFromGoogleReviews(reviews: any[]): any {
     const sentiments = { positive: 0, neutral: 0, negative: 0 };
     const themes: string[] = [];
-    const examples = { positive: [], neutral: [], negative: [] };
+          const examples: { positive: any[]; neutral: any[]; negative: any[] } = { positive: [], neutral: [], negative: [] };
     
     for (const review of reviews) {
       const rating = review.rating || 0;
@@ -1849,7 +1879,7 @@ export class AdvancedScannerService {
         neutral: Math.round((sentiments.neutral / total) * 100),
         negative: Math.round((sentiments.negative / total) * 100)
       },
-      keyThemes: [...new Set(themes)].slice(0, 5),
+      keyThemes: Array.from(new Set(themes)).slice(0, 5),
       examples
     };
   }
@@ -2232,22 +2262,22 @@ export class AdvancedScannerService {
         contentAnalysis: await this.analyzeWebsiteContent(domain)
       };
 
-    } catch (error) {
-      console.error('Mobile performance analysis failed:', error.message);
-      console.error('Error details:', error.response?.data || error);
-      
-      return {
-        score: 70,
-        loadTime: 3.0,
-        isResponsive: true,
-        touchFriendly: true,
-        textReadable: true,
-        navigationEasy: true,
-        issues: [`Mobile analysis failed: ${error.message}`],
-        recommendations: ['Check website accessibility and mobile optimization', 'Verify Google PageSpeed Insights API key'],
-        contentAnalysis: await this.analyzeWebsiteContent(domain)
-      };
-    }
+          } catch (error: any) {
+        console.error('Mobile performance analysis failed:', error?.message);
+        console.error('Error details:', error?.response?.data || error);
+        
+        return {
+          score: 70,
+          loadTime: 3.0,
+          isResponsive: true,
+          touchFriendly: true,
+          textReadable: true,
+          navigationEasy: true,
+          issues: [`Mobile analysis failed: ${error?.message}`],
+          recommendations: ['Check website accessibility and mobile optimization', 'Verify Google PageSpeed Insights API key'],
+          contentAnalysis: await this.analyzeWebsiteContent(domain)
+        };
+      }
   }
 
   private async analyzeWebsiteContent(domain: string): Promise<any> {
@@ -2272,7 +2302,7 @@ export class AdvancedScannerService {
       // Extract SEO elements
       const title = $('title').text().trim() || 'No title found';
       const metaDescription = $('meta[name="description"]').attr('content')?.trim() || 'No meta description found';
-      const h1Tags = [];
+      const h1Tags: string[] = [];
       $('h1').each((i, el) => {
         const text = $(el).text().trim();
         if (text) h1Tags.push(text);
@@ -2820,8 +2850,8 @@ export class AdvancedScannerService {
           if (apifyResult.success && apifyResult.socialMedia) {
             apifySocialData = apifyResult.socialMedia;
             console.log(`🎯 Apify found ${Object.values(apifySocialData).flat().length} total social media links`);
-            if (apifySocialData.facebooks.length > 0) console.log(`Facebook via Apify: ${apifySocialData.facebooks[0]}`);
-            if (apifySocialData.instagrams.length > 0) console.log(`Instagram via Apify: ${apifySocialData.instagrams[0]}`);
+            if (Array.isArray(apifySocialData.facebook) && apifySocialData.facebook.length > 0) console.log(`Facebook via Apify: ${apifySocialData.facebook[0]}`);
+            if (Array.isArray(apifySocialData.instagram) && apifySocialData.instagram.length > 0) console.log(`Instagram via Apify: ${apifySocialData.instagram[0]}`);
           }
         } catch (error) {
           console.error('Failed to get Apify social media data:', error);

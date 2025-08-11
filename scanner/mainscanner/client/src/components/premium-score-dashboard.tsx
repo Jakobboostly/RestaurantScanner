@@ -48,13 +48,6 @@ import { WebsiteEmbed } from "./WebsiteEmbed";
 import { SentimentAnalysisVisualization } from "./SentimentAnalysisVisualization";
 import { ScanResult } from "@shared/schema";
 
-interface RestaurantSearchScreenshot {
-  searchQuery: string;
-  screenshotBase64: string;
-  timestamp: string;
-  success: boolean;
-  screenshotSize?: string;
-}
 
 interface PremiumScoreDashboardProps {
   scanResult: ScanResult;
@@ -111,13 +104,14 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
     reviews: 'Analyzing reviews and reputation...'
   });
   
-  const [loadingScreenshot, setLoadingScreenshot] = useState(false);
-  const [restaurantSearchScreenshot, setRestaurantSearchScreenshot] = useState<RestaurantSearchScreenshot | null>(null);
   
   const [activeTab, setActiveTab] = useState<'search' | 'social' | 'local' | 'reviews'>('search');
   
   // State for selected keyword index in "See Where You Rank" section
   const [selectedKeywordIndex, setSelectedKeywordIndex] = useState(0);
+  
+  // State for selected competitor keyword in Local Competition card
+  const [selectedCompetitorKeyword, setSelectedCompetitorKeyword] = useState<string | null>(null);
   
   // State for mood analysis polling
   const [moodAnalysis, setMoodAnalysis] = useState<any>(scanResult.reviewsAnalysis?.customerMoodAnalysis || null);
@@ -160,35 +154,6 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
     }
   }, [scanResult.placeId, isLoadingMoodAnalysis]); // Use the actual placeId from scan result
 
-  // Function to fetch restaurant search screenshot
-  const fetchRestaurantSearchScreenshot = async () => {
-    if (!scanResult.domain) return;
-    
-    setLoadingScreenshot(true);
-    try {
-      const response = await fetch('/api/screenshot/restaurant-search', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          domain: scanResult.domain,
-          restaurantName: restaurantName
-        }),
-      });
-
-      if (response.ok) {
-        const result = await response.json();
-        if (result.success) {
-          setRestaurantSearchScreenshot(result);
-        }
-      }
-    } catch (error) {
-      console.error('Failed to fetch restaurant search screenshot:', error);
-    } finally {
-      setLoadingScreenshot(false);
-    }
-  };
 
   // Helper function to extract search terms for manual search
   const getSearchTerms = () => {
@@ -732,6 +697,63 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                         </div>
                       </div>
                     </div>
+                    
+                    {/* Where You're Ranking - Domain Ranked Keywords */}
+                    {Array.isArray((scanResult as any).domainRankedKeywords) && (scanResult as any).domainRankedKeywords.length > 0 && (
+                      <div className="bg-white border border-gray-200 rounded-lg p-4">
+                        <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                          <Search className="w-5 h-5 text-[#5F5FFF]" />
+                          Where You’re Ranking
+                        </h3>
+                        <div className="text-xs text-gray-500 mb-3">
+                          Live Google rankings for your root domain — sorted by search volume. Subdomains are excluded.
+                        </div>
+                        <div className="overflow-x-auto">
+                          <table className="w-full text-sm">
+                            <thead>
+                              <tr className="text-left text-gray-500 border-b">
+                                <th className="py-2 pr-3">Position</th>
+                                <th className="py-2 pr-3">Keyword</th>
+                                <th className="py-2 pr-3">Search Volume</th>
+                                <th className="py-2">Competition</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {((scanResult as any).domainRankedKeywords as any[])
+                                .sort((a, b) => (b.search_volume || 0) - (a.search_volume || 0))
+                                .slice(0, 20)
+                                .map((row, idx) => (
+                                <tr key={idx} className="border-b last:border-0">
+                                  <td className="py-2 pr-3">
+                                    {row.absolute_position ? (
+                                      <Badge className={`${row.absolute_position <= 3 ? 'bg-green-500 text-white' : row.absolute_position <= 10 ? 'bg-yellow-100 text-yellow-800' : 'bg-gray-100 text-gray-800'}`}>#{row.absolute_position}</Badge>
+                                    ) : (
+                                      <span className="text-gray-400">—</span>
+                                    )}
+                                  </td>
+                                  <td className="py-2 pr-3 text-gray-800">
+                                    {row.keyword}
+                                  </td>
+                                  <td className="py-2 pr-3">
+                                    {row.search_volume ? row.search_volume.toLocaleString() : <span className="text-gray-400">0</span>}
+                                  </td>
+                                  <td className="py-2">
+                                    {typeof row.competition === 'number' ? (
+                                      <div className="flex items-center gap-2">
+                                        <div className="w-24 bg-gray-100 rounded h-1.5 overflow-hidden">
+                                          <div className="h-1.5 bg-[#5F5FFF]" style={{ width: `${Math.min(100, Math.round(row.competition * 100))}%` }} />
+                                        </div>
+                                        <span className="text-xs text-gray-500">{Math.round(row.competition * 100)}%</span>
+                                      </div>
+                                    ) : <span className="text-gray-400">—</span>}
+                                  </td>
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    )}
                     
                     <div className="pt-4 border-t border-gray-200 space-y-3">
                       <div className="flex justify-between items-center">
@@ -1400,156 +1422,250 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
               {activeTab === 'local' && (
                 <div className="space-y-6">
                   {/* Local Search Position vs Competitors */}
-                  <div className="bg-gradient-to-r from-[#5F5FFF]/5 to-[#7375FD]/5 border border-[#5F5FFF]/20 rounded-lg p-4">
-                    <h3 className="font-bold text-gray-800 mb-4 flex items-center gap-2">
-                      <MapPin className="w-5 h-5 text-[#5F5FFF]" />
-                      Local Search Visibility Analysis
-                    </h3>
-                    {(() => {
-                      // Get all available keyword data from multiple sources
-                      const allKeywords = [
-                        ...(scanResult.keywords || []),
-                        ...(scanResult.competitiveOpportunityKeywords || []),
-                        ...(scanResult.keywordAnalysis?.targetKeywords || [])
-                      ].filter((k, index, arr) => 
-                        k && k.keyword && arr.findIndex(item => item.keyword === k.keyword) === index
-                      );
-
-                      const topRankings = allKeywords.filter(k => k.position > 0 && k.position <= 3).length;
-                      const totalKeywords = allKeywords.length;
-                      const avgVolume = totalKeywords > 0 
-                        ? Math.round(allKeywords.reduce((sum, k) => {
-                            const volume = k.searchVolume === 0 || !k.searchVolume ? 
-                              Math.floor(1100 + Math.random() * 600) : // 1100-1700 range to match display
-                              k.searchVolume;
-                            return sum + volume;
-                          }, 0) / totalKeywords)
-                        : 0;
-                      const missingRankings = allKeywords.filter(k => !k.position || k.position === 0).length;
-
-                      return (
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-                          <div className="bg-white p-4 rounded-lg border">
-                            <div className="text-2xl font-bold text-[#5F5FFF] mb-1">
-                              {topRankings} / {totalKeywords}
-                            </div>
-                            <div className="text-sm text-gray-600">Top 3 Rankings</div>
-                            <div className="text-xs text-gray-500 mt-1">Keywords ranking in top 3</div>
-                          </div>
-                          <div className="bg-white p-4 rounded-lg border">
-                            <div className="text-2xl font-bold text-[#F59E0B] mb-1">
-                              {avgVolume.toLocaleString()}
-                            </div>
-                            <div className="text-sm text-gray-600">Avg. Search Volume</div>
-                            <div className="text-xs text-gray-500 mt-1">Monthly local searches</div>
-                          </div>
-                          <div className="bg-white p-4 rounded-lg border">
-                            <div className="text-2xl font-bold text-[#16A34A] mb-1">
-                              {missingRankings}
-                            </div>
-                            <div className="text-sm text-gray-600">Missing Rankings</div>
-                            <div className="text-xs text-gray-500 mt-1">Keywords not ranking</div>
-                          </div>
-                        </div>
-                      );
-                    })()}
-                    
-                    {/* Local Keyword Performance Chart */}
-                    <div className="bg-white p-4 rounded-lg border">
-                      <h4 className="font-semibold mb-3">Local Keyword Performance</h4>
+                  {/* Removed Local Search Visibility Analysis and Local Keyword Performance sections */}
+                  
+                  {/* Local Competition Analysis */}
+                  {scanResult.localCompetitorData && scanResult.localCompetitorData.length > 0 && (
+                    <div className="bg-gradient-to-r from-[#5F5FFF]/5 to-[#7375FD]/5 border border-[#5F5FFF]/20 rounded-lg p-4">
+                      <h3 className="font-bold text-gray-800 mb-4 flex items-center gap-2">
+                        <Users className="w-5 h-5 text-[#5F5FFF]" />
+                        Local Competition Analysis
+                      </h3>
+                      <p className="text-sm text-gray-600 mb-4">
+                        Top 5 restaurants ranking for your keywords in {scanResult.businessProfile?.address?.split(',')[1]?.trim() || 'your area'}
+                      </p>
                       
-                      {/* AI Analysis Banner */}
-                      {(() => {
-                        const chartKeywords = [
-                          ...(scanResult.keywords || []),
-                          ...(scanResult.competitiveOpportunityKeywords || []),
-                          ...(scanResult.keywordAnalysis?.targetKeywords || [])
-                        ].filter((k, index, arr) => 
-                          k && k.keyword && arr.findIndex(item => item.keyword === k.keyword) === index
-                        );
+                      <div className="space-y-4">
+                        {/* Keyword selector */}
+                        <div className="flex items-center gap-2">
+                          <select 
+                            className="flex-1 px-3 py-2 border rounded-lg text-sm bg-white"
+                            value={selectedCompetitorKeyword || scanResult.localCompetitorData[0]?.keyword}
+                            onChange={(e) => setSelectedCompetitorKeyword(e.target.value)}
+                          >
+                            {scanResult.localCompetitorData.map((kw: any) => (
+                              <option key={kw.keyword} value={kw.keyword}>
+                                {kw.keyword} ({kw.searchVolume?.toLocaleString() || 0} searches/mo)
+                              </option>
+                            ))}
+                          </select>
+                        </div>
 
-                        const topRankings = chartKeywords.filter(k => k.position > 0 && k.position <= 3).length;
-                        const totalKeywords = chartKeywords.length;
-                        const avgPosition = chartKeywords.length > 0 
-                          ? Math.round(chartKeywords.filter(k => k.position > 0).reduce((sum, k) => sum + k.position, 0) / Math.max(chartKeywords.filter(k => k.position > 0).length, 1))
-                          : 0;
-                        const notRanking = chartKeywords.filter(k => !k.position || k.position === 0).length;
-
-                        let analysis = "";
-                        let bgColor = "";
-                        let textColor = "";
-
-                        if (topRankings >= 3) {
-                          analysis = `Excellent local search performance! You're ranking in the top 3 for ${topRankings} keywords. Boostly's text marketing can capitalize on this strong visibility by converting these searchers into loyal customers through targeted promotions.`;
-                          bgColor = "bg-green-50 border-green-200";
-                          textColor = "text-green-800";
-                        } else if (topRankings >= 1) {
-                          analysis = `Good local search foundation with ${topRankings} top-3 rankings, but room for improvement. Boostly's local SEO services can boost your remaining keywords while our text marketing builds a loyal customer base from your current visibility.`;
-                          bgColor = "bg-yellow-50 border-yellow-200";
-                          textColor = "text-yellow-800";
-                        } else if (avgPosition > 0 && avgPosition <= 20) {
-                          analysis = `Your keywords are ranking but need optimization to reach the top 3 where customers actually click. Boostly's local SEO services can improve these rankings while text marketing ensures you don't lose potential customers during the improvement process.`;
-                          bgColor = "bg-orange-50 border-orange-200";
-                          textColor = "text-orange-800";
-                        } else {
-                          analysis = `Critical opportunity: Most keywords aren't ranking in local search. Boostly's local SEO services will get you visible for "near me" searches while our text marketing builds direct customer relationships that don't depend on search rankings.`;
-                          bgColor = "bg-red-50 border-red-200";
-                          textColor = "text-red-800";
-                        }
-
-                        return (
-                          <div className={`p-3 rounded-lg border mb-4 ${bgColor}`}>
-                            <div className={`text-sm ${textColor}`}>
-                              <strong>📊 Performance Analysis:</strong> {analysis}
-                            </div>
-                          </div>
-                        );
-                      })()}
-                      <div className="space-y-3">
+                        {/* Competitors for selected keyword */}
                         {(() => {
-                          // Get comprehensive keyword data for the chart
-                          const chartKeywords = [
-                            ...(scanResult.keywords || []),
-                            ...(scanResult.competitiveOpportunityKeywords || []),
-                            ...(scanResult.keywordAnalysis?.targetKeywords || [])
-                          ].filter((k, index, arr) => 
-                            k && k.keyword && arr.findIndex(item => item.keyword === k.keyword) === index
+                          const selectedData = scanResult.localCompetitorData.find(
+                            (kw: any) => kw.keyword === (selectedCompetitorKeyword || scanResult.localCompetitorData[0]?.keyword)
                           );
-
-                          return chartKeywords
-                            .sort((a: any, b: any) => (b.position || 999) - (a.position || 999))
-                            .slice(0, 6).map((keyword: any, index: number) => (
-                          <div key={index} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
-                            <div className="flex-1">
-                              <div className="font-medium text-sm">{keyword.keyword}</div>
-                              <div className="text-xs text-gray-500">
-                                {keyword.searchVolume === 0 || !keyword.searchVolume ? 
-                                  `${(1.1 + Math.random() * 0.6).toFixed(1)}k` : 
-                                  keyword.searchVolume > 1000 ? `${Math.round(keyword.searchVolume / 1000)}k` : keyword.searchVolume
-                                } searches/month
-                              </div>
-                            </div>
-                            <div className="flex items-center gap-3">
-                              {keyword.position > 0 ? (
-                                <div className={`px-3 py-1 rounded-full text-sm font-medium ${
-                                  keyword.position <= 3 ? 'bg-green-100 text-green-800' :
-                                  keyword.position <= 10 ? 'bg-yellow-100 text-yellow-800' :
-                                  'bg-red-100 text-red-800'
-                                }`}>
-                                  #{keyword.position}
+                          
+                          if (!selectedData) return null;
+                          
+                          return (
+                            <div className="space-y-3">
+                              {/* Your position indicator */}
+                              {selectedData.yourPosition > 0 && (
+                                <div className="p-3 bg-purple-50 border border-purple-200 rounded-lg">
+                                  <div className="flex items-center justify-between">
+                                    <div className="font-medium text-sm text-purple-700">
+                                      Your Current Position: #{selectedData.yourPosition}
+                                    </div>
+                                    <Badge 
+                                      variant={selectedData.yourPosition <= 3 ? 'default' : 'secondary'}
+                                      className={selectedData.yourPosition <= 3 ? 'bg-green-500 text-white' : ''}
+                                    >
+                                      {selectedData.yourPosition <= 3 ? '🏆 Top 3' : selectedData.yourPosition <= 10 ? 'Page 1' : 'Needs Improvement'}
+                                    </Badge>
+                                  </div>
                                 </div>
-                              ) : (
-                                <div className="px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-gray-600">
-                                  Not Ranked
+                              )}
+                              
+                              {/* Top 5 competitors */}
+                              {selectedData.topCompetitors?.slice(0, 5).map((competitor: any, index: number) => {
+                                const isYourRestaurant = competitor.position === selectedData.yourPosition && 
+                                  competitor.name.toLowerCase().includes(restaurantName.toLowerCase().split(' ')[0]);
+                                
+                                return (
+                                  <div 
+                                    key={index} 
+                                    className={`flex items-center justify-between p-3 rounded-lg ${
+                                      isYourRestaurant ? 'bg-purple-50 border-2 border-purple-300' : 'bg-white border border-gray-200'
+                                    }`}
+                                  >
+                                    <div className="flex-1">
+                                      <div className="flex items-center gap-2">
+                                        <div className="font-medium text-sm">
+                                          {competitor.name}
+                                          {isYourRestaurant && <span className="ml-2 text-purple-600 font-bold">(You)</span>}
+                                        </div>
+                                      </div>
+                                      <div className="text-xs text-gray-500 mt-1">
+                                        {competitor.address}
+                                      </div>
+                                      {(competitor.rating > 0 || competitor.reviewCount > 0) && (
+                                        <div className="flex items-center gap-3 mt-2">
+                                          {competitor.rating > 0 && (
+                                            <div className="flex items-center gap-1">
+                                              <Star className="w-3 h-3 text-yellow-500 fill-yellow-500" />
+                                              <span className="text-xs font-medium">{competitor.rating.toFixed(1)}</span>
+                                            </div>
+                                          )}
+                                          {competitor.reviewCount > 0 && (
+                                            <span className="text-xs text-gray-500">
+                                              {competitor.reviewCount.toLocaleString()} reviews
+                                            </span>
+                                          )}
+                                          {competitor.priceLevel && (
+                                            <span className="text-xs text-gray-500">
+                                              {competitor.priceLevel}
+                                            </span>
+                                          )}
+                                        </div>
+                                      )}
+                                    </div>
+                                    <div className="text-right">
+                                      <Badge 
+                                        variant={competitor.position <= 3 ? 'default' : 'secondary'} 
+                                        className={`text-xs ${competitor.position <= 3 ? 'bg-green-100 text-green-800' : ''}`}
+                                      >
+                                        #{competitor.position}
+                                      </Badge>
+                                    </div>
+                                  </div>
+                                );
+                              })}
+                              
+                              {/* No competitors found */}
+                              {(!selectedData.topCompetitors || selectedData.topCompetitors.length === 0) && (
+                                <div className="text-sm text-gray-500 text-center py-4">
+                                  No competitor data available for this keyword
+                                </div>
+                              )}
+                              
+                              {/* Competition Insight */}
+                              {selectedData.topCompetitors && selectedData.topCompetitors.length > 0 && (
+                                <div className="mt-4 p-3 bg-blue-50 border border-blue-200 rounded-lg">
+                                  <div className="text-sm font-semibold text-blue-900 mb-1">💡 Competition Insight</div>
+                                  <div className="text-xs text-blue-700">
+                                    {selectedData.yourPosition <= 3 
+                                      ? `Great job! You're in the top 3 for "${selectedData.keyword}". Boostly's text marketing can help convert these searchers into customers.`
+                                      : selectedData.yourPosition > 0 && selectedData.yourPosition <= 10
+                                      ? `You're on page 1 but not in the top 3 where most clicks happen. Boostly's SEO service can boost you to the top spots.`
+                                      : `You're not ranking for "${selectedData.keyword}" yet. This is a major opportunity - Boostly can help you capture this traffic.`
+                                    }
+                                  </div>
                                 </div>
                               )}
                             </div>
-                          </div>
-                            ));
+                          );
                         })()}
                       </div>
                     </div>
-                  </div>
+                  )}
+
+                  {/* Local Pack Visibility Scanner */}
+                  {scanResult.localPackReport && (
+                    <div className="bg-gradient-to-r from-[#16A34A]/5 to-[#4ADE80]/5 border border-[#16A34A]/20 rounded-lg p-4">
+                      <h3 className="font-bold text-gray-800 mb-4 flex items-center gap-2">
+                        <MapPin className="w-5 h-5 text-[#16A34A]" />
+                        Local Pack Visibility Scanner
+                      </h3>
+                      <p className="text-sm text-gray-600 mb-4">
+                        Analysis of your restaurant's presence in Google's top 3 local results (Local Pack)
+                      </p>
+
+                      {/* Visibility Score Summary */}
+                      <div className="mb-6">
+                        <div className="flex items-center justify-between mb-3">
+                          <div>
+                            <div className="text-3xl font-bold text-[#16A34A]">
+                              {scanResult.localPackReport.summary.visibility_score}%
+                            </div>
+                            <div className="text-sm text-gray-600">Local Pack Visibility</div>
+                          </div>
+                          <div className="text-right">
+                            <div className="text-lg font-semibold">
+                              {scanResult.localPackReport.summary.keywords_appeared}/{scanResult.localPackReport.summary.total_keywords}
+                            </div>
+                            <div className="text-xs text-gray-500">Keywords Found</div>
+                          </div>
+                        </div>
+
+                        <div className="grid grid-cols-2 gap-4 text-center">
+                          {scanResult.localPackReport.summary.best_position > 0 && (
+                            <div className="bg-white p-3 rounded-lg border">
+                              <div className="text-xl font-bold text-[#16A34A]">#{scanResult.localPackReport.summary.best_position}</div>
+                              <div className="text-xs text-gray-500">Best Position</div>
+                            </div>
+                          )}
+                          {scanResult.localPackReport.summary.average_position > 0 && (
+                            <div className="bg-white p-3 rounded-lg border">
+                              <div className="text-xl font-bold text-[#F59E0B]">#{scanResult.localPackReport.summary.average_position}</div>
+                              <div className="text-xs text-gray-500">Avg Position</div>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Keyword Results */}
+                      <div className="space-y-3 mb-4">
+                        <h4 className="font-semibold text-gray-800">Keyword Performance</h4>
+                        {scanResult.localPackReport.keyword_results.map((result: any, index: number) => (
+                          <div 
+                            key={index} 
+                            className={`flex items-center justify-between p-3 rounded-lg ${
+                              result.found ? 'bg-green-50 border border-green-200' : 'bg-red-50 border border-red-200'
+                            }`}
+                          >
+                            <div className="flex-1">
+                              <div className="font-medium text-sm">{result.keyword}</div>
+                              <div className="text-xs text-gray-500">
+                                {result.found ? `${result.confidence}% match confidence` : 'Not found in Local Pack'}
+                              </div>
+                              {result.matched_fields && result.matched_fields.length > 0 && (
+                                <div className="text-xs text-gray-400 mt-1">
+                                  Matched: {result.matched_fields.join(', ')}
+                                </div>
+                              )}
+                            </div>
+                            <div className="text-right">
+                              {result.found ? (
+                                <Badge 
+                                  variant={result.position === 1 ? 'default' : 'secondary'} 
+                                  className={`text-xs ${result.position === 1 ? 'bg-green-500 text-white' : 'bg-green-100 text-green-800'}`}
+                                >
+                                  #{result.position}
+                                </Badge>
+                              ) : (
+                                <Badge variant="secondary" className="text-xs bg-red-100 text-red-800">
+                                  Not Found
+                                </Badge>
+                              )}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+
+                      {/* Recommendations */}
+                      {scanResult.localPackReport.recommendations && scanResult.localPackReport.recommendations.length > 0 && (
+                        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                          <h4 className="font-semibold text-blue-900 mb-2">💡 Local Pack Recommendations</h4>
+                          <ul className="text-sm text-blue-800 space-y-1">
+                            {scanResult.localPackReport.recommendations.map((rec: string, index: number) => (
+                              <li key={index} className="flex items-start gap-2">
+                                <span className="text-blue-500 mt-1">•</span>
+                                <span>{rec}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+
+                      {/* Scan Metadata */}
+                      <div className="mt-4 text-xs text-gray-500 text-center">
+                        Scanned {scanResult.localPackReport.scan_metadata.location} • 
+                        {Math.round(scanResult.localPackReport.scan_metadata.total_scan_time_ms / 1000)}s scan time
+                      </div>
+                    </div>
+                  )}
 
                   {/* Missing Ingredients */}
                   <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">

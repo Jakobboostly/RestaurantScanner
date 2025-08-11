@@ -185,12 +185,13 @@ export class UnifiedKeywordService {
       try {
         const locationConfig = config.city.toLowerCase().includes('provo') 
           ? { location_code: 1026201 }
-          : { location_name: `${config.city}, ${config.state}, United States` };
+          : { location_name: `${config.city},${config.state},United States` };
 
         const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 8000);
+        const timeoutId = setTimeout(() => controller.abort(), 12000);
 
-        const response = await fetch('https://api.dataforseo.com/v3/serp/google/maps/live/advanced', {
+        // Use Local Finder for accurate local pack-style results (mobile intent)
+        const response = await fetch('https://api.dataforseo.com/v3/serp/google/local_finder/live/advanced', {
           method: 'POST',
           headers: {
             'Authorization': `Basic ${Buffer.from(`${this.login}:${this.password}`).toString('base64')}`,
@@ -198,9 +199,11 @@ export class UnifiedKeywordService {
           },
           body: JSON.stringify([{
             ...locationConfig,
-            language_code: "en",
-            keyword: keyword,
-            depth: 10
+            language_code: 'en',
+            keyword,
+            device: 'mobile',
+            os: 'ios',
+            depth: 20
           }]),
           signal: controller.signal
         });
@@ -213,9 +216,17 @@ export class UnifiedKeywordService {
         }
 
         const data = await response.json();
-        const localResults = data.tasks?.[0]?.result?.[0]?.items || [];
+        const items = data.tasks?.[0]?.result?.[0]?.items || [];
 
-        // Find business position using enhanced matching
+        // Prefer Local Pack section; fallback to individual elements
+        const localPackItems = items.filter((item: any) => 
+          item.type === 'local_pack' || item.type === 'maps_search'
+        );
+        const localResults = localPackItems.length > 0
+          ? (localPackItems[0].items || [])
+          : items.filter((item: any) => item.type === 'local_finder_element');
+
+        // Find business position using enhanced matching (top 20 considered)
         let position = 0;
         for (let i = 0; i < localResults.length; i++) {
           const item = localResults[i];
@@ -289,7 +300,7 @@ export class UnifiedKeywordService {
     // Process keywords in parallel for organic rankings
     const organicPromises = keywords.map(async (keyword) => {
       try {
-        const locationName = config.locationName || `${config.city}, ${config.state}, United States`;
+        const locationName = config.locationName || `${config.city},${config.state},United States`;
         
         const response = await fetch('https://api.dataforseo.com/v3/serp/google/organic/live/advanced', {
           method: 'POST',
@@ -398,24 +409,36 @@ export class UnifiedKeywordService {
     console.log('📈 BATCH SEARCH VOLUME: Getting data for all keywords in single API call');
 
     try {
-      const locationName = config.locationName || `${config.city}, ${config.state}, United States`;
-      
-      const response = await fetch('https://api.dataforseo.com/v3/keywords_data/google/search_volume/live', {
+      // Build dynamic location and date range
+      const locationName = config.locationName || `${config.city},${config.state},United States`;
+      const today = new Date();
+      // Compute first day of the month three months ago
+      const threeMonthsAgo = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth() - 3, 1));
+      const dateFrom = `${threeMonthsAgo.getUTCFullYear()}-${String(threeMonthsAgo.getUTCMonth() + 1).padStart(2, '0')}-01`;
+
+      // Limit to the 8 targeted keywords
+      const topKeywords = keywords.slice(0, 8);
+
+      const response = await fetch('https://api.dataforseo.com/v3/keywords_data/google_ads/search_volume/live', {
         method: 'POST',
         headers: {
           'Authorization': `Basic ${Buffer.from(`${this.login}:${this.password}`).toString('base64')}`,
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify([{
-          location_name: locationName,
-          language_code: config.languageCode || "en",
-          keywords: keywords
-        }])
+        body: JSON.stringify([
+          {
+            location_name: locationName,
+            language_code: config.languageCode || 'en',
+            keywords: topKeywords,
+            date_from: dateFrom,
+            search_partners: true
+          }
+        ])
       });
 
       if (!response.ok) {
         console.log('⚠️ Search volume API unavailable, returning empty data');
-        return keywords.map(keyword => ({
+        return topKeywords.map(keyword => ({
           keyword,
           searchVolume: 0,
           difficulty: 0,
@@ -426,17 +449,33 @@ export class UnifiedKeywordService {
       }
 
       const data = await response.json();
-      const volumeResults = data.tasks?.[0]?.result || [];
+      // Google Ads endpoint returns items under result[0].items
+      const items = data.tasks?.[0]?.result?.[0]?.items || [];
 
-      const results = keywords.map(keyword => {
-        const volumeData = volumeResults.find((v: any) => v.keyword === keyword);
+      const results: SearchVolumeResult[] = topKeywords.map((keyword) => {
+        const item = items.find((it: any) => it.keyword === keyword) || {};
+        const monthly = Array.isArray(item.monthly_searches) ? item.monthly_searches : [];
+
+        // Keep only months >= date_from
+        const recentMonthly = monthly.filter((m: any) => {
+          const year = Number(m.year);
+          const month = Number(m.month); // 1-12
+          const monthStart = new Date(Date.UTC(year, month - 1, 1));
+          return monthStart >= threeMonthsAgo;
+        });
+
+        // Compute average search volume over the last 3 months (or available months)
+        const avgVolume = recentMonthly.length > 0
+          ? Math.round(recentMonthly.reduce((sum: number, m: any) => sum + (m.search_volume || 0), 0) / recentMonthly.length)
+          : 0;
+
         return {
           keyword,
-          searchVolume: volumeData?.search_volume || 0,
-          difficulty: volumeData?.keyword_difficulty || 0,
-          cpc: volumeData?.cpc || 0,
-          competition: volumeData?.competition || 0,
-          monthlySearches: volumeData?.monthly_searches || []
+          searchVolume: avgVolume,
+          difficulty: item.keyword_difficulty || 0, // may be undefined for ads endpoint
+          cpc: item.cpc || item.avg_cpc || 0,
+          competition: item.competition || 0,
+          monthlySearches: recentMonthly
         };
       });
 
@@ -445,7 +484,8 @@ export class UnifiedKeywordService {
 
     } catch (error) {
       console.log('❌ Batch search volume failed:', error);
-      return keywords.map(keyword => ({
+      const topKeywords = keywords.slice(0, 8);
+      return topKeywords.map(keyword => ({
         keyword,
         searchVolume: 0,
         difficulty: 0,
@@ -470,7 +510,7 @@ export class UnifiedKeywordService {
     try {
       // Use a sample of keywords to avoid hitting rate limits
       const sampleKeywords = keywords.slice(0, 3); // Top 3 keywords only
-      const locationName = config.locationName || `${config.city}, ${config.state}, United States`;
+      const locationName = config.locationName || `${config.city},${config.state},United States`;
 
       const competitorPromises = sampleKeywords.map(async (keyword) => {
         try {
