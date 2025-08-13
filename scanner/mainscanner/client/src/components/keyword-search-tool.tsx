@@ -13,11 +13,16 @@ interface KeywordSearchResponse {
   keyword: string;
   location: string;
   results: SearchResult[];
+  searchVolume: number;
+  difficulty: number;
+  competition: number;
   timestamp: string;
 }
 
 interface KeywordSearchToolProps {
   defaultLocation?: string;
+  city?: string;
+  state?: string;
 }
 
 // Helper function to format location for DataForSEO (no spaces after commas)
@@ -25,7 +30,22 @@ const formatLocation = (location: string): string => {
   return location.replace(/,\s+/g, ',');
 };
 
-export function KeywordSearchTool({ defaultLocation = 'United States' }: KeywordSearchToolProps) {
+// Helper function to classify search volume levels
+const getVolumeLevel = (volume: number): { text: string; color: string } => {
+  if (volume >= 10000) return { text: 'High', color: 'text-green-400' };
+  if (volume >= 1000) return { text: 'Medium', color: 'text-yellow-400' };
+  if (volume >= 100) return { text: 'Low', color: 'text-orange-400' };
+  return { text: 'Very Low', color: 'text-red-400' };
+};
+
+// Helper function to format large numbers
+const formatNumber = (num: number): string => {
+  if (num >= 1000000) return `${(num / 1000000).toFixed(1)}M`;
+  if (num >= 1000) return `${(num / 1000).toFixed(1)}K`;
+  return num.toString();
+};
+
+export function KeywordSearchTool({ defaultLocation = 'United States', city, state }: KeywordSearchToolProps) {
   const [keyword, setKeyword] = useState('');
   const [location, setLocation] = useState(defaultLocation);
   const [isSearching, setIsSearching] = useState(false);
@@ -49,7 +69,9 @@ export function KeywordSearchTool({ defaultLocation = 'United States' }: Keyword
         },
         body: JSON.stringify({
           keyword: keyword.trim(),
-          location: formatLocation(location.trim() || 'United States')
+          location: formatLocation(location.trim() || 'United States'),
+          city: city?.trim(),
+          state: state?.trim()
         }),
       });
 
@@ -123,6 +145,43 @@ export function KeywordSearchTool({ defaultLocation = 'United States' }: Keyword
       {error && (
         <div className="bg-red-500/20 border border-red-400 text-red-200 px-3 py-2 rounded mb-4">
           {error}
+        </div>
+      )}
+
+      {/* Search Volume Data */}
+      {searchResults && (
+        <div className="bg-white/10 rounded-lg p-3 mb-4">
+          <div className="text-yellow-200 text-sm font-bold mb-2">
+            Keyword Analysis for "{searchResults.keyword}":
+          </div>
+          
+          <div className="grid grid-cols-3 gap-4 text-xs">
+            <div className="text-center">
+              <div className="text-white font-bold text-lg">
+                {formatNumber(searchResults.searchVolume || 0)}
+              </div>
+              <div className={`${getVolumeLevel(searchResults.searchVolume || 0).color} font-medium`}>
+                {getVolumeLevel(searchResults.searchVolume || 0).text} Volume
+              </div>
+              <div className="text-gray-300">monthly searches</div>
+            </div>
+            
+            <div className="text-center">
+              <div className="text-white font-bold text-lg">
+                {searchResults.difficulty || 0}%
+              </div>
+              <div className="text-purple-300 font-medium">Difficulty</div>
+              <div className="text-gray-300">to rank</div>
+            </div>
+            
+            <div className="text-center">
+              <div className="text-white font-bold text-lg">
+                {Math.round((searchResults.competition || 0) * 100)}%
+              </div>
+              <div className="text-red-300 font-medium">Competition</div>
+              <div className="text-gray-300">level</div>
+            </div>
+          </div>
         </div>
       )}
 

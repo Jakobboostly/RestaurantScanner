@@ -1,5 +1,5 @@
 import { GoogleBusinessService } from './googleBusinessService.js';
-
+import OpenAI from 'openai';
 import { DataForSeoRankedKeywordsService } from './dataForSeoRankedKeywordsService.js';
 import { UrlRankingService } from './urlRankingService.js';
 import { AIRecommendationService } from './aiRecommendationService.js';
@@ -8,7 +8,8 @@ import { ApifyReviewsService } from './apifyReviewsService.js';
 import { EnhancedSocialMediaDetector } from './enhancedSocialMediaDetector.js';
 import { FacebookPostsScraperService } from './facebookPostsScraperService.js';
 import { OpenAIReviewAnalysisService } from './openaiReviewAnalysisService.js';
-import { LocalCompetitorService } from './localCompetitorService.js';
+// Use optimized batched version for better performance
+import { LocalCompetitorServiceOptimized as LocalCompetitorService } from './localCompetitorServiceOptimized.js';
 import { RestaurantLocalPackScanner } from './restaurantLocalPackScanner.js';
 import { ScanResult } from '@shared/schema';
 import axios from 'axios';
@@ -49,7 +50,7 @@ export class AdvancedScannerService {
   private enhancedSocialMediaDetector: EnhancedSocialMediaDetector;
   private facebookPostsScraperService: FacebookPostsScraperService;
   private openaiReviewAnalysisService: OpenAIReviewAnalysisService;
-  
+  private openaiService: OpenAI;
 
   constructor(
     googleApiKey: string,
@@ -71,6 +72,9 @@ export class AdvancedScannerService {
     this.enhancedSocialMediaDetector = new EnhancedSocialMediaDetector();
     this.facebookPostsScraperService = new FacebookPostsScraperService();
     this.openaiReviewAnalysisService = new OpenAIReviewAnalysisService(process.env.OPENAI_API_KEY);
+    this.openaiService = new OpenAI({
+      apiKey: process.env.OPENAI_API_KEY,
+    });
   }
 
   async scanRestaurantAdvanced(
@@ -224,7 +228,7 @@ export class AdvancedScannerService {
       console.log(`🔍 ADVANCED SCANNER: Getting targeted competitive keywords for domain: ${actualDomain}`);
       
       // Extract restaurant details for targeted keyword analysis with proper type handling
-      const cuisineType = this.extractCuisineType(businessProfileData, restaurantName);
+      const cuisineType = await this.extractCuisineType(businessProfileData, restaurantName);
       const locationData = businessProfileData?.formatted_address ? 
         this.extractCityFromAddress(businessProfileData.formatted_address) : 
         { city: 'Unknown', state: 'Unknown' };
@@ -1203,9 +1207,9 @@ export class AdvancedScannerService {
     return Math.max(1, Math.min(100, authority));
   }
 
-  private generatePrimaryKeywords(restaurantName: string, businessProfile: any): string[] {
+  private async generatePrimaryKeywords(restaurantName: string, businessProfile: any): Promise<string[]> {
     // Generate competitive keywords based on cuisine type
-    const cuisineType = this.extractCuisineType(businessProfile, restaurantName);
+    const cuisineType = await this.extractCuisineType(businessProfile, restaurantName);
     const isPizza = cuisineType.includes('pizza') || restaurantName.toLowerCase().includes('pizza');
     const isMexican = cuisineType.includes('mexican') || restaurantName.toLowerCase().includes('mexican');
     const isItalian = cuisineType.includes('italian') || restaurantName.toLowerCase().includes('italian');
@@ -1224,160 +1228,54 @@ export class AdvancedScannerService {
     }
   }
 
-  private extractCuisineType(businessProfile: any, restaurantName?: string): string {
-    // Extract cuisine type from multiple data sources with advanced pattern matching
-    const profileName = (businessProfile?.name || '').toLowerCase();
-    const fallbackName = (restaurantName || '').toLowerCase();
-    const combinedName = `${profileName} ${fallbackName}`.toLowerCase();
+  private async extractCuisineType(businessProfile: any, restaurantName?: string): Promise<string> {
+    // AI-powered cuisine detection using OpenAI
+    const profileName = businessProfile?.name || '';
+    const fallbackName = restaurantName || '';
+    const restaurantDisplayName = profileName || fallbackName;
     const googleTypes = businessProfile?.types || [];
     
-    console.log(`🔍 CUISINE DEBUG - Profile: "${profileName}", Restaurant: "${fallbackName}", Combined: "${combinedName}", Types: [${googleTypes.join(', ')}]`);
-    console.log(`🔍 CUISINE DEBUG - Starting 3-phase detection for: "${combinedName}"`);
+    console.log(`🤖 AI CUISINE DETECTION - Restaurant: "${restaurantDisplayName}", Types: [${googleTypes.join(', ')}]`);
     
-    // PHASE 1: Google Places Types Analysis (Most reliable, but only for specific cuisine types)
-    const detectedFromTypes = this.analyzePlaceTypes(googleTypes);
-    if (detectedFromTypes !== 'restaurant') {
-      console.log(`✅ CUISINE DETECTED from Google Types: "${detectedFromTypes}"`);
-      return detectedFromTypes;
-    }
+    // Skip Google Places types check - go straight to AI for better accuracy
     
-    console.log(`🔍 CUISINE DEBUG: Google Types only returned "restaurant" - proceeding to advanced detection`);
-    
-    // PHASE 2: Advanced Name Pattern Matching
-    const detectedFromName = this.analyzeNamePatterns(combinedName);
-    if (detectedFromName !== 'restaurant') {
-      console.log(`✅ CUISINE DETECTED from Name Patterns: "${detectedFromName}"`);
-      return detectedFromName;
-    }
-    
-    // PHASE 3: Context-Aware Detection
-    const detectedFromContext = this.analyzeContextualClues(combinedName, businessProfile);
-    if (detectedFromContext !== 'restaurant') {
-      console.log(`✅ CUISINE DETECTED from Context: "${detectedFromContext}"`);
-      return detectedFromContext;
-    }
-    
-    console.log(`⚠️ CUISINE FALLBACK: Defaulting to 'restaurant' for: "${combinedName}"`);
-    return 'restaurant';
-  }
-  
-  private analyzePlaceTypes(googleTypes: string[]): string {
-    if (!googleTypes || googleTypes.length === 0) return 'restaurant';
-    
-    const typeString = googleTypes.join(' ').toLowerCase();
-    
-    // Map Google Place types to our cuisine categories
-    const typeMapping = {
-      'meal_delivery': 'delivery',
-      'meal_takeaway': 'takeout',
-      'bakery': 'bakery',
-      'bar': 'bar',
-      'cafe': 'coffee',
-      'night_club': 'nightlife',
-      'liquor_store': 'bar',
-      'convenience_store': 'convenience'
-    };
-    
-    // Check direct type matches
-    for (const [googleType, cuisine] of Object.entries(typeMapping)) {
-      if (typeString.includes(googleType)) {
-        return cuisine;
-      }
-    }
-    
-    return 'restaurant';
-  }
-  
-  private analyzeNamePatterns(combinedName: string): string {
-    // Comprehensive cuisine detection patterns with scoring system
-    const patterns = [
-      // Pizza (High Confidence)
-      { patterns: ['pizza', 'pizzeria', 'pizz', 'pie shop', 'neapolitan', 'margherita'], cuisine: 'pizza', confidence: 0.95 },
+    try {
+      console.log(`🤖 AI CUISINE DETECTION - Analyzing restaurant name: "${restaurantDisplayName}"`);
       
-      // Mexican (High Confidence) 
-      { patterns: ['mexican', 'taco', 'burrito', 'quesadilla', 'enchilada', 'cantina', 'hacienda', 'casa', 'el ', 'la ', 'los ', 'las ', 'salsa', 'chipotle', 'carnitas', 'carne asada', 'fajita', 'nacho', 'tortilla', 'queso'], cuisine: 'mexican', confidence: 0.9 },
-      
-      // Asian Cuisines
-      { patterns: ['chinese', 'china', 'asian', 'orient', 'wok', 'dim sum', 'szechuan', 'hunan', 'mandarin', 'dynasty', 'golden dragon', 'panda', 'chopstick'], cuisine: 'chinese', confidence: 0.9 },
-      { patterns: ['sushi', 'japanese', 'japan', 'hibachi', 'ramen', 'noodle', 'teriyaki', 'yakitori', 'bento', 'sake', 'tokyo', 'osaka', 'kyoto'], cuisine: 'japanese', confidence: 0.9 },
-      { patterns: ['thai', 'thailand', 'pad thai', 'curry', 'bangkok', 'basil', 'lemongrass', 'coconut'], cuisine: 'thai', confidence: 0.9 },
-      { patterns: ['korean', 'korea', 'kimchi', 'bulgogi', 'bibimbap', 'seoul', 'bbq'], cuisine: 'korean', confidence: 0.9 },
-      { patterns: ['vietnamese', 'vietnam', 'pho', 'banh mi', 'saigon'], cuisine: 'vietnamese', confidence: 0.9 },
-      
-      // Italian
-      { patterns: ['italian', 'italia', 'pasta', 'spaghetti', 'lasagna', 'linguine', 'fettuccine', 'ravioli', 'gnocchi', 'risotto', 'gelato', 'trattoria', 'ristorante', 'osteria', 'roma', 'milano', 'venice', 'tuscany', 'sicilian'], cuisine: 'italian', confidence: 0.9 },
-      
-      // American/BBQ/Grill
-      { patterns: ['bbq', 'barbecue', 'grill', 'smokehouse', 'pit', 'ribs', 'brisket', 'pulled pork', 'smoked'], cuisine: 'bbq', confidence: 0.9 },
-      { patterns: ['burger', 'hamburger', 'cheeseburger', 'patty', 'fries'], cuisine: 'burger', confidence: 0.9 },
-      { patterns: ['steakhouse', 'steak house', 'steak', 'prime', 'ribeye', 'filet', 'sirloin', 'chophouse'], cuisine: 'steakhouse', confidence: 0.9 },
-      { patterns: ['deli', 'delicatessen', 'sandwich', 'sub', 'hoagie', 'hero', 'panini', 'club'], cuisine: 'deli', confidence: 0.85 },
-      
-      // Breakfast/Brunch
-      { patterns: ['breakfast', 'brunch', 'pancake', 'waffle', 'hash', 'eggs', 'omelet', 'omelette', 'benedict', 'french toast', 'crepe', 'bagel', 'croissant', 'muffin', 'griddle', 'skillet'], cuisine: 'breakfast', confidence: 0.9 },
-      
-      // Chicken/Wings
-      { patterns: ['wings', 'wing', 'chicken', 'pollo', 'fried chicken', 'buffalo', 'hot wings', 'drumstick', 'tender'], cuisine: 'chicken', confidence: 0.85 },
-      
-      // Seafood
-      { patterns: ['seafood', 'fish', 'lobster', 'crab', 'shrimp', 'oyster', 'clam', 'mussel', 'salmon', 'tuna', 'catch', 'wharf', 'pier', 'marina'], cuisine: 'seafood', confidence: 0.9 },
-      
-      // Indian
-      { patterns: ['indian', 'india', 'curry', 'tandoor', 'biryani', 'masala', 'naan', 'dal', 'vindaloo', 'tikka', 'samosa', 'bombay', 'delhi', 'mumbai'], cuisine: 'indian', confidence: 0.9 },
-      
-      // Greek (Specific)
-      { patterns: ['greek', 'greece', 'gyro', 'athens', 'santorini', 'souvlaki', 'moussaka', 'spanakopita', 'tzatziki'], cuisine: 'greek', confidence: 0.95 },
-      
-      // Mediterranean/Middle Eastern
-      { patterns: ['mediterranean', 'falafel', 'hummus', 'kebab', 'shawarma', 'pita', 'olive'], cuisine: 'mediterranean', confidence: 0.9 },
-      { patterns: ['middle eastern', 'lebanese', 'turkish', 'persian', 'moroccan', 'hookah', 'baklava'], cuisine: 'middle eastern', confidence: 0.9 },
-      
-      // French
-      { patterns: ['french', 'france', 'bistro', 'brasserie', 'cafe', 'croissant', 'crepe', 'escargot', 'coq au vin', 'paris', 'provence', 'lyon'], cuisine: 'french', confidence: 0.9 },
-      
-      // Latin American
-      { patterns: ['latin', 'colombian', 'venezuelan', 'peruvian', 'brazilian', 'argentinian', 'cuban', 'puerto rican', 'empanada', 'arepa', 'ceviche', 'churrasco'], cuisine: 'latin american', confidence: 0.9 },
-      
-      // Beverages/Coffee/Bar
-      { patterns: ['coffee', 'cafe', 'espresso', 'latte', 'cappuccino', 'mocha', 'java', 'beans', 'roast', 'starbucks', 'dunkin'], cuisine: 'coffee', confidence: 0.9 },
-      { patterns: ['brewery', 'brewing', 'brewhouse', 'taproom', 'craft beer', 'ale', 'ipa', 'lager'], cuisine: 'brewery', confidence: 0.95 },
-      { patterns: ['pub', 'tavern', 'bar & grill', 'sports bar', 'gastropub', 'saloon', 'draft', 'tap house'], cuisine: 'pub', confidence: 0.9 },
-      { patterns: ['bakery', 'bake shop', 'pastry', 'patisserie', 'donut', 'cake', 'bread', 'cookie'], cuisine: 'bakery', confidence: 0.95 },
-      
-      // Soul Food/Southern
-      { patterns: ['soul food', 'southern', 'cajun', 'creole', 'jambalaya', 'gumbo', 'beignet', 'po boy', 'catfish', 'grits', 'collard'], cuisine: 'southern', confidence: 0.9 },
-      
-      // Fast Food/Casual
-      { patterns: ['fast food', 'quick', 'drive thru', 'drive-thru', 'counter service'], cuisine: 'fast food', confidence: 0.8 },
-      
-      // Specialty/Unique
-      { patterns: ['vegan', 'vegetarian', 'plant based', 'organic', 'farm to table', 'farm-to-table'], cuisine: 'healthy', confidence: 0.85 },
-      { patterns: ['buffet', 'all you can eat', 'smorgasbord'], cuisine: 'buffet', confidence: 0.9 },
-      { patterns: ['catering', 'banquet', 'event'], cuisine: 'catering', confidence: 0.8 }
-    ];
-    
-    let bestMatch = { cuisine: 'restaurant', confidence: 0 };
-    const foundPatterns: string[] = [];
-    
-    for (const category of patterns) {
-      for (const pattern of category.patterns) {
-        if (combinedName.includes(pattern)) {
-          foundPatterns.push(`"${pattern}" -> ${category.cuisine} (${category.confidence})`);
-          if (category.confidence > bestMatch.confidence) {
-            bestMatch = { cuisine: category.cuisine, confidence: category.confidence };
+      // Use AI for intelligent cuisine detection  
+      const prompt = `What's the cuisine type of ${restaurantDisplayName} in ${businessProfile?.city || 'the area'}? Just respond with one word.`;
+
+      const response = await this.openaiService.chat.completions.create({
+        model: 'gpt-4o',
+        messages: [
+          {
+            role: 'user',
+            content: prompt
           }
-        }
+        ],
+        max_tokens: 10,
+        temperature: 0.1
+      });
+
+      const aiCuisine = response.choices[0]?.message?.content?.trim().toLowerCase() || '';
+      console.log(`🤖 AI CUISINE DETECTED: "${aiCuisine}" for restaurant "${restaurantDisplayName}"`);
+      
+      // Validate the response is a single word and reasonable
+      if (aiCuisine && aiCuisine.length < 20 && !aiCuisine.includes(' ')) {
+        return aiCuisine;
+      } else {
+        console.log(`⚠️ AI returned invalid cuisine: "${aiCuisine}", falling back to 'restaurant'`);
+        return 'restaurant';
       }
+      
+    } catch (error) {
+      console.error(`❌ AI cuisine detection failed:`, error);
+      console.log(`⚠️ CUISINE FALLBACK: Defaulting to 'restaurant' for: "${restaurantDisplayName}"`);
+      return 'restaurant';
     }
-    
-    if (foundPatterns.length > 0) {
-      console.log(`🔍 CUISINE PATTERNS FOUND: ${foundPatterns.join(', ')}`);
-      console.log(`🔍 CUISINE BEST MATCH: "${bestMatch.cuisine}" (confidence: ${bestMatch.confidence})`);
-    }
-    
-    // Require minimum confidence threshold
-    return bestMatch.confidence >= 0.8 ? bestMatch.cuisine : 'restaurant';
   }
+  
+  
   
   private analyzeContextualClues(combinedName: string, businessProfile: any): string {
     // Additional contextual analysis for edge cases
@@ -1618,9 +1516,9 @@ export class AdvancedScannerService {
     };
   }
 
-  private generateRestaurantKeywords(restaurantName: string, businessProfile: any): any[] {
+  private async generateRestaurantKeywords(restaurantName: string, businessProfile: any): Promise<any[]> {
     // NO MOCK DATA - Generate commercial and local keywords only (no informational keywords)
-    const cuisineType = this.extractCuisineType(businessProfile, restaurantName);
+    const cuisineType = await this.extractCuisineType(businessProfile, restaurantName);
     const city = this.extractCity(restaurantName);
     
     // Generate keyword strings focused on commercial and local intent only

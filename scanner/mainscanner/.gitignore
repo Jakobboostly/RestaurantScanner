@@ -116,6 +116,9 @@ vite.config.ts.*
 *.sqlite
 *.sqlite3
 
+# Lead storage (Phase 1)
+leads/
+
 # Certificates
 *.pem
 *.crt

@@ -173,18 +173,28 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
   // Helper function to extract search terms for manual search
   const getSearchTerms = () => {
     const businessProfile = scanResult.businessProfile;
-    const address = businessProfile?.address || '';
     
-    // Extract city and state from address
-    const addressParts = address.split(',').map(part => part.trim());
-    let city = '';
-    let state = '';
+    // Use the city and state extracted by Google Business Service from address components
+    let city = businessProfile?.city || '';
+    let state = businessProfile?.state || '';
     
-    if (addressParts.length >= 3) {
-      city = addressParts[addressParts.length - 3] || '';
-      const stateZip = addressParts[addressParts.length - 2] || '';
-      state = stateZip.split(' ')[0] || '';
+    console.log('🔍 getSearchTerms - Using extracted city:', city, 'state:', state);
+    
+    // Fallback to address parsing if not available
+    if (!city || !state) {
+      const address = businessProfile?.address || '';
+      console.log('🔍 getSearchTerms - Fallback to address parsing:', address);
+      
+      const addressParts = address.split(',').map(part => part.trim());
+      
+      if (addressParts.length >= 3) {
+        city = city || addressParts[addressParts.length - 3] || '';
+        const stateZip = addressParts[addressParts.length - 2] || '';
+        state = state || stateZip.split(' ')[0] || '';
+      }
     }
+    
+    console.log('🔍 getSearchTerms - Final city:', city, 'state:', state);
     
     // Extract food type from restaurant name or use generic "restaurant"
     const restaurantLower = restaurantName.toLowerCase();
@@ -222,15 +232,74 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
     const instagramPresent = !!socialMediaLinks.instagram;
     const socialScore = (facebookPresent ? 50 : 0) + (instagramPresent ? 50 : 0); // 50 points each for Facebook and Instagram
     
-    // Local Score (based on business profile completeness)
+    // Local Score (comprehensive local search performance - out of 100)
     const businessProfile = scanResult.businessProfile;
-    const localScore = Math.round(
-      (businessProfile?.rating || 0) * 10 + 
-      (businessProfile?.totalReviews ? Math.min(businessProfile.totalReviews / 10, 30) : 0)
-    );
+    let localScore = 0;
+    
+    // 1. Google Business Profile Quality (30 points)
+    if (businessProfile) {
+      // Rating quality (20 points max)
+      const rating = businessProfile.rating || 0;
+      if (rating >= 4.5) localScore += 20;
+      else if (rating >= 4.0) localScore += 15;
+      else if (rating >= 3.5) localScore += 10;
+      else if (rating >= 3.0) localScore += 5;
+      
+      // Review volume (10 points max)
+      const reviewCount = businessProfile.totalReviews || 0;
+      if (reviewCount >= 100) localScore += 10;
+      else if (reviewCount >= 50) localScore += 8;
+      else if (reviewCount >= 25) localScore += 6;
+      else if (reviewCount >= 10) localScore += 4;
+      else if (reviewCount >= 5) localScore += 2;
+    }
+    
+    // 2. Local Pack Visibility (35 points max)
+    const localPackReport = scanResult.localPackReport;
+    if (localPackReport && localPackReport.summary) {
+      const visibilityScore = localPackReport.summary.visibility_score || 0;
+      localScore += Math.round((visibilityScore / 100) * 35);
+    }
+    
+    // 3. Review Engagement (20 points max)
+    const reviewsAnalysis = scanResult.reviewsAnalysis;
+    if (reviewsAnalysis) {
+      // Recent review activity (10 points)
+      const recentReviews = reviewsAnalysis.recentReviews?.length || 0;
+      if (recentReviews >= 5) localScore += 10;
+      else if (recentReviews >= 3) localScore += 7;
+      else if (recentReviews >= 1) localScore += 4;
+      
+      // Response rate (10 points)
+      const responseRate = reviewsAnalysis.trends?.responseRate || 0;
+      if (responseRate >= 80) localScore += 10;
+      else if (responseRate >= 60) localScore += 7;
+      else if (responseRate >= 40) localScore += 5;
+      else if (responseRate >= 20) localScore += 3;
+    }
+    
+    // 4. Local SEO Factors (15 points max)
+    // Business profile completeness (5 points)
+    if (businessProfile?.website) localScore += 2;
+    if (businessProfile?.phoneNumber) localScore += 2;
+    if (businessProfile?.formatted_address) localScore += 1;
+    
+    // Photo presence (5 points)
+    const photoCount = businessProfile?.photoCount || 0;
+    if (photoCount >= 20) localScore += 5;
+    else if (photoCount >= 10) localScore += 3;
+    else if (photoCount >= 5) localScore += 2;
+    else if (photoCount >= 1) localScore += 1;
+    
+    // Local keyword performance (5 points)
+    const competitiveKeywords = scanResult.competitiveOpportunityKeywords || [];
+    const rankedKeywords = competitiveKeywords.filter(k => k.position > 0 && k.position <= 10);
+    const keywordScore = Math.min(rankedKeywords.length, 5);
+    localScore += keywordScore;
+    
+    localScore = Math.round(localScore);
     
     // Reviews Score (based on rating and review count from reviewsAnalysis)
-    const reviewsAnalysis = scanResult.reviewsAnalysis;
     const reviewsScore = Math.round(
       (reviewsAnalysis?.averageRating || businessProfile?.rating || 0) * 15 + 
       (reviewsAnalysis?.totalReviews || businessProfile?.totalReviews ? Math.min((reviewsAnalysis?.totalReviews || businessProfile?.totalReviews || 0) / 20, 25) : 0)
@@ -982,7 +1051,11 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                   <div className="space-y-4 pt-[65px] pb-[65px]">
                     {/* Keyword Search Tool */}
                     <div className="bg-gradient-to-br from-[#4C1D95] via-[#5B21B6] to-[#6B21A8] rounded-lg p-6 text-white shadow-lg mt-[5px] mb-[5px]">
-                      <KeywordSearchTool defaultLocation={scanResult.businessProfile?.location || "United States"} />
+                      <KeywordSearchTool 
+                        defaultLocation={scanResult.businessProfile?.location || "United States"}
+                        city={getSearchTerms().city}
+                        state={getSearchTerms().state}
+                      />
                     </div>
 
                     <div className="bg-gradient-to-br from-[#5F5FFF] via-[#7375FD] to-[#9090FD] rounded-lg p-8 text-center text-white shadow-lg mt-[5px] mb-[5px]">
@@ -1836,54 +1909,6 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                     </div>
                   </div>
 
-                  
-                  <div className="pt-4 border-t border-gray-200 space-y-3">
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">Google Rating</span>
-                      <span className="font-bold text-lg text-[#F59E0B]">{scanResult.businessProfile?.rating || 0}/5</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-gray-600">Total Reviews</span>
-                      <span className="font-medium">{scanResult.businessProfile?.reviewCount || scanResult.businessProfile?.totalReviews || 0}</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <div className="flex items-center gap-2">
-                        <span className="text-sm text-gray-600">Profile Completeness</span>
-                        <TooltipProvider>
-                          <Tooltip>
-                            <TooltipTrigger asChild>
-                              <Info className="w-4 h-4 text-gray-400 hover:text-gray-600 cursor-help" />
-                            </TooltipTrigger>
-                            <TooltipContent side="top" className="max-w-xs">
-                              <div className="space-y-2 text-sm">
-                                <div className="font-semibold border-b pb-1">Profile Completeness Scoring:</div>
-                                <div className="space-y-1">
-                                  <div>• Business Name: 10 points</div>
-                                  <div>• Phone Number: 15 points</div>
-                                  <div>• Website: 20 points</div>
-                                  <div>• Photos: 25 points (0.5 per photo, max 50)</div>
-                                  <div>• Reviews: 20 points (1 per 15 reviews, max 20)</div>
-                                  <div>• Rating: 10 points (4.0+ = full, 3.6-3.9 = 7pts, 3.3-3.5 = 5pts, 3.0-3.2 = 2pts)</div>
-                                </div>
-                                <div className="text-xs text-gray-500 pt-1 border-t">
-                                  Total: 100 points maximum
-                                </div>
-                              </div>
-                            </TooltipContent>
-                          </Tooltip>
-                        </TooltipProvider>
-                      </div>
-                      <span className="font-medium">{scanResult.profileAnalysis?.completenessScore || 0}%</span>
-                    </div>
-                    {scanResult.businessProfile?.photos && (
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">Business Photos</span>
-                        <span className="font-medium">
-                          {scanResult.businessProfile.photos.total} ({scanResult.businessProfile.photos.quality})
-                        </span>
-                      </div>
-                    )}
-                  </div>
                 </div>
               )}
 

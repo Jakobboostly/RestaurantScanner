@@ -23,13 +23,16 @@ export class GoogleBusinessService {
       if (response.data?.result) {
         const result = response.data.result;
         
-        // Extract state from address components
+        // Extract state and city from address components
         let state = '';
+        let city = '';
         if (result.address_components) {
           for (const component of result.address_components) {
             if (component.types.includes('administrative_area_level_1')) {
               state = component.long_name;
-              break;
+            }
+            if (component.types.includes('locality')) {
+              city = component.long_name;
             }
           }
         }
@@ -44,6 +47,7 @@ export class GoogleBusinessService {
           formatted_address: result.formatted_address || 'Address not available',
           address_components: result.address_components || [],
           state: state,
+          city: city,
           place_id: placeId,
           business_status: result.business_status || 'UNKNOWN',
           types: result.types || [],

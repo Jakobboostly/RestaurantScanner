@@ -27,6 +27,20 @@ export interface LocalKeywordConfig {
 export function generateLocalKeywords(config: LocalKeywordConfig): string[] {
   const { cuisine, city, state } = config;
   
+  // Special handling for sandwiches - use better search terms
+  if (cuisine === 'sandwiches') {
+    return [
+      `sandwich shop near me`,
+      `sandwich delivery ${city}`,
+      `best sandwiches ${city}`,
+      `${city} sandwich shop`,
+      `sandwich places near me`,
+      `sandwich shop ${city} ${state}`,
+      `sandwich delivery near me`,
+      `sandwiches open now`
+    ];
+  }
+  
   return [
     `${cuisine} near me`,
     `${cuisine} delivery ${city}`,

@@ -53,6 +53,13 @@ export default function RestaurantSearch({ onRestaurantSelect }: RestaurantSearc
     return "text-red-600";
   };
 
+
+  // Handle restaurant selection - always start scan immediately now
+  const handleStartScan = (restaurant: RestaurantSearchResult) => {
+    onRestaurantSelect(restaurant);
+  };
+
+
   return (
     <div className="w-full max-w-4xl mx-auto">
       {/* Hero Search Section */}
@@ -133,7 +140,6 @@ export default function RestaurantSearch({ onRestaurantSelect }: RestaurantSearc
                   }`}
                   onMouseEnter={() => setHoveredRestaurant(restaurant.id)}
                   onMouseLeave={() => setHoveredRestaurant(null)}
-                  onClick={() => onRestaurantSelect(restaurant)}
                 >
                   <div className="p-3 md:p-6">
                     {/* Mobile Layout */}
@@ -242,6 +248,10 @@ export default function RestaurantSearch({ onRestaurantSelect }: RestaurantSearc
                         <Button
                           className="bg-gradient-to-r from-[#28008F] to-[#4a1fb8] hover:from-[#1f0068] hover:to-[#28008F] text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                           size="lg"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            handleStartScan(restaurant);
+                          }}
                         >
                           <Zap className="h-4 w-4 mr-2" />
                           Start Scan
@@ -280,6 +290,7 @@ export default function RestaurantSearch({ onRestaurantSelect }: RestaurantSearc
           </p>
         </motion.div>
       )}
+
     </div>
   );
 }

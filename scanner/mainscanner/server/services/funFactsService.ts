@@ -19,33 +19,34 @@ export class FunFactsService {
   async generateFunFacts(city: string, restaurantName: string, state?: string): Promise<FunFact[]> {
     try {
       const locationString = state ? `${city}, ${state}` : city;
-      const prompt = `Generate exactly 5 fun facts for a restaurant scanner app:
+      const prompt = `Generate exactly 5 GENERAL fun facts for a restaurant scanner app:
       
       Location: ${locationString}
       Restaurant: ${restaurantName}
       
       Create 2 fun facts about the location (${locationString}) and 3 fun facts about the restaurant (${restaurantName}).
       
+      CRITICAL: DO NOT make up specific details, dates, events, or claims that you cannot verify. Use general, widely-known information only.
+      
       For location facts:
-      - Interesting historical, cultural, or unique tidbits about ${city}${state ? ` or ${state}` : ''}
-      - Things locals might know but tourists find surprising
-      - Brief (1-2 sentences each)
+      - Well-known historical or cultural facts about ${city}${state ? ` or ${state}` : ''}
+      - Geographic or demographic information that is generally known
+      - AVOID specific dates, events, or claims unless universally known
       
       For restaurant facts:
-      - When it opened/was founded
-      - Signature dishes or specialties
-      - Unique features, awards, or interesting history
-      - Famous customers or events
-      - Special traditions or features
+      - Generic positive statements about local dining
+      - General comments about the type of cuisine or restaurant concept
+      - Broad statements about local food culture
+      - AVOID specific opening dates, menu items, awards, or events
       
-      Make them engaging like a knowledgeable local would share, factual but fun to read during a scanning process.`;
+      Keep facts general, positive, and avoid specific claims that could be false.`;
 
       const response = await this.openai.chat.completions.create({
         model: 'gpt-4o', // the newest OpenAI model is "gpt-4o" which was released May 13, 2024. do not change this unless explicitly requested by the user
         messages: [
           {
             role: 'system',
-            content: 'You are a fun facts generator for a restaurant marketing app. Generate engaging, factual content that feels like insider knowledge from a local expert. Return as JSON with format: {"facts": [{"text": "fact text", "type": "city"}, {"text": "fact text", "type": "restaurant"}]}. Ensure exactly 2 location/city facts and 3 restaurant facts.',
+            content: 'You are a fun facts generator for a restaurant marketing app. Generate ONLY general, widely-known information. DO NOT hallucinate specific details, dates, events, or claims. Keep facts generic and positive. Return as JSON with format: {"facts": [{"text": "fact text", "type": "city"}, {"text": "fact text", "type": "restaurant"}]}. Ensure exactly 2 location/city facts and 3 restaurant facts.',
           },
           {
             role: 'user',

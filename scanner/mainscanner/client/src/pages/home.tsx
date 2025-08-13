@@ -11,6 +11,7 @@ import ScanningAnimation from "@/components/scanning-animation";
 import EnhancedResultsDashboard from "@/components/enhanced-results-dashboard";
 import { scanWebsite, getRestaurantDetails } from "@/lib/api";
 import { RestaurantSearchResult, ScanResult } from "@shared/schema";
+import { LeadCaptureModal, LeadData } from "@/components/lead-capture-modal";
 
 type ViewState = 'search' | 'scanning' | 'results';
 
@@ -28,7 +29,64 @@ export default function HomePage() {
     sentiment: 'positive' | 'neutral' | 'negative';
   } | null>(null);
   const [businessPhotos, setBusinessPhotos] = useState<string[]>([]);
+  const [showLeadModal, setShowLeadModal] = useState(false);
+  const [isSubmittingLead, setIsSubmittingLead] = useState(false);
   const { toast } = useToast();
+
+  // Check if user has a valid scan token (to skip gate for returning users)
+  const hasScanToken = () => {
+    const token = localStorage.getItem('scanToken');
+    if (!token) return false;
+    
+    try {
+      // Simple token validation (can be enhanced later)
+      const decoded = atob(token); // Use atob for browser compatibility
+      const [, timestamp] = decoded.split(':');
+      const tokenAge = Date.now() - parseInt(timestamp);
+      
+      // Token expires after 24 hours
+      return tokenAge < 24 * 60 * 60 * 1000;
+    } catch {
+      return false;
+    }
+  };
+
+  // Handle lead form submission
+  const handleLeadSubmit = async (leadData: LeadData) => {
+    setIsSubmittingLead(true);
+    
+    try {
+      const response = await fetch('/api/leads', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...leadData,
+          placeId: selectedRestaurant?.placeId,
+        }),
+      });
+      
+      if (!response.ok) {
+        const error = await response.json();
+        throw new Error(error.details || 'Failed to submit information');
+      }
+      
+      const { scanToken } = await response.json();
+      
+      // Store token for future use
+      localStorage.setItem('scanToken', scanToken);
+      
+      // Close modal - user can now see full results
+      setShowLeadModal(false);
+      
+    } catch (error) {
+      console.error('Lead submission error:', error);
+      alert(error instanceof Error ? error.message : 'Failed to submit information. Please try again.');
+    } finally {
+      setIsSubmittingLead(false);
+    }
+  };
 
   const handleRestaurantSelect = async (restaurant: RestaurantSearchResult) => {
     try {
@@ -66,8 +124,16 @@ export default function HomePage() {
         restaurant.location?.lng
       );
 
+      console.log('HomePage - setting scan result:', result);
       setScanResult(result);
+      console.log('HomePage - setting view state to results');
       setViewState('results');
+      
+      // Check if we need to show the lead capture gate after scan completion
+      if (!hasScanToken()) {
+        console.log('HomePage - showing lead capture gate after scan completion');
+        setShowLeadModal(true);
+      }
     } catch (error) {
       console.error('Scan error:', error);
       toast({
@@ -105,7 +171,10 @@ export default function HomePage() {
 
 
 
+  console.log('HomePage render - viewState:', viewState, 'scanResult:', !!scanResult, 'selectedRestaurant:', !!selectedRestaurant);
+  
   if (viewState === 'results' && scanResult && selectedRestaurant) {
+    console.log('HomePage - rendering results view');
     return (
       <div className="min-h-screen bg-white">
         <Navigation />
@@ -242,6 +311,19 @@ export default function HomePage() {
             </div>
           </div>
         </footer>
+        
+        {/* Lead Capture Modal */}
+        <LeadCaptureModal
+          isOpen={showLeadModal}
+          onClose={() => setShowLeadModal(false)}
+          onSubmit={handleLeadSubmit}
+          onAdminBypass={() => {
+            // Admin bypass - close modal, user already has access to results
+            setShowLeadModal(false);
+          }}
+          restaurantName={selectedRestaurant?.name || ''}
+          isSubmitting={isSubmittingLead}
+        />
       </div>
     );
   }

@@ -7,6 +7,7 @@ import { restaurantSearchResultSchema, scanResultSchema } from "@shared/schema";
 import { JsonSanitizer } from "./utils/jsonSanitizer";
 import { EnhancedDataForSeoService } from "./services/enhancedDataForSeoService";
 import { FunFactsService } from "./services/funFactsService";
+import { WebhookExportService } from "./services/webhookExportService";
 import { z } from "zod";
 import OpenAI from "openai";
 
@@ -15,8 +16,8 @@ import OpenAI from "openai";
 export async function registerRoutes(app: Express): Promise<Server> {
   // API credentials with fallback priority
   const GOOGLE_API_KEY = process.env.GOOGLE_PLACES_API_KEY;
-  const DATAFOREO_LOGIN = process.env.DATAFORSEO_LOGIN || process.env.DATAFOREO_LOGIN;
-  const DATAFOREO_PASSWORD = process.env.DATAFORSEO_PASSWORD || process.env.DATAFOREO_PASSWORD;
+  const DATAFOREO_LOGIN = process.env.DATAFORSEO_LOGIN;
+  const DATAFOREO_PASSWORD = process.env.DATAFORSEO_PASSWORD;
 
   const APIFY_API_KEY = process.env.APIFY_API_KEY;
 
@@ -218,6 +219,41 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const completionMessage = JsonSanitizer.safeStringify(completionEvent);
       console.log('Completion message length:', completionMessage.length);
       console.log('Completion message valid:', JsonSanitizer.isValidJson(completionMessage));
+      
+      // Send webhook if configured (wrapped in try-catch to prevent scan failure)
+      if (process.env.WEBHOOK_URL) {
+        try {
+          console.log('🪝 Webhook URL configured, preparing to send scan results...');
+          
+          const webhookConfig = {
+            url: process.env.WEBHOOK_URL,
+            secret: process.env.WEBHOOK_SECRET,
+            timeout: parseInt(process.env.WEBHOOK_TIMEOUT || '30000'),
+            retryAttempts: parseInt(process.env.WEBHOOK_RETRY_ATTEMPTS || '3'),
+            enableFileBackup: process.env.WEBHOOK_ENABLE_FILE_BACKUP === 'true'
+          };
+          
+          const webhookService = new WebhookExportService(webhookConfig);
+          
+          // Send webhook asynchronously to not block the response
+          setImmediate(() => {
+            webhookService.sendWebhook(scanResult).then((success) => {
+              if (success) {
+                console.log('✅ Webhook sent successfully');
+              } else {
+                console.error('❌ Webhook failed after all retry attempts');
+              }
+            }).catch((error) => {
+              console.error('💥 Webhook error:', error);
+            });
+          });
+          
+        } catch (error) {
+          console.error('⚠️ Webhook setup error (scan continues):', error);
+        }
+      } else {
+        console.log('ℹ️ No webhook URL configured (WEBHOOK_URL not set)');
+      }
       
       res.write(`data: ${completionMessage}\n\n`);
       res.end();
@@ -513,7 +549,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     console.log('🔍 Request body:', req.body);
     
     try {
-      const { keyword, location } = req.body;
+      const { keyword, location, city, state } = req.body;
       
       if (!keyword) {
         console.log('❌ KEYWORD SEARCH: No keyword provided');
@@ -525,7 +561,23 @@ export async function registerRoutes(app: Express): Promise<Server> {
         return res.status(503).json({ error: "DataForSEO credentials not configured" });
       }
       
-      console.log(`🔍 KEYWORD SEARCH: Searching for "${keyword}" in location: ${location || 'US'}`);
+      // Format location as "City,State,United States" to match restaurant scan format (no spaces)
+      let searchLocation = 'United States';
+      console.log(`🔍 DEBUG: Received city="${city}", state="${state}", location="${location}"`);
+      
+      if (city && state) {
+        searchLocation = `${city},${state},United States`;  // No spaces after commas
+        console.log(`🔍 DEBUG: Using city/state format: ${searchLocation}`);
+      } else if (location) {
+        // Ensure fallback location includes "United States"
+        searchLocation = location.replace(/,\s+/g, ',');
+        if (!searchLocation.includes('United States')) {
+          searchLocation = `${searchLocation},United States`;
+        }
+        console.log(`🔍 DEBUG: Using fallback location: ${searchLocation}`);
+      }
+      
+      console.log(`🔍 KEYWORD SEARCH: Searching for "${keyword}" in location: ${searchLocation}`);
       
       // Use DataForSEO organic search to get top 5 results
       const response = await fetch('https://api.dataforseo.com/v3/serp/google/organic/live/advanced', {
@@ -536,7 +588,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         },
         body: JSON.stringify([{
           language_code: 'en',
-          location_name: location ? location.replace(/,\s+/g, ',') : 'United States',  // Remove spaces after commas
+          location_name: searchLocation,  // Use properly formatted location
           keyword: keyword,
           depth: 5  // Only get top 5 results
         }])
@@ -571,16 +623,228 @@ export async function registerRoutes(app: Express): Promise<Server> {
       
       console.log(`✅ KEYWORD SEARCH: Found ${results.length} results for "${keyword}"`);
       
+      // Get search volume data for the keyword
+      let searchVolume = 0;
+      let difficulty = 0;
+      let competition = 0;
+      
+      console.log('🔍 SEARCH VOLUME SECTION: Starting search volume lookup...');
+      
+      try {
+        console.log(`🔍 Getting search volume for "${keyword}" in ${searchLocation}`);
+        console.log('🔍 About to call DataForSEO search volume API...');
+        
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 15000); // 15 second timeout
+        
+        const volumeResponse = await fetch('https://api.dataforseo.com/v3/keywords_data/google_ads/search_volume/live', {
+          method: 'POST',
+          headers: {
+            'Authorization': `Basic ${Buffer.from(`${DATAFOREO_LOGIN}:${DATAFOREO_PASSWORD}`).toString('base64')}`,
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify([{
+            location_name: searchLocation,
+            language_code: 'en',
+            keywords: [keyword],
+            search_partners: true
+          }]),
+          signal: controller.signal
+        });
+        
+        clearTimeout(timeoutId);
+        
+        console.log('🔍 Volume response status:', volumeResponse.status, volumeResponse.ok);
+        if (volumeResponse.ok) {
+          const volumeData = await volumeResponse.json();
+          console.log('🔍 Volume data received, processing...');
+          
+          const volumeItem = volumeData.tasks?.[0]?.result?.[0];
+          console.log('🔍 Volume item found:', !!volumeItem);
+          
+          if (volumeItem && volumeItem.search_volume !== undefined) {
+            searchVolume = volumeItem.search_volume || 0;
+            difficulty = volumeItem.keyword_difficulty || 0;
+            competition = volumeItem.competition || 0;
+            console.log(`🔍 ✅ Volume data extracted: ${searchVolume} searches/month`);
+            
+            console.log(`✅ Search volume data: ${searchVolume} monthly searches, difficulty: ${difficulty}`);
+          } else {
+            console.log('⚠️ No search volume data found in API response');
+          }
+        } else {
+          const errorText = await volumeResponse.text();
+          console.log(`⚠️ Search volume API failed with status: ${volumeResponse.status}`);
+          console.log(`⚠️ Search volume API error response: ${errorText}`);
+        }
+      } catch (volumeError) {
+        console.log('⚠️ Failed to get search volume data:', volumeError.message);
+        console.log('⚠️ Volume error details:', volumeError);
+      }
+      
       res.json({
         keyword,
-        location: location || 'United States',
+        location: searchLocation,  // Return the properly formatted location
         results,
+        searchVolume,
+        difficulty,
+        competition,
         timestamp: new Date().toISOString()
       });
       
     } catch (error) {
       console.error('❌ Keyword search error:', error);
       res.status(500).json({ error: 'Internal server error' });
+    }
+  });
+
+  // Lead capture endpoint for gating scans
+  app.post("/api/leads", async (req, res) => {
+    try {
+      const { firstName, lastName, email, phone, restaurantName, placeId } = req.body;
+      
+      // Validate required fields
+      if (!firstName || !lastName || !email || !restaurantName) {
+        return res.status(400).json({ 
+          error: "Missing required fields",
+          details: "First name, last name, email, and restaurant name are required" 
+        });
+      }
+      
+      // Basic email validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        return res.status(400).json({ 
+          error: "Invalid email",
+          details: "Please provide a valid email address" 
+        });
+      }
+      
+      // Create lead object
+      const lead = {
+        id: `lead_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+        firstName: firstName.trim(),
+        lastName: lastName.trim(),
+        email: email.toLowerCase().trim(),
+        phone: phone ? phone.trim() : null,
+        restaurantName: restaurantName.trim(),
+        placeId: placeId || null,
+        createdAt: new Date().toISOString(),
+        source: 'web_scanner',
+        scanCompleted: false
+      };
+      
+      // Store lead in JSON file (Phase 1 - local storage)
+      const fs = await import('fs/promises');
+      const path = await import('path');
+      const leadsDir = path.join(process.cwd(), 'leads');
+      
+      // Create leads directory if it doesn't exist
+      try {
+        await fs.mkdir(leadsDir, { recursive: true });
+      } catch (err) {
+        console.log('Leads directory already exists or error creating:', err);
+      }
+      
+      // Read existing leads
+      const leadsFile = path.join(leadsDir, 'leads.json');
+      let existingLeads = [];
+      try {
+        const fileContent = await fs.readFile(leadsFile, 'utf-8');
+        existingLeads = JSON.parse(fileContent);
+      } catch (err) {
+        // File doesn't exist yet, start with empty array
+        existingLeads = [];
+      }
+      
+      // Add new lead
+      existingLeads.push(lead);
+      
+      // Save updated leads
+      await fs.writeFile(leadsFile, JSON.stringify(existingLeads, null, 2));
+      
+      console.log('📧 New lead captured:', {
+        name: `${lead.firstName} ${lead.lastName}`,
+        email: lead.email,
+        restaurant: lead.restaurantName
+      });
+      
+      // Generate a simple token for this session (can be enhanced later)
+      const scanToken = Buffer.from(`${lead.id}:${Date.now()}`).toString('base64');
+      
+      // Send to n8n webhook
+      const webhookUrl = process.env.N8N_WEBHOOK_URL || 'https://n8n.boostly.com/webhook/leadgen';
+      
+      try {
+        const webhookPayload = {
+          ...lead,
+          // Add some additional context for n8n
+          scanType: 'restaurant_analysis',
+          timestamp: lead.createdAt,
+          userAgent: req.headers['user-agent'],
+          ipAddress: req.ip || req.connection.remoteAddress,
+          referrer: req.headers.referer
+        };
+        
+        console.log('📤 Sending lead to n8n webhook:', webhookUrl);
+        console.log('📦 Webhook payload:', JSON.stringify(webhookPayload, null, 2));
+        
+        // Send webhook synchronously for testing - using GET request
+        try {
+          // Build query parameters for GET request
+          const params = new URLSearchParams({
+            firstName: lead.firstName,
+            lastName: lead.lastName,
+            email: lead.email,
+            phone: lead.phone || '',
+            restaurantName: lead.restaurantName,
+            placeId: lead.placeId || '',
+            leadId: lead.id,
+            scanType: 'restaurant_analysis',
+            source: lead.source,
+            createdAt: lead.createdAt
+          });
+          
+          const getUrl = `${webhookUrl}?${params.toString()}`;
+          console.log('📤 Sending GET request to n8n:', getUrl);
+          
+          const webhookResponse = await fetch(getUrl, {
+            method: 'GET',
+            headers: {
+              'User-Agent': 'Boostly-Scanner/1.0',
+            }
+          });
+
+          const responseText = await webhookResponse.text();
+          
+          if (webhookResponse.ok) {
+            console.log('✅ Lead sent to n8n successfully via GET');
+            console.log('📨 n8n response:', responseText);
+          } else {
+            console.error('❌ n8n webhook GET failed:', webhookResponse.status);
+            console.error('📨 Error response:', responseText);
+          }
+        } catch (bgError) {
+          console.error('❌ Background n8n webhook error:', bgError.message);
+        }
+      } catch (webhookError) {
+        console.error('❌ n8n webhook error:', webhookError.message);
+        console.error('🔍 Full error:', webhookError);
+        // Don't fail the lead capture if webhook fails
+      }
+      
+      res.json({ 
+        success: true, 
+        scanToken,
+        message: "Lead captured successfully" 
+      });
+      
+    } catch (error) {
+      console.error('Lead capture error:', error);
+      res.status(500).json({ 
+        error: "Failed to capture lead",
+        details: error instanceof Error ? error.message : 'Unknown error' 
+      });
     }
   });
 
