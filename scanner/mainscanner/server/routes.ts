@@ -964,27 +964,14 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
       // Prepare webhook response based on format
       if (returnFormat === 'simplified') {
-        // Return simplified format for easier n8n processing
+        // Return simplified format matching HeyGen webhook structure
+        const webhookService = new WebhookExportService({ url: 'dummy' });
+        const heygernFormat = await webhookService.prepareCompleteExport(scanResult);
+        
+        // Add n8n specific success wrapper
         const simplifiedResult = {
           success: true,
-          timestamp: new Date().toISOString(),
-          restaurant: {
-            name: scanResult.restaurantName,
-            domain: scanResult.domain,
-            placeId: scanResult.placeId,
-            address: scanResult.businessProfile?.address || '',
-            rating: scanResult.businessProfile?.rating || 0,
-            totalReviews: scanResult.businessProfile?.totalReviews || 0
-          },
-          scores: {
-            overall: scanResult.overallScore || 0,
-            seo: scanResult.seo || 0,
-            performance: scanResult.performance || 0,
-            mobile: scanResult.mobile || 0,
-            reviews: scanResult.reviewsAnalysis?.overallScore || 0
-          },
-          recommendations: scanResult.reviewsAnalysis?.recommendations || [],
-          webhookUrl: process.env.WEBHOOK_URL || null
+          ...heygernFormat
         };
         
         return res.json(simplifiedResult);
