@@ -101,6 +101,10 @@ export class WebhookExportService {
             position: k.position,
             searchVolume: k.searchVolume || 0
           })),
+        // Three worst ranking keywords (highest positions or not ranking)
+        worstRankingKeywords: this.getWorstRankingKeywords(
+          scanResult.competitiveOpportunityKeywords || []
+        ),
         // Keywords missing from top 3 (for your script)
         missingFromTop3: this.getMissingTop3Keywords(
           scanResult.competitiveOpportunityKeywords || [],
@@ -635,5 +639,25 @@ export class WebhookExportService {
       .filter((k: any) => !k.position || k.position === 0)
       .slice(0, 3)
       .map((k: any) => k.keyword);
+  }
+
+  private getWorstRankingKeywords(competitiveKeywords: any[]): Array<{keyword: string, position: number | null, searchVolume?: number}> {
+    // Sort keywords by worst position (treat null/0 as position 999 for sorting)
+    const sortedKeywords = competitiveKeywords
+      .map((k: any) => ({
+        keyword: k.keyword,
+        position: k.position || null,
+        searchVolume: k.searchVolume || 0,
+        sortPosition: k.position && k.position > 0 ? k.position : 999
+      }))
+      .sort((a: any, b: any) => b.sortPosition - a.sortPosition) // Worst positions first
+      .slice(0, 3)
+      .map(({keyword, position, searchVolume}: any) => ({
+        keyword,
+        position,
+        searchVolume
+      }));
+
+    return sortedKeywords;
   }
 }
