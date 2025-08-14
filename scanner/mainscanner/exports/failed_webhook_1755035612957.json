@@ -1,0 +1,1243 @@
+{
+  "event": "scan_completed_full_export",
+  "version": "2.0.0",
+  "timestamp": "2025-08-12T21:53:30.841Z",
+  "scanId": "scan_1755035610841",
+  "scanDuration": 0,
+  "restaurant": {
+    "name": "Sakura Sushi",
+    "domain": "www.sakurasushiut.com",
+    "placeId": "ChIJ987AgKyBUocRKG4GTG_fmPI",
+    "location": {
+      "address": "2975 W Club House Dr #1B, Lehi, UT 84043, USA",
+      "city": "Lehi",
+      "state": "UT",
+      "country": "United States",
+      "latitude": null,
+      "longitude": null
+    },
+    "categories": [],
+    "priceLevel": null,
+    "cuisine": "American",
+    "restaurantType": "FSR"
+  },
+  "scores": {
+    "overall": 68,
+    "seo": 70,
+    "performance": 62,
+    "mobile": 42,
+    "userExperience": 60,
+    "accessibility": 0,
+    "bestPractices": 0,
+    "local": 71,
+    "social": 0,
+    "reviews": 71,
+    "website": 62,
+    "domainAuthority": 66
+  },
+  "businessProfile": {
+    "name": "Sakura Sushi",
+    "address": "2975 W Club House Dr #1B, Lehi, UT 84043, USA",
+    "rating": 4.7,
+    "reviewCount": 140,
+    "phoneNumber": "(801) 766-6688",
+    "website": "https://www.sakurasushiut.com/",
+    "formatted_address": "2975 W Club House Dr #1B, Lehi, UT 84043, USA",
+    "address_components": [
+      {
+        "long_name": "1B",
+        "short_name": "1B",
+        "types": [
+          "subpremise"
+        ]
+      },
+      {
+        "long_name": "2975",
+        "short_name": "2975",
+        "types": [
+          "street_number"
+        ]
+      },
+      {
+        "long_name": "West Club House Drive",
+        "short_name": "W Club House Dr",
+        "types": [
+          "route"
+        ]
+      },
+      {
+        "long_name": "Lehi",
+        "short_name": "Lehi",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Utah County",
+        "short_name": "Utah County",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Utah",
+        "short_name": "UT",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United States",
+        "short_name": "US",
+        "types": [
+          "country",
+          "political"
+        ]
+      },
+      {
+        "long_name": "84043",
+        "short_name": "84043",
+        "types": [
+          "postal_code"
+        ]
+      }
+    ],
+    "state": "Utah",
+    "city": "Lehi",
+    "place_id": "ChIJ987AgKyBUocRKG4GTG_fmPI",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "food",
+      "point_of_interest",
+      "restaurant"
+    ],
+    "reviews": [
+      {
+        "author_name": "Melina Anderson",
+        "author_url": "https://www.google.com/maps/contrib/100264778439330793138/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL3imlCWP6unjCVEt6x5ATylBAKOhrKjXZ0r8ON2Rpy4f8NXQ=s128-c0x00000000-cc-rp-mo",
+        "rating": 5,
+        "relative_time_description": "a month ago",
+        "text": "Lovely little sushi spot~\nOrdered the pink dragon roll and a sushi appetizer of golden shrimp and I also ordered some sesame balls to take with me on the go. Both the sushi and the sushi appetizer were tasty and I love food with some spice so the pink dragon was perfect for me. The sesame balls have to be my favorite bit about my order though! Loved them!!! I would go again just to eat these cuties again! Service was fast and the food is reasonably priced. Love the aesthetic and cute decorations. I’ll definitely be back!",
+        "time": 1750366696,
+        "translated": false
+      },
+      {
+        "author_name": "Meghan Humphries",
+        "author_url": "https://www.google.com/maps/contrib/102548896970440631002/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVu0fd7uYGhRokxUoyGuJvFQG7zeh5hPHoY9994sM1ncRS8Jnuq=s128-c0x00000000-cc-rp-mo-ba4",
+        "rating": 5,
+        "relative_time_description": "2 months ago",
+        "text": "This place is adorably decorated, the staff are excellent, and the food is incredible. I was very impressed with the quality of the fish and veggies, and they came together beautifully. We especially enjoyed the Firey Jalapeno appetizer - that was the unexpected highlight of the meal!\nThe sushi is very reasonably priced, and the appetizers were very cheap (get the gyoza, it's delicious). The Red Devil and Blaze Rolls were our favorites, but anything with a lime was very tasty.\nWe will absolutely bring the family here again, even our kids liked it!",
+        "time": 1747529020,
+        "translated": false
+      },
+      {
+        "author_name": "Wendy Robinson",
+        "author_url": "https://www.google.com/maps/contrib/110171072039344464624/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVjxFFgQQHXMMvbQL6YEvFf4eP0BVVtUXavT0LbPIJzITknq8-Wuw=s128-c0x00000000-cc-rp-mo-ba5",
+        "rating": 5,
+        "relative_time_description": "3 months ago",
+        "text": "Came in to try a new sushi place and were pleasantly surprised. They had a large sushi menu with lots of options to choose from. Each roll that we ordered was very tasty and we were happy with each selection. We had the: Tiger eyes, Breeze, Treasure roll, Crazies, and Salmon avacado roll.\nThe seating is set up with good spacing. Cute decor and loved the lighting set up. The umbrellas hanging from the ceiling gave a cool vibe.\nOne complaint is the drinks weren’t listed on the menu at all, so we had to ask what was available.",
+        "time": 1744734960,
+        "translated": false
+      },
+      {
+        "author_name": "Kyle Amata",
+        "author_url": "https://www.google.com/maps/contrib/108959101781327086643/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWTARmClDkc91c1ErsTG7cKg7oHXWVJfHH-VBnRvnRV6oip_Cgw5A=s128-c0x00000000-cc-rp-mo-ba4",
+        "rating": 5,
+        "relative_time_description": "a week ago",
+        "text": "Sakura Sushi was a great find. The place was super clean, the service was quick, and the staff was genuinely helpful. I mentioned that my wife is pregnant and can’t eat raw fish, and without hesitation they offered to custom-make any roll with cooked fish. That kind of flexibility isn’t something you get everywhere, and we really appreciated it.\n\nThe food itself was excellent—fresh, flavorful, and well put together. My wife loved her custom rolls, and everything I tried was just as good. Overall, a solid experience from start to finish. We’ll definitely be back.",
+        "time": 1753845046,
+        "translated": false
+      },
+      {
+        "author_name": "Samantha Oscarson",
+        "author_url": "https://www.google.com/maps/contrib/118313255109939206444/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVKK9DztPAJaMd2RIHLCUppvRJIBKKvlluMClI5AMoFTTUFTEBjEw=s128-c0x00000000-cc-rp-mo-ba3",
+        "rating": 5,
+        "relative_time_description": "4 months ago",
+        "text": "Seated very quickly. Food came out fast! Sushi was delicious!!\nWe ordered the AAC, Dragon roll, Citrus Roll (commonly known as sunset), and Vegas. Everything was so good!\nCan't wait to return. Great sushi for a great price!",
+        "time": 1743130056,
+        "translated": false
+      }
+    ],
+    "photos": [
+      {
+        "height": 4800,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115134067486961620556\">Sakura Sushi</a>"
+        ],
+        "photo_reference": "ATKogpeyurjeQmMrIubCqrGytFnUHYruSimwH1w2umcqs7pvMAHXuatSMBl4p78g46uIjMNX8N_DNGT1Hbmfp8hClEXMElaTslGu-i0lR2FpYp14duYtSBTFh5EQerAxvtg4iy49JQPUTAxxT-lKc2jxyivLfsBGfkb7EVnhGO_eg-OF9vPRoTfP2URfKDlhG2odHpH0KGKKSSsKk4w4y88GWL2xd3_iwq1NLU-qAuDU8EMmAO5fWbZ8vLoNg_eoe3j67MOpoaairZ3_gCHzSZKHmBfSOuhWQVYtbyJpJdS2m6HzjA",
+        "width": 3600
+      },
+      {
+        "height": 750,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115134067486961620556\">Sakura Sushi</a>"
+        ],
+        "photo_reference": "ATKogpfctfxFVZEHcPignmNMrV54tepiEbfwLPvwk-DRV4FS44j5kagLkWTafd6625PtFJVJZny5GHcjhEovd5TP3tw8SR0muhMBTr5hFsxWG1Tviykte0QgjixK6yVHV5uHLrzT6qLDkPKNzZPt_UG2h5REl25RoKPzfe_JFDp5DxOeV5nBx_RhOJ1uQmIDHhxKWATbpDg6Bq3KJDmieyUTAiOv5G60W_cLRv21X4IXCa-scfgn_Gd0ZPoZrRwVs2R3GnNu_mmTut8ZBW0ka-p3eltJquns8a7w5l4nRQ_Gcj8N6A",
+        "width": 878
+      },
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/105514935786098679565\">Joel Acevedo</a>"
+        ],
+        "photo_reference": "ATKogpc0vkvbrgnZLeIykQamHqBFpHhb7QynjcTv8yJHhuydzdnjur7HiocOD-hnDIRWMGnqpWBKI3uNTK6QBaS5QIxEE1yATb6f8m5BtZ_veCP4zap62JoMeUyS2OKKVht_Fm4pkk5WavXEHPhM25gjMrF_57lJ_A30Hr4WOBRioM-7sB_g3kRUYyGBONKhkEQfreiODgx2P2hgWVX4MbVUoLhxA434ceRmkRhpksfTjnwc5s-MJ9kfxFQIJBpxfX-LjPdM7JUgRl3g4Jq0vq91Nb2WV2KqtmpGZZnD7T19pQV9-zD7yU81JIrPOf2_GkOL3EnBRMY6yIhLFG8OXX-grTx7fVI0n6-ucQdb1o3xG4bJGVqD_244W2ZrprFyoivehjFPB3pUlMB7Mvn81e3cjP_f298yFtZWiCD_zhAyGkc6ir9KzwT5PbNG2uijmB9Z",
+        "width": 4032
+      },
+      {
+        "height": 3600,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/111984154276726376908\">Sara B.</a>"
+        ],
+        "photo_reference": "ATKogpfHz5HOaMyiNoNIYFhxZFCBKagcIT8brDoWACHUhAW5Np8ARVW1945QYLU7tmaxIY8kj-xymGMSFu9A15fn8npzZBTR6TI5zvtKH8GkAozTO3xmS3vXkWEQ2j-bolLkpbjUXLd8DgGtATlV-K_r70Eb0iQw16eNcbKVeyWpAaSeyW_Guo2s5MBqaC5y6G80BLJL1KT9ByoHWGE-BehC14ycCuELFbWjZML6sBLy4V6VEzTcJzWYkTpdCVyONLG_GD3oh8POG-vK3MXC8nMSGQWRCzKTPlL95G_4RpXEzXDVvdGpdnHvcZZVCJEMZhr6OCJP_HpCGuVZbXlwH2IR1CS5cMjmPjsUJB--vyUWsqKg9cFOLvOcYY5TRXprAdR7Ksh7NZ-VqnaWPGBRIPrfShhPVbI7bIbQDWVTa5u0fh0fFp99",
+        "width": 4800
+      },
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110515674339715172088\">Jorge Garcia</a>"
+        ],
+        "photo_reference": "ATKogpdyGtCNdzM83eim3Wnj3fSs8tjOKtiazYF6WKnKtDRwlFfvwYAx3HpnKzoWxSeMZM_hbSFwwnxq2SqljczlhimSt4MA5rriUrzh8GTQW-xJpJToxnx-dSDM0KwduuLNtcrs1jqplvYpYHegbLi323U74PU38qTmacik71vUCnOoLxXWA3xa7MJojXpl3_xLT4tZW8GLWy4nscj9Jeh6g5A_-vU-38EQIxiH375fyNhst8IBiA3E_64J-YXqhoSQiCK8onWBkbi6Bl4sJS5yYDpRnhkncAMCjVAu0bRHV1luU-KbBcLvZy342NpGvrpwd2IJbQKQcYXRNbPbI_XTmw6wJc8i7aA7brQVJAUKqLQRq38PKURXvPyRoI2IQROVhS590vWZWn8PuD5HFadeKXN9OFsXBVQ1n7E72mjnteZvnlyqr6X4nrRqfd9qrA",
+        "width": 4032
+      },
+      {
+        "height": 3600,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/116121696922932936019\">Hal Halladay</a>"
+        ],
+        "photo_reference": "ATKogpdlDngoCF227UUoF0q8CkXc3kE_kbcTIO9IMRwtGwWek6o-_yf4FzbfbdDNg-QizUaMUo2wJkopTDzdOnKx02GHgDkJw87tRYIUmn-_bYIwhlbXO8tf3Qf7uU_KpqTQJYVnue6e6fT4SK3NpOOKfLMbVYC3n1lOEeEj5SrRaIAdOfURynXL5QMf2v5ddsNY5bKh5RcPPZN130dZOc5-q3YgvWapkv-enPGlbrzEY1A7Z4oivNeGW6NYAC7Anv3ipn6evi5ubJKClqwl64qU9hQZrfFGyDBwOIxklR4Rrqw_V0_mZHUpohpR9mGhEim9WDVXlELFLWdM1yPig-gAPXPy1scLO3md56AMvmpFMh7ulPGslvRBApqNaaIeDpvojp9Q8lhO_j77yX7P0eWakN0foSlUFp-zKeNgI-mOX7vF9dd6",
+        "width": 4800
+      },
+      {
+        "height": 3600,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/116121696922932936019\">Hal Halladay</a>"
+        ],
+        "photo_reference": "ATKogpfve6N9i2blH_XObmEzQIfnvsV7E1KD5tluT8AiAUgkuFKy3bkGvCLc0NPHYAyskmbNGh_0y7PnpXnxy9oiSiOm_Y2zdL-YPJxWbxnBPBcknOewQXpBkS0u1S96ADrKHJ6VXyO_1pf7Hjrix3nTkmPhpsTHr5qHpP7KaRgVDoMY82RD2eXKE8F5J2KHdMbWgULMrCfeBgh1CZGtibCq8BjSBJp9ozZ8ZwEI_c5Lyw_plObgzaIW36GDgA8-_pxD6cBTVIre2twVQbZhBUiOboM7P6w3PrVLpA5n81lE1Gq7PtpUN4i-B7h17czKetreRqUUQntuNQJJglOnyntH83EJyjhkNJlEJxG-MzrwQExRBfy2V2VUMxYD2raZQEYx8u8ZEfpEjzJg1akexPHIuUClzuZtaVWp729VsjN1v-VZeA",
+        "width": 4800
+      },
+      {
+        "height": 1280,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/117321099582269444707\">Maangho Lui</a>"
+        ],
+        "photo_reference": "ATKogpfmMsN3nH1n2qR_KyNI6A4Yp_PAsrh4jGk_QTEiFcsi0yVdDpfYOE_SOpif2CWiUz454lom_jBN9lFqqrwKBohFd2Db3_Mncd91IAIw2ehdrjBOoVF7EOeW81kHvDDndcicx48bnLNbOQoMRnuyv0gpXCE-GXY7VKTs05GwK68IaL8KE0mDZBG_K4XSioJP80zuvlHLA6ueBB-1z53QhCrL-HbdYS3QbBVq1GnZxGjwxISdUNQ-ldYdNLAzaSavZEvzU5U2EOzDnupkq9K0CCUyJfoO-dWnb3i9oJfaH-SfJaNiYujaNAySETu9Wb82owi-tVqbt0pUcAsDZ1Gb78MDR3jSn36Ce44XC2FclQmCeKKsK4q6_GS3ztVHbDIiEK773_Jv01HyTLGvKO-lgm7eG5FauVNwDK2rqMUvyiI",
+        "width": 1452
+      },
+      {
+        "height": 4800,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115134067486961620556\">Sakura Sushi</a>"
+        ],
+        "photo_reference": "ATKogpdK6HAWs1lyyQELZd8qp6mT1NGMPllHkzoeP6NWAEgoHaXGsYUPBfiFIOamVL11kK3MwCv19ExeFn4qWwULSHval1WboUmQDIRIwqdjIB1FKImdqyY02KsvDtZv0_RxvIzVgIl1E1DCGGfSoFw5P8QH70TvgFEm3YtNvw2Xj3IRr0SzKg3_4iwyh09cenRbQoYKS9KGt6X6nohND813_cxtoM2A62-t71TvDT3EBe8HjEW47TYLxbt-h_TwwgSrLkCyTQFkWYXGbECgzfqzWj6ZuiGWNVnMO0gB9xZYOjDX5Q",
+        "width": 3600
+      },
+      {
+        "height": 1707,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/103198006865664911267\">Flex</a>"
+        ],
+        "photo_reference": "ATKogpehtTmX_4a4QmI_tdaGFzSmPpo5evU9lx5luZtiLn6MIgDvUAXAAlosjw1m9EgZ9N5e4If_KllLvSXUxTJwy4y6PoERx2qUgIz6__3yHVRmmovAs6j2EksGKntSVISvQpP40M3nmXoEPWD-CGWd1Edk63Bu6AyXBaPHVSBF7u1FZ7xAvycISJvZzm_sDkiTGGkZGiPkVupox9bCYyhZ9reZ70bOcejtcDWqKVBKJZ-Oesqxj2EETojkSsuj9nV1FBHU9nTMYxn2QwPfqa63BDuxEUJgDWvF3i0CgTmJDAKd_6-YH2Q08QcHL8uEl8EHMftoyGqxWmCwXUwnGWeOJ5hunawBN2cub300aX-dZ1tAnUwA_nUfojPwXJurUugKMfw3NPa23LeIHIvcJKkbmDmd_kv2iaGdaRBZV9hBi27ggYJAsfDX523-lCRS0Lqy",
+        "width": 1280
+      }
+    ],
+    "photoCount": 10,
+    "opening_hours": {
+      "open_now": true,
+      "periods": [
+        {
+          "close": {
+            "day": 1,
+            "time": "2130"
+          },
+          "open": {
+            "day": 1,
+            "time": "1100"
+          }
+        },
+        {
+          "close": {
+            "day": 2,
+            "time": "2130"
+          },
+          "open": {
+            "day": 2,
+            "time": "1100"
+          }
+        },
+        {
+          "close": {
+            "day": 3,
+            "time": "2130"
+          },
+          "open": {
+            "day": 3,
+            "time": "1100"
+          }
+        },
+        {
+          "close": {
+            "day": 4,
+            "time": "2130"
+          },
+          "open": {
+            "day": 4,
+            "time": "1100"
+          }
+        },
+        {
+          "close": {
+            "day": 5,
+            "time": "2230"
+          },
+          "open": {
+            "day": 5,
+            "time": "1100"
+          }
+        },
+        {
+          "close": {
+            "day": 6,
+            "time": "2230"
+          },
+          "open": {
+            "day": 6,
+            "time": "1100"
+          }
+        }
+      ],
+      "weekday_text": [
+        "Monday: 11:00 AM – 9:30 PM",
+        "Tuesday: 11:00 AM – 9:30 PM",
+        "Wednesday: 11:00 AM – 9:30 PM",
+        "Thursday: 11:00 AM – 9:30 PM",
+        "Friday: 11:00 AM – 10:30 PM",
+        "Saturday: 11:00 AM – 10:30 PM",
+        "Sunday: Closed"
+      ]
+    },
+    "price_level": 2,
+    "editorial_summary": null,
+    "responseRate": 65,
+    "averageResponseTime": "1 day"
+  },
+  "profileAnalysis": {
+    "completeness": {
+      "score": 75,
+      "missingElements": []
+    },
+    "optimization": {
+      "score": 70,
+      "issues": []
+    },
+    "competitiveness": 65,
+    "recommendations": [],
+    "strengths": [],
+    "weaknesses": []
+  },
+  "keywords": {
+    "trackedKeywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "japanese near me",
+        "position": 6,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.sakurasushiut.com/njhvsmta/sakura-sushi-lehi-84043/order-online",
+        "title": "Best Japanese in Lehi, UT | Sakura Sushi | Order Online",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "japanese delivery Lehi",
+        "position": 1,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.sakurasushiut.com/",
+        "title": "Sakura Sushi - Pickup or Delivery Available",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best japanese Lehi",
+        "position": 7,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.sakurasushiut.com/njhvsmta/sakura-sushi-lehi-84043/order-online",
+        "title": "Best Japanese in Lehi, UT | Sakura Sushi | Order Online",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "Lehi japanese",
+        "position": 7,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.sakurasushiut.com/",
+        "title": "Sakura Sushi - Pickup or Delivery Available",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "japanese places near me",
+        "position": 4,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.sakurasushiut.com/",
+        "title": "Order Authentic Japanese Online | Sakura Sushi - Pickup or ...",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "japanese Lehi Utah",
+        "position": 5,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.sakurasushiut.com/",
+        "title": "Sakura Sushi - Pickup or Delivery Available",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "japanese delivery near me",
+        "position": 2,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.sakurasushiut.com/",
+        "title": "Order Authentic Japanese Online | Sakura Sushi - Pickup or ...",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "japanese open now",
+        "position": 12,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 50,
+        "url": "https://www.sakurasushiut.com/",
+        "title": "Sakura Sushi - Pickup or Delivery Available",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "domainRankedKeywords": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    }
+  },
+  "localCompetitorData": [],
+  "localPackReport": {
+    "summary": {
+      "visibility_score": 100,
+      "keywords_appeared": 8,
+      "total_keywords": 8,
+      "average_position": 2.3,
+      "best_position": 1
+    },
+    "keyword_results": [
+      {
+        "keyword": "japanese near me",
+        "found": true,
+        "position": 2,
+        "confidence": 100,
+        "matched_fields": [
+          "title",
+          "url"
+        ],
+        "local_pack_data": {
+          "name": "Sakura Sushi",
+          "address": "Lehi, UT ",
+          "website": "https://www.sakurasushiut.com/",
+          "phone": "(801) 766-6688",
+          "rating": 4.7,
+          "reviews": 140
+        },
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Kahi Sushi",
+            "address": "American Fork, UT ",
+            "website": "https://kahisushi.com/",
+            "rating": 4.9,
+            "reviews": 437
+          }
+        ]
+      },
+      {
+        "keyword": "japanese Lehi",
+        "found": true,
+        "position": 1,
+        "confidence": 100,
+        "matched_fields": [
+          "title",
+          "url"
+        ],
+        "local_pack_data": {
+          "name": "Sakura Sushi",
+          "address": "Lehi, UT ",
+          "website": "https://www.sakurasushiut.com/",
+          "phone": "(801) 766-6688",
+          "rating": 4.7,
+          "reviews": 140
+        },
+        "competitors": []
+      },
+      {
+        "keyword": "best japanese Lehi",
+        "found": true,
+        "position": 1,
+        "confidence": 100,
+        "matched_fields": [
+          "title",
+          "url"
+        ],
+        "local_pack_data": {
+          "name": "Sakura Sushi",
+          "address": "Lehi, UT ",
+          "website": "https://www.sakurasushiut.com/",
+          "phone": "(801) 766-6688",
+          "rating": 4.7,
+          "reviews": 140
+        },
+        "competitors": []
+      },
+      {
+        "keyword": "japanese delivery near me",
+        "found": true,
+        "position": 5,
+        "confidence": 100,
+        "matched_fields": [
+          "title",
+          "url"
+        ],
+        "local_pack_data": {
+          "name": "Sakura Sushi",
+          "address": "Lehi, UT ",
+          "website": "https://www.sakurasushiut.com/",
+          "phone": "(801) 766-6688",
+          "rating": 4.7,
+          "reviews": 140
+        },
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Kahi Sushi",
+            "address": "American Fork, UT ",
+            "website": "https://kahisushi.com/",
+            "rating": 4.9,
+            "reviews": 437
+          },
+          {
+            "position": 2,
+            "name": "Tapa Sushi",
+            "address": "Saratoga Springs, UT ",
+            "website": "https://www.tapasushiutah.com/",
+            "rating": 4.4,
+            "reviews": 332
+          },
+          {
+            "position": 3,
+            "name": "Nori Sushi Bar & Grill",
+            "address": "American Fork, UT ",
+            "website": "https://www.norisushitutah.com/",
+            "rating": 4.5,
+            "reviews": 1500
+          }
+        ]
+      },
+      {
+        "keyword": "japanese Lehi Utah",
+        "found": true,
+        "position": 2,
+        "confidence": 100,
+        "matched_fields": [
+          "title",
+          "url"
+        ],
+        "local_pack_data": {
+          "name": "Sakura Sushi",
+          "address": "Lehi, UT ",
+          "website": "https://www.sakurasushiut.com/",
+          "phone": "(801) 766-6688",
+          "rating": 4.7,
+          "reviews": 140
+        },
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Sky's Toy Service Utah",
+            "address": "Eagle Mountain, UT ",
+            "website": "",
+            "rating": 5,
+            "reviews": 26
+          }
+        ]
+      },
+      {
+        "keyword": "top japanese Lehi",
+        "found": true,
+        "position": 1,
+        "confidence": 100,
+        "matched_fields": [
+          "title",
+          "url"
+        ],
+        "local_pack_data": {
+          "name": "Sakura Sushi",
+          "address": "Lehi, UT ",
+          "website": "https://www.sakurasushiut.com/",
+          "phone": "(801) 766-6688",
+          "rating": 4.7,
+          "reviews": 140
+        },
+        "competitors": []
+      },
+      {
+        "keyword": "japanese restaurant near me",
+        "found": true,
+        "position": 5,
+        "confidence": 100,
+        "matched_fields": [
+          "title",
+          "url"
+        ],
+        "local_pack_data": {
+          "name": "Sakura Sushi",
+          "address": "Lehi, UT ",
+          "website": "https://www.sakurasushiut.com/",
+          "phone": "(801) 766-6688",
+          "rating": 4.7,
+          "reviews": 140
+        },
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Kahi Sushi",
+            "address": "American Fork, UT ",
+            "website": "https://kahisushi.com/",
+            "rating": 4.9,
+            "reviews": 437
+          },
+          {
+            "position": 2,
+            "name": "Tsunami Restaurant & Sushi Bar - Traverse Mountain",
+            "address": "Lehi, UT ",
+            "website": "https://www.tsunamiutah.com/",
+            "rating": 4.4,
+            "reviews": 3200
+          },
+          {
+            "position": 3,
+            "name": "Nori Sushi Bar & Grill",
+            "address": "American Fork, UT ",
+            "website": "https://www.norisushitutah.com/",
+            "rating": 4.5,
+            "reviews": 1500
+          }
+        ]
+      },
+      {
+        "keyword": "japanese food Lehi",
+        "found": true,
+        "position": 1,
+        "confidence": 100,
+        "matched_fields": [
+          "title",
+          "url"
+        ],
+        "local_pack_data": {
+          "name": "Sakura Sushi",
+          "address": "Lehi, UT ",
+          "website": "https://www.sakurasushiut.com/",
+          "phone": "(801) 766-6688",
+          "rating": 4.7,
+          "reviews": 140
+        },
+        "competitors": []
+      }
+    ],
+    "recommendations": [
+      "Ranking below #1 for 4 keywords - increase customer reviews and engagement to improve rankings"
+    ],
+    "scan_metadata": {
+      "location": "Lehi,Utah,United States",
+      "timestamp": "2025-08-12T21:53:22.823Z",
+      "total_scan_time_ms": 22367
+    }
+  },
+  "reviewsAnalysis": {
+    "overallScore": 71,
+    "totalReviews": 0,
+    "averageRating": 4.7,
+    "sentimentBreakdown": {
+      "positive": 100,
+      "neutral": 0,
+      "negative": 0
+    },
+    "reviewSources": [
+      "Google Business Profile (Limited)"
+    ],
+    "keyThemes": [
+      "Food Quality",
+      "Service",
+      "Pricing"
+    ],
+    "recentReviews": [
+      {
+        "author": "Kyle Amata",
+        "rating": 5,
+        "text": "Sakura Sushi was a great find. The place was super clean, the service was quick, and the staff was genuinely helpful. I mentioned that my wife is pregnant and can’t eat raw fish, and without hesitation they offered to custom-make any roll with cooked fish. That kind of flexibility isn’t something you get everywhere, and we really appreciated it.\n\nThe food itself was excellent—fresh, flavorful, and well put together. My wife loved her custom rolls, and everything I tried was just as good. Overall, a solid experience from start to finish. We’ll definitely be back.",
+        "date": "2025-07-30T03:10:46.000Z",
+        "platform": "Google Places"
+      },
+      {
+        "author": "Melina Anderson",
+        "rating": 5,
+        "text": "Lovely little sushi spot~\nOrdered the pink dragon roll and a sushi appetizer of golden shrimp and I also ordered some sesame balls to take with me on the go. Both the sushi and the sushi appetizer were tasty and I love food with some spice so the pink dragon was perfect for me. The sesame balls have to be my favorite bit about my order though! Loved them!!! I would go again just to eat these cuties again! Service was fast and the food is reasonably priced. Love the aesthetic and cute decorations. I’ll definitely be back!",
+        "date": "2025-06-19T20:58:16.000Z",
+        "platform": "Google Places"
+      },
+      {
+        "author": "Meghan Humphries",
+        "rating": 5,
+        "text": "This place is adorably decorated, the staff are excellent, and the food is incredible. I was very impressed with the quality of the fish and veggies, and they came together beautifully. We especially enjoyed the Firey Jalapeno appetizer - that was the unexpected highlight of the meal!\nThe sushi is very reasonably priced, and the appetizers were very cheap (get the gyoza, it's delicious). The Red Devil and Blaze Rolls were our favorites, but anything with a lime was very tasty.\nWe will absolutely bring the family here again, even our kids liked it!",
+        "date": "2025-05-18T00:43:40.000Z",
+        "platform": "Google Places"
+      },
+      {
+        "author": "Wendy Robinson",
+        "rating": 5,
+        "text": "Came in to try a new sushi place and were pleasantly surprised. They had a large sushi menu with lots of options to choose from. Each roll that we ordered was very tasty and we were happy with each selection. We had the: Tiger eyes, Breeze, Treasure roll, Crazies, and Salmon avacado roll.\nThe seating is set up with good spacing. Cute decor and loved the lighting set up. The umbrellas hanging from the ceiling gave a cool vibe.\nOne complaint is the drinks weren’t listed on the menu at all, so we had to ask what was available.",
+        "date": "2025-04-15T16:36:00.000Z",
+        "platform": "Google Places"
+      },
+      {
+        "author": "Samantha Oscarson",
+        "rating": 5,
+        "text": "Seated very quickly. Food came out fast! Sushi was delicious!!\nWe ordered the AAC, Dragon roll, Citrus Roll (commonly known as sunset), and Vegas. Everything was so good!\nCan't wait to return. Great sushi for a great price!",
+        "date": "2025-03-28T02:47:36.000Z",
+        "platform": "Google Places"
+      }
+    ],
+    "examples": {
+      "positive": [
+        {
+          "author": "Melina Anderson",
+          "rating": 5,
+          "text": "Lovely little sushi spot~\nOrdered the pink dragon roll and a sushi appetizer of golden shrimp and I also ordered some sesame balls to take with me on the go. Both the sushi and the sushi appetizer were tasty and I love food with some spice so the pink dragon was perfect for me. The sesame balls have to be my favorite bit about my order though! Loved them!!! I would go again just to eat these cuties again! Service was fast and the food is reasonably priced. Love the aesthetic and cute decorations. I’ll definitely be back!",
+          "date": "2025-06-19T20:58:16.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Meghan Humphries",
+          "rating": 5,
+          "text": "This place is adorably decorated, the staff are excellent, and the food is incredible. I was very impressed with the quality of the fish and veggies, and they came together beautifully. We especially enjoyed the Firey Jalapeno appetizer - that was the unexpected highlight of the meal!\nThe sushi is very reasonably priced, and the appetizers were very cheap (get the gyoza, it's delicious). The Red Devil and Blaze Rolls were our favorites, but anything with a lime was very tasty.\nWe will absolutely bring the family here again, even our kids liked it!",
+          "date": "2025-05-18T00:43:40.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Wendy Robinson",
+          "rating": 5,
+          "text": "Came in to try a new sushi place and were pleasantly surprised. They had a large sushi menu with lots of options to choose from. Each roll that we ordered was very tasty and we were happy with each selection. We had the: Tiger eyes, Breeze, Treasure roll, Crazies, and Salmon avacado roll.\nThe seating is set up with good spacing. Cute decor and loved the lighting set up. The umbrellas hanging from the ceiling gave a cool vibe.\nOne complaint is the drinks weren’t listed on the menu at all, so we had to ask what was available.",
+          "date": "2025-04-15T16:36:00.000Z",
+          "platform": "Google Places"
+        }
+      ],
+      "neutral": [],
+      "negative": []
+    },
+    "customerMoodAnalysis": {
+      "overallMood": "delighted",
+      "sentimentSummary": "Customers are genuinely thrilled with their experience. With an average 5.0/5 rating across 5 recent reviews, your restaurant consistently exceeds expectations.",
+      "sentimentDistribution": {
+        "ecstatic": 40,
+        "delighted": 60,
+        "satisfied": 0,
+        "neutral": 0,
+        "frustrated": 0,
+        "disappointed": 0,
+        "angry": 0
+      },
+      "keyMoodIndicators": [
+        {
+          "theme": "food quality",
+          "mentions": 8
+        },
+        {
+          "theme": "speed of service",
+          "mentions": 4
+        },
+        {
+          "theme": "service excellence",
+          "mentions": 2
+        },
+        {
+          "theme": "atmosphere",
+          "mentions": 1
+        },
+        {
+          "theme": "cleanliness",
+          "mentions": 1
+        },
+        {
+          "theme": "slow service",
+          "mentions": 1
+        }
+      ],
+      "emotionalBreakdown": {
+        "joy": 7,
+        "satisfaction": 7,
+        "disappointment": 0,
+        "frustration": 0,
+        "anger": 0
+      },
+      "businessInsights": {
+        "strengthsPerceived": [
+          "Customers love the adorable and unique decor, including umbrellas hanging from the ceiling, which creates a cool vibe and enhances the dining experience. - social media marketing can showcase this strength",
+          "The restaurant offers excellent service, with staff who are genuinely helpful and flexible, such as custom-making rolls for dietary needs. - review management can highlight this positive aspect",
+          "The sushi is consistently praised for being fresh, flavorful, and reasonably priced, making it a great value for money. - Boostly marketing services can amplify this"
+        ],
+        "improvementOpportunities": [
+          "Maintain current high standards",
+          "Continue engaging with customer feedback",
+          "Monitor reviews for improvement opportunities"
+        ]
+      },
+      "detailedMetrics": {
+        "totalReviews": 5,
+        "averageRating": 5,
+        "ratingDistribution": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 100
+        },
+        "sentimentTrends": {
+          "trend": "stable",
+          "recentAverageRating": 5,
+          "previousAverageRating": 5,
+          "recentReviewsCount": 5
+        }
+      }
+    },
+    "trends": {
+      "ratingTrend": "positive",
+      "volumeTrend": "increasing",
+      "responseRate": 75,
+      "averageResponseTime": "2 days"
+    },
+    "recommendations": [
+      {
+        "category": "growth",
+        "priority": "high",
+        "title": "Generate More Reviews",
+        "description": "Encourage satisfied customers to leave reviews",
+        "impact": "Increase online credibility and visibility"
+      }
+    ],
+    "googleReviews": {
+      "reviews": [
+        {
+          "author": "Kyle Amata",
+          "rating": 5,
+          "text": "Sakura Sushi was a great find. The place was super clean, the service was quick, and the staff was genuinely helpful. I mentioned that my wife is pregnant and can’t eat raw fish, and without hesitation they offered to custom-make any roll with cooked fish. That kind of flexibility isn’t something you get everywhere, and we really appreciated it.\n\nThe food itself was excellent—fresh, flavorful, and well put together. My wife loved her custom rolls, and everything I tried was just as good. Overall, a solid experience from start to finish. We’ll definitely be back.",
+          "date": "2025-07-30T03:10:46.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Melina Anderson",
+          "rating": 5,
+          "text": "Lovely little sushi spot~\nOrdered the pink dragon roll and a sushi appetizer of golden shrimp and I also ordered some sesame balls to take with me on the go. Both the sushi and the sushi appetizer were tasty and I love food with some spice so the pink dragon was perfect for me. The sesame balls have to be my favorite bit about my order though! Loved them!!! I would go again just to eat these cuties again! Service was fast and the food is reasonably priced. Love the aesthetic and cute decorations. I’ll definitely be back!",
+          "date": "2025-06-19T20:58:16.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Meghan Humphries",
+          "rating": 5,
+          "text": "This place is adorably decorated, the staff are excellent, and the food is incredible. I was very impressed with the quality of the fish and veggies, and they came together beautifully. We especially enjoyed the Firey Jalapeno appetizer - that was the unexpected highlight of the meal!\nThe sushi is very reasonably priced, and the appetizers were very cheap (get the gyoza, it's delicious). The Red Devil and Blaze Rolls were our favorites, but anything with a lime was very tasty.\nWe will absolutely bring the family here again, even our kids liked it!",
+          "date": "2025-05-18T00:43:40.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Wendy Robinson",
+          "rating": 5,
+          "text": "Came in to try a new sushi place and were pleasantly surprised. They had a large sushi menu with lots of options to choose from. Each roll that we ordered was very tasty and we were happy with each selection. We had the: Tiger eyes, Breeze, Treasure roll, Crazies, and Salmon avacado roll.\nThe seating is set up with good spacing. Cute decor and loved the lighting set up. The umbrellas hanging from the ceiling gave a cool vibe.\nOne complaint is the drinks weren’t listed on the menu at all, so we had to ask what was available.",
+          "date": "2025-04-15T16:36:00.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Samantha Oscarson",
+          "rating": 5,
+          "text": "Seated very quickly. Food came out fast! Sushi was delicious!!\nWe ordered the AAC, Dragon roll, Citrus Roll (commonly known as sunset), and Vegas. Everything was so good!\nCan't wait to return. Great sushi for a great price!",
+          "date": "2025-03-28T02:47:36.000Z",
+          "platform": "Google Places"
+        }
+      ],
+      "averageRating": 4.7,
+      "totalReviews": 140
+    }
+  },
+  "competitors": [
+    {
+      "name": "Ednas Market & Grille - Lehi",
+      "domain": "ednasmarketgrillelehi.com",
+      "performance": 90,
+      "seo": 81,
+      "accessibility": 77,
+      "bestPractices": 86,
+      "overallScore": 83,
+      "rating": 4.5,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 1146,
+      "keywords": 40,
+      "domainAuthority": 68,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "Similar keywords",
+      "authorityGap": 0,
+      "backlinks": 1119
+    },
+    {
+      "name": "Melty",
+      "domain": "melty.com",
+      "performance": 88,
+      "seo": 79,
+      "accessibility": 75,
+      "bestPractices": 84,
+      "overallScore": 81,
+      "rating": 4.4,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 515,
+      "keywords": 50,
+      "domainAuthority": 81,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "Similar keywords",
+      "authorityGap": 0,
+      "backlinks": 803
+    },
+    {
+      "name": "Harvest Restaurant",
+      "domain": "harvestrestaurant.com",
+      "performance": 88,
+      "seo": 79,
+      "accessibility": 75,
+      "bestPractices": 84,
+      "overallScore": 81,
+      "rating": 4.4,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 722,
+      "keywords": 25,
+      "domainAuthority": 73,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "Similar keywords",
+      "authorityGap": 0,
+      "backlinks": 730
+    },
+    {
+      "name": "Bona Vita Bistro",
+      "domain": "bonavitabistro.com",
+      "performance": 80,
+      "seo": 72,
+      "accessibility": 68,
+      "bestPractices": 76,
+      "overallScore": 74,
+      "rating": 4,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 1179,
+      "keywords": 60,
+      "domainAuthority": 60,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "Similar keywords",
+      "authorityGap": 0,
+      "backlinks": 1042
+    },
+    {
+      "name": "Strap Tank Brewery",
+      "domain": "straptankbrewery.com",
+      "performance": 80,
+      "seo": 72,
+      "accessibility": 68,
+      "bestPractices": 76,
+      "overallScore": 74,
+      "rating": 4,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 492,
+      "keywords": 30,
+      "domainAuthority": 70,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "Similar keywords",
+      "authorityGap": 0,
+      "backlinks": 792
+    }
+  ],
+  "competitorIntelligence": {
+    "organicCompetitors": [],
+    "keywordGaps": [
+      "best pizza delivery",
+      "pizza restaurant online ordering"
+    ],
+    "trafficEstimates": []
+  },
+  "serpFeatures": [],
+  "serpAnalysis": [],
+  "seoAnalysis": {
+    "title": "No title found",
+    "metaDescription": "No meta description found",
+    "h1Tags": [],
+    "imageCount": 0,
+    "internalLinks": 0,
+    "externalLinks": 0,
+    "schemaMarkup": false
+  },
+  "mobileExperience": {
+    "score": 42,
+    "loadTime": 0,
+    "isResponsive": true,
+    "touchFriendly": true,
+    "textReadable": false,
+    "navigationEasy": false,
+    "issues": [
+      "Mobile performance data unavailable - API configuration required"
+    ],
+    "recommendations": [
+      "Configure Google PageSpeed Insights API for mobile analysis",
+      "Enable mobile performance monitoring",
+      "Test website on mobile devices manually"
+    ]
+  },
+  "performanceMetrics": {
+    "performance": 62,
+    "accessibility": 60,
+    "bestPractices": 65,
+    "seo": 70,
+    "coreWebVitals": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0,
+      "ttfb": 0,
+      "tti": 0,
+      "tbt": 0,
+      "si": 0
+    }
+  },
+  "socialMediaLinks": {
+    "facebook": null,
+    "instagram": null,
+    "twitter": null,
+    "youtube": null,
+    "tiktok": null,
+    "linkedin": null
+  },
+  "socialMediaAnalysis": {
+    "activePlatforms": 0,
+    "missingPlatforms": [
+      "facebook",
+      "instagram",
+      "twitter",
+      "youtube",
+      "tiktok"
+    ],
+    "recommendations": [
+      "Add facebook presence",
+      "Add instagram presence",
+      "Add twitter presence",
+      "Add youtube presence",
+      "Add tiktok presence"
+    ]
+  },
+  "issues": [
+    {
+      "type": "seo",
+      "severity": "critical",
+      "title": "🎯 Missing in Action: Zero SEO Strategy",
+      "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+      "impact": "high",
+      "effort": "medium",
+      "icon": "🔍",
+      "color": "orange",
+      "urgency": "high",
+      "businessImpact": "Missing out on 70% of customers who search online before visiting"
+    },
+    {
+      "type": "performance",
+      "severity": "critical",
+      "title": "⚡ Speed Crisis: Customers Are Leaving",
+      "description": "Performance score of 62/100 means customers wait too long. 53% abandon slow websites.",
+      "impact": "high",
+      "effort": "medium",
+      "icon": "🐌",
+      "color": "red",
+      "urgency": "immediate",
+      "businessImpact": "Lost orders from customers who abandon slow-loading pages"
+    },
+    {
+      "type": "mobile",
+      "severity": "critical",
+      "title": "📱 Mobile Disaster: Customers Can't Order",
+      "description": "Mobile performance data unavailable - API configuration required",
+      "impact": "high",
+      "effort": "medium",
+      "icon": "📱",
+      "color": "red",
+      "urgency": "immediate",
+      "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+    }
+  ],
+  "recommendations": [
+    {
+      "title": "Improve website performance",
+      "description": "Improve website performance",
+      "impact": "medium",
+      "effort": "medium",
+      "category": "technical"
+    },
+    {
+      "title": "Enhance social media presence",
+      "description": "Enhance social media presence",
+      "impact": "medium",
+      "effort": "medium",
+      "category": "marketing"
+    }
+  ],
+  "metadata": {
+    "scanId": "scan_1755035610841",
+    "scanDate": "2025-08-12T21:53:30.841Z",
+    "scanDuration": 0,
+    "scanType": "professional",
+    "dataCompleteness": 100,
+    "apiVersions": {
+      "scanner": "2.0.0",
+      "dataforseo": "3.0",
+      "googlePlaces": "v1",
+      "apify": "2.0",
+      "openai": "gpt-4o"
+    },
+    "servicesUsed": [
+      "GooglePlacesAPI",
+      "ApifyReviews",
+      "OpenAIAnalysis"
+    ],
+    "errors": [],
+    "warnings": [
+      "Facebook link not found",
+      "Keyword data incomplete"
+    ]
+  }
+}

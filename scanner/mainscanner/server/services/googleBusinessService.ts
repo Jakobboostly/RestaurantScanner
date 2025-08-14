@@ -14,7 +14,7 @@ export class GoogleBusinessService {
         {
           params: {
             place_id: placeId,
-            fields: 'name,formatted_address,address_components,rating,user_ratings_total,formatted_phone_number,website,types,reviews,photos,opening_hours,price_level,business_status,editorial_summary',
+            fields: 'name,formatted_address,address_components,rating,user_ratings_total,formatted_phone_number,website,types,reviews,photos,opening_hours,price_level,business_status,editorial_summary,url,social_media',
             key: this.apiKey
           }
         }
@@ -56,7 +56,9 @@ export class GoogleBusinessService {
           photoCount: (result.photos || []).length,
           opening_hours: result.opening_hours || null,
           price_level: result.price_level || null,
-          editorial_summary: result.editorial_summary || null
+          editorial_summary: result.editorial_summary || null,
+          url: result.url || null,
+          social_media: result.social_media || null
         };
       }
 

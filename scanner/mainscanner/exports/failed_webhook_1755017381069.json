@@ -1,0 +1,1284 @@
+{
+  "event": "scan_completed_full_export",
+  "version": "2.0.0",
+  "timestamp": "2025-08-12T16:49:40.570Z",
+  "scanId": "scan_1755017380570",
+  "scanDuration": 0,
+  "restaurant": {
+    "name": "SLABpizza",
+    "domain": "slabpizza.com",
+    "placeId": "ChIJuz82rS-AUocR-3xvY0VfApk",
+    "location": {
+      "address": "3430 N Ashton Blvd, Lehi, UT 84043, USA",
+      "city": "Lehi",
+      "state": "UT",
+      "country": "United States",
+      "latitude": null,
+      "longitude": null
+    },
+    "categories": [],
+    "priceLevel": null,
+    "cuisine": "Pizza",
+    "restaurantType": "QSR"
+  },
+  "scores": {
+    "overall": 77,
+    "seo": 83,
+    "performance": 88,
+    "mobile": 68,
+    "userExperience": 78,
+    "accessibility": 0,
+    "bestPractices": 0,
+    "local": 63,
+    "social": 40,
+    "reviews": 63,
+    "website": 88,
+    "domainAuthority": 86
+  },
+  "businessProfile": {
+    "name": "SLABpizza",
+    "address": "3430 N Ashton Blvd, Lehi, UT 84043, USA",
+    "rating": 4.2,
+    "reviewCount": 1111,
+    "phoneNumber": "(385) 355-3883",
+    "website": "http://slabpizza.com/",
+    "formatted_address": "3430 N Ashton Blvd, Lehi, UT 84043, USA",
+    "address_components": [
+      {
+        "long_name": "3430",
+        "short_name": "3430",
+        "types": [
+          "street_number"
+        ]
+      },
+      {
+        "long_name": "North Ashton Boulevard",
+        "short_name": "N Ashton Blvd",
+        "types": [
+          "route"
+        ]
+      },
+      {
+        "long_name": "Lehi",
+        "short_name": "Lehi",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Utah County",
+        "short_name": "Utah County",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Utah",
+        "short_name": "UT",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United States",
+        "short_name": "US",
+        "types": [
+          "country",
+          "political"
+        ]
+      },
+      {
+        "long_name": "84043",
+        "short_name": "84043",
+        "types": [
+          "postal_code"
+        ]
+      }
+    ],
+    "state": "Utah",
+    "city": "Lehi",
+    "place_id": "ChIJuz82rS-AUocR-3xvY0VfApk",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "food",
+      "point_of_interest",
+      "restaurant"
+    ],
+    "reviews": [
+      {
+        "author_name": "Oliver Frisbie",
+        "author_url": "https://www.google.com/maps/contrib/116068561830816930736/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVhRPN6LKjG2c2JSyaEjd4Ai8rDwfkAwRrMY5KRyX5kUYQzYwiaCQ=s128-c0x00000000-cc-rp-mo-ba2",
+        "rating": 5,
+        "relative_time_description": "7 months ago",
+        "text": "Wonderful service, and very nice staff! They have quite the diverse selection of pizza and we received our food relatively quickly and it was pretty decent-comparable to a slightly better Costco pizza. One downside was the fountain machine having no ice. However I understand technical difficulties can occur! Overall, pretty fantastic!",
+        "time": 1734368692,
+        "translated": false
+      },
+      {
+        "author_name": "Randy Prazen",
+        "author_url": "https://www.google.com/maps/contrib/108956466305095724098/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWvDc1l_io41v-Qz5wAKVUzspannwN3NLOJVD5Cpm4n2B89pyd4Xg=s128-c0x00000000-cc-rp-mo-ba3",
+        "rating": 5,
+        "relative_time_description": "a year ago",
+        "text": "What a fun experience! We enjoyed the BBQ, Pepperoni and Chicken Bacon Ranch. The cashier was friendly and the pizza came out in 15 minutes. Each pizza was delicious! We have plans to come back next weekend. Enjoy!",
+        "time": 1721775813,
+        "translated": false
+      },
+      {
+        "author_name": "Christina Pearson",
+        "author_url": "https://www.google.com/maps/contrib/117059027023031336380/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUgtS4hhSoYoXUes9sX4PmyP8ayIivYh5sF6B-lbtAZyFg0hmlO=s128-c0x00000000-cc-rp-mo",
+        "rating": 3,
+        "relative_time_description": "3 months ago",
+        "text": "The pizza is good here.  It really is.  But the menu is different than the one by BYU.  And our favorite pizzas are no longer served at this location and it was a bummer to come into town from out of state and have a totally different menu from even the other locations.",
+        "time": 1746839528,
+        "translated": false
+      },
+      {
+        "author_name": "Melanie Porter",
+        "author_url": "https://www.google.com/maps/contrib/108223650042289416840/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW1519IZWFQrI8gPdFBAoTZ9yL5JaD0V4ttfJp4mqvBV6QMo7e_gA=s128-c0x00000000-cc-rp-mo-ba3",
+        "rating": 5,
+        "relative_time_description": "3 years ago",
+        "text": "I’ve been here many times and have never been disappointed. My husband and I can eat here for less than $20 and the food is great. The hatch green Chile barbecue pizza is amazing and cheese bread is a MUST! Good portion sizes, plenty of room in the restaurant to just grab a quick bite or stay a while and hang out. Walking distance from BYU is a plus as well! Parking can be tough.",
+        "time": 1649729854,
+        "translated": false
+      },
+      {
+        "author_name": "Jaclyn Hollingsworth",
+        "author_url": "https://www.google.com/maps/contrib/117506261370372227733/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXx7msDfoU0XgTIuXA68Y6cGzKKWJTGIAMtlv7CmusdbL-YvRwJoQ=s128-c0x00000000-cc-rp-mo",
+        "rating": 1,
+        "relative_time_description": "3 months ago",
+        "text": "used to be my fam’s favorite pizza restaurant but we just ate there and idk if they changed the dough, recipe, or something but the pizza was so dry, overcooked, and didn’t taste good. also they like updated everything and the menu is so limited. maybe instead of changing the pizza you guys should get rid of those loud freaking chairs you’ve had since 2010. cook or be cooked.",
+        "time": 1746839968,
+        "translated": false
+      }
+    ],
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/107156547597850084304\">Anirudh Koul</a>"
+        ],
+        "photo_reference": "ATKogpcsFSmOjGauGKcnYNkbc_yVVLC1ndvzoT5F6UjNH4EhAlgOGv0GGpoA9b2lirbRIuiJTGnL8ZwCFwOPu3WAtaFVlNYsgh-I_7g_Tq34S1OOqigLPKwk-8XiEYJtqUCAEIx8ZrZH-pxVn4aWLRlze55Mj6DdC_auFINAP3G85jS67OxRtiHOFuxbJLy0JVASg85uumOaXC1NzcmWOavvWTnNKE_5i13E6gKn-_pkCZUh_VIqEKeoJQRaPWjd3cGCbvDaMiRbNSVCZqlaniGW6ud0Nnd0wmoUJiMFr1mVmConOe-ehdOJEl7oMAoldkB58huPi0hsRv-gZWhameFSp6j2KDnT3D2rooBD-uYYlCC8QHMJaDBNOj0K4UURBmUs2HIZclf1LIXIHfLGyEj2TQikaOg8vA2no4Ba-3dfiHg",
+        "width": 4032
+      },
+      {
+        "height": 1540,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/116045271090273010993\">SLABpizza</a>"
+        ],
+        "photo_reference": "ATKogpcr-nbrcntHsVej5bgbhZFc6RgcvFvZK86tiBxwXwVCj5apK1rRUdszicD1HiDwz40-t2HXbE2fRNIoPQlKwDrjh1ZmZyL0B4VfLygviPVi05Ziajxvu_8FNZMs0Aeg0rXij48nIRejGgwrwG2cxELYqRZq7qxQ0Bgu5TA8EshW_pfblMltcWGN8u7CXsQ2pd353BdzxhVbqU25RUIrG0QgIqlFZgaRg5rhW3CoQwOkZjUIpEF-reKPU8IeNXKIz7evAoJAQiE-LNJJA17GnRHUnK-sEHmOyRbM-Gnjbp_5Qw",
+        "width": 2048
+      },
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/116121696922932936019\">Hal Halladay</a>"
+        ],
+        "photo_reference": "ATKogpdfzyl7rv3zMscqECqLhbEAHaXho5hZokwyZh4k-6b_UXlSKllnMLQjeFRpCwXwUw81qZRWXHt8psj3-WVVSDsD6SFcYeHKpIl9NaFP38gCvuAxIFBp252VLx96g85W1miWQ5ADxTaUfO4QKreLP8arOAdQoH1ia0dYQwGRu584mBxJoXCit55o8vdN5ZEuw69xET2x5aKftbRVx-K_MyEn_jChrH707ZbXQmYnBfyLkKWNkN_0jEYy4OZK-Nvbi2Jc_5JKeAPSZHhzCgSyz_y0cQGDrIUTpfaS7KRfdj7KjESvaXvpBUEIndn0ZxBK12XVFZuWfbzgTq4h5hbIowZP41koHcAcn2sAWABGMcco9AmBu-7RqV4RozGht5BySEk3TmMJao0lhanqDxbG8_q7CagewaGUOYNolBdL_0Mb4Q",
+        "width": 4032
+      },
+      {
+        "height": 3600,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/108956466305095724098\">Randy Prazen</a>"
+        ],
+        "photo_reference": "ATKogpdz25hqPAppdtwnPRIcpqULAOiNjNrsT1-fcxnxYLZxd2KD2fLbWrvhTvspkIFVk-rcYzxK9-34Q4vQpdd037N7aue8MujolkTjqWtcpSmGrins3rTIpwQZ3uP1mFN9KDzTE7SHdC2qLAGG6b-Z7_DKbim1nITQT3wIj3k2R8hYb_PgpjGwLiIyLa6esHJWVIGnCeKhbirJC77gwf1Iq--KpapT_evkUer-IQAROdjEOck7jwgEjJZpDOxCi7CWd8dn9jU37iUXfWRauociJOozhfVFgnoSWuajZJkoxa0zWcd0fMZgf3Tb3AT1PKYdQy7MgCp-OgovvDDreR8IG1TEU6UyPdjaIaL1dExO1SgH-9AVKTkF83wzxYO81kbZvfFK6ENRZUHm5izSWWPzYwMksFwscu-XrKw2W68S99IC3eyG",
+        "width": 4800
+      },
+      {
+        "height": 4080,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/107691781989686294938\">Ben Perkins</a>"
+        ],
+        "photo_reference": "ATKogpeN08LyFH0O5KNBpXyxLROZ-4dZtbfYQ0is--4Br13sBBcJWEdDgf9SvY_ffCdCpNknoaWKjhpQLoEkKj-vqEHlyJjK3BtrVCtIvT6ZDhoPGCupf32f-C5wF3JYAf-TDs8JU25akjT4fUetSLQMNTR1pv2Xdl-VwAoeLZCs5TlhZud2LjQidRs5o-nmurwxJ-I9YEOpATR1LcWum9IVho7YnBuEDLRdZvR1f3NkTLcHHgzqg-erZC9gqFZEMO0NcoMcDDxnR12WMfK1fXvNK3SS7m11gzGfPwhW9O1Pr6bWJtJP2JX65rVkOoCAi1CZ-oljbihFHczb3eAVloypEU_kYYKpz6bzH1FHUwj3DqScWDZr7G9Cxk6bwLoPtI5pW3-oZWhx5wGNq1OFtbM7Y_6M75Oyq6bmSRAcShXxDvc2wg",
+        "width": 3072
+      },
+      {
+        "height": 4080,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102920106916426173103\">Brian Lupkes</a>"
+        ],
+        "photo_reference": "ATKogpexpXlvfja2PSFuDN07-yFXZT81VScAUwy_NIW6VwKd76dwx5ySiy5-eFW8RnWqeiCSN4DQpGvwKctMI4XBRFA_P4_h5QpqENTcE5Mm7Qin8RYkBW1TiWTAZQLE0_A2XfIDXX7nyVfKE2m_yHXEHT_rgXY073QWVhCnInS6zQDXP4rL48DbqQlQTiCc26Kk9YG3GK716JKf0Rd-vvtXqXHGS6IoS3c33r_CdQtkVW3mmCD6HTB39CVx1FHSX0SXlp4WP0YQ_6bcLQeu54l9sXXmOf67jRdMkjqWkx2LKyM8_B5sN5d0cJupSB54ShRkAvd5iQu_UZO6SbLzaqC5Je-tayZABMtZLUxR45cVPM1hUF7_2WDxWCcHyg8MgChOt-BXw9zGRSBFahp0sMWDy7ah290LYwHdgd_KETppBrc4VQ",
+        "width": 3072
+      },
+      {
+        "height": 4080,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/117197250062830279733\">Stuart Roskelley</a>"
+        ],
+        "photo_reference": "ATKogpedvJuMIb445Bb_A157ncIQ7zCqltc_fvX2HY4Ub5TSTijwx5g0J5FRx2AFewaeMCXQPnFd3B_IkigrAUkHSY0MpIhpU72g8hpx2QzFDRLXHx3jozqLB89832ee3S0lWZsH3doQe8ELIoMIhctgHsLgFNAUqquVtTjFdUq0LHF7mblvXr72fz52W087o6vkkL9sLc8E8ygzM9bH5utCM1yEyUgfo8IMDwv6nEOjHGcXA6cIBfbweYw632Joak3rqunadgg8HqdrPse36kejKH0oOKm2hVoNHvHhFQ0BYC9R4MJbLpW4Kzvz6nvjVJFupzN0kQV3uoS9IH4uV6UfgyG1jLHbU5DPNByCN7MKLPbZ8r2YUfAg-asrBqL2WcbcxczSJov8Ga-4JLr-NYAvsUIK4pl2XBLnupXSebpMHbfcTA",
+        "width": 3072
+      },
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/104829482507211784228\">Dalton Anderson</a>"
+        ],
+        "photo_reference": "ATKogpdWjCA49fvorsObSxG5YoFDPkvOtuMO1356pl3khrVQrH5wXzyVwXD_MUaVmB_OIkOphXL7poaIgSoKeQMLDunmOS3Kj3BvHRD3Hlo7iSt9yGWVuDknKES_gDJRxzM8OikplY4SeogqcoNDPx0jBTIRL8m1OcMxtH2EwUls6OYB3E43I_s7OyHHhVI4KkLjZLU5m9rELJwl937bf1fqV1nrkITc7t2CpI5GXPHYjXjUpgGvv2twhTtbqEz4y6F-64k7zJeQSuD_9cBIr7WezoNvsRatRmYi5XzxmY4EbSGNT_P8HuvWbk5223lW3xdubs3_ZHZoCXQqvUTofn97QCrWAYDAlk0hU7HPnUHM72fxsyivdab04LxQMTVwqETRDs0LjfoxJVCFu_rvf9gbd48xR6tn_KyaHRpgIWupEXsn5A",
+        "width": 3024
+      },
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/109772336338395690847\">Tamilisa Miner</a>"
+        ],
+        "photo_reference": "ATKogpd8PlXCXDlH05UyJ3mEjl7ftjUtIR1QHznPL6vXDXpi_gjWswNUCKh7RfmjCwUD7LqXQsiputfTAJHPz0uouqG3ZH_wpTk_XryOfKb0PcydKla7nUblPHK832W3cNuEJ1JsQyR7_-iw8kClkpWsB2lIPb-cz6DjZ5J1TZzJEp1J9Fh5KostHuAaeOMlOUCAxLhai1f85iRqhoPb3Lnx-EJN_NTpT-41qa2ajuBmbXfWSZTuF6hO_cmrTa37etgMUbZCOQtxX4OnU6X4qTB-5f1cw3c2sIO8Egf6zZDYGiV30tBZDqk8bgDTgIu2tiVh4HoevA2AGIJZTpCpd0Id6gn8eEis3vDdTKRPsnzB0YeRK02eIo58I5hYDg8Y1aJBPNw8514XPk8EaLWpgz0O2U2EXb2S2BJKp_MltNxlFkA",
+        "width": 4032
+      },
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/103040467737819379477\">Leif Odegard</a>"
+        ],
+        "photo_reference": "ATKogpd1LCB17pLTqm6Dp31-W18HX3RU4p3otxuzW3wERMuKCK4Xoud_Hyig61FbSVCS1gEGt1RzWqvkspx5e1xHRtuKqb4qweyjv7Qa1yDo9gPblV1xKVPuu435EtngL5i4louDHEi2RZ0IX4xgsvaC8594JmH56mzy5VPBDo5xVvqTqDdHQMYOrFGxlprqCS0ZH-nBRsStWtAt9otKVcjRRku93XxHyGRxpLGxHwzQCLN0HeJIcCqVaLUmplFfQNq6iskGeI0jXF4DPDYwRSa5KKK68lAtJZ7HyrbqFGnECxVAeZEnkWvai_-6x72xc86ls1glwW0992ADhszcsldNE95AhZncQuh_PLGvrbhp-wlbYxYn14NeHNmAXWYWK3voadx9bIY37Qq1UQbBOA7ktoBSj_rWPstFlaAWJYCcUFwZEQ",
+        "width": 4032
+      }
+    ],
+    "photoCount": 10,
+    "opening_hours": {
+      "open_now": false,
+      "periods": [
+        {
+          "close": {
+            "day": 1,
+            "time": "2100"
+          },
+          "open": {
+            "day": 1,
+            "time": "1100"
+          }
+        },
+        {
+          "close": {
+            "day": 2,
+            "time": "2100"
+          },
+          "open": {
+            "day": 2,
+            "time": "1100"
+          }
+        },
+        {
+          "close": {
+            "day": 3,
+            "time": "2100"
+          },
+          "open": {
+            "day": 3,
+            "time": "1100"
+          }
+        },
+        {
+          "close": {
+            "day": 4,
+            "time": "2100"
+          },
+          "open": {
+            "day": 4,
+            "time": "1100"
+          }
+        },
+        {
+          "close": {
+            "day": 5,
+            "time": "2200"
+          },
+          "open": {
+            "day": 5,
+            "time": "1100"
+          }
+        },
+        {
+          "close": {
+            "day": 6,
+            "time": "2200"
+          },
+          "open": {
+            "day": 6,
+            "time": "1100"
+          }
+        }
+      ],
+      "weekday_text": [
+        "Monday: 11:00 AM – 9:00 PM",
+        "Tuesday: 11:00 AM – 9:00 PM",
+        "Wednesday: 11:00 AM – 9:00 PM",
+        "Thursday: 11:00 AM – 9:00 PM",
+        "Friday: 11:00 AM – 10:00 PM",
+        "Saturday: 11:00 AM – 10:00 PM",
+        "Sunday: Closed"
+      ]
+    },
+    "price_level": 2,
+    "editorial_summary": null,
+    "responseRate": 50,
+    "averageResponseTime": "2 days"
+  },
+  "profileAnalysis": {
+    "completeness": {
+      "score": 75,
+      "missingElements": []
+    },
+    "optimization": {
+      "score": 70,
+      "issues": []
+    },
+    "competitiveness": 65,
+    "recommendations": [],
+    "strengths": [],
+    "weaknesses": []
+  },
+  "keywords": {
+    "trackedKeywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "pizza near me",
+        "position": 12,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 50,
+        "url": "https://slabpizza.com/",
+        "title": "Slab Pizza - South of Campus, Provo, UT",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery Lehi",
+        "position": 12,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 50,
+        "url": "https://slabpizza.com/",
+        "title": "Slab Pizza - South of Campus, Provo, UT",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best pizza Lehi",
+        "position": 25,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 25,
+        "url": "https://slabpizza.com/",
+        "title": "Slab Pizza - South of Campus, Provo, UT",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "Lehi pizza",
+        "position": 12,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 50,
+        "url": "https://slabpizza.com/",
+        "title": "Slab Pizza - South of Campus, Provo, UT",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza places near me",
+        "position": 12,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 50,
+        "url": "https://slabpizza.com/",
+        "title": "Slab Pizza - South of Campus, Provo, UT",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza Lehi Utah",
+        "position": 7,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://slabpizza.com/",
+        "title": "Slab Pizza - South of Campus, Provo, UT",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery near me",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza open now",
+        "position": 10,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://slabpizza.com/",
+        "title": "Slab Pizza - South of Campus, Provo, UT",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "domainRankedKeywords": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    }
+  },
+  "localCompetitorData": [],
+  "localPackReport": {
+    "summary": {
+      "visibility_score": 25,
+      "keywords_appeared": 2,
+      "total_keywords": 8,
+      "average_position": 4.5,
+      "best_position": 4
+    },
+    "keyword_results": [
+      {
+        "keyword": "pizza near me",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Rock Creek Pizza",
+            "address": "American Fork, UT ",
+            "website": "https://www.rockcreekpizza.com/",
+            "rating": 4.3,
+            "reviews": 60
+          },
+          {
+            "position": 2,
+            "name": "Via 313 Pizza",
+            "address": "Lehi, UT ",
+            "website": "https://locations.via313.com/locations/1085-e-main-st/",
+            "rating": 4.6,
+            "reviews": 1200
+          },
+          {
+            "position": 3,
+            "name": "Noble Roman's Pizza",
+            "address": "Lehi, UT ",
+            "website": "http://www.jackandjilllanes.com/",
+            "rating": 4.2,
+            "reviews": 6
+          }
+        ]
+      },
+      {
+        "keyword": "pizza Lehi",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Via 313 Pizza",
+            "address": "Lehi, UT ",
+            "website": "https://locations.via313.com/locations/1085-e-main-st/",
+            "rating": 4.6,
+            "reviews": 1200
+          },
+          {
+            "position": 2,
+            "name": "Noble Roman's Pizza",
+            "address": "Lehi, UT ",
+            "website": "http://www.jackandjilllanes.com/",
+            "rating": 4.2,
+            "reviews": 6
+          },
+          {
+            "position": 3,
+            "name": "Summit Pizza Co",
+            "address": "Lehi, UT ",
+            "website": "https://summitpizzaco.com/?y_source=1_Mjc4NzE3OTItNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+            "rating": 4.5,
+            "reviews": 1400
+          }
+        ]
+      },
+      {
+        "keyword": "best pizza Lehi",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Summit Pizza Co",
+            "address": "Lehi, UT ",
+            "website": "https://summitpizzaco.com/?y_source=1_Mjc4NzE3OTItNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+            "rating": 4.5,
+            "reviews": 1400
+          },
+          {
+            "position": 2,
+            "name": "Box Bite",
+            "address": "American Fork, UT ",
+            "website": "https://box-bite.square.site/?location=11ec9b68433642b097e4ac1f6bbba828",
+            "rating": 4.8,
+            "reviews": 604
+          },
+          {
+            "position": 3,
+            "name": "Via 313 Pizza",
+            "address": "Lehi, UT ",
+            "website": "https://locations.via313.com/locations/1085-e-main-st/",
+            "rating": 4.6,
+            "reviews": 1200
+          }
+        ]
+      },
+      {
+        "keyword": "pizza delivery near me",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Rock Creek Pizza",
+            "address": "American Fork, UT ",
+            "website": "https://www.rockcreekpizza.com/",
+            "rating": 4.3,
+            "reviews": 60
+          },
+          {
+            "position": 2,
+            "name": "Via 313 Pizza",
+            "address": "Lehi, UT ",
+            "website": "https://locations.via313.com/locations/1085-e-main-st/",
+            "rating": 4.6,
+            "reviews": 1200
+          },
+          {
+            "position": 3,
+            "name": "Summit Pizza Co",
+            "address": "Lehi, UT ",
+            "website": "https://summitpizzaco.com/?y_source=1_Mjc4NzE3OTItNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+            "rating": 4.5,
+            "reviews": 1400
+          }
+        ]
+      },
+      {
+        "keyword": "pizza Lehi Utah",
+        "found": true,
+        "position": 4,
+        "confidence": 100,
+        "matched_fields": [
+          "title",
+          "url"
+        ],
+        "local_pack_data": {
+          "name": "SLABpizza",
+          "address": "Lehi, UT ",
+          "website": "http://slabpizza.com/",
+          "phone": "(385) 355-3883",
+          "rating": 4.2,
+          "reviews": 1100
+        },
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Via 313 Pizza",
+            "address": "Lehi, UT ",
+            "website": "https://locations.via313.com/locations/1085-e-main-st/",
+            "rating": 4.6,
+            "reviews": 1200
+          },
+          {
+            "position": 2,
+            "name": "Summit Pizza Co",
+            "address": "Lehi, UT ",
+            "website": "https://summitpizzaco.com/?y_source=1_Mjc4NzE3OTItNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+            "rating": 4.5,
+            "reviews": 1400
+          },
+          {
+            "position": 3,
+            "name": "Noble Roman's Pizza",
+            "address": "Lehi, UT ",
+            "website": "http://www.jackandjilllanes.com/",
+            "rating": 4.2,
+            "reviews": 6
+          }
+        ]
+      },
+      {
+        "keyword": "top pizza Lehi",
+        "found": true,
+        "position": 5,
+        "confidence": 100,
+        "matched_fields": [
+          "title",
+          "url"
+        ],
+        "local_pack_data": {
+          "name": "SLABpizza",
+          "address": "Lehi, UT ",
+          "website": "http://slabpizza.com/",
+          "phone": "(385) 355-3883",
+          "rating": 4.2,
+          "reviews": 1100
+        },
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Summit Pizza Co",
+            "address": "Lehi, UT ",
+            "website": "https://summitpizzaco.com/?y_source=1_Mjc4NzE3OTItNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+            "rating": 4.5,
+            "reviews": 1400
+          },
+          {
+            "position": 2,
+            "name": "Via 313 Pizza",
+            "address": "Lehi, UT ",
+            "website": "https://locations.via313.com/locations/1085-e-main-st/",
+            "rating": 4.6,
+            "reviews": 1200
+          },
+          {
+            "position": 3,
+            "name": "Box Bite",
+            "address": "American Fork, UT ",
+            "website": "https://box-bite.square.site/?location=11ec9b68433642b097e4ac1f6bbba828",
+            "rating": 4.8,
+            "reviews": 604
+          }
+        ]
+      },
+      {
+        "keyword": "pizza restaurant near me",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Rock Creek Pizza",
+            "address": "American Fork, UT ",
+            "website": "https://www.rockcreekpizza.com/",
+            "rating": 4.3,
+            "reviews": 60
+          },
+          {
+            "position": 2,
+            "name": "Via 313 Pizza",
+            "address": "Lehi, UT ",
+            "website": "https://locations.via313.com/locations/1085-e-main-st/",
+            "rating": 4.6,
+            "reviews": 1200
+          },
+          {
+            "position": 3,
+            "name": "Summit Pizza Co",
+            "address": "Lehi, UT ",
+            "website": "https://summitpizzaco.com/?y_source=1_Mjc4NzE3OTItNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+            "rating": 4.5,
+            "reviews": 1400
+          }
+        ]
+      },
+      {
+        "keyword": "pizza food Lehi",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Via 313 Pizza",
+            "address": "Lehi, UT ",
+            "website": "https://locations.via313.com/locations/1085-e-main-st/",
+            "rating": 4.6,
+            "reviews": 1200
+          },
+          {
+            "position": 2,
+            "name": "Summit Pizza Co",
+            "address": "Lehi, UT ",
+            "website": "https://summitpizzaco.com/?y_source=1_Mjc4NzE3OTItNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+            "rating": 4.5,
+            "reviews": 1400
+          },
+          {
+            "position": 3,
+            "name": "Noble Roman's Pizza",
+            "address": "Lehi, UT ",
+            "website": "http://www.jackandjilllanes.com/",
+            "rating": 4.2,
+            "reviews": 6
+          }
+        ]
+      }
+    ],
+    "recommendations": [
+      "Not appearing for \"pizza near me\", \"pizza Lehi\", \"best pizza Lehi\", \"pizza delivery near me\", \"pizza restaurant near me\", \"pizza food Lehi\" - optimize Google My Business profile with these keywords",
+      "Ranking below #1 for 2 keywords - increase customer reviews and engagement to improve rankings",
+      "Low Local Pack visibility (25%) - audit your Google My Business completeness, categories, and local citations"
+    ],
+    "scan_metadata": {
+      "location": "Lehi,Utah,United States",
+      "timestamp": "2025-08-12T16:49:33.033Z",
+      "total_scan_time_ms": 23903
+    }
+  },
+  "reviewsAnalysis": {
+    "overallScore": 63,
+    "totalReviews": 0,
+    "averageRating": 4.2,
+    "sentimentBreakdown": {
+      "positive": 60,
+      "neutral": 20,
+      "negative": 20
+    },
+    "reviewSources": [
+      "Google Business Profile (Limited)"
+    ],
+    "keyThemes": [
+      "Food Quality",
+      "Service"
+    ],
+    "recentReviews": [
+      {
+        "author": "Jaclyn Hollingsworth",
+        "rating": 1,
+        "text": "used to be my fam’s favorite pizza restaurant but we just ate there and idk if they changed the dough, recipe, or something but the pizza was so dry, overcooked, and didn’t taste good. also they like updated everything and the menu is so limited. maybe instead of changing the pizza you guys should get rid of those loud freaking chairs you’ve had since 2010. cook or be cooked.",
+        "date": "2025-05-10T01:19:28.000Z",
+        "platform": "Google Places"
+      },
+      {
+        "author": "Christina Pearson",
+        "rating": 3,
+        "text": "The pizza is good here.  It really is.  But the menu is different than the one by BYU.  And our favorite pizzas are no longer served at this location and it was a bummer to come into town from out of state and have a totally different menu from even the other locations.",
+        "date": "2025-05-10T01:12:08.000Z",
+        "platform": "Google Places"
+      },
+      {
+        "author": "Oliver Frisbie",
+        "rating": 5,
+        "text": "Wonderful service, and very nice staff! They have quite the diverse selection of pizza and we received our food relatively quickly and it was pretty decent-comparable to a slightly better Costco pizza. One downside was the fountain machine having no ice. However I understand technical difficulties can occur! Overall, pretty fantastic!",
+        "date": "2024-12-16T17:04:52.000Z",
+        "platform": "Google Places"
+      },
+      {
+        "author": "Randy Prazen",
+        "rating": 5,
+        "text": "What a fun experience! We enjoyed the BBQ, Pepperoni and Chicken Bacon Ranch. The cashier was friendly and the pizza came out in 15 minutes. Each pizza was delicious! We have plans to come back next weekend. Enjoy!",
+        "date": "2024-07-23T23:03:33.000Z",
+        "platform": "Google Places"
+      },
+      {
+        "author": "Melanie Porter",
+        "rating": 5,
+        "text": "I’ve been here many times and have never been disappointed. My husband and I can eat here for less than $20 and the food is great. The hatch green Chile barbecue pizza is amazing and cheese bread is a MUST! Good portion sizes, plenty of room in the restaurant to just grab a quick bite or stay a while and hang out. Walking distance from BYU is a plus as well! Parking can be tough.",
+        "date": "2022-04-12T02:17:34.000Z",
+        "platform": "Google Places"
+      }
+    ],
+    "examples": {
+      "positive": [
+        {
+          "author": "Oliver Frisbie",
+          "rating": 5,
+          "text": "Wonderful service, and very nice staff! They have quite the diverse selection of pizza and we received our food relatively quickly and it was pretty decent-comparable to a slightly better Costco pizza. One downside was the fountain machine having no ice. However I understand technical difficulties can occur! Overall, pretty fantastic!",
+          "date": "2024-12-16T17:04:52.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Randy Prazen",
+          "rating": 5,
+          "text": "What a fun experience! We enjoyed the BBQ, Pepperoni and Chicken Bacon Ranch. The cashier was friendly and the pizza came out in 15 minutes. Each pizza was delicious! We have plans to come back next weekend. Enjoy!",
+          "date": "2024-07-23T23:03:33.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Melanie Porter",
+          "rating": 5,
+          "text": "I’ve been here many times and have never been disappointed. My husband and I can eat here for less than $20 and the food is great. The hatch green Chile barbecue pizza is amazing and cheese bread is a MUST! Good portion sizes, plenty of room in the restaurant to just grab a quick bite or stay a while and hang out. Walking distance from BYU is a plus as well! Parking can be tough.",
+          "date": "2022-04-12T02:17:34.000Z",
+          "platform": "Google Places"
+        }
+      ],
+      "neutral": [
+        {
+          "author": "Christina Pearson",
+          "rating": 3,
+          "text": "The pizza is good here.  It really is.  But the menu is different than the one by BYU.  And our favorite pizzas are no longer served at this location and it was a bummer to come into town from out of state and have a totally different menu from even the other locations.",
+          "date": "2025-05-10T01:12:08.000Z",
+          "platform": "Google Places"
+        }
+      ],
+      "negative": [
+        {
+          "author": "Jaclyn Hollingsworth",
+          "rating": 1,
+          "text": "used to be my fam’s favorite pizza restaurant but we just ate there and idk if they changed the dough, recipe, or something but the pizza was so dry, overcooked, and didn’t taste good. also they like updated everything and the menu is so limited. maybe instead of changing the pizza you guys should get rid of those loud freaking chairs you’ve had since 2010. cook or be cooked.",
+          "date": "2025-05-10T01:19:28.000Z",
+          "platform": "Google Places"
+        }
+      ]
+    },
+    "customerMoodAnalysis": {
+      "overallMood": "mixed",
+      "sentimentSummary": "Customer opinions are divided. The 3.8/5 rating from 5 recent reviews suggests some great experiences mixed with areas needing attention.",
+      "sentimentDistribution": {
+        "ecstatic": 20,
+        "delighted": 40,
+        "satisfied": 20,
+        "neutral": 0,
+        "frustrated": 0,
+        "disappointed": 20,
+        "angry": 0
+      },
+      "keyMoodIndicators": [
+        {
+          "theme": "speed of service",
+          "mentions": 2
+        },
+        {
+          "theme": "food quality",
+          "mentions": 1
+        },
+        {
+          "theme": "service excellence",
+          "mentions": 1
+        }
+      ],
+      "emotionalBreakdown": {
+        "joy": 3,
+        "satisfaction": 6,
+        "disappointment": 1,
+        "frustration": 0,
+        "anger": 0
+      },
+      "businessInsights": {
+        "strengthsPerceived": [
+          "Customers appreciate the diverse selection of pizzas, including unique options like the hatch green Chile barbecue pizza and cheese bread, which are highly recommended. - social media marketing can showcase this strength",
+          "The restaurant offers great value with the ability for two people to dine for less than $20, which is a significant draw for budget-conscious customers. - SEO services can leverage this for better visibility",
+          "The quick service, with pizzas ready in about 15 minutes, is a major plus for customers seeking convenience and speed. - Boostly marketing services can amplify this"
+        ],
+        "improvementOpportunities": [
+          "Inconsistent menu offerings between locations - social media marketing can improve this area",
+          "Negative feedback about changes in pizza quality and limited menu - review management can address this concern",
+          "Complaints about outdated and loud furniture affecting the dining experience - social media marketing can improve this area"
+        ]
+      },
+      "detailedMetrics": {
+        "totalReviews": 5,
+        "averageRating": 3.8,
+        "ratingDistribution": {
+          "1": 20,
+          "2": 0,
+          "3": 20,
+          "4": 0,
+          "5": 60
+        },
+        "sentimentTrends": {
+          "trend": "stable",
+          "recentAverageRating": 3.8,
+          "previousAverageRating": 3.8,
+          "recentReviewsCount": 5
+        }
+      }
+    },
+    "trends": {
+      "ratingTrend": "positive",
+      "volumeTrend": "increasing",
+      "responseRate": 60,
+      "averageResponseTime": "2 days"
+    },
+    "recommendations": [
+      {
+        "category": "growth",
+        "priority": "high",
+        "title": "Generate More Reviews",
+        "description": "Encourage satisfied customers to leave reviews",
+        "impact": "Increase online credibility and visibility"
+      }
+    ],
+    "googleReviews": {
+      "reviews": [
+        {
+          "author": "Jaclyn Hollingsworth",
+          "rating": 1,
+          "text": "used to be my fam’s favorite pizza restaurant but we just ate there and idk if they changed the dough, recipe, or something but the pizza was so dry, overcooked, and didn’t taste good. also they like updated everything and the menu is so limited. maybe instead of changing the pizza you guys should get rid of those loud freaking chairs you’ve had since 2010. cook or be cooked.",
+          "date": "2025-05-10T01:19:28.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Christina Pearson",
+          "rating": 3,
+          "text": "The pizza is good here.  It really is.  But the menu is different than the one by BYU.  And our favorite pizzas are no longer served at this location and it was a bummer to come into town from out of state and have a totally different menu from even the other locations.",
+          "date": "2025-05-10T01:12:08.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Oliver Frisbie",
+          "rating": 5,
+          "text": "Wonderful service, and very nice staff! They have quite the diverse selection of pizza and we received our food relatively quickly and it was pretty decent-comparable to a slightly better Costco pizza. One downside was the fountain machine having no ice. However I understand technical difficulties can occur! Overall, pretty fantastic!",
+          "date": "2024-12-16T17:04:52.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Randy Prazen",
+          "rating": 5,
+          "text": "What a fun experience! We enjoyed the BBQ, Pepperoni and Chicken Bacon Ranch. The cashier was friendly and the pizza came out in 15 minutes. Each pizza was delicious! We have plans to come back next weekend. Enjoy!",
+          "date": "2024-07-23T23:03:33.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Melanie Porter",
+          "rating": 5,
+          "text": "I’ve been here many times and have never been disappointed. My husband and I can eat here for less than $20 and the food is great. The hatch green Chile barbecue pizza is amazing and cheese bread is a MUST! Good portion sizes, plenty of room in the restaurant to just grab a quick bite or stay a while and hang out. Walking distance from BYU is a plus as well! Parking can be tough.",
+          "date": "2022-04-12T02:17:34.000Z",
+          "platform": "Google Places"
+        }
+      ],
+      "averageRating": 4.2,
+      "totalReviews": 1111
+    }
+  },
+  "competitors": [
+    {
+      "name": "Ednas Market & Grille - Lehi",
+      "domain": "ednasmarketgrillelehi.com",
+      "performance": 90,
+      "seo": 81,
+      "accessibility": 77,
+      "bestPractices": 86,
+      "overallScore": 83,
+      "rating": 4.5,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 503,
+      "keywords": 25,
+      "domainAuthority": 72,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "+150 keywords",
+      "authorityGap": 5,
+      "backlinks": 1117
+    },
+    {
+      "name": "Melty",
+      "domain": "melty.com",
+      "performance": 88,
+      "seo": 79,
+      "accessibility": 75,
+      "bestPractices": 84,
+      "overallScore": 81,
+      "rating": 4.4,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 1295,
+      "keywords": 49,
+      "domainAuthority": 74,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "+100 keywords",
+      "authorityGap": 3,
+      "backlinks": 942
+    },
+    {
+      "name": "Harvest Restaurant",
+      "domain": "harvestrestaurant.com",
+      "performance": 88,
+      "seo": 79,
+      "accessibility": 75,
+      "bestPractices": 84,
+      "overallScore": 81,
+      "rating": 4.4,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 1253,
+      "keywords": 44,
+      "domainAuthority": 75,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "+100 keywords",
+      "authorityGap": 3,
+      "backlinks": 1102
+    },
+    {
+      "name": "Bona Vita Bistro",
+      "domain": "bonavitabistro.com",
+      "performance": 80,
+      "seo": 72,
+      "accessibility": 68,
+      "bestPractices": 76,
+      "overallScore": 74,
+      "rating": 4,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 431,
+      "keywords": 41,
+      "domainAuthority": 66,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "Similar keywords",
+      "authorityGap": 0,
+      "backlinks": 844
+    },
+    {
+      "name": "Strap Tank Brewery",
+      "domain": "straptankbrewery.com",
+      "performance": 80,
+      "seo": 72,
+      "accessibility": 68,
+      "bestPractices": 76,
+      "overallScore": 74,
+      "rating": 4,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 1132,
+      "keywords": 56,
+      "domainAuthority": 60,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "Similar keywords",
+      "authorityGap": 0,
+      "backlinks": 750
+    }
+  ],
+  "competitorIntelligence": {
+    "organicCompetitors": [],
+    "keywordGaps": [
+      "best pizza delivery",
+      "pizza restaurant online ordering"
+    ],
+    "trafficEstimates": []
+  },
+  "serpFeatures": [],
+  "serpAnalysis": [],
+  "seoAnalysis": {
+    "title": "No title found",
+    "metaDescription": "No meta description found",
+    "h1Tags": [],
+    "imageCount": 0,
+    "internalLinks": 0,
+    "externalLinks": 0,
+    "schemaMarkup": false
+  },
+  "mobileExperience": {
+    "score": 68,
+    "loadTime": 0,
+    "isResponsive": true,
+    "touchFriendly": true,
+    "textReadable": true,
+    "navigationEasy": false,
+    "issues": [
+      "Mobile performance data unavailable - API configuration required"
+    ],
+    "recommendations": [
+      "Configure Google PageSpeed Insights API for mobile analysis",
+      "Enable mobile performance monitoring",
+      "Test website on mobile devices manually"
+    ]
+  },
+  "performanceMetrics": {
+    "performance": 88,
+    "accessibility": 78,
+    "bestPractices": 65,
+    "seo": 83,
+    "coreWebVitals": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0,
+      "ttfb": 0,
+      "tti": 0,
+      "tbt": 0,
+      "si": 0
+    }
+  },
+  "socialMediaLinks": {
+    "facebook": "https://www.facebook.com/197284690582",
+    "instagram": "https://www.instagram.com/slabpizza",
+    "twitter": null,
+    "youtube": null,
+    "tiktok": null,
+    "linkedin": null
+  },
+  "socialMediaAnalysis": {
+    "activePlatforms": 2,
+    "missingPlatforms": [
+      "twitter",
+      "youtube",
+      "tiktok"
+    ],
+    "recommendations": [
+      "Add twitter presence",
+      "Add youtube presence",
+      "Add tiktok presence"
+    ]
+  },
+  "issues": [
+    {
+      "type": "seo",
+      "severity": "critical",
+      "title": "🎯 Missing in Action: Zero SEO Strategy",
+      "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+      "impact": "high",
+      "effort": "medium",
+      "icon": "🔍",
+      "color": "orange",
+      "urgency": "high",
+      "businessImpact": "Missing out on 70% of customers who search online before visiting"
+    },
+    {
+      "type": "mobile",
+      "severity": "critical",
+      "title": "📱 Mobile Disaster: Customers Can't Order",
+      "description": "Mobile performance data unavailable - API configuration required",
+      "impact": "high",
+      "effort": "medium",
+      "icon": "📱",
+      "color": "red",
+      "urgency": "immediate",
+      "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+    }
+  ],
+  "recommendations": [
+    {
+      "title": "Improve website performance",
+      "description": "Improve website performance",
+      "impact": "medium",
+      "effort": "medium",
+      "category": "technical"
+    },
+    {
+      "title": "Enhance social media presence",
+      "description": "Enhance social media presence",
+      "impact": "medium",
+      "effort": "medium",
+      "category": "marketing"
+    }
+  ],
+  "metadata": {
+    "scanId": "scan_1755017380570",
+    "scanDate": "2025-08-12T16:49:40.570Z",
+    "scanDuration": 0,
+    "scanType": "professional",
+    "dataCompleteness": 100,
+    "apiVersions": {
+      "scanner": "2.0.0",
+      "dataforseo": "3.0",
+      "googlePlaces": "v1",
+      "apify": "2.0",
+      "openai": "gpt-4o"
+    },
+    "servicesUsed": [
+      "GooglePlacesAPI",
+      "ApifyReviews",
+      "OpenAIAnalysis"
+    ],
+    "errors": [],
+    "warnings": [
+      "Keyword data incomplete"
+    ]
+  }
+}

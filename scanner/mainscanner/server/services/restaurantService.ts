@@ -75,4 +75,79 @@ export class RestaurantService {
       throw new Error('Failed to get restaurant details');
     }
   }
+
+  async searchRestaurantByWebsite(domain: string): Promise<GooglePlacesResult[]> {
+    try {
+      // Search for restaurants with the domain in their details
+      const response = await axios.get(
+        `https://maps.googleapis.com/maps/api/place/textsearch/json`,
+        {
+          params: {
+            query: `restaurant site:${domain}`,
+            key: this.googlePlacesApiKey,
+            fields: 'place_id,name,formatted_address,rating,user_ratings_total,price_level,types,website',
+          },
+        }
+      );
+
+      if (response.data.status !== 'OK' || response.data.results.length === 0) {
+        // Fallback: Try searching with just the domain name
+        const domainName = domain.split('.')[0];
+        const fallbackResponse = await axios.get(
+          `https://maps.googleapis.com/maps/api/place/textsearch/json`,
+          {
+            params: {
+              query: `${domainName} restaurant`,
+              key: this.googlePlacesApiKey,
+              fields: 'place_id,name,formatted_address,rating,user_ratings_total,price_level,types,website',
+            },
+          }
+        );
+        
+        if (fallbackResponse.data.status === 'OK') {
+          // Filter results to find ones that match the domain
+          const filteredResults = [];
+          for (const place of fallbackResponse.data.results.slice(0, 5)) {
+            const details = await this.getPlaceDetails(place.place_id);
+            if (details.website && details.website.includes(domain)) {
+              filteredResults.push({
+                ...place,
+                website: details.website
+              });
+            }
+          }
+          return filteredResults.length > 0 ? filteredResults : fallbackResponse.data.results.slice(0, 1);
+        }
+      }
+
+      return response.data.results.slice(0, 10);
+    } catch (error) {
+      console.error('Restaurant search by website error:', error);
+      throw new Error('Failed to search restaurant by website');
+    }
+  }
+
+  async getPlaceDetails(placeId: string): Promise<any> {
+    try {
+      const response = await axios.get(
+        `https://maps.googleapis.com/maps/api/place/details/json`,
+        {
+          params: {
+            place_id: placeId,
+            fields: 'place_id,name,formatted_address,geometry,rating,user_ratings_total,price_level,types,website,formatted_phone_number',
+            key: this.googlePlacesApiKey,
+          },
+        }
+      );
+
+      if (response.data.status !== 'OK') {
+        throw new Error(`Google Places API error: ${response.data.status}`);
+      }
+
+      return response.data.result;
+    } catch (error) {
+      console.error('Place details error:', error);
+      throw new Error('Failed to get place details');
+    }
+  }
 }

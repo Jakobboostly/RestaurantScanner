@@ -869,6 +869,144 @@ export async function registerRoutes(app: Express): Promise<Server> {
     });
   });
 
+  // n8n Webhook endpoint - scan restaurant by URL
+  app.post("/api/webhook/scan-by-url", async (req, res) => {
+    try {
+      const { url, apiKey, returnFormat = 'json' } = req.body;
+      
+      // Simple API key authentication if configured
+      const expectedApiKey = process.env.WEBHOOK_API_KEY;
+      if (expectedApiKey && apiKey !== expectedApiKey) {
+        return res.status(401).json({ 
+          error: "Unauthorized",
+          message: "Invalid or missing API key" 
+        });
+      }
+      
+      if (!url) {
+        return res.status(400).json({ 
+          error: "Bad Request",
+          message: "URL parameter is required" 
+        });
+      }
+
+      if (!GOOGLE_API_KEY) {
+        return res.status(503).json({ 
+          error: "Service Unavailable",
+          message: "Google Places API key not configured" 
+        });
+      }
+
+      if (!dataForSeoScannerService) {
+        return res.status(503).json({ 
+          error: "Service Unavailable",
+          message: "Scanner service not available. Missing required API credentials" 
+        });
+      }
+
+      // Extract domain from URL
+      let domain: string;
+      try {
+        const urlObj = new URL(url.startsWith('http') ? url : `https://${url}`);
+        domain = urlObj.hostname.replace(/^www\./, '');
+      } catch (error) {
+        return res.status(400).json({ 
+          error: "Invalid URL",
+          message: "Please provide a valid website URL" 
+        });
+      }
+
+      console.log(`🔗 n8n webhook scan request for domain: ${domain}`);
+
+      // Search for the restaurant using the domain
+      let searchResults = await restaurantService.searchRestaurantByWebsite(domain);
+      
+      if (!searchResults || searchResults.length === 0) {
+        // Fallback: Try to search by domain name (e.g., "mcdonalds" from "mcdonalds.com")
+        const domainName = domain.split('.')[0];
+        const fallbackResults = await restaurantService.searchRestaurants(domainName + " restaurant");
+        
+        if (!fallbackResults || fallbackResults.length === 0) {
+          return res.status(404).json({ 
+            error: "Restaurant Not Found",
+            message: `No restaurant found for domain: ${domain}` 
+          });
+        }
+        
+        // Use first result from fallback search
+        searchResults = fallbackResults;
+      }
+
+      const restaurant = searchResults[0];
+      const placeDetails = await restaurantService.getPlaceDetails(restaurant.place_id);
+      
+      // Prepare scan parameters
+      const scanParams = {
+        domain: placeDetails.website ? new URL(placeDetails.website).hostname : domain,
+        restaurantName: placeDetails.name,
+        placeId: restaurant.place_id,
+        latitude: placeDetails.geometry?.location?.lat || 0,
+        longitude: placeDetails.geometry?.location?.lng || 0
+      };
+
+      console.log(`📊 Starting scan for ${scanParams.restaurantName} (${scanParams.domain})`);
+
+      // Perform the scan (synchronous version for webhook)
+      const scanResult = await dataForSeoScannerService.scanRestaurantAdvanced(
+        scanParams.placeId,
+        scanParams.domain,
+        scanParams.restaurantName,
+        scanParams.latitude,
+        scanParams.longitude,
+        () => {}, // Empty progress callback for webhook
+        null  // No manual Facebook URL
+      );
+
+      // Prepare webhook response based on format
+      if (returnFormat === 'simplified') {
+        // Return simplified format for easier n8n processing
+        const simplifiedResult = {
+          success: true,
+          timestamp: new Date().toISOString(),
+          restaurant: {
+            name: scanResult.restaurantName,
+            domain: scanResult.domain,
+            placeId: scanResult.placeId,
+            address: scanResult.businessProfile?.address || '',
+            rating: scanResult.businessProfile?.rating || 0,
+            totalReviews: scanResult.businessProfile?.totalReviews || 0
+          },
+          scores: {
+            overall: scanResult.overallScore || 0,
+            seo: scanResult.seo || 0,
+            performance: scanResult.performance || 0,
+            mobile: scanResult.mobile || 0,
+            reviews: scanResult.reviewsAnalysis?.overallScore || 0
+          },
+          recommendations: scanResult.reviewsAnalysis?.recommendations || [],
+          webhookUrl: process.env.WEBHOOK_URL || null
+        };
+        
+        return res.json(simplifiedResult);
+      } else {
+        // Return full scan result
+        return res.json({
+          success: true,
+          timestamp: new Date().toISOString(),
+          result: scanResult
+        });
+      }
+      
+    } catch (error) {
+      console.error("n8n webhook scan error:", error);
+      return res.status(500).json({ 
+        error: "Internal Server Error",
+        message: error instanceof Error ? error.message : 'Scan failed',
+        timestamp: new Date().toISOString()
+      });
+    }
+  });
+
   const httpServer = createServer(app);
   return httpServer;
 }

@@ -126,11 +126,11 @@ export class AdvancedScannerService {
         
         // If placeId is invalid, try to extract business info from domain
         if (error.message === 'PLACE_ID_NOT_FOUND') {
-          console.log('🔧 Invalid placeId detected - extracting business info from domain');
-          businessProfile = this.createBusinessProfileFromDomain(domain, restaurantName);
+          console.log('🔧 Invalid placeId detected - extracting business info from domain with location lookup');
+          businessProfile = await this.createBusinessProfileFromDomain(domain, restaurantName, latitude, longitude);
         } else {
-          console.log('🔧 Business profile failed - attempting domain fallback anyway');
-          businessProfile = this.createBusinessProfileFromDomain(domain, restaurantName);
+          console.log('🔧 Business profile failed - attempting domain fallback with location lookup');
+          businessProfile = await this.createBusinessProfileFromDomain(domain, restaurantName, latitude, longitude);
         }
         profileAnalysis = null;
       }
@@ -1242,8 +1242,18 @@ export class AdvancedScannerService {
     try {
       console.log(`🤖 AI CUISINE DETECTION - Analyzing restaurant name: "${restaurantDisplayName}"`);
       
-      // Use AI for intelligent cuisine detection  
-      const prompt = `What's the cuisine type of ${restaurantDisplayName} in ${businessProfile?.city || 'the area'}? Just respond with one word.`;
+      // Use AI for intelligent cuisine detection with better context
+      const location = businessProfile?.city || businessProfile?.vicinity || 'the area';
+      const prompt = `Analyze this restaurant name and determine its cuisine type: "${restaurantDisplayName}" located in ${location}.
+
+Consider:
+- Restaurant name patterns (e.g., "Taco Bell" = Mexican, "Pizza Hut" = Italian, "Panda Express" = Chinese)
+- Common cuisine indicators in the name
+- Regional context if applicable
+
+Respond with ONE cuisine word from this list: american, italian, mexican, chinese, japanese, indian, thai, vietnamese, korean, mediterranean, greek, middle-eastern, french, german, spanish, pizza, burger, sandwich, bbq, seafood, steakhouse, breakfast, cafe, bakery, fast-casual, or restaurant.
+
+Cuisine type:`;
 
       const response = await this.openaiService.chat.completions.create({
         model: 'gpt-4o',
@@ -1253,18 +1263,28 @@ export class AdvancedScannerService {
             content: prompt
           }
         ],
-        max_tokens: 10,
-        temperature: 0.1
+        max_tokens: 20,
+        temperature: 0.2
       });
 
       const aiCuisine = response.choices[0]?.message?.content?.trim().toLowerCase() || '';
       console.log(`🤖 AI CUISINE DETECTED: "${aiCuisine}" for restaurant "${restaurantDisplayName}"`);
       
-      // Validate the response is a single word and reasonable
-      if (aiCuisine && aiCuisine.length < 20 && !aiCuisine.includes(' ')) {
-        return aiCuisine;
+      // Clean and validate the response
+      const cleanedCuisine = aiCuisine.replace(/[^a-z-]/g, '').trim();
+      
+      // List of valid cuisine types
+      const validCuisines = [
+        'american', 'italian', 'mexican', 'chinese', 'japanese', 'indian', 'thai', 
+        'vietnamese', 'korean', 'mediterranean', 'greek', 'middle-eastern', 'french', 
+        'german', 'spanish', 'pizza', 'burger', 'sandwich', 'bbq', 'seafood', 
+        'steakhouse', 'breakfast', 'cafe', 'bakery', 'fast-casual', 'restaurant'
+      ];
+      
+      if (cleanedCuisine && validCuisines.includes(cleanedCuisine)) {
+        return cleanedCuisine;
       } else {
-        console.log(`⚠️ AI returned invalid cuisine: "${aiCuisine}", falling back to 'restaurant'`);
+        console.log(`⚠️ AI returned invalid cuisine: "${aiCuisine}" -> "${cleanedCuisine}", falling back to 'restaurant'`);
         return 'restaurant';
       }
       
@@ -1440,7 +1460,7 @@ export class AdvancedScannerService {
     return Math.max(0, Math.min(100, score));
   }
 
-  private createBusinessProfileFromDomain(domain: string, restaurantName: string) {
+  private async createBusinessProfileFromDomain(domain: string, restaurantName: string, latitude?: number, longitude?: number) {
     // Extract business name from domain
     const domainName = domain.replace(/^www\./, '').split('.')[0];
     
@@ -1449,16 +1469,31 @@ export class AdvancedScannerService {
       ? restaurantName 
       : this.domainToBusinessName(domainName);
     
-    console.log(`🏢 Created business profile from domain: "${businessName}" (from ${domain})`);
+    // Try to get real location from coordinates using reverse geocoding
+    let address = 'Location data unavailable - using domain analysis';
+    if (latitude && longitude && latitude !== 0 && longitude !== 0) {
+      try {
+        console.log(`🌍 Attempting reverse geocoding for coordinates: ${latitude}, ${longitude}`);
+        const locationResult = await this.reverseGeocode(latitude, longitude);
+        if (locationResult && locationResult.formatted_address) {
+          address = locationResult.formatted_address;
+          console.log(`✅ Reverse geocoding successful: ${address}`);
+        }
+      } catch (error) {
+        console.log(`⚠️ Reverse geocoding failed, using fallback address`);
+      }
+    }
+    
+    console.log(`🏢 Created business profile from domain: "${businessName}" (from ${domain}) with address: ${address}`);
     
     return {
       name: businessName,
-      address: 'Location data unavailable - using domain analysis',
+      address: address,
       rating: 0,
       reviewCount: 0,
       phoneNumber: null,
       website: `https://${domain}`,
-      formatted_address: 'Location data unavailable - using domain analysis',
+      formatted_address: address,
       place_id: null,
       business_status: 'UNKNOWN',
       types: ['restaurant'],
@@ -1467,8 +1502,36 @@ export class AdvancedScannerService {
       photoCount: 0,
       opening_hours: null,
       price_level: null,
-      editorial_summary: null
+      editorial_summary: null,
+      city: '', // Will be extracted later
+      state: '' // Will be extracted later
     };
+  }
+
+  private async reverseGeocode(latitude: number, longitude: number): Promise<{ formatted_address: string } | null> {
+    try {
+      const response = await axios.get(
+        'https://maps.googleapis.com/maps/api/geocode/json',
+        {
+          params: {
+            latlng: `${latitude},${longitude}`,
+            key: process.env.GOOGLE_PLACES_API_KEY,
+            result_type: 'street_address|route|neighborhood|locality'
+          }
+        }
+      );
+
+      if (response.data?.status === 'OK' && response.data.results?.length > 0) {
+        return {
+          formatted_address: response.data.results[0].formatted_address
+        };
+      }
+      
+      return null;
+    } catch (error) {
+      console.error('Reverse geocoding error:', error);
+      return null;
+    }
   }
 
   private domainToBusinessName(domainName: string): string {
@@ -2749,76 +2812,81 @@ export class AdvancedScannerService {
         }
       }
       
-      // Use manual Facebook URL if provided, otherwise run detection
-      let allSocialLinks = {};
+      // Start with Google Business Profile social media data (most reliable)
+      let allSocialLinks: {
+        facebook?: string | null;
+        instagram?: string | null;
+        twitter?: string | null;
+        youtube?: string | null;
+        tiktok?: string | null;
+        linkedin?: string | null;
+      } = {
+        facebook: null,
+        instagram: null,
+        twitter: null,
+        youtube: null,
+        tiktok: null,
+        linkedin: null
+      };
+
+      // 1. Check for manual Facebook URL override
       if (manualFacebookUrl) {
         console.log('✅ Using manual Facebook URL override:', manualFacebookUrl);
-        allSocialLinks = { facebook: manualFacebookUrl };
-      } else {
-        // Use enhanced social media detector for comprehensive platform detection
-        const businessAddress = businessProfile?.address || businessProfile?.vicinity;
-        const businessPhone = businessProfile?.phone;
-        
-        console.log('🔍 Starting comprehensive social media detection...');
-        console.log(`   Target domain: https://${domain}`);
-        console.log(`   Business name: ${restaurantName}`);
-        console.log(`   Has Apify data: ${!!apifySocialData}`);
-        
-        allSocialLinks = await this.enhancedSocialMediaDetector.detectAllSocialMedia(
-          `https://${domain}`,
-          restaurantName,
-          businessAddress,
-          businessPhone,
-          placeId,
-          apifySocialData
-        );
-        
-        console.log('📱 Social media detection completed. Results:');
-        console.log(`   Facebook: ${allSocialLinks.facebook || 'Not found'}`);
-        console.log(`   Instagram: ${allSocialLinks.instagram || 'Not found'}`);
-        
-        // If no social media found from website/Apify, try Google Business Profile
-        if (!allSocialLinks.facebook && !allSocialLinks.instagram && businessProfile) {
-          console.log('🔍 No social media found, checking Google Business Profile...');
-          // Google Places API doesn't provide social_media field by default
-          // But we can check for it in the business profile data
-          const profile = businessProfile as any;
-          if (profile.social_media) {
-            console.log('📱 Found social media in Business Profile:', profile.social_media);
-            // Extract Facebook and Instagram from Google Business Profile
-            for (const social of profile.social_media) {
-              if (social.includes('facebook.com') && !allSocialLinks.facebook) {
-                allSocialLinks.facebook = social;
-                console.log('📘 Facebook from Business Profile:', social);
-              }
-              if (social.includes('instagram.com') && !allSocialLinks.instagram) {
-                allSocialLinks.instagram = social;
-                console.log('📷 Instagram from Business Profile:', social);
-              }
+        allSocialLinks.facebook = manualFacebookUrl;
+      }
+
+      // 2. Get social media from Google Business Profile first (most reliable)
+      if (businessProfile) {
+        const profile = businessProfile as any;
+        if (profile.social_media) {
+          console.log('📱 Found social media in Google Business Profile:', profile.social_media);
+          // Extract Facebook and Instagram from Google Business Profile
+          for (const social of profile.social_media) {
+            if (social.includes('facebook.com') && !allSocialLinks.facebook) {
+              allSocialLinks.facebook = social;
+              console.log('📘 Facebook from Google Business Profile:', social);
+            }
+            if (social.includes('instagram.com') && !allSocialLinks.instagram) {
+              allSocialLinks.instagram = social;
+              console.log('📷 Instagram from Google Business Profile:', social);
             }
           }
+        }
+      }
+
+      // 3. If still missing social media, try website detection as backup
+      if (!allSocialLinks.facebook && !allSocialLinks.instagram) {
+        console.log('🔍 No social media from Google Profile, trying website detection...');
+        try {
+          const detectedLinks = await this.enhancedSocialMediaDetector.detectAllSocialMedia(
+            `https://${domain}`,
+            restaurantName,
+            businessProfile?.address || businessProfile?.vicinity,
+            businessProfile?.phone,
+            placeId,
+            apifySocialData
+          );
+          
+          // Only use website detection if Google Profile didn't provide the links
+          allSocialLinks.facebook = allSocialLinks.facebook || detectedLinks.facebook;
+          allSocialLinks.instagram = allSocialLinks.instagram || detectedLinks.instagram;
+          
+          console.log('📱 Website detection results:');
+          console.log(`   Facebook: ${detectedLinks.facebook || 'Not found'}`);
+          console.log(`   Instagram: ${detectedLinks.instagram || 'Not found'}`);
+        } catch (error) {
+          console.log('⚠️ Website social media detection failed, using Google Profile data only');
         }
       }
       
       console.log('📘 Final social media detection results:', allSocialLinks);
       
-      // If Facebook is detected, try to get enhanced Facebook data (but don't wait for it to complete)
-      let facebookAnalysis = null;
+      // If Facebook is detected, we have the URL but enhanced analysis isn't implemented yet
       if (allSocialLinks.facebook) {
-        // Start Facebook analysis but don't await it - it can complete in background
-        // Only if the service exists and has the method
-        if (this.facebookPostsScraperService && typeof this.facebookPostsScraperService.analyzeFacebookPage === 'function') {
-          this.facebookPostsScraperService.analyzeFacebookPage(allSocialLinks.facebook)
-            .then(result => {
-              console.log('Facebook posts analysis completed:', result ? 'Success' : 'No data');
-            })
-            .catch(fbError => {
-              console.error('Facebook posts analysis failed:', fbError);
-            });
-          console.log('Facebook posts analysis started in background');
-        } else {
-          console.log('Facebook posts scraper service not available - skipping enhanced analysis');
-        }
+        console.log('✅ Facebook detected:', allSocialLinks.facebook);
+      }
+      if (allSocialLinks.instagram) {
+        console.log('✅ Instagram detected:', allSocialLinks.instagram);
       }
       
       // Build the result object - ENSURE we return the detected social links

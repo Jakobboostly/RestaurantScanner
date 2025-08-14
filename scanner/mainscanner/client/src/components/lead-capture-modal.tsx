@@ -121,7 +121,6 @@ export function LeadCaptureModal({
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50"
-            onClick={onClose}
           />
           
           {/* Modal */}
@@ -143,13 +142,6 @@ export function LeadCaptureModal({
                   title="Admin access"
                 />
                 
-                <button
-                  onClick={onClose}
-                  className="absolute right-4 top-4 p-1 rounded-lg hover:bg-white/20 transition-colors"
-                  disabled={isSubmitting}
-                >
-                  <X className="h-5 w-5" />
-                </button>
                 
                 <div className="flex items-center space-x-3 mb-3">
                   <div className="p-2 bg-white/20 rounded-lg">

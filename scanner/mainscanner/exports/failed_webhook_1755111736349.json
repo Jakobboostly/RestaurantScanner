@@ -1,0 +1,1285 @@
+{
+  "event": "scan_completed_full_export",
+  "version": "2.0.0",
+  "timestamp": "2025-08-13T19:02:15.774Z",
+  "scanId": "scan_1755111735774",
+  "scanDuration": 0,
+  "restaurant": {
+    "name": "SLABpizza",
+    "domain": "slabpizza.com",
+    "placeId": "ChIJY6jpxbaQTYcReuPfvuq20tM",
+    "location": {
+      "address": "671 E 800 N, Provo, UT 84606, USA",
+      "city": "Provo",
+      "state": "UT",
+      "country": "United States",
+      "latitude": null,
+      "longitude": null
+    },
+    "categories": [],
+    "priceLevel": null,
+    "cuisine": "Pizza",
+    "restaurantType": "QSR"
+  },
+  "scores": {
+    "overall": 71,
+    "seo": 70,
+    "performance": 69,
+    "mobile": 49,
+    "userExperience": 60,
+    "accessibility": 0,
+    "bestPractices": 0,
+    "local": 69,
+    "social": 40,
+    "reviews": 69,
+    "website": 69,
+    "domainAuthority": 70
+  },
+  "businessProfile": {
+    "name": "SLABpizza",
+    "address": "671 E 800 N, Provo, UT 84606, USA",
+    "rating": 4.6,
+    "reviewCount": 1892,
+    "phoneNumber": "(801) 377-3883",
+    "website": "http://slabpizza.com/",
+    "formatted_address": "671 E 800 N, Provo, UT 84606, USA",
+    "address_components": [
+      {
+        "long_name": "671",
+        "short_name": "671",
+        "types": [
+          "street_number"
+        ]
+      },
+      {
+        "long_name": "East 800 North",
+        "short_name": "E 800 N",
+        "types": [
+          "route"
+        ]
+      },
+      {
+        "long_name": "Provo",
+        "short_name": "Provo",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Utah County",
+        "short_name": "Utah County",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Utah",
+        "short_name": "UT",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United States",
+        "short_name": "US",
+        "types": [
+          "country",
+          "political"
+        ]
+      },
+      {
+        "long_name": "84606",
+        "short_name": "84606",
+        "types": [
+          "postal_code"
+        ]
+      }
+    ],
+    "state": "Utah",
+    "city": "Provo",
+    "place_id": "ChIJY6jpxbaQTYcReuPfvuq20tM",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "food",
+      "point_of_interest",
+      "restaurant"
+    ],
+    "reviews": [
+      {
+        "author_name": "Kyle Johnson",
+        "author_url": "https://www.google.com/maps/contrib/115543325512708619474/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUt-Nr1_zufyIaDb4BUGUp2dSjAokINx88pFil1Fpy7oZmY4ckstw=s128-c0x00000000-cc-rp-mo-ba6",
+        "rating": 5,
+        "relative_time_description": "2 weeks ago",
+        "text": "Slab Pizza's \"The Meikel\" is an absolute game-changer! This Thai-inspired pizza is a flavor explosion, perfectly balancing the savory richness of peanut sauce with the sweet tang of pineapple, the fresh bite of green onion and cilantro, and the smoky depth of roasted red peppers. It's a unique and incredibly delicious combination that you won't find anywhere else. Beyond the phenomenal taste, Slab Pizza consistently delivers on great prices and truly amazing service. If you're looking for an unforgettable pizza experience, \"The Meikel\" is a must-try!",
+        "time": 1753722410,
+        "translated": false
+      },
+      {
+        "author_name": "Megan Larsen",
+        "author_url": "https://www.google.com/maps/contrib/116200082713117791509/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXehLI_ba5-UM2cQDDMcnnZgkyJ1IA_aCEfm4KhByqv9LYEkPvb=s128-c0x00000000-cc-rp-mo-ba6",
+        "rating": 5,
+        "relative_time_description": "5 months ago",
+        "text": "My husband and I love slab and we don’t come as often as we would like! My husband loves the Buffalo wing. That is the only one he orders. I have tried a few different ones but one of my favorite ones is the Thai Chicken.",
+        "time": 1739598914,
+        "translated": false
+      },
+      {
+        "author_name": "Bryan Lazo",
+        "author_url": "https://www.google.com/maps/contrib/101523583057766485145/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXu0IwQ929pj-jMVCPEKh86aK2TsDDu9ob5I7YW1zsI3zwjJjPF=s128-c0x00000000-cc-rp-mo-ba4",
+        "rating": 4,
+        "relative_time_description": "a year ago",
+        "text": "I enjoyed eating at this place and, while I do think their customer service and food deserve one star, this place could be better.\n\nThe food was great! The ingredients tasted fresh, they have all the condiments you need and the dough was very crispy and delicious. Although they didn't have ranch so that's not good.\n\nI just think the building itself is pretty dead. I know the location doesn't help but it's very quiet and unlively here. This place also attracts immodest young adults that don't care about manners and cleaning up after themselves.\n\nThe restaurant itself is great. It's the location and the regular customers I have issues with.",
+        "time": 1713738787,
+        "translated": false
+      },
+      {
+        "author_name": "Tana Rosenberg",
+        "author_url": "https://www.google.com/maps/contrib/108318358013538228977/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUaNqvYhLxOYf1mzCOYlMGN3PrSgL5KeBtCSeumPlPhBrjiA61N=s128-c0x00000000-cc-rp-mo",
+        "rating": 4,
+        "relative_time_description": "a year ago",
+        "text": "SLAB continues to impress me each time I visit! The decor, the music, the cool college students hanging out, and the amazing food! It is tasty, satisfying and a great deal. The service is fast, friendly, and the employees are always willing to listen, help and problem solve. The owner is phenomenally positive, kind and works alongside the others to help things run smoothly. Modifications to toppings are always allowed (you want arugula & rosemary dust on top? Just ask!) and a gluten free crust is no problem here. The dining area, kitchen and bathroom are all exceptionally clean. This is even more remarkable given the sheer number of customers served daily. My nephew wrote his college application essay about SLAB pizza, and HE WAS ACCEPTED! THANKS SLAB!! Your pizza 🍕 is second only to your high quality service!",
+        "time": 1702787807,
+        "translated": false
+      },
+      {
+        "author_name": "ami hodges",
+        "author_url": "https://www.google.com/maps/contrib/110242914952934810523/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJhNxVXxomQZCjTDTN1UVbb2QtKcNWQsfArFmm3jmeyBggVhg=s128-c0x00000000-cc-rp-mo-ba3",
+        "rating": 5,
+        "relative_time_description": "4 months ago",
+        "text": "Always full of delicious, creative food that I can't get enough of. The food is gorgeous and wonderful. The pear salad pizza is top notch.",
+        "time": 1744265100,
+        "translated": false
+      }
+    ],
+    "photos": [
+      {
+        "height": 662,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115743865989205572883\">SLABpizza</a>"
+        ],
+        "photo_reference": "ATKogpdl9PVaBveL1zotmJVq-V8j6qDkqQWUM4BpQxxIkRpQpVEF65zUiMfGzCpX5igZlwyAwiHrTxsG9GGGL6SfZrtGIWjiwMsxkr_zM0SyWSu5ItTNsQ4azQ5Jbv25omjCqDgskXCz-_U1F9cV-Lhk8WltIJElA1b5GX7puMCjPFBNoNvUV6mgNDn_qgWsgSw7DILE7mmoq6yZv91tjLMUoR6HoE6NKiwM1Qz1kQxd1qK_rMC1Kv6v_Y--MgpfiYMtTapl59sGN6IB8Xzm7vpZJ75jZAo0rIuqyy6dWhzHv7AUAw",
+        "width": 1000
+      },
+      {
+        "height": 752,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115743865989205572883\">SLABpizza</a>"
+        ],
+        "photo_reference": "ATKogpe_7uZX_T7MbowHkPenthIo1L5Q_JMeWeBy76r6kgSJUzDAXTy1tuuUPgXLHTSSTJp1QEIk__azd6Ck-ssKx2HXq93lZIjA-MeOYYd1aTRenZpjbQa0lzc-c7wyMbxbfjekCVoKbjkxQjq6VrVNwgSzuf6NE0RnQ2UlJpRr39-TdmL8Nh3m39HwwzUC-gEfkA6JAAICZSYhTBH8-tVXCau0wrArgKe8vRW_qjYU5MEOHCo4wtIr2To0EMOZRMvv0oyRNxwwCpeSSJAje7H2b8EntavereEaiHe21dLRravHZw",
+        "width": 1000
+      },
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115543325512708619474\">Kyle Johnson</a>"
+        ],
+        "photo_reference": "ATKogpemabq0bLHcMcbKXVel8Xac1tMl0yj2cmtYjiH8NWGGp0dZcUvlXn70OCDdboYyyHMKF1opKlHK46VCVsE-CCY8kKR6BrTjLPoGyhmKpobdNPrAU_mjAykL9bi_iLP-rJCjWNunVb_MvBYdJPXc2nkaVfJo0FrNdOj3p2Fa4iu44_zYWQhfM2vdcEKaVNXnANXCK7SGXTxeDoSCCq0XlKKTVl_9VnJAKsWbeBCq2w1xzOhQGmKtkk9XozrRt9wS0aiJ29-V4qQsFyvL4kgmJUip4wEzTDHdoBYsC1RMsUkS4wiKE5BDz-KIdLKuybF090jpEZCoCgw6VKIP5FBVd7PAY3uoONHuCD99F-2hJX6FnaGokfQ8kEfaV20hFlsSA5EetqBWrggM7woJ0Pl21by9igCNSoAU3_gaDuGNedu3kIIuMDcfpXa8F3DE3w2t",
+        "width": 3024
+      },
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/103163962457769293704\">James Ellsworth</a>"
+        ],
+        "photo_reference": "ATKogpct2UVifScudEoYlUpCruDKFCxpQ6aWyMaCt5MTq1GPOexRxN0wi6AjrUnJ6I5ftk3r4BeYCp6-thRL7jwS2zhyBtyCR1s31URFEN_pcgkSoEFyvuo2dFsVpfxNEs8iAhdbEeul1V0sD8uAOs3dKZbx9TZP8JmArgh3WSJgB_Z-55CTWSmND2PTXg_W9YjMhHM-BpVAbpUYoMxJ6KpEUjHl1zOxf7NxpB1PoonVNHYj-GDoQgd3y-W_dLQgSnWvaDO5oDqjsdZict_I7j-RakOdkSHK8U078lmnMhjad2fjIuRnceJiCLttxOth9tSUna_iAr50hUDok_7G47nPUliYrfSX2trML1OWkZF4hkS4923xszN0Cbk9qgRqF90P3xMR5K4mIL7JyIrk3wdWCIYN6IMOjPjJsreSsqztLHU3B0WP",
+        "width": 3024
+      },
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/113564466335638880865\">Lynette Juarez</a>"
+        ],
+        "photo_reference": "ATKogpcZqk3noYMHrUbYlT5XqUdW1xPzPUEJcr2zS1PByDNB_UFhvbhGISCT17iRJdtth5TyDz6Qvb59BaVMed-fjDkpQAUh8TIexcUZRdmXpNkIj1IBZkY2wfDkg5gAqavmB0jfsS9Z1gXhRujCvOHX0RkAHukaSsXP2RTTEr98m0R20ew59LiCSQYmbcXp5OCNzpeHIuMP8Ak9YZyqKy7X0NRJKZhMkh90V0WRF-gu8-UQiq4Jgv9uST-xdPQBk9UW58WPCk-kACKfhpCljSYloAU58HxQTX5oa54JYniG_qPxrJFXX-crub7iqiYxeCnvnZAVSvsx-U891RWJ9yEwau-VYwDzWceMDePPkJKe8k3vWy3M9bmIXPV1tTkMN7UC0BiamrJO1h1uaUq4nS9TxU0D0CxsasfaKlxx9pyE1ARphA",
+        "width": 3024
+      },
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/117869188024558532030\">Colby Peterson</a>"
+        ],
+        "photo_reference": "ATKogpcRAWsqS6nU9vuhJS9EqSryS-A1_cGSPZfI6_EbkA9hco-jnyr0hZcF3mW-ZmNLT9HIQJHP6nnbty1P_zXmOFEv1CeEB1ImGzA9qZjHfpkvQaGY5WIJc5avbt6lqNFAhEarw2MB8GFPp5Ti3fkT3nPBdyulARRv5Kb4xTiWnt-GujKq8oPRkBKsgvB_bVCCT5sU362pBQ2fN-dgji4ajmpoR7yAlBUwJlYdBrYrZhju5SJfKMi-8I35qsiLWR3RmsnO_lD-03AZ04EoKHnJY7FYz-h-RTjIf4LqMs-a4TtjNUqgji5zWwj-nXyCr066FUmGs0lOLzRMTaVl-YAi4eRG7e-AvHUTTL7EV298u5EHmqbqd_eAi9p8V6TOhLUO4rcODS5wvWYCCtDIlGQ1jPpRue20rOfu8rX-EjRCqe_CAiU6",
+        "width": 3024
+      },
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102691188644217149485\">Hailey Schow</a>"
+        ],
+        "photo_reference": "ATKogpdEyxbgeYUDKS047uy4_4cN8IgG_htP7YS31TVLjxoOECx__Utw5bhkx68r4z0w3hRQ4SkSFSZGIeo0rbqt7BXB6byMA9MAzazKaYx_1b_SSWnz0Cjk0_fVZqp-vIm3OPEqSxNc2QfmLSv-675XKDpnfHkGR0GNtmVvVgCuJsraf1bIK9a2dbNlJQ3ub7fZI1Rdvmn1ksp_-pCjPqzdSa_2q4d5TC-9FEGq-bZ9B06clf44Y1s-8nYCO8ZiBny38jgsEYYBr3N0mfzviWgdSUPzyTSbVQw0VNqLk13YtMPslylx2n-jRzmxk3Z11gDI_s9pGHRgzzWJvNcy3bod-jmMZFbrg911pp_QaPcJ7iQczGl8OmOWNVbAebl3ZgvILmajLa39vDnNY2LobK-O4k2DkP1InkHFJ3S8Sw_7-YUya8Pv",
+        "width": 3024
+      },
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/101903894671574444191\">Avi Jain</a>"
+        ],
+        "photo_reference": "ATKogpcnfgYHzT25Wo-7S4WTG-pMkhELVqQgoWC7lsQHPH7MpOxkZ_StUamRydgMw7sR8u9vtSYvERWoGMQkAmVd8ESnDtZ8-8POk9A-kmOceuidtkreanqJYgKsgx7_vLLUcYad0DEhlj4tiEPpAHMYVqShgv2ZZ1gbzMiTKRCTkDzfaPrODutooUjiy9Cfx1QJsruVj-g5SLzlfSYvoYfLkY2VGfVa7mzWJkWvMoDbgbwrSbWuc7pPnlCWc5VYS0mUqr_mXowMHMewtVMa-9Kz3Gotnf9jZoeQYMoz1Pq9_hbNrWXOYiAMTLVMGFMTpMyAX8dZnYL8udQHNgQdNrj1IqLPZWwzO8ItXI3TmiUolF89Xb7HV_sqG81KK4pJPQCBl4nI3y6HDtHIEBY1Mmz-kdt3UMG4xF2R-yD8JeQlWBPzGg",
+        "width": 4032
+      },
+      {
+        "height": 2432,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/116796085451248185340\">josh cook</a>"
+        ],
+        "photo_reference": "ATKogpcCsJ1i-VnY_4wodHAMyi05R2SVfasFwpMZEUC3fqWmAlH4Tl8O4ZbASfRR8554Vy4lYrMTIpBHjpgcXq0OiOWYrumn6kBSVlZsk7GCID_xpvPhkUcPDNnbuhUOy5Q5oW3DbwLQeFtYCPQ1GRA7LjXM8_s0D5-ZU8cW5B5Z-UKtJMfjrq1f5ymq8NV92p6zxxPFsLe4UEhE-2h7aOmu5G9WSt-dJSEE6g4vH73skq98IPPnVpYRC_jhUHfNZtkd7M6rc81_G1Cbgg3Qk-stfJMmlJzLUjNjKFzuE9bF90THM1Va5iLVdHB-xy9yY412UnYKIYO8UWCntumALsw9Zrgieki5DCRxsSwod6heSi883pe2wPoxV94NIBheH24OB4Sd90vpGGr8wAh320zp_Oor-tIw9Y62M1CzW-olshb3YAIJ",
+        "width": 3648
+      },
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/117747696038854127149\">micah brown</a>"
+        ],
+        "photo_reference": "ATKogpfyVdAKrADy5r9ynTpHVVevtB9g7g8mg1voS8aT8wpmyHOxmkW_IbcTt0Ww4-YDqZH9yhmc0EPWXMy45gGDAEeSPJ8xsZKZEfaNhLF1-ManobfUE-SrudvOTfhmBRAnH-9HJx2v2PpSOO6cDdxjxAf-4Z-B2vXAVYVCNpuoXPLZ8j4oyy87nD8q1hWwRMMTSFTHRCpiqj83G9MJvtRDe78Yp5EP3sCG5SV-t9h9Mcq1cotTD1IsNrKaPN7Ic1CBCaD-3Z000R6obSUNOrDKcxfO9xSnDK9S5_q9EZ3HgTecXRIaMu27YC6Om_3GRuTcFrQ2NRQnUu_9gjSLCusnDD0BDqWr3CWgxx0y9SKu1e2w6N_55QksAgQce_9ZJSdKOSkXwuAq498Swh_czdkWhw8wQWU8sBJ__pm1M7EtZm9O8Q",
+        "width": 3024
+      }
+    ],
+    "photoCount": 10,
+    "opening_hours": {
+      "open_now": true,
+      "periods": [
+        {
+          "close": {
+            "day": 1,
+            "time": "2300"
+          },
+          "open": {
+            "day": 1,
+            "time": "1100"
+          }
+        },
+        {
+          "close": {
+            "day": 2,
+            "time": "2300"
+          },
+          "open": {
+            "day": 2,
+            "time": "1100"
+          }
+        },
+        {
+          "close": {
+            "day": 3,
+            "time": "2300"
+          },
+          "open": {
+            "day": 3,
+            "time": "1100"
+          }
+        },
+        {
+          "close": {
+            "day": 4,
+            "time": "2300"
+          },
+          "open": {
+            "day": 4,
+            "time": "1100"
+          }
+        },
+        {
+          "close": {
+            "day": 5,
+            "time": "2300"
+          },
+          "open": {
+            "day": 5,
+            "time": "1100"
+          }
+        },
+        {
+          "close": {
+            "day": 6,
+            "time": "2300"
+          },
+          "open": {
+            "day": 6,
+            "time": "1100"
+          }
+        }
+      ],
+      "weekday_text": [
+        "Monday: 11:00 AM – 11:00 PM",
+        "Tuesday: 11:00 AM – 11:00 PM",
+        "Wednesday: 11:00 AM – 11:00 PM",
+        "Thursday: 11:00 AM – 11:00 PM",
+        "Friday: 11:00 AM – 11:00 PM",
+        "Saturday: 11:00 AM – 11:00 PM",
+        "Sunday: Closed"
+      ]
+    },
+    "price_level": 2,
+    "editorial_summary": null,
+    "responseRate": 65,
+    "averageResponseTime": "1 day"
+  },
+  "profileAnalysis": {
+    "completeness": {
+      "score": 75,
+      "missingElements": []
+    },
+    "optimization": {
+      "score": 70,
+      "issues": []
+    },
+    "competitiveness": 65,
+    "recommendations": [],
+    "strengths": [],
+    "weaknesses": []
+  },
+  "keywords": {
+    "trackedKeywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "pizza near me",
+        "position": 9,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://slabpizza.com/",
+        "title": "Slab Pizza - South of Campus, Provo, UT",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery Provo",
+        "position": 4,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://slabpizza.com/",
+        "title": "Slab Pizza - South of Campus, Provo, UT",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best pizza Provo",
+        "position": 12,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 50,
+        "url": "https://slabpizza.com/",
+        "title": "Slab Pizza - South of Campus, Provo, UT",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "Provo pizza",
+        "position": 9,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://slabpizza.com/",
+        "title": "Slab Pizza - South of Campus, Provo, UT",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza places near me",
+        "position": 10,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://slabpizza.com/",
+        "title": "Slab Pizza - South of Campus, Provo, UT",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza Provo Utah",
+        "position": 6,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://slabpizza.com/",
+        "title": "Slab Pizza - South of Campus, Provo, UT",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery near me",
+        "position": 15,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 50,
+        "url": "https://slabpizza.com/",
+        "title": "Slab Pizza - South of Campus, Provo, UT",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza open now",
+        "position": 5,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://slabpizza.com/",
+        "title": "Slab Pizza - South of Campus, Provo, UT",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "domainRankedKeywords": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    }
+  },
+  "localCompetitorData": [],
+  "localPackReport": {
+    "summary": {
+      "visibility_score": 25,
+      "keywords_appeared": 2,
+      "total_keywords": 8,
+      "average_position": 5,
+      "best_position": 5
+    },
+    "keyword_results": [
+      {
+        "keyword": "pizza near me",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Pizza Hut",
+            "address": "Provo, UT ",
+            "website": "",
+            "rating": 3.5,
+            "reviews": 498
+          },
+          {
+            "position": 2,
+            "name": "Domino's Pizza",
+            "address": "657 reviews · $ · Pizza delivery ",
+            "website": "",
+            "rating": 0,
+            "reviews": 0
+          },
+          {
+            "position": 3,
+            "name": "Fat Daddy's Pizzeria",
+            "address": "Provo, UT ",
+            "website": "https://fatdaddyspizzeria.com/",
+            "rating": 4.4,
+            "reviews": 1300
+          }
+        ]
+      },
+      {
+        "keyword": "pizza Provo",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "MOZZ Artisan Pizza",
+            "address": "Provo, UT ",
+            "website": "https://www.mozzartisanpizza.com/",
+            "rating": 4.7,
+            "reviews": 981
+          },
+          {
+            "position": 2,
+            "name": "Two Jack's Pizza",
+            "address": "Provo, UT ",
+            "website": "http://www.twojackspizza.com/",
+            "rating": 4.6,
+            "reviews": 1700
+          },
+          {
+            "position": 3,
+            "name": "Fat Daddy's Pizzeria",
+            "address": "Provo, UT ",
+            "website": "https://fatdaddyspizzeria.com/",
+            "rating": 4.4,
+            "reviews": 1300
+          }
+        ]
+      },
+      {
+        "keyword": "best pizza Provo",
+        "found": true,
+        "position": 5,
+        "confidence": 100,
+        "matched_fields": [
+          "title",
+          "url"
+        ],
+        "local_pack_data": {
+          "name": "SLABpizza",
+          "address": "Provo, UT ",
+          "website": "http://slabpizza.com/",
+          "phone": "(801) 377-3883",
+          "rating": 4.6,
+          "reviews": 1900
+        },
+        "competitors": [
+          {
+            "position": 1,
+            "name": "MOZZ Artisan Pizza",
+            "address": "Provo, UT ",
+            "website": "https://www.mozzartisanpizza.com/",
+            "rating": 4.7,
+            "reviews": 981
+          },
+          {
+            "position": 2,
+            "name": "Two Jack's Pizza",
+            "address": "Provo, UT ",
+            "website": "http://www.twojackspizza.com/",
+            "rating": 4.6,
+            "reviews": 1700
+          },
+          {
+            "position": 3,
+            "name": "Slackwater Riverwoods",
+            "address": "Provo, UT ",
+            "website": "http://slackwaterpizzeria.com/",
+            "rating": 4.8,
+            "reviews": 155
+          }
+        ]
+      },
+      {
+        "keyword": "pizza delivery near me",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Fat Daddy's Pizzeria",
+            "address": "Provo, UT ",
+            "website": "https://fatdaddyspizzeria.com/",
+            "rating": 4.4,
+            "reviews": 1300
+          },
+          {
+            "position": 2,
+            "name": "Two Jack's Pizza",
+            "address": "Provo, UT ",
+            "website": "http://www.twojackspizza.com/",
+            "rating": 4.6,
+            "reviews": 1700
+          },
+          {
+            "position": 3,
+            "name": "MOZZ Artisan Pizza",
+            "address": "Provo, UT ",
+            "website": "https://www.mozzartisanpizza.com/",
+            "rating": 4.7,
+            "reviews": 981
+          }
+        ]
+      },
+      {
+        "keyword": "pizza Provo Utah",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Fat Daddy's Pizzeria",
+            "address": "Provo, UT ",
+            "website": "https://fatdaddyspizzeria.com/",
+            "rating": 4.4,
+            "reviews": 1300
+          },
+          {
+            "position": 2,
+            "name": "MOZZ Artisan Pizza",
+            "address": "Provo, UT ",
+            "website": "https://www.mozzartisanpizza.com/",
+            "rating": 4.7,
+            "reviews": 981
+          },
+          {
+            "position": 3,
+            "name": "Two Jack's Pizza",
+            "address": "Provo, UT ",
+            "website": "http://www.twojackspizza.com/",
+            "rating": 4.6,
+            "reviews": 1700
+          }
+        ]
+      },
+      {
+        "keyword": "top pizza Provo",
+        "found": true,
+        "position": 5,
+        "confidence": 100,
+        "matched_fields": [
+          "title",
+          "url"
+        ],
+        "local_pack_data": {
+          "name": "SLABpizza",
+          "address": "Provo, UT ",
+          "website": "http://slabpizza.com/",
+          "phone": "(801) 377-3883",
+          "rating": 4.6,
+          "reviews": 1900
+        },
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Two Jack's Pizza",
+            "address": "Provo, UT ",
+            "website": "http://www.twojackspizza.com/",
+            "rating": 4.6,
+            "reviews": 1700
+          },
+          {
+            "position": 2,
+            "name": "MOZZ Artisan Pizza",
+            "address": "Provo, UT ",
+            "website": "https://www.mozzartisanpizza.com/",
+            "rating": 4.7,
+            "reviews": 981
+          },
+          {
+            "position": 3,
+            "name": "Fat Daddy's Pizzeria",
+            "address": "Provo, UT ",
+            "website": "https://fatdaddyspizzeria.com/",
+            "rating": 4.4,
+            "reviews": 1300
+          }
+        ]
+      },
+      {
+        "keyword": "pizza restaurant near me",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Fat Daddy's Pizzeria",
+            "address": "Provo, UT ",
+            "website": "https://fatdaddyspizzeria.com/",
+            "rating": 4.4,
+            "reviews": 1300
+          },
+          {
+            "position": 2,
+            "name": "Two Jack's Pizza",
+            "address": "Provo, UT ",
+            "website": "http://www.twojackspizza.com/",
+            "rating": 4.6,
+            "reviews": 1700
+          },
+          {
+            "position": 3,
+            "name": "MOZZ Artisan Pizza",
+            "address": "Provo, UT ",
+            "website": "https://www.mozzartisanpizza.com/",
+            "rating": 4.7,
+            "reviews": 981
+          }
+        ]
+      },
+      {
+        "keyword": "pizza food Provo",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "MOZZ Artisan Pizza",
+            "address": "Provo, UT ",
+            "website": "https://www.mozzartisanpizza.com/",
+            "rating": 4.7,
+            "reviews": 981
+          },
+          {
+            "position": 2,
+            "name": "Fat Daddy's Pizzeria",
+            "address": "Provo, UT ",
+            "website": "https://fatdaddyspizzeria.com/",
+            "rating": 4.4,
+            "reviews": 1300
+          },
+          {
+            "position": 3,
+            "name": "Two Jack's Pizza",
+            "address": "Provo, UT ",
+            "website": "http://www.twojackspizza.com/",
+            "rating": 4.6,
+            "reviews": 1700
+          }
+        ]
+      }
+    ],
+    "recommendations": [
+      "Not appearing for \"pizza near me\", \"pizza Provo\", \"pizza delivery near me\", \"pizza Provo Utah\", \"pizza restaurant near me\", \"pizza food Provo\" - optimize Google My Business profile with these keywords",
+      "Ranking below #1 for 2 keywords - increase customer reviews and engagement to improve rankings",
+      "Low Local Pack visibility (25%) - audit your Google My Business completeness, categories, and local citations"
+    ],
+    "scan_metadata": {
+      "location": "Provo,Utah,United States",
+      "timestamp": "2025-08-13T19:02:08.805Z",
+      "total_scan_time_ms": 28074
+    }
+  },
+  "reviewsAnalysis": {
+    "overallScore": 69,
+    "totalReviews": 0,
+    "averageRating": 4.6,
+    "sentimentBreakdown": {
+      "positive": 100,
+      "neutral": 0,
+      "negative": 0
+    },
+    "reviewSources": [
+      "Google Business Profile (Limited)"
+    ],
+    "keyThemes": [
+      "Service",
+      "Pricing",
+      "Food Quality"
+    ],
+    "recentReviews": [
+      {
+        "author": "Kyle Johnson",
+        "rating": 5,
+        "text": "Slab Pizza's \"The Meikel\" is an absolute game-changer! This Thai-inspired pizza is a flavor explosion, perfectly balancing the savory richness of peanut sauce with the sweet tang of pineapple, the fresh bite of green onion and cilantro, and the smoky depth of roasted red peppers. It's a unique and incredibly delicious combination that you won't find anywhere else. Beyond the phenomenal taste, Slab Pizza consistently delivers on great prices and truly amazing service. If you're looking for an unforgettable pizza experience, \"The Meikel\" is a must-try!",
+        "date": "2025-07-28T17:06:50.000Z",
+        "platform": "Google Places"
+      },
+      {
+        "author": "ami hodges",
+        "rating": 5,
+        "text": "Always full of delicious, creative food that I can't get enough of. The food is gorgeous and wonderful. The pear salad pizza is top notch.",
+        "date": "2025-04-10T06:05:00.000Z",
+        "platform": "Google Places"
+      },
+      {
+        "author": "Megan Larsen",
+        "rating": 5,
+        "text": "My husband and I love slab and we don’t come as often as we would like! My husband loves the Buffalo wing. That is the only one he orders. I have tried a few different ones but one of my favorite ones is the Thai Chicken.",
+        "date": "2025-02-15T05:55:14.000Z",
+        "platform": "Google Places"
+      },
+      {
+        "author": "Bryan Lazo",
+        "rating": 4,
+        "text": "I enjoyed eating at this place and, while I do think their customer service and food deserve one star, this place could be better.\n\nThe food was great! The ingredients tasted fresh, they have all the condiments you need and the dough was very crispy and delicious. Although they didn't have ranch so that's not good.\n\nI just think the building itself is pretty dead. I know the location doesn't help but it's very quiet and unlively here. This place also attracts immodest young adults that don't care about manners and cleaning up after themselves.\n\nThe restaurant itself is great. It's the location and the regular customers I have issues with.",
+        "date": "2024-04-21T22:33:07.000Z",
+        "platform": "Google Places"
+      },
+      {
+        "author": "Tana Rosenberg",
+        "rating": 4,
+        "text": "SLAB continues to impress me each time I visit! The decor, the music, the cool college students hanging out, and the amazing food! It is tasty, satisfying and a great deal. The service is fast, friendly, and the employees are always willing to listen, help and problem solve. The owner is phenomenally positive, kind and works alongside the others to help things run smoothly. Modifications to toppings are always allowed (you want arugula & rosemary dust on top? Just ask!) and a gluten free crust is no problem here. The dining area, kitchen and bathroom are all exceptionally clean. This is even more remarkable given the sheer number of customers served daily. My nephew wrote his college application essay about SLAB pizza, and HE WAS ACCEPTED! THANKS SLAB!! Your pizza 🍕 is second only to your high quality service!",
+        "date": "2023-12-17T04:36:47.000Z",
+        "platform": "Google Places"
+      }
+    ],
+    "examples": {
+      "positive": [
+        {
+          "author": "Kyle Johnson",
+          "rating": 5,
+          "text": "Slab Pizza's \"The Meikel\" is an absolute game-changer! This Thai-inspired pizza is a flavor explosion, perfectly balancing the savory richness of peanut sauce with the sweet tang of pineapple, the fresh bite of green onion and cilantro, and the smoky depth of roasted red peppers. It's a unique and incredibly delicious combination that you won't find anywhere else. Beyond the phenomenal taste, Slab Pizza consistently delivers on great prices and truly amazing service. If you're looking for an unforgettable pizza experience, \"The Meikel\" is a must-try!",
+          "date": "2025-07-28T17:06:50.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Megan Larsen",
+          "rating": 5,
+          "text": "My husband and I love slab and we don’t come as often as we would like! My husband loves the Buffalo wing. That is the only one he orders. I have tried a few different ones but one of my favorite ones is the Thai Chicken.",
+          "date": "2025-02-15T05:55:14.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Bryan Lazo",
+          "rating": 4,
+          "text": "I enjoyed eating at this place and, while I do think their customer service and food deserve one star, this place could be better.\n\nThe food was great! The ingredients tasted fresh, they have all the condiments you need and the dough was very crispy and delicious. Although they didn't have ranch so that's not good.\n\nI just think the building itself is pretty dead. I know the location doesn't help but it's very quiet and unlively here. This place also attracts immodest young adults that don't care about manners and cleaning up after themselves.\n\nThe restaurant itself is great. It's the location and the regular customers I have issues with.",
+          "date": "2024-04-21T22:33:07.000Z",
+          "platform": "Google Places"
+        }
+      ],
+      "neutral": [],
+      "negative": []
+    },
+    "customerMoodAnalysis": {
+      "overallMood": "delighted",
+      "sentimentSummary": "Customers are genuinely thrilled with their experience. With an average 4.6/5 rating across 5 recent reviews, your restaurant consistently exceeds expectations.",
+      "sentimentDistribution": {
+        "ecstatic": 20,
+        "delighted": 80,
+        "satisfied": 0,
+        "neutral": 0,
+        "frustrated": 0,
+        "disappointed": 0,
+        "angry": 0
+      },
+      "keyMoodIndicators": [
+        {
+          "theme": "food quality",
+          "mentions": 8
+        },
+        {
+          "theme": "service excellence",
+          "mentions": 2
+        },
+        {
+          "theme": "cleanliness",
+          "mentions": 2
+        },
+        {
+          "theme": "speed of service",
+          "mentions": 1
+        }
+      ],
+      "emotionalBreakdown": {
+        "joy": 5,
+        "satisfaction": 6,
+        "disappointment": 0,
+        "frustration": 0,
+        "anger": 0
+      },
+      "businessInsights": {
+        "strengthsPerceived": [
+          "\"The Meikel\" is a unique, Thai-inspired pizza that offers a flavor explosion with its perfect balance of peanut sauce, pineapple, green onion, cilantro, and roasted red peppers. - social media marketing can showcase this strength",
+          "Slab Pizza provides fast, friendly service with employees who are always willing to listen, help, and problem solve, creating a positive dining experience. - review management can highlight this positive aspect",
+          "The restaurant offers a variety of creative and delicious pizzas, such as the pear salad pizza, which keeps customers coming back for more. - Boostly marketing services can amplify this"
+        ],
+        "improvementOpportunities": [
+          "Lack of atmosphere/ambiance awareness - social media marketing can improve this area",
+          "Negative reviews/reputation issues - review management can address this concern",
+          "Poor online visibility - SEO services can solve this visibility issue"
+        ]
+      },
+      "detailedMetrics": {
+        "totalReviews": 5,
+        "averageRating": 4.6,
+        "ratingDistribution": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 40,
+          "5": 60
+        },
+        "sentimentTrends": {
+          "trend": "stable",
+          "recentAverageRating": 4.6,
+          "previousAverageRating": 4.6,
+          "recentReviewsCount": 5
+        }
+      }
+    },
+    "trends": {
+      "ratingTrend": "positive",
+      "volumeTrend": "increasing",
+      "responseRate": 75,
+      "averageResponseTime": "2 days"
+    },
+    "recommendations": [
+      {
+        "category": "growth",
+        "priority": "high",
+        "title": "Generate More Reviews",
+        "description": "Encourage satisfied customers to leave reviews",
+        "impact": "Increase online credibility and visibility"
+      }
+    ],
+    "googleReviews": {
+      "reviews": [
+        {
+          "author": "Kyle Johnson",
+          "rating": 5,
+          "text": "Slab Pizza's \"The Meikel\" is an absolute game-changer! This Thai-inspired pizza is a flavor explosion, perfectly balancing the savory richness of peanut sauce with the sweet tang of pineapple, the fresh bite of green onion and cilantro, and the smoky depth of roasted red peppers. It's a unique and incredibly delicious combination that you won't find anywhere else. Beyond the phenomenal taste, Slab Pizza consistently delivers on great prices and truly amazing service. If you're looking for an unforgettable pizza experience, \"The Meikel\" is a must-try!",
+          "date": "2025-07-28T17:06:50.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "ami hodges",
+          "rating": 5,
+          "text": "Always full of delicious, creative food that I can't get enough of. The food is gorgeous and wonderful. The pear salad pizza is top notch.",
+          "date": "2025-04-10T06:05:00.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Megan Larsen",
+          "rating": 5,
+          "text": "My husband and I love slab and we don’t come as often as we would like! My husband loves the Buffalo wing. That is the only one he orders. I have tried a few different ones but one of my favorite ones is the Thai Chicken.",
+          "date": "2025-02-15T05:55:14.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Bryan Lazo",
+          "rating": 4,
+          "text": "I enjoyed eating at this place and, while I do think their customer service and food deserve one star, this place could be better.\n\nThe food was great! The ingredients tasted fresh, they have all the condiments you need and the dough was very crispy and delicious. Although they didn't have ranch so that's not good.\n\nI just think the building itself is pretty dead. I know the location doesn't help but it's very quiet and unlively here. This place also attracts immodest young adults that don't care about manners and cleaning up after themselves.\n\nThe restaurant itself is great. It's the location and the regular customers I have issues with.",
+          "date": "2024-04-21T22:33:07.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Tana Rosenberg",
+          "rating": 4,
+          "text": "SLAB continues to impress me each time I visit! The decor, the music, the cool college students hanging out, and the amazing food! It is tasty, satisfying and a great deal. The service is fast, friendly, and the employees are always willing to listen, help and problem solve. The owner is phenomenally positive, kind and works alongside the others to help things run smoothly. Modifications to toppings are always allowed (you want arugula & rosemary dust on top? Just ask!) and a gluten free crust is no problem here. The dining area, kitchen and bathroom are all exceptionally clean. This is even more remarkable given the sheer number of customers served daily. My nephew wrote his college application essay about SLAB pizza, and HE WAS ACCEPTED! THANKS SLAB!! Your pizza 🍕 is second only to your high quality service!",
+          "date": "2023-12-17T04:36:47.000Z",
+          "platform": "Google Places"
+        }
+      ],
+      "averageRating": 4.6,
+      "totalReviews": 1892
+    }
+  },
+  "competitors": [
+    {
+      "name": "Locals",
+      "domain": "locals.com",
+      "performance": 86,
+      "seo": 77,
+      "accessibility": 73,
+      "bestPractices": 82,
+      "overallScore": 80,
+      "rating": 4.3,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 1364,
+      "keywords": 28,
+      "domainAuthority": 70,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "Similar keywords",
+      "authorityGap": 0,
+      "backlinks": 909
+    },
+    {
+      "name": "Communal",
+      "domain": "communal.com",
+      "performance": 88,
+      "seo": 79,
+      "accessibility": 75,
+      "bestPractices": 84,
+      "overallScore": 81,
+      "rating": 4.4,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 1289,
+      "keywords": 45,
+      "domainAuthority": 83,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "Similar keywords",
+      "authorityGap": 0,
+      "backlinks": 907
+    },
+    {
+      "name": "Black Sheep Cafe",
+      "domain": "blacksheepcafe.com",
+      "performance": 88,
+      "seo": 79,
+      "accessibility": 75,
+      "bestPractices": 84,
+      "overallScore": 81,
+      "rating": 4.4,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 831,
+      "keywords": 22,
+      "domainAuthority": 76,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "Similar keywords",
+      "authorityGap": 0,
+      "backlinks": 952
+    },
+    {
+      "name": "Block Restaurant",
+      "domain": "blockrestaurant.com",
+      "performance": 90,
+      "seo": 81,
+      "accessibility": 77,
+      "bestPractices": 86,
+      "overallScore": 83,
+      "rating": 4.5,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 743,
+      "keywords": 50,
+      "domainAuthority": 87,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "Similar keywords",
+      "authorityGap": 0,
+      "backlinks": 1139
+    },
+    {
+      "name": "The Continental, Provo",
+      "domain": "thecontinentalprovo.com",
+      "performance": 98,
+      "seo": 88,
+      "accessibility": 83,
+      "bestPractices": 93,
+      "overallScore": 91,
+      "rating": 4.9,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 687,
+      "keywords": 58,
+      "domainAuthority": 76,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "+150 keywords",
+      "authorityGap": 5,
+      "backlinks": 908
+    }
+  ],
+  "competitorIntelligence": {
+    "organicCompetitors": [],
+    "keywordGaps": [
+      "best pizza delivery",
+      "pizza restaurant online ordering"
+    ],
+    "trafficEstimates": []
+  },
+  "serpFeatures": [],
+  "serpAnalysis": [],
+  "seoAnalysis": {
+    "title": "No title found",
+    "metaDescription": "No meta description found",
+    "h1Tags": [],
+    "imageCount": 0,
+    "internalLinks": 0,
+    "externalLinks": 0,
+    "schemaMarkup": false
+  },
+  "mobileExperience": {
+    "score": 49,
+    "loadTime": 0,
+    "isResponsive": true,
+    "touchFriendly": true,
+    "textReadable": false,
+    "navigationEasy": false,
+    "issues": [
+      "Mobile performance data unavailable - API configuration required"
+    ],
+    "recommendations": [
+      "Configure Google PageSpeed Insights API for mobile analysis",
+      "Enable mobile performance monitoring",
+      "Test website on mobile devices manually"
+    ]
+  },
+  "performanceMetrics": {
+    "performance": 69,
+    "accessibility": 60,
+    "bestPractices": 65,
+    "seo": 70,
+    "coreWebVitals": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0,
+      "ttfb": 0,
+      "tti": 0,
+      "tbt": 0,
+      "si": 0
+    }
+  },
+  "socialMediaLinks": {
+    "facebook": "https://www.facebook.com/197284690582",
+    "instagram": "https://www.instagram.com/slabpizza",
+    "twitter": null,
+    "youtube": null,
+    "tiktok": null,
+    "linkedin": null
+  },
+  "socialMediaAnalysis": {
+    "activePlatforms": 2,
+    "missingPlatforms": [
+      "twitter",
+      "youtube",
+      "tiktok"
+    ],
+    "recommendations": [
+      "Add twitter presence",
+      "Add youtube presence",
+      "Add tiktok presence"
+    ]
+  },
+  "issues": [
+    {
+      "type": "seo",
+      "severity": "critical",
+      "title": "🎯 Missing in Action: Zero SEO Strategy",
+      "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+      "impact": "high",
+      "effort": "medium",
+      "icon": "🔍",
+      "color": "orange",
+      "urgency": "high",
+      "businessImpact": "Missing out on 70% of customers who search online before visiting"
+    },
+    {
+      "type": "performance",
+      "severity": "critical",
+      "title": "⚡ Speed Crisis: Customers Are Leaving",
+      "description": "Performance score of 69/100 means customers wait too long. 53% abandon slow websites.",
+      "impact": "high",
+      "effort": "medium",
+      "icon": "🐌",
+      "color": "red",
+      "urgency": "immediate",
+      "businessImpact": "Lost orders from customers who abandon slow-loading pages"
+    },
+    {
+      "type": "mobile",
+      "severity": "critical",
+      "title": "📱 Mobile Disaster: Customers Can't Order",
+      "description": "Mobile performance data unavailable - API configuration required",
+      "impact": "high",
+      "effort": "medium",
+      "icon": "📱",
+      "color": "red",
+      "urgency": "immediate",
+      "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+    }
+  ],
+  "recommendations": [
+    {
+      "title": "Improve website performance",
+      "description": "Improve website performance",
+      "impact": "medium",
+      "effort": "medium",
+      "category": "technical"
+    },
+    {
+      "title": "Enhance social media presence",
+      "description": "Enhance social media presence",
+      "impact": "medium",
+      "effort": "medium",
+      "category": "marketing"
+    }
+  ],
+  "metadata": {
+    "scanId": "scan_1755111735774",
+    "scanDate": "2025-08-13T19:02:15.774Z",
+    "scanDuration": 0,
+    "scanType": "professional",
+    "dataCompleteness": 100,
+    "apiVersions": {
+      "scanner": "2.0.0",
+      "dataforseo": "3.0",
+      "googlePlaces": "v1",
+      "apify": "2.0",
+      "openai": "gpt-4o"
+    },
+    "servicesUsed": [
+      "GooglePlacesAPI",
+      "ApifyReviews",
+      "OpenAIAnalysis"
+    ],
+    "errors": [],
+    "warnings": [
+      "Keyword data incomplete"
+    ]
+  }
+}

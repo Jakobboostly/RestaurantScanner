@@ -1,0 +1,1273 @@
+{
+  "event": "scan_completed_full_export",
+  "version": "2.0.0",
+  "timestamp": "2025-08-13T18:40:49.839Z",
+  "scanId": "scan_1755110449839",
+  "scanDuration": 0,
+  "restaurant": {
+    "name": "Box Bite",
+    "domain": "box-bite.square.site",
+    "placeId": "ChIJO6TyVh6BTYcRFKipZ4W9kuw",
+    "location": {
+      "address": "323 NW State St Ste C, American Fork, UT 84003, USA",
+      "city": "American Fork",
+      "state": "UT",
+      "country": "United States",
+      "latitude": null,
+      "longitude": null
+    },
+    "categories": [],
+    "priceLevel": null,
+    "cuisine": "American",
+    "restaurantType": "FSR"
+  },
+  "scores": {
+    "overall": 75,
+    "seo": 73,
+    "performance": 78,
+    "mobile": 58,
+    "userExperience": 68,
+    "accessibility": 0,
+    "bestPractices": 0,
+    "local": 72,
+    "social": 0,
+    "reviews": 72,
+    "website": 78,
+    "domainAuthority": 76
+  },
+  "businessProfile": {
+    "name": "Box Bite",
+    "address": "323 NW State St Ste C, American Fork, UT 84003, USA",
+    "rating": 4.8,
+    "reviewCount": 604,
+    "phoneNumber": "(801) 642-2460",
+    "website": "https://box-bite.square.site/?location=11ec9b68433642b097e4ac1f6bbba828",
+    "formatted_address": "323 NW State St Ste C, American Fork, UT 84003, USA",
+    "address_components": [
+      {
+        "long_name": "Ste C",
+        "short_name": "Ste C",
+        "types": [
+          "subpremise"
+        ]
+      },
+      {
+        "long_name": "323",
+        "short_name": "323",
+        "types": [
+          "street_number"
+        ]
+      },
+      {
+        "long_name": "West State Street",
+        "short_name": "NW State St",
+        "types": [
+          "route"
+        ]
+      },
+      {
+        "long_name": "American Fork",
+        "short_name": "American Fork",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Utah County",
+        "short_name": "Utah County",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Utah",
+        "short_name": "UT",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United States",
+        "short_name": "US",
+        "types": [
+          "country",
+          "political"
+        ]
+      },
+      {
+        "long_name": "84003",
+        "short_name": "84003",
+        "types": [
+          "postal_code"
+        ]
+      }
+    ],
+    "state": "Utah",
+    "city": "American Fork",
+    "place_id": "ChIJO6TyVh6BTYcRFKipZ4W9kuw",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "food",
+      "point_of_interest",
+      "restaurant"
+    ],
+    "reviews": [
+      {
+        "author_name": "Peter",
+        "author_url": "https://www.google.com/maps/contrib/111685049959520245724/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXy5xKdhmPKYXBHTV4mjVN6wXJdSjXFy85giy9V-URnbRm1MV-Y=s128-c0x00000000-cc-rp-mo-ba4",
+        "rating": 5,
+        "relative_time_description": "3 months ago",
+        "text": "We tried Box Bite for the first time and loved it. The owner is so friendly and explained everything before we ordered. Little mini Brazilian pizza bites (about 4” round mini pizzas), both savory and sweet. The pizzas average about $2.75 each. It does take a bit of time to get your order because they make everything fresh, but definitely worth the wait. There’s not a lot of seating here, so plan on taking them home! This was the perfect place for a really good snack. It hit the spot! Go try it- we’ll definitely be back to try other flavors!",
+        "time": 1745634872,
+        "translated": false
+      },
+      {
+        "author_name": "Mikaela Warburton",
+        "author_url": "https://www.google.com/maps/contrib/113452364978300534603/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW0bsJZ88oz8DyMi6O1tQ2oAt9hjJtdykBbRc-aJ7Lv84_0mig=s128-c0x00000000-cc-rp-mo-ba2",
+        "rating": 5,
+        "relative_time_description": "2 weeks ago",
+        "text": "My mind is blown!! This food was absolutely incredible!! We started with the hot Hawaiian, the gem, dubite, and Romeo and Juliet. And WOW. They were so good we ordered 3 more! 100% recommend. Come. Enjoy. Let your taste buds explode in complete satisfaction.",
+        "time": 1753406487,
+        "translated": false
+      },
+      {
+        "author_name": "Catherine Manz",
+        "author_url": "https://www.google.com/maps/contrib/100172937008765133474/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWFwA1tgzl3AYthu2_d32pCJuvmz1pRLjfBC_UKPp0pcwCSEYI=s128-c0x00000000-cc-rp-mo-ba3",
+        "rating": 5,
+        "relative_time_description": "2 months ago",
+        "text": "Absolutely delicious! We stumbled upon it on our way to target, and are so happy we did. Amazing customer service, so many delicious options, and reasonably priced. The Romeo and Juliet was excellent! Can’t wait to visit Utah again and come back!",
+        "time": 1748110922,
+        "translated": false
+      },
+      {
+        "author_name": "Lida",
+        "author_url": "https://www.google.com/maps/contrib/111429529183129568205/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI9u7DE0SvcwHGpRzaVp3aWZw7L_VPkgMI-36cH-98AYN_J2Q=s128-c0x00000000-cc-rp-mo-ba3",
+        "rating": 5,
+        "relative_time_description": "a month ago",
+        "text": "Our first time at Box Bite and we loved it! We loved being able to try a variety and see which ones were our favorites (savory and sweet)!\n\nFavorites: Ultra Calabrese, Blanco, BBC, classic pepperoni.  Both sweet ones were delicious but the Mad Berry was so surprisingly refreshing and just incredible! The dough was perfect.\n\nThe food was great & the service was just as awesome. The gentlemen at the front was so friendly, kind and explained each one. The food was definitely made with passion. Highly recommend! 😊",
+        "time": 1749949223,
+        "translated": false
+      },
+      {
+        "author_name": "Sara B.",
+        "author_url": "https://www.google.com/maps/contrib/111984154276726376908/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUrZfom-Vn8znvKR_Fmu2kzhAacQxeaPz9zMq_Q_w1SuD2ap3k=s128-c0x00000000-cc-rp-mo-ba4",
+        "rating": 5,
+        "relative_time_description": "4 months ago",
+        "text": "Cute little shop! The man running the counter was very charming and kind. We ordered off of the sweet menu, getting the Nutella Strawberry and Mad Berry. It took about 5 minutes to receive and they present you with your order to ensure everything looks right. The staff were complimentary and kind.\n\nThe two mini desserts were great tasting and simply made. I think it’s a fair price and a nice splurge. The Mad Berry was my preferred because of the condensed milk. 5 stars due to the uniqueness of the theme and experience, with fair pricing and real ingredients. I’ll come back to try the savory dishes.",
+        "time": 1742704943,
+        "translated": false
+      }
+    ],
+    "photos": [
+      {
+        "height": 4800,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/116814532638745253599\">Jantzen Glover</a>"
+        ],
+        "photo_reference": "ATKogpfSFuv_y0GduNRhwTpgAsxWrFJ5earpyBjEmwZiJoMbGfmhiqeQekDbA8LM4e7AIJNFDiU6N6GipoZE6rqcjQ1kgiG7U2YnTcnTL-1jsbUw_FGc9wYXexYh5yIthIOfQFa8oomTug7A061AaCauRPld7DSqal094dWGeZYFNud2LCBG-Gns9esVEYYPDT3lSTojN527192MM_KD75hRjgh8SLkUjUnXK_aljav3U06EXFb1MKfsmySL1eLDxzVxXxvVuojJdlnMd0Vm47dAo6exmeTy-fAMuv1-UL1tqz7pOZcBW8lfMl6pAQkBoS4fMVATmz48Hv8MSZrIluT1s8sMQKHmDZBfepPy_W8Ur-_x-11ALCkUOhWwU0Y0upqTmw21L1oA6qdAUeJP9DZwuiOIbGKJgpVAgDRzAom7-4DtB0s",
+        "width": 3600
+      },
+      {
+        "height": 768,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110590237034881769505\">Box Bite</a>"
+        ],
+        "photo_reference": "ATKogpfDFqI_rRB-PtE6YWgZhdlx6NWGUWW1hj3lbVRTg8IgPWEAKnubCTOKU_R0BO2lrE78SLvPWUiTvLFTREHOVTTCj40bekFudVYaJqI7Qua8vGfupD1dbrTrW1cKpgi6Q_IxKAeJyEeqb3S3lg7VDoDWq1q6B3Q_yi5MGaCDPiGXmtDF--kVO9IKdswY28N5ifu8Sz_jFAM-VBSH4qxG8prcy9K17uLERLw44Z_MIZvnCiZCDJPVhGpAUEkqQAAG71ldlSVW_uIfcSxjtg2nVMxe8g9yFo78MtskLDhSNxWwdA",
+        "width": 1366
+      },
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/109048197071803181439\">Hoku Quereto</a>"
+        ],
+        "photo_reference": "ATKogpfRK0q_cZ-J9NKmhHh-EyQj5kXN1eoWqyYbImXMV4U2XMXJ9zhB8WUx_G4XvDckSG9Qdi84ESvPNXzzMmv4gibGMQt7gVogb6ZCKzkD9Voa6wIs0lmQ_HoHZhNqk_PXWXlk8zDLimeSeeSdyyyt5ocmzHnAVmdm5XZCl73ARtkALsb4AExXA3nxEuXswACP5CtSdPXDD9yUF5Io_MXEw63VUkV1gCgruOWQJWmbuPeEOxQo2EpfsE-y_0DP46QM51fa8gIGW-w_T5mjT8dJHlcgZdbp93xd9XGF7GlFwz1SHBXTSysiWskYgfB1GBjzEM3iGYcYCods3AfAu9El3ijLp33QdLf568O5MOOljGxFl-Tx_CtDCQguDww5nOuRGp8-IAdRK6aFRMV1aiY1SFy82Fg77K-dYbjQ7QfaYjKliCOhquXAH3EhrGy8PMPw",
+        "width": 3024
+      },
+      {
+        "height": 3000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/117679447457363377803\">Destiny Mathis</a>"
+        ],
+        "photo_reference": "ATKogpebR-fCeAR3FccKbw5cCHlccT0o9FSsQ0I5zwGom0STlQO7D0mbv-muPr1gbvNEOjOgCgKgFV0i5BBHqMmmCeLZBsAOgOKT-AdTBi5kM78FjbGLIHULXAkXZX6xYoRKr6_RwGlFb4bS2_rbLks7mznb0_GKVLXaKzjJaskA-0nvKuAiPfs0_O7jbkGvhXxhLQgbqGK1Qz-NmGzyK9EU0j78_AI0iT04mo2kbxPetNg6gOMpnGk3G8dhzgYB69p_hYoGuRPUzj1EGipAyL6_29oB_qUaL7jcv8NGgXFZ2FnVm2lhGUZ1SYQRHB5OC7R909ItJQIzYEEtdYwliSG_JbpDGgLi-Ep3q3HYHaZzj2msY8uABjJLPlPsxsH85xyp9wnyBhMlUccPKRZ28Th6WGw3pQq0aB6FBa2SuKES4C7jDXNH",
+        "width": 4000
+      },
+      {
+        "height": 4800,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/118396627023064656555\">Chris</a>"
+        ],
+        "photo_reference": "ATKogpcxtKz_XySdCsYqW_v6rp7GuzTVZK8aAtCgEsrQ0djrTYdxP7HTDsRQMOZEE8NO5ES0ombnzKHUwINVm6ettxbHzvA-XMdkDct0oXDV2QI8tRKfQHdRQMMNs2ItK2hugTxLeYwf8KO_8Bcg2AFxsBu--zwXWyQ2f07GDDBUsB3AqUW_0f2K5gmWd38Pidpm-IvBrttv3IBppAVDYQv4FWbAeA2lygGK-_l34gxK1fNecnLI7KYiRPMMvgLWHQu6GgaOwED9umgtcVu4GupzUyRvvvMpcReTSpwOpnqigAjRA2-WMPvRizxabeyuld781xOaPJcbi2-4TOgScwsXmKFDpaDXf75h5VD3o-yXiQ3xVJ5bDhMLL3rSkHYBHaJiLnluy9KBC2xqEN3gyFgShZJm1aZtSFdz2CMKAm6--vUUpns",
+        "width": 3600
+      },
+      {
+        "height": 300,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110590237034881769505\">Box Bite</a>"
+        ],
+        "photo_reference": "ATKogpeLXbg0JInyjv7k8mBe-jLOtVWjYGE6HH6mqpk4gpNsUTkiW3A7agR2RksAAfoC6L2GyoyyzJqr9N8VLficgvqZBJ8AsLHrPZkyBMKSV4dcOpPMYrPgIJUt9swo1CTG0OPjIF5dPmKVB9lIIPLceIsRBaL_QvRgucjI6HSWAnS2lw1a2twn_XlDlKuiXDgUgOAb68McRz18HLOg90gizli63qN1itj_eCZweNlfMB47NK5kkHdQ2FP_2eXQKMw7OKcOMoD1Bw-8v2A1n1bwTYutU_X7RGB0y9LQLqCtx9XyNw",
+        "width": 600
+      },
+      {
+        "height": 300,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110590237034881769505\">Box Bite</a>"
+        ],
+        "photo_reference": "ATKogpcBmCjjJFCNWilyE23yIga7U8-qI83RSUD_usMxRWex7soh-DZXXEaddCEYjnxspEGj1K5K0R-maOOu7a2EvhC2CrxxKgay0-tL9asEBKYHrs8kP9_lL0oxYwXQM9jM2-UcoRI7dsRkh51h2XFrBZUPRuLrHf-SuyzeeETLrD0VCdUKgzNWttK7nV15mxN8zWqiqU4HCes2ijtNNdRyKJ4A_2ERlD3LYY3nznw9-V4Fo0QcEZO-IktMVlFiwxzzKZjYMOhK4b4RPR_8vIL7NKpBfwQmQ8msBnvqPv8rCBoJfg",
+        "width": 600
+      },
+      {
+        "height": 300,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110590237034881769505\">Box Bite</a>"
+        ],
+        "photo_reference": "ATKogpcuO_6D6OHceudFAa8HnrROKed1aj2mW8NJCSLHk7yQBSQL_4Rku76NglDWHln60QiB5YN0tC4C_2Iq6lvuxoHXNlfBJOYbUODqsFImKPLQDtyWNwEfA0Xj0w9DQ8FKnxescRUIFEUgSyJR3H6MSquSLas4t9A0lyE_TZ-Uxtu1Cd42pIF5bjpvX8CdFUMMhwoJesqjqrUAQxKoL4in9M7HYe98VbQFG7naI_eR1uceZQqnbX98QAV43BJ-F6GTvemkYn3v5Uhz-56RdprxiLGfZQQwMNLUznTUiTxpmIWIug",
+        "width": 600
+      },
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/101272086581045340197\">Judd Flamm</a>"
+        ],
+        "photo_reference": "ATKogpdxvAru3U9tYAGgAhk_YPq8dCg8A5k4lQ1xB9g_NRxq4LblVhPq4BRn4yOl1Wm0ffjVHMJlmJ7oyCR9BdTuatiAFggEgVnerLVkbd_cg8QZmR_mNMF6p5Llwi9BMSn53Zk6Y-GvbDScjawj3RlBisAbUNyCX_hmt0CBeghjPrnaKds0wj8GnIijCUAZcYrdUdmLeMVdahQ-Un7FkyNIkz2pRC1b_yqLIgLX6fOm-YgoZdHqZDDkIqxGsgkYt0UawWKEkKaE-obFadTN1A3MvGDiD-tU8UcRKheSf-gNGEzNYe4DUuut-W3VPcMb54ZZdJsHubWZSxhEBNNqOrQ12rAqLXuJzm7u6W_95j62Ro23eBndPqhhXqszm-pEFCRFtEXHvOsYUZ9ec60eS-jqxbbGDcnA2aRqQZa5a_iUfqoPZQ",
+        "width": 4032
+      },
+      {
+        "height": 3599,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/108179333456058850174\">Chris Ballam</a>"
+        ],
+        "photo_reference": "ATKogpdtpq2-yFM-O0OFNpr30LdIi00irIqqQ_UDkGQStF53FcSDlNJjE5ro1W1t3se_rV0VC0kKtoevYC4UXNRGu3QrE4m9vdJFbhJQ8HlUemOHR7_pKaJmphRyFNE2feK-tDZHi4jdpbejWO53RDzSJC42kts6biTcrF1_MnOH2SYc_27TunHt0zTBWzuxqKdBOpMzuAoTEkwQ5uMWKqKAfK_JUvDclrUKSnX4Wu8Wk0SCzQACW88-kDndBXT6hEcttc5BtR4dpE5YxrV8D3VwNjoAYhwcW2NhJCrKeAoOaVByZJl0bCHW2aGs5n0VsuWFNgLRt-lZalf-bxDdBFQe2Sd310T44EOsOsHIn-BS0uNFxLSoTHzzwx8dVF2OurqZXBl9EJILgUESpxa6Jtyl__WGl-2IgSfu8XI8X7iaGDh940Ju",
+        "width": 4800
+      }
+    ],
+    "photoCount": 10,
+    "opening_hours": {
+      "open_now": true,
+      "periods": [
+        {
+          "close": {
+            "day": 1,
+            "time": "2100"
+          },
+          "open": {
+            "day": 1,
+            "time": "1100"
+          }
+        },
+        {
+          "close": {
+            "day": 2,
+            "time": "2100"
+          },
+          "open": {
+            "day": 2,
+            "time": "1100"
+          }
+        },
+        {
+          "close": {
+            "day": 3,
+            "time": "2100"
+          },
+          "open": {
+            "day": 3,
+            "time": "1100"
+          }
+        },
+        {
+          "close": {
+            "day": 4,
+            "time": "2100"
+          },
+          "open": {
+            "day": 4,
+            "time": "1100"
+          }
+        },
+        {
+          "close": {
+            "day": 5,
+            "time": "2100"
+          },
+          "open": {
+            "day": 5,
+            "time": "1100"
+          }
+        },
+        {
+          "close": {
+            "day": 6,
+            "time": "2100"
+          },
+          "open": {
+            "day": 6,
+            "time": "1100"
+          }
+        }
+      ],
+      "weekday_text": [
+        "Monday: 11:00 AM – 9:00 PM",
+        "Tuesday: 11:00 AM – 9:00 PM",
+        "Wednesday: 11:00 AM – 9:00 PM",
+        "Thursday: 11:00 AM – 9:00 PM",
+        "Friday: 11:00 AM – 9:00 PM",
+        "Saturday: 11:00 AM – 9:00 PM",
+        "Sunday: Closed"
+      ]
+    },
+    "price_level": 1,
+    "editorial_summary": null,
+    "responseRate": 65,
+    "averageResponseTime": "1 day"
+  },
+  "profileAnalysis": {
+    "completeness": {
+      "score": 75,
+      "missingElements": []
+    },
+    "optimization": {
+      "score": 70,
+      "issues": []
+    },
+    "competitiveness": 65,
+    "recommendations": [],
+    "strengths": [],
+    "weaknesses": []
+  },
+  "keywords": {
+    "trackedKeywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "fast-casual near me",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "fast-casual delivery American Fork",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best fast-casual American Fork",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "American Fork fast-casual",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "fast-casual places near me",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "fast-casual American Fork Utah",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "fast-casual delivery near me",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "fast-casual open now",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "domainRankedKeywords": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    }
+  },
+  "localCompetitorData": [],
+  "localPackReport": {
+    "summary": {
+      "visibility_score": 13,
+      "keywords_appeared": 1,
+      "total_keywords": 8,
+      "average_position": 5,
+      "best_position": 5
+    },
+    "keyword_results": [
+      {
+        "keyword": "fast-casual near me",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Burgers & Barley",
+            "address": "American Fork, UT ",
+            "website": "http://www.eatatbnb.com/",
+            "rating": 4.8,
+            "reviews": 1100
+          },
+          {
+            "position": 2,
+            "name": "Super Chix - American Fork, UT",
+            "address": "American Fork, UT ",
+            "website": "http://superchix.com/",
+            "rating": 4.5,
+            "reviews": 2300
+          },
+          {
+            "position": 3,
+            "name": "Seven Brothers Burgers - Pleasant Grove",
+            "address": "Pleasant Grove, UT ",
+            "website": "https://www.sevenbrothersburgers.com/",
+            "rating": 4.7,
+            "reviews": 460
+          }
+        ]
+      },
+      {
+        "keyword": "fast-casual American Fork",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Burgers & Barley",
+            "address": "American Fork, UT ",
+            "website": "http://www.eatatbnb.com/",
+            "rating": 4.8,
+            "reviews": 1100
+          },
+          {
+            "position": 2,
+            "name": "JCW's The Burger Boys - American Fork",
+            "address": "American Fork, UT ",
+            "website": "http://www.jcws.com/",
+            "rating": 4.1,
+            "reviews": 3800
+          },
+          {
+            "position": 3,
+            "name": "Root's Place Burgers & More",
+            "address": "American Fork, UT ",
+            "website": "https://rootsburgersandmore.com/",
+            "rating": 4.7,
+            "reviews": 655
+          }
+        ]
+      },
+      {
+        "keyword": "best fast-casual American Fork",
+        "found": true,
+        "position": 5,
+        "confidence": 100,
+        "matched_fields": [
+          "title",
+          "url"
+        ],
+        "local_pack_data": {
+          "name": "Box Bite",
+          "address": "American Fork, UT ",
+          "website": "https://box-bite.square.site/?location=11ec9b68433642b097e4ac1f6bbba828",
+          "phone": "(801) 642-2460",
+          "rating": 4.8,
+          "reviews": 604
+        },
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Burgers & Barley",
+            "address": "American Fork, UT ",
+            "website": "http://www.eatatbnb.com/",
+            "rating": 4.8,
+            "reviews": 1100
+          },
+          {
+            "position": 2,
+            "name": "The Dessert Collective",
+            "address": "American Fork, UT ",
+            "website": "http://www.the-dessert-collective.com/",
+            "rating": 4.7,
+            "reviews": 207
+          },
+          {
+            "position": 3,
+            "name": "Root's Place Burgers & More",
+            "address": "American Fork, UT ",
+            "website": "https://rootsburgersandmore.com/",
+            "rating": 4.7,
+            "reviews": 655
+          }
+        ]
+      },
+      {
+        "keyword": "fast-casual delivery near me",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Burgers & Barley",
+            "address": "American Fork, UT ",
+            "website": "http://www.eatatbnb.com/",
+            "rating": 4.8,
+            "reviews": 1100
+          },
+          {
+            "position": 2,
+            "name": "Super Chix - American Fork, UT",
+            "address": "American Fork, UT ",
+            "website": "http://superchix.com/",
+            "rating": 4.5,
+            "reviews": 2300
+          },
+          {
+            "position": 3,
+            "name": "Seven Brothers Burgers - Pleasant Grove",
+            "address": "Pleasant Grove, UT ",
+            "website": "https://www.sevenbrothersburgers.com/",
+            "rating": 4.7,
+            "reviews": 460
+          }
+        ]
+      },
+      {
+        "keyword": "fast-casual American Fork Utah",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Burgers & Barley",
+            "address": "American Fork, UT ",
+            "website": "http://www.eatatbnb.com/",
+            "rating": 4.8,
+            "reviews": 1100
+          },
+          {
+            "position": 2,
+            "name": "JCW's The Burger Boys - American Fork",
+            "address": "American Fork, UT ",
+            "website": "http://www.jcws.com/",
+            "rating": 4.1,
+            "reviews": 3800
+          },
+          {
+            "position": 3,
+            "name": "Habit Burger & Grill",
+            "address": "American Fork, UT ",
+            "website": "https://order.habitburger.com/store/116/category",
+            "rating": 4.4,
+            "reviews": 1500
+          }
+        ]
+      },
+      {
+        "keyword": "top fast-casual American Fork",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Burgers & Barley",
+            "address": "American Fork, UT ",
+            "website": "http://www.eatatbnb.com/",
+            "rating": 4.8,
+            "reviews": 1100
+          },
+          {
+            "position": 2,
+            "name": "Root's Place Burgers & More",
+            "address": "American Fork, UT ",
+            "website": "https://rootsburgersandmore.com/",
+            "rating": 4.7,
+            "reviews": 655
+          },
+          {
+            "position": 3,
+            "name": "Super Chix - American Fork, UT",
+            "address": "American Fork, UT ",
+            "website": "http://superchix.com/",
+            "rating": 4.5,
+            "reviews": 2300
+          }
+        ]
+      },
+      {
+        "keyword": "fast-casual restaurant near me",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Burgers & Barley",
+            "address": "American Fork, UT ",
+            "website": "http://www.eatatbnb.com/",
+            "rating": 4.8,
+            "reviews": 1100
+          },
+          {
+            "position": 2,
+            "name": "Super Chix - American Fork, UT",
+            "address": "American Fork, UT ",
+            "website": "http://superchix.com/",
+            "rating": 4.5,
+            "reviews": 2300
+          },
+          {
+            "position": 3,
+            "name": "Habit Burger & Grill",
+            "address": "American Fork, UT ",
+            "website": "https://order.habitburger.com/store/116/category",
+            "rating": 4.4,
+            "reviews": 1500
+          }
+        ]
+      },
+      {
+        "keyword": "fast-casual food American Fork",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Burgers & Barley",
+            "address": "American Fork, UT ",
+            "website": "http://www.eatatbnb.com/",
+            "rating": 4.8,
+            "reviews": 1100
+          },
+          {
+            "position": 2,
+            "name": "JCW's The Burger Boys - American Fork",
+            "address": "American Fork, UT ",
+            "website": "http://www.jcws.com/",
+            "rating": 4.1,
+            "reviews": 3800
+          },
+          {
+            "position": 3,
+            "name": "Super Chix - American Fork, UT",
+            "address": "American Fork, UT ",
+            "website": "http://superchix.com/",
+            "rating": 4.5,
+            "reviews": 2300
+          }
+        ]
+      }
+    ],
+    "recommendations": [
+      "Not appearing for \"fast-casual near me\", \"fast-casual American Fork\", \"fast-casual delivery near me\", \"fast-casual American Fork Utah\", \"top fast-casual American Fork\", \"fast-casual restaurant near me\", \"fast-casual food American Fork\" - optimize Google My Business profile with these keywords",
+      "Ranking below #1 for 1 keywords - increase customer reviews and engagement to improve rankings",
+      "Low Local Pack visibility (13%) - audit your Google My Business completeness, categories, and local citations"
+    ],
+    "scan_metadata": {
+      "location": "American Fork,Utah,United States",
+      "timestamp": "2025-08-13T18:40:39.788Z",
+      "total_scan_time_ms": 19676
+    }
+  },
+  "reviewsAnalysis": {
+    "overallScore": 72,
+    "totalReviews": 0,
+    "averageRating": 4.8,
+    "sentimentBreakdown": {
+      "positive": 100,
+      "neutral": 0,
+      "negative": 0
+    },
+    "reviewSources": [
+      "Google Business Profile (Limited)"
+    ],
+    "keyThemes": [
+      "Food Quality",
+      "Service",
+      "Pricing"
+    ],
+    "recentReviews": [
+      {
+        "author": "Mikaela Warburton",
+        "rating": 5,
+        "text": "My mind is blown!! This food was absolutely incredible!! We started with the hot Hawaiian, the gem, dubite, and Romeo and Juliet. And WOW. They were so good we ordered 3 more! 100% recommend. Come. Enjoy. Let your taste buds explode in complete satisfaction.",
+        "date": "2025-07-25T01:21:27.000Z",
+        "platform": "Google Places"
+      },
+      {
+        "author": "Lida",
+        "rating": 5,
+        "text": "Our first time at Box Bite and we loved it! We loved being able to try a variety and see which ones were our favorites (savory and sweet)!\n\nFavorites: Ultra Calabrese, Blanco, BBC, classic pepperoni.  Both sweet ones were delicious but the Mad Berry was so surprisingly refreshing and just incredible! The dough was perfect.\n\nThe food was great & the service was just as awesome. The gentlemen at the front was so friendly, kind and explained each one. The food was definitely made with passion. Highly recommend! 😊",
+        "date": "2025-06-15T01:00:23.000Z",
+        "platform": "Google Places"
+      },
+      {
+        "author": "Catherine Manz",
+        "rating": 5,
+        "text": "Absolutely delicious! We stumbled upon it on our way to target, and are so happy we did. Amazing customer service, so many delicious options, and reasonably priced. The Romeo and Juliet was excellent! Can’t wait to visit Utah again and come back!",
+        "date": "2025-05-24T18:22:02.000Z",
+        "platform": "Google Places"
+      },
+      {
+        "author": "Peter",
+        "rating": 5,
+        "text": "We tried Box Bite for the first time and loved it. The owner is so friendly and explained everything before we ordered. Little mini Brazilian pizza bites (about 4” round mini pizzas), both savory and sweet. The pizzas average about $2.75 each. It does take a bit of time to get your order because they make everything fresh, but definitely worth the wait. There’s not a lot of seating here, so plan on taking them home! This was the perfect place for a really good snack. It hit the spot! Go try it- we’ll definitely be back to try other flavors!",
+        "date": "2025-04-26T02:34:32.000Z",
+        "platform": "Google Places"
+      },
+      {
+        "author": "Sara B.",
+        "rating": 5,
+        "text": "Cute little shop! The man running the counter was very charming and kind. We ordered off of the sweet menu, getting the Nutella Strawberry and Mad Berry. It took about 5 minutes to receive and they present you with your order to ensure everything looks right. The staff were complimentary and kind.\n\nThe two mini desserts were great tasting and simply made. I think it’s a fair price and a nice splurge. The Mad Berry was my preferred because of the condensed milk. 5 stars due to the uniqueness of the theme and experience, with fair pricing and real ingredients. I’ll come back to try the savory dishes.",
+        "date": "2025-03-23T04:42:23.000Z",
+        "platform": "Google Places"
+      }
+    ],
+    "examples": {
+      "positive": [
+        {
+          "author": "Peter",
+          "rating": 5,
+          "text": "We tried Box Bite for the first time and loved it. The owner is so friendly and explained everything before we ordered. Little mini Brazilian pizza bites (about 4” round mini pizzas), both savory and sweet. The pizzas average about $2.75 each. It does take a bit of time to get your order because they make everything fresh, but definitely worth the wait. There’s not a lot of seating here, so plan on taking them home! This was the perfect place for a really good snack. It hit the spot! Go try it- we’ll definitely be back to try other flavors!",
+          "date": "2025-04-26T02:34:32.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Mikaela Warburton",
+          "rating": 5,
+          "text": "My mind is blown!! This food was absolutely incredible!! We started with the hot Hawaiian, the gem, dubite, and Romeo and Juliet. And WOW. They were so good we ordered 3 more! 100% recommend. Come. Enjoy. Let your taste buds explode in complete satisfaction.",
+          "date": "2025-07-25T01:21:27.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Catherine Manz",
+          "rating": 5,
+          "text": "Absolutely delicious! We stumbled upon it on our way to target, and are so happy we did. Amazing customer service, so many delicious options, and reasonably priced. The Romeo and Juliet was excellent! Can’t wait to visit Utah again and come back!",
+          "date": "2025-05-24T18:22:02.000Z",
+          "platform": "Google Places"
+        }
+      ],
+      "neutral": [],
+      "negative": []
+    },
+    "customerMoodAnalysis": {
+      "overallMood": "delighted",
+      "sentimentSummary": "Customers are genuinely thrilled with their experience. With an average 5.0/5 rating across 5 recent reviews, your restaurant consistently exceeds expectations.",
+      "sentimentDistribution": {
+        "ecstatic": 80,
+        "delighted": 20,
+        "satisfied": 0,
+        "neutral": 0,
+        "frustrated": 0,
+        "disappointed": 0,
+        "angry": 0
+      },
+      "keyMoodIndicators": [
+        {
+          "theme": "food quality",
+          "mentions": 6
+        },
+        {
+          "theme": "service excellence",
+          "mentions": 5
+        },
+        {
+          "theme": "slow service",
+          "mentions": 2
+        },
+        {
+          "theme": "value for money",
+          "mentions": 1
+        }
+      ],
+      "emotionalBreakdown": {
+        "joy": 5,
+        "satisfaction": 5,
+        "disappointment": 0,
+        "frustration": 0,
+        "anger": 0
+      },
+      "businessInsights": {
+        "strengthsPerceived": [
+          "Customers love the variety of both savory and sweet mini Brazilian pizzas, allowing them to explore different flavors and find their favorites. - social media marketing can showcase this strength",
+          "The friendly and informative service, with staff explaining the menu and ensuring orders are correct, enhances the dining experience. - review management can highlight this positive aspect",
+          "The unique and fresh-made concept of mini Brazilian pizzas, which are worth the wait, is a standout feature. - SEO services can leverage this for better visibility"
+        ],
+        "improvementOpportunities": [
+          "Maintain current high standards",
+          "Continue engaging with customer feedback",
+          "Monitor reviews for improvement opportunities"
+        ]
+      },
+      "detailedMetrics": {
+        "totalReviews": 5,
+        "averageRating": 5,
+        "ratingDistribution": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 100
+        },
+        "sentimentTrends": {
+          "trend": "stable",
+          "recentAverageRating": 5,
+          "previousAverageRating": 5,
+          "recentReviewsCount": 5
+        }
+      }
+    },
+    "trends": {
+      "ratingTrend": "positive",
+      "volumeTrend": "increasing",
+      "responseRate": 75,
+      "averageResponseTime": "2 days"
+    },
+    "recommendations": [
+      {
+        "category": "growth",
+        "priority": "high",
+        "title": "Generate More Reviews",
+        "description": "Encourage satisfied customers to leave reviews",
+        "impact": "Increase online credibility and visibility"
+      }
+    ],
+    "googleReviews": {
+      "reviews": [
+        {
+          "author": "Mikaela Warburton",
+          "rating": 5,
+          "text": "My mind is blown!! This food was absolutely incredible!! We started with the hot Hawaiian, the gem, dubite, and Romeo and Juliet. And WOW. They were so good we ordered 3 more! 100% recommend. Come. Enjoy. Let your taste buds explode in complete satisfaction.",
+          "date": "2025-07-25T01:21:27.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Lida",
+          "rating": 5,
+          "text": "Our first time at Box Bite and we loved it! We loved being able to try a variety and see which ones were our favorites (savory and sweet)!\n\nFavorites: Ultra Calabrese, Blanco, BBC, classic pepperoni.  Both sweet ones were delicious but the Mad Berry was so surprisingly refreshing and just incredible! The dough was perfect.\n\nThe food was great & the service was just as awesome. The gentlemen at the front was so friendly, kind and explained each one. The food was definitely made with passion. Highly recommend! 😊",
+          "date": "2025-06-15T01:00:23.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Catherine Manz",
+          "rating": 5,
+          "text": "Absolutely delicious! We stumbled upon it on our way to target, and are so happy we did. Amazing customer service, so many delicious options, and reasonably priced. The Romeo and Juliet was excellent! Can’t wait to visit Utah again and come back!",
+          "date": "2025-05-24T18:22:02.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Peter",
+          "rating": 5,
+          "text": "We tried Box Bite for the first time and loved it. The owner is so friendly and explained everything before we ordered. Little mini Brazilian pizza bites (about 4” round mini pizzas), both savory and sweet. The pizzas average about $2.75 each. It does take a bit of time to get your order because they make everything fresh, but definitely worth the wait. There’s not a lot of seating here, so plan on taking them home! This was the perfect place for a really good snack. It hit the spot! Go try it- we’ll definitely be back to try other flavors!",
+          "date": "2025-04-26T02:34:32.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Sara B.",
+          "rating": 5,
+          "text": "Cute little shop! The man running the counter was very charming and kind. We ordered off of the sweet menu, getting the Nutella Strawberry and Mad Berry. It took about 5 minutes to receive and they present you with your order to ensure everything looks right. The staff were complimentary and kind.\n\nThe two mini desserts were great tasting and simply made. I think it’s a fair price and a nice splurge. The Mad Berry was my preferred because of the condensed milk. 5 stars due to the uniqueness of the theme and experience, with fair pricing and real ingredients. I’ll come back to try the savory dishes.",
+          "date": "2025-03-23T04:42:23.000Z",
+          "platform": "Google Places"
+        }
+      ],
+      "averageRating": 4.8,
+      "totalReviews": 604
+    }
+  },
+  "competitors": [
+    {
+      "name": "Kitchen Eighty-Eight",
+      "domain": "kitcheneightyeight.com",
+      "performance": 90,
+      "seo": 81,
+      "accessibility": 77,
+      "bestPractices": 86,
+      "overallScore": 83,
+      "rating": 4.5,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 1021,
+      "keywords": 30,
+      "domainAuthority": 70,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "Similar keywords",
+      "authorityGap": 0,
+      "backlinks": 807
+    },
+    {
+      "name": "Sol Agave",
+      "domain": "solagave.com",
+      "performance": 96,
+      "seo": 86,
+      "accessibility": 82,
+      "bestPractices": 91,
+      "overallScore": 89,
+      "rating": 4.8,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 1460,
+      "keywords": 36,
+      "domainAuthority": 84,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "Similar keywords",
+      "authorityGap": 0,
+      "backlinks": 1211
+    },
+    {
+      "name": "Ednas Market & Grille - Lehi",
+      "domain": "ednasmarketgrillelehi.com",
+      "performance": 90,
+      "seo": 81,
+      "accessibility": 77,
+      "bestPractices": 86,
+      "overallScore": 83,
+      "rating": 4.5,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 1349,
+      "keywords": 43,
+      "domainAuthority": 82,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "Similar keywords",
+      "authorityGap": 0,
+      "backlinks": 1145
+    },
+    {
+      "name": "Kickin Seafood&Chinese restaurant",
+      "domain": "kickinseafoodchineserestaurant.com",
+      "performance": 94,
+      "seo": 85,
+      "accessibility": 80,
+      "bestPractices": 89,
+      "overallScore": 87,
+      "rating": 4.7,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 1248,
+      "keywords": 48,
+      "domainAuthority": 84,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "Similar keywords",
+      "authorityGap": 0,
+      "backlinks": 904
+    },
+    {
+      "name": "Super Chix - American Fork, UT",
+      "domain": "superchixamericanforkut.com",
+      "performance": 90,
+      "seo": 81,
+      "accessibility": 77,
+      "bestPractices": 86,
+      "overallScore": 83,
+      "rating": 4.5,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 981,
+      "keywords": 54,
+      "domainAuthority": 86,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "Similar keywords",
+      "authorityGap": 0,
+      "backlinks": 847
+    }
+  ],
+  "competitorIntelligence": {
+    "organicCompetitors": [],
+    "keywordGaps": [
+      "best pizza delivery",
+      "pizza restaurant online ordering"
+    ],
+    "trafficEstimates": []
+  },
+  "serpFeatures": [],
+  "serpAnalysis": [],
+  "seoAnalysis": {
+    "title": "No title found",
+    "metaDescription": "No meta description found",
+    "h1Tags": [],
+    "imageCount": 0,
+    "internalLinks": 0,
+    "externalLinks": 0,
+    "schemaMarkup": false
+  },
+  "mobileExperience": {
+    "score": 58,
+    "loadTime": 0,
+    "isResponsive": true,
+    "touchFriendly": true,
+    "textReadable": true,
+    "navigationEasy": false,
+    "issues": [
+      "Mobile performance data unavailable - API configuration required"
+    ],
+    "recommendations": [
+      "Configure Google PageSpeed Insights API for mobile analysis",
+      "Enable mobile performance monitoring",
+      "Test website on mobile devices manually"
+    ]
+  },
+  "performanceMetrics": {
+    "performance": 78,
+    "accessibility": 68,
+    "bestPractices": 65,
+    "seo": 73,
+    "coreWebVitals": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0,
+      "ttfb": 0,
+      "tti": 0,
+      "tbt": 0,
+      "si": 0
+    }
+  },
+  "socialMediaLinks": {
+    "facebook": null,
+    "instagram": null,
+    "twitter": null,
+    "youtube": null,
+    "tiktok": null,
+    "linkedin": null
+  },
+  "socialMediaAnalysis": {
+    "activePlatforms": 0,
+    "missingPlatforms": [
+      "facebook",
+      "instagram",
+      "twitter",
+      "youtube",
+      "tiktok"
+    ],
+    "recommendations": [
+      "Add facebook presence",
+      "Add instagram presence",
+      "Add twitter presence",
+      "Add youtube presence",
+      "Add tiktok presence"
+    ]
+  },
+  "issues": [
+    {
+      "type": "seo",
+      "severity": "critical",
+      "title": "🎯 Missing in Action: Zero SEO Strategy",
+      "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+      "impact": "high",
+      "effort": "medium",
+      "icon": "🔍",
+      "color": "orange",
+      "urgency": "high",
+      "businessImpact": "Missing out on 70% of customers who search online before visiting"
+    },
+    {
+      "type": "mobile",
+      "severity": "critical",
+      "title": "📱 Mobile Disaster: Customers Can't Order",
+      "description": "Mobile performance data unavailable - API configuration required",
+      "impact": "high",
+      "effort": "medium",
+      "icon": "📱",
+      "color": "red",
+      "urgency": "immediate",
+      "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+    }
+  ],
+  "recommendations": [
+    {
+      "title": "Improve website performance",
+      "description": "Improve website performance",
+      "impact": "medium",
+      "effort": "medium",
+      "category": "technical"
+    },
+    {
+      "title": "Enhance social media presence",
+      "description": "Enhance social media presence",
+      "impact": "medium",
+      "effort": "medium",
+      "category": "marketing"
+    }
+  ],
+  "metadata": {
+    "scanId": "scan_1755110449839",
+    "scanDate": "2025-08-13T18:40:49.839Z",
+    "scanDuration": 0,
+    "scanType": "professional",
+    "dataCompleteness": 100,
+    "apiVersions": {
+      "scanner": "2.0.0",
+      "dataforseo": "3.0",
+      "googlePlaces": "v1",
+      "apify": "2.0",
+      "openai": "gpt-4o"
+    },
+    "servicesUsed": [
+      "GooglePlacesAPI",
+      "ApifyReviews",
+      "OpenAIAnalysis"
+    ],
+    "errors": [],
+    "warnings": [
+      "Facebook link not found",
+      "Keyword data incomplete"
+    ]
+  }
+}

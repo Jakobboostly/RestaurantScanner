@@ -1,0 +1,1280 @@
+{
+  "event": "scan_completed_full_export",
+  "version": "2.0.0",
+  "timestamp": "2025-08-13T14:17:47.146Z",
+  "scanId": "scan_1755094667146",
+  "scanDuration": 0,
+  "restaurant": {
+    "name": "Padeli's Street Greek",
+    "domain": "padelisstreetgreek.com",
+    "placeId": "ChIJu9SkLRD1UocRlHcaKvsT52g",
+    "location": {
+      "address": "30 W Broadway, Salt Lake City, UT 84111, USA",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "country": "United States",
+      "latitude": null,
+      "longitude": null
+    },
+    "categories": [],
+    "priceLevel": null,
+    "cuisine": "American",
+    "restaurantType": "FSR"
+  },
+  "scores": {
+    "overall": 71,
+    "seo": 70,
+    "performance": 71,
+    "mobile": 51,
+    "userExperience": 61,
+    "accessibility": 0,
+    "bestPractices": 0,
+    "local": 66,
+    "social": 40,
+    "reviews": 66,
+    "website": 71,
+    "domainAuthority": 71
+  },
+  "businessProfile": {
+    "name": "Padeli's Street Greek",
+    "address": "30 W Broadway, Salt Lake City, UT 84111, USA",
+    "rating": 4.4,
+    "reviewCount": 430,
+    "phoneNumber": "(801) 322-1111",
+    "website": "http://padelisstreetgreek.com/",
+    "formatted_address": "30 W Broadway, Salt Lake City, UT 84111, USA",
+    "address_components": [
+      {
+        "long_name": "30",
+        "short_name": "30",
+        "types": [
+          "street_number"
+        ]
+      },
+      {
+        "long_name": "West Broadway",
+        "short_name": "W Broadway",
+        "types": [
+          "route"
+        ]
+      },
+      {
+        "long_name": "Rio Grande",
+        "short_name": "Rio Grande",
+        "types": [
+          "neighborhood",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Salt Lake City",
+        "short_name": "Salt Lake City",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Salt Lake County",
+        "short_name": "Salt Lake County",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Utah",
+        "short_name": "UT",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United States",
+        "short_name": "US",
+        "types": [
+          "country",
+          "political"
+        ]
+      },
+      {
+        "long_name": "84111",
+        "short_name": "84111",
+        "types": [
+          "postal_code"
+        ]
+      }
+    ],
+    "state": "Utah",
+    "city": "Salt Lake City",
+    "place_id": "ChIJu9SkLRD1UocRlHcaKvsT52g",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "food",
+      "point_of_interest",
+      "restaurant"
+    ],
+    "reviews": [
+      {
+        "author_name": "Brielle Hansen",
+        "author_url": "https://www.google.com/maps/contrib/110677659846193465025/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXefOGVJtdlPa5wgel6aSyBR2C_jFZG_72zwkf4UcueoO8cm5sI=s128-c0x00000000-cc-rp-mo-ba4",
+        "rating": 4,
+        "relative_time_description": "6 months ago",
+        "text": "I don't love the toppings limit for the price but it was delicious!  Definitely go with tziki the hummus was just okay",
+        "time": 1737596089,
+        "translated": false
+      },
+      {
+        "author_name": "Aneesa Fernandez",
+        "author_url": "https://www.google.com/maps/contrib/108183138751614243320/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWm80RV9EGqPXyR3GCHEiZQqSDMUl3rHwEzdcwyeu5Sdw243p8p=s128-c0x00000000-cc-rp-mo-ba3",
+        "rating": 4,
+        "relative_time_description": "2 months ago",
+        "text": "I got the greek salad which tasted amazing and was exactly what i expected, but the workers behind the counter were hard to communicate with. I also chose not to dine in because the tables and floors looked somewhat dirty. Also, after reading other peoples reviews im sure the only reason they got my order right was because i was actually inside the restraunt. Overall, id say i might go here again if i was in the area already, but since theres better greek restraunts in SLC it wouldnt be my first choice",
+        "time": 1747711820,
+        "translated": false
+      },
+      {
+        "author_name": "Krista Clark",
+        "author_url": "https://www.google.com/maps/contrib/116158333577110507731/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV-I0brfr-a6cZ7uKr0HCyk7UHaPGPX40tz8nin6DNhRMMmPcHj=s128-c0x00000000-cc-rp-mo-ba3",
+        "rating": 1,
+        "relative_time_description": "3 months ago",
+        "text": "This is THE WORST Greek my husband and I have ever had. I don't know if it's because we came at the end of the day or if it's because it's just been sitting out all day. The pita bread was hard and stale. It was so bad I couldn't bare another bite. The lamb/beef meat was also hard and cold and flavorless. I had some of the fries from my children's plate and that was alright. It was hard to hear the person behind the counter when I was ordering, and thats with barely any people in the place. Definitely don't recommend this place and we'll never be coming back.",
+        "time": 1746568937,
+        "translated": false
+      },
+      {
+        "author_name": "Lara Grant",
+        "author_url": "https://www.google.com/maps/contrib/107844630020144463321/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXg72xbsC-hQkEMGPWcJa9H0q5BdDFMGPtMA6CXhfg1vPZiHbi7aw=s128-c0x00000000-cc-rp-mo-ba2",
+        "rating": 2,
+        "relative_time_description": "4 months ago",
+        "text": "I've been a regular to-go customer for at least a year. Frequently, things I order are missing ingredients. No huge deal. But today, I was so disgusted to discover my half and half bowl had some sort of yellow sauce all over it that tasted like curry. I looked on the menu and learned that the only thing it could be is mustard. YUCK! On top of the mustard as if to \"hide\" it was the actual sauce I ordered (creamy sriracha). SO that meant that not only did I get mustard on my bowl (eww) but it basically had double sauce on it. It was like a soup. Completely inedible. So gross!! Sad to say but I won't be ordering here again. To the staff if you mess something up I recommend simply remaking it instead of sending it to one of your loyal customers.",
+        "time": 1743457683,
+        "translated": false
+      },
+      {
+        "author_name": "Glue Guy",
+        "author_url": "https://www.google.com/maps/contrib/116268885455639659907/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUXAPn_WYSjH2VI_1L_rytxG2pvjUXhRnO15jHpUo_Ovi1NxJgz=s128-c0x00000000-cc-rp-mo-ba6",
+        "rating": 4,
+        "relative_time_description": "7 years ago",
+        "text": "Quality, fresh Greek food. Options like going to Qdoba... but Greek style. I had the bowl (sound familiar? ) with rice, garbanzo beans, lamb beef kabob... plus pita, toppings and sauce.  Watching them use a caulking gun to squirt out the sauce was a bit unnerving...  Make it a combo and you get a side and drink. Plenty to eat and a nice alternative to a burger place. Customer operated soda machine takes a while to make a selection from many, many drink options and a line quickly forms. Most first time customers were a bit confused ordering as I was. If you don't know what it is or includes... ask. Menu on board is not very clear for new customers even if you have been to Greece.\nSeating could be more inviting like it is in Greece rather than a subway sandwich place. They do have limited outside seating for nice weather.\nCompetition across the street probably keeps them doing their best.\nGreek music playing was a novel idea.\nOverall good food and I would go back... after trying across the street just to see what that is all about and make another review 🙄",
+        "time": 1524963756,
+        "translated": false
+      }
+    ],
+    "photos": [
+      {
+        "height": 2700,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/106346092124693044379\">Stephen Persinger</a>"
+        ],
+        "photo_reference": "ATKogpcN-v39KG_ULbrjOQzmyH7y1UNxEvdZvDjLX9CCSmzLZCzpZFYEA0x1IG3wpxkmxyBw-jjw_qd8CkSTvAgwtT8myOzNVbyJn8PAtQ06WXdhp8nJ5gzyTsD058qj46dVIwva4JO4-ZOvY7Vr-fw2rjhy_lt5FmdYUqGR6c0S3x4gBgzc5TGZwulXHgynW-8XZq66fGFYqPLozk087FxZOKXpIxm9H5n_bGH4X6KMx7nxzTQyeFPR90MTMDjUfyzQK3P0kCIhXmS6hQilyS5CUMBAC0o2Jq_JxeizcRAD73PNtXz6ZPveDyWzP6u_RqyT72xhZ9HioeIRyDAFxKWqvuQcuaIyeBUR1AsuHEXhSkpXl5jD1NBt1_0eeQOXV4NqUTRToHGhJaP_edz2NA8hkZMRGlpCAifrYSckZKu675dIYQ",
+        "width": 4800
+      },
+      {
+        "height": 1200,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102292419408181228389\">Padeli&#39;s Street Greek</a>"
+        ],
+        "photo_reference": "ATKogpcr6wmRP6qWqsM7WiwHolqCZtaHANXaF6F0NIqpnVBHipDll1IqDLWSwaq_Hq41mEYoFNFetGJAFaePTTCPfhNkGbcdAt2TqF16ZLq0P2jrUUaKYW6wuBd-njm2lwoMyQZmhfWupX65Z-1Wd_pDaQ0Iop18qRZfjAzvqukzFoB4UNP9RGPAQ1fWCqNlj9OhBNS5firuNl3vSPMzRs0e-_Pm8eSMFWu0C2nFvSbUml1ZDG-lCEtCFCi-HPskMNx8XGpLGnb_U-1CsPx6xXLXYQ1dAPcuITDJeXHIRm2ju-53Lg",
+        "width": 1200
+      },
+      {
+        "height": 1200,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102292419408181228389\">Padeli&#39;s Street Greek</a>"
+        ],
+        "photo_reference": "ATKogpfdKachNwgKrC0YvF0D52xn8llalQYoc1US7hZIskETT1wNpVTzr_JFSU47Zi8EsvFH9dbzGCuVf471XZ-IFqt_a_zW5BpQHSf6k5plKWE5gKp5uxyxm_W4CqTx1rrXEnDfarXK9OyUFV6X5SGeYT7TOGeOAqh1kf-IUbBbDyU4Ma95KyNYZtlh2QGWgKT0DDKmgGbI1lWfplAYuEmuVxwMR9RC13OIguvBVsWSOuIAEpbc2n4D92p13q4tg6mQNLOSPvYMV_iXAa3z1P_i-ICCriCbZnuJDWg5O3x1KN5MnA",
+        "width": 1200
+      },
+      {
+        "height": 1200,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102292419408181228389\">Padeli&#39;s Street Greek</a>"
+        ],
+        "photo_reference": "ATKogpfE9erpwk2xWeM0AJNx7BXMZLPQkLszTczCWoYb_1R0rEAwYefigNeQ_AHh7Ty_4i9J0K1U09R_5VXZLKcmU-TOzvXnPRghFoW4l6rjGQUpkk-O4RiLQ75zv6aAxliMgVBJUckz7zZ_0pW5lTWSIV-TWTiyhR0ugIdxRIYGDb-ZEhaTMoEgJ1LrT-2i6asPXjwD95y1ZxkvHGJtcLcPfeaEHw9IMwUjZ3zRz959DtuKnnb-2Nzd1SUqrabhb7spb0zRg1B-M5znhHrg97IXuop3oifcg7gK9xnEhp6SY1B4KA",
+        "width": 1200
+      },
+      {
+        "height": 1200,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102292419408181228389\">Padeli&#39;s Street Greek</a>"
+        ],
+        "photo_reference": "ATKogpfyZQuMOjp76CFdvoPnDgeIrOrgJG67ZWjyBPsjm4JV92Wo2LGDx7OcXlFu8unMKgWpDhCPRCB5hLO0tMNTiUqCBMJZPZcEhNquKf-yPss-_YGLcNmMZ0iYcrxC50ZnFWC4QFCPb07ncL2ZU0CFQ5KLaD3GFewsXbj72TnTTqHt3QdOd5BjXPsbRdOj3Ihop577R2vw7cP3jrjHAtJ9TQNseJoIvJfy-MEK4vQNmxLAXzbhzLlvHuuC3WGEiWqob-SYAzrsV4K3yL5Y-790tZ8u0un3BxBLDTQZRifkJf0wZQ",
+        "width": 1200
+      },
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/109147332459783786250\">Steph Holmberg</a>"
+        ],
+        "photo_reference": "ATKogpfjAKTmpznV2qilgYp71dXsU1FNG75MOyMyzxVPlXMRJKo005Gt1dWCdAGa82vTPUctA2RywidqC0LafsPQ9rzSH-8p2CwqXGgj_P4mLuwJ_2GsPlprAJhQ23005mojckFLTzSRcwSfSY20tungYkJ7QFa4ZMdhsu55EHkYL-u2UwCeWsi1XVZp0KSMiQatsLVblETJmApeABLbc4gRDFfJKvifbHbDWXd5J9GCdKv3yO8pWpKkI41zMLQ9okiBEvnkTUDYH_XOfM3Lzp7dsZycRRR5U2_c4niobTT5JybJhrRJs9n2BZK0ROVUwfRiu7sxSpygCLPJgloBd1lg-DV-2iIZb_qc4gkJ4Ech9xMrDE9W8jiM74UIqcCAJA7YFZwmedPPxpXLiz2O0LCuEzYuiHbOw3uaZQv-Etvi8jV7f1ci",
+        "width": 3024
+      },
+      {
+        "height": 3456,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/113729417433463279144\">Andrea Knight</a>"
+        ],
+        "photo_reference": "ATKogpc6QUTSmAarf1On_8GSFyvbEaZpi_rLBk6GOybP89X_SSmiEi692vXjXkgUjPpacVJSsYMysqAlVoT7BOKW13ewhL9JYktHla_M1M7fNm2fxYhTAkFZ6eiXQ_1wxGy8msIW3i_d0T48GskqpCBHANIICS5pbouy8SpaT6yrpUBInFnEdNp3LweKz3LeGt6MVCIffvqqrAmW28K41haArW4ljfcgwcGhhBxY6p4Vgpz-3JwAFhEm43y7CdsIX5OyVFGDKo90b8Jse_eujecwh9BJVg_MMo_jUhO3LY5z3QVrKcNSLYFiLCye33rpEEy4S72TiXjuDxqZflyMXju8Y4WvbeR9MV_PdFIfsGBLvEsVhQt9FMduJEllOLYxYL21FY_1uwwKpR7EXBswde3DE15ehf27DkKZdH_H0H-B6eI",
+        "width": 4608
+      },
+      {
+        "height": 1200,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102292419408181228389\">Padeli&#39;s Street Greek</a>"
+        ],
+        "photo_reference": "ATKogpfjs6_9I3TMKRFFPB4gzbwvg6KI8aLuK2WB9degF-WuJxRJEq9ZPTrkOGXj5TvISrukUI0IR72a0Be8HWvoT7f8kIyfggQ6wW6fpbxpNuPUanFNZkbFJMCn_8UvAQEYCz3DZfGytVG4tKc5vn57WH1C72hX8DnwMnSgLAZAYuGRIZRK26VT5QoFhIYHkeKD1Gcrujqz4-jGc5ew8O4FVkpKisHYJQ1rs2zCzHrgcCAfMyV9WS8XlDxYyZEPVR1SMARsYIZ67bek7QW2VgdKMqk4RAn4LzgRdtSBqfpXJo9Hvw",
+        "width": 1200
+      },
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/114210739222968878274\">Josh Bello</a>"
+        ],
+        "photo_reference": "ATKogpetXJKyFGx1FcF8PP5E3UQGNsZh4eEdNMpWzVPO81Q3uD3rF5-Df4OSOtnjirnM_9gSZ3yU62LUMu-rnbW7jRmEMDrtXXmLc4f2Uun30YX_kTIUOnja8AdVT1qnz4O7MvK7wRwt1Rg-BJrozn6S3Um8F08NR1VAV8-jasLy_JT-uekTATkUoW_9QhNdPqNqCI0uIv2m1cduTnEvRXw2bO8WFWnG2lJsqcyj_kg7DemYCsj9s2PwB9s1JUH5LTbh816waG6oa1y5yESwtYWC_uPlms5SRhPjB4bQECspOwLGqIWaWcGBIzoTXj73zwab9fFAiFZUfnCsHDDswil7mqyT8i1ZAs06wad3gh7TBjJBLaOQAQIS5WSCgv35Ie4if_GM41hCRXE6bQHqJr55UgpxcsQ420jDLM7bPo4SM0FOKGQ",
+        "width": 3024
+      },
+      {
+        "height": 1200,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102292419408181228389\">Padeli&#39;s Street Greek</a>"
+        ],
+        "photo_reference": "ATKogpdEFsnt4gWynlKow8_6fuzyCc4-Y8n_80FLyU3U4ymO_07Gi4ScJ9XaH7ZIH41GNU2XuDMKQWrkS3U7WHbWvPPk08aEb71O98S7eqDSt-L--Oj3DLRG23p86ROV2CKNTIp9y9fajguVz3xMaVFkx2cgmDeWqaB07hcyAddwENoILy6AEEq6wNAyrKyku6WKFu5hR59ysxP1O6hUnbFE0othXeHuQ4_ru1y4dVbFhpPFiJJp_i4nxHauQe-FzX3Ww1IAAt8anve_u6g7QQZzrw_6GmbVe-eCbkuh3VSmcXnX3g",
+        "width": 1200
+      }
+    ],
+    "photoCount": 10,
+    "opening_hours": {
+      "open_now": false,
+      "periods": [
+        {
+          "close": {
+            "day": 1,
+            "time": "1600"
+          },
+          "open": {
+            "day": 1,
+            "time": "1030"
+          }
+        },
+        {
+          "close": {
+            "day": 2,
+            "time": "1600"
+          },
+          "open": {
+            "day": 2,
+            "time": "1030"
+          }
+        },
+        {
+          "close": {
+            "day": 3,
+            "time": "1600"
+          },
+          "open": {
+            "day": 3,
+            "time": "1030"
+          }
+        },
+        {
+          "close": {
+            "day": 4,
+            "time": "1600"
+          },
+          "open": {
+            "day": 4,
+            "time": "1030"
+          }
+        },
+        {
+          "close": {
+            "day": 5,
+            "time": "2000"
+          },
+          "open": {
+            "day": 5,
+            "time": "1030"
+          }
+        }
+      ],
+      "weekday_text": [
+        "Monday: 10:30 AM – 4:00 PM",
+        "Tuesday: 10:30 AM – 4:00 PM",
+        "Wednesday: 10:30 AM – 4:00 PM",
+        "Thursday: 10:30 AM – 4:00 PM",
+        "Friday: 10:30 AM – 8:00 PM",
+        "Saturday: Closed",
+        "Sunday: Closed"
+      ]
+    },
+    "price_level": 1,
+    "editorial_summary": {
+      "language": "en",
+      "overview": "No-frills joint focusing on traditional Greek gyros, salads, wraps & sides plus imported sodas."
+    },
+    "responseRate": 50,
+    "averageResponseTime": "2 days"
+  },
+  "profileAnalysis": {
+    "completeness": {
+      "score": 75,
+      "missingElements": []
+    },
+    "optimization": {
+      "score": 70,
+      "issues": []
+    },
+    "competitiveness": 65,
+    "recommendations": [],
+    "strengths": [],
+    "weaknesses": []
+  },
+  "keywords": {
+    "trackedKeywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "greek near me",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "greek delivery Salt Lake City",
+        "position": 42,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 25,
+        "url": "https://www.padelisstreetgreek.com/locations",
+        "title": "Locations",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best greek Salt Lake City",
+        "position": 28,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 25,
+        "url": "https://www.padelisstreetgreek.com/",
+        "title": "Padeli's Street Greek",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "Salt Lake City greek",
+        "position": 79,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 25,
+        "url": "https://www.padelisstreetgreek.com/locations",
+        "title": "Locations",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "greek places near me",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "greek Salt Lake City Utah",
+        "position": 23,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 25,
+        "url": "https://www.padelisstreetgreek.com/locations",
+        "title": "Locations",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "greek delivery near me",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "greek open now",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "domainRankedKeywords": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    }
+  },
+  "localCompetitorData": [],
+  "localPackReport": {
+    "summary": {
+      "visibility_score": 38,
+      "keywords_appeared": 3,
+      "total_keywords": 8,
+      "average_position": 3.7,
+      "best_position": 2
+    },
+    "keyword_results": [
+      {
+        "keyword": "greek near me",
+        "found": true,
+        "position": 2,
+        "confidence": 100,
+        "matched_fields": [
+          "title",
+          "url"
+        ],
+        "local_pack_data": {
+          "name": "Padeli's Street Greek",
+          "address": "Salt Lake City, UT ",
+          "website": "http://padelisstreetgreek.com/",
+          "phone": "(801) 322-1111",
+          "rating": 4.4,
+          "reviews": 430
+        },
+        "competitors": [
+          {
+            "position": 1,
+            "name": "The Other Place Restaurant",
+            "address": "Salt Lake City, UT ",
+            "website": "http://theotherplacerestaurant.com/",
+            "rating": 4.6,
+            "reviews": 2300
+          }
+        ]
+      },
+      {
+        "keyword": "greek Salt Lake City",
+        "found": true,
+        "position": 4,
+        "confidence": 100,
+        "matched_fields": [
+          "title",
+          "url"
+        ],
+        "local_pack_data": {
+          "name": "Padeli's Street Greek",
+          "address": "Salt Lake City, UT ",
+          "website": "http://padelisstreetgreek.com/",
+          "phone": "(801) 322-1111",
+          "rating": 4.4,
+          "reviews": 430
+        },
+        "competitors": [
+          {
+            "position": 1,
+            "name": "GR Kitchen",
+            "address": "Salt Lake City, UT ",
+            "website": "http://www.eatgrkitchen.com/",
+            "rating": 4.4,
+            "reviews": 25
+          },
+          {
+            "position": 2,
+            "name": "Paréa",
+            "address": "Salt Lake City, UT ",
+            "website": "https://www.pareaon9th.com/",
+            "rating": 4.8,
+            "reviews": 73
+          },
+          {
+            "position": 3,
+            "name": "The Other Place Restaurant",
+            "address": "Salt Lake City, UT ",
+            "website": "http://theotherplacerestaurant.com/",
+            "rating": 4.6,
+            "reviews": 2300
+          }
+        ]
+      },
+      {
+        "keyword": "best greek Salt Lake City",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Manoli's",
+            "address": "Salt Lake City, UT ",
+            "website": "http://www.manolison9th.com/",
+            "rating": 4.7,
+            "reviews": 880
+          },
+          {
+            "position": 2,
+            "name": "The Other Place Restaurant",
+            "address": "Salt Lake City, UT ",
+            "website": "http://theotherplacerestaurant.com/",
+            "rating": 4.6,
+            "reviews": 2300
+          },
+          {
+            "position": 3,
+            "name": "Paréa",
+            "address": "Salt Lake City, UT ",
+            "website": "https://www.pareaon9th.com/",
+            "rating": 4.8,
+            "reviews": 73
+          }
+        ]
+      },
+      {
+        "keyword": "greek delivery near me",
+        "found": true,
+        "position": 5,
+        "confidence": 100,
+        "matched_fields": [
+          "title",
+          "url"
+        ],
+        "local_pack_data": {
+          "name": "Padeli's Street Greek",
+          "address": "Salt Lake City, UT ",
+          "website": "http://padelisstreetgreek.com/",
+          "phone": "(801) 322-1111",
+          "rating": 4.4,
+          "reviews": 430
+        },
+        "competitors": [
+          {
+            "position": 1,
+            "name": "The Other Place Restaurant",
+            "address": "Salt Lake City, UT ",
+            "website": "http://theotherplacerestaurant.com/",
+            "rating": 4.6,
+            "reviews": 2300
+          },
+          {
+            "position": 2,
+            "name": "Olympian Greek & American",
+            "address": "Salt Lake City, UT ",
+            "website": "",
+            "rating": 4.6,
+            "reviews": 983
+          },
+          {
+            "position": 3,
+            "name": "GR Kitchen",
+            "address": "Salt Lake City, UT ",
+            "website": "http://www.eatgrkitchen.com/",
+            "rating": 4.4,
+            "reviews": 25
+          }
+        ]
+      },
+      {
+        "keyword": "greek Salt Lake City Utah",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "The Other Place Restaurant",
+            "address": "Salt Lake City, UT ",
+            "website": "http://theotherplacerestaurant.com/",
+            "rating": 4.6,
+            "reviews": 2300
+          },
+          {
+            "position": 2,
+            "name": "Olympian Greek & American",
+            "address": "Salt Lake City, UT ",
+            "website": "",
+            "rating": 4.6,
+            "reviews": 983
+          },
+          {
+            "position": 3,
+            "name": "Paréa",
+            "address": "Salt Lake City, UT ",
+            "website": "https://www.pareaon9th.com/",
+            "rating": 4.8,
+            "reviews": 73
+          }
+        ]
+      },
+      {
+        "keyword": "top greek Salt Lake City",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "The Other Place Restaurant",
+            "address": "Salt Lake City, UT ",
+            "website": "http://theotherplacerestaurant.com/",
+            "rating": 4.6,
+            "reviews": 2300
+          },
+          {
+            "position": 2,
+            "name": "Manoli's",
+            "address": "Salt Lake City, UT ",
+            "website": "http://www.manolison9th.com/",
+            "rating": 4.7,
+            "reviews": 880
+          },
+          {
+            "position": 3,
+            "name": "Olympian Greek & American",
+            "address": "Salt Lake City, UT ",
+            "website": "",
+            "rating": 4.6,
+            "reviews": 983
+          }
+        ]
+      },
+      {
+        "keyword": "greek restaurant near me",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "The Other Place Restaurant",
+            "address": "Salt Lake City, UT ",
+            "website": "http://theotherplacerestaurant.com/",
+            "rating": 4.6,
+            "reviews": 2300
+          },
+          {
+            "position": 2,
+            "name": "Olympian Greek & American",
+            "address": "Salt Lake City, UT ",
+            "website": "",
+            "rating": 4.6,
+            "reviews": 983
+          },
+          {
+            "position": 3,
+            "name": "Greek Souvlaki",
+            "address": "Salt Lake City, UT ",
+            "website": "http://www.greeksouvlaki.com/",
+            "rating": 4.3,
+            "reviews": 1500
+          }
+        ]
+      },
+      {
+        "keyword": "greek food Salt Lake City",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "The Other Place Restaurant",
+            "address": "Salt Lake City, UT ",
+            "website": "http://theotherplacerestaurant.com/",
+            "rating": 4.6,
+            "reviews": 2300
+          },
+          {
+            "position": 2,
+            "name": "Olympian Greek & American",
+            "address": "Salt Lake City, UT ",
+            "website": "",
+            "rating": 4.6,
+            "reviews": 983
+          },
+          {
+            "position": 3,
+            "name": "GR Kitchen",
+            "address": "Salt Lake City, UT ",
+            "website": "http://www.eatgrkitchen.com/",
+            "rating": 4.4,
+            "reviews": 25
+          }
+        ]
+      }
+    ],
+    "recommendations": [
+      "Not appearing for \"best greek Salt Lake City\", \"greek Salt Lake City Utah\", \"top greek Salt Lake City\", \"greek restaurant near me\", \"greek food Salt Lake City\" - optimize Google My Business profile with these keywords",
+      "Ranking below #1 for 3 keywords - increase customer reviews and engagement to improve rankings",
+      "Low Local Pack visibility (38%) - audit your Google My Business completeness, categories, and local citations"
+    ],
+    "scan_metadata": {
+      "location": "Salt Lake City,Utah,United States",
+      "timestamp": "2025-08-13T14:17:39.254Z",
+      "total_scan_time_ms": 15238
+    }
+  },
+  "reviewsAnalysis": {
+    "overallScore": 66,
+    "totalReviews": 0,
+    "averageRating": 4.4,
+    "sentimentBreakdown": {
+      "positive": 60,
+      "neutral": 0,
+      "negative": 40
+    },
+    "reviewSources": [
+      "Google Business Profile (Limited)"
+    ],
+    "keyThemes": [
+      "Pricing",
+      "Food Quality"
+    ],
+    "recentReviews": [
+      {
+        "author": "Aneesa Fernandez",
+        "rating": 4,
+        "text": "I got the greek salad which tasted amazing and was exactly what i expected, but the workers behind the counter were hard to communicate with. I also chose not to dine in because the tables and floors looked somewhat dirty. Also, after reading other peoples reviews im sure the only reason they got my order right was because i was actually inside the restraunt. Overall, id say i might go here again if i was in the area already, but since theres better greek restraunts in SLC it wouldnt be my first choice",
+        "date": "2025-05-20T03:30:20.000Z",
+        "platform": "Google Places"
+      },
+      {
+        "author": "Krista Clark",
+        "rating": 1,
+        "text": "This is THE WORST Greek my husband and I have ever had. I don't know if it's because we came at the end of the day or if it's because it's just been sitting out all day. The pita bread was hard and stale. It was so bad I couldn't bare another bite. The lamb/beef meat was also hard and cold and flavorless. I had some of the fries from my children's plate and that was alright. It was hard to hear the person behind the counter when I was ordering, and thats with barely any people in the place. Definitely don't recommend this place and we'll never be coming back.",
+        "date": "2025-05-06T22:02:17.000Z",
+        "platform": "Google Places"
+      },
+      {
+        "author": "Lara Grant",
+        "rating": 2,
+        "text": "I've been a regular to-go customer for at least a year. Frequently, things I order are missing ingredients. No huge deal. But today, I was so disgusted to discover my half and half bowl had some sort of yellow sauce all over it that tasted like curry. I looked on the menu and learned that the only thing it could be is mustard. YUCK! On top of the mustard as if to \"hide\" it was the actual sauce I ordered (creamy sriracha). SO that meant that not only did I get mustard on my bowl (eww) but it basically had double sauce on it. It was like a soup. Completely inedible. So gross!! Sad to say but I won't be ordering here again. To the staff if you mess something up I recommend simply remaking it instead of sending it to one of your loyal customers.",
+        "date": "2025-03-31T21:48:03.000Z",
+        "platform": "Google Places"
+      },
+      {
+        "author": "Brielle Hansen",
+        "rating": 4,
+        "text": "I don't love the toppings limit for the price but it was delicious!  Definitely go with tziki the hummus was just okay",
+        "date": "2025-01-23T01:34:49.000Z",
+        "platform": "Google Places"
+      },
+      {
+        "author": "Glue Guy",
+        "rating": 4,
+        "text": "Quality, fresh Greek food. Options like going to Qdoba... but Greek style. I had the bowl (sound familiar? ) with rice, garbanzo beans, lamb beef kabob... plus pita, toppings and sauce.  Watching them use a caulking gun to squirt out the sauce was a bit unnerving...  Make it a combo and you get a side and drink. Plenty to eat and a nice alternative to a burger place. Customer operated soda machine takes a while to make a selection from many, many drink options and a line quickly forms. Most first time customers were a bit confused ordering as I was. If you don't know what it is or includes... ask. Menu on board is not very clear for new customers even if you have been to Greece.\nSeating could be more inviting like it is in Greece rather than a subway sandwich place. They do have limited outside seating for nice weather.\nCompetition across the street probably keeps them doing their best.\nGreek music playing was a novel idea.\nOverall good food and I would go back... after trying across the street just to see what that is all about and make another review 🙄",
+        "date": "2018-04-29T01:02:36.000Z",
+        "platform": "Google Places"
+      }
+    ],
+    "examples": {
+      "positive": [
+        {
+          "author": "Brielle Hansen",
+          "rating": 4,
+          "text": "I don't love the toppings limit for the price but it was delicious!  Definitely go with tziki the hummus was just okay",
+          "date": "2025-01-23T01:34:49.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Aneesa Fernandez",
+          "rating": 4,
+          "text": "I got the greek salad which tasted amazing and was exactly what i expected, but the workers behind the counter were hard to communicate with. I also chose not to dine in because the tables and floors looked somewhat dirty. Also, after reading other peoples reviews im sure the only reason they got my order right was because i was actually inside the restraunt. Overall, id say i might go here again if i was in the area already, but since theres better greek restraunts in SLC it wouldnt be my first choice",
+          "date": "2025-05-20T03:30:20.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Glue Guy",
+          "rating": 4,
+          "text": "Quality, fresh Greek food. Options like going to Qdoba... but Greek style. I had the bowl (sound familiar? ) with rice, garbanzo beans, lamb beef kabob... plus pita, toppings and sauce.  Watching them use a caulking gun to squirt out the sauce was a bit unnerving...  Make it a combo and you get a side and drink. Plenty to eat and a nice alternative to a burger place. Customer operated soda machine takes a while to make a selection from many, many drink options and a line quickly forms. Most first time customers were a bit confused ordering as I was. If you don't know what it is or includes... ask. Menu on board is not very clear for new customers even if you have been to Greece.\nSeating could be more inviting like it is in Greece rather than a subway sandwich place. They do have limited outside seating for nice weather.\nCompetition across the street probably keeps them doing their best.\nGreek music playing was a novel idea.\nOverall good food and I would go back... after trying across the street just to see what that is all about and make another review 🙄",
+          "date": "2018-04-29T01:02:36.000Z",
+          "platform": "Google Places"
+        }
+      ],
+      "neutral": [],
+      "negative": [
+        {
+          "author": "Krista Clark",
+          "rating": 1,
+          "text": "This is THE WORST Greek my husband and I have ever had. I don't know if it's because we came at the end of the day or if it's because it's just been sitting out all day. The pita bread was hard and stale. It was so bad I couldn't bare another bite. The lamb/beef meat was also hard and cold and flavorless. I had some of the fries from my children's plate and that was alright. It was hard to hear the person behind the counter when I was ordering, and thats with barely any people in the place. Definitely don't recommend this place and we'll never be coming back.",
+          "date": "2025-05-06T22:02:17.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Lara Grant",
+          "rating": 2,
+          "text": "I've been a regular to-go customer for at least a year. Frequently, things I order are missing ingredients. No huge deal. But today, I was so disgusted to discover my half and half bowl had some sort of yellow sauce all over it that tasted like curry. I looked on the menu and learned that the only thing it could be is mustard. YUCK! On top of the mustard as if to \"hide\" it was the actual sauce I ordered (creamy sriracha). SO that meant that not only did I get mustard on my bowl (eww) but it basically had double sauce on it. It was like a soup. Completely inedible. So gross!! Sad to say but I won't be ordering here again. To the staff if you mess something up I recommend simply remaking it instead of sending it to one of your loyal customers.",
+          "date": "2025-03-31T21:48:03.000Z",
+          "platform": "Google Places"
+        }
+      ]
+    },
+    "customerMoodAnalysis": {
+      "overallMood": "mixed",
+      "sentimentSummary": "Customer opinions are divided. The 3.0/5 rating from 5 recent reviews suggests some great experiences mixed with areas needing attention.",
+      "sentimentDistribution": {
+        "ecstatic": 0,
+        "delighted": 0,
+        "satisfied": 60,
+        "neutral": 0,
+        "frustrated": 20,
+        "disappointed": 0,
+        "angry": 20
+      },
+      "keyMoodIndicators": [
+        {
+          "theme": "food quality",
+          "mentions": 5
+        },
+        {
+          "theme": "food issues",
+          "mentions": 2
+        },
+        {
+          "theme": "speed of service",
+          "mentions": 1
+        }
+      ],
+      "emotionalBreakdown": {
+        "joy": 2,
+        "satisfaction": 3,
+        "disappointment": 0,
+        "frustration": 0,
+        "anger": 1
+      },
+      "businessInsights": {
+        "strengthsPerceived": [
+          "Customers appreciate the quality and freshness of the Greek food, which offers a unique alternative to typical fast food options. - social media marketing can showcase this strength",
+          "The restaurant's Greek music adds a novel and authentic touch to the dining experience, making it memorable for customers. - social media marketing can showcase this strength",
+          "The option to customize meals, similar to popular fast-casual chains, appeals to customers looking for personalized dining experiences. - Boostly marketing services can amplify this"
+        ],
+        "improvementOpportunities": [
+          "Difficulty communicating with staff and unclear menu for new customers - social media marketing can improve this area",
+          "Negative reviews about food quality and order accuracy - review management can address this concern",
+          "Lack of inviting ambiance and competition awareness - social media marketing can improve this area"
+        ]
+      },
+      "detailedMetrics": {
+        "totalReviews": 5,
+        "averageRating": 3,
+        "ratingDistribution": {
+          "1": 20,
+          "2": 20,
+          "3": 0,
+          "4": 60,
+          "5": 0
+        },
+        "sentimentTrends": {
+          "trend": "stable",
+          "recentAverageRating": 3,
+          "previousAverageRating": 3,
+          "recentReviewsCount": 5
+        }
+      }
+    },
+    "trends": {
+      "ratingTrend": "positive",
+      "volumeTrend": "increasing",
+      "responseRate": 60,
+      "averageResponseTime": "2 days"
+    },
+    "recommendations": [
+      {
+        "category": "growth",
+        "priority": "high",
+        "title": "Generate More Reviews",
+        "description": "Encourage satisfied customers to leave reviews",
+        "impact": "Increase online credibility and visibility"
+      }
+    ],
+    "googleReviews": {
+      "reviews": [
+        {
+          "author": "Aneesa Fernandez",
+          "rating": 4,
+          "text": "I got the greek salad which tasted amazing and was exactly what i expected, but the workers behind the counter were hard to communicate with. I also chose not to dine in because the tables and floors looked somewhat dirty. Also, after reading other peoples reviews im sure the only reason they got my order right was because i was actually inside the restraunt. Overall, id say i might go here again if i was in the area already, but since theres better greek restraunts in SLC it wouldnt be my first choice",
+          "date": "2025-05-20T03:30:20.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Krista Clark",
+          "rating": 1,
+          "text": "This is THE WORST Greek my husband and I have ever had. I don't know if it's because we came at the end of the day or if it's because it's just been sitting out all day. The pita bread was hard and stale. It was so bad I couldn't bare another bite. The lamb/beef meat was also hard and cold and flavorless. I had some of the fries from my children's plate and that was alright. It was hard to hear the person behind the counter when I was ordering, and thats with barely any people in the place. Definitely don't recommend this place and we'll never be coming back.",
+          "date": "2025-05-06T22:02:17.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Lara Grant",
+          "rating": 2,
+          "text": "I've been a regular to-go customer for at least a year. Frequently, things I order are missing ingredients. No huge deal. But today, I was so disgusted to discover my half and half bowl had some sort of yellow sauce all over it that tasted like curry. I looked on the menu and learned that the only thing it could be is mustard. YUCK! On top of the mustard as if to \"hide\" it was the actual sauce I ordered (creamy sriracha). SO that meant that not only did I get mustard on my bowl (eww) but it basically had double sauce on it. It was like a soup. Completely inedible. So gross!! Sad to say but I won't be ordering here again. To the staff if you mess something up I recommend simply remaking it instead of sending it to one of your loyal customers.",
+          "date": "2025-03-31T21:48:03.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Brielle Hansen",
+          "rating": 4,
+          "text": "I don't love the toppings limit for the price but it was delicious!  Definitely go with tziki the hummus was just okay",
+          "date": "2025-01-23T01:34:49.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Glue Guy",
+          "rating": 4,
+          "text": "Quality, fresh Greek food. Options like going to Qdoba... but Greek style. I had the bowl (sound familiar? ) with rice, garbanzo beans, lamb beef kabob... plus pita, toppings and sauce.  Watching them use a caulking gun to squirt out the sauce was a bit unnerving...  Make it a combo and you get a side and drink. Plenty to eat and a nice alternative to a burger place. Customer operated soda machine takes a while to make a selection from many, many drink options and a line quickly forms. Most first time customers were a bit confused ordering as I was. If you don't know what it is or includes... ask. Menu on board is not very clear for new customers even if you have been to Greece.\nSeating could be more inviting like it is in Greece rather than a subway sandwich place. They do have limited outside seating for nice weather.\nCompetition across the street probably keeps them doing their best.\nGreek music playing was a novel idea.\nOverall good food and I would go back... after trying across the street just to see what that is all about and make another review 🙄",
+          "date": "2018-04-29T01:02:36.000Z",
+          "platform": "Google Places"
+        }
+      ],
+      "averageRating": 4.4,
+      "totalReviews": 430
+    }
+  },
+  "competitors": [
+    {
+      "name": "Salt & Olive",
+      "domain": "saltolive.com",
+      "performance": 86,
+      "seo": 77,
+      "accessibility": 73,
+      "bestPractices": 82,
+      "overallScore": 80,
+      "rating": 4.3,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 1358,
+      "keywords": 29,
+      "domainAuthority": 77,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "Similar keywords",
+      "authorityGap": 0,
+      "backlinks": 1140
+    },
+    {
+      "name": "From Scratch",
+      "domain": "fromscratch.com",
+      "performance": 86,
+      "seo": 77,
+      "accessibility": 73,
+      "bestPractices": 82,
+      "overallScore": 80,
+      "rating": 4.3,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 1099,
+      "keywords": 39,
+      "domainAuthority": 79,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "Similar keywords",
+      "authorityGap": 0,
+      "backlinks": 716
+    },
+    {
+      "name": "STK Steakhouse",
+      "domain": "stksteakhouse.com",
+      "performance": 88,
+      "seo": 79,
+      "accessibility": 75,
+      "bestPractices": 84,
+      "overallScore": 81,
+      "rating": 4.4,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 1228,
+      "keywords": 22,
+      "domainAuthority": 77,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "Similar keywords",
+      "authorityGap": 0,
+      "backlinks": 997
+    },
+    {
+      "name": "Bambara SLC",
+      "domain": "bambaraslc.com",
+      "performance": 86,
+      "seo": 77,
+      "accessibility": 73,
+      "bestPractices": 82,
+      "overallScore": 80,
+      "rating": 4.3,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 1272,
+      "keywords": 27,
+      "domainAuthority": 67,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "Similar keywords",
+      "authorityGap": 0,
+      "backlinks": 954
+    },
+    {
+      "name": "Spencer's For Steaks and Chops Salt Lake City",
+      "domain": "spencersforsteaksandchopssaltlakecity.com",
+      "performance": 86,
+      "seo": 77,
+      "accessibility": 73,
+      "bestPractices": 82,
+      "overallScore": 80,
+      "rating": 4.3,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 846,
+      "keywords": 28,
+      "domainAuthority": 84,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "Similar keywords",
+      "authorityGap": 0,
+      "backlinks": 883
+    }
+  ],
+  "competitorIntelligence": {
+    "organicCompetitors": [],
+    "keywordGaps": [
+      "best pizza delivery",
+      "pizza restaurant online ordering"
+    ],
+    "trafficEstimates": []
+  },
+  "serpFeatures": [],
+  "serpAnalysis": [],
+  "seoAnalysis": {
+    "title": "No title found",
+    "metaDescription": "No meta description found",
+    "h1Tags": [],
+    "imageCount": 0,
+    "internalLinks": 0,
+    "externalLinks": 0,
+    "schemaMarkup": false
+  },
+  "mobileExperience": {
+    "score": 51,
+    "loadTime": 0,
+    "isResponsive": true,
+    "touchFriendly": true,
+    "textReadable": true,
+    "navigationEasy": false,
+    "issues": [
+      "Mobile performance data unavailable - API configuration required"
+    ],
+    "recommendations": [
+      "Configure Google PageSpeed Insights API for mobile analysis",
+      "Enable mobile performance monitoring",
+      "Test website on mobile devices manually"
+    ]
+  },
+  "performanceMetrics": {
+    "performance": 71,
+    "accessibility": 61,
+    "bestPractices": 65,
+    "seo": 70,
+    "coreWebVitals": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0,
+      "ttfb": 0,
+      "tti": 0,
+      "tbt": 0,
+      "si": 0
+    }
+  },
+  "socialMediaLinks": {
+    "facebook": "http://www.facebook.com/10209971998723584",
+    "instagram": "http://instagram.com/padelisstreetgreek",
+    "twitter": null,
+    "youtube": null,
+    "tiktok": null,
+    "linkedin": null
+  },
+  "socialMediaAnalysis": {
+    "activePlatforms": 2,
+    "missingPlatforms": [
+      "twitter",
+      "youtube",
+      "tiktok"
+    ],
+    "recommendations": [
+      "Add twitter presence",
+      "Add youtube presence",
+      "Add tiktok presence"
+    ]
+  },
+  "issues": [
+    {
+      "type": "seo",
+      "severity": "critical",
+      "title": "🎯 Missing in Action: Zero SEO Strategy",
+      "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+      "impact": "high",
+      "effort": "medium",
+      "icon": "🔍",
+      "color": "orange",
+      "urgency": "high",
+      "businessImpact": "Missing out on 70% of customers who search online before visiting"
+    },
+    {
+      "type": "mobile",
+      "severity": "critical",
+      "title": "📱 Mobile Disaster: Customers Can't Order",
+      "description": "Mobile performance data unavailable - API configuration required",
+      "impact": "high",
+      "effort": "medium",
+      "icon": "📱",
+      "color": "red",
+      "urgency": "immediate",
+      "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+    }
+  ],
+  "recommendations": [
+    {
+      "title": "Improve website performance",
+      "description": "Improve website performance",
+      "impact": "medium",
+      "effort": "medium",
+      "category": "technical"
+    },
+    {
+      "title": "Enhance social media presence",
+      "description": "Enhance social media presence",
+      "impact": "medium",
+      "effort": "medium",
+      "category": "marketing"
+    }
+  ],
+  "metadata": {
+    "scanId": "scan_1755094667146",
+    "scanDate": "2025-08-13T14:17:47.146Z",
+    "scanDuration": 0,
+    "scanType": "professional",
+    "dataCompleteness": 100,
+    "apiVersions": {
+      "scanner": "2.0.0",
+      "dataforseo": "3.0",
+      "googlePlaces": "v1",
+      "apify": "2.0",
+      "openai": "gpt-4o"
+    },
+    "servicesUsed": [
+      "GooglePlacesAPI",
+      "ApifyReviews",
+      "OpenAIAnalysis"
+    ],
+    "errors": [],
+    "warnings": [
+      "Keyword data incomplete"
+    ]
+  }
+}

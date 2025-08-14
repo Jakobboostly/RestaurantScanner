@@ -1,0 +1,1283 @@
+{
+  "event": "scan_completed_full_export",
+  "version": "2.0.0",
+  "timestamp": "2025-08-12T22:42:18.364Z",
+  "scanId": "scan_1755038538364",
+  "scanDuration": 0,
+  "restaurant": {
+    "name": "Taqueria 27 Lehi",
+    "domain": "taqueria27.com",
+    "placeId": "ChIJVQyR-PCBUocRPBHpG_1v-1s",
+    "location": {
+      "address": "1688 W Traverse Pkwy, Lehi, UT 84043, USA",
+      "city": "Lehi",
+      "state": "UT",
+      "country": "United States",
+      "latitude": null,
+      "longitude": null
+    },
+    "categories": [],
+    "priceLevel": null,
+    "cuisine": "American",
+    "restaurantType": "FSR"
+  },
+  "scores": {
+    "overall": 71,
+    "seo": 70,
+    "performance": 71,
+    "mobile": 51,
+    "userExperience": 61,
+    "accessibility": 0,
+    "bestPractices": 0,
+    "local": 66,
+    "social": 40,
+    "reviews": 66,
+    "website": 71,
+    "domainAuthority": 71
+  },
+  "businessProfile": {
+    "name": "Taqueria 27 Lehi",
+    "address": "1688 W Traverse Pkwy, Lehi, UT 84043, USA",
+    "rating": 4.4,
+    "reviewCount": 1786,
+    "phoneNumber": "(801) 331-8033",
+    "website": "http://taqueria27.com/",
+    "formatted_address": "1688 W Traverse Pkwy, Lehi, UT 84043, USA",
+    "address_components": [
+      {
+        "long_name": "1688",
+        "short_name": "1688",
+        "types": [
+          "street_number"
+        ]
+      },
+      {
+        "long_name": "West Traverse Parkway",
+        "short_name": "W Traverse Pkwy",
+        "types": [
+          "route"
+        ]
+      },
+      {
+        "long_name": "Lehi",
+        "short_name": "Lehi",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Utah County",
+        "short_name": "Utah County",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Utah",
+        "short_name": "UT",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United States",
+        "short_name": "US",
+        "types": [
+          "country",
+          "political"
+        ]
+      },
+      {
+        "long_name": "84043",
+        "short_name": "84043",
+        "types": [
+          "postal_code"
+        ]
+      }
+    ],
+    "state": "Utah",
+    "city": "Lehi",
+    "place_id": "ChIJVQyR-PCBUocRPBHpG_1v-1s",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "food",
+      "point_of_interest",
+      "restaurant"
+    ],
+    "reviews": [
+      {
+        "author_name": "Virgil and Emily Parks",
+        "author_url": "https://www.google.com/maps/contrib/112161475352779525581/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLc_kpwPU8qCx9vA40yoqTng9SAEJNZ1BOXhMLHthh7q3p09g=s128-c0x00000000-cc-rp-mo",
+        "rating": 5,
+        "relative_time_description": "a week ago",
+        "text": "Delicious food and friendly service. My husband and I split taco choices so we each got to try the duck, portobello, and angus carne asada tacos (as in order in my picture). Highly recommend all 3! So glad we stopped in!",
+        "time": 1754178556,
+        "translated": false
+      },
+      {
+        "author_name": "Alexis Roach",
+        "author_url": "https://www.google.com/maps/contrib/117200419104991257851/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJgGz1XGdReTS-J84vNdPf8CpTVa9uw-V98gEYw6A53RsLFew=s128-c0x00000000-cc-rp-mo",
+        "rating": 5,
+        "relative_time_description": "a week ago",
+        "text": "Food was amazing! We had the queso dip, carne asada fajitas and the southwest salad. Everything was delicious and fresh! The home made salsas were so good, we had to buy some to go! Service was amazing as well, both our original waitress and waiter, once we were transferred during shift change , were great!",
+        "time": 1753913972,
+        "translated": false
+      },
+      {
+        "author_name": "LuAnn Charles",
+        "author_url": "https://www.google.com/maps/contrib/114586793741777916917/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWeEtEsHrVWkdmxJr_6Ekilo1oBmoM_fag3uqOpZOcvSdwmC9GIHQ=s128-c0x00000000-cc-rp-mo-ba2",
+        "rating": 5,
+        "relative_time_description": "2 weeks ago",
+        "text": "Fantastic Dining Experience!\n\nWe had a wonderful meal here! The service was excellent—our server was kind, attentive, and even brought a sample of the enchilada sauce to make sure it wasn’t too spicy for me, which I really appreciated.\n\nWe started with the shrimp bites appetizer—absolutely delicious! The balsamic glaze was divine and complemented the shrimp perfectly. I ordered the spring enchiladas and loved every bite. The flavors were fresh, and the small side salad was a lovely touch.\n\nThe atmosphere was beautiful and added to the overall experience. Our server made the evening feel warm and fun. I would definitely recommend this place and look forward to coming back!",
+        "time": 1753747222,
+        "translated": false
+      },
+      {
+        "author_name": "Tarra Anderson",
+        "author_url": "https://www.google.com/maps/contrib/104925365714282901297/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLCTkclNmJ_jJJ69iYqkJ-SK5AkgMV7J6CDOZDytbdWohkoLg=s128-c0x00000000-cc-rp-mo",
+        "rating": 4,
+        "relative_time_description": "2 weeks ago",
+        "text": "We like this place a lot. Since being here last time the menu has gotten bigger and more varied. I got the butter leaf wedge salad-not my favorite. I love their tacos. You used to mix and match but now have to get 2 the same with a bit of a price increase. Our server was great!",
+        "time": 1753493279,
+        "translated": false
+      },
+      {
+        "author_name": "BatMax 907",
+        "author_url": "https://www.google.com/maps/contrib/116298058794597954868/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX3sWhwOUf2t78dshkeFlk1pZRtWot_pcCM5jfVvxYbxSDFNVwQ=s128-c0x00000000-cc-rp-mo",
+        "rating": 5,
+        "relative_time_description": "2 weeks ago",
+        "text": "I had an incredible experience at Taqueria 27! The food was fresh, flavorful, and came out fast — but what really made the visit memorable was our server, Chloe. She was absolutely amazing! Super friendly, attentive, and made us feel welcome from the moment we sat down. Chloe had great menu recommendations and kept everything running smoothly the entire time. You can tell she genuinely cares about the customer experience. Definitely ask for Chloe if you go — she’ll make your night! Can’t wait to come back!",
+        "time": 1753492409,
+        "translated": false
+      }
+    ],
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/100878331813067427343\">Taqueria 27 Lehi</a>"
+        ],
+        "photo_reference": "ATKogpe5eG1JVAU3BbmFdfDN2-cKa4ELBYfR0hoae3rZ9Jzc4mt3NCxVyioE-OR-BmlDPL5uWseylT3PkV355AUoDS625leHVtjbNNeTqW7TwOHhYItKhkNesi_ynsGPPznRlFNZL3D24vkbGSaDgKYUrVDYdXtdoSh6ihynRslL6ISyi87ewHOzJdSdKZ8lPbY5BMtLxqnnj8mtYvnjmRjVgrCQadS3ofC_ZCVhQmY5MoDAcyi3iWEOaDKzsGAPgU3EQfxUakkz9_6pfiDki5dpmjwD_4Ma8Y9Qhynm9a7TTHIrGg",
+        "width": 4032
+      },
+      {
+        "height": 2641,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/100878331813067427343\">Taqueria 27 Lehi</a>"
+        ],
+        "photo_reference": "ATKogpexPZ5qQbKmIlcJIHlrfFi3ncfChLer_zT4Uzfq7-Ao74wTCFvIPOSPA28QkzyBcDHZte5OzMeaCjPeWa_-kGl3gtMhdie_IbLkhIynlg8KHkxZa-xLZH2POa7SMQtm-06pNBIrBXVphaoBf60zOfEGS58Ti0fYEiUxgfWP0PGLkJkbHwYMJSv6eYoIHuj0OP2K5B7zQ1roQWiZ5DMp3jjWHj4gg1JsxGe60tun8KeF4yzxrgwe8hvrBMysB6SPjH9C2Shp7Q5_DgIvKxK4E9Qx-HI_-Ubh3MRdPtvwUSEI_g",
+        "width": 3630
+      },
+      {
+        "height": 4800,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/112161475352779525581\">Virgil and Emily Parks</a>"
+        ],
+        "photo_reference": "ATKogpeYjQ-OahIeMslaRQTJ6AvaEX6vYeu3qInAngK3-IoJJjvyYTkOLGiYH-3iiKuz1JUcZAYa6lCchtfDbjlv3zqCRZoj3nTrRv8tNLn8S_5hMJkGl2j1NRIx0kVNf78KrG9geU4UMxM2FL3MCyq-Z3TTi-UYTu_72qQgIpi-NpJ6SUeRGpR1pxTqQI2_cTQanQutCCaSKHupjyl2h3D4NrgAft44K-e7HUuvNiesA2BaKlCrW_BMDlnZww54Q9-QDbKG1gml75t7qmPc9u81RfVPjc13tEvgmQELlTdQGpkcC27JDet-VmoxxOEvUYNRQoXp5KR2-wXXYXtKuoB7RVJHBtdGerJq2h3LEcKjqCKdrp6-fz2VFKipE08cCXZcW3bXXlN0S7rSuhnLEEkMcRaUEvhmhxlOweQLTU0iM_Fr9EfthpGngXrfRoxvTHNF",
+        "width": 3600
+      },
+      {
+        "height": 4800,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/113478913440593334154\">Jennette Brown</a>"
+        ],
+        "photo_reference": "ATKogpf4d1OZmC-rCxUSS3bVLi3mUl1SAnQ05RRESQqW7ODZb1vq-NDhBoK6cnP7Mx7I9bacuk7MOfhi1_ZKOiGRvjWUYFRopEWZ3_BPpOJNxgleJ0FHbCtMYw2A3IiovJ8lrUZzFzdr2tAMpjt4WzqRMlo_C4Nm-Nu0Rhlo1OIdnmqN34FOQlan-oviQoFprIKwxkN0BxI5MVDpc34eBrE9dYk_2SIDFmsBib3vilOjLXgvaDYj3_NWwAS8_MMbMTSottdbPBMRtvgLXWE0JTgoJKRiQNU9JBtd6gjLeKNhZ4QTaRil7cNEflFZO2h0Xzslz9noLjBbfqNM0v7G1Ls89mjynW-Vy06S_jAmhiqcguVoCGz8kD04TC39pzGS5r9CcfXTJaOs_9sCmZYskqwXZDVSrkp1eE_PNhgibNdZX_Pnhg",
+        "width": 3599
+      },
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115585779908777565626\">Wendy</a>"
+        ],
+        "photo_reference": "ATKogpcpJ8uffQD7U3taCsr7Uxdv7BbuDL4trOcvviwJWsafUy9nnWB6Vt6WjTb_AA29HNm0ZCeED5AlQTjgEJquO4z3bfPmE_ByrBQi6ul1JuMYnJ_ssvxLcGMHK7fcwQJceyAo1mJb3QPjoTVgPr9Rhke6t34SJhZSHmC05Mp2zNHTc95yF95--3h7CpdVxPA0rzWDqFW78b8B_9ok7xLVBaHqhfguGh1P_KP_no264Ve4-0XShqYMj0_nym4gLmh-m85XbkazlDWJYCypGlC2EnxShuRgv56OJkfW79D_wlxf_sAkgVo7ogNp5k8YPca3MpXv63UgkxWasa462lQvmvJa6jCo4C7Z7KRpi-1lBV_YA4CnNC6H4ru8SptafNVzC2fVghtrWsDvMNPD6MmzYyLKv7UIEjip4d9W9o64prw",
+        "width": 3024
+      },
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/114452057247438131418\">Mark Berg</a>"
+        ],
+        "photo_reference": "ATKogpcj01HyoFWp-P40HI0oRcDwkeFDAbccCeSpQ0WrwT3qnRwML3iR3aLnbbdhLJhi340P1vcjvqVYLrww9sP5xG25SdOpb7tKZZtmHMPP6_X715x2PY-rCNbGRlAZ28yrboFwTTtNzHAg8lS4IUleJ05tv0hDHXQkB0cw1LcFN6lZZrAR3KkmXP9j0LhTe7_xWEIjSIJrZm7bLIoQajdD1_ucotzRwn99PCrvLCzyyjrrnrIPcMau8tDtPiMRYIKLshVxHXNKZiqfKFDj9zqKwpFXPgLkffKVaOwn7xemqDH4Lfm74-IjIoiCndBl-hk7kmE-jJi5g5isPhpxmNhX2JUvDRwCH2nUa_r59Qm-_x8xsGsTXxlapCseYssMmCbbGLvFNvwIrdTtiEoNnqlFEvv8tyaM-ipCy07uF8jw-5J38h3JlDeNxXSreax7nw",
+        "width": 3024
+      },
+      {
+        "height": 2252,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102867151424538935664\">Alisha Stubbs</a>"
+        ],
+        "photo_reference": "ATKogpcrQdE7ndyi4T9I04kicr7nvyXsfeFhJDrMGaAyM4Iglf30WerBLf-ab32f2JFezAJgBylpczn4Dgjv8MQv38REOrJq_2meBtdbcTBuIvuG8dd43YbVleXxcdQdE2wHmRko3leRCdXpC2hqyqpp6uXgRLDQ4YG46LcFlOvFZOmEBIW3R6IRmneUI9U7FEnQAiS495FSpDhJq0ckzEKqqXMAwzFeWBNbMwfL9lzso2ImsW5Ti_v3sdd8rYBEsIsnhn3GgeuyOckHZhDeceoeQzwGPeNiyUWsRyhltDw74OvHSuwCxyZHFduu8zlyg_G6wfKcEcZNZQK-Kz2e1xM8SCt1ANd-2lidhSOcYSU4oYItzHfZMKzGhh4k-3yUdR0yDakOs4HbQGnzgk6qRgi4ITDHFGfClDteZ3Ccc62fr2k",
+        "width": 3320
+      },
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/103965221749510212117\">Cory Edwards</a>"
+        ],
+        "photo_reference": "ATKogpc-9ZIY89EqW-qmYGWoThHMzxWvcST-MrPGPspfy1pP4JblhwaqkBqqyr3i6MaiXA-xi4w_xjExdzVSQQP16oy1Cu3UOMlGxOnlgomEwhsgHVIAlbJIIB7Zjrkor6h8zJ7WlWHXXXD8JS__PxzImzJBQ1OWxDDaZct6vKvJVtL-SaEB-a6NY8M7CsKZtGKg58Lb9FkydabHz3y_OtFV4s2zBa2zcirzfScN_R_PcJtV5Dfk0YtuQ3zuXnX1-fYvzBgzFsBrg9DFXuE7gHUwUg0L2sMFxUGbT7iYj9uQV51KzJ7LtYHW5Owx0Cak9OT_8hmUrMrzpTN8ZzCSF5ZL7x_EDoZqLfmu7fxVARkgIlqbVU5xXVWat25AocFuGSX1KijjZ4jr7zqJADDfuo6P02oY04dcxexBCz4hweffuPc",
+        "width": 4032
+      },
+      {
+        "height": 1512,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110880938105459544301\">DCS</a>"
+        ],
+        "photo_reference": "ATKogpdFURqabhtrVstHnDluKj2iu92Kg_vk5Mr_JsRO8FSTiU2gS3BikbgnOl32wRQvDhd6VYBUsgF8S54DdaSmdgdmp51c60hFQekeh4jEXZ3Yo9Y2D_u5WtGLh71sVvxFKNPquxnTiX2I3lmbaltqlVBDAymTzY85zOw13womBk8wwbJCpe6KRanLTezR79jW_WrupE3c9luWD-3vwdxfQ3Lv_IBQhj0gCv_uVvGKzNFsS-bsoOWrgPhDJJv-oOzw1FTkngVos9ov7qygXq_Zawamzd4QA6tv3nG6bzKeRHl6h-DJxs3Qj_3nWSINnRDEWKI8Fj6HpW0GM6EF_KAHqgpd3TMW796ujZefLZ6RGqeiwDKtSH-XkMkps0p0zuqdYBCevt4rRNQFwd2N3oTaWT3t2sJOEmbaH57VFUwhz3LkaIM",
+        "width": 2016
+      },
+      {
+        "height": 1963,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102867151424538935664\">Alisha Stubbs</a>"
+        ],
+        "photo_reference": "ATKogpfL9TOQ1OT304CItPrWS7SySAWAHO4wVOf6F_xvphp1vhIHYnMlOPvYdZSyCW2-VOs24_mfoHdEkZlwQKAsY9I3KEEhYGOm2q7ZEFxPtESNQ0-yqwdeIvrQV3erTnKU8Tis9pg8BLNhHn6F-v4O3H7bAvha77KA9oovzYBTeAgPuwBl6xHG3ZsXfR85ylxA3U6vOMLfQT0Xg_iCYSotwuHRHsavu-64bm5neTNGJh2dI-yV7DYdI9AevI0o3M8QxETlljxJMSQFd8pewHpl965IQFeevKIqKPxCd9Lh5Iifg2PXK0oBsB27k6bFpOAhor2D2kSX1z45yeIkw1HE7al2sW800U6wnKfv_4Pu7OBHAjrXHbkSAlA4tI6A6pSVSaysFiZv-0yftN06-5upyx-C4nG2OeyLfDvjjGil18sPIg",
+        "width": 3240
+      }
+    ],
+    "photoCount": 10,
+    "opening_hours": {
+      "open_now": true,
+      "periods": [
+        {
+          "close": {
+            "day": 0,
+            "time": "2100"
+          },
+          "open": {
+            "day": 0,
+            "time": "1100"
+          }
+        },
+        {
+          "close": {
+            "day": 1,
+            "time": "2100"
+          },
+          "open": {
+            "day": 1,
+            "time": "1100"
+          }
+        },
+        {
+          "close": {
+            "day": 2,
+            "time": "2100"
+          },
+          "open": {
+            "day": 2,
+            "time": "1100"
+          }
+        },
+        {
+          "close": {
+            "day": 3,
+            "time": "2100"
+          },
+          "open": {
+            "day": 3,
+            "time": "1100"
+          }
+        },
+        {
+          "close": {
+            "day": 4,
+            "time": "2100"
+          },
+          "open": {
+            "day": 4,
+            "time": "1100"
+          }
+        },
+        {
+          "close": {
+            "day": 5,
+            "time": "2200"
+          },
+          "open": {
+            "day": 5,
+            "time": "1100"
+          }
+        },
+        {
+          "close": {
+            "day": 6,
+            "time": "2200"
+          },
+          "open": {
+            "day": 6,
+            "time": "1100"
+          }
+        }
+      ],
+      "weekday_text": [
+        "Monday: 11:00 AM – 9:00 PM",
+        "Tuesday: 11:00 AM – 9:00 PM",
+        "Wednesday: 11:00 AM – 9:00 PM",
+        "Thursday: 11:00 AM – 9:00 PM",
+        "Friday: 11:00 AM – 10:00 PM",
+        "Saturday: 11:00 AM – 10:00 PM",
+        "Sunday: 11:00 AM – 9:00 PM"
+      ]
+    },
+    "price_level": 2,
+    "editorial_summary": null,
+    "responseRate": 50,
+    "averageResponseTime": "2 days"
+  },
+  "profileAnalysis": {
+    "completeness": {
+      "score": 75,
+      "missingElements": []
+    },
+    "optimization": {
+      "score": 70,
+      "issues": []
+    },
+    "competitiveness": 65,
+    "recommendations": [],
+    "strengths": [],
+    "weaknesses": []
+  },
+  "keywords": {
+    "trackedKeywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "mexican near me",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "mexican delivery Lehi",
+        "position": 13,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 50,
+        "url": "https://taqueria27.com/",
+        "title": "Taqueria 27 - Salt Lake City, UT",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best mexican Lehi",
+        "position": 8,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://taqueria27.com/",
+        "title": "Taqueria 27 - Salt Lake City, UT",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "Lehi mexican",
+        "position": 3,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://taqueria27.com/",
+        "title": "Taqueria 27 - Salt Lake City, UT",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "mexican places near me",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "mexican Lehi Utah",
+        "position": 5,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://taqueria27.com/",
+        "title": "Taqueria 27 - Salt Lake City, UT",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "mexican delivery near me",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "mexican open now",
+        "position": 7,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://taqueria27.com/",
+        "title": "Taqueria 27 - Salt Lake City, UT",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "domainRankedKeywords": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    }
+  },
+  "localCompetitorData": [],
+  "localPackReport": {
+    "summary": {
+      "visibility_score": 63,
+      "keywords_appeared": 5,
+      "total_keywords": 8,
+      "average_position": 3,
+      "best_position": 2
+    },
+    "keyword_results": [
+      {
+        "keyword": "mexican near me",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "El Mexiquense Grill",
+            "address": "Lehi, UT ",
+            "website": "",
+            "rating": 4.2,
+            "reviews": 1800
+          },
+          {
+            "position": 2,
+            "name": "Sol Agave",
+            "address": "American Fork, UT ",
+            "website": "https://www.solagave.com/",
+            "rating": 4.8,
+            "reviews": 7800
+          },
+          {
+            "position": 3,
+            "name": "La Fountain Mexican Restaurant Lehi",
+            "address": "Lehi, UT ",
+            "website": "http://lafountainmexutah.com/",
+            "rating": 4.1,
+            "reviews": 1400
+          }
+        ]
+      },
+      {
+        "keyword": "mexican Lehi",
+        "found": true,
+        "position": 4,
+        "confidence": 100,
+        "matched_fields": [
+          "title",
+          "url"
+        ],
+        "local_pack_data": {
+          "name": "Taqueria 27 Lehi",
+          "address": "Lehi, UT ",
+          "website": "http://taqueria27.com/",
+          "phone": "(801) 331-8033",
+          "rating": 4.4,
+          "reviews": 1800
+        },
+        "competitors": [
+          {
+            "position": 1,
+            "name": "La Fountain Mexican Restaurant Lehi",
+            "address": "Lehi, UT ",
+            "website": "http://lafountainmexutah.com/",
+            "rating": 4.1,
+            "reviews": 1400
+          },
+          {
+            "position": 2,
+            "name": "El Mexiquense Grill",
+            "address": "Lehi, UT ",
+            "website": "",
+            "rating": 4.2,
+            "reviews": 1800
+          },
+          {
+            "position": 3,
+            "name": "Nachos Live",
+            "address": "Lehi, UT ",
+            "website": "http://www.nachoslive.com/",
+            "rating": 4.6,
+            "reviews": 427
+          }
+        ]
+      },
+      {
+        "keyword": "best mexican Lehi",
+        "found": true,
+        "position": 3,
+        "confidence": 100,
+        "matched_fields": [
+          "title",
+          "url"
+        ],
+        "local_pack_data": {
+          "name": "Taqueria 27 Lehi",
+          "address": "Lehi, UT ",
+          "website": "http://taqueria27.com/",
+          "phone": "(801) 331-8033",
+          "rating": 4.4,
+          "reviews": 1800
+        },
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Sol Agave",
+            "address": "American Fork, UT ",
+            "website": "https://www.solagave.com/",
+            "rating": 4.8,
+            "reviews": 7800
+          },
+          {
+            "position": 2,
+            "name": "Nachos Live",
+            "address": "Lehi, UT ",
+            "website": "http://www.nachoslive.com/",
+            "rating": 4.6,
+            "reviews": 427
+          }
+        ]
+      },
+      {
+        "keyword": "mexican delivery near me",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Sol Agave",
+            "address": "American Fork, UT ",
+            "website": "https://www.solagave.com/",
+            "rating": 4.8,
+            "reviews": 7800
+          },
+          {
+            "position": 2,
+            "name": "Nachos Live",
+            "address": "Lehi, UT ",
+            "website": "http://www.nachoslive.com/",
+            "rating": 4.6,
+            "reviews": 427
+          },
+          {
+            "position": 3,
+            "name": "La Fountain Mexican Restaurant Lehi",
+            "address": "Lehi, UT ",
+            "website": "http://lafountainmexutah.com/",
+            "rating": 4.1,
+            "reviews": 1400
+          }
+        ]
+      },
+      {
+        "keyword": "mexican Lehi Utah",
+        "found": true,
+        "position": 3,
+        "confidence": 100,
+        "matched_fields": [
+          "title",
+          "url"
+        ],
+        "local_pack_data": {
+          "name": "Taqueria 27 Lehi",
+          "address": "Lehi, UT ",
+          "website": "http://taqueria27.com/",
+          "phone": "(801) 331-8033",
+          "rating": 4.4,
+          "reviews": 1800
+        },
+        "competitors": [
+          {
+            "position": 1,
+            "name": "La Fountain Mexican Restaurant Lehi",
+            "address": "Lehi, UT ",
+            "website": "http://lafountainmexutah.com/",
+            "rating": 4.1,
+            "reviews": 1400
+          },
+          {
+            "position": 2,
+            "name": "El Mexiquense Grill",
+            "address": "Lehi, UT ",
+            "website": "",
+            "rating": 4.2,
+            "reviews": 1800
+          }
+        ]
+      },
+      {
+        "keyword": "top mexican Lehi",
+        "found": true,
+        "position": 2,
+        "confidence": 100,
+        "matched_fields": [
+          "title",
+          "url"
+        ],
+        "local_pack_data": {
+          "name": "Taqueria 27 Lehi",
+          "address": "Lehi, UT ",
+          "website": "http://taqueria27.com/",
+          "phone": "(801) 331-8033",
+          "rating": 4.4,
+          "reviews": 1800
+        },
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Sol Agave",
+            "address": "American Fork, UT ",
+            "website": "https://www.solagave.com/",
+            "rating": 4.8,
+            "reviews": 7800
+          }
+        ]
+      },
+      {
+        "keyword": "mexican restaurant near me",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Sol Agave",
+            "address": "American Fork, UT ",
+            "website": "https://www.solagave.com/",
+            "rating": 4.8,
+            "reviews": 7800
+          },
+          {
+            "position": 2,
+            "name": "La Fountain Mexican Restaurant Lehi",
+            "address": "Lehi, UT ",
+            "website": "http://lafountainmexutah.com/",
+            "rating": 4.1,
+            "reviews": 1400
+          },
+          {
+            "position": 3,
+            "name": "El Mexiquense Grill",
+            "address": "Lehi, UT ",
+            "website": "",
+            "rating": 4.2,
+            "reviews": 1800
+          }
+        ]
+      },
+      {
+        "keyword": "mexican food Lehi",
+        "found": true,
+        "position": 3,
+        "confidence": 100,
+        "matched_fields": [
+          "title",
+          "url"
+        ],
+        "local_pack_data": {
+          "name": "Taqueria 27 Lehi",
+          "address": "Lehi, UT ",
+          "website": "http://taqueria27.com/",
+          "phone": "(801) 331-8033",
+          "rating": 4.4,
+          "reviews": 1800
+        },
+        "competitors": [
+          {
+            "position": 1,
+            "name": "La Fountain Mexican Restaurant Lehi",
+            "address": "Lehi, UT ",
+            "website": "http://lafountainmexutah.com/",
+            "rating": 4.1,
+            "reviews": 1400
+          },
+          {
+            "position": 2,
+            "name": "El Mexiquense Grill",
+            "address": "Lehi, UT ",
+            "website": "",
+            "rating": 4.2,
+            "reviews": 1800
+          }
+        ]
+      }
+    ],
+    "recommendations": [
+      "Not appearing for \"mexican near me\", \"mexican delivery near me\", \"mexican restaurant near me\" - optimize Google My Business profile with these keywords",
+      "Ranking below #1 for 5 keywords - increase customer reviews and engagement to improve rankings"
+    ],
+    "scan_metadata": {
+      "location": "Lehi,Utah,United States",
+      "timestamp": "2025-08-12T22:42:11.180Z",
+      "total_scan_time_ms": 25458
+    }
+  },
+  "reviewsAnalysis": {
+    "overallScore": 66,
+    "totalReviews": 0,
+    "averageRating": 4.4,
+    "sentimentBreakdown": {
+      "positive": 100,
+      "neutral": 0,
+      "negative": 0
+    },
+    "reviewSources": [
+      "Google Business Profile (Limited)"
+    ],
+    "keyThemes": [
+      "Food Quality",
+      "Service",
+      "Atmosphere",
+      "Pricing"
+    ],
+    "recentReviews": [
+      {
+        "author": "Virgil and Emily Parks",
+        "rating": 5,
+        "text": "Delicious food and friendly service. My husband and I split taco choices so we each got to try the duck, portobello, and angus carne asada tacos (as in order in my picture). Highly recommend all 3! So glad we stopped in!",
+        "date": "2025-08-02T23:49:16.000Z",
+        "platform": "Google Places"
+      },
+      {
+        "author": "Alexis Roach",
+        "rating": 5,
+        "text": "Food was amazing! We had the queso dip, carne asada fajitas and the southwest salad. Everything was delicious and fresh! The home made salsas were so good, we had to buy some to go! Service was amazing as well, both our original waitress and waiter, once we were transferred during shift change , were great!",
+        "date": "2025-07-30T22:19:32.000Z",
+        "platform": "Google Places"
+      },
+      {
+        "author": "LuAnn Charles",
+        "rating": 5,
+        "text": "Fantastic Dining Experience!\n\nWe had a wonderful meal here! The service was excellent—our server was kind, attentive, and even brought a sample of the enchilada sauce to make sure it wasn’t too spicy for me, which I really appreciated.\n\nWe started with the shrimp bites appetizer—absolutely delicious! The balsamic glaze was divine and complemented the shrimp perfectly. I ordered the spring enchiladas and loved every bite. The flavors were fresh, and the small side salad was a lovely touch.\n\nThe atmosphere was beautiful and added to the overall experience. Our server made the evening feel warm and fun. I would definitely recommend this place and look forward to coming back!",
+        "date": "2025-07-29T00:00:22.000Z",
+        "platform": "Google Places"
+      },
+      {
+        "author": "Tarra Anderson",
+        "rating": 4,
+        "text": "We like this place a lot. Since being here last time the menu has gotten bigger and more varied. I got the butter leaf wedge salad-not my favorite. I love their tacos. You used to mix and match but now have to get 2 the same with a bit of a price increase. Our server was great!",
+        "date": "2025-07-26T01:27:59.000Z",
+        "platform": "Google Places"
+      },
+      {
+        "author": "BatMax 907",
+        "rating": 5,
+        "text": "I had an incredible experience at Taqueria 27! The food was fresh, flavorful, and came out fast — but what really made the visit memorable was our server, Chloe. She was absolutely amazing! Super friendly, attentive, and made us feel welcome from the moment we sat down. Chloe had great menu recommendations and kept everything running smoothly the entire time. You can tell she genuinely cares about the customer experience. Definitely ask for Chloe if you go — she’ll make your night! Can’t wait to come back!",
+        "date": "2025-07-26T01:13:29.000Z",
+        "platform": "Google Places"
+      }
+    ],
+    "examples": {
+      "positive": [
+        {
+          "author": "Virgil and Emily Parks",
+          "rating": 5,
+          "text": "Delicious food and friendly service. My husband and I split taco choices so we each got to try the duck, portobello, and angus carne asada tacos (as in order in my picture). Highly recommend all 3! So glad we stopped in!",
+          "date": "2025-08-02T23:49:16.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Alexis Roach",
+          "rating": 5,
+          "text": "Food was amazing! We had the queso dip, carne asada fajitas and the southwest salad. Everything was delicious and fresh! The home made salsas were so good, we had to buy some to go! Service was amazing as well, both our original waitress and waiter, once we were transferred during shift change , were great!",
+          "date": "2025-07-30T22:19:32.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "LuAnn Charles",
+          "rating": 5,
+          "text": "Fantastic Dining Experience!\n\nWe had a wonderful meal here! The service was excellent—our server was kind, attentive, and even brought a sample of the enchilada sauce to make sure it wasn’t too spicy for me, which I really appreciated.\n\nWe started with the shrimp bites appetizer—absolutely delicious! The balsamic glaze was divine and complemented the shrimp perfectly. I ordered the spring enchiladas and loved every bite. The flavors were fresh, and the small side salad was a lovely touch.\n\nThe atmosphere was beautiful and added to the overall experience. Our server made the evening feel warm and fun. I would definitely recommend this place and look forward to coming back!",
+          "date": "2025-07-29T00:00:22.000Z",
+          "platform": "Google Places"
+        }
+      ],
+      "neutral": [],
+      "negative": []
+    },
+    "customerMoodAnalysis": {
+      "overallMood": "delighted",
+      "sentimentSummary": "Customers are genuinely thrilled with their experience. With an average 4.8/5 rating across 5 recent reviews, your restaurant consistently exceeds expectations.",
+      "sentimentDistribution": {
+        "ecstatic": 60,
+        "delighted": 40,
+        "satisfied": 0,
+        "neutral": 0,
+        "frustrated": 0,
+        "disappointed": 0,
+        "angry": 0
+      },
+      "keyMoodIndicators": [
+        {
+          "theme": "food quality",
+          "mentions": 8
+        },
+        {
+          "theme": "service excellence",
+          "mentions": 5
+        },
+        {
+          "theme": "slow service",
+          "mentions": 3
+        },
+        {
+          "theme": "atmosphere",
+          "mentions": 2
+        },
+        {
+          "theme": "speed of service",
+          "mentions": 1
+        }
+      ],
+      "emotionalBreakdown": {
+        "joy": 8,
+        "satisfaction": 4,
+        "disappointment": 0,
+        "frustration": 0,
+        "anger": 0
+      },
+      "businessInsights": {
+        "strengthsPerceived": [
+          "Customers consistently praise the friendly and attentive service, with specific mentions of servers going above and beyond to enhance the dining experience. - review management can highlight this positive aspect",
+          "The food is described as fresh, flavorful, and delicious, with standout items like tacos, fajitas, and homemade salsas that customers highly recommend. - social media marketing can showcase this strength",
+          "The restaurant's atmosphere is noted as beautiful and contributes significantly to the overall dining experience, making it memorable and enjoyable. - SEO services can leverage this for better visibility"
+        ],
+        "improvementOpportunities": [
+          "Changes in menu pricing and options (e.g., no longer able to mix and match tacos) - Boostly marketing services can improve this",
+          "Lack of awareness about menu changes and new offerings - social media marketing can improve this area",
+          "Potential negative perception due to menu changes - review management can address this concern"
+        ]
+      },
+      "detailedMetrics": {
+        "totalReviews": 5,
+        "averageRating": 4.8,
+        "ratingDistribution": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 20,
+          "5": 80
+        },
+        "sentimentTrends": {
+          "trend": "stable",
+          "recentAverageRating": 4.8,
+          "previousAverageRating": 4.8,
+          "recentReviewsCount": 5
+        }
+      }
+    },
+    "trends": {
+      "ratingTrend": "positive",
+      "volumeTrend": "increasing",
+      "responseRate": 60,
+      "averageResponseTime": "2 days"
+    },
+    "recommendations": [
+      {
+        "category": "growth",
+        "priority": "high",
+        "title": "Generate More Reviews",
+        "description": "Encourage satisfied customers to leave reviews",
+        "impact": "Increase online credibility and visibility"
+      }
+    ],
+    "googleReviews": {
+      "reviews": [
+        {
+          "author": "Virgil and Emily Parks",
+          "rating": 5,
+          "text": "Delicious food and friendly service. My husband and I split taco choices so we each got to try the duck, portobello, and angus carne asada tacos (as in order in my picture). Highly recommend all 3! So glad we stopped in!",
+          "date": "2025-08-02T23:49:16.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Alexis Roach",
+          "rating": 5,
+          "text": "Food was amazing! We had the queso dip, carne asada fajitas and the southwest salad. Everything was delicious and fresh! The home made salsas were so good, we had to buy some to go! Service was amazing as well, both our original waitress and waiter, once we were transferred during shift change , were great!",
+          "date": "2025-07-30T22:19:32.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "LuAnn Charles",
+          "rating": 5,
+          "text": "Fantastic Dining Experience!\n\nWe had a wonderful meal here! The service was excellent—our server was kind, attentive, and even brought a sample of the enchilada sauce to make sure it wasn’t too spicy for me, which I really appreciated.\n\nWe started with the shrimp bites appetizer—absolutely delicious! The balsamic glaze was divine and complemented the shrimp perfectly. I ordered the spring enchiladas and loved every bite. The flavors were fresh, and the small side salad was a lovely touch.\n\nThe atmosphere was beautiful and added to the overall experience. Our server made the evening feel warm and fun. I would definitely recommend this place and look forward to coming back!",
+          "date": "2025-07-29T00:00:22.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Tarra Anderson",
+          "rating": 4,
+          "text": "We like this place a lot. Since being here last time the menu has gotten bigger and more varied. I got the butter leaf wedge salad-not my favorite. I love their tacos. You used to mix and match but now have to get 2 the same with a bit of a price increase. Our server was great!",
+          "date": "2025-07-26T01:27:59.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "BatMax 907",
+          "rating": 5,
+          "text": "I had an incredible experience at Taqueria 27! The food was fresh, flavorful, and came out fast — but what really made the visit memorable was our server, Chloe. She was absolutely amazing! Super friendly, attentive, and made us feel welcome from the moment we sat down. Chloe had great menu recommendations and kept everything running smoothly the entire time. You can tell she genuinely cares about the customer experience. Definitely ask for Chloe if you go — she’ll make your night! Can’t wait to come back!",
+          "date": "2025-07-26T01:13:29.000Z",
+          "platform": "Google Places"
+        }
+      ],
+      "averageRating": 4.4,
+      "totalReviews": 1786
+    }
+  },
+  "competitors": [
+    {
+      "name": "Ednas Market & Grille - Lehi",
+      "domain": "ednasmarketgrillelehi.com",
+      "performance": 90,
+      "seo": 81,
+      "accessibility": 77,
+      "bestPractices": 86,
+      "overallScore": 83,
+      "rating": 4.5,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 891,
+      "keywords": 56,
+      "domainAuthority": 73,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "+50 keywords",
+      "authorityGap": 2,
+      "backlinks": 812
+    },
+    {
+      "name": "Melty",
+      "domain": "melty.com",
+      "performance": 88,
+      "seo": 79,
+      "accessibility": 75,
+      "bestPractices": 84,
+      "overallScore": 81,
+      "rating": 4.4,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 1413,
+      "keywords": 53,
+      "domainAuthority": 82,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "Similar keywords",
+      "authorityGap": 0,
+      "backlinks": 933
+    },
+    {
+      "name": "Harvest Restaurant",
+      "domain": "harvestrestaurant.com",
+      "performance": 88,
+      "seo": 79,
+      "accessibility": 75,
+      "bestPractices": 84,
+      "overallScore": 81,
+      "rating": 4.4,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 1038,
+      "keywords": 49,
+      "domainAuthority": 69,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "Similar keywords",
+      "authorityGap": 0,
+      "backlinks": 1098
+    },
+    {
+      "name": "Saltys",
+      "domain": "saltys.com",
+      "performance": 94,
+      "seo": 85,
+      "accessibility": 80,
+      "bestPractices": 89,
+      "overallScore": 87,
+      "rating": 4.7,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 1047,
+      "keywords": 50,
+      "domainAuthority": 90,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "+150 keywords",
+      "authorityGap": 5,
+      "backlinks": 1162
+    },
+    {
+      "name": "Strap Tank Brewery",
+      "domain": "straptankbrewery.com",
+      "performance": 80,
+      "seo": 72,
+      "accessibility": 68,
+      "bestPractices": 76,
+      "overallScore": 74,
+      "rating": 4,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 446,
+      "keywords": 59,
+      "domainAuthority": 75,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "Similar keywords",
+      "authorityGap": 0,
+      "backlinks": 906
+    }
+  ],
+  "competitorIntelligence": {
+    "organicCompetitors": [],
+    "keywordGaps": [
+      "best pizza delivery",
+      "pizza restaurant online ordering"
+    ],
+    "trafficEstimates": []
+  },
+  "serpFeatures": [],
+  "serpAnalysis": [],
+  "seoAnalysis": {
+    "title": "No title found",
+    "metaDescription": "No meta description found",
+    "h1Tags": [],
+    "imageCount": 0,
+    "internalLinks": 0,
+    "externalLinks": 0,
+    "schemaMarkup": false
+  },
+  "mobileExperience": {
+    "score": 51,
+    "loadTime": 0,
+    "isResponsive": true,
+    "touchFriendly": true,
+    "textReadable": true,
+    "navigationEasy": false,
+    "issues": [
+      "Mobile performance data unavailable - API configuration required"
+    ],
+    "recommendations": [
+      "Configure Google PageSpeed Insights API for mobile analysis",
+      "Enable mobile performance monitoring",
+      "Test website on mobile devices manually"
+    ]
+  },
+  "performanceMetrics": {
+    "performance": 71,
+    "accessibility": 61,
+    "bestPractices": 65,
+    "seo": 70,
+    "coreWebVitals": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0,
+      "ttfb": 0,
+      "tti": 0,
+      "tbt": 0,
+      "si": 0
+    }
+  },
+  "socialMediaLinks": {
+    "facebook": "https://www.facebook.com/411054998934864",
+    "instagram": "https://www.instagram.com/taqueria27",
+    "twitter": null,
+    "youtube": null,
+    "tiktok": null,
+    "linkedin": null
+  },
+  "socialMediaAnalysis": {
+    "activePlatforms": 2,
+    "missingPlatforms": [
+      "twitter",
+      "youtube",
+      "tiktok"
+    ],
+    "recommendations": [
+      "Add twitter presence",
+      "Add youtube presence",
+      "Add tiktok presence"
+    ]
+  },
+  "issues": [
+    {
+      "type": "seo",
+      "severity": "critical",
+      "title": "🎯 Missing in Action: Zero SEO Strategy",
+      "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+      "impact": "high",
+      "effort": "medium",
+      "icon": "🔍",
+      "color": "orange",
+      "urgency": "high",
+      "businessImpact": "Missing out on 70% of customers who search online before visiting"
+    },
+    {
+      "type": "mobile",
+      "severity": "critical",
+      "title": "📱 Mobile Disaster: Customers Can't Order",
+      "description": "Mobile performance data unavailable - API configuration required",
+      "impact": "high",
+      "effort": "medium",
+      "icon": "📱",
+      "color": "red",
+      "urgency": "immediate",
+      "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+    }
+  ],
+  "recommendations": [
+    {
+      "title": "Improve website performance",
+      "description": "Improve website performance",
+      "impact": "medium",
+      "effort": "medium",
+      "category": "technical"
+    },
+    {
+      "title": "Enhance social media presence",
+      "description": "Enhance social media presence",
+      "impact": "medium",
+      "effort": "medium",
+      "category": "marketing"
+    }
+  ],
+  "metadata": {
+    "scanId": "scan_1755038538364",
+    "scanDate": "2025-08-12T22:42:18.364Z",
+    "scanDuration": 0,
+    "scanType": "professional",
+    "dataCompleteness": 100,
+    "apiVersions": {
+      "scanner": "2.0.0",
+      "dataforseo": "3.0",
+      "googlePlaces": "v1",
+      "apify": "2.0",
+      "openai": "gpt-4o"
+    },
+    "servicesUsed": [
+      "GooglePlacesAPI",
+      "ApifyReviews",
+      "OpenAIAnalysis"
+    ],
+    "errors": [],
+    "warnings": [
+      "Keyword data incomplete"
+    ]
+  }
+}

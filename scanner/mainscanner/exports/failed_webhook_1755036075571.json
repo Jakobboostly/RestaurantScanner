@@ -1,0 +1,1277 @@
+{
+  "event": "scan_completed_full_export",
+  "version": "2.0.0",
+  "timestamp": "2025-08-12T22:01:14.905Z",
+  "scanId": "scan_1755036074905",
+  "scanDuration": 0,
+  "restaurant": {
+    "name": "Melty",
+    "domain": "lovemelty.com",
+    "placeId": "ChIJTUxbpXuBUocRJAmKOb1xNJY",
+    "location": {
+      "address": "2851 W Club House Dr #175, Lehi, UT 84043, USA",
+      "city": "Lehi",
+      "state": "UT",
+      "country": "United States",
+      "latitude": null,
+      "longitude": null
+    },
+    "categories": [],
+    "priceLevel": null,
+    "cuisine": "American",
+    "restaurantType": "FSR"
+  },
+  "scores": {
+    "overall": 70,
+    "seo": 70,
+    "performance": 68,
+    "mobile": 48,
+    "userExperience": 60,
+    "accessibility": 0,
+    "bestPractices": 0,
+    "local": 66,
+    "social": 40,
+    "reviews": 66,
+    "website": 68,
+    "domainAuthority": 69
+  },
+  "businessProfile": {
+    "name": "Melty",
+    "address": "2851 W Club House Dr #175, Lehi, UT 84043, USA",
+    "rating": 4.4,
+    "reviewCount": 279,
+    "phoneNumber": "(801) 341-8205",
+    "website": "https://lovemelty.com/",
+    "formatted_address": "2851 W Club House Dr #175, Lehi, UT 84043, USA",
+    "address_components": [
+      {
+        "long_name": "175",
+        "short_name": "175",
+        "types": [
+          "subpremise"
+        ]
+      },
+      {
+        "long_name": "2851",
+        "short_name": "2851",
+        "types": [
+          "street_number"
+        ]
+      },
+      {
+        "long_name": "West Club House Drive",
+        "short_name": "W Club House Dr",
+        "types": [
+          "route"
+        ]
+      },
+      {
+        "long_name": "Lehi",
+        "short_name": "Lehi",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Utah County",
+        "short_name": "Utah County",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Utah",
+        "short_name": "UT",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United States",
+        "short_name": "US",
+        "types": [
+          "country",
+          "political"
+        ]
+      },
+      {
+        "long_name": "84043",
+        "short_name": "84043",
+        "types": [
+          "postal_code"
+        ]
+      }
+    ],
+    "state": "Utah",
+    "city": "Lehi",
+    "place_id": "ChIJTUxbpXuBUocRJAmKOb1xNJY",
+    "business_status": "OPERATIONAL",
+    "types": [
+      "establishment",
+      "food",
+      "point_of_interest",
+      "restaurant"
+    ],
+    "reviews": [
+      {
+        "author_name": "Mary Fitch",
+        "author_url": "https://www.google.com/maps/contrib/110896516472893869912/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLjqGolEFZ4P2TZPLWZwAqg0pt31ziDYeEgI_6kDWKdvGkW0A=s128-c0x00000000-cc-rp-mo",
+        "rating": 5,
+        "relative_time_description": "3 months ago",
+        "text": "Absolutely loved our visit to Melty’s! As a current Texan who grew up in Utah, this place brought back all the right flavors with a fresh twist. Nestled near the beautiful Thanksgiving tulip gardens, it truly feels like a hidden gem worth discovering. Every bite—from the perfectly crafted sandwiches to the flavorful sauces and delicious sides—was spot on. You can taste the care and quality in everything they serve. This spot has officially become a must-stop every time we visit. Five stars all around—well done, Melty’s!",
+        "time": 1745961716,
+        "translated": false
+      },
+      {
+        "author_name": "Sarah Barrett",
+        "author_url": "https://www.google.com/maps/contrib/115979095616946444022/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXKfxfMQhBa3lrDjmJ-PY9jU-xIf3RYsGcUeed5fDG65i64S0M3Vg=s128-c0x00000000-cc-rp-mo-ba4",
+        "rating": 4,
+        "relative_time_description": "3 months ago",
+        "text": "I got the brisket sandwich and it was really good, but I did expect there to be significantly more cheese. The cheese fries and the cheese goods were also good, but nothing to write home about. Overall, the food was good but after tip we spent $42 between 2 people and that feels incredibly overpriced for a sandwich, a side and a medium drink, so I'm not sure I would go back for that reason alone.",
+        "time": 1746294026,
+        "translated": false
+      },
+      {
+        "author_name": "Heather powell",
+        "author_url": "https://www.google.com/maps/contrib/114331553638695401975/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK_u9Sq3LVsqYZe4D784oj6D8aNfL8LdzSSlJHkTkqRLNnAOA=s128-c0x00000000-cc-rp-mo-ba4",
+        "rating": 4,
+        "relative_time_description": "2 weeks ago",
+        "text": "Got the soup dipper and was perfect amount for sandwich. Grilled cheese hit the spot like only grilled cheese can when you are craving one. Service was good. Establishment was clean. Would return.",
+        "time": 1753334260,
+        "translated": false
+      },
+      {
+        "author_name": "Emily Lawrence",
+        "author_url": "https://www.google.com/maps/contrib/109354635923277947157/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU8X8_1nZtVqGq_wjlf5vd6Dg8I4PCqbJSQjGDCd-js5ukpQANh=s128-c0x00000000-cc-rp-mo",
+        "rating": 4,
+        "relative_time_description": "7 months ago",
+        "text": "Besides the small fry portion and 2 large pieces of fat in my french dip, (maybe some people like the fat, I'd don't. I want meat) it was pretty good. Flavors were great. Liked the patty melt more than the french dip, but both were still delicious. Fries had good flavor. For a busy Friday night, service was still great. Food came out less than 10 min.",
+        "time": 1736562431,
+        "translated": false
+      },
+      {
+        "author_name": "Scott M. Stringham",
+        "author_url": "https://www.google.com/maps/contrib/115931119383933260679/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXfm35eyq8FX9FGHlMhEIZeBm8ZfS8Xk8noMrOuYHV0RItR9vdJ=s128-c0x00000000-cc-rp-mo-ba5",
+        "rating": 5,
+        "relative_time_description": "3 weeks ago",
+        "text": "My son convinced me to go to Melty with him for dinner because he loves it and eats there all the time. Not only was I not disappointed, I was blown away by the delicious food. Do not be dissuaded because it's connected to a gas station. They have so many great varieties of grilled cheese, it was hard to decide what to get. I settled on the BBQ brisket, and it was an excellent choice. The meat was so tender and loaded with plenty of gooey cheese. The bread was toasted to perfection. My son gave me a bite of his French dip, and it was just as good. For the side, I ordered the mac 'n' cheese, and it was possibly the best I've ever had, including the stuff I lovingly make at home on the smoker. Convinced yet? Just go!",
+        "time": 1752677067,
+        "translated": false
+      }
+    ],
+    "photos": [
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/105752404710932752387\">Castillo Verito27</a>"
+        ],
+        "photo_reference": "ATKogpfSX1Y_7jzHhx3JUSpiZeX2Q5ODIvfeWm8lF38zrO_ZdAqptTDT9edt93Gqof0oecjdY16N2_NfEdlCqeBq8ilsKYLm1fVjbz-5viJ6e86yNGa-7M7Wx0hSD8-UtFnkTFSb3ZhmunMZK849JEhGbYYVxH5HzSCx4613cA-VE8AaYviR0Mza9-YeZBqfc-9-HLBFfMse99tlxIGGqLYS6zoBe77PLKMmnjZnFrd9LM7ehI-jo_YXi_nROqzfa89OzHePD8LsaZxfNZaDtfg0NfppdsTQBhoyeAoc3gMLXScIthAHMuwAxx0Gx1UTX9FWz6sfdc4dYGo2TI8kR8VKEJ3kYRJrhNaObDFVMpty0DnCK_i0qD_zZr9JN6NY0m6bZy0EJV3jqwb_lSUN1P_r5xVWvar7uash58r0WFLGcS_f0g",
+        "width": 1816
+      },
+      {
+        "height": 2268,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/103968964988933084371\">Podatix</a>"
+        ],
+        "photo_reference": "ATKogpeFcP5K7Ym1VfqlPi0W7rHHiCEevIq2-bjUFB73SrDhUZjcXAX2k1f9mbZPGWp6yh5XpYA708Y-dRCTV74Ig3Sy5BctBWgdI1ReFMR67Pjq2KAEDuEow9dDcDfq-INyZ5lPZkdT5i_XZTQ6SmNT5jKplWK1I7OVocI8KHPxFFIGrdOAkjG2JOdNs46_kUsa2HyLrLoQTXOUiJUZP6CEwONhO-jFcxznJ4bRUUHxVq1c5txoNc3-Pu3rTUIy6pXLf0EpwHaGPYlhUCmvgVioQL_wyEX-7WHIYvFdRqStQnFvqB5rJ7WqjjOVkp-3YUiiKtA2rJx-VVNWSHu8bVlPmOAQYX6hixEg5oCJ-VYT_QyjgVxY09KOtkbxOQudH8ugtqNXgQ9ApE64jZd7jTTCky3g929tnXTf7f8Xv9yLANUFng",
+        "width": 4032
+      },
+      {
+        "height": 3072,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/101760733850615166908\">Richard L&#39;Esperance</a>"
+        ],
+        "photo_reference": "ATKogpcHvihlDfv2RTcYJOoSBNuP7llnTGRuQYwFmoHLaGZzRII94Lx0KrwSn-dDbqdO1UEcT377-RkDj7f46u46idPDK2dbYaO8xuwP6JKrvSGXKRX7k6Y5Bsa04Bl5AkG7hmDxj02HyHpWhiXVNWFd29oeuGg6cmcWdzVsEBW9Y5IvVRmsjGNrl4nWXStiX6Wmr06LNm1RQHga7OvK0AB0d7UOOLngq2cc_sPG7SSSa1-gqlcZzqL_t528WJc0-ayrKIBTvoHQSAAYpw8H42eDE7icRSl2tOBIj93TevBophYq1o3jF8pbxronXPFSG3l_CwuI5oNCFLwaJYBFHjwdrD0wcONqRODfO-zQArB6LyAfePnjoxgAdGkN8kf8_zdkiobb5EMFTJ4_dCOM_cYFNlPZjsVQkrbzGArBHwdYtXwYpyI8",
+        "width": 4096
+      },
+      {
+        "height": 3600,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/112336576004913357605\">Palmer Tribe</a>"
+        ],
+        "photo_reference": "ATKogpf3y7_HDKESTMolaFDCew6xUHw80a8ul0n0Qz4bUp-QKlYGi8TqWeKthniMXgD1tfL2ctoDstbEvut6LyFAUMu2Aki0Ol9c7TlKsHjqFdv5uHWlAjoGIPO2OjQq05TlQy8zcko1Cf3D_Kr0OwdgdB5iGnVdxUANU1Rbn-xkKgpXOkMo0U875yNQIS_jruG5RWiAuQ78YY6qfwI3vVWUvyMbSy9bh5mM3vgz1jkGuEDu4UD3joF-7RvvAQW5SYK6Lpk9lgNK9ap3KY8A4wVNnd5wHO7uAJUutKWmY3ZR8fwzTyyPAB8mGPHUS3sNDADDlfpvoIK0Bzq7Iq6ZxeyqXxfzUP-yyTtiOW3y8m4ELEXO1d2QGIPB_Km-OnAFYy_ZoPcHRMNVSTMFjRv1QkxukiMpW-OAZZbj_rupbPqoA_dbcw8aA976fso-49_poQ",
+        "width": 4800
+      },
+      {
+        "height": 2268,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/103968964988933084371\">Podatix</a>"
+        ],
+        "photo_reference": "ATKogpfkGjOwWC9b4E5AyjGOg3THDXhnbNfWWgb80CVhbDn6sI0HKbeM-Y8VheQeCVrFVBttVWWu4dEjcM-EEbaGN3bUMS1NMEDkbOMrKs7FS_WIFDCwEGK2SHKJx1mFj4DBPGTT__8Fx_fNAWE2BQnU3BR5DSvEcLwjf1fvkiHa4dUXbPYmKpJKtI7A2vwAjFA5ahk9qeoM5GbMF85cq9BwhdHbakDb2Av07HBxDLdSTK6ONJFuOdr3ThCK8h5mqcM8ni7b-_--oLgYtp6W8F9kjvQjFtZ34mpG_sHzpZnKzu0IXnWTdCxhinQyJmt-J1YV0TVL6GzONecGYF2b-bg6XA63tqW4WHfSrcpYAtJ1QRXYxVWxOpSprpn0n1K6IK5sbPMfqzDgDxwUtWotk-1vglYyWeGL8M-p7D-JvcrWJcYLJcc",
+        "width": 4032
+      },
+      {
+        "height": 3072,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/101760733850615166908\">Richard L&#39;Esperance</a>"
+        ],
+        "photo_reference": "ATKogpdZycD3aI8iKbtoQab7-_vEztmXCydfSi-Y9gwucsUCkP_n4FLV33LBkppJnkUX34oMMyqXyLa3sG-Pfnx3tgyUw6_U12YaUPNVGHCpvJtiC7UXlYkEtuKe7T6i3zGobHUQ8kvI4GKQmBSgTzNlRoHGWnEGg4ipihvGxzMjeypQcHswDK-1DM3KOnuxZRgeKeocj_d7rsSFaYpeB9KhiOTCRkcaKqDYlxNqwPF9sXPsIGkZcjqxwHYWHrzaOSaUOwoVLfcV42KNVhdutWkciut2GRB2fw40KLHD1FNWt1cZXd3cCIzRPeS4vlTkUcgUbdBWY85-M4vkOPNjB2I7lIg7x5j3L-_HoNLr_hsQRMdqFntM-Xd3QGkIZHGjsoUeNAMsKE_ejuetet1Q0T5-8-ohWmfUHtMNLfpLnKmL_qOiwQ",
+        "width": 4096
+      },
+      {
+        "height": 4000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/107991815134686097386\">Brian Cameron</a>"
+        ],
+        "photo_reference": "ATKogpcuXCBOt-f89P8RV-Jsm4I-qotz-zfahZKNMdyn0mDdIosrkMGWaNYxzMMQAbM6VRO7m6c81oymsaYiI2n5deiy1WqdC8pV4WkggrC1ehiU9Ge0LRnPvLUYSUFIqd9MZmYqPg5Z_3HzzqekM2Xb2NmkYXwg-4XvqDk5au-xv04i0XahYb_zxjYLK4cidW2Nis-9kZPGugBsnE6e0o0H5D049BqYt52UWmtEFLYpFUjWTZBfo435TZyM8K9OuC6sT0y6XtOWZIX52hrz7Y82VBo2CZu-c-kL8-l5v6dUp0pFxNDT71uMsx2FGTyq8VGu6heKVmIVfDVNEbPVj6SB_7yqBnP8nHWeQhsSkM7WCV1TlAI_h9oZwX0ivezr5E4dg7Qskm6hnXv1IHJPRCvFaeZrTC8AYLDo1tT-KO2YWd2rmrO_",
+        "width": 3000
+      },
+      {
+        "height": 3000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/112655695666458240180\">Stratton Ahlborn</a>"
+        ],
+        "photo_reference": "ATKogpcbSVz0QGDkFye8icITG0vZkK5MZkvB8QJYw7529tJekSqpodX9yCKLqcz4xiNuygeNmdW0SXaUSGoh8dyVDGr4uOjjUn62a729MCU4eo6svyA_2MIkg5OWZw01GmX4XPqCZEXWA0ApHK2Orwrb8bG55GS0lDN8GohOrNDDjfPZE97nhG_fc6YID_YZRxM3-BoYtJDxS0fGWApXSvYgF-hftv_zAi5L2DZY9KYyIjVMGaEO8-u2E5kjcznUvAgJK0uiG2ZAboQwurLAJhpapXiRRhU8HV52EfueYtQ7UbEdL4lwhhHJkBjQM03Sxq4UUbsoFqJIE8tkJBSrn-lqAQdpqCNcFDJsVkT04-9_9cX-fyPsU-WjGuug4cfThuHSeMG3bVZdv5FCkHJbTF-j4U1yU_6DYrM5n1122fR5w0BLpw",
+        "width": 4000
+      },
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/109583011684967285426\">Tim Ivory</a>"
+        ],
+        "photo_reference": "ATKogpdCTLTLAq4QWKvFGXexaU-m_aHnrb-dfLXgWwvUVpaoHQH1UPqLVzFwwtt57-DpLmG6c3KAEop2CXDqHDw1YRL24OKRkr1R2s4dFY_B68g0BPSXhpjomtiW2O8dyfzgoDX_KnUzlSPM2AOH_pVAEaHBW43ldfR7oy8ytXUNWphzXoILstpqyR5OyMz4fouCuO_hM_1bj_xW1Yblt2Q2g5VVO3FFFh-HrYM8498Qhqq6j1oUveztI0dBENiqyXMIYnrpE36DRQWZ2rAILE097yOBTvhUNPlhzGqEcc5W8-m--kFphCv745ACmOo3ZytKCnOvQG3xZECd84PNHlWDcEd14lk4AcK4xQSBOW9k_NORddTPh7jDcXaVNC3ASIZQAJBjxG86_aohug4LfuHdl20Um7sTY9rG_FltnpNVBDQ",
+        "width": 3024
+      },
+      {
+        "height": 4080,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/106596302565950873079\">Lily star shine24 Blue butterfly24</a>"
+        ],
+        "photo_reference": "ATKogpcibaN4bRJwC_T6azJvrSR3xnxDzxVKcL2IslLUuawtbn0fui9e9EZxCItDZzsg69t69C16O4BxxVUGfdeQM4OEISn6wEWNPEkyF-y6NC2NBZ426BiJb4UaqmQn9rpXVoqYqYxsT49VS77-avlnN5N4y507ewqdtOjMKe-X9WohWdZhl-Ci7YOW6zXKfntYaxx0KokBsbVsPUodgqvGYA5o5x-2KAEMD3O2iA-v8yxivvA5Pmo2Iyzh7Dl3G9mZR0Q0KIovD1jQkAhozKw-3HdLAHMPgSiCSfdyaHHtwdi_eLr1YrfqZznyNwkukDTF0DxphT8DG1SC7GpQGoCn3O-TdHKp9dNb5QWGQQd7rsbUO6PqXMyKvklfnSIq734IB_VSovHXQtm-KYQ-wm7LA6jq8-4qNOcCVHauzT6jEVJLOC1JgGQeqc53iUcg-Q2z",
+        "width": 3072
+      }
+    ],
+    "photoCount": 10,
+    "opening_hours": {
+      "open_now": true,
+      "periods": [
+        {
+          "close": {
+            "day": 0,
+            "time": "1900"
+          },
+          "open": {
+            "day": 0,
+            "time": "1100"
+          }
+        },
+        {
+          "close": {
+            "day": 1,
+            "time": "2100"
+          },
+          "open": {
+            "day": 1,
+            "time": "1030"
+          }
+        },
+        {
+          "close": {
+            "day": 2,
+            "time": "2100"
+          },
+          "open": {
+            "day": 2,
+            "time": "1030"
+          }
+        },
+        {
+          "close": {
+            "day": 3,
+            "time": "2100"
+          },
+          "open": {
+            "day": 3,
+            "time": "1030"
+          }
+        },
+        {
+          "close": {
+            "day": 4,
+            "time": "2100"
+          },
+          "open": {
+            "day": 4,
+            "time": "1030"
+          }
+        },
+        {
+          "close": {
+            "day": 5,
+            "time": "2200"
+          },
+          "open": {
+            "day": 5,
+            "time": "1030"
+          }
+        },
+        {
+          "close": {
+            "day": 6,
+            "time": "2200"
+          },
+          "open": {
+            "day": 6,
+            "time": "1030"
+          }
+        }
+      ],
+      "weekday_text": [
+        "Monday: 10:30 AM – 9:00 PM",
+        "Tuesday: 10:30 AM – 9:00 PM",
+        "Wednesday: 10:30 AM – 9:00 PM",
+        "Thursday: 10:30 AM – 9:00 PM",
+        "Friday: 10:30 AM – 10:00 PM",
+        "Saturday: 10:30 AM – 10:00 PM",
+        "Sunday: 11:00 AM – 7:00 PM"
+      ]
+    },
+    "price_level": 1,
+    "editorial_summary": null,
+    "responseRate": 50,
+    "averageResponseTime": "2 days"
+  },
+  "profileAnalysis": {
+    "completeness": {
+      "score": 75,
+      "missingElements": []
+    },
+    "optimization": {
+      "score": 70,
+      "issues": []
+    },
+    "competitiveness": 65,
+    "recommendations": [],
+    "strengths": [],
+    "weaknesses": []
+  },
+  "keywords": {
+    "trackedKeywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "pizza near me",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery Lehi",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best pizza Lehi",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "Lehi pizza",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza places near me",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza Lehi Utah",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery near me",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza open now",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "domainRankedKeywords": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    }
+  },
+  "localCompetitorData": [],
+  "localPackReport": {
+    "summary": {
+      "visibility_score": 0,
+      "keywords_appeared": 0,
+      "total_keywords": 8,
+      "average_position": 0,
+      "best_position": 0
+    },
+    "keyword_results": [
+      {
+        "keyword": "pizza near me",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Via 313 Pizza",
+            "address": "Lehi, UT ",
+            "website": "https://locations.via313.com/locations/1085-e-main-st/",
+            "rating": 4.6,
+            "reviews": 1200
+          },
+          {
+            "position": 2,
+            "name": "Summit Pizza Co",
+            "address": "Lehi, UT ",
+            "website": "https://summitpizzaco.com/?y_source=1_Mjc4NzE3OTItNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+            "rating": 4.5,
+            "reviews": 1400
+          },
+          {
+            "position": 3,
+            "name": "Box Bite",
+            "address": "American Fork, UT ",
+            "website": "https://box-bite.square.site/?location=11ec9b68433642b097e4ac1f6bbba828",
+            "rating": 4.8,
+            "reviews": 604
+          }
+        ]
+      },
+      {
+        "keyword": "pizza Lehi",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Via 313 Pizza",
+            "address": "Lehi, UT ",
+            "website": "https://locations.via313.com/locations/1085-e-main-st/",
+            "rating": 4.6,
+            "reviews": 1200
+          },
+          {
+            "position": 2,
+            "name": "Summit Pizza Co",
+            "address": "Lehi, UT ",
+            "website": "https://summitpizzaco.com/?y_source=1_Mjc4NzE3OTItNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+            "rating": 4.5,
+            "reviews": 1400
+          },
+          {
+            "position": 3,
+            "name": "Pizzeria Limone",
+            "address": "Lehi, UT ",
+            "website": "http://www.pizzerialimone.com/",
+            "rating": 4.1,
+            "reviews": 905
+          }
+        ]
+      },
+      {
+        "keyword": "best pizza Lehi",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Summit Pizza Co",
+            "address": "Lehi, UT ",
+            "website": "https://summitpizzaco.com/?y_source=1_Mjc4NzE3OTItNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+            "rating": 4.5,
+            "reviews": 1400
+          },
+          {
+            "position": 2,
+            "name": "Box Bite",
+            "address": "American Fork, UT ",
+            "website": "https://box-bite.square.site/?location=11ec9b68433642b097e4ac1f6bbba828",
+            "rating": 4.8,
+            "reviews": 604
+          },
+          {
+            "position": 3,
+            "name": "Via 313 Pizza",
+            "address": "Lehi, UT ",
+            "website": "https://locations.via313.com/locations/1085-e-main-st/",
+            "rating": 4.6,
+            "reviews": 1200
+          }
+        ]
+      },
+      {
+        "keyword": "pizza delivery near me",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Domino's Pizza",
+            "address": "Eagle Mountain, UT ",
+            "website": "",
+            "rating": 3.1,
+            "reviews": 717
+          },
+          {
+            "position": 2,
+            "name": "Pizza Hut",
+            "address": "Saratoga Springs, UT ",
+            "website": "",
+            "rating": 2.9,
+            "reviews": 485
+          },
+          {
+            "position": 3,
+            "name": "Box Bite",
+            "address": "American Fork, UT ",
+            "website": "https://box-bite.square.site/?location=11ec9b68433642b097e4ac1f6bbba828",
+            "rating": 4.8,
+            "reviews": 604
+          }
+        ]
+      },
+      {
+        "keyword": "pizza Lehi Utah",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Via 313 Pizza",
+            "address": "Lehi, UT ",
+            "website": "https://locations.via313.com/locations/1085-e-main-st/",
+            "rating": 4.6,
+            "reviews": 1200
+          },
+          {
+            "position": 2,
+            "name": "Summit Pizza Co",
+            "address": "Lehi, UT ",
+            "website": "https://summitpizzaco.com/?y_source=1_Mjc4NzE3OTItNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+            "rating": 4.5,
+            "reviews": 1400
+          },
+          {
+            "position": 3,
+            "name": "Pizzeria Limone",
+            "address": "Lehi, UT ",
+            "website": "http://www.pizzerialimone.com/",
+            "rating": 4.1,
+            "reviews": 905
+          }
+        ]
+      },
+      {
+        "keyword": "top pizza Lehi",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Summit Pizza Co",
+            "address": "Lehi, UT ",
+            "website": "https://summitpizzaco.com/?y_source=1_Mjc4NzE3OTItNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+            "rating": 4.5,
+            "reviews": 1400
+          },
+          {
+            "position": 2,
+            "name": "Via 313 Pizza",
+            "address": "Lehi, UT ",
+            "website": "https://locations.via313.com/locations/1085-e-main-st/",
+            "rating": 4.6,
+            "reviews": 1200
+          },
+          {
+            "position": 3,
+            "name": "Box Bite",
+            "address": "American Fork, UT ",
+            "website": "https://box-bite.square.site/?location=11ec9b68433642b097e4ac1f6bbba828",
+            "rating": 4.8,
+            "reviews": 604
+          }
+        ]
+      },
+      {
+        "keyword": "pizza restaurant near me",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Via 313 Pizza",
+            "address": "Lehi, UT ",
+            "website": "https://locations.via313.com/locations/1085-e-main-st/",
+            "rating": 4.6,
+            "reviews": 1200
+          },
+          {
+            "position": 2,
+            "name": "Box Bite",
+            "address": "American Fork, UT ",
+            "website": "https://box-bite.square.site/?location=11ec9b68433642b097e4ac1f6bbba828",
+            "rating": 4.8,
+            "reviews": 604
+          },
+          {
+            "position": 3,
+            "name": "Summit Pizza Co",
+            "address": "Lehi, UT ",
+            "website": "https://summitpizzaco.com/?y_source=1_Mjc4NzE3OTItNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+            "rating": 4.5,
+            "reviews": 1400
+          }
+        ]
+      },
+      {
+        "keyword": "pizza food Lehi",
+        "found": false,
+        "confidence": 0,
+        "matched_fields": [],
+        "competitors": [
+          {
+            "position": 1,
+            "name": "Via 313 Pizza",
+            "address": "Lehi, UT ",
+            "website": "https://locations.via313.com/locations/1085-e-main-st/",
+            "rating": 4.6,
+            "reviews": 1200
+          },
+          {
+            "position": 2,
+            "name": "Summit Pizza Co",
+            "address": "Lehi, UT ",
+            "website": "https://summitpizzaco.com/?y_source=1_Mjc4NzE3OTItNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+            "rating": 4.5,
+            "reviews": 1400
+          },
+          {
+            "position": 3,
+            "name": "Box Bite",
+            "address": "American Fork, UT ",
+            "website": "https://box-bite.square.site/?location=11ec9b68433642b097e4ac1f6bbba828",
+            "rating": 4.8,
+            "reviews": 604
+          }
+        ]
+      }
+    ],
+    "recommendations": [
+      "Not appearing for \"pizza near me\", \"pizza Lehi\", \"best pizza Lehi\", \"pizza delivery near me\", \"pizza Lehi Utah\", \"top pizza Lehi\", \"pizza restaurant near me\", \"pizza food Lehi\" - optimize Google My Business profile with these keywords",
+      "Low Local Pack visibility (0%) - audit your Google My Business completeness, categories, and local citations"
+    ],
+    "scan_metadata": {
+      "location": "Lehi,Utah,United States",
+      "timestamp": "2025-08-12T22:01:04.686Z",
+      "total_scan_time_ms": 30501
+    }
+  },
+  "reviewsAnalysis": {
+    "overallScore": 66,
+    "totalReviews": 0,
+    "averageRating": 4.4,
+    "sentimentBreakdown": {
+      "positive": 100,
+      "neutral": 0,
+      "negative": 0
+    },
+    "reviewSources": [
+      "Google Business Profile (Limited)"
+    ],
+    "keyThemes": [
+      "Food Quality",
+      "Pricing",
+      "Service"
+    ],
+    "recentReviews": [
+      {
+        "author": "Heather powell",
+        "rating": 4,
+        "text": "Got the soup dipper and was perfect amount for sandwich. Grilled cheese hit the spot like only grilled cheese can when you are craving one. Service was good. Establishment was clean. Would return.",
+        "date": "2025-07-24T05:17:40.000Z",
+        "platform": "Google Places"
+      },
+      {
+        "author": "Scott M. Stringham",
+        "rating": 5,
+        "text": "My son convinced me to go to Melty with him for dinner because he loves it and eats there all the time. Not only was I not disappointed, I was blown away by the delicious food. Do not be dissuaded because it's connected to a gas station. They have so many great varieties of grilled cheese, it was hard to decide what to get. I settled on the BBQ brisket, and it was an excellent choice. The meat was so tender and loaded with plenty of gooey cheese. The bread was toasted to perfection. My son gave me a bite of his French dip, and it was just as good. For the side, I ordered the mac 'n' cheese, and it was possibly the best I've ever had, including the stuff I lovingly make at home on the smoker. Convinced yet? Just go!",
+        "date": "2025-07-16T14:44:27.000Z",
+        "platform": "Google Places"
+      },
+      {
+        "author": "Sarah Barrett",
+        "rating": 4,
+        "text": "I got the brisket sandwich and it was really good, but I did expect there to be significantly more cheese. The cheese fries and the cheese goods were also good, but nothing to write home about. Overall, the food was good but after tip we spent $42 between 2 people and that feels incredibly overpriced for a sandwich, a side and a medium drink, so I'm not sure I would go back for that reason alone.",
+        "date": "2025-05-03T17:40:26.000Z",
+        "platform": "Google Places"
+      },
+      {
+        "author": "Mary Fitch",
+        "rating": 5,
+        "text": "Absolutely loved our visit to Melty’s! As a current Texan who grew up in Utah, this place brought back all the right flavors with a fresh twist. Nestled near the beautiful Thanksgiving tulip gardens, it truly feels like a hidden gem worth discovering. Every bite—from the perfectly crafted sandwiches to the flavorful sauces and delicious sides—was spot on. You can taste the care and quality in everything they serve. This spot has officially become a must-stop every time we visit. Five stars all around—well done, Melty’s!",
+        "date": "2025-04-29T21:21:56.000Z",
+        "platform": "Google Places"
+      },
+      {
+        "author": "Emily Lawrence",
+        "rating": 4,
+        "text": "Besides the small fry portion and 2 large pieces of fat in my french dip, (maybe some people like the fat, I'd don't. I want meat) it was pretty good. Flavors were great. Liked the patty melt more than the french dip, but both were still delicious. Fries had good flavor. For a busy Friday night, service was still great. Food came out less than 10 min.",
+        "date": "2025-01-11T02:27:11.000Z",
+        "platform": "Google Places"
+      }
+    ],
+    "examples": {
+      "positive": [
+        {
+          "author": "Mary Fitch",
+          "rating": 5,
+          "text": "Absolutely loved our visit to Melty’s! As a current Texan who grew up in Utah, this place brought back all the right flavors with a fresh twist. Nestled near the beautiful Thanksgiving tulip gardens, it truly feels like a hidden gem worth discovering. Every bite—from the perfectly crafted sandwiches to the flavorful sauces and delicious sides—was spot on. You can taste the care and quality in everything they serve. This spot has officially become a must-stop every time we visit. Five stars all around—well done, Melty’s!",
+          "date": "2025-04-29T21:21:56.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Sarah Barrett",
+          "rating": 4,
+          "text": "I got the brisket sandwich and it was really good, but I did expect there to be significantly more cheese. The cheese fries and the cheese goods were also good, but nothing to write home about. Overall, the food was good but after tip we spent $42 between 2 people and that feels incredibly overpriced for a sandwich, a side and a medium drink, so I'm not sure I would go back for that reason alone.",
+          "date": "2025-05-03T17:40:26.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Heather powell",
+          "rating": 4,
+          "text": "Got the soup dipper and was perfect amount for sandwich. Grilled cheese hit the spot like only grilled cheese can when you are craving one. Service was good. Establishment was clean. Would return.",
+          "date": "2025-07-24T05:17:40.000Z",
+          "platform": "Google Places"
+        }
+      ],
+      "neutral": [],
+      "negative": []
+    },
+    "customerMoodAnalysis": {
+      "overallMood": "satisfied",
+      "sentimentSummary": "Customers have positive experiences overall. Your 4.4/5 rating from 5 recent reviews shows solid satisfaction with room for growth.",
+      "sentimentDistribution": {
+        "ecstatic": 40,
+        "delighted": 20,
+        "satisfied": 40,
+        "neutral": 0,
+        "frustrated": 0,
+        "disappointed": 0,
+        "angry": 0
+      },
+      "keyMoodIndicators": [
+        {
+          "theme": "food quality",
+          "mentions": 9
+        },
+        {
+          "theme": "atmosphere",
+          "mentions": 1
+        },
+        {
+          "theme": "cleanliness",
+          "mentions": 1
+        },
+        {
+          "theme": "overpriced",
+          "mentions": 1
+        }
+      ],
+      "emotionalBreakdown": {
+        "joy": 2,
+        "satisfaction": 11,
+        "disappointment": 1,
+        "frustration": 0,
+        "anger": 0
+      },
+      "businessInsights": {
+        "strengthsPerceived": [
+          "\"Every bite—from the perfectly crafted sandwiches to the flavorful sauces and delicious sides—was spot on.\" - social media marketing can showcase this strength",
+          "\"For a busy Friday night, service was still great. Food came out in less than 10 min.\" - review management can highlight this positive aspect",
+          "\"They have so many great varieties of grilled cheese, it was hard to decide what to get.\" - Boostly marketing services can amplify this"
+        ],
+        "improvementOpportunities": [
+          "Perception of overpriced menu items - social media marketing can improve this area",
+          "Inconsistency in food quality (e.g., small fry portion, unwanted fat in meat) - review management can address this concern",
+          "Lack of standout features in menu items (e.g., cheese goods not memorable) - social media marketing can improve this area"
+        ]
+      },
+      "detailedMetrics": {
+        "totalReviews": 5,
+        "averageRating": 4.4,
+        "ratingDistribution": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 60,
+          "5": 40
+        },
+        "sentimentTrends": {
+          "trend": "stable",
+          "recentAverageRating": 4.4,
+          "previousAverageRating": 4.4,
+          "recentReviewsCount": 5
+        }
+      }
+    },
+    "trends": {
+      "ratingTrend": "positive",
+      "volumeTrend": "increasing",
+      "responseRate": 60,
+      "averageResponseTime": "2 days"
+    },
+    "recommendations": [
+      {
+        "category": "growth",
+        "priority": "high",
+        "title": "Generate More Reviews",
+        "description": "Encourage satisfied customers to leave reviews",
+        "impact": "Increase online credibility and visibility"
+      }
+    ],
+    "googleReviews": {
+      "reviews": [
+        {
+          "author": "Heather powell",
+          "rating": 4,
+          "text": "Got the soup dipper and was perfect amount for sandwich. Grilled cheese hit the spot like only grilled cheese can when you are craving one. Service was good. Establishment was clean. Would return.",
+          "date": "2025-07-24T05:17:40.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Scott M. Stringham",
+          "rating": 5,
+          "text": "My son convinced me to go to Melty with him for dinner because he loves it and eats there all the time. Not only was I not disappointed, I was blown away by the delicious food. Do not be dissuaded because it's connected to a gas station. They have so many great varieties of grilled cheese, it was hard to decide what to get. I settled on the BBQ brisket, and it was an excellent choice. The meat was so tender and loaded with plenty of gooey cheese. The bread was toasted to perfection. My son gave me a bite of his French dip, and it was just as good. For the side, I ordered the mac 'n' cheese, and it was possibly the best I've ever had, including the stuff I lovingly make at home on the smoker. Convinced yet? Just go!",
+          "date": "2025-07-16T14:44:27.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Sarah Barrett",
+          "rating": 4,
+          "text": "I got the brisket sandwich and it was really good, but I did expect there to be significantly more cheese. The cheese fries and the cheese goods were also good, but nothing to write home about. Overall, the food was good but after tip we spent $42 between 2 people and that feels incredibly overpriced for a sandwich, a side and a medium drink, so I'm not sure I would go back for that reason alone.",
+          "date": "2025-05-03T17:40:26.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Mary Fitch",
+          "rating": 5,
+          "text": "Absolutely loved our visit to Melty’s! As a current Texan who grew up in Utah, this place brought back all the right flavors with a fresh twist. Nestled near the beautiful Thanksgiving tulip gardens, it truly feels like a hidden gem worth discovering. Every bite—from the perfectly crafted sandwiches to the flavorful sauces and delicious sides—was spot on. You can taste the care and quality in everything they serve. This spot has officially become a must-stop every time we visit. Five stars all around—well done, Melty’s!",
+          "date": "2025-04-29T21:21:56.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Emily Lawrence",
+          "rating": 4,
+          "text": "Besides the small fry portion and 2 large pieces of fat in my french dip, (maybe some people like the fat, I'd don't. I want meat) it was pretty good. Flavors were great. Liked the patty melt more than the french dip, but both were still delicious. Fries had good flavor. For a busy Friday night, service was still great. Food came out less than 10 min.",
+          "date": "2025-01-11T02:27:11.000Z",
+          "platform": "Google Places"
+        }
+      ],
+      "averageRating": 4.4,
+      "totalReviews": 279
+    }
+  },
+  "competitors": [
+    {
+      "name": "Ednas Market & Grille - Lehi",
+      "domain": "ednasmarketgrillelehi.com",
+      "performance": 90,
+      "seo": 81,
+      "accessibility": 77,
+      "bestPractices": 86,
+      "overallScore": 83,
+      "rating": 4.5,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 1009,
+      "keywords": 55,
+      "domainAuthority": 86,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "+50 keywords",
+      "authorityGap": 2,
+      "backlinks": 977
+    },
+    {
+      "name": "Harvest Restaurant",
+      "domain": "harvestrestaurant.com",
+      "performance": 88,
+      "seo": 79,
+      "accessibility": 75,
+      "bestPractices": 84,
+      "overallScore": 81,
+      "rating": 4.4,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 674,
+      "keywords": 44,
+      "domainAuthority": 75,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "Similar keywords",
+      "authorityGap": 0,
+      "backlinks": 767
+    },
+    {
+      "name": "Bona Vita Bistro",
+      "domain": "bonavitabistro.com",
+      "performance": 80,
+      "seo": 72,
+      "accessibility": 68,
+      "bestPractices": 76,
+      "overallScore": 74,
+      "rating": 4,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 953,
+      "keywords": 58,
+      "domainAuthority": 76,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "Similar keywords",
+      "authorityGap": 0,
+      "backlinks": 927
+    },
+    {
+      "name": "Strap Tank Brewery",
+      "domain": "straptankbrewery.com",
+      "performance": 80,
+      "seo": 72,
+      "accessibility": 68,
+      "bestPractices": 76,
+      "overallScore": 74,
+      "rating": 4,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 563,
+      "keywords": 51,
+      "domainAuthority": 63,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "Similar keywords",
+      "authorityGap": 0,
+      "backlinks": 923
+    },
+    {
+      "name": "Sol Agave",
+      "domain": "solagave.com",
+      "performance": 96,
+      "seo": 86,
+      "accessibility": 82,
+      "bestPractices": 91,
+      "overallScore": 89,
+      "rating": 4.8,
+      "totalReviews": 0,
+      "photos": {
+        "total": 0,
+        "quality": "fair"
+      },
+      "responseRate": 30,
+      "isVerified": false,
+      "isYou": false,
+      "traffic": 836,
+      "keywords": 35,
+      "domainAuthority": 75,
+      "trafficAdvantage": "Similar traffic",
+      "keywordLead": "+200 keywords",
+      "authorityGap": 6,
+      "backlinks": 1120
+    }
+  ],
+  "competitorIntelligence": {
+    "organicCompetitors": [],
+    "keywordGaps": [
+      "best pizza delivery",
+      "pizza restaurant online ordering"
+    ],
+    "trafficEstimates": []
+  },
+  "serpFeatures": [],
+  "serpAnalysis": [],
+  "seoAnalysis": {
+    "title": "No title found",
+    "metaDescription": "No meta description found",
+    "h1Tags": [],
+    "imageCount": 0,
+    "internalLinks": 0,
+    "externalLinks": 0,
+    "schemaMarkup": false
+  },
+  "mobileExperience": {
+    "score": 48,
+    "loadTime": 0,
+    "isResponsive": true,
+    "touchFriendly": true,
+    "textReadable": false,
+    "navigationEasy": false,
+    "issues": [
+      "Mobile performance data unavailable - API configuration required"
+    ],
+    "recommendations": [
+      "Configure Google PageSpeed Insights API for mobile analysis",
+      "Enable mobile performance monitoring",
+      "Test website on mobile devices manually"
+    ]
+  },
+  "performanceMetrics": {
+    "performance": 68,
+    "accessibility": 60,
+    "bestPractices": 65,
+    "seo": 70,
+    "coreWebVitals": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0,
+      "ttfb": 0,
+      "tti": 0,
+      "tbt": 0,
+      "si": 0
+    }
+  },
+  "socialMediaLinks": {
+    "facebook": "https://www.facebook.com/lovemelty",
+    "instagram": "https://www.instagram.com/meltyway",
+    "twitter": null,
+    "youtube": null,
+    "tiktok": null,
+    "linkedin": null
+  },
+  "socialMediaAnalysis": {
+    "activePlatforms": 2,
+    "missingPlatforms": [
+      "twitter",
+      "youtube",
+      "tiktok"
+    ],
+    "recommendations": [
+      "Add twitter presence",
+      "Add youtube presence",
+      "Add tiktok presence"
+    ]
+  },
+  "issues": [
+    {
+      "type": "seo",
+      "severity": "critical",
+      "title": "🎯 Missing in Action: Zero SEO Strategy",
+      "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+      "impact": "high",
+      "effort": "medium",
+      "icon": "🔍",
+      "color": "orange",
+      "urgency": "high",
+      "businessImpact": "Missing out on 70% of customers who search online before visiting"
+    },
+    {
+      "type": "performance",
+      "severity": "critical",
+      "title": "⚡ Speed Crisis: Customers Are Leaving",
+      "description": "Performance score of 68/100 means customers wait too long. 53% abandon slow websites.",
+      "impact": "high",
+      "effort": "medium",
+      "icon": "🐌",
+      "color": "red",
+      "urgency": "immediate",
+      "businessImpact": "Lost orders from customers who abandon slow-loading pages"
+    },
+    {
+      "type": "mobile",
+      "severity": "critical",
+      "title": "📱 Mobile Disaster: Customers Can't Order",
+      "description": "Mobile performance data unavailable - API configuration required",
+      "impact": "high",
+      "effort": "medium",
+      "icon": "📱",
+      "color": "red",
+      "urgency": "immediate",
+      "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+    }
+  ],
+  "recommendations": [
+    {
+      "title": "Improve website performance",
+      "description": "Improve website performance",
+      "impact": "medium",
+      "effort": "medium",
+      "category": "technical"
+    },
+    {
+      "title": "Enhance social media presence",
+      "description": "Enhance social media presence",
+      "impact": "medium",
+      "effort": "medium",
+      "category": "marketing"
+    }
+  ],
+  "metadata": {
+    "scanId": "scan_1755036074905",
+    "scanDate": "2025-08-12T22:01:14.905Z",
+    "scanDuration": 0,
+    "scanType": "professional",
+    "dataCompleteness": 100,
+    "apiVersions": {
+      "scanner": "2.0.0",
+      "dataforseo": "3.0",
+      "googlePlaces": "v1",
+      "apify": "2.0",
+      "openai": "gpt-4o"
+    },
+    "servicesUsed": [
+      "GooglePlacesAPI",
+      "ApifyReviews",
+      "OpenAIAnalysis"
+    ],
+    "errors": [],
+    "warnings": [
+      "Keyword data incomplete"
+    ]
+  }
+}
