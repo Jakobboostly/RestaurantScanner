@@ -4,7 +4,7 @@ This guide explains how to integrate the Restaurant Scanner API with n8n workflo
 
 ## API Endpoint
 
-**URL:** `POST /api/webhook/scan-by-url`
+**URL:** `POST https://boostly-restaurant-scanner.onrender.com/api/webhook/scan-by-url`
 
 **Purpose:** Scan a restaurant's online presence by providing their website URL.
 
@@ -95,7 +95,7 @@ WEBHOOK_URL=https://your-webhook-endpoint.com
 
 **Method:** POST
 
-**URL:** `http://your-server:3000/api/webhook/scan-by-url`
+**URL:** `https://boostly-restaurant-scanner.onrender.com/api/webhook/scan-by-url`
 
 **Authentication:** None (or use Header Auth if WEBHOOK_API_KEY is configured)
 
@@ -131,7 +131,7 @@ Content-Type: application/json
       "position": [450, 300],
       "parameters": {
         "method": "POST",
-        "url": "http://localhost:3000/api/webhook/scan-by-url",
+        "url": "https://boostly-restaurant-scanner.onrender.com/api/webhook/scan-by-url",
         "jsonParameters": true,
         "options": {},
         "bodyParametersJson": {
@@ -182,7 +182,7 @@ node test-n8n-endpoint.js mcdonalds.com [optional-api-key]
 
 ### Using curl:
 ```bash
-curl -X POST http://localhost:3000/api/webhook/scan-by-url \
+curl -X POST https://boostly-restaurant-scanner.onrender.com/api/webhook/scan-by-url \
   -H "Content-Type: application/json" \
   -d '{
     "url": "mcdonalds.com",

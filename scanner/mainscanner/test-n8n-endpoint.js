@@ -14,7 +14,7 @@ async function testEndpoint() {
     console.log(`📍 URL: ${url}`);
     console.log(`🔑 API Key: ${apiKey ? 'Provided' : 'Not provided'}`);
     
-    const response = await fetch('http://localhost:3000/api/webhook/scan-by-url', {
+    const response = await fetch('https://boostly-restaurant-scanner.onrender.com/api/webhook/scan-by-url', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
