@@ -89,26 +89,54 @@ WEBHOOK_URL=https://your-webhook-endpoint.com
 
 ## n8n Workflow Setup
 
-### 1. HTTP Request Node Configuration
+### 1. Code Node Configuration (Recommended)
 
-**Node Type:** HTTP Request
+**Node Type:** Code
 
-**Method:** POST
+**Language:** JavaScript
 
-**URL:** `https://boostly-restaurant-scanner.onrender.com/api/webhook/scan-by-url`
+**Code:**
+```javascript
+// Get the website URL from previous node or set manually
+const websiteUrl = $input.first().json.website || 'mcdonalds.com';
 
-**Authentication:** None (or use Header Auth if WEBHOOK_API_KEY is configured)
+try {
+  console.log(`🔍 Starting restaurant scan for: ${websiteUrl}`);
+  
+  const response = await fetch('https://boostly-restaurant-scanner.onrender.com/api/webhook/scan-by-url', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      url: websiteUrl,
+      returnFormat: 'simplified',
+      // Add API key if you have WEBHOOK_API_KEY configured
+      // apiKey: 'your-api-key-here'
+    })
+  });
 
-**Headers:**
-```
-Content-Type: application/json
-```
+  if (!response.ok) {
+    const errorText = await response.text();
+    throw new Error(`HTTP ${response.status}: ${errorText}`);
+  }
 
-**Body (JSON):**
-```json
-{
-  "url": "{{ $json.website }}",
-  "returnFormat": "simplified"
+  const result = await response.json();
+  console.log(`✅ Scan completed for ${result.restaurant?.name || websiteUrl}`);
+  
+  // Return the full result for next nodes
+  return [result];
+  
+} catch (error) {
+  console.error('❌ Restaurant scan failed:', error.message);
+  
+  // Return error information for handling
+  return [{
+    success: false,
+    error: error.message,
+    timestamp: new Date().toISOString(),
+    website: websiteUrl
+  }];
 }
 ```
 
@@ -126,27 +154,22 @@ Content-Type: application/json
     },
     {
       "name": "Scan Restaurant",
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 1,
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
       "position": [450, 300],
       "parameters": {
-        "method": "POST",
-        "url": "https://boostly-restaurant-scanner.onrender.com/api/webhook/scan-by-url",
-        "jsonParameters": true,
-        "options": {},
-        "bodyParametersJson": {
-          "url": "={{ $json.website }}",
-          "returnFormat": "simplified"
-        }
+        "language": "javaScript",
+        "jsCode": "// Get the website URL from previous node\nconst websiteUrl = $input.first().json.website || 'mcdonalds.com';\n\ntry {\n  console.log(`🔍 Starting restaurant scan for: ${websiteUrl}`);\n  \n  const response = await fetch('https://boostly-restaurant-scanner.onrender.com/api/webhook/scan-by-url', {\n    method: 'POST',\n    headers: {\n      'Content-Type': 'application/json'\n    },\n    body: JSON.stringify({\n      url: websiteUrl,\n      returnFormat: 'simplified'\n    })\n  });\n\n  if (!response.ok) {\n    const errorText = await response.text();\n    throw new Error(`HTTP ${response.status}: ${errorText}`);\n  }\n\n  const result = await response.json();\n  console.log(`✅ Scan completed for ${result.restaurant?.name || websiteUrl}`);\n  \n  return [result];\n  \n} catch (error) {\n  console.error('❌ Restaurant scan failed:', error.message);\n  \n  return [{\n    success: false,\n    error: error.message,\n    timestamp: new Date().toISOString(),\n    website: websiteUrl\n  }];\n}"
       }
     },
     {
       "name": "Process Results",
       "type": "n8n-nodes-base.code",
-      "typeVersion": 1,
+      "typeVersion": 2,
       "position": [650, 300],
       "parameters": {
-        "code": "// Extract key metrics\nconst result = $input.first().json;\n\nreturn {\n  restaurantName: result.restaurant.name,\n  overallScore: result.scores.overall,\n  needsImprovement: result.scores.overall < 70,\n  topRecommendation: result.recommendations[0]?.title || 'None',\n  timestamp: result.timestamp\n};"
+        "language": "javaScript",
+        "jsCode": "// Extract key metrics from scan result\nconst result = $input.first().json;\n\n// Check if scan was successful\nif (!result.success) {\n  return [{\n    error: true,\n    message: result.error || 'Scan failed',\n    website: result.website,\n    timestamp: result.timestamp\n  }];\n}\n\n// Extract useful data for further processing\nreturn [{\n  restaurantName: result.restaurant?.name || 'Unknown',\n  domain: result.restaurant?.domain || '',\n  overallScore: result.scores?.overall || 0,\n  seoScore: result.scores?.seo || 0,\n  performanceScore: result.scores?.performance || 0,\n  reviewScore: result.scores?.reviews || 0,\n  needsImprovement: (result.scores?.overall || 0) < 70,\n  \n  // Worst ranking keywords for improvement\n  worstKeywords: result.seoVisibility?.worstRankingKeywords || [],\n  \n  // Top recommendations\n  topRecommendations: result.topRecommendations?.slice(0, 3) || [],\n  \n  // Business metrics\n  rating: result.businessMetrics?.rating || 0,\n  totalReviews: result.businessMetrics?.totalReviews || 0,\n  \n  // Metadata\n  timestamp: result.timestamp,\n  scanId: result.scanId\n}];"
       }
     }
   ]
@@ -190,12 +213,15 @@ curl -X POST https://boostly-restaurant-scanner.onrender.com/api/webhook/scan-by
   }'
 ```
 
-## Rate Limiting
+## Rate Limiting & Performance
 
-The endpoint processes scans synchronously and can take 2-3 minutes per scan. Consider implementing:
-- Queue management in n8n for multiple restaurants
-- Parallel processing limits
-- Timeout handling (set to 5 minutes minimum)
+The endpoint processes scans synchronously and can take 2-3 minutes per scan. The Code node approach handles this automatically:
+
+- **Built-in timeout handling** - No timeout configuration needed
+- **Error handling** - Gracefully handles connection issues  
+- **Progress logging** - Console output shows scan progress
+- **Queue management** - Consider delays between multiple restaurant scans
+- **Parallel processing** - Limit concurrent scans to avoid overloading the server
 
 ## Use Cases in n8n
 
