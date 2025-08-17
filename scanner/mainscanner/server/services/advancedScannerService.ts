@@ -135,12 +135,13 @@ export class AdvancedScannerService {
         profileAnalysis = null;
       }
       
-      // Fetch business photos for scanning animation only (not in final result)
+      // Fetch business photos for both scanning animation and final result
+      let businessPhotos: string[] = [];
       if (placeId) {
         try {
           const photoResult = await this.googleBusinessService.getBusinessPhotos(placeId);
-          const businessPhotos = photoResult?.businessPhotos || [];
-          console.log(`📸 Fetched ${businessPhotos.length} business photos for scanning animation`);
+          businessPhotos = photoResult?.businessPhotos || [];
+          console.log(`📸 Fetched ${businessPhotos.length} business photos for scanning`);
           
           // Send photos to client via progress callback for animation
           if (businessPhotos.length > 0) {
@@ -151,7 +152,7 @@ export class AdvancedScannerService {
             });
           }
         } catch (error) {
-          console.error('Failed to fetch business photos for scanning animation:', error);
+          console.error('Failed to fetch business photos:', error);
         }
       }
       
@@ -628,6 +629,7 @@ export class AdvancedScannerService {
         processedKeywords,
         serpAnalysis,
         [],
+        businessPhotos,
         reviewsAnalysis,
         socialMediaLinks,
         profileAnalysis,
@@ -668,6 +670,7 @@ export class AdvancedScannerService {
     processedKeywords: any[],
     serpAnalysis: any[],
     competitorInsights: any[],
+    businessPhotos: string[] = [],
     reviewsAnalysis: any,
     socialMediaLinks: any,
     profileAnalysis: any = null,
@@ -869,7 +872,7 @@ export class AdvancedScannerService {
       organicTraffic: 0,
       scanDate: new Date().toISOString(),
       businessProfile,
-      businessPhotos: [],
+      businessPhotos: businessPhotos,
       mobileExperience: {
         score: mobileExperience?.score || performanceMetrics?.performance || 0,
         loadTime: mobileExperience?.loadTime || 0,
@@ -1244,14 +1247,31 @@ export class AdvancedScannerService {
       
       // Use AI for intelligent cuisine detection with better context
       const location = businessProfile?.city || businessProfile?.vicinity || 'the area';
-      const prompt = `Analyze this restaurant name and determine its cuisine type: "${restaurantDisplayName}" located in ${location}.
+      const prompt = `Analyze this restaurant name and determine its PRIMARY cuisine type based on what customers would SEARCH FOR: "${restaurantDisplayName}" located in ${location}.
 
-Consider:
-- Restaurant name patterns (e.g., "Taco Bell" = Mexican, "Pizza Hut" = Italian, "Panda Express" = Chinese)
-- Common cuisine indicators in the name
-- Regional context if applicable
+IMPORTANT: Prioritize specific food types over cultural categories. Think about what customers actually search for:
 
-Respond with ONE cuisine word from this list: american, italian, mexican, chinese, japanese, indian, thai, vietnamese, korean, mediterranean, greek, middle-eastern, french, german, spanish, pizza, burger, sandwich, bbq, seafood, steakhouse, breakfast, cafe, bakery, fast-casual, or restaurant.
+SPECIFIC FOOD TYPES (use these when detected):
+- Names with "Sushi" = sushi (customers search "sushi near me", not "japanese food")
+- Names with "Pizza" = pizza (customers search "pizza delivery", not "italian food") 
+- Names with "Taco", "Burrito", "Quesadilla" = tacos (customers search "tacos near me")
+- Names with "Ramen" = ramen (customers search "ramen restaurant")
+- Names with "Pho", "Banh Mi" = pho (customers search "pho near me")
+- Names with "BBQ", "Barbecue" = bbq (customers search "bbq restaurant")
+- Names with "Burger" = burger (customers search "burger joint")
+- Names with "Sandwich", "Sub", "Deli" = sandwich
+- Names with "Steakhouse", "Steak" = steakhouse
+- Names with "Seafood" = seafood
+
+EXAMPLES:
+- "El Sushi Loco" = sushi (not japanese)
+- "Tony's Pizza" = pizza (not italian)
+- "Taco Bell" = tacos (not mexican - though use mexican as fallback if no specific food type)
+- "Pho Saigon" = pho (not vietnamese)
+
+Only use broad cultural categories (mexican, italian, chinese, etc.) when no specific food type is obvious.
+
+Respond with ONE word from: sushi, pizza, tacos, ramen, pho, bbq, burger, sandwich, steakhouse, seafood, breakfast, cafe, bakery, mexican, italian, chinese, japanese, indian, thai, vietnamese, korean, mediterranean, greek, middle-eastern, french, american, or restaurant.
 
 Cuisine type:`;
 
@@ -1275,10 +1295,13 @@ Cuisine type:`;
       
       // List of valid cuisine types
       const validCuisines = [
+        // Specific food types (prioritized for search behavior)
+        'sushi', 'pizza', 'tacos', 'ramen', 'pho', 'bbq', 'burger', 'sandwich', 
+        'steakhouse', 'seafood', 'breakfast', 'cafe', 'bakery',
+        // Broad cultural categories (fallback)
         'american', 'italian', 'mexican', 'chinese', 'japanese', 'indian', 'thai', 
         'vietnamese', 'korean', 'mediterranean', 'greek', 'middle-eastern', 'french', 
-        'german', 'spanish', 'pizza', 'burger', 'sandwich', 'bbq', 'seafood', 
-        'steakhouse', 'breakfast', 'cafe', 'bakery', 'fast-casual', 'restaurant'
+        'german', 'spanish', 'fast-casual', 'restaurant'
       ];
       
       if (cleanedCuisine && validCuisines.includes(cleanedCuisine)) {

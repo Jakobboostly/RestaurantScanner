@@ -14,7 +14,7 @@ export class GoogleBusinessService {
         {
           params: {
             place_id: placeId,
-            fields: 'name,formatted_address,address_components,rating,user_ratings_total,formatted_phone_number,website,types,reviews,photos,opening_hours,price_level,business_status,editorial_summary,url,social_media',
+            fields: 'name,formatted_address,address_components,rating,user_ratings_total,formatted_phone_number,website,types,reviews,photos,opening_hours,price_level,business_status,editorial_summary,url',
             key: this.apiKey
           }
         }
