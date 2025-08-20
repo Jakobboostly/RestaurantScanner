@@ -69,7 +69,11 @@ export class AdvancedScannerService {
     this.aiRecommendationService = new AIRecommendationService();
     this.googleReviewsService = new GoogleReviewsService(googleApiKey);
     this.apifyReviewsService = apifyApiKey ? new ApifyReviewsService(apifyApiKey) : undefined;
-    this.enhancedSocialMediaDetector = new EnhancedSocialMediaDetector();
+    this.enhancedSocialMediaDetector = new EnhancedSocialMediaDetector(
+      googleApiKey,
+      dataForSeoLogin,
+      dataForSeoPassword
+    );
     this.facebookPostsScraperService = new FacebookPostsScraperService();
     this.openaiReviewAnalysisService = new OpenAIReviewAnalysisService(process.env.OPENAI_API_KEY);
     this.openaiService = new OpenAI({
@@ -1259,6 +1263,7 @@ SPECIFIC FOOD TYPES (use these when detected):
 - Names with "Pho", "Banh Mi" = pho (customers search "pho near me")
 - Names with "BBQ", "Barbecue" = bbq (customers search "bbq restaurant")
 - Names with "Burger" = burger (customers search "burger joint")
+- Names with "Wings", "Buffalo" = wings (customers search "wings near me")
 - Names with "Sandwich", "Sub", "Deli" = sandwich
 - Names with "Steakhouse", "Steak" = steakhouse
 - Names with "Seafood" = seafood
@@ -1271,7 +1276,13 @@ EXAMPLES:
 
 Only use broad cultural categories (mexican, italian, chinese, etc.) when no specific food type is obvious.
 
-Respond with ONE word from: sushi, pizza, tacos, ramen, pho, bbq, burger, sandwich, steakhouse, seafood, breakfast, cafe, bakery, mexican, italian, chinese, japanese, indian, thai, vietnamese, korean, mediterranean, greek, middle-eastern, french, american, or restaurant.
+IMPORTANT: Never use "american" as a cuisine type. Instead:
+- If it's a burger place or has "burger" in the name -> use "burger"
+- If it's a wings place or has "wings" in the name -> use "wings"
+- For general American restaurants, choose based on menu focus: burger OR wings
+- Default to "burger" if both could apply
+
+Respond with ONE word from: sushi, pizza, tacos, ramen, pho, bbq, burger, wings, sandwich, steakhouse, seafood, breakfast, cafe, bakery, mexican, italian, chinese, japanese, indian, thai, vietnamese, korean, mediterranean, greek, middle-eastern, french, or restaurant.
 
 Cuisine type:`;
 
@@ -1296,16 +1307,26 @@ Cuisine type:`;
       // List of valid cuisine types
       const validCuisines = [
         // Specific food types (prioritized for search behavior)
-        'sushi', 'pizza', 'tacos', 'ramen', 'pho', 'bbq', 'burger', 'sandwich', 
+        'sushi', 'pizza', 'tacos', 'ramen', 'pho', 'bbq', 'burger', 'wings', 'sandwich', 
         'steakhouse', 'seafood', 'breakfast', 'cafe', 'bakery',
-        // Broad cultural categories (fallback)
-        'american', 'italian', 'mexican', 'chinese', 'japanese', 'indian', 'thai', 
+        // Broad cultural categories (fallback) - NO AMERICAN
+        'italian', 'mexican', 'chinese', 'japanese', 'indian', 'thai', 
         'vietnamese', 'korean', 'mediterranean', 'greek', 'middle-eastern', 'french', 
         'german', 'spanish', 'fast-casual', 'restaurant'
       ];
       
       if (cleanedCuisine && validCuisines.includes(cleanedCuisine)) {
         return cleanedCuisine;
+      } else if (cleanedCuisine === 'american') {
+        // Replace "american" with burger or wings based on restaurant name
+        const nameLower = restaurantDisplayName.toLowerCase();
+        if (nameLower.includes('wing') || nameLower.includes('buffalo')) {
+          console.log(`🍗 Converting "american" to "wings" for: "${restaurantDisplayName}"`);
+          return 'wings';
+        } else {
+          console.log(`🍔 Converting "american" to "burger" for: "${restaurantDisplayName}"`);
+          return 'burger';
+        }
       } else {
         console.log(`⚠️ AI returned invalid cuisine: "${aiCuisine}" -> "${cleanedCuisine}", falling back to 'restaurant'`);
         return 'restaurant';
@@ -1330,7 +1351,7 @@ Cuisine type:`;
       { pattern: /house/i, indicators: ['steak', 'chop', 'rib', 'meat', 'prime', 'beef'], cuisine: 'steakhouse' },
       { pattern: /express/i, indicators: ['panda', 'asian', 'chinese', 'wok'], cuisine: 'chinese' },
       { pattern: /shack/i, indicators: ['burger', 'shake', 'fries'], cuisine: 'burger' },
-      { pattern: /spot/i, indicators: ['wing', 'chicken', 'buffalo'], cuisine: 'chicken' },
+      { pattern: /spot/i, indicators: ['wing', 'chicken', 'buffalo'], cuisine: 'wings' },
       { pattern: /grill/i, indicators: ['greek', 'mediterranean', 'gyro', 'pita'], cuisine: 'greek' },
       { pattern: /street/i, indicators: ['greek', 'gyro', 'mediterranean', 'pita'], cuisine: 'greek' }
     ];
@@ -1350,7 +1371,7 @@ Cuisine type:`;
     
     // Check for regional indicators
     const regionalPatterns = [
-      { regions: ['new york', 'ny', 'brooklyn'], defaultCuisine: 'american' },
+      { regions: ['new york', 'ny', 'brooklyn'], defaultCuisine: 'burger' },  // Changed from american to burger
       { regions: ['texas', 'austin', 'dallas'], defaultCuisine: 'bbq' },
       { regions: ['california', 'ca', 'la'], defaultCuisine: 'healthy' }
     ];
@@ -1621,11 +1642,20 @@ Cuisine type:`;
     if (city) keywords.push({ keyword: `food delivery ${city}`, intent: 'local' });
     
     // Commercial keywords (7) - focused on business value
-    keywords.push({ keyword: `best ${cuisineType} restaurant`, intent: 'commercial' });
-    keywords.push({ keyword: `${cuisineType} restaurant delivery`, intent: 'commercial' });
-    keywords.push({ keyword: `order ${cuisineType} food online`, intent: 'commercial' });
-    keywords.push({ keyword: `${cuisineType} takeout`, intent: 'commercial' });
-    keywords.push({ keyword: `${cuisineType} catering`, intent: 'commercial' });
+    // Special handling for wings vs other cuisines
+    if (cuisineType === 'wings') {
+      keywords.push({ keyword: `best wings restaurant`, intent: 'commercial' });
+      keywords.push({ keyword: `wings delivery`, intent: 'commercial' });
+      keywords.push({ keyword: `order wings online`, intent: 'commercial' });
+      keywords.push({ keyword: `buffalo wings takeout`, intent: 'commercial' });
+      keywords.push({ keyword: `wings catering`, intent: 'commercial' });
+    } else {
+      keywords.push({ keyword: `best ${cuisineType} restaurant`, intent: 'commercial' });
+      keywords.push({ keyword: `${cuisineType} restaurant delivery`, intent: 'commercial' });
+      keywords.push({ keyword: `order ${cuisineType} food online`, intent: 'commercial' });
+      keywords.push({ keyword: `${cuisineType} takeout`, intent: 'commercial' });
+      keywords.push({ keyword: `${cuisineType} catering`, intent: 'commercial' });
+    }
     if (city) keywords.push({ keyword: `best restaurant ${city}`, intent: 'commercial' });
     if (city) keywords.push({ keyword: `${cuisineType} catering ${city}`, intent: 'commercial' });
     
@@ -2861,17 +2891,35 @@ Cuisine type:`;
       // 2. Get social media from Google Business Profile first (most reliable)
       if (businessProfile) {
         const profile = businessProfile as any;
+        
+        // Check if website is actually a social media URL
+        const website = profile.website || profile.url;
+        if (website) {
+          if (website.includes('facebook.com') && !allSocialLinks.facebook) {
+            allSocialLinks.facebook = website;
+            console.log('📘 Facebook detected as primary website:', website);
+          } else if (website.includes('instagram.com') && !allSocialLinks.instagram) {
+            allSocialLinks.instagram = website;
+            console.log('📷 Instagram detected as primary website:', website);
+          }
+        }
+        
+        // Check if there's a social_media field (rare but possible)
         if (profile.social_media) {
           console.log('📱 Found social media in Google Business Profile:', profile.social_media);
-          // Extract Facebook and Instagram from Google Business Profile
-          for (const social of profile.social_media) {
-            if (social.includes('facebook.com') && !allSocialLinks.facebook) {
-              allSocialLinks.facebook = social;
-              console.log('📘 Facebook from Google Business Profile:', social);
-            }
-            if (social.includes('instagram.com') && !allSocialLinks.instagram) {
-              allSocialLinks.instagram = social;
-              console.log('📷 Instagram from Google Business Profile:', social);
+          // Handle both array and object structures
+          const socialData = Array.isArray(profile.social_media) ? profile.social_media : [profile.social_media];
+          for (const social of socialData) {
+            const socialUrl = typeof social === 'string' ? social : social.url;
+            if (socialUrl) {
+              if (socialUrl.includes('facebook.com') && !allSocialLinks.facebook) {
+                allSocialLinks.facebook = socialUrl;
+                console.log('📘 Facebook from Google Business Profile:', socialUrl);
+              }
+              if (socialUrl.includes('instagram.com') && !allSocialLinks.instagram) {
+                allSocialLinks.instagram = socialUrl;
+                console.log('📷 Instagram from Google Business Profile:', socialUrl);
+              }
             }
           }
         }
@@ -2884,10 +2932,11 @@ Cuisine type:`;
           const detectedLinks = await this.enhancedSocialMediaDetector.detectAllSocialMedia(
             `https://${domain}`,
             restaurantName,
-            businessProfile?.address || businessProfile?.vicinity,
-            businessProfile?.phone,
+            businessProfile?.address || businessProfile?.vicinity || businessProfile?.formatted_address,
+            businessProfile?.phone || businessProfile?.phoneNumber || businessProfile?.formatted_phone_number,
             placeId,
-            apifySocialData
+            apifySocialData,
+            businessProfile?.url  // Google Maps URL
           );
           
           // Only use website detection if Google Profile didn't provide the links
