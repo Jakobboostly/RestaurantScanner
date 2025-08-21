@@ -10,6 +10,7 @@ import { FunFactsService } from "./services/funFactsService";
 import { WebhookExportService } from "./services/webhookExportService";
 import { scanCacheService } from "./services/scanCacheService";
 import { revenueLossScreenshotService } from "./services/revenueLossScreenshotService";
+import { SearchVolumeService } from "./services/searchVolumeService";
 import { z } from "zod";
 import OpenAI from "openai";
 
@@ -53,6 +54,15 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Google Business Profile scanner service
   const { GoogleBusinessService } = await import('./services/googleBusinessService.js');
   const googleBusinessService = new GoogleBusinessService(GOOGLE_API_KEY || "");
+
+  // Search Volume Service
+  let searchVolumeService: SearchVolumeService | null = null;
+  if (DATAFOREO_LOGIN && DATAFOREO_PASSWORD) {
+    searchVolumeService = new SearchVolumeService(DATAFOREO_LOGIN, DATAFOREO_PASSWORD);
+    console.log("Search Volume Service enabled with DataForSEO credentials");
+  } else {
+    console.log("Search Volume Service disabled - requires DATAFORSEO_LOGIN and DATAFORSEO_PASSWORD");
+  }
   
   // Fun facts service
   const funFactsService = new FunFactsService();
@@ -1123,6 +1133,52 @@ export async function registerRoutes(app: Express): Promise<Server> {
     } catch (error) {
       console.error('Get screenshot stats error:', error);
       res.status(500).json({ error: "Failed to get screenshot statistics" });
+    }
+  });
+
+  // Search Volume API endpoint for Revenue Loss Gate
+  app.post("/api/search-volume", async (req, res) => {
+    try {
+      const { keywords, city, state, country } = req.body;
+
+      if (!keywords || !Array.isArray(keywords) || keywords.length === 0) {
+        return res.status(400).json({ error: "Keywords array is required" });
+      }
+
+      if (!searchVolumeService) {
+        return res.status(503).json({ 
+          error: "Search Volume Service not available - DataForSEO credentials required",
+          fallback: true
+        });
+      }
+
+      console.log(`🔍 Search volume request for ${keywords.length} keywords in ${city}, ${state}`);
+      console.log(`🔧 SearchVolumeService available:`, !!searchVolumeService);
+      console.log(`🔧 About to call getSearchVolumes with:`, { keywords, city, state, country });
+
+      const results = await searchVolumeService.getSearchVolumes({
+        keywords,
+        city,
+        state,
+        country
+      });
+      
+      console.log(`🔧 Results from getSearchVolumes:`, results);
+
+      console.log(`✅ Search volume results: ${results.length} keywords processed`);
+
+      res.json({
+        success: true,
+        results,
+        location: `${city},${state},${country || 'United States'}`
+      });
+
+    } catch (error) {
+      console.error('Search volume API error:', error);
+      res.status(500).json({ 
+        error: "Failed to fetch search volumes",
+        details: error instanceof Error ? error.message : 'Unknown error'
+      });
     }
   });
 
