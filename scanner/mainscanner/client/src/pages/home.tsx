@@ -9,6 +9,7 @@ import Navigation from "@/components/navigation";
 import RestaurantSearch from "@/components/restaurant-search";
 import ScanningAnimation from "@/components/scanning-animation";
 import EnhancedResultsDashboard from "@/components/enhanced-results-dashboard";
+import { RevenueLossGate } from "@/components/revenue-loss-gate";
 import { scanWebsite, getRestaurantDetails } from "@/lib/api";
 import { RestaurantSearchResult, ScanResult } from "@shared/schema";
 import { LeadCaptureModal, LeadData } from "@/components/lead-capture-modal";
@@ -31,6 +32,8 @@ export default function HomePage() {
   const [businessPhotos, setBusinessPhotos] = useState<string[]>([]);
   const [showLeadModal, setShowLeadModal] = useState(false);
   const [isSubmittingLead, setIsSubmittingLead] = useState(false);
+  const [showRevenueLossGate, setShowRevenueLossGate] = useState(false);
+  const [isAdminFlow, setIsAdminFlow] = useState(false);
   const { toast } = useToast();
 
   // Check if user has a valid scan token (to skip gate for returning users)
@@ -129,9 +132,9 @@ export default function HomePage() {
       console.log('HomePage - setting view state to results');
       setViewState('results');
       
-      // Check if we need to show the lead capture gate after scan completion
+      // Check if we need to show the lead modal after scan completion
       if (!hasScanToken()) {
-        console.log('HomePage - showing lead capture gate after scan completion');
+        console.log('HomePage - showing lead modal after scan completion');
         setShowLeadModal(true);
       }
     } catch (error) {
@@ -321,9 +324,32 @@ export default function HomePage() {
             // Admin bypass - close modal, user already has access to results
             setShowLeadModal(false);
           }}
+          onAdminRevenueLossGate={() => {
+            // Admin Revenue Loss Gate - show Revenue Loss Gate for demo
+            setIsAdminFlow(true);
+            setShowLeadModal(false);
+            setShowRevenueLossGate(true);
+          }}
           restaurantName={selectedRestaurant?.name || ''}
           isSubmitting={isSubmittingLead}
         />
+
+        {/* Revenue Loss Gate - Admin Only */}
+        {showRevenueLossGate && scanResult && isAdminFlow && (
+          <RevenueLossGate
+            scanData={scanResult}
+            placeId={selectedRestaurant?.placeId}
+            onClose={() => {
+              setShowRevenueLossGate(false);
+              setIsAdminFlow(false);
+            }}
+            onContinue={() => {
+              // Admin can optionally continue to regular results after viewing Revenue Loss Gate
+              setShowRevenueLossGate(false);
+              setIsAdminFlow(false);
+            }}
+          />
+        )}
       </div>
     );
   }

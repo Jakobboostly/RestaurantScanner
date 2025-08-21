@@ -76,8 +76,7 @@ export class EnhancedDataForSeoService {
         
         // 1. Generate basic keyword research data using available endpoints
         console.log('Starting keyword research for:', keyword);
-        let keywordSuggestions = [];
-        let searchVolumeData = [];
+        let keywordSuggestions: any[] = [];
 
         // Use DataForSEO endpoints for keyword research
         try {
@@ -114,17 +113,40 @@ export class EnhancedDataForSeoService {
           console.log('Keyword difficulty endpoint failed - no data available');
         }
 
-        // Create combined keyword data with fallbacks - limit to 8 keywords (no search volume)
+        // Get real search volume data using unified service
+        let searchVolumeData: any[] = [];
+        try {
+          const unifiedResults = await this.unifiedService.analyzeKeywordsBatch({
+            businessName: keyword,
+            cuisine: 'restaurant',
+            city: location.split(',')[0] || 'United States',
+            state: location.split(',')[1] || '',
+            locationName: location
+          });
+          searchVolumeData = unifiedResults.searchVolumeData;
+          console.log('Real search volume data received:', searchVolumeData.length);
+        } catch (error) {
+          console.log('Search volume data unavailable, using fallbacks');
+        }
+
+        // Create lookup map for search volume data
+        const volumeMap: Record<string, any> = searchVolumeData.reduce((acc: Record<string, any>, item: any) => {
+          acc[item.keyword] = item;
+          return acc;
+        }, {});
+
+        // Create combined keyword data with real search volumes
         const baseKeywords = [keyword, ...keywordSuggestions.slice(0, 7).map((s: any) => s.keyword || s)].filter(Boolean);
         const keywordData: KeywordData[] = baseKeywords.map((kw: string, index: number) => {
           const suggestion = keywordSuggestions.find((s: any) => (s.keyword || s) === kw);
+          const volumeData = volumeMap[kw];
           
           return {
             keyword: kw,
-            searchVolume: 0, // No search volume data
-            difficulty: difficultyData[kw] || 0, // Only use DataForSEO API data
-            cpc: 0, // No CPC data without search volume
-            competition: suggestion?.competition || 0,
+            searchVolume: volumeData?.searchVolume || 0, // Real search volume data
+            difficulty: difficultyData[kw] || volumeData?.difficulty || 0,
+            cpc: volumeData?.cpc || 0, // Real CPC data
+            competition: suggestion?.competition || volumeData?.competition || 0,
             intent: classifyKeywordIntent(kw),
             relatedKeywords: keywordSuggestions.slice(0, 10).map((s: any) => s.keyword || s).filter(Boolean)
           };
@@ -189,7 +211,7 @@ export class EnhancedDataForSeoService {
         });
 
         const technicalData = await Promise.all(technicalPromises);
-        const technicalMap = technicalData.reduce((acc: any, item: any) => {
+        const technicalMap: Record<string, number> = technicalData.reduce((acc: Record<string, number>, item: any) => {
           acc[item.domain] = item.issueCount;
           return acc;
         }, {});
@@ -475,7 +497,7 @@ export class EnhancedDataForSeoService {
       });
 
       // Convert to expected format - use both local and organic rankings
-      const rankings = [];
+      const rankings: { keyword: string; position: number | null }[] = [];
       
       // Get positions from local rankings (primary for restaurants)
       const localRankings = results.localRankings.filter(ranking => 

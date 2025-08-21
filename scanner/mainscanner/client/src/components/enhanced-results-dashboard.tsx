@@ -71,6 +71,11 @@ interface EnhancedResultsDashboardProps {
   restaurantName: string;
 }
 
+// Utility function to remove markdown bold formatting
+const stripMarkdownBold = (text: string) => {
+  return text.replace(/\*\*(.*?)\*\*/g, '$1');
+};
+
 function EnhancedResultsDashboard({ scanResult, restaurantName }: EnhancedResultsDashboardProps) {
   return <PremiumScoreDashboard scanResult={scanResult} restaurantName={restaurantName} />;
 
@@ -789,7 +794,7 @@ function EnhancedResultsDashboard({ scanResult, restaurantName }: EnhancedResult
                                   <h5 className="text-xs font-medium text-green-600 mb-1">Strengths</h5>
                                   <ul className="text-xs text-gray-600 space-y-1">
                                     {scanResult.reviewsAnalysis.customerMoodAnalysis.businessInsights.strengthsPerceived.slice(0, 2).map((strength, index) => (
-                                      <li key={index}>• {strength}</li>
+                                      <li key={index}>• {stripMarkdownBold(strength)}</li>
                                     ))}
                                   </ul>
                                 </div>
@@ -801,7 +806,7 @@ function EnhancedResultsDashboard({ scanResult, restaurantName }: EnhancedResult
                                   <h5 className="text-xs font-medium text-orange-600 mb-1">Opportunities</h5>
                                   <ul className="text-xs text-gray-600 space-y-1">
                                     {scanResult.reviewsAnalysis.customerMoodAnalysis.businessInsights.improvementOpportunities.slice(0, 2).map((opportunity, index) => (
-                                      <li key={index}>• {opportunity}</li>
+                                      <li key={index}>• {stripMarkdownBold(opportunity)}</li>
                                     ))}
                                   </ul>
                                 </div>
@@ -1211,7 +1216,7 @@ function EnhancedResultsDashboard({ scanResult, restaurantName }: EnhancedResult
                       {scanResult.profileAnalysis.recommendations.map((rec: string, index: number) => (
                         <div key={index} className="flex items-start gap-2 text-sm">
                           <ChevronRight className="w-4 h-4 text-blue-500 mt-0.5" />
-                          <span>{rec}</span>
+                          <span>{stripMarkdownBold(rec)}</span>
                         </div>
                       ))}
                     </div>

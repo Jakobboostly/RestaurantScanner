@@ -8,6 +8,8 @@ import { JsonSanitizer } from "./utils/jsonSanitizer";
 import { EnhancedDataForSeoService } from "./services/enhancedDataForSeoService";
 import { FunFactsService } from "./services/funFactsService";
 import { WebhookExportService } from "./services/webhookExportService";
+import { scanCacheService } from "./services/scanCacheService";
+import { revenueLossScreenshotService } from "./services/revenueLossScreenshotService";
 import { z } from "zod";
 import OpenAI from "openai";
 
@@ -175,11 +177,13 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
 
     try {
-      const { domain, restaurantName, placeId, latitude, longitude, manualFacebookUrl } = req.body;
+      const { domain, restaurantName, placeId, latitude, longitude, manualFacebookUrl, forceRefresh } = req.body;
       
       console.log('📨 Professional scan request received:');
       console.log('  - domain:', domain);
       console.log('  - restaurantName:', restaurantName);  
+      console.log('  - placeId:', placeId);
+      console.log('  - forceRefresh:', forceRefresh || false);
       console.log('  - manualFacebookUrl:', manualFacebookUrl || 'NOT provided');
       
       if (!domain) {
@@ -193,6 +197,32 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.setHeader('Access-Control-Allow-Origin', '*');
       res.setHeader('Access-Control-Allow-Headers', 'Cache-Control');
 
+      // Check cache first if placeId is provided and forceRefresh is not true
+      if (placeId && !forceRefresh) {
+        const cachedResult = await scanCacheService.getCachedScan(placeId);
+        
+        if (cachedResult) {
+          console.log(`📦 Returning cached scan for ${restaurantName} (${placeId})`);
+          
+          // Send cached result immediately
+          const progressMessage = {
+            type: 'progress',
+            message: 'Loading cached results...',
+            percentage: 100
+          };
+          res.write(`data: ${JsonSanitizer.safeStringify(progressMessage)}\n\n`);
+          
+          // Send completion with cached data
+          const completionEvent = {
+            type: 'complete',
+            result: cachedResult,
+            cached: true
+          };
+          res.write(`data: ${JsonSanitizer.safeStringify(completionEvent)}\n\n`);
+          res.end();
+          return;
+        }
+      }
 
       const scanResult = await dataForSeoScannerService.scanRestaurantAdvanced(
         placeId || '',
@@ -206,6 +236,28 @@ export async function registerRoutes(app: Express): Promise<Server> {
         },
         manualFacebookUrl
       );
+
+      // Cache the scan result if placeId is available
+      if (placeId) {
+        await scanCacheService.cacheScan(placeId, scanResult);
+        console.log(`💾 Cached scan results for ${restaurantName} (${placeId})`);
+      }
+
+      // Generate Revenue Loss Gate screenshot in background
+      if (scanResult.restaurantName) {
+        setImmediate(async () => {
+          try {
+            const screenshotResult = await revenueLossScreenshotService.generateScreenshot(scanResult);
+            if (screenshotResult.success) {
+              console.log(`📸 Revenue Loss Gate screenshot generated for ${scanResult.restaurantName}`);
+            } else {
+              console.error(`❌ Screenshot generation failed for ${scanResult.restaurantName}:`, screenshotResult.error);
+            }
+          } catch (error) {
+            console.error(`💥 Screenshot generation error for ${scanResult.restaurantName}:`, error);
+          }
+        });
+      }
 
       // Send completion message with debugging
       const completionEvent = {
@@ -375,6 +427,58 @@ export async function registerRoutes(app: Express): Promise<Server> {
           website: `Your website performance score of ${req.body.scanResult.performance}/100 affects customer experience. Optimizing images and improving mobile responsiveness will help convert more visitors into customers.`,
           reviews: `Customer sentiment is ${req.body.scanResult.reviewsAnalysis?.sentiment?.positive || 0}% positive. Maintaining high review scores and addressing concerns quickly strengthens your reputation and attracts new diners.`
         }
+      });
+    }
+  });
+
+  // AI-powered recommendations endpoint
+  app.post("/api/ai/recommendations", async (req, res) => {
+    try {
+      const { category, priority, score, restaurantName, cuisine, location, specificData } = req.body;
+      
+      // Import the AI recommendation engine
+      const { AIRecommendationEngine } = await import('./services/aiRecommendationEngine.js');
+      
+      if (!process.env.OPENAI_API_KEY) {
+        console.warn('OpenAI API key not configured - using fallback recommendations');
+        const engine = new AIRecommendationEngine('');
+        const fallback = await engine.generateRecommendations({
+          category,
+          priority,
+          score,
+          restaurantName,
+          cuisine,
+          location,
+          specificData
+        });
+        return res.json(fallback);
+      }
+
+      const engine = new AIRecommendationEngine(process.env.OPENAI_API_KEY);
+      const recommendations = await engine.generateRecommendations({
+        category,
+        priority,
+        score,
+        restaurantName,
+        cuisine,
+        location,
+        specificData
+      });
+
+      res.json(recommendations);
+    } catch (error) {
+      console.error('AI recommendations error:', error);
+      
+      // Return fallback recommendations
+      res.json({
+        recommendations: [
+          `Improve ${req.body.category} performance with targeted optimization`,
+          `Focus on local market presence and customer engagement`,
+          `Implement consistent marketing strategies across all channels`,
+          `Monitor competitor activities and adapt accordingly`
+        ],
+        context: `${req.body.priority} priority improvements needed for better ${req.body.category} performance.`,
+        urgency: req.body.priority === 'high' ? 'critical' : req.body.priority === 'medium' ? 'important' : 'optimize'
       });
     }
   });
@@ -701,7 +805,18 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Lead capture endpoint for gating scans
   app.post("/api/leads", async (req, res) => {
     try {
-      const { firstName, lastName, email, phone, restaurantName, placeId } = req.body;
+      const { 
+        firstName, 
+        lastName, 
+        email, 
+        phone, 
+        restaurantName, 
+        placeId, 
+        source, 
+        lostRevenue, 
+        worstKeywords, 
+        monthlyRevenue 
+      } = req.body;
       
       // Validate required fields
       if (!firstName || !lastName || !email || !restaurantName) {
@@ -730,8 +845,12 @@ export async function registerRoutes(app: Express): Promise<Server> {
         restaurantName: restaurantName.trim(),
         placeId: placeId || null,
         createdAt: new Date().toISOString(),
-        source: 'web_scanner',
-        scanCompleted: false
+        source: source || 'web_scanner',
+        scanCompleted: false,
+        // Revenue loss gate specific data
+        lostRevenue: lostRevenue || null,
+        worstKeywords: worstKeywords || null,
+        monthlyRevenue: monthlyRevenue || null,
       };
       
       // Store lead in JSON file (Phase 1 - local storage)
@@ -845,6 +964,165 @@ export async function registerRoutes(app: Express): Promise<Server> {
         error: "Failed to capture lead",
         details: error instanceof Error ? error.message : 'Unknown error' 
       });
+    }
+  });
+
+  // Cache management endpoints
+  app.get("/api/cache/stats", async (req, res) => {
+    try {
+      const stats = await scanCacheService.getCacheStats();
+      res.json(stats);
+    } catch (error) {
+      console.error('Cache stats error:', error);
+      res.status(500).json({ error: "Failed to get cache statistics" });
+    }
+  });
+
+  app.post("/api/cache/clear-expired", async (req, res) => {
+    try {
+      await scanCacheService.clearExpiredCache();
+      res.json({ success: true, message: "Expired cache entries cleared" });
+    } catch (error) {
+      console.error('Cache clear error:', error);
+      res.status(500).json({ error: "Failed to clear expired cache" });
+    }
+  });
+
+  app.delete("/api/cache/:placeId", async (req, res) => {
+    try {
+      const { placeId } = req.params;
+      await scanCacheService.deleteCachedScan(placeId);
+      res.json({ success: true, message: `Cache cleared for placeId: ${placeId}` });
+    } catch (error) {
+      console.error('Cache delete error:', error);
+      res.status(500).json({ error: "Failed to delete cache entry" });
+    }
+  });
+
+  // Revenue Loss Gate screenshot endpoints
+  app.post("/api/revenue-gate-screenshot", async (req, res) => {
+    try {
+      const scanData = req.body;
+      
+      if (!scanData || !scanData.restaurantName) {
+        return res.status(400).json({ error: "Valid scan data with restaurantName is required" });
+      }
+
+      console.log(`🖼️  Starting Revenue Loss Gate screenshot generation for ${scanData.restaurantName}`);
+      
+      const result = await revenueLossScreenshotService.generateScreenshot(scanData);
+      
+      if (result.success) {
+        res.json({
+          success: true,
+          message: `Screenshot generated for ${scanData.restaurantName}`,
+          path: result.path,
+          backupPath: result.backupPath
+        });
+      } else {
+        res.status(500).json({
+          success: false,
+          error: result.error || "Screenshot generation failed"
+        });
+      }
+    } catch (error) {
+      console.error('Revenue Loss Gate screenshot error:', error);
+      res.status(500).json({ 
+        success: false,
+        error: error instanceof Error ? error.message : "Unknown error" 
+      });
+    }
+  });
+
+  // Generate Revenue Loss Gate screenshot from cached scan data using placeId
+  app.post("/api/revenue-loss-gate/screenshot", async (req, res) => {
+    try {
+      const { placeId } = req.body;
+      
+      if (!placeId) {
+        return res.status(400).json({ error: "placeId is required" });
+      }
+
+      console.log(`🖼️  Generating Revenue Loss Gate screenshot for placeId: ${placeId}`);
+      
+      // Get cached scan data
+      const cachedScan = await scanCacheService.getCachedScan(placeId);
+      
+      if (!cachedScan) {
+        return res.status(404).json({ error: "No cached scan data found for this placeId" });
+      }
+
+      console.log(`📦 Found cached scan data for ${cachedScan.restaurantName}`);
+      
+      const result = await revenueLossScreenshotService.generateScreenshot(cachedScan);
+      
+      if (result.success) {
+        res.json({
+          success: true,
+          message: `Screenshot generated for ${cachedScan.restaurantName}`,
+          path: result.path,
+          backupPath: result.backupPath,
+          restaurantName: cachedScan.restaurantName
+        });
+      } else {
+        res.status(500).json({
+          success: false,
+          error: result.error || "Screenshot generation failed"
+        });
+      }
+    } catch (error) {
+      console.error('Revenue Loss Gate screenshot from placeId error:', error);
+      res.status(500).json({ 
+        success: false,
+        error: error instanceof Error ? error.message : "Unknown error" 
+      });
+    }
+  });
+
+  app.get("/api/revenue-gate-screenshot/:restaurantName", async (req, res) => {
+    try {
+      const { restaurantName } = req.params;
+      const info = await revenueLossScreenshotService.getScreenshotInfo(restaurantName);
+      res.json(info);
+    } catch (error) {
+      console.error('Get screenshot info error:', error);
+      res.status(500).json({ error: "Failed to get screenshot info" });
+    }
+  });
+
+  app.get("/api/revenue-gate-screenshots", async (req, res) => {
+    try {
+      const screenshots = await revenueLossScreenshotService.getAllScreenshots();
+      res.json(screenshots);
+    } catch (error) {
+      console.error('Get all screenshots error:', error);
+      res.status(500).json({ error: "Failed to get screenshots list" });
+    }
+  });
+
+  app.delete("/api/revenue-gate-screenshot/:restaurantName", async (req, res) => {
+    try {
+      const { restaurantName } = req.params;
+      const deleted = await revenueLossScreenshotService.deleteScreenshot(restaurantName);
+      
+      if (deleted) {
+        res.json({ success: true, message: `Screenshot deleted for ${restaurantName}` });
+      } else {
+        res.status(404).json({ success: false, message: `Screenshot not found for ${restaurantName}` });
+      }
+    } catch (error) {
+      console.error('Delete screenshot error:', error);
+      res.status(500).json({ error: "Failed to delete screenshot" });
+    }
+  });
+
+  app.get("/api/revenue-gate-stats", async (req, res) => {
+    try {
+      const stats = await revenueLossScreenshotService.getStorageStats();
+      res.json(stats);
+    } catch (error) {
+      console.error('Get screenshot stats error:', error);
+      res.status(500).json({ error: "Failed to get screenshot statistics" });
     }
   });
 

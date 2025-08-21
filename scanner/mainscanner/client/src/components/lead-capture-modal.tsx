@@ -10,6 +10,7 @@ interface LeadCaptureModalProps {
   onClose: () => void;
   onSubmit: (data: LeadData) => Promise<void>;
   onAdminBypass?: () => void;
+  onAdminRevenueLossGate?: () => void;
   restaurantName?: string;
   isSubmitting?: boolean;
 }
@@ -27,6 +28,7 @@ export function LeadCaptureModal({
   onClose, 
   onSubmit, 
   onAdminBypass,
+  onAdminRevenueLossGate,
   restaurantName = '',
   isSubmitting = false 
 }: LeadCaptureModalProps) {
@@ -81,6 +83,19 @@ export function LeadCaptureModal({
       // Admin bypass - close modal and start scan without webhook or form validation
       if (onAdminBypass) {
         onAdminBypass();
+      } else {
+        onClose();
+      }
+    } else {
+      alert('Invalid admin code');
+    }
+  };
+
+  const handleAdminRevenueLossGate = () => {
+    if (adminCode === '55555') {
+      // Admin Revenue Loss Gate - show Revenue Loss Gate for admin demo
+      if (onAdminRevenueLossGate) {
+        onAdminRevenueLossGate();
       } else {
         onClose();
       }
@@ -171,6 +186,13 @@ export function LeadCaptureModal({
                         disabled={isSubmitting}
                       />
                       <div className="flex gap-2">
+                        <button
+                          type="button"
+                          onClick={handleAdminRevenueLossGate}
+                          className="px-3 py-1 bg-purple-600 text-white text-xs rounded hover:bg-purple-700 transition-colors"
+                        >
+                          Revenue Gate
+                        </button>
                         <button
                           type="button"
                           onClick={handleAdminBypass}

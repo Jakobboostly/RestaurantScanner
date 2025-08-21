@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+
+// Utility function to remove markdown bold formatting
+const stripMarkdownBold = (text: string) => {
+  return text.replace(/\*\*(.*?)\*\*/g, '$1');
+};
 import { 
   Search, 
   Users, 
@@ -48,6 +53,7 @@ import { PieChart as RechartsPieChart, Cell, ResponsiveContainer, BarChart, Bar,
 import { WebsiteEmbed } from "./WebsiteEmbed";
 import { SentimentAnalysisVisualization } from "./SentimentAnalysisVisualization";
 import { ScanResult } from "@shared/schema";
+import { AIMissingIngredients } from './ai-missing-ingredients';
 
 
 interface PremiumScoreDashboardProps {
@@ -69,11 +75,6 @@ interface AIExplanations {
   local: string;
   reviews: string;
 }
-
-// Utility function to remove markdown bold formatting
-const stripMarkdownBold = (text: string) => {
-  return text.replace(/\*\*(.*?)\*\*/g, '$1');
-};
 
 // Utility function to extract service type from recommendation text
 const extractServiceType = (text: string): 'text' | 'social' | 'seo' | 'review' | 'general' => {
@@ -842,50 +843,23 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                 <div className="grid grid-cols-1 gap-4 md:gap-6">
                   {/* Left Side - Dropdown Summary */}
                   <div className="space-y-6">
-                    {/* Missing Ingredients */}
-                    <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
-                      <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
-                        <AlertCircle className="w-5 h-5 text-[#5F5FFF]" />
-                        Missing Ingredients
-                      </h3>
-                      <div className="space-y-3">
-                        {/* High Priority Issues */}
-                        {scores.search < 50 && (
-                          <div className="bg-[#5F5FFF]/10 border border-[#5F5FFF]/30 rounded p-3">
-                            <span className="text-xs font-bold text-[#5F5FFF] bg-[#5F5FFF]/20 px-2 py-1 rounded">HIGH PRIORITY</span>
-                            <ul className="mt-2 text-sm text-gray-700 space-y-1">
-                              <li>• Not ranking for key restaurant keywords in your area</li>
-                              <li>• Missing from local search results when customers look for food</li>
-                              <li>• Competitors are capturing your potential customers</li>
-                            </ul>
-                          </div>
-                        )}
-                        
-                        {/* Medium Priority Issues */}
-                        {scores.search >= 50 && scores.search < 75 && (
-                          <div className="bg-[#7375FD]/10 border border-[#7375FD]/30 rounded p-3">
-                            <span className="text-xs font-bold text-[#7375FD] bg-[#7375FD]/20 px-2 py-1 rounded">MEDIUM PRIORITY</span>
-                            <ul className="mt-2 text-sm text-gray-700 space-y-1">
-                              <li>• Limited visibility for high-value search terms</li>
-                              <li>• Missing opportunities for delivery and takeout searches</li>
-                              <li>• Inconsistent local search presence</li>
-                            </ul>
-                          </div>
-                        )}
-                        
-                        {/* Low Priority Issues */}
-                        {scores.search >= 75 && (
-                          <div className="bg-[#9090FD]/10 border border-[#9090FD]/30 rounded p-3">
-                            <span className="text-xs font-bold text-[#9090FD] bg-[#9090FD]/20 px-2 py-1 rounded">LOW PRIORITY</span>
-                            <ul className="mt-2 text-sm text-gray-700 space-y-1">
-                              <li>• Fine-tune keyword targeting for seasonal menu items</li>
-                              <li>• Optimize for voice search queries like "Hey Google, best restaurant near me"</li>
-                              <li>• Enhance content for featured snippet opportunities</li>
-                            </ul>
-                          </div>
-                        )}
-                      </div>
-                    </div>
+                    {/* AI-Powered Missing Ingredients for Search */}
+                    <AIMissingIngredients
+                      category="search"
+                      score={scores.search}
+                      restaurantName={restaurantName}
+                      cuisine={scanResult.cuisine}
+                      location={scanResult.businessProfile?.address}
+                      specificData={{
+                        missingKeywords: scanResult.competitiveOpportunityKeywords?.map(k => k.keyword) || [],
+                        currentRankings: scanResult.localPackReport?.keyword_results?.map(kr => ({
+                          keyword: kr.keyword,
+                          position: kr.position
+                        })) || [],
+                        competitors: scanResult.competitors?.slice(0, 3).map(c => c.name) || [],
+                        localPackVisibility: scanResult.localPackReport?.summary?.visibility_score || 0
+                      }}
+                    />
 
                     {/* How Boostly Can Solve It */}
                     <div className="bg-[#5F5FFF]/5 border border-[#5F5FFF]/20 rounded-lg p-4">
@@ -977,10 +951,6 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                         <span className="text-sm text-gray-600">SEO Score</span>
                         <span className="font-bold text-lg text-[#5F5FFF]">{scanResult.seo || 0}/100</span>
                       </div>
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">Domain Authority</span>
-                        <span className="font-medium">{scanResult.domainAuthority || 0}</span>
-                      </div>
                       
                       {/* Where your competition is winning */}
                       <div className="bg-[#5F5FFF]/5 border border-[#5F5FFF]/20 rounded-lg p-3 space-y-2">
@@ -1040,10 +1010,6 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                       
 
                       
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">Domain Authority</span>
-                        <span className="font-medium">{scanResult.domainAuthority || 0}</span>
-                      </div>
                     </div>
                   </div>
 
@@ -1303,51 +1269,22 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
               {/* Social Tab Content */}
               {activeTab === 'social' && (
                 <div className="space-y-6">
-                  {/* Missing Ingredients */}
-                  <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
-                    <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
-                      <AlertCircle className="w-5 h-5 text-[#5F5FFF]" />
-                      Missing Ingredients
-                    </h3>
-                    <div className="space-y-3">
-                      {/* High Priority Issues */}
-                      {scores.social < 50 && (
-                        <div className="bg-[#5F5FFF]/10 border border-[#5F5FFF]/30 rounded p-3">
-                          <span className="text-xs font-bold text-[#5F5FFF] bg-[#5F5FFF]/20 px-2 py-1 rounded">HIGH PRIORITY</span>
-                          <ul className="mt-2 text-sm text-gray-700 space-y-1">
-                            <li>• No active Facebook or Instagram presence - customers can't find you</li>
-                            <li>• Missing out on visual marketing through Instagram and Facebook posts</li>
-                            <li>• Competitors are building loyal followings while you're invisible</li>
-                          </ul>
-                        </div>
-                      )}
-                      
-                      {/* Medium Priority Issues */}
-                      {scores.social >= 50 && scores.social < 75 && (
-                        <div className="bg-[#7375FD]/10 border border-[#7375FD]/30 rounded p-3">
-                          <span className="text-xs font-bold text-[#7375FD] bg-[#7375FD]/20 px-2 py-1 rounded">MEDIUM PRIORITY</span>
-                          <ul className="mt-2 text-sm text-gray-700 space-y-1">
-                            <li>• Limited Facebook and Instagram activity - posts are infrequent</li>
-                            <li>• Low engagement rates with followers on visual platforms</li>
-                            <li>• Missing either Facebook or Instagram where your customers are active</li>
-                          </ul>
-                        </div>
-                      )}
-                      
-                      {/* Low Priority Issues */}
-                      {scores.social >= 75 && (
-                        <div className="bg-[#9090FD]/10 border border-[#9090FD]/30 rounded p-3">
-                          <span className="text-xs font-bold text-[#9090FD] bg-[#9090FD]/20 px-2 py-1 rounded">LOW PRIORITY</span>
-                          <ul className="mt-2 text-sm text-gray-700 space-y-1">
-                            <li>• Expand to additional social platforms like TikTok or YouTube</li>
-                            <li>• Implement Instagram Stories and Facebook Live for real-time engagement</li>
-                            <li>• Create user-generated content campaigns and hashtag strategies</li>
-                          </ul>
-                        </div>
-                      )}
-
-                    </div>
-                  </div>
+                  {/* AI-Powered Missing Ingredients for Social Media */}
+                  <AIMissingIngredients
+                    category="social"
+                    score={scores.social}
+                    restaurantName={restaurantName}
+                    cuisine={scanResult.cuisine}
+                    location={scanResult.businessProfile?.address}
+                    specificData={{
+                      activePlatforms: Object.keys(scanResult.socialMediaLinks || {}).filter(k => scanResult.socialMediaLinks?.[k]),
+                      followerCounts: [
+                        { platform: 'Facebook', count: scanResult.socialMediaAnalysis?.facebook?.followers || 0 },
+                        { platform: 'Instagram', count: scanResult.socialMediaAnalysis?.instagram?.followers || 0 }
+                      ].filter(p => p.count > 0),
+                      postFrequency: scanResult.socialMediaAnalysis?.postingFrequency || 'Unknown'
+                    }}
+                  />
 
                   {/* How Boostly Can Solve It */}
                   <div className="bg-[#5F5FFF]/5 border border-[#5F5FFF]/20 rounded-lg p-4">
@@ -1808,7 +1745,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
                             {scanResult.localPackReport.recommendations.map((rec: string, index: number) => (
                               <li key={index} className="flex items-start gap-2">
                                 <span className="text-blue-500 mt-1">•</span>
-                                <span>{rec}</span>
+                                <span>{stripMarkdownBold(rec)}</span>
                               </li>
                             ))}
                           </ul>
