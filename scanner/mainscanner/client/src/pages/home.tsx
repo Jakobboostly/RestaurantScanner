@@ -334,7 +334,7 @@ export default function HomePage() {
           isSubmitting={isSubmittingLead}
         />
 
-        {/* Revenue Loss Gate - Admin Only */}
+        {/* Revenue Loss Gate - Admin Only (Updated for Render deployment) */}
         {showRevenueLossGate && scanResult && isAdminFlow && (
           <RevenueLossGate
             scanData={scanResult}
