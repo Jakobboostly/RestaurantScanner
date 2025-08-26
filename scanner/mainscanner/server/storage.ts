@@ -1,54 +1,45 @@
 import { restaurants, scans, type Restaurant, type InsertRestaurant, type Scan, type InsertScan } from "@shared/schema";
+import { db } from "./db";
+import { eq, desc } from "drizzle-orm";
 
 export interface IStorage {
   // Restaurant methods
-  getRestaurant(id: number): Promise<Restaurant | undefined>;
-  getRestaurantByPlaceId(placeId: string): Promise<Restaurant | undefined>;
+  getRestaurant(placeId: string): Promise<Restaurant | undefined>;
   createRestaurant(restaurant: InsertRestaurant): Promise<Restaurant>;
   
   // Scan methods
   getScan(id: number): Promise<Scan | undefined>;
-  getLatestScanForRestaurant(restaurantId: number): Promise<Scan | undefined>;
+  getLatestScanForRestaurant(placeId: string): Promise<Scan | undefined>;
   createScan(scan: InsertScan): Promise<Scan>;
   getScansByDomain(domain: string): Promise<Scan[]>;
+  getScansByPlaceId(placeId: string): Promise<Scan[]>;
 }
 
 export class MemStorage implements IStorage {
-  private restaurants: Map<number, Restaurant>;
+  private restaurants: Map<string, Restaurant>;
   private scans: Map<number, Scan>;
-  private restaurantIdCounter: number;
   private scanIdCounter: number;
 
   constructor() {
     this.restaurants = new Map();
     this.scans = new Map();
-    this.restaurantIdCounter = 1;
     this.scanIdCounter = 1;
   }
 
-  async getRestaurant(id: number): Promise<Restaurant | undefined> {
-    return this.restaurants.get(id);
-  }
-
-  async getRestaurantByPlaceId(placeId: string): Promise<Restaurant | undefined> {
-    return Array.from(this.restaurants.values()).find(
-      (restaurant) => restaurant.placeId === placeId
-    );
+  async getRestaurant(placeId: string): Promise<Restaurant | undefined> {
+    return this.restaurants.get(placeId);
   }
 
   async createRestaurant(insertRestaurant: InsertRestaurant): Promise<Restaurant> {
-    const id = this.restaurantIdCounter++;
     const restaurant: Restaurant = {
       ...insertRestaurant,
-      id,
-      placeId: insertRestaurant.placeId ?? null,
       domain: insertRestaurant.domain ?? null,
       rating: insertRestaurant.rating ?? null,
       totalRatings: insertRestaurant.totalRatings ?? null,
       priceLevel: insertRestaurant.priceLevel ?? null,
       createdAt: new Date(),
     };
-    this.restaurants.set(id, restaurant);
+    this.restaurants.set(restaurant.placeId, restaurant);
     return restaurant;
   }
 
@@ -56,9 +47,9 @@ export class MemStorage implements IStorage {
     return this.scans.get(id);
   }
 
-  async getLatestScanForRestaurant(restaurantId: number): Promise<Scan | undefined> {
+  async getLatestScanForRestaurant(placeId: string): Promise<Scan | undefined> {
     const restaurantScans = Array.from(this.scans.values()).filter(
-      (scan) => scan.restaurantId === restaurantId
+      (scan) => scan.placeId === placeId
     );
     return restaurantScans.sort((a, b) => 
       new Date(b.createdAt!).getTime() - new Date(a.createdAt!).getTime()
@@ -70,7 +61,6 @@ export class MemStorage implements IStorage {
     const scan: Scan = {
       ...insertScan,
       id,
-      restaurantId: insertScan.restaurantId ?? null,
       competitorData: insertScan.competitorData ?? null,
       createdAt: new Date(),
     };
@@ -83,6 +73,52 @@ export class MemStorage implements IStorage {
       (scan) => scan.domain === domain
     );
   }
+
+  async getScansByPlaceId(placeId: string): Promise<Scan[]> {
+    return Array.from(this.scans.values()).filter(
+      (scan) => scan.placeId === placeId
+    );
+  }
 }
 
-export const storage = new MemStorage();
+export class DbStorage implements IStorage {
+  async getRestaurant(placeId: string): Promise<Restaurant | undefined> {
+    const result = await db.select().from(restaurants).where(eq(restaurants.placeId, placeId)).limit(1);
+    return result[0];
+  }
+
+  async createRestaurant(insertRestaurant: InsertRestaurant): Promise<Restaurant> {
+    const result = await db.insert(restaurants).values(insertRestaurant).returning();
+    return result[0];
+  }
+
+  async getScan(id: number): Promise<Scan | undefined> {
+    const result = await db.select().from(scans).where(eq(scans.id, id)).limit(1);
+    return result[0];
+  }
+
+  async getLatestScanForRestaurant(placeId: string): Promise<Scan | undefined> {
+    const result = await db.select()
+      .from(scans)
+      .where(eq(scans.placeId, placeId))
+      .orderBy(desc(scans.createdAt))
+      .limit(1);
+    return result[0];
+  }
+
+  async createScan(insertScan: InsertScan): Promise<Scan> {
+    const result = await db.insert(scans).values(insertScan).returning();
+    return result[0];
+  }
+
+  async getScansByDomain(domain: string): Promise<Scan[]> {
+    return await db.select().from(scans).where(eq(scans.domain, domain));
+  }
+
+  async getScansByPlaceId(placeId: string): Promise<Scan[]> {
+    return await db.select().from(scans).where(eq(scans.placeId, placeId));
+  }
+}
+
+// Use database storage if available, otherwise fall back to memory storage
+export const storage = db ? new DbStorage() : new MemStorage();
