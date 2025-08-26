@@ -1,13 +1,14 @@
-import { pgTable, text, serial, integer, boolean, jsonb, timestamp, real } from "drizzle-orm/pg-core";
+import { pgTable, text, serial, integer, boolean, jsonb, timestamp } from "drizzle-orm/pg-core";
 import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 
 export const restaurants = pgTable("restaurants", {
-  placeId: text("place_id").primaryKey(),
+  id: serial("id").primaryKey(),
   name: text("name").notNull(),
   address: text("address").notNull(),
+  placeId: text("place_id").unique(),
   domain: text("domain"),
-  rating: real("rating"),
+  rating: integer("rating"),
   totalRatings: integer("total_ratings"),
   priceLevel: integer("price_level"),
   createdAt: timestamp("created_at").defaultNow(),
@@ -15,7 +16,7 @@ export const restaurants = pgTable("restaurants", {
 
 export const scans = pgTable("scans", {
   id: serial("id").primaryKey(),
-  placeId: text("place_id").references(() => restaurants.placeId).notNull(),
+  restaurantId: integer("restaurant_id").references(() => restaurants.id),
   domain: text("domain").notNull(),
   overallScore: integer("overall_score").notNull(),
   performanceScore: integer("performance_score").notNull(),
@@ -29,6 +30,7 @@ export const scans = pgTable("scans", {
 });
 
 export const insertRestaurantSchema = createInsertSchema(restaurants).omit({
+  id: true,
   createdAt: true,
 });
 

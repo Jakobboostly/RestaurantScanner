@@ -1,23 +1,21 @@
-import postgres from 'postgres';
-import { drizzle } from 'drizzle-orm/postgres-js';
+import { Pool, neonConfig } from '@neondatabase/serverless';
+import { drizzle } from 'drizzle-orm/neon-serverless';
+import ws from "ws";
 import * as schema from "@shared/schema";
-import dotenv from 'dotenv';
 
-// Ensure env vars are loaded
-dotenv.config();
+neonConfig.webSocketConstructor = ws;
 
-let sql: any = null;
+let pool: Pool | null = null;
 let db: any = null;
 
 if (!process.env.DATABASE_URL) {
   console.warn("DATABASE_URL not set - using in-memory storage for development");
   // Use null for in-memory development
-  sql = null;
+  pool = null;
   db = null;
 } else {
-  console.log("✅ Using PostgreSQL database with Drizzle ORM");
-  sql = postgres(process.env.DATABASE_URL, { max: 1 });
-  db = drizzle(sql, { schema });
+  pool = new Pool({ connectionString: process.env.DATABASE_URL });
+  db = drizzle({ client: pool, schema });
 }
 
-export { sql as pool, db };
+export { pool, db };

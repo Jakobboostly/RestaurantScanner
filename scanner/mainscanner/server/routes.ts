@@ -8,6 +8,7 @@ import { JsonSanitizer } from "./utils/jsonSanitizer";
 import { EnhancedDataForSeoService } from "./services/enhancedDataForSeoService";
 import { FunFactsService } from "./services/funFactsService";
 import { WebhookExportService } from "./services/webhookExportService";
+import { scanCacheService } from "./services/scanCacheService";
 import { revenueLossScreenshotService } from "./services/revenueLossScreenshotService";
 import { SearchVolumeService } from "./services/searchVolumeService";
 import { z } from "zod";
@@ -149,84 +150,6 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  // Keyword export endpoint - returns simplified keyword data for external tools
-  app.get("/api/keywords/export/:placeId", async (req, res) => {
-    try {
-      const { placeId } = req.params;
-      
-      // First get the restaurant by place ID
-      const restaurant = await storage.getRestaurant(placeId);
-      
-      if (!restaurant) {
-        return res.status(404).json({ error: "Restaurant not found with this place ID" });
-      }
-      
-      // Get the latest scan for this restaurant
-      const latestScan = await storage.getLatestScanForRestaurant(placeId);
-      
-      if (!latestScan) {
-        return res.status(404).json({ error: "No scan found for this restaurant" });
-      }
-      
-      // Extract keyword data from competitorData JSON
-      const competitorData = latestScan.competitorData as any;
-      
-      if (!competitorData || !competitorData.keywords) {
-        return res.status(404).json({ error: "No keyword data available for this scan" });
-      }
-      
-      // Build simplified export format
-      const exportData: any[] = [];
-      
-      // Process local rankings
-      if (competitorData.localRankings) {
-        competitorData.localRankings.forEach((ranking: any) => {
-          exportData.push({
-            keyword: ranking.keyword,
-            currentRanking: ranking.position || 0,
-            searchVolume: ranking.searchVolume || 0,
-            rankingType: "local"
-          });
-        });
-      }
-      
-      // Process organic rankings (only add if not already in local)
-      if (competitorData.organicRankings) {
-        competitorData.organicRankings.forEach((ranking: any) => {
-          // Check if this keyword already exists from local rankings
-          const existingLocal = exportData.find(item => item.keyword === ranking.keyword);
-          
-          if (!existingLocal) {
-            exportData.push({
-              keyword: ranking.keyword,
-              currentRanking: ranking.position || 0,
-              searchVolume: ranking.searchVolume || 0,
-              rankingType: "organic"
-            });
-          }
-        });
-      }
-      
-      // Sort by worst ranking first (0/null treated as worst)
-      exportData.sort((a, b) => {
-        const aPos = a.currentRanking === 0 ? 999 : a.currentRanking;
-        const bPos = b.currentRanking === 0 ? 999 : b.currentRanking;
-        return bPos - aPos;
-      });
-      
-      res.json({
-        placeId: placeId,
-        restaurantName: restaurant.name,
-        scanDate: latestScan.createdAt,
-        keywords: exportData
-      });
-      
-    } catch (error) {
-      console.error("Keyword export error:", error);
-      res.status(500).json({ error: "Failed to export keyword data" });
-    }
-  });
-
   // Technical SEO audit endpoint
   app.post("/api/audit/technical", async (req, res) => {
     try {
@@ -284,62 +207,30 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.setHeader('Access-Control-Allow-Origin', '*');
       res.setHeader('Access-Control-Allow-Headers', 'Cache-Control');
 
-      // Check database cache first if placeId is provided and forceRefresh is not true
+      // Check cache first if placeId is provided and forceRefresh is not true
       if (placeId && !forceRefresh) {
-        const restaurant = await storage.getRestaurant(placeId);
-        if (restaurant) {
-          const latestScan = await storage.getLatestScanForRestaurant(placeId);
+        const cachedResult = await scanCacheService.getCachedScan(placeId);
+        
+        if (cachedResult) {
+          console.log(`📦 Returning cached scan for ${restaurantName} (${placeId})`);
           
-          if (latestScan && latestScan.createdAt) {
-            // Check if scan is less than 7 days old
-            const scanAge = Date.now() - latestScan.createdAt.getTime();
-            const maxAge = 7 * 24 * 60 * 60 * 1000; // 7 days in milliseconds
-            
-            if (scanAge < maxAge) {
-              console.log(`📦 Returning cached scan from database for ${restaurantName} (${placeId})`);
-              
-              // Reconstruct cached result from database data
-              const cachedResult = {
-                restaurantName: restaurant.name,
-                domain: latestScan.domain,
-                overallScore: latestScan.overallScore,
-                performance: latestScan.performanceScore,
-                seo: latestScan.seoScore,
-                mobile: latestScan.mobileScore,
-                userExperience: latestScan.userExperienceScore,
-                issues: latestScan.issues,
-                recommendations: latestScan.recommendations,
-                keywordAnalysis: latestScan.competitorData,
-                businessProfile: {
-                  name: restaurant.name,
-                  address: restaurant.address,
-                  rating: restaurant.rating,
-                  totalReviews: restaurant.totalRatings,
-                  priceLevel: restaurant.priceLevel
-                },
-                placeId: restaurant.placeId,
-                scanDate: latestScan.createdAt
-              };
-              
-              // Send cached result immediately
-              const progressMessage = {
-                type: 'progress',
-                message: 'Loading cached results...',
-                percentage: 100
-              };
-              res.write(`data: ${JsonSanitizer.safeStringify(progressMessage)}\n\n`);
-              
-              // Send completion with cached data
-              const completionEvent = {
-                type: 'complete',
-                result: cachedResult,
-                cached: true
-              };
-              res.write(`data: ${JsonSanitizer.safeStringify(completionEvent)}\n\n`);
-              res.end();
-              return;
-            }
-          }
+          // Send cached result immediately
+          const progressMessage = {
+            type: 'progress',
+            message: 'Loading cached results...',
+            percentage: 100
+          };
+          res.write(`data: ${JsonSanitizer.safeStringify(progressMessage)}\n\n`);
+          
+          // Send completion with cached data
+          const completionEvent = {
+            type: 'complete',
+            result: cachedResult,
+            cached: true
+          };
+          res.write(`data: ${JsonSanitizer.safeStringify(completionEvent)}\n\n`);
+          res.end();
+          return;
         }
       }
 
@@ -356,52 +247,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
         manualFacebookUrl
       );
 
-      console.log('🚀 SCAN COMPLETED - Now checking for database save...');
-      console.log('🔍 SCAN RESULT STRUCTURE:', Object.keys(scanResult));
-      console.log('🔍 KEYWORD ANALYSIS EXISTS:', !!scanResult.keywordAnalysis);
-      console.log('🔍 PARAMETERS - placeId:', placeId, 'restaurantName:', restaurantName);
-
-      // File caching removed - using PostgreSQL as the single source of truth
-
-      // Save restaurant and scan results to database
-      console.log('🔍 DB SAVE CHECK - placeId:', placeId, 'restaurantName:', restaurantName);
-      if (placeId && restaurantName) {
-        console.log('🔍 DB SAVE - Starting database save process...');
-        try {
-          // First ensure restaurant exists
-          let restaurant = await storage.getRestaurant(placeId);
-          if (!restaurant) {
-            restaurant = await storage.createRestaurant({
-              placeId: placeId,
-              name: restaurantName,
-              address: scanResult.businessProfile?.address || '',
-              domain: domain,
-              rating: scanResult.businessProfile?.rating || null,
-              totalRatings: scanResult.businessProfile?.totalReviews || null,
-              priceLevel: scanResult.businessProfile?.priceLevel || null,
-            });
-            console.log(`📝 Created restaurant record for ${restaurantName} (${placeId})`);
-          }
-
-          // Save scan results
-          console.log('🔍 KEYWORD DATA PREVIEW:', JSON.stringify(scanResult.keywordAnalysis, null, 2).substring(0, 500) + '...');
-          const scanRecord = await storage.createScan({
-            placeId: placeId,
-            domain: domain,
-            overallScore: scanResult.overallScore || 0,
-            performanceScore: scanResult.performance || 0,
-            seoScore: scanResult.seo || 0,
-            mobileScore: scanResult.mobile || 0,
-            userExperienceScore: scanResult.userExperience || 0,
-            issues: scanResult.issues || {},
-            recommendations: scanResult.recommendations || {},
-            competitorData: scanResult.keywordAnalysis || {}, // This contains all the keyword data
-          });
-          console.log(`📊 Saved scan record #${scanRecord.id} for ${restaurantName}`);
-          
-        } catch (error) {
-          console.error('❌ Database save error (scan continues):', error);
-        }
+      // Cache the scan result if placeId is available
+      if (placeId) {
+        await scanCacheService.cacheScan(placeId, scanResult);
+        console.log(`💾 Cached scan results for ${restaurantName} (${placeId})`);
       }
 
       // Generate Revenue Loss Gate screenshot in background
