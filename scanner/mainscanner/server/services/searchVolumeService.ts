@@ -47,6 +47,7 @@ export class SearchVolumeService {
       }];
       
       console.log(`🔍 API payload:`, JSON.stringify(payload, null, 2));
+      console.log(`🔐 Using credentials: ${this.login} / ${this.password ? '***' : 'MISSING'}`);
 
       const response = await fetch('https://api.dataforseo.com/v3/keywords_data/google_ads/search_volume/live', {
         method: 'POST',
@@ -57,27 +58,33 @@ export class SearchVolumeService {
         body: JSON.stringify(payload)
       });
 
+      console.log(`🌐 API Response Status: ${response.status} ${response.statusText}`);
+      
       if (!response.ok) {
-        throw new Error(`DataForSEO API error: ${response.status}`);
+        const errorText = await response.text();
+        console.log(`❌ API Error Response: ${errorText}`);
+        throw new Error(`DataForSEO API error: ${response.status} - ${errorText}`);
       }
 
       const data = await response.json();
+      // Google Ads Search Volume API returns results as individual objects in result array
       const results = data.tasks?.[0]?.result || [];
 
       console.log('🔍 Full API response:', JSON.stringify(data, null, 2));
       console.log(`✅ Retrieved search volume data for ${results.length} keywords`);
 
-      // If API returns empty results, use fallback immediately
+      // If API returns empty results, return 0 instead of fake fallback data
       if (results.length === 0) {
-        console.log('⚠️ DataForSEO returned empty results, using fallback data');
+        console.log('⚠️ DataForSEO returned empty results, returning zero values (NO MORE FAKE DATA)');
         return request.keywords.map(keyword => ({
           keyword,
-          searchVolume: this.getFallbackSearchVolume(keyword),
-          competition: 0.5,
-          cpc: 1.2
+          searchVolume: 0,
+          competition: 0,
+          cpc: 0
         }));
       }
 
+      // Transform API results - Google Ads API returns objects with search_volume property
       return results.map((item: any) => ({
         keyword: item.keyword || '',
         searchVolume: item.search_volume || 0,
@@ -87,17 +94,14 @@ export class SearchVolumeService {
 
     } catch (error) {
       console.error('❌ Search volume API error:', error);
-      console.log('🔄 Using fallback search volumes for keywords:', request.keywords);
+      console.log('🔄 API failed, returning zero values (NO MORE FAKE DATA)');
       
-      const fallbackResults = request.keywords.map(keyword => ({
+      return request.keywords.map(keyword => ({
         keyword,
-        searchVolume: this.getFallbackSearchVolume(keyword),
-        competition: 0.5,
+        searchVolume: 0,
+        competition: 0,
         cpc: 0
       }));
-      
-      console.log('📊 Fallback results:', fallbackResults);
-      return fallbackResults;
     }
   }
 
@@ -111,7 +115,7 @@ export class SearchVolumeService {
       state
     });
 
-    return results[0]?.searchVolume || this.getFallbackSearchVolume(keyword);
+    return results[0]?.searchVolume || 0;
   }
 
   /**

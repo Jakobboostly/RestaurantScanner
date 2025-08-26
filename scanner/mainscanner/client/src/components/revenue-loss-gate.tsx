@@ -38,25 +38,10 @@ export function RevenueLossGate({ scanData, placeId, onClose, onContinue }: Reve
     monthlyRevenue: '',
   });
 
-  // State for real-time search volume data
-  const [isLoadingSearchVolumes, setIsLoadingSearchVolumes] = useState(false);
-  const [searchVolumeData, setSearchVolumeData] = useState<{ [keyword: string]: number }>({});
+  // Search volumes are now loaded during scan - no separate API call needed
 
-  // Extract worst performing keywords and fetch real search volumes
+  // Extract worst performing keywords - now using real search volumes from scan
   const worstKeywords = React.useMemo(() => {
-    // Get fallback search volume for initial display
-    const getFallbackSearchVolume = (keyword: string): number => {
-      const keywordLower = keyword.toLowerCase();
-      if (keywordLower.includes('near me')) return 4500;
-      if (keywordLower.includes('delivery')) return 2800; 
-      if (keywordLower.includes('best')) return 1900;
-      if (keywordLower.includes('restaurant')) return 3200;
-      if (keywordLower.includes('pizza')) return 5100;
-      if (keywordLower.includes('food')) return 2100;
-      if (keywordLower.includes('open now')) return 1600;
-      if (keywordLower.includes('places')) return 2400;
-      return 1800; // Default fallback
-    };
 
     let keywordsToProcess: { keyword: string; position: number | null; searchVolume: number }[] = [];
 
@@ -66,7 +51,7 @@ export function RevenueLossGate({ scanData, placeId, onClose, onContinue }: Reve
         .map(k => ({
           keyword: k.keyword,
           position: k.position || null,
-          searchVolume: searchVolumeData[k.keyword] || k.searchVolume || getFallbackSearchVolume(k.keyword),
+          searchVolume: k.searchVolume || 0, // Real search volume from scan
         }))
         .slice(0, 3);
       
@@ -79,7 +64,7 @@ export function RevenueLossGate({ scanData, placeId, onClose, onContinue }: Reve
         .map(kr => ({
           keyword: kr.keyword,
           position: kr.position || null,
-          searchVolume: searchVolumeData[kr.keyword] || getFallbackSearchVolume(kr.keyword),
+          searchVolume: kr.searchVolume || 0, // Use search volume from scan data
         }));
 
       if (localKeywords.length > 0) {
@@ -91,90 +76,16 @@ export function RevenueLossGate({ scanData, placeId, onClose, onContinue }: Reve
       const keywords = scanData.keywords?.map(k => ({
         keyword: k.keyword,
         position: k.position,
-        searchVolume: searchVolumeData[k.keyword] || k.searchVolume || getFallbackSearchVolume(k.keyword),
+        searchVolume: k.searchVolume || 0, // Use search volume from scan data
       })) || [];
 
       keywordsToProcess = keywords;
     }
 
     return getWorstPerformingKeywords(keywordsToProcess, 3);
-  }, [scanData, searchVolumeData]);
+  }, [scanData]);
 
-  // Fetch real search volumes when component mounts
-  // Convert state abbreviation to full name for DataForSEO API
-  const getFullStateName = (abbreviation: string): string => {
-    const stateMap: { [key: string]: string } = {
-      'AL': 'Alabama', 'AK': 'Alaska', 'AZ': 'Arizona', 'AR': 'Arkansas', 'CA': 'California',
-      'CO': 'Colorado', 'CT': 'Connecticut', 'DE': 'Delaware', 'FL': 'Florida', 'GA': 'Georgia',
-      'HI': 'Hawaii', 'ID': 'Idaho', 'IL': 'Illinois', 'IN': 'Indiana', 'IA': 'Iowa',
-      'KS': 'Kansas', 'KY': 'Kentucky', 'LA': 'Louisiana', 'ME': 'Maine', 'MD': 'Maryland',
-      'MA': 'Massachusetts', 'MI': 'Michigan', 'MN': 'Minnesota', 'MS': 'Mississippi', 'MO': 'Missouri',
-      'MT': 'Montana', 'NE': 'Nebraska', 'NV': 'Nevada', 'NH': 'New Hampshire', 'NJ': 'New Jersey',
-      'NM': 'New Mexico', 'NY': 'New York', 'NC': 'North Carolina', 'ND': 'North Dakota', 'OH': 'Ohio',
-      'OK': 'Oklahoma', 'OR': 'Oregon', 'PA': 'Pennsylvania', 'RI': 'Rhode Island', 'SC': 'South Carolina',
-      'SD': 'South Dakota', 'TN': 'Tennessee', 'TX': 'Texas', 'UT': 'Utah', 'VT': 'Vermont',
-      'VA': 'Virginia', 'WA': 'Washington', 'WV': 'West Virginia', 'WI': 'Wisconsin', 'WY': 'Wyoming',
-      'DC': 'District of Columbia'
-    };
-    return stateMap[abbreviation.toUpperCase()] || abbreviation;
-  };
-
-  React.useEffect(() => {
-    const fetchSearchVolumes = async () => {
-      if (!worstKeywords.length) return;
-
-      setIsLoadingSearchVolumes(true);
-      
-      try {
-        // Extract city and state from scan data
-        const address = scanData.businessProfile?.address || '';
-        const addressParts = address.split(',');
-        const city = addressParts[1]?.trim() || '';
-        const stateMatch = addressParts[2]?.match(/([A-Z]{2})/);
-        const stateAbbr = stateMatch?.[1] || '';
-        const state = getFullStateName(stateAbbr);
-
-        const keywords = worstKeywords.map(k => k.keyword);
-        
-        console.log(`🔍 Fetching real search volumes for: ${keywords.join(', ')}`);
-        console.log(`📍 Location: ${city}, ${state}`);
-
-        const response = await fetch('/api/search-volume', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            keywords,
-            city,
-            state,
-            country: 'United States'
-          }),
-        });
-
-        if (response.ok) {
-          const data = await response.json();
-          if (data.success && data.results) {
-            const volumeMap: { [keyword: string]: number } = {};
-            data.results.forEach((result: any) => {
-              volumeMap[result.keyword] = result.searchVolume || 0;
-            });
-            
-            console.log(`✅ Real search volumes fetched:`, volumeMap);
-            setSearchVolumeData(volumeMap);
-          }
-        } else {
-          console.log('⚠️ Search volume API unavailable, using fallback volumes');
-        }
-      } catch (error) {
-        console.error('❌ Failed to fetch search volumes:', error);
-      } finally {
-        setIsLoadingSearchVolumes(false);
-      }
-    };
-
-    fetchSearchVolumes();
-  }, [scanData.businessProfile?.address]);
+  // Search volumes now loaded during scan - no post-scan API calls needed
 
   // Calculate total monthly and annual losses
   const totalLoss = React.useMemo(() => {
@@ -556,7 +467,7 @@ export function RevenueLossGate({ scanData, placeId, onClose, onContinue }: Reve
                   <CardHeader className="pb-4">
                     <CardTitle className="flex items-center gap-2 text-xl">
                       <MapPin className="h-6 w-6 text-red-500" />
-                      Top 3 Growth Opportunities
+                      Top 3 Quick Wins
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-4">
@@ -572,12 +483,6 @@ export function RevenueLossGate({ scanData, placeId, onClose, onContinue }: Reve
                             <span>•</span>
                             <span>
                               {keyword.searchVolume.toLocaleString()} monthly searches
-                              {isLoadingSearchVolumes && !searchVolumeData[keyword.keyword] && (
-                                <span className="ml-2 text-blue-600 text-xs">⟳ updating...</span>
-                              )}
-                              {searchVolumeData[keyword.keyword] && (
-                                <span className="ml-2 text-green-600 text-xs">✓ verified</span>
-                              )}
                             </span>
                           </div>
                           {topCompetitors[index] && (

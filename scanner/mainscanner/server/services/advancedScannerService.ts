@@ -8,6 +8,7 @@ import { ApifyReviewsService } from './apifyReviewsService.js';
 import { EnhancedSocialMediaDetector } from './enhancedSocialMediaDetector.js';
 import { FacebookPostsScraperService } from './facebookPostsScraperService.js';
 import { OpenAIReviewAnalysisService } from './openaiReviewAnalysisService.js';
+import { SearchVolumeService } from './searchVolumeService.js';
 // Use optimized batched version for better performance
 import { LocalCompetitorServiceOptimized as LocalCompetitorService } from './localCompetitorServiceOptimized.js';
 import { RestaurantLocalPackScanner } from './restaurantLocalPackScanner.js';
@@ -51,6 +52,7 @@ export class AdvancedScannerService {
   private facebookPostsScraperService: FacebookPostsScraperService;
   private openaiReviewAnalysisService: OpenAIReviewAnalysisService;
   private openaiService: OpenAI;
+  private searchVolumeService: SearchVolumeService;
 
   constructor(
     googleApiKey: string,
@@ -79,6 +81,7 @@ export class AdvancedScannerService {
     this.openaiService = new OpenAI({
       apiKey: process.env.OPENAI_API_KEY,
     });
+    this.searchVolumeService = new SearchVolumeService(dataForSeoLogin, dataForSeoPassword);
   }
 
   async scanRestaurantAdvanced(
@@ -369,33 +372,90 @@ export class AdvancedScannerService {
       console.log(`Found ${competitiveOpportunityKeywords.length} competitive opportunity keywords for ${actualDomain}`);
       console.log('🔍 Raw competitive opportunity keywords:', JSON.stringify(competitiveOpportunityKeywords, null, 2));
       
-      // Process the authentic ranked keywords
-      const processedKeywords = rankedKeywords.map((keyword: any) => ({
-        keyword: keyword.keyword,
-        position: keyword.position,
-        searchVolume: keyword.searchVolume,
-        difficulty: keyword.difficulty,
-        intent: keyword.intent,
-        cpc: keyword.cpc,
-        competition: keyword.competition,
-        opportunity: keyword.position <= 10 ? 100 : (keyword.position <= 20 ? 75 : 50),
-        url: keyword.url,
-        title: keyword.title,
-        description: keyword.description,
-        isNew: keyword.isNew,
-        isLost: keyword.isLost,
-        positionChange: keyword.positionChange,
-        previousPosition: keyword.previousPosition
-      }));
+      // Load search volumes for ranked keywords as well
+      let rankedKeywordsVolumeMap = new Map();
+      
+      try {
+        if (rankedKeywords.length > 0) {
+          const rankedKeywordsList = rankedKeywords.map((k: any) => k.keyword);
+          
+          const rankedVolumeResults = await this.searchVolumeService.getSearchVolumes({
+            keywords: rankedKeywordsList,
+            city: locationData.city,
+            state: locationData.state,
+            country: 'United States'
+          });
+          
+          rankedVolumeResults.forEach(result => {
+            rankedKeywordsVolumeMap.set(result.keyword, result);
+          });
+          
+          console.log(`✅ Loaded ${rankedVolumeResults.length} search volumes for ranked keywords`);
+        }
+      } catch (error) {
+        console.log('❌ Ranked keywords search volume loading failed:', error);
+      }
+
+      // Process the authentic ranked keywords with real search volumes
+      const processedKeywords = rankedKeywords.map((keyword: any) => {
+        const volumeData = rankedKeywordsVolumeMap.get(keyword.keyword);
+        const realSearchVolume = volumeData?.searchVolume || 0;
+        
+        return {
+          keyword: keyword.keyword,
+          position: keyword.position,
+          searchVolume: realSearchVolume,
+          difficulty: keyword.difficulty,
+          intent: keyword.intent,
+          cpc: keyword.cpc,
+          competition: keyword.competition,
+          opportunity: keyword.position <= 10 ? 100 : (keyword.position <= 20 ? 75 : 50),
+          url: keyword.url,
+          title: keyword.title,
+          description: keyword.description,
+          isNew: keyword.isNew,
+          isLost: keyword.isLost,
+          positionChange: keyword.positionChange,
+          previousPosition: keyword.previousPosition
+        };
+      });
+      
+      // Load real search volumes during scan (no post-scan API calls needed)
+      let searchVolumeMap = new Map();
+      
+      try {
+        const keywordsToLookup = competitiveOpportunityKeywords.map((k: any) => k.keyword);
+        
+        const searchVolumeResults = await this.searchVolumeService.getSearchVolumes({
+          keywords: keywordsToLookup,
+          city: locationData.city,
+          state: locationData.state,
+          country: 'United States'
+        });
+        
+        // Create lookup map
+        searchVolumeResults.forEach(result => {
+          searchVolumeMap.set(result.keyword, result);
+        });
+        
+        console.log(`✅ Loaded ${searchVolumeResults.length} search volumes for competitive keywords`);
+      } catch (error) {
+        console.log('❌ Search volume loading failed:', error);
+      }
       
       // Process competitive opportunity keywords - these are the 8 targeted keywords the frontend displays
       // Ensure positions are preserved exactly as returned from Local Finder API
       processedCompetitiveKeywords = competitiveOpportunityKeywords.map((keyword: any) => {
         console.log(`🔍 PROCESSING KEYWORD: "${keyword.keyword}" with position: ${keyword.position}`);
+        
+        // Get real search volume from direct API call
+        const volumeData = searchVolumeMap.get(keyword.keyword);
+        const realSearchVolume = volumeData?.searchVolume || 0;
+        
         return {
           keyword: keyword.keyword,
           position: keyword.position || 0, // Preserve exact position from Local Finder API
-          searchVolume: keyword.searchVolume || 0,
+          searchVolume: realSearchVolume,
           difficulty: keyword.difficulty || 0,
           intent: keyword.intent || 'local',
           cpc: keyword.cpc || 0,
@@ -1258,7 +1318,7 @@ IMPORTANT: Prioritize specific food types over cultural categories. Think about 
 SPECIFIC FOOD TYPES (use these when detected):
 - Names with "Sushi" = sushi (customers search "sushi near me", not "japanese food")
 - Names with "Pizza" = pizza (customers search "pizza delivery", not "italian food") 
-- Names with "Taco", "Burrito", "Quesadilla" = tacos (customers search "tacos near me")
+- Names with "Taco", "Burrito", "Quesadilla" = mexican (customers search "mexican restaurant near me")
 - Names with "Ramen" = ramen (customers search "ramen restaurant")
 - Names with "Pho", "Banh Mi" = pho (customers search "pho near me")
 - Names with "BBQ", "Barbecue" = bbq (customers search "bbq restaurant")
@@ -1271,7 +1331,7 @@ SPECIFIC FOOD TYPES (use these when detected):
 EXAMPLES:
 - "El Sushi Loco" = sushi (not japanese)
 - "Tony's Pizza" = pizza (not italian)
-- "Taco Bell" = tacos (not mexican - though use mexican as fallback if no specific food type)
+- "Taco Bell" = mexican (Mexican restaurants should use broad cultural category)
 - "Pho Saigon" = pho (not vietnamese)
 
 Only use broad cultural categories (mexican, italian, chinese, etc.) when no specific food type is obvious.
@@ -1282,7 +1342,7 @@ IMPORTANT: Never use "american" as a cuisine type. Instead:
 - For general American restaurants, choose based on menu focus: burger OR wings
 - Default to "burger" if both could apply
 
-Respond with ONE word from: sushi, pizza, tacos, ramen, pho, bbq, burger, wings, sandwich, steakhouse, seafood, breakfast, cafe, bakery, mexican, italian, chinese, japanese, indian, thai, vietnamese, korean, mediterranean, greek, middle-eastern, french, or restaurant.
+Respond with ONE word from: sushi, pizza, ramen, pho, bbq, burger, wings, sandwich, steakhouse, seafood, breakfast, cafe, bakery, mexican, italian, chinese, japanese, indian, thai, vietnamese, korean, mediterranean, greek, middle-eastern, french, or restaurant.
 
 Cuisine type:`;
 
@@ -1307,7 +1367,7 @@ Cuisine type:`;
       // List of valid cuisine types
       const validCuisines = [
         // Specific food types (prioritized for search behavior)
-        'sushi', 'pizza', 'tacos', 'ramen', 'pho', 'bbq', 'burger', 'wings', 'sandwich', 
+        'sushi', 'pizza', 'ramen', 'pho', 'bbq', 'burger', 'wings', 'sandwich', 
         'steakhouse', 'seafood', 'breakfast', 'cafe', 'bakery',
         // Broad cultural categories (fallback) - NO AMERICAN
         'italian', 'mexican', 'chinese', 'japanese', 'indian', 'thai', 

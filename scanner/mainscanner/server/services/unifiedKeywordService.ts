@@ -15,6 +15,7 @@ import {
   KeywordData,
   LocalKeywordConfig
 } from '../utils/keywordUtils';
+import { SearchVolumeService } from './searchVolumeService';
 
 const limit = pLimit(2); // Limit concurrent DataForSEO API calls
 
@@ -72,10 +73,12 @@ export interface CompetitorResult {
 export class UnifiedKeywordService {
   private login: string;
   private password: string;
+  private searchVolumeService: SearchVolumeService;
 
   constructor(login: string, password: string) {
     this.login = login;
     this.password = password;
+    this.searchVolumeService = new SearchVolumeService(login, password);
   }
 
   /**
@@ -389,86 +392,37 @@ export class UnifiedKeywordService {
   }
 
   /**
-   * Batch Search Volume - Single API call for all keywords
+   * Batch Search Volume - Uses SearchVolumeService for consistency with revenue gate
    */
   private async batchSearchVolume(
     keywords: string[],
     config: any
   ): Promise<SearchVolumeResult[]> {
-    console.log('📈 BATCH SEARCH VOLUME: Getting data for all keywords in single API call');
+    console.log('📈 BATCH SEARCH VOLUME: Using SearchVolumeService for all keywords');
 
     try {
-      // Build dynamic location and date range
-      const locationName = config.locationName || `${config.city},${config.state},United States`;
-      const today = new Date();
-      // Compute first day of the month three months ago
-      const threeMonthsAgo = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth() - 3, 1));
-      const dateFrom = `${threeMonthsAgo.getUTCFullYear()}-${String(threeMonthsAgo.getUTCMonth() + 1).padStart(2, '0')}-01`;
-
       // Limit to the 8 targeted keywords
       const topKeywords = keywords.slice(0, 8);
 
-      const response = await fetch('https://api.dataforseo.com/v3/keywords_data/google_ads/search_volume/live', {
-        method: 'POST',
-        headers: {
-          'Authorization': `Basic ${Buffer.from(`${this.login}:${this.password}`).toString('base64')}`,
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify([
-          {
-            location_name: locationName,
-            language_code: config.languageCode || 'en',
-            keywords: topKeywords,
-            date_from: dateFrom,
-            search_partners: true
-          }
-        ])
+      // Use the same SearchVolumeService as the revenue gate
+      const searchVolumeResults = await this.searchVolumeService.getSearchVolumes({
+        keywords: topKeywords,
+        city: config.city,
+        state: config.state,
+        country: config.country || 'United States'
       });
 
-      if (!response.ok) {
-        console.log('⚠️ Search volume API unavailable, returning empty data');
-        return topKeywords.map(keyword => ({
-          keyword,
-          searchVolume: 0,
-          difficulty: 0,
-          cpc: 0,
-          competition: 0,
-          monthlySearches: []
-        }));
-      }
+      // Transform SearchVolumeService results to match expected SearchVolumeResult interface
+      const results: SearchVolumeResult[] = searchVolumeResults.map(result => ({
+        keyword: result.keyword,
+        searchVolume: result.searchVolume,
+        difficulty: 0, // SearchVolumeService doesn't provide difficulty
+        cpc: result.cpc || 0,
+        competition: result.competition || 0,
+        monthlySearches: [] // SearchVolumeService doesn't provide monthly breakdown
+      }));
 
-      const data = await response.json();
-      // Google Ads endpoint returns items under result[0].items
-      const items = data.tasks?.[0]?.result?.[0]?.items || [];
-
-      const results: SearchVolumeResult[] = topKeywords.map((keyword) => {
-        const item = items.find((it: any) => it.keyword === keyword) || {};
-        const monthly = Array.isArray(item.monthly_searches) ? item.monthly_searches : [];
-
-        // Keep only months >= date_from
-        const recentMonthly = monthly.filter((m: any) => {
-          const year = Number(m.year);
-          const month = Number(m.month); // 1-12
-          const monthStart = new Date(Date.UTC(year, month - 1, 1));
-          return monthStart >= threeMonthsAgo;
-        });
-
-        // Compute average search volume over the last 3 months (or available months)
-        const avgVolume = recentMonthly.length > 0
-          ? Math.round(recentMonthly.reduce((sum: number, m: any) => sum + (m.search_volume || 0), 0) / recentMonthly.length)
-          : 0;
-
-        return {
-          keyword,
-          searchVolume: avgVolume,
-          difficulty: item.keyword_difficulty || 0, // may be undefined for ads endpoint
-          cpc: item.cpc || item.avg_cpc || 0,
-          competition: item.competition || 0,
-          monthlySearches: recentMonthly
-        };
-      });
-
-      console.log(`✅ BATCH SEARCH VOLUME: Got data for ${results.length} keywords`);
+      console.log(`✅ BATCH SEARCH VOLUME: Got data for ${results.length} keywords via SearchVolumeService`);
       return results;
 
     } catch (error) {

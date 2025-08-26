@@ -419,7 +419,7 @@ export class RevenueLossHtmlGenerator {
             <div class="right-column">
                 <div class="opportunities">
                     <div class="opportunities-header">
-                        📍 Top 3 Growth Opportunities
+                        📍 Top 3 Quick Wins
                     </div>
                     ${worstKeywords.slice(0, 3).map((keyword, index) => `
                     <div class="opportunity">
