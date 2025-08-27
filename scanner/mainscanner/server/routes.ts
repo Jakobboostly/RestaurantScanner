@@ -14,6 +14,7 @@ import { WebhookExportService } from "./services/webhookExportService";
 import { scanCacheService } from "./services/scanCacheService";
 import { revenueLossScreenshotService } from "./services/revenueLossScreenshotService";
 import { SearchVolumeService } from "./services/searchVolumeService";
+import { GoogleBusinessService } from "./services/googleBusinessService";
 import { z } from "zod";
 import OpenAI from "openai";
 
@@ -55,7 +56,6 @@ export async function registerRoutes(app: Express): Promise<Server> {
   }
 
   // Google Business Profile scanner service
-  const { GoogleBusinessService } = await import('./services/googleBusinessService.js');
   const googleBusinessService = new GoogleBusinessService(GOOGLE_API_KEY || "");
 
   // Search Volume Service
