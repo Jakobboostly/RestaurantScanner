@@ -1746,6 +1746,109 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Get screenshot by restaurant name from database
+  app.get("/api/revenue-gate/screenshot/restaurant/:restaurantName", async (req, res) => {
+    try {
+      const { restaurantName } = req.params;
+      
+      if (!restaurantName || !db) {
+        return res.status(400).json({ error: "Restaurant name is required" });
+      }
+      
+      const screenshot = await db.query.revenueGateScreenshots.findFirst({
+        where: sql`LOWER(${revenueGateScreenshots.restaurantName}) = LOWER(${restaurantName})`
+      });
+      
+      if (!screenshot) {
+        return res.status(404).json({ error: "Screenshot not found for restaurant" });
+      }
+      
+      res.json({
+        success: true,
+        placeId: screenshot.placeId,
+        restaurantName: screenshot.restaurantName,
+        screenshotData: screenshot.screenshotData,
+        metadata: screenshot.metadata,
+        createdAt: screenshot.createdAt
+      });
+    } catch (error) {
+      console.error("Failed to retrieve screenshot by restaurant name:", error);
+      res.status(500).json({ error: "Failed to retrieve screenshot" });
+    }
+  });
+
+  // List all screenshots from database
+  app.get("/api/revenue-gate/screenshots/list", async (req, res) => {
+    try {
+      if (!db) {
+        return res.status(500).json({ error: "Database not available" });
+      }
+      
+      const screenshots = await db
+        .select({
+          id: revenueGateScreenshots.id,
+          placeId: revenueGateScreenshots.placeId,
+          restaurantName: revenueGateScreenshots.restaurantName,
+          screenshotUrl: revenueGateScreenshots.screenshotUrl,
+          metadata: revenueGateScreenshots.metadata,
+          createdAt: revenueGateScreenshots.createdAt,
+          updatedAt: revenueGateScreenshots.updatedAt
+        })
+        .from(revenueGateScreenshots)
+        .orderBy(sql`${revenueGateScreenshots.createdAt} DESC`);
+      
+      // Add image URLs to each screenshot
+      const screenshotsWithUrls = screenshots.map(screenshot => ({
+        ...screenshot,
+        imageUrl: `${req.protocol}://${req.get('host')}/api/revenue-gate/image/${encodeURIComponent(screenshot.restaurantName)}`
+      }));
+      
+      res.json({
+        success: true,
+        count: screenshots.length,
+        screenshots: screenshotsWithUrls
+      });
+    } catch (error) {
+      console.error("Failed to list screenshots:", error);
+      res.status(500).json({ error: "Failed to list screenshots" });
+    }
+  });
+
+  // Serve screenshot as image - direct URL to view the image
+  app.get("/api/revenue-gate/image/:restaurantName", async (req, res) => {
+    try {
+      const { restaurantName } = req.params;
+      
+      if (!restaurantName || !db) {
+        return res.status(400).json({ error: "Restaurant name is required" });
+      }
+      
+      const screenshot = await db.query.revenueGateScreenshots.findFirst({
+        where: sql`LOWER(${revenueGateScreenshots.restaurantName}) = LOWER(${restaurantName})`
+      });
+      
+      if (!screenshot) {
+        return res.status(404).json({ error: "Screenshot not found for restaurant" });
+      }
+      
+      // Extract base64 data (remove data:image/png;base64, prefix)
+      const base64Data = screenshot.screenshotData.replace(/^data:image\/png;base64,/, '');
+      const imageBuffer = Buffer.from(base64Data, 'base64');
+      
+      // Set appropriate headers
+      res.set({
+        'Content-Type': 'image/png',
+        'Content-Length': imageBuffer.length,
+        'Cache-Control': 'public, max-age=86400' // Cache for 24 hours
+      });
+      
+      res.send(imageBuffer);
+    } catch (error) {
+      console.error("Failed to serve screenshot image:", error);
+      res.status(500).json({ error: "Failed to serve screenshot image" });
+    }
+  });
+
   const httpServer = createServer(app);
   return httpServer;
 }
