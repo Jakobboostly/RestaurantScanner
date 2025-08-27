@@ -54,6 +54,18 @@ export const revenueGateUrls = pgTable("revenue_gate_urls", {
   updatedAt: timestamp("updated_at").defaultNow(),
 });
 
+// Revenue gate screenshots table for storing revenue analysis screenshots
+export const revenueGateScreenshots = pgTable("revenue_gate_screenshots", {
+  id: serial("id").primaryKey(),
+  placeId: text("place_id").notNull(),
+  restaurantName: text("restaurant_name").notNull(),
+  screenshotData: text("screenshot_data").notNull(), // Base64 encoded PNG
+  screenshotUrl: text("screenshot_url"), // Optional URL if hosted elsewhere
+  metadata: jsonb("metadata"), // Additional data like dimensions, file size
+  createdAt: timestamp("created_at").defaultNow(),
+  updatedAt: timestamp("updated_at").defaultNow(),
+});
+
 export const insertRestaurantSchema = createInsertSchema(restaurants).omit({
   id: true,
   createdAt: true,
@@ -76,6 +88,12 @@ export const insertRevenueGateUrlSchema = createInsertSchema(revenueGateUrls).om
   updatedAt: true,
 });
 
+export const insertRevenueGateScreenshotSchema = createInsertSchema(revenueGateScreenshots).omit({
+  id: true,
+  createdAt: true,
+  updatedAt: true,
+});
+
 export type InsertRestaurant = z.infer<typeof insertRestaurantSchema>;
 export type Restaurant = typeof restaurants.$inferSelect;
 export type InsertScan = z.infer<typeof insertScanSchema>;
@@ -84,6 +102,8 @@ export type InsertFullScanResult = z.infer<typeof insertFullScanResultSchema>;
 export type FullScanResult = typeof fullScanResults.$inferSelect;
 export type InsertRevenueGateUrl = z.infer<typeof insertRevenueGateUrlSchema>;
 export type RevenueGateUrl = typeof revenueGateUrls.$inferSelect;
+export type InsertRevenueGateScreenshot = z.infer<typeof insertRevenueGateScreenshotSchema>;
+export type RevenueGateScreenshot = typeof revenueGateScreenshots.$inferSelect;
 
 // Screenshots table for storing SERP screenshot images
 export const screenshots = pgTable("screenshots", {

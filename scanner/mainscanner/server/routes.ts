@@ -2,7 +2,7 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { db } from "./db";
-import { fullScanResults, revenueGateUrls } from "@shared/schema";
+import { fullScanResults, revenueGateUrls, revenueGateScreenshots } from "@shared/schema";
 import { eq, and, sql } from "drizzle-orm";
 import { RestaurantService } from "./services/restaurantService";
 import { AdvancedScannerService } from "./services/advancedScannerService";
@@ -1590,6 +1590,106 @@ export async function registerRoutes(app: Express): Promise<Server> {
     } catch (error) {
       console.error("Failed to link HubSpot contact:", error);
       res.status(500).json({ error: "Failed to link HubSpot contact" });
+    }
+  });
+
+  // Generate and save revenue gate screenshot to database
+  app.post("/api/revenue-gate/generate-screenshot/:placeId", async (req, res) => {
+    try {
+      const { placeId } = req.params;
+      
+      if (!placeId || !db) {
+        return res.status(400).json({ error: "Place ID is required" });
+      }
+      
+      // Get scan data from cache or database
+      const cachedScan = await scanCacheService.getCachedScan(placeId);
+      let scanData = cachedScan;
+      
+      if (!scanData && db) {
+        const dbResult = await db.query.fullScanResults.findFirst({
+          where: eq(fullScanResults.placeId, placeId)
+        });
+        if (dbResult?.scanData) {
+          scanData = dbResult.scanData as any;
+        }
+      }
+      
+      if (!scanData) {
+        return res.status(404).json({ error: "Scan data not found" });
+      }
+      
+      // Generate screenshot
+      const screenshotResult = await revenueLossScreenshotService.generateScreenshot(scanData);
+      
+      if (screenshotResult.success && screenshotResult.screenshotPath) {
+        // Read the screenshot file and convert to base64
+        const fs = await import('fs/promises');
+        const screenshotBuffer = await fs.readFile(screenshotResult.screenshotPath);
+        const base64Data = screenshotBuffer.toString('base64');
+        
+        // Save to database
+        await db.insert(revenueGateScreenshots).values({
+          placeId,
+          restaurantName: scanData.restaurantName || 'Unknown Restaurant',
+          screenshotData: `data:image/png;base64,${base64Data}`,
+          metadata: {
+            width: 1200,
+            height: 800,
+            fileSize: screenshotBuffer.length,
+            generatedAt: new Date().toISOString()
+          }
+        }).onConflictDoUpdate({
+          target: revenueGateScreenshots.placeId,
+          set: {
+            screenshotData: `data:image/png;base64,${base64Data}`,
+            updatedAt: new Date()
+          }
+        });
+        
+        res.json({ 
+          success: true, 
+          message: "Screenshot generated and saved to database",
+          placeId,
+          restaurantName: scanData.restaurantName
+        });
+      } else {
+        res.status(500).json({ error: "Failed to generate screenshot" });
+      }
+    } catch (error) {
+      console.error("Screenshot generation error:", error);
+      res.status(500).json({ error: "Failed to generate screenshot" });
+    }
+  });
+
+  // Get revenue gate screenshot from database
+  app.get("/api/revenue-gate/screenshot/:placeId", async (req, res) => {
+    try {
+      const { placeId } = req.params;
+      
+      if (!placeId || !db) {
+        return res.status(400).json({ error: "Place ID is required" });
+      }
+      
+      const screenshot = await db.query.revenueGateScreenshots.findFirst({
+        where: eq(revenueGateScreenshots.placeId, placeId)
+      });
+      
+      if (!screenshot) {
+        return res.status(404).json({ error: "Screenshot not found" });
+      }
+      
+      res.json({
+        success: true,
+        placeId: screenshot.placeId,
+        restaurantName: screenshot.restaurantName,
+        screenshotData: screenshot.screenshotData,
+        metadata: screenshot.metadata,
+        createdAt: screenshot.createdAt
+      });
+    } catch (error) {
+      console.error("Failed to retrieve screenshot:", error);
+      res.status(500).json({ error: "Failed to retrieve screenshot" });
     }
   });
 
