@@ -260,7 +260,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
       if (scanResult.restaurantName && placeId && db) {
         setImmediate(async () => {
           try {
+            console.log(`🚀 Starting background screenshot generation for ${scanResult.restaurantName} (${placeId})`);
             const screenshotResult = await revenueLossScreenshotService.generateScreenshot(scanResult);
+            
             if (screenshotResult.success && screenshotResult.path) {
               console.log(`📸 Revenue Loss Gate screenshot generated for ${scanResult.restaurantName}`);
               
@@ -293,15 +295,30 @@ export async function registerRoutes(app: Express): Promise<Server> {
                 
                 console.log(`💾 Revenue gate screenshot saved to database for ${scanResult.restaurantName}`);
               } catch (dbError) {
-                console.error('Failed to save screenshot to database:', dbError);
+                console.error(`❌ Database save failed for ${scanResult.restaurantName}:`, dbError);
+                console.error('DB Error details:', dbError.message, dbError.stack);
               }
             } else {
-              console.error(`❌ Screenshot generation failed for ${scanResult.restaurantName}:`, screenshotResult.error);
+              console.error(`❌ Screenshot generation failed for ${scanResult.restaurantName}:`);
+              console.error('Screenshot error details:', screenshotResult.error);
+              console.error('Screenshot result:', screenshotResult);
             }
           } catch (error) {
             console.error(`💥 Screenshot generation error for ${scanResult.restaurantName}:`, error);
+            console.error('Error details:', error.message, error.stack);
+            
+            // Check if it's a Puppeteer/Chrome issue
+            if (error.message && error.message.includes('Could not find Chrome')) {
+              console.error('🚨 Chrome/Chromium not found - Puppeteer cannot launch browser');
+            } else if (error.message && error.message.includes('Navigation')) {
+              console.error('🚨 Puppeteer navigation issue - HTML generation problem');
+            } else {
+              console.error('🚨 Unknown screenshot generation error');
+            }
           }
         });
+      } else {
+        console.log(`⚠️  Skipping screenshot generation: restaurantName=${!!scanResult.restaurantName}, placeId=${!!placeId}, db=${!!db}`);
       }
 
       // Auto-save scan result for revenue gate sharing

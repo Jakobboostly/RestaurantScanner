@@ -50,7 +50,8 @@ export class RevenueLossScreenshotService {
       // Generate HTML content
       const html = this.htmlGenerator.generateHtml(scanData);
 
-      // Launch Puppeteer
+      // Launch Puppeteer with production-ready settings
+      console.log('🚀 Launching Puppeteer browser...');
       browser = await puppeteer.launch({
         headless: true,
         args: [
@@ -60,9 +61,20 @@ export class RevenueLossScreenshotService {
           '--disable-accelerated-2d-canvas',
           '--no-first-run',
           '--no-zygote',
-          '--disable-gpu'
-        ]
+          '--disable-gpu',
+          '--disable-web-security',
+          '--disable-features=VizDisplayCompositor',
+          '--run-all-compositor-stages-before-draw',
+          '--disable-background-timer-throttling',
+          '--disable-renderer-backgrounding',
+          '--disable-backgrounding-occluded-windows',
+          '--disable-ipc-flooding-protection',
+          '--single-process'  // For low memory environments
+        ],
+        executablePath: process.env.CHROME_BIN || undefined, // Allow custom Chrome path
+        timeout: 30000 // 30 second timeout
       });
+      console.log('✅ Puppeteer browser launched successfully');
 
       const page = await browser.newPage();
 
