@@ -59,6 +59,7 @@ export const revenueGateScreenshots = pgTable("revenue_gate_screenshots", {
   id: serial("id").primaryKey(),
   placeId: text("place_id").notNull(),
   restaurantName: text("restaurant_name").notNull(),
+  domain: text("domain"), // Website domain for HubSpot company matching
   screenshotData: text("screenshot_data").notNull(), // Base64 encoded PNG
   screenshotUrl: text("screenshot_url"), // Optional URL if hosted elsewhere
   metadata: jsonb("metadata"), // Additional data like dimensions, file size

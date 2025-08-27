@@ -1454,6 +1454,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
                 await db.insert(revenueGateScreenshots).values({
                   placeId,
                   restaurantName: result.restaurantName || 'Unknown Restaurant',
+                  domain: result.domain || null, // Include domain for HubSpot matching
                   screenshotData: `data:image/png;base64,${base64Data}`,
                   metadata: {
                     width: 1400,
@@ -1466,6 +1467,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
                   target: revenueGateScreenshots.placeId,
                   set: {
                     screenshotData: `data:image/png;base64,${base64Data}`,
+                    domain: result.domain || null,
                     updatedAt: new Date()
                   }
                 });
@@ -1685,6 +1687,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         await db.insert(revenueGateScreenshots).values({
           placeId,
           restaurantName: scanData.restaurantName || 'Unknown Restaurant',
+          domain: scanData.domain || null, // Include domain for HubSpot matching
           screenshotData: `data:image/png;base64,${base64Data}`,
           metadata: {
             width: 1200,
@@ -1696,6 +1699,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
           target: revenueGateScreenshots.placeId,
           set: {
             screenshotData: `data:image/png;base64,${base64Data}`,
+            domain: scanData.domain || null,
             updatedAt: new Date()
           }
         });

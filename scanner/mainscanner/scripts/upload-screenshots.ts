@@ -2,6 +2,7 @@ import { readFileSync, readdirSync, statSync } from 'fs';
 import { join, extname, basename } from 'path';
 import { drizzle } from 'drizzle-orm/postgres-js';
 import postgres from 'postgres';
+import { sql } from 'drizzle-orm';
 import { revenueGateScreenshots } from '../shared/schema';
 
 // Database setup
@@ -82,10 +83,24 @@ async function uploadScreenshots() {
           continue;
         }
 
+        // Try to find domain from existing scan data
+        let domain = null;
+        try {
+          const scanResult = await db.query.fullScanResults.findFirst({
+            where: sql`LOWER(restaurant_name) = LOWER(${metaEntry.restaurantName})`
+          });
+          if (scanResult?.scanData?.domain) {
+            domain = scanResult.scanData.domain;
+          }
+        } catch (domainError) {
+          console.log(`⚠️  Could not find domain for ${metaEntry.restaurantName}`);
+        }
+
         // Insert into database
         await db.insert(revenueGateScreenshots).values({
           placeId: `screenshot_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`, // Generate unique place ID
           restaurantName: metaEntry.restaurantName,
+          domain: domain, // Include domain if found
           screenshotData: base64Data,
           metadata: {
             originalFileName: file,
