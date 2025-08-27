@@ -45,8 +45,10 @@ The Boostly Restaurant Scanner is a professional-grade tool that analyzes restau
 ### 💰 Revenue Loss Analysis
 - Revenue opportunity calculation based on keyword performance
 - Admin-triggered Revenue Loss Gate for employee demos
+- Shareable revenue analysis URLs (`/revenue-gate/{placeId}`)
 - Automated screenshot generation for sales/marketing materials
 - Context-aware recommendations matching restaurant type (QSR vs FSR)
+- HTML report generation for professional presentations
 
 ### 🎯 AI-Powered Recommendations
 - Intelligent service recommendations based on scan results
@@ -58,6 +60,12 @@ The Boostly Restaurant Scanner is a professional-grade tool that analyzes restau
 - 7-day TTL for scan results to reduce API costs
 - File-based caching with automatic cleanup
 - 90% reduction in API usage for repeat searches
+
+### 🔄 Export & Integration
+- Webhook export functionality for external integrations
+- Automatic retry for failed webhook deliveries
+- JSON export format with comprehensive scan data
+- Facebook posts scraping for social media insights
 
 ## Tech Stack
 
@@ -120,19 +128,32 @@ The application will be available at `http://localhost:3000`
 ### Services
 - `advancedScannerService.ts` - Main orchestration service
 - `localCompetitorService.ts` - Competitor detection and analysis
+- `localCompetitorServiceOptimized.ts` - Performance-optimized competitor analysis
 - `restaurantLocalPackScanner.ts` - Local pack visibility tracking
 - `unifiedKeywordService.ts` - Batch keyword processing
+- `dataForSeoRankedKeywordsService.ts` - DataForSEO ranked keywords integration
+- `searchVolumeService.ts` - Real-time search volume API integration
 - `openaiReviewAnalysisService.ts` - AI-powered review analysis
 - `aiRecommendationEngine.ts` - AI-powered service recommendations
 - `scanCacheService.ts` - Scan result caching with 7-day TTL
 - `revenueLossScreenshotService.ts` - Automated screenshot generation
+- `revenueLossHtmlGenerator.ts` - HTML report generation for revenue analysis
+- `webhookExportService.ts` - External webhook integration service
+- `facebookPostsScraperService.ts` - Facebook posts data extraction
+- `funFactsService.ts` - Restaurant fun facts generation
+- `urlRankingService.ts` - Direct URL ranking verification
 
 ### UI Components
 - `enhanced-results-dashboard.tsx` - Main results display
 - `premium-score-dashboard.tsx` - Visual scoring metrics
 - `revenue-loss-gate.tsx` - Revenue opportunity analysis modal
+- `share-revenue-gate.tsx` - Shareable revenue analysis link generator
 - `ai-missing-ingredients.tsx` - AI-powered recommendations display
-- `lead-capture-modal.tsx` - Lead capture with admin bypass
+- `lead-capture-modal.tsx` - Lead capture with admin bypass functionality
+- `keyword-search-tool.tsx` - Interactive keyword search and analysis tool
+- `social-media-display.tsx` - Social media presence visualization
+- `restaurant-search.tsx` - Restaurant search interface with Google Places
+- `scanning-animation.tsx` - Progress animation during scan operations
 - `ui/` - Reusable UI components (shadcn/ui)
 
 ## Performance
@@ -159,14 +180,20 @@ mainscanner/
 │   ├── src/components/       # UI components
 │   ├── src/hooks/           # Custom React hooks
 │   └── src/pages/           # Route components
+│       ├── home.tsx        # Main scanner page
+│       └── revenue-gate-page.tsx # Shareable revenue analysis page
 ├── server/                   # Express backend
 │   ├── services/            # Business logic services
+│   ├── utils/              # Utility functions
+│   │   ├── jsonSanitizer.ts # JSON sanitization utility
+│   │   └── keywordUtils.ts # Keyword processing utilities
 │   └── routes.ts           # API endpoints
 ├── shared/                  # Shared types and schemas
 │   ├── schema.ts           # Database and type definitions
 │   └── revenueCalculations.ts # Revenue analysis utilities
 ├── scan-cache/             # 7-day scan result cache
 ├── revenue-gate-screenshots/ # Generated revenue loss screenshots
+├── exports/                # Failed webhook exports and retries
 ├── public/                 # Static assets
 └── dist/                  # Build output
 ```

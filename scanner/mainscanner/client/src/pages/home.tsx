@@ -184,6 +184,7 @@ export default function HomePage() {
         <EnhancedResultsDashboard
           scanResult={scanResult}
           restaurantName={selectedRestaurant.name}
+          placeId={selectedRestaurant.placeId}
         />
         
         <motion.section 

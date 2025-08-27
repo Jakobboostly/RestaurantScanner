@@ -29,6 +29,31 @@ export const scans = pgTable("scans", {
   createdAt: timestamp("created_at").defaultNow(),
 });
 
+// Full scan results table for revenue gate functionality
+export const fullScanResults = pgTable("full_scan_results", {
+  id: serial("id").primaryKey(),
+  placeId: text("place_id").unique().notNull(), // Use place_id as unique identifier
+  restaurantName: text("restaurant_name").notNull(),
+  domain: text("domain"),
+  scanData: jsonb("scan_data").notNull(), // Complete ScanResult JSON
+  createdAt: timestamp("created_at").defaultNow(),
+  updatedAt: timestamp("updated_at").defaultNow(),
+});
+
+// Revenue gate URLs table for tracking shareable revenue analysis links
+export const revenueGateUrls = pgTable("revenue_gate_urls", {
+  id: serial("id").primaryKey(),
+  placeId: text("place_id").notNull(),
+  restaurantName: text("restaurant_name").notNull(),
+  shareableUrl: text("shareable_url").notNull(),
+  fullScanUrl: text("full_scan_url"),
+  hubspotContactId: text("hubspot_contact_id"),
+  accessCount: integer("access_count").default(0),
+  lastAccessedAt: timestamp("last_accessed_at"),
+  createdAt: timestamp("created_at").defaultNow(),
+  updatedAt: timestamp("updated_at").defaultNow(),
+});
+
 export const insertRestaurantSchema = createInsertSchema(restaurants).omit({
   id: true,
   createdAt: true,
@@ -39,10 +64,26 @@ export const insertScanSchema = createInsertSchema(scans).omit({
   createdAt: true,
 });
 
+export const insertFullScanResultSchema = createInsertSchema(fullScanResults).omit({
+  id: true,
+  createdAt: true,
+  updatedAt: true,
+});
+
+export const insertRevenueGateUrlSchema = createInsertSchema(revenueGateUrls).omit({
+  id: true,
+  createdAt: true,
+  updatedAt: true,
+});
+
 export type InsertRestaurant = z.infer<typeof insertRestaurantSchema>;
 export type Restaurant = typeof restaurants.$inferSelect;
 export type InsertScan = z.infer<typeof insertScanSchema>;
 export type Scan = typeof scans.$inferSelect;
+export type InsertFullScanResult = z.infer<typeof insertFullScanResultSchema>;
+export type FullScanResult = typeof fullScanResults.$inferSelect;
+export type InsertRevenueGateUrl = z.infer<typeof insertRevenueGateUrlSchema>;
+export type RevenueGateUrl = typeof revenueGateUrls.$inferSelect;
 
 // Screenshots table for storing SERP screenshot images
 export const screenshots = pgTable("screenshots", {

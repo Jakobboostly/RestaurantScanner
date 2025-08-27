@@ -1,6 +1,9 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
+import { db } from "./db";
+import { fullScanResults, revenueGateUrls } from "@shared/schema";
+import { eq, and, sql } from "drizzle-orm";
 import { RestaurantService } from "./services/restaurantService";
 import { AdvancedScannerService } from "./services/advancedScannerService";
 import { restaurantSearchResultSchema, scanResultSchema } from "@shared/schema";
@@ -267,6 +270,32 @@ export async function registerRoutes(app: Express): Promise<Server> {
             console.error(`💥 Screenshot generation error for ${scanResult.restaurantName}:`, error);
           }
         });
+      }
+
+      // Auto-save scan result for revenue gate sharing
+      if (placeId && db) {
+        try {
+          await db.insert(fullScanResults)
+            .values({
+              placeId,
+              restaurantName: restaurantName || scanResult.restaurantName || 'Unknown Restaurant',
+              domain,
+              scanData: scanResult,
+            })
+            .onConflictDoUpdate({
+              target: fullScanResults.placeId,
+              set: {
+                scanData: scanResult,
+                restaurantName: restaurantName || scanResult.restaurantName || 'Unknown Restaurant',
+                domain,
+                updatedAt: new Date(),
+              }
+            });
+          console.log(`💾 Auto-saved scan result for ${restaurantName} (${placeId})`);
+        } catch (error) {
+          console.error('Failed to auto-save scan result:', error);
+          // Don't fail the scan if save fails
+        }
       }
 
       // Send completion message with debugging
@@ -1325,6 +1354,242 @@ export async function registerRoutes(app: Express): Promise<Server> {
         message: error instanceof Error ? error.message : 'Scan failed',
         timestamp: new Date().toISOString()
       });
+    }
+  });
+
+  // Save scan result for revenue gate sharing
+  app.post("/api/scan/save", async (req, res) => {
+    try {
+      const { placeId, restaurantName, domain, scanData } = req.body;
+      
+      if (!placeId || !restaurantName || !scanData) {
+        return res.status(400).json({ 
+          error: "Missing required fields: placeId, restaurantName, and scanData are required" 
+        });
+      }
+
+      // Store the full scan result
+      if (db) {
+        await db.insert(fullScanResults)
+          .values({
+            placeId,
+            restaurantName,
+            domain,
+            scanData: scanData,
+          })
+          .onConflictDoUpdate({
+            target: fullScanResults.placeId,
+            set: {
+              scanData: scanData,
+              restaurantName,
+              domain,
+              updatedAt: new Date(),
+            }
+          });
+      } else {
+        // Fallback for in-memory storage - just return success for development
+        console.warn("Database not connected - cannot save scan result permanently");
+      }
+
+      // Generate shareable link
+      const shareableLink = `${req.protocol}://${req.get('host')}/revenue-gate/${placeId}`;
+      
+      res.json({ 
+        success: true,
+        shareableLink,
+        placeId
+      });
+    } catch (error) {
+      console.error("Failed to save scan result:", error);
+      res.status(500).json({ 
+        error: "Failed to save scan result",
+        details: error instanceof Error ? error.message : 'Unknown error'
+      });
+    }
+  });
+
+  // Get saved scan result for revenue gate
+  app.get("/api/scan/revenue-gate/:placeId", async (req, res) => {
+    try {
+      const { placeId } = req.params;
+      
+      if (!placeId) {
+        return res.status(400).json({ error: "Place ID is required" });
+      }
+
+      if (!db) {
+        return res.status(503).json({ error: "Database not available" });
+      }
+
+      const result = await db.query.fullScanResults.findFirst({
+        where: eq(fullScanResults.placeId, placeId)
+      });
+
+      if (!result) {
+        return res.status(404).json({ error: "Scan result not found" });
+      }
+
+      res.json({
+        success: true,
+        restaurantName: result.restaurantName,
+        domain: result.domain,
+        scanData: result.scanData,
+        createdAt: result.createdAt,
+        updatedAt: result.updatedAt
+      });
+    } catch (error) {
+      console.error("Failed to retrieve scan result:", error);
+      res.status(500).json({ 
+        error: "Failed to retrieve scan result",
+        details: error instanceof Error ? error.message : 'Unknown error'
+      });
+    }
+  });
+
+  // Get cached scan result for full scan view
+  app.get("/api/scan/cached/:placeId", async (req, res) => {
+    try {
+      const { placeId } = req.params;
+      
+      if (!placeId) {
+        return res.status(400).json({ error: "Place ID is required" });
+      }
+      
+      // Check cache first
+      const cachedResult = await scanCacheService.getCachedScan(placeId);
+      
+      if (cachedResult) {
+        return res.json(cachedResult);
+      }
+      
+      // Fall back to database if cache miss
+      if (db) {
+        const result = await db.query.fullScanResults.findFirst({
+          where: eq(fullScanResults.placeId, placeId)
+        });
+        
+        if (result && result.scanData) {
+          return res.json(result.scanData);
+        }
+      }
+      
+      return res.status(404).json({ error: "Scan result not found" });
+    } catch (error) {
+      console.error("Failed to retrieve cached scan:", error);
+      res.status(500).json({ error: "Failed to retrieve scan result" });
+    }
+  });
+
+  // Track URL access
+  app.post("/api/urls/track-access/:placeId", async (req, res) => {
+    try {
+      const { placeId } = req.params;
+      const { type } = req.body; // 'full_scan' or 'revenue_gate'
+      
+      if (!placeId) {
+        return res.status(400).json({ error: "Invalid request" });
+      }
+      
+      // Only track if database is available
+      if (!db) {
+        return res.json({ success: true, tracked: false });
+      }
+      
+      // Update or create URL tracking record
+      const existing = await db.query.revenueGateUrls.findFirst({
+        where: eq(revenueGateUrls.placeId, placeId)
+      });
+      
+      if (existing) {
+        await db.update(revenueGateUrls)
+          .set({ 
+            lastAccessedAt: new Date(),
+            accessCount: sql`${revenueGateUrls.accessCount} + 1`,
+            updatedAt: new Date()
+          })
+          .where(eq(revenueGateUrls.placeId, placeId));
+      } else {
+        // Get restaurant name from cache or database
+        let restaurantName = 'Unknown Restaurant';
+        const cachedScan = await scanCacheService.getCachedScan(placeId);
+        if (cachedScan?.restaurantName) {
+          restaurantName = cachedScan.restaurantName;
+        }
+        
+        const protocol = req.protocol;
+        const host = req.get('host');
+        
+        await db.insert(revenueGateUrls).values({
+          placeId,
+          restaurantName,
+          shareableUrl: type === 'revenue_gate' 
+            ? `${protocol}://${host}/revenue-gate/${placeId}`
+            : `${protocol}://${host}/${placeId}`,
+          fullScanUrl: `${protocol}://${host}/${placeId}`,
+          accessCount: 1,
+          lastAccessedAt: new Date()
+        });
+      }
+      
+      res.json({ success: true, tracked: true });
+    } catch (error) {
+      console.error("Failed to track access:", error);
+      res.status(500).json({ error: "Failed to track access" });
+    }
+  });
+
+  // Get URL statistics
+  app.get("/api/urls/stats", async (req, res) => {
+    try {
+      if (!db) {
+        return res.status(503).json({ error: "Database not available" });
+      }
+      
+      const urls = await db.query.revenueGateUrls.findMany({
+        orderBy: (urls, { desc }) => [desc(urls.accessCount)]
+      });
+      
+      res.json({
+        totalUrls: urls.length,
+        totalAccesses: urls.reduce((sum, url) => sum + (url.accessCount || 0), 0),
+        urls: urls.map(url => ({
+          placeId: url.placeId,
+          restaurantName: url.restaurantName,
+          shareableUrl: url.shareableUrl,
+          fullScanUrl: url.fullScanUrl,
+          accessCount: url.accessCount,
+          lastAccessedAt: url.lastAccessedAt,
+          hubspotContactId: url.hubspotContactId,
+          createdAt: url.createdAt
+        }))
+      });
+    } catch (error) {
+      console.error("Failed to get URL stats:", error);
+      res.status(500).json({ error: "Failed to get URL statistics" });
+    }
+  });
+
+  // Link URL to HubSpot contact
+  app.put("/api/urls/:placeId/hubspot", async (req, res) => {
+    try {
+      const { placeId } = req.params;
+      const { hubspotContactId } = req.body;
+      
+      if (!placeId || !hubspotContactId || !db) {
+        return res.status(400).json({ error: "Place ID and HubSpot contact ID are required" });
+      }
+      
+      await db.update(revenueGateUrls)
+        .set({ 
+          hubspotContactId,
+          updatedAt: new Date()
+        })
+        .where(eq(revenueGateUrls.placeId, placeId));
+      
+      res.json({ success: true, message: "HubSpot contact linked successfully" });
+    } catch (error) {
+      console.error("Failed to link HubSpot contact:", error);
+      res.status(500).json({ error: "Failed to link HubSpot contact" });
     }
   });
 

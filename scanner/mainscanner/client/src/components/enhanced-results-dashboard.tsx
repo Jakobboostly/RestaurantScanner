@@ -65,10 +65,12 @@ import GoogleReviewsDisplay from './google-reviews-display';
 import SocialMediaDisplay from './social-media-display';
 import { ScanResult } from "@shared/schema";
 import { PremiumScoreDashboard } from "./premium-score-dashboard";
+import { DualShareLinks } from "./dual-share-links";
 
 interface EnhancedResultsDashboardProps {
   scanResult: ScanResult;
   restaurantName: string;
+  placeId?: string;
 }
 
 // Utility function to remove markdown bold formatting
@@ -76,8 +78,19 @@ const stripMarkdownBold = (text: string) => {
   return text.replace(/\*\*(.*?)\*\*/g, '$1');
 };
 
-function EnhancedResultsDashboard({ scanResult, restaurantName }: EnhancedResultsDashboardProps) {
-  return <PremiumScoreDashboard scanResult={scanResult} restaurantName={restaurantName} />;
+function EnhancedResultsDashboard({ scanResult, restaurantName, placeId }: EnhancedResultsDashboardProps) {
+  return (
+    <div className="space-y-6">
+      <PremiumScoreDashboard scanResult={scanResult} restaurantName={restaurantName} placeId={placeId} />
+      
+      {/* Shareable Links Section */}
+      {placeId && (
+        <div className="max-w-2xl mx-auto px-4">
+          <DualShareLinks placeId={placeId} restaurantName={restaurantName} />
+        </div>
+      )}
+    </div>
+  );
 
   // Color schemes
   const COLORS = {

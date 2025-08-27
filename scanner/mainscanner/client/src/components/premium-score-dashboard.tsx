@@ -54,11 +54,13 @@ import { WebsiteEmbed } from "./WebsiteEmbed";
 import { SentimentAnalysisVisualization } from "./SentimentAnalysisVisualization";
 import { ScanResult } from "@shared/schema";
 import { AIMissingIngredients } from './ai-missing-ingredients';
+import { ShareRevenueGate } from './share-revenue-gate';
 
 
 interface PremiumScoreDashboardProps {
   scanResult: ScanResult;
   restaurantName: string;
+  placeId?: string;
 }
 
 interface ScoreData {
@@ -98,7 +100,7 @@ const getServiceEmoji = (serviceType: string): string => {
   return emojiMap[serviceType as keyof typeof emojiMap] || '🚀';
 };
 
-export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumScoreDashboardProps) {
+export function PremiumScoreDashboard({ scanResult, restaurantName, placeId }: PremiumScoreDashboardProps) {
   try {
     // Debug logging
     console.log('PremiumScoreDashboard render - scanResult:', scanResult);
@@ -2062,6 +2064,17 @@ export function PremiumScoreDashboard({ scanResult, restaurantName }: PremiumSco
             </CardContent>
           </Card>
         </motion.div>
+
+        {/* Share Revenue Gate */}
+        {placeId && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3, delay: 0.5 }}
+          >
+            <ShareRevenueGate placeId={placeId} restaurantName={restaurantName} />
+          </motion.div>
+        )}
 
       </div>
 
