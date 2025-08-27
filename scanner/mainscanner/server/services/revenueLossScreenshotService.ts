@@ -7,9 +7,29 @@ import { RevenueLossHtmlGenerator } from './revenueLossHtmlGenerator';
 export class RevenueLossScreenshotService {
   private readonly screenshotDir = path.join(process.cwd(), 'revenue-gate-screenshots');
   private readonly htmlGenerator = new RevenueLossHtmlGenerator();
+  private puppeteerAvailable: boolean | null = null;
 
   constructor() {
     this.ensureScreenshotDirectory();
+    this.checkPuppeteerAvailability();
+  }
+
+  private async checkPuppeteerAvailability(): Promise<void> {
+    try {
+      console.log('🔍 Checking Puppeteer availability...');
+      const browser = await puppeteer.launch({
+        headless: true,
+        args: ['--no-sandbox', '--disable-setuid-sandbox'],
+        timeout: 10000
+      });
+      await browser.close();
+      this.puppeteerAvailable = true;
+      console.log('✅ Puppeteer is available and working');
+    } catch (error) {
+      this.puppeteerAvailable = false;
+      console.warn('⚠️ Puppeteer not available on this environment:', error instanceof Error ? error.message : 'Unknown error');
+      console.warn('📝 Screenshot generation will be disabled but server will continue running');
+    }
   }
 
   private async ensureScreenshotDirectory(): Promise<void> {
@@ -42,6 +62,26 @@ export class RevenueLossScreenshotService {
     backupPath?: string;
     error?: string;
   }> {
+    // Check if Puppeteer is available
+    if (this.puppeteerAvailable === false) {
+      console.warn(`🚫 Puppeteer not available - skipping screenshot generation for ${scanData.restaurantName}`);
+      return {
+        success: false,
+        error: 'Puppeteer not available in this environment'
+      };
+    }
+
+    // Wait for availability check to complete if still pending
+    if (this.puppeteerAvailable === null) {
+      await new Promise(resolve => setTimeout(resolve, 2000));
+      if (this.puppeteerAvailable === false) {
+        return {
+          success: false,
+          error: 'Puppeteer availability check failed'
+        };
+      }
+    }
+
     let browser;
     
     try {
