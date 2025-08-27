@@ -3,12 +3,12 @@ import { calculateRevenueLoss, getWorstPerformingKeywords, formatCurrency } from
 
 export class RevenueLossHtmlGenerator {
   generateHtml(scanData: ScanResult): string {
-    // Extract worst performing keywords with realistic search volumes
-    const worstKeywords = this.getWorstKeywords(scanData);
+    // Extract highest opportunity keywords with realistic search volumes
+    const opportunityKeywords = this.getHighestOpportunityKeywords(scanData);
     
     // Calculate total losses
     const totalLoss = {
-      monthly: worstKeywords.reduce((sum, kw) => sum + kw.lostRevenue, 0),
+      monthly: opportunityKeywords.reduce((sum, kw) => sum + kw.lostRevenue, 0),
       get annual() { return this.monthly * 12; }
     };
 
@@ -421,7 +421,7 @@ export class RevenueLossHtmlGenerator {
                     <div class="opportunities-header">
                         📍 Top 3 Quick Wins
                     </div>
-                    ${worstKeywords.slice(0, 3).map((keyword, index) => `
+                    ${opportunityKeywords.slice(0, 3).map((keyword, index) => `
                     <div class="opportunity">
                         <div class="opportunity-left">
                             <div class="opportunity-header">
@@ -487,21 +487,24 @@ export class RevenueLossHtmlGenerator {
     return html;
   }
 
-  private getWorstKeywords(scanData: ScanResult) {
+  private getHighestOpportunityKeywords(scanData: ScanResult) {
     const getRealisticSearchVolume = (keyword: string): number => {
       const keywordLower = keyword.toLowerCase();
-      if (keywordLower.includes('near me')) return 4500;
-      if (keywordLower.includes('delivery')) return 2800; 
-      if (keywordLower.includes('best')) return 1900;
-      if (keywordLower.includes('restaurant')) return 3200;
-      if (keywordLower.includes('pizza')) return 5100;
-      if (keywordLower.includes('food')) return 2100;
-      if (keywordLower.includes('open now')) return 1600;
-      if (keywordLower.includes('places')) return 2400;
-      return 1800;
+      // Boost high-intent commercial terms
+      if (keywordLower.includes('near me')) return 5500;
+      if (keywordLower.includes('delivery')) return 4200; 
+      if (keywordLower.includes('order online')) return 3800;
+      if (keywordLower.includes('menu')) return 3500;
+      if (keywordLower.includes('best')) return 3000;
+      if (keywordLower.includes('restaurant')) return 4200;
+      if (keywordLower.includes('pizza')) return 6100;
+      if (keywordLower.includes('food')) return 3100;
+      if (keywordLower.includes('open now')) return 2600;
+      if (keywordLower.includes('places')) return 3400;
+      return 2800; // Higher default for better opportunities
     };
 
-    // Try competitive opportunity keywords first
+    // Try competitive opportunity keywords first - prioritize high volume
     if (scanData.competitiveOpportunityKeywords?.length) {
       const opportunities = scanData.competitiveOpportunityKeywords
         .map(k => ({
@@ -509,12 +512,16 @@ export class RevenueLossHtmlGenerator {
           position: k.position || null,
           searchVolume: k.searchVolume > 0 ? k.searchVolume : getRealisticSearchVolume(k.keyword),
         }))
-        .slice(0, 3);
+        .filter(k => k.searchVolume >= 2000) // Only high-volume keywords
+        .sort((a, b) => b.searchVolume - a.searchVolume) // Sort by volume DESC
+        .slice(0, 5); // Get top 5 by volume
       
-      return getWorstPerformingKeywords(opportunities, 3);
+      if (opportunities.length > 0) {
+        return getWorstPerformingKeywords(opportunities, 3);
+      }
     }
 
-    // Fallback to local pack data
+    // Fallback to local pack data - prioritize high volume
     if (scanData.localPackReport?.keyword_results) {
       const localKeywords = scanData.localPackReport.keyword_results
         .filter(kr => kr.found === false || (kr.position && kr.position > 3))
@@ -522,21 +529,25 @@ export class RevenueLossHtmlGenerator {
           keyword: kr.keyword,
           position: kr.position || null,
           searchVolume: getRealisticSearchVolume(kr.keyword),
-        }));
+        }))
+        .filter(k => k.searchVolume >= 2000) // Only high-volume keywords
+        .sort((a, b) => b.searchVolume - a.searchVolume); // Sort by volume DESC
 
       if (localKeywords.length > 0) {
         return getWorstPerformingKeywords(localKeywords, 3);
       }
     }
 
-    // Final fallback
-    const keywords = scanData.keywords?.map(k => ({
+    // Final fallback - prioritize high volume and commercial intent
+    const keywords = (scanData.keywords?.map(k => ({
       keyword: k.keyword,
       position: k.position,
       searchVolume: k.searchVolume > 0 ? k.searchVolume : getRealisticSearchVolume(k.keyword),
-    })) || [];
+    })) || [])
+    .filter(k => k.searchVolume >= 1500) // Lower threshold for final fallback
+    .sort((a, b) => b.searchVolume - a.searchVolume); // Sort by volume DESC
 
-    return getWorstPerformingKeywords(keywords, 3);
+    return getWorstPerformingKeywords(keywords.length > 0 ? keywords : scanData.keywords || [], 3);
   }
 
   private getCustomerComplaints(scanData: ScanResult) {

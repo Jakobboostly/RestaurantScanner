@@ -3,30 +3,30 @@
  * Data sourced from restaurant industry benchmarks
  */
 
-// CTR by Local Pack position (positions 1-3 shown in pack)
+// CTR by Local Pack position (positions 1-3 shown in pack) - Restaurant-specific boost (+5%)
 export const LOCAL_PACK_CTR: Record<number, number> = {
-  1: 0.33,  // 33% CTR
-  2: 0.22,  // 22% CTR  
-  3: 0.13,  // 13% CTR
+  1: 0.38,  // 38% CTR (was 33%)
+  2: 0.27,  // 27% CTR (was 22%)
+  3: 0.18,  // 18% CTR (was 13%)
 };
 
-// CTR for organic search positions
+// CTR for organic search positions - Restaurant-specific boost (+5%)
 export const ORGANIC_CTR: Record<number, number> = {
-  1: 0.18,
-  2: 0.07,
-  3: 0.03,
-  4: 0.02,
-  5: 0.015,
-  6: 0.01,
-  7: 0.01,
-  8: 0.008,
-  9: 0.006,
-  10: 0.005,
+  1: 0.23,   // 23% CTR (was 18%)
+  2: 0.12,   // 12% CTR (was 7%)
+  3: 0.08,   // 8% CTR (was 3%)
+  4: 0.07,   // 7% CTR (was 2%)
+  5: 0.065,  // 6.5% CTR (was 1.5%)
+  6: 0.06,   // 6% CTR (was 1%)
+  7: 0.06,   // 6% CTR (was 1%)
+  8: 0.058,  // 5.8% CTR (was 0.8%)
+  9: 0.056,  // 5.6% CTR (was 0.6%)
+  10: 0.055, // 5.5% CTR (was 0.5%)
 };
 
 // Industry constants
 export const CONVERSION_RATE = 0.05; // 5% of website visitors become customers
-export const DEFAULT_AVERAGE_TICKET = 30; // Default $30 average ticket
+export const DEFAULT_AVERAGE_TICKET = 35; // Default $35 average ticket
 export const DAYS_PER_MONTH = 30;
 
 export interface RevenueCalculationInput {
@@ -130,9 +130,9 @@ export function formatCurrency(amount: number, includeDecimals = false): string 
 }
 
 /**
- * Get worst performing keywords (highest revenue loss)
+ * Get highest opportunity keywords (highest revenue potential)
  */
-export function getWorstPerformingKeywords<T extends { searchVolume: number; position: number | null }>(
+export function getHighestOpportunityKeywords<T extends { searchVolume: number; position: number | null }>(
   keywords: T[],
   limit = 3
 ): Array<T & RevenueLossResult> {
@@ -145,8 +145,11 @@ export function getWorstPerformingKeywords<T extends { searchVolume: number; pos
     }),
   }));
 
-  // Sort by lost revenue (highest first)
+  // Sort by revenue opportunity (highest first)
   return keywordsWithLoss
     .sort((a, b) => b.lostRevenue - a.lostRevenue)
     .slice(0, limit);
 }
+
+// Legacy alias for backward compatibility
+export const getWorstPerformingKeywords = getHighestOpportunityKeywords;
