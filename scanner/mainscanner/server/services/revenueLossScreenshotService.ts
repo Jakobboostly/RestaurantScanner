@@ -11,7 +11,8 @@ export class RevenueLossScreenshotService {
 
   constructor() {
     this.ensureScreenshotDirectory();
-    this.checkPuppeteerAvailability();
+    // Don't check Puppeteer availability in constructor to avoid blocking module loading
+    // It will be checked lazily when needed
   }
 
   private async checkPuppeteerAvailability(): Promise<void> {
@@ -62,24 +63,17 @@ export class RevenueLossScreenshotService {
     backupPath?: string;
     error?: string;
   }> {
-    // Check if Puppeteer is available
+    // Check if Puppeteer is available (lazy initialization)
+    if (this.puppeteerAvailable === null) {
+      await this.checkPuppeteerAvailability();
+    }
+
     if (this.puppeteerAvailable === false) {
       console.warn(`🚫 Puppeteer not available - skipping screenshot generation for ${scanData.restaurantName}`);
       return {
         success: false,
         error: 'Puppeteer not available in this environment'
       };
-    }
-
-    // Wait for availability check to complete if still pending
-    if (this.puppeteerAvailable === null) {
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      if (this.puppeteerAvailable === false) {
-        return {
-          success: false,
-          error: 'Puppeteer availability check failed'
-        };
-      }
     }
 
     let browser;
