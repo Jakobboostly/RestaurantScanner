@@ -18,8 +18,34 @@ export class RevenueLossScreenshotService {
   private async checkPuppeteerAvailability(): Promise<void> {
     try {
       console.log('🔍 Checking Puppeteer availability...');
+      
+      // Determine executable path based on environment
+      let executablePath: string | undefined;
+      if (process.env.RENDER) {
+        // On Render, try multiple possible Chrome locations
+        const possiblePaths = [
+          '/opt/render/.cache/puppeteer/chrome/linux-131.0.6778.204/chrome-linux64/chrome',
+          '/opt/render/.cache/puppeteer/chrome/linux-133.0.6943.126/chrome-linux64/chrome',
+          process.env.PUPPETEER_EXECUTABLE_PATH,
+        ].filter(Boolean);
+        
+        const fs = await import('fs');
+        for (const path of possiblePaths) {
+          if (path && fs.existsSync(path)) {
+            executablePath = path;
+            console.log(`📍 Found Chrome at: ${path}`);
+            break;
+          }
+        }
+        
+        if (!executablePath) {
+          console.log('🔍 Chrome not found in expected locations, will try default');
+        }
+      }
+      
       const browser = await puppeteer.launch({
         headless: true,
+        executablePath: executablePath || process.env.CHROME_BIN || undefined,
         args: ['--no-sandbox', '--disable-setuid-sandbox'],
         timeout: 10000
       });
@@ -84,6 +110,30 @@ export class RevenueLossScreenshotService {
       // Generate HTML content
       const html = this.htmlGenerator.generateHtml(scanData);
 
+      // Determine executable path based on environment
+      let executablePath: string | undefined;
+      if (process.env.RENDER) {
+        // On Render, try multiple possible Chrome locations
+        const possiblePaths = [
+          '/opt/render/.cache/puppeteer/chrome/linux-131.0.6778.204/chrome-linux64/chrome',
+          '/opt/render/.cache/puppeteer/chrome/linux-133.0.6943.126/chrome-linux64/chrome',
+          process.env.PUPPETEER_EXECUTABLE_PATH,
+        ].filter(Boolean);
+        
+        const fsModule = await import('fs');
+        for (const path of possiblePaths) {
+          if (path && fsModule.existsSync(path)) {
+            executablePath = path;
+            console.log(`📍 Using Chrome at: ${path}`);
+            break;
+          }
+        }
+        
+        if (!executablePath) {
+          console.log('🔍 Chrome not found in expected Render locations, trying default');
+        }
+      }
+
       // Launch Puppeteer with production-ready settings
       console.log('🚀 Launching Puppeteer browser...');
       browser = await puppeteer.launch({
@@ -105,7 +155,7 @@ export class RevenueLossScreenshotService {
           '--disable-ipc-flooding-protection',
           '--single-process'  // For low memory environments
         ],
-        executablePath: process.env.CHROME_BIN || undefined, // Allow custom Chrome path
+        executablePath: executablePath || process.env.CHROME_BIN || undefined, // Allow custom Chrome path
         timeout: 30000 // 30 second timeout
       });
       console.log('✅ Puppeteer browser launched successfully');
