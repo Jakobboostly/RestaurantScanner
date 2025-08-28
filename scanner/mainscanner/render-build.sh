@@ -1,15 +1,7 @@
 #!/usr/bin/env bash
 set -o errexit
 
-echo "🚀 Starting Render build process..."
-
-# Install dependencies
-echo "📦 Installing npm dependencies..."
-npm install
-
-# Build the application
-echo "🔨 Building application..."
-npm run build
+echo "🚀 Setting up Puppeteer for Render..."
 
 # Configure the Puppeteer cache directory
 PUPPETEER_CACHE_DIR=/opt/render/.cache/puppeteer
