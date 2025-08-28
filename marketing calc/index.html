@@ -43,6 +43,15 @@
         background: #7a8df2;
       }
     </style>
+    <script async defer 
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ&libraries=places&callback=initGoogleMaps">
+    </script>
+    <script>
+      function initGoogleMaps() {
+        window.googleMapsLoaded = true;
+        window.dispatchEvent(new Event('googleMapsLoaded'));
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

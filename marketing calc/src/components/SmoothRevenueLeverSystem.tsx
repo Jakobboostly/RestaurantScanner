@@ -1,12 +1,14 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { channelROICalculators } from '../data/restaurantStats';
 import { calculateUnifiedRevenue, RevenueCalculationInputs } from '../services/revenueCalculations';
 import { useCountUp } from '../hooks/useCountUp';
+import { gsap } from 'gsap';
+import { useSimpleAudio } from '../utils/SimpleAudio';
 
 interface LeverData {
   id: string;
   name: string;
-  isActive: boolean; // true = using our service, false = not using
+  isActive: boolean;
   currentRevenue: number;
   potentialRevenue: number;
   color: string;
@@ -15,23 +17,40 @@ interface LeverData {
   dataSource: string;
 }
 
-interface RevenueLeverSystemProps {
+interface SmoothRevenueLeverSystemProps {
   monthlyRevenue: number;
   avgTicket: number;
   monthlyTransactions: number;
   restaurantData?: RevenueCalculationInputs;
+  onLeverChange?: (leverId: string, isActive: boolean, impact: number) => void;
 }
 
-const RevenueLeverSystem: React.FC<RevenueLeverSystemProps> = ({
+const SmoothRevenueLeverSystem: React.FC<SmoothRevenueLeverSystemProps> = ({
   monthlyRevenue,
   avgTicket,
   monthlyTransactions,
-  restaurantData
+  restaurantData,
+  onLeverChange
 }) => {
   const [showMethodology, setShowMethodology] = useState<string | null>(null);
+  const [leverStates, setLeverStates] = useState<{[key: string]: boolean}>({});
+  const [audioEnabled, setAudioEnabled] = useState(false);
+  
+  // Refs for smooth animations
+  const leverRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
+  const cardRefs = useRef<HTMLDivElement[]>([]);
+  
+  // Audio integration
+  const { 
+    initializeAudio, 
+    playToggle, 
+    playClick, 
+    playSuccess, 
+    playHover,
+    setEnabled: setAudioEnabledInManager 
+  } = useSimpleAudio();
 
   const leverCalculations = useMemo(() => {
-    // Use unified calculations if restaurant data is provided
     let seoCurrentRevenue, seoPotentialRevenue, socialCurrentRevenue, socialPotentialRevenue, smsCurrentRevenue, smsPotentialRevenue;
     
     if (restaurantData) {
@@ -46,7 +65,7 @@ const RevenueLeverSystem: React.FC<RevenueLeverSystemProps> = ({
       smsCurrentRevenue = unifiedCalcs.sms.currentRevenue;
       smsPotentialRevenue = unifiedCalcs.sms.potentialRevenue;
     } else {
-      // Fallback to original calculations
+      // Fallback calculations
       seoCurrentRevenue = monthlyRevenue * 0.1;
       seoPotentialRevenue = channelROICalculators.calculateSEOROI(monthlyTransactions * 2.5, 5, 1, avgTicket) + seoCurrentRevenue;
       
@@ -66,8 +85,8 @@ const RevenueLeverSystem: React.FC<RevenueLeverSystemProps> = ({
         potentialRevenue: seoPotentialRevenue,
         color: '#4CAF50',
         icon: '🔍',
-        methodology: 'Based on Local Pack vs Organic search attribution (70%/30% split) and position-specific CTR: Local Pack Position #1 (33% CTR), #2 (22% CTR), #3 (13% CTR). Organic Search Position #1 (18% CTR), #2 (7% CTR), #3 (3% CTR). Uses 5% website conversion rate and 2.5x search volume multiplier.',
-        dataSource: 'Google Local Search Study 2024, Local SEO Click-Through Rate Analysis, Restaurant Industry Benchmarks'
+        methodology: 'Based on Local Pack vs Organic search attribution (70%/30% split) and position-specific CTR.',
+        dataSource: 'Google Local Search Study 2024, Local SEO Click-Through Rate Analysis'
       },
       {
         id: 'social',
@@ -77,8 +96,8 @@ const RevenueLeverSystem: React.FC<RevenueLeverSystemProps> = ({
         potentialRevenue: socialPotentialRevenue,
         color: '#E91E63',
         icon: '📱',
-        methodology: 'Calculated using realistic follower-to-customer conversion rates, with Instagram performing at 1.5% monthly conversion and Facebook at 0.5%. Accounts for posting frequency impact and content strategy optimization.',
-        dataSource: 'Restaurant Social Media Report 2024, Platform-specific engagement studies, Food & Beverage industry analysis'
+        methodology: 'Calculated using realistic follower-to-customer conversion rates and engagement optimization.',
+        dataSource: 'Restaurant Social Media Report 2024, Platform-specific engagement studies'
       },
       {
         id: 'sms',
@@ -88,15 +107,12 @@ const RevenueLeverSystem: React.FC<RevenueLeverSystemProps> = ({
         potentialRevenue: smsPotentialRevenue,
         color: '#2196F3',
         icon: '💬',
-        methodology: 'Based on 98% SMS open rate (highest in F&B sector), 19-20% click-through rate, and 25% conversion rate. Assumes 30% of customers would opt-in to SMS marketing with 4 campaigns per month. 10x higher redemption vs other channels.',
-        dataSource: 'SMS Marketing Benchmark Report, Mobile Marketing Association F&B data, Redemption rate studies'
+        methodology: 'Based on 98% SMS open rate, 19-20% click-through rate, and 25% conversion rate.',
+        dataSource: 'SMS Marketing Benchmark Report, Mobile Marketing Association F&B data'
       }
     ];
-  }, [monthlyRevenue, avgTicket, monthlyTransactions, restaurantData?.monthlyRevenue, restaurantData?.avgTicket, restaurantData?.monthlyTransactions, restaurantData?.keywords, restaurantData?.socialFollowersInstagram, restaurantData?.socialFollowersFacebook, restaurantData?.smsListSize]);
+  }, [monthlyRevenue, avgTicket, monthlyTransactions, restaurantData]);
 
-  const [leverStates, setLeverStates] = useState<{[key: string]: boolean}>({});
-  
-  // Combine calculations with toggle states
   const levers = useMemo(() => 
     leverCalculations.map(lever => ({
       ...lever,
@@ -106,11 +122,80 @@ const RevenueLeverSystem: React.FC<RevenueLeverSystemProps> = ({
   );
 
   const toggleLever = (leverId: string) => {
-    console.log('Toggling lever:', leverId);
+    const lever = levers.find(l => l.id === leverId);
+    if (!lever) return;
+    
+    const wasActive = lever.isActive;
+    const willBeActive = !wasActive;
+    const impact = lever.potentialRevenue - lever.currentRevenue;
+    
+    // Update state
     setLeverStates(prev => ({
       ...prev,
-      [leverId]: !prev[leverId]
+      [leverId]: willBeActive
     }));
+    
+    // Audio feedback
+    if (audioEnabled) {
+      playToggle(willBeActive);
+      if (impact > 10000) {
+        setTimeout(() => playSuccess(), 300);
+      }
+    }
+    
+    // Smooth animations
+    const leverElement = leverRefs.current[leverId];
+    if (leverElement) {
+      // Lever animation
+      gsap.to(leverElement.querySelector('.lever-handle'), {
+        y: willBeActive ? -80 : 80,
+        duration: 0.5,
+        ease: "back.out(1.7)"
+      });
+      
+      // Track color change
+      gsap.to(leverElement.querySelector('.lever-track'), {
+        background: willBeActive 
+          ? `linear-gradient(to top, ${lever.color}, ${lever.color}88)` 
+          : '#e0e0e0',
+        duration: 0.3,
+        ease: "power2.out"
+      });
+      
+      // Pulse effect
+      gsap.fromTo(leverElement, 
+        { scale: 1 },
+        { 
+          scale: 1.05,
+          duration: 0.2,
+          ease: "power2.out",
+          yoyo: true,
+          repeat: 1
+        }
+      );
+      
+      // Card update animation
+      cardRefs.current.forEach((card, index) => {
+        if (card) {
+          gsap.fromTo(card,
+            { scale: 1 },
+            {
+              scale: 1.02,
+              duration: 0.3,
+              ease: "power2.out",
+              delay: index * 0.1,
+              yoyo: true,
+              repeat: 1
+            }
+          );
+        }
+      });
+    }
+    
+    // Callback
+    if (onLeverChange) {
+      onLeverChange(leverId, willBeActive, impact);
+    }
   };
 
   const calculateCurrentRevenue = (lever: LeverData) => {
@@ -122,8 +207,8 @@ const RevenueLeverSystem: React.FC<RevenueLeverSystemProps> = ({
   };
 
   const totals = useMemo(() => {
-    const totalCurrentRevenue = levers.length > 0 ? levers.reduce((sum, lever) => sum + calculateCurrentRevenue(lever), 0) : 0;
-    const totalPotentialRevenue = levers.length > 0 ? levers.reduce((sum, lever) => sum + lever.potentialRevenue, 0) : 0;
+    const totalCurrentRevenue = levers.reduce((sum, lever) => sum + calculateCurrentRevenue(lever), 0);
+    const totalPotentialRevenue = levers.reduce((sum, lever) => sum + lever.potentialRevenue, 0);
     const totalMissing = totalPotentialRevenue - totalCurrentRevenue;
     
     return {
@@ -133,17 +218,20 @@ const RevenueLeverSystem: React.FC<RevenueLeverSystemProps> = ({
     };
   }, [levers]);
 
-  // Animated values for smooth transitions
-  const animatedCurrentRevenue = useCountUp(totals.current, { duration: 1200 });
-  const animatedPotentialRevenue = useCountUp(totals.potential, { duration: 1200 });
-  const animatedMissingRevenue = useCountUp(totals.missing, { duration: 1200 });
+  // Smooth animated values
+  const animatedCurrentRevenue = useCountUp(totals.current, { duration: 1000 });
+  const animatedPotentialRevenue = useCountUp(totals.potential, { duration: 1000 });
+  const animatedMissingRevenue = useCountUp(totals.missing, { duration: 1000 });
 
-  // Helper component for animated numbers
-  const AnimatedNumber: React.FC<{ value: number; lever: LeverData; type: 'current' | 'missing' | 'potential' }> = ({ value, lever, type }) => {
+  const AnimatedNumber: React.FC<{ 
+    value: number; 
+    lever: LeverData; 
+    type: 'current' | 'missing' | 'potential' 
+  }> = ({ lever, type }) => {
     const targetValue = type === 'current' ? calculateCurrentRevenue(lever) : 
                       type === 'missing' ? calculateMissingRevenue(lever) : 
                       lever.potentialRevenue;
-    const animatedValue = useCountUp(targetValue, { duration: 1200 });
+    const animatedValue = useCountUp(targetValue, { duration: 800 });
     return <>{Math.round(animatedValue).toLocaleString()}</>;
   };
 
@@ -152,59 +240,111 @@ const RevenueLeverSystem: React.FC<RevenueLeverSystemProps> = ({
       background: 'white',
       borderRadius: '30px',
       padding: '50px',
-      boxShadow: '0 30px 80px rgba(0,0,0,0.15)',
+      boxShadow: '0 20px 60px rgba(0,0,0,0.1)',
       fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif"
     }}>
       {/* Header */}
       <div style={{ textAlign: 'center', marginBottom: '50px' }}>
-        <h2 style={{
-          fontSize: '2.5rem',
-          fontWeight: '700',
-          color: '#1a1a1a',
-          marginBottom: '15px'
+        <div style={{ 
+          display: 'flex', 
+          justifyContent: 'space-between', 
+          alignItems: 'center',
+          marginBottom: '20px'
         }}>
-          Flip the Switch. See the Impact.
-        </h2>
+          <div></div> {/* Spacer */}
+          
+          <div>
+            <h2 style={{
+              fontSize: '2.5rem',
+              fontWeight: '700',
+              color: '#1a1a1a',
+              margin: '0'
+            }}>
+              Interactive Revenue Levers
+            </h2>
+          </div>
+          
+          <button
+            onClick={() => {
+              const newAudioState = !audioEnabled;
+              setAudioEnabled(newAudioState);
+              setAudioEnabledInManager(newAudioState);
+              
+              if (newAudioState) {
+                initializeAudio();
+                setTimeout(() => playClick(), 100);
+              }
+            }}
+            style={{
+              background: audioEnabled ? '#4CAF50' : '#ccc',
+              color: 'white',
+              border: 'none',
+              padding: '10px 20px',
+              borderRadius: '25px',
+              cursor: 'pointer',
+              fontSize: '14px',
+              fontWeight: '600',
+              transition: 'all 0.3s ease',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px'
+            }}
+            onMouseEnter={() => audioEnabled && playHover()}
+          >
+            {audioEnabled ? '🔊' : '🔇'} Audio
+          </button>
+        </div>
+        
         <p style={{
           fontSize: '1.2rem',
           color: '#666',
           marginBottom: '30px'
         }}>
-          Click each lever to activate Boostly services and watch your revenue transform
+          Toggle services to see real-time revenue impact with smooth animations
         </p>
 
         {/* Summary Cards */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '25px' }}>
-          <div style={{
-            background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)',
-            padding: '25px',
-            borderRadius: '15px',
-            border: '2px solid #dee2e6'
-          }}>
+          <div 
+            ref={el => cardRefs.current[0] = el!}
+            style={{
+              background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)',
+              padding: '25px',
+              borderRadius: '15px',
+              border: '2px solid #dee2e6',
+              transition: 'all 0.3s ease'
+            }}
+          >
             <div style={{ fontSize: '14px', color: '#666', marginBottom: '5px' }}>Current Revenue</div>
             <div style={{ fontSize: '2rem', fontWeight: '800', color: '#333' }}>
               ${Math.round(animatedCurrentRevenue).toLocaleString()}
             </div>
           </div>
 
-          <div style={{
-            background: 'linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%)',
-            padding: '25px',
-            borderRadius: '15px',
-            border: '2px solid #ffc107'
-          }}>
+          <div 
+            ref={el => cardRefs.current[1] = el!}
+            style={{
+              background: 'linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%)',
+              padding: '25px',
+              borderRadius: '15px',
+              border: '2px solid #ffc107'
+            }}
+          >
             <div style={{ fontSize: '14px', color: '#856404', marginBottom: '5px' }}>Missing Revenue</div>
             <div style={{ fontSize: '2rem', fontWeight: '800', color: '#856404' }}>
               ${Math.round(animatedMissingRevenue).toLocaleString()}
             </div>
           </div>
 
-          <div style={{
-            background: 'linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%)',
-            padding: '25px',
-            borderRadius: '15px',
-            border: '2px solid #28a745'
-          }}>
+          <div 
+            ref={el => cardRefs.current[2] = el!}
+            style={{
+              background: 'linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%)',
+              padding: '25px',
+              borderRadius: '15px',
+              border: '2px solid #28a745'
+            }}
+          >
             <div style={{ fontSize: '14px', color: '#155724', marginBottom: '5px' }}>Full Potential</div>
             <div style={{ fontSize: '2rem', fontWeight: '800', color: '#155724' }}>
               ${Math.round(animatedPotentialRevenue).toLocaleString()}
@@ -216,7 +356,14 @@ const RevenueLeverSystem: React.FC<RevenueLeverSystemProps> = ({
       {/* Levers */}
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '40px' }}>
         {levers.map((lever) => (
-          <div key={lever.id} style={{ textAlign: 'center', position: 'relative' }}>
+          <div 
+            key={lever.id} 
+            ref={el => leverRefs.current[lever.id] = el}
+            style={{ 
+              textAlign: 'center', 
+              position: 'relative'
+            }}
+          >
             {/* Lever Name */}
             <div style={{
               display: 'flex',
@@ -263,7 +410,7 @@ const RevenueLeverSystem: React.FC<RevenueLeverSystemProps> = ({
               </div>
             </div>
 
-            {/* Lever Switch */}
+            {/* Smooth Lever Switch */}
             <div 
               style={{
                 position: 'relative',
@@ -274,44 +421,53 @@ const RevenueLeverSystem: React.FC<RevenueLeverSystemProps> = ({
                 margin: '0 auto 20px auto',
                 cursor: 'pointer',
                 border: '3px solid #ddd',
-                transition: 'all 0.3s ease'
+                overflow: 'hidden'
               }}
               onClick={() => toggleLever(lever.id)}
             >
               {/* Lever Track */}
-              <div style={{
-                position: 'absolute',
-                top: '6px',
-                left: '6px',
-                width: 'calc(100% - 12px)',
-                height: 'calc(100% - 12px)',
-                background: lever.isActive ? `linear-gradient(to top, ${lever.color}, ${lever.color}dd)` : '#e0e0e0',
-                borderRadius: '24px',
-                transition: 'all 0.4s ease'
-              }} />
+              <div 
+                className="lever-track"
+                style={{
+                  position: 'absolute',
+                  top: '6px',
+                  left: '6px',
+                  width: 'calc(100% - 12px)',
+                  height: 'calc(100% - 12px)',
+                  background: lever.isActive 
+                    ? `linear-gradient(to top, ${lever.color}, ${lever.color}88)` 
+                    : '#e0e0e0',
+                  borderRadius: '24px',
+                  transition: 'background 0.3s ease'
+                }} 
+              />
 
               {/* Lever Handle */}
-              <div style={{
-                position: 'absolute',
-                top: lever.isActive ? '10px' : 'calc(100% - 50px)', // UP when active, DOWN when inactive
-                left: '50%',
-                transform: 'translateX(-50%)',
-                width: '70px',
-                height: '40px',
-                background: 'white',
-                borderRadius: '20px',
-                border: `3px solid ${lever.isActive ? lever.color : '#999'}`,
-                boxShadow: lever.isActive ? `0 6px 15px ${lever.color}40` : '0 6px 15px rgba(0,0,0,0.15)',
-                cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: '12px',
-                fontWeight: '800',
-                color: lever.isActive ? lever.color : '#999',
-                transition: 'all 0.4s ease',
-                zIndex: 2
-              }}>
+              <div 
+                className="lever-handle"
+                style={{
+                  position: 'absolute',
+                  top: '50%',
+                  left: '50%',
+                  transform: `translate(-50%, ${lever.isActive ? '-130%' : '30%'})`,
+                  width: '50px',
+                  height: '40px',
+                  background: 'white',
+                  borderRadius: '20px',
+                  border: `3px solid ${lever.isActive ? lever.color : '#999'}`,
+                  boxShadow: lever.isActive 
+                    ? `0 4px 15px ${lever.color}40` 
+                    : '0 4px 15px rgba(0,0,0,0.15)',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontSize: '10px',
+                  fontWeight: '800',
+                  color: lever.isActive ? lever.color : '#999',
+                  zIndex: 2
+                }}
+              >
                 {lever.isActive ? 'ON' : 'OFF'}
               </div>
             </div>
@@ -331,7 +487,7 @@ const RevenueLeverSystem: React.FC<RevenueLeverSystemProps> = ({
                 border: `2px solid ${lever.isActive ? lever.color : '#ddd'}`,
                 transition: 'all 0.3s ease'
               }}>
-                {lever.isActive ? '✓ WITH OUR SERVICE' : '✗ WITHOUT OUR SERVICE'}
+                {lever.isActive ? '✓ ACTIVE' : '○ INACTIVE'}
               </div>
             </div>
 
@@ -376,9 +532,10 @@ const RevenueLeverSystem: React.FC<RevenueLeverSystemProps> = ({
                 border: `3px solid ${lever.color}`,
                 borderRadius: '15px',
                 padding: '20px',
-                boxShadow: '0 10px 30px rgba(0,0,0,0.3)',
+                boxShadow: '0 10px 30px rgba(0,0,0,0.2)',
                 zIndex: 1000,
-                marginTop: '10px'
+                marginTop: '10px',
+                animation: 'fadeInUp 0.3s ease-out'
               }}>
                 <h4 style={{
                   margin: '0 0 15px 0',
@@ -415,13 +572,7 @@ const RevenueLeverSystem: React.FC<RevenueLeverSystemProps> = ({
                     border: 'none',
                     fontSize: '18px',
                     color: '#999',
-                    cursor: 'pointer',
-                    padding: '0',
-                    width: '20px',
-                    height: '20px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center'
+                    cursor: 'pointer'
                   }}
                 >
                   ×
@@ -442,11 +593,24 @@ const RevenueLeverSystem: React.FC<RevenueLeverSystemProps> = ({
         color: 'white'
       }}>
         <p style={{ margin: '0', fontSize: '1.1rem', fontWeight: '600' }}>
-          💡 Click the levers to toggle our services ON/OFF and see the revenue impact • Click ? for methodology
+          💡 Click levers to see smooth animations and real-time revenue calculations
         </p>
       </div>
+
+      <style jsx>{`
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateX(-50%) translateY(10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+          }
+        }
+      `}</style>
     </div>
   );
 };
 
-export default RevenueLeverSystem;
+export default SmoothRevenueLeverSystem;

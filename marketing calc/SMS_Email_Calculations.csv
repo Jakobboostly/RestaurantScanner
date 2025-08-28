@@ -1,0 +1,101 @@
+SMS & Email Marketing Revenue Calculations
+
+SMS Marketing Calculations:
+
+Input Variables:
+Variable,Symbol,Description,Data Type
+SMS List Size,SLS,Number of subscribers in SMS list,Number
+Average Ticket,AT,Average transaction value,Currency
+
+Industry Benchmarks:
+SMS Open Rate,SOR,98%,Industry benchmark
+SMS Click Rate,SCR,19.5%,Industry benchmark  
+SMS Redemption Multiplier,SRM,10x,Revenue multiplier for SMS campaigns
+Campaign Frequency,CF,4 campaigns/month,Recommended frequency
+
+Revenue Formulas:
+SMS Campaign Revenue,SCR$,=(SLS × SOR × SCR × AT × SRM) ÷ 10000,Currency per campaign
+Monthly SMS Revenue,MSR,=SCR$ × CF,Currency (4 campaigns per month)
+Current SMS Estimate,CSE,=SLS × 0.05 × AT,Currency (Conservative current estimate)
+SMS Revenue Opportunity,SRO,=MSR - CSE,Currency
+
+Detailed SMS Calculation:
+Step 1: Calculate Recipients Who Open,RO,=SLS × (SOR ÷ 100),Number
+Step 2: Calculate Recipients Who Click,RC,=RO × (SCR ÷ 100),Number  
+Step 3: Calculate Revenue Per Campaign,RPC,=RC × AT × SRM,Currency
+Step 4: Calculate Monthly Revenue,MR,=RPC × CF,Currency
+
+Email Marketing Calculations:
+
+Input Variables:
+Variable,Symbol,Description,Data Type
+Email List Size,ELS,Number of subscribers in email list,Number
+Average Ticket,AT,Average transaction value,Currency
+
+Industry Benchmarks:
+Email Open Rate,EOR,28.4%,Restaurant industry benchmark
+Email Click Rate,ECR,4.2%,Restaurant industry benchmark
+Email Conversion Rate,ECRV,2.8%,Email to purchase conversion rate
+Campaign Frequency,ECF,8 campaigns/month,Recommended frequency
+Automation Open Rate,AOR,51.36%,Automated email open rate
+
+Revenue Formulas:
+Email Campaign Revenue,ECR$,=(ELS × EOR × ECR × ECRV × AT) ÷ 1000000,Currency per campaign
+Monthly Email Revenue,MER,=ECR$ × ECF,Currency (8 campaigns per month)
+Current Email Estimate,CEE,=ELS × 0.01 × AT,Currency (Conservative current estimate)
+Email Revenue Opportunity,ERO,=MER - CEE,Currency
+
+Detailed Email Calculation:
+Step 1: Calculate Opens,EO,=ELS × (EOR ÷ 100),Number
+Step 2: Calculate Clicks,EC,=EO × (ECR ÷ 100),Number
+Step 3: Calculate Conversions,ECONV,=EC × (ECRV ÷ 100),Number
+Step 4: Calculate Revenue Per Campaign,ERPC,=ECONV × AT,Currency
+Step 5: Calculate Monthly Revenue,EMR,=ERPC × ECF,Currency
+
+Combined SMS + Email Calculations:
+
+Total Current Digital Marketing Revenue,TCDMR,=CSE + CEE,Currency
+Total Potential Digital Marketing Revenue,TPDMR,=MSR + MER,Currency
+Total Digital Marketing Opportunity,TDMO,=TPDMR - TCDMR,Currency
+
+Advanced Considerations:
+List Growth Rate,LGR,Variable,Monthly subscriber growth percentage
+Unsubscribe Rate (SMS),USR,3%,Monthly unsubscribe rate
+Segmentation Uplift (Email),SU,14%,Revenue increase from email segmentation
+A/B Testing Uplift,ATU,10-25%,Revenue increase from A/B testing
+
+Example Calculation - SMS:
+SMS List: 2000 subscribers
+Average Ticket: $40
+Campaigns per month: 4
+
+Per Campaign Calculation:
+Opens: 2000 × 98% = 1960
+Clicks: 1960 × 19.5% = 382
+Revenue: 382 × $40 × 10 = $152,800
+Monthly Revenue: $152,800 × 4 = $611,200
+
+Example Calculation - Email:  
+Email List: 5000 subscribers
+Average Ticket: $40
+Campaigns per month: 8
+
+Per Campaign Calculation:
+Opens: 5000 × 28.4% = 1420
+Clicks: 1420 × 4.2% = 59.64
+Conversions: 59.64 × 2.8% = 1.67
+Revenue: 1.67 × $40 = $66.80
+Monthly Revenue: $66.80 × 8 = $534.40
+
+Time-Based Optimization:
+SMS Best Send Times:
+Evening (5-8 PM),45% of engagement
+Afternoon (12-5 PM),25% of engagement  
+Morning (8 AM-12 PM),20% of engagement
+Night (8 PM+),10% of engagement
+
+Email Best Send Days:
+Tuesday,Highest open rates
+Thursday,Second highest open rates
+Avoid Monday,Lower engagement
+Avoid Friday,Lower engagement

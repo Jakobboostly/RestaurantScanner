@@ -1,0 +1,69 @@
+Section,Category,Metric,Formula,Value/Rate,Notes,Source
+Benchmark Data,SEO,Local Pack CTR Position 1,Static Rate,%33,Click-through rate for #1 Local Pack position,Industry Benchmark
+Benchmark Data,SEO,Local Pack CTR Position 2,Static Rate,%22,Click-through rate for #2 Local Pack position,Industry Benchmark
+Benchmark Data,SEO,Local Pack CTR Position 3,Static Rate,%13,Click-through rate for #3 Local Pack position,Industry Benchmark
+Benchmark Data,SEO,Organic CTR Position 1,Static Rate,%18,Click-through rate for #1 Organic position,Industry Benchmark
+Benchmark Data,SEO,Organic CTR Position 2,Static Rate,%7,Click-through rate for #2 Organic position,Industry Benchmark
+Benchmark Data,SEO,Organic CTR Position 3,Static Rate,%3,Click-through rate for #3 Organic position,Industry Benchmark
+Benchmark Data,SEO,Organic CTR Position 4,Static Rate,%2,Click-through rate for #4 Organic position,Industry Benchmark
+Benchmark Data,SEO,Organic CTR Position 5,Static Rate,%1.5,Click-through rate for #5 Organic position,Industry Benchmark
+Benchmark Data,SEO,Conversion Rate,Static Rate,%5,Website visitor to customer conversion rate,Industry Benchmark
+Benchmark Data,SEO,Search Volume Attribution,70% Local Pack / 30% Organic,%70/%30,Traffic split between Local Pack and Organic,Industry Benchmark
+Benchmark Data,SMS,Open Rate,Static Rate,%98,SMS message open rate,Industry Benchmark
+Benchmark Data,SMS,Click Rate,Static Rate,%19.5,SMS link click rate,Industry Benchmark
+Benchmark Data,SMS,Redemption Multiplier,Multiplier,10x,Revenue multiplier for SMS campaigns,Industry Benchmark
+Benchmark Data,SMS,Unsubscribe Rate,Static Rate,%3,SMS unsubscribe rate,Industry Benchmark
+Benchmark Data,Email,Open Rate,Static Rate,%28.4,Email open rate for restaurants,Industry Benchmark
+Benchmark Data,Email,Click Rate,Static Rate,%4.2,Email click rate,Industry Benchmark
+Benchmark Data,Email,Conversion Rate,Static Rate,%2.8,Email to purchase conversion rate,Industry Benchmark
+Benchmark Data,Email,Automation Open Rate,Static Rate,%51.36,Automated email open rate,Industry Benchmark
+Benchmark Data,Social Media,Instagram Engagement Rate,Static Rate,%3.1,Instagram engagement rate for restaurants,Industry Benchmark
+Benchmark Data,Social Media,Facebook Engagement Rate,Static Rate,%1.3,Facebook engagement rate for restaurants,Industry Benchmark
+Benchmark Data,Social Media,Follower Conversion Rate,Static Rate,%89,Percentage of followers who eventually purchase,Industry Benchmark
+Revenue Calculations,SEO,Current Clicks Per Keyword,"(Search Volume × Current CTR) ÷ 100",Dynamic,Monthly clicks from search for each keyword,Calculated
+Revenue Calculations,SEO,Current Conversions Per Keyword,"Current Clicks × Conversion Rate ÷ 100",Dynamic,Monthly conversions from each keyword,Calculated
+Revenue Calculations,SEO,Current Revenue Per Keyword,"Current Conversions × Average Ticket",Dynamic,Monthly revenue from each keyword,Calculated
+Revenue Calculations,SEO,Total Current SEO Revenue,"SUM(All Keywords Current Revenue)",Dynamic,Total monthly revenue from SEO,Calculated
+Revenue Calculations,SEO,Potential Clicks Per Keyword,"(Search Volume × Target CTR) ÷ 100",Dynamic,Potential monthly clicks if ranking improved,Calculated
+Revenue Calculations,SEO,Potential Conversions Per Keyword,"Potential Clicks × Conversion Rate ÷ 100",Dynamic,Potential monthly conversions if ranking improved,Calculated
+Revenue Calculations,SEO,Potential Revenue Per Keyword,"Potential Conversions × Average Ticket",Dynamic,Potential monthly revenue from each keyword,Calculated
+Revenue Calculations,SEO,Total Potential SEO Revenue,"SUM(All Keywords Potential Revenue)",Dynamic,Total potential monthly revenue from SEO,Calculated
+Revenue Calculations,SEO,SEO Revenue Opportunity,"Total Potential SEO Revenue - Total Current SEO Revenue",Dynamic,Additional revenue possible from SEO improvements,Calculated
+Revenue Calculations,SMS,Current SMS Revenue Estimate,"SMS List Size × 0.05 × Average Ticket",Dynamic,Conservative estimate of current SMS revenue,Calculated
+Revenue Calculations,SMS,SMS Campaign Revenue,"SMS List Size × Open Rate × Click Rate × Conversion Rate × Average Ticket ÷ 10000",Dynamic,Revenue from SMS campaign,Calculated
+Revenue Calculations,SMS,SMS Potential Monthly Revenue,"SMS Campaign Revenue × 4",Dynamic,Monthly revenue potential from 4 SMS campaigns,Calculated
+Revenue Calculations,Social Media,Instagram Current Revenue (Basic),"Instagram Followers × 0.005 × Average Ticket",Dynamic,Conservative current monthly revenue from Instagram,Calculated
+Revenue Calculations,Social Media,Instagram Engagement Rate (Calculated),"(Average Likes Per Post ÷ Followers Count)",Dynamic,Actual engagement rate from API data,Calculated
+Revenue Calculations,Social Media,Instagram Potential Revenue,"Instagram Followers × Conversion Rate × Average Ticket",Dynamic,Potential monthly revenue with optimized Instagram,Calculated
+Revenue Calculations,Social Media,Facebook Current Revenue,"Facebook Followers × 0.002 × Average Ticket",Dynamic,Current monthly revenue from Facebook organic,Calculated
+Revenue Calculations,Social Media,Facebook Potential Revenue,"Facebook Followers × Potential Multiplier × Average Ticket",Dynamic,Potential revenue with Facebook optimization,Calculated
+Revenue Calculations,Social Media,Facebook Ads Multiplier,2.5x,2.5,Revenue multiplier when running Facebook ads,Industry Benchmark
+Revenue Calculations,Social Media,Inactive Page Penalty,0.5x,0.5,Revenue reduction for inactive Facebook pages,Industry Benchmark
+Revenue Calculations,Email,Email Campaign Revenue,"Email List Size × Open Rate × Click Rate × Conversion Rate × Average Ticket ÷ 1000000",Dynamic,Revenue from email campaign,Calculated
+Revenue Calculations,Email,Email Monthly Revenue,"Email Campaign Revenue × 8",Dynamic,Monthly revenue from 8 email campaigns,Calculated
+Revenue Calculations,Total Revenue,Current Total Revenue,"SEO Current + Social Current + SMS Current + Email Current",Dynamic,Sum of all current channel revenues,Calculated
+Revenue Calculations,Total Revenue,Potential Total Revenue,"SEO Potential + Social Potential + SMS Potential + Email Potential",Dynamic,Sum of all potential channel revenues,Calculated
+Revenue Calculations,Total Revenue,Total Revenue Opportunity,"Potential Total Revenue - Current Total Revenue",Dynamic,Total additional revenue opportunity,Calculated
+Business Intelligence,Estimation,Monthly Search Volume Estimate,"Monthly Transactions × 2.5",Dynamic,Estimated monthly searches based on transaction volume,Industry Rule of Thumb
+Business Intelligence,Estimation,SEO Revenue Attribution,"Monthly Revenue × 10%",Dynamic,Estimated current SEO contribution to revenue,Industry Average
+Business Intelligence,Social Media,Instagram Conversion Rate (High Engagement),"1.8% if Engagement > 2.5%, else 1.2%",Dynamic,Monthly follower to customer conversion rate,Performance-Based
+Business Intelligence,Social Media,Facebook Base Conversion Rate,0.8%,0.008,Base monthly follower to customer conversion rate,Industry Average
+Seasonal Factors,Day of Week,Monday Multiplier,Static Rate,0.8,Revenue multiplier for Mondays,Industry Data
+Seasonal Factors,Day of Week,Tuesday Multiplier,Static Rate,0.7,Revenue multiplier for Tuesdays,Industry Data
+Seasonal Factors,Day of Week,Wednesday Multiplier,Static Rate,0.8,Revenue multiplier for Wednesdays,Industry Data
+Seasonal Factors,Day of Week,Thursday Multiplier,Static Rate,0.9,Revenue multiplier for Thursdays,Industry Data
+Seasonal Factors,Day of Week,Friday Multiplier,Static Rate,1.4,Revenue multiplier for Fridays,Industry Data
+Seasonal Factors,Day of Week,Saturday Multiplier,Static Rate,1.5,Revenue multiplier for Saturdays,Industry Data
+Seasonal Factors,Day of Week,Sunday Multiplier,Static Rate,1.2,Revenue multiplier for Sundays,Industry Data
+Seasonal Factors,Holidays,Mother's Day Increase,Static Rate,+51%,Revenue increase on Mother's Day,Industry Data
+Seasonal Factors,Holidays,Holiday Season Increase,Static Rate,+68%,Revenue increase during holiday season,Industry Data
+Advanced Calculations,Position-Specific SEO,Organic CTR Fallback Formula,"MAX(1.5 - (Position × 0.2), 0.1)",Dynamic,CTR estimation for positions 6-10+ organic,Calculated Formula
+Advanced Calculations,Conversion Optimization,Enhanced Social Conversion,"Base Rate × Engagement Multiplier × Activity Multiplier",Dynamic,Optimized social media conversion calculation,Calculated
+Advanced Calculations,Campaign Frequency,SMS Campaign Frequency,4 campaigns/month,4,Recommended SMS campaign frequency,Best Practice
+Advanced Calculations,Campaign Frequency,Email Campaign Frequency,8 campaigns/month,8,Recommended email campaign frequency,Best Practice
+Data Sources,API Integration,DataForSEO Keywords,Real-time mobile keyword ranking data,API,"Position, search volume, and keyword text",External API
+Data Sources,API Integration,Social Media Metrics,Instagram/Facebook follower and engagement data,API,"Followers, likes, posts, activity status",External API
+Data Sources,User Input,Restaurant Data,"Monthly Revenue, Average Ticket, Transaction Volume",User Input,Core business metrics from restaurant owner,User Provided
+Methodology,Revenue Attribution,SEO Revenue Calculation Method,Position-based CTR × Search Volume × Conversion Rate × Avg Ticket,Calculated,Uses actual keyword ranking positions and search volumes,Hybrid Approach
+Methodology,Revenue Attribution,Social Revenue Calculation Method,Follower Count × Conversion Rate × Engagement Multiplier × Avg Ticket,Calculated,Uses actual social media metrics when available,Enhanced Approach
+Methodology,Forecasting,Potential Revenue Method,Current Performance + Optimization Improvements,Calculated,Conservative estimates based on industry benchmarks,Conservative Projection

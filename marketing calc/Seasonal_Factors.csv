@@ -1,0 +1,114 @@
+Seasonal Factors & Revenue Adjustments
+
+Day of Week Revenue Multipliers:
+
+Day,Multiplier,Percentage Impact,Usage in Calculations
+Monday,0.8,-20%,Multiply base revenue by 0.8 for Monday projections
+Tuesday,0.7,-30%,Multiply base revenue by 0.7 for Tuesday projections  
+Wednesday,0.8,-20%,Multiply base revenue by 0.8 for Wednesday projections
+Thursday,0.9,-10%,Multiply base revenue by 0.9 for Thursday projections
+Friday,1.4,+40%,Multiply base revenue by 1.4 for Friday projections
+Saturday,1.5,+50%,Multiply base revenue by 1.5 for Saturday projections
+Sunday,1.2,+20%,Multiply base revenue by 1.2 for Sunday projections
+
+Weekly Revenue Distribution:
+Total Weekly Multiplier Sum,7.1,Base week = 7.0,+15.7% above baseline week
+
+Holiday Revenue Increases:
+
+Holiday/Event,Increase %,Duration,Revenue Multiplier
+Mother's Day,+51%,1 day,1.51
+Valentine's Day,+35%,3 days,1.35
+Easter Sunday,+28%,1 day,1.28
+Thanksgiving,+45%,1 day,1.45
+Christmas Eve,+60%,1 day,1.60
+New Year's Eve,+75%,1 day,1.75
+Holiday Season (Nov-Dec),+68%,60 days,1.68
+
+Monthly Seasonal Adjustments:
+
+Month,Adjustment %,Multiplier,Reasoning
+January,-12%,0.88,Post-holiday dining out reduction
+February,-8%,0.92,Cold weather impact  
+March,+2%,1.02,Spring pickup
+April,+5%,1.05,Spring dining increase
+May,+8%,1.08,Warm weather begins
+June,+12%,1.12,Summer dining peak starts
+July,+15%,1.15,Summer peak
+August,+10%,1.10,Late summer
+September,+5%,1.05,Back to school normalization
+October,+8%,1.08,Fall comfort food season
+November,+20%,1.20,Holiday season begins
+December,+15%,1.15,Holiday parties and events
+
+Weather Impact Factors:
+
+Weather Condition,Revenue Impact,Multiplier
+Sunny/Clear,Baseline,1.0
+Light Rain,-5%,0.95
+Heavy Rain/Storm,-15%,0.85
+Snow (Light),-10%,0.90
+Snow (Heavy),-25%,0.75
+Extreme Heat (95°F+),-8%,0.92
+Extreme Cold (Below 20°F),-12%,0.88
+
+Local Event Multipliers:
+
+Event Type,Revenue Impact,Duration,Multiplier
+Local Sports Game (Home),+25%,3-4 hours,1.25
+Local Festival,+40%,1-3 days,1.40
+Concert/Major Event,+30%,1 day,1.30
+Convention in Town,+35%,3-5 days,1.35
+School Events,+15%,1 day,1.15
+Graduation Season,+22%,2 weeks,1.22
+
+Time-Based Revenue Patterns:
+
+Time Period,Revenue Distribution,Multiplier
+Breakfast (6-10 AM),15%,0.15
+Lunch (11 AM-2 PM),25%,0.25
+Dinner (5-9 PM),45%,0.45
+Late Night (9 PM+),15%,0.15
+
+Cumulative Factor Calculation:
+Daily Revenue = Base Revenue × Day Multiplier × Holiday Multiplier × Monthly Multiplier × Weather Multiplier × Event Multiplier
+
+Example Calculations:
+
+Normal Tuesday in January:
+Base Revenue: $1000
+Day Multiplier: 0.7 (Tuesday)
+Monthly Multiplier: 0.88 (January)
+Adjusted Revenue: $1000 × 0.7 × 0.88 = $616
+
+Friday in December with Light Snow:
+Base Revenue: $1000  
+Day Multiplier: 1.4 (Friday)
+Monthly Multiplier: 1.15 (December)
+Weather Multiplier: 0.90 (Light Snow)
+Adjusted Revenue: $1000 × 1.4 × 1.15 × 0.90 = $1449
+
+Mother's Day Sunday in May:
+Base Revenue: $1000
+Day Multiplier: 1.2 (Sunday) 
+Holiday Multiplier: 1.51 (Mother's Day)
+Monthly Multiplier: 1.08 (May)
+Adjusted Revenue: $1000 × 1.2 × 1.51 × 1.08 = $1958
+
+Planning Applications:
+Use these multipliers for:
+- Staff scheduling optimization  
+- Inventory planning
+- Marketing campaign timing
+- Promotional calendar planning
+- Budget forecasting
+- Capacity planning
+
+Regional Variations:
+Note: These factors may vary by:
+- Geographic location
+- Local climate patterns
+- Regional holidays
+- Local demographics
+- Restaurant type/cuisine
+- Tourist vs local clientele
