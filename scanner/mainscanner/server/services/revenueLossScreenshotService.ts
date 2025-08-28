@@ -24,9 +24,13 @@ export class RevenueLossScreenshotService {
       if (process.env.RENDER) {
         // On Render, try multiple possible Chrome locations
         const possiblePaths = [
-          '/opt/render/.cache/puppeteer/chrome/linux-131.0.6778.204/chrome-linux64/chrome',
-          '/opt/render/.cache/puppeteer/chrome/linux-133.0.6943.126/chrome-linux64/chrome',
           process.env.PUPPETEER_EXECUTABLE_PATH,
+          '/opt/render/.cache/puppeteer/chrome/linux-131.0.6778.204/chrome-linux64/chrome',
+          '/opt/render/.cache/puppeteer/chrome/linux-131.0.6778.108/chrome-linux64/chrome',
+          '/opt/render/.cache/puppeteer/chrome/linux-131.0.6778.69/chrome-linux64/chrome',
+          '/opt/render/.cache/puppeteer/chrome/linux-133.0.6943.126/chrome-linux64/chrome',
+          '/opt/render/.cache/puppeteer/chrome/linux-129.0.6668.100/chrome-linux64/chrome',
+          '/opt/render/.cache/puppeteer/chrome/linux-128.0.6613.119/chrome-linux64/chrome',
         ].filter(Boolean);
         
         const fs = await import('fs');
@@ -40,6 +44,7 @@ export class RevenueLossScreenshotService {
         
         if (!executablePath) {
           console.log('🔍 Chrome not found in expected locations, will try default');
+          console.log('🔍 Searched paths:', possiblePaths);
         }
       }
       
@@ -115,9 +120,13 @@ export class RevenueLossScreenshotService {
       if (process.env.RENDER) {
         // On Render, try multiple possible Chrome locations
         const possiblePaths = [
-          '/opt/render/.cache/puppeteer/chrome/linux-131.0.6778.204/chrome-linux64/chrome',
-          '/opt/render/.cache/puppeteer/chrome/linux-133.0.6943.126/chrome-linux64/chrome',
           process.env.PUPPETEER_EXECUTABLE_PATH,
+          '/opt/render/.cache/puppeteer/chrome/linux-131.0.6778.204/chrome-linux64/chrome',
+          '/opt/render/.cache/puppeteer/chrome/linux-131.0.6778.108/chrome-linux64/chrome',
+          '/opt/render/.cache/puppeteer/chrome/linux-131.0.6778.69/chrome-linux64/chrome',
+          '/opt/render/.cache/puppeteer/chrome/linux-133.0.6943.126/chrome-linux64/chrome',
+          '/opt/render/.cache/puppeteer/chrome/linux-129.0.6668.100/chrome-linux64/chrome',
+          '/opt/render/.cache/puppeteer/chrome/linux-128.0.6613.119/chrome-linux64/chrome',
         ].filter(Boolean);
         
         const fsModule = await import('fs');
@@ -131,6 +140,7 @@ export class RevenueLossScreenshotService {
         
         if (!executablePath) {
           console.log('🔍 Chrome not found in expected Render locations, trying default');
+          console.log('🔍 Searched paths:', possiblePaths);
         }
       }
 
