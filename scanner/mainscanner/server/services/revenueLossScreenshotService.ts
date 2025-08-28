@@ -22,30 +22,57 @@ export class RevenueLossScreenshotService {
       // Determine executable path based on environment
       let executablePath: string | undefined;
       if (process.env.RENDER) {
-        // On Render, try multiple possible Chrome locations
-        const possiblePaths = [
-          process.env.PUPPETEER_EXECUTABLE_PATH,
-          '/opt/render/.cache/puppeteer/chrome/linux-139.0.7258.66/chrome-linux64/chrome',
-          '/opt/render/.cache/puppeteer/chrome/linux-131.0.6778.204/chrome-linux64/chrome',
-          '/opt/render/.cache/puppeteer/chrome/linux-131.0.6778.108/chrome-linux64/chrome',
-          '/opt/render/.cache/puppeteer/chrome/linux-131.0.6778.69/chrome-linux64/chrome',
-          '/opt/render/.cache/puppeteer/chrome/linux-133.0.6943.126/chrome-linux64/chrome',
-          '/opt/render/.cache/puppeteer/chrome/linux-129.0.6668.100/chrome-linux64/chrome',
-          '/opt/render/.cache/puppeteer/chrome/linux-128.0.6613.119/chrome-linux64/chrome',
-        ].filter(Boolean);
-        
-        const fs = await import('fs');
-        for (const path of possiblePaths) {
-          if (path && fs.existsSync(path)) {
-            executablePath = path;
-            console.log(`📍 Found Chrome at: ${path}`);
-            break;
+        // On Render, try environment variable first, then dynamic search
+        if (process.env.PUPPETEER_EXECUTABLE_PATH) {
+          const fsModule = await import('fs');
+          if (fsModule.existsSync(process.env.PUPPETEER_EXECUTABLE_PATH)) {
+            executablePath = process.env.PUPPETEER_EXECUTABLE_PATH;
+            console.log(`📍 Using Chrome from PUPPETEER_EXECUTABLE_PATH: ${executablePath}`);
           }
         }
         
         if (!executablePath) {
-          console.log('🔍 Chrome not found in expected locations, will try default');
-          console.log('🔍 Searched paths:', possiblePaths);
+          // Dynamic search for Chrome in Puppeteer cache directory
+          try {
+            const { execSync } = await import('child_process');
+            const searchResult = execSync('find /opt/render/.cache/puppeteer -name chrome -type f -executable 2>/dev/null | head -1', { encoding: 'utf8' }).trim();
+            if (searchResult) {
+              const fsModule = await import('fs');
+              if (fsModule.existsSync(searchResult)) {
+                executablePath = searchResult;
+                console.log(`📍 Found Chrome via dynamic search: ${executablePath}`);
+              }
+            }
+          } catch (error) {
+            console.log('🔍 Dynamic Chrome search failed, falling back to static paths');
+          }
+        }
+        
+        if (!executablePath) {
+          // Fallback to static paths
+          const possiblePaths = [
+            '/opt/render/.cache/puppeteer/chrome/linux-139.0.7258.66/chrome-linux64/chrome',
+            '/opt/render/.cache/puppeteer/chrome/linux-131.0.6778.204/chrome-linux64/chrome',
+            '/opt/render/.cache/puppeteer/chrome/linux-131.0.6778.108/chrome-linux64/chrome',
+            '/opt/render/.cache/puppeteer/chrome/linux-131.0.6778.69/chrome-linux64/chrome',
+            '/opt/render/.cache/puppeteer/chrome/linux-133.0.6943.126/chrome-linux64/chrome',
+            '/opt/render/.cache/puppeteer/chrome/linux-129.0.6668.100/chrome-linux64/chrome',
+            '/opt/render/.cache/puppeteer/chrome/linux-128.0.6613.119/chrome-linux64/chrome',
+          ];
+          
+          const fsModule = await import('fs');
+          for (const path of possiblePaths) {
+            if (fsModule.existsSync(path)) {
+              executablePath = path;
+              console.log(`📍 Using Chrome from static paths: ${path}`);
+              break;
+            }
+          }
+          
+          if (!executablePath) {
+            console.log('🔍 Chrome not found in expected Render locations');
+            console.log('🔍 Searched paths:', possiblePaths);
+          }
         }
       }
       
@@ -119,30 +146,57 @@ export class RevenueLossScreenshotService {
       // Determine executable path based on environment
       let executablePath: string | undefined;
       if (process.env.RENDER) {
-        // On Render, try multiple possible Chrome locations
-        const possiblePaths = [
-          process.env.PUPPETEER_EXECUTABLE_PATH,
-          '/opt/render/.cache/puppeteer/chrome/linux-139.0.7258.66/chrome-linux64/chrome',
-          '/opt/render/.cache/puppeteer/chrome/linux-131.0.6778.204/chrome-linux64/chrome',
-          '/opt/render/.cache/puppeteer/chrome/linux-131.0.6778.108/chrome-linux64/chrome',
-          '/opt/render/.cache/puppeteer/chrome/linux-131.0.6778.69/chrome-linux64/chrome',
-          '/opt/render/.cache/puppeteer/chrome/linux-133.0.6943.126/chrome-linux64/chrome',
-          '/opt/render/.cache/puppeteer/chrome/linux-129.0.6668.100/chrome-linux64/chrome',
-          '/opt/render/.cache/puppeteer/chrome/linux-128.0.6613.119/chrome-linux64/chrome',
-        ].filter(Boolean);
-        
-        const fsModule = await import('fs');
-        for (const path of possiblePaths) {
-          if (path && fsModule.existsSync(path)) {
-            executablePath = path;
-            console.log(`📍 Using Chrome at: ${path}`);
-            break;
+        // On Render, try environment variable first, then dynamic search
+        if (process.env.PUPPETEER_EXECUTABLE_PATH) {
+          const fsModule = await import('fs');
+          if (fsModule.existsSync(process.env.PUPPETEER_EXECUTABLE_PATH)) {
+            executablePath = process.env.PUPPETEER_EXECUTABLE_PATH;
+            console.log(`📍 Using Chrome from PUPPETEER_EXECUTABLE_PATH: ${executablePath}`);
           }
         }
         
         if (!executablePath) {
-          console.log('🔍 Chrome not found in expected Render locations, trying default');
-          console.log('🔍 Searched paths:', possiblePaths);
+          // Dynamic search for Chrome in Puppeteer cache directory
+          try {
+            const { execSync } = await import('child_process');
+            const searchResult = execSync('find /opt/render/.cache/puppeteer -name chrome -type f -executable 2>/dev/null | head -1', { encoding: 'utf8' }).trim();
+            if (searchResult) {
+              const fsModule = await import('fs');
+              if (fsModule.existsSync(searchResult)) {
+                executablePath = searchResult;
+                console.log(`📍 Found Chrome via dynamic search: ${executablePath}`);
+              }
+            }
+          } catch (error) {
+            console.log('🔍 Dynamic Chrome search failed, falling back to static paths');
+          }
+        }
+        
+        if (!executablePath) {
+          // Fallback to static paths
+          const possiblePaths = [
+            '/opt/render/.cache/puppeteer/chrome/linux-139.0.7258.66/chrome-linux64/chrome',
+            '/opt/render/.cache/puppeteer/chrome/linux-131.0.6778.204/chrome-linux64/chrome',
+            '/opt/render/.cache/puppeteer/chrome/linux-131.0.6778.108/chrome-linux64/chrome',
+            '/opt/render/.cache/puppeteer/chrome/linux-131.0.6778.69/chrome-linux64/chrome',
+            '/opt/render/.cache/puppeteer/chrome/linux-133.0.6943.126/chrome-linux64/chrome',
+            '/opt/render/.cache/puppeteer/chrome/linux-129.0.6668.100/chrome-linux64/chrome',
+            '/opt/render/.cache/puppeteer/chrome/linux-128.0.6613.119/chrome-linux64/chrome',
+          ];
+          
+          const fsModule = await import('fs');
+          for (const path of possiblePaths) {
+            if (fsModule.existsSync(path)) {
+              executablePath = path;
+              console.log(`📍 Using Chrome from static paths: ${path}`);
+              break;
+            }
+          }
+          
+          if (!executablePath) {
+            console.log('🔍 Chrome not found in expected Render locations');
+            console.log('🔍 Searched paths:', possiblePaths);
+          }
         }
       }
 
