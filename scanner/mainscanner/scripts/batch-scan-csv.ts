@@ -1,6 +1,6 @@
 #!/usr/bin/env tsx
 
-import { readFileSync, writeFileSync, existsSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { drizzle } from 'drizzle-orm/postgres-js';
 import postgres from 'postgres';
 import { eq, and, sql } from 'drizzle-orm';
@@ -15,7 +15,9 @@ if (!connectionString) {
 }
 
 const client = postgres(connectionString, { ssl: 'require' });
-const db = drizzle(client);
+const db = drizzle(client, {
+  schema: { fullScanResults, revenueGateScreenshots }
+});
 
 // Types for CSV processing
 interface CSVRow {
@@ -265,25 +267,43 @@ class CSVBatchProcessor {
   /**
    * Perform professional scan via API
    */
-  private async performScan(website: string): Promise<{ success: boolean; placeId?: string; error?: string }> {
+  private async performScan(companyName: string, website: string): Promise<{ success: boolean; placeId?: string; error?: string }> {
     try {
-      console.log(`🔍 Starting scan for: ${website}`);
+      console.log(`🔍 Starting scan for: ${companyName} (${website})`);
       
-      // Use Google Places API to search for the restaurant first
-      const searchResponse = await fetch(`${this.baseUrl}/api/restaurants/search?query=${encodeURIComponent(website)}`);
+      // Try to find restaurant by company name first
+      let searchResponse = await fetch(`${this.baseUrl}/api/restaurants/search?query=${encodeURIComponent(companyName)}`);
       
       if (!searchResponse.ok) {
         return { success: false, error: `Search API error: ${searchResponse.status}` };
       }
 
-      const searchData = await searchResponse.json();
+      let searchData = await searchResponse.json();
+      
+      // If no results with company name, try with domain name
+      if (!searchData.restaurants || searchData.restaurants.length === 0) {
+        console.log(`⚠️ No results for "${companyName}", trying domain search...`);
+        
+        try {
+          const domain = new URL(website).hostname.replace('www.', '');
+          searchResponse = await fetch(`${this.baseUrl}/api/restaurants/search?query=${encodeURIComponent(domain)}`);
+          
+          if (searchResponse.ok) {
+            searchData = await searchResponse.json();
+          }
+        } catch (urlError) {
+          // Invalid URL, skip domain search
+        }
+      }
       
       if (!searchData.restaurants || searchData.restaurants.length === 0) {
-        return { success: false, error: 'No restaurant found for this website' };
+        return { success: false, error: `No restaurant found for "${companyName}" or website domain` };
       }
 
       const restaurant = searchData.restaurants[0];
       const placeId = restaurant.place_id;
+
+      console.log(`🎯 Found restaurant: ${restaurant.name} (${placeId})`);
 
       // Perform professional scan
       const scanResponse = await fetch(`${this.baseUrl}/api/scan/professional`, {
@@ -299,14 +319,15 @@ class CSVBatchProcessor {
       });
 
       if (!scanResponse.ok) {
-        return { success: false, error: `Scan API error: ${scanResponse.status}` };
+        const errorText = await scanResponse.text();
+        return { success: false, error: `Scan API error: ${scanResponse.status} - ${errorText}` };
       }
 
-      console.log(`✅ Scan completed for: ${website} (${placeId})`);
+      console.log(`✅ Scan completed for: ${restaurant.name} (${placeId})`);
       return { success: true, placeId };
 
     } catch (error) {
-      console.error(`❌ Scan failed for ${website}:`, error);
+      console.error(`❌ Scan failed for ${companyName}:`, error);
       return { success: false, error: error instanceof Error ? error.message : 'Unknown error' };
     }
   }
@@ -362,8 +383,8 @@ class CSVBatchProcessor {
       }
     }
 
-    // Perform new scan
-    const scanResult = await this.performScan(website);
+    // Perform new scan using company name for search
+    const scanResult = await this.performScan(companyName, website);
     
     if (!scanResult.success) {
       console.error(`❌ Scan failed: ${scanResult.error}`);
@@ -459,9 +480,20 @@ class CSVBatchProcessor {
   }
 
   /**
+   * Ensure output directory exists
+   */
+  private ensureOutputDirectory(outputDir: string) {
+    if (!existsSync(outputDir)) {
+      console.log(`📁 Creating output directory: ${outputDir}`);
+      mkdirSync(outputDir, { recursive: true });
+    }
+  }
+
+  /**
    * Generate CSV reports including separate CSV for non-working websites
    */
   private generateCSVReports(outputDir = './batch-results') {
+    this.ensureOutputDirectory(outputDir);
     const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
     
     // Successful results CSV
@@ -664,11 +696,9 @@ Environment Variables:
 }
 
 // Run if called directly
-if (require.main === module) {
-  main().catch(error => {
-    console.error('💥 Fatal error:', error);
-    process.exit(1);
-  });
-}
+main().catch(error => {
+  console.error('💥 Fatal error:', error);
+  process.exit(1);
+});
 
 export { CSVBatchProcessor };
