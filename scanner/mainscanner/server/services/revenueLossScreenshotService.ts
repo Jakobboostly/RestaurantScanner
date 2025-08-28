@@ -25,6 +25,7 @@ export class RevenueLossScreenshotService {
         // On Render, try multiple possible Chrome locations
         const possiblePaths = [
           process.env.PUPPETEER_EXECUTABLE_PATH,
+          '/opt/render/.cache/puppeteer/chrome/linux-139.0.7258.66/chrome-linux64/chrome',
           '/opt/render/.cache/puppeteer/chrome/linux-131.0.6778.204/chrome-linux64/chrome',
           '/opt/render/.cache/puppeteer/chrome/linux-131.0.6778.108/chrome-linux64/chrome',
           '/opt/render/.cache/puppeteer/chrome/linux-131.0.6778.69/chrome-linux64/chrome',
@@ -121,6 +122,7 @@ export class RevenueLossScreenshotService {
         // On Render, try multiple possible Chrome locations
         const possiblePaths = [
           process.env.PUPPETEER_EXECUTABLE_PATH,
+          '/opt/render/.cache/puppeteer/chrome/linux-139.0.7258.66/chrome-linux64/chrome',
           '/opt/render/.cache/puppeteer/chrome/linux-131.0.6778.204/chrome-linux64/chrome',
           '/opt/render/.cache/puppeteer/chrome/linux-131.0.6778.108/chrome-linux64/chrome',
           '/opt/render/.cache/puppeteer/chrome/linux-131.0.6778.69/chrome-linux64/chrome',
