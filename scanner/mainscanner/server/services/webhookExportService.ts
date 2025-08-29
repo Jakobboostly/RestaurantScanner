@@ -692,7 +692,7 @@ export class WebhookExportService {
           reviews: 150
         },
         {
-          name: `${city} ${cuisine} Favorite`,
+          name: `${cuisine} Favorite`,
           domain: '',
           rating: 4.0,
           reviews: 89

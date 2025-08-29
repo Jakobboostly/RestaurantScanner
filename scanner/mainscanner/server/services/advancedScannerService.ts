@@ -251,7 +251,7 @@ export class AdvancedScannerService {
         `${cuisineType} near me`,
         `${cuisineType} delivery ${locationData.city}`,
         `best ${cuisineType} ${locationData.city}`,
-        `${locationData.city} ${cuisineType}`,
+        `${cuisineType}`,
         `${cuisineType} places near me`,
         `${cuisineType} ${locationData.city} ${locationData.state}`,
         `${cuisineType} delivery near me`,
@@ -520,7 +520,7 @@ export class AdvancedScannerService {
         // Generate Local Pack specific keywords
         const localPackKeywords = [
           `${cuisineType} near me`,
-          `${cuisineType} ${locationData.city}`,
+          `${cuisineType}`,
           `best ${cuisineType} ${locationData.city}`,
           `${cuisineType} delivery near me`,
           `${cuisineType} ${locationData.city} ${locationData.state}`,
