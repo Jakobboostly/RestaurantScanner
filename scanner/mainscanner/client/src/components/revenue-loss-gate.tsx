@@ -189,17 +189,11 @@ export function RevenueLossGate({ scanData, placeId, onClose, onContinue }: Reve
     
     // Here we would send the lead data to the backend
     try {
-      // Split name into first and last name
-      const nameParts = leadData.name.trim().split(' ');
-      const firstName = nameParts[0] || '';
-      const lastName = nameParts.slice(1).join(' ') || '';
-
       const response = await fetch('/api/leads', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          firstName,
-          lastName,
+          name: leadData.name,
           email: leadData.email,
           phone: leadData.phone,
           restaurantName: scanData.restaurantName,

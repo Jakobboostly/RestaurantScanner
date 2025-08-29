@@ -248,6 +248,11 @@ class CSVBatchProcessor {
    */
   private async checkExistingScreenshot(placeId: string): Promise<{ exists: boolean; url?: string }> {
     try {
+      if (!placeId || placeId === 'undefined') {
+        console.warn(`⚠️ Invalid placeId provided: ${placeId}`);
+        return { exists: false };
+      }
+      
       const screenshot = await db.query.revenueGateScreenshots.findFirst({
         where: eq(revenueGateScreenshots.placeId, placeId)
       });
@@ -272,7 +277,7 @@ class CSVBatchProcessor {
       console.log(`🔍 Starting scan for: ${companyName} (${website})`);
       
       // Try to find restaurant by company name first
-      let searchResponse = await fetch(`${this.baseUrl}/api/restaurants/search?query=${encodeURIComponent(companyName)}`);
+      let searchResponse = await fetch(`${this.baseUrl}/api/restaurants/search?q=${encodeURIComponent(companyName)}`);
       
       if (!searchResponse.ok) {
         return { success: false, error: `Search API error: ${searchResponse.status}` };
@@ -281,12 +286,12 @@ class CSVBatchProcessor {
       let searchData = await searchResponse.json();
       
       // If no results with company name, try with domain name
-      if (!searchData.restaurants || searchData.restaurants.length === 0) {
+      if (!searchData || searchData.length === 0) {
         console.log(`⚠️ No results for "${companyName}", trying domain search...`);
         
         try {
           const domain = new URL(website).hostname.replace('www.', '');
-          searchResponse = await fetch(`${this.baseUrl}/api/restaurants/search?query=${encodeURIComponent(domain)}`);
+          searchResponse = await fetch(`${this.baseUrl}/api/restaurants/search?q=${encodeURIComponent(domain)}`);
           
           if (searchResponse.ok) {
             searchData = await searchResponse.json();
@@ -296,12 +301,12 @@ class CSVBatchProcessor {
         }
       }
       
-      if (!searchData.restaurants || searchData.restaurants.length === 0) {
+      if (!searchData || searchData.length === 0) {
         return { success: false, error: `No restaurant found for "${companyName}" or website domain` };
       }
 
-      const restaurant = searchData.restaurants[0];
-      const placeId = restaurant.place_id;
+      const restaurant = searchData[0];
+      const placeId = restaurant.placeId || restaurant.place_id;
 
       console.log(`🎯 Found restaurant: ${restaurant.name} (${placeId})`);
 
@@ -314,7 +319,7 @@ class CSVBatchProcessor {
         body: JSON.stringify({
           placeId: placeId,
           restaurantName: restaurant.name,
-          website: website
+          domain: new URL(website.startsWith('http') ? website : `https://${website}`).hostname
         }),
       });
 
@@ -336,6 +341,11 @@ class CSVBatchProcessor {
    * Wait for screenshot to be generated and saved
    */
   private async waitForScreenshot(placeId: string, maxWaitTimeMs = 60000): Promise<{ success: boolean; url?: string }> {
+    if (!placeId || placeId === 'undefined') {
+      console.warn(`⚠️ Cannot wait for screenshot - invalid placeId: ${placeId}`);
+      return { success: false };
+    }
+    
     const startTime = Date.now();
     const checkInterval = 5000; // Check every 5 seconds
 

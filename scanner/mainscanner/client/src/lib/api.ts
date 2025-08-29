@@ -34,7 +34,8 @@ export async function scanWebsite(
   placeId?: string,
   onProgress?: (progress: ScanProgress) => void,
   latitude?: number,
-  longitude?: number
+  longitude?: number,
+  forceRefresh: boolean = false
 ): Promise<ScanResult> {
   // Use professional scanner for comprehensive analysis
   const response = await fetch('/api/scan/professional', {
@@ -42,7 +43,7 @@ export async function scanWebsite(
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ domain, restaurantName, placeId, latitude, longitude }),
+    body: JSON.stringify({ domain, restaurantName, placeId, latitude, longitude, forceRefresh }),
   });
 
   if (!response.ok) {

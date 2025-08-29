@@ -16,10 +16,9 @@ interface LeadCaptureModalProps {
 }
 
 export interface LeadData {
-  firstName: string;
-  lastName: string;
+  name: string;
   email: string;
-  phone?: string;
+  phone: string;
   restaurantName: string;
 }
 
@@ -33,8 +32,7 @@ export function LeadCaptureModal({
   isSubmitting = false 
 }: LeadCaptureModalProps) {
   const [formData, setFormData] = useState<LeadData>({
-    firstName: '',
-    lastName: '',
+    name: '',
     email: '',
     phone: '',
     restaurantName: restaurantName
@@ -56,18 +54,18 @@ export function LeadCaptureModal({
   const validateForm = () => {
     const newErrors: Partial<LeadData> = {};
     
-    if (!formData.firstName.trim()) {
-      newErrors.firstName = 'First name is required';
-    }
-    
-    if (!formData.lastName.trim()) {
-      newErrors.lastName = 'Last name is required';
+    if (!formData.name.trim()) {
+      newErrors.name = 'Name is required';
     }
     
     if (!formData.email.trim()) {
       newErrors.email = 'Email is required';
     } else if (!validateEmail(formData.email)) {
       newErrors.email = 'Please enter a valid email';
+    }
+    
+    if (!formData.phone.trim()) {
+      newErrors.phone = 'Phone number is required';
     }
     
     if (!formData.restaurantName.trim()) {
@@ -150,14 +148,6 @@ export function LeadCaptureModal({
               <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
               {/* Header */}
               <div className="relative bg-gradient-to-br from-[#28008F] to-[#4a1fb8] p-6 text-white">
-                {/* Hidden admin trigger - click on logo area 5 times */}
-                <div 
-                  className="absolute left-4 top-4 w-12 h-12 cursor-pointer opacity-0 hover:opacity-10 transition-opacity"
-                  onClick={() => setShowAdminInput(!showAdminInput)}
-                  title="Admin access"
-                />
-                
-                
                 <div className="flex items-center space-x-3 mb-3">
                   <div className="p-2 bg-white/20 rounded-lg">
                     <img src="/boostlylogo.png" alt="Boostly" className="h-6 w-6" />
@@ -214,44 +204,23 @@ export function LeadCaptureModal({
                     </div>
                   </div>
                 )}
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <Label htmlFor="firstName" className="text-gray-700 font-medium mb-1 flex items-center">
-                      <User className="h-4 w-4 mr-1 text-gray-400" />
-                      First Name
-                    </Label>
-                    <Input
-                      id="firstName"
-                      type="text"
-                      value={formData.firstName}
-                      onChange={handleInputChange('firstName')}
-                      placeholder="John"
-                      className={errors.firstName ? 'border-red-500' : ''}
-                      disabled={isSubmitting}
-                    />
-                    {errors.firstName && (
-                      <p className="text-red-500 text-xs mt-1">{errors.firstName}</p>
-                    )}
-                  </div>
-                  
-                  <div>
-                    <Label htmlFor="lastName" className="text-gray-700 font-medium mb-1 flex items-center">
-                      <User className="h-4 w-4 mr-1 text-gray-400" />
-                      Last Name
-                    </Label>
-                    <Input
-                      id="lastName"
-                      type="text"
-                      value={formData.lastName}
-                      onChange={handleInputChange('lastName')}
-                      placeholder="Doe"
-                      className={errors.lastName ? 'border-red-500' : ''}
-                      disabled={isSubmitting}
-                    />
-                    {errors.lastName && (
-                      <p className="text-red-500 text-xs mt-1">{errors.lastName}</p>
-                    )}
-                  </div>
+                <div>
+                  <Label htmlFor="name" className="text-gray-700 font-medium mb-1 flex items-center">
+                    <User className="h-4 w-4 mr-1 text-gray-400" />
+                    Name
+                  </Label>
+                  <Input
+                    id="name"
+                    type="text"
+                    value={formData.name}
+                    onChange={handleInputChange('name')}
+                    placeholder="John Doe"
+                    className={errors.name ? 'border-red-500' : ''}
+                    disabled={isSubmitting}
+                  />
+                  {errors.name && (
+                    <p className="text-red-500 text-xs mt-1">{errors.name}</p>
+                  )}
                 </div>
                 
                 <div>
@@ -276,7 +245,7 @@ export function LeadCaptureModal({
                 <div>
                   <Label htmlFor="phone" className="text-gray-700 font-medium mb-1 flex items-center">
                     <Phone className="h-4 w-4 mr-1 text-gray-400" />
-                    Phone Number <span className="text-gray-400 ml-1">(optional)</span>
+                    Phone Number
                   </Label>
                   <Input
                     id="phone"
@@ -292,24 +261,12 @@ export function LeadCaptureModal({
                   )}
                 </div>
                 
-                <div>
-                  <Label htmlFor="restaurantName" className="text-gray-700 font-medium mb-1 flex items-center">
-                    <Building2 className="h-4 w-4 mr-1 text-gray-400" />
-                    Restaurant Name
-                  </Label>
-                  <Input
-                    id="restaurantName"
-                    type="text"
-                    value={formData.restaurantName}
-                    onChange={handleInputChange('restaurantName')}
-                    placeholder="Your Restaurant"
-                    className={errors.restaurantName ? 'border-red-500' : ''}
-                    disabled={isSubmitting}
-                  />
-                  {errors.restaurantName && (
-                    <p className="text-red-500 text-xs mt-1">{errors.restaurantName}</p>
-                  )}
-                </div>
+{/* Hidden restaurant name field - auto-populated from search */}
+                <input
+                  type="hidden"
+                  name="restaurantName"
+                  value={formData.restaurantName}
+                />
                 
                 <div className="space-y-3 pt-2">
                   <Button
@@ -334,6 +291,14 @@ export function LeadCaptureModal({
                     Your information is secure and will never be shared. 
                     <br />
                     <span className="font-medium">100% free</span> • No credit card required
+                    <br />
+                    <button
+                      type="button"
+                      onClick={() => setShowAdminInput(!showAdminInput)}
+                      className="text-gray-400 hover:text-gray-600 underline mt-1 text-xs"
+                    >
+                      Admin
+                    </button>
                   </p>
                 </div>
               </form>

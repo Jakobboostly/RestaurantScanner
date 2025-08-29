@@ -124,7 +124,8 @@ export default function HomePage() {
           }
         },
         restaurant.location?.lat,
-        restaurant.location?.lng
+        restaurant.location?.lng,
+        false // forceRefresh - default to false to use cache
       );
 
       console.log('HomePage - setting scan result:', result);

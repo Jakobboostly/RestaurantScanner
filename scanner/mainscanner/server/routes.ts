@@ -904,8 +904,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   app.post("/api/leads", async (req, res) => {
     try {
       const { 
-        firstName, 
-        lastName, 
+        name,
         email, 
         phone, 
         restaurantName, 
@@ -916,11 +915,16 @@ export async function registerRoutes(app: Express): Promise<Server> {
         monthlyRevenue 
       } = req.body;
       
+      // Split name into first and last name
+      const nameParts = (name || '').trim().split(' ');
+      const firstName = nameParts[0] || '';
+      const lastName = nameParts.slice(1).join(' ') || '';
+      
       // Validate required fields
-      if (!firstName || !lastName || !email || !restaurantName) {
+      if (!name || !email || !phone || !restaurantName) {
         return res.status(400).json({ 
           error: "Missing required fields",
-          details: "First name, last name, email, and restaurant name are required" 
+          details: "Name, email, phone, and restaurant name are required" 
         });
       }
       

@@ -1,5 +1,8 @@
 #!/usr/bin/env tsx
 
+// Disable the CLI argument check for testing
+process.argv = ['node', 'test-script'];
+
 import { CSVBatchProcessor } from './batch-scan-csv';
 
 /**

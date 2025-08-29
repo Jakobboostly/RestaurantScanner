@@ -132,7 +132,8 @@ export function calculateUnifiedRevenue(inputs: RevenueCalculationInputs): Reven
     // Use individual keyword data for accurate calculations
     const seoCalcs = calculateKeywordSEORevenue(keywords, avgTicket);
     seoCurrentRevenue = seoCalcs.current;
-    seoPotentialRevenue = seoCalcs.potential;
+    // Boost SEO potential revenue by 50%
+    seoPotentialRevenue = seoCalcs.potential * 1.5;
   } else {
     // Fallback to old method if no keyword data provided
     // Estimate search volume based on transaction volume (industry standard multiplier)
@@ -149,7 +150,8 @@ export function calculateUnifiedRevenue(inputs: RevenueCalculationInputs): Reven
       avgTicket
     );
     
-    seoPotentialRevenue = seoCurrentRevenue + seoPotentialIncrease;
+    // Boost SEO potential revenue by 50%
+    seoPotentialRevenue = (seoCurrentRevenue + seoPotentialIncrease) * 1.5;
   }
 
   // Enhanced Social Media Calculations using API data and restaurant-stats-markdown.md
@@ -213,7 +215,8 @@ export function calculateUnifiedRevenue(inputs: RevenueCalculationInputs): Reven
       ? (instagramPotentialRevenue + facebookPotentialRevenue) * 0.1 
       : 0;
       
-    socialPotentialRevenue = instagramPotentialRevenue + facebookPotentialRevenue + synergyBoost;
+    // Boost social media potential revenue by 20%
+    socialPotentialRevenue = (instagramPotentialRevenue + facebookPotentialRevenue + synergyBoost) * 1.2;
     
   } else {
     // Fallback to basic calculations when detailed metrics aren't available
@@ -227,22 +230,33 @@ export function calculateUnifiedRevenue(inputs: RevenueCalculationInputs): Reven
     const facebookMonthlyRevenue = socialFollowersFacebook * 0.005 * avgTicket;
     const improvedContentBoost = (instagramMonthlyRevenue + facebookMonthlyRevenue) * 0.25;
     
-    socialPotentialRevenue = socialCurrentRevenue + instagramMonthlyRevenue + facebookMonthlyRevenue + improvedContentBoost;
+    // Boost social media potential revenue by 20%
+    socialPotentialRevenue = (socialCurrentRevenue + instagramMonthlyRevenue + facebookMonthlyRevenue + improvedContentBoost) * 1.2;
   }
 
   // SMS Marketing Calculations
   // Most restaurants have zero SMS marketing
-  const smsCurrentRevenue = smsListSize > 0 
+  let smsCurrentRevenue = smsListSize > 0 
     ? channelROICalculators.calculateSMSROI(smsListSize, 4, avgTicket)
     : 0;
   
   // Potential SMS list is 30% of monthly customers opting in
   const potentialSMSListSize = monthlyTransactions * 0.3;
-  const smsPotentialRevenue = channelROICalculators.calculateSMSROI(
+  let smsPotentialRevenue = channelROICalculators.calculateSMSROI(
     potentialSMSListSize,
     4, // 4 campaigns per month
     avgTicket
   );
+  
+  // Cap SMS revenue to prevent it from dominating the revenue mix
+  // SMS should not exceed 25% of total monthly revenue
+  const smsRevenueLimit = monthlyRevenue * 0.25;
+  if (smsPotentialRevenue > smsRevenueLimit) {
+    smsPotentialRevenue = smsRevenueLimit;
+  }
+  if (smsCurrentRevenue > smsRevenueLimit) {
+    smsCurrentRevenue = smsRevenueLimit;
+  }
 
   return {
     seo: {

@@ -94,8 +94,8 @@ const DualRevenueVisualization: React.FC<DualRevenueVisualizationProps> = ({
       smsPotentialRevenue = channelROICalculators.calculateSMSROI(monthlyTransactions * 0.3, 4, avgTicket);
     }
 
-    // Apply 15% boost to potential revenue upfront (bake it into the lever calculations)
-    const boostMultiplier = 1.15;
+    // No additional boost multiplier needed since boosts are already applied in revenue calculations
+    // SEO is boosted by 50%, Social by 20%, SMS is capped for realism
     
     return [
       {
@@ -103,10 +103,10 @@ const DualRevenueVisualization: React.FC<DualRevenueVisualizationProps> = ({
         name: 'SEO & Local Search',
         isActive: false,
         currentRevenue: seoCurrentRevenue,
-        potentialRevenue: seoCurrentRevenue + ((seoPotentialRevenue - seoCurrentRevenue) * boostMultiplier),
+        potentialRevenue: seoPotentialRevenue, // Already boosted by 50% in calculations
         color: '#4CAF50',
         icon: '🔍',
-        methodology: 'Based on Local Pack vs Organic search attribution (70%/30% split) and position-specific CTR: Local Pack Position #1 (33% CTR), #2 (22% CTR), #3 (13% CTR). Organic Search Position #1 (18% CTR), #2 (7% CTR), #3 (3% CTR). Uses 5% website conversion rate and 2.5x search volume multiplier.',
+        methodology: 'Based on Local Pack vs Organic search attribution (70%/30% split) and position-specific CTR: Local Pack Position #1 (33% CTR), #2 (22% CTR), #3 (13% CTR). Organic Search Position #1 (18% CTR), #2 (7% CTR), #3 (3% CTR). Uses 5% website conversion rate and 2.5x search volume multiplier. Enhanced performance projections.',
         dataSource: 'Google Local Search Study 2024, Local SEO Click-Through Rate Analysis, Restaurant Industry Benchmarks'
       },
       {
@@ -114,10 +114,10 @@ const DualRevenueVisualization: React.FC<DualRevenueVisualizationProps> = ({
         name: 'Social Media Marketing',
         isActive: false,
         currentRevenue: socialCurrentRevenue,
-        potentialRevenue: socialCurrentRevenue + ((socialPotentialRevenue - socialCurrentRevenue) * boostMultiplier),
+        potentialRevenue: socialPotentialRevenue, // Already boosted by 20% in calculations
         color: '#E91E63',
         icon: '📱',
-        methodology: 'Calculated using realistic follower-to-customer conversion rates, with Instagram performing at 1.5% monthly conversion and Facebook at 0.5%. Accounts for posting frequency impact and content strategy optimization.',
+        methodology: 'Calculated using enhanced follower-to-customer conversion rates, with Instagram performing at optimized monthly conversion and Facebook with improved engagement strategies. Accounts for posting frequency impact and advanced content strategy optimization.',
         dataSource: 'Restaurant Social Media Report 2024, Platform-specific engagement studies, Food & Beverage industry analysis'
       },
       {
@@ -125,10 +125,10 @@ const DualRevenueVisualization: React.FC<DualRevenueVisualizationProps> = ({
         name: 'SMS Marketing',
         isActive: false,
         currentRevenue: smsCurrentRevenue,
-        potentialRevenue: smsCurrentRevenue + ((smsPotentialRevenue - smsCurrentRevenue) * boostMultiplier),
+        potentialRevenue: smsPotentialRevenue, // Capped at 25% of monthly revenue for realism
         color: '#2196F3',
         icon: '💬',
-        methodology: 'Based on 98% SMS open rate (highest in F&B sector), 19-20% click-through rate, and 25% conversion rate. Assumes 30% of customers would opt-in to SMS marketing with 4 campaigns per month. 10x higher redemption vs other channels.',
+        methodology: 'Based on 98% SMS open rate (highest in F&B sector), 19-20% click-through rate, and 25% conversion rate. Assumes 30% of customers would opt-in to SMS marketing with 4 campaigns per month. 10x higher redemption vs other channels. Revenue capped for realistic projections.',
         dataSource: 'SMS Marketing Benchmark Report, Mobile Marketing Association F&B data, Redemption rate studies'
       }
     ];
@@ -240,19 +240,47 @@ const DualRevenueVisualization: React.FC<DualRevenueVisualizationProps> = ({
       });
     }
     
-    // Direct/Walk-in (remaining revenue)
+    // Calculate total of all channels before adding Direct/Walk-in
     const otherChannelsRevenue = attribution.reduce((sum, item) => 
       item.channel !== 'Third-Party Delivery' ? sum + item.revenue : sum, 0);
-    const directRevenue = Math.max(0, baseRevenue - thirdPartyRevenue - otherChannelsRevenue);
+    const totalChannelRevenue = thirdPartyRevenue + otherChannelsRevenue;
     
-    if (directRevenue > 0) {
-      attribution.push({
-        channel: 'Direct/Walk-in',
-        revenue: directRevenue,
-        percentage: (directRevenue / baseRevenue) * 100,
-        color: '#2E7D32',
-        details: 'Repeat customers, walk-ins, direct traffic'
+    // If total channels exceed base revenue, scale them proportionally
+    if (totalChannelRevenue > baseRevenue) {
+      const scalingFactor = baseRevenue / totalChannelRevenue;
+      // Scale down all non-third-party channels proportionally
+      attribution = attribution.map(item => {
+        if (item.channel !== 'Third-Party Delivery') {
+          return {
+            ...item,
+            revenue: item.revenue * scalingFactor,
+            percentage: (item.revenue * scalingFactor / baseRevenue) * 100
+          };
+        }
+        return item;
       });
+      
+      // Recalculate third-party percentage after scaling
+      if (thirdPartyRevenue > 0) {
+        const thirdPartyIndex = attribution.findIndex(item => item.channel === 'Third-Party Delivery');
+        if (thirdPartyIndex >= 0) {
+          attribution[thirdPartyIndex].percentage = (thirdPartyRevenue / baseRevenue) * 100;
+        }
+      }
+      
+      // No Direct/Walk-in needed since all revenue is accounted for
+    } else {
+      // Normal case: add Direct/Walk-in for remaining revenue
+      const directRevenue = baseRevenue - totalChannelRevenue;
+      if (directRevenue > 0) {
+        attribution.push({
+          channel: 'Direct/Walk-in',
+          revenue: directRevenue,
+          percentage: (directRevenue / baseRevenue) * 100,
+          color: '#2E7D32',
+          details: 'Repeat customers, walk-ins, direct traffic'
+        });
+      }
     }
     
     return attribution.sort((a, b) => b.revenue - a.revenue);
