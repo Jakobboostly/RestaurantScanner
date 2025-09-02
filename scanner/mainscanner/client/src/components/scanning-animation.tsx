@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { Search, Zap, TrendingUp, Users, Smartphone, Globe, BarChart3, Star, MessageCircle, MapPin } from "lucide-react";
+import { Search, Zap, TrendingUp, Users, Smartphone, Globe, BarChart3, Star, MessageCircle, MapPin, CheckCircle2, Clock } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { useEffect, useState } from "react";
@@ -39,11 +39,100 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
   const [showPhoto, setShowPhoto] = useState(false);
 
+  // Map progress percentages to detailed sub-tasks
+  const getDetailedStatus = (stepIndex: number, currentProgress: number, mainStatus: string) => {
+    // Step 1: Collecting business data (0-25%)
+    if (stepIndex === 0) {
+      if (currentProgress < 8) return "Initializing scan...";
+      if (currentProgress < 12) return "Searching Google Maps...";
+      if (currentProgress < 18) return "Loading business details...";
+      if (currentProgress < 25) return "Fetching business photos...";
+      return "Business data collected";
+    }
+    // Step 2: Analyzing online presence (25-50%)
+    if (stepIndex === 1) {
+      if (currentProgress < 30) return "Finding website...";
+      if (currentProgress < 35) return "Scanning social media...";
+      if (currentProgress < 42) return "Analyzing competitors...";
+      if (currentProgress < 50) return "Checking online profiles...";
+      return "Online presence analyzed";
+    }
+    // Step 3: Measuring local visibility (50-75%)
+    if (stepIndex === 2) {
+      if (currentProgress < 58) return "Finding top keywords...";
+      if (currentProgress < 65) return "Checking local rankings...";
+      if (currentProgress < 70) return "Measuring search visibility...";
+      if (currentProgress < 75) return "Analyzing local competition...";
+      return "Visibility measured";
+    }
+    // Step 4: Generating recommendations (75-100%)
+    if (stepIndex === 3) {
+      if (currentProgress < 80) return "Reading customer reviews...";
+      if (currentProgress < 85) return "Analyzing sentiment...";
+      if (currentProgress < 92) return "Building growth strategy...";
+      if (currentProgress < 100) return "Finalizing recommendations...";
+      return "Analysis complete";
+    }
+    return "Processing...";
+  };
+
   const steps = [
-    { icon: Search, label: "Collecting business data", threshold: 25, color: "from-blue-500 to-cyan-500", shadowColor: "shadow-blue-500/20" },
-    { icon: Zap, label: "Analyzing online presence", threshold: 50, color: "from-yellow-500 to-orange-500", shadowColor: "shadow-yellow-500/20" },
-    { icon: TrendingUp, label: "Measuring local visibility", threshold: 75, color: "from-green-500 to-emerald-500", shadowColor: "shadow-green-500/20" },
-    { icon: Globe, label: "Generating recommendations", threshold: 100, color: "from-indigo-500 to-blue-500", shadowColor: "shadow-indigo-500/20" },
+    { 
+      icon: Search, 
+      label: "Collecting business data", 
+      threshold: 0,
+      endThreshold: 25,
+      color: "from-blue-500 to-cyan-500", 
+      shadowColor: "shadow-blue-500/20",
+      subTasks: [
+        { progress: 8, label: "Searching Google Maps" },
+        { progress: 12, label: "Loading business details" },
+        { progress: 18, label: "Fetching photos" },
+        { progress: 25, label: "Collecting contact info" }
+      ]
+    },
+    { 
+      icon: Zap, 
+      label: "Analyzing online presence", 
+      threshold: 25,
+      endThreshold: 50,
+      color: "from-yellow-500 to-orange-500", 
+      shadowColor: "shadow-yellow-500/20",
+      subTasks: [
+        { progress: 30, label: "Finding website" },
+        { progress: 35, label: "Scanning social media" },
+        { progress: 42, label: "Analyzing competitors" },
+        { progress: 50, label: "Checking profiles" }
+      ]
+    },
+    { 
+      icon: TrendingUp, 
+      label: "Measuring local visibility", 
+      threshold: 50,
+      endThreshold: 75,
+      color: "from-green-500 to-emerald-500", 
+      shadowColor: "shadow-green-500/20",
+      subTasks: [
+        { progress: 58, label: "Finding keywords" },
+        { progress: 65, label: "Checking rankings" },
+        { progress: 70, label: "Measuring visibility" },
+        { progress: 75, label: "Analyzing competition" }
+      ]
+    },
+    { 
+      icon: Globe, 
+      label: "Generating recommendations", 
+      threshold: 75,
+      endThreshold: 100,
+      color: "from-indigo-500 to-blue-500", 
+      shadowColor: "shadow-indigo-500/20",
+      subTasks: [
+        { progress: 80, label: "Reading reviews" },
+        { progress: 85, label: "Analyzing sentiment" },
+        { progress: 92, label: "Building strategy" },
+        { progress: 100, label: "Finalizing insights" }
+      ]
+    },
   ];
 
   // Fetch fun facts and business photos when component mounts
@@ -424,8 +513,19 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
                 <div className="space-y-3">
                   {steps.map((step, index) => {
                     const Icon = step.icon;
-                    const isActive = progress >= step.threshold;
-                    const isComplete = progress >= step.threshold + 10;
+                    const isActive = progress >= step.threshold && progress < step.endThreshold;
+                    const isComplete = progress >= step.endThreshold;
+                    const isPending = progress < step.threshold;
+                    
+                    // Calculate step progress (0-100% within the step's range)
+                    const stepProgress = isActive 
+                      ? ((progress - step.threshold) / (step.endThreshold - step.threshold)) * 100
+                      : isComplete ? 100 : 0;
+                    
+                    // Get current sub-task for this step
+                    const currentSubTask = isActive 
+                      ? step.subTasks.find(task => progress < task.progress)?.label || step.subTasks[step.subTasks.length - 1].label
+                      : null;
 
                     return (
                       <motion.div
@@ -487,19 +587,93 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
                           </motion.h3>
                           
                           <AnimatePresence mode="wait">
-                            {isActive && !isComplete && (
+                            {isActive && (
                               <motion.div
+                                key={currentSubTask}
                                 initial={{ opacity: 0, y: 10 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 exit={{ opacity: 0, y: -10 }}
-                                className="flex items-center space-x-2"
+                                transition={{ duration: 0.3 }}
+                                className="space-y-3"
                               >
-                                <motion.div
-                                  className="w-6 h-6 border-2 border-[#5F5FFF] border-t-transparent rounded-full"
-                                  animate={{ rotate: 360 }}
-                                  transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
-                                />
-                                <span className="text-sm text-[#5F5FFF] font-medium">Processing...</span>
+                                <div className="flex items-center space-x-2">
+                                  <motion.div
+                                    className="w-6 h-6 border-2 border-[#5F5FFF] border-t-transparent rounded-full"
+                                    animate={{ rotate: 360 }}
+                                    transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
+                                  />
+                                  <span className="text-sm text-[#5F5FFF] font-medium">
+                                    {currentSubTask || "Processing..."}
+                                  </span>
+                                </div>
+                                
+                                {/* Mini progress bar for step progress */}
+                                <div className="relative">
+                                  <div className="h-1.5 bg-gray-200 rounded-full overflow-hidden">
+                                    <motion.div
+                                      className="h-full bg-gradient-to-r from-[#5F5FFF] to-[#9090FD] relative"
+                                      initial={{ width: 0 }}
+                                      animate={{ width: `${stepProgress}%` }}
+                                      transition={{ duration: 0.5, ease: "easeOut" }}
+                                    >
+                                      {/* Shimmer effect */}
+                                      <motion.div
+                                        className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"
+                                        animate={{
+                                          x: ["-100%", "200%"],
+                                        }}
+                                        transition={{
+                                          duration: 1.5,
+                                          repeat: Infinity,
+                                          ease: "linear",
+                                        }}
+                                      />
+                                    </motion.div>
+                                  </div>
+                                  
+                                  {/* Sub-task dots */}
+                                  <div className="absolute inset-0 flex items-center justify-between px-1">
+                                    {step.subTasks.map((task, taskIndex) => {
+                                      const taskComplete = progress >= task.progress;
+                                      const taskActive = currentSubTask === task.label;
+                                      return (
+                                        <motion.div
+                                          key={taskIndex}
+                                          className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                                            taskComplete 
+                                              ? "bg-green-500" 
+                                              : taskActive 
+                                              ? "bg-[#5F5FFF] scale-125" 
+                                              : "bg-gray-300"
+                                          }`}
+                                          initial={{ scale: 0 }}
+                                          animate={{ 
+                                            scale: taskActive ? 1.25 : 1,
+                                          }}
+                                          transition={{ duration: 0.3 }}
+                                        />
+                                      );
+                                    })}
+                                  </div>
+                                </div>
+                                
+                                {/* Completed sub-tasks */}
+                                <div className="flex flex-wrap gap-1">
+                                  {step.subTasks
+                                    .filter(task => progress >= task.progress)
+                                    .map((task, idx) => (
+                                      <motion.div
+                                        key={idx}
+                                        initial={{ opacity: 0, scale: 0.8 }}
+                                        animate={{ opacity: 1, scale: 1 }}
+                                        className="flex items-center gap-1 px-2 py-0.5 bg-green-50 rounded-full"
+                                      >
+                                        <CheckCircle2 className="w-3 h-3 text-green-600" />
+                                        <span className="text-xs text-green-700">{task.label}</span>
+                                      </motion.div>
+                                    ))
+                                  }
+                                </div>
                               </motion.div>
                             )}
                             
@@ -507,34 +681,27 @@ export default function ScanningAnimation({ progress, status, restaurantName, pl
                               <motion.div
                                 initial={{ opacity: 0, y: 10 }}
                                 animate={{ opacity: 1, y: 0 }}
-                                className="flex items-center space-x-2"
+                                className="flex flex-wrap gap-1"
                               >
-                                <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
-                                  <motion.svg
-                                    className="w-3 h-3 text-white"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                    initial={{ pathLength: 0 }}
-                                    animate={{ pathLength: 1 }}
-                                    transition={{ duration: 0.5 }}
+                                {step.subTasks.map((task, idx) => (
+                                  <motion.div
+                                    key={idx}
+                                    initial={{ opacity: 0, scale: 0.8 }}
+                                    animate={{ opacity: 1, scale: 1 }}
+                                    transition={{ delay: idx * 0.1 }}
+                                    className="flex items-center gap-1 px-2 py-0.5 bg-green-50 rounded-full"
                                   >
-                                    <path
-                                      strokeLinecap="round"
-                                      strokeLinejoin="round"
-                                      strokeWidth={3}
-                                      d="M5 13l4 4L19 7"
-                                    />
-                                  </motion.svg>
-                                </div>
-                                <span className="text-sm text-green-600 font-medium">Complete</span>
+                                    <CheckCircle2 className="w-3 h-3 text-green-600" />
+                                    <span className="text-xs text-green-700">{task.label}</span>
+                                  </motion.div>
+                                ))}
                               </motion.div>
                             )}
                             
-                            {!isActive && !isComplete && (
+                            {isPending && (
                               <div className="flex items-center space-x-2">
                                 <div className="w-5 h-5 bg-gray-300 rounded-full" />
-                                <span className="text-sm text-gray-500 font-medium">Pending</span>
+                                <span className="text-sm text-gray-500 font-medium">Waiting...</span>
                               </div>
                             )}
                           </AnimatePresence>
