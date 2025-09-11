@@ -1109,16 +1109,31 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
       console.log(`📊 Starting scan for ${scanParams.restaurantName} (${scanParams.domain})`);
 
-      // Perform the scan (synchronous version for webhook)
-      const scanResult = await dataForSeoScannerService.scanRestaurantAdvanced(
-        scanParams.placeId,
-        scanParams.domain,
-        scanParams.restaurantName,
-        scanParams.latitude,
-        scanParams.longitude,
-        () => {}, // Empty progress callback for webhook
-        null  // No manual Facebook URL
-      );
+      // Check cache first if placeId is available
+      let scanResult;
+      const cachedResult = await scanCacheService.getCachedScan(scanParams.placeId);
+      
+      if (cachedResult) {
+        console.log(`📦 Using cached scan for ${scanParams.restaurantName} (${scanParams.placeId})`);
+        scanResult = cachedResult;
+      } else {
+        console.log(`🔍 No cache found, performing fresh scan for ${scanParams.restaurantName}`);
+        
+        // Perform the scan (synchronous version for webhook)
+        scanResult = await dataForSeoScannerService.scanRestaurantAdvanced(
+          scanParams.placeId,
+          scanParams.domain,
+          scanParams.restaurantName,
+          scanParams.latitude,
+          scanParams.longitude,
+          () => {}, // Empty progress callback for webhook
+          null  // No manual Facebook URL
+        );
+        
+        // Cache the scan result
+        await scanCacheService.cacheScan(scanParams.placeId, scanResult);
+        console.log(`💾 Cached scan results for ${scanParams.restaurantName} (${scanParams.placeId})`);
+      }
 
       // Prepare webhook response based on format
       if (returnFormat === 'simplified') {
