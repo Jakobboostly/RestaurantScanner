@@ -1108,32 +1108,125 @@ export async function registerRoutes(app: Express): Promise<Server> {
       };
 
       console.log(`📊 Starting scan for ${scanParams.restaurantName} (${scanParams.domain})`);
+      console.log(`🔍 Scan parameters:`, {
+        placeId: scanParams.placeId,
+        domain: scanParams.domain,
+        restaurantName: scanParams.restaurantName,
+        latitude: scanParams.latitude,
+        longitude: scanParams.longitude
+      });
 
       // Check cache first if placeId is available
       let scanResult;
+      let cacheHit = false;
       const cachedResult = await scanCacheService.getCachedScan(scanParams.placeId);
       
       if (cachedResult) {
-        console.log(`📦 Using cached scan for ${scanParams.restaurantName} (${scanParams.placeId})`);
+        console.log(`📦 CACHE HIT: Using cached scan for ${scanParams.restaurantName} (${scanParams.placeId})`);
+        console.log(`📦 Cached scores:`, {
+          overallScore: cachedResult.overallScore,
+          seo: cachedResult.seo,
+          performance: cachedResult.performance,
+          userExperience: cachedResult.userExperience,
+          cachedAt: cachedResult.timestamp || 'unknown'
+        });
         scanResult = cachedResult;
+        cacheHit = true;
       } else {
-        console.log(`🔍 No cache found, performing fresh scan for ${scanParams.restaurantName}`);
+        console.log(`🔍 CACHE MISS: No cache found, performing fresh scan for ${scanParams.restaurantName}`);
+        console.log(`🌐 Available APIs: DataForSEO=${!!dataForSeoScannerService}, OpenAI=${!!process.env.OPENAI_API_KEY}, Apify=${!!process.env.APIFY_API_KEY}`);
+        
+        const scanStartTime = Date.now();
         
         // Perform the scan (synchronous version for webhook)
-        scanResult = await dataForSeoScannerService.scanRestaurantAdvanced(
-          scanParams.placeId,
-          scanParams.domain,
-          scanParams.restaurantName,
-          scanParams.latitude,
-          scanParams.longitude,
-          () => {}, // Empty progress callback for webhook
-          null  // No manual Facebook URL
+        try {
+          scanResult = await dataForSeoScannerService.scanRestaurantAdvanced(
+            scanParams.placeId,
+            scanParams.domain,
+            scanParams.restaurantName,
+            scanParams.latitude,
+            scanParams.longitude,
+            () => {}, // Empty progress callback for webhook
+            null  // No manual Facebook URL
+          );
+          
+          // Validate that we got a complete scan result
+          if (!scanResult || typeof scanResult !== 'object') {
+            throw new Error('Scan service returned invalid result');
+          }
+          
+          // Check for required score fields
+          const requiredScores = ['overallScore', 'seo', 'performance', 'userExperience'];
+          const missingScores = requiredScores.filter(score => 
+            scanResult[score] === undefined || scanResult[score] === null || scanResult[score] === 0
+          );
+          
+          if (missingScores.length > 0) {
+            throw new Error(`Scan result missing valid scores: ${missingScores.join(', ')}`);
+          }
+          
+        } catch (error) {
+          console.error(`💥 SCAN FAILED for ${scanParams.restaurantName}:`, error);
+          console.error(`💥 Error type: ${error.constructor.name}`);
+          console.error(`💥 Error message: ${error.message}`);
+          
+          // Return meaningful error instead of proceeding with bad data
+          return res.status(422).json({ 
+            success: false,
+            error: "Scan Failed",
+            message: `Unable to complete accurate scan for ${scanParams.restaurantName}: ${error.message}`,
+            details: {
+              restaurantName: scanParams.restaurantName,
+              domain: scanParams.domain,
+              placeId: scanParams.placeId,
+              errorType: error.constructor.name,
+              timestamp: new Date().toISOString()
+            }
+          });
+        }
+        
+        const scanDuration = Date.now() - scanStartTime;
+        console.log(`⏱️ Fresh scan completed in ${scanDuration}ms`);
+        
+        // Log detailed scan results and validate scores
+        console.log(`✅ Fresh scan results for ${scanParams.restaurantName}:`, {
+          overallScore: scanResult.overallScore,
+          seo: scanResult.seo,
+          performance: scanResult.performance,
+          userExperience: scanResult.userExperience,
+          mobile: scanResult.mobile,
+          domain: scanResult.domain,
+          restaurantName: scanResult.restaurantName,
+          issuesCount: scanResult.issues?.length || 0,
+          recommendationsCount: scanResult.recommendations?.length || 0,
+          hasValidScores: scanResult.overallScore > 0 && scanResult.seo > 0 && scanResult.performance > 0 && scanResult.userExperience > 0
+        });
+        
+        // Validate scores look realistic (not fallback values)
+        const hasSuspiciousScores = (
+          scanResult.seo === 70 && scanResult.userExperience === 60 && scanResult.performance === 65
+        ) || (
+          scanResult.overallScore === 0 || scanResult.seo === 0 || scanResult.performance === 0 || scanResult.userExperience === 0
         );
+        
+        if (hasSuspiciousScores) {
+          console.warn(`⚠️ WARNING: Suspicious/fallback scores detected for ${scanParams.restaurantName}. May indicate API failures.`);
+        }
         
         // Cache the scan result
         await scanCacheService.cacheScan(scanParams.placeId, scanResult);
-        console.log(`💾 Cached scan results for ${scanParams.restaurantName} (${scanParams.placeId})`);
+        console.log(`💾 Cached fresh scan results for ${scanParams.restaurantName} (${scanParams.placeId})`);
       }
+      
+      // Log final scores being returned to CSV script
+      console.log(`📋 Final scores for CSV/HubSpot (${cacheHit ? 'CACHED' : 'FRESH'}):`, {
+        restaurant: scanParams.restaurantName,
+        placeId: scanParams.placeId,
+        overallScore: scanResult.overallScore,
+        seo: scanResult.seo,
+        performance: scanResult.performance,
+        userExperience: scanResult.userExperience
+      });
 
       // Prepare webhook response based on format
       if (returnFormat === 'simplified') {
