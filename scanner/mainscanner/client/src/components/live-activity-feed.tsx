@@ -17,20 +17,37 @@ export default function LiveActivityFeed() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [totalCount, setTotalCount] = useState(247); // Default fallback
   const [loading, setLoading] = useState(true);
+  const [hasError, setHasError] = useState(false);
 
-  console.log('LiveActivityFeed component mounted');
+  console.log('🚀 LiveActivityFeed component mounted');
+
+  // Create default sample activities in case everything fails
+  const createSampleActivities = (): ActivityItem[] => [
+    { id: "1", restaurantName: "Mario's Italian Kitchen", location: "San Francisco, CA", timeAgo: "2 minutes ago", action: "analyzed" },
+    { id: "2", restaurantName: "The Coffee Bean", location: "Los Angeles, CA", timeAgo: "3 minutes ago", action: "analyzed" },
+    { id: "3", restaurantName: "Burger Palace", location: "Austin, TX", timeAgo: "5 minutes ago", action: "analyzed" },
+    { id: "4", restaurantName: "Thai Garden", location: "Seattle, WA", timeAgo: "7 minutes ago", action: "analyzed" },
+    { id: "5", restaurantName: "Pizza Corner", location: "Chicago, IL", timeAgo: "8 minutes ago", action: "analyzed" },
+    { id: "6", restaurantName: "Sushi Zen", location: "Miami, FL", timeAgo: "12 minutes ago", action: "analyzed" },
+  ];
 
   // Fetch real activity data
   useEffect(() => {
     const fetchActivities = async () => {
       try {
-        console.log('Fetching activities from /api/activity/recent');
+        console.log('🔄 LiveActivityFeed: Fetching activities from /api/activity/recent');
         const response = await fetch('/api/activity/recent');
-        console.log('Response status:', response.status);
-        const data: ScanActivity[] = await response.json();
-        console.log('Received activities:', data);
+        console.log('🔄 LiveActivityFeed: Response status:', response.status);
         
-        if (data && data.length > 0) {
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        }
+        
+        const data: ScanActivity[] = await response.json();
+        console.log('📊 LiveActivityFeed: Received activities:', data);
+        console.log('📊 LiveActivityFeed: Activities count:', data?.length || 0);
+        
+        if (data && Array.isArray(data) && data.length > 0) {
           // Convert to ActivityItem format
           const activities: ActivityItem[] = data.map(activity => ({
             id: activity.id.toString(),
@@ -40,31 +57,30 @@ export default function LiveActivityFeed() {
             action: activity.action
           }));
           
-          console.log('Processed activities:', activities);
+          console.log('✅ LiveActivityFeed: Using real activities:', activities);
           setAllActivities(activities);
           setTotalCount(data.length); // Use actual count
         } else {
-          // Fallback to sample data if no real data yet
-          const sampleActivities: ActivityItem[] = [
-            { id: "1", restaurantName: "Mario's Italian Kitchen", location: "San Francisco, CA", timeAgo: "2 minutes ago", action: "analyzed" },
-            { id: "2", restaurantName: "The Coffee Bean", location: "Los Angeles, CA", timeAgo: "3 minutes ago", action: "analyzed" },
-            { id: "3", restaurantName: "Burger Palace", location: "Austin, TX", timeAgo: "5 minutes ago", action: "analyzed" },
-            { id: "4", restaurantName: "Thai Garden", location: "Seattle, WA", timeAgo: "7 minutes ago", action: "analyzed" },
-            { id: "5", restaurantName: "Pizza Corner", location: "Chicago, IL", timeAgo: "8 minutes ago", action: "analyzed" },
-            { id: "6", restaurantName: "Sushi Zen", location: "Miami, FL", timeAgo: "12 minutes ago", action: "analyzed" },
-          ];
+          console.log('⚠️ LiveActivityFeed: No real data available, using sample activities');
+          const sampleActivities = createSampleActivities();
           setAllActivities(sampleActivities);
+          setTotalCount(247); // Use fallback count
+          setHasError(false);
         }
       } catch (error) {
-        console.error('Failed to fetch activities:', error);
+        console.error('❌ LiveActivityFeed: Failed to fetch activities:', error);
+        console.error('❌ LiveActivityFeed: Error details:', {
+          message: error instanceof Error ? error.message : 'Unknown error',
+          stack: error instanceof Error ? error.stack : 'No stack trace',
+          url: '/api/activity/recent'
+        });
+        
         // Use fallback sample data
-        const sampleActivities: ActivityItem[] = [
-          { id: "1", restaurantName: "Mario's Italian Kitchen", location: "San Francisco, CA", timeAgo: "2 minutes ago", action: "analyzed" },
-          { id: "2", restaurantName: "The Coffee Bean", location: "Los Angeles, CA", timeAgo: "3 minutes ago", action: "analyzed" },
-          { id: "3", restaurantName: "Burger Palace", location: "Austin, TX", timeAgo: "5 minutes ago", action: "analyzed" },
-        ];
-        console.log('Using fallback sample activities:', sampleActivities);
+        const sampleActivities = createSampleActivities().slice(0, 3); // Show fewer on error
+        console.log('🔄 LiveActivityFeed: Using error fallback sample activities:', sampleActivities);
         setAllActivities(sampleActivities);
+        setTotalCount(247); // Use fallback count
+        setHasError(true);
       }
       setLoading(false);
     };
@@ -78,6 +94,15 @@ export default function LiveActivityFeed() {
 
   // Rotate through activities for display
   useEffect(() => {
+    // Ensure we always have activities to display - ultimate fallback
+    if (allActivities.length === 0 && !loading) {
+      console.log('🆘 LiveActivityFeed: No activities loaded, using emergency fallback');
+      const emergencyActivities = createSampleActivities().slice(0, 3);
+      setAllActivities(emergencyActivities);
+      setCurrentActivities(emergencyActivities);
+      return;
+    }
+
     if (allActivities.length === 0) return;
 
     const updateDisplayedActivities = () => {
@@ -90,6 +115,7 @@ export default function LiveActivityFeed() {
         });
       }
       setCurrentActivities(nextActivities);
+      console.log('🔄 LiveActivityFeed: Updated displayed activities:', nextActivities);
     };
 
     updateDisplayedActivities();
@@ -102,7 +128,7 @@ export default function LiveActivityFeed() {
       
       return () => clearInterval(rotateInterval);
     }
-  }, [currentIndex, allActivities]);
+  }, [currentIndex, allActivities, loading]);
 
   return (
     <motion.div

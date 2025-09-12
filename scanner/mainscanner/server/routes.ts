@@ -2,7 +2,7 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { db } from "./db";
-import { fullScanResults } from "@shared/schema";
+import { fullScanResults, scanActivities } from "@shared/schema";
 import { eq, and, sql } from "drizzle-orm";
 import { RestaurantService } from "./services/restaurantService";
 import { AdvancedScannerService } from "./services/advancedScannerService";
@@ -17,6 +17,41 @@ import { GoogleBusinessService } from "./services/googleBusinessService";
 import { z } from "zod";
 import OpenAI from "openai";
 
+// Helper function to format time ago
+function getTimeAgo(date: Date | string): string {
+  const now = new Date();
+  const past = new Date(date);
+  const diffMs = now.getTime() - past.getTime();
+  const diffMinutes = Math.floor(diffMs / (1000 * 60));
+  
+  if (diffMinutes < 1) return "just now";
+  if (diffMinutes < 60) return `${diffMinutes} minute${diffMinutes === 1 ? '' : 's'} ago`;
+  
+  const diffHours = Math.floor(diffMinutes / 60);
+  if (diffHours < 24) return `${diffHours} hour${diffHours === 1 ? '' : 's'} ago`;
+  
+  const diffDays = Math.floor(diffHours / 24);
+  return `${diffDays} day${diffDays === 1 ? '' : 's'} ago`;
+}
+
+// Helper function to log scan activity
+async function logScanActivity(restaurantName: string, location: string | null, placeId?: string, domain?: string) {
+  try {
+    if (db) {
+      await db.insert(scanActivities).values({
+        restaurantName,
+        location: location || null,
+        placeId: placeId || null,
+        domain: domain || null,
+        action: "analyzed"
+      });
+      console.log(`📊 Activity logged: ${restaurantName} analyzed`);
+    }
+  } catch (error) {
+    console.error("Failed to log activity:", error);
+    // Don't throw - activity logging shouldn't break scans
+  }
+}
 
 
 export async function registerRoutes(app: Express): Promise<Server> {
@@ -78,6 +113,60 @@ export async function registerRoutes(app: Express): Promise<Server> {
     res.json({ message: "Server is working!" });
   });
 
+  // Debug endpoint for production troubleshooting
+  app.get("/api/debug/db", async (req, res) => {
+    try {
+      const debugInfo = {
+        timestamp: new Date().toISOString(),
+        environment: process.env.NODE_ENV || 'development',
+        hasDatabase: !!db,
+        hasDatabaseUrl: !!process.env.DATABASE_URL,
+        databaseUrlPrefix: process.env.DATABASE_URL ? process.env.DATABASE_URL.substring(0, 30) + '...' : 'Not set'
+      };
+
+      if (db) {
+        try {
+          // Test database connectivity
+          const testQuery = await db.select({ count: sql`count(*)` }).from(scanActivities);
+          debugInfo.databaseConnected = true;
+          debugInfo.activitiesCount = testQuery[0]?.count || 0;
+          
+          // Get recent activities
+          const recentActivities = await db
+            .select({
+              id: scanActivities.id,
+              restaurantName: scanActivities.restaurantName,
+              location: scanActivities.location,
+              createdAt: scanActivities.createdAt,
+            })
+            .from(scanActivities)
+            .orderBy(sql`${scanActivities.createdAt} DESC`)
+            .limit(5);
+            
+          debugInfo.recentActivities = recentActivities.map(activity => ({
+            id: activity.id,
+            restaurantName: activity.restaurantName,
+            location: activity.location,
+            timeAgo: getTimeAgo(activity.createdAt)
+          }));
+        } catch (dbError) {
+          debugInfo.databaseConnected = false;
+          debugInfo.databaseError = dbError instanceof Error ? dbError.message : 'Unknown database error';
+        }
+      } else {
+        debugInfo.databaseConnected = false;
+        debugInfo.message = 'Database not initialized (likely missing DATABASE_URL)';
+      }
+
+      res.json(debugInfo);
+    } catch (error) {
+      res.status(500).json({
+        error: 'Debug endpoint failed',
+        message: error instanceof Error ? error.message : 'Unknown error'
+      });
+    }
+  });
+
   // Restaurant search endpoint
   app.get("/api/restaurants/search", async (req, res) => {
     try {
@@ -130,6 +219,45 @@ export async function registerRoutes(app: Express): Promise<Server> {
     } catch (error) {
       console.error("Restaurant details error:", error);
       res.status(500).json({ error: "Failed to get restaurant details" });
+    }
+  });
+
+  // Recent activity endpoint
+  app.get("/api/activity/recent", async (req, res) => {
+    try {
+      if (!db) {
+        return res.json([]); // Return empty array if no database
+      }
+
+      const activities = await db
+        .select({
+          id: scanActivities.id,
+          restaurantName: scanActivities.restaurantName,
+          location: scanActivities.location,
+          placeId: scanActivities.placeId,
+          domain: scanActivities.domain,
+          action: scanActivities.action,
+          createdAt: scanActivities.createdAt,
+        })
+        .from(scanActivities)
+        .orderBy(sql`${scanActivities.createdAt} DESC`)
+        .limit(20);
+
+      // Format the response
+      const formattedActivities = activities.map(activity => ({
+        id: activity.id.toString(),
+        restaurantName: activity.restaurantName,
+        location: activity.location || "Location, State",
+        placeId: activity.placeId,
+        domain: activity.domain,
+        action: activity.action,
+        timeAgo: getTimeAgo(activity.createdAt)
+      }));
+
+      res.json(formattedActivities);
+    } catch (error) {
+      console.error("Activity fetch error:", error);
+      res.json([]); // Return empty array on error to prevent frontend issues
     }
   });
 
@@ -253,6 +381,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
       if (placeId) {
         await scanCacheService.cacheScan(placeId, scanResult);
         console.log(`💾 Cached scan results for ${restaurantName} (${placeId})`);
+        
+        // Log activity for the live feed
+        await logScanActivity(restaurantName || 'Unknown Restaurant', null, placeId, domain);
       }
 
 
@@ -1216,6 +1347,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
         // Cache the scan result
         await scanCacheService.cacheScan(scanParams.placeId, scanResult);
         console.log(`💾 Cached fresh scan results for ${scanParams.restaurantName} (${scanParams.placeId})`);
+        
+        // Log activity for the live feed
+        await logScanActivity(scanParams.restaurantName, null, scanParams.placeId, scanParams.domain);
       }
       
       // Log final scores being returned to CSV script
