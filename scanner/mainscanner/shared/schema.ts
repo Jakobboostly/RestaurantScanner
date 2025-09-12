@@ -40,6 +40,17 @@ export const fullScanResults = pgTable("full_scan_results", {
   updatedAt: timestamp("updated_at").defaultNow(),
 });
 
+// Activity tracking table for live feed
+export const scanActivities = pgTable("scan_activities", {
+  id: serial("id").primaryKey(),
+  restaurantName: text("restaurant_name").notNull(),
+  location: text("location"), // City, State format
+  placeId: text("place_id"),
+  domain: text("domain"),
+  action: text("action").notNull().default("analyzed"), // "analyzed", "scanned", etc.
+  createdAt: timestamp("created_at").defaultNow(),
+});
+
 // Revenue gate URLs table for tracking shareable revenue analysis links
 export const revenueGateUrls = pgTable("revenue_gate_urls", {
   id: serial("id").primaryKey(),
@@ -579,5 +590,17 @@ export const scanResultSchema = z.object({
   }).nullable(),
 });
 
+// Activity schema
+export const scanActivitySchema = z.object({
+  id: z.number(),
+  restaurantName: z.string(),
+  location: z.string().nullable(),
+  placeId: z.string().nullable(),
+  domain: z.string().nullable(),
+  action: z.string(),
+  createdAt: z.string(),
+});
+
 export type RestaurantSearchResult = z.infer<typeof restaurantSearchResultSchema>;
 export type ScanResult = z.infer<typeof scanResultSchema>;
+export type ScanActivity = z.infer<typeof scanActivitySchema>;
