@@ -198,7 +198,7 @@ export function AIMissingIngredients({
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: index * 0.1 }}
-                    className="h-48 w-full [perspective:1000px] cursor-pointer"
+                    className="h-64 w-full [perspective:1000px] cursor-pointer"
                     onClick={() => handleCardClick(index)}
                   >
                     <motion.div
@@ -255,23 +255,23 @@ export function AIMissingIngredients({
 
                       {/* Back of Card */}
                       <div className="absolute inset-0 w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)] rounded-xl shadow-lg">
-                        <div className="bg-gradient-to-br from-[#5F5FFF] to-[#9090FD] h-full rounded-xl p-6 text-white">
+                        <div className="bg-gradient-to-br from-[#5F5FFF] to-[#9090FD] h-full rounded-xl p-4 text-white">
                           <div className="h-full flex flex-col">
                             {/* Header */}
-                            <div className="flex items-center gap-2 mb-3">
-                              <Icon className="w-5 h-5" />
+                            <div className="flex items-center gap-2 mb-2">
+                              <Icon className="w-4 h-4" />
                               <span className="text-xs font-bold uppercase tracking-wide opacity-90">
                                 {category} improvement
                               </span>
                             </div>
                             
                             {/* Content */}
-                            <div className="flex-1">
-                              <p className="text-sm leading-relaxed mb-4 opacity-95">
+                            <div className="flex-1 overflow-hidden">
+                              <p className="text-xs leading-relaxed mb-3 opacity-95 line-clamp-4">
                                 {stripMarkdownBold(recommendation)}
                               </p>
                               
-                              <div className="bg-white/10 rounded-lg p-3 mb-4 backdrop-blur-sm">
+                              <div className="bg-white/10 rounded-lg p-2 mb-3 backdrop-blur-sm">
                                 <p className="text-xs opacity-90">
                                   💡 <strong>Impact:</strong> This improvement can boost your {category} visibility by 15-20%
                                 </p>
@@ -282,14 +282,14 @@ export function AIMissingIngredients({
                             {!isCompleted && (
                               <button
                                 onClick={(e) => markAsComplete(index, e)}
-                                className="w-full bg-white/20 hover:bg-white/30 text-white text-sm font-medium py-2 px-4 rounded-lg transition-all border border-white/20 backdrop-blur-sm"
+                                className="w-full bg-white/20 hover:bg-white/30 text-white text-xs font-medium py-2 px-3 rounded-lg transition-all border border-white/20 backdrop-blur-sm"
                               >
                                 Mark as Complete ✓
                               </button>
                             )}
                             
                             {isCompleted && (
-                              <div className="w-full bg-green-400/20 text-green-100 text-sm font-medium py-2 px-4 rounded-lg text-center border border-green-400/30">
+                              <div className="w-full bg-green-400/20 text-green-100 text-xs font-medium py-2 px-3 rounded-lg text-center border border-green-400/30">
                                 ✅ Completed!
                               </div>
                             )}

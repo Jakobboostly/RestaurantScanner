@@ -35,12 +35,12 @@ export default function RestaurantSearch({ onRestaurantSelect }: RestaurantSearc
   });
 
   const getPriceLevel = (level?: number) => {
-    if (!level) return { text: "Unknown", color: "bg-gray-100 text-gray-600" };
+    if (!level) return { text: "$", color: "bg-gray-100 text-gray-600" };
     const levels = [
-      { text: "Budget", color: "bg-green-100 text-green-700" },
-      { text: "Moderate", color: "bg-yellow-100 text-yellow-700" },
-      { text: "Expensive", color: "bg-orange-100 text-orange-700" },
-      { text: "Very Expensive", color: "bg-red-100 text-red-700" }
+      { text: "$", color: "bg-green-100 text-green-700" },
+      { text: "$$", color: "bg-yellow-100 text-yellow-700" },
+      { text: "$$$", color: "bg-orange-100 text-orange-700" },
+      { text: "$$$$", color: "bg-red-100 text-red-700" }
     ];
     return levels[level - 1] || levels[0];
   };
@@ -66,14 +66,14 @@ export default function RestaurantSearch({ onRestaurantSelect }: RestaurantSearc
       <motion.div 
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="relative mb-8"
+        className="relative mb-4"
       >
-        <div className="bg-gradient-to-br from-[#28008F] via-[#4a1fb8] to-[#6b46c1] rounded-2xl p-4 md:p-8 shadow-2xl">
-          <div className="text-center mb-4 md:mb-6">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
+        <div className="bg-gradient-to-br from-[#28008F] via-[#4a1fb8] to-[#6b46c1] rounded-2xl p-4 md:p-6 shadow-2xl">
+          <div className="text-center mb-3">
+            <h2 className="text-xl md:text-2xl font-bold text-white mb-1">
               Find Your Restaurant
             </h2>
-            <p className="text-purple-200 text-base md:text-lg">
+            <p className="text-purple-200 text-base">
               Get instant website analysis and competitor insights
             </p>
           </div>
@@ -86,17 +86,17 @@ export default function RestaurantSearch({ onRestaurantSelect }: RestaurantSearc
                   placeholder="Search restaurant name or city..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-14 pr-4 py-6 text-lg border-0 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg focus:ring-4 focus:ring-white/30 focus:bg-white transition-all duration-300 text-center"
+                  className="w-full pl-14 pr-4 py-5 md:py-6 text-base md:text-lg border-0 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg focus:ring-4 focus:ring-white/30 focus:bg-white transition-all duration-300 text-center min-h-[48px]"
                 />
-                <Search className="absolute left-4 top-1/2 h-6 w-6 text-gray-400 transform -translate-y-1/2" />
+                <Search className="absolute left-4 top-1/2 h-5 w-5 text-gray-400 transform -translate-y-1/2" />
                 {isLoading && (
-                  <div className="absolute right-4 top-6">
+                  <div className="absolute right-4 top-1/2 -translate-y-1/2">
                     <div className="animate-spin rounded-full h-6 w-6 border-2 border-purple-500 border-t-transparent"></div>
                   </div>
                 )}
               </div>
               
-              <div className="flex items-center justify-center mt-4 text-purple-200 text-sm">
+              <div className="flex items-center justify-center mt-3 text-purple-200 text-base">
                 <Zap className="h-4 w-4 mr-1" />
                 No signup required • Get results in 30 seconds
               </div>
@@ -180,6 +180,10 @@ export default function RestaurantSearch({ onRestaurantSelect }: RestaurantSearc
                         <Button
                           className="bg-gradient-to-r from-[#28008F] to-[#4a1fb8] hover:from-[#1f0068] hover:to-[#28008F] text-white shadow-lg hover:shadow-xl transition-all duration-300 px-4 py-2 text-sm"
                           size="sm"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            handleStartScan(restaurant);
+                          }}
                         >
                           <Zap className="h-3 w-3 mr-1" />
                           Scan
