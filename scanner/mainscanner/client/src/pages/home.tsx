@@ -657,8 +657,7 @@ export default function HomePage() {
 
             <Button
               size="lg"
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-[#28008F] px-10 py-4 font-semibold text-lg transition-all duration-300"
+              className="border-2 border-white bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-[#28008F] px-10 py-4 font-semibold text-lg transition-all duration-300"
               onClick={() => window.location.href = '/demo'}
             >
               Schedule a Demo

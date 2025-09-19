@@ -247,7 +247,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const formattedActivities = activities.map(activity => ({
         id: activity.id.toString(),
         restaurantName: activity.restaurantName,
-        location: activity.location || "Location, State",
+        location: activity.location || null,
         placeId: activity.placeId,
         domain: activity.domain,
         action: activity.action,
@@ -381,9 +381,21 @@ export async function registerRoutes(app: Express): Promise<Server> {
       if (placeId) {
         await scanCacheService.cacheScan(placeId, scanResult);
         console.log(`💾 Cached scan results for ${restaurantName} (${placeId})`);
-        
+
+        // Extract location from business profile for activity logging
+        let location = null;
+        if (scanResult.businessProfile?.formatted_address) {
+          const parts = scanResult.businessProfile.formatted_address.split(',');
+          if (parts.length >= 3) {
+            const city = parts[1].trim();
+            const stateZip = parts[2].trim();
+            const state = stateZip.split(' ')[0].trim();
+            location = `${city}, ${state}`;
+          }
+        }
+
         // Log activity for the live feed
-        await logScanActivity(restaurantName || 'Unknown Restaurant', null, placeId, domain);
+        await logScanActivity(restaurantName || 'Unknown Restaurant', location, placeId, domain);
       }
 
 
@@ -1347,9 +1359,21 @@ export async function registerRoutes(app: Express): Promise<Server> {
         // Cache the scan result
         await scanCacheService.cacheScan(scanParams.placeId, scanResult);
         console.log(`💾 Cached fresh scan results for ${scanParams.restaurantName} (${scanParams.placeId})`);
-        
+
+        // Extract location from business profile for activity logging
+        let location = null;
+        if (scanResult.businessProfile?.formatted_address) {
+          const parts = scanResult.businessProfile.formatted_address.split(',');
+          if (parts.length >= 3) {
+            const city = parts[1].trim();
+            const stateZip = parts[2].trim();
+            const state = stateZip.split(' ')[0].trim();
+            location = `${city}, ${state}`;
+          }
+        }
+
         // Log activity for the live feed
-        await logScanActivity(scanParams.restaurantName, null, scanParams.placeId, scanParams.domain);
+        await logScanActivity(scanParams.restaurantName, location, scanParams.placeId, scanParams.domain);
       }
       
       // Log final scores being returned to CSV script

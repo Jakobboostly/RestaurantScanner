@@ -48,14 +48,16 @@ export default function LiveActivityFeed() {
         console.log('📊 LiveActivityFeed: Activities count:', data?.length || 0);
         
         if (data && Array.isArray(data) && data.length > 0) {
-          // Convert to ActivityItem format
-          const activities: ActivityItem[] = data.map(activity => ({
-            id: activity.id.toString(),
-            restaurantName: activity.restaurantName,
-            location: activity.location || "Location, State",
-            timeAgo: activity.createdAt, // Backend already formats this
-            action: activity.action
-          }));
+          // Convert to ActivityItem format - only include activities with valid locations
+          const activities: ActivityItem[] = data
+            .filter(activity => activity.location && activity.location !== "Location, State") // Filter out activities without real locations
+            .map(activity => ({
+              id: activity.id.toString(),
+              restaurantName: activity.restaurantName,
+              location: activity.location,
+              timeAgo: activity.createdAt, // Backend already formats this
+              action: activity.action
+            }));
           
           console.log('✅ LiveActivityFeed: Using real activities:', activities);
           setAllActivities(activities);
