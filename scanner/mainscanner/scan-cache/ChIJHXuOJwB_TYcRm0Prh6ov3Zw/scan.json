@@ -3,11 +3,11 @@
     "domain": "rolbertoslehi.com",
     "restaurantName": "Rolberto’s Mexican Food",
     "placeId": "ChIJHXuOJwB_TYcRm0Prh6ov3Zw",
-    "overallScore": 63,
-    "performance": 73,
-    "seo": 70,
+    "overallScore": 62,
+    "performance": 100,
+    "seo": 58,
     "mobile": 53,
-    "userExperience": 63,
+    "userExperience": 58,
     "issues": [
       {
         "type": "reputation",
@@ -1660,13 +1660,27 @@
     },
     "profileAnalysis": null,
     "serpScreenshots": [],
-    "restaurantSearchScreenshot": null
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 58,
+      "social": 100,
+      "local": 33,
+      "reviews": 58,
+      "overall": 62
+    },
+    "originalScores": {
+      "seo": 70,
+      "overallScore": 63,
+      "performance": 73,
+      "userExperience": 63
+    },
+    "migratedAt": "2025-09-16T00:37:21.361Z"
   },
   "metadata": {
     "cachedAt": "2025-08-26T15:16:27.153Z",
     "expiresAt": "2025-09-02T15:16:27.153Z",
     "placeId": "ChIJHXuOJwB_TYcRm0Prh6ov3Zw",
     "restaurantName": "Rolberto’s Mexican Food",
-    "cacheVersion": "1.0.0"
+    "cacheVersion": "2.0.0"
   }
 }

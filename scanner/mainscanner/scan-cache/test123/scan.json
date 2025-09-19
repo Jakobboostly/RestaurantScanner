@@ -1,0 +1,563 @@
+{
+  "data": {
+    "domain": "testrestaurant.com",
+    "restaurantName": "Test Restaurant",
+    "placeId": "test123",
+    "overallScore": 44,
+    "performance": 100,
+    "seo": 66,
+    "mobile": 64,
+    "userExperience": 0,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "restaurant near me",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant delivery Unknown",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best restaurant Unknown",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant places near me",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant Unknown Unknown",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant delivery near me",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant open now",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 0,
+        "keywords_appeared": 0,
+        "total_keywords": 8,
+        "average_position": 0,
+        "best_position": 0
+      },
+      "keyword_results": [
+        {
+          "keyword": "restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "restaurant",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "best restaurant Unknown",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "restaurant delivery near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "restaurant Unknown Unknown",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "top restaurant Unknown",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "restaurant restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "restaurant food Unknown",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"restaurant near me\", \"restaurant\", \"best restaurant Unknown\", \"restaurant delivery near me\", \"restaurant Unknown Unknown\", \"top restaurant Unknown\", \"restaurant restaurant near me\", \"restaurant food Unknown\" - optimize Google My Business profile with these keywords",
+        "Low Local Pack visibility (0%) - audit your Google My Business completeness, categories, and local citations"
+      ],
+      "scan_metadata": {
+        "location": "Unknown,Unknown,United States",
+        "timestamp": "2025-09-12T17:31:48.149Z",
+        "total_scan_time_ms": 1213
+      }
+    },
+    "competitors": [
+      {
+        "name": "Saltys",
+        "domain": "saltys.com",
+        "performance": 92,
+        "seo": 83,
+        "accessibility": 78,
+        "bestPractices": 87,
+        "overallScore": 85,
+        "rating": 4.6,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 897,
+        "keywords": 25,
+        "domainAuthority": 76,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+300 keywords",
+        "authorityGap": 9,
+        "backlinks": 1051
+      },
+      {
+        "name": "Ednas Market & Grille - Lehi",
+        "domain": "ednasmarketgrillelehi.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1428,
+        "keywords": 23,
+        "domainAuthority": 81,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+250 keywords",
+        "authorityGap": 8,
+        "backlinks": 861
+      },
+      {
+        "name": "Sol Agave",
+        "domain": "solagave.com",
+        "performance": 96,
+        "seo": 86,
+        "accessibility": 82,
+        "bestPractices": 91,
+        "overallScore": 89,
+        "rating": 4.8,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 496,
+        "keywords": 40,
+        "domainAuthority": 74,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+400 keywords",
+        "authorityGap": 12,
+        "backlinks": 733
+      },
+      {
+        "name": "Ocotillo Prime Leña Y Mar",
+        "domain": "ocotilloprimeleaymar.com",
+        "performance": 96,
+        "seo": 86,
+        "accessibility": 82,
+        "bestPractices": 91,
+        "overallScore": 89,
+        "rating": 4.8,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1017,
+        "keywords": 27,
+        "domainAuthority": 78,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+400 keywords",
+        "authorityGap": 12,
+        "backlinks": 851
+      },
+      {
+        "name": "Kitchen Eighty-Eight",
+        "domain": "kitcheneightyeight.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 551,
+        "keywords": 46,
+        "domainAuthority": 80,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+250 keywords",
+        "authorityGap": 8,
+        "backlinks": 1078
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 82,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-12T17:31:50.588Z",
+    "businessProfile": {
+      "name": "Test Restaurant",
+      "address": "Location data unavailable - using domain analysis",
+      "rating": 0,
+      "reviewCount": 0,
+      "phoneNumber": null,
+      "website": "https://testrestaurant.com",
+      "formatted_address": "Location data unavailable - using domain analysis",
+      "place_id": null,
+      "business_status": "UNKNOWN",
+      "types": [
+        "restaurant"
+      ],
+      "reviews": [],
+      "photos": [],
+      "photoCount": 0,
+      "opening_hours": null,
+      "price_level": null,
+      "editorial_summary": null,
+      "city": "",
+      "state": ""
+    },
+    "businessPhotos": [],
+    "mobileExperience": {
+      "score": 64,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": true,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 0,
+      "totalReviews": 0,
+      "averageRating": 0,
+      "sentimentBreakdown": {
+        "positive": 15,
+        "neutral": 20,
+        "negative": 65
+      },
+      "reviewSources": [
+        {
+          "platform": "Google",
+          "count": 0,
+          "averageRating": 0
+        }
+      ],
+      "keyThemes": [],
+      "recentReviews": [],
+      "examples": {
+        "positive": [],
+        "neutral": [],
+        "negative": []
+      },
+      "customerMoodAnalysis": {
+        "overallMood": "satisfied",
+        "sentimentSummary": "Customer sentiment analysis unavailable - using business profile data for insights",
+        "keyMoodIndicators": [
+          "service",
+          "food quality",
+          "atmosphere"
+        ],
+        "businessInsights": {
+          "strengthsPerceived": [
+            "Established local presence",
+            "Google Business Profile active"
+          ],
+          "improvementOpportunities": [
+            "Increase review engagement",
+            "Expand online visibility"
+          ]
+        }
+      },
+      "trends": {
+        "ratingTrend": "stable",
+        "volumeTrend": "stable",
+        "responseRate": 50,
+        "averageResponseTime": "5 days"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ],
+      "googleReviews": {
+        "reviews": [],
+        "averageRating": 0
+      }
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/testrestaurant",
+      "instagram": "https://www.instagram.com/testrestaurant",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 66,
+      "social": 100,
+      "local": 8,
+      "reviews": 0,
+      "overall": 44
+    },
+    "originalScores": {
+      "seo": 79,
+      "overallScore": 65,
+      "performance": 84,
+      "userExperience": 74
+    },
+    "migratedAt": "2025-09-16T00:37:21.720Z"
+  },
+  "metadata": {
+    "cachedAt": "2025-09-12T17:31:50.762Z",
+    "expiresAt": "2025-10-12T17:31:50.762Z",
+    "placeId": "test123",
+    "restaurantName": "Test Restaurant",
+    "cacheVersion": "2.0.0"
+  }
+}

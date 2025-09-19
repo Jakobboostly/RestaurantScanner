@@ -3,11 +3,11 @@
     "domain": "www.eatatbnb.com",
     "restaurantName": "Burgers & Barley",
     "placeId": "ChIJuekrhYKDTYcRNcehewz3XrI",
-    "overallScore": 74,
-    "performance": 75,
-    "seo": 70,
+    "overallScore": 85,
+    "performance": 100,
+    "seo": 58,
     "mobile": 55,
-    "userExperience": 65,
+    "userExperience": 97,
     "issues": [
       {
         "type": "seo",
@@ -2572,13 +2572,27 @@
     },
     "profileAnalysis": null,
     "serpScreenshots": [],
-    "restaurantSearchScreenshot": null
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 58,
+      "social": 100,
+      "local": 83,
+      "reviews": 97,
+      "overall": 85
+    },
+    "originalScores": {
+      "seo": 70,
+      "overallScore": 74,
+      "performance": 75,
+      "userExperience": 65
+    },
+    "migratedAt": "2025-09-16T00:37:21.688Z"
   },
   "metadata": {
     "cachedAt": "2025-08-25T16:13:01.343Z",
     "expiresAt": "2025-09-01T16:13:01.343Z",
     "placeId": "ChIJuekrhYKDTYcRNcehewz3XrI",
     "restaurantName": "Burgers & Barley",
-    "cacheVersion": "1.0.0"
+    "cacheVersion": "2.0.0"
   }
 }

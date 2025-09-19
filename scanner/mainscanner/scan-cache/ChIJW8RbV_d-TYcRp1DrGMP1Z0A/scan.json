@@ -3,11 +3,11 @@
     "domain": "www.sevenbrothersburgers.com",
     "restaurantName": "Seven Brothers Burgers",
     "placeId": "ChIJW8RbV_d-TYcRp1DrGMP1Z0A",
-    "overallScore": 64,
-    "performance": 62,
-    "seo": 70,
+    "overallScore": 79,
+    "performance": 100,
+    "seo": 58,
     "mobile": 42,
-    "userExperience": 60,
+    "userExperience": 94,
     "issues": [
       {
         "type": "seo",
@@ -2619,13 +2619,27 @@
     },
     "profileAnalysis": null,
     "serpScreenshots": [],
-    "restaurantSearchScreenshot": null
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 58,
+      "social": 100,
+      "local": 63,
+      "reviews": 94,
+      "overall": 79
+    },
+    "originalScores": {
+      "seo": 70,
+      "overallScore": 64,
+      "performance": 62,
+      "userExperience": 60
+    },
+    "migratedAt": "2025-09-16T00:37:21.463Z"
   },
   "metadata": {
     "cachedAt": "2025-08-25T19:41:55.893Z",
     "expiresAt": "2025-09-01T19:41:55.893Z",
     "placeId": "ChIJW8RbV_d-TYcRp1DrGMP1Z0A",
     "restaurantName": "Seven Brothers Burgers",
-    "cacheVersion": "1.0.0"
+    "cacheVersion": "2.0.0"
   }
 }

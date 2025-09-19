@@ -3,11 +3,11 @@
     "domain": "www.donjoaquinstreettacos.com",
     "restaurantName": "Don Joaquin Street Tacos",
     "placeId": "ChIJsUDUZsF_TYcRAIq0aZ4o04g",
-    "overallScore": 77,
-    "performance": 88,
-    "seo": 83,
+    "overallScore": 82,
+    "performance": 100,
+    "seo": 69,
     "mobile": 68,
-    "userExperience": 78,
+    "userExperience": 76,
     "issues": [
       {
         "type": "seo",
@@ -2623,13 +2623,27 @@
     },
     "profileAnalysis": null,
     "serpScreenshots": [],
-    "restaurantSearchScreenshot": null
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 69,
+      "social": 100,
+      "local": 83,
+      "reviews": 76,
+      "overall": 82
+    },
+    "originalScores": {
+      "seo": 83,
+      "overallScore": 77,
+      "performance": 88,
+      "userExperience": 78
+    },
+    "migratedAt": "2025-09-16T00:37:21.664Z"
   },
   "metadata": {
     "cachedAt": "2025-08-25T15:52:33.790Z",
     "expiresAt": "2025-09-01T15:52:33.790Z",
     "placeId": "ChIJsUDUZsF_TYcRAIq0aZ4o04g",
     "restaurantName": "Don Joaquin Street Tacos",
-    "cacheVersion": "1.0.0"
+    "cacheVersion": "2.0.0"
   }
 }

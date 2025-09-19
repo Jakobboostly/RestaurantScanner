@@ -1,0 +1,1228 @@
+{
+  "data": {
+    "domain": "www.denirospizzeriamenu.com",
+    "restaurantName": "Deniro's Pizzeria",
+    "placeId": "ChIJLTUskkgL04kR2pEJkKWdxbk",
+    "overallScore": 77,
+    "performance": 100,
+    "seo": 63,
+    "mobile": 60,
+    "userExperience": 77,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "pizza near me",
+        "position": 0,
+        "searchVolume": 1300,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery Depew",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best pizza Depew",
+        "position": 6,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.denirospizzeriamenu.com/",
+        "title": "Deniro's Pizzeria - Depew, NY - 2251 George Urban Blvd ...",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza",
+        "position": 0,
+        "searchVolume": 590,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza places near me",
+        "position": 0,
+        "searchVolume": 140,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza Depew New York",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery near me",
+        "position": 0,
+        "searchVolume": 110,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza open now",
+        "position": 0,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 50,
+        "keywords_appeared": 4,
+        "total_keywords": 8,
+        "average_position": 4.8,
+        "best_position": 4
+      },
+      "keyword_results": [
+        {
+          "keyword": "pizza near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Joey’s Pizza Depew",
+              "address": "Depew, NY ",
+              "website": "http://www.joeyspizzadepew.com/",
+              "rating": 4.5,
+              "reviews": 496
+            },
+            {
+              "position": 2,
+              "name": "Joey's Pizza Broadway",
+              "address": "Depew, NY ",
+              "website": "https://www.joeyspizzadepew.com/",
+              "rating": 4.5,
+              "reviews": 150
+            },
+            {
+              "position": 3,
+              "name": "D'Agostino's Pizzeria Inc.",
+              "address": "Depew, NY ",
+              "website": "http://www.dagostinospizzeria.com/?utm_source=Next&utm_medium=Google_website",
+              "rating": 4.5,
+              "reviews": 270
+            }
+          ]
+        },
+        {
+          "keyword": "pizza",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "best pizza Depew",
+          "found": true,
+          "position": 5,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Deniro's Pizzeria",
+            "address": "Depew, NY ",
+            "website": "https://www.denirospizzeriamenu.com/?utm_source=gbp",
+            "phone": "(716) 681-5555",
+            "rating": 4.2,
+            "reviews": 279
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Joey’s Pizza Depew",
+              "address": "Depew, NY ",
+              "website": "http://www.joeyspizzadepew.com/",
+              "rating": 4.5,
+              "reviews": 496
+            },
+            {
+              "position": 2,
+              "name": "NY Style Best Pizza",
+              "address": "West Seneca, NY ",
+              "website": "https://www.nystylebestpizza.com/",
+              "rating": 5,
+              "reviews": 36
+            },
+            {
+              "position": 3,
+              "name": "Joey's Pizza Broadway",
+              "address": "Depew, NY ",
+              "website": "https://www.joeyspizzadepew.com/",
+              "rating": 4.5,
+              "reviews": 150
+            }
+          ]
+        },
+        {
+          "keyword": "pizza delivery near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Joey’s Pizza Depew",
+              "address": "Depew, NY ",
+              "website": "http://www.joeyspizzadepew.com/",
+              "rating": 4.5,
+              "reviews": 496
+            },
+            {
+              "position": 2,
+              "name": "Joey's Pizza Broadway",
+              "address": "Depew, NY ",
+              "website": "https://www.joeyspizzadepew.com/",
+              "rating": 4.5,
+              "reviews": 150
+            },
+            {
+              "position": 3,
+              "name": "Picasso's Pizza",
+              "address": "Lancaster, NY ",
+              "website": "http://www.picassospizza.net/",
+              "rating": 4.2,
+              "reviews": 818
+            }
+          ]
+        },
+        {
+          "keyword": "pizza Depew New York",
+          "found": true,
+          "position": 5,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Deniro's Pizzeria",
+            "address": "Depew, NY ",
+            "website": "https://www.denirospizzeriamenu.com/?utm_source=gbp",
+            "phone": "(716) 681-5555",
+            "rating": 4.2,
+            "reviews": 279
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Joey's Pizza Broadway",
+              "address": "Depew, NY ",
+              "website": "https://www.joeyspizzadepew.com/",
+              "rating": 4.5,
+              "reviews": 150
+            },
+            {
+              "position": 2,
+              "name": "Joey’s Pizza Depew",
+              "address": "Depew, NY ",
+              "website": "http://www.joeyspizzadepew.com/",
+              "rating": 4.5,
+              "reviews": 496
+            },
+            {
+              "position": 3,
+              "name": "Riva's Pizzeria",
+              "address": "Depew, NY ",
+              "website": "http://www.rivaspizza.com/",
+              "rating": 4.3,
+              "reviews": 329
+            }
+          ]
+        },
+        {
+          "keyword": "top pizza Depew",
+          "found": true,
+          "position": 4,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Deniro's Pizzeria",
+            "address": "Depew, NY ",
+            "website": "https://www.denirospizzeriamenu.com/?utm_source=gbp",
+            "phone": "(716) 681-5555",
+            "rating": 4.2,
+            "reviews": 279
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Joey’s Pizza Depew",
+              "address": "Depew, NY ",
+              "website": "http://www.joeyspizzadepew.com/",
+              "rating": 4.5,
+              "reviews": 496
+            },
+            {
+              "position": 2,
+              "name": "Joey's Pizza Broadway",
+              "address": "Depew, NY ",
+              "website": "https://www.joeyspizzadepew.com/",
+              "rating": 4.5,
+              "reviews": 150
+            },
+            {
+              "position": 3,
+              "name": "NY Style Best Pizza",
+              "address": "West Seneca, NY ",
+              "website": "https://www.nystylebestpizza.com/",
+              "rating": 5,
+              "reviews": 36
+            }
+          ]
+        },
+        {
+          "keyword": "pizza restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Joey's Pizza Broadway",
+              "address": "Depew, NY ",
+              "website": "https://www.joeyspizzadepew.com/",
+              "rating": 4.5,
+              "reviews": 150
+            },
+            {
+              "position": 2,
+              "name": "Joey’s Pizza Depew",
+              "address": "Depew, NY ",
+              "website": "http://www.joeyspizzadepew.com/",
+              "rating": 4.5,
+              "reviews": 496
+            },
+            {
+              "position": 3,
+              "name": "Riva's Pizzeria",
+              "address": "Depew, NY ",
+              "website": "http://www.rivaspizza.com/",
+              "rating": 4.3,
+              "reviews": 329
+            }
+          ]
+        },
+        {
+          "keyword": "pizza food Depew",
+          "found": true,
+          "position": 5,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Deniro's Pizzeria",
+            "address": "Depew, NY ",
+            "website": "https://www.denirospizzeriamenu.com/?utm_source=gbp",
+            "phone": "(716) 681-5555",
+            "rating": 4.2,
+            "reviews": 279
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Joey's Pizza Broadway",
+              "address": "Depew, NY ",
+              "website": "https://www.joeyspizzadepew.com/",
+              "rating": 4.5,
+              "reviews": 150
+            },
+            {
+              "position": 2,
+              "name": "Joey’s Pizza Depew",
+              "address": "Depew, NY ",
+              "website": "http://www.joeyspizzadepew.com/",
+              "rating": 4.5,
+              "reviews": 496
+            },
+            {
+              "position": 3,
+              "name": "D'Agostino's Pizzeria Inc.",
+              "address": "Depew, NY ",
+              "website": "http://www.dagostinospizzeria.com/?utm_source=Next&utm_medium=Google_website",
+              "rating": 4.5,
+              "reviews": 270
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"pizza near me\", \"pizza\", \"pizza delivery near me\", \"pizza restaurant near me\" - optimize Google My Business profile with these keywords",
+        "Ranking below #1 for 4 keywords - increase customer reviews and engagement to improve rankings"
+      ],
+      "scan_metadata": {
+        "location": "Depew,New York,United States",
+        "timestamp": "2025-09-15T11:51:00.310Z",
+        "total_scan_time_ms": 69573
+      }
+    },
+    "competitors": [
+      {
+        "name": "57 Ninety Restaurant",
+        "domain": "57ninetyrestaurant.com",
+        "performance": 82,
+        "seo": 74,
+        "accessibility": 70,
+        "bestPractices": 78,
+        "overallScore": 76,
+        "rating": 4.1,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1004,
+        "keywords": 38,
+        "domainAuthority": 62,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 1003
+      },
+      {
+        "name": "Campfire Grill",
+        "domain": "campfiregrill.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1128,
+        "keywords": 49,
+        "domainAuthority": 76,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+150 keywords",
+        "authorityGap": 5,
+        "backlinks": 1133
+      },
+      {
+        "name": "The Italian Village",
+        "domain": "theitalianvillage.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1449,
+        "keywords": 48,
+        "domainAuthority": 69,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+150 keywords",
+        "authorityGap": 5,
+        "backlinks": 1064
+      },
+      {
+        "name": "Kiku Sushi & Hibachi",
+        "domain": "kikusushihibachi.com",
+        "performance": 94,
+        "seo": 85,
+        "accessibility": 80,
+        "bestPractices": 89,
+        "overallScore": 87,
+        "rating": 4.7,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1262,
+        "keywords": 41,
+        "domainAuthority": 80,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+250 keywords",
+        "authorityGap": 8,
+        "backlinks": 729
+      },
+      {
+        "name": "16 Ellicott Bar and Grill",
+        "domain": "16ellicottbarandgrill.com",
+        "performance": 88,
+        "seo": 79,
+        "accessibility": 75,
+        "bestPractices": 84,
+        "overallScore": 81,
+        "rating": 4.4,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1261,
+        "keywords": 54,
+        "domainAuthority": 67,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+100 keywords",
+        "authorityGap": 3,
+        "backlinks": 1116
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 78,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-15T11:51:10.260Z",
+    "businessProfile": {
+      "name": "Deniro's Pizzeria",
+      "address": "2251 George Urban Blvd, Depew, NY 14043, USA",
+      "rating": 4.2,
+      "reviewCount": 279,
+      "phoneNumber": "(716) 681-5555",
+      "website": "https://www.denirospizzeriamenu.com/?utm_source=gbp",
+      "formatted_address": "2251 George Urban Blvd, Depew, NY 14043, USA",
+      "address_components": [
+        {
+          "long_name": "2251",
+          "short_name": "2251",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "George Urban Boulevard",
+          "short_name": "George Urban Blvd",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Depew",
+          "short_name": "Depew",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Cheektowaga",
+          "short_name": "Cheektowaga",
+          "types": [
+            "administrative_area_level_3",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Erie County",
+          "short_name": "Erie County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "New York",
+          "short_name": "NY",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "14043",
+          "short_name": "14043",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "state": "New York",
+      "city": "Depew",
+      "place_id": "ChIJLTUskkgL04kR2pEJkKWdxbk",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "reviews": [
+        {
+          "author_name": "Theresa Marie Mancini",
+          "author_url": "https://www.google.com/maps/contrib/103488774344548934282/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW83KW_y63ao_k5ymj1FTYUpxykgkPKT039DtJ1iRhBWsQmdKk=s128-c0x00000000-cc-rp-mo",
+          "rating": 1,
+          "relative_time_description": "3 weeks ago",
+          "text": "Quite literally the worst pizza I’ve ever had. Ordered two speciality pizza with extra toppings. Nothing I paid extra for was added. No sauce on either. So bland that if I had a blind fold on I wouldn’t be able to tell the difference between either of them. This used to be my favorite pizza place and it’s sucks to have watched it slowly go down hill. I thought I’d give them another shot but never again will I allow this pizza place to break my heart. :(",
+          "time": 1755990966,
+          "translated": false
+        },
+        {
+          "author_name": "T W",
+          "author_url": "https://www.google.com/maps/contrib/105269788403635471483/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVYH1N-4DBn0U27rKqhSGgD0fw9JXq79oi2J1CMj7jn8xMB5b4=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "I've ordered here before for a regular Cheese and Pepperoni pizza a long while back. It was pretty good. Haven't ordered for a bit, and gave it a go again, but this time with your Meat Lovers Pizza.\nAll I got to say is this was the best pizza ive ever had anywhere in the area.\nYou for sure earned another customer. Thank you so much!",
+          "time": 1750979637,
+          "translated": false
+        },
+        {
+          "author_name": "Will Penfold",
+          "author_url": "https://www.google.com/maps/contrib/117064913291180075677/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJpzAOCVCLdqJ9ThENTqTpIneH_hCYt3kZ9vH6eZnvQ8gDglw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Tried Deniro’s recently and it was fantastic. It was our 6th pizza place on a Buffalo pizza tour and while we were absolutely full at the point of ordering at Deniro’s, we all really enjoyed the pizza they made. We ordered a large pepperoni pizza and asked for it the be a little well done.\n\nThe crust was perfectly crispy, the sauce and cheese were delicious and the pepps they use are fantastic.\n\nOverall a very good pie and definitely recommend checking this place out.",
+          "time": 1721574667,
+          "translated": false
+        },
+        {
+          "author_name": "Keri Dougherty",
+          "author_url": "https://www.google.com/maps/contrib/105358898810274568147/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXTxkThBNj9oVhe3LC4Eh1Ggr-V2sDX2OBxuoKV5g0ADcpwaR3W=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "a year ago",
+          "text": "Always great food. Never disappointed. The buffalo chicken pizza is a favorite of my mom's. My parents order from here quite a bit. If the food isn't ready when you get there, they even offer to bring it out to your vehicle.",
+          "time": 1708543164,
+          "translated": false
+        },
+        {
+          "author_name": "Robert Badding Jr.",
+          "author_url": "https://www.google.com/maps/contrib/109158661872383240528/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJIl6t-VoQHfLE4qVu_crDXDJfBasG-n4L-1m5CeLGiKVpPXg=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "While our family didn't directly stop to get our pizzas from Deniro's, Fun City did provide our sons birthday party with pizza from Deniro's.  The 10 pizzas arrived pipping hot and both kids and parents loved it and only had 1 slice leftover which i ate on our way home.  Fantastic job to everyone working at Deniro's and we will definitely be adding them into our rotation because it's worth the drive!\nThanks again guys!\nSincerely,\nRob Badding Jr.",
+          "time": 1744582993,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110809855653401339143\">Deniro&#39;s Pizzeria</a>"
+          ],
+          "photo_reference": "ATKogpetpIIWVazehHHERmdZOZ6-C3PlnyLIdQfAkpbmzv5AXHwxIpo_F2iCzoMcKclRw-o2RVreo2A8jxgI6tXECLRPg9cZkF7ZAxCeuRRXOoiAThNpTNR5M5VaXI7_dI74glgVFkZocZ_ktaKOHUxifHxfQlOX0nNCLKZPV27Y4ZswPFqh1AJe8IMQsfihID5HOC1fwUeFxNaw8xeSR1fX6snbiT79Bv2_FnGucTogmPcZZ8ryXemLGg5t7nxGvp2jG-yuUuCa6vnzXoj9ueNXfSQlRAlpaMYNuuUzWlWwZrh8QA",
+          "width": 4800
+        },
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110809855653401339143\">Deniro&#39;s Pizzeria</a>"
+          ],
+          "photo_reference": "ATKogpew3P2HY09PqhTKKlJrnlYjWgpiJHCkF7YVVSzk9R8MMegR5jLfcE3lNt2iQvD4XTRswuIOEYzQUaphYf2es-cxJRtdLAc8BqrMuMujjmAbZD3SliG5mpn3ZIOVawQahdbHRqwP2gr14tImFF0T195zyNHZ3Q5lb53J94fV10NAA628aVRFpqpmztj42MJbyAW9GK3mP693e0KewR0nad3g_18yOsMd5YRog3bW6m1hJtXp2ERpJSjjgR58f3Fyy_ixQ0OUPxGSphuHYV47fZ8MijV2zOZuXiTJ209hl5GueA",
+          "width": 4800
+        },
+        {
+          "height": 2359,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110809855653401339143\">Deniro&#39;s Pizzeria</a>"
+          ],
+          "photo_reference": "ATKogpdwxiGMKnHlP2Ff5UWr46E1a9SEAOS0Ls41aPmx0uwYeUum6PK-issQUurw8X4TGXLszFyEBDWDpzHBxm365_pbG3xNSK-01JMRkpaVXgywFhZuCtNbbg_X8GALhvKUZUGUB6DCofIzq36E62a__y_W8pCb8dIuST4dNvccA3oRpqTNRH5QaDhBF8fEt7r6ngyF8o91koj0hXkdMSO5zgQapcCi9TAx0Yb4oPbHH59u0JLvFNBe7Il_-ROrx_LXZ2Z9cipHjaR_gK556RACA8q1oXD_Qj8Tq580Tm17NVvYFA",
+          "width": 4192
+        },
+        {
+          "height": 1360,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110809855653401339143\">Deniro&#39;s Pizzeria</a>"
+          ],
+          "photo_reference": "ATKogpftbdsTVs0oUh10Pw8ZamftoIw16S_pQnMXkwqJGDBV3aqR9Mx3MMdpv2rIYTyw7PuIm803lyNyaCXcz5WM1o6x45fJytwF4yebZw6Z1BEWQcpKM9l15ibD5Ijoc6AsJFoCmN9h6QmlBMbrKLEE5fVNVjcpvNBuTcsnMTzd2EFNPcHQ32WPEwrNoHymYanBfKNqpeqjrNtRefEnHxOOj60wlLG-fAt9mcLt80gGEhg-9ODsIduRdH75MYpPtb11aRPF5LdZ-OIB666ErazqxGkp1yI_Aw4zPvvUXJw0sIDFaA",
+          "width": 2048
+        },
+        {
+          "height": 1360,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110809855653401339143\">Deniro&#39;s Pizzeria</a>"
+          ],
+          "photo_reference": "ATKogpdcljWDbR5oxu4Ocln-4pmjCL4t-2NoTjOY7sk4xHb3_7uf-3YXsLVIqF1-AkMkeBT-8dt-IY_xqDffkB0s08kl2mxJzOuwmaxPkAd2RrY5WD-ma8MvXKg7j8EzuHo4dDGgHj6k-5eyNdskYK_qxyPzbztoGmgGiWxpRVGc7S4HGFwaiC7sx3BD67hy1k8AhhHdC34APamRkqnySTAXaTds2rmAr_3TvJ5LbJIARCrYYDUqKwIZM9SreC28UNRlp1Kt5D5K-PKizZHO8-9ashYOx4XN6jlpYfdacT-3cMrLxQ",
+          "width": 2048
+        },
+        {
+          "height": 1360,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110809855653401339143\">Deniro&#39;s Pizzeria</a>"
+          ],
+          "photo_reference": "ATKogpfFG8Oe8XTRy48ozOsajISJU_YytdviY-Uh0Iy3hFNrFBaI3PrGXRJMWfJPnbU9Tjn5ofhKkmWC2jsuIHdrXBVmIPHe1nJOFAvUq71ma3lH5Fal4i8vzp-GqTrE9zf8oq1VH93WcVnsimeyX1IOGM80vxRkVHYHFrCDIqtP51lxd8O5VRVXL_8aG2qZLq86K5hivGGCfPVvRWy8TBEeCjQLTFFPhOQpM6TJGE09qw6WILGoS6mYT2X-QWsGYjfXNRIId-d39JgOPfaQtpFe0gfAnv2v5ASAPWier7bhhlER_w",
+          "width": 2048
+        },
+        {
+          "height": 1360,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110809855653401339143\">Deniro&#39;s Pizzeria</a>"
+          ],
+          "photo_reference": "ATKogpdIGrOfxfMyRPWIgZvOYBiiZqdujshFQBhNYy4hdkucKVLbFhuxvl0nl-HMdelzlWEopXKJ_exQjasRvoFmsWadgnx2DHNsQBtv9ij7gqiIQSWI6flaSXohV1lo13naDGjni8OtpUFLcfDFEe-vw4DNoErnVhIwjL3gB10z56rVyZ5PVG5ysN0TNdp67Rc_mAEppgCxTtLkTkKUGCtY-uR-QegququURKJoUa6pXnbUtTwk34c9nYIamr-LXPILRhhy3xVFj5marEgosPbliOr_WH2azaDbkagPT36zsZrEVg",
+          "width": 2048
+        },
+        {
+          "height": 1389,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110809855653401339143\">Deniro&#39;s Pizzeria</a>"
+          ],
+          "photo_reference": "ATKogpcE2KXuwCUat8qSz6Raa8b5cpgXrUA57rQaKPKsFOEo0UFj7ytSqaE3gUkkWNf_j2upAPkvnTrEiwhz-3GM-83LnFNbBxkMKft4FjrXO_J5IdiBVDyZswMYSpH7z9Z84EBzTjkr4wNELygIljQvH9-VLPkuLKRgbkhtvLMmaQSdYz5IpSUuRQ-zYiBwaUC46Mb2C6uiEW9QCoivqJEt0kQV_4j-ve95BAt9AyGVGIiP4S0YFcuO9duhEEhKaFoKqAXwVtKynvs0cvzbHtCEzRrR1lMcl4by9inKp736x7xvMA",
+          "width": 2084
+        },
+        {
+          "height": 1360,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110809855653401339143\">Deniro&#39;s Pizzeria</a>"
+          ],
+          "photo_reference": "ATKogpcMGZVvowTm7x8roHmDV2I7GCahA2BxGhhYI4_1e1-r6ympD5rr4TsIhurAm27qlNRkJTtpVik-8eXkC-yCoQyU7dtu_-1UhYutVJh8LsZJxgtbfg7DJi4Z7WMa73A9C96E3XgzExjTKowWPX8d1I0-vHyUjcwi13biNjjpEdYe-a03UV4lPkQ0Ko3tBLlqlDvGa0LcbRFxKfzi8WvSYlgKcFQS_GV0Bx5D8R--7_UacbTtch8_miyN57W8qwrTTUoUxaVfx7ORpBrkIrSwwC2kRG_m_5oxenjrW_X5BzUB4Q",
+          "width": 2048
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110809855653401339143\">Deniro&#39;s Pizzeria</a>"
+          ],
+          "photo_reference": "ATKogpf-_H0dFRyEaHqteaBgezNK1QflLnM8PghlPtjej-hmn4V0AZ_d6n2Rah-lKyJ2K_ipaavcD4l_A0KPo8YGfr3YNeKGbefJ7SKaVEISzZM-Jdin0TXUGMwh-1o4VmtVjO7jMcl4eEZNJm_2aCPH21lbwrUo1By1mGobg_Tp4C8wxmex154KPWPQ8z4iAv0w5Kz4FRpvvmrXq-ocdr-SD7llR-LhIZBJ9BShiIYAzH3w123zALo7peaHCeqRT6bLQBRzLLVvFgym8qjKPNVeVHx06Iy5PiExm06WNKh-Pv7L_w",
+          "width": 4032
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "2000"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2000"
+            },
+            "open": {
+              "day": 1,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2100"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2100"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2200"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2200"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 11:00 AM – 8:00 PM",
+          "Tuesday: Closed",
+          "Wednesday: 11:00 AM – 9:00 PM",
+          "Thursday: 11:00 AM – 9:00 PM",
+          "Friday: 11:00 AM – 10:00 PM",
+          "Saturday: 11:00 AM – 10:00 PM",
+          "Sunday: 11:00 AM – 8:00 PM"
+        ]
+      },
+      "price_level": 2,
+      "editorial_summary": null,
+      "url": "https://maps.google.com/?cid=13386278801840378330",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2crwiLXWX4tY_TVuwCBSD3GmY6wcEzQrlK7_IlR_HLe_VZgQWa2izdeVfJ_jewmeqZW81oWeEk-quqxcaNLtRJam98N2248XaQ88npFRY_t79uzHXb6WhJkHaPwOzxt5IMk2oIHQ72VecPSEky7lwCGWD9GIxAvphsBfXddbdeK1ThiaEzGZF6_0CAmmnbcCvWUm5fDxUbZptvCLpnQGyBSrxX-Yfip41yuUYFZIcbcA7rILTT7I2exLplYl8cKzxx6FCjA-nNJYqT_Fu5rERgenkhtc_NyszyMp3Z1MRHALg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2d5bb7rw5J_EsxkKf0yzUS5fD6RlQ6ZMKq1-epSRA0PwpedKFNPNs2Ni8UoLtVBQJq9aFTtrTgzL5vdKpGIgYh-BKLl0GM6NJhOThoWIrmC0F5gJkEFbLWiQP8cD6HXG-YN-CMSDyfrg4_TwKfuibelyPoeADm1L_bPVggvfpPEUGfAK67as7yliPNSlONU8XUMQibPDaraJhmq8snnFYEUyxzRf-1wh-7JDut_Q9nMNJf6JJX3TSpM5gspBTaJT6IYCLwHksw7yNCGTQBmUKl-23r3sKODEymz7fVeCmh_VA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2dRMxZ-MBU9-ZvXyi6PtyHqKeoxgjJD3Sl107kBFensS4h2bXjGfuM-_TPqb3DPowuvjQ4zHfwge1gY6m3ncze7F4PQGZC799Artbr_nms_7ZRr5gN72o34hQ_5ndW9RGfnsWJoHhOLOvL0rlHd75NY_rL_xAfCoi7qj-zlRXjd_NGtwoiK1d51NPssrDgvpwwA1S5YIEpIs4iuXLx4_sYO-NeJL5wf-pvyP4D_S2AhUKP5JrWltsn4mVVIOSREBXW_ChZKOgBHfr0pOyxwFMLKSE_OS0jOYloZeyhZk0EHkw&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2coBe2fxt6JVrPlMdZ_XfxBx5k3A1YQniCP4LOW3HZhpxoVGeStAsBJNXsChpcGhhwjH3kqk6JWnsSfR6-3wXwW2c0HseEbpvlHoHteuQM-KYUL2OeqtsQsUfSM8u-6J_tlYSRpFADYep-mOzT_3X2Y8iRLPa8GGo_zoDhqgEezql9vEd6KYFSOv3EdZvhcwg7t64EjCaFWFuMsND4ukp1dgRTuS7gW2wCGZ8c-I6ymd7x4CxlqoW6hu-19ajvQVENCfCH9o-fmlFhYuGhdaui-6vd9Ft3MGoQbLbg_AWYaHg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2eBpSRU-1qe8poPlx23eWls9lkiBZOcdPBpjJxJFi4DfaiTJYrjSOAuE5NY9LbxJE782Bkj4d4NhgZN5eSrGa4VmVYXD8_K2tWeTtTd2CNbdlCDGgF6POqBjRa7t94DhbEurOAMMOl6uFuiBmfcReHnoXnwq2y5jMBqRsKhueYyAJesZBuHLIYvuGD-y6ZHofcN-8AktoIdYDsswfQzQ4V1xreunpW0MGUznttDCqSsEzUKojh5LOwQlSzfPXhwgFa5PjWDZH7-tIn1VOxjNOqED3hqbAdZQtm8_fUD03cApQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2faf0_LBy8Kf7Yad0nr2_RyI5MNzeCWxjK6hXhEwuHNoQp39qSTsi75K3zvajzg-C7fkmzMVphG-Z-WC0w1h07-g3zDOVe2L31maNJyxcbEstCQEKhFRDSAJS__E32QDlNs8NyumOuY6ZPeTsh--l-0XXiPTnie5FOAqZcnO4KwcUT0L5pkJfr_nIliTqtXWKOcHUDgZxdtOQq4wHDSrG7Tem9TUlV2PwSzC9IK4LxsyD-87abX6TDK13h1sU09uPyvMjNyzy05_3HTDj5o_qQc7_8wn2IfjXsxM5kLtHJYew&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2eNGwPhrPD4tUrhe_q4qDMz0S6FwPfDF8iOD_yC229JGBWMLe5BDaenFA-VGgtjafxuF2e3zFiG-D1DIRlaPwIHCaPG7dFs5TWlhMm4uZsOQtepTyhgwMrbxQCfVXA7poVrRHVieeLY_YGWVcakuM0wyayp5L3mAMj2h5dVcM9Sh7NszfRWYDwRrpYMfjcTnQ54VJ_I7NFXT38EYdhRNRI5yKGLAV8KzPgXGqEg9Dbdux4lUmIgq1MT7t9p2qL5dsVvpwVVcyfSLkteSpS6kFnIlLLmQdA4ddUTZx8HV4_MKg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2fLgFbFCaljDLte6zfvSeB2EJCPhThX1fjiFbAw_EtSKSlqtSz9Iih-c-ptsoPj_OjLTFpcNEh4CY_9sWN8ii3rvsDrsrHTzb0OXOJZ9OuorMlaMe40oyl_8mCoqFvk04-_bZ5qsxWPHSU83J2dxT8TuW6KgQzvjbxb5dhGdvNXbXUGY7VH65FD_p1a4Y_C58jtSPRVqvrREMFloQ5FWetgzhk3m6f5pNbcdKcmwUmYLxdWaZlk3gkRFROjXfh3wqUbBPa6wJpaLcXwfJLsjoPsiP2nDLVeHdxBU4K_NHJnyg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2dt4f_N2xEkn3BkIl9anJjuer_3XEK279lNjmMbosgUOLQU3ugWM5N5guHAW2Qc189KmDJ0vGKSASr6CX91cYic2MxOuAufBAAXlBMjpm4-fedY_9fltNfXHmlLS95e4WP05EEdj525dpoKU5RK5buzSedR-EuAvuWtkbMfH6apbQ1eKp3IlCyqIJ5HDoXSP_8SJ-3DbB9sOMMbACxjEESO5IpzVsGXhWWoJE-nJrIH3iY5GIAQiBWQrmr3ydkYPqllfb4h_m6CFZA_4EBYdwST2GsPrWoxER2qGrdFJuOFZg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2cPuxwpg0kyvHBse5KXmBS_0SBu6-1Dz--aucURXoaf7FESoRuuaGnkOtWXxUWaNRdAea30HHerS6T-TSfx_kcXpnohfHcQDypboUvQADSTDetLgx1oRn-zf5ZxBK8-wBNWoB1EbPW-g67Chf1iaOnwn8UmOcEgC43hspMozjy4OHRsFy3-1cvBxTfjXV4L8FcUTDpfNtC5oi0SHDvJPp9rvROH-tcpTfjZw-qr3eTeDJNMVL07qBAtkZnkJtwLaEZSHA5uyUQNwdaD0pJhIrh8zRMnNYx0UUxMkL2ih_KdSA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 60,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": true,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 84,
+      "totalReviews": 279,
+      "averageRating": 4.2,
+      "sentimentBreakdown": {
+        "positive": 80,
+        "neutral": 0,
+        "negative": 20
+      },
+      "reviewSources": [
+        "Google Business Profile (Limited)"
+      ],
+      "keyThemes": [
+        "Food Quality"
+      ],
+      "recentReviews": [
+        {
+          "author": "Theresa Marie Mancini",
+          "rating": 1,
+          "text": "Quite literally the worst pizza I’ve ever had. Ordered two speciality pizza with extra toppings. Nothing I paid extra for was added. No sauce on either. So bland that if I had a blind fold on I wouldn’t be able to tell the difference between either of them. This used to be my favorite pizza place and it’s sucks to have watched it slowly go down hill. I thought I’d give them another shot but never again will I allow this pizza place to break my heart. :(",
+          "date": "2025-08-23T23:16:06.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "T W",
+          "rating": 5,
+          "text": "I've ordered here before for a regular Cheese and Pepperoni pizza a long while back. It was pretty good. Haven't ordered for a bit, and gave it a go again, but this time with your Meat Lovers Pizza.\nAll I got to say is this was the best pizza ive ever had anywhere in the area.\nYou for sure earned another customer. Thank you so much!",
+          "date": "2025-06-26T23:13:57.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Robert Badding Jr.",
+          "rating": 5,
+          "text": "While our family didn't directly stop to get our pizzas from Deniro's, Fun City did provide our sons birthday party with pizza from Deniro's.  The 10 pizzas arrived pipping hot and both kids and parents loved it and only had 1 slice leftover which i ate on our way home.  Fantastic job to everyone working at Deniro's and we will definitely be adding them into our rotation because it's worth the drive!\nThanks again guys!\nSincerely,\nRob Badding Jr.",
+          "date": "2025-04-13T22:23:13.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Will Penfold",
+          "rating": 5,
+          "text": "Tried Deniro’s recently and it was fantastic. It was our 6th pizza place on a Buffalo pizza tour and while we were absolutely full at the point of ordering at Deniro’s, we all really enjoyed the pizza they made. We ordered a large pepperoni pizza and asked for it the be a little well done.\n\nThe crust was perfectly crispy, the sauce and cheese were delicious and the pepps they use are fantastic.\n\nOverall a very good pie and definitely recommend checking this place out.",
+          "date": "2024-07-21T15:11:07.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Keri Dougherty",
+          "rating": 4,
+          "text": "Always great food. Never disappointed. The buffalo chicken pizza is a favorite of my mom's. My parents order from here quite a bit. If the food isn't ready when you get there, they even offer to bring it out to your vehicle.",
+          "date": "2024-02-21T19:19:24.000Z",
+          "platform": "Google Places"
+        }
+      ],
+      "examples": {
+        "positive": [
+          {
+            "author": "T W",
+            "rating": 5,
+            "text": "I've ordered here before for a regular Cheese and Pepperoni pizza a long while back. It was pretty good. Haven't ordered for a bit, and gave it a go again, but this time with your Meat Lovers Pizza.\nAll I got to say is this was the best pizza ive ever had anywhere in the area.\nYou for sure earned another customer. Thank you so much!",
+            "date": "2025-06-26T23:13:57.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Will Penfold",
+            "rating": 5,
+            "text": "Tried Deniro’s recently and it was fantastic. It was our 6th pizza place on a Buffalo pizza tour and while we were absolutely full at the point of ordering at Deniro’s, we all really enjoyed the pizza they made. We ordered a large pepperoni pizza and asked for it the be a little well done.\n\nThe crust was perfectly crispy, the sauce and cheese were delicious and the pepps they use are fantastic.\n\nOverall a very good pie and definitely recommend checking this place out.",
+            "date": "2024-07-21T15:11:07.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Keri Dougherty",
+            "rating": 4,
+            "text": "Always great food. Never disappointed. The buffalo chicken pizza is a favorite of my mom's. My parents order from here quite a bit. If the food isn't ready when you get there, they even offer to bring it out to your vehicle.",
+            "date": "2024-02-21T19:19:24.000Z",
+            "platform": "Google Places"
+          }
+        ],
+        "neutral": [],
+        "negative": [
+          {
+            "author": "Theresa Marie Mancini",
+            "rating": 1,
+            "text": "Quite literally the worst pizza I’ve ever had. Ordered two speciality pizza with extra toppings. Nothing I paid extra for was added. No sauce on either. So bland that if I had a blind fold on I wouldn’t be able to tell the difference between either of them. This used to be my favorite pizza place and it’s sucks to have watched it slowly go down hill. I thought I’d give them another shot but never again will I allow this pizza place to break my heart. :(",
+            "date": "2025-08-23T23:16:06.000Z",
+            "platform": "Google Places"
+          }
+        ]
+      },
+      "customerMoodAnalysis": {
+        "overallMood": "satisfied",
+        "sentimentSummary": "Customers have positive experiences overall. Your 4.0/5 rating from 5 recent reviews shows solid satisfaction with room for growth.",
+        "sentimentDistribution": {
+          "ecstatic": 20,
+          "delighted": 60,
+          "satisfied": 0,
+          "neutral": 0,
+          "frustrated": 0,
+          "disappointed": 0,
+          "angry": 20
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "food quality",
+            "mentions": 2
+          },
+          {
+            "theme": "slow service",
+            "mentions": 1
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 5,
+          "satisfaction": 4,
+          "disappointment": 1,
+          "frustration": 0,
+          "anger": 0
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "Customers rave about the perfectly crispy crust and delicious sauce and cheese, making Deniro's pizzas a standout choice in the area. - social media marketing can showcase this strength",
+            "Deniro's consistently delivers hot and fresh pizzas, even for large orders like birthday parties, which impresses both kids and parents alike. - Boostly marketing services can amplify this",
+            "The convenience of having food brought out to the vehicle if it's not ready enhances the customer experience, making it a favorite for repeat orders. - review management can highlight this positive aspect"
+          ],
+          "improvementOpportunities": [
+            "Decline in food quality and consistency (missing toppings, lack of sauce) - review management can address this concern",
+            "Negative shift in customer perception (used to be a favorite, now disappointing) - social media marketing can improve this area",
+            "Lack of differentiation and bland experience - SEO services can solve this visibility issue"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 5,
+          "averageRating": 4,
+          "ratingDistribution": {
+            "1": 20,
+            "2": 0,
+            "3": 0,
+            "4": 20,
+            "5": 60
+          },
+          "sentimentTrends": {
+            "trend": "stable",
+            "recentAverageRating": 4,
+            "previousAverageRating": 4,
+            "recentReviewsCount": 5
+          }
+        }
+      },
+      "trends": {
+        "ratingTrend": "positive",
+        "volumeTrend": "increasing",
+        "responseRate": 60,
+        "averageResponseTime": "2 days"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ],
+      "googleReviews": {
+        "reviews": [
+          {
+            "author": "Theresa Marie Mancini",
+            "rating": 1,
+            "text": "Quite literally the worst pizza I’ve ever had. Ordered two speciality pizza with extra toppings. Nothing I paid extra for was added. No sauce on either. So bland that if I had a blind fold on I wouldn’t be able to tell the difference between either of them. This used to be my favorite pizza place and it’s sucks to have watched it slowly go down hill. I thought I’d give them another shot but never again will I allow this pizza place to break my heart. :(",
+            "date": "2025-08-23T23:16:06.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "T W",
+            "rating": 5,
+            "text": "I've ordered here before for a regular Cheese and Pepperoni pizza a long while back. It was pretty good. Haven't ordered for a bit, and gave it a go again, but this time with your Meat Lovers Pizza.\nAll I got to say is this was the best pizza ive ever had anywhere in the area.\nYou for sure earned another customer. Thank you so much!",
+            "date": "2025-06-26T23:13:57.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Robert Badding Jr.",
+            "rating": 5,
+            "text": "While our family didn't directly stop to get our pizzas from Deniro's, Fun City did provide our sons birthday party with pizza from Deniro's.  The 10 pizzas arrived pipping hot and both kids and parents loved it and only had 1 slice leftover which i ate on our way home.  Fantastic job to everyone working at Deniro's and we will definitely be adding them into our rotation because it's worth the drive!\nThanks again guys!\nSincerely,\nRob Badding Jr.",
+            "date": "2025-04-13T22:23:13.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Will Penfold",
+            "rating": 5,
+            "text": "Tried Deniro’s recently and it was fantastic. It was our 6th pizza place on a Buffalo pizza tour and while we were absolutely full at the point of ordering at Deniro’s, we all really enjoyed the pizza they made. We ordered a large pepperoni pizza and asked for it the be a little well done.\n\nThe crust was perfectly crispy, the sauce and cheese were delicious and the pepps they use are fantastic.\n\nOverall a very good pie and definitely recommend checking this place out.",
+            "date": "2024-07-21T15:11:07.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Keri Dougherty",
+            "rating": 4,
+            "text": "Always great food. Never disappointed. The buffalo chicken pizza is a favorite of my mom's. My parents order from here quite a bit. If the food isn't ready when you get there, they even offer to bring it out to your vehicle.",
+            "date": "2024-02-21T19:19:24.000Z",
+            "platform": "Google Places"
+          }
+        ],
+        "averageRating": 4.2,
+        "totalReviews": 279
+      }
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/denirospizzeria",
+      "instagram": "https://www.instagram.com/denirospizzeria",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 63,
+      "social": 100,
+      "local": 69,
+      "reviews": 77,
+      "overall": 77
+    },
+    "originalScores": {
+      "seo": 75,
+      "overallScore": 72,
+      "performance": 80,
+      "userExperience": 70
+    },
+    "migratedAt": "2025-09-16T00:37:21.398Z"
+  },
+  "metadata": {
+    "cachedAt": "2025-09-15T11:51:10.405Z",
+    "expiresAt": "2025-10-15T11:51:10.405Z",
+    "placeId": "ChIJLTUskkgL04kR2pEJkKWdxbk",
+    "restaurantName": "Deniro's Pizzeria",
+    "cacheVersion": "2.0.0"
+  }
+}

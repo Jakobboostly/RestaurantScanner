@@ -1,0 +1,2736 @@
+{
+  "data": {
+    "domain": "www.pizarospizza.com",
+    "restaurantName": "Pizaro's Pizza Napoletana I",
+    "placeId": "ChIJ22kZXmTbQIYROUvM8FHXbtw",
+    "overallScore": 79,
+    "performance": 100,
+    "seo": 68,
+    "mobile": 66,
+    "userExperience": 93,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "pizza near me",
+        "position": 0,
+        "searchVolume": 90500,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery Houston",
+        "position": 0,
+        "searchVolume": 480,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best pizza Houston",
+        "position": 6,
+        "searchVolume": 5400,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://pizarospizza.com/",
+        "title": "Pizaro's Pizza Houston | Authentic Napoletana, Detroit & New ...",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza",
+        "position": 0,
+        "searchVolume": 135000,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza places near me",
+        "position": 0,
+        "searchVolume": 5400,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza Houston Texas",
+        "position": 0,
+        "searchVolume": 2400,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery near me",
+        "position": 0,
+        "searchVolume": 12100,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza open now",
+        "position": 0,
+        "searchVolume": 320,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 13,
+        "keywords_appeared": 1,
+        "total_keywords": 8,
+        "average_position": 5,
+        "best_position": 5
+      },
+      "keyword_results": [
+        {
+          "keyword": "pizza near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Frank's Pizza",
+              "address": "Houston, TX ",
+              "website": "http://frankspizza.com/",
+              "rating": 4.6,
+              "reviews": 6600
+            },
+            {
+              "position": 2,
+              "name": "Roma's Pizza",
+              "address": "Houston, TX ",
+              "website": "https://geraldobraho0.wixsite.com/romaspizza/menus",
+              "rating": 4.4,
+              "reviews": 1100
+            },
+            {
+              "position": 3,
+              "name": "Pizza Zquare",
+              "address": "Houston, TX ",
+              "website": "https://order.toasttab.com/online/pizza-zquare-712-main-st",
+              "rating": 4.7,
+              "reviews": 156
+            }
+          ]
+        },
+        {
+          "keyword": "pizza",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Frank's Pizza",
+              "address": "Houston, TX ",
+              "website": "http://frankspizza.com/",
+              "rating": 4.6,
+              "reviews": 6600
+            },
+            {
+              "position": 2,
+              "name": "Roma's Pizza",
+              "address": "Houston, TX ",
+              "website": "https://geraldobraho0.wixsite.com/romaspizza/menus",
+              "rating": 4.4,
+              "reviews": 1100
+            },
+            {
+              "position": 3,
+              "name": "Pizza Zquare",
+              "address": "Houston, TX ",
+              "website": "https://order.toasttab.com/online/pizza-zquare-712-main-st",
+              "rating": 4.7,
+              "reviews": 156
+            }
+          ]
+        },
+        {
+          "keyword": "best pizza Houston",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Frank's Pizza",
+              "address": "Houston, TX ",
+              "website": "http://frankspizza.com/",
+              "rating": 4.6,
+              "reviews": 6600
+            },
+            {
+              "position": 2,
+              "name": "The Gypsy Poet",
+              "address": "Houston, TX ",
+              "website": "https://tgp.revelup.online/",
+              "rating": 4.8,
+              "reviews": 1600
+            },
+            {
+              "position": 3,
+              "name": "Coastline Pizzeria",
+              "address": "Houston, TX ",
+              "website": "http://www.coastlinepizzeriahtx.com/",
+              "rating": 4.8,
+              "reviews": 325
+            }
+          ]
+        },
+        {
+          "keyword": "pizza delivery near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Pizza Hut",
+              "address": "Houston, TX ",
+              "website": "",
+              "rating": 3.6,
+              "reviews": 598
+            },
+            {
+              "position": 2,
+              "name": "Domino's Pizza",
+              "address": "Houston, TX ",
+              "website": "",
+              "rating": 2.5,
+              "reviews": 109
+            },
+            {
+              "position": 3,
+              "name": "Frank's Pizza",
+              "address": "Houston, TX ",
+              "website": "http://frankspizza.com/",
+              "rating": 4.6,
+              "reviews": 6600
+            }
+          ]
+        },
+        {
+          "keyword": "pizza Houston Texas",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Frank's Pizza",
+              "address": "Houston, TX ",
+              "website": "http://frankspizza.com/",
+              "rating": 4.6,
+              "reviews": 6600
+            },
+            {
+              "position": 2,
+              "name": "Roma's Pizza",
+              "address": "Houston, TX ",
+              "website": "https://geraldobraho0.wixsite.com/romaspizza/menus",
+              "rating": 4.4,
+              "reviews": 1100
+            },
+            {
+              "position": 3,
+              "name": "Pizza Zquare",
+              "address": "Houston, TX ",
+              "website": "https://order.toasttab.com/online/pizza-zquare-712-main-st",
+              "rating": 4.7,
+              "reviews": 156
+            }
+          ]
+        },
+        {
+          "keyword": "top pizza Houston",
+          "found": true,
+          "position": 5,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Pizaro's Pizza Napoletana",
+            "address": "Houston, TX ",
+            "website": "http://pizarospizza.com/",
+            "phone": "(832) 742-5200",
+            "rating": 4.4,
+            "reviews": 1100
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Frank's Pizza",
+              "address": "Houston, TX ",
+              "website": "http://frankspizza.com/",
+              "rating": 4.6,
+              "reviews": 6600
+            },
+            {
+              "position": 2,
+              "name": "The Gypsy Poet",
+              "address": "Houston, TX ",
+              "website": "https://tgp.revelup.online/",
+              "rating": 4.8,
+              "reviews": 1600
+            },
+            {
+              "position": 3,
+              "name": "Mony's Pizzeria & Italian Kitchen",
+              "address": "Houston, TX ",
+              "website": "https://www.monyspizzeriahouston.com/?utm_source=gbp",
+              "rating": 4.8,
+              "reviews": 1100
+            }
+          ]
+        },
+        {
+          "keyword": "pizza restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Frank's Pizza",
+              "address": "Houston, TX ",
+              "website": "http://frankspizza.com/",
+              "rating": 4.6,
+              "reviews": 6600
+            },
+            {
+              "position": 2,
+              "name": "Roma's Pizza",
+              "address": "Houston, TX ",
+              "website": "https://geraldobraho0.wixsite.com/romaspizza/menus",
+              "rating": 4.4,
+              "reviews": 1100
+            },
+            {
+              "position": 3,
+              "name": "Mony's Pizzeria & Italian Kitchen",
+              "address": "Houston, TX ",
+              "website": "https://www.monyspizzeriahouston.com/?utm_source=gbp",
+              "rating": 4.8,
+              "reviews": 1100
+            }
+          ]
+        },
+        {
+          "keyword": "pizza food Houston",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Frank's Pizza",
+              "address": "Houston, TX ",
+              "website": "http://frankspizza.com/",
+              "rating": 4.6,
+              "reviews": 6600
+            },
+            {
+              "position": 2,
+              "name": "Mony's Pizzeria & Italian Kitchen",
+              "address": "Houston, TX ",
+              "website": "https://www.monyspizzeriahouston.com/?utm_source=gbp",
+              "rating": 4.8,
+              "reviews": 1100
+            },
+            {
+              "position": 3,
+              "name": "Nonno's",
+              "address": "Houston, TX ",
+              "website": "https://www.houstonsbestpizza.com/",
+              "rating": 4.2,
+              "reviews": 460
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"pizza near me\", \"pizza\", \"best pizza Houston\", \"pizza delivery near me\", \"pizza Houston Texas\", \"pizza restaurant near me\", \"pizza food Houston\" - optimize Google My Business profile with these keywords",
+        "Ranking below #1 for 1 keywords - increase customer reviews and engagement to improve rankings",
+        "Low Local Pack visibility (13%) - audit your Google My Business completeness, categories, and local citations"
+      ],
+      "scan_metadata": {
+        "location": "Houston,Texas,United States",
+        "timestamp": "2025-09-15T19:50:06.523Z",
+        "total_scan_time_ms": 107192
+      }
+    },
+    "competitors": [
+      {
+        "name": "Bungalow",
+        "domain": "bungalow.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1349,
+        "keywords": 49,
+        "domainAuthority": 84,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 908
+      },
+      {
+        "name": "Good Times",
+        "domain": "goodtimes.com",
+        "performance": 88,
+        "seo": 79,
+        "accessibility": 75,
+        "bestPractices": 84,
+        "overallScore": 81,
+        "rating": 4.4,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 969,
+        "keywords": 40,
+        "domainAuthority": 78,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 665
+      },
+      {
+        "name": "Taste of Texas",
+        "domain": "tasteoftexas.com",
+        "performance": 94,
+        "seo": 85,
+        "accessibility": 80,
+        "bestPractices": 89,
+        "overallScore": 87,
+        "rating": 4.7,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 936,
+        "keywords": 58,
+        "domainAuthority": 74,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+100 keywords",
+        "authorityGap": 3,
+        "backlinks": 989
+      },
+      {
+        "name": "JOEY Uptown",
+        "domain": "joeyuptown.com",
+        "performance": 96,
+        "seo": 86,
+        "accessibility": 82,
+        "bestPractices": 91,
+        "overallScore": 89,
+        "rating": 4.8,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1012,
+        "keywords": 35,
+        "domainAuthority": 81,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+150 keywords",
+        "authorityGap": 4,
+        "backlinks": 871
+      },
+      {
+        "name": "Brenner's on the Bayou",
+        "domain": "brennersonthebayou.com",
+        "performance": 88,
+        "seo": 79,
+        "accessibility": 75,
+        "bestPractices": 84,
+        "overallScore": 81,
+        "rating": 4.4,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1030,
+        "keywords": 59,
+        "domainAuthority": 79,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 1088
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 84,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-15T19:50:59.376Z",
+    "businessProfile": {
+      "name": "Pizaro's Pizza Napoletana I",
+      "address": "11177 Katy Fwy ste.e, Houston, TX 77079, USA",
+      "rating": 4.5,
+      "reviewCount": 769,
+      "phoneNumber": "(713) 485-0530",
+      "website": "http://www.pizarospizza.com/",
+      "formatted_address": "11177 Katy Fwy ste.e, Houston, TX 77079, USA",
+      "address_components": [
+        {
+          "long_name": "ste.e",
+          "short_name": "ste.e",
+          "types": [
+            "subpremise"
+          ]
+        },
+        {
+          "long_name": "11177",
+          "short_name": "11177",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Katy Freeway",
+          "short_name": "Katy Fwy",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Memorial",
+          "short_name": "Memorial",
+          "types": [
+            "neighborhood",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Houston",
+          "short_name": "Houston",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Harris County",
+          "short_name": "Harris County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Texas",
+          "short_name": "TX",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "77079",
+          "short_name": "77079",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "state": "Texas",
+      "city": "Houston",
+      "place_id": "ChIJ22kZXmTbQIYROUvM8FHXbtw",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "reviews": [
+        {
+          "author_name": "Imran Hanif",
+          "author_url": "https://www.google.com/maps/contrib/101226323181953784523/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXnFzt2yZWQxuK2g7x1o3xFxpf3SeSFZPRwx5Ez2CSanzT4JVlBmg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Pizaro Pizza truly delivers when it comes to authentic Neapolitan-style pizza. The pizzas were perfectly baked, with just the right size and an excellent balance of flavor and texture. The crust had that ideal crisp on the outside with a soft, chewy center—exactly what you’d expect from a great Neapolitan pizza. Each bite was rich, tasty, and satisfying. If you’re a fan of real, quality pizza, Oizaro is definitely worth a visit.",
+          "time": 1746214796,
+          "translated": false
+        },
+        {
+          "author_name": "Priscilla Chamberlain",
+          "author_url": "https://www.google.com/maps/contrib/110280645110013029877/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX4cq_yzw4uv5PH2vN-iduYa7NDxnf1pjALHfNmeOOjDMRhCWxWbA=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "First time stopping at this pizza place and it did not disappoint. We will be back again! Upon entering the establishment you can smell the freshness of dough. We order 2 Napoletana style pizza the Roma & the Sweet Pea and enjoyed each one till the last bite.",
+          "time": 1746538968,
+          "translated": false
+        },
+        {
+          "author_name": "Dion Shaqiri",
+          "author_url": "https://www.google.com/maps/contrib/104467855125613027477/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocILxidERMrMuz2LKPPypMZRYLWcr1s5VzE--ihQKJMpJBIliA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Great pizzas, we tried the Napoletana Style Pizza. Very delicious, the service is great. As soon as we walked in we were greeted and offered drinks for the kids so they don’t have to wait for us to look at the menu. It was our first time and definitely coming back. And I forgot to mention they have different styles of pizza. Give them a try!!",
+          "time": 1742951369,
+          "translated": false
+        },
+        {
+          "author_name": "Julie Johnson",
+          "author_url": "https://www.google.com/maps/contrib/105873424083414516696/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKG5GvgzVJ8rr13IA20faUBdZawQkulakHbuvsgBc22buTbGw=s128-c0x00000000-cc-rp-mo",
+          "rating": 1,
+          "relative_time_description": "a month ago",
+          "text": "I ordered a magherita 12 inch pizza. I received a lukewarm pizza with 8 - 1 inch X 1.5 inch cubes of mozzarella and they weren’t melted with a lot of sauce and a couple of sprinkles of basil. To spend close to $20. I could've made better pizza at home.",
+          "time": 1754769568,
+          "translated": false
+        },
+        {
+          "author_name": "Helen Dupree",
+          "author_url": "https://www.google.com/maps/contrib/108115665341940966479/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVmZeEwIpqNgNayJeE_eded2O5-oIujE6JvvclJcC4sMS-qdCv0jQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "Absolutely the best pizza I’ve ever had. Wow. The ingredients are fresh!!!  What an incredible flavor!\nCustomer service is top notch.\nAlana is THE BRAND AMBASSADOR for an exceptional first experience.\nWe will be back!!  ♥️",
+          "time": 1738204061,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 3204,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/118167353923843534835\">Pizaro&#39;s Pizza Napoletana I</a>"
+          ],
+          "photo_reference": "ATKogpfloptv9GxV2DThfG9OyF6enZWWkWW_qVQCMRLHHLHZEb1jtYAqkYSh8QyvXtO55UMYT_IwI1KTWY_CGZca7BxRuTxHuNwqnTBRErOd13vN9QD9c0p8Vf0Guqs9Z5j16nEy-yLoNvemGfx4zjdJ-P5qra1kkTqNmD27_QYibkhUBRGPq75qBRkqtmP2QIHnZVngHhTtHxdI5A6f_STgh8Ihc1qsJo9CBOi7r1hz8qOV7iPU0DyqAWyKT5eQqCNPybAFGO6TVmQracU9JiFrqCj5qw5J1vrnYMHAGXpe3TjalQ",
+          "width": 4800
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/118167353923843534835\">Pizaro&#39;s Pizza Napoletana I</a>"
+          ],
+          "photo_reference": "ATKogpdnmpzfZCLTOSU4-G-wk3BcCw6ACdju2x2Yj3QE1TsYatZcQ8hE3sDkGra9Vz7t9iUUi9d1XmFdVyNgFyc7EQuqqjhx84WbNyYRnuRUkX8mN67Hp2TG0ar58qrs_k2684tY9ErjrvzwjJPj3C6CS_f1ikJy30KXQkPMwLkjhC75EveqJ-Gn5eEHl1x6CmQmNDNGWM0S4tiPTUEQiJ1NMDcJ4MqHWh17XwdsYutPZ53maoYl8KAtWXBQykodh5iA1wPHcWlxQBvkUM1Xp_clk_TvcI_xxk2jUptBLocAelJwDw",
+          "width": 3024
+        },
+        {
+          "height": 4800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104467855125613027477\">Dion Shaqiri</a>"
+          ],
+          "photo_reference": "ATKogpfRLP6d_G8A4NZ-tVWoZiu-jP1Jj8e_SBKGXj2H-mv8UjukRTfDzLNMaCEsOG6OALFpxuQwzTneEFMZwuLKw4MiXLLNW4zmoQ0GAftwkc4RZJn8wAlchbckc-CRLf2etHYlwcSLfh6lAHhUQ36VuiyNqOn_wiE1SpprqcA8LAU_OCIxZoRfaJrpnhTxRuDBpbYHZ3-VViEFXTMz5BzZQxosWxFWmnK0wuh9qzD2SQ1jnjc-Ip5AsFZMKXreUEM-LDPcalqsJcSgnR2bIpkKqCARtoIsURqeevL13FYRsxlqquPDJ2Hu3oMF8wfEKrvmKCRGXQuqGCtmLNvW3sGjAaN4d8KyHlwB7GhuHHvNLQmjKPk5gTLexHEmtSlH6l-VEa_RsdMyADkK9Q17WQEzQvwpDSTyVGW2vsb3ngrjnc-inA",
+          "width": 3600
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100984664899130538988\">In k Kim</a>"
+          ],
+          "photo_reference": "ATKogpcDcfzKKFKv5gEn1wzghbVKLvI9YA5Yo1hhGASy3M7x5-wJiMxf_LStWs7fbvOYjbC48Dhxs-H49jJtwiuBwzG4r4kIaZN4UZi4Vg5EhFByV_kdfxsLDjbrjEH8lE2P4e66ACW6OQcIJgrW5zekqHHO-AEzOCC3d3i5PLlpsxMJBM6teIUgNijS_Aovjd7wUbpaGokttBQXVFCMoWwUzCaWE_hSyxugs3xL95ShaWC36SturkuXC1RuSmBiIyIeTmAdCyc13vPpeFoUWPbCK3vr6n-knEe_YXZkZ0KZ7HptS9K6wK4tiFp0Er3CcbdOc_VjJUkuV2m6Jg8VmSQNyKcxkp-sEy9px9M6WFrldEqrg068eNoPZWbFPEsgdLmKRGlJXB1QI1GRDTHWeGxywhKHzNGLQSDxW2CGzSWBZmtJ97src2-gGFh_gLiuBA",
+          "width": 4032
+        },
+        {
+          "height": 2992,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111247323507488395642\">Samuel Smiley</a>"
+          ],
+          "photo_reference": "ATKogpfckhF6La_azKdHmydwi5ErpYD3D_Wqgc4jqmVdk5QbOUvEEwKp0w6QnFVfxKCMDAwTcjGvbq79IsKp02LYdwf-wS5uS_IffMjbzV4KFZx-f5y4V4mkqAVaKi9dyyM_FZZk6YA_OiCwdOUJDpEk9tXeSvjcoW2NzPThcVI7FslAqvy1Hli50mtGusbvjEfUsAVx_ZTiWhyN8xTzK7YHTpGU9tqziEDUs_R7LjJheRavkXi0zBc5GYWLeBILxJBbtQdBduxXEKgdMc8vapSlLgK1I3YPFZ7xGGGABvlJy0Oi_vqzoZV0AjVYRagQnc_MHVWXOeEuhiD-RTx2Ot0pQTAS_rbwv9hPg_IHdYt8P0tPjvWCipXbpwEMivT0b2K6e8C0Yn_u9B5RI78Rz7KwsST_H9_JW8w4bHReOirkibUT_U1dC_gqv1KvsUdXjA",
+          "width": 2992
+        },
+        {
+          "height": 4800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112651881695315425965\">Munchie Biscuit</a>"
+          ],
+          "photo_reference": "ATKogpdsPNJy0D1V7hCOGTvqmQfBr-CP4mQCPMdeoegkCW08gEd1Aarv7fsNfVyllsBxb7QbjBxPJczkcnG_SSrWA-IUbBqHha9k6jJgZNuWuGRlVYp_YfnzYq3quvLca7KXHOLCd2wT4xzbGs3juFS633Rj1qSTcxOSOr2sHXfZiM74cNrJipqhbNfRh_RRfsZlK8C6pcwkfnh_TXnLUbJIyhHVeiY8czUVrhoJ_vVVQVLXnC0WfqgmNYEbZOxMqBmpPX5nlrqW1KiVhxgjZPCEHXbZT2N07_ldKuIz9ErO9IXtivrsiWq3uc93CzbxBdrEOSuKyjNSuH-OmnysmsLmBhKwhzlfzFS5wL8sEauW9DRhKnIiBXivYkesElidzln0HFYeIgn9ilXGrF1p_ojmvntTb1dcDg3GpFVQFN_q4bPEsjemCTwPYa5IjA5oAiVN",
+          "width": 3600
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108115665341940966479\">Helen Dupree</a>"
+          ],
+          "photo_reference": "ATKogpfvcCeHFyPzMVrO5cmbs0aS0mm3kKEqY3DnHtSi-2JthreuBosbNSkK0nmMeaH4pho6f0aZNHVC9xOPL2IofH4eTB8V9rHRd7G8--1sTEU0QBd1MGCtNJGKGQSswVUh9XYamq_C5KMQ4zqhCILsLNGqIEJ7N-HEsLcMZxpYyOia5beurbOQx-nLuuN0CaqUvsSwX393pGrSHKWLG-xRIitBrnY_TsEz1gxAz-u_JnsFhIa13F1T-bUsOloFfdY7HFyjlbnr8_1LgX30Ck_qZPUPWKaftQd-_1Ra8L3eMqpW_utmQgYjhwkXzvj1EpyL2YgF45KYdWUrInpONFQGYzIackKMHdOsUEoqHDOOkA6X-q-wUC6OmFaBB4yjg-kMRyTwYQOGi1m02WasmxQi5Mx9Rl4UQtMp9DZ2wnACPMu2Xw",
+          "width": 3024
+        },
+        {
+          "height": 2208,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111443625247077176393\">Tania “TiiTii” O</a>"
+          ],
+          "photo_reference": "ATKogpfJGqJRw8_gInC9UjpVgInw3er2qVrMwlFKhc9xrPj7szHqi7lhartq_4Hwtvin2ASKQTZLxHHiPKrptMKJJXIOXlISnOZ98w7S16D17nlT-wmIGZaLnbmMFm3u3i87kXQKw5LGxx6vs1MJSDjcO8fOFhJYSYdJJB0SEAAoIECXtlQ-hbmgrgEIgwp3aHHMqGummKRWivBlSUJEUwvS4DZCPiGta9ReYWvw6nQxM0AJOwKQISfxp8g5ZCnVpoQ5hG2j2uoqNM0jIMxjyM4kIS_i_GRzXEbTSl9WxQJ7rTTnGnnx4Ncqq2i_Fa_081rEWZPVYeRgTlFZkwKVaJpQPHa43HSaUxmgPP2TFsr-0p9N1Sma9j9_cRUtt-4qOQYn1gidJLvehpi5GU9Ol0SvVKVlKqC2u3La7Q5QUcVPE8EAXw",
+          "width": 1242
+        },
+        {
+          "height": 3600,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/118126198868925004730\">Luna</a>"
+          ],
+          "photo_reference": "ATKogpfDTIT_xtKZYjAkw9LUP0X1Gizg3u-iH98hjfesNA6z-Vs2K8eab7vpC6g1PXawa8mauOOybUSYS2etRYMuPCDRtIdfAJ1wigH6TJwcgpWPObl9CuXlwmjjksseaxASYC78cgkS1gr3WWGHAMk9RR14l1gIF38t4J7CJ7U5hm8MENtdTT_E9U-QPQDql8atXukOKt1G8NWfLAOjYvheg48598IKNLsk4n27s4fZGaS7OOAIcuZDq2AJNbNOr_g8NRGlJp1vuSGgeE1ZiE1bNGyylqju4v5485uulH5-Ggv6Ynd_RRM8bGYWkz0YgxGLPMi57mlfbGc_lcxlZ0_bI_rJzuagr4RYFZg4-wlglISauUWnl5OayX8Ck1VazcwOXRGbYCQtqOD5CasGeGxhvUS4YDA00JqdoMBrxjcTA2w",
+          "width": 4800
+        },
+        {
+          "height": 3000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103864069798087477446\">Johnny Martinez</a>"
+          ],
+          "photo_reference": "ATKogpfNeZshkMz7s1n1xX5vXrX8FwxoOSFQbxtv5SRLCvXO4EwpXvbuzKFFaSdBds3mYKGce_-7QPZb4EeRyxvHcq2ZTW5EMx8qB-gkqfi58VJfyS7hlmOT1fpEyyeQsoyC8ai5UXTfkKEsX4ir30O1nS7d23SBIq3oKcetf12RR6hItEdU57vLJayE9OAoZ0OLGNxygsnxpp1MkatLPKhK_mSox9V6AuR9YwQ5FOahJqpg_vethaMTA5SNapKUytNw7968sLVb0B08ezD8WrSvuDK1ukuHD8VoW6FYFaPFNUt4D-6xT84rnd8v7Z8Bj_33Y42XDm24idR947SrSdRwyB1TuzBulULj7Jw3WxPeQU8J9NxYn8e6NT0QRJyxOCV0Ce7clKdK6aswWjohljJKOKF5ZCCK11ex_Tqfqj9Hd3yWgA",
+          "width": 4000
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "2000"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2100"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2100"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2100"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2100"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2100"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 11:00 AM – 9:00 PM",
+          "Wednesday: 11:00 AM – 9:00 PM",
+          "Thursday: 11:00 AM – 9:00 PM",
+          "Friday: 11:00 AM – 9:00 PM",
+          "Saturday: 11:00 AM – 9:00 PM",
+          "Sunday: 12:00 – 8:00 PM"
+        ]
+      },
+      "price_level": 2,
+      "editorial_summary": {
+        "language": "en",
+        "overview": "No-nonsense operation showcasing specialty pizzas cooked in a wood-fired brick oven."
+      },
+      "url": "https://maps.google.com/?cid=15883869682714561337",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpeZrI00ku0TBvbtsE_noGGfkDIsIZotYjazANMtJUHjkm1F1zT_aoP7mWbTic8dqjZqWlc83kV48XGLnXdAXCFwMs1zkJNDGc-Mf4xNC9uZtDVzRZyHw-0mKJ9sbM6l3-kOOJKi6mdel1KgiI4DFrYuBh_ESN4nye37Osfw6YtDiJduqjjEc7CoG3nvl0TLRs0erRPgEesA6HXh295y8rJSBc9cSbwGE7aU1SrTniVrcFJPJho9opVyxDpHr6i_M8Q9YsHACBUHHRTIkFDTnWKG4WMsDRME3crd_nHIGUSrmQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfwL-wdI5NF0W_mB69YKzHRXRQsGre45ENOyVOvo-FJGxeDO-WnprgaQFITmfaq22Fr3HsJ3BQc7pC2fiOYLR0s0RzpL2a3Dt64qe6hNWSttcyh1aJ6R8YYvcLx3SqLSCmxmRvF7sHpunqW0_QMVEXcUqfZ4yZyvyeY6ul4nqNiKYO5_eo4qWgV07E19NNNGtvbYViOV7kQT7E1mmkII8EjGOqW-i_YrKHjUf4tVa7H1ZS-fO8VbbTiy4zNRuJlRYoB_5mmsp8pb4naELpHhC8UNt-9rEF-ai0Dl2OX-uuS4Q&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcH0Kgq9JQpKrQKFe89b-YL6yMn171lk8EvsrVceiqrJPEyqD8CoLOqDIDWWMXhv_hflLeZ2vaAY9_ulbMCZQ8vuJR75PkQKV18vMZgxvguWR84TZFt5DR0EYKFByGv3jiX2r6jL1NSDUyWP0yo4aBxeh93x0KcPafKeS3OQMN6Y880iLAzI8EOPRszT_kF7hkDVKhNHQOeiT6s7NHfhcDl8k4Hur2c6XZn6Z3uPFdSjqEJh_WWOfdDdiV3kFN9rpHh6CPGA2FRZ_ZgOqxPvAYRLY1WZpHaguYZUGF-1D8dB4x7PUJgAsPgOo7ssPvagWtmOeYwq2YU3NflyhOftAkke9iIB8BY4Q1pNiMea-SUttrrE-xPPgKszQAP6_5KwGmfHr61SG6cBgDqvuuEpkhCYNkX0im_3rqzvrw5rzewvQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcWn8T7rlZKwH2Xhe3Cj0Ruqj05v0XgnkUC-CxAAhp1rB9ovAcoVLu6VT3iLrhx5V2-EdFe1dllQyU8nnzalSkoE4mUeQ_Nbu-YrN_MjaTJx1RPgLnOeHuLmuqw8b7xzOwXTrsf9xdKe2Tow2CTDEcfSDIv8CfyuM0_rCecO27qEUHInUbk1eqgPKaXjDr8doDJP7h-hRSZ9lYhOA4IYrBWGzwXlWTNsCalRV8i6PAv_S6-q-Zo2jqJMq7SWvy1jb_8gdogYL9z_3wAf3xnpVtY5_QPnn_o-lxjYEuCv1iNfvGt-V6VBuHt97NrBahgqA0RKUHxpAy5JDmxoJYMRjzE9sh3X_kuOUNVnqhQx8-t4-vuCvWwLwOdCls2cX-WgP-2nNgEYEPokHcWr9KEE_yp5svQ6fqfOEgfAjItDeAwaCLFklxPMXHWs2ZL_g&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcMU1MBgSnfYatTtWVsAmRRk0aUmkrm8fuQKYcfCKuiEQIEljIiVw2O7Zji1jbSQhZ2TIob7MoDMQhvRzSl6k5NUnDOCJN9rJthTrmZnCQeOy-z5t7yPuSN845fD3nbc4ti8ch1IrxS8iiAW9vt13MukbGudBx5htA_UZvHyO8_b-PGL-gDvmvXNy-d7yIOlzW3WFB6BVHKNlYwGM59a083Tbuan6E2ykcEyoZxNq5HtkrPG032pOM6tteWvbAA9lTSdZwKKoEfzPAL62hFmd4m0P9q_309x2yDfYWRqzGCeP7-1zgMf4YWB6kqlawocs2aP1wX9TbaniQQLU8MZZWY8CraPm6pH6Qz1zUUexMfIdVNlDrVth4ckKS9At5qtml9HFHOoAT1P2qAqNCJu1Ao2n8UKkQC56eGiBU_ZpE2IcMAP3EDi0t7uO6uWg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfKON_xwofu11575ty_IATZ1ZiIyXuhMSVZUL0aTBr2uw6ruLtUdeZWI-GcZpmN8KrUB_ea7SQxjrWnGKuB9rUQk-CLigT4q8luvo6PZIPhdwEUcUErOF4QhR4gcByxsIPJHDzfkiw6byN4FyNaKZYKEQeYQye5SUUmEodeZ4CY4zA5gcKyFF10lVHLXt9JyAswxuNBHblyrsWMlrReTj1U8bZ0OYRp1qenO59xpRdA1R6qOfHy-PIDtvVCSw1usZg3Sv1METqseg8V07zyTV5Mo2Jl5MCiwMCvOu44vTvNXGvo8anYQmDRrNHxX_wW324At8UiWFT9K9UlVCFiuiuzANvEKlMs4DyN8cR6-ROjMEeIIjvBjRhXg_7__oQCn7ROfvpQRovRALvbUSLDKYtXIc5-nexa8yufZiRVzO3wZopJAvSQFZSUD5qcwO3X&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdZ2sOikJcB7DwxwLlp0RFw8xIzQDfQP6Vb4Va8aCz9Zvwmm7hZhbnV-zGW5K_tuLknww6mJ05q-2xwNtj1BVGnYWVchawHE56cvBwIDCigN1geFAmFYxCaTCUSgBg3x3dPygXVKXUVsVodKCDnW7ehgn9EbYek6mdeFDY1Y2GR_o-zuOq1dnzPfHqvEGJB8VFFkdwzkXh8Tbhpm_qvsO48N2feAMHu-ShwgRtPWSuwt0P9hhoV2pCOoT1cLpH_mLJlHSWBbUf09cWiftKl2XmMOrBDh371D_xekaDPYOq-Bw2yoDWffXm5EhTXXC1qdywjOAIaWp93EMDt34bORJXWgwA62jHLK7RnzX-utHXNXwez1572ryelxcpXsKUEhg7ybw7-3ZhZT9I0vxuNk4yeDn2M8keeC0BWLt_wRqxG4A&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdF-cgiMQcHyZ4JMut2cqKYT1nvtVwO9uyQk9jwB3wesU0WosuUra2IXV0XYnF1kdPocmdewjycRNsxl-qDK-mlfsNJgFlTeO4j6J_ihn6HQ9MjuexAhOE8yOW70Kky1Nte3SOF2zjfDug0y2xbLkSvbEAWjbG_0vmfBW1TZWmBZ-BivR1fSwY6DsOEocjFT9Ph4ec0fP7KMJWFWBQI2X1AwvC7Nz06GxwV2v-4FUMbLav0oMa8-I2rqrlauaW-WiMzRZ7uLeNKCCVSw7wYLzuX2Iof9Y5O_56245dMYc11fkl-2DjIL1ov2RkjDuxqgEHVJuJXpQsJo0PwU89jwO18idgh43pm9BjwlcO8mUAes_gzlqZF9R4GV_CIq4e-HtwyVte_fB1sRdBSMWOSYiXUGv87_UFAW8d0MbPOWxAAAw&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfZQVtYDEpF29XJAlmU3kjJhJjDDgTdbqAlenFZbU--VroL3L5HcYWmlUt3kjAEr1E0cYl71kBazWn9gaxPGq-On0BlRzaHyUs5pNwD2Wv3uzmeY7HBLh1hujKhywRKOiAEauOHt1qtMDVP5dMpIn7oamnxLyrBfPBJ6I8dtDn2vYfneUrLmBy0m-gFtdA1PM2zoYt8mqQ0VEJoWsQJ3cQm-33Dr-XA3JL2dYQxbo45-Ht3-_BMVAVhP9f_a92Fx_xHDxtCjfe1hCBkYiU50P5fR-tP0Abu4wqCN83-o0KQbw5vVwagugwNDDrRG50FtfilPqwbZhST6LyW-ajMmRK70TD4zjSPjZ0vfcHIVZUesymoJoyqYiJ1tAVvvNniMZuSVBtVMUR6m5bAnXf-U7QhwWeqqxy_kd7OI3fJ268&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpeMTY_QaqHjhoz_Qs7rTljioSceOS2su6fiaDpfzhlHU7C0vogj2ltRZ0vAzuod88khWpQdOaQyLyFu_ijDEEK8VyXSX59ofxeSENXLZdnjWWKI_lqJ4cPyl9Mf_zIuLB1HfGfK7i3QnHh2G5KxqpzyRj7qpD6ZOrLizSRIeDht46s9Qq_HNp--vaSuk86UeVNZxcXhI7q0BoCjK2pdIqTbruy6mEtyTgefDNNjR2qTIHrGwaykR38EM-B8qWCDBU43mezgMEJZ5E-h2w0imp_fzCGn-0PLH_rH6sWG6aJajVeTusaw3_VmMavcgZBAH_L-gJL3fINEXOPwVqjk-n-b9GyMQtcjW-IybjXyXdyozeP6u9agNOPh4WZS9m0xay5R3I_QeskXLCoK8YlSareNljAg8fEMOMi6OEeyt4u8pw&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 66,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": true,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 90,
+      "totalReviews": 769,
+      "averageRating": 4.5,
+      "sentimentBreakdown": {
+        "positive": 92,
+        "neutral": 4,
+        "negative": 4
+      },
+      "reviewSources": [
+        "Google Places API (Apify Enhanced)"
+      ],
+      "keyThemes": [
+        "Food Quality",
+        "Service",
+        "Wait Time",
+        "Cleanliness",
+        "Pricing",
+        "Portion Size",
+        "Location",
+        "Atmosphere"
+      ],
+      "recentReviews": [
+        {
+          "rating": 5,
+          "text": "Love this place! Great service and great food!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "The best pizza around! Also excellent and friendly\nservice",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Always 5/5 experience.\nPizza is wonderful as per usual. Neopolitan is my favorite - the crust is just perfect!\nIn house ranch is a must, as well as the Calabrian chili! (Pro tip: if you save your crust to the end, mix the Calabrian chili with some ranch and use as a dipping sauce - though I definitely do this for the rest of the pizza too!)",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 1,
+          "text": "I ordered a magherita 12 inch pizza. I received a lukewarm pizza with 8 - 1 inch X 1.5 inch cubes of mozzarella and they weren’t melted with a lot of sauce and a couple of sprinkles of basil. To spend close to $20. I could've made better pizza at home.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "negative"
+        },
+        {
+          "rating": 5,
+          "text": "This place nails what it's trying to do perfectly.\n\nGreat job Riley and Team. Y'all are amazing.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Best glueten free pizza i ever. Grandkids love the pizza there too. I had an amazing white wine also. They take great pride in what they are presenting to the quests. Love it there!!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 3,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "neutral"
+        },
+        {
+          "rating": 5,
+          "text": "Terrific pizza!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 4,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        }
+      ],
+      "detailedReviews": [
+        {
+          "author": "Brandy Swagger",
+          "rating": 5,
+          "text": "Love this place! Great service and great food!",
+          "date": "2025-09-07T22:52:43.289Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT205UFZrbExiaTFJUzBaMVRuSjJPRWhZZDFnNVFXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVUc3ahWhwMHXynNj4heIWgeQz8Gv7mDn5cEkbch1z3HtyLvUkS=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113885359503734746601?hl=en",
+          "reviewerNumberOfReviews": 36,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Pedro J. Palacios R.",
+          "rating": 5,
+          "text": "The best pizza around! Also excellent and friendly\nservice",
+          "date": "2025-08-31T20:04:18.321Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pCM2IxZFNkMlZtVTBwMWNqVXdXVGMzWlV4U1pWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUHR6AQSSby_9l0QizDT4q9Rcn_0hHXjc_vDxN9GX6GLoM5MDkM=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117281785728708077826?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Vijetha Sreerama",
+          "rating": 5,
+          "text": "Always 5/5 experience.\nPizza is wonderful as per usual. Neopolitan is my favorite - the crust is just perfect!\nIn house ranch is a must, as well as the Calabrian chili! (Pro tip: if you save your crust to the end, mix the Calabrian chili with some ranch and use as a dipping sauce - though I definitely do this for the rest of the pizza too!)",
+          "date": "2025-08-22T20:58:00.574Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tZeVlqUm1aMWxUYVRJM1FWOTZjRVZXZUdWMFIyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWS53vOjd7SBiEYOu-dv2-wJBZ7daBRWzcw8xcpji2kpgLszmlEVA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116136330539725211962?hl=en",
+          "reviewerNumberOfReviews": 31,
+          "sentiment": "positive"
+        },
+        {
+          "author": "guest man",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-14T03:13:20.575Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pSVlRVdDVOa2N0TkcxcVZtOVBPRm96WXpkYVMwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIh4S5eAirzCLJJUsVZJNT3xkMUc6TYcZm7Ek8TDGqmctIgDg=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114581064037189645546?hl=en",
+          "reviewerNumberOfReviews": 20,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Julie Johnson",
+          "rating": 1,
+          "text": "I ordered a magherita 12 inch pizza. I received a lukewarm pizza with 8 - 1 inch X 1.5 inch cubes of mozzarella and they weren’t melted with a lot of sauce and a couple of sprinkles of basil. To spend close to $20. I could've made better pizza at home.",
+          "date": "2025-08-09T19:59:28.615Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21oU1lrcG9VSHBCWHpSRmNFRXlWblYwYTBNeVRVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKG5GvgzVJ8rr13IA20faUBdZawQkulakHbuvsgBc22buTbGw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105873424083414516696?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "negative"
+        },
+        {
+          "author": "tim hadley",
+          "rating": 5,
+          "text": "This place nails what it's trying to do perfectly.\n\nGreat job Riley and Team. Y'all are amazing.",
+          "date": "2025-08-06T23:20:35.264Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tWMmFtcGZRek5vZVZjMGVrdEhXbDg1VTFKVlRWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJIKCeOU7qNWccGU-7XQsb3fViO4rvAVQJYt7u4g4KXeFv66g=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109943074367087045798?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jacqueline Sannizzaro Fuentes",
+          "rating": 5,
+          "text": "Best glueten free pizza i ever. Grandkids love the pizza there too. I had an amazing white wine also. They take great pride in what they are presenting to the quests. Love it there!!",
+          "date": "2025-07-31T12:54:55.333Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21VMGVWODJURVUwVTBOTWVubFFjVlJFV1VWQmQxRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWqYFgJJW7Dkgzl7oBAN-vrWMK8R_nWthwr6WoCBQoGpM0e952G=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101514646077903827075?hl=en",
+          "reviewerNumberOfReviews": 117,
+          "sentiment": "positive"
+        },
+        {
+          "author": "M Dunn",
+          "rating": 3,
+          "text": "",
+          "date": "2025-07-29T00:42:25.603Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT201TFQzb3hWall0Tkc5NFdXTm5NM0JpZW5Ka1duYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIiqXMYYVD8vrFCedtLtBZ8LT2WdRUXXiT783hPLHPuTN8odQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108908912829951317289?hl=en",
+          "reviewerNumberOfReviews": 36,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "David Garza",
+          "rating": 5,
+          "text": "Terrific pizza!",
+          "date": "2025-07-21T11:30:03.044Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21sdGN6SnNXRVI1V0VkTVRUTmlTbTVEYW1Wak5sRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWrlkEFvC768vt132_2iy4r0F9Od6BW_mGp-APW7n0_cZ7DtE7v7g=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117781645382783531489?hl=en",
+          "reviewerNumberOfReviews": 102,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Samuel Smiley",
+          "rating": 4,
+          "text": "",
+          "date": "2025-07-20T20:01:13.522Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25ORFNVdElORXRoYjNCcWJsTnhjWEF3Vm5ZeGJFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWzFZ6xV98XsrsVa6VdYFbJ8rC3g29UJhakUpxw9ip1eG8SycyjZw=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111247323507488395642?hl=en",
+          "reviewerNumberOfReviews": 470,
+          "sentiment": "positive"
+        },
+        {
+          "author": "jose tena",
+          "rating": 5,
+          "text": "My new favorite pizza place... In Houston!!",
+          "date": "2025-07-16T15:21:28.610Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2psUVQwczRVRkJJZFRaVVEyNVZYMEpxWW14cWFIYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXguGZdspoPp4HExLTsdbfIQDHov02vgDm-LHXCH5RZj1YNZqPqsg=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110068279748363147932?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Helen",
+          "rating": 5,
+          "text": "The Margherita was soooo gooood",
+          "date": "2025-07-13T20:23:44.024Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25GMmEwRnVjRGROVTFsRE16RnBUbTluV1dwSkxXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVEdHFJvJiJ4RsHW_7DNHxETpe7WAsIMEL3Y_U2VarPLYHczvjD2w=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117706392394345534506?hl=en",
+          "reviewerNumberOfReviews": 119,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jay Singh",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-13T01:51:18.894Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tKaWNGUmZhMHd5V2paRlVEaDRTVmwzVlVWc09YYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKuqnfnkNbIoSjm4o7XeUktQupDHma7Z5eLP47SP_7bJuug2Q=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104554863421773988940?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Abdullah Qawariq",
+          "rating": 5,
+          "text": "Excellent pizza. Arguably the best in Houston. My Italian friend likes it so that's a good sign I guess",
+          "date": "2025-07-12T19:15:54.908Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xWcVFWY3daREY0ZFRKSGVrUk9TSGxDWjJoMWNrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLPYOM8K7gqDV751CU7YHWpx9IBRdOzyUE3p1p82985QrCp2Ho=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114075617271206372604?hl=en",
+          "reviewerNumberOfReviews": 60,
+          "sentiment": "positive"
+        },
+        {
+          "author": "C G",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-11T13:54:41.779Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT200M2MyTXRVREY0WjA0NWJ6QkdRMU5oUkRkZmQxRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIQA_hvrsXUTzmrZPleJvzK2eUedoBs358Fo8N9GFqBpFDINA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110273551170800284382?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Francisco Montoya",
+          "rating": 5,
+          "text": "Nice spot. We came at the lunch rush and there was a big family ahead of us, so it understandably took a little bit to get our food. I shared a Gluten Free Detroit style with my wife and it was pretty good for gluten free. If I get a chance to come back I definitely want to try some of their others.",
+          "date": "2025-07-07T17:33:19.637Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25WS01XbExkRFpCZVdGT1MxTk9PVnBmZG5OWVNWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWzzXwVvV41ny1YYTRVkZ960qCvxzZLGnfv_lzEdC67wL3BAOZ-=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105397195626555745638?hl=en",
+          "reviewerNumberOfReviews": 106,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kirby Hamann",
+          "rating": 5,
+          "text": "Been here numerous of times. One of the best pizzas I’ve ever had",
+          "date": "2025-07-06T02:48:18.768Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2poR1RWVkpNMFpKVFRSMmIyNTNkM04xUlVGVloyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWsis-TJIm8CW7R_PivqvuaoBqQLr_QOtIPDIhgNg2Gc8Z5JWBR=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114456418291903272989?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Untamable Angel",
+          "rating": 5,
+          "text": "Pizza was delicious, and I love that they have both Detroit style and neopolian style with fresh mozzarella because my husband and I do not agree and we can each get the style of pizza we want at one place!",
+          "date": "2025-06-23T02:21:50.780Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xwQmRGWTRUWEYyZDNVMWJqVTRNRGwyZUhWT1dHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWWoYkKura9vH_t4kGUoSSZIpeMATioHaPcxj6KhmPM6QxB4qc=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115138470690846089207?hl=en",
+          "reviewerNumberOfReviews": 56,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Rigo Montenegro",
+          "rating": 5,
+          "text": "Place is pretty amazing hidden gem. The pizza is 5 star, dough is so fresh, and each bite is packed with flavor due to fresh ingredients. Will be returning. Wow!",
+          "date": "2025-06-17T17:40:00.769Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT205Qk9VSndWa1JZTlVSRFVEQlVabU5ZYjB0WVpGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX9ptxRNeZgTfwiRUkdsQozM8ScK3IZz81cSs_jvFWJ0cXEu74Z=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113234159810705575135?hl=en",
+          "reviewerNumberOfReviews": 29,
+          "sentiment": "positive"
+        },
+        {
+          "author": "In k Kim",
+          "rating": 5,
+          "text": "피자 추천합니다 뉴욕피자에 치즈추가 최고입니다.",
+          "date": "2025-06-16T00:54:03.975Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21rNWNGSTFVelJyVG1STk4yUnRSRVJvVUd4bGNGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXdyX0NytI-5zpayX-96erffw5KqgITCdQH9g4OuxEVjttxW5wq=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100984664899130538988?hl=en",
+          "reviewerNumberOfReviews": 228,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Marie Parsons",
+          "rating": 5,
+          "text": "The pizza here is so good and the staff is friendly! Fast service.",
+          "date": "2025-06-14T01:39:08.225Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VMUHo3b1RDMjRQQk1REAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWaN7kHwGjIH9-_g1RrzwZ5zZUw-RbApJTZP6jeb-6mIdTj4Zz7hA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107782144761662761197?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ronak Shah",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-07T16:40:40.518Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VOZW1fT1RuXzlQTlN3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIRk10hKMXlFQd2NEq6cpP2q6NU1OUAj4J5vwRoT2qtUe-1og=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114170909520219509589?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Munchie Biscuit",
+          "rating": 5,
+          "text": "Food was incredible and service was good.",
+          "date": "2025-06-07T02:47:26.331Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pWblZ6RTVlRU5GTTBReU0wNTRURTFoTm1GeVdtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU7LB0ardWmCyzY-01z7vZlWt-uZTlYvtWn8IXrTr8ItL_JI9Q=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112651881695315425965?hl=en",
+          "reviewerNumberOfReviews": 56,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mimi Branham",
+          "rating": 5,
+          "text": "Husband got Detroit and I got regular pizza. His was thick with the cheese crunchy crust you want. Mine was thin crust with the bubbly crust that comes from a hot oven. Fast service and the restaurant was clean.",
+          "date": "2025-06-01T20:22:06.797Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJVC1fdW1Tb3JPajJnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL-AzU2ninHT8kACjR6dU6ch9AJfsXkIcg7bYAFJmHiKKyiYQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110032414911353071533?hl=en",
+          "reviewerNumberOfReviews": 17,
+          "sentiment": "positive"
+        },
+        {
+          "author": "SURAIYA KAMAL",
+          "rating": 5,
+          "text": "My kiddo ranks pizza places and she ranks yall as #1.    I have to agree.  Great pizza and team!\n\nUpdate:  still the one!  Thanks for great pizza and great service from some original team members like Daniel.",
+          "date": "2025-05-30T01:53:09.586Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNLbXFDZ1BnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ9cLV5N7dBXe0O0c2nJm7HFXh1cqMYaqHK6QD3FQiIYdmsig=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109707177762654147539?hl=en",
+          "reviewerNumberOfReviews": 66,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tony Kessler",
+          "rating": 1,
+          "text": "The pizza was horrible too expensive. I’ve had better frozen pizzas.",
+          "date": "2025-05-30T00:26:35.146Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VOdWJwYzJJbTVEVGpRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKDst3EcamttSi4wv_PqVxPkuMou-aZA-OuIWxA3k8pih971A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113990116733906026075?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Arpan Gutgutia",
+          "rating": 5,
+          "text": "You go to Pizaros for their pizzas, everything else is tertiary. Their Patata-e-fungi are so so good. Overall their take on neopolitan and Detroit style are just so good. Go there and eat while it's hot.",
+          "date": "2025-05-25T01:47:27.646Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VKNnQ4dVc2Njg3akVnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX6R4Y4i4ChJehHfAmQljrTNGF8qKnnXFResQi0XavuQXwwQTHu=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112043569549583276836?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Monica Brinez",
+          "rating": 5,
+          "text": "We have tried napoletana pizzas in other countries before and decided to eat at Pizaro last weekend. Some reviews say it is overpriced but maybe they don't understand this is not a chain restaurant pizza,  ingredients give the value and make the difference and that is why they got a certification for Vera Pizza Napoletana. I will come back!",
+          "date": "2025-05-23T02:23:01.784Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VQNkI3T0RHOEpqT19BRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLpEWUtJkC-1zO-b_Njfah15bMW01sCtkVUs4SuZqfmDex8xw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103131628789776637090?hl=en",
+          "reviewerNumberOfReviews": 86,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Zainab Bawany",
+          "rating": 5,
+          "text": "The most delicious pizza in Houston!",
+          "date": "2025-05-17T16:37:28.613Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJRzd4S0htcTRhaXZBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIhAvNGY5iyWT2RJIJ1KZADQQ88SOUOEUfBYSVCBSqdVXd0AQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110730887523810108230?hl=en",
+          "reviewerNumberOfReviews": 24,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mike Pryor",
+          "rating": 1,
+          "text": "",
+          "date": "2025-05-17T02:04:38.154Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJZUd0Y1BROU1pTDFnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUh0r0TAxV-e002gl6V47IbfJUpMibNRAYlETQhbxyy9JMXpcM=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114425582570058938120?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Jacob Wright",
+          "rating": 5,
+          "text": "Fantastic order at counter pizza spot. Their Neapolitan is fantastic, and the reason to come. Few places have authentic Neopalitan style, let alone a good one. Their new York and Detroit styles are also very good.",
+          "date": "2025-05-12T00:00:05.188Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VMUDJoWlcwbU5hcnFBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ7TdET7ybQSeAplWpYMEZ-_TBEijU-ZxTUU0bYmA7xIVRn4w=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117956831752741943437?hl=en",
+          "reviewerNumberOfReviews": 42,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Olivia M",
+          "rating": 5,
+          "text": "Best Neapolitan pizza in town",
+          "date": "2025-05-10T14:16:07.872Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VQcnFrNGUwMGV1M1VBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLnM-7ojXwXLSxwzgZeN8vzC8vvmahkS870q8sEuNrNKYtVzA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104224248994837608607?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Whit Mitchell",
+          "rating": 5,
+          "text": "Been here about 10 times now. I can not say enough about the crust and sauce. FANTASTIC! Toppings are fresh and delicious. Looking forward to being on that side of the city soon. WONDERFUL and APPRECIATED.",
+          "date": "2025-05-09T18:54:39.420Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VQaWRyT3VfemJUTXdRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLd4NwdfXNu8jkl9yI3tJ4knIKSMIdpS6NzwSDVVan8HiL32g=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102943164853209419758?hl=en",
+          "reviewerNumberOfReviews": 51,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Priscilla Chamberlain",
+          "rating": 5,
+          "text": "First time stopping at this pizza place and it did not disappoint. We will be back again! Upon entering the establishment you can smell the freshness of dough. We order 2 Napoletana style pizza the Roma & the Sweet Pea and enjoyed each one till the last bite.",
+          "date": "2025-05-06T13:42:48.301Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJYS1tTnZwaE5HeHN3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX4cq_yzw4uv5PH2vN-iduYa7NDxnf1pjALHfNmeOOjDMRhCWxWbA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110280645110013029877?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Peter Montero",
+          "rating": 5,
+          "text": "Great pizza! If you like pizza, eat here.",
+          "date": "2025-05-04T15:29:08.299Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNZdnBhNXdBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKntLZ4HVYkfiv99BSJUcE_ouWp3lO8NfXlDLqK1uYmY_jN3Q=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103000848598935888363?hl=en",
+          "reviewerNumberOfReviews": 148,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Imran Hanif",
+          "rating": 5,
+          "text": "Pizaro Pizza truly delivers when it comes to authentic Neapolitan-style pizza. The pizzas were perfectly baked, with just the right size and an excellent balance of flavor and texture. The crust had that ideal crisp on the outside with a soft, chewy center—exactly what you’d expect from a great Neapolitan pizza. Each bite was rich, tasty, and satisfying. If you’re a fan of real, quality pizza, Oizaro is definitely worth a visit.",
+          "date": "2025-05-02T19:39:56.375Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNZd3Zld3B3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXnFzt2yZWQxuK2g7x1o3xFxpf3SeSFZPRwx5Ez2CSanzT4JVlBmg=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101226323181953784523?hl=en",
+          "reviewerNumberOfReviews": 152,
+          "sentiment": "positive"
+        },
+        {
+          "author": "mddesd mddesd",
+          "rating": 5,
+          "text": "Just like West Grey location they are amazing. Best pizza dough in town and probably best overall. And brilliant personalized service which knows what you ordered last time and within seconds have it going. Wonderful experience.",
+          "date": "2025-05-01T16:48:55.605Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNZbElXR0xnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJmGiuS-V-K3BvksEQYIK35qp7_WqLZH0UpIMUPOE12zQObcRG6=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108084981001915522342?hl=en",
+          "reviewerNumberOfReviews": 37,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Constantine Theocharidis",
+          "rating": 5,
+          "text": "",
+          "date": "2025-04-27T15:55:38.353Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURvcmE2X2RnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLLp5yLI1e1qp1j0ERWY2Fr10r-R-IQ4e_a26Eox_2rpoe50Q=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106299452705201848128?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kimberly Morrison",
+          "rating": 5,
+          "text": "All their pizzas are AMAZING, but our Go-To is the New York Meat Market.  I'm not sure what spices they use, but this is the best pizza I've ever tasted!\nThe store is clean and the employees are friendly.\nI'd give them 10 stars if I could!",
+          "date": "2025-04-24T18:13:43.459Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURvOW9LSnJnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXgIpTmd7icP2M3sZ89pmWtn4D9AdbSYaPWPeE4u6GqqyykJHE1=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101604350704237737087?hl=en",
+          "reviewerNumberOfReviews": 55,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mohammed",
+          "rating": 3,
+          "text": "Average",
+          "date": "2025-04-23T23:30:50.774Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURvbXVXLXpnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKOlgdmnKEPkRzy9JrWHt037xSUh8Zwkyo5Q-ue0Qi7rRU-vQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102119236240981174119?hl=en",
+          "reviewerNumberOfReviews": 26,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Honda Fireblade",
+          "rating": 5,
+          "text": "",
+          "date": "2025-04-21T10:02:20.203Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURva055OWVnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKWNiTCXPkDd8gfgCI-oUWORFDDAAFvVv4FRAVmnzXcbbY1wA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102383361586970541951?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Andrés Zilveti",
+          "rating": 5,
+          "text": "One of our favorite pizza places!",
+          "date": "2025-04-12T01:43:07.720Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURJallDUjJnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXKXQj1vGZD0LgkhAGBxNzHIJ3TjTWnNyLjvxi4hWNS06V2iP0N=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117699986642867500764?hl=en",
+          "reviewerNumberOfReviews": 66,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Christa D Higgins",
+          "rating": 5,
+          "text": "",
+          "date": "2025-04-08T20:38:24.717Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURJeXFQMXdnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVTRyUsltvdu6XHFZsX_iKaIH6wI8O_Dq03N1FFLnmH6p2O749j=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109888581562868237084?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "renzokuken1227",
+          "rating": 4,
+          "text": "Detroit style excellent thicc but nice and light.  didn't try the ny will have to next time . Caesar salad was good n garlicky",
+          "date": "2025-04-08T15:10:49.202Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURJc3J5eEJ3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKvybhOmD5-HtfmQKBdb1gbl3M6BLl4DE2WWAyA8iBTXdGga6k=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112677577773790848284?hl=en",
+          "reviewerNumberOfReviews": 31,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Virginia Gonzalez",
+          "rating": 5,
+          "text": "",
+          "date": "2025-03-28T13:22:14.418Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUR3dTlEZm1RRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL73DC6nVtW4RQhRptErejhhylTvYuz5mD3rciBgym_9iZGyw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106924768174167063623?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "francisco gimenez",
+          "rating": 5,
+          "text": "If you are looking for a good Neapolitan-style pizza, this is the place that is attentive and clean. It is not a luxury restaurant, it is to eat a pizza and be fascinated by its dough and its ingredients.",
+          "date": "2025-03-26T18:44:38.827Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURleGRpbk93EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKY5jOT-82umYgHz3YGfp3TKuGBcZZz93CL1ArmNDhtKjE00Q=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103172215003676694197?hl=en",
+          "reviewerNumberOfReviews": 55,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dion Shaqiri",
+          "rating": 5,
+          "text": "Great pizzas, we tried the Napoletana Style Pizza. Very delicious, the service is great. As soon as we walked in we were greeted and offered drinks for the kids so they don’t have to wait for us to look at the menu. It was our first time and definitely coming back. And I forgot to mention they have different styles of pizza. Give them a try!!",
+          "date": "2025-03-26T01:09:29.190Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUR3N3MzWEd3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocILxidERMrMuz2LKPPypMZRYLWcr1s5VzE--ihQKJMpJBIliA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104467855125613027477?hl=en",
+          "reviewerNumberOfReviews": 79,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Johnny Martinez",
+          "rating": 5,
+          "text": "5 stars is not enough! Atmosphere is chill, service is impecable, and Food is superb 👌🏽",
+          "date": "2025-03-23T04:00:10.345Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUR3eUpPbzJ3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUh4ymif0gffNVZDDG1Fi9LMOuEIUSdUDCGzvjqDmr24r6TQMXoBQ=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103864069798087477446?hl=en",
+          "reviewerNumberOfReviews": 217,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Trivik Krishnan",
+          "rating": 5,
+          "text": "",
+          "date": "2025-03-22T21:05:25.283Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUR3MExQaHJ3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV8eLby36ZiKQXb09umjjwVkMuUHRJBIm6RLfjY-rZnr-WlJBqFlA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104267062702388394197?hl=en",
+          "reviewerNumberOfReviews": 20,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Philip Zheng",
+          "rating": 5,
+          "text": "",
+          "date": "2025-03-15T12:39:41.012Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURRNzZqbzZBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUr2a88rfYsr11JN4Ix3gPc0FkixxYm7KKqk9awUsGVRlZIbXoS=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116909423906868669827?hl=en",
+          "reviewerNumberOfReviews": 82,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sebastien Serimontrikul",
+          "rating": 4,
+          "text": "",
+          "date": "2025-03-13T16:51:46.925Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURRdzYycG13RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXlojxIU-WZqyunq5aRMuQz9EtvcH-GdVcLVNwNpip_RAU6IiE=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104945024777466168100?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "aaleeba",
+          "rating": 5,
+          "text": "Good pie",
+          "date": "2025-03-12T19:36:46.004Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURRdGViY3VBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVzuSorh6QUUB1DjSu_marfm2LVFlJ0ZUu-8I50-Rhv7o6YQ24=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105471797421449721216?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Josh",
+          "rating": 5,
+          "text": "",
+          "date": "2025-03-09T01:01:36.323Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURReEtfOTdnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWqL1WUVysyLZrQeO9SsPJS7aZC8Q9ma9XTFHIb5itlkR-eM2at=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109928980830575699543?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "ROW CARMONA",
+          "rating": 5,
+          "text": "",
+          "date": "2025-03-06T02:03:50.341Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNRdWJPV0pREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJj2azKV0ZaZdY2-WYYSvY2kMEVhfUnt15sbwYDgni2KydQoQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115387313796654917145?hl=en",
+          "reviewerNumberOfReviews": 26,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jonathan T",
+          "rating": 5,
+          "text": "🌟Pizaro’s Pizza: The Best Pizza in the United States, Hands Down - from an Expert Pizza Reviewer 🍕\n\nPizaro’s Pizza is, without question, the best pizza restaurant I’ve ever been to—period. I’ve tried pizza from all over the country, hopping from one famous spot to the next across multiple states, and let me tell you: nothing comes close. Even my New York neighbors admit that Pizaro’s destroys anything they’ve had back home, which is saying something!\n\nWhat sets Pizaro’s apart? Everything is made from scratch—every single day. The pizza sauce is freshly made in-house, and all their ingredients are imported straight from Italy. We’re talking authentic, high-quality ingredients with no additives, just pure, bold flavors. This commitment to quality shines through in every bite.\n\nPizaro’s offers a range of styles—New York Style, Deep Dish, Neapolitan, and even incredible flatbreads. They also have unique experiences like date night packages where you can learn how to make pizza, but honestly, none of that matters to me as much as the food itself. It’s the most delicious pizza I’ve ever had in my life.\n\nIf you’re ordering, let me give you a pro tip: go for the New York Style pizza, extra sauce, and double regular pepperoni. Trust me on the extra sauce—Pizaro’s balances it perfectly. It’s not messy or overwhelming; it’s just the perfect addition to an already flawless pizza.\n\nYes, the pizzas here are more expensive than what you’d get at a chain like Domino’s or Papa John’s, but you’re not just paying for pizza—you’re paying for the BEST PIZZA ever and an unmatched experience. This is artisan pizza, the real deal, and worth every penny.\n\nThe difference between the quality at Pizaro’s vs anywhere else is basically the same as getting a Ferrari instead of a beat up Corolla… no joke\n\nPizaro’s beats every other pizza place in Houston without contest, and I’d go as far as to say it’s the best in the entire country. Come here once, and I promise you’ll never want pizza from anywhere else again.\n\nAlso, the pizza heats up really well the next day - can’t decide if I like it more the day of, or the next day. It’s just too good!",
+          "date": "2025-02-25T01:25:13.246Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUN2MTRPZk9BEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUKqHGkEashXC3ICJv0Vv7NInCNel6Vn_uPrbljPFjxNfwJ6tNXiw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118139082365235234051?hl=en",
+          "reviewerNumberOfReviews": 36,
+          "sentiment": "positive"
+        },
+        {
+          "author": "soylent green",
+          "rating": 5,
+          "text": "Best Pizza I have tried in Houston.\n\nA little pricey, but worth it.",
+          "date": "2025-02-22T03:34:11.404Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURnc01hSXZRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVSl6NqozRB35hn6W60YOf63ja3t2VW1a2T5Yt1PvalEe-7m7gF=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113902583788373769112?hl=en",
+          "reviewerNumberOfReviews": 175,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ricardo Videla",
+          "rating": 5,
+          "text": "",
+          "date": "2025-02-16T18:30:59.333Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNncHNuYmpBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVLr3TrsXVbP9COooOLciC8R1Z51s-FAad23v0BV02pInxPA3nh=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107917314226341683594?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jeff Danky",
+          "rating": 5,
+          "text": "Yesterday was my 1st day working I tried the bbq chicken deep dish and it was absolutely amazing incredible fantastic anything but mediocre bite into it it's like mmmm and then basil get your taste buds you like God damn and you just want to eat until you hurt yourself and get sleepy I must say some of the best pizza I ever had and you will get your money's worth you eat this pizza you would not look back at  Little Caesars, Papa John's Pizza Hut ,Nor Domino's or Pizza patron hands down🤣",
+          "date": "2025-02-14T07:20:23.859Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNneE8zaWZnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIZ9EmHvcNzVHSaa2WgnZVreB7ENFlPvRHN-j7a3d5YM-W-MQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100218157765216150877?hl=en",
+          "reviewerNumberOfReviews": 22,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dave Allen",
+          "rating": 5,
+          "text": "",
+          "date": "2025-02-12T18:49:48.152Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURBejhPT0ZnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIi07MfMnV7QASjr_-9iAMCmgFi1cVCU8oy689vCMSxk7yCBg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111979296961320283733?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Joe C",
+          "rating": 5,
+          "text": "I’m writing to review both the Pizaro’s Pizza restaurant and Pizza University. I’ve been coming to the restaurant for several years. Everything you can try is delicious. You won’t be disappointed. Recently I attended, 2, Pizza university classes about very specific pizza doughs, sauces and cheese. Nicole, the owner and professor for Pizza University, was fantastic. She delivered everything she promised for the cost, which was a great fair value. I wouldn’t hesitate to eat at the restaurant or take another class. It’s enjoyable, you’ll learn a lot and you even bring home some food. Thanks Nicole for all you did. I’ll be seeing you and your husband when I’m there to eat or perhaps even a class covering something else we didn’t have time for.",
+          "date": "2025-02-10T13:18:43.751Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURBeGVuQ3FBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK9YtWpuimyjFRJDpOgL1sfR-Oufl4vNhVIXHL8Fc8FF4s8Yg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100747704536845848489?hl=en",
+          "reviewerNumberOfReviews": 54,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sanjana K",
+          "rating": 4,
+          "text": "",
+          "date": "2025-02-10T04:27:53.567Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURBcWYtQkJ3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVM95KfzyhIRvMHRs5H8w9Yc84ABsUPegGJpAPYdcuRk-h0qF4KYg=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108606733696964710808?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Christopher Wood",
+          "rating": 5,
+          "text": "",
+          "date": "2025-02-10T03:26:41.941Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURBcWV6UlFBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJIfjMzrmiRXnXmLKbJ-D95ZQprOcVTuPbqieoBLKxk2d7Zwg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101837657660789687290?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "aaron noama",
+          "rating": 5,
+          "text": "Great customer service great food highly recommended",
+          "date": "2025-02-04T20:01:52.041Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNBLTRfeTl3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKcTwaHqBVpP8A-xEorIZaT5wCL6uhN_NUFQk-smZFAomEysg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109059881273646521005?hl=en",
+          "reviewerNumberOfReviews": 14,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Natalie Williams",
+          "rating": 5,
+          "text": "Best pizza I’ve had so far!!",
+          "date": "2025-01-31T20:36:34.154Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNBanZTcDVnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWYjtGk8m0VVd2YnU-jiPKYkh5t0xBZa48sT4dTuoUl8ySs-p1alQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115831840442931452776?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Helen Dupree",
+          "rating": 5,
+          "text": "Absolutely the best pizza I’ve ever had. Wow. The ingredients are fresh!!!  What an incredible flavor!\nCustomer service is top notch.\nAlana is THE BRAND AMBASSADOR for an exceptional first experience.\nWe will be back!!  ♥️",
+          "date": "2025-01-30T02:27:41.737Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNBckx5aElnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVmZeEwIpqNgNayJeE_eded2O5-oIujE6JvvclJcC4sMS-qdCv0jQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108115665341940966479?hl=en",
+          "reviewerNumberOfReviews": 146,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mahesh",
+          "rating": 5,
+          "text": "The pizza was great, staff were friendly and we were pleasantly surprised at how great the location was. Would definitely come back",
+          "date": "2025-01-19T05:52:31.033Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNfbTRXMFZREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVtqVnPo9aVLf04IdXA_JLVgiFjvbFwIrSd-CEo63-rym46QnmIgA=s1920-c-rp-mo-ba7-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112688877797900631049?hl=en",
+          "reviewerNumberOfReviews": 142,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Rouga Omidi",
+          "rating": 5,
+          "text": "This is our family favorite!! They have the very best pizza!!\n\nGreat service and support their community in incredibly meaningful ways ❤️❤️❤️\n\nmy favorite is the patata e funghi!! It’s amazing and my husband loves the Detroit style pizzas. They also have lovely salads. Super family friendly for dining in and easy for picking up.\n\nI have heard wonderful things about their pizza classes",
+          "date": "2025-01-18T21:54:28.243Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNfMDYtaW9RRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXWL8v4i2xyZ3TO4X7CULNmJR_SQXALSwwcxDIZnGlBgHicIRT8=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100324857526868005212?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Andrew Brickell",
+          "rating": 5,
+          "text": "",
+          "date": "2025-01-13T19:48:48.005Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNpM0xHQkx3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXKufaL73B_QJ_nkPYGWn3uu8HbQUQwdd8H-xS3nJcQKFbYxaUr=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104256813866171315326?hl=en",
+          "reviewerNumberOfReviews": 189,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Burak Emekli",
+          "rating": 5,
+          "text": "Best pie in Houston hands down! Just like back home in NY",
+          "date": "2025-01-07T02:07:06.330Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURmeHNQYXlBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUzFdeveVEn8X-vu50ZUAIX-a_yFRf6X8toC3NoaEfCVXZ1cOSS=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103175691730379633316?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dayle Pugh",
+          "rating": 5,
+          "text": "It's been a great restaurant for a long time.",
+          "date": "2025-01-06T13:37:19.311Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURmam9DcWR3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLf6uHUS6Z7mz-pe5M0owDGxV1fi0pFC0XyFtZcOI6Mv9bGHQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117435163269880855324?hl=en",
+          "reviewerNumberOfReviews": 30,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Andrina Stewart",
+          "rating": 5,
+          "text": "Great pizza! Everything I have tasted here has been delicious! Love the margarita pizza and they have a great lunch special deal.",
+          "date": "2025-01-06T03:24:10.574Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURmcHFubXZBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWtiZkV5GYBJSlKWyNRDgV0Q1RsTJKBAk_nuYF9L_uZBXTjLxE2iA=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109009998482121274152?hl=en",
+          "reviewerNumberOfReviews": 192,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tania “TiiTii” O",
+          "rating": 5,
+          "text": "This is one of the best pizza places I have tasted in Houston. Their NY style is amazing. pizza crust is just right not too thick and most importantly crispy from the bottom and the crust. Menu is simple and to the point.",
+          "date": "2024-12-27T02:31:25.906Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNmM01MbVB3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV-PSAGskrGL2r5kFOSNu6nZCzszHZEdnVdPGow_MXqzXJ_wrhV=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111443625247077176393?hl=en",
+          "reviewerNumberOfReviews": 54,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Gabriela Barros",
+          "rating": 5,
+          "text": "Pizza is some of the best we’ve had in Houston",
+          "date": "2024-12-19T00:53:06.498Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUR2NHVlYWxRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWexphzT7S9YLX_vFuHiow5zxGlkGuJyxxV-_q45WjMXmrmW3o7=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108853729696147502293?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jamz Banron",
+          "rating": 2,
+          "text": "Paid 37$ for a small pizza that once delivered was moist and soggy and couldn’t even be held without falling apart. Pictures look amazing, but the pizza was disappointing for the price.",
+          "date": "2024-12-18T00:11:22.958Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR2MUlxQ0NREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV_TwIokGJ0isHzI1QbFKl8xCM9IUi1AmBhUZGe1WY4JpgLcTp_=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107205024067585086381?hl=en",
+          "reviewerNumberOfReviews": 49,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Brendan G",
+          "rating": 5,
+          "text": "",
+          "date": "2024-12-08T04:19:33.147Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUN2eExIdWV3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUjHhzNpW-Fzi74gfOStBCQHfhjODD3pIkKy2bT4MsSO1VpcowX=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106596563962710563962?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Max Artero",
+          "rating": 5,
+          "text": "We had a margherita and a clabrese. Both delicious. Sauce was the best part. 10/10. Would be coming back to try their Detroit style and their NY style pizzas.",
+          "date": "2024-12-07T23:30:39.334Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUN2LUpDcFF3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIdiI7NVc9pU5IN4QzC5KD30jx2rS19T-SC8QafiUMnGQFWGg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105013262895112359107?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Bridget",
+          "rating": 5,
+          "text": "Best pizza in Htown.",
+          "date": "2024-12-01T19:07:25.742Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURQcG9YOTZ3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXMNn6czbqwXS2mCuzFYKmXPIDcpYZ-e1BvE5Sq0MmDGFyq5C2NCw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117225953807523761265?hl=en",
+          "reviewerNumberOfReviews": 143,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Christina M",
+          "rating": 5,
+          "text": "Nov 30, 2024 update\nI certainly don't come here enough! Since the first time I experienced pizza from Pizaro's, I have brought my aunt, my younger sister, and on this most recent visit, my older sister. On her first bite, she says, \"Oh, this is good!\" Enough said. Unfortunately, for her Idaho doesn't have a restaurant that i know of that comes close to the quality and taste of Pizaro's. Love you guys!\n\nMarch 2024\nIf you currently love your favorite pizza place and you haven't tried Pizaro's, then you are in for a treat! This place has the best quality, most delicious, and yummy pizza I have ever tasted in the USA. I only wish for one thing, more Pizaro's pizza locations. Warning: After trying Pizaro's Pizza, you will be disappointed in 2 things, 1) There are few locations, and 2) that your current favorite pizza place will be mediocre compared to Pizaro's. Sorry, not Sorry. This is THE BEST PIZZA I'VE EVER HAD!!!!",
+          "date": "2024-12-01T02:57:03.666Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQ5bWNyNUFnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXb3EQex27alUm9oEQN99YlIyaQcdReKcY-0zB7fXi0n3yhCsJ8=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115540420152725876387?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Rebecca Brown",
+          "rating": 5,
+          "text": "I'm visiting from little ol Idaho and I am hooked. We had a napoletana pizza with some added toppings. I loved it was so quick to make and soooooo divine! Such yummy pizza crust, sauce, and toppings. We ate this pizza so fast, even my little niece snatched the coveted last piece. Was wondering how it would reheat, but nobody at our table knew, because there's never leftovers.  I don't know what I'm going to do in Idaho, because this is all the pizza I will ever want from now on! YUMMY!",
+          "date": "2024-12-01T02:49:00.460Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURQcXNEZk5BEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWAS3SHBQbk9_0t01x7BR_9FOoKXSWqphUyiMW700KpV3wwUZH5_A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103001318992371280616?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Shauna Riley",
+          "rating": 5,
+          "text": "Best pizza in town!",
+          "date": "2024-11-24T18:02:21.084Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNQbnEyZXJnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUVDElabbTrEtTz-HK0ZTRv5RQ2lJAAVEvH35AZZyVtMEVFZDUw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107513992063143047127?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Óscar López",
+          "rating": 4,
+          "text": "Meilleur pizza du coin, des ingrédients  de qualités ,savoureux et un prix juste !",
+          "date": "2024-11-22T12:11:17.659Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNQdk8tMFNREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLCJVOfIojeqvYpQv1o2zdu27yPQqdG8Kppob65ND6m5lVS5A=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108946269824364957012?hl=en",
+          "reviewerNumberOfReviews": 47,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kay 92 Michelle",
+          "rating": 5,
+          "text": "Clean, friendly and efficient.",
+          "date": "2024-11-19T21:07:05.821Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQzMThIakN3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJSELnm--KkPCMqug_0rcmIIWclocTZOZbtrhOpM8abJshPKQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113312128857019256464?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Gibby",
+          "rating": 3,
+          "text": "Pizza was disappointing.  I had high hopes. The Detroit style was undercooked and the NY style was so under seasoned. Not one Italian herb or spice there. The sauce is really sweet and just overpowers everything.",
+          "date": "2024-11-18T02:36:19.200Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQzdlpHT0JBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWLKWH-E9DWEWY3-kU7CUj-tydIM7i8RLvLS0b4GbA6UistR7ZTsg=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104432540850949078940?hl=en",
+          "reviewerNumberOfReviews": 856,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Serge R (IAHGVA)",
+          "rating": 5,
+          "text": "I love the true Neapolitan pizzas at Pizaro but I only take them as take out as the seating area is not really welcoming. But the pizzas are awesome!!!!",
+          "date": "2024-11-11T01:19:56.963Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN4M2I2N3l3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWLDMWxtWrxOtj4jG_HpPUtEfYNxoGKm20h7tIORKFXkHc6LN0=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106690426368780690420?hl=en",
+          "reviewerNumberOfReviews": 233,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Liz S",
+          "rating": 4,
+          "text": "Really good pizza, and they have the much menu: small pizza + salad, it is wonderful.",
+          "date": "2024-11-03T17:02:08.758Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUMzN0llUGZ3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWpQJ6NLRMPMQ1mfLzwEunhliShifhTQhHVvRXgCi754h9GgoeZUA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111178192674259783214?hl=en",
+          "reviewerNumberOfReviews": 82,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Udayan Dutta",
+          "rating": 5,
+          "text": "",
+          "date": "2024-10-31T00:51:55.181Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURYOC1pd3h3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI_k_4Gsjr98E_hZOVS4golCCQj8CdUZ2drdqJx3-SVQUzCxQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102048137207402735458?hl=en",
+          "reviewerNumberOfReviews": 27,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Andie Andie",
+          "rating": 5,
+          "text": "This is the first time that I've had authentic pizza, it was delicious!  There are so many choices.   The service was great! I will definitely be back.",
+          "date": "2024-10-24T16:50:20.805Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURYMU5MY0VREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLGcEspunZhfY5jhCDY1S55gR_I_HB5KRl65t5gUAlltpocEKs=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108287173574305393273?hl=en",
+          "reviewerNumberOfReviews": 80,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Maria Elena S",
+          "rating": 5,
+          "text": "We were looking for a place with outdoor seating.  You order at the counter and the food is brought to you.  My brother ordered a family size vegetarian Detroit style pizza. The dough is delicious and so is the marinara sauce.  You are brought plates.  But you have to get your drinks, silverware and napkins on the side of the restaurant.  They have some bottled and canned refrigerated drinks next to the cashier.  My Mom ordered a canoli.  She said it was ok. They have a lunch special for about $11.  It includes a small pizza.  Too bad they don't have pizza by the slice.",
+          "date": "2024-10-20T14:31:41.132Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNYeS03MUhnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWSBJ_lWKKmg51Md6X6GaVJIcQHiTq77aPzHWTXxaUppb-vHXbdIA=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103681613425668096442?hl=en",
+          "reviewerNumberOfReviews": 118,
+          "sentiment": "positive"
+        },
+        {
+          "author": "David A",
+          "rating": 5,
+          "text": "",
+          "date": "2024-09-29T02:07:54.039Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNuX2ZqYWFBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLGiVI4xFQYFLrsxDGtFEhKDxm0Ry8QVm_k9rZAzY2gbmOUrw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100404935738769306900?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ben Jocz",
+          "rating": 5,
+          "text": "This pizza is so good. And on top of that they are able to deliver gluten free pizza with 9 options (the GF options are all done Detroit Style which is the square shaped pan pizza that’s got a good amount of breading) and they take the prep seriously.\n\nIf you’ve got a taste for a bit more jalapeño than you’d normally find in a pizza place, the Vesuvius  is my absolute favorite.\n\nThis is not a bargain pizza shop so the food does cost money, but it is well worth it in my opinion.\n\nThank y’all for providing a delicious gluten free option.",
+          "date": "2024-09-28T22:13:43.545Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNuM1pIN25BRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUkrSVUWM61_VxB_sMtCWPCmroU54oTSPlqILGtKrtuaGiVoGo=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112789943234935445975?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Reinaldo Medina",
+          "rating": 5,
+          "text": "I was impressed of the taste of the Napoletana pizza. It was great and with real Italian flavor. Nice job guys!",
+          "date": "2024-09-15T21:51:06.111Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURIOXR1VnZnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWsPUV8qK6Rw1uLhTu0bCkYYCzhUtNZM_9b6csz7lndkhxk7Bog=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115247617255235870307?hl=en",
+          "reviewerNumberOfReviews": 77,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Scott Thomas",
+          "rating": 4,
+          "text": "",
+          "date": "2024-09-15T04:24:00.867Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURILXRLZ3FnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXBJOwD8_ysmCXD1_AyBgyhWgLPrM57az6A5LURx-qfZn3AQznr=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110014960599148396898?hl=en",
+          "reviewerNumberOfReviews": 41,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kurt",
+          "rating": 4,
+          "text": "This 🍕 is the best you can get in Houston (not saying a ton I know). If they were located in Brooklyn people would say it’s a legit pie. I’ve had all the best in Brooklyn including Di Fara’s (RIP Dom). Houston has very few truly good pizzas. Maybe 3 at best if you count Gypsy Poet. Home Slice comes in at a more distant 2nd 🥈place. It’s definitely good too. But Pizaro’s FTW! 🙌🏼 Only dinged them on service because sometimes they’re randomly closed and the counter clerk is confused.",
+          "date": "2024-09-14T01:04:14.134Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURIb3R5cVF3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVizvWPAyrS6-SJWcG4vx5xm5srGo4hhRlMEU8aLsEa7thSEhgc=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113311392991686393695?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Julien Merlin",
+          "rating": 5,
+          "text": "Best pizza I’ve had so far in Houston!",
+          "date": "2024-09-08T17:59:50.204Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNIODlibmJBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVryuHRsGiED9hz5VJBAaLlfcYSIm1Yx_sMNfhZb6kGSBkdciI=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114458069757448247879?hl=en",
+          "reviewerNumberOfReviews": 58,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Poorvi Pandey",
+          "rating": 3,
+          "text": "",
+          "date": "2024-08-23T00:57:46.836Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQ3c3NLRzBBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXuR5qP0xAJ0-v63iIT22daRcdDXi5CEWp5Wp1X7I6bXBBG73yD=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117764702570675700684?hl=en",
+          "reviewerNumberOfReviews": 23,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Greg Norris",
+          "rating": 5,
+          "text": "Despite an unassuming location, easily one of Houston's best pizza places.",
+          "date": "2024-08-18T21:48:24.012Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUM3bDhmeVNnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVdSlCqPn13dlkSgnjCe41IdjkEaupAI0Wu518-SkvFyRzZ0Sy4lQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102899405110293324383?hl=en",
+          "reviewerNumberOfReviews": 93,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ali Moukdad",
+          "rating": 5,
+          "text": "",
+          "date": "2024-08-16T22:59:44.931Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUM3NmVuMXN3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVyvQT9y74jJqCO39UvIyAf81LjDA9nZhSe38W60vYZBfIW1rXy=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109895416854305891277?hl=en",
+          "reviewerNumberOfReviews": 46,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Alexander Parra",
+          "rating": 5,
+          "text": "I really like food , delicious. Organic pizza",
+          "date": "2024-08-16T04:10:08.710Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUM3dnNLcTB3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW4MN7skfs4svUajf1x2JYUyv62DgBl6vjGPkxAzxlNeMgdMrgk=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112806343941247540997?hl=en",
+          "reviewerNumberOfReviews": 37,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Giovanni Bonilla",
+          "rating": 5,
+          "text": "Buona Pizza",
+          "date": "2024-08-16T01:35:56.767Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUM3bnVlNUlBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXyWJPCa69ItSX3VRWhXeXdiv6yGOHwJtsGhw1xP5u5uHhvmaO-=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101548710737448956032?hl=en",
+          "reviewerNumberOfReviews": 136,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Rasheed Hassanien",
+          "rating": 5,
+          "text": "",
+          "date": "2024-08-15T21:32:56.257Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUM3cnZfcVFnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKB3Cz998HTy_nPihkjs7rLEedcZGqxTP991dwj_TEaTeNvRQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106061915897865837955?hl=en",
+          "reviewerNumberOfReviews": 143,
+          "sentiment": "positive"
+        }
+      ],
+      "customerMoodAnalysis": {
+        "overallMood": "delighted",
+        "sentimentSummary": "Customers are genuinely thrilled with their experience. With an average 4.7/5 rating across 100 recent reviews, your restaurant consistently exceeds expectations.",
+        "sentimentDistribution": {
+          "ecstatic": 13,
+          "delighted": 73,
+          "satisfied": 9,
+          "neutral": 1,
+          "frustrated": 0,
+          "disappointed": 3,
+          "angry": 1
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "food quality",
+            "mentions": 34
+          },
+          {
+            "theme": "service excellence",
+            "mentions": 7
+          },
+          {
+            "theme": "speed of service",
+            "mentions": 5
+          },
+          {
+            "theme": "cleanliness",
+            "mentions": 4
+          },
+          {
+            "theme": "overpriced",
+            "mentions": 4
+          },
+          {
+            "theme": "value for money",
+            "mentions": 2
+          },
+          {
+            "theme": "slow service",
+            "mentions": 2
+          },
+          {
+            "theme": "atmosphere",
+            "mentions": 1
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 30,
+          "satisfaction": 44,
+          "disappointment": 4,
+          "frustration": 0,
+          "anger": 0
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "Customers love the perfect crust and fresh ingredients in the Neapolitan and Detroit-style pizzas, making each bite packed with flavor. - social media marketing can showcase this strength",
+            "The restaurant offers a variety of pizza styles, including gluten-free options, catering to diverse customer preferences. - SEO services can leverage this for better visibility",
+            "Friendly and fast service is consistently praised by customers, enhancing their overall dining experience. - review management can highlight this positive aspect"
+          ],
+          "improvementOpportunities": [
+            "Negative reviews about pizza quality and value for money - review management can address this concern",
+            "Inconsistent service and unexpected closures - Boostly marketing services can improve this",
+            "Poor online visibility and competition with other local pizzerias - SEO services can solve this visibility issue"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 100,
+          "averageRating": 4.7,
+          "ratingDistribution": {
+            "1": 3,
+            "2": 1,
+            "3": 4,
+            "4": 8,
+            "5": 84
+          },
+          "sentimentTrends": {
+            "trend": "declining",
+            "recentAverageRating": 4.3,
+            "previousAverageRating": 4.7,
+            "recentReviewsCount": 10
+          }
+        }
+      },
+      "examples": {
+        "positive": [
+          {
+            "author": "Brandy Swagger",
+            "rating": 5,
+            "text": "Love this place! Great service and great food!",
+            "date": "2025-09-07T22:52:43.289Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT205UFZrbExiaTFJUzBaMVRuSjJPRWhZZDFnNVFXYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVUc3ahWhwMHXynNj4heIWgeQz8Gv7mDn5cEkbch1z3HtyLvUkS=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/113885359503734746601?hl=en",
+            "reviewerNumberOfReviews": 36
+          },
+          {
+            "author": "Pedro J. Palacios R.",
+            "rating": 5,
+            "text": "The best pizza around! Also excellent and friendly\nservice",
+            "date": "2025-08-31T20:04:18.321Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pCM2IxZFNkMlZtVTBwMWNqVXdXVGMzWlV4U1pWRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUHR6AQSSby_9l0QizDT4q9Rcn_0hHXjc_vDxN9GX6GLoM5MDkM=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/117281785728708077826?hl=en",
+            "reviewerNumberOfReviews": 9
+          },
+          {
+            "author": "Vijetha Sreerama",
+            "rating": 5,
+            "text": "Always 5/5 experience.\nPizza is wonderful as per usual. Neopolitan is my favorite - the crust is just perfect!\nIn house ranch is a must, as well as the Calabrian chili! (Pro tip: if you save your crust to the end, mix the Calabrian chili with some ranch and use as a dipping sauce - though I definitely do this for the rest of the pizza too!)",
+            "date": "2025-08-22T20:58:00.574Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tZeVlqUm1aMWxUYVRJM1FWOTZjRVZXZUdWMFIyYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWS53vOjd7SBiEYOu-dv2-wJBZ7daBRWzcw8xcpji2kpgLszmlEVA=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/116136330539725211962?hl=en",
+            "reviewerNumberOfReviews": 31
+          }
+        ],
+        "neutral": [
+          {
+            "author": "M Dunn",
+            "rating": 3,
+            "text": "",
+            "date": "2025-07-29T00:42:25.603Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT201TFQzb3hWall0Tkc5NFdXTm5NM0JpZW5Ka1duYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIiqXMYYVD8vrFCedtLtBZ8LT2WdRUXXiT783hPLHPuTN8odQ=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/108908912829951317289?hl=en",
+            "reviewerNumberOfReviews": 36
+          },
+          {
+            "author": "Mohammed",
+            "rating": 3,
+            "text": "Average",
+            "date": "2025-04-23T23:30:50.774Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURvbXVXLXpnRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKOlgdmnKEPkRzy9JrWHt037xSUh8Zwkyo5Q-ue0Qi7rRU-vQ=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/102119236240981174119?hl=en",
+            "reviewerNumberOfReviews": 26
+          },
+          {
+            "author": "Gibby",
+            "rating": 3,
+            "text": "Pizza was disappointing.  I had high hopes. The Detroit style was undercooked and the NY style was so under seasoned. Not one Italian herb or spice there. The sauce is really sweet and just overpowers everything.",
+            "date": "2024-11-18T02:36:19.200Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQzdlpHT0JBEAE",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWLKWH-E9DWEWY3-kU7CUj-tydIM7i8RLvLS0b4GbA6UistR7ZTsg=s1920-c-rp-mo-ba6-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/104432540850949078940?hl=en",
+            "reviewerNumberOfReviews": 856
+          }
+        ],
+        "negative": [
+          {
+            "author": "Julie Johnson",
+            "rating": 1,
+            "text": "I ordered a magherita 12 inch pizza. I received a lukewarm pizza with 8 - 1 inch X 1.5 inch cubes of mozzarella and they weren’t melted with a lot of sauce and a couple of sprinkles of basil. To spend close to $20. I could've made better pizza at home.",
+            "date": "2025-08-09T19:59:28.615Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21oU1lrcG9VSHBCWHpSRmNFRXlWblYwYTBNeVRVRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKG5GvgzVJ8rr13IA20faUBdZawQkulakHbuvsgBc22buTbGw=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/105873424083414516696?hl=en",
+            "reviewerNumberOfReviews": 1
+          },
+          {
+            "author": "Tony Kessler",
+            "rating": 1,
+            "text": "The pizza was horrible too expensive. I’ve had better frozen pizzas.",
+            "date": "2025-05-30T00:26:35.146Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VOdWJwYzJJbTVEVGpRRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKDst3EcamttSi4wv_PqVxPkuMou-aZA-OuIWxA3k8pih971A=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/113990116733906026075?hl=en",
+            "reviewerNumberOfReviews": 2
+          },
+          {
+            "author": "Mike Pryor",
+            "rating": 1,
+            "text": "",
+            "date": "2025-05-17T02:04:38.154Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJZUd0Y1BROU1pTDFnRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUh0r0TAxV-e002gl6V47IbfJUpMibNRAYlETQhbxyy9JMXpcM=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/114425582570058938120?hl=en",
+            "reviewerNumberOfReviews": 10
+          }
+        ]
+      },
+      "trends": {
+        "ratingTrend": "stable",
+        "volumeTrend": "stable",
+        "responseRate": 0,
+        "averageResponseTime": "No responses"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ]
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/pizarospizzanapoletanai",
+      "instagram": "https://www.instagram.com/pizarospizzanapoletanai",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 68,
+      "social": 100,
+      "local": 54,
+      "reviews": 93,
+      "overall": 79
+    },
+    "originalScores": {
+      "seo": 81,
+      "overallScore": 76,
+      "performance": 86,
+      "userExperience": 76
+    },
+    "migratedAt": "2025-09-16T00:37:21.218Z"
+  },
+  "metadata": {
+    "cachedAt": "2025-09-15T19:50:59.555Z",
+    "expiresAt": "2025-10-15T19:50:59.555Z",
+    "placeId": "ChIJ22kZXmTbQIYROUvM8FHXbtw",
+    "restaurantName": "Pizaro's Pizza Napoletana I",
+    "cacheVersion": "2.0.0"
+  }
+}

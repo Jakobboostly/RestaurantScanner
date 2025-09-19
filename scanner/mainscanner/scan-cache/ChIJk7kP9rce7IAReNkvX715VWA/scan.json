@@ -1,0 +1,1253 @@
+{
+  "data": {
+    "domain": "www.lompocpizzagarden.com",
+    "restaurantName": "Pizza Garden",
+    "placeId": "ChIJk7kP9rce7IAReNkvX715VWA",
+    "overallScore": 81,
+    "performance": 100,
+    "seo": 66,
+    "mobile": 64,
+    "userExperience": 82,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "pizza near me",
+        "position": 8,
+        "searchVolume": 880,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://lompocpizzagarden.com/",
+        "title": "Lompoc Pizza Garden - Pizza, Restaurant, Pizza Delivery",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery Lompoc",
+        "position": 2,
+        "searchVolume": 30,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://lompocpizzagarden.com/",
+        "title": "Lompoc Pizza Garden - Pizza, Restaurant, Pizza Delivery",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best pizza Lompoc",
+        "position": 4,
+        "searchVolume": 30,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://lompocpizzagarden.com/",
+        "title": "Lompoc Pizza Garden - Pizza, Restaurant, Pizza Delivery",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza",
+        "position": 8,
+        "searchVolume": 1000,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://lompocpizzagarden.com/",
+        "title": "Lompoc Pizza Garden - Pizza, Restaurant, Pizza Delivery",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza places near me",
+        "position": 6,
+        "searchVolume": 40,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://lompocpizzagarden.com/",
+        "title": "Lompoc Pizza Garden - Pizza, Restaurant, Pizza Delivery",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza Lompoc California",
+        "position": 3,
+        "searchVolume": 590,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://lompocpizzagarden.com/",
+        "title": "Lompoc Pizza Garden - Pizza, Restaurant, Pizza Delivery",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery near me",
+        "position": 7,
+        "searchVolume": 110,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://lompocpizzagarden.com/",
+        "title": "Lompoc Pizza Garden - Pizza, Restaurant, Pizza Delivery",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza open now",
+        "position": 2,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://lompocpizzagarden.com/",
+        "title": "Lompoc Pizza Garden - Pizza, Restaurant, Pizza Delivery",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 63,
+        "keywords_appeared": 5,
+        "total_keywords": 8,
+        "average_position": 3.6,
+        "best_position": 1
+      },
+      "keyword_results": [
+        {
+          "keyword": "pizza near me",
+          "found": true,
+          "position": 4,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Pizza Garden",
+            "address": "Lompoc, CA ",
+            "website": "http://www.lompocpizzagarden.com/",
+            "phone": "(805) 736-9999",
+            "rating": 4.3,
+            "reviews": 353
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Bravo Pizza - Lompoc",
+              "address": "Lompoc, CA ",
+              "website": "https://www.bravopizzadelivery.com/",
+              "rating": 4.5,
+              "reviews": 202
+            },
+            {
+              "position": 2,
+              "name": "Fatte's pizza Of Lompoc",
+              "address": "Lompoc, CA ",
+              "website": "http://fatteslompoc.com/",
+              "rating": 4.2,
+              "reviews": 83
+            },
+            {
+              "position": 3,
+              "name": "Eye on I",
+              "address": "Lompoc, CA ",
+              "website": "http://theeyeoni.com/",
+              "rating": 4.6,
+              "reviews": 203
+            }
+          ]
+        },
+        {
+          "keyword": "pizza",
+          "found": true,
+          "position": 1,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Pizza Garden",
+            "address": "Lompoc, CA ",
+            "website": "http://www.lompocpizzagarden.com/",
+            "phone": "(805) 736-9999",
+            "rating": 4.3,
+            "reviews": 353
+          },
+          "competitors": []
+        },
+        {
+          "keyword": "best pizza Lompoc",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Bravo Pizza - Lompoc",
+              "address": "Lompoc, CA ",
+              "website": "https://www.bravopizzadelivery.com/",
+              "rating": 4.5,
+              "reviews": 202
+            },
+            {
+              "position": 2,
+              "name": "Eye on I",
+              "address": "Lompoc, CA ",
+              "website": "http://theeyeoni.com/",
+              "rating": 4.6,
+              "reviews": 203
+            },
+            {
+              "position": 3,
+              "name": "Wild West Pizza & Grill",
+              "address": "Lompoc, CA ",
+              "website": "http://wildwestpizza.menu/",
+              "rating": 4.3,
+              "reviews": 452
+            }
+          ]
+        },
+        {
+          "keyword": "pizza delivery near me",
+          "found": true,
+          "position": 5,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Pizza Garden",
+            "address": "Lompoc, CA ",
+            "website": "http://www.lompocpizzagarden.com/",
+            "phone": "(805) 736-9999",
+            "rating": 4.3,
+            "reviews": 353
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "South Side Coffee Co",
+              "address": "Lompoc, CA ",
+              "website": "https://m.facebook.com/southsidecoffeecompany/",
+              "rating": 4.7,
+              "reviews": 685
+            },
+            {
+              "position": 2,
+              "name": "O'Cairns Bistro",
+              "address": "Lompoc, CA ",
+              "website": "http://www.ocairnsbistro.com/",
+              "rating": 4.3,
+              "reviews": 19
+            },
+            {
+              "position": 3,
+              "name": "Fatte's pizza Of Lompoc",
+              "address": "Lompoc, CA ",
+              "website": "http://fatteslompoc.com/",
+              "rating": 4.2,
+              "reviews": 83
+            }
+          ]
+        },
+        {
+          "keyword": "pizza Lompoc California",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Fatte's pizza Of Lompoc",
+              "address": "Lompoc, CA ",
+              "website": "http://fatteslompoc.com/",
+              "rating": 4.2,
+              "reviews": 83
+            },
+            {
+              "position": 2,
+              "name": "Bravo Pizza - Lompoc",
+              "address": "Lompoc, CA ",
+              "website": "https://www.bravopizzadelivery.com/",
+              "rating": 4.5,
+              "reviews": 202
+            },
+            {
+              "position": 3,
+              "name": "Mi Amore Pizza and Pasta",
+              "address": "Lompoc, CA ",
+              "website": "https://www.miamorepizza.com/",
+              "rating": 4.3,
+              "reviews": 827
+            }
+          ]
+        },
+        {
+          "keyword": "top pizza Lompoc",
+          "found": true,
+          "position": 5,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Pizza Garden",
+            "address": "Lompoc, CA ",
+            "website": "http://www.lompocpizzagarden.com/",
+            "phone": "(805) 736-9999",
+            "rating": 4.3,
+            "reviews": 353
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Bravo Pizza - Lompoc",
+              "address": "Lompoc, CA ",
+              "website": "https://www.bravopizzadelivery.com/",
+              "rating": 4.5,
+              "reviews": 202
+            },
+            {
+              "position": 2,
+              "name": "Eye on I",
+              "address": "Lompoc, CA ",
+              "website": "http://theeyeoni.com/",
+              "rating": 4.6,
+              "reviews": 203
+            },
+            {
+              "position": 3,
+              "name": "Fatte's pizza Of Lompoc",
+              "address": "Lompoc, CA ",
+              "website": "http://fatteslompoc.com/",
+              "rating": 4.2,
+              "reviews": 83
+            }
+          ]
+        },
+        {
+          "keyword": "pizza restaurant near me",
+          "found": true,
+          "position": 3,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Pizza Garden",
+            "address": "Lompoc, CA ",
+            "website": "http://www.lompocpizzagarden.com/",
+            "phone": "(805) 736-9999",
+            "rating": 4.3,
+            "reviews": 353
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Mi Amore Pizza and Pasta",
+              "address": "Lompoc, CA ",
+              "website": "https://www.miamorepizza.com/",
+              "rating": 4.3,
+              "reviews": 827
+            },
+            {
+              "position": 2,
+              "name": "Eye on I",
+              "address": "Lompoc, CA ",
+              "website": "http://theeyeoni.com/",
+              "rating": 4.6,
+              "reviews": 203
+            }
+          ]
+        },
+        {
+          "keyword": "pizza food Lompoc",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Bravo Pizza - Lompoc",
+              "address": "Lompoc, CA ",
+              "website": "https://www.bravopizzadelivery.com/",
+              "rating": 4.5,
+              "reviews": 202
+            },
+            {
+              "position": 2,
+              "name": "O'Cairns Bistro",
+              "address": "Lompoc, CA ",
+              "website": "http://www.ocairnsbistro.com/",
+              "rating": 4.3,
+              "reviews": 19
+            },
+            {
+              "position": 3,
+              "name": "Loubird's Food",
+              "address": "\"Amazingly delicious pizza , incredible catering service!\" ",
+              "website": "https://www.loubirdsfood.com/",
+              "rating": 5,
+              "reviews": 3
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"best pizza Lompoc\", \"pizza Lompoc California\", \"pizza food Lompoc\" - optimize Google My Business profile with these keywords",
+        "Ranking below #1 for 4 keywords - increase customer reviews and engagement to improve rankings"
+      ],
+      "scan_metadata": {
+        "location": "Lompoc,California,United States",
+        "timestamp": "2025-09-15T12:34:38.771Z",
+        "total_scan_time_ms": 50077
+      }
+    },
+    "competitors": [
+      {
+        "name": "Flare",
+        "domain": "flare.com",
+        "performance": 88,
+        "seo": 79,
+        "accessibility": 75,
+        "bestPractices": 84,
+        "overallScore": 81,
+        "rating": 4.4,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 588,
+        "keywords": 36,
+        "domainAuthority": 75,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+50 keywords",
+        "authorityGap": 1,
+        "backlinks": 691
+      },
+      {
+        "name": "Old Town Kitchen & Bar",
+        "domain": "oldtownkitchenbar.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 726,
+        "keywords": 57,
+        "domainAuthority": 81,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+100 keywords",
+        "authorityGap": 3,
+        "backlinks": 812
+      },
+      {
+        "name": "Valle Eatery + Bar",
+        "domain": "valleeaterybar.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1104,
+        "keywords": 62,
+        "domainAuthority": 84,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+100 keywords",
+        "authorityGap": 3,
+        "backlinks": 791
+      },
+      {
+        "name": "American Host Restaurant & Catering",
+        "domain": "americanhostrestaurantcatering.com",
+        "performance": 92,
+        "seo": 83,
+        "accessibility": 78,
+        "bestPractices": 87,
+        "overallScore": 85,
+        "rating": 4.6,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1325,
+        "keywords": 30,
+        "domainAuthority": 71,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+150 keywords",
+        "authorityGap": 4,
+        "backlinks": 1122
+      },
+      {
+        "name": "La Botte Italian Restaurant & Catering",
+        "domain": "labotteitalianrestaurantcatering.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1405,
+        "keywords": 56,
+        "domainAuthority": 72,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+100 keywords",
+        "authorityGap": 3,
+        "backlinks": 1029
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 82,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-15T12:34:44.215Z",
+    "businessProfile": {
+      "name": "Pizza Garden",
+      "address": "721 W Central Ave Suite c, Lompoc, CA 93436, USA",
+      "rating": 4.3,
+      "reviewCount": 353,
+      "phoneNumber": "(805) 736-9999",
+      "website": "http://www.lompocpizzagarden.com/",
+      "formatted_address": "721 W Central Ave Suite c, Lompoc, CA 93436, USA",
+      "address_components": [
+        {
+          "long_name": "Suite c",
+          "short_name": "Suite c",
+          "types": [
+            "subpremise"
+          ]
+        },
+        {
+          "long_name": "721",
+          "short_name": "721",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "West Central Avenue",
+          "short_name": "W Central Ave",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Lompoc",
+          "short_name": "Lompoc",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Santa Barbara County",
+          "short_name": "Santa Barbara County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "California",
+          "short_name": "CA",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "93436",
+          "short_name": "93436",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "state": "California",
+      "city": "Lompoc",
+      "place_id": "ChIJk7kP9rce7IAReNkvX715VWA",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "bar",
+        "establishment",
+        "food",
+        "meal_delivery",
+        "meal_takeaway",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "reviews": [
+        {
+          "author_name": "Doug Underwood",
+          "author_url": "https://www.google.com/maps/contrib/101337585596515095229/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUKnPT__3WyXyAM3C0yh9wIrKO2vt306OTS4bdgqoMKnkx3K8fR=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "We drove over this morning to check out the lunch buffet.\nAll you can eat pizza and salad soft drinks are included.\nThe salad was plentiful and fresh. I always enjoy getting mushrooms and artichoke hearts on my salad.\nThey brought out three or four different types of pizza and it was really good.\nI could definitely recommend this place.",
+          "time": 1750720492,
+          "translated": false
+        },
+        {
+          "author_name": "Angels Gma",
+          "author_url": "https://www.google.com/maps/contrib/101707135050845513425/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUJO9bApeBp-Vrc6HAwOpK-ZKOY28Uljfhe4Sm0_z-yUjX_NSPe=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Birthday freebies are DELICIOUS thank you PIZZA GARDEN ! Best in the POC for sure!!",
+          "time": 1744919771,
+          "translated": false
+        },
+        {
+          "author_name": "Sinead Pratt",
+          "author_url": "https://www.google.com/maps/contrib/118295781370685087240/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWT_qWTD_6Xvg5fxECgMzo-U4yr4-t--Gtuzpu1syT_MEG_sqYwmQ=s128-c0x00000000-cc-rp-mo",
+          "rating": 1,
+          "relative_time_description": "a month ago",
+          "text": "I’m sorry but since when did we have to pay extra for ranch when Iv already bought the buffet not to mention Iv come in the past to just sit and have a slice of pizza and got ranch from the salad bar with no problem plus how are you going to walk to my table and tell me I can’t share my drink with my kids that I have to buy a new cup or get a water cup?? Like is business that bad or is this guy just constantly miserable. I mean come on dude the pizza isn’t even that great and I still wanted to come and give my money to something local and I perfer not to have to spend my money at wild West where this cook likes to sit out front smoking cigarettes most of the day and I’m sorry if Im really going to pay for Fati‘s pizza which most of the time there’s no sauce and no flavor but it’s just sad that in this little town we can’t even find a decent place to get pizza 🤦‍♀️",
+          "time": 1754425073,
+          "translated": false
+        },
+        {
+          "author_name": "Henry Villa",
+          "author_url": "https://www.google.com/maps/contrib/103536520582009695828/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVI2EPIKfP1NuUWOBiUM7MdxIWcFE1rUxifWxzh724HuhcrFXoj=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "7 months ago",
+          "text": "Amazing service brought out our food in less then 20 minutes their very generous with their servings wouldn't definitely and have come again",
+          "time": 1738192536,
+          "translated": false
+        },
+        {
+          "author_name": "Christian Munoz",
+          "author_url": "https://www.google.com/maps/contrib/106457878517791815693/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKY8FXLX-uZsA714m1lZx2G50d_RZx0wcbnA_t__rgTWPmmYQ=s128-c0x00000000-cc-rp-mo",
+          "rating": 2,
+          "relative_time_description": "2 months ago",
+          "text": "First impression was instant regret... had guys who were hungry so we ate there real quick. Pizza was sad just like the old man at the register",
+          "time": 1751092950,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112286790701676768209\">Pizza Garden</a>"
+          ],
+          "photo_reference": "AciIO2fsmfWIn3rrfiVUE3GQv-tGke7sKiNvTwRjUO5Px8-78J5Yk8IqS3da2_oJFGWWW6mYAbhyQ7912JFkBnsR1jm2wRQiL9ojLHyR6-XoTCEPq_WCUL6Qk3AsfAZA7rtRYjLBFzs_fRXJ6SPQPp-mB7CJzep6ZJdz80DfjqJefwlLzup7vfGGOTJ4fxWT5-iOT4FNXP5B7A5PlIxZSXuEcpm3pOwCPwjx7_TiO0uRsCT6sIudzkAS4ofOokjGKckWbV0ebC9qrfewBJzUDUBblpfB5e-5Ix6NDmmb9_MQ7PegHQ",
+          "width": 4032
+        },
+        {
+          "height": 2359,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112286790701676768209\">Pizza Garden</a>"
+          ],
+          "photo_reference": "AciIO2cv5nbqAb-9K-ejGJhdmdpXJt2hAxGZkLF0RmvsvOhQo6RaEmouNMUxjUfS8m1w9pjJAHZKfi4J5KDF44DrEKk0ckKesCMVYewY3QAFsY6eXQ4_s81W7aEM5pHWBfYtsOeIJV7JinSlJwcgGwVYlTiENO7NPEubEudU0f-5nHzG6Cl0_rnlfRKQig6GW-qy29vJITB3s6EOdlW12hrIc718qInHmSezfZY1e6cUfPIhxd3Tnvz1tF6rJAQw1-XHnW22ojCYSragJRRxcX1_KQGVXGpkfFFd6C-5mMP7J3zVaA",
+          "width": 4192
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112286790701676768209\">Pizza Garden</a>"
+          ],
+          "photo_reference": "AciIO2fXv0tOtB1DNkGoAcTI9ueANQBLSCB8RViKmLtogikXBqBvcmIR2-gg5u4qfUNfa9Ge8OBgFVWrVCXuI8Vc-wBOrzuJ_Q-8vTR4zHv1UK28IjuKz0FILTfLY_cP2XFywhVUkIFHcjVS7laMUmJXHxoA9KiVq0fKhkudodMGaCZ37CR9mahGDXtN4gaKMwb-c11eAktWe4DmPbXx4QxJE5H-c1GpTt2m8P0TXKWA9QI2iIdQjbSZgCezMTceZ9ZO4Tb7wbfR6fgYrLsnDvGgQlbO8zbrYN3VQC_oFFIWVFJ9lw",
+          "width": 4032
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112286790701676768209\">Pizza Garden</a>"
+          ],
+          "photo_reference": "AciIO2dBhg_Wh9dSHLPTwZ9ZE4BFPmVc6pMltfPv8rRqe7U-_3EGDD1wM9kpRLd2NIAfU8pgdf6-EsHgO3BGmSAldD3qvTRX5x1jhJfYDIdm9wK4RmA57Arb-mWOeP8ZSxb9ZX-HelK4QLO7vSN4HCx1Twvck9fIHz_Wm-Kw5lCp5L0mZFL3jxejynKxzxfiKg5_AP6PNODcaDV4gU5WV3PKP9uhHBWE3SuR6VFvAipcINxSH9zN7oynbJ3HnCzblh8FUr5_YI2I_YhD0hSMiqEqY9_fm0GjuJ2ztR6VjPacDpqlYQ",
+          "width": 4032
+        },
+        {
+          "height": 3600,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104949389744905356104\">Carlos Arce</a>"
+          ],
+          "photo_reference": "AciIO2cPxUoCyvWxf_k5AJnu1H728okay_LL27mlUxzuN6pURPQZ_qy7-nUcuUc9ZHpBtsm-WaOcYEhJ4WhdAznWHn4XlFxJkZv-pw503jbzC6dY3Og-HbgBtWfJ3AzJnvvpztMZieMtaSR0pF2odXFDFRPHx1RysDXd0Zo78u10tz7OlOCdStSOW_zdzNQo8St_ngudY_Ee0Xr3midmrdk3onLl1fJZDnOEVSxvMb5uAlsCSrpakOKhJeF19q2hOdSbrBp_j-JDayFaCVhiHd6dgVNxu58CvtrdE6XH16xPjY_KFm4o6z0zupYZHs7q9-W_3K1C2F9_Dy8Co87iD-dEr_TaV73Srv_219XPdo3c8DjDmLuf5zel0xkX1Bewcb5UeyjfhmekPIaI_nt2-06uH1YjUZUdCqCcVjhryDcSxO833xNFhriCzZ30916jjWp6",
+          "width": 4800
+        },
+        {
+          "height": 1440,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103536520582009695828\">Henry Villa</a>"
+          ],
+          "photo_reference": "AciIO2d5B3w_oNHsznNHI6k9bGT_HgAb-znddZjCSlYIj0gnAe4x2B12LFOQlCYIOqHIrSGknqX2DGTKcZyTynADT7Dp0J5t9TPBNEOVgpo52Qk5NwytF7W4SeBIn_iDKZ0_eNfOExD8z5DlfPzv9PhnpqQEFC_eAEeeaeahdiM1UYprmt4K7s2MslU7xG7tHHouDtoxEDx43Tfn70iHECRGqwhvts_Zm0vgz5KQJ9r8hm-SAyc5osaEkW6hVENgU0hepi5a4zxg5v5v9Q46-LrpOlT0eKprZszwZ8Mc0UY26EnNZwgLp59tORJ-zh6YktEGUl4K63UzI_F50Rfr6zmzUQ0kLKdWPVOzwVO-870nKIJJQzruIfIcjVhgdRcCsaiw0wGikTER4v2Ac8TXNtv83SjtDTOPE2rVbH3bdh0UESHJr1M",
+          "width": 1920
+        },
+        {
+          "height": 650,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112286790701676768209\">Pizza Garden</a>"
+          ],
+          "photo_reference": "AciIO2ePLQ8qTURflOD_Jm19pmoKLGcRn6lp9NglwMm_oEnbqI6GHFV2c1GC8v-enSIbStkG_FRTQsjJv3pvojwd3RMHwUXXwSxCb9OusK6yVhOStNU_kCQkRzmW0ZpQTqwfQdkJQ5-aCUZfp3LTfaEfMFZUogbtq5oR49zoNmrH7eTZnuD1GZ_eYHwbo6gWZz2ZLMxYIB0CCyIkMJVATAtEiWvVyTw3NxVPto7NrWKO5UKV_Nl4LTAjuWM-goIj31hgvLMscrnWs2qwKLWkKrRkpPPfi3jgPjPVQsf_VyiLCsnurQ",
+          "width": 1027
+        },
+        {
+          "height": 3600,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104949389744905356104\">Carlos Arce</a>"
+          ],
+          "photo_reference": "AciIO2dQXt4R0eMO3cM17LD8RLtnCCDtGL_OKJexDCMu-_HeMp-jBarUIDdUDiIq2Lg3MhgoWj_XMpic0ErMHnCOzQBIi3HC6be3qOf4WHOg_O-NBTANSg5-iv62k9oBAws-CCd38lA35C8j6PZJe1Y9VcAof_ODk-eKDu1Zb5e93AOFiUr8arv8uvrqHDhpeZTS9KJg4qRuZv2zibKCO5fsoA99LqfVMtC0f_7XhOwIf134tzs4H_xdd8Oy3afkHXRPUzOXwSVCqIYmvopcE_dt6AZ4Kul8eOh8HBHp1teRxry4Yuv6K0P1qnq6HJS_C3dlU60I_YR9btdPppYybq4_ahwhXpxBDq9zZy8xEiPEZr35k19-EjuKqT6jXHIF8s48UDcDsTvEYHZ5HqaCLEbLE1INiTrjWOz3-cVs8B_KzrX9b-uGc2U5mSIZiLMKw6_8",
+          "width": 4800
+        },
+        {
+          "height": 800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112286790701676768209\">Pizza Garden</a>"
+          ],
+          "photo_reference": "AciIO2c-5-uzrlxVXVwf7wbd6P-uhDvyUcpw6PW81pnifJP4qkbdQ0M1hEYrNJ2eZ9Szi3YMCblFRf4lN0U6dc4B8eDLxeM9hS0lOOFesUi54lbq0RKXScZzg8_JkIRdVmnQCNk45gV_sCqSb6tdeuD5WXEd92-3KodWBAHQf-Nq_esyx9DQfnoYZ8Bw4Jq8afEf22sLcLldieDIf2wodA6i3mwgx8gtgdmlbQPkp_QZcBljyioD3N8Tn0vfi8Y-hCstiDUym6wWaRj2P2HTmkoqFgSgCdr7ZfESF-yf-Uek8DHU7A",
+          "width": 1199
+        },
+        {
+          "height": 3000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104167985271548985910\">Vincent Grimes</a>"
+          ],
+          "photo_reference": "AciIO2dgptR5wq5rtoO5k1uAbrY67WANDk4EBda9FOLfrIGaJ-tirw1uSObj2zfBEauLToFD7_PUKR41hMbq8HMDjA8DWcCxf8DBXY0ySsHoHZ8UmEgohcQoN9U_oQxit-IZSbOX9MMFRZY9w3A4lE1bsB_KL59Y4OjyiqauWQRjIOQXtKHyMhVylS_dS8LezEjM2bD-V2frQ3xgnkkPWegUFeDHuwJcZ9k46gFpGJhYNTBTLoKKmiYL1WOZpq8h3ll2dHSCHKCmI2HFEp2mxhMMrX8qMWf5FF3Rj3elacLiykYMZ-mDoXTLlZxPuuGCoZ54JzNYKk2Lluivw6C0XAVqBsUf6tljMLR4n2quLfhPIhEaWDMOQe2JU7XYBKN6s2JSLZ4AGWJF6px0QFGOrdmMBg7w4VkzU2Yp2vJgyXWU6Q4oRIg",
+          "width": 4000
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "2200"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2200"
+            },
+            "open": {
+              "day": 1,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2200"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2200"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2200"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2300"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2300"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 11:00 AM – 10:00 PM",
+          "Tuesday: 11:00 AM – 10:00 PM",
+          "Wednesday: 11:00 AM – 10:00 PM",
+          "Thursday: 11:00 AM – 10:00 PM",
+          "Friday: 11:00 AM – 11:00 PM",
+          "Saturday: 11:00 AM – 11:00 PM",
+          "Sunday: 11:00 AM – 10:00 PM"
+        ]
+      },
+      "price_level": 2,
+      "editorial_summary": null,
+      "url": "https://maps.google.com/?cid=6941588254914238840",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdbQdxYrS40WXXQV46x4aPiYr3XqcqWWXRNCrgHbicqjb4FwI1gJxP3I_y2duUL0A2q4tu9NnoepY7JpeVvZJ2i97JopaDdP3CfOz9irPlmFv6-SzvkIbPNtrIlyycyzK3Ce2ElLmEfAWb6-Tzqz6BVp1o-pnDzA3osmuz4XkQ8mLytDeiUvpJ1KxlDGnACGHdUcD8uUtH2Gj1_HXSU2SYe0NTROcu9Jy_iMyxBgpv4HlLH0wp2NlCyFs6bExdcwV1m1hIsXtYR_HIy5S3mUHO3zM3xQP8RaIUiwviQOtKtqw&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdDxsK1hSkJFBAOV37ywOZJdqFwaQavJYxKDNj74-lDLRBBjLC2uLQHi2iv5StlH7Wd-ICK-Z4c9fArhLMrhakzffmhQtaL-HGQCasOdWwwWNU5VwfNCOEu7cuuvrF-7Vyw4B3HLNbvuHyCEYU31GVhnHy_9H3PB5WJD3cX6g8tfKeRwxNrayWishNPkyNYPHSFNAC4VA3YWbk4C9xrzSVNioXGNSHSHeI1u3QaHhAQOGeX08viNq2SQaSjkq8ikfjTVRdV_bhrEK-dl0eQfrHf5d7Dv6tuEnAxa0EyKEx-Qg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfUZ7qH937QhySa7rGhOnT6Bg4IpocWNMN7mS7ba-dD_HGrpHCeTE3H5x4cb35u4ioNTn-Yf0nPO1WJ7Tp4IIzTuj65miell8gkq4PP2W2eqo93Dytq4aNQgoamyp1a_gcp2VKNUn-0gsuRa9yPQfQ6zDA4cLFBKBkAsAx3QwLGrPQhWNiIVtv8htQMsjs77iws3V0du7r3irg0Ihk5cimQ-JPNWo10zOqEHt9ZONIYjTwdFYXOi14xf9UmqJk5323FY7fDVumlTMfqRjm5JAm1DK8eqLAJDaz3osYc5oaTKQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfptw3NrRGpSh8ywhmKJ8_nkC2RGawsfBQ-TIz89cBAHY8SeQ3uX6KEPRMbjQE35oMc8FoXe_JEl8R_W0NkyaK92OQSGPqKVENqORxf5lfY_9I0BHX8F7l0SgTntHAnbouOoseKr9Lr9I702si3EXNEdFexakQZuH28OwtV1xNNJVe6Q4MfviduYk7Pyc6_BFvvkTNyBFZ5MEbXc53kFaTSkgeFVWYl42nSFA2BDu--durqUaFNjEJjxb097bTxFD2bEpWDUXd-pHAP332O7zk8kid_hOX1ng96BVGeGgfUBA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpf9r7A9LkE7etvhWrjW65kuaGa-AfW34w6oQ52MC32MH2EpM-jfaA8gVgyXOgNzdEiJCzjYtYXvkitBk4HpYqL7nuUTTs0cYAbO2QXJgOydgHi73-UeU57QNThwornKtEA2sp-Fk21RvI3l8Ed9XUSTWQ5Zz_7NvDDu9OPYQclHoOjsWNhhMOEcS5ObiZVoVbyGOT_pEJqqiH76zyTPSyi07xNtuY87borlgtGH2YP1MktcvqfTdHISGJ48EUMnbnnXpJD4VnrsZIbuwqdxAYgf-oqUm7T-ilFTv34trunUahTywO2N1QMBrg4t03uwpaCoXPeUAI-xyThPe0BkNbZEBCR5OGe5Tyii7-UycqkhtBFrMfhK6crVgcFJu_qOvlkIDok1EUewgKmBsgghIGi-2QFfp7G4SS_c9AofKp10sUGnv2pClWXj3-nAXEx_&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfL2PqxXAelyZxhSPzq4IfbfgXUmtosqHlhjLg4i0NiHWGFBmvbY2bDGSEs7Wf3-ZBLsCMyej1TRIFjssXvvchBrgt4fmRLG4dqhtmQg6Y6zcJeeOyffu4PbKg0mWRT4r5xdLXSjOKC5XFO_yqs3Ex-ZWczCtd9qQT7UfEbH1JVqfchGNEKaCwNvIeKh3oAQlMgjTvbPXQFK82uFFmYf--FL8C3sK2qLHz4_gLdLqCovt_ilo-xyJLDn10JI6xXTLgeKFS36WDzlA9ch2SyF3vLGrjZrkILXPKw7KjzGMV-ok-6EA-zT97cy4iDfaMXhQtN3uirB3akP4TZax9CAMLAJ3Zwcoo3yHE7BVbOroEpzt3_c_1CSrXULqBXuEQS9WmNnHHDu_7-1-aegbIfFUph4QiSUk7-tbnNNWVq-SJHNBI&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdfr8Bd52Tzm4rEe-IX3dHxFv8U7dXK_4Wo3g0KBJ82g0jaZA-1jnVM1RF9B-q5B5sEB5rf2vDE1y2tlpSvMebjkt3xDRZpEUejO9mvi1sgL70y_P4FzWiN4Ma82-14DMQ1XuCkJYY3u8bXYfakOXOXaRS5wuTKIBFS8CmVy_Ya755q-Lw_xiHY9b-dIy8J4qEWlqgu3h0PGsGdJi0xcyzyOHWdl2zHUKC8aZ6mV2O4ZrF0Jcpo4raEwEJRywej7VGl6O2luaGrQaEbgApPDxrN8R8rV4FpadbKsH6pqb6x5w&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfa18p1A3EuuFtafMCnxnBs6830BVyuw2-KUqgd9wBj_kCSu73YjZm8vP8nn6i2Z0X84akKNOFmvpndvsHmI3Dg_1DPKYfh0UA3tgXIW8x-hvYz4eUidBeuKc7qVwA8PiLPUgP2XwMuFMKcQ4ai5xv00vpGVvPRpWsx55gG1cQJ1VEbD8HadzF8NjFpDhgPcxNCHJBB_yzWWdyUh2vC-WWW9xQLlvZ2Y1IpCJSeD95cB3ZE8G2JLWXlkgXmZeev_61ed4kyRNXxxyNuOcOw02VuQ0i_-kkIXfeRzz4fnzbVvDat_2m0UPBzzlbZqzRsYHAzMDei1GAkZWxu2l2BkSiCKnuoybw0pqqaOXxvjhNdnkQqCPIZQ-D3OlUWKUKEa3B-8iSuHGnAB322BKLy-1w5AD47L8TwT3ofkDMIGFBTwDeQOKhkbDfDBiYQh5Nd&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcVNW_eCeVqHdQuiHW2-_4p-brfGw0_p2oQgeO22v0CMHMD0hxsOpaKsA8A_8cC2ev0slAzCu4zTYVvFVbMMB76sOfbdbUUdRcRAcu6trk0yImiESH-587wwkHPyuD8sje2KS_PP_0KZwvgmJotmtrIuofsdar3plESi1xYMooL1LwhKH_ftwi1jXoWhyHhdvJzVsfPYt2rdmilpmb5cvR0Q8sG3VOfZjQJU5pADP4LNJVQIRTWP_6VvZ30kPwK1BjoQWqpEDmziJCwKqYJzfrAx8AOOXUs85uHpUMRVQGUJA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfIQZm3MEd7qVDucMSLqDap1pYAxRWAvDnbxIb2cngnjtkwcBbW67i65dDEP-3yoBsfIn6mQ6fdjimO_QEZVUByf-9up6BQI6AiOoR2nLY4I90HdroUiEDRkjXB_9IAUZCMuFmgyapNUk-h_5jDv4VB-GwAS6syUHZoCXDyMHGO2FOMk3GwM1h04SA1buPc14a8VLhG0Bwq_2AmzH8TtkCAXq6ZGC2byk8fCw9EIIDiIwQqhay_NoeSGOG8KDtbQo1mNttIueC2Pvti4IV5vx5oA4SeV6AT1ArK93ur3gfJkdKWY19A8BCSPG5K4D69co2uigE7jV6wz8rsQO5rF3U-ehIQ225K46Bms12nVzUZPUorR5tUUCGSzU8h-e6LEJXiJNgGEyiEuoMMMzJlD2Zi9uFI-bgD5OMOLJQDVSiomco&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 64,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": true,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 86,
+      "totalReviews": 353,
+      "averageRating": 4.3,
+      "sentimentBreakdown": {
+        "positive": 60,
+        "neutral": 0,
+        "negative": 40
+      },
+      "reviewSources": [
+        "Google Business Profile (Limited)"
+      ],
+      "keyThemes": [
+        "Food Quality",
+        "Service"
+      ],
+      "recentReviews": [
+        {
+          "author": "Sinead Pratt",
+          "rating": 1,
+          "text": "I’m sorry but since when did we have to pay extra for ranch when Iv already bought the buffet not to mention Iv come in the past to just sit and have a slice of pizza and got ranch from the salad bar with no problem plus how are you going to walk to my table and tell me I can’t share my drink with my kids that I have to buy a new cup or get a water cup?? Like is business that bad or is this guy just constantly miserable. I mean come on dude the pizza isn’t even that great and I still wanted to come and give my money to something local and I perfer not to have to spend my money at wild West where this cook likes to sit out front smoking cigarettes most of the day and I’m sorry if Im really going to pay for Fati‘s pizza which most of the time there’s no sauce and no flavor but it’s just sad that in this little town we can’t even find a decent place to get pizza 🤦‍♀️",
+          "date": "2025-08-05T20:17:53.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Christian Munoz",
+          "rating": 2,
+          "text": "First impression was instant regret... had guys who were hungry so we ate there real quick. Pizza was sad just like the old man at the register",
+          "date": "2025-06-28T06:42:30.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Doug Underwood",
+          "rating": 5,
+          "text": "We drove over this morning to check out the lunch buffet.\nAll you can eat pizza and salad soft drinks are included.\nThe salad was plentiful and fresh. I always enjoy getting mushrooms and artichoke hearts on my salad.\nThey brought out three or four different types of pizza and it was really good.\nI could definitely recommend this place.",
+          "date": "2025-06-23T23:14:52.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Angels Gma",
+          "rating": 5,
+          "text": "Birthday freebies are DELICIOUS thank you PIZZA GARDEN ! Best in the POC for sure!!",
+          "date": "2025-04-17T19:56:11.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Henry Villa",
+          "rating": 5,
+          "text": "Amazing service brought out our food in less then 20 minutes their very generous with their servings wouldn't definitely and have come again",
+          "date": "2025-01-29T23:15:36.000Z",
+          "platform": "Google Places"
+        }
+      ],
+      "examples": {
+        "positive": [
+          {
+            "author": "Doug Underwood",
+            "rating": 5,
+            "text": "We drove over this morning to check out the lunch buffet.\nAll you can eat pizza and salad soft drinks are included.\nThe salad was plentiful and fresh. I always enjoy getting mushrooms and artichoke hearts on my salad.\nThey brought out three or four different types of pizza and it was really good.\nI could definitely recommend this place.",
+            "date": "2025-06-23T23:14:52.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Angels Gma",
+            "rating": 5,
+            "text": "Birthday freebies are DELICIOUS thank you PIZZA GARDEN ! Best in the POC for sure!!",
+            "date": "2025-04-17T19:56:11.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Henry Villa",
+            "rating": 5,
+            "text": "Amazing service brought out our food in less then 20 minutes their very generous with their servings wouldn't definitely and have come again",
+            "date": "2025-01-29T23:15:36.000Z",
+            "platform": "Google Places"
+          }
+        ],
+        "neutral": [],
+        "negative": [
+          {
+            "author": "Sinead Pratt",
+            "rating": 1,
+            "text": "I’m sorry but since when did we have to pay extra for ranch when Iv already bought the buffet not to mention Iv come in the past to just sit and have a slice of pizza and got ranch from the salad bar with no problem plus how are you going to walk to my table and tell me I can’t share my drink with my kids that I have to buy a new cup or get a water cup?? Like is business that bad or is this guy just constantly miserable. I mean come on dude the pizza isn’t even that great and I still wanted to come and give my money to something local and I perfer not to have to spend my money at wild West where this cook likes to sit out front smoking cigarettes most of the day and I’m sorry if Im really going to pay for Fati‘s pizza which most of the time there’s no sauce and no flavor but it’s just sad that in this little town we can’t even find a decent place to get pizza 🤦‍♀️",
+            "date": "2025-08-05T20:17:53.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Christian Munoz",
+            "rating": 2,
+            "text": "First impression was instant regret... had guys who were hungry so we ate there real quick. Pizza was sad just like the old man at the register",
+            "date": "2025-06-28T06:42:30.000Z",
+            "platform": "Google Places"
+          }
+        ]
+      },
+      "customerMoodAnalysis": {
+        "overallMood": "mixed",
+        "sentimentSummary": "Customer opinions are divided. The 3.6/5 rating from 5 recent reviews suggests some great experiences mixed with areas needing attention.",
+        "sentimentDistribution": {
+          "ecstatic": 20,
+          "delighted": 40,
+          "satisfied": 0,
+          "neutral": 0,
+          "frustrated": 20,
+          "disappointed": 20,
+          "angry": 0
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "food quality",
+            "mentions": 3
+          },
+          {
+            "theme": "speed of service",
+            "mentions": 1
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 1,
+          "satisfaction": 2,
+          "disappointment": 0,
+          "frustration": 0,
+          "anger": 0
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "The lunch buffet offers an all-you-can-eat experience with a variety of pizzas and a fresh, plentiful salad bar, including unique toppings like mushrooms and artichoke hearts. - social media marketing can showcase this strength",
+            "Birthday freebies are a standout feature, described as delicious and the best in the area. - Boostly marketing services can amplify this",
+            "Service is praised for being fast, with food brought out in less than 20 minutes, and generous portion sizes are highlighted. - review management can highlight this positive aspect"
+          ],
+          "improvementOpportunities": [
+            "Negative reviews and reputation issues - review management can address this concern",
+            "Poor pizza quality and lack of flavor - social media marketing can improve this area",
+            "Competition and discovery issues - SEO services can solve this visibility issue"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 5,
+          "averageRating": 3.6,
+          "ratingDistribution": {
+            "1": 20,
+            "2": 20,
+            "3": 0,
+            "4": 0,
+            "5": 60
+          },
+          "sentimentTrends": {
+            "trend": "stable",
+            "recentAverageRating": 3.6,
+            "previousAverageRating": 3.6,
+            "recentReviewsCount": 5
+          }
+        }
+      },
+      "trends": {
+        "ratingTrend": "positive",
+        "volumeTrend": "increasing",
+        "responseRate": 60,
+        "averageResponseTime": "2 days"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ],
+      "googleReviews": {
+        "reviews": [
+          {
+            "author": "Sinead Pratt",
+            "rating": 1,
+            "text": "I’m sorry but since when did we have to pay extra for ranch when Iv already bought the buffet not to mention Iv come in the past to just sit and have a slice of pizza and got ranch from the salad bar with no problem plus how are you going to walk to my table and tell me I can’t share my drink with my kids that I have to buy a new cup or get a water cup?? Like is business that bad or is this guy just constantly miserable. I mean come on dude the pizza isn’t even that great and I still wanted to come and give my money to something local and I perfer not to have to spend my money at wild West where this cook likes to sit out front smoking cigarettes most of the day and I’m sorry if Im really going to pay for Fati‘s pizza which most of the time there’s no sauce and no flavor but it’s just sad that in this little town we can’t even find a decent place to get pizza 🤦‍♀️",
+            "date": "2025-08-05T20:17:53.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Christian Munoz",
+            "rating": 2,
+            "text": "First impression was instant regret... had guys who were hungry so we ate there real quick. Pizza was sad just like the old man at the register",
+            "date": "2025-06-28T06:42:30.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Doug Underwood",
+            "rating": 5,
+            "text": "We drove over this morning to check out the lunch buffet.\nAll you can eat pizza and salad soft drinks are included.\nThe salad was plentiful and fresh. I always enjoy getting mushrooms and artichoke hearts on my salad.\nThey brought out three or four different types of pizza and it was really good.\nI could definitely recommend this place.",
+            "date": "2025-06-23T23:14:52.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Angels Gma",
+            "rating": 5,
+            "text": "Birthday freebies are DELICIOUS thank you PIZZA GARDEN ! Best in the POC for sure!!",
+            "date": "2025-04-17T19:56:11.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Henry Villa",
+            "rating": 5,
+            "text": "Amazing service brought out our food in less then 20 minutes their very generous with their servings wouldn't definitely and have come again",
+            "date": "2025-01-29T23:15:36.000Z",
+            "platform": "Google Places"
+          }
+        ],
+        "averageRating": 4.3,
+        "totalReviews": 353
+      }
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/pizzagarden",
+      "instagram": "https://www.instagram.com/pizzagarden",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 66,
+      "social": 100,
+      "local": 77,
+      "reviews": 82,
+      "overall": 81
+    },
+    "originalScores": {
+      "seo": 79,
+      "overallScore": 74,
+      "performance": 84,
+      "userExperience": 74
+    },
+    "migratedAt": "2025-09-16T00:37:21.615Z"
+  },
+  "metadata": {
+    "cachedAt": "2025-09-15T12:34:44.408Z",
+    "expiresAt": "2025-10-15T12:34:44.408Z",
+    "placeId": "ChIJk7kP9rce7IAReNkvX715VWA",
+    "restaurantName": "Pizza Garden",
+    "cacheVersion": "2.0.0"
+  }
+}

@@ -4,10 +4,10 @@
     "restaurantName": "Blaze Pizza",
     "placeId": "ChIJAa1hdSSAUocR3vysJnVwqC4",
     "overallScore": 74,
-    "performance": 83,
-    "seo": 78,
+    "performance": 100,
+    "seo": 65,
     "mobile": 63,
-    "userExperience": 73,
+    "userExperience": 88,
     "issues": [
       {
         "type": "seo",
@@ -2673,13 +2673,27 @@
     },
     "profileAnalysis": null,
     "serpScreenshots": [],
-    "restaurantSearchScreenshot": null
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 65,
+      "social": 100,
+      "local": 43,
+      "reviews": 88,
+      "overall": 74
+    },
+    "originalScores": {
+      "seo": 78,
+      "overallScore": 74,
+      "performance": 83,
+      "userExperience": 73
+    },
+    "migratedAt": "2025-09-16T00:37:21.287Z"
   },
   "metadata": {
     "cachedAt": "2025-08-25T15:34:31.764Z",
     "expiresAt": "2025-09-01T15:34:31.764Z",
     "placeId": "ChIJAa1hdSSAUocR3vysJnVwqC4",
     "restaurantName": "Blaze Pizza",
-    "cacheVersion": "1.0.0"
+    "cacheVersion": "2.0.0"
   }
 }

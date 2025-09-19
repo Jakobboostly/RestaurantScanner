@@ -1,0 +1,2581 @@
+{
+  "data": {
+    "domain": "www.fratelliutah.com",
+    "restaurantName": "Fratelli Ristorante",
+    "placeId": "ChIJf0at_P2HUocROAafSqI6Ov8",
+    "overallScore": 70,
+    "performance": 77,
+    "seo": 72,
+    "mobile": 57,
+    "userExperience": 67,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "italian near me",
+        "position": 7,
+        "searchVolume": 170,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://fratelliutah.com/",
+        "title": "Fratelli - Sandy",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "italian delivery Sandy",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best italian Sandy",
+        "position": 5,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://fratelliutah.com/",
+        "title": "Fratelli",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "italian",
+        "position": 0,
+        "searchVolume": 110,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "italian places near me",
+        "position": 0,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "italian Sandy Utah",
+        "position": 3,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://fratelliutah.com/",
+        "title": "Fratelli",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "italian delivery near me",
+        "position": 4,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://fratelliutah.com/",
+        "title": "Fratelli - Sandy",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "italian open now",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 50,
+        "keywords_appeared": 4,
+        "total_keywords": 8,
+        "average_position": 1.5,
+        "best_position": 1
+      },
+      "keyword_results": [
+        {
+          "keyword": "italian near me",
+          "found": true,
+          "position": 1,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Fratelli Ristorante",
+            "address": "Sandy, UT ",
+            "website": "http://www.fratelliutah.com/",
+            "phone": "(801) 495-4550",
+            "rating": 4.2,
+            "reviews": 1100
+          },
+          "competitors": []
+        },
+        {
+          "keyword": "italian",
+          "found": true,
+          "position": 1,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Fratelli Ristorante",
+            "address": "Sandy, UT ",
+            "website": "http://www.fratelliutah.com/",
+            "phone": "(801) 495-4550",
+            "rating": 4.2,
+            "reviews": 1100
+          },
+          "competitors": []
+        },
+        {
+          "keyword": "best italian Sandy",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "italian delivery near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Scelto",
+              "address": "Sandy, UT ",
+              "website": "https://www.sceltoslc.com/",
+              "rating": 4.6,
+              "reviews": 428
+            },
+            {
+              "position": 2,
+              "name": "Supremo Pizza",
+              "address": "Midvale, UT ",
+              "website": "http://supremopizzallc.com/",
+              "rating": 4.7,
+              "reviews": 260
+            },
+            {
+              "position": 3,
+              "name": "BASTA Pasteria",
+              "address": "Murray, UT ",
+              "website": "http://bastapasteriaut.com/",
+              "rating": 4.6,
+              "reviews": 697
+            }
+          ]
+        },
+        {
+          "keyword": "italian Sandy Utah",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "top italian Sandy",
+          "found": true,
+          "position": 2,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Fratelli Ristorante",
+            "address": "Sandy, UT ",
+            "website": "http://www.fratelliutah.com/",
+            "phone": "(801) 495-4550",
+            "rating": 4.2,
+            "reviews": 1100
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Scelto",
+              "address": "Sandy, UT ",
+              "website": "https://www.sceltoslc.com/",
+              "rating": 4.6,
+              "reviews": 428
+            }
+          ]
+        },
+        {
+          "keyword": "italian restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "italian food Sandy",
+          "found": true,
+          "position": 2,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Fratelli Ristorante",
+            "address": "Sandy, UT ",
+            "website": "http://www.fratelliutah.com/",
+            "phone": "(801) 495-4550",
+            "rating": 4.2,
+            "reviews": 1100
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Scelto",
+              "address": "Sandy, UT ",
+              "website": "https://www.sceltoslc.com/",
+              "rating": 4.6,
+              "reviews": 428
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"best italian Sandy\", \"italian delivery near me\", \"italian Sandy Utah\", \"italian restaurant near me\" - optimize Google My Business profile with these keywords",
+        "Ranking below #1 for 2 keywords - increase customer reviews and engagement to improve rankings"
+      ],
+      "scan_metadata": {
+        "location": "Sandy,Utah,United States",
+        "timestamp": "2025-09-16T01:38:04.506Z",
+        "total_scan_time_ms": 38043
+      }
+    },
+    "competitors": [
+      {
+        "name": "Sunday's Best",
+        "domain": "sundaysbest.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 784,
+        "keywords": 56,
+        "domainAuthority": 71,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+150 keywords",
+        "authorityGap": 5,
+        "backlinks": 807
+      },
+      {
+        "name": "The Peppered Vine",
+        "domain": "thepepperedvine.com",
+        "performance": 98,
+        "seo": 88,
+        "accessibility": 83,
+        "bestPractices": 93,
+        "overallScore": 91,
+        "rating": 4.9,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 944,
+        "keywords": 41,
+        "domainAuthority": 74,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+350 keywords",
+        "authorityGap": 11,
+        "backlinks": 904
+      },
+      {
+        "name": "Tin Roof Grill",
+        "domain": "tinroofgrill.com",
+        "performance": 86,
+        "seo": 77,
+        "accessibility": 73,
+        "bestPractices": 82,
+        "overallScore": 80,
+        "rating": 4.3,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1037,
+        "keywords": 24,
+        "domainAuthority": 65,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+50 keywords",
+        "authorityGap": 2,
+        "backlinks": 825
+      },
+      {
+        "name": "La Caille Restaurant",
+        "domain": "lacaillerestaurant.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 840,
+        "keywords": 28,
+        "domainAuthority": 68,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+150 keywords",
+        "authorityGap": 5,
+        "backlinks": 907
+      },
+      {
+        "name": "Libertango Steakhouse",
+        "domain": "libertangosteakhouse.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 845,
+        "keywords": 57,
+        "domainAuthority": 82,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+150 keywords",
+        "authorityGap": 5,
+        "backlinks": 1061
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 75,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-16T01:38:55.676Z",
+    "businessProfile": {
+      "name": "Fratelli Ristorante",
+      "address": "8612 1300 E, Sandy, UT 84094, USA",
+      "rating": 4.2,
+      "reviewCount": 1129,
+      "phoneNumber": "(801) 495-4550",
+      "website": "http://www.fratelliutah.com/",
+      "formatted_address": "8612 1300 E, Sandy, UT 84094, USA",
+      "address_components": [
+        {
+          "long_name": "8612",
+          "short_name": "8612",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "1300 East",
+          "short_name": "1300 E",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Sandy",
+          "short_name": "Sandy",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Salt Lake County",
+          "short_name": "Salt Lake County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Utah",
+          "short_name": "UT",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "84094",
+          "short_name": "84094",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "state": "Utah",
+      "city": "Sandy",
+      "place_id": "ChIJf0at_P2HUocROAafSqI6Ov8",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "reviews": [
+        {
+          "author_name": "Estefany L.",
+          "author_url": "https://www.google.com/maps/contrib/107994978606315291884/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJ2oIKlayLvVINFpD8lrsScBlyO8dv6zU6-mwwbn7SxOEpP4w=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "I've been curious to try this Italian restaurant as I drive past it every day, and it did not disappoint! The vibe was chill and cozy. The wine list is great. We started with the calamari, which was well seasoned and breaded. I had the veal marsala with the daily soup. The daily soup was average. The veal marsala, however, was amazing. The sauce it comes with is delicious. My husband chose the clam linguini with the salad, which was good. The clam was quite tasty. For dessert, we had the chocobella cake, but unfortunately, it was also just average. I'm not sure if the chocolate cake is made in-house or bought from somewhere else, but for $10, I was expecting the cake to be better. Overall, we enjoyed our meal and know what to get again next time we visit and what to stay away from.",
+          "time": 1751078755,
+          "translated": false
+        },
+        {
+          "author_name": "Kimo Kahookele",
+          "author_url": "https://www.google.com/maps/contrib/107645912316253533601/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUcq9KtyvbkcIeU7UVq3kabtPc_OGY6pRz1U9VfO-8k-zHXhYOP=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Always Worth the Drive — Comforting, Classic Italian with Heart\n\nFratelli Italian Food has been one of my go-to spots for years—and it never disappoints. Whether it’s date night, dinner with friends, or a bigger group outing, this place consistently delivers delicious food, warm service, and that homey, family-run charm that’s getting harder to find.\n\nI always recommend calling ahead for a reservation, especially if you’re rolling in with more than two people. They’ve got plenty of room for larger groups (huge plus!), but I like the peace of mind knowing we’ve got a table waiting.\n\nWe tend to start every meal the same way—with their antipasto board, and honestly, why mess with perfection? It’s a beautiful spread of deli meats, cheeses, olives, sweet peppers, and this time, perfectly cooked asparagus. It’s shareable, satisfying, and the kind of appetizer that feels like an occasion in itself.\n\nEntrees come with a salad, and the house-made feta dressing is always our pick. Creamy, tangy, and addictive—it’s reason enough to clean your plate.\n\nFor my main dish, I went with the chicken piccata, and it was a win: tender, bright with lemon, and generously portioned. Between the caper-forward sauce and the size of the plate, it was a win for both my appetite and leftovers the next day. My other half ordered the veal marsala, which is rich and satisfying—just know it leans a bit sweet. Our friend went with the spaghetti and meatballs, which feels like Fratelli’s unofficial signature dish. Always classic, always comforting.\n\nTheir wine list leans Italian, of course, and it’s well-curated—plenty of great options by the glass or bottle. I only managed a couple photos this time because, full honesty… I was way too excited to eat. Fratelli is a bit of a drive from home, and when you’re craving comforting Italian in a space that feels like family—you make the trip.\n\nLooking for that mom-and-pop magic with consistently good food, generous portions, and a welcoming vibe? This is your spot.",
+          "time": 1753542183,
+          "translated": false
+        },
+        {
+          "author_name": "Annie P",
+          "author_url": "https://www.google.com/maps/contrib/117145237994323693888/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVUkpvwCW4h8txZ7-Vc2MRgDYfs_HcIEyVHCLJ94J0rQUpS0t__Gw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "I have dined here several times. And each time is amazing! Today I had the lobster ravioli. So so good! Last time I had the beef braised ravioli which was equally as good. Salads are delicious. Service is perfect !",
+          "time": 1749348315,
+          "translated": false
+        },
+        {
+          "author_name": "Heidi & Qtip",
+          "author_url": "https://www.google.com/maps/contrib/101830828841405760974/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUn3SCkxR619m7si2_AVE-QirjS7bQeYeup9i5nuTqyLIBPtvm7Rg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 1,
+          "relative_time_description": "3 months ago",
+          "text": "Arrived at 8:45pm with posted closure at 9pm. Planned to order take-out of whatever was left & easy, but doors were locked & lights were off upon arrival.\n\nEmployee inside did not acknowledge or come over to explain, nor was there a sign on the door saying they close earlier than posted times when empty. Disappointed & not sure we'll bother again anytime soon with so many other local options nearby.\n\nThat's fine to close early but have the courtesy to man the door & explain to patrons at the minimum.",
+          "time": 1749524443,
+          "translated": false
+        },
+        {
+          "author_name": "Looking To Get Lost",
+          "author_url": "https://www.google.com/maps/contrib/116768778149572846652/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIvGDl4f7bqphcWECZRpVj82xUoBxfGCr1Fi6YNEpMwDV12Nw=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 4,
+          "relative_time_description": "4 months ago",
+          "text": "Good food and service. Food has always been consistent. Nothing here stands out but enjoyable experience all the same. They need to learn how to make a ceasar salad....spring mix is not part of it. Disappointed they change the dressing on the same spring mix and call it a different salad.",
+          "time": 1745671295,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 1280,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/118314494024846855228\">Fratelli Ristorante</a>"
+          ],
+          "photo_reference": "AciIO2dn5f15uUIRLxnzYuUAjVXX8jzV2odr0reZNvD-xViEcf_nI4iSlraqw2Kr7uFiFYVGNwMX85XROcJDwyjZ4xzNEHMzUkesXLRmtwaab6fxmLioHfgZM-4A7GG-1mDLKocPDX3GaAM1UqXwFDlDHzNb4vEX2a2cpJpjzhC2J61As5rrf5m5Wr10bzWHK5P4OxAqqBY36-bfdFVCA2h9TcbUBkiYzULoPoYYQGqEHSq7mZ1uZ9d7eJ5zyKCkLRkpp2wMYLumSMxBNp1DNEihkoBHGVYQc_6XMUxIi6KpNxZi5w",
+          "width": 1125
+        },
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112416037858754016979\">John Wayne Lancaster</a>"
+          ],
+          "photo_reference": "AciIO2eZDrROeg1eXPgVtPNmvRn7PkvnCekEziLM5tthcpflvsA__bevkjUxvIrTBRhqw010mA9TmiRblV-2BanJgkFyuZ1dAGVqDlsOOQr_5MFo8FH2Q-KlTvsFb7Hfhq7t-hcs9IPE8TgOuocNdN96bF0pYKZfGOhn_fDyep8YfZ3WnNM4_mGZ2orN7HPg_xiuKItb-nXpj-RCwM7Lz8U-vGEDIiOSyAWvg3YbmUes5HG19rDeiY6fABfaLaGAyskXvfqbUQeTsn6Zzg5UJojRHaHVbJZmO0rzIDt-moWbmxBiYiOS0w4-n6r8teaW6za1iRPGN-sBvqkACB5pP3yo9-HG6rqiQMhObfs_dgr4SbCoNugxtANq59XU1PF2M1eYGO38D4qOfoR1LFl8wxxasbr96WEwAlbuO9n9VW0W4GI785BglSSPIig15FeErxma",
+          "width": 3000
+        },
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115886271727815775491\">Anthony Huynh</a>"
+          ],
+          "photo_reference": "AciIO2cYIR9pqGzlfuj_-HV-v9nKIyGXtDxqjQOEQakwpSOF2CPj6MDFipLMZE68ecvkhwW_xhDjMVtpqOR9gdpTK5VsZagXQP8WuzxNF7EvABi2m8NvszsrKpblrbd4FKeh3HH3_8wfhx8VSjFUDqgRRgqUJbVVlL91rAUO8hF1OPY3KXAmZdd9B1WvXAvJ66iLWktFSkMs7IOgHtTM0qhjZlYp7_9W3FA_b48KlfcSWB3E6at01SIZbLt2C7xhWaK2OMSuzikeszyBUjBvaxqHkNB3TDLyCX0aiKD68hWVCIOLKnOG6r94RBA4ynMLBWHlvxsBmWuYucpLGJWPSY2DtETSbex-Ix2fgHOphYN6swLVXKgqAlSkSwHTT3-P13a9poPdCNFwTdwKgqVXWxJscxdjApAE02BehD9TAWBGkeUKEj8Y",
+          "width": 4800
+        },
+        {
+          "height": 1280,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/118314494024846855228\">Fratelli Ristorante</a>"
+          ],
+          "photo_reference": "AciIO2fAgjOdy73Q8sFhFCmyGl5DQop_gXOMV2zX-YtiJ3PjAjB7iG_31Knh-bFOh1YVsISh2FdAuuNCD3KZsSG4JaPHXkhyB5DGiFsMQDODO9ruHqChQVPpUBSbL_-ax8mF3-st2nQAp_rzDJYf8gLL7x7vaQkLpLVZezlCMNj0L93BEi6JlqCVKbSmn5upqEQpRkFwsixBoA3kOFheqUUkHgMFh_vZFvPmhh7m9rpVaPRerzz_EWzKTrtJUbJijOcvBGye4SgLVfTHi-ppyx3gt3pTMR6khZsRmjndm6ihB2yUXQ",
+          "width": 829
+        },
+        {
+          "height": 3000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112416037858754016979\">John Wayne Lancaster</a>"
+          ],
+          "photo_reference": "AciIO2dIU1IcOZZO2uDTDv0u4kea7Gei83O9kVFMZ5VvXcN1I4WXnkeZMGX3bNstdZ204Cgnr6LtSiz6MpJtx0xOGhSGXxKyX8qCusnnJTLJNnq3U5ZYjX2Cef0m3vJ8q-sVFlaMKPEKZ0wWUv1pPADUhpU-UOEuLLx-u8VA2g7lFc2dgGc8qQlSJiPnBm12XLgj3H43fnsYWMK-ln47uNlwYP_h-pPasMMaE3gVqR8VOPi2OrZGibD69bJZ6_SM9K_WlBeudBM-PiAQDBxroxmtle0lQn5ipSkIxDj3j8oapvS5j39cfw7u05K6dkCMqfdus23kRf3LmVyr9RJEVORZxHcDkIVNUhfPotdzES6zXYfl1KbMN5m-2dtKMt5DVNWL2YHT6Jo_PTBby1q03Mez4M1yHWl6xYTbO0c1nNDNpcjhkapzfaXcolRKQTNeoO1w",
+          "width": 4000
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111201985903613150996\">Darrell Logan</a>"
+          ],
+          "photo_reference": "AciIO2d6nNTpUv9a6_8DHvPrv1iCOQBLWg-PGtwNFlbs1Pttai5h3A-Le2eSAJ8rsyog3B0zSp8TmL_AYYqc8h1WV81W5PcZ23Rpgrd282bcwWMOvyZVwss9spIMNfA-HxaJ-sfKWfnvhPUqSF1dDn96WIhXBsvDAzEiKg5OJ7ikPZLtDAg1B1qbgDO3llRrecyVsH1-4NFvyprm7Zg1xSdQDn1Fl6ch4iVCVZkuNqr1dL6RlZs6FbUuBRIlsJ5NgizdKexUEtlas6aiYBB7YIZ783vNg2qhFeAhDELaCIn4ydphMWNSEW81Q0JeYVtxUcbJaBW1NXjJTCQ7JSDjkBrHy-Hz6J_fUNHzGY1iiF7d10BAV0O3-lVbJuUGRRicqwiTRlA-_GnqmR4nkxLAHxofKL7aX4q_Y1fV1H6uMKZIz6_gIQ",
+          "width": 4032
+        },
+        {
+          "height": 4800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107645912316253533601\">Kimo Kahookele</a>"
+          ],
+          "photo_reference": "AciIO2eTxzEcMzQruVopmnQQ43E-edZKQJRL-v8Ic2z88qWI0YkxcUjeV7y3YgRCDwh6a2Z_76e78EHKEhji62zdoDJbCXpCR3Kql5fz1yAEBeDTRErwKnc9oz7szutKbOw2aIjU5K9VDh7HRIuGXBtx4ZqoB31v1CXLROkwLWXdai4azYd2OpehQdBNUA3cPNDB6KzZAQ7FJZu0Df6G5d4iy-rhLe5isMx4VvPQSsiTKo2WaVwgO63MUlbC5Qi1nXiILtTosN5nh1NveoiC-RJDVGUIBR0WUjB8zF5SiAP9j0CgKn0fTLRprikbLVusgSgZy5Xl3cN9o3TVtIUt_OJNFgB1fhQ3f6Bt56973z5xg8cyg0paXsTRpqIVI635gM89GBF-SEhZ8HnE1eyjl0R_rF_gVcQYHueW7swMpsPmpnJwYlj6FdU_mPgAmXwCrw",
+          "width": 3600
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104728893923845096538\">Daniele D&#39;Apuzzo</a>"
+          ],
+          "photo_reference": "AciIO2e2BJQ3gXUFN3Ult8h02jSyIwCtOCpBxsM6RCzW56fQForljKpMFZVYB4_V8_hleWb8s3MTGzrNLOF2M0IKIdfl8dAaXYcPabruB5G9EF2h0M2D4E8mRhNXS8kiUNQS5boX7uqCjuQaSqmvvsFqRaYctev1jUSJRzX0RfMIePVYyllDL9sZkWEOqgqSI8nWQJBB9JdRh3l--B_wcHSNqT8qCc9GqfCqToC8UjibI9U4ef5WV5pVElscFBhp8kLzZli9SLGt6ITdfNKOApeai7ootaNYwXdLCbdkKB-CjAMbmYgMWtzlulXyH-K74sa9i6jZfIvv0CDh4ZIRn0AScIL0faDVadCSzaKFsTpPpXjS3MMa3EJkTnElIH5B8GRqkkYhKAr3tGFFJu-3p7XNW6qzfgZbR5KOcScZgG3Yx3DTtBI5",
+          "width": 3024
+        },
+        {
+          "height": 4080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101583891702863613720\">Corinne Evenson</a>"
+          ],
+          "photo_reference": "AciIO2edNhsG7CcghLx688zj-8yCpk84QZaJs_WrtSjKh1FzGRX-5m5ibyAsii7g3OptXuto4y_dNLiFlj_75qPcn2cRhzFCnLJmINXDpMOcVCmtEz9mHPRHRVwZj243f4c2Slf5LCtv31opSrAX5dKkc3guaS3_syyFaTPiynADXXnc62KgBbw5pSrcfTLuL0xJo1pbNe_SxyIFEroYBHcU0aCSWAQCICqUkFJGX3YhiPm3ytGPgTACMDFMTFInX-7-ddvgRS5l-8-rOnyQQMPFwfinPsJNiHD9hK7QuCGzOVQZdhRyT2pO2GVlzxOjOp4HwrXkiTsHsakbDOW2eDbDfTJJImVgVzWjMroBu7z6FuKKzlI3kpffJApYFoA_VQue5Mag96kDdRNB9yULe-62BzY6knHuFGctCfq-9xkca-28-jbH3gigTihoT3YIcZUU",
+          "width": 3072
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117145237994323693888\">Annie P</a>"
+          ],
+          "photo_reference": "AciIO2fq1U0FJN4zWvsbCtvnhzabEdTwzYE_P1albQQQpNfMgMrs07NYkJHrDXnHFxMx7Gr0iehm4pY6s8kc49Wjw4bzFGa-shGu2JVZf2Neb-peNs0DlvnaYGlksWdbwoIsAsHFnixhPDUksJxMmM4wNidvDc8_2MW9LEalUycSWVcVZ98tv1TcV--3qPzvZGZEg-poE6mdTWiOrfMHvIsHrQkR-XBYPIG2p-B-bBjTBAMX8WSasQV5YzhFO3t-SCY1M8seiJQFtAaBCvYRtaB2b7qbN6ixqVHy0gVBIVSdH0vmqAZBxyVwMDISrzyTbnVNzHj7v-U71Cx8i8ABKXWZgs52n8oWpMiId_Gbf71HkxbtebMvNaFL_bYZ08UInav1LxrLaBLi7t6gAGM2oSZ3IOij-qRfh5x2CtswfgIlJz9fOA",
+          "width": 3024
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 1,
+              "time": "2100"
+            },
+            "open": {
+              "day": 1,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2100"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2100"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2100"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2100"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2100"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 11:00 AM – 9:00 PM",
+          "Tuesday: 11:00 AM – 9:00 PM",
+          "Wednesday: 11:00 AM – 9:00 PM",
+          "Thursday: 11:00 AM – 9:00 PM",
+          "Friday: 11:00 AM – 9:00 PM",
+          "Saturday: 11:00 AM – 9:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "price_level": 2,
+      "editorial_summary": {
+        "language": "en",
+        "overview": "Contemporary bistro & on-site deli serving traditional Italian dishes made from family recipes."
+      },
+      "url": "https://maps.google.com/?cid=18391076497031890488",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2fjN9mPbFbzR32bdNtf9j2saPuB3c3jOimXqLZfWr2ZQu__KuadrooE1PURFOWLSgdszpjSf_ThJfeDmDpoC1g841Oeqz1kMm3EbhiA3k4AJI74G9d9nGDtGXi94wIa2ItiQYCmvbqbAYVgi9WcUMJhKZSLUgY0nCowXtnsuUG3m0KpjUW7xjfGAQhMA6bEdw5vISpoWBV5jWXsvQ03jG_09Lh6b14Sl2d1yLGve3RapnL4Fzky-vNR4kAp2IKqc7Imwg2ohbRIoTSNtbT-knZmjrWCC3QeSWFngVaSEMmqIg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2eYtZ9-8SHNE5UnLs-n5djkYvcNctRaXYZBS6RDC6qwpq8aE2dcx1o5_YTDi7_etb7Q4whcfHL8yBZ1ck7covjTglUaLj7BUe_D2t8x3WtK4xLAX5IjJGaz93qjnqGg257FSya2f7NM9EULwiOzaFiCqkKQ0-04yJX8fYfUoNx974lSKqgufv0dhAISr_ASbCC1z52CtsbgBskP5ZCdDfQz695RfkmsD8DzBQikIiM_fJbjq62VXjG1N1SiNII3guq5FpTo1z__fkfDFYXWGbGk55SWKNY0LugUihTeCAsFxDItLHwYOsoU-XQwVbJKqF_tAnKHL47tp2Te78jHJ4Z1cCbKi7Zer30gmcBVnoWqoIOnXqFsPNOZFBUVrmaM7ExkZaojHiklXko0ShUzas3pOoiziXXUV-Bt0lIc9Rh5cPkym58p3NVEg-LtWxqs&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2dmrQy0XKxGuOl664H7kq1ZkQqk0rbQ41c2IICkC5SaqMco8k0-TGXJbvd_-qaSysf-GIJftshZDFAD5UuMateKnjuIjWJiSR4GGSKjpPPERMq0Ets1gPSO0CXFr8klrmF1YMbUfuNjJ-W-hkRvAIUA0A4J7P4F9oWXNntr9ZYUoLAT0WnVz2U_oJSh72XJenhx9V7l8i1uBlaIBhR4QPaxQ7zdeJNHgXnk3ZLBJpPjmyZ_fSHrNxmLWLdGuWjquqa3NImo_2uY9MYVFrx5z4ckqo-G2FgnqvA2D6UcuPrhZPysLJ3diYxbyu2dxaPmbQ7EL5kiqKsHn_3e5zAdtcjbXDTVSLjb0G15biZCLoikIluLsEvdUUMzctjYGyHSttjIPlUfDDacF7rGMjKNEurbdXCBkJsi2RoWJgAQw9VziYBJ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2exTS2ntDvEcm9BHZzn08sEJmUMBw42J7i5QuBYxqQTUYwkU_S3mU8tn5AcHLguHOd9fhRUg9uES1uLldwsCa52YSrUyp3xsc-bIHq8394mYhZa9_7es86F5RuUqwU2dTXi2Ta53hssa6UMbvi2xb-MZYgHCA0x3NhmCbkaDtDV8pCYGMV0PJCUu4V7KCU5_y1U-d016X0ehQ5vmQIedgcF1UiFiCmy4LaKDnZaOwq-CUj5jiRLRbB5xlYw6Ny1eZZq-8VFAAd2AyNVDEL_QjVpTS9Ayk0339A5stm9HbIrXQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2eL8vK6XWdmxwuicT3ZtTxbNgPGj3-2sRKqTwKS2dMMNDzPD5pqgx9shnMPeu0dbLs6-bJ8gBOntEdyIlI3yv1fr_LSEoDvDyrLvzn9CGz2bY3O1tZdH0weeArCL6esRiujP6YZxynTbYbVNZ5R4dH44uqENbUxBGvJR213NzFTjFK1BmcqTBSQdhpo__JBnzB0X_bo_jQcntCBMEQnNZREnzlbsPOXVgL19__qR9COEtYTs25xS59nYYMg1ikop3n9XNduRp4-2w12HWoubzySOkKaP_fFlw8icPr6oPDGqB139ehJbQHNGalCnvsM2opWZOtc-o3rz_BF9HpJuNxUk88y9m-zw5iK9Ncu57u_R68ooSqad96kSycNNC2mqXqqF59MzCqTRzjC3CxEK7rFDkPVQgo1o6BWJgKzzFf2_BHaPVEIuZfxinwpGxxx&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2frtn-2GzjUf0hK2OfitQozupG4uNSQs3QWAPqFTAi-Y6dAw_-pnwBv895thXAnNrtE5A7PYLjwLR0_yOfZg1k8_8qtHHSY_KSXciaZfwJeMkFAVGdFTpfEzOCF5d2DW8RYz7inboLzfmv7HWCJ9HDuvI1r_Fg7aDGfXZ9sQYg_XHoLfdyMfnEmu1rrvxQG1mDsHXscIXYXJWFF3GvwfrmRdSgum4tAMU6gtqy7bT4y9GyJEy_FXVZiqXIo-fY6UoEChV7lCYovkPPM1dyGZeENcFcQv9FwrntfXygTasiihvK5vWlnnpQ7Ed2Gr8XD0636suNVm_XiyP3ARV9rMO07U9uG0CcymYN7MKveYwBHqj-a2xqX6DbesxzWLH_VDfHiWCxFir48GfMNHuSfDWikVL77bvideF-5yDdCkC2zLg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2c4xI17tugKMJNgmk6N8WRndoDdatS6vnvH2NqWrc1t8i4LNRhnkNsnomRb4EDDrP7MYsYBtbMkIqBX3E2SgIb49A3LUWCCGYs3VB0Ql0UNwsn0YUld4PanKRDfZRkOOOXcJxnSnxobQvrQk88ZNvnIKM0HQCqYozoGwZkHNlxA0SSUk7MQEV805ipddVQiNEU1iRyC5Eaz93CA_mFUnxrTsxAziRYd6LjuNvBXef3jGG5VW6OLBoeJ-Ofl0CYwKEyjMpqPLvsHgyrVoZcQZBu_-IdMnD_1YvFdc_blUPSfJbNr3OCADHBDnUgCJ9yjurEObVoXUgeRIk0-K5qnA5dQfM4RbXtLFtw6_F8PByEDsaVbWhHuht8QFsIqdnJIbRRc0bXcUCG8ZH2MKqDDCAoUcZ6WusUdeaJSNMDZfbV8QBUEpwet48osRaluLg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2dPMZ6AphWtoPWiyUwBKAxoVCHr3x_qrXTVb2jDFFVoOCg5P3D2ZWgxBIBlUBmqAgNvmGPKNZueCd__6bt038MjgHMKFeotjgDC9mD0GcqSfUZ2Z_47YrXcCbcomKblgwikSKIs-zqIcTCfgqf8dFgxIMiZiGEh_qTV3J-RiV11jhZ-5NQGRVlBZEFEINqrkBYUxdHcKmMjadg3HcX487zRS4BWg-6lQWVoGkldNDvQuQSRE-fEh5dFg-gzxRpJeMZT3k__QwwrLZ05SpVlMBNduqNIJfiQb-k2GJ9IPSSwK-xW0XfKcgrnOCAg9Fg08sxRKjVSFoyHU8Je5oxHYC2E3kThHC3hdzOIFt8jCKjdJ4ZQtck_FYIy28P9aBQYkP1wt9kLPWdvl5_ML51rjhlxDCKA2Y1ZuwZNowtFJ58yVOx1&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2dR6i2EZUdYKFA5p6VUiehZmzjii6Eg1m9fmHIMSNY56cL471lb_44OwaDiuzhcojpEUeZIlNsksvxA5sNMb3xfsu4JMPpTnFNRsVCQJdsJDYE6s6P4FwrepPyamscQUNSxbjG8Pb0QfQUWtYmeojd6nq_n_08PH3-zHlcGLDh645MaKCqw8hXYcj3c5Y7UzjDSnSA6p00EU6NXCXxHLphyy03M7IhifC8gMg8S-EEZPT3r3QKNc9hCt5eMoQ5zCGjN3ZxQEykW2cM0SK8ivIkAxxldPWm2M1fYtMhP3KJdYWDpuHzh-nn6Id3NmLSD2IdM2jHGIxjLGCuldsKqn1O0PrTDToVRlC5cp_FVNe3FdvF08cpoVAmUvAS9TdXAb-J3qMD9HXDGgKxnxQ6xzQUv-784iXizHv4S3KodB6bzRl-gdasYMDaXC90JaXUj&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2eO5kbnXnhDk1LIseby8LiV-w6UZRT6SpdNRWYTDeDMiPqvp_lG9sydWP58DS-bkL-Fi9h2Ps-b4a2BdV8it0Ch7zKT82uPwV8Djy5l5oftSXZ7FNA3M8CcRlwKAfefpS0Ve6IpVtsaAQknBv7MlBD3bjHjuux13TwAxF5CG0aeN_JC2Ti7-t4_41TCDZJEAmgysL4DqRDAvaWUjgd82zrHFrakNoFqDa0KFm5fxLV6dKbfcG9ye1QXl09tV2c1cNas-8kHONOTn5cS1R3QuP7jH8gPteGIvdrruaiBtxgK9_f4jy-jLYJs7ojscmh6HPq8ZBOWnU57o-yYkqt78AaBFpirXL48fFuRvuO2FO2-A1NyqwIQycu6BAqu53gXJ-Bfi0rpGvtAec9kccyOM_1Rdn_BV9vpVVJXgEoyysMi7A&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 57,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": true,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 84,
+      "totalReviews": 1129,
+      "averageRating": 4.2,
+      "sentimentBreakdown": {
+        "positive": 81,
+        "neutral": 7,
+        "negative": 12
+      },
+      "reviewSources": [
+        "Google Places API (Apify Enhanced)"
+      ],
+      "keyThemes": [
+        "Service",
+        "Wait Time",
+        "Pricing",
+        "Portion Size",
+        "Food Quality",
+        "Atmosphere",
+        "Cleanliness"
+      ],
+      "recentReviews": [
+        {
+          "rating": 5,
+          "text": "The Absolute best tomato Bisque soup ever ... and the spaghetti sauce is the Absolute best.. most definitely eating there again.. the Wait staff was the best .God Bless Y'alls. Prayers Huggs and Love Always ✅️",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "This Italian quickly became my favorite. Locally owned by 2 brothers their wood-fired pizzas are amazing, their italian nachos are a masterpiece.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "This was the best place i’ve ever been! I’d eat here every single day!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 2,
+          "text": "Way overpriced for amount and taste.   Not worth it.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "negative"
+        },
+        {
+          "rating": 4,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 4,
+          "text": "Food was exceptionally mid, but the service and atmosphere were both amazing.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Great family dinner with good options for everyone.  All the food looked great and I want to try their lunch sandwich menu!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Always Worth the Drive — Comforting, Classic Italian with Heart\n\nFratelli Italian Food has been one of my go-to spots for years—and it never disappoints. Whether it’s date night, dinner with friends, or a bigger group outing, this place consistently delivers delicious food, warm service, and that homey, family-run charm that’s getting harder to find.\n\nI always recommend calling ahead for a reservation, especially if you’re rolling in with more than two people. They’ve got plenty of room for larger groups (huge plus!), but I like the peace of mind knowing we’ve got a table waiting.\n\nWe tend to start every meal the same way—with their antipasto board, and honestly, why mess with perfection? It’s a beautiful spread of deli meats, cheeses, olives, sweet peppers, and this time, perfectly cooked asparagus. It’s shareable, satisfying, and the kind of appetizer that feels like an occasion in itself.\n\nEntrees come with a salad, and the house-made feta dressing is always our pick. Creamy, tangy, and addictive—it’s reason enough to clean your plate.\n\nFor my main dish, I went with the chicken piccata, and it was a win: tender, bright with lemon, and generously portioned. Between the caper-forward sauce and the size of the plate, it was a win for both my appetite and leftovers the next day. My other half ordered the veal marsala, which is rich and satisfying—just know it leans a bit sweet. Our friend went with the spaghetti and meatballs, which feels like Fratelli’s unofficial signature dish. Always classic, always comforting.\n\nTheir wine list leans Italian, of course, and it’s well-curated—plenty of great options by the glass or bottle. I only managed a couple photos this time because, full honesty… I was way too excited to eat. Fratelli is a bit of a drive from home, and when you’re craving comforting Italian in a space that feels like family—you make the trip.\n\nLooking for that mom-and-pop magic with consistently good food, generous portions, and a welcoming vibe? This is your spot.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 2,
+          "text": "Very mediocre, bland, overpriced Italian food. Tomato basil soup was the only redeeming quality.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "negative"
+        }
+      ],
+      "detailedReviews": [
+        {
+          "author": "Steven Jennings",
+          "rating": 5,
+          "text": "The Absolute best tomato Bisque soup ever ... and the spaghetti sauce is the Absolute best.. most definitely eating there again.. the Wait staff was the best .God Bless Y'alls. Prayers Huggs and Love Always ✅️",
+          "date": "2025-08-31T17:10:31.724Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tGU1QxVlJaVmxNVFRkeFJtTjVRM0ZQZDNWNFNVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVjONh-uMB1PJj6LcCr7xkicKHIaw84uW3SA2AsMo9Js5moIfc=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108746241557374124321?hl=en",
+          "reviewerNumberOfReviews": 26,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kimberly Hinkins-Herd",
+          "rating": 5,
+          "text": "This Italian quickly became my favorite. Locally owned by 2 brothers their wood-fired pizzas are amazing, their italian nachos are a masterpiece.",
+          "date": "2025-08-31T12:10:14.952Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21FeldHNU1jMU14UzFKNVZWRTVZMUZ0VEhCdlVHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJNfVxrLncCXd20tjkjbEGUc8AzMZUbkkrlo4Fv08cWC7UCIJly=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108640651925232667080?hl=en",
+          "reviewerNumberOfReviews": 68,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Owen Martin",
+          "rating": 5,
+          "text": "This was the best place i’ve ever been! I’d eat here every single day!",
+          "date": "2025-08-28T23:40:40.009Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25vNGFWQnlhbXB6YW5SS1MzQTRaV2REYldsRWJGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIPlnMh_nKNPhTvY58L0X396bwp6_11SyN1cHUQWrzf8-EkVw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106510078987222218752?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Joyce Steverson",
+          "rating": 2,
+          "text": "Way overpriced for amount and taste.   Not worth it.",
+          "date": "2025-08-27T19:53:45.046Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xCQloyZERVVnAxZG1wRVVFZzJURVl3YTA1Tk9HYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLlvZjw-4UtxfScqJU6B2bRc0WKxmgnvphSvEL5e9qi21hf4w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115529803162469473534?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Maria Bates",
+          "rating": 4,
+          "text": "",
+          "date": "2025-08-19T20:37:07.856Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT201Q2RWaERMVWQ0UkRWS09WUnJTbTR3TVhaeU1IYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVWtzpDpEYJJoiXQeydD1JItH1g2GXEUfYmd22ky-GNcVwrQDb6=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105528981772909677177?hl=en",
+          "reviewerNumberOfReviews": 45,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Thomas Pointon",
+          "rating": 4,
+          "text": "Food was exceptionally mid, but the service and atmosphere were both amazing.",
+          "date": "2025-08-16T16:17:31.139Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tWb1NXeGFTM0ExWDBkc2VXdFFkVFZrWjFCdVMzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXnyavQkLzHHGFPrOMLcRvRQYFg26wWEFFNUERvMUS3fBc2RgoQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111129341345325677068?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Parker Checketts",
+          "rating": 5,
+          "text": "Great family dinner with good options for everyone.  All the food looked great and I want to try their lunch sandwich menu!",
+          "date": "2025-08-13T00:38:47.422Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT205UFVUQmphSGh6ZG1vMWRWOUlURmgwWlhZMGNuYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWkI613SNrW4BG_RQ3lu-LoxYk7zwwjK_sUcPuqvL7cAq6x73Q=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109825937679643524780?hl=en",
+          "reviewerNumberOfReviews": 160,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Latasha Roddan",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-30T01:22:24.573Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT205VVJVUlNja0p3U0hkcVZIaG1jamwyYURBMlkxRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV2sN9_HgywMggKghffa_MZqCu7xqg_CQsQ44CfV_9zxepAg4AY=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105304299443241864638?hl=en",
+          "reviewerNumberOfReviews": 34,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kimo Kahookele",
+          "rating": 5,
+          "text": "Always Worth the Drive — Comforting, Classic Italian with Heart\n\nFratelli Italian Food has been one of my go-to spots for years—and it never disappoints. Whether it’s date night, dinner with friends, or a bigger group outing, this place consistently delivers delicious food, warm service, and that homey, family-run charm that’s getting harder to find.\n\nI always recommend calling ahead for a reservation, especially if you’re rolling in with more than two people. They’ve got plenty of room for larger groups (huge plus!), but I like the peace of mind knowing we’ve got a table waiting.\n\nWe tend to start every meal the same way—with their antipasto board, and honestly, why mess with perfection? It’s a beautiful spread of deli meats, cheeses, olives, sweet peppers, and this time, perfectly cooked asparagus. It’s shareable, satisfying, and the kind of appetizer that feels like an occasion in itself.\n\nEntrees come with a salad, and the house-made feta dressing is always our pick. Creamy, tangy, and addictive—it’s reason enough to clean your plate.\n\nFor my main dish, I went with the chicken piccata, and it was a win: tender, bright with lemon, and generously portioned. Between the caper-forward sauce and the size of the plate, it was a win for both my appetite and leftovers the next day. My other half ordered the veal marsala, which is rich and satisfying—just know it leans a bit sweet. Our friend went with the spaghetti and meatballs, which feels like Fratelli’s unofficial signature dish. Always classic, always comforting.\n\nTheir wine list leans Italian, of course, and it’s well-curated—plenty of great options by the glass or bottle. I only managed a couple photos this time because, full honesty… I was way too excited to eat. Fratelli is a bit of a drive from home, and when you’re craving comforting Italian in a space that feels like family—you make the trip.\n\nLooking for that mom-and-pop magic with consistently good food, generous portions, and a welcoming vibe? This is your spot.",
+          "date": "2025-07-26T15:03:03.447Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25aVFdXc3pjamRzVG5aYVZITkdUVlJ5YW14T04wRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUcq9KtyvbkcIeU7UVq3kabtPc_OGY6pRz1U9VfO-8k-zHXhYOP=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107645912316253533601?hl=en",
+          "reviewerNumberOfReviews": 48,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Joe Peterson",
+          "rating": 2,
+          "text": "Very mediocre, bland, overpriced Italian food. Tomato basil soup was the only redeeming quality.",
+          "date": "2025-07-20T18:59:13.151Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21GclNteEdSWEpGU1ZSaFQzUnJSRmN4TVRaMWJuYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXZp0ZQKPsEOYRiS5tgar4OxzOGvbPDrHjL8Y9f2bl6C8A1se6ObA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106328826767556669677?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Kacee Woolsey",
+          "rating": 4,
+          "text": "This was our first time trying this restaurant. It was good, but not great.  For a Friday night, we expected it to be very busy but there was hardly any people there at all. The food was decent and the service was good. I wouldn’t be opposed to going back but it wouldn’t be my first choice.",
+          "date": "2025-07-13T02:41:47.325Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xOVGJIUlNUWGhSU0RKVlEyVlFlVXRaZEZkbGEyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKGITgPjS575XZH3vcH_YMA0JV8mlCjLCGHSlpB5wGTQTxB8Q=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105732581137610831684?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Corinne Evenson",
+          "rating": 5,
+          "text": "The nachos and Fratelli pizza was delicious! Staff was friendly and helpful. The Arancini was okay, but the pesto was fantastic.",
+          "date": "2025-07-02T17:10:28.693Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pCamRtdGhkM2RaYjAxRFRIWnBRa3hPY2pSVFkyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKVK6LKh8vM23Jega5kmqG240o_EAT540qtECQ6hQ8kUYck2w=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101583891702863613720?hl=en",
+          "reviewerNumberOfReviews": 46,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Estefany L.",
+          "rating": 5,
+          "text": "I've been curious to try this Italian restaurant as I drive past it every day, and it did not disappoint! The vibe was chill and cozy. The wine list is great. We started with the calamari, which was well seasoned and breaded. I had the veal marsala with the daily soup. The daily soup was average. The veal marsala, however, was amazing. The sauce it comes with is delicious. My husband chose the clam linguini with the salad, which was good. The clam was quite tasty. For dessert, we had the chocobella cake, but unfortunately, it was also just average. I'm not sure if the chocolate cake is made in-house or bought from somewhere else, but for $10, I was expecting the cake to be better. Overall, we enjoyed our meal and know what to get again next time we visit and what to stay away from.",
+          "date": "2025-06-28T02:45:55.101Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21kSlNYVkZPR3hUWjAxc1YyUk5jblZLTjFGd0xVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ2oIKlayLvVINFpD8lrsScBlyO8dv6zU6-mwwbn7SxOEpP4w=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107994978606315291884?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Michael Bullock",
+          "rating": 5,
+          "text": "This is a great spot to stop in Sandy. The food is incredible. They have fantastic salads, soups, pizza and of course main course dishes. The staff is incredibly friendly and the atmosphere is well put together. Very relaxing spot for either a lunch stop or a date night out. Highly recommend!",
+          "date": "2025-06-25T22:16:45.818Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pKTllsOURTamxET1ZocmVURXhkbEZKT0Vaek9FRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWObzRvoP5m4DZ0BQ0CgDqcadrxDbgkfeXyZexC9MPgBSJIWq1pVg=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101725117930153690634?hl=en",
+          "reviewerNumberOfReviews": 138,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Andy Anderson",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-22T02:20:39.584Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT210TlZUWTJZakk0ZFVOQ1kxaGtXVGM1Vm1acmJVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUi2Y9SDFXcgvFm_4akM3yb9ANd1uQYS6V-CTG8E8f5iJS-uY_ppA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109719325476754508416?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Rosie Santiago",
+          "rating": 2,
+          "text": "I got the clam linguine. It was very salty not flavorful at all.",
+          "date": "2025-06-21T17:55:38.078Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t4bGJXWnZSbWN4V1VwdmIzWkhNVmxKVTBwR1VWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWI4zixeTvJDa2A-mYPAur748rDR24_dDZUo46MzbGWDwUIj9zJ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107232222041854970820?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Abby Osborne",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-14T17:49:57.319Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJU2YwZUt6ejkybjN3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVuTC2iaDn25GDiH4jMfD7-5pz_cQcdxuI1f2m7n25UKnLO8AUmLw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117384014275852916889?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Inna Romanovskaya",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-12T09:50:10.403Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xGaFIyVkdXSHBrVldOMWQwbzVUVVpoZERaVlRFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLcjBobOwKxQbEpFWAkeYt8MqmxIkIj3snI_gMbNsZAtKSqpg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112809714918126508093?hl=en",
+          "reviewerNumberOfReviews": 22,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Diane Harvey",
+          "rating": 1,
+          "text": "The reviews sound like they are describing another restaurant. This was the worst place I have been to in many years. I had a horrible salad. Like a pound of spinach with some nasty chicken on it. There was supposed to be pears and gorgonzola. I couldn't find any, just some chopped apples. The dressing tasted like puke. $17.! I just picked at it as it was making me sick. My friend had eggplant which was equally bad, cold, and extremely overpriced.",
+          "date": "2025-06-12T00:46:36.472Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25ka2R5MW5RMTgxUTNOWGVUTmljRmx1UWxNMWNVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKdrY1mUEE5tNZuzAIL9OA_6lUf39tCPBI2UqZ5pUr7to6OCw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112494298076979915571?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Heidi & Qtip",
+          "rating": 1,
+          "text": "Arrived at 8:45pm with posted closure at 9pm. Planned to order take-out of whatever was left & easy, but doors were locked & lights were off upon arrival.\n\nEmployee inside did not acknowledge or come over to explain, nor was there a sign on the door saying they close earlier than posted times when empty. Disappointed & not sure we'll bother again anytime soon with so many other local options nearby.\n\nThat's fine to close early but have the courtesy to man the door & explain to patrons at the minimum.",
+          "date": "2025-06-10T03:00:43.624Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VNWGRwYUxUcTZxYWJ3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUn3SCkxR619m7si2_AVE-QirjS7bQeYeup9i5nuTqyLIBPtvm7Rg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101830828841405760974?hl=en",
+          "reviewerNumberOfReviews": 20,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Annie P",
+          "rating": 5,
+          "text": "I have dined here several times. And each time is amazing! Today I had the lobster ravioli. So so good! Last time I had the beef braised ravioli which was equally as good. Salads are delicious. Service is perfect !",
+          "date": "2025-06-08T02:05:15.592Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VLeWN0UFM1MGNyZ2d3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVUkpvwCW4h8txZ7-Vc2MRgDYfs_HcIEyVHCLJ94J0rQUpS0t__Gw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117145237994323693888?hl=en",
+          "reviewerNumberOfReviews": 125,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jonni Bonnet",
+          "rating": 4,
+          "text": "First off, service is excellent. Our waitress was so sweet and continued to fill water cups after we paid and were just sitting and talking.\nFood was okay....I did enjoy the freshly made bread and the coffee was excellent!  Everything else was a little middle of the road. Not mad about it but no raving about it",
+          "date": "2025-05-31T21:21:03.504Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VKTFlydG1YMm9QS053EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXGEqWT63ceGcepXU-T4t2Etu1Gm8106WASonip08k9KmDXGPbd=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110564076820766285276?hl=en",
+          "reviewerNumberOfReviews": 42,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Temperance Kirchoff",
+          "rating": 4,
+          "text": "",
+          "date": "2025-05-20T01:05:34.752Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VNZUZscVNad05HWGN3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXGVWzdHyXdoFOneuR4EIlFatn3Mod7Tqdpz2UPg2g6HHMaZieK=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111948952139603436207?hl=en",
+          "reviewerNumberOfReviews": 25,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jennifer",
+          "rating": 5,
+          "text": "We were in Sandy and decided to try something new. I am glad we did. The food was amazing! We both got the Lobster 🦞 ravioli, with Vodka tomato cream sauce with garlic shrimp.\nWe also got the soup of the day, which was Cajun cream chicken, and that was also delicious. The waitress was very nice and very attentive, same with the hostess. The atmosphere was very pleasant. The music was Italian, which you don't normally hear. If you're out in Sandy, I suggest you try it",
+          "date": "2025-05-18T01:20:04.203Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VKcjNrUG5obElfY0pREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUPz3hJ3vHs12j-ZFlfjyrNmLw3xw_Fx8Hdn6YvaeXqK0O0pk3F2w=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101793228819609464476?hl=en",
+          "reviewerNumberOfReviews": 26,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dawn Orn",
+          "rating": 4,
+          "text": "We are making this our go Italian restaurant!\nThe food is great  service is quick, and they have a great selection of wine, and 1st rate cocktails!\nMy loves the strawberry lemonade,  and I'm a sucker for the halibut picatta.\nGo you won't regret it",
+          "date": "2025-05-16T02:31:00.617Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VMcVVfdWY0c2NDMEVREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXMU5dLOA8ovfPcYsWvXZvFQwRk295ERIp7YWYpazyXYc1rRWMq=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106227775229251531857?hl=en",
+          "reviewerNumberOfReviews": 66,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mark Newey",
+          "rating": 5,
+          "text": "Went for lunch with my wife. We can't eat a lot, so we shared the meatball sandwich and it was awesome. Their bread was freshly baked and tasted very good.",
+          "date": "2025-05-15T21:30:20.135Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VKdlJpSUxTXy15RTdRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJHciF8CALhyo-R8ZAdLmXPDFVP5nV_8_Vi_YkQxMD-4nOxJQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107904545725205645829?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Christina Franklin",
+          "rating": 5,
+          "text": "",
+          "date": "2025-05-11T03:34:48.627Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VPMk8xWnpsaFBIa3d3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKW4zxKxwdBhpmfjI_0iEZ7JaJ158UXQPDftt1xRJKWvJyWAQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110744995947342216743?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Gina Edwards",
+          "rating": 5,
+          "text": "This was the best meal I've had since moving to Utah. Coming from NYC, I missed authentic, fresh Italian cuisines.  This was all that and more. And, with exceptional service, I cannot recommend this restaurant enough. We'll be back for sure!",
+          "date": "2025-05-10T00:20:01.413Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VMUDN1ZXJIbXEzbE1BEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUeQ2l8SMN6IeiyXj7nJx1gzLPXWTGEVUjd_SwTzSBylzmxkCYmDQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106668370931461435101?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sherry LaRue",
+          "rating": 5,
+          "text": "My family and I had a wonderful time here tonight. The food was delicious and great presentation. Our waitress Tina was wonderful.",
+          "date": "2025-05-07T03:09:58.211Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VNUG51WS1Hd19PY0pBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXrae7baOxcKHauOhiqpbb8I5GsbomuqmIhyZhmfrJVec1NGjFOXw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104170221737080894912?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Greg Schamp",
+          "rating": 5,
+          "text": "",
+          "date": "2025-04-28T16:13:41.210Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURvdHJiRHpBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVE7Y1pC6okQe4b1eKBO-WX_mbOd2zgjrN6D3EdLR-GxNCh8jCp=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100894296552180904010?hl=en",
+          "reviewerNumberOfReviews": 55,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Looking To Get Lost",
+          "rating": 4,
+          "text": "Good food and service. Food has always been consistent. Nothing here stands out but enjoyable experience all the same. They need to learn how to make a ceasar salad....spring mix is not part of it. Disappointed they change the dressing on the same spring mix and call it a different salad.",
+          "date": "2025-04-26T12:41:35.179Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNqeGNlT1FnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIvGDl4f7bqphcWECZRpVj82xUoBxfGCr1Fi6YNEpMwDV12Nw=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116768778149572846652?hl=en",
+          "reviewerNumberOfReviews": 331,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Clayton Dumas",
+          "rating": 5,
+          "text": "Delicious Italian food...",
+          "date": "2025-04-23T00:22:53.421Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNLNmRiQzJ3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUN82RDFhoopk1JGRRC4sdPJi_fy8wdWLnEArp2CX5wG5-xP2reLA=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117509596811755969783?hl=en",
+          "reviewerNumberOfReviews": 305,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Gabrielle Fortier",
+          "rating": 5,
+          "text": "",
+          "date": "2025-04-19T04:16:49.811Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNvcmF1ZlRnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUfaW9xV2m7gisviuRrAye9ZX3tygIHiS74kluO79g_uXgJXPM=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111617243984566281660?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "CB 3",
+          "rating": 5,
+          "text": "Loved the food and service here!!",
+          "date": "2025-04-17T17:54:10.630Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNva1k2OU5BEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKQuW8QGTVksmilEjf3xJjZX4z8EZcrxnJ8JN4k2XzF4YmNEA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105446561892855766564?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Scot P",
+          "rating": 5,
+          "text": "I'm a huge connoisseur of alfredo sauce. I ordered Alfredo entries very opportunity I have. All over the state of Utah, the country in a few places in the world. Unfortunately, I've never been to Italy, but it's on my list. Mainly to try Alfredo in Italy 🇮🇹. For my taste. This was the 2nd best Alfredo I've ever had. #1 Battista's Hole in the Wall, Las Vegas. I'm so glad I found this place and it's less than 10 minutes from my home. I will be back again.",
+          "date": "2025-03-28T00:53:23.716Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUR3bzRmMWFREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV1VFC0aWU8K6zF4VOj_BEzNL4rIozkKRX3RMJ7FZfhuki5qses=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116613580490099555336?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Becky Evans",
+          "rating": 4,
+          "text": "",
+          "date": "2025-03-25T20:28:01.005Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUR3OXNETVZnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJpLULPCC1TqGU_Mx9n-UmadY2VmGrfhHjhlKFn2JTSMGtrMA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105742314274687460173?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "C Green",
+          "rating": 5,
+          "text": "",
+          "date": "2025-03-23T04:55:19.270Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUR3NlB5ZzFRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWwLebB8XRZdW6-V_waTEiKYeTDH1q8bhsD9sp8Tm_SrN379mk=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111379792836791112674?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Roxann Brady",
+          "rating": 5,
+          "text": "Had a birthday party. The food was great and the service was excellent",
+          "date": "2025-03-21T23:35:09.860Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUN3OTZidlNnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKmhVhE7qojoUqCRtjh7hOxchaIax6BQPDl95l7LjXoBqLNNA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100702982993691872104?hl=en",
+          "reviewerNumberOfReviews": 34,
+          "sentiment": "positive"
+        },
+        {
+          "author": "shyanne young",
+          "rating": 5,
+          "text": "Atomosphere was great! Our waitress was named Shannon and she was so friendly and personable. She made us feel like we were so welcome and comfortable. Definitely coming back!!",
+          "date": "2025-03-20T20:30:16.029Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUN3dzVHazZ3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLYnFzhrORkFkcl5OahDRi7RCkxfjbQbKzQAEwZ4xzXp5p00g=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106276158276617440989?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Cassidy Stubbs",
+          "rating": 3,
+          "text": "",
+          "date": "2025-03-20T11:16:19.509Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUN3OWUtcWVBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIeYoOEEkIajtSfvxthMXXqx9dpPJ2zFVjJSRGn2tr2ir9LdQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113414573677670700828?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Avery Spencer",
+          "rating": 1,
+          "text": "While visiting salt lake City on vacation, we had made a reservation here after looking at their rather impressive website. We showed up on time and where seated.  We watched as the two different groups who came in behind us had their orders taken and were served food while we were still sitting there waiting for our server.  After sitting there for 20 minutes, and watching server after walk by us, we decided to leave.  We came hungry we left hungrier.  Pretty disappointed in the service or lack thereof.",
+          "date": "2025-03-16T02:34:26.711Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUN3ME9TS3pBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWcMUoWLMNwEaocF-4ts7HGU9Aex7enEw7jkDkaxKYCkdSpodYvnA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111988734094211857790?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "negative"
+        },
+        {
+          "author": "cindy mithcell",
+          "rating": 5,
+          "text": "Excellent Veal Marsala to",
+          "date": "2025-03-14T01:29:16.935Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURRczVpNXFBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU3Ks8U6rD_OkkPBfWM2Zzo-54vpQkLWBk3kgwhGhj_lFKP8cI=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104236074213349092435?hl=en",
+          "reviewerNumberOfReviews": 155,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Don Kleinschnitz Jr.",
+          "rating": 5,
+          "text": "Top of my list for Italian cuisine. Had the delicious tomato basil, spaghetti/meatballs and eggplant Parmesan. Service was expertly attentive. Prices were reasonable. Will return.",
+          "date": "2025-02-27T13:39:42.214Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURncS1LVTRRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWs5Fbv3cs1ZG9P37WaA9Eu5kyYY6gOscP2W10MMbjiO3ZK4-jg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113684285877323403487?hl=en",
+          "reviewerNumberOfReviews": 114,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Daniele D'Apuzzo",
+          "rating": 3,
+          "text": "Mastra, in American Fork, is the real deal.\nFratelli is not authentic Italian food. Very Americanized. Let me explain why.\n\n- carbonara needs goat cheese, not Parmesan. Which they sell! Also, there is no green peas in carbonara..\n- the dirty martini cup came half full, almost half as much as any other place we have been to\n\nThe service was great, the waitress was always checking and brought everything on time.\n\nThe recipes could use some help …",
+          "date": "2025-02-23T02:53:08.707Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURnN01TOGN3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW-ehd8d_zy7cpo8hg7HvDzbZfY40jJ2wCm4gwQ6zfM4o7j_2sd=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104728893923845096538?hl=en",
+          "reviewerNumberOfReviews": 75,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Stephen Lewis",
+          "rating": 1,
+          "text": "We like to try new places, especially to celebrate! Well last night at Fratelli’s was a disaster. We started in a great mood, was seated quickly, but there we waited. And waited. And waited. A cold apology was offered- but we ordered cocktails, appetizer and dinner all at once. The tables around us (seated after us) were seeing their wait staff, and had bread.\nWe were hungry too. I started looking around and another waitress (later learned was the manager) asked if we had bread. We said no, then our waitress brought bread a few mins later - again a heartless apology. But I figured- maybe she’s having a bad day. But as all the other tables seemed to be getting service, food, refills and attention- we more and more felt ignored. And hungry. And thirsty. Finally the hostess asked if we wanted more water and so we asked for our food to go, and our check.\nThen more than 10 minutes later (after our waitress helped other tables) she gave another empty apology and the manager was there and said it was her daughter. I’m okay with things being, busy or slow- but don’t ignore us. Check on us , let us know it’s going to be a bit. The other tables were well taken care of - not sure what we did or didn’t do. The appetizer was pretty good and one of the two soups were good. But nothing is worth being poorly treated when all you want is to go out for a nice night.",
+          "date": "2025-02-22T22:00:48.679Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURnOUxiUTBRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUn9Zf4p7bHS4BVquERZ6V3sWkzZO1CZIxozIrPSboGeGym9Zw1=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105723161040236101613?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Patrick Utley",
+          "rating": 3,
+          "text": "Meh, it was fine. Nothing special though. Had the Carbonara, and tried the bruschetta appetizer and charcuterie board. Would offer the charcuterie again, but not the other items.",
+          "date": "2025-02-20T01:31:04.335Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNnN2NfYmlnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVzHZ_woBG42RUUn6RQEJgHYdy5Ao-7C3oxAcEFd7rbv0CwMYheyg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102142164878303078027?hl=en",
+          "reviewerNumberOfReviews": 46,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "AT",
+          "rating": 2,
+          "text": "I made dinner reservations for myself & my parents here on Feb 12 for my mother's birthday. I had to miss dinner but my parents went and had awful experience. The staff sat them at the high bar facing the kitchen - Their backs literally to the front door. Every time someone came in from outside they were hit with cold air & noise. Not enjoyable at all.\n\nManagement: Please be considerate and DON'T take reservations if you don't have proper seating. My parents are in their 70's. Badly done.",
+          "date": "2025-02-18T03:22:56.644Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNnNFlHRnF3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVkLh179npaEBBEQaH-eFG-3qkDM2oVtlkF44eKIo3i8mujIMY9dw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111002549983032708174?hl=en",
+          "reviewerNumberOfReviews": 37,
+          "sentiment": "negative"
+        },
+        {
+          "author": "RB Maw",
+          "rating": 5,
+          "text": "A regular dine in and out for our family - great Italian food!",
+          "date": "2025-02-15T03:56:45.645Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNnM0tiTXhBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUlAOsgPaWe4eiB5vktKChZObNmJCYRI3Yla9Jf7EHep_-VoMe_=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106348948812576349405?hl=en",
+          "reviewerNumberOfReviews": 58,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sadie Robirds",
+          "rating": 5,
+          "text": "Went to Fratelli's for my birthday celebration. We planned ahead for a private room. They were very gracious to put up with my big noisy family haha! Service was great and the food was delicious. Highly recommend!",
+          "date": "2025-02-11T23:11:47.222Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURBcTRPZ1VnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVOKbZ4Bbf1IVZsVIzCuZzmNTClduvxYIvga3U4oQZHRh09thAd0A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111013988952758766170?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kira Masnica",
+          "rating": 5,
+          "text": "Our 3rd visit to Fratelli, everything was exceptional! From appetizer, soup, entree to dessert off the chart fresh, bright and yummy! Shannon, you were amazing!!",
+          "date": "2025-02-09T01:10:01.312Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURBanZ2bVpnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXOg62R0kGMksZF8rzOYIWdSZIT_SwEBVw8el_b1h56GPWIszmr=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108173247621209080813?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Shane Triplett",
+          "rating": 3,
+          "text": "Kinda disappointed. The house salad dressing was good and the meatballs were okay, but everything else must have been frozen and microwaved cuz those were the toughest noodles I've ever eaten. I had lasagna but you wouldn't be able to tell by looking at the plate because it looked like a bowl of marinara sauce with two meatballs in it. I prefer Stouffer's lasagna which is saying something.",
+          "date": "2025-02-08T02:43:07.593Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURBaXBpU1N3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVJ87kPSPBRRIIb_rerCYolaHCD5NyEhd6HUFiDrNIZ_mSFsyw2=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107759989587441562347?hl=en",
+          "reviewerNumberOfReviews": 105,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Erdem Fırat",
+          "rating": 5,
+          "text": "Our server Tina was great! Fratelli Pizza was bread more than pizza and tomato soup was like pizza sauce. But we enjoyed the time we spent there! Thank you for having us!",
+          "date": "2025-02-07T03:29:53.438Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURBcExHWG5nRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXZSGzj3qATeNImjsPBdqT7Nt7T4bj1gCFwU5a_NnbaUXyDt8pp=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103235691893977490239?hl=en",
+          "reviewerNumberOfReviews": 15,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Slow Walker",
+          "rating": 5,
+          "text": "Delish",
+          "date": "2025-01-30T23:34:39.749Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNBcXN2RUFREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWCFWGMmv5muN0A8ebpfyzbKhCJH3FGP9S6E5gO23JpRept9JyE=s1920-c-rp-mo-ba7-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108740915578716266587?hl=en",
+          "reviewerNumberOfReviews": 419,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tyler Toone",
+          "rating": 5,
+          "text": "This is a great Italian restaurant! So many great options. Tonight I had the lasagna with sausage, and it was amazing! Service was is excellent and the ambience delightful. You've got to give this place a try. #romantic #vegetarianfriendly #datenight #healthy\n\n1/24/25 update\nThe seared tuna special was one of the best dishes I’ve ever had! Such a good flavor and so tender. The lemon noodles and crispy broccolini were great. My wife had the halibut and it was also very good! Savannah was an excellent server and the staff so helpful and prompt with our orders.",
+          "date": "2025-01-25T02:22:21.662Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNvOElPTV9RRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVVLl7DZryuCveJDXf1iy_XjbvA9uY0XfU1WyTRnwVZgSwQFPuk-g=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102431314950435821021?hl=en",
+          "reviewerNumberOfReviews": 179,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Shaun Hanson",
+          "rating": 5,
+          "text": "We just had our first visit and we were blown away with the outstanding service, amazing food, and wonderful atmosphere. We will most definitely be returning on a regular basis.",
+          "date": "2025-01-22T01:05:42.615Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURfdEx2d213RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKHV7-SA7AZH0h79N8GGVv-Qod925m9v1OY1kfIGcZ92sdWGA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103659890165718452816?hl=en",
+          "reviewerNumberOfReviews": 82,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Niki Peterson",
+          "rating": 5,
+          "text": "Fantastic food and fantastic service.\nThe drinks are delightful and the Gelato is absolute perfection.",
+          "date": "2025-01-21T04:18:58.544Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURfeU03YlpnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWCdaTZS2jiL07ksXCnJw7SMVDbEk3BG35_eYXsMN0Dtl9qI8E=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104002737093743478061?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tara Gonzales",
+          "rating": 4,
+          "text": "Me and my family came here to celebrate my father in law's birthday. At first we were skeptical as it wasn't super busy for a Saturday night but were pleasantly surprised.\n\nWe got 3 appetizers and they were all amazing. Fresh, light, and delicious. Then we got our entrees.\n\nChicken parm was delicious and perfectly cooked. Lasagna was cheesy but could use a bit more spicy. Spaghetti and meatballs was classic and tasty. Fettuccine Alfredo w/ shrimp was creamy, salty, and rich. Could use a bit more shrimp.\n\nHowever the carbanara was very disappointing. It lacked flavor, the sauce separated, and the panceta was overcook. It was upsetting seeing how everything else was wonderful.\n\nDessert was average. Tiramisu could use more lady fingers and less marscapone. The chocobella was rich but nothing special. And the vanilla gelato was creamy and the prefect amount of sweet.\n\nThe service was fantastic. Our server was attentive and friendly. Our waters were always full and drinks refilled without asking. We felt comfortable, taken care of, and enjoyed our evening.\n\nOverall I'd say it's a great place to come and enjoy some good Italian food.",
+          "date": "2025-01-19T02:10:35.575Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNfeS0zS0t3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ1cSSD8rw6SBo3GE9V9covnzV_VD3G82wvizeKYXbWB3DxMg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114940605156700604547?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jenny Webster",
+          "rating": 5,
+          "text": "Fabulous calamari\nGreat. fast forward, it is 2022. New beautiful building. Just as good if not  better 😉 strongly recommend!!!!   Now here we are in 2025. It's better now if that's possible!!! Sooo good!! Unfortunately it's up the street from me now. I gained 10 pounds. And totally worth it!!!😁",
+          "date": "2025-01-12T07:51:21.378Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURrM2ZIcXZBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJyGX7tOUn2tKZX73CGjB6JkwxSNF7xIPLWT19oguP3YsV4DdQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110805365493865108025?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Greg O'Horo",
+          "rating": 5,
+          "text": "",
+          "date": "2025-01-09T06:17:17.856Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURmellXb0dBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKGXU5Jw10yPCRpVsFrJ61uMKHW6IvitsdO2iKX-kCLPlUN_A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101393339714609091316?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "David Montoya",
+          "rating": 5,
+          "text": "They hosted a high school athletic banquet banquet for my team.. They closed off the entire restaurant just for just for us. Their food was amazing and they are hospitality was even better!!  The food was great, as usual.. I highly recommend this place.\nEveryone is so friendly and the food is fantastic. Desserts are the best!\n\nIf you haven't been here, you need to try it soon.\n\nUpdate:\nThey have amazing food with good drinks and an awesome dessert menu. The employees are very nice.",
+          "date": "2025-01-08T03:25:50.379Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQybGQzNTlRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUV8-yIECNdjb50EW94BAKaX5HJln_BzginfHAfMsDtn603DJp8=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110504288535740789380?hl=en",
+          "reviewerNumberOfReviews": 169,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Vinod Krishnan",
+          "rating": 5,
+          "text": "Very impressed with the spread at this wonderful Italian restaurant. Their tomato basil soup was one of the best I’ve had ever.\n\nAuthentic pizza with great taste and flavor. Again the best pizza I’ve had.\n\nEnding with the Chocobella dessert which was very tasty.\n\nHighly recommend visiting here.",
+          "date": "2024-12-29T05:59:52.506Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNmcnZhaEd3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIkAXVXhuB_STN82CBrmCfce3bT3cTJABmQsHv3XQnPWidTuS0=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110710380206774152952?hl=en",
+          "reviewerNumberOfReviews": 35,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kimberly Morrison",
+          "rating": 5,
+          "text": "",
+          "date": "2024-12-23T00:54:21.364Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNhdEpUeHhnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJrU-CiCvmuIPutE7WRBxyqKlPlCe2QlONKm_mRsBkjBZxMuphC=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107577469101657455425?hl=en",
+          "reviewerNumberOfReviews": 53,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kent Lutz",
+          "rating": 5,
+          "text": "Quite, enjoyable, tasty and top notch service!",
+          "date": "2024-12-22T00:55:18.812Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUR2MmJlVjdBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVwQCAvG2iUqo16FBbOyK2RT8wzrR20lIjZDvTA1gNAKfk0fz1v=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107624419850217228690?hl=en",
+          "reviewerNumberOfReviews": 161,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Deanna Tolman",
+          "rating": 4,
+          "text": "",
+          "date": "2024-12-21T22:14:30.644Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUR2bVkySTVBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXg9Onx1fYd5v_2Ni8NEY5OJXAf2y9AcRLcIs16iwEp9Cu4tmu8=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103633667484053100672?hl=en",
+          "reviewerNumberOfReviews": 52,
+          "sentiment": "positive"
+        },
+        {
+          "author": "joe day",
+          "rating": 3,
+          "text": "Ordered 3 pizzas the day before Thanksgiving because we didn't feel like cooking dinner. One of the pies was black and burnt on the bottom. Their oven must have been too hot, the top of the pie was not burnt. We should have taken it back, but we didnt want to drive back and deal with it and we were hungry so we ate it. The pizza is decent all in all, much better than ordering from a major nationwide pizza chain.\nI will go back for sure but will inspect things before leaving if ordering take out.",
+          "date": "2024-11-30T20:59:00.233Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURQOHM2TDJnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLvgSt00aq3MOF4PC_fIcxwVzUHKSvz1GqHHraaeVW8gu8-uw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103135473257282418533?hl=en",
+          "reviewerNumberOfReviews": 111,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Curtis davis",
+          "rating": 5,
+          "text": "Very nice people and great food.",
+          "date": "2024-11-23T22:00:52.889Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNQcHZic0JBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIMUrMSkft3PyzAlxd-MO77sq6MKIKhv6-z_2Pp8OszRIkOeg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102748666050496985861?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Paul Waldron",
+          "rating": 4,
+          "text": "",
+          "date": "2024-11-21T20:13:01.857Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNQMU5DN053EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWw2RUGJPGHSIZmzDqSHr7TXUrahPKoyi68mMK3jJERzJkgfRgc=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110071147568191174646?hl=en",
+          "reviewerNumberOfReviews": 375,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Cheryl Wagner",
+          "rating": 4,
+          "text": "Dined with a large group for lunch. The food and service were good, and they accommodated us with separate checks. If you're with a group, be sure to look at your check to see if they've automatically added gratuity; they added 20% to ours without mentioning it. It makes me wonder if they're hoping people don't notice and leave an additional tip.",
+          "date": "2024-11-21T01:11:50.592Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNQaUpDc1lnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVGcsnAth5eBR30dShDZpzOs6HhYPYPmSXbFeY7GTGzZNVXRvIf=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114500151158156435208?hl=en",
+          "reviewerNumberOfReviews": 81,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Chockis Icelolly",
+          "rating": 2,
+          "text": "Service was super slow.\nFood served there was good - pizza in particular.\nOur toddler was getting fuzzy so we ordered $24 worth dish - eggplant parmijan, and a $24 worth shrimp Alfredo pasta dishes , originally intended to eat at the restaurant, to be packed as take out.\nWe come home and the shrimp dish had exactly 4 pieces of shrimp.\nThe eggplant dish had no pasta - just two slices of eggplant doused in sauce and one cheese crouton.\n\nNot worth your time or money.",
+          "date": "2024-11-16T05:08:35.708Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQzOFp1WXVnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJKFNPcZuAJthD_FTYB5fIicOJb6_7zekbLRtyd8ONnzNyuXA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108517487553573798100?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Melanie Biertzer",
+          "rating": 5,
+          "text": "I had an amazing experience at Fratelli Ristorante in Sandy! The meatball sandwich was a highlight—perfectly seasoned meatballs, smothered in rich marinara, and served on fresh, toasted bread. The warm, soft rolls were the perfect start, and their creamy tomato soup was bursting with flavor and had just the right texture. The ambiance was cozy and welcoming, making it feel like a true Italian dining experience. The service was also top-notch—friendly and attentive without being intrusive. Fratelli nails classic Italian comfort food, and I can’t wait to come back for more!",
+          "date": "2024-10-31T20:11:32.480Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURYbDZ5ZmxRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWbO_R3iJQTMqgDCYDwh3LhNkPy1M-NSc0hgdIM2HNi3zlZkfZh=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100227140549720288938?hl=en",
+          "reviewerNumberOfReviews": 78,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Toe knee Hi there",
+          "rating": 5,
+          "text": "I just happened to be on the same corner as this restaurant tonight and I have been craving some good pasta for ever it seemed. So I walk in at 8:35, 25 mins before they close and browse the menu. Now they are not to cheap of an option but well worth the cost but we'll get to that in a moment. So I ask the gentleman who was working what the serving size looked like and it wasn't as big as I had been hoping for but I settled on some Alfredo without any meat for $16 bucks. I jokingly told him to sneeze when he went to pour my pasta into the bowl so I'd get more, and said I would be back in about 5 mins to grab my order. I come back and this man makes my pasta HUGE no way that was a normal serving of pasta and slathered it's with Alfredo sauce, tells me he threw me in a piece of chicken for it being my first time trying the place and since they were about to close and he even hooked me up with 4 rolls. Now im sure most if not all that food would have ended up in the garbage since they were closing shortly however kudos to him for actually dishing it up to a customer. With  the cost of everything lately it should always be like this thank you brother, I just really hope I don't get you into trouble.",
+          "date": "2024-10-23T03:34:18.303Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURYMEkyY2VnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJi2dj_vm14ayi3fZvoxoo6sHospv1MpERuSv47j6rq6Ljy0A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108139158830415489636?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Caesar M",
+          "rating": 5,
+          "text": "Best lasagna I have ever had!",
+          "date": "2024-10-22T00:22:40.601Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNYejZqOGNREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU_nhUBQcF8-iNpd-mvIEM-u7Wo6JMKcRgtCS4aMKyjUZF5knk=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112365624339972905856?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Blake Bishop",
+          "rating": 3,
+          "text": "Standard, middle-of-the-road Italian restaurant. We've been here a few times and haven't yet found a culinary winner on the menu. On our last visit (on a Tuesday if it matters), we ordered chicken piccata and halibut piccata. The piccata sauce had a white wine/lemon flavor but was thick and somewhat gelatinous, like it had been thickened with cornstarch or perhaps had been delivered by Sysco. It was too much like gravy. The chicken breast itself was well-prepared and flavorful. The halibut was dry. Our server also had an unfortunate but forgivable off-night owing to the large number of tables she serviced.",
+          "date": "2024-10-17T23:48:23.922Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNYaWFPaURREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUWMzchjc1GqpUdi2efkvBc8B21_Hd0MRpXUgBYbcSt3Cv2U9xABg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113469340584860038208?hl=en",
+          "reviewerNumberOfReviews": 62,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Eric Jelte",
+          "rating": 5,
+          "text": "The food was on point,  and the wait staff were attentive and professional.  The decor was a little plain,  but the booths were roomy, with plenty of seats.",
+          "date": "2024-10-16T01:53:38.402Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNYcHJtVkZnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVO0lBbTYdlwE5qbLtI1d0vBEoiqspmUQ_AjZN3oc6OdgQ6C1xg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106455743023006796519?hl=en",
+          "reviewerNumberOfReviews": 46,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dusty Ishoy",
+          "rating": 5,
+          "text": "We have been going to Fratelli’s for 12 years. WE LOVE IT. House made delicious food at a great price. 100% Recommend",
+          "date": "2024-10-13T03:28:26.878Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUM5cV9MS3dBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXvJws11gyn47IO5RTN8LR0HmlTYePBNDDjUejx0Yo9uAw_LSDgsw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112680035055920467029?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jeff D",
+          "rating": 5,
+          "text": "Excellent food, one of the best in the county and great service, very clean inside everyone is nice. I can't say enough good things about it. I'll be back many times. This was my first time there they were recommended to me. If you don't eat there, you're missing out.",
+          "date": "2024-10-13T03:27:47.403Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNYdU5xckh3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLZgPFVlh5tkI0gc9xnLl6w9Pu2MtFeY7vWd0SnjDJFezS5vA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102022082273179028005?hl=en",
+          "reviewerNumberOfReviews": 153,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Trent Winn",
+          "rating": 5,
+          "text": "Dave the owner is a baller, his service impeccable! Greeted us even shared his story of the restaurant!\nSavannah our waitress was amazing some of the best service I have ever had! I would highly recommend this restaurant they know how to do it! Also the Nacho are a 10 get the nacho if you go!!",
+          "date": "2024-09-28T02:50:39.104Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNuNWVuSzBRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWEm5CabjYy6qNYyrXVxalbsWbJM-LDMTR3DdocZrhsanT-N1odJQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109517208321893014643?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Koby Curtis",
+          "rating": 3,
+          "text": "Food is ok. Nothing spectacular for the price and for a Italian restaurant the menu is pretty limited. The Cake desert was good but chicken parmesan was just alright.",
+          "date": "2024-09-24T17:07:22.525Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNuOHV6a0hREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJCGPhVhWNV4Rr2ZLzGsfwsU0gzTyK5IWURlNfYFLOJpq2VSkZT=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106226434056307982411?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dan F",
+          "rating": 5,
+          "text": "The food here was really good. The flavors weren't what you'd get at the standard Italian restaurant. It's a great addition to our regular rotation.",
+          "date": "2024-09-20T12:38:51.855Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURocTdTWThRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLLN__Ec3HaKSa0RTN1538Nteuycm7O64UK2408_PCu4eG4MA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102479054786847107569?hl=en",
+          "reviewerNumberOfReviews": 119,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jon Warner",
+          "rating": 5,
+          "text": "Great Italian sausage Lasagna",
+          "date": "2024-09-19T20:02:47.501Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURIODRtWnFRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUGS2KvcN5Zk2RvQPCzlhP_WRGA5lCFuYtcO4DFMAHV6e0AFZJoYg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113134192271245695377?hl=en",
+          "reviewerNumberOfReviews": 79,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dave Crane",
+          "rating": 4,
+          "text": "We ordered the \"Meatballs & Sausage\" Appetizer.  I was so glad that we did!  They were seasoned and cooked perfectly.\nI ordered the \"Veal Marsala\" and it was a tiny bit tough (that is the nature of the cut, of beef, I think) but, it was very good and the sauce was incredible!  My date ordered the Chicken Parmesan and LOVED it!  I tasted it and, I agreed!\nIt was so moist and delicious!  It melted in your mouth!  Cudo's to the Chef!!!!\nWe ordered Italian Sodas and they were THE WORST that we have ever had, ANYWHERE!   We both had a different flavor but, they tasted like carbonated water with a dash of food coloring (so weak, no flavor).  I have to believe that they were made the way that the Management tells them to them to be made(?)  Am I wrong???  For $3-$4 dollars (each) make them smaller but FULL of flavoring (like many of the other Italian eateree's that we frequent).\nOur waiter made us wait just a little to long (especially for the check).  We thought that he seemed preoccupied, but busy...a lot!  [You need to do better Carter, I still gave you a 15% tip.  It wasn't that busy, yet].  We arrived at 5:30 P.M. on a Saturday.  A customer should NEVER have to wait so long that they get up, walk across the restraunt and ask a different waitress for 'to go' boxes].  And, then have to (again) wait for a check.\nWe will definately eat here again, I think.\nThank You",
+          "date": "2024-09-08T21:35:06.709Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNIeTl6VjVnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXnhrcX0l2IVkhtrokNtMl15nm65M0Bu5el2MR_-D8ejfhfIgSj=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103788745128194181008?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Michelle",
+          "rating": 5,
+          "text": "By far the best Italian restaurant in Utah. Food is amazing and the service is outstanding!",
+          "date": "2024-09-06T20:13:12.943Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNIaGFMSDR3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKVjMNbHJVO8bBSEPDoxiyLGQG5rbfEz5namEWvqeQlzBUqtqfe=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110010931553534348785?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "G. M.",
+          "rating": 4,
+          "text": "Customer service was 5 star excellent.  The staff was so accommodating, kind and thoughtful of little details which can really matter. Very cute place and definitely has the feel of family owned and ownership cares about taking care of people the old fashioned way.\n\nFood was good and satisfying.  Only tried one entrée; 4 star on chicken alfredo. We needed to order the same thing for a small group and it was perfect for what was needed. The deserts were delicious. We tried several and split them up for sharing.  Everyone loved that.  By the way, consider them for home party take out - pricing reasonable.\n\nWe had chicken Alfredo, salad, dessert. I would like to try some other things on the menu. If I could have given 4.5 on the food, I would have.  The choice was 4 or 5 but not allowed to show in-between.  I WILL DEFINITELY GO BACK.  Try them.",
+          "date": "2024-09-05T13:51:04.120Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNEck9lV1VBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJrtIFM9ML0gfw1PNw0vpqxfR3P2d8b-6K0vVPfRTM7rifB5Q=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101528252485662651364?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Shauna Stein",
+          "rating": 5,
+          "text": "",
+          "date": "2024-09-01T23:01:17.681Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNIakxYNkh3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUe1gE_9Y6PqEiumbs4UBQ6LUYuxLYyckhXmcS0WAZga4oAnndE=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107585748468385398203?hl=en",
+          "reviewerNumberOfReviews": 28,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Donna Davis",
+          "rating": 1,
+          "text": "They seated us and that was it. Fifteen minutes later we were still sitting there, with our menus, waiting for our order to be taken. Staff were standing around talking to each other. As we left an employee opened the door and said “Have a safe weekend,” not even realizing that we hadn’t eaten. It wasn't all that busy for a Saturday night. I gave 1 stars because I couldn’t go lower.",
+          "date": "2024-09-01T01:41:42.567Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNIdVBQVEJBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLuzpCARSKUqQOPwKoJfQe1VpJL6N-XMddbbLoOpb8lY99zyA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107177279588025579041?hl=en",
+          "reviewerNumberOfReviews": 17,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Liliana Ramírez ernst",
+          "rating": 5,
+          "text": "",
+          "date": "2024-08-26T02:59:54.533Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQ3dWZ6Wnl3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJQ7Bcc1EWmWwBxz3I2gCa22sGhctQYDQ74TC0FDCU6ti8Zjg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107257746295061466413?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Justin Cunard",
+          "rating": 1,
+          "text": "Wanted to like this place. We ordered a bottle of white wine. Wasn't chilled. Served in a bucket with barely any ice. Ordered a chicken picatta and was really disappointed. Not good at all. Chicken tasted like it was fried in oil vs butter. Clams and mussels was mediocre as well. Like other reviewers have stated, the food is bland.Overall would not recommend and won't be coming back. Not at all worth the premium price they charge for subpar food.",
+          "date": "2024-08-22T16:21:21.470Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQ3ak91UTR3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV2JFGLRjLazqo8GMM9yq62q_S9kI1691NPvB8FQDuv77xtLlKEZw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103265414378920238930?hl=en",
+          "reviewerNumberOfReviews": 41,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Graduated",
+          "rating": 5,
+          "text": "",
+          "date": "2024-08-17T19:00:41.297Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUM3dGNma0Z3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJs6SVKJAYA3jX1tUl6DiZJ4kuPhOPlCYeOpwt5Nu1Lhp2j=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100652077668344525935?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Craig Niles",
+          "rating": 5,
+          "text": "The food is great!  We will be coming back for sure.   We have been looking for a good, easy, Italian place and we found it!",
+          "date": "2024-08-17T01:24:18.389Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUM3bVp2bG1BRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKBOsHZoRaN49lHL6x-h6TcYxZKWQ2HghYatJiopy0s4-FBcg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104999447998608404597?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Stan Hirai",
+          "rating": 5,
+          "text": "",
+          "date": "2024-08-16T02:59:04.665Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUM3M3NXVXZ3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXb8T8gOxVTzxWRSS1Xu8jKwzdFeFbLxjh7VW10SqpYWu1cS9XN=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114555975856070352755?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jared",
+          "rating": 5,
+          "text": "Visiting from out of town. One of my clients recommended Fratelli’s. Just squeezed in before they closed. The lasagna was the best I’ve ever had. Colton was great and the nice lady made it a very pleasant experience. I’ll be stopping in every time I visit Utah.",
+          "date": "2024-08-15T02:58:20.900Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUM3bXF2ZmlBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUlp2egD7lSyL7V5le1jmlNaIP6-ePnL6InaJHmoBTGHFa5fAWR=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104820776624972684089?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Scott Arrington",
+          "rating": 5,
+          "text": "Excellent food",
+          "date": "2024-08-14T02:29:36.755Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUM3b3N6cDFnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJMQTde4TDIKy5zFcOwQQdunOOWo9Xzz0dOw0CQdkH_C5mFqg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117405445160836690679?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Deidre Schoenfeld",
+          "rating": 5,
+          "text": "We were a large party and server was great. I asked if they ever serve Panzanella. Server said chef could put together one even though it wasn’t on menu.",
+          "date": "2024-08-01T02:40:40.487Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURia0lpNi1nRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUgKETqdwSCGouQQa_i5dObsT4s6B1rT23t5QoNY5wd0qyNMkY=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117079373979094830413?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Pauline Clark",
+          "rating": 5,
+          "text": "This is a charming restaurant. The service was wonderful and the food out of this world delicious.itbtook me back to my Nona's cooking.",
+          "date": "2024-07-16T18:35:30.037Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURycXFXdVRnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLMqIJj7OS3nV4NEbbZzjNsJDI8JvUVTy0T3soOALzbY6K3pw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104460143310214169360?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Hannah Clark",
+          "rating": 5,
+          "text": "My mom and I came here for the first time and we were both injured on knee scooters. We were greeted at the door and the doors opened and offered to sit wherever was comfortable. We have lots of allergies and they were very attentive to helping us have a great meal and great experience by even special making a pizza for us that my mom could eat. Gluten free pasta and pizza were both amazing. Will definitely be coming back here",
+          "date": "2024-07-16T18:35:14.372Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURycXFYMEhnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXDQVl2M08UFFs4svh7MyEAQ1oZffsvw39EIKZq5HoKIo5URNyluA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117090090486302173442?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "mfwabaga dixon",
+          "rating": 5,
+          "text": "",
+          "date": "2024-07-06T00:02:36.540Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNycXBMeVVBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWEvL54q1LnTdAhuKrE8CFKEkkDS6QBqwflE0-IuhypLmUetkA=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113235399353619323273?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Amy Shaw",
+          "rating": 5,
+          "text": "Best pizza around... ok, not many options so let's say it's Absolutely worth the drive from Salt Lake... great vibe and great people!",
+          "date": "2024-06-26T03:37:23.362Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURMN05tWFlBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLJYttk7nAixKtYMZzSQ_BAjb867TQGL7mfPFWjdYYJ-Z8ARw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110382228975289920094?hl=en",
+          "reviewerNumberOfReviews": 70,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mary Goldie Smith",
+          "rating": 5,
+          "text": "Would recommend to anyone. So good",
+          "date": "2024-06-24T20:10:54.235Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURMc016di1RRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ68ppuv6WVZosXcHcrxgp2YJIuBPMm67efJDaggAGsnpMecw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111532020247521062114?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Diane Shurtleff",
+          "rating": 5,
+          "text": "Just opened 3 months ago. The service was wonderful very attentive.  The food was sooo good. The atmosphere was very nice and comfortable.  Would highly recomend.",
+          "date": "2024-06-23T01:44:03.203Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNMODdtMXZBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI3tqSGf7apY5cXYpQZr41NGtojoXrfSXHbMoNFpo1JGDfHVA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100428621955929714167?hl=en",
+          "reviewerNumberOfReviews": 42,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Francisco Mendoza",
+          "rating": 2,
+          "text": "Good service but no flavor in food. I am not going back.",
+          "date": "2024-06-15T18:41:29.777Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNMMUlQMHV3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU-ARJ5dvCr8uA1jUCM2GGYVNP_TjhD78m6m4r-4YaNRIUCAfX9Iw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111494787351593623641?hl=en",
+          "reviewerNumberOfReviews": 36,
+          "sentiment": "negative"
+        }
+      ],
+      "customerMoodAnalysis": {
+        "overallMood": "satisfied",
+        "sentimentSummary": "Customers have positive experiences overall. Your 4.3/5 rating from 100 recent reviews shows solid satisfaction with room for growth.",
+        "sentimentDistribution": {
+          "ecstatic": 15,
+          "delighted": 57,
+          "satisfied": 14,
+          "neutral": 2,
+          "frustrated": 5,
+          "disappointed": 6,
+          "angry": 1
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "food quality",
+            "mentions": 41
+          },
+          {
+            "theme": "slow service",
+            "mentions": 26
+          },
+          {
+            "theme": "service excellence",
+            "mentions": 20
+          },
+          {
+            "theme": "atmosphere",
+            "mentions": 14
+          },
+          {
+            "theme": "speed of service",
+            "mentions": 5
+          },
+          {
+            "theme": "food issues",
+            "mentions": 5
+          },
+          {
+            "theme": "value for money",
+            "mentions": 4
+          },
+          {
+            "theme": "overpriced",
+            "mentions": 4
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 35,
+          "satisfaction": 76,
+          "disappointment": 7,
+          "frustration": 1,
+          "anger": 1
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "Customers rave about the consistently warm and friendly service, which enhances their dining experience. - social media marketing can showcase this strength",
+            "The restaurant's inviting and cozy atmosphere, complete with Italian music, creates a memorable dining experience that customers love. - SEO services can leverage this for better visibility",
+            "The wood-fired pizzas and signature Italian dishes, like veal marsala and lobster ravioli, are frequently praised for their taste and quality. - Boostly marketing services can amplify this"
+          ],
+          "improvementOpportunities": [
+            "Negative reviews and reputation issues - review management can address this concern",
+            "Poor online visibility and competition/discovery issues - SEO services can solve this visibility issue",
+            "Lack of atmosphere/ambiance awareness - social media marketing can improve this area"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 100,
+          "averageRating": 4.3,
+          "ratingDistribution": {
+            "1": 6,
+            "2": 6,
+            "3": 7,
+            "4": 14,
+            "5": 67
+          },
+          "sentimentTrends": {
+            "trend": "stable",
+            "recentAverageRating": 4.2,
+            "previousAverageRating": 4.3,
+            "recentReviewsCount": 10
+          }
+        }
+      },
+      "examples": {
+        "positive": [
+          {
+            "author": "Steven Jennings",
+            "rating": 5,
+            "text": "The Absolute best tomato Bisque soup ever ... and the spaghetti sauce is the Absolute best.. most definitely eating there again.. the Wait staff was the best .God Bless Y'alls. Prayers Huggs and Love Always ✅️",
+            "date": "2025-08-31T17:10:31.724Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tGU1QxVlJaVmxNVFRkeFJtTjVRM0ZQZDNWNFNVRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVjONh-uMB1PJj6LcCr7xkicKHIaw84uW3SA2AsMo9Js5moIfc=s1920-c-rp-mo-ba4-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/108746241557374124321?hl=en",
+            "reviewerNumberOfReviews": 26
+          },
+          {
+            "author": "Kimberly Hinkins-Herd",
+            "rating": 5,
+            "text": "This Italian quickly became my favorite. Locally owned by 2 brothers their wood-fired pizzas are amazing, their italian nachos are a masterpiece.",
+            "date": "2025-08-31T12:10:14.952Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21FeldHNU1jMU14UzFKNVZWRTVZMUZ0VEhCdlVHYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJNfVxrLncCXd20tjkjbEGUc8AzMZUbkkrlo4Fv08cWC7UCIJly=s1920-c-rp-mo-ba4-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/108640651925232667080?hl=en",
+            "reviewerNumberOfReviews": 68
+          },
+          {
+            "author": "Owen Martin",
+            "rating": 5,
+            "text": "This was the best place i’ve ever been! I’d eat here every single day!",
+            "date": "2025-08-28T23:40:40.009Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25vNGFWQnlhbXB6YW5SS1MzQTRaV2REYldsRWJGRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIPlnMh_nKNPhTvY58L0X396bwp6_11SyN1cHUQWrzf8-EkVw=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/106510078987222218752?hl=en",
+            "reviewerNumberOfReviews": 1
+          }
+        ],
+        "neutral": [
+          {
+            "author": "Cassidy Stubbs",
+            "rating": 3,
+            "text": "",
+            "date": "2025-03-20T11:16:19.509Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUN3OWUtcWVBEAE",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIeYoOEEkIajtSfvxthMXXqx9dpPJ2zFVjJSRGn2tr2ir9LdQ=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/113414573677670700828?hl=en",
+            "reviewerNumberOfReviews": 8
+          },
+          {
+            "author": "Daniele D'Apuzzo",
+            "rating": 3,
+            "text": "Mastra, in American Fork, is the real deal.\nFratelli is not authentic Italian food. Very Americanized. Let me explain why.\n\n- carbonara needs goat cheese, not Parmesan. Which they sell! Also, there is no green peas in carbonara..\n- the dirty martini cup came half full, almost half as much as any other place we have been to\n\nThe service was great, the waitress was always checking and brought everything on time.\n\nThe recipes could use some help …",
+            "date": "2025-02-23T02:53:08.707Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURnN01TOGN3EAE",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW-ehd8d_zy7cpo8hg7HvDzbZfY40jJ2wCm4gwQ6zfM4o7j_2sd=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/104728893923845096538?hl=en",
+            "reviewerNumberOfReviews": 75
+          },
+          {
+            "author": "Patrick Utley",
+            "rating": 3,
+            "text": "Meh, it was fine. Nothing special though. Had the Carbonara, and tried the bruschetta appetizer and charcuterie board. Would offer the charcuterie again, but not the other items.",
+            "date": "2025-02-20T01:31:04.335Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNnN2NfYmlnRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVzHZ_woBG42RUUn6RQEJgHYdy5Ao-7C3oxAcEFd7rbv0CwMYheyg=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/102142164878303078027?hl=en",
+            "reviewerNumberOfReviews": 46
+          }
+        ],
+        "negative": [
+          {
+            "author": "Joyce Steverson",
+            "rating": 2,
+            "text": "Way overpriced for amount and taste.   Not worth it.",
+            "date": "2025-08-27T19:53:45.046Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xCQloyZERVVnAxZG1wRVVFZzJURVl3YTA1Tk9HYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLlvZjw-4UtxfScqJU6B2bRc0WKxmgnvphSvEL5e9qi21hf4w=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/115529803162469473534?hl=en",
+            "reviewerNumberOfReviews": 4
+          },
+          {
+            "author": "Joe Peterson",
+            "rating": 2,
+            "text": "Very mediocre, bland, overpriced Italian food. Tomato basil soup was the only redeeming quality.",
+            "date": "2025-07-20T18:59:13.151Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21GclNteEdSWEpGU1ZSaFQzUnJSRmN4TVRaMWJuYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXZp0ZQKPsEOYRiS5tgar4OxzOGvbPDrHjL8Y9f2bl6C8A1se6ObA=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/106328826767556669677?hl=en",
+            "reviewerNumberOfReviews": 12
+          },
+          {
+            "author": "Rosie Santiago",
+            "rating": 2,
+            "text": "I got the clam linguine. It was very salty not flavorful at all.",
+            "date": "2025-06-21T17:55:38.078Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t4bGJXWnZSbWN4V1VwdmIzWkhNVmxKVTBwR1VWRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWI4zixeTvJDa2A-mYPAur748rDR24_dDZUo46MzbGWDwUIj9zJ=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/107232222041854970820?hl=en",
+            "reviewerNumberOfReviews": 19
+          }
+        ]
+      },
+      "trends": {
+        "ratingTrend": "stable",
+        "volumeTrend": "stable",
+        "responseRate": 0,
+        "averageResponseTime": "No responses"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ]
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/fratelliristorante",
+      "instagram": "https://www.instagram.com/fratelliristorante",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null
+  },
+  "metadata": {
+    "cachedAt": "2025-09-16T01:38:55.918Z",
+    "expiresAt": "2025-10-16T01:38:55.918Z",
+    "placeId": "ChIJf0at_P2HUocROAafSqI6Ov8",
+    "restaurantName": "Fratelli Ristorante",
+    "cacheVersion": "1.0.0"
+  }
+}

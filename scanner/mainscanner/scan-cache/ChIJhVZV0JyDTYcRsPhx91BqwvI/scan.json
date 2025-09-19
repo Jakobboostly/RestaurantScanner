@@ -3,11 +3,11 @@
     "domain": "www.waybackburgers.com",
     "restaurantName": "Wayback Burgers",
     "placeId": "ChIJhVZV0JyDTYcRsPhx91BqwvI",
-    "overallScore": 68,
-    "performance": 63,
-    "seo": 70,
+    "overallScore": 78,
+    "performance": 100,
+    "seo": 58,
     "mobile": 43,
-    "userExperience": 60,
+    "userExperience": 93,
     "issues": [
       {
         "type": "seo",
@@ -2728,13 +2728,27 @@
     },
     "profileAnalysis": null,
     "serpScreenshots": [],
-    "restaurantSearchScreenshot": null
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 58,
+      "social": 100,
+      "local": 62,
+      "reviews": 93,
+      "overall": 78
+    },
+    "originalScores": {
+      "seo": 70,
+      "overallScore": 68,
+      "performance": 63,
+      "userExperience": 60
+    },
+    "migratedAt": "2025-09-16T00:37:21.598Z"
   },
   "metadata": {
     "cachedAt": "2025-08-25T19:23:50.029Z",
     "expiresAt": "2025-09-01T19:23:50.029Z",
     "placeId": "ChIJhVZV0JyDTYcRsPhx91BqwvI",
     "restaurantName": "Wayback Burgers",
-    "cacheVersion": "1.0.0"
+    "cacheVersion": "2.0.0"
   }
 }

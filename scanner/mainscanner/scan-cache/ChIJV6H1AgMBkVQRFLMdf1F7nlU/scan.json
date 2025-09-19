@@ -1,0 +1,2606 @@
+{
+  "data": {
+    "domain": "www.secretburgerkitchen.com",
+    "restaurantName": "Secret Burger Kitchen Tacoma Smash Burgers",
+    "placeId": "ChIJV6H1AgMBkVQRFLMdf1F7nlU",
+    "overallScore": 78,
+    "performance": 100,
+    "seo": 58,
+    "mobile": 54,
+    "userExperience": 87,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "burger near me",
+        "position": 0,
+        "searchVolume": 5400,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "burger delivery Tacoma",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best burger Tacoma",
+        "position": 0,
+        "searchVolume": 590,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "burger",
+        "position": 0,
+        "searchVolume": 1900,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "burger places near me",
+        "position": 0,
+        "searchVolume": 590,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "burger Tacoma Washington",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "burger delivery near me",
+        "position": 0,
+        "searchVolume": 20,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "burger open now",
+        "position": 0,
+        "searchVolume": 20,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 50,
+        "keywords_appeared": 4,
+        "total_keywords": 8,
+        "average_position": 2.8,
+        "best_position": 1
+      },
+      "keyword_results": [
+        {
+          "keyword": "burger near me",
+          "found": true,
+          "position": 3,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Secret Burger Kitchen Tacoma Smash Burgers",
+            "address": "Tacoma, WA ",
+            "website": "https://www.secretburgerkitchen.com/",
+            "phone": "(253) 507-8653",
+            "rating": 4.5,
+            "reviews": 394
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Bomb Burger Tacoma",
+              "address": "Tacoma, WA ",
+              "website": "https://order.toasttab.com/online/bomb-burger",
+              "rating": 4.7,
+              "reviews": 215
+            },
+            {
+              "position": 2,
+              "name": "BURGER SEOUL",
+              "address": "Tacoma, WA ",
+              "website": "https://burgerseoul.shop/",
+              "rating": 4.7,
+              "reviews": 2400
+            }
+          ]
+        },
+        {
+          "keyword": "burger",
+          "found": true,
+          "position": 3,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Secret Burger Kitchen Tacoma Smash Burgers",
+            "address": "Tacoma, WA ",
+            "website": "https://www.secretburgerkitchen.com/",
+            "phone": "(253) 507-8653",
+            "rating": 4.5,
+            "reviews": 394
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "BURGER SEOUL",
+              "address": "Tacoma, WA ",
+              "website": "https://burgerseoul.shop/",
+              "rating": 4.7,
+              "reviews": 2400
+            },
+            {
+              "position": 2,
+              "name": "Shake Shake Shake",
+              "address": "Tacoma, WA ",
+              "website": "https://www.shakeshakeshake.me/",
+              "rating": 4.2,
+              "reviews": 2100
+            }
+          ]
+        },
+        {
+          "keyword": "best burger Tacoma",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "burger delivery near me",
+          "found": true,
+          "position": 4,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Secret Burger Kitchen Tacoma Smash Burgers",
+            "address": "Tacoma, WA ",
+            "website": "https://www.secretburgerkitchen.com/",
+            "phone": "(253) 507-8653",
+            "rating": 4.5,
+            "reviews": 394
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Bomb Burger Tacoma",
+              "address": "Tacoma, WA ",
+              "website": "https://order.toasttab.com/online/bomb-burger",
+              "rating": 4.7,
+              "reviews": 215
+            },
+            {
+              "position": 2,
+              "name": "Go Philly Cheesesteaks & Wings",
+              "address": "Tacoma, WA ",
+              "website": "http://gophillycheesesteaks.com/",
+              "rating": 4.3,
+              "reviews": 1700
+            },
+            {
+              "position": 3,
+              "name": "BURGER SEOUL",
+              "address": "Tacoma, WA ",
+              "website": "https://burgerseoul.shop/",
+              "rating": 4.7,
+              "reviews": 2400
+            }
+          ]
+        },
+        {
+          "keyword": "burger Tacoma Washington",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "top burger Tacoma",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "burger restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "burger food Tacoma",
+          "found": true,
+          "position": 1,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Secret Burger Kitchen Tacoma Smash Burgers",
+            "address": "Tacoma, WA ",
+            "website": "https://www.secretburgerkitchen.com/",
+            "phone": "(253) 507-8653",
+            "rating": 4.5,
+            "reviews": 394
+          },
+          "competitors": []
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"best burger Tacoma\", \"burger Tacoma Washington\", \"top burger Tacoma\", \"burger restaurant near me\" - optimize Google My Business profile with these keywords",
+        "Ranking below #1 for 3 keywords - increase customer reviews and engagement to improve rankings"
+      ],
+      "scan_metadata": {
+        "location": "Tacoma,Washington,United States",
+        "timestamp": "2025-09-15T18:36:42.937Z",
+        "total_scan_time_ms": 63756
+      }
+    },
+    "competitors": [
+      {
+        "name": "Wooden City Tacoma",
+        "domain": "woodencitytacoma.com",
+        "performance": 94,
+        "seo": 85,
+        "accessibility": 80,
+        "bestPractices": 89,
+        "overallScore": 87,
+        "rating": 4.7,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 530,
+        "keywords": 24,
+        "domainAuthority": 87,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+100 keywords",
+        "authorityGap": 3,
+        "backlinks": 720
+      },
+      {
+        "name": "Boathouse 19",
+        "domain": "boathouse19.com",
+        "performance": 86,
+        "seo": 77,
+        "accessibility": 73,
+        "bestPractices": 82,
+        "overallScore": 80,
+        "rating": 4.3,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1298,
+        "keywords": 56,
+        "domainAuthority": 79,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 1126
+      },
+      {
+        "name": "West 122",
+        "domain": "west122.com",
+        "performance": 94,
+        "seo": 85,
+        "accessibility": 80,
+        "bestPractices": 89,
+        "overallScore": 87,
+        "rating": 4.7,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 955,
+        "keywords": 63,
+        "domainAuthority": 85,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+100 keywords",
+        "authorityGap": 3,
+        "backlinks": 717
+      },
+      {
+        "name": "Duke's Seafood Tacoma",
+        "domain": "dukesseafoodtacoma.com",
+        "performance": 92,
+        "seo": 83,
+        "accessibility": 78,
+        "bestPractices": 87,
+        "overallScore": 85,
+        "rating": 4.6,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1363,
+        "keywords": 30,
+        "domainAuthority": 87,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+50 keywords",
+        "authorityGap": 1,
+        "backlinks": 972
+      },
+      {
+        "name": "Katie Downs Waterfront Tavern",
+        "domain": "katiedownswaterfronttavern.com",
+        "performance": 86,
+        "seo": 77,
+        "accessibility": 73,
+        "bestPractices": 82,
+        "overallScore": 80,
+        "rating": 4.3,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 504,
+        "keywords": 53,
+        "domainAuthority": 79,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 892
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 72,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-15T18:37:38.287Z",
+    "businessProfile": {
+      "name": "Secret Burger Kitchen Tacoma Smash Burgers",
+      "address": "8402 S Hosmer St, Tacoma, WA 98444, USA",
+      "rating": 4.5,
+      "reviewCount": 394,
+      "phoneNumber": "(253) 507-8653",
+      "website": "https://www.secretburgerkitchen.com/",
+      "formatted_address": "8402 S Hosmer St, Tacoma, WA 98444, USA",
+      "address_components": [
+        {
+          "long_name": "8402",
+          "short_name": "8402",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "South Hosmer Street",
+          "short_name": "S Hosmer St",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "South End",
+          "short_name": "South End",
+          "types": [
+            "neighborhood",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Tacoma",
+          "short_name": "Tacoma",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Pierce County",
+          "short_name": "Pierce County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Washington",
+          "short_name": "WA",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "98444",
+          "short_name": "98444",
+          "types": [
+            "postal_code"
+          ]
+        },
+        {
+          "long_name": "1831",
+          "short_name": "1831",
+          "types": [
+            "postal_code_suffix"
+          ]
+        }
+      ],
+      "state": "Washington",
+      "city": "Tacoma",
+      "place_id": "ChIJV6H1AgMBkVQRFLMdf1F7nlU",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "reviews": [
+        {
+          "author_name": "Darlene E",
+          "author_url": "https://www.google.com/maps/contrib/100660345278922427120/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV8g8ZmI4NLUbOT4kQjUYiD6zHVZ7A6WpvIEfphRuXhdy59v3k=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "The customer service was exceptional. The food was a bonus on top. My son raved about the burger and the quality was superb. My mother was beyond impressed with the customer service and her wings. I have to say the smash burger was definitely noteworthy of ordering again. I/we recommend anyone who is looking to enjoy an exquisite burger, along with a commendable menu selection, and excellent customer service.\nCheck it out, I don’t think you will regret it!",
+          "time": 1755911339,
+          "translated": false
+        },
+        {
+          "author_name": "Punch Line",
+          "author_url": "https://www.google.com/maps/contrib/112749826387911370013/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUHGhxXomvM-doDdhAaCCLti7pzBjlM8ZPAewXowgmIrq9rNh9NSw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "2 weeks ago",
+          "text": "I had heard some good things about Secret Burger Kitchen so I set out to see for myself. The location is within the Holiday Inn Hotel off of 84th on Hosmer. Not the most upscale of areas so it really surprised me how much this dining experience cost me.\nThe staff was great. A young lady showed me the kiosk that you can order and pay through. The order (a signature 1/3 lb cheese burger with bacon and a chop Philly cheese. Both came with fries) came quickly and was nicely packaged for takeout. It was still plenty hot eating it at home.\nThe quality and taste was a solid 8 out of 10 so I was happy that what I had heard about the place was accurate.\nUnfortunately I won't be going back. The meal we had (which I will simply cook at home next time) rang up after a 15% tip to nearly $45. Come on, guys. I mean, $25 would have kept me coming back from time to time to try other menu items. But nope.\nThe place was clean and the food is good. Price? smh",
+          "time": 1756741616,
+          "translated": false
+        },
+        {
+          "author_name": "Nicole Sorger",
+          "author_url": "https://www.google.com/maps/contrib/104407882230036288915/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWO1QgnvnJ-ZQnfG59hDElC6tCE9UgVnNp8gYy6qfLscSxBvdy6=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "Whoa baby!!! These smash burgers are legit!!! Finally, a seasoned patty! Tasty. Crispy. Delicious.\n\nIt's located in the bottom of a hotel, which is genius! Easy to order from the kiosk. Get your receipt and find a seat.\n\nIt was ready pretty quick and a feast for the eyes. That crispy edge beef lace peeked beyond the bun and straight to yum town!",
+          "time": 1756213962,
+          "translated": false
+        },
+        {
+          "author_name": "Branden",
+          "author_url": "https://www.google.com/maps/contrib/102348681374629454626/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUdA03qfDJQUE_5deuiiuJ0OCGqV9GZVYL2uafZiE0TfuxGH_MA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "2 months ago",
+          "text": "We were in the area so we decided to check this place out. I went with the double smash and fries.\nThe burger was good. Perfectly cooked burger, the fries were crispy and fresh. The fry sauce was good it had a little bit of spice which I did like. The service was good the staff were nice  and welcoming. There was plenty of parking and the inside was nice and clean and they also have a few tables outside. Over all the food was good but I think it was pricey. $17 for double burger and fries without a dink.",
+          "time": 1751893861,
+          "translated": false
+        },
+        {
+          "author_name": "Amara Raulins",
+          "author_url": "https://www.google.com/maps/contrib/105587058556985660157/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLanpfv3zdsoAinJsHUc1_sOWWYsYZX0dTn35hHAnWLuqoKMQ=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "I had a really great time at the is place. This was the Tacoma location. The service was awesome!! And they had outside sheeting which was nice. The time me and my boyfriend went it wasn’t too busy which was good. We got two different milkshakes and they were so yummy and the food was amazing I loved how crispy the fries were too!! One of the owners even came out and spoke with us for a bit and I thought that was so genuine and thoughtful I’d definitely recommend!:)",
+          "time": 1751596274,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 1024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109513755390749716661\">Secret Burger Kitchen Tacoma Smash Burgers</a>"
+          ],
+          "photo_reference": "ATKogpfxhY0pdSsMtD4baoZMwRWTb9TOGA2qeS7O-LyrmfFE3vsUu952yK2hKMrs5XNT8g3VnqRcpF-cloyUMnc4dR8yZzYvX0seTFXxIlj9Z4gLGxoA_owTA9dahwcCztgqveyTyrXy2hHzx3YC4-c6IC-pm7bK3f3jUbC3kRS0KidcftJ72Ol2adVFSnb38bDOy4VeQJOnbzQsJCTvgpq_hBn7ege9Deqtfcjx3tK_hJuBAq7a0mrGg9amqT8KQ4p4_xaRzm6iKYWmJGAajsJTd8zv2ZpW0j2W29Dawi4FQG2NBQ",
+          "width": 1024
+        },
+        {
+          "height": 2554,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109513755390749716661\">Secret Burger Kitchen Tacoma Smash Burgers</a>"
+          ],
+          "photo_reference": "ATKogpdLRXPjVcL0PeUEm0algpOQ8pfQfIZcL2UImEOt3vlZyKEzcP8Ps4SYhXYDj55PdeGpMRBnsXGcOqo85GkOPn5H6t3gOG6YDZs3IwX-OY6civgE273ZEJ1JMJnBETzWPOJI4Ak7zhVsMrCiqmgojrXS_oXCee_HNeZwWv4L_y-MhWz0_K6bW_MXFSxtrCN88uqMuqPQlErQ2SaCsFMWUIrg_1NMWhrlEupWz-WKWcIc3FmRn6fipt9Y6kQYdiFPag3U3HWPjWc_5YiTmPcmkRQu41yFe-lEjGL37LN-0ewpZA",
+          "width": 4000
+        },
+        {
+          "height": 2286,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104407882230036288915\">Nicole Sorger</a>"
+          ],
+          "photo_reference": "ATKogpcXRqPU9W4At5Sdim4Sd4BaJdhTu-GAiB7ZVyQVueceU2P6HlCbBVaZR0hJdy6Dm7HaFIsbPU7Nct8sRn3ztbQ9qhOErLWViEQ-HSdQtS1xfNkrgey2nS3WsE32friOqwn7UwMZLAmcz1GaGlNzTsqHzNSM5FbBG3-zCM16_eB1d1X3KiI9VFG71vch-2fGBDaalrgnmjgHZypkeCt1kpgUxg0LDHJ92LOVcFRzQ09RMrJo5nKgUvt_TNQzuKKI5AjgOjg4t7oGxIMy7jWiQ94qwcbG8bRokN9wVo8OaIhLDLtn7BBHOuj4e6EVcBavSClq1y5QC4tEX_F2g6AP7zR55-A0KXk4efy9QUvBGz3SQ2K3Sv4jiQqiBP-NZzAlsIFZi9Y7qHCaWh7b_l-eEvqoQ9Y0r3K9g85clwbGIqF12N3wOE-aWbtG5b-mryqt",
+          "width": 3760
+        },
+        {
+          "height": 3255,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109513755390749716661\">Secret Burger Kitchen Tacoma Smash Burgers</a>"
+          ],
+          "photo_reference": "ATKogpfT3aezIj3CphBUANgdlE8hV6k4N96pvnlM2sOgygciW-_mCHaxL-tSnJkSr3ie5QKRk_U6RigTINpwIhfCCoMid_KyBHJNeAPdYjyvvbBp91DhuQFiBFK2_SibHu8vW32T-i00SuolIRo7atHQZ3ZX7sBArohKhA6qQaieRyAEOcVbuCpmNebqnPBOkl3cYT8pN4o8m_A6oCTynFSyKJ6Hm3S1QGrsc8IoH7F_8yg_ibWp1dQnppd-QiFk7fwflaP8zz-No7XqCb_qN6U8dx7uq8X1wBurcrV6EGGD5pPZdA",
+          "width": 4500
+        },
+        {
+          "height": 3072,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112749826387911370013\">Punch Line</a>"
+          ],
+          "photo_reference": "ATKogpcoQB-cz-oXjJgWRR6S5Uv1nOekgsf7z1mMyZGS6NNgGnBjr5B8Op-H1IKqF-LGFi6vFiMKBOnTgMReDxmgRYDjKn3g2E4Da1pyxY7XCmAqAlYWSOEeSg9pcV9PornRQFdQVheiJE9AYMljdEWxdITD6OsHPL1SnEyTqaog_WLOOn0E0IQu5sqh8nDK7nKdZch6E3reTxiOXhjst5_L23HEQeZS_qaiauoKP9RuLulQ60uEjWxSK0thp2ScTnzDnbM1jQqjd4t6-UUFvugtZPHZvEaugmdkyoMKsWEQyZ7JBBrFE8vpZxvHIo_a97zkmQIC4q2X29iJBZ0KNRZoWarESAe5jTvPKgWemZEMQ2O_75ccqBZVpB6b9413AksEcmOaG-jhprJeEJTHGn4Tonf5ULaf8JGSwSCESzASamNsJYXuuSSggo5KoMdPTxBV",
+          "width": 4096
+        },
+        {
+          "height": 3000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105822065668903922955\">Maddie F.</a>"
+          ],
+          "photo_reference": "ATKogpePgnWcv0oqW-7tB3mKyGsbQ6IN1SvsgHTzTfTz17HGaSY61UxN5Ml1v9L4jFfxpb6Zre7-Z-KZUxcXNMJaxbDB17J2ZLldtFbVz7bw0lALjsry6gMum30Sv5JEAbT2EeHjxZSqvs14Xq1KiQw240WL5LkI4fWEtIDdy0sxsAbDga05Ow9IMncmu7YvQowqPWL2ZTYRoEl_zZ1QBHMdUGybjwE6_Ub33gzKR3fwkagTuAx8mjvsg1FVHtEzbu6Vi2dTe-RgpqEUb9fCvBj9LUeYXx9nVreAytuKqDdxY14BfcZ-WayERpTP9uTiPhk340PWKXf4BCtXX0nFPAiJ97O05BcJRYZGkB-H4gX_n9p-3XUU2dEQyTmDnPPJf1pUtSKQ7AQmSBEsyUYBBo7t_xmdWG9d5S0lB5hTmldz_jHEly2KdclK3F7lo4hF3FId",
+          "width": 4000
+        },
+        {
+          "height": 3003,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109513755390749716661\">Secret Burger Kitchen Tacoma Smash Burgers</a>"
+          ],
+          "photo_reference": "ATKogpc4xQ4PqskK2pWIP9CFS-HHaAFRRvoQCSz-uuYfp934CR2KhRLk_RnmSkPAqNUtJpq3Dw-G0qynoqekUe7kANotdNUoFtrOdP5sXS0Jk3PMlxXfSdIzLMpbLDuMBhY_COktxsLo-WBrrKUW6c3z8KmSXbszB5iWkXrOqGw3bSJUGCj1YPBbtGZflgDcLF1x202Gz8NV9ffKjN2CBrRTy_s7Ja0D6JX3qmy5GljTCbv30snjeDa4zNW_BZZ_b96WqFV_tF-302RT5uUR50ViGkc1lQNm8jVBZYbjn19gFaC6zQ",
+          "width": 4500
+        },
+        {
+          "height": 2971,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109513755390749716661\">Secret Burger Kitchen Tacoma Smash Burgers</a>"
+          ],
+          "photo_reference": "ATKogpf7_ko7HyPfQaKci4MxIWEYDb7bs8JqhvUdoIiECze1LPIc2eAoHA6XQq27Mo137WG6x4fCebbsrsLizseSrhhk3FxaEGWOMGdhJWg1tCUAyVBPrX45KsKaS2Ki1WKGS-A4hTTSEU_aRPT1hgAsIj_Wtn7XpU1sDpbVZlak_gbi--qqadRvVOkKH7ZFPbcIemacTLvLpKR5hWpWW-2Lq8-D3NF4EL7OJ-uOIwK6F3kVZfsiFCuCTFruBC5Ci7N2swgtCX1RMQC36RQ4N7Rlk6WLDYmE4gYrxzQo767xqGShTQ",
+          "width": 4500
+        },
+        {
+          "height": 3003,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109513755390749716661\">Secret Burger Kitchen Tacoma Smash Burgers</a>"
+          ],
+          "photo_reference": "ATKogpe3wOVkPxZbg4uBmxIJaAEfVsYiWrBOhWt3BQYtqdoT-2kvYittJsAPsCmysQUuBzht6UB-PIr-ud6aHvHmBrONCaeFoOQadGTykmYFZQnwWAHU2rCdiMun1YTTEK1A4gL20RIy1ULuQtXT9Dz2cJL1s9yDGpeXnrtfu8Aja_50rp40XMsnOUh5jwgIOTLV9L5PB3YCgsTWGha-L9mFhXOpYXcI_ioML71rwaeuyQApipEQg1hlM-QXQe5b2S1PVZxW39ye_Kqwqv-T5GnPQMp1dLxj094ZChqEFszN3pHGZQ",
+          "width": 4500
+        },
+        {
+          "height": 3003,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109513755390749716661\">Secret Burger Kitchen Tacoma Smash Burgers</a>"
+          ],
+          "photo_reference": "ATKogpfX66hJ43f7WxJN44e3F_LdoUwpptB_qUQ9PMsdLUq5LgvnQZm7JoTogv_ZTFJbeR2r_V9J7U8fvmBtjgblPqMRVMzuhtrFciRWDxZGxXmfn3-SYVajFXpCUGVDewS8A_Qdj6LiJ_ZY2tH4EEGzSJpuu8Ih0GwJlblDATwkkTCiHYKzG-Ig4IFKN0QiPOYBsgySiaWEzWQ3EdcFOc-FdgvFTmBdI7pggrHX2sELvqJBT9KsS2sYsOSedygvbnlt8FaHUPuDyOj8HkJsRvAJ6fahELQ7ITQRwuX-W16vMb6nag",
+          "width": 4500
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "2230"
+            },
+            "open": {
+              "day": 0,
+              "time": "0730"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2230"
+            },
+            "open": {
+              "day": 1,
+              "time": "0630"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2230"
+            },
+            "open": {
+              "day": 2,
+              "time": "0630"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2230"
+            },
+            "open": {
+              "day": 3,
+              "time": "0630"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2230"
+            },
+            "open": {
+              "day": 4,
+              "time": "0630"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "0100"
+            },
+            "open": {
+              "day": 5,
+              "time": "0630"
+            }
+          },
+          {
+            "close": {
+              "day": 0,
+              "time": "0100"
+            },
+            "open": {
+              "day": 6,
+              "time": "0700"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 6:30 AM – 10:30 PM",
+          "Tuesday: 6:30 AM – 10:30 PM",
+          "Wednesday: 6:30 AM – 10:30 PM",
+          "Thursday: 6:30 AM – 10:30 PM",
+          "Friday: 6:30 AM – 1:00 AM",
+          "Saturday: 7:00 AM – 1:00 AM",
+          "Sunday: 7:30 AM – 10:30 PM"
+        ]
+      },
+      "price_level": 2,
+      "editorial_summary": null,
+      "url": "https://maps.google.com/?cid=6169504129499378452",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfKmNBLB9yY6KnFevxhLkGE1qRtKLZHrA0voMRjgq3HfTKDjkHCZg0FbYOwBs1n08kUMCrXt0EuW0r4n5gn6G0SXTi-zO7nJ05W-nOFsgtkO--hoDRuXqM3DDmPISiR_q-8f3aAc3GagkHrsm0tfNIsGsOGYX3On0gcswsx2HMBkrxydmHOGzSqXsBLSz5KoYhuz_1s88JeCtkL4_Dry5kACAqZ09nDWLRadj4IQiKb65UJCqugYGuj3uXXmghciK-p8TTwMhaHu8U2c71kTj5Vx9Sr4ZRyeYzv3veesG9A1w&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpf3gurW2DVxTZSCn2kk5JZJ85l3A-a_hHPQovTkICJBlzczK4fz7Xx8BUfbuJLR2lxFncaJKBiFCp5yZry8d7H_V7VPxqUIdRYhEa1BOPBiu3dtR5mj4Kpm9QEFz3sWP54Q0NVU3v3axsSALR8gtMITO3SX5d-rQu3jP0NP09kvz6AmV7mjVkeEBbdHSs9SKlKHOPrYbLfobUx79Yd8YSSaiQ9WbU0TpY-xFQVzoHHm5uS4ieD4wtszOH3W5UF2l6Avzz9KXDipnQV5iodwr7PUKh62m7Fyx6jdlBHDP1897w&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdXUDEwM4is_vi4XvrCrbX3yvu-GL2tX0NaBnIq73YqmUtKkXdkLuHq0ES86iXZIpmoudbRjRzKRQ5jqW6h5_C1DDOi8Jn4o8FWhSquJwFjOSH8uL-zxYmsOQxOIRMM_IHwdvrmrGDcN2ZmA4AY9O1Kkq11wFUiF9-2yWA1Br0o-ncm945NLFK0Kj05wqdH_zBhfSLzEkmCY1pu1QIyjVWZhvQEoBvp8BfwQuLI3NkupzDCCBg1zsYcNbrS24BAYTcgI-r6S7ZutHpvRVAbUE5kemfZiT7RVxBGq3LpwKE36vSfQ22juv3VUGb2jJOvxYAx0mmp9RUEeswzONNezkNoYVLy62ob9m1OQTjPGpx1CKRkcnCqpwO1re3D_CK6Y6SMB6FFuWnF0vsz_CVh5gnymszYNZO1T6S80PkLsIIsgy5jnKQCvkkVwME-kpSL&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdZNF_SdDzsdXFhG9VgdFJz6DNBYgg7T3F646g339ivp1Q0uTU0B6Qzn0Kuzw5YqXnmjygjI3v4aYmQTf5HO2Gekvt9IdUveaLxHuGwmfImWIBhx_C70Jh_kAaqTVK-ZHydcjmvxRWbrdpEyHnY_Kp3LJfEwHhW_LU_-mGCUdIwVkNmq4HGRXjfiq8w0D924tykNm2xrUqcEz6H0s2zzjLif2X55Pn4UO2mD81wb6oFR0HR79Dlt1e66AmJ1A2zvreq_L_yQUaEugWsn0deYxbGuDzKina3ZbEvp5QEq9nMJw&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpf4MEOwZT-NfKldoSR5Xwawrde66KptaizfTP5-cWl017HUhlSIvy86RMLk3gu0fZQPB6Lsy4zVbgwrJsQFLEoN6kb1d1ISBYR-RB9gV_YGzAd1IrZ-_uQW-6aUkCkdZ_xRFUVa7FuVRYYykNtUYve_VJpNL3g6DtclbihObURLPX03Se-9qckNAbQloTk1XqleCGCxZyyyLCsuTQjFlQ7hKKlWMXH6FEWk40IAQCZrG4_m1ZCQx2w_23K9lpHMJ6iHXt_qwmy6vvz-OfoJRyXrv_OJrTEovnOey7Fatt7twvGSrY2CdzsrR8cuw9nBRR-9cZ0pQ-biaZYP9prtVAQw8c1CqS3vgf9CgHWsE7z0TrvkUozglt1DITU3jciJu26BSAtZtWn5v-UFcMAbfmlFpD1VsiWwTjOEtAAYsSqOxpNc9Cvgrp3K0mN52ith&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfcyDJwm0BXvgpjf-VG4D0pK2EY9r3664r6vqD1zjCmewnD9l_RPSSW2fYyUMB0Lt5TZRB8ZP7Y21B_8dCYx6I_fp9PbdLu-4dfZffBQi1sh8g_b7GmKlhfCu3VnbEo_WGGGGSF0cArBmrcDsLHOLaTPYSTbjPFRFIRmIkAoG7z-wzWBiPDUuSb0MEnvuTS1N6OEoZyd9wsfQjhYMNwJ7jHtfgtGr9i2mqyHOmZu71poDaNFQaPGSXni96C_qpm-gh8zLzvqoI0cAMQ10sSnm1AgKUPTXGP-k8cw40eK0MfsjVYG7du_MF0atOOpPqlPH0U3bMFZHxk4dc20vpSxd1x5Vvw_90a9UUXCQJ_9TquPWttW2ZJD0vBEIWuFvNMxwdw-jEQWxCQ-s5hcLi59sZPfKtJIWCYcmQ2ibMmjU7tBzyuAl311xpX03fPP778&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdWWv0nq_wKC4Friz_Tf3bOl4FguaHvUVLJi7Q9mxGThLS7fJnrl7EJjdZnSB_t6oosIgOoxlEL-olZYhKtHyr8lU5gGa3lXtLU3OTb5qGZz0Dvmx5GG00cJNU73oQZZAjRimwIXBr9UQET2OxgomFuWm36gsViT7oT9CHKgLbtBDKnOlGirCJttDWzS99MRZKS5FyVrwTvLFq68KLTMa57WZSugmctc9pvbbD3dEWaurkEYD-Ee4Msrh6k1tQcQf1aivLmhiitzwP-VT_CCJj-b-oE_jZ0gAjAO07MvBLrUA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdRSJlNeNs1B2iszWPLbnut4czkAkHro0SA8Rss51GKCwGe0KrYMnq29i3A6JEsvB2iBeAehSRfjNWX5rmi65qPxW-2Fl0_aB1xit4tIfKW2rW8ipUun84AHlDFlwzVZzv-TQXfj-QwOTzS1Frn-ZDgFjR51EnLNRxtDhHDaigXN_rxQiuYOfy6pizfMpAGcQ-Gt2HbtYZiedbNIv1k4CzfmoUljPSvTV-q8ZYjJnIjFNxkHReIsFa_ssy6qbIbdbt_aZWVZTYyD7fZONrrolX27iBh7cJZQjnxDWDyIEg2AA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpftyJ9Fq-aNNC3KJd4qrrvV5_3ik5I26n1CRZU3WyfXRSas3H0OwYNV79jQ5n5nM3g8UHp-GlHi1nDX6w6HtRX_K_SvZcD2lgf8k6E3F4yIFoItJuBZCAoTjedJyrEU012zVBK8e0ueSogKfXQYGCIk_2Pu5HqoeoUM1Hv1Dmn6StsDIi-wdiP4Od8n-qHMvu6RUkDz0Oh6aZ16o-612MkNQ6GdG4dUJm7IJy4xwMgCsPdzrqVj7aRq9AD9xY4tdlFIp73uf6wMr-zm0BZtefqxaTv6P1mkfDyvlnFvwPq1Sg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfU2C50SAZx6KvsDnyNEb3uvvwlvzB7UUXEpRvIQhy36u5SpXpOOJrHQn0xnhbFNIXo9QJ2T0IBj44M5qc-lT93kJ3-49eEikt7IbaZZT0-kpJfwtquoNFhPD8BBAGjSesek2p5xw5Tv8OX-f6Ts90OeJ0Fa6izYu1ro5pDahtzIIdsRnNAFmKrnPQI9FWMPXsgKgXMRTv2hjK8NxRiufpSc-H3wWvtqMDNLW85_EdjrKV74ROOjMMjQWQMUHPWWLcWvmSVsMbWebHJU5psRzm6Xoydzy9maICnzbzMQO34IA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 54,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": true,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 90,
+      "totalReviews": 394,
+      "averageRating": 4.5,
+      "sentimentBreakdown": {
+        "positive": 93,
+        "neutral": 1,
+        "negative": 6
+      },
+      "reviewSources": [
+        "Google Places API (Apify Enhanced)"
+      ],
+      "keyThemes": [
+        "Food Quality",
+        "Atmosphere",
+        "Location",
+        "Service",
+        "Wait Time",
+        "Pricing",
+        "Cleanliness"
+      ],
+      "recentReviews": [
+        {
+          "rating": 5,
+          "text": "Amazing! John’s recommendation was the best!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Had a great time and great food",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 4,
+          "text": "I rated this restaurant a little bit lower On atmosphere, because Of the location inside a Holiday Inn.\n\nThe burgers were great!  I have never tried a burger with peanut butter sauce on it, but it was quite interesting!\n\nI ordered the “Kidd Burger with fries And my son ordered a signature Smashburger. I did enjoy my “Kidd”  burger but my son‘s signature burger was really delicious!\n\nThe french fries were crispy and satisfying they might benefit from a little bit of seasoning, but overall they were quite good.\n\nI will be back to try the other specialty burgers!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Honestly the best lowkey spot to enjoy the best burger and staff is more amazing so kind and I love how it’s never over packed and they serve food quick",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Well every time I go the best service quality food fresh delicious on time quickly Barry friendly",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Unfortunately I had a somewhat interesting experience the first time I went but quickly they reached out and made it right and I can not recommend this establishment any more!! Amazing food and service, I will definitely be going back.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        }
+      ],
+      "detailedReviews": [
+        {
+          "author": "Rikki",
+          "rating": 5,
+          "text": "Amazing! John’s recommendation was the best!",
+          "date": "2025-09-14T22:52:39.887Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pKdmNUUlhOUzE2V0RSM1JEaERVemczY0dnMWFXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIgnvOiI7FR7267vEfqn0OHqbNUhAisrX-tMogN5j42OMvxog=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114963540287993456534?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Shawn Slattery",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-14T20:47:11.007Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tOVmFEQlpWemhqWm5acGFURnVWM0pIVVUwMVUxRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUjgJIr7nh6bzLHpTY7C6a_pUW3lSPWnYrSSihMZAGYkNOrMzOD=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115336329304913458820?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Natalie",
+          "rating": 5,
+          "text": "Had a great time and great food",
+          "date": "2025-09-14T20:29:29.970Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pSTGFEUm9kMUE0TFdJdFEzQkhPVE5rZGs4eFlXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKAAU0Me7wl1QbU_NGMDGRznwA2mA2v1IvsuSsleoxD6yZ_PQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115667365402114808340?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Deanna Waid",
+          "rating": 4,
+          "text": "I rated this restaurant a little bit lower On atmosphere, because Of the location inside a Holiday Inn.\n\nThe burgers were great!  I have never tried a burger with peanut butter sauce on it, but it was quite interesting!\n\nI ordered the “Kidd Burger with fries And my son ordered a signature Smashburger. I did enjoy my “Kidd”  burger but my son‘s signature burger was really delicious!\n\nThe french fries were crispy and satisfying they might benefit from a little bit of seasoning, but overall they were quite good.\n\nI will be back to try the other specialty burgers!",
+          "date": "2025-09-12T14:50:50.164Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2paSWQyeHNWMlYzZERsbGN6azRhbVpKVERCTmFsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVwwLRR9bV9Wfv5pzhWyHGTFqAb2Pi_jr3rFESYvtDyP0S0DKE=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109364535388713842625?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Luchi Al",
+          "rating": 5,
+          "text": "Honestly the best lowkey spot to enjoy the best burger and staff is more amazing so kind and I love how it’s never over packed and they serve food quick",
+          "date": "2025-09-12T01:21:39.784Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2poTVRqTnlMVWN0ZFV4dlprTTNjbU50U1VWTVMxRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLN5b-IryLPn82FqJ8rlyIEKzPBIibGJRXOXrTXpcdsLc9cQA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108427738239146779772?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "juan madora",
+          "rating": 5,
+          "text": "Well every time I go the best service quality food fresh delicious on time quickly Barry friendly",
+          "date": "2025-09-11T21:47:48.711Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT205NlZHSm9PR1l6ZVVRMVkxaE5VRmMxVWxSVWIzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVJBPoyRQ8mnaZplKeaeF6Xdg9XO7eUxM57MbyrcdV82FYQTN2ZaA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105805849935038115899?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jim Reaves",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-10T18:49:42.463Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25CVWMyVlVlRzU1TWtJd1Zub3pZbGhFVGpGQlVHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJlTGKY81o_3ryo-12cQqAFXqr9uMAaRd3EogszzGwz7Idq8w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112961526548284003791?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Andrea Clark",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-10T01:41:35.506Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xGSk4xaDVlSEJSY2tWZlgyb3RkVFJ3U1ZwNmFtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJqyb7uI1cERc6o_FxHIPwNSR6C5ehsWePStY2wDp0aNpRU5w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105689581797750879689?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Nestor Hernandez",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-09T06:01:47.532Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25wMWJYTlRVaTB4YUZreFMzRmpVMEpzZURkelYxRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL4anq9c0eKJOJNBpfBGV8cZcPoPPsulaS34RdFZW9URtHAjg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113022632350386019409?hl=en",
+          "reviewerNumberOfReviews": 25,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Isaac Walker",
+          "rating": 5,
+          "text": "Unfortunately I had a somewhat interesting experience the first time I went but quickly they reached out and made it right and I can not recommend this establishment any more!! Amazing food and service, I will definitely be going back.",
+          "date": "2025-09-08T03:57:29.500Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2sxbGEwaEhabTlFUlZGVVlsVjFTM3B2YkVKNFZHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLbWu7mv6gG-8LlYMOpMuJcGnSIwPKWzYh9TynduHTyhJ3dJw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106921206945349959568?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "debon bostick",
+          "rating": 5,
+          "text": "Great burgers when in town I stay at the hotel for this place",
+          "date": "2025-09-07T18:13:10.766Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25wVFRDMTNaMmxDZGxsVFlWZEpNV0Z0VmtkRlVXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLqt_W2hKUYvDYvwxwNlnZUjyo8wAiyPduO365_e0uYGrE96oI=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114910005902570724299?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Lee Thompson",
+          "rating": 2,
+          "text": "The four of us went and out the four of us two got food poisoning. The burger was good but not worth food poisoning.",
+          "date": "2025-09-07T14:33:03.615Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xaalYzRXRVVFpZVURCMWVVaDNNbVJZVjNReFNXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJm-SEdTCBDVKnt3CNb21WarOQHVL-dbKQpeqbGplskgtJ75g=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100239052680310497127?hl=en",
+          "reviewerNumberOfReviews": 31,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Jason Johnson",
+          "rating": 5,
+          "text": "Jasmine is the best ever! She has always been a great server and is appreciated by all who stop by. Nixaly is definitely an asset to the hotel as well and always welcomes guests with class and great service!",
+          "date": "2025-09-06T02:48:45.887Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25adlNYVmxWa0YyYWkxaFdrNU5VRGxrWjBwdk0yYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKdClc18PPzaFBrrINEuJRdJ_LN0JNjwjtARD_wAezqsSI50g=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114493998827869700113?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Adam McDevitt",
+          "rating": 5,
+          "text": "Great smash burger, fast service.",
+          "date": "2025-09-06T02:08:21.019Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tOVVoyMVlNM1ZTZDA1R09YRmFkRlZFWXpaaU9IYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjULveBX5tw5leaCCbdRCnwNmS0-S9Q937AjBq1jaO8EtJHc_R39=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115702125822460325336?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Melissa",
+          "rating": 5,
+          "text": "Great burgers! And love the fries!",
+          "date": "2025-09-05T16:13:01.057Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21Sb1ZHNUlUV3BJWWxSWVl6QlFhVmhMWjJvNE0zYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKcqZkA9cF0JMDp_b1EejZoRrllJ04wIRip5pU5WKy--h0t2g=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113680058683675371659?hl=en",
+          "reviewerNumberOfReviews": 29,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Andrew Skeehan",
+          "rating": 5,
+          "text": "Seriously good smash burger. Great service.",
+          "date": "2025-09-05T02:01:51.964Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t4dmRXTTRNMmxyWDJkck9EaHFSMjVzVGw5QlNGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXHjI_FYTqEidgDXR7k-sBu4qRgtNFwmKPQmX9G2ptaRwoCFYNWtg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107109401270167632288?hl=en",
+          "reviewerNumberOfReviews": 110,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Krista Perez",
+          "rating": 5,
+          "text": "One of the best smash burgers I’ve had in Tacoma!",
+          "date": "2025-09-05T01:12:21.202Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t0UmVVTmpha3hsYXpBMGJqZ3lZbk5hVlRodlYzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKkaMU5WwKsYzs8d0qIvQiG4KD3e6KdQkZKiEFItUUkV6ieUA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107376715666326899142?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Terrie Piersee",
+          "rating": 4,
+          "text": "Outstanding fries\nWish there were tomatoes on burger",
+          "date": "2025-09-04T16:29:57.799Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25GRldHRjZhbE5oWWpkUU1HaEtObHA0U2tKaVUwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK1ZiWUuda0j4NIXI29aOX4K_SjYnAbuF8hqOnodwZRcKRNrA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105574562682415298669?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Shawndra Fisher",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-03T23:02:47.655Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tSclZYYzFSRUZSUjJoQlh6ZG9RWEpsWW0weU9WRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWaSjDhUn6AJCJDbBgYNRHWgFA-KsjyCL_NEPuT_2pGbccmOZMh=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103954391492752304614?hl=en",
+          "reviewerNumberOfReviews": 30,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Coach Sonya",
+          "rating": 5,
+          "text": "I would like to give a shout out to all the cooks at Secret Burger Kitchen in Tacoma, Washington, especially Michael. They go above and beyond to always accommodate my dietary needs. I’ve ordered from them a few times. The food is always delicious, hot and fresh. You can tell it is cooked with love. They deserve all the blessings coming their way. Thank you so much.\n\nSonya",
+          "date": "2025-09-03T22:40:49.369Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2w5ZlFtWnhRVlp4VlcxT05VOXRaRVphUzNsUlVWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVMiKrKqR_aDLgM1ZKIVh5OLI1-7SDfD_--Uk8xsGdujoCjSY7k=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109669428945871958244?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Grant Ivy",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-01T20:58:22.513Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pKUFoxaFFSa055ZVZoM1ZXTlZiazVPVjFKRFFVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIFeS4fu8IXOqrlWelakbCVbb8QqD8ouzhUHYJTIJCDsVu09A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102648206303793382412?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mason McLemore",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-01T20:52:56.581Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xwdVFXd3lNVGRzZDA1d2VsUndhWGRGZURoeU4wRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUePHrAvRfT6LkH8WPKknPHUmY2Sgr5VtUXyLn_4bH8ZC4O2ZB2=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116034929273545442395?hl=en",
+          "reviewerNumberOfReviews": 26,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Rob T Vazquez",
+          "rating": 1,
+          "text": "Ummm, i don't get it.  Maybe i ordered the wrong burger, but it wasn't very good. I ordered the Spicy Smash, and it just wasn't flavorful. With all of the hype I had heard, I was anticipating a really great burger.  But it was only \"meh\". Again, maybe I ordered the wrong burger.",
+          "date": "2025-09-01T16:37:20.101Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21OeVQxbEpRMnhLTjI1TFNFdzBXRGhRUlhsTVdXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVrHrpNKAMzHStYewOVUKO0Vg5EgMImy63Yha5_g4fj85wb5a9KTA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109671174486610546657?hl=en",
+          "reviewerNumberOfReviews": 53,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Punch Line",
+          "rating": 4,
+          "text": "I had heard some good things about Secret Burger Kitchen so I set out to see for myself. The location is within the Holiday Inn Hotel off of 84th on Hosmer. Not the most upscale of areas so it really surprised me how much this dining experience cost me.\nThe staff was great. A young lady showed me the kiosk that you can order and pay through. The order (a signature 1/3 lb cheese burger with bacon and a chop Philly cheese. Both came with fries) came quickly and was nicely packaged for takeout. It was still plenty hot eating it at home.\nThe quality and taste was a solid 8 out of 10 so I was happy that what I had heard about the place was accurate.\nUnfortunately I won't be going back. The meal we had (which I will simply cook at home next time) rang up after a 15% tip to nearly $45. Come on, guys. I mean, $25 would have kept me coming back from time to time to try other menu items. But nope.\nThe place was clean and the food is good. Price? smh",
+          "date": "2025-09-01T15:46:56.054Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT201Q2FrNU1aSEkxVTNWVmJqSkZlRXQzVUhsS1VrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUHGhxXomvM-doDdhAaCCLti7pzBjlM8ZPAewXowgmIrq9rNh9NSw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112749826387911370013?hl=en",
+          "reviewerNumberOfReviews": 34,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Anthony Vanderlinde",
+          "rating": 5,
+          "text": "First of all, no one eats as many burgers as I do! I absolutely love hamburgers! I’ve ate burgers all over the country and outside the US. This double smash burger with cheese with the SBK sauce and jalapeños/Serrano peppers was the best burger I’ve had hands down! I did go in on a Friday night at about 10:30pm and was the only customers eating at this time. The burger was perfect! The beef pattie’s were so hot temp wise it almost burned my tongue! The beef was cooked perfect and very flavorful. You could tell it was top quality beef. I see some reviews saying they waited forever for a cold burned burger, well I suggest go in on off times when it’s slow and you won’t be disappointed! Can’t wait to get back for another round! It’s definitely made my list as the number one best burger in Tacoma with Beach Tavern coming in second now, which used to be the best burger in Tacoma. Sorry Beach, this place took your top spot on my list. Again I think I eat more burgers then anyone lol",
+          "date": "2025-09-01T06:57:17.379Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xwSU1uZHpjMk5rWmpaemNERm1NelJsUTNKRmNtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXtoBRmcrtOEoT759lm44uSfh3JUFTmLjlFEbqfSVjpyl1UF5c=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101575364492410390692?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jeannetta",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-31T06:49:50.278Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25wWU9IQklia1UzWWw5dFRUbGxlWFExZHpKQ1RIYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXYpWMy-22EbzI-nFI9SQtRWeG6tUmHU1X1CHqJzJhJK96RewtB=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108178507438837608362?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tamika Janzen",
+          "rating": 5,
+          "text": "Food was so good plan to come here again",
+          "date": "2025-08-30T20:56:05.410Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT200MU4xaFhUWEpQV0hNd1gwaHdXSEYwV1VKNFVrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUZa52HNABXC5_GtbvYVuW9FnWfA5nCE_OKwsvKdOThgQoYjTM_=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116622811419802771958?hl=en",
+          "reviewerNumberOfReviews": 44,
+          "sentiment": "positive"
+        },
+        {
+          "author": "m simmons",
+          "rating": 5,
+          "text": "Great customer service! Food was amazing! Prices were nice!",
+          "date": "2025-08-30T17:08:35.483Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pjM05FUjFURzkzY20weWVHaDRRVEJqV2paVmNVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVG_SzORxwsXbDKBd6bkZmWhZ6GKO8J9BKxvCklSIjYSMlkh7ZU=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102833767161216276254?hl=en",
+          "reviewerNumberOfReviews": 15,
+          "sentiment": "positive"
+        },
+        {
+          "author": "장anna.",
+          "rating": 4,
+          "text": "",
+          "date": "2025-08-30T05:04:24.719Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25CRVlTMUljRUZPZW1oeFNsSm5jRlpMU2xwWVpGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKa1akv6hx3Chywy4E0Lcwq7WGzKqVx7ujEkM30sGLpslJG6w=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112629868049677944442?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Guy Tingey",
+          "rating": 5,
+          "text": "Lisa as an amazing bartender! She has the most amazing Margarita that she makes, not to mention the conversation she had with myself and the other patrons!",
+          "date": "2025-08-30T04:55:37.160Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xKUk5FeHdiMjlpYzNKMVdrbHdiSHBzU1c1dmQyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXg6UG4ZMbRC3yItm7dzBhH4zKIZ8-aw6xWxCxaYW0GbiQBUIlH=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103779445868868379695?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Gregory Terry",
+          "rating": 3,
+          "text": "Went there for lunch with the Mrs on a Saturday afternoon. It wasn't particularly busy but we ordered our food and waited about 30-35 minutes for it to come out. Had to go up at one point and inquire about an eta. Fries were amazing no complaints there. The burger (I had a double bacon cheeseburger) was good for the most part, perfectly smashed. My only gripe is that it was overly salty. The chef had a heavy salt hand that day. Probably won't go out of my way to go there again. The place is a little on the pricey side as well. If I happen to be in the area I would give it another shot.",
+          "date": "2025-08-30T03:15:46.453Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25SRk0zRlNlakJTYzNseVExRlRaVWRrZEc5QkxWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI1cMWXkYmF0FPMlzcVnpbkiwHdYFXdrvn9MbjuATGmTsF-EA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103185836629430960356?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Patrick White",
+          "rating": 5,
+          "text": "Food was fresh, and delicious! Fast service! Wonderful atmosphere.",
+          "date": "2025-08-30T02:29:18.306Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xaMVJqZG9XVzV4TURFd2JsbFhZelpyUTB0QlVFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKDVkYTOWI-PXZvwnLxqjGurkgoiY_GB0L65rBp2VjD0-bMww=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112221147459855716352?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "LaRae Lockhart",
+          "rating": 5,
+          "text": "Nice little place inside the Holiday Inn on Hosmer. The burgers are fresh and delicious. This is we’re we go every time we are in town. Great service and nice spot to chill for a second.",
+          "date": "2025-08-29T03:42:13.327Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2s0d1pHeE5VbVZLTXpsaWFscHlValYzWVRWVU9XYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVNh6-iHh9SA4-iSRam0qQkPmWYK10RGKdMzhx3mtBk1jKkbDU=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112682920732869529760?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "anthony williams",
+          "rating": 5,
+          "text": "The staff is very polite very professional, inviting knowledgeable and the food is amazing. I’m ready to go to sleep. I’m a food coma.",
+          "date": "2025-08-28T20:21:15.313Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t4NFpTMWliVFl4YTJGSlVXSmFObGc1TlZKTlRHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJxBZalAaSVytQFA0EZmZuQfvufjBU4vz70O24IQWa7lHmWeA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110462485622414848589?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jaimee Gordon",
+          "rating": 4,
+          "text": "Burger had great flavor, the down fall was my lettuce wilted but other than that tasted great. French fries are bomb.",
+          "date": "2025-08-28T19:32:52.388Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2podU0zWkdTblpGVlZsaVVUZEVNRGhUVUc1cFpXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUh1kpgcNtCD4TGUoWBcqXB76nHlU3h57qQqGSLOO63zAxz80l1=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112884816658245470609?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Adrian Broussard",
+          "rating": 5,
+          "text": "The food was absolutely delicious. 10 outta 10. I know good eats and I recommend this secret burger kitchen. Shayna the manager was very nice 😁",
+          "date": "2025-08-26T21:07:54.043Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tzeFlWaHNWbnB0Y1ZNeVdrTkNkWHB4ZWtsRFRWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKhnPU6JTxJQ2KetCVjgq6fKXiOfG2gE7W5MsXfsmr4tm_f3w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107028708704521458953?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Nicole Sorger",
+          "rating": 5,
+          "text": "Whoa baby!!! These smash burgers are legit!!! Finally, a seasoned patty! Tasty. Crispy. Delicious.\n\nIt's located in the bottom of a hotel, which is genius! Easy to order from the kiosk. Get your receipt and find a seat.\n\nIt was ready pretty quick and a feast for the eyes. That crispy edge beef lace peeked beyond the bun and straight to yum town!",
+          "date": "2025-08-26T13:12:42.694Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25kWldERkNXbTF4Ykd4d1VVOHljVVZUYlVoa1MzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWO1QgnvnJ-ZQnfG59hDElC6tCE9UgVnNp8gYy6qfLscSxBvdy6=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104407882230036288915?hl=en",
+          "reviewerNumberOfReviews": 48,
+          "sentiment": "positive"
+        },
+        {
+          "author": "ray smith",
+          "rating": 5,
+          "text": "I have stayed here for work at least 1 week a month for the last 3 years. There is a reason for that. The staff is amazing.  Lori the bartender is great, Sean has always been more then helpful and gone above and beyond to help in any way. 5 stars for the staff",
+          "date": "2025-08-26T04:29:57.141Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2paM1kxOU5iSFJMTm1KTlNYSnZNVWRuYkdaUFpFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI1Dnv7d7x6LHb3Lv1ami86UFHMRiHa9o8xHfWnOI-gUqRW6Q=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113954832446668053034?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Maria Avila",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-26T01:35:38.128Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25sNWFIRklSRGRLWkVsdmJIcEdRWEoyYVMxYWVFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ4qIl2pUBeMxLiU3aez_nbsUfrQ_kD2xzyn_6RBM9Kw6SlxA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117670674312300708889?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Storm Boling",
+          "rating": 4,
+          "text": "",
+          "date": "2025-08-25T19:07:52.192Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT214WVZGTjJkRnBvU0dOSFdXbHdOVWhTT1hkTGQwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIQwCnVSdTHVm2NOYFUNgkwG1woTuVIE6jGMLYiLxLg16A8hQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108564625923087034446?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Stephen Hibbard",
+          "rating": 5,
+          "text": "Outstanding service, quality food. Worth the stop.",
+          "date": "2025-08-25T00:32:50.734Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xRdFoycHNWRE5QZHpaZkxXZzBNMVo0UmpWVFlYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUQ4msxXamFXqEClOZmzQ50KujBGF0e63ML5a8DIrkzdOtsaZY=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107201386737693554054?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Deborah Discolo",
+          "rating": 5,
+          "text": "Ordered uber eats- excellent burgers",
+          "date": "2025-08-24T19:50:35.105Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tSTlNYY3hMVE5RVDB0VFRqUTRSbE01Y0Vwa1NsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXwKrV_sNeTp4JAbXmzpMXvnCyFWAwIwZFcHvA_iOT8XfVS3qQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112913288655701762031?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Yvonne Holmes",
+          "rating": 1,
+          "text": "After all the rave reviews, we were looking forward to trying what many people said was \"the best hamburger ever\".\nThe place  was crowded when we got there and there were many \"to go\" orders. We were fine with a wait as we expected the burgers to be something worth waiting for. The servers were pleasant enough (although they looked a little understaffed). After a good 45 minute wait, our burgers came out and looked absolutely nothing like the pictures. Mine was burned to a crisp. Totally dry and overcooked. The was minimal sauce and a very small segment of a piece of lettuce. Again, nothing like the pictures. All I could taste was the totally charred, dry meat and salt. Such a disappointment  after all this hype and a very expensive burger that was totally overpriced for what was presented. I'm guessing a person's impression would vary based on who is in the kitchen cooking the food. We obviously had someone working who was more concerned in just getting food out, regardless if it caught on fire and burned, than caring about the quality. We do not plan to return.",
+          "date": "2025-08-24T02:19:18.392Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2sxWGFVdEViM1pKYzNCU1NGRm1lRTFJU0ZacGNVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJcG5ZbB2YTwQOkZomH5i4LcRX7CrTXmG7gHtHGT8CCIQveHw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114141369475312631287?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "negative"
+        },
+        {
+          "author": "dawg 7579",
+          "rating": 1,
+          "text": "I cannot believe all the favorable reviews for this place.  Several diners saying it was the best burger they ever had. I would say it was one of the worst I've ever had.  Over cooked, dry. I gave the food rating a 2 because the fries were pretty good.  We waited 45 minutes for a hamburger!\nService was okay though sparse, meaning they seemed very inexperienced and understaffed.  I asked for water 3 times and never got it until I was leaving and was handed a bottle of water.\nAmbience nonexistent.  It is in a Holiday Inn in a very sketchy part of Tacoma and the to go clientele which made up the majority of the customers reflected this.  I would never suggest anyone to go there unless they were staying at the hotel and had no other choice.",
+          "date": "2025-08-24T02:09:15.210Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25ReFpXcHJVbEIyYUdscVdEbExSbTk2ZW1SMlVWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIv0oRIhlSvBaqGX2JRTM5R8EGLZ6x8vN7Vx-DFXyBPS-mOdA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116492511455852982260?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "negative"
+        },
+        {
+          "author": "neang",
+          "rating": 1,
+          "text": "probably the worst service lol i ordered for pick up in advance (as it’s saturday— wait times can be expected). i came in early and asked if my food was ready, which was a no (duhh, right?), and sat down to wait again. ~10 minutes later, i get a text that my food was ready so i go up and ask again. she says no and now i’m confused, but sit down and wait anyways. as i’m waiting, i hear people asking if their food was ready and they said no, and say that it’s ___(insert my name)’s order. i shot up and told them that i’ve been waiting awhile and asked if my food was ready (it’s been 45 minutes at this point). they said they didn’t know my name and they wouldn’t have known. i replied saying i did tell them TWICE and have just been sitting here waiting. they called out everybody’s orders by their names/numbers except for me. i’m so pissed. my food’s cold and isn’t even good. i placed my order at 5:00pm and didn’t leave until 6pm. i was super excited to try this place, but was left very very disappointed. the bag was behind them for awhile, while other names were called right out the kitchen. i was sitting there with a ready text for 45 mins! not once did i hear my name, AND i went up and asked multiple times. i understand the wait as it’s a saturday, but don’t say it’s ready when it’s not…. or have attentive service lol.\n\nside note, the shake was also lacking flavor and literally just white mush with stale cereal on top. the food’s cold and dry now. i’m so disappointed as a service worker myself.",
+          "date": "2025-08-24T01:14:09.532Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xCS2MxcEpaVTVxZG5sUGVWSXljekpXZW5CelMwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL1BH-Kli1-NE7Wxr09gvdkANuLRkTtFllze5d4D5v2cQ81NgUv=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114876735391408690561?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "negative"
+        },
+        {
+          "author": "James Williams",
+          "rating": 4,
+          "text": "I added bacon to my burger and also on the nachos with crispy chicken.  The bacon was the worst part undercooked. Burger was delicious otherwise.",
+          "date": "2025-08-23T23:40:22.486Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xwVlN6WlNWbUpMWmxGclNtMDJiRVF6UTJneVgxRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLYr6jtXD1dO6mNmxhxOWrN9Qkg6qnJJ-l-tYjflcZibaHDEg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104743507592030604832?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Angelita Perez",
+          "rating": 5,
+          "text": "Not too many people when we went but Jasmine & Rafael were great!",
+          "date": "2025-08-23T23:32:48.025Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xKWk0yaGhSRlZ0VVc0NFRtMVZVR1kyTkhCVWNHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKAY4O9DRP4qiqmX8crOoGXNmVU7hPZ_jmF9qctz0s7YZYJpQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101923241530380563569?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Darlene E",
+          "rating": 5,
+          "text": "The customer service was exceptional. The food was a bonus on top. My son raved about the burger and the quality was superb. My mother was beyond impressed with the customer service and her wings. I have to say the smash burger was definitely noteworthy of ordering again. I/we recommend anyone who is looking to enjoy an exquisite burger, along with a commendable menu selection, and excellent customer service.\nCheck it out, I don’t think you will regret it!",
+          "date": "2025-08-23T01:08:59.412Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT214VFowdHJjWEZuU0VVMWVUTjRiUzFKUWxrNVJXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV8g8ZmI4NLUbOT4kQjUYiD6zHVZ7A6WpvIEfphRuXhdy59v3k=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100660345278922427120?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kris Rooks",
+          "rating": 4,
+          "text": "",
+          "date": "2025-08-20T04:36:01.950Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21wSUxVVlNOemt4TWtadmJYaERXblZmWVVsdFYxRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWR-1zG8gAmqfVZkrzVC8GwCh6HR7KuleFyFv-woIAlGK_xQcd_eQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108953411253899134804?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Victor Martinez",
+          "rating": 4,
+          "text": "Have a amazing burgers and the drinks are amazing thanksto  laurie and  nixtlaly and the kitchen  team litzy and catalina was amazing 👌🔥🥴",
+          "date": "2025-08-20T04:22:58.507Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT205eU0xSXpjV0U1VFdwTmNVVXhPR2RZT1RGblFsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUUTuEM3a2eIMIGaHM350nes4wzOMYCnvOjvDi34DhMudHchmN5=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110017192776256751809?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jeffery Brunson",
+          "rating": 5,
+          "text": "Easy to order, very clean and nice seating, good parking, quick service, and very good burgers and top notch fried. Loved their fry sauce.",
+          "date": "2025-08-18T03:29:09.903Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xjelJqQk1VWGRETkMwNWVUZEZlVmgzUkU5VU1IYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWMgJxKF3fFQ9cGl-IWP6vAIzvcBeuBVFboYXEOWkYBYumrzudC=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109769057997991478064?hl=en",
+          "reviewerNumberOfReviews": 31,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Juelz Walker",
+          "rating": 4,
+          "text": "laurie was amazing!! such a positive energetic and eager soul!! definitely will be going back just to have her as a server again :)",
+          "date": "2025-08-18T01:36:22.654Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21SQlpVUjNOa3N0WXpoYWRuZFJNWHBHV0hGTmRVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWgUbm0LdovlMZf4LVmoEgu-WolSl4V4KEypRJAmwP8Ai_40Urm=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102286521312033271876?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Junni Walker",
+          "rating": 5,
+          "text": "Laurie was awesome she’s so sweet ! The best service",
+          "date": "2025-08-18T01:32:01.570Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25ObmFrODJWRWxqUnpOaVdsVTBUamhSWkdGWmNXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJKVLkSzbZEZXA54ANc290OSYXQ3c1L9IV-O1En017MnN4HIg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112609180677143599197?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kevin Stevens",
+          "rating": 5,
+          "text": "Shakes are amazing, fries are amazing, burgers are really great too",
+          "date": "2025-08-17T22:59:11.288Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xSV04weGtlRzgyZERsbGIxaExWSEpFYkdoMVRVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUZHzzFWwMTD4xD4DSzeEOHWYxIINLn4NTuBfkXF9BTwk0jvK0=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110348968163118355720?hl=en",
+          "reviewerNumberOfReviews": 200,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Heather Skeehan",
+          "rating": 5,
+          "text": "A real SMASH burger hidden away in an unexpected place. Great fries. Crispy burger edges. Super worth a visit. Bonus that ordering at the kiosk or online are both super straightforward. Carrie and Cendy were both fabulous when we visited.",
+          "date": "2025-08-17T20:46:50.739Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2kxaVJscFZhMk51UzI4dFgzUlBSemxyYlU5c05VRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXybAbVZKlprhHus64yIPGShYM7_PYC8squ7AnOMdnyUpWVppHdtg=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103647241845845116567?hl=en",
+          "reviewerNumberOfReviews": 507,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Zachary Wade",
+          "rating": 5,
+          "text": "The food here is absolutely amazing! The staff are even better",
+          "date": "2025-08-17T06:09:37.790Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2trMVdEVkJOblpCTkcxamVuWnRiblZRYW1GQmIzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWF_2y9lE_TzPWeo7-Ai0hlnWXBCZ-lsMh1bbm9fAP1xEVXItyg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107233096787956712069?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Timothy McKellar",
+          "rating": 5,
+          "text": "Soooo gas! there onions tho 🤤 . Reminded me of safe comfy 😊",
+          "date": "2025-08-17T06:09:18.870Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21aT05YaHVabEpIWkVKSk5GcFVjSEJzYzA5eVRFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUtMuJYjQe9UvPGkmD9m3Q3_5TSqrf_LrImpK9cCe76UNELg7rD=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111941426513343017632?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Blayne Campbell",
+          "rating": 5,
+          "text": "Amazing food and great service",
+          "date": "2025-08-17T06:08:11.911Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xkQmNtSk1TREZ3TmxCV1pYQlhSRFZWTFd4T1YzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIS6NM6rQy61nLPRNfvEvNhfO6iQno6FTjr8tICFOMbs42AoA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106030551157778806800?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Oscar Peterson",
+          "rating": 5,
+          "text": "That burger filled my mouth with the juiciest meat, I would gladly stuff my face here again",
+          "date": "2025-08-17T06:07:53.569Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21oMk1WSmtiRFF5Y1hWMk1tUlJTMWwzZUcxdFZIYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUxR1I0nDt16LABqsv7EqhigloXsQc1Z7JcPz0SZvKK35MgrKbk=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104827035161822200851?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Parker Paugh",
+          "rating": 5,
+          "text": "food was mouth watering and sensual",
+          "date": "2025-08-17T06:07:48.220Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2twc1lURnJWRkZCUlhaMFUxUTJlR1JLYWxNM1YyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVkMEe8wboIIVH38rsJVQmQ8uypaL46BYPmMdHXRaDAM9aBG-G4=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103959363040575570304?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Porter Johnston",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-17T06:07:28.903Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT210M1lXMURlbk5PY1ZoaFpXZGpVMVpqZERsbVNGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXkwRhuVjD7L8bIZ-8fNyeEnKSLV40ng5HcuBfTQFB3kKT6wLk=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104973035552409507590?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Thomas Johnston",
+          "rating": 5,
+          "text": "Jasmine and Nix where amazing with 50 million people all at once and still took time for great customer service!",
+          "date": "2025-08-17T06:01:52.814Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25wNVlrUjJXbUZPZUc5TGNYY3hUMm81VWpoSFlsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX1dZM4bkL9MdX4r_OtJQPCxvCY-iOjPKRWI8Gfi1ViPFsnH9dU=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114054561479967322244?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Bryana Jacques",
+          "rating": 5,
+          "text": "It was so yummy!! Everything was so clean and everyone was so nice. Was asked multiple times how everything was. Thank you! A new fave spot!",
+          "date": "2025-08-17T00:43:01.401Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT20xUU1HRlJYelZXV1ZOaVNrVlpXVXhHWWpGTlVXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ2fTMdQFXFaX4w8s_dFfno-RGh-xxsJbcfdFu0wsNi5fEDPw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116658058524420882134?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "markus niuamoa",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-16T23:58:38.166Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pkbU1tNVJlVTVmVWt4elpVaDRlR2hzTlZjeFdsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI6c--KSfphPSqiWtRz2ViRStoBbvvqy8Ol04nN5R5rXxpRtw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110575668178791853892?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Celva Boon",
+          "rating": 5,
+          "text": "Amazing flavor and so fast. Sione recommended it and it was great.",
+          "date": "2025-08-16T23:56:42.930Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21aVGRYVlRUM1ZCVTNFM1NtNXJabE5mWTBGMldIYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ7ThEPsl-swvgvzcWjDk1-BdoKGUIhJWg7qYiTRK-a6etcEg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102190104466607157822?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "kyanne wilkerson",
+          "rating": 5,
+          "text": "I came last week and had to come back it was so good 🔥🔥 10/10 definitely recommend, customer service great as well good service & atmosphere!",
+          "date": "2025-08-16T03:13:46.726Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21wV1lWTllWRFIxUW1GdVgzcEdSMHRoZURoSVNHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIqEsDjjyy9W-3I0x3XayCmiuU0v6HLnIp5hr3Fjue_Jc54TA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115075492038375574535?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tiamone Davis",
+          "rating": 5,
+          "text": "The food is fire!!",
+          "date": "2025-08-16T03:09:19.265Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT205cmFtVTNlVTR6TFcxYWVXNW9UMWhNV25CeWQyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWmCxT_5gblwimsJLB0AKEM9TK4-1U6gzLqSBiCusbmqb0aQpRL=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107007931587680470019?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tyler Fudge",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-16T02:36:39.577Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xwRVdHSlBXbU5mU1dOQlgyTXliRTVXVmtsWU9YYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJxS4uKqRhtzsAm7dTzZXsd_7dO5Z7Qfjk_7qzuVeLjvjgWkQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105755934437473787698?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Caleb Burton",
+          "rating": 5,
+          "text": "Amazing burgers and out of this world shakes",
+          "date": "2025-08-16T01:54:59.850Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21ob2RHaDJlbFJYV1V0aldsWklWM1JyUXprM1owRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWwyF4FC1DIbBgl36wfvPJjgSzyxYcc6refZBpBx5wHciE046E=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107275696618036061920?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Andrew Cirillo",
+          "rating": 4,
+          "text": "",
+          "date": "2025-08-16T01:27:42.178Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25JdFJsSlJZamx1Yms5UGRsQlJkR3Q1YUVveFRuYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXkL7NM0JOYlUVhkomTfR8pdwMwBsDcIYaaq0p6xTmRCoSG0OGaow=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101804996676192413721?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Katie Ashley",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-15T20:27:10.095Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pKT1RqQnlOVGxNZVVGUk1GTnpTR016VWsxSE5tYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWqX4MYILOQvCPaK_YGUcCGKrz_cTNVR4p7ZOTLoc1II5vfW_qM=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102885965376303861349?hl=en",
+          "reviewerNumberOfReviews": 370,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Lori Padilla",
+          "rating": 5,
+          "text": "I’ve been coming to Tacoma for work once a week for work over the past 3 years and  this feels like my home away from home. Great food and drinks but the best part of it is Laurie who doesn’t only tend bar but takes orders serves cleans and makes sure everyone feels welcome. As soon as I walk in she greets me by name and always asks how I’m doing. She goes above and beyond to make sure all the customers are happy with a smile on her face no matter what’s happening in her life.",
+          "date": "2025-08-15T04:58:55.920Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xCdmFrMXNiVkZGYVdwMGVFaGFObXRzWjBSV00yYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVc3F6tiKRtF_CG45ou6cWT-tf43Mdzqh_DWMmMxKg7X-doZ7er=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110257912901848245720?hl=en",
+          "reviewerNumberOfReviews": 34,
+          "sentiment": "positive"
+        },
+        {
+          "author": "benjamin weller",
+          "rating": 1,
+          "text": "Made me throw up🤮🙁",
+          "date": "2025-08-15T03:45:23.618Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21Sc1JXWlRWbnBUUWxKNmRsZFBiMDlJUzFkeWEwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVLw5EsBnQuPv4GN6VHJ-TKw1FBgHgLg-1vkZBwV5HlCrgXM_TY=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101414157923085438477?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Nicola_Sings_As_She_Knows_It",
+          "rating": 5,
+          "text": "ABSOLUTELY DELICIOUS. The burger seasons has a great kick to it. The soda is super creamy. The shakes mmmmm OMG.\nThe waitress Carrie had us laughing each time she's checked on us. Over all an amazing experience. We will be returning.",
+          "date": "2025-08-14T22:33:22.956Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21KaVdWaHhXVzVNUnpoQmFIRjNObkpYTUdGUWNsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUAt12CebK-x8kLGtcHXulECdAwNxK6jVtNuoiayXMnKDFoxK-Z_A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106431060366894701090?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Brandon Echols",
+          "rating": 4,
+          "text": "Carrie was the best!  Totally on-point with some great service.  Thanks for a fun lunch!",
+          "date": "2025-08-14T22:26:06.931Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xKS1NsRjRlRlJCVFZkSFYzQk5UMmxMZDI5U1FrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXWz3j3MlgzDGEiPV11mKd1X_OonccgmRZhwbyGfEq0F0KbwD8fpQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104403566955173186744?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Drew Jacobs",
+          "rating": 5,
+          "text": "Amazing customer service!!! Food is always a 10/10 for me and for great prices, a local gem",
+          "date": "2025-08-13T22:41:26.673Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tWTFkyVlhTR1pzVm1VemFXRk1PVlZ0Y3pObFdFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJwngV6H7M4FCWYyTb9noDkj3FURLeYwiAKwKPNXqfq1NV46A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106609039250229108016?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Stavkova Vlog",
+          "rating": 5,
+          "text": "Thank you for your service Nix🤗🫶🏻",
+          "date": "2025-08-13T02:24:13.430Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2taUWJXZDJOSFJNTUZwSlEwbG9UVTFUVlhaTlZFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUP0R-FVGdSMvMsRmKdHkWOHRog12IFMKIfUe9RoWPrRgAabZzr=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101041225084146063675?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "NIJEL SMITH",
+          "rating": 5,
+          "text": "Nix was so kind and respectful had my food ready on time and had amazing service definitely will come again!!!",
+          "date": "2025-08-13T01:17:34.888Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25aNGRFUmlVRWQwTTFOZlVHSjROMkZzVUZJNFoxRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKsh4cayvscYKMOucuSn8cXTWVETebEmeIphamQBqT1S7rAjQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102364832541737066597?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Nathan Perryman",
+          "rating": 5,
+          "text": "Was a very good atmosphere and great customer service I’m definitely going to come back.",
+          "date": "2025-08-13T01:17:22.343Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pKdExVeFdVRFpQZWpOYVJtRlpWRzgxTUhKMWMxRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXjJ27KERvRxc2iXvujfZdSpBEd-_wjbmbquSVj6J2msRyp0U_j=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112482585464066087958?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Nicole Trask",
+          "rating": 5,
+          "text": "Laurie is amazing!!! She is the reason I come here. My burger was absolutely delicious.",
+          "date": "2025-08-13T00:05:09.337Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2taYU4xSmlOMVpUTjBjeFJuaGhWV3BrY0VGeVpsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocISUzC1DOBtXp8ziW64RdjRmV1ODDWYlTtLWaU-5MOrDs_0uA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113270656953220843467?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Washington Erazo",
+          "rating": 5,
+          "text": "I had an outstanding experience here thanks to the exceptional service provided by Lisa and Laurie. From the moment I walked in, they were warm, welcoming, and incredibly attentive. Lisa made sure my order was perfect and delivered with a smile, while Laurie went above and beyond to ensure we had everything we needed throughout our meal. Their teamwork and professionalism truly elevated the dining experience. Smash Burger is lucky to have them—I'll definitely be back!",
+          "date": "2025-08-12T01:25:19.566Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25OMmFYZ3hhRFZJTkdGSlpIYzRObXc0VEY5UFdXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJBN0QG3lMIKzjQAkSpDRVb5EMIiCV2WJ7rw95S8oCV-fv0Bg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117985704574474586512?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kaleb Conrey-taylor",
+          "rating": 5,
+          "text": "Wonderful atmosphere. Phenomenal quality. Fair price for a outstanding quality burgers. Love this hidden gem. Can't wait to come back!! Mrs Lisa and Mrs Laurie don't disappoint!!",
+          "date": "2025-08-12T01:23:35.718Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tkeWF6QTBTMFUzUkc5aU9HWkRlbEoxY0Rrd2NuYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIQN5XGoFIUVrfB1LwHvRXmQBgqY3urJxd8sLzSTxY5xQdZKg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105991297623372411096?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Malik Dowden",
+          "rating": 5,
+          "text": "Lisa and Laurie service was amazing , as for the food amazing you are wrong if you do not eat at secret burger !",
+          "date": "2025-08-12T01:22:13.113Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25Bd2JUbFlURlZFWmpGalZYUkZRbXRYYTFaMGVFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVyRbVThUI58c5oRzshDyjJGtkmcZeYdKwPu8TKnezk1UDyU14=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104315236626247676983?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jeffrey Toland",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-11T13:46:49.813Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t4amJ6a3dia28yT1cxSVdHdEJjRGRPWmpKNlVuYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVW0gGQ_xAhirRCHZhgH-Zk_vWHUR7c24wSNpiJ4gzSHXzAL0hK=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103870077264470199408?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Vanessa Mwangi",
+          "rating": 5,
+          "text": "Laurie at The Secret Burger Kitchen is pure magic—best drinks, best vibe, best service, every time",
+          "date": "2025-08-11T07:17:28.587Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21aTE1VSTBNbFY2TjBkSWIwOXRTVzV2TTIxM2JWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWNWIsmLF85NOlXIEzf3bhcipnGl7JItIXQOxdklBE4dbWYNtg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104770492939751142042?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Michael Michael",
+          "rating": 5,
+          "text": "Hidden gem! The burgers here are incredible—juicy, flavorful, and perfectly cooked. But the real star was our bartender, Laurie. She’s friendly, attentive, and makes you feel like an old friend from the moment you sit down. If you’re in Tacoma, this spot is a must-visit!",
+          "date": "2025-08-11T07:16:28.973Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT20wek1uWldPRXhEU1ZsRlJHbGtiRTkxY0MxeVFtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWtdkOqxvctTmCthB2pM1f3GqjsifUBu4t110EVonjKrLyFfgPV=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112788481739371872779?hl=en",
+          "reviewerNumberOfReviews": 67,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Curvie Hawkins",
+          "rating": 4,
+          "text": "Tasty smash burgers in a Holiday Inn of all places. I’ll start by saying I will be back for some more. I like trying burgers with no modifications my first go round to get the originally prepared version. I found the onions dominate the flavor so my next try will be onion-free. Fries were good as well. Nice, friendly staff.",
+          "date": "2025-08-11T05:38:51.799Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xSdWVtNVphVWxIVEVWTlJIUlFkR2h5T1UxdVVtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWePb9AEXUrWFjQcDfOhlOBYi4UCVQGehNMxW3dbHi9liFhO1Ka=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110008236746283513990?hl=en",
+          "reviewerNumberOfReviews": 47,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mike Helmick",
+          "rating": 5,
+          "text": "Best smash burger ever. The waitress/bartender Laurie was amazing. If I’m ever back in the area I will be returning.",
+          "date": "2025-08-11T03:19:21.887Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21SemNFbGZaSGx4YVZWM2NXVTBkVlEzU1RGSGNtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKCsimANprUixxHlpnyFZCYc6_J6ABMJfH297oPji8VE7imxQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105240243996093831750?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jeremy Bailey",
+          "rating": 5,
+          "text": "One of the best smash burgers I've ever had!! Ask for Laurie, and get the secret secret version of the sauce.",
+          "date": "2025-08-11T03:15:56.238Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25wT00yWlJWV0ZaY25OMk9WWktZbGRETVVsVGJWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIgzH9SLITiyOM1CD7Quv3XGpvgltxu9mymwysa1gmIRese-w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111603842330954776773?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Trinity Heinsohn",
+          "rating": 5,
+          "text": "The food was delicious & our server Cindy was amazing! Definitely will come back!",
+          "date": "2025-08-10T18:55:02.031Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2preVIyTldiRWRMWVROTlJtYzBjVWR5TFdKRGNIYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV2heS_bcSxUXWfpCarvSw1axdooM13_ejByov1P41cgG3EoK4=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114069698887502029606?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Gunna Goof",
+          "rating": 5,
+          "text": "Jasmine & Nix",
+          "date": "2025-08-10T03:24:55.781Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2sxbFJFUjFUbTFPYTNGNFpGQldVV0ZXT1ZaSVdFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXoM74aO-4lAs6p1tlbA9DPRfTsM6M8EoBTaNeFXB-8LzEgtTsK=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115895401950322220615?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "J Gaines",
+          "rating": 5,
+          "text": "The food is amazing. My servers Jasmine and Nix were professional and friendly adding to the overall experience. This became one of my favorite burger spots in Tacoma",
+          "date": "2025-08-10T02:31:50.948Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25aVmJ6TmZPVEJoUjE5dE9XOVROSHA0YURaWldVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIYlbCgHgWzam3AScjZrGSfMfxrBRhfi9pxtJH6o-MYi0yTRw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111511393342278572563?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Cherise Barnett",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-10T01:21:08.398Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21kUGVubDBSMHBIUkVwbWVtWlBVWEJMYUcweGJYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKhxXHuiDUNmUDPBz_0UDsR2vyaoWOGYhltTvWTL0v0kt0igA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106594739068228051670?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jeffrey Estebes",
+          "rating": 5,
+          "text": "Jasmine & Nix was amazing",
+          "date": "2025-08-09T23:40:58.747Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t0VlNrSnNZWEZQWnpkemFFSmFaR3d5VURGUFNXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJwiPvhvCCswnt0gl7VKfSCd8SkS5rPg9Q4JfMpdvXYH1SZrg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116285110559764383286?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jacqueline",
+          "rating": 5,
+          "text": "Love love loveddddd my experience here!  The staff was so welcoming and friendly. Jasmine was amazing and very knowledgeable! She was so sweet and made me feel so comfortable. I will be coming back !! Thx Jasmine!!",
+          "date": "2025-08-09T22:34:48.143Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2s5dFZ6UTVSVWxVWjJJdGMxUjRWVEZtVTJzM2JsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWorJ14zPLJyEdkLGbkWY9AWeQKA6d_DJB2hKx-0K1LR4AfMPRb=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117394760754606966226?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Cynthia Lopez",
+          "rating": 5,
+          "text": "I had the plant based beef burger and the flavor was amazing. The bacon was juicy and crispy! Jasmine was super friendly and welcoming. I enjoyed the outside eating.",
+          "date": "2025-08-09T21:49:48.585Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT20xWlVHUTJkWFprWW1adE5qbGllRkp1WlVzdE1uYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJc8JAM08IOuHsP2TOK8fpQtXpxtU11UpNuNQSlF0piTn-ztg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113555460490007655422?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "chris o",
+          "rating": 5,
+          "text": "This place was a great find. Tucked away inside the holiday Inn. Cindy was our server and she was so awesome and sweet. If you like burgers give this place a try top tier food and service.",
+          "date": "2025-08-09T21:33:14.396Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tWd1lXZFVkV1ZvTWtseWJqRmhSeTFhTVVkMGNVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIkbNlNdo_WbGVZgp3S0ek5H8R1MAYturwkILfJ0ZCMk_EE7Q=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115080346107195027393?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "AnAvgLife",
+          "rating": 5,
+          "text": "Awesome food and really would recommend if you are looking for quick and delicious bite!",
+          "date": "2025-08-09T21:32:27.227Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21oTlJrZHZVbkl5WXpkVGFVdDRja3hzZDJ0dlEzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKU33R3J_lOLow3YJT718IRSSat503SasGaM2mSa2QsUoBdlBJC=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108920899761350998832?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Rob McDermott (XRP McLoo)",
+          "rating": 5,
+          "text": "Great burger, great service…nothing more required!!",
+          "date": "2025-08-09T19:50:15.749Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pRM09EWTNla1V0YzNaWGFXdEVNblJGU2pZd2JFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXZ8WVWKz-2IwQwt3_W-MnDqSFi9D66Nh9i4exyrCzQX1b2kSRK=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108785307612976821908?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tasha Moore",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-09T14:32:45.134Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2taUWFXSTFjalpXYlUxMU5uaFdPRWN6Y1hGa2VGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJXRH8mCpLnWJkLklMrB6q0bkLUsCGGEC3yiLDIz4_qkPfF0w=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102373052419688939802?hl=en",
+          "reviewerNumberOfReviews": 17,
+          "sentiment": "positive"
+        }
+      ],
+      "customerMoodAnalysis": {
+        "overallMood": "delighted",
+        "sentimentSummary": "Customers are genuinely thrilled with their experience. With an average 4.6/5 rating across 100 recent reviews, your restaurant consistently exceeds expectations.",
+        "sentimentDistribution": {
+          "ecstatic": 29,
+          "delighted": 55,
+          "satisfied": 10,
+          "neutral": 0,
+          "frustrated": 1,
+          "disappointed": 3,
+          "angry": 2
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "food quality",
+            "mentions": 36
+          },
+          {
+            "theme": "slow service",
+            "mentions": 18
+          },
+          {
+            "theme": "service excellence",
+            "mentions": 16
+          },
+          {
+            "theme": "speed of service",
+            "mentions": 10
+          },
+          {
+            "theme": "atmosphere",
+            "mentions": 6
+          },
+          {
+            "theme": "food issues",
+            "mentions": 5
+          },
+          {
+            "theme": "cleanliness",
+            "mentions": 4
+          },
+          {
+            "theme": "overpriced",
+            "mentions": 3
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 46,
+          "satisfaction": 58,
+          "disappointment": 3,
+          "frustration": 0,
+          "anger": 0
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "Customers rave about the delicious and unique specialty burgers, such as those with peanut butter sauce, which keeps them coming back for more. - social media marketing can showcase this strength",
+            "The restaurant is praised for its fast service, ensuring that customers enjoy their meals without long waits, even during busy times. - SEO services can leverage this for better visibility",
+            "The staff, including standout servers like Jasmine, are consistently recognized for their exceptional and friendly service, enhancing the overall dining experience. - review management can highlight this positive aspect"
+          ],
+          "improvementOpportunities": [
+            "Long wait times and service issues - Boostly marketing services can improve this",
+            "Negative reviews and reputation issues due to food quality inconsistencies and food poisoning incidents - review management can address this concern",
+            "Lack of atmosphere/ambiance awareness due to the restaurant's location inside a Holiday Inn - social media marketing can improve this area"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 100,
+          "averageRating": 4.6,
+          "ratingDistribution": {
+            "1": 5,
+            "2": 1,
+            "3": 1,
+            "4": 13,
+            "5": 80
+          },
+          "sentimentTrends": {
+            "trend": "improving",
+            "recentAverageRating": 4.9,
+            "previousAverageRating": 4.6,
+            "recentReviewsCount": 10
+          }
+        }
+      },
+      "examples": {
+        "positive": [
+          {
+            "author": "Rikki",
+            "rating": 5,
+            "text": "Amazing! John’s recommendation was the best!",
+            "date": "2025-09-14T22:52:39.887Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pKdmNUUlhOUzE2V0RSM1JEaERVemczY0dnMWFXYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIgnvOiI7FR7267vEfqn0OHqbNUhAisrX-tMogN5j42OMvxog=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/114963540287993456534?hl=en",
+            "reviewerNumberOfReviews": 0
+          },
+          {
+            "author": "Shawn Slattery",
+            "rating": 5,
+            "text": "",
+            "date": "2025-09-14T20:47:11.007Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tOVmFEQlpWemhqWm5acGFURnVWM0pIVVUwMVUxRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUjgJIr7nh6bzLHpTY7C6a_pUW3lSPWnYrSSihMZAGYkNOrMzOD=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/115336329304913458820?hl=en",
+            "reviewerNumberOfReviews": 7
+          },
+          {
+            "author": "Natalie",
+            "rating": 5,
+            "text": "Had a great time and great food",
+            "date": "2025-09-14T20:29:29.970Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pSTGFEUm9kMUE0TFdJdFEzQkhPVE5rZGs4eFlXYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKAAU0Me7wl1QbU_NGMDGRznwA2mA2v1IvsuSsleoxD6yZ_PQ=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/115667365402114808340?hl=en",
+            "reviewerNumberOfReviews": 0
+          }
+        ],
+        "neutral": [
+          {
+            "author": "Gregory Terry",
+            "rating": 3,
+            "text": "Went there for lunch with the Mrs on a Saturday afternoon. It wasn't particularly busy but we ordered our food and waited about 30-35 minutes for it to come out. Had to go up at one point and inquire about an eta. Fries were amazing no complaints there. The burger (I had a double bacon cheeseburger) was good for the most part, perfectly smashed. My only gripe is that it was overly salty. The chef had a heavy salt hand that day. Probably won't go out of my way to go there again. The place is a little on the pricey side as well. If I happen to be in the area I would give it another shot.",
+            "date": "2025-08-30T03:15:46.453Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25SRk0zRlNlakJTYzNseVExRlRaVWRrZEc5QkxWRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI1cMWXkYmF0FPMlzcVnpbkiwHdYFXdrvn9MbjuATGmTsF-EA=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/103185836629430960356?hl=en",
+            "reviewerNumberOfReviews": 18
+          }
+        ],
+        "negative": [
+          {
+            "author": "Lee Thompson",
+            "rating": 2,
+            "text": "The four of us went and out the four of us two got food poisoning. The burger was good but not worth food poisoning.",
+            "date": "2025-09-07T14:33:03.615Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xaalYzRXRVVFpZVURCMWVVaDNNbVJZVjNReFNXYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJm-SEdTCBDVKnt3CNb21WarOQHVL-dbKQpeqbGplskgtJ75g=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/100239052680310497127?hl=en",
+            "reviewerNumberOfReviews": 31
+          },
+          {
+            "author": "Rob T Vazquez",
+            "rating": 1,
+            "text": "Ummm, i don't get it.  Maybe i ordered the wrong burger, but it wasn't very good. I ordered the Spicy Smash, and it just wasn't flavorful. With all of the hype I had heard, I was anticipating a really great burger.  But it was only \"meh\". Again, maybe I ordered the wrong burger.",
+            "date": "2025-09-01T16:37:20.101Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21OeVQxbEpRMnhLTjI1TFNFdzBXRGhRUlhsTVdXYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVrHrpNKAMzHStYewOVUKO0Vg5EgMImy63Yha5_g4fj85wb5a9KTA=s1920-c-rp-mo-ba4-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/109671174486610546657?hl=en",
+            "reviewerNumberOfReviews": 53
+          },
+          {
+            "author": "Yvonne Holmes",
+            "rating": 1,
+            "text": "After all the rave reviews, we were looking forward to trying what many people said was \"the best hamburger ever\".\nThe place  was crowded when we got there and there were many \"to go\" orders. We were fine with a wait as we expected the burgers to be something worth waiting for. The servers were pleasant enough (although they looked a little understaffed). After a good 45 minute wait, our burgers came out and looked absolutely nothing like the pictures. Mine was burned to a crisp. Totally dry and overcooked. The was minimal sauce and a very small segment of a piece of lettuce. Again, nothing like the pictures. All I could taste was the totally charred, dry meat and salt. Such a disappointment  after all this hype and a very expensive burger that was totally overpriced for what was presented. I'm guessing a person's impression would vary based on who is in the kitchen cooking the food. We obviously had someone working who was more concerned in just getting food out, regardless if it caught on fire and burned, than caring about the quality. We do not plan to return.",
+            "date": "2025-08-24T02:19:18.392Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2sxWGFVdEViM1pKYzNCU1NGRm1lRTFJU0ZacGNVRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJcG5ZbB2YTwQOkZomH5i4LcRX7CrTXmG7gHtHGT8CCIQveHw=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/114141369475312631287?hl=en",
+            "reviewerNumberOfReviews": 6
+          }
+        ]
+      },
+      "trends": {
+        "ratingTrend": "stable",
+        "volumeTrend": "stable",
+        "responseRate": 0,
+        "averageResponseTime": "No responses"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ]
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/secretburgerkitchentacomasmashburgers",
+      "instagram": "https://www.instagram.com/secretburgerkitchentacomasmashburgers",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 58,
+      "social": 100,
+      "local": 66,
+      "reviews": 87,
+      "overall": 78
+    },
+    "originalScores": {
+      "seo": 70,
+      "overallScore": 69,
+      "performance": 74,
+      "userExperience": 64
+    },
+    "migratedAt": "2025-09-16T00:37:21.452Z"
+  },
+  "metadata": {
+    "cachedAt": "2025-09-15T18:37:38.602Z",
+    "expiresAt": "2025-10-15T18:37:38.602Z",
+    "placeId": "ChIJV6H1AgMBkVQRFLMdf1F7nlU",
+    "restaurantName": "Secret Burger Kitchen Tacoma Smash Burgers",
+    "cacheVersion": "2.0.0"
+  }
+}

@@ -1,0 +1,1798 @@
+{
+  "data": {
+    "domain": "pizzerialimone.com",
+    "restaurantName": "Pizzeria Limone",
+    "placeId": "ChIJdculBwCbTYcRi2qotAyO3JQ",
+    "overallScore": 71,
+    "performance": 100,
+    "seo": 59,
+    "mobile": 56,
+    "userExperience": 71,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "pizza near me",
+        "position": 0,
+        "searchVolume": 2400,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery Provo",
+        "position": 0,
+        "searchVolume": 40,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best pizza Provo",
+        "position": 4,
+        "searchVolume": 90,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://pizzerialimone.com/provo/",
+        "title": "Provo",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza",
+        "position": 5,
+        "searchVolume": 2900,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://pizzerialimone.com/provo/",
+        "title": "Provo",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza places near me",
+        "position": 0,
+        "searchVolume": 170,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza Provo Utah",
+        "position": 8,
+        "searchVolume": 320,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://pizzerialimone.com/provo/",
+        "title": "Provo",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery near me",
+        "position": 0,
+        "searchVolume": 320,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza open now",
+        "position": 0,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 13,
+        "keywords_appeared": 1,
+        "total_keywords": 8,
+        "average_position": 5,
+        "best_position": 5
+      },
+      "keyword_results": [
+        {
+          "keyword": "pizza near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Fat Daddy's Pizzeria",
+              "address": "Provo, UT ",
+              "website": "https://fatdaddyspizzeria.com/",
+              "rating": 4.4,
+              "reviews": 1400
+            },
+            {
+              "position": 2,
+              "name": "MOZZ Artisan Pizza",
+              "address": "Provo, UT ",
+              "website": "https://www.mozzartisanpizza.com/",
+              "rating": 4.7,
+              "reviews": 1000
+            },
+            {
+              "position": 3,
+              "name": "Two Jack's Pizza",
+              "address": "Provo, UT ",
+              "website": "http://www.twojackspizza.com/",
+              "rating": 4.6,
+              "reviews": 1700
+            }
+          ]
+        },
+        {
+          "keyword": "pizza",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Fat Daddy's Pizzeria",
+              "address": "Provo, UT ",
+              "website": "https://fatdaddyspizzeria.com/",
+              "rating": 4.4,
+              "reviews": 1400
+            },
+            {
+              "position": 2,
+              "name": "MOZZ Artisan Pizza",
+              "address": "Provo, UT ",
+              "website": "https://www.mozzartisanpizza.com/",
+              "rating": 4.7,
+              "reviews": 1000
+            },
+            {
+              "position": 3,
+              "name": "Slackwater Riverwoods",
+              "address": "Provo, UT ",
+              "website": "http://slackwaterpizzeria.com/",
+              "rating": 4.8,
+              "reviews": 195
+            }
+          ]
+        },
+        {
+          "keyword": "best pizza Provo",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Two Jack's Pizza",
+              "address": "Provo, UT ",
+              "website": "http://www.twojackspizza.com/",
+              "rating": 4.6,
+              "reviews": 1700
+            },
+            {
+              "position": 2,
+              "name": "Slackwater Riverwoods",
+              "address": "Provo, UT ",
+              "website": "http://slackwaterpizzeria.com/",
+              "rating": 4.8,
+              "reviews": 195
+            },
+            {
+              "position": 3,
+              "name": "MOZZ Artisan Pizza",
+              "address": "Provo, UT ",
+              "website": "https://www.mozzartisanpizza.com/",
+              "rating": 4.7,
+              "reviews": 1000
+            }
+          ]
+        },
+        {
+          "keyword": "pizza delivery near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Fat Daddy's Pizzeria",
+              "address": "Provo, UT ",
+              "website": "https://fatdaddyspizzeria.com/",
+              "rating": 4.4,
+              "reviews": 1400
+            },
+            {
+              "position": 2,
+              "name": "Brick Oven",
+              "address": "Provo, UT ",
+              "website": "http://www.brickovenrestaurants.com/",
+              "rating": 4.3,
+              "reviews": 4700
+            },
+            {
+              "position": 3,
+              "name": "MOZZ Artisan Pizza",
+              "address": "Provo, UT ",
+              "website": "https://www.mozzartisanpizza.com/",
+              "rating": 4.7,
+              "reviews": 1000
+            }
+          ]
+        },
+        {
+          "keyword": "pizza Provo Utah",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "MOZZ Artisan Pizza",
+              "address": "Provo, UT ",
+              "website": "https://www.mozzartisanpizza.com/",
+              "rating": 4.7,
+              "reviews": 1000
+            },
+            {
+              "position": 2,
+              "name": "Fat Daddy's Pizzeria",
+              "address": "Provo, UT ",
+              "website": "https://fatdaddyspizzeria.com/",
+              "rating": 4.4,
+              "reviews": 1400
+            },
+            {
+              "position": 3,
+              "name": "Two Jack's Pizza",
+              "address": "Provo, UT ",
+              "website": "http://www.twojackspizza.com/",
+              "rating": 4.6,
+              "reviews": 1700
+            }
+          ]
+        },
+        {
+          "keyword": "top pizza Provo",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Two Jack's Pizza",
+              "address": "Provo, UT ",
+              "website": "http://www.twojackspizza.com/",
+              "rating": 4.6,
+              "reviews": 1700
+            },
+            {
+              "position": 2,
+              "name": "MOZZ Artisan Pizza",
+              "address": "Provo, UT ",
+              "website": "https://www.mozzartisanpizza.com/",
+              "rating": 4.7,
+              "reviews": 1000
+            },
+            {
+              "position": 3,
+              "name": "Fat Daddy's Pizzeria",
+              "address": "Provo, UT ",
+              "website": "https://fatdaddyspizzeria.com/",
+              "rating": 4.4,
+              "reviews": 1400
+            }
+          ]
+        },
+        {
+          "keyword": "pizza restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "MOZZ Artisan Pizza",
+              "address": "Provo, UT ",
+              "website": "https://www.mozzartisanpizza.com/",
+              "rating": 4.7,
+              "reviews": 1000
+            },
+            {
+              "position": 2,
+              "name": "Fat Daddy's Pizzeria",
+              "address": "Provo, UT ",
+              "website": "https://fatdaddyspizzeria.com/",
+              "rating": 4.4,
+              "reviews": 1400
+            },
+            {
+              "position": 3,
+              "name": "Two Jack's Pizza",
+              "address": "Provo, UT ",
+              "website": "http://www.twojackspizza.com/",
+              "rating": 4.6,
+              "reviews": 1700
+            }
+          ]
+        },
+        {
+          "keyword": "pizza food Provo",
+          "found": true,
+          "position": 5,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Pizzeria Limone",
+            "address": "Provo, UT ",
+            "website": "https://pizzerialimone.com/",
+            "phone": "(801) 251-0831",
+            "rating": 4.6,
+            "reviews": 34
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "MOZZ Artisan Pizza",
+              "address": "Provo, UT ",
+              "website": "https://www.mozzartisanpizza.com/",
+              "rating": 4.7,
+              "reviews": 1000
+            },
+            {
+              "position": 2,
+              "name": "Fat Daddy's Pizzeria",
+              "address": "Provo, UT ",
+              "website": "https://fatdaddyspizzeria.com/",
+              "rating": 4.4,
+              "reviews": 1400
+            },
+            {
+              "position": 3,
+              "name": "Slackwater Riverwoods",
+              "address": "Provo, UT ",
+              "website": "http://slackwaterpizzeria.com/",
+              "rating": 4.8,
+              "reviews": 195
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"pizza near me\", \"pizza\", \"best pizza Provo\", \"pizza delivery near me\", \"pizza Provo Utah\", \"top pizza Provo\", \"pizza restaurant near me\" - optimize Google My Business profile with these keywords",
+        "Ranking below #1 for 1 keywords - increase customer reviews and engagement to improve rankings",
+        "Low Local Pack visibility (13%) - audit your Google My Business completeness, categories, and local citations"
+      ],
+      "scan_metadata": {
+        "location": "Provo,Utah,United States",
+        "timestamp": "2025-09-15T08:58:10.944Z",
+        "total_scan_time_ms": 31783
+      }
+    },
+    "competitors": [
+      {
+        "name": "The Continental, Provo",
+        "domain": "thecontinentalprovo.com",
+        "performance": 98,
+        "seo": 88,
+        "accessibility": 83,
+        "bestPractices": 93,
+        "overallScore": 91,
+        "rating": 4.9,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1303,
+        "keywords": 36,
+        "domainAuthority": 83,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+150 keywords",
+        "authorityGap": 5,
+        "backlinks": 744
+      },
+      {
+        "name": "Locals",
+        "domain": "locals.com",
+        "performance": 86,
+        "seo": 77,
+        "accessibility": 73,
+        "bestPractices": 82,
+        "overallScore": 80,
+        "rating": 4.3,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 698,
+        "keywords": 44,
+        "domainAuthority": 73,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 1026
+      },
+      {
+        "name": "Edna's Market & Grille - Provo",
+        "domain": "ednasmarketgrilleprovo.com",
+        "performance": 94,
+        "seo": 85,
+        "accessibility": 80,
+        "bestPractices": 89,
+        "overallScore": 87,
+        "rating": 4.7,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1355,
+        "keywords": 37,
+        "domainAuthority": 88,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+50 keywords",
+        "authorityGap": 2,
+        "backlinks": 880
+      },
+      {
+        "name": "The Social, Provo",
+        "domain": "thesocialprovo.com",
+        "performance": 88,
+        "seo": 79,
+        "accessibility": 75,
+        "bestPractices": 84,
+        "overallScore": 81,
+        "rating": 4.4,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 837,
+        "keywords": 34,
+        "domainAuthority": 82,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 1000
+      },
+      {
+        "name": "Communal",
+        "domain": "communal.com",
+        "performance": 88,
+        "seo": 79,
+        "accessibility": 75,
+        "bestPractices": 84,
+        "overallScore": 81,
+        "rating": 4.4,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 598,
+        "keywords": 24,
+        "domainAuthority": 82,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 841
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 74,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-15T08:58:46.463Z",
+    "businessProfile": {
+      "name": "Pizzeria Limone",
+      "address": "422 W Rivers Edge Dr, Provo, UT 84604, USA",
+      "rating": 4.6,
+      "reviewCount": 34,
+      "phoneNumber": "(801) 251-0831",
+      "website": "https://pizzerialimone.com/",
+      "formatted_address": "422 W Rivers Edge Dr, Provo, UT 84604, USA",
+      "address_components": [
+        {
+          "long_name": "422",
+          "short_name": "422",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "W Rivers Edge Dr",
+          "short_name": "W Rivers Edge Dr",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Riverside",
+          "short_name": "Riverside",
+          "types": [
+            "neighborhood",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Provo",
+          "short_name": "Provo",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Utah County",
+          "short_name": "Utah County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Utah",
+          "short_name": "UT",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "84604",
+          "short_name": "84604",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "state": "Utah",
+      "city": "Provo",
+      "place_id": "ChIJdculBwCbTYcRi2qotAyO3JQ",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "reviews": [
+        {
+          "author_name": "daniel fullmer",
+          "author_url": "https://www.google.com/maps/contrib/118188531202962493306/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX84w7C_oIKRW8_a-q1Zcc4Z7iscZ-u9g-OMqACLnlJqUIDClxC=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a week ago",
+          "text": "I had a great experience here today. This restaurant offers a great product at a reasonable price. They also have plenty of items on their menu to choose from. The service was excellent. The staff is friendly and accommodating. Overall, this restaurant is worth trying.",
+          "time": 1756928840,
+          "translated": false
+        },
+        {
+          "author_name": "Anna Wolford",
+          "author_url": "https://www.google.com/maps/contrib/113152962218692351695/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVVLlKKMo9IjUZjZpBz5cGV4doN06dtrBOzYjN9HSCxNem_ZhQw8A=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "I wish I could give more stars!! I’ve been a long time fan of pizzeria limone and was so excited for it to come to Provo! Our experience was great - the pizzas were delicious and perfectly baked. It was super clean and a good atmosphere. We will definitely be coming back!",
+          "time": 1747697067,
+          "translated": false
+        },
+        {
+          "author_name": "Provo Local Foodie",
+          "author_url": "https://www.google.com/maps/contrib/111581944575562387699/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUKXxaFLmMAp-40gCxjUKJUh0MT0mySbnSBS2gqcsurCOm5p9E=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Phenomenal! I'd only been to the Pizzaria Limone in the Salt Lake airport and had a good experience there, but this WAY exceeded my expectations and what I remembered.\nGood pricing, super fast, and really great options for both typical and more exploratory pizzas. We got the Pera (with pear) and Viola (with blackberries) and both were phenomenal. I guess I was so excited about them that I forgot to take a picture of the pear one 😅\nWe also got a pear lemonade which was really good and they gave us a lemon-ice-and-ice-cream (not sure the name) since they wanted to share that item with new customers.\nExcited to go back and try the rest of the menu, I see this place very easily becoming a mainstay in Provo.",
+          "time": 1746834347,
+          "translated": false
+        },
+        {
+          "author_name": "Michael Hunter",
+          "author_url": "https://www.google.com/maps/contrib/111571050394321816715/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUdjQ33jwN3SZbMpMDs4sM1nxDIOryITZLfCHjwCgdvtDCvUrJnNA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 3,
+          "relative_time_description": "2 months ago",
+          "text": "So, this was my first time at this location. I know the pizza cooks fast, so when I got in my car to drive, I attempted to phone an order in, and was told they don’t take phone orders. Only online, but which has a $1.50 service fee for orders under $25.00 and Provo doesn’t have a link to online order from. As I told the kind person who answered the phone, that’s a bad customer experience, as is reflected by my rating. My suggestions, drop the dollar 50 service charge for orders under $25, and allow orders to be done over the phone. Or even better via text message.",
+          "time": 1751203898,
+          "translated": false
+        },
+        {
+          "author_name": "Bryan Baird",
+          "author_url": "https://www.google.com/maps/contrib/100017565484678247513/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVvdsURccOXtLb3JzHExG88Q9hJMuxpXJal-_DLolXqyx31CywW=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "4 months ago",
+          "text": "Nice place, good pizza. Pizza got served pretty fast. Crust and toppings ratio was pretty good.",
+          "time": 1747536094,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 2296,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113467918722570518858\">Dan&#39;s Inferno</a>"
+          ],
+          "photo_reference": "ATKogpdXP2Ze3JDcUj25Ttk9KFHpC0ltJL_0mtsjEVBj0b4mOPcrghSdmLDRYo-t1VPA8JL2WU4q-r8G0R_p7ZfOJ5V3Aux98UGElBrNcLfRnXBlwAlgzAvoZIUfcqNYTExBdu3ROdIf-HIUvs8u9ExZumEQ2doM1dWs6HJrnHrGI9Nux7gLaRwjYIiYUAaRqyK5_rPuyRoDvZQAYSohNutOfs1kDed7Mlw-gXo5VOkpyBn2uCN5GZb0L-9Av59IJgwU41TrG1AqG2UGdsNOkgvz-z8TH905Fi15s-hJKezbae5LgoCIKNtlJ_OFLzCgKN5pS3iUYC2UBy_9p_nxqyB3mMOQRc-461IenLbxQwP4rjjz35NrbbkTr_3uS_APenrT4n9lD33R19cR5_Z8okawDIKQPuoszqyq_RV4-xDsvsTMdXLsEj5gz9cpaHc1KCZe",
+          "width": 4080
+        },
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116160417577501137816\">Ryan V</a>"
+          ],
+          "photo_reference": "ATKogpeOY9-2EsscCj2XH0yWEtic5AGxuHgNxCi84bDB1xiubQHUfdxU0FTJDuAzqcTmKtRvhfbPNxkV-nAy87l0_c-R0QSvGsHhSn9FH5GNOmiaMNoz2wZFrbkic7PHpf23ATctQu1i8dKmHBzOolss_eBlH1RwHsHb8-BRYMEzsu3autYRgvivMrdYr-kw7CIRqdQ5RtIohp9kOaoFr8369T-HzBKTqSzYyZUQ2IrXYZM8Q50fdJAmpZyic34GKnWhr2yuZLApcCZMK4V-wJBs6LORtDQ1-q-cVhie0CKduLWL69-fZxD-j_6HG8nXpuKQ6BWYLYoTugD2ZGWkzp9wYLBWLeIg1n_pkKVJZdfXCThGFKXv_7vog3SvNf3Z8PjvPm03gbK9G5tZShMoD8mfiJzHEaHwJrC5zJDHaIlrHcMpHfnz9bTprlcfboJ103ua",
+          "width": 3000
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107870533125956475306\">Jared F Sine</a>"
+          ],
+          "photo_reference": "ATKogpfb3863f9S85uWC0p9c74fIGEZO8PhWQVdfvqc4Me8xw76_hlJMaG-XeA2fPnUGLRfeTgKzSUIsDO5H_UEUR9_Liwaiin7prptJIWr-prfuTaUP0BNF9W42p-VV9rsm1N-36rWAuiKRWOXgP71rP4tygJnVYJel-FjBA1FVDz7IbI_fc7U7MNpO8LyIifaT6xxclIlyqdPrP3F859AH8ypxae5ewv-OJ7dIsQ6JWh4sdwpUlE6Kqlm7QNwd81ycmOq2r1_5mHoZR64XwNu43hckGL3j2cCjOEUI91YrNi19UPN35yN5pwUkr9JqxhQhKRu3ZwYKPzElvo_4S-SgZc09hoARshKfvDCXbmneman8cbaXt0dTIjzEV1vEWeJ3Y_y8z4JVOgRgpa81NhpQQy-atutvDHF4Xf8_AeXnOmeuaVziw5a8R-H1EYu0M5Ut",
+          "width": 3024
+        },
+        {
+          "height": 4080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111581944575562387699\">Provo Local Foodie</a>"
+          ],
+          "photo_reference": "ATKogpeX-gwOAOcfGavYEu3Gvzg3Uuf16N4g3TsP1-APO_rG4slJ3VL--tKrSuQH2Cyprge6eWQ-ZmLS474yUoFZT9H8wSBSgQ2vQ4CsaJN39r6DnVWrMlTJ3-EyQyqVbN7kBMgmgHRaKI7Q2rS-IG1WkX3kMfXCC2cUwDmdXMAJ2lL-jsx56N9XRlZJ8899pkG2B0VOgJeaxM94ISR1P8UUIxhNak5qYekQ_VhGA1xFLf3Rv-AIkoEDg5CwaZRNncQUK7LrX5CJL1B7i2in6vbdmMbvcpoe3WakkUOLVRciVlXntWL9ioPg49Sh7oHKgK39HIr0Tgvt2DN7nOQLeJOVQw4gICkAnfvtS3yjiSWrVJh9iHlFPAgbkw5dE4Su7W53vkeH3mj-YkkC981aXApv-FiDxu3KWgxwQAsZxGQfKPEbUg",
+          "width": 3072
+        },
+        {
+          "height": 3000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/118188531202962493306\">daniel fullmer</a>"
+          ],
+          "photo_reference": "ATKogpfoJyumGhk531sca1PZ4gaW0Y5ntHnzMvt16iK1LjN3ufPRezwTg0gdD1hD1HHHFivfdbgZCCZCLNGvRwvYvan-iSdAm7Vgu7p2nOHVPgppn-G3E6xKP2EWOSR4FlsqgUBWy8d-KX6n89xoxBVdc4TdBRk4D9BzC_x-qUkFVo19FH_VomDUrayKeuDhIeLy9i3IwUQN_C8T1uW8ZHEE8xIbyAU1eLANlLy2jrAZUpm32lpGmGPvjjc41Dq7ungzYWu3xfAHeKgq0WyTNR15pSd1gofAKWfY61V3zC_DV-Vpwuw0YVA8I8sO25w4w5Ge9tsi_QhP_9IAbesNPryfHRzYA6lhmAI6hMh2ESvC76iWI_OxLQ7kTHGqIwZy-oaJ9ldObfr88mgi1m6wyznnp2FJlriHMvbMjH60KzIwrl1piceAH6RDtkmnwa7X_Q9x",
+          "width": 4000
+        },
+        {
+          "height": 4080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111581944575562387699\">Provo Local Foodie</a>"
+          ],
+          "photo_reference": "ATKogpeVct2PlxpETTMb6q9A6dWxzRnRgHKziEzNMsyp0K4w_5ufZDkG5AzC9gdbU8wpkLBulfG2MLTEWBYKQQSI7weq8O7j6_-qk-CbyZBo-FUJ60PkX6qqNNKNnV6BYZeivBzjhScGb4jZ6lqxEkymlAWomYtSwwCJHcibDSxZpHeiPSPYLmVnBEuY7DXnOqrjrXtB5mVA51eEFMFUQ406CyPmO2R43u5I_7zX1M5D-AFuSF8bHYS9llyFbbb-GJ-r0bdMllvPrE_gowBEb8nyeD_Yt86MnVhYQoBFGiKiCaMQJSTNbmWkeDdtExUakn6ANA930v4yXNX2MR_ED2kiSdY4SxKIdBKcJQINOzjtsMYqrI9DYPh0wmzcvnqvk6e5S4q0QXbDjNQzk6qd1kp0U6YH6eF8tuzrQevyhAFxVEDQVA",
+          "width": 3072
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112079550847755764229\">Alyssa Baird</a>"
+          ],
+          "photo_reference": "ATKogpcZ819_henuV12Vfg9RWNdGa-C1tg9iy4x8Ozp8RqmF8GLmyGc0yabtTNTORIXbn_7VtFbeqfqLjZbkcvh_Iv6PPylbHROoAyTFlSidSpmEA5p0IkzXxtimnQuvCCUw7ZDBU99RtZK0UaDT92Gs0PRv8kqBaFrN3teex04MSgrMt6U_k4aSrNOSGT44DeMy_gH_y_roH2MAsOlJzJuJuAuaDjjTUoOuauZQJKZu636ttjNqihYKsJwSPgSneqI0rFdAno_s_ZnkouW6OwhYwwVfl2UE8BHq4Zlt14-Nw-ojQMF91vvR9ETJ_kbCEab6QMTeIPi3yq3S3gtd-P5rcXWe9TcCQSfCx-v6xt9LoMHcASnSRmFFYjRPhceyzn_WYn2rqa7kKoHcWdhShzlVKqzKMsPSeneXFivRTa6Q2ar8eREnmJCLJxa45ByP_YMN",
+          "width": 3024
+        },
+        {
+          "height": 4080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111581944575562387699\">Provo Local Foodie</a>"
+          ],
+          "photo_reference": "ATKogpeq82kXqy0msha91pmS2O6s8O7c0Ig_loYp92ib3d3BlY7biuah9S6rSbVGCbz6y0qm85O7m7JoecAPa3WcQk2Rzi5Efjf1R20ScppoJ5y491QBwOllsa6B2SN6J8BIW0axC9UezYTQ9TTpW23cgoaZZLJzQoZNt4NMGcvP8NAQqIGTjhNVeQ_sMRT4tPHX8ykKR_ohH5jVaJAIqhdIEQKDhKYX4cSjS7fUVvkz7dmte2D04R2f4eVnU6nkCROukYq5odiV2VaZwkkgtNNwOWmxf7Gwsh_B479wf9YJtryxs9PKZ3CQqtDQgn1h1LW0E9GEAq2MQDpWAYLW68Ero4NEHoO62WSR8S4NVOdV20Ppl4pLS_rDYXtwvZHM-GmjpAx1BWzxZx40YLIxRmjDExqf0zygx1JqdnbXs344ou1DTZ29",
+          "width": 3072
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111571050394321816715\">Michael Hunter</a>"
+          ],
+          "photo_reference": "ATKogpcyiiYhtDRKtBF09LmDTJQ5-BtekZ8nS6i6LcR05gN4xoQ5Y6al39FOeFOvkdg320e1T2USphmQlO5t2nB8Ngnl972I83lfn2T09HTsJmJd7ocsorKh5lw6J8Cs8MMV_L0H-9wBfDdJOrG4HrG7hFZ615dpSc9wmtkSiSgwv5tkD9mTVQg3yns90xR0IGwXd-daWxPIbtek-DVRgHKw7j2olvP-qXkiaZLdu9R9mK1-2yHstMScq48dex8_V4cmoecg4NDmPrcBJseh5jwRobhZIaEPWnImI2SZXzDNiyXu7KXYLr5evC5tbqd7j2op_SBtVHw7aLoGE1zDVyzw9h-A7CW7xtegnyNwWkiWOjyAxbs_bbNNvb0eL6HdUkhc8FYXMakU4uaRNYrQcIxwPz-XJ0ABXnufQ5hTbNW8-KtGlAjFlm_yCsomjlgRaw",
+          "width": 3024
+        },
+        {
+          "height": 4080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111581944575562387699\">Provo Local Foodie</a>"
+          ],
+          "photo_reference": "ATKogpdeAVOovZTDki4JxMz7I8_GVIFbfTiw5fqCDZMwi_fpabV5jPB5jpm1UsN5sqb_dktIGyAsQbqSNlFQymQ2CnPds8Z2iSK4l9bt7YiLEG0thGjJgbx_YUBSenI1it7zXIgEDxcdkgoILrT112-CyaO21g8OmV-B726aiPgYbHXn8H8Qx5evIznpzWW74QlvUnwrJnpZ2Y_Rqjq9lX18EgokGHtxs7BVqVS39poVgpjEUPxoyyKDbnnHzHNaBN9BnqsllOLRt9xOgHHVoVcJes_GvKWdQA02bC8pcVf7coufhNkqvf5E-glZNBHwO7mMluK0RBERDelmQRt_Di6lsQmRpZhwsEJCALRRdAmN7xVaZNJSduXPEesvlW078nFwHZZ0f67P7P839Pe_1a4D-lRI9AdjJZ1Sm0y8eaF71fm3qJk",
+          "width": 3072
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "2000"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2100"
+            },
+            "open": {
+              "day": 1,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2100"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2100"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2100"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2200"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2200"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 11:00 AM – 9:00 PM",
+          "Tuesday: 11:00 AM – 9:00 PM",
+          "Wednesday: 11:00 AM – 9:00 PM",
+          "Thursday: 11:00 AM – 9:00 PM",
+          "Friday: 11:00 AM – 10:00 PM",
+          "Saturday: 11:00 AM – 10:00 PM",
+          "Sunday: 12:00 – 8:00 PM"
+        ]
+      },
+      "price_level": null,
+      "editorial_summary": null,
+      "url": "https://maps.google.com/?cid=10726604597711366795",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcQppnQ6cUDKxyMWeC1UtVN-dy_zhcgweppiC1gXFeVtkg5WXDBVH60-MxZU4GgA-fTc5EM5jvE4J9dO8r9B0p0Jg-R2rjFo9GreVgx9ipAAOTl7Z8WPCjhUDpOT2iWGWvNje9NgaAG6ptp5s5QPc3HKgnG_OGfCNfyxpbVExuqoIw2N3C9G0zE7wz1AaRR-z_wyLzyK9PxBdMgpUHLrtZC6-OSQPa80PZQJ8y6gdHeC6haMC3pv_xqC6j904ZNjXcP4Tm-iH3W0KXGvCD6iXZXT51iPC4SvF1S65JOcZwob__6qZsIHp2Ey6TStv0_NOpPxp7zw5wcfYuA9nSUxt_ZBL1YPJTt93XmxqSZB5b7zrBfnBpCeLW3OfuIwIUQ-MhcrPRxvarJzulaMto-H1x_PwX2cP8Mcg0gh1OibFLibzD2awFKiBWdrIoDPK5z&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpf9-qmbjtr48Des84qAMrDuSJ5PIOIuUF1-lBsgUfvLy2r0qXfLk70NogLotqfkj7QdiDSrlYg4Iyt3687ckzAR1aK-bmrDoX5SsPplxi1qfTvCJoaOmRl9Dnp5aOLkg1dHnuhWS9hJhI4tnkIcs9Xr-PnKklFmT_oijdw3RL3rOjR2NTrj0DE5wGJv9f9NeGg-k3hfBP8g_6jluo2IeN65fkBsM02F_TgYJjgRBOyu6FayZ9wpW01ejO6QA4T-Ds-Hl4ic35cHAhk8yPZce6vL33P-pd9gzdr_p41GF7J0lyrrZupo5peKFzzK-5m_x6lZy0hp1utxvRHfVsSc1_5EbFKfYD3PSn2F1JVo0p3rQ48iSKi0fiXgFGPsGL_15n129CB9a_k73jlsi6hkm5PoGJCwN8opM6TwpB6htGzaqe6YzuhQ8KY_daNyoaPC&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcH3lGEnn59wV2b05fuLgOV5vO1N26tdi1ow02e-trnn0qEFkldpGd5wQzONzm3ZrHQvpcXUXN5gvSKDp_G-7UmKA94P-aqmc2sQJMzdrUmKl_s2HALWFGQmiurIL1KnI4yel6A82u1pYT8Z4J8qNL4fpodL12ofQ4R4zB3iQtpTcTfpoJXJfm--Lh7oOU6nYocSFz6pIfCHPG-NX4Uxs42iSbsxUo4L7Admp4lABHxtGOXl6Zed4GMbQ5hwSS_aEKLnDL0_AoKFt9epymUwHdPVO8n8gE6K6uOUxQ_XnAL2pXR7mApn6KsnALRb3o4WW3jyiuO2DB4Vs2BcSWdRcNqoF9uylfuPefySdUPQMIzobLBFo5G9xBhdb311C8z4bB9DdF-1TKUz8bT2iaLUN3DXDmKTKCBO07P5KXwsZZzgMK6MWeXkj2VHdsds--J&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpflnWhxU0KgDHeUVL4EDNxUm9NbmqvbOrG6OW5fAQM9XB_Ry8mj9K1RdydXEKERlCJT958uEEsB_xeY4_p7_c1C5vi1ZBc8zBhxruxXMCoHRoJ4apCfho9YMY_9rFKiQAOY9-2f0U36StooBUi3tKKB_ygrgzFC0USUVq4Lm882JRvsFOS3lOK0DpiVeKQUw6BadWVTj_Q9NSUKZlinj5vDIwUbdT-g5-0sMIAr_urz4ji82zcYJqRndDYZNuWDQGzL3JL1f7Aa3e2LEe9cVCVceBW79dnJstN9yTlL2JVu0v0UuO4cjTqKuG3O2GcFpfZ-NqIpr6eZ0cEGGmXuH9CdsU8MNFdQQW1ge5U2P1PFCQVxd-JbHyj2H49CjlJ9VwJBEN75QnY96RUirn_xEf88cQAupFudbLFvrIIhUkIowA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpeI5t3b9wZjNoj5TatsK-Vsu8XG8H_U8se0UpT5L41_ogIU2d_pT4lAM74PzUcJYV3coaSSi-M7dfm2pZMCYehEgBKi2l5kvmLHb2iiAzO0id6u3X9O1EZB1wnkDEPm9kxd0lKpzTLfVoBtmlEsuMUHeYiLwWaVwOS_BiNw-wsk0jGNu9iTp-zVLDlzmZ-JDYinCCN5f6FomFluXvz3Y_ZrCC-wBbDle39W6zR5eU7SVKnywMw_--ZgADa1LRKTlhTjz7d_tXxFI_h16W1Z384P8HdNDqLZwX4g8JssdipDxvGFGrLJ5HDyJc30XjDkbT8LSgAWVsw0FYfMggc-X5QH5aEtbQPioIyu-80pdjeLPSZOy-wKqt1TcTUylfOu6FFrXKsFComJ6mBKKGscceaUDBEJXuZiS5BS2X430xzymFmge0SCdIIk5NvPisYN&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdMTmFb711btmP1wGE3l5hn9uS2-oNy7VU6PTN7y5F7g7eS7SW98xfccH8gl2277kBJr3Xi9B9tshCiuby31Syo9RLtQ_sMn6inbPRQ9ubwdbqD_7oH-gI_LCRDukszpFOE9bv1ArtP0DP0tuDTmc9zlwwXTBh7wr-CI7TWRDBUHws9QY2D67s0aFoCxPDBzBPQoI63WwbRgkfmtLucx7I3wGc5UuQ5MChyx1WYxgNKONXjxCMcVyHGczaQuL7MnJ5pJanNLRNTmPlkrMQU-sivR4rqt4DeThmQWvAjdww9-mhX5mdWmxyTYIS1GKff71gFkn5wKk1B7sKy6hSiyMXl8f1v1dP7DTf1584XkscR_-koewtUKAkDKQ1cFvxoESdjIjlogWcjOAmIeb_J-fFEtIbi2I51xjWZ9Up6xTFZ4Q&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdolT1BYaBfSK2on6k9QO0XOxQKQJj4U5JKgSwWt2pGmMtk6frZAq5uCfkEOZkHQAuVraPrJttd-rTA2n2xHIa3w4Rghi9pHAmIKbQa29bu0pLfNQfYhNE6LvQuxYvcHnZRhn3fbBRbLv0I-Wks4hbiHhIZS8eO72YPP7OirW5fvte1RqKRdbLveL4h0n8eLJj-FYOGkdoKdmAWoY6NTn2uTvpCumWZN622_M-V39v--Jj5JZxF_cszRtH1fwl9G7qkTsf7rSClbxIu6dxc1cyvzFm6r7P0_69GTQTB5uINZD6lHoSVmzw72_qguSc_XIDqIysO16VVPqnPK_mQ56bRtVjZ0lHpxYs5iN5ljkYOfKCxB2w87T616eKHUkhJjptd2g8eBIdY5yL2sIGrTMJ1AIoZhSKz8Iu-4JW35bh058Dy4G5OSta8NtyJItpW&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfy_y7BEEJZo8TWfhF3ks5kiZ_UTxk5e5K62tyWzggspezMsflHO38SJ03S1Sl5g3OJR-d-6oyS4DgtkZ25O9dEm52--HqEoNDAsfjOgFxJmMQcNjV2ALhsx5DDAfnVL6Gk9bk6ugfp8Eh44ioYRODt1yuizZa5xpra0n6gbjRTlkPxgL1RZCI1zfYHSwrKrJMJLsfSXH735go0LNEibHpcrQcnAVsMAvSsBe8B8faEStBAPkpwTWhCdLFsAGb4uhm9vmlBhA5o0PBU4gUbr-pVl18Z0qi0ZflEuWPb8qJNfPrf2gY2tb1Nz90ksYtPvcwIkpVr0ZvX8EZ7DW0b9_04EE3VXMXujjPvQXh38E6jWsP6Sbi5AaIab6T8SXf7o6DywG50ecUY6ZX_uXUoeDeDlKjRs36oyssE8g2ZkOQab5lG&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdhw1mqhAs3PrHYL-mJZOxyND65HB2_618b1BuScCXJHQX74SoS3U8mq8ZePmt2apocKQOmOed4SNZZFvsgK4aF6fsYh9XrB_juvTaNg2jLaKVBV6_rOfrf6UUg9EiZ8e8EkMpmbC1zsD7u0-6k6f2y3TYwCZN5qu_1vNDE5Q-5jBvkzN9rG6WhEN-473O-X9hHQ32UBrCDVBLC-DxHRpP2Wq1IbzKb_Q5dfDQWc4_5NZAMtQcN0zV9UFqkRFfFDjoUJmyvMq_h7AYimGaX6G601x7VA-G-xQnBzM0EtW8nJ45ELeKMPBpW5e0YJaocA1pu13ac_XabTXkQn3rYozm95aW7BRuAG6cdA8_mEdo40tVaNtXzJ9PCT-zSriz7gxBaZ_OGHsR_DosePl9iXCz9IM8As_xJjzNHRgwMlDkAJpg1reyEq7Zg-Qmvgw&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdE4UgmTGwRe0e_0WSFuTfsouVSCP2uhT6vFSdyaVV05AjiP-uw6qWv7w9yvzmh63W0TFIPaBHT2waiQygyF0675R2xq1XGQ9chzojFX2wheCQhF_5xv6jylwt1-Hn6RgFssEBOPg-WkQp84bKJ2_Cu5vh7u8h1vyXpkjgLyejvI56S7_vtYb6F1g1GOj8UAlWBdEBWYd0odiul3NQcKH0ZJV50838pKAeBJ9pBDPTMzmv_TogiRkzqiXhiRSs3QjX-8Jw7o9t8-e510x8RSuGniHlzbmibtQsWt_g_559ph07dWyKPP6n5PoOFYKR0N8MIbzKliKxjxQsVAnwN33AL4Sh-M8ASQmwdlkM6y02UECoHE8Cg8OWqveKmlhnLmtkHlpLVSfQhDiah-ffss2G3zq_dHP0UsA0pdjBYK6_6lKo&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 56,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": true,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 92,
+      "totalReviews": 34,
+      "averageRating": 4.6,
+      "sentimentBreakdown": {
+        "positive": 85,
+        "neutral": 6,
+        "negative": 9
+      },
+      "reviewSources": [
+        "Google Places API (Apify Enhanced)"
+      ],
+      "keyThemes": [
+        "Service",
+        "Pricing",
+        "Food Quality",
+        "Location",
+        "Atmosphere",
+        "Cleanliness",
+        "Wait Time"
+      ],
+      "recentReviews": [
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "I had a great experience here today. This restaurant offers a great product at a reasonable price. They also have plenty of items on their menu to choose from. The service was excellent. The staff is friendly and accommodating. Overall, this restaurant is worth trying.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 2,
+          "text": "Margarita pizza was a dead ringer for a bagel bite. How is this place in business?",
+          "platform": "Google Places (Apify)",
+          "sentiment": "negative"
+        },
+        {
+          "rating": 5,
+          "text": "Excellent and very speedy food",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 1,
+          "text": "This location sucks every time I’ve ordered from it. NEVER ordering from here again. I don’t know why you think it’s acceptable to sell a divino with BURNT chocolate.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "negative"
+        },
+        {
+          "rating": 5,
+          "text": "El servicio fue excelente. El chico me recomendó las pizzas que no aparecian en el menu. Fue amable y me encantó mi eleccion. Pizza burrata. Senti el viaje a italia sob montarme en el avion. Este lugar es muy buena opción.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "ABDEL IS THE BEST EMPLOYEE!!!! He made sure my experience was beyond pleasant. I will be coming here for my birthday, my moms birthday, and well maybe my wedding night. Give him a raise, he deserves it.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Abdel was so helpful!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 3,
+          "text": "This place made me sick to my stomach with its food but the service and people working there were amazing people. The atmosphere is very chill and relaxed but also kind of boring because of that. The restroom was my safe haven during my dinner trip here.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        }
+      ],
+      "detailedReviews": [
+        {
+          "author": "Abby B",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-08T15:09:01.915Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pOVGNIUlpTR0kwWW5WTVRESnJTMGcyU1ROb1RrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWdeTuUKy45mAE-sCioZOOx-wzV7lWwBPUVRp2XyeKrAR4g3idD=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104699792072444139859?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "positive"
+        },
+        {
+          "author": "daniel fullmer",
+          "rating": 5,
+          "text": "I had a great experience here today. This restaurant offers a great product at a reasonable price. They also have plenty of items on their menu to choose from. The service was excellent. The staff is friendly and accommodating. Overall, this restaurant is worth trying.",
+          "date": "2025-09-03T19:47:20.036Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2paM09EaHlXV3BsUlhSQlMyeFdVV1J4UkZkcFIzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX84w7C_oIKRW8_a-q1Zcc4Z7iscZ-u9g-OMqACLnlJqUIDClxC=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118188531202962493306?hl=en",
+          "reviewerNumberOfReviews": 407,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Josiah Fee",
+          "rating": 2,
+          "text": "Margarita pizza was a dead ringer for a bagel bite. How is this place in business?",
+          "date": "2025-08-28T02:17:46.175Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21KS1RrZERSRmRDTWtsRGNYRnRXa3N5Y0hoVlMzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKQauQVWAMWiDzMHGdnX91qOixON7buG4Q8C9bCtrY57fXAGg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107062743753532848050?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Mason Pond",
+          "rating": 5,
+          "text": "Excellent and very speedy food",
+          "date": "2025-08-24T16:36:22.154Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25NNE1IUnFVRzloT1ZST2RHTk5aSGR0TURoU2RYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUL97p-D9_TwMeqql7egw_5m5jk32tTTBwkEijQC2wltbwKbbrY=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114952426466591631969?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "P. Jamie Leake",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-02T02:41:10.799Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21kVWFGUkhkV0kzY1RsM01FTkZaSFJUU2w5NmFIYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLpOpWxYp6yEkJohMOvYLRvqpR2vfPWXtWjRTKdGWm9ZTJHLg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108544304461276855139?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Alyssa Baird",
+          "rating": 1,
+          "text": "This location sucks every time I’ve ordered from it. NEVER ordering from here again. I don’t know why you think it’s acceptable to sell a divino with BURNT chocolate.",
+          "date": "2025-08-01T01:29:43.550Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xNM1ozZ3pUbE5KWjNSU2JFTnZjVU4yTUdwNFZGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUSaGbgWf1dDPBnrCvAzldIMCDQ6hgpGYaqHDcoJPx8CKmLoFE=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112079550847755764229?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "negative"
+        },
+        {
+          "author": "A. M.",
+          "rating": 5,
+          "text": "El servicio fue excelente. El chico me recomendó las pizzas que no aparecian en el menu. Fue amable y me encantó mi eleccion. Pizza burrata. Senti el viaje a italia sob montarme en el avion. Este lugar es muy buena opción.",
+          "date": "2025-07-31T19:21:55.232Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pCMFEyNVdjVmxvYURVNVdXSm9SR3RYUTNGNVJGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJLgI18-Rn9PCL4isLv37NhAiuXdo8NmOi1BnyvsQSj3AbLeg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115478467376713182429?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "bria mccormick",
+          "rating": 5,
+          "text": "ABDEL IS THE BEST EMPLOYEE!!!! He made sure my experience was beyond pleasant. I will be coming here for my birthday, my moms birthday, and well maybe my wedding night. Give him a raise, he deserves it.",
+          "date": "2025-07-31T03:17:16.128Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25sVFNuTnhXV3BNVjNsbVVucG9iVmQxZFZWcWQyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLm-L1FDWNf8Mv3SG3c1W6IWLydnxjwlAVQMjGEd2aky4GB7w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100759098389096573299?hl=en",
+          "reviewerNumberOfReviews": 17,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Alyssa Freeman",
+          "rating": 5,
+          "text": "Abdel was so helpful!",
+          "date": "2025-07-31T03:16:52.598Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pKTE1rOHdkVlk0VlZrMU5IRk5kR294TkRaVVgzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVu89TktVs0MUBr2iwf4ZbtrjEYpYLQhipl3YluqIlyMcJP5kzD=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108549489962064508630?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jared F Sine",
+          "rating": 3,
+          "text": "This place made me sick to my stomach with its food but the service and people working there were amazing people. The atmosphere is very chill and relaxed but also kind of boring because of that. The restroom was my safe haven during my dinner trip here.",
+          "date": "2025-07-15T01:31:36.147Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2padFUyZFZVWHBZU1d4blgwUllWVjlEUkV4MmVGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ8AKJcB7bP7y4Sfw-z4tBU3HhvlgFzMoP6112-JsJoy48LUw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107870533125956475306?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tai Gibson",
+          "rating": 5,
+          "text": "Best pizza in town!!! Seriously the cleanest, restaurant with the best pizza I’ve had in a while. You NEED to try their lemonades and ice cream slushy dessert too. They’re to die for and perfect for the summer heat. 10000/10 recommend.",
+          "date": "2025-07-09T00:48:06.412Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21jek4wUnBURlZIYTFkNlVVMXBlSFUyYWxWSFEyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUzhZYiATGl84zI7GpBDIkY3wQOb-waFqXm92pwhJYiP_hnXhK-GQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117831337243795069530?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Michael Hunter",
+          "rating": 3,
+          "text": "So, this was my first time at this location. I know the pizza cooks fast, so when I got in my car to drive, I attempted to phone an order in, and was told they don’t take phone orders. Only online, but which has a $1.50 service fee for orders under $25.00 and Provo doesn’t have a link to online order from. As I told the kind person who answered the phone, that’s a bad customer experience, as is reflected by my rating. My suggestions, drop the dollar 50 service charge for orders under $25, and allow orders to be done over the phone. Or even better via text message.",
+          "date": "2025-06-29T13:31:38.843Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xKRVEwRlBjblpaY2twd2JtUTNZbTB3VGpoUFQwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUdjQ33jwN3SZbMpMDs4sM1nxDIOryITZLfCHjwCgdvtDCvUrJnNA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111571050394321816715?hl=en",
+          "reviewerNumberOfReviews": 42,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Ryan V",
+          "rating": 5,
+          "text": "Amazing food; staff was super helpful.",
+          "date": "2025-06-27T02:59:30.241Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21wbFMyWTJVREpxYmt3M1RETkthRzlYTkhrNGVFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK6FBBUhkTvfeu72MQOgeRmzzsWvjfzhsNpQUg2RgcoM9i0Mg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116160417577501137816?hl=en",
+          "reviewerNumberOfReviews": 32,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Whitney Wall",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-26T23:09:46.624Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tWamVtTXdURWR6WlZwb2FFNVFURFZWWlhFeldXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUIuyzPFcVAUeBJvvC9FrK4XkmAeRdokzA4C9FGrN_ZnmiNnlGMGA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104117185573067400906?hl=en",
+          "reviewerNumberOfReviews": 56,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Angela Brown",
+          "rating": 2,
+          "text": "Food was okay. But not really worth going back for! Also, they have these random nights where they like to BLAST music outside so loud that every single resident in the apartments across the parking can hear every.single.word! Another reason I don’t plan to be a patron there again!!",
+          "date": "2025-06-22T01:22:05.746Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25KMU1FSkdVWEpKUm1OQ1ZWTk5VVkF5Y1ZSSWFtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ8Xf9QCLaEYVAf3Fl3WQKTm5HdmUDPmuT56Q21UvmwMGmeOrkn=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115262307890253471511?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Berenice Palencia",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-20T03:01:58.462Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21oTFZXMWZjbVJvVkZGWk0zWXhNbE5SUVRScWVYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjULYAXe8C8pwFCqEtxQS77ATJLQlOEuNn3Nzu_IZ_UezvqNepGGxg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113399646438979980291?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Marquelle Christensen",
+          "rating": 5,
+          "text": "Everything was SO fresh and yummy! Definitely gonna make this a regular stop!",
+          "date": "2025-06-19T20:49:53.362Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25oWVRVcE1SblV6YzIxUGNFaDFVbFJPVTBOeGQzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKIsE5qWTy6gYwlUhPy4vFugl71jBX1Ega0--UBhuSHQAz-8A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104516052902137467207?hl=en",
+          "reviewerNumberOfReviews": 15,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Erika Burdett",
+          "rating": 5,
+          "text": "I just died and went back to Italy! Best Pizza I’ve had since I went to Europe. I’m almost remiss to give a review because once it gets out how good this place is, it will be PACKED! Got the Margherita Napoli pizza and the Perra. It had pears on it which I was wary of but it WORKED 😋ALSO they give FREE SOFTSERVE CONES to kids under 10. Which my kids LOVED. I could go on about the lemonade but this review is long enough. Go eat there. Right now.",
+          "date": "2025-06-13T00:44:38.466Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tJM1ZYaEtjbGh5TFdoQk1uWkNNV016YTFSYVgwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIgIXDZzhUHF8wVlADlbIRRa77E2S4GcTEvBupyuFwyrwVytA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116931270871655052476?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "andrew flores",
+          "rating": 5,
+          "text": "Fantastic pizza. Very happy that they came to Provo. This location is awesome.",
+          "date": "2025-06-10T18:58:25.032Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VQV2N1YzMwbHVYeDVRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUPauc8ZDSdbJaQyaF3ctMLsYNkQXcKmdExnw_iQOeyqECK93HZog=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106861581875440546676?hl=en",
+          "reviewerNumberOfReviews": 23,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sophie",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-01T02:53:45.018Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pBMmVGVXdVR0kxT0U1TkxXUmxWVUZaZHpSTGJVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUQPGA4sKYXK7z1BB1UoIrvg19rDRtAQzKUomtFG638orcpqPgpng=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101948149700028659676?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Bango Jetty",
+          "rating": 5,
+          "text": "I don’t usually write reviews online, but Pizzeria Limone is worthy of it. Best pizza I’ve had by far and both the atmosphere and service were fantastic!",
+          "date": "2025-05-27T19:59:05.193Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VPM3U4N0x3bXFmall3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVQTzM0xTNsVNxF-HSmKybflsC8-fzI57UnNH8mZr6WfPpwV0HT=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109077351793617206856?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Anna Wolford",
+          "rating": 5,
+          "text": "I wish I could give more stars!! I’ve been a long time fan of pizzeria limone and was so excited for it to come to Provo! Our experience was great - the pizzas were delicious and perfectly baked. It was super clean and a good atmosphere. We will definitely be coming back!",
+          "date": "2025-05-19T23:24:27.087Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VNci1wcXFwdDhqVEh3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVVLlKKMo9IjUZjZpBz5cGV4doN06dtrBOzYjN9HSCxNem_ZhQw8A=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113152962218692351695?hl=en",
+          "reviewerNumberOfReviews": 33,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Bryan Baird",
+          "rating": 4,
+          "text": "Nice place, good pizza. Pizza got served pretty fast. Crust and toppings ratio was pretty good.",
+          "date": "2025-05-18T02:41:34.916Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VKX2F1b0x3NHNHdnpBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVvdsURccOXtLb3JzHExG88Q9hJMuxpXJal-_DLolXqyx31CywW=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100017565484678247513?hl=en",
+          "reviewerNumberOfReviews": 30,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mitch Stephenson",
+          "rating": 5,
+          "text": "This place is delicious and the service was great! They gave my whole family free ice cream.",
+          "date": "2025-05-10T22:56:31.275Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VMYnM5NTZ6MzVlbVlREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUSIedHjr5I_zApzwz2D0dSTmpBE_LXiVKIMsgCg9qnPGu5ooY=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109672646516401054172?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tyler",
+          "rating": 5,
+          "text": "Glad Provo got a Pizzeria Limone! Very very good, favorite pizza around",
+          "date": "2025-05-10T00:10:03.712Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VLNl9tcENicTRqVG9BRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUOzVAitCXz11Nj8VKCiHJk5T-chgn7YuEsTEjrlK_R8nrK7U8r=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104167823551356086622?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Provo Local Foodie",
+          "rating": 5,
+          "text": "Phenomenal! I'd only been to the Pizzaria Limone in the Salt Lake airport and had a good experience there, but this WAY exceeded my expectations and what I remembered.\nGood pricing, super fast, and really great options for both typical and more exploratory pizzas. We got the Pera (with pear) and Viola (with blackberries) and both were phenomenal. I guess I was so excited about them that I forgot to take a picture of the pear one 😅\nWe also got a pear lemonade which was really good and they gave us a lemon-ice-and-ice-cream (not sure the name) since they wanted to share that item with new customers.\nExcited to go back and try the rest of the menu, I see this place very easily becoming a mainstay in Provo.",
+          "date": "2025-05-09T23:45:47.287Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VLNzQtWU9MLVlXWnpBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUKXxaFLmMAp-40gCxjUKJUh0MT0mySbnSBS2gqcsurCOm5p9E=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111581944575562387699?hl=en",
+          "reviewerNumberOfReviews": 39,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sarah trevino",
+          "rating": 5,
+          "text": "Really friendly staff, inside was really clean! Employees were on top of cleaning the tables, and the owner guy was super patient with us when deciding on what to get. 10/10 pizza, will definitely be coming back and recommending to friends!",
+          "date": "2025-05-08T03:32:44.515Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VPNk42LW50OHRISWlBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLT1fx1oDP-q4qPjvilDLkRPMK772a9AAhi45taxkPp0D_5Yw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100320059359400516893?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Chandler Chavis",
+          "rating": 5,
+          "text": "Pizzeria Limone Provo lives up to its five-star rating! Their wood-fired pizzas boast a perfectly blistered, chewy crust and fresh, flavorful toppings. We can’t get enough of the tangy Catania salad and indulgent, gooey cheese bread. Add in the cozy, modern dining room and attentive staff, and it’s a must-visit!",
+          "date": "2025-05-08T01:00:38.046Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VPM29ocTc1X016QzhRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUV_8tNzY5u2FPYKHZr3AXbx528O5b60naKVcauFCQ7TuxNHoZb=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116326101428813619525?hl=en",
+          "reviewerNumberOfReviews": 21,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Hannah Adams",
+          "rating": 5,
+          "text": "Excellent food and customer service! Meets the standards of other Pizzeria Limone locations I’ve visited. Beautiful dining area with outdoor seating.",
+          "date": "2025-05-02T22:53:41.274Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNZNHRQZ1V3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV2vG0hJwKf0L3fBXMgmkBl9siM7mfO5ryBvk__dudZ4RTJHQvu=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106402689513084527489?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Salvador Juan Sanchez",
+          "rating": 5,
+          "text": "Muy limpio el lugar, compré un calzone y estaba muy rico, y sus limonadas son muy refrescantes!!! Recomiendo el lugar 😋",
+          "date": "2025-05-02T00:58:43.480Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNZaklhQkp3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ2bOFUYWfmYJUc4TIuvjmH2oOy9aMFF6GCtURCuOboU3aSlA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116305699617440226177?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Satu Kujanpää",
+          "rating": 5,
+          "text": "BLACKBERRY PIZZA! Sounds weird but try it! What a clean, happy place. Workers were so nice! Highly recommend. Beautiful atmosphere!",
+          "date": "2025-05-01T19:38:44.106Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNZdEpEejVnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI-F6G8V_RmU7KZ_a4P86Iozx1CVVLdPW_gv6gilUP6RJm7Bg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115071011825999060133?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jenny Briggs West",
+          "rating": 5,
+          "text": "The KINDEST staff. Every interaction was genuine and kind. The pizza was heavenly and they provided excellent customer service. 10/10",
+          "date": "2025-05-01T19:38:05.696Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNZdEpEWTZRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU1NCjH9oMLsBe4LNZ04EF3sEaPAZWHUPl53QJDbfqVTDHNGjBA2A=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117270687931696141580?hl=en",
+          "reviewerNumberOfReviews": 17,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Maddy Tanner",
+          "rating": 5,
+          "text": "",
+          "date": "2025-05-01T00:51:17.738Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNZbU5heWRBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVIxDmL2uJ9AgUwA0716DXNHoLzr8Mf1j7Oq0zb0RCewZem6aLr=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109843882864993354373?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Pamela Barnes",
+          "rating": 5,
+          "text": "Best pizza in the county & their specialty salad & lemonades are to die for🎉",
+          "date": "2025-04-07T19:37:38.033Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURJakpmOWxBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIRQqRqTntCTRy8YN-hpMkAQ858Zpm9nzusd4WkstGMXBD4OQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112186098639010526833?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        }
+      ],
+      "customerMoodAnalysis": {
+        "overallMood": "delighted",
+        "sentimentSummary": "Customers are genuinely thrilled with their experience. With an average 4.6/5 rating across 34 recent reviews, your restaurant consistently exceeds expectations.",
+        "sentimentDistribution": {
+          "ecstatic": 12,
+          "delighted": 70,
+          "satisfied": 9,
+          "neutral": 0,
+          "frustrated": 6,
+          "disappointed": 3,
+          "angry": 0
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "service excellence",
+            "mentions": 9
+          },
+          {
+            "theme": "atmosphere",
+            "mentions": 8
+          },
+          {
+            "theme": "food quality",
+            "mentions": 5
+          },
+          {
+            "theme": "cleanliness",
+            "mentions": 5
+          },
+          {
+            "theme": "speed of service",
+            "mentions": 3
+          },
+          {
+            "theme": "value for money",
+            "mentions": 1
+          },
+          {
+            "theme": "slow service",
+            "mentions": 1
+          },
+          {
+            "theme": "food issues",
+            "mentions": 1
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 10,
+          "satisfaction": 15,
+          "disappointment": 0,
+          "frustration": 0,
+          "anger": 0
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "Customers rave about the authentic and delicious pizza that transports them back to Italy, making it a standout choice for pizza lovers. - social media marketing can showcase this strength",
+            "The exceptional service provided by staff, particularly Abdel, creates memorable dining experiences that customers want to return for special occasions. - review management can highlight this positive aspect",
+            "The restaurant's clean and inviting atmosphere, combined with unique offerings like free soft-serve cones for kids, enhances the overall dining experience for families. - Boostly marketing services can amplify this"
+          ],
+          "improvementOpportunities": [
+            "Negative reviews and reputation issues due to food quality concerns (e.g., burnt chocolate, food making customers sick) - review management can address this concern",
+            "Poor customer experience with ordering process (e.g., inability to place phone orders, service fee for online orders under $25) - Boostly marketing services can improve this",
+            "Lack of atmosphere/ambiance awareness leading to a boring dining experience - social media marketing can improve this area"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 34,
+          "averageRating": 4.6,
+          "ratingDistribution": {
+            "1": 3,
+            "2": 6,
+            "3": 6,
+            "4": 3,
+            "5": 82
+          },
+          "sentimentTrends": {
+            "trend": "declining",
+            "recentAverageRating": 4.1,
+            "previousAverageRating": 4.8,
+            "recentReviewsCount": 10
+          }
+        }
+      },
+      "examples": {
+        "positive": [
+          {
+            "author": "Abby B",
+            "rating": 5,
+            "text": "",
+            "date": "2025-09-08T15:09:01.915Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pOVGNIUlpTR0kwWW5WTVRESnJTMGcyU1ROb1RrRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWdeTuUKy45mAE-sCioZOOx-wzV7lWwBPUVRp2XyeKrAR4g3idD=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/104699792072444139859?hl=en",
+            "reviewerNumberOfReviews": 16
+          },
+          {
+            "author": "daniel fullmer",
+            "rating": 5,
+            "text": "I had a great experience here today. This restaurant offers a great product at a reasonable price. They also have plenty of items on their menu to choose from. The service was excellent. The staff is friendly and accommodating. Overall, this restaurant is worth trying.",
+            "date": "2025-09-03T19:47:20.036Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2paM09EaHlXV3BsUlhSQlMyeFdVV1J4UkZkcFIzYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX84w7C_oIKRW8_a-q1Zcc4Z7iscZ-u9g-OMqACLnlJqUIDClxC=s1920-c-rp-mo-ba6-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/118188531202962493306?hl=en",
+            "reviewerNumberOfReviews": 407
+          },
+          {
+            "author": "Mason Pond",
+            "rating": 5,
+            "text": "Excellent and very speedy food",
+            "date": "2025-08-24T16:36:22.154Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25NNE1IUnFVRzloT1ZST2RHTk5aSGR0TURoU2RYYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUL97p-D9_TwMeqql7egw_5m5jk32tTTBwkEijQC2wltbwKbbrY=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/114952426466591631969?hl=en",
+            "reviewerNumberOfReviews": 10
+          }
+        ],
+        "neutral": [
+          {
+            "author": "Jared F Sine",
+            "rating": 3,
+            "text": "This place made me sick to my stomach with its food but the service and people working there were amazing people. The atmosphere is very chill and relaxed but also kind of boring because of that. The restroom was my safe haven during my dinner trip here.",
+            "date": "2025-07-15T01:31:36.147Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2padFUyZFZVWHBZU1d4blgwUllWVjlEUkV4MmVGRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ8AKJcB7bP7y4Sfw-z4tBU3HhvlgFzMoP6112-JsJoy48LUw=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/107870533125956475306?hl=en",
+            "reviewerNumberOfReviews": 2
+          },
+          {
+            "author": "Michael Hunter",
+            "rating": 3,
+            "text": "So, this was my first time at this location. I know the pizza cooks fast, so when I got in my car to drive, I attempted to phone an order in, and was told they don’t take phone orders. Only online, but which has a $1.50 service fee for orders under $25.00 and Provo doesn’t have a link to online order from. As I told the kind person who answered the phone, that’s a bad customer experience, as is reflected by my rating. My suggestions, drop the dollar 50 service charge for orders under $25, and allow orders to be done over the phone. Or even better via text message.",
+            "date": "2025-06-29T13:31:38.843Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xKRVEwRlBjblpaY2twd2JtUTNZbTB3VGpoUFQwRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUdjQ33jwN3SZbMpMDs4sM1nxDIOryITZLfCHjwCgdvtDCvUrJnNA=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/111571050394321816715?hl=en",
+            "reviewerNumberOfReviews": 42
+          }
+        ],
+        "negative": [
+          {
+            "author": "Josiah Fee",
+            "rating": 2,
+            "text": "Margarita pizza was a dead ringer for a bagel bite. How is this place in business?",
+            "date": "2025-08-28T02:17:46.175Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21KS1RrZERSRmRDTWtsRGNYRnRXa3N5Y0hoVlMzYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKQauQVWAMWiDzMHGdnX91qOixON7buG4Q8C9bCtrY57fXAGg=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/107062743753532848050?hl=en",
+            "reviewerNumberOfReviews": 4
+          },
+          {
+            "author": "Alyssa Baird",
+            "rating": 1,
+            "text": "This location sucks every time I’ve ordered from it. NEVER ordering from here again. I don’t know why you think it’s acceptable to sell a divino with BURNT chocolate.",
+            "date": "2025-08-01T01:29:43.550Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xNM1ozZ3pUbE5KWjNSU2JFTnZjVU4yTUdwNFZGRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUSaGbgWf1dDPBnrCvAzldIMCDQ6hgpGYaqHDcoJPx8CKmLoFE=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/112079550847755764229?hl=en",
+            "reviewerNumberOfReviews": 4
+          },
+          {
+            "author": "Angela Brown",
+            "rating": 2,
+            "text": "Food was okay. But not really worth going back for! Also, they have these random nights where they like to BLAST music outside so loud that every single resident in the apartments across the parking can hear every.single.word! Another reason I don’t plan to be a patron there again!!",
+            "date": "2025-06-22T01:22:05.746Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25KMU1FSkdVWEpKUm1OQ1ZWTk5VVkF5Y1ZSSWFtYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ8Xf9QCLaEYVAf3Fl3WQKTm5HdmUDPmuT56Q21UvmwMGmeOrkn=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/115262307890253471511?hl=en",
+            "reviewerNumberOfReviews": 16
+          }
+        ]
+      },
+      "trends": {
+        "ratingTrend": "declining",
+        "volumeTrend": "stable",
+        "responseRate": 0,
+        "averageResponseTime": "No responses"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ]
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/pizzerialimone",
+      "instagram": "https://www.instagram.com/pizzerialimone",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 59,
+      "social": 100,
+      "local": 52,
+      "reviews": 71,
+      "overall": 71
+    },
+    "originalScores": {
+      "seo": 71,
+      "overallScore": 70,
+      "performance": 76,
+      "userExperience": 66
+    },
+    "migratedAt": "2025-09-16T00:37:21.572Z"
+  },
+  "metadata": {
+    "cachedAt": "2025-09-15T08:58:46.716Z",
+    "expiresAt": "2025-10-15T08:58:46.716Z",
+    "placeId": "ChIJdculBwCbTYcRi2qotAyO3JQ",
+    "restaurantName": "Pizzeria Limone",
+    "cacheVersion": "2.0.0"
+  }
+}

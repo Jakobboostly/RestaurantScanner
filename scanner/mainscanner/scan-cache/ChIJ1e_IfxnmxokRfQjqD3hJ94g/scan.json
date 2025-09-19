@@ -1,0 +1,2756 @@
+{
+  "data": {
+    "domain": "www.coccosaston.com",
+    "restaurantName": "Cocco's Pizza Aston",
+    "placeId": "ChIJ1e_IfxnmxokRfQjqD3hJ94g",
+    "overallScore": 78,
+    "performance": 100,
+    "seo": 59,
+    "mobile": 56,
+    "userExperience": 88,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "pizza near me",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery Aston Township",
+        "position": 7,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://coccosaston.com/store/aston/",
+        "title": "Cocco's Pizza - Aston, PA",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best pizza Aston Township",
+        "position": 8,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://coccosaston.com/store/aston/",
+        "title": "Cocco's Pizza - Aston, PA",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza places near me",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza Aston Township Pennsylvania",
+        "position": 7,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://coccosaston.com/store/aston/",
+        "title": "Cocco's Pizza - Aston, PA",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery near me",
+        "position": 0,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza open now",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 50,
+        "keywords_appeared": 4,
+        "total_keywords": 8,
+        "average_position": 4,
+        "best_position": 2
+      },
+      "keyword_results": [
+        {
+          "keyword": "pizza near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Tabor Pizzeria",
+              "address": "Morris Plains, NJ ",
+              "website": "https://www.taborpizzeriamenu.com/?utm_source=gbp",
+              "rating": 4.5,
+              "reviews": 659
+            },
+            {
+              "position": 2,
+              "name": "Johnny's Pizzeria",
+              "address": "Whippany, NJ ",
+              "website": "https://www.johnnyswhippany.com/",
+              "rating": 4.6,
+              "reviews": 239
+            },
+            {
+              "position": 3,
+              "name": "Palermo's Pizzeria & Family Restaurant",
+              "address": "Parsippany, NJ ",
+              "website": "http://palermospizzanj.com/",
+              "rating": 4.5,
+              "reviews": 210
+            }
+          ]
+        },
+        {
+          "keyword": "pizza",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Grimaldi's Pizzeria",
+              "address": "Brooklyn, NY ",
+              "website": "https://www.grimaldispizzeria.com/locations/1-front-street-brooklyn/",
+              "rating": 4.2,
+              "reviews": 9300
+            },
+            {
+              "position": 2,
+              "name": "Abitino’s Pizza Financial District",
+              "address": "New York, NY ",
+              "website": "https://www.abitinos.com/",
+              "rating": 4.9,
+              "reviews": 113
+            },
+            {
+              "position": 3,
+              "name": "Joe’s Pizza",
+              "address": "New York, NY ",
+              "website": "http://joespizzanyc.com/",
+              "rating": 4.5,
+              "reviews": 6100
+            }
+          ]
+        },
+        {
+          "keyword": "best pizza Aston Township",
+          "found": true,
+          "position": 5,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Cocco's Pizza Aston",
+            "address": "Aston Township, PA ",
+            "website": "http://www.coccosaston.com/",
+            "phone": "(610) 494-4797",
+            "rating": 4.2,
+            "reviews": 994
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Amores Kitchen",
+              "address": "Aston Township, PA ",
+              "website": "https://www.amoreskitchen.com/",
+              "rating": 4.8,
+              "reviews": 114
+            },
+            {
+              "position": 2,
+              "name": "Manbroso's",
+              "address": "Aston Township, PA ",
+              "website": "http://manbrosos.com/",
+              "rating": 4.6,
+              "reviews": 280
+            },
+            {
+              "position": 3,
+              "name": "Gennaro's Italian Kitchen",
+              "address": "Aston Township, PA ",
+              "website": "http://www.gennarosaston.com/",
+              "rating": 4.7,
+              "reviews": 570
+            }
+          ]
+        },
+        {
+          "keyword": "pizza delivery near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Town Pizza & More",
+              "address": "Stockton, CA ",
+              "website": "https://townpizzamore.com/",
+              "rating": 4.4,
+              "reviews": 214
+            },
+            {
+              "position": 2,
+              "name": "Express Pizza & Grill",
+              "address": "Stockton, CA ",
+              "website": "",
+              "rating": 4.4,
+              "reviews": 243
+            },
+            {
+              "position": 3,
+              "name": "Prime Pizza CA",
+              "address": "Stockton, CA ",
+              "website": "https://www.primepizzaca.com/",
+              "rating": 4.9,
+              "reviews": 103
+            }
+          ]
+        },
+        {
+          "keyword": "pizza Aston Township Pennsylvania",
+          "found": true,
+          "position": 2,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Cocco's Pizza Aston",
+            "address": "Aston Township, PA ",
+            "website": "http://www.coccosaston.com/",
+            "phone": "(610) 494-4797",
+            "rating": 4.2,
+            "reviews": 994
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Tom's Pizza Place",
+              "address": "Aston Township, PA ",
+              "website": "",
+              "rating": 4.3,
+              "reviews": 346
+            }
+          ]
+        },
+        {
+          "keyword": "top pizza Aston Township",
+          "found": true,
+          "position": 5,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Cocco's Pizza Aston",
+            "address": "Aston Township, PA ",
+            "website": "http://www.coccosaston.com/",
+            "phone": "(610) 494-4797",
+            "rating": 4.2,
+            "reviews": 994
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Manbroso's",
+              "address": "Aston Township, PA ",
+              "website": "http://manbrosos.com/",
+              "rating": 4.6,
+              "reviews": 280
+            },
+            {
+              "position": 2,
+              "name": "Amores Kitchen",
+              "address": "Aston Township, PA ",
+              "website": "https://www.amoreskitchen.com/",
+              "rating": 4.8,
+              "reviews": 114
+            },
+            {
+              "position": 3,
+              "name": "Pappone's Pizzeria",
+              "address": "Aston Township, PA ",
+              "website": "https://papponespizza.com/",
+              "rating": 4.3,
+              "reviews": 211
+            }
+          ]
+        },
+        {
+          "keyword": "pizza restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Flippers Pizza - Reunion",
+              "address": "Davenport, FL ",
+              "website": "https://locations.flipperspizzeria.com/reunion-pizzeria",
+              "rating": 4.8,
+              "reviews": 1100
+            },
+            {
+              "position": 2,
+              "name": "Mercury Pizza Company Midtown",
+              "address": "Hattiesburg, MS ",
+              "website": "https://mercurypizzaco.com/",
+              "rating": 4.6,
+              "reviews": 63
+            },
+            {
+              "position": 3,
+              "name": "Best Pizza",
+              "address": "Brooklyn, NY ",
+              "website": "http://www.bestpizzawilliamsburg.com/",
+              "rating": 4.5,
+              "reviews": 2000
+            }
+          ]
+        },
+        {
+          "keyword": "pizza food Aston Township",
+          "found": true,
+          "position": 4,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Cocco's Pizza Aston",
+            "address": "Aston Township, PA ",
+            "website": "http://www.coccosaston.com/",
+            "phone": "(610) 494-4797",
+            "rating": 4.2,
+            "reviews": 994
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Tom's Pizza Place",
+              "address": "Aston Township, PA ",
+              "website": "",
+              "rating": 4.3,
+              "reviews": 346
+            },
+            {
+              "position": 2,
+              "name": "Marco's Pizzeria and Grill",
+              "address": "Aston Township, PA ",
+              "website": "https://webecheesy.com/?utm_source=google",
+              "rating": 4.1,
+              "reviews": 293
+            },
+            {
+              "position": 3,
+              "name": "Amores Kitchen",
+              "address": "Aston Township, PA ",
+              "website": "https://www.amoreskitchen.com/",
+              "rating": 4.8,
+              "reviews": 114
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"pizza near me\", \"pizza\", \"pizza delivery near me\", \"pizza restaurant near me\" - optimize Google My Business profile with these keywords",
+        "Ranking below #1 for 4 keywords - increase customer reviews and engagement to improve rankings"
+      ],
+      "scan_metadata": {
+        "location": "Aston Township,Pennsylvania,United States",
+        "timestamp": "2025-09-15T19:07:41.631Z",
+        "total_scan_time_ms": 30784
+      }
+    },
+    "competitors": [
+      {
+        "name": "Gennaro's Italian Kitchen",
+        "domain": "gennarositaliankitchen.com",
+        "performance": 94,
+        "seo": 85,
+        "accessibility": 80,
+        "bestPractices": 89,
+        "overallScore": 87,
+        "rating": 4.7,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 827,
+        "keywords": 63,
+        "domainAuthority": 71,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+250 keywords",
+        "authorityGap": 8,
+        "backlinks": 743
+      },
+      {
+        "name": "Aston Diner",
+        "domain": "astondiner.com",
+        "performance": 88,
+        "seo": 79,
+        "accessibility": 75,
+        "bestPractices": 84,
+        "overallScore": 81,
+        "rating": 4.4,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 842,
+        "keywords": 62,
+        "domainAuthority": 75,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+100 keywords",
+        "authorityGap": 3,
+        "backlinks": 991
+      },
+      {
+        "name": "Towne and Country Cafe",
+        "domain": "towneandcountrycafe.com",
+        "performance": 92,
+        "seo": 83,
+        "accessibility": 78,
+        "bestPractices": 87,
+        "overallScore": 85,
+        "rating": 4.6,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1125,
+        "keywords": 44,
+        "domainAuthority": 71,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+200 keywords",
+        "authorityGap": 6,
+        "backlinks": 988
+      },
+      {
+        "name": "Phoenix Bar & Grill Aston",
+        "domain": "phoenixbargrillaston.com",
+        "performance": 88,
+        "seo": 79,
+        "accessibility": 75,
+        "bestPractices": 84,
+        "overallScore": 81,
+        "rating": 4.4,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 960,
+        "keywords": 51,
+        "domainAuthority": 69,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+100 keywords",
+        "authorityGap": 3,
+        "backlinks": 1011
+      },
+      {
+        "name": "Barnaby's Restaurant & Pub",
+        "domain": "barnabysrestaurantpub.com",
+        "performance": 86,
+        "seo": 77,
+        "accessibility": 73,
+        "bestPractices": 82,
+        "overallScore": 80,
+        "rating": 4.3,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 498,
+        "keywords": 33,
+        "domainAuthority": 80,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+50 keywords",
+        "authorityGap": 2,
+        "backlinks": 1082
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 74,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-15T19:09:24.600Z",
+    "businessProfile": {
+      "name": "Cocco's Pizza Aston",
+      "address": "2430 Dutton Mill Rd, Aston Township, PA 19014, USA",
+      "rating": 4.2,
+      "reviewCount": 994,
+      "phoneNumber": "(610) 494-4797",
+      "website": "http://www.coccosaston.com/",
+      "formatted_address": "2430 Dutton Mill Rd, Aston Township, PA 19014, USA",
+      "address_components": [
+        {
+          "long_name": "2430",
+          "short_name": "2430",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Dutton Mill Road",
+          "short_name": "Dutton Mill Rd",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Village Green",
+          "short_name": "Village Green",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Aston Township",
+          "short_name": "Aston Township",
+          "types": [
+            "administrative_area_level_3",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Delaware County",
+          "short_name": "Delaware County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Pennsylvania",
+          "short_name": "PA",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "19014",
+          "short_name": "19014",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "state": "Pennsylvania",
+      "city": "Village Green",
+      "place_id": "ChIJ1e_IfxnmxokRfQjqD3hJ94g",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "bar",
+        "establishment",
+        "food",
+        "meal_delivery",
+        "meal_takeaway",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "reviews": [
+        {
+          "author_name": "Tiffany Hopkins",
+          "author_url": "https://www.google.com/maps/contrib/115744044226306672448/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKUW1Ib4r5EZRdqZTi8qEiomiyHANHy8WXMMafq8May8HqbgQ=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Let me tell you right now . Cocos is my lifeline. It gets me through my week just knowing I can order this delicious pizza on a Saturday and devour it with my precious family. 100 stars .",
+          "time": 1741477519,
+          "translated": false
+        },
+        {
+          "author_name": "Diane Boyce",
+          "author_url": "https://www.google.com/maps/contrib/100510419005274682081/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL0-gNb8POQ0bYFDIgCMS5m-1ZG3-8Ck2VPkUcFb4JQeWsXTw=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "A great local business with flavor. We love your hoagies and pizza, and one stop shopping for beer and snacks. Always a friendly smile and fast service. You supply our community with great taste!",
+          "time": 1755803008,
+          "translated": false
+        },
+        {
+          "author_name": "Nicole MassiDowney",
+          "author_url": "https://www.google.com/maps/contrib/112895247037349570376/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK-LcCTgXakN4kgAaPW6svXNVf-K0yDKZygs7hg3wyW1gbhqQ=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "I've been coming to the Aston Cocco's for a while now, and I won't go anywhere else. The staff are fantastic, friendly, and helpful. The atmosphere at Cocco's is great. It's relaxing and I can enjoy dinner with my friends/husband etc, and it's not loud. The food (pizza, cheese steaks, French fries) is very good and it's cooked perfectly. 20/10 I'll come here every time.",
+          "time": 1752112478,
+          "translated": false
+        },
+        {
+          "author_name": "Kevin Hance",
+          "author_url": "https://www.google.com/maps/contrib/107515067399423883973/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX0QfYXfx7H5JfiGtRISPsgBo_YNgH8uPGA6lpo-zgm42i7D-zZ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "a month ago",
+          "text": "Pizza has always been good here. Service just ok. Fries were slightly burnt but I know its not a regular thing.\nGood for kids parties",
+          "time": 1755370235,
+          "translated": false
+        },
+        {
+          "author_name": "Val Hoffman",
+          "author_url": "https://www.google.com/maps/contrib/112958148754068881112/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWvK-LUl_beUKS4bqA3I_m34nQPcBXPpFxWDLK_MqEcmrzeq6A8=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Welcoming, friendly, fast service with great wait staff. Chicken Caesar wrap is great! beer list is eclectic too! Definitely will be back for lunch sometime soon!",
+          "time": 1751572247,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115086563755015125726\">Cocco&#39;s Pizza Aston</a>"
+          ],
+          "photo_reference": "ATKogpd4OXuXcuT7Z-Qwvmxc47br0r8Gm8cAjsn98K_DqFNmuG-CRxHJAcqAd7FaaFYojyhkLCQ0UxbB1gjIe4SspuzpLHapdkjgsGcpoU66zzt909ulXwVwIfhgTiWV_bH86ApdZMtQnKGOfx0Hlhhploq7eW5zAaij-iRaT1J_ks5IZcHuNXFoDFO9b3Ra4-NfzAwmlZVhxIxAGeymf0LtmrKofqHbINimxvKFasOdr8-zZM3-62lOEJXkPyfWBpnEChiQ9enwGktieThoQ46jQeghOOyBJ0CE5rpa8DDD25tamA",
+          "width": 4032
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115086563755015125726\">Cocco&#39;s Pizza Aston</a>"
+          ],
+          "photo_reference": "ATKogpfyMZylEaC7GL5IU4w5CTwIkVZqFv7mO9eOpRGSiv6gDG91HGXNsDA_gbNl0X2Czvkze7YYkv-k1Ekj2CqhkTZpNBL0dXfU58Clt-w5pbst-_2A2sVHDmUyoXkQSBNoep6nc7D0uXR_sd7vX3DZfMQNDKrOKZMJVnkhepzaDvofD6v6cDABvYurniAskQ0EjXviswy4wv7IuPa724Hua3TIkXXpBF7GLx3ojIHdUhigDiH01wZAKZ6qMcoK9p-iDQ27Xr9DkrFomxdu7PNCbftIHD-Mh41DpL7N3mR8Vb1YCQ",
+          "width": 4032
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103115836914814216739\">Jay Myers</a>"
+          ],
+          "photo_reference": "ATKogpevSgccgmVcmoQ5Jdtkd19pFNZkcf-IEU-AfWxmBDPaqI53xBIpgAeumNM50pazSOuxaUtKuGzZWcj-_IDHa-4nFoKNv3CUKneFNubMxd1Lk_osUzUFX3R46d0Xcupz_-GxeoEhvcpUs1JqwGbfduYWglYwXWx3TVwcNOfq5x1bvWBULc722zxlYbWLwSZrrc82pT_SIbJTH9cYp7VXALMNw5ziBAk13v-m3jnDKiA-qpmlD_TV8_khvexCtCH9HfYHLSS24jeCglrlxwEcWvRAcVdLTuU-d21Du2G_4Q5D4FpzaLjWq4lh0AgID3ZDmDiW841ygzBG2B5S466d_rqtoOGlIh_k41_jItLHlUzzjARZfKHiZYsLHK0vKqDEK6mlYp2fM3z4yuRDAq7z1Xtup-vSv7IxGzKuZ4spNh54vkgX",
+          "width": 4032
+        },
+        {
+          "height": 4096,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114476009589517901152\">William Bondarchuk</a>"
+          ],
+          "photo_reference": "ATKogpfsKBWeGV9gkFaSFdrz5jbSCZOtiHzHY4WuOwfN8KLOkSEajlaljaX7CvhJreoCGnwnjIxvNgZ2dMZ1jXpONhmbOOD1rgkDRFYtPv0CyimaVjk9ZhhsCmnw0dn1J723Jz8wz5s3AeCQcDh69kDRGOL6dndb0hgmzuFUwtPLLrwvcuE07Lr-tOoOyIwiBCbCJ3sJAO8U6vjHU5ghRIRvFBhu6WSX1FbTP94joTvWxeYu9DLNQkio05hZAbY5AMuf4pDWfIebkNTbmK057ANBgLfdYM5MDlA0VjNb4Vs2N3sK5qpc1MTIxGDH3JbDIq_ekgXoSHeSdLhLPeuzTp7EDej3EWm2gkoxFXEL3j3l31bee48Q5LzmljYrPi2CwygcjY1SCnCDJurMCUUjcFd2UNtI8ZsJ2KaJS4Xgu3rV3h5rBhb5",
+          "width": 3072
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101758295036042173388\">edgardo concepcion</a>"
+          ],
+          "photo_reference": "ATKogpdX7npVWysgkt8xCxQsfiQXOIq6iAWp16pXrP6nNkMUmXISazDL2e-sxdeUWRnEf3N3ji-hHvukTIuRiVecHdH_3UzYHR4NgVvxW1UcswzsTgBL_6np0t2at5_EruHYs5-WPKkLKePP_7reAEQ0DdNwMRWFRMdMdaRtYvIR54oGH3PiNTEaoeHbRjx2jBEHxUtMHcwSyNCFSUP4ZoAUlyS8NuGzA9UyCymb30TOZqm8IsGdbDNPM6MWn2WoGCDfe0hWrh_lSVt07FizBsOm0qd1Ts5BCqvgL9iLpl7eo85LOZLGXwMtBLHwhV6f42cdHQkg8jKelt65AvO-Hf5I5WXbncGJozYBCaPuM-euBwhTl9Osh7o8aQ_X73WRjwyhmBA3iY3zVRdyKK1U9frOVsMMi4c99E0ULLtlW1EoV4XDISZv",
+          "width": 4032
+        },
+        {
+          "height": 1985,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100574000516612551425\">Dustin Prince</a>"
+          ],
+          "photo_reference": "ATKogpcI_nPBzpOw3fc7H6N3aXFHbSwndXjmN-A6rASGmPV3RFSLVGzQQ1ZdIu3W5y1Iy5jg4kaerqW520Du857KQCofxU1iaPsYAmAiVH22m_TK-B1MZutPeEnGdp2sxO4IULS2WSendaPB-gWDK1K6hyR023f2zZwU-m_ZkbCaHNxqJv1zKjEPhK7FcOBPx432rYtXYOTPi7c1usOefL2i45vp_NV97MY0115LTvGpUKLMd3e2iAbyJgsxrUnItLEkp5TS-1nOm6hKpKsjku5CIFxMSw_SkJwdmFlAky0InP2QaM2al2vHmLu5fTR9yddQ1xkI3B5KfEYbCIqwClicq5sSEyA-MEZwWZlu0j4_dpXv2xhIQtRI3Ir7LZ7DPpcx79Ke4H2sJZvU2m89tnafybzB-qDODbGtUDo7iAo9UVSYcm-b",
+          "width": 3415
+        },
+        {
+          "height": 3120,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107097933953611279337\">Victor C.</a>"
+          ],
+          "photo_reference": "ATKogpe9GOEqJvviZNDp4fgfMmbb8QEZCwTdDFlcKdrOfE9-vwfSOTTRqT1ojotisy2YR7nhsgjqwL4uVBidHen4wpkC93M_OmleP_Ihmhly_2yZhuVwaPtjgbvw-xW7T7KVdOnUuDK_xb1JCGm40TR4CYkVFv4jQiKGsWW7QdZqKLKNgKrnciolNCB3vPGDIeRd8O5uHjTCeO8Q8WivXYNhCFudPIw_72y7LIzU8sVDG0yv8X9LE5RxM-ZDkuy0gOSK21HRwar7lhpeHYXkAqyVgauHphalkajiBETyDFrPA7jezpFxtp4vPWGU3I8j09GKAwiIyzgG6FRWgY2F1SmpWDt4dw2JsjJ5BCKxgPW-G9uHiJOEDWSyQi-cb3vAuZrS0sFzd8l02jMt7vI36kT46nx_r409zQwOzE-JnqOfzeA78bTr",
+          "width": 4160
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108190652799956641783\">Carol Derrickson</a>"
+          ],
+          "photo_reference": "ATKogpcW4of3RdEVwa4HpgKME7PGaccPmnmrW4N1DQFH2TpYPSM7Mgunl0hhw2Fw8naE7p330b1ptV_0dQ2n9PS_CywXnrHIB1k3X5bpZz3et3Lue_dqPBgOcN3NMVcH0YFykpvD6_0fKN2Zu3Kg168B0zsN8B0rkQQhauKdrWyXf2ZGZKpAMF9gbD2QP3RDdufypfLLAU7GG7-VLQwqtl9233FzzpL15qft0NxgJO7VoYggOU9U6k6jnsD-zyccrudMfeR1cALnFyAZQM6I1b236_-gg6BX_JEcSkELzDZtNQ4yCyLkhxx1tLaWufhfF_sNyTU7n57kaaTB_iwDEM7zf5KxGgeeDZwlH75V6Aqb9oR0XwE01eTIY8229j5nKYp6M803Kikwo58wLftAMlU5ZTaghy5vMsGjuYbTsdKCNc3xxa1A",
+          "width": 3024
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104836484117065964651\">Denise Lambrecht</a>"
+          ],
+          "photo_reference": "ATKogpdGmajlH2BU6JrbKrYFFB0qttnFQs2VsX7dfrzCBhZ8sSWUyFqxBRW6F4U9MqaLnaVtWY0h754qS8AS8pzF-i--U65BDCqqt1_Jo6dLD2upROkBtKhfnMWrh2HxenObCiqZAZn1drdRdv2Xg6qt3urZzeW2_dBL3udmvokLsPlvhsrkTKzezEfDSRb-hg2v9WoudlWQ1-ySaR87zCyTI9Ed1ENAv2tC-avpTuKqRTH2qQrgiGw42oa10OS6tdiHwhZH5SClxscylMqEikIeUIQLQ8nB8SDicADzsOjCfE8X5DCu5daE_PQg5ykq8VlaZ4I9PVatnDvRx8vEmoXs8vcH1UPnGxyS1uvagEs4tRY6NPwFzoQ-oAnax64AXWkZPZxVdxbF2fkR5_b3-LQLF0Hedt4PGnZdXqAS4q-wc31t0A",
+          "width": 3024
+        },
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115735443272662380258\">John Ware</a>"
+          ],
+          "photo_reference": "ATKogpdpRG3JpVh8UfFbOP4vxzX43Hmc3fuQrv-Qw6pE7HOkvLjaxcZpW2R0bitY5kd5s4P2s-YIDQGrsG_6mKsKKLvD5zkgWnMO4qd5i0gRWuo5Z9g4_kr1MabzYIbN1ldG7cekxw4yiznCAarn5a21mai-mHGxa7N0SfSuRuSEpwHVllWevsk8b6pJjQvIhUZWECvNf0XhX0Unla2arMIKD3gSNDj7B0tAKLw_6M64qghSyId3OVt817-7YcX-KY_d4nPhcRgRcWh3cQJPJRvZkwo_qx3wfwwwXSQQJ2hXh8T8NbuMsNx-GuKhzXELIwP5i_mC5zvNzn3ohUsZ3JCeMjbuGZW7Jy1S1itjyciPmn0m8FvDG7NUixE8Mc0Gvd9pS9DHnsxW3gYHuFIjxVu9pbVSaD-sdMT0LHzdwFhVqOR-u2Nz",
+          "width": 1800
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "2300"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2300"
+            },
+            "open": {
+              "day": 1,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2300"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2300"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2300"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "0000"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 0,
+              "time": "0000"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 11:00 AM – 11:00 PM",
+          "Tuesday: 11:00 AM – 11:00 PM",
+          "Wednesday: 11:00 AM – 11:00 PM",
+          "Thursday: 11:00 AM – 11:00 PM",
+          "Friday: 11:00 AM – 12:00 AM",
+          "Saturday: 11:00 AM – 12:00 AM",
+          "Sunday: 11:00 AM – 11:00 PM"
+        ]
+      },
+      "price_level": 2,
+      "editorial_summary": {
+        "language": "en",
+        "overview": "Long-running local pizzeria chain serving hand-tossed red & white pies, sandwiches & wings."
+      },
+      "url": "https://maps.google.com/?cid=9869437888417630333",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpc9_OP8JddUDC4ElYPApE2t3wnSc58b_V-bKUuopcuifCN6jOI1RAWFH990mayVgn07Ko440n61O-PXKukqv92jNj1dPUZlooY-pf25hBC85X8P9zSsk70zg5W4agSq9Pz_qQjovUJRd9P7fkzRJbE2Ah6JdbH4xAI-llKo3sn8ErvnBScBkfqS-Vo6by9va2wwZUVIc9_5an96BBOHyBZSVC3mPThFCF_x16MAePzD8c7d7MTSRHPpfs8bORTAl1jPE6Tvzhr7vA7DXv2KyDVtXr8yf_nXBBF4uXq4cjJSuQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcp34Co9VWhDHpvwv-_uKIHO619bPMH4jsY7dv4SGdZMD_6xj9Ck_XxVVaZ-n6P48RQJm-4BkXIo-rbmDHoGtfR5lIlszn_2vCil6lsoXis3HjOzJLKEipEup4JW9tTBKQpYfUWEeoyQMNj1nHJQ2hFZyDdJBBFA7Jeo5DNv7CoLaJipbNmkfW46H-kGzZ65XRrzH_eSAMPAguPANKyafITgAg8WRsHzU-MxJJbSHZBacJYy1azHst9a3uYmjyELMN1AgF8MI1MOyRGBHBx9ANr2-VQI0jLG9GkuGeTyyQsIw&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpf9g_3IvmjXuBSL2HF3dZ2zBY5Sy2XndIuflmkxLFnAhaJd60hp9RAVxQ1NkeE6qo08Eq19QOq81YosCskt5UjWfUtO6aLo8jMFpwKWxWkG5WdICUFI31RQ9IHHYN_tKcIHOouI8YK8kTC_VOX90-YvRD59Gjwei3tkngdL2U5UV5-8Vc5tmcwZjngPu3uq9sQT3zz5dKggmuG19hTD-_sBXfbmcctoVV4ksQHxzrtuy_hgfSmN59gimSa-j7pH3GnKx41AqOLYM1u5qZHOGTMyOsyiRkvx6lfD-f4EZW8BkGWo3X5rbG_V4AN6id0ghs-6fyala4y6gH9NrDdeyWYuPNlkY66g4bsoWbCzqNTykI073gaNqQilqCHcku7TcVDDoBHwJayioJRjYSvzVRzw6BmpF6W4xqUu5M3c8GSWbp_T&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcDlmwNa1nDNO8_IXlhzz6kYboYrTKWh7FN8wOdd40lDJ25h8MHFI7pLO7edT73YZD3oj34_xwOWCFo5UPdsr5Rr4QOxALT0ZhzmO9MHecOXKyI2FnlirReFuukniDnwubuQ_gsqPx0QTM_Vr-f-GiUSgcvZ9iuSlhlIXo_MMC09ZnzHX3Ma-5zQuMo3AXm8aGhRWraQ7TkixoNERyFEqh0VqF6eEm55wJTSwOBta_UD7TlVgDvj-j-PKC_1wvRl_UQv4_mNPqPLVjm3sPaxGHFvS4f_uCG5z-VaCP34gPc6koueVhz_O3k1RDxbzDpixtg6dJgtlK6gB8zPxUN_FqkeVw6YHcEP2aAt1MKc5BAC0uegN6_kh_s0ejzKBgtVEuVN62mD9vg165A8LqvKrassCBh8UCfmVv1p1s3xjsjP6cP&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpe7QRfPkjgB8zVpuamltsf5vF3g1PH6zuObih5ynunjjpf3gL-zUQQcuoPbmJjqIxlyQkupeZT8rT42gZj_vLcA1cNJc05yY_DLh4HJc_FrS3OcVFIVf2wzz8zCqvYn5N14UP6eoEGPQ98uqu__N6p1QR1bQnWFQsa3FP_7DPkp-3cO6aIf2m2UXS_cWEcA_UwZiOA4vF9AmWPT5nnibynEs3D4SndoihZc6VdnDwxfqW-Yn4nbcXgoBD2GSzEdkJHwfAjUPpRqxDCSYzsQ_yufFkSRz4ytuzhu1pmU21gw3TF624Z-Br3sNobAw1CSWsmEsVH_PnhnYM-0dKcmVkWBaIsnOaOETh9Hn5j1Nz236aSKmwI10OkEgM-D08_XwpcRaFUAC3ZJGaZPL2ssTVP2EwrMWzkvRr65jyuMKq1vaj6W&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpf1epRyyfow2jea7m7kfpTeZxq4NGIGXWBMwPMq-_U8g8SI63AdsrntpkW7qZAY24aUu6juKyUFEm6hZtcRAteQgAoHmP807fBqQ4ak3Ug9GfH-GPLYmzGROc7dZMOmaYaEpBKRo4ordqDrWc67x6hHR9EI2sqlL4DMPahZhTFEPD2NvlBnCxM7osCifjrw5u8r1mZpHg6m1ooylLl5jSW3dbhHzEDMcDFPpegVBFMdIIfpV_oU6stp95xipx2IQwG7LIMBoYTlTtIRYrUSGTrUBTaMs8CvVrLsk8FQCqOebF_gM7KLWm0C99qCQY1Z4NDudZqLoiY3yHytiCzPYr7FJ1udoDeLtdiaC41p2m4_RXkphhsEVR2au86LMTNwYOHGc0AxbL61g3VbZ03EaEA2D9-uVxni1aGIQgk0_yVrLxyy&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdv3VnZOWsfiy_yB8AzvfxbE1QQ5SrUswCRyoZookn7eq17_mznGizBeaYD7xFPiy0t6tK_u36G0ANXUiWqjMNdq4orcQfM9s7BZZrMr7YIhKCA_SCE83l3Uqe67_Guu2D_ARMp4T2ofyrpMF1PfctC3-j5HgV0ZIoq_G1uT2UlS7KLNeUuUJ51ib5l_CV-MT2znGTbBJhGMUI3KmSlvjgTSM_MXaV6SCN23MAW1A3OFoatqbRCzFL1a2yJiT3xXOB6ZFVMcSEmAXuK2PD4rxHFuzzXmNuVJuYPqLc8sjjQxtDPk8f5aArOwEAWcJwlnulP3Vk_9GvIPiV4G-kq824VpZAwenTuIur56BIIrcaDQXh564zQ5nvpI_T_qhFa4felrntJ6tWUVuvw1-zutMhtSYWmUHCGKeIll5Ai3uwAw-DK&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcvO9WZ-m-IOqv4jbNn3bU-Inbzli-yRAfoN5Kth4rQWY_uG0ZkPKXpayevJ4TtzhOh7myBhp16I2MNPKja24_Gg4Yw6-C4f-rFD5Mzu7n3yvTy0U8KcKhEyUiVlWDxsbDuq0mpFlZbe-MqmcNOwgrNNdp1ARCPomLGCo9LWGbJyi-NI9vrD6iyEj5ny7yzK2SeMtL6aZVMoaMBFED6t-J7S1mqDOw2M1YxP9a0tKSKJPIKPJxNCkQuJeQLZsNQnYVfBKCqAsPqluLAaas9Dww8WtkS0Sxwa0XZ4-YaEmKbR2CAMxqP9kKJA21trnA38NaJtFngk779YOHuhgVv25YxxHtGnAFt29l42RBId5kJbzBmcN-ndt1rta7xxSIW-N4hVyBfmSE4E1GN0trDJmBa0JyFdSo0nK338AysgHFoF3SY&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpeIH6nvrsdNUxIe-6ZPufkuhU7PpDQZN7fMmg0eD96GcrCff_vY0n1waAdCJySGhGLLyAknetTwHldOl0mmZZ5ij1i6iq2kBpPJhFeOvaeGihEGWxeFa0DE7QVBC6MCQphD5KeOL29xYTsdJoPrCJd_9ODD_J1H6-RDiQc04x12w7gjpRNd6A-KbtbYsrQmzOjX9khCMi5RPo2S9B9nuH4CPSYPFJzcUK_HJYXz_lGgnIJ9T83lR10isJCOLyIF0kavSvDiSpNeUaWDmotUapx5HSLhm8CRjkeSUAlEZixUn8RJbwF0e6ipu7W9SnUHxVx20gi-WvjgIaNxOtIZaCBfQUdpCqCu193Ic5s6P0bgpk7H4uPi3hrSR3g0PNKV7S0pqJ8-5p7ayo4K655Ogsbw07KruhXQYWQvgTi_FHHEyg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdLcZcrz9B6ufUTS4tPc8BZRs4qmj2w_8mlXjJwYGOc7oaNI6FiZFQPbnwPx6PbdpST9716-Zw1vTTvNLALAbwZWoRThKeyd17YR46Lu3xMHjYGBTanUACiVoURKYkHimMSwWfW9XBs49rNAmRwCxR6vtty9lZwNFiQ5N1R6tIMnH2mOQJjkRdDtLuOJALMJbP0bF4r_dSYUlWFFUlgHmQS_JvKvzp0lR_uzw-uW3l7tV0VbRAF2zMqtBCVF43yRUjXPsRHvQyUx4jjZOjcjVZ3wI0gZkMs4iFMl4LYmofE0UoDi3O3zMwuMGZ8ncs87oIRKc7H4fa1ImfdNbPDSKhrQI37Bb0m3YIyLXII9zVdgBsx1uHEZHBFHZnIkGUnce4fIJhRJQOz-81J0eD6MphivKafm3Tg1tDIMu3WOd8s7-we&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 56,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": true,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 84,
+      "totalReviews": 994,
+      "averageRating": 4.2,
+      "sentimentBreakdown": {
+        "positive": 86,
+        "neutral": 6,
+        "negative": 8
+      },
+      "reviewSources": [
+        "Google Places API (Apify Enhanced)"
+      ],
+      "keyThemes": [
+        "Food Quality",
+        "Service",
+        "Wait Time",
+        "Atmosphere",
+        "Cleanliness",
+        "Pricing",
+        "Location"
+      ],
+      "recentReviews": [
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 4,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 4,
+          "text": "Ok",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Always a good time at Coco's. Food was good and delivered from the kitchen quickly!!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "The best. I always enjoy a trip to Coco’s",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Wings and curly fries are outrageous!!10/10",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Love this place! Good food, super friendly staff, makes me feel like I just got home. Thanks!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Great",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        }
+      ],
+      "detailedReviews": [
+        {
+          "author": "Mark",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-13T03:29:37.250Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pJeUxUQkVhWFZWVTFJellVUllNM1JzVGt0eVVWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK_IW-ciIf8QkFbubAVWoyPsUYiC6e5b1EuNoB2HemewWA-MA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115736241996798766142?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jamie Vozzelli",
+          "rating": 4,
+          "text": "",
+          "date": "2025-09-06T09:03:09.418Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT20wMWVGUm1SMVJLWWtvMGNESXpOekZqVUhCVlUzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXjm_6tqYRjsA2UMJwbW1OT7nFDR8wy9KQ6HqG-ElOdUOlGn10Fbw=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107128602483447370687?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Willie Jones",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-06T01:48:13.308Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25kalNtNWFSV2wyVlVwNmEyRkVUblZWTldoU1NFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLMTEMKt8vd5HKynPUGufoimTEN7IVYHK9dBw2ls_HubJ2-oQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117237293088751755710?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "jane ellen Hittle",
+          "rating": 4,
+          "text": "Ok",
+          "date": "2025-09-05T19:59:51.580Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT204NWR6ZHFZUzFSU201MGFsbDBlR2xUV25WUU0zYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVS0Yc-S2TecJ-7tpMq2d8RQ9nTUb7Y-FTFrUsl6yHaJt70K3TY=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103558567399090707375?hl=en",
+          "reviewerNumberOfReviews": 28,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Will G",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-04T23:24:13.227Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tkRGRFbFpXR1ZPVTFOdk1VcEllWFpqWmxkS2FYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLA-pMW1pyCgTtKih4kdo5RD4TDtx6SUQrd98llwkmaf8nNpg=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110843017335756238297?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Bill Hunt",
+          "rating": 5,
+          "text": "Always a good time at Coco's. Food was good and delivered from the kitchen quickly!!",
+          "date": "2025-09-04T00:54:40.160Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNvd3U2NENnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ73_OkQHE0-BoYhFnwZgEkp4vjchK3oVUB-afHPTo_vcw-UQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112334522735324167539?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Nancy S",
+          "rating": 5,
+          "text": "The best. I always enjoy a trip to Coco’s",
+          "date": "2025-09-01T21:17:31.923Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xSUVlrUk5NRloxVlRSaVptcEllaTFFVkhOTVVrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVTQHJt1gUruiioodIdtX-jR5fZY3JduP34XUKsN68k1JH6M-ifJA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109303918281903029736?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Regina Shicatano",
+          "rating": 5,
+          "text": "Wings and curly fries are outrageous!!10/10",
+          "date": "2025-08-31T22:14:42.398Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25CcWJUTklNMjQwVUZGbGVqZzFRbU5FV0RBMFZYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocItahs3RNlxgQTV2aZ_qZ0vl9ca9_4mMHbGJIKNIq0by-CJjg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102144715358897157678?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Amy Kaiser (GyrlFryDai)",
+          "rating": 5,
+          "text": "Love this place! Good food, super friendly staff, makes me feel like I just got home. Thanks!",
+          "date": "2025-08-26T02:04:32.037Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNVMDVIcHZRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXZWtLRKXua8v4HoRu2H_6x415FMpm5zkRvhedsi-epnWDCJQJi=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111810926141026224926?hl=en",
+          "reviewerNumberOfReviews": 122,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Vera Venuto",
+          "rating": 5,
+          "text": "Great",
+          "date": "2025-08-24T21:16:24.613Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2toTU1YVk9VRGhDYm1SR1VsOHlZMGxGUjBGMmVHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ3xznCUG4D0AyTVKgA3DQcgjnsACxktg_iy2vxZG4ywRd0Cw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105377417798400516166?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Reilly Walker",
+          "rating": 4,
+          "text": "",
+          "date": "2025-08-23T23:49:34.410Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xSNWJFOVdVV05OVW1nelZVMUxWVFZQT1dKaWVVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUJAMy8S9vjJj-SaiX2mLGDrWHi1xrRMzaQJdUFeCzlqmbbWiSieA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110316843294335032369?hl=en",
+          "reviewerNumberOfReviews": 15,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Diane Boyce",
+          "rating": 5,
+          "text": "A great local business with flavor. We love your hoagies and pizza, and one stop shopping for beer and snacks. Always a friendly smile and fast service. You supply our community with great taste!",
+          "date": "2025-08-21T19:03:28.605Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21SSU0wa3dOMFJWTkRoelUwc3RkbWh2ZHpkSE4wRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL0-gNb8POQ0bYFDIgCMS5m-1ZG3-8Ck2VPkUcFb4JQeWsXTw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100510419005274682081?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kevin Hance",
+          "rating": 4,
+          "text": "Pizza has always been good here. Service just ok. Fries were slightly burnt but I know its not a regular thing.\nGood for kids parties",
+          "date": "2025-08-16T18:50:35.867Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xsQk5VaDRZa3MwUXpGR015MUtMVWRVY2tGUU1HYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX0QfYXfx7H5JfiGtRISPsgBo_YNgH8uPGA6lpo-zgm42i7D-zZ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107515067399423883973?hl=en",
+          "reviewerNumberOfReviews": 55,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Michael McGowan",
+          "rating": 2,
+          "text": "We have ordered from here for years. Last few times are way over 90 minutes wait. This time I ordered an hour ahead and I got there and they had no idea. Just started my order as I arrived and then told me it would be a few minutes like 10 times. It was bad.",
+          "date": "2025-08-16T03:15:38.952Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURacG9tWWZREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU3nGouyBTWBi4krbzmge1DPoXeT9iSAK2lURsKQZEbMoyR_uip=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115892601790942877961?hl=en",
+          "reviewerNumberOfReviews": 92,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Joseph Ilisco",
+          "rating": 5,
+          "text": "Number one in my area in pizza, steaks, wings and so much more",
+          "date": "2025-08-15T00:12:47.405Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21sd2IwUnJlVnBvUTB0amJFUlJVWGRzVG5OVFNtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWXvaT70ppCCZgboOO4WtfNuZOuIjEG0KxSphz3EOgjHLd-W7nQHA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113855758823852443537?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "terri nearey (Trixiegirl)",
+          "rating": 4,
+          "text": "It's a pizza place.  Depending on what I order it's either really good or just eh. Always end up there though. Service is great!",
+          "date": "2025-08-08T15:19:41.525Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNnNDVlSUNREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXZbIJWItpAYzSMz_FiZLOnb7o5_e9iNsFpExqi-YuiXaoKadawIQ=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100943013398568006647?hl=en",
+          "reviewerNumberOfReviews": 275,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kymberlee A Roman",
+          "rating": 5,
+          "text": "Great food and service all the times we go. Always a great experience there. We have had birthday parties there for year, and next one is next week.",
+          "date": "2025-08-03T19:54:36.879Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNzcW9mYzRBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVLaJW8EvoHmhDbTAO0_AJo_SG8vV4wSKRJF-DTEK-fZmLWCau6=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101725307707418217216?hl=en",
+          "reviewerNumberOfReviews": 24,
+          "sentiment": "positive"
+        },
+        {
+          "author": "BEazy 99",
+          "rating": 4,
+          "text": "",
+          "date": "2025-08-01T22:23:25.478Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tONFpXaDVORE5IYjBkTlUybGxWalpZYVVKdllYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWlYFGevlI-XjOBz0M7F2rkxqQ4RTc5bRqKQxePuBWtsk6hgUeR=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102827784355757934506?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Beverly Philpott",
+          "rating": 2,
+          "text": "Girl taking my order had no personality. Looked miserable. Ordered a hoagie. Roll was hard. Literally, no taste to it! LaSpada's it is NOT!",
+          "date": "2025-07-30T23:36:55.783Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xGVGJqQnlURTgxUlZVd05HUmZTMnRYWkhNeWQyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW8nU-3KQvXGSpv5qJqqnfmFDZ0dJqJw1Rqf_mMrg5B-FYaUVD9=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102197570138575568714?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "negative"
+        },
+        {
+          "author": "bill price",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-28T22:20:01.914Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pkRllVSnFiMTloYW1oSFgwVXlNbTF5WjNseVdHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIyQaqNadS5rzXuGAS0qNMEq9abLZdKua0UA2jBz5ehAwY4CA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100359493366939123408?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Joe",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-28T21:22:50.396Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pseFZHaElTbFEyYnpWb2IzTnNabTk2V0haZlgwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI7a3pYJG2rb5pY_aLU3grbHcoo3Erh7JDtk3_mpfslNSXVzw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110770531016412152933?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Eva Jaworsky",
+          "rating": 5,
+          "text": "Not enough room hete to list my favorites. Some are 4 Cheese pizza, Mushroom pizza, (sometimes with sausage), Cheese Hoagie, Italian Hoagie, cheesesteak with fried onion, provolone, sweet peppers and hot banana peppers, fries curlet and regular, tatter tots, hamburgers and got dogs... Amazing! I don't order take out from many places but Cocco Aston is so good and offers so many menu choices.",
+          "date": "2025-07-23T02:29:11.246Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR6OExpaEh3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX45luk5UsqfBZxPUXjvA0Xv_O7WUXBn1CY7kylvAPOzmcyJVhjNQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105443047016346321504?hl=en",
+          "reviewerNumberOfReviews": 42,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tracy Knapp",
+          "rating": 5,
+          "text": "A great local place where the atmosphere accommodates all ages and families. Food and service are awesome",
+          "date": "2025-07-18T22:57:59.924Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNRajhENElREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIRmpRtxFNDBO4Q1Ui2QXenY6pG-lJfLOL1Bi-BTyB5OZPB5Q=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115939792807561329380?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Emily Catlett",
+          "rating": 5,
+          "text": "Cocos is the B E S T!!!!!!",
+          "date": "2025-07-13T02:26:16.925Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2toSFl6SXlOa2xPUmtwMmRXTnFRVnBXV0ZZelIwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWlatVP438fGBnde5OgG5t3PZWjdFIjxSY6EBn7mwClO5ZI8Ey5=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104990266122528194130?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Joe Leo",
+          "rating": 5,
+          "text": "Neighborhood staple. Good food every time",
+          "date": "2025-07-10T11:31:01.583Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQxdzVpYXRRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJpb3AQzNo8RrnGfpDtgFDkt1GzCDUsJi-DvkJ4MapHf2LUzg=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115418998783355590008?hl=en",
+          "reviewerNumberOfReviews": 182,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Nicole MassiDowney",
+          "rating": 5,
+          "text": "I've been coming to the Aston Cocco's for a while now, and I won't go anywhere else. The staff are fantastic, friendly, and helpful. The atmosphere at Cocco's is great. It's relaxing and I can enjoy dinner with my friends/husband etc, and it's not loud. The food (pizza, cheese steaks, French fries) is very good and it's cooked perfectly. 20/10 I'll come here every time.",
+          "date": "2025-07-10T01:54:38.030Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT205VWVUaHBWblYxV1haQmFXeFZSbVZ2Y25jd2JWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK-LcCTgXakN4kgAaPW6svXNVf-K0yDKZygs7hg3wyW1gbhqQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112895247037349570376?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sue Hunt",
+          "rating": 5,
+          "text": "Our server, Howie, was great!  He always takes excellent care of us!!",
+          "date": "2025-07-10T00:12:28.529Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VMX2IyY25oX2QzX2JREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLLjsdZZfPYgtZ8Pv4TpuVOhLlgQbCriFhM7yx2lwNhHJLRnQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115342815154765748853?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Val Hoffman",
+          "rating": 5,
+          "text": "Welcoming, friendly, fast service with great wait staff. Chicken Caesar wrap is great! beer list is eclectic too! Definitely will be back for lunch sometime soon!",
+          "date": "2025-07-03T19:50:47.256Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25KaVRHWklNbkZVZEhkT1FuZEhWSHB2T0ZkWmMwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWvK-LUl_beUKS4bqA3I_m34nQPcBXPpFxWDLK_MqEcmrzeq6A8=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112958148754068881112?hl=en",
+          "reviewerNumberOfReviews": 93,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Alex Seigfried",
+          "rating": 3,
+          "text": "Starting to cheap out on things. Used to be a solid place to order food from.  Recently I ordered an Italian Stromboli and all it had in it was ham and cheese.  That's a ham and cheese stromboli, put some pepperoni in there at the very least if not vegitables. There wasn't any option for pizza sauce either. Soda was not an option on the order form.",
+          "date": "2025-06-29T21:46:06.928Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21Sd0xXbERTSFZwYUd3NWMySlBWMXBKVlZKM1VGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVQrsR9hJO09Kv6fEPl0Ahtv2QPMbO_v-5yUVhigQ9MFTSpgkU=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106282504344615797217?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "mitchell gardler",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-26T02:19:10.571Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21sNVRFNVZSMmxvYm1GbU5XMDNRbFpuUlRneFJGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXsmgtQytW21-z2QDLLLtkgoFdQ-mzN1UCHvkz1kuRP0CT7kWlU=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103885900754895644148?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "SHAUN YOUNG",
+          "rating": 5,
+          "text": "I frequent Coccos Aston at least a couple times a month. The food is always great, the service when I pick up is always friendly and timely.",
+          "date": "2025-06-20T21:15:00.285Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VKT3lfZGJDaHRDcFV3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVjy9V033wyhPfZckdkC2MQr3oFCkZsmkHGsaZEU6HIKml2pWjTeg=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109490143180530204974?hl=en",
+          "reviewerNumberOfReviews": 15,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Pat Bradley",
+          "rating": 5,
+          "text": "Hanging at Cocco’s bar when Becca is bartending is a great time! Best bartender in Delco, always phenomenal service and atmosphere!",
+          "date": "2025-06-19T01:57:08.711Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21aamJsZzVUWGN3TFRNNFNGVnNabUZhUlRCTGRtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKjjAcgnKaQEg7uKwNOizR_eO3vl_wbrfleCf6APXHIUEQZoQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111382733837989932596?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jessica DiDonato",
+          "rating": 5,
+          "text": "The gentleman that was handling our baby shower was AWESOME! He made sure I had everything I needed at all times!",
+          "date": "2025-06-15T01:09:55.135Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VMYkZ6SkdhMjh6UGlBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLpZGHVa6ud0UfdemOlCxj8Vp0CZblvLG1-RPQ-5rvhHV4EtQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118138170531861318860?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Evoni Story",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-14T21:42:46.066Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tkbVoxTllYMUJNT1dOdlZVRmpMV1ZNVm5wMVVVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWW0v8RYcQxW6UA5762oMikPIM_PhhotKVbcB8_2UxSGPXuBzVH=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114542544415476787397?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "C T",
+          "rating": 4,
+          "text": "",
+          "date": "2025-06-14T21:12:51.046Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VOX251SldjaTktZnNRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLb5MiVeOB5MNNjhrrtSwcVR31UCIy9Jro6Upbw63JQdYX0yQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100865381376404827570?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jeanette A",
+          "rating": 3,
+          "text": "The wings are always good, the pizza is hit or miss",
+          "date": "2025-06-10T21:59:58.711Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUR5dHN2ZF9nRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJOx_jHTH71vdcfu_NcE1xD7LPE-zQQ9V5N0JIoXw5F8yiB8Q=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108280670223608390372?hl=en",
+          "reviewerNumberOfReviews": 311,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Frank Delia",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-09T00:29:20.431Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VOLVRySWozNGZEN1FREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI98yuAMNTWZUrx2T2EHbVsxL0r-_G5flAhv0_myNO-fYqWrA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112934638795627509964?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "David Polgar",
+          "rating": 5,
+          "text": "Cocco’s consistently proves they’re one of the Delco’s best, with their food, service, and friendly atmosphere. Whether it’s ordering takeout, or dining in, I always look forward to patronizing Cocco’s. Thanks!",
+          "date": "2025-06-07T22:55:01.833Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNRb09pWVNnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWrae8chiYj-3zmYmVh2c3MM3dBQKF7qQJH_-eTtUwN0Z91_Vdh=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107904110052475715817?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Malynda Myrick",
+          "rating": 5,
+          "text": "Always friendly, fast service, and good food. Order always exactly how I ordered and you get your money’s worth.💕",
+          "date": "2025-05-28T16:31:58.190Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VKVFdvUGF3dmVidThnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVy1zgGEGdV8oDl103ZAQMUMJxz_b2y26-E4kmnTg-o209HH3RG=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111485576293062635193?hl=en",
+          "reviewerNumberOfReviews": 30,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Daniel Ross",
+          "rating": 5,
+          "text": "Just finished one of the best cheese steaks I’ve had in awhile. Order extra cheese.",
+          "date": "2025-05-24T20:26:10.871Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJV3ZocUxveXFfai1nRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJBH2r8LAOgPtEA41WCHcq77b32Wy3RUGDmONpIQ6FAG6SHVQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114011035499447527893?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Joe Roguszewski",
+          "rating": 5,
+          "text": "Very professional",
+          "date": "2025-05-23T00:23:30.159Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VObnN0SkRXM0tPY3hRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIMKinssRRTKYew5xVl-ocr2RkyidAARUkcKTUm1xDF4CHojQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104530179583229489813?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Shannon Sweeney",
+          "rating": 4,
+          "text": "",
+          "date": "2025-05-18T22:32:56.067Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VOUERxTUhWeVAyRFZREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKH-V8lA58tCaKccmm1vhH5LsFPzyN_72Pl1fATnhl8GKBJ_Q=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110430295361852759056?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mike Szekely",
+          "rating": 4,
+          "text": "Great wings!!",
+          "date": "2025-05-18T21:05:48.360Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJam9yb3ZqemFtYnRBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWJFSUX1R2A9bFfwH5YQgwX4XD-UPkvyVR3Gc2z-wvErDW7m6g=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111639997017759698114?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kate Fazio",
+          "rating": 4,
+          "text": "",
+          "date": "2025-05-16T22:53:22.971Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VKN3QwTzNhNmVxQS1BRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKy_Ehak6EiuGmAnvGb8vPBGlF-jaM5X6alkjDHEIfr68VWFQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111181663889053439628?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tami OHara",
+          "rating": 5,
+          "text": "",
+          "date": "2025-05-14T20:50:35.264Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ3dsNlc5LXMzclRBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWfJrNNIoQ9_94A64Y6Pzml9VfL2NHzMF2zk4dWV91EyH6NIUey-g=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113888385216377478095?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Janet B",
+          "rating": 5,
+          "text": "Always a go to place for a family dinner, get together with the team in between games or a place to watch Phillies sports teams with friends. Good pizza and a menu that everyone can find something they will enjoy",
+          "date": "2025-05-13T02:36:16.424Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VNR1oyT0huMEpiN0p3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIw0hwSReoYKInuudq41nJ4_yhGP_7d08IrIvLrHpjosH5bMg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102431496387539471579?hl=en",
+          "reviewerNumberOfReviews": 103,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Brandon Leach",
+          "rating": 2,
+          "text": "Pizza is fine, but just a higher probability of getting the wrong order when picking it up, messeing up single topping pizzas.. Just got to Pappones",
+          "date": "2025-05-12T00:44:09.552Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJU000SWJ2dU5Pck1REAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKCWfZy_evy16qcH-2MLZSnfyNMuGRtkc2wKKsOE1Hjc7zfNg=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111231999117702464835?hl=en",
+          "reviewerNumberOfReviews": 22,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Marc Waters",
+          "rating": 5,
+          "text": "Kids enjoy this place",
+          "date": "2025-05-10T20:14:35.008Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VLV1c4YzJ2NEt1WDVBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW0HUVzZogVQq_aK6TGcUW3oRFV0ueWR19YLbkAqtPB1_ZFHPhL=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110093834354711478055?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Debbie Kester",
+          "rating": 5,
+          "text": "We love going to Coccos!",
+          "date": "2025-05-10T09:56:32.901Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VPQ2lqSkNLdUlHLUZnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVwZyn_BKWkDldJeCywzJGe-ECFVnIwBDKHHK12lizNlJxWo3jM=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111117608184439432299?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Theresa Fisher",
+          "rating": 5,
+          "text": "",
+          "date": "2025-05-07T23:38:27.762Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VLLUpsY2lPbVB2dDJBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKlsMWx_ZCpwTPWEbvaoxHTvIEpp__wo-J1wgE0xu-iw-p7tg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103982264000532847142?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kimberly Ann",
+          "rating": 5,
+          "text": "",
+          "date": "2025-05-06T11:51:09.112Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR1b0pld0l3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUEk4pSpy4eN_2l21DFuDvcZcuSLb1Fgt6peWaxfVgvW_j3g5QUlw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102447695296282147875?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mike Jones. Egymagician",
+          "rating": 5,
+          "text": "Excellent food and service",
+          "date": "2025-05-05T21:58:31.749Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VQbUM1OTdneXUteFRBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWEoYtuQpSynxhjxRGNeCG3HRc-OBcyvyc4n3_oyUx0P2oUxvcp=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116755015986806718670?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Eric Berkley",
+          "rating": 5,
+          "text": "Great atmosphere and nice people.",
+          "date": "2025-05-04T21:08:10.382Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURRay1peVhnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUpRkTZTa1pU_ZCCpGkwaIPDwJ6xIEDBtsSE5h8zlCErpccl8EN1A=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111149100658668789367?hl=en",
+          "reviewerNumberOfReviews": 52,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jamie Hagerty",
+          "rating": 3,
+          "text": "Pizza was very good...\nOrdered garlic Parmesan wings that had absolutely no sauce. Their garlic Parmesan is grated Parmesan and sprinkle garlic. Very disappointed in the wings. I've had garlic Parmesan wings other places and they are usually delicious and saucy. These were breaded boring blah. Service was fantastic",
+          "date": "2025-05-01T22:46:40.860Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNZOU03QnhRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWlBMxbODDjtoAPuWKJ0aj5IL0wJs7cvICAAXIf-V3DoSaGouM=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112045632525548027924?hl=en",
+          "reviewerNumberOfReviews": 52,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Daniel Naugle",
+          "rating": 5,
+          "text": "The food was delicious and the service was great and fast. Will definitely go back",
+          "date": "2025-04-24T02:59:07.043Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURRcDZqRC1RRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKbh4zyMgxCDLdj_oDeLmvOE6XvLJkc57_B5zP1DRSxdRVvog=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100475757569982399092?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sandra Kowal",
+          "rating": 5,
+          "text": "The server Howie is always great. The food was fast coming out.",
+          "date": "2025-04-15T17:11:37.889Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNvd3FIVFJREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJtBAQg0WoVPwPV-OXjvokGIYVY2IU7bTk1lBF4qeR5M-BZYA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113558109078223961623?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tom Kennish",
+          "rating": 2,
+          "text": "Who ever owns Coccos now is doing a real piss poor job of it. The place has gone downhill in every way I can think of over the last couple of years. The employees are great and work hard. This has bad management and ownership decisions written all over it. It’s a shame I have been going here forever.",
+          "date": "2025-04-14T23:33:27.485Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNvMkl5Nk9BEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXagXperIsOzd4uOF2r59z1IG-_pjm7P1S1i0K0kbgln6w5sjil=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113651746673007798563?hl=en",
+          "reviewerNumberOfReviews": 14,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Rachel Marie",
+          "rating": 5,
+          "text": "",
+          "date": "2025-04-09T10:16:00.857Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURJcHBPZTd3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVkA3Fm2v_5rNawbU1rXjrfx_MgYnfb5XyoDq3O827sTnlo6Q4=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117656997331206120431?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jane Smith",
+          "rating": 5,
+          "text": "",
+          "date": "2025-04-07T22:16:48.044Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURJcklpMDFBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLh9V_LBI-eEM44u3bosP-6s60e5KNcgYjbfkAoq1A1HDsXNA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100472630410712817920?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Bob Rob",
+          "rating": 2,
+          "text": "It's literally just \"ok\" food.",
+          "date": "2025-04-07T02:14:38.648Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNJclBIUU5nEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIBcmEthBphVTSorswyK6vRpvoYWGgmXYWcID6nsQFDxnGv9Q=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103892547848629738523?hl=en",
+          "reviewerNumberOfReviews": 21,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Thomasina Johnson",
+          "rating": 5,
+          "text": "Pepperoni Pizza awesome..and the Dough boys . delicious. Everything was tasty. Thank you",
+          "date": "2025-04-03T23:52:36.776Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURLaGNxREVBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJfyHQlcrESjiueYt-XdV7MA_nx0TZ-8Okj9mvJsInSXrsbEQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116404830812577576338?hl=en",
+          "reviewerNumberOfReviews": 32,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Doug Johnston",
+          "rating": 5,
+          "text": "Great place and great food !",
+          "date": "2025-03-28T23:20:36.418Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUR3dDhQTy1RRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLkcjjprvMXU9Z6MDcXhs1cTzjD5_3WhPqrlITVow9kielZvg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100717725812441351646?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Eric Copestakes",
+          "rating": 5,
+          "text": "Best Cheesesteak in Aston",
+          "date": "2025-03-28T11:52:38.546Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUR3bTlud1RREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ-hLdTlCh4C_cWg2AuXQBFIBeHSDdiwLJTBgzrBE0TkY1h4g=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105439103536980419103?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Bill Larer",
+          "rating": 5,
+          "text": "",
+          "date": "2025-03-26T21:29:46.036Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUR3NmRuMVZBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVrETHKYIRMmbiG67KDHWBVI9chCTuNEl8d7xhCfb8kWEWzbzo=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100335725085567261344?hl=en",
+          "reviewerNumberOfReviews": 151,
+          "sentiment": "positive"
+        },
+        {
+          "author": "kyle Elliott",
+          "rating": 5,
+          "text": "",
+          "date": "2025-03-24T21:58:59.262Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUR3b3FPell3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXeb-9wEKErs3BjXZ5wMR1Ts96SdnynXJCDUmC7E6oSU9NpAIPn=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113307608175024252846?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Lynn Nugent",
+          "rating": 5,
+          "text": "",
+          "date": "2025-03-22T21:49:45.636Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUR3c05LYzZBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKM_QJsjJ28TUQ-wsgJMIjuH_yKoQcX302vwDQH7aiv3wp7lw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116435988211464412112?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "William Bondarchuk",
+          "rating": 5,
+          "text": "Veggie pizza and French fries were delicious service was awesome bathroom was small and dirty",
+          "date": "2025-03-22T08:52:16.897Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUN3Mzc2YndnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocINOoX_WNsTCHzrAZdfAf3UkxzE7BmoJwXit6jOqRZXF5Fn1A=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114476009589517901152?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Georgette Morro",
+          "rating": 5,
+          "text": "Everything you get from there tastes good  and the prices are great! Steve the owner helped me walk me to my car with the food. The customer service is amazing!",
+          "date": "2025-03-16T14:22:16.369Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUN3LUp6SXBnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI0YS94YfhO03eglviDTHMSs7Fw7_o1sXXq_LFSHGzK92ZVMQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113196952939867498191?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Larry Parker",
+          "rating": 5,
+          "text": "",
+          "date": "2025-03-13T22:27:10.588Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURRazVYWEdREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK7DqM_Gx4X9F2TIvZMYdvlFxeFau17VMGWmBPBoRNxaYgJbA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108854229220706159959?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ownie",
+          "rating": 5,
+          "text": "Cocco's is a solid pick to go and watch a sporting event. They have multiple tvs for multiple sports. The food is great and you can enjoy a few beers as well",
+          "date": "2025-03-12T11:56:28.717Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURRcnFxRWR3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUkl3RgnjlVQYu7JfOGrAued3WN7dL2ztk9345pxgYxJXJscNENDQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111507680455872725116?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "John Michael",
+          "rating": 5,
+          "text": "",
+          "date": "2025-03-09T19:38:12.569Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURRdlByeFl3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLo6r04B1GCCy404rxK59joY6FAllqBRUa23EiljcY6Tp-5Og=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103477817470435012159?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Julie Herestofa",
+          "rating": 5,
+          "text": "",
+          "date": "2025-03-09T18:03:42.270Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURRM1ByTFJnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV3l6kjgmRiozpG_qtccIq6d53F7uI-3vF5vDNhosYb9YeHQZHniw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104721053162263327135?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tiffany Hopkins",
+          "rating": 5,
+          "text": "Let me tell you right now . Cocos is my lifeline. It gets me through my week just knowing I can order this delicious pizza on a Saturday and devour it with my precious family. 100 stars .",
+          "date": "2025-03-08T23:45:19.979Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURRLU4yREx3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKUW1Ib4r5EZRdqZTi8qEiomiyHANHy8WXMMafq8May8HqbgQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115744044226306672448?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Heria Scott",
+          "rating": 5,
+          "text": "",
+          "date": "2025-03-07T23:04:23.747Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNROV9ETHJ3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJr-TY7BX8wg7fN4Fq4Hwsh9B7Y0Pnmh4jfwfkEOj2CUmiZDg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108810723830748702187?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "David Ebbeson",
+          "rating": 5,
+          "text": "Good food fast service.",
+          "date": "2025-03-06T00:37:48.693Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNRdWNiTzl3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUeQlisKk-UwG6HE_Z0R_jfCFWKJ3H0ohIWpdxmNy_pzIs8Dmdq=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101524670056658571304?hl=en",
+          "reviewerNumberOfReviews": 73,
+          "sentiment": "positive"
+        },
+        {
+          "author": "joel Chrisman",
+          "rating": 5,
+          "text": "Great local bar, food is pretty good overall. Atmosphere is what makes the place.",
+          "date": "2025-02-17T20:56:23.002Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNnX3F1Z3Z3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXyEpiPqJmcr75ROjzapKaYvzVqkgOXp78RV6c8RI7nA3UhNp5b=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116819902848504548007?hl=en",
+          "reviewerNumberOfReviews": 23,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Walt Schwarz",
+          "rating": 5,
+          "text": "My elderly mother lives alone and you guys always go out of your way to deliver her food thank you, great pizza friendly everyone.",
+          "date": "2025-02-10T22:56:24.865Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURBOWZYVHJBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKf9p33VBVhRcj5bS7Fqe-HBZqzJ1HII1MGEhIsZJoJVvoq0w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114949011001209841780?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Paul Parker",
+          "rating": 4,
+          "text": "",
+          "date": "2025-02-08T20:07:45.619Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURBMXZHdXJRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU1tFOZD01p8k8aPosVEhoYhF5y_p09SWWQTE2iQS6ljTiPaZqxFQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102894011065287780000?hl=en",
+          "reviewerNumberOfReviews": 42,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jose Huertas",
+          "rating": 3,
+          "text": "",
+          "date": "2025-02-07T16:47:06.171Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURBX0s2QzJnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXH9YZXvK-wrmY21nrLlQG31QAbjZM-c6upFcde_BWlHYCkVtwdDQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100675955984316437666?hl=en",
+          "reviewerNumberOfReviews": 91,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Chris Jones",
+          "rating": 4,
+          "text": "",
+          "date": "2025-01-12T00:57:05.885Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNfa1BXZGNBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLne38RDCCxTh90p5vxIRw8Nh2mzGHIDtM3XRv9OzfcLIxELQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110322144604778297852?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Carol Derrickson",
+          "rating": 2,
+          "text": "We orders from this pizza shop for many years.  Had mostly good. One in a great while not great.  But tonight’s aweful. They have lost a customer.  Very disappointed in a plain cheese pizza.",
+          "date": "2025-01-11T00:06:26.115Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURmdDhmLVNBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVvYzaIVdpPAIyO8L_Gqxaa-ys9DpglejMz4zVP28bzljw5UPgd=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108190652799956641783?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Tara Romanelli",
+          "rating": 3,
+          "text": "Food is ok. Little pricey for what you get.",
+          "date": "2025-01-01T09:16:59.157Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNmMC16UFRnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXYWMJuQwPNLYc3xFjk8UHtyGNnrqM6XLncTLt_GLfX0xmsO90u=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105373496016759825562?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Carey Signora",
+          "rating": 1,
+          "text": "",
+          "date": "2024-12-30T05:43:23.629Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNLcjYzUTJBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV7uDIRLlBz87t8yNu6ogR91d-h05FwPTH5AKPhaScqAGiItyjt=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103184688454720051156?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Bob Shortlidge",
+          "rating": 5,
+          "text": "Great pizza.",
+          "date": "2024-12-25T14:12:03.707Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNncHEzT2xnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ2bSLnsj-7Yecvlahy8rgdxg0w9CYuK5mJrpyndc5FinEAvA=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111251133831479434119?hl=en",
+          "reviewerNumberOfReviews": 362,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Russell Offringa",
+          "rating": 4,
+          "text": "Larger Neighborhood Italian standard. Bar Sports Pizza and other typical Philly Phare",
+          "date": "2024-12-19T18:51:57.803Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR2MnYyZlR3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWv5fR0rfekht86tbweGtake9VWqZVMd9GCbYVHr1jNFYVL6yCyyg=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107937843375522874376?hl=en",
+          "reviewerNumberOfReviews": 348,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Eileen Neuman",
+          "rating": 5,
+          "text": "The cheesesteak was tender, held together by melted cheese. The bread was fresh. Filled with flavor  It was just right!",
+          "date": "2024-12-08T00:06:10.413Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUN2LU9yeFpREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJcVEtXt4fDF0mL2t7MJ4vJ88jUklEIFcdiARBIsNu35ZKoNVbe=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113173675070618679537?hl=en",
+          "reviewerNumberOfReviews": 17,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Matt Secamiglio",
+          "rating": 3,
+          "text": "",
+          "date": "2024-11-27T13:55:57.780Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNQbzZxWG1RRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLYAU1wBdD5CwfjWqmPAttkDz2fc16_TT83uspwANR9SUZ6MA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104308865599933637548?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Linda Hemingway",
+          "rating": 5,
+          "text": "My son died suddenly we needed some where to hold a Lunch in.we had it here they where so helpful and respectful. Willing to help with anything we needed\nWe just wanted to thank them so much\nThe hemingway family",
+          "date": "2024-09-22T11:32:36.524Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNubU1pZEhnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLdXcAdhjA5iBbst435DiJu3nJL4B9xtZikOU2tevyqBOqPXg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116292970926544885136?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Hector José Medina Gómez",
+          "rating": 5,
+          "text": "Well poured, genuine, pint of Guiness",
+          "date": "2024-09-08T11:25:39.583Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNINDllLUtREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIO0lWHWn1Tf5OyJpzby2GWzJt_xGBFClJpk80npxGXiPTcfw=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107122541812505164057?hl=en",
+          "reviewerNumberOfReviews": 377,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Cree Luv",
+          "rating": 5,
+          "text": "",
+          "date": "2024-09-03T05:19:56.907Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNIa3VHTlpBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVmeKU4t_ggNOKe81jPcKlDyUNb-cNQtmNrQa2CjPMxkB6vMQqD=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116895594951415733037?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jay",
+          "rating": 1,
+          "text": "Every time I call they tell me they don’t go that far… whatever that means even though they are 3.5 miles away (10 minutes). And I’ve order from a different address that’s equivalent if not further in distance. It’s a shame they lost my business.",
+          "date": "2024-08-29T23:28:35.393Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQ3ajUyUWFBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXuXwJQoEQwmAtRezOwr81MqSG_07VtB8jhtiGjp54o5SFTImj6=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108027330499719754147?hl=en",
+          "reviewerNumberOfReviews": 25,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Simcox Press",
+          "rating": 5,
+          "text": "",
+          "date": "2024-08-10T13:51:37.082Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURiOTZqYjRRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVgmty1FBNZcdnnUFLQw9pi8u7veD83Wz_lOJjJPuTbM0UBfF60JQ=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102992612426556978264?hl=en",
+          "reviewerNumberOfReviews": 376,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Malena Rosario",
+          "rating": 5,
+          "text": "",
+          "date": "2024-08-02T20:32:58.239Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURiN0pqeHhBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVANLxJH-KzMcMrJXTnfvZlRCyMBu5s743JM1CKDgBK6eKUiv0D9w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114965861670891386921?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "S M",
+          "rating": 4,
+          "text": "Good pizza, nice atmosphere. They need to get Yuengling on tap!",
+          "date": "2024-07-29T01:54:23.147Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNiMmE3aTJnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKhFefgbzkX3GZ5-qxyIZbvzUziuiCch7JXuH6gQIDP1B6yNeuO=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116637486273868453948?hl=en",
+          "reviewerNumberOfReviews": 60,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Cole Scheponik",
+          "rating": 5,
+          "text": "Always great",
+          "date": "2024-07-19T22:25:19.175Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURyazU3YlVREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLcQJ__AH7uaSG-PKg7-g5Yz7jnZw5LPXKo7woLRN9D4Gp-rw=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101173745886004445963?hl=en",
+          "reviewerNumberOfReviews": 15,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Cleve Sinor",
+          "rating": 5,
+          "text": "Great place for pizza!",
+          "date": "2024-07-06T23:31:21.783Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNydHQ3WU5REAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUFfCtht53iIM_LegDmDwM5CJp9HqneNZWw-6VOdI8pkMI1PPknMw=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106125789575972705132?hl=en",
+          "reviewerNumberOfReviews": 156,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Rob Reagan",
+          "rating": 5,
+          "text": "Fast friendly service, excellent food as always.",
+          "date": "2024-06-28T00:00:07.328Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURva0xmZld3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVXYsfaKbQXIYTGd9oFAufrfKmPrjQMoCFbb3yOML0k4DlRCuClQQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103143177037737655773?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Robert Sacks",
+          "rating": 5,
+          "text": "I have never been to this location before.The phone service to place my order was very very nice and convenient and also the food was price right and very delicious",
+          "date": "2024-06-26T22:31:56.461Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURMcXVlYnNBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXoUhEpwM3W3mttKC3_BbTux_vgnyHoOr5kb5VOL3mzWVeZIq7jPg=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100181987809934949912?hl=en",
+          "reviewerNumberOfReviews": 502,
+          "sentiment": "positive"
+        },
+        {
+          "author": "J Mac",
+          "rating": 5,
+          "text": "Best pizza and wings in the area.",
+          "date": "2024-06-19T20:56:45.067Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNMZ1pfMkFREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJlSj-yIURJIo3cjt6u6UNzEEfuG1YvKHwdEN9e7Vkm_jS2Yw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111998075869638755581?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jermaine K",
+          "rating": 5,
+          "text": "",
+          "date": "2024-06-12T21:40:48.036Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUR6aDZPNWdnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVZRjWYk5IHOI2wALfqjALFmxbZd56-sFEdqEDp6WfQ_LudGgo=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117690492534894984320?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        }
+      ],
+      "customerMoodAnalysis": {
+        "overallMood": "satisfied",
+        "sentimentSummary": "Customers have positive experiences overall. Your 4.5/5 rating from 100 recent reviews shows solid satisfaction with room for growth.",
+        "sentimentDistribution": {
+          "ecstatic": 3,
+          "delighted": 71,
+          "satisfied": 18,
+          "neutral": 0,
+          "frustrated": 4,
+          "disappointed": 4,
+          "angry": 0
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "food quality",
+            "mentions": 16
+          },
+          {
+            "theme": "service excellence",
+            "mentions": 12
+          },
+          {
+            "theme": "speed of service",
+            "mentions": 9
+          },
+          {
+            "theme": "atmosphere",
+            "mentions": 7
+          },
+          {
+            "theme": "slow service",
+            "mentions": 2
+          },
+          {
+            "theme": "overpriced",
+            "mentions": 1
+          },
+          {
+            "theme": "food issues",
+            "mentions": 1
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 7,
+          "satisfaction": 50,
+          "disappointment": 2,
+          "frustration": 0,
+          "anger": 0
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "Customers love the quick delivery of food from the kitchen, ensuring a fast and convenient dining experience. - social media marketing can showcase this strength",
+            "The variety and quality of menu items, including wings, curly fries, hoagies, and pizza, are highly praised by customers. - SEO services can leverage this for better visibility",
+            "The friendly and welcoming staff create a home-like atmosphere that customers appreciate. - review management can highlight this positive aspect"
+          ],
+          "improvementOpportunities": [
+            "Long wait times and order mishandling - Boostly marketing services can improve this",
+            "Negative reviews and reputation issues - review management can address this concern",
+            "Lack of atmosphere/ambiance awareness - social media marketing can improve this area"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 100,
+          "averageRating": 4.5,
+          "ratingDistribution": {
+            "1": 2,
+            "2": 6,
+            "3": 6,
+            "4": 14,
+            "5": 72
+          },
+          "sentimentTrends": {
+            "trend": "improving",
+            "recentAverageRating": 4.8,
+            "previousAverageRating": 4.4,
+            "recentReviewsCount": 10
+          }
+        }
+      },
+      "examples": {
+        "positive": [
+          {
+            "author": "Mark",
+            "rating": 5,
+            "text": "",
+            "date": "2025-09-13T03:29:37.250Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pJeUxUQkVhWFZWVTFJellVUllNM1JzVGt0eVVWRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK_IW-ciIf8QkFbubAVWoyPsUYiC6e5b1EuNoB2HemewWA-MA=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/115736241996798766142?hl=en",
+            "reviewerNumberOfReviews": 0
+          },
+          {
+            "author": "Jamie Vozzelli",
+            "rating": 4,
+            "text": "",
+            "date": "2025-09-06T09:03:09.418Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT20wMWVGUm1SMVJLWWtvMGNESXpOekZqVUhCVlUzYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXjm_6tqYRjsA2UMJwbW1OT7nFDR8wy9KQ6HqG-ElOdUOlGn10Fbw=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/107128602483447370687?hl=en",
+            "reviewerNumberOfReviews": 16
+          },
+          {
+            "author": "Willie Jones",
+            "rating": 5,
+            "text": "",
+            "date": "2025-09-06T01:48:13.308Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25kalNtNWFSV2wyVlVwNmEyRkVUblZWTldoU1NFRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLMTEMKt8vd5HKynPUGufoimTEN7IVYHK9dBw2ls_HubJ2-oQ=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/117237293088751755710?hl=en",
+            "reviewerNumberOfReviews": 6
+          }
+        ],
+        "neutral": [
+          {
+            "author": "Alex Seigfried",
+            "rating": 3,
+            "text": "Starting to cheap out on things. Used to be a solid place to order food from.  Recently I ordered an Italian Stromboli and all it had in it was ham and cheese.  That's a ham and cheese stromboli, put some pepperoni in there at the very least if not vegitables. There wasn't any option for pizza sauce either. Soda was not an option on the order form.",
+            "date": "2025-06-29T21:46:06.928Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21Sd0xXbERTSFZwYUd3NWMySlBWMXBKVlZKM1VGRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVQrsR9hJO09Kv6fEPl0Ahtv2QPMbO_v-5yUVhigQ9MFTSpgkU=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/106282504344615797217?hl=en",
+            "reviewerNumberOfReviews": 1
+          },
+          {
+            "author": "Jeanette A",
+            "rating": 3,
+            "text": "The wings are always good, the pizza is hit or miss",
+            "date": "2025-06-10T21:59:58.711Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUR5dHN2ZF9nRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJOx_jHTH71vdcfu_NcE1xD7LPE-zQQ9V5N0JIoXw5F8yiB8Q=s1920-c-rp-mo-ba6-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/108280670223608390372?hl=en",
+            "reviewerNumberOfReviews": 311
+          },
+          {
+            "author": "Jamie Hagerty",
+            "rating": 3,
+            "text": "Pizza was very good...\nOrdered garlic Parmesan wings that had absolutely no sauce. Their garlic Parmesan is grated Parmesan and sprinkle garlic. Very disappointed in the wings. I've had garlic Parmesan wings other places and they are usually delicious and saucy. These were breaded boring blah. Service was fantastic",
+            "date": "2025-05-01T22:46:40.860Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNZOU03QnhRRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWlBMxbODDjtoAPuWKJ0aj5IL0wJs7cvICAAXIf-V3DoSaGouM=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/112045632525548027924?hl=en",
+            "reviewerNumberOfReviews": 52
+          }
+        ],
+        "negative": [
+          {
+            "author": "Michael McGowan",
+            "rating": 2,
+            "text": "We have ordered from here for years. Last few times are way over 90 minutes wait. This time I ordered an hour ahead and I got there and they had no idea. Just started my order as I arrived and then told me it would be a few minutes like 10 times. It was bad.",
+            "date": "2025-08-16T03:15:38.952Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURacG9tWWZREAE",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU3nGouyBTWBi4krbzmge1DPoXeT9iSAK2lURsKQZEbMoyR_uip=s1920-c-rp-mo-ba4-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/115892601790942877961?hl=en",
+            "reviewerNumberOfReviews": 92
+          },
+          {
+            "author": "Beverly Philpott",
+            "rating": 2,
+            "text": "Girl taking my order had no personality. Looked miserable. Ordered a hoagie. Roll was hard. Literally, no taste to it! LaSpada's it is NOT!",
+            "date": "2025-07-30T23:36:55.783Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xGVGJqQnlURTgxUlZVd05HUmZTMnRYWkhNeWQyYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW8nU-3KQvXGSpv5qJqqnfmFDZ0dJqJw1Rqf_mMrg5B-FYaUVD9=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/102197570138575568714?hl=en",
+            "reviewerNumberOfReviews": 10
+          },
+          {
+            "author": "Brandon Leach",
+            "rating": 2,
+            "text": "Pizza is fine, but just a higher probability of getting the wrong order when picking it up, messeing up single topping pizzas.. Just got to Pappones",
+            "date": "2025-05-12T00:44:09.552Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChZDSUhNMG9nS0VJU000SWJ2dU5Pck1REAE",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKCWfZy_evy16qcH-2MLZSnfyNMuGRtkc2wKKsOE1Hjc7zfNg=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/111231999117702464835?hl=en",
+            "reviewerNumberOfReviews": 22
+          }
+        ]
+      },
+      "trends": {
+        "ratingTrend": "stable",
+        "volumeTrend": "stable",
+        "responseRate": 0,
+        "averageResponseTime": "No responses"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ]
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/coccospizzaaston",
+      "instagram": "https://www.instagram.com/coccospizzaaston",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 59,
+      "social": 100,
+      "local": 64,
+      "reviews": 88,
+      "overall": 78
+    },
+    "originalScores": {
+      "seo": 71,
+      "overallScore": 69,
+      "performance": 76,
+      "userExperience": 66
+    },
+    "migratedAt": "2025-09-16T00:37:21.215Z"
+  },
+  "metadata": {
+    "cachedAt": "2025-09-15T19:09:24.770Z",
+    "expiresAt": "2025-10-15T19:09:24.770Z",
+    "placeId": "ChIJ1e_IfxnmxokRfQjqD3hJ94g",
+    "restaurantName": "Cocco's Pizza Aston",
+    "cacheVersion": "2.0.0"
+  }
+}

@@ -3,11 +3,11 @@
     "domain": "slabpizza.com",
     "restaurantName": "Slab Pizza",
     "placeId": "ChIJWWRISVuFTYcRS1fwOenSdak",
-    "overallScore": 65,
-    "performance": 67,
-    "seo": 70,
+    "overallScore": 75,
+    "performance": 100,
+    "seo": 58,
     "mobile": 47,
-    "userExperience": 60,
+    "userExperience": 71,
     "issues": [
       {
         "type": "seo",
@@ -2524,13 +2524,27 @@
     },
     "profileAnalysis": null,
     "serpScreenshots": [],
-    "restaurantSearchScreenshot": null
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 58,
+      "social": 100,
+      "local": 69,
+      "reviews": 71,
+      "overall": 75
+    },
+    "originalScores": {
+      "seo": 70,
+      "overallScore": 65,
+      "performance": 67,
+      "userExperience": 60
+    },
+    "migratedAt": "2025-09-16T00:37:21.467Z"
   },
   "metadata": {
     "cachedAt": "2025-08-25T15:59:44.699Z",
     "expiresAt": "2025-09-01T15:59:44.699Z",
     "placeId": "ChIJWWRISVuFTYcRS1fwOenSdak",
     "restaurantName": "Slab Pizza",
-    "cacheVersion": "1.0.0"
+    "cacheVersion": "2.0.0"
   }
 }

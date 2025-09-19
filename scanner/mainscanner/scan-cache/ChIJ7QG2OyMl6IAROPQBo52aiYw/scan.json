@@ -1,0 +1,2717 @@
+{
+  "data": {
+    "domain": "www.badassstreettacos.com",
+    "restaurantName": "Bad Ass Street Tacos",
+    "placeId": "ChIJ7QG2OyMl6IAROPQBo52aiYw",
+    "overallScore": 73,
+    "performance": 100,
+    "seo": 58,
+    "mobile": 51,
+    "userExperience": 91,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "mexican near me",
+        "position": 0,
+        "searchVolume": 260,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "mexican delivery Thousand Oaks",
+        "position": 1,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.badassstreettacos.com/",
+        "title": "Best Mexican Restaurant & Catering Company in Ventura ...",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best mexican Thousand Oaks",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "mexican",
+        "position": 0,
+        "searchVolume": 210,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "mexican places near me",
+        "position": 0,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "mexican Thousand Oaks California",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "mexican delivery near me",
+        "position": 0,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "mexican open now",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 0,
+        "keywords_appeared": 0,
+        "total_keywords": 8,
+        "average_position": 0,
+        "best_position": 0
+      },
+      "keyword_results": [
+        {
+          "keyword": "mexican near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "La Poblana Mexican Grill",
+              "address": "Thousand Oaks, CA ",
+              "website": "https://lapoblanamexicangrillthousand.com/",
+              "rating": 4.6,
+              "reviews": 88
+            },
+            {
+              "position": 2,
+              "name": "Los Dos Amigos",
+              "address": "Thousand Oaks, CA ",
+              "website": "http://losdosamigos.menutoeat.com/",
+              "rating": 4.1,
+              "reviews": 603
+            },
+            {
+              "position": 3,
+              "name": "Patron Mexican Bar & Grill",
+              "address": "Thousand Oaks, CA ",
+              "website": "https://patronmexicanbarandgrillca.com/",
+              "rating": 4.4,
+              "reviews": 96
+            }
+          ]
+        },
+        {
+          "keyword": "mexican",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "La Poblana Mexican Grill",
+              "address": "Thousand Oaks, CA ",
+              "website": "https://lapoblanamexicangrillthousand.com/",
+              "rating": 4.6,
+              "reviews": 88
+            },
+            {
+              "position": 2,
+              "name": "La Esquina Mexican Grill",
+              "address": "Thousand Oaks, CA ",
+              "website": "http://thecornermexicangrill.com/",
+              "rating": 4.4,
+              "reviews": 182
+            },
+            {
+              "position": 3,
+              "name": "Los Dos Amigos",
+              "address": "Thousand Oaks, CA ",
+              "website": "http://losdosamigos.menutoeat.com/",
+              "rating": 4.1,
+              "reviews": 603
+            }
+          ]
+        },
+        {
+          "keyword": "best mexican Thousand Oaks",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "La Poblana Mexican Grill",
+              "address": "Thousand Oaks, CA ",
+              "website": "https://lapoblanamexicangrillthousand.com/",
+              "rating": 4.6,
+              "reviews": 88
+            },
+            {
+              "position": 2,
+              "name": "Reynalda Cucina & Amor",
+              "address": "Thousand Oaks, CA ",
+              "website": "",
+              "rating": 4.5,
+              "reviews": 89
+            },
+            {
+              "position": 3,
+              "name": "Plata Cocina Mexicana",
+              "address": "Thousand Oaks, CA ",
+              "website": "https://www.eatplata.com/",
+              "rating": 4.1,
+              "reviews": 84
+            }
+          ]
+        },
+        {
+          "keyword": "mexican delivery near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "La Poblana Mexican Grill",
+              "address": "Thousand Oaks, CA ",
+              "website": "https://lapoblanamexicangrillthousand.com/",
+              "rating": 4.6,
+              "reviews": 88
+            },
+            {
+              "position": 2,
+              "name": "La Esquina Mexican Grill",
+              "address": "Thousand Oaks, CA ",
+              "website": "http://thecornermexicangrill.com/",
+              "rating": 4.4,
+              "reviews": 182
+            },
+            {
+              "position": 3,
+              "name": "Patron Mexican Bar & Grill",
+              "address": "Thousand Oaks, CA ",
+              "website": "https://patronmexicanbarandgrillca.com/",
+              "rating": 4.4,
+              "reviews": 96
+            }
+          ]
+        },
+        {
+          "keyword": "mexican Thousand Oaks California",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "La Poblana Mexican Grill",
+              "address": "Thousand Oaks, CA ",
+              "website": "https://lapoblanamexicangrillthousand.com/",
+              "rating": 4.6,
+              "reviews": 88
+            },
+            {
+              "position": 2,
+              "name": "Plata Cocina Mexicana",
+              "address": "Thousand Oaks, CA ",
+              "website": "https://www.eatplata.com/",
+              "rating": 4.1,
+              "reviews": 84
+            },
+            {
+              "position": 3,
+              "name": "La Esquina Mexican Grill",
+              "address": "Thousand Oaks, CA ",
+              "website": "http://thecornermexicangrill.com/",
+              "rating": 4.4,
+              "reviews": 182
+            }
+          ]
+        },
+        {
+          "keyword": "top mexican Thousand Oaks",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Reynalda Cucina & Amor",
+              "address": "Thousand Oaks, CA ",
+              "website": "",
+              "rating": 4.5,
+              "reviews": 89
+            },
+            {
+              "position": 2,
+              "name": "La Poblana Mexican Grill",
+              "address": "Thousand Oaks, CA ",
+              "website": "https://lapoblanamexicangrillthousand.com/",
+              "rating": 4.6,
+              "reviews": 88
+            },
+            {
+              "position": 3,
+              "name": "La Esquina Mexican Grill",
+              "address": "Thousand Oaks, CA ",
+              "website": "http://thecornermexicangrill.com/",
+              "rating": 4.4,
+              "reviews": 182
+            }
+          ]
+        },
+        {
+          "keyword": "mexican restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Los Dos Amigos",
+              "address": "Thousand Oaks, CA ",
+              "website": "http://losdosamigos.menutoeat.com/",
+              "rating": 4.1,
+              "reviews": 603
+            },
+            {
+              "position": 2,
+              "name": "La Poblana Mexican Grill",
+              "address": "Thousand Oaks, CA ",
+              "website": "https://lapoblanamexicangrillthousand.com/",
+              "rating": 4.6,
+              "reviews": 88
+            },
+            {
+              "position": 3,
+              "name": "La Esquina Mexican Grill",
+              "address": "Thousand Oaks, CA ",
+              "website": "http://thecornermexicangrill.com/",
+              "rating": 4.4,
+              "reviews": 182
+            }
+          ]
+        },
+        {
+          "keyword": "mexican food Thousand Oaks",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "La Poblana Mexican Grill",
+              "address": "Thousand Oaks, CA ",
+              "website": "https://lapoblanamexicangrillthousand.com/",
+              "rating": 4.6,
+              "reviews": 88
+            },
+            {
+              "position": 2,
+              "name": "Plata Cocina Mexicana",
+              "address": "Thousand Oaks, CA ",
+              "website": "https://www.eatplata.com/",
+              "rating": 4.1,
+              "reviews": 84
+            },
+            {
+              "position": 3,
+              "name": "La Esquina Mexican Grill",
+              "address": "Thousand Oaks, CA ",
+              "website": "http://thecornermexicangrill.com/",
+              "rating": 4.4,
+              "reviews": 182
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"mexican near me\", \"mexican\", \"best mexican Thousand Oaks\", \"mexican delivery near me\", \"mexican Thousand Oaks California\", \"top mexican Thousand Oaks\", \"mexican restaurant near me\", \"mexican food Thousand Oaks\" - optimize Google My Business profile with these keywords",
+        "Low Local Pack visibility (0%) - audit your Google My Business completeness, categories, and local citations"
+      ],
+      "scan_metadata": {
+        "location": "Thousand Oaks,California,United States",
+        "timestamp": "2025-09-15T18:48:26.423Z",
+        "total_scan_time_ms": 24327
+      }
+    },
+    "competitors": [
+      {
+        "name": "Mastro's Steakhouse",
+        "domain": "mastrossteakhouse.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 515,
+        "keywords": 38,
+        "domainAuthority": 75,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+50 keywords",
+        "authorityGap": 2,
+        "backlinks": 827
+      },
+      {
+        "name": "BASTA Restaurant - Thousand Oaks",
+        "domain": "bastarestaurantthousandoaks.com",
+        "performance": 86,
+        "seo": 77,
+        "accessibility": 73,
+        "bestPractices": 82,
+        "overallScore": 80,
+        "rating": 4.3,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 797,
+        "keywords": 29,
+        "domainAuthority": 77,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 962
+      },
+      {
+        "name": "Old Oaks Steakhouse",
+        "domain": "oldoakssteakhouse.com",
+        "performance": 94,
+        "seo": 85,
+        "accessibility": 80,
+        "bestPractices": 89,
+        "overallScore": 87,
+        "rating": 4.7,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 642,
+        "keywords": 54,
+        "domainAuthority": 73,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+150 keywords",
+        "authorityGap": 5,
+        "backlinks": 1024
+      },
+      {
+        "name": "Lazy Dog Restaurant & Bar",
+        "domain": "lazydogrestaurantbar.com",
+        "performance": 88,
+        "seo": 79,
+        "accessibility": 75,
+        "bestPractices": 84,
+        "overallScore": 81,
+        "rating": 4.4,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 601,
+        "keywords": 23,
+        "domainAuthority": 84,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 738
+      },
+      {
+        "name": "Selvin's Restaurant + Lounge",
+        "domain": "selvinsrestaurantlounge.com",
+        "performance": 86,
+        "seo": 77,
+        "accessibility": 73,
+        "bestPractices": 82,
+        "overallScore": 80,
+        "rating": 4.3,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1220,
+        "keywords": 31,
+        "domainAuthority": 72,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 977
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 71,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-15T18:49:39.205Z",
+    "businessProfile": {
+      "name": "Bad Ass Street Tacos",
+      "address": "2951 E Thousand Oaks Blvd, Thousand Oaks, CA 91362, USA",
+      "rating": 4.4,
+      "reviewCount": 1178,
+      "phoneNumber": "(805) 370-8226",
+      "website": "https://www.badassstreettacos.com/",
+      "formatted_address": "2951 E Thousand Oaks Blvd, Thousand Oaks, CA 91362, USA",
+      "address_components": [
+        {
+          "long_name": "2951",
+          "short_name": "2951",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "East Thousand Oaks Boulevard",
+          "short_name": "E Thousand Oaks Blvd",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Thousand Oaks",
+          "short_name": "Thousand Oaks",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Ventura County",
+          "short_name": "Ventura County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "California",
+          "short_name": "CA",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "91362",
+          "short_name": "91362",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "state": "California",
+      "city": "Thousand Oaks",
+      "place_id": "ChIJ7QG2OyMl6IAROPQBo52aiYw",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "reviews": [
+        {
+          "author_name": "dejirlene Concha",
+          "author_url": "https://www.google.com/maps/contrib/103077204565833187517/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWdvuKOGY53_HPQvhxcTt5K9e03CH-U3gKXCU8ikq7dXiKLpYo=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "🌟🌟🌟🌟🌟\nNew favorite taco spot!\nI discovered this gem after church service on Sunday, and I’m so glad I did! I ordered the chilaquiles with green salsa, and WOW absolutely delicious. The flavors were fresh, vibrant, and perfectly balanced. You can tell everything is made with care. The staff was friendly, the atmosphere was casual and welcoming, and I can’t wait to go back to try more of the menu. Highly recommend if you’re in the area and craving authentic, flavorful Mexican food!",
+          "time": 1752263629,
+          "translated": false
+        },
+        {
+          "author_name": "GH Campbell",
+          "author_url": "https://www.google.com/maps/contrib/100245727363978277755/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUhJ9nnEqjqyY_As5YIhfLsXp43qKnHbClIGdr6VRO-umr-xPI=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "2 months ago",
+          "text": "Nice spot in Thousand Oaks. Cozy atmosphere. Eating outside in covered area is decent. Tacos reasonably priced and taste was adequate. Nothing to write home about. Will try nachos and burritos if in the area again.",
+          "time": 1752611735,
+          "translated": false
+        },
+        {
+          "author_name": "Tara Casas",
+          "author_url": "https://www.google.com/maps/contrib/114713842799101159530/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjURvnrZYfXJP7Sgn4oVlm2whE03GM_jE1BlQZ_Il2m--oe2QHs=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Love their street tacos, chorizo and papas is my fave. My kids love the carne asada and it’s family friendly so we enjoy sitting at the long tables on the porch. More faves are their homemade aquas frescas, try jamaica or\nwatermelon. New to menu is quesa birria. Quesadilla with very flavorful slow cooked beef and broth for dipping or sipping. Yum.",
+          "time": 1743283791,
+          "translated": false
+        },
+        {
+          "author_name": "Eileen Rodriguez",
+          "author_url": "https://www.google.com/maps/contrib/102238867187823515537/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVnSZfzBcDhPm5AP6a_SVVFSv2b70Ay7qu71xZpEtTppr_iND8m=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "The service was amazing, and it’s a cute taco place I only came for breakfast and the green chilaquiles were crispy and tasty.",
+          "time": 1751826340,
+          "translated": false
+        },
+        {
+          "author_name": "David Mora",
+          "author_url": "https://www.google.com/maps/contrib/103771699168084044919/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJY3WXJonSYxotGUIsHMGcgplKB5SzKWGfKU8fAZ9Jr1XDM1w=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "There were heaters outside so eating there was comfortable. Service was great. Polite n friendly staff with smiles from when I walked in till I left.  I had the quesabirria tacos n can honestly say they were the BEST I'VE EVER HAD. Tortilla held up to the last bite. They know what they're doing. I'm definitely coming back n highly recommend you try it if you haven't already.",
+          "time": 1745009007,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 3120,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113941080860231720802\">victor Gar</a>"
+          ],
+          "photo_reference": "ATKogpdlfvWWQUHFdybMijBT-KGtxCXxyRWBX4oyW1LcSB-JEQw0foC2XEtw0N6vzZx2GPPQQZejKDYpuK7BZ6U4JaC3-pm4LT68ayx6ZkrSkbLXf7Jsi8ufcDFQeQa5LPD_dHMxtsFNcg-MpQixn4gcfzQrtGf3rJDr2fAKU5KjU-NnvVpEvGlf3faIsNQRZdNpBSw3PdrZNRfzAKt2EVA500VODhyecllgh9mlkB138nvdVI-SIYvYVCaLbyYZckPQz1p-O6WIc5hdQaTv_oVylC1taHr2aHsdhBNqryYgI5ekStm9FzEUa27g91dJoIcoOaBLD7bPboJflDBuosc8pOUWSO03Lbr5_Oe-pWDiXrafyQKgOAx4wseuF3tgCmpwksBB1v_ruQISbrYo1bWSS3nUvaEQqsGMgCkJ49x1GdksJ78",
+          "width": 4160
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107385165423115741978\">Robert Estiandan</a>"
+          ],
+          "photo_reference": "ATKogpe-FJmpp_Zm14KQKP7yTDi1ofDM2wwQg2SYxYqupsg3MTebGbnt5VaCqx9PawlI88dyNRsVU54IuoIqVb7Q2lsTrG78Fk3aMQ6oGqp9VXSSQygdWa1U-fSQ9LwlE8bczFlzkJKMO22pnGc2SLA8IsIA9By1BYWc1W0YfUrFVumH4j9ofoBSvwKRI3b-l8maF1YYJP88r-XZQl90pbw-dhNsT1lnrldiBpRS1Cs7oAm4gAdlneeOkRV1lBLvFQp6yeNuj3diYc0vI6Lq3wH5ipVSILwneTiDGaGbTYd9DJwpzEqpiJbralR_V5YQltnU-OmIPlS_JFNbnid9jJn_imbGZI7pzz5uBBPdtUeeYXG2mOiLzDFIuSOebEn9-FBvyye1S9gsSU-nuXlWkQGTYkDnwlMku-ZmEEaUEOWPP15lHO7CmH6bszcBg4IV8w",
+          "width": 4032
+        },
+        {
+          "height": 2216,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/118188337523753994321\">Bad Ass Street Tacos</a>"
+          ],
+          "photo_reference": "ATKogpe1Rf-f0eX2dfSls7u8__kYgP-tZUbgo8cZV4cw8wmEiNLK40eN8Vlk1enLtMm1hSvboNJxWXOLYmc6dDmuviFyeaPx8fQuxaDiLbyoiCICoK6KTkRBZv_hPIN4bSWp0Byu9wztcu2Yv66VuA72j2xwAb-9ip0sZ1xztETAxwJXhScep3e2dij_8q7YWVJr6lMKrHq5HCuoBq-4YjTlSx59zIMIuUfQb2w_jnMvm2MKCQ2S8Hir19Tn9JcLSVowqkTv2E3MIB47vGivfFunjqvR8-geUkutgkTfzCHSHFrZ-g",
+          "width": 3936
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107385165423115741978\">Robert Estiandan</a>"
+          ],
+          "photo_reference": "ATKogpdIJG99K-pG14mdH9cRGQynq4kdWbm5qH5uE4qi9MSahY6gsYL34-EsZewPl9LPkHUCBF-m9_bSA7bO4dXeUOs4TNNLqfkuOmxl7ed1hqkapjjGelhvZR_N3qpY069ZFfyuvrX7539A4XlW37XshHDhZPSSLHYeptatnDhS7JP6O5iwS0uYX64LGsqVV2yfs0VleE8cADlGJUNyhtGYVGbtylihgM_DUIfZmFd7rXYL_3QBtAsOZRPLBnwAOIMkZ0FsZSGa9m5g4dH7FnbFJDjVMKMMsVTh4ntdkF6A7HDDm50QoiHbdLFfGWIy8XLCw--wiMlOPNCKQXiTGpp5baMo5eiAX0aExOh3OH6QgNRrWFkuRR6qqXYDpsEre6c00zLH-hLlrGXzAAbTjm9kbBXJ_vRqd_0CCitvJx--JwQL5k0AVfZIFavezK3jUosl",
+          "width": 4032
+        },
+        {
+          "height": 3036,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117164797232794664626\">Sky</a>"
+          ],
+          "photo_reference": "ATKogpcgOW8L1i_dK94kC5IGOYEWeXp2-RvwHXwfmSKVreZCEh37uxsF3_kUNs-8bgfWIPX_5PApxj2Yz3vKsB957xI0AQrpB_ydeHVCHWoqZy89QirbTaDc1HD6uHTvJBDs8kD6gqPSSYJIEStc0G1n6KsFxQQ_V5b1hdU_Q5IroZg1cBHNavZyESgyvSA6M2Db_Kz0ys_76L9gsuZXXhtFIvg7L7jHkoLJCX0IASoIcfMXsAkTAK5UWvMIqSk03pJCH6Kf6e7mSIZxMmt3vHw2GU0pmq_9LCXWtwUskNixdw_0W5sEzOIAUUW7R6oVTIm1b517njYh4QYtS0JiuhZig-TPpxzXTIqjm7cfAWMv0GlpEjd1RdOIjWtUXA0kWWFq3NruE9f3idrToA214tMUK8ZLebKPxzwVF_gPN8Kb323Ohw",
+          "width": 4048
+        },
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107941032551594430961\">Railfan BNSF</a>"
+          ],
+          "photo_reference": "ATKogpdr9I3St5kN-ix-Z8BWxPS2LZP8uNNy3lstimTD3AAVVuVftqly07velfNEGqbd3EEqH209-gERCT8848O4QuuHB3gUmA7bUQXrck9Iy_rlm1NRRQ9Y-S3nMTMeyqGu5cvZnJOT3znSCREcgiwgBLVcu5ejexQmWfSVqqfU65X3fj6nxic8OigjtYhZA84OHBt8JjA83ll3Gf2xsuOCiWJuDlPTfEMy--Ky9QyQ_tMXimjIv3D9ZBmjl-E7tPqBDMrFlA_IbR3bvGUFFJW5sOukxeU73p8y4XiwSOcdgocJJXs2WWWc8qn5N323jIKlGgeV1sXb_lGfh6Xf0QmWyBFPOdZVlZ426YzVCOFoF9wJsNiW9QbYIjnEuPT8ziVk01qZ5KRAQoDezEbQTXIhh1C3Q3nK38WZfAf25FRWSAC3zRgLtVL-j-0K9OrnbnO_",
+          "width": 3000
+        },
+        {
+          "height": 3072,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100259495910480529854\">Nick Brinson</a>"
+          ],
+          "photo_reference": "ATKogpechCawUGcW8N27moeyNqRUsYtYlRuWug2Bl891YwjTsdRFBRitKgolCQvG_vErt7mb47F9UozrUfqPYxwSd9KatOtFfO42ZxrwMMzHEF4sw6VoD0LmD-UApcJPNBIaa9gz1IbEOlVLCc6vnx5QrbwsNsPGvVNCCPmzvUbyeZadgbvQGfvRLRFvzSUPdCikK2zKM0vLzg5byteI2mE3EdImPQoYF-ugyiWzdJMaT7NrSZ0XhCz22tOHqmKXErT9iygT6rpOimBslmmzo7-gxEiiImzyp_TFLZA7_pkrDkZjV7BizJNa9bVhV7b0_z-Du9Mgz7uKPFcq1e1stNYAcmHhApyVZiqWh9mYvlytiKmCtTz8X_9927OpY1VYkwkPAr6BB45AokIQPxTjc86KG4-sDte4zL36ywfd6jPz_KErblPw",
+          "width": 4080
+        },
+        {
+          "height": 3000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113575877522266479937\">Suleiman ALAQEL</a>"
+          ],
+          "photo_reference": "ATKogpfsjrOV2QjAYK3NkZz_U-W4Ox4slGv0blbNm1kTCOGgIHgbLFtzIgTdFuwISZUh1tSWmsrtis9j8Ww7WWwDFcElBaay8JqxN_ks_CaIC38AGvf9tdXAPPoVu1KDSQI9SAdIUa42K3n8Hbg8RQHk-oVlhJTJ_68Vs1PC_zwBIGaixBxOwO0avgkH6sw4nwuGDK8TDBAYGwok6PuneCa62jy-XAbny5GNJM8DmtoCZnw8DntmGALAhdZ7BKLVoQJsJM_9d2P6jVSoP4bphRn5Zuan7c9G5ziWuzAawrMUH44z4JYTfPwkeZ3ggCafMqPBqRoEeKpzJt8bahSWoUFX5qJywyfzhbzQ1JFS62WYRU5cEFsHZXT3_Ed8rfle2q2Mz5NnJMy-5pNfaAOTV0R74HJX-XaY5KJ6ObqYj-8uG57Sm7NP",
+          "width": 4000
+        },
+        {
+          "height": 3600,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110511034963219851137\">Robert Gray</a>"
+          ],
+          "photo_reference": "ATKogpcfKbTnQ87NTMTtTLDk5jxP1BVpZKQjCIDrouVihTQLEV1ppyQ-R4IGvOQUigrbv_ztGd06sV99MYqGpwZKlNbXxWK32kLUiTc0GbaHVma0Lfo8gScvcGAXmVvuk8SZcaO6jq1ejiA7UpJk4OA7SLVVKdtVXeNZoGZq9oLoz7peY84zyfH-7BSMh6v0gh6AVl6HZ0zVBT47XRfu_p6phusrkX-A3nrh3k-f5z4MgT97g1Jl_V1zRQrQum1VAICJSXNOJfsqi-VRKFJeV3jmXNSCrXiM_cSmsCrljGZTKsTgMZ-yG77LU8vuBPyanQh3jvJk-Ce-dL215BpHDiA_fniEBjh499dd5uA5pnivxo9yKQ2LTmuX3TE52m0yLBi8_cgdvMwlamugFWFjV3Stpuv1AOHnuRDFOks5JzHx3oE",
+          "width": 4800
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/118144916441878220246\">Lea Lea</a>"
+          ],
+          "photo_reference": "ATKogpe-Qgnjo8MANGc-6-umeHrqhAyfoKmSCamsoXzWJ3vX4D4ZGI-bLoZWHuQBzTnDNgedvGPgctcNL0LzD8oJQ2ouSGIQy9_mrQCkO873WqHv7_yXIFdJVRvTyNHD-5JsgBs4YcXgwDgEJc9-rHif7F2Yib4JpAias5Yd4yxF9d6Xqqk7BK2Uxe5dXWNKqws-ZBGbDvBo5P7AesnFy5ENDa4iVOS20o32oZ7XLDSWGqgbnUV9e-rAGU2KMNsTeCSqxHwL4zwcMCywDOi2DUmGMxAC6ibXQ66_etVhrXufL_8znVMrKGbtW5Lpk4TftsDWs0LrLt0Rmmg_OVwYOBAIGZ-7odWkX9CpBSuqX3yrFEjgY1nKVARAS0IIdpB2NWhFAyLgCUXCSqEDvHvLsggW99KZ2ZP70FOjkLFhMxmSa6wP_Q",
+          "width": 1816
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "2100"
+            },
+            "open": {
+              "day": 0,
+              "time": "0700"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2100"
+            },
+            "open": {
+              "day": 1,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2100"
+            },
+            "open": {
+              "day": 2,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2100"
+            },
+            "open": {
+              "day": 3,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2100"
+            },
+            "open": {
+              "day": 4,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2100"
+            },
+            "open": {
+              "day": 5,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2100"
+            },
+            "open": {
+              "day": 6,
+              "time": "0700"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 9:00 PM",
+          "Tuesday: 9:00 AM – 9:00 PM",
+          "Wednesday: 9:00 AM – 9:00 PM",
+          "Thursday: 9:00 AM – 9:00 PM",
+          "Friday: 9:00 AM – 9:00 PM",
+          "Saturday: 7:00 AM – 9:00 PM",
+          "Sunday: 7:00 AM – 9:00 PM"
+        ]
+      },
+      "price_level": 1,
+      "editorial_summary": {
+        "language": "en",
+        "overview": "Snug counter-serve eatery with a patio & a salsa bar offering street tacos & other Mexican fare."
+      },
+      "url": "https://maps.google.com/?cid=10126795238954628152",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcomvDHbayeoKRZFAWJoyErwZyOVE43XcfmdO2FZZI9_kryV5CY_F95sFITgP19k5ZZ7UcWCOKtYn7T4yTmjIIvp9GeXAYMR6KS05A9hZqu5O7HF2lzCLJIMeCGOqwCCJ04QDZ6RG17lQyThrFF8KKszi9h68uxepofL__2z9xkjE8tzhe1IBsTr7ZreC0GXmUvlNfLGafRsev_om-CnmJpfKSieL-4XF3YLjwssjrODZa5_86BLTPdLAS19U3Nxuje86ok0ZOiy5Mfm1SbdEiG2gg1XQ_YknW5msPOv1I0hyBSLNJTpxQXyRuQedJn8txApFjEpo9erXSEjJweAQrS9KuApkpzMsS9w2paEI2d1altIz6Kzkg1vVieu379JY3RwhHi6-eT6-SzQ_bM7LOtjl4ZLNFBS8yB-fIj7MfhHaE&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpe-wE4AvLsUdqehZ9PTL1doLZa6ci5oT8Cy7-KNn0mlD3edkUahdz4vBWZu61v8KjUrLf_Sh00fBhKEvzZ3POsRfbQhOUOeK2DmGhyc_SHrMZ-8uNdm4Al5eHBMJPUvBCo1y53LtAqZQpE8gsJa0y3d2HuTQz-x5rwm_WTfYxxlonU-eaL8qV2hlVcjLVio-GYCz267KgWnnNcqM5HZ8QpO-bbNuywGxS-x7Tm5dkD28dLCFhSlHssudC79wxAHsGatIlrqcmYklPXH2agwKa0DTmMAxHns_NGmSIvg8Zf4_8dFaS8eXzPY0A4251h3I0A6rJ91Fw71mzT9ehKg5etR-xPDqjcRfCBBn2SAEARlBsb9wsH_JBgsHcHP4bMwm-9N-XQsyhikcvfkJJ12mjjlythWGs3bv06EO0Oo26jf67nUAEwPXvP4IrG1IA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdMXmW4fAtDz4PTWbe9PTBlRyePNleEwyv9a2_m9bPZXHjM9DVIyJVCtC4nfSoqmc6uIo_K0SMBKokj5cb5euWJcRmhjvVRpIk7FJrXwBJNUcjuCpiVQf6cQSfz923AaGuqXruuJtV3MB2cshxQURu-DHdsGSyuAgI97c16xZGubxda656kGxkA8JhmRl76Og03xfH31d6douO9wYRRMcKKXA_Z6tn4zsIAC53iTQsgQ3KGia8H0JTjDIJ9n8klrWVGySd7LiqM3EGFFVuPUq6fIupSAU00U-Gz0fwdjiNBmg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdCrMEFk7wB2__QATRo5gAuHTsaoa9jofoaLDl5kGL6CZ7MZN77EQr1EjT86-7JoYL5qxBwBCSQu1oLC628zVyybE-aBa-0CE7CEnzduV26RVzE5Wew2mhy2Tl-lQTX1j7y-rvjCvim1f_74c8Q1ItHAswcOJssAP74Z9KLnVPXWDJTmO3sc1h_jT_99CB974Yna7AZXiMVdCZ-TTzSLahG6mDUnvdDg7NX_0J6DG1tHoGxjcOHH2c7x35i1GF2nOtkEu4Z4H_loP-M47cb3m49mzh8E8METd_KiyOcar7YnB0t9BGUXA2n5kbNR058xpzAa_0Ek2_1FeG55U8fFA5nhOTNFVxUTy4s1ku2xhL0hOO8Ioo6R0I17OWrbW-kVV08K_Il0loiLBmjDuabPNydFc0ujqEgNql5ktCuuCY7VRk-CoG2lgXG0jtwBKc6&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcJIdCAmE7rwIXUoMfaxZRK-N9KqvzygvIv1QjYZoXokgQq7gSqTA0nhrdomjR-Oq1-1bhx0BGbVgTYXmVhfEa5bkHyshj8C8b-xDm9NuCDYeKMaQmKeaRoGX9v6vSIJ3unHtPahJTqBTj3MLvLI3nLIaZL7BHnexO3Uoj7_B0CbInTSSegHm3EphT9VpSEBQEwSziXOI1u0YjDhwBmVmt0Y6ODBfYzb1NKRHLzjlgzLlTCCfndrOCqjI3zC9TnpFpJi20S9XXLSYwXIAyDG33L8TTvCmZj8q6FqBj9b4FOM5S8jI52DiqKt_uPzN-stlWnrz1BqRTY2zu1cWRkomAWgP9D1SWyN2Iy12USaiPK9yVSYz6p8rQ5hsu2e0Ve-tzKV5ck02L6RhvJUU9p0ttvUuJKH1bGVPxAAKQ0qePmpQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpchc3bAwW_i8qas4PaBlwf5Lsi8C-EzbC605aOXBl7dvfKs1G8QLBynjrkRjcrIASevUCYfK00B53wSfpF9WFqAGYLElmshN_i_00Qkboqv7IUvaG8tcI6k6DsWl_22nAzsLlff-xfYhKwQMMkt0LlmNSDQuWTzIXyLm5UIXNH6w0tepybXFljgP9Lab0__8D3BcCuQaZ5gsTcfnY_BwO5KTuNQISVnND9prK93X6c1TfYGTxEi48K77ANohEzpTwNUm1tod1L-4R4UO0a3xPt2NrP0En1sVza8GXgvcV39nSKybP5yJXEJzjapYsMDItuK1GUj_vRKQQbBjYrzFL51RC85OxiswHYMGNXXLuQbTkh9tLkOF9u600yYLjRLFKwPvJvO4MTvDE_KMCsYFk1plKpG9NPoe6MMdpdZ5j1sx2UjuR-kHIg5inK2MDRD&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpd62a_PJ2TZ-aFtg1h92gI_8clleZwQl7bJMqNAtotjLLMlKl6ZFXD_CpPjIfw99-VcFvjarA0z8suXQug2XMjR3Zy-tDMuKYekgq3NYke0oEHUFvMU2EaADB9SF3hDMzuBogbBhUkbWtkS67WuYpo0K7N9dWqwQdiOGdUX0--byMfXy5H7emLRq52UV96UTPn_T8oPErZ-j4AKr1FWX788GvLmiwkLqN7DbqzafmC6jdTp1ZcbX84QhjIy9SygukSm4KwyZOZbARkFUswP_3r8HMLVIbW23gJcVzgZHO7mm__r1wtQXBgtBMmfeNR-oSkX_3PPHZFwW0_102jzcXsHWEQ8IcGme_LtPatqAlRI46ui1D--RcBcDn3CLp4HYJUL6T8q2zd82xgPAFIvi0y3VaSfU6qjwZnGt5sHqYaYB8m7&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdub0JivCjLZzsV7x-SxMLrEtQynICRZ50p4CFtGU_vkNpZxDYDDytUXDsSO-tviMIjWL9fGaq2eW75yJtB0bzYA0WymFAEGaXFYEj2Y-EmyEaYyVEEbRdVmDhYjlQbLp8weCwcFHUHHgZANCXGBys6pF6L7ohlnkxAZFD3UIoHj-4QOeJFFO2CwrLs4_EdU-hqbD-eqvJHAaGxU6o3M_NJbqrojR4g5RGi2gIZlGU87x0u3D5rvKnh0AEmnB7KGp-JrXjOjuWxwOIEgkxxuioWFBtftg58WlzIoPGCbRAichBCiFYbml_TNuLkZN40PU0h7NprtUuo5OComgJTcw7nvupCJkUYoCrpIUFy2QXcG4O8Py2R8HwtLG58d8OvW2GCeYhUsdvY0OIsVehIciUU82eqNLvBgk-P_v_mHYXTjRzM&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpd3VUU7yiTF-o3USq9qfaILQpeajdHqESgM6RoOirFOVwp5jBXGVYsNGy--npJUsE9xL6E--Sr2W5NWd4yk6K8Vu9xZr_qWO-0UnnQIjL3z6tJO9GR-JIxknL7ojCYk5XXQaXUOdhgTgdG-Rt4tE47z276wN8uO6cjVnLW7flQbDVZKasnP3xCDvfV5LjfncV3pE3e6YFJqDjBlS1fLE5YaNRkuyq8iU2qGsO6pR2DVatj16nhuhuX1JnZsOKgt6ssZMl9tf0EiLTFm_ksLkkvDEmjuNyLKcySZpcRyw0v4rpxkhIUtM9m_NTvjWhweBY8psH7CsQWVzgfSrAMR7bG7FISl7kh8Nn2XZ7IFI0uJl1GSdwNNnEBCoEI88SHf6RQ9ZF7fpkRb2S6i_jb4d5EvGfGlyASky5AMkE8JJv4&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcZ3mhkK593Dq6HeK4oCmVqw3PI5HSj7r2iCHo9ZVxz9wnumHdZp2yrp2KtE_-Y5_LaZh0-1E8BEecBXFzoPTzIjEPhOCjJQ1tIZgzHlP7T6LX8gtflD3fXLiZjJ4erFVrTLSjn0WuAe_bZdopyn_LLs45CL8VuDc3SPsfXQjdTV3t_lNd4oqSJgTgcqIHrTJa-oxRK3eEQGA6haOkAH7GJsxY4xDhxxaPgGrkbbg6fqZrxIwOO0x5b9OGAK865Hofhy3JH8XrLog0N128RGElbUf7apWJNw7xLVFxlyqtDSPcgymGrEXYI6biObeF5NC4qpJd45ZoL3kEpKJMaIAG5QjR4sUPaJxEtYUB0DBBvvyKNdV2wFuvPm7CUVwr9SYfvZKSED2LsraQuTsXNhhsNw4JsB7w2cKnm6rTYs4289w&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 51,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": true,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 88,
+      "totalReviews": 1178,
+      "averageRating": 4.4,
+      "sentimentBreakdown": {
+        "positive": 77,
+        "neutral": 6,
+        "negative": 17
+      },
+      "reviewSources": [
+        "Google Places API (Apify Enhanced)"
+      ],
+      "keyThemes": [
+        "Food Quality",
+        "Service",
+        "Atmosphere",
+        "Wait Time",
+        "Pricing",
+        "Portion Size",
+        "Location"
+      ],
+      "recentReviews": [
+        {
+          "rating": 1,
+          "text": "My boyfriend and I came here yesterday, 9/12, and got the carne asada burrito and carne asada torta. We both have horrible food poisoning now— avoid the carne asada.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "negative"
+        },
+        {
+          "rating": 5,
+          "text": "We love Bad Ass Tacos and don’t go out for ceviche or tacos anywhere else.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Good tacos! Nice little spot.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Food is always fresh and delicious. Staff is friendly and attentive! We always enjoy going to Bad Ass Tacos! 🌮",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Order 1 for two: Carne asada nachos is big enough for 2 adults!\nThis place is a family favorite!\nFast, fresh, and fun atmosphere. It’s popular for a reason, it’s delicious.   It’s one of the few places where we can take our adult kids and everyone leaves “horchatas happy”… and doesn’t break the budget.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 4,
+          "text": "everything good.so 😎 cool..No any source,maybe not back.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Just excellent!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "We love bad ass tacos and eat here several times a week! Always fresh and delicious 🙏❤️",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Hands down one of the best tacos & burritos in town",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        }
+      ],
+      "detailedReviews": [
+        {
+          "author": "Emma C",
+          "rating": 1,
+          "text": "My boyfriend and I came here yesterday, 9/12, and got the carne asada burrito and carne asada torta. We both have horrible food poisoning now— avoid the carne asada.",
+          "date": "2025-09-14T01:39:46.084Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t4VU0wODVjR2xHUkZSVFpFRjNZMDQ1U1RCclYyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKjpppgqDmS6afztyUyxkUg9RUlgxuubSlkHIAH5-kXDoChBg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108527242060667616256?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Tammy Frame",
+          "rating": 5,
+          "text": "We love Bad Ass Tacos and don’t go out for ceviche or tacos anywhere else.",
+          "date": "2025-09-09T02:40:06.279Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT210b1ZsOHRia0ZSTW5kaVkyMWhRakl0ZDBWRGVWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWl80Msg7Gy_h5j1d-uRLBB0kyMN7OQ8wwY06M8oKFOC8u3mSA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103004819529741576432?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Justin Salter",
+          "rating": 5,
+          "text": "Good tacos! Nice little spot.",
+          "date": "2025-09-06T18:22:10.707Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t4NlUwNWhTRlpVV1daNWRqbFZUR280WWkxSFRsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVKnI9kk1H8CJ9rVfRcyWytwVrPO7g2AGFtRBPAYKUuIZGKo2E=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117768273878748917857?hl=en",
+          "reviewerNumberOfReviews": 28,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Andrea Steele",
+          "rating": 5,
+          "text": "Food is always fresh and delicious. Staff is friendly and attentive! We always enjoy going to Bad Ass Tacos! 🌮",
+          "date": "2025-09-05T01:41:23.214Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNvOHJMLTl3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLyuIKu76AlCnl0mRmxkXP04ErHgBPoIQQUiFJfAvB_Dvkb=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102696980975478612455?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Marci Sargent",
+          "rating": 5,
+          "text": "Order 1 for two: Carne asada nachos is big enough for 2 adults!\nThis place is a family favorite!\nFast, fresh, and fun atmosphere. It’s popular for a reason, it’s delicious.   It’s one of the few places where we can take our adult kids and everyone leaves “horchatas happy”… and doesn’t break the budget.",
+          "date": "2025-09-02T20:31:06.798Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21SclZISXdMVmRRVWxGMGFVdERNbEY1UVdadk5WRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUlcFo_3J7R2T4hvOKOR1pdhN_cnLVnvi3ziLlAxAsyJ07vwEQ8=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115527201969271948335?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Railfan BNSF",
+          "rating": 4,
+          "text": "everything good.so 😎 cool..No any source,maybe not back.",
+          "date": "2025-09-01T02:49:48.315Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURqci1PQlZnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUFLefS_Bc-7GBnzAYXHj5Ilq8VVQfbdLlAI8rZFfgrXOWptSQRVg=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107941032551594430961?hl=en",
+          "reviewerNumberOfReviews": 169,
+          "sentiment": "positive"
+        },
+        {
+          "author": "ShelterDragon",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-28T17:53:23.510Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t4MFlVd3pNbmh4TVRNeVkyOU5UbVU1U0c5V01IYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ5KNcD7L_2QeyUfLiPqDqg_6CYnv-r_MQ4y4Rjf3QuuuZD=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101494484772623488670?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Adrian Gaines",
+          "rating": 5,
+          "text": "Just excellent!",
+          "date": "2025-08-28T03:29:21.870Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNnMGRxd1BBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXCgQXHbggAF_HUI5fj5O_aTK2xhPY4dID22X02ZYuSbxHbOm2j=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116764901395028223147?hl=en",
+          "reviewerNumberOfReviews": 55,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mary Delsohn",
+          "rating": 5,
+          "text": "We love bad ass tacos and eat here several times a week! Always fresh and delicious 🙏❤️",
+          "date": "2025-08-28T01:01:14.664Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNJeVlDWE1BEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUIQdtjdDCcYQvWYWCOLRXbbnBROpPlpDms0NjHHuLbUrN9RbIO=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107933778147142209483?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Arsh Kasturi",
+          "rating": 5,
+          "text": "Hands down one of the best tacos & burritos in town",
+          "date": "2025-08-27T22:59:51.315Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21Ob2MzbFlSSFJoV0dGcFFubG1TRWxhWkhCYWIxRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL2774E2FgGA7up8MDA_FogUpGkSmcl6frTPRWNUy4R9_QzEC8i=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106359548719024476567?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tania Obteshka",
+          "rating": 5,
+          "text": "The tacos are incredible, especially the short ribs.  Thank you for bringing them back!!",
+          "date": "2025-08-26T01:12:25.509Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pWbVN6VnZUMHg0VTFwUlZXMW9MVlpWUW0xTE5sRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIYpj6bI6HQOlOUBLOOfMWOUdV6W8isAK9XeGfI9hvP4ZwStw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116403332732823467412?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Eric Lozano",
+          "rating": 1,
+          "text": "No prices on the menu and the food is very bland. Also im pretty sure I got diarrhea after eating here.",
+          "date": "2025-08-25T04:28:42.493Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tjMFdHZHhNbXc1TVhCaVVWbEdSakZwZURBeFZVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVA5srCqCtkzG3Fwy7uDY5NrgUzbE1ndLt0ajRr75uFiBoubEpS=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107335949882231606563?hl=en",
+          "reviewerNumberOfReviews": 15,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Gail Lindemann",
+          "rating": 5,
+          "text": "Great food and all the staff is extremely friendly.",
+          "date": "2025-08-20T19:38:33.184Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tkQlN6VlNkbGxyYldsNU5IVldaVWg2Y1d4emMxRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJHyxPc2dFLtHeCxGS9qnhzIUkZipl8cTXdzU1JxI1q--3WmA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107274716179044708192?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "JJ Zertuche",
+          "rating": 5,
+          "text": "Placed a large online order and my food was ready quickly even though the restaurant was busy. They had it packaged and labeled and hot when I arrived. It traveled nicely and we enjoyed everything we ordered. Pastor tacos, short rib burrito and cochinira pibil were favorites but it was all delicious.",
+          "date": "2025-08-20T03:33:25.240Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xGcFVUSkdXV0pRYzJOcFYxZFlNVEJUYUVReFNVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU_-ZuI676APeke3IpWS9IeQzZU4vr2F3CvV1SuaWpdu4WnM5DU=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118173536754057515800?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Bryan",
+          "rating": 4,
+          "text": "",
+          "date": "2025-08-14T04:41:31.978Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21kd1JYVklPSE5KY0dseFkyNU1SMkY2UzFkR1RIYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXpn4ax4n8SzuICGWd_lf-rprbITlmmZjc1WiRulwbsjsLr-2HQ2A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117303348833426471481?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sergio Gonzalez",
+          "rating": 1,
+          "text": "Not only was it pricy for my first time being here.  But they got my ordered wrong from the meat to the onion.  This was not great.",
+          "date": "2025-08-10T21:37:23.986Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21KWWJVUm9WRlpXWmxneFNuUkNiamRJU2t0SGVWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJa2iQ_xPStDk_C0oUv75ZkyfuePY_PJfbUzf6M6Dmmq-5Xbg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101346620749560716868?hl=en",
+          "reviewerNumberOfReviews": 104,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Scott Adams",
+          "rating": 5,
+          "text": "Always friendly and always delicious. Their pibil is awesome and so is the lechon. Don’t really care for the pastor-dry and low on flavor.",
+          "date": "2025-08-10T02:44:38.519Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21OMlIwUlpOWHBHZWpGWk0yODJiekZPZDBkelpFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUuLUPnlAFTHcaFydo7GkEjTI5NlNFwBeq75scaKQkFHv8xoSG3=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109674432890823018982?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kelly Pantuso",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-09T21:26:16.230Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT214eE5XNTRZWEJ5Tkc4elZtVmxVRVpPY214VlFtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJnEAVhgFh5ZozvJOR_nWHzzj0eE4pL9ugsrZmhzeyDn_KBZQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114775908656006139164?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Monique J T-Leone",
+          "rating": 5,
+          "text": "Bad ass tacos has amazing food. The family always enjoys our meals. They never disappoint 😋",
+          "date": "2025-08-07T17:39:19.178Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21sT1NqQnpXRlIzZG5ZeFdVd3lNbll5TTFkTmRVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJgypIq0ATBAYypXVhKjjGQ0i8QhMEVqXxAoqkQAw_xjdZz7g=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114764750960867478395?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Christopher Tod",
+          "rating": 5,
+          "text": "Great Taco’s. 100 % my local go to.",
+          "date": "2025-08-05T23:09:59.694Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xWR0xURjVNMW8xZUZKUllqaHZVa0pRUjNWcWRYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKp2JQDERcA97NuCP9pbZIWPkuMyqzl-RfvovBjKTYjfr5OLl4=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107390699176942256185?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Allen Mowat",
+          "rating": 4,
+          "text": "Really good street tacos",
+          "date": "2025-08-01T19:47:16.171Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25weWFFNUdZM1pSZUVJeWVYbHBOekJqVWtaVlUzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWQzV77GGAQ-lVPyiO22JY7tU7mz-h2Xu8kjxq7t2xNTY3xuZBuaw=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116644147486964732236?hl=en",
+          "reviewerNumberOfReviews": 857,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tom Clark",
+          "rating": 4,
+          "text": "No free chips. But great tacos. They also have phenomenal Bad Ass chicken salad",
+          "date": "2025-07-31T20:11:05.291Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURIejRLSzd3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVg8hWhpGzaGGcGV-tL4J49aK0t945PuFYzQQqnMHSMXQ96QMVz=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109240407245948553844?hl=en",
+          "reviewerNumberOfReviews": 224,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Nicole Gonzalez",
+          "rating": 2,
+          "text": "Price is better than el Sanchito but food is about the same. NOT AUTHENTIC Mexican food.  Service is nice and cordial, atmosphere was lively but I carried out.  Bought a burrito but it was just as bad as el Sanchito. First and last for me.",
+          "date": "2025-07-28T23:02:36.847Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pNM1prTnNaREI0YTFsNVYwSXdSbmN6Tmxwa2NuYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXWh5Mq5HeCLVprgEJkikoyivXkqffKikqV5j3bvAfgqMO8u2y-=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103598016342013787362?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Cindy GUTIERREZ",
+          "rating": 5,
+          "text": "Love this place! Food is delicious and service is fast and friendly. Definitely one of my family’s go to!",
+          "date": "2025-07-26T00:42:44.094Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21ONVNsSXhlWE5yU0hwVloyeFVlV1ZtWkVwVFIzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXd5T2cL-1gTwG9pR75z2ysZvsA7pJJwv2YnkaHpx9icjrtP4Ww5A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106928002579982707274?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Andy Justice",
+          "rating": 4,
+          "text": "The food is very good, but I just can't get over the name especially when I want to take my kids there. Call me prude, but I am not.",
+          "date": "2025-07-19T00:06:00.463Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25kYU4zSktVWE54VVY5Vk5YTm1lbFpzVTBRMFduYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWclf8rSBgJMs6Qld73FyskKH8e-3bjkdy9qGbUY7XZLaQxa5d4=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112480574392020184347?hl=en",
+          "reviewerNumberOfReviews": 27,
+          "sentiment": "positive"
+        },
+        {
+          "author": "GH Campbell",
+          "rating": 4,
+          "text": "Nice spot in Thousand Oaks. Cozy atmosphere. Eating outside in covered area is decent. Tacos reasonably priced and taste was adequate. Nothing to write home about. Will try nachos and burritos if in the area again.",
+          "date": "2025-07-15T20:35:35.792Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xwaGVEVklRMUpuVjNZMUxWRm9hemhET1Uxc1kwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUhJ9nnEqjqyY_As5YIhfLsXp43qKnHbClIGdr6VRO-umr-xPI=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100245727363978277755?hl=en",
+          "reviewerNumberOfReviews": 33,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Krystal Gilliam",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-15T04:50:36.924Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21Sb01USmFZV3BZYUZrek1WOTVhblZoTUU0MFlXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLjDiiHkPp5-4BIy-_LF9nttZNWOdMHY-Ip1ZhPMUTfomqlTg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117753208339296755685?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Peter Eyermann",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-15T00:33:10.664Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2sxS1VrOVBhRXhrTkdOQ1dHTndTMjlXTmtzNVdrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKeli6bS1nIJhZLce8TSe5aCL9E_lskXAibvprfk1lt8UsZLw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111551924786763287856?hl=en",
+          "reviewerNumberOfReviews": 98,
+          "sentiment": "positive"
+        },
+        {
+          "author": "dejirlene Concha",
+          "rating": 5,
+          "text": "🌟🌟🌟🌟🌟\nNew favorite taco spot!\nI discovered this gem after church service on Sunday, and I’m so glad I did! I ordered the chilaquiles with green salsa, and WOW absolutely delicious. The flavors were fresh, vibrant, and perfectly balanced. You can tell everything is made with care. The staff was friendly, the atmosphere was casual and welcoming, and I can’t wait to go back to try more of the menu. Highly recommend if you’re in the area and craving authentic, flavorful Mexican food!",
+          "date": "2025-07-11T19:53:49.018Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21rNVZtWkJYek5KTjJ4RlNHdFZOVWxSVEVWd2IzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWdvuKOGY53_HPQvhxcTt5K9e03CH-U3gKXCU8ikq7dXiKLpYo=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103077204565833187517?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Minh “Crazyazzfoo” Nguyen",
+          "rating": 4,
+          "text": "",
+          "date": "2025-07-11T07:02:12.998Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pkdGNtZFdXVmxoY1hKRVV6bG9ZVmRuY0RKdlpHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXnAolofOaGyWaeZJUysDqGMsdctEUpMgEMxCbOB_IViUYUtZvWiQ=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108161114958404875772?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "roshanak jamei",
+          "rating": 1,
+          "text": "Unfortunately, I had a very disappointing experience. The food did not taste fresh at all and the quality was far below expectations. I wouldn’t recommend this place to others based on my visit.",
+          "date": "2025-07-08T21:01:55.368Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21aMWR6WldNRWhyY25WalJWaHlPRjloUkVoUk9VRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJqtJg6AAeStJMZJNn9FScDAUucbkAjKJr5it_NAlfb7XKRbQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107871139417635393599?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Eileen Rodriguez",
+          "rating": 5,
+          "text": "The service was amazing, and it’s a cute taco place I only came for breakfast and the green chilaquiles were crispy and tasty.",
+          "date": "2025-07-06T18:25:40.875Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21wbWIwaExjbEZEYUc1MFFWZHZUMGRGZFc1VFZuYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVnSZfzBcDhPm5AP6a_SVVFSv2b70Ay7qu71xZpEtTppr_iND8m=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102238867187823515537?hl=en",
+          "reviewerNumberOfReviews": 317,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Gary Hymes",
+          "rating": 4,
+          "text": "Tacos are excellent!!! Only wish they had Cerveza.",
+          "date": "2025-07-06T16:45:38.805Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pOS1kyTlRUMWt0UldSWmNYa3RZalJwYWtwU09XYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXF77fakNb0-niD9aTWt6YRgBjJB5xnOeUUD5EbL5aEG9G5BuTp=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108566192592574024895?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Herman Stark",
+          "rating": 1,
+          "text": "",
+          "date": "2025-06-30T23:03:09.738Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2taQmFIbGtPRkZrVlV0ek9VcHlNbTl0V0ZZeGNrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKWlwL0TxU_SzFjgg-Q26tdN3t1gfgldTQrU_yILfTrNhAZ4A=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103619409362234586830?hl=en",
+          "reviewerNumberOfReviews": 26,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Finely Finished",
+          "rating": 5,
+          "text": "Love this place! Great food and vibes!",
+          "date": "2025-06-29T22:33:06.797Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tWclRrRTBTVWRQWTA1dk1YTlRabGhYV25VelYwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWyciVNzmNjBtk6Qf6cY_huGgTpT0uRTld9M78cNGJTKOqzODlJ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109791928087824576645?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "ADU INFO",
+          "rating": 5,
+          "text": "Estos Tacos 🌮🌮 Me Encantan 🤩\n\nLos conocí hace años en un local a unas cuadras abajo\n\nDesde entonces me gustan y Los Recomiendo\n\nSon Una Explicación De Sabor 😝",
+          "date": "2025-06-28T11:44:09.273Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xCdWVESjBNMnBXVEV0MlpXaE9RWEZLU1drMVVGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW5voKp_8WWNKV-mNIDAZLpOTqSLN7OcAJymO8Nmpkby-lslHM=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117855366535440769450?hl=en",
+          "reviewerNumberOfReviews": 28,
+          "sentiment": "positive"
+        },
+        {
+          "author": "steve hollander",
+          "rating": 5,
+          "text": "always top notch. Authentic street tacos, solid food. Fair price. And gluten free",
+          "date": "2025-06-22T05:19:51.488Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pkdlpsTnhTRTA1UVdVM016ZDZNVkE1YUhabE1rRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJDo6BOtIFcKcQ-mdcHy14X2y5KAZ_r83M8PRH10HwMLDXjdQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101149592857662373282?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Paul Rivas",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-15T03:30:36.638Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNnMmFLM01BEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWpLkN0EBe2nuFVkwO3mRSoG3aiFoX3bqo2DmhgPzncHuw0Dzam0w=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104339841492385802722?hl=en",
+          "reviewerNumberOfReviews": 330,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Shan Gill",
+          "rating": 2,
+          "text": "",
+          "date": "2025-06-13T00:16:43.653Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VNcjgyS0NraGFPY0R3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUh_n8DR98x6XYXOIKcyrAX6bEbevZn-191rnxtUDBrSLtgZYsO=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101537406145593500545?hl=en",
+          "reviewerNumberOfReviews": 31,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Xiomara Gomez",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-03T04:30:28.995Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VPYmotLWlYcC0tNmhBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK7eax5P_y6-qbgEr3w3i0O6KguwAsT4g2ryhnUg3WY_5jq9HZF=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117126863087411824458?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "S.Lee Harris",
+          "rating": 5,
+          "text": "The food was very good I had the chicken nachos their was a lot of chicken on the nachos",
+          "date": "2025-05-27T18:03:24.443Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VKZjB4LWJxM182SEZBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKszwsL2KzNjipY3bRN_FD7nXSJyZcxXVyO-yE-Wx7L1LMFvg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117580083747054540879?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jessica Barrera",
+          "rating": 2,
+          "text": "The birria burrito tastes like something from a low-income public school cafeteria or it was frozen and just heated it up for my order. It also tasted like I was eating mostly salt and oil. Didn't provide the hot sauce I asked for. The horchata is on the low end of quality. Not terrible, but not that great either. Just not good at all. The quality of this meal should have been around $5, not $15. Do yourself a favor and eat some where else that serves real Mexican food, not this white-washed nonsense.",
+          "date": "2025-05-24T19:44:53.549Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VLR1IxUFN1dnJPSmxBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUBgfLiIaZr9c2SPmRE179bgImrFGQ2zxS6DWyLVPuHuupbNV4R-A=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105250618118905646860?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Jimmy Moscoso",
+          "rating": 5,
+          "text": "The best street tacos around!  I go here about once a week for lunch. Food is always delicious and the service is very friendly!  I love BAST!",
+          "date": "2025-05-22T20:10:13.919Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJYloxcmVFNV9taEJnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWsIW8ahTNpuykjezTAVuRXqxtGYO_-Miu3OmPp02uEwM9VxfLi=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116219140535903905981?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Fidel Hernández",
+          "rating": 5,
+          "text": "Buen lugar para taquear.",
+          "date": "2025-05-17T00:22:51.279Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNyemVxUWZ3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL8jpfnSSFwVuNVo1nTKJjjman2YbE8r_xmNoNGNem6DuNkjA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112909256389144197181?hl=en",
+          "reviewerNumberOfReviews": 104,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jason Albaeck",
+          "rating": 5,
+          "text": "Great tasting and hearty portions .",
+          "date": "2025-05-14T19:18:48.488Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VOSER5UGFCcEtUTDRnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKdkx0CXBVnDwREkLKltTqflgv93BYP7lTwHxq_IxdB1OOdDQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112095123357194191387?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Angel O",
+          "rating": 5,
+          "text": "The tacos were bomb. I had the Pollo Asado and the chorizo and papas. The salsa was really good and this is the best Horchata I've had . And to top it off there was practically no wait for my food.",
+          "date": "2025-05-08T20:16:42.509Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VMWC02OUR1My1hRG93RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX5jkEJur1DP-RS7cJHpkcHdc8GXpK7s93C23rBZj_4EDpxRPw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117838513676386262595?hl=en",
+          "reviewerNumberOfReviews": 33,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Chad Crispin",
+          "rating": 5,
+          "text": "",
+          "date": "2025-05-04T01:06:05.984Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNZcHVfanpBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUTbxF_7ilHg00RND_gMoLMLh-xD2M3pJUA399Y37zTFJM3bqK7=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110659547310978917679?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Steve Delsohn",
+          "rating": 5,
+          "text": "Best restaurant in the Thousand Oaks area.  Excellent every time.",
+          "date": "2025-04-29T02:44:54.863Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURvNi02c25BRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXbzMQMVNkpcCLi5KtsuPAW3of5-4OT69BhD3e-6444y44lSoPv=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101974098219178138224?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Nick Llanos",
+          "rating": 5,
+          "text": "",
+          "date": "2025-04-28T22:37:17.654Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURveTdiakxBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWr4ftxuVRZbTqmBOU0buFTB6WbPpHOSafxS6xaeld6-P_tFL-tQw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103735334246164165900?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jaimene Washington",
+          "rating": 2,
+          "text": "The food is good not great, I liked the potato taco, but overall it’s not the best option anymore. Tacos are expensive for what you get (about $3 for a small potato taco), and they charge extra for salsa if you want more than the one they give you for the entire meal. They also charge a fee if you pay with a credit card, so it’s better to bring cash. The staff often seem more focused on talking to each other than greeting customers, and there are a lot of strict rules — including no dogs allowed even on the outdoor patio and the door that is facing the parking lot is exit only- and yes they care. They want you to walk to the sidewalk and go in.  It just feels awkward / not super welcoming.",
+          "date": "2025-04-27T23:00:16.296Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURvM2I3c09REAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUR90ip2vIQ-0N4Tk1JTa1BXSzvYVgh2_NCaWGKaZH0OpnDIsRH=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114433072000403335725?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "negative"
+        },
+        {
+          "author": "C Cendejas",
+          "rating": 5,
+          "text": "Yummy!!!",
+          "date": "2025-04-19T20:43:53.961Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNvODkzSDR3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI25XNknNm21Buym1gHSpZRsl8E-aiy5GD5ErP3EQNK3fEojQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113348847380633606026?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "David Mora",
+          "rating": 5,
+          "text": "There were heaters outside so eating there was comfortable. Service was great. Polite n friendly staff with smiles from when I walked in till I left.  I had the quesabirria tacos n can honestly say they were the BEST I'VE EVER HAD. Tortilla held up to the last bite. They know what they're doing. I'm definitely coming back n highly recommend you try it if you haven't already.",
+          "date": "2025-04-18T20:43:27.964Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNvMWU3eUxnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJY3WXJonSYxotGUIsHMGcgplKB5SzKWGfKU8fAZ9Jr1XDM1w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103771699168084044919?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "L C",
+          "rating": 4,
+          "text": "Chicken and the shrimp tacos were good. But the beans were the absolute worst I have ever tasted from a Mexican food restaurant. They seemed to be pinto beans,although the had some chile in them they were flavorless otherwise. Please for the love of beans! Do better.",
+          "date": "2025-04-16T13:53:28.263Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNvdXJLd1dnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLEGhMLJOy1h7_A_VvAK6z5E38nMRFOY51Bmirx0RCu9pUZgA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110960218473249972991?hl=en",
+          "reviewerNumberOfReviews": 102,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Roberta Thompson",
+          "rating": 4,
+          "text": "they have great tacos and they also serve amazing coffee",
+          "date": "2025-04-15T22:04:42.294Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNva3VhTXNRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU3HtJvPAiaOBJDJ1XY480bejSDQ77FxyKZWUbFnm-isU9Db8w=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110955693793650801695?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Skylar Dubrow",
+          "rating": 5,
+          "text": "Always a good experience at Bad Ass Tacos👍",
+          "date": "2025-04-12T03:11:44.582Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURJamZ2Y1J3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVmHozU7mBX-I3xlqAt9FdTkRmU16bHKQoVUqlsNeOjd4Hxtk1T=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108544109835419292175?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "GM B",
+          "rating": 5,
+          "text": "Our first at BadAss Street Tacos. We both ordered burritos. Wife’s was with chicken, mine was with carne asada & green sauce. Simply delicious!\nI got the watermelon agua fresca and it was perfect. The flavor was perfect and not oversweet like others that I’ve had. In fact, I’m not sure if they put any sugar in this one because it actually tasted natural. We’ll be back soon!",
+          "date": "2025-04-09T20:46:27.874Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURJenZDek9nEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLtGBuQdZDEz_794tJN9jAFA5N0LhNIYux4ANu2qnUVdxJ7Bw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110554765999011976558?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Terri Carr",
+          "rating": 5,
+          "text": "",
+          "date": "2025-04-05T23:53:58.222Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNJX19IamtnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV2edeh3kaqTcIHbxOywPWsGIj5V3oSqN86aRxsgouv27flANM=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104454081077131241318?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Eran Navick",
+          "rating": 5,
+          "text": "Perfect taste and freshness, reasonably priced, and quick deliveries. My go-to when I want street tacos.",
+          "date": "2025-04-02T22:07:18.418Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNJc2NmVVNREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK8_UrvHZHkif5LClnsDcYpxiozCL74rorPWeYiLkMIiONfNQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113947101404682650853?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Bob Bielak",
+          "rating": 5,
+          "text": "Great food. Good service. Easy ordering.",
+          "date": "2025-04-02T02:10:29.000Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNJcm9hMmJnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIcSA0inku4JF2QOMkMQj1hEGGeFsJFhRjzoQ0ibdl8RdLbBQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118316265594777391493?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "David Adams",
+          "rating": 5,
+          "text": "The name says it all!",
+          "date": "2025-03-30T21:07:56.791Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNJak03NWZBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJIpWyrsCO2ZBk_f-P9LEEfx_mKO5xszs9cKQ1HtC9T4PFErA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118051718810975273982?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tara Casas",
+          "rating": 5,
+          "text": "Love their street tacos, chorizo and papas is my fave. My kids love the carne asada and it’s family friendly so we enjoy sitting at the long tables on the porch. More faves are their homemade aquas frescas, try jamaica or\nwatermelon. New to menu is quesa birria. Quesadilla with very flavorful slow cooked beef and broth for dipping or sipping. Yum.",
+          "date": "2025-03-29T21:29:51.923Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNJcU43b2xRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjURvnrZYfXJP7Sgn4oVlm2whE03GM_jE1BlQZ_Il2m--oe2QHs=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114713842799101159530?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tanita Leets",
+          "rating": 5,
+          "text": "Love this place. Consistent food quality. Quick easy ordering takeout. Orders are always correct. Staff is nice, hard working and appreciative of their customer.",
+          "date": "2025-03-28T02:02:36.577Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUR3NDllV1h3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX4tTccUoFXeWtPyJ9KSTdEQzK9geU3UL4Mh0G7qXmwMvF5MZJmqQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117897485839630532151?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Hudson Friedman",
+          "rating": 5,
+          "text": "",
+          "date": "2025-03-26T03:48:05.445Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUR3dnJDbzZ3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVPCzsVyHdPV9nthvHKrqBItgm7W3dsKdbXAXjGavLrDrR_V3NU=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108942353506685168297?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Lloyd Reed Jr",
+          "rating": 4,
+          "text": "Bad Ass Tacos is a really simple and good quality food. Moderately priced, considering the area well worth a try.",
+          "date": "2025-03-23T00:05:08.957Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUR3OE9YZ1dBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWNdZsEmDu9G9naCSs0HfDfnHGk4yLz8eG9vb7EItsw5KEi3FCvCw=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103155316646641410731?hl=en",
+          "reviewerNumberOfReviews": 161,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tammy Frame",
+          "rating": 5,
+          "text": "It was fantastic and seamless process. Will be back again soon.",
+          "date": "2025-03-15T15:49:12.060Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURRMzlfd0dREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU6i2qNVqTMriFEJAIkhMLxrBxUsAjDF6Z-0aa8wlm0f2ca3aJ7=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115612131863651460895?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Brian Ledis",
+          "rating": 5,
+          "text": "Amazing street tacos, also the torta sandwich is really good. Simple recipes but done so well.",
+          "date": "2025-03-11T23:14:25.919Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURReVlpa1p3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWuqIGkCnJotmPSW4GAO6g4FA3r5pKi8_XpxlHweABIZHCryTk=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111678486287041427831?hl=en",
+          "reviewerNumberOfReviews": 69,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Joe Danchisko",
+          "rating": 3,
+          "text": "Prices online don’t reflect what I paid in store. Example ceviche plate says $9.25 but I paid close to $13. In store prices are shown on the board.",
+          "date": "2025-03-09T22:07:44.338Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURRX0t2SGRBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLZBxRnKNV11nbwyNjGZZWfbeDWP1eIodZdujV8vn9JfVWy3g=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112396142777322994072?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Jason Johnson",
+          "rating": 5,
+          "text": "Always a good spot for tacos!",
+          "date": "2025-03-03T23:51:08.912Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNRcG95Ull3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU-3tjq64D-Vh5H5ZKlnQjf64teY4Rey5HYLtPJeqo2MU7MhIO6FA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110810881037324678922?hl=en",
+          "reviewerNumberOfReviews": 51,
+          "sentiment": "positive"
+        },
+        {
+          "author": "kate",
+          "rating": 1,
+          "text": "i’m like 90% sure i got food poisoning from here",
+          "date": "2025-02-27T22:25:11.239Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURnLTktSURREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX9bPokw5aqk1xV9pUU7XGZBrqrSOf2wwoD7Z2QJxlULeTc-pE=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106746888515972660434?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Ryan Pillion",
+          "rating": 3,
+          "text": "",
+          "date": "2025-02-06T20:07:24.647Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURBMlBxTGJ3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWxd5pRHM7AquUw-AyI0ijrJxjxOnzrLTki-zFh_9WN0VZ9rw_Jvw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110363915515794148581?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Danielle McClish",
+          "rating": 4,
+          "text": "",
+          "date": "2025-01-18T17:01:35.782Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNfby1tZTNRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXd1cFQCS32162GwEgQ2aCRvC0y5TyW89tEA2ITcSwkZleK3EBFyQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111659082678771426965?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jaisen Desai",
+          "rating": 4,
+          "text": "Bad ass tacos 🌮 are badass alright! They come in 9 flavours and have other foods such as burritos and quesadillas. The tacos melt in your mouth and are worth buying. For the atmosphere, there is a back section with terrible seating and no environment. However, if you sit in the seats to the front of the shop, the view is gorgeous. Finally, the service. This service was good at first before becoming unreliable and bad, not understanding social cues.",
+          "date": "2025-01-11T01:39:45.787Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURmOS02elZ3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW8to5nn5UqFuYBTaak2WueAZK2cvIBecIN-0ViewAthkjBaLc=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108185169630063717094?hl=en",
+          "reviewerNumberOfReviews": 44,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ron Skocypec",
+          "rating": 5,
+          "text": "",
+          "date": "2025-01-01T07:31:34.383Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNmNDVmWGV3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKUMlaWQ42VCtTmCKvtyKZdyIZqTJDOT5qdrGreHnZf1PPiuQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117947347152580859826?hl=en",
+          "reviewerNumberOfReviews": 49,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Hejsan Svejsan",
+          "rating": 5,
+          "text": "Very tasty and good price for tacos",
+          "date": "2024-12-30T22:59:19.935Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNmeGFpUnZnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLb6FWBlU3WnnkvDg_8xCMH1Pt1-_rfz8-OI8LrFbxBv1Khcw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117708585204978339070?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Brandy Alexander",
+          "rating": 3,
+          "text": "Maybe the smallest, most expensive burrito I've ever had.  Taste was good, but not near enough to compensate.  It's probably just an expensive part of town.  I've heard about this place and wanted to try it, but probably won't return.  Service was fine.",
+          "date": "2024-12-27T21:05:16.263Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNmaXQ3c2J3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVlCmpEvB1og_jNrv_FUxmBAbEX_5h2yHFquuwqpLjKarI0_RX1=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107411692844956685928?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Rog",
+          "rating": 3,
+          "text": "Overall this was  slightly better than say Baja Fresh or other chain “taco/ burrito ” food. The ingredients were fresh yes but zero flavor in the carne asada, add that to a mix of ingredients in the burrito, I’m not sure how much carne was in it. We also tried the birria tacos, a bit more flavor yea but still not on a wow level.\n\nService was great and it’s a cool setup but $24 plus tip for a burrito and 2 tacos, I will keep searching the area.",
+          "date": "2024-12-27T18:51:36.823Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNmOHRUZFd3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUt7l26I8GTQqiZzTashi9e7ASSwLXKZmVil57eeSeSqWonwNVN=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100918359359816244291?hl=en",
+          "reviewerNumberOfReviews": 455,
+          "sentiment": "positive"
+        },
+        {
+          "author": "J Dorman",
+          "rating": 1,
+          "text": "Most of the time the food is definitely good. Unfortunately every time I come the vibe of the workers is not friendly at all. Today the guy who was bringing out the food had an excellent attitude and vibe. When he brought my daughter her food she took a couple bites and as she realized it was the wrong burrito and at the same time, he came out and said it was the wrong burrito.  He offered the correct burrito and she asked if she could just have the burrito on the next visit. He told her when she was done  to come inside and give her info. A while later another server came out and brought the burrito. We explained everything that previously happened and she went in to talk to the owner. The owner was not customer friendly and neither honored what the original server agreed to and did not give the already made burrito.  Besides today's incident I will say they are never very friendly when taking orders which is a shame because the food is decent but they just kill the experience. I keep saying I won't go back and end up there. After today we won't be going back. The owner is not nice or customer friendly.",
+          "date": "2024-12-20T06:47:03.684Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUR2LXJxcC1RRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVHN0UORBefP0rRHbIkcpAH8O2Yny8DySmEd-Iilb1jSC90zl0=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107339303813135608077?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "negative"
+        },
+        {
+          "author": "J. D.",
+          "rating": 1,
+          "text": "",
+          "date": "2024-12-20T06:39:25.664Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR2bHBpUGZREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVOzVmdMnCp6bHFTAuCcJd8JmFvtLP5M80XKFClomzZ2r34TU5k=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111365055869795639691?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "negative"
+        },
+        {
+          "author": "CJ Colbert",
+          "rating": 2,
+          "text": "I used to come 3 times a week because it was great and the people were amazing, but the price of a single burrito has gone up $4 in less than 2 years, it's ridiculous and the quality isn't worth $14, I'm incredibly sad.",
+          "date": "2024-12-07T02:30:40.368Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUN2b0pEMElBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVPp3UOKAnzvvpFEcgKy15gRtdQT3YeWNvTufST1AF6852LmxClbQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103427407346082304372?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Salvador DC",
+          "rating": 5,
+          "text": "Los tacos de lechón están buenísimos!",
+          "date": "2024-12-06T21:48:50.559Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURQXzRpTF9RRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJdPboylDruklq-G4YqRFia0ZWGomx1b3Yf9PuaoRXri_dDdg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106816924157344528407?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "J W",
+          "rating": 5,
+          "text": "",
+          "date": "2024-11-15T15:51:34.965Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQzX3VHaXNRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK08uv_w5WVNcXehsqZRvvOv8cjnSuDYpJ9sElegGsMVqvCoA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116779464597795963277?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "dawn ott",
+          "rating": 4,
+          "text": "",
+          "date": "2024-11-10T04:29:30.308Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUMzMThhbFBnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLbLg-CptoE8PFnzEOBT_b9Qp7hTYwuRXy0LqT0CdSwuHC65g=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116002103020725009104?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Brittney Lee",
+          "rating": 1,
+          "text": "Easily the worst $10 I have ever spent. Dry bland unseasoned Caucasian tacos is what it should really be named. The horchata was putrid. I can’t this taste out of mouth",
+          "date": "2024-10-22T00:02:25.332Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNYajZfaU9BEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK6GYZezBAYxSOfqu1jliY4w4YYum97-vPthl3I4d9YSScIQA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101484715606415237989?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "negative"
+        },
+        {
+          "author": "blackcrownep",
+          "rating": 5,
+          "text": "The Carne asada tacos were super good. Nice thick cuts of steak, fresh salsa, warm corn tortillas. They have cool little patio area.",
+          "date": "2024-10-21T03:32:15.354Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNYLThYUk1nEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW3a31GMWSE-xhbWQYDlfEeUxpUrWd6yd0PG-zh2RZidultzbea=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112068053754433089127?hl=en",
+          "reviewerNumberOfReviews": 47,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Naji Khalil",
+          "rating": 4,
+          "text": "Pretty good tacos! If you are like me and love salsa on your tacos, then know they are very stingy with giving you salsas. They used to have a self serve salsa bar, but they got rid of it during Covid. That’s the only reason I haven’t been back.",
+          "date": "2024-10-18T20:04:21.448Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNYNWZxVXZBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI2HRiF6vP9KjpFstjP9Yv94KyRddO0TYAZy__CqTsTztlrqg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109530830293438499161?hl=en",
+          "reviewerNumberOfReviews": 25,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Gil By The Beach",
+          "rating": 3,
+          "text": "food is ok. Torta de lengua was good,",
+          "date": "2024-10-17T19:45:01.390Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNYc2ItbUF3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW7vEJKImyQetY5okyLnQR4vo5_BNL6eRsrDGaHdVeBgsIDVNcV=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106244113046995836466?hl=en",
+          "reviewerNumberOfReviews": 355,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Erik J",
+          "rating": 5,
+          "text": "",
+          "date": "2024-10-08T00:38:18.033Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURucFlpdzJRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIZzhopHCvkIZbHjJ6jb-YQA5Dtbr5As01XRD-KhboZ5NCUxw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111623130699035689350?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Robert Gray",
+          "rating": 4,
+          "text": "Crazy good!!  The nachos were soooo on point!!!",
+          "date": "2024-10-07T19:50:38.014Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURuaGNxTTlBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK0BZ_jsyUQm-xbKMhoqS6eqZffbayEYmeKi9BPF_xGShKleA=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110511034963219851137?hl=en",
+          "reviewerNumberOfReviews": 246,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ken Gladstone",
+          "rating": 5,
+          "text": "Inexpensive and delicious. And now they take credit cards and they are open longer hours than when they were down the street",
+          "date": "2024-10-05T20:35:18.656Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNRa3RhZ21BRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUB0_mpwdMUzzbelADni_N-AOrU8yufMiPzN03TK3-pNmdM1_bJfA=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108517398842379847321?hl=en",
+          "reviewerNumberOfReviews": 93,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Caption Legal Scheduling",
+          "rating": 1,
+          "text": "Got my veggie burrito went home and the tortilla was soggy and about a cup of liquid  poured out when I went to take a bite. This place is disgusting. Go get some real Mexican food somewhere else. Trust me this place isn’t good",
+          "date": "2024-10-04T21:01:42.812Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURuOHRiRVdnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIN16tfD3xqQ4DdJXky_76A2f90VYPFs14W4s-LzeLzNI1-UQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103130997471564104922?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "negative"
+        },
+        {
+          "author": "H Streuding",
+          "rating": 5,
+          "text": "Best tacos in Southern California... soooo good, the quality of the ingredients and the care of the staff is evident.",
+          "date": "2024-10-01T01:46:01.227Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNuMV9tTURnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJLdLnbJ1LZ7rF3oxyTx80NIG1xqcknO6EFbWjYl-g3BKoipQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113388513129375768873?hl=en",
+          "reviewerNumberOfReviews": 22,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Katie Bonar",
+          "rating": 5,
+          "text": "Personally, I very much like their breakfast burritos, and the bean ,and cheese burritos as well.  It's a special occasion for me",
+          "date": "2024-09-27T20:12:30.995Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNuaFpMOFhnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIXSNaYDUXE_djQY6J2Rj3cJkTYbxL5NHbxJSEOFMiAGu5uUw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101633507008217416377?hl=en",
+          "reviewerNumberOfReviews": 34,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ben Dover",
+          "rating": 1,
+          "text": "Rude staff wouldn't give me any sauces when I bought 6 tacos. Extremely stingy and place was empty. No chips, no sauces, and overpriced.",
+          "date": "2024-09-27T03:48:50.212Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNuMGNMaVJnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIOHvs3MQUf4HYQcCjDDCt1geRhnNbV2JCmCqUV_tbAupgqiw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105625742111107415392?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Sean Calhoun",
+          "rating": 3,
+          "text": "This should be a wonderful spot.  I'm not from around here.  In the area for work.  Saw this place, thought I'd try the tacos.\nSuch a nice looking spot!.   It has what I was looking for to relax, do some computer work and enjoy a meal.  Well, here is the prob;\n-  Real tacos not sold here.  Only the tiny street tacos\n-  price way too high for street tacos.  Should be $1.50 each but they are nearly $4 plus each\n-  no wifi\n-  no power outlets for computer\n-  no paper towels in bathroom\n-  no beer to enjoy while waiting\n-  food has no flavor.  .I mean just add some salt!  Nothing!!\n-  salsa is very watery and no flavor\n\nSo, 7 tiny tacos...no drink...$23.\nAs I sit here, I see a lunch spit across the street.  I think I should have gone there.",
+          "date": "2024-09-19T22:54:32.839Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURIaTVfVFRnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVTSopcvis84FeGArjK42VoE106VmzM9m7lvPGAI62ZHjKvVIhI=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108249302108509995538?hl=en",
+          "reviewerNumberOfReviews": 32,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Sandra M",
+          "rating": 5,
+          "text": "",
+          "date": "2024-09-17T20:59:26.561Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURIMmZYN2p3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUGjW-HvmVpH9BMeYYrNkZQxSjD2_PputTCKXbipHmJ7Y7BEocrpA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100837054427306418296?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Alafate Adili",
+          "rating": 5,
+          "text": "",
+          "date": "2024-09-10T01:22:55.550Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNIMTdfZENREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJsufw9ziP5FJwgIscw2OMn04F-d_exh7FtkcNU3VNHsTHYng=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105377697109160209648?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Johnny O",
+          "rating": 5,
+          "text": "Good quick service. Staff patient and willing to discuss options, was my first time - I'll be back 😋",
+          "date": "2024-09-07T19:23:17.402Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNIN1pmUHFRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKfUwsrcCsVic75AwC18HhuvS37v-5U2Xln6gUzeS96qSL2dg=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113071811751619943146?hl=en",
+          "reviewerNumberOfReviews": 188,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Danielle Miller",
+          "rating": 5,
+          "text": "",
+          "date": "2024-08-31T18:56:19.480Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNIbU96bVVREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKQNVmcPCu0PCYTpO0FhwHXTTF32N6UPKh4ambQWLkAt6GHxA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101909321957027765813?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "José González",
+          "rating": 1,
+          "text": "Store hours at their location clearly states that they close at 11 PM. We stopped by at 10:30 PM, they were locked up and the employees waved at us saying they were closed. So they closed 30 minutes before closing time??",
+          "date": "2024-08-31T05:42:47.015Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNIMExmZ0JBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWiNwElVVrHYRbXHILRqMm8Lq6zaAs-_7JV5wYHL32_pnpzUtHq=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112882650411011627072?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Edwing Eduardo Flores Sosa",
+          "rating": 5,
+          "text": "",
+          "date": "2024-08-28T21:29:18.170Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQ3Mi1yaHRnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWdTPZA3L7DjiNrhLMkA6mUSyznwe_vS0Pi110YVgbfRtUNKLC_=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113536797060897911683?hl=en",
+          "reviewerNumberOfReviews": 46,
+          "sentiment": "positive"
+        }
+      ],
+      "customerMoodAnalysis": {
+        "overallMood": "satisfied",
+        "sentimentSummary": "Customers have positive experiences overall. Your 4.1/5 rating from 100 recent reviews shows solid satisfaction with room for growth.",
+        "sentimentDistribution": {
+          "ecstatic": 7,
+          "delighted": 57,
+          "satisfied": 19,
+          "neutral": 0,
+          "frustrated": 4,
+          "disappointed": 11,
+          "angry": 2
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "food quality",
+            "mentions": 41
+          },
+          {
+            "theme": "service excellence",
+            "mentions": 14
+          },
+          {
+            "theme": "speed of service",
+            "mentions": 8
+          },
+          {
+            "theme": "atmosphere",
+            "mentions": 7
+          },
+          {
+            "theme": "overpriced",
+            "mentions": 5
+          },
+          {
+            "theme": "slow service",
+            "mentions": 4
+          },
+          {
+            "theme": "poor service",
+            "mentions": 2
+          },
+          {
+            "theme": "value for money",
+            "mentions": 1
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 18,
+          "satisfaction": 47,
+          "disappointment": 0,
+          "frustration": 0,
+          "anger": 2
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "Customers consistently praise the freshness and deliciousness of the food at Bad Ass Tacos, making it a standout choice for tacos and ceviche. - social media marketing can showcase this strength",
+            "The fast and friendly service at Bad Ass Tacos is a major draw, ensuring a pleasant dining experience even during busy times. - review management can highlight this positive aspect",
+            "The restaurant's ability to handle large orders quickly and efficiently, even when busy, is highly appreciated by customers. - Boostly marketing services can amplify this"
+          ],
+          "improvementOpportunities": [
+            "Negative reviews and reputation issues, particularly related to food quality and food poisoning concerns - review management can address this concern",
+            "Lack of atmosphere/ambiance awareness, especially regarding seating and service inconsistencies - social media marketing can improve this area",
+            "Price discrepancies and lack of menu transparency - SEO services can solve this visibility issue"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 100,
+          "averageRating": 4.1,
+          "ratingDistribution": {
+            "1": 12,
+            "2": 5,
+            "3": 6,
+            "4": 16,
+            "5": 61
+          },
+          "sentimentTrends": {
+            "trend": "improving",
+            "recentAverageRating": 4.5,
+            "previousAverageRating": 4,
+            "recentReviewsCount": 10
+          }
+        }
+      },
+      "examples": {
+        "positive": [
+          {
+            "author": "Tammy Frame",
+            "rating": 5,
+            "text": "We love Bad Ass Tacos and don’t go out for ceviche or tacos anywhere else.",
+            "date": "2025-09-09T02:40:06.279Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT210b1ZsOHRia0ZSTW5kaVkyMWhRakl0ZDBWRGVWRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWl80Msg7Gy_h5j1d-uRLBB0kyMN7OQ8wwY06M8oKFOC8u3mSA=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/103004819529741576432?hl=en",
+            "reviewerNumberOfReviews": 1
+          },
+          {
+            "author": "Justin Salter",
+            "rating": 5,
+            "text": "Good tacos! Nice little spot.",
+            "date": "2025-09-06T18:22:10.707Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t4NlUwNWhTRlpVV1daNWRqbFZUR280WWkxSFRsRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVKnI9kk1H8CJ9rVfRcyWytwVrPO7g2AGFtRBPAYKUuIZGKo2E=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/117768273878748917857?hl=en",
+            "reviewerNumberOfReviews": 28
+          },
+          {
+            "author": "Andrea Steele",
+            "rating": 5,
+            "text": "Food is always fresh and delicious. Staff is friendly and attentive! We always enjoy going to Bad Ass Tacos! 🌮",
+            "date": "2025-09-05T01:41:23.214Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNvOHJMLTl3RRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLyuIKu76AlCnl0mRmxkXP04ErHgBPoIQQUiFJfAvB_Dvkb=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/102696980975478612455?hl=en",
+            "reviewerNumberOfReviews": 5
+          }
+        ],
+        "neutral": [
+          {
+            "author": "Joe Danchisko",
+            "rating": 3,
+            "text": "Prices online don’t reflect what I paid in store. Example ceviche plate says $9.25 but I paid close to $13. In store prices are shown on the board.",
+            "date": "2025-03-09T22:07:44.338Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURRX0t2SGRBEAE",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLZBxRnKNV11nbwyNjGZZWfbeDWP1eIodZdujV8vn9JfVWy3g=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/112396142777322994072?hl=en",
+            "reviewerNumberOfReviews": 6
+          },
+          {
+            "author": "Ryan Pillion",
+            "rating": 3,
+            "text": "",
+            "date": "2025-02-06T20:07:24.647Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURBMlBxTGJ3EAE",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWxd5pRHM7AquUw-AyI0ijrJxjxOnzrLTki-zFh_9WN0VZ9rw_Jvw=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/110363915515794148581?hl=en",
+            "reviewerNumberOfReviews": 11
+          },
+          {
+            "author": "Brandy Alexander",
+            "rating": 3,
+            "text": "Maybe the smallest, most expensive burrito I've ever had.  Taste was good, but not near enough to compensate.  It's probably just an expensive part of town.  I've heard about this place and wanted to try it, but probably won't return.  Service was fine.",
+            "date": "2024-12-27T21:05:16.263Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNmaXQ3c2J3EAE",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVlCmpEvB1og_jNrv_FUxmBAbEX_5h2yHFquuwqpLjKarI0_RX1=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/107411692844956685928?hl=en",
+            "reviewerNumberOfReviews": 16
+          }
+        ],
+        "negative": [
+          {
+            "author": "Emma C",
+            "rating": 1,
+            "text": "My boyfriend and I came here yesterday, 9/12, and got the carne asada burrito and carne asada torta. We both have horrible food poisoning now— avoid the carne asada.",
+            "date": "2025-09-14T01:39:46.084Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t4VU0wODVjR2xHUkZSVFpFRjNZMDQ1U1RCclYyYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKjpppgqDmS6afztyUyxkUg9RUlgxuubSlkHIAH5-kXDoChBg=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/108527242060667616256?hl=en",
+            "reviewerNumberOfReviews": 0
+          },
+          {
+            "author": "Eric Lozano",
+            "rating": 1,
+            "text": "No prices on the menu and the food is very bland. Also im pretty sure I got diarrhea after eating here.",
+            "date": "2025-08-25T04:28:42.493Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tjMFdHZHhNbXc1TVhCaVVWbEdSakZwZURBeFZVRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVA5srCqCtkzG3Fwy7uDY5NrgUzbE1ndLt0ajRr75uFiBoubEpS=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/107335949882231606563?hl=en",
+            "reviewerNumberOfReviews": 15
+          },
+          {
+            "author": "Sergio Gonzalez",
+            "rating": 1,
+            "text": "Not only was it pricy for my first time being here.  But they got my ordered wrong from the meat to the onion.  This was not great.",
+            "date": "2025-08-10T21:37:23.986Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21KWWJVUm9WRlpXWmxneFNuUkNiamRJU2t0SGVWRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJa2iQ_xPStDk_C0oUv75ZkyfuePY_PJfbUzf6M6Dmmq-5Xbg=s1920-c-rp-mo-ba4-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/101346620749560716868?hl=en",
+            "reviewerNumberOfReviews": 104
+          }
+        ]
+      },
+      "trends": {
+        "ratingTrend": "improving",
+        "volumeTrend": "stable",
+        "responseRate": 0,
+        "averageResponseTime": "No responses"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ]
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/badassstreettacos",
+      "instagram": "https://www.instagram.com/badassstreettacos",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 58,
+      "social": 100,
+      "local": 44,
+      "reviews": 91,
+      "overall": 73
+    },
+    "originalScores": {
+      "seo": 70,
+      "overallScore": 67,
+      "performance": 71,
+      "userExperience": 61
+    },
+    "migratedAt": "2025-09-16T00:37:21.258Z"
+  },
+  "metadata": {
+    "cachedAt": "2025-09-15T18:49:39.392Z",
+    "expiresAt": "2025-10-15T18:49:39.392Z",
+    "placeId": "ChIJ7QG2OyMl6IAROPQBo52aiYw",
+    "restaurantName": "Bad Ass Street Tacos",
+    "cacheVersion": "2.0.0"
+  }
+}

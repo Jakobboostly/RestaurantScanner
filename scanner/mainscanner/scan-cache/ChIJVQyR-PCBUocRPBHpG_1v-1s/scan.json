@@ -3,11 +3,11 @@
     "domain": "taqueria27.com",
     "restaurantName": "Taqueria 27 Lehi",
     "placeId": "ChIJVQyR-PCBUocRPBHpG_1v-1s",
-    "overallScore": 69,
-    "performance": 66,
-    "seo": 70,
+    "overallScore": 80,
+    "performance": 100,
+    "seo": 58,
     "mobile": 46,
-    "userExperience": 60,
+    "userExperience": 91,
     "issues": [
       {
         "type": "seo",
@@ -2648,13 +2648,27 @@
     },
     "profileAnalysis": null,
     "serpScreenshots": [],
-    "restaurantSearchScreenshot": null
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 58,
+      "social": 100,
+      "local": 70,
+      "reviews": 91,
+      "overall": 80
+    },
+    "originalScores": {
+      "seo": 70,
+      "overallScore": 69,
+      "performance": 66,
+      "userExperience": 60
+    },
+    "migratedAt": "2025-09-16T00:37:21.455Z"
   },
   "metadata": {
     "cachedAt": "2025-08-25T15:44:24.175Z",
     "expiresAt": "2025-09-01T15:44:24.175Z",
     "placeId": "ChIJVQyR-PCBUocRPBHpG_1v-1s",
     "restaurantName": "Taqueria 27 Lehi",
-    "cacheVersion": "1.0.0"
+    "cacheVersion": "2.0.0"
   }
 }

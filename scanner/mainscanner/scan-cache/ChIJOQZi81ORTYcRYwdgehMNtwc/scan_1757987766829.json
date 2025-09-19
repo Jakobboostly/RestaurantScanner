@@ -1,0 +1,2705 @@
+{
+  "data": {
+    "domain": "www.myfruiteria.com",
+    "restaurantName": "Fruiteria",
+    "placeId": "ChIJOQZi81ORTYcRYwdgehMNtwc",
+    "overallScore": 75,
+    "performance": 85,
+    "seo": 80,
+    "mobile": 65,
+    "userExperience": 75,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "cafe near me",
+        "position": 0,
+        "searchVolume": 480,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "cafe delivery Provo",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best cafe Provo",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "cafe",
+        "position": 0,
+        "searchVolume": 390,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "cafe places near me",
+        "position": 0,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "cafe Provo Utah",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "cafe delivery near me",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "cafe open now",
+        "position": 0,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 0,
+        "keywords_appeared": 0,
+        "total_keywords": 8,
+        "average_position": 0,
+        "best_position": 0
+      },
+      "keyword_results": [
+        {
+          "keyword": "cafe near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Peace on Earth",
+              "address": "Provo, UT ",
+              "website": "https://peaceonearth.coffee/",
+              "rating": 4.5,
+              "reviews": 1200
+            },
+            {
+              "position": 2,
+              "name": "Java Junkie",
+              "address": "Provo, UT ",
+              "website": "",
+              "rating": 4.7,
+              "reviews": 323
+            },
+            {
+              "position": 3,
+              "name": "Guru's Cafe",
+              "address": "Provo, UT ",
+              "website": "https://guruscafe.com/",
+              "rating": 4.3,
+              "reviews": 2600
+            }
+          ]
+        },
+        {
+          "keyword": "cafe",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Peace on Earth",
+              "address": "Provo, UT ",
+              "website": "https://peaceonearth.coffee/",
+              "rating": 4.5,
+              "reviews": 1200
+            },
+            {
+              "position": 2,
+              "name": "Java Junkie",
+              "address": "Provo, UT ",
+              "website": "",
+              "rating": 4.7,
+              "reviews": 323
+            },
+            {
+              "position": 3,
+              "name": "Guru's Cafe",
+              "address": "Provo, UT ",
+              "website": "https://guruscafe.com/",
+              "rating": 4.3,
+              "reviews": 2600
+            }
+          ]
+        },
+        {
+          "keyword": "best cafe Provo",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Incidental Coffee Roasters",
+              "address": "Provo, UT ",
+              "website": "https://incidentalcoffee.com/",
+              "rating": 4.9,
+              "reviews": 81
+            },
+            {
+              "position": 2,
+              "name": "Peace on Earth",
+              "address": "Provo, UT ",
+              "website": "https://peaceonearth.coffee/",
+              "rating": 4.5,
+              "reviews": 1200
+            },
+            {
+              "position": 3,
+              "name": "Java Junkie",
+              "address": "Provo, UT ",
+              "website": "",
+              "rating": 4.7,
+              "reviews": 323
+            }
+          ]
+        },
+        {
+          "keyword": "cafe delivery near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Teri Gao Asian Cafe",
+              "address": "Provo, UT ",
+              "website": "https://www.terigaoasiancafeut.com/",
+              "rating": 4.9,
+              "reviews": 278
+            },
+            {
+              "position": 2,
+              "name": "Slurp(boba.chicken wings）",
+              "address": "Provo, UT ",
+              "website": "http://slurpwings.net/",
+              "rating": 4.9,
+              "reviews": 227
+            },
+            {
+              "position": 3,
+              "name": "Enliten Bakery & Cafe",
+              "address": "Provo, UT ",
+              "website": "",
+              "rating": 4.1,
+              "reviews": 124
+            }
+          ]
+        },
+        {
+          "keyword": "cafe Provo Utah",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Peace on Earth",
+              "address": "Provo, UT ",
+              "website": "https://peaceonearth.coffee/",
+              "rating": 4.5,
+              "reviews": 1200
+            },
+            {
+              "position": 2,
+              "name": "Guru's Cafe",
+              "address": "Provo, UT ",
+              "website": "https://guruscafe.com/",
+              "rating": 4.3,
+              "reviews": 2600
+            },
+            {
+              "position": 3,
+              "name": "Enliten Bakery & Cafe",
+              "address": "Provo, UT ",
+              "website": "",
+              "rating": 4.1,
+              "reviews": 124
+            }
+          ]
+        },
+        {
+          "keyword": "top cafe Provo",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Peace on Earth",
+              "address": "Provo, UT ",
+              "website": "https://peaceonearth.coffee/",
+              "rating": 4.5,
+              "reviews": 1200
+            },
+            {
+              "position": 2,
+              "name": "The Continental, Provo",
+              "address": "Provo, UT ",
+              "website": "http://thecontinentalprovo.com/",
+              "rating": 4.9,
+              "reviews": 73
+            },
+            {
+              "position": 3,
+              "name": "Locals",
+              "address": "Provo, UT ",
+              "website": "http://localsprovo.com/",
+              "rating": 4.3,
+              "reviews": 235
+            }
+          ]
+        },
+        {
+          "keyword": "cafe restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Black Sheep Cafe",
+              "address": "Provo, UT ",
+              "website": "https://www.blacksheepcafe.com/",
+              "rating": 4.5,
+              "reviews": 1700
+            },
+            {
+              "position": 2,
+              "name": "Station 22",
+              "address": "Provo, UT ",
+              "website": "https://www.station22cafe.com/",
+              "rating": 4.1,
+              "reviews": 1900
+            },
+            {
+              "position": 3,
+              "name": "Guru's Cafe",
+              "address": "Provo, UT ",
+              "website": "https://guruscafe.com/",
+              "rating": 4.3,
+              "reviews": 2600
+            }
+          ]
+        },
+        {
+          "keyword": "cafe food Provo",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Peace on Earth",
+              "address": "Provo, UT ",
+              "website": "https://peaceonearth.coffee/",
+              "rating": 4.5,
+              "reviews": 1200
+            },
+            {
+              "position": 2,
+              "name": "Station 22",
+              "address": "Provo, UT ",
+              "website": "https://www.station22cafe.com/",
+              "rating": 4.1,
+              "reviews": 1900
+            },
+            {
+              "position": 3,
+              "name": "The Social, Provo",
+              "address": "Provo, UT ",
+              "website": "https://www.thesocialprovo.com/",
+              "rating": 4.4,
+              "reviews": 216
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"cafe near me\", \"cafe\", \"best cafe Provo\", \"cafe delivery near me\", \"cafe Provo Utah\", \"top cafe Provo\", \"cafe restaurant near me\", \"cafe food Provo\" - optimize Google My Business profile with these keywords",
+        "Low Local Pack visibility (0%) - audit your Google My Business completeness, categories, and local citations"
+      ],
+      "scan_metadata": {
+        "location": "Provo,Utah,United States",
+        "timestamp": "2025-09-16T01:55:14.159Z",
+        "total_scan_time_ms": 32855
+      }
+    },
+    "competitors": [
+      {
+        "name": "The Continental, Provo",
+        "domain": "thecontinentalprovo.com",
+        "performance": 98,
+        "seo": 88,
+        "accessibility": 83,
+        "bestPractices": 93,
+        "overallScore": 91,
+        "rating": 4.9,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1232,
+        "keywords": 60,
+        "domainAuthority": 76,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+150 keywords",
+        "authorityGap": 5,
+        "backlinks": 876
+      },
+      {
+        "name": "Locals",
+        "domain": "locals.com",
+        "performance": 86,
+        "seo": 77,
+        "accessibility": 73,
+        "bestPractices": 82,
+        "overallScore": 80,
+        "rating": 4.3,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1355,
+        "keywords": 30,
+        "domainAuthority": 71,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 775
+      },
+      {
+        "name": "Edna's Market & Grille - Provo",
+        "domain": "ednasmarketgrilleprovo.com",
+        "performance": 94,
+        "seo": 85,
+        "accessibility": 80,
+        "bestPractices": 89,
+        "overallScore": 87,
+        "rating": 4.7,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1188,
+        "keywords": 59,
+        "domainAuthority": 72,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+50 keywords",
+        "authorityGap": 2,
+        "backlinks": 858
+      },
+      {
+        "name": "Teri Gao Asian Cafe",
+        "domain": "terigaoasiancafe.com",
+        "performance": 98,
+        "seo": 88,
+        "accessibility": 83,
+        "bestPractices": 93,
+        "overallScore": 91,
+        "rating": 4.9,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 585,
+        "keywords": 61,
+        "domainAuthority": 81,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+150 keywords",
+        "authorityGap": 5,
+        "backlinks": 963
+      },
+      {
+        "name": "Communal",
+        "domain": "communal.com",
+        "performance": 88,
+        "seo": 79,
+        "accessibility": 75,
+        "bestPractices": 84,
+        "overallScore": 81,
+        "rating": 4.4,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 842,
+        "keywords": 32,
+        "domainAuthority": 68,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 1125
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 83,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-16T01:56:06.674Z",
+    "businessProfile": {
+      "name": "Fruiteria",
+      "address": "239 Cougar Blvd, Provo, UT 84604, USA",
+      "rating": 4.6,
+      "reviewCount": 191,
+      "phoneNumber": "(385) 375-2965",
+      "website": "https://www.myfruiteria.com/location-provo",
+      "formatted_address": "239 Cougar Blvd, Provo, UT 84604, USA",
+      "address_components": [
+        {
+          "long_name": "239",
+          "short_name": "239",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Cougar Boulevard",
+          "short_name": "Cougar Blvd",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "North Park",
+          "short_name": "North Park",
+          "types": [
+            "neighborhood",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Provo",
+          "short_name": "Provo",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Utah County",
+          "short_name": "Utah County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Utah",
+          "short_name": "UT",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "84604",
+          "short_name": "84604",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "state": "Utah",
+      "city": "Provo",
+      "place_id": "ChIJOQZi81ORTYcRYwdgehMNtwc",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "establishment",
+        "food",
+        "meal_takeaway",
+        "point_of_interest",
+        "restaurant",
+        "store"
+      ],
+      "reviews": [
+        {
+          "author_name": "Rick Morones",
+          "author_url": "https://www.google.com/maps/contrib/106503289145601008674/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLWwReIqvTFgVfWBa6vWLAGKqxKlTq_BB3SdHlbJkgZ0KYVKQ=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Had Esquite and Fresas Con Crema, was extremely delicious! And was offered samples of the juices that are served on menu as well was extremely satisfied with the food as well as the service ! Great place to come and try out! Will definitely be back for the horchata drink and friendly staff ! Great job!! 👏🏽",
+          "time": 1747852908,
+          "translated": false
+        },
+        {
+          "author_name": "Jessica Tapia",
+          "author_url": "https://www.google.com/maps/contrib/104768598939586939903/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJzt-UkGk25TGJwYW9lktkx6t3V3wx7XoMS-bFXx_GEv7Pirg=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Excellent place, the atmosphere is amazing. The staff was super helpful and attentive. Great options definitely recommend.",
+          "time": 1753285573,
+          "translated": false
+        },
+        {
+          "author_name": "Manny Sanchez",
+          "author_url": "https://www.google.com/maps/contrib/113476825984667535682/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX5PKVlt3VsA7om6r1exH-E-y7t8lB3FOaNENUkDJDKDe3aJh9D=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "First time here at this location and let me tell you. The options are endless and the prices are not outrageous. I didn’t really know what to order but I was helped by Sara and let me tell you this woman knows her stuff!!! She recommended about half the menu but in the end I went with the Mangoneada and let me tell you I wasn’t disappointed! It was a hot day and this had a mix of sweet,fresh, and spicy added all in one! Definitely a 10 out of 10! I will be coming here more often and thanks to Sara for the great customer service she provided. I will definitely recommend this place to all my friends hands down. Great job guys.",
+          "time": 1748033980,
+          "translated": false
+        },
+        {
+          "author_name": "Katie Giras",
+          "author_url": "https://www.google.com/maps/contrib/103380796614963866475/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXJliDzuIQAXdM03W--PW9S2iGXpSs9v2QZb-SHButpgYw4yAXZzA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Update: the owner, Noe, let us come again their year on our field trip. Again, the ice cream was sooooo good. The kids were happy and the employees were so kind to us! Thank you!\n\nWe took our special needs class on a field trip here! The kids loved it! The ice cream was so good! All the kids and teachers loved it! The employees were so kind to our kids and the owner Noe was so great to let us come!",
+          "time": 1726265392,
+          "translated": false
+        },
+        {
+          "author_name": "Jeanneth Aguilar",
+          "author_url": "https://www.google.com/maps/contrib/114385862244266423483/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKpgScAhgJ82xPlHerPVmjs3rfB0ku-gGQuZyV_j7N_RP6AWA=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "I have been visiting Fruteria for a year now, they are very kind and accommodating to my marketing needs, specially when I have a large order. I have tried almost all items on the menu and have received very satisfactory reviews from my marketing visits. I let them know the two locations I go to most and hand them the info. Thank you for the delicious treats that take me back to my childhood. Absolutely LOVE FRUTERIA!",
+          "time": 1749327579,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105025809269419685450\">Fruiteria</a>"
+          ],
+          "photo_reference": "AciIO2fVxofiEq_tBEI6t5knusZd-rQf2dwCd57PeLfKBufbQsLs7syQT0fP-CMUf417Z4ByPgWel-T1gS1oIZm3ZVHnaF3U7grKe8SFWhS9aqgRTzMyP_JCdFhgfp2WhxvHEuR-1IGdRbs2Qasve5q_gfpSZe8peCGHMB7uY4CJYCOJTL4NHQVOUV6pcmxQ2DNqr7iCmq82fMeMc_GqIgtb_2xnxkNRqAKANuu_KOrzs2oLRTy8JLhQKhJavPaFhcoI283UP6ccw5sxQg5UXEHPD4jZpmi4p_M6M6F-PZ4QUP1INA",
+          "width": 3024
+        },
+        {
+          "height": 910,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105025809269419685450\">Fruiteria</a>"
+          ],
+          "photo_reference": "AciIO2f0iGKFrIHBotS-wzwacQuJEnQ6xupMAFYMJxItDd9Ebj6PYnuWn4pAJ6v20xCWw_ZDY4cVAHhbBh41nB_Fd68cDO8OJ8hbTNDC6NbwHcSIvAWtuXpEHgjFupEAtdU6WE9esRqbFMdJepmHmZMCeNmKZjKnJNkPvNM54ZFOrnYtWcjD8BKS2IvwuuZDSLxMtzpdUXxJSEFalXK2YOCfeLzBv0Vw4Ly8UTTeo-vOOck3OdJVkMM1AYv_5bg5yrityRWoGeM3XAOJmUjSvoZkpbaV31aEJ2KSbUxMTzbBOR17gA",
+          "width": 1616
+        },
+        {
+          "height": 2992,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116281269150230482517\">Verito matias</a>"
+          ],
+          "photo_reference": "AciIO2eaAjjhgF8HfRXO7uGVLAamA-hsEI-kmvGZSEk6bDxKLm-MO_KNaNOoXTuzCQY3WrULe92tVWb3WpJyX2-M_wRB0fhu_BJPoOl1G_Zw8y-ZKYzkmIeo1UvfrqiMDPtNCjLzbJ_T2L7hq8L4JxRgFlSIMl1TyZZfaTAziDOLgTPKpg33LMeiPXwmcN0vs226o2OfdGhDBhR4TAbNCO35mFrnSnyTgBlsyljToy8Vrqvb47G0zZ_j4edr1Rm_ENrJkTWos_qj5ziCfmcA0DeRlJbRQ1ql82VdyqQW5-rG3vUfibCGft6S63OOJxhBkk3ZOyLnelr26SVFpWGYHtvt25FXflbkELVU8iq189Augq7PppqlprPlg6BY8MaOuWlpzPbg7OBJQPCSxvgRd-384ouszkw3EINDw4L8vH7c79A",
+          "width": 2992
+        },
+        {
+          "height": 3000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105025809269419685450\">Fruiteria</a>"
+          ],
+          "photo_reference": "AciIO2dIpXzJUdLoD2CkCpj0vVWtlZzHbE2GVxZxiW7tfeOhuT-_lH5c6qmMZDWG0auYNM5ZyRxCitRwNY6a2LYevkJP6Jph_y77GFjWrnfhrqo0hPWMOhIz2j9JB1X9GqogM6wLszqojooKQCgC1tsqQOzb9YV8GbMEgdk-L961YU0RNVAZzorAGIem-R_NmGxH6oPMH1P-xapPzwBpat80SA8jqPgPE449i3vkBoxfrzFrVAP4sKyct8yqKjy8e0scM02C3PNiwW1RVrhImWVxQ6bFDKYJUQ39vHFOVBp4m2mBWg",
+          "width": 2000
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107929422160161554967\">Rafael Gallardo</a>"
+          ],
+          "photo_reference": "AciIO2ck9YVyfFuUuQ8d_F6B8HI3lfiGA4ESG6JttVg7db-bQXnudEYNGX6paolIymm2GBS7xoK9Op0IiHcu-y2bq7L5r3pb3QXtuldd9lxxjq7XbyxRRQPVMA1AIslYm0VZmGUlYhVoayOnTglhnLyfmI_7aFApi3yeyBCt34VONh06KJw-SxmoIQJ1jsToTIBWGAjwkqZL_S3JkYXbO03kyk0nx-3Qr6j9Kalh1aYDK0qWHeky4ioM3x90iho8SPQyomShSWtULjhUMrh2n-ufLU9jJHlg56-uVD2yO2-PxalofvjHOKnk0Gmx6dZSDFGXyLfsBhryz6N2Cc8LKrFDX_5YO1ixi9esn0cdcuIjFAbkFvuBxEOEvl0Cm4kMp_Ul3oEyBHiMeLg_ZkJ0jsaBPiTwgHfG0h4pOiIr0AdvZ_u138JhqyHSNcNjpAzDk7FZ",
+          "width": 3024
+        },
+        {
+          "height": 3000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105025809269419685450\">Fruiteria</a>"
+          ],
+          "photo_reference": "AciIO2ehrYk53tvUUDR2OYCvJ2zOFK9SybcbSwuK7W-BQmuDO5DYgR7uVzAOPXuGtd8aKeB1ULU8kTCoin9z3pa5q4cNCR75ra4MMW74cye3e0RKOhd3OPpa8ONeNSpEORh82mt0En2wYn9tyFynVsjN5-Z3mCi3HJhFvFby89U0UlF98V1ufxnrEO_tpH6XLwf7Ewy_aBAuCR43AQBXQQl_KLuv0NwaYmGH4KO4UE1MbOXJoQx7ZFG9mzuEVORG4PILlq3Jten9jNUqsztbw9kaBGKxfSmc_KlAaarFEPI8RbED1A",
+          "width": 1688
+        },
+        {
+          "height": 1280,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105025809269419685450\">Fruiteria</a>"
+          ],
+          "photo_reference": "AciIO2fjXvo7zRxT1f8aXRcKm3a9C4x9PgcsFZzVRVDrcPMPm_RPDOLoFy0y4PGdozi1c-J4Ragn1DsKJCT0oSmfGD0962H-VdfJp2O7ADrxK3TU7c8txvRQWvzZ6sEPFOUCgWivRZPlp7ETEXM3Ju6Q3OJtjq2QxxREm6IhhYRy8JUCA0tadRKtESOoCdv-CKIeq0JurrUQuPczx3ioZ0CdJsJoRnS_4nVHyjAwoSgGAz0L_LKVE_wjjj1vzLC2nIfPlOSM8wIsd7KsyIgPJ22wPhb2RiK6kT1D61p_TOM9JmdUKg",
+          "width": 1024
+        },
+        {
+          "height": 947,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105025809269419685450\">Fruiteria</a>"
+          ],
+          "photo_reference": "AciIO2ctgOGKbKLMO_3J04bnJy0sj6QMZZR2eHUaKGTCi_agGg7V5FnkXo2u4uCm7omYi-vRetE2fEG9DOCFCwLwDqc7HqY6M3oGgnNC3UHUWvgsdFoNog8Cif3u85oI20Vr2qnOYiX_jCl8ltUK89lkdB8zwJ-_Rb3ahY7t5QBPH6PgeaIRjZvnUbLWtk8l3P35mZIMAliZvdrRVE4PNqSBkxAe3EXBrZYhZYhQY3X8-Aw5Z4jE9xe8Q_XO7BdCAPYUtqJgOQ-MeWz6oK11MYc6DoIelWXDepg41cnK35PUgruw9Q",
+          "width": 759
+        },
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117701542717533306918\">Ada Garcia</a>"
+          ],
+          "photo_reference": "AciIO2dL27op7fq4QGGEHKFhy5a06AzfZnNcUibG92RaExg9vT1hTdC8g8sGqlWOtVinvGhl7kar3gj2V7UxtjaauuCuWjA821CuSR9CkKEpfJmnDbqKSh_pVEPyTfnutS96Q6wvHYLBvLq5ys8y0ZWvOY6e2bi-GpyCbCO4dgZQDTSSln-hmoBrcfKt8ghH7ADsjy0pls1hFjSGRJ3KQT1fjmo4X9_1zw0MFLYO5oDZBFMYjz1YuFYzg6ey_yOS3cDuvWsSo6hRyIMaOJocTAM9hebOtVhYFalamH9p02yLQb-TehmJxf2lgFZNV0H8BaTWXSlIGoHc8N7_W3mvbV4jW4fW71Qld8V5FKcYVjVmBOWVqtPDFmg6vCUwBauFzv0MZJdqympzs7J5205hF1qK_QxJqCIwAjccN9M-5DSVQCcSEw-f64eP0Lo-0U1Hz1p9",
+          "width": 3000
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101906890902990456582\">Dan Cano G.</a>"
+          ],
+          "photo_reference": "AciIO2fUv-nhDYfQPyoEZE3-JXJeDjQxYcXBw1Z2WdPNlG67graGt377M7e_3cjaUunLujtomqHm--S-tKooDW9KD5pARSeNXCtcCWG3TVvvQm8VAKP18ZmVk7ZgbEx5otzBY04-cAlkm96FB8h2WkcyG2QKpSfkEBPwXi4hMdpatCWYuIMakriZTM3_Mciht_yQ2rtNk5F7hCr2VlnuAvc00jRBXxi3lKdf6xLtjcQCDxOLOVUji0ZCD03GI9y5cJ13TKpvhCfb2_qURUWQb9HsdHNX5EvrqufM0I6FMcJSyoLvQprmJ8chuvIP2I8nmhXfkz3_FideyPytU-lEodMk3Y1UPgHK7VEMxo22CsegRHfBjT6EkRmhKt9bZiueQvEK3q7Q5EIE-2D7cCMALnlyDC6NQ8y0Iz2q-zuHJPzWzmmoDYOv",
+          "width": 3024
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "2200"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2200"
+            },
+            "open": {
+              "day": 1,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2200"
+            },
+            "open": {
+              "day": 2,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2200"
+            },
+            "open": {
+              "day": 3,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2200"
+            },
+            "open": {
+              "day": 4,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2300"
+            },
+            "open": {
+              "day": 5,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2300"
+            },
+            "open": {
+              "day": 6,
+              "time": "1200"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 12:00 – 10:00 PM",
+          "Tuesday: 12:00 – 10:00 PM",
+          "Wednesday: 12:00 – 10:00 PM",
+          "Thursday: 12:00 – 10:00 PM",
+          "Friday: 12:00 – 11:00 PM",
+          "Saturday: 12:00 – 11:00 PM",
+          "Sunday: 12:00 – 10:00 PM"
+        ]
+      },
+      "price_level": 1,
+      "editorial_summary": null,
+      "url": "https://maps.google.com/?cid=555927456312199011",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2co0vqF8Kdhanjuuq1WCT7rssTaS0QGQ2HT0WqB-v8d2DccZgFqwT0XFZbm6VjIXMbh6a2ptzu0HFBic9cuUTYadpDO0QznmNT80pLv0k0KpvJqjmSkf38AH_WCgmq_pEn7Z463hGMxzVXnYwCg-rV1yOwlMjB1X23YGjx5Pm4HFLsHangoc-LRtoAjMWpr-yzZEjlhJMhE2iwZD_HfzDZr4S4Rs37uM9fzrCtn9NbQbR0pBwKg26KJ-AZ7XK-sZ3gy0eDdVrXHxWZWVu5fapGtgjBTH1flrxuwJvLy-e5vKA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2eJlaAqqh0KOA5lXuqal9zT4r8wX1NZ8bSHeArAKBaAEDUdy6MJ_05e13qiBhllj3wxYLIKXj_jFdZG_koYDdtf8ZXw8TLOoLgQr_3t26uCatGjAjo-HwaNLMf5ax31q2hO46U8J842lIpymDDZa2DFESW8VDJV7HI-Uspqp3TPU1iEDLegwsbTMojzSZabFo7qm_4Ty8GOiImYfgaLG0HknZDDqZ8jwODr_KHq3UdYRZjvHO5HV3-FWnXfJFdkZobj2tSXot5LG2DsuY468gKZ11oLmXGScncUc24PeLSyiA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2d5u6_Mx_6Zz-UPUVzVlU_rZF205Dw2HOVSGC4fLpLubqquNSf57hdZh62MoW-PzvO8aSkiR1jpUxjNcGDNOWowML8pfRd3pRmsD2drnmId4zNLqEalvte4szo34K3MvZxLxUey47soiku2SAYsxjmg2NK-pNJSNN4mx7U9_P9aiM3Ae5-x7C6miLLiS-pAVcQto9V2eoceWhpbe6VgolaG_0Mo2_gbNrCIj5Sv2GcwZ9YVxpQkm0f6s2Tsq-ofXB8ZnW3-Af5KmGRFeaAYW5WVfWCbXh1Jj4bWaDAfvNGJv9sPUAeBD_D_ym9TKPA_2HA7vRFs_n5HYYmfYYMfYh8RCCY80tIqRZQGhrvz8SLdbYAGmFeod7SFr5l9_bNxjFPbqQ9jDNZDWcJS5jGevkYmL9zmHJeO2F54acA1pJ4&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2ftJpdU8sNZ_v6YHBf8gIEvcAvRWZX2eulo8O7kBvUE1cjJHMW7-lgxDhrC7r1dWjOmoMPVJpQzBkQ0iBHi_q47zd-ThQumV7Xvzb0bavXVWe7vG66-An4ZcbVwLdMZQNb1TM9CvdCdY2AEr9_xDBWT_H0ys5RCYhXv20n9QO1msK9LqzXL5EljtKv53vOkNxlKYKI_GU7DnuqETYZtI0EguL_kjZXH70ZXZBFdDyPJImdg91nSCuDJ5PoBa76gachjBGaFZNXiUqWyt-AZhty4yN6dLVlYTL1IAneOIJSrng&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2eMupE4JxWTCGy6-07tzGhf-dJdb84bWTaIZlfFSA9T469y7OQcToVLaOBV_giN-Mz60i7ekF_R5oYbPXqo0FzzdRif7SxWRY_r_koJXg7n9wY4m7kcsLNkOJdEbaK9cWRdOQMwu8IYwTNlpShAnpfH19ldTHrHw5_dGhe8Zc1LCofdQ4SJrw-X-He0IgZ2mxnXgc9cepN5ghJom3Vwsuk5yw2nQRYdJgul3P5ascP2YnpIcOVYId03i7W6mX-4GSg5ERoa4a7m6P0YnbwAOahDp8Hr0OLUWACcIS6rX0XkD82sptG6JpgrEGDiG39mRbzGW_8lbZjuGaM8h0FA7WJN1ERAIzsBouqFsLPMqgL6AzwlxzrbZBczVbDC4rIdTvLnYmnBZK7eWoSoxThM91x5t3llSC2vVt7JA7Vv3xNJLsH6dE0KBJV9wJSRBmrf&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2dK8ljSh_IuD7i_V67XqKrI6r9ZZvVwePDTFMgdwyB1XhuB7Ap0CSqEtEsk_gtMWQ7pjQdO-zcmATZqzXAoKtdLR8BKCfTTulQvTjJcekUWn1jfoPd7YgARulydRCOl_Uw37tLHuNTXG2yomDzfR0vMCJnDBA8_Q__LB_HB5g3EPQlWe2_l_0L24rmepanxXeAsqvMlY1duo9ErarkgmiI2fJpHbicq-0v_GQYCus9Ry86WJRG8PCx4lkg6r97vcH29nNiwxSL6-mcoD8q89GIcbDuSRPkfJwW4206YCr21dg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2e0olPKW3uwEaIqQtMlQU4Ptb1sV8lcBqodN4Kvq2vvHocP8hr32gwvOc2QcctNGfX6YqZ9pubpeRTe0rUA7S_A8MKBi6blYuTo8gnxOrd6KF-IQ_Rti2HTd2S7ER2tvUaD4UfhtEQSM6279xjGW5CjBMJFPom6k9wF5Yktj-QaMYLSo81EV6E4gKaf4tsPrxnlpMbdHcJpMKTnx_te_UYylTg73wWVyIcRqHaZ27Iz_bMehfuhDIDfTXDFLkJ7__l7p5FsHPqdC51DTdusNESNLl2ttohkMitEdP3ldg_OeQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2f2MEvPlMjTkR9W_0U8PZdMUPqQrH89MUEktNN6vzGxQJk-DDlnRShJ4gON-atGNq0L5MqWuvtx0KtBwJBt_ZDdwJvJbyEWYaGC6R67_FhuDkgz14RlcOAg-jSAcdnjsqpMIvOiLMcTeytjKb9T-qGVuNbnGs9UTaxb7bv3RcI4JUBYNrQeAFqtwioMfQLvpSVGa7sXniiEOZQTwkIsI0Wu6Qjbo2HgiDQQXx03Z0C33tf0hW7OQzvZWhTQ08BOcBRHascVJanaqI4wU5OyfOoq3TGA0EFm0hbTUu-9jVGjBg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2dUCDReAC2jma2ZB1-Y9YWYthQ64oPnhZvGq_UbA4WpRSoIC1_mDe9HD_JrIe9l8xco_t50majqSdi0GfhUtvq4BBGbSaWl-lOPpEoRn9M1s0R_Wu1qDFCHQTjCoh0kC0XSG63eqGC_lP8WLDFuVwLbB3ORuTyHltkmr6DyX8zhJKTmWiABNdV2aQBlSZZiI_SmOGdSZACDqJ8ooGj4WwomtZUetx28NmZnv05K1Hj1wFu_woIxjViVmnurw3L_CglLVMbAtZOEvnFDFrb9gF9moocNgin0wcZbHTbjKmwGTV3jMjrxQGpgs7EgY02dtgOwvdvHtlZWcxIRsT5IrtFEjFPjB_yWcH2DY6bAwxUji9t8Ho00YSMYMujQbsRRo5NU6Q79orwjZ4zhWzc6RZWM0ROzJaC0_QZBOGGpzfJhrpJReOf7qPY_TtKEZNBr&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2fsCVbx70BZvN8BKA5modl-TDQE7NckaHbMYWQ9-NWyTAJ_fqO1AYEBVropIJagh-I8CkuEvQQU0zAGK7P2-DFAjiZgnDe2FGui0iGU0zJ0cM34MQzElIpu-0QMnKP2sc2ePiEetU1eBOfR30ls0JrXG8h8m9HNQ-wGtV3UL2Km0gVMEsN6sy_6X7EPfeko_jgsaiYaHMws15TZA3QwQvCRQEtq0Bc0UIu1qKdXSXD3KJLiWYXcJ5GQ7bS-pT0whIKpZlQ3h_AxeUwIELYCx4-FXadqAJxm0sTNqUQ-C26t03eFV1Jk94RggSLFW8NfNac88uXbs6fz9RJVULDDkxHQVdSoUNrYimp-rmz6BIYZ15bZIXut7xiC2pGAET1bHy1VsfM8Da6V3Kr67JbR-5CBtP1umnB5jEhzzOeM_XGGAsvI&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 65,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": true,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 92,
+      "totalReviews": 191,
+      "averageRating": 4.6,
+      "sentimentBreakdown": {
+        "positive": 90,
+        "neutral": 3,
+        "negative": 7
+      },
+      "reviewSources": [
+        "Google Places API (Apify Enhanced)"
+      ],
+      "keyThemes": [
+        "Food Quality",
+        "Service",
+        "Cleanliness",
+        "Pricing",
+        "Atmosphere",
+        "Location"
+      ],
+      "recentReviews": [
+        {
+          "rating": 5,
+          "text": "Esto si es un helado de verdad. Cada sabor sabe a lo que es recomendado 100%",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Mis hijos disfrutan venir cada domingo a este lugar",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Very friend people and good food",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Excellent service all their menu it's so delicious 😋",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Great customer service, nicest people ever! And it was so good 🤤🤤🤤",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "the esquite and fresa cup were to DIE FOR and the girls there were so nice!! super clean too and organized, i will def come back",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Everything it's delicious 😋",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "One of the best experience eating some refresh",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        }
+      ],
+      "detailedReviews": [
+        {
+          "author": "Rafael Gallardo",
+          "rating": 5,
+          "text": "Esto si es un helado de verdad. Cada sabor sabe a lo que es recomendado 100%",
+          "date": "2025-09-15T23:31:35.091Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT201NVZVUnBOamhsYTBjM1kyaDNPVU5hVWpKRFdGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXkPWOqfUg1SbeLK6or8aTWh2tUeVqW9Mvn6A3JTt1nPLZZ7R9N=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107929422160161554967?hl=en",
+          "reviewerNumberOfReviews": 38,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Andy matias morales",
+          "rating": 5,
+          "text": "Mis hijos disfrutan venir cada domingo a este lugar",
+          "date": "2025-09-14T00:34:55.160Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2kxYWRFMUdNbEoxVlRaV1JubGlSVXhYZGtZek9XYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVA1-AeFBbRN01AjY7Fbpxl9G2RiANeUi2Bpa2Jkm1Q2BREbKM9=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110197326394119161532?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Crystal Pena",
+          "rating": 5,
+          "text": "Very friend people and good food",
+          "date": "2025-09-13T22:14:45.748Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pSNFUwUkJTVkoxUzJsd1JGODFabHBJVEVReWFYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUrpv2J-czoYfOvuthoJfafo_q4ET3Z702icOtSB6AuzJ97-TiM2g=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118093923919023400902?hl=en",
+          "reviewerNumberOfReviews": 17,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jorge luis Gonzalez",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-13T20:32:11.764Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT20wNGIxWTNTV3cwUW5acWEwbElTaTFFVVZsa2FGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX60Ld_zKYFc4s6dJ11gPT8ja1heERBEzjPfeDdjMEmx-oYfTuk=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110606385412796980949?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "efrain vega",
+          "rating": 5,
+          "text": "Excellent service all their menu it's so delicious 😋",
+          "date": "2025-09-13T20:32:02.962Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT20weVVHOVRRaTFhTlRORE1sUXRaME5ETm5KTWFGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUWCfMugLGP84DuyTtY8V2aDS4xCNlg1EBSUd3fBHZfd6qz-MHe=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103378988536796501614?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Harleigh Laws",
+          "rating": 5,
+          "text": "Great customer service, nicest people ever! And it was so good 🤤🤤🤤",
+          "date": "2025-09-08T03:43:58.425Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21aSVJtcFBSVVZyY2prMWVUQmlVM2xPUVc5T1EwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI9WmbUaulsggSbEEhFMs7T3F7gj3W-K-4o2ymPLij0PJK7Els=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110497887499758173819?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "janna yarbrough",
+          "rating": 5,
+          "text": "the esquite and fresa cup were to DIE FOR and the girls there were so nice!! super clean too and organized, i will def come back",
+          "date": "2025-08-28T01:44:26.208Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xGUk1sWk9PV2xWZDJaSmFVNDFTVU56Wm1WdFZFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIFXzmwfZom-xO10D3AZSB2MM9c5FQROAeCFcWV5xwinqR5qw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106154030623007649304?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "airam omac",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-24T03:52:33.845Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t0M1MySlpiMEpVVG5oVWNrdHZhRzl6TXpRMWFVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJAOcEB1gqC25df_ZRZzHK0oxUDhZO8SFeVfV0-IpnX9tKEEHM5=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110936826491000121633?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Alex Rodriguez",
+          "rating": 5,
+          "text": "Everything it's delicious 😋",
+          "date": "2025-08-19T15:04:28.210Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xCSmRtOU5NRW80TUMxQ2NIRlVkVk0wZWt3NWJFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVZDLTpU5XnK69S-Nu_oNRQJP30UqduB8Xw_JIWcq3_N7xsspRwpw=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113267991521877083815?hl=en",
+          "reviewerNumberOfReviews": 173,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mora Montalvo Jovany",
+          "rating": 5,
+          "text": "One of the best experience eating some refresh",
+          "date": "2025-08-05T22:04:34.407Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xCMGRsZHNjRFZoYjBkemRISlJWVjlYVTNaU1JtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUQtMeNv3iWz1KtrQqydR1-xMy6QOqKTH6WvHUhigJUWkk_zI0k=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101277444060948305000?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mackay Butler",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-03T03:51:35.729Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21kNlJUQkhTbTk0U2pSQ1UwdEpkRXd0YW1oaFNYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXq7gazEX5m5-36Lwpu6rFMz1rv2G7AcLJhMIHNvSVRUEHPoKk=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103257088250170288040?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jhonatan Aquino",
+          "rating": 5,
+          "text": "😋",
+          "date": "2025-08-03T03:34:26.950Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tZNE1YSnhOVGhpT1daU1l6ZzFVbFJTU0dSek9WRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ9OCDCA1OX6kfAPtOUryN-PCm4zxUg6GYmluyKwGgFC9_LLw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101597429146106678550?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Alma Juarez",
+          "rating": 5,
+          "text": "Delicioso 😋",
+          "date": "2025-08-02T01:10:03.329Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2sxWWNtWjRZbWxNZVVKS1RYbzNSbWROWkhSc1IzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ6ya9P5jmQqCqIKfBeb1HtGQOp3fhG-DOOrxB4n7kOxAci1A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117491171268232030085?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Miguel Sosa",
+          "rating": 5,
+          "text": "Excelente atención y sabrosas nieves",
+          "date": "2025-07-28T02:25:34.110Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tWeVpHTmtObTVXUkRVM05XeDNNbmxFY1hndFVWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJmdO7gXfiTIp8IE5pEFfPa2jGxXdoze50inkNQqSQCiuKZbA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104325254566926442771?hl=en",
+          "reviewerNumberOfReviews": 36,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Stumpyy 009ed",
+          "rating": 5,
+          "text": "awesome place good snacks",
+          "date": "2025-07-26T00:55:56.921Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21WUGVIcFlVVXBuZVdkMGFXSnpXVWR0YURWSVdVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVogZeVFM8mTrDT5iyZrfLBPUJZZhDGc-VeYRSoHEZ0Zz4omIQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117094895777651069033?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Babs Slamm",
+          "rating": 5,
+          "text": "Amazing, fresh fruit and patient staff. I love their menu and you get a lot of food compared to the price!",
+          "date": "2025-07-25T21:40:42.872Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25oUWFrOHdjVWhKVUhkZk1XMU5SR1pNWm05VVQxRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUiKlybf5IJkizzMVzkTPw6gYAEQl1mJupBpmzRQVsA4W9qUNU=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102635896573176258398?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "LiYin Liu",
+          "rating": 5,
+          "text": "Mangoneada! Sweet, sour and spicy! It made my headache go away in the summer! Their watermelon drink and horchata are good too!",
+          "date": "2025-07-24T20:22:11.834Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2sxaGJFRjNSemhNZFRsSFZreEVSM0Z3T0RoR01XYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV5bJePR6syHAa6L_qNJs4SZsPfofgEHgxUwfMPkXNBzowLAc01=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104355391971260139462?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jessica Tapia",
+          "rating": 5,
+          "text": "Excellent place, the atmosphere is amazing. The staff was super helpful and attentive. Great options definitely recommend.",
+          "date": "2025-07-23T15:46:13.539Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xwc01VRlRkRzVGY0hKT1NIZE5kMUp1VEhOdmQyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJzt-UkGk25TGJwYW9lktkx6t3V3wx7XoMS-bFXx_GEv7Pirg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104768598939586939903?hl=en",
+          "reviewerNumberOfReviews": 48,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jewel K Kloth",
+          "rating": 1,
+          "text": "Not where we were trying to go",
+          "date": "2025-07-19T19:29:58.147Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2s1dlFYbEZkR0o2TWpaR1FuZHFXV3hSTjFGbU1tYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWW83b_4VaM2VfCnBjYPxZWqspnk_gHVyL_bX_Smh7c3zTc5ctDNg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109584565889111226050?hl=en",
+          "reviewerNumberOfReviews": 256,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Sam Retana",
+          "rating": 5,
+          "text": "Muy rico todo, siempre limpio y los trabajadores son bien buena onda. 💕",
+          "date": "2025-07-18T02:00:33.479Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21aeVpVRlhObmRKWDBOaU1EZEVNVEEzTUhsdlpHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX4RzCUPm_PaNDCe8kqW-m7ajj9441gwHQMSvHW_pfJwYfMHs5A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104967932717138069184?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Abrahan Andrade",
+          "rating": 5,
+          "text": "Estuvo tan rico que se me olvido tomar foto de cuando me lo sirvieron 🥰🥰🥰🤤🤤🤤",
+          "date": "2025-07-15T03:11:43.900Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xkcmVHUmhNbGQyTWxwWGVWTklNVWR3WTFNeWIxRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXf8n9ZQvfNA4iCZWA6faCXY1WPmo1FehcKPCKMidcF2JUiA60=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112030644360837309926?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Milena",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-15T03:10:16.003Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21ST1VHSnBhR1Z6ZGsxVlNYcEtjMDQzWm1scmNGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKuERfNM5TkDGwyihSMmey3jg6rYFGy7rIlYg7J5GhjiU7QiA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114699940811402217051?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Bere Huerta (Me-myself-n-I)",
+          "rating": 5,
+          "text": "Mucha gente amable y muy buen servicio",
+          "date": "2025-07-14T06:55:01.677Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURWcmRUaWpRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVt6rsn2TF5EVLrNg3bMM5RDJT9n4XVjKSex0G9KyE0wCa_qHjQvA=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101246755472568638882?hl=en",
+          "reviewerNumberOfReviews": 622,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Luisa Romo",
+          "rating": 5,
+          "text": "Delicious and excellent customer service 😍😍😍",
+          "date": "2025-07-12T15:24:02.767Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21GMFpETmtibEpLYkd4SGRHcDZTa1JJTFRORVZGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU0ZRviD72ofKkhSLr2y1w3rtaEJ_RS794thRaF-1EJwVs-A2YJ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117049217316879934941?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Melissa Loosli",
+          "rating": 5,
+          "text": "Absolutely delicious esquite, great price and very nice girls working there! Will be back again when the corn hankering returns!",
+          "date": "2025-07-12T00:04:20.091Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21kS2JrWjBVR0Z0V0hSaVFrdGZVMk5CWVUxWE0zYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUIWVBj9RERIbTiC1dn0_Wm3FoBsBhEoYuRzEuiADr8HAtge3gr=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115510806426391425952?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Cristina Rios",
+          "rating": 5,
+          "text": "Muy rico y delicioso",
+          "date": "2025-07-07T23:26:12.423Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tKWGN5MUJWVTVLVXpSdWVIRktkVjgwU21aelExRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXXxgAzHEYiVxfYki396bL05ecvCpeZ93BYI8xWmKoJdGFwUac=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102021833123540021969?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Monica Gomez",
+          "rating": 5,
+          "text": "Absolutely loved the mangoneada popsicle",
+          "date": "2025-07-06T22:31:28.765Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2twb1V6UTJSM2RwUTJrdGFIbFBkekpwVEVsS1lVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKn17UDpecfXqtv7xmuGzdW7W2VUSftl0k_nnyfHrYsgv358Q=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117477627794562783844?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Buenviaje",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-04T03:55:15.353Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tabFVWOTJaVlJOVmpnM1lWZGpWRGxMZFZWS1FWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJV1zwYR8CBncgnH6JlaUOx5uzVLZJgg7Wn4s1fqqz_U25ANg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101908561034983884508?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sebastian Gonzalez",
+          "rating": 5,
+          "text": "The food was good",
+          "date": "2025-07-02T22:37:45.765Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2kxMVpHdEROVWhPTUhONlJHOXRXa05oUVhwQ1UyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV_vaFQGKdt9McAIuMxAWCviec0xK66_7xaGPuNNrbM7-_V13oX=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105906834507940870647?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Maria Curiel",
+          "rating": 5,
+          "text": "Great snacks, super good flavor and reminds me of my childhood",
+          "date": "2025-07-02T15:24:23.591Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xWRWFuWlJZM2h1ZHpKMWIySmpibTFJY2pSclJFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJzrmYGjIHlUT_fwc5-5wL0-o1S8X5ntxuMeUYrd8DYZy1Lmw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107733422880623710779?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Anthony Thomas",
+          "rating": 5,
+          "text": "La Fruiteria es la mejor opción por el hielo en todo el mundo.  Siempre me da feliz a venir.",
+          "date": "2025-06-27T01:23:02.270Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25KaFgxQlJiMWswZUdOR2FYWnBTa3BoUlRWUFNWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJJm8fwc_1HnLzuh05MhGtrWmjGwMkTja7rOzZj9QRTB9jdKQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105556354685375792898?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Aftn Whitney",
+          "rating": 5,
+          "text": "Very friendly and fun environment! All the fruit was fresh and tasted amazing. It was a perfect treat to cool off for the summer.",
+          "date": "2025-06-23T19:02:54.759Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25kNmJVUjJMVjlCVEhOWVpqVTVSVXRsTVdoUFVXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVQ7yBTxigysuvEDrr-k1TIw9YXIHvmduULlpft1fHLcJgxQiKkxA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100459627042913968871?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Arizbeth Urias",
+          "rating": 5,
+          "text": "Fan de todos los productos",
+          "date": "2025-06-23T00:45:06.275Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25KSmFVdGxSRXhVWkhVMGRraGxSSFY0UW13MExXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWn2KMb3NZXZ5YXW-bG7JZr_6fVUOV4CtoCVTBu8KiG1fonbwQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109211469847757310849?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kriz Fortuna",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-22T18:24:03.178Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t0R1pUaGpURXRHVkhVeWMxbzRkWEZsVURKQlExRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJLBcCWZ_w-oHAEnFhY8YDZrBDluhuHE1lG2zCz-MB_MPbzDg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113189275615263288523?hl=en",
+          "reviewerNumberOfReviews": 86,
+          "sentiment": "positive"
+        },
+        {
+          "author": "scarlett conejo",
+          "rating": 5,
+          "text": "Me encanta que te atienden rápido perfecto para un snack en cualquier momento 🙆🏻‍♀️💕",
+          "date": "2025-06-19T04:02:20.453Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT213M1pub3pTak56WW5WcWRWZ3hUblJCVFUxUlNrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJk_d9Ab8sBACDWI7Q2ERXBOK89eFMqV6O7QwoW9jpKRSFeww=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101193748797677375177?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mitzia Rodriguez",
+          "rating": 5,
+          "text": "Me encanta este lugar 😍 siempre atentos excelente atención al cliente simplemente me encanta y lo recomiendo 100%",
+          "date": "2025-06-16T04:00:00.704Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25ob1kwWk1SWEZQZEVaTE9WWmZPRGhWVlhaeVVrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWtaXUXbJGgbw1ZHpp9qTukOMbRiIhCQpOJdFhjDO4JS3R89Mzv=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103162701907978702312?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Alekxis Madjher",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-16T03:55:38.181Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xGRlNtdzRYMDlPVjJocU5tTnhaelJJZUc0MGRVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ6gN4T-qQ26OdX9VLuZW2c16bKZH_J2-qm5qgReB_Wqe9VVw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104270523094569932069?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Teresa Orozco",
+          "rating": 5,
+          "text": "The staff is awesome 👏🏼",
+          "date": "2025-06-15T01:19:56.004Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2poRmQwaG9WMFJsZWtkTU4weG1PV1IwVVZKemEzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIJhbX9PzMSEw_5kQVFCNVVsmNxpBzLV-RnJyC_xgdD4p-Xlw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103997976615821159957?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ada Garcia",
+          "rating": 5,
+          "text": "Great snacks fresh and great service",
+          "date": "2025-06-15T00:07:19.042Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJbUlfTUhwc3BqVFpREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJpxvsyWiDgA8oBFTIViizPOiEErwZ3LfHEQONPpFRUmU3WQQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117701542717533306918?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Thais Valeria Burigo Monteiro",
+          "rating": 5,
+          "text": "I always come back for fresas con crema!! Delicious!",
+          "date": "2025-06-14T15:21:35.417Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21sdWQxaFFUMDVFUkZGNGNWcE9jamgzZDBKNFJYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJdjk1nyWG9_OBc4Kr9OC8-9PnflAktK-A9_rQVMw90MuPR=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110507186030102889386?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Nadia Gutierrez",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-14T02:19:49.627Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tzMFVqSjFZVVEwYlVGWmIyUnFNREU1TUZwaVdsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLAItObSPfD5SqxvFgqoSshNxqRuW_y6RvyqPDk6GbrHQxDhBg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104194175903972699033?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tarcisio Radamés Juárez Rubio",
+          "rating": 5,
+          "text": ".... Me encanta este lugar.... Me hace sentir como en México.... Y ahora ya venden \"Pan Dulce\".... ¡¡¡¡FELICIDADES!!!!....",
+          "date": "2025-06-10T01:07:58.389Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURIN1lmUVV3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVBrfYN0IBy63FvUzr64lWL5dV7_IIt7t4N_IK26_pD5AC3GNo=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117795980921151239390?hl=en",
+          "reviewerNumberOfReviews": 169,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Elizabeth Eguiluz tavera",
+          "rating": 1,
+          "text": "Pedí un helado en cono y me lo pusieron en vaso y me dieron el cono en la mano cuando les dije se buelven muy lentos atendiendo gente",
+          "date": "2025-06-09T03:04:51.490Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VKTy15YkNlbThEMXJRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWn6WlHqD-lEhxsUwfNlRK4LVsI_zLUxBneoe6Cg7msTVg3kVH_=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104671525990324558299?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "negative"
+        },
+        {
+          "author": "yadira angel",
+          "rating": 5,
+          "text": "Everything is really good 👍",
+          "date": "2025-06-08T21:58:57.543Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJM2pudG1VMmRmRUV3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVcoHaSSClXf-Y2nqT35GH2JzoLFUuIzAgsjjvvy2ycs8O8fBH0=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113838562645105674860?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jeanneth Aguilar",
+          "rating": 5,
+          "text": "I have been visiting Fruteria for a year now, they are very kind and accommodating to my marketing needs, specially when I have a large order. I have tried almost all items on the menu and have received very satisfactory reviews from my marketing visits. I let them know the two locations I go to most and hand them the info. Thank you for the delicious treats that take me back to my childhood. Absolutely LOVE FRUTERIA!",
+          "date": "2025-06-07T20:19:39.868Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xVeVUxcFNkazFEU1dGaFNWZFJaR1Z5UVVwT1MzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKpgScAhgJ82xPlHerPVmjs3rfB0ku-gGQuZyV_j7N_RP6AWA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114385862244266423483?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Max yvens jr Bernadin",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-07T02:32:54.132Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VLR3A3Zl9wX0lTMGdRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLfltZvxWVh2qUgdTb4-saWYP8SKGk3_z5a6ahRoT40tDdKtA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100853863856574969424?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Linda Araujo",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-04T15:05:01.476Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VNbW9fdmJOcWFUa3l3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWf8NhI4Loy3tLFk_x8dEoWQ-y0mNXwaRBTqpIAHHsPzLGUGvwR=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109446244974418095936?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kaylee Madalynn",
+          "rating": 5,
+          "text": "delicious!",
+          "date": "2025-06-03T00:43:55.494Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR2aHFPY0ZREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXZeaQJleQa8A_yxZ3bbLm0cqLcmEgSQxbQMtBZ9GTuaAB4NN5ssw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115413737705440605470?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Carrie Anderson",
+          "rating": 5,
+          "text": "Fresh fun and delicious 😋",
+          "date": "2025-06-02T15:03:09.423Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VKQzN3Yy1FZzRySFF3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKKIti8jDaq0AewBevG9fSJrOebYr18u4gqFscxznyAhSvngg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103798538484391018398?hl=en",
+          "reviewerNumberOfReviews": 33,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Antonio roblero",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-01T18:49:13.098Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJdm5pT1RZLU5QUEhREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ_7wPP2FxBIGfyN488o7izGbCqIrmpsaFNCusotroT0iXXSQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107053925295417659659?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Verito matias",
+          "rating": 5,
+          "text": "Me encanta este lugar\nBuena atención\nY todo esta muy rico",
+          "date": "2025-05-30T21:51:28.803Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VOU1Z0ZWZSMUwzWVRREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ2yUZAeP-qLuEdtazSli51jYku3_KZjvO2HdEObxGwUAYaeQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116281269150230482517?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Marjorie Flores",
+          "rating": 5,
+          "text": "Mi lugar favorito ❤️",
+          "date": "2025-05-30T03:11:02.993Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VNV1U4dk9EODV2R3NBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJaNlYbdAL2UeElIlQJCZ3P_ipb4iiSdZIFWFi2Esz58Sh_9w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116241267109332898262?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Maria Frias",
+          "rating": 5,
+          "text": "Me encanta los refrescos ❤️",
+          "date": "2025-05-25T22:22:51.951Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VPTDkwXy1aMHRDX3pnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI6VBOU5unIs3xTl2Mg0Sl_zsIag5UoCXT6HDABkTdyXJ-yMg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113755161140630103520?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Olivia Hansen",
+          "rating": 5,
+          "text": "They are amazing!! Such yummy cups and so nice!! My order got mixed up and they just gave me another one. Great service and great treats!!",
+          "date": "2025-05-24T02:09:05.321Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VQbUpyWTdyaU9pMWV3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXSwzrYXfdyGWSV-4I_lBtQ33p0JjiVSPJ4viYYl-Fhckxqxbk=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100085546492269145044?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Manny Sanchez",
+          "rating": 5,
+          "text": "First time here at this location and let me tell you. The options are endless and the prices are not outrageous. I didn’t really know what to order but I was helped by Sara and let me tell you this woman knows her stuff!!! She recommended about half the menu but in the end I went with the Mangoneada and let me tell you I wasn’t disappointed! It was a hot day and this had a mix of sweet,fresh, and spicy added all in one! Definitely a 10 out of 10! I will be coming here more often and thanks to Sara for the great customer service she provided. I will definitely recommend this place to all my friends hands down. Great job guys.",
+          "date": "2025-05-23T20:59:40.366Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VMWHV4ZmFEbXMzQm5BRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX5PKVlt3VsA7om6r1exH-E-y7t8lB3FOaNENUkDJDKDe3aJh9D=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113476825984667535682?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Guadulupe Hurtado",
+          "rating": 5,
+          "text": "Mejor aguas .ice cream.",
+          "date": "2025-05-23T04:48:06.714Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VMVGdySU9UcUwtc3pRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ8ZUQ2gQ2eDbkEOk-5B4eIUx8WKLMD60ag_TNRUiziKbscGQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114749062670555298721?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "uriel maciel",
+          "rating": 5,
+          "text": "Great customer service from Sara",
+          "date": "2025-05-23T04:36:34.898Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VQS3gzWUhldzVQZVFREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVBGXQqLVj8cbOdBM308PWr6SHeAlKSuP3A2J_uVogVWzKjwvI=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105559740310133882414?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Rick Morones",
+          "rating": 5,
+          "text": "Had Esquite and Fresas Con Crema, was extremely delicious! And was offered samples of the juices that are served on menu as well was extremely satisfied with the food as well as the service ! Great place to come and try out! Will definitely be back for the horchata drink and friendly staff ! Great job!! 👏🏽",
+          "date": "2025-05-21T18:41:48.595Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VQS2dxOF9qN2NqNnJnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLWwReIqvTFgVfWBa6vWLAGKqxKlTq_BB3SdHlbJkgZ0KYVKQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106503289145601008674?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sara hurtado",
+          "rating": 5,
+          "text": "Best ice-cream and fresa con crema.  Everything  is so good and tasty 😋",
+          "date": "2025-05-20T15:07:21.754Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNUcE82dEVnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJK8N2orwHDkNHMWzSaFF1q0mphtqEVopT0XYZ7fRQiXjBl6Q=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115926295782307789046?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Joel Cortes",
+          "rating": 5,
+          "text": "",
+          "date": "2025-05-19T15:15:58.156Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VLX3JpdTJodzR1NThnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUfUOKH9yNcADM_vXBvzElYEmJsy1QA_bZxRUbqzvVcfL_3oFM=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112676155522176481872?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "brittany higuera",
+          "rating": 5,
+          "text": "Great customer service!",
+          "date": "2025-05-11T22:47:34.670Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VLR0N2YzdjMk5DYlp3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXmg-GTSQrg7qEcNhBZ6_aDEH6zP5MEqPV5g1qsUaOiezqgxL62=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101381013750774001717?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "suleyma McCoy",
+          "rating": 1,
+          "text": "Most of the staff is great. There is just this one worker who is super rude. I am allergic to pineapple, so I order my snacks differently than how they make it. I opened my order and it had pineapple. I went inside so they could fix it. The girl who was there said it wasn't her fault that I never said no pineapple. Again, I am allergic. She said I had to pay for another one since it was my fault I ordered it wrong. On my second order, she put gummy worms on my food. I never asked for gummy worms. I was so confused about why she said I ordered it wrong when she wrote  it down. I love this place, and most of the workers. I was shocked when she said it was my fault, lol. I'll probably still go back but won't let them bully me into buying another one when it was their mistake.",
+          "date": "2025-05-07T12:35:04.262Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VKU2N2ZTNVbzhqQnVRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWyYph1CorX7ylpMAARBotAmjASzXbifQCQkr-SAfOxO3Nqr5-jCQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106248844779812687164?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Brandon Cierra",
+          "rating": 5,
+          "text": "Always the best",
+          "date": "2025-05-04T15:33:48.666Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNZdnM2d253RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLd7qAQtM0MA9kLnZ6NTmxWxehAw_yFSepKyOHnpdOcMSd-QA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103050738538786492021?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "melissa",
+          "rating": 5,
+          "text": "Love the Fresa con crema and the different aguas frescas like horchata de fresa . There not at lot of place that have those different  done freshly",
+          "date": "2025-05-02T19:25:41.689Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNZd3JPb2l3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJd0yCDvR2IuJAky4x6nGVeQyCWg9Y1kd4U7wA_SR80wG3-gg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113888954616702465887?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jenniffer Torres",
+          "rating": 5,
+          "text": "",
+          "date": "2025-04-29T03:12:52.175Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURvNjVXSExBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU3REyjY8TPquTEH4C-Fcu3eC9t4kIWOVIuROzGYn-_LRb-RDga=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112565957406065147540?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Erika Ibonne",
+          "rating": 5,
+          "text": "LOVE LOVE LOVE it here! Everything is delicious and priced fairly. Service is quick and always welcoming",
+          "date": "2025-04-25T00:43:56.570Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURvcm9pMV9BRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWcZzr3nAvFOg00RZS4YrScCOzMQ9hGZZ_RKXqyG_Z8Xprvav3neA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117667134246008845888?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "positive"
+        },
+        {
+          "author": "agustin gordillo",
+          "rating": 5,
+          "text": "",
+          "date": "2025-04-19T14:39:15.251Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNvNDRMRjBnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKeSGzAyj0MYEx2UrDkudZ0vArEfaClUXgADrZ-s7o6e0_kgw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110402135253789551350?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Brit A",
+          "rating": 4,
+          "text": "",
+          "date": "2025-04-11T15:11:52.225Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURJeGNUQ2dRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXwUyqiH3EeXglDGeBU_xwlLRDILHuFEyuxBku8OieJKdUauVkFgQ=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100285791263601526988?hl=en",
+          "reviewerNumberOfReviews": 88,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Yaz D",
+          "rating": 5,
+          "text": "They have the best mangoneadas in town. Service it's always 💯!",
+          "date": "2025-03-29T00:52:40.720Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUR3ajlDR3lBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJwPaBQ6NML5nc0xaC1EhwZRsJtd_0fdtyhpFDZNm_jK-Vr5g=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117544172795196038131?hl=en",
+          "reviewerNumberOfReviews": 17,
+          "sentiment": "positive"
+        },
+        {
+          "author": "glabal77",
+          "rating": 3,
+          "text": "My one complaint its that there’s never enough staff when you come in and when you order on DD they always miss something… do better frutería ,,, have more staff !!!!\nBest customer service by Diana very nice and attentive 🩷",
+          "date": "2025-03-27T22:30:50.806Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNUMFpqYzRnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUxQN3NI0uYKxTTGcK5F05vWvOMjFxCLpTcAUqIYfTwJJcERokJmg=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106865894302695454589?hl=en",
+          "reviewerNumberOfReviews": 417,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Isabel Garcia",
+          "rating": 1,
+          "text": "Me gusta el sabor de sus antojitos, pero no les gusta preparar pancakes cuando tienen prisa\nY si no lo puedes brindar al cliente deberían sacarlo de su menu",
+          "date": "2025-03-24T01:08:13.124Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUR3OUlxcW93RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJmuUwBhJI_sNfpyxEWx50mmo_RXcwoXZzncdErVXxO5Dk7iA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111407375692898379135?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Nicolas Restrepo",
+          "rating": 5,
+          "text": "",
+          "date": "2025-03-23T22:31:32.899Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUR3MUlfdUNnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIq6QDYepBw89f1nGeSbgf6ayFG_YTirOuiRbme1b-7oUlqxg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101837963967711404077?hl=en",
+          "reviewerNumberOfReviews": 38,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Roberto Hinojosa",
+          "rating": 5,
+          "text": "Lindo lugar, ricos helados ,y un trato muy amable",
+          "date": "2025-03-16T15:02:50.706Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUN3LUtlQ2NBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ_5-v67LiKdaE1vSEUcI2kHvxLfzUZaMqRzeBjTrCAX6ab2w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115830279264308184903?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Isabel Acevedo",
+          "rating": 5,
+          "text": "The girls are so respectful and attentive loved it!!!!!! And there’s snacks are A1 would go back for sure!!! Definitely a vibe!!!!",
+          "date": "2025-03-15T22:25:02.070Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUN3b0xtT3RBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ1ns-vR0m2jrBalf1EGB8FYoAyReBeuwPgrUni5HwlwumyZ8nP=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104633691490137836169?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Alice B",
+          "rating": 3,
+          "text": "Asked for tap water if possible and was charged 2.95 for an 8oz bottle of water instead without telling me.  Additionally  I was charged for a large when I ordered a medium. When I pointed this out I was told with a shrug that the prices had gone up. All in I went in asking for a cup of fruit that should have cost $8 and paid $13\n\n***Edit****\nI was contacted by the business and refunded. I'll give them another try.",
+          "date": "2025-03-10T20:35:56.499Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURRcHREWUJBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWVBEyNcsC_l5qZmuTRSyJaappWjKPYmMzpRZmEBOUFfjLBOuexcQ=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111722794551218577852?hl=en",
+          "reviewerNumberOfReviews": 179,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Sully McCoy",
+          "rating": 5,
+          "text": "This place is amazing. The customer service is great. The workers are always kind.",
+          "date": "2025-03-06T21:32:42.449Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNRNF9UN0hBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK7lPlPjxlhVlD6RvgpNWO7As_mZQ-QGRy4u0nWMBrFq3xPomgE=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107753318272333859149?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Naomi Alcántara",
+          "rating": 5,
+          "text": "",
+          "date": "2025-02-18T23:37:34.778Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNnMmZQaG5RRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWPi9xst5NKdoHdvWzKve41b9t88ayLLBav9avlmAi0lDatdRL4=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111053897800513518930?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Natalie Leishman",
+          "rating": 5,
+          "text": "Adorable spot and SO yummy! 🤩",
+          "date": "2025-01-25T05:21:34.065Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURfeVpEbE53EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ5-7lt3kD_f-kXl2aZn1O6YwupX_DYOqyd1y9zZTktAofPur8=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103717607987827278655?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Daniel Paniagua",
+          "rating": 5,
+          "text": "Los precios aun son accesibles, de buena calidad y el ambiente es muy bueno 👌",
+          "date": "2025-01-19T15:21:21.155Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNfcDlQT1lBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJaHlZxfNfwLXhracRnJZJfqonlTbyTzkUiw7V60yy5AuRSOw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102492213803389503874?hl=en",
+          "reviewerNumberOfReviews": 43,
+          "sentiment": "positive"
+        },
+        {
+          "author": "maricela carrillo",
+          "rating": 5,
+          "text": "",
+          "date": "2024-12-24T19:25:17.338Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR2cDctVFNBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUHchaHH6c7bgBx5mZ4X1phUx0AqwALQkp56CDVygqgPmzsFR60=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117376524299166122431?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kristian Jensen",
+          "rating": 5,
+          "text": "",
+          "date": "2024-12-19T18:25:59.923Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR2MnVIVERREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUBemUGkqszmOw4bC0hY-Hk76k0MMP3z1omG8oeAwWNx7Ythr4=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114541325344339079574?hl=en",
+          "reviewerNumberOfReviews": 116,
+          "sentiment": "positive"
+        },
+        {
+          "author": "mel z",
+          "rating": 5,
+          "text": "I love this place! The customer service is amazing! Once I ordered something not knowing it had something I’m allergic to and they gave me a new one without any trouble. Definitely worth a visit!",
+          "date": "2024-12-19T03:27:51.813Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUR2MHR6TXlnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXd2fs62cDgmFt0Cv6yThA0YxJr6wQkHlL-SuCIkY3ZjQAVTCJo=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114545349518876124704?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Nicole Gomez",
+          "rating": 4,
+          "text": "To much $$",
+          "date": "2024-12-12T05:21:01.282Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUN2OGVYaFpREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWM-CJG5jpvi4WAoefRz-x4BOaFZA9mkW9MdhYAhyCvKOz7MJU=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108760416792527087178?hl=en",
+          "reviewerNumberOfReviews": 25,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mari Garcia",
+          "rating": 1,
+          "text": "Cuando empezaron las mangoneadas estaban muy bien preparadas. Ahora dejan mucho que desear. Las últimas 2 veces que he ordenado ya no las preparan igual, tienen menos contenido por el mismo precio 😤",
+          "date": "2024-12-09T00:26:03.317Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUN2M0l1LUFREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLIrHW2inRG45LmjGiBnLKZQKz78S0dtQe_Mhw0QYt5FXS2=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116097854483983245166?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Kelly Araya",
+          "rating": 5,
+          "text": "",
+          "date": "2024-12-05T01:17:07.227Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURQdmJuWmVREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJuWXGRxQ08SwePugruJ2EZI4V0p-aGRIpO3MLU_m_gV1Hwmw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112291838475187008951?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dayana Aristondo",
+          "rating": 5,
+          "text": "I came to this place a couple of days ago for the first time with some friends. I ordered the mangoneada to give it a try. My resistance to spicy flavors is pretty bad so I asked to the girl who took my order if she could remove the spicy ingredients and replace them with something non-spicy, she made a wonderful choice of replacements for my order which I loved 100%. The customer service attention was so good. In this case, Angie surprised me with her positive, welcoming, and warming attitude so I can enjoy my experience at Fruiteria better. I'll for sure go back again! The options for ice cream or a refreshing treat are so good and delicious!",
+          "date": "2024-11-28T19:12:11.108Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURQNkt2RklREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLuJKndSIS-1y4Cv45IS2eSHflvaLPgbbYApE9OOLFidG0Uxh4=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102876540087975493073?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Yahneli Garcia",
+          "rating": 5,
+          "text": "Love going here! Very good service by Angie and everything always tastes super good😮‍💨",
+          "date": "2024-11-26T04:43:29.174Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNQdWYyWEtBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUPLRngrxyeQs2HbdkDTqtZi27ikn9RUi6C5j2UsfcH0GhVrhPqQg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100749048568352382686?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Coraidna Corona Gutierrez",
+          "rating": 5,
+          "text": "Delicious!!! Reminds me of home 🫶 authentic and flavorful. Not too sweet or spicy. Will come back and bring friends!",
+          "date": "2024-11-24T23:25:51.443Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNQX3A3dGRnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVvC_mXHNYh1FVfH4-8Yf_8bzfSsVOsQ70lnD0q4zklvsIOHEVi=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109213813752433686986?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Stefania Battistini",
+          "rating": 5,
+          "text": "",
+          "date": "2024-11-14T23:31:05.485Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQzdHFUSFB3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVSXX30-GEz4Cqw1scFz6Xot_oJPKCQ0nNmmdg5aiZphSw6TmO7=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116759815128107132791?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Israel Perez",
+          "rating": 5,
+          "text": "Bueno en mi opinión es la mejor frutería y Anyi es una buena persona que atiende bien",
+          "date": "2024-11-13T04:51:48.103Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQzM05LMVdREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLo1o8e2aAzfJwbOOQ6UrHgd5YrpCKotu_c4DrzXkB6mQlZFA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102693691380835373397?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "RC Holloman",
+          "rating": 3,
+          "text": "Wish the server had advised how red hot spicy the “candy” topping is on the mangoneada.  Very uncomfortable pepper powder throughout the “ice cream.” Try a small sample first!",
+          "date": "2024-09-16T23:35:39.521Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURINGFPVUlREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUF6WsTyDJb1sjwl6gk7e3RRlm6wOJRT3expiZRN6HaxOjNLMQyRg=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112338889411289151444?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Roberto Robbertze",
+          "rating": 5,
+          "text": "",
+          "date": "2024-09-15T02:38:12.319Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURIdXRHQW5RRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKmV5LLAOoy9Bn-2SwtTsgQ_EbsWxe2159UMob4SvBdDj_fJA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113355083805002948026?hl=en",
+          "reviewerNumberOfReviews": 35,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Katie Giras",
+          "rating": 5,
+          "text": "Update: the owner, Noe, let us come again their year on our field trip. Again, the ice cream was sooooo good. The kids were happy and the employees were so kind to us! Thank you!\n\nWe took our special needs class on a field trip here! The kids loved it! The ice cream was so good! All the kids and teachers loved it! The employees were so kind to our kids and the owner Noe was so great to let us come!",
+          "date": "2024-09-13T22:09:52.449Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNqaXZLaDJnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXJliDzuIQAXdM03W--PW9S2iGXpSs9v2QZb-SHButpgYw4yAXZzA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103380796614963866475?hl=en",
+          "reviewerNumberOfReviews": 230,
+          "sentiment": "positive"
+        },
+        {
+          "author": "L",
+          "rating": 5,
+          "text": "Very good desserts and snacks and also extremely affordable!",
+          "date": "2024-09-03T03:41:53.702Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNINHBmUENBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK1A_aIvJ8JBAZEjU6NhR3-EfHvH6pBg9blIGNxML12omuy4Q=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111495899048202106288?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "dereck angeles",
+          "rating": 1,
+          "text": "Pedi un una mangoneada y lo unico que me dieron es un vaso lleno de chamoy y frijoles de con chile. Nada de helado.",
+          "date": "2024-08-29T23:50:22.975Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQ3ajZ1Q1lBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKLS3-y_5SapWQ6Z9LxQmCbrQ6M3QnDEBCXN3LslZPziJqHTQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100541079713874758782?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Isaias Gomez",
+          "rating": 5,
+          "text": "",
+          "date": "2024-08-08T16:32:13.073Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURiX1oybzVRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJpTp4pUvrBTSQ2VKw9ruKeIHbDaNEWlnrHZywM52ZwzU1NRw=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106975405617276614049?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Paul Waldron",
+          "rating": 5,
+          "text": "",
+          "date": "2024-07-21T16:15:37.963Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURybjVXTGdBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWw2RUGJPGHSIZmzDqSHr7TXUrahPKoyi68mMK3jJERzJkgfRgc=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110071147568191174646?hl=en",
+          "reviewerNumberOfReviews": 375,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Oscar Gonzalez",
+          "rating": 1,
+          "text": "La mujer de pelo rojo atiende de muy mala manera, parece que uno le pide las cosas regaladas, si no tienen ganas de atender NO TRABAJEN, la otra muchacha de pelo rubio si fue amable con nosotros y los demas clientes mientras la otra solo hacia malas caras. No creo volver",
+          "date": "2024-07-18T04:07:13.585Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURya2ZEVFZREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX49_MDvjrpef_3o2BIDpYkA7d-h67OTx7nBtOSEkOF0mThCBb9=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112298982615688501016?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Fanny Mendoza",
+          "rating": 5,
+          "text": "Es un excelente lugar para venir y degustar algo fresco con tu familia,el lugar estaba  limpio y fresco,las chicas que nos atendieron fueron muy amables, recomendado 100%",
+          "date": "2024-07-15T20:52:05.565Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURybklxVGZnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXrT_geG7OejZO-0Ou2pFUq_dlVvcAa1kMprxsIkFdHmFDLQyWA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106055646086060646860?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dan Cano G.",
+          "rating": 5,
+          "text": "Very nice place, we love “Fresas con crema”.",
+          "date": "2024-06-28T04:02:00.572Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURMX3Q3Z2FBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU_Nj_BrdHGaU6slqmNQaQU0-L5ILNAB1hnI8VQ38v5VMffyyou5w=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101906890902990456582?hl=en",
+          "reviewerNumberOfReviews": 63,
+          "sentiment": "positive"
+        }
+      ],
+      "customerMoodAnalysis": {
+        "overallMood": "delighted",
+        "sentimentSummary": "Customers are genuinely thrilled with their experience. With an average 4.6/5 rating across 100 recent reviews, your restaurant consistently exceeds expectations.",
+        "sentimentDistribution": {
+          "ecstatic": 7,
+          "delighted": 81,
+          "satisfied": 5,
+          "neutral": 0,
+          "frustrated": 0,
+          "disappointed": 7,
+          "angry": 0
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "food quality",
+            "mentions": 25
+          },
+          {
+            "theme": "service excellence",
+            "mentions": 10
+          },
+          {
+            "theme": "atmosphere",
+            "mentions": 3
+          },
+          {
+            "theme": "value for money",
+            "mentions": 1
+          },
+          {
+            "theme": "speed of service",
+            "mentions": 1
+          },
+          {
+            "theme": "cleanliness",
+            "mentions": 1
+          },
+          {
+            "theme": "poor service",
+            "mentions": 1
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 23,
+          "satisfaction": 39,
+          "disappointment": 1,
+          "frustration": 0,
+          "anger": 0
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "Customers rave about the authentic and delicious flavors of the ice cream, with each flavor tasting exactly as recommended. - social media marketing can showcase this strength",
+            "The atmosphere is amazing, with super helpful and attentive staff, creating one of the best dining experiences. - review management can highlight this positive aspect",
+            "The establishment is consistently clean and organized, with friendly and patient staff, making it a welcoming place for families. - Boostly marketing services can amplify this"
+          ],
+          "improvementOpportunities": [
+            "Negative experiences with rude staff and order mistakes - review management can address this concern",
+            "Long wait times and staffing issues - Boostly marketing services can improve this",
+            "Misleading menu items and unexpected charges - social media marketing can improve this area"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 100,
+          "averageRating": 4.6,
+          "ratingDistribution": {
+            "1": 7,
+            "2": 0,
+            "3": 3,
+            "4": 2,
+            "5": 88
+          },
+          "sentimentTrends": {
+            "trend": "improving",
+            "recentAverageRating": 5,
+            "previousAverageRating": 4.6,
+            "recentReviewsCount": 10
+          }
+        }
+      },
+      "examples": {
+        "positive": [
+          {
+            "author": "Rafael Gallardo",
+            "rating": 5,
+            "text": "Esto si es un helado de verdad. Cada sabor sabe a lo que es recomendado 100%",
+            "date": "2025-09-15T23:31:35.091Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT201NVZVUnBOamhsYTBjM1kyaDNPVU5hVWpKRFdGRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXkPWOqfUg1SbeLK6or8aTWh2tUeVqW9Mvn6A3JTt1nPLZZ7R9N=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/107929422160161554967?hl=en",
+            "reviewerNumberOfReviews": 38
+          },
+          {
+            "author": "Andy matias morales",
+            "rating": 5,
+            "text": "Mis hijos disfrutan venir cada domingo a este lugar",
+            "date": "2025-09-14T00:34:55.160Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2kxYWRFMUdNbEoxVlRaV1JubGlSVXhYZGtZek9XYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVA1-AeFBbRN01AjY7Fbpxl9G2RiANeUi2Bpa2Jkm1Q2BREbKM9=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/110197326394119161532?hl=en",
+            "reviewerNumberOfReviews": 3
+          },
+          {
+            "author": "Crystal Pena",
+            "rating": 5,
+            "text": "Very friend people and good food",
+            "date": "2025-09-13T22:14:45.748Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pSNFUwUkJTVkoxUzJsd1JGODFabHBJVEVReWFYYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUrpv2J-czoYfOvuthoJfafo_q4ET3Z702icOtSB6AuzJ97-TiM2g=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/118093923919023400902?hl=en",
+            "reviewerNumberOfReviews": 17
+          }
+        ],
+        "neutral": [
+          {
+            "author": "glabal77",
+            "rating": 3,
+            "text": "My one complaint its that there’s never enough staff when you come in and when you order on DD they always miss something… do better frutería ,,, have more staff !!!!\nBest customer service by Diana very nice and attentive 🩷",
+            "date": "2025-03-27T22:30:50.806Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNUMFpqYzRnRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUxQN3NI0uYKxTTGcK5F05vWvOMjFxCLpTcAUqIYfTwJJcERokJmg=s1920-c-rp-mo-ba5-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/106865894302695454589?hl=en",
+            "reviewerNumberOfReviews": 417
+          },
+          {
+            "author": "Alice B",
+            "rating": 3,
+            "text": "Asked for tap water if possible and was charged 2.95 for an 8oz bottle of water instead without telling me.  Additionally  I was charged for a large when I ordered a medium. When I pointed this out I was told with a shrug that the prices had gone up. All in I went in asking for a cup of fruit that should have cost $8 and paid $13\n\n***Edit****\nI was contacted by the business and refunded. I'll give them another try.",
+            "date": "2025-03-10T20:35:56.499Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURRcHREWUJBEAE",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWVBEyNcsC_l5qZmuTRSyJaappWjKPYmMzpRZmEBOUFfjLBOuexcQ=s1920-c-rp-mo-ba5-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/111722794551218577852?hl=en",
+            "reviewerNumberOfReviews": 179
+          },
+          {
+            "author": "RC Holloman",
+            "rating": 3,
+            "text": "Wish the server had advised how red hot spicy the “candy” topping is on the mangoneada.  Very uncomfortable pepper powder throughout the “ice cream.” Try a small sample first!",
+            "date": "2024-09-16T23:35:39.521Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURINGFPVUlREAE",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUF6WsTyDJb1sjwl6gk7e3RRlm6wOJRT3expiZRN6HaxOjNLMQyRg=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/112338889411289151444?hl=en",
+            "reviewerNumberOfReviews": 18
+          }
+        ],
+        "negative": [
+          {
+            "author": "Jewel K Kloth",
+            "rating": 1,
+            "text": "Not where we were trying to go",
+            "date": "2025-07-19T19:29:58.147Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2s1dlFYbEZkR0o2TWpaR1FuZHFXV3hSTjFGbU1tYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWW83b_4VaM2VfCnBjYPxZWqspnk_gHVyL_bX_Smh7c3zTc5ctDNg=s1920-c-rp-mo-ba4-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/109584565889111226050?hl=en",
+            "reviewerNumberOfReviews": 256
+          },
+          {
+            "author": "Elizabeth Eguiluz tavera",
+            "rating": 1,
+            "text": "Pedí un helado en cono y me lo pusieron en vaso y me dieron el cono en la mano cuando les dije se buelven muy lentos atendiendo gente",
+            "date": "2025-06-09T03:04:51.490Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VKTy15YkNlbThEMXJRRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWn6WlHqD-lEhxsUwfNlRK4LVsI_zLUxBneoe6Cg7msTVg3kVH_=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/104671525990324558299?hl=en",
+            "reviewerNumberOfReviews": 7
+          },
+          {
+            "author": "suleyma McCoy",
+            "rating": 1,
+            "text": "Most of the staff is great. There is just this one worker who is super rude. I am allergic to pineapple, so I order my snacks differently than how they make it. I opened my order and it had pineapple. I went inside so they could fix it. The girl who was there said it wasn't her fault that I never said no pineapple. Again, I am allergic. She said I had to pay for another one since it was my fault I ordered it wrong. On my second order, she put gummy worms on my food. I never asked for gummy worms. I was so confused about why she said I ordered it wrong when she wrote  it down. I love this place, and most of the workers. I was shocked when she said it was my fault, lol. I'll probably still go back but won't let them bully me into buying another one when it was their mistake.",
+            "date": "2025-05-07T12:35:04.262Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VKU2N2ZTNVbzhqQnVRRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWyYph1CorX7ylpMAARBotAmjASzXbifQCQkr-SAfOxO3Nqr5-jCQ=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/106248844779812687164?hl=en",
+            "reviewerNumberOfReviews": 1
+          }
+        ]
+      },
+      "trends": {
+        "ratingTrend": "improving",
+        "volumeTrend": "stable",
+        "responseRate": 0,
+        "averageResponseTime": "No responses"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ]
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/fruiteria",
+      "instagram": "https://www.instagram.com/fruiteria",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null
+  },
+  "metadata": {
+    "cachedAt": "2025-09-16T01:56:06.826Z",
+    "expiresAt": "2025-10-16T01:56:06.826Z",
+    "placeId": "ChIJOQZi81ORTYcRYwdgehMNtwc",
+    "restaurantName": "Fruiteria",
+    "cacheVersion": "1.0.0"
+  }
+}

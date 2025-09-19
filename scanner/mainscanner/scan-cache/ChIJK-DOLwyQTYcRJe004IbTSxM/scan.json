@@ -1,0 +1,1229 @@
+{
+  "data": {
+    "domain": "bajiogrillutah.com",
+    "restaurantName": "Bajio Mexican Grill",
+    "placeId": "ChIJK-DOLwyQTYcRJe004IbTSxM",
+    "overallScore": 75,
+    "performance": 100,
+    "seo": 63,
+    "mobile": 60,
+    "userExperience": 85,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "mexican near me",
+        "position": 0,
+        "searchVolume": 210,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "mexican delivery Provo",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best mexican Provo",
+        "position": 7,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.bajiogrillutah.com/",
+        "title": "Bajio Mexican Grill | Utahs Best Mexican-Inspired Food",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "mexican",
+        "position": 8,
+        "searchVolume": 140,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.bajiogrillutah.com/",
+        "title": "Bajio Mexican Grill | Utahs Best Mexican-Inspired Food",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "mexican places near me",
+        "position": 0,
+        "searchVolume": 20,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "mexican Provo Utah",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "mexican delivery near me",
+        "position": 0,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "mexican open now",
+        "position": 6,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.bajiogrillutah.com/",
+        "title": "Bajio Mexican Grill | Utahs Best Mexican-Inspired Food",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 0,
+        "keywords_appeared": 0,
+        "total_keywords": 8,
+        "average_position": 0,
+        "best_position": 0
+      },
+      "keyword_results": [
+        {
+          "keyword": "mexican near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Mi Lindo Guadalajara",
+              "address": "Provo, UT ",
+              "website": "https://m.facebook.com/mlgmexicanrestaurant/",
+              "rating": 4.4,
+              "reviews": 966
+            },
+            {
+              "position": 2,
+              "name": "El Gallo Giro",
+              "address": "Provo, UT ",
+              "website": "",
+              "rating": 4.2,
+              "reviews": 1700
+            },
+            {
+              "position": 3,
+              "name": "BRASAS MEXICAN GRILL LLC",
+              "address": "Provo, UT ",
+              "website": "",
+              "rating": 4.3,
+              "reviews": 727
+            }
+          ]
+        },
+        {
+          "keyword": "mexican",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Mi Lindo Guadalajara",
+              "address": "Provo, UT ",
+              "website": "https://m.facebook.com/mlgmexicanrestaurant/",
+              "rating": 4.4,
+              "reviews": 966
+            },
+            {
+              "position": 2,
+              "name": "El Gallo Giro",
+              "address": "Provo, UT ",
+              "website": "",
+              "rating": 4.2,
+              "reviews": 1700
+            },
+            {
+              "position": 3,
+              "name": "El Tio Tacos & More",
+              "address": "Provo, UT ",
+              "website": "https://www.eltiotaco.com/",
+              "rating": 4.9,
+              "reviews": 225
+            }
+          ]
+        },
+        {
+          "keyword": "best mexican Provo",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "El Tio Tacos & More",
+              "address": "Provo, UT ",
+              "website": "https://www.eltiotaco.com/",
+              "rating": 4.9,
+              "reviews": 225
+            },
+            {
+              "position": 2,
+              "name": "Casa Victoria Restaurante Mexicano",
+              "address": "Provo, UT ",
+              "website": "",
+              "rating": 4.9,
+              "reviews": 540
+            },
+            {
+              "position": 3,
+              "name": "Quiero Más - Mexican Grub",
+              "address": "Provo, UT ",
+              "website": "https://www.quieromasgrub.com/",
+              "rating": 4.6,
+              "reviews": 456
+            }
+          ]
+        },
+        {
+          "keyword": "mexican delivery near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Mi Lindo Guadalajara",
+              "address": "Provo, UT ",
+              "website": "https://m.facebook.com/mlgmexicanrestaurant/",
+              "rating": 4.4,
+              "reviews": 966
+            },
+            {
+              "position": 2,
+              "name": "El Tio Tacos & More",
+              "address": "Provo, UT ",
+              "website": "https://www.eltiotaco.com/",
+              "rating": 4.9,
+              "reviews": 225
+            },
+            {
+              "position": 3,
+              "name": "LA CATRINA MEXICAN GRILL",
+              "address": "Provo, UT ",
+              "website": "https://lacatrinamexicangrillut.com/",
+              "rating": 4.7,
+              "reviews": 248
+            }
+          ]
+        },
+        {
+          "keyword": "mexican Provo Utah",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Mi Lindo Guadalajara",
+              "address": "Provo, UT ",
+              "website": "https://m.facebook.com/mlgmexicanrestaurant/",
+              "rating": 4.4,
+              "reviews": 966
+            },
+            {
+              "position": 2,
+              "name": "El Gallo Giro",
+              "address": "Provo, UT ",
+              "website": "",
+              "rating": 4.2,
+              "reviews": 1700
+            },
+            {
+              "position": 3,
+              "name": "El Tio Tacos & More",
+              "address": "Provo, UT ",
+              "website": "https://www.eltiotaco.com/",
+              "rating": 4.9,
+              "reviews": 225
+            }
+          ]
+        },
+        {
+          "keyword": "top mexican Provo",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Quiero Más - Mexican Grub",
+              "address": "Provo, UT ",
+              "website": "https://www.quieromasgrub.com/",
+              "rating": 4.6,
+              "reviews": 456
+            },
+            {
+              "position": 2,
+              "name": "El Tio Tacos & More",
+              "address": "Provo, UT ",
+              "website": "https://www.eltiotaco.com/",
+              "rating": 4.9,
+              "reviews": 225
+            },
+            {
+              "position": 3,
+              "name": "Casa Victoria Restaurante Mexicano",
+              "address": "Provo, UT ",
+              "website": "",
+              "rating": 4.9,
+              "reviews": 540
+            }
+          ]
+        },
+        {
+          "keyword": "mexican restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Mi Lindo Guadalajara",
+              "address": "Provo, UT ",
+              "website": "https://m.facebook.com/mlgmexicanrestaurant/",
+              "rating": 4.4,
+              "reviews": 966
+            },
+            {
+              "position": 2,
+              "name": "El Gallo Giro",
+              "address": "Provo, UT ",
+              "website": "",
+              "rating": 4.2,
+              "reviews": 1700
+            },
+            {
+              "position": 3,
+              "name": "El Tio Tacos & More",
+              "address": "Provo, UT ",
+              "website": "https://www.eltiotaco.com/",
+              "rating": 4.9,
+              "reviews": 225
+            }
+          ]
+        },
+        {
+          "keyword": "mexican food Provo",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "El Gallo Giro",
+              "address": "Provo, UT ",
+              "website": "",
+              "rating": 4.2,
+              "reviews": 1700
+            },
+            {
+              "position": 2,
+              "name": "Mi Lindo Guadalajara",
+              "address": "Provo, UT ",
+              "website": "https://m.facebook.com/mlgmexicanrestaurant/",
+              "rating": 4.4,
+              "reviews": 966
+            },
+            {
+              "position": 3,
+              "name": "El Tio Tacos & More",
+              "address": "Provo, UT ",
+              "website": "https://www.eltiotaco.com/",
+              "rating": 4.9,
+              "reviews": 225
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"mexican near me\", \"mexican\", \"best mexican Provo\", \"mexican delivery near me\", \"mexican Provo Utah\", \"top mexican Provo\", \"mexican restaurant near me\", \"mexican food Provo\" - optimize Google My Business profile with these keywords",
+        "Low Local Pack visibility (0%) - audit your Google My Business completeness, categories, and local citations"
+      ],
+      "scan_metadata": {
+        "location": "Provo,Utah,United States",
+        "timestamp": "2025-09-15T16:15:03.612Z",
+        "total_scan_time_ms": 26827
+      }
+    },
+    "competitors": [
+      {
+        "name": "Locals",
+        "domain": "locals.com",
+        "performance": 86,
+        "seo": 77,
+        "accessibility": 73,
+        "bestPractices": 82,
+        "overallScore": 80,
+        "rating": 4.3,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1059,
+        "keywords": 47,
+        "domainAuthority": 68,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+150 keywords",
+        "authorityGap": 5,
+        "backlinks": 1032
+      },
+      {
+        "name": "Communal",
+        "domain": "communal.com",
+        "performance": 88,
+        "seo": 79,
+        "accessibility": 75,
+        "bestPractices": 84,
+        "overallScore": 81,
+        "rating": 4.4,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 544,
+        "keywords": 27,
+        "domainAuthority": 67,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+200 keywords",
+        "authorityGap": 6,
+        "backlinks": 688
+      },
+      {
+        "name": "The Continental, Provo",
+        "domain": "thecontinentalprovo.com",
+        "performance": 98,
+        "seo": 88,
+        "accessibility": 83,
+        "bestPractices": 93,
+        "overallScore": 91,
+        "rating": 4.9,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1120,
+        "keywords": 29,
+        "domainAuthority": 93,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+450 keywords",
+        "authorityGap": 14,
+        "backlinks": 1065
+      },
+      {
+        "name": "Black Sheep Cafe",
+        "domain": "blacksheepcafe.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 689,
+        "keywords": 40,
+        "domainAuthority": 81,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+250 keywords",
+        "authorityGap": 8,
+        "backlinks": 972
+      },
+      {
+        "name": "Block Restaurant",
+        "domain": "blockrestaurant.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 545,
+        "keywords": 52,
+        "domainAuthority": 83,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+250 keywords",
+        "authorityGap": 8,
+        "backlinks": 971
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 78,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-15T16:15:10.428Z",
+    "businessProfile": {
+      "name": "Bajio Mexican Grill",
+      "address": "4801 N University Ave #51, Provo, UT 84604, USA",
+      "rating": 4,
+      "reviewCount": 735,
+      "phoneNumber": "(801) 224-6668",
+      "website": "http://bajiogrillutah.com/",
+      "formatted_address": "4801 N University Ave #51, Provo, UT 84604, USA",
+      "address_components": [
+        {
+          "long_name": "#51",
+          "short_name": "#51",
+          "types": [
+            "subpremise"
+          ]
+        },
+        {
+          "long_name": "4801",
+          "short_name": "4801",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "North University Avenue",
+          "short_name": "N University Ave",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "River Bottoms",
+          "short_name": "River Bottoms",
+          "types": [
+            "neighborhood",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Provo",
+          "short_name": "Provo",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Utah County",
+          "short_name": "Utah County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Utah",
+          "short_name": "UT",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "84604",
+          "short_name": "84604",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "state": "Utah",
+      "city": "Provo",
+      "place_id": "ChIJK-DOLwyQTYcRJe004IbTSxM",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "reviews": [
+        {
+          "author_name": "Lillian Ashby",
+          "author_url": "https://www.google.com/maps/contrib/111183389819395702813/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXIggozWuvx4JNyiAe1jHpsrSTnuL8Gm6n5mBQe729XiE8DeOc=s128-c0x00000000-cc-rp-mo",
+          "rating": 2,
+          "relative_time_description": "3 months ago",
+          "text": "Absolutely delicious. I just needed some quick food for lunch and found this place. The food was really good. Staff was super friendly and they got the food to me so quickly. I'm very happy with my experience here.\n\nedit to review. I have really liked going to this place for some time, but my experience yesterday really turned me away from the place. I went in though the drive though, normally it takes only a few minutes, this time I spent close to 25-30 minutes there. when I ordered the person seemed really snappy, though that may have just been my perception of it. finally when i got my food, absolutely everything was wrong with it, i got lime chicken with Spanish rice and balsamic vinaigrette, the only thing they got right in it was the chicken which was insanely dry compared to previous times.\nI was on my work lunch and by the time i noticed they gave me everything wrong I had no time to go back and correct it. for the time waiting, the food gotten and the snappy server, i felt really disappointed in a place I have really loved so far. IDK if they have recently hired a lot of new people recently, but i think there needs to be some additional training or at least a double check the order.",
+          "time": 1748630667,
+          "translated": false
+        },
+        {
+          "author_name": "Stephen Kunz",
+          "author_url": "https://www.google.com/maps/contrib/109693398950715365752/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVoRxOJ_iDtu_q1acC-D8zaC_rv3_90l6vKY6LTZjCvPXgWAw=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "I have I have literally coming it Bajio for the last 20 years. I remember when they were over in the bagel den area of river woods and when they used to have locations all over.\n\nIt is my favorite Mexican restaurant on earth. Their sweet rice is to die for. The burritos are exquisite, and you definitely have to give their shrimp tacos a try. At Bajio, everyone knows your name. Although Francisco and Raymond don’t work there anymore (they are missed), it is the best food ever. Would absolutely recommend.",
+          "time": 1745000670,
+          "translated": false
+        },
+        {
+          "author_name": "Oot er",
+          "author_url": "https://www.google.com/maps/contrib/107164650349214367815/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLHX_RM12VFur1TT0oeZpKdYlZfVQAGzZMTY7fzCTIO4KK7Gw=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Excellent Chicken Green Chile! I haven't been here since the one in Layton closed.  THIS PLACE IS THE BOMB! Sweet Rice, Anything with the Green Chile and the beans are awesome!  I definitely will always come here when in area.  I hope the locals know what a treasure they have!  Great and Friendly service as well today!",
+          "time": 1741992048,
+          "translated": false
+        },
+        {
+          "author_name": "Annika Strasburg",
+          "author_url": "https://www.google.com/maps/contrib/114693713938552253692/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX6tezIhEEJwbhU_ipEw2eX6qCX2sTWw_YydyUki5ArIOwjfbqU=s128-c0x00000000-cc-rp-mo",
+          "rating": 2,
+          "relative_time_description": "a week ago",
+          "text": "The past few times I’ve been, they’ve been incredibly stingy with their serving of meat. That all came to a head today when they put no meat whatsoever on my quesadilla. After so many negative visits and second chances, this was enough for me to not want to come back again. It’s really a shame because I used to love to stop by this place after work for dinner.",
+          "time": 1756837514,
+          "translated": false
+        },
+        {
+          "author_name": "Chey Jord",
+          "author_url": "https://www.google.com/maps/contrib/100152381111143374591/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW3ZBWkGQg5c66W6nNO5LYElBRbq_m4p9EaDVECjXJVkso4Mj61pw=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "6 months ago",
+          "text": "Good place to grab a quick bite. Comparable to several places in Utah county, but so good! I recommend these over the others. Good service.",
+          "time": 1742163144,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101245774420547282023\">Scott L. Howell</a>"
+          ],
+          "photo_reference": "AciIO2cyIMRlcWT4S7u-xOfW_OG5I8gAMWvq-rN4duqXJ1ZXNoNRtDRMQ3b-rEb2LFv6bHu4NlYZ4gSEQ1uXDvOsyu96f65wR1lC_47G0OI3rVzR-ojOvzuBr2JVg2e_Nb9lLZxjAuE8ZULlmJw5vqGpAYdEAtoCConRm1Ykd9UEkYWg_5vl0Pqt9-3dvwaaBLGOJaO2N1Dxtc81yahId8DBYzPUcKYQgdGddc2I0LGftvfcE9POdh5I1h4MhswAK-ZOXiwxJiqxBxKLzpEPGRwFy49Z8d3A80dUo8Jz-buXiuPfYCoSKKFT6w16SF1H3OQIjBg9HpeEarViOPoP11Wv6lLdHH4_cgScZODSQwNls19-azDO3Na2P01aEPS_FlhxS5zzRykVVptMzfNnOsLxmEITbEfcnWetZqhAULX_0g6IBL0kRLMJGU_TZozcl9Rp",
+          "width": 4032
+        },
+        {
+          "height": 1440,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117013246862382536807\">Desi Parker</a>"
+          ],
+          "photo_reference": "AciIO2f3g0bCDYw4qC14ShoFYrJI_QYrhAAOiAlsI4k4V-Ah5DunEW8aqs-_AzZi6RhaqEkhaM1LHVGOo3ngAY8MLMkox04EizE5fjP6Toat9XmZwrQfYdlpTQ17OFvSXSxFxjAr15LH0ZpZC9Q5kRJd2ZX7gXG1gKuOZiZUTFhspXHKpQ5Mv5lYxY5u8MjnJrRRkH9Jz0T4k_YsWrhi0i3qpRTwf27jiG05GSFvrLA1RMbTdQq6gHGLXqxSLRCbeaXrDfxaVThczahyec62RmNymjl6Ef7NfYERGPzMvARej2gLwBccnsRmPVNyThHSVTm1cmAJmJRCn9xmlwz2xm8QVUl8y7KiBMXBINLidfEinHI5dUJ67Hlfj22gk0o7URJB-CoPJokXpE9C_fL5_hjj-Nkhugd4ihlVt13RZ8p7Mwo",
+          "width": 2560
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108975135773975026833\">Ricky Monroe</a>"
+          ],
+          "photo_reference": "AciIO2cuDR8UdVA6dRYzcHIeUpxr_U7nQm7mLBghrb5QBZax2H0YVkuAf5fGXEzurft3BK4PSmQT0z1L-gqbp_D9uhAr2mbHkj3zDmxSFGTqefG65_lP6M71wnscSclbnvIkVPxj3FBQJSHFXwEQzMTrqW0tDXMSMUUPVSerpzC9hz9WTl9Xg_mAU7Cf4tNgBZyMMUKxa2Lnf-KTgFiV6sztMORyIjth_qPEJdEqSWwTzXX4c9BISPBqQfRz0JqEapFjWb6iZbnNGjyJF1LQzP_8rIWM9laJsABbw8f6wm1HXjhHs9PzTQk59A_C47qA6HMCmWnSDzzQJVte1U34yWeXfYYgNunFmBSUQGbc68DqFBmilWOunJhrU3V62kLlCzQY2x9YyhnDuvKMe59gBvGW1xipujc4lxe-VmmLl4Bhu7tXJtcrwxPbenMAJLBfaUvY",
+          "width": 3024
+        },
+        {
+          "height": 2992,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/118440979297569838241\">Tom Walsh</a>"
+          ],
+          "photo_reference": "AciIO2dFlubO9xbM1p_ZcBOx5xBMCkKjdB9LfA4zCgr-JvQUC2Rc0YfuUHqCaY9Ra1q38HyutkfG1cImgtBpyAJeVCTIqIqH2LrGXIo9bGmFR6ip-1tnjEjlWR_dv8ym0Z8oGhkUeXW68rdf1hSr1oVhbQj1KpYMnJ_RPkovXNDUU5rL5H-kJOHmgxvrywrLWh0Ty4PhYVLjZJi2EHjdxpeEjAHT8zjoBgD7akfV1mGd44yfoCqwV5jInBxhY6Ncc9mdvwg5CpWWO4i9QK7C21NuJRWJHzSI5QBi4ZxX3ma0arUFppd3QsJZCXjUtZSid_OzPcCrumnRYCh2ipZfV2Lmn7WyO0aeWU7asRsN4P8ZzdIOqBz8D2UedhCqz5NaLDU_raLpWO9nfb-zVIPBd_4ptYEBOFXob4pTe1XP_6P5YbtCYnnl",
+          "width": 2992
+        },
+        {
+          "height": 2721,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107696769648898853365\">Ali Chuntz</a>"
+          ],
+          "photo_reference": "AciIO2eZq6KIN6eblZxbA88h-JvM6K-2QhrYh0B1OQRmXYyYF-h5Kcq08Id6qookrFEagsOfiiqFapSSKUubH85d33Q6YL4LLcCfhhy7sMlL2SaIoNXvDZvbkdYlyfrCnTrnchhxn-gGcfb_K9VF7CT8r1BAAB89VaK7X9bk-Ep9RiWCI8Xz1z9-Uy-MH2N-FcYEDXV_tQv2lXeieM-U1-eAZTB-P_lLJLnRdRP2vF2xD_6nOTD9zDesA7LAw8tpUmcuYGZaU5ZQBugLmGLmyW9ijdWiVAv_BkuKRu7xU3X2TFciv5UPm7VLPgh_uaq3fGq-tDW4EaxHO8kMclxtEYmIJlzM7wEDNA6dzfKymFac6n_zlqEIG35NQqJV9K5HTcB-FUdfCrKn_fj8T0oeqiyetBnJqVNl6LI047EzWnk6d7ZDZw",
+          "width": 3630
+        },
+        {
+          "height": 4800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100152381111143374591\">Chey Jord</a>"
+          ],
+          "photo_reference": "AciIO2eRhxFVdadxC6msDtGa-MGn2aZNYfksZ_fMhXfn5kIhyqrUF08m6_EKpYp4Vtb6dLV2hGS2aT4jrn-BVuGdmTCHj6OK4rSXsJUFOyQHHglDozR1mXNofOToXd9DM8Gt9LFOD2-JD8jf6D6UAqhgqltGfZN048yHDSX6LQDW8g5pYeanO0CrMwFFHUIJRs8c1UljXFfpZz4-OCAjqvfLHXZC9VWVwY_uk2jNdncUDjQBhHljVIsYrEOKdoW5J-YamnuJqmCBoOHfYzjip-eIDAykQ6dCZLIXbWztnnjWM8U9nnJZUhVewJ9k-hMmIPfYpnzdlUfKrcmhkrRPeFSbeP9PyZwFbLxRNbiunLcra6xiBOpUGRbYmZuRFI_XP4Q_hT-O65ngGJtObGQd1h89P7ajh_hIpqUMdugKhUgUhuW12w",
+          "width": 3600
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101245774420547282023\">Scott L. Howell</a>"
+          ],
+          "photo_reference": "AciIO2eLuTk-ShDgGPDAZrSVHBmkvL_-RV8Ju6qSJAfYkPServG8FWe3wUFYYkPzsGT6ajBemjpr_sgzK9fKi4sLdE5XY09DCBu4BZY-_2IOWhjBAWhTiMq3or4QBOsQwzFmgV7FGM_3kcmHm0_stLQNYR-EGBTK7PXbqXC7yKjRYPQt7bNg7OVR9_kP18NQFbIrC47ab_uVYgzXqSXNzKQmHbWtK8CWfAA17vGDpmrwy5uaNWHvsnpVViX0lzVMthPN3rDQOX6NPzzkzJLEAIfCP09CduHqWbY8SxN5wn0utImpQG9nvOQTrSqcdn_N180DFq_7B-CLVkQbN7mX-DpqYl6gHnFpy2kqqq-QKnWfYM4WTvImNleT44yrmItCWRldHN4uGvlZTElzTisEZSmIaKCId6aMxQcKUeQdZs81Euchd2_cQJfFdgXMks98YQ",
+          "width": 4032
+        },
+        {
+          "height": 2268,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101617436887847776710\">Reed Abbott</a>"
+          ],
+          "photo_reference": "AciIO2evTfxlmIzyLOcz4L34bsgv5gOfdBBe1ZZ39Hsh857jNzIssWnaiiImgmXQHGlDixC--ysuaOcPrD8vo0Fz8IFMNRDywwm3b0ONl8TDA45FLRP0DOz_VmcdQEXNP2zB704bDlYuVHiC_yesT3trwL_xrEQqAk6nUt-FCnMQj90DuefPdgk3VYbzXWFC-Pl3W-W_57B1oKngJNmxKnJS0Y6EcQQA7ZDKpvjHRQHUCCC-_hppbuR_6WgkCLEadgN-d1bfJWLRNu_fbeEeDywghUeWdOY2HnZBWVrOV9FD_MmWPmUYBpBTEQNUx1bPb0TWaLTaTn0GZBlyt-MQAKLtVfjp6_IOivcT5MG2ryZ3aMG2S7rWp2JArA2TDfBciNLa5awjuqbLolowtgsv_ajh91mV04tkx3eEy3VyZ0YgyQSU_w",
+          "width": 4032
+        },
+        {
+          "height": 1200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117468038110695242903\">Marco Ruiz</a>"
+          ],
+          "photo_reference": "AciIO2dw62F6vHjJOwYTpR_k9ADFMWciCzxCXMjjo4zLOHhG79et1XGmNhQvl0KAeAcjNbLZ0-lmFI_pXQ7P8QLSp62yv8sj8mM9c0r0nvbj8saxum1ELNLqSJHmnqUa-R2cJtxGO6rIIYuLumu9vqHZxuyL7X6J41Bwtj8SwUAVmimRLbXwJA-GOdcPs54ZUGbtL5Uaoxn9cCxETw-wSv8aiJ5VQESPb89o8Y1Z_YaBtmwslDHIp0Z6No3rchCIZuulqwBhBEKDXrHkSxRzG8bunFv6alfkNzMz9hqudijWTjsxtT6E9tmNUAddpIRwPKOzoGjg6aOBcVarfHV5y-0RUCq4v0DWgpYkyicCcZlQS_6MCxCkAzNXTlocWyzDtWx1dRngGIadL3E0WZ--RLXv44XLoEhiVEQ31pzjAwh5Fz8eqg",
+          "width": 1600
+        },
+        {
+          "height": 3000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117888175441629964846\">Brook Gardner (The Mooo-ving Realtor)</a>"
+          ],
+          "photo_reference": "AciIO2f-6TLZtQ_VImD-nb7lvoht_rZ7gwPc7Bwkxt26BxmyrJmF6q6b1HNQ_mYpvHgYyjxtb1qumvX6KxauXPWc4BZaBse-O-IxZ9Kv8MaBE8g0cBZcHtX9u0IWkJ2N6JdnkKFVCJeEy3n4dPk4v2YsxIvwaH5YYDxwNTtTFSvxf2YcNOVXBIQ7Wu5EIRCSUOwLN39Eh0VhQrSHp8MjZWNC93CqN-fMr6jMv0vVZUNxFm5-1Ae0fJ6MEyoFKOl_JcP3T9bn-tnbQm1tA4YdED_dxEQcX9GAwSnvQAszW8CrIRwI6ku9JQgo0VZFiSzqW6RnSChoapWtaWpLGTmmWjYkN8HsmliznwKAkcKGtNJr1AIpdRndREfmGcRUCTJ32Gmpyhn8q26gt6-AHhIKaZ19F4iB1aEKjX8rsqx5aMWMLPKCJzY",
+          "width": 4000
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 1,
+              "time": "2100"
+            },
+            "open": {
+              "day": 1,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2100"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2100"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2100"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2200"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2200"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 11:00 AM – 9:00 PM",
+          "Tuesday: 11:00 AM – 9:00 PM",
+          "Wednesday: 11:00 AM – 9:00 PM",
+          "Thursday: 11:00 AM – 9:00 PM",
+          "Friday: 11:00 AM – 10:00 PM",
+          "Saturday: 11:00 AM – 10:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "price_level": 2,
+      "editorial_summary": null,
+      "url": "https://maps.google.com/?cid=1390437486214573349",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2f43_HTo3HPo0SFfDRkiS8cnFbLrnH-X5zSrfcwLGT8O4Es_GoWqG6hwCmH_IJ7P0ja66_BO5HfM-dOpZRk44RnMosEOAEb6kJMSLXmgSavqs_UbQ0BUgEcSEelHBHYidL8_8U1275IbnghbYe4t4ixdTOs6gaDhxqAg90BDMHfV7BKOOCnAsv1y2fYY9GnesxcnyXQ-nkDytwA7Alm0cxSM7MA8KhamMBI87IOFXz9gLGBqL4Dzq4inYruIFKMHOg_67VIJzZsV3FXwxIOdvTJDUId4V-nxpE0O6SgNwkDisKxReQDjm-QZaIkC-LRePWzgJq_wOj8QlOtN5twKh9h44l6lTJRBl3ecawaPaQeQFqFvNTRswu86Z4oVqu02aI7R84npgejmE_6E4cJa5AJyqlt1GP4ZE0e3CdqVfvRe52NmdvOYEGeIUhyNBOE&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2cJxXwgYd2Tb7BJ1u6erP8ZYaOgDUDG0XTHDhAeKG6QZbAzYsrTObr1Xj-gm4KvyI3pp6i85OKH8vvzkMN4ZcwVu23oEUUkmrvjHmUlroJom4VJK_mF37BrzZ2jYvlXn7YZm263lBAK9rx8cvjBcye2gnSSvfHOA3l_5jR0COA4_FhQ8Oj-tVPGXQf19M26aHeGFVe_KSvDRIsz4qmFoy8mEYkYtdZo99dffBUEET_-ZMeTKUW6vVM-p8EaTEUySx6QjqArQzcVNzfLvzPy55BHcjj0ZA6_sKKh4QEHlxBw2UL1AR0KmgRNj4NMziNVg4nh9hXjz3mZ7E9wALMM0IMk5az26E4RFHeCnTnAhAMk_y1xV9XqkcKbDvV-x3I0k6olF8TFAjjXbs5Si-1EKX8swAe8L6kvGAMUVo4Y05Q&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2eN4KIvshUwGIMNuWOP577r2io4UU5wh0RFvOP2uFhhH2X7wZeheg0A5-dI05_8eMJvr7bnS8lczEKYu7NmVY3DrAWPAlKXOvGQWNJqLhVScLjDdUc5lx1CV23856jker7ZSns5M8lgv7WrS0Kmj8pQS4aNLGPV8h5uaRd1ozr-l5yBajuVi2YKt8cJoXsMiejfRiiGk-1_NubweGgEE7QjO3iflVo8vkypF_kJm9L0vfv9xblfT0ZtEOmY6LTYpssbxAFNoSAFFSWn3Cehekw99xIR8IQLuu0YLLHi3VKk-C83VKvdb-UxHsrsnhu_6UGuVU2cewncVs3q57UBepyfuASfs5ZuLjiOpUD6hB3dr2lbRQg7uxUWAi-uZzh0vWEq3UIFIlSkX57g5m6q55HqqMV_cLliSZSvWdmNR6QG5VhOqgbzfSySWpXgOXuK&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2ftEfNCoJmy7qWMNlxZVumi7fdjPTQJo53Te0P6O83aSNNxx53ddFofWgXJAnuUUe-bOVuRoUblZqF4o3q4UwPZ7jkiOjTEmetEN2hZ72KQiu_TrxW49bpeBDY1Mex4bohFKb6txIfQubgEgrGQKvog15Y2KATMzYOO0h5nQu8a9zxN6xNCvL8R3Kk-fX2YLDmQcAGRig8hvq1UbasDaIrgcWrzYaDB693iU2Kl-CA_VArBz2bNFgym7TyYxTWxB6FobRA1mZ1Q1TY-uNdieHBj-6BZ1Ht22nq1P5Lhetczo3TOlhOv9AkEtatTC2P63HJat2R2G80g63WASafMpLQPy0HmqRDjOlslXAqeYiXTvXeWtms-D-MV6MifqmWKqoU73npc6PavyYLy-dQP-4AYccY7-BXctDZ84BWM1psJ5o-T&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2eOggRL9L4dwddZOlVh8J7AqC8hd3KOYSDFewnBUn-fhdWRw5giIQKUradUvL2U-Lmr9HzM6pEmLlapjIYF-UQs3nHgYoQTs4ggYaMubHLAdPT2ZgS1KErEIL0XO9uF08gS7vPnx6WOQaimir_2xccHq4b_QG3vdsRzgTxKkcP3spftH8FVlVPlMjazVpHoCksDQM2mljk5nX6HhrgfGLnZQx4eh8tZeyzu_JkkoJ0qTGWoDkIbPuL5dbG1uEBy2Sve9PwEa9bqRh8c6lGyKPmZ04lxHHT5kid_NinKd1Ay1jbadIqX5re_g2RI19wf49XRVMtBskHOknYOGZ5wqkslgH2Z3wiZ7Ap71RNJwh0qjR6xYVKOEOs2iXpIP8blRkxMe2LhZx8lDoV4LrHKZ-MK3zWjZcHJ4AKj5_meSRHeZg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2eHqyY5eIwSqFBkybZoVMd-LvV7ys4eklTGlDYnyrC-LrlXEVL-DfWKBWJtHkrUX9r58B0R634H8awRzai-UbWXzDeuihi_fGT534Y9FXdydg4Cv6ZNR0kIj8dOhkGVszw3LyuCLCe23Rm30fDyFuLvH6bbocs-HgzjlAV5OiavfF8R_Fea6XLAEAj6XEDBdWjtrgZmxikB8OlC_E1eXA-jEftpi7nei9o4f86NRvIW2DuVUKUFkxEH3GHecKCJpk07MonF1AIDlBhMwM5Yrx9XU_O-jwg-ZGpA4QbTEWxs0ToOfGjk9KKEow82BiP7a4WTAK6_tHxla2UkPyjlcjvfEE7Kkli6qQsdjLNAdgGqZ9M5qlBPihPpWcj9VfAorS39BtAhyJ0EMdYsM8N0s5hh3pxhuh9aZg3qax5ZAoZGkA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2c46VskSxnSUw1k4uxKGlvajfKzknOYzQ8B1oIhuDJkB7fgqRNMrF6uCapW-gzI7tDd-e_1H60H0PNUR9s6Sn8Sv_CfwRROErVpRoqjWbXir7q4zyrmGaYZx7IHFAnYwRYzEMbMsdQhc34VVLA_NBnCaXw1zn4RVpDBMn-O1Bf8eiQj0SviCoPYYNKHZkxCIm7lr0a_gyN5VjLJIErub0Lktl4GkA_WKwUbaTuwa9M2vlh3sG_oJVj1qvlVQwBPDSLJ6egKZIgUq-k-XVgSstyf0ztfpSaxKfnByFUnH0SrK_5gUu5bq8_h3jfyLDU37EazUI4prKIxm4sIA4_MGGBrz7SW11EgAYkGjDsHKJfU3BMEJKSEL1KoQCoilgBOJ2G4jRbxPXHmOat8A_cT3c2EW1VBRUU5xevfnSeVXrKhOg32UNVlJefzycovFg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2d-m_X9c3qWOFTr5EtywtPwOfpTC2KqyNZDgja0kp5ys14hslB21hdHQXeWe47OIJycunOEZEzZH-GV0TtOP92TBkUBDcFqmb08ALHKYU2rEmd77HFJ6Ao78KmSU59--Vv8FEg_RvsIje5ZGFRNqamg13YuevImRUu1LJz5HZdFLojfxQA9P1vAqy-J8fvWV3Kcl-HR4JxOZpZ0wZRCs3pb-kEGFL0kQ4XIFoinSvzSyVOLIVp4esYXoppwvDsiU_cg3YL78steotH_93FyMFhI4uoJpZErHr4iZTv2pDDdcNeXW_bG9MPzP1Rn9z_I8oOsY8S8QJxORaet-RzRmAClNoWFxU8P2ZzHf8TRUhmIiilNXVc9lo7jECytO5Q5aAEVZ6xHaDwQtrLvSxzQjeYwAJd1-M1DOnPz0Vy-auAIDA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2eQlIU8sojHGTLM1WCNE9rfyMLjaeQmjeAqVuDyLh2C8n9jfu0j2FXDie-87qzj-K9j4yFFvTgEHbi-O5xzD1e2D8tbWlTKW3H_YQwPiDUh-bKv9wJlW_5afqebmA6RnlFlEs5VGYQDGFGDD5DRyvPxx_An-x8aEWTNNNDpAVY0TXRJbm3uXabpDQbqJ1v7DPAXCyBLg6hucaSPhZ77L-HzmqPr4Kn_hhwZdAfKUWXITodOTbgB5obmuuN7IOGQZhNgdV5QSHDgRU3jKV4TPXOTQi3hEngHB3axw9hETg4au-FEPex6mEFbwtTmXthtXGH0PwIMjMtuJZ_7dFqcDgdUAP2S3I_gLg7CCv6KXDwVat4eqUF1pjS3uIHFcbhDWDZ7-0KxLEw91rmzQhvZQvX59M-hDJbMsAt1-GLHFYX6cQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2ffIViz9C8brd1mR8OAKWRy81jkBDHhhIY70xMe4x8D0cYnsawoCEq8oXHjhc-EkDk3y5ARA-V1bXwkxTV1K_jZVWiHHnoPG1yQKQ0nUk0BfUbLsEik9ey-dIRg2iI8BBmZCChvNun6wIrVOl38adEvbOYZKdrH5xkZW3YpECGlDGGFiY1KcZzf8pLCZhXmIiZCMlgZ5ngF_0_hU0f9vmXKApJ9dWF3M09UXtowXtgZfC03OObuSDEJnoJc1xNFPaKKclYo1VJvmSlH2PdYsNjdUUL9JRvuZjVMqTdwhtlMiqatwsfSm6hziMlMKotGNK5dG5aJ7ug1TayqQpxxhy951LOJ-Eu_AJMW--9EiRB3cQJdtjh6dseuSL-KmIUdopg40NKNjMYXpTx-TVUq7HxEUqLfHwzRDXegc7WoHpQSfrg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 60,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": true,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 80,
+      "totalReviews": 735,
+      "averageRating": 4,
+      "sentimentBreakdown": {
+        "positive": 60,
+        "neutral": 0,
+        "negative": 40
+      },
+      "reviewSources": [
+        "Google Business Profile (Limited)"
+      ],
+      "keyThemes": [
+        "Food Quality",
+        "Service"
+      ],
+      "recentReviews": [
+        {
+          "author": "Annika Strasburg",
+          "rating": 2,
+          "text": "The past few times I’ve been, they’ve been incredibly stingy with their serving of meat. That all came to a head today when they put no meat whatsoever on my quesadilla. After so many negative visits and second chances, this was enough for me to not want to come back again. It’s really a shame because I used to love to stop by this place after work for dinner.",
+          "date": "2025-09-02T18:25:14.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Lillian Ashby",
+          "rating": 2,
+          "text": "Absolutely delicious. I just needed some quick food for lunch and found this place. The food was really good. Staff was super friendly and they got the food to me so quickly. I'm very happy with my experience here.\n\nedit to review. I have really liked going to this place for some time, but my experience yesterday really turned me away from the place. I went in though the drive though, normally it takes only a few minutes, this time I spent close to 25-30 minutes there. when I ordered the person seemed really snappy, though that may have just been my perception of it. finally when i got my food, absolutely everything was wrong with it, i got lime chicken with Spanish rice and balsamic vinaigrette, the only thing they got right in it was the chicken which was insanely dry compared to previous times.\nI was on my work lunch and by the time i noticed they gave me everything wrong I had no time to go back and correct it. for the time waiting, the food gotten and the snappy server, i felt really disappointed in a place I have really loved so far. IDK if they have recently hired a lot of new people recently, but i think there needs to be some additional training or at least a double check the order.",
+          "date": "2025-05-30T18:44:27.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Stephen Kunz",
+          "rating": 5,
+          "text": "I have I have literally coming it Bajio for the last 20 years. I remember when they were over in the bagel den area of river woods and when they used to have locations all over.\n\nIt is my favorite Mexican restaurant on earth. Their sweet rice is to die for. The burritos are exquisite, and you definitely have to give their shrimp tacos a try. At Bajio, everyone knows your name. Although Francisco and Raymond don’t work there anymore (they are missed), it is the best food ever. Would absolutely recommend.",
+          "date": "2025-04-18T18:24:30.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Chey Jord",
+          "rating": 4,
+          "text": "Good place to grab a quick bite. Comparable to several places in Utah county, but so good! I recommend these over the others. Good service.",
+          "date": "2025-03-16T22:12:24.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Oot er",
+          "rating": 5,
+          "text": "Excellent Chicken Green Chile! I haven't been here since the one in Layton closed.  THIS PLACE IS THE BOMB! Sweet Rice, Anything with the Green Chile and the beans are awesome!  I definitely will always come here when in area.  I hope the locals know what a treasure they have!  Great and Friendly service as well today!",
+          "date": "2025-03-14T22:40:48.000Z",
+          "platform": "Google Places"
+        }
+      ],
+      "examples": {
+        "positive": [
+          {
+            "author": "Stephen Kunz",
+            "rating": 5,
+            "text": "I have I have literally coming it Bajio for the last 20 years. I remember when they were over in the bagel den area of river woods and when they used to have locations all over.\n\nIt is my favorite Mexican restaurant on earth. Their sweet rice is to die for. The burritos are exquisite, and you definitely have to give their shrimp tacos a try. At Bajio, everyone knows your name. Although Francisco and Raymond don’t work there anymore (they are missed), it is the best food ever. Would absolutely recommend.",
+            "date": "2025-04-18T18:24:30.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Oot er",
+            "rating": 5,
+            "text": "Excellent Chicken Green Chile! I haven't been here since the one in Layton closed.  THIS PLACE IS THE BOMB! Sweet Rice, Anything with the Green Chile and the beans are awesome!  I definitely will always come here when in area.  I hope the locals know what a treasure they have!  Great and Friendly service as well today!",
+            "date": "2025-03-14T22:40:48.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Chey Jord",
+            "rating": 4,
+            "text": "Good place to grab a quick bite. Comparable to several places in Utah county, but so good! I recommend these over the others. Good service.",
+            "date": "2025-03-16T22:12:24.000Z",
+            "platform": "Google Places"
+          }
+        ],
+        "neutral": [],
+        "negative": [
+          {
+            "author": "Lillian Ashby",
+            "rating": 2,
+            "text": "Absolutely delicious. I just needed some quick food for lunch and found this place. The food was really good. Staff was super friendly and they got the food to me so quickly. I'm very happy with my experience here.\n\nedit to review. I have really liked going to this place for some time, but my experience yesterday really turned me away from the place. I went in though the drive though, normally it takes only a few minutes, this time I spent close to 25-30 minutes there. when I ordered the person seemed really snappy, though that may have just been my perception of it. finally when i got my food, absolutely everything was wrong with it, i got lime chicken with Spanish rice and balsamic vinaigrette, the only thing they got right in it was the chicken which was insanely dry compared to previous times.\nI was on my work lunch and by the time i noticed they gave me everything wrong I had no time to go back and correct it. for the time waiting, the food gotten and the snappy server, i felt really disappointed in a place I have really loved so far. IDK if they have recently hired a lot of new people recently, but i think there needs to be some additional training or at least a double check the order.",
+            "date": "2025-05-30T18:44:27.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Annika Strasburg",
+            "rating": 2,
+            "text": "The past few times I’ve been, they’ve been incredibly stingy with their serving of meat. That all came to a head today when they put no meat whatsoever on my quesadilla. After so many negative visits and second chances, this was enough for me to not want to come back again. It’s really a shame because I used to love to stop by this place after work for dinner.",
+            "date": "2025-09-02T18:25:14.000Z",
+            "platform": "Google Places"
+          }
+        ]
+      },
+      "customerMoodAnalysis": {
+        "overallMood": "mixed",
+        "sentimentSummary": "Customer opinions are divided. The 3.6/5 rating from 5 recent reviews suggests some great experiences mixed with areas needing attention.",
+        "sentimentDistribution": {
+          "ecstatic": 0,
+          "delighted": 40,
+          "satisfied": 20,
+          "neutral": 0,
+          "frustrated": 40,
+          "disappointed": 0,
+          "angry": 0
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "speed of service",
+            "mentions": 3
+          },
+          {
+            "theme": "service excellence",
+            "mentions": 2
+          },
+          {
+            "theme": "food quality",
+            "mentions": 1
+          },
+          {
+            "theme": "slow service",
+            "mentions": 1
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 3,
+          "satisfaction": 5,
+          "disappointment": 1,
+          "frustration": 0,
+          "anger": 0
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "Customers rave about Bajio's sweet rice, calling it \"to die for\" and consistently mentioning it alongside other favorite dishes like burritos and shrimp tacos. - social media marketing can showcase this strength",
+            "The restaurant is praised for its \"great and friendly service,\" making customers feel valued and welcomed. - review management can highlight this positive aspect",
+            "Bajio is described as a \"treasure\" with excellent dishes like Chicken Green Chile and beans, which locals should appreciate. - SEO services can leverage this for better visibility"
+          ],
+          "improvementOpportunities": [
+            "Long wait times and incorrect orders - Boostly marketing services can improve this",
+            "Negative reviews/reputation issues due to poor service and food quality - review management can address this concern",
+            "Competition/discovery issues, as the restaurant is comparable to others in the area - SEO services can solve this visibility issue"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 5,
+          "averageRating": 3.6,
+          "ratingDistribution": {
+            "1": 0,
+            "2": 40,
+            "3": 0,
+            "4": 20,
+            "5": 40
+          },
+          "sentimentTrends": {
+            "trend": "stable",
+            "recentAverageRating": 3.6,
+            "previousAverageRating": 3.6,
+            "recentReviewsCount": 5
+          }
+        }
+      },
+      "trends": {
+        "ratingTrend": "positive",
+        "volumeTrend": "increasing",
+        "responseRate": 60,
+        "averageResponseTime": "2 days"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ],
+      "googleReviews": {
+        "reviews": [
+          {
+            "author": "Annika Strasburg",
+            "rating": 2,
+            "text": "The past few times I’ve been, they’ve been incredibly stingy with their serving of meat. That all came to a head today when they put no meat whatsoever on my quesadilla. After so many negative visits and second chances, this was enough for me to not want to come back again. It’s really a shame because I used to love to stop by this place after work for dinner.",
+            "date": "2025-09-02T18:25:14.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Lillian Ashby",
+            "rating": 2,
+            "text": "Absolutely delicious. I just needed some quick food for lunch and found this place. The food was really good. Staff was super friendly and they got the food to me so quickly. I'm very happy with my experience here.\n\nedit to review. I have really liked going to this place for some time, but my experience yesterday really turned me away from the place. I went in though the drive though, normally it takes only a few minutes, this time I spent close to 25-30 minutes there. when I ordered the person seemed really snappy, though that may have just been my perception of it. finally when i got my food, absolutely everything was wrong with it, i got lime chicken with Spanish rice and balsamic vinaigrette, the only thing they got right in it was the chicken which was insanely dry compared to previous times.\nI was on my work lunch and by the time i noticed they gave me everything wrong I had no time to go back and correct it. for the time waiting, the food gotten and the snappy server, i felt really disappointed in a place I have really loved so far. IDK if they have recently hired a lot of new people recently, but i think there needs to be some additional training or at least a double check the order.",
+            "date": "2025-05-30T18:44:27.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Stephen Kunz",
+            "rating": 5,
+            "text": "I have I have literally coming it Bajio for the last 20 years. I remember when they were over in the bagel den area of river woods and when they used to have locations all over.\n\nIt is my favorite Mexican restaurant on earth. Their sweet rice is to die for. The burritos are exquisite, and you definitely have to give their shrimp tacos a try. At Bajio, everyone knows your name. Although Francisco and Raymond don’t work there anymore (they are missed), it is the best food ever. Would absolutely recommend.",
+            "date": "2025-04-18T18:24:30.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Chey Jord",
+            "rating": 4,
+            "text": "Good place to grab a quick bite. Comparable to several places in Utah county, but so good! I recommend these over the others. Good service.",
+            "date": "2025-03-16T22:12:24.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Oot er",
+            "rating": 5,
+            "text": "Excellent Chicken Green Chile! I haven't been here since the one in Layton closed.  THIS PLACE IS THE BOMB! Sweet Rice, Anything with the Green Chile and the beans are awesome!  I definitely will always come here when in area.  I hope the locals know what a treasure they have!  Great and Friendly service as well today!",
+            "date": "2025-03-14T22:40:48.000Z",
+            "platform": "Google Places"
+          }
+        ],
+        "averageRating": 4,
+        "totalReviews": 735
+      }
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/bajiomexicangrill",
+      "instagram": "https://www.instagram.com/bajiomexicangrill",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 63,
+      "social": 100,
+      "local": 53,
+      "reviews": 85,
+      "overall": 75
+    },
+    "originalScores": {
+      "seo": 75,
+      "overallScore": 71,
+      "performance": 80,
+      "userExperience": 70
+    },
+    "migratedAt": "2025-09-16T00:37:21.387Z"
+  },
+  "metadata": {
+    "cachedAt": "2025-09-15T16:15:10.699Z",
+    "expiresAt": "2025-10-15T16:15:10.699Z",
+    "placeId": "ChIJK-DOLwyQTYcRJe004IbTSxM",
+    "restaurantName": "Bajio Mexican Grill",
+    "cacheVersion": "2.0.0"
+  }
+}

@@ -1,0 +1,978 @@
+{
+  "data": {
+    "domain": "getmealsbymelissa.com",
+    "restaurantName": "Meals by Melissa",
+    "placeId": "ChIJVVWVHYKn9YgRRqwtGd7YREc",
+    "overallScore": 54,
+    "performance": 100,
+    "seo": 58,
+    "mobile": 49,
+    "userExperience": 45,
+    "issues": [
+      {
+        "type": "reputation",
+        "severity": "critical",
+        "title": "⚠️ Rating Alert: Below Restaurant Industry Standard",
+        "description": "Your 3/5 rating is below the recommended 4.0+ threshold. This significantly impacts customer trust and search visibility.",
+        "impact": "high",
+        "effort": "high",
+        "icon": "⭐",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "Lost customers choosing competitors with higher ratings"
+      },
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "performance",
+        "severity": "critical",
+        "title": "⚡ Speed Crisis: Customers Are Leaving",
+        "description": "Performance score of 69/100 means customers wait too long. 53% abandon slow websites.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🐌",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "Lost orders from customers who abandon slow-loading pages"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "restaurant near me",
+        "position": 0,
+        "searchVolume": 673000,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant delivery Atlanta",
+        "position": 0,
+        "searchVolume": 40,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best restaurant Atlanta",
+        "position": 0,
+        "searchVolume": 22200,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant",
+        "position": 0,
+        "searchVolume": 368000,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant places near me",
+        "position": 0,
+        "searchVolume": 20,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant Atlanta Georgia",
+        "position": 0,
+        "searchVolume": 6600,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant delivery near me",
+        "position": 0,
+        "searchVolume": 260,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant open now",
+        "position": 0,
+        "searchVolume": 210,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 0,
+        "keywords_appeared": 0,
+        "total_keywords": 8,
+        "average_position": 0,
+        "best_position": 0
+      },
+      "keyword_results": [
+        {
+          "keyword": "restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Atlanta Breakfast Club",
+              "address": "Atlanta, GA ",
+              "website": "https://www.atlbreakfastclub.com/",
+              "rating": 4.5,
+              "reviews": 9200
+            },
+            {
+              "position": 2,
+              "name": "Metro Diner and Bar",
+              "address": "Atlanta, GA ",
+              "website": "http://www.metrodineratl.com/",
+              "rating": 4,
+              "reviews": 6000
+            },
+            {
+              "position": 3,
+              "name": "By George restaurant and bar",
+              "address": "Atlanta, GA ",
+              "website": "https://www.bygeorgeatl.com/",
+              "rating": 4.6,
+              "reviews": 1200
+            }
+          ]
+        },
+        {
+          "keyword": "restaurant",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Hungry AF Downtown",
+              "address": "Atlanta, GA ",
+              "website": "https://thehungryaf.com/",
+              "rating": 4.7,
+              "reviews": 3100
+            },
+            {
+              "position": 2,
+              "name": "By George restaurant and bar",
+              "address": "Atlanta, GA ",
+              "website": "https://www.bygeorgeatl.com/",
+              "rating": 4.6,
+              "reviews": 1200
+            },
+            {
+              "position": 3,
+              "name": "The Food Shoppe",
+              "address": "Atlanta, GA ",
+              "website": "http://www.thefoodshoppeatl.com/",
+              "rating": 4.6,
+              "reviews": 1900
+            }
+          ]
+        },
+        {
+          "keyword": "best restaurant Atlanta",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Marcel",
+              "address": "Atlanta, GA ",
+              "website": "http://www.marcelatl.com/",
+              "rating": 4.6,
+              "reviews": 1900
+            },
+            {
+              "position": 2,
+              "name": "Utopia Restaurant at the Underground Atlanta",
+              "address": "Atlanta, GA ",
+              "website": "https://utopialoungeatl.com/",
+              "rating": 4.9,
+              "reviews": 1100
+            },
+            {
+              "position": 3,
+              "name": "Yeppa & Co. - Beltline",
+              "address": "Atlanta, GA ",
+              "website": "http://yeppaco.com/",
+              "rating": 4.9,
+              "reviews": 1300
+            }
+          ]
+        },
+        {
+          "keyword": "restaurant delivery near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "MAKAY SUYA - Pre-Order Halal Meat Also Available (Full Pan, 1/2 pan, and 1/4 pan only) We Deliver & Ship only. Call Before",
+              "address": "Atlanta, GA ",
+              "website": "",
+              "rating": 4.5,
+              "reviews": 19
+            },
+            {
+              "position": 2,
+              "name": "MAKAY CHOPBAR - Pre-Order Food in 1/2 Pan, Full Pan & Big Bowl Only. We ship to all other states. Please Call Before",
+              "address": "Atlanta, GA ",
+              "website": "http://makaychopbar-foodin12panfullpanbigbowlonlyweshiptoallotherstate.com/",
+              "rating": 4.8,
+              "reviews": 55
+            },
+            {
+              "position": 3,
+              "name": "Kenley's Catering And Restaurant",
+              "address": "Atlanta, GA ",
+              "website": "http://www.kenleysrestaurant.com/Welcome.tpl?action=nc&from=Top133",
+              "rating": 4.4,
+              "reviews": 227
+            }
+          ]
+        },
+        {
+          "keyword": "restaurant Atlanta Georgia",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Atlanta Breakfast Club",
+              "address": "Atlanta, GA ",
+              "website": "https://www.atlbreakfastclub.com/",
+              "rating": 4.5,
+              "reviews": 9200
+            },
+            {
+              "position": 2,
+              "name": "Ray's In the City",
+              "address": "Atlanta, GA ",
+              "website": "https://raysrestaurants.com/",
+              "rating": 4.6,
+              "reviews": 5900
+            },
+            {
+              "position": 3,
+              "name": "Hungry AF Downtown",
+              "address": "Atlanta, GA ",
+              "website": "https://thehungryaf.com/",
+              "rating": 4.7,
+              "reviews": 3100
+            }
+          ]
+        },
+        {
+          "keyword": "top restaurant Atlanta",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Polaris",
+              "address": "Atlanta, GA ",
+              "website": "https://www.polarisatlanta.com/",
+              "rating": 4.5,
+              "reviews": 1100
+            },
+            {
+              "position": 2,
+              "name": "Marcel",
+              "address": "Atlanta, GA ",
+              "website": "http://www.marcelatl.com/",
+              "rating": 4.6,
+              "reviews": 1900
+            },
+            {
+              "position": 3,
+              "name": "Utopia Restaurant at the Underground Atlanta",
+              "address": "Atlanta, GA ",
+              "website": "https://utopialoungeatl.com/",
+              "rating": 4.9,
+              "reviews": 1100
+            }
+          ]
+        },
+        {
+          "keyword": "restaurant restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Hungry AF Downtown",
+              "address": "Atlanta, GA ",
+              "website": "https://thehungryaf.com/",
+              "rating": 4.7,
+              "reviews": 3100
+            },
+            {
+              "position": 2,
+              "name": "By George restaurant and bar",
+              "address": "Atlanta, GA ",
+              "website": "https://www.bygeorgeatl.com/",
+              "rating": 4.6,
+              "reviews": 1200
+            },
+            {
+              "position": 3,
+              "name": "Glenn's Kitchen",
+              "address": "Atlanta, GA ",
+              "website": "http://www.glennskitchenatl.com/",
+              "rating": 4.3,
+              "reviews": 440
+            }
+          ]
+        },
+        {
+          "keyword": "restaurant food Atlanta",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"restaurant near me\", \"restaurant\", \"best restaurant Atlanta\", \"restaurant delivery near me\", \"restaurant Atlanta Georgia\", \"top restaurant Atlanta\", \"restaurant restaurant near me\", \"restaurant food Atlanta\" - optimize Google My Business profile with these keywords",
+        "Low Local Pack visibility (0%) - audit your Google My Business completeness, categories, and local citations"
+      ],
+      "scan_metadata": {
+        "location": "Atlanta,Georgia,United States",
+        "timestamp": "2025-09-15T11:05:51.052Z",
+        "total_scan_time_ms": 1202190
+      }
+    },
+    "competitors": [
+      {
+        "name": "Canoe",
+        "domain": "canoe.com",
+        "performance": 92,
+        "seo": 83,
+        "accessibility": 78,
+        "bestPractices": 87,
+        "overallScore": 85,
+        "rating": 4.6,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 768,
+        "keywords": 62,
+        "domainAuthority": 87,
+        "trafficAdvantage": "2x more traffic",
+        "keywordLead": "+800 keywords",
+        "authorityGap": 24,
+        "backlinks": 795
+      },
+      {
+        "name": "Ray's In the City",
+        "domain": "raysinthecity.com",
+        "performance": 92,
+        "seo": 83,
+        "accessibility": 78,
+        "bestPractices": 87,
+        "overallScore": 85,
+        "rating": 4.6,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1027,
+        "keywords": 33,
+        "domainAuthority": 76,
+        "trafficAdvantage": "2x more traffic",
+        "keywordLead": "+800 keywords",
+        "authorityGap": 24,
+        "backlinks": 775
+      },
+      {
+        "name": "Marcel",
+        "domain": "marcel.com",
+        "performance": 92,
+        "seo": 83,
+        "accessibility": 78,
+        "bestPractices": 87,
+        "overallScore": 85,
+        "rating": 4.6,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 542,
+        "keywords": 50,
+        "domainAuthority": 74,
+        "trafficAdvantage": "2x more traffic",
+        "keywordLead": "+800 keywords",
+        "authorityGap": 24,
+        "backlinks": 859
+      },
+      {
+        "name": "9 Mile Station",
+        "domain": "9milestation.com",
+        "performance": 96,
+        "seo": 86,
+        "accessibility": 82,
+        "bestPractices": 91,
+        "overallScore": 89,
+        "rating": 4.8,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 561,
+        "keywords": 51,
+        "domainAuthority": 90,
+        "trafficAdvantage": "2x more traffic",
+        "keywordLead": "+900 keywords",
+        "authorityGap": 27,
+        "backlinks": 993
+      },
+      {
+        "name": "South City Kitchen Buckhead",
+        "domain": "southcitykitchenbuckhead.com",
+        "performance": 94,
+        "seo": 85,
+        "accessibility": 80,
+        "bestPractices": 89,
+        "overallScore": 87,
+        "rating": 4.7,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 769,
+        "keywords": 28,
+        "domainAuthority": 89,
+        "trafficAdvantage": "2x more traffic",
+        "keywordLead": "+850 keywords",
+        "authorityGap": 26,
+        "backlinks": 927
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 70,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-15T11:06:11.464Z",
+    "businessProfile": {
+      "name": "Meals by Melissa",
+      "address": "3300 Marjan Dr, Atlanta, GA 30340, USA",
+      "rating": 3,
+      "reviewCount": 2,
+      "phoneNumber": "(678) 532-7601",
+      "website": "https://getmealsbymelissa.com/",
+      "formatted_address": "3300 Marjan Dr, Atlanta, GA 30340, USA",
+      "address_components": [
+        {
+          "long_name": "3300",
+          "short_name": "3300",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Marjan Drive",
+          "short_name": "Marjan Dr",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Atlanta",
+          "short_name": "Atlanta",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "DeKalb County",
+          "short_name": "DeKalb County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Georgia",
+          "short_name": "GA",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "30340",
+          "short_name": "30340",
+          "types": [
+            "postal_code"
+          ]
+        },
+        {
+          "long_name": "3912",
+          "short_name": "3912",
+          "types": [
+            "postal_code_suffix"
+          ]
+        }
+      ],
+      "state": "Georgia",
+      "city": "Atlanta",
+      "place_id": "ChIJVVWVHYKn9YgRRqwtGd7YREc",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "reviews": [
+        {
+          "author_name": "David Engram",
+          "author_url": "https://www.google.com/maps/contrib/117887841831097871402/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK2onE7-Zw0G1N1vPwugFZdQ4wG3S6wmPn5eNCJVhpYAsIgCQ=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "I can’t rave about meals by melissa enough. I have been receiving meals for 1 month now. They are absolutely delicious, filling, and there was never a repeated meal in 4 weeks\n\nMy meals are customized to accommodate my preferences and are delivered to my door every week. My husband tasted my meals and loved it. He orders with me now too.\n\nSurprisingly, this homemade and specialized service is very affordable. In fact my food bill has decreased since getting meals by Melissa.\n\nGive Melissa a call - she is very approachable and goes out of her way to satisfy your every need. Melissa’s service makes you feel extravagant , without the extravagant price tag!\n\nOh, and I lost 5 pounds. Don’t sleep on meals by Melissa- you’ll be very happy with your decision!\n\nStacy E",
+          "time": 1752031745,
+          "translated": false
+        },
+        {
+          "author_name": "Trang Chip",
+          "author_url": "https://www.google.com/maps/contrib/112937008296552636080/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLblwkfkz-eC17On_HwuoiCyQTbnaKJnLqYfma5SdGjlXx0pw=s128-c0x00000000-cc-rp-mo",
+          "rating": 1,
+          "relative_time_description": "in the last week",
+          "text": "Never have to write a review to complain but here’s it. Terrible customer service. I ordered meals from them from Too good too go app. They told me to grab it from 10:00 - 10:30am the next day. I paid everything before picking it up the next day. Guess what? The next day when my friend came, she couldn’t reach out to the owner by either call or text. Then the owner proceeded to cancel my order while my friend was waiting to pick up my order without saying a word?????? YOU COULD HAVE CANCELED THE ORDER OR TELL THERE’S NO SUPPLY LEFT BEFORE SOMEONE COME TO PICK UP THE ORDER. I will never recommend anyone to order here!",
+          "time": 1757601526,
+          "translated": false
+        }
+      ],
+      "photos": [],
+      "photoCount": 0,
+      "opening_hours": null,
+      "price_level": null,
+      "editorial_summary": null,
+      "url": "https://maps.google.com/?cid=5135467923525971014",
+      "social_media": null
+    },
+    "businessPhotos": [],
+    "mobileExperience": {
+      "score": 49,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": false,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 60,
+      "totalReviews": 2,
+      "averageRating": 3,
+      "sentimentBreakdown": {
+        "positive": 50,
+        "neutral": 0,
+        "negative": 50
+      },
+      "reviewSources": [
+        "Google Places API (Apify Enhanced)"
+      ],
+      "keyThemes": [
+        "Food Quality",
+        "Service",
+        "Wait Time",
+        "Pricing"
+      ],
+      "recentReviews": [
+        {
+          "rating": 1,
+          "text": "Never have to write a review to complain but here’s it. Terrible customer service. I ordered meals from them from Too good too go app. They told me to grab it from 10:00 - 10:30am the next day. I paid everything before picking it up the next day. Guess what? The next day when my friend came, she couldn’t reach out to the owner by either call or text. Then the owner proceeded to cancel my order while my friend was waiting to pick up my order without saying a word?????? YOU COULD HAVE CANCELED THE ORDER OR TELL THERE’S NO SUPPLY LEFT BEFORE SOMEONE COME TO PICK UP THE ORDER. I will never recommend anyone to order here!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "negative"
+        },
+        {
+          "rating": 5,
+          "text": "I can’t rave about meals by melissa enough. I have been receiving meals for 1 month now. They are absolutely delicious, filling, and there was never a repeated meal in 4 weeks\n\nMy meals are customized to accommodate my preferences and are delivered to my door every week. My husband tasted my meals and loved it. He orders with me now too.\n\nSurprisingly, this homemade and specialized service is very affordable. In fact my food bill has decreased since getting meals by Melissa.\n\nGive Melissa a call - she is very approachable and goes out of her way to satisfy your every need. Melissa’s service makes you feel extravagant , without the extravagant price tag!\n\nOh, and I lost 5 pounds. Don’t sleep on meals by Melissa- you’ll be very happy with your decision!\n\nStacy E",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        }
+      ],
+      "detailedReviews": [
+        {
+          "author": "Trang Chip",
+          "rating": 1,
+          "text": "Never have to write a review to complain but here’s it. Terrible customer service. I ordered meals from them from Too good too go app. They told me to grab it from 10:00 - 10:30am the next day. I paid everything before picking it up the next day. Guess what? The next day when my friend came, she couldn’t reach out to the owner by either call or text. Then the owner proceeded to cancel my order while my friend was waiting to pick up my order without saying a word?????? YOU COULD HAVE CANCELED THE ORDER OR TELL THERE’S NO SUPPLY LEFT BEFORE SOMEONE COME TO PICK UP THE ORDER. I will never recommend anyone to order here!",
+          "date": "2025-09-11T14:38:46.616Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pGQmFHVkphRmQyVG5KRVQza3lWSFJrTkc1WFdsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLblwkfkz-eC17On_HwuoiCyQTbnaKJnLqYfma5SdGjlXx0pw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112937008296552636080?hl=en-US",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "negative"
+        },
+        {
+          "author": "David Engram",
+          "rating": 5,
+          "text": "I can’t rave about meals by melissa enough. I have been receiving meals for 1 month now. They are absolutely delicious, filling, and there was never a repeated meal in 4 weeks\n\nMy meals are customized to accommodate my preferences and are delivered to my door every week. My husband tasted my meals and loved it. He orders with me now too.\n\nSurprisingly, this homemade and specialized service is very affordable. In fact my food bill has decreased since getting meals by Melissa.\n\nGive Melissa a call - she is very approachable and goes out of her way to satisfy your every need. Melissa’s service makes you feel extravagant , without the extravagant price tag!\n\nOh, and I lost 5 pounds. Don’t sleep on meals by Melissa- you’ll be very happy with your decision!\n\nStacy E",
+          "date": "2025-07-09T03:29:05.971Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xaTFNEWlpTVUYzU0hjeFFqWlNhbUpaTURKNWIzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK2onE7-Zw0G1N1vPwugFZdQ4wG3S6wmPn5eNCJVhpYAsIgCQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117887841831097871402?hl=en-US",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        }
+      ],
+      "customerMoodAnalysis": {
+        "overallMood": "mixed",
+        "sentimentSummary": "Customer opinions are divided. The 3.0/5 rating from 2 recent reviews suggests some great experiences mixed with areas needing attention.",
+        "sentimentDistribution": {
+          "ecstatic": 0,
+          "delighted": 50,
+          "satisfied": 0,
+          "neutral": 0,
+          "frustrated": 0,
+          "disappointed": 0,
+          "angry": 50
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "food quality",
+            "mentions": 1
+          },
+          {
+            "theme": "value for money",
+            "mentions": 1
+          },
+          {
+            "theme": "slow service",
+            "mentions": 1
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 2,
+          "satisfaction": 1,
+          "disappointment": 0,
+          "frustration": 0,
+          "anger": 1
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "Customers love the variety and uniqueness of the meals, with no repeated meals in four weeks, making each delivery exciting and fresh. - social media marketing can showcase this strength",
+            "The personalized meal customization that accommodates individual preferences is a standout feature, making customers feel valued and catered to. - Boostly marketing services can amplify this",
+            "The affordability of the service, which has even led to a decrease in customers' food bills, is a major draw. - SEO services can leverage this for better visibility"
+          ],
+          "improvementOpportunities": [
+            "Poor communication regarding order cancellations - Boostly marketing services can improve this",
+            "Negative reviews and reputation issues due to customer service failures - review management can address this concern",
+            "Lack of proactive customer service communication - social media marketing can improve this area"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 2,
+          "averageRating": 3,
+          "ratingDistribution": {
+            "1": 50,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 50
+          },
+          "sentimentTrends": {
+            "trend": "stable",
+            "recentAverageRating": 3,
+            "previousAverageRating": 3,
+            "recentReviewsCount": 2
+          }
+        }
+      },
+      "examples": {
+        "positive": [
+          {
+            "author": "David Engram",
+            "rating": 5,
+            "text": "I can’t rave about meals by melissa enough. I have been receiving meals for 1 month now. They are absolutely delicious, filling, and there was never a repeated meal in 4 weeks\n\nMy meals are customized to accommodate my preferences and are delivered to my door every week. My husband tasted my meals and loved it. He orders with me now too.\n\nSurprisingly, this homemade and specialized service is very affordable. In fact my food bill has decreased since getting meals by Melissa.\n\nGive Melissa a call - she is very approachable and goes out of her way to satisfy your every need. Melissa’s service makes you feel extravagant , without the extravagant price tag!\n\nOh, and I lost 5 pounds. Don’t sleep on meals by Melissa- you’ll be very happy with your decision!\n\nStacy E",
+            "date": "2025-07-09T03:29:05.971Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xaTFNEWlpTVUYzU0hjeFFqWlNhbUpaTURKNWIzYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK2onE7-Zw0G1N1vPwugFZdQ4wG3S6wmPn5eNCJVhpYAsIgCQ=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/117887841831097871402?hl=en-US",
+            "reviewerNumberOfReviews": 4
+          }
+        ],
+        "neutral": [],
+        "negative": [
+          {
+            "author": "Trang Chip",
+            "rating": 1,
+            "text": "Never have to write a review to complain but here’s it. Terrible customer service. I ordered meals from them from Too good too go app. They told me to grab it from 10:00 - 10:30am the next day. I paid everything before picking it up the next day. Guess what? The next day when my friend came, she couldn’t reach out to the owner by either call or text. Then the owner proceeded to cancel my order while my friend was waiting to pick up my order without saying a word?????? YOU COULD HAVE CANCELED THE ORDER OR TELL THERE’S NO SUPPLY LEFT BEFORE SOMEONE COME TO PICK UP THE ORDER. I will never recommend anyone to order here!",
+            "date": "2025-09-11T14:38:46.616Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pGQmFHVkphRmQyVG5KRVQza3lWSFJrTkc1WFdsRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLblwkfkz-eC17On_HwuoiCyQTbnaKJnLqYfma5SdGjlXx0pw=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/112937008296552636080?hl=en-US",
+            "reviewerNumberOfReviews": 2
+          }
+        ]
+      },
+      "trends": {
+        "ratingTrend": "stable",
+        "volumeTrend": "increasing",
+        "responseRate": 0,
+        "averageResponseTime": "No responses"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        },
+        {
+          "category": "reputation",
+          "priority": "high",
+          "title": "Improve Customer Satisfaction",
+          "description": "Address common issues mentioned in reviews",
+          "impact": "Boost overall rating and customer retention"
+        }
+      ]
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/mealsbymelissa",
+      "instagram": "https://www.instagram.com/mealsbymelissa",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 58,
+      "social": 100,
+      "local": 14,
+      "reviews": 45,
+      "overall": 54
+    },
+    "originalScores": {
+      "seo": 70,
+      "overallScore": 58,
+      "performance": 69,
+      "userExperience": 60
+    },
+    "migratedAt": "2025-09-16T00:37:21.457Z"
+  },
+  "metadata": {
+    "cachedAt": "2025-09-15T11:06:11.605Z",
+    "expiresAt": "2025-10-15T11:06:11.605Z",
+    "placeId": "ChIJVVWVHYKn9YgRRqwtGd7YREc",
+    "restaurantName": "Meals by Melissa",
+    "cacheVersion": "2.0.0"
+  }
+}

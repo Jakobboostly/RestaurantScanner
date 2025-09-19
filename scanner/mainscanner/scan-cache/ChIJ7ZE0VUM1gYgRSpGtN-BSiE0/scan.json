@@ -1,0 +1,2616 @@
+{
+  "data": {
+    "domain": "www.boardtownpizzaandpints.com",
+    "restaurantName": "Boardtown Pizza & Pints",
+    "placeId": "ChIJ7ZE0VUM1gYgRSpGtN-BSiE0",
+    "overallScore": 73,
+    "performance": 100,
+    "seo": 58,
+    "mobile": 43,
+    "userExperience": 73,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "performance",
+        "severity": "critical",
+        "title": "⚡ Speed Crisis: Customers Are Leaving",
+        "description": "Performance score of 63/100 means customers wait too long. 53% abandon slow websites.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🐌",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "Lost orders from customers who abandon slow-loading pages"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "pizza near me",
+        "position": 6,
+        "searchVolume": 720,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.boardtownpizzaandpints.com/",
+        "title": "Boardtown Pizza and Pints | Italian Restaurant in Starkville ...",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery Starkville",
+        "position": 4,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.boardtownpizzaandpints.com/online-ordering/",
+        "title": "Online Ordering | Boardtown Pizza Pints in Starkville, MS",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best pizza Starkville",
+        "position": 2,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.boardtownpizzaandpints.com/",
+        "title": "Boardtown Pizza and Pints | Italian Restaurant in Starkville, MS",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza",
+        "position": 1,
+        "searchVolume": 720,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.boardtownpizzaandpints.com/",
+        "title": "Boardtown Pizza and Pints | Italian Restaurant in Starkville ...",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza places near me",
+        "position": 6,
+        "searchVolume": 50,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.boardtownpizzaandpints.com/",
+        "title": "Boardtown Pizza and Pints | Italian Restaurant in Starkville, MS",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza Starkville Mississippi",
+        "position": 1,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.boardtownpizzaandpints.com/",
+        "title": "Boardtown Pizza and Pints | Italian Restaurant in Starkville ...",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery near me",
+        "position": 9,
+        "searchVolume": 110,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.boardtownpizzaandpints.com/",
+        "title": "Boardtown Pizza and Pints | Italian Restaurant in Starkville ...",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza open now",
+        "position": 4,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.boardtownpizzaandpints.com/",
+        "title": "Boardtown Pizza and Pints | Italian Restaurant in Starkville ...",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 38,
+        "keywords_appeared": 3,
+        "total_keywords": 8,
+        "average_position": 3.3,
+        "best_position": 2
+      },
+      "keyword_results": [
+        {
+          "keyword": "pizza near me",
+          "found": true,
+          "position": 5,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Boardtown Pizza & Pints",
+            "address": "Starkville, MS ",
+            "website": "https://www.boardtownpizzaandpints.com/",
+            "phone": "(662) 498-1555",
+            "rating": 4.3,
+            "reviews": 178
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Lost Pizza Co Starkville",
+              "address": "Starkville, MS ",
+              "website": "http://www.lostpizza.com/",
+              "rating": 4.6,
+              "reviews": 595
+            },
+            {
+              "position": 2,
+              "name": "Papa Johns Pizza",
+              "address": "Starkville, MS ",
+              "website": "https://locations.papajohns.com/united-states/ms/39759/starkville/500-russell-st?utm_source=gmb&utm_medium=organic&y_source=1_MTA2OTI0MjMtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+              "rating": 4.2,
+              "reviews": 131
+            },
+            {
+              "position": 3,
+              "name": "TASTE Italian Kitchen",
+              "address": "Starkville, MS ",
+              "website": "https://tastestarkville.com/?utm_source=google",
+              "rating": 4.5,
+              "reviews": 421
+            }
+          ]
+        },
+        {
+          "keyword": "pizza",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "best pizza Starkville",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "pizza delivery near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "pizza Starkville Mississippi",
+          "found": true,
+          "position": 2,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Boardtown Pizza & Pints",
+            "address": "Starkville, MS ",
+            "website": "https://www.boardtownpizzaandpints.com/",
+            "phone": "(662) 498-1555",
+            "rating": 4.3,
+            "reviews": 178
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Lost Pizza Co Starkville",
+              "address": "Starkville, MS ",
+              "website": "http://www.lostpizza.com/",
+              "rating": 4.6,
+              "reviews": 595
+            }
+          ]
+        },
+        {
+          "keyword": "top pizza Starkville",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "pizza restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "pizza food Starkville",
+          "found": true,
+          "position": 3,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Boardtown Pizza & Pints",
+            "address": "Starkville, MS ",
+            "website": "https://www.boardtownpizzaandpints.com/",
+            "phone": "(662) 498-1555",
+            "rating": 4.3,
+            "reviews": 178
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Lost Pizza Co Starkville",
+              "address": "Starkville, MS ",
+              "website": "http://www.lostpizza.com/",
+              "rating": 4.6,
+              "reviews": 595
+            },
+            {
+              "position": 2,
+              "name": "TASTE Italian Kitchen",
+              "address": "Starkville, MS ",
+              "website": "https://tastestarkville.com/?utm_source=google",
+              "rating": 4.5,
+              "reviews": 421
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"pizza\", \"best pizza Starkville\", \"pizza delivery near me\", \"top pizza Starkville\", \"pizza restaurant near me\" - optimize Google My Business profile with these keywords",
+        "Ranking below #1 for 3 keywords - increase customer reviews and engagement to improve rankings",
+        "Low Local Pack visibility (38%) - audit your Google My Business completeness, categories, and local citations"
+      ],
+      "scan_metadata": {
+        "location": "Starkville,Mississippi,United States",
+        "timestamp": "2025-09-15T18:05:08.697Z",
+        "total_scan_time_ms": 49741
+      }
+    },
+    "competitors": [
+      {
+        "name": "Restaurant Tyler",
+        "domain": "restauranttyler.com",
+        "performance": 88,
+        "seo": 79,
+        "accessibility": 75,
+        "bestPractices": 84,
+        "overallScore": 81,
+        "rating": 4.4,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 791,
+        "keywords": 26,
+        "domainAuthority": 84,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+50 keywords",
+        "authorityGap": 1,
+        "backlinks": 1011
+      },
+      {
+        "name": "44 Prime",
+        "domain": "44prime.com",
+        "performance": 82,
+        "seo": 74,
+        "accessibility": 70,
+        "bestPractices": 78,
+        "overallScore": 76,
+        "rating": 4.1,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 512,
+        "keywords": 52,
+        "domainAuthority": 67,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 901
+      },
+      {
+        "name": "Harveys",
+        "domain": "harveys.com",
+        "performance": 92,
+        "seo": 83,
+        "accessibility": 78,
+        "bestPractices": 87,
+        "overallScore": 85,
+        "rating": 4.6,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 800,
+        "keywords": 34,
+        "domainAuthority": 77,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+150 keywords",
+        "authorityGap": 4,
+        "backlinks": 1092
+      },
+      {
+        "name": "Central Station Grill",
+        "domain": "centralstationgrill.com",
+        "performance": 88,
+        "seo": 79,
+        "accessibility": 75,
+        "bestPractices": 84,
+        "overallScore": 81,
+        "rating": 4.4,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1058,
+        "keywords": 41,
+        "domainAuthority": 80,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+50 keywords",
+        "authorityGap": 1,
+        "backlinks": 1053
+      },
+      {
+        "name": "TASTE Italian Kitchen",
+        "domain": "tasteitaliankitchen.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 705,
+        "keywords": 32,
+        "domainAuthority": 68,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+100 keywords",
+        "authorityGap": 3,
+        "backlinks": 1114
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 67,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-15T18:06:04.328Z",
+    "businessProfile": {
+      "name": "Boardtown Pizza & Pints",
+      "address": "705 University Dr Suite C, Starkville, MS 39759, USA",
+      "rating": 4.3,
+      "reviewCount": 178,
+      "phoneNumber": "(662) 498-1555",
+      "website": "https://www.boardtownpizzaandpints.com/",
+      "formatted_address": "705 University Dr Suite C, Starkville, MS 39759, USA",
+      "address_components": [
+        {
+          "long_name": "Suite C",
+          "short_name": "Suite C",
+          "types": [
+            "subpremise"
+          ]
+        },
+        {
+          "long_name": "705",
+          "short_name": "705",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "University Drive",
+          "short_name": "University Dr",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Starkville",
+          "short_name": "Starkville",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Oktibbeha County",
+          "short_name": "Oktibbeha County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Mississippi",
+          "short_name": "MS",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "39759",
+          "short_name": "39759",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "state": "Mississippi",
+      "city": "Starkville",
+      "place_id": "ChIJ7ZE0VUM1gYgRSpGtN-BSiE0",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "reviews": [
+        {
+          "author_name": "P “CoachPrep” S",
+          "author_url": "https://www.google.com/maps/contrib/116350374184255778099/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW0N6tS3xIBFYeVXjToQwK9vkf91VJ6XCQvaMlbhKe0y2c7aeqWGw=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Look.... everywhere I go I ask around and research where the best pizza places to eat are.  I was only in Stark Vegas for a short time but settled on Boardtown after some recommendations.  So glad I did.  The pizza was great!  One of my favorites I've had anywhere in Mississippi and id score it pretty high overall anywhere I've been.  Service was spotty.  Though nothing I would complain about but not compliment either. Atmosphere was a little loud which was understood since it was right near student housing.  But go there for the pizza! Also the fries app were surprisingly good!",
+          "time": 1747517619,
+          "translated": false
+        },
+        {
+          "author_name": "Paul Maione",
+          "author_url": "https://www.google.com/maps/contrib/114677396090617194665/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWtpLJjINdsJtYGAaRYMML9YJZvGlN7Ii01hr4UBnIq8cPbcIj0LQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "4 weeks ago",
+          "text": "I was at Boardtown Pizza this past Friday night, and they blew me away. Coming from the NJ/NY area, where pizza standards are sky-high, I wasn’t sure what to expect. But this was some of the best Neapolitan aesthetic, brick oven I’ve ever had. Perfectly crisp crust, balanced sauce, and fresh toppings… everything was on point.\n\nThe vibe was great, the staff was incredible , and the quality truly rivals what you’d find in the Northeast. Honestly, this place deserves national attention….\n\nBoardtown has officially raised the bar for pizza in Starkville. If you’re in town, don’t miss it.",
+          "time": 1755375376,
+          "translated": false
+        },
+        {
+          "author_name": "James AA Reece",
+          "author_url": "https://www.google.com/maps/contrib/103668268482225922908/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUm-TsLk8N1fTaRKanpJ6AJ2oFFcP2L9Tt-zRHkgmlbTnxwWH84=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 3,
+          "relative_time_description": "3 weeks ago",
+          "text": "Pizza dough way too soft...0 crunch.. no stability... ingredients were good the dough just needs more attention.... wings were great... beer selection good ..appetizers great",
+          "time": 1756013987,
+          "translated": false
+        },
+        {
+          "author_name": "Melia Beam",
+          "author_url": "https://www.google.com/maps/contrib/111297189551292716258/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocItSeF7Z48zpuYbUqFyXRyQtKdkOC2nwlTfEIsSIT4awGt4bw=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "Not from the area but saw this place on the top recommended for Starkville. Some of the best pizza we have ever had. We had the breakfast pizza and the elote pizza, both AMAZING. Great beer selection, in an entertainment district as well. Owners are so wholesome. Lillie our bartender was also so great. Would go back and recommend to anyone going or in the area.",
+          "time": 1755891111,
+          "translated": false
+        },
+        {
+          "author_name": "Brandon Arrigo",
+          "author_url": "https://www.google.com/maps/contrib/112414865227399811248/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXIxv2qu-IRWzCN9Pe4DFjO9s87lT7_KomJbH0dVdiE1hBKgTBqXg=s128-c0x00000000-cc-rp-mo",
+          "rating": 4,
+          "relative_time_description": "4 months ago",
+          "text": "We ordered two pizza to go. One was a White Pizza and the other a Bikini Bottom. The pizzas were perfectly cooked. The only issue is there was no flavor. The tomato sauce on the bikini bottom was flavorless. I love San Marzano tomatoes but there was no other seasoning added. No flavor at all. The ricotta, which is one of my favorite ingredients, was straight ricotta. They make a nice pie and they use good ingredients. But it all lacks flavor. No salt, no nothing. If they could figure that out, it would be amazing pizza. Honestly, for the money go to the cheaper places. This is not it. Maybe a straight pepperoni pizza would be the way to go, hoping the pepperoni adds flavor. We did not finish the pizza.\n\nUpdate: The owner reached out and I do appreciate local businesses. So, I changed my review to four stars for that reason. I am a fan of bold flavors. Maybe that is my downfall. But the White Pizza tasted like nothing but roasted garlic and oil. The ricotta doesn’t come through at all. And the bikini bottom tastes nothing like a Hawaiian. Crunchy pineapple and jalapeños. That’s the whole flavor profile. Nothing worked together on either pizza to build a cohesive and tasty pizza. Maybe I should have had some pints beforehand.",
+          "time": 1746581136,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/118091600224579565692\">Debisree Ray</a>"
+          ],
+          "photo_reference": "ATKogpfeFbtXjrZzM7YvoxVZV3GZQ1cBwWIefeKFXqRLv-BbQK4hnLsc34-jtW2Dvj27GDaOgSOibwOnSNqCYPRonujLX6DNk6wxvO5Qg9biUxJa0aCTPx8fEfJEAa1oP2GvmMxCdKO9NdtVvyGuLraYBwuADZ8BXPp7fMhlNGPdtnV1KD8GnVlpGMDrmoBgYpsJtJt5pBFRBjF_LD9BpMWPPH3CIcnwqMk2W7Si8zQb1z_Slb3QYzu4iWcx0ATYy5Ayov6bFhiSk4xtXEss6CF4eB-KXyI1-R5cklMnVfqru1CmbzUogkIfFScm8OAPgYFoBEpUXCJaIi8EYrjK5AHF60CQpIeBrLH-21Z7rSiZpAjzzoeUzb0-wet1_MEjVtcfJnhTZEIvKhdj8oEhJVYqyYAffOiWeDeC5lvynU89Qcrbwbc5",
+          "width": 4032
+        },
+        {
+          "height": 2523,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112143646918866883914\">Boardtown Pizza &amp; Pints</a>"
+          ],
+          "photo_reference": "ATKogpcHGUNHL_9XI9J4wCIRIrItVg3umUEGqlwGr0PfHlboIrlYvgp3cN842_H-Dl4AE3ZkRRuLmNA3mwxDnz0rjqgKp95ZwL79sRDf403GqTNSyvryXVjwdJ_I_mN0pYs_GT-VBx0rZO1_U3bmtdsmSml08SCUgxUnml7xRO_w6vsUpEZCe3ehiyXFenzokliJBL4Fgi4W-6uoOcd9TJr-Pvmo6nRtVvdciADnar3IF1gsurj154fWAPxm-HXFKZmYEKBC31O_rJzuzB_0Dls6-_GG5AZxBZYt4zPJFhnprH8cBQ",
+          "width": 2523
+        },
+        {
+          "height": 4800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111467667588259635855\">Matthew Thompson</a>"
+          ],
+          "photo_reference": "ATKogpft4fGZCL02BRJkOO4IKWKWyF1_GS8ZBliLQ2S_2l68aTa0bioVdx7ZD1PDYvMt7E0TnV42Y47OwAb2FTsFVZhO9sJ0IqPF_8wmo5w_cmyLSm3yrzaoqzpa08-CpeCtHElPSL6GELIl-ll60jjqow-Wm1dyfka2AozWvQ5nQ9N2EUbuNUFrHKY_HyLku0oh1VEAKXd708rJJ6_WlaHSbRTyrtObB8v8PKU1jv2Fx2MdjQN3wdXM2r5JBvYLM1GU3Es8088_1Ift668wtZAp1AOyhL3hsPbUuzv3lrLxyDqRi4lZtaAaSCa_QPxL_jRIaZpaxfOsJ2vMB9TFQuhlDJar_RJCyl4MM2-ToZOLlqqHZ3eLRhqPyF3P60EJpf6mFtsXdn99LwBlgHox0FTsA8GtGr04rYMDq5i_-8DGduzFZvuLyxOeg2bUnqRl9wui",
+          "width": 3600
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112143646918866883914\">Boardtown Pizza &amp; Pints</a>"
+          ],
+          "photo_reference": "ATKogpf-3Baj_I9D08oonL6nCgruOSS-EESE7bb_VAijqEqYnyTbaF5uLKuNZtL23Z2Az6CNIJG4_vDz8y4RMGUhsdTWWpqULDSP24fUTKYluituzbQzsCZY8W5LTLlUCK4Llg0u9DIhE5zsJtTBXlD9fH2H4CSAGkLilGM3H8zIjbyM7-2ThYx_hIuCnlFsQPhlm40K7duXHcqXIW3QbJ_18fBHoX7GQZaJ1BKm92Yu47HYFYm1D4mnqy5YqZKG_-ZaTKs2CuA4eaLdrnNkMSGn4YIZ4dRbUZ0TViAqX1fu80gyDg",
+          "width": 3024
+        },
+        {
+          "height": 2569,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112143646918866883914\">Boardtown Pizza &amp; Pints</a>"
+          ],
+          "photo_reference": "ATKogpfyZlXPpEp9Tqyo48q4Xe1ZU8WFVF0jaiAbp_vR2jPz9AkxteZej9hOSP2jvO3Yze0HDDjacKwNt2ev3LK8cdX8Pvi7WDb5CXNSvu1NG2nvShwWZNDg_eLO9HGyEzb7HN7aP0eWlVzoxzM3LfoIxNBLML6d3ijD0CnPeJ1epc8FpQh0qJe6fYZPmZ309DPVJzfOweV-EooramXuy1sIBckQmrH-Nf9kVpI-d0Iovv76q_df5X62N_pg1ZcJ7BGuNAZUsg3TLFGh39fZ7el3UuHJpKd0ormgSuvyJvGpAqtmUQ",
+          "width": 2569
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112143646918866883914\">Boardtown Pizza &amp; Pints</a>"
+          ],
+          "photo_reference": "ATKogpcbL1VFSxWirt2OSZqXn594fUMWuHZ8etBWUunHZ3qphuuMligrIWhIJpClvgre1p0boVN1pIYR3yiZxpDuWIfbQhLdCS4-UTLU0yUhqGNybOZ9-c1dqQef038EqNmJSL9OQTXALqiVpeiDVA3HfuqGP5hmXvKFxDbBDti7hbPA7sj8vw49qzcAgfKvsNFcjEsbrLTftEdjT_pZqmdAjJNVnHC5rVXdWcdbPT-1uXRDs4JeU5R_Md0bKc800PolB7dixnBwKHJfuyah9oTvqzDFitoBlew4DJWiKfI3AaFVjA",
+          "width": 3024
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107778075400552850063\">Riky Ruiz</a>"
+          ],
+          "photo_reference": "ATKogpfy-ev1l-LduhXS4W9CSQDB0029hqpOosZwUVW1-wLR1KemI9O0xsIH08aS_usCGlxiu7RFvxq--zyY2FxjzlckSbRhDrqVJjRZ4vTM9Q8JmvIuzbihsG90XIPVd14EDZ89n3tlHYUYRRGFhH3lCQvvOtO2whMFSUK7Dr_5Y9pRUpyCQfR71XbzkPwWTG-Ax7W3-LMzFyDvbxov4rATPXYSarRnymPvDBpBrcE6FKkDnEuCwi55sV1b5XXQGQQtQ1JZe2lRLOMXsrbTHsOgYkk23i5JH3T_V0ifvF4K2IttmGdpD9UrIjrAmOjmk7ujdNFqzf5_JvDDR9NSyh5hAxT-ky3FXUMt5LNKoHZoO_UnJf-uP6g8iyeRdlIvEsLDRpC6nWJF8b91GjhGc8AArwVsxMc3WM5L--gh7uPN0FsniC45",
+          "width": 3024
+        },
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116350374184255778099\">P “CoachPrep” S</a>"
+          ],
+          "photo_reference": "ATKogpfHXyBAltcasWYJ_1RUAPFP5DakUUO7cxXNvOcrr5PVuJPcm0PxzyYlwQTpN0qCMpl6pnlyXZ7KeNL7QMV56oZSHXlrz7R2qS3SNMJ8aos0xZrLEPiqELHZLsSDD-lU1X6umR0jPYY6X2aqFDcaBrb21paF8B3mLKllG-7nR0T45SFDvvD47BIgUAvUYl_KaKh80zaLxbfd9kp5EN7FkjLrc4HY5Pykx3kEXxREAeaXehD78gfkL3L0x0lDD-1pKvX0EvRufK0p6nB9PQxGiQ4C5f73_AqQwzsk5W56YqKYNnlzBtKikZ7tUXlFdr_FPGToRQIbxq2c_oaDy-Ho9iLaXf8jrybaFhpNeIflBp2ZezzhuDyxoZ7McQ0LFUoId0oaiUC6jaJOIp2N2ceNR2cGmOgIEZhdgs1zwyYe-Cfz7KIUPNBiSejTH_IWPMB-",
+          "width": 2252
+        },
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116350374184255778099\">P “CoachPrep” S</a>"
+          ],
+          "photo_reference": "ATKogpdJyVMIas9hil3e88BanpQYelu8Rrr7q6Du7w36d9dlwhYdlaVhogPpzXz4WE1MMrXBfUKQ3rpRvivJqqN4DkqChrZfqebhZiI2R4SRFaOuUoZzbSB7aPHHHRTMj6v3j67sFgxWBOBZFAc5ea3l8E7ci1Fw3xXHXVHib3_KnynA22On3D6hNxW5FauY2yAXFmD3sGj3ichAvvJfvF19ZJ9Zk-bbcZZy_tmP6ExsMliIdIpv9u12HGG6T0RhY-cIXQtAjnBmntlqDyNKKQC_wkDiW0h7Fvn257EZeqErLLFXuhFzo1cJiJ7hkyZtlw_Fhf_AzkYXtbXZHObf5YiUOvQbR9c790j-xZ7tYUOuSAIFoqj9OBk-oC8GVkhtq8FWBP0lKt0sdEpR2DEahMWYn6XrmDnF9GhJ58OYYkiWBJunncM",
+          "width": 2252
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112143646918866883914\">Boardtown Pizza &amp; Pints</a>"
+          ],
+          "photo_reference": "ATKogpeY-nj7--nGg9Ycm-Zw-s7J28JelomB6kk7JaglTq2StnIvsYP3FF9m7-XSKhOokE44BreD6s2kzAPrC2RxTqLSwTL-vHIl2lnYA9lPJmy0jzg9_7gwaR6NChKqKJC8b01ZBgZh_Nz30QX6-rpFHxweXn_bnONoX5E5vXzRUdpHV-bT8-6rmadnLLvI61Dr3m6ZHVeimQCOeX2AHyTmyGG-u90OGF_Ot3B0U23Iky1G00QeiPwDlGZ6bYybiiDV2zSg8_XStuUi749HisVRSQXTzVOE-u5Iag9tR2kkW-MAlg",
+          "width": 3024
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "2100"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2100"
+            },
+            "open": {
+              "day": 1,
+              "time": "1630"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2100"
+            },
+            "open": {
+              "day": 2,
+              "time": "1630"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2100"
+            },
+            "open": {
+              "day": 3,
+              "time": "1630"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2100"
+            },
+            "open": {
+              "day": 4,
+              "time": "1630"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2100"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2100"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 4:30 – 9:00 PM",
+          "Tuesday: 4:30 – 9:00 PM",
+          "Wednesday: 4:30 – 9:00 PM",
+          "Thursday: 4:30 – 9:00 PM",
+          "Friday: 11:00 AM – 9:00 PM",
+          "Saturday: 11:00 AM – 9:00 PM",
+          "Sunday: 11:00 AM – 9:00 PM"
+        ]
+      },
+      "price_level": 1,
+      "editorial_summary": null,
+      "url": "https://maps.google.com/?cid=5586806460713374026",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdP1p7_LZXsuzy9or9sAs3SuQ-z89JQMzQEEL5I7oQiTh1qEOXHKMnJOCRuSbHTJUjGFhb11TiMshqNl6zv1M5VFB0T9QoJxAVuTUunGoDkg2BSaL3nqAIcg3pbTx4T5iZ6mkNwSWuIYf-1hfV54Q9yswutR2cRk9PeOFZ5gJOFYU2f6_ac6_dQ5bbD2TP_ab8L5JlwX5C8mR-9o0UJGk4GJcZdMaT_0UxPcbTsdyrEF6wr4GpsfFHo1MzNNsUMGphaNn0CS1fEvJxIdncO34bpZWYIx1rPX0UNt4IObwbamaLiFf2I-HN7IVOibuDMXsPw1SthTuZLv89h_vEw23GHk1b_TNw_eRCkHuFRlus203m40nZx7Fd9O9TQZu_a_0zX17eK9N_1rTHQHz1iJHBtSvh2bv0_MF2mu15YzRj2nK9R&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdDUsxecreoCM1MggH30i9wGoAG0r7mkbCsXmKo_UQppJ8BthZEVBxMDbOe9HTXJKgBb9p8Afxf4wtAOe64mVHaGYltbrbhDxjApDys5Vc3F-9efm2NGxMNxlCQt5Cn1Ajsu5B4u-948NkWZBh_0E0Mjm_has665pUkJkzc1-D6wGn9uEyUCyRfvZBEfghAEQC1De_Q-sotNjImJUOjOK4PKW4eCcxU2EZjMEyj2MP0McvHkKkqtQDlAFREpC_y_HJVm6tR2dK75sdY_ANt0f8KeLlo_AS9WBQLe83lS68E4A&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpckU86srVaWINLlDph_q8MMUM64Rg_DcXNED3wt5qZ6PeUqdi7l2kSu8nNIpc_ytJw3sFDw9yy-39lqnXcErKOSoOgyEV9qx7yCl19rjsHoAWY28sF1xbTC0qa5jNYYTSPUnkWMqT9MZJr5CL1HsN2PtiMvbRr1M0WDGAN0FRf1CswIOAfFXCO8ECbW85roXhbuZDRNXE7oJab9bPdp9YPxXNchjGmDvM-rN83NxFg8D7lTA25eRrtC8lgDWtWNwoQEvPfywTWDOqySCMdernBLIC-GIbddj0r3PCH7au9Fyb0UxJE9mh8BWnNNnribMx5PdscSh2PxSrW2PcxWQa47vsNoc431XFTlx6xsEG28hps060nZi1C-GOud2XqdGwRTH9vHSoiIzYVVKyfq4cc_9jnTIMJcnJ2YgkSeOvv0BOoZF9jK7wSQBNZQ8hXK&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpd919ewXU8yonGwSHGN_-oxH_t-aP9WDAtx0bkXvqiStJ1ch1UPNo8hyu-A5QMlg9vKRr8_Ks1D3HkD3uzxjo9CvIMQHLZZIb_nuIJDcdLmnLKFX7pR1stEE6WGwX7Ai7ub92JVQE6XHuC1tW_MfDIs4FXYJBs6-nPMXAVrmLqo05zRw6kCZi0J8rSgdSYbiOt42TnUdsFyJ_7MQxvg30ICaj_4YZJfDsbPW1TpL19K9nVOEg96gnnzWR8zXVjC70193PsEs99kFqU0LroS4ElfZyOWCdXDIkN3MIJXOlem7g&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpckUCzIpVcPglz9UNaIe4Jaz2pi6pMRvRdKNGkLYL1pASjyP8XnBZD0fPntVtZ-WdX9ndleh8-E5q4zunL5BGCR5lxhCD-63KoW-u9wAO2-rIC0nFX5lV1nQZUph-jgkpBT24AutagV5MZawrLt9DJcCUIO9qqB-j-pqghY27It-kwe7skKeWh0fEHr6Q-3ocVU2a-3UUxhSxkIj1OSxP3HD8BqRXFaFBsAakluzfUIZ36s2UiC86gRNhQ4HbMgzxNrBsx_WmrI9zxELdmCazxecRN3Zlb9juRlBbG68oR7aA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpd5CC7FxizNiQiCQhRbQElp7QuHdyZTqAo6YCfhABISMZyIkw2MAz2ct9Sn04dmvHM6TACMMGQ96T3f1Pj16_tCJWqASjqXxL8Z7Gb_HlbbxRmlGVHNWCWPwmnAWv8fgOk402IXONwsiv8cGPVJGq0w4UxspdizWj3zXYWI_FkboB4B5oBoWxzSXn4VZHX__wcez9zrmHndkKc-UJKwsOOmaY7r-NsrOOo3QK07dt8TXoLvU-97uQpDmkS9RtRBRE0pQu06Ou2KQROXngcJ2B4_H6ELVh1zdl5-tK92wVDDfg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpf2Igi9DNcjV_2sq85ShBUsXS6WEcsNA3h9yMz13ElHL1yL0k39mzd_r4BzwNBYWN8dBzQkmgakwW1FjCEX5Ca-6ZRdhxYF44WeWz9pGRBco_MjNTbP5g587a3a8tyn2mWrqO2IvS-Dv3fJI0uBNaLh866ms_q51mtfIkfPTH0Wp2FTChpnlJL_10OVxIVTIISnD0e9jXrp-MySN1iJu9rSZqIKg8KWHnm6FnF8NnrSGl0bi7IuMgl5c2Roswyf5Y_AOrVBEyD49ZkXZhIwYpHfm6JwzQPH8mRYNgKzsNOl3A2SjoWMbpZkAAaMKKPElrKXP4vwVSC3oilPEgGXIfGpXTfpeRvUyd5D1aawoC27O3df9R7hA0spcxQR1yA7iMOa3pE4JifbpZJUpVPssih8quKFdAIW9d5VuryU5POzSCvk&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdSKiiCZnr_HVqQBI2OyOh_J7Ck78y2Cz1e1ZL_dXFBJrZAE6Bln5eJKbD0M5fAz1GrEy4nj2qCb2-wP9Rx3gTFVpPqHofRsuBA7VyxEkUx_g1QEe_YS5dsLI8fCeZe9fM8_gTKXzSfLgfptUeUA4lkBARj-Yz9S4ORwpne7KnXNTNLJSaZNRMmDNfdp9N7vi5wtkIaPD5vTxQNwKM-IjXLFvza80eJA58N2gqNYJPSZ6oxWtUm8bxaPZC2idRJoa_vRPNFZ8t9caK2Cz0t78o4gQsa6jrkjUec2e-dnwej-x-DTSrYX9AzqhKQduPCa9KQVgFp5Vut_wv-rfXGLGqMAGjiUnaHY2YLLA3gXPIZjmk0x3_tF7oSITO48TiRYtXlzIiWXDcUs0oYORufRk9WX3Q_GqOHx66xW08-eWnc3vGkB9e5MyPSx7EmEEd8&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdNX2jvxW0IahqPaMPoWfweX60d4Xxc8JaGC7o3qX0TmNWhftL3QQzorS_P5UCIxvoylzpsbUtjSk6BAh1zDUUX-c0qUHahT5gOz7909s0H-CJyvJLel0OPlQCaYL3Uv3C1jVgWRyh2bAu-h9gbijNivKsCvKPL0UiHvTVkXO-6xWNYF2yBJujepplI0BujmD6M3WTN3M7iCN_o9VCV1TBXvkQ_eTXUb4XYUoT3SBZZOyvzXjioDOmHIZYi0YRLz1nWgYK07NFYetN5B3PBQHX-qfeUWJm4CVUEmAgRzyYZMp_C867GhaP_X6nw6F2wBvBhNXoWHI0JQ6zpCdBMj1ehJivhpdwdkR1QU6mqg0rwlMAO52J2A4zXankKbJsogWrFm1o13nYb95H0xEdB2_vgmItvtclKYKUg29q4c0g1LDs&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcuq2VKTen7r90RFCSOWuMO3jSnAcs8kNHebSZNahw4RERQ05TFKIiQ86RHvnaLBH0nCaEsiUfBDneE1eGoRpaStKoHxJgJN-34WYWCMHGbwOLE73P7YQYabA96PWoZsCOjjbs6hq0yoH5NygexA3hO4FlnliboxL8DSd9bCBwvWrifCudAGA4tMiiFWEI5rbbLVTuNKvxDU5-6edKGeOBSO46OS5pOJz8EndysmGwM-UiAb4Jxq22t0EVOJ_guFtQhyNaGMHK_nOap-ZG3gtamcxAqFGaC2JfsxkrGSu8URg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 43,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": false,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 86,
+      "totalReviews": 178,
+      "averageRating": 4.3,
+      "sentimentBreakdown": {
+        "positive": 89,
+        "neutral": 5,
+        "negative": 6
+      },
+      "reviewSources": [
+        "Google Places API (Apify Enhanced)"
+      ],
+      "keyThemes": [
+        "Atmosphere",
+        "Portion Size",
+        "Wait Time",
+        "Service",
+        "Food Quality",
+        "Cleanliness",
+        "Pricing"
+      ],
+      "recentReviews": [
+        {
+          "rating": 5,
+          "text": "Got Boardtown to-go as it was game time.\n\nTried the Kitchen sink and wings. Everything was fantastic!\n\nThe kitchen sink is a supreme pizza. Pepperoni, Italian sausage, veggies, sauce and cheese. The crust is great. Just the right amount of char.\n\nThe wings are out of sight! We got the lemon pepper. Fried crispy. Seasoned well. A fantastic homemade ranch dipping sauce and fresh carrots and celery sticks.\n\nComfortable atmosphere and will return!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 3,
+          "text": "Pizza dough way too soft...0 crunch.. no stability... ingredients were good the dough just needs more attention.... wings were great... beer selection good ..appetizers great",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Not from the area but saw this place on the top recommended for Starkville. Some of the best pizza we have ever had. We had the breakfast pizza and the elote pizza, both AMAZING. Great beer selection, in an entertainment district as well. Owners are so wholesome. Lillie our bartender was also so great. Would go back and recommend to anyone going or in the area.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Great selection of craft beers with rotating options. Katie was our server, and she was the best. 10/10 would go again!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "I was at Boardtown Pizza this past Friday night, and they blew me away. Coming from the NJ/NY area, where pizza standards are sky-high, I wasn’t sure what to expect. But this was some of the best Neapolitan aesthetic, brick oven I’ve ever had. Perfectly crisp crust, balanced sauce, and fresh toppings… everything was on point.\n\nThe vibe was great, the staff was incredible , and the quality truly rivals what you’d find in the Northeast. Honestly, this place deserves national attention….\n\nBoardtown has officially raised the bar for pizza in Starkville. If you’re in town, don’t miss it.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "It’s a me, Luigi. I approve this message",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "BoardTown pizza is the pizza for you and me!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 4,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Excellent pizza and good beer selection.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        }
+      ],
+      "detailedReviews": [
+        {
+          "author": "Matthew Thompson",
+          "rating": 5,
+          "text": "Got Boardtown to-go as it was game time.\n\nTried the Kitchen sink and wings. Everything was fantastic!\n\nThe kitchen sink is a supreme pizza. Pepperoni, Italian sausage, veggies, sauce and cheese. The crust is great. Just the right amount of char.\n\nThe wings are out of sight! We got the lemon pepper. Fried crispy. Seasoned well. A fantastic homemade ranch dipping sauce and fresh carrots and celery sticks.\n\nComfortable atmosphere and will return!",
+          "date": "2025-09-07T00:49:11.891Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2s4NVJuRnVZVGRsTFdKME1YWlNXRWt0WTNGMFMwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWm6lWDj5NWTQG_IYw3BBuLuxP62S_MzqMOWZQKIt5jBxh191c8Tg=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111467667588259635855?hl=en",
+          "reviewerNumberOfReviews": 224,
+          "sentiment": "positive"
+        },
+        {
+          "author": "James AA Reece",
+          "rating": 3,
+          "text": "Pizza dough way too soft...0 crunch.. no stability... ingredients were good the dough just needs more attention.... wings were great... beer selection good ..appetizers great",
+          "date": "2025-08-24T05:39:47.958Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pCeGQxWTRWM0YxY0VOdFNVeE1jVnBWWVhCS1JHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUm-TsLk8N1fTaRKanpJ6AJ2oFFcP2L9Tt-zRHkgmlbTnxwWH84=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103668268482225922908?hl=en",
+          "reviewerNumberOfReviews": 15,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Melia Beam",
+          "rating": 5,
+          "text": "Not from the area but saw this place on the top recommended for Starkville. Some of the best pizza we have ever had. We had the breakfast pizza and the elote pizza, both AMAZING. Great beer selection, in an entertainment district as well. Owners are so wholesome. Lillie our bartender was also so great. Would go back and recommend to anyone going or in the area.",
+          "date": "2025-08-22T19:31:51.073Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2trMVJUSTBUVmM0UTI5Zk9Hb3RkV1JmVmpWVllWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocItSeF7Z48zpuYbUqFyXRyQtKdkOC2nwlTfEIsSIT4awGt4bw=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111297189551292716258?hl=en",
+          "reviewerNumberOfReviews": 17,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Zach Britt",
+          "rating": 5,
+          "text": "Great selection of craft beers with rotating options. Katie was our server, and she was the best. 10/10 would go again!",
+          "date": "2025-08-17T01:12:28.076Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25aVFdYcE9kbGxpWVRWemVUZHBka2N3ZDA1UVUzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUf329Jh6fnf4o4vWrRap7Vbj-kgfomqjXXxSovfCrX3_ty6N63=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116595552831871296123?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Paul Maione",
+          "rating": 5,
+          "text": "I was at Boardtown Pizza this past Friday night, and they blew me away. Coming from the NJ/NY area, where pizza standards are sky-high, I wasn’t sure what to expect. But this was some of the best Neapolitan aesthetic, brick oven I’ve ever had. Perfectly crisp crust, balanced sauce, and fresh toppings… everything was on point.\n\nThe vibe was great, the staff was incredible , and the quality truly rivals what you’d find in the Northeast. Honestly, this place deserves national attention….\n\nBoardtown has officially raised the bar for pizza in Starkville. If you’re in town, don’t miss it.",
+          "date": "2025-08-16T20:16:16.469Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t4eWIxUkRZV2xDY1ZFM1ZEbG9OWEpIWlMweVVGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWtpLJjINdsJtYGAaRYMML9YJZvGlN7Ii01hr4UBnIq8cPbcIj0LQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114677396090617194665?hl=en",
+          "reviewerNumberOfReviews": 42,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Benjamin Burnham",
+          "rating": 5,
+          "text": "It’s a me, Luigi. I approve this message",
+          "date": "2025-08-16T01:52:05.040Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xKWVdub3hTRWRaWTFCQ2VERmFZbEJZVkRKdGFsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUa7xyZYwHihRrAWeU1XlgA-l6uyj-3tclIxV14iLXWAJ-GOUI=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106427157194676657285?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Toby Rogers",
+          "rating": 5,
+          "text": "BoardTown pizza is the pizza for you and me!",
+          "date": "2025-08-16T01:47:41.180Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xsUmFuTXRTRkpWVGxKRlluWjFMVkZGVkdWVFJXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU2DjNAWtOdN_bEA8k3J_vgU6DiL0UP-VE5NxyYeCeMGK3yC4E=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104413878314487356484?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Leenetta Horton",
+          "rating": 4,
+          "text": "",
+          "date": "2025-08-15T16:48:36.721Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2poNVVtZzVVbEZGV2tSb1dFdzNPUzF6TmtoS1ZGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWziZfZXKYxEdkKxdP-1_ZlgkiBNaoQzntpWiG6d7SOs-SK3dvo=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113377907242331462699?hl=en",
+          "reviewerNumberOfReviews": 28,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Belinda Alonso-Moore",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-10T18:17:20.699Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21FNFIwdHlPWHBrY1Y5U1psOXFNeTB4YmxSU1JuYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL65kiiLa_dTi9pKKVIzZTIV5kEfaZN75RWlsCujX2kD274Wg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101055326787443689709?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Thomas Johnson",
+          "rating": 5,
+          "text": "Excellent pizza and good beer selection.",
+          "date": "2025-08-09T13:12:48.236Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21sRU1qUTJZMWRtVjNkV1NYSnpkVVZMV1RkNVFtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVbFiiUzt1k2b9hp_zShtqL8xIE8UMyYu1udY1om_OSFxBYaRpv=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118326437327263045245?hl=en",
+          "reviewerNumberOfReviews": 289,
+          "sentiment": "positive"
+        },
+        {
+          "author": "penny lee",
+          "rating": 5,
+          "text": "Great little Jewel in downtown Starkville,ms",
+          "date": "2025-08-05T22:44:03.500Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2s1elptZGlURXRqU2kxSFZteEdRbVZtV1dkTlpHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVG559IMWTuNuUiHa1SMQXy_k4Q8m7bzHQKw98mxhm08HTFuukJ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111242187570326170482?hl=en",
+          "reviewerNumberOfReviews": 17,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ches Fedric",
+          "rating": 5,
+          "text": "Best pizza & wings in town",
+          "date": "2025-08-01T23:59:18.446Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQyN3FIYzV3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXhVu3shvJeU4h8ZSPuPynjkk7t931bBlCkZqPyoDggE3ATIt4=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113147281115812997224?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kealy Shields",
+          "rating": 4,
+          "text": "We were looking for something new to try and I recently saw a TikTok about them. Food was really good and our waitress was great! We ordered Brussels sprouts, Margherita pizza, and lemon pepper wings.",
+          "date": "2025-07-26T22:45:43.864Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tWdlJIbEVXbk5MZEUweVoyMTFUa3RDTVZkS1drRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVsXP59PvWsbYCBOrIiHi97Yn714CixTYSuX4Dr6YwF5NalLpOH=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100933432582707218115?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Linda Merkel",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-17T01:52:11.281Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25oUlJHdDNSblY2U0hGVFkwVkxWRVF6VWw5TlYzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL9KQmrSCK4R0VX5vNDmDnbnTnMxuLa-sdNstrCR4uFhY_a2w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117407475223211411728?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "AJ Tanner",
+          "rating": 4,
+          "text": "Food was good but they forgot to cut my pizza and were out of wings",
+          "date": "2025-07-16T00:26:45.559Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tWcU4zaHVWa3BCVTJOVlNWb3RTMHQ1Ym14WFdIYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ9tfjBedRt_UTRGQ1G4hj-vuTzDgOpvYAp178qT-0_gOhGNg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113699293562855130497?hl=en",
+          "reviewerNumberOfReviews": 14,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Vicki Leach",
+          "rating": 5,
+          "text": "LOvE Boardtown Pizza and Pints! We’ll grab a pizza,  or just burrata, hummus and a salad;  everything is fresh!  We enjoy this little hidden gem very much. .",
+          "date": "2025-07-15T00:38:34.380Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pSelMxSkhTRFU1WHpGRFgzaFhYek5GYnpZeVRXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI7EUaniMo7oVUQDaiNOtms_9a5I7SN2HG1bYLpuAhusL6itQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103866924012680100775?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Drew Hill",
+          "rating": 5,
+          "text": "Best pizza in Starkville and it’s not close",
+          "date": "2025-07-09T15:27:23.210Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25GWkxXOVFRVWxhVTNabGEwWTNWbWhXTW1WaVJWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK019TCLegNMF1-fa0sBbpxc9ifc6qQwoanaXlm1Y6__Deh0g=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114323990505960123549?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Bo Peacock",
+          "rating": 5,
+          "text": "Best pizza in Mississippi",
+          "date": "2025-07-08T23:29:13.879Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21WRFJqaFlSRmhUVW5oSlJXRTNVV1ZhTVZSTlpHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKtUp4fmfkBD1I0k4gxX8E9cjOAszFnYSG5O1BLxrEaYW29kA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116958633376494748383?hl=en",
+          "reviewerNumberOfReviews": 47,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Emily Castro",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-06T21:47:46.586Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT205YU1YRlNOalpVU1RaRlRYVmhZVlZOVFhZM01HYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLqCpfQG2WSl3u_WIvHkx5M-mEe-3J-bqSHKD-uq8YsiXG33g=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116958062552264328445?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Wade Elliott",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-03T03:15:06.101Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xGMlJWUkNTVFpQYkZSblZ6QXlNa2hIVm5sQk9FRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWc-zGsDD51mGdZvASmgvs7Vc7fewOXTvdpWKonAxat0HrV4j4N=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113693614049641863108?hl=en",
+          "reviewerNumberOfReviews": 189,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Abbie",
+          "rating": 5,
+          "text": "Patrick is cool",
+          "date": "2025-06-29T03:20:30.933Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pWRldsQnZNRko2UzJNNGJXbHhRVkUzUkdOeGRWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWli37s-ohJ5nBVowxNSgdx5nWrBj38kZdhKGQ_CBdCmvA6ins=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111659510585609606748?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Michelle Tehan",
+          "rating": 5,
+          "text": "So dang good!! Love their fries, their pizza is🤌🔥",
+          "date": "2025-06-26T23:21:16.448Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT20xeFZtczJXSGt0U0VwVVVubEtNVVZEWTJsTGNGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXD6rIEvRYAdZL5S2lGDks03tBpO12g8CnexYp8jtjtjyetNP6n=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115092178675724705061?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "UFANSINCE 73",
+          "rating": 5,
+          "text": "Excellent pizza! Brussel sprouts are fire! Can't wait to go back.",
+          "date": "2025-06-20T00:18:27.450Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25GWFNsWkdXbWQwV2pGRVdTMXVOMXAzVDBSYVYyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV4_LQbzSoXGXSD1lXk3ikPQOkhz6QJa56cUkRAbrXD-U9GgdE=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100880237580773424753?hl=en",
+          "reviewerNumberOfReviews": 31,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Misty Francom",
+          "rating": 5,
+          "text": "Best pizza and root beer floats in town! We love board town pizza.",
+          "date": "2025-06-09T02:48:30.615Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VLeUQzb2lzdkx2cGZREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWrBem3oCG1NsqblA0M_WzlTzFjTYw8whUvMeBUdIx-vsNEvR7VSg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107596564311702152331?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "marcello mancini",
+          "rating": 5,
+          "text": "Muy buenas comidas rapidas",
+          "date": "2025-05-20T04:02:34.083Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VKejd6cGkyakpxQkJBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK8JL40_IvF0QqKM_BC8KApKySg4ARdGKZGl2WeOTd1P8FkjQ=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103181734738183769815?hl=en",
+          "reviewerNumberOfReviews": 463,
+          "sentiment": "positive"
+        },
+        {
+          "author": "P “CoachPrep” S",
+          "rating": 5,
+          "text": "Look.... everywhere I go I ask around and research where the best pizza places to eat are.  I was only in Stark Vegas for a short time but settled on Boardtown after some recommendations.  So glad I did.  The pizza was great!  One of my favorites I've had anywhere in Mississippi and id score it pretty high overall anywhere I've been.  Service was spotty.  Though nothing I would complain about but not compliment either. Atmosphere was a little loud which was understood since it was right near student housing.  But go there for the pizza! Also the fries app were surprisingly good!",
+          "date": "2025-05-17T21:33:39.539Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VQblVxc0M3c3Z1cE5nEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW0N6tS3xIBFYeVXjToQwK9vkf91VJ6XCQvaMlbhKe0y2c7aeqWGw=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116350374184255778099?hl=en",
+          "reviewerNumberOfReviews": 345,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Bryan Dennis",
+          "rating": 5,
+          "text": "The beer selection was great and the one I got was ice cold. The bartender was very nice and observant. The brussel sprouts, arugula salad and pizza were very good and cooked well. It’s one of our favorite spots that is locally owned.",
+          "date": "2025-05-14T01:15:14.879Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VQcmcxN0wxNEwyU0lBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLwayaARkaJFoFPyTHmHYkspOjBRznogVopiB6LCbbX5o9uPg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112198388190388691992?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "David W.",
+          "rating": 5,
+          "text": "",
+          "date": "2025-05-13T05:30:43.670Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNZNnFmWnZ3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJk5Fybt1Wf2wnqzVN7Yji8RXYJC0B9dy1c72ExiHaMuhJbHg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116184812881123411873?hl=en",
+          "reviewerNumberOfReviews": 22,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sabreena Michel",
+          "rating": 5,
+          "text": "LOVE the PIZZA! Best I have had in the South so far! Great brussels too!",
+          "date": "2025-05-11T20:28:07.269Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VPcldncXFTdzhDX2p3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVTMemoKWxea7fjp_ZRgxT9JPv2e4mdDpPIYm1UwPNehcXubLJs=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101820652979155994961?hl=en",
+          "reviewerNumberOfReviews": 42,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Oddball nobody",
+          "rating": 5,
+          "text": "Had some pizza there with my college group. It is a great deal for the excellent food you get!",
+          "date": "2025-05-11T19:46:31.632Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VLbmE0dU9HMU9PMTV3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ3TKPSZop3-Hr79KmvYvGqrycdwN1R2cUw9-jY1g8M7MeTyps=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117589605559941425592?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Megan Porter",
+          "rating": 5,
+          "text": "I always have great service here! All staff are very helpful, but tonight Rachel was really great! Food is always delicious.",
+          "date": "2025-05-11T00:03:04.931Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VQX3JuYVdSMTU2UzJRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLl9KySRHU2S5q47KSDIZanIkcMJnwdHDS5qKYJZf51Iu_uSQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100975556609362823739?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "fajr hicks",
+          "rating": 5,
+          "text": "My family had such a great experience our waitress Rachel was so attentive and all the food was delicious. We highly recommend this places and Rachel carpenter to be your waitress.",
+          "date": "2025-05-10T23:55:48.311Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VMM3N1c1RYNWV2Z2dnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI8cYpW5QNeZgIHvgt94qPPHjanLjo1DSG3W9aHe6wC9EjqZg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106537822415272036071?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Alyssa Wurtz",
+          "rating": 5,
+          "text": "",
+          "date": "2025-05-08T01:42:33.416Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VPeWlyT2k2a3J2YzRBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVHQZpbahNwqqFpMFgMM4q2qiX1bgjmuANWc3Ri7WYquMn5zvk=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115616493940744805330?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Brandon Arrigo",
+          "rating": 4,
+          "text": "We ordered two pizza to go. One was a White Pizza and the other a Bikini Bottom. The pizzas were perfectly cooked. The only issue is there was no flavor. The tomato sauce on the bikini bottom was flavorless. I love San Marzano tomatoes but there was no other seasoning added. No flavor at all. The ricotta, which is one of my favorite ingredients, was straight ricotta. They make a nice pie and they use good ingredients. But it all lacks flavor. No salt, no nothing. If they could figure that out, it would be amazing pizza. Honestly, for the money go to the cheaper places. This is not it. Maybe a straight pepperoni pizza would be the way to go, hoping the pepperoni adds flavor. We did not finish the pizza.\n\nUpdate: The owner reached out and I do appreciate local businesses. So, I changed my review to four stars for that reason. I am a fan of bold flavors. Maybe that is my downfall. But the White Pizza tasted like nothing but roasted garlic and oil. The ricotta doesn’t come through at all. And the bikini bottom tastes nothing like a Hawaiian. Crunchy pineapple and jalapeños. That’s the whole flavor profile. Nothing worked together on either pizza to build a cohesive and tasty pizza. Maybe I should have had some pints beforehand.",
+          "date": "2025-05-07T01:25:36.165Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJelFuT0RfNWJDX2NBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXIxv2qu-IRWzCN9Pe4DFjO9s87lT7_KomJbH0dVdiE1hBKgTBqXg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112414865227399811248?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Keesha Lanehart",
+          "rating": 5,
+          "text": "",
+          "date": "2025-04-07T23:35:49.660Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURJckkyQlBBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXVppk1nFFs4MIxu4K_p6U6b7bS3O8nKsYkGYENc_F_EUdCjCA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108817661552144507797?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jeneanne Liley",
+          "rating": 5,
+          "text": "Servers were all friendly, order delivery was fast and pizza was delicious",
+          "date": "2025-03-14T22:52:23.371Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURRcDZhMmp3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIIGCTbe5Gp6eBBSaYQ5m_IVSYDQGLTLZSo_z4EFw8QY1nHBg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107388097628712853862?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Luis Camino",
+          "rating": 5,
+          "text": "The best pizzas in Starkville...",
+          "date": "2025-03-08T21:10:27.275Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURRdUpycmdBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUHRSNrE3kUrJMiK2hVqqZtyBs-Ik0uH69AMSOhHr0xpYYJV9st=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101035220145659344743?hl=en",
+          "reviewerNumberOfReviews": 342,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Paul Tkach",
+          "rating": 5,
+          "text": "I need to leave this review because I’ve been eating at your restaurant for quite some time. It was open today and they informed me 20 minutes before it was open and it was only going to be open at 4:30. They could have tried to service but since they did not, I will never go back and I’ve eaten there many times Letting you know that’s not how to do business your staff needs to know how the communicate with customers, I will never go back",
+          "date": "2025-02-24T23:52:13.365Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURnM3VxUVhREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL_qZvZ0T3CZ-35VD5kGfT4UMM0N9gYJNcoKw9I-0UHYM62dQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104937759926636124484?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Van Huggins",
+          "rating": 5,
+          "text": "I ordered delivery and there was excellent communication. My favorite pizza.",
+          "date": "2025-02-23T00:36:15.074Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURnekxIcDV3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKfDUGIyFx0tyMp6m7P_jywe5XcY9BgwFbA1gG658SN6PxvcQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118217002728224268079?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ava D",
+          "rating": 5,
+          "text": "love this place!!! super great service & the most delicious pizza!",
+          "date": "2025-02-22T01:57:53.067Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURna1BtTDZnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXKSuRaVXYAhz2MMK5ZEPM6rtMecDAjZe8ZRN66xY-bvlRA6Zd1=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106309219602286960922?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "A",
+          "rating": 5,
+          "text": "Just wanted to give a shout out to the sweetest brunette waitress working the bar Saturday afternoon! Came by with my 2 kids and she kept them filled with soda & waters while introducing me to my new favorite beer! I’ve been there several times and their pizza is definitely in my personal opinion the best in the state of Mississippi and although we didn’t eat on this particular visit she made it my favorite visit thus far.",
+          "date": "2025-02-17T22:09:58.245Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNnd2RLNVJnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUA1rd2p5exa6_tsDC7LrAzUWMTuCN8iX_aNwA0uHyqthPTRMfIpQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106055714389014778434?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Michael Dorantes",
+          "rating": 5,
+          "text": "One bit everybody knows the rules 7.6/10\nGreat pizza in Starkville missippii at 9pm on a Saturday night delivered via door dash. No complaints , got the job done .",
+          "date": "2025-02-16T02:56:54.075Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNncXV1QVlnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVXsUyZzmYIX7MkGL5yZEATszQngE6mS0K9IKLesipR8LRL514=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108371190198163258368?hl=en",
+          "reviewerNumberOfReviews": 155,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Curtis Weldon",
+          "rating": 5,
+          "text": "Best pizza in Starkville!",
+          "date": "2025-02-15T20:12:04.050Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNnOHZ1OU1BEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL9RDFW-g_giKFOA2IYwPxtS_ryVlfHSbXDGfwUxDrC1SgnUg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107799379996757819924?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Clint Holt",
+          "rating": 3,
+          "text": "The pizza was ok.  The ordering process was kind of cumbersome. We were provided menus after we were seated.  I then had to go back to the hostess stand and get back in line to order food.\n\nDrinks were ordered via a QR code from the table.  I just feel like the ordering/serving process as a whole needs an overhaul.",
+          "date": "2025-02-15T17:36:38.108Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNnc3M2U193RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVue7AvF2JTHSBkBavKaFiYWNhB1xfe0lQ4bmcuua_BlEh9q_l_=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109416188234291015002?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Charles Burck",
+          "rating": 5,
+          "text": "",
+          "date": "2025-02-06T00:41:43.277Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNBX19xZnB3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU790YUfpSCWytt6pW6iglcdo-9YLBIKIiDv82tIuF51I2Lwg5r=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107724578339817768350?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Hailey Ripple",
+          "rating": 5,
+          "text": "",
+          "date": "2025-02-01T22:57:09.032Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNBaVlqS0JBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIopybd33lrKkbB587vxPif4DvXKJ1J7QhOM74VGUfVSgEdBQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107344024653359011661?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ellen Harrell",
+          "rating": 5,
+          "text": "Best pizza in Starkville!",
+          "date": "2025-01-31T00:36:35.120Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNBNnJybjd3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVClEKUwMpO2zYjUgEDMScKIJCNkXJPnbFStJXeTsFGYQSPST6M=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114112966861289692485?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Brittany McKinney",
+          "rating": 5,
+          "text": "Great pizza. Phenomenal staff. Awesome atmosphere",
+          "date": "2025-01-31T00:35:35.078Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNBNnRxZWJ3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJvQQ17JRz7OWGoqNlhmo3xsKE3Wmfgdw6Udr0G9dmQ3L3bhQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117616471471910255397?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Schwenda",
+          "rating": 5,
+          "text": "",
+          "date": "2025-01-22T00:07:40.633Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURfdEthWVJBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUdRgTgGg6HmnK38potjKB7r5w3sQ14hV40n15XcVZqw88z82WT=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112096704172355213003?hl=en",
+          "reviewerNumberOfReviews": 208,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Brice Newton",
+          "rating": 5,
+          "text": "Vibes off the charts. Great service and even better pizza. 10/10 coming here again",
+          "date": "2025-01-18T01:39:16.737Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNfamJqMkt3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXu5Sd3s8N5TXc_ciFPRPCYThXbVIKziAQTp9PnCy7h45wIBmB-=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110120428535293905651?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Robert Nye",
+          "rating": 5,
+          "text": "",
+          "date": "2025-01-05T00:58:48.304Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURmd3JfTnF3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVqLl8_PPkV3hbfH9SZcaaEd0_-JbA6ON-Yu-wZuxIr44dfblHh=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103430722709228499409?hl=en",
+          "reviewerNumberOfReviews": 15,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sarah Woodward",
+          "rating": 5,
+          "text": "",
+          "date": "2024-12-31T00:32:58.400Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNmeFozQWFREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWMNXLXZOTVxnlvJZSguN7iUU8xvv3y--gnQK7qUu3IGIzpV_vA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115372504754302084376?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Eli Honan",
+          "rating": 5,
+          "text": "",
+          "date": "2024-12-18T21:01:39.709Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUR2d3RlR21RRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXLCprlca9aG2nahKLmmjFPQw6w5s_JjuoU0Fv_RBgY7k38XyeD=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118336549884863756490?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Drew McBride",
+          "rating": 5,
+          "text": "",
+          "date": "2024-12-04T06:53:36.899Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURQNVlpUF9BRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV1f8xiCS9xaRCM6WaCseH6S1eCewZrm4zMePcYwLm86St4Nsg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114884117217874557481?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Wendy Martin",
+          "rating": 5,
+          "text": "Boardtown is first class!  Highly recommend on all fronts...food, service, quality, cleanliness and atmosphere.  Don't miss out on this gem!",
+          "date": "2024-10-19T04:21:42.292Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNYdGJQWnlBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV9_Vy7Uc2keNkNCv-GbScpQPxpH1-oT2etDI7aui4NC_5ds94bBg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114663880632825141518?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Olivia Klaas",
+          "rating": 5,
+          "text": "love the food love the people love the atmosphere!",
+          "date": "2024-10-19T02:37:03.979Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNYdFpqYUtREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKUX-gNus_xakwoEu8oPcGRFc3wWj7zZ6iI25tK8blYtk4xQg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112837052846210627261?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kevin",
+          "rating": 1,
+          "text": "The fries suck. The chicken tenders probably come out of a Tyson chicken bag. Don't order them. Service time to get pizza was 45+ min after ordering",
+          "date": "2024-10-19T01:41:00.078Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNYMWQzclRBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIq-I2V2K8nT9XiznlV03bSKhPq2vKr00Wd92y6ewvIcIpsRQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105968986342465764497?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Arianne H",
+          "rating": 5,
+          "text": "Every pizza I've tried from here has been a hit. It reminds me and my husband of the pizza we had in Italy! The Boardtown pizza dough is delicious and crisp, the toppings are fresh and so flavorful. Bonus, the instant self-order feature for drinks was convenient when we dined in.",
+          "date": "2024-10-06T18:27:51.028Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURuNGV5T1N3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKeGynLM4UZkRBTXjGP0IBnkYGS3GDYshPLpz9PfqinCG9IknLT=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106742949258430605959?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Bunny Monae",
+          "rating": 1,
+          "text": "Tried to dine in for my very first time eating here. Was greeted immediately and told to sit wherever. Once my friend and I got sat at 8:52 we were sitting for less than 2 minutes when the same employee who told us to sit anywhere told us that the kitchen is closed. Google on sunday shows that the restaurant close at 10 so for the kitchen to close almost an hour and a half earlier is confusing to me. Employees in the front were kind but I will probably not come back due to inacurate hours.",
+          "date": "2024-09-30T02:00:03.232Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNueTgyZjFRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJREECbU1oDf7DF8Ang2VFoi1V9BO_fmorlImv5-0Cn00WnTg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117186946153361555218?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Angie Dietz",
+          "rating": 5,
+          "text": "",
+          "date": "2024-09-28T03:24:07.631Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNuNWN1ektBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWRXIpoey0Qo1dwf5yk48YXHBXeweWL8DJixieSXGJZFQaddA7Emg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109006584966955985525?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Josh Waters",
+          "rating": 5,
+          "text": "",
+          "date": "2024-08-16T21:05:56.020Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUM3cWZtdDJ3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU_xG-2OBHOHysac9r5nQSJDrMgjTJ24n7mTlmIACGkBzkT1M5k=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106861128889597267320?hl=en",
+          "reviewerNumberOfReviews": 20,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Heidi Askeland",
+          "rating": 5,
+          "text": "Best gluten free pizza I have had yet! They changed gloves and prepared it on a different surface too.",
+          "date": "2024-08-07T22:05:57.569Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURidGZHc3FRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJJhI4zNIsUAckezM35JpiHhljoww8VOYs5Fo3JCrYiRFJWLw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105396921395261201095?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Brandi L Boyd",
+          "rating": 5,
+          "text": "Food was delish!!\nWe had a pepperoni pizza, salad, and chicken tender basket.  The pizza is cooked in a fire roasted oven 😋 and their sauces are made in house. Everything was great. The bartender was very pleasant ✨️✨️[I think his name is Zack]...",
+          "date": "2024-06-27T11:43:50.199Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURMcHRYOE1BEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJo0jBAUkstbClC0FkTdh3EuyR7KBSAZCrl67nDHn7PXVGH_Q=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105727803588039928118?hl=en",
+          "reviewerNumberOfReviews": 141,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Gerald jernigan",
+          "rating": 5,
+          "text": "",
+          "date": "2024-06-05T23:43:44.908Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN6NTlxWS13RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIo2pbFU4Ej0MT1dQ26R0LjrtUZIC7IDJuuzkUyBnQbAxi80Q=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102332699798388865631?hl=en",
+          "reviewerNumberOfReviews": 60,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Aimee Hawkins",
+          "rating": 5,
+          "text": "We had the best food and experience at BTP&P. The owner took time to tell us about the process of using a brick oven and we brought home our own dough and toppings. We had a pizza party later that weekend. We will definitely be back.\nAimee & Kirk",
+          "date": "2024-06-04T02:37:57.660Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN6emJYNmxRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJR7Lkk39FWcCBaQGo9g3Cw1fI8MuLTHeGsiZpJVniX1YI2AKM=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116562922167620128252?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Evelyn Collins",
+          "rating": 2,
+          "text": "My husband and I had been here before and we liked it but this last Friday that we went with friends it was terrible. It was so expensive and they sent me my pizza burnt. This pizza was like $12 or $13 pizza and they sent it out like that. I wouldn't have served this to anyone whether they were paying or not.",
+          "date": "2024-05-17T17:11:03.487Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN0ajdTWG9RRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU9O5X-BJQLmle8ymvTVHDXyo6DvAzdBzH9zpucLV6FFwI6auDSwQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103908296701584427951?hl=en",
+          "reviewerNumberOfReviews": 227,
+          "sentiment": "negative"
+        },
+        {
+          "author": "william Rosen",
+          "rating": 5,
+          "text": "Great pizza, with a great char on the crust! Plenty of drink options. Def a recommend to anyone who wants good pizza and beer in the Starkville area!",
+          "date": "2024-04-18T14:02:17.183Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNqeksza21nRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUrUIGmPAzqQezOYtQ-r38Uaujxrfrfwhl0y8BnBctLNkA8sRso=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108718997334629728917?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Trace Vining",
+          "rating": 5,
+          "text": "",
+          "date": "2024-02-25T04:59:29.051Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURkMlpIc1JnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWgSeBVA1u8SHF0TQE_pdvmC2MssuDkwwFv2_YlA6LhK1UFFIHzvw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108790750514880874272?hl=en",
+          "reviewerNumberOfReviews": 53,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Erin",
+          "rating": 5,
+          "text": "I come here every Friday for the lunch special ($10 one topping) and the beer special ($5 32oz). Tyler and staff are always super friendly and helpful. The pizza comes out in under 20 minutes. What’s not to love?? Great local business",
+          "date": "2024-02-21T03:40:19.128Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURkcEpPLXBnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJYLt8BrpX1iym-nTyH7E4FRYBCZ_tnWC32LeTXq_Sacp-GLw=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105895857209980268764?hl=en",
+          "reviewerNumberOfReviews": 15,
+          "sentiment": "positive"
+        },
+        {
+          "author": "John Holder",
+          "rating": 5,
+          "text": "Best Pizza I have had in a long time.  Very Friendly.",
+          "date": "2024-02-09T01:42:12.147Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUR0My1DWm5RRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKTyD78rniImTJJvZo2xqAG02bXuCC1CrtUc7qkA-QCi0Y20Q=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114695750689870958531?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Chad Davis",
+          "rating": 5,
+          "text": "Great pizza",
+          "date": "2024-02-01T01:20:24.636Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUN0cTZEOVZBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXygLeps7GrFo19_ayFl5LJ0obaTHcHl1u3hj7OFH6GO8XRJMxe=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105021015202763170089?hl=en",
+          "reviewerNumberOfReviews": 275,
+          "sentiment": "positive"
+        },
+        {
+          "author": "ChrisinOSMS 2002",
+          "rating": 5,
+          "text": "2 for 2! Both visits have been absolutely amazing.  The Slap Your Momma pizza was outstanding. I look forward to eating here while visiting my bulldog.",
+          "date": "2024-01-10T16:14:39.680Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQxaDR2MTl3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVNWiw8QBY_Nz2wuml-6zo31uXI6fENHIve_dwFWOkZWtAFLgVH=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107398709473648918292?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Landagoose",
+          "rating": 5,
+          "text": "On 12/23/23 at 1 my grandfather and I got a pepperoni pie (14$) and 2 drinks (3$ each) which is 10 bucks for someone to eat a delicious new york style pie and get a larger than most soda. I mean, I don’t know what type of wizardry the chefs were doing in the back but that pepperoni pizza was crispy, steaming hot, and so good that I would likely be struck from the heavens for saying that every ingredient wasn’t fresh and/or made in-house. The service was good and the atmosphere was really welcoming. Seriously, this is THE spot if you want a good pie in Starkville.",
+          "date": "2023-12-23T19:58:48.847Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUMxdEltbXh3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXQilbT-iwoaGZ9ItXe5VDCdvoKYU2QoC5zfHCmWJBkMtoKwcw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108535324336780804220?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Katy Edwards",
+          "rating": 3,
+          "text": "The pizzas and hummus were tasty, however the staff began closing around 9:00 and when we wanted a refill of lemonade, the soda fountain nozzles had been removed for cleaning. That’s great that they keep their equipment clean, however, if there are still patrons eating in the restaurant, the soda fountain should be operational. Also, the bathroom garbage can was emptied and turned upside down, leaving no option but to leave trash on top of the can! We had an order total of $100 but when we asked for a container of ranch, there was a $1.00 surcharge for each. Appetizer and pizza were delivered without any plates, leaving us to ask the disgruntled server for some. We have been to Boardtown about 5 times in the last year, but this will be our last.",
+          "date": "2023-12-09T04:46:10.038Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNWbzhLdl93RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU-FyUxU-2p98PkYT12n8eswkkDfaB8vR_q7neLP1THpiPjfJs=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108549782137301692911?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Danielle Bowles",
+          "rating": 5,
+          "text": "Amazing people! Amazing food! Great drinks! 10 out of 10!",
+          "date": "2023-11-26T19:26:30.029Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNsODhIdi13RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIXLNSqM1MxM0VIS1eaMWS2VtW6uMRK-I-T72jDBFU4or_j=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106928179138829553146?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Fran Walker",
+          "rating": 4,
+          "text": "Great pizza.",
+          "date": "2023-11-16T02:22:28.817Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNscXRIYlJBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJepOSeFUcDPXUHcSgiu1sHpYj1MJnY0VWPGT1JxC3IhOa1gQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114570030888751860870?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "William Terrell",
+          "rating": 5,
+          "text": "Traveling through. This pizza place is awesome. Pizza came out quick. Great pizza and beer selection! Highly recommend the side dish Brussel Sprouts",
+          "date": "2023-11-03T18:04:40.921Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNGNV9XWnJBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWywzCDVYxXHAm7pVBvkhT3UxG7Jvo60oqxLpzkdSGpcpAt-m3E=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108405484424937235631?hl=en",
+          "reviewerNumberOfReviews": 26,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Nicole Terrell",
+          "rating": 5,
+          "text": "Brussel sprouts and pizza were great!  Also a good beer selection.  We were passing through and glad we stopped here!  The owner obviously takes a lot of pride in this place and is doing a great job!",
+          "date": "2023-11-03T17:42:01.537Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNGcC11Z3VBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUcXaBFr-fn1qgqXU3fgwFos3PsIU4thzTscLZVYz3wg_KsZha-=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114308733694820074041?hl=en",
+          "reviewerNumberOfReviews": 38,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Zach Palmer",
+          "rating": 3,
+          "text": "Visited this establishment on 10/22/23. Daiquiri machine was down. Pizza was extremely thin in the center and made a mess/fell apart but taste was good. Cups did not have lids. Overall, $25 fed me and my girlfriend, customer service was good, experience was not the best overall due to down Daiquiri machine, missing lids, and extremely thin and messy Pizza.",
+          "date": "2023-10-23T02:28:36.151Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQ1bXV6V1ZnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKGDWTAmnxu0G2q5RwbSHkz3P3I2RMqZFjacO0mrtUBmz-r5mc=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118211266530390113613?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Clayton Sewell",
+          "rating": 5,
+          "text": "",
+          "date": "2023-10-07T18:33:25.188Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURacy1XVmRBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWLcr0AbcAsCjRfnnl62w-2GvDZGGV5y76_oTUXYEYMrwmsXUwBJw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103118245173693032344?hl=en",
+          "reviewerNumberOfReviews": 50,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Michelle Saunders",
+          "rating": 5,
+          "text": "",
+          "date": "2023-10-07T04:35:19.195Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURwa3RtZmVBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX3BGLfI4Al6G7tcCujaJ5wyIYMsfYCdrhWXoNvOJ40vsVWNAgEsA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102703578177544826407?hl=en",
+          "reviewerNumberOfReviews": 71,
+          "sentiment": "positive"
+        },
+        {
+          "author": "James Mitchell",
+          "rating": 5,
+          "text": "",
+          "date": "2023-09-21T13:33:37.673Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNadjVtaVR3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJtHMBFHO8mq2O2qkA8w1o2Z7ekpOqa22NJXdmOQu6rz578Ug=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113332351191754752234?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Granville Barker",
+          "rating": 3,
+          "text": "They used to have a hostess and servers, now they want you to order at the counter and serve yourself, yet there is no signage to indicate this.",
+          "date": "2023-09-20T23:23:55.854Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNaNzlTemNREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLoRbQ8fn8L3hGrkRiwFVipysNRDdyctKLAWD6POTEGvh4tCg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102877037258205660928?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Josh Pettit",
+          "rating": 5,
+          "text": "",
+          "date": "2023-03-04T22:50:59.198Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURob3BXa2hBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKR-Q5R77I6W8ME_jNBjI9G57WXe0demdA1Fx4fxlOosqaMNQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105197565238491683040?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Todd Bennett",
+          "rating": 5,
+          "text": "Great service Great food and a relaxed atmosphere",
+          "date": "2023-02-16T15:29:48.226Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNoNlpHdzhBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU_ndFW9HAWw0kJEB4hoUmDVt4jMwXTi6lf3r8Dm0D2Ye6S2E-L=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105791876582781774339?hl=en",
+          "reviewerNumberOfReviews": 38,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Katie Mills",
+          "rating": 5,
+          "text": "We attended a pizza making class here that was amazing! We learned all about the dough and how to form a perfect pizza. The owner was very informative and kind. Other than being an amazing environment, the pizza was phenomenal! The employees seemed to really enjoy their jobs, and it was an overall super fun and unique experience. I will definitely be back!",
+          "date": "2023-02-15T03:47:45.222Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNoNGFXZThBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLqFfUEU01rOzEQtdmOEVUC8XS34AYEx7bJNd7eeZUiSCm3qw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107125828838138140501?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mark Templeton",
+          "rating": 2,
+          "text": "This use to be one of our favorites for pizza however we want be back. Sad thing is pizza was good the guy behind the bar who took my payment that is the reason we want be back. I ask what I thought was a simple question.  Are the prices on your website not accurate? His response yes they are I told him what the website menu price was compared to my bill and you would have thought the world ended. His response, I guess he needs to change it.  He? He who? Then just tossed my card across the bar and walked away. Sorry call me old school but I still expect some sort of customer service.  I'll do papa John's next time they at least appreciate the business.",
+          "date": "2023-02-14T22:24:07.014Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNob1ozSVZBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVbF1BV7s8Dl25FYXixebo4E4b3yWirQ8oOo2X_xoyHIb9rl8mk=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107044481148502037326?hl=en",
+          "reviewerNumberOfReviews": 27,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Zachary Grubbs",
+          "rating": 5,
+          "text": "This is always one of my go to stops each and every time I am in Starkville. The food is always  top notch. The service is always A+, even when it  is a busy gameday weekend.  You also cannot beat the draft beer selection. If you are looking for good food and drinks in the Cotton District, you need to go to Boardtown.",
+          "date": "2023-01-25T16:23:46.796Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURCamZLT193RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLzLrgB51M5ocd6sbVJeKgd47R53dV834EAxmNzC_qHIIPCoQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106659632529600701394?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sharon Miller",
+          "rating": 5,
+          "text": "",
+          "date": "2023-01-21T13:42:39.694Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURCb2NPRUtREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVfNHjZJynxT7ep64uBL-9lkgsz8T87ngR2T-doRtklAnffBAs_=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104535334977726830316?hl=en",
+          "reviewerNumberOfReviews": 76,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Diellen Lima",
+          "rating": 5,
+          "text": "We are new in town and decided to try this place out. What a great surprise! Ordered take out and the pizza was ready in 20min. Probably the closest you will have of a Neapolitan pizza. Our choice was a little spice for our taste, but still delicious.  I think I already have my favorite pizza place in Starkville.",
+          "date": "2022-11-18T01:05:09.541Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUMtXzYtS1dBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVSLrjBRxFcsL7ogvfUTopDzPRDMoF3L3Czky1zMTn-GZuPuYop=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116981293711794207562?hl=en",
+          "reviewerNumberOfReviews": 46,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jenna-Mae Paz",
+          "rating": 1,
+          "text": "My friends and I walked by here during game day weekend and decided to check it out. Sadly, we were disappointed. Our pizzas were undercooked, and the wings were made in the wrong flavor. It could’ve easily been fixed had our server been more attentive instead of taking shots with another table, as he only came to our table to take our orders and give us our checks. I understand how busy it can get during game day weekends, but I feel the service could be better with some improvements.",
+          "date": "2022-11-15T14:03:37.656Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUMtNS03QXhnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVtrqWRK_JNARJI1JlY7ZL8x0jPiQmar33OFIVxwivu61oz3A98=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111085067074483760151?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Morgan",
+          "rating": 5,
+          "text": "Best pizza in town, and a great selection of beers on tap.",
+          "date": "2022-11-04T19:08:16.796Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUMtbnZiR2JREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL-R6d9TN6mHk6gvpTfnydayWbBz5-s3fxGge10cQNVus7Zq3U=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105227653153464301825?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jared Hinton",
+          "rating": 5,
+          "text": "This place offers great pizza and a great selection of craft beers. Perfect place to grab a pie.",
+          "date": "2022-10-21T12:41:31.650Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURlNTY3TlRnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVvfdvMjbKFhJ3RlRoQvsvONjez_AejbmF9US7HqkI5IYwojjYBOg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103569705105813922665?hl=en",
+          "reviewerNumberOfReviews": 144,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Cassandra McCarter",
+          "rating": 4,
+          "text": "Awesome beer selection, will definitely go back just to try more of their drafts on tap. Pizza was ok (bikini bottom), appetizers nachos were really good but would have been better w/fries instead of chips. Would recommend you give them a try, had a fun time w/friends for my birthday.",
+          "date": "2022-10-15T15:07:03.105Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURlbGZTOXp3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVzL28swAF13w7QWCChJ4xN3cxlMHA8XfuEkXRgEkoOlB5mnid2=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109465647381158412544?hl=en",
+          "reviewerNumberOfReviews": 15,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Brooke Rankins",
+          "rating": 1,
+          "text": "I went there yesterday (10/7/2022) with 3 of my friends (all African American). The bouncer told us that there was a $10 cover charge. We then sat at a table beside the door for a while and as numerous other people (Caucasian) went through the line, I heard him tell them that the cover charge was $5. I then approached the bouncer and asked if the cover was $10 or $5. He said that the price just dropped to $5. I called Boardtown Pizza today, and a lady told me that their cover is typically $5 and that she wasn’t aware of it ever being $10. I feel like we were discriminated against and told a higher amount to either take advantage of us or discourage us from going inside.",
+          "date": "2022-10-08T23:17:38.266Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURleHRySGZREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWaztW4Oys1Bd0K-vqeRDI2HmBkr9QKK-DohpQ1jV4KgkBWUq8f=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111104154069311809952?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "negative"
+        },
+        {
+          "author": "austin stranahan",
+          "rating": 5,
+          "text": "Love this place. Great pizza and great selection of beer. This is our go to spot in Starkville. The staff is always kind and attentive, and the food is great. Must try if you're looking for pizza in town.",
+          "date": "2022-10-06T00:13:30.861Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURlb29YLWtRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIEfjX_rPrGMVRq4uCyuWCB9TnrMh0Xfm0eMEoTWaXFHbyfJQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107976192029621639826?hl=en",
+          "reviewerNumberOfReviews": 22,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Hunter Mitchell",
+          "rating": 5,
+          "text": "",
+          "date": "2022-10-03T03:51:58.366Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURlbElQZkx3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWBDv90dp7i492lbuoOOGN6LGUXUcucagj2U5LJyEfKgo9XYOPtLQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100715237270818315014?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jeff Woods",
+          "rating": 4,
+          "text": "",
+          "date": "2022-09-19T12:21:09.968Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNlNWJpNnBRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXIuco9_R-9PiENtTIWXL1zjr80YjpLvRWYaO1CuNdh4d6Y5_NY=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107200801265615854076?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "William Clanton",
+          "rating": 5,
+          "text": "Great place to eat!",
+          "date": "2022-09-04T19:32:49.164Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNleUxxeWZBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXGUYuDB1edFjV1xfJmIRfkDKQzywrOmjq_V3tKrHw39pUJQjwiuw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110482789023433561570?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Anthony Uren",
+          "rating": 5,
+          "text": "Been coming here for literally years, it's had it's bad times and went thru some employees... But today everyone was nice the food was spot on and we had a very pleasant experience... We live out here and don't like to go to town so give it a try again might be very surprised",
+          "date": "2022-08-13T21:56:21.138Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR1cExINFJ3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVDAB8mqeoaWp0gGvbJZ8TYqLzYA2QTNZcKtP9XTDOihVK4yjL-Kw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103048723707842255784?hl=en",
+          "reviewerNumberOfReviews": 82,
+          "sentiment": "positive"
+        }
+      ],
+      "customerMoodAnalysis": {
+        "overallMood": "delighted",
+        "sentimentSummary": "Customers are genuinely thrilled with their experience. With an average 4.6/5 rating across 100 recent reviews, your restaurant consistently exceeds expectations.",
+        "sentimentDistribution": {
+          "ecstatic": 6,
+          "delighted": 78,
+          "satisfied": 10,
+          "neutral": 0,
+          "frustrated": 2,
+          "disappointed": 4,
+          "angry": 0
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "food quality",
+            "mentions": 27
+          },
+          {
+            "theme": "service excellence",
+            "mentions": 12
+          },
+          {
+            "theme": "atmosphere",
+            "mentions": 8
+          },
+          {
+            "theme": "slow service",
+            "mentions": 6
+          },
+          {
+            "theme": "speed of service",
+            "mentions": 3
+          },
+          {
+            "theme": "cleanliness",
+            "mentions": 3
+          },
+          {
+            "theme": "food issues",
+            "mentions": 3
+          },
+          {
+            "theme": "overpriced",
+            "mentions": 1
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 21,
+          "satisfaction": 63,
+          "disappointment": 1,
+          "frustration": 0,
+          "anger": 1
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "Customers rave about the perfectly crisp crust and balanced sauce of the Neapolitan-style pizza, which rivals the best from the NJ/NY area. - SEO services can leverage this for better visibility",
+            "The rotating craft beer selection and the great beer variety are highly appreciated by customers. - social media marketing can showcase this strength",
+            "The wings, especially the lemon pepper variety, are praised for being fried crispy and well-seasoned, complemented by a fantastic homemade ranch dipping sauce. - Boostly marketing services can amplify this"
+          ],
+          "improvementOpportunities": [
+            "Negative reviews and reputation issues, such as inconsistent service and undercooked or flavorless food - review management can address this concern",
+            "Long wait times and cumbersome ordering processes - Boostly marketing services can improve this",
+            "Lack of atmosphere/ambiance awareness, such as confusion about ordering processes and early closing times - social media marketing can improve this area"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 100,
+          "averageRating": 4.6,
+          "ratingDistribution": {
+            "1": 4,
+            "2": 2,
+            "3": 5,
+            "4": 7,
+            "5": 82
+          },
+          "sentimentTrends": {
+            "trend": "stable",
+            "recentAverageRating": 4.7,
+            "previousAverageRating": 4.6,
+            "recentReviewsCount": 10
+          }
+        }
+      },
+      "examples": {
+        "positive": [
+          {
+            "author": "Matthew Thompson",
+            "rating": 5,
+            "text": "Got Boardtown to-go as it was game time.\n\nTried the Kitchen sink and wings. Everything was fantastic!\n\nThe kitchen sink is a supreme pizza. Pepperoni, Italian sausage, veggies, sauce and cheese. The crust is great. Just the right amount of char.\n\nThe wings are out of sight! We got the lemon pepper. Fried crispy. Seasoned well. A fantastic homemade ranch dipping sauce and fresh carrots and celery sticks.\n\nComfortable atmosphere and will return!",
+            "date": "2025-09-07T00:49:11.891Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2s4NVJuRnVZVGRsTFdKME1YWlNXRWt0WTNGMFMwRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWm6lWDj5NWTQG_IYw3BBuLuxP62S_MzqMOWZQKIt5jBxh191c8Tg=s1920-c-rp-mo-ba6-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/111467667588259635855?hl=en",
+            "reviewerNumberOfReviews": 224
+          },
+          {
+            "author": "Melia Beam",
+            "rating": 5,
+            "text": "Not from the area but saw this place on the top recommended for Starkville. Some of the best pizza we have ever had. We had the breakfast pizza and the elote pizza, both AMAZING. Great beer selection, in an entertainment district as well. Owners are so wholesome. Lillie our bartender was also so great. Would go back and recommend to anyone going or in the area.",
+            "date": "2025-08-22T19:31:51.073Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2trMVJUSTBUVmM0UTI5Zk9Hb3RkV1JmVmpWVllWRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocItSeF7Z48zpuYbUqFyXRyQtKdkOC2nwlTfEIsSIT4awGt4bw=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/111297189551292716258?hl=en",
+            "reviewerNumberOfReviews": 17
+          },
+          {
+            "author": "Zach Britt",
+            "rating": 5,
+            "text": "Great selection of craft beers with rotating options. Katie was our server, and she was the best. 10/10 would go again!",
+            "date": "2025-08-17T01:12:28.076Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25aVFdYcE9kbGxpWVRWemVUZHBka2N3ZDA1UVUzYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUf329Jh6fnf4o4vWrRap7Vbj-kgfomqjXXxSovfCrX3_ty6N63=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/116595552831871296123?hl=en",
+            "reviewerNumberOfReviews": 7
+          }
+        ],
+        "neutral": [
+          {
+            "author": "James AA Reece",
+            "rating": 3,
+            "text": "Pizza dough way too soft...0 crunch.. no stability... ingredients were good the dough just needs more attention.... wings were great... beer selection good ..appetizers great",
+            "date": "2025-08-24T05:39:47.958Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pCeGQxWTRWM0YxY0VOdFNVeE1jVnBWWVhCS1JHYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUm-TsLk8N1fTaRKanpJ6AJ2oFFcP2L9Tt-zRHkgmlbTnxwWH84=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/103668268482225922908?hl=en",
+            "reviewerNumberOfReviews": 15
+          },
+          {
+            "author": "Clint Holt",
+            "rating": 3,
+            "text": "The pizza was ok.  The ordering process was kind of cumbersome. We were provided menus after we were seated.  I then had to go back to the hostess stand and get back in line to order food.\n\nDrinks were ordered via a QR code from the table.  I just feel like the ordering/serving process as a whole needs an overhaul.",
+            "date": "2025-02-15T17:36:38.108Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNnc3M2U193RRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVue7AvF2JTHSBkBavKaFiYWNhB1xfe0lQ4bmcuua_BlEh9q_l_=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/109416188234291015002?hl=en",
+            "reviewerNumberOfReviews": 10
+          },
+          {
+            "author": "Katy Edwards",
+            "rating": 3,
+            "text": "The pizzas and hummus were tasty, however the staff began closing around 9:00 and when we wanted a refill of lemonade, the soda fountain nozzles had been removed for cleaning. That’s great that they keep their equipment clean, however, if there are still patrons eating in the restaurant, the soda fountain should be operational. Also, the bathroom garbage can was emptied and turned upside down, leaving no option but to leave trash on top of the can! We had an order total of $100 but when we asked for a container of ranch, there was a $1.00 surcharge for each. Appetizer and pizza were delivered without any plates, leaving us to ask the disgruntled server for some. We have been to Boardtown about 5 times in the last year, but this will be our last.",
+            "date": "2023-12-09T04:46:10.038Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNWbzhLdl93RRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU-FyUxU-2p98PkYT12n8eswkkDfaB8vR_q7neLP1THpiPjfJs=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/108549782137301692911?hl=en",
+            "reviewerNumberOfReviews": 2
+          }
+        ],
+        "negative": [
+          {
+            "author": "Kevin",
+            "rating": 1,
+            "text": "The fries suck. The chicken tenders probably come out of a Tyson chicken bag. Don't order them. Service time to get pizza was 45+ min after ordering",
+            "date": "2024-10-19T01:41:00.078Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNYMWQzclRBEAE",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIq-I2V2K8nT9XiznlV03bSKhPq2vKr00Wd92y6ewvIcIpsRQ=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/105968986342465764497?hl=en",
+            "reviewerNumberOfReviews": 10
+          },
+          {
+            "author": "Bunny Monae",
+            "rating": 1,
+            "text": "Tried to dine in for my very first time eating here. Was greeted immediately and told to sit wherever. Once my friend and I got sat at 8:52 we were sitting for less than 2 minutes when the same employee who told us to sit anywhere told us that the kitchen is closed. Google on sunday shows that the restaurant close at 10 so for the kitchen to close almost an hour and a half earlier is confusing to me. Employees in the front were kind but I will probably not come back due to inacurate hours.",
+            "date": "2024-09-30T02:00:03.232Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNueTgyZjFRRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJREECbU1oDf7DF8Ang2VFoi1V9BO_fmorlImv5-0Cn00WnTg=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/117186946153361555218?hl=en",
+            "reviewerNumberOfReviews": 1
+          },
+          {
+            "author": "Evelyn Collins",
+            "rating": 2,
+            "text": "My husband and I had been here before and we liked it but this last Friday that we went with friends it was terrible. It was so expensive and they sent me my pizza burnt. This pizza was like $12 or $13 pizza and they sent it out like that. I wouldn't have served this to anyone whether they were paying or not.",
+            "date": "2024-05-17T17:11:03.487Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN0ajdTWG9RRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU9O5X-BJQLmle8ymvTVHDXyo6DvAzdBzH9zpucLV6FFwI6auDSwQ=s1920-c-rp-mo-ba4-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/103908296701584427951?hl=en",
+            "reviewerNumberOfReviews": 227
+          }
+        ]
+      },
+      "trends": {
+        "ratingTrend": "improving",
+        "volumeTrend": "stable",
+        "responseRate": 0,
+        "averageResponseTime": "No responses"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ]
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/boardtownpizzapints",
+      "instagram": "https://www.instagram.com/boardtownpizzapints",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 58,
+      "social": 100,
+      "local": 61,
+      "reviews": 73,
+      "overall": 73
+    },
+    "originalScores": {
+      "seo": 70,
+      "overallScore": 64,
+      "performance": 63,
+      "userExperience": 60
+    },
+    "migratedAt": "2025-09-16T00:37:21.261Z"
+  },
+  "metadata": {
+    "cachedAt": "2025-09-15T18:06:04.493Z",
+    "expiresAt": "2025-10-15T18:06:04.493Z",
+    "placeId": "ChIJ7ZE0VUM1gYgRSpGtN-BSiE0",
+    "restaurantName": "Boardtown Pizza & Pints",
+    "cacheVersion": "2.0.0"
+  }
+}

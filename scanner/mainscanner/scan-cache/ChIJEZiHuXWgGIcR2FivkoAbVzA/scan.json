@@ -1,0 +1,2697 @@
+{
+  "data": {
+    "domain": "lasalita.com",
+    "restaurantName": "La Salita Restaurant",
+    "placeId": "ChIJEZiHuXWgGIcR2FivkoAbVzA",
+    "overallScore": 73,
+    "performance": 100,
+    "seo": 58,
+    "mobile": 50,
+    "userExperience": 90,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "mexican near me",
+        "position": 0,
+        "searchVolume": 880,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "mexican delivery Albuquerque",
+        "position": 0,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best mexican Albuquerque",
+        "position": 0,
+        "searchVolume": 1900,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "mexican",
+        "position": 0,
+        "searchVolume": 880,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "mexican places near me",
+        "position": 0,
+        "searchVolume": 90,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "mexican Albuquerque New Mexico",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "mexican delivery near me",
+        "position": 10,
+        "searchVolume": 90,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://lasalita.com/",
+        "title": "La Salita Restaurant - Northeast Heights, Albuquerque, NM",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "mexican open now",
+        "position": 0,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 0,
+        "keywords_appeared": 0,
+        "total_keywords": 8,
+        "average_position": 0,
+        "best_position": 0
+      },
+      "keyword_results": [
+        {
+          "keyword": "mexican near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Son Regeo’s Mexican food",
+              "address": "Albuquerque, NM ",
+              "website": "",
+              "rating": 5,
+              "reviews": 1
+            },
+            {
+              "position": 2,
+              "name": "El Taco de México",
+              "address": "Albuquerque, NM ",
+              "website": "",
+              "rating": 4.5,
+              "reviews": 416
+            },
+            {
+              "position": 3,
+              "name": "\"Tacos\" las chanclitas Mexican Food",
+              "address": "Albuquerque, NM ",
+              "website": "",
+              "rating": 4.2,
+              "reviews": 32
+            }
+          ]
+        },
+        {
+          "keyword": "mexican",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Son Regeo’s Mexican food",
+              "address": "Albuquerque, NM ",
+              "website": "",
+              "rating": 5,
+              "reviews": 1
+            },
+            {
+              "position": 2,
+              "name": "El Taco de México",
+              "address": "Albuquerque, NM ",
+              "website": "",
+              "rating": 4.5,
+              "reviews": 416
+            },
+            {
+              "position": 3,
+              "name": "The ORIGINAL Cocina Azul at 12th & Mountain Rd",
+              "address": "Albuquerque, NM ",
+              "website": "http://cocinaazul.com/",
+              "rating": 4.5,
+              "reviews": 4000
+            }
+          ]
+        },
+        {
+          "keyword": "best mexican Albuquerque",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "The ORIGINAL Cocina Azul at 12th & Mountain Rd",
+              "address": "Albuquerque, NM ",
+              "website": "http://cocinaazul.com/",
+              "rating": 4.5,
+              "reviews": 4000
+            },
+            {
+              "position": 2,
+              "name": "La Guelaguetza",
+              "address": "Albuquerque, NM ",
+              "website": "https://laguelaguetza.shop/",
+              "rating": 4.7,
+              "reviews": 1800
+            },
+            {
+              "position": 3,
+              "name": "Herencia",
+              "address": "Albuquerque, NM ",
+              "website": "https://herenciaabq.com/",
+              "rating": 4.8,
+              "reviews": 189
+            }
+          ]
+        },
+        {
+          "keyword": "mexican delivery near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "\"Tacos\" las chanclitas Mexican Food",
+              "address": "Albuquerque, NM ",
+              "website": "",
+              "rating": 4.2,
+              "reviews": 32
+            },
+            {
+              "position": 2,
+              "name": "Federidelfos Mexican food",
+              "address": "Albuquerque, NM ",
+              "website": "https://federidelfosnm.com/",
+              "rating": 4,
+              "reviews": 212
+            },
+            {
+              "position": 3,
+              "name": "El Taco de México",
+              "address": "Albuquerque, NM ",
+              "website": "",
+              "rating": 4.5,
+              "reviews": 416
+            }
+          ]
+        },
+        {
+          "keyword": "mexican Albuquerque New Mexico",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Son Regeo’s Mexican food",
+              "address": "Albuquerque, NM ",
+              "website": "",
+              "rating": 5,
+              "reviews": 1
+            },
+            {
+              "position": 2,
+              "name": "La Sierra: New Mexican Restaurant",
+              "address": "Albuquerque, NM ",
+              "website": "",
+              "rating": 4.5,
+              "reviews": 50
+            },
+            {
+              "position": 3,
+              "name": "The ORIGINAL Cocina Azul at 12th & Mountain Rd",
+              "address": "Albuquerque, NM ",
+              "website": "http://cocinaazul.com/",
+              "rating": 4.5,
+              "reviews": 4000
+            }
+          ]
+        },
+        {
+          "keyword": "top mexican Albuquerque",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "The ORIGINAL Cocina Azul at 12th & Mountain Rd",
+              "address": "Albuquerque, NM ",
+              "website": "http://cocinaazul.com/",
+              "rating": 4.5,
+              "reviews": 4000
+            },
+            {
+              "position": 2,
+              "name": "La Guelaguetza",
+              "address": "Albuquerque, NM ",
+              "website": "https://laguelaguetza.shop/",
+              "rating": 4.7,
+              "reviews": 1800
+            },
+            {
+              "position": 3,
+              "name": "Padilla's Mexican Kitchen",
+              "address": "Albuquerque, NM ",
+              "website": "https://m.facebook.com/pages/Padillas-Mexican-Food-Restaurant/133341743386469",
+              "rating": 4.6,
+              "reviews": 2200
+            }
+          ]
+        },
+        {
+          "keyword": "mexican restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Son Regeo’s Mexican food",
+              "address": "Albuquerque, NM ",
+              "website": "",
+              "rating": 5,
+              "reviews": 1
+            },
+            {
+              "position": 2,
+              "name": "El Taco de México",
+              "address": "Albuquerque, NM ",
+              "website": "",
+              "rating": 4.5,
+              "reviews": 416
+            },
+            {
+              "position": 3,
+              "name": "\"Tacos\" las chanclitas Mexican Food",
+              "address": "Albuquerque, NM ",
+              "website": "",
+              "rating": 4.2,
+              "reviews": 32
+            }
+          ]
+        },
+        {
+          "keyword": "mexican food Albuquerque",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Son Regeo’s Mexican food",
+              "address": "Albuquerque, NM ",
+              "website": "",
+              "rating": 5,
+              "reviews": 1
+            },
+            {
+              "position": 2,
+              "name": "LA BELLA TLAXCALITA",
+              "address": "Albuquerque, NM ",
+              "website": "",
+              "rating": 5,
+              "reviews": 1
+            },
+            {
+              "position": 3,
+              "name": "El Taco de México",
+              "address": "Albuquerque, NM ",
+              "website": "",
+              "rating": 4.5,
+              "reviews": 416
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"mexican near me\", \"mexican\", \"best mexican Albuquerque\", \"mexican delivery near me\", \"mexican Albuquerque New Mexico\", \"top mexican Albuquerque\", \"mexican restaurant near me\", \"mexican food Albuquerque\" - optimize Google My Business profile with these keywords",
+        "Low Local Pack visibility (0%) - audit your Google My Business completeness, categories, and local citations"
+      ],
+      "scan_metadata": {
+        "location": "Albuquerque,New Mexico,United States",
+        "timestamp": "2025-09-15T05:09:17.713Z",
+        "total_scan_time_ms": 34920
+      }
+    },
+    "competitors": [
+      {
+        "name": "The ORIGINAL Cocina Azul at 12th & Mountain Rd",
+        "domain": "theoriginalcocinaazulat12thmountainrd.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 683,
+        "keywords": 56,
+        "domainAuthority": 86,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+100 keywords",
+        "authorityGap": 3,
+        "backlinks": 766
+      },
+      {
+        "name": "Seasons 52",
+        "domain": "seasons52.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 548,
+        "keywords": 38,
+        "domainAuthority": 75,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+100 keywords",
+        "authorityGap": 3,
+        "backlinks": 892
+      },
+      {
+        "name": "Farm & Table",
+        "domain": "farmtable.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1181,
+        "keywords": 39,
+        "domainAuthority": 72,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+100 keywords",
+        "authorityGap": 3,
+        "backlinks": 1168
+      },
+      {
+        "name": "La Guelaguetza",
+        "domain": "laguelaguetza.com",
+        "performance": 94,
+        "seo": 85,
+        "accessibility": 80,
+        "bestPractices": 89,
+        "overallScore": 87,
+        "rating": 4.7,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1219,
+        "keywords": 58,
+        "domainAuthority": 86,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+200 keywords",
+        "authorityGap": 6,
+        "backlinks": 1158
+      },
+      {
+        "name": "Sixty-Six Acres",
+        "domain": "sixtysixacres.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 920,
+        "keywords": 28,
+        "domainAuthority": 70,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+100 keywords",
+        "authorityGap": 3,
+        "backlinks": 873
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 70,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-15T05:10:11.775Z",
+    "businessProfile": {
+      "name": "La Salita Restaurant",
+      "address": "1950 Juan Tabo Blvd NE Suite H, Albuquerque, NM 87112, USA",
+      "rating": 4.3,
+      "reviewCount": 1747,
+      "phoneNumber": "(505) 299-9968",
+      "website": "http://lasalita.com/",
+      "formatted_address": "1950 Juan Tabo Blvd NE Suite H, Albuquerque, NM 87112, USA",
+      "address_components": [
+        {
+          "long_name": "Suite H",
+          "short_name": "Suite H",
+          "types": [
+            "subpremise"
+          ]
+        },
+        {
+          "long_name": "1950",
+          "short_name": "1950",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Juan Tabo Boulevard Northeast",
+          "short_name": "Juan Tabo Blvd NE",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Juan Tabo",
+          "short_name": "Juan Tabo",
+          "types": [
+            "neighborhood",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Albuquerque",
+          "short_name": "Albuquerque",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Bernalillo County",
+          "short_name": "Bernalillo County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "New Mexico",
+          "short_name": "NM",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "87112",
+          "short_name": "87112",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "state": "New Mexico",
+      "city": "Albuquerque",
+      "place_id": "ChIJEZiHuXWgGIcR2FivkoAbVzA",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "reviews": [
+        {
+          "author_name": "Meghan Davis",
+          "author_url": "https://www.google.com/maps/contrib/115878454869409849259/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWzXTTdehsr6gE8q4jQK8uvxpytNujEq_7CPP4HDvOy1y6tF3ShYQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 1,
+          "relative_time_description": "2 months ago",
+          "text": "Major bummer. Last time we went to La Salita we watched the staff sneeze into the ice and scratch themselves. We told the manager and they gave us a gift card. We were hesitant to go back and waited about 4 months. Sad to say it’s gone down hill. We asked if the guacamole would be enough for a party of four, the young lady said yes the starter is ‘full size.’  The $5 guac under ‘starters’ is served in a 2 ounce ramekin. When we asked to pay the difference and switch to queso as an app, the manager, Sara said, “If you think this is small I can get you one half the size.” Great customer service. The queso was so watery more gets on the table than the chip. They didn’t drain the turkey so my enchiladas were swimming. My husband and father’s blue corn turkey enchilada plates didn’t have any turkey. It was a tortilla stacked a top another tortilla. My mom’s rellenos were burnt. I waited in line for 10 minutes while our family ate to order more beers, pay for them, then be told the tap was blown. One of the managers brought me the beer and said the staff didn’t know the handle was turned. Half our food was remade and by the time mine finally came back every one was finished. When I finally got my plate the manager stayed and talked for over 10 minutes. By then my egg was cold and rubbery and the whole experience was the pits. We used to go weekly and now it’s just over priced fast food at best. We threw all the leftovers away as my parents both reported being sick all night.",
+          "time": 1751214307,
+          "translated": false
+        },
+        {
+          "author_name": "Regina Gonzales",
+          "author_url": "https://www.google.com/maps/contrib/100257791285273135525/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUaC2r17I_eA9-x_UGlGxOIda-haHca0mZrtV_gp_DUqxBTgywUdg=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 4,
+          "relative_time_description": "3 months ago",
+          "text": "I was a little disappointed today. I ordered a combo plate and normally when I order from there, I get a Sopa with my order.  I didn’t so I reached out and they let me know that it’s $.50 extra. Normally with any restaurant (including here) when I order you get one with your meal. This was a combination plate. Also, I ordered the guac and chips. I got a good amount of guac, but only a handful of chips.",
+          "time": 1748990912,
+          "translated": false
+        },
+        {
+          "author_name": "Katelynn Kellogg",
+          "author_url": "https://www.google.com/maps/contrib/103925128559882096887/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV6-PRofDaZllBzBxB9PFzCGP3MbRjj42jo0qHmjJYPMtEWVLO7=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "11 months ago",
+          "text": "3.5 stars.\nI found La Salita via a google search of restaurants in the area of my Airbnb that had 4+ stars. When I arrived I was greeted very kindly and every staff member I interacted with during my visit was attentive, caring, and truly wonderful.\nI ordered a turkey enchilada with green and red sauce on the side as this was my first time trying the sauces. The food was good, but not great, which could just be me as I'm not from around here and my pallet isn't quite the same but I didn't like either of the chile sauces, there was way too much cheese on my enchilada and I was given 5 pieces of a diced tomato. The portion size was perfect and I didn't take home any leftovers.\nI'd say the atmosphere is good, but a little industrial feeling. The outside of the building isn't really inviting at all and there's a lot of open space and basic seating at basic tables throughout. I was comfortable, but it wasn't a 5 star experience.\nThey do have a very extensive list of awards won!",
+          "time": 1727583858,
+          "translated": false
+        },
+        {
+          "author_name": "Debbi English",
+          "author_url": "https://www.google.com/maps/contrib/100717998553210535619/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXYMbKfsGUDVu7ctrt6qwHRWkgw028ZM1g3tIFCJG4vQ_nrUgXo=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "I've been wanting to try this place since they have a sizeable Meatless selection. It took awhile but I have gotten takeout from there twice now and their tacos are DELISH! I got the not-turkey taco on a whim last night and my mind was blown how delicious it was. I love Impossible ground but I think I'm getting not-turkey as my protein option from here-on-out. Kinda wanna know where I can find that for home cooking!",
+          "time": 1756340617,
+          "translated": false
+        },
+        {
+          "author_name": "Ginger Anderson",
+          "author_url": "https://www.google.com/maps/contrib/116163624090389914613/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUqiF1OdA25pV1YeZyZj3egj4vR-QT1kQwHDJ425GzRrmTIGdEzkw=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "We hosted my graduation party at La Salita, and I couldn’t be more grateful for their event space and support. From start to finish, the staff was helpful, responsive, and incredibly kind. The buffet was ready right on time, the food was delicious (everyone raved about it!), and the space had just the right energy—warm, festive, and relaxed.\n\nLa Salita offers a private event space for up to 40 people, and it was perfect for our group. It's also affordable for the quality and service you receive. Whether you're planning a graduation, birthday, family gathering, or baby shower- I highly recommend them. They have great food and drinks, as well as vegetarian and vegan options. Our guests loved the margaritas especially.\n\nHuge thanks to the La Salita team for helping make our celebration so memorable!",
+          "time": 1748203623,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116112467412752707446\">La Salita Restaurant</a>"
+          ],
+          "photo_reference": "ATKogpf46EeTo0Bn7Uq5rkxwiqaDFyWjqadRuFKpl5xesQ4-p4FVCMzfwST0CvsmDTBMP8ihEXGKT8AtTsQrNdbIvtgdQGiMX6CjZYspwCdo5vLJ38-GAck6g8c9ydVgpbApBPR0k0abPaH4TCTJ0eK3JFMwOcBdn_rrnuNr7R0xpSuzfK2xUrZlL3PXxb6ELVjImXKsWZCXlQKQZJSrQ8Dw8an1hFuMu5eDM3rv8X83asucle86SrJGOB2D3P4os_9WhwRxOXDI_lavB37Jg5sp0SaFVJ_QDZWHhvtE8uTBSCCm4Q",
+          "width": 800
+        },
+        {
+          "height": 1365,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116112467412752707446\">La Salita Restaurant</a>"
+          ],
+          "photo_reference": "ATKogpdhHS7cuIy3i8wfK-eg2Ny2KxOJM3Fk34z1Eb3VwW6m_JUn2F2FZZhW_DzmdKJFKoZNefYBaTl0V0MKB5S0oFRnl8sxrxJ7Yt_M1DTO8p5S5j1h1QO-5wFhroykbrUtTpI8ryqT5N5JAqftSVgnBw2sVv62Lwtbut6xBDT_0yHFfx0f3dz92gRD6v8h5WhBT-Drnxvag0Fz0RaSH0oUQixXKBa05BYPZtapT5iqVybfWCIIlrQxbu9MsOC2axjTaZhCG6VIPR04P5fdfr3c8tCUHMsJJfE-gVLL1zzVHDQSaw",
+          "width": 2048
+        },
+        {
+          "height": 800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116112467412752707446\">La Salita Restaurant</a>"
+          ],
+          "photo_reference": "ATKogpe3W-8wKSuxvDYSTRWSfXKhtvR7EIGA6g4nEZLcyppxpVTOhJdkyJOBZK1nevjvyx_iHIvYtEOKqIQTxjoiG7pkTERUz8puPANskwhRIcwKX9WtY6OvnWd7jeHtQ1Vp7ielpJUCSd3o4muaGr2X4s_8sgLaVtdnNibVM1a93N4vlcRARUP7jGD_Ri9NsiEGcWaDut4KNlgYmWkxax0LfhLGLfYLBpuwWTfgJDZSue_u_OxfUfNN0vW2LcX3snvQ2e-7sAo-DVB9wB0eyn4PP9fbPd60xmgzR8Oh2bSX7UwKtg",
+          "width": 800
+        },
+        {
+          "height": 800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116112467412752707446\">La Salita Restaurant</a>"
+          ],
+          "photo_reference": "ATKogpdSfmLAXUZZEkbbpWPwU7WhkxSxI4qTUNj8RJES5k1k5Rm7m2d_gOyGxzo6kiHy6DOlmgVNcBYDYDPm50hzPkTQzEWHsQ_-Ccd8w2nDwx4U_YtOuMZmdTRZBzhN2c1wxdCwX13FvSKMtzqIvC04JCYs7EyaZi6s4Y6sQ0GgrynQGZFoJhO_65_dsTGqRrxjW519zCiEZtL2EuSmob8K0kp9_17X-An-xH467wlGCE9WvPbNZsZ_dHucSYPBBGSR7wuzjhSLwcz14VxEE9TAjiNg0xW8GosOZkRR-02q6Os7Ag",
+          "width": 800
+        },
+        {
+          "height": 800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116112467412752707446\">La Salita Restaurant</a>"
+          ],
+          "photo_reference": "ATKogpdybYLNqvz5KQnnFdaUtXzCF-w_HO-WSOy0yKJXjbSf8GJvAjsUa-yiPybqZy53Ld-IA9TiHMzsKtKDzPdvN9Ww99KrgLNbx-YxwoAQaH5qsJXtF47xrJOa828e9d9KTPIYkhJXsmsYwv5qqX7GRk0LwM8a1xWoF6KrYaYsq6Yw5WDp2LUTxWPCzHR3-9FOB7OvBYiVn2dbwxH9ARyy1RGJUOVoQk59_4kPRiRvPdCNHUCniGPFwmwjtaOo5qlNrK-ikqArLPQVuRP0-XrlP4ZSRUqSJGamI6xt_sOLGO6X5w",
+          "width": 800
+        },
+        {
+          "height": 800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116112467412752707446\">La Salita Restaurant</a>"
+          ],
+          "photo_reference": "ATKogpfQxUzuqxdvcMqKBRauhjzi5Tv3tCnhaW2_nL3K1Vra01pfWrjoKv0m1Hz__W-jd9FZtgkoPPxHHRXpgl5rU4dss-WmMeX_jvyMupXw0nnRjtCiE5oM-P0OH_OEgQm-Lf3aLnLr7bhgDpByrxL5cZpC_ed1PvJLux46VaCQMJCUwotYf3YMnYIdcu5liysm5tkBAZGXhVtdJ75OvsXIBBaJsyQWsBBAFt0K8DnKmkfWxJmCn21Dlb104fxmX5rUtb3MjYWzTe8YGByjfwsARSXFqkYjfxyYubu8iXEW9vdB9Q",
+          "width": 800
+        },
+        {
+          "height": 800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116112467412752707446\">La Salita Restaurant</a>"
+          ],
+          "photo_reference": "ATKogpcuq91sj7hTsZlkiFk_cYMkh76GWq7EZFs0C10aRkGOMXUFMDkMPnqNSNQ7yE-4wMYiLCI8ZeB6sLd9_Mi55223QXwNLqR2X41fhjo5Xmnjzm68f0j7bDgMiyRB7jFvFqsvV6IZla91CZuUmfu0B1X2rqocKtKLRyslkfMhoXkVSRMSTgfobtMP97BM-JTtbfR7cFRraoFyW78G9KvZPeayBJ70GvOPe-2JByL0_zZWHGJtRcvC_tMaEMWpQa0Kahbh6bymAZfoSleZIjG2qzYU3l-_Tj6HXhWZU5FOxpM01Q",
+          "width": 800
+        },
+        {
+          "height": 2780,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116112467412752707446\">La Salita Restaurant</a>"
+          ],
+          "photo_reference": "ATKogpdzbRcrPfLTvFYdmndGJZXoZ8BVDyCg7LSc1ofzdK-06uloBft_N1Q96p4LHitHZjVaBg8zekDkMQJ73sz7QLRMnlGBndv4XftreFiEXp66axz93DlZbKoSEnQN_nBwGadFAML813WWQmmxFAoDl52R0H1eciqg1-uK1gbL56hUgZXShdgAmwFbJzNIYqIHipHSXVOGxYY94toX0OQ0x6GAJSCLbSFwvJ1L4JrY2G34oOQLa4cG4qtA_tVu9KL1iAaVtMvPLi2KLdm3nNt71akv1qKds40C2rwYDLRpCVFLcA",
+          "width": 3600
+        },
+        {
+          "height": 2448,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113829041614564112596\">Larry Bell</a>"
+          ],
+          "photo_reference": "ATKogpee7VTofykmL2auDQx9BHOvwxfHToMuSpBGWUozg2e2wxhVOpDMuYbGTzK5EnT3fSYC6kz3l-lykguWfOGE1FQx0tRsNZ2ADC1LaqtVOLP1yR4H_Ymv1EyZGMK07EIG9CRZfadIxbVnh7ibT8tYHunEv-dCwde4aaxpZpfuteQ-aSi18DiL3x-dojmdsO1cRoVb0hAJmU2d-NZPI9ojcv7-PLgwGhfS-u-Q-F9_2kVmI51c5tyz9M7uyBJP_sGfbrIv52tJSAWn9FK-Q_-kEzUzoyhLrAQyfnJwT5BMIF1cexWunOjA6RfbI6xIEzlSSck6pipG6BIiZuGiAhBBfw0OQd0zFJxhX386pzojzBUExBiGyhLJ3W4CNw8OGgEbSSLhAjDcHFMyP1TcHSxEz-0797faRIdBTC0Uwj_wYqhNJ2XQ",
+          "width": 3264
+        },
+        {
+          "height": 800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116112467412752707446\">La Salita Restaurant</a>"
+          ],
+          "photo_reference": "ATKogpdCfl9dlVbYsdHG9prWHzK6yJcsfYb59BhCDfKG_slSBWOPeK_QGGRJUVfC1cp3nvA5b7y5QeDDsMtDyuRVGvBcBQGfNvvItwbH6vYEoOJYsqiBm_bL_vGUnXEvouR-GnDLrejJCJUVR-fwAc6zhFzKYWmgVHYgeFVMZmUppefDqBy2j8OlOjZwPxYd4SS7qQaiTEcdXJgWMOjSW7QZTOfCW60_eNi2-qFH8VNuzSgZE8h8I109nh07rmltU0neIvwIx_na7tCAhs3X0yglOZDyYXdnCGeqJgil1gQT-RDMgg",
+          "width": 800
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 2,
+              "time": "2000"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2000"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2000"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2000"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2000"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: Closed",
+          "Tuesday: 11:00 AM – 8:00 PM",
+          "Wednesday: 11:00 AM – 8:00 PM",
+          "Thursday: 11:00 AM – 8:00 PM",
+          "Friday: 11:00 AM – 8:00 PM",
+          "Saturday: 11:00 AM – 8:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "price_level": 2,
+      "editorial_summary": {
+        "language": "en",
+        "overview": "Family-friendly eatery serving traditional New Mexican favorites such as chiles rellenos since 1978."
+      },
+      "url": "https://maps.google.com/?cid=3483283075825096920",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfRwainWeedTnZNZxQs7i50CN_AT5uOAw-GI820vVG7HCZNFeBXC-3fHp3tSEYi6eJjY4HbQ8CTjsj8wxK58ifbFXUbTf00cCIPy3xg-6zeI_AwODqWM8n-zdjEKSkC1eAgAh3S4-4Ta6uvfei89fYC_kJaE75bB8TVZd8o7xG-eqO6-OUjGUWd5F8W8lISIQ5E4nG8eMEsPXbPERdg8UgJXSaEJp17El3jcaHSYvEV22gpVE3Tk35ZH46MeDZlXwau1L6h2H_jDGVU-HUpNOVkkaF5WlN6if9cq28_-07i3g&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpeTjAFbWcyPBtIfe-Fy71EOST28pnZ21IUN1gk3RE1J0XeLclUPV1qv5nQfgO-N4b6L9XFn9OAufUdZu6cxYfEOFLTMfHAvM-_rJmqsLMxPhbi6qXBnJvB9FHlaLmCc_mfeZkMGNcpjY3bEtbfhLRVY-YBf1wU7Bv8bGlAIrO_LAvYjqYgdWGfjsgjyPWePp0jtFigM0Y4J_lvvoqKFh8S5uRkIq0l14LgjsOKoStfRvVdaxdMMwX4qBpAgs86Go5XYGubEVRi3kW2rHrjDMvKLoT58kxvb1JBFwhpwzn6bUw&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpeO0Tri0nL75nDKt0TPyYqyFQxVEpOenR77wYL54za1GxvEqVMTAOaU2c8S7JV8dKDEpyoaMRidLTO-wJ1ngzKyvRfWiZ8sCJIJ3C4147X8MZtwiQ9VwoXk1E5GroJEedgvIaM2tfS5FWVLqlIBPQBAPZYj6KwbOlEPnI9wB5cZXiqwHhXqwhyzKUGeikj0X_HsAnbnAF0VAxTceUrcpy_P6zblqrxGmoOHFmFN9d2PT84NGWn0CRV8idEMRGc4ThANMYPUqn24X93aUngWxLpPEdmRZBOaQEnmQ-UJ-4LJrA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpc6aV7pLLIAcXGJUYC2Rmvi2zkpA4M6IUksLl_PdkoreuNXwS9Kzzjlq4gAoJjx56SzdNPAdhcYAu62nZNl7Z2H8IH6S4ckz2Nwfa4-OhDHwqCzzO87Iuxtpfp46wpDhEoSpSalGAQSxO4pO0LprraDcYvP7O-5lLT-VDQoyrlVqyPP6MWxNB1A2C-E1U8sCEg_exMqjzaCdwEEVGAolAFckRCcEqAOA-FV7v15DHs5ZQD9ZxqTD-9bNHp5KFx4odAltcU3smTiKPV_rpsZFX2TWMq5bBFuQVgLB3keVf99pA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfjJBr2BPjF7CI9nXczgomk-PFNy7Ck29uzCnl-WyGLPba-FChxMrNPKsIFGcT6Y3hPmJqaLlyU0A4TDYKT1Yo5-3_h6W7Wmhh5k-lgz9nGPbdwYql2vGi59_-tB8kbOsGhsH6z-t6sNR_TEOjtc2Y_GSq4T0t1B1xpNt8BrAbEVnWJLBiDbCwLvDcOWfUzBI8h55NkxqNwDzlyPGr6XX90vA_RBLQWKPJyC40Rzelj2DGkfkBaCAkxDjFFzvxxwFmQWtkZUxcQKeA9XEeGeEcg0K9qVPqfJgXv_QkDky6mmA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpddZQ9m69y0zvOxOR5KIfEEiO-DT7TDJHiWewaSZ0ySfv074wLRzFIZzPJ5-XCH1dCLBmmZPeoPLpOYbNfKxUI1JJl-rDBy5WkyHgEYgmHTABQDXcgxxASsBNOJPRZY944akVCT7wIPGuqezhxP29CyEVnT87IKWfSp5ckh0QZIFC_21VYlMyGD52tjWTIQHkdQ0LdpEwYi2LwnT5Pqc9rEqCuUNgn4gwqMe3Rs0KmM8BkykK7ovMrJSH24G1V0ZJKoe2uqEvPJOYXenZw42w3q9Y5SiLaUpOmlK2s5PhiUwA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfYJkTcpJbGq0sBR27lOiLf2NjDxX5PNJabZnyztmKSk4zgqCq_XdnE0sRg31SsrP-jT5KG2jylbN4LZp9mp1u68aUyJeUOTiCgVL6zWOrbtKgf7cqk-G9sbcwjC2UOFXpU0lSc7e9DMfnTKRHT_8KMfBBL7Py4ImuxZzK8k9GeToiiux_tgS-VlXYZNqRK4_W8oSq1QHGcVs003Vd0DJoPlaTME_2P5AxtJnnzA7NCTraFZNb8lzN6ywV_e1dBZPKwVcKuBbQW4NCikwh-HyrsAKWGmsYgytI9s9MTT2qEBw&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfu8ONBLd46C-nB5lQKnfZSqjaAUC4LE35opcGbJxQxdg1IpdwVMKI8xOKRo_ug-ueFaWFHcHKI-bLYfzYSr6Z6ysUHX-ennRtykQV9G5NXeOdXBYpVu2rPXER3wQnWKg-RGQftVtyquLkkK-XFdcXTp4YmHDg9B_KHnplIsCTRA6aWBrQ4_Bx2lfqg87cgnxl9kk-2uuw6nvNXLBF8FoYNJW1J3VnsLk7mpHneut4Iub0nte8HNAzUOMqmm9QUspYJ_ud9Q7FAk3Zk1YqQWKNV5N7_GCA0Jm73NE4NY504Pg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcQMENLN638gltmwnVBkXCqXi8NdGkJbhDPVvSRxyA5BKmwzoxsRIHhheiJWOA3qPr5jAELAOfZY6sVF0nj0URvtZEBrx9d93ExAh8rNijumy35Nd4RQFag6KPOt2ShxXmcSEzSepQ4NENiEn4MR-_ZwENGqkn7Edi30v8vDWMS89JWtvb9yNibw8J523TB3X4eWLLrvfZ6fHbPWyjwpJi-V5QdA21miRpKXRv0qX7rHOIojUgaVT0H1ReuR9Bd7XNfUnzfzxCyQvzT7b_ET9aqBVgVl_RKp3JVVXI6InNBx_V039QYujoEhpOLlIWGs37pp1HwgIXEoyxuVK0rDbii_9OrUvZhzCLfkdhTpNU_p10l7wqTarjTlPLM5le7F4hi2JXLnAS7D1hqIAnMgZCNPyG44Ra00leKpb9a1cvBYFR6&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpe7JVxfqJOdYxlzrSTmHqnQ2-XzLHxq0pkzqwsUNro0svU81xGLva4WtU3C3ToWa5HfhcZvuH2yqXuy502fFiedNwGwn4xKuxN24zq9uPqYp-e2incoTtfmU7RxScXO02bvL9HZoI8_H-SIr9sTJvlZM3mVuf1mk9dj-gvrgy44J4-XF4fIIGDIEbRazNro3xzRXelO2YI7W9eiAwlxYe2Dmmkrp-vNeXJwuugeSGXoYrpK8YvXTRcZm083p7JYVF1iEi_pr-8Tdh4KldSwyelJfyoMw4JwWLBNLSbk3r9Pkg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 50,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": false,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 86,
+      "totalReviews": 1747,
+      "averageRating": 4.3,
+      "sentimentBreakdown": {
+        "positive": 90,
+        "neutral": 2,
+        "negative": 8
+      },
+      "reviewSources": [
+        "Google Places API (Apify Enhanced)"
+      ],
+      "keyThemes": [
+        "Food Quality",
+        "Service",
+        "Portion Size",
+        "Pricing",
+        "Wait Time"
+      ],
+      "recentReviews": [
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "I love when restaurants have separate vegan menus! There was so much to choose from, I went with the vegan chile cheese fries and they were really good!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Taco Tuesday features two tacos with two sides, which would be a decent meal for anybody. It costs only $5.75. It is a great bargain!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Always the best food! Do yourself a favor and stop in!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Very friendly service and great food. They have an extensive vegan menu, as well as lots of vegetarian options.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "This has just become our favorite Mexican-American restaurant (it's not really Tex-Mex. Maybe \"Mexican-fusion\"?)",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "I've been wanting to try this place since they have a sizeable Meatless selection. It took awhile but I have gotten takeout from there twice now and their tacos are DELISH! I got the not-turkey taco on a whim last night and my mind was blown how delicious it was. I love Impossible ground but I think I'm getting not-turkey as my protein option from here-on-out. Kinda wanna know where I can find that for home cooking!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Their Tuesday specials are fantastic. The food is delicious and the prices can’t be beat.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "My go to place! I love the salsa! My personal favorite is turkey enchiladas!!! They are so delicious, I dream about them!!!!!  The staff is friendly and the plates are amazing! Been going for 20 years!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        }
+      ],
+      "detailedReviews": [
+        {
+          "author": "Earl Godwin",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-13T13:19:44.546Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25wbExXWlVRMGxoVGtzNGFIazRjM04xVkVabVMwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK053_pQoIwiHZ79-GFGnQYGYvq2FZkUfFcChehNzrcPwKvsR4=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103426566823955824255?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Bernadette Galvez",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-12T14:30:55.806Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xoek1XMVJObmszVDNwRWNsbDRiVWxuZG5CMWIyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL3czx7udqW3Dt4oXvqWnYXO-XtrJk79nbVrDN6q3QrZjhWQw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110112031917730264719?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Cheryl Poe",
+          "rating": 5,
+          "text": "I love when restaurants have separate vegan menus! There was so much to choose from, I went with the vegan chile cheese fries and they were really good!",
+          "date": "2025-09-11T04:50:52.830Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xSNlVGY3libTVxU1RFNVdETTVaa3RMYkdkWVQzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUv4DFj6we6j-fJqKBihVHy0mTOs4XZxGaKVIPENPu3itUc_H1GMA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102106162122283012084?hl=en",
+          "reviewerNumberOfReviews": 35,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kenneth Chen",
+          "rating": 5,
+          "text": "Taco Tuesday features two tacos with two sides, which would be a decent meal for anybody. It costs only $5.75. It is a great bargain!",
+          "date": "2025-09-10T01:25:29.914Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2twdE5YbGFUbmhuWVVOT1dWVXliSGRSWWpOdE0wRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLqvfOFW2hR2fvYE_13-LVB6dq012jgVkVBfbhQCRmFWGJGow=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117553349713873485205?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Lindsey Lamb",
+          "rating": 5,
+          "text": "Always the best food! Do yourself a favor and stop in!",
+          "date": "2025-09-09T19:59:32.400Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQ2ajdDcEF3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXSjoK3754poRxz6_OjcY742V49Zmyd0MnHfvmeUw1jwQZgmvXE=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108590686527840812001?hl=en",
+          "reviewerNumberOfReviews": 175,
+          "sentiment": "positive"
+        },
+        {
+          "author": "James Seppi",
+          "rating": 5,
+          "text": "Very friendly service and great food. They have an extensive vegan menu, as well as lots of vegetarian options.",
+          "date": "2025-08-31T00:24:37.440Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25sWWNEUlZObEE0YW1oek5sWkNkVkZrZWpGWVNIYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX5UwC30PM9KfUdbSZ6oIOZtA7aWt6knPi8VCvFdjnMWgAeJuOZXA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103599068819414368719?hl=en",
+          "reviewerNumberOfReviews": 39,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Bill Minnich",
+          "rating": 5,
+          "text": "This has just become our favorite Mexican-American restaurant (it's not really Tex-Mex. Maybe \"Mexican-fusion\"?)",
+          "date": "2025-08-29T16:13:52.427Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tobVh6bEVSamgxTFdNNFoyZGhWMngxYVZSNFNFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUtg5Ae4M6hezrg6obRjXahmdRJOYj0A9P9-GIVfy05MZv1zlYG=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114104722823777905231?hl=en",
+          "reviewerNumberOfReviews": 17,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Debbi English",
+          "rating": 5,
+          "text": "I've been wanting to try this place since they have a sizeable Meatless selection. It took awhile but I have gotten takeout from there twice now and their tacos are DELISH! I got the not-turkey taco on a whim last night and my mind was blown how delicious it was. I love Impossible ground but I think I'm getting not-turkey as my protein option from here-on-out. Kinda wanna know where I can find that for home cooking!",
+          "date": "2025-08-28T00:23:37.204Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2s1MWRIbGZUVGhyUVdOSFZETk1ZbGRpWW1SemJHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXYMbKfsGUDVu7ctrt6qwHRWkgw028ZM1g3tIFCJG4vQ_nrUgXo=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100717998553210535619?hl=en",
+          "reviewerNumberOfReviews": 37,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Gloria",
+          "rating": 5,
+          "text": "Their Tuesday specials are fantastic. The food is delicious and the prices can’t be beat.",
+          "date": "2025-08-26T22:07:00.573Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUR4M2ZuRnF3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocISl0Vb__I55-T5VmRTWgZwIgYNQHfA54PsRjwHqxHa8TIR9A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105223775014762794636?hl=en",
+          "reviewerNumberOfReviews": 14,
+          "sentiment": "positive"
+        },
+        {
+          "author": "DJ Newell",
+          "rating": 5,
+          "text": "My go to place! I love the salsa! My personal favorite is turkey enchiladas!!! They are so delicious, I dream about them!!!!!  The staff is friendly and the plates are amazing! Been going for 20 years!",
+          "date": "2025-08-26T13:36:10.531Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pFMFVreG1PVlpTV1ROWFdHTTVjVmcwY2pGdFZFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVSbM7KVl4cGppTSOiDC5nSZUU5YVBmajHvYPhYFXx4Eeq0sRvf=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101078306738258601373?hl=en",
+          "reviewerNumberOfReviews": 23,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ryan Rodz",
+          "rating": 5,
+          "text": "Food and service is always great! Chile Rellenos are the best in town!",
+          "date": "2025-08-25T16:18:02.776Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2taQ1VHdGlkM0pFYlZSSWQyVnNhRUpzVkRnNFJFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUQDT1dHpfEnRdJ4UoHgocRU5Gw2uWuL7oYgKXkOWgh7RxFvWA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106411551591199485378?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dan Miller",
+          "rating": 4,
+          "text": "",
+          "date": "2025-08-23T14:03:53.777Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2s5b2VVbExhbnBhTTBwMFIyaERkbmN4WkVsRlZYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJFv_zW_Pl6--ZooC1P7NvXzyIM5p7S8LRge8nHLJb8wx_HgQ=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104866035036723550210?hl=en",
+          "reviewerNumberOfReviews": 183,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Christine Penfold",
+          "rating": 5,
+          "text": "We had a wonderful lunch with my grandchildren for my birthday at La\nSalidas. Great service and wonderful food.",
+          "date": "2025-08-22T01:30:24.094Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURwNHBLUEVnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLuQ2C9GzPD5tyOztIbWrGYXVxMDw3dNzCe-ziAp2k5xdBo6g=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111093288579703048411?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jessica Reno",
+          "rating": 5,
+          "text": "The shredded beef is SO GOOD!",
+          "date": "2025-08-17T16:29:10.831Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2poWloxQnlUbDlJZW5Ca04zVTVjemh1Y0dveFJWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV45GjE3sUtV4qK3izjjwdXDeMaSccdFpde0319T6hSiMgnASoxCg=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110905954241890344361?hl=en",
+          "reviewerNumberOfReviews": 215,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tony C",
+          "rating": 5,
+          "text": "La Salita we used to know is back!!!  The food is great again as is the service.",
+          "date": "2025-08-17T02:04:46.003Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xaMFIwRjFha2hUZW0xT1pHRjNZbUZoT1VoQ1lVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIgS-aGonA9sgaW2DtuUZ7hHb6DooqurXaccb8XY2Buv_lY9Q=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101778746555885620095?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Rob Haldeman",
+          "rating": 5,
+          "text": "Best crispy rellenos in town. The item that sets them apart for us is the creamy Swiss and onion enchiladas. Absolutely must try, even if you don’t normally like Swiss cheese. Service in is great. Carry out is always on time and fresh. Thanks!-",
+          "date": "2025-08-17T01:34:16.909Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21RNU1WbFRVazlEWVhaaGEzWlJjalphYWxwNldGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKQqCWfqebogwVVIVbF1QWKFJmvTVhuUqv9fUUlb1gz0zIw9g=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104788802621935440021?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Steve Stewart",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-15T21:14:05.061Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25rNFNEWTJaRU5xT0RkUGJISjJSSEZWYmpKaldFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJRzJqvoXQSwBjMNXFd7ep8XSvUtMjM-lXo1yXmcU1tWS_Zjw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115383546242399153675?hl=en",
+          "reviewerNumberOfReviews": 15,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Philip Overstreet",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-14T01:36:27.332Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25ORFRFOVFUMmcyWVd0SVduRmhPREpUU0Vaa1dWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKORePN_6_1QtdJwUPmC9xYcELYapyqypZaHemlPwCB3BgD140=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107493940618208680329?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Bri H.",
+          "rating": 5,
+          "text": "Delicious. Always a good choice!",
+          "date": "2025-08-06T01:48:49.727Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tONlJXMHllSG8wZFRaWlVuTlRkRlZ0UVZVNVdtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJOuGZjLsWeJE8gGFYlTRqusGlo96nzMqX0WKMuq5cadXtEEow=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107725797823092161461?hl=en",
+          "reviewerNumberOfReviews": 38,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Drucila Encinias",
+          "rating": 5,
+          "text": "A very nice place to enjoy your lunch or dinner?",
+          "date": "2025-08-05T23:48:58.437Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25sck9XRk9UMHBvYzJsSVR6ZHdOVk4wTUMwd2RIYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI2ZuYmJGwDbxagPkl1xgRnWpFEYUc6RwuhIgs9jVhR6yW3zw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105883093804573453178?hl=en",
+          "reviewerNumberOfReviews": 128,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Casey Rupley",
+          "rating": 5,
+          "text": "The food was wonderful and Ive never met a more friendly staff.",
+          "date": "2025-08-03T14:30:20.469Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21abFVtdHBjMmhKYUhCMWQzWTFUMFJSWVVsbVUyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJxWm2ZAtdUb31FqOWUIYZYWCWlMtA7YSaR0Clvbf3C6w8eQQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105423627783018004873?hl=en",
+          "reviewerNumberOfReviews": 31,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Matthew Grubb",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-02T06:41:14.890Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tGUFowOUlYM0pDTldwV2RWRnNjamxWU0hWdGNIYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLaQJu7hKowHrMl21XvFexGGkq5AxVFaFMJHl5CuZJRorGiCw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107191481156907409749?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dawn Kittle",
+          "rating": 5,
+          "text": "Best Chile Rellanos. I order Avocado.",
+          "date": "2025-08-01T01:25:26.672Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURRNWQ3WnFnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIbFNQPuxugHwowjD6ymVp6nPdANZuXpjUQAwwEY81GKDSxVA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109729432125656297560?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Victor Valdez",
+          "rating": 5,
+          "text": "We used online ordering for the first time and it worked perfectly. Pickup was great and order was completed flawlessly. We will use it again.",
+          "date": "2025-07-29T19:27:20.025Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURNemNiR3d3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWUVMMO3oCHqdTADfUpJC_sHN_igVDpEd9ALTQ-irMm1oFd2b6b=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115648891352903603093?hl=en",
+          "reviewerNumberOfReviews": 40,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Thomas Thompson",
+          "rating": 4,
+          "text": "",
+          "date": "2025-07-28T04:46:07.863Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21kSU0ybERNSE5xVVhKTldGWlBUVEkwUWtscVpsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV9ZBqK6snQFj0ZbKVueLtBy49WerREfzk8_hoB2jltO8bfh58=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116066562168723541350?hl=en",
+          "reviewerNumberOfReviews": 91,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Stephanie Tilakamonkul",
+          "rating": 5,
+          "text": "Incredible avocado rellenos!!! Perfect sopapillas 🙌🏼",
+          "date": "2025-07-26T00:45:12.633Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tKaFJsVjVVVlptTmxvM2REUktSMFF0WW1aT2EwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ682vMLV4CYw3nfKGLB7rFFMU_ExorYwRmVCeu4veX0DfR1A=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103523785688951549673?hl=en",
+          "reviewerNumberOfReviews": 25,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Chanin Joe Tilakamonkul",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-26T00:40:37.721Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2twdlowdFRlalU1VERCVmVqWXdhMUZSVlVaelJWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWAi04SnMmfoZpYkdaGahp1iJBE7rWyj0sAfaOKUsHLNaOY9gVT=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107882203705631774355?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "RITA FUENTES",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-21T18:59:54.393Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pscGFVUkhUVEpOWTFCdVJXMTRha05QY25wUVVWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVC1_h7DhypK0j4N8Pww51eKM9H4Y_OK3nGgyOk7GJtJDrxHAI=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116041098997518755061?hl=en",
+          "reviewerNumberOfReviews": 73,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Aditya Karandikar",
+          "rating": 4,
+          "text": "",
+          "date": "2025-07-18T01:44:48.867Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2poR1NXOW5hMms1TlVFeE1XaENWbUZrWm1ZMlFXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUwby3CM38DeVHqXkpZLbjIWdmkM-zGh-iJpzzI_0Ts12EaCzIUWA=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111454239618418110434?hl=en",
+          "reviewerNumberOfReviews": 1047,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kate Cadwell",
+          "rating": 4,
+          "text": "New Mexican classics with a separate fully vegan menu. Nice open dining area and self-serve stations make it easy to help yourself. The staff are always friendly and food is delivered quickly. Alcoholic beverages from local breweries are also available.",
+          "date": "2025-07-16T20:39:03.959Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2twMGFrcDVjMWxyTVROS1VEQTBjRGhYYTBkYWRtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVwzv9kv4EoHACelILXEPePa4mB3SfCNvisOhfJtknMsBIUgz-9=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108193641472721602814?hl=en",
+          "reviewerNumberOfReviews": 54,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Terry Root",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-16T19:05:48.110Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pOeGRGOU5YMWRFVjA5RlpGTjRjakJmU3paZlNrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWRPtxU5WLLOIN2Y4FubNZU-mzHl56IAD8iRZCciewaGZCflrg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110388437359862995508?hl=en",
+          "reviewerNumberOfReviews": 56,
+          "sentiment": "positive"
+        },
+        {
+          "author": "David Williams",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-13T16:02:47.189Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25sTFdrRTNPV0pKYlZWU1VVOXBXVFZDV1Rnd2RXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW9o0-Cq7iBrTCTaegiBkruMFCL-u3r0WyVZ_6EZ4-KSmF3yqJU1Q=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116179832054983157117?hl=en",
+          "reviewerNumberOfReviews": 21,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kerrie Sena",
+          "rating": 5,
+          "text": "Best New Mexican food in all of Albuquerque! Personal and friendly service. It's like eating at your Grandma's.",
+          "date": "2025-07-11T16:20:16.790Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURSdE5yY0pREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJfhTrrK1VnhECQaUTvAwMI-SFfTMko-HH-xYD1aoM4rnP_kw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117739125650278130664?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mitch Faulhaber",
+          "rating": 5,
+          "text": "Please try this place!!!!! My only disappointment was I didn’t come here sooner. Born and raised in ABQ and this place is FIRE!!!!!",
+          "date": "2025-07-11T01:44:58.389Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25KWFVIQndRV3RFTlU5RVNuWnpVM2hqTkdoRlEzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK5Ku2oAIgxcGWbSNHCeGyQTtAHTvw5vVfCV1k7XWJIBKYU_w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112832811893864690257?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jaydon bogue",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-09T07:35:25.478Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2w5Vk1ubHNRekU1Vld0SWNIaHBkRjkzUkVwU2JGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW-nanQ7LqaQQLmuFzbR9itxgU8X16oieEHmNuBAOVHeg4nAW4=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117763659854156976829?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Pat Lopez",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-06T03:36:27.154Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tSd2RVSTVTeTFXYURadlVqbHpYMk5xYXpaT1pXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXDXz8cKDduurE1-zhphpIbv4hDKWpzA1fNW0VdwX5Yj3f2-BRM=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111897991046251633035?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "positive"
+        },
+        {
+          "author": "David Blankinship",
+          "rating": 4,
+          "text": "Ordered frito pie to go and asked for the Fritos to be packaged separately. They did and everything was perfect!",
+          "date": "2025-07-04T12:39:50.009Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURJeWVpV0ZREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocInqwOljstFndWR3cmkax7bnPSqhrmXsyu077bdLiK5ZyuRKQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112879891499632124112?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Meghan Davis",
+          "rating": 1,
+          "text": "Major bummer. Last time we went to La Salita we watched the staff sneeze into the ice and scratch themselves. We told the manager and they gave us a gift card. We were hesitant to go back and waited about 4 months. Sad to say it’s gone down hill. We asked if the guacamole would be enough for a party of four, the young lady said yes the starter is ‘full size.’  The $5 guac under ‘starters’ is served in a 2 ounce ramekin. When we asked to pay the difference and switch to queso as an app, the manager, Sara said, “If you think this is small I can get you one half the size.” Great customer service. The queso was so watery more gets on the table than the chip. They didn’t drain the turkey so my enchiladas were swimming. My husband and father’s blue corn turkey enchilada plates didn’t have any turkey. It was a tortilla stacked a top another tortilla. My mom’s rellenos were burnt. I waited in line for 10 minutes while our family ate to order more beers, pay for them, then be told the tap was blown. One of the managers brought me the beer and said the staff didn’t know the handle was turned. Half our food was remade and by the time mine finally came back every one was finished. When I finally got my plate the manager stayed and talked for over 10 minutes. By then my egg was cold and rubbery and the whole experience was the pits. We used to go weekly and now it’s just over priced fast food at best. We threw all the leftovers away as my parents both reported being sick all night.",
+          "date": "2025-06-29T16:25:07.868Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2psaldTMDJaMkk1WVVOak1rRnhORXBRZEZOelRWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWzXTTdehsr6gE8q4jQK8uvxpytNujEq_7CPP4HDvOy1y6tF3ShYQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115878454869409849259?hl=en",
+          "reviewerNumberOfReviews": 33,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Katie Cordova",
+          "rating": 5,
+          "text": "Love the different of protein options and the 2 taco plate is my easy go to every time I go here!",
+          "date": "2025-06-29T14:15:58.171Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tkU1EwUnNjRE5LVlVZelJ6TkJTREZWV1dWeFgzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVqGmTFCLY27t1-PTpRadMMfuqGX9bBdQ3tqjK1ZCCThhQ-8r9L=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102156704108019154432?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Martin Gutierrez",
+          "rating": 4,
+          "text": "",
+          "date": "2025-06-24T21:43:29.893Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT204d1pURlFhMjVvVDBWWloxQkJORFl5UjFKV1gxRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXsc5z_C5AhzK-vId3Qy4vcw2xZQPZpFnPmE5TR5GSK8pZYK8Ya=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113221454766885361442?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Richard Davies",
+          "rating": 5,
+          "text": "Same great Friday Burrito Special. New order at counter but service was good.",
+          "date": "2025-06-21T02:01:00.208Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUN4dk9xRkJBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXjclHGhHvm7Hh6MqyXLlBxrJRD3_RzSwkVoRtFmJ6Ztu47xT-2Qw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103618623150998097638?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Chase Quant",
+          "rating": 2,
+          "text": "Some of the worst rellenos I've had in NM. Greasy, tough chilies, not spicy. With as many other restaurants there are in ABQ, skip this one. Will not be back.",
+          "date": "2025-06-21T00:38:33.156Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xCbVluUXRhSGcxUjNobWNVTkJhVWxwVDFaa2JWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWgB3vTT8KHowrhTkRZHukE_Pt1qfx0wCy8YclbbLv9mij3A5-uuw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103723723816320406245?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Regina Telles",
+          "rating": 5,
+          "text": "Love the food and the customer service was amazing",
+          "date": "2025-06-20T00:34:19.845Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xSUmMzRnJkRWRKT1V4cFExRk9UR0pTU1hkNk1tYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXHpo9-PQB0Fhkyh-vpjYZ3GJZxFEkWs-vOfG6FfBzI4bRJAyk5=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112699392687848762356?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "harald christiansen",
+          "rating": 1,
+          "text": "Worst \"mexican\" restaurant we've ever eaten in. No chicken. No quesadilla, really not much, unless you like cheese and onion enchiladas. You could have hamburger or turkey, TURKEY. I'm sorry ladies but you definitely need a menu makeover.",
+          "date": "2025-06-19T23:00:09.120Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xCUmN6WkVWMUJNWjNsS2R6TnlWamxMUW5kd2JFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJoHIgioZJsX44IcAXeWC2AemeQLirLMi8VUPUrFUQ_6VtCMA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111360164179163848873?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Mariah Bayless",
+          "rating": 4,
+          "text": "Great place and food. Especially love the chile con queso and frito pies! I would have given this place 5 stars if staff came by and refilled your drinks and bussed your table, instead there is an area you do this.",
+          "date": "2025-06-18T22:44:14.286Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21KeVZVdFdibkZ5V1c0eVVHUnVWRWsxWkVaSWJtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVSzd-BF2Jbvc905nbsUwo8WA22aIBnnXHWIaSf2nnXgaqMKqzA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103029532752662084446?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Bob Trudo",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-18T14:59:16.031Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUN3eXN6ZllnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU3BY7ify4YaIMMf9IgmSLabGhpvUpeVEij08WQYvHLrliopxc=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111455035605206807628?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "P B",
+          "rating": 3,
+          "text": "It's one of those places you just have to try for your own experience. Lots of happy customers with lots to choose from. Expensive and they put beans in everything if they could as fillers???",
+          "date": "2025-06-13T18:24:01.539Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURxMkk2aXl3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKf1lI_kR0I91VxgSSxPAjwfUsnhJvoQ2odlyNqErQ-h57Igg=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108191007994007563921?hl=en",
+          "reviewerNumberOfReviews": 1317,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Alicia Martinez",
+          "rating": 5,
+          "text": "Mmmmmm. Always delicious, and VERY reasonably priced. We love this place! I love how many vegan options there are too, we are not vegan, but we always appreciate a business who can provide good options for all different types of dietary needs. Highly recommend!",
+          "date": "2025-06-13T02:16:40.127Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VObTBvZENlenBXS2dnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJH9fnRkEY7PjgPK_vVSUdNJKuxiUjQ3eLQqgnYXuA_0HnroA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106418444072892310819?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Reem Jaber",
+          "rating": 5,
+          "text": "Possibly some of the best vegan and vegetarian options for New Mexican in town. Also, wonderful customer service!",
+          "date": "2025-06-12T05:33:48.372Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VQLVEwSkxTbmNiNTRBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKQcE3WnoUReVBQR2KvY8HOFoqU1-n9OzcLN9IWnUCKkOwAKA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117815318231010368549?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kelly Wells",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-12T02:08:12.661Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNFeUsyTm1BRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKxtkyOwxCyQs_9oNn2-TgPByN-4CBq2_e63TcmIGVt-Uil5A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118139845840420405117?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Meggy Anderon",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-08T15:15:23.062Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VOcWR4Tlhubk1mem1nRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUDD3GnTF86n94-bIcnFyVAEpC-5M6Gc9YyLlFuiq9IdcRymbU=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104547542228333256050?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "stella rael",
+          "rating": 4,
+          "text": "",
+          "date": "2025-06-05T16:10:43.370Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VKV2UwTDZWdHB6ZHRRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ9a5npEf8PmAV1LnAZbXNwsrSFYNo4_9wp1FxKLLZLVV4HvQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116561759166420387359?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Barb Sandoval",
+          "rating": 5,
+          "text": "Great service! I had enchiladas and they were very good. The fries were amazing!",
+          "date": "2025-06-05T00:10:53.912Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VLekV1WXJNcklydkN3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL7PsGcOQeATufTL65k0hieowav2dtkT8vaUbUGKJbSXHc6QA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101978178855026310745?hl=en",
+          "reviewerNumberOfReviews": 33,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Scott Mandu",
+          "rating": 1,
+          "text": "Food is trash. Go home and eat a can of soup. Thank me later.",
+          "date": "2025-06-04T23:54:43.550Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VPclI1WjJ6cWRPMGtBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJenj8CR9vz8z2EsobYYiYTykIMQ-Gp_5W2GB7p7GFE6Eo8FA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112580194430052911692?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Dark Zen",
+          "rating": 1,
+          "text": "\"Enchilada Delight Rolled, cheese/onion, ground beef, sour cream, guacamole, all topped with melted cheddar cheese.\"\n\nI ordered the above item and got one beef, one sour cream, one guacamole, and one cheese Enchiladas. I thought I was getting 4 Enchiladas with all the ingredients in each one. Who the heck serves Sour Cream Enchiladas???? The same place that serves guacamole enchiladas!!! Service was friendly, but fire the idiot who came up with sour cream enchiladas. Garnishes belong on top of a dish, not inside. I should have know when there was only one table of patrons in the entire restaurant. Never again.",
+          "date": "2025-06-04T22:11:12.678Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2paV1FXdElYM1JITlU5VmJISmxTVUl4VDJGRVkxRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLKL58qR3Ywg3L925OkJ5ESLU804e9iYvy-sU94_XokMNyVTw=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106860262318184357808?hl=en",
+          "reviewerNumberOfReviews": 20,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Regina Gonzales",
+          "rating": 4,
+          "text": "I was a little disappointed today. I ordered a combo plate and normally when I order from there, I get a Sopa with my order.  I didn’t so I reached out and they let me know that it’s $.50 extra. Normally with any restaurant (including here) when I order you get one with your meal. This was a combination plate. Also, I ordered the guac and chips. I got a good amount of guac, but only a handful of chips.",
+          "date": "2025-06-03T22:48:32.342Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VQcW5tcVRrbWRtcUhBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUaC2r17I_eA9-x_UGlGxOIda-haHca0mZrtV_gp_DUqxBTgywUdg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100257791285273135525?hl=en",
+          "reviewerNumberOfReviews": 24,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Bob Sterner",
+          "rating": 4,
+          "text": "",
+          "date": "2025-06-03T22:01:57.160Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VLZm5tS3JNODdyRjFBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJttDHN49baKFDvbo0lo1uaPBSgA3fFXfSUbp4okvbmIhIJBA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104607873387628011014?hl=en",
+          "reviewerNumberOfReviews": 27,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Colton Kennelly",
+          "rating": 5,
+          "text": "Great service! Super nice staff.",
+          "date": "2025-06-01T00:04:55.229Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VKbms0b3Faa3Bxc19nRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXwVLZpsL-y94HcOWvMpLRcrDfAqCbURBxN8XQCXp9JEBhSOIRR=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109351037593991676973?hl=en",
+          "reviewerNumberOfReviews": 45,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ginger Anderson",
+          "rating": 5,
+          "text": "We hosted my graduation party at La Salita, and I couldn’t be more grateful for their event space and support. From start to finish, the staff was helpful, responsive, and incredibly kind. The buffet was ready right on time, the food was delicious (everyone raved about it!), and the space had just the right energy—warm, festive, and relaxed.\n\nLa Salita offers a private event space for up to 40 people, and it was perfect for our group. It's also affordable for the quality and service you receive. Whether you're planning a graduation, birthday, family gathering, or baby shower- I highly recommend them. They have great food and drinks, as well as vegetarian and vegan options. Our guests loved the margaritas especially.\n\nHuge thanks to the La Salita team for helping make our celebration so memorable!",
+          "date": "2025-05-25T20:07:03.725Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJU0FzNW5RNHVhQUZ3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUqiF1OdA25pV1YeZyZj3egj4vR-QT1kQwHDJ425GzRrmTIGdEzkw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116163624090389914613?hl=en",
+          "reviewerNumberOfReviews": 23,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Duane Spence",
+          "rating": 5,
+          "text": "Carry out",
+          "date": "2025-05-25T00:15:59.526Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURINFlyb3NRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJx_wmJGC7gnUcx-qOMbza_rS3UEaOooPfXJnNuO4gFttuI=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103069588513928412358?hl=en",
+          "reviewerNumberOfReviews": 24,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jill Aldridge",
+          "rating": 5,
+          "text": "",
+          "date": "2025-05-24T07:35:23.988Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VMUDY4NDd0MXB5Tld3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWH0NImVeon5X9knh4i4Ovk04z-qZDd4iJmkRCMY_N6ogmPJc0C9g=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101281555350842940624?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Matt Rand",
+          "rating": 5,
+          "text": "",
+          "date": "2025-05-23T17:14:28.941Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VMZm10dDZwcFlTMlB3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK5VcM04IYVLMQV2hbR22-0PmRlvXkTa8holzapDHIePyyCZA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118272612856007758579?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "JD R",
+          "rating": 4,
+          "text": "",
+          "date": "2025-05-23T13:40:46.317Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VMMjJoN0tPcy1yUXN3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVC2uEg7kz3PDDrBB6iNBaj-e4uQcYtnFouCB_2QvH9bYXYhEf-=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106063535178208411523?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Clif Drumm",
+          "rating": 5,
+          "text": "",
+          "date": "2025-05-17T12:23:26.316Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VPajV0NF9DcE1DaDJBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKbNbx8Fgvs5VvK7n1H0BYqO4bf-tik5IQpz-FLGAUGq9MCJQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116048538382452384878?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Cindy Robens",
+          "rating": 5,
+          "text": "Food was absolutely delicious.  We had the carne burrito and chili rellenos, yummy.  Service was friendly and wonderful.  Exactly what we needed for our night out.",
+          "date": "2025-05-17T02:49:23.070Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNJXzVfX3lBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK0EZsAIOSfG9uiI1dCyn8GDzwwQ0sAIvNiG42Os7VuchWqpg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102139628267837002368?hl=en",
+          "reviewerNumberOfReviews": 76,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sunny Castaneda",
+          "rating": 5,
+          "text": "Best Taco Tuesday in ABQ",
+          "date": "2025-05-15T21:15:31.534Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJM1l3ZEx3cXFIM1lBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW6N1P3m1y5_o_B9JSv9GdKP8FxuNRGH0dGYWwzNjFslhQhSEi8xQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104997148274389629652?hl=en",
+          "reviewerNumberOfReviews": 22,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Hondamot2",
+          "rating": 5,
+          "text": "Family friendly, affordable food and great service!",
+          "date": "2025-05-15T00:13:13.454Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VOR2l5S1Q4MTdYRFdnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJz_GkmWRnLtmuDd3qHI0-rpFjcwUpo8nO2Ju4t6X-Wcq09Eg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101715043905132601574?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "GooGaMoo Girl",
+          "rating": 2,
+          "text": "Decided to check this place out because it's nearby and has good reviews. Prices on combos and plates are really reasonable (sodas, not so much). Staff was all really friendly and service was very quick.\nThe food, however, was really not good. The salsa that came with the chips was extremely bland and seemed to have been heated up, which was also off-putting.\nRed chile was very bland as well, and the relleno was so tough I couldn't cut through it. But for the meager two bites I fought to eat, it wasn't good, either. Rice was also bland. Beans were easily the most flavorful thing on the plate but I didn't spend $13 to only eat a side of refried beans.",
+          "date": "2025-05-13T22:35:50.285Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VKbnZsdU9wX0xheXJBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX4svPY2O_37ksZu0GBh5c_QLd7_MZDOj9pCHY4cYcWO-nTOe8J=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114966074169801736181?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Kimberlee Bowman",
+          "rating": 5,
+          "text": "",
+          "date": "2025-05-13T19:06:03.900Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VQaTJoNERyN2JiYzFBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK48kQ2PpS0j2bPE4nyPywUozDEcU46bnnls9RuvL0mWXt-Fg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110974451326866832168?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Imapirate Yohoho",
+          "rating": 5,
+          "text": "Love love love the seperate vegan menu! No guessing games and great options.",
+          "date": "2025-05-11T21:59:42.936Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VNdmx1NlhxNVBmZXJnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLTgrcxVEmnR2PIZlRV7YZx5qhwqz8Ejnp16xkTkkf2lz5AOQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113705799352125668153?hl=en",
+          "reviewerNumberOfReviews": 89,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Brenda Herrera",
+          "rating": 5,
+          "text": "Red chili was really good I had online order was ready and warm really goof",
+          "date": "2025-05-09T01:53:37.603Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VQUzh3WjdidGNUVHBnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKhOdvCoFdrvASDnKy-Jz3Mg8Ill7jN-bk5XgD4_xz0JX7PzQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107791008705615646980?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Susan Boyles",
+          "rating": 5,
+          "text": "Best chile rellenos in town!",
+          "date": "2025-05-06T22:50:43.584Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUMxc3BiYjJ3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ-iYeJU7qHbHEQIErWynkD8mFhCB8k1ch1xzvkD3h_Uywqxw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106775658079603765294?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jennifer Lopez",
+          "rating": 5,
+          "text": "",
+          "date": "2025-05-03T01:08:06.758Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNwd2NiRE13EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU8zExBNvyYOEOuTVj4VyTtJeZoT-B8UHa4kY9hK7yZTt4YTRY=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100054710866637745808?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "mary white",
+          "rating": 4,
+          "text": "",
+          "date": "2025-05-01T14:10:18.757Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNZNVB5czRnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI7uRmVT07nHQlQ06YCa4v77hFEwfcnG9ALucSCdWGnkhDEPA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108046170618284117294?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Melissa Alexander",
+          "rating": 5,
+          "text": "It is a wonderful place to enjoy delicious food and drink in the northeast heights.  Great staff.",
+          "date": "2025-04-29T21:14:25.116Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURLZ3VPRzR3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL1aXn8knjLyCQc9TckJNLSFOnoC7WBO6fvzNbq-vajyffi2g=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110297568698819009400?hl=en",
+          "reviewerNumberOfReviews": 428,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mark Fauteck",
+          "rating": 5,
+          "text": "This is always our go to place for New Mexican food. Never been disappointed!",
+          "date": "2025-04-29T20:18:10.366Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURvbDUySER3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI2pPbFZV6FREI180lWUYBlcsotLosJvU2OJICDcnehGlQthA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113044259364538118749?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Nikie Perlmutter",
+          "rating": 5,
+          "text": "Love this place! vegan options are 🔥",
+          "date": "2025-04-23T19:28:16.631Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURvcW9HWkZ3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUDh6gm0-w1BrCI7JPfBFmmaBgK_n7xS27ITejUQReG0Cp6j4_R=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105988752520896047587?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "gary sanchez",
+          "rating": 5,
+          "text": "I have been eating at La Salita fo over 50 years, and they have been my favorite restaurant.  Their food and service have remained consistently outstanding!  I now live elsewhere, but La Salita is my one must visit place to eat when I come back to Albuquerque to visit.",
+          "date": "2025-04-20T18:40:20.294Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNvOTdYTEJnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocII76XhzlQ-hCeNmpN8JphSTLSejJcuD_Ht1CNIvvPB99WY1A=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105278040133397836070?hl=en",
+          "reviewerNumberOfReviews": 22,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Verinda White-Helm",
+          "rating": 5,
+          "text": "I have enjoyed the entire experience every time I'm there.",
+          "date": "2025-04-17T19:30:36.291Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNaOHRxZmNBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKbA5PVLg7cmuU76bC7qpmL1dIPSe0rM4_MnSAytTghA1xAnw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104143651330921718052?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Charlotte Duncan",
+          "rating": 5,
+          "text": "",
+          "date": "2025-04-12T02:05:24.705Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURJamZ6TEF3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI2yTIt7nRCKKbUtXfuPgtk0GusIuc1gOUDZ4gmTixlKpmwtg=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100109643912018593802?hl=en",
+          "reviewerNumberOfReviews": 21,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sevie Winkeljohn",
+          "rating": 5,
+          "text": "",
+          "date": "2025-04-09T23:14:45.843Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURJcnByZzVRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVWL0m4y394Zz_Y5mVpm9kFq6H9RLqOpOrpKsutXklPcnoij_Ws=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103598579901663008270?hl=en",
+          "reviewerNumberOfReviews": 24,
+          "sentiment": "positive"
+        },
+        {
+          "author": "C C",
+          "rating": 5,
+          "text": "I love the food and never had bad service. But this time, I called about 7:30 pm and placed a Togo order. I know they close at 8:00 and I was there in less than 10 minutes. When I walked in, the girl behind the counter was less interested in helping me. No smile, no hello almost seemed like I was imposing by ordering at 7:30. I ordered  2 plates. Both had refried beans, and it looked like they were scraped from the bottom or sides of the pot. They were dry and cracked like they had been sitting out on the counter. Like I said, I never had bad service and never complained about the food. But this was bad.",
+          "date": "2025-04-04T21:58:37.318Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQwekx2MDl3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLaAkPiuaXU7FioUDrlnxoDoAyXwWfDds8S0Hsb4TqrRgmaxQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105562054370517539399?hl=en",
+          "reviewerNumberOfReviews": 163,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tiffany Vigil",
+          "rating": 1,
+          "text": "Trash, would never recommend this place to anyone I’d rather eat Taco Bell",
+          "date": "2025-04-04T18:31:47.555Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNJeTZ1Q0VREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWgEFDztuIQ8UklPT_S9FTgxuQExajgerQIS1dX6kC2ABpq4xKg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102217449496057569771?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Luis Jauregui",
+          "rating": 5,
+          "text": "",
+          "date": "2025-04-04T16:15:48.993Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNJODlmX1JBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLMWJk1olRdV5M83XbpNNXCe2eoQ3632Qi4VSDhl17wdfb3FQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110240818087218271979?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dr",
+          "rating": 5,
+          "text": "The food was the bomb. I would recommend this place to eat.",
+          "date": "2025-04-02T01:12:25.171Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNJenJ1NlBBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKIAdZmkYFoeEcoigKdHsAUnVWQBkV44Vb-IZuFHhoR1UPGAg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115281133419360552681?hl=en",
+          "reviewerNumberOfReviews": 48,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sean Ward",
+          "rating": 4,
+          "text": "",
+          "date": "2025-04-01T19:09:45.427Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNJdHU3OUtBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVUV1fFjM0bHYBq-i-d_P9MKPr-KgDCS4c1xha6jP6XS3bPOhO5=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107081253845989945686?hl=en",
+          "reviewerNumberOfReviews": 39,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Rob Romero",
+          "rating": 4,
+          "text": "Food was good.  Some items are a bit pricey but oh well.",
+          "date": "2025-04-01T01:10:48.715Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNJaXJPeG9BRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIFUSh795KucWgEJWI-mCC2e9cllmf8rWawq9tqjSK8eBlYhQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100962504382909409130?hl=en",
+          "reviewerNumberOfReviews": 121,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Armando Lozano",
+          "rating": 1,
+          "text": "The chile rellenos was the worse chiles rellenos i ever taste i don't recommend eating here\n👎🏼",
+          "date": "2025-03-22T20:00:37.667Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUR3ME95SmVBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK4cYNU1bEVBrK1VV96kFpZ8i97QGEITPEWtx5P8QTowXDJ7A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104744721589999107279?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Ashley Nunez",
+          "rating": 4,
+          "text": "",
+          "date": "2025-03-22T15:41:27.838Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUR3b0xyYjJBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWapgFGak-58OKlt3eeKmeE5QZUfvERN0pzZMj17UowItL_uaX1WQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116050922997052628838?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "John Perseo",
+          "rating": 3,
+          "text": "",
+          "date": "2025-03-20T16:02:27.587Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUN3M1l5X3dRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocId7etoOgRTu2v9bmiILrXcesjeRqIydW-au0644DVsdyr6=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115346375912782581769?hl=en",
+          "reviewerNumberOfReviews": 28,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Manuel Zavala",
+          "rating": 5,
+          "text": "",
+          "date": "2025-03-19T16:42:48.321Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUN3eWRDdk1REAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ2fgWCHDRG1Zg-M1jhM6zmOdXc8a_JnZdnAKv5eOgsl2lGCS6V=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109833424663809342309?hl=en",
+          "reviewerNumberOfReviews": 71,
+          "sentiment": "positive"
+        },
+        {
+          "author": "greg brown",
+          "rating": 5,
+          "text": "Friendly people and great food.",
+          "date": "2025-03-18T21:52:42.863Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUR3dEpucWd3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW_Z5JvVWTkhRIWIa2-lR7uWfJQGFIMcGEvVEpUQV-mKu9BIrxE=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113985857966886600353?hl=en",
+          "reviewerNumberOfReviews": 111,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Stephanie Coston",
+          "rating": 5,
+          "text": "Incredible!!!!",
+          "date": "2025-03-17T22:44:23.024Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUN3OHVfREpREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIegISCFJHGflXM1JdfLF129zeYVJYuhgXg5gBUXLZ5lHDQWg=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116313715618795304080?hl=en",
+          "reviewerNumberOfReviews": 25,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ben Isaacs",
+          "rating": 4,
+          "text": "They serve delicious New Mexican classics, and have a whole vegan menu as well. I had a stuffed sopapilla and it was awesome. The waitresses are very friendly and helpful. It is a bit pricey, but the portions are huge. My main complaint is that the restaurant smells bad, like a public bathroom.",
+          "date": "2025-03-17T14:17:49.541Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUN3b3ZTNVB3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKI1yDDYfXudfuLF5JU_TwW6xYm_45zZwyVCsb6AADGq9XjRpk=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109415045920994070930?hl=en",
+          "reviewerNumberOfReviews": 21,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Liz Qui",
+          "rating": 4,
+          "text": "First time food was ok",
+          "date": "2025-03-11T04:39:13.646Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURRcnNUMktBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW2d78ZDousQs_9Sy-6DzPpwmeDC5LsM_dVXdRozpz9QxBqpV5m=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113135226673557608346?hl=en",
+          "reviewerNumberOfReviews": 434,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Robert McNicol",
+          "rating": 5,
+          "text": "",
+          "date": "2025-03-08T20:29:22.398Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURRMkxYaktBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJmIDGUGPFAuKT_u-a3_DIbysD3hqdNMDegMVUjg5bD9oQhaw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117582446056036452455?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Geoffrey Kellogg",
+          "rating": 4,
+          "text": "I came here because I wanted to try someplace different and it was suggested to me by a friend. Tried it out and it was wonderful! When I'm in that part of town again I'm going to stop by again. Geoffrey 😃",
+          "date": "2025-03-03T14:41:24.913Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNRaXZId2FREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXty3h7yTXQZcZEjtC9923a4ZBcfvk6oOwh-pFm8QqlCOGs82Eq=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102147972037044793951?hl=en",
+          "reviewerNumberOfReviews": 413,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mike Poe",
+          "rating": 5,
+          "text": "The folks at the order counter were friendly and helpful. The order came quickly and the food was delicious. Will definitely go back the next time I am in Albuquerque.",
+          "date": "2025-03-02T17:09:35.738Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNRckktVHJnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIO0kNrZHQgqLsjr5WSybCu2AakJNPeJdJhX3BX9en4t_q8rA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114985193249190000516?hl=en",
+          "reviewerNumberOfReviews": 24,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Roberta Orbach",
+          "rating": 5,
+          "text": "The best birria tacos",
+          "date": "2025-02-26T15:45:18.142Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURnclltUTlnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVYIyUV8HsCknh2FpOShdBFkufw5GWEObpviPkOojXhly5jLh3ZOA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101158866620072195980?hl=en",
+          "reviewerNumberOfReviews": 23,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Trisha T.",
+          "rating": 5,
+          "text": "Today was my very first time going to this restaurant. Immediately upon entering I smelled some kind of sewage smell. It wasn't the smell of beans or tacos or enchiladas or any kind of food it smelled like an old bathroom smell. It's the only way I can describe it okay but when it came to the food I had the taco special excellent price it was very good I enjoyed my meal very much as for the service I had to get napkins myself I had to get the to-go boxes myself I had to track somebody down to get me a straw but other than that it was good Mexican 🌮",
+          "date": "2025-02-25T22:08:19.496Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURnbVllVjFnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWqwqTsnJ6c3n21qkfpmvmMVX43TqjCB8xgqdKV9Vch4yTeNOcM=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109663322675920965406?hl=en",
+          "reviewerNumberOfReviews": 46,
+          "sentiment": "positive"
+        }
+      ],
+      "customerMoodAnalysis": {
+        "overallMood": "satisfied",
+        "sentimentSummary": "Customers have positive experiences overall. Your 4.5/5 rating from 100 recent reviews shows solid satisfaction with room for growth.",
+        "sentimentDistribution": {
+          "ecstatic": 8,
+          "delighted": 66,
+          "satisfied": 18,
+          "neutral": 0,
+          "frustrated": 2,
+          "disappointed": 5,
+          "angry": 1
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "service excellence",
+            "mentions": 19
+          },
+          {
+            "theme": "food quality",
+            "mentions": 16
+          },
+          {
+            "theme": "speed of service",
+            "mentions": 4
+          },
+          {
+            "theme": "value for money",
+            "mentions": 3
+          },
+          {
+            "theme": "slow service",
+            "mentions": 3
+          },
+          {
+            "theme": "overpriced",
+            "mentions": 3
+          },
+          {
+            "theme": "poor service",
+            "mentions": 2
+          },
+          {
+            "theme": "food issues",
+            "mentions": 2
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 26,
+          "satisfaction": 36,
+          "disappointment": 2,
+          "frustration": 0,
+          "anger": 0
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "Customers rave about the extensive vegan and vegetarian menu options, including vegan chile cheese fries and not-turkey tacos, which are described as delicious and mind-blowing. - social media marketing can showcase this strength",
+            "The restaurant's Taco Tuesday specials are highlighted as fantastic and a great bargain, offering two tacos with two sides for only $5.75. - Boostly marketing services can amplify this",
+            "The service is consistently praised as friendly and great, enhancing the dining experience alongside the delicious food. - review management can highlight this positive aspect"
+          ],
+          "improvementOpportunities": [
+            "Negative reviews and reputation issues, including complaints about food quality, service, and hygiene - review management can address this concern",
+            "Lack of awareness about the restaurant's ambiance and unique offerings, such as a fully vegan menu and local alcoholic beverages - social media marketing can improve this area",
+            "Poor online visibility and competition with other local restaurants - SEO services can solve this visibility issue"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 100,
+          "averageRating": 4.5,
+          "ratingDistribution": {
+            "1": 6,
+            "2": 2,
+            "3": 2,
+            "4": 18,
+            "5": 72
+          },
+          "sentimentTrends": {
+            "trend": "improving",
+            "recentAverageRating": 5,
+            "previousAverageRating": 4.4,
+            "recentReviewsCount": 10
+          }
+        }
+      },
+      "examples": {
+        "positive": [
+          {
+            "author": "Earl Godwin",
+            "rating": 5,
+            "text": "",
+            "date": "2025-09-13T13:19:44.546Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25wbExXWlVRMGxoVGtzNGFIazRjM04xVkVabVMwRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK053_pQoIwiHZ79-GFGnQYGYvq2FZkUfFcChehNzrcPwKvsR4=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/103426566823955824255?hl=en",
+            "reviewerNumberOfReviews": 3
+          },
+          {
+            "author": "Bernadette Galvez",
+            "rating": 5,
+            "text": "",
+            "date": "2025-09-12T14:30:55.806Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xoek1XMVJObmszVDNwRWNsbDRiVWxuZG5CMWIyYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL3czx7udqW3Dt4oXvqWnYXO-XtrJk79nbVrDN6q3QrZjhWQw=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/110112031917730264719?hl=en",
+            "reviewerNumberOfReviews": 1
+          },
+          {
+            "author": "Cheryl Poe",
+            "rating": 5,
+            "text": "I love when restaurants have separate vegan menus! There was so much to choose from, I went with the vegan chile cheese fries and they were really good!",
+            "date": "2025-09-11T04:50:52.830Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xSNlVGY3libTVxU1RFNVdETTVaa3RMYkdkWVQzYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUv4DFj6we6j-fJqKBihVHy0mTOs4XZxGaKVIPENPu3itUc_H1GMA=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/102106162122283012084?hl=en",
+            "reviewerNumberOfReviews": 35
+          }
+        ],
+        "neutral": [
+          {
+            "author": "P B",
+            "rating": 3,
+            "text": "It's one of those places you just have to try for your own experience. Lots of happy customers with lots to choose from. Expensive and they put beans in everything if they could as fillers???",
+            "date": "2025-06-13T18:24:01.539Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURxMkk2aXl3RRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKf1lI_kR0I91VxgSSxPAjwfUsnhJvoQ2odlyNqErQ-h57Igg=s1920-c-rp-mo-ba6-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/108191007994007563921?hl=en",
+            "reviewerNumberOfReviews": 1317
+          },
+          {
+            "author": "John Perseo",
+            "rating": 3,
+            "text": "",
+            "date": "2025-03-20T16:02:27.587Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUN3M1l5X3dRRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocId7etoOgRTu2v9bmiILrXcesjeRqIydW-au0644DVsdyr6=s1920-c-rp-mo-ba4-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/115346375912782581769?hl=en",
+            "reviewerNumberOfReviews": 28
+          }
+        ],
+        "negative": [
+          {
+            "author": "Meghan Davis",
+            "rating": 1,
+            "text": "Major bummer. Last time we went to La Salita we watched the staff sneeze into the ice and scratch themselves. We told the manager and they gave us a gift card. We were hesitant to go back and waited about 4 months. Sad to say it’s gone down hill. We asked if the guacamole would be enough for a party of four, the young lady said yes the starter is ‘full size.’  The $5 guac under ‘starters’ is served in a 2 ounce ramekin. When we asked to pay the difference and switch to queso as an app, the manager, Sara said, “If you think this is small I can get you one half the size.” Great customer service. The queso was so watery more gets on the table than the chip. They didn’t drain the turkey so my enchiladas were swimming. My husband and father’s blue corn turkey enchilada plates didn’t have any turkey. It was a tortilla stacked a top another tortilla. My mom’s rellenos were burnt. I waited in line for 10 minutes while our family ate to order more beers, pay for them, then be told the tap was blown. One of the managers brought me the beer and said the staff didn’t know the handle was turned. Half our food was remade and by the time mine finally came back every one was finished. When I finally got my plate the manager stayed and talked for over 10 minutes. By then my egg was cold and rubbery and the whole experience was the pits. We used to go weekly and now it’s just over priced fast food at best. We threw all the leftovers away as my parents both reported being sick all night.",
+            "date": "2025-06-29T16:25:07.868Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2psaldTMDJaMkk1WVVOak1rRnhORXBRZEZOelRWRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWzXTTdehsr6gE8q4jQK8uvxpytNujEq_7CPP4HDvOy1y6tF3ShYQ=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/115878454869409849259?hl=en",
+            "reviewerNumberOfReviews": 33
+          },
+          {
+            "author": "Chase Quant",
+            "rating": 2,
+            "text": "Some of the worst rellenos I've had in NM. Greasy, tough chilies, not spicy. With as many other restaurants there are in ABQ, skip this one. Will not be back.",
+            "date": "2025-06-21T00:38:33.156Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xCbVluUXRhSGcxUjNobWNVTkJhVWxwVDFaa2JWRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWgB3vTT8KHowrhTkRZHukE_Pt1qfx0wCy8YclbbLv9mij3A5-uuw=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/103723723816320406245?hl=en",
+            "reviewerNumberOfReviews": 5
+          },
+          {
+            "author": "harald christiansen",
+            "rating": 1,
+            "text": "Worst \"mexican\" restaurant we've ever eaten in. No chicken. No quesadilla, really not much, unless you like cheese and onion enchiladas. You could have hamburger or turkey, TURKEY. I'm sorry ladies but you definitely need a menu makeover.",
+            "date": "2025-06-19T23:00:09.120Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xCUmN6WkVWMUJNWjNsS2R6TnlWamxMUW5kd2JFRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJoHIgioZJsX44IcAXeWC2AemeQLirLMi8VUPUrFUQ_6VtCMA=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/111360164179163848873?hl=en",
+            "reviewerNumberOfReviews": 16
+          }
+        ]
+      },
+      "trends": {
+        "ratingTrend": "improving",
+        "volumeTrend": "stable",
+        "responseRate": 0,
+        "averageResponseTime": "No responses"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ]
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/lasalitarestaurant",
+      "instagram": "https://www.instagram.com/lasalitarestaurant",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 58,
+      "social": 100,
+      "local": 44,
+      "reviews": 90,
+      "overall": 73
+    },
+    "originalScores": {
+      "seo": 70,
+      "overallScore": 67,
+      "performance": 70,
+      "userExperience": 60
+    },
+    "migratedAt": "2025-09-16T00:37:21.325Z"
+  },
+  "metadata": {
+    "cachedAt": "2025-09-15T05:10:11.930Z",
+    "expiresAt": "2025-10-15T05:10:11.930Z",
+    "placeId": "ChIJEZiHuXWgGIcR2FivkoAbVzA",
+    "restaurantName": "La Salita Restaurant",
+    "cacheVersion": "2.0.0"
+  }
+}

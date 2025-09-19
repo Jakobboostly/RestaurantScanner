@@ -1,0 +1,1235 @@
+{
+  "data": {
+    "domain": "steelcitypizza.com",
+    "restaurantName": "Steel City Pizza",
+    "placeId": "ChIJ1RoP8ciJ_ogRzGSUzjR5yYE",
+    "overallScore": 80,
+    "performance": 100,
+    "seo": 63,
+    "mobile": 61,
+    "userExperience": 93,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "pizza near me",
+        "position": 0,
+        "searchVolume": 6600,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery North Charleston",
+        "position": 9,
+        "searchVolume": 50,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://steelcitypizza.com/",
+        "title": "Steel City Pizza Company- Mount Pleasant - Charleston, SC",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best pizza North Charleston",
+        "position": 0,
+        "searchVolume": 40,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza",
+        "position": 0,
+        "searchVolume": 4400,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza places near me",
+        "position": 8,
+        "searchVolume": 390,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://steelcitypizza.com/",
+        "title": "Steel City Pizza Company- Mount Pleasant - Charleston, SC",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza North Charleston South Carolina",
+        "position": 6,
+        "searchVolume": 260,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://steelcitypizza.com/",
+        "title": "Steel City Pizza Company- Mount Pleasant - Charleston, SC",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery near me",
+        "position": 0,
+        "searchVolume": 1000,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza open now",
+        "position": 9,
+        "searchVolume": 20,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://steelcitypizza.com/",
+        "title": "Steel City Pizza Company- Mount Pleasant - Charleston, SC",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 13,
+        "keywords_appeared": 1,
+        "total_keywords": 8,
+        "average_position": 5,
+        "best_position": 5
+      },
+      "keyword_results": [
+        {
+          "keyword": "pizza near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Mellow Mushroom North Charleston",
+              "address": "North Charleston, SC ",
+              "website": "https://mellowmushroom.com/location/sc-north-charleston-4855-tanger-outlet-blvd-29418/?utm_source=gmb&utm_medium=organic&utm_campaign=NorthCharleston-SC&utm_content=207",
+              "rating": 4.3,
+              "reviews": 3200
+            },
+            {
+              "position": 2,
+              "name": "Pizza a Modo Mio (New York Pizzeria)",
+              "address": "Charleston, SC ",
+              "website": "http://www.modomiopizza.com/",
+              "rating": 4.6,
+              "reviews": 491
+            },
+            {
+              "position": 3,
+              "name": "Park Pizza Co",
+              "address": "Charleston, SC ",
+              "website": "http://parkpizzaparkcircle.com/",
+              "rating": 4.7,
+              "reviews": 763
+            }
+          ]
+        },
+        {
+          "keyword": "pizza",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Park Pizza Co",
+              "address": "Charleston, SC ",
+              "website": "http://parkpizzaparkcircle.com/",
+              "rating": 4.7,
+              "reviews": 763
+            },
+            {
+              "position": 2,
+              "name": "Hunt Brothers Pizza",
+              "address": "North Charleston, SC ",
+              "website": "http://www.huntbrotherspizza.com/",
+              "rating": 5,
+              "reviews": 4
+            },
+            {
+              "position": 3,
+              "name": "Pizza a Modo Mio (New York Pizzeria)",
+              "address": "Charleston, SC ",
+              "website": "http://www.modomiopizza.com/",
+              "rating": 4.6,
+              "reviews": 491
+            }
+          ]
+        },
+        {
+          "keyword": "best pizza North Charleston",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "EVO Pizzeria",
+              "address": "North Charleston, SC ",
+              "website": "http://www.evopizza.com/",
+              "rating": 4.6,
+              "reviews": 2100
+            },
+            {
+              "position": 2,
+              "name": "Park Pizza Co",
+              "address": "Charleston, SC ",
+              "website": "http://parkpizzaparkcircle.com/",
+              "rating": 4.7,
+              "reviews": 763
+            },
+            {
+              "position": 3,
+              "name": "Antonio's Pizzeria",
+              "address": "North Charleston, SC ",
+              "website": "https://www.antoniospizzeriaclassico.com/",
+              "rating": 4.7,
+              "reviews": 531
+            }
+          ]
+        },
+        {
+          "keyword": "pizza delivery near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Hunt Brothers Pizza",
+              "address": "North Charleston, SC ",
+              "website": "http://www.huntbrotherspizza.com/",
+              "rating": 5,
+              "reviews": 4
+            },
+            {
+              "position": 2,
+              "name": "Mellow Mushroom North Charleston",
+              "address": "North Charleston, SC ",
+              "website": "https://mellowmushroom.com/location/sc-north-charleston-4855-tanger-outlet-blvd-29418/?utm_source=gmb&utm_medium=organic&utm_campaign=NorthCharleston-SC&utm_content=207",
+              "rating": 4.3,
+              "reviews": 3200
+            },
+            {
+              "position": 3,
+              "name": "Park Pizza Co",
+              "address": "Charleston, SC ",
+              "website": "http://parkpizzaparkcircle.com/",
+              "rating": 4.7,
+              "reviews": 763
+            }
+          ]
+        },
+        {
+          "keyword": "pizza North Charleston South Carolina",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Domino's Pizza",
+              "address": "North Charleston, SC ",
+              "website": "",
+              "rating": 3,
+              "reviews": 855
+            },
+            {
+              "position": 2,
+              "name": "Pizza Hut",
+              "address": "Charleston, SC ",
+              "website": "",
+              "rating": 3.5,
+              "reviews": 351
+            },
+            {
+              "position": 3,
+              "name": "EVO Pizzeria",
+              "address": "North Charleston, SC ",
+              "website": "http://www.evopizza.com/",
+              "rating": 4.6,
+              "reviews": 2100
+            }
+          ]
+        },
+        {
+          "keyword": "top pizza North Charleston",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "EVO Pizzeria",
+              "address": "North Charleston, SC ",
+              "website": "http://www.evopizza.com/",
+              "rating": 4.6,
+              "reviews": 2100
+            },
+            {
+              "position": 2,
+              "name": "Park Pizza Co",
+              "address": "Charleston, SC ",
+              "website": "http://parkpizzaparkcircle.com/",
+              "rating": 4.7,
+              "reviews": 763
+            },
+            {
+              "position": 3,
+              "name": "Antonio's Pizzeria",
+              "address": "North Charleston, SC ",
+              "website": "https://www.antoniospizzeriaclassico.com/",
+              "rating": 4.7,
+              "reviews": 531
+            }
+          ]
+        },
+        {
+          "keyword": "pizza restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Pizza a Modo Mio (New York Pizzeria)",
+              "address": "Charleston, SC ",
+              "website": "http://www.modomiopizza.com/",
+              "rating": 4.6,
+              "reviews": 491
+            },
+            {
+              "position": 2,
+              "name": "Mellow Mushroom North Charleston",
+              "address": "North Charleston, SC ",
+              "website": "https://mellowmushroom.com/location/sc-north-charleston-4855-tanger-outlet-blvd-29418/?utm_source=gmb&utm_medium=organic&utm_campaign=NorthCharleston-SC&utm_content=207",
+              "rating": 4.3,
+              "reviews": 3200
+            },
+            {
+              "position": 3,
+              "name": "Antonio's Pizzeria",
+              "address": "North Charleston, SC ",
+              "website": "https://www.antoniospizzeriaclassico.com/",
+              "rating": 4.7,
+              "reviews": 531
+            }
+          ]
+        },
+        {
+          "keyword": "pizza food North Charleston",
+          "found": true,
+          "position": 5,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Steel City Pizza",
+            "address": "North Charleston, SC ",
+            "website": "https://steelcitypizza.com/",
+            "phone": "(843) 225-6111",
+            "rating": 4.5,
+            "reviews": 2200
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "EVO Pizzeria",
+              "address": "North Charleston, SC ",
+              "website": "http://www.evopizza.com/",
+              "rating": 4.6,
+              "reviews": 2100
+            },
+            {
+              "position": 2,
+              "name": "Benny Rinaldi's",
+              "address": "North Charleston, SC ",
+              "website": "https://www.bennysva.com/locations/rinaldis/",
+              "rating": 4.4,
+              "reviews": 146
+            },
+            {
+              "position": 3,
+              "name": "Mellow Mushroom North Charleston",
+              "address": "North Charleston, SC ",
+              "website": "https://mellowmushroom.com/location/sc-north-charleston-4855-tanger-outlet-blvd-29418/?utm_source=gmb&utm_medium=organic&utm_campaign=NorthCharleston-SC&utm_content=207",
+              "rating": 4.3,
+              "reviews": 3200
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"pizza near me\", \"pizza\", \"best pizza North Charleston\", \"pizza delivery near me\", \"pizza North Charleston South Carolina\", \"top pizza North Charleston\", \"pizza restaurant near me\" - optimize Google My Business profile with these keywords",
+        "Ranking below #1 for 1 keywords - increase customer reviews and engagement to improve rankings",
+        "Low Local Pack visibility (13%) - audit your Google My Business completeness, categories, and local citations"
+      ],
+      "scan_metadata": {
+        "location": "North Charleston,South Carolina,United States",
+        "timestamp": "2025-09-15T12:12:03.626Z",
+        "total_scan_time_ms": 63562
+      }
+    },
+    "competitors": [
+      {
+        "name": "LoLA",
+        "domain": "lola.com",
+        "performance": 94,
+        "seo": 85,
+        "accessibility": 80,
+        "bestPractices": 89,
+        "overallScore": 87,
+        "rating": 4.7,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 499,
+        "keywords": 47,
+        "domainAuthority": 88,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+100 keywords",
+        "authorityGap": 3,
+        "backlinks": 1021
+      },
+      {
+        "name": "MOMO riverfront park",
+        "domain": "momoriverfrontpark.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1141,
+        "keywords": 48,
+        "domainAuthority": 75,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 926
+      },
+      {
+        "name": "The Grit Counter - North Charleston",
+        "domain": "thegritcounternorthcharleston.com",
+        "performance": 94,
+        "seo": 85,
+        "accessibility": 80,
+        "bestPractices": 89,
+        "overallScore": 87,
+        "rating": 4.7,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1216,
+        "keywords": 31,
+        "domainAuthority": 71,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+100 keywords",
+        "authorityGap": 3,
+        "backlinks": 730
+      },
+      {
+        "name": "Pelato",
+        "domain": "pelato.com",
+        "performance": 96,
+        "seo": 86,
+        "accessibility": 82,
+        "bestPractices": 91,
+        "overallScore": 89,
+        "rating": 4.8,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 864,
+        "keywords": 51,
+        "domainAuthority": 77,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+150 keywords",
+        "authorityGap": 4,
+        "backlinks": 1048
+      },
+      {
+        "name": "California Dreaming",
+        "domain": "californiadreaming.com",
+        "performance": 82,
+        "seo": 74,
+        "accessibility": 70,
+        "bestPractices": 78,
+        "overallScore": 76,
+        "rating": 4.1,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1400,
+        "keywords": 21,
+        "domainAuthority": 72,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 657
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 79,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-15T12:12:13.183Z",
+    "businessProfile": {
+      "name": "Steel City Pizza",
+      "address": "8600 Dorchester Rd, North Charleston, SC 29420, USA",
+      "rating": 4.5,
+      "reviewCount": 2239,
+      "phoneNumber": "(843) 225-6111",
+      "website": "https://steelcitypizza.com/",
+      "formatted_address": "8600 Dorchester Rd, North Charleston, SC 29420, USA",
+      "address_components": [
+        {
+          "long_name": "8600",
+          "short_name": "8600",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Dorchester Road",
+          "short_name": "Dorchester Rd",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "North Charleston",
+          "short_name": "North Charleston",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Dorchester County",
+          "short_name": "Dorchester County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "South Carolina",
+          "short_name": "SC",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "29420",
+          "short_name": "29420",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "state": "South Carolina",
+      "city": "North Charleston",
+      "place_id": "ChIJ1RoP8ciJ_ogRzGSUzjR5yYE",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "bar",
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "reviews": [
+        {
+          "author_name": "Becky Mullins",
+          "author_url": "https://www.google.com/maps/contrib/109468428057779395295/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJfwGFXP1aknbIS7gkRDeaJjWsI9OzTFeUeLtHI_722XWMzPA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "a month ago",
+          "text": "We ordered the pizza night special. You get 2 salads, and order of their dip (either buffalo chicken or spinach), a large 16-inch pizza, and an order of Zeppolis.  Everything tasted great, but this is definitely more food than 2 people can eat. Needless to say, we had quite a bit of leftovers since we didn't know that it would be large portions that they gave. They do have other food besides pizza, like spaghetti, meatballs, etc. I would definitely visit this pizza place again.",
+          "time": 1753133282,
+          "translated": false
+        },
+        {
+          "author_name": "K McKenna",
+          "author_url": "https://www.google.com/maps/contrib/102569444641004911585/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIMY7dFHxtwrIlWbAD72Z62woQcyCl8S6Eu-ml5bfn1IxoubQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "We got the one slice special and it was very good.  Service was good and so was the atmosphere.  Took a picture of the salad but forgot to take one of the pizza slice before we are it lol. Next trip I got pictures including the pizza",
+          "time": 1741969756,
+          "translated": false
+        },
+        {
+          "author_name": "Ames",
+          "author_url": "https://www.google.com/maps/contrib/112766726136559991034/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJi_qiRdim7Rg0G2B6ayQIMKsOVk6oVE4u-zayT1fDoeYGwJA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 1,
+          "relative_time_description": "5 months ago",
+          "text": "The dark fireplace hearth against the dark floor is a hazard and needs protection on the corners and better visibility. Other than that the atmosphere is cute. I am highly disappointed. Our order was promised in 20min and took 30. The hostess is unfriendly. We asked to order to go. She thought we had a pickup order and just pointed us to the bar. We had to ask where  the menus are. The appetizer was sad. The Parmesan bites were dough puffs of air lightly sprinkled with Parmesan. They were so dissatisfying. The “grilled chicken” is pulled chicken; it looks like it’s from a can and doesn’t taste much better. After taking a bite, the entire toppings slid off of the pizza. The crust is bland and flavorless. It wasn’t worth it. I lost my appetite. I wouldn’t order here again and I wouldn’t recommend this place to others.",
+          "time": 1743811411,
+          "translated": false
+        },
+        {
+          "author_name": "Lauren Ezell",
+          "author_url": "https://www.google.com/maps/contrib/107419247101524600342/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJhJ3qHE5EkAJ8iMWOkwjE0hwL9R_akwN1q1hzRfLpmvSXXxA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "My husband and I stopped here as we headed back from our trip. Great lunch specials and very good food. Service was great too!",
+          "time": 1755535493,
+          "translated": false
+        },
+        {
+          "author_name": "Steven Poff",
+          "author_url": "https://www.google.com/maps/contrib/112888944044600819115/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX_Qo6Cq9B2yOPdWyXHy2sDDtig6jZNQV-cRm2WknJtuS4jaYaung=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "I am in Charleston for work and wanted some pizza. I came across this gem. This is some of the best pizza I've had, great service. I've eaten here twice and only been in town for a week. I only complaint is there isn't a location where I live in Florida, PLEASE EXPAND to North Florida.",
+          "time": 1749562305,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 480,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113545293908498323499\">Steel City Pizza</a>"
+          ],
+          "photo_reference": "ATKogpdVOI88_h5FbyOJyREoeS4nwsr13MjmrV1XNWd-IeaEcdIY8bVKtdeqZ4hMGfLZf41uWKex99pRHOX_ax2GSn37EjW0M8MZhsjLCOdSSX7Snn4STImnSfvoSxQgpbjQgMj6d8wJ_dSvk-6VNFxU3t5yvyZTvoo_WV0IN-e3Qe_RgASRIJsp1tv73oyKGWGQLSBHAOw185KqxMnWiplFQxSRQYt1cxRBNpuqotn3UfMQwiNgz5xBgfhbD5lX6B8HkaiWPFs9KxpEH44zE8PtsY_1VgGh_7PSzjtn4ZXVfe3Zcw",
+          "width": 640
+        },
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113545293908498323499\">Steel City Pizza</a>"
+          ],
+          "photo_reference": "ATKogpec96J__Le4qKN0puu3V-49lgJwVG8Wcazidj9dX4e57FGfqVWeU4ve_vsOG03PtWR3_6VgygEFYh92CZeIhHe753doQRa7xtxKbKcsYjaAXdYYJaB38kI4Q927plmUgBr0JZfvKizulZKSCadtDWNo0jskcPBzcrvIl7sR81JabchZlw5t85XkqywpgwgVBJiC0VpA_KOak0KhJoom-ZOHI3zIekTHs4ps1EHVuXWcSHNhC0dzt9pqYz-VgIZ_5cWeMKlArhfDy8U-MO00OLUTTPzcN64yVBP6M4uuFk7sUw",
+          "width": 4800
+        },
+        {
+          "height": 3000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114214826884725936625\">roy holman</a>"
+          ],
+          "photo_reference": "ATKogpfWoaIisdBVUOElShDGVoGnC00on4EdRbmQcRUQYzN32ooaW6OlhOulGjKkMKqI7MIkjSeOEqO0Alq74Bmouvj_TU0_ykKQX9WxTlLu6I40IJ5DYuQCmAHRrGPpqVvn95pxyY_BM4GIA_gZUi-CX-ez4zd9yRXQ4srYVvyZ8NAURJTrFaobgH5AYC94wE40Bq076CJJihbsJOglDjcwD6ac9YM5bld8hmUZfVOxt9qnYSlusg7cdh-a19ZK6SFWo6N38LzUWWC-tv81DYFXeMsI7ZLk5PmhQEnrSd7KAbM7-wUJEhV0I18k4Q-FHg_Td4pXc9ptbVqj-OURQVXoSGpMzc0ETeKuniyBG2nRFMNOSymA1MmKx8D_M4zPK_T673YaC5u5HNCLpBnfdudvEoU_2yE9X97F-CxcPY2tc04ivlnv",
+          "width": 4000
+        },
+        {
+          "height": 1600,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113545293908498323499\">Steel City Pizza</a>"
+          ],
+          "photo_reference": "ATKogpeILxwU2mp89WcGbC959pRcqNTk8gY0aZMZG8gTmFvTLRFBPGr8IEHR0jEnS7t9PcCmfPMB7xfzgVmlL5nCBOARWTrEMERcyeA-BGj82sQI9qvpu4COZ8afb7nR4SyOO4P4H_ee0rkvrOY4v3P_tG1XS_eGhTiQNYN7Ssgfs6HTPDXrr69ArRn80qVZRdvWjF9Xu8iPchIXiNiZTGW75GNgqrodm2grDKklBbYexTGjuVSNm3mveUem8301R91TNGjEZjNfxx-K0aLbivN2Qk3xr90A2XIzYhnsJQ9F67Us3g",
+          "width": 1067
+        },
+        {
+          "height": 3072,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102858754825575035047\">Drone_us abergrichard</a>"
+          ],
+          "photo_reference": "ATKogpeV_1kLPpalOLcMp5M6z0Bhnnb674KJNV2Oh_86GWukp01sQzB_kpSBBiFjivhYMi4B4uhqNziifZH6G0_l653H5U9jp3nScsUTGooeaRPldubuGT3UiKUKTg1F863EBUjWmjyoX_lhe5fbWxtyESq8Vc8htv3fiLh9l3NO7NQwtvkWmMGH-r6mgHCeeazMJhsJlChLNHGtDDy-uFDHKg3TTQIjqLUR6ckCZwRUDVZuo8lDnhFtfHHLYmVDwFlaLNwnc1mjvt2rRa8I4yfF23mJ-9MghW-7BXvY3VEJa2n3mS9zvnD1qVP4xke2sk8TAkOhjvqQJP_bKgM2hXG0RlR8NsOy9pylWdMHS4t_i1t_WCLI_ruUY0kNHre36ohcEvmSASitbL1t1Dcr3d-kLqAUbxHyo4M52aLGjAw8I2K1qA",
+          "width": 4080
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115129224179564707079\">Malinda Lee Pearson</a>"
+          ],
+          "photo_reference": "ATKogpfFTdYw9OoOa6AvN_rh5oSMg58vpUEDn5FApxt2b3Na_k6EvOi0Oxll5C8s59mZyzQWrFCWs0kNSxJFxHaXD8Ki4LhPZE2SFf7mzO3e1aHh2-Z15cNU-HPKJBSagXCyoSxwdrFhGGuGUcHbqiSksm8Ho0J4e2HAXFbXBoHuWEGMm9UyL4uM2z44FN04kSgEYXYisD5aiMbwa-B2fxFuHQL1lMZbxfHxLJI8CKMaR22bEuzE1I7jH3fFI4l24mKoq9H--pef9GPGqPMhV01MAimNSAhh1PyWPMPBPvEXZQfHJbC2Wj7AOKSTTTtnBbJiEfJVBONUE5Wn4mJWwM2kP4XywTdQQGsNlW5EAgKAn9dloZ_LaTe2B9lCZgvDi7rJJ4Ut5ns66jSawlfkz4mjxE7vJ0tjaCUbOi-zzRKK8KVfLkf6",
+          "width": 4032
+        },
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113545293908498323499\">Steel City Pizza</a>"
+          ],
+          "photo_reference": "ATKogpe1TyJMlf5_POC6pPi7xFstgm35AiEoL-iHKa82Fzx6THIuZmcV7kIjAoyHp_sSrsharyYxPKJq3ftZXjy73-RVZqs3bFp52B6-JDWCKO7nadXBJA0vpp5km1g9MyNf6OoUsm75C2Uzq4INU-Hir06ZMui43lrxk8eSbD0PXEg0yAF7rqzGKIVh1AbT5gLEV715FBqgQYuOqRfrymmvIOe9UDHnztLJuVSZCX6bEJJm4KaOZzTHAnSTFu9CT1NFiqQ2M64kM01E6Mx-PWYELRDKp-qT2owIYnzd9hpK9kYNtQ",
+          "width": 4800
+        },
+        {
+          "height": 1365,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113545293908498323499\">Steel City Pizza</a>"
+          ],
+          "photo_reference": "ATKogpc0J1QQ4KUkOWBbkUV07E8LNYxsoPDMVOvtgAKVCHyXFPWDZ0s9YXbetsOdLc4e4Fn4W8X6ziWCz_uQ4Fh5lXJPRQYZozO5N3gNRZGAQFKIXycEW76Adu7NOzUuiFKiR8qjJcOPlDicNe-YHMPbSQSagkGNfolAxSVr6UgNtW0MX0DmC30BSVZ2aH-IlLEjiGPgs97JvQwVCKhoum7QuM20MeJBl4aWJIncRbRXvvBWFwrSzfhAU35FUQxiIfR6--81K0dYiT84WKcVt97Hzm99kzNQ5bRcrBXFQoh4NFzn2w",
+          "width": 2048
+        },
+        {
+          "height": 1848,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107915765535095672174\">JENNIFER HUOTARI</a>"
+          ],
+          "photo_reference": "ATKogpc5KEOVK_Qw3-EyjSmilnb5Yakq5Ae6dO9HgJhW3eAH6f7fscJIxQRGmJIJwUNSaxtMAlEQUGIm2IcWnHBKJE88W3TE4BCE95r0DgqZj1cnyrDYrF8i_A0Ctfu748sOSG2yd6U5np47yP5ofcwtJDWjEDQqpnUIBj7Xa0mqnhzrvXL6KLahtvBLrlbzdhycEtFsGJgVN4-8siMb7m7TLn-I5gflkZs6sJIQ9xyXT9ti9lZpXbyDMsRH6-K1IAIrWeYKRua3K_X8B4KneqUTHc6E6TXkxR4AziA8_LQ5yGLpZbnZlZYpXrWXt5WgWZEKY2NtJttcLnfOwG8ZmYSO7sdXNBk378q93CfmSK3L5ONWIlpSqTfiKkJISQMB5I_KtLQAR5GnsC9R-9jtG2vddPI1FxX-gg4SJ-Z7QZ2Swrxm9A",
+          "width": 4000
+        },
+        {
+          "height": 3072,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102858754825575035047\">Drone_us abergrichard</a>"
+          ],
+          "photo_reference": "ATKogpeVt1xA6C52KtHUXs3lD6VFCHpQ67DjvoEQr4OptugxnWnanPE85ZTbRGSGxFt5jHrjEf0JqOJ-euHAuYfriSTpU5q2X-soxKDY4ijo9ocy3E2PezecKJ7PEGzcSf2yJMto2uDcsQ05CUlBEsYVIDrb9DU9-WgRRgIqx7C-kTXkJEcBE975QkN155Ujywx6SY_bD3hsaSz7Auz7Ea4ibfipI-VskYxCZaUXCtPpp7NUchgs6R74GA-svXPChD96zxCV1843RPb8ma7A9KqK6gKhm_isPuIf_JPNu8dxTscngI3sroU6mt0aLIGhdawJrVzzCA8NN_nt-EvG1DTjeQu9dJuMBE2MhtI-9r0qWfGhpECLrZmGIUz7F0QsFpMFU3j5W2xuGeuSITYdsnuk6PXDQomshUPSNDpZC-ti05gCww",
+          "width": 4080
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "2100"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2100"
+            },
+            "open": {
+              "day": 1,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2100"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2100"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2100"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2200"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2200"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 11:00 AM – 9:00 PM",
+          "Tuesday: 11:00 AM – 9:00 PM",
+          "Wednesday: 11:00 AM – 9:00 PM",
+          "Thursday: 11:00 AM – 9:00 PM",
+          "Friday: 11:00 AM – 10:00 PM",
+          "Saturday: 11:00 AM – 10:00 PM",
+          "Sunday: 11:00 AM – 9:00 PM"
+        ]
+      },
+      "price_level": 2,
+      "editorial_summary": {
+        "language": "en",
+        "overview": "Casual eatery showing sports on HD TVs along with a menu of pizza, burgers, wings & sandwiches."
+      },
+      "url": "https://maps.google.com/?cid=9352139368922637516",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2dBXCPAcTh6S0JvRMV06uhwlynihZLPnPEaPeKIiK19C5Ez3NwKYxI3zNrveWWVkOdWvmaCen0lDVFfNuk9kSGowXwyWX6WJM_9cmqtL00qbcuC7YQ7-RwZBwPflTeV6_9KsB-ijIakp-28rCvl-iLo4XGUuO9oQ18smUCsPiFRvNNqdqVzTOXV8Cg45bIluO0Tg7AP50HB4pbdBziWJ6cBSjy1rQDCKgRAFpG3OKoISO014v2mZIcOH_PH8fzM921K1FyL9Dyh3Gf2qOpnAcGJdmQTnvulRMqZG4VcEZpmWw&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2fGog164QbVQlorCX0R3_iUxoO0_XcOr4td4i0hq8-3NKIlfhjfAOU8W3OGPSLHef-hh-7gMYkIBPL_nGuTMXR7QZaIwtIWjR3EfSYYy8bQU7fsRSgpzDsfnONdDEf1KXDrCG_ABpmUEuw97KJHAl7cT2FPhloY_-C1JsB0vf0mSEMjNR6knjOQbClVfn3LQnSFDwoVkthRTq8zfqb_guvD9kGxgRKHbDhNU57aDlGXwuIpWdKxS9owPC5PFLIkeRKQUPFEWPxkR8jmtU7SL8TuQHF1opuF9qfwewTjSGzKBw&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2cvMvmUWmIkPLe9Iv6PJ3jPwgqat_iXXLi8M-ZTAwbiGsk0GQwjZw5vknkYLFSZjMkwvuBiX0P8SIy0HFa7NTIrbtAnH1Wq7jfANHhFjADDrpHeBbdwhm8bAUe1920TZiDDF9GuwNS3xqn0eFl6fd70RNp0S1d2nnsWuTu4FgIwKIABSBg-keTNOBfjaqFJDDOz2__kjbRoGZirq-hCKAdJ1QPI5cBbOukQSr-celdGjqYGxkxJxeUHOSDvcIOpCtpi-hm0jkXUgqFEzICoQQ_dVTj4dRwDfHQwX_BgEzmQoYVjtpCEn9BLbPQU_8OHB2D3g5bmlkSMDM_jlytMUic7uG-E_5hUZnqYZvVx2uk2Rv_rlfNzhACcXQrLx4whF7DfFmf6kQ43Dw8faTq4uIMDJU7TZmTpx7ihVQdePAeEl8bS&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2eFfGv3DweoyBlgsL19HXh1dnw9XzfaccRu-CmN2ma_kXTm86b8-LXoBcPtTYieb5MKahAvvmxo2Admx_pCZPfIbREJrHSmtOQ68ZwLsfr_iWpQec1K2Dy-aXQRlwboSaVccthshU-sy00QltthFsbQLAu9WOsjPLlFUVjVW7uUNoHVEY1JQH4njXkSMNOrzG2_UMGVaeFvaZpzfr3JTm22a0-9Z3YaCmsy77OMIAIA-j1N0UEsCDeVkprczws-sJgfCTv0INm6qp_Iirzw0Gk79HX0LPAb4RUcn_r9VlbwXw&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2cnyqzG5NXtZFqrFXY8ls-4ROwCuRDrm5FWOeW9X4oYmeBPn1OQV5pl-HY7JcxMMc2z262w6dK7tCMvdeDAbbZhNHHXTScnicHC5hlv-Lqr9d49iioVF-mddx_0ipgk-X0U2Jw0qFWQUH-fS7O-vFXlsXNPrkxmwjwvqr3DbP5F0X6DytH2L7-yYJiILvzz3bSk9gmnZw9m5jEGD-US4klRvnNWHg1gMwBJN44kasdfWa3qH_WmRRTNy5DvHhHae32rvfEDaHphC00MecWGjtqpUisoEbYRHGWZRZb7tr0movWJL7T9VLLjinVFO7qoWBLGoZCCJik7-pPnM_KDrcDINwAnFIJRed8riOycGgE6y0nX1X-xuMj9bTsJZGq3MP5ha6m-qjqmr2dtp45Y9mXqpEyhDqWF7_wGToMwvuggNw&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2fuPFWpbbQw-2-rlxUMaIPqFMnkCjtDPiaSvlx1ahJB1uZXzXd7z920q0nlK6XHm0ZatAcSvA5BlloV2EcSE9cl8RNwe4LJqMmffnLVlclkP0gi-dzQCiYOaDnHz3pnK4Bv3dyGhclYftt_qqBmHkUNNSxXMt2ppWTK4A3kpXHV5bRDZFTS5lBUq0l6pGYe4LS4pGTypNl1eGvOVbSt5esGbzh5BsoNO2awaR0mVVNVugh8KOBbQJm4jU7VCQj0zrekzSBzYMWoz34Ck-5hlfAOjB_12317DRABobFEWxhXq4wTGxZDxlvoYE2B0b0o-REUN8mYhmpi9YpnDyDTildocy7RahwRDXa0yJKc9LG1Sj5xSFP6a_dMW5x-Esq6urUHkHJBy5hzBHiyv4g1v_acYSK8dyNG1dUgW1B8fylDOZN1&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2eVxtRnoYNve331Oo6aZo7Vw4sucbhvxLvok6UH11lwkSCqujAZLcdpHZQbjnbuRcm2KcMo-dhPqaYD4XnspSEycuix5GWzsbp6jhv_yhlyVJZ7PBMsRy0dkp9asJuCp2wglMfBHAQ6pEKfPAAhEN_omma4UucI9ddVyF4pQsv3eKub5v_BYRQl2txXLN6SAqkU8Mww4_r26tsuYlYmfjszGFHlbsn99APYda0xTf4A18Z6n366fuUQ4p1UuInO1rOYj5aJT59N01yWfDlLcOtG9dl_9GFAD0fgrl0ls_VA3w&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2coe7kaSmf1z0fsLwDtUvrmPs9g1hiS328z8w-P-C2M5w4dSLL0pfDQNc7PMRzEdTVyj4egZOXa57Jh0QriLMg8irX5LLCQSh8AzSi7jpUf7_JNIRktvl2Hgzv7mQkp_s3sLuvb-L7tyzoeerhrOs1yesxGV9HUAjsaqa-p-JaRKCSAw874HStXolCtdgip_RPTiUMiM1B54esitaEeiA9MzyqYIOd9_0GeielppHtPksPGf51K6spFSBviVFC0p-2FAnIOBTONuY9y4vqOaC9lHe6mDzp9YYXslLzCNx_3kw&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2cLSFfsI_2bIZJsA6o9WbVlwrFIgauNcl4WYlmk4lQbU9nr9X6L1wJY34tgI-rJwOxHfv5rBj7ughf4-td4vxLC3BH9D07bnQF4Ec3XCpvkg4LGUEmE2o34DrGVvEI7RAy4xC5csVMtM9ixgaSjyEooEt5i-ViyA9xfCIuducjFnbSyt8mhafPanwgm6_gbn5ZKilXkVmpG3NquN9AHaTVlHZJW3aqzShKKFAVISXWLItk3eJzR4Z8NMHCDaR6AahpTBpVeBFL_rlathx_aKD2ZhHASx_U_z-FpZtiCAbHeEnuY0ih6I0ufHERklCJ0BBi-TkTLooUuWQXxKPjimSBfdO1dJuQOKIG6C7sqnXYbjiCffd4hiz3XfaF35JW8YDFg7fx_t8lkjXb077c2sPLUhJRbX6onssYQmEcDC0mhpQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2eumZ6lLP1sPL06ujkdq8wRyE0OYFcRgYIYJbYBojUZbBNLMFUtlaf9REAvfeYk7Ult0JIJGI8skxFWKqMe73YKCJRmKkT7sl2XhJKNbMWWlvbkehDelwSATTYzLNReazyletP_PEbj8aHa_eccPWBMJtgN61RfcS1vzH8-4vwwfBiePe2l5sMw4z5URxYzcSyjk9ah080xZUsuHnsSmcq5GdhGup8JN2F0OJbNv-EWmgUUQWtLEex07bICU5HZ5V_OAMqDLa6p95NiVT82QdW0_3agIx05ELZ6qatlZuiEZdNQkspu06cWH-kaXbupHBwxQUg7Y6N2dYwdxXZ-c-XCN13XQ7pF_OjCdZh7cwZ2YXWPNdJ7em1-x4kAh6uYfxJhqbx-r9je4Ri9X2ELIUE42xlAxYDCpOJyNGCFQkyMnA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 61,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": true,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 90,
+      "totalReviews": 2239,
+      "averageRating": 4.5,
+      "sentimentBreakdown": {
+        "positive": 80,
+        "neutral": 0,
+        "negative": 20
+      },
+      "reviewSources": [
+        "Google Business Profile (Limited)"
+      ],
+      "keyThemes": [
+        "Food Quality",
+        "Service",
+        "Atmosphere"
+      ],
+      "recentReviews": [
+        {
+          "author": "Lauren Ezell",
+          "rating": 5,
+          "text": "My husband and I stopped here as we headed back from our trip. Great lunch specials and very good food. Service was great too!",
+          "date": "2025-08-18T16:44:53.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Becky Mullins",
+          "rating": 4,
+          "text": "We ordered the pizza night special. You get 2 salads, and order of their dip (either buffalo chicken or spinach), a large 16-inch pizza, and an order of Zeppolis.  Everything tasted great, but this is definitely more food than 2 people can eat. Needless to say, we had quite a bit of leftovers since we didn't know that it would be large portions that they gave. They do have other food besides pizza, like spaghetti, meatballs, etc. I would definitely visit this pizza place again.",
+          "date": "2025-07-21T21:28:02.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Steven Poff",
+          "rating": 5,
+          "text": "I am in Charleston for work and wanted some pizza. I came across this gem. This is some of the best pizza I've had, great service. I've eaten here twice and only been in town for a week. I only complaint is there isn't a location where I live in Florida, PLEASE EXPAND to North Florida.",
+          "date": "2025-06-10T13:31:45.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Ames",
+          "rating": 1,
+          "text": "The dark fireplace hearth against the dark floor is a hazard and needs protection on the corners and better visibility. Other than that the atmosphere is cute. I am highly disappointed. Our order was promised in 20min and took 30. The hostess is unfriendly. We asked to order to go. She thought we had a pickup order and just pointed us to the bar. We had to ask where  the menus are. The appetizer was sad. The Parmesan bites were dough puffs of air lightly sprinkled with Parmesan. They were so dissatisfying. The “grilled chicken” is pulled chicken; it looks like it’s from a can and doesn’t taste much better. After taking a bite, the entire toppings slid off of the pizza. The crust is bland and flavorless. It wasn’t worth it. I lost my appetite. I wouldn’t order here again and I wouldn’t recommend this place to others.",
+          "date": "2025-04-05T00:03:31.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "K McKenna",
+          "rating": 5,
+          "text": "We got the one slice special and it was very good.  Service was good and so was the atmosphere.  Took a picture of the salad but forgot to take one of the pizza slice before we are it lol. Next trip I got pictures including the pizza",
+          "date": "2025-03-14T16:29:16.000Z",
+          "platform": "Google Places"
+        }
+      ],
+      "examples": {
+        "positive": [
+          {
+            "author": "Becky Mullins",
+            "rating": 4,
+            "text": "We ordered the pizza night special. You get 2 salads, and order of their dip (either buffalo chicken or spinach), a large 16-inch pizza, and an order of Zeppolis.  Everything tasted great, but this is definitely more food than 2 people can eat. Needless to say, we had quite a bit of leftovers since we didn't know that it would be large portions that they gave. They do have other food besides pizza, like spaghetti, meatballs, etc. I would definitely visit this pizza place again.",
+            "date": "2025-07-21T21:28:02.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "K McKenna",
+            "rating": 5,
+            "text": "We got the one slice special and it was very good.  Service was good and so was the atmosphere.  Took a picture of the salad but forgot to take one of the pizza slice before we are it lol. Next trip I got pictures including the pizza",
+            "date": "2025-03-14T16:29:16.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Lauren Ezell",
+            "rating": 5,
+            "text": "My husband and I stopped here as we headed back from our trip. Great lunch specials and very good food. Service was great too!",
+            "date": "2025-08-18T16:44:53.000Z",
+            "platform": "Google Places"
+          }
+        ],
+        "neutral": [],
+        "negative": [
+          {
+            "author": "Ames",
+            "rating": 1,
+            "text": "The dark fireplace hearth against the dark floor is a hazard and needs protection on the corners and better visibility. Other than that the atmosphere is cute. I am highly disappointed. Our order was promised in 20min and took 30. The hostess is unfriendly. We asked to order to go. She thought we had a pickup order and just pointed us to the bar. We had to ask where  the menus are. The appetizer was sad. The Parmesan bites were dough puffs of air lightly sprinkled with Parmesan. They were so dissatisfying. The “grilled chicken” is pulled chicken; it looks like it’s from a can and doesn’t taste much better. After taking a bite, the entire toppings slid off of the pizza. The crust is bland and flavorless. It wasn’t worth it. I lost my appetite. I wouldn’t order here again and I wouldn’t recommend this place to others.",
+            "date": "2025-04-05T00:03:31.000Z",
+            "platform": "Google Places"
+          }
+        ]
+      },
+      "customerMoodAnalysis": {
+        "overallMood": "satisfied",
+        "sentimentSummary": "Customers have positive experiences overall. Your 4.0/5 rating from 5 recent reviews shows solid satisfaction with room for growth.",
+        "sentimentDistribution": {
+          "ecstatic": 0,
+          "delighted": 80,
+          "satisfied": 0,
+          "neutral": 0,
+          "frustrated": 0,
+          "disappointed": 20,
+          "angry": 0
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "food quality",
+            "mentions": 2
+          },
+          {
+            "theme": "atmosphere",
+            "mentions": 2
+          },
+          {
+            "theme": "service excellence",
+            "mentions": 1
+          },
+          {
+            "theme": "value for money",
+            "mentions": 1
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 0,
+          "satisfaction": 7,
+          "disappointment": 1,
+          "frustration": 0,
+          "anger": 0
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "Customers appreciate the generous portion sizes offered in the pizza night special, which often result in leftovers. - social media marketing can showcase this strength",
+            "The restaurant is noted for its great lunch specials and very good food, making it a popular choice for quick meals. - Boostly marketing services can amplify this",
+            "The pizza is described as some of the best customers have had, with a strong desire for expansion to other locations. - review management can highlight this positive aspect"
+          ],
+          "improvementOpportunities": [
+            "Long wait times and order mix-up issues - Boostly marketing services can improve this",
+            "Negative reviews and dissatisfaction with food quality - review management can address this concern",
+            "Lack of atmosphere/ambiance awareness and safety concerns - social media marketing can improve this area"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 5,
+          "averageRating": 4,
+          "ratingDistribution": {
+            "1": 20,
+            "2": 0,
+            "3": 0,
+            "4": 20,
+            "5": 60
+          },
+          "sentimentTrends": {
+            "trend": "stable",
+            "recentAverageRating": 4,
+            "previousAverageRating": 4,
+            "recentReviewsCount": 5
+          }
+        }
+      },
+      "trends": {
+        "ratingTrend": "positive",
+        "volumeTrend": "increasing",
+        "responseRate": 75,
+        "averageResponseTime": "2 days"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ],
+      "googleReviews": {
+        "reviews": [
+          {
+            "author": "Lauren Ezell",
+            "rating": 5,
+            "text": "My husband and I stopped here as we headed back from our trip. Great lunch specials and very good food. Service was great too!",
+            "date": "2025-08-18T16:44:53.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Becky Mullins",
+            "rating": 4,
+            "text": "We ordered the pizza night special. You get 2 salads, and order of their dip (either buffalo chicken or spinach), a large 16-inch pizza, and an order of Zeppolis.  Everything tasted great, but this is definitely more food than 2 people can eat. Needless to say, we had quite a bit of leftovers since we didn't know that it would be large portions that they gave. They do have other food besides pizza, like spaghetti, meatballs, etc. I would definitely visit this pizza place again.",
+            "date": "2025-07-21T21:28:02.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Steven Poff",
+            "rating": 5,
+            "text": "I am in Charleston for work and wanted some pizza. I came across this gem. This is some of the best pizza I've had, great service. I've eaten here twice and only been in town for a week. I only complaint is there isn't a location where I live in Florida, PLEASE EXPAND to North Florida.",
+            "date": "2025-06-10T13:31:45.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Ames",
+            "rating": 1,
+            "text": "The dark fireplace hearth against the dark floor is a hazard and needs protection on the corners and better visibility. Other than that the atmosphere is cute. I am highly disappointed. Our order was promised in 20min and took 30. The hostess is unfriendly. We asked to order to go. She thought we had a pickup order and just pointed us to the bar. We had to ask where  the menus are. The appetizer was sad. The Parmesan bites were dough puffs of air lightly sprinkled with Parmesan. They were so dissatisfying. The “grilled chicken” is pulled chicken; it looks like it’s from a can and doesn’t taste much better. After taking a bite, the entire toppings slid off of the pizza. The crust is bland and flavorless. It wasn’t worth it. I lost my appetite. I wouldn’t order here again and I wouldn’t recommend this place to others.",
+            "date": "2025-04-05T00:03:31.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "K McKenna",
+            "rating": 5,
+            "text": "We got the one slice special and it was very good.  Service was good and so was the atmosphere.  Took a picture of the salad but forgot to take one of the pizza slice before we are it lol. Next trip I got pictures including the pizza",
+            "date": "2025-03-14T16:29:16.000Z",
+            "platform": "Google Places"
+          }
+        ],
+        "averageRating": 4.5,
+        "totalReviews": 2239
+      }
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/steelcitypizza",
+      "instagram": "https://www.instagram.com/steelcitypizza",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 63,
+      "social": 100,
+      "local": 64,
+      "reviews": 93,
+      "overall": 80
+    },
+    "originalScores": {
+      "seo": 76,
+      "overallScore": 73,
+      "performance": 81,
+      "userExperience": 71
+    },
+    "migratedAt": "2025-09-16T00:37:21.212Z"
+  },
+  "metadata": {
+    "cachedAt": "2025-09-15T12:12:13.334Z",
+    "expiresAt": "2025-10-15T12:12:13.334Z",
+    "placeId": "ChIJ1RoP8ciJ_ogRzGSUzjR5yYE",
+    "restaurantName": "Steel City Pizza",
+    "cacheVersion": "2.0.0"
+  }
+}

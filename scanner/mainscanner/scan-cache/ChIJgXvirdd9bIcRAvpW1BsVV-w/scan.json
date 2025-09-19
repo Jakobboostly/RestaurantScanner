@@ -1,0 +1,2737 @@
+{
+  "data": {
+    "domain": "www.caitlinsrestaurant.com",
+    "restaurantName": "Caitlin's",
+    "placeId": "ChIJgXvirdd9bIcRAvpW1BsVV-w",
+    "overallScore": 73,
+    "performance": 100,
+    "seo": 58,
+    "mobile": 49,
+    "userExperience": 91,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "performance",
+        "severity": "critical",
+        "title": "⚡ Speed Crisis: Customers Are Leaving",
+        "description": "Performance score of 69/100 means customers wait too long. 53% abandon slow websites.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🐌",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "Lost orders from customers who abandon slow-loading pages"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "restaurant near me",
+        "position": 0,
+        "searchVolume": 673000,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant delivery Denver",
+        "position": 0,
+        "searchVolume": 40,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best restaurant Denver",
+        "position": 0,
+        "searchVolume": 22200,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant",
+        "position": 0,
+        "searchVolume": 368000,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant places near me",
+        "position": 0,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant Denver Colorado",
+        "position": 0,
+        "searchVolume": 27100,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant delivery near me",
+        "position": 0,
+        "searchVolume": 260,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant open now",
+        "position": 0,
+        "searchVolume": 110,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 0,
+        "keywords_appeared": 0,
+        "total_keywords": 8,
+        "average_position": 0,
+        "best_position": 0
+      },
+      "keyword_results": [
+        {
+          "keyword": "restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Stout Street Social",
+              "address": "Denver, CO ",
+              "website": "http://www.stoutstsocial.com/",
+              "rating": 4.3,
+              "reviews": 3200
+            },
+            {
+              "position": 2,
+              "name": "Little India Downtown Denver",
+              "address": "Denver, CO ",
+              "website": "https://littleindiadowntown.com/?utm_source=google",
+              "rating": 4,
+              "reviews": 1300
+            },
+            {
+              "position": 3,
+              "name": "Corinne Denver",
+              "address": "Denver, CO ",
+              "website": "https://www.corinnedenver.com/?utm_source=google&utm_medium=organic&utm_campaign=business_listing",
+              "rating": 4.7,
+              "reviews": 4900
+            }
+          ]
+        },
+        {
+          "keyword": "restaurant",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Stout Street Social",
+              "address": "Denver, CO ",
+              "website": "http://www.stoutstsocial.com/",
+              "rating": 4.3,
+              "reviews": 3200
+            },
+            {
+              "position": 2,
+              "name": "Corinne Denver",
+              "address": "Denver, CO ",
+              "website": "https://www.corinnedenver.com/?utm_source=google&utm_medium=organic&utm_campaign=business_listing",
+              "rating": 4.7,
+              "reviews": 4900
+            },
+            {
+              "position": 3,
+              "name": "Olive & Finch",
+              "address": "Denver, CO ",
+              "website": "https://www.oliveandfinch.com/",
+              "rating": 4,
+              "reviews": 45
+            }
+          ]
+        },
+        {
+          "keyword": "best restaurant Denver",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Wildflower",
+              "address": "Denver, CO ",
+              "website": "https://www.opentable.com/r/wildflower-denver",
+              "rating": 4.7,
+              "reviews": 540
+            },
+            {
+              "position": 2,
+              "name": "Corinne Denver",
+              "address": "Denver, CO ",
+              "website": "https://www.corinnedenver.com/?utm_source=google&utm_medium=organic&utm_campaign=business_listing",
+              "rating": 4.7,
+              "reviews": 4900
+            },
+            {
+              "position": 3,
+              "name": "Alma Fonda Fina",
+              "address": "Denver, CO ",
+              "website": "https://www.almalohidenver.com/",
+              "rating": 4.8,
+              "reviews": 773
+            }
+          ]
+        },
+        {
+          "keyword": "restaurant delivery near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Vallejo Food Pickup",
+              "address": "Denver, CO ",
+              "website": "https://vallejofood.com/",
+              "rating": 4.2,
+              "reviews": 157
+            },
+            {
+              "position": 2,
+              "name": "Little India Restaurant & Bar",
+              "address": "Denver, CO ",
+              "website": "https://littleindiaofdenver.com/",
+              "rating": 4.2,
+              "reviews": 1900
+            },
+            {
+              "position": 3,
+              "name": "Giordano's",
+              "address": "Denver, CO ",
+              "website": "https://giordanos.com/locations/denver",
+              "rating": 4.2,
+              "reviews": 4000
+            }
+          ]
+        },
+        {
+          "keyword": "restaurant Denver Colorado",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Corinne Denver",
+              "address": "Denver, CO ",
+              "website": "https://www.corinnedenver.com/?utm_source=google&utm_medium=organic&utm_campaign=business_listing",
+              "rating": 4.7,
+              "reviews": 4900
+            },
+            {
+              "position": 2,
+              "name": "Wildflower",
+              "address": "Denver, CO ",
+              "website": "https://www.opentable.com/r/wildflower-denver",
+              "rating": 4.7,
+              "reviews": 540
+            },
+            {
+              "position": 3,
+              "name": "The Velvet Cellar",
+              "address": "Denver, CO ",
+              "website": "https://thevelvetcellar.net/?utm_source=google+business+profile&utm_medium=organic",
+              "rating": 4.7,
+              "reviews": 315
+            }
+          ]
+        },
+        {
+          "keyword": "top restaurant Denver",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Corinne Denver",
+              "address": "Denver, CO ",
+              "website": "https://www.corinnedenver.com/?utm_source=google&utm_medium=organic&utm_campaign=business_listing",
+              "rating": 4.7,
+              "reviews": 4900
+            },
+            {
+              "position": 2,
+              "name": "Wildflower",
+              "address": "Denver, CO ",
+              "website": "https://www.opentable.com/r/wildflower-denver",
+              "rating": 4.7,
+              "reviews": 540
+            },
+            {
+              "position": 3,
+              "name": "Alma Fonda Fina",
+              "address": "Denver, CO ",
+              "website": "https://www.almalohidenver.com/",
+              "rating": 4.8,
+              "reviews": 773
+            }
+          ]
+        },
+        {
+          "keyword": "restaurant restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Corinne Denver",
+              "address": "Denver, CO ",
+              "website": "https://www.corinnedenver.com/?utm_source=google&utm_medium=organic&utm_campaign=business_listing",
+              "rating": 4.7,
+              "reviews": 4900
+            },
+            {
+              "position": 2,
+              "name": "Stout Street Social",
+              "address": "Denver, CO ",
+              "website": "http://www.stoutstsocial.com/",
+              "rating": 4.3,
+              "reviews": 3200
+            },
+            {
+              "position": 3,
+              "name": "Olive & Finch",
+              "address": "Denver, CO ",
+              "website": "https://www.oliveandfinch.com/",
+              "rating": 4,
+              "reviews": 45
+            }
+          ]
+        },
+        {
+          "keyword": "restaurant food Denver",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Olive & Finch",
+              "address": "Denver, CO ",
+              "website": "https://www.oliveandfinch.com/",
+              "rating": 4,
+              "reviews": 45
+            },
+            {
+              "position": 2,
+              "name": "Culinary Dropout",
+              "address": "Denver, CO ",
+              "website": "https://www.culinarydropout.com/locations/denver-co/?utm_source=Google&utm_medium=Organic&utm_campaign=Maps",
+              "rating": 4.4,
+              "reviews": 2100
+            },
+            {
+              "position": 3,
+              "name": "Alma Fonda Fina",
+              "address": "Denver, CO ",
+              "website": "https://www.almalohidenver.com/",
+              "rating": 4.8,
+              "reviews": 773
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"restaurant near me\", \"restaurant\", \"best restaurant Denver\", \"restaurant delivery near me\", \"restaurant Denver Colorado\", \"top restaurant Denver\", \"restaurant restaurant near me\", \"restaurant food Denver\" - optimize Google My Business profile with these keywords",
+        "Low Local Pack visibility (0%) - audit your Google My Business completeness, categories, and local citations"
+      ],
+      "scan_metadata": {
+        "location": "Denver,Colorado,United States",
+        "timestamp": "2025-09-15T09:20:37.645Z",
+        "total_scan_time_ms": 55856
+      }
+    },
+    "competitors": [
+      {
+        "name": "Corinne Denver",
+        "domain": "corinnedenver.com",
+        "performance": 94,
+        "seo": 85,
+        "accessibility": 80,
+        "bestPractices": 89,
+        "overallScore": 87,
+        "rating": 4.7,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 822,
+        "keywords": 34,
+        "domainAuthority": 84,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+150 keywords",
+        "authorityGap": 5,
+        "backlinks": 858
+      },
+      {
+        "name": "Wildflower",
+        "domain": "wildflower.com",
+        "performance": 94,
+        "seo": 85,
+        "accessibility": 80,
+        "bestPractices": 89,
+        "overallScore": 87,
+        "rating": 4.7,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 655,
+        "keywords": 45,
+        "domainAuthority": 86,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+150 keywords",
+        "authorityGap": 5,
+        "backlinks": 1078
+      },
+      {
+        "name": "Culinary Dropout",
+        "domain": "culinarydropout.com",
+        "performance": 88,
+        "seo": 79,
+        "accessibility": 75,
+        "bestPractices": 84,
+        "overallScore": 81,
+        "rating": 4.4,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 874,
+        "keywords": 36,
+        "domainAuthority": 82,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 810
+      },
+      {
+        "name": "Stout Street Social",
+        "domain": "stoutstreetsocial.com",
+        "performance": 86,
+        "seo": 77,
+        "accessibility": 73,
+        "bestPractices": 82,
+        "overallScore": 80,
+        "rating": 4.3,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 933,
+        "keywords": 51,
+        "domainAuthority": 73,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 808
+      },
+      {
+        "name": "Mercantile",
+        "domain": "mercantile.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1070,
+        "keywords": 33,
+        "domainAuthority": 79,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+50 keywords",
+        "authorityGap": 2,
+        "backlinks": 1040
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 70,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-15T09:21:31.009Z",
+    "businessProfile": {
+      "name": "Caitlin's",
+      "address": "4379 E Mississippi Ave, Denver, CO 80246, USA",
+      "rating": 4.4,
+      "reviewCount": 718,
+      "phoneNumber": "(303) 798-6600",
+      "website": "http://www.caitlinsrestaurant.com/",
+      "formatted_address": "4379 E Mississippi Ave, Denver, CO 80246, USA",
+      "address_components": [
+        {
+          "long_name": "4379",
+          "short_name": "4379",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "East Mississippi Avenue",
+          "short_name": "E Mississippi Ave",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Denver",
+          "short_name": "Denver",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Arapahoe County",
+          "short_name": "Arapahoe County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Colorado",
+          "short_name": "CO",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "80246",
+          "short_name": "80246",
+          "types": [
+            "postal_code"
+          ]
+        },
+        {
+          "long_name": "3007",
+          "short_name": "3007",
+          "types": [
+            "postal_code_suffix"
+          ]
+        }
+      ],
+      "state": "Colorado",
+      "city": "Denver",
+      "place_id": "ChIJgXvirdd9bIcRAvpW1BsVV-w",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "reviews": [
+        {
+          "author_name": "Keith Mann",
+          "author_url": "https://www.google.com/maps/contrib/102174102727769679075/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWjw06LdGMm4LtJHWPm7P82mUnHECaCqfYYkXOkKGbMb_TB0XOT=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 1,
+          "relative_time_description": "4 months ago",
+          "text": "Well, I walked in and was greeted and sat down. Ask me if I like something to drink, which was a great start till the server finally decided to come take my order he started with what you have. I was like, \"What  no hello or nice that you're here it was like he really didn't want to be there. Didn't ask if it was my 1st time there or didn't even have any  recommendations from the menu. The host would have been a better server than this guy. Well, the food came out, and it looked good till I tried the steak it had no flavor so much fat on it I could have lube my truck with it. The pork chop was dry and hard and had no flavor. The only thing that was great was the hash browns toast sauage and eggs, and the bacon was amazing. The check came from the host, not the server. I took it, he didn't care about the customer. Would not return here. Sorry, it is what is......",
+          "time": 1745184240,
+          "translated": false
+        },
+        {
+          "author_name": "Eddie Dennis",
+          "author_url": "https://www.google.com/maps/contrib/105358219448221184070/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVPPGB7rS33IeXWhovWvNuBVc9VLLS33jZC5EXTzp9I5keqeZuL=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 3,
+          "relative_time_description": "4 months ago",
+          "text": "Food tastes good but the price is high compared to the portion size you get. If the portions were bigger the price would be justifiable.\n\nThe service was poor, they didn’t even bother to check on us to see if everything was tasting good but they remembered to hand us the check as early as they could without us asking!\n\nThis is the first time I went to a restaurant for breakfast and felt like I had barely eaten anything.",
+          "time": 1746939803,
+          "translated": false
+        },
+        {
+          "author_name": "Antwan",
+          "author_url": "https://www.google.com/maps/contrib/115656167771070483426/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV2i3tUYJYyboEGTxViqBd6p4bVEo4igVQqFvctAGBZqIQcewqc=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 1,
+          "relative_time_description": "2 months ago",
+          "text": "If you're looking for flavor in your food don't visit this place. The prices and the quality of the food being cooked is the same. Find somebody who knows how to cook with flavor and y'all won't have that problem. SMH. No flavor. No nothing tastes very bland and salt and pepper shouldn't be something that you have to add just to have some flavor. It is not made for that 🤦🏿‍♂️",
+          "time": 1750699458,
+          "translated": false
+        },
+        {
+          "author_name": "Jim Conley",
+          "author_url": "https://www.google.com/maps/contrib/115641010597914444874/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLWJdYJFxBZ7aqjkidB1yQqhxI8sIrSgA7GaS5cgXxu6DcbUg=s128-c0x00000000-cc-rp-mo-ba8",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "Colorful breakfast/lunch restaurant with a Mexican slant. Very good omelets and benedicts. The Bell omelet is full of various meats and has a wonderful taste. It comes with hash browns which are covered with cheese and toast. It's a filling breakfast. The coffee is average.\n\nService is fast and friendly. The space is nicely decorated and includes both tables and booths. There are a few TVs. They do have password protected Wi-Fi. There's also a patio out back.\n\nThere's plenty of parking in the lot in front of the restaurant.",
+          "time": 1740415026,
+          "translated": false
+        },
+        {
+          "author_name": "Vincent Rivera",
+          "author_url": "https://www.google.com/maps/contrib/100750089744891910012/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU035D7zIKdNlxUepqhZtv9TGDmueG_NGd5eJxvSbHShcSDNd-L=s128-c0x00000000-cc-rp-mo",
+          "rating": 2,
+          "relative_time_description": "a month ago",
+          "text": "It’s been a bit since we last ate there and it was pretty good. Today was completely different. Service was slow and food was terrible. Tried their smoked burnt pork breakfast. Looks like a pork chop chopped into small burnt dried out pieces. Asked for over easy eggs and got well done eggs. Cheese tasted old. Same with wife’s plate.\nDon’t know what’s going on but that was enough not to go back again.",
+          "time": 1754153851,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116128684501549081458\">D B</a>"
+          ],
+          "photo_reference": "ATKogpdfh4706lxbAmwhvHpipzXDsguz1lSUbXzUp1567JUPcwPbn06PPX0PSNMQHVZ4x3fuve-Ck1BmE0LKSC8KZNqHnic9VSstpzV-3Xipwq9hkr8_IzNRmC54rzZWhswdUxO1TVuB5Ov-HypOBjwNeAaR1ZQ0csnklkbJUUI47lWXrcTV0iaCt4rLU_37lGr8wyKGwWUDLwHL2Lt-AqrUw-D7i6JfpV4tZ_tnpZYls09SXuEGvcHDtkL5wd0-hIXF0uL0HXOZuxZke9-LOf3Ylh9ZbGjU13lGRFnmBvPk1VVdf4utogouGOiFf0dyl8ncjzm4Qjfj68OEdwwsK6FCzuy00hqDLxl48zEtqjrQTWGcfpU6QKw3roJVSd3-wgrxN10YOOVStUDdjTfjzPkDsn_uSRH5jODaMvOT7f1uvHaQXcJJ",
+          "width": 3024
+        },
+        {
+          "height": 3600,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105358219448221184070\">Eddie Dennis</a>"
+          ],
+          "photo_reference": "ATKogpdHBMjPW3rWZdx1oVsfG3i2VEP5AcjAYEUFYh2V3itorfzlC2zAn4GtGO7fl9Ps1TWqAhKtue8ns0JAurvF3UBlgincQWEdv4Wxt3SG4jL7BTmVas5j5WcwrgFEnc4NktEaH0tARn2DK-1dRwQcvqT_C3UQ0HmZ_Mw41AGk1Tu35QYoAlhsWCuzvWQgO-9pbutqsIXClktxpo9n6C3_FTIr1eu6skxmQx_LSX3rqhr0xKyrtgcEO7lgWICwGoFIwRH7EljAAUsLZwPDHmrQw8qnf6VR4mz-dmpuflpCyysas_QtOvlIGljRG72bhkQ5pB5v2XmQGo9pvrAr33PkMubnEgSR_Y7vYtEvpCyH1hqd9fM1YIWSE4la52xHSbxn331sR_ZSpKMpf0__DXK4Yz1MGbC4k7cbDYC5rgwJYg01Cw",
+          "width": 4800
+        },
+        {
+          "height": 4608,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115641010597914444874\">Jim Conley</a>"
+          ],
+          "photo_reference": "ATKogpdgMSSH4NevT-459Izcf1rUfYSiNQdlyU9YXz3SFVZw626zd-Oca2LA6-eBmT3dKFJbhRrVi4PR0RGgumP_TMo2GxvtC05KqRer9jtbrJAjYPjMYX_mhBGCeKBu2QbX9r_Ac7aGCtgY0si1XncF-SdovbjGn5afhCucLbcD4nifzXe5_zyw_RISlvhL8c-9BAj4-0ujcRHTy7ioMy2TuRRVfUez4TmozLvBiWnYvC1nn5_Rdn7UqFUnLQvWRgHip9bGpGrRFtRfWpKSda-0_Pzit9iOs7fug5voRomfTiEpYSB34vPqySSXgNBcoD3ZCtDiwavFTVfTOVv8HG3OGmVt3sf6-I0YAocQ07Dmb5fvJcYZu3aOdWeO6quwPO2LDg-pWafIA-Y-L3kNNqGwClYrD2afy0hRSQK0ptzOnk0NFck",
+          "width": 3456
+        },
+        {
+          "height": 4080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107653881630530482111\">Mirandi McCormick</a>"
+          ],
+          "photo_reference": "ATKogpdbRcVcYqehcvxGGB7qZ_3J6HT9_0P_AZsuA7UEN7U7tgn9JyNRiBUMSmRaREhND5CJJ5yQARa6vDN-YqF7UMZkk7QqtGPaC2Hn7lzyIGRi0bHzqrzTUXmqdExMLBuvtmZQAZj11nctd4hp9tExQz8LtcLmkTPxVFp84agOU_cq3MOIFQYIXSjsVFzPNGNAfV8D5DE5nFIyrRphGDlZ5VwVGHnafzG5oWsdFFIcvLSveh62u7HixAmzYciXA4cexef7U9_8PSyq5YQFs3tz4-WD3h67Rc5Gco5RJoE4ClzS9lvv_Mmp8IDX9SuRZV9jrQ5n0PJrl1CsgcUt245kIG7rzJp1zi4Wv4IPRLvYt6UnqvJQyRjE3Rg5KLy6Hh648AvU8FNzF6rE8RCS5qkvEhSBq9zlTi-RN111v1fr7USXfQ",
+          "width": 3072
+        },
+        {
+          "height": 4080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115656167771070483426\">Antwan</a>"
+          ],
+          "photo_reference": "ATKogpd-lzu0q-ymdwlyRv_r5WhpRIw84uVHFdurbXt962_QkSA9eNUBvPum2ETwuuhVCscix-OlzOFO77yBSNf-or6N16z0I90Oy9CJ7F1vR-tZbC77AUfZODpJD1V7g24xccvabfm20MYwiDkt--3DxFr1guLKeW4u8BJZsRNYegA_I4mGn2mCQ6Kxt8arGIkq4aheh30XTu4YTy6e8L9H7oiUHlHgtgrC35wGJ7takydoLoghrYbehCVppfOsl5Ue1qHkPZBZszCK0C7KRejjo7atmm5NYNFCB-sKG94gWH-X3e8uRVgM4DgjzbpAJXfV4sDZw37o9Ih_djsHkQ3tsoB2_JFD29mPRi6vTMzwp1dBW-_DUBP07luDqEI3tfsYIrym_4dpPVHsB0-1Sum-7tuykUJP0bcCnxcajKIatT9CPQA1CT0lzR8bwYUtmAMB",
+          "width": 3072
+        },
+        {
+          "height": 3072,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110509241540952278828\">Pete Marquez</a>"
+          ],
+          "photo_reference": "ATKogpfaZOlDzpLKHzLBwgOdXGIslfdPV9jCNS320iOD2-n_mD-6Jyrt7_ZDLWRyx_s9SIRfFTVzS5c7cjCHYXd1WyxwlNEJyMiaa8qiynXl7Mkd5hVzQ8c1cgFLcL97V2CgAOnfoVPr8xmbdqQ5H7YzkQdN5KX_M6GcvkR0fccBV5tBw0gdwmWmFbcS8pNHxl7jrkBoBkwCa4zEx1H4r8sUOA2ljvKPBjzWbA9jkB76BdQkfKQ_m8C8io92-nvA4MjaeqKZstWYQhVEAIz7SYvPc6tEQ7lqVOtiRbMymLGg69btaYmlVyen-Vbxu0dvkdT2L1Q7F3hqDHNjafhm7zVD46BPq5ltWSdUfrKnC5tYmWPpvehi65zbSAozANIaaS5o87RQOVBp7HrqX-9nVkQN2LcImQUjNbbA3jASwau89h0-0jAdfg23ZNx1yWYeQofP",
+          "width": 4080
+        },
+        {
+          "height": 4608,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115641010597914444874\">Jim Conley</a>"
+          ],
+          "photo_reference": "ATKogpdP8g4dH3a4f3MvB0KEGou5KkNWxh-tP-TvViKsu-Hc8LoaMXPcbazCtqQGv7yP6druvwxrglpiinTMLa5Bz30IoQNxb6eDpu_vnxiZkDSfpiGshlRIcqfgpKOWXBjVd8IfsQyjVAvDYxYF4Xowv6mMzU7Y3q1byafclAhwcuav6m1lMwBs3bqrHxTODclidZxXwarxIh38jlH5s42LXJQFk6dKTmSIiEhJvepg0vvxUs4f6Wj_LrQC_ZT53ArxfrR5gGxVR7aTNmpEryHIw4qWcCS7t5EGk-MOqI8_3JNbjKk6Ys_gSxsheJODx3cVIDHdy1CfgtwaHy8Mb2wPg-ExfSvqg8VMkTBMrHY-_u5L3W9HehU2BWzzDyCR35A1Fl8TopuuD0RUWnqP2sIZncFoQf0FM_CK6pGnNbm-vZDz2g",
+          "width": 3456
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108612888429046736052\">Melissa McBride</a>"
+          ],
+          "photo_reference": "ATKogpdd4X13IF1gBUcAiPsZAct1XA7bMqU8lWlG7m9X4mcMhpVtdWCYkTdW21IlHZiQmhXmDWC4btozGxBr6GrKHcDviriQXd6p_3yss7LYudALDvDfcUuG3DSbAOp7-mUsgJlPpr58hO7OCCWCuUlQywM8ynddAf6xcDdoTANvrqi-z7QnAo3gonG4i_TfeKrWjKVNk-38ComU_OnfL0aZGjCdRnsQ1eOIKk4-RVBt4sRztmMxUtsDSxc226XcNXTYDGvUpKiOYl15ON2UAzuQV2joCoK1-8rmIYVP8smIH5jEgO4yj62VuM4XLEiM1DrswSH2g_ecNC6lZwoLMvSwnm_UZChYbUT4EfeK3c9gS6nLxbt2b151gwZGJTAZNxvMpkQAC8tyrQFJVgMDQR1LrWvvQ_Bdse66TNUpA2eLvHssLQ",
+          "width": 3024
+        },
+        {
+          "height": 3036,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/106566589545410743392\">Marishka Df</a>"
+          ],
+          "photo_reference": "ATKogpdBrQYLYh7swsrJpZWjkXTUlqRGpTmq4UqTi1n52uS4Qp6nxg7MtEs4tWa8VPUjvyiCRT2qF9Asbev1hs7LtyZoVk11qiG1R4ACbN9Pocsdnf955Hr2_tifAGTCGZ_YOLJuatIzIfuLG7Fokd-Ibfyl2MDKjGW7bBHPFFglsGQBOSMM33VCl_Wi0mhij67er3tPUsuPja8n7qmCxwzdqDSNvZ3otSGtNxogq1YQdrJFjjOp09OBgePIrb5Uy1ui9kisjxhEpsjnrX7pTMMOl4sBX0rHZTkblSswyu7JA7yOVJrJWLNkAYLYnkAErHB9g1fLHh074yuo62dPy-F871iWfEh6eBm-gyLCmnB11Rj_TFTlQ28RX206Q2vK-pJPr5Svu8PVf_JO0jAsjjrU-VlcVwfs10NcQw6iEy16kzH0W2AG",
+          "width": 4048
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108838930871082801477\">Julie Stoltman</a>"
+          ],
+          "photo_reference": "ATKogpeLiZftSNp6S0_7sWyIk4QeZobGkWDpg__to2wy8xwSUeymUAvigrRpq1SMGQ-iSKjdGV64_AeEEha6Tyu7Do8k5n8YUhNk2EODW8vJwbWBU_Dgh3t8wefP7RqdiAJpJU63uaQ6gK4Jc-f_0VNxPzazhwh-FfoBGxDZuxFjGuLvnzByNg61oky6e1PnqPbuWWDl1QL9EG2DL8xH4ftD5tN_b0Dbc5I7K7iSidrFwI1iz_lDbORVdmqYWIfc4xiDO3C37_-DIL6fTcuofKXKG1EVcREnn7Nk57BB_5JU2UMXh6T5kg7Io10S7r2dOajQhijuM9SE_IMas46GZNZO4Q6resJ1eaAW4iHltnPm-igrcnNy_Xic8PFazaFW8cfOk1ZsWF517o08x3w4MPa_ZUFaVx0Py-1OzCgSdDBfMcU",
+          "width": 3024
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1400"
+            },
+            "open": {
+              "day": 0,
+              "time": "0700"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1400"
+            },
+            "open": {
+              "day": 1,
+              "time": "0700"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1400"
+            },
+            "open": {
+              "day": 2,
+              "time": "0700"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1400"
+            },
+            "open": {
+              "day": 3,
+              "time": "0700"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1400"
+            },
+            "open": {
+              "day": 4,
+              "time": "0700"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1400"
+            },
+            "open": {
+              "day": 5,
+              "time": "0700"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1400"
+            },
+            "open": {
+              "day": 6,
+              "time": "0700"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 7:00 AM – 2:00 PM",
+          "Tuesday: 7:00 AM – 2:00 PM",
+          "Wednesday: 7:00 AM – 2:00 PM",
+          "Thursday: 7:00 AM – 2:00 PM",
+          "Friday: 7:00 AM – 2:00 PM",
+          "Saturday: 7:00 AM – 2:00 PM",
+          "Sunday: 7:00 AM – 2:00 PM"
+        ]
+      },
+      "price_level": 1,
+      "editorial_summary": {
+        "language": "en",
+        "overview": "Simple place with a roomy patio fixing American & Mexican breakfast & lunch including green chili."
+      },
+      "url": "https://maps.google.com/?cid=17030103725195590146",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcqBRaRqzYMrGHDrWQNRhdsGltH1KD_wj_25dK61lrV32o9seGXFIkd9ulMKmEAA8SkogmTUF7J7B_kEVtziu72InHXs_NfuXLC0CkY8VfD9kWFRc9qqovXxP7bW4seEzsErCCdUc_4NDrlqtD5GZN2UdVikjFQsXkDZStGwlQfFUllxi3thdhmfM2hrcWf_FAD9mIfymgQFpnc0uDUFHkENkbS5Llhaal2JyV_ED5B-1sRHIemjEPsgL3yrjRj6gXN2AZjutLzycwl1qyeZkxP9AlfpVzAxiEjfj2IfqbWJjWTOtShR9qN33gcKzm4x4RNcURziMqxNW-6J_4-Wa3D1ZmzaLzWCGW5yxWfALIdwai3C0er9Jisy1v8fA4kRgHcZXm-AFsv1b45iysThWgBD0UY5ng4yFlZszE-O5IUqt1t&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfFY_KbBigei9WTeICwwHZOhHMe5Q3bjbvxEVfSDzbURby3G9ptYQdyMrtW03c0qjJ2ZDisNXI0q_KgZrs0Q_euC616obqqc6SWQygYLIuI5nGWFR1EoGT-gpoQK29FYLr9YFcx5XXJa4zdmsBY-qP7oVza0wLLq9SpAT1ssMv7grwocCXxkfT_IK1tvilvUu7AKaUAZoCeZONnrRX7iW8i5Epz5qWXTbnxPo2X_GX4_kvw05QfXNnrvILy2SZ03Kntf-xxz-w2wbX9nzGG79JYOW--KvH84sq763XVhPrqj7D8JAZvYoJOPgr3vySrlzBlnPzr_4be07Q8ZntQsEFHFwv5RcZf6E8OB_aW2ePQNunmMfXQdeaVwLqhC0HFsMtBXTT2ceIaOzEmZNTu4EGFyIASP5DF6EQAFx_UFtzmLA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpeIC9EoKir8dJg3LD2G-AQlueiqGowizRJxr-vFbv74E2b1fmD44-H42mNGQ_Axi8xNIXA9jcm6qtl87g0d1wWHHO0LYH6auVH4vAOLsvax2qa9Zg5WRSv0kh_NXzCNZatzOgJqt9SfPbLh2mfFgVNUzF8Tf0KjIFyiAEeKdUOWYBBgNBNMAOU3DZm98coyekg_YvmUKS4vQmvLCefiZ1emGEtqm8hskLK6ji9esaEWL2hltqgJeisugvC97jteeH75FTAGW1uaTKw3qV59MQ2Pphvyd5aRxvAHzcUvmHxMhF5XI6yIWI_4YoENiwLgqDO52iNchPNj_sRzGTpPmadEn_GZWd2FFneQ8Q2IKtnAL-HjNYg5zFy50Z23_Uy7S9910VkAT84uDNeJCoyQ5WZ1rJXKaVmTSaauuyGdRGU9Bb4&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpctVrB930k6dPjV3cXlqFZeNin9oCtcseQueFsquo3_GqhMKgZBpxMMbKHj9lP6TI1RnsZfyCdrgPZJzYGO02uQAqeM28pj6ynE-iUdYlsuH-EVNfyqjtqasPh3gFdFX69eaY-rNtwZF6y6VFAQpN69epJ1ypMawMYT5fUIaWp-vuKDwyj093KtWSWw8I-gOeXP7ZcvsmQWAZCi-bGy1xGHf4Tr-HIOWFB6ZAyHKwDDjFR_GVnM95UNw_TFaOtncXdG6Tbsa6-3Db235T5X8-pZol1PdzbvCqefRJkn8JHb3ju-EVpSP4gA8JXEyBPLZ5gCwodxEbbxDouMu9rHNA3pRMQednWL7IGmVjQcFM1gczV21ZbO4-6TVFF1VFN8udI8mYhdiuRTBEVoekgZ8MmvhDBzETEVuUC6AdjG4Aiwcg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdwL4e5EcbMz2ZkF6I0yksEPkwWZxx9_N5CEbNregDBIfsylrZHK5gfptjkNy8usofXZkTZdW-9XI60uFKw0sPoAYj-XUIR0AqDS0Tk0Q-MYaJ5ZdviNgiTf6i63HOW2TGvaIe0rdULOIneBLRWq7kfYBtzXpKLE2qg7socROQWNk-GShT7rzVfpg5HsEqN59luWuEOyIKnVTaVSM5jPrRgPUn-BmVqoEnCWzNqfXwkrXSQheWx65bnaKQv5BmR4ZcSARl-M-OG0ThcVI9nvRud8MJKX0NNDYnRCSCa9wmI1W8jXCCGMLNNSNo_fq3duEyMGHJUzDw_v9nITPnbHwlMOPczykai5sQa9HM0y6wzChDgyI7xfPF1hIzn8_Ix1tWcOYwaDK8iBtAh1K4Kp4P0IrqqlBznp-MZw7jjKIlt30nx2We6iR12W1-T6Ng3&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfCYQKhLKfNU19jVIXCjH5z8y1h0uPQ2EmVEcYpZl6mdIvdvQ1lBNumBXVYa1L50Nn5ddGvdF38zgILsg_Na6E3Eaf4yCbVSLchO3o2Lj45yHrJ5p_o2FXPybWkAOlK6kTS7GOHscEgCZsrBHGcjA-EzS7BewwqA8Xe87QgM-QQPSTU74W4tIW0f1ctx_SjKkcC2wEEX_iNfqn-8IYW_lum9302CxJ73mXS-JbpKj2eSMsI_uLRdEEeWmUbLXCiji5msO9FPO3hHwkLbbIxU0sKey02k4qR5UD8Y5MNp9-XE_hg37Am8q9dOM25GoqRXO_wgKcGi1XNPChbOXQ632mS-RUvjOu36HKwd2jDqhp-xmOpNd1beCTkNqwO2kw6NEgs2YM5ch-ImAMN_V8Gcw7P45SpsrWilHP7mik-VlARedUb_If573vHy8SwMbaP&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcJgRFsxGrr-I-V-_Z6C3SFZA69bn2wbk8fxwGBTfVUMlvJXZO-IPcldYHtXjl9ypoXSg-grCxdM-nyDfCKBKdQLk-BIuU8qtuwWA9d4GtopYCPCqq1ahJHI_T8JICMMaIPkwIlOn6yuH-VAytY_99KLVOjIPQkqg39xNtgOxNyViZ5arqEqeiUiPvzP9NkEyYtg0QSTTpkbQKsTe1NK73JeLiwroh47Bw1UjG2XUP8bP1u11eNA0nDcQ9LCclzSQlv1h1n5xf0sFORdKwK-CfNN2matPnFPVKoS4V6aBezTMt9um-_pS241TZkVah4uoQDBvXKAHANnYhj1DTFhsSHk1IuwLW9fh4IZ3wuQ0vUXTCmfQjfr95RybI2i_oe7hTJ9yKKxnv6F2sqEiuTvjhIv07gyI9LCCCFNIrpBmdqPQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpc_JZPiUWUAorm9XcpOCfYPtqNdquR6dai4ip8Bm9xco0V-RjZbEplVpQ3HXJj1gTgXtt6ghQ4uHLH4GUq1PhYN6bd2tLzANQFtH4fGs7_CjUUV2VU2E-Yvdy2ChfMWI7GFKPbvne8Q9---ZU1h24WIzaEdL8Zf4LkVZ-WU5tHsX5_AF5_xWy0ib_RlpXEPs2lTediHWgF6KCcTRW6W4yhlipSS_7YnIAeFqPY86oIrjxa7nV6LMq4owOQwKKdU3xfJLfgcgare8lVBgCrdqhF8m2NXwi1lLA8uMtsUjtHO0AeEktnD1rZMQI_6KUJGdjLFxRayazmEsH6fdNcF_WlI9mFKFfN33bQheY-OBq6XVULGMK0w80PqaNBaVtJF9M4pA6IpRMDiECiTj68ql_okBc1tP1q40t46bznKjtGXXA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdJjHZQlGPu74OqA8kLHuKB9uIA4Fqjfbkrf8K4gRfrm2iEnNshMDKEapyZSl5YuA_1gb1h9EPI6196hoGPsSIntITqobxlOCFJ4l3nQI_ViCUSWDktBwLCMo6iptJ5GoqMOWKgCzXVPZqHf1PfzftjDn-OOd544K2aPK3SZ22jchaoIt9plQsIFDDliaoBByXU68-axRVGimUBtSZN5157yjGPs4nt9G_zjBfu512MoMOb7IuAPahw_Gy0oPsZqXAKiRmhuK0Xtxfmlcu2ftncawlyWDstql4C3XmG7qqGjIQIfI49-jaLOW6LXCD9zIPO38_d9W8_lHzLZgcdSeQoHTuvGWZazCVqNbKnEGVEQSJtiIHZnCNbKJHGI4P_26GWRFhBQIKmTlcfT1pBe876JP9WolYAgizuBPJoom5LkNAd&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdvrV0ROB693OrhPYJ8iqp3GLUDbYeccUMUltZqJxlJ0ZgndGuWL0de0TjSmCMjS10bIFWB2FnZpdUKTV1ckBTBB3B3ql4KhCIQAwYAxxCU5Z6IgKxRD5NOTT2J_q07SQUxt_fdGcK4pXp2bu1CExKPzZycSwjAwHfy-OfbQLyxXfV7mhpiHGfmBDH-4slVoLPXSNT0sPYcBy0NDpWj6rDuKBgKsyJRz4evdRZAOkhchqW_dGamUmSvmeFwsQ8q_fHAX_VbLsadYkvWWCdU7-7aTpvn-86I1h2h5YbTAc8O6Kt1myYGSuw6ITdWmtNEnnarQJ9RliktFxSoIVNJyY8dgssnV2pj_rAR23OouBvbyaJo72HLMFMw_ef5nf8gADwtcBBT6MR_y8xdaAj81vQKw-ayvAWqnWazLmNFgkk&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 49,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": false,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 88,
+      "totalReviews": 718,
+      "averageRating": 4.4,
+      "sentimentBreakdown": {
+        "positive": 71,
+        "neutral": 7,
+        "negative": 22
+      },
+      "reviewSources": [
+        "Google Places API (Apify Enhanced)"
+      ],
+      "keyThemes": [
+        "Portion Size",
+        "Service",
+        "Wait Time",
+        "Food Quality",
+        "Pricing",
+        "Cleanliness",
+        "Location",
+        "Atmosphere"
+      ],
+      "recentReviews": [
+        {
+          "rating": 1,
+          "text": "Well for 1 they changed the menu then now portions are smaller and my main complaint is they use no sausage in there gravy for biscuits and gravy! I asked for biscuits and gravy and it's the same white gravy they put on chicken fried steak! Do you all need a chef that can make the best gravy ever?",
+          "platform": "Google Places (Apify)",
+          "sentiment": "negative"
+        },
+        {
+          "rating": 1,
+          "text": "Can’t rate anything but service as never even had order taken other than coffee after 30 minutes. People came after, they were served…",
+          "platform": "Google Places (Apify)",
+          "sentiment": "negative"
+        },
+        {
+          "rating": 5,
+          "text": "Great breakfasts both American and Texmex.  Also has great burgers and other Texmex and American options",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 3,
+          "text": "Ordered breakfast to go and found our hash brown potatoes woefully burnt and inedible. Have been here several times previously without issue but this time was different. The service is always great and this time was no exception as management quickly issued complimentary meal vouchers to compensate for what hopefully is a one time issue with the burnt food.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 2,
+          "text": "It’s been a bit since we last ate there and it was pretty good. Today was completely different. Service was slow and food was terrible. Tried their smoked burnt pork breakfast. Looks like a pork chop chopped into small burnt dried out pieces. Asked for over easy eggs and got well done eggs. Cheese tasted old. Same with wife’s plate.\nDon’t know what’s going on but that was enough not to go back again.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "negative"
+        },
+        {
+          "rating": 2,
+          "text": "Bland and cheap food, overpriced. Steak sandwich is just a cheap thin piece of steak that they don't even chop up. $17. Kinda crazy",
+          "platform": "Google Places (Apify)",
+          "sentiment": "negative"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Hatch green chili in the chicken sandwich, amazing!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Great local spot with lots of delicious options. Very hearty food and always very tasty. It's my go to hangover cure! The staff are all very friendly too",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        }
+      ],
+      "detailedReviews": [
+        {
+          "author": "Allen Raymond",
+          "rating": 1,
+          "text": "Well for 1 they changed the menu then now portions are smaller and my main complaint is they use no sausage in there gravy for biscuits and gravy! I asked for biscuits and gravy and it's the same white gravy they put on chicken fried steak! Do you all need a chef that can make the best gravy ever?",
+          "date": "2025-09-13T19:36:07.954Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xGZlp6bHdjREpHYVVVek16RXpjMGRFV2t0aFoyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIehazslCXaQ4U8vf4KvSVrifcRBW_MkLzu6uPh9M5gTTBM9g=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101219352466219101111?hl=en",
+          "reviewerNumberOfReviews": 17,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Lee Carpenter",
+          "rating": 1,
+          "text": "Can’t rate anything but service as never even had order taken other than coffee after 30 minutes. People came after, they were served…",
+          "date": "2025-08-30T17:07:51.730Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2kxQlkzcEthRTQzZGxCVWFYQlBTMEZ2UkhadFdIYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJhl_L_swImQJnCZi7LUsQBInenmFCg5BiWa27d_STB2qs3PQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109744569859841179649?hl=en",
+          "reviewerNumberOfReviews": 31,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Dennis Nakamura",
+          "rating": 5,
+          "text": "Great breakfasts both American and Texmex.  Also has great burgers and other Texmex and American options",
+          "date": "2025-08-17T19:54:45.628Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VKN202N0RGd3RtcXh3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWBJt6UqsCd55-T67pNJV23_S7ytFH-OzlO2lG2xB8kXsTb5OKO=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112959140018154912917?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jim Gordon",
+          "rating": 3,
+          "text": "Ordered breakfast to go and found our hash brown potatoes woefully burnt and inedible. Have been here several times previously without issue but this time was different. The service is always great and this time was no exception as management quickly issued complimentary meal vouchers to compensate for what hopefully is a one time issue with the burnt food.",
+          "date": "2025-08-09T16:12:54.692Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25nMlNXbE9TSEZRZG5OUk9HTnpVWEZoUlRCSlRIYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXTgYCZ_D8IrBrZhWGW7HUeyUoMDhKoEkk4eZ9idrrmrNQ0kEAK=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107355983221296405133?hl=en",
+          "reviewerNumberOfReviews": 30,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Vincent Rivera",
+          "rating": 2,
+          "text": "It’s been a bit since we last ate there and it was pretty good. Today was completely different. Service was slow and food was terrible. Tried their smoked burnt pork breakfast. Looks like a pork chop chopped into small burnt dried out pieces. Asked for over easy eggs and got well done eggs. Cheese tasted old. Same with wife’s plate.\nDon’t know what’s going on but that was enough not to go back again.",
+          "date": "2025-08-02T16:57:31.555Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tOaVQyazJVVkl6WDNWTk9YRmZSazlMVlY5d0xVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU035D7zIKdNlxUepqhZtv9TGDmueG_NGd5eJxvSbHShcSDNd-L=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100750089744891910012?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Matt Tebbetts",
+          "rating": 2,
+          "text": "Bland and cheap food, overpriced. Steak sandwich is just a cheap thin piece of steak that they don't even chop up. $17. Kinda crazy",
+          "date": "2025-07-31T17:45:26.715Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25kcVZYQnZNazVUU21sVFNUaENTa0ZoZUd4WlExRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVO_V_m1SgfEar9WS-m2dui3R2veiGO3_DVIHPCwuRbLl4lbwYVxQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101902936650768164984?hl=en",
+          "reviewerNumberOfReviews": 47,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Marie Barker",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-26T19:46:50.779Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT20xRk5tUjZNemRuWjBwRmQxVlViRXh2YWtkd1dVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWxRI0GCUzlGjB_vmWvxOgoveflmTY_DHp0AbMdSMoRsZ46PlH8=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109098598073462768027?hl=en",
+          "reviewerNumberOfReviews": 39,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mandy Simmons",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-12T04:58:30.216Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21aS2IySTRYM1ZmU1hObWNXZFNia3B1TkRGUlUzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU7CoxStIgZGbuk6jorXLBHj62oLXvEPyeKsBEqC6kHMQrrxP4=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102739453074690641914?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Chris G",
+          "rating": 5,
+          "text": "Hatch green chili in the chicken sandwich, amazing!",
+          "date": "2025-07-03T18:21:20.134Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2taelF6RjZiWFpYT0Zod2MxOVRhRGhaTm5aRGFrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIRiDrmXzmNthrGQ_Y1qvjzzDunIw3HpBxXwzZRciHsDS2TFg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101056176989280212514?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "John Glover",
+          "rating": 5,
+          "text": "Great local spot with lots of delicious options. Very hearty food and always very tasty. It's my go to hangover cure! The staff are all very friendly too",
+          "date": "2025-06-28T15:24:40.955Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2kxT1gwZGhVa2xZVFUxSVJGQm9YM1o2WW1SdFQwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXxRMkpPDSejCTQhnBKpdTZpcVOTTitW2xE33Fy8TkJSnqnAXZI=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102221652375804675520?hl=en",
+          "reviewerNumberOfReviews": 15,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Connie Morris",
+          "rating": 1,
+          "text": "Had breakfast there. The tea was terrible and the hasbrowns just as bad. Two breakfast plates a tea and coffee was 50 dollars. Way overpriced for mediocre food.",
+          "date": "2025-06-26T06:46:55.810Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t4V05URnNkMFp6WmxkcVRYZENVM0ExYlV4NVVtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX0TfXlgfADxIJ3rOG_rwLT4-kJdb7BZIhGIduBs0j8FvFFTRj1_A=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110187337311427564003?hl=en",
+          "reviewerNumberOfReviews": 97,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Pamela Brown",
+          "rating": 1,
+          "text": "Ordered takeout and order was very wrong.  They had an opportunity to fix it and still didn’t get it right.",
+          "date": "2025-06-24T05:21:18.938Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xkaU9VWnZTbDl2TFRSd09HdGFTWEpNVVRkRGRtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKvIARtmFeYPP3lcVVLIkfgJcHaAOblbLh8rHgM_9u85s8FYw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110631817426911657334?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Antwan",
+          "rating": 1,
+          "text": "If you're looking for flavor in your food don't visit this place. The prices and the quality of the food being cooked is the same. Find somebody who knows how to cook with flavor and y'all won't have that problem. SMH. No flavor. No nothing tastes very bland and salt and pepper shouldn't be something that you have to add just to have some flavor. It is not made for that 🤦🏿‍♂️",
+          "date": "2025-06-23T17:24:18.692Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21wbFZtcHdWbXRVVkRKV2EyTjJaRzkyU0hwU1pVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV2i3tUYJYyboEGTxViqBd6p4bVEo4igVQqFvctAGBZqIQcewqc=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115656167771070483426?hl=en",
+          "reviewerNumberOfReviews": 33,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Charry Thomas",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-22T12:19:55.755Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tKNk9XbEJXazh4ZEVjeFVXc3hkbUpRTWxKUWMyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLsILUYCNpXAm_nZ5fL3iZhSGOf3L9M89X5vETzy2Su49bo=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106839880719375978291?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Skip Garman",
+          "rating": 5,
+          "text": "I love this place. It's gonna run you about $20 a person, but that's life in the 2020s... good, fresh food is worth it. The turkey melt and the breakfast chimi... delicious.\nI'm in Denver for 6 months and while I'm here, Caitlin's is my joint.",
+          "date": "2025-06-14T22:38:37.251Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xwT2JtbGFOMU4xYjJWbWMyWnhYMU16VVd0NVgwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWTEn3xb9FMGVKusGQ5cKzPCXVEm1yXsu_MWeQRIxoghkmKXCL8=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110015301586110880352?hl=en",
+          "reviewerNumberOfReviews": 35,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Royal",
+          "rating": 5,
+          "text": "This place is absolutely amazing with the best food and service in Denver! Ricky is always there to greet you with a smile and make you feel like family! It is a must stop for anyone who is visiting the area, and our favorite local restaurant!",
+          "date": "2025-06-09T17:11:56.032Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25oQ2VWRmFlRFpTVTBoYVdIRXdiMEpRZWpabE5HYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLJV1KjRqgyW2t-waIBGCSe83QORjAjWxGkjilznOOKNxykFw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105394328391249864120?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mark Peterson",
+          "rating": 5,
+          "text": "Great breakfast spot with old time diner feel!",
+          "date": "2025-06-03T14:12:54.674Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VMbXMxY0syeDlid0RBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIRHD-oswCicdNaX2CCy-9ljwPcc4YJyr3_tFRVslUdndb2UQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114945166096054065842?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Steve Lavin",
+          "rating": 5,
+          "text": "Excellent breakfast. Cynthia was a great waitress, friendly and efficient.",
+          "date": "2025-06-02T16:49:36.262Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VQdU41YWVYcWJfMmZ3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIofMGN_ZELN-qkQ41rbv0h43kodIBRqI90DCXOgro_fflXM__8=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103326811560449608381?hl=en",
+          "reviewerNumberOfReviews": 35,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tracey",
+          "rating": 1,
+          "text": "The service was not that great. I ordered the breakfast burrito with the carne adovada. The carne adovada was like a pork chop not tender as one would expect. I had red and green chile on my burrito. The burrito had no flavor at all, I kept putting salt and pepper on it. On top of all that the prices were kind of high in my opinion.",
+          "date": "2025-05-31T19:59:21.009Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VOSG1tYnE0eGFhU2l3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJWnRaxXFbt0EsoA6M9dpR0D80xkpdzkBw08q3es8kxbxuFNPs=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113130230003188612012?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Laila Alizadeh",
+          "rating": 1,
+          "text": "My wife ordered us breakfast from here this morning...over $40 for two people. They forgot to bring a drink and then put 200 pieces of tomatoes in my omelet that was to have NO TOMATO. The hashbrown was burnt to hell and hard and has no seasoning. It also was thrown together like slop. Will never order from here again.  I could have got my order correct at IHOP and enjoyed a breakfast for way less $. Threw it in the trash.",
+          "date": "2025-05-31T17:01:16.039Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VQLXVsTHlGX3J2Zzl3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLPKckri0-oYtZ13XtIEAZ76UgWtKwHcGRD7NIQPf2OP_LZDA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112130845316162069203?hl=en",
+          "reviewerNumberOfReviews": 45,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Corey Chandler",
+          "rating": 2,
+          "text": "Had a breakfast burrito was pretty tasteless. Ordered Togo no silverware or napkins for a 17 dollar burrito. Green chili is void of all flavor taste like thick corn starch with chicken water.  I recommend salt on everything and taking people's purchases a little more serious have some pride in your work.",
+          "date": "2025-05-19T17:10:03.781Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VNN0UwWlRwZ0tmSmNBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKZ-pZKz_hz4_8WyuSPXdSbyht85UjmgEgobEOllv_sGhixbQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115474392065257704101?hl=en",
+          "reviewerNumberOfReviews": 93,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Mark Cole",
+          "rating": 5,
+          "text": "Had never heard of this place before, now I’m glad I found it. Hash browns 100 % better than Waffle House. Will definitely be back!",
+          "date": "2025-05-17T16:11:52.895Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VMX3ExY21kNUx6Smp3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVqt_1qtx2ElLTMGktusL8EQzL8T3wxHd_Wo6ZHsMG4Evg-GMhQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111145590407546114586?hl=en",
+          "reviewerNumberOfReviews": 34,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Eddie Dennis",
+          "rating": 3,
+          "text": "Food tastes good but the price is high compared to the portion size you get. If the portions were bigger the price would be justifiable.\n\nThe service was poor, they didn’t even bother to check on us to see if everything was tasting good but they remembered to hand us the check as early as they could without us asking!\n\nThis is the first time I went to a restaurant for breakfast and felt like I had barely eaten anything.",
+          "date": "2025-05-11T05:03:23.480Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VPcUtuNUtVcHRQTDZ3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVPPGB7rS33IeXWhovWvNuBVc9VLLS33jZC5EXTzp9I5keqeZuL=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105358219448221184070?hl=en",
+          "reviewerNumberOfReviews": 129,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Travis",
+          "rating": 5,
+          "text": "Great people, food and service. They have some of the cleanest Windows too 😉",
+          "date": "2025-05-07T13:47:55.922Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VKRFNxUHVPMG9pQzhRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXsFaQ2wRPZ6qwruaIMFQGI8d-OPKEYaTSQtfVOjKBO3lPOQ1T6=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108025078500387172091?hl=en",
+          "reviewerNumberOfReviews": 55,
+          "sentiment": "positive"
+        },
+        {
+          "author": "David Logan",
+          "rating": 3,
+          "text": "Great restaurant with good food. I’ve come here many times over the years, but due to their prices I can no longer justify it. I wish the business well, but $25 for a breakfast burrito and a coffee just isn’t worth it even when the food is good.",
+          "date": "2025-04-28T18:04:05.029Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURvODZTZnZ3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocILiSNcsZbEQIDuv0YttbSoIX5ZJAHf3N5Dr3nhDyA4yuLWsg=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112605858540650703306?hl=en",
+          "reviewerNumberOfReviews": 21,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Keith Mann",
+          "rating": 1,
+          "text": "Well, I walked in and was greeted and sat down. Ask me if I like something to drink, which was a great start till the server finally decided to come take my order he started with what you have. I was like, \"What  no hello or nice that you're here it was like he really didn't want to be there. Didn't ask if it was my 1st time there or didn't even have any  recommendations from the menu. The host would have been a better server than this guy. Well, the food came out, and it looked good till I tried the steak it had no flavor so much fat on it I could have lube my truck with it. The pork chop was dry and hard and had no flavor. The only thing that was great was the hash browns toast sauage and eggs, and the bacon was amazing. The check came from the host, not the server. I took it, he didn't care about the customer. Would not return here. Sorry, it is what is......",
+          "date": "2025-04-20T21:24:00.751Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNvejhub1h3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWjw06LdGMm4LtJHWPm7P82mUnHECaCqfYYkXOkKGbMb_TB0XOT=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102174102727769679075?hl=en",
+          "reviewerNumberOfReviews": 120,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Pete Marquez",
+          "rating": 2,
+          "text": "This place is just ok. For the price of the food and the quality and quantity it is better to go elsewhere. I pay less to go to snooze which in my opinion blows this place out of the water. My suggestion is to lower the prices of this place to reflect the food service and location. Food lines up with IHOP but with a higher price point.",
+          "date": "2025-04-16T15:49:41.443Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNvLXRlUXJRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUpmSR6tAal7Xeynv5t2PsorC_fc0n4E8zEa38gtzldK46accrfgQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110509241540952278828?hl=en",
+          "reviewerNumberOfReviews": 86,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Melinda Wolfe",
+          "rating": 1,
+          "text": "I ordered the mile high deluxe and it was 80% hash browns. 10% carne asada and a splash of terrible green chili. I don't understand how this place is packed with the food is so bad. For $18 a plate the food needs to be much better.",
+          "date": "2025-03-29T16:51:41.742Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNJMEsyRUdBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVEGCVdXMRjC69xHkMFGW549QyLw8kdT1WF_J5i6nPeX1E7IsxmUg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106707626273650505387?hl=en",
+          "reviewerNumberOfReviews": 39,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Dalia Rosales",
+          "rating": 2,
+          "text": "Ordered online the carne asada.  I got two or three pieces of meat on a plate of about 2lbs of hash browns lathered up in so much butter I’m still trying to figure out a way to get rid of the taste in my mouth. We also ordered the stacked enchiladas and we were confused if the chicken was meant to be shredded or diced/cubed;  there were all sorts inside them.  Very bland taste.  Oh and almost forgot to mention the carne asada was suppose to come with a tortilla that we didn’t get.  First and last time trying this place.  Complete bummer as I live right around the corner from them.",
+          "date": "2025-03-11T19:48:51.602Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURROGFENWt3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVC_5OPPUFdjnd4m1yu_CXL9IFyy5hWWK5xtXM1fmDK3Ox_P1AI=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105720322121294817480?hl=en",
+          "reviewerNumberOfReviews": 25,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Rian Williams",
+          "rating": 5,
+          "text": "I loved the breakfast chimichanga. Im not normally into chimichangas but they put scrambled eggs and your choice of meat inside and it was fantastic. I loved that it came with sour cream and guac. The lady that served me was very nice. Good green chili and coffee too.",
+          "date": "2025-02-25T05:51:11.425Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURnd2NUTkNBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKO-htELhKipLbogQq1B9Toq16VBhSSUnPrviV7LokNn6WmmQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105792769099594486866?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jim Conley",
+          "rating": 5,
+          "text": "Colorful breakfast/lunch restaurant with a Mexican slant. Very good omelets and benedicts. The Bell omelet is full of various meats and has a wonderful taste. It comes with hash browns which are covered with cheese and toast. It's a filling breakfast. The coffee is average.\n\nService is fast and friendly. The space is nicely decorated and includes both tables and booths. There are a few TVs. They do have password protected Wi-Fi. There's also a patio out back.\n\nThere's plenty of parking in the lot in front of the restaurant.",
+          "date": "2025-02-24T16:37:06.785Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURnOXFLczBnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLWJdYJFxBZ7aqjkidB1yQqhxI8sIrSgA7GaS5cgXxu6DcbUg=s1920-c-rp-mo-ba8-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115641010597914444874?hl=en",
+          "reviewerNumberOfReviews": 755,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Scott Christensen",
+          "rating": 4,
+          "text": "",
+          "date": "2025-02-11T03:18:34.590Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURBcmJqZ0NnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI_h3x1zTQ9dnJrqMkG1Bi5v14FBm8rheIoHDXbKwfwfDgSnw=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116312732452680569885?hl=en",
+          "reviewerNumberOfReviews": 417,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tanya Krivtsova",
+          "rating": 2,
+          "text": "I ordered through Uber Eats and was entirely disappointed by the food. I got a breakfast burrito and the giant cinnamon roll. The breakfast burrito was tiny and next to it a ridiculous side of hashbrowns. Although they did smother everything with a good amount of green chili, NOTHING was seasoned. The chili was as bland as could be. The inside of the burrito was completely bland, the hashbrowns didn't even taste salted. As for the cinnamon roll, I don't think it actually qualifies as one. The dough looked like a box-mix bread dough, upon tasting it, I'm pretty positive it WAS a box-mix bread dough. Entirely disappointed in the food from every perspective.",
+          "date": "2025-01-15T17:00:28.867Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNfeHN1U3JRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI3EOtXQw7iZdlDwVsRmiIlvbuJOe3pq71yQu09Kv1EWaxFlA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115040938083695578943?hl=en",
+          "reviewerNumberOfReviews": 14,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Anna DeLuna",
+          "rating": 5,
+          "text": "What a delightful place for breakfast! It was very delicious, the atmosphere was super pleasant and the service was great! Hidden gem 💎 ✨️ 💖",
+          "date": "2024-12-28T19:46:45.592Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNmMXJEeXZ3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUZpYUSOXQfBJb_ftZfHWeoK7cow2YYeY-JLniTaqPahig9E6fQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110439131155444615933?hl=en",
+          "reviewerNumberOfReviews": 14,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ms. Williams",
+          "rating": 3,
+          "text": "I ordered the large Country Fried Cubed Chicken Mile High. Will never order it again because basically it's 2.5 pounds of shredded potatoes with 1 egg and 4 little cubes of chicken. I was so disappointed. You can't see what's under the cheese and green chili until you start to eat it, then you realize that you basically got a giant thing of hash browns.",
+          "date": "2024-12-21T17:27:09.361Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR2eVlfTlBBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVt7EE_FXuJ-XCm8-6X-KdzBrfzZQNnHDa9Q5lYU2izwuFjDTAgew=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101435093916387203685?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "negative"
+        },
+        {
+          "author": "BrittanyJ216",
+          "rating": 5,
+          "text": "Stopped here cause it was close to the hotel and glad we got here early as it filled up fast. Food was amazing and worth the money! Staff was friendly attentive and quick!",
+          "date": "2024-12-08T17:32:03.812Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUN2cklMS09nEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIXeW0FUGfX73J82-Dyc4jqgK0SFsUa76jd1ZtQ8xYNUZQBnw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103728920291021195139?hl=en",
+          "reviewerNumberOfReviews": 26,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Anthony G.",
+          "rating": 5,
+          "text": "Honestly, a pretty surprising little spot. Delicious and authentic. The breakfast burrito with green chili was fire and the fries were perfect and crispy. Prices are good and so is the service! I’m snobby and I’ll be back haha!",
+          "date": "2024-12-07T20:10:50.573Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN2Mk1UWV9BRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXAE4V3aaa61Qi7Q18NzDjhik5TcrZpGXdMqfSj3QVLrCqEOQohVA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114512770793623113190?hl=en",
+          "reviewerNumberOfReviews": 38,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Nick Kamakaris",
+          "rating": 5,
+          "text": "Great breakfast burrito!! Authentic little spot with amazing food- come try it!!",
+          "date": "2024-12-07T20:08:27.060Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN2MkxqVTd3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLFDS5HdMWfGRonANTB6A1yBa9CTLGzzCGVh60eYItgGXL6AQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106863822322692927756?hl=en",
+          "reviewerNumberOfReviews": 41,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Joshua Lopez",
+          "rating": 5,
+          "text": "Best Huevos ranchero I’ve had. Really pleasantly surprised! A little cold in the building in the morning but the food warms you right up.",
+          "date": "2024-12-06T15:58:00.710Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURQNzdEM1RnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLn3G7NX5HZWr4d3IiDmuMBZ43A4_8TGWC5MLXyFSZociOYHA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103308113550647257547?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Raymond Thal",
+          "rating": 5,
+          "text": "",
+          "date": "2024-11-22T00:09:34.940Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNQOUk2LWh3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVHFiOKlCtOj3KxUoxYHc-SBZrO6DCjW1gE62ru48JTcz2BrJM=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101591086855678723544?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jeremiah Koval",
+          "rating": 5,
+          "text": "I have been coming in to pick up breakfast burritos for about 4 years now. Best burritos in the area. Customer service is great, they always remember my name and make sure I'm in and out of there in about 5 minutes. Love Caitlin's!",
+          "date": "2024-11-11T17:52:51.078Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQzeU12bmFREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWH9DYEgmvQpcuU1HzelBwJe39O5KzRP-KBAwX99ZuEn4Sb1NGA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108497388600871070487?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kelly Michael Skelton",
+          "rating": 5,
+          "text": "Classic diner serving great breakfast.",
+          "date": "2024-11-09T18:07:06.582Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUMzLTczd2ZBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWQmKbKAXUP0Svwcsfyvl5qPu4jlg6_MSbLwDsF0DVS7oDtvsgt=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102210808754501192691?hl=en",
+          "reviewerNumberOfReviews": 698,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Joseph Blake",
+          "rating": 5,
+          "text": "Awesome place to grab some breakfast, will definitely be back when we're back this way in Colorado!",
+          "date": "2024-11-04T22:00:46.938Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUMzMnQzWDVRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX21ruhoV8KA6Y3DGNlR9dfSHv_qDv9iD8agJuw0o36dDpvLcXd=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107449711380919478398?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "K Fox",
+          "rating": 4,
+          "text": "Really good breakfast! Huge portions and delicious. Had the burnt pork platter and it was a feast!",
+          "date": "2024-10-29T04:33:56.864Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURYcWUzUjl3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI4S12QvJmA8UWL3mTWkbho_jsciOToIHXqhGVkCOXvxqKRZw=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115885066951638501005?hl=en",
+          "reviewerNumberOfReviews": 35,
+          "sentiment": "positive"
+        },
+        {
+          "author": "J'Monne B",
+          "rating": 5,
+          "text": "Loved the pancakes",
+          "date": "2024-10-25T18:42:28.409Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURYMG9QXzdBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLRhGDbgwJWqElaUQMur-EZ92SHa8OSh22JwGLW2X8BM1uJVzU=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100812196864939189648?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jason Sheats (basurablanca)",
+          "rating": 5,
+          "text": "Excellent old school breakfast joint. Great food.",
+          "date": "2024-10-15T14:21:23.657Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNYMnYzanNnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWNmyJ0D8dRhuk378d8Uyl-uGr0wDP7JmGTOZ5v4_r5vZ61oLI7Gw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103450709456731997794?hl=en",
+          "reviewerNumberOfReviews": 52,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mirandi McCormick",
+          "rating": 3,
+          "text": "They forgot the gravy on my fried chicken smothered in cream gravy :(( and I'm just visiting in town and wanted to try the place",
+          "date": "2024-10-11T17:03:26.419Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURucl9PUHdBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW5SXCOKIVM5bS-BoMkqsskTxlfJP7wK5cX4QrMS63BblI-oAClqg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107653881630530482111?hl=en",
+          "reviewerNumberOfReviews": 21,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Catalina Hernández",
+          "rating": 4,
+          "text": "",
+          "date": "2024-10-11T14:06:25.706Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURuei1qZmZBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXFRd83bMnWzFpoiwPMhruuAM1rqZr6sr6KzVMhboP7po0fQ8E4Vg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111869647315371915900?hl=en",
+          "reviewerNumberOfReviews": 97,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Belle Cummings",
+          "rating": 5,
+          "text": "This is my absolute favorite breakfast place in Denver! It’s so underrated idk how because the food and service is so great everyone should check it out!",
+          "date": "2024-10-08T19:15:19.988Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURuN1pxZTdnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVB0HLKmum3KuIT1xJsWf-00vXQ_mHQnGS0rNvZYykWo64BrZpQOQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112329509531408106853?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Gabe Godoy Fewell",
+          "rating": 3,
+          "text": "",
+          "date": "2024-09-29T15:07:40.219Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNuMDltQ1lREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW8_XzxSwM1AeGck201ZzC0a3-ALePS7YF1E3D2W1LMJ4_psebT7w=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110098561044883214957?hl=en",
+          "reviewerNumberOfReviews": 40,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "ntwalter",
+          "rating": 5,
+          "text": "I love Caitlin's! I eat here all the time! The staff and service are phenomenal, as is the food! I've had at least 100 breakfast burritos from here!",
+          "date": "2024-09-25T17:47:50.910Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNubHFXWWN3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIdBbV-qmzaDaeOj3t96FTPqMVg3rGDFljkaYOlHV98nuyiUA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101887381973229272984?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Charles Paner",
+          "rating": 5,
+          "text": "The chicken club quesadilla I ordered for lunch was full of wonderfully balanced flavors. Bacon is a strong taste, so I was happy to find the chicken wasn't overseasoned so they could mesh together correctly. The filling was portioned out so there weren't any empty bites. It wasn't too heavy or too light. Overall it was a very satifsying lunch meal.",
+          "date": "2024-09-18T19:03:29.044Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURIamZMekl3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK6ma0yhfXiPrBZeAKLGcNGWJ3XZw63VuIhJ0m4pVDx2yUudw=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110068543349779444630?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tracy Ann",
+          "rating": 5,
+          "text": "",
+          "date": "2024-09-10T19:22:34.982Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNIdl9MSlVREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWR6YLgiodzFFvmsYtYvSCTZv-bxGw2jE-XBslynvt8j_3MLJjdyA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111225586571438313137?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Anthony Nolletti",
+          "rating": 2,
+          "text": "Very nice people, good service, average food that was overpriced. Restaurant was clean.",
+          "date": "2024-09-02T15:02:02.177Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNIX0xUM0ZREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLuZK4VnxLk9tMrUO0tnTmCEKojd-YrcdiPgPsiO0aJvF6WfA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114553956975983784036?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Lissa Sanders",
+          "rating": 5,
+          "text": "Wonderful food, atmosphere and service!",
+          "date": "2024-08-26T00:54:47.360Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQ3MmR6TjBRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUPt5-O4H3qLy_0TatkX-Nr7DPMsntIe029RMXEhfE0w69U9TuM=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114133083011548659026?hl=en",
+          "reviewerNumberOfReviews": 52,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Betsy Hardi",
+          "rating": 5,
+          "text": "Amazing food at a stunning price!",
+          "date": "2024-08-24T15:28:58.033Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQ3N29ibWx3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXSJ0ofl_y4FQR00c_5t-HqacnIZGJYCn3B4Qj6NNvM1lIaThha=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111809960038350862309?hl=en",
+          "reviewerNumberOfReviews": 147,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Holly N",
+          "rating": 5,
+          "text": "Amazing huevos rancheros!",
+          "date": "2024-08-22T21:29:14.625Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQ3a3NtLUVnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU245crwG_8N-LLmP92FNmZPfevILnwgpzNFpM7W0Lvi9AvBVFWvg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101758673950444301068?hl=en",
+          "reviewerNumberOfReviews": 24,
+          "sentiment": "positive"
+        },
+        {
+          "author": "David Lowy",
+          "rating": 5,
+          "text": "",
+          "date": "2024-08-11T22:37:51.121Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUM3eUw2Vl9nRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWbldbhUlXwGdJtVdW7Tx32t-qqmpU4-qDoJA-EO6GpyDH2KPBF=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105635706301320609656?hl=en",
+          "reviewerNumberOfReviews": 62,
+          "sentiment": "positive"
+        },
+        {
+          "author": "A Google User",
+          "rating": 3,
+          "text": "This place is ok for what it is.. food is decent.. but my only complaint is that the server was insanely awful. It took the server forever to acknowledge that I was here,  didn't check on me and didn't even bring me my check.. I had to go to the front for it etc. It wasn't even that busy..son there was no reason for any of the to happen.",
+          "date": "2024-07-20T17:14:30.252Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURyLTVQanJRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKW4VHlT4qTGspCHzGVtMzl4u95lf6q6aPyIoRL1JJ6udmKYg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111354173509263571952?hl=en",
+          "reviewerNumberOfReviews": 129,
+          "sentiment": "negative"
+        },
+        {
+          "author": "D",
+          "rating": 5,
+          "text": "Doing pretty good!",
+          "date": "2024-07-19T01:44:20.964Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURyOWFMcUVREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK05p0n7sjsryX_cGK0Xp8z04jG54HTYQC6bwyMvYdyaRANE9sp=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116190076577107435005?hl=en",
+          "reviewerNumberOfReviews": 27,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kat Kat",
+          "rating": 5,
+          "text": "I was looking for something that would be priced fairly to the quality and quantity of food.    I thought at 11am on a Sunday, most places would be packed. Caitlins had room for us, no wait, and we were immediately greeted, seated and waited on.  The food was so good.   I'll definitely be back.  I ordered the 2 eggs plate and shared with my 4yo son. It was plenty for us.  My husband ordered steak and eggs and was happy with his.  The only negative I'd give, and maybe it was just a mishap on this day, it was so hot inside I didn't want to drink my coffee.  I was slightly sweating the entire time I ate.  But regardless, I'll definitely be back.",
+          "date": "2024-07-14T21:22:29.533Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURyaFBlZTlBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIbq_Mss9g2blVzb1F9hhkaKPuG5xDBOaOqQLU2vqEozMZDDw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107836814333389523607?hl=en",
+          "reviewerNumberOfReviews": 36,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Crypto Moves",
+          "rating": 4,
+          "text": "Ordered the steak and eggs with hashbrowns and sourdough toast. Good quality food, decent portions and super fast service.\n\nI did order the steak medium rare and it came out medium well. I didn't mind but maybe they shouldn't ask what temp when ordering.\n\nHash browns were perfectly crispy and sunny side up eggs were perfectly cooked.",
+          "date": "2024-07-10T16:57:53.432Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNyZzZQTjNBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVhKhLzjVj_Pju7_XPSW7-YU0VRVQP0UbWHrG4XfFGEXcu7-3c9=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111322256771730665731?hl=en",
+          "reviewerNumberOfReviews": 25,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Cain Casarez",
+          "rating": 5,
+          "text": "Clean and friendly. Always greeted with a smile and the service is impeccable.",
+          "date": "2024-07-07T23:40:18.004Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNyd2IyNV9nRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVp_jf2TUrPI_xZP3_uzeQjTY1cKlP3Rm5BhmN_imGAXhPswBgPLA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110693440094409864456?hl=en",
+          "reviewerNumberOfReviews": 79,
+          "sentiment": "positive"
+        },
+        {
+          "author": "D W (Will)",
+          "rating": 5,
+          "text": "Good food and reasonable prices, kids love the pancakes",
+          "date": "2024-07-06T18:02:03.131Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNyNXRYMzRBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLf2n6lbahawIUTavoxQUipwlbVYQaVNoAZFimAMks-ncdOiQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117624890629129721840?hl=en",
+          "reviewerNumberOfReviews": 150,
+          "sentiment": "positive"
+        },
+        {
+          "author": "jamie Haynes",
+          "rating": 2,
+          "text": "Hash browns burnt",
+          "date": "2024-06-30T20:45:54.293Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURMaTVyM1J3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLytt_2iaTqJ-siQoy_FVqqqub0TyxCYYcTlAPMQg1li3hJNA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107281452190279342877?hl=en",
+          "reviewerNumberOfReviews": 67,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Keith Alexander",
+          "rating": 5,
+          "text": "This our absolute favorite breakfast spot. We have been coming here for years. Even when our grown kids come back to town we always have to stop here. We all love it!",
+          "date": "2024-06-29T16:56:37.767Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURMN1pLTEJ3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL8wZEx-Ac6vPsPiWDqijHU4uADR8cSUk1vfcbAPpgNmnekdA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109261570064209111002?hl=en",
+          "reviewerNumberOfReviews": 324,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Carlos Landeros",
+          "rating": 5,
+          "text": "",
+          "date": "2024-06-27T17:04:53.122Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURMOXFIUVZREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVJfVr6H8so6vJNR5_BfcyFietsMZYFxqpxLaLi1ygJAvzbxzgj=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111092173896165108817?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Durango Dank",
+          "rating": 5,
+          "text": "Love this place. The owner works everyday. And he cares about his clients. He is so busy, don't be mad he may come off as stuck up. Your food, and service is #1 to him. What do you want. A friend or good food. And if it's not right he will make it right. Don't complain, if you didn't ask the owner for help! He is always there.",
+          "date": "2024-06-25T11:26:00.740Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURMaEtyM2xBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKoKsH5h8SSWGn6PA4LO3mECMLmxmnwA_1hS2L5ffaI7T7CbQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117321048366317391856?hl=en",
+          "reviewerNumberOfReviews": 122,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Melanie Mel",
+          "rating": 5,
+          "text": "I went to Caitlin’s with my boyfriend for the first time today. The food there was DELICIOUS! I highly recommend this place as a great brunch spot. I ordered the breakfast burrito and my bf ordered the country fried steak. We will need to come again soon.",
+          "date": "2024-06-23T20:56:08.303Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNMMS1MTmx3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIRjZboYrtYNFoFLbLflWp5z97_MFZu_PG8cg-wfHMjlwdolw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111297367856198242579?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Rey Banz",
+          "rating": 1,
+          "text": "",
+          "date": "2024-06-23T18:53:57.590Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUM2ajhiUml3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWlBtqb684qH9sOOEP3TjNnZ1n_ohQ39LqqKYLjAkAW14DMpc_d=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103067964495738362928?hl=en",
+          "reviewerNumberOfReviews": 39,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Kris Farris",
+          "rating": 4,
+          "text": "Wonderful spot for breakfast.",
+          "date": "2024-06-08T18:46:58.904Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUR6b29EWjNRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKz__aR2SEL5OXnV02lovxpL3EFNy3-mnGLtCct0lctMQmAFj0=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109116732485611041006?hl=en",
+          "reviewerNumberOfReviews": 197,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Garry Curry",
+          "rating": 5,
+          "text": "This place is great food and staff if I lived here I would eat her all the time",
+          "date": "2024-06-08T17:33:13.646Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR6d29URWNnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ_FQrdnuHBt9uKSfokTAWNTUh5mEFt7Tr0Ihxma64gjiHMqQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104848543822683340973?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Andy Rivera",
+          "rating": 1,
+          "text": "Our waiter was not friendly, never ask how our food was, they never came to ask us if we wanted a refill on our drinks, we had to ask for refills.  I will never come here again.",
+          "date": "2024-06-04T19:16:18.250Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN6azhfWjFRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKxWr3Axa1UlaiqUizhKVKyMyqtCyM-msPFGyF-dGhkZVsM-A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108841169595407472747?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Bob J",
+          "rating": 5,
+          "text": "Had a great green chili smothered carne adovada burrito that came with beans, rice, and guacamole.",
+          "date": "2024-05-23T17:00:43.361Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURUa3MtZWtRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKmfMSHAoSGsXSxsIcAnGiBQ6ANdzqqkRkIKc-SayP6Em7dxA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117236844650892165783?hl=en",
+          "reviewerNumberOfReviews": 63,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Arianna Provencio",
+          "rating": 1,
+          "text": "Got seated right away. Then had to sit for 40 minutes. The guy took the orders of the 3 people that came in after us and served them food before coming over to ask if we were ready.\nOnce we finally got the food. My omelet had raw egg spots everywhere.",
+          "date": "2024-05-09T14:27:59.670Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNUZ0t5VERnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXu5QDnWoLs_rsXo_k9Jp7eWsE7n83vB4xY3GeFNvj9QesVjecLcw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108682199450594034306?hl=en",
+          "reviewerNumberOfReviews": 99,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Amanda Fees",
+          "rating": 5,
+          "text": "",
+          "date": "2024-05-06T14:22:22.563Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURqM1lyNEpnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWia8cKIVnlwC2WV4ZWdK0Fu7Mq8ZQHFMoT4_vTEepqQpzxHIw1=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110100102484893528581?hl=en",
+          "reviewerNumberOfReviews": 24,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jerre Hookey",
+          "rating": 4,
+          "text": "Even at an off hour, our server was swamped. He was heroic, doing his best. Food was great. Coffee good. Prices high, but worth it if you have the cash.",
+          "date": "2024-05-04T22:04:54.471Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURqNllHX0ZnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWs1UI8Tg5CwloYibgtLXspaxTR_cvY5KpV3CaWv1NGmPItvoRe=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104783012176844461838?hl=en",
+          "reviewerNumberOfReviews": 204,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Stephanie Thompson",
+          "rating": 5,
+          "text": "",
+          "date": "2024-04-28T15:57:13.724Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURqaUl1bVV3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXPz_-ksllSYdTlhxaZyNRawGOUPlmv9563QAX_DA80omPK581K=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112166886138061447057?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Connor McNulty",
+          "rating": 5,
+          "text": "We absolutely love Caitlin’s! We live close by and pick up hand held breakfast burritos almost weekly. The service is excellent and so friendly. Best breakfast burrito in Denver.",
+          "date": "2024-04-26T03:21:06.157Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNqbTdIOU1nEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXDegzHCvMkGIT_UfWCenFQQstiz9_qjkHiIzFLnWj5xyaGabnd=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113287618583745409971?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Cristie Wilburn",
+          "rating": 5,
+          "text": "",
+          "date": "2024-04-23T00:12:34.617Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNqc2JHaURnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVpzYLOmTHZYPOwmH96x8fuJsSSC-ZqGDAts7Srk4w2rauqSCdt0Q=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115683927931415230392?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Nancy Toothaker",
+          "rating": 5,
+          "text": "Had an absolutely fantastic chicken fried steak breakfast, companion had biscuits and gravy which was equally delicious. Great service, highly recommended",
+          "date": "2024-04-22T00:44:53.782Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNqbnNxdk9nEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJOOoar6knVk6fghLRIDjSRpZ6-zoLfkzmF_weFEiYYXV88IA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112710938945674058482?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kelsey Weaver",
+          "rating": 4,
+          "text": "Visiting Denver with my husband. Came to Caitlin’s for breakfast. Husband got the chicken and waffles. Although delightful, his waffle had a slightly burnt corner. I had the Eggs Benedict; also quite delicious. We very much enjoyed our experience here.\n\nThe coffee is SO GOOD. I cannot express enough how AWESOME the coffee is.",
+          "date": "2024-04-16T16:44:43.365Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNqb083amtnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjViRj-nHAzMEILfC30n18t6TdEClk8kR18Gl0x2zgCbQGjwcsw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111784072690409239966?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Trish Petty",
+          "rating": 4,
+          "text": "",
+          "date": "2024-04-13T17:29:41.159Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUREbzdma2lRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI2N4Srsq_Ga2Hw8zkxE9wB3D8DzjimHl-mqX-Dw24fGNFlEA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112254920352168238877?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Arica Evans",
+          "rating": 5,
+          "text": "Stacked chicken enchiladas were absolutely delicious! Service was so awesome and helpful. Best breakfast I could've imagined. Beans were so good. Definitely a worthwhile stop, would for sure visit again!",
+          "date": "2024-04-12T18:02:38.011Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUREamVQWldREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVaXvGhlL2JV3ATV91U0d-21bFdWS34ip5-yfeeNiGuAESQ8U0iqw=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112993764502238528494?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Austin Burwick",
+          "rating": 5,
+          "text": "Great breakfast burritos with fast friendly service. One of my favorite places in Denver to get a quick to go breakfast.",
+          "date": "2024-04-11T18:13:57.755Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURELVpEcTVBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX6S3f0zinaaT3JKMwOSDMNdvaYbNE-bvhd0XPLE6vX8pmDuVyh=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109615579735945142343?hl=en",
+          "reviewerNumberOfReviews": 37,
+          "sentiment": "positive"
+        },
+        {
+          "author": "John Wodetzki",
+          "rating": 2,
+          "text": "The server was amazing, and the food was microwaveable. I know this is a local spot but the ambience is a kids room at a church, the dish wear is mismatched, and even though the server was nice it still took way too long to be seen by my server as they stood and talked to the owner or manager of the restaurant. Just skip this place and make biscuits and gravy at home. You’ll have a better experience and not have to deal with the worst decor in denver\n\nSide note, do not order “Mexican food” from here under ANY circumstances. Don’t let Denver do you like that",
+          "date": "2024-04-09T13:25:57.002Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUREenN6eXBnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU4ynXZ4jIT5PBhlShUMeq7Gb_qSc6GafWhGuh2EFeEssQSApc=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111244414368476211719?hl=en",
+          "reviewerNumberOfReviews": 40,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Katy M",
+          "rating": 5,
+          "text": "Every time I go home to visit my family in Denver. I make sure to stop here for breakfast! The food is always good and the service too. I usually get a traditional breakfast which consists of pancakes, eggs, and bacon. My friend, who came with me last time had the huevos rancheros, and had nothing but great things to say!",
+          "date": "2024-04-05T18:44:13.149Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUREeEpmTDdnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWARhuvN4PtAbKFrDwMdxRMA3wb1ltOVuL0bD-N3u6yx6hmb22MiQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110980697628794844268?hl=en",
+          "reviewerNumberOfReviews": 65,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Na Green",
+          "rating": 2,
+          "text": "I ordered biscuits and gravy, eggs, and hash browns. There were no veggie options as I don’t eat pork. The biscuits and gravy had zero flavor. Tasted like something you’d feed a cat. Luckily I was able to use my discount so I didn’t feel like I completely wasted my money. Hash browns were crispy at my request but also a tad flavorless.",
+          "date": "2024-04-03T17:16:36.237Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNEbl9UUFZREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVRoMNFpAFqEqEZrDrK_syxrwNwcj4tI5tHl9cRan0N57KwN1yl=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100733449175325626331?hl=en",
+          "reviewerNumberOfReviews": 22,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Kipp Castaing",
+          "rating": 5,
+          "text": "Awesome breakfast spot. Alot of food on each plate.  Omelets and hash browns are really good.",
+          "date": "2024-04-03T15:54:41.717Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNEMTlyOHZ3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVyyjPszNz8ibfpUN9O63OMv8esEyMsSZkyALzZjFPbQ2YDlZUGag=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117241214221182477261?hl=en",
+          "reviewerNumberOfReviews": 292,
+          "sentiment": "positive"
+        },
+        {
+          "author": "David Littlejohn",
+          "rating": 5,
+          "text": "Great food and staff",
+          "date": "2024-03-31T15:56:23.750Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNEM2EzWFFBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWYD4_DSnTDFH-iPMvE36wTqHj9y7-rr9VpC--jgLCgV_mouAg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102339824390422450849?hl=en",
+          "reviewerNumberOfReviews": 109,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ryan Weber",
+          "rating": 5,
+          "text": "Amazing breakfast burritos 🤤",
+          "date": "2024-03-25T15:48:57.646Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNEM09pTWRnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocISW1nD_wUoXDaep5Mr4DhFsg0zOHBNDcz81VbSUlCLfMpiwg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108028840221164277074?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Herman Rooth",
+          "rating": 5,
+          "text": "Perfect diner in every way. I wish there were more places like this around, but there aren't so go to Caitlyns for delicious food.",
+          "date": "2024-03-24T14:54:07.058Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNEcE1DSGR3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVjDztshyuMHosuthOr7Mqj4xuO0IubPrqyRlQqRGP_oWsd7Ald=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117898432725416287152?hl=en",
+          "reviewerNumberOfReviews": 29,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Roger Brockevelt",
+          "rating": 5,
+          "text": "Great food and good service. Love the green chili.",
+          "date": "2024-03-19T22:21:02.508Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQ5cmZMcnpnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXLOqG-GJGqTqk_qMclWwUvIAGrQ27Gj16HljPzl5LjSbcOCeW55Q=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112133230039650324811?hl=en",
+          "reviewerNumberOfReviews": 140,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Amber Dover",
+          "rating": 5,
+          "text": "Best burritos I’ve ever had!",
+          "date": "2024-03-11T19:29:53.385Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUM5MzdmUWZnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKQa3unXCTJSqV5dqqXcO6yyD3XN9A6HgocjYnIWwmIOMzc9w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105959129703767584095?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Joellen Lucchese",
+          "rating": 5,
+          "text": "A hidden gem!  If you are in Denver, don’t miss this place. My breakfast was absolutely delicious!!",
+          "date": "2024-03-04T15:22:43.985Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUM5dXZMWnB3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJXqUNiONTlgL1b7Kcvt4L8k_aNhR_nVRN1gSGZTLGa-GMq_g=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111443034224568375699?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tom 5280",
+          "rating": 5,
+          "text": "I don't often write reviews, but Caitlin's deserves a shout-out.  A recent brunch showed Caitlin's to be a standout with friendly service, a clean and uplifting atmosphere, and a menu that surpasses expectations of the typical diner.   I will gladly visit this neighborhood gem again and would recommend you do likewise.",
+          "date": "2024-02-20T04:13:58.601Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURkb01Ta0x3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU2X3rMDAYhQudoqq1KQjCs2m6u-4JHdqZ6qZn-ZsH6cjMIWvVh=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116725666156124058013?hl=en",
+          "reviewerNumberOfReviews": 30,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sarah Fernandez",
+          "rating": 5,
+          "text": "I love Caitlin's. It's a family-run business and you can really feel that when you're there. The servers are unbelievably kind and warm, and the whole environment makes you feel like you're really at a neighborhood spot. I often go there to work and eat/drink coffee, and they let me sit as long as I want. They have good wifi and give free refills. The food is also very good for the most part, but sometimes is a little bit heavy, even for a diner. I love it here though, and will be coming back for a long time.",
+          "date": "2024-02-13T19:54:44.578Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNkdk9ET19BRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUhQwFEFjj09gHRAdrmDbaeaLHbuqMdCsNQnUNgnUVEMBhbXlM=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100619239606479697611?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sara Twombly",
+          "rating": 5,
+          "text": "",
+          "date": "2024-02-04T20:57:37.120Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUR0X3JUbDV3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLHJMGDnVnqgrDm3e9B-DISNMJJa3yPFz3M63XrDvBmAqQx6w=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115724033682072685157?hl=en",
+          "reviewerNumberOfReviews": 70,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Brian Cadieux",
+          "rating": 5,
+          "text": "Caitlin's is great.  I had the Mile High with Ham, sourdough, and 2 extra overeasy eggs with green chili.  I also had a peppermint mocha.  Everything was great!  Service was great!  Restaurant is clean.  A great place to walk to if you are waiting on your BMW maintenance.",
+          "date": "2024-01-18T19:46:20.669Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNOMTRtcFh3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUOllLicbxnrnWEIkpdaKLvw9nH5bav_o6UYQGPRiIvV9Djoglv=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115024200973306913405?hl=en",
+          "reviewerNumberOfReviews": 121,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Chris Shelton, MSc",
+          "rating": 5,
+          "text": "Really enjoyed eating breakfast here. Just found it randomly in Google maps and went in and found it quiet, chill and the staff helpful and on top of it.",
+          "date": "2024-01-03T22:46:00.093Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUMxNjZyTkJBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWEYAfyUOBdqeS352k9OPGrjD2THxmy8w5zsfujQvcebMGr1u1Piw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100455856797125625693?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        }
+      ],
+      "customerMoodAnalysis": {
+        "overallMood": "satisfied",
+        "sentimentSummary": "Customers have positive experiences overall. Your 4.0/5 rating from 100 recent reviews shows solid satisfaction with room for growth.",
+        "sentimentDistribution": {
+          "ecstatic": 9,
+          "delighted": 56,
+          "satisfied": 12,
+          "neutral": 1,
+          "frustrated": 10,
+          "disappointed": 10,
+          "angry": 2
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "speed of service",
+            "mentions": 53
+          },
+          {
+            "theme": "food quality",
+            "mentions": 35
+          },
+          {
+            "theme": "service excellence",
+            "mentions": 15
+          },
+          {
+            "theme": "food issues",
+            "mentions": 9
+          },
+          {
+            "theme": "slow service",
+            "mentions": 7
+          },
+          {
+            "theme": "cleanliness",
+            "mentions": 5
+          },
+          {
+            "theme": "value for money",
+            "mentions": 4
+          },
+          {
+            "theme": "atmosphere",
+            "mentions": 3
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 30,
+          "satisfaction": 64,
+          "disappointment": 4,
+          "frustration": 0,
+          "anger": 4
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "Customers rave about the authentic and delicious breakfast options, such as the breakfast burrito with green chili and the breakfast chimichanga. - social media marketing can showcase this strength",
+            "The friendly and attentive service, with staff members like Ricky and Cynthia being highlighted for their exceptional hospitality, makes customers feel like family. - review management can highlight this positive aspect",
+            "The restaurant's inviting atmosphere, described as a \"hidden gem\" with a pleasant ambiance and colorful decor, enhances the dining experience. - SEO services can leverage this for better visibility"
+          ],
+          "improvementOpportunities": [
+            "Negative reviews about food quality and flavor - review management can address this concern",
+            "High prices and portion size complaints - social media marketing can improve this area",
+            "Long wait times and service issues - Boostly marketing services can improve this"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 100,
+          "averageRating": 4,
+          "ratingDistribution": {
+            "1": 12,
+            "2": 10,
+            "3": 7,
+            "4": 8,
+            "5": 63
+          },
+          "sentimentTrends": {
+            "trend": "declining",
+            "recentAverageRating": 3.4,
+            "previousAverageRating": 4.1,
+            "recentReviewsCount": 10
+          }
+        }
+      },
+      "examples": {
+        "positive": [
+          {
+            "author": "Dennis Nakamura",
+            "rating": 5,
+            "text": "Great breakfasts both American and Texmex.  Also has great burgers and other Texmex and American options",
+            "date": "2025-08-17T19:54:45.628Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VKN202N0RGd3RtcXh3RRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWBJt6UqsCd55-T67pNJV23_S7ytFH-OzlO2lG2xB8kXsTb5OKO=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/112959140018154912917?hl=en",
+            "reviewerNumberOfReviews": 6
+          },
+          {
+            "author": "Marie Barker",
+            "rating": 5,
+            "text": "",
+            "date": "2025-07-26T19:46:50.779Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT20xRk5tUjZNemRuWjBwRmQxVlViRXh2YWtkd1dVRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWxRI0GCUzlGjB_vmWvxOgoveflmTY_DHp0AbMdSMoRsZ46PlH8=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/109098598073462768027?hl=en",
+            "reviewerNumberOfReviews": 39
+          },
+          {
+            "author": "Mandy Simmons",
+            "rating": 5,
+            "text": "",
+            "date": "2025-07-12T04:58:30.216Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21aS2IySTRYM1ZmU1hObWNXZFNia3B1TkRGUlUzYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU7CoxStIgZGbuk6jorXLBHj62oLXvEPyeKsBEqC6kHMQrrxP4=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/102739453074690641914?hl=en",
+            "reviewerNumberOfReviews": 2
+          }
+        ],
+        "neutral": [
+          {
+            "author": "Jim Gordon",
+            "rating": 3,
+            "text": "Ordered breakfast to go and found our hash brown potatoes woefully burnt and inedible. Have been here several times previously without issue but this time was different. The service is always great and this time was no exception as management quickly issued complimentary meal vouchers to compensate for what hopefully is a one time issue with the burnt food.",
+            "date": "2025-08-09T16:12:54.692Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25nMlNXbE9TSEZRZG5OUk9HTnpVWEZoUlRCSlRIYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXTgYCZ_D8IrBrZhWGW7HUeyUoMDhKoEkk4eZ9idrrmrNQ0kEAK=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/107355983221296405133?hl=en",
+            "reviewerNumberOfReviews": 30
+          },
+          {
+            "author": "Eddie Dennis",
+            "rating": 3,
+            "text": "Food tastes good but the price is high compared to the portion size you get. If the portions were bigger the price would be justifiable.\n\nThe service was poor, they didn’t even bother to check on us to see if everything was tasting good but they remembered to hand us the check as early as they could without us asking!\n\nThis is the first time I went to a restaurant for breakfast and felt like I had barely eaten anything.",
+            "date": "2025-05-11T05:03:23.480Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VPcUtuNUtVcHRQTDZ3RRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVPPGB7rS33IeXWhovWvNuBVc9VLLS33jZC5EXTzp9I5keqeZuL=s1920-c-rp-mo-ba4-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/105358219448221184070?hl=en",
+            "reviewerNumberOfReviews": 129
+          },
+          {
+            "author": "David Logan",
+            "rating": 3,
+            "text": "Great restaurant with good food. I’ve come here many times over the years, but due to their prices I can no longer justify it. I wish the business well, but $25 for a breakfast burrito and a coffee just isn’t worth it even when the food is good.",
+            "date": "2025-04-28T18:04:05.029Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURvODZTZnZ3RRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocILiSNcsZbEQIDuv0YttbSoIX5ZJAHf3N5Dr3nhDyA4yuLWsg=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/112605858540650703306?hl=en",
+            "reviewerNumberOfReviews": 21
+          }
+        ],
+        "negative": [
+          {
+            "author": "Allen Raymond",
+            "rating": 1,
+            "text": "Well for 1 they changed the menu then now portions are smaller and my main complaint is they use no sausage in there gravy for biscuits and gravy! I asked for biscuits and gravy and it's the same white gravy they put on chicken fried steak! Do you all need a chef that can make the best gravy ever?",
+            "date": "2025-09-13T19:36:07.954Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xGZlp6bHdjREpHYVVVek16RXpjMGRFV2t0aFoyYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIehazslCXaQ4U8vf4KvSVrifcRBW_MkLzu6uPh9M5gTTBM9g=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/101219352466219101111?hl=en",
+            "reviewerNumberOfReviews": 17
+          },
+          {
+            "author": "Lee Carpenter",
+            "rating": 1,
+            "text": "Can’t rate anything but service as never even had order taken other than coffee after 30 minutes. People came after, they were served…",
+            "date": "2025-08-30T17:07:51.730Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2kxQlkzcEthRTQzZGxCVWFYQlBTMEZ2UkhadFdIYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJhl_L_swImQJnCZi7LUsQBInenmFCg5BiWa27d_STB2qs3PQ=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/109744569859841179649?hl=en",
+            "reviewerNumberOfReviews": 31
+          },
+          {
+            "author": "Vincent Rivera",
+            "rating": 2,
+            "text": "It’s been a bit since we last ate there and it was pretty good. Today was completely different. Service was slow and food was terrible. Tried their smoked burnt pork breakfast. Looks like a pork chop chopped into small burnt dried out pieces. Asked for over easy eggs and got well done eggs. Cheese tasted old. Same with wife’s plate.\nDon’t know what’s going on but that was enough not to go back again.",
+            "date": "2025-08-02T16:57:31.555Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tOaVQyazJVVkl6WDNWTk9YRmZSazlMVlY5d0xVRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU035D7zIKdNlxUepqhZtv9TGDmueG_NGd5eJxvSbHShcSDNd-L=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/100750089744891910012?hl=en",
+            "reviewerNumberOfReviews": 1
+          }
+        ]
+      },
+      "trends": {
+        "ratingTrend": "declining",
+        "volumeTrend": "stable",
+        "responseRate": 0,
+        "averageResponseTime": "No responses"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ]
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/caitlins",
+      "instagram": "https://www.instagram.com/caitlins",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 58,
+      "social": 100,
+      "local": 43,
+      "reviews": 91,
+      "overall": 73
+    },
+    "originalScores": {
+      "seo": 70,
+      "overallScore": 67,
+      "performance": 69,
+      "userExperience": 60
+    },
+    "migratedAt": "2025-09-16T00:37:21.588Z"
+  },
+  "metadata": {
+    "cachedAt": "2025-09-15T09:21:31.467Z",
+    "expiresAt": "2025-10-15T09:21:31.467Z",
+    "placeId": "ChIJgXvirdd9bIcRAvpW1BsVV-w",
+    "restaurantName": "Caitlin's",
+    "cacheVersion": "2.0.0"
+  }
+}

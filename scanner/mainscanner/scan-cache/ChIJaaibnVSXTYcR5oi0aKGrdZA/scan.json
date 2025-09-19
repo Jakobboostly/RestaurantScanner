@@ -1,0 +1,2756 @@
+{
+  "data": {
+    "domain": "www.demaejapanese.com",
+    "restaurantName": "Demae Japanese Restaurant",
+    "placeId": "ChIJaaibnVSXTYcR5oi0aKGrdZA",
+    "overallScore": 77,
+    "performance": 100,
+    "seo": 58,
+    "mobile": 43,
+    "userExperience": 78,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "performance",
+        "severity": "critical",
+        "title": "⚡ Speed Crisis: Customers Are Leaving",
+        "description": "Performance score of 63/100 means customers wait too long. 53% abandon slow websites.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🐌",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "Lost orders from customers who abandon slow-loading pages"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "japanese near me",
+        "position": 0,
+        "searchVolume": 30,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "japanese delivery Provo",
+        "position": 1,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "http://www.demaejapanese.com/",
+        "title": "Demae Japanese Restaurant",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best japanese Provo",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "japanese",
+        "position": 0,
+        "searchVolume": 110,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "japanese places near me",
+        "position": 0,
+        "searchVolume": 90,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "japanese Provo Utah",
+        "position": 2,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "http://www.demaejapanese.com/",
+        "title": "Order Authentic Japanese Online | Demae Japanese ...",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "japanese delivery near me",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "japanese open now",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 75,
+        "keywords_appeared": 6,
+        "total_keywords": 8,
+        "average_position": 3.7,
+        "best_position": 2
+      },
+      "keyword_results": [
+        {
+          "keyword": "japanese near me",
+          "found": true,
+          "position": 4,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Demae Japanese Restaurant",
+            "address": "Provo, UT ",
+            "website": "https://www.demaejapanese.com/",
+            "phone": "(801) 374-0306",
+            "rating": 4.3,
+            "reviews": 275
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Eimi Sushi & Ramen",
+              "address": "Provo, UT ",
+              "website": "http://www.eimisushiramen.com/",
+              "rating": 4.2,
+              "reviews": 173
+            },
+            {
+              "position": 2,
+              "name": "Yamato Japanese Restaurant",
+              "address": "Orem, UT ",
+              "website": "http://goyamato.com/",
+              "rating": 4.5,
+              "reviews": 1400
+            },
+            {
+              "position": 3,
+              "name": "Sukiya Sushi & Japanese Buffet",
+              "address": "Orem, UT ",
+              "website": "https://sukiyautslc.net/midvale-sukiya-sushi-and-japanese-buffet-reservations-orem",
+              "rating": 4.7,
+              "reviews": 686
+            }
+          ]
+        },
+        {
+          "keyword": "japanese",
+          "found": true,
+          "position": 5,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Demae Japanese Restaurant",
+            "address": "Provo, UT ",
+            "website": "https://www.demaejapanese.com/",
+            "phone": "(801) 374-0306",
+            "rating": 4.3,
+            "reviews": 275
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Eimi Sushi & Ramen",
+              "address": "Provo, UT ",
+              "website": "http://www.eimisushiramen.com/",
+              "rating": 4.2,
+              "reviews": 173
+            },
+            {
+              "position": 2,
+              "name": "Yamato Japanese Restaurant",
+              "address": "Orem, UT ",
+              "website": "http://goyamato.com/",
+              "rating": 4.5,
+              "reviews": 1400
+            },
+            {
+              "position": 3,
+              "name": "Sukiya Sushi & Japanese Buffet",
+              "address": "Orem, UT ",
+              "website": "https://sukiyautslc.net/midvale-sukiya-sushi-and-japanese-buffet-reservations-orem",
+              "rating": 4.7,
+              "reviews": 686
+            }
+          ]
+        },
+        {
+          "keyword": "best japanese Provo",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Saida - Sushi & Noodle House",
+              "address": "Provo, UT ",
+              "website": "https://saidautah.com/",
+              "rating": 4.7,
+              "reviews": 516
+            },
+            {
+              "position": 2,
+              "name": "Teri Gao Asian Cafe",
+              "address": "Provo, UT ",
+              "website": "https://www.terigaoasiancafeut.com/",
+              "rating": 4.9,
+              "reviews": 278
+            },
+            {
+              "position": 3,
+              "name": "Eimi Sushi & Ramen",
+              "address": "Provo, UT ",
+              "website": "http://www.eimisushiramen.com/",
+              "rating": 4.2,
+              "reviews": 173
+            }
+          ]
+        },
+        {
+          "keyword": "japanese delivery near me",
+          "found": true,
+          "position": 4,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Demae Japanese Restaurant",
+            "address": "Provo, UT ",
+            "website": "https://www.demaejapanese.com/",
+            "phone": "(801) 374-0306",
+            "rating": 4.3,
+            "reviews": 275
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Saida - Sushi & Noodle House",
+              "address": "Provo, UT ",
+              "website": "https://saidautah.com/",
+              "rating": 4.7,
+              "reviews": 516
+            },
+            {
+              "position": 2,
+              "name": "Five Sushi Brothers",
+              "address": "Provo, UT ",
+              "website": "https://fivesushibrothers.com/",
+              "rating": 4.5,
+              "reviews": 2100
+            },
+            {
+              "position": 3,
+              "name": "Eimi Sushi & Ramen",
+              "address": "Provo, UT ",
+              "website": "http://www.eimisushiramen.com/",
+              "rating": 4.2,
+              "reviews": 173
+            }
+          ]
+        },
+        {
+          "keyword": "japanese Provo Utah",
+          "found": true,
+          "position": 2,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Demae Japanese Restaurant",
+            "address": "Provo, UT ",
+            "website": "https://www.demaejapanese.com/",
+            "phone": "(801) 374-0306",
+            "rating": 4.3,
+            "reviews": 275
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Eimi Sushi & Ramen",
+              "address": "Provo, UT ",
+              "website": "http://www.eimisushiramen.com/",
+              "rating": 4.2,
+              "reviews": 173
+            }
+          ]
+        },
+        {
+          "keyword": "top japanese Provo",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Teri Gao Asian Cafe",
+              "address": "Provo, UT ",
+              "website": "https://www.terigaoasiancafeut.com/",
+              "rating": 4.9,
+              "reviews": 278
+            },
+            {
+              "position": 2,
+              "name": "Saida - Sushi & Noodle House",
+              "address": "Provo, UT ",
+              "website": "https://saidautah.com/",
+              "rating": 4.7,
+              "reviews": 516
+            },
+            {
+              "position": 3,
+              "name": "Eimi Sushi & Ramen",
+              "address": "Provo, UT ",
+              "website": "http://www.eimisushiramen.com/",
+              "rating": 4.2,
+              "reviews": 173
+            }
+          ]
+        },
+        {
+          "keyword": "japanese restaurant near me",
+          "found": true,
+          "position": 4,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Demae Japanese Restaurant",
+            "address": "Provo, UT ",
+            "website": "https://www.demaejapanese.com/",
+            "phone": "(801) 374-0306",
+            "rating": 4.3,
+            "reviews": 275
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Eimi Sushi & Ramen",
+              "address": "Provo, UT ",
+              "website": "http://www.eimisushiramen.com/",
+              "rating": 4.2,
+              "reviews": 173
+            },
+            {
+              "position": 2,
+              "name": "Yamato Japanese Restaurant",
+              "address": "Orem, UT ",
+              "website": "http://goyamato.com/",
+              "rating": 4.5,
+              "reviews": 1400
+            },
+            {
+              "position": 3,
+              "name": "Sukiya Sushi & Japanese Buffet",
+              "address": "Orem, UT ",
+              "website": "https://sukiyautslc.net/midvale-sukiya-sushi-and-japanese-buffet-reservations-orem",
+              "rating": 4.7,
+              "reviews": 686
+            }
+          ]
+        },
+        {
+          "keyword": "japanese food Provo",
+          "found": true,
+          "position": 3,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Demae Japanese Restaurant",
+            "address": "Provo, UT ",
+            "website": "https://www.demaejapanese.com/",
+            "phone": "(801) 374-0306",
+            "rating": 4.3,
+            "reviews": 275
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Eimi Sushi & Ramen",
+              "address": "Provo, UT ",
+              "website": "http://www.eimisushiramen.com/",
+              "rating": 4.2,
+              "reviews": 173
+            },
+            {
+              "position": 2,
+              "name": "K’s Kitchen",
+              "address": "Provo, UT ",
+              "website": "https://ksjapanesekitchen.com/",
+              "rating": 4.8,
+              "reviews": 915
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"best japanese Provo\", \"top japanese Provo\" - optimize Google My Business profile with these keywords",
+        "Ranking below #1 for 6 keywords - increase customer reviews and engagement to improve rankings"
+      ],
+      "scan_metadata": {
+        "location": "Provo,Utah,United States",
+        "timestamp": "2025-09-15T11:10:27.577Z",
+        "total_scan_time_ms": 994809
+      }
+    },
+    "competitors": [
+      {
+        "name": "The Continental, Provo",
+        "domain": "thecontinentalprovo.com",
+        "performance": 98,
+        "seo": 88,
+        "accessibility": 83,
+        "bestPractices": 93,
+        "overallScore": 91,
+        "rating": 4.9,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 949,
+        "keywords": 44,
+        "domainAuthority": 84,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+300 keywords",
+        "authorityGap": 9,
+        "backlinks": 1124
+      },
+      {
+        "name": "Locals",
+        "domain": "locals.com",
+        "performance": 86,
+        "seo": 77,
+        "accessibility": 73,
+        "bestPractices": 82,
+        "overallScore": 80,
+        "rating": 4.3,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1089,
+        "keywords": 58,
+        "domainAuthority": 82,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 999
+      },
+      {
+        "name": "The Social, Provo",
+        "domain": "thesocialprovo.com",
+        "performance": 88,
+        "seo": 79,
+        "accessibility": 75,
+        "bestPractices": 84,
+        "overallScore": 81,
+        "rating": 4.4,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 908,
+        "keywords": 25,
+        "domainAuthority": 83,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+50 keywords",
+        "authorityGap": 1,
+        "backlinks": 831
+      },
+      {
+        "name": "Communal",
+        "domain": "communal.com",
+        "performance": 88,
+        "seo": 79,
+        "accessibility": 75,
+        "bestPractices": 84,
+        "overallScore": 81,
+        "rating": 4.4,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1044,
+        "keywords": 37,
+        "domainAuthority": 84,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+50 keywords",
+        "authorityGap": 1,
+        "backlinks": 862
+      },
+      {
+        "name": "Teri Gao Asian Cafe",
+        "domain": "terigaoasiancafe.com",
+        "performance": 98,
+        "seo": 88,
+        "accessibility": 83,
+        "bestPractices": 93,
+        "overallScore": 91,
+        "rating": 4.9,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1244,
+        "keywords": 50,
+        "domainAuthority": 76,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+300 keywords",
+        "authorityGap": 9,
+        "backlinks": 1193
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 67,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-15T11:14:36.949Z",
+    "businessProfile": {
+      "name": "Demae Japanese Restaurant",
+      "address": "82 W Center St, Provo, UT 84601, USA",
+      "rating": 4.3,
+      "reviewCount": 275,
+      "phoneNumber": "(801) 374-0306",
+      "website": "https://www.demaejapanese.com/",
+      "formatted_address": "82 W Center St, Provo, UT 84601, USA",
+      "address_components": [
+        {
+          "long_name": "82",
+          "short_name": "82",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "West Center Street",
+          "short_name": "W Center St",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Downtown",
+          "short_name": "Downtown",
+          "types": [
+            "neighborhood",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Provo",
+          "short_name": "Provo",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Utah County",
+          "short_name": "Utah County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Utah",
+          "short_name": "UT",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "84601",
+          "short_name": "84601",
+          "types": [
+            "postal_code"
+          ]
+        },
+        {
+          "long_name": "4417",
+          "short_name": "4417",
+          "types": [
+            "postal_code_suffix"
+          ]
+        }
+      ],
+      "state": "Utah",
+      "city": "Provo",
+      "place_id": "ChIJaaibnVSXTYcR5oi0aKGrdZA",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "reviews": [
+        {
+          "author_name": "SHINee Yellow Neko",
+          "author_url": "https://www.google.com/maps/contrib/112521026476429466526/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUCX4bkGKQp4gznZGIncN_Y4ya_I-2ouxpmkArLEtdJJ4V-CX8U=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "We got the combination tempura, dragon roll, lemonade roll and the combination yaki Udon. They were all sooo good and delicious! No left over to take home! We will be coming back to try other menu items!",
+          "time": 1749087388,
+          "translated": false
+        },
+        {
+          "author_name": "Taylor Mangum",
+          "author_url": "https://www.google.com/maps/contrib/100399581311158423182/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXhKKMkbAD-4TcFY8XmTIUCe704AfE9lrD1wnkSuBK9Dzkp0I9n=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "Pleasant atmosphere and server. Nice presentation of food and tasty! Had the crystal shrimp hand roll. Offered a special buy one get one on the Las Vegas roll, ordered to take home. Will come back again",
+          "time": 1744147322,
+          "translated": false
+        },
+        {
+          "author_name": "Ty Clement",
+          "author_url": "https://www.google.com/maps/contrib/106026483792689971455/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKga39vu1o8Q3Yl0ElldzFL-bj-FuINPzbvKiRTiqwDCh8ogQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "4 months ago",
+          "text": "I had the Japanese katsu curry and it was fantastic! The curry itself was rich and flavorful, with a perfect balance of spices and a hearty mix of potatoes and carrots. The katsu chicken was incredibly tender but still had a very crispy crunch to it. The portion size was generous, and considering the quality, the price was more than fair. Definitely one of the better katsu curries I've had, and I’ll be coming back for more!",
+          "time": 1746058489,
+          "translated": false
+        },
+        {
+          "author_name": "Koko N",
+          "author_url": "https://www.google.com/maps/contrib/116201535457567514151/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocItsWRJay0EiyFrkslZVVPo1axOkeFbbE9LgNl0VTjqEKcBIQ=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Great Food! Was honestly surprised at how good it was. Good prices.the shushi was pretty good not incredible. The donburi and katsu don were amazing.",
+          "time": 1751337090,
+          "translated": false
+        },
+        {
+          "author_name": "Kevin Smith",
+          "author_url": "https://www.google.com/maps/contrib/105247382281710128956/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWnE4LpFDhf3Z3PxAohYfvl8W5-uedQf7f3fBNGIEbq77SztX3jFw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "We came in with a large group and the seating and service were excellent. Sushi was fresh, would definitely go again!",
+          "time": 1750449648,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 1080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117873384119260694920\">Demae Japanese Restaurant</a>"
+          ],
+          "photo_reference": "ATKogpfSqzn3gytZn4Y05Ag6fXWt-n_mMRXRmBO_SAWZV6vix0AVH00PgdCLDxP7SdXgdchJKGMHmlWySlRvxF4vFSU9HDkyWGEXtpOAetrW3-fuE23vAhvINxPL8N5SUJG1f5m0Ha6RVWPw_nLq8okqdoBs2VlijFRWXh1FpoaQkcBJ6xL79ti8ZPmGEL2Rw5tzq3zJZ3DtS4Y6AlwCZwFuHaZ8HnFETN2ycV-vi2t-2bGhCqcIwiS58DnKSpV4w84L7DNUjv-Z1JE8cnTpqVtTPOG1iYbYOW6RbSMMjKGnL2lTUQ",
+          "width": 1920
+        },
+        {
+          "height": 4158,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117873384119260694920\">Demae Japanese Restaurant</a>"
+          ],
+          "photo_reference": "ATKogpelPjH5I1VaAshKErW_u8IRg6-g0JeXWxX1DSHcSjw0oWvD1urhCx8dJnNhDzz2E_jJ4adCqoBxawr4eHMKVw8px4LMVxA6Lp9P3q3i7KPGG2kwgqxPQB513Zcw6n_W9a_muQDmiWeVEtzKzUEgIcF3AHAwtlpHG73zv67i2oP5BRSNvkqQb0eOb8WBVa3heOyJm6pDPTPkvOG0OqzCvTkZ24Mcp9KcbSDE9by96ZjW2UrT3IJg0b2QnjtqMSg1ToELEYyPB69qJh_z6eba9o7tNVMESJh6nBeDdPZoY4MuGg",
+          "width": 3853
+        },
+        {
+          "height": 3072,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105794366462517304836\">Gerberta Black</a>"
+          ],
+          "photo_reference": "ATKogpeWS1hY8Uu8lsiglBc-jwBvrAJSB5zNxYGh1Qzcpn4GcrTsPtq4KHIDzRe4E3BP0V4L4-UQtTt8iKTGdADo27MxXGvxLc3_BFewBRh_-pmmf2J8tA82tpXbgPcwTaoOw6a8HjWsiRblIQ3yuu53cgML1sDsfAxy7w5VPIKocDdtMPAcwy8h-_Kv6Sv6aFcNEi_LJEQa-bjGzm8uxQpcLy-F2wjXPDhSf0ThakNkUEhuCg_-aQLk1mGdxAmNSZpxYHPSi3BjoUhSdQTcDTkXCCL7p06ScL3sD4hCJssIzg8lBoHmV8sayO6P1fEHOgNzUtinRD-2ymetbJs-Sn4iEmaxiGWl2qLX0qOEJl5AEzw2XY7D6DDdTTSMTSwoA6R8uhd6XaaDjSvVKIzRwYfyyi8ldxuF3RVxuxXVlvdKIpAf4ZpFy1uXD8pbgaIxJA",
+          "width": 4080
+        },
+        {
+          "height": 1862,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117873384119260694920\">Demae Japanese Restaurant</a>"
+          ],
+          "photo_reference": "ATKogpfJamBb7TZlNMZzAXCUVx_yqrx93gkeI4DIfvLGArad-Sf2B0fYc5Kfb1XzBXZ0TGjAZMG_d_5uR7DmRIIi_t7G6BLjvdsM8bIys_qHTPh9TiRoTkSe1qbawIyUDnrdN16spl3GDo241JfOBjObx2TnKfYd2NSlJkykzy8aVuGWmY6PSqW0STQbBpQW6C6_c9klzOKfa_cH_n5FJPTBCrQLVAuhThhl2xUpGyJM3K0rew_0EFUaVYWTc2naxEPtG7WjhZK7g4zhQsBVwYAk5kCy4bmB5bMy7RTOrojJ3dedZw",
+          "width": 2676
+        },
+        {
+          "height": 2880,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117873384119260694920\">Demae Japanese Restaurant</a>"
+          ],
+          "photo_reference": "ATKogpcWZigSnx9ME9ag7UJfnNo-0AoZyUMGoxthDkPlF3p0Vf5g-TNGOufrajmXJHx4Mf4BItjNofCqzyEykYATdFttDf-WbcnWJjR3hh7DqzF97VEEUAeJbpPaA3nUvdE5ijV3FYP6Wm6RlaLajd22Kvy9B89WBwIjrFTeHWjcv-e8py6GNgm4YhaXMLasng0xfDHb03BgVOMsID5c678TkMSEgguMDg3V-lSNOD-FoO_bTzzCqgpE_SVuJdDCvTxaoZm0_kBygM2p9fP65gTRTUE0eBJtz3PtL1POO38ioaxdGA",
+          "width": 2160
+        },
+        {
+          "height": 1639,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117873384119260694920\">Demae Japanese Restaurant</a>"
+          ],
+          "photo_reference": "ATKogpevR1IrKihJL4ATXqrom-0srumBQnLhikjaHBYZXf48VrlRNaoVZ6TeDaiqCrbM1Xgon4AkuQCZkezMftRvrCAYGXvhV5j2U12HjIonsQo7knGUYFWycfWULFT4CdffYz29ZOGeym_6AJiCsr5PPxO3iwVr5ERJDl-iptjAV0nau6Raxlp4z4z0nCpt6cM3rfjSmE_pwhXnc8LGaCcbGtjnlSNlEQ61Lki9PrnNmnyLh_TGpT7GdpmRx4wXV0eJ0PMZrvD1bVW5X3RIO5RTiQ9SPw289b_FqUmWKwdDKYwyng",
+          "width": 1262
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117873384119260694920\">Demae Japanese Restaurant</a>"
+          ],
+          "photo_reference": "ATKogpcOJEqm2pchxyI386JhcfN_CcHcqoufablTQM2AifQyAdAjUOPb4fDBvXZEaOl8pwjYHE-z0h2rfFdqfrLVsXfEYHM0QAdLA-ZpdhMZbGYca-4DcFh3UcjEMBZcaDB2e5_3XkJOFPxEyJrJxUFpdODoXQIBDqMluDSq1UDJZ2GuBrBxWS06Ii5KkOj96xQEdb1JMDmPDCCJWqYNTNyX2t3SoCPHOH3qSxr7t8YVckIZa98cF0oaJyCjsKEH2JX0NBM_1fJN2y7UJIH3d-Gq-U2x_E7ymOXypz0k2sG_CPdHkw",
+          "width": 3024
+        },
+        {
+          "height": 1924,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117873384119260694920\">Demae Japanese Restaurant</a>"
+          ],
+          "photo_reference": "ATKogpdCK9MKSiVt2IB7slEkdwOQyRSMYzXv_U3i7zVkk5LLWKDLwWZImkBZza3bYAaYlppeUcXyQ3tepjQI2tF3dX9Z0xVWzzqWd1t0fUinKXK99lc0FlLrMSUpdjn90DAz1dHOdd68YRlaRwOSWEXjc6Al8DT1Fjlq0AOfu5JqSs4IHTXjbGyK8xZF4B0mq86-2LF-vjwb_oTFzjPnCSI7H7Fm-04AbaOPkp8LtWT9fi-OfX-PGff9qHfKQMygf6XyrsaKaIkQ6R-0vWwkjDlLGykleXiz_QOgwvY3buTSbBxVsw",
+          "width": 2099
+        },
+        {
+          "height": 2160,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117873384119260694920\">Demae Japanese Restaurant</a>"
+          ],
+          "photo_reference": "ATKogpeBd9KJxN8eHXN9QuB5IuoVyPVRYPerz4a16WEqUYtosFHYTkf6UoP8cZ3Mx-8gcO2mzs95G9uyaNY-6gW2JiPh58MokT1yq5y_shCaWCvdgCSo8sdxksY0q0fOXYUcaDtOFxtjWh_OQSNKy3k8BOYrNzC5LyKW_iqL1t6p8XJJPs_Inc6bnr_rFHmkGOeBi_vnXEj1Fgyb5kjQlFqp0GxjA_gZojcphk7TUiV7IXOVs6ngwVEptu_-XlYUqPNgj1nxWaNiwdm5UQ3jz155lQzXrWWDTGkhEtrOFcf3QfzyPA",
+          "width": 2880
+        },
+        {
+          "height": 2160,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117873384119260694920\">Demae Japanese Restaurant</a>"
+          ],
+          "photo_reference": "ATKogpc-cDqQr-Mg-x4GgvNGOkopkYqnIgCuMsINFD-JWTQVo_w0mOlnJmBX9IBjZhcG_tDRCcvsd5U4rgCvgkgfkJ2ugWo8IbMNYsc2QRrCkAwEsKOZVF00xGTVxaqLkw0AZJSWh4nAUfkZeV1Zk8VG5tGMVziAocuKEu7tL_lYmSG4s_6Pzd5c-rUGymR_zQJ7tdSTHiDLc7WNcLlsh1r7FhHl3IWNcdKFjWvI3H6Z-w6V6E3rtcdDCzQzUgxQcrecUFldfQKmhrOBQWhfwEPruHueUTJwwRh1CuCfwtKZ8UAlMg",
+          "width": 2880
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 1,
+              "time": "2030"
+            },
+            "open": {
+              "day": 1,
+              "time": "1130"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2030"
+            },
+            "open": {
+              "day": 2,
+              "time": "1130"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2030"
+            },
+            "open": {
+              "day": 3,
+              "time": "1130"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2030"
+            },
+            "open": {
+              "day": 4,
+              "time": "1130"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2100"
+            },
+            "open": {
+              "day": 5,
+              "time": "1130"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2100"
+            },
+            "open": {
+              "day": 6,
+              "time": "1130"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 11:30 AM – 8:30 PM",
+          "Tuesday: 11:30 AM – 8:30 PM",
+          "Wednesday: 11:30 AM – 8:30 PM",
+          "Thursday: 11:30 AM – 8:30 PM",
+          "Friday: 11:30 AM – 9:00 PM",
+          "Saturday: 11:30 AM – 9:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "price_level": 2,
+      "editorial_summary": {
+        "language": "en",
+        "overview": "Strip-mall spot for sushi, bento boxes & Japanese standards like teriyaki & tempura."
+      },
+      "url": "https://maps.google.com/?cid=10409414823471515878",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcNZTwuukXaXz17Hvd-u5Y3RnSsy8-2K5BdzxWu1_Ri-0G_2xT5-WinU42zFMKtRMxKMP2nqPQV4PDe5ZbnOUWr2ePG-md_fwTIaZaQL1hSUXkokTHJ0lxFegOT3IQ9Z7v5mGGrHZ-uPyUFZ7BHInT29Z-GbyT33tF3GO2GD_pR1ouZ_Ll0SAcscQLkhhxqDmiZAZ9EMThwb0ozMudecQC1WrgvfZqvfYF9dSx6dPUTHMuF0a9FHwj1Zsp4vfPb2uH8LbilYU7PAvMX9wzMHzNUcJu0pD8yGamWfmWb3q-Tgg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpceYPNFdPKdVpoUR9aZfiNttX3pbI_MaXSGD-k0IfkaSTuMoXreujsiOiF23xmMWF8z3reeQdNIy34wk_ASnRg5E3QctlnJkjuz1E7lvMpr-wTPd8-1H-7Z0Z_wzECdKblAEtn2Y3vgqDHnnwl_jpo5FEF5Nj5-vWY114W1bRwvn8J2f1C6cy64QwNg5oNoSccTk48HoMlYPggjazyeKuzdS3tvkCb_BvrAqHoY1Qu9tjxwYxAXSS-i9F07ywDAH40LX9tzJRMFk6zLgomP1LxtFz6FGqPIQZrkEuvI_vfbtg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfHTH9nUSIuYplNzB2AtEz6le8XeC0_Yll0S28FPjrqjY0npjKIz6RN8iVDqmo75OXavPZxMplw-rWkxkZPgpx3HTk0em8bLdvZTcEnYOSrLVRBh7xNepcYi9PdDmhii7vwQFUSbNkbKWuX9pfgSPYxsoxXpJLG-USJWmozULx9A3v2tZVD6Cn2pS_TPNDHNeTr0r11U589MAZkiLSwVLlHUeVHfv2ZZ7qdfUGtNvZ4kEC_s15WwYn10DmSno20LLfgi9fHwj4F2etHYsTDKMBKmzCyONpJgXKEF_MmH0QOAGHBpivjhyP_DTi48jmb1rJVdS7LO0cwI_2cdwMvlhLIHkD9Nxjb9ZInfXGK5Cgpt7Eq-AiQfKontLqgtvqzVjH8jXs_Po8PuhPaf5Q308NA1OEQoiaHNxY89QePlv-Mb3x_yu_vRZkyGF0tZA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdNOE4SOIKxMtm3TpGALMf-UPKjwcxEyD2lH7MYvYrbYEnBmTbxbkPntf1166CzQiiQfH5P_6SnoeEfITUjEdtAvEoAYOIV39vnXrHTY-k8nY56HVGUiXHMuKPdbLeVEMzKtUNWIlL8MDEfN_9OY6ZqXW5ZpWgHwTn3dNodZAmeZQy7aPACtzfjCLup3rxhyvHSRYkgAoX5Owcl6vjzCSUrkr6b1iVOPemMg_AKWMHPx6esS1z-ZS8HfKSqcDP2CGXn8bZtMcGnw2uM9-njNu7TB7ERJUTKyDOrwbtqqWE8ww&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdy9wHmWj4Pv7i0I1YLoqa2TylaNTTHk_oNjc4vuzewxivhisrPObbGrlDqS0Fe9jkgUQccZs-dvb0KTkiOA4L_tNu2nvXTfaRo2jsRFBjNxAwLdSJ8GrPNZOZjDnnZd8dyCT7H7rqTJMdpJZn5I8vdnxAbvqImbkancuLzCuuSfv9DexBm_Hj8cXT_1aHuQPvR5f7Mfbbio3wwlxtMjPBWE_77neRwNCIOtE3AfUaZnqQ8GetVcB5I8KwJGJ1muZrBrIrCRsMalz9x_u_Pv2mr7p93jnuMliL2KKvEHFrnvQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpd_MrLfl8WxPTfXbkhGr4KyInHCfxDH8O7brPImoEOhk3DmDl2Xgom8zI9Fb1-oSDHwpbiU9E2rRF-IeiY83-WsDGtAUFt_RHIbd7ZQAV_t1tREyzJneep8mHaEtVLzdokWphX-X3_gad9qKhUKatLPoCukCtxHo7wnJyec36PCwchvvWBgbtCTPoLVJy3J8mGsdhwxAwDh0K2sZtYuu3xgf8TI6cSnGRk77N9n9R1FYheFeiyjOwrnDecWO89fZThUfUwGufF8V0NhosqZP-pGfZNOsUZdYi30Ceqd0adsyA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcuAFqMJ0fgu0bXEpo1mzoI8j_3qimgM_vG29pIy6E9sjpBTvqIeUrqNk3NsFyleB4SfgAxZaGVO7JxPtHo1OQNwMSvlONFrGXbPKPwBSP1OvFzF_iT7CrOF2cLxzO1E0CHsBRopoadt9poyx4rkgXWEW5KcU8_YMtvMESIgrTc88xbedbVgPwBNoxJ4tr5IAhpRFYyDP_R-b5FmzoZNHOg80fOgEG7qFeOraRAV8VQ3LENsvTLlrPmKTxYehD1rByWXHU-9VXWcZaCVYVAvJkOStwB0WU4__mPsO4jLliA9g&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpeHXgscZoIuD0R7_QHQxPQE6k4uLZEtxbGO7xrgdp4Ecz4UNxUVBm4O_ySiW8caCM7yCcXj2NO8Ix_KAK8eF-c2aMdpoxOiEmjarCbP2wFKzv1ARLjd8eOkxb4iPOvPvPS6dup24f46gnGPWvL4T18wwksAnrWxQyrjInvtFeJqO7dSGmn3c-PLqPZbu9CYORga5p9FzpW6bUyjjGT-eDkpVqCeKNGUyCCh49CUPnSHNxsWFs1zBdGiUkkhKy2F25oqEIVxWaOQwXJfCa7LRNXItj49Jq_jDkO-32YM2kGdyQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpeuP9XTV9TI0iz7zzrqQGYuX5WejMLoRun3z_i4WpDyc67swCpwdiao_4TnCsy9LRl72-LYT7wEyFGbJZ-xkhKFvwTkWCjiJrbRvjRaRAWvON7M1xK_gK_WVUQPhSO3Qx-BhcoekgkzIxwwAxvWALLfdIeNNODXXnIF236I5UcAqs9KrO3Ai56EKDQL3IdjjK3krwrAT68FqNTqGShxSZItKUgFHN4oIe5Yf8U2Zf1fQFHtTapBou5FRC2GUucv2LVODWL0L7tHLh68tM56QYnPbuSOuKenMDtDHiz2OAPbLw&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfzCJUgiYnbo5zK4zZ4-gl67OukJbFj6g92krmB5-CrLoNLC_IYdwnPmR1uzj-qnE-ukIjf4chrndX_DnUTOxt_laI4KnJ-oc_iduSl3hB1DfNO0uwpRHIr9SIcCkRjDtOyYc-fbfoVaJZKf4z3sVS6MHBGCLtI2MrNdSn3UsXhJdqFaJofUDHT5GYZ1gYSv3_-Iue5BSjmKco6B1M86GHiKFfQSxm6fqgpS9Aghc2e2gf9BpQYRf6BSc3iHQBkDjTlRLKkMCyQrDBtGvk7kZigVg6nYiBefDYfSdHyFcIMgQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 43,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": false,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 86,
+      "totalReviews": 275,
+      "averageRating": 4.3,
+      "sentimentBreakdown": {
+        "positive": 90,
+        "neutral": 1,
+        "negative": 9
+      },
+      "reviewSources": [
+        "Google Places API (Apify Enhanced)"
+      ],
+      "keyThemes": [
+        "Food Quality",
+        "Service",
+        "Pricing",
+        "Atmosphere",
+        "Wait Time",
+        "Portion Size",
+        "Cleanliness"
+      ],
+      "recentReviews": [
+        {
+          "rating": 5,
+          "text": "We loved everything we ate!  Thank you!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 4,
+          "text": "The food was great and they were nice. Only problem is that they got our order wrong:(",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Great food and great service! We had the tempura udon soup and the chicken katsu currry and sushi all were so flavorful and filling! Def will be back",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "It was yummy and service was good",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Go get the lunch special bento box.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "This place was so good! We took our daughter here to celebrate her achievements and she loved the atmosphere and all their food! We will definitely come back again and I highly recommend their lunch special! Fairly priced!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 1,
+          "text": "When you guys came at my husband saying that he had a dog it wasn’t our dog, we came in there a couple days ago and the lady told us to leave when we had our kids there, my son was so sad she told us to leave that was his favorite place to go",
+          "platform": "Google Places (Apify)",
+          "sentiment": "negative"
+        }
+      ],
+      "detailedReviews": [
+        {
+          "author": "Julie Hollingworth",
+          "rating": 5,
+          "text": "We loved everything we ate!  Thank you!",
+          "date": "2025-09-06T00:57:54.493Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21Rd2RVcGFObmRTVEdkaFJUVlJiR2hRVUhSWVFVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXtsGBAeJ8uVFZVVFt31XwT_0g8wgUuv0THuirB8yDyT5vXP2gn=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108288089096014401472?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Emi",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-24T02:01:21.703Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pGbWEwcDNiMlZTUTNkTGN6ZGlSREF0YURCQlFWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV7vvPH0gAi1vrPra99qrgz0YGHuZjJSG_r8H8HgYljqF6l-Oo=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108344606900475740382?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Wild Evergreen",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-21T23:15:12.652Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT210bk1qZE1VMUZHY1RWdFJYWmZSRGxtYVdsUVdsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVushRzNsLCEmqLfDtfB7yIlqG1P0IrZ1RDerSOUVycol7hb6xJ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106651768975067914831?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ulises",
+          "rating": 4,
+          "text": "The food was great and they were nice. Only problem is that they got our order wrong:(",
+          "date": "2025-08-17T03:34:04.608Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2sxa2IwZE9jMDVFYmxwR2NtSm1URFJCWTFabVQwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWO6yLceORo2oI4s6QS5nIGLxmjRG8_W000tFLneLzbfth1E_U=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110463476674886989557?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jordan M",
+          "rating": 5,
+          "text": "Great food and great service! We had the tempura udon soup and the chicken katsu currry and sushi all were so flavorful and filling! Def will be back",
+          "date": "2025-08-16T19:16:58.178Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t0UGNqTk9WaTEyV0daZmVYZExTVFZrVG5sNWJrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUwMEdZQZnIHvGtSdyeD6nDsP2DK-dCIKycFICoxDwzgZBx8McY=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112359071783615715976?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Marissa Coombs",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-16T03:12:43.508Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT201UmRUTm1XV2RrVEZoMlRWbDBRUzFLUkZSNlNWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVoI1pgX7558WS5qR5VB3ihP9wL_NbEW7t7mgyiZGhc9mEbXTy_=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105535368267259319644?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Abe Lamoreaux",
+          "rating": 5,
+          "text": "It was yummy and service was good",
+          "date": "2025-08-14T18:38:58.391Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2kwemVXNW1ZVEZGYldwelpHeEhhRVpYTUc1cFlsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUKVgWEOk-0BXsxG2agfz_2BSDZkCol_0GD9Zn0BFtcnc9dCD0O=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111477862146698738080?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kevin Mitchell",
+          "rating": 5,
+          "text": "Go get the lunch special bento box.",
+          "date": "2025-08-13T18:59:14.071Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pST01GSkRSSHBKUjFjMWJGSk9lSHBIWmt4dU1sRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX_SDnMgdQz2HW899ToikjYYbDX4VnUJZ2KASa9BDl43-dXRUac=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110922724164555087505?hl=en",
+          "reviewerNumberOfReviews": 47,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tiffany Weidlein",
+          "rating": 5,
+          "text": "This place was so good! We took our daughter here to celebrate her achievements and she loved the atmosphere and all their food! We will definitely come back again and I highly recommend their lunch special! Fairly priced!",
+          "date": "2025-08-06T20:44:58.771Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNEZ3N1UHZBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXT6K0KRgRTNRfsi_ikVqETONN8i4iNg3QaGoZfXEAchgPHtBKkPg=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103618633538675883681?hl=en",
+          "reviewerNumberOfReviews": 158,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ericka Kinross",
+          "rating": 1,
+          "text": "When you guys came at my husband saying that he had a dog it wasn’t our dog, we came in there a couple days ago and the lady told us to leave when we had our kids there, my son was so sad she told us to leave that was his favorite place to go",
+          "date": "2025-07-30T16:34:31.969Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tWTVZtTTRPVkZ6YXpodGJVaG9jakZpYW05MlQxRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJjYxhup8WzsOPNQMAxabmVuVDsCT38tm8oNXY9TRwdtjxw_w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105589398297431341613?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Penny Kinross",
+          "rating": 1,
+          "text": "Since this has gone under new ownership it has went downhill fast. Walked in with a group of people and server told us we couldn’t eat there and told us to leave!!! We had 2 small children with us but NO WHERE is there a sign that says no children!!! We have ate there before with them!!\nI have also called in orders and waited 30 minutes before arriving to the restaurant and still had to wait over an hour for our food. Poor service. Server was rude and yelled at us and told us to sit down!!",
+          "date": "2025-07-29T20:24:51.930Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xKVlJtVTVjV3d5VWxkWlpHRkhTVVYwYm5Oa2EwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJBL7MXAz_QllMKIBcrdYMGne0MXZHTdOG4zM-ez6p4sqRZ-A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103152754286965012740?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Haygen Emerick",
+          "rating": 1,
+          "text": "The lady at the front was so rude we walked in and she told us to leave",
+          "date": "2025-07-28T23:57:04.731Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xremVrbHhObE5XVjJwdGRISkJTalptTFVack1GRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJQY8QW-OTnYp5BYMwSkb1BwNIWi0tsK6I92m9l-DBwL0aC_A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111978503452159366872?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Irea Cheshire",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-26T20:19:36.034Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25OV01ITmxXWE56VTFaS1VURnBXVEZ0ZVV4dlVYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVC56qj8K2LUV8t3j-biA9nzOsdC_nk8EeqnpgcZCbTuhYtBMY=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101209245844198632000?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Zachary Allen",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-26T00:21:28.736Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2w5S2NqTndUREJhUzJoWmRuSmpiR2RmU1daamFtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWZoayinrSM7OzBf50qIsYJuWuXdt74oje-qZazzMzUrM678Pa2iA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100434312869664620380?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Meredith G.",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-22T23:17:25.265Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xsVmMwSnhNVjlMU1hoeFZFOWpibEJTVlZsRU5WRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKZcoqcsP2DXieILePCn5aYYdRA_-qSSkSIouiLctK2kedKfJMV=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107162459032035779212?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Rustie",
+          "rating": 1,
+          "text": "I’m giving one star because Demae refused to honor their own online coupon for Buy One Las Vegas Roll, Get One Free. When we tried to use the offer, they told us they wouldn’t apply it, even though it was clearly advertised. If you’re going to advertise a coupon, you should stand by it. Won’t be coming back.",
+          "date": "2025-07-22T18:15:26.092Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21oU2EyMHhUVXRuVkZaTWVtUmtVa2czVlV4TVlrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIP75a-O4SHRy0L3Kv9ZhgZitTvJcgafQ73debqrxb9bdSS0Q=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112252297708264542434?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Rustie Weinberg",
+          "rating": 1,
+          "text": "Poor customer service, overpriced mediocre rolls",
+          "date": "2025-07-22T17:43:06.039Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21kWlkySlhTVWgxUnpnNE9WaFJOV2xQWm5aR00xRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXgxXcieS8ZhkUzCyBU7ZaON0QckVJBtCESbbHN3B5k1qCXdWD17w=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113301316315950328545?hl=en",
+          "reviewerNumberOfReviews": 34,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Trish Olson",
+          "rating": 5,
+          "text": "Delicious and quiet, great service",
+          "date": "2025-07-20T02:27:57.992Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25OU09XeGhabTlmVERSNmNERk5jMkZoZUhBNGMwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVveDY3c469XcsANz5GDjd5YcEQuFXTLRy54nJfIKTgaJyshA0=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111595137110310224460?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Johnathan Linde",
+          "rating": 5,
+          "text": "I absolutely love this authentic Japanese restaraunt. I had the Dragon Roll, it was the best Sushi I have had, 10/10, would recommend, would dine again, would share with a friend.",
+          "date": "2025-07-19T01:26:36.883Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21kTWVIVTJVV3BDU0ZWNmRHMDJXV1F3Y1dacmQyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIW44eSsvPbVJ60Ehv0mreiHUIPsAnOIkQr_H7cln9tUPnJuA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113077276190667090624?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Bryan Bott",
+          "rating": 5,
+          "text": "The waitstaff was very helpful and friendly, but the food was the star of the evening. I had the oyako donburi and it was glorious. It tasted as good as anything I have had in Japan. The portion was generous and delectable. I will be back.",
+          "date": "2025-07-16T02:32:59.624Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pVd05HWTRibVpzZEdGVVRIcG9MVzlaYVZsVmVVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVaq9fCneCD-JdDveiswrIPHEGEAd1N6moW-zRBBh8IDToUT5w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105346358162697482757?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Gerges Maher",
+          "rating": 5,
+          "text": "We loved the food and the waiter was super friendly\nThankyou ❤️",
+          "date": "2025-07-16T02:31:51.800Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2twMmNFcGZjbXhhU0VaVlgxVlFURGRrU1VGbFptYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVTk3mOF6YeBVMwChrWzZd2aGsVCua7ACKDipj5qRNtxO3MzO8j=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103884478663063675905?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "RP F",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-08T19:11:06.471Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21GelVYRjRha0ZPY0RReVUwRnZkRkJWY2w5VGRsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLFLzqg8iZ8ThSh2SkRrNiaL96RWgSaDdnlzNvdzQqHtnugLQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113247520227192329170?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Lily Ratzlaff",
+          "rating": 5,
+          "text": "My sister and I had the place to ourselves (though it was a holiday). The food is SO GOOD and the staff members are kind and considerate of needs.",
+          "date": "2025-07-06T01:19:43.065Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pkclgzcEZiM1pIYTBKaFpYVmZNbmh2ZVdoa1dGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVFWlq1xDkput07BcZDmyOkUS7cGdffFnWyowCZ-gREM-mv6mem=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116538470824234350297?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Justin Fairbanks",
+          "rating": 5,
+          "text": "Amazing food! Service was excellent!",
+          "date": "2025-07-04T19:19:17.221Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21SSmNsQTBNVTB5YlhGM1duQkRTbk0zVUV3M1MxRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW5mj-Q1wBlbJUiAq9ynnFamj4yU5xm5SjOEpKC5S-UKF7Q0I_t=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113756043951433614448?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "John Rudolph",
+          "rating": 5,
+          "text": "I Remember this Restaurant in 2020 or 2021.",
+          "date": "2025-07-01T12:50:03.268Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25Gb04wVTBVamR5VWpGVWVERTFWMHRMTmtZdGNrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXlIN9LSMDJx7gphXQLQmFXHQMXilinmbkb1IfXmFsRzWYWkYgs=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103270043989422462357?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Koko N",
+          "rating": 5,
+          "text": "Great Food! Was honestly surprised at how good it was. Good prices.the shushi was pretty good not incredible. The donburi and katsu don were amazing.",
+          "date": "2025-07-01T02:31:30.354Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pGdk0yWTVWM1pRVVZNeU9XZHBSVWRxYlVOcVFtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocItsWRJay0EiyFrkslZVVPo1axOkeFbbE9LgNl0VTjqEKcBIQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116201535457567514151?hl=en",
+          "reviewerNumberOfReviews": 20,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Amberlee Adams",
+          "rating": 5,
+          "text": "Delicious! Definitely would come back!",
+          "date": "2025-07-01T02:30:58.089Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21KV1MxVlNXbmRyY1d0cGIzaHpSMWg0ZFZOTFRGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKk21SGhrQbR_pJcNkm7fwt03c-ixq9eEEqtABK1wzqi39bjg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113227217127242477562?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Niel White",
+          "rating": 5,
+          "text": "Good food and a great place to take a date.",
+          "date": "2025-06-28T02:53:09.855Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pCaGRVOXlWRXQ2YjI1bVdFSXpZemxvVFZaUmVGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJYfP2ioKOnoWcAXVm0nJF1k7iwFvgDoazAFVAtutYrqLGXAMI=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108558124901124523241?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Phillip Davis",
+          "rating": 5,
+          "text": "This is a awesome Little gem 💎 in the heart of Provo.  Definitely would recommend.",
+          "date": "2025-06-24T02:46:07.693Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT201UVpVcEhSazAxU0Zkc2JtWmpXa3hwYW1aVGMxRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWqolKU2fPGqtsb9XnOdwkvd4JkCLkzKYvcXz-wiDT9_8DCtBqy=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117125342943004555369?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ethan",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-21T19:00:25.158Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2kweFdVbFNTRzk2VlZWSFMwZGFlbTAxVWxoMGJHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL-zaL46zzNr88yCfg1uKNge7riiPw0MHa_ccah6c6RjOaTVnU=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102741032791710171555?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kevin Smith",
+          "rating": 5,
+          "text": "We came in with a large group and the seating and service were excellent. Sushi was fresh, would definitely go again!",
+          "date": "2025-06-20T20:00:48.636Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25GclYzTm9RWEptVWpnNVpFcExNemhJTjFGb01rRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWnE4LpFDhf3Z3PxAohYfvl8W5-uedQf7f3fBNGIEbq77SztX3jFw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105247382281710128956?hl=en",
+          "reviewerNumberOfReviews": 39,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ernest Chan",
+          "rating": 5,
+          "text": "The server is very attentive to our allergies restriction.  Food is delicious.",
+          "date": "2025-06-20T18:30:46.186Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21kWlNtbHBUMmxvTUVGTU1IWlljRGd6ZDFaR1EzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIu-9Gy_AoT4hloP0pM4HxQgTRfJCfHePBFAdlzUfn5UTvQ-w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112716621629102893329?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Chamellow",
+          "rating": 5,
+          "text": "Lovely place! Has authentic Japanese sushi and other options! Service was great and friendly.",
+          "date": "2025-06-20T00:19:40.528Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25ob2VVOXdiRTFoTTJKemVYTm1iV1JxVTNsTlpWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU6Y0XYj8Yo0906qHnkabKhDMnCGhpEAvOaGHOZOEjU71zQ85Rb=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103774343160303390973?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tiina W.",
+          "rating": 5,
+          "text": "Food was AMAZING",
+          "date": "2025-06-19T01:15:51.285Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t0aGJscHhTVXB3WW1oT1JVcFVWalExUldoNWJGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWQ670WcymSxRh1HLhFnnPMsqxZzDyl_P5ePlBR5vuvFS2iJsjNow=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116351111675706641565?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Daniel Orjuela",
+          "rating": 4,
+          "text": "Food was delicious for the price.\nDecent sushi. Special rolls were really good!",
+          "date": "2025-06-17T04:31:00.428Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xBeFRVeFJjbDlVWjNsUE1raHlialV0Y0c0dE0wRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWreYlNMBMzsPmtcb3qa8EOYIEj_mUIbgM1UGCWAWjnQ_7czM0DEA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110699696350363943195?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Arami Recalde",
+          "rating": 5,
+          "text": "Very delicious and with a calm environment !!!",
+          "date": "2025-06-12T22:38:42.311Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VKQ2F2OURYdmRqYXZRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVQ8paz4JNr5gR7ZXvtL_HNxdamMC-u7cdkpzaXEOczvkIedx6FLQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105077680891002308820?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Abdul Bazalar Gonzales",
+          "rating": 5,
+          "text": "Great restaurant",
+          "date": "2025-06-12T22:38:03.767Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pKQ01UUTRjRVJaTW5seWFrMXJlSFkwT0MwdFVuYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWQ7j5EXfdEnk6bolcaNo4xBpz7HsstFZOyirnBeCmO3iv5E3ggIQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107590479463191463797?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sheena Gibbons",
+          "rating": 5,
+          "text": "Delicious Japanese food. Server was on top of service, we got our meal in waves with the soup, salad, sushi and entree which was delightful. The Bento box was so much food and it was all great, we were able to share it. Sashimi was good quality. Highly recommend.",
+          "date": "2025-06-12T01:00:11.300Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VOWFk0cTNxOE4yR3BRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXBRP3g3J2nYv-XEjU4nIMW_qol7nnrkV0IyJhI302ArE-K1Qta=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112951338825763303247?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Isabella Pullen",
+          "rating": 5,
+          "text": "I like coming to this place. It’s kind of a comfort food honestly. Very calm environment in downtown Provo. Good vibes jeje. The food never disappoints. Very friendly staff",
+          "date": "2025-06-11T19:05:22.201Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJclZyNkROOWFLSXVBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIb9hDWJ3ycOXxH4F3hsgXVSYBCDo-4xpdE2bPLFbuGA12Lrg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114659962241113131272?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Adam Rowe",
+          "rating": 5,
+          "text": "A plus service highly recommended",
+          "date": "2025-06-07T19:49:01.848Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VMaTQ4TlR0eVB6aUJnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLlY6koSU1bT9DKw4Ii-oWrFIxzcqFTJJzwWORkjAouIL9seA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100513311429815019902?hl=en",
+          "reviewerNumberOfReviews": 20,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Corinne fitch",
+          "rating": 5,
+          "text": "Such good food 10/10 would definitely come back love the family atmosphere.",
+          "date": "2025-06-07T02:38:02.272Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VQXzF2cFMteWFYdldREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUEadWzVFkGF-xMDQNGflliE-8KuUxWEZ-qYWjFf0d1Qld_9y7-=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117691921076724049616?hl=en",
+          "reviewerNumberOfReviews": 20,
+          "sentiment": "positive"
+        },
+        {
+          "author": "SHINee Yellow Neko",
+          "rating": 5,
+          "text": "We got the combination tempura, dragon roll, lemonade roll and the combination yaki Udon. They were all sooo good and delicious! No left over to take home! We will be coming back to try other menu items!",
+          "date": "2025-06-05T01:36:28.804Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJVFMxN1BMNHZDUjNnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUCX4bkGKQp4gznZGIncN_Y4ya_I-2ouxpmkArLEtdJJ4V-CX8U=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112521026476429466526?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dallin Palmer",
+          "rating": 5,
+          "text": "Ive never tried Japanese food before, yet it was very delicious",
+          "date": "2025-05-31T02:27:02.268Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VOM3kwSlhSZ015Z0ZnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX6oDCF3vGT4sT7P6cCShCwlOn4vx8-5wDU7FDjWCeSgZSMvIQp=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107391103369444033274?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kaitlyn Fletcher",
+          "rating": 5,
+          "text": "The food is SOSOSOOO good and comforting! And everyone was so kind 💝",
+          "date": "2025-05-31T02:17:58.580Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VNR2ZtSXJ6cElhcDNRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUoipGiA7WPd0F6XAllTk-8P49z69-lgQ0Lx-56V2RC558JaIym=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111804244022164293963?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Nicole Graham",
+          "rating": 5,
+          "text": "I was worried when the owners changed. I’ve been coming here since I was 9 years old. I’m so happy it’s just as good! Even the gyoza! :)",
+          "date": "2025-05-29T18:29:09.244Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VPeWNsNS0wcWItYlhREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLSdkkYV1pTD2Y1JgJQOKRH0q2eqqLL-CWw52prATVpHBUd=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103450591725417501852?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Clarrissa Page",
+          "rating": 5,
+          "text": "The meal was excellent! Wonderful, authentic, and great price!",
+          "date": "2025-05-28T20:22:34.883Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VNbW5uUFRwNExUcFlREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLIUBshBMzjrYmlg6pSz5nX8RD1pKplNrG-WuJ29aMwrsgPXA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110413274519126622347?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ashleigh Muscarello",
+          "rating": 5,
+          "text": "I'm surprised this place wasn't packed! The food was amazing, everything we had was fresh, hot and so flavorful. We enjoyed miso soup, the Mars Roll, the House Tempura Roll, the Oyakodon Chicken, and Salmon Sashami!  Service was attentive amd the food came very quickly. Would totally recommend this to anyone visiting this area! It was so good we forgot to take photos!",
+          "date": "2025-05-28T00:57:49.127Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJem1yTXFWa09iYWpnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVrvkwhayZkSIdCZB9rigeN0zhD3EwGgNYZVXZ8yf2GfbwDvVY=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101887458111785235377?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ryan Gubler",
+          "rating": 5,
+          "text": "The food was really good and nicely priced compared to other sushi restaurants. The wontons had an amazing crunch and we got a free Vegas roll while we were there! Loved this place and would recommend👍🏼",
+          "date": "2025-05-24T19:26:02.658Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJT0FzZXlVeHQtbl93RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIy_tMUvpGUPd__SDYQdjYQj9Ppc5B4ojhkVsUs0JBBUnn0rQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107203366807796432728?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Daniel Pombonyo",
+          "rating": 5,
+          "text": "Sushi is really good here! Highly recommend! They also have some awesome deals Monday-Thursday 4:30-8:30!",
+          "date": "2025-05-24T18:01:31.715Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VKdlBocHpVM2R2UWhBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL0adRnyTQfosIncChETQFtq8PTQS7C1XgO3F-OS39ymyqvuA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106996120319705373741?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Keira Butterfield",
+          "rating": 5,
+          "text": "Our server was so kind and attentive the whole time we were there, we will be back!!",
+          "date": "2025-05-24T01:40:05.532Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VQYUs2dTZ4dHQ2YVBBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWbAaYfzK-NhEKxFa3o52czyR-vu23rry3cr6AlQeQ4YvDZ6w92=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111049113902909394390?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kaiwa Fermantez",
+          "rating": 5,
+          "text": "We love Demaes! One of our favorite restaurants!",
+          "date": "2025-05-22T18:18:54.603Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VKTzVwNmFWN0tLXzJ3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVHIz2G-N7iOrDwq-OHKrqTOTITl61NEahoEvWpG79IpegZfK90=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114108714974647303449?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Alan Michaelis",
+          "rating": 5,
+          "text": "We love Demae!",
+          "date": "2025-05-21T20:58:34.002Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJR0s0ZmpZbzhfUVJBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUWTRImLcETmFhmuLNNxfVbfEirAJziPo3U1q8ebXOTrid7MIam=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107509695505425719322?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "John Dester",
+          "rating": 5,
+          "text": "We have been coming to Delmar for 30 years!  New owners, but that’s okay.  Still loving the food. Great Bento boxes, gyoza, Yakisoba, tempura shrimp, donburi.   Just go!",
+          "date": "2025-05-21T01:50:01.727Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VQekF6NzdPNVpqMElnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKcHIi0ufIJX0Tni8u_b6jNn79xSVoWr0yNyRlD1Sq3-V834Q=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111760687931708715619?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Will Taylor",
+          "rating": 2,
+          "text": "Please update your menu to include all major allergens in the dishes. Had to spend the night in the ER bc peanuts were not listed as being a part of the dressing on the green salad. Other than that, the hostess was very nice and the atmosphere was quite pleasant. My friend who was able to finish their meal also really enjoyed the food.",
+          "date": "2025-05-18T16:28:43.814Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VOMjEyZjZweHJtLVVBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW5ijph5d3Sn55wSC7ggiQLS4Oiwam2S4tYU7pxhsUD1k6QqepX=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111527826370635051954?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Ryan O",
+          "rating": 2,
+          "text": "The wasabi was an insult. They could have at least put horse radish to trick us, but not even that. You can eat a marble sized chuck of the \"wasabi\" and it didn't burn whatsoever.\nThey also didn't include chopsticks 👎🏻",
+          "date": "2025-05-16T23:36:39.327Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VOcjlvTUNWcHRHUzNRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWMqy8ChU0bxMdkFLLTXnQ-9M7PRkMm0-LM5-UxSOcZuvitD5w=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113626291396841377066?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Jared Sahleen",
+          "rating": 4,
+          "text": "good Japanese food, the bento boxes are a great option.",
+          "date": "2025-05-15T14:41:40.779Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VOWDE2WTNzOG9DcndnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUsjBZWrnMtthK5huKiVjNYEPl0dbSnvWuuYI6pOzGtcZ1b28M=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116206114885571824476?hl=en",
+          "reviewerNumberOfReviews": 168,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Lisa Ferrier",
+          "rating": 5,
+          "text": "Good and service is absolutely excellent!! being from California, I’m pretty picky about sushi and this is probably one of the best sushi places in all of Utah and the service is phenomenal – so kind and so polite… Definitely worth coming!!! It’s now my favorite Japanese restaurant in all of Provo!!!",
+          "date": "2025-05-13T23:15:17.627Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VOdk02YzN3dTZmaXVnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVoCmvrExrRKTnY_-Sdd3O2Cs7ovyguKtsClQ6O2CrpIHayYic=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109269582295556415576?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Leslie Stilson",
+          "rating": 5,
+          "text": "The server was super cheery and fun to visit with. The music was upbeat and we left full! Great food for a great value! We’ll definitely go again!",
+          "date": "2025-05-11T03:24:15.595Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VKM0MyTnFGbXN1RTlBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUMr9ICnC8hof7OJHSw8FCV5CvnD-CAscm15rklvjEHq3kNiv_f=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112495029306233233064?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Cindy Brown",
+          "rating": 5,
+          "text": "Very fast service and good fresh sushi… worth checking it out…",
+          "date": "2025-05-10T02:04:51.070Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VON0pockx1dVlYRnRRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVA85lVoLcgb8SXeV9WW8NYdpfN_V9R4yw7dwDOnvhh90nG0og31Q=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108432481136906355094?hl=en",
+          "reviewerNumberOfReviews": 166,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Christina London",
+          "rating": 5,
+          "text": "We love coming here! The food is so good and the prices are great.",
+          "date": "2025-05-09T01:36:14.894Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VMaWQ3YWFILUxpamdBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVBKO8Vi7QtoiLnNPpI6zXujeB4hqhPd1rsRjA7ZE6Q5NbNINWUmg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116466487372122575432?hl=en",
+          "reviewerNumberOfReviews": 23,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Taylor Mitchell",
+          "rating": 5,
+          "text": "Came in with my daughter for lunch. Service was great, restaurant was clean and pleasant. The food was good and beautifully presented",
+          "date": "2025-05-07T19:42:49.283Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VOcTJqSS1LNF9icGNREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKF-1-Mx6NvTC8FwogmF5Ux2PtAJemscEkmEQK3GP3ezp4OzA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106482914901461988558?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Diana Hooley",
+          "rating": 5,
+          "text": "Loved this place super welcoming and food is amazing",
+          "date": "2025-05-03T18:56:07.283Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNZLXZyNnB3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV6L_KR_vCoTgHgW6pacfszwipDSpWPwrsusjU7CMMA-Jd5dUQ8MQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101972071798143825186?hl=en",
+          "reviewerNumberOfReviews": 24,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ty Clement",
+          "rating": 4,
+          "text": "I had the Japanese katsu curry and it was fantastic! The curry itself was rich and flavorful, with a perfect balance of spices and a hearty mix of potatoes and carrots. The katsu chicken was incredibly tender but still had a very crispy crunch to it. The portion size was generous, and considering the quality, the price was more than fair. Definitely one of the better katsu curries I've had, and I’ll be coming back for more!",
+          "date": "2025-05-01T00:14:49.834Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNZbVBTNXR3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKga39vu1o8Q3Yl0ElldzFL-bj-FuINPzbvKiRTiqwDCh8ogQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106026483792689971455?hl=en",
+          "reviewerNumberOfReviews": 153,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Annie Rice",
+          "rating": 5,
+          "text": "I love this place! Very yummy food and great service.",
+          "date": "2025-04-29T20:59:18.578Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURvMTVqSEdREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVJTKfL5E4sfUN8i7sqvcyrk_w9pMIEdqYI18VyDLFPGiQadzN5ZA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107107886321243791847?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Wildwood Forest School Utah",
+          "rating": 5,
+          "text": "",
+          "date": "2025-04-28T22:43:42.575Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURveTc2YkRBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXhlcE4TMmDkNQGkNLrIibF3ERt5AQpMhCOVJtpyyow0ryhbiX8=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110012150643518886310?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Bly Wallentine",
+          "rating": 5,
+          "text": "I LOVE Demae! Amazing prices and the waitress is so sweet. Plus they revamped and it's so nice. Get in here!",
+          "date": "2025-04-28T22:42:39.579Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURveTk3MllnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXZXp7uSDhTBM0AxFKpuOFbOEsk8odYOIZv7ROJgRNrImea-nh5hw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100016397651316843909?hl=en",
+          "reviewerNumberOfReviews": 34,
+          "sentiment": "positive"
+        },
+        {
+          "author": "N.B. Onstott",
+          "rating": 5,
+          "text": "",
+          "date": "2025-04-19T03:48:47.245Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNvcmZIelpnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWzPbUJFT2_WkNWOC4QveJybuyoSX8iqlJVzW5IEvgIzXXybVt6=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110939954307805040010?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Taylor Mangum",
+          "rating": 5,
+          "text": "Pleasant atmosphere and server. Nice presentation of food and tasty! Had the crystal shrimp hand roll. Offered a special buy one get one on the Las Vegas roll, ordered to take home. Will come back again",
+          "date": "2025-04-08T21:22:02.079Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURJcXZ5LTdnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXhKKMkbAD-4TcFY8XmTIUCe704AfE9lrD1wnkSuBK9Dzkp0I9n=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100399581311158423182?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kimberly Hamilton",
+          "rating": 5,
+          "text": "Delicious, authentic Japanese food.",
+          "date": "2025-04-08T19:04:34.668Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURJaXRmSWxRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVv-yIefUbe30aqfTyETu1B0ANg5MQFXamCjIED5DhLJJ7YjzU=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101296212684465511744?hl=en",
+          "reviewerNumberOfReviews": 77,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Aurora Ryan",
+          "rating": 5,
+          "text": "Amazing attentive service!",
+          "date": "2025-04-04T21:24:01.945Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNJbTlXV0FnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVCPWdvSgkJZyb8G6etv-dbOGrDf3NMq7IJXeZP2bDPzykmC0ez=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101518052938522571590?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "MJ Macias",
+          "rating": 5,
+          "text": "We have been coming here for years and love the food!",
+          "date": "2025-04-03T22:56:25.818Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNJemZQd2p3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKIyc6Q5-vdyfYpzutVuIlv-gWpADdy2QnVk5pbJYSweKvVXw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112850613416623342121?hl=en",
+          "reviewerNumberOfReviews": 28,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ashton Wride",
+          "rating": 5,
+          "text": "",
+          "date": "2025-03-31T18:23:04.291Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNJa3YtcXN3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVvX2Nn4IxCUOv7eGPHb7wTanGpA06_rYJwYX5ocdo7VPRgpE1KKA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109165245101211910075?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Lucie",
+          "rating": 5,
+          "text": "It was amazing. The food was good and the service was quick and the people working there were kind and appreciative. They played fun music and was on top of everything.",
+          "date": "2025-03-30T02:20:53.507Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNJMkpLYUdBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL8OnXL2X54iXhs0UnRAOelQ2U30kXPNRo62vb6HviyTWQCFA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112979479288218014843?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Hollie Hunter",
+          "rating": 4,
+          "text": "",
+          "date": "2025-03-30T02:18:36.305Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNJMk1MempRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKPdMciHG3AdfxJYu4pMMmBcMwKdQxqksUpenxJYEKHr2Qhxw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115737522538581879809?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "All iwannado_Isgame #ohyeah",
+          "rating": 5,
+          "text": "",
+          "date": "2025-03-29T20:34:17.151Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNJeU1QQW1nRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJr5FBTW_xTd5MHqYIypwFqKap9uhVCKNcKIVqTqDdYncckdg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117508208195229102182?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Stephanie Ortega",
+          "rating": 5,
+          "text": "Great customer service so nice and attentive. Great food loved everything I got. Will be coming back.",
+          "date": "2025-03-29T03:07:28.416Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUR3ejctSURREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKqctGIOa-1_KV4zjXgbnW6XR0l6lKjRyJS9oL-35tlyodVaw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100964734162887162310?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Olive Main",
+          "rating": 5,
+          "text": "The atmosphere was so peaceful and the food yummy!",
+          "date": "2025-03-28T00:09:55.692Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUR3bzdxckdnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL_5ufLOVextEg3CGxT8LK_Ovd5A0n7FdeL_X9PObtom8ycsg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101112855873728211729?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Glen Stowers",
+          "rating": 5,
+          "text": "",
+          "date": "2025-03-28T00:09:07.372Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUR3bzlyRnBBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVRzCb0mxe7c1GSF_G10NJFBAdpDZxLZyMCs7ehAmaumOVMBQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109572328567066771844?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Esther Yoo",
+          "rating": 5,
+          "text": "",
+          "date": "2025-03-24T23:37:45.955Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUR3NHI3eGJREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI0aA4nx0LryL7wIkeZEoofCOgPpUpI8S6Xl-1q-q_7r21OnQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103694304774071417752?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jared Kunkel",
+          "rating": 5,
+          "text": "",
+          "date": "2025-03-21T00:44:14.085Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUN3azVlYzFBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXJ3RWI2smf7PHEkuL4WzeRu4ebMS58HiOcFdO3Zu8V5iK5MbA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111709554224182787137?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Chuck Church",
+          "rating": 5,
+          "text": "",
+          "date": "2025-02-25T20:46:58.716Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURnNllPUmlnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKCUNNUNyIkTbCxqVDPzPFu5Zx0XCpWlPCWoAYtckdTxD39Cg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108515633297432154448?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Adam B",
+          "rating": 1,
+          "text": "Sushi rolls were horrible, fish tasted old and broke apart. Stay away from the miso soup as well, tasted like water with seasoning. Food also took “45” min to get prepared, not sure why, wasnt even appetizing",
+          "date": "2025-02-19T01:22:05.974Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNndWZ2LURnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL7AHAfQHk2KnT1mWqQYr3QDrIAXbRxrIfxCUINSx0ecO5DxQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109412997455618990749?hl=en",
+          "reviewerNumberOfReviews": 14,
+          "sentiment": "negative"
+        },
+        {
+          "author": "mary castorani",
+          "rating": 5,
+          "text": "If you are looking for a cozy, inviting Japanese sit down, this is the place. I got their katsu curry lunch and an order of extra rice, completely filled for 14 dollars. The curry was incredibly sweet and to dip with the crunchy katsu was a comfort. The interior is very spacious and easy to get to. I will absolutely be coming back again",
+          "date": "2025-02-17T19:22:07.537Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNndnQtdG5BRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXtzVUW92NiyWM8OS57LI8WHgoUqBJm0DHz3c7VbzEclWhMRu3ykQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104480540384850062199?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Matthew Petersen",
+          "rating": 1,
+          "text": "Ate there with some work colleagues and truthfully it was the worst restaurant I have eaten at in three years.\n\nI ate a teriyaki chicken bowl and three sushi rolls.\n\nTeriyaki sizing portions were lousy the chicken was a 6 out of 10. The sushi rolls were each a fail and a 2 out of 10. The fish was old and disgusting and flavourless. Literally every restaurant I have ever been to is better than this one. I have no idea how people are rating this place so high when we are so fortunate to have so many great options for Japanese Teppanyaki and sushi everywhere else in Utah County and Salt Lake County!",
+          "date": "2025-01-27T23:59:04.938Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURfMTY2WllREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVEELksHg-H4rqkHax_hG8VBfuIyxgUKH__YzD3Tfz0WguGrzH51Q=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118348296761154054496?hl=en",
+          "reviewerNumberOfReviews": 165,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Jennifer Leandro",
+          "rating": 5,
+          "text": "",
+          "date": "2025-01-07T22:48:14.480Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURmcWJ5dmVREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXM9uQ6ffmszuevdjyUET9PLFV2BGM0oNNjI6UqdUi_Sw5dy9WSFQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109038536420105603849?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "ceec k.",
+          "rating": 5,
+          "text": "the pork katsu curry was fantastic, probably the best japanese curry I've had in the provo area. came with miso soup and a small salad. great food for a great price, and service was wonderful as well!",
+          "date": "2024-12-31T02:25:12.525Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNmcGNXZjFRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWBudF_9LBND3-N59Y9x1TScpCBsa5lwLW2m8--R8d6MBo5BarLkg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100028647945568098536?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Haley Hansen",
+          "rating": 5,
+          "text": "The owners are so nice. They came out to introduce themselves. The food was delicious and authentic.",
+          "date": "2024-12-24T02:34:22.067Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR2aTk2QUp3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXaxaf7IxlPZ-REy-R3gp0sMUj4PTu8IRjLl5Kh6r47LmkIgXueaA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113811845538217020944?hl=en",
+          "reviewerNumberOfReviews": 20,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ethan Edwards",
+          "rating": 5,
+          "text": "I LOVE going here! It's very well-priced and one of my favorite places to go for lunch! My favorite dish is the chicken katsu udon soup! So good!!",
+          "date": "2024-11-16T02:25:58.037Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQzc2RxMXp3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXO2Fl5AaXUezF8dd2ZfIlXw6PfUGecLmU4FZg92-56h60ZiIIK=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107205640457295682749?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "David Jorgensen",
+          "rating": 3,
+          "text": "If you are looking for Japanese donburi or bento, this place won't knock your socks off, but it may scratch the itch.\n\nI ordered salmon donburi. Flavor was pleasant, but rice was low quality and salmon was so undercooked that it was mushy. Tempura vegetables were good though, fresh and crisp. Staff was friendly, food came out quick. Good fish is hard to find in Utah, so my choice was risky in the first place—my brother picked a chicken-based dish, and he seemed happy with it. If I go again, I'll try something a little safer, like chicken or pork.",
+          "date": "2024-11-09T19:10:50.173Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUMzaDZxX29BRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVflUKcVMvfI7v7YOzAqB0T0ip5c-ZDhKAgjzD_0bHcTscCRuoJQg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110810268319416872769?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Hannah Mitchell",
+          "rating": 5,
+          "text": "Such friendly staff!! Truly went above and beyond for me and my sister today!",
+          "date": "2024-10-14T20:38:54.097Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNYMHVyY1ZBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV3pfRwdd-4F-jQOWcxqUhhIAXwfl97ROh303SblFlIZoTw-TkK=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117963465884307496904?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Rosa Cazorla",
+          "rating": 5,
+          "text": "This is my favorite Japanese restaurant. Giving 5 stars on everything because it’s really this good. The service is excellent, the food is super good, and the vibe is very relaxing (especially if you come for lunch) I love their lunch special bento boxes. Good prices and amazing food. I hope they stay around for forever! If you’ve never been, you really need to try it.",
+          "date": "2024-09-28T20:49:10.778Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNublktOFlBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVpQG49YEgMLJuuJXV2nizLQTEvHRTwLUavhvO0nQY_OY6SSJs=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103348075841742012390?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "John L",
+          "rating": 5,
+          "text": "",
+          "date": "2024-08-24T01:41:02.390Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQ3NXBDTnJRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXvFmtduyJbikAxF1oxuo2PRqSaSFeSrzAWWy9d0gRbgg7GqSHFpg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115274070779564291877?hl=en",
+          "reviewerNumberOfReviews": 105,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Brayden Woodall",
+          "rating": 5,
+          "text": "The nicest people and the Katsu Donburi is one of the best I have ever eaten.",
+          "date": "2024-07-05T00:08:32.273Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNyM0lQRUF3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUFSHB_NxMbnNk8wpDHoYC082uQBcgjwmvHW82LABTWLxtgAZRD=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106463272433806560081?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Megan Askew",
+          "rating": 5,
+          "text": "My family and I have gone to Demae for nearly 30 years. Food is fresh and delicious; everything from sushi, tempura, udon soups, tonkatsu, and more! We highly recommend Demae!",
+          "date": "2024-06-19T01:35:07.210Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNMdG9QVVBBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVBv0zgEJozw_wUA5SsDxzE1bKkS25XLGHwD-6RKWlIpwVdmNzs=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102569719770382408296?hl=en",
+          "reviewerNumberOfReviews": 61,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Elizabeth Nielson",
+          "rating": 5,
+          "text": "Went here almost 20 years ago…then back in Provo for a weekend, we decided to give it another go. It was good then and it is good now. We were not disappointed.\nThe service was good and kind and the food was delicious—we are wondering why more people don’t frequent this place. Yes, the decor is dated, but it was clean.\nWe each got a Bento Box along with some sushi and tempura. So glad we went to Demae. I’ll be back again soon.",
+          "date": "2024-05-04T20:13:53.566Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURqcVlPU05BEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW2MmSYCWE9gdtRDe5ftiZASuf1EkJgFsuvwb5N8rXATj-S62_q3Q=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105643556203221056360?hl=en",
+          "reviewerNumberOfReviews": 15,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jonathan Barney",
+          "rating": 4,
+          "text": "Overall a nice experience.  Food is good quality.  The restaurant is decently clean, but not perfect.  It's very nice and quiet inside.  Decent balance of price and quantity.  Flavors are real and pleasant.  It's been my daughter's favorite on many occasions.",
+          "date": "2024-05-04T00:24:28.081Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURqZ2RlUDdBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXhB6GotGykBvhniNFmfiB0UyU8TGUQUmNtdhBf9NltJDPcvEc=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107420615895909363123?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Alex Ramos",
+          "rating": 5,
+          "text": "Went here for the 1st time and was very good",
+          "date": "2024-04-06T19:32:21.012Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUREblBPOHdRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKF0uPioQ4d4ZShLxBbrsaJsK5NM3FDq6djY3HEZPnKUSqH-Q=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107067799074603555978?hl=en",
+          "reviewerNumberOfReviews": 24,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Matt Taylor",
+          "rating": 5,
+          "text": "The food here is very good. And value for money is outstanding.",
+          "date": "2024-03-26T19:11:17.995Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNEeXJpZ1dREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW5iOUC2jrizLWh1dS0AUCPUu3SgPsUhRZFvcHBGMFky7b1uUjd=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116712093339588535989?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Corey Dobbs",
+          "rating": 5,
+          "text": "",
+          "date": "2024-02-25T06:00:42.664Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURkMmRfNWRnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJhe6CjazOhJ8F4CfidS4msY5Z-fM1b172O8abmad-_KfdarA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109186549211450955029?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dan Swindle",
+          "rating": 5,
+          "text": "delightfully warm and cozy interior, service was fast, and the food was so fresh and delicious. highly recommend",
+          "date": "2024-02-23T00:47:35.486Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURkLXJYSndnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVpvxJQDHDSpPYfoTGDub_gz2KpA9nlyS2rBC57egazTGhvMvWv=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104614995102705250149?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        }
+      ],
+      "customerMoodAnalysis": {
+        "overallMood": "delighted",
+        "sentimentSummary": "Customers are genuinely thrilled with their experience. With an average 4.6/5 rating across 100 recent reviews, your restaurant consistently exceeds expectations.",
+        "sentimentDistribution": {
+          "ecstatic": 11,
+          "delighted": 75,
+          "satisfied": 5,
+          "neutral": 0,
+          "frustrated": 2,
+          "disappointed": 5,
+          "angry": 2
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "food quality",
+            "mentions": 36
+          },
+          {
+            "theme": "service excellence",
+            "mentions": 20
+          },
+          {
+            "theme": "atmosphere",
+            "mentions": 8
+          },
+          {
+            "theme": "speed of service",
+            "mentions": 6
+          },
+          {
+            "theme": "slow service",
+            "mentions": 5
+          },
+          {
+            "theme": "cleanliness",
+            "mentions": 3
+          },
+          {
+            "theme": "poor service",
+            "mentions": 3
+          },
+          {
+            "theme": "overpriced",
+            "mentions": 1
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 33,
+          "satisfaction": 70,
+          "disappointment": 2,
+          "frustration": 0,
+          "anger": 0
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "Customers rave about the flavorful and authentic Japanese dishes, such as the Dragon Roll and oyako donburi, which are compared to those in Japan. - social media marketing can showcase this strength",
+            "The restaurant's atmosphere is celebrated as a perfect setting for special occasions, making it a memorable dining experience for families. - SEO services can leverage this for better visibility",
+            "The lunch special bento box is highly recommended for its value and quality, encouraging repeat visits. - Boostly marketing services can amplify this"
+          ],
+          "improvementOpportunities": [
+            "Negative reviews and reputation issues, particularly regarding poor customer service and incorrect orders - review management can address this concern",
+            "Long wait times and incorrect order fulfillment - Boostly marketing services can improve this",
+            "Poor online visibility and competition with other local Japanese restaurants - SEO services can solve this visibility issue"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 100,
+          "averageRating": 4.6,
+          "ratingDistribution": {
+            "1": 7,
+            "2": 2,
+            "3": 1,
+            "4": 6,
+            "5": 84
+          },
+          "sentimentTrends": {
+            "trend": "stable",
+            "recentAverageRating": 4.5,
+            "previousAverageRating": 4.6,
+            "recentReviewsCount": 10
+          }
+        }
+      },
+      "examples": {
+        "positive": [
+          {
+            "author": "Julie Hollingworth",
+            "rating": 5,
+            "text": "We loved everything we ate!  Thank you!",
+            "date": "2025-09-06T00:57:54.493Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21Rd2RVcGFObmRTVEdkaFJUVlJiR2hRVUhSWVFVRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXtsGBAeJ8uVFZVVFt31XwT_0g8wgUuv0THuirB8yDyT5vXP2gn=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/108288089096014401472?hl=en",
+            "reviewerNumberOfReviews": 5
+          },
+          {
+            "author": "Emi",
+            "rating": 5,
+            "text": "",
+            "date": "2025-08-24T02:01:21.703Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pGbWEwcDNiMlZTUTNkTGN6ZGlSREF0YURCQlFWRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV7vvPH0gAi1vrPra99qrgz0YGHuZjJSG_r8H8HgYljqF6l-Oo=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/108344606900475740382?hl=en",
+            "reviewerNumberOfReviews": 1
+          },
+          {
+            "author": "Wild Evergreen",
+            "rating": 5,
+            "text": "",
+            "date": "2025-08-21T23:15:12.652Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT210bk1qZE1VMUZHY1RWdFJYWmZSRGxtYVdsUVdsRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVushRzNsLCEmqLfDtfB7yIlqG1P0IrZ1RDerSOUVycol7hb6xJ=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/106651768975067914831?hl=en",
+            "reviewerNumberOfReviews": 0
+          }
+        ],
+        "neutral": [
+          {
+            "author": "David Jorgensen",
+            "rating": 3,
+            "text": "If you are looking for Japanese donburi or bento, this place won't knock your socks off, but it may scratch the itch.\n\nI ordered salmon donburi. Flavor was pleasant, but rice was low quality and salmon was so undercooked that it was mushy. Tempura vegetables were good though, fresh and crisp. Staff was friendly, food came out quick. Good fish is hard to find in Utah, so my choice was risky in the first place—my brother picked a chicken-based dish, and he seemed happy with it. If I go again, I'll try something a little safer, like chicken or pork.",
+            "date": "2024-11-09T19:10:50.173Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUMzaDZxX29BRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVflUKcVMvfI7v7YOzAqB0T0ip5c-ZDhKAgjzD_0bHcTscCRuoJQg=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/110810268319416872769?hl=en",
+            "reviewerNumberOfReviews": 13
+          }
+        ],
+        "negative": [
+          {
+            "author": "Ericka Kinross",
+            "rating": 1,
+            "text": "When you guys came at my husband saying that he had a dog it wasn’t our dog, we came in there a couple days ago and the lady told us to leave when we had our kids there, my son was so sad she told us to leave that was his favorite place to go",
+            "date": "2025-07-30T16:34:31.969Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tWTVZtTTRPVkZ6YXpodGJVaG9jakZpYW05MlQxRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJjYxhup8WzsOPNQMAxabmVuVDsCT38tm8oNXY9TRwdtjxw_w=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/105589398297431341613?hl=en",
+            "reviewerNumberOfReviews": 3
+          },
+          {
+            "author": "Penny Kinross",
+            "rating": 1,
+            "text": "Since this has gone under new ownership it has went downhill fast. Walked in with a group of people and server told us we couldn’t eat there and told us to leave!!! We had 2 small children with us but NO WHERE is there a sign that says no children!!! We have ate there before with them!!\nI have also called in orders and waited 30 minutes before arriving to the restaurant and still had to wait over an hour for our food. Poor service. Server was rude and yelled at us and told us to sit down!!",
+            "date": "2025-07-29T20:24:51.930Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xKVlJtVTVjV3d5VWxkWlpHRkhTVVYwYm5Oa2EwRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJBL7MXAz_QllMKIBcrdYMGne0MXZHTdOG4zM-ez6p4sqRZ-A=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/103152754286965012740?hl=en",
+            "reviewerNumberOfReviews": 7
+          },
+          {
+            "author": "Haygen Emerick",
+            "rating": 1,
+            "text": "The lady at the front was so rude we walked in and she told us to leave",
+            "date": "2025-07-28T23:57:04.731Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xremVrbHhObE5XVjJwdGRISkJTalptTFVack1GRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJQY8QW-OTnYp5BYMwSkb1BwNIWi0tsK6I92m9l-DBwL0aC_A=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/111978503452159366872?hl=en",
+            "reviewerNumberOfReviews": 1
+          }
+        ]
+      },
+      "trends": {
+        "ratingTrend": "stable",
+        "volumeTrend": "stable",
+        "responseRate": 0,
+        "averageResponseTime": "No responses"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ]
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/demaejapaneserestaurant",
+      "instagram": "https://www.instagram.com/demaejapaneserestaurant",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 58,
+      "social": 100,
+      "local": 71,
+      "reviews": 78,
+      "overall": 77
+    },
+    "originalScores": {
+      "seo": 70,
+      "overallScore": 64,
+      "performance": 63,
+      "userExperience": 60
+    },
+    "migratedAt": "2025-09-16T00:37:21.552Z"
+  },
+  "metadata": {
+    "cachedAt": "2025-09-15T11:14:37.127Z",
+    "expiresAt": "2025-10-15T11:14:37.127Z",
+    "placeId": "ChIJaaibnVSXTYcR5oi0aKGrdZA",
+    "restaurantName": "Demae Japanese Restaurant",
+    "cacheVersion": "2.0.0"
+  }
+}

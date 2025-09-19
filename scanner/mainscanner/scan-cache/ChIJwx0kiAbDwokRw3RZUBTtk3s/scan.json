@@ -1,0 +1,2712 @@
+{
+  "data": {
+    "domain": "giosrestaurants.com",
+    "restaurantName": "Gio's restaurants",
+    "placeId": "ChIJwx0kiAbDwokRw3RZUBTtk3s",
+    "overallScore": 71,
+    "performance": 100,
+    "seo": 58,
+    "mobile": 53,
+    "userExperience": 76,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "restaurant near me",
+        "position": 0,
+        "searchVolume": 6600,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant delivery New City",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best restaurant New City",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant",
+        "position": 0,
+        "searchVolume": 4400,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant places near me",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant New City New York",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant delivery near me",
+        "position": 0,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant open now",
+        "position": 0,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 13,
+        "keywords_appeared": 1,
+        "total_keywords": 8,
+        "average_position": 4,
+        "best_position": 4
+      },
+      "keyword_results": [
+        {
+          "keyword": "restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "River Court on Main",
+              "address": "New City, NY ",
+              "website": "http://www.rivercourtonmain.com/",
+              "rating": 4.7,
+              "reviews": 372
+            },
+            {
+              "position": 2,
+              "name": "La Terrazza",
+              "address": "New City, NY ",
+              "website": "http://www.laterrazzarestaurant.com/",
+              "rating": 4.5,
+              "reviews": 617
+            },
+            {
+              "position": 3,
+              "name": "FIRE & CORK KITCHEN & WINE BAR",
+              "address": "New City, NY ",
+              "website": "http://fireandcork.com/",
+              "rating": 4.5,
+              "reviews": 322
+            }
+          ]
+        },
+        {
+          "keyword": "restaurant",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "best restaurant New City",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Mangia Pizza & Restaurant",
+              "address": "New City, NY ",
+              "website": "https://mangiapizzanewcity.com/",
+              "rating": 4.9,
+              "reviews": 22
+            },
+            {
+              "position": 2,
+              "name": "FIRE & CORK KITCHEN & WINE BAR",
+              "address": "New City, NY ",
+              "website": "http://fireandcork.com/",
+              "rating": 4.5,
+              "reviews": 322
+            },
+            {
+              "position": 3,
+              "name": "La Terrazza",
+              "address": "New City, NY ",
+              "website": "http://www.laterrazzarestaurant.com/",
+              "rating": 4.5,
+              "reviews": 617
+            }
+          ]
+        },
+        {
+          "keyword": "restaurant delivery near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Danny’s Pizza & Deli",
+              "address": "New City, NY ",
+              "website": "https://www.dannyspizzadeli.com/?utm_source=gbp",
+              "rating": 4.3,
+              "reviews": 54
+            },
+            {
+              "position": 2,
+              "name": "New City Bagels & Deli",
+              "address": "New City, NY ",
+              "website": "http://newcitybagelsdeli.com/",
+              "rating": 4.6,
+              "reviews": 69
+            },
+            {
+              "position": 3,
+              "name": "Valley Cottage Deli & Catering",
+              "address": "Valley Cottage, NY ",
+              "website": "https://vcdeli.com/",
+              "rating": 4.6,
+              "reviews": 272
+            }
+          ]
+        },
+        {
+          "keyword": "restaurant New City New York",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Mangia Pizza & Restaurant",
+              "address": "New City, NY ",
+              "website": "https://mangiapizzanewcity.com/",
+              "rating": 4.9,
+              "reviews": 22
+            },
+            {
+              "position": 2,
+              "name": "The Burger Spot",
+              "address": "New City, NY ",
+              "website": "http://theburgerspotnewcity.com/",
+              "rating": 4.7,
+              "reviews": 23
+            },
+            {
+              "position": 3,
+              "name": "La Terrazza",
+              "address": "New City, NY ",
+              "website": "http://www.laterrazzarestaurant.com/",
+              "rating": 4.5,
+              "reviews": 617
+            }
+          ]
+        },
+        {
+          "keyword": "top restaurant New City",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Mangia Pizza & Restaurant",
+              "address": "New City, NY ",
+              "website": "https://mangiapizzanewcity.com/",
+              "rating": 4.9,
+              "reviews": 22
+            },
+            {
+              "position": 2,
+              "name": "River Court on Main",
+              "address": "New City, NY ",
+              "website": "http://www.rivercourtonmain.com/",
+              "rating": 4.7,
+              "reviews": 372
+            },
+            {
+              "position": 3,
+              "name": "FIRE & CORK KITCHEN & WINE BAR",
+              "address": "New City, NY ",
+              "website": "http://fireandcork.com/",
+              "rating": 4.5,
+              "reviews": 322
+            }
+          ]
+        },
+        {
+          "keyword": "restaurant restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "La Terrazza",
+              "address": "New City, NY ",
+              "website": "http://www.laterrazzarestaurant.com/",
+              "rating": 4.5,
+              "reviews": 617
+            },
+            {
+              "position": 2,
+              "name": "FIRE & CORK KITCHEN & WINE BAR",
+              "address": "New City, NY ",
+              "website": "http://fireandcork.com/",
+              "rating": 4.5,
+              "reviews": 322
+            },
+            {
+              "position": 3,
+              "name": "River Court on Main",
+              "address": "New City, NY ",
+              "website": "http://www.rivercourtonmain.com/",
+              "rating": 4.7,
+              "reviews": 372
+            }
+          ]
+        },
+        {
+          "keyword": "restaurant food New City",
+          "found": true,
+          "position": 4,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Gio's restaurants",
+            "address": "New City, NY ",
+            "website": "https://giosrestaurants.com/",
+            "phone": "(845) 323-4470",
+            "rating": 4.4,
+            "reviews": 200
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Mangia Pizza & Restaurant",
+              "address": "New City, NY ",
+              "website": "https://mangiapizzanewcity.com/",
+              "rating": 4.9,
+              "reviews": 22
+            },
+            {
+              "position": 2,
+              "name": "La Familia Restaurant",
+              "address": "New City, NY ",
+              "website": "https://www.lafamilia-restaurante.com/",
+              "rating": 4.9,
+              "reviews": 56
+            },
+            {
+              "position": 3,
+              "name": "The Burger Spot",
+              "address": "New City, NY ",
+              "website": "http://theburgerspotnewcity.com/",
+              "rating": 4.7,
+              "reviews": 23
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"restaurant near me\", \"restaurant\", \"best restaurant New City\", \"restaurant delivery near me\", \"restaurant New City New York\", \"top restaurant New City\", \"restaurant restaurant near me\" - optimize Google My Business profile with these keywords",
+        "Ranking below #1 for 1 keywords - increase customer reviews and engagement to improve rankings",
+        "Low Local Pack visibility (13%) - audit your Google My Business completeness, categories, and local citations"
+      ],
+      "scan_metadata": {
+        "location": "New City,New York,United States",
+        "timestamp": "2025-09-15T10:39:16.074Z",
+        "total_scan_time_ms": 228922
+      }
+    },
+    "competitors": [
+      {
+        "name": "FIRE & CORK KITCHEN & WINE BAR",
+        "domain": "firecorkkitchenwinebar.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 752,
+        "keywords": 28,
+        "domainAuthority": 84,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+50 keywords",
+        "authorityGap": 2,
+        "backlinks": 914
+      },
+      {
+        "name": "Mangia Pizza & Restaurant",
+        "domain": "mangiapizzarestaurant.com",
+        "performance": 98,
+        "seo": 88,
+        "accessibility": 83,
+        "bestPractices": 93,
+        "overallScore": 91,
+        "rating": 4.9,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1304,
+        "keywords": 26,
+        "domainAuthority": 78,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+250 keywords",
+        "authorityGap": 8,
+        "backlinks": 1184
+      },
+      {
+        "name": "Alfredo’s Restaurant",
+        "domain": "alfredosrestaurant.com",
+        "performance": 96,
+        "seo": 86,
+        "accessibility": 82,
+        "bestPractices": 91,
+        "overallScore": 89,
+        "rating": 4.8,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1378,
+        "keywords": 34,
+        "domainAuthority": 77,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+200 keywords",
+        "authorityGap": 6,
+        "backlinks": 1179
+      },
+      {
+        "name": "La Terrazza",
+        "domain": "laterrazza.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 491,
+        "keywords": 36,
+        "domainAuthority": 69,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+50 keywords",
+        "authorityGap": 2,
+        "backlinks": 724
+      },
+      {
+        "name": "River Court on Main",
+        "domain": "rivercourtonmain.com",
+        "performance": 94,
+        "seo": 85,
+        "accessibility": 80,
+        "bestPractices": 89,
+        "overallScore": 87,
+        "rating": 4.7,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 902,
+        "keywords": 33,
+        "domainAuthority": 72,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+150 keywords",
+        "authorityGap": 5,
+        "backlinks": 927
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 72,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-15T10:40:51.677Z",
+    "businessProfile": {
+      "name": "Gio's restaurants",
+      "address": "253 S Little Tor Rd, New City, NY 10956, USA",
+      "rating": 4.4,
+      "reviewCount": 200,
+      "phoneNumber": "(845) 323-4470",
+      "website": "https://giosrestaurants.com/",
+      "formatted_address": "253 S Little Tor Rd, New City, NY 10956, USA",
+      "address_components": [
+        {
+          "long_name": "253",
+          "short_name": "253",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "South Little Tor Road",
+          "short_name": "S Little Tor Rd",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "New City",
+          "short_name": "New City",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Clarkstown",
+          "short_name": "Clarkstown",
+          "types": [
+            "administrative_area_level_3",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Rockland County",
+          "short_name": "Rockland County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "New York",
+          "short_name": "NY",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "10956",
+          "short_name": "10956",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "state": "New York",
+      "city": "New City",
+      "place_id": "ChIJwx0kiAbDwokRw3RZUBTtk3s",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "bar",
+        "establishment",
+        "food",
+        "meal_takeaway",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "reviews": [
+        {
+          "author_name": "Michael DeRosa",
+          "author_url": "https://www.google.com/maps/contrib/114305148522296820522/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUlSMhj4EwZkmwGQ5uG0s5U3Cp663r9OaIys3-WLtapLTMVtuYobA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Had a great time! The food was delicious, the atmosphere was inviting, and the service was on point. Definitely going back!  The steak was cooked perfectly,  the rice was fresh and calamari was tasty!",
+          "time": 1747836353,
+          "translated": false
+        },
+        {
+          "author_name": "Lauren Campbell",
+          "author_url": "https://www.google.com/maps/contrib/115782339774618915726/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU_wltEAtEQGA5MQgIqXQMglzmQ-tHPOczaTw0iwblbtqMRjdA8pQ=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Had my birthday dinner date here. Everything was fantastic, the food, the service, and the ambiance! Will definitely go again",
+          "time": 1746132554,
+          "translated": false
+        },
+        {
+          "author_name": "ROBERT LAMB",
+          "author_url": "https://www.google.com/maps/contrib/103159812277415773922/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVxCCVlYy1lXny2n-xGbN__rk4Nwz1V2g500ypLtXfLklePK04aSA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "2 months ago",
+          "text": "From the moment you walk in, you’re greeted with warm hospitality and a cozy, upscale atmosphere that sets the tone for an exceptional dining experience. The food is absolutely phenomenal—every dish is crafted with care, bursting with rich flavors and fresh ingredients. Whether it’s the pasta, seafood, or perfectly cooked meats, you can taste the passion in every bite. The service is top-notch: attentive, friendly, and knowledgeable without being overbearing. Gio has mastered the balance of fine dining and comfort. Easily one of the best dining experiences I’ve had—highly recommend to anyone who appreciates great food and great vibes.",
+          "time": 1750778494,
+          "translated": false
+        },
+        {
+          "author_name": "Al G",
+          "author_url": "https://www.google.com/maps/contrib/110983784333035030010/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW7BaXgyorlUm5QAL9gcNhhzI6RFu4UBjLurwDbIqhvG_fN4NE9FQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "7 months ago",
+          "text": "I've been here twice already and I really like this place. The food is good, prices reasonable and the staff are great. The drinks are pretty good as well and the bar is great place too hang out at. Overall a great place to spend some quality time and eat and drink with friends in an outstanding atmosphere.",
+          "time": 1739042860,
+          "translated": false
+        },
+        {
+          "author_name": "Alan Levy",
+          "author_url": "https://www.google.com/maps/contrib/110916271992295866043/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUaROZw29JrVZGm5HzRktGFlxXXstVhJlNpdzjWktFqqa7ucwFo_A=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Just had a Baby Shower brunch for my daughter at GiO’S. The food and service was excellent. I would highly recommend it for a party!\nKudos to the catering manager, Gina. She did a great job along with the catering staff.",
+          "time": 1752544028,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110082212733970098956\">Gio&#39;s restaurants</a>"
+          ],
+          "photo_reference": "ATKogpcYQNrT7Yn6wqgNy0yaADbdyCMx1mKZjR9DQyQU9FOXlngsuMtvIEkTNGuOsuU7EfRO96WV1f4SKFGn0hq-GAHDW5xSZGdYrDL3CMFY3EUYA42nOKsc7_L7Yniy_4Xy8_wP6StWmMt9gYWX8V_1FxJ1XZSaWFlzfqluT64UNF5A-5hiv-EbIiK60ucVdgVwT3FzN8BRkB-j8u1whHzUaCMdwq4tloPXCb6ohwkzdaHOMENZLWfMr5wzBEqXAqZxXhKJjLobW-wPMnky5GmY6ajYRyx-rvAut7Yn9qYJFsF2bw",
+          "width": 4032
+        },
+        {
+          "height": 683,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110082212733970098956\">Gio&#39;s restaurants</a>"
+          ],
+          "photo_reference": "ATKogpdCKsPwME_mXm2psY_c8RNyudq6vP197WFG_HOZHJHdfGv2ZtQl-bKMDVOao8JaCdePJZX83OCpVGnzvE-JQSAdagkJxHyLg0G_BNMzydGlQP_G1_W9zprkGwGnDDFmp4Am9H9oZ3633ELZbhLX1thKJEKyOdoHdD98fnsJDM4AO9FqtFTxK1LeHbFbXS9dDpR7sUTRtwD3g3cMV1B4BSglIH38gCVZ1Sc2efK1qLDMhkwi4rt9ngZAz55mq59XpkFQV5OHXcXfjyp7RtKXb6vFjOSE-iIcp9JBNQVtAOeh7A",
+          "width": 1024
+        },
+        {
+          "height": 768,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110082212733970098956\">Gio&#39;s restaurants</a>"
+          ],
+          "photo_reference": "ATKogpfryjmWDpstfMigPbygigKMKSEa3sF731Ivq7Rnnt_ONTBDn5VY4OF9nhA0Hzl9gz-7vOHdS17P89EyGBtDHswNOUt3qoKXyNKgez4eBXSK7yHPTyp9aZYFzDlxIymyF8RPmSalvOA_Z8DRLBond6DA9w7svoi6YrgoIbJaZWoTg4ZKZJnYiM9YqN-VkCvLom8xyQkaF9guFyfNYM8LK8G5xkpnSNav4bGki7gQMR0ORkeYObgMB5iAivVldw080Bz79C2dYqSNTNhH7jMO-0zTiaiGhDZq-n2sEy2XviC1IA",
+          "width": 1024
+        },
+        {
+          "height": 3600,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109885262224015455259\">K A</a>"
+          ],
+          "photo_reference": "ATKogpcF9rGljHek8BSOmx1kpnR5kva1au3I7R2258wN0tIxifpV2rOYm8QdFyqv4ZqDWAgeZhaP-_uvoGuGy0HQmprhBHrz-kfIztozr3TXM-gRriS9ZS7AHhAyRQe34qy9FkN_96GjD_7ii3sdirTG9n_-up1LcGhOpSj6tpQZ7F4_7CP5maSDqDTBzAQplzi_yOkNlp2FfmPJR60FVLa5RHPH8o9DRI_u-9kjkCyZgtjLcmoX5qbT6HQdiYUKoqre4uyoOzQn9aXg4UoVf0bv1T-K7MiaH-aJzgH0j9rwpAibaCOlKKveTqruqioFgNO-n1QqOTzaKDyoE02aV7GFM5dNQO12s7tqmHT0jC_qxTqG793An0mEtq5NzGubI3wBIY-_ilPcWCWGOfwSzRoOHwLy65sD6EJfF3uYr2gnaTPLJaXY",
+          "width": 4800
+        },
+        {
+          "height": 4080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/106366210074231654473\">Gregory Clarke DMin - Coach Clarke</a>"
+          ],
+          "photo_reference": "ATKogpdMt_Lg_FaN6olSOob9bnapCr_Fj1Yf2kTtxhs11jQ0n7fLwvte-BYD9S4b6U1kZRP_Hc4FBaOFUsPbu8gKA6GOrnDm-8E-pkDPmspe0L775cHiasHmqZLlqhx8sgsZYnPZLwZN-4bjUs3FWCKmpeNxvWD0nAO105sKLzrfN22CvvkOa2FIekQ9UV8wsYlhd2QsGUWo2PE97M_4m42XzHkdVLPSzgE4ubskCbO8FgCc65prJyf_iIdiUSJOtn67uJ7JiZ_MNYkouZqYB17NNcizhkLpV_GtDf5KHDjvgefSyCEYUWDSkFUS-LUyIUiBCZqdcu3Oda9dRxdAiOrc9f_18WhWGoAfpk1g7am0OxkZCZXTfFOPEQr7aI6k7VcRaqcKMQOELt722KPllfg9hK7rNkBQHKcFq0E9uX2r7W0zUF_aFJUrik2N-wkP0Axx",
+          "width": 3072
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110082212733970098956\">Gio&#39;s restaurants</a>"
+          ],
+          "photo_reference": "ATKogpcQ5x-QxAUXMMMq3bbJExj1tADQmLvuLm37aiwE8T4VANM0sClgv5ivY8zweCHEvYOtkN1m7Q5sUCndS9NgUC0bI3rvpAJqw3wzNhm2u2vUkeDwF7NxLlB25mcCA5vQXl39XVej_PDe3flWe46sfre_iPUyQOWMZSOlvxtIxz7Jn7UDsJ0P3ja7Vj8aOrDDHnSvRkrAFJqhtjhFE_X01nU_ako5h_2WAVh2tuLxSpXz7hrDfTpasXMQ_uk2dzXdjcgX7GuL11w3gJSiGA_b0zODu5Haoo529V7tJU_60OWv8A",
+          "width": 3024
+        },
+        {
+          "height": 1836,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115782339774618915726\">Lauren Campbell</a>"
+          ],
+          "photo_reference": "ATKogpd6r2IKoxeJrWmgvQPenGe1tU_rVXQ3_C-ZufyRGfSzortupGAyo3D-4SClr3SqWzI7d9grQ6EyasAVlGCtCZXN1J4VgcRh6aoZcvuLT9jwhnEEuwJdN8uwKed6Gd13xN0brHxKPRUoysiBe-fN3Q0yWRa3_degbofJKAkk8Q1zOmJnd5HIAo5mPI1WgL3tVOpdCF1h3fTXboWLeaI5XdgQprIRMGImJDiyttaVgLHe1tmpdP47I5sHXD9Xq8xhQJ2Z1SiFSlFN2SxUD2CbR0XO7dKhgfRjU_zBccSCPdKTHzAWPVBnSEQfgd1bqVkOXq97RgBkrD4ca7aLPQhR_F9xAjOCT3jQnqZjFclVXtJQPQHE0Icz6QJxsgg2alyRm3shssLTSfUQWl4O78TThM0bLrV87J17DVJJWjWpVcLHJCJW",
+          "width": 4080
+        },
+        {
+          "height": 3072,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103173999918822944666\">Graham Parker</a>"
+          ],
+          "photo_reference": "ATKogpf3wTCq8eDcLhFd5_6yMU7Q_ueRJu8VGsJpWhpEHUn48QQTVeobbQ8CXWyAdBP0ZoViHnQYw6rd3k1uLa5y4-ADeHNlC6x2OeKnYJ3eXU-E_Sd4sLHfcR8Akyxe1utNd-QT69FnDZf4LFLPfSMO6wd8YxBpuDlyoj_RUX4w8nmE6v4DZmv9F-baDGbQ-8KRR7tWMmekmdq51m7vdc3YTbxhX_abW0hcySOpZI2gsZJybQ2sXcVYg_AaNwnFBDPcqliVVQWs0LKSAit95fnVkxxynOYg9YovkyhzdxHQWtTcnOSlX99zJVxSLK9B7hNFn9IuIAqLssT6rVs3Do3w9FAS3Rr3TNEN7PEwi25qLJYY0RzuUkpdffpZdyXuQLCuU2KxJaxA98sVoKWxf-s1IyB2F-1ccsiq7FznA56FM1tyfQ",
+          "width": 4080
+        },
+        {
+          "height": 3000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110983784333035030010\">Al G</a>"
+          ],
+          "photo_reference": "ATKogpefxanuPj3DZ64B8GbuAVn7MmmHzrG868NBrcBXMecSvsCFkCpLM1CBDlcqNDQt9o2j8OjMbM8PxfNfp7zkNH_igD_M6Y6ACNb8P0EcTt3Dww165Xmz-HXD7zTVB22h3ltEw-UuofL-wnd5rUk4DXh2fUNnYahMfpIXf4U_Tw_H9RGYklvV0qcpGlwHMh4sSPyZU3oRIdoS_2nXrcMznUEySOvSC6gmUpnKNh1uVMVzwb1lNexdJKYraBit2lgbLqCFO3tYRc_AZGIBYVv3YroBjYL3B6Hx3BHe2Q49IIqhviqh-gjdtEb43NYLNg5jJtiWDY-X95eaybU-QzzhfG8UiOd2rtWJF_rUoBhP0AYIEGIU1g0-S_quQhT79N4YvAnC-_sTy1sK0MwY2Fuy0yHwVCV8mseVPOjItTaV2_cNJQ",
+          "width": 4000
+        },
+        {
+          "height": 1824,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102886370543621919344\">David Finley</a>"
+          ],
+          "photo_reference": "ATKogpeeqdxneE8ZkvcS3tfBnXHa4EN5l52qklWMFdt_vEbyRLTBzkfx516b44Iw_hJCMj6z1moWNncnR5zYCbymRO2W3nnODhoYbYVINlsGIdg6qgaSF5x1mn-t4_R96KQM6LQcmxRgxtWMDHD8lDAxf71e_Y8mk4hJFKtGRvfniH9MP7KrEQgRpEtLimJq-kK_gFgMSLgTSTdM3zNuhGWI_Cs7Dn9vBCrJJ_J2gKMJp4qEgWlEKECx_fBVH93cZe4KG_niWJwAlEZXoQ_YMiPOZOYOMSDkZ5Bl0ODhAxZjx2oKR6nBKHWI_sZ6bwBNiCz5_a460ksEVGJOEbCjnJkBtBsZ3uhwg3ChDj4ceGvPhSIMs2NZlZnf3a9Us8AQ5M7sZObKR3U3nPNhEPfKLKyXsoPHn0Ow_qCF7AE9_dCd3MZKpw",
+          "width": 4000
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "2100"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2200"
+            },
+            "open": {
+              "day": 1,
+              "time": "1600"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2200"
+            },
+            "open": {
+              "day": 2,
+              "time": "1600"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2200"
+            },
+            "open": {
+              "day": 3,
+              "time": "1600"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2200"
+            },
+            "open": {
+              "day": 4,
+              "time": "1600"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2200"
+            },
+            "open": {
+              "day": 5,
+              "time": "1600"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2300"
+            },
+            "open": {
+              "day": 6,
+              "time": "1130"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 4:00 – 10:00 PM",
+          "Tuesday: 4:00 – 10:00 PM",
+          "Wednesday: 4:00 – 10:00 PM",
+          "Thursday: 4:00 – 10:00 PM",
+          "Friday: 4:00 – 10:00 PM",
+          "Saturday: 11:30 AM – 11:00 PM",
+          "Sunday: 11:00 AM – 9:00 PM"
+        ]
+      },
+      "price_level": 2,
+      "editorial_summary": null,
+      "url": "https://maps.google.com/?cid=8904721559744771267",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpczS8EjQny164Q1oCVxESFJEifyGqu6B_YTckbz9jLvRtJOr_1sYgPqO08YnAiFCo53YIz7l8BLpUU0RXSRRnp5EAKofc-R5egn5bolgnN5MxkH9Icqi3WKMff5fsFT1lA4MwHAFqdkQ8cdY6i_25YjYcqvywrIfL5wLzc2X23BFt4mPX5cwjkgpaaIa1hjNEFNzYFUfOQueUxcam8ExgD3oWmNsbG8yZW76m26AZWRh98lZHijG_tzNka2CwW62YH3ti7vWC6-h2U5WG88GcloXjM9MGpu1H4M6RxXWdnucw&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpc7QoayU2hP90vj2y1INiY7wJhfkoEh5a7FesKUzgbkdB-YWcc7BKBu5j91uk7yjcHIWeLLNv55HVnTxnmrRb_c9t2kC_YsZhm1iUjBXQxdV9IWr1dKN23T2tRQTODELfFW7Y7ou-KQlNU-xLf1WZ3qd_bgFOoe1InEY4tuKoiuRZv1-cmcJ3zsQkJi_yLxUg8CZH5mnq514ugdh6xLTMVkuF1Gic8sdv3ZvezEikX0RpGIQmFSvA04xS3FEk24zjUjs9QHB4LIBWb_UV9BHCZVkzv8NG2LtXXOg30VXnvkzQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfp0rAYKiqMtAaaegEKsLbvHqTiFQo9yYC6mGpNcOFDxfWGnGTCKVgQSblxOqBqP5xg1MiuGmCZquGf9lWWOnw8cAfleW2KU5-4O8VlCQ97Ak0_yjTyVeN8BwQsVRZ67bC_wofQoWDQZaWDsc4CzRmQjlrzx35K0oxNH74YdSTJl2QqmEzUEZ2Ika-LHATsR8Xce5rkg51Y8kJTmSIM1TL0juxLw1ISCJe7RM9jsoRZjSnoyAnAmnz30iXXmU2cMlMDe6zAWsoagB48SKGPcgTxqGa8X3NvgRXzeYbs5Of7gg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdZtWHiBne2xMTnfREsJw0v1TpPOP1oB7S01ybrHZ_yEWc8m75F_VpHh_LFCnU6UALn3ZSpbyyJpTHCmLBJ6SeJYwd1tKYw4m4R60wunvzT8xEnre2LBcFoBPNBTG0mOsZJvcJKTIXSXM_unRT4WZFa7W2kCrir4ySfYdIKoND0CgV5mikxeFcij_NP4uGRSgQG1GHOjX9YoSEjOtI415tmYBOeLjtaMI1wi-30qMJ8-oKpLgLWJE3adcWEMbE7ofZgByACL4bOeK0SvY-o5Tka8wzfau32YBB3CZKW46ed7PXGYMX19z-6LJwWorVMp77dfD1UTRxApCvG6knWWRXJEyxkR388pnokZu9rlIWkV5x-MrqAzMRtwYHIfDmGvGR8xQiUymYJsagAvuIP2PgZrunKgG4NB8-oZEMmTTIJ6Sp1&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdYAl8qhR3hzyJbhFK4fZQ0Y9rWF2EMtkBschGWNPke2ywxIujkjGNxz9FgDOaP4-go4zindX-3GXoQ7lnrHDYlpL8JHSwHDsE9SIxxYDqKZDbZroo4XR4s6clgJOMZ0BrOjwanvJFlNfecHbuQCdbR-pQjqHO-wMAdlAHvSsgIy38eEjVHyxaTdhqsKWrY1D8aOC_mslIekOJB8t2332WCJubW-_vbtilbreSOkJQaG_M_8sBCWPd2Cu2K3Fo7_J4oHyPY_oJG0clT0tDaSbJS0u8wEqMU6pVA__iWLGBnncIkB-gUbbi8UQDKd1Ixm0gx5gzmKQwBm3Nx-ZFnAjMY1tPle4sMcamy28VlPKCqlSBN8RyPHLH-OE7e2sxmQr5_EaVpl8fdFTvLq5JHVjt_XdvhHD2JEp0TuJpLhESSArzwJJVAq1UqnLQ9Alh9&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpe7nBcGF2MnkdXqJvNcZtpPyOCSQAPQn61LyYD7c0Z11klBajBiYyasjLPDphcSVY8DLYPQXjHBIIuMI6qhz9P-cy5aXeL9lVy3pfFLmeRrczxjZZR-G1lDzF_lgz5C0kQwBgv2rTcsonoFrcIvAHe7TtHXKuAQkMr0kSaegam7bSAyN4FqLQaYN_C_BiYGjH-ntsSO6GIzys57aGEd4d1skiBYDrXz8K80rHRUVoLaDtTc7PfK90SbOL-sDejLwjyyrE9xC-bzcnkfq6J78R0XAEyjuozjLvqON10NgYIl0w&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdlOs4Xo3uOQNtHihhIl5C8vUxMzSo5JikPXqDfcMx1hTrbmrs3er1Xn5UgjbMr-gdHxw-kRJMCxercLd_sg0Y0Q8kyO5hSzmX2CoC0XJ3K0VMtznjbtD2IkqYuiyR1IMLtlEFN3l4SCUHm67Poj2iC0D5GHUW0ScanI83B4XH1fi_nJMP3rg2fkcxUv1nFcgpSov_Nh7cxwFs9bwjwVEfGdcLsRYkmzCicjrp_40etRJH5iNF_74-asEn_aud5gU-9K0LinJ6bgN-fNWXPYYGJQgnQrG3faMHGlyJAZ1jud-7QcxJnaF_t1pmdhyay8vOJ8UyO0IKiUm9Vm4TtrkukaUm7yMliaKOtjJshlntsChsAzDLW6RWKaTQf7THeOfygYKOvWzEpCMYuWAd__delLpOm9aa0zZnOwfZyS3GHXiNS&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpeTUm7X--3mrRHaERq-mLompyVWkmme6jBp7AEKK5JYOzPtNuUCvBTQvg190oIZRxOdwM7fmOUr71zu7J1fPOkC3c7y4DBLYJHehAVzJUIVYMvtTN7yPjYVhhjXPURIFW9-7JMNOqf42cAYwGo60mxJx1xkRFD0Y512HjTeRW6tCZStzBeaDaQYmD304UqEMixNZfOg5QZ5507Gwr7P5d-qm4j0Xpfc1a8TKZcQMpuj_zwG6sP4pyiyc0t3gznq-hT1O9snRZqMr9j8QeiIQTYw5ZPH2Zo-PC4lUzBIF9yA67JBS-dfMs3x8_eyi4ck4kkChJyuTUvd2DCR7BsQeWtDncwuJhBM-wu2CjlsnkYo5lmA-zL97BH_-aLUb6UZLtEk4g2fq6IFjM8_7ErirT8q8hcahOKNNq5GoHNiZEn1lQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfyBlqkY9L5iRB3SFnUM6q1k2_VznEtTfHEw3DSWvROQnErwf7BhAtgHoco5TMiywUpqstG0dbYj3nXdZEDg068_vmytfxdAl9E5JC6_CY12dNwXQNpeGKRaQtflZnC0558zIoSp_Kxnu46CQ2kCQ3AROtRlSfWEkSKpjkHLjRm-prK2CbZTi4_Df7M0p3cQ3_RSMU4wVNT8KE5lwkO84XzF86zKtASuRHu8-LRvmM7r25gNgP52_e0uHIfLjeoI5OV5zJe0TgXZNdVMzIq6w-VGObcgmeXt9ePfv_R7RA6cHhg5gBaqiQfmHuvXKiiPmG7yYsyDjkCOkhjox3bJJLZRRcnnMjL-L8Qvq_V6ki2DnbOMHD75kOYkNqb4jQN72tC43dBg-FxuJP7yiK_MfL-a9HNOV7rdwRpOLDH7NAB-A&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfk7H4-jeJQHmoRXnXe1rAsxnXDwsGYa8N0ehTloilaYdnWbK5K1sf7PrTdzDUbqvIC7R4oltmkz87d3QuAc0opNQSFXpShTItSAM7CSNq6iuuh198ErN1hVfT_uv5GC90Cx5FFWTPTAv8IyqV7EH82JAkrxV9rIZFc6zdfB99EpVqcd1Thh5Tgd0Eu-guP5HkOaLJ50xNouJZyciRwLOlP2Soj2mCWbpHAE5C5YOvXfgEbQosIUZCrhGvUatZMuWBNTSNsKny21bRVXMwkRzpED1Aue6hfHKzp5479pMYFFM7qEXmyxjpUKI8oP8KSH7gHJLl-VEIVF-L0eO7AFS--giR_wxixdB5WatNfiM6PQezMzh_KbMoPJtSA5xfBvUcQ9HTmPFaJ28sjQvMksF-Amq0vHNV6guhitRP1KgKSmw&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 53,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": true,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 88,
+      "totalReviews": 200,
+      "averageRating": 4.4,
+      "sentimentBreakdown": {
+        "positive": 87,
+        "neutral": 5,
+        "negative": 8
+      },
+      "reviewSources": [
+        "Google Places API (Apify Enhanced)"
+      ],
+      "keyThemes": [
+        "Food Quality",
+        "Service",
+        "Pricing",
+        "Atmosphere",
+        "Wait Time",
+        "Portion Size",
+        "Location",
+        "Cleanliness"
+      ],
+      "recentReviews": [
+        {
+          "rating": 5,
+          "text": "Great peruvian food",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Excellent food and friendly staff",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Great food, great service!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Just had a Baby Shower brunch for my daughter at GiO’S. The food and service was excellent. I would highly recommend it for a party!\nKudos to the catering manager, Gina. She did a great job along with the catering staff.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Warm and friendly atmosphere and I always get the same thing, the Spicy Thai Chicken Noodles because it is delicious, although, I think a bit pricey.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 4,
+          "text": "From the moment you walk in, you’re greeted with warm hospitality and a cozy, upscale atmosphere that sets the tone for an exceptional dining experience. The food is absolutely phenomenal—every dish is crafted with care, bursting with rich flavors and fresh ingredients. Whether it’s the pasta, seafood, or perfectly cooked meats, you can taste the passion in every bite. The service is top-notch: attentive, friendly, and knowledgeable without being overbearing. Gio has mastered the balance of fine dining and comfort. Easily one of the best dining experiences I’ve had—highly recommend to anyone who appreciates great food and great vibes.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 4,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Had a great time! The food was delicious, the atmosphere was inviting, and the service was on point. Definitely going back!  The steak was cooked perfectly,  the rice was fresh and calamari was tasty!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Delicious food and the owner and staff are very friendly and accommodating.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        }
+      ],
+      "detailedReviews": [
+        {
+          "author": "Alexander Lepes",
+          "rating": 5,
+          "text": "Great peruvian food",
+          "date": "2025-09-15T02:51:31.422Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT214cFVuUjRZVzVEUldNNVEzSXRhVGhVUVhaMGRVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI8bTvxJ_U_zEgpFC17sjiT9uKbeQUkIPZiNf0BiAZYd1ChoQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112989298490642941217?hl=en",
+          "reviewerNumberOfReviews": 94,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Debra DeForest",
+          "rating": 5,
+          "text": "Excellent food and friendly staff",
+          "date": "2025-08-02T22:48:30.099Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xwbllXUmlUVUV3UnpSME9IUmtTR05tVEhWRlVYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKFcfCe8WiBZJuvLClmelkWejs4O6JplESvCOtZ4ZtybrnJVQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111970806223038179991?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Patrick Murray",
+          "rating": 5,
+          "text": "Great food, great service!",
+          "date": "2025-07-24T23:33:11.744Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21SRWRqUnNhM0UyYVhNd01WaDZSMlphWlc4eVJGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU9cx3oipCeRT_FQ-lHFU08XYW8FUL9inDr1MtaQInO77bxoX1lww=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101818584139262452009?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Alan Levy",
+          "rating": 5,
+          "text": "Just had a Baby Shower brunch for my daughter at GiO’S. The food and service was excellent. I would highly recommend it for a party!\nKudos to the catering manager, Gina. She did a great job along with the catering staff.",
+          "date": "2025-07-15T01:47:08.880Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25RdFdFOXdNRFZ6TlVwdk1UUlFMVUpuY0dKRWVHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUaROZw29JrVZGm5HzRktGFlxXXstVhJlNpdzjWktFqqa7ucwFo_A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110916271992295866043?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Michelle Renteria",
+          "rating": 5,
+          "text": "Warm and friendly atmosphere and I always get the same thing, the Spicy Thai Chicken Noodles because it is delicious, although, I think a bit pricey.",
+          "date": "2025-06-27T18:38:36.874Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pSMmRYQnpiMGxwVW5GS1ltWmpVeTFVVGtvdFVsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUkOGm1AFaLMTmBn1EnuOLw6r3Ake52IlFhqKe9lKiwgf_Fm3k=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114203658816710174294?hl=en",
+          "reviewerNumberOfReviews": 26,
+          "sentiment": "positive"
+        },
+        {
+          "author": "ROBERT LAMB",
+          "rating": 4,
+          "text": "From the moment you walk in, you’re greeted with warm hospitality and a cozy, upscale atmosphere that sets the tone for an exceptional dining experience. The food is absolutely phenomenal—every dish is crafted with care, bursting with rich flavors and fresh ingredients. Whether it’s the pasta, seafood, or perfectly cooked meats, you can taste the passion in every bite. The service is top-notch: attentive, friendly, and knowledgeable without being overbearing. Gio has mastered the balance of fine dining and comfort. Easily one of the best dining experiences I’ve had—highly recommend to anyone who appreciates great food and great vibes.",
+          "date": "2025-06-24T15:21:34.692Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21kVVVFaEZZMHd4Vm1remNGUjJaamRZYUdKM2NuYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVxCCVlYy1lXny2n-xGbN__rk4Nwz1V2g500ypLtXfLklePK04aSA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103159812277415773922?hl=en",
+          "reviewerNumberOfReviews": 131,
+          "sentiment": "positive"
+        },
+        {
+          "author": "franco bastone",
+          "rating": 4,
+          "text": "",
+          "date": "2025-05-31T03:10:53.213Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VLajkyYmV0eGVUY0tBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLxNRsgyy0HkUCSH8EWTJn-Gbv7Koa7MXu40F7nDI-E2h9L1g=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104852840783309825494?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Michael DeRosa",
+          "rating": 5,
+          "text": "Had a great time! The food was delicious, the atmosphere was inviting, and the service was on point. Definitely going back!  The steak was cooked perfectly,  the rice was fresh and calamari was tasty!",
+          "date": "2025-05-21T14:05:53.652Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VKaTR0TW5wMThTdUhREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUlSMhj4EwZkmwGQ5uG0s5U3Cp663r9OaIys3-WLtapLTMVtuYobA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114305148522296820522?hl=en",
+          "reviewerNumberOfReviews": 72,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Hector Rivera",
+          "rating": 5,
+          "text": "",
+          "date": "2025-05-19T10:13:22.179Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJeW9yNlhkdzhmUVZ3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLKb30EXCzRr7BEMxPNsToesGKYb_oqmhImuFjDCSKTWDwTtg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117600639127951892321?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ana Vazquez",
+          "rating": 5,
+          "text": "Delicious food and the owner and staff are very friendly and accommodating.",
+          "date": "2025-05-16T00:32:49.276Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChRDSUhNMG9nS0VJQ0FnSUNteFo1cxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJDIbd6pYP5t0zoyBMfBkTMUkjAe8aYWVMzVlctuwWyriTF=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104370477052012693121?hl=en",
+          "reviewerNumberOfReviews": 84,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Lauren Campbell",
+          "rating": 5,
+          "text": "Had my birthday dinner date here. Everything was fantastic, the food, the service, and the ambiance! Will definitely go again",
+          "date": "2025-05-01T20:49:14.425Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNZdFBIdU1nEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU_wltEAtEQGA5MQgIqXQMglzmQ-tHPOczaTw0iwblbtqMRjdA8pQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115782339774618915726?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mamiche",
+          "rating": 2,
+          "text": "Chicken Alfredo was extremely bland, and beyond oily.",
+          "date": "2025-05-01T01:23:46.688Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNZbU9YVVd3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUHy7A5RnWewt9F8qy41NZx0GDgnpfttMTe6JCQ6WvGtYiWJmUO=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114468492505950311846?hl=en",
+          "reviewerNumberOfReviews": 61,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Carl Dornbush",
+          "rating": 3,
+          "text": "",
+          "date": "2025-04-11T22:05:31.313Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURJMWNtR1pREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX-Zm4lt_cjVZ7UG9KeWlVD7QL0Sav0DAYriMCHdSkWBCjCFnE=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109565701978158639464?hl=en",
+          "reviewerNumberOfReviews": 201,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Azelia Ng",
+          "rating": 3,
+          "text": "Food was good but the waitress during a slow brunch was not paying any attention but on her phone the whole time. I had to call the bus boy to get her attention or else walk up to her myself",
+          "date": "2025-04-01T14:18:40.077Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNJNXBUTl93RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVTgCYwhg0MihAK0QtnWpCw7oL99504dGvegewiGi95AfRzmCTa=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104750671883350106885?hl=en",
+          "reviewerNumberOfReviews": 77,
+          "sentiment": "positive"
+        },
+        {
+          "author": "michael. caivano",
+          "rating": 4,
+          "text": "",
+          "date": "2025-03-24T23:56:24.160Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUR3NHFXSE9nEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXM0Tur15PfvrZxw9SfM6212CjaCoK7XCsp1UVGKg4BI0vpjjfv=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113651873826756753551?hl=en",
+          "reviewerNumberOfReviews": 34,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tomasa Farmer",
+          "rating": 1,
+          "text": "",
+          "date": "2025-03-06T13:21:35.498Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNRamVfRkdREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJR2HEWJxNS-gpG4gD7cUCC3d6T3rL-eYhhjsmAxS6ud-24HQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116445297517436776847?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Elle Dubbs",
+          "rating": 1,
+          "text": "",
+          "date": "2025-03-06T09:22:15.029Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNRNWV2X2tnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV8KPWo9GDWsXfwQK08_ioLyCp-xDxVDne6Ka6Xdv80VaeNZlsC=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110524263515293370797?hl=en",
+          "reviewerNumberOfReviews": 45,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Nubia Hernandez",
+          "rating": 1,
+          "text": "",
+          "date": "2025-03-06T08:06:30.507Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNRcFlXRnRRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIcGNBuRnExUywqj2F_XtT3BBSvdEMsA7eX3UuWFTuqadG7=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116916367154467531128?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Matt Florence",
+          "rating": 4,
+          "text": "First time here since they opened. The Peruvian rice dish is fantastic. The fact that it's made with a hot dog caught my eye and it actually adds to the dish. Wife had the salmon and she liked as well. Service was good. I'll be back",
+          "date": "2025-02-09T00:38:54.987Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURXMHEzLXpBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU_3ndaH0n_02IYa_6ZUn-I0XOJXYZdXoMU1f7BGj6EYBcuqylL=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101377583978296602620?hl=en",
+          "reviewerNumberOfReviews": 25,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Al G",
+          "rating": 4,
+          "text": "I've been here twice already and I really like this place. The food is good, prices reasonable and the staff are great. The drinks are pretty good as well and the bar is great place too hang out at. Overall a great place to spend some quality time and eat and drink with friends in an outstanding atmosphere.",
+          "date": "2025-02-08T19:27:40.919Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURBMXJqSjd3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW7BaXgyorlUm5QAL9gcNhhzI6RFu4UBjLurwDbIqhvG_fN4NE9FQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110983784333035030010?hl=en",
+          "reviewerNumberOfReviews": 91,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Nick P.",
+          "rating": 5,
+          "text": "",
+          "date": "2025-02-07T13:20:22.595Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURBN0tlSnN3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJUJNelwgwtvo8KDB7SgvgQOwrUqV-fy3UHgwCjP9HOKwFT2w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101950423837271225241?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Vesna Kanacki",
+          "rating": 5,
+          "text": "My very own neighborhood \"Cheers\".  A place where everyone knows your name.  The owner Gio, could not be nicer and accommodating, along with Joe, the bartender and Gina the event coordinator.  It's one of my frequent places to go!  Their happy hour menu is very generous.",
+          "date": "2025-02-06T16:08:58.269Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURBcUlyLUZBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWXs-lJOr8xUGXz46mwT0q-dot1uwnFdzkjv6TwT68aHcg1dZmr=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112130188903991808022?hl=en",
+          "reviewerNumberOfReviews": 47,
+          "sentiment": "positive"
+        },
+        {
+          "author": "K A",
+          "rating": 5,
+          "text": "Just had dinner here tonight with my family and wow we have been missing out on this gem. Delicious food and great service. This is going to become our new go to for family dinners happy hours etc. Loved it!",
+          "date": "2025-01-06T01:37:59.196Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURmeHIzb0lBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJN7SAkiALpU2fpLNRiLY5ugIrsQT1wQrvdJCfuF8NRjkmDHOaw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109885262224015455259?hl=en",
+          "reviewerNumberOfReviews": 47,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Maribel Colon",
+          "rating": 5,
+          "text": "",
+          "date": "2025-01-05T23:09:36.855Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURmaHBtU2Z3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjURtYQMeUJX2nQg-pWpa_E8MkKvGt1pLLvkMBaB15bmubXFsfFjLg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100114294107945467496?hl=en",
+          "reviewerNumberOfReviews": 65,
+          "sentiment": "positive"
+        },
+        {
+          "author": "David Finley",
+          "rating": 5,
+          "text": "Absolutely delicious, cannot wait to go back!",
+          "date": "2024-12-30T12:33:25.443Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNmNmF5ZkpBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUE-UDeOf8bkx36R-MGEcoNcA-D9pPBe6KEtmu6o6Mrm9POXfgnsQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102886370543621919344?hl=en",
+          "reviewerNumberOfReviews": 168,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Shibu Mathew",
+          "rating": 5,
+          "text": "",
+          "date": "2024-12-23T01:28:37.823Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR2N1lpSUt3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXJEYlIwAXpCFQeX-pcE5gnWhBO6mjP02vQqTAJJOpE5hCVvEW7=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112111462656770404976?hl=en",
+          "reviewerNumberOfReviews": 15,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kiran Chandrahasa",
+          "rating": 5,
+          "text": "",
+          "date": "2024-11-03T18:30:22.925Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUMzbk91Q0lREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJdHzQRH2PPo7d1guAcLqXVuLoytbMGUXh-BXSC4LlF0GO6cEoO=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104084413304774186936?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "positive"
+        },
+        {
+          "author": "L MD",
+          "rating": 1,
+          "text": "Came here for the first time, and I didn't have a great experience. Upon walking in, there was no hostess. We waited there for a few minutes & then she finally came out from the kitchen.  It took a very long time before anyone came to our table to serve us. When we finally ordered our drinks, it took over 20 minutes before we got our drinks. This is also not a very big restaurant, and it wasn't very busy, so there's no reason for the long waits. Our waitress wasn't very attentive, nor was she very friendly.  The food took a very long time to come out. I was disappointed with my meal, and I did not like it at all, so I did not eat it. My son ordered a chicken sandwich and the cut of chicken was so thick, and unpleasant. He did not like his meal either. No one at our party said that their meal was very good. $250 later, no one was happy with their meal, service was slow and we had a not so cordial waitress.  I don't see the hype in some of these reviews. I've had so many good meals from other local restaurants, such as Blu Fig for half the price.  Bellissimo in Montvale has amazing food, good service and a great atmosphere, and our bill has never come up that high.  I had high hopes for Gio's, but after the bad experience with the poor service, from the moment of walking in, unusually long waits for everything, and the low quality food, I unfortunately will not be returning. I am one that will become a regular if the food and service are good, but this place will not be added to my list of restaurants that I frequent. I honestly wish I would've just sent my meal and my son's meal back to the kitchen, instead of paying for it and staying hungry.  There were 2 restaurants before Gio's, and none of them lasted very long. I can't see them lasting very long. I was so disappointed, and wasted so much money and was still hungry at the end of the night.  I hope management learns something from this review. As an entrepreneur, reviews are paramount because it gives you a real view of what's really going on in areas where you might've miss, and it highlights the areas where improvements are needed.",
+          "date": "2024-11-03T14:34:03.828Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUMzckxUdGN3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocICxWWem6k9qdIXarrr63lB1u5Z-XkFOCeKZUIm0Ok-EF-ZGw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107833470159966696754?hl=en",
+          "reviewerNumberOfReviews": 63,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Kim Taylor",
+          "rating": 5,
+          "text": "Fantastic food, great weeknight and seasonal.  Service is great and the staff makes terrific recommendations. Also, fo for the weekend brunch!.",
+          "date": "2024-10-22T11:41:25.000Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNYdjdTQ1J3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIQO4htSfHOg9wmac-leFIuM72pDJyAQQ_StQQOi8ARynqoZQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110438410248770666050?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Timothy Finley",
+          "rating": 5,
+          "text": "I don't get it. Why is there not a huge line out the front door.\nThe food was on point. The drinks were on point. The waitress was amazing. Even the bus boy was amazing. Everyone we interacted with went above and beyond. My wife has some unique allergies, and they bent over backwards to help. Every aspect of this visit was top notch. I normally don't give reviews. I think I have less than a handful, but this place was so good I had to say something. I'm sure in the future, I'm probably going to be the one that complains about the long lines whenever we go.\nBut, this place is worth it.",
+          "date": "2024-10-07T00:18:16.648Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURuc2VpQ2p3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLjCqUTJxUmBig3cp7KdkrLHsSLgq0UpgvY62KhGLPArt0PXQ=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100603589950437911270?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Shawn Varughese",
+          "rating": 4,
+          "text": "Great service !",
+          "date": "2024-09-05T13:12:49.487Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNIdnB2UmpBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIwR3HXJEogEFrEMh8NTfOgGlzVvCiUcOAUrtbZLushx4_tGQ=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103886661529078866723?hl=en",
+          "reviewerNumberOfReviews": 156,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Oscar Velz",
+          "rating": 5,
+          "text": "Ok, first of all we were in the search for a place to make 20 pp party and went many places and everyone was so limited in options, others just slammed the doors on us like \"River palm in Wahwah, not recommended\" but Then we found GIO'S, and it was the best decision we made, Starting with Gilberto and the banquet manager both where so helpful and have millions of ideas and answers to our questions, they showed to have no limits, gave us plenty of choices to choose from, we accidentally smash part of our cake and my wife almost cry, then the banquet manager lady jump in action and said \" don't worry, we can fix it and make it beautiful again\" we appreciate her kindness very much, lovely dining room, extra room by the well setting bar area, and a dedicated banquet room upstairs that sits about 100pp, man I can keep going on and on but have to stop at some time, haha, this place is 10 stars, highly recommend.",
+          "date": "2024-08-25T00:04:50.560Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQ3Z2RXVDRRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU7cL_OT4zzyVcfap6A-e7gJRSVD2W9Wq3NmHHGDWdzZG9TbKTfTw=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106235349916931311197?hl=en",
+          "reviewerNumberOfReviews": 192,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Laura O'Brien",
+          "rating": 5,
+          "text": "Best Spagetti Carbonara I’ve ever eaten. Kudos to the chef. Very pleasant waitress, nice atmosphere. Will be back.",
+          "date": "2024-08-20T17:35:05.402Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQ3eU9fRWVREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIH7KEcwQjPjWlp4ycyKc1buqt0UNuvy1bgtkb3bYqIQsJEgA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118256872453378349261?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "J Kaye",
+          "rating": 3,
+          "text": "Just okay.  Very empty..yet the kitchen took 25+ minutes to plate food. Uggh",
+          "date": "2024-07-22T01:06:27.447Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNwOWRhYWdnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIBF5cm-uRKwKy0M7oR55fvI1qKP0isgV_rtv8tBADODUJurGlN=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118308110058116269709?hl=en",
+          "reviewerNumberOfReviews": 581,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Shai Crook",
+          "rating": 5,
+          "text": "We recently celebrated a special event at Gio's, and it exceeded our expectations in every way! The staff went above and beyond to accommodate our needs, the food was absolutely delicious, and the venue was beautifully set up. We were thoroughly impressed and had a fantastic time. I would highly recommend Gio's for any occasion and look forward to returning in the future!",
+          "date": "2024-06-05T15:00:17.800Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN6LTZHMzV3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLOd6FgNH4rvIr7uUsRaMIYs7NtMN19S6qXhK_hpfNsfHktLQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101334624423798318783?hl=en",
+          "reviewerNumberOfReviews": 56,
+          "sentiment": "positive"
+        },
+        {
+          "author": "anilsa rubiani",
+          "rating": 4,
+          "text": "",
+          "date": "2024-06-01T17:35:48.299Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN6cHVUbnhRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXZRjeemQnp5EPJRIXs-wuNTNQGld6ow5VidotZyIq4saLA4UOl=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108197719632142040319?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "allison matthews",
+          "rating": 5,
+          "text": "Gio's is the best! The best atmosphere friendly warm very friendly staff. Great food at a great place. Danny makes the best cocktail.",
+          "date": "2024-05-19T08:03:40.940Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNUcTZhQnpRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXIQVG1C2HcTPXTZ7YJu-jHsZ1QHqrjNMaxhx8Hebq2Nc_QiAwY=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109767022304925815326?hl=en",
+          "reviewerNumberOfReviews": 29,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Paul Kilduff",
+          "rating": 5,
+          "text": "I've only been here once, but it was great. Very good food and service at a reasonable price.",
+          "date": "2024-05-12T14:31:25.372Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNUd3BPTzBRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJLXxAZ3yEsXjFid6qlH8bMMyfonQlSjdCfy9GcJSUR5OcZkA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111273147614829606317?hl=en",
+          "reviewerNumberOfReviews": 23,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Danielle Domen",
+          "rating": 5,
+          "text": "We had a party there this past weekend. Everything was wonderful. From the banquetanager Gina, to the wait staff  to the hostess,  everyone was so lovely. The room we were in was lovely. The food was delicious.  I highly recommend them!",
+          "date": "2024-05-08T23:41:02.327Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURqejVfV0ZBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIv7jQfaMbNHgpzBtymHojPVlTGSjNcj2C7va3Xnb-jpGmiNw=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114028146752227121046?hl=en",
+          "reviewerNumberOfReviews": 21,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jose Mejia",
+          "rating": 5,
+          "text": "Great food, Great service. Gio is the best, the food is great. Specially the Lamb Chops",
+          "date": "2024-05-02T13:46:55.229Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURqeHFtdnZ3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVw9NNoKxGt4sbkbqSnZDjpSJ3a9SndwdazU29VqSloTr3c14Y=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118030730352257165323?hl=en",
+          "reviewerNumberOfReviews": 34,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tracy Marcoux",
+          "rating": 5,
+          "text": "Delicious food and excellent service, will definitely be returning often.  Welcome to the neighborhood!",
+          "date": "2024-04-24T01:46:53.347Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUR5aHNDS3pRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVympstmoW_57anvmdfLrWTn3VklT77ZN3RHyiLgTRyBrupj314=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111728249006675617168?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sheila Hayes",
+          "rating": 4,
+          "text": "",
+          "date": "2024-04-11T02:00:26.919Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUREc2EzNGpRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI7m4iKyAmURklWLKmDH33wMIDCLAQowhaj-KPmzyQJ4zTbjg=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107548327727474109464?hl=en",
+          "reviewerNumberOfReviews": 146,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ionel Porumb",
+          "rating": 5,
+          "text": "Great local restaurant, I stoped for a quick bite. Service was great, their wings were fabulous",
+          "date": "2024-04-09T20:34:40.860Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUREbnNMQkl3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWyuC9H-kSg_3GP2jR3WXoty1caBHiTPp_qWomelFmzzQPY09g=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100479704721935301310?hl=en",
+          "reviewerNumberOfReviews": 235,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Susan Marcoux",
+          "rating": 5,
+          "text": "WOW!  Gio's hosted my daughter's bridal shower today.  IT was phenomenal.   The food, atmosphere, service, etc.  Special shout out to Gio, Gina, Danni and everyone else who made our party pure perfection. I wish I had another celebratory occasion coming up to use them again.  HIGHLY RECOMMEND.",
+          "date": "2024-03-03T02:34:28.912Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQxMDR2OU1nEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKdeDYAmY_-WATNyiRGnkVg5FWM0ZwVfbUKs7zV2ncWUikz7A=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101190051752839611462?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Christopher Mennell",
+          "rating": 5,
+          "text": "Love Gio's! Great selection on the menu, incredible flavors and good prices, and such a fun and amazing staff! Will definitely be back!",
+          "date": "2024-02-23T18:30:27.648Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURkanRmRHF3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUrP23e6zksK7JpFdPPIuhI9tQm1K2sYca918UfBOJ3zr9wle9F=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101792144575757204676?hl=en",
+          "reviewerNumberOfReviews": 23,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ren Dan",
+          "rating": 5,
+          "text": "Hosted my baby shower at the location. Amazing service and the team was wonderful. Solid food. The upstairs and downstairs space is great for events. Definitely solid.",
+          "date": "2024-02-18T16:35:02.093Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNkdV9UMTh3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU6YqcIhMyfY8702MtsCcifwhAGUOIztTzhmuPaMEvp9GJM0Vf6=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105245406106471750076?hl=en",
+          "reviewerNumberOfReviews": 58,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Omry Lieber",
+          "rating": 5,
+          "text": "",
+          "date": "2024-02-17T19:15:49.864Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNkdzRxOGJBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJAA2BwnAS9P7u_woO-r_aoRqcXU492CA5ce0Gu_5uIXWR_JQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103482138243875201924?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Rosario Aguilar",
+          "rating": 5,
+          "text": "We’ve been here a few times after work, there’s not many places in Rockland County that make drinks this well. Joe is amazing!!",
+          "date": "2024-02-17T17:35:20.921Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNkZzREWDZBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUQCEvhYJubNMxQ9zyZnc0WlsF2X-eQ3qJoKOaIqE_W5uCtXCQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106256757059429618979?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jessica Nunez",
+          "rating": 5,
+          "text": "Friendly service and awesome atmosphere next to the fireplace. I loved the food so I am going back. Top notch pisco sour!",
+          "date": "2024-02-11T04:58:41.603Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNkNlBYRFZBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVKaBTcDzrdb4FLra46l7mjBcJgHOfB7VTI7IOcGf1bxKlUxvwdqA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115626840311841695338?hl=en",
+          "reviewerNumberOfReviews": 58,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Augie Gemignani",
+          "rating": 5,
+          "text": "Joe and staff do an amazing job. Very friendly and fun to be with. Very cool place to go for a few cocktails.\nDefinitely going back...",
+          "date": "2024-02-09T03:39:29.526Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR0MzRiTExREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJjE7uf7dJ_QtiKFtUj84nLutznOXx76XTJBtl2FIG04PDqyg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109462445687834970938?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "David Marlow",
+          "rating": 5,
+          "text": "Came here on a Monday night. My daughter did 'make your own pizza' - the guy helping her was very friendly and patient. Kids get to make a personal sized pizza (they roll out the dough, put sauce, cheese, and any toppings).\n\nI got the ribs with loaded mashed potatoes and their version of a Moscow Mule. All good stuff and fairly generous portion. Food was great and so was service.",
+          "date": "2024-02-06T16:57:05.723Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUR0b19idXdRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVHtmF0qQLQn-9xfsQfq43W4-71jhrWXq0I6rPAKNmV3KDw18Q=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112240659928420048159?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Stacey Mchenry",
+          "rating": 5,
+          "text": "",
+          "date": "2024-02-03T01:49:01.648Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUR0N0xyVV93RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVFTp5wZG4YPTPiG3EXTSXxH1hWzMKSLDboYvZML5JvXjsGTpsA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105955794331041315455?hl=en",
+          "reviewerNumberOfReviews": 28,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Logicdiary317",
+          "rating": 2,
+          "text": "Smells the same as it did 10 years ago under old management and name. To me that means they use not only the same ovens but they also don't clean them. How else would it smell the same with a whole new menu?! Wild!",
+          "date": "2024-01-22T17:55:01.876Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURObnE3ZE9REAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjULpa4DbJUxjwhiDIYLXrgcRiTBF08l5q0i-UuDx-adBFvdcPJi=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115117721964120783342?hl=en",
+          "reviewerNumberOfReviews": 51,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Thomas Kelly",
+          "rating": 5,
+          "text": "",
+          "date": "2024-01-22T12:50:14.855Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChRDSUhNMG9nS0VJQ0FnSUROanJzUxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKTfRIwxNCMo25rWopKbFORd4Vw7AVeoV4o2BH_Uc0Dnckgcg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117313484092462849042?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Winston J. Thomas Jr",
+          "rating": 5,
+          "text": "",
+          "date": "2024-01-15T12:16:36.957Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNOc1k2UmZnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX0wql_qLRV_3r5giNxojcqirUk9mwVqNRmaFVneaW3zXrczSvdNw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115244044290457788695?hl=en",
+          "reviewerNumberOfReviews": 26,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Eric Litvak",
+          "rating": 5,
+          "text": "",
+          "date": "2024-01-10T00:40:49.231Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQxMDlMQ3JBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJyz-QEoBFLxbPe0DP-YPxSqP02_aQPxlWnQUMBHddZJBvGvQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108680745044353797216?hl=en",
+          "reviewerNumberOfReviews": 14,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Graham Parker",
+          "rating": 5,
+          "text": "Loved this place. Have driven by a bunch and never stopped, but tonight was the night. We were all starving and our server was delightful, full of information and made excellent recommendations.",
+          "date": "2024-01-03T03:57:40.787Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUMxazVuREN3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUWN9a1RhNNxTFc83-kejCafkY8neyuhiPRrqt9aEy9YnRnuSLulg=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103173999918822944666?hl=en",
+          "reviewerNumberOfReviews": 310,
+          "sentiment": "positive"
+        },
+        {
+          "author": "James Thomas",
+          "rating": 5,
+          "text": "What a great place to spend my new year's eve. Great food great atmosphere..",
+          "date": "2024-01-02T02:58:21.995Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUMxMWFLNnJnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ9Z11bsLevMQpwhLYdU9ltrXaE6krYlIe5laJOM_O_oix1SQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115298445892288419970?hl=en",
+          "reviewerNumberOfReviews": 17,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Andrew Kryger",
+          "rating": 5,
+          "text": "Have been here several times with large groups and always great service and food. Definitely recommend for memorable family get together.",
+          "date": "2023-12-27T22:04:18.166Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUMxbXZMMkpBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUCVw322SCc0PV_JlSoLM01hxmcY3c8p70Hb5seVCTNMsfnOSJPjA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110154895148309260264?hl=en",
+          "reviewerNumberOfReviews": 46,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Gianni DD",
+          "rating": 4,
+          "text": "Nice place. Ate here 2x. Food is good.  Service is attentive.  Next time we go we will try the casual bar area.",
+          "date": "2023-12-27T16:51:36.187Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUMxcXN2MnRRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL8BDkqI9flqSLxCzROJ1QOY1Siy7sbFjiFjQGU9X2osKMtMw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115297076421026203764?hl=en",
+          "reviewerNumberOfReviews": 79,
+          "sentiment": "positive"
+        },
+        {
+          "author": "karen hagman",
+          "rating": 5,
+          "text": "Joe bartend is great 👍",
+          "date": "2023-12-27T00:42:11.625Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUMxc3RXSW93RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW9OjLQZaOjrVq_GAO-tUJnYGPhGnV-VdAqQ7LlK8wp3Pp-VSX6ug=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108732968750436407605?hl=en",
+          "reviewerNumberOfReviews": 44,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Patty Gatchalian",
+          "rating": 5,
+          "text": "",
+          "date": "2023-12-23T02:59:50.438Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUMxcE95TGdBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWhBZTFPv0kcfvWgcBGrA4ZPa6mLjIZQashKhvpyBBmiW6zzrBA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109110562531522507986?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Carlos Aguilar",
+          "rating": 5,
+          "text": "",
+          "date": "2023-12-01T00:52:48.526Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURsd3JlT3FBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUGMuu6xkINEYVUgKfzaBmsIs8FkFkcHdw9ATh_Y5rImzCD9M-bQg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116129573646610104197?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tinu Thomas",
+          "rating": 5,
+          "text": "One of my Go to spot for sports. Joe the bartender is phenomenal. Always have specials for game time and the food is amazing! Keep up the great work fellas",
+          "date": "2023-11-16T00:40:16.713Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURGa2JiQ3J3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKFCeFawFumH2gKkfm-MedSoVXOqYn9UU3_V4RgXaKA7OsnBBIw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113980372175048410518?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "linda keshishian",
+          "rating": 4,
+          "text": "Our waiter was knowledgeable accommodating and friendly. The food was delish and the atmosphere wonderful. Overall a really nice experience would definitely return!",
+          "date": "2023-11-06T13:02:12.658Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURGaHBTZzVRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocICMCiKwPdzlLpXZ4Cr0ZQQAstWlR6uc_miYO3-fZNc0VjJvw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115724710923846237174?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Michael Donnelly",
+          "rating": 5,
+          "text": "",
+          "date": "2023-11-02T00:39:41.833Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNGczU3dXpRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJNqW7ceEK8WI3KOL95bKGvuuW4niZtxvUI7d7F9gWgA_VpoA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116546163347913046005?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Steve Howard",
+          "rating": 5,
+          "text": "Went for dinner for my daughter in law’s birthday. 3 of us had the prime rib special and she had the shrimp and pasta. If not for the special I would have a hard time choosing from the menu. Service was amazing as was the food. Really cozy atmosphere. I cannot wait to go back there.",
+          "date": "2023-10-12T01:10:03.489Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUM1Z3YtekN3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWA9_PI-BrSyDqNP-ej9n5LzoFXQIykW6tm-NQa51YszutUr2mN=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105420258832972590803?hl=en",
+          "reviewerNumberOfReviews": 122,
+          "sentiment": "positive"
+        },
+        {
+          "author": "lissette colon",
+          "rating": 5,
+          "text": "Amazing Expresso Martini's made by Joe! The service and food was amazing! Great atmosphere too.",
+          "date": "2023-09-20T11:15:39.792Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNadF9QcUN3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW3_ARyBhWSoanQ5wHYf90n0YB79Gl8qCXc3DsqxhSEwoMWbbslXw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108974526109883308277?hl=en",
+          "reviewerNumberOfReviews": 123,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kenneth M. Borden",
+          "rating": 4,
+          "text": "Gio's is a nice place. Food was good. Service was good. Everything went well.",
+          "date": "2023-09-16T02:12:04.834Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNabmZ6Y1B3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLVSCOJjMVpXtZIZSYnPJqtif-EGE65xFjjLQxYOGZqL6HkNw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114920861318272241997?hl=en",
+          "reviewerNumberOfReviews": 117,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Matthew Castaneda",
+          "rating": 5,
+          "text": "",
+          "date": "2023-09-04T00:39:43.303Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNadU4yTFZREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKIIZgR6IxXaHjRszlnpR3PqG_5sYwVAffYecRwxc4m6bLAWA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108868960365935884024?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Abish Varghese",
+          "rating": 5,
+          "text": "",
+          "date": "2023-08-28T13:13:23.639Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURwa19YQkN3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKsQq5iso-gdIbjyyCI2vCS9zDmRkMA6gh0xv5l8kHj25Wg5g=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115990437916260460725?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Stephen Bradley",
+          "rating": 5,
+          "text": "The food was fantastic. We came on a Thursday evening with our 11 month old son, and not only did we enjoy our food, but so did he. The atmosphere was fun, the bathrooms were very nice, the menu has great variety, and the bar had a great selection. What made me want to write this review was because of how attentive and genuinely nice our waiter Elder was. Thank you for a wonderful night out with a baby, which is hard to do in most situations.",
+          "date": "2023-08-24T22:19:24.926Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURwbWIyenRnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWWEAub-BC90sln_ME32SccpH2lbi0UvOHuhWn76m5YqSjcyEFj=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103843065638216588346?hl=en",
+          "reviewerNumberOfReviews": 17,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Richard",
+          "rating": 5,
+          "text": "Excellent place for any type of banquet.  Professional staff. Delicious food. Reasonable\npricing.",
+          "date": "2023-08-11T12:53:09.475Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURPbU1tc3lnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXsgZ94s9YX733q0XhNvfChwS0xQupNiGDy93AILNuni0wxWDr0=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107092814779861161846?hl=en",
+          "reviewerNumberOfReviews": 430,
+          "sentiment": "positive"
+        },
+        {
+          "author": "David Robinson",
+          "rating": 5,
+          "text": "",
+          "date": "2023-08-08T00:45:04.098Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNwOWZpZ1JnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVglkKHKiI0VnFroQ3oCJ44-QJURJqn5FIJ2qbXmxj85sAFmeY=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106566698554904789012?hl=en",
+          "reviewerNumberOfReviews": 17,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jijoe Joseph",
+          "rating": 5,
+          "text": "",
+          "date": "2023-08-01T21:44:17.518Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNwbXVxbkNREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLZBpkj_o7edezJqpSeNTzE_Aa073qCVwLPoM2dHf4oudIcVA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106361617480901528208?hl=en",
+          "reviewerNumberOfReviews": 51,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Arl P",
+          "rating": 3,
+          "text": "I was not impressed with this restaurant. Hubby and I went here on 6/21/23. He got the parma Romano and I got the margarita pizza and our app was mozzarella sticks. Bill was approx $65. The place was very dark, not like the picture at all. Daniella, our server was pleasant and answered our questions. I did not enjoy my dinner and I don’t plan on going back",
+          "date": "2023-06-22T02:45:21.716Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNKak9EUXBBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVASn143z89zedPDQgPDwYDX8W8j0IiwaofuIr12M1WIxgBKNU-=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103071798935589627973?hl=en",
+          "reviewerNumberOfReviews": 66,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "pomonadora",
+          "rating": 5,
+          "text": "Came with friends to celebrate Father's Day. The service was excellent, the food was very good, big portions which included sides and salad. I had the branzino, and it was delicious. Our friends enjoyed their dinner too. I highly recommend this place. It was our first time here, and we will be back.",
+          "date": "2023-06-19T08:10:58.884Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNKMExtdmlRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLFi8PIJ2cyjl1qP9Yvj9KSj27bMk4mMcmljr5CiUwijo3bsA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100643991280735571973?hl=en",
+          "reviewerNumberOfReviews": 33,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Igor Derkach",
+          "rating": 5,
+          "text": "Pricely but it worth it",
+          "date": "2023-06-13T13:17:50.243Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR4cmJIbU9BEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXgC69cZzujC0_Ix5V8lBPwlznCKWnQ3QqP1aLo79ECmFRznxCi=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101796991032179294993?hl=en",
+          "reviewerNumberOfReviews": 68,
+          "sentiment": "positive"
+        },
+        {
+          "author": "John & Jan Lehman",
+          "rating": 5,
+          "text": "",
+          "date": "2023-06-10T17:56:17.829Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUR4aWNxSjBnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKzUsUQBWP_GXFFGcBT-OlSTXhaiyhwSYpXHbwnV6HRPqI5Mg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106105088208473393943?hl=en",
+          "reviewerNumberOfReviews": 55,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Laly Campos",
+          "rating": 5,
+          "text": "Food was delicious and fresh! My girls loved it here, will be returning",
+          "date": "2023-06-03T00:58:12.240Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR4OVBma2JBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIFFCBAxeaivXL3nemiJur8t33ZRo5JzaG7gMncNzcE10YS7g=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116565479293196075723?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Donna Hartman",
+          "rating": 1,
+          "text": "Mother's day. Very disappointed for 2nd time, thought I'd give another chance. I feel they could get their act together for buffets. Never again...",
+          "date": "2023-05-17T23:53:49.269Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN4cm9maGpnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLl5RmQY-DDzxZVrAk0QstOebiY3S4jeNJhGLM5wp3dn3AeuQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117755325772306340430?hl=en",
+          "reviewerNumberOfReviews": 23,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Harrison Gerson",
+          "rating": 4,
+          "text": "Great service, large portions, would come again, the food was a bit bland but still tasty!",
+          "date": "2023-05-15T16:53:07.763Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN4bW9mbnd3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXJWErI8qaq8Kc9jfXDyrMfN8l4CDCDpp1tboD3vapQiuSmtLau=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117444440808699328097?hl=en",
+          "reviewerNumberOfReviews": 312,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Michelle Hefner",
+          "rating": 5,
+          "text": "We had the nachos with steak..Great...the dinner was also good. We have the steak tacos and the chicken sandwich...one little but I ask for no avocado, which unfortunately they did not take out...the drinks were great..our waitress was awesome, our waitress Emma M. Was great...",
+          "date": "2023-05-13T00:16:40.907Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUN4dk5qSk53EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLXA4EjXj12FUjx2NJBf28ax2dowcfDKHHeEfDsCJ_2zPd85as=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111503095592437905313?hl=en",
+          "reviewerNumberOfReviews": 23,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Life is short",
+          "rating": 4,
+          "text": "Super fun place to eat and drink\nMake sure to try the pizza",
+          "date": "2023-05-09T16:59:27.727Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN4Nk16bXFBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU_ug7zEMJMlRXc-1j1hstaFlzqFosIf4jCShSGCG6kQBkcFalKkw=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112131172054538433824?hl=en",
+          "reviewerNumberOfReviews": 326,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Lindsey Mascia",
+          "rating": 5,
+          "text": "Went to Gios for a fundraiser/moms night out! Sat at the bar and the service was wonderful. The bar tender was super attentive, drinks were delicious. I ordered a salad and it was very fresh and yummy! Had the perfect amount of salad dressing. The entire staff was very warm and welcoming. The atmosphere was peaceful and comfortable. Highly recommend for your next gathering or even just a date night!!",
+          "date": "2023-05-05T23:49:00.618Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURSMTZ1blFREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI0IAo5DMNxXMXKDmt_TBpnPZA33xmuPWFoHut4YzJHlkIE=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115589647839792674712?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "URGENT CARE",
+          "rating": 5,
+          "text": "Had a really great meal here. Exceptional service!!",
+          "date": "2023-04-30T15:53:57.370Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURSdGZLU3NRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUCiOdtEyynfVzbUFWCJ0OEXMn42kQ0uluNl-OMWluGxfE62A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104122082629792040669?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dashelle Disna",
+          "rating": 5,
+          "text": "",
+          "date": "2023-04-04T04:35:24.694Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNSa2V5SkVnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXXiC1frzaBgpfGARuwlPIzjpYoR3Ct2uhwvt-C9IKbJ4yOzuhBfA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110277882554662527469?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Diya Luke",
+          "rating": 5,
+          "text": "I was part of a private party here in the upstairs space. We arrived early to help decorate for our event, and the hosts were absolutely wonderful to work with. They wanted to make sure we had a great time and felt comfortable in the space. It was almost like setting up with friends. This was the easiest private event to set up because of their hospitality and accommodations. The food was also great!",
+          "date": "2023-03-26T00:55:40.017Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNSbExHMWZREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLhMC24S80h9hFw0JK8SUu9YaGWqAmcsd5L-klqji3KI6OMaw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111433993042543256352?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Marcella D'Aston",
+          "rating": 5,
+          "text": "This packed dinner spot really made for a fantastic night! Delicious food, lovely atmosphere by the fire, and tasty cocktails.",
+          "date": "2023-03-12T01:55:55.712Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURoeWRPcFVREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWOPmo46RsXoJLjEN4TxbiL0WcECse7pughJGc2EFD77ugJN_m1Ag=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114656581100721737594?hl=en",
+          "reviewerNumberOfReviews": 228,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tom Humbach",
+          "rating": 5,
+          "text": "",
+          "date": "2023-03-08T02:40:30.132Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURobHVlU1VBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL8PSCv-Ir4x5Ieyh2UopqSQTgQov-MgZ8eUkI3nd6vzxDpLoqi=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110992034954993656652?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Miguel Surage",
+          "rating": 5,
+          "text": "",
+          "date": "2023-02-25T01:24:14.074Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNoajZMNE1nEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLDaJ7Zap44-CyRnMsXyFFN1WYPOD8gsJDNRU-79BLyLloHEg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104867058046362670472?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Deja",
+          "rating": 1,
+          "text": "Beware of this restaurant, the food is FAR from fresh. I ordered wings and I have never tasted wings that tasted so old and terrible from a restaurant. I do not know what they are thinking to serve old poultry like that and I just pray that we don’t fall ill from these. They need a health inspection ASAP",
+          "date": "2023-02-16T00:40:59.784Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNoaVliNVZ3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocICXyRSYTiimead_6o22puWMcBzRvHFg1-Co45DI-NGFVwjrQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105457331886097740644?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Louise Mendez",
+          "rating": 5,
+          "text": "Love, love,  loved it! Amazing food,  sooo many choices! Excellent staff.  First time I came it was our second choice our first choice had a long wait tme, thank you - i have been back almost weekly and will continue to do so 👌",
+          "date": "2023-02-15T18:16:21.869Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNoc2ItZ0RBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKCLCkhx5xt_AtCawNatIk8VQaN560KomlZP--8phJnIvn7=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110014709501659150950?hl=en",
+          "reviewerNumberOfReviews": 141,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ric Gee",
+          "rating": 3,
+          "text": "",
+          "date": "2023-01-25T12:11:36.990Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURtdXAyU1R3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVskZa5GyRlfTrPgbpksyOqSz7P_5MR0FfII7vpStIUDv9qG9gQ=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108484967722263865701?hl=en",
+          "reviewerNumberOfReviews": 486,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "doug villari",
+          "rating": 4,
+          "text": "",
+          "date": "2023-01-15T18:10:27.608Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURCMHBhUmRnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXL5PMeZEjusxukSi9a-vnKNtyPv7rjzHUV3vKWyYoFqinoGuCRZw=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115706054338901765651?hl=en",
+          "reviewerNumberOfReviews": 21,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Michael Murray",
+          "rating": 5,
+          "text": "",
+          "date": "2023-01-10T21:27:55.309Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURCbUthVTFnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWYr1ejJQ-IHbqGMGst9VXCnH3WYQoXDLc_Sk6Bjn3_h50Ofh32tA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112912480739520984538?hl=en",
+          "reviewerNumberOfReviews": 61,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Nancy Marji",
+          "rating": 5,
+          "text": "We enjoyed dinner for my husband's birthday on a saturday. The resturaunt is quiet, service is impressive and quick. Our waitress was wonderful, as soon as we sat down we were greeted, asked for drinks, and soon after appetizers and our entrees. We didn't wait long in between meals. As far as food goes, I got the bronzino filet which was grilled, healthy, light in oil. My husband got chicken parm and pasta and that was cooked well. Highly reccomend the blackened salmon.",
+          "date": "2022-12-28T00:44:49.163Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNCNGZ1MjFBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVM1UNK9sdQYRsYu9v8AG52-ZmUqiFyIy6DyNMpgPHKvaV_4eua=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118139452775068496161?hl=en",
+          "reviewerNumberOfReviews": 49,
+          "sentiment": "positive"
+        },
+        {
+          "author": "David Bulnes",
+          "rating": 5,
+          "text": "Attentive staff provides a quality dining experience with a diverse menu that is sure to please a variety of palates.",
+          "date": "2022-12-12T23:38:07.256Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQtcjZQNU9nEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUKMh2VLl6y9uTWuFI8FOPw-aHRZGppLkA4ZNzccvPtm_REw5IMVw=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103260160490017045895?hl=en",
+          "reviewerNumberOfReviews": 163,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jesus Dominguez",
+          "rating": 5,
+          "text": "",
+          "date": "2022-12-10T13:02:15.192Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQtMjdIWnRBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUv2Dr30nHYKswsGVp0aELRT_gsMzjcx0xiyTBiDDouEyO0sblqVQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104934238749989816504?hl=en",
+          "reviewerNumberOfReviews": 96,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Joe Troia",
+          "rating": 4,
+          "text": "",
+          "date": "2022-12-08T00:22:50.519Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQtdzZLclNREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWXiQEHspzJJlZGf_NLVyQx2yV3ho_x6n_aHiquC-ap_hPCGL92=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105453674846481702902?hl=en",
+          "reviewerNumberOfReviews": 74,
+          "sentiment": "positive"
+        }
+      ],
+      "customerMoodAnalysis": {
+        "overallMood": "satisfied",
+        "sentimentSummary": "Customers have positive experiences overall. Your 4.5/5 rating from 100 recent reviews shows solid satisfaction with room for growth.",
+        "sentimentDistribution": {
+          "ecstatic": 12,
+          "delighted": 65,
+          "satisfied": 14,
+          "neutral": 1,
+          "frustrated": 2,
+          "disappointed": 5,
+          "angry": 1
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "food quality",
+            "mentions": 32
+          },
+          {
+            "theme": "atmosphere",
+            "mentions": 25
+          },
+          {
+            "theme": "slow service",
+            "mentions": 22
+          },
+          {
+            "theme": "service excellence",
+            "mentions": 20
+          },
+          {
+            "theme": "value for money",
+            "mentions": 5
+          },
+          {
+            "theme": "speed of service",
+            "mentions": 2
+          },
+          {
+            "theme": "cleanliness",
+            "mentions": 1
+          },
+          {
+            "theme": "poor service",
+            "mentions": 1
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 40,
+          "satisfaction": 69,
+          "disappointment": 4,
+          "frustration": 0,
+          "anger": 1
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "Customers consistently praise the exceptional food quality, noting dishes are crafted with care and bursting with rich flavors and fresh ingredients. - social media marketing can showcase this strength",
+            "The warm and friendly atmosphere, combined with attentive and knowledgeable service, creates an inviting dining experience that customers love. - review management can highlight this positive aspect",
+            "The restaurant is highly recommended for special events and gatherings, with excellent service and a cozy, upscale ambiance that sets the tone for memorable occasions. - Boostly marketing services can amplify this"
+          ],
+          "improvementOpportunities": [
+            "Long wait times and inattentive service - Boostly marketing services can improve this",
+            "Negative reviews and reputation issues - review management can address this concern",
+            "Lack of atmosphere/ambiance awareness - social media marketing can improve this area"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 100,
+          "averageRating": 4.5,
+          "ratingDistribution": {
+            "1": 6,
+            "2": 2,
+            "3": 5,
+            "4": 15,
+            "5": 72
+          },
+          "sentimentTrends": {
+            "trend": "improving",
+            "recentAverageRating": 4.8,
+            "previousAverageRating": 4.4,
+            "recentReviewsCount": 10
+          }
+        }
+      },
+      "examples": {
+        "positive": [
+          {
+            "author": "Alexander Lepes",
+            "rating": 5,
+            "text": "Great peruvian food",
+            "date": "2025-09-15T02:51:31.422Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT214cFVuUjRZVzVEUldNNVEzSXRhVGhVUVhaMGRVRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI8bTvxJ_U_zEgpFC17sjiT9uKbeQUkIPZiNf0BiAZYd1ChoQ=s1920-c-rp-mo-ba4-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/112989298490642941217?hl=en",
+            "reviewerNumberOfReviews": 94
+          },
+          {
+            "author": "Debra DeForest",
+            "rating": 5,
+            "text": "Excellent food and friendly staff",
+            "date": "2025-08-02T22:48:30.099Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xwbllXUmlUVUV3UnpSME9IUmtTR05tVEhWRlVYYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKFcfCe8WiBZJuvLClmelkWejs4O6JplESvCOtZ4ZtybrnJVQ=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/111970806223038179991?hl=en",
+            "reviewerNumberOfReviews": 4
+          },
+          {
+            "author": "Patrick Murray",
+            "rating": 5,
+            "text": "Great food, great service!",
+            "date": "2025-07-24T23:33:11.744Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21SRWRqUnNhM0UyYVhNd01WaDZSMlphWlc4eVJGRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU9cx3oipCeRT_FQ-lHFU08XYW8FUL9inDr1MtaQInO77bxoX1lww=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/101818584139262452009?hl=en",
+            "reviewerNumberOfReviews": 3
+          }
+        ],
+        "neutral": [
+          {
+            "author": "Carl Dornbush",
+            "rating": 3,
+            "text": "",
+            "date": "2025-04-11T22:05:31.313Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURJMWNtR1pREAE",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX-Zm4lt_cjVZ7UG9KeWlVD7QL0Sav0DAYriMCHdSkWBCjCFnE=s1920-c-rp-mo-ba5-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/109565701978158639464?hl=en",
+            "reviewerNumberOfReviews": 201
+          },
+          {
+            "author": "Azelia Ng",
+            "rating": 3,
+            "text": "Food was good but the waitress during a slow brunch was not paying any attention but on her phone the whole time. I had to call the bus boy to get her attention or else walk up to her myself",
+            "date": "2025-04-01T14:18:40.077Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNJNXBUTl93RRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVTgCYwhg0MihAK0QtnWpCw7oL99504dGvegewiGi95AfRzmCTa=s1920-c-rp-mo-ba4-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/104750671883350106885?hl=en",
+            "reviewerNumberOfReviews": 77
+          },
+          {
+            "author": "J Kaye",
+            "rating": 3,
+            "text": "Just okay.  Very empty..yet the kitchen took 25+ minutes to plate food. Uggh",
+            "date": "2024-07-22T01:06:27.447Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNwOWRhYWdnRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIBF5cm-uRKwKy0M7oR55fvI1qKP0isgV_rtv8tBADODUJurGlN=s1920-c-rp-mo-ba5-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/118308110058116269709?hl=en",
+            "reviewerNumberOfReviews": 581
+          }
+        ],
+        "negative": [
+          {
+            "author": "Mamiche",
+            "rating": 2,
+            "text": "Chicken Alfredo was extremely bland, and beyond oily.",
+            "date": "2025-05-01T01:23:46.688Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNZbU9YVVd3EAE",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUHy7A5RnWewt9F8qy41NZx0GDgnpfttMTe6JCQ6WvGtYiWJmUO=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/114468492505950311846?hl=en",
+            "reviewerNumberOfReviews": 61
+          },
+          {
+            "author": "Tomasa Farmer",
+            "rating": 1,
+            "text": "",
+            "date": "2025-03-06T13:21:35.498Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNRamVfRkdREAE",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJR2HEWJxNS-gpG4gD7cUCC3d6T3rL-eYhhjsmAxS6ud-24HQ=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/116445297517436776847?hl=en",
+            "reviewerNumberOfReviews": 0
+          },
+          {
+            "author": "Elle Dubbs",
+            "rating": 1,
+            "text": "",
+            "date": "2025-03-06T09:22:15.029Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNRNWV2X2tnRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV8KPWo9GDWsXfwQK08_ioLyCp-xDxVDne6Ka6Xdv80VaeNZlsC=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/110524263515293370797?hl=en",
+            "reviewerNumberOfReviews": 45
+          }
+        ]
+      },
+      "trends": {
+        "ratingTrend": "declining",
+        "volumeTrend": "stable",
+        "responseRate": 0,
+        "averageResponseTime": "No responses"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ]
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/giosrestaurants",
+      "instagram": "https://www.instagram.com/giosrestaurants",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 58,
+      "social": 100,
+      "local": 48,
+      "reviews": 76,
+      "overall": 71
+    },
+    "originalScores": {
+      "seo": 70,
+      "overallScore": 68,
+      "performance": 73,
+      "userExperience": 63
+    },
+    "migratedAt": "2025-09-16T00:37:21.708Z"
+  },
+  "metadata": {
+    "cachedAt": "2025-09-15T10:40:51.864Z",
+    "expiresAt": "2025-10-15T10:40:51.864Z",
+    "placeId": "ChIJwx0kiAbDwokRw3RZUBTtk3s",
+    "restaurantName": "Gio's restaurants",
+    "cacheVersion": "2.0.0"
+  }
+}

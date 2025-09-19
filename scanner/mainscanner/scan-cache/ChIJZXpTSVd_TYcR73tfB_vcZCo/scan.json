@@ -1,0 +1,1370 @@
+{
+  "data": {
+    "domain": "www.marcos.com",
+    "restaurantName": "Marco's Pizza",
+    "placeId": "ChIJZXpTSVd_TYcR73tfB_vcZCo",
+    "overallScore": 72,
+    "performance": 100,
+    "seo": 58,
+    "mobile": 42,
+    "userExperience": 68,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "performance",
+        "severity": "critical",
+        "title": "⚡ Speed Crisis: Customers Are Leaving",
+        "description": "Performance score of 62/100 means customers wait too long. 53% abandon slow websites.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🐌",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "Lost orders from customers who abandon slow-loading pages"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "pizza near me",
+        "position": 0,
+        "searchVolume": 3600,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery Saratoga Springs",
+        "position": 0,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best pizza Saratoga Springs",
+        "position": 0,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza",
+        "position": 0,
+        "searchVolume": 3600,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza places near me",
+        "position": 0,
+        "searchVolume": 210,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza Saratoga Springs Utah",
+        "position": 6,
+        "searchVolume": 50,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.marcos.com/our-locations/restaurants/ut/saratoga-springs/marcos-pizza-e-crossroads-blvd-saratoga-springs-1/",
+        "title": "Marco's Pizza E. Crossroads Blvd - Saratoga Springs",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery near me",
+        "position": 0,
+        "searchVolume": 390,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza open now",
+        "position": 0,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 50,
+        "keywords_appeared": 4,
+        "total_keywords": 8,
+        "average_position": 3,
+        "best_position": 3
+      },
+      "keyword_results": [
+        {
+          "keyword": "pizza near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "pizza",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "The Place Pizza",
+              "address": "Saratoga Springs, UT ",
+              "website": "https://theplace.pizza/",
+              "rating": 4.7,
+              "reviews": 673
+            },
+            {
+              "position": 2,
+              "name": "Summit Pizza Co",
+              "address": "Saratoga Springs, UT ",
+              "website": "http://summitpizzaco.com/",
+              "rating": 4.6,
+              "reviews": 323
+            },
+            {
+              "position": 3,
+              "name": "Village Pizza",
+              "address": "Eagle Mountain, UT ",
+              "website": "http://www.eatvillagepizza.com/",
+              "rating": 4.2,
+              "reviews": 826
+            }
+          ]
+        },
+        {
+          "keyword": "best pizza Saratoga Springs",
+          "found": true,
+          "position": 3,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Marco's Pizza",
+            "address": "Saratoga Springs, UT ",
+            "website": "https://www.marcos.com/our-locations/restaurants/UT/Saratoga%20Springs/marcos-pizza-e-crossroads-blvd-saratoga-springs-1",
+            "phone": "(385) 484-8880",
+            "rating": 4.5,
+            "reviews": 10
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "The Place Pizza",
+              "address": "Saratoga Springs, UT ",
+              "website": "https://theplace.pizza/",
+              "rating": 4.7,
+              "reviews": 673
+            },
+            {
+              "position": 2,
+              "name": "Summit Pizza Co",
+              "address": "Saratoga Springs, UT ",
+              "website": "http://summitpizzaco.com/",
+              "rating": 4.6,
+              "reviews": 323
+            }
+          ]
+        },
+        {
+          "keyword": "pizza delivery near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Summit Pizza Co",
+              "address": "Saratoga Springs, UT ",
+              "website": "http://summitpizzaco.com/",
+              "rating": 4.6,
+              "reviews": 323
+            },
+            {
+              "position": 2,
+              "name": "The Place Pizza",
+              "address": "Saratoga Springs, UT ",
+              "website": "https://theplace.pizza/",
+              "rating": 4.7,
+              "reviews": 673
+            },
+            {
+              "position": 3,
+              "name": "Village Pizza",
+              "address": "Eagle Mountain, UT ",
+              "website": "http://www.eatvillagepizza.com/",
+              "rating": 4.2,
+              "reviews": 826
+            }
+          ]
+        },
+        {
+          "keyword": "pizza Saratoga Springs Utah",
+          "found": true,
+          "position": 3,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Marco's Pizza",
+            "address": "Saratoga Springs, UT ",
+            "website": "https://www.marcos.com/our-locations/restaurants/UT/Saratoga%20Springs/marcos-pizza-e-crossroads-blvd-saratoga-springs-1",
+            "phone": "(385) 484-8880",
+            "rating": 4.5,
+            "reviews": 10
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "The Place Pizza",
+              "address": "Saratoga Springs, UT ",
+              "website": "https://theplace.pizza/",
+              "rating": 4.7,
+              "reviews": 673
+            },
+            {
+              "position": 2,
+              "name": "Summit Pizza Co",
+              "address": "Saratoga Springs, UT ",
+              "website": "http://summitpizzaco.com/",
+              "rating": 4.6,
+              "reviews": 323
+            }
+          ]
+        },
+        {
+          "keyword": "top pizza Saratoga Springs",
+          "found": true,
+          "position": 3,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Marco's Pizza",
+            "address": "Saratoga Springs, UT ",
+            "website": "https://www.marcos.com/our-locations/restaurants/UT/Saratoga%20Springs/marcos-pizza-e-crossroads-blvd-saratoga-springs-1",
+            "phone": "(385) 484-8880",
+            "rating": 4.5,
+            "reviews": 10
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "The Place Pizza",
+              "address": "Saratoga Springs, UT ",
+              "website": "https://theplace.pizza/",
+              "rating": 4.7,
+              "reviews": 673
+            },
+            {
+              "position": 2,
+              "name": "Summit Pizza Co",
+              "address": "Saratoga Springs, UT ",
+              "website": "http://summitpizzaco.com/",
+              "rating": 4.6,
+              "reviews": 323
+            }
+          ]
+        },
+        {
+          "keyword": "pizza restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Domino's Pizza",
+              "address": "Saratoga Springs, UT ",
+              "website": "",
+              "rating": 3,
+              "reviews": 348
+            },
+            {
+              "position": 2,
+              "name": "Pizza Hut",
+              "address": "Saratoga Springs, UT ",
+              "website": "",
+              "rating": 2.9,
+              "reviews": 498
+            },
+            {
+              "position": 3,
+              "name": "The Place Pizza",
+              "address": "Saratoga Springs, UT ",
+              "website": "https://theplace.pizza/",
+              "rating": 4.7,
+              "reviews": 673
+            }
+          ]
+        },
+        {
+          "keyword": "pizza food Saratoga Springs",
+          "found": true,
+          "position": 3,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Marco's Pizza",
+            "address": "Saratoga Springs, UT ",
+            "website": "https://www.marcos.com/our-locations/restaurants/UT/Saratoga%20Springs/marcos-pizza-e-crossroads-blvd-saratoga-springs-1",
+            "phone": "(385) 484-8880",
+            "rating": 4.5,
+            "reviews": 10
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "The Place Pizza",
+              "address": "Saratoga Springs, UT ",
+              "website": "https://theplace.pizza/",
+              "rating": 4.7,
+              "reviews": 673
+            },
+            {
+              "position": 2,
+              "name": "Summit Pizza Co",
+              "address": "Saratoga Springs, UT ",
+              "website": "http://summitpizzaco.com/",
+              "rating": 4.6,
+              "reviews": 323
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"pizza near me\", \"pizza\", \"pizza delivery near me\", \"pizza restaurant near me\" - optimize Google My Business profile with these keywords",
+        "Ranking below #1 for 4 keywords - increase customer reviews and engagement to improve rankings"
+      ],
+      "scan_metadata": {
+        "location": "Saratoga Springs,Utah,United States",
+        "timestamp": "2025-09-15T17:21:57.286Z",
+        "total_scan_time_ms": 56644
+      }
+    },
+    "competitors": [
+      {
+        "name": "TERIYAKI GRILL-SARATOGA SPRINGS",
+        "domain": "teriyakigrillsaratogasprings.com",
+        "performance": 98,
+        "seo": 88,
+        "accessibility": 83,
+        "bestPractices": 93,
+        "overallScore": 91,
+        "rating": 4.9,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 529,
+        "keywords": 42,
+        "domainAuthority": 82,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+200 keywords",
+        "authorityGap": 6,
+        "backlinks": 1182
+      },
+      {
+        "name": "Hotpot Haven-Seoul BBQ",
+        "domain": "hotpothavenseoulbbq.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 646,
+        "keywords": 41,
+        "domainAuthority": 78,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 843
+      },
+      {
+        "name": "Pho888",
+        "domain": "pho888.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1217,
+        "keywords": 27,
+        "domainAuthority": 77,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 1047
+      },
+      {
+        "name": "The blue jay cafe",
+        "domain": "thebluejaycafe.com",
+        "performance": 96,
+        "seo": 86,
+        "accessibility": 82,
+        "bestPractices": 91,
+        "overallScore": 89,
+        "rating": 4.8,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 924,
+        "keywords": 28,
+        "domainAuthority": 86,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+150 keywords",
+        "authorityGap": 4,
+        "backlinks": 1118
+      },
+      {
+        "name": "Papayas Grill",
+        "domain": "papayasgrill.com",
+        "performance": 98,
+        "seo": 88,
+        "accessibility": 83,
+        "bestPractices": 93,
+        "overallScore": 91,
+        "rating": 4.9,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1092,
+        "keywords": 41,
+        "domainAuthority": 75,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+200 keywords",
+        "authorityGap": 6,
+        "backlinks": 1204
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 66,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-15T17:22:15.565Z",
+    "businessProfile": {
+      "name": "Marco's Pizza",
+      "address": "337 E Xrds Blvd Unit D, Saratoga Springs, UT 84045, USA",
+      "rating": 4.5,
+      "reviewCount": 10,
+      "phoneNumber": "(385) 484-8880",
+      "website": "https://www.marcos.com/our-locations/restaurants/UT/Saratoga%20Springs/marcos-pizza-e-crossroads-blvd-saratoga-springs-1",
+      "formatted_address": "337 E Xrds Blvd Unit D, Saratoga Springs, UT 84045, USA",
+      "address_components": [
+        {
+          "long_name": "Unit D",
+          "short_name": "Unit D",
+          "types": [
+            "subpremise"
+          ]
+        },
+        {
+          "long_name": "337",
+          "short_name": "337",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "East Crossroads Boulevard",
+          "short_name": "E Xrds Blvd",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Saratoga Springs",
+          "short_name": "Saratoga Springs",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Utah County",
+          "short_name": "Utah County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Utah",
+          "short_name": "UT",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "84045",
+          "short_name": "84045",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "state": "Utah",
+      "city": "Saratoga Springs",
+      "place_id": "ChIJZXpTSVd_TYcR73tfB_vcZCo",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "establishment",
+        "food",
+        "meal_takeaway",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "reviews": [
+        {
+          "author_name": "Troy Love",
+          "author_url": "https://www.google.com/maps/contrib/107674002190853597719/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUJUJWfFGz2wJTOaoEQuZNqwx6y8BDEFIyFJNyK4d-KKnFLi24=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Marco's Pizza just opened in our area and they brought pizza to our place of business to let us know they were opened. The pizza was delicious and it was such a great gesture. Definitely bringing my family to get some pizza here!",
+          "time": 1755356690,
+          "translated": false
+        },
+        {
+          "author_name": "Jaxon washburn",
+          "author_url": "https://www.google.com/maps/contrib/114245170932529395375/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV69IviYIWkXe4BTyz-9Y8cs3-RLKeQsdBSiRjsnOPheL37SEjvdg=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "I walked in and Faith greeted me with a smile immediately. She recommended a pie that I bought back to work, and the whole team loved it. Top Shelf loves Marco's!",
+          "time": 1755813420,
+          "translated": false
+        },
+        {
+          "author_name": "Braden Wardle",
+          "author_url": "https://www.google.com/maps/contrib/113024354522257490295/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUS2ZuQoJZxSetzjeN1O9o1nqi5aOkLeNnnWlAs4XshwlrzLtH2Aw=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "Some of the best chain pizza I’ve had! So glad this opened. Very quick service and the pizza was perfect. Definitely will be back.",
+          "time": 1755978917,
+          "translated": false
+        },
+        {
+          "author_name": "Tiara Harvey",
+          "author_url": "https://www.google.com/maps/contrib/103532118873766280080/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWQVg7RrejW3jPADofg-csBGgY_BKaK065YNjNkWWbmhsPWQBGd=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "4 weeks ago",
+          "text": "The pizza was really good when I picked it up I was just checking all the sauces were there and the lady didn’t seem to happy with my questions but the food was good the hot honey isn’t hot but it’s still good love this place and so glad I don’t have to drive 40 minutes for it now",
+          "time": 1755393130,
+          "translated": false
+        },
+        {
+          "author_name": "john schofield",
+          "author_url": "https://www.google.com/maps/contrib/102238218941912461276/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXUmKja6GErkmTI_TtnDPGmjyYUntjYiNzmeczA44YirylUqxy5Eg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "Alwsys great pizza. Glad to have them in the neighborhood.",
+          "time": 1756246003,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 720,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107841516411557011507\">Marco&#39;s Pizza</a>"
+          ],
+          "photo_reference": "ATKogpfZt3kItHAKP5Tq1FNvgcOhYHw29nN6DAOnA1RmyZDVrg8ulUnhhjH5F9qSjwwsE45HJ4msSXvvLQ4gJ3iKxyuJ9fa-GaDe-EM2m8oUt1ElupHDj3MpKReVJHhj2ojX5yR5KJ2BpR2ffbXaCPwhghDMmGxyT-MRe-ZkfYBDqc76gDxd0YwyNIcMsVKikSUPLNAKyWQUdd6IytENpQ-67jZkTPrNqSBUZMtWlPjiQTbPHCqAGlz5uCvsAIW0mVK1GOjufdgIqRhRfxTbPOLacxGasf08m7hjwnNGIO_gf6zUIg",
+          "width": 720
+        },
+        {
+          "height": 720,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107841516411557011507\">Marco&#39;s Pizza</a>"
+          ],
+          "photo_reference": "ATKogpdOZZqVm3xkFCrygIwsuGI_V9BcUt6NS7jBxIDE36QdTg448rmWZLKyE93m7nak_DZntVBuTVewcwlbbBp_vh_CG6oHucUtFgAF-auRwYDtj-6IRXm6_VT1HmvmO7gz1sjjQ3QfqLdjoURn7llZk6sGLmBFJRUk3xpsA8GtxgPlKYEn09ATxoc6gaBD2AUL8Q-H5H2j2H7ZQpF79i7f4o1Rv_sFxM2JNWSQl8xDLzypobkQglUZMQ9e28n6_HNwdOOS_mKZwta6eh2khJv9mKEDHftkzDZLXzHTewn1fT8TwA",
+          "width": 720
+        },
+        {
+          "height": 720,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107841516411557011507\">Marco&#39;s Pizza</a>"
+          ],
+          "photo_reference": "ATKogpdlKY3oWyrrj8iXkDOeIAQTKSLYTVbCrKGQKphxW0M0LinmdS8Z6ZBaBXsWU2GXWPJV8qqfc27raSu-hFV49b9VefGGdhPTRgv3Kj5K-BYNbHjniFgG_GPe0DVnKM095HQrQ3EtSmZG9NvNcAfIf5ndacytEKvMNzEeGw3OSo8oFg6qQZHaZp24otzGA0OTq8svnYFQ-0Ww04NQHh3i7KGqqOYW5NZ3mly1AIJrQ56qCXEjd_-c21FkiuhDwMvbMqmRtOR1FNHf_o4JEWKteg0HF45yDr0dXFlejvkUBGMhWw",
+          "width": 720
+        },
+        {
+          "height": 720,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107841516411557011507\">Marco&#39;s Pizza</a>"
+          ],
+          "photo_reference": "ATKogpe0VeVs0xM8rCyqgbepZUYqLegLiKMWyL6HiiINLvoyLBm1A1BqCreYw8fjsVQQgJSZC1kplxgkw-5E2-8z2ZYPRx2-Qz-txeia-YObaAFHj6kI3h1reriJyfg31AJruMzG3DItyg2xG_MRXIiuysQ5tLAyVh2DbnUIVPWtA6Y-KhySC5wjToTWkPUBP5ilMc6apTS-HA3KGfS9UvfHLgrV3FRub7B7-ibFY6ikNeoOT_LjdCVus7LFbq_kBI0J8cWSFjwpx1MewCxJ7GuHUkgtnqRSaoWFM9A3E3dbwgdk_A",
+          "width": 720
+        },
+        {
+          "height": 720,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107841516411557011507\">Marco&#39;s Pizza</a>"
+          ],
+          "photo_reference": "ATKogpfP07KKVMaWCpYTw_UyWx-ucht0YhCwp4oi1R6elNemE0ATFN9UAoTPwCv5N7lbUxODcwC51_lMcdM18H3lCg31zCCO0F2t0aXb1v4l6gSmgNKTIFWZ15jYHzn9AIyj3YD7Xx7BL8KXB610jydjv0D15zie9TDa9sKXOSA5s1UHAYrje9KtkYMyRDNipapjvSi26J5lWkq-k7D3wjIx7EaUfNvyN1NEh7m-yiN6wVxmNrgn6hVJXoxaeW_2c_FmRmYrDl5DQdIGi2ADtjqiu-GOx6s0zeHUydCS9jhHIwxINg",
+          "width": 720
+        },
+        {
+          "height": 720,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107841516411557011507\">Marco&#39;s Pizza</a>"
+          ],
+          "photo_reference": "ATKogpdM76lJNNMHNHfdz94Tuzk5tju35Hh1GvwXnAqKzPJvYu9tVW2n3k82Uh7dlgrX6mCykDcJhmwg6lkbJNOR7u7lC7Dgkhgv32eXFFKDDLtLzgfqExQUMLDGn2sFKjhhEdgBGL1_KXDT5tpTbRY_yl9E6DsVMGC_umv_eswJFJ1thv7RsmfmJ8KB5H7Q2aC66LSaXaPcHe6UTlEGtYtE-4GfDrHi5EUN-k_Ehm-6B2N9SCKQcRPBK7mnu5Nls8IMhYVx45-BBj8IlvaN3kGGZdsyQiKb2XIQPrbBUnadq9ITmg",
+          "width": 720
+        },
+        {
+          "height": 720,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107841516411557011507\">Marco&#39;s Pizza</a>"
+          ],
+          "photo_reference": "ATKogpdVbUxwLrMizKG3v5vCEHdzNCND1XiXnHYAHStH1NwjliRpFu-Sl5aI9ari3bnmc1pXVu_WA1RGyfAX1jCSuGQbW2giqi2sxNDazCiECDUN0FfNgAzpynezejRwQCQRu76EtU2aQfrx8-zsKIqc6m0JZpgsXelUoPQUllZejcbp8RuA4qEB9P8RC26m4B-ZgPiZSD4jRPWGvq14KPJviexPMNvINmBHDov7OtzLzBu2JyuBdsWulzwTlFhlMZvXwTqBiOFjMqekeFri5PMGvwDxQULQ4zb6mHKd9A1y_wn_RA",
+          "width": 720
+        },
+        {
+          "height": 4800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103532118873766280080\">Tiara Harvey</a>"
+          ],
+          "photo_reference": "ATKogpdMzAwuvOTqgWi5mPxhN9pY4yDqO_3xzoDM6EgLqApGXgwO5CM0tLCvhRBCjqHLbA797MUXEw5N1wvlgobs7gKYlmTycn8ySHdCbH3hzyRaKR5pvBQJCTIUaeltzFcYASH-lGxpjrHaxdUJEpvv1el0KwceQ3CilW4D8Cj7wUhzxZOxENulmqjCuEOEzZoSsIf1ZDfP6x6aOWFKaB5sj3QiS52n6m51FSqJ8zPH637SAdETgq_RYrC2yN7TrhYYkwLAkdJKY5Wqf-gM0Ggcb2Zf3ZWW3GOqV7ar5oKTRqgI6qDwcDSrjfzztNqpfB_kdNVVs13jllrSYIjPqJAz9AsEhkUfZwH-JKA3ZNP8Ki1y9vU08V0wCZlEC3GgzLR9coZxMh3rYEDlejEzlTWqinYnKOzurewLuf8vddcWpCW2mJyvpTTl-QR3s5Cu6rCw",
+          "width": 3600
+        },
+        {
+          "height": 720,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107841516411557011507\">Marco&#39;s Pizza</a>"
+          ],
+          "photo_reference": "ATKogpeYJSRoYf2Vwrpz1Ur8v5zCsVnaSRbHVfu1A2qPQvSghBgbH79cUCbydOmMsnpykjY5LeYJ4Xz1mdpd71skCoUXS8BktafZ5MfW5wgiuC5ELnBhnb-qCUs1aG-AMEUTSezC0KWLSPeusF_5B1eQBt67eDCGexZ8894wwC33teGo6sizsju7kBI_yvUd2pZbX69X5C6J_W0YSHpRcXqQ8IpZTmNQG7oQkGgJyHWcUHPgvDSIRDsLRVU5jvifyhZses2uetu8NyKNq1DC_gAqnvluJZ7GxyI9zH-JQJoviaq3bg",
+          "width": 720
+        },
+        {
+          "height": 4800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103532118873766280080\">Tiara Harvey</a>"
+          ],
+          "photo_reference": "ATKogpdDZdVqOuOt0K_yDt9ZVMglSz7KbAgaWQnz8dUQattzeTKVrky0Ic2IE481cKI0S5YORWcSIUHhWP8HAjlH-_uEXxVJ__rqoftn_5lXwMfrqJHjkRVeHsr076PSamsAQahXH2AgcjgK1zJimNgSRihZfkVcnNQfsMQ9M7QjW3x8huN1ss5aq8Cth8yDCoR5_BrIoTkczg7MbPKRuA6NfxokgFIasbVRF7cYScBcEng4Ck0JaQ-4XUdyGY--VrJlRE6eMaIwdwk_-j0Sx3IhfSok3klMr-FFsAyX845bIbIkgZ5Q153VeHYqNXx514ej8GF_tEM7k0xOdig0JTTBjyf53SAH48VJubFJJuyUBHUh9INvHCegpJOAEpbRsc-zDTvbb1zK2vE20Y5974Bj9DMSmBwwY5eWsN2tDQvSmU5qc8hJQtaQpxpbZyL0iw",
+          "width": 3600
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "2200"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2300"
+            },
+            "open": {
+              "day": 1,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2300"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2300"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2300"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "0000"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 0,
+              "time": "0000"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:00 AM – 11:00 PM",
+          "Tuesday: 10:00 AM – 11:00 PM",
+          "Wednesday: 10:00 AM – 11:00 PM",
+          "Thursday: 10:00 AM – 11:00 PM",
+          "Friday: 10:00 AM – 12:00 AM",
+          "Saturday: 10:00 AM – 12:00 AM",
+          "Sunday: 10:00 AM – 10:00 PM"
+        ]
+      },
+      "price_level": null,
+      "editorial_summary": null,
+      "url": "https://maps.google.com/?cid=3054809417982639087",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpf1B4pTPM7Mo7XCx6Cnpvbzhp0K2Yp1Vx6-cv0-T-iJZImIxLmN0wQV95nh-yQ2wPRFbeBcwM7_l0G4HE7i1DLghxzqPL7KiB_DmMQ3eabXJEbWQ8KIQLUjZ63_bQtxhmy9f73tb2CExYde9H2tTNx7VS9nEEcYZ9HJih3m8fZB8DcWu69Nr9-zUiVPL8DbZAa3JF5NngES0rd2J_QTyJWmmUvFKsFVD-h1UaQukw2SbcRrWNMN9x7-mR9_aJ6tag9JMnjM7-7_c_lHd3UWlgYQm7cgV6VZiVQG8-lLIDnsXg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpd4uM1_STe6Z2US6u8wCcu3_QQqvzI2PL8tLTRu1Wd3NQLwGvCg2JGpAvP_HJ_ol-o5irgwMV-hEsHEDpYpzAo1R9GyqlWiRJsbkcmylq7RCrp8du90t6QDPXyM_kdZ91KSD4CZsY9KsIzO9htqH71mBtJPD79baGfvscRprdhCiWSTZaKO1xGL3GG3Kw1YXExy0sWH7MsCZ1WkvW1QzMmKmEmwGX3KFRsbeU3R0IvvJfC3jEJSyQQkoKJ5MSXC8wJhBeABirinxoAj8IW4JZzMeyMPyNH27fsfSUN8DeL8HQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpc5GqDcIlzXj0wQCbEx1KJNFaAzQtYCQPS6floxx50z5u-4vn7kLBapqav4BoR8I6PNd3ACHVEwv2lq3r0T1-_WdIg60Qa_Webr_c_YK0LEWSsLwa1khNEmz_1rwFxsFDVsCqHvA7FwI6OxHkItZ9jufOkSgWqZmdSznI2NadGxgrw0K75v5l2vXps5gR6s8jqXwQ1Ap77HdRdkB_1d-SWDAWkxtJN6F6mssQgYBNYG5iFaDth-EI0OI-SuTv51E3-LIMq0GH2QR_6x1dBB9mS3uwWrM8qfY-h8pIlEruA7dA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpeGsJXNo9Oifmp_HZV7MvAML_tsmHXRs1xprenbtsdZ88uFUsqO9J0yL4_ouEkGyZXxRRFDj5lz7Xd-_dzvsUNRaHZBz83pwd3-8bCd6u-QcEdjSn4E9FtaU_b8I1u0oDPbTiOvxpwnozBQcQXW41Q86lI17OtjhYTS9GVmAd4GL9GvbXmj2A49mDWUKHV0MuJ2d9rWHGi1rtfGKTyMmSSsSaS4H-47bzucLjgV6BNMBKfwGXTNKFeR4LTRIlvyshrhx8kylK5gfcLz9rVHQ4qULFhJVqcxF77C3dTrcVEydw&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpeik45pXWfpOf5GgIQWFew28pu48ODyvx3FRXa_nxpf4s7yTlHB2Nk3xoRqfoWN40sYyJ2SIH4jXUdnv0PonMV-04cC61H3pN1C4PDlXrjFxfGlJlZmcMcIkgAz6nCqrTlrIKVdcsJd11lMR9XEDuOoj2vPFVMB_AGiP9UcKnEui301tzIMoech3tESP2tvabCSUJP_kV_LbzJ16IuOjGI7C6eDliwz9Yyp8AQ1-iNdceZDogjlRqO0eEjt5Y8mUBf2tAEHje5nLW6-Qg5mhxE06_8SnXSkQ1XC2Aeqsia9YA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpclfgLN3tclmoFaHURH757sZ4dEULfP286AnBEvwoxnmMIuFygjRkWcHuN8S5Ak9INU6YC_O3o-eopAUy9O4FRUNFns0HK3RnfIk3Igk01tO0jJu1IFV1b202fmnx3Gty052ofnV0rYQrLQzZM5ZTJymzYHjKstv6c6LioveE9kMREHPeUlgjSABvN0EuorPYgpPQNfIDRPs5ost8h0GiYQbQhBKkdRyhztu0XGjgmCW-9I6K--V70hqlnN3Qh8v8XePYoALQY5IOPfbcS9DQ3q-8dDRyo2LWxttZ8FVIeY6Q&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdAv-OAMiXkSgk-g9qhBmw56b5iYjeQiwmSQWYvj_iB9Hvp2UvsRuy0mOddWyxxE0UwSn4YX7QYpUKOYxQicVlEOVY08kDsJiCWKBN68FT2FB1Pe6eTHJ9G1klNDp8YmrMJDoXMD232YT_DkIyNatotDpIuJQ2QHrxzyKCbTSZTFUjrWOdwIxCZoE93zDLTvaMsunSnGLVs6a__YF6VNmbb1ynl9Fmu_ghlummJZiOajIolIWqZPedFE9oULLlmIkvaUpWGFrWfbX47q7nuqwVCatl0AH78EXWb5aMBIyosnA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdj1rtOKhR8Coxz-Qy5Cey88v0jej3-tlaclu8JcrtD5BpcUOVqdg_mxHNl9HujDJnfSx0nW4nyg06TiL6HRlYTh5SDxIhPERyJFkLveW41vgeEFNK7IPMqy1H5_Gy2fUVWmRCBJRWzCslOki1O778fJZaEyk-dSAYk8oie8ZMC6e0yBDoVPatj5BoNfWMIV95UXudqs8QL1_6EIlJvU7zoI6hq2_OYOr4svc_11QU02X1FooJ7FnzgtBTo0UXkUdXX2x7KM6dV9LJOOK9B7DZhBLZj8YXJ2YvNTy91btsFYiQe3qmQkypDfBPcJpWaUGTl7Mhqn61gVI0cLX_gkA8n-E-O16Zzx6L9UpHULrcoPR8VlfSfV2VlPqh-jBU_YFSd20-lqXrSQP5mYS9kIzyNJ1gkqlLxTMGhkF1XmYydV8QJDiz_ya8L1TkJ_1z7&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpe-h2YNhXPgBrUL2Pr6TQw4zTN3f0fPaQ_9ZrkpridYo1j8wdt-S_pHExKK_I9qg76QJlEK_ZWI72Z3uvFkZ-LyLHHZ1jLXQMXkXSz5Wc1kGviVBX35aAkjduxC7V0y-luawW94BPfommCS_0TZMZ3X3yjWnLb2FAOKfN3CD1165DAa3HS3exunmsBMRdPrDgskfRtM-qksmFsc4qtpbEGCq8HDTZ7_PiIEq16_A9nMtu9Cqj3CZpigHRAM7RyMCE3KIEQwsHSqrvOWPKH1pp9pDI-i3R48BUb-Cw1pows6DQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpc9z3cnayH_7lbZWvmIioRmWsCb1nY0AdHSiSK7g2ebq1m-yjGaUyBSYJ146iZV0LIHOk5BfbCYNZkX3hziRHSZAsY33ypnqRHe55SzgQaUSQzjCP3anKxIdBUIY4XDY-81p0PgTs6ZZcmWpEdo5PBzvGJKyUDFRDJ-PlBsZq72Io3agbXAlX6xtRJYKw-NgyZNVQgVNOZcCiDjc2pIFHXGo8ZptZPwGsT3lIWmxsaiaXsXjUTdFmb59LIKlEJji1g6cnRlV5PtqCH_BggND4AQ3oVRe5YrMOOhWZEniMdj-BOxuqJbcQEdTzI9MxAfY1iN9zTvcf0YquH9px239eCQU63fBsL483VhQwhSCu6X5SfKloAF4D3ayaAGJqIpwzMXoncaFTUYauujQ72gymBtYR3N7VkyBSZD8CvRK1lh6E5w8a18HdHy3obb-Q&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 42,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": false,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 90,
+      "totalReviews": 10,
+      "averageRating": 4.5,
+      "sentimentBreakdown": {
+        "positive": 90,
+        "neutral": 0,
+        "negative": 10
+      },
+      "reviewSources": [
+        "Google Places API (Apify Enhanced)"
+      ],
+      "keyThemes": [
+        "Location",
+        "Service",
+        "Food Quality"
+      ],
+      "recentReviews": [
+        {
+          "rating": 4,
+          "text": "Meh",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "I would  give them 10 stars if I could, Are you looking for a good place to eat pizza, go to Marco‘s it’s the best pizza",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 2,
+          "text": "Update: Thank you for the response. I just wanted to share my thoughts. Growing pains are a challenge. The pizza was really good.\n\nWe love Marcos and I know your location is new. But just left there and it was a group of younger teens that need a supervisor to help out and be organized.  They were all very confused and stressed out. It was very busy and the lobby was packed. There were a ton of Door Dash pick ups. You need a designated place for that. They kept telling people they couldn’t find their orders or it would just be a few more minutes. I had to ask for my order three time when it was in fact sitting there ready the entire time.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "negative"
+        },
+        {
+          "rating": 5,
+          "text": "Alwsys great pizza. Glad to have them in the neighborhood.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Very good take out pizza.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Some of the best chain pizza I’ve had! So glad this opened. Very quick service and the pizza was perfect. Definitely will be back.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "I walked in and Faith greeted me with a smile immediately. She recommended a pie that I bought back to work, and the whole team loved it. Top Shelf loves Marco's!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 4,
+          "text": "The pizza was really good when I picked it up I was just checking all the sauces were there and the lady didn’t seem to happy with my questions but the food was good the hot honey isn’t hot but it’s still good love this place and so glad I don’t have to drive 40 minutes for it now",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Marco's Pizza just opened in our area and they brought pizza to our place of business to let us know they were opened. The pizza was delicious and it was such a great gesture. Definitely bringing my family to get some pizza here!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        }
+      ],
+      "detailedReviews": [
+        {
+          "author": "Michael Kidd",
+          "rating": 4,
+          "text": "Meh",
+          "date": "2025-09-12T02:17:12.634Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25aaVVsZFFSVVZVUVhNelJYWlJWSHBLVTNadmIwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUqpQzrum0auD5BHhcyjECavbMvwEkeg7HCBNOzx40C4ploMAp0=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107097904093780797928?hl=en",
+          "reviewerNumberOfReviews": 238,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Boyd Stephensen",
+          "rating": 5,
+          "text": "I would  give them 10 stars if I could, Are you looking for a good place to eat pizza, go to Marco‘s it’s the best pizza",
+          "date": "2025-09-11T20:35:10.934Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25KM2NrWlRRWFl6VlhodlQxOUJRWFUzT1hscFNuYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVTMAjBVyYhtiD2KfJm6_KJcZ6Wn85KLJSANvc3S4jBZSOujVGTxQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106089244309155338048?hl=en",
+          "reviewerNumberOfReviews": 48,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Stephanie Robison",
+          "rating": 2,
+          "text": "Update: Thank you for the response. I just wanted to share my thoughts. Growing pains are a challenge. The pizza was really good.\n\nWe love Marcos and I know your location is new. But just left there and it was a group of younger teens that need a supervisor to help out and be organized.  They were all very confused and stressed out. It was very busy and the lobby was packed. There were a ton of Door Dash pick ups. You need a designated place for that. They kept telling people they couldn’t find their orders or it would just be a few more minutes. I had to ask for my order three time when it was in fact sitting there ready the entire time.",
+          "date": "2025-09-09T00:32:58.954Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pkWlZGTnJaM2htWlVkVWFWSkNhVGhYZGw5VWJtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLsaHOu_mXtsJOW5-X_pPsszRWunbRd_fYmn-hnb19sJHT3Pg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111255245310917051139?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "negative"
+        },
+        {
+          "author": "john schofield",
+          "rating": 5,
+          "text": "Alwsys great pizza. Glad to have them in the neighborhood.",
+          "date": "2025-08-26T22:06:43.347Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25kVE5sUk1hMkZ4WjA1Q05ubFlSbHBmUzNkdk1HYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXUmKja6GErkmTI_TtnDPGmjyYUntjYiNzmeczA44YirylUqxy5Eg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102238218941912461276?hl=en",
+          "reviewerNumberOfReviews": 180,
+          "sentiment": "positive"
+        },
+        {
+          "author": "John Argyle",
+          "rating": 5,
+          "text": "Very good take out pizza.",
+          "date": "2025-08-24T13:08:15.951Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25KdE5sZHpNM1ZoTkdSWFZqWXpUell6ZVhFdFJVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWXs8Yp0KnK4Jwy78TY0XrhbRMY7kELlkUIZxxpz4DbZiZv3_CfkQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118387981954970897363?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Braden Wardle",
+          "rating": 5,
+          "text": "Some of the best chain pizza I’ve had! So glad this opened. Very quick service and the pizza was perfect. Definitely will be back.",
+          "date": "2025-08-23T19:55:17.503Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tkSlQyVTBUVmd4Umw4dE9HZHpaWHBmVVdOWU5rRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUS2ZuQoJZxSetzjeN1O9o1nqi5aOkLeNnnWlAs4XshwlrzLtH2Aw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113024354522257490295?hl=en",
+          "reviewerNumberOfReviews": 41,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jaxon washburn",
+          "rating": 5,
+          "text": "I walked in and Faith greeted me with a smile immediately. She recommended a pie that I bought back to work, and the whole team loved it. Top Shelf loves Marco's!",
+          "date": "2025-08-21T21:57:00.000Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pGM1oyMVVhVXR4YVRneVpHbGZiekV3Vm1sS1ptYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV69IviYIWkXe4BTyz-9Y8cs3-RLKeQsdBSiRjsnOPheL37SEjvdg=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114245170932529395375?hl=en",
+          "reviewerNumberOfReviews": 17,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ryan Ford",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-17T10:18:09.562Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xkd2RtUkVOMk5ZWlROT2RYRmZZemR5VEdSMVJIYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUJXrRagAii861ynKLyJ_92QlwAGFTuF_GM49SBeEqzd8_GOSZ_VA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100727398784965413080?hl=en",
+          "reviewerNumberOfReviews": 23,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tiara Harvey",
+          "rating": 4,
+          "text": "The pizza was really good when I picked it up I was just checking all the sauces were there and the lady didn’t seem to happy with my questions but the food was good the hot honey isn’t hot but it’s still good love this place and so glad I don’t have to drive 40 minutes for it now",
+          "date": "2025-08-17T01:12:10.266Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21kTFVFSXhWWFYzYm5oM04ycHRWakJEVDJ3MlVuYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWQVg7RrejW3jPADofg-csBGgY_BKaK065YNjNkWWbmhsPWQBGd=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103532118873766280080?hl=en",
+          "reviewerNumberOfReviews": 148,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Troy Love",
+          "rating": 5,
+          "text": "Marco's Pizza just opened in our area and they brought pizza to our place of business to let us know they were opened. The pizza was delicious and it was such a great gesture. Definitely bringing my family to get some pizza here!",
+          "date": "2025-08-16T15:04:50.417Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25aMk5DMVJaek5DWkV4V1VXSndlVzAwVm0weGFsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUJUJWfFGz2wJTOaoEQuZNqwx6y8BDEFIyFJNyK4d-KKnFLi24=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107674002190853597719?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        }
+      ],
+      "customerMoodAnalysis": {
+        "overallMood": "delighted",
+        "sentimentSummary": "Customers are genuinely thrilled with their experience. With an average 4.5/5 rating across 10 recent reviews, your restaurant consistently exceeds expectations.",
+        "sentimentDistribution": {
+          "ecstatic": 10,
+          "delighted": 60,
+          "satisfied": 20,
+          "neutral": 0,
+          "frustrated": 10,
+          "disappointed": 0,
+          "angry": 0
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "food quality",
+            "mentions": 1
+          },
+          {
+            "theme": "speed of service",
+            "mentions": 1
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 5,
+          "satisfaction": 8,
+          "disappointment": 0,
+          "frustration": 0,
+          "anger": 0
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "Customers appreciate the quick service and perfect pizza, making it a go-to spot for fast, delicious meals. - Boostly marketing services can amplify this",
+            "The welcoming and friendly staff, like Faith, who provide personalized recommendations, enhance the customer experience. - social media marketing can showcase this strength",
+            "Marco's proactive community engagement, such as delivering pizza to local businesses, creates a strong neighborhood presence and builds goodwill. - SEO services can leverage this for better visibility"
+          ],
+          "improvementOpportunities": [
+            "Disorganized staff and confusion during busy times - Boostly marketing services can improve this",
+            "Lack of designated area for Door Dash pickups causing confusion - social media marketing can improve this area",
+            "Negative staff interaction when checking orders - review management can address this concern"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 10,
+          "averageRating": 4.5,
+          "ratingDistribution": {
+            "1": 0,
+            "2": 10,
+            "3": 0,
+            "4": 20,
+            "5": 70
+          },
+          "sentimentTrends": {
+            "trend": "stable",
+            "recentAverageRating": 4.5,
+            "previousAverageRating": 4.5,
+            "recentReviewsCount": 10
+          }
+        }
+      },
+      "examples": {
+        "positive": [
+          {
+            "author": "Michael Kidd",
+            "rating": 4,
+            "text": "Meh",
+            "date": "2025-09-12T02:17:12.634Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25aaVVsZFFSVVZVUVhNelJYWlJWSHBLVTNadmIwRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUqpQzrum0auD5BHhcyjECavbMvwEkeg7HCBNOzx40C4ploMAp0=s1920-c-rp-mo-ba4-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/107097904093780797928?hl=en",
+            "reviewerNumberOfReviews": 238
+          },
+          {
+            "author": "Boyd Stephensen",
+            "rating": 5,
+            "text": "I would  give them 10 stars if I could, Are you looking for a good place to eat pizza, go to Marco‘s it’s the best pizza",
+            "date": "2025-09-11T20:35:10.934Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25KM2NrWlRRWFl6VlhodlQxOUJRWFUzT1hscFNuYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVTMAjBVyYhtiD2KfJm6_KJcZ6Wn85KLJSANvc3S4jBZSOujVGTxQ=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/106089244309155338048?hl=en",
+            "reviewerNumberOfReviews": 48
+          },
+          {
+            "author": "john schofield",
+            "rating": 5,
+            "text": "Alwsys great pizza. Glad to have them in the neighborhood.",
+            "date": "2025-08-26T22:06:43.347Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25kVE5sUk1hMkZ4WjA1Q05ubFlSbHBmUzNkdk1HYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXUmKja6GErkmTI_TtnDPGmjyYUntjYiNzmeczA44YirylUqxy5Eg=s1920-c-rp-mo-ba4-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/102238218941912461276?hl=en",
+            "reviewerNumberOfReviews": 180
+          }
+        ],
+        "neutral": [],
+        "negative": [
+          {
+            "author": "Stephanie Robison",
+            "rating": 2,
+            "text": "Update: Thank you for the response. I just wanted to share my thoughts. Growing pains are a challenge. The pizza was really good.\n\nWe love Marcos and I know your location is new. But just left there and it was a group of younger teens that need a supervisor to help out and be organized.  They were all very confused and stressed out. It was very busy and the lobby was packed. There were a ton of Door Dash pick ups. You need a designated place for that. They kept telling people they couldn’t find their orders or it would just be a few more minutes. I had to ask for my order three time when it was in fact sitting there ready the entire time.",
+            "date": "2025-09-09T00:32:58.954Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pkWlZGTnJaM2htWlVkVWFWSkNhVGhYZGw5VWJtYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLsaHOu_mXtsJOW5-X_pPsszRWunbRd_fYmn-hnb19sJHT3Pg=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/111255245310917051139?hl=en",
+            "reviewerNumberOfReviews": 3
+          }
+        ]
+      },
+      "trends": {
+        "ratingTrend": "declining",
+        "volumeTrend": "increasing",
+        "responseRate": 0,
+        "averageResponseTime": "No responses"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ]
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/marcospizza",
+      "instagram": "https://www.instagram.com/marcospizza",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 58,
+      "social": 100,
+      "local": 61,
+      "reviews": 68,
+      "overall": 72
+    },
+    "originalScores": {
+      "seo": 70,
+      "overallScore": 58,
+      "performance": 62,
+      "userExperience": 60
+    },
+    "migratedAt": "2025-09-16T00:37:21.486Z"
+  },
+  "metadata": {
+    "cachedAt": "2025-09-15T17:22:15.721Z",
+    "expiresAt": "2025-10-15T17:22:15.721Z",
+    "placeId": "ChIJZXpTSVd_TYcR73tfB_vcZCo",
+    "restaurantName": "Marco's Pizza",
+    "cacheVersion": "2.0.0"
+  }
+}

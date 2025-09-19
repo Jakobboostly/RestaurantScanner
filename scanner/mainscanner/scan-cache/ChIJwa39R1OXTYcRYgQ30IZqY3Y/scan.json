@@ -1,0 +1,2797 @@
+{
+  "data": {
+    "domain": "www.communalrestaurant.com",
+    "restaurantName": "Communal",
+    "placeId": "ChIJwa39R1OXTYcRYgQ30IZqY3Y",
+    "overallScore": 76,
+    "performance": 100,
+    "seo": 58,
+    "mobile": 40,
+    "userExperience": 91,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "performance",
+        "severity": "critical",
+        "title": "⚡ Speed Crisis: Customers Are Leaving",
+        "description": "Performance score of 60/100 means customers wait too long. 53% abandon slow websites.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🐌",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "Lost orders from customers who abandon slow-loading pages"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "restaurant near me",
+        "position": 0,
+        "searchVolume": 33100,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant delivery Provo",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best restaurant Provo",
+        "position": 0,
+        "searchVolume": 880,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant",
+        "position": 1,
+        "searchVolume": 18100,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.communalrestaurant.com/",
+        "title": "Communal - American Restaurant in Provo, UT",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant places near me",
+        "position": 0,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant Provo Utah",
+        "position": 3,
+        "searchVolume": 2400,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.communalrestaurant.com/",
+        "title": "Communal - American Restaurant in Provo, UT",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant delivery near me",
+        "position": 0,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant open now",
+        "position": 0,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 25,
+        "keywords_appeared": 2,
+        "total_keywords": 8,
+        "average_position": 3.5,
+        "best_position": 2
+      },
+      "keyword_results": [
+        {
+          "keyword": "restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Bombay House",
+              "address": "Provo, UT ",
+              "website": "https://bombayhouse.com/",
+              "rating": 4.9,
+              "reviews": 12000
+            },
+            {
+              "position": 2,
+              "name": "Teri Gao Asian Cafe",
+              "address": "Provo, UT ",
+              "website": "https://www.terigaoasiancafeut.com/",
+              "rating": 4.9,
+              "reviews": 278
+            },
+            {
+              "position": 3,
+              "name": "Edna's Market & Grille - Provo",
+              "address": "Provo, UT ",
+              "website": "https://ednasgrill.com/",
+              "rating": 4.7,
+              "reviews": 82
+            }
+          ]
+        },
+        {
+          "keyword": "restaurant",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Teri Gao Asian Cafe",
+              "address": "Provo, UT ",
+              "website": "https://www.terigaoasiancafeut.com/",
+              "rating": 4.9,
+              "reviews": 278
+            },
+            {
+              "position": 2,
+              "name": "Bombay House",
+              "address": "Provo, UT ",
+              "website": "https://bombayhouse.com/",
+              "rating": 4.9,
+              "reviews": 12000
+            },
+            {
+              "position": 3,
+              "name": "Mi Lindo Guadalajara",
+              "address": "Provo, UT ",
+              "website": "https://m.facebook.com/mlgmexicanrestaurant/",
+              "rating": 4.4,
+              "reviews": 967
+            }
+          ]
+        },
+        {
+          "keyword": "best restaurant Provo",
+          "found": true,
+          "position": 5,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Communal",
+            "address": "Provo, UT ",
+            "website": "https://www.communalrestaurant.com/",
+            "phone": "(801) 373-8000",
+            "rating": 4.4,
+            "reviews": 1400
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "The Continental, Provo",
+              "address": "Provo, UT ",
+              "website": "http://thecontinentalprovo.com/",
+              "rating": 4.9,
+              "reviews": 73
+            },
+            {
+              "position": 2,
+              "name": "Bombay House",
+              "address": "Provo, UT ",
+              "website": "https://bombayhouse.com/",
+              "rating": 4.9,
+              "reviews": 12000
+            },
+            {
+              "position": 3,
+              "name": "Golden Bees Caribbean Cuisine",
+              "address": "Provo, UT ",
+              "website": "https://usmapscompany.org/business/golden-bees-caribbean-cuisine-xrcdt8",
+              "rating": 4.9,
+              "reviews": 81
+            }
+          ]
+        },
+        {
+          "keyword": "restaurant delivery near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Teri Gao Asian Cafe",
+              "address": "Provo, UT ",
+              "website": "https://www.terigaoasiancafeut.com/",
+              "rating": 4.9,
+              "reviews": 278
+            },
+            {
+              "position": 2,
+              "name": "Fat Daddy's Pizzeria",
+              "address": "Provo, UT ",
+              "website": "https://fatdaddyspizzeria.com/",
+              "rating": 4.4,
+              "reviews": 1400
+            },
+            {
+              "position": 3,
+              "name": "Golden Bees Caribbean Cuisine",
+              "address": "Provo, UT ",
+              "website": "https://usmapscompany.org/business/golden-bees-caribbean-cuisine-xrcdt8",
+              "rating": 4.9,
+              "reviews": 81
+            }
+          ]
+        },
+        {
+          "keyword": "restaurant Provo Utah",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Golden Bees Caribbean Cuisine",
+              "address": "Provo, UT ",
+              "website": "https://usmapscompany.org/business/golden-bees-caribbean-cuisine-xrcdt8",
+              "rating": 4.9,
+              "reviews": 81
+            },
+            {
+              "position": 2,
+              "name": "Edna's Market & Grille - Provo",
+              "address": "Provo, UT ",
+              "website": "https://ednasgrill.com/",
+              "rating": 4.7,
+              "reviews": 82
+            },
+            {
+              "position": 3,
+              "name": "The Continental, Provo",
+              "address": "Provo, UT ",
+              "website": "http://thecontinentalprovo.com/",
+              "rating": 4.9,
+              "reviews": 73
+            }
+          ]
+        },
+        {
+          "keyword": "top restaurant Provo",
+          "found": true,
+          "position": 2,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Communal",
+            "address": "Provo, UT ",
+            "website": "https://www.communalrestaurant.com/",
+            "phone": "(801) 373-8000",
+            "rating": 4.4,
+            "reviews": 1400
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "The Continental, Provo",
+              "address": "Provo, UT ",
+              "website": "http://thecontinentalprovo.com/",
+              "rating": 4.9,
+              "reviews": 73
+            }
+          ]
+        },
+        {
+          "keyword": "restaurant restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Teri Gao Asian Cafe",
+              "address": "Provo, UT ",
+              "website": "https://www.terigaoasiancafeut.com/",
+              "rating": 4.9,
+              "reviews": 278
+            },
+            {
+              "position": 2,
+              "name": "Bombay House",
+              "address": "Provo, UT ",
+              "website": "https://bombayhouse.com/",
+              "rating": 4.9,
+              "reviews": 12000
+            },
+            {
+              "position": 3,
+              "name": "Edna's Market & Grille - Provo",
+              "address": "Provo, UT ",
+              "website": "https://ednasgrill.com/",
+              "rating": 4.7,
+              "reviews": 82
+            }
+          ]
+        },
+        {
+          "keyword": "restaurant food Provo",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Golden Bees Caribbean Cuisine",
+              "address": "Provo, UT ",
+              "website": "https://usmapscompany.org/business/golden-bees-caribbean-cuisine-xrcdt8",
+              "rating": 4.9,
+              "reviews": 81
+            },
+            {
+              "position": 2,
+              "name": "Teri Gao Asian Cafe",
+              "address": "Provo, UT ",
+              "website": "https://www.terigaoasiancafeut.com/",
+              "rating": 4.9,
+              "reviews": 278
+            },
+            {
+              "position": 3,
+              "name": "Edna's Market & Grille - Provo",
+              "address": "Provo, UT ",
+              "website": "https://ednasgrill.com/",
+              "rating": 4.7,
+              "reviews": 82
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"restaurant near me\", \"restaurant\", \"restaurant delivery near me\", \"restaurant Provo Utah\", \"restaurant restaurant near me\", \"restaurant food Provo\" - optimize Google My Business profile with these keywords",
+        "Ranking below #1 for 2 keywords - increase customer reviews and engagement to improve rankings",
+        "Low Local Pack visibility (25%) - audit your Google My Business completeness, categories, and local citations"
+      ],
+      "scan_metadata": {
+        "location": "Provo,Utah,United States",
+        "timestamp": "2025-09-15T22:29:53.271Z",
+        "total_scan_time_ms": 39518
+      }
+    },
+    "competitors": [
+      {
+        "name": "Locals",
+        "domain": "locals.com",
+        "performance": 86,
+        "seo": 77,
+        "accessibility": 73,
+        "bestPractices": 82,
+        "overallScore": 80,
+        "rating": 4.3,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1122,
+        "keywords": 55,
+        "domainAuthority": 69,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 832
+      },
+      {
+        "name": "The Continental, Provo",
+        "domain": "thecontinentalprovo.com",
+        "performance": 98,
+        "seo": 88,
+        "accessibility": 83,
+        "bestPractices": 93,
+        "overallScore": 91,
+        "rating": 4.9,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 491,
+        "keywords": 46,
+        "domainAuthority": 79,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+250 keywords",
+        "authorityGap": 8,
+        "backlinks": 1128
+      },
+      {
+        "name": "Black Sheep Cafe",
+        "domain": "blacksheepcafe.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1170,
+        "keywords": 60,
+        "domainAuthority": 76,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+50 keywords",
+        "authorityGap": 2,
+        "backlinks": 780
+      },
+      {
+        "name": "Block Restaurant",
+        "domain": "blockrestaurant.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 789,
+        "keywords": 28,
+        "domainAuthority": 69,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+50 keywords",
+        "authorityGap": 2,
+        "backlinks": 882
+      },
+      {
+        "name": "Station 22",
+        "domain": "station22.com",
+        "performance": 82,
+        "seo": 74,
+        "accessibility": 70,
+        "bestPractices": 78,
+        "overallScore": 76,
+        "rating": 4.1,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1313,
+        "keywords": 32,
+        "domainAuthority": 79,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 1050
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 65,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-15T22:30:50.704Z",
+    "businessProfile": {
+      "name": "Communal",
+      "address": "102 N University Ave, Provo, UT 84601, USA",
+      "rating": 4.4,
+      "reviewCount": 1365,
+      "phoneNumber": "(801) 373-8000",
+      "website": "https://www.communalrestaurant.com/",
+      "formatted_address": "102 N University Ave, Provo, UT 84601, USA",
+      "address_components": [
+        {
+          "long_name": "102",
+          "short_name": "102",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "North University Avenue",
+          "short_name": "N University Ave",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Downtown",
+          "short_name": "Downtown",
+          "types": [
+            "neighborhood",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Provo",
+          "short_name": "Provo",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Utah County",
+          "short_name": "Utah County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Utah",
+          "short_name": "UT",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "84601",
+          "short_name": "84601",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "state": "Utah",
+      "city": "Provo",
+      "place_id": "ChIJwa39R1OXTYcRYgQ30IZqY3Y",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "reviews": [
+        {
+          "author_name": "Raquel Larsen",
+          "author_url": "https://www.google.com/maps/contrib/100543824607706428718/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXVo8Rpm50dGkyRqAuDb6Q9X0R5lOgGuubYct5f5ik_1nhga_Fu_w=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "This place is beautiful. The food is fantastic, and the service was remarkable. My brother and I came about 20 min before our reservation and they still sat us no problem, coffee was phenomenal and our  glasses were never empty. The avocado toast starter was AMAZING. Kinda spicy, with creamy avocado and fresh crème. The toast was very crispy so it had a nice crunch. For our entrees I ordered the funeral potatoe Benedict. It was DENSE, glad I came super hungry. Needed some more salt but the sauce was creamy and delicious, poached egg was perfect. My brother ordered the fried chicken Bahn Mi, and it was massive. He demolished the whole thing, he said it was perfect, I tried a piece and the jalapeños were the perfect addition to the sandwich.\n\nOverall, a great restaurant with that heavy breakfast food you need after a night out, but with a higher quality and classier feel. Thanks Communal, will be back soon.",
+          "time": 1749926855,
+          "translated": false
+        },
+        {
+          "author_name": "Ron Hoopes",
+          "author_url": "https://www.google.com/maps/contrib/112434924411478386516/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXHeqqGBtRH9trRzATfndG4xAmVhTGp_B3YXUq31t0_8ciw-atC=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "They were able to seat us immediately when we arrived a few minutes early to our reservation with our party of six. We got a couple of starters, fried cheese (excellent) and carrot hummus. Communal recommends sharing everything so we ordered pork chops, salmon, and a couple of surf and turf plates (the best). For side dishes we decided to share sugar snap peas (so good), squash, and funeral potatoes. At the end we shared a strawberry raspberry crisp for dessert. We should have ordered two as that was the crown jewel of the night. Service was excellent in that we always had our server available to us but knowing not to invade too much. Looking forward to coming back again.",
+          "time": 1745856721,
+          "translated": false
+        },
+        {
+          "author_name": "Malia K (MaliaK)",
+          "author_url": "https://www.google.com/maps/contrib/117341672460087354044/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJMVClTxLz2r6OVVHYMNrSMzCytH6BBBppTTmk07BOexkJq-g=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 2,
+          "relative_time_description": "4 months ago",
+          "text": "LOVED the “feel” of this space, keeping the original bones of the building and adding modern updates.  The CHARM of the place still shines through.\nWish, however, that the FOOD was equally as charming.  I looked forward to having Brunch and upon the servers suggestion, tried their shrimp and grits, adding an over easy egg in addition, again at the servers strong recommendation.  Thank goodness I did because that egg was literally the only saving grace for this dish.   The grits were formed into these triangular, hash brown-like pieces and while I understand the thought behind it, they barely resembled grits.   It just seemed like one big crunchy mass with no real flavor.  And then it was topped with an odd sauce consisting of tomato sauce, a vinegar like aioli and something very bitter and burnt.  The shrimp was delicious but lumped in between all of this chaos, it was a confusing dish to eat.  I was grateful for the silkiness of the egg - it was the only recognizable item on the plate and I needed it to push through the meal.\nThe restaurant has a very upscale and understated classiness about it, which is very appealing.  It LOOKS like a place where you would expect a really special experience.   I, however, left feeling very disappointed.   I do not foresee a return in the future.",
+          "time": 1745608328,
+          "translated": false
+        },
+        {
+          "author_name": "maya Jackson",
+          "author_url": "https://www.google.com/maps/contrib/101499201312687032188/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWR3-v7RlTN9EtorRQH5iNVczhObZzVVnf6plXvOXB_nQxwT10pIA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Came to communal with a friend during my lunch break from work and I was very impressed! The service was quick and great; the environment was nice. I got the fried chicken bahn mi with fries and it was delicious! The chicken was so crispy, the sauce was so good, the fries were so fresh and well seasoned. Overall- loved it! Excited to go back and try more.",
+          "time": 1750726232,
+          "translated": false
+        },
+        {
+          "author_name": "Scott Soward",
+          "author_url": "https://www.google.com/maps/contrib/108329091954385931478/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX6ik-e9ntFqZClYdndJM8p0kiGCLPhtLBTs2evS9O8IkS450WWIQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "My wife and I went for her birthday and it was a wonderful experience. The ambience is beautiful, stained glass windows, former jewelry store, so beautiful and open environment. The food was amazing, we got mashed potatoes and blackened carrots, and ribeye steak that was cooked perfectly and shared our meal and had plenty to take home. Service was very friendly and helpful. Christian Singer did a great job and we met the owner and his family who were super friendly and bought us desserts.\n\nThank you for a wonderful evening. I would highly recommend and my wife and I will be going back.",
+          "time": 1751177821,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 1262,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101286763862858656267\">Communal</a>"
+          ],
+          "photo_reference": "ATKogpcc0cuekPb_UFeLtAFKE8wKiAVZrlvvwLc5QZOP45THFlnbSFZe1E2-1QpAQzxY6h-gVq1Kbbj15mE5-Nk6KAZ4JAwi_6CVuS3vjBaHf7lqIl5vdjWyk6Q0E8QQ1mJvy8KSV9OBzIvihA6b9NqrtYuH2YD3KI6SZKas3aAlc8u9MvR7giw5dFM846utAzJmYPsd3O0n48ZCQocaYWzRr2tl41IQEy3oJQBQ8xeE4N3SvFze64JDXSAS60-3REqTCwOQaz2BNl4L4ffESgmClvaWB5GrvAgcSXLcb04H0HMs9Q",
+          "width": 1904
+        },
+        {
+          "height": 724,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101286763862858656267\">Communal</a>"
+          ],
+          "photo_reference": "ATKogpdixYQOEMNjPZjpywyeL_ewQCPQLHWDHcXBC5mLYzjckzMlYK2XcHVicCTgSkOrngujXW08MBjhco35-64XXPrMAMvxvgigMd4qtZ5ijzqCeF1Yuhiwy4k4p41MvLPe2T-yRUzknVZEAmrFESNhXy4EMWJaDHObo6q7Ro1V4nRs0IKrw6nHiCO419Hm3QgSzW6rIuDcxC2n2J-WHryRa-gaPz8Cg8BrkH9PNMIzbw1gt7vEm99qs3MH7a2yHwoIlMflt1z1ZCKnE4ywed8GeNv6vDyOInM2IL8naibW7guzOQ",
+          "width": 1086
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102085321594070881459\">X X</a>"
+          ],
+          "photo_reference": "ATKogpflrk2y6lRsGg-AUmg5FdPqMT-X2ePBzFD34KTrvwOHInI661ns-RxATIwH7i3ebrv1l1mrJw-iF0KillFUVvz7fQ4lmJN7vkUvYuCjVNcT4bR2ls1kfDukAifuD36JLpcFt4PnLpVrCcVTZ-5_eDcuwMzoT0hBZ5LWlLjhHszrPz-sQJlHC2n0UCD1Rc1rjn1qaJdQJLG2AtJTx9x8wyv9cOJDcfW5ikEi8dqWGp_MLF_S0m64iyR5BJd5o5ny67IH8xq4kmXOedZN2Xe0n6k0OsJm1T-_xI_ROtLiSVi6mMPR8-Z4hhRxQsG9SdHF_aWc7BOWH5CPLNAedA5-JoDBlflEhxq4Cr_2hUu2CmnWBJifY1tuUCyVwgy0KprEc_WbzY1eeMo1vWQvWGtuyMoZ9k8AAPivEbNDVcMIeLt2XXVGCxyczD02DhR-n6AW",
+          "width": 3024
+        },
+        {
+          "height": 4800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110291446145957117323\">Stina Van Cott</a>"
+          ],
+          "photo_reference": "ATKogpdGIWRUSeADEfXQ8KsulnntChxVmuo9JG0xLyp9gQ-AyUQ3OAHhpWe-swLqv-CneO2UADDW8dJz978k8435LFDVzBBMeu7CX5EMhCznGXSrW39iO6bLwpVQx9pWHXDTFeapBWP943GJB0eIcgyuFFRhCJPKKMwX0r4K4UyfPGYhMxWazuNJfWOhNEDhUTiZ4RirTiy0ISJGy2U9Tn2g-MpAkSrhm-8HpKxNIioSYxG0u9TTW_Y__d2tYkdNQKC0qhIhx8gApyzli2zA1HtkcRi2zXPw49yp_uCN01ysOUlCUs8QGllFcWXJh9ANVrmBkdpI4QSCHtSKjXvevA4imGlPP7hSWW1A0ahjgQ5PQa8zNouABIdmktTvLVOcS_ntjhas9eb_MrCjbzcIxu_HccgArAFmgboaDRAJgqMbn956Ap1RL08YdTUdUVDnGKNd",
+          "width": 3600
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101439439632043634459\">Bryson Webster</a>"
+          ],
+          "photo_reference": "ATKogpcU0fhQYKWVoHkKzAMwR3MWUCtbPC2NRQ5XHRepIj2eqEbMC0Qn9dAkJud3xaseXZ-rqBlC0SEpnXJpAV4q0tw6RWgDQpPFKaChDeA3g8d0aX2nma4h_hB-T1GtdPXasInN5kK7mxz-FY_Pz0ymfhuU7GsuSMkXswzRJJKi3PQibfdaZ8VGck89luoQuaNc3Oxl-ZtqNeOeV5ynX3QLG5BBKwlR5vEHAA1eNJAcaDczLwxz1vuxqKEDSkIGZvjpNXJRGBIqDPxeGffnTwh7BBpLOk5SE5ePVWRZgA-VqpBr70ymFYxAPtt379V_eV64IalfavDxiMstetvvtMCmHRjvwv8Ae8Sclbprea2NG9GB2YSqLlgeGaLQBFRfDVLbKElpVu3YRsNcFcr8D30WtEBppjvuxgEfnAh8OhPNgq3BJOeZ",
+          "width": 3024
+        },
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111503660173591096599\">Carley Garner</a>"
+          ],
+          "photo_reference": "ATKogpcovPJBpVnnYhfTmyRAXYuWhm77rJTUB8Qd7ySkTcXCtz4jUoDxwReWgf-bwEeSZDeyq9Z6KaF7NPRBJm79a_7okelmW3L8GiZIlXYQjsxu2KD3GJs-PtxzmuZhMX9a1NB6Da9I22BtQnL2skzIl8DO6_KOJgPmI37QjJiSee6xEeREJvDE0BoVrwo4WJoZahmavYqNkkos1n3PI_u5GlWy_YmkhM9TiD5FArbTty3Yaobu4ZrOMVojGf9o5SHJX4ThgeEGdNVLO90bC-LmN9L7ZPcaa9FUVShGCNvTIA4nFfYjLuZP4relxp1cQTJSLCjL2vllhF7S9Dcwx34ht5TSFsPFepCZWGUPgy-WOW-mRii3iHA_j5OR25_Y3BqNBFs8gpOSU1t-Hwi5f-fO-dHrTMrq7zWP2LMEc6fjdgYLppDB",
+          "width": 3000
+        },
+        {
+          "height": 4800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107415675507220273064\">Heather Oxborrow</a>"
+          ],
+          "photo_reference": "ATKogpdjlI0HyUoPnA11CLVvnxoycJBqjmJg5wjCdl8m2ki8KYlbnem9ZpWu5wGgCVPmkGf7R5r6OakjMrjrM-DF-e0Alpj1avGCzJo0WjleRKYW_rATloIlG_q-m1YjlsRWnf60yXa-uX8pE5r-WLR_VcbESGdGeGARkoB8L4tZOcgnjJ0-di6e12me0Sgkj05NEWF4D8XCBDTxiMFwl25Bs351pv0AlV6GlRAxoLSw1zQsd242ouTTMFUkdqYpMCurvz13FY944AJeSyMME7HqI1tr-39ESErZQ3yGbspXzHSktUGyOoVm5OyGC9fgp2LgA9bk5xGHhHVl2I_fNBm7qbeGUedopnPrByaUljbnQIFp80L-uCav0jGehYwNdknf9fe1XXAs8nklDRMYKHTBPQ-LY4HJT0tn20qQI1LuP-Rh8Q",
+          "width": 3614
+        },
+        {
+          "height": 4080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111581944575562387699\">Provo Local Foodie</a>"
+          ],
+          "photo_reference": "ATKogpe0qrNeiEn103_E2GH_Q8vlmziJ4Bv-Cd4pnyc-pHld9xF8SwfcrBIGwRnalpLoVIY-UNeK1_WSI0_40CSHCpWEWHv8H2fnOm3Q_bBt58IcrrGXMP1H4sfDjPo8zUNNJZLPISflrBzkIuAP7biMdA4eHFf5ExYPeTXl6UUbVyj6LyrhK2IqZV8ptgO5pAB3Dk2MgIwoP3biFKiWlyr7csyNDLTaavmMejFUgFnwgEY50iNS_pmwxnQGdpqKfu8o6B7swS9ycXwRmXarRCPkCz617r0wh5gioHIGbdGGEDydWbMkV6rIgjc4ns2ycZ_SaV9NOBgZd-1a5X5taYqhOQ6Oie6zfVaOB4Hw3lQ7K0B8NXzdyqtXnN1b_miZ0VvQR1yfE3s21RebO6LG-JXbO8KD-5bGoDPc7_sPyq8LAeYJRg",
+          "width": 3072
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111431515731579967022\">Gabriel Jensen</a>"
+          ],
+          "photo_reference": "ATKogpdKal6A_nQxSD_dyVBSNPIb2_DS0y1p-LV1hZr1RJgBmV6DO7WbYelyf3Ju3zro98nwao--43to1z3pRnhGsFjoONE9R47x4YMArg_pPxzJRPZM0BuxllvDRD2V1oAnlqKkKeOhl-_9QaxG4FLw9ITjripLummRk-c_6RfG3yOcehWvI-skaWIIg6fL_LwkvGSqctDejaYf69HKkg1cvpeP9OHOzVDpsYqKY60OJ6DkLvdImtSCyqjzlcGC_5ye-8vzhGFWg2JAiDDRy-RRdIu9oUshyK3OswURfi-WSC0kC6HeU2v5YCpHO-iW0nXxQLdsvdgJv6X75zW6Re9CLx8mAaut8lNRvg1gA7R4TAp5Qyr56C2212axxbl6X9bQlsYYv_J9thAEfT6dNmwUiAsqTnSQDxDv_LTbLAwtWBsLWfWr",
+          "width": 4032
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101037794839042083534\">John David Dyche</a>"
+          ],
+          "photo_reference": "ATKogpfoFLg9nXm8k1yPAf4fYou_eGr28fz6b9PdoT-UUBV-RhDUw5IHFGXn_0xhQDkL-J57PhglSLCKzIteqynXYzMAvmNjc4Xjkzg8JsPELSmvR1yxdDfSE-avUyK_NQPx-rmj8Om5gatGRMrClcGx8QdZpGLSfk7yZO4gJD6S4IUTnPsKb0AnbhOuXG02KsWM_L0Of5AkcUdnsFqlj8ANiu6P1c9lFwaLxqA1Bo0nbLBlMDDoP5db0xRNItVSv76VIfUKASqQXGC96zr9GWUpPQRydqcWzgio4JiWDSM-e-U4nXueG2RGr_Nf7RDcVFhzrYX-qwPbVdJzHvjPzpay_QpsTHyhtdnReMlms2clK-9b8oZzbYbHO48kG63ip00XqNWAaqvZxEC5nlT_6-WpTI6PfCaw4yqOYDkMMbMdF7U",
+          "width": 4032
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 1,
+              "time": "1400"
+            },
+            "open": {
+              "day": 1,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2200"
+            },
+            "open": {
+              "day": 1,
+              "time": "1700"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1400"
+            },
+            "open": {
+              "day": 2,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2200"
+            },
+            "open": {
+              "day": 2,
+              "time": "1700"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1400"
+            },
+            "open": {
+              "day": 3,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2200"
+            },
+            "open": {
+              "day": 3,
+              "time": "1700"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1400"
+            },
+            "open": {
+              "day": 4,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2200"
+            },
+            "open": {
+              "day": 4,
+              "time": "1700"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1400"
+            },
+            "open": {
+              "day": 5,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2200"
+            },
+            "open": {
+              "day": 5,
+              "time": "1700"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1400"
+            },
+            "open": {
+              "day": 6,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2200"
+            },
+            "open": {
+              "day": 6,
+              "time": "1700"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 2:00 PM, 5:00 – 10:00 PM",
+          "Tuesday: 9:00 AM – 2:00 PM, 5:00 – 10:00 PM",
+          "Wednesday: 9:00 AM – 2:00 PM, 5:00 – 10:00 PM",
+          "Thursday: 9:00 AM – 2:00 PM, 5:00 – 10:00 PM",
+          "Friday: 9:00 AM – 2:00 PM, 5:00 – 10:00 PM",
+          "Saturday: 9:00 AM – 2:00 PM, 5:00 – 10:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "price_level": 3,
+      "editorial_summary": {
+        "language": "en",
+        "overview": "Locally sourced seasonal American menus star at this comfy kitchen with shared farm-table seating."
+      },
+      "url": "https://maps.google.com/?cid=8530779246421279842",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfU30O9aQVtM5r3Rw_R9qYzg61TkG3xYrv0DcuiSrwR2jPYYHOW2sIeS34IDgqyMSQ3iBZdcocXz6ZBUaq2kwb_-UG-Lgk9JfREO0uww7YR1_3yLS7S-weKvC7nLLKpfUNdjCTu5OZEheI6XvvAHhzECtWNL3k_PsieA2DnelIibdwgKbWP-xzkv0yrq5-gZW9stZ9lQ9xL8mTui29Ek1kXOseDfJXss57heuS5in-jE_jPWnXVsqtZ_crPV4WvN-khCx6chjXtL66xWkXOqxMcTu8ppLaPpKyJDU6FUFuqIA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpf-nyOm0Dw_UTSSWX5yN0sqzgHtV53I2JaQ_Nqec_h3pAoFD6g3sHnce7Qz7KzrXp0Bpf5HFQ9V9_uBcbNEyQkr9qIArKANxa0pLsZNS1garAo718M8fBjUO4n-BX0UvijM36yeEVoYCj5h8wc6P4qYIC0zkqIcMuDfLL-MMrZFt8b4m2G3-tGE-FPNyXxP3YtKG63kVAonXRfvH33dPRTtXICfoxacasginZUO4oPyNY2T-z3US6p558X_yQYqUw_niR0Hi9OH0uI13JxCmATUkN2YtI3Vz6hS1ZTMLBkRrw&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfeXUo7E-tQRsUHERZEYq5MY3cFDJnJ7vu17QlFGLIS_T1b-RXZxPvoYPYNR5PZg0f6IIv2ufbru6rOHEaNA11a21zx3Uf0Mvvx6WaFZ5Vqnd1MCgOuas_T67AvhXBnKmudSoYhWVX1gdv4ExRhn0y21dpC_jI_kLEPfag5KScJHTUn2pYQ7RfHxmKbtJYJNsH4cbXQlyt9rnUrh8CIDHIgaiUnV9ynfAANanxykUpn67v87EAZKjitOeTrx_4lQ_tLVoXi1PpgUrnOFkktLLGTDqEaph2SAYku9pXehSGrF_vE1MeAcaDHaaCgvBC5Yy_BYshiKTs68T_TYOMlHOdLLKIzSrjZSTKwM4hiYPDZWIIRIZM8mDhhyRD9mMYIJLWC4JmE6mBKceWsneNtlbv8oNkuEAO4xJX3J5yw9cGbkFr9AvV__QNiLng_G4X7&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdIPO9GiJGlUSrYTrkOd0jLchxfkS1b2S-tuxOYuWr7d0iOxlnLCMiBTQ0W4BI6kXJqXVHR9kk30dIRlGlXvep3GfLF3SHOxihqRgJXJ_zoH3zYXFTlMC_RvmTf9W9a-KrNEOgmAEuB7UdDb1l7C1XwUhLiMTqD2NcEWxm6rxqfiZJr8j3tnCENMRSLgfjfMUsCMbA9RTDdOJoekMUjymFcDbG-OXWEiAe_xh5ANpivi2VHtimJhluS9K_DxluHqsulbg9g7iJ4XRSMeubcgFeu4egIV__O7PRhpuYaxLNho_8TEM5iE98zlhEwIanEWbGtc8K_tA71cEHebuRjweEtB8ujFQ1YTkSSwGRtnk3DBysmJABwPvUsbq6j8_yJCB_5-KIoqe7KOf6xY92cqmpKwbKiJfJcQn6ELovFTnuSiaNVW0KJUgt4asro9UmK&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpddMuS0aXP5qXmtqv3zCS4gGdwCnA0kLcsLx2hBH5RMykZg8dOwVtvpyAGtZ3sGXUkXUaSLG-OHC3awynrIbjLR3VaxgE3vs3w1GNNBAluo2kgvR8YeD62yEfXOe9SlND_iYryaolxFG9M7HL7EpoUWOhmu4qAoeHov_Qg1FfrUBsCA_wQS-8oSRUZW_gPcCVNDJZVatKj_rIbOVa3cPFBIV_1dy6XlAKbaWBJQe5lOTf3NLqnd1BKvRY7ZevLYEflCjvaVSqixsL9XCmYiL7uXtZ9-p7SokJsoT-OU2-rtJiKenpMPWvEf155hqcLDiDniYaJ3Mw0WAXTXB-Vqvbcxc_miUYwK6i3NNDE_VxyAyXqf9o9Z_qZDLEuZn_99-hRRDZFzuesy254xPS5jw0aIRkLaEp9lkxXSWr5volmaYN27&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpd9E1XVeR8xqE_PV173Qwo4piekUex79cKVQPCubRUAdXTTXWmDI5qp05aJN_3uD6gN1hn4cWSc6uXwbhwshLI5x2GEsjW0DwEI5vAGv3kXh_AltaHYNTmo1v0OTJ5cQC95C4BjyrEQW8yO1FQaI2uFDpLe8cTmgHPkao1OR-F99ltAs_Rac5EkNtV0WecR2RONMY5AWjqOE65tPhskCwUCvZH7dFHQYm0ejrkggV6yVhwHrRbQNVIKlykSJGJ5JEQ4alILl63tzmylMOLEFXnljKnLMkpoV6-CqsWruRUqysTb36dCIe-s9eXeYJZSiCbNPvdxgufD8xMEP-4Uw58NFEjDGzW9IeGQx4brJ4Ym5QirCoyVv1iFQbYzA8eALU9ulP0fbXZFG508myTjZBeAy4aMBFV9SGaJXi4kitYj0X_5&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpczrS6h4VOQ2yKZ99x8pL8K1o6iFGT2Zc2dhBr_FUgle0K0AlhIqVRENYOsNjDnswW6QE6HoH1-BnogaTA2zE7h5pkv2mweGubDurLYR9uoo9Gr1lIy-KLjEyS_pnA1i0qhtcXdYfTtXuYc-DXgBvrUjL4Q9LDiAg7AZ-pALIqPjA1a5P_ZEjARURrfDxRaa1z9cGhHdFoep1MEkyIK-H9EudKubBQC7bQyBTJrY20JISjO5WvRgSodmDxyb7dkG2i_F3LZuck3MHnXbgKt58kOiSn_mTuLuHAt0shb2vjpru5ouRoVOURVHv0jkTnt4NwseYsgz22yrLsX70AXOznjsjbM4WmVMQFqarv7i_IwJgvz-L6IwoMc135E4CGm2FPz0ya33wziuXA_wU6vPgonnKFqLlSL1B54ZcMsZM92IA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpen-kb8Y5-SA_R5mRw1psBpS6To8TMKaufFISp38S6NqbSvy6FPmImXwMSKO5n6pX2SyXQgEPRjw9yVN6O4PKekn-euHp2X38b1-VpSxmUPtLj2fU9H8yckZFzmSDQbUHC4Me8-m47v6b1jyJA_6CkZ28cyTub3trrpOJhsxKPgY3D9hxreAlKKfQXh47fjEJA8jkGwWuNzb6iUCHAUx4PbejZURBYNkjUNTG8hmwah4rlp9Bg4gROqa_7EbsnjTngeCww0RMgEMsvr6W2im-Yo1xJemVsiWB5RTWntmhiHYv-juj7XQ0JbJ0hRjncMinXFPAAgITKX2GQ3hzMrCuzYBy9ymCnbaN0zQzDiqes14c94Twmj7aa0fnA27ZjKp_d7ERR4WFZz9dP6WhXozTPeLEyWSBIDJ7dXglWyru5aHw&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdj6gk7N0pezChWFW6ythmy_yhP4FUbPzpJC2zMaE0_FVuOchNS-N0JGjMlQ9xlQGKcIcNtoe9oBqv9NZoCl8pToVtPwqzO5hw_SP0CrriqTUmkQog2185iVioYQVX_SOnz1nBT6jGk5pNbsMjnUEYSyEY1Lendod0Xnt5CM1LtUWNgSnhczZqqrNsUbiqtYv4X7XKXGK9KYGrjuElgQ95D0Uu_yfRaZFiQGnQ6XvHqYCCWU-dRD53-1ukfLgE628iMtFfcJkMzE5hR2kdJsBmcDWWDwqe4UrFITD_xVDbesAAV8Kr3-Z37kkTRwsQCoWm7o4bIz0w8a0PySpTG7EBMIvp8rBnUILISr42Uo3vjz1e1KScc7g52ckVJYlyZrIw9dcXtjxfL3GqhQy_tm1o957BLyZlZUb9q0twkTv9LmWE5&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcKV4KElLRC9ksDCiwDnChEcRfEOhyR2J4j1kupPrXfN7gWCTG94Ycpy0TaDXX3CdpCYDwyZ7-FV4IM3lDh0ifpPTnW-QahbNg55X3zPLeBK78YKze03DAkE6ktrJllBjTTgcN4-MxYjAKUkbr7bh3UdKzzPp0EGnbLtTK8cRwY6GSj5REgBXHSN3bvZ84uhEeRQDxz4wUZTqRvK4MleqJ0-wTg1I2PvER1BJRaSv3g1dWwi1Wgqa6iTP3cSIgtn7TfuqM7nQzFrJsZ_HVlKRKL3k_2jbg1_wb76kU3AIqKAAxInx6S5f_cOZkcf12-lTXncZ-YlhRTd9Sx_2F7rC7k1DqRMmfEQEyVrquT4MnCx5jaK5LZKJUJJaiPQSXPvvmEuxWPDo0a85K6-YIXRo7bvurBRwC8Larisj3iWKw&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 40,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": false,
+      "textReadable": false,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 88,
+      "totalReviews": 1365,
+      "averageRating": 4.4,
+      "sentimentBreakdown": {
+        "positive": 82,
+        "neutral": 7,
+        "negative": 11
+      },
+      "reviewSources": [
+        "Google Places API (Apify Enhanced)"
+      ],
+      "keyThemes": [
+        "Food Quality",
+        "Service",
+        "Pricing",
+        "Wait Time",
+        "Cleanliness",
+        "Atmosphere",
+        "Portion Size",
+        "Location"
+      ],
+      "recentReviews": [
+        {
+          "rating": 5,
+          "text": "What a sweet, unique and innovative restaurant!  The staff was friendly and very knowledgeable, and the food was wonderful and creative.  The beet salad was excellent, the pork tenderloin and pork chop combo was super tasty, spicy and interesting.  The only complaint is that can get quite loud in there, but several large parties definitely added to the noise level.  Great find!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 4,
+          "text": "Overall, I’ve had some of the best food I’ve ever had here. However, on another occasion (when they changed their menu), I had some of the worst food for the price.\n\nThe menu items are quite expensive, so due to the second experience not living up to the first, I’m unlikely to return.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Their Sea Bass entree was fantastic! Can’t wait to try more of their menu!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "An upscale, seasonally driven restaurant that feels like a stylish, cozy living room. The dishes are thoughtfully plated, rich with creative seasonal ingredients, and pair beautifully with their curated wine list. Whether you're there for brunch or dinner, the vibe is relaxed sophistication—and it's often packed for great reason.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Communal has long been one of my wife and I's favorite spots. We recently tested out the new menu and were absolutely blown away!\n\nWe got:\nFuneral Potato Croquette\nSnap Peas\nWagyu Filet\nQuinoa Risotto\n\nEverything was spectacular! I think the quinoa stole the show though, it was addictive. All of the new offerings are well up to the standard we've come to expect. Service is always top tier as well. Can't wait to be back!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Amazing food and service!!! Recommend to make a reservation if ever in Provo",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "The fried chicken with mashed potatoes brought plenty of comfort, though the seasoning leaned a touch heavy. Shared sides like roasted carrots added brightness, and the relaxed, open space made the dinner feel welcoming and easy to enjoy.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 4,
+          "text": "Unique! Expensive but enjoyable and fresh and good!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        }
+      ],
+      "detailedReviews": [
+        {
+          "author": "Nancy Champagne",
+          "rating": 5,
+          "text": "What a sweet, unique and innovative restaurant!  The staff was friendly and very knowledgeable, and the food was wonderful and creative.  The beet salad was excellent, the pork tenderloin and pork chop combo was super tasty, spicy and interesting.  The only complaint is that can get quite loud in there, but several large parties definitely added to the noise level.  Great find!",
+          "date": "2025-09-10T16:23:11.947Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pWWFEzaFJYMDVIUlZKV1RUVXhkV3BNVUdjNFZGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWwUbL_Pl3_h6qMy0LbzzBH7MjAAwTyJhFzMrQTzlio6IuOimKiQg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109401815986198923493?hl=en",
+          "reviewerNumberOfReviews": 79,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jay Patel",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-09T01:08:44.713Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25wYWNGOUhNbGRoVVd4U2FUWktXVUpwWkZGcFlYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXRCXfMP1tFTRQ0zG5ebJUPHaATFM-3vmmu2UYtuT2EwQHC7kXI=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102098436261018303075?hl=en",
+          "reviewerNumberOfReviews": 137,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Spencer Anderson",
+          "rating": 4,
+          "text": "Overall, I’ve had some of the best food I’ve ever had here. However, on another occasion (when they changed their menu), I had some of the worst food for the price.\n\nThe menu items are quite expensive, so due to the second experience not living up to the first, I’m unlikely to return.",
+          "date": "2025-09-08T03:57:53.347Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25WNFpFOVRkMk42TTNkNExWUjFaRmxrYlU4NWNWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJtrcYuYvcdzCwu5XkFa5MmJ8fZDdCxM86nj7ovZyl-egTz7j0M=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105578048935411771978?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "X X",
+          "rating": 5,
+          "text": "Their Sea Bass entree was fantastic! Can’t wait to try more of their menu!",
+          "date": "2025-09-07T01:11:35.065Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pGVFdIRk1URkI0VVcxamIyOTJhRkIzUTI1RVNrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocITsPOlUTaiwAaGQ_m-q-sivB6uliQBo0M_O80GqgTQTiVt0A=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102085321594070881459?hl=en",
+          "reviewerNumberOfReviews": 137,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Cole Nisson",
+          "rating": 5,
+          "text": "An upscale, seasonally driven restaurant that feels like a stylish, cozy living room. The dishes are thoughtfully plated, rich with creative seasonal ingredients, and pair beautifully with their curated wine list. Whether you're there for brunch or dinner, the vibe is relaxed sophistication—and it's often packed for great reason.",
+          "date": "2025-09-04T03:02:14.567Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2s5bFdWVktjV3BWVEdNeFgxaHljRmd4TlZkUVFYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLA7ObB1sBp6jWS7qW9B3N31EPlQQzY-lCX-G51ESmIcc87Rw=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104910212545004003081?hl=en",
+          "reviewerNumberOfReviews": 385,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jack Wightman Jr",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-01T14:33:18.180Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xwd1EwRktPVmhEWXpSamRIbENTbWQxYnpOR1FWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU4d38vedPIs0f0cy3xPaWRjZz1aF6BQr-6Oa31-uyJzFQxJR1o=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115441735778810317211?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mike Monk",
+          "rating": 5,
+          "text": "Communal has long been one of my wife and I's favorite spots. We recently tested out the new menu and were absolutely blown away!\n\nWe got:\nFuneral Potato Croquette\nSnap Peas\nWagyu Filet\nQuinoa Risotto\n\nEverything was spectacular! I think the quinoa stole the show though, it was addictive. All of the new offerings are well up to the standard we've come to expect. Service is always top tier as well. Can't wait to be back!",
+          "date": "2025-08-30T15:05:43.198Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21ORlVYVnpWRkpTTm1KS2NEZFlNVUZTWDBsdFJWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV2Z7_KzW0Wws2n2EiD1vl1WD7b8Rvc6t8OHZIH07-AqrBu696D5A=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102057570071143563139?hl=en",
+          "reviewerNumberOfReviews": 54,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Nithi Kumar",
+          "rating": 5,
+          "text": "Amazing food and service!!! Recommend to make a reservation if ever in Provo",
+          "date": "2025-08-28T19:36:26.069Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pkcVRFbHlPVkZ2YTBsU1NuUnFNa3BvWVdJNWFFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVR6KMgBqJiJA_nXJzkm8--xMiyNgO1Qx-lGoPdLSVGa3Z5H40=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108954455489583818807?hl=en",
+          "reviewerNumberOfReviews": 37,
+          "sentiment": "positive"
+        },
+        {
+          "author": "michael suinni",
+          "rating": 5,
+          "text": "The fried chicken with mashed potatoes brought plenty of comfort, though the seasoning leaned a touch heavy. Shared sides like roasted carrots added brightness, and the relaxed, open space made the dinner feel welcoming and easy to enjoy.",
+          "date": "2025-08-20T17:51:21.790Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2w5WlpqZHZjWFZ0TUZBMVpUUmFVR1ZmY2sweGQwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUPpOGkfNUUcshPOpGL6f_AbxCS1Z6rAgKT7edfQ5mS_X-MCFA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118066718370095220763?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Satu Kujanpää",
+          "rating": 4,
+          "text": "Unique! Expensive but enjoyable and fresh and good!",
+          "date": "2025-08-14T03:11:41.935Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2poWmFXTXRRVVUxVVVSTVQwWmhOekZWZDA0NVJWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLnIcssKWkyGpBlPltscGDef3lTdzEWnO2WM0Ng55pzWIFBlg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106501543904351361133?hl=en",
+          "reviewerNumberOfReviews": 25,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Alan Gonzalez",
+          "rating": 3,
+          "text": "I had big expectations for this restaurant and was left a little disappointed. Now I have to say every item including our wine was 5 stars but when it came to the steaks it was disappointing. Now they were cooked to the exact temperature but unfortunately they were cooked on a dirty grill which gave them a burnt taste. Next time I will ask for them to properly scrap the grill in between cookings and maybe oil the grill. I only say these thing as I am 20 + veteran of the fine dining restaurant business and a classically trained chef. So will I go back? Yes but I may not order the steak and for sure will not order the $150 Tomahawk if I dont speak with the chef first. I hope this criticism will be taken positively.",
+          "date": "2025-08-13T01:36:36.260Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pGWlgydFphMjlSYzNRdE1EZEZhMEZsZEdWQ05sRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJCd7lqXjGgVMEmVwlou3eK39_P8co6AFcpAA4w_js7ubP_NQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101643179407622467767?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "negative"
+        },
+        {
+          "author": "José Antonio Perez",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-11T18:09:18.597Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pNdFduVlRWR2MyVW1zM1NrWkJUM3BtWkdkdGRsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIpvdDwCwSPMHhUBD8KpGgBQIfB3a_bvAJ-4Fe0wmnIwOgT5d_j=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102122538708378407496?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tiffani Timothy",
+          "rating": 5,
+          "text": "Had a wonderful full experience. Can't wait to go back for brunch 😊",
+          "date": "2025-08-08T17:16:49.845Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25CR1dYWnhhRGwzY3pGV2NHeGhRMGN4ZDFCVGVrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJafvttpnsKDU_QL2JRv7BXr05uvgpgiMeHbN-MjOD45QZC1w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118189140866919325782?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Joshua Mendoza Uruena",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-06T00:53:33.045Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xCc1RtNUpYMEZyVjFNeWNGaFJNbnBwU1c1clVuYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWmALNmVXsBcaYJ4P8N1H1FEg8yhzgcYUY9UZn93NUYav1wbl8R=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113190696908253013958?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Yolanda Hue",
+          "rating": 3,
+          "text": "We were very excited to come here to dine. We had gotten our reservation time wrong. I called to let the restaurant know we were on our way. They informed us that there was another party booked. The restaurant suggested we look over the menu and order asap when we arrived. The waiter was not very friendly. More of a passive aggressive attitude. He brought over a dessert menu letting us know we had about 20/25 mins left at our table. There was another party coming in. We looked around  the dining room and noticed other tables leaving and 2 more empty 4 top tables. We are not sure why they were rushing us when it was obvious that there were open tables for the guests arriving. I feel the hostess and in house staff could’ve been less pushy and could’ve avoided rushing us. After we left we walked around the area and came back to our cars parked in front of the restaurant and guess what??? There were several empty tables that no one was sitting or had reservations. I feel the restaurant did a poor job on customer service. The food was fantastic. Restaurant staff I would rethink how you approach these situations. Never rush the customer if you have ways to juggle your tables.",
+          "date": "2025-08-05T12:48:33.895Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25wb09IaHpiVTFUUkU4MllrVklkWFowVWxCb1lrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW2tZalPynbtVHbZ8P8Ai8tC9pahm5RRXDdLHwElQ4Po6W99HQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112106865696162307729?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Derek Larsen",
+          "rating": 5,
+          "text": "The very best and charming restaurant in Provo. The food was delicious. I mean seriously excellent. The service was superb and our experience was so delightful.",
+          "date": "2025-08-04T03:40:48.101Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21FelJtRkhObWR3YW5VM2MwcFlUR0ZhVUdNME9IYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU_7SvOhRQOIGzkOsTRkSD9ReCbDGQ-n5FkOlOG4mv1FvS9rtWHcw=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103953100074414869844?hl=en",
+          "reviewerNumberOfReviews": 208,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Chris Priebe",
+          "rating": 5,
+          "text": "Very nice place, cool atmosphere, drinks were very good. Food outstanding",
+          "date": "2025-08-02T02:47:49.354Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21jdFdXVmlRM2gwT0RkWlNtWk9iMEpFVGtReGQzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU48BPAbiVCYKiXoKXmsM0am46qLpfAmcpqy2p17OxFrm_0RWpr=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103325641083982255023?hl=en",
+          "reviewerNumberOfReviews": 59,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Joseph Tegerdine",
+          "rating": 5,
+          "text": "Never disappoints! Amazing food and great service. I’ve taken a number of colleagues here and have recommended it to others and everyone loves it.",
+          "date": "2025-07-30T22:05:09.114Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21GcE9XNHlkVWM1YUhaRVoxUkJlWEZ5YUhRNGFXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXnIeUZU695zyF_JZ9NuEpJ78mvOFlcz2Mzc2fVk7UeO_PdI-2z=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109700333067690610071?hl=en",
+          "reviewerNumberOfReviews": 222,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ivan Collier",
+          "rating": 2,
+          "text": "Came here twice for special occasions, and after two visits I won't be back. The menu changed between our two visits, but on our second visit we had a whipped feta and honey starter topped with walnuts and roasted grapes that came with a bread, which was the highlight of the entire meal. After that, we had garlic mashed potatoes and teriyaki eggplant, which were both unbearably salty to the point that we ate less than half. Finally, we shared the steak frites, which, while cooked medium rare internally, was almost burnt on the outside and was also overly salty. We had a similar experience on our first visit, except we ordered lamb as our main, and while my wife's lamb was cooked correctly, mine was so well done that I was physically unable to cut it with my knife. On top of that, our waiter never checked on us after delivering the lamb, so I never had the chance to ask for a new one. Considering the price tag of these meals, they should be able to know how much salt to put on food and their should definitely know how to cook their meat. Overall, the dining experience here is inconsistent and not worth the price.",
+          "date": "2025-07-26T22:52:52.271Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURoM0pERjFnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVruxN4l40au-HicQfVWdh32TKDMipnccr8M0lRu_xW1V3Li25B=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106918019428793231128?hl=en",
+          "reviewerNumberOfReviews": 46,
+          "sentiment": "negative"
+        },
+        {
+          "author": "A Google User",
+          "rating": 5,
+          "text": "Decor features natural woods, greenery, and modern simplicity",
+          "date": "2025-07-23T16:46:07.739Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT201SWMweFFkREZvUkdRdFJuTklXV2hIYTNoT05tYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/default-user=s1920-c-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107808285904780400811?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Matt C",
+          "rating": 5,
+          "text": "This place is amazing, easily the best food I’ve eaten in Utah (including SLC/Park City options). From drinks to dinner to desert they have all the bases covered. And always super welcoming and make you feel right at home.",
+          "date": "2025-07-23T02:27:16.114Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xSRlJGRjVhVlZ4VG5kYVlqWmhhMlZLVTJ0S2EwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWl80jjhx_MfstAgQp6YYEMrsuPptXRaXdK0IdrggdyF5CXq0Si=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114076480250220539263?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Bryce Esau",
+          "rating": 4,
+          "text": "Great food and great staff! Definitely will be back!",
+          "date": "2025-07-17T03:01:10.096Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT201cWFtZFdYMGN3TkZwa09UQkdUa2QxVGs5M2VXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVC0byNa3mlMETVtx-yauzCzQOxwiaYxiCjcKZRHA1u9-JE9kql=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118232136647350040707?hl=en",
+          "reviewerNumberOfReviews": 119,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mel Avery",
+          "rating": 5,
+          "text": "I had the salmon and it was melt in the mouth soft with amazing flavor, I highly recommend",
+          "date": "2025-07-16T03:00:26.845Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xOYVYxRTRZVzlIYWxSdlNHOXJSa1ZzZUdkSFQyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUfzLW1SrmMyja-ye9CEssbNJGjWZBYUNvO_uiFxx442O1Kgn7Gig=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118231094148751467960?hl=en",
+          "reviewerNumberOfReviews": 28,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dustin Goen",
+          "rating": 4,
+          "text": "",
+          "date": "2025-07-16T01:40:26.968Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2toVE1GRnFTWGhuVUdWbGNISjRhbmRJWmpSdmFuYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKIa4EqSICwQkLbKODIfP1ty_UPashy1taSNanOervxuMHUjw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104169141359529517216?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Katelyn Yierle",
+          "rating": 1,
+          "text": "If you're hungry, this isn't the place to visit. That's fine.Then her made us wait 5 more minutes as he dried glasses. We walked in and the person we saw first, we asked if we can sit anywhere-The place was pretty empty for a Saturday evening.  Needless to say, we lost whatever appetite was left.",
+          "date": "2025-07-15T23:03:18.538Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xFMlZqSnVjVzVDTlRkTWMzcExiVVJvWm1neGEzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIFyoaSwv3btJGTLpKoLoPVo3TxHYBQQiLtNuuQ0cfwowO-uA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118390307505019415518?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Charles Bearman",
+          "rating": 5,
+          "text": "Phenomenal food - loved the BLT and wedge sandwich",
+          "date": "2025-07-10T18:41:43.507Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2paUlZXRnpRMUJKU0ZocVpFZFFlR2x2UzFoU1IzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWzarozUVDftr-8ZqG7TgoJoh-Bk_hGUwJ9N-odspGjctrQkHw=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106268524171125187687?hl=en",
+          "reviewerNumberOfReviews": 288,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Chad Richardson",
+          "rating": 5,
+          "text": "One of my top restaurants. Love the quaint atmosphere, the fantastic staff and further more the fabulous food. Top notch cocktails too.",
+          "date": "2025-07-08T04:35:36.990Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21SWk9HUnVSMkpwZWxKV1JsTmZUMHByT1VnMVVHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLmI8aw8xE9t__VPdHuZN8LgwTRaGe9KoieRORvMLiBuuKRLuo=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110114688760135075286?hl=en",
+          "reviewerNumberOfReviews": 22,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Robert A",
+          "rating": 3,
+          "text": "My dish was over cooked.  Prices could be better.  Small but cozy.",
+          "date": "2025-07-07T20:51:46.048Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pFNWIzVk5YME5KZDFSU1dWbFdZbVZvZGs5ZmQyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWBeYLoBxiAhij5IrKX1JKKNuyynXO5J223HlDUqSxulwtZNbs_AA=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101215156415503842404?hl=en",
+          "reviewerNumberOfReviews": 201,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Brandon",
+          "rating": 5,
+          "text": "Really enjoyed the food here. I had the biscuits and gravy - it was super good. Everything I saw on other people‘s plates looked really good as well.",
+          "date": "2025-07-02T19:47:49.013Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pFekxYZEhYMU5pUTBrNFNEWkxRMDVTZFVWbFdFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ_VE9lfFNFF8H36ZBeFRFxbATrTONaIeUZ5xPcBMycPFOonQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115010647352138368897?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Scott Soward",
+          "rating": 5,
+          "text": "My wife and I went for her birthday and it was a wonderful experience. The ambience is beautiful, stained glass windows, former jewelry store, so beautiful and open environment. The food was amazing, we got mashed potatoes and blackened carrots, and ribeye steak that was cooked perfectly and shared our meal and had plenty to take home. Service was very friendly and helpful. Christian Singer did a great job and we met the owner and his family who were super friendly and bought us desserts.\n\nThank you for a wonderful evening. I would highly recommend and my wife and I will be going back.",
+          "date": "2025-06-29T06:17:01.388Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2taT1NWZDFiVWhNVkRkNFgyeGpObHBQVGpoV0xWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX6ik-e9ntFqZClYdndJM8p0kiGCLPhtLBTs2evS9O8IkS450WWIQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108329091954385931478?hl=en",
+          "reviewerNumberOfReviews": 29,
+          "sentiment": "positive"
+        },
+        {
+          "author": "maya Jackson",
+          "rating": 5,
+          "text": "Came to communal with a friend during my lunch break from work and I was very impressed! The service was quick and great; the environment was nice. I got the fried chicken bahn mi with fries and it was delicious! The chicken was so crispy, the sauce was so good, the fries were so fresh and well seasoned. Overall- loved it! Excited to go back and try more.",
+          "date": "2025-06-24T00:50:32.558Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT20xa2MzSkNNemRZY25sbFZsQTJYM2xKYTNwalJsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWR3-v7RlTN9EtorRQH5iNVczhObZzVVnf6plXvOXB_nQxwT10pIA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101499201312687032188?hl=en",
+          "reviewerNumberOfReviews": 36,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Raquel Larsen",
+          "rating": 5,
+          "text": "This place is beautiful. The food is fantastic, and the service was remarkable. My brother and I came about 20 min before our reservation and they still sat us no problem, coffee was phenomenal and our  glasses were never empty. The avocado toast starter was AMAZING. Kinda spicy, with creamy avocado and fresh crème. The toast was very crispy so it had a nice crunch. For our entrees I ordered the funeral potatoe Benedict. It was DENSE, glad I came super hungry. Needed some more salt but the sauce was creamy and delicious, poached egg was perfect. My brother ordered the fried chicken Bahn Mi, and it was massive. He demolished the whole thing, he said it was perfect, I tried a piece and the jalapeños were the perfect addition to the sandwich.\n\nOverall, a great restaurant with that heavy breakfast food you need after a night out, but with a higher quality and classier feel. Thanks Communal, will be back soon.",
+          "date": "2025-06-14T18:47:35.517Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pWeUxVRjFOVEZFY1ZaUFVGaG9lbmxXVTJkeWRFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXVo8Rpm50dGkyRqAuDb6Q9X0R5lOgGuubYct5f5ik_1nhga_Fu_w=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100543824607706428718?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Callum Galloway",
+          "rating": 5,
+          "text": "One of the best waiters I have ever had",
+          "date": "2025-06-10T20:20:06.104Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t0T2VIZDBkR3d6V1UwM1ExRXpibDlFVlVVM1prRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUVMsnUeGc8ypSER3Lv3Hku6Q-Le4RafU5uPtQcOboAD2k_i4dO=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108139792536167329866?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Greg Garrick",
+          "rating": 4,
+          "text": "",
+          "date": "2025-06-09T23:03:51.245Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VLZlNpdjJzb3J2YmF3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWsOIas_NNctldBavhaLmajkokE19N2Bijt6uEO1IF5g14XQ_O5=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115144640040827372650?hl=en",
+          "reviewerNumberOfReviews": 63,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Girish Ghimire",
+          "rating": 5,
+          "text": "This is an eclectic place for brunch in Provo. Portions are little larger but it was perfect for hungry half marathon runner. I had their French toast. It was awesome. I ordered their home made ginger ale but the waiter bright virgin mojito which is good but once he realized before I did, he quickly brought ale. In my opinion. Virgin mojito is much better.",
+          "date": "2025-06-07T18:13:15.838Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VMcnh2WVNrd1p1SlRBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV0XhB35JwddXQa4NbIi9wzu5lIzssxGQ356H4igvuaIfgjKf02=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111640109216856823866?hl=en",
+          "reviewerNumberOfReviews": 171,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Zach Webber",
+          "rating": 5,
+          "text": "Great food and great atmosphere. The dinner is fairly pricey but it’s meant to be shared. If you’re looking for something a bit different and more special, this is a good place.",
+          "date": "2025-06-03T16:43:48.634Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pGa1YzaFlNWFJ0YmxobGMzVnNiM2h4TW5VNU5XYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKwR_xUELduFTdD8zpoJ_J4AQjLk22f4scohNQsDJ2xXnlXGaQ=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109662435303090969263?hl=en",
+          "reviewerNumberOfReviews": 323,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jason F",
+          "rating": 5,
+          "text": "If you live in Utah Valley and haven’t been to Communal in Provo, fix that. This place is a gem. The food hits that sweet spot between creative and comforting, and everything feels fresh, seasonal, and made with intention.\n\nThe pork chop and tenderloin is one of my favorites, and the surf & turf frites is worth the splurge. Sides like the carrot hummus and saffron pilaf are legit, and the butterscotch pudding is a must-order.\n\nIt’s the kind of spot you bring friends to when you want to show off how good the food scene here can be. Love this place!",
+          "date": "2025-06-02T01:01:53.239Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VNLWhxYmVfZzhuMmJ3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU2F-1yvV1fQDDa4e6gNos1-RXwByKM-HyXG7UEAKwF3eEVFKYlVA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105805710210159622412?hl=en",
+          "reviewerNumberOfReviews": 17,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Madyson Pace",
+          "rating": 4,
+          "text": "This is the first time I’ve been here before and I did take out when I got home i’ve got the steak with fries. The steak was good but have really hard parts in it I could not even chew through and I got maybe like 10 fries I paid 60 pretty much just for the steak.Love the sauce on it though. The waitress who helped me with super kind and understanding let me ask questions and let me try the sauce for the steak loved her. Atmosphere seem more like a relaxing atmosphere someone or families that wanna just relax in a quieter place little Mom and pop filling shop. But I will say I’m pretty upset that we didn’t get very many fries and spent a lot of money on it. The picture is half of the fries that we got the other half my boyfriend took, but he got about the same amount or a couple less:(",
+          "date": "2025-06-01T03:24:17.561Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VMVDR0dWpHMDdUUER3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVaDqP1aBsIgmHcDH0xRHtYDgXlAQX9Npw9CcxeJSWmpgihCs8Z=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104758215789620137277?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Benjamin Sorensen",
+          "rating": 4,
+          "text": "For the price point, I would hope they could avoid serving burnt pork chops/loin I am talking legit charred top to bottom I was so hungry I didn’t think to send it back. Other than that everything was great. Beet salad was really good, potato’s were good. The ambience is quite loud for the price point, and no privacy whatsoever. Feels a bit like a cafeteria.\n\nBrunch is also very good.",
+          "date": "2025-05-26T16:32:01.633Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURvdmNXV0RBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUMV67jnBkPzYCLEfe-zfBvLIQWx4QbPaNEi35FFWiUVz_6rCpV=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101861886717614872432?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Arlene Barnard",
+          "rating": 5,
+          "text": "a wonderful dining experience.  The menu always changes and the staff is wonderful .. It is a great place to share food as the portions are sizable!",
+          "date": "2025-05-24T03:03:15.348Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VNUEctY0RLeDZUWldREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJzJn6slzLurQgx9tdeRxpHYrfjmZVLO1uidcEys_Y5CUU77A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109651022216208667276?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ross H.",
+          "rating": 5,
+          "text": "My favorite! The best restaurant in Provo. Everything on the menu is amazing. Incredible wine selection great deserts too.",
+          "date": "2025-05-24T00:30:02.264Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURBdUp2OWFREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUJmfAWgh_cL-KZWH0U0NfjY-n-OPqKIBbj0-tDK71QdWsFbM-dPQ=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100813059372059924493?hl=en",
+          "reviewerNumberOfReviews": 599,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Allison Wilson",
+          "rating": 4,
+          "text": "",
+          "date": "2025-05-14T00:39:45.897Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VMVHkwSmlOaGZEbGN3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXtisHXrjCfEs3gthAYBsXU7dejrBq-CvvJlS2uo1w63bizpec=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107672270431372440434?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Thomas McGlone",
+          "rating": 5,
+          "text": "Stopped in the local Provo restaurant while traveling cross country.  We were so lucky to get 2 seats at the bar overlooking the kitchen.  It was fun to chat with the chef and watch him cook these delicious entrees.  We had the salmon and porkchops with grilled carrots.  Everything was hot and freshly cooked.  The chef was awesome chatting with us while he and his team worked their magic.  One of the best meals we have had on our trip.  Lastly our server Christian was lovely and provided us great info.  Left a nice tip as we truly appreciate great service!",
+          "date": "2025-05-11T20:43:22.723Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VMdndsdFA4X0tydHZnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI9XVUbZpwAgLv_eJdJ1QXxHMotn1_EobcOyQj5swGBsQ99SQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101661842172949331765?hl=en",
+          "reviewerNumberOfReviews": 15,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Yuliia Kushnirchuk",
+          "rating": 5,
+          "text": "Nice and cozy restaurant, tasty food, big portions, great service",
+          "date": "2025-04-29T12:39:21.083Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURvaDlQMXpnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWKhzk3lyJnVKiIedfLcmr7SIU4MK_PNDIfFeNpa8WMyWTW_bqDDw=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107107759331533493089?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ron Hoopes",
+          "rating": 5,
+          "text": "They were able to seat us immediately when we arrived a few minutes early to our reservation with our party of six. We got a couple of starters, fried cheese (excellent) and carrot hummus. Communal recommends sharing everything so we ordered pork chops, salmon, and a couple of surf and turf plates (the best). For side dishes we decided to share sugar snap peas (so good), squash, and funeral potatoes. At the end we shared a strawberry raspberry crisp for dessert. We should have ordered two as that was the crown jewel of the night. Service was excellent in that we always had our server available to us but knowing not to invade too much. Looking forward to coming back again.",
+          "date": "2025-04-28T16:12:01.901Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURvczZMOEJ3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXHeqqGBtRH9trRzATfndG4xAmVhTGp_B3YXUq31t0_8ciw-atC=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112434924411478386516?hl=en",
+          "reviewerNumberOfReviews": 54,
+          "sentiment": "positive"
+        },
+        {
+          "author": "kevin teela",
+          "rating": 5,
+          "text": "Food was amazing. That’s not hyperbole. The restaurant is small and tight thus a 4/5 there. But I’d recommend them to anyone.",
+          "date": "2025-04-27T21:02:29.562Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURvbllPUFdBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWOTqXpSV7H6SNsPB3pSpMTYNDFeFc7OqRdTai7vSv3WIPLacw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106490936441229543464?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Malia K (MaliaK)",
+          "rating": 2,
+          "text": "LOVED the “feel” of this space, keeping the original bones of the building and adding modern updates.  The CHARM of the place still shines through.\nWish, however, that the FOOD was equally as charming.  I looked forward to having Brunch and upon the servers suggestion, tried their shrimp and grits, adding an over easy egg in addition, again at the servers strong recommendation.  Thank goodness I did because that egg was literally the only saving grace for this dish.   The grits were formed into these triangular, hash brown-like pieces and while I understand the thought behind it, they barely resembled grits.   It just seemed like one big crunchy mass with no real flavor.  And then it was topped with an odd sauce consisting of tomato sauce, a vinegar like aioli and something very bitter and burnt.  The shrimp was delicious but lumped in between all of this chaos, it was a confusing dish to eat.  I was grateful for the silkiness of the egg - it was the only recognizable item on the plate and I needed it to push through the meal.\nThe restaurant has a very upscale and understated classiness about it, which is very appealing.  It LOOKS like a place where you would expect a really special experience.   I, however, left feeling very disappointed.   I do not foresee a return in the future.",
+          "date": "2025-04-25T19:12:08.486Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURvNGFTYWJREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJMVClTxLz2r6OVVHYMNrSMzCytH6BBBppTTmk07BOexkJq-g=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117341672460087354044?hl=en",
+          "reviewerNumberOfReviews": 39,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Oscar Cordova",
+          "rating": 1,
+          "text": "Save your money go anywhere else. The food was horrible. No flavor. My dish was cold. The coffee tasted like sock water. The service horrible the place wasn’t busy but it took the server 30 minutes to even offer water. I’m a patient person but they took a hour and half before I got my food what a disappointment it was. You couldn’t pay me to go back there again. I’m surprised they’re still in business. Everything about that place screams overrated overpriced. You’re only paying for the atmosphere and Instagram pictures.",
+          "date": "2025-04-24T01:34:52.129Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURvMm8yQ3JRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUcQtDjP572xXPQo5jKVlzoay--xCzJqWFIfdW8o_QnuIQS2SvddQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111457539337579176779?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Jorge hernan Pinzón Aguilar",
+          "rating": 5,
+          "text": "",
+          "date": "2025-04-14T19:20:57.699Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNvcUt1MHdnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIkBJSOncfxGiOF70Kl0hgK_RhN3MeJ8YAJ5d93ws7KSYXa_Q=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109522903708481073234?hl=en",
+          "reviewerNumberOfReviews": 15,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Amilkar Jiovanny Soto",
+          "rating": 1,
+          "text": "horrible service, the food is not the best for the same price you can go elsewhere for better food, their waiter was very disrespectful in telling us to leave!! because they had a reservation( they have only a couple tables) making hard to even have a conversation and with their horrible loud music...people take your business elsewhere!! im never going again!!!!",
+          "date": "2025-04-05T16:32:35.020Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURRN2J6bDl3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXW46MhsPQpFDzXJTj63ePFUFbb3a3OPpnLnO_KpqUsn1qhb-9Dpw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101067708699171526967?hl=en",
+          "reviewerNumberOfReviews": 79,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Gyuna Bak",
+          "rating": 5,
+          "text": "I love their mashed potatoes SO MUCH! Other food options are absolutely great too, but just their mashed potatoes are insanee",
+          "date": "2025-03-31T04:45:06.052Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNJbk9uOWdnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLE3msU1woq-xyhM9T3E-SJTnAEBvAlT6Ulqag761aGfJwmmg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108668645911832124193?hl=en",
+          "reviewerNumberOfReviews": 25,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Heather Oxborrow",
+          "rating": 4,
+          "text": "We had a reservation and were seated immediately. We ordered several things to share in our group of 5. Sharing is recommended as many of the dishes are large portions. We ordered the charcuterie to start and then the roasted chicken, cornbread, butternut squash and I believe one more side I didn't remember. The chicken and squash were so delicious and my favorites.\nThe only reason it isn't 5 stars across the board is that we felt rushed to leave. I understand they are busy and need tables but we hadn't paid the check more than a couple of minutes beforehand when we were asked to go for more people to come in.",
+          "date": "2025-03-28T19:17:59.248Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUR3NTlhVnZRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXE4d0XemcLPp9wGX-azHEyyQT_SVZoM2v12ooxpSNOpa-7JOaJ=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107415675507220273064?hl=en",
+          "reviewerNumberOfReviews": 266,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Stephen Derbyshire",
+          "rating": 5,
+          "text": "",
+          "date": "2025-03-25T16:51:44.691Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUR3NXYyeDlnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVwVMIY0BYx-C3ZI48wtLuBdhOmvMzooty_Mg7EThpPHQXU3avEvA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115861984904864653997?hl=en",
+          "reviewerNumberOfReviews": 55,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Vincent Cortez",
+          "rating": 5,
+          "text": "",
+          "date": "2025-03-25T13:21:30.899Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUR3LXMzc0VBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWwL5KHWdeDWRoVY72uFfALXmPvlDHh1RE6-367Bs-W7a6myG2AkQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101130982225142372945?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Joe Xuereb",
+          "rating": 5,
+          "text": "As native New Yorkers, we were pleasantly surprised to stumble upon a true NY-style gem in the heart of beautiful Provo, Utah. Dining here was an absolute delight – the food was exceptional, and we couldn’t have been more impressed. Led by Executive Chef Matt Eckelmann, a culinary talent with Brooklyn roots, the restaurant truly shines with its commitment to farm-to-table dining and top-notch flavors.\n\nWe started with the mushroom toast, a perfect appetizer that set the tone for the entire meal. The mushrooms were tender and earthy, seasoned to perfection, and served atop crispy, toasted bread. Next, we savored the house-made potato and cheese ravioli in a savory tomato cream sauce. It was an indulgent, creamy masterpiece, with delicate yet hearty ravioli and a rich, velvety sauce that brought everything together beautifully.\n\nFor the main courses, the salmon was a standout – flaky, tender, and cooked to perfection, complemented by a delicate sauce that elevated its flavor. The pork schnitzel was just as impressive – crispy on the outside, juicy and tender on the inside. Both dishes were extraordinary, especially when paired with the sides of brussels sprouts and bruleed sweet potato. The brussels sprouts had that perfect balance of crispy edges and smokiness, while the sweet potato was beautifully caramelized, adding a delightful sweetness to the plate.\n\nOne key thing I’ll note is to bring an appetite, as the portions are generous, and you won’t want to miss any of these flavorful dishes. From the moment we walked in, we could tell that Chef Matt Eckelmann’s passion for great food and high-quality ingredients was at the heart of this restaurant. It was truly a memorable dining experience. You won’t be disappointed – in fact, you’ll likely be planning your next visit before you even leave the table.",
+          "date": "2025-03-25T13:01:40.370Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUR3LXFySWlnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJii2st0pedHMKfGATmmLFYM3oq3qws0kO2nnokpB6u_T_umg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109785556673429573035?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Alexander Chychykalo",
+          "rating": 5,
+          "text": "Really really nice place! Rebating was just awesome",
+          "date": "2025-03-17T19:47:53.959Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUN3c3ZLUkxBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWg54FIN27crbI7_3TCElN9ntiw4EwAR799OLcI4LkRRlq6hEmH=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106377389323028475605?hl=en",
+          "reviewerNumberOfReviews": 21,
+          "sentiment": "positive"
+        },
+        {
+          "author": "M M",
+          "rating": 5,
+          "text": "Service was above and beyond. Food was really good. One of the best restaurants in Utah.",
+          "date": "2025-02-15T14:47:01.746Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNna3BlTDh3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU7BxMMsvxMwBeCXVE3KT8Qn9CfAAlCh-5MU8BP00XpHamvWNC0ww=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100262188777253749989?hl=en",
+          "reviewerNumberOfReviews": 228,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dan G 959",
+          "rating": 5,
+          "text": "",
+          "date": "2025-02-13T23:25:49.735Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNnMk1xYnF3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWD8WkGPPECTzvRSDViIvbe0i8JUsajURksvJ3A63vrLSPXXzU=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103819458153695690523?hl=en",
+          "reviewerNumberOfReviews": 359,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Norman McGuire",
+          "rating": 3,
+          "text": "Was a little disappointed. Took a while to be seated, food was a little late... and the venue felt a little cramped. With that said, I will come back. I owe them a second review. Everyone has a bad day.",
+          "date": "2025-02-05T18:53:52.373Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNBbjZ2dUdREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXglm4e18VMlLb7Dw8Itm7B9ECrVFcKRLqUUwsO6VxmQuWEN9U6=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114966251503968716631?hl=en",
+          "reviewerNumberOfReviews": 124,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Ben Dougal",
+          "rating": 2,
+          "text": "People being exited about Communal just shows how few good high end restaurants there are in Utah County. It’s okay, saying communal is above three stars is just Utah nice/lack of options.",
+          "date": "2025-02-04T03:11:22.786Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNBc19MN2FREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV5ZkPbe8DMgc6mk_R_0F3D4BILUaC1EUmSJzMJvyXJFNXvdMK1=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104359360717426960322?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Garland W. Ledbetter",
+          "rating": 5,
+          "text": "First time eating here and very happy we made the trip from Salt Lake.  What a beautiful space and great atmosphere. The food was absolutely delicious and the staff were attentive and very friendly. We will definitely be back! Thank you!",
+          "date": "2025-01-25T04:34:16.870Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURfaWQ2MFdnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWy4Hhh_2-3p26s4yj46e5QCUNJb2u_pQ8o99zWCSBeH618Xns=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109275133202802505306?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "William Murphy",
+          "rating": 5,
+          "text": "Can not recommend this place enough. Apart from the incredible food, relaxed atmosphere and brilliant menu with wonderful flavors, this place has the best service I have ever experienced.\n\nAn incredibly friendly and genuine experience that simply does not disappoint.\n\nPS. Get the carrot cake, you won't regret it.",
+          "date": "2025-01-18T05:20:55.628Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNfcmZMRHhBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWUke9aRNfjSsaaFFtIryKje7ADQdjopUF8E_MMHbe9BoGdzROq=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106177205958187906686?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Richard Mattingly",
+          "rating": 5,
+          "text": "Small cozy location, attentive wait staff, coupled with amazing food, and the ambience of a casual fine dining experience near Main Street Provo.\n\nThe wait staff answered any questions we had, and accommodated substitution requests as needed. There was not one time our glasses had the chance to near empty.\n\nThe hangar steak was tender, juice, charred to perfection, and cooked a perfect medium rare as requested. The demi glace sauce enhancing and complimenting the subtle yet complex flavors of the steak. Topped with some perfectly crispy fried onion rings to complement the delicious protein with the perfect amount of carby deliciousness.\n\nThe broccoli was drizzled perfectly with a savior sauce and feta. Perfectly charred, full of flavor, and fresher than I've had in a long time. The perfect gentle bite enhancing the texture, and ensuring every bite was mouthwateringly satisfying.\n\nThe cabbage was similar to the broccoli in its perfection, coated with some delicious sauce, almonds, etc. The perfect complement to the meal we ordered.\n\nMy wife described the funeral potatoes as the perfect thinly sliced hash brown, enhanced by a mouthwateringly simple yet delectable sauce. A sure favorite for anyone!\n\nThe house pasta was a feta stuffed hand made pasta, with a seafood infusion in the sauce. Savory to the last bite, devoured in less time than it took to decide to order it.\n\nThe roujan potatoes were perfectly seasoned, and creamed. Not a single bite was discarded. A portion not only perfect for sharing however so well balanced and complementing to each menu item we tasted.\n\nThe charcuterie board was a blend of delicious savory meat, fresh kraut, and so much more. The perfect appetizer to start, share, and prepare for the food to follow.\n\nTo finish off the perfect meal order the apple tart with the perfect brown sugar ice cream on top, or the house made butterscotch pudding that will leave any butterscotch or caramel fan drooling for more every time!",
+          "date": "2025-01-05T06:20:57.977Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURmMHBTcW53RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXyiVgiy67qphjXWVuWPVu1QXcUtwQjfMv9Jxh1Kt_rosWfHrra=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109124357409161214712?hl=en",
+          "reviewerNumberOfReviews": 34,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Erin Moen",
+          "rating": 4,
+          "text": "I don't think the food is worth the price but it is delicious nonetheless. My husband and I shared the brussel sprouts, steak and sweet potato and loved it. We only went because we had a $20 gift card otherwise we wouldn't have spent that much on dinner.",
+          "date": "2024-12-24T13:12:52.804Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUR2LTRUNm9nRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW8S6kz4pzs3IzI_WRuOsmOUvLrNm_aMnAedwzGUnm-2wJktefIQA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103971552193214258085?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "positive"
+        },
+        {
+          "author": "carie young",
+          "rating": 4,
+          "text": "Great place with a good atmosphere. The food was good. It was fun watching the head chef work with the other chefs. My only complaint was all our food was cold when delivered which was a bummer.\nIf you go, get the brussel sprouts for starter and squash for your vegetable with your entree.",
+          "date": "2024-12-22T16:40:57.022Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR2dGYyekpREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKis5jX3qzsQ--tudx80LZ_Vp8Qe_Kin_2qn6zEBwHvLRTE2w=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106402222678566003664?hl=en",
+          "reviewerNumberOfReviews": 52,
+          "sentiment": "positive"
+        },
+        {
+          "author": "R and S",
+          "rating": 4,
+          "text": "I love the brunch food here. The coconut chia seed pudding is amazing, the French toast, pancakes are great too. The Dutch waffle is delicious. The dinners are hit and miss. We’ve had several things and some are delicious but others are so so. The hanger steak is pretty good. The poached pear salad is really bitter and I would recommend against it, unless you’re into that. The funeral potatoes were the best item we ordered last night, and they’re always good. The Brussels sprouts are really good as well, but fyi they come with an almost raw egg on top. I just avoided it, but my husband likes it like that. The pasta we had last night was pretty bad. It was a three cheese tortellini, but the pasta had the texture like it wasn’t cooked all the way. Even my husband didn’t like it, and he’ll eat anything. We told the waitresses (who was so kind and friendly), and she took a piece back to ask the chef if it was supposed to be that way. Of course he said it was intended to be that way, but we didn’t like it. It honestly just tasted like it needed 4-5 more minutes of cooking time.  They took it off our bill, which was really nice of them. I know that the menu changes regularly, a couple years ago we had the BEST chicken and mashed potatoes there, and it was easily a five, but this time around I can’t say the current menu is a five. Ps… I gave the atmosphere 3 stars because even though it’s the communal the tables to the right I’d the main door are so incredibly close. You might as well be eating with the person next to you.",
+          "date": "2024-12-15T19:53:06.530Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUN2OTcyV2NnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUpY1-2LVw_9CchsSL4yqQxihdBF1B9XrLolX1m5QWxSEkUXsHh=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100474244111050186121?hl=en",
+          "reviewerNumberOfReviews": 211,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Darren Adrian Mejia Yepez",
+          "rating": 5,
+          "text": "There home pasta is amazing !",
+          "date": "2024-12-12T03:35:06.705Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN2c2FQTW9BRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWEF5aV8hS5ugsjx6n2aHkL4yhTmnEZfAlSc15lblaymOLUSes=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116325560934436441396?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jerry s",
+          "rating": 1,
+          "text": "",
+          "date": "2024-12-12T01:13:35.898Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUN2MFpXQWZREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLH3rOXhkn87_yaWPmYBNEmP1t89ezMyn8rNaB5f9TJgKyngQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111729855766722174275?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Malissa Martin",
+          "rating": 5,
+          "text": "Great menu with much variety... customer centered, but is a bit small...tight seating spaces.",
+          "date": "2024-12-08T02:15:05.491Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUN2aFBhX0R3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJfBvSEvSr43egNNUp4us5k58O9pYsD06fZZ_GslSKuiGuBAw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102573326721403212997?hl=en",
+          "reviewerNumberOfReviews": 111,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Cindy Backman",
+          "rating": 4,
+          "text": "We ended up going here for dinner with some friends when the restaurant we originally wanted to go to had already closed for the night. Communal was just across the stress so we went to try it.  It's a lot more expensive than we were planning on.  The food was good and the atmosphere was cozy. I don't feel the food was worth the price though. If I'm paying $30-$40 for a dish,  and it doesn't include a side,  I expect the food to be really good. My favorite part of my meal was the salad. I would go back just to eat the salad and nothing else.",
+          "date": "2024-11-27T17:28:39.263Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNQazRIbnNnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXmHT1FF2fmKBcalj7kbLNd1MKyFhYOQomoAqXINGBpLStbDCe_AQ=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117361372255798377903?hl=en",
+          "reviewerNumberOfReviews": 194,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Amy Carlin",
+          "rating": 3,
+          "text": "Communal is very tasty, but the kitchen is slow and the service is not attentive. I’ve been here twice in the past month for work, and we always have to track down the single waiter to come take our order and bring our check. It usually takes at least half an hour between ordering and getting food. The food is good enough that we’ll probably go back, but the service has been disappointing. It’s also really loud in the main dining room.",
+          "date": "2024-11-19T22:55:52.828Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQzdDdhYnJRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUNgvDiOGyIIhhhRQR4WJaDPEAoJVg6BQLTx_C6JzS1cibRQQfB=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117909089851551460488?hl=en",
+          "reviewerNumberOfReviews": 70,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tasha H.",
+          "rating": 5,
+          "text": "Such awesome and modern food! We sat in the semi-private room with a large group and it was a great place to hang out, talk, and enjoy amazing food!",
+          "date": "2024-11-10T06:48:45.988Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUMzdC1QblV3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWsJU4pYn_dsGFpnl4Gw1deNQumFEYVQdVNcF4s1xQ-Omcc6Vo=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102514364991221817888?hl=en",
+          "reviewerNumberOfReviews": 48,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Waseem A",
+          "rating": 5,
+          "text": "",
+          "date": "2024-11-05T03:58:04.922Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUMzaHFmVFV3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUdpVVFFzdyZIJ1sIndQ7mCeBGzvzs_kFo2i3ycdwivpFhdOWmA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109878380705474820786?hl=en",
+          "reviewerNumberOfReviews": 37,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Marc de Schweinitz",
+          "rating": 5,
+          "text": "Exercise your right to relish in the finest dining in Utah County, and perhaps well beyond, by getting your aging keister down to Communal restaurant, PRONTO! The flavors, colors and temperatures will leave you wanting, and booking your subsequent dining extravaganza at this \"Rocky Mountain Wonder\" and \"Promenade\" of farm-to-face foodie fixations. If Armageddon wipes this gem off of the face of our planet before you've had the pleasure of dining here, you'll be left with regret, music unsung and poetry unread. It's that good.",
+          "date": "2024-11-03T02:57:10.856Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNpZ2IzeUxnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXlt7jPrMZYw1DnEi92xYUqzsyKLHw0fYs_VcDr3LF6EkXuq-Qgbw=s1920-c-rp-mo-ba7-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106572009712671477557?hl=en",
+          "reviewerNumberOfReviews": 182,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kristine B.",
+          "rating": 5,
+          "text": "The food was excellent and unique. We all enjoyed our brunch choices. Service was a little slower than I expected.",
+          "date": "2024-10-26T14:11:54.327Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURYLXFlbEtnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV5TGCD02BnZS8r7Ltnzg544LhTv6lYKtgcs2Kdz7FUqJyLEFrqiQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117985614765618695596?hl=en",
+          "reviewerNumberOfReviews": 23,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tyson W",
+          "rating": 5,
+          "text": "",
+          "date": "2024-10-16T19:41:25.352Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNYcnV1X3F3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKaIq8T3ADt9B0bp8ihy3Sziao-KyWaNMePsogWNY-8hIRW0Q=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101182379810938508736?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jennica B.",
+          "rating": 5,
+          "text": "We had the burger and pasta. Not a huge wait when we arrived but more people came in and they left due to the large wait time since their dining area is quite small and it filled fast.\nAnyways the food was great. Pasta sauce was flavorful and the burger was juicy. Fries were ok but would have been better paired with fry sauce rather than plain ole ketchup.\nOverall great place to eat, food is exceptional just be prepared for it to be crowded or come at a time of day that isn’t a rush hour for lunch or dinner.",
+          "date": "2024-10-12T22:50:00.319Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNYbUxLMzF3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV5tLB-ZeVlVpX3Ivs6ocuiw0W_M4BFWHzaw2xImANSCguir05T2g=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112011939063408078864?hl=en",
+          "reviewerNumberOfReviews": 51,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Terrence Whitton",
+          "rating": 1,
+          "text": "",
+          "date": "2024-10-11T13:12:30.964Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURual9tQjJRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVEEGxRKxnMvOyINBhe0RSKIcAW07X-_BoRpTHfsNuNW46C9h6O=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106954758315084753809?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Daniel Pino",
+          "rating": 5,
+          "text": "Communal\n\nLayout/atmosphere\n*Open kitchen; tables; small counter area; stained glass above entrance; few parking spots around the corner\n\nService\n*Food took a little extra time to prepare but it was worth it\n\nFood/drink\n*Sourdough Skillet Pancake (banana, walnut, maple miso cinnamon butter) - amazing; all the different flavors could be tasted; emphasis on the “cake” with regards to pancake but it absorbed all the toppings and wasn’t dried out\n*Funeral Potatoes Benedict (two poached eggs, potato rosti, mornay, chives, olive oil) - delicious; potato was one big, crispy hash brown; richness from the egg yolks and the mornay",
+          "date": "2024-10-10T04:09:17.886Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURueS1IdGNREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLGyM1jNJiGoiBYxepc-BM6eSPlELmo-0qx5511zxeYzdFzOw=s1920-c-rp-mo-ba7-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115473127409528133759?hl=en",
+          "reviewerNumberOfReviews": 2584,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Avery Van poormann",
+          "rating": 3,
+          "text": "Me and my mom placed a reservation at 5:00 and we walked in at 4:55 when we walked in all of the waiters just looked at us, didn’t even greet us, after a few minutes our waitress finally walked up to us and asked us how she could help us we told her we had reservation and we were seated. We were the first people in the restaurant and ordered our food before anyone else. We got our food after everyone else that walked in. Once we finally got our food the steak we ordered was burnt, it tasted like we were eating a grill and had no seasoning. Everything else we ordered was great and our waitress took the steak off of our order she was amazing.",
+          "date": "2024-10-06T04:08:56.087Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURuN3UtQjR3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLLprBzf0u3pkhw5N9zqLYt8ZAed1n19zezKzAAcbQXI0Um7g=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106882728412849795587?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "John David Dyche",
+          "rating": 5,
+          "text": "Wife, son & I had a wonderful Friday dinner at Communal. We didn’t have reservations, but one of the very friendly managers seated us at the bar top & said it was his favorite place. We loved it! Watching & chatting with the patient master chef as he expertly prepared several amazing dishes was great fun & very educational. Wife had the Tamarin Glazed Chicken but could not stop raving about the Roasted Carrots. Son devoured the delicious Watermelon starter & the formidable Pork Chop Schnitzel. I savored a trout special called Pescado Veracruz with very tasty Fried Garlic Rice. The Halibut also looked great. We were all too full, but the dessert menu looked fabulous. Great atmosphere & interesting art & decor. By no means inexpensive, but worth every penny.",
+          "date": "2024-09-29T23:35:54.810Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNueS1EQTFnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWrPBOy3dgjN-jiBgLkFa5TbcUh5FNOxJOxdjZdb7DWtvFdpdk=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101037794839042083534?hl=en",
+          "reviewerNumberOfReviews": 15,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Taylor Sadie",
+          "rating": 5,
+          "text": "I believe I would’ve given 5 stars if we dined in! We grabbed to go for a picnic close by. It was ready as soon as we walked in. Flavors were all there, just wish the breakfast bao had more chili sauce. I payed $5 for a can of cherry limeade. I was anticipating a full drink with ice and maybe a fresh lime slice in a togo cup. It’s a can, but seemed to be a great, local company! Just helpful to know. Will definitely be back in person! The interior was stunning!! 😊",
+          "date": "2024-09-29T17:32:17.490Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNuczZPeFZBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUAiQWKRRlx3lZz6c8J4ZCPD0QRuXb3n5XhDNwuYQh9gXwzjx-RqQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112647503588849501851?hl=en",
+          "reviewerNumberOfReviews": 29,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Melissa Cerda",
+          "rating": 4,
+          "text": "Food was delicious! We had the tamarind chicken, steak, mashed potatoes, almond butter cake and some margaritas and tequila amarga drinks. All were absolutely delicious! Service was a bit slow, but the waiters were super nice and welcoming. Definitely would come back if I'm ever in Provo again!",
+          "date": "2024-09-27T04:24:17.814Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNuMGJiZmNnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWU0X6xUx22fpqy77QjaoKjTuM5fy2PZ5u5F5-6qxnnXnlR8Wnd=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107874806744404648909?hl=en",
+          "reviewerNumberOfReviews": 49,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Samuel Anderson",
+          "rating": 1,
+          "text": "My close friends brought me here because of the reviews and food. However, the food was disappointing all the way. Too much basil on everything. It was overrated and all tasted the same. On top of the experience, I wore my 40-year-old vintage custom-made suede jacket. I placed the coat on the chair next to me and draped it over the chair in plain site. The waiter was very good, but he came over to check on our food and happened to lean on the chair gripping my coat. His hands were very wet and I mentioned to him he was touching my jacket and his hands were wet. He apologized and said it was water. I responded, \"No, it's not! It's oil.\" It was oil and my jacket was stained and turned green. I contacted the restaurant to inform them and they never returned my calls or messages. This is unacceptable.",
+          "date": "2024-09-20T02:03:45.329Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURIcTRHSUpnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWP6VkAZuELveJxzqbdRVqqlmWCleJ9UAVYFHXUGFvAG0Zg1cunvw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114160917295447824761?hl=en",
+          "reviewerNumberOfReviews": 90,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Marti Hurtado",
+          "rating": 5,
+          "text": "",
+          "date": "2024-09-15T15:33:59.498Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURIbHRYWVRBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWdXrWEzcW_L34v2qyUbpICFTNV0P8nxFr9ylJQzaXJCKqwzv34=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105349388174956898776?hl=en",
+          "reviewerNumberOfReviews": 77,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Hannah",
+          "rating": 5,
+          "text": "Loved sitting at the bar watching the chefs grill and plate. Was too eager to eat to take pics but everything was so tasty and aesthetically pleasing. I really appreciated the beautiful use of herbs and garnishes as well as the plating (ie chili threads and fennel threads). My fav dish was the pork belly appetizer (melt in your mouth and charred with the vinegar/pickled topping) and the cornnn (miso butter and togarashi seasoning). Our server made my spicy skinny marg perfectly- with a salt rim and sliced Serranos :)",
+          "date": "2024-09-08T09:53:41.782Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNIby1mLW53RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJj4HN6OoBnxbSRyHCOsVZuJNQz-dHriFK1CZIRU3vF0Xu2Dg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118287179215475943269?hl=en",
+          "reviewerNumberOfReviews": 90,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Rick Nieforth",
+          "rating": 5,
+          "text": "Excellent food!",
+          "date": "2024-09-06T05:11:57.069Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNIaWJ6bUp3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJo5GK50_nAg9ymzb6XDUlJYpvo6wJr0updGAwr_0qlDvwJaw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117313015926785134551?hl=en",
+          "reviewerNumberOfReviews": 50,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Garrett Thompson",
+          "rating": 2,
+          "text": "I’m deeply disappointed with my recent visit to this restaurant. The quality of the food has significantly declined. The chicken was underwhelming, as if it was just raw meat with a sprinkle of seasoning—brining could have made a world of difference. The pasta was clearly not fresh, and the ‘funeral’ potatoes were a complete letdown. They need to go find a local grandma who knows how to make them properly, full of flavor and comfort. Without the sauce, they were flavorless and dull. The mashed potatoes were even worse, lacking the creamy texture and taste you’d expect. For an $80 meal, I expected much more passion, care, and respect for the craft. Where’s the love for good food? The fact that the restaurant was nearly empty on a Wednesday night speaks volumes about the current state of this place. Sadly, it seems to have lost its former charm. The worst part? Forcing ourselves to finish it, just to avoid wasting food and to get our calories in. Where’s the passion? Where’s the respect?",
+          "date": "2024-09-04T00:43:25.025Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNIMnUtbVBnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWZ2NmxQIwIgpHVLwNGxRbJfNn1TfTD738oxS4o4PK-UAPnqARJ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109609992639102938816?hl=en",
+          "reviewerNumberOfReviews": 40,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Chris Layton",
+          "rating": 5,
+          "text": "Absolutely loved everything about this restaurant! Amazing food and Kai was Awesome! I will come here again!",
+          "date": "2024-09-02T17:35:32.624Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNIZ3FiQlRnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV5CJ6oXZFOGYaqVCZYAuaU14GMdm4FCZ8Z2hds9vADfP9yYLxwDA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108118489680597504982?hl=en",
+          "reviewerNumberOfReviews": 76,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Katie Seaman",
+          "rating": 5,
+          "text": "",
+          "date": "2024-08-31T22:12:28.069Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNIMk8yQkJBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV0qYtIdDQ5P3KjziifuzDQzUWyAPORNyT0S1lCSgQhmZrA8zo=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102695328138022376212?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mauricio Felix",
+          "rating": 5,
+          "text": "Great food, Great experience. Kitchen does close 30 minutes before closing.",
+          "date": "2024-08-31T21:06:14.041Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNIMk9MQUdREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLkZ7Pwx6u5assCtwzZCkWzrbvcag4K6_kdGNkHpgLkN_ljZg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112386697006991748010?hl=en",
+          "reviewerNumberOfReviews": 49,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kathryn Smith",
+          "rating": 3,
+          "text": "After 3-4 disappointing experiences, I think I’m done giving communal another chance. For the prices their food should be consistently excellent. This time I ordered the house pasta, which for $30 was a very tiny portion, but it was pretty good. And I ordered the basque cheesecake, which was severely burned over the entire top. I know that basque cheesecake is supposed to be toasted on top. But this was black and burned about 1/4 inch down (see photos to compare to an actual basque cheesecake). Even when I scraped off the burned layer, the rest of the cake was so over baked it was rubbery and not enjoyable. I didn’t eat it. I called to ask for a refund and they repeatedly told me that’s exactly how it was supposed to be but that they would give me the refund. The tone was annoyed and condescending, not at all willing to admit that they’d burned the cake and talking to me like I’m just too ignorant to know if what I’m eating is good or not. I am sure basque cheesecake is delicious when done correctly. This was not. My experience has been similar about 50% of the time I’ve eaten here. The kinds of mistakes you just shouldn’t have to put up with when you’re paying this much (over baked, under cooked, arriving cold at the table, too salty, etc.). The menu is ambitious but the execution is just so often not there. I guess I keep trying because there are not that many menus like this in Utah County. But I’m tired of paying this much and not getting a fine dining experience.",
+          "date": "2024-08-28T00:26:49.720Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQ3bzgtOGd3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUGheiTwhg2WvFg9WMRhyVn6gg30LIzRaNbVEvgZJV4hYp5dLMz=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103850220882609791066?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dan",
+          "rating": 5,
+          "text": "From the phone call to check on availability to the payment of the bill, everything at communal was top-notch! Everything we ate was prepared with thought and care and the staff was knowledgeable and accommodating to dietary restrictions. If it's still there when you go, try the corn with the miso butter and the pot de creme for dessert! Will definitely be back.",
+          "date": "2024-08-23T15:29:10.696Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQ3MnFmV2pBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVGZuzUMSNNpP9PK8TQu0Li4eWFCNWNUXmkZyjA8kXZNS-Wkv4D=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105937783229240020876?hl=en",
+          "reviewerNumberOfReviews": 111,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Artie Rod",
+          "rating": 5,
+          "text": "Charcuterie  n  dessert was to die for!!!  Artie from Texas!",
+          "date": "2024-08-20T03:55:58.926Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQ3b05XVEJREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX8Xi3ligvsegWban8Osm6zeJpBm22GgKaQcvNQiFSnoTsHQFCT5Q=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117111473545271479732?hl=en",
+          "reviewerNumberOfReviews": 143,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Melanie Squires",
+          "rating": 1,
+          "text": "Huge disappointment!! We reserved a table for 4 & were dismissed from the table after 90 minutes. They needed the table for the next party. We ordered appetizers, entrees & desserts & waited on all the courses. Cost for 4 was over $230 without drinks. Small portions, tough steak for $50, burned veggies, overcooked potatoes. If you want high end customers treat them with respect & decent food. We won't return.",
+          "date": "2024-08-18T18:41:48.229Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUM3NS1HNXh3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJry8Cd5PGrEiE9GZzVc1yQukWlUSTgr-ETlTSL6FiTGlrszw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114853620286054303561?hl=en",
+          "reviewerNumberOfReviews": 54,
+          "sentiment": "negative"
+        },
+        {
+          "author": "J. G.",
+          "rating": 5,
+          "text": "Recently visited Provo and had to return to Communal, the first time was one of my best meals ever.  Walked a mile in the rain to pick up my order, an assortment of their amazing side dishes…it was well worth it.",
+          "date": "2024-08-15T00:20:03.181Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUM3NnRlNXN3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLm6kEi-xbQMJtue_OFbgYaYRi2891d385mXq49b_8j0Nn2Uw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117433856566739247171?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kawika Heftel",
+          "rating": 5,
+          "text": "Always sooooo tasty!! This time they had an amazing pork belly sandwich and a burger to die for!",
+          "date": "2024-08-06T16:52:02.594Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURiOGFtalZBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWukCE4gU1xgO4uPJLOdoTpCOgMuUA-tunxDxwNkdhT9kvpWSc82A=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113219231330006528002?hl=en",
+          "reviewerNumberOfReviews": 196,
+          "sentiment": "positive"
+        },
+        {
+          "author": "James Riegel",
+          "rating": 5,
+          "text": "Amazing some of the best food Ive had, professional and non assuming service. Definitely recommend.",
+          "date": "2024-08-02T22:34:22.497Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURiN1BfVXVBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLA61OyJpS5RANj7ssJ6LpQ4NM0reDORoPSc8oemVf8wntM3ijt=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104191745795345807450?hl=en",
+          "reviewerNumberOfReviews": 48,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Malary Bartholomew",
+          "rating": 5,
+          "text": "Everything was very tasty and lovingly prepared. I really enjoyed the tea",
+          "date": "2024-07-24T18:40:50.418Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNiX0pHZHJRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKfuMfGV6bBVOQXwVEqyIwcAW813gm619MOMTkL7C6Vv-2QvQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108099011618149177159?hl=en",
+          "reviewerNumberOfReviews": 40,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mia’s Liechty",
+          "rating": 5,
+          "text": "This restaurant is incredible! Every single bite of the food here was absolutely delicious. I can’t wait to go back!",
+          "date": "2024-07-22T19:12:13.579Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNieUlQZ0NREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKk9aRUvjffs-aGGKufkZ5VqjAlyCKeI9G5ks2BEFq2mYE2RA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109891096032550380330?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        }
+      ],
+      "customerMoodAnalysis": {
+        "overallMood": "satisfied",
+        "sentimentSummary": "Customers have positive experiences overall. Your 4.3/5 rating from 100 recent reviews shows solid satisfaction with room for growth.",
+        "sentimentDistribution": {
+          "ecstatic": 23,
+          "delighted": 49,
+          "satisfied": 17,
+          "neutral": 0,
+          "frustrated": 4,
+          "disappointed": 5,
+          "angry": 2
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "food quality",
+            "mentions": 59
+          },
+          {
+            "theme": "atmosphere",
+            "mentions": 29
+          },
+          {
+            "theme": "slow service",
+            "mentions": 27
+          },
+          {
+            "theme": "service excellence",
+            "mentions": 19
+          },
+          {
+            "theme": "overpriced",
+            "mentions": 8
+          },
+          {
+            "theme": "food issues",
+            "mentions": 8
+          },
+          {
+            "theme": "speed of service",
+            "mentions": 5
+          },
+          {
+            "theme": "value for money",
+            "mentions": 2
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 50,
+          "satisfaction": 73,
+          "disappointment": 5,
+          "frustration": 1,
+          "anger": 0
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "The restaurant offers a stylish, cozy ambiance that feels like a living room, with decor featuring natural woods, greenery, and modern simplicity, creating a relaxed and sophisticated vibe. - social media marketing can showcase this strength",
+            "The menu features creative, seasonally-driven dishes that are thoughtfully plated and pair beautifully with a curated wine list, providing an upscale dining experience. - SEO services can leverage this for better visibility",
+            "The service is consistently top-tier, with friendly and knowledgeable staff enhancing the overall dining experience. - review management can highlight this positive aspect"
+          ],
+          "improvementOpportunities": [
+            "Inconsistent food quality and preparation issues (e.g., burnt taste, overly salty dishes) - review management can address this concern",
+            "Feeling rushed and poor customer service experiences (e.g., being asked to leave quickly, unfriendly staff) - social media marketing can improve this area",
+            "High prices not matching food quality or experience - Boostly marketing services can improve this"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 100,
+          "averageRating": 4.3,
+          "ratingDistribution": {
+            "1": 7,
+            "2": 4,
+            "3": 7,
+            "4": 14,
+            "5": 68
+          },
+          "sentimentTrends": {
+            "trend": "improving",
+            "recentAverageRating": 4.8,
+            "previousAverageRating": 4.3,
+            "recentReviewsCount": 10
+          }
+        }
+      },
+      "examples": {
+        "positive": [
+          {
+            "author": "Nancy Champagne",
+            "rating": 5,
+            "text": "What a sweet, unique and innovative restaurant!  The staff was friendly and very knowledgeable, and the food was wonderful and creative.  The beet salad was excellent, the pork tenderloin and pork chop combo was super tasty, spicy and interesting.  The only complaint is that can get quite loud in there, but several large parties definitely added to the noise level.  Great find!",
+            "date": "2025-09-10T16:23:11.947Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pWWFEzaFJYMDVIUlZKV1RUVXhkV3BNVUdjNFZGRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWwUbL_Pl3_h6qMy0LbzzBH7MjAAwTyJhFzMrQTzlio6IuOimKiQg=s1920-c-rp-mo-ba4-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/109401815986198923493?hl=en",
+            "reviewerNumberOfReviews": 79
+          },
+          {
+            "author": "Jay Patel",
+            "rating": 5,
+            "text": "",
+            "date": "2025-09-09T01:08:44.713Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25wYWNGOUhNbGRoVVd4U2FUWktXVUpwWkZGcFlYYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXRCXfMP1tFTRQ0zG5ebJUPHaATFM-3vmmu2UYtuT2EwQHC7kXI=s1920-c-rp-mo-ba4-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/102098436261018303075?hl=en",
+            "reviewerNumberOfReviews": 137
+          },
+          {
+            "author": "Spencer Anderson",
+            "rating": 4,
+            "text": "Overall, I’ve had some of the best food I’ve ever had here. However, on another occasion (when they changed their menu), I had some of the worst food for the price.\n\nThe menu items are quite expensive, so due to the second experience not living up to the first, I’m unlikely to return.",
+            "date": "2025-09-08T03:57:53.347Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25WNFpFOVRkMk42TTNkNExWUjFaRmxrYlU4NWNWRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJtrcYuYvcdzCwu5XkFa5MmJ8fZDdCxM86nj7ovZyl-egTz7j0M=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/105578048935411771978?hl=en",
+            "reviewerNumberOfReviews": 13
+          }
+        ],
+        "neutral": [
+          {
+            "author": "Alan Gonzalez",
+            "rating": 3,
+            "text": "I had big expectations for this restaurant and was left a little disappointed. Now I have to say every item including our wine was 5 stars but when it came to the steaks it was disappointing. Now they were cooked to the exact temperature but unfortunately they were cooked on a dirty grill which gave them a burnt taste. Next time I will ask for them to properly scrap the grill in between cookings and maybe oil the grill. I only say these thing as I am 20 + veteran of the fine dining restaurant business and a classically trained chef. So will I go back? Yes but I may not order the steak and for sure will not order the $150 Tomahawk if I dont speak with the chef first. I hope this criticism will be taken positively.",
+            "date": "2025-08-13T01:36:36.260Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pGWlgydFphMjlSYzNRdE1EZEZhMEZsZEdWQ05sRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJCd7lqXjGgVMEmVwlou3eK39_P8co6AFcpAA4w_js7ubP_NQ=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/101643179407622467767?hl=en",
+            "reviewerNumberOfReviews": 12
+          },
+          {
+            "author": "Yolanda Hue",
+            "rating": 3,
+            "text": "We were very excited to come here to dine. We had gotten our reservation time wrong. I called to let the restaurant know we were on our way. They informed us that there was another party booked. The restaurant suggested we look over the menu and order asap when we arrived. The waiter was not very friendly. More of a passive aggressive attitude. He brought over a dessert menu letting us know we had about 20/25 mins left at our table. There was another party coming in. We looked around  the dining room and noticed other tables leaving and 2 more empty 4 top tables. We are not sure why they were rushing us when it was obvious that there were open tables for the guests arriving. I feel the hostess and in house staff could’ve been less pushy and could’ve avoided rushing us. After we left we walked around the area and came back to our cars parked in front of the restaurant and guess what??? There were several empty tables that no one was sitting or had reservations. I feel the restaurant did a poor job on customer service. The food was fantastic. Restaurant staff I would rethink how you approach these situations. Never rush the customer if you have ways to juggle your tables.",
+            "date": "2025-08-05T12:48:33.895Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25wb09IaHpiVTFUUkU4MllrVklkWFowVWxCb1lrRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW2tZalPynbtVHbZ8P8Ai8tC9pahm5RRXDdLHwElQ4Po6W99HQ=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/112106865696162307729?hl=en",
+            "reviewerNumberOfReviews": 13
+          },
+          {
+            "author": "Robert A",
+            "rating": 3,
+            "text": "My dish was over cooked.  Prices could be better.  Small but cozy.",
+            "date": "2025-07-07T20:51:46.048Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pFNWIzVk5YME5KZDFSU1dWbFdZbVZvZGs5ZmQyYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWBeYLoBxiAhij5IrKX1JKKNuyynXO5J223HlDUqSxulwtZNbs_AA=s1920-c-rp-mo-ba5-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/101215156415503842404?hl=en",
+            "reviewerNumberOfReviews": 201
+          }
+        ],
+        "negative": [
+          {
+            "author": "Ivan Collier",
+            "rating": 2,
+            "text": "Came here twice for special occasions, and after two visits I won't be back. The menu changed between our two visits, but on our second visit we had a whipped feta and honey starter topped with walnuts and roasted grapes that came with a bread, which was the highlight of the entire meal. After that, we had garlic mashed potatoes and teriyaki eggplant, which were both unbearably salty to the point that we ate less than half. Finally, we shared the steak frites, which, while cooked medium rare internally, was almost burnt on the outside and was also overly salty. We had a similar experience on our first visit, except we ordered lamb as our main, and while my wife's lamb was cooked correctly, mine was so well done that I was physically unable to cut it with my knife. On top of that, our waiter never checked on us after delivering the lamb, so I never had the chance to ask for a new one. Considering the price tag of these meals, they should be able to know how much salt to put on food and their should definitely know how to cook their meat. Overall, the dining experience here is inconsistent and not worth the price.",
+            "date": "2025-07-26T22:52:52.271Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURoM0pERjFnRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVruxN4l40au-HicQfVWdh32TKDMipnccr8M0lRu_xW1V3Li25B=s1920-c-rp-mo-ba4-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/106918019428793231128?hl=en",
+            "reviewerNumberOfReviews": 46
+          },
+          {
+            "author": "Katelyn Yierle",
+            "rating": 1,
+            "text": "If you're hungry, this isn't the place to visit. That's fine.Then her made us wait 5 more minutes as he dried glasses. We walked in and the person we saw first, we asked if we can sit anywhere-The place was pretty empty for a Saturday evening.  Needless to say, we lost whatever appetite was left.",
+            "date": "2025-07-15T23:03:18.538Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xFMlZqSnVjVzVDTlRkTWMzcExiVVJvWm1neGEzYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIFyoaSwv3btJGTLpKoLoPVo3TxHYBQQiLtNuuQ0cfwowO-uA=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/118390307505019415518?hl=en",
+            "reviewerNumberOfReviews": 2
+          },
+          {
+            "author": "Malia K (MaliaK)",
+            "rating": 2,
+            "text": "LOVED the “feel” of this space, keeping the original bones of the building and adding modern updates.  The CHARM of the place still shines through.\nWish, however, that the FOOD was equally as charming.  I looked forward to having Brunch and upon the servers suggestion, tried their shrimp and grits, adding an over easy egg in addition, again at the servers strong recommendation.  Thank goodness I did because that egg was literally the only saving grace for this dish.   The grits were formed into these triangular, hash brown-like pieces and while I understand the thought behind it, they barely resembled grits.   It just seemed like one big crunchy mass with no real flavor.  And then it was topped with an odd sauce consisting of tomato sauce, a vinegar like aioli and something very bitter and burnt.  The shrimp was delicious but lumped in between all of this chaos, it was a confusing dish to eat.  I was grateful for the silkiness of the egg - it was the only recognizable item on the plate and I needed it to push through the meal.\nThe restaurant has a very upscale and understated classiness about it, which is very appealing.  It LOOKS like a place where you would expect a really special experience.   I, however, left feeling very disappointed.   I do not foresee a return in the future.",
+            "date": "2025-04-25T19:12:08.486Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURvNGFTYWJREAE",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJMVClTxLz2r6OVVHYMNrSMzCytH6BBBppTTmk07BOexkJq-g=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/117341672460087354044?hl=en",
+            "reviewerNumberOfReviews": 39
+          }
+        ]
+      },
+      "trends": {
+        "ratingTrend": "improving",
+        "volumeTrend": "stable",
+        "responseRate": 0,
+        "averageResponseTime": "No responses"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ]
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/communal",
+      "instagram": "https://www.instagram.com/communal",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 58,
+      "social": 100,
+      "local": 54,
+      "reviews": 91,
+      "overall": 76
+    },
+    "originalScores": {
+      "seo": 70,
+      "overallScore": 63,
+      "performance": 60,
+      "userExperience": 60
+    },
+    "migratedAt": "2025-09-16T00:37:21.704Z"
+  },
+  "metadata": {
+    "cachedAt": "2025-09-15T22:30:50.868Z",
+    "expiresAt": "2025-10-15T22:30:50.868Z",
+    "placeId": "ChIJwa39R1OXTYcRYgQ30IZqY3Y",
+    "restaurantName": "Communal",
+    "cacheVersion": "2.0.0"
+  }
+}

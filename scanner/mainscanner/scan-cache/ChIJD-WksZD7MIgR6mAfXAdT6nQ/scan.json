@@ -1,0 +1,2726 @@
+{
+  "data": {
+    "domain": "urbancle.com",
+    "restaurantName": "Urban Kitchen & Deli",
+    "placeId": "ChIJD-WksZD7MIgR6mAfXAdT6nQ",
+    "overallScore": 77,
+    "performance": 100,
+    "seo": 61,
+    "mobile": 58,
+    "userExperience": 94,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "sandwich near me",
+        "position": 4,
+        "searchVolume": 4400,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.urbancle.com/",
+        "title": "Urban Kitchen & Deli - Cleveland",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "sandwich delivery Cleveland",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best sandwich Cleveland",
+        "position": 0,
+        "searchVolume": 320,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "sandwich",
+        "position": 0,
+        "searchVolume": 1900,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "sandwich places near me",
+        "position": 9,
+        "searchVolume": 260,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.urbancle.com/",
+        "title": "Urban Kitchen & Deli - Cleveland",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "sandwich Cleveland Ohio",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "sandwich delivery near me",
+        "position": 0,
+        "searchVolume": 30,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "sandwich open now",
+        "position": 5,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.urbancle.com/",
+        "title": "Urban Kitchen & Deli",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 0,
+        "keywords_appeared": 0,
+        "total_keywords": 8,
+        "average_position": 0,
+        "best_position": 0
+      },
+      "keyword_results": [
+        {
+          "keyword": "sandwich near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Jimmy John's",
+              "address": "836 West Saint Clair Avenue ",
+              "website": "",
+              "rating": 2.9,
+              "reviews": 245
+            },
+            {
+              "position": 2,
+              "name": "Dave's Cosmic Subs",
+              "address": "22591 Lorain Road ",
+              "website": "",
+              "rating": 4.8,
+              "reviews": 23
+            },
+            {
+              "position": 3,
+              "name": "Dave's Cosmic Subs",
+              "address": "Cleveland, OH ",
+              "website": "https://www.davescosmicsubs.com/",
+              "rating": 4.6,
+              "reviews": 213
+            }
+          ]
+        },
+        {
+          "keyword": "sandwich",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "West 3rd Deli",
+              "address": "Cleveland, OH ",
+              "website": "http://www.westthirddeli.com/",
+              "rating": 4.6,
+              "reviews": 190
+            },
+            {
+              "position": 2,
+              "name": "Little Cloud",
+              "address": "Cleveland, OH ",
+              "website": "",
+              "rating": 4.5,
+              "reviews": 55
+            },
+            {
+              "position": 3,
+              "name": "Tost - a sandwich cafe",
+              "address": "Cleveland, OH ",
+              "website": "http://www.tostsandwichcafe.com/",
+              "rating": 4.6,
+              "reviews": 79
+            }
+          ]
+        },
+        {
+          "keyword": "best sandwich Cleveland",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Slyman's Restaurant and Deli",
+              "address": "Cleveland, OH ",
+              "website": "https://www.slymans.com/",
+              "rating": 4.7,
+              "reviews": 4000
+            },
+            {
+              "position": 2,
+              "name": "Herb'n Twine Sandwich Co.",
+              "address": "Cleveland, OH ",
+              "website": "http://www.herbntwine.com/",
+              "rating": 4.6,
+              "reviews": 504
+            },
+            {
+              "position": 3,
+              "name": "Larder Delicatessen and Bakery",
+              "address": "Cleveland, OH ",
+              "website": "https://larderdb.com/",
+              "rating": 4.6,
+              "reviews": 665
+            }
+          ]
+        },
+        {
+          "keyword": "sandwich delivery near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Little Cloud",
+              "address": "Cleveland, OH ",
+              "website": "",
+              "rating": 4.5,
+              "reviews": 55
+            },
+            {
+              "position": 2,
+              "name": "West 3rd Deli",
+              "address": "Cleveland, OH ",
+              "website": "http://www.westthirddeli.com/",
+              "rating": 4.6,
+              "reviews": 190
+            },
+            {
+              "position": 3,
+              "name": "Tost - a sandwich cafe",
+              "address": "Cleveland, OH ",
+              "website": "http://www.tostsandwichcafe.com/",
+              "rating": 4.6,
+              "reviews": 79
+            }
+          ]
+        },
+        {
+          "keyword": "sandwich Cleveland Ohio",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Slyman's Restaurant and Deli",
+              "address": "Cleveland, OH ",
+              "website": "https://www.slymans.com/",
+              "rating": 4.7,
+              "reviews": 4000
+            },
+            {
+              "position": 2,
+              "name": "West 3rd Deli",
+              "address": "Cleveland, OH ",
+              "website": "http://www.westthirddeli.com/",
+              "rating": 4.6,
+              "reviews": 190
+            },
+            {
+              "position": 3,
+              "name": "Little Cloud",
+              "address": "Cleveland, OH ",
+              "website": "",
+              "rating": 4.5,
+              "reviews": 55
+            }
+          ]
+        },
+        {
+          "keyword": "top sandwich Cleveland",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Herb'n Twine Sandwich Co.",
+              "address": "Cleveland, OH ",
+              "website": "http://www.herbntwine.com/",
+              "rating": 4.6,
+              "reviews": 504
+            },
+            {
+              "position": 2,
+              "name": "Slyman's Restaurant and Deli",
+              "address": "Cleveland, OH ",
+              "website": "https://www.slymans.com/",
+              "rating": 4.7,
+              "reviews": 4000
+            },
+            {
+              "position": 3,
+              "name": "Larder Delicatessen and Bakery",
+              "address": "Cleveland, OH ",
+              "website": "https://larderdb.com/",
+              "rating": 4.6,
+              "reviews": 665
+            }
+          ]
+        },
+        {
+          "keyword": "sandwich restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "West 3rd Deli",
+              "address": "Cleveland, OH ",
+              "website": "http://www.westthirddeli.com/",
+              "rating": 4.6,
+              "reviews": 190
+            },
+            {
+              "position": 2,
+              "name": "Little Cloud",
+              "address": "Cleveland, OH ",
+              "website": "",
+              "rating": 4.5,
+              "reviews": 55
+            },
+            {
+              "position": 3,
+              "name": "Tost - a sandwich cafe",
+              "address": "Cleveland, OH ",
+              "website": "http://www.tostsandwichcafe.com/",
+              "rating": 4.6,
+              "reviews": 79
+            }
+          ]
+        },
+        {
+          "keyword": "sandwich food Cleveland",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Little Cloud",
+              "address": "Cleveland, OH ",
+              "website": "",
+              "rating": 4.5,
+              "reviews": 55
+            },
+            {
+              "position": 2,
+              "name": "West 3rd Deli",
+              "address": "Cleveland, OH ",
+              "website": "http://www.westthirddeli.com/",
+              "rating": 4.6,
+              "reviews": 190
+            },
+            {
+              "position": 3,
+              "name": "Tost - a sandwich cafe",
+              "address": "Cleveland, OH ",
+              "website": "http://www.tostsandwichcafe.com/",
+              "rating": 4.6,
+              "reviews": 79
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"sandwich near me\", \"sandwich\", \"best sandwich Cleveland\", \"sandwich delivery near me\", \"sandwich Cleveland Ohio\", \"top sandwich Cleveland\", \"sandwich restaurant near me\", \"sandwich food Cleveland\" - optimize Google My Business profile with these keywords",
+        "Low Local Pack visibility (0%) - audit your Google My Business completeness, categories, and local citations"
+      ],
+      "scan_metadata": {
+        "location": "Cleveland,Ohio,United States",
+        "timestamp": "2025-09-15T17:17:09.594Z",
+        "total_scan_time_ms": 28824
+      }
+    },
+    "competitors": [
+      {
+        "name": "Blue Point Grille",
+        "domain": "bluepointgrille.com",
+        "performance": 92,
+        "seo": 83,
+        "accessibility": 78,
+        "bestPractices": 87,
+        "overallScore": 85,
+        "rating": 4.6,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1382,
+        "keywords": 34,
+        "domainAuthority": 79,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 776
+      },
+      {
+        "name": "Cordelia",
+        "domain": "cordelia.com",
+        "performance": 94,
+        "seo": 85,
+        "accessibility": 80,
+        "bestPractices": 89,
+        "overallScore": 87,
+        "rating": 4.7,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 508,
+        "keywords": 46,
+        "domainAuthority": 80,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+50 keywords",
+        "authorityGap": 2,
+        "backlinks": 1151
+      },
+      {
+        "name": "Casa La Luna",
+        "domain": "casalaluna.com",
+        "performance": 92,
+        "seo": 83,
+        "accessibility": 78,
+        "bestPractices": 87,
+        "overallScore": 85,
+        "rating": 4.6,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1197,
+        "keywords": 45,
+        "domainAuthority": 74,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 1180
+      },
+      {
+        "name": "The South Side",
+        "domain": "thesouthside.com",
+        "performance": 86,
+        "seo": 77,
+        "accessibility": 73,
+        "bestPractices": 82,
+        "overallScore": 80,
+        "rating": 4.3,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1350,
+        "keywords": 24,
+        "domainAuthority": 66,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 1035
+      },
+      {
+        "name": "Butcher and the Brewer",
+        "domain": "butcherandthebrewer.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 858,
+        "keywords": 25,
+        "domainAuthority": 72,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 940
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 76,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-15T17:18:00.829Z",
+    "businessProfile": {
+      "name": "Urban Kitchen & Deli",
+      "address": "9751 Chester Ave, Cleveland, OH 44106, USA",
+      "rating": 4.6,
+      "reviewCount": 1757,
+      "phoneNumber": "(216) 471-8956",
+      "website": "https://urbancle.com/",
+      "formatted_address": "9751 Chester Ave, Cleveland, OH 44106, USA",
+      "address_components": [
+        {
+          "long_name": "9751",
+          "short_name": "9751",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Chester Avenue",
+          "short_name": "Chester Ave",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Hough",
+          "short_name": "Hough",
+          "types": [
+            "neighborhood",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Cleveland",
+          "short_name": "Cleveland",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Cuyahoga County",
+          "short_name": "Cuyahoga County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Ohio",
+          "short_name": "OH",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "44106",
+          "short_name": "44106",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "state": "Ohio",
+      "city": "Cleveland",
+      "place_id": "ChIJD-WksZD7MIgR6mAfXAdT6nQ",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "reviews": [
+        {
+          "author_name": "Trey Meadows",
+          "author_url": "https://www.google.com/maps/contrib/108078919465359321003/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUWS9r6jyW_WwGUgSy6O3VbK0DSW5JMnBRA8ZS7kesWme3022W6Ng=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 2,
+          "relative_time_description": "2 weeks ago",
+          "text": "Potential, without skill. This restaurant seemed so exciting when we first arrived, but we were sat at a dirty table, and left without menus, or even a greeting for half an hour. It took an additional 15 minutes to bring a coffee and a juice, and an additional 45 minutes for our food to arrive. We had four tables around get up and leave while arguing with the owner.\n\nI was excited once it finally came, having decided to stick it out in hopes it would be worth it all, but was horribly disappointed at cold food that had been dying in the window.\n\nI do not recommend at this time.",
+          "time": 1756580629,
+          "translated": false
+        },
+        {
+          "author_name": "Arhum",
+          "author_url": "https://www.google.com/maps/contrib/109760964901898200931/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLXMJGGQsodqmaCCa6wZSG6jOiVT0e7tGdDzJhpfacPhMW7pg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "2 weeks ago",
+          "text": "We absolutely loved our experience here. The staff was great and the food was fantastic. We absolutely enjoyed our experience here and would highly recommend it. From the pastas to the sandwiches to the lemonade.\n\nThe buffalo chicken flatbread, the pasta and the half chicken with a side of the lemonade is what I would recommend. My burger did have a hard bread - it was extra toasted but the rest of the burger was solid. The server took a while to take our order as well but might have just been overwhelmed by orders.",
+          "time": 1756745180,
+          "translated": false
+        },
+        {
+          "author_name": "Audi Shake",
+          "author_url": "https://www.google.com/maps/contrib/112166685290192106712/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU3Vl7il4TVxHHI-2nnUK-IS2gs_RYn30l-8jQOPMhHRHrMExke-w=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "3 months ago",
+          "text": "Fast, friendly and wonderful food. Upbeat atmosphere and clean.\n\nWe had the gyro, beef shawarma wrap and the chicken sandwich. All had unique flavors and were carefully prepared. We shared baklava and the bread pudding and they were stunning. Everything was made on the premises. We live 4 hours away, but we will come back!",
+          "time": 1749923908,
+          "translated": false
+        },
+        {
+          "author_name": "Nadya Rodriguez",
+          "author_url": "https://www.google.com/maps/contrib/104524129981627097205/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVzFrrL7XeORzwfRtPIKq1h8ptYJRA8CMtNH4rSQi0qsrHtJV4lHw=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "We went in after checking the website and seeing the beautiful breakfast options. Unfortunately, the only negative thing I have to say is, that breakfast is not served all day. We stayed for lunch and the servings were huge for the prices. I had a mango lemonade and it was delicious. The staff is friendly and the restaurant is very clean. They serve halal, and vegan/vegetarian options. I would come back again to try their breakfast. Oh, they also have baklava and cake selections.",
+          "time": 1745722684,
+          "translated": false
+        },
+        {
+          "author_name": "Brian Evans",
+          "author_url": "https://www.google.com/maps/contrib/104380675640107803238/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLa5BS1WdUUofgnbJ45xjBilUFH5301pzoz6ab9i5GIt2iINw=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Thrilled to find this spot on the same block as the hotel I was staying at while in town visiting Cleveland Clinic.\n\nGreat service and great food. Got a customized omelette that was phenomenal. Lots of veggies and protein options available. I really liked the gyro meat I got in mine.\n\nThey also have a variety of Egyptian menu options that I'd love to try.\n\nWord of caution, this restaurant is halal so there is no pork. Instead they offer turkey sausage and turkey bacon which were both tasty.",
+          "time": 1750255743,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115799834146276197769\">Urban Kitchen &amp; Deli</a>"
+          ],
+          "photo_reference": "ATKogpfERv6NT2DBRmwd4GIbF5o0_b1hyrJD-sjCwH86lpv1Gp6uESyx0ym5jZcCnsTKgytIZz3NZ8c4J1daKgbPGmUcCK7bf5zXRlyXXY3WJVMvetMHtAN26cbqYDdSmV3SNlMgTaEAoFtESbqzewyTtYlm9ZrvNYh3YGpziGTPvDfAmHrVbom4WBpWFsclWbmCVyOd3qxPGHWwa9y_Iw4cXdLGuZUe5t1ZluYygHNhNu69_q0IZ6kGUO_m5wZD2PRxXwx0PhF0-ROn0hWB1vGVmw4oxc7cwB42LvF6sppurxbacA",
+          "width": 4032
+        },
+        {
+          "height": 2048,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115799834146276197769\">Urban Kitchen &amp; Deli</a>"
+          ],
+          "photo_reference": "ATKogpdUpBxndKj0ZfbJV56mwiuSx96L4mlz8YpoEjKV3Ub2QinvvCzew31Z-IYyk2k-mDkaICDh4QyWCboVMcOnqr9_tqP7TP149fdaBuUh3U9rLMrAKNbp5wOGwlRY0kANZ_HdWOb6LFOW2x6QtjfC-S0a_ua6PszoMbT6K2Vv-PINU6B4fPUkVjxEgVO3rcXdijswnnxC2VluqDCf2lVA970u2YEdLFxLf_dL-kOFW9MWYDjD0Tykyiq17WBwQATrhWJCtkMMVmJc2yOCUPJMrfvRzYBzwH03nuvlGCYFt_qk3A",
+          "width": 1152
+        },
+        {
+          "height": 1558,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115799834146276197769\">Urban Kitchen &amp; Deli</a>"
+          ],
+          "photo_reference": "ATKogpcisQRaiheymjphx4RoY3CTq_WJrI7R7nvjZjVAs13591Bid348aeTKY6Xp1ZMUHLu8S9iR0zZ5ztf-Mp8qmLrkprnpT4d-AinygET0afOyXHLdeBgIAKaQVgAy_ouNmVSS4BJ0RFzNYpo3WEDq8GsLINbiinq2XCbjNI1tD2XHZrgLOJVsaSqdbVQGzZ-qf_S-qQc7-nJ3vWmBVs91jdBH86qkBvfVWIz0M5o-iRBhScP7lLnSFYSvcXIKK5l9R7mmV4F9HfGjdMfisOTYdT8qaPRf_81hDsD8NXcuAUAibA",
+          "width": 1170
+        },
+        {
+          "height": 800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115799834146276197769\">Urban Kitchen &amp; Deli</a>"
+          ],
+          "photo_reference": "ATKogpeBNl5Ag-Dlv62txLG5hFCpzHc_EVPZUcYSUho5ufIZZ6HLd5o6rEpoxLqgLm_pojOYVSfvt70lextAEORRF7313lMx_h2Oh2VR_06lu2-Lzz-AAUZGvYBsxg-9AZugj97SnzjdKoaZq_yr1IYl9DTzHfyB2xn4Q8_d6moTGtLLcJCOBxA-HYDeCOSGYUnYNANHboHfIJ6WUNuvKnoCNSlJ8raPGlpd24ZInwSx1KlVAR2N6ayWO0TKPciMUgLZBbAP2lXhVzApPiRLYw1ShM7k--8ruaLPaMKuFOJoqdehcw",
+          "width": 800
+        },
+        {
+          "height": 4800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114670913453500015523\">Mishell Kneeland</a>"
+          ],
+          "photo_reference": "ATKogpfqjan3_X9B8zrADTLLC3u1iRwFVcE_uEB9ZrLq_ymZGdOtnDHKT2M7PyOUQiraKr8XrvpWw3hqna_Poh7s3utbP2_YbXywikRd6fi40nRfLqn8eNoofz4g5xVUAkiL0OfR4IEjsDLYR8GV8YrIlYotxdFcP1eEvbNw_hOT7tVqKB4tDXnDRdmMsKj7bLLnqTDUTeh4cv4Lvty5NZzr2QfOhD4H97nFrMFWvJOpDefJ2r2Ib_8lX4PKlLpOKNutr59OJRhzhdBm4G7LsMW4hz3HM1kf3JAdB5557dW34hdXoEs3JQhZDjSbtYGsA5qDhggYxJWEMCuuKlkZxczKHeLcB6V8MSUmFB-0bk87z2IvrVT2kb1SHVvGKg7bveXZuUd_C9vMaO1hrhtFCje5MfFo50uMvMzGnOOLIdMRMksO3hBPWqLVyWgsX7sNAg",
+          "width": 3600
+        },
+        {
+          "height": 800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115799834146276197769\">Urban Kitchen &amp; Deli</a>"
+          ],
+          "photo_reference": "ATKogpeUez8xuwXgyqs_8rL9yHeqvX9Bd9pMJpNVN7vmKRRnqpixI5oF--ovDA5lNCKcSTSS0vtw6JblU_CEwRc9qdVsbgkrjkz6sv_A1UsnzmV70zt2VZk_nHZto2A1KB3XSialThI3A7ZC0Adaf2XdigWFclR60oEBZFptzpdB-ZY0BLojKizjQJpf5TzLlwZRlJW1RcF112JPMwqeDIQi3l2zPFAOo9qaX5ZQQepMHioz06By1FyBiA_ZyxleK_J9UOsIxNuoWl71pBaQuXxr0E3q7FK1uliqIQr9X6atfr_bBg",
+          "width": 800
+        },
+        {
+          "height": 800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115799834146276197769\">Urban Kitchen &amp; Deli</a>"
+          ],
+          "photo_reference": "ATKogpd_YBXl5VHYsMWfAwpi-9YFukiTDw3x0KUZqbPq5VU_QnkcVsuLet1ZDsrIMcBiVmUOB0wu74iOycuomVCcfiHk7orsMeylTSe7iXvwvUqP77_IXiUIRIlSNN0S87uWDwtzF3pjfSd7gLzvPHiCbShRmv-sR9vK-u92gOruEzLEQ4T2Pf5lLMOAibtc09M7QbAM3ylVit10wp3bPQAsOsq6A8yQNJf6dfOT8Ox-SiSt1y3K2H1GfvHkhjT0sgOg3uu23LP45lqLKZ3da8qLu-hkCIl6_ZV56CZwIqGNwG90OA",
+          "width": 800
+        },
+        {
+          "height": 800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115799834146276197769\">Urban Kitchen &amp; Deli</a>"
+          ],
+          "photo_reference": "ATKogpd4TBRtnSaz5oQaC17QI0TTcvwFteEptwXSgcyFGW3Ymr6RVfdJxJUnOeGktTMDCHf3cv1HcrfP_D4V3Wgjl6fkWpjj9Ez_QQkdnsd9kW2p7C2GSg5tX_aPAdwEZU7Tm1VxfBAYCttpimEW89Rkb7VlDfauMVqzLTI7oOLl6OxrzrcCHkko47W-pRr7AeH0phk7b9PjFV2AoZGEqyQQSU75UpWOsAIPePHZ-r29HT8nV5Fg9bmFi7IY-GsIm-XXExLi89uLdf3jjJV4Bj22RIaTjw1uv6g2QpLQidOzQh6pzg",
+          "width": 800
+        },
+        {
+          "height": 800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115799834146276197769\">Urban Kitchen &amp; Deli</a>"
+          ],
+          "photo_reference": "ATKogpfYqol3Zi9fNsHQyOsZAfq1LViWgTgFP1SoJUZtoaliK-Lo-nH9DgE3Y_Snb-SDtVFTJxLjY_kWCyBmkGxgz4IK7OHQeJQsCEXWboxJksgs9ly0zoPB7b7TbE28kpq-CZ19mN0-YHRkgq2A0RBHPBqKHudFEkqbt3cVvifK_9XzNgGlOBqHL_4DbTjzp3ZLYtqwH6z2xCoHNs9Mg-2VjoL1282ER_4ytoxh6lygKMr3FJsgTceilzpIOB0E7rWCkd9gM40gq8XOpShEym7YPcYBiAJcfbSv4gptNgifjvOEnQ",
+          "width": 800
+        },
+        {
+          "height": 3072,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109420893934971825133\">Monica Lutz</a>"
+          ],
+          "photo_reference": "ATKogpd75BXMD_85DDgPcei7GpkBkrddjptE_RwhPKtgdg2D_MsDGuW11qZfRJOP3IGweNq47TYQa5frEFzAHAM_NFvF364IWFG4Et0tW7B9UtcWkeqRnvfl8xggNr6Qeybw5HVjitzvFROM8q2rx4lFM-RNocUYs1Y0s-lXvKX1VadzxGxDRSUKlA8JvxK3mh9Sd0XQYSNXjlilZdkAewFG8ata_KR9M1aFnW4KOnFfAEnPFDBvRlsxhd0TDXUWH1Sbwco2Xr-zFPOIA4LhHN5Hm-i5yc7mnwB8_5cHt8hILQFx_7NFgWmnsxAHgM_TFFE1PjejTzajhXutFIaHacFVr4ljuj02l6ahxrvTmpcsX7yCQVceAojksvREfN1sybUzdEs_HMjb1j8ust8DX2UjItNB3Jz-tMGrkn__DJ0MoSgdMQ",
+          "width": 4080
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2030"
+            },
+            "open": {
+              "day": 1,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2030"
+            },
+            "open": {
+              "day": 2,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2030"
+            },
+            "open": {
+              "day": 3,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2030"
+            },
+            "open": {
+              "day": 4,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2030"
+            },
+            "open": {
+              "day": 5,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2030"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 8:30 PM",
+          "Tuesday: 9:00 AM – 8:30 PM",
+          "Wednesday: 9:00 AM – 8:30 PM",
+          "Thursday: 9:00 AM – 8:30 PM",
+          "Friday: 9:00 AM – 8:30 PM",
+          "Saturday: 10:00 AM – 8:30 PM",
+          "Sunday: 10:00 AM – 4:00 PM"
+        ]
+      },
+      "price_level": 2,
+      "editorial_summary": {
+        "language": "en",
+        "overview": "Easygoing, low-key outlet offering classic comfort food staples from pancakes to hummus to pasta."
+      },
+      "url": "https://maps.google.com/?cid=8424637344025370858",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfwHVlR-lsTc4zXsq0UtTQd-qu69Xel_t0pc8rQ5ldkLHoQF-CpmTYkbNdkAmkMLBy0JL1MEUt9W26B2Q6LtMI2PCArzG0X6mVdRMJGLhyBSZ99EQdnGexbh9Hct1jtHiKOgwaAri2d-BcuovEqxq52QYdA9J1dqvHEaJbYqL4O19FTPVZQ5t__YBlqqDeC0S4RMI6Eokm4RBP7e9Ukruv-i-VqSt68Yuuq2Un9ZSUMV5Oa5H5By24dxdndQYvMLRmHN-dxg0zZ2zTZSaPTKoAinSn17PpBt248mC9MonVqrg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcjjYFfKeKcx_C5dv5q1oEfUXWqmxxI7N1AXr6MHn24A7tordcVVOAp_addQCQoZ7aH1QQhn5_efoXX6LSSoDvOpg847y9T8Qp9_TsJ7NuHMrDfBywdIdijyM4d6Ob5crpmuu-KayGLvbTADseEqbGqaiFt3Ei9G-eS3LvspCvKzdela__8VAEkjh6SmCdu2AisO-EOkcqrekMD78tKPsgWdvEB-RvaCTfZIeNTSO4W8jiqj0G8Wfjm1ghOArblysOyzikkP9KZ4eM8-Ou6mlSmQlJYVQIG1sM3oZ_ghri4uQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpeWN3CZc0rUSH-pK6oH8mUTEpIh66IotsrpMjhHqsal_opA71ByoN30UqVnSwc0RoT9vskaXqCXRU2P1xQCza2lJOegSu_Ft9LhUukzigEsSPgPVmgRTrshRp-JRwNRNyS4M72w-fOQ0mR6Vdp0xPss4cRFHii0IhoazKTNgK6pNUeK8n54znOCdLROK2hQo_ZLlxzpi2uZNEyhHwsp6MZu3WnQltDFBecqaRaKdal4WE1HdnSidflUcJaMDdp3D2B5wM_cAcYpc1K4DulVjSBI0wbD0iO5AL6prCdS0fA9UA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogped68XgtEBxybgBJgrVrFbNSMcz70ZBnYWDMd1qS6en7X-zd5eeAjG5n3b6Z2xxTtnAyY2ajUVA22aQdakxkrL6jIIZCOhpvjNlD6gPerudhWAr1WiMJ6epnbfdDLsOPgFuvqaEgIDgsTaVRdvFWKumvaxqd4Z9SXdlgOOCap6XOoB7AfjvbSSAgNSGTGgNGCp8Zv9juGsBQZsUMa6ZdZPKuMZHhJ0C-Sn_lpiYONiPNBB4r17gG5s-2cpLG71o0627RhSgBneTc0LQGCMpktym1HxLyN4obcdUE_qKDP0Jaw&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdgkMQAaBfeng4LlfXC7H017vDbzezgkbNYOyi4YIOypntMGQkLViiEiDkC2MSItN9RY2HBsHB9QTbYcVizuaIkC0aCJjAuL4LvN6fXzjQaBwvF-RkG4fwE892nbguTJ-8qbdbD7sORCzrEb6GdHDwloYZUUliZ0g93xPyEgokTIjaXLAkxkfhBGINaclD7MyR1b2AZmo42eiREDjCbok88A1OgG61tYqyN0J8ECcAOQiGSHaeRuK7OayV-hUIwNfXkk6J4uGFXvfxXeGYLmSH-nxWOFEGFDtPhpkRRmtSnJ9bXXrruVNIJehHHHR2L7Lk3lxbprc0qu6YK6n_qSjUyLVL9oglAJL9ZyX6aQRJcTHCsAmqb9IIxMSyhx88dPRGRW0lb9eV4hFo83MZnp47sfpVp12XMQAfEwtQj_ZW_Tsx4KklnPAqpR0-VhQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdpMET2TfkLSAh-11ibHmBNnVdpB9vAvRpeFJgbBCsFfZul9jpvcfsuv4wunKygVWJv4uIh9c6dyXyzOUiN6IrHZwyAGOPxTl6x2KgOZfHQ8ap1Cy2EiISSK41PvnOUI6BBwqE9HeGbI5oSQDNIiOyT6epUruXkvB_CP4MnCalurPAdflw4RQYuQJoS5Esba2MppcPq-ZOl82QTiFQVl7AMeDfHSPD5eCPUlQoAV_bxNtAY48Xk1U7ca90uOr-LD0DPnovtzJB8CJydCi49ywSXOlzoDiRsEmFu9qpDJ7N28Q&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcjhhpyF1S9LcFBu5QxnF1ciCynx59H3wiczHb8U8-iOg7Oyb66kWkl0tQofv8JWpiCyqkShHzhasG9beXwzWLt2_mJBaI7El5d2FqIN1XNgRWu4HtAA17ZMb0QPRl4iwTRdmMEQTZ64-hqBdM_hucBfy8s0IXZp_wcq-WXSEcsvcGtkYdoWjR7dr6khMjeQai4dkY4WkT2mDdrF2XMBP9CNRibPOElCdB1ikLhVDyevAqM31afe7cFea-gHCXHwvZ8IW--swMPi-qS_q7uoMDxBDCDsd2iuzkWSHi5SgBkqQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdDy_BrE38pX-uAGCTgv56a09YAE4DJy2KUOncmHnP0QoduN0ammsDAHZI717E5QvGAcrxgaSdawHEegLcJqgnIxG2W7udECGAQxzwlmvJTTx64GbNsryTx2VxCteESOU2rAmrXnUVGHiQi05vmNK5H_LleuL5-m5cOme2ZzeBKGi_PiDnyJWGdpR2mgXfPNaTB4tCc3vPy1J9o9KTzaqvLDCMLowumtrq5jlwktvxuv9r_wEbdd265Vv8WvgNHtJeVlMI1I3sCEvF-oua3zqXx9RRxZirw-4MkU69orEqn6A&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpeQ_ptQgrZ6RQWmdFl2HDRkkSvb6vQmt3xKGVGH1cy0MrgdM91YJ5FVuU_j0ucO7Jn8KA1OVvbEoNkv6uZMRb-7b-1r0-Pi5Rp-ULMJBdx9IYnnLH0qxDqNWz7supd2o1af5FxFlSjERcKLTo2kILtpyC__1hhwCTuSl7Grr7_qQPwojxYiBCUrdj_u_kbVNUNV6axkGdhcC0JdcrbKTSCz_RPnC6D5o7hFZt3Chh8b6f2IFCyoL_HaDfb5p6QqeMgby-xLOHCG3vkPfOwyuHxCaEzE1KUuW5aIiRrXU9lUpQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpek-lSVd8InJuIOO8Z9IInwck_Dtz9BZsTmBomSIBGO93388ghJBSOC82ddBeaxfnuTuKicVorV8hRxjPYzG8XvC2-M4UKxyS7gSkrFcm8dp3CSWAMnsTbTESfcahZS8324jI42epGZh5C83hgoBqzBtHlGyq-FoKCToQrApbugZUUbohQn9td1rM7QSvbS30DGKyh-oW1Q0kHMce4jPxLwW8Qtv2JNbUBHLbh7eVpr7oP1evTG9e6BjNvOoz9iYR_0rTU2hMmF2CQeOxQ8JAMtC_FcTvQNESA2N2ptlUrr9UhpGLqxR-FF6NAKU5N7B445-X8DxTnGbj0vxQeHPm2PsnMKA8gDa9ir6LA4KH03Fw3yyEHNh2lRJaHi5vKgBlX5bB7b-LIvazziKRJtLWIfks-Ys2hrBsVjIudFl4w8jw&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 58,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": true,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 92,
+      "totalReviews": 1757,
+      "averageRating": 4.6,
+      "sentimentBreakdown": {
+        "positive": 89,
+        "neutral": 4,
+        "negative": 7
+      },
+      "reviewSources": [
+        "Google Places API (Apify Enhanced)"
+      ],
+      "keyThemes": [
+        "Food Quality",
+        "Wait Time",
+        "Service",
+        "Location",
+        "Pricing",
+        "Atmosphere",
+        "Portion Size",
+        "Cleanliness"
+      ],
+      "recentReviews": [
+        {
+          "rating": 5,
+          "text": "Food was excellent. I love the new look! We will be back soon! iA",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "I had an appt at the Cleveland Cljnic.  While there, having fasted for 14 hours, I looked for a restaurant nearby that had an interesting menu. Urban Kitchen fit the bill. Our Falafel Bites were fantastic. My Reuben was great, real Deli quality. I had a homemade Peach Iced Tea that was the best I've ever had. I highly recommend Urban Kitchen.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Pastas is so good and there cheese cake whoa😋😋😋",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 2,
+          "text": "I usually don’t like to leave a poor review but unfortunately this situation calls for it. We are here visiting a patient at Cleveland clinic & decided to take time out of an already long sad day to grab a bite. We had heard great things about Urban Kitchen so was excited to check it out. We are immediately greeted by the staff and sat down. Server comes to the table we chat about the menu and put in our order. We got a quesadilla for the app and 2 entrees. All the food comes out together, strange. We bring it to the servers attention, he offers to keep our entrees hot on the line, we declined. My aunt previously asked for extra sauce when she placed her order but the food came without it. We had to wait 7-10 mins before the server came back to let him know about the sauce. At this point the food is cold. We brought all of this to their attention and mind you there was a clear attitude. We asked to speak with a manger, apparently no manager on duty. Strange. My thing is you all are a restaurant next to a hospital. Most of your business probably comes from that campus. Have empathy, have a better attitude, have better hospitality. You should have that anyway as a restaurant but even more so because of the location. We come to Cleveland clinic quite often and we will never come back to this establishment. Control your attitude.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "negative"
+        },
+        {
+          "rating": 5,
+          "text": "Amazing place!!!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "So glad I found this place. We were looking for a place to each lunch after the Congenital Heart Walk at Wade Oval. Great atmosphere and delicious food. So fresh & flavorful. The portions were generous and priced right.  Our server was kind. We will definitely go back now that we found this gem.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Even though the restaurant was short staffed. The food was worth waiting for. From starters to desserts everything was delish!!! When in Cleveland check out “Urban Kitchen” great Egyptian food. The Lamb Shank and Bamia with vermicelli was my choice. Yum 😋",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Service and food was\nEmmanuel was an excellent servicer",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 1,
+          "text": "The website encouraged me to make a reservation. Upon arrival, we were not greeted, and waited 20 minutes to even place a water order.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "negative"
+        },
+        {
+          "rating": 3,
+          "text": "Food is great.\nAlways an issue with timing receiving food weather dining in or ordering pick up. Do better.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        }
+      ],
+      "detailedReviews": [
+        {
+          "author": "Izzah Sports",
+          "rating": 5,
+          "text": "Food was excellent. I love the new look! We will be back soon! iA",
+          "date": "2025-09-15T15:05:58.608Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2w5a2FETmtSV3A0U2psbFpEbERjMjVVZGsxTFRGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWvgIW1YZPpu_qwfrvL-SZ5nM3kR-wEviwnWW0Kopdx6FTGKJA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102460686621022250714?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "David Augenblick",
+          "rating": 5,
+          "text": "I had an appt at the Cleveland Cljnic.  While there, having fasted for 14 hours, I looked for a restaurant nearby that had an interesting menu. Urban Kitchen fit the bill. Our Falafel Bites were fantastic. My Reuben was great, real Deli quality. I had a homemade Peach Iced Tea that was the best I've ever had. I highly recommend Urban Kitchen.",
+          "date": "2025-09-14T22:30:21.263Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xkUlJtNHpVWGhOVm5wUmVXOUdiRVkxVW10aFpXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVg0520LaUQzfxIJwz-i1gAWCd9pRRnac1LvaS3Cd4_5eglmIIN=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101011402667084769075?hl=en",
+          "reviewerNumberOfReviews": 34,
+          "sentiment": "positive"
+        },
+        {
+          "author": "jay johnson",
+          "rating": 5,
+          "text": "Pastas is so good and there cheese cake whoa😋😋😋",
+          "date": "2025-09-14T17:38:31.161Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT210WlVEWmFkekZpZDNORlVUWjVOVXhoYUd3NU9HYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUgyldrwcrlYBk3-HB86khwXRJGK9F7h-wUExL9ePKlio_FR-q1=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115984987250077676883?hl=en",
+          "reviewerNumberOfReviews": 74,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Victoria Miller",
+          "rating": 2,
+          "text": "I usually don’t like to leave a poor review but unfortunately this situation calls for it. We are here visiting a patient at Cleveland clinic & decided to take time out of an already long sad day to grab a bite. We had heard great things about Urban Kitchen so was excited to check it out. We are immediately greeted by the staff and sat down. Server comes to the table we chat about the menu and put in our order. We got a quesadilla for the app and 2 entrees. All the food comes out together, strange. We bring it to the servers attention, he offers to keep our entrees hot on the line, we declined. My aunt previously asked for extra sauce when she placed her order but the food came without it. We had to wait 7-10 mins before the server came back to let him know about the sauce. At this point the food is cold. We brought all of this to their attention and mind you there was a clear attitude. We asked to speak with a manger, apparently no manager on duty. Strange. My thing is you all are a restaurant next to a hospital. Most of your business probably comes from that campus. Have empathy, have a better attitude, have better hospitality. You should have that anyway as a restaurant but even more so because of the location. We come to Cleveland clinic quite often and we will never come back to this establishment. Control your attitude.",
+          "date": "2025-09-14T13:02:43.411Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xWaVdVZ3lWbmd4TUVOUlZsRTVia00zYkhkcVVWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVcnq2EpN7vDBNhOV5J9tAwUZ42KV6d1aD6_3YzW5ABCZhz-Dk=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111177628078532656467?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Nicholas Walstrom",
+          "rating": 5,
+          "text": "Amazing place!!!",
+          "date": "2025-09-14T03:07:03.028Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2twdmRWVnVhbk15ZVZKMFpsZDBlbkJITjJWbmFuYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXfEWrvNNGn064KAyojKmvnh2IijlYu2tuMg8zXKW4HHFkEZLck=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105518408152970978972?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Traci Lancy",
+          "rating": 5,
+          "text": "So glad I found this place. We were looking for a place to each lunch after the Congenital Heart Walk at Wade Oval. Great atmosphere and delicious food. So fresh & flavorful. The portions were generous and priced right.  Our server was kind. We will definitely go back now that we found this gem.",
+          "date": "2025-09-14T01:34:14.975Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xOb1QwTXdUVkpyV21VM1UyMUpObk51ZDJKTk9XYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWGZ3UElIWkXj2tpBCUJbxUhBpwm1pf-miVWV5OXeCjB8yQHT3a=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110002480538349619738?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Lynette Gittens",
+          "rating": 5,
+          "text": "Even though the restaurant was short staffed. The food was worth waiting for. From starters to desserts everything was delish!!! When in Cleveland check out “Urban Kitchen” great Egyptian food. The Lamb Shank and Bamia with vermicelli was my choice. Yum 😋",
+          "date": "2025-09-13T23:45:33.624Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xnd1JuaGlkRzgxZG5ZM1YzZGpNMUY0TTFGNVMxRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVVx5TKQyiQ3cKd141j7Q4PmltC296pVigfzm0lYCBGEEm3duPpKw=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106437272239739947908?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ameerah Muhammad",
+          "rating": 5,
+          "text": "Service and food was\nEmmanuel was an excellent servicer",
+          "date": "2025-09-13T23:33:07.731Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xCSVJqVlNjell5WW5aU2VuQTBVVlZQVkVSWldHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJkJXdg9Z1JDQPk-tKXWsIKi_fX7okC9ahq96E-jQiY1uxUbg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112237322139464151933?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sara Neff",
+          "rating": 1,
+          "text": "The website encouraged me to make a reservation. Upon arrival, we were not greeted, and waited 20 minutes to even place a water order.",
+          "date": "2025-09-13T22:23:24.241Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pGQ2JHTjBaRzVaV2s0Mlp6WlRSVm96V0dsb1QxRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUuVafC-OR45UnQP7nnkcCiN-nq3rBIaAuXxC56Ncj76X64xTc=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107091125868313766601?hl=en",
+          "reviewerNumberOfReviews": 22,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Angel-Amenet",
+          "rating": 3,
+          "text": "Food is great.\nAlways an issue with timing receiving food weather dining in or ordering pick up. Do better.",
+          "date": "2025-09-12T23:02:37.451Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUMycllTTUx3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU053jUBqBpPAg-PpFgjXSKWv4GxN4_5VFDsmbWchQ252V-BNEXJg=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102580785396393249875?hl=en",
+          "reviewerNumberOfReviews": 380,
+          "sentiment": "positive"
+        },
+        {
+          "author": "scott hennelly",
+          "rating": 5,
+          "text": "Food was fabulous- great taste and value.  Really enjoyed it and the friendly atmosphere.",
+          "date": "2025-09-12T20:26:13.623Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xOdWRFOVZkMkpqVjJjeFRHSmxMWE5MVFRGVFdXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocINnTIk7s7XplHVBG9BjGWZaGLG4YSINWeb3FN6EJsBDCf6CA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105585112503723451800?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Cynthia Brosnan",
+          "rating": 5,
+          "text": "Excellent food and service. Generous portions and pricing was very good for downtown Cleveland. I expected everything to be pricier.",
+          "date": "2025-09-11T23:06:17.858Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21kbU5sbHlYMDkwUlc5V1MyaGlURlkwT0c1VE1XYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW0roWpEHwWOdwhOY1xC4teShbzD9_AwDDCMV6EZyF3XZEhsvhv=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100206678360157845459?hl=en",
+          "reviewerNumberOfReviews": 60,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Lisa Fields",
+          "rating": 5,
+          "text": "Excellent lunch!!",
+          "date": "2025-09-11T17:50:43.847Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2kxSlZDMU1halJGVDFOc1JXbHZUM3BaYnpKc1NFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUsI_JZHYM269u3sRBXcjkQphC1K-gLu69sQoHFm6wX57i9Q2pNVQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114568558393863713232?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Akraam Abdel-Kerem",
+          "rating": 5,
+          "text": "Amany is amazing the food is authentic and the Turkish coffee is to die for to be honest!",
+          "date": "2025-09-11T13:50:47.767Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xsNFVYaHZObEZEVDB0UGFuWmZTVTFIT1ZWR09GRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWt7fxh_4MH2ZJeKeeHS2sY-Pg7rN2aUpSaR8TjYmhVGbXfJpFi=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106600835196059738773?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Yasin Y",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-10T22:01:51.207Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2toZlpHOUJVMW96VmsxRlltOXVPRkZOT1RZNE1rRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL71U-X3CGrtwn1XoIQVs5nyc1bf3YY_sgGTg0VF93FGcHNdA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102456845274132173519?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Shahidah Rasheed",
+          "rating": 5,
+          "text": "Very good food large portion with excellent pricing. Friendly and attentive service.",
+          "date": "2025-09-10T15:36:04.589Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURBenBfckJ3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKzs-JEBSl4pYVFZtfOmJ9UV7f2JYnrWUq9_EZNvJNr2N35ig=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108808204654184507840?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kathy Pomeroy",
+          "rating": 5,
+          "text": "Lovely. Clean well decorated restaurant with great food and service!!",
+          "date": "2025-09-10T15:22:53.209Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tKeGVqaHlNSHBvU0dkTWFEY3plblJPUzB4dlgyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX81xY9nBNe-nyYjM_SncRrqnmoyr_ARKfQiqj9GGpi6YsOXaQVyg=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115889077948183925851?hl=en",
+          "reviewerNumberOfReviews": 249,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Cynthia Mendoza López",
+          "rating": 5,
+          "text": "Love it!!! Quality and Delicious food! Very creative menu and the best waitress attentions!!!!",
+          "date": "2025-09-10T15:09:34.011Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21SQmJFbDVZelo2U2s4d2Iwb3dUbTlqTXpOelkwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXaLGGF7ZZBFumih4CdLg8wxRfMc3_UaB1ZFxJu2QlJX2eD_3k=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100332798416780824529?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Madi Pomeroy",
+          "rating": 5,
+          "text": "Went here on a whim and the food did NOT disappoint. Whole place was clean and there was many places to sit. Waitress with the light brown curly hair was wonderful! We will be back. Pictured is the stuffed grape leaves. Fabulous flavor",
+          "date": "2025-09-10T14:59:05.560Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21oS2RYbzRTRTkzTFhSSmJEbGZkbEV5VG5wVGVtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXJTVzG7TPylWroX5UD3LPeQDFzSbKK9ZuPA8b4NzPTQTYLNhAJ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108427795286751483574?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mac Pomeroy",
+          "rating": 5,
+          "text": "Really great food",
+          "date": "2025-09-10T14:58:46.393Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2poc1YwdEpkVmhRYmt0bU0zWlpNRGRVY0daVVVsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVedeVDMoawqxKazSMP4_VJnFsvhcmabiDebeJZbULfiHVO1kbllw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108554501006751498711?hl=en",
+          "reviewerNumberOfReviews": 36,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Karen Bergamasco",
+          "rating": 5,
+          "text": "Amazingly delicious food, attentive service and lovely people.   Cannot go wrong.",
+          "date": "2025-09-10T14:29:29.442Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25OV1QyUmFTWEpDU1dVeGRVaHhUVXRQVkRadlIwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ_2zcPqcCXMNrbiNCy4_a-12IyNwf13Mmoh75FMdK8bk6T6g=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104845930228146905357?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Cara S.",
+          "rating": 4,
+          "text": "Me and my boyfriend shared the okra stew with an extra plate of okra. It was very good and left both of us full. The staff is also very nice.\n\nOnly complaint I have is that they use the those gas station machines for cappuccinos and a few other drinks. The machine ones are way too sweet in my opinion.",
+          "date": "2025-09-10T00:10:09.748Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t3MU16Y3lXVXhEWDFobFFUWnZUVzFuWlhGSGRHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXk8WAjorzzL2MCjFWsDG7Yh4zWiVOb6PwiuNaDlsbUS_Q4FXuZ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109779910118295068715?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dawn McDermott",
+          "rating": 5,
+          "text": "How am I just hearing of this absolute gem?! Spectacular! Charming severs, delicious food, eclectic music, beautiful decor (LOVE the live edge tables)! Keep up the amazing work! ❤️",
+          "date": "2025-09-09T17:58:48.419Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21KMVp6Tk1RM2cyVFZoeWFYTnBlR2hHYkZSVk0wRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXy8zz9R671gH-KvMJgy_sL5J4Eyyjztc7lMGSTv8XXY9c_Q-yK=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112911928982845186887?hl=en",
+          "reviewerNumberOfReviews": 101,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mark Henderson",
+          "rating": 5,
+          "text": "This is my third time eating here and they never disappoint. The food is awesome and the people are always pleasant. And the best part........the cake is sooooooo good.",
+          "date": "2025-09-09T17:54:06.865Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xsRWFsWnBSbm95T0VGeWNHNUJXRTV4ZFRCUWFXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJepW-ZcsojbdSaHNxaxFjSTlJtf0Os6GUomh3BEbjjpltm8A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103820882417144669310?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Pat Mosier",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-08T20:00:52.485Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t4SGF6TjFNalZuY21FM1FWaEtjVGxRVlU5eFVGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLUKXmhIwmtIEQ9eT-stndmpWIXbK7zlx0ki8ABjj4C4xVTdQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112934245369274145722?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Callie Cook",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-08T16:50:21.957Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25sWVdHMUdjRXQ2Wlc1VmRWbGhhbEkwZERCSVVGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIuZwNvEyhnRGzdCkOexpf8fNFYzGUEdnwQ-lwrSPjQgPO-oQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107889621183906585457?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jack Pitts",
+          "rating": 5,
+          "text": "Very good and unique breakfast items.",
+          "date": "2025-09-08T14:21:51.852Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2taNVVsQjRhVFZETTJseVoyZG9ZbkpVTlU1cVMzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ82vGZwVuIrSxvYBY5Gm19plROIpSKKPnWdXc5I4P33H_cWw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101861921214622671245?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Helena Gall",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-08T14:17:52.043Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25Sd1NITlhjRkF0TTFBNFpXYzVjRFo1VGxoaVJGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLlMQzF3Ec8d54z6KsGfomTu-WZ7id-RbgJ03_hJVFtU3ecqg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110473521347599803353?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Teresa Rogers",
+          "rating": 1,
+          "text": "If you want horrible food that tastes like you are eating salt cubes it great but if you want to be able to taste the food don't waste your money. $75 and we couldn't even eat half our food",
+          "date": "2025-09-07T18:02:09.725Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21sMGEwOU5iMUJ1YW1nemQwdzFUbE14TjBoTmJWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI9FeuLSx_yFThWm4lY4zVB2Mx_OE_xKJpgXcfx02gWUmY0CQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103900717660563194615?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Frank Valentic",
+          "rating": 5,
+          "text": "We had brunch after church. The food was delicious. Very well prepared and flavorful. The ambiance was very beautiful. Such a nice place! If you’re in Cleveland, do yourself a favor and stop by Urban Kitchen",
+          "date": "2025-09-07T16:02:50.794Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xVMk9GZEZUMjVVV0U4eWJEbEpNVGhJZUdsV1RGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV642cif9gqJFE40SaRHpZnuf54plyUKk48KO3oiDUW3c3Hlbow=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112564519685034509819?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mishell Kneeland",
+          "rating": 5,
+          "text": "Staying at a hotel down the street and stumbled on to this surprising gem!  I almost always get Shakshuka when it’s offered, but went for the more unusual Egyptian Sunrise - stewed favas, felafel, feta tomatoes, eggs, and super great pita. Sooooooo good. Everyone here was kind and helpful. Can’t recommend it highly enough.",
+          "date": "2025-09-06T17:06:19.113Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xadWVraFdhRk5tTjBoRlRXbzJSR3BIWDI5V1drRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUkzK4TJS2hEI_LR20p0UTO6dEWxtlfske1e0BV0iDxwqiuclOIEg=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114670913453500015523?hl=en",
+          "reviewerNumberOfReviews": 14,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kathi Mauricio",
+          "rating": 5,
+          "text": "Great meal, great service!",
+          "date": "2025-09-06T15:04:58.692Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25rMFkzWkJjMEpVUWt4NFZXbHBhekkyYkdWSGQzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIS2kYclcP9VgYCpcacpYR2CEtqlOgog3_g7ynImBhwsXIqHA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107644436405121751009?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "wbk hff",
+          "rating": 5,
+          "text": "Das Essen war wirklich hervorragend! Sehr gut gewürzt und das Fleisch war sehr saftig. Der Service war ebenfalls sehr gut und schnell. Wir kommen gerne wieder!",
+          "date": "2025-09-05T23:58:51.449Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25nMlgxbFRhMFJtVUhFeWRWSkRUR3hCWm1KNldFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIBguiUZYRCQP6mY0_UfgpaGdQT0oITA22TdAh9U_M-ED76Vw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112839837881286422135?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Lana S",
+          "rating": 5,
+          "text": "Best Turkish coffee I've had in a while! And great fries. Definitely coming back for breakfast next time",
+          "date": "2025-09-05T18:52:20.930Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tKQ1Ywc3RSRXhqYldwcmFIbE5OR1ZqYjBSR1lYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXf7o7W7x3_7Pb9bw8-JE4enYSuL425i4m1EzYNYEwK6Khoa9ne=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100969090600806404053?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ingrid Sprague",
+          "rating": 5,
+          "text": "Clean, colorful, fresh food made in house, with some unique selections. Good song selection too!",
+          "date": "2025-09-05T18:51:57.640Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21saE4wVnpabXhNUkVJMlVqRTNUMkZLUW0xdWQwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUhMTT7kZ9NpcoZXMwyn93rM7ylA8dqqwCTaUMF3lt-W6XqxtI=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110117599162734041181?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Benjamin Anderson",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-04T23:48:16.034Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pSWGVpMDJPRlp6U25JelREWlhOM2cwYUhOd2RXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJVrJrpC7GGEKNsJ8DwxisIGmqpTm-PMX6fmSHSfvI5m40tog=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102793407626127548844?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mark /Pamela Rutledge",
+          "rating": 5,
+          "text": "Nice place good food fast service.",
+          "date": "2025-09-04T19:36:20.075Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pGblpVMHhhRE10ZEd0VVUxazFiRTAxUzFaUGJrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJFduCI_FpRRRv4WiJQ5lloO9fOa0ggW3Cxhtcir7TvtQls0Q=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115022078321240805723?hl=en",
+          "reviewerNumberOfReviews": 50,
+          "sentiment": "positive"
+        },
+        {
+          "author": "reinsofhope spencer",
+          "rating": 4,
+          "text": "Very fun find in Cleveland!  Good food and unique items - had to try the Egyptian breakfast dishes and enjoyed it a lot!  Also very fluffy good pancakes.  Hope to stop in again!",
+          "date": "2025-09-04T14:25:27.350Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xaZlNsVmtaMHBKV2xZdFdtWkZWVVpDTTJKNFFYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJQVO6EODjBFYfxUemL5K7Og1ji7LxvB-Quh2i-r8TY8FMKmA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107377308473540824721?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Felicia Britton",
+          "rating": 5,
+          "text": "While in town visiting family we always look for new places to eat, and we found this place.  What a great place, from the food, service, atmosphere, and location. I had the salmon burger with fries with a Hibiscus drink, everything was so good. I highly recommend this place if you are looking for a good place to eat that's affordable and you get what you pay for! Like everyone said in the previous reviews, they are generous with portions. Thanks Calvin who was our server. We will be back",
+          "date": "2025-09-03T13:32:37.128Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2taSlVtMVNaalZ0ZDJOWGVpMXBkVFF3V1RkaVRYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJUL9sJPdRz2Aeep2PRKOUGJD6t7HuuwxgAWk74dYJtmndpMA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100108237025775117293?hl=en",
+          "reviewerNumberOfReviews": 34,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Stuti Shah",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-02T20:57:47.956Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21aTVVFOXpORjlUU0hKRlYxSTVWMFptTjBaaVNrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIqgMmUR4dvGUjEydXAgnBKpEp0b3txKXQjNdnAa1cn4dQpaA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109444351352332894684?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Melina Kyprianou",
+          "rating": 5,
+          "text": "Lovely food lovely service! They recently redid the restaurant and it looks amazing! Highly recommend",
+          "date": "2025-09-02T20:44:33.670Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25aNFdXVjBjRzFPTjJkbVIwVnRhR1ZmU2s5ZmJWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU1RjD7qV5O3N73Hd7yXPT0DuENgMY0VjOfWbrPzRAvptQkvk6Xkg=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109553797066432359583?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ann Wood",
+          "rating": 4,
+          "text": "Good place",
+          "date": "2025-09-02T09:43:32.642Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2toRWMxaGtRMmR1WTNsblYzZEdhR3R1YUc1eFIwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWbRmCkiU_T-h-rXH7hQ1mFut9rYdeaRUCKlOS6j6_vbHnmKRxY=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106724211811789408319?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Arhum",
+          "rating": 4,
+          "text": "We absolutely loved our experience here. The staff was great and the food was fantastic. We absolutely enjoyed our experience here and would highly recommend it. From the pastas to the sandwiches to the lemonade.\n\nThe buffalo chicken flatbread, the pasta and the half chicken with a side of the lemonade is what I would recommend. My burger did have a hard bread - it was extra toasted but the rest of the burger was solid. The server took a while to take our order as well but might have just been overwhelmed by orders.",
+          "date": "2025-09-01T16:46:20.144Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21aSlNHOUZhbmhKUzFOcVRta3dORGRDUkhKd2MxRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLXMJGGQsodqmaCCa6wZSG6jOiVT0e7tGdDzJhpfacPhMW7pg=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109760964901898200931?hl=en",
+          "reviewerNumberOfReviews": 187,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Aiko Tanaka",
+          "rating": 4,
+          "text": "",
+          "date": "2025-09-01T13:26:35.155Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pGSWVHMVFaRXRSWHpsZmQyOWxWMFp6ZDA1TlpXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXeVHfZ5fBH6PAb_m7v9l2vy4K0wb073Sksyl4dRjKO-wffyvo=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116085662312056864878?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "nick warmke",
+          "rating": 5,
+          "text": "Really good!",
+          "date": "2025-08-30T22:47:11.493Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2poaVFqRkhjMHN0ZERkNVowTTFSWEpMZEVaMGNYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWZiISxWry7HhNNtQK5MAQ-YrymmBs5AzF-o6aFHe8Yuw_ojZE=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108175296372215674318?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Trey Meadows",
+          "rating": 2,
+          "text": "Potential, without skill. This restaurant seemed so exciting when we first arrived, but we were sat at a dirty table, and left without menus, or even a greeting for half an hour. It took an additional 15 minutes to bring a coffee and a juice, and an additional 45 minutes for our food to arrive. We had four tables around get up and leave while arguing with the owner.\n\nI was excited once it finally came, having decided to stick it out in hopes it would be worth it all, but was horribly disappointed at cold food that had been dying in the window.\n\nI do not recommend at this time.",
+          "date": "2025-08-30T19:03:49.246Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pWWlJsODBSVVZzTVVFellVVjFhVzlFYkhjd2RHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUWS9r6jyW_WwGUgSy6O3VbK0DSW5JMnBRA8ZS7kesWme3022W6Ng=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108078919465359321003?hl=en",
+          "reviewerNumberOfReviews": 30,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Garret Heiberger",
+          "rating": 3,
+          "text": "Been here twice, ordered from multiple other times.  Food is always good, keeps me coming back. Don’t go here if you have anywhere to be though, service is slow. Hole we were waiting to be served  multiple people, who were there before us and seated, left because  they had not been served. Multiple other people showed up and also left because they were addressed at all.  We ended up ordering online and just picking it up later.  Food was good",
+          "date": "2025-08-30T18:29:31.006Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tOcWJUSmxSMjFJTW5wWGNUUjJWRlZtYW05QlNHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW-DdMCAMuMvF5NnFWtsbQMjnZHDCBVox17iZziWaZxkycl_jI=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102455727136715145472?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Abigail Morton",
+          "rating": 3,
+          "text": "The food was good, but it seems like they could use a few additional staff to make sure customers are taken care of.",
+          "date": "2025-08-30T18:25:35.403Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25wc05tVXRVRTE0TVZKbGMxcFNSemh4WDFWcVlrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWFUinWg2gndrHbLKIOD5eOH9qcZloVrHrSXK3mwnohel5dTe-8Cg=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115151643107777576206?hl=en",
+          "reviewerNumberOfReviews": 14,
+          "sentiment": "positive"
+        },
+        {
+          "author": "jasmine",
+          "rating": 3,
+          "text": "",
+          "date": "2025-08-29T21:55:21.216Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21OUVRrNDVlVzFYYW5sVE9TMVlSM0p0UjFCT2VXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJxLn5I-3pbbz8w4nMLnIjq9N8i17EK5DSCVDp1x8tUVn2nxw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111150967494444670860?hl=en",
+          "reviewerNumberOfReviews": 20,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Mohammad Abdallah",
+          "rating": 5,
+          "text": "Delicious food. Clean and comfortable dining room. Wonderful service! We had lunch and took dessert home for later. 10/10!",
+          "date": "2025-08-29T16:39:20.463Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT214aExYQkxWek14WTJWUExYbEVSRmd5YlU5Nk4zYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW26xZ9ZYhipXpyx8d4ggSj_m6-cwwT50nIrW93wahejGok7PyZ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109813812871407890204?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dustin Wolfe",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-29T16:14:27.702Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2psQmIzWkdPRlEyVkd0bWVsUnRVMncyVERWRVFrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIK6eryo86aJDueKRYHoFasDoX-kxIQ0621e-3LxTPI4hR_eg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105232308478056000306?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Joe A",
+          "rating": 5,
+          "text": "Nice spot for quick bite to eat before heading over to art museum,  breakfast was good,  want to come back for more of the special dishes they serve!",
+          "date": "2025-08-28T14:53:00.593Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xkUFFqRktjMUZ2TkdKd2FWaE1VRmMyZW01Nk1YYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU8SDMgBJ95BfeUnwRm6Pv2kDMwN3z7qG4-Npnc40HC2-rJd--N=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114242426297366716324?hl=en",
+          "reviewerNumberOfReviews": 212,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kristin Walker",
+          "rating": 5,
+          "text": "Food is amazing! Staff is super friendly & the restaurant is simple, clean & accommodating. Will be back every time we’re in Cleveland!!!",
+          "date": "2025-08-27T22:48:16.660Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2sxUFduRTFhRU5tTUVocVF6aGFVR1JUYjI1RU9HYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLdsjxWqM7fQ6j3RgoDipJDTqA0t80vDQhLr448HCnTRsFeBw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115468588166456240966?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tessa Tegel",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-27T21:09:09.871Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25SbWFtdGFVVFZoYmt4MlZGaEhXVWs0Y0VFM1VVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWzxZHiwfV_Op7iP6fjDmTAgU1eHTfQI4RmcrdpBEuTwOB34BehNA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110726568855145407411?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Gail Heflin",
+          "rating": 5,
+          "text": "Yummy food and outstanding service!",
+          "date": "2025-08-27T18:25:03.158Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pWeFpVZGlibll6ZHpObk4wdFNaWEpaTmxnM1ptYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLvEqEbK14_YMRzH-_jqJsiJbRJYkOypswb1v9zHNN6KKYUZg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110789907926567795865?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Noah Bentley",
+          "rating": 5,
+          "text": "Always my go-to lunch spot.",
+          "date": "2025-08-27T18:24:35.004Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25WS09XRkNhSEZ0VFZOUVZIQkxialV0TmtGbVpXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVe0BijTFXGKLtfBL2ZWNwFfcBh9Vpn2c28IzvVyifoA3EhzwxJog=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106835980873030373565?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Marquai Burnett",
+          "rating": 5,
+          "text": "The service was so welcoming and fun! Our family will definitely be back!",
+          "date": "2025-08-27T14:45:06.935Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tZelowMXFhRmg0ZG5kT2VEbHFTMkZCVG5KQ1NVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVHr8YOSKJgi5iwh1tNC_l96i8ALgkIi0y-L-ssNCHDRpjXYvvpCA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109823153453795845838?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "patriciav",
+          "rating": 5,
+          "text": "Great atmosphere. Friendly staff. Food is delicious!",
+          "date": "2025-08-26T16:56:51.064Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChRDSUhNMG9nS0VJQ0FnSURybWJjRxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIGWXvKDytXS2aj2atBdU-Zi-B_bXtckiuhD-v3oNeMTf9TJQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116318378168458634688?hl=en",
+          "reviewerNumberOfReviews": 15,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Monique Terry",
+          "rating": 5,
+          "text": "1st time visiting. We had brunch yesterday and were very pleased. All of our meals were excellent, the service was friendly, the restaurant was clean, and everyone was enjoying themselves which made a great atmosphere! Definitely recommend trying Turkish Coffee and fresh juice!",
+          "date": "2025-08-25T16:07:09.703Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2w5SkxXOHdRVFpHWmt0clVqTlhieTFQWlRseVlVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXYqqhQsfS02ZEsEP5vSNe2CU5169sWagNmX-Y7Ufzl_2VLH-Y=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113531486792287351576?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Nathan Ong",
+          "rating": 5,
+          "text": "Good food, very fast and friendly service",
+          "date": "2025-08-22T17:54:37.452Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25WV1lYaEVjbXhqY0ROSFZtdEhMVXB1UTBkRE5XYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVN8wXSkLd4px_ZZ27dETeyhj82rLsQKjWLmc6UN8bKHuDhUBy-GQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108163475127746051536?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Aurora Hardin",
+          "rating": 5,
+          "text": "Loved it! We ordered wraps and fries and the wraps were full of fresh, tasty ingredients and the fries were perfectly crispy. Finished with a delicious chocolate cake with a lightly sweetened chocolate whipped cream frosting. Great atmosphere and wonderful service!!\n\nThey also have a number of Egyptian options I can't wait to try!",
+          "date": "2025-08-21T22:57:15.284Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pGV1dWbHlkSEp0U1U5UFZHNUhlRmN5Ym10ZmEzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXAWB-etDy1wVhMELvcMhr4EeMN5r3GhbVjbaAUeRkQ9NR0cM_HrQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115894454657402214216?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jen Nicol",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-21T11:13:48.638Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xWTWFqbHBUak42ZFVseWFHRkhhMU01YTBaNWFHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLzkBJubUXiYg_o1r3tvqqnFgsrhqoc_X9mL_21pp9Bj6KkkQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104295416306427246418?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Elvan Önem Özbilen",
+          "rating": 5,
+          "text": "Everything was delicious and the personnel was so kind.",
+          "date": "2025-08-20T22:16:36.922Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25aRVkzUlhTRnBHZUcxQmRTMVhTMjVuWDJGblYyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXg4YoU_rCkz6iKhAdWfOTgaOVFwx3FCQdHXD8I7t2gXmvyhNLR=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114515682657310768133?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Paul Reimer",
+          "rating": 5,
+          "text": "This restaurant was amazing. Service was excellent,  friendly and spot on. The only thing better was the food. Food was fresh, hot and perfectly cooked. I had the Chipotle shrimp and chicken Alfredo.  The shrimp was excellent and the Alfredo sauce had just the right heat. I can not recommend this restaurant enough. We went to The Urban Kitchen on a recommendation and thankfully now have a new fabulous restaurant to go to. We will be back.... & back & back & back!!!!!",
+          "date": "2025-08-20T21:50:10.054Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT214dVlscEliVmd3VjBOT01sWkRkak42YmxscFlXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK2KDHEDC1w27d9nMj1302MwEn0OZ9sIITkwNhWypE1zlZ8ow=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116086870102462178472?hl=en",
+          "reviewerNumberOfReviews": 20,
+          "sentiment": "positive"
+        },
+        {
+          "author": "youl know",
+          "rating": 5,
+          "text": "The Rueben was excellent. Great place to get away from the stress of the hospital.",
+          "date": "2025-08-20T20:11:35.997Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25OeFNsVjFheTFmY1hwWmRGZEhiRFp2WTFwWWRVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocITzgncaNqsSxeApqou3oU2B1ZGkBlUiTMaDy1yV05ir5GMYg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117792367891595304458?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Cheryl Lutz",
+          "rating": 5,
+          "text": "Great hostess.",
+          "date": "2025-08-20T19:44:38.739Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25kZlZWWTNRelZYTFVGbE1FRk5lV2xvTFMxMGFXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJcq3n4Cj3kKj0B8-od1IPI50d9hTvQN6OcC8B0BrnVBgmVtQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103377953118066080054?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Chuck Pearson",
+          "rating": 5,
+          "text": "Came here during a visit to Cleveland from Pittsburgh.  Great food!  The Clevelander sandwich was especially yummy.",
+          "date": "2025-08-20T19:16:16.498Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25waFpYbDFVVGszVURoSE5tbHpZMHd6TlVGVFdtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV-RK18jM1FKCixn9BbENssEb_BidpUglrpLQCS_MNkSy5Ko-U5=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116186227247483859589?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "nicole dezelon",
+          "rating": 4,
+          "text": "",
+          "date": "2025-08-20T19:16:11.828Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2toT1UyVmpUMjVtVld0cFpHdHFhV2xsTVRRMVdVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW-drt_7zikJSMRk9fcmw3ugUzkmGcjnfANzomBUGCnl-6aqiRQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111912021429393847211?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Grayce Ransome",
+          "rating": 5,
+          "text": "tasty ! staff was so polite :)",
+          "date": "2025-08-20T19:15:52.341Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2taRVlXcGZPVVprWlZreFZsWTFVakZ6ZEd4VU1GRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVvDXfgWdkmCufiG-Ru-_bJ813GcQ8ijwWF3XrcWzTIbjPbhHiJ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104545504841465745387?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Pete Kemper",
+          "rating": 4,
+          "text": "",
+          "date": "2025-08-20T17:05:27.607Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xweU1VeHNjR2hmVTJKdVlUWkdlVEZDUlhCVWFXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocItADekNaygykdv1i_2UnRJ7UdrRsUpFd1_DPKz1trA_5Vr0Q=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101736446221018382731?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Asim Siddiqui",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-20T16:37:38.385Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xkemRtMXZORTlrUmxGTFpqWmZOV2xZVDI5Q04wRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIqIP9w4upkWOuqycR4kX49-dHBVmjtAyd52tNHzEaV50sAEw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100482393623901453113?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "James Farstad",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-20T15:40:57.840Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2s0NFRqZFlTbmR5ZW1vME4zRkdNbFYyT0RodVdGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLpEw2F1EHpuL8odqHzp4TmiTnImiMAJwHCBPCO0d_SRat5=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117321597908630549839?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Darshay Johnson",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-19T19:13:38.476Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21OV1NuWmtRbkp3ZWpOQmMzRTBMWEp4V2pGaFVYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLoffv30mUXQ1mGe5P96dK2k3ujk4r9bKBNoTdS-gDvQ7n51Q=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107607118399502993215?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "LaTasha K.",
+          "rating": 5,
+          "text": "Great food, reasonable prices, very friendly service. It's close to the hospital and the environment was nice with indoor and outdoor seating options.",
+          "date": "2025-08-19T14:21:26.622Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21sQ1QzRmpTMk5hU1VGRE0zWk5lV1JPU1ZZeVRVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXD6pI8g_oba5gIpM_5RvysoBrk6p1vc0Yn5PrfUfFrJCDVJqjsGg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112427071673793057383?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tina Battle",
+          "rating": 5,
+          "text": "This was my first time there.  The food was good, the atmosphere was great and the servers were friendly. We had a nice time and experience there. The food is mix of Egyptian dishes, American cuisine and Mediterranean flavors and dishes. Something for everyone and the prices are reasonable.",
+          "date": "2025-08-19T02:50:02.641Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pVMGEyRkVWblpYV1MxalIxUlRURnBuWms5VmMzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWOsEwK6Sz4JxoOFnb0xL9O_h7qqWeuECWkz94OqVHhn1m-I1g=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110646451388729156666?hl=en",
+          "reviewerNumberOfReviews": 43,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tani Lamb",
+          "rating": 5,
+          "text": "The grape leaves were delicious and my aunt enjoyed her chicken sandwich.",
+          "date": "2025-08-18T23:55:43.428Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xCQk1qRllOVmswYTBST2NGWllkRkoyYmpGRFFsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWWqAOse1xhAVfZl2CPAzHva-jJGcppCW8v4MWsbXGR_UkYu1RUng=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104423717717048637218?hl=en",
+          "reviewerNumberOfReviews": 71,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Alexandra Valentine",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-18T22:51:02.262Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xKdFEyVk9RVTAzU0dGMVdXVnlZelkyTUdWeVRYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX4Vne1Ii4gBWfc5WATzB_JrUW1PZfrPggyeKWVSTD_np0n_tm1lA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113889520032190979650?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Amy Harris",
+          "rating": 2,
+          "text": "It was a moderately busy lunch and there were a few servers on staff and several in the kitchen.   We waited a very long time to give our order and then 30 minutes just to get fountain sodas!!  45 minutes for food?!.  Other customers had walked out.  No idea what the issue was; no explanation given.  Food was average. One of the guests in our party asked for no cheese on the sandwich, but it was still served with cheese.  Not impressed.  Won’t be back. There are better lunch options in the city overall.",
+          "date": "2025-08-18T20:50:10.681Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25oVWVGWlROa2hoYjNKTlZscEdiMk41Yms5NVFrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKi8I07aIDRDhuH6HvIqVbX2HqYKgOC4DEKiUMX3aewr7aurg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107445028301951338324?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "negative"
+        },
+        {
+          "author": "F Chang",
+          "rating": 2,
+          "text": "We were dining as a party of four, and they brought out the food for three of us in a reasonable time.  Our fourth party member didn't get her food for another half hour!  Also, don't dine here if you don't like salty food.  Everything is pre salted to an excessive degree, even if you ask them to not add any salt at all.  Finally, the kitchen does not handle allergies well, even when given an allergy card with all allergies listed.",
+          "date": "2025-08-18T17:20:59.495Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21oSGNYaGhia05CYzFGb00ybHpXbXh3V0ZKS01rRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJleqA96RfibtgDK9GLMpOA--LXfFm4vsC3Bvi6TIQG3GHvLg=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105003407146846848677?hl=en",
+          "reviewerNumberOfReviews": 17,
+          "sentiment": "negative"
+        },
+        {
+          "author": "La Carter",
+          "rating": 5,
+          "text": "I can't get my mind off of the Mediterranean omelette-DELISH. It was my first time having it, but definitely won't be the last. Cozy atmosphere and friendly staff- I love it all. Thank you.",
+          "date": "2025-08-17T16:08:44.902Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2w5TlRXRXdPVGh3YkdwRE5WTmpXVUpFWm1KNlZtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLpdN7xLyaUgG91SyMtX2L2a-5LVmq9kF2JKCRtPW9OrpRX=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110562286181797486532?hl=en",
+          "reviewerNumberOfReviews": 26,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Swapna Kiran",
+          "rating": 1,
+          "text": "Heavy pine sol smell, unable to sit and eat. The food smelled like pine sol after a while. The water glasses were not washed properly, hair on cucumber pickle. Nauseous and Horrible service. Food quantity was good but service was bad.",
+          "date": "2025-08-16T18:36:34.389Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xoTWFUSmFOVUphZUY5TVYzZzVSVXRuUldkNWVuYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLfu3zN49Yyxw1o2zcxeGcGRnFmV4hCK5GdSRNvmYUnaTJ9aA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100125906486295867304?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Karen Tunnell (Me)",
+          "rating": 5,
+          "text": "The food is so amazing. If you go to Cleveland, Ohio you need to go to this restaurant. I tried the stuffed French Toast and was not disappointed. I only wish they were where I  lived.",
+          "date": "2025-08-15T14:53:41.444Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xKdFQyeFdNSHBETUVSYVRGaG9iaTEyWkRWSE9FRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJvEnKRWavlax7xE62xzJ5_H-_hbvCzWOgwFPVb73KFNDBuxtRz=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109331292831765022490?hl=en",
+          "reviewerNumberOfReviews": 139,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tori Smith",
+          "rating": 5,
+          "text": "This place is amazing, it was my first time here but my mom praises this place. The owner is wonderful, and everything is so fresh and tasty. Excellent service and atmosphere too. It's a must stop in Cleveland!",
+          "date": "2025-08-13T15:51:18.717Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25wUVRrOTNUV0pUUVRGMlRuUXRRVVJJT1dOdGRuYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXBeLChcPbwv6k9XmmMlnNtt6R-Y5HVpE_IScl-bStSw3gmVvgn=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113895957074092029231?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Alison Grenon",
+          "rating": 5,
+          "text": "The omelette was so fresh and fluffy and great portions. The staff was very friendly, welcoming, and attentive. Expansive menu with a lot of variety and options. Amazing Turkish coffee!! We can’t wait to come back for another meal.",
+          "date": "2025-08-13T15:13:53.721Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tVeE5scGtiWGhaTVdOSWNWaHplVU5sV25OWGJuYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJgQYDS0q3YEVjC12NMCkbE1avuSL-oQMNIRYCOBWa3dDdE1w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115609599858102034338?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Natalie Bear",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-13T13:37:02.662Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xWSVpGTlNaVzlDYjJOMWMzVjVTWE5QTlRWa1NWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUFpyQGWxd-Olv6nbSD89-UA0cUWBlmLWqqhAHivkYqmzR8QBQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108527762237366770361?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Barbie Edington",
+          "rating": 5,
+          "text": "Tasty hot meal. Fast & friendly service. The food smelled amazing when we walked in! Everyone was kind and service was quick. Everything was very flavorful! We will be back!",
+          "date": "2025-08-12T20:17:42.153Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tkcFVFaEdiMEZsV1doMllqWnpRelJKZHpGUVlYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLHFmbzjh0MfMnd7Pyw8JZnIq8gwDKyuXoDBtzrahSWqpFv3g=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111680602173866957388?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Coty Mitchell",
+          "rating": 5,
+          "text": "Really nice place. been here a few times they are always so nice they  got the food to the table in good time",
+          "date": "2025-08-11T21:57:18.704Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tvMFZVcHpZVVF3VGxOcmFrdEhWM3ByU20xblIzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU6RKc44ykKwR2AABPb5y494d_wV0RKYAHATbJSkS3SXwTa2paS=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115405388304094901460?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jeff",
+          "rating": 5,
+          "text": "Excellent lunch.",
+          "date": "2025-08-11T18:10:27.701Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21GcmVHNDFXa0ZYYWxBMlFreFhVRWxHUkVweU4yYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJU0IPC-mSHCvYCkwxhlEovYtis1pJGxaHBBf8K5tROicr1SGSv=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105822182214049026249?hl=en",
+          "reviewerNumberOfReviews": 49,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Potato Spud",
+          "rating": 4,
+          "text": "The food was amazing (a little pricy for the entrees but not terrible). Our waitress was great but be careful ordering the items that aren’t marked as quick because it took forever to actually get out food.",
+          "date": "2025-08-11T17:29:52.844Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT214Nk9WRkRTbTk1Y0c4Mll6bE1jbVJTUjJoWk4wRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVQsDlEPwoe-rS-XwRu485NGnSX7DhoY5aMi79ziUlQG_o9_3g=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102693190033385783311?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Daniel Mancini",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-11T16:52:20.861Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21ST1JUaHFhakJOVEdGNWVGaE1ielppU0dVd1pXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI-swchejARhl28Qiuy7VOHWrk9-ISD7pwu_xjdcSGrN5lGjQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103594147481261950639?hl=en",
+          "reviewerNumberOfReviews": 25,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Steve Steinolfson",
+          "rating": 5,
+          "text": "Great salads!  Fresh and very Impressed with lunch",
+          "date": "2025-08-11T15:13:45.015Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2poV2FscFRZa1ZhWVd4UU4ydE9TRmwzTFhoalJHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUzMCYrPqNIxFisPLPwJrK_OMmr80_j8c3hUxLeCbyK3n9GSeBB=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118149470618368459451?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Lesley MacPhail",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-11T15:10:22.986Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2taVk5FVm1TR1ZEU25aTFlrOVdOVVJhZDBwalYxRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLcKSPW2y3sD9MbHyrDhek-iY-qfjjpYM8FSS8cUpDYhuJ2gg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111771444814014771623?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ronald Edwards",
+          "rating": 4,
+          "text": "I got pancakes, Turkey bacon and eggs. The atmosphere was nice and clean. The breakfast was really good and cooked the way that I requested! I will definitely come back again!",
+          "date": "2025-08-11T14:48:19.444Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2paM1RqRklWMHhuV2pGcGJWYzNaa1YyUkc5T2FIYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI3HREtbVQ3d0g0fLCc0S4VpPO2ErikmrRSn0DHaztDf9fBGQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117491837915886413905?hl=en",
+          "reviewerNumberOfReviews": 28,
+          "sentiment": "positive"
+        },
+        {
+          "author": "brittany sokolowski",
+          "rating": 5,
+          "text": "Great meal!!",
+          "date": "2025-08-09T18:32:52.565Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xreVVWUldaRUZtWmpGV1FWVnNMV1IyY2pGeVJIYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVC31BiroTyDvelNe9EGV3txa1mkG4HKeCveYNCuC8QOxqVU-p9=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117030507424914988883?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Latrice",
+          "rating": 5,
+          "text": "Great food, great service and affordable prices. The breakfast slammer is a hit! Love  the new look/renovations!",
+          "date": "2025-08-08T04:22:17.042Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tSSE0xaE5XbTVSZVhnemNGOU9MVkpzV0hwWE5IYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIIrAAg_IJJbP30XB31h9wPc6tc2mRPKxVZFPL19a0bHC6xXg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110470373360227867833?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kaley Barota",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-07T01:19:03.052Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xabVJGZEZSbkYxZUd3emFWTndZM0pRVEZkaWVrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLwvjSMdAyGSccm_-a3dkZAeRpgcq-amMM4s4Hc23WM1-DHqIaE=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105044338401890598861?hl=en",
+          "reviewerNumberOfReviews": 31,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Daniel B",
+          "rating": 5,
+          "text": "The vibe is family. The food was wonderful.  We leaned into the Egyptian with the chicken Molokhya and Mashawi.  Chicken was moist and fall off the bone with the green sauce (soup?) that was herbaceous and delicious.  Mashawi was a delight of flavors on an open bread. The peppers were grilled into smoky candy because they brought out all the natural sugars. The meats were delightful and went with the garlic sauce perfectly.\n\nThis is my third time through Cleveland recently and third time eating here. Love it!!\n\nOh and the okra stew is just the best!!!!!",
+          "date": "2025-08-06T23:24:05.852Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21Oc2FYcGhUbUZHVUU5U1NraG5ibkozTTJkR05GRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVD6Cc6TmPTYC_uhS-lhGzvBAfA9368anLqM7peOFct1Qp4lFQf=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103231913057381884603?hl=en",
+          "reviewerNumberOfReviews": 158,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Rob Roy",
+          "rating": 5,
+          "text": "The food is amazing.  The Molokhai Stew and Chicken dish is unreal.  Authentic and delicious",
+          "date": "2025-08-06T23:00:56.753Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25kRmVuaEpTV0pEWTNKeU56SkVibFJ1VFZGYVUwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJOr6xnLL03uPkB296eLEdj9jBAu-IQ-5TGaM-HxqqqzE1Xiw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112649675154151018515?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mr.Yager ThaRager",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-03T18:21:06.620Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pRdGFYVmFXRVpXUjNWQmVIcEZSak42T1ZSck9XYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWBItrrhr5OB82NEg5cdwMdLP0DVjmkiBAVJVBCFighfs5hjI4=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112429407115187696365?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ken Ray",
+          "rating": 5,
+          "text": "Great fresh food ,and great ambiance. Hoping urban kitchen opens more restaurants",
+          "date": "2025-08-01T20:45:42.631Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2sxWE0wOXJiSGhQTWt4cFowOXBhVU5aVkZsYVYzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVlR0-c0ayzgEtYgeObH5PdC8SiWZXPvsGV5puQ0xHOgxBSo1E=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107926936198048976739?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        }
+      ],
+      "customerMoodAnalysis": {
+        "overallMood": "delighted",
+        "sentimentSummary": "Customers are genuinely thrilled with their experience. With an average 4.6/5 rating across 100 recent reviews, your restaurant consistently exceeds expectations.",
+        "sentimentDistribution": {
+          "ecstatic": 15,
+          "delighted": 67,
+          "satisfied": 11,
+          "neutral": 0,
+          "frustrated": 3,
+          "disappointed": 2,
+          "angry": 2
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "food quality",
+            "mentions": 42
+          },
+          {
+            "theme": "service excellence",
+            "mentions": 21
+          },
+          {
+            "theme": "atmosphere",
+            "mentions": 19
+          },
+          {
+            "theme": "speed of service",
+            "mentions": 13
+          },
+          {
+            "theme": "slow service",
+            "mentions": 13
+          },
+          {
+            "theme": "cleanliness",
+            "mentions": 7
+          },
+          {
+            "theme": "value for money",
+            "mentions": 6
+          },
+          {
+            "theme": "food issues",
+            "mentions": 2
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 34,
+          "satisfaction": 69,
+          "disappointment": 3,
+          "frustration": 0,
+          "anger": 1
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "Customers rave about the generous portions and excellent pricing, especially for downtown Cleveland. - social media marketing can showcase this strength",
+            "The restaurant's unique and eclectic decor, including live edge tables, is frequently praised, enhancing the dining experience. - social media marketing can showcase this strength",
+            "The authentic and delicious food, including standout dishes like the Lamb Shank, Bamia, and Turkish coffee, is a major draw for customers. - SEO services can leverage this for better visibility"
+          ],
+          "improvementOpportunities": [
+            "Long wait times and service delays - Boostly marketing services can improve this",
+            "Negative reviews and reputation issues - review management can address this concern",
+            "Lack of atmosphere/ambiance awareness - social media marketing can improve this area"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 100,
+          "averageRating": 4.6,
+          "ratingDistribution": {
+            "1": 3,
+            "2": 4,
+            "3": 4,
+            "4": 9,
+            "5": 80
+          },
+          "sentimentTrends": {
+            "trend": "declining",
+            "recentAverageRating": 4.1,
+            "previousAverageRating": 4.6,
+            "recentReviewsCount": 10
+          }
+        }
+      },
+      "examples": {
+        "positive": [
+          {
+            "author": "Izzah Sports",
+            "rating": 5,
+            "text": "Food was excellent. I love the new look! We will be back soon! iA",
+            "date": "2025-09-15T15:05:58.608Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2w5a2FETmtSV3A0U2psbFpEbERjMjVVZGsxTFRGRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWvgIW1YZPpu_qwfrvL-SZ5nM3kR-wEviwnWW0Kopdx6FTGKJA=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/102460686621022250714?hl=en",
+            "reviewerNumberOfReviews": 0
+          },
+          {
+            "author": "David Augenblick",
+            "rating": 5,
+            "text": "I had an appt at the Cleveland Cljnic.  While there, having fasted for 14 hours, I looked for a restaurant nearby that had an interesting menu. Urban Kitchen fit the bill. Our Falafel Bites were fantastic. My Reuben was great, real Deli quality. I had a homemade Peach Iced Tea that was the best I've ever had. I highly recommend Urban Kitchen.",
+            "date": "2025-09-14T22:30:21.263Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xkUlJtNHpVWGhOVm5wUmVXOUdiRVkxVW10aFpXYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVg0520LaUQzfxIJwz-i1gAWCd9pRRnac1LvaS3Cd4_5eglmIIN=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/101011402667084769075?hl=en",
+            "reviewerNumberOfReviews": 34
+          },
+          {
+            "author": "jay johnson",
+            "rating": 5,
+            "text": "Pastas is so good and there cheese cake whoa😋😋😋",
+            "date": "2025-09-14T17:38:31.161Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT210WlVEWmFkekZpZDNORlVUWjVOVXhoYUd3NU9HYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUgyldrwcrlYBk3-HB86khwXRJGK9F7h-wUExL9ePKlio_FR-q1=s1920-c-rp-mo-ba4-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/115984987250077676883?hl=en",
+            "reviewerNumberOfReviews": 74
+          }
+        ],
+        "neutral": [
+          {
+            "author": "Angel-Amenet",
+            "rating": 3,
+            "text": "Food is great.\nAlways an issue with timing receiving food weather dining in or ordering pick up. Do better.",
+            "date": "2025-09-12T23:02:37.451Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUMycllTTUx3EAE",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU053jUBqBpPAg-PpFgjXSKWv4GxN4_5VFDsmbWchQ252V-BNEXJg=s1920-c-rp-mo-ba5-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/102580785396393249875?hl=en",
+            "reviewerNumberOfReviews": 380
+          },
+          {
+            "author": "Garret Heiberger",
+            "rating": 3,
+            "text": "Been here twice, ordered from multiple other times.  Food is always good, keeps me coming back. Don’t go here if you have anywhere to be though, service is slow. Hole we were waiting to be served  multiple people, who were there before us and seated, left because  they had not been served. Multiple other people showed up and also left because they were addressed at all.  We ended up ordering online and just picking it up later.  Food was good",
+            "date": "2025-08-30T18:29:31.006Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tOcWJUSmxSMjFJTW5wWGNUUjJWRlZtYW05QlNHYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW-DdMCAMuMvF5NnFWtsbQMjnZHDCBVox17iZziWaZxkycl_jI=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/102455727136715145472?hl=en",
+            "reviewerNumberOfReviews": 5
+          },
+          {
+            "author": "Abigail Morton",
+            "rating": 3,
+            "text": "The food was good, but it seems like they could use a few additional staff to make sure customers are taken care of.",
+            "date": "2025-08-30T18:25:35.403Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25wc05tVXRVRTE0TVZKbGMxcFNSemh4WDFWcVlrRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWFUinWg2gndrHbLKIOD5eOH9qcZloVrHrSXK3mwnohel5dTe-8Cg=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/115151643107777576206?hl=en",
+            "reviewerNumberOfReviews": 14
+          }
+        ],
+        "negative": [
+          {
+            "author": "Victoria Miller",
+            "rating": 2,
+            "text": "I usually don’t like to leave a poor review but unfortunately this situation calls for it. We are here visiting a patient at Cleveland clinic & decided to take time out of an already long sad day to grab a bite. We had heard great things about Urban Kitchen so was excited to check it out. We are immediately greeted by the staff and sat down. Server comes to the table we chat about the menu and put in our order. We got a quesadilla for the app and 2 entrees. All the food comes out together, strange. We bring it to the servers attention, he offers to keep our entrees hot on the line, we declined. My aunt previously asked for extra sauce when she placed her order but the food came without it. We had to wait 7-10 mins before the server came back to let him know about the sauce. At this point the food is cold. We brought all of this to their attention and mind you there was a clear attitude. We asked to speak with a manger, apparently no manager on duty. Strange. My thing is you all are a restaurant next to a hospital. Most of your business probably comes from that campus. Have empathy, have a better attitude, have better hospitality. You should have that anyway as a restaurant but even more so because of the location. We come to Cleveland clinic quite often and we will never come back to this establishment. Control your attitude.",
+            "date": "2025-09-14T13:02:43.411Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xWaVdVZ3lWbmd4TUVOUlZsRTVia00zYkhkcVVWRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVcnq2EpN7vDBNhOV5J9tAwUZ42KV6d1aD6_3YzW5ABCZhz-Dk=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/111177628078532656467?hl=en",
+            "reviewerNumberOfReviews": 7
+          },
+          {
+            "author": "Sara Neff",
+            "rating": 1,
+            "text": "The website encouraged me to make a reservation. Upon arrival, we were not greeted, and waited 20 minutes to even place a water order.",
+            "date": "2025-09-13T22:23:24.241Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pGQ2JHTjBaRzVaV2s0Mlp6WlRSVm96V0dsb1QxRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUuVafC-OR45UnQP7nnkcCiN-nq3rBIaAuXxC56Ncj76X64xTc=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/107091125868313766601?hl=en",
+            "reviewerNumberOfReviews": 22
+          },
+          {
+            "author": "Teresa Rogers",
+            "rating": 1,
+            "text": "If you want horrible food that tastes like you are eating salt cubes it great but if you want to be able to taste the food don't waste your money. $75 and we couldn't even eat half our food",
+            "date": "2025-09-07T18:02:09.725Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21sMGEwOU5iMUJ1YW1nemQwdzFUbE14TjBoTmJWRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI9FeuLSx_yFThWm4lY4zVB2Mx_OE_xKJpgXcfx02gWUmY0CQ=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/103900717660563194615?hl=en",
+            "reviewerNumberOfReviews": 5
+          }
+        ]
+      },
+      "trends": {
+        "ratingTrend": "stable",
+        "volumeTrend": "stable",
+        "responseRate": 0,
+        "averageResponseTime": "No responses"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ]
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/urbankitchendeli",
+      "instagram": "https://www.instagram.com/urbankitchendeli",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 61,
+      "social": 100,
+      "local": 51,
+      "reviews": 94,
+      "overall": 77
+    },
+    "originalScores": {
+      "seo": 73,
+      "overallScore": 75,
+      "performance": 78,
+      "userExperience": 68
+    },
+    "migratedAt": "2025-09-16T00:37:21.302Z"
+  },
+  "metadata": {
+    "cachedAt": "2025-09-15T17:18:01.051Z",
+    "expiresAt": "2025-10-15T17:18:01.051Z",
+    "placeId": "ChIJD-WksZD7MIgR6mAfXAdT6nQ",
+    "restaurantName": "Urban Kitchen & Deli",
+    "cacheVersion": "2.0.0"
+  }
+}

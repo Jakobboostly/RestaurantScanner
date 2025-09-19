@@ -889,7 +889,150 @@ export function PremiumScoreDashboard({ scanResult, restaurantName, placeId }: P
                         </div>
                       </div>
                     </div>
-                    
+
+                    {/* Enhanced SEO Keyword Performance Section */}
+                    {scanResult.competitiveOpportunityKeywords && scanResult.competitiveOpportunityKeywords.length > 0 && (
+                      <div className="bg-gradient-to-br from-blue-50 to-purple-50 border border-blue-200 rounded-lg p-6">
+                        <div className="flex items-center justify-between mb-4">
+                          <h3 className="font-bold text-blue-900 flex items-center gap-2">
+                            <Search className="w-5 h-5 text-blue-600" />
+                            🎯 Your SEO Keyword Performance
+                          </h3>
+                          <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">
+                            {scanResult.competitiveOpportunityKeywords.length} Keywords
+                          </Badge>
+                        </div>
+                        <p className="text-blue-700 mb-6 text-sm">
+                          These are the key search terms your customers use to find restaurants like yours. See exactly where you rank and identify your biggest opportunities!
+                        </p>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                          {scanResult.competitiveOpportunityKeywords
+                            .sort((a, b) => {
+                              // Sort by position: worst first (0/null = 999), then ascending
+                              const aPos = a.position || 999;
+                              const bPos = b.position || 999;
+                              return bPos - aPos; // Descending for worst first
+                            })
+                            .map((keyword, index) => {
+                              const position = keyword.position || 0;
+                              const searchVolume = keyword.searchVolume || 0;
+                              const isRanked = position > 0;
+
+                              return (
+                                <div key={index} className="bg-white border border-blue-100 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                  <div className="flex justify-between items-start mb-3">
+                                    <div className="flex-1">
+                                      <h4 className="font-semibold text-gray-900 text-sm leading-snug">{keyword.keyword}</h4>
+                                      <div className="flex items-center gap-3 mt-2">
+                                        <span className="text-xs text-gray-600 flex items-center gap-1">
+                                          <BarChart3 className="w-3 h-3" />
+                                          {searchVolume.toLocaleString()} searches/month
+                                        </span>
+                                        {keyword.intent && (
+                                          <Badge
+                                            variant="outline"
+                                            className={
+                                              keyword.intent === 'local' ? 'bg-purple-50 text-purple-700 border-purple-200' :
+                                              keyword.intent === 'commercial' ? 'bg-green-50 text-green-700 border-green-200' :
+                                              keyword.intent === 'transactional' ? 'bg-orange-50 text-orange-700 border-orange-200' :
+                                              'bg-gray-50 text-gray-700 border-gray-200'
+                                            }
+                                          >
+                                            {keyword.intent}
+                                          </Badge>
+                                        )}
+                                      </div>
+                                    </div>
+                                    <div className="text-right ml-3">
+                                      {isRanked ? (
+                                        <div className={`inline-flex items-center gap-1 px-2 py-1 rounded-full text-xs font-medium ${
+                                          position <= 3
+                                            ? 'bg-green-100 text-green-700'
+                                            : position <= 10
+                                              ? 'bg-yellow-100 text-yellow-700'
+                                              : 'bg-red-100 text-red-700'
+                                        }`}>
+                                          {position <= 3 ? '🟢' : position <= 10 ? '🟡' : '🔴'}
+                                          #{position}
+                                        </div>
+                                      ) : (
+                                        <div className="inline-flex items-center gap-1 px-2 py-1 rounded-full text-xs font-medium bg-red-100 text-red-700">
+                                          🔴 Not Ranked
+                                        </div>
+                                      )}
+                                    </div>
+                                  </div>
+
+                                  <div className="flex justify-between items-center">
+                                    <div className="flex items-center gap-2">
+                                      {keyword.opportunity && (
+                                        <div className="text-xs text-blue-600 font-medium">
+                                          {keyword.opportunity}% opportunity
+                                        </div>
+                                      )}
+                                      {keyword.cpc && keyword.cpc > 0 && (
+                                        <span className="text-xs text-gray-500">
+                                          CPC: ${keyword.cpc.toFixed(2)}
+                                        </span>
+                                      )}
+                                    </div>
+                                    <div className="flex items-center gap-1">
+                                      {!isRanked && (
+                                        <Badge variant="destructive" className="text-xs">
+                                          High Priority
+                                        </Badge>
+                                      )}
+                                      {position > 10 && position <= 20 && (
+                                        <Badge variant="outline" className="text-xs bg-yellow-50 text-yellow-600 border-yellow-200">
+                                          Page 2
+                                        </Badge>
+                                      )}
+                                    </div>
+                                  </div>
+
+                                  {/* Quick action button for each keyword */}
+                                  <div className="mt-3 pt-3 border-t border-gray-100">
+                                    <button
+                                      onClick={() => {
+                                        const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(keyword.keyword)}`;
+                                        window.open(searchUrl, '_blank', 'noopener,noreferrer');
+                                      }}
+                                      className="text-xs text-blue-600 hover:text-blue-700 flex items-center gap-1 transition-colors"
+                                    >
+                                      <ExternalLink className="w-3 h-3" />
+                                      Check ranking for "{keyword.keyword}"
+                                    </button>
+                                  </div>
+                                </div>
+                              );
+                            })}
+                        </div>
+
+                        {/* Summary statistics */}
+                        <div className="mt-6 grid grid-cols-3 gap-4 pt-4 border-t border-blue-200">
+                          <div className="text-center">
+                            <div className="text-2xl font-bold text-green-600">
+                              {scanResult.competitiveOpportunityKeywords.filter(k => k.position && k.position <= 3).length}
+                            </div>
+                            <div className="text-xs text-gray-600">🟢 Top 3 Rankings</div>
+                          </div>
+                          <div className="text-center">
+                            <div className="text-2xl font-bold text-yellow-600">
+                              {scanResult.competitiveOpportunityKeywords.filter(k => k.position && k.position > 3 && k.position <= 10).length}
+                            </div>
+                            <div className="text-xs text-gray-600">🟡 Page 1 (4-10)</div>
+                          </div>
+                          <div className="text-center">
+                            <div className="text-2xl font-bold text-red-600">
+                              {scanResult.competitiveOpportunityKeywords.filter(k => !k.position || k.position > 10).length}
+                            </div>
+                            <div className="text-xs text-gray-600">🔴 Needs Work</div>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+
                     {/* Where You're Ranking - Domain Ranked Keywords */}
                     {Array.isArray((scanResult as any).domainRankedKeywords) && (scanResult as any).domainRankedKeywords.length > 0 && (
                       <div className="bg-white border border-gray-200 rounded-lg p-4">
@@ -947,71 +1090,6 @@ export function PremiumScoreDashboard({ scanResult, restaurantName, placeId }: P
                       </div>
                     )}
                     
-                    <div className="pt-4 border-t border-gray-200 space-y-3">
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm text-gray-600">SEO Score</span>
-                        <span className="font-bold text-lg text-[#5F5FFF]">{scanResult.seo || 0}/100</span>
-                      </div>
-                      
-                      {/* Where your competition is winning */}
-                      <div className="bg-[#5F5FFF]/5 border border-[#5F5FFF]/20 rounded-lg p-3 space-y-2">
-                        <h4 className="text-sm font-semibold text-[#5F5FFF] mb-2">Key Restaurant Keywords</h4>
-                        <div className="space-y-1">
-                          {(() => {
-                            // Show the 8 specific targeted keywords (cuisine near me, delivery, etc.)
-                            const targetedKeywords = scanResult.competitiveOpportunityKeywords || [];
-                            
-                            console.log('🔍 Frontend displaying targeted keywords:', targetedKeywords);
-                            
-                            if (targetedKeywords.length === 0) {
-                              return (
-                                <div className="text-xs text-gray-500 text-center py-2">
-                                  No targeted keyword data available yet.
-                                </div>
-                              );
-                            }
-                            
-                            return targetedKeywords
-                              .sort((a, b) => (b.position || 999) - (a.position || 999))
-                              .slice(0, 8).map((keyword: any, index: number) => (
-                              <div key={index} className="flex justify-between items-center text-xs">
-                                <span className="text-gray-700 flex-1 truncate pr-2">
-                                  "{typeof keyword === 'string' ? keyword : keyword.keyword}"
-                                </span>
-                                <div className="flex items-center gap-2">
-                                  <Badge 
-                                    variant="outline" 
-                                    className={`text-xs px-2 py-0 ${
-                                      keyword.position === null || keyword.position === 0 || keyword.position === undefined
-                                        ? 'bg-gray-100 text-gray-600 border-gray-200'
-                                        : keyword.position <= 5
-                                        ? 'bg-green-100 text-green-800 border-green-200'
-                                        : keyword.position <= 10
-                                        ? 'bg-yellow-100 text-yellow-800 border-yellow-200'
-                                        : keyword.position <= 20
-                                        ? 'bg-orange-100 text-orange-800 border-orange-200'
-                                        : 'bg-red-100 text-red-800 border-red-200'
-                                    }`}
-                                  >
-                                    {keyword.position === null || keyword.position === 0 || keyword.position === undefined ? 'Not Ranked' : `#${keyword.position}`}
-                                  </Badge>
-                                  <span className="text-xs text-gray-500">
-                                    {keyword.searchVolume === 0 || !keyword.searchVolume ? 
-                                      `${(1.1 + Math.random() * 0.6).toFixed(1)}k` : 
-                                      keyword.searchVolume > 1000 ? `${Math.round(keyword.searchVolume / 1000)}k` : keyword.searchVolume}
-                                  </span>
-                                </div>
-                              </div>
-                            ));
-                          })()}
-                          
-
-                        </div>
-                      </div>
-                      
-
-                      
-                    </div>
                   </div>
 
                   {/* Right Side - Keyword Search Tool */}
@@ -1146,149 +1224,6 @@ export function PremiumScoreDashboard({ scanResult, restaurantName, placeId }: P
                       })()}
                     </div>
                   </div>
-
-                  {/* Enhanced SEO Keyword Performance Section */}
-                  {scanResult.competitiveOpportunityKeywords && scanResult.competitiveOpportunityKeywords.length > 0 && (
-                    <div className="bg-gradient-to-br from-blue-50 to-purple-50 border border-blue-200 rounded-lg p-6">
-                      <div className="flex items-center justify-between mb-4">
-                        <h3 className="font-bold text-blue-900 flex items-center gap-2">
-                          <Search className="w-5 h-5 text-blue-600" />
-                          🎯 Your SEO Keyword Performance
-                        </h3>
-                        <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">
-                          {scanResult.competitiveOpportunityKeywords.length} Keywords
-                        </Badge>
-                      </div>
-                      <p className="text-blue-700 mb-6 text-sm">
-                        These are the key search terms your customers use to find restaurants like yours. See exactly where you rank and identify your biggest opportunities!
-                      </p>
-                      
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        {scanResult.competitiveOpportunityKeywords
-                          .sort((a, b) => {
-                            // Sort by position: worst first (0/null = 999), then ascending
-                            const aPos = a.position || 999;
-                            const bPos = b.position || 999;
-                            return bPos - aPos; // Descending for worst first
-                          })
-                          .map((keyword, index) => {
-                            const position = keyword.position || 0;
-                            const searchVolume = keyword.searchVolume || 0;
-                            const isRanked = position > 0;
-                            
-                            return (
-                              <div key={index} className="bg-white border border-blue-100 rounded-lg p-4 hover:shadow-md transition-shadow">
-                                <div className="flex justify-between items-start mb-3">
-                                  <div className="flex-1">
-                                    <h4 className="font-semibold text-gray-900 text-sm leading-snug">{keyword.keyword}</h4>
-                                    <div className="flex items-center gap-3 mt-2">
-                                      <span className="text-xs text-gray-600 flex items-center gap-1">
-                                        <BarChart3 className="w-3 h-3" />
-                                        {searchVolume.toLocaleString()} searches/month
-                                      </span>
-                                      {keyword.intent && (
-                                        <Badge 
-                                          variant="outline" 
-                                          className={
-                                            keyword.intent === 'local' ? 'bg-purple-50 text-purple-700 border-purple-200' :
-                                            keyword.intent === 'commercial' ? 'bg-green-50 text-green-700 border-green-200' :
-                                            keyword.intent === 'transactional' ? 'bg-orange-50 text-orange-700 border-orange-200' :
-                                            'bg-gray-50 text-gray-700 border-gray-200'
-                                          }
-                                        >
-                                          {keyword.intent}
-                                        </Badge>
-                                      )}
-                                    </div>
-                                  </div>
-                                  <div className="text-right ml-3">
-                                    {isRanked ? (
-                                      <div className={`inline-flex items-center gap-1 px-2 py-1 rounded-full text-xs font-medium ${
-                                        position <= 3 
-                                          ? 'bg-green-100 text-green-700' 
-                                          : position <= 10 
-                                            ? 'bg-yellow-100 text-yellow-700'
-                                            : 'bg-red-100 text-red-700'
-                                      }`}>
-                                        {position <= 3 ? '🟢' : position <= 10 ? '🟡' : '🔴'}
-                                        #{position}
-                                      </div>
-                                    ) : (
-                                      <div className="inline-flex items-center gap-1 px-2 py-1 rounded-full text-xs font-medium bg-red-100 text-red-700">
-                                        🔴 Not Ranked
-                                      </div>
-                                    )}
-                                  </div>
-                                </div>
-                                
-                                <div className="flex justify-between items-center">
-                                  <div className="flex items-center gap-2">
-                                    {keyword.opportunity && (
-                                      <div className="text-xs text-blue-600 font-medium">
-                                        {keyword.opportunity}% opportunity
-                                      </div>
-                                    )}
-                                    {keyword.cpc && keyword.cpc > 0 && (
-                                      <span className="text-xs text-gray-500">
-                                        CPC: ${keyword.cpc.toFixed(2)}
-                                      </span>
-                                    )}
-                                  </div>
-                                  <div className="flex items-center gap-1">
-                                    {!isRanked && (
-                                      <Badge variant="destructive" className="text-xs">
-                                        High Priority
-                                      </Badge>
-                                    )}
-                                    {position > 10 && position <= 20 && (
-                                      <Badge variant="outline" className="text-xs bg-yellow-50 text-yellow-600 border-yellow-200">
-                                        Page 2
-                                      </Badge>
-                                    )}
-                                  </div>
-                                </div>
-                                
-                                {/* Quick action button for each keyword */}
-                                <div className="mt-3 pt-3 border-t border-gray-100">
-                                  <button 
-                                    onClick={() => {
-                                      const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(keyword.keyword)}`;
-                                      window.open(searchUrl, '_blank', 'noopener,noreferrer');
-                                    }}
-                                    className="text-xs text-blue-600 hover:text-blue-700 flex items-center gap-1 transition-colors"
-                                  >
-                                    <ExternalLink className="w-3 h-3" />
-                                    Check ranking for "{keyword.keyword}"
-                                  </button>
-                                </div>
-                              </div>
-                            );
-                          })}
-                      </div>
-
-                      {/* Summary statistics */}
-                      <div className="mt-6 grid grid-cols-3 gap-4 pt-4 border-t border-blue-200">
-                        <div className="text-center">
-                          <div className="text-2xl font-bold text-green-600">
-                            {scanResult.competitiveOpportunityKeywords.filter(k => k.position && k.position <= 3).length}
-                          </div>
-                          <div className="text-xs text-gray-600">🟢 Top 3 Rankings</div>
-                        </div>
-                        <div className="text-center">
-                          <div className="text-2xl font-bold text-yellow-600">
-                            {scanResult.competitiveOpportunityKeywords.filter(k => k.position && k.position > 3 && k.position <= 10).length}
-                          </div>
-                          <div className="text-xs text-gray-600">🟡 Page 1 (4-10)</div>
-                        </div>
-                        <div className="text-center">
-                          <div className="text-2xl font-bold text-red-600">
-                            {scanResult.competitiveOpportunityKeywords.filter(k => !k.position || k.position > 10).length}
-                          </div>
-                          <div className="text-xs text-gray-600">🔴 Needs Work</div>
-                        </div>
-                      </div>
-                    </div>
-                  )}
                 </div>
               )}
 

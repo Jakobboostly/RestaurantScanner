@@ -3,11 +3,11 @@
     "domain": "locations.via313.com",
     "restaurantName": "Via 313 Pizza",
     "placeId": "ChIJnxnp9YaBTYcR16Tx4hZnUNk",
-    "overallScore": 72,
-    "performance": 72,
-    "seo": 70,
+    "overallScore": 84,
+    "performance": 100,
+    "seo": 58,
     "mobile": 52,
-    "userExperience": 62,
+    "userExperience": 94,
     "issues": [
       {
         "type": "seo",
@@ -2571,13 +2571,27 @@
     },
     "profileAnalysis": null,
     "serpScreenshots": [],
-    "restaurantSearchScreenshot": null
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 58,
+      "social": 100,
+      "local": 84,
+      "reviews": 94,
+      "overall": 84
+    },
+    "originalScores": {
+      "seo": 70,
+      "overallScore": 72,
+      "performance": 72,
+      "userExperience": 62
+    },
+    "migratedAt": "2025-09-16T00:37:21.641Z"
   },
   "metadata": {
     "cachedAt": "2025-08-26T14:52:38.621Z",
     "expiresAt": "2025-09-02T14:52:38.621Z",
     "placeId": "ChIJnxnp9YaBTYcR16Tx4hZnUNk",
     "restaurantName": "Via 313 Pizza",
-    "cacheVersion": "1.0.0"
+    "cacheVersion": "2.0.0"
   }
 }

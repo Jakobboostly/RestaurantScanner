@@ -1,0 +1,1230 @@
+{
+  "data": {
+    "domain": "www.montereyspizza.com",
+    "restaurantName": "Monterey's Pizza",
+    "placeId": "ChIJ8yDbYOSwt4kRlQsWU8UnVA0",
+    "overallScore": 72,
+    "performance": 100,
+    "seo": 58,
+    "mobile": 53,
+    "userExperience": 75,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "pizza near me",
+        "position": 0,
+        "searchVolume": 12100,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery Alexandria",
+        "position": 0,
+        "searchVolume": 110,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best pizza Alexandria",
+        "position": 0,
+        "searchVolume": 590,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza",
+        "position": 0,
+        "searchVolume": 8100,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza places near me",
+        "position": 0,
+        "searchVolume": 390,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza Alexandria Virginia",
+        "position": 0,
+        "searchVolume": 90,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery near me",
+        "position": 0,
+        "searchVolume": 1300,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza open now",
+        "position": 0,
+        "searchVolume": 20,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 13,
+        "keywords_appeared": 1,
+        "total_keywords": 8,
+        "average_position": 4,
+        "best_position": 4
+      },
+      "keyword_results": [
+        {
+          "keyword": "pizza near me",
+          "found": true,
+          "position": 4,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Monterey's Pizza",
+            "address": "Alexandria, VA ",
+            "website": "http://www.montereyspizza.com/",
+            "phone": "(703) 683-9400",
+            "rating": 4.2,
+            "reviews": 232
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Andy's Pizza Old Town",
+              "address": "Alexandria, VA ",
+              "website": "http://www.eatandyspizza.com/",
+              "rating": 4.8,
+              "reviews": 1900
+            },
+            {
+              "position": 2,
+              "name": "Emmy Squared Pizza: Old Town Alexandria",
+              "address": "Alexandria, VA ",
+              "website": "",
+              "rating": 4.3,
+              "reviews": 835
+            },
+            {
+              "position": 3,
+              "name": "RedRocks Old Town",
+              "address": "Alexandria, VA ",
+              "website": "http://www.redrocksdc.com/",
+              "rating": 4.2,
+              "reviews": 978
+            }
+          ]
+        },
+        {
+          "keyword": "pizza",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Domino's Pizza",
+              "address": "Alexandria, VA ",
+              "website": "",
+              "rating": 2.8,
+              "reviews": 514
+            },
+            {
+              "position": 2,
+              "name": "Papa Johns Pizza",
+              "address": "Alexandria, VA ",
+              "website": "",
+              "rating": 2.8,
+              "reviews": 162
+            },
+            {
+              "position": 3,
+              "name": "Andy's Pizza Old Town",
+              "address": "Alexandria, VA ",
+              "website": "http://www.eatandyspizza.com/",
+              "rating": 4.8,
+              "reviews": 1900
+            }
+          ]
+        },
+        {
+          "keyword": "best pizza Alexandria",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Andy's Pizza Old Town",
+              "address": "Alexandria, VA ",
+              "website": "http://www.eatandyspizza.com/",
+              "rating": 4.8,
+              "reviews": 1900
+            },
+            {
+              "position": 2,
+              "name": "Stracci Pizza",
+              "address": "Alexandria, VA ",
+              "website": "http://www.straccipizza.com/",
+              "rating": 4.7,
+              "reviews": 667
+            },
+            {
+              "position": 3,
+              "name": "Sam’s Pizza Cafe’",
+              "address": "Alexandria, VA ",
+              "website": "https://samspizzacafe.com/",
+              "rating": 4.9,
+              "reviews": 154
+            }
+          ]
+        },
+        {
+          "keyword": "pizza delivery near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Andy's Pizza Old Town",
+              "address": "Alexandria, VA ",
+              "website": "http://www.eatandyspizza.com/",
+              "rating": 4.8,
+              "reviews": 1900
+            },
+            {
+              "position": 2,
+              "name": "Emmy Squared Pizza: Old Town Alexandria",
+              "address": "Alexandria, VA ",
+              "website": "",
+              "rating": 4.3,
+              "reviews": 835
+            },
+            {
+              "position": 3,
+              "name": "Jet's Pizza",
+              "address": "Alexandria, VA ",
+              "website": "https://www.jetspizza.com/stores/virginia/alexandria/6-e-glebe-rd/",
+              "rating": 4.6,
+              "reviews": 187
+            }
+          ]
+        },
+        {
+          "keyword": "pizza Alexandria Virginia",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Andy's Pizza Old Town",
+              "address": "Alexandria, VA ",
+              "website": "http://www.eatandyspizza.com/",
+              "rating": 4.8,
+              "reviews": 1900
+            },
+            {
+              "position": 2,
+              "name": "Emmy Squared Pizza: Old Town Alexandria",
+              "address": "Alexandria, VA ",
+              "website": "",
+              "rating": 4.3,
+              "reviews": 835
+            },
+            {
+              "position": 3,
+              "name": "RedRocks Old Town",
+              "address": "Alexandria, VA ",
+              "website": "http://www.redrocksdc.com/",
+              "rating": 4.2,
+              "reviews": 978
+            }
+          ]
+        },
+        {
+          "keyword": "top pizza Alexandria",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Andy's Pizza Old Town",
+              "address": "Alexandria, VA ",
+              "website": "http://www.eatandyspizza.com/",
+              "rating": 4.8,
+              "reviews": 1900
+            },
+            {
+              "position": 2,
+              "name": "Stracci Pizza",
+              "address": "Alexandria, VA ",
+              "website": "http://www.straccipizza.com/",
+              "rating": 4.7,
+              "reviews": 667
+            },
+            {
+              "position": 3,
+              "name": "Emmy Squared Pizza: Old Town Alexandria",
+              "address": "Alexandria, VA ",
+              "website": "",
+              "rating": 4.3,
+              "reviews": 835
+            }
+          ]
+        },
+        {
+          "keyword": "pizza restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Andy's Pizza Old Town",
+              "address": "Alexandria, VA ",
+              "website": "http://www.eatandyspizza.com/",
+              "rating": 4.8,
+              "reviews": 1900
+            },
+            {
+              "position": 2,
+              "name": "Lena's Wood-Fired Pizza & Tap - Italian Cuisine",
+              "address": "Alexandria, VA ",
+              "website": "https://lenaswoodfire.com/?utm_source=google",
+              "rating": 4.3,
+              "reviews": 2700
+            },
+            {
+              "position": 3,
+              "name": "Emmy Squared Pizza: Old Town Alexandria",
+              "address": "Alexandria, VA ",
+              "website": "",
+              "rating": 4.3,
+              "reviews": 835
+            }
+          ]
+        },
+        {
+          "keyword": "pizza food Alexandria",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Andy's Pizza Old Town",
+              "address": "Alexandria, VA ",
+              "website": "http://www.eatandyspizza.com/",
+              "rating": 4.8,
+              "reviews": 1900
+            },
+            {
+              "position": 2,
+              "name": "Emmy Squared Pizza: Old Town Alexandria",
+              "address": "Alexandria, VA ",
+              "website": "",
+              "rating": 4.3,
+              "reviews": 835
+            },
+            {
+              "position": 3,
+              "name": "RedRocks Old Town",
+              "address": "Alexandria, VA ",
+              "website": "http://www.redrocksdc.com/",
+              "rating": 4.2,
+              "reviews": 978
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"pizza\", \"best pizza Alexandria\", \"pizza delivery near me\", \"pizza Alexandria Virginia\", \"top pizza Alexandria\", \"pizza restaurant near me\", \"pizza food Alexandria\" - optimize Google My Business profile with these keywords",
+        "Ranking below #1 for 1 keywords - increase customer reviews and engagement to improve rankings",
+        "Low Local Pack visibility (13%) - audit your Google My Business completeness, categories, and local citations"
+      ],
+      "scan_metadata": {
+        "location": "Alexandria,Virginia,United States",
+        "timestamp": "2025-09-15T16:01:00.726Z",
+        "total_scan_time_ms": 60053
+      }
+    },
+    "competitors": [
+      {
+        "name": "Virtue Feed & Grain",
+        "domain": "virtuefeedgrain.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 817,
+        "keywords": 31,
+        "domainAuthority": 80,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+150 keywords",
+        "authorityGap": 5,
+        "backlinks": 1174
+      },
+      {
+        "name": "Ada's on the River",
+        "domain": "adasontheriver.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 977,
+        "keywords": 60,
+        "domainAuthority": 87,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+150 keywords",
+        "authorityGap": 5,
+        "backlinks": 1070
+      },
+      {
+        "name": "Matt & Tony's All Day Kitchen + Bar",
+        "domain": "matttonysalldaykitchenbar.com",
+        "performance": 92,
+        "seo": 83,
+        "accessibility": 78,
+        "bestPractices": 87,
+        "overallScore": 85,
+        "rating": 4.6,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1096,
+        "keywords": 24,
+        "domainAuthority": 79,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+200 keywords",
+        "authorityGap": 6,
+        "backlinks": 1116
+      },
+      {
+        "name": "The Majestic",
+        "domain": "themajestic.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1117,
+        "keywords": 48,
+        "domainAuthority": 80,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+150 keywords",
+        "authorityGap": 5,
+        "backlinks": 943
+      },
+      {
+        "name": "Josephine",
+        "domain": "josephine.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 834,
+        "keywords": 58,
+        "domainAuthority": 69,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+150 keywords",
+        "authorityGap": 5,
+        "backlinks": 1047
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 72,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-15T16:01:10.605Z",
+    "businessProfile": {
+      "name": "Monterey's Pizza",
+      "address": "1000 N Fayette St, Alexandria, VA 22314, USA",
+      "rating": 4.2,
+      "reviewCount": 232,
+      "phoneNumber": "(703) 683-9400",
+      "website": "http://www.montereyspizza.com/",
+      "formatted_address": "1000 N Fayette St, Alexandria, VA 22314, USA",
+      "address_components": [
+        {
+          "long_name": "1000",
+          "short_name": "1000",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "North Fayette Street",
+          "short_name": "N Fayette St",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Old Town West",
+          "short_name": "Old Town West",
+          "types": [
+            "neighborhood",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Alexandria",
+          "short_name": "Alexandria",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Virginia",
+          "short_name": "VA",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "22314",
+          "short_name": "22314",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "state": "Virginia",
+      "city": "Alexandria",
+      "place_id": "ChIJ8yDbYOSwt4kRlQsWU8UnVA0",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "establishment",
+        "food",
+        "meal_delivery",
+        "meal_takeaway",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "reviews": [
+        {
+          "author_name": "Jeffrey Gelin",
+          "author_url": "https://www.google.com/maps/contrib/109242465366861299785/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIcbjaOJn01OusAqWRjwWLZolb9yLv72yXZBdok8EWfuBsF-w=s128-c0x00000000-cc-rp-mo",
+          "rating": 1,
+          "relative_time_description": "2 weeks ago",
+          "text": "Pizza is good here. However the place is infested with flies around the soda machine. There has been a dead roach on the ground for two days in a row now and the outside seating area is roach infested.",
+          "time": 1756533264,
+          "translated": false
+        },
+        {
+          "author_name": "Yohannes",
+          "author_url": "https://www.google.com/maps/contrib/114896148929355746374/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVa72YgnEQziqZWRUXCCq8ogMFXoAHy5TWkeo4XSbTJuD4K8pBI=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "The pizza at this place is amazing. My friend ordered for our superball events, I loved the test  and I stopped by recently and tried the veggie pizza and chicken wings. They were both delicious! The service was great and the owner is very friendly. I highly recommend giving it a try.",
+          "time": 1711427322,
+          "translated": false
+        },
+        {
+          "author_name": "My Aloof Vagina",
+          "author_url": "https://www.google.com/maps/contrib/107633971326597010698/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW9jNWEySRKuNWQpE7PZjQsF5tCv3G1HlIPQ7qRFWOapFTym6M=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "This is the first time I have ordered delivery from Montereys Pizza. And it was a little complicated for delivery instructions and they handled it like champs! The pizza was so hot and fresh we had to make the kids wait a couple minutes before they ate it! (I suspect some of the adults foolishly burned their mouths.). We order this pizza for pick up all the time. So happy to learn that delivery matches the timeline they quote and that it still shows up delicious and excellent. Still - almost 20 years in - Montereys is some of the best crust we’ve ever had! Yum!",
+          "time": 1743898353,
+          "translated": false
+        },
+        {
+          "author_name": "Dana Mock",
+          "author_url": "https://www.google.com/maps/contrib/100487879794635230986/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWFJ39aCFrtfAr6okhzPPw7f1CyrUkrfNUno--MeZlrynw6fdMX=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "Best pizza around! Any of the gourmet pizzas are fantastic but especially the BBQ Chicken pizza is amazingly good. Super busy location, so order online for pickup or come in afternoon when not as crowded. Depending upon who is at register, personality/friendliness can be mixed (as other posts mentioned) but you are paying for pizza not a new best friend!",
+          "time": 1681413653,
+          "translated": false
+        },
+        {
+          "author_name": "Bahar Kareem",
+          "author_url": "https://www.google.com/maps/contrib/108511043067074004612/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVJlBGuNamY2w4UBW5HEE9HYYD3oBRm2f4KVRtwn_MEjxgKuTrmUA=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "a year ago",
+          "text": "This place is downstairs of my home, it saves me a lot of time. Overall, the pizza is realllllllyyyy good when its fresh a little bit not good after few minutes.",
+          "time": 1698067754,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 3000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112404594817303162975\">Oscar Prado</a>"
+          ],
+          "photo_reference": "AciIO2dcio3TWW3g9volY_8vo0sReqD9tvmG5heFFM1Yf8MQaQvSWTQyRJrBw7X6eJcyvX4cwZZ5I1DT8G-tmbC19MIV-4x66tUnnFpwr41TvY123Rqu1Bm454sGdU4fTZ_mKQUyMt3om51Phk66eicXKgW8TGpW4MYPB-X_xwu0zO6f-mThQKFxu8I1S6EU-P5bUkXPwSxkYQwYNwVG9BPkcNhtszrxpBpxHz8iFmtOxatzTH39UlQx_W-PAnhDq-CK-SETQMvLEE5Ur5Uj8qvKibgPtHjl8a_9Bzvv_c7stW6QAh3VKrNKuxnfp7lSwjmTjeQ1D0iRorSFIaHt7Vj2yx-bX1XqFVwGL_s_PJyTEP6BUCEYwWAaf-wVbAUStKvbcRQHQO5dE51ZD-YWF4XHQjPGeHfJYyt1TCgJlw5iF3vhJasK",
+          "width": 4000
+        },
+        {
+          "height": 571,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116824181620304768297\">Monterey&#39;s Pizza</a>"
+          ],
+          "photo_reference": "AciIO2dvpPk9FlWwIJ_DowTeH0bCRfzYXtFchx8g4SEnkjBuj5bvaU8ghL_zr8js32vLJAWdCEIYHCF30dzLv8pNfsDhij9v8vkz-SMwKqw4w1TYOwZWM7-5CDhdDdzrNZIKU2j5JWGrPuRKo59BX13rPVo1Q7K-9HrTUxuGBgAyruxkDKO9HMo9WVeBFX_zi4TbkCJ_wlRD9FgsmauU6L8rBHnBjjL2Ev1P7Sy1dk_Xb4Ty_xxfFx2YeoDFNV6q5fIbsXfD7rg1Hlx7gvK-46-yFA-OXctv4XF4Ia8mbiaJzjzaQg",
+          "width": 800
+        },
+        {
+          "height": 533,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116824181620304768297\">Monterey&#39;s Pizza</a>"
+          ],
+          "photo_reference": "AciIO2e9Ci44ByWQLUVDgWd0V9C82cF9WfbgBGvdXJXUAon71VTpBFtpzT7_KZEy9LN4sNEsL__KkQbrz9pC93rUVNPxkeqA7nlAWUvN7ZKtcwGLUAFYalc8eMSCyz5qJZx0630A9-RuVM3h9yEfxM2QEmazxidBQqvyMW2ZtMIx75i5syQBAC0XKMZjO2P0y7bqIaqqd4odn2_AJ0WmRKLvZtQW1W9JzI17Tm8Hozt2YgTLeerYVuuzbPipdnw5_ETdBJtPnjP4KQSEfMblllvDV4vLPPYiCKoqoqzuK8Pg28COhQ",
+          "width": 800
+        },
+        {
+          "height": 664,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116824181620304768297\">Monterey&#39;s Pizza</a>"
+          ],
+          "photo_reference": "AciIO2ebaB3qfD4OMjxLS3375K8zkHC8DVTCjRn1JuGt7rXil_oXNZdwPC_zqzLeCV1g4z9VEhICYSIeXr668nLkzBGIaCQCD0QN9nGMTgJsIGHe6ICWPRREqsGyYL6so3dKLYODmro7UyQDV8WpgveRfxpUxgQQT0LhR6MeaO0_xmogVG6kpBdvIq2xD3uWXhbD6MK0tU5eqdU7NrAp4LGLctO9ajRcidHlo2QGnVV8eAZB5EmYrwgna4aKdai8aU3xSUoyTIeYzftrO2XhOtjZXSjECcXi28Ozk495findnJh3lQ",
+          "width": 1017
+        },
+        {
+          "height": 572,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116824181620304768297\">Monterey&#39;s Pizza</a>"
+          ],
+          "photo_reference": "AciIO2eWOp1jJ7rJY8OM_A5Y6RBiPYHEpM1g-COcncx27qWpATLHf4PRbb0TvRMQCS32vJDK-pXNmhG1fo4NAmDxV-YJYoHO15B3mqztYmkKkLbsQIZHiFO_7AfBivt7i8tBwGE2uQNhjGCIi7CcRvqE3CP6nsMuuQ6QL2hSl5_Bsvr--GuZi5N4KbqThrN93fgIMfoJdArNiVWGqgxATExfu8pcEJAvFjjAjQnV4hlLiKtvm482P044t-pMxndQY6rocxT3NF-ng-StAgRvI7cIC5_Y3P9bNBj5hG24rDfCotOMJA",
+          "width": 800
+        },
+        {
+          "height": 573,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116824181620304768297\">Monterey&#39;s Pizza</a>"
+          ],
+          "photo_reference": "AciIO2ep0eyRi--HdpAErDeBDo0H1ks1tjgVo-LjTerAIQSdH18FfaSw4pBBEtP9aYXXnxXemnlBtKrwrfX3VRo5_Fk3QmXEae5GMRbcRo27SMQPGKYvcf0KQyqCytWb8xhE8zfsMpmwlAX_IM2acLpEZSz0lHNt52YzVXJ_zQXu4EPctq5J86_aesSB-ZZICWXZUPB6IospqwIgrmMMTbGk8gIIcpWCvjOlYgxRzr0e1KDrJltDUF92MCiz6rOfcD-YZ9KXCdWu5WnKYoWbMk1oNH9q-0Lserwz0nukkbAEXIzDxg",
+          "width": 800
+        },
+        {
+          "height": 571,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116824181620304768297\">Monterey&#39;s Pizza</a>"
+          ],
+          "photo_reference": "AciIO2dqQq6IT86-Zd1QeJtjgn7Kn3yNJdBJfvig2aKPEuYbCXtsCuu_qAkHqRvjGI_nkOKtLqft1Coj47BHwi7s_MOK_GcD3NKAr7uh8dlXQrLLelEE8-aU91YDSTtn4DqCwlQOqfzAQUIhCVCHw_ohS2qJlkqSgdYhgTm1RYY-PMWlZT96v7CU93JtTIlmnEhxSrFmA41KK4DJ9KrPRbrjM6mVmTX-Ijc8FJwq9JVlDBp6tJseLVJO4Kzyz38a_S2OMHn0gl-GidKOM-6dby1slyryNyL6-Yb0wfh2rvYYu8HoVA",
+          "width": 800
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105015463477097204929\">omarwanderlust</a>"
+          ],
+          "photo_reference": "AciIO2fIF_khdhHbfjv0eQDH7ccNdfkJc-C5sJMXvBQTQgTiYgedJOxAkIh3wCQKlPE43OgDBr1Gw3l2xJr7mpNk-y90RDc7gNRFax9OXTQRxNib6-u6iwI_QtfM7dmncPRzv45JFkfREAftjGDznBf1lyTmB-EvxKgDPzgi5J_m2V0gsKZPuX_i-hY63qgJi2KvC5PqncFl8pLr0FpHSGHYX0m-RvW7g9iVEItCzfvLEzlOEF06cMQ0hyKUiyWzEQn7c75cQ9mnq4jo5WZUVwVlXFwDzxxxF9nkJ6iJ3iAcgjz2dw0JIZMd6_uI0moBb0ZII3P-uMJ60PgwyUgKSQq6R6hJgWKKaBxW7eOApeLIethCOpcwMgfqKfR-kgheJmZkmKn0ToS6aI4gQXWpzDzC4yWNeDZbTBwntOYq4egAk0I",
+          "width": 3024
+        },
+        {
+          "height": 3000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112404594817303162975\">Oscar Prado</a>"
+          ],
+          "photo_reference": "AciIO2c88_N4DSPCFstsJjK1ET-XvQ4OQznV2D4_Ipk2v-tH2w4jmDBIuAozGMxYMsMIL2atfaGNvWh7kwK-CUITQKYNrsJYn4LDcJ2uNRaDUM57qTkxuGRNXN08_HqV2ZdSfujIlTG-Au5aA4LLL3ocliRE9pxELp9IjFrTqip7C9rWUyxxDkdgywow1V7MBk8NUdRCuipp07IVfa8uwYt96ypmxaSgIa0ajlJIzsMALIbAY6pOJIx_PqaP8okKqZ5jNfmJu0JzRNmsfyn7w184yB0JBQ9lVJ4kajZpCTNPYBCI69P7ivbfEFS1yF7aDAHz5wbHA15kgBwlbiHAGXPcNS91R-fP_nb-l1DcTFh7EnsHMN_LEwWGN6bHg35TZ9JLpUQ-Mul4buyq6xaqDP1xOvAlpJPpl4GBn1caa2LxYs8fpQ",
+          "width": 4000
+        },
+        {
+          "height": 573,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116824181620304768297\">Monterey&#39;s Pizza</a>"
+          ],
+          "photo_reference": "AciIO2fCRPWv3lc8LbNdguWznKleSsq0aqOTCIXQ5Ba2-QU2_a9uNMmxfCsY6CAdS0AiCPg-zpRjlLfUiyntD2vV_JfVZb-lkZk_bVm-209fa6F2deBa5OhclYbEV31yEz-MbNYD2bJ_mx4mDNpqXgESzxc3IbJQpNPBVZbstQXtyqqC8yUKgLb8WnSaKZaJ9Clemh9vyBKHf7YLfNLkVGH5vlM6x_JrQ404fMpPH_wEzwR86hcSOZNpj1sQtfjEjHOeFQMEIhlF2p5Zfw71rGB4kwX99REoCkV6J8JotnQ_tT3mlg",
+          "width": 800
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "2100"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2200"
+            },
+            "open": {
+              "day": 1,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2200"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2200"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2200"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2300"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2300"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 11:00 AM – 10:00 PM",
+          "Tuesday: 11:00 AM – 10:00 PM",
+          "Wednesday: 11:00 AM – 10:00 PM",
+          "Thursday: 11:00 AM – 10:00 PM",
+          "Friday: 11:00 AM – 11:00 PM",
+          "Saturday: 11:00 AM – 11:00 PM",
+          "Sunday: 11:00 AM – 9:00 PM"
+        ]
+      },
+      "price_level": 2,
+      "editorial_summary": {
+        "language": "en",
+        "overview": "Pizzas, subs, wings, salads & more are served at this carryout & delivery spot with no seating."
+      },
+      "url": "https://maps.google.com/?cid=960436348992752533",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2cTxZewR_9aad2TjD1zZKvgyaRPATofM5p4U2zJpkKxrA_MX5DHOdBqdcnXtj06KiNE8B7VPFfI-xbvtYH-7NyfZnw8tSX7ov5522rr9RfPIAvw6kDZWzea_8UBqOx2p3mMf4TnqH6XQxXykqEGbb9G-ovQ8r2jYIInH1glnsUkLXKJ_JvsEmTWnjkLnnLGhsK_09GimF1APkSMRMHv750aaslZCBLGyYSfFZohtYfTUP1f2eui0jfb6JDp001xPDXKeLt6zHuv7L0yd8M0zR436SBULaeF3qUgdVb1cEEUjXi8uTZs2kZ2LYZkAX3dJQ-xIz-T0TKognUD4iUKuUSVVOXYyMGA0HyZ3ZI7FMhfqA84WgAaBoFTLYFaG9D0n73ugBkc1BQRXqg0C6NuUQ4w84LOgkS1vf2_W5hR1pEaF4pF&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2eeuj5beFQFgniEzvr3GpT9w9GLsn_0SANUYrk9mtZ3w9cgzbv0VG2cIErcggPKx76CKiqOklmdCMJUgiwru3BF2o8j1aNbKmdY7AyOYRVhEycwqranGhrqzsWXRkx0EHJSwvR3XheBg8Da1rOj7YHAqxpUD8EQxIYM5q2d68ihLLykieCZUnrgH83j1lty6Hs0Gz3jZ2tXLf3ei_AjhGXHc-GvhRo1xypmbY2pCymzl2cR1wkiuuGqCPlsPLu50j1MkH-Hoa8rMYWhfI4QyaIIHs_Pk2j92wB59YHW8J23CQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2cNxWc3p9cP0zpeTgnrJCW_rv8hIUIoinC8yzOURRrOnNp1RCOamAUbhAQ_ZD5S4PsqtelFP0Z_iTy9mf3Vv-IOf2tI6g_YVrg61z1kchJowzSTMl3sbacILqWF9B24udCS4z0q0i40bY13Ds2Uhrmii1c3M0DQwr_PiwQJ341U2l4dRBu7adDbcER8Gs1gH6_nx4j2mCoc62UwSqApbyFVDkM0Wb13_sBPiX2abqyg9s1N7CTYxxhTXFgKcFddwb5KqDxdhj6uYEE7p28yfUeTQGFfdVc6UHScYF_Vf16C1w&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2dh4z-HiYGLtPgxopLRExtcPLPH8FcIqzzbAoKwDGdjEat8qCiWSr30_sU_kOeYYGupUSifmJdeoK5hYhSCVIYjzybs_htYlmGVqeNnf4yqTveIgDPKOZoEkQEIFND1lbgu5z5JMjSoTSZmZrVI-TEQ5z_EkACGAhIn5JxgGQ_Qk7a_voaHZkkU_l_MtshQLXikRb5RxQ3-8rW-iEPXyojDEx8cQjtHb6oFkcedAaNPf5hbpKJNojvxkmF6I0U9HELyvqZrV_j8vH0foaaM5rc17gUPiN7pDWCT5-xOPmrrew&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2dabwxKVeeAA01nmBwC_OrVDkSYYgMA8C7rUzrPZ2Q3-5BgOEgiZfWDFkbGKSxcOFwkGih78aNYiyFnmkhnjEl2njlzz_0C3CeOjmD_aADV5EMEa5v6qs_xO0uOjchnwtup8F4pUTvW_wAzvlG8sqjg8VPW3blBJMWdrLOP1CDXqVLikO2lC0JaDD3rXeyA2WaD7lYXT2a8yxZMjhm9eQofw-y46Uw6_ISKUVMK9b5JFqz1PrIioh118zZsqF5-be4fpls3tyTYqAZn2hIN_7q1wI6DgLUi01E75JK8Srcukg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2f84NO0-ngSXH7ODDpUg1_yBlvGoILCAjGXbp7EFIAdsty3AgBtc4PZ0YhyFb-7ucztOpnxwnvCI8WVWZHqsVB5rpMoPfAzXGAxr1vC_iKZv6xo56jQ5iyvw0uAoNgFHcrMm-9rkB1TfpQAxdF7xrYzQ3FVK82BAa-55dHiAYzkO2YuDLlSw1qppzaRRitmNC2J4xXP1CDAbFLUY5ZZU6_mHHbNIlPC1Q_c_ZPlJMaw4oOURRjfV9Lv1WrkP5rOB3_CYQTodQ7vIEgebdXjWqaMsTY8rnIYBCw1zw8PMYuBPQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2ct7VtWpY-fn_Xg8uQS_rx1EPLxsu6LpkoXsiB3wUgB5pUW5THpuzW29E4-Az_MdFri35_XE7fripRkUA7Mg7auYTJXlAOV4fahmbsMkmcRELI9lulXUSJ-58rc9RgRgZTB4eMAfM5l-5bVQbiHxFpOnSfGG3WCXFVTE6MFQpVF4QpDYuRjgySUQWOERKVdAIf2r0JBnJL5xSJ6HFUWjs7JZ2qFsEGsEhmkbhWkkAXsa_q1XNWY8BhUaJsxiPy3ZIyMGWEvbqH5WiVyaXb5fxGlQUeOHP0x7kal9191H6vkSQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2clgPlMsx_tT3Fg7p3icnb9hzrdf3WTd8u-9nqDuyPaSbXdf4SxwI2y3lyP8UN-MoSFje2iu6jkEX15dwodszPINT5l28GRP5bMbxzZv2eDBlJP1qgy51H46Srp06S6mdBhebKcOAcR4rQOLWpgxbd_PD2MbT2xrp-LgL3OZ2On5h5pA8OyhUevaPqbh1Dul_Jqf2K6HHKMhBki135p4RR_AESQkTC1vGF2UUCZWMea0LzvSQRKgcLW6-uE0WSjXMSWWkqFRS8usQq1Hr49ZsYLsjWJKWUvQtOJXZY3YxivuqwZKB-0xOcjAOVp9xofysyZDwsk-JyyWWQl4C_7Ddkge9mEwrWpkYJwb1w4Y5sQWafekjSh-bs8al2tkyGqHpPDOk0tY-O4XwR8N0QMWy3LEiDPc_yfdWiG7TVWPQU&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2fw-mjyETxbh3nTcmC7LSI4_V_gDy07cfrbS7zr028owDoBwgur24JJM0WLyCLc4lnBmtoj73CTZIHuFID83j0v__7z-PLqIAQoHGvkeCj7cGo6iZrpGfjdYQspyETdDLoFmJhUIXQZU5qkV5TIR4RxD35eqfyWHGjSAbMLboLfWhFTYcYQojCxtO8RK4zYiuancro4e0FCo4NvZIkJv03gpQ8bD_RI3_ilR2ZPzR8k2kSkc__AmjzWjV0rGHnDAxrCInMVfbiaxSC21TFDkJIBJICrGw-pbQq6x2dr1hlUOxkPyQF155w45v2XI0COD65jCogjzWikBCks9sNkv9qyyxTcA70-3GJ2Lw4u5LRDLS734f06ur2rHYOrgJFY4MQBAXxEwcupWCILmdPc1hneQJFQ8RdJXa-mP9ux6nvUJA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2dK1LQXGxCVoIczR0QbXmP0-BmFRi15amvGhogsoo8iRMTHfGh1wPNqCbGkNtzj2JsECCa6JjIczkdM_7jvu5J-rUuecl_qhtoI_R0xMJmL4vlEaPc4hRH5cCtBaMYGmI9O6xNs7SquvgtqmCEJSGRWpZqeVoZeep9MmQ1QN-sfVpUkO3bFJ-lOw7rihUuqIHzn19WgAttGjRMLJo_lvf5ACsyV9Z5bb0DDs8RHRhhtRRsLxg3GKv0PiIV3KA5QkRxRQb59RXcPzYk8wPAw4Pv_Fj2PAKvRKyZerfM9nRCIyA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 53,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": true,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 84,
+      "totalReviews": 232,
+      "averageRating": 4.2,
+      "sentimentBreakdown": {
+        "positive": 80,
+        "neutral": 0,
+        "negative": 20
+      },
+      "reviewSources": [
+        "Google Business Profile (Limited)"
+      ],
+      "keyThemes": [
+        "Service"
+      ],
+      "recentReviews": [
+        {
+          "author": "Jeffrey Gelin",
+          "rating": 1,
+          "text": "Pizza is good here. However the place is infested with flies around the soda machine. There has been a dead roach on the ground for two days in a row now and the outside seating area is roach infested.",
+          "date": "2025-08-30T05:54:24.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "My Aloof Vagina",
+          "rating": 5,
+          "text": "This is the first time I have ordered delivery from Montereys Pizza. And it was a little complicated for delivery instructions and they handled it like champs! The pizza was so hot and fresh we had to make the kids wait a couple minutes before they ate it! (I suspect some of the adults foolishly burned their mouths.). We order this pizza for pick up all the time. So happy to learn that delivery matches the timeline they quote and that it still shows up delicious and excellent. Still - almost 20 years in - Montereys is some of the best crust we’ve ever had! Yum!",
+          "date": "2025-04-06T00:12:33.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Yohannes",
+          "rating": 5,
+          "text": "The pizza at this place is amazing. My friend ordered for our superball events, I loved the test  and I stopped by recently and tried the veggie pizza and chicken wings. They were both delicious! The service was great and the owner is very friendly. I highly recommend giving it a try.",
+          "date": "2024-03-26T04:28:42.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Bahar Kareem",
+          "rating": 4,
+          "text": "This place is downstairs of my home, it saves me a lot of time. Overall, the pizza is realllllllyyyy good when its fresh a little bit not good after few minutes.",
+          "date": "2023-10-23T13:29:14.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Dana Mock",
+          "rating": 5,
+          "text": "Best pizza around! Any of the gourmet pizzas are fantastic but especially the BBQ Chicken pizza is amazingly good. Super busy location, so order online for pickup or come in afternoon when not as crowded. Depending upon who is at register, personality/friendliness can be mixed (as other posts mentioned) but you are paying for pizza not a new best friend!",
+          "date": "2023-04-13T19:20:53.000Z",
+          "platform": "Google Places"
+        }
+      ],
+      "examples": {
+        "positive": [
+          {
+            "author": "Yohannes",
+            "rating": 5,
+            "text": "The pizza at this place is amazing. My friend ordered for our superball events, I loved the test  and I stopped by recently and tried the veggie pizza and chicken wings. They were both delicious! The service was great and the owner is very friendly. I highly recommend giving it a try.",
+            "date": "2024-03-26T04:28:42.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "My Aloof Vagina",
+            "rating": 5,
+            "text": "This is the first time I have ordered delivery from Montereys Pizza. And it was a little complicated for delivery instructions and they handled it like champs! The pizza was so hot and fresh we had to make the kids wait a couple minutes before they ate it! (I suspect some of the adults foolishly burned their mouths.). We order this pizza for pick up all the time. So happy to learn that delivery matches the timeline they quote and that it still shows up delicious and excellent. Still - almost 20 years in - Montereys is some of the best crust we’ve ever had! Yum!",
+            "date": "2025-04-06T00:12:33.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Dana Mock",
+            "rating": 5,
+            "text": "Best pizza around! Any of the gourmet pizzas are fantastic but especially the BBQ Chicken pizza is amazingly good. Super busy location, so order online for pickup or come in afternoon when not as crowded. Depending upon who is at register, personality/friendliness can be mixed (as other posts mentioned) but you are paying for pizza not a new best friend!",
+            "date": "2023-04-13T19:20:53.000Z",
+            "platform": "Google Places"
+          }
+        ],
+        "neutral": [],
+        "negative": [
+          {
+            "author": "Jeffrey Gelin",
+            "rating": 1,
+            "text": "Pizza is good here. However the place is infested with flies around the soda machine. There has been a dead roach on the ground for two days in a row now and the outside seating area is roach infested.",
+            "date": "2025-08-30T05:54:24.000Z",
+            "platform": "Google Places"
+          }
+        ]
+      },
+      "customerMoodAnalysis": {
+        "overallMood": "satisfied",
+        "sentimentSummary": "Customers have positive experiences overall. Your 4.0/5 rating from 5 recent reviews shows solid satisfaction with room for growth.",
+        "sentimentDistribution": {
+          "ecstatic": 40,
+          "delighted": 20,
+          "satisfied": 20,
+          "neutral": 0,
+          "frustrated": 0,
+          "disappointed": 20,
+          "angry": 0
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "food quality",
+            "mentions": 4
+          },
+          {
+            "theme": "service excellence",
+            "mentions": 1
+          },
+          {
+            "theme": "slow service",
+            "mentions": 1
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 5,
+          "satisfaction": 5,
+          "disappointment": 0,
+          "frustration": 0,
+          "anger": 0
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "Customers consistently praise the freshness and quality of the pizza, even noting that it arrives hot and fresh for delivery. - review management can highlight this positive aspect",
+            "The BBQ Chicken pizza and other gourmet options are specifically mentioned as being exceptionally good, making them standout menu items. - social media marketing can showcase this strength",
+            "The ability to handle complicated delivery instructions efficiently and maintain quoted timelines is appreciated by customers. - Boostly marketing services can amplify this"
+          ],
+          "improvementOpportunities": [
+            "Infestation issues with flies and roaches - review management can address this concern",
+            "Pizza quality diminishes quickly after being served - social media marketing can improve this area",
+            "Lack of ambiance awareness due to hygiene issues - social media marketing can improve this area"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 5,
+          "averageRating": 4,
+          "ratingDistribution": {
+            "1": 20,
+            "2": 0,
+            "3": 0,
+            "4": 20,
+            "5": 60
+          },
+          "sentimentTrends": {
+            "trend": "stable",
+            "recentAverageRating": 4,
+            "previousAverageRating": 4,
+            "recentReviewsCount": 5
+          }
+        }
+      },
+      "trends": {
+        "ratingTrend": "positive",
+        "volumeTrend": "increasing",
+        "responseRate": 60,
+        "averageResponseTime": "2 days"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ],
+      "googleReviews": {
+        "reviews": [
+          {
+            "author": "Jeffrey Gelin",
+            "rating": 1,
+            "text": "Pizza is good here. However the place is infested with flies around the soda machine. There has been a dead roach on the ground for two days in a row now and the outside seating area is roach infested.",
+            "date": "2025-08-30T05:54:24.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "My Aloof Vagina",
+            "rating": 5,
+            "text": "This is the first time I have ordered delivery from Montereys Pizza. And it was a little complicated for delivery instructions and they handled it like champs! The pizza was so hot and fresh we had to make the kids wait a couple minutes before they ate it! (I suspect some of the adults foolishly burned their mouths.). We order this pizza for pick up all the time. So happy to learn that delivery matches the timeline they quote and that it still shows up delicious and excellent. Still - almost 20 years in - Montereys is some of the best crust we’ve ever had! Yum!",
+            "date": "2025-04-06T00:12:33.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Yohannes",
+            "rating": 5,
+            "text": "The pizza at this place is amazing. My friend ordered for our superball events, I loved the test  and I stopped by recently and tried the veggie pizza and chicken wings. They were both delicious! The service was great and the owner is very friendly. I highly recommend giving it a try.",
+            "date": "2024-03-26T04:28:42.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Bahar Kareem",
+            "rating": 4,
+            "text": "This place is downstairs of my home, it saves me a lot of time. Overall, the pizza is realllllllyyyy good when its fresh a little bit not good after few minutes.",
+            "date": "2023-10-23T13:29:14.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Dana Mock",
+            "rating": 5,
+            "text": "Best pizza around! Any of the gourmet pizzas are fantastic but especially the BBQ Chicken pizza is amazingly good. Super busy location, so order online for pickup or come in afternoon when not as crowded. Depending upon who is at register, personality/friendliness can be mixed (as other posts mentioned) but you are paying for pizza not a new best friend!",
+            "date": "2023-04-13T19:20:53.000Z",
+            "platform": "Google Places"
+          }
+        ],
+        "averageRating": 4.2,
+        "totalReviews": 232
+      }
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/montereyspizza",
+      "instagram": "https://www.instagram.com/montereyspizza",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 58,
+      "social": 100,
+      "local": 55,
+      "reviews": 75,
+      "overall": 72
+    },
+    "originalScores": {
+      "seo": 70,
+      "overallScore": 68,
+      "performance": 73,
+      "userExperience": 63
+    },
+    "migratedAt": "2025-09-16T00:37:21.269Z"
+  },
+  "metadata": {
+    "cachedAt": "2025-09-15T16:01:11.006Z",
+    "expiresAt": "2025-10-15T16:01:11.006Z",
+    "placeId": "ChIJ8yDbYOSwt4kRlQsWU8UnVA0",
+    "restaurantName": "Monterey's Pizza",
+    "cacheVersion": "2.0.0"
+  }
+}

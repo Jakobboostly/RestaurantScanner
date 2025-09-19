@@ -3,11 +3,11 @@
     "domain": "angelaspizzakitchen.com",
     "restaurantName": "Angela’s Pizza Kitchen Boca Raton on Powerline",
     "placeId": "ChIJvdekZToc2YgRZybd-q-c_d8",
-    "overallScore": 67,
-    "performance": 71,
-    "seo": 70,
+    "overallScore": 70,
+    "performance": 100,
+    "seo": 58,
     "mobile": 51,
-    "userExperience": 61,
+    "userExperience": 78,
     "issues": [
       {
         "type": "seo",
@@ -2671,13 +2671,27 @@
     },
     "profileAnalysis": null,
     "serpScreenshots": [],
-    "restaurantSearchScreenshot": null
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 58,
+      "social": 100,
+      "local": 43,
+      "reviews": 78,
+      "overall": 70
+    },
+    "originalScores": {
+      "seo": 70,
+      "overallScore": 67,
+      "performance": 71,
+      "userExperience": 61
+    },
+    "migratedAt": "2025-09-16T00:37:21.698Z"
   },
   "metadata": {
     "cachedAt": "2025-08-21T20:25:54.323Z",
     "expiresAt": "2025-08-28T20:25:54.323Z",
     "placeId": "ChIJvdekZToc2YgRZybd-q-c_d8",
     "restaurantName": "Angela’s Pizza Kitchen Boca Raton on Powerline",
-    "cacheVersion": "1.0.0"
+    "cacheVersion": "2.0.0"
   }
 }

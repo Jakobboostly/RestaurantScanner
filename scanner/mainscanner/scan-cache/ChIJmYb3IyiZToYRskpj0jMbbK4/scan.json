@@ -1,0 +1,1265 @@
+{
+  "data": {
+    "domain": "www.nothinbutpho.com",
+    "restaurantName": "Nothin' But Pho ToGo",
+    "placeId": "ChIJmYb3IyiZToYRskpj0jMbbK4",
+    "overallScore": 65,
+    "performance": 100,
+    "seo": 58,
+    "mobile": 49,
+    "userExperience": 58,
+    "issues": [
+      {
+        "type": "reputation",
+        "severity": "critical",
+        "title": "⚠️ Rating Alert: Below Restaurant Industry Standard",
+        "description": "Your 3.7/5 rating is below the recommended 4.0+ threshold. This significantly impacts customer trust and search visibility.",
+        "impact": "high",
+        "effort": "high",
+        "icon": "⭐",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "Lost customers choosing competitors with higher ratings"
+      },
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "performance",
+        "severity": "critical",
+        "title": "⚡ Speed Crisis: Customers Are Leaving",
+        "description": "Performance score of 69/100 means customers wait too long. 53% abandon slow websites.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🐌",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "Lost orders from customers who abandon slow-loading pages"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "pho near me",
+        "position": 0,
+        "searchVolume": 14800,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pho delivery Dallas",
+        "position": 1,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.nothinbutpho.com/",
+        "title": "Pho | Nothin' But Pho | Dallas",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best pho Dallas",
+        "position": 0,
+        "searchVolume": 720,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pho",
+        "position": 0,
+        "searchVolume": 12100,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pho places near me",
+        "position": 0,
+        "searchVolume": 260,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pho Dallas Texas",
+        "position": 9,
+        "searchVolume": 720,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.nothinbutpho.com/",
+        "title": "Pho | Nothin' But Pho | Dallas",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pho delivery near me",
+        "position": 5,
+        "searchVolume": 260,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.nothinbutpho.com/",
+        "title": "Pho | Nothin' But Pho | Dallas",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pho open now",
+        "position": 0,
+        "searchVolume": 40,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 0,
+        "keywords_appeared": 0,
+        "total_keywords": 8,
+        "average_position": 0,
+        "best_position": 0
+      },
+      "keyword_results": [
+        {
+          "keyword": "pho near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Sapa House",
+              "address": "Dallas, TX ",
+              "website": "https://www.ordersapahousedallas.com/",
+              "rating": 4.3,
+              "reviews": 1000
+            },
+            {
+              "position": 2,
+              "name": "Pho Crimson",
+              "address": "Dallas, TX ",
+              "website": "https://phocrimsoncafe.com/?utm_source=google",
+              "rating": 4,
+              "reviews": 781
+            },
+            {
+              "position": 3,
+              "name": "Vietnam Restaurant",
+              "address": "Dallas, TX ",
+              "website": "http://vietnambarandgrill.com/",
+              "rating": 4.4,
+              "reviews": 896
+            }
+          ]
+        },
+        {
+          "keyword": "pho",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Sapa House",
+              "address": "Dallas, TX ",
+              "website": "https://www.ordersapahousedallas.com/",
+              "rating": 4.3,
+              "reviews": 1000
+            },
+            {
+              "position": 2,
+              "name": "Pho Crimson",
+              "address": "Dallas, TX ",
+              "website": "https://phocrimsoncafe.com/?utm_source=google",
+              "rating": 4,
+              "reviews": 781
+            },
+            {
+              "position": 3,
+              "name": "Vietnam Restaurant",
+              "address": "Dallas, TX ",
+              "website": "http://vietnambarandgrill.com/",
+              "rating": 4.4,
+              "reviews": 896
+            }
+          ]
+        },
+        {
+          "keyword": "best pho Dallas",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "pho delivery near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Pho Crimson",
+              "address": "Dallas, TX ",
+              "website": "https://phocrimsoncafe.com/?utm_source=google",
+              "rating": 4,
+              "reviews": 781
+            },
+            {
+              "position": 2,
+              "name": "PHO VIETZ Seafood & Grill",
+              "address": "Dallas, TX ",
+              "website": "https://pho-vietz.com/?",
+              "rating": 4.5,
+              "reviews": 211
+            },
+            {
+              "position": 3,
+              "name": "Sapa House",
+              "address": "Dallas, TX ",
+              "website": "https://www.ordersapahousedallas.com/",
+              "rating": 4.3,
+              "reviews": 1000
+            }
+          ]
+        },
+        {
+          "keyword": "pho Dallas Texas",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Sapa House",
+              "address": "Dallas, TX ",
+              "website": "https://www.ordersapahousedallas.com/",
+              "rating": 4.3,
+              "reviews": 1000
+            },
+            {
+              "position": 2,
+              "name": "Pho Crimson",
+              "address": "Dallas, TX ",
+              "website": "https://phocrimsoncafe.com/?utm_source=google",
+              "rating": 4,
+              "reviews": 781
+            },
+            {
+              "position": 3,
+              "name": "DaLat Vietnamese Restaurant and Bar",
+              "address": "Dallas, TX ",
+              "website": "http://www.dalatdallas.com/",
+              "rating": 4.2,
+              "reviews": 1600
+            }
+          ]
+        },
+        {
+          "keyword": "top pho Dallas",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Papaya Kitchen",
+              "address": "Dallas, TX ",
+              "website": "http://www.papayakitchendallas.com/",
+              "rating": 5,
+              "reviews": 249
+            },
+            {
+              "position": 2,
+              "name": "Sapa House",
+              "address": "Dallas, TX ",
+              "website": "https://www.ordersapahousedallas.com/",
+              "rating": 4.3,
+              "reviews": 1000
+            },
+            {
+              "position": 3,
+              "name": "Ngon Vietnamese Kitchen",
+              "address": "Dallas, TX ",
+              "website": "https://www.ngonvietkitchen.com/",
+              "rating": 4.6,
+              "reviews": 750
+            }
+          ]
+        },
+        {
+          "keyword": "pho restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Sapa House",
+              "address": "Dallas, TX ",
+              "website": "https://www.ordersapahousedallas.com/",
+              "rating": 4.3,
+              "reviews": 1000
+            },
+            {
+              "position": 2,
+              "name": "Vietnam Restaurant",
+              "address": "Dallas, TX ",
+              "website": "http://vietnambarandgrill.com/",
+              "rating": 4.4,
+              "reviews": 896
+            },
+            {
+              "position": 3,
+              "name": "DaLat Vietnamese Restaurant and Bar",
+              "address": "Dallas, TX ",
+              "website": "http://www.dalatdallas.com/",
+              "rating": 4.2,
+              "reviews": 1600
+            }
+          ]
+        },
+        {
+          "keyword": "pho food Dallas",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Sapa House",
+              "address": "Dallas, TX ",
+              "website": "https://www.ordersapahousedallas.com/",
+              "rating": 4.3,
+              "reviews": 1000
+            },
+            {
+              "position": 2,
+              "name": "Papaya Kitchen",
+              "address": "Dallas, TX ",
+              "website": "http://www.papayakitchendallas.com/",
+              "rating": 5,
+              "reviews": 249
+            },
+            {
+              "position": 3,
+              "name": "PHO VIETZ Seafood & Grill",
+              "address": "Dallas, TX ",
+              "website": "https://pho-vietz.com/?",
+              "rating": 4.5,
+              "reviews": 211
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"pho near me\", \"pho\", \"best pho Dallas\", \"pho delivery near me\", \"pho Dallas Texas\", \"top pho Dallas\", \"pho restaurant near me\", \"pho food Dallas\" - optimize Google My Business profile with these keywords",
+        "Low Local Pack visibility (0%) - audit your Google My Business completeness, categories, and local citations"
+      ],
+      "scan_metadata": {
+        "location": "Dallas,Texas,United States",
+        "timestamp": "2025-09-15T12:42:02.289Z",
+        "total_scan_time_ms": 36827
+      }
+    },
+    "competitors": [
+      {
+        "name": "The Henry",
+        "domain": "thehenry.com",
+        "performance": 88,
+        "seo": 79,
+        "accessibility": 75,
+        "bestPractices": 84,
+        "overallScore": 81,
+        "rating": 4.4,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1388,
+        "keywords": 34,
+        "domainAuthority": 70,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+350 keywords",
+        "authorityGap": 10,
+        "backlinks": 1158
+      },
+      {
+        "name": "Monarch Restaurant",
+        "domain": "monarchrestaurant.com",
+        "performance": 86,
+        "seo": 77,
+        "accessibility": 73,
+        "bestPractices": 82,
+        "overallScore": 80,
+        "rating": 4.3,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 526,
+        "keywords": 39,
+        "domainAuthority": 83,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+300 keywords",
+        "authorityGap": 9,
+        "backlinks": 1002
+      },
+      {
+        "name": "The Woolworth",
+        "domain": "thewoolworth.com",
+        "performance": 96,
+        "seo": 86,
+        "accessibility": 82,
+        "bestPractices": 91,
+        "overallScore": 89,
+        "rating": 4.8,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1332,
+        "keywords": 57,
+        "domainAuthority": 77,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+550 keywords",
+        "authorityGap": 16,
+        "backlinks": 906
+      },
+      {
+        "name": "Y.O. Ranch Steakhouse",
+        "domain": "yoranchsteakhouse.com",
+        "performance": 94,
+        "seo": 85,
+        "accessibility": 80,
+        "bestPractices": 89,
+        "overallScore": 87,
+        "rating": 4.7,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1227,
+        "keywords": 38,
+        "domainAuthority": 90,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+500 keywords",
+        "authorityGap": 15,
+        "backlinks": 796
+      },
+      {
+        "name": "The Saint",
+        "domain": "thesaint.com",
+        "performance": 88,
+        "seo": 79,
+        "accessibility": 75,
+        "bestPractices": 84,
+        "overallScore": 81,
+        "rating": 4.4,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1345,
+        "keywords": 45,
+        "domainAuthority": 78,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+350 keywords",
+        "authorityGap": 10,
+        "backlinks": 1074
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 70,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-15T12:42:11.422Z",
+    "businessProfile": {
+      "name": "Nothin' But Pho ToGo",
+      "address": "4321 Live Oak St, Dallas, TX 75204, USA",
+      "rating": 3.7,
+      "reviewCount": 46,
+      "phoneNumber": "(972) 645-5435",
+      "website": "http://www.nothinbutpho.com/",
+      "formatted_address": "4321 Live Oak St, Dallas, TX 75204, USA",
+      "address_components": [
+        {
+          "long_name": "4321",
+          "short_name": "4321",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Live Oak Street",
+          "short_name": "Live Oak St",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Old East Dallas",
+          "short_name": "Old East Dallas",
+          "types": [
+            "neighborhood",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Dallas",
+          "short_name": "Dallas",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Dallas County",
+          "short_name": "Dallas County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Texas",
+          "short_name": "TX",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "75204",
+          "short_name": "75204",
+          "types": [
+            "postal_code"
+          ]
+        },
+        {
+          "long_name": "6716",
+          "short_name": "6716",
+          "types": [
+            "postal_code_suffix"
+          ]
+        }
+      ],
+      "state": "Texas",
+      "city": "Dallas",
+      "place_id": "ChIJmYb3IyiZToYRskpj0jMbbK4",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "establishment",
+        "food",
+        "meal_takeaway",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "reviews": [
+        {
+          "author_name": "Brandy Mincey",
+          "author_url": "https://www.google.com/maps/contrib/100114446076935112199/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU4Eqnjzp4pHvfwTRZCd3grMaiT-Uon8rwNgWBXeC9O0_NfqAq7=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Always have a pleasant experience here. The staff are helpful since it’s a to go store where you scan your order name. Food is always flavorful, fresh, and made on time. My go to is the mildy spicy shrimp pho, steamed dumplings, and egg rolls.",
+          "time": 1752350361,
+          "translated": false
+        },
+        {
+          "author_name": "J J",
+          "author_url": "https://www.google.com/maps/contrib/117590403305157427577/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKodu6TxUV__bjBe54EKHj0nrykC39Xhn081hm38MfWu7JMIxQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "6 months ago",
+          "text": "What I ordered : BYOP, rare beef, flank and brisket . Beef broth:  Level 2\n\nI think the food was good, it wasn’t too spicy which I liked. The broth was well seasoned. I ordered directly on the website. The only thing I would change has nothing to do with the food. I think text updates would be good , because i thought my order was cancelled  after waiting a little while . I’d definitely order again though . You get a lot for the price, and utensils are included.\n\nI also ordered wontons and steamed pot stickers.",
+          "time": 1739937196,
+          "translated": false
+        },
+        {
+          "author_name": "Xay Xiong",
+          "author_url": "https://www.google.com/maps/contrib/114470321625855276563/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVvjzQeySXtKaAY6Jn2QYKPdvglBJ2BG4DPB39VUwllbEKnQqg5=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "a year ago",
+          "text": "Door dash review:\n\nWas glad they opened late.  Ordered at 10:14pm.   Got here and the broth was still hot.  Decent amount of noodles and veggies.  Came with 2 packets of hoisen and Sriracha packets.\n\nThe pho was decently good.  I honestly didn't expect much from delivery pho this late at night but i was pleasantly surprised.  In a pinch I would order from here again next time.\n\nPictures taken inside my hotel room*",
+          "time": 1722747718,
+          "translated": false
+        },
+        {
+          "author_name": "Alex Grissom",
+          "author_url": "https://www.google.com/maps/contrib/107917661087790745465/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIaXKlHCaAZ8stU_cgdrx83Qp9bkZd1qS5m-ATFL6jQGr9hYg=s128-c0x00000000-cc-rp-mo",
+          "rating": 1,
+          "relative_time_description": "4 weeks ago",
+          "text": "I got the tofu vegan pho on Thursday evening. Since late that night I’ve had severe diarrhea, and just vomited (as of Saturday). I know with certainty it wasn’t anything else I ate. I don’t want to be mean, I understand that mistakes happen, but the only reasonable logical conclusion is that this due to some kind of cross contamination issue, given the fact you’re part of a ghost kitchen. So I felt a need to say something based on that. Please double and triple check that your equipment isn’t contaminating other food, thank you.\nI’ll say it tasted and looked good going down at least, but I can’t give anything higher than one star for obvious reasons :/ and the previous 2 times I had it deserved 5 stars",
+          "time": 1755380574,
+          "translated": false
+        },
+        {
+          "author_name": "Travis Sadler",
+          "author_url": "https://www.google.com/maps/contrib/109132554818902966592/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLKBROoXB1bodVYgFzmiDLU5ox4QjfHlaogeGArZkVn70I56Q=s128-c0x00000000-cc-rp-mo",
+          "rating": 1,
+          "relative_time_description": "5 months ago",
+          "text": "The broth I had in the chicken pho was not a real pho broth. Even compared to basic chicken broth, it was not good. Tasted like the scum that needs to get skimmed off the top while simmering. The taste was quite nauseating. Also did not appreciate that the sauce packets are on top of the food in the soup bowl. Its unsanitary.  I don’t want plastic sauce packets touching my food, there’s no telling where the packets are stored or where they’ve been. The edamame was pretty decent though.",
+          "time": 1744519624,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 1000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107565990114200324089\">Nothin&#39; But Pho ToGo</a>"
+          ],
+          "photo_reference": "AciIO2d83gHMzrgGIGOER0cEYLM2-kjoyLQsNka3_dmVb6iEhplOY60VvfJkNyLEdBgz16DQALLPam4vVKKezAXEt1un060UGMWvVU-0QFDwaDoPkU15o4RoJ49zkmybjqnOeCK7-aOAKJcE1sLJolngJ2gPpOVrVtl1y_r5GmMNgaThO5Dz0F7qlLbHuqdfoXX5yUaOwf56dxRXPUYp8MlKEu0qH2HGWWN75NTSeW5RTlLRy1XsA7uTxvhtO5X3kJAF29OgFZMyA1o9feJnuHeSphJhNKZK7tLK_3YDtHecxH3yCQ",
+          "width": 1502
+        },
+        {
+          "height": 1280,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107565990114200324089\">Nothin&#39; But Pho ToGo</a>"
+          ],
+          "photo_reference": "AciIO2es0nKgw0nQcMztCKS8FeRiORfrjXWec4Je2PHWwUTckXZdCOS5axT8Y5Bhi3ExJvh7EotQ7-7xebLszidPoBXnSqgH2eZvBCcfr5t3MmTM-HI3X6zAUYUK24vJb9NrX1nYg-1bYpyKxKt00AJXShEc9Z-2f4MoY75_M-xwWva1toNHKX0RGZHhAlLoZo0QDObuyGmp4tGDK6KcwYuuMhPWlttJUHj_WOxqI74TXdDiIlRho5duTc6J2XN_bqdbmUSGE_Y-KEWUyhPra0HKC3groxik1-moDAWANrDjCu84IQ",
+          "width": 1280
+        },
+        {
+          "height": 1200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107565990114200324089\">Nothin&#39; But Pho ToGo</a>"
+          ],
+          "photo_reference": "AciIO2cSx6swi4AushgxpJqXqBi-w2FPqOH-x94K0O05L4Dzp9AzStc9M_NjrgzIi-I7HmD52iO4wCY-pdLPszbtDAi0k9wQ557jEzC-7Cz4D_8BeslUsC63V0jB9OB61mwr_NtH2LZ3Dl1nBQd4YjybklRZvmlvtyMHPk4rRVYq8LsuwLwnmim8pLS9bsiL6RHJdDoRtKrIkj9l4l9Irlv7134olsqF2a-nMkJX8xPwIxxqG0I4xFEKUkQ-0UpGzSeEEMMGPRuHv-27ovZWHaMfs6xiANjKfvtO5NGKMGXmRZKR_g",
+          "width": 1200
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111945212631426356270\">Amy Robertson</a>"
+          ],
+          "photo_reference": "AciIO2cvyB7kfxAjwCKvwwjLDG6r9sux2teosG5P2W-stc1JO6OCZC5RLRHqWVcrN9uWZsoyy_vWw6Uu63-1JciG6zKDIySOhN6K0YpEA9W-A0SnLpcLLtsVFvfNjC_WnRDPgTIDdD-zRkAbqEwHkE0_4W5pUetwhsydMgTWMnXi9zmKyQHoqIXYY_s9e4eEdFyhuDcxNLeU_BUKyNLDgq0Sqi5VxSfLaZI0hlrqVAuIdCrd-feriFt1vWNNhgtAPgEdYwvKjTiHN5QWp6Zn1ZJiM6JpG1UX2uUA2SZDBEU2lPpaEUdFByVJJib-cHaUkFMXxa28hpFylWzeOB8Q03M-3r9d1xnJnlE_S38I2y7aFVXOl9AqrwRtvcyZhvoUO-ZVAr0RQ4i1pJR4aDqUWzCN_a1m_UCSCuY5omj1PHSZWdjD7Q",
+          "width": 4032
+        },
+        {
+          "height": 480,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107565990114200324089\">Nothin&#39; But Pho ToGo</a>"
+          ],
+          "photo_reference": "AciIO2eOVJwBB5ZdXW1iw7NnfF0JXBvADNa2CpeFzkXM-_oJw7DIW4SiequUhI7LSDoH9daesOm7csEiiEhExUvy802vruDWyW3i93pus_fWBI0nLE8sZK2Ndca0NhGzIBliMQAw9ScUzOXUWBbuh-OBfT_ZPRZu-uihBziZtDms-CvpxaJ4TNcurWBdGDL2bqYuY6-d1RS9uVnbDfkufkysGm2vTVUp3drLrvQd7tIk9wOdeooz61iGp43k-z5JR9C0giMNXe8CQQ23Meu6qPltYWaNmA-rd64lCxNq13Z7BC5KJw",
+          "width": 480
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117590403305157427577\">J J</a>"
+          ],
+          "photo_reference": "AciIO2f0eJTR7TYo_Ig2ADCdCLS0HvK7EixZf_krrFjobM5h9rgf9uTsi1YZGWpRTUzcK4TuVhLJYeQbGgkOShZaPe0_fSL21s1-tspMShgqjoX8wlXUGWYtcyLScWOFFZRFfy8TPZMKx6dn2h6gWlHKU0bz5q1DxytnCCQ8djO5zDFQefn4Wu4gFZ7-RSsb7mmMFlc4b4YOmwuS7jj3UCb8gWqOR7elo_xZNfj2AqEOzT5zrKoO564-DKmUqC8RtOVQ8LX1hOrkD1sZ4ABrxbv6Q3Cm_bQyVVjvSSehNiesazMSAIqOAXNGCCb65lHOZYqgyg6wt0WiilJygRiqovGmIARXyfgfyawpKvfqW5GbZV6jBq7aX4rRBsEQK5igJPBN5bEGy4IOJQ0P1UFC27tFV3g_y5i4H-mNfMuMzyhadpXgNQU",
+          "width": 3024
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100114446076935112199\">Brandy Mincey</a>"
+          ],
+          "photo_reference": "AciIO2dlcyU6yJcMAF8Cw1J-1O0Y3UtwNCEzwYVTWvWoU4kr6d0KX76hMaIUTgel6Mehvg2hxdlQvZ0izb8ff4KtFUiPfhLaZurDojigzneybseuSHsZtqsF0I-ENYL5ZAg3z8ANXcQ4KIMFXc-fuNP-0VkPcGOzkMJSToksM5GfIieuk7GKa4sKaGCC1SVGFHrMsUO6AFsJsTGk9Mjruwu-UsUB7l8K4DgpwpzGubbcig6wGoyR0KkpEXOgVs8fyWR2kN9Sw2RRD2rGezQz9GjI48pwiSOwtxNKxI-v6e0Ai1fThsReKGvADSkTBctnmVuGIRx9DaTEeKx17n1iHTuSYrbjPStdfJJ2KgXQ7NSXC9YW68iArskYkj9xt4AnIemntl75K3heifq4PITNclOApLMradZ5bB_bqJ_nOzN7UnMI8M4j3Pt2LxmJ-r6sog",
+          "width": 3024
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100114446076935112199\">Brandy Mincey</a>"
+          ],
+          "photo_reference": "AciIO2fQu3J3tsxT98VmYf10M01lTJcorOUvaHlB_IWhhqf3x9w9C0JPbCEx1AdCiGiNTQjlK70fSBwVauVXr175H8xIYjHMyVKMzFY9sCDd1RJalyPaE_I35-GfuQ_epEX1sJPoKgeL3osixXokUc2czNMMXdUgkZV-8l0JcvS6lUlL-FRzZ4xeU1Q2qvmfls2qzIl7oDW6LmBjJhghlUZgVLbChZ4WZ7z-_oDpRMa1PU32kfaBgS9U7xwQ0fpWrEWKDgo4X4covKCehZ3OWhw5gUW64jLaMDvm3qVql0lZe7FTEyFMp6SU72f0R52vmAFlH3cyVNNR0JCe2FXbnz-O_Sj3wR2k_1RromcJ-ayPIFFmm97Ru5Xepwbwtiybp3XB-8sCGYgqHoAiOyHidf818K9Mxru5BDETd-mxirs9n9Atwi3H-B-r5iXd4SIWkw",
+          "width": 3024
+        },
+        {
+          "height": 4800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107517126091824447288\">Dominique Rodriguez</a>"
+          ],
+          "photo_reference": "AciIO2cAVeGJuq_dBSiGBcJUc_6zBcLuY4aZb8b62SUsSZuOb_wUUtc1a-wlBtYu2dmB9hLA1dIeo9xCmAbuywIf9gJfUxkAfEA3OzG8HoUmzSR74HAFiGBl3fNnOQMeN4gkXRUASyUBEsWzitSZT06z1CgXBuqpD5HkR_fXgFNWXDyNpdVD_Rfkb_ADOc0F-UErHrlbq7iM5IcSzYOC7C7-PRLqcFxbWiy6seEQpeRcyefR6h_GwrhAO6-W17gw9Szfc2p-RF8C2TWxa1f1HaWO_yp_HGkYysCRnCU-kC3Z47ZgS4MsCvZoSAngg3QREdg-P44UxmJfBr-MmlbY-ysqLXB25JWyubRlNI3fz9ypwLy4NcPo3L5wdun9vZze6tjcFfHosuKaQL_PmG2Z2kZgM53ZsOh0TpjHV1UYV4JoIREflk3q",
+          "width": 3600
+        },
+        {
+          "height": 800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107565990114200324089\">Nothin&#39; But Pho ToGo</a>"
+          ],
+          "photo_reference": "AciIO2embQ7H9zrHH-Y7eMbUJoRgPor7BYpOi8qlTW3Natg2t6JChA37BOLrURjKhQ8aoyM5VWpyU2fqMU3RhpkMcvRIkYOC-ebZfa8wLCatqbcsfw_MQjUyxTqL2Ob9l6vFh23vLoSROyT8QAZSZM42Q5s-AfRoAyHHPoKQipxkMBMgsDi_A73Q1pLnGBSvkcTP8DVyY_UUThD3V-uRUrWipNiGDKHlmQUYzdEkeN4XNhVU5H4YRuvY8JwyamSmRQkIREjyIkCYuzPPb8nLJKZprRa5X9mcfyEclaUJyMSxEoNTdg",
+          "width": 1200
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "2200"
+            },
+            "open": {
+              "day": 0,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1500"
+            },
+            "open": {
+              "day": 1,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2130"
+            },
+            "open": {
+              "day": 1,
+              "time": "1630"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1500"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2130"
+            },
+            "open": {
+              "day": 3,
+              "time": "1630"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1500"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2200"
+            },
+            "open": {
+              "day": 4,
+              "time": "1630"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2300"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2300"
+            },
+            "open": {
+              "day": 6,
+              "time": "1200"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 11:00 AM – 3:00 PM, 4:30 – 9:30 PM",
+          "Tuesday: Closed",
+          "Wednesday: 11:00 AM – 3:00 PM, 4:30 – 9:30 PM",
+          "Thursday: 11:00 AM – 3:00 PM, 4:30 – 10:00 PM",
+          "Friday: 11:00 AM – 11:00 PM",
+          "Saturday: 12:00 – 11:00 PM",
+          "Sunday: 12:00 – 10:00 PM"
+        ]
+      },
+      "price_level": 1,
+      "editorial_summary": null,
+      "url": "https://maps.google.com/?cid=12568450569471216306",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdNSbudNyfgbcQkf4iNhoxpoxG0LFtmE8f7q8IADRsPajq9Ew0h5ge1bkudd1Cu2QemsM8yIDyNSbSsyiLW9Q30re9wjnRs9YVBwdl7fj-e9JHc42KocXHAsNqStLs6OUvi7H4O3O4fotGlJKQ5ywgotiFxd9mWMxH5WtAluHVNQs8_C7hzOo67fgfpSueIGnPHJm5BI2_UjkHoDFfO4A-DPN8yT61Of26HfElQ4aMJrJk5GHC66eZP1-OGyP6D6C8NQPRHyb0WIsc9qjvvVCgGSBLBFMlNdTl-WlNFJhQXqQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdubRecYEWF-0LA8-AAl_jVLrzygdbCScNrgki5Gxd7LxgLrignr_tzqxvJ2dFgB9eUr0JfBWKxpk7hlTC_tRdaOs3i4bRCb5P4eb4_Y7_cDDHw97Efo80mO8zqOaq8GuPh7T5MTG2UDdCyz9X90KLOtTXAR6HpoYiod7yE04hMhag4jwsE_vx2ue3s_noTvMyQRJFtuzJgFqJWPknl8ccIYKKpL1K36jZ_Iq2NcXe9l8aRt7Tq5XAud90ESthXr72VLalD4_00lns-ny8hXymIiK7w9xUHN4BEBhSODm6Isg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfLh5Mp-jVLySrKceQzu1CtuzArBZg3cejxv5Ytm289WZ8k6HBcjUxNGtlBEQ-l7MAcLzO2GMsUh7LzCRnZDKLRAGZfNvb6r2AS7P7MTx8ooErPAa6HqtgGvMtcWKg_IpvStZK3H1oVpQUR3RZvQFjhWLSF-MLiogoTmjRlfdtEHCPbv_BDNmnP1C7ejBQq1fkm5QLUb5bX71-67GyDk0qRoyEbLM1XWq1E6iKP4oDHlTrL1qut6CWmY_UU4UL2OMEnD0SH2kKVm5lx7BUpwiYw26AP0iiYmWEIlxg8XR5ZqA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpeKWKn7Kqvvk0I_sKoqg2_sL4bjph_dQ6nvxyvVXBrrfLa4qMZPncmWMJ3zfaZJPCJw5V9JAT5vMDkTmRRsKJMGGrmKSvySuXXaj1iRedeWMa9LKBIW9Ndy4csKU4xFDly1aUOwm8EnTO0IWz8qPn6pXWcSbOX7LAVCJZ2aA-9MglSAcyMh9QznUpcgl8JpMyzP-GdX9GaNomBwWsEVe8Gjp7f3YIJHbjwyWiivpv7p9ZqnYuXvPRUvyPg6LlWmHm6EW8BEa0LxMYwUcZ9uOape1WyXCq2F_Z413a9UVBJuoOLC4hPvcIrWg4zviw9DVBkZZbhTZgynyLy7I9bRODlrqAXiwT7ME5nDxtWzkbeguKg255IVgWyfYr_Jh9V7w-UYHFXUR6SM3GbkHhG-gZcS9yPzwOZZLTj_D-NjrurbFg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfwGQgx6QjwCtmVqsfev0qHaHHWte41V3kFnQ6tyPw80rY71GdDIz4vvdcZCssjqYJWld09gihJcD1guQLdNfCEXBTDODlQ_0oZ_U_NIZkJKmJHLV8aviM3bQCTZgh68brmfZtwFKmmi8nbqv-YfWzxPNsJwqSHyVqJzeCxVWESJpDpcT_MPXb1JK4q71d5IVGvNBXxV4CEN_rc-KFw2pcPRf1yFqUPUTCvVN3b_5dXnvrXcGWrtn-0KS2IDMHuNBbkUsMOsXRzPZ2ZRekvM4HP0xahNUtMNWOBGErLCDDJhQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpf_YbwLcM2dslyxdMchMwq-eVi5VPu2INjue_SAPETh94iGQgQyWw6pELx63IA3xADZzo9wSfAO-gN3vRE5zMRkSDYTPc-ZSFjsFlb9oFMMH7q5jG7rU4IypSk8xkkqUUCXbquNSKUVjwR6Mqw0u_5z9VMWkbi95LH2aGWNjblPT6nSujynnSU01sCsCHU34MP4iexdtDW4oFY_IgEfzhTuGKQ918OK_BmiEomj1dmnVQ5cw53GBFBQvHQKI1z97BRAOuT1vappqPzKdpbffxriAM5lnPAK6r7rLqOxGD7rBwfKMId8EN4DwDVxQ7P1j5bgTZ8bfbHa30nHmRx7Mh7SIw_ZfvzMrIXjw0mcJ-HL2YgYHv0Llqeabn3arG1hhoAbqfEI1i6-046-TRN1iBNYrCejyq75a55wxPIpeYz0ENY&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfyzIvbgN0gt4rpa9IoSuyaTCT-0SSfTvnJwF7xH55Rb42ShBjm-gJHcxQIeYxCluPJTdvdtmpf00DDALwhU16qtJD2Ph2-tCls3TfeTcfDWg14SwWTLy2nNtlRtve9DFOQP3J6B-j7RLIS10nlvs1URBboOx1tA-sFtCwetc5LzsxCbQ0GROH1Dnpe1VrZ5x5qgZkuFiwdy7HSJFx48UY6BVjsqp4JX5n-eJp3ncz1JmuOmXGe_G0kmU4WOB4d_Ie1h8aqDNh4KZxvkyXlL6BFuNyzS-yYSb_mjXG1TFx__Y2bkldvbQW0FrUAVIRmTPyJcOCAo5XtYo9VM0A9maOiToUUANJQwR1Muok0ffheqrZyrWegqKN69Kkto5idFl3t2V7oFTYvEchqTPmk51S6ZdWHkDSzVdMSv-LlwOxKPBn2nPoLdMBJjc7klQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpeietLNAlS01XGPKB-hNUd-TPSCPaWBjihMVXxo8HPCo2B67spPueaKplMIMmG1Qog5zow_J9wflOWyX6olhzV_GPxkL4wAwFOeuqmzBjpTFffIrIDAsLMAI3cQMmvnTndTFJEFmnQEVq5kAzHYYO9tispYM14doI7t8bTxAwcDgByaVh952aGiaKXrbn2HlD-r-ljiXK1F2U0GSVKMquYvrJ1tov9KgFFc9_pXqCgsSnBzOvtrZHBPr1dzVlCQL9uFDAH8GalNxtGi8o2-zkE4rNnk-yZQNAx9414DG0fOqDWw350gpOFOnsLJKiOK88_3ujRTDFkXEbJPLgXqsVR9qmsj-LLE0YyWZiGbWAwBAVbjq5dKh-N8Rf8nbDsa8TdzqJ9R4uN6waWwypT3zsFq5S0FkP_c_WoqCoFP3hzFm9ZVfduNzO-KFFuGwQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcDWJmJ-8uhjEb9_rjQIMwFNVcPbexDNGSzdx59H1Qj0ixyZBOW_y7CrZ7vdPLSCCT75eYlFdf9o8WdohTJMm4vTkxuHr0bEUyXPS2DicTar9G0aYpgwhDm_L-wYjOmoHNeHw63dleXao3hfnTFDT50jkbu9aQmS4QEpwGf0WjKjBUobrenbKq-ASGFmlTbj8-urz3_HjoRFmKkExxLC6-EXNZqArplsrtzqR36be__6xWXhVhb-Ub4drKQFqZArmRmxfgd8-y9cmeCzdndBy7WKDpIs72_4k84q2bC4GleWGWGxj4EW57R19JaGkxf_F1ewTquRekypV1Ekt3OFxzQfplLlV46ghge871BQb7217MOfdpISbWnjTnZXHu3eK55dqpclcynTOsebZ_THdL5fjSn29omsv_r3Mn8PnVjQVLT&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdwaYekqHT-66yE9cycmrNomlSg554jkXlNlU6FZlqVexAEMePgXWBFGGIPq-3lxYsXvQ4nxA7s4DlyLd3TYK7SdzB6aAVba2pB8GG5njxVCv6q7Rk-98qjs_j4IvthKhs-fRkcuZp9I_Ht_6i8g4kNGHXHjHJDAjJLlVeoajee1EMFaej_pLBt_fUg2LHzBrRpOvcIYiYjVikRSxskcA4gKZxeSIFjxGCo2ylpc1educCu5UPQHuI6dJt2CKVCU2g8Vqy8Gt1_Dynsx1vv8idVqIw8kZbXZBjq8mPcirKlUg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 49,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": false,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 74,
+      "totalReviews": 46,
+      "averageRating": 3.7,
+      "sentimentBreakdown": {
+        "positive": 60,
+        "neutral": 0,
+        "negative": 40
+      },
+      "reviewSources": [
+        "Google Business Profile (Limited)"
+      ],
+      "keyThemes": [
+        "Food Quality",
+        "Pricing"
+      ],
+      "recentReviews": [
+        {
+          "author": "Alex Grissom",
+          "rating": 1,
+          "text": "I got the tofu vegan pho on Thursday evening. Since late that night I’ve had severe diarrhea, and just vomited (as of Saturday). I know with certainty it wasn’t anything else I ate. I don’t want to be mean, I understand that mistakes happen, but the only reasonable logical conclusion is that this due to some kind of cross contamination issue, given the fact you’re part of a ghost kitchen. So I felt a need to say something based on that. Please double and triple check that your equipment isn’t contaminating other food, thank you.\nI’ll say it tasted and looked good going down at least, but I can’t give anything higher than one star for obvious reasons :/ and the previous 2 times I had it deserved 5 stars",
+          "date": "2025-08-16T21:42:54.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Brandy Mincey",
+          "rating": 5,
+          "text": "Always have a pleasant experience here. The staff are helpful since it’s a to go store where you scan your order name. Food is always flavorful, fresh, and made on time. My go to is the mildy spicy shrimp pho, steamed dumplings, and egg rolls.",
+          "date": "2025-07-12T19:59:21.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Travis Sadler",
+          "rating": 1,
+          "text": "The broth I had in the chicken pho was not a real pho broth. Even compared to basic chicken broth, it was not good. Tasted like the scum that needs to get skimmed off the top while simmering. The taste was quite nauseating. Also did not appreciate that the sauce packets are on top of the food in the soup bowl. Its unsanitary.  I don’t want plastic sauce packets touching my food, there’s no telling where the packets are stored or where they’ve been. The edamame was pretty decent though.",
+          "date": "2025-04-13T04:47:04.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "J J",
+          "rating": 5,
+          "text": "What I ordered : BYOP, rare beef, flank and brisket . Beef broth:  Level 2\n\nI think the food was good, it wasn’t too spicy which I liked. The broth was well seasoned. I ordered directly on the website. The only thing I would change has nothing to do with the food. I think text updates would be good , because i thought my order was cancelled  after waiting a little while . I’d definitely order again though . You get a lot for the price, and utensils are included.\n\nI also ordered wontons and steamed pot stickers.",
+          "date": "2025-02-19T03:53:16.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Xay Xiong",
+          "rating": 4,
+          "text": "Door dash review:\n\nWas glad they opened late.  Ordered at 10:14pm.   Got here and the broth was still hot.  Decent amount of noodles and veggies.  Came with 2 packets of hoisen and Sriracha packets.\n\nThe pho was decently good.  I honestly didn't expect much from delivery pho this late at night but i was pleasantly surprised.  In a pinch I would order from here again next time.\n\nPictures taken inside my hotel room*",
+          "date": "2024-08-04T05:01:58.000Z",
+          "platform": "Google Places"
+        }
+      ],
+      "examples": {
+        "positive": [
+          {
+            "author": "Brandy Mincey",
+            "rating": 5,
+            "text": "Always have a pleasant experience here. The staff are helpful since it’s a to go store where you scan your order name. Food is always flavorful, fresh, and made on time. My go to is the mildy spicy shrimp pho, steamed dumplings, and egg rolls.",
+            "date": "2025-07-12T19:59:21.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "J J",
+            "rating": 5,
+            "text": "What I ordered : BYOP, rare beef, flank and brisket . Beef broth:  Level 2\n\nI think the food was good, it wasn’t too spicy which I liked. The broth was well seasoned. I ordered directly on the website. The only thing I would change has nothing to do with the food. I think text updates would be good , because i thought my order was cancelled  after waiting a little while . I’d definitely order again though . You get a lot for the price, and utensils are included.\n\nI also ordered wontons and steamed pot stickers.",
+            "date": "2025-02-19T03:53:16.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Xay Xiong",
+            "rating": 4,
+            "text": "Door dash review:\n\nWas glad they opened late.  Ordered at 10:14pm.   Got here and the broth was still hot.  Decent amount of noodles and veggies.  Came with 2 packets of hoisen and Sriracha packets.\n\nThe pho was decently good.  I honestly didn't expect much from delivery pho this late at night but i was pleasantly surprised.  In a pinch I would order from here again next time.\n\nPictures taken inside my hotel room*",
+            "date": "2024-08-04T05:01:58.000Z",
+            "platform": "Google Places"
+          }
+        ],
+        "neutral": [],
+        "negative": [
+          {
+            "author": "Alex Grissom",
+            "rating": 1,
+            "text": "I got the tofu vegan pho on Thursday evening. Since late that night I’ve had severe diarrhea, and just vomited (as of Saturday). I know with certainty it wasn’t anything else I ate. I don’t want to be mean, I understand that mistakes happen, but the only reasonable logical conclusion is that this due to some kind of cross contamination issue, given the fact you’re part of a ghost kitchen. So I felt a need to say something based on that. Please double and triple check that your equipment isn’t contaminating other food, thank you.\nI’ll say it tasted and looked good going down at least, but I can’t give anything higher than one star for obvious reasons :/ and the previous 2 times I had it deserved 5 stars",
+            "date": "2025-08-16T21:42:54.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Travis Sadler",
+            "rating": 1,
+            "text": "The broth I had in the chicken pho was not a real pho broth. Even compared to basic chicken broth, it was not good. Tasted like the scum that needs to get skimmed off the top while simmering. The taste was quite nauseating. Also did not appreciate that the sauce packets are on top of the food in the soup bowl. Its unsanitary.  I don’t want plastic sauce packets touching my food, there’s no telling where the packets are stored or where they’ve been. The edamame was pretty decent though.",
+            "date": "2025-04-13T04:47:04.000Z",
+            "platform": "Google Places"
+          }
+        ]
+      },
+      "customerMoodAnalysis": {
+        "overallMood": "mixed",
+        "sentimentSummary": "Customer opinions are divided. The 3.2/5 rating from 5 recent reviews suggests some great experiences mixed with areas needing attention.",
+        "sentimentDistribution": {
+          "ecstatic": 0,
+          "delighted": 40,
+          "satisfied": 20,
+          "neutral": 0,
+          "frustrated": 0,
+          "disappointed": 40,
+          "angry": 0
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "food quality",
+            "mentions": 2
+          },
+          {
+            "theme": "service excellence",
+            "mentions": 2
+          },
+          {
+            "theme": "value for money",
+            "mentions": 1
+          },
+          {
+            "theme": "slow service",
+            "mentions": 1
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 0,
+          "satisfaction": 5,
+          "disappointment": 0,
+          "frustration": 0,
+          "anger": 0
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "Customers appreciate the flavorful, fresh, and timely preparation of dishes like the mildly spicy shrimp pho, steamed dumplings, and egg rolls. - social media marketing can showcase this strength",
+            "The restaurant offers a generous portion size and includes utensils, which customers find valuable for the price. - SEO services can leverage this for better visibility",
+            "Customers are pleasantly surprised by the quality of food delivered late at night, with hot broth and a decent amount of noodles and veggies. - Boostly marketing services can amplify this"
+          ],
+          "improvementOpportunities": [
+            "Concerns about food safety and cross-contamination - review management can address this concern",
+            "Unsanitary packaging practices (sauce packets on top of food) - review management can address this concern",
+            "Poor broth quality and taste - social media marketing can improve this area"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 5,
+          "averageRating": 3.2,
+          "ratingDistribution": {
+            "1": 40,
+            "2": 0,
+            "3": 0,
+            "4": 20,
+            "5": 40
+          },
+          "sentimentTrends": {
+            "trend": "stable",
+            "recentAverageRating": 3.2,
+            "previousAverageRating": 3.2,
+            "recentReviewsCount": 5
+          }
+        }
+      },
+      "trends": {
+        "ratingTrend": "stable",
+        "volumeTrend": "stable",
+        "responseRate": 50,
+        "averageResponseTime": "3 days"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        },
+        {
+          "category": "reputation",
+          "priority": "high",
+          "title": "Improve Customer Satisfaction",
+          "description": "Address common issues mentioned in reviews",
+          "impact": "Boost overall rating and customer retention"
+        }
+      ],
+      "googleReviews": {
+        "reviews": [
+          {
+            "author": "Alex Grissom",
+            "rating": 1,
+            "text": "I got the tofu vegan pho on Thursday evening. Since late that night I’ve had severe diarrhea, and just vomited (as of Saturday). I know with certainty it wasn’t anything else I ate. I don’t want to be mean, I understand that mistakes happen, but the only reasonable logical conclusion is that this due to some kind of cross contamination issue, given the fact you’re part of a ghost kitchen. So I felt a need to say something based on that. Please double and triple check that your equipment isn’t contaminating other food, thank you.\nI’ll say it tasted and looked good going down at least, but I can’t give anything higher than one star for obvious reasons :/ and the previous 2 times I had it deserved 5 stars",
+            "date": "2025-08-16T21:42:54.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Brandy Mincey",
+            "rating": 5,
+            "text": "Always have a pleasant experience here. The staff are helpful since it’s a to go store where you scan your order name. Food is always flavorful, fresh, and made on time. My go to is the mildy spicy shrimp pho, steamed dumplings, and egg rolls.",
+            "date": "2025-07-12T19:59:21.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Travis Sadler",
+            "rating": 1,
+            "text": "The broth I had in the chicken pho was not a real pho broth. Even compared to basic chicken broth, it was not good. Tasted like the scum that needs to get skimmed off the top while simmering. The taste was quite nauseating. Also did not appreciate that the sauce packets are on top of the food in the soup bowl. Its unsanitary.  I don’t want plastic sauce packets touching my food, there’s no telling where the packets are stored or where they’ve been. The edamame was pretty decent though.",
+            "date": "2025-04-13T04:47:04.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "J J",
+            "rating": 5,
+            "text": "What I ordered : BYOP, rare beef, flank and brisket . Beef broth:  Level 2\n\nI think the food was good, it wasn’t too spicy which I liked. The broth was well seasoned. I ordered directly on the website. The only thing I would change has nothing to do with the food. I think text updates would be good , because i thought my order was cancelled  after waiting a little while . I’d definitely order again though . You get a lot for the price, and utensils are included.\n\nI also ordered wontons and steamed pot stickers.",
+            "date": "2025-02-19T03:53:16.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Xay Xiong",
+            "rating": 4,
+            "text": "Door dash review:\n\nWas glad they opened late.  Ordered at 10:14pm.   Got here and the broth was still hot.  Decent amount of noodles and veggies.  Came with 2 packets of hoisen and Sriracha packets.\n\nThe pho was decently good.  I honestly didn't expect much from delivery pho this late at night but i was pleasantly surprised.  In a pinch I would order from here again next time.\n\nPictures taken inside my hotel room*",
+            "date": "2024-08-04T05:01:58.000Z",
+            "platform": "Google Places"
+          }
+        ],
+        "averageRating": 3.7,
+        "totalReviews": 46
+      }
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/nothinbutphotogo",
+      "instagram": "https://www.instagram.com/nothinbutphotogo",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 58,
+      "social": 100,
+      "local": 42,
+      "reviews": 58,
+      "overall": 65
+    },
+    "originalScores": {
+      "seo": 70,
+      "overallScore": 62,
+      "performance": 69,
+      "userExperience": 60
+    },
+    "migratedAt": "2025-09-16T00:37:21.632Z"
+  },
+  "metadata": {
+    "cachedAt": "2025-09-15T12:42:11.701Z",
+    "expiresAt": "2025-10-15T12:42:11.701Z",
+    "placeId": "ChIJmYb3IyiZToYRskpj0jMbbK4",
+    "restaurantName": "Nothin' But Pho ToGo",
+    "cacheVersion": "2.0.0"
+  }
+}

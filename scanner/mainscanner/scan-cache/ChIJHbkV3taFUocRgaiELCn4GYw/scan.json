@@ -3,11 +3,11 @@
     "domain": "burgersandbarleyriverton.com",
     "restaurantName": "Burgers & Barley",
     "placeId": "ChIJHbkV3taFUocRgaiELCn4GYw",
-    "overallScore": 79,
-    "performance": 85,
-    "seo": 80,
+    "overallScore": 78,
+    "performance": 100,
+    "seo": 67,
     "mobile": 65,
-    "userExperience": 75,
+    "userExperience": 72,
     "issues": [
       {
         "type": "seo",
@@ -2651,13 +2651,27 @@
     },
     "profileAnalysis": null,
     "serpScreenshots": [],
-    "restaurantSearchScreenshot": null
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 67,
+      "social": 100,
+      "local": 74,
+      "reviews": 72,
+      "overall": 78
+    },
+    "originalScores": {
+      "seo": 80,
+      "overallScore": 79,
+      "performance": 85,
+      "userExperience": 75
+    },
+    "migratedAt": "2025-09-16T00:37:21.362Z"
   },
   "metadata": {
     "cachedAt": "2025-08-26T15:09:14.266Z",
     "expiresAt": "2025-09-02T15:09:14.266Z",
     "placeId": "ChIJHbkV3taFUocRgaiELCn4GYw",
     "restaurantName": "Burgers & Barley",
-    "cacheVersion": "1.0.0"
+    "cacheVersion": "2.0.0"
   }
 }

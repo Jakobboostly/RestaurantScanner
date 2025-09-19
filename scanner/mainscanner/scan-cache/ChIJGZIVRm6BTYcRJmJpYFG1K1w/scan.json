@@ -3,11 +3,11 @@
     "domain": "rootsburgersandmore.com",
     "restaurantName": "Root's Place Burgers & More",
     "placeId": "ChIJGZIVRm6BTYcRJmJpYFG1K1w",
-    "overallScore": 75,
-    "performance": 78,
-    "seo": 73,
+    "overallScore": 84,
+    "performance": 100,
+    "seo": 61,
     "mobile": 58,
-    "userExperience": 68,
+    "userExperience": 96,
     "issues": [
       {
         "type": "seo",
@@ -2620,13 +2620,27 @@
     },
     "profileAnalysis": null,
     "serpScreenshots": [],
-    "restaurantSearchScreenshot": null
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 61,
+      "social": 100,
+      "local": 79,
+      "reviews": 96,
+      "overall": 84
+    },
+    "originalScores": {
+      "seo": 73,
+      "overallScore": 75,
+      "performance": 78,
+      "userExperience": 68
+    },
+    "migratedAt": "2025-09-16T00:37:21.347Z"
   },
   "metadata": {
     "cachedAt": "2025-08-25T19:35:05.409Z",
     "expiresAt": "2025-09-01T19:35:05.409Z",
     "placeId": "ChIJGZIVRm6BTYcRJmJpYFG1K1w",
     "restaurantName": "Root's Place Burgers & More",
-    "cacheVersion": "1.0.0"
+    "cacheVersion": "2.0.0"
   }
 }

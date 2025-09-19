@@ -1,0 +1,2735 @@
+{
+  "data": {
+    "domain": "lilcapones.com",
+    "restaurantName": "Lil Capones",
+    "placeId": "ChIJ-UlZAoFJfYgR3cXBPODJR-k",
+    "overallScore": 80,
+    "performance": 100,
+    "seo": 58,
+    "mobile": 54,
+    "userExperience": 80,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "italian near me",
+        "position": 0,
+        "searchVolume": 20,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "italian delivery Florence",
+        "position": 3,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://lilcapones.com/",
+        "title": "Lil Capone's pizza & pasta",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best italian Florence",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "italian",
+        "position": 0,
+        "searchVolume": 20,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "italian places near me",
+        "position": 0,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "italian Florence Alabama",
+        "position": 1,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://lilcapones.com/",
+        "title": "Lil Capone's pizza & pasta",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "italian delivery near me",
+        "position": 0,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "italian open now",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 88,
+        "keywords_appeared": 7,
+        "total_keywords": 8,
+        "average_position": 2.9,
+        "best_position": 2
+      },
+      "keyword_results": [
+        {
+          "keyword": "italian near me",
+          "found": true,
+          "position": 4,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Lil Capones",
+            "address": "Florence, AL ",
+            "website": "https://lilcapones.com/",
+            "phone": "(256) 980-6923",
+            "rating": 4.5,
+            "reviews": 256
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Ricatoni's Italian Grill",
+              "address": "Florence, AL ",
+              "website": "",
+              "rating": 4.5,
+              "reviews": 2200
+            },
+            {
+              "position": 2,
+              "name": "The Pie Factory of Florence",
+              "address": "Florence, AL ",
+              "website": "https://www.pizzapiefactory.com/",
+              "rating": 4.5,
+              "reviews": 843
+            },
+            {
+              "position": 3,
+              "name": "The Chicago Cafe",
+              "address": "Florence, AL ",
+              "website": "http://thechicagocafe.com/",
+              "rating": 4.7,
+              "reviews": 522
+            }
+          ]
+        },
+        {
+          "keyword": "italian",
+          "found": true,
+          "position": 2,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Lil Capone's Bar and Grill",
+            "address": "Florence, AL ",
+            "website": "https://lilcapones.com/",
+            "phone": "(256) 275-7603",
+            "rating": 4.4,
+            "reviews": 694
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Ricatoni's Italian Grill",
+              "address": "Florence, AL ",
+              "website": "",
+              "rating": 4.5,
+              "reviews": 2200
+            }
+          ]
+        },
+        {
+          "keyword": "best italian Florence",
+          "found": true,
+          "position": 4,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Lil Capones",
+            "address": "Florence, AL ",
+            "website": "https://lilcapones.com/",
+            "phone": "(256) 980-6923",
+            "rating": 4.5,
+            "reviews": 256
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "North Wood Social",
+              "address": "Florence, AL ",
+              "website": "https://northwoodsocial.com/",
+              "rating": 4.8,
+              "reviews": 112
+            },
+            {
+              "position": 2,
+              "name": "Ricatoni's Italian Grill",
+              "address": "Florence, AL ",
+              "website": "",
+              "rating": 4.5,
+              "reviews": 2200
+            },
+            {
+              "position": 3,
+              "name": "Jacks Place Bistro and baking and events by jack",
+              "address": "Florence, AL ",
+              "website": "http://bakingandeventsbyjack.com/",
+              "rating": 4.8,
+              "reviews": 235
+            }
+          ]
+        },
+        {
+          "keyword": "italian delivery near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Domino's Pizza",
+              "address": "Florence, AL ",
+              "website": "",
+              "rating": 3.8,
+              "reviews": 432
+            },
+            {
+              "position": 2,
+              "name": "Ricatoni's Italian Grill",
+              "address": "Florence, AL ",
+              "website": "",
+              "rating": 4.5,
+              "reviews": 2200
+            },
+            {
+              "position": 3,
+              "name": "Fat Boys Pizza",
+              "address": "Florence, AL ",
+              "website": "http://www.fatboyspizzaria.com/",
+              "rating": 4.5,
+              "reviews": 85
+            }
+          ]
+        },
+        {
+          "keyword": "italian Florence Alabama",
+          "found": true,
+          "position": 2,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Lil Capones",
+            "address": "Florence, AL ",
+            "website": "https://lilcapones.com/",
+            "phone": "(256) 980-6923",
+            "rating": 4.5,
+            "reviews": 256
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Ricatoni's Italian Grill",
+              "address": "Florence, AL ",
+              "website": "",
+              "rating": 4.5,
+              "reviews": 2200
+            }
+          ]
+        },
+        {
+          "keyword": "top italian Florence",
+          "found": true,
+          "position": 4,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Lil Capones",
+            "address": "Florence, AL ",
+            "website": "https://lilcapones.com/",
+            "phone": "(256) 980-6923",
+            "rating": 4.5,
+            "reviews": 256
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Ricatoni's Italian Grill",
+              "address": "Florence, AL ",
+              "website": "",
+              "rating": 4.5,
+              "reviews": 2200
+            },
+            {
+              "position": 2,
+              "name": "North Wood Social",
+              "address": "Florence, AL ",
+              "website": "https://northwoodsocial.com/",
+              "rating": 4.8,
+              "reviews": 112
+            },
+            {
+              "position": 3,
+              "name": "Jacks Place Bistro and baking and events by jack",
+              "address": "Florence, AL ",
+              "website": "http://bakingandeventsbyjack.com/",
+              "rating": 4.8,
+              "reviews": 235
+            }
+          ]
+        },
+        {
+          "keyword": "italian restaurant near me",
+          "found": true,
+          "position": 2,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Lil Capones",
+            "address": "Florence, AL ",
+            "website": "https://lilcapones.com/",
+            "phone": "(256) 980-6923",
+            "rating": 4.5,
+            "reviews": 256
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Ricatoni's Italian Grill",
+              "address": "Florence, AL ",
+              "website": "",
+              "rating": 4.5,
+              "reviews": 2200
+            }
+          ]
+        },
+        {
+          "keyword": "italian food Florence",
+          "found": true,
+          "position": 2,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Lil Capones",
+            "address": "Florence, AL ",
+            "website": "https://lilcapones.com/",
+            "phone": "(256) 980-6923",
+            "rating": 4.5,
+            "reviews": 256
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Ricatoni's Italian Grill",
+              "address": "Florence, AL ",
+              "website": "",
+              "rating": 4.5,
+              "reviews": 2200
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"italian delivery near me\" - optimize Google My Business profile with these keywords",
+        "Ranking below #1 for 7 keywords - increase customer reviews and engagement to improve rankings"
+      ],
+      "scan_metadata": {
+        "location": "Florence,Alabama,United States",
+        "timestamp": "2025-09-15T19:21:40.834Z",
+        "total_scan_time_ms": 36148
+      }
+    },
+    "competitors": [
+      {
+        "name": "North Wood Social",
+        "domain": "northwoodsocial.com",
+        "performance": 96,
+        "seo": 86,
+        "accessibility": 82,
+        "bestPractices": 91,
+        "overallScore": 89,
+        "rating": 4.8,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1370,
+        "keywords": 43,
+        "domainAuthority": 88,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+150 keywords",
+        "authorityGap": 4,
+        "backlinks": 734
+      },
+      {
+        "name": "River Bottom Grille By Stanfield's",
+        "domain": "riverbottomgrillebystanfields.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 616,
+        "keywords": 35,
+        "domainAuthority": 72,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 943
+      },
+      {
+        "name": "Odette",
+        "domain": "odette.com",
+        "performance": 94,
+        "seo": 85,
+        "accessibility": 80,
+        "bestPractices": 89,
+        "overallScore": 87,
+        "rating": 4.7,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1402,
+        "keywords": 45,
+        "domainAuthority": 80,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+100 keywords",
+        "authorityGap": 3,
+        "backlinks": 1189
+      },
+      {
+        "name": "360 Grille",
+        "domain": "360grille.com",
+        "performance": 88,
+        "seo": 79,
+        "accessibility": 75,
+        "bestPractices": 84,
+        "overallScore": 81,
+        "rating": 4.4,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 807,
+        "keywords": 41,
+        "domainAuthority": 78,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 1109
+      },
+      {
+        "name": "Wildwood Tavern",
+        "domain": "wildwoodtavern.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 492,
+        "keywords": 56,
+        "domainAuthority": 68,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 1139
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 72,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-15T19:23:40.450Z",
+    "businessProfile": {
+      "name": "Lil Capones",
+      "address": "139 Cox Crk Pkwy S, Florence, AL 35630, USA",
+      "rating": 4.5,
+      "reviewCount": 256,
+      "phoneNumber": "(256) 980-6923",
+      "website": "https://lilcapones.com/",
+      "formatted_address": "139 Cox Crk Pkwy S, Florence, AL 35630, USA",
+      "address_components": [
+        {
+          "long_name": "139",
+          "short_name": "139",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Cox Creek Parkway South",
+          "short_name": "Cox Crk Pkwy S",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Florence",
+          "short_name": "Florence",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Lauderdale County",
+          "short_name": "Lauderdale County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Alabama",
+          "short_name": "AL",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "35630",
+          "short_name": "35630",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "state": "Alabama",
+      "city": "Florence",
+      "place_id": "ChIJ-UlZAoFJfYgR3cXBPODJR-k",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "reviews": [
+        {
+          "author_name": "S Thompson",
+          "author_url": "https://www.google.com/maps/contrib/101689272643193031857/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUwiG2IxLBCgtj7zgnjqvei0suTZudXM6RkMBENFxaB22onGl7o=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "3 weeks ago",
+          "text": "Food and service is always great! Garlic cheese bread for an app, lasagna for the meal, and tiramisu for dessert is my recommendation if you dare. Get a side of giardinera to enjoy with your cheesy bread or lasagna! Yummmm",
+          "time": 1755728884,
+          "translated": false
+        },
+        {
+          "author_name": "Christina “The One And Only” Millz",
+          "author_url": "https://www.google.com/maps/contrib/108380101540148273462/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVX0hhj4hJjW43JJ0TGUPmx_yYfMpwRL09b4OH5_BcbhAUfvp439A=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "This was my first time eating here and I'm addicted. I had the chicken Alfredo and it was the best I've ever eaten in my whole life. I also got an order of fries and those were very good also. The bread was delicious I will definitely be coming back here.",
+          "time": 1742947178,
+          "translated": false
+        },
+        {
+          "author_name": "Jae Maxwell",
+          "author_url": "https://www.google.com/maps/contrib/100566508111932244896/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXsY2KXlpQ5_sj3msbwXCDGwWjWsas4wXOfqsNLcb7ugSOKyNNq=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "The chicken Alfredo is on point - even the leftovers. We got dinner size portion for lunch specifically to have leftovers. The sauce didn't separate like every other Alfredo sauce (even my homemade) and was still fantastic. The atmosphere was as expected, our server was a 20 something guy. He did a great job; helpful without hovering. We will definitely be going back.",
+          "time": 1752204202,
+          "translated": false
+        },
+        {
+          "author_name": "Martin Davis",
+          "author_url": "https://www.google.com/maps/contrib/102265142056352017193/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI_d0z53ls4X1Ij9YNgSeKh61P9xN3ZK5U-3e8cSDnCdyWCdLY=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "8 months ago",
+          "text": "Food and service were excellent. Had to move tables due to Evening sun but it wasn’t any trouble at all. Highly recommend it and will be back.",
+          "time": 1736188928,
+          "translated": false
+        },
+        {
+          "author_name": "Tricia Crapet",
+          "author_url": "https://www.google.com/maps/contrib/113089438239500182316/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXhuhza2HxeTyuxXFusukz7IF2oz9DxerACDpg3jW7iNFO5JWg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 1,
+          "relative_time_description": "2 months ago",
+          "text": "Unfortunately, we didn't get to.eat there. My husband went in ahead of us to adk.about how long the  wait would be. He was told that we would be seated immediately, thickly was important because we had a 5 month old infant with us. When we got inside, the hostess had changed and though therefore open tables, we were told we had to wait. Others who arrived after us, were seated ahead of us. We waited 15 to 20 minutes and decided to leave. And there were still open tables.",
+          "time": 1752416674,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102265142056352017193\">Martin Davis</a>"
+          ],
+          "photo_reference": "ATKogpe6QEJwHrwuHVjIeLW-gIcDdymdfGXTbXH9CbBOj90vuzeBNToHkIvM8AyqSbYyTorW8_48cUBRyOd6UHRnRptZ4VpE069YNfr16aq7_tqjyT60jjJaTXMKDUh9u7BGdWA90pgwAvO9t7QmQ2r8QGlYNUtsIYbz-BowGScl_MVmjUECx9Te8RDkHblglo50JXFs70l7eX1S_0JO3ov0PIRP5IymgEuPXACMmXXjdt6SZf8LoV6yKzeJGAuMmnp37iQD5ZgOiQ0NUZsPgOTmseB6NthMNWP1Cq95rygtL1Dg92VxeetcmNhWa4EQjj9nkL1ueFDyf_0R4zMZPDrSn_tbRsSCjeBVvbxI7ijgb2jMEN_kize6_-RB6Xwj64UjHztXfxjKePJaMKlMgr8W6untuZDvdO9iPtSwxNbr9SvNkQ",
+          "width": 3024
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102265142056352017193\">Martin Davis</a>"
+          ],
+          "photo_reference": "ATKogpfwR5oMT5sTGA5BOzmz-Y4SeN1HlWzUdFtWGw9d59Y0EWlArtT-J3LjH89G45mhA7KJ-2IalxKQRdHeS9cDfnfvt19iqEViO7hL4tt_UZBuCTwHt8Qt2-QozUZGEc6s_9gy5G-OvK-zahDUfoc8yszGmwWtG0sdjBfw5Ii2LGhsYqXvZBFCOq73YBz1FHBpSShheGzlnI4yUkqA-I8SIx-YK6SnLXOvHt1AXmXn1mxDuItwLDLV50bdp9_dNGLQi0j0hCGrQWegxakTrx94-243EHAfVV1YdVmWtJLY89vMCKZpFUtat2HxftpVuEzZlPpySz4ZG_28koDu6BMG9R_PEly4K0IudHuQZiWV90T1Xj6SJTPX07x92uLJYENfuIIlnQDOufU97ggwstDlp5vF70_iovHZ7AS_1CLnt3I0mQ",
+          "width": 3024
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102265142056352017193\">Martin Davis</a>"
+          ],
+          "photo_reference": "ATKogpffegeKY9vgZZVq_oIL_eBefweULzHBbFiFE62IuxT44knwelgOejGsDNDiy9TY5mfLHixo87GNQoUuCZ0keTkEjPbtegtKf8OExi_hZa0DEZeV4rgmc5tOcvwsJub4-dcqLr5GtRnjF6XzbNIq6WIRx5S-28FDP_ckb3_NXKhm2j1LdhAwjvMx3f_tvldnxQ97qWnjVW-PxLjVeI5PdGMavI2JMddTq5oaUP-Vp6_A4JDOAPhiWwnBxUbdR1bOAm13GRXg3Va0q3g9HednlOhwez_Frmku9laim7Om3WowpY1JU26o9NEK1tdtDoXeBIe4vD7IRS2WLCKsh1Kw9CTTj0ToRlojSAQUmJmgMVitQ_Jjdo72V0gd_frlNm3Ns9386ugjJi0v6GkCMgsXWjuwrLTjhSOxVyKvOZobBjEMh6XK",
+          "width": 3024
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110839171319605477129\">Richard Brewer</a>"
+          ],
+          "photo_reference": "ATKogpfBftBnbvzjP24GmLbRJk1sTv75_qwHQTKI-ZCgkmNtGdpxOn44MIEOoRcoU5DAyQjMGdjy03Ov0HT7fJ1JEy7koe4nqVIWlJQ_FVlI_8fyw8cr1dfqJ7jUWaskLzurONf6u-zOfXl8Ci-kpKUKBZAqfcuSQrJ6u1vmfttsn-JlDzDPdleXHIZsjIMCSqaCa5OJkwPW1chPAyy1_MclZPpB4w7StOvudjLwnHqTOxVBLohteNk0Qk9Qq1EGin7WvJdolDSrOOWDpn6mkSlbR7xwlQ85ig1SRJAyw5MCBxzZsO8vrIGn_errcKFH9t17V__DcEfnH_1b9Q0Dr1Tbm9NIIbFXE-BQmq8INhz45rtQ84asdRabkwikSCeRH6ARLVfKRfR73xH1yzQeeYdiBU3vdnsdR-xcar_OkOJmXotAAg",
+          "width": 4032
+        },
+        {
+          "height": 4128,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114528199942921019895\">Warren White</a>"
+          ],
+          "photo_reference": "ATKogpebSSXtDU0FT-dvl1rLP9dHFyTQOD1LrwtsYvXc4N8mMnMa5RkdcOPk_0R1XPgIZjWz0p34Zn9RLHHGzocbmYTLrb7_OIrp4rN0AmDqB0bqdhebxwWo-D66MxXsdP6wi_ecGrwK81KTtc_iPp2Q_t9PVQUV0PgvJTE7qyuT72eapUG1mJAOa6vJQOvNN5acOYP96JWrAc1SZDLuwJ9MAuoWgRBIoGOjbiLQFysnA9xbScEiaEnAGQ5KV6pFwpeV4F3vk8x2kXVg6cThiiK6IR6A5ffX1bO3ILixbb9bn066Ct1AxylETlO0ejzKIst59fhSDhf-X8Rk_HkJGrJ11M3BL6uscGZgqwmwDDPwmrRgWPNuu5kLkCPASt060GRr63MBPxWiCwNEddv_w0FnhZLwLvv9QqFvCQlkD7kTD7wbcA",
+          "width": 1952
+        },
+        {
+          "height": 4128,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109890537757092461962\">Sharon Wright</a>"
+          ],
+          "photo_reference": "ATKogpfhgHMWz6dhyrrDZE6pdxXHG6svHttfMdU-Ks08ewF9Ys_UonLolDJ-fSmHi4gqaR4DuB0x68FvWiwn112t1vezYR6b7gfzuFJVdvaToZm17x243xjYnLb2dOom8TU5zWv-rthEn34tbvr7UN2-zYaFsQ9xLZEDumCXFAPOTfTWKmsCYArmtz1QycrrU3Yi4IwLRV6YkamAXHZfUEE9mUA-LU85nWRjNUgD2LF8vvI2Qk787fyRd9AifxN1BIiSJH4Clp_544GSvuGi8EWRF3bNS9ih-dDEvISq9zo7LxeVHeK-rgaPebh3jEcLTVbV1qiJw2PrsTbNKu1zWjJ3Ua9ZI8tO72UmPhmKX-SCCbnDiePBMOSS_9Q6MX-LGtQAkA3HHRT35iuFtJSBz4ScQ6sXhwqYqnLpnKNbq_bWDYjx7Q",
+          "width": 3096
+        },
+        {
+          "height": 3514,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112039894270134306640\">Jen Gorum</a>"
+          ],
+          "photo_reference": "ATKogpcY-wWeJGf5x2dZMneUNP37KGIUPZwdLFqSVHTWvrFhXgN6WWcw_zqMpg7CF2k6u9ggM2sNu3n8dAPGOkzwmIKg0t3wrpKJZNmgUEWacUPU8aAgtTGKQvUhc59uNDn6-Udk5uoycRC0dXX-zWFmGpjKB0A73_Bny6Pbu71SJB9kPR8byNAmjfV9a9iy9ANA2J4XpRg_Dz7faPH-UTL9mpOqjjFruyqkb8vDpeCtrSFn3TKuHrvK0BKV8UKCtrCU48kVstvVRdfl1FytVnflSummvrEgdstGPQKmdMdqbkpQsHlMP-euFk5tUxTHvjJiTDwGKY2_cyvURc3PdfPgNka7ajNVLLwjxwvl_l0yD5YcxU9yHn413cnuUda3DeaWLMYXbyS7km99oEmcVf9HWwnSuopG9DyxtIvglhx0AnyfTpE",
+          "width": 3000
+        },
+        {
+          "height": 4080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103429075441217507407\">Star Darksbane</a>"
+          ],
+          "photo_reference": "ATKogpc3srtlVx8NLnwSPaT4JQa1X97w46vWNKJo52r4K4zGO3FI091dzuolNwuUSMAtLFzyuZXBpxhySK9cCG4fo5aWUPGRFI18AyYirYqLCUuWNy8t8mXQNRPv6izXfEkolrsyxkk0JqFdgBIboIxqW3hZtm_RdcaNMXQ4LICuSYv5La14mmoSBu2isWP_Sis5VZaSqF14LKeIoE1unvkWFOJW0vwSqyhRFvNS15T0VjKCgL-G0cTT2BF1szE4gZyjEv_UtqE8AkEU6OF7SaTJlS4PYvNXsfJM5u25qcG-VAAG8klCSHrHLRvPZBlJ1Lqq6q4AmhNLn3MGw7vRaBwf2Q1W7R-9roEHGmKaiaxkNUGbkyCSWSHSeXbMK3W70rQId2_5mGqZOYDRq9zuLwvdXHT5AGkXoigZviV42xaJfC6RDQ",
+          "width": 3072
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/106229731891041930479\">Lindsey Ligon</a>"
+          ],
+          "photo_reference": "ATKogpcfR_7Hxg-iIEnTxkRXt7yNHU3kPQtJe93Z71xfTGywWF4T-6N5U267w4_zW8WSjwNRKc6_qUKkNDjTYeu24pKoNijbHlL_oye0cfcPunEHsSjvbVCT95LEbmJrzzzkQhj8Wten4eHZOPPbHgF-1tXRxxZFTaFHK_OEd0ab6LzuyqHayk5pvQ1XRk9S6Ir204178ShuKhv0aJb_Eq0TIVc6edrS4owxx2M56AJJ57sk3kDd3-y9XHrG5nlAKDiNDPhdP7lIO2KvedEEbl_kWY7cj-CHqUrp_gWnOyR_dgRp3khoFORGPxNR0oRglx60P2wLRUugefoS9jwAJkQHcpFxGkFjOuizJAJ5htFQWSdZt1TSMr_JUGcGdTyk8OOl8c1gnF6uTHVCd7kKkVMwLQxD1-rVosOGqZ1Mhm5QS5ErWtw",
+          "width": 3024
+        },
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109598818115570134277\">Shai G.</a>"
+          ],
+          "photo_reference": "ATKogpeE-TJOCJN0UxvF0H0s87WkCL8gjDESe3tLs1c1_evto93F6TVAr5aFUzOJBbt2BvqLoXl_Nr8wO-4vTbn-8nEmN1OtK6TgG_fNOpOHZa5-y27GXA11nxqzamz9vDS0RyzizZbmWHZSU-aHzPZh49Y76gIO4xNwBZu9QBG2Irk1i2tLQRGQr5QVFKPpnkQChqUYZyIr9TAqqE44Da6u1q1ToaCTIvtVgzGt-oeoaVbB7OK8oDQTAHTNG-D51D8aRNJHLzgO9XPv9w9HQWxW5ghl1fCOG6yXtWK7ZnF7MGeH2v7ge4-CNeGoRAa1XHCP-t_UWRIJ6_Rl07ogfauOt09lmXnZxQOY4ePe8RHynbwLMy4wbt_JUEuo5vAGKmUT8BUfdTQmoq_Sqm9h-0mIQXIcG4fhYUpRHVYwDW3W2KB6CQ",
+          "width": 3000
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "2100"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2100"
+            },
+            "open": {
+              "day": 1,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2100"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2100"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2100"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2200"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2200"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 11:00 AM – 9:00 PM",
+          "Tuesday: 11:00 AM – 9:00 PM",
+          "Wednesday: 11:00 AM – 9:00 PM",
+          "Thursday: 11:00 AM – 9:00 PM",
+          "Friday: 11:00 AM – 10:00 PM",
+          "Saturday: 11:00 AM – 10:00 PM",
+          "Sunday: 11:00 AM – 9:00 PM"
+        ]
+      },
+      "price_level": 2,
+      "editorial_summary": null,
+      "url": "https://maps.google.com/?cid=16809626099112855005",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcvs_2Bhmpap3skx5PNkxcFbIRH0ocsnJdxBGmx1jae_WCdctVlOyb7Xec-oqxJ1SN26YJAuseVeSoMjVhLS6Rt5nKmqUTAB7NMTg2v1vY9CLZB6Crum-Nl7kxFIW3zmZ1nxTSouqSYZYxmucGfFaJYLBlmvRwxoqaRkV0nWgmA_o7e6sU72_sAWQ8e2hda0JZSHSVLzunynu2fC4BgRAiXInFcMpYcQ-MTHLvlVoMK19LcUK9Bo0VZigj5JOM3VtD7mMOYNjMtm0UEAa-zt-vSWe0sCAwZFdlYEVAJBDo5w--xlk8K1GWZ1uqRk1cMYUW1p_ScVP9wWOtsFS-gurbXsEOfPKeI7SLP5ZyXO08mgMlNKo3MtpsH73tm5RU6gH6-Tl2j9azJg7xju4vQdpQ61NVIJCC015G4Se5fzHtr4w&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdR6hsReYeEx3Z22KiXMeUP8VLFWdBI0wsJRXtvgmM0zMkiLqr-FS3JeJHMGK5O6ggayBrO3NWZmiYGXyBh61mRGwhUvM13ly3yIDXM9WJtXadOAt8YeN0TMvFGztPMw8ybPjQHwdx3o9R9XANef6QyFzVtHVBTARqPjaf7pQCmnZ-jKrGagsPbKdI_ZmNpVjzZiJLoPAa0pIeCQW3rWmST4wnLBVqv7aL2wQIouvZKoIsyThJXuNBY2BRLJiZA1Hq0saGOtG7YQHulTE__z-tzo1OJoaN0MKA4sCze0dTocVuvUWG2WPp29gMr-RCDqW6hJbMzh7K-bft3CYJpr_vOm6vOljO7SR-op3W4RelshSogdm4uVvQrsmItuA0dSnKlF4XdvFDzVMa-ivPCdchEE2fcTXwC481FmwCrzFaQIQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdnlcxbdhy1rrDELzIrfEQNXHau-4XyRxVqiPbIrvJimpPE7krANywK1W9r6cJqP8QdAjhePOX2vXgxZWIR-Xd0uMNsMukvf-h4s__gFJu36-Bqq0KhmWCYtxnuIeEU_cQ8MaFm1gIzVD9KLVAIlh2PTl-4cGIow0NtTsdgWsUsX00VC_0s4LdJuJ9lk-4s7hCXN7MM9JKons2QbEU4J2hhXBJ5mFx5MZXIXUfae5KEZl9FeifOw3lQ5_r9JDcPR9a2N3iUA3kEpDWFu5usbVLyDyvfjmr3hO8krvBcKO_6CO-B4kcLrlhNjsp0EE-Y9I51bej0Hsm5QRVltwRrklQ9G7C3epIBqQud7PPPXgb1Q3A-WTZ7zJHOWR-FdiPdr__FlG7UMTslq4ggRhgC3Vqb9G4qdwq9tmJe4ACfsLrXZ6PK&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpc6CqyNWgf2bnju2uiVz8EnRe5zptYgPr97shqC-D_Jaoie9THt8NzYhM7zgICsyhk8WQ0ONTxYqZix9dPFPwTkCVkOgbNEw0UeiANqL9mAXOcpe5i0B9RSEOfmoSD-QkVL3QD0oUcc75CCLv_QucBeQDIoWuCbOXtw-ZyEQ2qnW81lsYhaZPzHn5fzuDdwhs22uYcNcazEaVJW0GUN5i87yKLiQ5tDLGK6XRGGat-IJsVIebB9h4XrEs1UXHnNu2CiTLAMs4yYcO1RpR8FEbvusyve0pvzS7YBhCyPhIYXfvqt2Xli0bC2q5aMJylVD-Rf1goI2TJYfIUv7iaaJZwwWyrOTAdaRZ_G3qbOf3EB_31uoWbLPdjU79TFalvcG9YyXFht1ZblDsMu9hN5ZtHX1rtwgLxYFGRigA5isdfh6A&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfPsZntNE8IK0cEByxRiiddVPnEy1KbXnIojw01gxBfCzknno4EVBRP_lUR6wjaVlEV7ytfJUh_AFyd42GNW1F-TymniI-PKWcEDZdhFExUR4DsIIU_N-qEyzgN-SGVGkNUvraMXnKBGOj1CQs_OvqQIYX3fN9Gs7WiIrR9DMrkITO8MmuFlXET3moMbCBgt_sHV-_DIok0u2ckPgH3JxEiMJjYXsTu1oOGC-Q59YteUiA-7rT_FSptrVlW8AaGB9XnQ-kK8vDq065bVk3BZPNMmroJRJz4o2EeBGEDnM9iChWqR9hfiyo3TlojGRf-QvKPe2EflxkRTU0eRcKyTOm1DgmJgC8Yca50d0FPQ_6MHfEznp7hHh7E6skhOSMXhqg3_eIS0ZKlMoazhh0okSU8Uh5Xslx9dLNxhRPR84PFNg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcLJB4R_6khAVJ3r5aDPJUb6S15mL7wMrqEPH3t8iecpsxL_1sTzI8w39_Rch84q7t2nhotVkttvzucA832MZtn2THXI9HrWbnQkPtoLwteGRBWp6VUU4xMxvFam1NSjI7sMQxkjARd4Xp9ll7l5XSf3wFdPFNxdF64v5rc_bP9nv90Xw-qs17o0Jo1LXAHqUIkZCbj8TtLGPYZxGKmyadNHe12O09IFz6UZo8EhVfWRee29Xh6sqE-S47upqkyc7PYfp3tsNanDU9XekK7JWj3QjnoQOacb9I1O6X911_njnoD0OmwsDIDS0GQ8P1FiP_gW8ALghdl_tBeoLYaDpaMhcn4KRKkQ6zhg-dnzBYoYYf8fzQYd6Tw69CtuDaIfQ2av1S1cLEQDPn-NiHBlP4bnfVxOmucDn_OJL0gOGiirw&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpemj8oHLR7FQzPOzI5amtaGlO02cZmKLOj0albxwBa3qtytyFc_rTIpXXqykm_MQ4H8E8TO9XtHPEqK7ZAv6l0DwT1r8vFkVi96d-_7uCNClbBikCKg_c2zYhkBFYh-iq0-xMeSds2EfaXN0MKTCKRnbhFcAg5E2mu_0z5UJAO9W-Dw0hAp_1GJYlCJR_eFKSg6TNwFp1UIJNrP9TMay5qMPWK3Lj7vz4CiQVC03CQ2gqRTXGPAcUwF3y_Woww_R2uqpf5oFI_1fcccGwXdZYKky4a7NhFlpB_rE961aqKoPzectAi08tjY3jkk3BoOugORyIe3cvbxtInoQctuqlQjArIsAPTIc4iPxg6X5jqV-26LCRx-vOwIk254lWm0r0NL4N5x3R4t_KvJxIgi3bi-rneuXW5RXr3DmICleEKv02Y&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfFUA_ts-gHlF0GLR31hijrMXTDPKnpvh_jGBF2OLG_nhPo1yjJiYKDtrazNC_8jp0UrH59Qb2YYpJbkwgS3yezfsGMMouqCFhNTA0ZJpn1no0QBE0dSrsGWgspPJZ8-Hp8UarJKoqIpI5Tiwe1Iz7Da6QR8_jEP81XQHOpjSYY3hlVSplx7I_-iFKEhhQMvxymH9VVUkz3ZBb3wxUzKJjCVWzI9JRtTL-i_VK7u2osnUgM-nesh7hfvTrwZsaRzmJ_K5Xs4iQYejS3PhKCEuNRIKc1X0SUNjs4b38ujsNgtr6U1K2tI_fd3DPJIFa7KxyRyIHJtdplEC9KVKOX86unhuGG2hQAv8uQYeyuMUlijbC_2-iAL7CMtnoUHtg-l8Sm-vteYcPp65KVFIAdAHicOSfa2kAy0I7Ryrz4RnlKjQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfWuBRM4tbwWCGRfATFboPsDL3m-Tez2QGOeORphCZiBFml9-yfhzC0fiq2z6bqSxNB6Cm5bR9Slo3jNycDQS3r5jVwh57c07B70dPHjevl_ltA_RBldZmQoiBuPkJ1TGKwCzyQ3b6L4FxEDy_lG1nQ_6OqsRzwGmNxoiBBFTTx4DWdwpP-Kglm5kOPo8wVcGLWY-7iadTcg9H05itxg2t6ietl8n9tjgIw8tdQ5BrxcJfu-TPzCBd5-fjyjj4Fs0Ql7uR3ot7046R1JC8FwhIH6MxOTJYNUOxQVnEKcy8KwI21FwZpkaOwIBOS0zsPvqBbsrmHZe80zq4PEvTdXhiTvB-hCYECLhBjkjy_wXBeActUyCWOuatDKiBQ3wZuc39fbl9atD6reYTyS727B_weOWY6FQjcdci9CrijHVzzE6M&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfxKNKHowm5fVFMaGt-Jp4MctMTNk5_ck6c9LrjorN5Me78eJQjT8t5zlzE0S8VdzJha3H6P6MXR3L5H45e8L7W16GNPTDMaUXC2iEGu_eg8epPJ2ycv0EST5kqzbpcum8PuTkmq_bxU26mIOniFJFggVH63zZKmfRacYuAQsISKRnY3yty1CfUBTaifkLwLvoPb72kJJ3xmBsD6KqWhCQtbkoHj7Xx0KhBMP5PuXJQ2ocrUn0sa-6_nOoBnnI3TGpMbwHh9Wp9I7uMryMIFpp6cpQMHlQ4bFUTqHJlAakzUN8wRPL20spcVNRQjDiOZxvT5Y4Ka6Fu-uhm2qF8MGB1bsM9VG-503Woa5ZgN-6DEa5GVnjIjklAlwbPE0LRe2tqjuVdFfVHnogyXbRDPpd2PCga2VWmfcNDQX-BgDFxKQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 54,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": true,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 90,
+      "totalReviews": 256,
+      "averageRating": 4.5,
+      "sentimentBreakdown": {
+        "positive": 84,
+        "neutral": 10,
+        "negative": 6
+      },
+      "reviewSources": [
+        "Google Places API (Apify Enhanced)"
+      ],
+      "keyThemes": [
+        "Wait Time",
+        "Food Quality",
+        "Service",
+        "Atmosphere",
+        "Portion Size",
+        "Pricing",
+        "Location",
+        "Cleanliness"
+      ],
+      "recentReviews": [
+        {
+          "rating": 5,
+          "text": "It was busy our waitress was very atttentive and good   Glad they do crustless pizza",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Me and my family love lil Capones!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 3,
+          "text": "I ordered chicken parm dish. And I understand that I asked for the lunch and not the dinner version. But for $14. I felt I could have snorted it there was so little and I think I found 3 pc,s of chicken. It was ok tasting and the waitress was friendly.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "neutral"
+        },
+        {
+          "rating": 5,
+          "text": "Food and service is always great! Garlic cheese bread for an app, lasagna for the meal, and tiramisu for dessert is my recommendation if you dare. Get a side of giardinera to enjoy with your cheesy bread or lasagna! Yummmm",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Best place to go for pizza in the shoals hands down! Reminds me of being back home in chicago.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 4,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Wonderful restaurant !!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 1,
+          "text": "Unfortunately, we didn't get to.eat there. My husband went in ahead of us to adk.about how long the  wait would be. He was told that we would be seated immediately, thickly was important because we had a 5 month old infant with us. When we got inside, the hostess had changed and though therefore open tables, we were told we had to wait. Others who arrived after us, were seated ahead of us. We waited 15 to 20 minutes and decided to leave. And there were still open tables.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "negative"
+        }
+      ],
+      "detailedReviews": [
+        {
+          "author": "Patsy Beck",
+          "rating": 5,
+          "text": "It was busy our waitress was very atttentive and good   Glad they do crustless pizza",
+          "date": "2025-09-13T03:24:53.758Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25WbE5YaDBkRTFrUVUxaVJIazViVE14WWxSNU9FRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLlDLNQmkLowK0yUy1AYQcPsThm8rjvOkz3YPMkHd4k3sCB=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107978458068729939544?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sharon Kyle",
+          "rating": 5,
+          "text": "Me and my family love lil Capones!",
+          "date": "2025-09-07T00:04:12.181Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2psWWVYRjNWVUZ0U0ZwcFdtbHlUbGxDVFdZMmQzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKmc2-d9yl8cR4GJL3C_fEWS382DRhYkpFjSUz72V8pRUCqhg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103682717520365893613?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Gxldfxsh",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-23T22:33:15.626Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21zMGRXcERXVjh5UzBWS2FtWTJTRmN3TW5OSGFsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLodCShZYNLrZIk_qamY0sTm8QLBSnLvw2jlTO5RjKiTyAVrA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112396075212175979681?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Richard Johnston",
+          "rating": 3,
+          "text": "I ordered chicken parm dish. And I understand that I asked for the lunch and not the dinner version. But for $14. I felt I could have snorted it there was so little and I think I found 3 pc,s of chicken. It was ok tasting and the waitress was friendly.",
+          "date": "2025-08-22T20:10:36.868Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25GS1RpMWlja2h6VDFJeGQxUXhWMVpmWkcwMWJrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKPBfAYNVa9vl6fgmCyJLTPjFvxxSJJtjLUTjYCh83Pk6NQbQ=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114390864917118015422?hl=en",
+          "reviewerNumberOfReviews": 102,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "S Thompson",
+          "rating": 5,
+          "text": "Food and service is always great! Garlic cheese bread for an app, lasagna for the meal, and tiramisu for dessert is my recommendation if you dare. Get a side of giardinera to enjoy with your cheesy bread or lasagna! Yummmm",
+          "date": "2025-08-20T22:28:04.065Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tWNlpXUkpSVUpsWjFoNk5razJabXRqY2pjNE5XYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUwiG2IxLBCgtj7zgnjqvei0suTZudXM6RkMBENFxaB22onGl7o=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101689272643193031857?hl=en",
+          "reviewerNumberOfReviews": 198,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Robert Pastuszka",
+          "rating": 5,
+          "text": "Best place to go for pizza in the shoals hands down! Reminds me of being back home in chicago.",
+          "date": "2025-08-19T12:02:25.426Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURTNXQzeVp3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWI3Dvlrvq2FPzTiLEBMuri_o4WrtYtZzN40ahFQDxhyMbKtmpFLA=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114555530913436316375?hl=en",
+          "reviewerNumberOfReviews": 354,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jennifer Vaughn",
+          "rating": 4,
+          "text": "",
+          "date": "2025-07-29T19:09:33.468Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2paMVEzWkhVak5vWkdobFJsSk5RMnd3VTNoMmVHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJS1XctX6UiuEq1qAfJ6seKlob6Xr44rySB6RC_FObx6PlPVg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118437099128084235880?hl=en",
+          "reviewerNumberOfReviews": 55,
+          "sentiment": "positive"
+        },
+        {
+          "author": "karla Parentoni",
+          "rating": 5,
+          "text": "Wonderful restaurant !!",
+          "date": "2025-07-27T13:04:04.273Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25aaGRVaDJVa3R1U1ZaM1NIbFpkMGswWW5ORVFuYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUi-cfTnfj2ZTpwec8yM3xoxovXY0Saz6j-SPj2HyIMs5Opj7E=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114142227727246420689?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Brittany Velasco",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-23T03:58:31.480Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21zMU16aEdhMUJNUkU5WlIybHpZV2wwTVZOWVMxRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL9QW1WXNjQTp3nY4ynHAJu3h7KgVqQZln6B-ldHJNQzL4h7w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110336745953524407606?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tricia Crapet",
+          "rating": 1,
+          "text": "Unfortunately, we didn't get to.eat there. My husband went in ahead of us to adk.about how long the  wait would be. He was told that we would be seated immediately, thickly was important because we had a 5 month old infant with us. When we got inside, the hostess had changed and though therefore open tables, we were told we had to wait. Others who arrived after us, were seated ahead of us. We waited 15 to 20 minutes and decided to leave. And there were still open tables.",
+          "date": "2025-07-13T14:24:34.967Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pWS1VHaFBWREpKUlRnME1YSmZNazkzU3pOVFRtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXhuhza2HxeTyuxXFusukz7IF2oz9DxerACDpg3jW7iNFO5JWg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113089438239500182316?hl=en",
+          "reviewerNumberOfReviews": 96,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Jae Maxwell",
+          "rating": 5,
+          "text": "The chicken Alfredo is on point - even the leftovers. We got dinner size portion for lunch specifically to have leftovers. The sauce didn't separate like every other Alfredo sauce (even my homemade) and was still fantastic. The atmosphere was as expected, our server was a 20 something guy. He did a great job; helpful without hovering. We will definitely be going back.",
+          "date": "2025-07-11T03:23:22.156Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21kNFREVnlPRGxYT0VWdVlYSnVhRmhEY0hJeldVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXsY2KXlpQ5_sj3msbwXCDGwWjWsas4wXOfqsNLcb7ugSOKyNNq=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100566508111932244896?hl=en",
+          "reviewerNumberOfReviews": 71,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sydney Manasco",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-05T14:56:46.264Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21aYU4xOVNiVkpOVDJGaFYxWkRkVzQ1WWs5eExXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLfR2p5pNfz3kJgvw9Q2P3fVqnvH9wkZc9YD1JdT6h6KOMs=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108164359963005457152?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sharron45to47",
+          "rating": 5,
+          "text": "Absolutely delicious! Chicken Parm is my fave.",
+          "date": "2025-06-14T19:01:56.361Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VOenVfSnpPc2JTY1h3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKoFRKg1kaaZGL4Jmp2cVHDN8Nd_mvRQsmzs5wbshk5azHy1A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105213978450029550780?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "s d",
+          "rating": 3,
+          "text": "",
+          "date": "2025-06-02T18:00:23.526Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VKZVE5cU8yMzl1NC1BRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ83r0K3KxcJGMuGKII7x47F8YuglxNgIEnfzJuLOi7P-2QYGcR=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107332169872481367703?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Sidney Haney",
+          "rating": 1,
+          "text": "Can’t leave a review on the food as I’m still sitting in the restaurant waiting…we got here at 12:30 to be seated. Got seated around 1:15 the waitress went to take our order and then asked if she could run someone’s check real quick and we said yes…30 minutes later we were still waiting to place our order my husband had to get up and ask for us to place our order. An hour later and still waiting on our food while. While I’m assuming the manager came over to let us know it was crowded and our food was up next it’s 2:30 and we’re finally getting our food as I’m writing this review. I understand it was busy but if we wasn’t forgotten about maybe we wouldn’t have had to wait so long.",
+          "date": "2025-05-11T19:35:09.244Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VNalFrdlR0dW9UbXFnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJoQ96FBBoc45iJ7J9W23VmKnyWobXWgTmO__cSKpLYHipGIw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111215863607809172484?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Sherry Warwick",
+          "rating": 5,
+          "text": "Love the cheesy bread...it's enough for a meal. Good place to watch ballgames...there are several tvs. Customer service is always good...especially James! He was our server and was awesome.",
+          "date": "2025-04-15T08:41:38.303Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNvcklTcU1REAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJZle310Nusk4YhLuSPGbbYRXCSRNJAO60oRL9KpH3CB9wxPg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108577930581569731446?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Trudy Miller",
+          "rating": 2,
+          "text": "The chicken alfredo was beyond spicy 🥵 i had to send it back. My childs mac and cheese was spicy as well. Service was below par. My son had a calzone and for a little bit of dipping marinara we were charged $1.25 for it. A guy who looked like he rolled out of bed literally was walking in and out of the kitchen and was with his friend who was walking around the restaurant with a cigarette that was put out but smelled terrible.  He was also dressed in pajamas. The bathrooms were gross as well. I only gave it a 2 star because my other son liked his buffalo chicken pizza. This is the second time there and the food just isnt worth it.",
+          "date": "2025-04-12T03:11:05.171Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURJamJ2ZTlRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLzhV9vZYoYcRe-b7uT22vbvzls00Ab3c-P6xBbj6VhruHaZA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100502236461445569856?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Cathrine Conner",
+          "rating": 5,
+          "text": "I noticed in the comments somebody wrote the lasagna was put in the microwave and reheated. No it wasn't they put it through the pizza oven To warm it back up after it was freshly made in the am. nothing is cooked in a microwave. Excellent food",
+          "date": "2025-04-07T19:51:27.056Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURJek1ETkN3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUE-iZFxr91KgM1z64FrT4dvFDaCA8tvmbtc00rexxq9mraK_Co=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113615430358866669076?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Amy Stratton",
+          "rating": 3,
+          "text": "The stuff was a lil pricey and the stuffed mushrooms I thought were the nice big fat stuffed mushrooms but no their the small  button mushrooms with cheese and something on the inside! They were good but I wouldn't have gotten them if I knew they were the small button ones!! My husband got some fried Ravioli and instead of marinara, it came with ranch and we thought that was odd!",
+          "date": "2025-04-04T23:05:17.463Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNJMjctVkdBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUj0sJWUpBTspNx12HC47sY2yJXJrY7N53XRVOHCV4UOm02SfO-=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113007816153483278401?hl=en",
+          "reviewerNumberOfReviews": 28,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Michelle Jensen",
+          "rating": 5,
+          "text": "",
+          "date": "2025-03-26T00:11:04.697Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUR3cnQzRUdBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUb-AHkv3TUijCUhwGPdxvpbmFeTVVuuAmwJEg79Gm0LmMRbnyb=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114804213286459242875?hl=en",
+          "reviewerNumberOfReviews": 35,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Christina “The One And Only” Millz",
+          "rating": 5,
+          "text": "This was my first time eating here and I'm addicted. I had the chicken Alfredo and it was the best I've ever eaten in my whole life. I also got an order of fries and those were very good also. The bread was delicious I will definitely be coming back here.",
+          "date": "2025-03-25T23:59:38.764Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUR3cnNHeVBREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVX0hhj4hJjW43JJ0TGUPmx_yYfMpwRL09b4OH5_BcbhAUfvp439A=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108380101540148273462?hl=en",
+          "reviewerNumberOfReviews": 53,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Brian Siefken",
+          "rating": 5,
+          "text": "Dinner for two. Stuffed ravioli appetizer. Pasta and shrimp dinner and lasagna dinner.",
+          "date": "2025-03-10T02:34:44.843Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURRb3U3NFdREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXoYmPTlAFkEeoVVWWU1OE91qlDL-IERuX1uj-Lb_pzRRW5cSE=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112618580263467508120?hl=en",
+          "reviewerNumberOfReviews": 304,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Robert Bray",
+          "rating": 5,
+          "text": "Best pizza around, good service, price is good . Definitely recommend this place for italian food",
+          "date": "2025-03-05T20:50:27.348Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNRMmZUMnZRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVgEkbkEGp6CZH-e7eS9t4qtErcOlZTucn31dDloWjZzbGoAyPjjw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103053204897787814864?hl=en",
+          "reviewerNumberOfReviews": 145,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Big Daddy",
+          "rating": 5,
+          "text": "Great for Italian foods..Have a great personal pizza along with all they're great food..",
+          "date": "2025-02-20T02:04:22.650Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNnbmFMNUdnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWVlPM88HGsN2w8fYFmN1kh8gItwAZn9InaWt52OioLL2Fo9OY=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109194501341440120573?hl=en",
+          "reviewerNumberOfReviews": 63,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Gayle Jansen",
+          "rating": 5,
+          "text": "I would give 6 just for having Truck Stop Honey on tap.",
+          "date": "2025-01-26T21:09:20.342Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURfazdHYWNnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKV8W7RBjA7a0UtG25T6lcC7uh_5QnofoR-FZrDqUGYPb3BGQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110827165040390576981?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Theresa Sizelove",
+          "rating": 5,
+          "text": "The food is great, like homemade italian. The service is impeccable. I like to come here and my mother loves it too.",
+          "date": "2025-01-24T17:53:30.707Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURfd2FTU0tBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX-cwiPS06CjNVYF-af_2gh1GnciIeYzr35f4GS15qW9C8_sU17Nw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115664393608509477198?hl=en",
+          "reviewerNumberOfReviews": 155,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Marian Isabell",
+          "rating": 5,
+          "text": "",
+          "date": "2025-01-19T00:04:07.163Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNfaV9xVnhBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUVBVZLyRHhulqInBwxtwaIQHJYTYCdJ_9b4KjNSm-_p7B7q4uugg=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101130162891617991496?hl=en",
+          "reviewerNumberOfReviews": 171,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kayleigh Hackbart",
+          "rating": 5,
+          "text": "Great food and service!",
+          "date": "2025-01-15T20:28:08.495Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNfNXIyQkdBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWdr1wjnkR20kg2xnySz0_ZN2b3aW4Dxyyg62nsbHfMcvBcVZng1g=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111939941999602858608?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Martin Davis",
+          "rating": 5,
+          "text": "Food and service were excellent. Had to move tables due to Evening sun but it wasn’t any trouble at all. Highly recommend it and will be back.",
+          "date": "2025-01-06T18:42:08.923Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURmcnBlWl9RRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI_d0z53ls4X1Ij9YNgSeKh61P9xN3ZK5U-3e8cSDnCdyWCdLY=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102265142056352017193?hl=en",
+          "reviewerNumberOfReviews": 33,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Melissa Elmore",
+          "rating": 2,
+          "text": "My husband and I are regulars we usually go to the one in Cloverdale. Tonight we decided to go to the one on cox Creek... It took 30 mins for us to get 1 appetizer. The waitress only came to our table to give us a drink 1 time and when we ordered dbl meat and cheese we didn't get that and I ordered my sandwich dry it was soaked.i asked for my fries to be on a separate plate they weren't. My husband was upset with his sandwich as I said we a regulars we eat at the Cloverdale location at least 2 times a week and order the exact same thing every time we go.... I am very disappointed in the service at the cox Creek location... We will ONLY be going to Cloverdale from now on...",
+          "date": "2024-12-31T02:33:20.073Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNmcGMzWEtREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXowWFB9O_h9CisZ6YqTFeKTS_G_6JbSEDgzDKFadG2nNc4b6ft=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105625756115383017805?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Debbie Sizelove",
+          "rating": 5,
+          "text": "",
+          "date": "2024-12-24T17:04:36.088Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUR2eDlXZDBBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLj52qQYWEddAMk-RuUtigGI_DfJ7FUOZ7sztFnZY-tLfNO0Kw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108446597521581106827?hl=en",
+          "reviewerNumberOfReviews": 44,
+          "sentiment": "positive"
+        },
+        {
+          "author": "William Valentine",
+          "rating": 4,
+          "text": "6 friends in to celebrate a birthday.  We visited on Friday at 1:30 PM.  There were approximately 6 other parties seated for meals and 3-4 patrons at the bar.\nThe server (young lady) was very pleasant and helpful.  However, she seemed to the only one server trying to take care of all customers.  The wait was a little long for our food.  However, all food was very good; the portions were large and hot when served.  The restaurant was clean and spacious.  All in all, a good experience.",
+          "date": "2024-12-20T22:49:14.827Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUR2dm9XYjNBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJYhS4Y02R1pi_vtd0rGi_tFnzHvOyaMW-nZxlT7CDnwuV5tw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111018782921246737109?hl=en",
+          "reviewerNumberOfReviews": 136,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Heather Schumaker",
+          "rating": 5,
+          "text": "Great place to eat. Everything we got was amazing! Service was great and the restaurant was clean and nicely decorated!",
+          "date": "2024-12-19T01:22:22.420Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUR2a29TejlnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLtiGDCyORM05o9TLjG5bxhHNeMQLdx_cn1mRzND6MrHerOkw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101242295753544413719?hl=en",
+          "reviewerNumberOfReviews": 35,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Shawn Moore",
+          "rating": 5,
+          "text": "",
+          "date": "2024-12-15T23:29:45.478Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUN2el9iQ0dnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJHqa-Ft5qoN_FV894VpuGahSSWVaTLfpKEWoZAmFEolq0GNQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114979696895066116225?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "David",
+          "rating": 5,
+          "text": "",
+          "date": "2024-11-24T21:15:43.795Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNQdnJxX3FnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWpTmUGG8DPmqv2An-rlc8tw3MSwEJ-BVrzQQetyOti-5NXTwQt=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113093787320854393511?hl=en",
+          "reviewerNumberOfReviews": 62,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sheila Stephens",
+          "rating": 3,
+          "text": "Food and service depends on who is working, one day all is great, next visit not so much.",
+          "date": "2024-11-08T00:48:30.461Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUN5cGI2Z0lnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLQ4lNkC42qycJzD0Xzv5XG-H4kzJFBaRS7YkH7FUQdxkcF0Q=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116168541834033454756?hl=en",
+          "reviewerNumberOfReviews": 239,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Scott Bond",
+          "rating": 4,
+          "text": "",
+          "date": "2024-11-03T07:48:35.050Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUMzdEtidDFRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU7G6IyHQyKMzWisHVkg5oYK5mi1eAr4B6jChaE-kVnJf0MjeY=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108521030809737189695?hl=en",
+          "reviewerNumberOfReviews": 17,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Brandon Fox",
+          "rating": 5,
+          "text": "We really enjoy the food here.  The dinner salad and pizzas are yummy.  I also like the spaghetti and meatballs.",
+          "date": "2024-10-19T12:06:54.228Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNYN2REVm1RRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVtOwVY-SCw0PHqROuA4zeijnEdWcqcSabgo6giWdPSB2Q_abE=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116160716640493293205?hl=en",
+          "reviewerNumberOfReviews": 139,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Guzzo Brett",
+          "rating": 4,
+          "text": "",
+          "date": "2024-10-16T14:49:07.404Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNYanViYXBRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX9b8ROMKtyKxaI6QXv0osUBenYm2MesroPAvlXsebz5XO7iVA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100647912662143800497?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Flyingdove Caldwell",
+          "rating": 5,
+          "text": "",
+          "date": "2024-10-09T22:47:01.550Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURuOF9INWtRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLzv6JnbhnS-nhnhyl7o6vEv9RrBg0LW9ydmoAtLNKGB0A_eg=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102333938083930054545?hl=en",
+          "reviewerNumberOfReviews": 14,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Daniel Hood",
+          "rating": 5,
+          "text": "",
+          "date": "2024-10-07T13:35:04.657Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURubVp1ejJRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLLAxPyt_YUIemckVu1nCLyxNc2It5P3gY481b1gPgyplrslQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114920256236235192528?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Heath Johnson",
+          "rating": 5,
+          "text": "Nice little place. Service was awesome",
+          "date": "2024-09-05T01:04:28.288Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNIanMzQU53EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWulWJPpuIWvVrkfHqOsC3zRjhLaeqCF3TwFW6NtmI64Zmi5It2=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107869798671116231614?hl=en",
+          "reviewerNumberOfReviews": 100,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Richard Smith",
+          "rating": 5,
+          "text": "Awesome food and service at both Lil capones",
+          "date": "2024-08-31T23:33:56.616Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNIdUtTSktnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU6bp4akWowJMYbbBYzNwyOwynts31gOLU12ZCxqQtNZTIBDlFO=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106976395765009721544?hl=en",
+          "reviewerNumberOfReviews": 57,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Eric Marshall",
+          "rating": 5,
+          "text": "During our visit to Florence, we discovered this wonderful restaurant through a Google search for highly-rated places (4.5 stars or higher). Our group decided to give it a try, and we were truly impressed. From the moment we walked in, we were greeted with exceptional hospitality and service. Our waitress was incredibly friendly and polite, making sure our orders were taken promptly and accurately.\n\nThe food was outstanding, far surpassing our expectations for a strip mall location. Our glasses were always full, and the server checked on us regularly. Although my wife’s chicken parmesan was slightly overdone, the server quickly resolved the issue to our satisfaction.\n\nThe gangster-themed atmosphere was a bit quirky but added a unique charm. Our friends from Alabama enjoyed it as well and mentioned they would bring other friends for future visits. Overall, we had a fantastic experience and would definitely return. We truly appreciate the excellent service and delicious food.",
+          "date": "2024-08-27T12:58:42.941Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQ3M1p5TndBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV1yS7pRSyUmcafdK03SRoZNp2NVnPjPxCilbBnGQ_4SauJ5JaGig=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101838164051850545571?hl=en",
+          "reviewerNumberOfReviews": 199,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jane Berryman Wilson",
+          "rating": 5,
+          "text": "",
+          "date": "2024-07-30T10:07:57.005Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNiLTR6RVp3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJz_a05f5rC2Do0EOC-v6aKfoC35w72ujpkazMshT5bdVGZKloW=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112845609182542863088?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dorris Mann",
+          "rating": 4,
+          "text": "",
+          "date": "2024-07-25T22:29:45.109Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNiNm8yUi1BRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKaygwOjHv5PzpZizzkVokU7M9yTApDUuJU2z838Y_zxLih694=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111384197926816499641?hl=en",
+          "reviewerNumberOfReviews": 41,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ray Benazzouz",
+          "rating": 3,
+          "text": "Their chicken wings were good but the Philly cheese sub was disappointing. Nice people though",
+          "date": "2024-07-24T02:16:25.648Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNiak1iVWpnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLbrNHl1biYYhgx85ydFDHFs7S6eevB5y7SideFyG-v_Mpbdg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100929021750647944785?hl=en",
+          "reviewerNumberOfReviews": 40,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Yvonne Morales-Nolan",
+          "rating": 4,
+          "text": "Service was poor, but it wasn't the server's fault.  It was a busy lunchtime and she was ALONE!  The owner should have been on the floor.\nFood was good but not great.  We are going to give them another try.",
+          "date": "2024-06-29T14:43:03.427Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURMcmNqcWJBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVFk8f0EsAsqitLNZZMjXXnQKLzsq_YM5nc6xpgT8P-lzhP2iY=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115122377730409070434?hl=en",
+          "reviewerNumberOfReviews": 308,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Thaat 1 Guyy",
+          "rating": 5,
+          "text": "The server was awesome, the old mob pictures around the restaurant were a very cool touch, the mini toy Thompson door handles were a really cool decoration and the food was amazing",
+          "date": "2024-06-01T12:11:55.623Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN6MnVIUXZ3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVp7xAvBtu7otUKa7QGGHBSMsWS883gI7cE-P9H7uifL1nNLGHaEg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104751969556346271460?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sarah Young",
+          "rating": 2,
+          "text": "Pizza isn’t done in the middle dough is always raw.",
+          "date": "2024-05-19T01:24:13.201Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNUODRLQjhRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUfayeaRZF_cdx-4Eqxv_Hy-IUbXompwSEGdChGCnVcnSE-LsdzcA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109048261660967005431?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Deana Vallejo",
+          "rating": 5,
+          "text": "1st time patron. Had the Lasagna, an house salad. Also mozzarella sticks an crusty bread with sauce. Everything BRAVO!!! ABSOLUTELY DELICIOUSO!!\n5 🌟 THE BEST ITALIAN FOOD AROUND!!",
+          "date": "2024-05-17T16:40:06.340Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNUamFTVXBRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLEnQXzM9YFunAAkLeA65ZApbcyZuphdfZx2ZwwlKkrEDJcHg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100419940485217152252?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "James Watson",
+          "rating": 5,
+          "text": "Love love love all their pasta dishes...and there Philly lasagna is awesome...also have a pretty mean Philly sub",
+          "date": "2024-03-24T21:24:36.428Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNEMVBTcFdREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUFxleGBs9NZSyFIGngwE-1mGmwSZCeEO1KzPaYuJmBRfqNKnBO=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104006901833634955565?hl=en",
+          "reviewerNumberOfReviews": 87,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jennifer Parker Torres",
+          "rating": 3,
+          "text": "I like their pizza pretty well, but didn’t care for the chicken parmesan or breadsticks at all. The facility itself is a bit dated and lacks ambiance, especially for families. I will say that customer service was good though on each visit.",
+          "date": "2024-03-21T18:42:49.974Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQ5aDV2aGJ3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUdlRxaqUq27R7LylzFo0Wl5GuhBpQunteyFDaLaoo7_gANPzef=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116902247266610843363?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "David Wells",
+          "rating": 5,
+          "text": "Great place\nGreat food",
+          "date": "2024-03-17T01:39:02.164Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQ5N3JhOWZBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKYUNxUX3gAAQ8hNlLqQesC4NDIULwP3nORA0qVN1-SCtwl9A=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101916433389434299587?hl=en",
+          "reviewerNumberOfReviews": 34,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Michael Brewster",
+          "rating": 4,
+          "text": "",
+          "date": "2024-03-16T16:55:04.346Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNtM0k3TFFnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL93t59_K56xxMxX9VAVQq-1x7jX5uHdNsgohzTKh8kNeZBbg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118231225096837009043?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Angel Gonzalez",
+          "rating": 3,
+          "text": "",
+          "date": "2024-03-15T19:22:17.812Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQ5dXR5TGdBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLOMGuIH3xgCo3pr-8jp6rzC0E27wLWaIz_g-IOiT1qYSuyVQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108951955438617443980?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Addam Melvin",
+          "rating": 5,
+          "text": "I’ll make the trip back from the coast just for this place.",
+          "date": "2024-02-29T01:17:51.104Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURkXzVHN19nRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXqXLBOs-nUEPhRoWIJeUwLRWoAz1zLnqb-rGrPE49VdAhlaJraOQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105709083928460771250?hl=en",
+          "reviewerNumberOfReviews": 44,
+          "sentiment": "positive"
+        },
+        {
+          "author": "LaVina Burns",
+          "rating": 5,
+          "text": "Enjoyed the restaurant!  Food was very good!!",
+          "date": "2024-02-18T14:23:13.207Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNkbTVmcHl3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLfu0Nv7FMgJ9OktF-Rzh1Ip_lhU0zwX-gs77NnzkJRoTbHEA=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107136287696484960645?hl=en",
+          "reviewerNumberOfReviews": 543,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Emily Rebeaud",
+          "rating": 5,
+          "text": "We ordered at a peak hour, for takeout. The staff was patient, and took the order correctly. As a fellow chef, I was impressed on how the food tasted absolutely perfect, among the choas during orders. Great Job!",
+          "date": "2024-02-04T05:54:23.519Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR0eHNHNmJBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJeStyDfKzyT9QjOv4HhTDJXepYswbKUG2ajEdtXRr9yUT8Lw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102699160550047749737?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Cynthia Scott",
+          "rating": 5,
+          "text": "The ladies at the door were welcoming and sweet.Our waitress Shannon was fantastic and a joy to talk with.Food was just delicious! Will be back!",
+          "date": "2024-01-23T16:10:45.665Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUROeWZMbHFnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU33PsMs0R1JOxpeAX43lqWVEUJD1WqfaoBwDmQDkkaHTlDAEXjgw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114908111570595854261?hl=en",
+          "reviewerNumberOfReviews": 21,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Melinda Kasser",
+          "rating": 5,
+          "text": "",
+          "date": "2024-01-22T22:59:03.721Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUROX3V2OFhREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWqd3MIQ_SWt94YTeK8y84haWvdN5ScbWY74sDFpJXsxAXB1dHg_Q=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105119316381678517882?hl=en",
+          "reviewerNumberOfReviews": 183,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Calvin Mclaughlin",
+          "rating": 5,
+          "text": "Me and my wife came this afternoon and had GREAT service by our waitress Shannon and the food was DELICIOUS!! We got our food QUICKLY and it was HOT and AMAZING!!  My wife had boneless wings dipped in mild buffalo sauce and I had the bbq chicken pizza as well as the breadsticks with the beer cheese!! HIGHLY RECOMMENDED!! WILL COME BACK AGAIN!!",
+          "date": "2024-01-22T01:12:21.065Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUROaHZHR0RBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKUCA_iVDjFCx3MsHqkyDa1_wT9HP1CKL5vIpNvBX7Vbbvy4w=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108427544824940520653?hl=en",
+          "reviewerNumberOfReviews": 23,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Wendy Zaer Sherman",
+          "rating": 5,
+          "text": "Delicious lasagna and eggplant parm.",
+          "date": "2024-01-20T21:27:37.792Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUROX05UUndBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUHtH5mIwcgR52SGBDVrm8GsHGL_6iSjfwjhtHb3O5T-ghOC9PL=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105187032659637825710?hl=en",
+          "reviewerNumberOfReviews": 173,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dennis Phillips",
+          "rating": 4,
+          "text": "Good food and service",
+          "date": "2024-01-12T02:14:08.483Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNTMEstM2RnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ51DAI5K1eCk7Bpos1YZ8IM5Nke_hbrLfx2pX4MUJP1exbCg=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102223728490089113417?hl=en",
+          "reviewerNumberOfReviews": 117,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dirt Oval",
+          "rating": 5,
+          "text": "You can't say enough about  L.C. wonderful atmosphere and seating. Food is very good. It's just awesome.",
+          "date": "2024-01-06T00:18:05.866Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNSbW9lNFNBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLR_iKGNC9iPBGXMSQ2utCJX5EJ8V9G1ROTrPmkC5Cut1AGPeXg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103950927884737667746?hl=en",
+          "reviewerNumberOfReviews": 85,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Amanda Craft",
+          "rating": 4,
+          "text": "Experience was ok.  They were short staffed and waited awhile for our drink orders.  Food was good tho.",
+          "date": "2023-12-31T20:58:43.376Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUMxaWRqNXR3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV-3x_R6vCYfJeWR5zZzG-Smusw0AaFD1LMk8IvGWB5SYB2Hbgizg=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104099548267913999901?hl=en",
+          "reviewerNumberOfReviews": 289,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Vonda Huston",
+          "rating": 4,
+          "text": "First time but spaghetti and meatballs were great",
+          "date": "2023-12-19T04:30:18.113Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURWNzhqdGt3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXKimme35jlOtEgwFrL9HZybjf6Zl8bO9PG1eiQL1MFO31tKdUjnQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109297982326820224517?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Siege Salie",
+          "rating": 5,
+          "text": "I love the make your own calzone",
+          "date": "2023-12-02T22:44:10.571Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURscGItWTZBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXxWO0Q_Ji2ioYm6E-T4Szc0I4i_0YPQ4rpmmcGSr1IUjRYOdzy=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112868731312134359902?hl=en",
+          "reviewerNumberOfReviews": 141,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Angel Cantie",
+          "rating": 3,
+          "text": "We ordered pizza the ingredients were not that great.  The pepperoni was sm & greasy the sasuage had a wang taste.  Upgrade and it would be a fantastic spot to relax & enjoy..",
+          "date": "2023-11-21T20:31:44.022Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNsbVlEdTl3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ4tEkDO9xyXKFldafKpEMBZCbvAZHcEhILaQuHgZc-KHgikw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114163594118597678907?hl=en",
+          "reviewerNumberOfReviews": 42,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Larry Miller",
+          "rating": 5,
+          "text": "My fiancé and I stopped by here for dinner and the service was absolutely great! They have a lot of different options to choose from on the menu but our server, I believe his name was Brandon, was so helpful in helping us find something we would enjoy! The Cajun pasta was unbelievable and not as spicy as some restaurants would make it! My fiancé got the Margherita chicken and she said it was absolutely amazing! We cannot wait to come back and try something new!",
+          "date": "2023-11-06T00:22:53.980Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURGbXZfVTBBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLDiRrcK1L4TiSF2O_5vIoheSFTo51Hp21aYbCQXzbobnm7sQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108577543513664736232?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mark Derwin (KeRbY RoK)",
+          "rating": 5,
+          "text": "",
+          "date": "2023-11-05T01:00:47.627Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURGc3ZYMzZBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW1F8MubVs7pmLRv0kcp37BaeNGDBAkyvjxMqsPBx8zSpaur3aalA=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107481881867302542781?hl=en",
+          "reviewerNumberOfReviews": 149,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Chad Kramer",
+          "rating": 5,
+          "text": "Amadeus is one of the best waiter's I've ever had, great personality.  Stop in and ask for his section you won't be disappointed.",
+          "date": "2023-11-02T01:37:35.273Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNGczlYM3l3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWhgLQUDdqmDJvKXwkgLOthn5UkrH-leRQgwgX2jxauGBf26QwH=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114419055815574836486?hl=en",
+          "reviewerNumberOfReviews": 50,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tammy B",
+          "rating": 4,
+          "text": "",
+          "date": "2023-10-14T22:17:54.392Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUM1MFp5RzZnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIf-568739p-sZH3gJ4F5SoD9JeI7kqB3qZB8CbpBoWP_ZKXw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100678944639737957327?hl=en",
+          "reviewerNumberOfReviews": 58,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Chris M",
+          "rating": 5,
+          "text": "Best pizza and pasta in town and the service is excellant.",
+          "date": "2023-10-14T17:31:15.525Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUM1a2NEMTF3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX0U3U2V-b2BzwLUq7xlS-NOtVS_xa0zPSxTJChzajKxXW0bzo=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111422484567024479369?hl=en",
+          "reviewerNumberOfReviews": 30,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Glen Stevens",
+          "rating": 5,
+          "text": "Lil Capones is a small town  sit down and stay a while Italian restaurant! Food comes out hot and taste is excellent. Service can acceptable. It's a little dark inside, lots of TV hanging around with a bar in the back so I really consider this to be a more typical Dive so don't expect a high class look... but overall a fun place to dine.",
+          "date": "2023-10-13T02:42:45.816Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUM1eG9ENlNBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVj9HqUTOe5DHwjzgDVLKI_pNiRThxVw_yfctJHNUsSxYSM7l0n=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108514956477227175478?hl=en",
+          "reviewerNumberOfReviews": 34,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Waylon Burroughs",
+          "rating": 5,
+          "text": "Love this place",
+          "date": "2023-09-24T05:51:26.540Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURadUt1amlnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKoo5f0K6lsHjpsAwpR4WdfTMG2VyUIXlr4FmCM--18FjTyrQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113100408310650267750?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Shai G.",
+          "rating": 1,
+          "text": "Maybe i caught them on the wrong day. Might not be the place for me..",
+          "date": "2023-09-16T19:30:26.470Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNaZ18tOTVBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI2mIQ4NYE2g5zz9Sg1173DNNZRsBMN6EzaHpNyr_btlWBhysfM=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109598818115570134277?hl=en",
+          "reviewerNumberOfReviews": 22,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Jessica Runions",
+          "rating": 5,
+          "text": "Absolutely wonderful",
+          "date": "2023-09-12T03:31:48.489Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNab2YzOF9RRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWJCWaCL2rdw5Z_WBPrpLzWWGuQM3GuihO52E8P-H_j0nfsU1w3=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111854404617313717104?hl=en",
+          "reviewerNumberOfReviews": 37,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jeff Padgett",
+          "rating": 5,
+          "text": "Cajun pasta- very pleased , food was great . Flavored well, I will return for this dish again",
+          "date": "2023-09-10T18:11:08.173Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNacnZqMXRRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKFFxk-b0I6GwBCQKpn34AzYvxneEUXZAIpnGEhglxSO0xIf-o=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118109763340095857751?hl=en",
+          "reviewerNumberOfReviews": 64,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jessie Mcgee",
+          "rating": 5,
+          "text": "Sub par Italian food",
+          "date": "2023-09-08T20:58:20.103Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNtNzV1T01BEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX7xVnoj7_Z8pm2V9RclXmyLsV7Sp_V_7KW3IF8VMjcxdGuHnE02A=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110239987810234401081?hl=en",
+          "reviewerNumberOfReviews": 269,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Francesca R",
+          "rating": 4,
+          "text": "",
+          "date": "2023-09-08T17:38:49.467Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNabXYzUVlBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUv_TkSoDYPQsTjoEQcdvdQZ5eBKbJZ6zqOYritDULUhPvgcq3Y=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106438473269061220094?hl=en",
+          "reviewerNumberOfReviews": 47,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Heather Conley",
+          "rating": 5,
+          "text": "Great food and awesome service. My server's name was Aprilla. She was super friendly and recommended some really good things! She made sure to keep our drinks refilled as well and we can't wait to come back again. The service was Perfect 😊",
+          "date": "2023-09-08T04:05:35.439Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNaaXRQNEZnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVPZ4CQ48Do2TNKOuUbUwlMpCieCofit25G1FrbHBZ8FRARIhQ0=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114206416013801923144?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kenneth Corbett",
+          "rating": 5,
+          "text": "Order a take out pizza.",
+          "date": "2023-09-05T18:15:43.379Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNack5pYnp3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKxh7JMH3-wjvCOfT6M4Yz2GaDYmGJw_-mF8XWPj2-Ox7FApQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104267329686281584529?hl=en",
+          "reviewerNumberOfReviews": 76,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Stevie Tidwell",
+          "rating": 5,
+          "text": "Bucket list for Awesome Itallian food and Awesome staff and watch all sports games on many HD TVs thru out the Resturant!",
+          "date": "2023-09-02T22:54:28.459Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNaaU9TYWxBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVGgf-2jy9BaMPmYUXjF2eIBD48gwxrmXg-YSoYBHEE4IIwa8Mg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101884368734359739194?hl=en",
+          "reviewerNumberOfReviews": 120,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Anita Kelley",
+          "rating": 4,
+          "text": "Ambiance is meh, but food and service were spot on. Delicious meal and friendly, attentive service.",
+          "date": "2023-08-25T22:47:26.299Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNLdG9UM1JREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXz7K1QdNHv14KAacW6i2_j-18GVjORVneJ5-BQoI60pseSHbb_=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114203205838932613359?hl=en",
+          "reviewerNumberOfReviews": 101,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dawn Buchanan",
+          "rating": 5,
+          "text": "I love little compounds they’ve got awesome food. The service is amazing always and the atmosphere is just nice. It’s relaxing.",
+          "date": "2023-08-11T23:11:48.041Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNwNTlXaUxBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWDxq4K3bX4iauGKP6VhGQaBEsem8BLFOeE0DLENPev-HSrBJsI=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103754002354239417919?hl=en",
+          "reviewerNumberOfReviews": 24,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jonah Griffin",
+          "rating": 5,
+          "text": "I came in a little bit skeptical, but I left with the desire to try a lot more from their menu. I got the chicken ranch pizza and my wife got the baked Ziti. I can confidently say this was one of the best Chicken Bacon Ranch pizzas I have had, and the baked Ziti was amazing as well. There were a ton of other options on the menu for pizza, pasta, subs, calzones, and more. I will definitely be coming back and exploring the menu quite thoroughly.",
+          "date": "2023-08-08T08:01:54.995Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNwallQSXV3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUltgCfx38VImZPVXAZ5ljLSijpZeAjVUWS1hZEBJ89FpyOmOyB3Q=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108881840246882621563?hl=en",
+          "reviewerNumberOfReviews": 46,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Vanna Denson",
+          "rating": 5,
+          "text": "Everything I've tried on the menu is amazing. The servers are always on point. This is one of my favorite places to eat.",
+          "date": "2023-08-06T02:34:54.760Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNXdk1mNlh3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocISm_T-yPmaiNFjl_p9UYNQvzU3kJXMf__7-MIylWKP_PiW3w=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104584677999606636179?hl=en",
+          "reviewerNumberOfReviews": 58,
+          "sentiment": "positive"
+        },
+        {
+          "author": "beastmodemma",
+          "rating": 5,
+          "text": "",
+          "date": "2023-08-04T15:02:20.997Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNwdnFxcUd3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJCVxitpscfM01glP8kkSlw1yo5R9TpE-znPAsZVQqsElDTVA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105093220806766052583?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "L Clark",
+          "rating": 5,
+          "text": "AMAZING PLACE!",
+          "date": "2023-07-18T16:59:03.532Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURKNGVmakVnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXNGDma5bZdtnsPDRYKlHev1rSYXG5eqNZT5DnQ_oO8LN2aU9o=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101732647639655570906?hl=en",
+          "reviewerNumberOfReviews": 38,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Wendy Snitzer-Whitfield",
+          "rating": 5,
+          "text": "A1 service. The quality of the pizza and wings win hands down.\nLove the atmosphere.  Hand built by family.",
+          "date": "2023-07-11T13:58:12.348Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURKbE1QLTdnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXXDTIMxXu4UXoMudr1EPGf1LnkTnvOXuO8b6-KAkgntK9NifQF=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103892247399354250071?hl=en",
+          "reviewerNumberOfReviews": 150,
+          "sentiment": "positive"
+        },
+        {
+          "author": "johnny appleseed",
+          "rating": 4,
+          "text": "Very good food. Last time was not as good as the previous visits. Meal came before appetizers, service was a bit slow but ok. Overpriced though.",
+          "date": "2023-06-28T16:32:37.150Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNKd1lHTmR3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVKkQHQYBkKheGO3Kox2-Nen0X8qohrDd2ipJhjtwT_-8j9Ft6i=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102339833683445816856?hl=en",
+          "reviewerNumberOfReviews": 52,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Edwin Halpain",
+          "rating": 3,
+          "text": "",
+          "date": "2023-06-26T23:14:40.574Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNKdHAzMkNBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX_yLA75Twa_heYzRGEZ-V1t5BExIeWnWDtfh1fbuh8TNtioGA6=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103181909247244197300?hl=en",
+          "reviewerNumberOfReviews": 49,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Doyce Elkins",
+          "rating": 5,
+          "text": "This was my first time visit and it won't be my last. I had the Lasagna, and it was very good. My server was Savannah and she did a outstanding job. I had her to get the manager and I talked to Amber and told her what a great place this was. Keep up the good job..",
+          "date": "2023-06-02T01:04:15.725Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR4cElpeVF3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK9FVdDjbdNL1Gyzu5EZuhD9DcPlqkHBjsuDG9uhL8n_4avzA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102727569847482711197?hl=en",
+          "reviewerNumberOfReviews": 31,
+          "sentiment": "positive"
+        },
+        {
+          "author": "shirley perryman",
+          "rating": 5,
+          "text": "",
+          "date": "2023-06-01T22:57:45.385Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUR4eE8ydXZBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJJI-EooNOZ9-_YAE2qW8ffWETEYE_dveBronN7MADAAlejRA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104219690953421338951?hl=en",
+          "reviewerNumberOfReviews": 35,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Bart Davis",
+          "rating": 5,
+          "text": "",
+          "date": "2023-05-14T12:18:48.983Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN4c29pUjFRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWrGbrl1VOw4MvYs5hKxL9hLFgjKuAZC0NBSmUBt3UiI45SlLjc=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104444503675791635403?hl=en",
+          "reviewerNumberOfReviews": 164,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jose Vidal Hernandez",
+          "rating": 5,
+          "text": "",
+          "date": "2023-05-13T21:48:00.697Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN4NHB6RWp3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIEM0ugCFquBCoYxTjBBl0wiGVjVSSXMcgY3n4k-8ruJVWzM5W2=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109679011024889665370?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Star Darksbane",
+          "rating": 5,
+          "text": "The food is so incredible it's ridiculous and the service is great. The prices are on the high side but it's worth it for a treat.\nFirst time we went it was amazing but second time there were people at the bar being loud so i guess the atmosphere is hit and miss.\nLove the lighting.\nThe Cajun pasta is so good and the meatballs are amazing.",
+          "date": "2023-05-07T22:24:08.348Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUN4Z0ttRFR3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUSs_8OdKXcB0VVhSvTBb9Nfvps3bkW1WhpX6PtVN-YHIZYHb_FTw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103429075441217507407?hl=en",
+          "reviewerNumberOfReviews": 83,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jennifer Haraway",
+          "rating": 5,
+          "text": "",
+          "date": "2023-05-04T20:40:40.868Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURSLS03VnhBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJXj54Gk7aGjs2kYr86tPejD5jz6yIGQ0EPADD5xKC32jlm-Q=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111819160776917993607?hl=en",
+          "reviewerNumberOfReviews": 28,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tigerfan 34",
+          "rating": 3,
+          "text": "Average food, service, and atmosphere. 3 stars in every category.",
+          "date": "2023-04-29T01:48:07.931Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURSMlpYTDZnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLGy5vKXXXbh-w1anlfl3RiH9mvkO1dlJhc5UvcqMhQGTyygQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111463388554363964101?hl=en",
+          "reviewerNumberOfReviews": 98,
+          "sentiment": "neutral"
+        }
+      ],
+      "customerMoodAnalysis": {
+        "overallMood": "satisfied",
+        "sentimentSummary": "Customers have positive experiences overall. Your 4.5/5 rating from 100 recent reviews shows solid satisfaction with room for growth.",
+        "sentimentDistribution": {
+          "ecstatic": 13,
+          "delighted": 59,
+          "satisfied": 21,
+          "neutral": 1,
+          "frustrated": 3,
+          "disappointed": 3,
+          "angry": 0
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "slow service",
+            "mentions": 20
+          },
+          {
+            "theme": "food quality",
+            "mentions": 17
+          },
+          {
+            "theme": "service excellence",
+            "mentions": 9
+          },
+          {
+            "theme": "atmosphere",
+            "mentions": 9
+          },
+          {
+            "theme": "speed of service",
+            "mentions": 4
+          },
+          {
+            "theme": "value for money",
+            "mentions": 2
+          },
+          {
+            "theme": "cleanliness",
+            "mentions": 2
+          },
+          {
+            "theme": "overpriced",
+            "mentions": 2
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 32,
+          "satisfaction": 53,
+          "disappointment": 2,
+          "frustration": 1,
+          "anger": 1
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "Customers rave about the authentic Italian taste, likening it to homemade Italian food, which creates a nostalgic dining experience reminiscent of Chicago. - social media marketing can showcase this strength",
+            "The attentive and exceptional service, especially from standout servers like James, enhances the dining experience and keeps customers coming back. - review management can highlight this positive aspect",
+            "The unique offerings like crustless pizza and the non-separating Alfredo sauce make the menu stand out and cater to diverse customer preferences. - SEO services can leverage this for better visibility"
+          ],
+          "improvementOpportunities": [
+            "Long wait times and inconsistent service - Boostly marketing services can improve this",
+            "Negative reviews and reputation issues - review management can address this concern",
+            "Lack of atmosphere/ambiance awareness - social media marketing can improve this area"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 100,
+          "averageRating": 4.5,
+          "ratingDistribution": {
+            "1": 3,
+            "2": 3,
+            "3": 10,
+            "4": 14,
+            "5": 70
+          },
+          "sentimentTrends": {
+            "trend": "stable",
+            "recentAverageRating": 4.3,
+            "previousAverageRating": 4.5,
+            "recentReviewsCount": 10
+          }
+        }
+      },
+      "examples": {
+        "positive": [
+          {
+            "author": "Patsy Beck",
+            "rating": 5,
+            "text": "It was busy our waitress was very atttentive and good   Glad they do crustless pizza",
+            "date": "2025-09-13T03:24:53.758Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25WbE5YaDBkRTFrUVUxaVJIazViVE14WWxSNU9FRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLlDLNQmkLowK0yUy1AYQcPsThm8rjvOkz3YPMkHd4k3sCB=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/107978458068729939544?hl=en",
+            "reviewerNumberOfReviews": 9
+          },
+          {
+            "author": "Sharon Kyle",
+            "rating": 5,
+            "text": "Me and my family love lil Capones!",
+            "date": "2025-09-07T00:04:12.181Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2psWWVYRjNWVUZ0U0ZwcFdtbHlUbGxDVFdZMmQzYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKmc2-d9yl8cR4GJL3C_fEWS382DRhYkpFjSUz72V8pRUCqhg=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/103682717520365893613?hl=en",
+            "reviewerNumberOfReviews": 2
+          },
+          {
+            "author": "Gxldfxsh",
+            "rating": 5,
+            "text": "",
+            "date": "2025-08-23T22:33:15.626Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21zMGRXcERXVjh5UzBWS2FtWTJTRmN3TW5OSGFsRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLodCShZYNLrZIk_qamY0sTm8QLBSnLvw2jlTO5RjKiTyAVrA=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/112396075212175979681?hl=en",
+            "reviewerNumberOfReviews": 2
+          }
+        ],
+        "neutral": [
+          {
+            "author": "Richard Johnston",
+            "rating": 3,
+            "text": "I ordered chicken parm dish. And I understand that I asked for the lunch and not the dinner version. But for $14. I felt I could have snorted it there was so little and I think I found 3 pc,s of chicken. It was ok tasting and the waitress was friendly.",
+            "date": "2025-08-22T20:10:36.868Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25GS1RpMWlja2h6VDFJeGQxUXhWMVpmWkcwMWJrRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKPBfAYNVa9vl6fgmCyJLTPjFvxxSJJtjLUTjYCh83Pk6NQbQ=s1920-c-rp-mo-ba5-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/114390864917118015422?hl=en",
+            "reviewerNumberOfReviews": 102
+          },
+          {
+            "author": "s d",
+            "rating": 3,
+            "text": "",
+            "date": "2025-06-02T18:00:23.526Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VKZVE5cU8yMzl1NC1BRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ83r0K3KxcJGMuGKII7x47F8YuglxNgIEnfzJuLOi7P-2QYGcR=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/107332169872481367703?hl=en",
+            "reviewerNumberOfReviews": 0
+          },
+          {
+            "author": "Amy Stratton",
+            "rating": 3,
+            "text": "The stuff was a lil pricey and the stuffed mushrooms I thought were the nice big fat stuffed mushrooms but no their the small  button mushrooms with cheese and something on the inside! They were good but I wouldn't have gotten them if I knew they were the small button ones!! My husband got some fried Ravioli and instead of marinara, it came with ranch and we thought that was odd!",
+            "date": "2025-04-04T23:05:17.463Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNJMjctVkdBEAE",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUj0sJWUpBTspNx12HC47sY2yJXJrY7N53XRVOHCV4UOm02SfO-=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/113007816153483278401?hl=en",
+            "reviewerNumberOfReviews": 28
+          }
+        ],
+        "negative": [
+          {
+            "author": "Tricia Crapet",
+            "rating": 1,
+            "text": "Unfortunately, we didn't get to.eat there. My husband went in ahead of us to adk.about how long the  wait would be. He was told that we would be seated immediately, thickly was important because we had a 5 month old infant with us. When we got inside, the hostess had changed and though therefore open tables, we were told we had to wait. Others who arrived after us, were seated ahead of us. We waited 15 to 20 minutes and decided to leave. And there were still open tables.",
+            "date": "2025-07-13T14:24:34.967Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pWS1VHaFBWREpKUlRnME1YSmZNazkzU3pOVFRtYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXhuhza2HxeTyuxXFusukz7IF2oz9DxerACDpg3jW7iNFO5JWg=s1920-c-rp-mo-ba4-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/113089438239500182316?hl=en",
+            "reviewerNumberOfReviews": 96
+          },
+          {
+            "author": "Sidney Haney",
+            "rating": 1,
+            "text": "Can’t leave a review on the food as I’m still sitting in the restaurant waiting…we got here at 12:30 to be seated. Got seated around 1:15 the waitress went to take our order and then asked if she could run someone’s check real quick and we said yes…30 minutes later we were still waiting to place our order my husband had to get up and ask for us to place our order. An hour later and still waiting on our food while. While I’m assuming the manager came over to let us know it was crowded and our food was up next it’s 2:30 and we’re finally getting our food as I’m writing this review. I understand it was busy but if we wasn’t forgotten about maybe we wouldn’t have had to wait so long.",
+            "date": "2025-05-11T19:35:09.244Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VNalFrdlR0dW9UbXFnRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJoQ96FBBoc45iJ7J9W23VmKnyWobXWgTmO__cSKpLYHipGIw=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/111215863607809172484?hl=en",
+            "reviewerNumberOfReviews": 1
+          },
+          {
+            "author": "Trudy Miller",
+            "rating": 2,
+            "text": "The chicken alfredo was beyond spicy 🥵 i had to send it back. My childs mac and cheese was spicy as well. Service was below par. My son had a calzone and for a little bit of dipping marinara we were charged $1.25 for it. A guy who looked like he rolled out of bed literally was walking in and out of the kitchen and was with his friend who was walking around the restaurant with a cigarette that was put out but smelled terrible.  He was also dressed in pajamas. The bathrooms were gross as well. I only gave it a 2 star because my other son liked his buffalo chicken pizza. This is the second time there and the food just isnt worth it.",
+            "date": "2025-04-12T03:11:05.171Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURJamJ2ZTlRRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLzhV9vZYoYcRe-b7uT22vbvzls00Ab3c-P6xBbj6VhruHaZA=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/100502236461445569856?hl=en",
+            "reviewerNumberOfReviews": 2
+          }
+        ]
+      },
+      "trends": {
+        "ratingTrend": "stable",
+        "volumeTrend": "stable",
+        "responseRate": 0,
+        "averageResponseTime": "No responses"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ]
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/lilcapones",
+      "instagram": "https://www.instagram.com/lilcapones",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 58,
+      "social": 100,
+      "local": 81,
+      "reviews": 80,
+      "overall": 80
+    },
+    "originalScores": {
+      "seo": 70,
+      "overallScore": 69,
+      "performance": 74,
+      "userExperience": 64
+    },
+    "migratedAt": "2025-09-16T00:37:21.197Z"
+  },
+  "metadata": {
+    "cachedAt": "2025-09-15T19:23:40.686Z",
+    "expiresAt": "2025-10-15T19:23:40.686Z",
+    "placeId": "ChIJ-UlZAoFJfYgR3cXBPODJR-k",
+    "restaurantName": "Lil Capones",
+    "cacheVersion": "2.0.0"
+  }
+}

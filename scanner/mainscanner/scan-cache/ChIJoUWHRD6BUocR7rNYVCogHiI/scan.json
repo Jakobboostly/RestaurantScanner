@@ -3,11 +3,11 @@
     "domain": "www.padelisstreetgreek.com",
     "restaurantName": "Padeli's Street Greek",
     "placeId": "ChIJoUWHRD6BUocR7rNYVCogHiI",
-    "overallScore": 75,
-    "performance": 85,
-    "seo": 80,
+    "overallScore": 84,
+    "performance": 100,
+    "seo": 67,
     "mobile": 65,
-    "userExperience": 75,
+    "userExperience": 90,
     "issues": [
       {
         "type": "seo",
@@ -2612,13 +2612,27 @@
     },
     "profileAnalysis": null,
     "serpScreenshots": [],
-    "restaurantSearchScreenshot": null
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 67,
+      "social": 100,
+      "local": 79,
+      "reviews": 90,
+      "overall": 84
+    },
+    "originalScores": {
+      "seo": 80,
+      "overallScore": 75,
+      "performance": 85,
+      "userExperience": 75
+    },
+    "migratedAt": "2025-09-16T00:37:21.646Z"
   },
   "metadata": {
     "cachedAt": "2025-08-29T19:30:54.302Z",
     "expiresAt": "2025-09-05T19:30:54.302Z",
     "placeId": "ChIJoUWHRD6BUocR7rNYVCogHiI",
     "restaurantName": "Padeli's Street Greek",
-    "cacheVersion": "1.0.0"
+    "cacheVersion": "2.0.0"
   }
 }

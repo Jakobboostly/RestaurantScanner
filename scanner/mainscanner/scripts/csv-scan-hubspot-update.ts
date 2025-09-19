@@ -385,7 +385,7 @@ async function main() {
   });
   
   const scanner = new CSVScannerHubSpotUpdater(
-    'https://boostly-restaurant-scanner.onrender.com/api/webhook/scan-by-url',
+    'http://localhost:3000/api/webhook/scan-by-url',
     batchSize,
     delayMs
   );

@@ -1,0 +1,2744 @@
+{
+  "data": {
+    "domain": "luigisnjpizza.com",
+    "restaurantName": "Luigi's Pizza & Restaurant",
+    "placeId": "ChIJm61yySYcw4kR6nBzmfVZhro",
+    "overallScore": 83,
+    "performance": 100,
+    "seo": 58,
+    "mobile": 51,
+    "userExperience": 86,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "pizza near me",
+        "position": 0,
+        "searchVolume": 260,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery Ringwood",
+        "position": 1,
+        "searchVolume": 30,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://luigisnjpizza.com/",
+        "title": "Luigi's Pizza - Ringwood",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best pizza Ringwood",
+        "position": 1,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://luigisnjpizza.com/",
+        "title": "Luigi's Pizza - Ringwood",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza",
+        "position": 0,
+        "searchVolume": 320,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza places near me",
+        "position": 0,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza Ringwood New Jersey",
+        "position": 1,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://luigisnjpizza.com/",
+        "title": "Luigi's Pizza - Ringwood",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery near me",
+        "position": 0,
+        "searchVolume": 30,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza open now",
+        "position": 1,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://luigisnjpizza.com/",
+        "title": "Luigi's Pizza - Luigi's Pizza - Ringwood",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 100,
+        "keywords_appeared": 8,
+        "total_keywords": 8,
+        "average_position": 3,
+        "best_position": 2
+      },
+      "keyword_results": [
+        {
+          "keyword": "pizza near me",
+          "found": true,
+          "position": 2,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Luigi's Pizza & Restaurant",
+            "address": "Ringwood, NJ ",
+            "website": "https://luigisnjpizza.com/",
+            "phone": "(973) 839-0268",
+            "rating": 4.5,
+            "reviews": 376
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Natale's Pizzeria & Catering",
+              "address": "Waldwick, NJ ",
+              "website": "http://www.natalespizzeria.com/",
+              "rating": 4.5,
+              "reviews": 219
+            }
+          ]
+        },
+        {
+          "keyword": "pizza",
+          "found": true,
+          "position": 3,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Luigi's Pizza & Restaurant",
+            "address": "Ringwood, NJ ",
+            "website": "https://luigisnjpizza.com/",
+            "phone": "(973) 839-0268",
+            "rating": 4.5,
+            "reviews": 376
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Natale's Pizzeria & Catering",
+              "address": "Waldwick, NJ ",
+              "website": "http://www.natalespizzeria.com/",
+              "rating": 4.5,
+              "reviews": 219
+            },
+            {
+              "position": 2,
+              "name": "Ringwood Pizza",
+              "address": "Ringwood, NJ ",
+              "website": "",
+              "rating": 4.6,
+              "reviews": 295
+            }
+          ]
+        },
+        {
+          "keyword": "best pizza Ringwood",
+          "found": true,
+          "position": 3,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Luigi's Pizza & Restaurant",
+            "address": "Ringwood, NJ ",
+            "website": "https://luigisnjpizza.com/",
+            "phone": "(973) 839-0268",
+            "rating": 4.5,
+            "reviews": 376
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Ringwood Pizza",
+              "address": "Ringwood, NJ ",
+              "website": "",
+              "rating": 4.6,
+              "reviews": 295
+            },
+            {
+              "position": 2,
+              "name": "Skyline Pizzeria & Restaurant",
+              "address": "Ringwood, NJ ",
+              "website": "https://www.skylinepizzeriarestaurant.com/",
+              "rating": 4.4,
+              "reviews": 173
+            }
+          ]
+        },
+        {
+          "keyword": "pizza delivery near me",
+          "found": true,
+          "position": 2,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Luigi's Pizza & Restaurant",
+            "address": "Ringwood, NJ ",
+            "website": "https://luigisnjpizza.com/",
+            "phone": "(973) 839-0268",
+            "rating": 4.5,
+            "reviews": 376
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Natale's Pizzeria & Catering",
+              "address": "Waldwick, NJ ",
+              "website": "http://www.natalespizzeria.com/",
+              "rating": 4.5,
+              "reviews": 219
+            }
+          ]
+        },
+        {
+          "keyword": "pizza Ringwood New Jersey",
+          "found": true,
+          "position": 3,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Luigi's Pizza & Restaurant",
+            "address": "Ringwood, NJ ",
+            "website": "https://luigisnjpizza.com/",
+            "phone": "(973) 839-0268",
+            "rating": 4.5,
+            "reviews": 376
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Ringwood Pizza",
+              "address": "Ringwood, NJ ",
+              "website": "",
+              "rating": 4.6,
+              "reviews": 295
+            },
+            {
+              "position": 2,
+              "name": "Skyline Pizzeria & Restaurant",
+              "address": "Ringwood, NJ ",
+              "website": "https://www.skylinepizzeriarestaurant.com/",
+              "rating": 4.4,
+              "reviews": 173
+            }
+          ]
+        },
+        {
+          "keyword": "top pizza Ringwood",
+          "found": true,
+          "position": 3,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Luigi's Pizza & Restaurant",
+            "address": "Ringwood, NJ ",
+            "website": "https://luigisnjpizza.com/",
+            "phone": "(973) 839-0268",
+            "rating": 4.5,
+            "reviews": 376
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Ringwood Pizza",
+              "address": "Ringwood, NJ ",
+              "website": "",
+              "rating": 4.6,
+              "reviews": 295
+            },
+            {
+              "position": 2,
+              "name": "Skyline Pizzeria & Restaurant",
+              "address": "Ringwood, NJ ",
+              "website": "https://www.skylinepizzeriarestaurant.com/",
+              "rating": 4.4,
+              "reviews": 173
+            }
+          ]
+        },
+        {
+          "keyword": "pizza restaurant near me",
+          "found": true,
+          "position": 4,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Luigi's Pizza & Restaurant",
+            "address": "Ringwood, NJ ",
+            "website": "https://luigisnjpizza.com/",
+            "phone": "(973) 839-0268",
+            "rating": 4.5,
+            "reviews": 376
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Natale's Pizzeria & Catering",
+              "address": "Waldwick, NJ ",
+              "website": "http://www.natalespizzeria.com/",
+              "rating": 4.5,
+              "reviews": 219
+            },
+            {
+              "position": 2,
+              "name": "Skyline Pizzeria & Restaurant",
+              "address": "Ringwood, NJ ",
+              "website": "https://www.skylinepizzeriarestaurant.com/",
+              "rating": 4.4,
+              "reviews": 173
+            },
+            {
+              "position": 3,
+              "name": "Ringwood Pizza",
+              "address": "Ringwood, NJ ",
+              "website": "",
+              "rating": 4.6,
+              "reviews": 295
+            }
+          ]
+        },
+        {
+          "keyword": "pizza food Ringwood",
+          "found": true,
+          "position": 4,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Luigi's Pizza & Restaurant",
+            "address": "Ringwood, NJ ",
+            "website": "https://luigisnjpizza.com/",
+            "phone": "(973) 839-0268",
+            "rating": 4.5,
+            "reviews": 376
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Ringwood Pizza",
+              "address": "Ringwood, NJ ",
+              "website": "",
+              "rating": 4.6,
+              "reviews": 295
+            },
+            {
+              "position": 2,
+              "name": "Carmelo's Brick Oven Pizza",
+              "address": "Open 24 hours ",
+              "website": "https://www.carmelosbrickovenpizzas.com/",
+              "rating": 5,
+              "reviews": 32
+            },
+            {
+              "position": 3,
+              "name": "Skyline Pizzeria & Restaurant",
+              "address": "Ringwood, NJ ",
+              "website": "https://www.skylinepizzeriarestaurant.com/",
+              "rating": 4.4,
+              "reviews": 173
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        "Ranking below #1 for 8 keywords - increase customer reviews and engagement to improve rankings"
+      ],
+      "scan_metadata": {
+        "location": "Ringwood,New Jersey,United States",
+        "timestamp": "2025-09-15T05:37:27.562Z",
+        "total_scan_time_ms": 32830
+      }
+    },
+    "competitors": [
+      {
+        "name": "Artemio’s Prime and Proper",
+        "domain": "artemiosprimeandproper.com",
+        "performance": 96,
+        "seo": 86,
+        "accessibility": 82,
+        "bestPractices": 91,
+        "overallScore": 89,
+        "rating": 4.8,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 756,
+        "keywords": 52,
+        "domainAuthority": 82,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+150 keywords",
+        "authorityGap": 4,
+        "backlinks": 1071
+      },
+      {
+        "name": "Sam’s Bar & Grill",
+        "domain": "samsbargrill.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 503,
+        "keywords": 36,
+        "domainAuthority": 86,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 1048
+      },
+      {
+        "name": "D'Boathaus Restaurant",
+        "domain": "dboathausrestaurant.com",
+        "performance": 92,
+        "seo": 83,
+        "accessibility": 78,
+        "bestPractices": 87,
+        "overallScore": 85,
+        "rating": 4.6,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1226,
+        "keywords": 34,
+        "domainAuthority": 73,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+50 keywords",
+        "authorityGap": 1,
+        "backlinks": 1114
+      },
+      {
+        "name": "Skyline Luncheonette",
+        "domain": "skylineluncheonette.com",
+        "performance": 92,
+        "seo": 83,
+        "accessibility": 78,
+        "bestPractices": 87,
+        "overallScore": 85,
+        "rating": 4.6,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1292,
+        "keywords": 32,
+        "domainAuthority": 76,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+50 keywords",
+        "authorityGap": 1,
+        "backlinks": 712
+      },
+      {
+        "name": "Lakeside Diner",
+        "domain": "lakesidediner.com",
+        "performance": 88,
+        "seo": 79,
+        "accessibility": 75,
+        "bestPractices": 84,
+        "overallScore": 81,
+        "rating": 4.4,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 793,
+        "keywords": 50,
+        "domainAuthority": 75,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 874
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 71,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-15T05:39:34.570Z",
+    "businessProfile": {
+      "name": "Luigi's Pizza & Restaurant",
+      "address": "16 Skyline Lakes Dr, Ringwood, NJ 07456, USA",
+      "rating": 4.5,
+      "reviewCount": 376,
+      "phoneNumber": "(973) 839-0268",
+      "website": "https://luigisnjpizza.com/",
+      "formatted_address": "16 Skyline Lakes Dr, Ringwood, NJ 07456, USA",
+      "address_components": [
+        {
+          "long_name": "16",
+          "short_name": "16",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Skyline Lakes Drive",
+          "short_name": "Skyline Lakes Dr",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Ringwood",
+          "short_name": "Ringwood",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Passaic County",
+          "short_name": "Passaic County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "New Jersey",
+          "short_name": "NJ",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "07456",
+          "short_name": "07456",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "state": "New Jersey",
+      "city": "Ringwood",
+      "place_id": "ChIJm61yySYcw4kR6nBzmfVZhro",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "reviews": [
+        {
+          "author_name": "Brian Steinhoff",
+          "author_url": "https://www.google.com/maps/contrib/108376765330939946393/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLihQWWrrBr38RjlRvu6BxSGViTRF_W2KQWzsrblAVHQuVPSw=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Every time I’m back in Wanaque visiting family, Luigi’s is a must-stop - and this visit marked my fourth time here in the last three years. It’s one of my favorite places to eat whenever I’m in town.\n\nFrom the moment you walk in, there’s a sense of warmth and community. The wall of children’s drawings, the friendly counter staff, and the nostalgic charm of the space make it feel like home. And the food? Absolutely outstanding. The pepperoni and black olive pizza I had today was perfect - crispy crust, generous toppings, and just the right amount of cheese and sauce.\n\nLuigi’s is a local gem that captures everything you want in a classic neighborhood pizzeria: quality ingredients, consistency, and heart. It’s no surprise they’ve been serving the community since 1968 - they’ve clearly got something special.\n\nWhether you’re a local or just passing through, do yourself a favor and grab a slice (or a whole pie). You’ll see why it’s always on my list when I’m in Wanaque.",
+          "time": 1751041325,
+          "translated": false
+        },
+        {
+          "author_name": "Sebastian Ortega",
+          "author_url": "https://www.google.com/maps/contrib/108871711300374978207/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV7DraJqs4slTLlhStF_2-Qx4vVd65sLP7we3qIdWjlKTTmOwlntQ=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Hands down the best grandma pizza I've ever had. My grandparents live a few minutes away from this place and we always come here. The vodka sauce and pizza are extremely good, and I've always loved their calamari as well. Their fried doughnuts are also good!",
+          "time": 1720666598,
+          "translated": false
+        },
+        {
+          "author_name": "Johnny Midnight",
+          "author_url": "https://www.google.com/maps/contrib/101680607727175471826/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUcfY0P7-bKKB3u4HBXjdK004hrbc8ZT0QxY9vDFGSEaT_tqmbfNQ=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "I've been eating Luigi's pizza since 1968, when they were located at the Geppetto location on Ringwood Ave.\nStill my benchmark for the best pizza 🍕 and authentic Italian entrees. Worth every dollar!\nThey have so many loyal customers that they overnight pizza across the country.\nI now live over 80 miles away, but it's still worth the trip. Thank you Luigi and sons. It's always nice to see you.",
+          "time": 1677047322,
+          "translated": false
+        },
+        {
+          "author_name": "Shamelex",
+          "author_url": "https://www.google.com/maps/contrib/108368606204774078138/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWari4Bzcb9a50xqjOeebR2WunKKko5sNAkuioCcqqPfW6fRFuN=s128-c0x00000000-cc-rp-mo",
+          "rating": 1,
+          "relative_time_description": "a month ago",
+          "text": "Ordered a pie. After 40mins called just ro ask if it was on its way. Got told \"its only been 40mins it's coming\" 20mins later it finally arrives. An hour later. Ice cold. And a side of attitude. New owners suck. Never ordering here again.\n\nOh. And if you see this dude, it takes more than just a gallon of salt to season vodka sauce.",
+          "time": 1752966661,
+          "translated": false
+        },
+        {
+          "author_name": "Christopher Pian",
+          "author_url": "https://www.google.com/maps/contrib/113507888872331670948/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJ-tHKSRzQsoMfaaPDUw5qYgCgxTDfmIoAePL7te41KRmdMsg=s128-c0x00000000-cc-rp-mo",
+          "rating": 1,
+          "relative_time_description": "4 months ago",
+          "text": "If you are going to make Uber Eats money, and CHARGE me for a scoop of vodka sauce, dont scree it up and rob me twice.\n\nPathetic",
+          "time": 1746324248,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110843189769913587494\">Luigi&#39;s Pizza &amp; Restaurant</a>"
+          ],
+          "photo_reference": "ATKogpfVzXInwiHJYS2hp0g_atvmT5vm4h8PigsI0iRlCyWxIIlpWrE-6qQWPX_fTN8MpeLqQZI0n1-MBG_YV_WAnwd6gwrSc-1GPAWiSreIjUDNBHWrBdsv1uKZVgQqRMDtJU5XvHYU_odbOiyo39cvgGZQ4hOhczZ9Lwqc48MTiLrp-xtpxiYkK2vrj_wJEYQOWenT5Xp6tEpNqWIyFZaj-30ulVzmJApwrQNDXma2OZCNVmyg2R7E5OqJ2jyiJ3eqbb4LA5vFyNIz8m9A5krAHe5iSlmtRlzRg5ytZHQ28lw",
+          "width": 4032
+        },
+        {
+          "height": 2240,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110843189769913587494\">Luigi&#39;s Pizza &amp; Restaurant</a>"
+          ],
+          "photo_reference": "ATKogpf68-4q6KZTwBj62aP-uSySSNiYdPN5xiGiJW2LqfMEVMvijQ0mIuFRzwRi1vEG21JQTgI4YxIvll4cDxaq8I1I7DBBuVQKjKwKJwyuHN-dhqRR4pAVrgF5TJ87RXSLfcu6ZR4nTs4zt9xuJMf5HXqUF6RqPvLVL66xKE-SD0xrvwdLrJYPcV1CLnVtARxFCZhlrx2Zc1LImz8XcgWq2MI7AEz9kf_2nRLIApWLXWUQA_bY1ugERnsv-C6cM_8XbrSpIChegpCXv1Je4UkoIjd2dlrrotXfCpwM6-wDOMY",
+          "width": 1600
+        },
+        {
+          "height": 2252,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108871711300374978207\">Sebastian Ortega</a>"
+          ],
+          "photo_reference": "ATKogpfgLCpkoe0GB7PxcZtp5AylEuZaw2TIaW8U5gW6xrz2jrqS2CBDfO1I30MRyutJOfSfQJpcuCIe8zFW9qAZcYSRlrBnErjSJSVXNrXseQujaFcB9r72g933stc8ypK6vMYNn80cMi-zfuf2sMGSbS0jw_aPLupoP79hOR_4hLG3ny9bewkeZxA-cbqzM3eA3SUgX8vy8m-RMnW0j_xybFxtVIW4PCovxlnQZpPsxON43gw_Csxsw4mh-dsqwQvREw3C4DoLM2v1ls9B1DabCK3t3a2861soKWDaVaRyGBkDkM-kndXlDL6SOBNNouf2CmEfjFw-Ls0Z79fdlIuInl86QHq1hJGIWKETKEJMvvYtsORK__dNKVzLOPzQCJYvPiEqoX1h4uf0Do0l-OIW9m0hvx33IyVsCAua_BpI8c24eWHA",
+          "width": 4000
+        },
+        {
+          "height": 2252,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108871711300374978207\">Sebastian Ortega</a>"
+          ],
+          "photo_reference": "ATKogpczS45IORjsxy5LFlRgHxZ0Bk6AnPcK1WKcdD2pJ4SuLSMm9CZhhmBDUCQvvxVIxfpdk9P2qJxCVdki6keRw4JeqN3tioIxB2mbrKD3rNJYIP_CwTTHF9hMVYMzLQG9EuwHvfPvJxt6LQpRQqZfQJQy-y8zwMbAV_U-fcTHQvwrqjm4l54nTBNsmCHiH9JUc2ZguPl63_i99ZIeEjqI_h4xYH4EWqJYqkdYiFtOPZP22l6TxyvZtWgTG3avF5iGrIpuBbKn3blhOko670Cw4sNl5aQsp5-swl9uFZY6rtG9UKPXKlh1bobUTfQmA8WhW2kvbEX6GOUz8LXha81FcIXtbS4USrvCyo1k5qj4-n1JTQCM7tLzUCKIjhwzZjdF4v-wuCOWw2LYPD3cWCOcYXIBvneFEw20Xpo663rftPFw0A",
+          "width": 4000
+        },
+        {
+          "height": 1868,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104103495808434566568\">Michael Netto</a>"
+          ],
+          "photo_reference": "ATKogpfu3hx2yYW0txNv_Bn2GtiTDLejcHFWawbcqvJeKyJtZhJi5lupZLoc_-vTc85Zx5wNdwd2kzadQuxaxOgAv9xQ3xowQusRvTAm12gkp34gMTwQ30W9NVkKMEHJmEysETeHbyO9-UUj24enw_0SijDYleM3yOdC7OSMdI-0Sl-0R7imE2txChaplWtSX916d8m62U876Jvow8hU4c5aXRJ64RZj2IawmwdbaWVCUbnSxt2MxWMH3DIi_OlHHZUjTtA331mUuVaYnuncU-8guIwuJExIOVj0CrPtJvqPckak0iC8fmgplLr45M9MtuJftR4jgVoS-AZpwYTPrJJ93WHJbBTeiCwmZEdQSOWZWXqolaZcewKqBJl4VrOVqOasTAXcUg-rHdTjx5Rc6-5mtiaxhY6KC_X8Mcixie3_LjTqwWzQ8QcJnmCG1qZPjg",
+          "width": 4000
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100707600846152413357\">Marco Rosella</a>"
+          ],
+          "photo_reference": "ATKogpfi5x1_kdnK30e2XDWge7DChiUqEIXOvgTwyetb106Ql1fXWDL_s_RhF3xB_mhVNj7qdLy8lgOmDTBjmgTnPfBfRsSyg2ox1So_iVY2-l-4bSmmhjBC9lwKsTTDN_PVyuFpWEV6lXQTLdYlasUezJ_VpPz-M_WrmnXY1cBjHCeen5BTZxV8NFwB5-huepHnOJDG-cWEcWptEYp7cFpP5sawVgd0qKfWVE_2z7ze8spxPy4Iz16VT0ugd1QMHB8lv5vgM_F499Pu6DaBtG8WWQL-HTjiTpKF1kzqFiOx0Z-JnYqi0z8Ivd9UXzOC-jhiIhv2BVrkmH0_818ObYFotoXPDkslXqsJL5aBG11D6S0tC-uIyNyH2E6HPDSiP7gsMMFInTIrXZkp_hyvVQxCz8ZkgLjtnncfN2ow_7ysFpXuVYJQ",
+          "width": 3024
+        },
+        {
+          "height": 1790,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105159791583914277566\">Ira</a>"
+          ],
+          "photo_reference": "ATKogpfxQl_4vxxxa06lp2njaZQxLyS0e9XQawPYU2rIWRqFnUzCXeF4tbXFczdddAZdC65NUq65krCb1uxELyS-CbAPoS0KSTUHTMYeWfZGsFs17o8kKdBuCwj6JwH91biJMhRx6pPnZg7WkoHsszv-kxWbgXZ-SE5mc8mrmS3JHdBiWNUzXA_EQGcbLy6P5AJDI3jMeNipsiq_VW3ifj_PV9myljjzTmbQCr454J7rPSpdmgPzKpTafAP2dFzTtmpL99baIXNA41Fj_wh0v9TAxRQcbAF74G3kTAElXJ95axvIWD59CjjOCR5cEwAxNJZbSfKe2abuHYoNLXWWxYkv_ACgZjSRsBaWQHD7d-ONzBT37lDvnVHuCoQNtDtMgYG-wxqsKu574fyTkbX8RkStkcgbGY36ALCHOJgxFJp4zV0gnXRDPWScF1JuDyAGvA",
+          "width": 2299
+        },
+        {
+          "height": 1067,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110843189769913587494\">Luigi&#39;s Pizza &amp; Restaurant</a>"
+          ],
+          "photo_reference": "ATKogpfc14QB6__i7vch4UdLuaBUgMPQNHwmy3R8C_KwH_EzC6XIP3G5Kfrtb_G-HljUINONI3MYiTVSOFLvBg8QubZVs7u8IGthT5NWB-IXmlCeWDy3hiwqAWy_nBDIio9HyUdtz-FUv_fQBoZXWsY2P0dkMbqghAiA3A3ZHBJUDxdrIBAoSk1Kziy1r9eSUgDj3FWPEwcftDz81GxnSObzLZ1gTqdOWzDop3HB4ZBv0TqzaPWwV4YD-ZFWif8D0LyOa-tKajAa3JpN9TjpqbqCVs0QAW3-N1_RpUH27_94KcA",
+          "width": 1600
+        },
+        {
+          "height": 1250,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110843189769913587494\">Luigi&#39;s Pizza &amp; Restaurant</a>"
+          ],
+          "photo_reference": "ATKogpfsWeTwWUZwP95RbgkgHXg58jkVHXWZQodWgf8VYBFG1ux5JWFa70SczmjyKZ1dxsKPMZygGi1QzwKao-Z19OGene_d84r15Q83MCLqWlGtvf7WBr4nkIAWKf-CvHUaryLa_Jq5QWTFi5acCoA8EX6KQFMhBWGuSlMPr_MFE_fp6owD3X6hKSynCLWfb-WgL1PjJCrobQ7sw7T5VAU9vOuy6NGyNmdN6iK0k_Rctmeda3io4HcoDWGEdTUJ4O__oXq2nL9mZ9fSt9sOXQrPXQT49wIuOuVHTeGBSmQN6fw",
+          "width": 981
+        },
+        {
+          "height": 2252,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108871711300374978207\">Sebastian Ortega</a>"
+          ],
+          "photo_reference": "ATKogpeHLCZyVaF_rxn9y4cz-nzihNcPIIrJLZG5s2HN2VC_h9nCBEtuqG6FsAG6RS_0uEypGJScYw1LD2J9ziOiH5KDay11y2IVfyUQKecdhCzLiufP1mZEsd5xyFKv6XVxwM5PEDNPUBUt7Ku4VjRNxiTuauv1XV0BNW9OOngnB4CPpqGOxz5bQtodia4qh3NO-n2ebT2sH5lZsjNysMOvCz5meERRMLQIWlDlfFBcOOvHPeG7bmzvjDd5odnGcx0FVuaJjQVnc3Xs7uT5dpzI0opVw6FiG7kNDbkQbVa2nt1-8UrqaN0L5FBcubM3OVbPDNlXMPCptJfvjPw7wdpWOZMUlHkBh9cpVClKVi7QmXoC3X4NQ3MOcYj2XGOVJhvQ-Dk8YGHt-UATFBbCj4trdv9SFcu4dBU9Ml5Gng8FsbDYYA",
+          "width": 4000
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "2030"
+            },
+            "open": {
+              "day": 0,
+              "time": "1030"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2100"
+            },
+            "open": {
+              "day": 1,
+              "time": "1030"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2100"
+            },
+            "open": {
+              "day": 2,
+              "time": "1030"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2100"
+            },
+            "open": {
+              "day": 3,
+              "time": "1030"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2100"
+            },
+            "open": {
+              "day": 4,
+              "time": "1030"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2130"
+            },
+            "open": {
+              "day": 5,
+              "time": "1030"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2130"
+            },
+            "open": {
+              "day": 6,
+              "time": "1030"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 10:30 AM – 9:00 PM",
+          "Tuesday: 10:30 AM – 9:00 PM",
+          "Wednesday: 10:30 AM – 9:00 PM",
+          "Thursday: 10:30 AM – 9:00 PM",
+          "Friday: 10:30 AM – 9:30 PM",
+          "Saturday: 10:30 AM – 9:30 PM",
+          "Sunday: 10:30 AM – 8:30 PM"
+        ]
+      },
+      "price_level": 1,
+      "editorial_summary": null,
+      "url": "https://maps.google.com/?cid=13440529049310163178",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogperRqq_9Uc9HtyHPFneaIdFQWPWLtaxoAdFwJbnh1-iC44eJaQIDAwRRAHA0LjkZOx7Bkn4eWwBbMWPWtJPtrwtX5WuRjlwBLq23RSbEOMkwWuVkq4MwXoxqzFPJPvPSI_sYwCxQQwJDp2J_Su5tXIIAj-Nd0O7IRY1FPBLeu1AwrhhzaY0c8RmIyfW40fiCJNh3io909XCkkwWivQKBeQupjPOO7WGS0MJ0VLcHHOA2tClDuzLzI5MfwMuJeINRaSNUeu_EFN13oMvBSIWPYFPudzo_NLRheCUclDLvws&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpeWmtdUZ4g0eDTENnkB32X67qEiGCY5YfGQHg_WE5cp_HhtwghycroqAK1t8ny4x64tMctzGdZRwY2_Qrb_egqhf-XZqaea2ur05npPd2x4b9GiHzzk3P1CEkABzCzu7a17MEIwpwXIdgvjr1V5gaTTqCvCoo-cp05mTPmr_KXvSFqhsQeSpzdBRMv8OFHHfUfhleRf8Tdqs-fW0AzJGq77r6md6DcGipHipRTj-N2zgHmZ7tQaFgdubs4-aQoAUCd1svgHxnw8QdieqkFo0NXztZCbNeD5p7x4BeDoj4Q&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdEGztHKmzp1C2SgmMlBMxSwedk21GB5cczArTbIsNjucDmXKhIJcoNXVPPdCNDOQA6h9CXkLUel0OK7fyevTcOQnrU9r3OfYLVOGZjedTu3iFCJqifmdkkGqdJPH6lte4POqnsDz-RVFVyEADcVLHWKQLJmyuQnMvBjicQuZuZ1s8xmkIqhndEcmN0EmZ6m_iWGnNHAzYnSzygXY4UUJOKdtnH9733_14ZiKBSkLjHRC5dYd_d-uSItLL_zfMhhp6VKWzS0gI7vYaNrD3Wu_NbnhZ0hF6zqGoEhKsFNlr8WSFM2PePVmXiBMaWqWIycMe4jVFvbvh8SBsH4I_TBJiPgan7ayTG2BmrhOjzhnCT57r7g9M9H9xr5mKJELVx5mBiXnOl6KBuQlIu8xuiZasQ_chKwoJ1cu4GPuMCwwDT6VYy&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpep77Wmy_VhShUny54SVxn7Afof7ueSMS8Ekhyw-IG_xJ41pCfrkDQ1b3ec2AY9ut0RP_r94iSL6_b3UDHjW0IeoiDxtL_kJJHg2y1VgzSwUQqAhKcAYSYv75Te7_doYKgivGF-rWROrFRXxK2Qzzq9MQQJG7UXR2Tcz69_o6wDOiNhyNgBm6iWdPHfYQPEC5oDNpE25u-gp-Kv4cdhZA2G6eeQOYpuRY1_I2HMwTGTS8Rajym8AxoUgvYUSmnxUq2mutqBuOQCacQUQf0SDiMTq5djpdOeUbnNi2Y7gK4_qkQ_lVBQWeSp0tTKDQQr_ZwITgGoM6eH3Y6Gua1Jk7fxlM79-VFvWgm7boek9EydcxDh8KcELG1TAZWSN2qXmgcD8_UuEfHUJEg_a9W_TtIIHnFiQQBhXI_Q6MqaQMx1eA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdY5STg97QoEMTNZ7VYUt_f7d7ZwckQIiqT-wZprfq2oywE8nWsWBXoFE2H619kuOiHxYgSuMFySJePgUhnBOoS6pqOU5qUyHCWoHDu3rMNIQVedujYGJHTveaI1SPQEgs8lTA4JvuDgyvDjA3CtwmXkGQJn2_Bzxn7wWWK3Ib3yI42ulbYGtRP4q892rZ7LrTBRy6RiMBISiE1dox4Y35QuCdGMzCsGIhui79qEoBMc8eHeddSgL0ZW1Y6H_KYd7a2OzVef6RfNLB64VoLcBYKB6LhHRX-CM83ZvgCVhOTZ6OtnXLbfa78_mIn9H6WPYn41M0eSyUTbI2gBKESfjhgdj48RnPedG6l67YM4axsyHoTyxYHOjjWLrTUneVe5bFd81yJ7zA4erxlqs_cuuT-y0sZCkPGUw4U821_5as7uZ5O4g6RSRzabkaEBA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcnzmvF-XGm6dF44DLqJlcdAkjhETMHS_XblGNBn_HSbqQdNF51iSvPFQ3JLRtCOZoynw_eN7IJS16N4_ACrHGPFt4Kfw6lRnMk9VUL290EW-wdPyH3e2Kfd3_p9qfWvBl-xg9nMGSjPzwA-4s6ijBZc1BmtbKK3YK8CyAiMtYo7UZHCTlAicLyrce-dSUj1ItyXj73gFcQ7cKh2uG11mS3w0IVuS1yYoukMqzQxphJY9ufZ4TvrKCZh59VF96Q7x9vWR7t6NKTxz3JkOpp7Nn0SW4Pd10MWijtyvgqkmvGKPjLILNTyzDMyTDnbDxTUaddFBQisuVB3Tsj0l5ldnjfHLR4PpUPpKoDUa9PUss1Bh89xVCga6GSMJT_ly4TRkwWhxjDRWMMlZ7zJpVDfhWUMWkAAVxEk_uL6N8OtBNNJtUj&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpc55wd-TAVt9vEG6qebNN4wSR7gctB9KhoDNhmkKotzOpYs3lhaQgwrs1FiUvBizh5otf2sgx0e1qoplb2HFtqykyMiDeBy3gE0_0YG0Kyo8Q2gwfK7hN5vHGnqfOGmkM82v3p0ogobwa2vepAv14kecMJMCJS35sq74p2cRH_ih_7ROWOYQw0iFNFGOxEdJiuG5BAAC8Xnclq5iXjnykex7zRqfaFWXZNE8cWAyvvMmCv6sFdSpiWW0m3ULAj3TjaJg6l92z32nP3ROBgw044M7U_59rbOpKdBXrP0n7deUcDzEnqtTPub8bGq-Hbx6K1D_ImR5Ov34ixcsO9VbCOlibcpfVvfaOcNxOV6o3CAShVuHdeCwi-MUVcfk3VJa_7mt7ZhVeYSZ0cvhBdZxoOyerh1_HtORuRphnbXA9qASNO4sU6tAcblttAdow&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpc_e8BTgszY8B4QbTXNhI711ACC_haJ8eCb81yQu3poe0mlsX_ETv42PMTAuBE9BIyaC-ykFaQ0f67D3n8I7HrLI1ND4KW7ZTBkv4jIKMLgY0t-68R7769pQ31SaJEvy1G_n4oOezQ45Orb_v32SBx1wa3Jdxe4-bblbGWePwPdJOBNZF2Iv7xdStyvhKWiB1zA_K8ZkpcOt5e0KhWKF7c_ZAuwICPaBfEYaTAmEYZAyRu6t0SaUuEqwYbsm6AD7uwRoidZp9w8PrUXjdD8tI6taqF4cwG7WjYcJbHOV9A&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpf8YJSzICM78kXIA7IPulZy9AIRdTT1c_vIFYM4hy-6o12Uz-17em9fitO5ejR7kQ7NHOuQ917zI9d_PyzxQbuZ44d8Ht-fYhVKBDZztUDqVpiZv4FqP6aaGDdkQMwyZQIWp7HIOqMlw1dc6k2G9qS6zCc4eXt9DZWXNoAHz0VlTqNfXbGCAhSKWUZT7sLCKNyDKjw1DximLpyEHJ5otTKrmeDQqNimhD2YctCyKRFLfqKj0fTvvlGPGVYB2yw7nWQtov1d9uAiEAIceT-6KpjBMpQ-VIDrbfaAvV5aljA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdazIZNhtKhAu5merLlr9xLjoexHya70S5ruwlz1ofJ-nU57sVx06Hg3kvZ1DJnEUrou3NIqkiCnsKE6ywzNAxrveAwBvhQxtI3pxICyLxw7cEEv6ptb-yTX7l_4Xjzh-igF5hH0u59nHU_Rb_2Ysx_rSXGAokeUXXgpHzCMkOWT0eFOYuu82aczEYqJEarv7_2J1ERNtDKIn8jas2UDYa38VWkrVswbQQvn5NyyMoLmXACcc3GfrIaeLTSHKA8TExP9v5s3z0NoEq5tgT08HpydXyOO08h1PjTQlL7QxbsGVNKx47rDVzdXLj44BRIZohoh-VESXAGj5b2iuFD2ldNn1R7nMDTudASTVaDTwspjlyPQjKtpRCojXAOFaEj23jFLtdT9FX7FwOpW6jkK0Ce6COTyMSrvthrf2f1JHrHsQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 51,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": true,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 90,
+      "totalReviews": 376,
+      "averageRating": 4.5,
+      "sentimentBreakdown": {
+        "positive": 91,
+        "neutral": 4,
+        "negative": 5
+      },
+      "reviewSources": [
+        "Google Places API (Apify Enhanced)"
+      ],
+      "keyThemes": [
+        "Food Quality",
+        "Wait Time",
+        "Service",
+        "Portion Size",
+        "Pricing",
+        "Cleanliness"
+      ],
+      "recentReviews": [
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Its good!! Grandma pie is a must!!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "This is my \"Go To\" pizza place in Ringwood! By far the best pies in town.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Best cheesesteak anywhere including Philly!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 1,
+          "text": "Ordered a pie. After 40mins called just ro ask if it was on its way. Got told \"its only been 40mins it's coming\" 20mins later it finally arrives. An hour later. Ice cold. And a side of attitude. New owners suck. Never ordering here again.\n\nOh. And if you see this dude, it takes more than just a gallon of salt to season vodka sauce.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "negative"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 1,
+          "text": "You should update google when your not open. Now I can’t eat for lunch smh…",
+          "platform": "Google Places (Apify)",
+          "sentiment": "negative"
+        }
+      ],
+      "detailedReviews": [
+        {
+          "author": "Gabriel Emil",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-13T15:57:41.310Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21ZdE4xQldSVWw0U25GSmRVUktXbGMxWmxCdlRtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWFZ7mTqp55Op_VNNJvxQyTbFpl8elj4NGJo_ViY_t1btt_CC0v=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107018469503704086216?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Alyssa McGaha",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-09T18:20:16.827Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25WVFZUaEpNVEJIUWtOeWVqRnlkMmwwUlVaaGJrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU8uFXqMcS4KydzKvh_hfg3ivdCz4HdxVULiwPmexRRb5vsFLw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106195723762877869258?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "J B",
+          "rating": 5,
+          "text": "Its good!! Grandma pie is a must!!",
+          "date": "2025-09-03T20:45:54.394Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t0M1JYWTJTR2RQYURSdlh6QnRkMVZJYURWUlRuYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWEXTxN_UdMqI7PsYx42-GYn6Be3h4xs6oYo8ijxB8uZ-AtMFI=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107364898559982291847?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Cain Aitken",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-24T20:35:47.436Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pGd1VHaENhRGhqTXpKc1dVcHFOblV6VFV0a1FrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWsJiVdE3du1sgod2hvy1vUFpLiJKpmg0nKF5PAOe51m9Jjfjg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104727838678306715147?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Chris Boje",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-18T23:40:09.338Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pGMU1GaHBRbXRJVTFkakxXTlBla2xDTURkSWRFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWcvK7mwW6hfiXRNATEpb7gxCX4ojXJUgI2HbJgsprKizaeiE8W=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105351387459950423025?hl=en",
+          "reviewerNumberOfReviews": 14,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jeff Kunz",
+          "rating": 5,
+          "text": "This is my \"Go To\" pizza place in Ringwood! By far the best pies in town.",
+          "date": "2025-08-03T21:36:46.454Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2sxdVpYbDBSRmcyVDA1eVFrVmxTMlZzWkhoVU5HYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWDUnO9ILOVhIWosqDP-v9txMIbLU_CkoHcgklkaCWbPfS60HE=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104114287544030039363?hl=en",
+          "reviewerNumberOfReviews": 14,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Wadalla Abogabl",
+          "rating": 5,
+          "text": "Best cheesesteak anywhere including Philly!",
+          "date": "2025-08-03T20:05:44.283Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xRMGJXbEhhM0oyZVVkWFJUbGhXRzVTTUUweVRuYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKbxD1MAwB_y_bfAf6EOBHQQ2qsRTYHP3CdFBCWP8Hk50ML-w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108577313991587486852?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Shamelex",
+          "rating": 1,
+          "text": "Ordered a pie. After 40mins called just ro ask if it was on its way. Got told \"its only been 40mins it's coming\" 20mins later it finally arrives. An hour later. Ice cold. And a side of attitude. New owners suck. Never ordering here again.\n\nOh. And if you see this dude, it takes more than just a gallon of salt to season vodka sauce.",
+          "date": "2025-07-19T23:11:01.641Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xRd2QwSlRjekZTUlVGVlJVNWlZVWx1YVU5a1ZXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWari4Bzcb9a50xqjOeebR2WunKKko5sNAkuioCcqqPfW6fRFuN=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108368606204774078138?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Thomas Hills",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-18T18:15:27.288Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25oemJFaHFheTAwY2sxWGRFcGpNamh5TFhwYVExRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX9mVBZ6IL21bXy0LXFSLpMzy2UAUmCZtCV7L6DPT1CpFa_-EKi=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103538094972485042203?hl=en",
+          "reviewerNumberOfReviews": 177,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Omar Rodriguez",
+          "rating": 1,
+          "text": "You should update google when your not open. Now I can’t eat for lunch smh…",
+          "date": "2025-07-01T16:26:28.516Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xKa1RWQmtkRlJ6TmxsNE1tSkVSbVZUZFZBek1rRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLSeElwhFr5beEkv4Jxp5w8_wfX8shJn0CmRUAMMr-Dty9F5Q=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106068766072339396806?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Merry Christmas",
+          "rating": 5,
+          "text": "I truly enjoyed how Luigi’s made me feel special on my birthday. Food was good. Dessert was great. The waitress was superb. Can’t get better than that.",
+          "date": "2025-06-28T23:35:56.484Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pKdGR5MU5WbGwwVnpNNVpUTllaV1JIT0U4NFVVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKf24XoPYVRNHhOhf9RHX75zeS1zl_yTxAfm0nfZZfLuwxRG6g=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102923555620070459898?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Brian Steinhoff",
+          "rating": 5,
+          "text": "Every time I’m back in Wanaque visiting family, Luigi’s is a must-stop - and this visit marked my fourth time here in the last three years. It’s one of my favorite places to eat whenever I’m in town.\n\nFrom the moment you walk in, there’s a sense of warmth and community. The wall of children’s drawings, the friendly counter staff, and the nostalgic charm of the space make it feel like home. And the food? Absolutely outstanding. The pepperoni and black olive pizza I had today was perfect - crispy crust, generous toppings, and just the right amount of cheese and sauce.\n\nLuigi’s is a local gem that captures everything you want in a classic neighborhood pizzeria: quality ingredients, consistency, and heart. It’s no surprise they’ve been serving the community since 1968 - they’ve clearly got something special.\n\nWhether you’re a local or just passing through, do yourself a favor and grab a slice (or a whole pie). You’ll see why it’s always on my list when I’m in Wanaque.",
+          "date": "2025-06-27T16:22:05.686Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT210QmJVWm9VamRCVXpaRlUyUlZNR1l5T1U1bFFsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLihQWWrrBr38RjlRvu6BxSGViTRF_W2KQWzsrblAVHQuVPSw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108376765330939946393?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "J F",
+          "rating": 5,
+          "text": "This drunken mom pizza is absolutely fire",
+          "date": "2025-06-20T18:48:25.474Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2taeWNHcDBaRlp1V0dVM2NUVkRaa2wwYlhGWmNFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWxHoLUhQoRgJOVe1ukfl-c3lcjNV9psPC5gVfIBx1GTQlAJpB6=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108549098210981448397?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ann Timko",
+          "rating": 5,
+          "text": "Order antipasto salad for my family an 2 other people it is always great the fresh ingredient, the amount  an the quality is great employees are always pleasant ,polite , an friendly super place",
+          "date": "2025-06-18T23:21:32.258Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xwVVJYbHdlRGxUVjBOQ1gwVmFWMnMxZW5wbGVVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLgswMCg298aMJ-ftRw_doymF_XUOy0mn59iWvKmiZ867s1cw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102939005700620897866?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Debbie Kollinsworth",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-15T03:54:27.886Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VPWFM4SkNfcXFhREhBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLH8l5IHVCcyTRNrd7lsHLjQK6Q8G4tutT8PjS5jxoAuFrL-Q=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112560980094539439148?hl=en",
+          "reviewerNumberOfReviews": 31,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Axel Garro",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-13T00:42:03.215Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VKako1TkRMd09PYnNBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVDmSZsO_FLbTh32n0qmp0uuOa7BJRjFjpIrGSX5Zabu1ybTFMwww=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114791261237593239236?hl=en",
+          "reviewerNumberOfReviews": 41,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Stephen Tannberg",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-11T20:03:10.909Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChRDSUhNMG9nS0VLN1g1dFBqLWJKTBAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUrk29YXNgpo0BA3bJwECsX7YEN_U3wnIcEk1pEa2vCQgIjW8eI6w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105935367754321437165?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Rose Corter",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-08T18:36:13.555Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VPWEY5TER2eXNlSDZnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXkQ3JqtgJY7wFX4eItZYgQAlr6cD6kkeQtdI85EoFTuZ-3FZ01=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108139039542191002376?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Diane B",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-02T21:27:13.686Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJYmE2OFRHNkxiMTdRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI0o22hgpo6qnh3lfNrDW9oAprWS3yBrhoWx90KLVKP9P5Rpw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102597149561888551375?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Zipster 100",
+          "rating": 5,
+          "text": "An outstanding NJ pizzaria",
+          "date": "2025-05-24T23:34:43.262Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VMdndxczZIekxlWDN3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIg2VeoK6VMe5cBfR5r1zw1ucLHcxufk-pl0lDhhFVMepZyMQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106799534376308036041?hl=en",
+          "reviewerNumberOfReviews": 126,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Andrew Saturn",
+          "rating": 5,
+          "text": "Pizza is extremely and dependably good and they have the crunchiest french fries in NJ",
+          "date": "2025-05-07T22:23:16.754Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VNNzR3ZHFDNkp5ZFB3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU8Jlz-JOwrsiacm795va46CXIX2xQblweb4hivjYLPsd-1sXyI2Q=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109621191206846634710?hl=en",
+          "reviewerNumberOfReviews": 65,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Christopher Pian",
+          "rating": 1,
+          "text": "If you are going to make Uber Eats money, and CHARGE me for a scoop of vodka sauce, dont scree it up and rob me twice.\n\nPathetic",
+          "date": "2025-05-04T02:04:08.380Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNZNW8yOVpnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ-tHKSRzQsoMfaaPDUw5qYgCgxTDfmIoAePL7te41KRmdMsg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113507888872331670948?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Bob Schulz",
+          "rating": 4,
+          "text": "Luigi’s has good pizza and entries that are restaurant level not pizzeria level.  Getting pretty pricey but so is everything.",
+          "date": "2025-03-26T19:55:39.692Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUR3cWFiRHpBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJWnIhMucc8YgvkTuKFYGFZYzTviYE8bGplsH8l1szimsfkAw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110067283555564463277?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Marco Rosella",
+          "rating": 5,
+          "text": "Hey everyone!!!! No need to drive down the shore for a cheese steak .. I just ordered a cheese steak sandwich with peppers and it was phenomenal! My fiancé had the eggplant Milanese wrap and said it was perfect ! Thank you everyone at Luigi’s for making your food with love and treating your customers like family !",
+          "date": "2025-03-01T17:03:58.751Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNfOWQ2aGJBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVG9xqDklNVe70FPJ2JlYHqWXP8WDZprzpB3qpabaHf6I50wpDR=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100707600846152413357?hl=en",
+          "reviewerNumberOfReviews": 26,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Erin H",
+          "rating": 5,
+          "text": "",
+          "date": "2025-02-18T00:10:36.367Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNpOVpYb2tRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ9wsuNOWVn75_Eo8hAiI722URDePcaJ_CqI2iQt5RQ2U4vow=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110112785074571854994?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Alan Machbitz",
+          "rating": 5,
+          "text": "It's the best local pizza shop around!  Abraham and his crew make some of the best Italian fare around, and I challenge other shops to best their 🍕!",
+          "date": "2025-02-09T17:40:49.609Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURBNGNPZVhBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJJ-sYHTQhtvr8LkEfVpMFN0hgM3cQdsW0XP0os9Pykz161pg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105374951445407288292?hl=en",
+          "reviewerNumberOfReviews": 28,
+          "sentiment": "positive"
+        },
+        {
+          "author": "matt canter",
+          "rating": 3,
+          "text": "Food is good…prices/fees, not so good",
+          "date": "2025-01-21T02:34:30.925Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURfaUxieTdnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIC6Q3bySkl6RILRKnNKxG3HAqRGTVg7g1EMWedkEfUfSDuhg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105292918380119687773?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "MMM N",
+          "rating": 3,
+          "text": "",
+          "date": "2025-01-16T16:14:00.043Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNfX3Y2QURBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJHeHT4YrY7y35q34N-dxl6yujYSdRis_CWHmoLH8u3SBBX1g=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112001547477257249535?hl=en",
+          "reviewerNumberOfReviews": 387,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Viecis",
+          "rating": 5,
+          "text": "We love Luigi’s! Food is consistently great, Super nice staff, They offer nice money, saving specials every week, place always seems super clean and food is always fresh! I love their pizza because the crust is my favorite part and it’s always a treat because it’s really crispy on the outside but soft and chewy on the inside and it’s just a really great slice of pizza . We love their dinners as well. You get a huge amount of food.",
+          "date": "2025-01-06T15:20:15.931Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURmanItY0pBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUwq1CdOhWtWkFOjS7TCjkIvAV1jxFmPcOoQDllF3t5TZvSe2Kc=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104291312153904667571?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "David Muhr",
+          "rating": 5,
+          "text": "Food is so good. Enjoyed their pizza, calzone and wraps.  Garlic knots are on fire 🔥",
+          "date": "2024-12-31T18:38:14.526Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNmbll5blN3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLE0LIj2AY8ipwZFhzl-7L3imOeZ4prszTkpjnfDP_MakpVAg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116697053803605441487?hl=en",
+          "reviewerNumberOfReviews": 53,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ralph DaMario",
+          "rating": 5,
+          "text": "Got some take out. Food is always good at Luigis",
+          "date": "2024-12-24T00:08:19.377Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNMcXNQX2VREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLPOGulunvLSNAPIfFMFST8-2Vc4BRG469dKY8wtrepVJrh=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105337940074707255457?hl=en",
+          "reviewerNumberOfReviews": 32,
+          "sentiment": "positive"
+        },
+        {
+          "author": "David McGinniss",
+          "rating": 5,
+          "text": "Great staff and food.",
+          "date": "2024-12-17T17:25:50.599Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNkLXZYUTNRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJCjjrLVD8HbT5pTPZb5lhUDFW0oRcDlHyxUH6P5RDP8onyEg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106352458214054196153?hl=en",
+          "reviewerNumberOfReviews": 106,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Amanda Liptak",
+          "rating": 5,
+          "text": "Love Luigi’s!  Always great food and great service!",
+          "date": "2024-12-08T19:33:35.529Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN2N0xxNmtBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIWmXVTlQMMymsmIOL9k0dV_Y4emTQqBaKISzRuTc6qpFme4A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115403634796324022568?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Gina Iannotti",
+          "rating": 5,
+          "text": "Excellent customer service - attention to detail- generous portions- delicious food and great value!  Community oriented. Delicious food - did I mention that?! :)",
+          "date": "2024-11-10T13:59:56.157Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUMzNzZpb0d3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLDWB5Y7FEywji4UyiAqUWNoGREZeJv1X9w1tcdqYA8XT6B8Qc=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116033086777289575891?hl=en",
+          "reviewerNumberOfReviews": 32,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Michael Stack",
+          "rating": 5,
+          "text": "",
+          "date": "2024-11-03T19:04:36.063Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUMzM09TWk1BEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKlVkJfgql5-1u0MbsC82I1qVvuEQrqpQzd2P022ppBFcAIww=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104901645994774035934?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "ondawingzomysupafly",
+          "rating": 5,
+          "text": "",
+          "date": "2024-10-31T17:32:44.106Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQwc2JPcWJnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLfiP2erXH10mUSHEfzFpbGTQeXcb23QV_RhvmSZXexjc642A=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114889390635332464952?hl=en",
+          "reviewerNumberOfReviews": 42,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Diane Siniscalchi",
+          "rating": 5,
+          "text": "Whether eating in or taking out, lunch or dinner never disappoints. The staff is always friendly and willing to go the extra mile to make my experience a good one. We ordered Pasta Fagiole and garlic knots to go with the salad and salmon I was making. We ordered extra soup for another night, too. I love Luigi’s Pasta Fagiole. The tasty broth is thick and it’s filled with pasta and beans. Very hardy!! The garlic knots satisfied this garlic lover’s palate. My bread lover son was ecstatic.\n\nWe have ordered numerous items from Luigi’s through the years. They’re always trying new recipes. Check out their monthly specials. Thank you, Luigi’s staff,  for always making ordering from you  a delightful experience!",
+          "date": "2024-10-28T00:06:54.324Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQtdGNlbnBBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKmAQlHwZc5OxWt48aGWzHxx7khMw8XXUm__VI5uqSr5NNaww=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116277938644557664824?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Michele Weintraub",
+          "rating": 5,
+          "text": "Best pizza in Ringwood. Hot pizza delivered within an hour even when they’re super busy. Salads, soups, garlic knots, vodka sauce and eggplant wrap all yummy. Friendly staff at pick up. Been our go to for years.",
+          "date": "2024-10-27T23:00:03.457Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURYX3RQUHdBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKcTa17CSAV7W9Y48dGYLojdmLt3T7l2xDrzzKxo8sSaw1LJQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117027625008891175416?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Erin Thacker",
+          "rating": 5,
+          "text": "Luigi’s always has the best food and the staff is so friendly. Always greets you with a big smile and goes out of their way to make sure you are happy with your order.",
+          "date": "2024-10-27T22:02:52.105Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURYX3JxUGpnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIROvmY70CjEyifbKDaLO3rS0XZ8POZ1Q2ii6-KIVkeWK51ZQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102107315757388425269?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "christine redner",
+          "rating": 5,
+          "text": "Prompt service, delicious food",
+          "date": "2024-10-19T19:30:43.674Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNYX2JXZWJ3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK1h9pul5uxi25ZVgA1fvidB3Qj3lrHm2WSe_jpgVFCFKJPDg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104214981290151826474?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Maryann Lockwood",
+          "rating": 5,
+          "text": "I just love the food at Luigi‘s. And their hazelnut cake is absolutely delicious!",
+          "date": "2024-09-29T00:25:06.639Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNudmJiTU9nEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUAokAiRQFCfLvvdvHgbWVGB5JPTkderNUdnGiyNnqJYWL_RvOe=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113062173727248750305?hl=en",
+          "reviewerNumberOfReviews": 32,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kel Bel",
+          "rating": 5,
+          "text": "Food is always delicious. Great meatballs and lasagna! Always good!😀",
+          "date": "2024-09-29T00:09:30.956Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUMxcVl1M293RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLQKvLyDtzApXGJDksWhv2vilKq5Es6_Fx93Jw4pq18K-YALg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101988881843152209766?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Roosevelt Santos",
+          "rating": 5,
+          "text": "",
+          "date": "2024-09-27T16:21:51.647Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNudWJxbUtnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXVencYEBY8C9ppZgqEp27HJPF2yp7TmmEiNH3IjXZ8fyMloT0=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102063274623612473439?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Paul M",
+          "rating": 5,
+          "text": "A solid local pizza place. They often have specials, which a lot of other local places don’t have. Their MVP and Lord of the Flame pies were great. Garlic knots are large nice and soft and not too overpowering with the garlic. Will definitely be ordering from here more often.",
+          "date": "2024-09-27T12:51:26.450Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNubWNUVGNREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVlf-7E2D_9NJsfXDxMp82MJInjBXGoriK2FU0UO-cM7Eahhg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103926252667852785056?hl=en",
+          "reviewerNumberOfReviews": 49,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Caitlin Leonard",
+          "rating": 5,
+          "text": "Italian sub perfection. Luigi’s is our go to and we are always happy with every meal! We love you guys!!",
+          "date": "2024-09-22T17:29:20.335Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNuLUpiV0tBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIN7nQu17OKw_VuGBuTYcUePKB_DDVsim9nTttmFx0nmtg32A=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108056986827531533682?hl=en",
+          "reviewerNumberOfReviews": 20,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Stephen Mehr",
+          "rating": 5,
+          "text": "My family loves Luigi's. I love how they hire local and are always offering fundraisers for the local PTA. We get food there at least 1-2 times per week.",
+          "date": "2024-09-20T02:23:39.269Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNkdVBLVk53EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIbouuXy3OA_kFGIGl-l_pr00uIcSPhBl4k9bbt3r1Stndcxg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110774815689356100654?hl=en",
+          "reviewerNumberOfReviews": 21,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Bethany Mccarthy",
+          "rating": 5,
+          "text": "",
+          "date": "2024-09-16T23:52:20.088Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURINFp2S3dBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKUgH74yuWnTbipeacjRuTcfSg3VQaRAen3CvDkoFNp1-mw9g=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116535050851417442966?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Chris Smith",
+          "rating": 5,
+          "text": "",
+          "date": "2024-09-11T23:29:34.761Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURIcUlyRVRREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKoaR4ib0H1eHP3jWgmKkGLwJMtW47tm9I0Ma2jHqLXM1bqfQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100855213106793006216?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Susan Pecker",
+          "rating": 5,
+          "text": "Great pizza and good specials for takeout. Large portions too!",
+          "date": "2024-09-01T16:56:31.326Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNIdElEajhBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKmLx_1ECm0X86nqoXOf4X-lPJW-oG6qP8AF6Il3uhBpP_0Hw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111379508231101913268?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Thomas Kirby",
+          "rating": 5,
+          "text": "Best pizza in the area.  Period.",
+          "date": "2024-08-30T00:21:07.621Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQ3ejhET2h3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWFyimCiUMaepQIQ31mALsEru8Z4ij63hDQg2vFeHzzr4_IVzk=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115194833762247751703?hl=en",
+          "reviewerNumberOfReviews": 29,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mike Farrell",
+          "rating": 5,
+          "text": "My Dad lives in Pompton and when he wants pizza he calls me to grab one from Luigi's, my sister came back up from Florida first thing she asked was can we go to Luigi's. It's the best and has been for as long as I remember.",
+          "date": "2024-08-19T00:05:46.141Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR1NzhPUFRBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ53tsC6yMxZd6vbrAc42DicmlmCc_L59F1pjcdwJvHt43e7w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110698221281089605745?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Matthew Hogan",
+          "rating": 5,
+          "text": "Love my neighborhood pizza spot. Delicious paninis, cheesesteaks, and my favorite plain slice in town. Also the best staff around.  Always a nice experience.",
+          "date": "2024-08-18T23:59:47.581Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUM3MTQyOWV3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVtpPNKKrnQFHIup9OwfxouJtWU1AuAsAorSxj_hHvuAuYdiNw7=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108431517367534603011?hl=en",
+          "reviewerNumberOfReviews": 46,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Darin Duignan",
+          "rating": 5,
+          "text": "Best pizza and food in North Jersey",
+          "date": "2024-08-18T23:08:40.431Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUM3MTZyNXN3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLMKU-fJkdotsMB6J7qbYwi0oDso5QY-aBUeLlpaw53GjT2vQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109901998808038088388?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ofer Akrish",
+          "rating": 4,
+          "text": "Great pizza 🍕😋!",
+          "date": "2024-08-17T19:24:07.905Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUM3OVpqb2VnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKEGzcsd5qLptNqt01Edue99LrqDEHx_kMDeAgOPY-tKGRHSA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106113658639540808241?hl=en",
+          "reviewerNumberOfReviews": 108,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Bertha Grant",
+          "rating": 4,
+          "text": "",
+          "date": "2024-08-12T20:40:56.174Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUM3bE5uWWlBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVFZKeJ-yoq4qbNAEuZ1NLfRJuEWFVTvA2PqeM7NRHJp_A4LOk=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117240404053577038684?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kristine Pratt",
+          "rating": 5,
+          "text": "",
+          "date": "2024-08-12T16:23:12.702Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUM3eE11eDhBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLWs7qr-3cv-7FJk4pL2X3N3q9GpSAAOlJE0EmwccEARq8cuw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100131793334888659493?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jenna Jones",
+          "rating": 5,
+          "text": "Large menu and food is always fresh and delicious..",
+          "date": "2024-08-11T21:23:09.519Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUM3aVAtNDZ3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocItCKosHV40UBdYx4Itjyy4MbgQpEzmUr9T-rEV-vW9dmPvOg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108172865702096428788?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Leane Tully",
+          "rating": 5,
+          "text": "",
+          "date": "2024-08-04T21:22:32.000Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURicHVEYVlREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVze_Hs9p0rpkJlLCowh1Ojb91XSfL1alr4tNBTqlTiSkPcgnsaIg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103393878993019341337?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Stephen Traina",
+          "rating": 4,
+          "text": "",
+          "date": "2024-08-04T19:57:02.576Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURieHZqZy1nRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLJluoPfU560Mf2mxN8HOWpaI9HaPXuBTt6G5wklogRxLJodA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110880735559053201605?hl=en",
+          "reviewerNumberOfReviews": 17,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Becky Timko",
+          "rating": 2,
+          "text": "I placed an order on 6/24 for one of the specials the large antipasto salad. I asked for ice berg lettuce and cold cuts only. Plus I got a calzone. Calzone was delicious.\nBut the salad was not, they put ice berg lettuce on top and underneath was Romain lettuce 😢. I They did put the cod cuts in. I had to waste more than half of the lettuce and pick out the romaine. I called and let them know all they said was oh ok. So it was really no special for me. I wasted my money.",
+          "date": "2024-07-24T22:29:43.197Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNid3BETk5nEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIVOJbE1ghkZlcXj9BW7_oLU6yVmcPuuxhAMkBxryMdLrtiMg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110431932107491835815?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "negative"
+        },
+        {
+          "author": "BAMS VIEW",
+          "rating": 1,
+          "text": "",
+          "date": "2024-07-23T10:35:54.974Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNiaE82Sm53RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWKOInQIU8T6DTnhIjfu_wkJCZ6_2lCIweOzyrMKDLv59CiMVk=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105033438199274751039?hl=en",
+          "reviewerNumberOfReviews": 96,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Christine Patterson",
+          "rating": 5,
+          "text": "The pizza was amazing- give the Buffalo chicken pizza a try if you haven't!!! The staff was very kind and went out of their way to bring additional coloring sheets for my toddler while we waited for the food to be prepared. Small casual dine-in or take-out and conveniently located.",
+          "date": "2024-07-16T18:24:47.955Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURycXZId0pnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUaS6fUU3i5Wr5yhwmAgslpTOfmQT44zdKzd31GyTpzmXsmC-d6AQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107047420951520400807?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Gina Brush",
+          "rating": 5,
+          "text": "",
+          "date": "2024-07-11T23:28:09.598Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNyNTllYmR3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV_EizaMcUkJg9wwDstYILf_IUfNegoDfvQ01Y7--0WzvRMFV8OBQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109706129026753473747?hl=en",
+          "reviewerNumberOfReviews": 41,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sebastian Ortega",
+          "rating": 5,
+          "text": "Hands down the best grandma pizza I've ever had. My grandparents live a few minutes away from this place and we always come here. The vodka sauce and pizza are extremely good, and I've always loved their calamari as well. Their fried doughnuts are also good!",
+          "date": "2024-07-11T02:56:38.550Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNyczVlN2VREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV7DraJqs4slTLlhStF_2-Qx4vVd65sLP7we3qIdWjlKTTmOwlntQ=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108871711300374978207?hl=en",
+          "reviewerNumberOfReviews": 370,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Lorraine Holzmuller O’Leary",
+          "rating": 5,
+          "text": "Great food and great staff! I've been coming to this restaurant for over 30 years.",
+          "date": "2024-07-10T22:41:09.026Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNyNDlta3F3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKEXZg15Sz49MmBKY5f5DGg3eWHQDnZin8y4M8Y0H4HRqsy_jg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117249291311300323912?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Steve Zuravner",
+          "rating": 5,
+          "text": "",
+          "date": "2024-06-30T01:20:53.194Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURMdmEtZVpBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIj6buz_l8mu4yJkd16soUJf4okFPw2VcCQHbNxMMQeTb3dfg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104426172477450317751?hl=en",
+          "reviewerNumberOfReviews": 30,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Deb Turner",
+          "rating": 5,
+          "text": "I love Luigi’s! Not only do they have delicious food, they are smiling, friendly and creative! They do not disappoint!!",
+          "date": "2024-06-23T21:22:55.525Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNMMTZtS0lREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI2zHLvKFdJbA3xloWBtTCZtPl3KmBa1HhZACpU0lsb4PHolg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113999079610841078219?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Joyce Miller",
+          "rating": 5,
+          "text": "Love the daily emails, love Luigi’s🍕the staff is so friendly & attentive!  My food is always hot & delicious 🌟🌟🌟🌟🌟",
+          "date": "2024-06-23T17:08:50.085Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNCak43OUxnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXG8YuIsAjIwd9ycvrQKjhe7zGOWsICXyVi_d1OEYDMNzaqs7lS=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116991361966025441724?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Adik Yoffe",
+          "rating": 5,
+          "text": "",
+          "date": "2024-06-16T18:52:20.425Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNMX0pEUWJnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWJXkPiish4fyJ4XwML1IFN1JCXWixQphKOx4XmJa4YAq4h_lCy7w=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102946006217673859223?hl=en",
+          "reviewerNumberOfReviews": 31,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Carol Tapp",
+          "rating": 5,
+          "text": "",
+          "date": "2024-06-07T13:56:09.404Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUR6aEo3WTRBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKlulLRBoXxX7eLnTD2BEzAUCgUfiNBGeN8PHxsn_fl7nVS0g=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111642257463659655280?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Michele Hearn",
+          "rating": 5,
+          "text": "First time having it. 10 out of 10- so good!! Did delivery- super fast, food was hot and delicious!!!",
+          "date": "2024-06-05T22:31:13.897Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUN6cF9XekN3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUI0IYHRQY6brGBCFJSnnEqSubGKNmHu6FzlycaLuifvL7Tq7rjEg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113553603197893463250?hl=en",
+          "reviewerNumberOfReviews": 25,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Aimie Knapp",
+          "rating": 5,
+          "text": "So amazing 👏 🤩  delicious food!",
+          "date": "2024-05-22T19:52:18.033Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURUNU9YcV9nRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLzLxz04YfSnPGXqlmtI8aMdZ8sXGpX3pWe9nuML5kz-bn1jQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117186877288648290076?hl=en",
+          "reviewerNumberOfReviews": 36,
+          "sentiment": "positive"
+        },
+        {
+          "author": "joe martellacci",
+          "rating": 5,
+          "text": "",
+          "date": "2024-05-22T00:15:12.103Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURUcU5xOGpnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXkOE_8I6bBFC7xyfeqYDFBpv9-t5-j3Ol6Pf2q1J5oxlgVnO0BjA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110872265623948134003?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Todd Stoffel",
+          "rating": 5,
+          "text": "",
+          "date": "2024-05-09T21:30:35.191Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNUNE5lYWhBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI_-i4YBvlDJ8aLKnkn-xBtjwIswsUm4n_wTWoU42lBzudlRg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101475829104793206195?hl=en",
+          "reviewerNumberOfReviews": 37,
+          "sentiment": "positive"
+        },
+        {
+          "author": "denise eboli",
+          "rating": 5,
+          "text": "Always a great experience! Food is always delicious! Staff is always friendly",
+          "date": "2024-05-05T21:10:04.973Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNXcGUyLTBBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIF93_fk7FP_NMY1YXcdA_08mFJ4AekMi8HrawCEkr6XPw9fw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108197000581639368825?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Lexie Carlos",
+          "rating": 5,
+          "text": "Love the food and the people that works behind,so nice and friendly.",
+          "date": "2024-05-05T20:50:24.485Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURqMVlmU19RRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWvfluGdMpDLaGy5KbRFZlKOiN1z5Y-wiLdPPNgshAA0y_GBMA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105750827092501744738?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Amitava Saha",
+          "rating": 3,
+          "text": "",
+          "date": "2024-04-30T11:30:11.994Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURqN1BUd3BRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWl-SQaFlPZzwwxeGJd6SpxHOa1HSeUA-lUmLMseDNoj4PFSl2m=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110997537956555045168?hl=en",
+          "reviewerNumberOfReviews": 64,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Eileen Conway",
+          "rating": 5,
+          "text": "Best pizza in area",
+          "date": "2024-04-28T22:05:35.131Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN3d3FYdTNBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIEKS5QQCCNcBippP1f2-D8qeEpxtvpmZhUcJGI4mtFLPLoKg=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111286447500844761389?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Alexandra Rodriguez",
+          "rating": 5,
+          "text": "Everything I’ve tried here is excellent. They have creative specials and the food is always fresh. The service is great. I’ve been coming here for years. I moved and still make the trip back when I can.",
+          "date": "2024-04-27T18:12:03.570Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNqdl9QNi1RRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ1WW88ZPNdA4su3RO32IbJSKm0fW7I0SiojaYn7a90pvlmb20=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117808183498745022207?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Nick Cavalluzzi",
+          "rating": 5,
+          "text": "Very good, good portions, best Calzone that I've had in NJ...",
+          "date": "2024-04-27T00:52:53.812Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNqdC12TTRRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjURjlfa3JsiV2U64sHUP_vjiBNEtujY-SgRU7tfjUFggbs2aJK_lA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107894331752484694551?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Louise DuMont",
+          "rating": 5,
+          "text": "Fabulous pizza and people who care about their community and customers",
+          "date": "2024-04-21T22:49:26.693Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNqN3EyQnpRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUQMN62GfygfvsMQvlGrH9yf1FZCgxP_Llg5gc1xYko0IN3BjIB=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108650528100626286410?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Reggie Hay",
+          "rating": 5,
+          "text": "",
+          "date": "2024-04-18T03:02:43.269Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNqbExqSml3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK382rYUBu2CM8Mimfzes6js4uQV_fL4lwhzuo0ikrgzNcQAQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102200154528542660213?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Courtney",
+          "rating": 5,
+          "text": "",
+          "date": "2024-04-17T00:51:18.388Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNqc01UZkJnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXWIpYIEovTgjr6ZA0WPaPfNiZjf8fPxIwgK9DoSHdu5mnn1PQINw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118367176933465997760?hl=en",
+          "reviewerNumberOfReviews": 15,
+          "sentiment": "positive"
+        },
+        {
+          "author": "chris hutt",
+          "rating": 4,
+          "text": "A bit pricy but kinda worth it! The Calzone was big and I could barely eat half! The garlic knots were not too hard but chewy. The fried ravioli was cooked just right but could have been more in order. But everything was delicious!",
+          "date": "2024-04-15T07:22:35.994Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURENThxV1dREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIRmgX8tpIIRgwwBepShjl3kMRLe52BsC3456GFM_kUyBoeiQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107635816260087320659?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Alex Mtz",
+          "rating": 5,
+          "text": "👍🙏👏👏👏🙏👍",
+          "date": "2024-04-08T02:46:39.552Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUREcXQtNzRBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXJRw9aDt2LP8belGgD_UVCGroC2-9GI9-4vyCobjT5Mv-gnyU=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101962557383906240502?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "laurie renton",
+          "rating": 5,
+          "text": "Luigi’s never disappoints! Delicious salads and pizza. So many things on the menu I want to try but I can’t resist pizza! Love their gourmet cauliflower crust pizzas too",
+          "date": "2024-04-07T22:05:11.966Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURsMF9PS2hBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKyx2ZCgcfrv1-x7zliAEwmzCrCZaNRdBubsJHlL3mOxOe1rQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111797175645467343111?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "LESLEY ETHERIDGE",
+          "rating": 5,
+          "text": "Luigi's cheesesteaks genuinely surpass even the most renowned Philly cheesesteaks! What truly sets Luigi's apart is the harmonious blends, starting with the fresh sautéed mushrooms, onions, and peppers. These vegetables add a rich depth of flavor that bursts in your mouth! And the gooey cheese and tender, juicy steak creates a delightful mix of flavors and textures which is generously packed into the soft but sturdy bread. Juicy, flavorful, and sliced just right, it melts in your mouth, leaving you craving for more!",
+          "date": "2024-04-05T18:49:31.165Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUREeE0tSG9nRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKEIDqA8IcVHS5fua67F-SpWRqPI2bBYxiVC0iDoUi3A39igQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100431047460980614675?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Michael Whittemore II",
+          "rating": 5,
+          "text": "Great pizza 🍕 been coming here since I was 5 years old!",
+          "date": "2024-04-05T17:02:50.359Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUREeExqNDV3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWL127PrQxLSD9Acu-p4T5jcXF_uQTg0FIzw5gf9HCfOYaUhC9V1w=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114852305541717851314?hl=en",
+          "reviewerNumberOfReviews": 67,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Paige Aita",
+          "rating": 5,
+          "text": "",
+          "date": "2024-04-01T20:45:29.526Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNENjlYOE93EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJuR0C_6ugpZFrqtyhOh2of-OWSynXML90-sh7HOJ3YeLya4g=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115736455184696761051?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Brenda Walter",
+          "rating": 5,
+          "text": "I have to say everything I've ordered from pizza to pasta dishes and chicken dishes.Everything was delicious!.. And the portions are great.They give you a lot! All the staff is very friendly!",
+          "date": "2024-03-25T17:03:56.078Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNEM08yNGNREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKxHPfKY1tN9mgNKh1ojnc2BIJFrxR944MwnhMHpi5JV23_9Q=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117731989320017898629?hl=en",
+          "reviewerNumberOfReviews": 40,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Brittany",
+          "rating": 5,
+          "text": "Been going here for years now and the food and service has always been top notch !",
+          "date": "2024-03-16T23:50:56.677Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQ5cnBYX1ZnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU_xzwOhEP1tZ796bn2GsccuFoUARnAxYL11VtYYnS_YOEykr2t=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104891531466954307437?hl=en",
+          "reviewerNumberOfReviews": 42,
+          "sentiment": "positive"
+        },
+        {
+          "author": "AMDC",
+          "rating": 5,
+          "text": "",
+          "date": "2024-03-11T23:54:28.500Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQ5Z0lEZ3d3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJCvvLhhPPoyo06trqrcaj975t1YzsPrzkzUuAMaAX2UtJpEA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115622600002816182316?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Nicole Molina",
+          "rating": 5,
+          "text": "Food is always great!  Never had a bad meal.  Staff/owners are always friendly and accommodating. We love Luigis....definitely our GO-2 spot !! 👏👏",
+          "date": "2024-03-10T22:09:51.731Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUM5bDUzdzZBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXYhVCkdlHv5WZNAL20NJGEZblZg3SqygGSp1s-vAq6LzV1_c1m=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111591429014784807798?hl=en",
+          "reviewerNumberOfReviews": 79,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Janice Conklin",
+          "rating": 5,
+          "text": "We always have an awesome experience at Luigi's. The staff make you feel like family ❤️ The food is AMAZING 😋",
+          "date": "2024-03-06T12:25:28.055Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUM5b2IyaEdnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWAwKrnaxY1QBqOS0bXIE09-iqW3xF-fe-XwYpRYC6zS4kaX7P_Hg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117177425301940175744?hl=en",
+          "reviewerNumberOfReviews": 50,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Joseph Ellsworth",
+          "rating": 3,
+          "text": "Food and service are good.\nBut the prices are way too high. 2 dinners and 3 side salads were $80.",
+          "date": "2024-02-23T15:33:35.713Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURkdHJ2SDR3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUDqZpxF_EnafabzEGJ3ao_U3Gi1HesquithRAO11UaLkf0fEufgg=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109418451553543263228?hl=en",
+          "reviewerNumberOfReviews": 278,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Robert Allen",
+          "rating": 5,
+          "text": "",
+          "date": "2024-02-22T18:35:23.741Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURkbXFiZ1ZBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK9nxcHpeWIli2DEK8Tb8JKusEI6CgF23LiVTnfOoi9-jwx7w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101675489433439399246?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sean",
+          "rating": 5,
+          "text": "Love this place. Staff is friendly Ave the food is always top quality",
+          "date": "2024-02-20T13:37:00.327Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURkOE5fdnJnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLymDTQIzRBPQq7BQFOfJ7COiynLJ0UbQwBh9CY4vjqeZdrlw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100090724490149350188?hl=en",
+          "reviewerNumberOfReviews": 50,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Christopher Hurd",
+          "rating": 5,
+          "text": "Got the text for the $15 specialty chicken pizza, definitely will get this deal when they have it.  Got the drunken chicken, excellent flavor and filling",
+          "date": "2024-02-18T23:23:57.643Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNsZ2NPNzh3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW68BoPJBNqDkFxea0A8rf9ILSRBxR-8v41z0A1HRoMaUN2VDmmJQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116342886092335342945?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Joe Snowy",
+          "rating": 5,
+          "text": "",
+          "date": "2024-02-15T16:56:43.808Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNkZ2JYU0dBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUSpDwuY4BQYoALfDl0t2_zZHgX4bh-to82mFIqjEaWnVjB3QBv=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108757665076257763773?hl=en",
+          "reviewerNumberOfReviews": 14,
+          "sentiment": "positive"
+        },
+        {
+          "author": "sincere v",
+          "rating": 5,
+          "text": "Never let's me down for so many years.  Pizza is delicious and food is great.",
+          "date": "2024-02-13T22:26:28.892Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNkZ29qbDBnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJw62qlVvjLZ3-OcIvhytpOaP5Sv2z8rhXNK5K2_2m7vqkcVg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101711272705374087493?hl=en",
+          "reviewerNumberOfReviews": 36,
+          "sentiment": "positive"
+        }
+      ],
+      "customerMoodAnalysis": {
+        "overallMood": "delighted",
+        "sentimentSummary": "Customers are genuinely thrilled with their experience. With an average 4.7/5 rating across 100 recent reviews, your restaurant consistently exceeds expectations.",
+        "sentimentDistribution": {
+          "ecstatic": 7,
+          "delighted": 80,
+          "satisfied": 8,
+          "neutral": 0,
+          "frustrated": 1,
+          "disappointed": 4,
+          "angry": 0
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "food quality",
+            "mentions": 32
+          },
+          {
+            "theme": "service excellence",
+            "mentions": 16
+          },
+          {
+            "theme": "speed of service",
+            "mentions": 2
+          },
+          {
+            "theme": "slow service",
+            "mentions": 2
+          },
+          {
+            "theme": "food issues",
+            "mentions": 2
+          },
+          {
+            "theme": "value for money",
+            "mentions": 1
+          },
+          {
+            "theme": "cleanliness",
+            "mentions": 1
+          },
+          {
+            "theme": "overpriced",
+            "mentions": 1
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 26,
+          "satisfaction": 46,
+          "disappointment": 0,
+          "frustration": 0,
+          "anger": 0
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "Customers love the nostalgic charm and community feel of Luigi's, highlighted by the wall of children's drawings and friendly staff. - social media marketing can showcase this strength",
+            "The quality and consistency of Luigi's pizza, with its crispy crust and generous toppings, are highly praised by customers. - SEO services can leverage this for better visibility",
+            "Luigi's ability to make customers feel special, particularly during celebrations like birthdays, is a standout feature. - Boostly marketing services can amplify this"
+          ],
+          "improvementOpportunities": [
+            "Long wait times and cold food delivery - Boostly marketing services can improve this",
+            "Poor online visibility and incorrect business hours - SEO services can solve this visibility issue",
+            "Negative reviews and reputation issues - review management can address this concern"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 100,
+          "averageRating": 4.7,
+          "ratingDistribution": {
+            "1": 4,
+            "2": 1,
+            "3": 4,
+            "4": 5,
+            "5": 86
+          },
+          "sentimentTrends": {
+            "trend": "declining",
+            "recentAverageRating": 4.2,
+            "previousAverageRating": 4.7,
+            "recentReviewsCount": 10
+          }
+        }
+      },
+      "examples": {
+        "positive": [
+          {
+            "author": "Gabriel Emil",
+            "rating": 5,
+            "text": "",
+            "date": "2025-09-13T15:57:41.310Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21ZdE4xQldSVWw0U25GSmRVUktXbGMxWmxCdlRtYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWFZ7mTqp55Op_VNNJvxQyTbFpl8elj4NGJo_ViY_t1btt_CC0v=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/107018469503704086216?hl=en",
+            "reviewerNumberOfReviews": 11
+          },
+          {
+            "author": "Alyssa McGaha",
+            "rating": 5,
+            "text": "",
+            "date": "2025-09-09T18:20:16.827Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25WVFZUaEpNVEJIUWtOeWVqRnlkMmwwUlVaaGJrRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU8uFXqMcS4KydzKvh_hfg3ivdCz4HdxVULiwPmexRRb5vsFLw=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/106195723762877869258?hl=en",
+            "reviewerNumberOfReviews": 1
+          },
+          {
+            "author": "J B",
+            "rating": 5,
+            "text": "Its good!! Grandma pie is a must!!",
+            "date": "2025-09-03T20:45:54.394Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t0M1JYWTJTR2RQYURSdlh6QnRkMVZJYURWUlRuYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWEXTxN_UdMqI7PsYx42-GYn6Be3h4xs6oYo8ijxB8uZ-AtMFI=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/107364898559982291847?hl=en",
+            "reviewerNumberOfReviews": 1
+          }
+        ],
+        "neutral": [
+          {
+            "author": "matt canter",
+            "rating": 3,
+            "text": "Food is good…prices/fees, not so good",
+            "date": "2025-01-21T02:34:30.925Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURfaUxieTdnRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIC6Q3bySkl6RILRKnNKxG3HAqRGTVg7g1EMWedkEfUfSDuhg=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/105292918380119687773?hl=en",
+            "reviewerNumberOfReviews": 12
+          },
+          {
+            "author": "MMM N",
+            "rating": 3,
+            "text": "",
+            "date": "2025-01-16T16:14:00.043Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNfX3Y2QURBEAE",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJHeHT4YrY7y35q34N-dxl6yujYSdRis_CWHmoLH8u3SBBX1g=s1920-c-rp-mo-ba5-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/112001547477257249535?hl=en",
+            "reviewerNumberOfReviews": 387
+          },
+          {
+            "author": "Amitava Saha",
+            "rating": 3,
+            "text": "",
+            "date": "2024-04-30T11:30:11.994Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURqN1BUd3BRRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWl-SQaFlPZzwwxeGJd6SpxHOa1HSeUA-lUmLMseDNoj4PFSl2m=s1920-c-rp-mo-ba4-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/110997537956555045168?hl=en",
+            "reviewerNumberOfReviews": 64
+          }
+        ],
+        "negative": [
+          {
+            "author": "Shamelex",
+            "rating": 1,
+            "text": "Ordered a pie. After 40mins called just ro ask if it was on its way. Got told \"its only been 40mins it's coming\" 20mins later it finally arrives. An hour later. Ice cold. And a side of attitude. New owners suck. Never ordering here again.\n\nOh. And if you see this dude, it takes more than just a gallon of salt to season vodka sauce.",
+            "date": "2025-07-19T23:11:01.641Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xRd2QwSlRjekZTUlVGVlJVNWlZVWx1YVU5a1ZXYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWari4Bzcb9a50xqjOeebR2WunKKko5sNAkuioCcqqPfW6fRFuN=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/108368606204774078138?hl=en",
+            "reviewerNumberOfReviews": 1
+          },
+          {
+            "author": "Omar Rodriguez",
+            "rating": 1,
+            "text": "You should update google when your not open. Now I can’t eat for lunch smh…",
+            "date": "2025-07-01T16:26:28.516Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xKa1RWQmtkRlJ6TmxsNE1tSkVSbVZUZFZBek1rRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLSeElwhFr5beEkv4Jxp5w8_wfX8shJn0CmRUAMMr-Dty9F5Q=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/106068766072339396806?hl=en",
+            "reviewerNumberOfReviews": 11
+          },
+          {
+            "author": "Christopher Pian",
+            "rating": 1,
+            "text": "If you are going to make Uber Eats money, and CHARGE me for a scoop of vodka sauce, dont scree it up and rob me twice.\n\nPathetic",
+            "date": "2025-05-04T02:04:08.380Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNZNW8yOVpnEAE",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ-tHKSRzQsoMfaaPDUw5qYgCgxTDfmIoAePL7te41KRmdMsg=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/113507888872331670948?hl=en",
+            "reviewerNumberOfReviews": 8
+          }
+        ]
+      },
+      "trends": {
+        "ratingTrend": "declining",
+        "volumeTrend": "stable",
+        "responseRate": 0,
+        "averageResponseTime": "No responses"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ]
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/luigispizzarestaurant",
+      "instagram": "https://www.instagram.com/luigispizzarestaurant",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 58,
+      "social": 100,
+      "local": 87,
+      "reviews": 86,
+      "overall": 83
+    },
+    "originalScores": {
+      "seo": 70,
+      "overallScore": 68,
+      "performance": 71,
+      "userExperience": 61
+    },
+    "migratedAt": "2025-09-16T00:37:21.627Z"
+  },
+  "metadata": {
+    "cachedAt": "2025-09-15T05:39:34.725Z",
+    "expiresAt": "2025-10-15T05:39:34.725Z",
+    "placeId": "ChIJm61yySYcw4kR6nBzmfVZhro",
+    "restaurantName": "Luigi's Pizza & Restaurant",
+    "cacheVersion": "2.0.0"
+  }
+}

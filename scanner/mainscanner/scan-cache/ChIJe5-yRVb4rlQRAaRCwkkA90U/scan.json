@@ -1,0 +1,1218 @@
+{
+  "data": {
+    "domain": "extremepizza.com",
+    "restaurantName": "Extreme Pizza",
+    "placeId": "ChIJe5-yRVb4rlQRAaRCwkkA90U",
+    "overallScore": 80,
+    "performance": 100,
+    "seo": 65,
+    "mobile": 63,
+    "userExperience": 89,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "pizza near me",
+        "position": 0,
+        "searchVolume": 9900,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery Boise",
+        "position": 0,
+        "searchVolume": 720,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best pizza Boise",
+        "position": 0,
+        "searchVolume": 880,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza",
+        "position": 0,
+        "searchVolume": 9900,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza places near me",
+        "position": 0,
+        "searchVolume": 480,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza Boise Idaho",
+        "position": 0,
+        "searchVolume": 1600,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery near me",
+        "position": 0,
+        "searchVolume": 1900,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza open now",
+        "position": 0,
+        "searchVolume": 40,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 25,
+        "keywords_appeared": 2,
+        "total_keywords": 8,
+        "average_position": 3.5,
+        "best_position": 3
+      },
+      "keyword_results": [
+        {
+          "keyword": "pizza near me",
+          "found": true,
+          "position": 4,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Extreme Pizza",
+            "address": "Boise, ID ",
+            "website": "http://extremepizza.com/",
+            "phone": "(208) 947-5675",
+            "rating": 4.5,
+            "reviews": 434
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Guido's original NY Style pizzeria downtown",
+              "address": "Boise, ID ",
+              "website": "https://www.guidosoriginal.com/",
+              "rating": 4.6,
+              "reviews": 992
+            },
+            {
+              "position": 2,
+              "name": "Americana Pizza",
+              "address": "Boise, ID ",
+              "website": "https://slicesofamericana.com/",
+              "rating": 4.6,
+              "reviews": 427
+            },
+            {
+              "position": 3,
+              "name": "Casanova Pizzeria",
+              "address": "Boise, ID ",
+              "website": "https://www.casanovapizzeria.com/",
+              "rating": 4.7,
+              "reviews": 396
+            }
+          ]
+        },
+        {
+          "keyword": "pizza",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "best pizza Boise",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "The Front Door Taphouse",
+              "address": "Boise, ID ",
+              "website": "http://thefrontdoortaphouseboise.com/",
+              "rating": 4.7,
+              "reviews": 387
+            },
+            {
+              "position": 2,
+              "name": "Black Moon Pastries & Pizza",
+              "address": "Garden City, ID ",
+              "website": "https://heyblackmoon.com/",
+              "rating": 4.8,
+              "reviews": 266
+            },
+            {
+              "position": 3,
+              "name": "Casanova Pizzeria",
+              "address": "Boise, ID ",
+              "website": "https://www.casanovapizzeria.com/",
+              "rating": 4.7,
+              "reviews": 396
+            }
+          ]
+        },
+        {
+          "keyword": "pizza delivery near me",
+          "found": true,
+          "position": 3,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Extreme Pizza",
+            "address": "Boise, ID ",
+            "website": "http://extremepizza.com/",
+            "phone": "(208) 947-5675",
+            "rating": 4.5,
+            "reviews": 434
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Americana Pizza",
+              "address": "Boise, ID ",
+              "website": "https://slicesofamericana.com/",
+              "rating": 4.6,
+              "reviews": 427
+            },
+            {
+              "position": 2,
+              "name": "Guido's original NY Style pizzeria downtown",
+              "address": "Boise, ID ",
+              "website": "https://www.guidosoriginal.com/",
+              "rating": 4.6,
+              "reviews": 992
+            }
+          ]
+        },
+        {
+          "keyword": "pizza Boise Idaho",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Guido's original NY Style pizzeria downtown",
+              "address": "Boise, ID ",
+              "website": "https://www.guidosoriginal.com/",
+              "rating": 4.6,
+              "reviews": 992
+            },
+            {
+              "position": 2,
+              "name": "The Front Door Taphouse",
+              "address": "Boise, ID ",
+              "website": "http://thefrontdoortaphouseboise.com/",
+              "rating": 4.7,
+              "reviews": 387
+            },
+            {
+              "position": 3,
+              "name": "The Wylder",
+              "address": "Boise, ID ",
+              "website": "https://www.thewylderboise.com/",
+              "rating": 4.7,
+              "reviews": 1600
+            }
+          ]
+        },
+        {
+          "keyword": "top pizza Boise",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "The Front Door Taphouse",
+              "address": "Boise, ID ",
+              "website": "http://thefrontdoortaphouseboise.com/",
+              "rating": 4.7,
+              "reviews": 387
+            },
+            {
+              "position": 2,
+              "name": "Black Moon Pastries & Pizza",
+              "address": "Garden City, ID ",
+              "website": "https://heyblackmoon.com/",
+              "rating": 4.8,
+              "reviews": 266
+            },
+            {
+              "position": 3,
+              "name": "The Wylder",
+              "address": "Boise, ID ",
+              "website": "https://www.thewylderboise.com/",
+              "rating": 4.7,
+              "reviews": 1600
+            }
+          ]
+        },
+        {
+          "keyword": "pizza restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Guido's original NY Style pizzeria downtown",
+              "address": "Boise, ID ",
+              "website": "https://www.guidosoriginal.com/",
+              "rating": 4.6,
+              "reviews": 992
+            },
+            {
+              "position": 2,
+              "name": "The Front Door Taphouse",
+              "address": "Boise, ID ",
+              "website": "http://thefrontdoortaphouseboise.com/",
+              "rating": 4.7,
+              "reviews": 387
+            },
+            {
+              "position": 3,
+              "name": "Casanova Pizzeria",
+              "address": "Boise, ID ",
+              "website": "https://www.casanovapizzeria.com/",
+              "rating": 4.7,
+              "reviews": 396
+            }
+          ]
+        },
+        {
+          "keyword": "pizza food Boise",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Black Moon Pastries & Pizza",
+              "address": "Garden City, ID ",
+              "website": "https://heyblackmoon.com/",
+              "rating": 4.8,
+              "reviews": 266
+            },
+            {
+              "position": 2,
+              "name": "The Front Door Taphouse",
+              "address": "Boise, ID ",
+              "website": "http://thefrontdoortaphouseboise.com/",
+              "rating": 4.7,
+              "reviews": 387
+            },
+            {
+              "position": 3,
+              "name": "The Wylder",
+              "address": "Boise, ID ",
+              "website": "https://www.thewylderboise.com/",
+              "rating": 4.7,
+              "reviews": 1600
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"pizza\", \"best pizza Boise\", \"pizza Boise Idaho\", \"top pizza Boise\", \"pizza restaurant near me\", \"pizza food Boise\" - optimize Google My Business profile with these keywords",
+        "Ranking below #1 for 2 keywords - increase customer reviews and engagement to improve rankings",
+        "Low Local Pack visibility (25%) - audit your Google My Business completeness, categories, and local citations"
+      ],
+      "scan_metadata": {
+        "location": "Boise,Idaho,United States",
+        "timestamp": "2025-09-15T16:07:54.976Z",
+        "total_scan_time_ms": 32204
+      }
+    },
+    "competitors": [
+      {
+        "name": "Percy",
+        "domain": "percy.com",
+        "performance": 92,
+        "seo": 83,
+        "accessibility": 78,
+        "bestPractices": 87,
+        "overallScore": 85,
+        "rating": 4.6,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1371,
+        "keywords": 49,
+        "domainAuthority": 81,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+50 keywords",
+        "authorityGap": 1,
+        "backlinks": 1118
+      },
+      {
+        "name": "Fork",
+        "domain": "fork.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 864,
+        "keywords": 47,
+        "domainAuthority": 69,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 1097
+      },
+      {
+        "name": "Barbacoa Grill",
+        "domain": "barbacoagrill.com",
+        "performance": 92,
+        "seo": 83,
+        "accessibility": 78,
+        "bestPractices": 87,
+        "overallScore": 85,
+        "rating": 4.6,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 700,
+        "keywords": 48,
+        "domainAuthority": 73,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+50 keywords",
+        "authorityGap": 1,
+        "backlinks": 1154
+      },
+      {
+        "name": "The Lively",
+        "domain": "thelively.com",
+        "performance": 88,
+        "seo": 79,
+        "accessibility": 75,
+        "bestPractices": 84,
+        "overallScore": 81,
+        "rating": 4.4,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1324,
+        "keywords": 41,
+        "domainAuthority": 83,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 808
+      },
+      {
+        "name": "Stardust",
+        "domain": "stardust.com",
+        "performance": 88,
+        "seo": 79,
+        "accessibility": 75,
+        "bestPractices": 84,
+        "overallScore": 81,
+        "rating": 4.4,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1327,
+        "keywords": 35,
+        "domainAuthority": 76,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 713
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 81,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-15T16:08:07.783Z",
+    "businessProfile": {
+      "name": "Extreme Pizza",
+      "address": "590 S Broadway Ave, Boise, ID 83702, USA",
+      "rating": 4.5,
+      "reviewCount": 434,
+      "phoneNumber": "(208) 947-5675",
+      "website": "http://extremepizza.com/",
+      "formatted_address": "590 S Broadway Ave, Boise, ID 83702, USA",
+      "address_components": [
+        {
+          "long_name": "590",
+          "short_name": "590",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "South Broadway Avenue",
+          "short_name": "S Broadway Ave",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "East End",
+          "short_name": "East End",
+          "types": [
+            "neighborhood",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Boise",
+          "short_name": "Boise",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Ada County",
+          "short_name": "Ada County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Idaho",
+          "short_name": "ID",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "83702",
+          "short_name": "83702",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "state": "Idaho",
+      "city": "Boise",
+      "place_id": "ChIJe5-yRVb4rlQRAaRCwkkA90U",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "establishment",
+        "food",
+        "meal_delivery",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "reviews": [
+        {
+          "author_name": "Chris S",
+          "author_url": "https://www.google.com/maps/contrib/111107682504176646952/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXnXLfrsnLAwE7RzzvwGH9svooGA9ZG7EI_GbNaC9xKHkbGE1JJ=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 4,
+          "relative_time_description": "2 years ago",
+          "text": "The pizza was unfortunately not that extreme. Cool restaurant with relaxed vibes. The service and staff were both awesome. We ordered 3-gluten free crust pizzas and the extreme twisted sticks. Overall the flavors just didn’t happen. Bland on all 3 and the twisted sticks had minimal cheese and no garlic. Thinking maybe the gluten free crust impacted the overall flavor of the pies. They looked delicious, just think for the price there are much better options in Boise.",
+          "time": 1691281608,
+          "translated": false
+        },
+        {
+          "author_name": "Matthew Putnam",
+          "author_url": "https://www.google.com/maps/contrib/111966413668606673212/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUBrB3Lfj96OYrehtIB4cW2v00Z3D1WLXdD2l37x2mjDGlSf2Uo=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Delicious pizza & desserts, friendly & thoughtful staff, nice atmosphere. Pizza is not overly greasy but is still absolutely delicious!\nGet the Pow Pow dessert, you will not regret it.",
+          "time": 1707862485,
+          "translated": false
+        },
+        {
+          "author_name": "Steven Harms",
+          "author_url": "https://www.google.com/maps/contrib/116224402313080047455/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKqcASLhmXhvxpX8eIiX6V0o0_ifObZooqlRiMY1u_JM-7diw=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "As I went into Extreme Pizza my eyes darted about and the place was immaculate.  When I approached the counter I looked upon their menu to discover 5 vegetarian pizzas.  That’s more than other restaurants in the area.  I feasted on a Mr. Pestado-head.  When all was said and done I loved Extreme Pizza and I await a rendezvous soon!",
+          "time": 1754380793,
+          "translated": false
+        },
+        {
+          "author_name": "Dani Stephens",
+          "author_url": "https://www.google.com/maps/contrib/110009702370574456327/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW-mVKAZ_SwsY3ZHFXQ-40J6yP4CbDvRtbWUwHngML7HiJxjgIv1Q=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "5 months ago",
+          "text": "My husband could eat pizza everyday if he could. He asked for pizza for lunch today so I stopped into Extreme Pizza to hook my husband up.\n\nWalking in, I was greeted and a beautiful smile. The lady that was working was the only person there but she handled business.  There was a gentleman ahead of me. She got his ordered squared away and then got my order taken care of. We talked about the little coffee joint around the corner from her shop. I told her I was going to grabbed a drink and be right back.\n\nBy the time I made it back, my husband's pizza was done.  I have a habit of making sure his food looks like what I had ordered. He works on the other side of town any I don't want to drive back if it's wrong. Opening up that little box, the pizza looked fantastic! There was so much cheese on the pizza.  It was pipping hot just coming out the of oven.\n\nCheese pull was awesome! The crust was chewy and thin.  The sauce had the right amount of tang to it and the cheese was nicely melted all over the pie. With all of it combined in a bite, it was the perfect sweet and savory combo.  I was able to sneak a small bite and it wa so good! I also grabbed a side of homemade ranch and highly recommend dipping that slice into it.\n\nCome to find out the gal that helped me was the owner. She was so sweet and genuine! Business owners like that make me want to support them even more! If you're over by Broadway and Front street and you want a good pie, make sure you check out Extreme Pizza. So good!",
+          "time": 1744145609,
+          "translated": false
+        },
+        {
+          "author_name": "Timothy Bird",
+          "author_url": "https://www.google.com/maps/contrib/114750417630621912175/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV9W1U5x1JjnChxDwPnNZ4PGIOQpM4tR-diJnPGrc99M-7wF2sf=s128-c0x00000000-cc-rp-mo-ba7",
+          "rating": 4,
+          "relative_time_description": "9 months ago",
+          "text": "Yes they are extreme and their pizzas are top notch. The sauce and crust is what makes a good pizza and they have that area nailed. The staff were friendly and fast getting my pie ready for me.",
+          "time": 1733498468,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112264937040392400333\">Darrick A. Fender</a>"
+          ],
+          "photo_reference": "AciIO2cXIWBjYb0pEPgo1KQIqANnbjrc3E1QBDEUKsFDCWoDwYmcVfl0OxcMk7zSHFFY3t2aRX_g7ONJQgENnLh4SVBN7D9LtijqIqd-9-AdwqPU344VdYE39GaEMXqZJFU_erj8ukYbzhAJdJPBVHObN9myCC0vKvge0kv7WmQNPSX8NF_BToZVO6mI2GW8iHQsV0IDOnFzsKJMknkT1tjt5Rttt1Thw2bueW0pAfpjc1tZc56BRH9WG8wfnv0t7ogL-cu-pRmv4N30wP6od0x7xWIHz_9U9_6iw9oSIRk-F1RCUrdWxgE87uFzuB_RW5AsLB_MnCIT0vD_Hqt0PMdOMKHAqpG7y8LimOSNGmokR5K9e2RaY57ubeAzNcNB0Xcr2DYW068vJrkft1g6X2bfqIu73Ljwjv2cqqXtnjWkxduvYQ",
+          "width": 3024
+        },
+        {
+          "height": 565,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109990161187280897933\">Extreme Pizza</a>"
+          ],
+          "photo_reference": "AciIO2cPR5TkMaE_C2DazYDKvhX5LvbwM1Zf6WNeHV4zK3EsyfJp_UXUzTZsggCfiKGaiZ2-uGcO5MllqLWgyVemwd44Na2a5CejsXtLZ78ueGVPptjxY4jqgwVcFIZbxVf1aZHfcA5u_NF_60PknVeWwMzk5ILK6Md7EpHo424iOOlHWPfecMGGal1wuLljfHW7ITz4_S7kOcaBtw-oWD3Hq5d5aoZldJPWxf2Q45Z3YpZ0HTJRbMWNMbkI8XTh-sz_p1PhDnfdvG3Gth-LStBnvPyTLLIT4dJc2GBculaNiIXPAg",
+          "width": 848
+        },
+        {
+          "height": 4800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104768832229703430264\">pei Hsieh</a>"
+          ],
+          "photo_reference": "AciIO2c-6cPaWkp1lmve5KMzV8KrrncnB_f82f_5n9bNwshVbndsWJQ_pgsKQHmu3TBV0kyRrhFhV9YquaOaGubt64tOLhFZM-KeIIf_aybMCCJ09OowNeJXEOHlg2AFXNuG_x2c0gxG0hYHn-ANBAEC__TclTOwLeP_5ix1TOpPeZcYPlTf6eAVj94NzJnhg0xakywktn0kVRTfbQXwBNmuPBbNyp-pl4geYH_6Q52usLhMXklXrQHe_8vcj5QK1SG1RpiiuN3jBPFrq-_sbdeZ-xvwgeKa5y1FuHgHjbbQfCp_CuNfXkl-kxcK5tmm-O96KPdFmIjE7Xhr0TdX93QFcZfbj_jwxd6IfSwf4mgxKdeu2On9aSmGeBg8neMUizGsu1i-5uXF1OZ8dVYFLk8wGztkRlekTJN5bbu2u8pcPb8-Tg",
+          "width": 3600
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114750417630621912175\">Timothy Bird</a>"
+          ],
+          "photo_reference": "AciIO2dnYzEyLE8nz-P5QTzAQQAn2YDDaPpcbAEzyxNYFubekGxsM2pYZIAs0_2NwyeS5qF2dzjRL8RkZ4qGgmxtpEGWsPwONwHfXZPWueCApLy3TT9MO6b85GMTZu8GHOZ1y_ecTTdZ3RiNY0ET6_epn0xITt52CeTQURJgK72C9MWVlMLnTDphnR8cyQH8KC4utu-Q2NXspjjgluzf4zghjU6bCn515l80J3T3-n4Uj-V3nUy97HMc1cTTTcbl0SA56xINzhKJt9uysU5ZGHqy7ndFUVP3aYg6dY0V0NEIS3dSH4ig-bNxT9FSRTxBsbFdkDKzcp0qJtdYzybSH_rGq9wKiM75ZPGx7XLdKfVe1xZ0zjubEHh5kI6c3ykBO5_ifpdz-VVICNGyj3pUfuxv3T80xMpXNrpvr-qkQcbIkpA",
+          "width": 3024
+        },
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111966413668606673212\">Matthew Putnam</a>"
+          ],
+          "photo_reference": "AciIO2eXDbija68CIjPFG0TDq1jsbImgiML32q7-XW5V_Jb7mTfb3wpi6EE_SdVOBjOla0azO2Jr3Ry9rYbI3CDL_0v6k60JnVAcYqyDNOmUIaV3dPFzOVam4IgbPXdj-ipqomExbYu3CpnZS6HvGf9C0WHgzoCZRWxbifv7GfwJuzlT-Dp5z11ZfHZhKTaw5lHJmCosYaXQ2EDGkI-orHFlfVp96LNG_GigWbm_8n9vn3kcYpjmQroX2uIpQSy1UiBch8rXqsgmd1WfCou3DbF46oJJNFonhv8CBRHMUlN_JuNimwrLwlgvMUN4nZyPleYdMKttb3AGypVL0AaZ6rD7SbgQG7dx4WYGKttVHmrKMym53E5ARHU7GBtOTgo00f0Ab0iacD3zYd5Vkcs91WkH3dw00E2tZGQ_LMICGc-DI5bj1BrD",
+          "width": 3000
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114063484049076627186\">Fred Depold</a>"
+          ],
+          "photo_reference": "AciIO2dZQ3hvM49Ac1bNTvh9lywIYU4MAjKHso6LSZvFQG4q03sOCkzwP08Smx7ibHPjNzuTkpRkBdg7NvTVa-K3Q9TgyGvAc9J3RRAY7VMqZQCz6sQQpst7WLAAjkSaHcsbGgkEk2aUVm99sBw7bNphKfPJ5NcKTBtxlqHbt6lXRSyTtlKn7XEEM-WcDPrh_KrskUlFhEdyyX-IGMkWObszNxcII5k8IYYWF2TVdfyKOqDzYHC5S4YDryhzsvkgErnWkmau3DOXtqC79oCUpuRfcWLtcHVBWYAPKqBvHBkE_h1hptdmfkVEhnZIUbP9axYGHUn__2FlB9gB_OCuvLYaVNNkquLwNt1tyCoUWB0Dnpvo9HxmyugPtJSG5raeBYhcP1CBMiIXKOwVTO2CbB-HzPteD5TEUXRrxM9IXxG3ds-H_vw",
+          "width": 4032
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/118423868496574326557\">K G.M.</a>"
+          ],
+          "photo_reference": "AciIO2cHXnkCk7OSe-NHnU4-JY11qJDZXFiEuigkFWO4J8HOvnNXVlEnWWiSdUug2Mfd1VL5jvdUg2lWU_Q5iqF8xaGKlFakmoHOsXAQKhCKA1Eum6zvqxMv9l6-HfYAfps65W5yhyd7i00AAFT4bkU3Bx3P1t1o4p2aOigausTfSIDP69p91Nljkdi8KGohJNt52EEUqSx9rvs_K0dokGS37keYNr83vOtBgqdXGrF722eXh4stanIobVES9Xf6mExsD77MzJVQO3zVaSLbx7L1Mm151DEPXVOsXk7AI_d8EW8nZpMLRDvP9njQjNHqSDZ9uRY1V0UW-nSL0iUqCzQ3aEGsGz9IhJDXkzmlxrdkQeYSS2bDoujTLIYYWEV6JkulodWAxmC5sN8IPO71C28HVpWZxVuyCFmkDFCXoRCrd30NIPoY",
+          "width": 3024
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111107682504176646952\">Chris S</a>"
+          ],
+          "photo_reference": "AciIO2eQOiUWCnqyLRGkgWb6ihv2wB7hJQKWykwObWWhj6i1yOEmHI9AEavjjIZ5GyCDHr7QX9CfkVZCBITm_AWXlAbYmB6SCjxOrbtsv62YZW1WATqxuGzO29Ol8jyuH9x1CRHfvuRNPWIZtD1Q5mPJWQaY2gkefprXl7FKNbU81hyksVb_Sz3bSWMejXklJ7IzvxgpYcsujrjkl4iD1VbiQkkmW1-Vqzeln9AFhUFUNXaLP2H83W08XyIIWfpDnDgWj_pA9B9XCwSxW85nrMK3uRsULdVxqYviAeKCMkeTW_nuXdb9ADdA-ba54l4v5DHhkI51k6f-MAhkpDtJRzhtPkL3hsQ3FST4crYTI4GXcdjfCk1__Nemrvn_Cv96IagkaCpCEtYAw0hd19cEaoH4Ek3G94OWf1yhJ3HNW7uqtRj0vM3H",
+          "width": 4032
+        },
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111966413668606673212\">Matthew Putnam</a>"
+          ],
+          "photo_reference": "AciIO2d9c-5jPdnGui44D-oEtYEjs0uTBJ3aQHmOg4fG1Y2TvBfJXQbXG6EM8g-zCD0NuSvbtxx-xSyhJh6LKmaOgrjyYe3pFRaUkZXAmD4UW_EtLMmQKQIcPKNvVnZ1td6TJLy46GDRMujVsmbKxwI6XnjeDaYEsn_YMtCm_NnsbIfQNlX1-ZVlfIx3RtYhTTaJ0Q5GE2OWsp3Ou8VbSuqYCQTn57KAM4Z5kT3uiUC5J06O80TBTacVSRrjTa2IXRNf4tMWPi42JAtfwPwSE6HpgurQevYVjpzp671zqGnfeuzGZzyI-wDI6qCueJrG_PjaXfcGdwnNnQBgIf30PPcutEJq_iY80PmHAD3s4dBBM8UOmxpCFUud1-ovp1XpiwA2AW3oBreqKdvqDTcaIIXEuN4sxxH9wORWrz6Ar_MCXyTE5w",
+          "width": 3000
+        },
+        {
+          "height": 818,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109990161187280897933\">Extreme Pizza</a>"
+          ],
+          "photo_reference": "AciIO2d9QXL7u2WNtnKPNot116wwhpmQAno_M_LIIa42yNIDvQc7D6DzKrVsnnaqPIWgO2VFTu6dzJztw7vSiUvwbFVr0hHpfhzzSKkjfMpNdwS-SXghErpQAboaKUdR_LA_8uWa5nGhbGrpApSd-37hRp8Wap4Zb2Il-nOaxC4a5-BlxR_lqdfhtM0DRBKFVOi1TPnsEzjC-PI7_P79HXx6Afiz8cuXwHJ3TAWQ6wtDZUwoqrgEGQk7V6u6z3khFN3RkD6-bU6o6mUdJ1yHNvnNKOXh3hjR4sPxHakeUfJhwPtHJQ",
+          "width": 585
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "2100"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2100"
+            },
+            "open": {
+              "day": 1,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2100"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2100"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2100"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2200"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2200"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 11:00 AM – 9:00 PM",
+          "Tuesday: 11:00 AM – 9:00 PM",
+          "Wednesday: 11:00 AM – 9:00 PM",
+          "Thursday: 11:00 AM – 9:00 PM",
+          "Friday: 11:00 AM – 10:00 PM",
+          "Saturday: 11:00 AM – 10:00 PM",
+          "Sunday: 11:00 AM – 9:00 PM"
+        ]
+      },
+      "price_level": 2,
+      "editorial_summary": {
+        "language": "en",
+        "overview": "Pizzeria chain specializing in innovative pies customized with unusual toppings."
+      },
+      "url": "https://maps.google.com/?cid=5041498624656319489",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2eGN3raSYxnB3MH8Php2y6Jr3-m2sDPK7yyGURsGtuFNdjbAlc5WADDMyv75eGJmwfgyKyi12FlcLsUSdyTskiF4nlBuSS_tNiL-AYWdBNR15U16GR8eL-FBYpYH9aYqfCEAE7qg6B9b5urHu0XBva5OQvwVZx1bjqXyMTxvqEL8Wb1LBD4yZUhWj2J_COadbxg0f_db568XjCC9QaAAW5BjqYAaI6fX2maW0SzR8AgwR6YFHKdoTDYEuLJTtsFiZa5XtbcUp99hX9l6UVzAglO0YPe4kWTKoxKQ2vr1AxkTNneDXURLEKg-dulNjtxM7jM8_3ltkkQeZ2PKqewtjXhTKqDaFHVEE5PXt-vJU1Z8DEzqxKV-_wktP1Ll32w4p5Jn-7YUBxdzCLFJQMSq4vXx6rGDlafOdzdM1FNblgBdg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2dEP6s7ODQS1Fn1hoz_QomJSRRpSXd-0XFuhUBj4AzIS_z3s6laA6EDg0VLLWsA4k6MZYJGDEHgpYqm9wRTCykJUMj4kYNuwekHcvN_xWN_axmsAyiuE8HYjuvJcRB-Zt2RVkLP7XriOYvCb1tFI5UEZJz_qPTJoiMiLuUU1XlHMZevDO5wUqXfnmTGdN7wSJeTHc-YqwLKJP-IXL1fQVigjs-eFwkoBuaG6Ou5sFXxutemTxAmL78nbGMz6y6RWg-0BIri2bsKd3gEZjVw9ugO7_ifeTYteFBZUR0jku_zvQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2eUGLC2CYMr2rvJ1bWRE9s3yuVQPNbPaHLehuP75Q6NJMk2sOX0YGf5wIy5sUkSYs4EEBVf98-m5hPyVX8THRnLBK0QbSBzF5_KgvOkYIw64NEeeaHriwWZ4JwqfF-CwGFAjRIFlKhMS4azh96Bn__3SdMh1f-vnr4ByBTpCqXY_jZ8FNzBAeFi1ibGlE4xfOOKKIVpOTBJyWyeGJgJwlspkw1lJNa5B3ujhU5gfjwHwb7LrUFgzq3wwl_4hWzOekdAQviEXsxszO6UM_RAH1Rk60NBiSoUTfUw8xeIoldX-gb98Qy4k0XaytybzOAn9W3rL2XtXiE1qMqAvkhl0EqXkqoqGaK74qo4hdraA-MVZGZm6gVdKv-L5tf4y0o8ZVkLZxk_Ag5YlwJdQHByNkr11y-PMdd2yuBfD_gTKr-t-A&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2eY5nhn5F5gtBNCOtiF7OvGUWojcEyM49F4BA1HjVHNvMHoEgH9QtVxnPnUP_nhrjcBrLcYuOI7IYXKzh8Ii8YXk_7FLzqpuc5yeF3oSXA0k_aBFCC6vVrt3c5sHUwygt5BvvOR7RlPZUZeZcZfRfnUE48Rk6U_Gg2QJvTaGD9_RXlqL0xU4vVH2sgyHQTSapugJIwSFe6bORppdHFV_PfYWRv7o8IBQ9klf_rkUrgc5gTrrOSYH58SSEJ9tgqVLkhUHElT5Tc734_a3a6t-MpxiaxLMIgnY2otH4CdyxIL9_hS7HNPVSvfgQHwcwmoel-GDVB-r_NfxWLhAb_VHyxsp_8vYPzewAv8gZH-iCJvl0dhP1SRf7uZyJKCnueWePlkf3R3DCbvIt1mg_UlY5GqPJPvlgmijXsTZR-rYPo&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2f5cAM0B4CAwk_FGqaWC1UdqyRaQtqof6R40FYx2xzk-gRXVXiU-dNvAj5uuNJHgX51ikpQ5LPmiQzvEGb5JCLBZtLKJBS_BDBAlGoyz_WczXmh6AZQ0e-cAhvPwj7bKjNMdNyMFVxijZbU1ssA7w5BDwvUEvL_cEgyL2od-eYQ4_dInuauDFUr4rbL24VZzA_f_xZEMr3A8MV9iUMYbnW8IFTXg4WJkOgYPrygEHpDcfDEA-Ku44HoGg3btHn8MZBJ-bF6Rqn-6ihsLdUycfOhQq6m8TeQ16-iWd7ZHp0YNpfazybAO2oKyqEA5A1m5qAkzSIuRyF7Gus3lDUlvRsszDU_UodmHi486Ok7pIzE8kHBs0V_PY13kMuugj8TFIuQbza1cJLX75cP4g5dx-RG5Yi_XQR46RedTh8ALZdkbAdC&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2fqx-Z3bu6OeO0S5m80CNsdTjwKwfyt6r-NBz2TuYsLym31ITLI21MsgHzYHvYkmmkIUaJD4y9euRMkxg9k64YbK-NamDLacg_ed6zOQ2_Z_ICKFFSX_peCos9qnQzV9wyte2L4cXvz9GlFyI7giV23v6qLrDUDuGae5CUv3MklqAztOLy76JGdUjxNWHjjS6WZsxi1_-zl4XLOBHxL8EK7Glx7IcA6g0ekRcLPiRRsdRDZRId0PrW8WQby5CtLFaF6UQvUgv_32vX3SaLSSDD69TxY-TjXq7hmPkPndscAzzV0D5G_wqB3wpH6-RA96zguSgCQv3avLiStHO95Oigsh4sSo3aDm8ZAL_Tq_mW94Ja12eVws1zWpbYYLGb7ZQ3loVm9zhxZzF4p8urCQitl61raycOkBM6qzCRz8O5LBwc&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2cHdsahBJ75rmV8cnLANg7PvlA_bkJi1pGlKP2T0_ea_ZbICf1_ehNAPSWN1ZlVdZYUd9EttlwvX9EXUdbxpETBQ2CDi0gAk2OKFZijScaD_TpA6EXlcoV0lpMzRRVHdomtucIQjfe1EmAsWPSDFObqI1ukmZG11hc2UfSmjLpJv3QGHBxACGNyQqE3KL_O1Pq9yB4FlEvHJMaXAgHLLYfwDe7kSfX4xm5yTKADuS6xRiewMgmUBeZV9ND9kEwcfN_jkESDsZ5k7vNE0ZqjCsRWix5_uyUTatbHjVggMx46xqoipy-ExG6NixtgQJlYvuy-g7sdhktHoQYthtH2880cm2mWzysmAaKheR1D6HXnVEPjtiZkeSEnOHRdC-983Ue1m5-EnBoOpLwFTqn4P0orZm1pERiYCFMHWncTyy5KtpNP&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2cxJuOZRpdE2i3Ljgsa7M149MU-G1d7hizcCAHP0iX2NK4MxBfApzGXAGDjP7x3rJbO-XgzUB7EEEyPbiRqvcwvp622WvdIeAGuOrlpLyc_DjnTRtq1Gl7FYk5epFW0Osp4NlKJaZSAjIgx-D1R6ZKlqMVIaDF4W7lPfBZX4ECRUCKq29aQSw4vtapYWTvosoOXYX97cjtvCcrEld1mvWW2XFSrKpVss8K8GVXum5oKwl1HLBMgDp7Xo8u9X5OA8xf4XzrAFemj5C_WL4aXbz0uQCMTaHsUaTfKzayCCJLLbZWpASTjQzBgHwM3TsaI9K5ie56v49qL96Ttp_rOAcXzYclsMsDgWN-V-ZEPb-3EbTd0aTosZFEiJ-jbWNx492NljqQlZFjlMLlzcEEPqgJL6Sz9-50PUUOesoEL97tGXnYn&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2ctHbgUD3Jb4YL_IeXuGb_Cdo2qKjesmRjALqIXqQHvMQIa405RaHSWAbJinvTRGuBjTVXr5Ybo9R9K4fZTr-X-AsbGQi38HgqERmEawMBnJ2kGIG-S_FCqI6fO_GOH8J5taFco8AqIaXRt5umWbTDW0qMsr-jZmL39mxz4p4-3FHaZAb1FAag1Va0oLKFMAb-h9E4q7wd-Ezmm7c2hiVxwNW-Hw3-dfpY-_tHXHzdFi2OWLp6fzKtKw2c4nAAAgjoUY8-i1Svf8Z9vnObRHc6rEv0Z3B0dw1j7jQPIcw3O03F65LoQxWUCryo48os98Lks3eP-8xxqGJJS0zKU8HF2-wOOTFLJhzrlqOGtlSRN0m5Y7Hot9pcNWkx3NPh0GthgAxrsjiZaCrqonYSOp-6uV_JRwD5Ig9Fa-2-YaA5HrQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2fgAJBCGodpq7O1wEqTrA2MkoJEABCjBiNKewV1mA59puXaYT4rvrkH2E0iv9D1w-dFyVmywym5WZYU9vyfI0pr16q0eA467sCqnKYAssngteQBVdi8mSc3BLHFCVSe9vrPb_ox2IT-Z-Ml1SrJ9mFz7tY1wsF_PuhoJJt9xEbzNqjwgiQSbF9M0NNtueqNSqXixNiipWm-R2molA8NBKo_OWyL1z0P-fQ8rvNykKQsYRx055rtnzYROv9RvZekP1Jn8njK-h1XOZ81K1RJE4sJ-o-J371Jyx9odls8w6b71g&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 63,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": true,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 90,
+      "totalReviews": 434,
+      "averageRating": 4.5,
+      "sentimentBreakdown": {
+        "positive": 100,
+        "neutral": 0,
+        "negative": 0
+      },
+      "reviewSources": [
+        "Google Business Profile (Limited)"
+      ],
+      "keyThemes": [
+        "Service",
+        "Pricing",
+        "Atmosphere",
+        "Food Quality"
+      ],
+      "recentReviews": [
+        {
+          "author": "Steven Harms",
+          "rating": 5,
+          "text": "As I went into Extreme Pizza my eyes darted about and the place was immaculate.  When I approached the counter I looked upon their menu to discover 5 vegetarian pizzas.  That’s more than other restaurants in the area.  I feasted on a Mr. Pestado-head.  When all was said and done I loved Extreme Pizza and I await a rendezvous soon!",
+          "date": "2025-08-05T07:59:53.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Dani Stephens",
+          "rating": 5,
+          "text": "My husband could eat pizza everyday if he could. He asked for pizza for lunch today so I stopped into Extreme Pizza to hook my husband up.\n\nWalking in, I was greeted and a beautiful smile. The lady that was working was the only person there but she handled business.  There was a gentleman ahead of me. She got his ordered squared away and then got my order taken care of. We talked about the little coffee joint around the corner from her shop. I told her I was going to grabbed a drink and be right back.\n\nBy the time I made it back, my husband's pizza was done.  I have a habit of making sure his food looks like what I had ordered. He works on the other side of town any I don't want to drive back if it's wrong. Opening up that little box, the pizza looked fantastic! There was so much cheese on the pizza.  It was pipping hot just coming out the of oven.\n\nCheese pull was awesome! The crust was chewy and thin.  The sauce had the right amount of tang to it and the cheese was nicely melted all over the pie. With all of it combined in a bite, it was the perfect sweet and savory combo.  I was able to sneak a small bite and it wa so good! I also grabbed a side of homemade ranch and highly recommend dipping that slice into it.\n\nCome to find out the gal that helped me was the owner. She was so sweet and genuine! Business owners like that make me want to support them even more! If you're over by Broadway and Front street and you want a good pie, make sure you check out Extreme Pizza. So good!",
+          "date": "2025-04-08T20:53:29.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Timothy Bird",
+          "rating": 4,
+          "text": "Yes they are extreme and their pizzas are top notch. The sauce and crust is what makes a good pizza and they have that area nailed. The staff were friendly and fast getting my pie ready for me.",
+          "date": "2024-12-06T15:21:08.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Matthew Putnam",
+          "rating": 5,
+          "text": "Delicious pizza & desserts, friendly & thoughtful staff, nice atmosphere. Pizza is not overly greasy but is still absolutely delicious!\nGet the Pow Pow dessert, you will not regret it.",
+          "date": "2024-02-13T22:14:45.000Z",
+          "platform": "Google Places"
+        },
+        {
+          "author": "Chris S",
+          "rating": 4,
+          "text": "The pizza was unfortunately not that extreme. Cool restaurant with relaxed vibes. The service and staff were both awesome. We ordered 3-gluten free crust pizzas and the extreme twisted sticks. Overall the flavors just didn’t happen. Bland on all 3 and the twisted sticks had minimal cheese and no garlic. Thinking maybe the gluten free crust impacted the overall flavor of the pies. They looked delicious, just think for the price there are much better options in Boise.",
+          "date": "2023-08-06T00:26:48.000Z",
+          "platform": "Google Places"
+        }
+      ],
+      "examples": {
+        "positive": [
+          {
+            "author": "Chris S",
+            "rating": 4,
+            "text": "The pizza was unfortunately not that extreme. Cool restaurant with relaxed vibes. The service and staff were both awesome. We ordered 3-gluten free crust pizzas and the extreme twisted sticks. Overall the flavors just didn’t happen. Bland on all 3 and the twisted sticks had minimal cheese and no garlic. Thinking maybe the gluten free crust impacted the overall flavor of the pies. They looked delicious, just think for the price there are much better options in Boise.",
+            "date": "2023-08-06T00:26:48.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Matthew Putnam",
+            "rating": 5,
+            "text": "Delicious pizza & desserts, friendly & thoughtful staff, nice atmosphere. Pizza is not overly greasy but is still absolutely delicious!\nGet the Pow Pow dessert, you will not regret it.",
+            "date": "2024-02-13T22:14:45.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Steven Harms",
+            "rating": 5,
+            "text": "As I went into Extreme Pizza my eyes darted about and the place was immaculate.  When I approached the counter I looked upon their menu to discover 5 vegetarian pizzas.  That’s more than other restaurants in the area.  I feasted on a Mr. Pestado-head.  When all was said and done I loved Extreme Pizza and I await a rendezvous soon!",
+            "date": "2025-08-05T07:59:53.000Z",
+            "platform": "Google Places"
+          }
+        ],
+        "neutral": [],
+        "negative": []
+      },
+      "customerMoodAnalysis": {
+        "overallMood": "delighted",
+        "sentimentSummary": "Customers are genuinely thrilled with their experience. With an average 4.6/5 rating across 5 recent reviews, your restaurant consistently exceeds expectations.",
+        "sentimentDistribution": {
+          "ecstatic": 20,
+          "delighted": 40,
+          "satisfied": 40,
+          "neutral": 0,
+          "frustrated": 0,
+          "disappointed": 0,
+          "angry": 0
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "food quality",
+            "mentions": 5
+          },
+          {
+            "theme": "service excellence",
+            "mentions": 2
+          },
+          {
+            "theme": "atmosphere",
+            "mentions": 2
+          },
+          {
+            "theme": "speed of service",
+            "mentions": 1
+          },
+          {
+            "theme": "slow service",
+            "mentions": 1
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 2,
+          "satisfaction": 6,
+          "disappointment": 0,
+          "frustration": 0,
+          "anger": 0
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "The staff at Extreme Pizza are consistently described as friendly, thoughtful, and efficient, even when managing alone. - review management can highlight this positive aspect",
+            "Extreme Pizza offers a wide variety of vegetarian options, more than other local restaurants, which is a significant draw for customers seeking diverse menu choices. - SEO services can leverage this for better visibility",
+            "The pizza crust and sauce are praised for their perfect combination of flavors, creating a delicious and memorable pizza experience. - social media marketing can showcase this strength"
+          ],
+          "improvementOpportunities": [
+            "Bland flavors and lack of toppings on gluten-free options - review management can address this concern",
+            "Competition/discovery issues in Boise - SEO services can solve this visibility issue",
+            "Lack of atmosphere/ambiance awareness - social media marketing can improve this area"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 5,
+          "averageRating": 4.6,
+          "ratingDistribution": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 40,
+            "5": 60
+          },
+          "sentimentTrends": {
+            "trend": "stable",
+            "recentAverageRating": 4.6,
+            "previousAverageRating": 4.6,
+            "recentReviewsCount": 5
+          }
+        }
+      },
+      "trends": {
+        "ratingTrend": "positive",
+        "volumeTrend": "increasing",
+        "responseRate": 75,
+        "averageResponseTime": "2 days"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ],
+      "googleReviews": {
+        "reviews": [
+          {
+            "author": "Steven Harms",
+            "rating": 5,
+            "text": "As I went into Extreme Pizza my eyes darted about and the place was immaculate.  When I approached the counter I looked upon their menu to discover 5 vegetarian pizzas.  That’s more than other restaurants in the area.  I feasted on a Mr. Pestado-head.  When all was said and done I loved Extreme Pizza and I await a rendezvous soon!",
+            "date": "2025-08-05T07:59:53.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Dani Stephens",
+            "rating": 5,
+            "text": "My husband could eat pizza everyday if he could. He asked for pizza for lunch today so I stopped into Extreme Pizza to hook my husband up.\n\nWalking in, I was greeted and a beautiful smile. The lady that was working was the only person there but she handled business.  There was a gentleman ahead of me. She got his ordered squared away and then got my order taken care of. We talked about the little coffee joint around the corner from her shop. I told her I was going to grabbed a drink and be right back.\n\nBy the time I made it back, my husband's pizza was done.  I have a habit of making sure his food looks like what I had ordered. He works on the other side of town any I don't want to drive back if it's wrong. Opening up that little box, the pizza looked fantastic! There was so much cheese on the pizza.  It was pipping hot just coming out the of oven.\n\nCheese pull was awesome! The crust was chewy and thin.  The sauce had the right amount of tang to it and the cheese was nicely melted all over the pie. With all of it combined in a bite, it was the perfect sweet and savory combo.  I was able to sneak a small bite and it wa so good! I also grabbed a side of homemade ranch and highly recommend dipping that slice into it.\n\nCome to find out the gal that helped me was the owner. She was so sweet and genuine! Business owners like that make me want to support them even more! If you're over by Broadway and Front street and you want a good pie, make sure you check out Extreme Pizza. So good!",
+            "date": "2025-04-08T20:53:29.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Timothy Bird",
+            "rating": 4,
+            "text": "Yes they are extreme and their pizzas are top notch. The sauce and crust is what makes a good pizza and they have that area nailed. The staff were friendly and fast getting my pie ready for me.",
+            "date": "2024-12-06T15:21:08.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Matthew Putnam",
+            "rating": 5,
+            "text": "Delicious pizza & desserts, friendly & thoughtful staff, nice atmosphere. Pizza is not overly greasy but is still absolutely delicious!\nGet the Pow Pow dessert, you will not regret it.",
+            "date": "2024-02-13T22:14:45.000Z",
+            "platform": "Google Places"
+          },
+          {
+            "author": "Chris S",
+            "rating": 4,
+            "text": "The pizza was unfortunately not that extreme. Cool restaurant with relaxed vibes. The service and staff were both awesome. We ordered 3-gluten free crust pizzas and the extreme twisted sticks. Overall the flavors just didn’t happen. Bland on all 3 and the twisted sticks had minimal cheese and no garlic. Thinking maybe the gluten free crust impacted the overall flavor of the pies. They looked delicious, just think for the price there are much better options in Boise.",
+            "date": "2023-08-06T00:26:48.000Z",
+            "platform": "Google Places"
+          }
+        ],
+        "averageRating": 4.5,
+        "totalReviews": 434
+      }
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/extremepizza",
+      "instagram": "https://www.instagram.com/extremepizza",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 65,
+      "social": 100,
+      "local": 64,
+      "reviews": 89,
+      "overall": 80
+    },
+    "originalScores": {
+      "seo": 78,
+      "overallScore": 78,
+      "performance": 83,
+      "userExperience": 73
+    },
+    "migratedAt": "2025-09-16T00:37:21.576Z"
+  },
+  "metadata": {
+    "cachedAt": "2025-09-15T16:08:09.120Z",
+    "expiresAt": "2025-10-15T16:08:09.120Z",
+    "placeId": "ChIJe5-yRVb4rlQRAaRCwkkA90U",
+    "restaurantName": "Extreme Pizza",
+    "cacheVersion": "2.0.0"
+  }
+}

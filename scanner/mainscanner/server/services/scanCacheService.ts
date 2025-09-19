@@ -4,6 +4,7 @@ import path from 'path';
 import { ScanResult, fullScanResults } from '../../shared/schema';
 import { eq } from 'drizzle-orm';
 import { db } from '../db';
+import { calculateScores, type ScanData } from '../../shared/scoreCalculator';
 
 interface CachedScan {
   data: ScanResult;
@@ -135,7 +136,23 @@ export class ScanCacheService {
   async cacheScan(placeId: string, scanResult: ScanResult): Promise<void> {
     try {
       console.log(`💾 Caching scan for placeId: ${placeId}, restaurant: ${scanResult.restaurantName}`);
-      
+
+      // Calculate frontend scores and update the scan result
+      const calculatedScores = calculateScores(scanResult as ScanData);
+      console.log(`🧮 Calculated frontend scores for ${scanResult.restaurantName}:`, calculatedScores);
+
+      // Update scanResult with calculated scores to match frontend display
+      const enhancedScanResult = {
+        ...scanResult,
+        // Map calculated scores to the existing score fields
+        seo: calculatedScores.search,
+        overallScore: calculatedScores.overall,
+        performance: calculatedScores.social,
+        userExperience: calculatedScores.reviews,
+        // Also store the full calculated scores for reference
+        calculatedScores: calculatedScores
+      };
+
       // First save to database (production-friendly)
       if (db) {
         try {
@@ -143,16 +160,16 @@ export class ScanCacheService {
           await db.insert(fullScanResults)
             .values({
               placeId,
-              restaurantName: scanResult.restaurantName,
-              domain: scanResult.domain,
-              scanData: scanResult,
+              restaurantName: enhancedScanResult.restaurantName,
+              domain: enhancedScanResult.domain,
+              scanData: enhancedScanResult,
             })
             .onConflictDoUpdate({
               target: fullScanResults.placeId,
               set: {
-                scanData: scanResult,
-                restaurantName: scanResult.restaurantName,
-                domain: scanResult.domain,
+                scanData: enhancedScanResult,
+                restaurantName: enhancedScanResult.restaurantName,
+                domain: enhancedScanResult.domain,
                 updatedAt: new Date(),
               }
             });
@@ -175,12 +192,12 @@ export class ScanCacheService {
       const expiresAt = new Date(now.getTime() + this.cacheTTL);
 
       const cachedScan: CachedScan = {
-        data: scanResult,
+        data: enhancedScanResult,
         metadata: {
           cachedAt: now.toISOString(),
           expiresAt: expiresAt.toISOString(),
           placeId,
-          restaurantName: scanResult.restaurantName,
+          restaurantName: enhancedScanResult.restaurantName,
           cacheVersion: this.cacheVersion
         }
       };

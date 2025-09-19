@@ -1,0 +1,2715 @@
+{
+  "data": {
+    "domain": "www.cbgfenton.com",
+    "restaurantName": "The Corner Bar & Grill",
+    "placeId": "ChIJecUCFe1lI4gRaFZ-oKXyHCA",
+    "overallScore": 82,
+    "performance": 100,
+    "seo": 66,
+    "mobile": 64,
+    "userExperience": 91,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "burger near me",
+        "position": 0,
+        "searchVolume": 90,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "burger delivery Fenton",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best burger Fenton",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "burger",
+        "position": 0,
+        "searchVolume": 40,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "burger places near me",
+        "position": 0,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "burger Fenton Michigan",
+        "position": 8,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://www.cbgfenton.com/",
+        "title": "Corner Bar & Grill | Restaurant in Fenton | 2015 Owen Rd ...",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "burger delivery near me",
+        "position": 0,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "burger open now",
+        "position": 0,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 75,
+        "keywords_appeared": 6,
+        "total_keywords": 8,
+        "average_position": 3,
+        "best_position": 1
+      },
+      "keyword_results": [
+        {
+          "keyword": "burger near me",
+          "found": true,
+          "position": 5,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "The Corner Bar & Grill",
+            "address": "Fenton, MI ",
+            "website": "https://www.cbgfenton.com/",
+            "phone": "(810) 354-8808",
+            "rating": 4.4,
+            "reviews": 1100
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Wing Snob",
+              "address": "Fenton, MI ",
+              "website": "https://www.wingsnob.com/",
+              "rating": 4.3,
+              "reviews": 193
+            },
+            {
+              "position": 2,
+              "name": "Halo Burger",
+              "address": "Fenton, MI ",
+              "website": "http://www.haloburger.com/",
+              "rating": 4,
+              "reviews": 789
+            },
+            {
+              "position": 3,
+              "name": "The Laundry",
+              "address": "Fenton, MI ",
+              "website": "https://lunchandbeyond.com/",
+              "rating": 4.5,
+              "reviews": 3500
+            }
+          ]
+        },
+        {
+          "keyword": "burger",
+          "found": true,
+          "position": 4,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "The Corner Bar & Grill",
+            "address": "Fenton, MI ",
+            "website": "https://www.cbgfenton.com/",
+            "phone": "(810) 354-8808",
+            "rating": 4.4,
+            "reviews": 1100
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "The Tavern Kitchen & Bar",
+              "address": "Fenton, MI ",
+              "website": "http://www.thetavernkb.com/",
+              "rating": 4.7,
+              "reviews": 1300
+            },
+            {
+              "position": 2,
+              "name": "The Laundry",
+              "address": "Fenton, MI ",
+              "website": "https://lunchandbeyond.com/",
+              "rating": 4.5,
+              "reviews": 3500
+            },
+            {
+              "position": 3,
+              "name": "Wing Snob",
+              "address": "Fenton, MI ",
+              "website": "https://www.wingsnob.com/",
+              "rating": 4.3,
+              "reviews": 193
+            }
+          ]
+        },
+        {
+          "keyword": "best burger Fenton",
+          "found": true,
+          "position": 4,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "The Corner Bar & Grill",
+            "address": "Fenton, MI ",
+            "website": "https://www.cbgfenton.com/",
+            "phone": "(810) 354-8808",
+            "rating": 4.4,
+            "reviews": 1100
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Retro Ricks Comfort Kitchen",
+              "address": "Fenton, MI ",
+              "website": "",
+              "rating": 4.9,
+              "reviews": 29
+            },
+            {
+              "position": 2,
+              "name": "Leroy's Lounge",
+              "address": "Fenton, MI ",
+              "website": "https://www.facebook.com/profile.php?id=61571645244330",
+              "rating": 4.7,
+              "reviews": 70
+            },
+            {
+              "position": 3,
+              "name": "The Tavern Kitchen & Bar",
+              "address": "Fenton, MI ",
+              "website": "http://www.thetavernkb.com/",
+              "rating": 4.7,
+              "reviews": 1300
+            }
+          ]
+        },
+        {
+          "keyword": "burger delivery near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "The Tavern Kitchen & Bar",
+              "address": "Fenton, MI ",
+              "website": "http://www.thetavernkb.com/",
+              "rating": 4.7,
+              "reviews": 1300
+            },
+            {
+              "position": 2,
+              "name": "Halo Burger",
+              "address": "Fenton, MI ",
+              "website": "http://www.haloburger.com/",
+              "rating": 4,
+              "reviews": 789
+            },
+            {
+              "position": 3,
+              "name": "Hippo's Chicken , Pizza & Ribs",
+              "address": "Fenton, MI ",
+              "website": "https://hipposmi.com/?utm_source=google",
+              "rating": 4.7,
+              "reviews": 276
+            }
+          ]
+        },
+        {
+          "keyword": "burger Fenton Michigan",
+          "found": true,
+          "position": 3,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "The Corner Bar & Grill",
+            "address": "Fenton, MI ",
+            "website": "https://www.cbgfenton.com/",
+            "phone": "(810) 354-8808",
+            "rating": 4.4,
+            "reviews": 1100
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Halo Burger",
+              "address": "Fenton, MI ",
+              "website": "http://www.haloburger.com/",
+              "rating": 4,
+              "reviews": 789
+            },
+            {
+              "position": 2,
+              "name": "The Tavern Kitchen & Bar",
+              "address": "Fenton, MI ",
+              "website": "http://www.thetavernkb.com/",
+              "rating": 4.7,
+              "reviews": 1300
+            }
+          ]
+        },
+        {
+          "keyword": "top burger Fenton",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "burger restaurant near me",
+          "found": true,
+          "position": 1,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "The Corner Bar & Grill",
+            "address": "Fenton, MI ",
+            "website": "https://www.cbgfenton.com/",
+            "phone": "(810) 354-8808",
+            "rating": 4.4,
+            "reviews": 1100
+          },
+          "competitors": []
+        },
+        {
+          "keyword": "burger food Fenton",
+          "found": true,
+          "position": 1,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "The Corner Bar & Grill",
+            "address": "Fenton, MI ",
+            "website": "https://www.cbgfenton.com/",
+            "phone": "(810) 354-8808",
+            "rating": 4.4,
+            "reviews": 1100
+          },
+          "competitors": []
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"burger delivery near me\", \"top burger Fenton\" - optimize Google My Business profile with these keywords",
+        "Ranking below #1 for 4 keywords - increase customer reviews and engagement to improve rankings"
+      ],
+      "scan_metadata": {
+        "location": "Fenton,Michigan,United States",
+        "timestamp": "2025-09-15T19:54:17.998Z",
+        "total_scan_time_ms": 72930
+      }
+    },
+    "competitors": [
+      {
+        "name": "The Vault Downtown",
+        "domain": "thevaultdowntown.com",
+        "performance": 86,
+        "seo": 77,
+        "accessibility": 73,
+        "bestPractices": 82,
+        "overallScore": 80,
+        "rating": 4.3,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 858,
+        "keywords": 60,
+        "domainAuthority": 80,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 1070
+      },
+      {
+        "name": "The Tavern Kitchen & Bar",
+        "domain": "thetavernkitchenbar.com",
+        "performance": 94,
+        "seo": 85,
+        "accessibility": 80,
+        "bestPractices": 89,
+        "overallScore": 87,
+        "rating": 4.7,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1098,
+        "keywords": 43,
+        "domainAuthority": 87,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+150 keywords",
+        "authorityGap": 5,
+        "backlinks": 827
+      },
+      {
+        "name": "The Laundry",
+        "domain": "thelaundry.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1328,
+        "keywords": 41,
+        "domainAuthority": 82,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+50 keywords",
+        "authorityGap": 2,
+        "backlinks": 1055
+      },
+      {
+        "name": "One Eleven",
+        "domain": "oneeleven.com",
+        "performance": 92,
+        "seo": 83,
+        "accessibility": 78,
+        "bestPractices": 87,
+        "overallScore": 85,
+        "rating": 4.6,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1023,
+        "keywords": 32,
+        "domainAuthority": 80,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+100 keywords",
+        "authorityGap": 3,
+        "backlinks": 1174
+      },
+      {
+        "name": "The Fenton House Restaurant",
+        "domain": "thefentonhouserestaurant.com",
+        "performance": 82,
+        "seo": 74,
+        "accessibility": 70,
+        "bestPractices": 78,
+        "overallScore": 76,
+        "rating": 4.1,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 791,
+        "keywords": 22,
+        "domainAuthority": 75,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 940
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 82,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-15T19:55:14.235Z",
+    "businessProfile": {
+      "name": "The Corner Bar & Grill",
+      "address": "4015 Owen Rd, Fenton, MI 48430, USA",
+      "rating": 4.4,
+      "reviewCount": 1086,
+      "phoneNumber": "(810) 354-8808",
+      "website": "https://www.cbgfenton.com/",
+      "formatted_address": "4015 Owen Rd, Fenton, MI 48430, USA",
+      "address_components": [
+        {
+          "long_name": "4015",
+          "short_name": "4015",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Owen Road",
+          "short_name": "Owen Rd",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Fenton",
+          "short_name": "Fenton",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Fenton Township",
+          "short_name": "Fenton Township",
+          "types": [
+            "administrative_area_level_3",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Genesee County",
+          "short_name": "Genesee County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Michigan",
+          "short_name": "MI",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "48430",
+          "short_name": "48430",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "state": "Michigan",
+      "city": "Fenton",
+      "place_id": "ChIJecUCFe1lI4gRaFZ-oKXyHCA",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "bar",
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "reviews": [
+        {
+          "author_name": "Brett Bisbee",
+          "author_url": "https://www.google.com/maps/contrib/110144145068559174907/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL_3_rT7yjh-i5cmKassPvk-UTnOoKVjWsbzgEEUqO1yCx1KQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 2,
+          "relative_time_description": "2 months ago",
+          "text": "I had higher expectations unfortunately, the food was middle of the road. I ordered the fish tacos, they were rather small, very little fish, not very well seasoned and the profile didn’t blend well. French fries were also underwhelming. A great bar and grill should have fantastic in house Ranch. That also wasn’t very good. Menu prices are considerably high for offerings. Service was good, waitress was attentive. We tried it once, probably wouldn’t come back.",
+          "time": 1752256155,
+          "translated": false
+        },
+        {
+          "author_name": "Sabrina Stanton",
+          "author_url": "https://www.google.com/maps/contrib/112722305114922289255/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJ-nR2VbMy8MSZyAMCl5NsXbj-YnvASvNYHR-RVTuGUANJW1g=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 1,
+          "relative_time_description": "7 months ago",
+          "text": "For 3 people to have one drink and one brunch menu item each as well as 1 appetizer, the price was just over $100. The location shares a parking lot that was difficult to park in during busy hours. Upon walking in, we had a wait while tables were cleaned. It had the sticky spilled alcohol smell throughout the restaurant that bothered me while I ate. The menu is made.of paper.and not laminated so you can see lovely food stains of the previous guests. The server was very nice but very slow and inattentive. It was not her fault as they were very busy and seemingly not appropriately staffed for the time of day. I would have ordered a second drink but waited so long for her to come back that we just got the bill. The glass my beverage had come in didn't seem completely clean. The amazing photos of food attracted us to try this spot. The food itself was overwhelmingly average. Any coney island is comparable in taste but probably cheaper and faster. The rosemary fries were good but not worth the trip alone.",
+          "time": 1739021656,
+          "translated": false
+        },
+        {
+          "author_name": "BullOnWallSt",
+          "author_url": "https://www.google.com/maps/contrib/115252738727956110818/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWr611PJcQ2LV1Dc1Ox32Jfq_kQMIOwS5lIaY2PHZIqIYpBhUIV=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 3,
+          "relative_time_description": "7 months ago",
+          "text": "We live right down the road and had never been before and decided to try it since one of our long time favorite bands from Detroit was playing which was Sponge. The atmosphere was pretty good considering some seating you can't see the stage, but not everyone was there for the music. We ordered the quesadilla for $14 and the Gyro for $16. It's a bit pricing since I just came back from a tourist town in Nevada and paid $3.50 for a comparable one to this which I also have posted and pictures of on my reviews here. Worth getting either way. The Gyro I wouldn't recommend. 3 medium to small sticks of meat and lettuce on it was already turning me off from it until I ate the meat and noticed it was not great and decided to just get a burger which turned out to be great. Breakfast burger had a over easy egg with 2 thick cut bacon stripes. I liked it but cannot in right mind pay $18 for it again. Most expensive burger I've had and ai think I reviewed is Prism at hollywood casino for $25, but if you have comps it is half off so $12.50 and is worth the drive alone for it. I would say if you are seeing a concert for free and no cover charge it's worth going since you will spend easy $40 and a bit more if you have drinks or app etc. I hope this helps some",
+          "time": 1739232920,
+          "translated": false
+        },
+        {
+          "author_name": "M Hudson",
+          "author_url": "https://www.google.com/maps/contrib/117015332866368173129/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWnjBCHKh_Q4U2yEyTvjpaJyytZ0aaG8Ss452sygxq1J75TTNc=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "Service was excellent! Food was so good. Chicken n waffles were so fresh, chicken cooked perfectly! Always had a great atmosphere.",
+          "time": 1756405340,
+          "translated": false
+        },
+        {
+          "author_name": "Samantha Smith",
+          "author_url": "https://www.google.com/maps/contrib/115976104475547083553/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX146iv3sbs9mjrFHOLW8ea_KQcfQqmqubWRxU0Gu94jKSeZxzp=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 3,
+          "relative_time_description": "5 months ago",
+          "text": "Cool place, good drinks, live music. I got the falafel, and it was pretty overcooked. The fries were very good though.\n\nEdit: just came back again after a year.\nOrdered the same drink (pictured) and the waitress said they \"have never carried\" that drink. lol okayyy. Also just kind of rude the whole time. Bummer.",
+          "time": 1744477330,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104714292593571389000\">The Corner Bar &amp; Grill</a>"
+          ],
+          "photo_reference": "ATKogpcIKp0pz7ZZ-RUdyfM8sSAfC5fbSK8DsRr2A67uWuwXhpUkmyZaGFD3CkH5KkpxL8h9xl2BN86WnA4MvykCtsPBLpuEPhwK6-cEzz-HX_BTO6sC0EGgG0hU-Y6WxSzmUTEU_DNSOYP7q53J5cKjSZIEaG7qZff5E6yeekyF8gN_tOZRU1vRt_XMwmBu-ww9GJKwsFHWnQ29u3Wn_qoXqyMJs9vr1KUf59EBGHa1Y6eJHgLHj6rqo45t8On1_AK4UShbaEuy8hJbMUlZx8ftIhb4IB2_nONXLKTCQgZqI9B0BQ",
+          "width": 4800
+        },
+        {
+          "height": 1080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104714292593571389000\">The Corner Bar &amp; Grill</a>"
+          ],
+          "photo_reference": "ATKogpdzojpTMEUZnV1m-tXovwreLydulA0lHZfnNRM2DA_A-Rdg8BC54yhdgYe5RmIAzenXsZa5E_KNbFLjP06Kk6xRCYDxtrELmdhmPAKgAlodUa2YQsgm4MA4DqbIaSub4uamqpK7Gxyt3F_HmsrSFr7qUeAZ02BEP7J2EpWshxoNvW1GLMjVrq6uabgFsfHxfVIc-NVPnsxYmJeWlVTn0svA-gdxqdxJsHglGT7Jeq8dERC7mdQ__eIwXprJnrb48yzj7X4ZWp1af2eOje6zLG8tqCDZqQTJAL_ffMcUQvmJfA",
+          "width": 1080
+        },
+        {
+          "height": 1171,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102347022983057826194\">Kay Dom</a>"
+          ],
+          "photo_reference": "ATKogpd89jhLao8_km0LjEfMaUDiNHimc9qaAVFY2pVFo_hNKJIjGGTCGSll8ENCBjfc8wJy0S_VTQfgmiPO0Nx-Gaw_BGq7tWnZQscDeFITbCk35C4p7vt2GCAlcPWDYXkkN4KHmTi2Hi8985hkqiYLiIDs6rlEI-1Ic6G26OoiabEFPXlpjIo8pKwmP0s-9Yw5UJLZNxBWUYvQ-2UmPdLzcUyHF7r30L-lqjFgoDafQYF4dTZpKvXQTN72SsrzWxoEj2NOu72w38cAEYtuTJdZacq0Xw_D-mQ08Cmn0kbIQ7a3TUa4n237IZI1VGh-FRhv7w-8PD-dReOdF-uz6JQbwo3mf01SH8Euh2xmQ73hU8IS3NSHjYN8qlmkDW6m6elIrtNxqupiT1Xv3AvK0iS90luAy4GelQiqy07vJclhckEgLQNenGopR9efe7SWbfyK",
+          "width": 1560
+        },
+        {
+          "height": 2268,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110005710407212776160\">Sylvia Davidson</a>"
+          ],
+          "photo_reference": "ATKogpdzRYxa-ONqjVljt-7PDrgZhAPL5LyX_DAWQNPgENLUrlI7ue772N4hRb2P5OAf5Q5UbMxJ3BzJ5rKJUyYB4hKIoiRVnpxbCTWRiX_EjjuTPJZpbeTvljuXByVdTkl27wVHve_Ija2Sc8mMrPgu6mhnQvazvlrpjRv3SQtGRe3W6VY1vkjWeoyBQvJfyjMtP-czLC3f3M-hX1XBXle0lbZ2zJqPzPJOwNdnbmsJKuc-bwY91SdQk9iUPzkIJjI9noXvfAc-BIxRq5k5xbKq6ZyhEZEeh_EYuracxWqUiqD-MW0Ty33UPDIoMUe73GWHUUcysHALLuAXT1F7zhMXNY9OppPVInLAO-OPImhEyZmfWTRtBC5upr1wg8xb7Sz2mcu8j04UD9gtQqDsnWRVFAst6qKJ-_zgDq0D1PO77zNJf7WzFADap2cybVHC_kM-",
+          "width": 4032
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100633672462883311149\">K R</a>"
+          ],
+          "photo_reference": "ATKogpfInOQ_v1qjUP1mHwW0JBfGSNxgte0qh63RjJxQz45CM3vbB8Qf4hwEDxnZC-JelDjq_pCf9pSlTnsmlwJcNFC-Eonmu4GxzTjhHpCeQwuCOecN1oDq9M8LFMFbHK_HxVbAO47Py-eitMepNUpb2Cqq_EtgtU0FOt0ekPSmuo9jYZcemllZf6nmAYifw9cAdXC54iXvLakvmwYxekPvfawkYDsyl33NQ-yiGZgxuOzQus6Z7UDGp69IukjgG2z-7ijn8NKEvuRtpg9mvXAJqDWqsAfbIPRCCWcgt20R7DSRaTPtHUErMk2CEoDMB1kZ3AOeGcDbW-vKfmT8PGtNSWA8XY5mfFIdOgZEfBFb3TcF8_4UI_KFKyw5H7HtOPDsF3T1HnzZuip5C4M7gv4BbWUmzHCd95MB4ujVYK_4bcuP-Q",
+          "width": 3024
+        },
+        {
+          "height": 2268,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110005710407212776160\">Sylvia Davidson</a>"
+          ],
+          "photo_reference": "ATKogpeBUvYfCM4ro81VleliVOlrzVwcA4GxYf3WTmuElwDMrY5WxotchRYDbGZePdOAmBjGsoWv8ufCXw7SVOZ_VemBEhlylyYDsjK9C94p611FVpA0iISnRBL1uCcxNyXxYiGA1gBA0suBevJAAd9lKnu6nb3qBBEAEVycZeb6MLPIaN4wryd-MXMBguQCyTLyIAgxRhZIXMd5q34ZNcLj2-NcFulC97qu6KYfMXVrFz1S7K8AdXe9yJnCfqoinPG0iaDYnA9H9JiROG5026riJes3vWtXCvAVBEWnHpzcEfTPC8YPQ8SKRkPJW-Ugl2v555BSGDD64EKFy-b7WkDfeG_o576iIEFzB7GG54y0sAZcG43tWzlEMELPhLA2BMWE2BVzgAvBEs8WlzwSN5jgR8jhQNYLAMOIalNuGW5CErjN2YOtBrLcbIEUvNrcxfat",
+          "width": 4032
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100633672462883311149\">K R</a>"
+          ],
+          "photo_reference": "ATKogpczOf1iX4hpD0fsmksHeMSvXeurBhZpM-fu_aHuokYCdvKZjrL90w8HEU79Hv8x08S4JPeA_hgcKiHGL5mnc10vU67lmJCXV6YOjQtqBMa7sSjzCs31GTzWhBcqxq0YHjLaThRZlbQ09VYhjWPRFZ01e-Z8EHPQz2l-z_ZKOrxN3GW7wMAgbScu4fogCkrsjpZIJkfdwYM_uvvqDkp8MzcX14ZfnGlx4GtFomRXjWCevfoDPFpzJNbzsAVSjB2jNfVUeJZgSUJkfDX3AIKyzB-mH2mMzKwHTMaw1d370dGsfo1y01_fbLFEUcWsEAmhzxw3A1tYuWxTl2crR239bgLahx6PKuZiS6HaLxyPDe9gBtPlXgSAKWuiElVpgPhBxGNAFFHZ-q6yRp6B5xZRiG8zI0T03ccd3gsbrBtayoRHZBwn",
+          "width": 3024
+        },
+        {
+          "height": 3000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110653393898263428663\">RandS WestSelas</a>"
+          ],
+          "photo_reference": "ATKogpdv2qXTfh6v5Rtfvza-QpfzqWzifssBTW51Dv_SoJzS7yQk5nWZvEbBu1oeNnconkkZ8DqPlrCiG90_iW1oC5eIgDlEw1823g3Md66wkDmR4BYzOtUNVPT-9g29GePADd1I-Q_oPkQR5BNyY3gXdV9O-Zd3eM3o_ggy2iEJ5a4VlZphe4FYjkWee5RXlGtpz9E0tSuwPXDnIHMz5jAb3FS7-Z5BGx70wUMOW3Wh1R7dSCrMh0bb1JwQtX4liJVt9JGPjBCJ4nYS8Zq0jy4uHhUZy0V6PniIXjktYjUdZ2tB135vVu0_gju4ugnxSo8_HoC-XP4jUxbr2tO8LwMFrhY3kZZ2d3F-qEv0oHAs6Q8TmThtRp71wPmAm3Oh1L05ENSY_vJCY_2lDPvQB8LVDAeKgQhlvG3NpSMI_TZj-1PvHNs",
+          "width": 4000
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110144145068559174907\">Brett Bisbee</a>"
+          ],
+          "photo_reference": "ATKogpcfGn7cNWqJhYPGdE8fapZJ9qJ69BFsYZWXnwx8QsoSznJie8kT5faGIzNpGchFi8hH3Ig0n6KgEF0ki_2byc0T-SEI3DCmCTDmyPRh5NLSLCRiOqNUtgXarauQXbbK6w6tNCSdJkyCvH9TZlsCYOkh3Qhx-FMSmgyPsG41_PZS8biAd-eHug5zylsKGUHcAEBrARAxHWUahj0mKyvh4FUziLVL9N_WwHsw6w2FfSWuFlXpyzr5p98v3bKllrgYkK0hNy_1XwW3Cd9AsQ8FYXPe0FOQ3aif2IKElFVCZzwuXcaHBISW7qqbcubm7o5WKjGW-r7gpOr8NlVAMBpa7TkqbSurd1ptBF98Ui9wJQdXlGfuwRY34rMU6Cr2XqIlZ9ibgoHSkaSJopY6vRXohtLxnM6VlIeoIjwUon8SX3ZLSuQqAI17P5XWaxZZg6jC",
+          "width": 3024
+        },
+        {
+          "height": 817,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104714292593571389000\">The Corner Bar &amp; Grill</a>"
+          ],
+          "photo_reference": "ATKogpecbQqEBDqhHgNueFW9Sn51kUWvW9G5HxgRP35XtkXOaW_0DUK6zRlf3f5bq3inUSWY9yFZjkfiVsKUb0JQMS-MymmcA-KQXiEj9FV6AigOAXkBIFoyIEpy9MNWQlYDLd41ZQxk95u1KY1_sQPIFZpskNrijzHnklkBz0Vh6F2D1Lr1JrSd5-HY2I8LfuQyS9nRxiq-Uqaw2M6rT-7tQf3jUNMA2nbVE-O-4RoT5TvB8uZ4wnfjDb7W5FHrZKroJbbf1XCss6URVoZ_nbjvoJtRJbdtikVIeZHfWJ0SH6iSoA",
+          "width": 817
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "2200"
+            },
+            "open": {
+              "day": 0,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2200"
+            },
+            "open": {
+              "day": 1,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2200"
+            },
+            "open": {
+              "day": 2,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2200"
+            },
+            "open": {
+              "day": 3,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2300"
+            },
+            "open": {
+              "day": 4,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "0000"
+            },
+            "open": {
+              "day": 5,
+              "time": "1200"
+            }
+          },
+          {
+            "close": {
+              "day": 0,
+              "time": "0000"
+            },
+            "open": {
+              "day": 6,
+              "time": "0900"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 12:00 – 10:00 PM",
+          "Tuesday: 12:00 – 10:00 PM",
+          "Wednesday: 12:00 – 10:00 PM",
+          "Thursday: 12:00 – 11:00 PM",
+          "Friday: 12:00 PM – 12:00 AM",
+          "Saturday: 9:00 AM – 12:00 AM",
+          "Sunday: 9:00 AM – 10:00 PM"
+        ]
+      },
+      "price_level": 2,
+      "editorial_summary": {
+        "language": "en",
+        "overview": "Burgers, creative bar eats & brunch with beer & cocktails, in a laid-back space with live music."
+      },
+      "url": "https://maps.google.com/?cid=2313991101737752168",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdXy14xpl0pe1DJkvQH81JbaSG0V1uicBEHoAr8ibFVqUaGfgE9n-ujlzXlfK4C9GZI9OZmg6K1bT_HOmhi19wy_8S8tOLjRjeEt1Rr4LzhOZ_8gGX8T-F2tRKCSsQNVfWX1i4gV4yoosjeoquFcsJAdKq20MOkuMhHdgFsrrDNM3SbUs3s7qetF_6KM5CvXNCCwPicqyMgv1qzDBwVycN2eoYa51bS6A1dIqOgHxf6OPcYgeHZfflxQSCAVHZiEPk-yAkthq9H6TWfyi6wYs3JYebiKT6XG3D3dwORFQkoGA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcTJ6jMFloI_E6_X8hcGfYcJbtgSWxjUxpeInGmpqv968R_dwDjCxLKPo_-YooAErs4CGGD55DS9wknH9SFO3AfGtq2CqdKh7BlgHQ3EPzb5004-_fetgkVbKWbB7GDwKVkQ88BxAtzpyREq29L5SQECE3hOBrVfdW_1Q3Wr1M41tjxSDRbJ3mdtS6S4-FjW142p7MCOF9V2bjDxlvLq8Kb_xjCqP1Bl2vX5BgT-TlvxrOtLLTF6nFQemnKlyyNctLqsMokdcSXf_V_g3cvb2AL-HEdm7qLQahSNwR6f53Q3A&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfLNJmTDVKKBRWPk3V6jw0wt8QtGd4ohlQznx5iqn7-PX7CUEAYhZt13GKA0StrrqHkokj07rTcb7eVWQL6hdz8awep8_WU6sxKB-XdTng-0YvDIgazK2UCiXQl913qMZ1ogjKAbgUlkCfLfMzIcCawHGNoxc4dx2sBNGRShGAQJDcTez87IDevPKJejBU9tHRjkbTOOZEkhQIISLhjL6jbgYbdnwecIMkybipmzgIpGBeeGl315lbKfTADyhnEglsVJruMGrwzOpaSyz6mS0iqq7yryYjRiKUKgwCCmO-3XJpGpbbhLPE4hZdcz4sNM7My-Csqg_OJdP-bDgFAkQjwZs_1DJEUdevgABQXfPPt7RAXIQTK7jGtN1BrKhSe9-jK7ERlP3J108F_euBbBTMg43xHiMwtaw-Fanhj5eT7OcsJhkM2U4DeyMGZINKX&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdO15uvojHcb0F_uxpz9IGh9N3ZQ2lFUDL-aWlKl8uZimByKl2FBMIAMwBbJqAMSRGhfth8otDzRmnbxnR5IP73U8aj_UNnhhvayr0rTVDfOs-SntGDDg_2mCSE2Nbj4DgZBaKgEaDqEnlClwdrQnb8Xx0Lq14UrowvFk5Ts-aknQzBrVOlDlgnPHKigIku6CPgoS7blg2eiHizhaD7uXafi3FAPbbX1NS_CgjXaTZR4fqBNKhi3ZjF9M8sD65mGlEgUzOv_9mAhYs91rOpJGEpWfDqVhXa79pirJpBMjxw97H2NKj_o-dnPE1Z4e1VFFAUhEuBMMMAeVSw73KblbmNpufbpQW8ao0KGPFZbe8mHgPpLlYrHKRv6RxGP-ghV0Badg03YdFPpk0yWy4JycvGX9CCalcoUslGeAEK9sUJLm57Zr-IfLZhNYrSUsaa&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcUUspsbfk2l0vlLfzUVs31Gph6o6pHzvgxYlX3_9p_1bFjnyxU6mZVKxr7pFgXx9CuZNHs6S05VO6adi-WzBL_D18TFBivx6EIE-5SUl0AcXxiQxayx2lAhDgXiflZfLx_aVBmYcr1NnCwD_zeCxxwjaqYo4fb33gAZMC2_jWnMar779I6mxOVMkaopXjWaGbGZK--5TIimH4bs4ZusMJL_5pTCg7XGiXk3vyMppYeIYsH_xNGp1oUgA4IjwpCRII248sE9l-m83Kf7XDWbGLG9REFkJlelSNwEw_XRrsLyxXpO2dBqRFEYEs1NpwZU8ZPtnKehQ_RsVPu5IFPpzhQunxkWJ86Y1cgpSmcLD9lyByLICllIBhrHq-yhq-cbhBBdb2VekQvrPxjBb2UR1L6zlirvKfQakupa-tLc0L8lQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcIF5f0Y6S8hwxulg05rySDleE6jhPGtU9Oa0gH6dDqKHxx-xfLXeYIZWfoTuEa6goVAA8Rc3WvcE8BbHm7g90X6eZJYmuZTzvVQLP4FS5w315-tRMcGQa8CLM1FLdXnaBNKMSW5N-T8vEGnqfhumdHCafaV36BmUzDGnJmmPIGPr1DyYNv-J7aFrMI8-y101GZUZEfQBDCcw2T9HlWuj1Q8FQrPQUYpe-GoWN353-F2yf6GbaupQKFGXPJZfsVV7ZEi1MfoTHvUKx_7dgihPncG05FWL2T6NNxipkjLItU27yRenn0wl7p2H2Cq4GjO7XVzB9Ez2hPvnQQ9Cl6E_dpC59t9SXFlD4UGBPl42glTjCBcgFzokhIIvHkFy5dIYgl6vPTkcPCnOAFCvayKRZGYFrmmD-oGahEJPUf87L-iOORY6GWoGvlI7MrVcJA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpf_1gsNjcVaJ7lRCxuM0WgqawLcM-XfuV_A3cuLju9WlyNdDXcMjZ5Ss2U0P7craQYWNH-_56W9Rk5JIYp8oDv9Vkg0NCdaBuxuOBym7IiEYJeWjObHCh40f-xyQpzF3zq1Fj7ecjrNa2PqlRKpLmEacdVKTU_GwcRfQTNKB-BrbHVDYPVF2xEckM-3QpzTYQvByJc8D_AjX35RCPIKYYICqWVAiVAmnsWyIvqL075kTgzNAm0OtWlVpN4LjfnFo5_m5mzvV6gWQp0VUZ4v7G69c6arV2zhrOjRgNv6xVk5-MFN_XUlccBEWmCraykv6T4sCUnNiioUMPtp9pEza_9uBNXjoXhLXFus1KmzNDOS4lJtpefzH4j3cjh9NXCO1Rj6iFf4g3v7qTZbvuJIJ9ewd4FIIy6iRd5kukK35O-N19yZ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdj45hKF5Dmdl3ie_vqnkrh20njIkCIjBdLot-tgZbgex2tTMjXrfe58Vo0xQ2-JHlYuHeU0D8vhuyyHLNWKpKu7j3yVGWv1L4ijBAVYHN5bHvHBCJ1D22FAhRysLK-jBSJCQn7d6B1AzB6IugJIdT5evdtYII9mcDX9L21O7ChVvy94qBJpmMu3ZQr4GHparCXE4FEb8Lfd8xftOTXtXutV3ZogSLa4YfYb7ek62Ku19jsXraBQHHL6-q0N0YzNbfB0fdoZcQVGCM0rxXNdX0kHnVDGK3qDOqlVhUJLFKvLc22jxAJD4n-W-lbHeEqhfU4927SBGyKGuHwr2lMjg5K5T3JGi5KuYN7_gPvrYML3BP0SY6Og-jlPCEMDcl95lDk2JXsooXFxTKUKBRKjp3d3chDA-iWhnXLrNhBjPtTVWo&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpd_iCDswbj3WMGKwcqiCIKmnHTd7YAt_N9o7Y0MDW7Wd7Nzlusw91Q7rVC814805T91V2RzSjX6_XbXAElmzGts1bGygY-eQakW7V7dR2fZd7R8E2ootyByqvjzCUSwikW90-3kS_7z_P7xYK1Rs5XurIsjSkERwVwY5o7j555750WuP_hAraFT8UznqNMk0v22Dk0i8NEBFUjsxmb4naFWZjYGREpOs-HZAcvmj8g_xDEwIRIVeGMt3vBpwPjyUiLjCyyWbvC3hm7QK2R3oozAorf1umYTF1KV1XDaz5vvegB1LlU8Mx0CaT45PNS_ode1oqBsrmd9KbWMsRx_cGOdP_bw6BJETv-ntQTSb2AF5i-2wbl6bUTfI5lMH21r-sqMPOzenqaQqO9eSRnmq6kuBN0MySLrQFTnJ1foj30UrwHc8ZugxwTRGYgCNCXo&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdhQu8IlvPKGxCK7JB9e_El_UjMED1ulbUmm_C42GPUy-ngFHmHmgTlEmlGy9gl950tDM0C7kdVlJyPYYAAYphm5Ul4rMQyKYClC3IRrVEM5iCSOvVgXRJIltYjgO2CMCAiU9rDzB1YYBiTCE3Iyr89XSFvbIgkfZZ430DjmsW9cNFdMnElGqp1vbhZ6HFgDlTKxdqYYH58IzDlPIULhaJREsAN481mWctSaiIOhGN-nbVxgKdB21N1bjREInZNATS_Lxk8BnqcD7WShFMHtTJ0w0-Skq4GTg06r49FQIpggA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 64,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": true,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 88,
+      "totalReviews": 1086,
+      "averageRating": 4.4,
+      "sentimentBreakdown": {
+        "positive": 87,
+        "neutral": 5,
+        "negative": 8
+      },
+      "reviewSources": [
+        "Google Places API (Apify Enhanced)"
+      ],
+      "keyThemes": [
+        "Food Quality",
+        "Atmosphere",
+        "Wait Time",
+        "Service",
+        "Pricing",
+        "Cleanliness",
+        "Portion Size",
+        "Location"
+      ],
+      "recentReviews": [
+        {
+          "rating": 4,
+          "text": "Salad i had was delicious! It has chicken and Brussels sprouts in it. Can't remember name but I will be back",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 4,
+          "text": "Came in for breakfast today for my first time. The food was pretty good & didn’t take long to get. I liked the decor & they played good music at an appropriate level. Definitely would eat here again.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 4,
+          "text": "Updated for 2024:\nUnfortunately, the new chef has ruined the sandwich. It’s super tiny and consumed by a large bun and nothing like it was in the past. Used to visit 2x a week. Now I haven’t been back in over 6 months after 3 bad experiences.\n\nYou can definitely tell the owner has his attention on his new creation in Fenton the Railyard.\n\nPrior 2023 early:\nFood is always awesome! The chicken sandwich and the burgers you can't beat. I do wish they had Mac and cheese for the kids for brunch but they don't offer it on that menu.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Service was excellent! Food was so good. Chicken n waffles were so fresh, chicken cooked perfectly! Always had a great atmosphere.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 3,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "neutral"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Good salad",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 4,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Great Place!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        }
+      ],
+      "detailedReviews": [
+        {
+          "author": "Linda Ignash",
+          "rating": 4,
+          "text": "Salad i had was delicious! It has chicken and Brussels sprouts in it. Can't remember name but I will be back",
+          "date": "2025-09-15T18:11:59.164Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2w5VGFtZHRRa2hJYmxCRFNGVjVSRzlSVVdnd1YzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ0JZArk05j_79h0qpA0Moat5NJBLfcabe0XJBEPbU1Rvwwdg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108590703279889892900?hl=en",
+          "reviewerNumberOfReviews": 76,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kay Dom",
+          "rating": 4,
+          "text": "Came in for breakfast today for my first time. The food was pretty good & didn’t take long to get. I liked the decor & they played good music at an appropriate level. Definitely would eat here again.",
+          "date": "2025-09-07T21:20:53.493Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21wUGRFUXlZMVoyZEVScFRHVlplbWMwTm5KS1ZFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKpzq_nx-9ma5Lj3dbytToibY4-UGOUg-KsrOx2icDU-QHJlZo=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102347022983057826194?hl=en",
+          "reviewerNumberOfReviews": 208,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Brandon C",
+          "rating": 4,
+          "text": "Updated for 2024:\nUnfortunately, the new chef has ruined the sandwich. It’s super tiny and consumed by a large bun and nothing like it was in the past. Used to visit 2x a week. Now I haven’t been back in over 6 months after 3 bad experiences.\n\nYou can definitely tell the owner has his attention on his new creation in Fenton the Railyard.\n\nPrior 2023 early:\nFood is always awesome! The chicken sandwich and the burgers you can't beat. I do wish they had Mac and cheese for the kids for brunch but they don't offer it on that menu.",
+          "date": "2025-09-07T02:05:24.585Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNSc3ZHeERREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJV7XM-GRtxQ_0mTHl0zkgUcHG2GxQkF9-MPMM_XLQCgu1a_A=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105618766092159497116?hl=en",
+          "reviewerNumberOfReviews": 105,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jack Burniac Jr",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-06T13:22:49.008Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT214MFJUZDBUVFZVVUdvdE5qazBNRkV0YUVOWlMzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUnzma86IL8huvLhMjfxtOmXvRMWa-U1oOUGdpseG4aEhGWvhkt=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107432677372222600766?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "positive"
+        },
+        {
+          "author": "M Hudson",
+          "rating": 5,
+          "text": "Service was excellent! Food was so good. Chicken n waffles were so fresh, chicken cooked perfectly! Always had a great atmosphere.",
+          "date": "2025-08-28T18:22:20.522Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tWd2JFeG5OeTB0ZFVaa1FreEhPVWgyTm5OelZIYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWnjBCHKh_Q4U2yEyTvjpaJyytZ0aaG8Ss452sygxq1J75TTNc=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117015332866368173129?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mike Burdgick",
+          "rating": 3,
+          "text": "",
+          "date": "2025-08-24T20:37:46.028Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pGV05VOVNOazlQZW1GM2RWTnVaMmhPUjFOUE9VRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWzdgQO5dhTJovrhq-UNTBIuG67HMBeo62oRSRi6aUHkMk6PlRj=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104347927513719805837?hl=en",
+          "reviewerNumberOfReviews": 227,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "maria debastiani",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-14T00:46:23.030Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xGNFZrZ3hVblp0Y3pGbFIyUTVTVWgyYkhRMk5VRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXgMbcUZCBwFaZjrAFHwTulAQ28NTnjwVYcf5J6pSH9kOuU_nas=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101242100135485879695?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Carrie Harnish",
+          "rating": 5,
+          "text": "Good salad",
+          "date": "2025-08-13T00:51:46.847Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tsWFlsVkxWbEV5VTJ4RE1sUkNWbWhDY1hFdGRFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWJr-lv6DPcigVm0Cmrpi08u--xKACb5X3cKGCvtCUsJwdYhmzrmg=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109942695046326356930?hl=en",
+          "reviewerNumberOfReviews": 215,
+          "sentiment": "positive"
+        },
+        {
+          "author": "E Passino",
+          "rating": 4,
+          "text": "",
+          "date": "2025-07-30T14:21:07.232Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURBeVlteS1BRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVT_TYB5wXb-a9ZBx4EzNIcMg04aaH3E6uGekSWRMZaPlshfJOQ=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103354024687705399212?hl=en",
+          "reviewerNumberOfReviews": 272,
+          "sentiment": "positive"
+        },
+        {
+          "author": "SHERRY PIETRYGA",
+          "rating": 5,
+          "text": "Great Place!",
+          "date": "2025-07-27T14:18:59.077Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pWU1JYcHBWMWMwVTJzMFJqUk1ObTVTTUdwSVYxRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW2xMNcA9WNRy9e3nebp7H90LEWjNQ30TtaLOBDA3WaIhYO3mY=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102167726591175645270?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Lorraine Koch",
+          "rating": 5,
+          "text": "The staff and food are great. Enjoyed the evening with family and friends.",
+          "date": "2025-07-26T11:10:25.532Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pOUmEwVktibHBCZVhaVlNFVlNaMHRZWWtKakxYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL8Nvb2ZBCOWeOmXyiJan8cIbreXnxaLkqbuwTa9FzVF6PuZQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105721528027757350927?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Susan S.",
+          "rating": 5,
+          "text": "Karaoke with Marlo the Entertainer is a blast. Great food and drinks!",
+          "date": "2025-07-26T04:24:07.508Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT201eVR6TXRNQzF2YlRaa01rNDNjRnBSVldZNVdHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVQiAQXS5EtTm8RLmtzBS4fq8Xg3AUwRdrhe1kh2xZayKHo9UXh=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107710837155888073769?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "rachel wedel",
+          "rating": 5,
+          "text": "Good food and always a good beer selection. Service is great. Love the music theme.",
+          "date": "2025-07-25T11:25:13.828Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pZNVQwOXZPR2hPVm1WQmEyWnVVa3Q1WWxOWVVYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUL4by7QHKpKMezDUPl0NwLOYh9Ae4caQwknjm8pgQqtJhSN-w=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103975478973337250261?hl=en",
+          "reviewerNumberOfReviews": 172,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jill Nussel",
+          "rating": 5,
+          "text": "Fun pub atmosphere where you can take the family. Best burgers in town.",
+          "date": "2025-07-21T10:03:21.386Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNnOV9ILW9BRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJTTaipsQH_QvyjfpjXgDRUWrba1jp2fgumOBOtrm8ZF_7ehw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116798978400848586129?hl=en",
+          "reviewerNumberOfReviews": 219,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jamie Jent",
+          "rating": 5,
+          "text": "Great place, food was awesome.",
+          "date": "2025-07-16T17:43:08.293Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pCYVJVcEZNalpwZFROc1dtaDNha2hmU2xKVmIzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWHYR0koTKBTImKT_xyTJMItL5tX3g6Pxd0J3i2T-KHcybPbPnE=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104033421429643584363?hl=en",
+          "reviewerNumberOfReviews": 117,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Brett Bisbee",
+          "rating": 2,
+          "text": "I had higher expectations unfortunately, the food was middle of the road. I ordered the fish tacos, they were rather small, very little fish, not very well seasoned and the profile didn’t blend well. French fries were also underwhelming. A great bar and grill should have fantastic in house Ranch. That also wasn’t very good. Menu prices are considerably high for offerings. Service was good, waitress was attentive. We tried it once, probably wouldn’t come back.",
+          "date": "2025-07-11T17:49:15.742Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25oWGFtZEVZVXhIVGpoMU9YUkhOMlJrUTBRMFgyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL_3_rT7yjh-i5cmKassPvk-UTnOoKVjWsbzgEEUqO1yCx1KQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110144145068559174907?hl=en",
+          "reviewerNumberOfReviews": 20,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Stefanie Williams",
+          "rating": 5,
+          "text": "Fun place!!  Great atmosphere!  They were hosting a trivia game when we were there.  Was lots of fun!",
+          "date": "2025-07-07T23:26:50.849Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT213NWNYTkJNbUZQZVRSNVRGQkdUVU5vVEhrd09XYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXOBwC6OX5kbAW7VbCRsrk84ZUl-2icAmBigaIIxPt_rs0sIdN6ZQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115035292868099242149?hl=en",
+          "reviewerNumberOfReviews": 21,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Lily",
+          "rating": 4,
+          "text": "",
+          "date": "2025-06-23T19:18:59.910Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNXOTlUUXNRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVhmcL1-t6EsZEVWYxXg2Rqc_sDfR_-2LOFY-xPS6GCaUwVIFQWnQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101414445393494208999?hl=en",
+          "reviewerNumberOfReviews": 280,
+          "sentiment": "positive"
+        },
+        {
+          "author": "The Paint Box",
+          "rating": 5,
+          "text": "Great Breakfast, great service!",
+          "date": "2025-06-08T17:05:30.003Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VLMy0zb1Q3LTRxbHdBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVsyWGoI9va2WfnuUUM3LiV3gTtSAJOcvT0nE0NiMA7m6LNeZXT0g=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115218025672355718095?hl=en",
+          "reviewerNumberOfReviews": 28,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ronald Markey",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-07T11:51:07.227Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VMTFgzS0tqM1ktQU9BEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIuBu8UaPm0wUFK-48kyNNfUvUKU2x55pXkkRvAc-vpJBSVqg=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110474841523614887604?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "positive"
+        },
+        {
+          "author": "sarah Rubenstein",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-04T03:32:39.943Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VMT2p0YnUzMS1TN0l3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWs6AFvUDbpIas5R1OfPZxFPscuZUsyIQ1gVT995EG9UbDF6AuJ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114967407830966581437?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Navy Corpsman",
+          "rating": 1,
+          "text": "Stopped in for dinner, never been before.  Several dirty tables when we entered and it was half full.  No sign to seat yourself or not.  After a couple minutes we were told to sit where we wanted.\n\nThe waitress was super nice and got our drinks then came back for our dinner orders.\n\nThe chicken breast came out it was dry as shoe leather and as tough, it was hot, and no flavor.  The chili fries were good.  Not a full breast just a half of any extremely small one sliced in half.\n\nThe hamburger sliders, 3 tiny ones and a little side of homemade chips were ok but not very flavorful.\n\nThe chilied shrimp with sesame seeds were actually pretty good.\n\nThe drinks were a water and an ice tea. Both came in tiny glasses and we never got refills.  The waitress was the only one doing tables the other couple peopled stayed behind the bar.\n\nThe complaint is the price for the amount of food for two appetizers and the only entree being a smaller amount than a typical kids meal came to $65.   A total joke.\n\nThis meal should have been $30 tops.\n\nCan not recommend this place, especially with so many other restaurants so close by.",
+          "date": "2025-06-04T01:31:55.471Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VMaURudWZPcmVDX3ZBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUPjn0FV9nI4OhxbRO1K_zuUpSLKjdsEzHUE-9Ezaxh7frK11H5=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111928070440340984936?hl=en",
+          "reviewerNumberOfReviews": 182,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Ashley Reyes",
+          "rating": 5,
+          "text": "Always a great meal and great service. The bartenders and servers are helpful and friendly.",
+          "date": "2025-05-29T02:21:05.007Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VOXzk0cEx4dTRLZjB3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU_YiNUrobhLBhS-J2MgH1iQVEao9pbG8Gt9XLVX-xRtYJNvvQZ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109301828230122602748?hl=en",
+          "reviewerNumberOfReviews": 20,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Susan Korman",
+          "rating": 4,
+          "text": "Only complaint about the atmosphere is the music is too loud for breakfast.",
+          "date": "2025-05-21T17:01:26.642Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VQT1gzYmVFenZ6bUN3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocISMbvNmWqwwsazz9tui7VrH6Kjh5AXEXQOoH-IXifzLlIvVg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111581180338329428160?hl=en",
+          "reviewerNumberOfReviews": 74,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Amie Renier",
+          "rating": 1,
+          "text": "It's closed? No note or anything",
+          "date": "2025-05-18T23:41:02.555Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VObng3dFBRbW91dThBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVDR8ufxaJ27b06UduPZxU_RaRjQV62Jr9v1i1lC15aGxW55CsW=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108565075182177305877?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Ashton Porter",
+          "rating": 5,
+          "text": "been trying to call for hour now lines are busy and i was on hold for 15 mins to place an order please avoid this place.",
+          "date": "2025-05-16T16:52:23.533Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUMxOXVfRUh3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXx_b-KGaLTTFfVL4a_hyUhluk3sH-2aaFvd_oqMb5UDaODBJ0T=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107493695566961222464?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Andrew Wills",
+          "rating": 5,
+          "text": "Great Service with awesome food!",
+          "date": "2025-05-16T13:20:48.604Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VLN1o1S3Z2X2NibG5nRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU0t6QYRwn7OPNR--lkKZNQfhXkf5MBtUdu3U9szyTYzRwLNCeW=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112809076900587266582?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Alan Matthews",
+          "rating": 4,
+          "text": "",
+          "date": "2025-05-08T13:59:50.388Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0w0OFRYLUxMY2d3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK7PB5quiWFqqfO83Xu-eDxklxX-BNDihfATNCtF-26lVggzTP9=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109383645132754497965?hl=en",
+          "reviewerNumberOfReviews": 269,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Julie",
+          "rating": 5,
+          "text": "Cute restaurant, food is always good, love the rosemary fries. We love going on Mondays for trivia night. Staff is always friendly❤️😊",
+          "date": "2025-05-03T23:44:33.212Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNZcHNqVGNBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVZNlMlTb7fEG7HAoR_I-65maquRNDrjdUcjwmgHy9DOht366Fjrg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115880906761687551670?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Bill G",
+          "rating": 5,
+          "text": "We always enjoy triva night with the folks of the Corner Bar and George as our MC on Monday nights.",
+          "date": "2025-04-29T03:11:06.042Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURvNi1XSU9nEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLcp6UTTzJxlpEvgDUNf-thO8Io2mpNN1Qg0Jr7XdTg9c1D2w=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113715676929292819880?hl=en",
+          "reviewerNumberOfReviews": 108,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Chris Lawrence",
+          "rating": 5,
+          "text": "",
+          "date": "2025-04-23T00:30:11.868Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURvX0tIVlR3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV5qpXtqUfSR3oVM6n6ZAdZqTiTViOfZYLtZCTfBhQg1C_xbBR4=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111384439658773608745?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Anthony Walterhouse",
+          "rating": 5,
+          "text": "",
+          "date": "2025-04-19T22:49:56.213Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNveTRpdVJREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKaczB7lAvn-GmA9UT2s2e33q39-PiiM0pFtEeF_Q19_PzEIA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101263339717773861930?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Samantha Smith",
+          "rating": 3,
+          "text": "Cool place, good drinks, live music. I got the falafel, and it was pretty overcooked. The fries were very good though.\n\nEdit: just came back again after a year.\nOrdered the same drink (pictured) and the waitress said they \"have never carried\" that drink. lol okayyy. Also just kind of rude the whole time. Bummer.",
+          "date": "2025-04-12T17:02:10.199Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNwejZTNEpnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX146iv3sbs9mjrFHOLW8ea_KQcfQqmqubWRxU0Gu94jKSeZxzp=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115976104475547083553?hl=en",
+          "reviewerNumberOfReviews": 48,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Richard Dudley",
+          "rating": 5,
+          "text": "",
+          "date": "2025-04-09T21:28:38.210Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURJenM3OHlnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ-djYaLOKZX20fG9zHhrEiiRvb6CEx-9LzCfGUL1futspFZg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116048413661614461346?hl=en",
+          "reviewerNumberOfReviews": 23,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Aaron",
+          "rating": 5,
+          "text": "Great place, great food and a unique menu, and good beer selection. Can get crowded at times but it is a popular spot.",
+          "date": "2025-04-07T11:35:19.325Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURJbE9uWExBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJabPyHNrT3Cx4YXYNQS5N7S8aFHFGwiDcWK7QGW_3_mDXMkw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108619017496834264178?hl=en",
+          "reviewerNumberOfReviews": 21,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Darin James",
+          "rating": 4,
+          "text": "",
+          "date": "2025-03-31T21:27:09.013Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNJc3BPS3hnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUncKcIAyCcftTbHEEtzHArg-CToTj4TCC6Fq6jgdP6iMJUETaR=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114574022605696005223?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Nick Grim (Nick)",
+          "rating": 5,
+          "text": "",
+          "date": "2025-03-31T11:52:24.663Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNLMDlYb2ZBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWkMelnFQftG7qVNdtKZapVbiE-qVF9Liw3W_UEm0HzsgUV4X2SnQ=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112168879444892070529?hl=en",
+          "reviewerNumberOfReviews": 179,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Myles Pierce",
+          "rating": 5,
+          "text": "",
+          "date": "2025-03-23T02:59:42.870Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUR3eUlLeUZREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWrlBK1lbnOnqBmzjyjmHFV_E_6-phM5K1hQBeKbEtgSKLC14M=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102702973538228238058?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Denise DeLair",
+          "rating": 5,
+          "text": "Best burgers",
+          "date": "2025-03-15T01:43:49.114Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURRNThPMkt3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ5CIIGbyxni5dm5vxIYIB_HSUgcsjErZsDz3OxO6NnBl2MzQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106297176008305616353?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "positive"
+        },
+        {
+          "author": "jerad forster",
+          "rating": 5,
+          "text": "",
+          "date": "2025-02-19T20:02:39.286Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNnamEzVnBnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVaWzEdES-xIEe8wc3oC5FZDJ4ePxwHIAI_r8yYSmXLySRJ1Y0=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116835137424783853346?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Torsten Maier",
+          "rating": 5,
+          "text": "",
+          "date": "2025-02-15T00:09:14.319Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNnN09PbTRBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWpyNI0c4XeFNcybx7lHba8YhdoY_eIro8TH4_knNsY5XAbbgR1xw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106106825103432361943?hl=en",
+          "reviewerNumberOfReviews": 54,
+          "sentiment": "positive"
+        },
+        {
+          "author": "BullOnWallSt",
+          "rating": 3,
+          "text": "We live right down the road and had never been before and decided to try it since one of our long time favorite bands from Detroit was playing which was Sponge. The atmosphere was pretty good considering some seating you can't see the stage, but not everyone was there for the music. We ordered the quesadilla for $14 and the Gyro for $16. It's a bit pricing since I just came back from a tourist town in Nevada and paid $3.50 for a comparable one to this which I also have posted and pictures of on my reviews here. Worth getting either way. The Gyro I wouldn't recommend. 3 medium to small sticks of meat and lettuce on it was already turning me off from it until I ate the meat and noticed it was not great and decided to just get a burger which turned out to be great. Breakfast burger had a over easy egg with 2 thick cut bacon stripes. I liked it but cannot in right mind pay $18 for it again. Most expensive burger I've had and ai think I reviewed is Prism at hollywood casino for $25, but if you have comps it is half off so $12.50 and is worth the drive alone for it. I would say if you are seeing a concert for free and no cover charge it's worth going since you will spend easy $40 and a bit more if you have drinks or app etc. I hope this helps some",
+          "date": "2025-02-11T00:15:20.116Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURBamE3Q29RRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWr611PJcQ2LV1Dc1Ox32Jfq_kQMIOwS5lIaY2PHZIqIYpBhUIV=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115252738727956110818?hl=en",
+          "reviewerNumberOfReviews": 199,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sabrina Stanton",
+          "rating": 1,
+          "text": "For 3 people to have one drink and one brunch menu item each as well as 1 appetizer, the price was just over $100. The location shares a parking lot that was difficult to park in during busy hours. Upon walking in, we had a wait while tables were cleaned. It had the sticky spilled alcohol smell throughout the restaurant that bothered me while I ate. The menu is made.of paper.and not laminated so you can see lovely food stains of the previous guests. The server was very nice but very slow and inattentive. It was not her fault as they were very busy and seemingly not appropriately staffed for the time of day. I would have ordered a second drink but waited so long for her to come back that we just got the bill. The glass my beverage had come in didn't seem completely clean. The amazing photos of food attracted us to try this spot. The food itself was overwhelmingly average. Any coney island is comparable in taste but probably cheaper and faster. The rosemary fries were good but not worth the trip alone.",
+          "date": "2025-02-08T13:34:16.521Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURBaG8yTnZBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ-nR2VbMy8MSZyAMCl5NsXbj-YnvASvNYHR-RVTuGUANJW1g=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112722305114922289255?hl=en",
+          "reviewerNumberOfReviews": 48,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Kevin Ives",
+          "rating": 5,
+          "text": "",
+          "date": "2025-02-06T16:25:05.518Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNHbFpQSkhBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWUDdTFA95PhdDS0iezLcau8gXv2f8gxKXYATZ4gn8ICwWBQMwhIQ=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109807413456206729540?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dan Kerwin",
+          "rating": 5,
+          "text": "",
+          "date": "2025-02-04T03:19:10.738Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNnb2NldUN3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXeqxsXfEHoo0oYSNXYC9ilf2NIunN2u3bKMrjZyR2bQ6zOvWF9kQ=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112069476692966405955?hl=en",
+          "reviewerNumberOfReviews": 49,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Cindy Lawrence",
+          "rating": 5,
+          "text": "",
+          "date": "2025-02-04T00:02:05.747Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNBazRPN01nEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLmB1yZFDS3vQBo4W9LbcAVumdJrtw0AMwiuK13tWyrlveAzw=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114591281221282306387?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "J. Richards",
+          "rating": 5,
+          "text": "",
+          "date": "2025-01-11T18:17:57.935Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNnZ3UzeE9REAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIQkHrJDqYZV7dVzqSTNa1hFu-NeEak5EzTIKI9xJGU199kjLEx=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108443512972084414019?hl=en",
+          "reviewerNumberOfReviews": 110,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jack -hawley",
+          "rating": 5,
+          "text": "Drove here in a snow storm to get the chicken and waffles and brick potatos amazing.  Tried the dirty pop jolly J and loop T also amazing.  45 min drive was worth it",
+          "date": "2025-01-11T02:30:37.867Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUM3cDl1ellREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU7BCmJea_NPVN9p87ba5sfAVGwI2K2VwJ_6oVdLvOpevXCi4M=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118076096145292675909?hl=en",
+          "reviewerNumberOfReviews": 132,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Billie Williams",
+          "rating": 5,
+          "text": "Great place to hang out and have a great burger.",
+          "date": "2024-12-31T06:26:14.318Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNmbGYzSVJREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK_yZasksEj5r6x0bd9lNjEidflwEJwZTujA6zTSN1jActMug=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103048735366532397727?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tiffaney T",
+          "rating": 4,
+          "text": "First time there, and we definitely will be back. The avocado toast was out of this world, so good!! Our waitress was super sweet.",
+          "date": "2024-12-10T03:45:47.677Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN2NnA3SjhBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUwRpEz1h9zzU0Tc38l3KiLgb5CZYT10FbrhKzIRzM5qXqDgKe5CA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108268977052068379511?hl=en",
+          "reviewerNumberOfReviews": 47,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Charles Wood",
+          "rating": 5,
+          "text": "",
+          "date": "2024-12-08T06:29:58.007Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUN2cFBHUEdREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLTZfLWvDhMkugrAyhKPFPogEjd6_Z9mPpXB4aNKf57kx9ucg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114938752514028426448?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jayme Peters",
+          "rating": 5,
+          "text": "",
+          "date": "2024-12-08T03:27:44.793Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUN2eE1pSUpnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXd9-8DdopL1GwQDmfBEgtYWnjHoVUf36dK2aWQj4i647qZGLQJcQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117004645246735885686?hl=en",
+          "reviewerNumberOfReviews": 30,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Chris Lane",
+          "rating": 5,
+          "text": "Great food, was able to get in, and out in under 45 minutes for a late lunch.  Definitely will be back again next time I'm in the area.",
+          "date": "2024-11-20T00:20:27.997Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQzOV9pbUpnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKXB5p-QKq0DCB-lf7V7BjDyCSmncWKSLVcgFFYikQSh-7w6g=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101839207912949547413?hl=en",
+          "reviewerNumberOfReviews": 51,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Reggie Wessel",
+          "rating": 5,
+          "text": "Went here for my mom’s 75th birthday.  I was shocked at how amazing this food was.  Every single one of us eight loved our meal.  From the best salmon I’ve ever had to the ribeye nachos, to the burgers and chicken.  Awesome service too.",
+          "date": "2024-11-19T01:47:57.267Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQzcV8zWlB3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ10cz86u98jGBPe8YQJDWp1pAB5gqAEgwQ2z3oeRtr_nNkSQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106563931499891104017?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "CJ",
+          "rating": 5,
+          "text": "Pet friendly patio and great food",
+          "date": "2024-11-17T13:43:32.807Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNleGFEbVFBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJXrJX_xQIL-7L-UrIt5Bi7gyKrrvW78JZNMqLcshbLOPJl4VI=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100268871385820057884?hl=en",
+          "reviewerNumberOfReviews": 106,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sue Rotay",
+          "rating": 5,
+          "text": "Best crab cakes reasonably priced",
+          "date": "2024-11-11T21:57:57.371Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNLNTR2WU1nEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXH_LpnK2d4L9qqaiLl-iSS7d7gFmme7NNlFjQ3D3l-5ycX-rMo=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108748523915441632050?hl=en",
+          "reviewerNumberOfReviews": 56,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jonathan Livingston",
+          "rating": 4,
+          "text": "Food is really good but kinda pricey for what it is (bar food). Service was decent and make sure to go when they have live music playing :)",
+          "date": "2024-11-09T19:08:01.842Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUMzaF9MUE53EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVWA3gsooNZs0bH3IkVP_2fwOULRh_hAUdD0IVr9Hs2gogkcO4q=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103271537618933878322?hl=en",
+          "reviewerNumberOfReviews": 30,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Matt Riffe",
+          "rating": 5,
+          "text": "Went to see live band BWG. Music was great and drinks were good. Filled up fast but had a great time. Didn't order food but what I saw looked delicious.",
+          "date": "2024-11-08T12:16:19.137Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUMzX2RDQ3lBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXMUPkX6Rvd6f-3DMXOm44VnIYF6PYounVgcmvMi009gVwUOaKw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113397686739461788364?hl=en",
+          "reviewerNumberOfReviews": 23,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kelly Ball",
+          "rating": 5,
+          "text": "Best burger I've ever had. I highly recommend the G- Thang!",
+          "date": "2024-11-07T16:55:23.638Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUMzbGFfVkl3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIUW2PkwhbD1b5ONLc5VkdUxaZaE17d13-x5HCdEcPWUoayPg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106240781959326575061?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Joe Colon",
+          "rating": 4,
+          "text": "First time here. Ended up eating at the bar due to the crowd. The service was pretty good except for the bartender screwing up my order, making me wait an extra 15 min for my burger. My wife was almost done with her burger before mine arrived. It would have made it worthwhile if the food had been as good as they touted it. The Brussel sprouts were mildly seasoned, but cooked well. Though cooked to perfection, my breakfast burger was quite bland (doesn't the chef believe in seasoning), and it tasted like bread and meat even though it had cheese, an egg, and some sauce.\nWe drove 45 minutes for the 4+ ratung, but I was quite unimpressed. We won't bother again unless we are already in the neighborhood.",
+          "date": "2024-11-04T12:21:08.353Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUMzOHE2NjlnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUn00Y4_DiKaSy5rLicmaO-lDAUFLHUilxJwu5FqyxZBpUN939QiQ=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116947167457466543602?hl=en",
+          "reviewerNumberOfReviews": 965,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Valerie Endicott",
+          "rating": 5,
+          "text": "We see you Corner Bar. It's been a minute and when the new menu was handed to us we knew we were in for a treat! We see and taste some of the changes and are thrilled! So enjoyed the late afternoon menu choice and loved the Fried Brussel Sprouts and Ribeye Nachos. Oh that Jalapeño Lime Cream! Corner Bar is a favorite spot for us; great service, delicious food and cool vibe. Nicely done!",
+          "date": "2024-10-20T23:03:19.473Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNYMi1mUmdRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUPZ8kN3TUeGqejG5OpzG70oBGKsRW8tJldwwdhdTLdaD8n3r0=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113610075490457677501?hl=en",
+          "reviewerNumberOfReviews": 60,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kadinja (JJ)",
+          "rating": 5,
+          "text": "Great karaoke on friday nights",
+          "date": "2024-10-17T18:48:24.472Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNYc2FIVjVBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXG2nmI4KYaOD-Pr9GJ1MIvChHJxYBD7nfBIIPX0piacMPhZxw3=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115882480677580989447?hl=en",
+          "reviewerNumberOfReviews": 102,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Valentina Smith",
+          "rating": 5,
+          "text": "",
+          "date": "2024-10-10T11:20:43.416Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURubTYtTEdnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX0UkFFbD1AGDMd1MAmZQx7Gz6QsLGpLG-we-T-QezjXDzD1ycdxQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100914649416442999066?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Diana Plewka",
+          "rating": 5,
+          "text": "Very friendly and very good service. I like that the meals are different.  Very tasty.",
+          "date": "2024-10-07T19:12:30.149Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURuaGJDMEVREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKBpUvTwc56BHVPFHDjdGM-h1bd5pw-nIZKYXwOjJGDPR-_Mw=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114447699560786308625?hl=en",
+          "reviewerNumberOfReviews": 22,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ronald Applegae",
+          "rating": 5,
+          "text": "",
+          "date": "2024-10-05T12:18:27.331Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURuNXBMamx3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVu9JJz3E3G5zDuZsKcZcdOrvBjoIlX6YkVg0BsMqMEwHFyHx6c=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102752871975079322214?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jared Young",
+          "rating": 5,
+          "text": "",
+          "date": "2024-10-04T12:26:45.594Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURud3JXRndBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXOOteVuME1lKsfRapGjRG7-yfEqP0Jy_iGHadxv-tr4x3HIfyl=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108146344551800037924?hl=en",
+          "reviewerNumberOfReviews": 14,
+          "sentiment": "positive"
+        },
+        {
+          "author": "James Mueller",
+          "rating": 5,
+          "text": "",
+          "date": "2024-09-28T22:16:29.433Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNuM2ZIQVlBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK0EfKWKUWFxmT6SucGegauNSCB7oMgV6oD6jRt4ZzfVH_9YA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100211712850155160243?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jeff Tirrell",
+          "rating": 5,
+          "text": "Cool lottle bar.  Amazing breakfast without being overly pretentious. Good drinks, and good service.   Will definitely be back.",
+          "date": "2024-09-26T23:45:17.872Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNua1lUczh3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX76c0IbKLq4Plk476Opp_KGaAlxcPGyvtBHUTf0O5HUDSFv2qx=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101300206274377981076?hl=en",
+          "reviewerNumberOfReviews": 37,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ann Severns",
+          "rating": 5,
+          "text": "Celeste was an excellent server!",
+          "date": "2024-09-16T22:57:27.313Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURINGFuQXVRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKgI45kbPSHn1Xu-835fH3tYZFtzkIO5iW_1k067fizsGQjSw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102544068574201026349?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jan E",
+          "rating": 5,
+          "text": "We had a such a good time and the food was great. I also had one one (or two 😉) of the best Bloody Mary's I've ever had.\nI had a  salmon eggs Benedict dish with asparagus. It was so good.",
+          "date": "2024-09-13T02:38:11.277Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURIMU5ydDNBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIZu-sJdxvT1YvOqYipbQr3DUiJBdfYnApow_sTqll9iruEgqik=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115804376376727688813?hl=en",
+          "reviewerNumberOfReviews": 51,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Paula Glenn",
+          "rating": 1,
+          "text": "Stop to have a drink and play a game of Keno and a snack. One other couple were at the bar. We got our drinks filled out our Keno slip and had it sitting there. Our beers had been gone and she continued to ignore us two seats away.\nBy the time the bartender finally walked up to us to e said give us our bill and we left. Never again will we come here.",
+          "date": "2024-09-10T14:53:49.486Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNIbjRMd0p3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocICr0h0oBhFqkLGX3ls2BXYFFHX2cYYsevQApAs9oqc05uArw=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112859921271106441160?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "negative"
+        },
+        {
+          "author": "william karpovich",
+          "rating": 5,
+          "text": "Fantastic food best in fenton",
+          "date": "2024-08-27T19:40:30.462Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQ3ZzR2eGNnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIcFg0ws5rNvAvWiRYk4xtP_9SMyZ1qWacnB4RHzOu1D5KEXA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109790464591010407437?hl=en",
+          "reviewerNumberOfReviews": 45,
+          "sentiment": "positive"
+        },
+        {
+          "author": "austin loutzenhiser",
+          "rating": 4,
+          "text": "",
+          "date": "2024-08-25T01:19:31.512Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQ3d1lLY3JBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLWFvaVlWPTuL6lIgPmsYe_84xZHnVvBSLdJDCma174ZYgHcA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112086536384993599425?hl=en",
+          "reviewerNumberOfReviews": 22,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jason Veitengruber",
+          "rating": 5,
+          "text": "",
+          "date": "2024-08-24T17:00:51.974Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQ3bnB5YjFBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL93B5rC7BT1UuqmCI4kxhNqcceUFevdg8DSa-ipulTgNDA6Q=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114218197942597428735?hl=en",
+          "reviewerNumberOfReviews": 43,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Robin Sweet",
+          "rating": 4,
+          "text": "",
+          "date": "2024-08-21T14:15:01.861Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQ3cEwtSTBBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLk78dU_BcRefLSjXhL_El1fkVEU6sfglYWccPzfK5wccf29A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112293685259987265804?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Bob Dylan",
+          "rating": 2,
+          "text": "Cajun pasta is fricken awesome, now the service is terrible, bar tender handles carry out, she was late to work so the only waitress was handling take out, brining food to tables and greeting, way to much for one person, the live sing along dj was obnoxious and to loud, fix the short staffing and the food will help keep brining people in.",
+          "date": "2024-08-09T14:19:16.612Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURicV9YY25RRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLLfs2T8XZKe9QfoIQ_yZhoe_-ydegnGcg8rD6fR_7q4iSv_Q=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100769857175833880461?hl=en",
+          "reviewerNumberOfReviews": 35,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Guadalupe Gonzalez III",
+          "rating": 1,
+          "text": "",
+          "date": "2024-07-29T19:34:47.904Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNiczRmSHpnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVCiLYOyt3t4rC57Ml6VNJHzYQBhvo-PZ5dm7XoeBqNWpCz7rYQ4A=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114861678886006999281?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Jamie Cavenaugh",
+          "rating": 5,
+          "text": "Great food and service.",
+          "date": "2024-07-26T16:10:38.074Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNiNXJ5aWNnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXJazYgeQPe7nxIGkXCjHAwp4ovC2R_BO2DYjFVLo4jL1cBTbU=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117838304468412269687?hl=en",
+          "reviewerNumberOfReviews": 48,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jennifer Curtis",
+          "rating": 5,
+          "text": "You all ruined your Turkey Burger why?  How do you go from olives/feta/onion to berries/and brie.  It was the only thing I ordered and now I'll likely go to the Tavern which is so sad.",
+          "date": "2024-07-23T19:36:05.623Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNiMUtHaUhBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV8rnC_f1Jh56_6eM5SmNiccuaoPQalkz6mS27AGz6FIfkHIxo=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115841166000804565409?hl=en",
+          "reviewerNumberOfReviews": 264,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Brian Shustock",
+          "rating": 5,
+          "text": "",
+          "date": "2024-07-16T18:31:43.296Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURycXJteDVnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI_i4RHBzRaIxfeKFAaMZEiL4p77Bm8BIGyCF9JPg1ms5C_2A=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107281181755199250920?hl=en",
+          "reviewerNumberOfReviews": 36,
+          "sentiment": "positive"
+        },
+        {
+          "author": "RandS WestSelas",
+          "rating": 5,
+          "text": "I have NEVER regretted going here. The brunch, lunch,  dinner and drinks are very exceptional!:) Pcture below this their AMAZING Steak Benedict 😋  Thanks Corner Bar and Grill!",
+          "date": "2024-07-15T19:12:12.714Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUMteU5yUUlREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVxAwdyAOFxqJII7Pbczj9vxp0bYp7lJKjFyMzXPokQL4z3KSXh=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110653393898263428663?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Chris Papa",
+          "rating": 3,
+          "text": "",
+          "date": "2024-07-15T17:01:07.405Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURyckxENlpnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocId6VYHyxxUr-Md95r81LpoJ4B79jb8qMyuFMqc7QyOqFu01Q=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109750147691759982230?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Andy Higham",
+          "rating": 4,
+          "text": "",
+          "date": "2024-07-12T13:27:22.024Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNydjV5c3lBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIfQ5CodU_4aUOkkHbDc5Po_d6RncfLRpO4LwJTKjJSZK2hbg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110534589942178647657?hl=en",
+          "reviewerNumberOfReviews": 33,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dave Echols",
+          "rating": 5,
+          "text": "I've been quite a few times and the food and service have always been great. The live music on Friday night is typically fun. I felt compelled to leave a review today because we got amazing service and I had the Nashville Chicken Sandwich that was really amazing. This sandwich is my new go to. Our server today was also just terrific!",
+          "date": "2024-07-09T18:48:40.604Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNyMVllZGtRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXZ7WeciP-8vJAQWVRytwZwKrAHuezaFNLPdcqt33nXB7NXMN0=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106186844255298883266?hl=en",
+          "reviewerNumberOfReviews": 24,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jen Roberts",
+          "rating": 2,
+          "text": "",
+          "date": "2024-07-08T14:37:55.026Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUN3eWJiUVdBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ1AzQz-rqwwXcb0-BbTv0HCnZGelchSA_ngQ2gkwOtLeEAeg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111794210100324406942?hl=en",
+          "reviewerNumberOfReviews": 27,
+          "sentiment": "negative"
+        },
+        {
+          "author": "chris cornell",
+          "rating": 5,
+          "text": "Great spot\nFood is outstanding",
+          "date": "2024-07-05T23:22:22.501Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNycXJEMXhnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUcrc5bMuhZz1eKORhWBmp0YTBBWpkbRkSOdFSzatb7Z6TnNIJj=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104727596013508646679?hl=en",
+          "reviewerNumberOfReviews": 43,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Theresa Hajec",
+          "rating": 4,
+          "text": "",
+          "date": "2024-06-29T03:45:56.641Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURMeGNEbDhBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLGtlk4RNAf1dTeQ0FGL_3RWvVL9ZKsh8giOPi5pip0iZiq0g=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112353404169332934155?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Christine Hubert-Stonepainter",
+          "rating": 5,
+          "text": "",
+          "date": "2024-06-27T18:29:10.220Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURManRQb0R3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXGmHWZqpVStKS9Q6kR8AGLrHVwQvTFlvnR2u79sIIPyS4alio=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117663780315277194472?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mike Strzelecki",
+          "rating": 5,
+          "text": "Great Girls serving. Cooks are spot on",
+          "date": "2024-06-25T18:31:04.264Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNHOV96Ujh3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI9Yi56D8CMoPzDbhdT16BELSmqKAqT1LSkCP-yFRUjNHDsRg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116414733909781527879?hl=en",
+          "reviewerNumberOfReviews": 24,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kerrie Mustola",
+          "rating": 3,
+          "text": "The veggie omelet was overcooked and crunchy.  The breakfast potatoes were very good.  Someone in our party thought the french toast was soggy inside.",
+          "date": "2024-06-22T15:47:32.542Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNMZzctS0VBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLGrzzAd8bOAEReNmUYN3QwONcs-r9CHtm7ssi1YlZi8kwv8Q=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102509285007162494361?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Chellice Carter",
+          "rating": 4,
+          "text": "",
+          "date": "2024-06-10T20:59:58.827Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR6MGFLM1ZREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVSYikPYtct8VaEbJECvpu5vJ5Q6ZqB7s7iDZT-wZy4Hfmunr2W0w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105354143834821221106?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jennifer Hecht",
+          "rating": 4,
+          "text": "",
+          "date": "2024-06-01T17:36:11.282Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUN6cHBUQ013EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJqa1Ses2A101yoQ6xOgXej_v0OA9YzN5uOYhmG54Su7FXA2g=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111216568751148044034?hl=en",
+          "reviewerNumberOfReviews": 14,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Daryl Strzelecki",
+          "rating": 5,
+          "text": "",
+          "date": "2024-06-01T13:54:44.849Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUN6dXB1X0x3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKeTwzEosGXv9b9A5oTqXrimVePjixLkn4CNqrSyz9rpnV3gg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103476576854659437393?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "William Karpovich",
+          "rating": 5,
+          "text": "",
+          "date": "2024-05-31T23:41:10.609Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN6a3F1amdnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI8km5AeCOjD-qHuf6sesUZ7btAxBZkL91ouJ2rNkqE9dic8A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115732449957720065127?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Susan Kazlauskas",
+          "rating": 4,
+          "text": "",
+          "date": "2024-05-31T23:11:14.385Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUN6a3BHdFlREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKvRWQ4robb3s3fj4zrt-FEN9PGS5p4inuyvvEIoZXFednjUQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113319397382703298367?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Anthony Puente Sr",
+          "rating": 5,
+          "text": "Great pub, great food and service. Appropriately priced.\nTry the turkey burger",
+          "date": "2024-05-27T19:28:45.243Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUM5N0thMS1BRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVId9XAYlYRPbExxpyAqJ8UjDqDRPTSAiWEHowBa6kwyM77G6DbzQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117999423239599856923?hl=en",
+          "reviewerNumberOfReviews": 200,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Abhay Vadhavkar",
+          "rating": 5,
+          "text": "",
+          "date": "2024-05-21T11:45:27.645Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURUNExlSjJnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV4alLyOQHqHMMpOhAYm4uCpqNaKAEGeHq_uq-U8oAlx31bohA1IA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102230050109976475577?hl=en",
+          "reviewerNumberOfReviews": 52,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mark Henderson",
+          "rating": 5,
+          "text": "Always great food",
+          "date": "2024-05-20T20:39:57.178Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNUMzRxMzNBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXX_VAsvly5H_fvxPWcXxSDhWJMO39WkQjpzW7NEnLBYFLgzF9-=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114894766461562499140?hl=en",
+          "reviewerNumberOfReviews": 227,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Camilo Northern",
+          "rating": 4,
+          "text": "I met up with some friends for lunch. We happened to come during brunch so the menu was limited. Food and service were both good.",
+          "date": "2024-05-18T21:33:05.664Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNUMDZYZmJREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIWSSDiZCt5ymEbIQLvqd9ML0FsqSwQWyFG8AzoWT2tpfaG9A=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107146574338676234434?hl=en",
+          "reviewerNumberOfReviews": 291,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ryan Griggs",
+          "rating": 5,
+          "text": "",
+          "date": "2024-05-11T13:30:55.449Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNUMUpYZXp3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU-RYZgs4hj1QWhSxplQF27Mxbeijvru5s-TelpeaapgDn68rc=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115030793829511708366?hl=en",
+          "reviewerNumberOfReviews": 14,
+          "sentiment": "positive"
+        }
+      ],
+      "customerMoodAnalysis": {
+        "overallMood": "satisfied",
+        "sentimentSummary": "Customers have positive experiences overall. Your 4.4/5 rating from 100 recent reviews shows solid satisfaction with room for growth.",
+        "sentimentDistribution": {
+          "ecstatic": 7,
+          "delighted": 61,
+          "satisfied": 23,
+          "neutral": 1,
+          "frustrated": 3,
+          "disappointed": 5,
+          "angry": 0
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "food quality",
+            "mentions": 15
+          },
+          {
+            "theme": "slow service",
+            "mentions": 11
+          },
+          {
+            "theme": "service excellence",
+            "mentions": 9
+          },
+          {
+            "theme": "speed of service",
+            "mentions": 9
+          },
+          {
+            "theme": "atmosphere",
+            "mentions": 5
+          },
+          {
+            "theme": "cleanliness",
+            "mentions": 2
+          },
+          {
+            "theme": "overpriced",
+            "mentions": 2
+          },
+          {
+            "theme": "value for money",
+            "mentions": 1
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 17,
+          "satisfaction": 66,
+          "disappointment": 0,
+          "frustration": 1,
+          "anger": 1
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "Customers love the fun pub atmosphere with engaging activities like karaoke and trivia games. - social media marketing can showcase this strength",
+            "The restaurant is praised for its excellent service, with staff described as helpful and friendly. - review management can highlight this positive aspect",
+            "The food, particularly the chicken dishes and burgers, consistently receives high praise for quality and taste. - SEO services can leverage this for better visibility"
+          ],
+          "improvementOpportunities": [
+            "Negative reviews/reputation issues regarding food quality and service inconsistency - review management can address this concern",
+            "High prices and perceived value concerns - social media marketing can improve this area",
+            "Long wait times and staffing issues - Boostly marketing services can improve this"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 100,
+          "averageRating": 4.4,
+          "ratingDistribution": {
+            "1": 5,
+            "2": 3,
+            "3": 5,
+            "4": 19,
+            "5": 68
+          },
+          "sentimentTrends": {
+            "trend": "stable",
+            "recentAverageRating": 4.4,
+            "previousAverageRating": 4.4,
+            "recentReviewsCount": 10
+          }
+        }
+      },
+      "examples": {
+        "positive": [
+          {
+            "author": "Linda Ignash",
+            "rating": 4,
+            "text": "Salad i had was delicious! It has chicken and Brussels sprouts in it. Can't remember name but I will be back",
+            "date": "2025-09-15T18:11:59.164Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2w5VGFtZHRRa2hJYmxCRFNGVjVSRzlSVVdnd1YzYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ0JZArk05j_79h0qpA0Moat5NJBLfcabe0XJBEPbU1Rvwwdg=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/108590703279889892900?hl=en",
+            "reviewerNumberOfReviews": 76
+          },
+          {
+            "author": "Kay Dom",
+            "rating": 4,
+            "text": "Came in for breakfast today for my first time. The food was pretty good & didn’t take long to get. I liked the decor & they played good music at an appropriate level. Definitely would eat here again.",
+            "date": "2025-09-07T21:20:53.493Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21wUGRFUXlZMVoyZEVScFRHVlplbWMwTm5KS1ZFRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKpzq_nx-9ma5Lj3dbytToibY4-UGOUg-KsrOx2icDU-QHJlZo=s1920-c-rp-mo-ba5-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/102347022983057826194?hl=en",
+            "reviewerNumberOfReviews": 208
+          },
+          {
+            "author": "Brandon C",
+            "rating": 4,
+            "text": "Updated for 2024:\nUnfortunately, the new chef has ruined the sandwich. It’s super tiny and consumed by a large bun and nothing like it was in the past. Used to visit 2x a week. Now I haven’t been back in over 6 months after 3 bad experiences.\n\nYou can definitely tell the owner has his attention on his new creation in Fenton the Railyard.\n\nPrior 2023 early:\nFood is always awesome! The chicken sandwich and the burgers you can't beat. I do wish they had Mac and cheese for the kids for brunch but they don't offer it on that menu.",
+            "date": "2025-09-07T02:05:24.585Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNSc3ZHeERREAE",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJV7XM-GRtxQ_0mTHl0zkgUcHG2GxQkF9-MPMM_XLQCgu1a_A=s1920-c-rp-mo-ba4-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/105618766092159497116?hl=en",
+            "reviewerNumberOfReviews": 105
+          }
+        ],
+        "neutral": [
+          {
+            "author": "Mike Burdgick",
+            "rating": 3,
+            "text": "",
+            "date": "2025-08-24T20:37:46.028Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pGV05VOVNOazlQZW1GM2RWTnVaMmhPUjFOUE9VRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWzdgQO5dhTJovrhq-UNTBIuG67HMBeo62oRSRi6aUHkMk6PlRj=s1920-c-rp-mo-ba4-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/104347927513719805837?hl=en",
+            "reviewerNumberOfReviews": 227
+          },
+          {
+            "author": "Samantha Smith",
+            "rating": 3,
+            "text": "Cool place, good drinks, live music. I got the falafel, and it was pretty overcooked. The fries were very good though.\n\nEdit: just came back again after a year.\nOrdered the same drink (pictured) and the waitress said they \"have never carried\" that drink. lol okayyy. Also just kind of rude the whole time. Bummer.",
+            "date": "2025-04-12T17:02:10.199Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNwejZTNEpnEAE",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX146iv3sbs9mjrFHOLW8ea_KQcfQqmqubWRxU0Gu94jKSeZxzp=s1920-c-rp-mo-ba4-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/115976104475547083553?hl=en",
+            "reviewerNumberOfReviews": 48
+          },
+          {
+            "author": "BullOnWallSt",
+            "rating": 3,
+            "text": "We live right down the road and had never been before and decided to try it since one of our long time favorite bands from Detroit was playing which was Sponge. The atmosphere was pretty good considering some seating you can't see the stage, but not everyone was there for the music. We ordered the quesadilla for $14 and the Gyro for $16. It's a bit pricing since I just came back from a tourist town in Nevada and paid $3.50 for a comparable one to this which I also have posted and pictures of on my reviews here. Worth getting either way. The Gyro I wouldn't recommend. 3 medium to small sticks of meat and lettuce on it was already turning me off from it until I ate the meat and noticed it was not great and decided to just get a burger which turned out to be great. Breakfast burger had a over easy egg with 2 thick cut bacon stripes. I liked it but cannot in right mind pay $18 for it again. Most expensive burger I've had and ai think I reviewed is Prism at hollywood casino for $25, but if you have comps it is half off so $12.50 and is worth the drive alone for it. I would say if you are seeing a concert for free and no cover charge it's worth going since you will spend easy $40 and a bit more if you have drinks or app etc. I hope this helps some",
+            "date": "2025-02-11T00:15:20.116Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURBamE3Q29RRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWr611PJcQ2LV1Dc1Ox32Jfq_kQMIOwS5lIaY2PHZIqIYpBhUIV=s1920-c-rp-mo-ba5-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/115252738727956110818?hl=en",
+            "reviewerNumberOfReviews": 199
+          }
+        ],
+        "negative": [
+          {
+            "author": "Brett Bisbee",
+            "rating": 2,
+            "text": "I had higher expectations unfortunately, the food was middle of the road. I ordered the fish tacos, they were rather small, very little fish, not very well seasoned and the profile didn’t blend well. French fries were also underwhelming. A great bar and grill should have fantastic in house Ranch. That also wasn’t very good. Menu prices are considerably high for offerings. Service was good, waitress was attentive. We tried it once, probably wouldn’t come back.",
+            "date": "2025-07-11T17:49:15.742Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25oWGFtZEVZVXhIVGpoMU9YUkhOMlJrUTBRMFgyYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL_3_rT7yjh-i5cmKassPvk-UTnOoKVjWsbzgEEUqO1yCx1KQ=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/110144145068559174907?hl=en",
+            "reviewerNumberOfReviews": 20
+          },
+          {
+            "author": "Navy Corpsman",
+            "rating": 1,
+            "text": "Stopped in for dinner, never been before.  Several dirty tables when we entered and it was half full.  No sign to seat yourself or not.  After a couple minutes we were told to sit where we wanted.\n\nThe waitress was super nice and got our drinks then came back for our dinner orders.\n\nThe chicken breast came out it was dry as shoe leather and as tough, it was hot, and no flavor.  The chili fries were good.  Not a full breast just a half of any extremely small one sliced in half.\n\nThe hamburger sliders, 3 tiny ones and a little side of homemade chips were ok but not very flavorful.\n\nThe chilied shrimp with sesame seeds were actually pretty good.\n\nThe drinks were a water and an ice tea. Both came in tiny glasses and we never got refills.  The waitress was the only one doing tables the other couple peopled stayed behind the bar.\n\nThe complaint is the price for the amount of food for two appetizers and the only entree being a smaller amount than a typical kids meal came to $65.   A total joke.\n\nThis meal should have been $30 tops.\n\nCan not recommend this place, especially with so many other restaurants so close by.",
+            "date": "2025-06-04T01:31:55.471Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VMaURudWZPcmVDX3ZBRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUPjn0FV9nI4OhxbRO1K_zuUpSLKjdsEzHUE-9Ezaxh7frK11H5=s1920-c-rp-mo-ba5-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/111928070440340984936?hl=en",
+            "reviewerNumberOfReviews": 182
+          },
+          {
+            "author": "Amie Renier",
+            "rating": 1,
+            "text": "It's closed? No note or anything",
+            "date": "2025-05-18T23:41:02.555Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VObng3dFBRbW91dThBRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVDR8ufxaJ27b06UduPZxU_RaRjQV62Jr9v1i1lC15aGxW55CsW=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/108565075182177305877?hl=en",
+            "reviewerNumberOfReviews": 10
+          }
+        ]
+      },
+      "trends": {
+        "ratingTrend": "stable",
+        "volumeTrend": "stable",
+        "responseRate": 0,
+        "averageResponseTime": "No responses"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ]
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/thecornerbargrill",
+      "instagram": "https://www.instagram.com/thecornerbargrill",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 66,
+      "social": 100,
+      "local": 70,
+      "reviews": 91,
+      "overall": 82
+    },
+    "originalScores": {
+      "seo": 79,
+      "overallScore": 74,
+      "performance": 84,
+      "userExperience": 74
+    },
+    "migratedAt": "2025-09-16T00:37:21.582Z"
+  },
+  "metadata": {
+    "cachedAt": "2025-09-15T19:55:14.409Z",
+    "expiresAt": "2025-10-15T19:55:14.409Z",
+    "placeId": "ChIJecUCFe1lI4gRaFZ-oKXyHCA",
+    "restaurantName": "The Corner Bar & Grill",
+    "cacheVersion": "2.0.0"
+  }
+}

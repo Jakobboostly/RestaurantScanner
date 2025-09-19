@@ -1,0 +1,2780 @@
+{
+  "data": {
+    "domain": "ginamarias.com",
+    "restaurantName": "Gina Maria's Pizza",
+    "placeId": "ChIJA-uOINQY9ocRTAWKcur8J-o",
+    "overallScore": 84,
+    "performance": 100,
+    "seo": 63,
+    "mobile": 60,
+    "userExperience": 93,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "pizza near me",
+        "position": 0,
+        "searchVolume": 2400,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery Eden Prairie",
+        "position": 4,
+        "searchVolume": 90,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://ginamarias.com/",
+        "title": "Gina Maria's Pizza – Custom Pizzas | Quality Service",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best pizza Eden Prairie",
+        "position": 0,
+        "searchVolume": 70,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza",
+        "position": 0,
+        "searchVolume": 1900,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza places near me",
+        "position": 0,
+        "searchVolume": 110,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza Eden Prairie Minnesota",
+        "position": 5,
+        "searchVolume": 390,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://ginamarias.com/",
+        "title": "Gina Maria's Pizza – Custom Pizzas | Quality Service",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery near me",
+        "position": 0,
+        "searchVolume": 480,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza open now",
+        "position": 0,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 88,
+        "keywords_appeared": 7,
+        "total_keywords": 8,
+        "average_position": 4.1,
+        "best_position": 2
+      },
+      "keyword_results": [
+        {
+          "keyword": "pizza near me",
+          "found": true,
+          "position": 4,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Gina Maria's Pizza",
+            "address": "Eden Prairie, MN ",
+            "website": "https://ginamarias.com/",
+            "phone": "(952) 937-1589",
+            "rating": 4.5,
+            "reviews": 564
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Pizza Lucé Eden Prairie",
+              "address": "Eden Prairie, MN ",
+              "website": "https://pizzaluce.com/locations/eden-prairie",
+              "rating": 4.5,
+              "reviews": 1900
+            },
+            {
+              "position": 2,
+              "name": "Detello's Pizza & Pasta",
+              "address": "Eden Prairie, MN ",
+              "website": "https://detellospizza.com/",
+              "rating": 4.7,
+              "reviews": 958
+            },
+            {
+              "position": 3,
+              "name": "Football Pizza",
+              "address": "Eden Prairie, MN ",
+              "website": "http://footballpizza.com/",
+              "rating": 4.9,
+              "reviews": 30
+            }
+          ]
+        },
+        {
+          "keyword": "pizza",
+          "found": true,
+          "position": 5,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Gina Maria's Pizza",
+            "address": "Eden Prairie, MN ",
+            "website": "https://ginamarias.com/",
+            "phone": "(952) 937-1589",
+            "rating": 4.5,
+            "reviews": 564
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Football Pizza",
+              "address": "Eden Prairie, MN ",
+              "website": "http://footballpizza.com/",
+              "rating": 4.9,
+              "reviews": 30
+            },
+            {
+              "position": 2,
+              "name": "Pizza Lucé Eden Prairie",
+              "address": "Eden Prairie, MN ",
+              "website": "https://pizzaluce.com/locations/eden-prairie",
+              "rating": 4.5,
+              "reviews": 1900
+            },
+            {
+              "position": 3,
+              "name": "Detello's Pizza & Pasta",
+              "address": "Eden Prairie, MN ",
+              "website": "https://detellospizza.com/",
+              "rating": 4.7,
+              "reviews": 958
+            }
+          ]
+        },
+        {
+          "keyword": "best pizza Eden Prairie",
+          "found": true,
+          "position": 5,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Gina Maria's Pizza",
+            "address": "Eden Prairie, MN ",
+            "website": "https://ginamarias.com/",
+            "phone": "(952) 937-1589",
+            "rating": 4.5,
+            "reviews": 564
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Detello's Pizza & Pasta",
+              "address": "Eden Prairie, MN ",
+              "website": "https://detellospizza.com/",
+              "rating": 4.7,
+              "reviews": 958
+            },
+            {
+              "position": 2,
+              "name": "Football Pizza",
+              "address": "Eden Prairie, MN ",
+              "website": "http://footballpizza.com/",
+              "rating": 4.9,
+              "reviews": 30
+            },
+            {
+              "position": 3,
+              "name": "Pizza Lucé Eden Prairie",
+              "address": "Eden Prairie, MN ",
+              "website": "https://pizzaluce.com/locations/eden-prairie",
+              "rating": 4.5,
+              "reviews": 1900
+            }
+          ]
+        },
+        {
+          "keyword": "pizza delivery near me",
+          "found": true,
+          "position": 4,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Gina Maria's Pizza",
+            "address": "Eden Prairie, MN ",
+            "website": "https://ginamarias.com/",
+            "phone": "(952) 937-1589",
+            "rating": 4.5,
+            "reviews": 564
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Detello's Pizza & Pasta",
+              "address": "Eden Prairie, MN ",
+              "website": "https://detellospizza.com/",
+              "rating": 4.7,
+              "reviews": 958
+            },
+            {
+              "position": 2,
+              "name": "Pizza Lucé Eden Prairie",
+              "address": "Eden Prairie, MN ",
+              "website": "https://pizzaluce.com/locations/eden-prairie",
+              "rating": 4.5,
+              "reviews": 1900
+            },
+            {
+              "position": 3,
+              "name": "Tono Pizzeria + Cheesesteaks",
+              "address": "Chanhassen, MN ",
+              "website": "https://tonomn.com/",
+              "rating": 4.8,
+              "reviews": 777
+            }
+          ]
+        },
+        {
+          "keyword": "pizza Eden Prairie Minnesota",
+          "found": true,
+          "position": 2,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Gina Maria's Pizza",
+            "address": "Eden Prairie, MN ",
+            "website": "https://ginamarias.com/",
+            "phone": "(952) 937-1589",
+            "rating": 4.5,
+            "reviews": 564
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Football Pizza",
+              "address": "Eden Prairie, MN ",
+              "website": "http://footballpizza.com/",
+              "rating": 4.9,
+              "reviews": 30
+            }
+          ]
+        },
+        {
+          "keyword": "top pizza Eden Prairie",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Football Pizza",
+              "address": "Eden Prairie, MN ",
+              "website": "http://footballpizza.com/",
+              "rating": 4.9,
+              "reviews": 30
+            },
+            {
+              "position": 2,
+              "name": "Detello's Pizza & Pasta",
+              "address": "Eden Prairie, MN ",
+              "website": "https://detellospizza.com/",
+              "rating": 4.7,
+              "reviews": 958
+            },
+            {
+              "position": 3,
+              "name": "Pizza Lucé Eden Prairie",
+              "address": "Eden Prairie, MN ",
+              "website": "https://pizzaluce.com/locations/eden-prairie",
+              "rating": 4.5,
+              "reviews": 1900
+            }
+          ]
+        },
+        {
+          "keyword": "pizza restaurant near me",
+          "found": true,
+          "position": 5,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Gina Maria's Pizza",
+            "address": "Eden Prairie, MN ",
+            "website": "https://ginamarias.com/",
+            "phone": "(952) 937-1589",
+            "rating": 4.5,
+            "reviews": 564
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Pizza Lucé Eden Prairie",
+              "address": "Eden Prairie, MN ",
+              "website": "https://pizzaluce.com/locations/eden-prairie",
+              "rating": 4.5,
+              "reviews": 1900
+            },
+            {
+              "position": 2,
+              "name": "Detello's Pizza & Pasta",
+              "address": "Eden Prairie, MN ",
+              "website": "https://detellospizza.com/",
+              "rating": 4.7,
+              "reviews": 958
+            },
+            {
+              "position": 3,
+              "name": "Football Pizza",
+              "address": "Eden Prairie, MN ",
+              "website": "http://footballpizza.com/",
+              "rating": 4.9,
+              "reviews": 30
+            }
+          ]
+        },
+        {
+          "keyword": "pizza food Eden Prairie",
+          "found": true,
+          "position": 4,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "Gina Maria's Pizza",
+            "address": "Eden Prairie, MN ",
+            "website": "https://ginamarias.com/",
+            "phone": "(952) 937-1589",
+            "rating": 4.5,
+            "reviews": 564
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Football Pizza",
+              "address": "Eden Prairie, MN ",
+              "website": "http://footballpizza.com/",
+              "rating": 4.9,
+              "reviews": 30
+            },
+            {
+              "position": 2,
+              "name": "Detello's Pizza & Pasta",
+              "address": "Eden Prairie, MN ",
+              "website": "https://detellospizza.com/",
+              "rating": 4.7,
+              "reviews": 958
+            },
+            {
+              "position": 3,
+              "name": "Pizza Lucé Eden Prairie",
+              "address": "Eden Prairie, MN ",
+              "website": "https://pizzaluce.com/locations/eden-prairie",
+              "rating": 4.5,
+              "reviews": 1900
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"top pizza Eden Prairie\" - optimize Google My Business profile with these keywords",
+        "Ranking below #1 for 7 keywords - increase customer reviews and engagement to improve rankings"
+      ],
+      "scan_metadata": {
+        "location": "Eden Prairie,Minnesota,United States",
+        "timestamp": "2025-09-15T17:33:18.036Z",
+        "total_scan_time_ms": 154917
+      }
+    },
+    "competitors": [
+      {
+        "name": "Brick & Bourbon Eden Prairie",
+        "domain": "brickbourbonedenprairie.com",
+        "performance": 92,
+        "seo": 83,
+        "accessibility": 78,
+        "bestPractices": 87,
+        "overallScore": 85,
+        "rating": 4.6,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 773,
+        "keywords": 62,
+        "domainAuthority": 87,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+50 keywords",
+        "authorityGap": 1,
+        "backlinks": 695
+      },
+      {
+        "name": "Redstone American Grill",
+        "domain": "redstoneamericangrill.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 455,
+        "keywords": 42,
+        "domainAuthority": 86,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 771
+      },
+      {
+        "name": "Kona Grill - Eden Prairie",
+        "domain": "konagrilledenprairie.com",
+        "performance": 92,
+        "seo": 83,
+        "accessibility": 78,
+        "bestPractices": 87,
+        "overallScore": 85,
+        "rating": 4.6,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1360,
+        "keywords": 30,
+        "domainAuthority": 77,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+50 keywords",
+        "authorityGap": 1,
+        "backlinks": 835
+      },
+      {
+        "name": "Tavern 4&5",
+        "domain": "tavern45.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 509,
+        "keywords": 38,
+        "domainAuthority": 72,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 708
+      },
+      {
+        "name": "Wildfire",
+        "domain": "wildfire.com",
+        "performance": 92,
+        "seo": 83,
+        "accessibility": 78,
+        "bestPractices": 87,
+        "overallScore": 85,
+        "rating": 4.6,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1113,
+        "keywords": 46,
+        "domainAuthority": 87,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+50 keywords",
+        "authorityGap": 1,
+        "backlinks": 804
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 78,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-15T17:34:02.559Z",
+    "businessProfile": {
+      "name": "Gina Maria's Pizza",
+      "address": "7416 Mitchell Rd, Eden Prairie, MN 55344, USA",
+      "rating": 4.5,
+      "reviewCount": 564,
+      "phoneNumber": "(952) 937-1589",
+      "website": "https://ginamarias.com/",
+      "formatted_address": "7416 Mitchell Rd, Eden Prairie, MN 55344, USA",
+      "address_components": [
+        {
+          "long_name": "7416",
+          "short_name": "7416",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Mitchell Road",
+          "short_name": "Mitchell Rd",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Eden Prairie",
+          "short_name": "Eden Prairie",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Hennepin County",
+          "short_name": "Hennepin County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Minnesota",
+          "short_name": "MN",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "55344",
+          "short_name": "55344",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "state": "Minnesota",
+      "city": "Eden Prairie",
+      "place_id": "ChIJA-uOINQY9ocRTAWKcur8J-o",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "reviews": [
+        {
+          "author_name": "E W",
+          "author_url": "https://www.google.com/maps/contrib/100554153335465756767/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKolhlwMchln3wSsD_DCaFNL-x-b5cN5UTs3nAtiItOlXn3eQ=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "3 months ago",
+          "text": "Been eating here for like 25 years, moved out of state a decade ago and always stop in when I am in town.\n\nThe lunch slices you get 2 and a pop for like 9.00 it’s the same pizza I ate in my 20’s and fire!\n\nIt’s the only business in the strip mall and yall locals need to step up your support for this gem!",
+          "time": 1749083943,
+          "translated": false
+        },
+        {
+          "author_name": "Jim Lelwica",
+          "author_url": "https://www.google.com/maps/contrib/106935547526231206314/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU1WPSwqEKcjJ0rGRm6M634MQZ_usObfmSdKLKQlgx5RT8nL4on=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Hands down the best pizza in the Metro area.  Only slight downside is that it’s not a sit-down restaurant.  Small price for the best tasting pizza in the area.  Been coming here for 25-years.  Phil and his team continue tondo an amazing job!!",
+          "time": 1746581497,
+          "translated": false
+        },
+        {
+          "author_name": "M Olson",
+          "author_url": "https://www.google.com/maps/contrib/102863327275238761346/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWyYojil0H-a8_oC-KccrONhZUMTBL5QLR0u_emvIKplM6zc4Oa_w=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "3 years ago",
+          "text": "Always deliscious but tastes the best on our smoker!! Definitely not the same as it was when I first started ordering there over 15 years ago.  We ordered the chicken ranch and added bacon, the greek and then sausage pepp with jalapeños.  I do feel like the service has changed but still tastes fantastic!",
+          "time": 1652063462,
+          "translated": false
+        },
+        {
+          "author_name": "Jenna Leehan",
+          "author_url": "https://www.google.com/maps/contrib/115788448078119461735/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUz-V_gKSFV0zPOGXo31JBlFE2b6tR9WrRkNlRPpw01cbXMPuo=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a week ago",
+          "text": "Sign up for their text club to get great deals a fun birthday treat. Their pizza is always delicious!",
+          "time": 1756946374,
+          "translated": false
+        },
+        {
+          "author_name": "Mac Nass",
+          "author_url": "https://www.google.com/maps/contrib/115581524429523851728/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUrUsPxPaB8aunVcpyGeYA9699Nos_X9GQYjfGTQy4hbK-c164=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "Great pizza, we have been looking for a deep dish pizza closer to our new home. We will keep coming back!",
+          "time": 1756511499,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 2700,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109409263541709343863\">Brian Hanson</a>"
+          ],
+          "photo_reference": "ATKogpcd5zeQLmn27onVWdUZ436OkTnQtH4aJhr-nYrPjLWAluU-5r9WLfTc-sDCII2FZCVokowQqdwLClVcPgT16cT7gt2fx-NeBFWHMXYjSdIpfR4lDRio8BmzNpP2MPqwAnknw0Z8T56czYRXtGgHRvNn5ZOPOYsephTIuPkuMm2XEFFUr4-VzyuOCV_mJ1CBM7fqcp1wzuUoSYxYvPF2XMd8T-Lq80kf5KTFRmbbbvvEmRFGDlo8GoUECVBhfK4xTy4r0dbtQPoxHTK406d92jj7v47JJ25lz4fikHIkaM8H8Zzr8SOodE8azdXswsrT_l8t6Eh209UR310zzczoeitfWkbOmTzQgY20btoyLESBvY4iktSxmmQA28b-kx5Aywi7lsxvGjVhz3uU2UVZMDzqX_3XCH2xHOxlambl7QjclMA",
+          "width": 4800
+        },
+        {
+          "height": 555,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109645666148366532370\">Gina Maria&#39;s Pizza</a>"
+          ],
+          "photo_reference": "ATKogpccnkg26XENIzMisSCRSSMH6SQ5wczJlysGjphbRlJlNtMNOw-wXQejMYNYfIUrt8FVLiaJvVmgSmTswJRM-T2lxZDXK-zXffT121XXr-NdDeNXtEcpkq-w3XlxnBEPBVQ_uqFwn1G2xe2YXrPGbSuJZSk2AQKLLa_4hC85zsjemXie9YyK1hQXN6hvVDsOvYtBJwJLOnvjziLkJGmD5fSabGPDekAf-_HINed78CWiuOkTnng3BvnBD5jH7rer2_ok4DTUIBDKwFDhWWCtzQVS3-bJhCn8rBQPiPuk_S_qYg",
+          "width": 713
+        },
+        {
+          "height": 2912,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105923064203420642395\">Gina Maria&#39;s Pizza</a>"
+          ],
+          "photo_reference": "ATKogpcGNV07bXfL5Dluc8V9eb94iwMcVNUdI5RJnfcNQorHRaA_FXdkFMXD93N8OnuUmH5ib0kAPK9SS4B2QXrkfNDE_JVHAJEkCGQqYHF4IMbvwCH8RBGqrXopZj6XVV6SvCl5MvjO_TUYwsex7Dv4T7wDyRNtLa-0yzZ6Vhpe8ZOsklMMas2942aEOTsRjeEF6ggGXBjwcnckJYEEZHeSHIG5x9wQScft0hPY6oi7_Xo88ANvTVAGDiX9GQlx4CE1zNzkNbYm5qmJxQOxIveDetYMcMKAQ1l4hrWD5hXtQjQzGQ",
+          "width": 4367
+        },
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108708554455743939050\">Kameron Boike</a>"
+          ],
+          "photo_reference": "ATKogpdsHEI5YMMPtKAZ4j7dHWAMs0qHIUeCVELtyPb8oJte9PzgqmEvl4jWN477S3k3VRX6uT-ovvhYU3RlZgDkKpHp11FDG5l5bzF9n52tMVjsujCfQMg8DNO_NLUG5yfHNhs1ArR-auNGhXmPKNSP-Sdynsxbp5QRMVICQoZqg5YLcFpqzU7VLxBEEB-H4E7LNg6BsdmN2roGMY7xLEGsFmJNQZOiH0pZZHCo3-kZ4P3Ob_rOcpXyULIZOLHFLS_fAs0ODIoECrQ14izMHVUbjNfaAL249ajAPFIgn90JCHLKXciRv8RUiytTwRnVo2K4q92MZk9pv4_VcxuXwX6P03OkRBTc7j_BTzvsYj5zhTWq8Cuy1XqG98VjaA8n6X2BoI1uMAyuA5Y83ud2NBMBuojOkpOgzzBJiZsyF1wBq1YP2Bg",
+          "width": 3000
+        },
+        {
+          "height": 1080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105923064203420642395\">Gina Maria&#39;s Pizza</a>"
+          ],
+          "photo_reference": "ATKogpcRgulWImdX_WtOyBx73nduVQzpuUR4R1iqtLUvEHIEDkMr9ToGYU-3N_PCiEBoQe3jkrke65ppd5jWSu0RBo2mxXldt-5FXy4_Uqkra1QojEuC6YDPTv1iyOzxaP1hMWQDqOV7D8FP5d0EPRydDUzmBrvTwJ2vQS6eNOxX_ba9msdXvICQXIf4Kogm6i8bsjME5Q4EIHujYwZdQOHUYPDcvtCxsCgQPfb7ComISp4IrJOHH-fHlmqrNCSaOrzOF7vVdV7X1ZMn5iCdz97lGSacG_iO8nwo5GQnsLqzRT_FLw",
+          "width": 1080
+        },
+        {
+          "height": 3060,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107020762750787090772\">lee leeman</a>"
+          ],
+          "photo_reference": "ATKogpesPCN6a4Is0wYZutml_WSJhPigbd_hO8U693AhzvfDXHvDgpwW5-ZGuvT7i_XyR4FEu5PplLRbsyU9QG1UeMHSahEA5EATT7IieCyipYadBtD5nwQ_vW-WPnE3b8Gq1fLNmUjp6WPjtY2dvS3ZC8UPR_UZvOYupYmJqYPnmCdoFoXq1LsConZRnV8D4pG7oxFARGg1iQ73tgVFzJNY4n8zk31pFPOfMduRk7gPEA4ps_khSIUEYc_vjSOIOwsmBZ_041EhY8KZ7Am7nOmXg8-Ylfc7iCXBBVbTnJvXf0XwIwnrsSZ6gLcBmfvkvIFFYikihEMYo_6PaQTseNU9IyD2PVovuNU_G1AjFnktpjQpGoY8A5pIJ-rmNK-wfefRb3jMiM2mAcf8VabQ3vMRMx6ceADZnjIHHT7kRbpcfWOKha-r",
+          "width": 4080
+        },
+        {
+          "height": 3064,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105923064203420642395\">Gina Maria&#39;s Pizza</a>"
+          ],
+          "photo_reference": "ATKogpfIcXxRvNUEf1fj-PzitO3ps_OXGcOTS7R2K_YCEpbK66OA1-kO52Oa0iRDvuCZjff4jBVCEQsV5XEulRNOsT43AtO9Q_AR_yxs5MnF59Lia1MJFxrIyEKEysZaQD26jvYXgEoPhHczQJ30R7tLpn_b3eN4adNrskc4SoaTpaIA-inBcZTyWfBiI3xPF5rEr3hEWmFSsLBmZsKFs8B6kY3uRwz0XHxLju5gB48WpR44T8MjiQcI3sTh9fmL70ZU9tdNaHkBxyKcfJLJWW9NM8_Hmj0yTwL7wto1Dl4LARJrAw",
+          "width": 4596
+        },
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114929118232637996196\">Kris H</a>"
+          ],
+          "photo_reference": "ATKogpf-YkB01azar20H53cGtdy2Vtuwn_uT8P5tazNa-1DjbQl25vBqRxLAt9wDErHoWiGKQIjkyRJHFxC4ZPI-WIymDUdvOv09ZYnLW_xYYf-RN3kKWlbhY_NJtDW4zXq9xkdL_9IZdGabwLcooIQrqsNITPBIT95sU-KaBYkoDEC1C-fTBpKndwJJf0CR2W6InAZuW6N2HxvvqSEIC7zJfkRSUb__53jh2wC9okG-XqTV5Ew9lQ_nXktbWKHUhcG6KDDQvr_u07Rp0dI_tWnLztP2jSDaMeFK14kjf0_tStUQwdjEIfgHwvhO8GgOcG4PR9svl6IjCNICZURFsnwsqvi8jdd8DsAJC3ZziyNhPh4Ib6DJL9nls8MgM94CmeSVVIhIgpp7CDtVKr5lEegDDbUDS9vaKWi7WySgyJLQf8dF2i0",
+          "width": 3000
+        },
+        {
+          "height": 3199,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105923064203420642395\">Gina Maria&#39;s Pizza</a>"
+          ],
+          "photo_reference": "ATKogpcvg5mCFmlnbS-PQ4bnZs1WSrKSFeP4wtlJu9dYvvWqDtWiH4d8vDVfhV5x_Gt9FpjqFrhrb7nS2LVfiWjaxMWvoAEykXFaC6fbUaX0CRQPxL6f9w8dVuGiyd9SZzxLGEOC7PC7sdK-qmonrx6kHA30ont5QJnh9ZzlCTI_8B--3bla_ZdiTHbR3yjk3jj_t8dh5ttvvkj1nY4ACR1IBjfLtR7KMFJ1wuxmShOP2SHmmuhwHLsPxS4FLpgGaMeCJq47gl-WYrTAAM6ATMuWn7ft_gNRGwGQXLQ6ONRvNVaS0g",
+          "width": 4800
+        },
+        {
+          "height": 1080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105923064203420642395\">Gina Maria&#39;s Pizza</a>"
+          ],
+          "photo_reference": "ATKogpdzGyIo74DIC5E0dqQY4lEAdeQBk3BoLN-T-tlUndVHjq3RwtCNdu0jzf4JUYJ_Wb2ncGCOkd8BH6qOhMhC_KTtR2s2hlUerkPCRSal1L9Nyeszi6MqWyfhqcSi0l9V4X4tUXuAnjj5jieoQCpsK6sYudCJsIVPsswVGXwwUAhsKuVA-7HSq_gRPz4-64p9AxT7GToGWH8H-dcL6tCQL2zrcOinkclez5SmEU06X-CRWBEQqdV5ts5boNrKSDIzrDhMSqdXZjORO6vmtBZyb6A-qJKLmg_YWEE1b1EqKXeRgQ",
+          "width": 1080
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "2100"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2100"
+            },
+            "open": {
+              "day": 1,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2100"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2100"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2100"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2200"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2200"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 11:00 AM – 9:00 PM",
+          "Tuesday: 11:00 AM – 9:00 PM",
+          "Wednesday: 11:00 AM – 9:00 PM",
+          "Thursday: 11:00 AM – 9:00 PM",
+          "Friday: 11:00 AM – 10:00 PM",
+          "Saturday: 11:00 AM – 10:00 PM",
+          "Sunday: 11:00 AM – 9:00 PM"
+        ]
+      },
+      "price_level": 2,
+      "editorial_summary": {
+        "language": "en",
+        "overview": "Branch of a casual pizzeria chain offering slices or pies to go, including thin-crust specialties."
+      },
+      "url": "https://maps.google.com/?cid=16872732612841047372",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcz9M_o_a0GfrE5jplnAs9MchqcRPrbJcDWg6FeSR2zK6g8ux9G7rFliEbPgACA0HVSph3GuLykjDsuBjNp2STmZyPK2_chSbjZ4DQ4Rg9j79i1w5pgRWViPsynHDMaheehL3NQFJKPP9MQ_Yi6Bo7YTwZQX7d-L0J2dRELo7zNVoECJD7PZ7T4kUMVPn_RhKUlPfRXxQQFJpwxKA620X-K_7pMIWy5jiMwlaT1DDNFd6AHAAzh7fmeBhCBrSLsUceSwWy1fg9eTJAsnAx09r2FnASGOEvcSJG1KAnnchofVLSyI5-Uxe2zhlUUAeMQJvuy5LiZ1wZaWFU1OpjZCAteaMntIk4iv7vdUdlTsECNJVNUzE78bGoZBauBOcbe4HBL-EzGMBCanFQoixOEeGecqSTzFutqJsNK9FtJJPmp0Co&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpd1K3k1-xPdYrSGGD1XMHz6acsursQgB7M9efgi2FcmeNPvxgkTAGjyzqh5meNefsuRaU8KHzVfJNMacf8OTuZuQHSNwX0kB3taQk6vVvIPTWMzb24n9-pLbWMSZU47rLRCpsUK5I_wDFJttTks3KBirwX3aVn7bW9qGqLX71ss_r1Xr1nUfch0ypk7Hj0RSu0Kc8Y2tgY_rWWcdY3B0kwofJLPhsTy6hDPpYLSMz-XmZYOuzyBqsxFhFb97Nex61AkLCbaPQbdBG-AxOs3vyrcM40JTbIPYNDJn-mLQ3Zw-Q&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpeZD3yq8eMjsvmpWPJwMGiNqFLhhz_CLKqyLUH6zLSiMT3UXdUit1Gr2OF6xC2312ljsNwLW2GcWi_l7ERas2pU2BKlpVK4YdD1rz9FevRiqBXIBJlExMNLs81Lp4pzbNm04m6LeDFA_EcVYOPZE-KIuHGfhY1Zk6lHMp3Zba_dZGxHJllyydCaO0YvcgG_g0QpjSEeBRL_YOZoYAfNgxNkL-LxPJ9mf1RyeNzzQClZxsgfxAE3y8qAekQ81mXXvxAXYle4tVmMGPZYWd_LbGhPTvlsHMBkZXfM77DFHvCqKg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpf-k3pGkLX29Q15E5qyxsdK0h3TBmVopXG5vhVqt0JhxFu6Ae081Q6vm5sFwVXbsfqFUSr7cZfXyAV9PHRh0vKn5tmgFeBDLSOvIJfWm8PF4F39MA1k4jfIvBU48MfP5B8SP0m-4LhmUYosqv64GgLF9EQsVaTl_BYkeVDJ09O2Bt2iiu4FYOATGAcRtGCrTdj2iEduLsN2n8-itGv61WoCTX5hS-3zaG0wqzj68Ty1P99Ua5TUNEQq3N4HgvVLUbe1cZpvYw5g8DLZV4y-ENUihR4YUQn09Z3V4vjkLf5WjU_5kRMBQ1Ma2rThrbBtULgVr_30GyHi2tEyfd-rmx1tCBY-HrCMzTgv9Y_mjZNWciuLc1y_Ej1bAz5IU7erdz1xWpc_AvUtNMZRfMWdyCVLgAZ8jI5XRrvzRFfmPjESV1s&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpchjCedJlnOdFSiRjKCTDxrdsSUu3RfBTQo8IHlThqpbC4q7rasd9m22QcGw7ZHHjH3w2cLkEmeeDFwYjVdOoIqYooN-yByioHnkqu7rfhdNX1ofVB_wGoOhFitwitOq9IS0LbyozlZbmnKfWHWW-snTzanWAlcF0ajUe5oHcO7P4IPDu_t9z-Kdhquu5qbtHErqB7cWh7Ucv0MGSerFnfgOfvHvzY7zdZ5HFJcX_GukJW-eI0MGdgjDagaXWW6hTBznlYa0OGVPY92WbQ-KE4eNCZxnoQzvoMypOpfEMld3w&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdAhpaa5u4RdxKBa2lCPxmnz0cNbG5fpGcW4PtUtQwZ2BoHaO8mcd-nSg8ggcD3A_Bw3zL08d1CTSPRNe7hr7rIWM38KSdSMn6jjZAnSU0gKnnM-nqf_IIpybUgdO4IhZCQdFnnnRCUPJT56YHmhgXhriTWWkUEsOK5eD_Q9PgfU46BZQv1pLzxIsvXBrRfRsXVE2ElygBq6G-TsnPsNM4HwNmCN8vC3iWZHV4RePvVSqNDnQ33BKcrk6heZEG86EGmRJVTqtfUfzcpsEa6q6McvnW3xEg49FJxWgSe15f8oaUPLVzEIvf6sVnTEQ25NPxh3dVSdJAziO9-Bhb5p1AtESsS2viQvF80SHcsrT0N-v23WRFt3lJAabGTCwA_njYsTat2VRz5eplKzz9iTKj0ow3ekOC6lHrUKg6s04I9y7RY&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfue073FqTZOob8iSvgKEZ1zAa-Z0FzamoiQABfZux0sx8HXD2gfODR_RYNNT9iNK_jg3Blbi6jmdwn3eZ8pJUi6wywT0_dU7qgLsBTFTN-llmxIMb2AzRLC7Bfui9l5xwJXs2fwoovmutw-fwc3hhbf_M7MLhXcOyMMnjWAOxvP_FmVug6MR1MgKYkRyuY20inmWCRjmnI90-yYEa2Zf2_F0SZyC6ctGQGxPt89uuxtr3NMM345iyfTBl7mNAyZKjEOD2KiaRrF35DjraMf4JoUCJHfEdQLNZ9UAzcq6f6_w&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpeGx_RbXS9QhzZdBIB-bsrEDXESTfHkoCyWy4CIEqxt-zyfMp3SmAnBxkapt_uXyAvdxaqS3Hy62qpxR0cK0gj9PDViCfnpPAUWh-vyLo9ETsG2O8wxOJvE8FlxrZmGcYTFQ1aDE6wM4cCrIbsolwekPaQBRZF1AmCF-iLEZs7OsMJ4FmKJFrvMl4gwIvftdbDg2W8DLKwdb8OA6SGHSzh9xjubHXr_4hNlm2yYBveqeMJBwtvDJ81iwJTr5d7FTpiv2cc3Ncoqb8Xm8zJv4NSYLAJM3UzyJsz_jlN9yI0400D0woAh6yCQeSI-yuWCB4s26MT0LnGzDJmmJcgL02zmzIIRz0NrwhqDRavGiL9NpbLMexDgeTd3-uxiE-yvhCRx2mjMszXnqIkdAtn29ASKmbKz7BBBqhoU-bjmtYzcJ54&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfzbGdcmjafFtIYpq-QBfg4R7Z6UptGMzjtqttqXo37lPLSOfyAiM31b9CgPkBLGNljOqc5qD_wuEKdauPhVPOgtwFWcpUvjUNsARq980xhpvjxp8FrlSNsjuHic12QUcyRh1fbO_ttTj8t7gEc-5fn9t7hl1QVXU1rQZrfMB5142ZijDlU5zOSogM2rU3H3t6CkH6jw09-uRKoQv4oUEl_otzeUz5k11IS8hPk6lb7HCCtYUUV1bjjLvcT6GyCCKHYpF_TO4VWGLIciUQmsSAL4Q8Oz-ZU8v7aodSeWDoXTg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfxIvrbYcuWXmBA1AJNCdN0f4xEkQoOmhpG2DIHkjA_ImFkus9bPXdUabXpotjX6Riv3QgS4eN0oqMkHDf0Y1cWaCMfTZB2WOk_hxXXlDSwMdo6x-C6NQ3QkDYLoANRrrTTeDo6JrzYjNw0zeEtcPQAeevWV9otdUlkQAhQDafgN97TMw_I9DWoLx9OLIydJeVymW0TpK3YB69zHkRTK_OF5fUN9-BvLFbdXg-mxurv8ttjOcWej53HSr90u--RybRib7r5Y9OgvttBtcuOIz2MNr3mb7iUACJdUYAHyxpOeQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 60,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": true,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 90,
+      "totalReviews": 564,
+      "averageRating": 4.5,
+      "sentimentBreakdown": {
+        "positive": 88,
+        "neutral": 5,
+        "negative": 7
+      },
+      "reviewSources": [
+        "Google Places API (Apify Enhanced)"
+      ],
+      "keyThemes": [
+        "Food Quality",
+        "Location",
+        "Service",
+        "Portion Size",
+        "Pricing",
+        "Wait Time"
+      ],
+      "recentReviews": [
+        {
+          "rating": 5,
+          "text": "Went for lunch. Quick when buying the slices. Plenty of food for one.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Always friendly, pizza is delicious! My favorite pizza place!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Sign up for their text club to get great deals a fun birthday treat. Their pizza is always delicious!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Great pizza, we have been looking for a deep dish pizza closer to our new home. We will keep coming back!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Good lunch deal, pizza is great. Don't plan to eat here unless you want to eat in the parking lot in your car.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Quite possibly the best pizza in. Minnesota, thin, crunchy crust with nice flavor, tangy sauce.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "We love Gina Maria’s in Eden Prairie.  They provide excellent service and on time delivery.  Their pizzas never disappoint us.  When our grandchildren are over we always order them pizza, they love it too.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 1,
+          "text": "Last Friday 07/18/25 my grandson was visiting. He asked for a Gina Maria’s taco pizza so I ordered one on my credit card. When the guy asked about a tip, I explained that the deliveries under the new owners had been so unreliable that I have stopped tipping until that improves. When the pizza arrived, I was busy, so my grandson answered the door. The delivery driver pressured my grandson to sign for a tip on my credit card. When he appropriately said no, the driver berated him and told him to learn to give tips. Later that day, after my grandson had left, I called and asked for a manager. I complained about the driver and he put me on hold. Another guy with a Mexican accent got on the phone. He was the new owner Ulises and he told me that he was the one that delivered the pizza and berated my grandson. We got into an argument. In my opinion, he has no integrity and is destroying the historic Gina Maria’s 5 star reputation. The last 8 months I’ve been buying about half my pizzas elsewhere. After this experience I will buy all my pizzas elsewhere. I hope that Ulises goes out of business…\nFYI - Here is my previous review from 11/23/24…\nI’ve been buying Gina Maria’s pizzas since 1987 (37 years). Throughout the majority of that time, they were family owned and operated and I considered them a 5 star business with 5 star pizza. They finally sold the business and retired. The new owners have failed to maintain the standards previously kept. The last pepperoni & sausage pizza I ordered on 11/09/24 was so spicy hot that it burned our months and we couldn’t finish it (I threw it in the garbage). Last night I ordered a taco pizza, but it was never delivered. I called 3 times. The first two times I was told they were under-staffed, but that the driver just left with my pizza. The third time I called I asked for a manager. A guy with an accent said that he was a manager and I explained that my pizza was already one hour overdue. He said that the driver was out with my pizza. I told him to cancel the order and to refund my money. He said I could keep the pizza for free when it arrived, but it never came. Although he agreed to refund my money, the charge is still on my credit card today. I called the store just now and the manager on duty today said that yesterday’s manager did not refund the money, but that she will. I expressed my disappointment in how Gina Maria’s had declined. She did not disagree. (Note – I never got my money back, but I raised enough heck that my next pizza was free)",
+          "platform": "Google Places (Apify)",
+          "sentiment": "negative"
+        },
+        {
+          "rating": 5,
+          "text": "I love Gina Maria’s pizza it has the right amount of toppings, cheese and sauce.  Pizza was delivered in half the time they told me it would be here and it was hot!!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Last Sunday, I picked up two pizzas from this location. The Gina Maria's Special that we got was probably the best we've ever had!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        }
+      ],
+      "detailedReviews": [
+        {
+          "author": "Nicholas Kindelspire",
+          "rating": 5,
+          "text": "Went for lunch. Quick when buying the slices. Plenty of food for one.",
+          "date": "2025-09-06T10:54:46.465Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2twYVUxZGZhbW8xVEhZMllTMU5kbE4wTlRKaWFIYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXNf3KiK9otxQw0ZlKSfUp3qE15eb6ZSzpvNKQ4gXh2akH888eU=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103795849156880458338?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jacki Leyk",
+          "rating": 5,
+          "text": "Always friendly, pizza is delicious! My favorite pizza place!",
+          "date": "2025-09-04T20:55:08.253Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURiN0lUYW5BRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLy6qexBdXieTZ_SrwKoxXynKUsX8Vkm1RMtdV4o_crGb8nnas=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107964264785461788900?hl=en",
+          "reviewerNumberOfReviews": 14,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jenna Leehan",
+          "rating": 5,
+          "text": "Sign up for their text club to get great deals a fun birthday treat. Their pizza is always delicious!",
+          "date": "2025-09-04T00:39:34.536Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tacFNXZFJMVXRKWms1dk4xTjBUM2xzVmxWR2VuYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUz-V_gKSFV0zPOGXo31JBlFE2b6tR9WrRkNlRPpw01cbXMPuo=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115788448078119461735?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mac Nass",
+          "rating": 5,
+          "text": "Great pizza, we have been looking for a deep dish pizza closer to our new home. We will keep coming back!",
+          "date": "2025-08-29T23:51:39.738Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21oNk5uVlZSbVJOWm1aWmRXUnNNMUJrYjBWNGJsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUrUsPxPaB8aunVcpyGeYA9699Nos_X9GQYjfGTQy4hbK-c164=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115581524429523851728?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Josh",
+          "rating": 5,
+          "text": "Good lunch deal, pizza is great. Don't plan to eat here unless you want to eat in the parking lot in your car.",
+          "date": "2025-08-29T21:13:59.698Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNvNUtMNVRnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWW_Q-Nm0TwtXE3zDWhLrPhB5ynQiDTqK5UdXqj3YETfG5m0L69XQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100026704150090401132?hl=en",
+          "reviewerNumberOfReviews": 53,
+          "sentiment": "positive"
+        },
+        {
+          "author": "C. H.",
+          "rating": 5,
+          "text": "Quite possibly the best pizza in. Minnesota, thin, crunchy crust with nice flavor, tangy sauce.",
+          "date": "2025-08-27T11:13:22.080Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pOSGVYTmtTMHh1WTNrdGVXbDFSRXgzYWt4U1RYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUPlnexdLlkvZgTY_k8SxxHOUTde6056arC4WbAZacssFfaAMI=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102385032347756651560?hl=en",
+          "reviewerNumberOfReviews": 22,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Renae Coddington",
+          "rating": 5,
+          "text": "We love Gina Maria’s in Eden Prairie.  They provide excellent service and on time delivery.  Their pizzas never disappoint us.  When our grandchildren are over we always order them pizza, they love it too.",
+          "date": "2025-07-24T23:24:03.273Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURYNWNuZkFREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJosghhQvGBphxCceohuRAAVVfe561KHi_sSlwTelLUSKdkpw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100823207481895583496?hl=en",
+          "reviewerNumberOfReviews": 29,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Richard Hodne",
+          "rating": 1,
+          "text": "Last Friday 07/18/25 my grandson was visiting. He asked for a Gina Maria’s taco pizza so I ordered one on my credit card. When the guy asked about a tip, I explained that the deliveries under the new owners had been so unreliable that I have stopped tipping until that improves. When the pizza arrived, I was busy, so my grandson answered the door. The delivery driver pressured my grandson to sign for a tip on my credit card. When he appropriately said no, the driver berated him and told him to learn to give tips. Later that day, after my grandson had left, I called and asked for a manager. I complained about the driver and he put me on hold. Another guy with a Mexican accent got on the phone. He was the new owner Ulises and he told me that he was the one that delivered the pizza and berated my grandson. We got into an argument. In my opinion, he has no integrity and is destroying the historic Gina Maria’s 5 star reputation. The last 8 months I’ve been buying about half my pizzas elsewhere. After this experience I will buy all my pizzas elsewhere. I hope that Ulises goes out of business…\nFYI - Here is my previous review from 11/23/24…\nI’ve been buying Gina Maria’s pizzas since 1987 (37 years). Throughout the majority of that time, they were family owned and operated and I considered them a 5 star business with 5 star pizza. They finally sold the business and retired. The new owners have failed to maintain the standards previously kept. The last pepperoni & sausage pizza I ordered on 11/09/24 was so spicy hot that it burned our months and we couldn’t finish it (I threw it in the garbage). Last night I ordered a taco pizza, but it was never delivered. I called 3 times. The first two times I was told they were under-staffed, but that the driver just left with my pizza. The third time I called I asked for a manager. A guy with an accent said that he was a manager and I explained that my pizza was already one hour overdue. He said that the driver was out with my pizza. I told him to cancel the order and to refund my money. He said I could keep the pizza for free when it arrived, but it never came. Although he agreed to refund my money, the charge is still on my credit card today. I called the store just now and the manager on duty today said that yesterday’s manager did not refund the money, but that she will. I expressed my disappointment in how Gina Maria’s had declined. She did not disagree. (Note – I never got my money back, but I raised enough heck that my next pizza was free)",
+          "date": "2025-07-23T19:26:53.229Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNQeHRfYWZBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLspD1CbCxt3lkwLzSWbLV44_zGShm_7df4SKoAoizzYS2eZA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104240391373088553062?hl=en",
+          "reviewerNumberOfReviews": 21,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Jami Dutcher",
+          "rating": 5,
+          "text": "I love Gina Maria’s pizza it has the right amount of toppings, cheese and sauce.  Pizza was delivered in half the time they told me it would be here and it was hot!!",
+          "date": "2025-07-18T23:05:49.290Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xsdE1FTlVZVmsyV2s1ak0xVm9NblJZVWtzdE5WRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIe6ikIDY4DhvbWncEhflG0mTMFsdm5C_zX2s3kTbk6afDXCw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107960113469859603122?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Freddy Williams",
+          "rating": 5,
+          "text": "Last Sunday, I picked up two pizzas from this location. The Gina Maria's Special that we got was probably the best we've ever had!",
+          "date": "2025-07-04T15:20:19.566Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tGWWQwRllhMnhEYnpSU2RrTkZkR1oxVm1WdGJtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIscYHHHUEnD0dG834tesgH-dDGSBR54vrYl6wG2NnatupC4g=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101148803811105595167?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Linda Abbate",
+          "rating": 5,
+          "text": "We ordered pizza and wings tonight. We always have a few special requests and they never disappoint! It was yummy and executed to perfection!",
+          "date": "2025-07-04T01:10:44.259Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xjNGF6TldjRmh6VlVOTVdVbEhOWGhQWDFSeWNHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLs8PHcfcRDDjoa9iDZI59zDTAuraVRiwtRmBQXRDELjdm8tg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113357520350662489946?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "ben moe",
+          "rating": 5,
+          "text": "My favorite pizza.",
+          "date": "2025-06-20T08:09:11.359Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2s1a2FuSkZNbnAwTkZGaFVFODNhMUpRY1VWclIwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ0f6zXe9G1FpPlZJ5l8o1zGJEbvxf-KP9ieaOXz5M1azKSNQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110576033844084336578?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Chris Beyer",
+          "rating": 5,
+          "text": "Among the greatest pizzas in the twin cities. No seating, take out or delivery only. I've been a customer since 1985.",
+          "date": "2025-06-20T01:22:29.388Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2sxWlZWRlRWV2RQTFRsek5ITjRObUZzUVhwV2JIYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVXiC36h2Av3RDCNfWEi-C8bkOlks3lm1ZCD6E7qwToh07npUTS=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108097993888108072857?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Stephanie Jinju Truong",
+          "rating": 5,
+          "text": "Delicious thin crust pizza with quality toppings!",
+          "date": "2025-06-11T21:40:26.103Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pOUVEyODRSVGxwTUdSTGVGOXpSRFUzT1ZGS1YxRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWiw4KcRHAUjuyiaQMOZZnaeNQ7RA8Xn-jemhWML_aL8hUgWHoTdA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103477311191207271084?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "E W",
+          "rating": 4,
+          "text": "Been eating here for like 25 years, moved out of state a decade ago and always stop in when I am in town.\n\nThe lunch slices you get 2 and a pop for like 9.00 it’s the same pizza I ate in my 20’s and fire!\n\nIt’s the only business in the strip mall and yall locals need to step up your support for this gem!",
+          "date": "2025-06-05T00:39:03.244Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VQTEo5X2JneFpTNmJ3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKolhlwMchln3wSsD_DCaFNL-x-b5cN5UTs3nAtiItOlXn3eQ=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100554153335465756767?hl=en",
+          "reviewerNumberOfReviews": 333,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Stephen Holmquist",
+          "rating": 5,
+          "text": "",
+          "date": "2025-05-28T12:18:30.479Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VLRHNrdlN0dzRiTHdBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVMpQuKCRIjY90W2y0vxBN3R0sq0A3Q7YPtYPJhUZ29x84Mh7hSVA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106115468827581612144?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "On Time Driver",
+          "rating": 4,
+          "text": "",
+          "date": "2025-05-22T18:15:03.121Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VMWDhrWUx3bGN2b2FBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLiuk4-MBolaeAG-b5V3ytkuNZcVBQk_4oMbmR-KRv3a19ALQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108737198611816595550?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kurt Smith",
+          "rating": 4,
+          "text": "Great pizza\nTake out only",
+          "date": "2025-05-18T01:40:49.178Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURJc05taG1nRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVBR2ZRXdzlLg5tcNRbI_TH_iXYXYiLKsW4gV6-A85rJ0BVud8=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104406686478211951820?hl=en",
+          "reviewerNumberOfReviews": 418,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Don Lenhart",
+          "rating": 5,
+          "text": "Gina Maria's makes the best pizza!!!",
+          "date": "2025-05-13T03:16:55.780Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VLajl4Wl9UMzgzRVhREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK6UAfJVqwYgJCvkG2ZKZKoxPDzpvcnxNDqswUc_CASe3lKXes=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116195313666221427729?hl=en",
+          "reviewerNumberOfReviews": 26,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jim Lelwica",
+          "rating": 5,
+          "text": "Hands down the best pizza in the Metro area.  Only slight downside is that it’s not a sit-down restaurant.  Small price for the best tasting pizza in the area.  Been coming here for 25-years.  Phil and his team continue tondo an amazing job!!",
+          "date": "2025-05-07T01:31:37.930Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VOS1pfWlBUako2QXZBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU1WPSwqEKcjJ0rGRm6M634MQZ_usObfmSdKLKQlgx5RT8nL4on=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106935547526231206314?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "TS Kaminsen",
+          "rating": 5,
+          "text": "Excellent pizza, we go there once a week.",
+          "date": "2025-04-28T15:49:18.174Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURvc19EM3FRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWXH65ZGQmfivSJhRjafNyXt6ZB_5J2nHTDvQ4OGqYSMqrRepZ5=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101113660442601854930?hl=en",
+          "reviewerNumberOfReviews": 22,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jeffrey Hartfiel",
+          "rating": 3,
+          "text": "2 slices and a pop for a reasonable price. Good pizze. Think they are a little heavy handed on black olives .",
+          "date": "2025-04-28T01:28:13.288Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURvdmVYSkFREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLeYr9mCd9e8uS6WW00BK8QT5D3Ed2sNGb5koOSyI66y1sBVw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111839798049243295277?hl=en",
+          "reviewerNumberOfReviews": 207,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Shanna",
+          "rating": 5,
+          "text": "Highlight of my Monday is going Gina's for the taco pizza lunch special! So yummy😋",
+          "date": "2025-04-14T17:11:13.261Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURBLVBmM3Z3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWo2LlMjRQH8A37rNzqraydPnspy4HtTtRDvcIGrP2bmOwU1OY=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111241379255894190268?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jay E P",
+          "rating": 3,
+          "text": "I would rate Gina Maria's Pizza quality and taste to be middle of the road as their well above any Domino's, Papa John's, Old Chicago, and Sarpinos, yet, fall below the standards of Pizza Luce, Red's Savoy, and Wrecktangle Pizza.",
+          "date": "2025-04-13T16:04:32.024Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURJbC0tSTJ3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXkjCIKETRWuvR9N2Wv9GKAG7dBNPXeqMGexGNz0gcOhHsbeioaQg=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105422247033466832061?hl=en",
+          "reviewerNumberOfReviews": 321,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Murali Chollangi",
+          "rating": 5,
+          "text": "Awesome pizzas, we tried veg and barbeque chicken pizzas multiple times, very tasty and delicious...the staff are very friendly and polite.",
+          "date": "2025-04-11T02:15:46.991Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURJeWRicUdnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIhGEdsdU7iDyKmLyFQNHGSzHxmA3eV5D4fR_CISeXdF7ZuDg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117609670216722219452?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sean Nordstrom",
+          "rating": 5,
+          "text": "Delicious food and phenomenal employees! If you haven't had Gina Maria's, you're missing out!",
+          "date": "2025-03-26T18:28:34.638Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUR3aVlfTGdRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKPfN8i7Xbchu91Il7NixnTBXVomL7lvjJFlKvds2O0c1-XwQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109644248132469591131?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "melissa johnson",
+          "rating": 5,
+          "text": "Best pizza in the state.",
+          "date": "2025-03-18T01:11:50.624Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQwaVlUUUhnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXm6kY9Hr9Z_bp8FWIZU4o7WrYXUHpkxWfnbNvgLfuJ_8v9ZJn4=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110313973192745282927?hl=en",
+          "reviewerNumberOfReviews": 326,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kameron Boike",
+          "rating": 5,
+          "text": "Special thank you for making our special moment so special!",
+          "date": "2025-03-14T01:56:09.474Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURzekw2Y293RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXRtCL9IIO7aN2tE2Cg6EYOjdz6irsQhyb1CBcBOZeZnBZnAJHg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108708554455743939050?hl=en",
+          "reviewerNumberOfReviews": 87,
+          "sentiment": "positive"
+        },
+        {
+          "author": "matt sather",
+          "rating": 1,
+          "text": "I used to absolutely love this place I would have claimed it to be the best pizza place.  However my last 3 experiences in the last 3 years have been horrible.  Including our pizza we ordered last night, after paying 32$ to get a large 2 topping pizza delivered, the pizza still had RAW DOUGH everywhere, only like 15 pepperonis on the whole pizza.  it was almost like they cooked it for half the time in a rush to get the pizza delivered.  I didn't even waste my time to call them, I am just done, they can keep my 32$ from last night because I will never order from Gina's again.\n\nI would have rather gotten a little ceasers $5 pepperoni, at least it would have been cooked, and if Gina's wants to call or email me you got my contact info.",
+          "date": "2025-03-09T01:53:00.921Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURRcE43UFpnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIVDGkM90rgUS2K7brjwueNr5KwMWAN4ReLLb_onrpD1Z3zDw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102362332673292548225?hl=en",
+          "reviewerNumberOfReviews": 26,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Quick Trip Fall down",
+          "rating": 5,
+          "text": "Solid deep dish.",
+          "date": "2025-03-03T05:10:37.734Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNRX091S0hREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXpmVMFsmnVBLTQTmXPa0Fv81es3pnOZD_PDUw7e8fGHeAuzgoaOw=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101226253025489604688?hl=en",
+          "reviewerNumberOfReviews": 15,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Andres Ordoñez",
+          "rating": 5,
+          "text": "Good quality pizza for a fair price. Just takeout options and delivery take too much time",
+          "date": "2025-03-02T22:49:53.574Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN6elAtb3hRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWM2pxBSO-s_VMih4QEeZq9DEabLxip8FP_y4qJ5W0SUuUscDQB=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113771676618141225915?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Julie",
+          "rating": 5,
+          "text": "Best Pizza in Eden Prairie!",
+          "date": "2025-03-02T00:43:12.412Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNReElDelB3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVvADj0kJ03dgydOMcdmJx9S3cqKR_Z1fq01QAYq36a-XnaG0ty=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115233328826431687760?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sandra Sauer",
+          "rating": 5,
+          "text": "",
+          "date": "2025-02-26T09:13:25.837Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURndGFTNDRnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIk1adS_N08YXbDuYS_v68vyh-FYss-PxMMOjyhP_xUppbdWA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104822740030852664302?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Lori",
+          "rating": 5,
+          "text": "We have be order pizza for year.\nIt's delicious! Better than any other pizza in town.",
+          "date": "2025-02-13T15:28:53.058Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNnOEp1MTVRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKm5hBUx4zV_lS2GkSHFNAcTZ1ROWy_yHvC9hLFR9BNlYWVtA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109821291214524352951?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tami Cabrera",
+          "rating": 5,
+          "text": "One of my top 3 places in MN! So good!",
+          "date": "2025-02-11T15:26:26.913Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURBazlxdFl3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUjMiocBIUdGs-HeZrPaUSufLILt-51gnmEp9BHBMQQmAgdx40Edg=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115226100823310851574?hl=en",
+          "reviewerNumberOfReviews": 148,
+          "sentiment": "positive"
+        },
+        {
+          "author": "An Anderson",
+          "rating": 5,
+          "text": "",
+          "date": "2025-02-09T23:40:16.776Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURBOGJIbzhnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKpOirLsZZCBy0Ry0YU07qod8oBT_AlVgVFQ7UE98TsWuOANA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115945097318809048306?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "marcia parent",
+          "rating": 5,
+          "text": "1st time order of a NY style pizza.. it was delivered fast and piping hot, and after living in New York for 40 yrs, I can say this is the BEST pizza since our NY days!",
+          "date": "2025-02-06T03:44:01.184Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNfZ0lyVU9nEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJJQUUtBXfOsJjCQVxYfj8jxpnQwNWthp33rDM14ZgXUE7nSg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109397451154119283462?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Benjamin Wenker",
+          "rating": 3,
+          "text": "It's pretty mediocre pizza. And for what they are charging? I can't say I'll be ordering again.",
+          "date": "2025-01-30T06:34:08.612Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNBdlBTV0hnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKIs2PxM5bFtf33OjkBq81ln4e02d3kTzAWj7PHxP4dIKOAuQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115390242999680884913?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "John Huss",
+          "rating": 5,
+          "text": "",
+          "date": "2025-01-28T19:01:14.804Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNBd0ptaHJ3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX_aLBNyEFaEoh_7ClK7wwGF6cZXY2msd9nK008w07Veq1jRSrf=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111397832741620995015?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Anthony Michaels",
+          "rating": 5,
+          "text": "From calling in my order, detailing the type of pizza, etc Delaney was awesome, kind and considerate. Very professional all the way through to delivery. Very happy and tasty!",
+          "date": "2025-01-18T19:47:43.586Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNfazdyS2lBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKN-ketwRwm-Oknjzi4YBsLcKwN_hExT_NixrlllSySs57ZKQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105018981998319455913?hl=en",
+          "reviewerNumberOfReviews": 17,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Karin Kaihoi",
+          "rating": 5,
+          "text": "Gina Maria's is the best. Our favorite. We get the half baked and enjoy it hot and crispy from our oven. Perfecto!",
+          "date": "2025-01-18T01:05:39.116Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNfOVlPTXJBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWT6xct5JqTFKrhk9rwdzzFeN3xPCkSAuKI7acriFLjWDdXbsosCw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115946042262621921551?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Josh John",
+          "rating": 5,
+          "text": "Yours is one of the favorite establishments of one of my customers over here. Whenever I’m over here, I grab pizza for them and walking in the door, I’m always met with high fives. They love your zza and you make it really easy to work with. Thanks for what you do for this community. Also, love the new text and CRM system you’re using to grab reviews and feedback. Nice upgrades team!",
+          "date": "2025-01-17T19:57:59.892Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNfbGZ6ZTFnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJPDiiwW6ApAJ7Krl1pf-SlTvE2ORtX-xcL6itSTkJZo7196A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105182128675050501479?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jeff Meier",
+          "rating": 5,
+          "text": "",
+          "date": "2025-01-16T16:31:07.208Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNfX3ZXLVlBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW5fiwOD3a0Ni4icsdD4vmXv623LvH4dxuRk9UnwspHV2xj1wDTEQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105597753776936099601?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Aleta",
+          "rating": 4,
+          "text": "This place has been our favorite for decades. They have spoiled us against the lower quality chain brands that we no longer visit.  We can't go back. Their crust, sauce,  and cheese are top quality!",
+          "date": "2025-01-16T02:48:58.542Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNfdHJlY09BEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIyzfWUxqYzFMR-NjyYtT_iK83v5S7glbNZDDvJ5RYaePwRhQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113895056986153175984?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "rubes160",
+          "rating": 5,
+          "text": "This was our first time ordering from Gina Maria’s and we are completely happy. We ordered the Super Pie pizza. It was ready in the pickup time window, it was hot and it was delicious! Nothing was skimped on. This is our new favorite pizza from a small, local pizzeria. Thanks guys!",
+          "date": "2025-01-12T22:34:37.793Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNfeFByUzlnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJP6RQGrjrpvGbWfFQATy-YwGQGW_oW3Wl2oWioPRnHhxG73A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112969042712813356538?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "David Greer",
+          "rating": 5,
+          "text": "Best pizza you can get anywhere. Their Taco Pizza is the best I have ever had! It is take out or delivery only.",
+          "date": "2025-01-06T20:39:01.305Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURmbnJhLWx3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWQmuQEcPRULqhXKokqirdlgMUsJBR9D5fPygbPPQZ2q1cjLfJB-w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102266826107606554977?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jenni Engelhart",
+          "rating": 5,
+          "text": "",
+          "date": "2025-01-05T16:30:55.037Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURmbXRQdXRRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXpiu9PDo1AmfXYkKX7OJ3Mmoo6EMhog0VLLJaI9twTuVO-_K-PNA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118264422155081064456?hl=en",
+          "reviewerNumberOfReviews": 14,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kevin Meissner",
+          "rating": 5,
+          "text": "",
+          "date": "2025-01-05T00:25:21.710Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURmd3JYMHBRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKZOGlj993WZzy-Bcytu__JhAgb1Ba1qpXNqtBv29JUxtEQ_g=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103234827514945857876?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Bob D",
+          "rating": 5,
+          "text": "Online ordering is very easy. Got the time I wanted to pickup the pizza. Pizza is always good here. Spicier sauce than most pizza shops which I like!",
+          "date": "2025-01-03T22:59:32.832Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURmaEtUaFNREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL8iKmy028fHH9TUWZ2Mmu4q5OwxAiJ_9Wu7NwSOwFzJdkLhQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102344410927531636524?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jason Young",
+          "rating": 5,
+          "text": "",
+          "date": "2024-12-31T23:23:52.863Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNmX2NTNGZnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV4HJnXfomo_1HtlqgZaBejZufcb-9Du_Q6hV-QDM0xa8O1cyby=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109705453809288491955?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Eric & Heidi Christensen",
+          "rating": 5,
+          "text": "My favorite pizza place since 1980",
+          "date": "2024-12-31T02:04:51.774Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNmcGQ2ZllBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ48TeVfoScauhIZQdPsPUcsRL9OFK1sRN9WncrfOyAcS8U1w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114227747188874762428?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Shannon C Fleck",
+          "rating": 5,
+          "text": "Gina Maria's has been a family staple for years! They do not skimp on the toppings! You get what you pay for, a great quality pizza. I love their sauce. Just tried the online ordering for the first time and it went seamlessly.",
+          "date": "2024-12-31T00:23:20.686Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNmeGVXRXFBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVB3TisDoS3pKDNofcylvFQLxZnkkTOTPiLZLcg6-t3zc4X1v8=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116973826410635409164?hl=en",
+          "reviewerNumberOfReviews": 48,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Charles Lein",
+          "rating": 5,
+          "text": "",
+          "date": "2024-12-30T01:26:03.172Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNQZ2F1R1FBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX_4MdTCBs-xveWBcka8ahsVaRRZ8z-SxJ59x-IFE-GpS7cvvA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115458268531265811375?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Suvin Sdev",
+          "rating": 3,
+          "text": "",
+          "date": "2024-12-29T22:02:06.782Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNmNFkzNHNnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUFSMfkexMeJqt02DTlx-RJYQXMehEGcO1S9pmfG0wjvACyIJPwuA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103272587657690599033?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Kelly Edwards",
+          "rating": 5,
+          "text": "Favorite pizza for the last 40 years!!",
+          "date": "2024-12-22T00:35:09.036Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR2MllPeVdREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIWKuhwuH3I2BgvBBZgsb5FXRN9gm8hkUCj1dJp-bpqHFr4gQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107878709469198031686?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "patrick wells",
+          "rating": 5,
+          "text": "",
+          "date": "2024-12-21T01:26:14.278Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR2Z2FpR0N3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWeRjb1sgx5BuQAUsc0SoJByRCPdpl36m6Oawq5ikQOHZhsk8ak=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104149945112183598467?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Joe Simon",
+          "rating": 4,
+          "text": "Nothing wrong here guys, you are Gina Maria's. When I moved here this was a taste of local. You have a good thing going, just the love is missing if that makes sense over the past few years. Don't apoligize. You are great and everyone should give your slice a shot! Pizza is LOVE and Personal! :) FYI: I am a pizza snob so dont take my word for it. Pizza Battle?",
+          "date": "2024-12-09T04:35:52.467Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN2bktPQjdRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWJYXuX4Jd-zeXusbW5xcfQd-GRWw0yhCw-ckaY7VaHVsjiPCGPSQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108007019126708168737?hl=en",
+          "reviewerNumberOfReviews": 26,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Love Gordon",
+          "rating": 5,
+          "text": "Eating here for over 20 years. Best pizza in MN hands down which says a lot cuz I'm from Chicago and I'm a Beggars pizza fanatic! Now I must admit the deep dish needs adjustments but overall bomb pizza",
+          "date": "2024-12-07T02:33:09.105Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUN2b1BEb2JBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK8OgN4AChZtNYE64pIh8fS_KWLa6_T5y6yrXwov0ypuFZ7=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107825287467296420811?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Daniel Innes",
+          "rating": 5,
+          "text": "",
+          "date": "2024-12-07T01:54:40.779Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUN2d0oyY1dnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJl4xpR8gy562MDw27kdLyVyUpA47SW_Eug4cybHozVEBUp3w=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113947255187489928693?hl=en",
+          "reviewerNumberOfReviews": 40,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Julie Thompson",
+          "rating": 5,
+          "text": "The staff is always super polite and friendly -  both on the phone and in the store.  Pizza is excellent.",
+          "date": "2024-11-27T23:18:44.673Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNQOC0tUmJ3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIsoC37q5-CIyqze7ZnsyGcmK7sjuZzsNp2YB3r5OlfnFOLhA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103226395088672776851?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "J Herrmann",
+          "rating": 5,
+          "text": "Best pizza in the world! I’ve been enjoying the Greek pizza for 30 years!",
+          "date": "2024-11-27T19:10:08.697Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNQMDRtdlhnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLJfqBjUAajen8_rVgLYRpDia11FFEgUAriTIq4cTbodQ7PPQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110683516122707551087?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "be elltea",
+          "rating": 2,
+          "text": "Over priced, burnt crust, staff that didn't want to deal with customers...its close to my house but I will not go back",
+          "date": "2024-11-25T10:59:31.984Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNQMGZDNS1BRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKlghTg_vyqdR3mqLEiuZPvGVF1ESFux2N42qGKkw5LcyCsFA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103302745507240763815?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Fee Sapphire77",
+          "rating": 5,
+          "text": "Very Good!!! Handmade pizza.\nSuper tasty , affordable, an easy hot delicious dinner for your family and friends! More to devour chicken wings, garden salad, and\nCheese toast with marinara. Don’t stop RUN!! The Lunch Menu is a bonus!!! Make your way through you and yours won’t be disappointed. Gluten free is available. ( any hesitation). Thank you! Update: We ordered another large cheese burger pizza with bacon $extra. Today for lunch and all I have to say is YUM!!! everyone!!!! 😋😋😋😋😋! Thank you.",
+          "date": "2024-11-21T20:43:42.837Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQzcGJ1S05nEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWiE9pKWsxiBOsG_NZsv1PHVXbQ22oqK--My11A1G1Y-VJnEgE=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110068527256838700711?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Justin Smith",
+          "rating": 4,
+          "text": "Love gina Maria's bit this place is kinda dingy looking. Food is good, but a but pricey- even for lunch special. Overall good though.",
+          "date": "2024-11-17T01:02:48.320Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQzcGRMSVBREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXHz5oKCDHSrczmaNVXch74SCfForNS0z46ZuGBDTId9CxQjTDFEg=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113330257063715708021?hl=en",
+          "reviewerNumberOfReviews": 441,
+          "sentiment": "positive"
+        },
+        {
+          "author": "FIRST & LAST NAME",
+          "rating": 5,
+          "text": "Pizza and wings were delicious. There is no place to eat here, but food was worth it. Some called it pricey",
+          "date": "2024-11-10T12:19:15.296Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUMzci1EZmpRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIZASxZVNSo2uyoJwmEa6mqUEB8AtaJaKNtJDe9riFBro4I3LI=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110467558302796192992?hl=en",
+          "reviewerNumberOfReviews": 409,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Michelle Rebhahn",
+          "rating": 5,
+          "text": "Always hot and fresh.",
+          "date": "2024-11-07T20:23:53.093Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUMzOWRUbWV3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKzFZoLMUEEADeT9dzLAJQw5KuOLagki3z8F8fJlaLJHeSK=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107881382524551930979?hl=en",
+          "reviewerNumberOfReviews": 34,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Theresa J",
+          "rating": 5,
+          "text": "I called in to order a pizza, but I forgot to verify my address. As a result, my pizza went to my parents' home. My dad called and then we asked the driver to drive to my house; he agreed and earned an extra tip for the fantastic service.",
+          "date": "2024-11-04T19:49:14.686Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUMzbXE3OVFnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLcUiLiSTz0-Y2LxeP7pUFUmwv6cfCYBeIH0II4fvPz0ZRr9w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101160619293198200361?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Melissa Tauer",
+          "rating": 5,
+          "text": "Pizza was hot and so good! 😊",
+          "date": "2024-11-03T02:21:51.277Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUMzNU42T2xBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKygh8o-LpbsJoUsGph5zJf6EWhFq_Puba4Ac8TmsL8S5dNnQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105459634036514977182?hl=en",
+          "reviewerNumberOfReviews": 14,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Brandon Munos",
+          "rating": 5,
+          "text": "One of my favorite pizza places; so many more to come, I can't just have one. But their sauce is SOOOOO delicious I can't help but get it 3 days a week while I'm working as a delivery driver; really saves me. And their pizza by the slice is great and convenient.",
+          "date": "2024-11-02T00:23:52.975Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUMza1BmR2lnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWug13YjNf145NsUXbqABrGMVzvFN4QUPmV9HwMTEUbOWjJT5M5VQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104438781092690892520?hl=en",
+          "reviewerNumberOfReviews": 81,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Craig Stephens",
+          "rating": 5,
+          "text": "Consistently the best take out pizza!",
+          "date": "2024-10-23T22:53:45.671Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURYdUlDTUVnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVSsd85jzjSoZ7P52gFKhovIzTUSnUWhrLjVNOSlV8vHyNQxxwS9A=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108794695087858766000?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Greg D",
+          "rating": 1,
+          "text": "Horrible go inslide to order three hogies and cheese bread they gave my cheese bread to a different customer and my three hogies were burnt. Will never go here again. It used to be great but there is serious problems if you think people want to eat burnt hogies! Stay far away!",
+          "date": "2024-10-19T02:02:19.155Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNYMWN1aWdnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIt8dPII7jOrUYH-hWaxAcDcRdltvna6jXwoRbdSn48fyn-Ydo=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101353679771013237634?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Kris H",
+          "rating": 1,
+          "text": "Garlic cheese bread is disgusting. Basically hot dog bun with so much cheese on it it's just a mushy pile of slop. Save your money and go elsewhere.",
+          "date": "2024-10-14T00:38:52.803Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNYck9IUGx3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI39_m-Iig8TRiO60C64f2hRSqsfjKyAsSl_NN5acffN173KQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114929118232637996196?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Jose Hernández",
+          "rating": 5,
+          "text": "",
+          "date": "2024-10-12T19:40:17.199Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNYcVBIcGNBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLk3EV491BqJ2jYexIMoF1S8CH9Do-FcBltHqXyaFgWqprZTt4=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114671861647182934518?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jessica Vanderheyden",
+          "rating": 2,
+          "text": "",
+          "date": "2024-10-12T18:26:04.243Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNYeUpmcE9BEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV4eEb7PbHtmDtwtRKI7cx7meXEemECh0uMs9F3_8dxTfs445whwA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102292031750762974080?hl=en",
+          "reviewerNumberOfReviews": 26,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Brian Chilman",
+          "rating": 5,
+          "text": "The bbq chicken pizza is out of this world.",
+          "date": "2024-10-06T13:00:43.895Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURuZ2FLWk5BEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ_L9i3Ds8fbnZuTz1CT35TKcBj0bDoa6UYxSg_-JmEUeFPQQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111736480591341912572?hl=en",
+          "reviewerNumberOfReviews": 47,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Richard Xiong",
+          "rating": 4,
+          "text": "",
+          "date": "2024-09-29T03:52:00.139Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNuX1l1d3Z3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLOZyZtDHUWKROPSsQtk3d5bkVK_u5FPqpt1AfiOvNUXCE2TA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100383472777234972675?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Lynn Foley",
+          "rating": 1,
+          "text": "For the 1st time in over 40 years ordering from Gina Marie's I am thoroughly disappointed 😞 Not only did I wait almost 2 hours to have my pizza delivered after being told it would take 45 minutes but sat on hold 10 minutes while following up on my order only to be to told how they were short staffed and all pizza were out for delivery!  At least if they had given me an honest delivery time I could have decided which it was not as it arrived overdone in my opinion and cold according to my husband.  Thankfully we have other choices next time and then your delivery person will not be so overworked.",
+          "date": "2024-09-15T02:47:14.383Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURIdXVuSG93RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIBVsd7evB4NMhKyhKqCA3-dB8FCxOP92zKvT5UUt-4bbCSWg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108022762757519130865?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Thomas Shannon",
+          "rating": 5,
+          "text": "First time there and the pizza was fantastic",
+          "date": "2024-09-05T00:50:09.251Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNIanFubFRREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWod9TZxntHvCkXMyCDMPn5FFhxsBU_Dly7EBKxwNM5SpGipYGc2Q=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111881189018773112639?hl=en",
+          "reviewerNumberOfReviews": 36,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Captain Dave Spoor",
+          "rating": 5,
+          "text": "Best local pizza around",
+          "date": "2024-08-30T18:21:33.467Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUM4Z0otcEF3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJVGljxspuiGEPSdbkmvJewM5LVgF1BwIOVLzZfJbb00fvVdA=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113483756757746020523?hl=en",
+          "reviewerNumberOfReviews": 88,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jeffrey Slater",
+          "rating": 4,
+          "text": "",
+          "date": "2024-08-24T17:08:09.756Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQ3bnRLTXRnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIjt-zWZCjsssNtW4t4nlyclX4Ts71V2AE9SY2ITl30Kv-f7Q=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112502763801308693011?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Steve Locke",
+          "rating": 5,
+          "text": "",
+          "date": "2024-08-12T03:23:08.200Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUM3NkpUaWhBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIypzrMNnFRMWteWYP2x9-3c-92aI7SjssyaKtRh_HOa-B5og=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110488622172435518305?hl=en",
+          "reviewerNumberOfReviews": 15,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Elmer Pozuelos",
+          "rating": 5,
+          "text": "Buenos precios amplio parqueo",
+          "date": "2024-08-11T15:00:21.437Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUM3MExUbURREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIReM7a_XDFHT63ZSHVMOoPYqiSHPePDrgVM1CUUJ5H62TnIA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112181312051544560304?hl=en",
+          "reviewerNumberOfReviews": 65,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kevin Mann",
+          "rating": 5,
+          "text": "Great inexpensive lunch.",
+          "date": "2024-08-09T19:12:35.834Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURidS1MakJREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUn-vBp2WIpcnRwXcSeIX1viLxOXp5sc-2_ot1dX0c6LS6FoLfhOA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109246002711931237433?hl=en",
+          "reviewerNumberOfReviews": 21,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Saurabh Raj Singh",
+          "rating": 5,
+          "text": "",
+          "date": "2024-08-09T01:33:17.240Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURiNC1fUHVBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW6SKg2CmNywWL3TwkxPy_QtfF11yIusQvjvhBYV6YZSnnwm0ED=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109389787080950233550?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "kfmckay1991",
+          "rating": 5,
+          "text": "",
+          "date": "2024-08-03T21:30:19.294Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURic3UtSklREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVx7i4OatMm--WDIbGP7Sf21E5f8bhVcwcMnaRX6MTurTbrEOVE=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109003273181551215698?hl=en",
+          "reviewerNumberOfReviews": 51,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jon Brantner",
+          "rating": 3,
+          "text": "In the 2 years I lived at shadow green apartments, I ordered there 3 times. The pizza is good, the price not so much. I'm not knocking them as they seem to always be busy.  Personally, I think they need to lower prices.\nI just moved from Eden Prairie to Blaine, I hope they take this as constructive criticism and not as a  attack.",
+          "date": "2024-07-21T04:11:03.444Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURydDZLVWtBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVMbIBahF4w6UAWRKFZMbCJKicdyMU0vsN2qqMOxSaoc7RwhFI=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108505642630699893717?hl=en",
+          "reviewerNumberOfReviews": 21,
+          "sentiment": "positive"
+        },
+        {
+          "author": "JJean",
+          "rating": 5,
+          "text": "I've been trying different pizza joints since I moved back to the area from Duluth (where the pizza kinda sucks) and this is by far the best. I just like a basic cheese thin crust and they didn't disappoint, it was delicious! No frills just damn good pizza. Our new go-to pizza place. So happy I came across it. We thoroughly enjoyed it. 😊",
+          "date": "2024-07-11T02:00:44.268Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNyczZ5Z3B3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUyJ_ebuVf0pRHT2odU1lNB1G2daXcdFOZYLa7Vy5VnEbuDus3P=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109449801380903632099?hl=en",
+          "reviewerNumberOfReviews": 35,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Patrick Braun",
+          "rating": 4,
+          "text": "",
+          "date": "2024-07-10T01:06:25.474Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNyelpIVlZ3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVQZYAhlYslw6l2pW58f4BfuCf7DQkU0s3jLbWK33VQYbMRPiUL=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106854727411568674329?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Evan Sanders",
+          "rating": 5,
+          "text": "Best pizza in town and a nice local business with friendly staff",
+          "date": "2024-07-02T17:28:47.544Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURMMzVpZG5RRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJSF4Atj0D8G6DsML-oNmOr0xy0ouDOhD_3S_7Ahj-8JovMWw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101767530863021358942?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "yuli bautista",
+          "rating": 5,
+          "text": "",
+          "date": "2024-06-25T14:52:02.424Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURMcE12VFh3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLG6yfO7EH48kmEsSZfwgIIti5xl_ISg2hSVcQBi6R51acBww=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104530834047865829306?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mary Adame",
+          "rating": 5,
+          "text": "",
+          "date": "2024-06-14T21:39:45.875Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNMMkpfYnd3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJYd9oLTupTgTsBAbBRdoYcutwfvCmuOz8kCW-QlSbkw1eGsQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109126137675205641899?hl=en",
+          "reviewerNumberOfReviews": 122,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jordan Robertson",
+          "rating": 5,
+          "text": "Some of our favorite pizza.",
+          "date": "2024-06-13T01:39:12.752Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR6NTl5Vk1BEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVdXmQmrk5EDrtAVuBhNh14ZsDyLpycdc4C3-HJfEbw9UzOHjBq=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116512327778914849883?hl=en",
+          "reviewerNumberOfReviews": 24,
+          "sentiment": "positive"
+        },
+        {
+          "author": "mitch norman",
+          "rating": 5,
+          "text": "Real good pizza and people",
+          "date": "2024-06-12T19:40:13.953Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR6LS1iWFhnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJFPbMVDrgFmm6CEsRMlrtC1K1G-bdEHEK04-iAonXjNBsGBQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100938915588286271117?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "V Dai",
+          "rating": 5,
+          "text": "We’ve stopped nearby to top up the petro and find this pizzeria. Their pizza (we’ve order Hawaiian pizza)and chicken wings are superb! Staff behind the counter named Matthew is super helpful too. Definitely recommended!",
+          "date": "2024-06-12T07:58:05.563Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUR6czZuVG9nRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXCV2IzJL5n1o8GN20F_I9XRmjf-XXWyQf9WKML5sVbOIUIklEO=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114525365249944085549?hl=en",
+          "reviewerNumberOfReviews": 39,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jon Dahl",
+          "rating": 5,
+          "text": "",
+          "date": "2024-06-09T23:25:04.145Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR6MXNYY1FREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX-TypmdBfwd_BXvhY2QIloRChXHNzGD5idQB90BQ3kpWe0vI1f=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100871619072198367363?hl=en",
+          "reviewerNumberOfReviews": 42,
+          "sentiment": "positive"
+        },
+        {
+          "author": "T Winz",
+          "rating": 5,
+          "text": "Hawaiian pizza and naked wings were fantastic as usual. My co-workers loved them too.",
+          "date": "2024-05-30T00:40:11.102Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUN6a0pMa0pBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIqA1Il310l77Wqcqt2WEdfZ00iPUzNzVzQKrXLLgvZQQXnCg=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114256518048452537794?hl=en",
+          "reviewerNumberOfReviews": 293,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Deon Marshall",
+          "rating": 5,
+          "text": "",
+          "date": "2024-05-19T03:18:03.747Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNUaTdEOEdREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVxRXLUD_v5_kV8eDtytAKccEJevq6hGOxH6mNyg66YYsOnmt2riw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105122085208120410930?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Brandon Storkamp",
+          "rating": 5,
+          "text": "I am frequently here. The pizza is awesome especially on Tuesdays.",
+          "date": "2024-05-01T19:37:16.457Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURqcXNmeHp3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWtF76kMDLqtpZ1bpNLOOCev1GQ96S5GI0AKlKigMGQBCGY9h_vlA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100766891260744857573?hl=en",
+          "reviewerNumberOfReviews": 103,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Matt S",
+          "rating": 5,
+          "text": "I love their lunch special combo slice.",
+          "date": "2024-04-29T21:06:24.567Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURqMU9TSW1nRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIF_xq1ZVr85Ouz6N6koGKCi-7WNxWocfbgWRmOAdeKD1uoig=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103274041813636365430?hl=en",
+          "reviewerNumberOfReviews": 31,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Adam Johnson",
+          "rating": 5,
+          "text": "",
+          "date": "2024-04-29T01:20:08.982Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURqbU0zczh3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIBWB5o5rgkIxZRBv_K_jTkhnpbc0jF2CPMuIxEHWQkiH89ww=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116770752645718674434?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        }
+      ],
+      "customerMoodAnalysis": {
+        "overallMood": "delighted",
+        "sentimentSummary": "Customers are genuinely thrilled with their experience. With an average 4.5/5 rating across 100 recent reviews, your restaurant consistently exceeds expectations.",
+        "sentimentDistribution": {
+          "ecstatic": 3,
+          "delighted": 78,
+          "satisfied": 12,
+          "neutral": 0,
+          "frustrated": 2,
+          "disappointed": 3,
+          "angry": 2
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "food quality",
+            "mentions": 22
+          },
+          {
+            "theme": "service excellence",
+            "mentions": 11
+          },
+          {
+            "theme": "value for money",
+            "mentions": 4
+          },
+          {
+            "theme": "overpriced",
+            "mentions": 4
+          },
+          {
+            "theme": "food issues",
+            "mentions": 4
+          },
+          {
+            "theme": "speed of service",
+            "mentions": 2
+          },
+          {
+            "theme": "slow service",
+            "mentions": 1
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 19,
+          "satisfaction": 27,
+          "disappointment": 3,
+          "frustration": 0,
+          "anger": 0
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "Customers consistently praise the delicious taste and quality of Gina Maria's pizza, highlighting its thin, crunchy crust and flavorful toppings. - social media marketing can showcase this strength",
+            "The text club offers great deals and a fun birthday treat, encouraging repeat visits and customer loyalty. - Boostly marketing services can amplify this",
+            "Gina Maria's provides excellent service with on-time delivery, often exceeding customer expectations by delivering faster than promised. - SEO services can leverage this for better visibility"
+          ],
+          "improvementOpportunities": [
+            "Negative reviews and reputation issues due to poor customer service and delivery experiences - review management can address this concern",
+            "Long wait times and delivery issues leading to customer dissatisfaction - Boostly marketing services can improve this",
+            "Perception of high prices and competition with other pizza brands - social media marketing can improve this area"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 100,
+          "averageRating": 4.6,
+          "ratingDistribution": {
+            "1": 5,
+            "2": 2,
+            "3": 5,
+            "4": 9,
+            "5": 79
+          },
+          "sentimentTrends": {
+            "trend": "stable",
+            "recentAverageRating": 4.6,
+            "previousAverageRating": 4.5,
+            "recentReviewsCount": 10
+          }
+        }
+      },
+      "examples": {
+        "positive": [
+          {
+            "author": "Nicholas Kindelspire",
+            "rating": 5,
+            "text": "Went for lunch. Quick when buying the slices. Plenty of food for one.",
+            "date": "2025-09-06T10:54:46.465Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2twYVUxZGZhbW8xVEhZMllTMU5kbE4wTlRKaWFIYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXNf3KiK9otxQw0ZlKSfUp3qE15eb6ZSzpvNKQ4gXh2akH888eU=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/103795849156880458338?hl=en",
+            "reviewerNumberOfReviews": 9
+          },
+          {
+            "author": "Jacki Leyk",
+            "rating": 5,
+            "text": "Always friendly, pizza is delicious! My favorite pizza place!",
+            "date": "2025-09-04T20:55:08.253Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURiN0lUYW5BRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLy6qexBdXieTZ_SrwKoxXynKUsX8Vkm1RMtdV4o_crGb8nnas=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/107964264785461788900?hl=en",
+            "reviewerNumberOfReviews": 14
+          },
+          {
+            "author": "Jenna Leehan",
+            "rating": 5,
+            "text": "Sign up for their text club to get great deals a fun birthday treat. Their pizza is always delicious!",
+            "date": "2025-09-04T00:39:34.536Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tacFNXZFJMVXRKWms1dk4xTjBUM2xzVmxWR2VuYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUz-V_gKSFV0zPOGXo31JBlFE2b6tR9WrRkNlRPpw01cbXMPuo=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/115788448078119461735?hl=en",
+            "reviewerNumberOfReviews": 6
+          }
+        ],
+        "neutral": [
+          {
+            "author": "Jeffrey Hartfiel",
+            "rating": 3,
+            "text": "2 slices and a pop for a reasonable price. Good pizze. Think they are a little heavy handed on black olives .",
+            "date": "2025-04-28T01:28:13.288Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURvdmVYSkFREAE",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLeYr9mCd9e8uS6WW00BK8QT5D3Ed2sNGb5koOSyI66y1sBVw=s1920-c-rp-mo-ba4-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/111839798049243295277?hl=en",
+            "reviewerNumberOfReviews": 207
+          },
+          {
+            "author": "Jay E P",
+            "rating": 3,
+            "text": "I would rate Gina Maria's Pizza quality and taste to be middle of the road as their well above any Domino's, Papa John's, Old Chicago, and Sarpinos, yet, fall below the standards of Pizza Luce, Red's Savoy, and Wrecktangle Pizza.",
+            "date": "2025-04-13T16:04:32.024Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURJbC0tSTJ3RRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXkjCIKETRWuvR9N2Wv9GKAG7dBNPXeqMGexGNz0gcOhHsbeioaQg=s1920-c-rp-mo-ba5-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/105422247033466832061?hl=en",
+            "reviewerNumberOfReviews": 321
+          },
+          {
+            "author": "Benjamin Wenker",
+            "rating": 3,
+            "text": "It's pretty mediocre pizza. And for what they are charging? I can't say I'll be ordering again.",
+            "date": "2025-01-30T06:34:08.612Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNBdlBTV0hnEAE",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKIs2PxM5bFtf33OjkBq81ln4e02d3kTzAWj7PHxP4dIKOAuQ=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/115390242999680884913?hl=en",
+            "reviewerNumberOfReviews": 10
+          }
+        ],
+        "negative": [
+          {
+            "author": "Richard Hodne",
+            "rating": 1,
+            "text": "Last Friday 07/18/25 my grandson was visiting. He asked for a Gina Maria’s taco pizza so I ordered one on my credit card. When the guy asked about a tip, I explained that the deliveries under the new owners had been so unreliable that I have stopped tipping until that improves. When the pizza arrived, I was busy, so my grandson answered the door. The delivery driver pressured my grandson to sign for a tip on my credit card. When he appropriately said no, the driver berated him and told him to learn to give tips. Later that day, after my grandson had left, I called and asked for a manager. I complained about the driver and he put me on hold. Another guy with a Mexican accent got on the phone. He was the new owner Ulises and he told me that he was the one that delivered the pizza and berated my grandson. We got into an argument. In my opinion, he has no integrity and is destroying the historic Gina Maria’s 5 star reputation. The last 8 months I’ve been buying about half my pizzas elsewhere. After this experience I will buy all my pizzas elsewhere. I hope that Ulises goes out of business…\nFYI - Here is my previous review from 11/23/24…\nI’ve been buying Gina Maria’s pizzas since 1987 (37 years). Throughout the majority of that time, they were family owned and operated and I considered them a 5 star business with 5 star pizza. They finally sold the business and retired. The new owners have failed to maintain the standards previously kept. The last pepperoni & sausage pizza I ordered on 11/09/24 was so spicy hot that it burned our months and we couldn’t finish it (I threw it in the garbage). Last night I ordered a taco pizza, but it was never delivered. I called 3 times. The first two times I was told they were under-staffed, but that the driver just left with my pizza. The third time I called I asked for a manager. A guy with an accent said that he was a manager and I explained that my pizza was already one hour overdue. He said that the driver was out with my pizza. I told him to cancel the order and to refund my money. He said I could keep the pizza for free when it arrived, but it never came. Although he agreed to refund my money, the charge is still on my credit card today. I called the store just now and the manager on duty today said that yesterday’s manager did not refund the money, but that she will. I expressed my disappointment in how Gina Maria’s had declined. She did not disagree. (Note – I never got my money back, but I raised enough heck that my next pizza was free)",
+            "date": "2025-07-23T19:26:53.229Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNQeHRfYWZBEAE",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLspD1CbCxt3lkwLzSWbLV44_zGShm_7df4SKoAoizzYS2eZA=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/104240391373088553062?hl=en",
+            "reviewerNumberOfReviews": 21
+          },
+          {
+            "author": "matt sather",
+            "rating": 1,
+            "text": "I used to absolutely love this place I would have claimed it to be the best pizza place.  However my last 3 experiences in the last 3 years have been horrible.  Including our pizza we ordered last night, after paying 32$ to get a large 2 topping pizza delivered, the pizza still had RAW DOUGH everywhere, only like 15 pepperonis on the whole pizza.  it was almost like they cooked it for half the time in a rush to get the pizza delivered.  I didn't even waste my time to call them, I am just done, they can keep my 32$ from last night because I will never order from Gina's again.\n\nI would have rather gotten a little ceasers $5 pepperoni, at least it would have been cooked, and if Gina's wants to call or email me you got my contact info.",
+            "date": "2025-03-09T01:53:00.921Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURRcE43UFpnEAE",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIVDGkM90rgUS2K7brjwueNr5KwMWAN4ReLLb_onrpD1Z3zDw=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/102362332673292548225?hl=en",
+            "reviewerNumberOfReviews": 26
+          },
+          {
+            "author": "be elltea",
+            "rating": 2,
+            "text": "Over priced, burnt crust, staff that didn't want to deal with customers...its close to my house but I will not go back",
+            "date": "2024-11-25T10:59:31.984Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNQMGZDNS1BRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKlghTg_vyqdR3mqLEiuZPvGVF1ESFux2N42qGKkw5LcyCsFA=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/103302745507240763815?hl=en",
+            "reviewerNumberOfReviews": 9
+          }
+        ]
+      },
+      "trends": {
+        "ratingTrend": "stable",
+        "volumeTrend": "stable",
+        "responseRate": 0,
+        "averageResponseTime": "No responses"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ]
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/ginamariaspizza",
+      "instagram": "https://www.instagram.com/ginamariaspizza",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 63,
+      "social": 100,
+      "local": 81,
+      "reviews": 93,
+      "overall": 84
+    },
+    "originalScores": {
+      "seo": 75,
+      "overallScore": 72,
+      "performance": 80,
+      "userExperience": 70
+    },
+    "migratedAt": "2025-09-16T00:37:21.278Z"
+  },
+  "metadata": {
+    "cachedAt": "2025-09-15T17:34:02.760Z",
+    "expiresAt": "2025-10-15T17:34:02.760Z",
+    "placeId": "ChIJA-uOINQY9ocRTAWKcur8J-o",
+    "restaurantName": "Gina Maria's Pizza",
+    "cacheVersion": "2.0.0"
+  }
+}

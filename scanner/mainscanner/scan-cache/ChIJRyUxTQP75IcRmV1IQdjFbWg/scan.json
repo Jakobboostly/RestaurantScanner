@@ -1,0 +1,1919 @@
+{
+  "data": {
+    "domain": "happyjoescr.com",
+    "restaurantName": "Happy Joe's Hiawatha",
+    "placeId": "ChIJRyUxTQP75IcRmV1IQdjFbWg",
+    "overallScore": 74,
+    "performance": 88,
+    "seo": 83,
+    "mobile": 68,
+    "userExperience": 78,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "pizza near me",
+        "position": 0,
+        "searchVolume": 210,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery Hiawatha",
+        "position": 3,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://happyjoescr.com/",
+        "title": "Happy Joe's Pizza - Cedar Rapids & Hiawatha",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best pizza Hiawatha",
+        "position": 5,
+        "searchVolume": 0,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://happyjoescr.com/",
+        "title": "Happy Joe's Pizza - Cedar Rapids & Hiawatha",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza",
+        "position": 0,
+        "searchVolume": 210,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza places near me",
+        "position": 0,
+        "searchVolume": 20,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza Hiawatha Iowa",
+        "position": 2,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://happyjoescr.com/",
+        "title": "Happy Joe's Pizza - Cedar Rapids & Hiawatha",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery near me",
+        "position": 0,
+        "searchVolume": 40,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza open now",
+        "position": 0,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 0,
+        "keywords_appeared": 0,
+        "total_keywords": 8,
+        "average_position": 0,
+        "best_position": 0
+      },
+      "keyword_results": [
+        {
+          "keyword": "pizza near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Pizza Hut",
+              "address": "Cedar Rapids, IA ",
+              "website": "",
+              "rating": 3.5,
+              "reviews": 273
+            },
+            {
+              "position": 2,
+              "name": "Pizza World",
+              "address": "Cedar Rapids, IA ",
+              "website": "https://pizzaworldiowa.com/",
+              "rating": 4.2,
+              "reviews": 333
+            },
+            {
+              "position": 3,
+              "name": "Pizza Daddy",
+              "address": "Cedar Rapids, IA ",
+              "website": "http://www.pizzadaddy.net/",
+              "rating": 4.1,
+              "reviews": 341
+            }
+          ]
+        },
+        {
+          "keyword": "pizza",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Pizza Hut",
+              "address": "Cedar Rapids, IA ",
+              "website": "",
+              "rating": 3.5,
+              "reviews": 273
+            },
+            {
+              "position": 2,
+              "name": "Hunt Brothers Pizza",
+              "address": "Hiawatha, IA ",
+              "website": "http://www.huntbrotherspizza.com/",
+              "rating": 4.5,
+              "reviews": 2
+            },
+            {
+              "position": 3,
+              "name": "Pizza World",
+              "address": "Cedar Rapids, IA ",
+              "website": "https://pizzaworldiowa.com/",
+              "rating": 4.2,
+              "reviews": 333
+            }
+          ]
+        },
+        {
+          "keyword": "best pizza Hiawatha",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "pizza delivery near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Marco's Pizza",
+              "address": "Cedar Rapids, IA ",
+              "website": "https://www.marcos.com/our-locations/restaurants/IA/Cedar%20Rapids/marcos-pizza-c-ave-ne-cedar-rapids-1",
+              "rating": 4,
+              "reviews": 285
+            },
+            {
+              "position": 2,
+              "name": "Pizza World",
+              "address": "Cedar Rapids, IA ",
+              "website": "https://pizzaworldiowa.com/",
+              "rating": 4.2,
+              "reviews": 333
+            },
+            {
+              "position": 3,
+              "name": "Pizza Daddy",
+              "address": "Cedar Rapids, IA ",
+              "website": "http://www.pizzadaddy.net/",
+              "rating": 4.1,
+              "reviews": 341
+            }
+          ]
+        },
+        {
+          "keyword": "pizza Hiawatha Iowa",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Lucky Penny",
+              "address": "Hiawatha, IA ",
+              "website": "http://www.luckypennypub.com/",
+              "rating": 4.3,
+              "reviews": 781
+            },
+            {
+              "position": 2,
+              "name": "Tomaso's Pizza",
+              "address": "Hiawatha, IA ",
+              "website": "http://www.tomasos4me.com/",
+              "rating": 4.3,
+              "reviews": 251
+            },
+            {
+              "position": 3,
+              "name": "Hunt Brothers Pizza",
+              "address": "Hiawatha, IA ",
+              "website": "http://www.huntbrotherspizza.com/",
+              "rating": 4.5,
+              "reviews": 2
+            }
+          ]
+        },
+        {
+          "keyword": "top pizza Hiawatha",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "pizza restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Leonardo's",
+              "address": "Cedar Rapids, IA ",
+              "website": "https://leonardoscr.com/",
+              "rating": 4.4,
+              "reviews": 1400
+            },
+            {
+              "position": 2,
+              "name": "Pizza Daddy",
+              "address": "Cedar Rapids, IA ",
+              "website": "http://www.pizzadaddy.net/",
+              "rating": 4.1,
+              "reviews": 341
+            },
+            {
+              "position": 3,
+              "name": "Pizza World",
+              "address": "Cedar Rapids, IA ",
+              "website": "https://pizzaworldiowa.com/",
+              "rating": 4.2,
+              "reviews": 333
+            }
+          ]
+        },
+        {
+          "keyword": "pizza food Hiawatha",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Hunt Brothers Pizza",
+              "address": "Hiawatha, IA ",
+              "website": "http://www.huntbrotherspizza.com/",
+              "rating": 4.5,
+              "reviews": 2
+            },
+            {
+              "position": 2,
+              "name": "Lucky Penny",
+              "address": "Hiawatha, IA ",
+              "website": "http://www.luckypennypub.com/",
+              "rating": 4.3,
+              "reviews": 781
+            },
+            {
+              "position": 3,
+              "name": "Pizza World",
+              "address": "Cedar Rapids, IA ",
+              "website": "https://pizzaworldiowa.com/",
+              "rating": 4.2,
+              "reviews": 333
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"pizza near me\", \"pizza\", \"best pizza Hiawatha\", \"pizza delivery near me\", \"pizza Hiawatha Iowa\", \"top pizza Hiawatha\", \"pizza restaurant near me\", \"pizza food Hiawatha\" - optimize Google My Business profile with these keywords",
+        "Low Local Pack visibility (0%) - audit your Google My Business completeness, categories, and local citations"
+      ],
+      "scan_metadata": {
+        "location": "Hiawatha,Iowa,United States",
+        "timestamp": "2025-09-16T01:53:13.362Z",
+        "total_scan_time_ms": 37682
+      }
+    },
+    "competitors": [
+      {
+        "name": "Lucky Penny",
+        "domain": "luckypenny.com",
+        "performance": 86,
+        "seo": 77,
+        "accessibility": 73,
+        "bestPractices": 82,
+        "overallScore": 80,
+        "rating": 4.3,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1077,
+        "keywords": 50,
+        "domainAuthority": 84,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+150 keywords",
+        "authorityGap": 5,
+        "backlinks": 923
+      },
+      {
+        "name": "Oscar's Restaurant",
+        "domain": "oscarsrestaurant.com",
+        "performance": 92,
+        "seo": 83,
+        "accessibility": 78,
+        "bestPractices": 87,
+        "overallScore": 85,
+        "rating": 4.6,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1153,
+        "keywords": 39,
+        "domainAuthority": 83,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+300 keywords",
+        "authorityGap": 9,
+        "backlinks": 692
+      },
+      {
+        "name": "The Pedaler's Fork",
+        "domain": "thepedalersfork.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 956,
+        "keywords": 34,
+        "domainAuthority": 73,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+250 keywords",
+        "authorityGap": 8,
+        "backlinks": 859
+      },
+      {
+        "name": "the hip-stir",
+        "domain": "thehipstir.com",
+        "performance": 92,
+        "seo": 83,
+        "accessibility": 78,
+        "bestPractices": 87,
+        "overallScore": 85,
+        "rating": 4.6,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 597,
+        "keywords": 34,
+        "domainAuthority": 79,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+300 keywords",
+        "authorityGap": 9,
+        "backlinks": 767
+      },
+      {
+        "name": "The Blind Pig",
+        "domain": "theblindpig.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1410,
+        "keywords": 30,
+        "domainAuthority": 74,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+250 keywords",
+        "authorityGap": 8,
+        "backlinks": 935
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 86,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-16T01:53:47.921Z",
+    "businessProfile": {
+      "name": "Happy Joe's Hiawatha",
+      "address": "1950 Blairs Ferry Rd, Hiawatha, IA 52233, USA",
+      "rating": 4,
+      "reviewCount": 55,
+      "phoneNumber": "(319) 200-7100",
+      "website": "http://happyjoescr.com/",
+      "formatted_address": "1950 Blairs Ferry Rd, Hiawatha, IA 52233, USA",
+      "address_components": [
+        {
+          "long_name": "1950",
+          "short_name": "1950",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Blairs Ferry Road",
+          "short_name": "Blairs Ferry Rd",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Hiawatha",
+          "short_name": "Hiawatha",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Linn County",
+          "short_name": "Linn County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Iowa",
+          "short_name": "IA",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "52233",
+          "short_name": "52233",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "state": "Iowa",
+      "city": "Hiawatha",
+      "place_id": "ChIJRyUxTQP75IcRmV1IQdjFbWg",
+      "business_status": "CLOSED_PERMANENTLY",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "reviews": [
+        {
+          "author_name": "Aaron Lehrman",
+          "author_url": "https://www.google.com/maps/contrib/114191817115635786450/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUsGJrsfWeLJQDjGbWKQHHbVWu5IqUr1EufSpBtdPMlBcjYaEASYA=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "Family favorite just like I remember from when I was a kid!\n\n- Pan Bacon: Classic!  The crust comes up at the edges and is soft and not too thick.  Be careful ordering extra bacon as the normal amount is already a lot.  We like bacon a lot and extra bacon was too much.  So good, though!\n\n- Original Bacon: The original crust was a little on the thinner side, almost too thin.\n\n- Gluten-Free Pepperoni: My wife and daughter shared a gluten-free pepperoni pizza and both thoroughly enjoyed it!  They are both not super sensitive to gluten, though.  If you are really sensitive, this place will not work for you.\n\nWe had the pizzas on Friday at 5pm.",
+          "time": 1721179570,
+          "translated": false
+        },
+        {
+          "author_name": "Sydney Koeppen",
+          "author_url": "https://www.google.com/maps/contrib/106823588841080050110/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKR8H02OGazVubHVrUZHYUxOMWZHO0a9Jcc3cQRfKCW1XJqt9s=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "We get happy joes every Tuesday for the 25% off discount. The employees have always been very friendly and have gone out of their way to be kind! I wish I could remember the person's name who helped me tonight, because he was wonderful! Their taco pizza is 10/10, and everything else is decent too, but nothing out of this world like you might get at a small local pizza place.",
+          "time": 1720580561,
+          "translated": false
+        },
+        {
+          "author_name": "iowanole",
+          "author_url": "https://www.google.com/maps/contrib/106527235730810293825/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK9JvFISIt4uz58KtNsev-PqUJQcVKdUzvt4GY7M-jZJPv9Yg=s128-c0x00000000-cc-rp-mo",
+          "rating": 1,
+          "relative_time_description": "a year ago",
+          "text": "Ordered online for delivery.   Delivery time was 2 hours, which wasn't an issue for us.  The problem lied in that the pizzas had clearly been in the delivery vehicle for most of that time frame. The pizzas were inedible by the time they arrived.  The delivery driver was very pleasant, which was the only bright spot.  $55 for 2 pizzas that we couldn't eat isn't ideal.",
+          "time": 1715562527,
+          "translated": false
+        },
+        {
+          "author_name": "Elizabeth Berry",
+          "author_url": "https://www.google.com/maps/contrib/113778397203748300388/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXHCL0iJO0GbZtHh0O4WDHRLGxvK8yMFbQSyn1g6S9yaryyK2TyCg=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 2,
+          "relative_time_description": "a year ago",
+          "text": "We ordered happy joes tonight for the first time since the sit down restaurant closed. It tasted a little off but again I haven’t had it in forever. 2 hours later my son and I both are having to run to the restroom and are super puky! Definitely feels like a case of food poisoning",
+          "time": 1719109184,
+          "translated": false
+        },
+        {
+          "author_name": "Sam Clingan-Siverly",
+          "author_url": "https://www.google.com/maps/contrib/115014531658903491987/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXmEhlpnSV-xd_Cl7P0IGFwQogA5hKz1kPcftzuSHzrgpAs4ze5Mg=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 years ago",
+          "text": "The person who took our order was the most friendly person. The kind of person that really just lights up your day no matter what mood you are in.\nOrdered a taco pizza and it is sooo tasty. Best taco pizza ever!\nAnd the lobby was so nicely decorated too! Just a very welcoming environment overall.\nI'll definitely be back.",
+          "time": 1672976151,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 2252,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101918016138117081368\">Keshav Kumar</a>"
+          ],
+          "photo_reference": "AciIO2fQB7CpKsPy5iDH33XPFYDODK5bRhr9iCQ1b-4EbEseLoZYz5Fayk9bDzRdfG9_BhOR7_VQaiYjZnmPUrln9aRmA9PL4g8WQiozgAK30HaBS-RENcrpJFDZTDVeMqH_TUrzoG8Sl5MQAPwJCTJMnXDb8pA1iCRzVxXNC_a4eHWxrcF1-CGuyF6lbuq5OcohjxnCfBdko_YtdvSnCBDtgdlYOcvB_0jdMsmfZV2KE6idShRkDhxVeRAFECOo5RVjnS-cYcC32IEA6f26KzPepxwKpmBz4myX22-J7qr7xqZ6UOsGAp25oTeZMlvvNsRjw1Fyy9FudD2ICVjACQzk1KcPnycFJ-gLTdkFW3FzfVJXQbTCfVuN54leOPn7Mkh0T3jTeGSIfDes3QVZU_Q7whFF6FN-HMGycGvOHA8h0HLPiRV1",
+          "width": 4000
+        },
+        {
+          "height": 667,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104078146459535595381\">Happy Joe&#39;s Hiawatha</a>"
+          ],
+          "photo_reference": "AciIO2cURVWELEbbj588M4MX4U6ZebsZJT9yBzZACJOEsvza8nVZp1hgUjHdcMVksBpoBsZZLxiYFTOEUJ5roD6nm951BlxwRZ_n0zxQgcwMAehbFt_ksFWbL-pjKlDIZvKPtpapRCD6LW7DFeAXgjwfsridstYsc-eNgVszAm93n49orDM0POFEJP43o3DBNlBKKMifMhyvne_dotUSXrELC0hBnsQnqhJqWgdR-MwPUiVDpkwQHIdRJtzsjV2kW56v2fS4IfbM2ENJY9EW_z9hthZnpPrkaO6YqAh6HzCBbgY",
+          "width": 1000
+        },
+        {
+          "height": 1499,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104078146459535595381\">Happy Joe&#39;s Hiawatha</a>"
+          ],
+          "photo_reference": "AciIO2ewRqN6z-Y99e2oc1U35m9XXKv-MGp0eg5BEJ6fwrKd3JkoF9tXKPHT183yMptXwy2tfK0rat3bzJurp6PsyhVV1dns3hVnqrrPm54mYZP4bBgNbi6j6fMEr3UgnENJbXlcbNZLEijqr7DOAdNc412aF8dgRgwqBihTcND0zRzBxqhpcSoRRa36O9R-f25gErFdkOCkmasHFCDBB-cWvYcnSWxzofL-ywpaCVTvreKbJ14dnlXa1X7JkPL-P382APkl-qrGsHVswt4wbzJxxIaYJqZbfDUmp-esWqYI3Dw",
+          "width": 2016
+        },
+        {
+          "height": 3072,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114191817115635786450\">Aaron Lehrman</a>"
+          ],
+          "photo_reference": "AciIO2egYakLd8WUxuuMLY-cAoleVOJisyIbJWFvXzXjlLxHREjgLFkvUKd2Iil-h98OgmJCWiSocC6rUOGX8eq_pvi0J6PkVz_9yT9tNtDNpEV72MGA5eQizEnHS1VzBVFxEliSbzEXRxIqD8ZJGBf8RAeZfrrdJ4LbJHpk_jddhdM9fDeFoQO9P7sEmtNmkBYNou93Y2Our5MGxcHzvOsWAIbp5BpvqxKmzeDX5N-Mjf2ZeS0qeeZOw1HFC6oG2TshMvOE3cuVr5j4zcnGU0d5iZ5KNl5ts2YLCG7GYqCx9-WX8tItY26E8RlfLYIgtDxap9EHtO-syXZORkqynmHgh7PSnOGuE8y1evTdjQg3oKxXQNwzxSrioNF4r4ZHuzOkT60wxMgPvapbbX_rEROtC02r4-8rRSNcohKV9tqxokQEjUQ",
+          "width": 4080
+        },
+        {
+          "height": 3840,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104078146459535595381\">Happy Joe&#39;s Hiawatha</a>"
+          ],
+          "photo_reference": "AciIO2f9a3eZ7rA1DPBKGPg4Q5YriCy_308-746lklzAPraNk2RUnkmbJx4baPoEaeytEyyvvOmN1q-M4QPgOOcAXTfpntiL0Q8WgsWywtPuoiMNxsBrA4kq1yWFBtPDol5EpyCrfvt-jIlyumZ0tXOq68TNghokLweo3rUlbt9olU2mxDthu-RifXn0UBHGQGFd-Mo3gTRG6R3h5416l82MukRht9ZZ3GYuTCIRVYZdZDtpQpLwFzFYGwxrj4fzT7RZMtd-B6Bn4J9H-YtK2i-Y3XpxPyyaa5RnC1YQItsTzbg",
+          "width": 2160
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100364515192141679909\">Nicole Schroeder</a>"
+          ],
+          "photo_reference": "AciIO2dWXKc1P9URFl_4rkHCoXTIp3xwz2g0CWZKT8kJsxyekRW9hxn1PvzSGJF4YM6Eug_Cb6OhkjZtO3ciejzfXkdVXzvam4sL3IHDh7Qontb1WXqobekIxJRLrQ9dX6F0hxolLVyFadcrX8pXrWWTkDm6uJXzYYiUYAL1gZTVq9aZM6ziYi_pFyC24O7qpQc9unh6krWsB55ra1oT_PR8TMAaAWMXiFf3p4D04ALXDmYg35EdEjLajsB21XGIRie9iTy2RnqmSNgtaqPyu2p9Dx26kENCGjeYxVAUHyNykSgeXdC2SttYSr47kDQMxsrKB7VCXHh0RaJ-y7dKVft37Qsf2fdTzUdoxcqfBwpVKd0fQwwVORvBF8kZMF7MUrujfATRq3GirhaHDA7I3bqPxGrHUMZZ9z66RVCp2ovJ6Fjlbg",
+          "width": 2268
+        },
+        {
+          "height": 667,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104078146459535595381\">Happy Joe&#39;s Hiawatha</a>"
+          ],
+          "photo_reference": "AciIO2eqiPvBLPLq-xbCRo3wrAbcRIS1Q88AL8QsX9Jyng9YfPQ5tREHjT7LrddARJN1Rgg_BdRew3oaEdSRWjhn86r2nh1aVYmbNjsfgZxB0jQHqce806c3xAWcUMhyqUGYFfoa0MeAUoW1UigOIqqupdcKcUP76gvZL1AudZKSoFm2PCGsKr2np65MxJK41OdBmjRlfVkoJjxN3yqOFBgtAlGDvg_9oTsjDxnk2BcilgfM9feX5SiFXFW4dDlpLjEPmyvL6CdIU9QDquqUdX5Qu66PNynXoPPXrlsLNY4Atnc",
+          "width": 1000
+        },
+        {
+          "height": 667,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104078146459535595381\">Happy Joe&#39;s Hiawatha</a>"
+          ],
+          "photo_reference": "AciIO2e3t0KLsLZqMW_HjfS6NpZ5LfEKMfhjiMbnT7tkPLWSpQiWzCn4kRPeHTIeiYGE2CXG-sryzqFvYX7DaqZy_3xqp9XofDyqHNDiIj4j1bQxAWC4phIk5zWcTs1-xE-dnH_l5cVrxnnQbUf5YtFvACIR0y-UAcp-XoS61CL9I9k1exHUUdZIttkmTaM7bW3prZJQVSZkt48bMtPEqbHq4sVMDp9dcJOALokT9hWayyCbTUCoMuox-dhsIH0LIQqZsKcFV-koFPOYYlOdTpMj9IvIuiP3dbh6s891XuYphrQ",
+          "width": 1000
+        },
+        {
+          "height": 3840,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104078146459535595381\">Happy Joe&#39;s Hiawatha</a>"
+          ],
+          "photo_reference": "AciIO2dSdjiFsLIw3SOmhOD2am2kn3T09kbUPzZa_np0TpHb2_hUcnR96999Nw-c3TGKZaI8u0g2j_Utw283YYurUr7jaCCI4NGxi_YwqJdnqDUiaa7YIP2kZ6fL9Ty8Pfoy4h596ld01sIlBFxUPMjdICxc9i00cUgkUdNtAZWxvCM6kVi3y5SvPKSgvWchISisKOTtQKpwIEArTMlbgaR-dAOUqw7omACr2nFMbwDf9sGp-rWWuAUEGBdWym1ScYv980TDw_LjtICfFMBJacve8fs_U3zz5_7So_T8z0bUZB8",
+          "width": 2160
+        },
+        {
+          "height": 667,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104078146459535595381\">Happy Joe&#39;s Hiawatha</a>"
+          ],
+          "photo_reference": "AciIO2fsULHm5UAwxQvQkxjC209XgHTefHQukIZ8v-2DqQcn4n3IIu3wMFOyrGB18PUMPCDr5a0Q2-OPLaaBICIOjjTZKNWIRe_R1_MULSSQSPH4Qfirzkt33CFqYl14H7AWEe7llvWhtayPboQ0AN1kh8ITpLnmEe4T7L173ARsJKyqDqaL308qK2UZ9tNNLkuUo-SAKqQKry4d4kLrhQEZF4t4tPZgQRcuhGClxQxRJ6tSdF8-PpsMDcYbjLZnh2KmfUlQKpGuyKYWfgvDCwDBwQ00qaoEBxYFzOks3JwU81M",
+          "width": 1000
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": null,
+      "price_level": null,
+      "editorial_summary": null,
+      "url": "https://maps.google.com/?cid=7524888085004836249",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2cpAwCpMzG02HH217rsJO_WmkEaSVoqfkl1GNmNIzTxwByKZ7nFClVNdBn-PNXcDHlFe4wpduPSXSpm7avEXSTcaI0OgtkXBt43lr9aEAvZdWzqCx6hZjJKnunvt2bwomElgTUHRdsax6b94hXzab8RpxIMtUCmN40EtF0m92Wn4zThfHUBjxbSMcvoiq26zizEIEVDF29E0M9kx1UMHXYPsD3vf0luyVVTXYsZ9xoTDhWL8S6ULrLIDNsifgbIEBsi6vkspx6OzkyIpy0fFWLoYpo1fnJ0tgROlC-g-YDnUrajJqox3Xle-whsaYwTLDtxhcZdNN0NYY5PlNNcq-uRkAPAGtQVeAJAg_sMia3rf1rPn8lXsb9wOyznRgNuWMT_GBOqxrL5bnFameHj4CZxUJcet7ItFOt8t3v4OPOwJUug&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2eAOuv8bD2CQdrxyyeh8h-dhQrwwLGV-adRxfJUlX8LHo3C87ej8j7DiEdChaSdQ8MCT5C60zb8cY3qcPyRnn3FGwwmetXPIX-e1ZVIF_6ShMmPBlwJSby9HFENJD-FHO6X5NTdclASNMF-_Xi4gz52HG_6p_i0nzE6RseBOUYXlLqefdo_CyDUVSv2eNukRJqm74ea1oCveIVbsOhmCebc17PxUtypquoF2v1iu4iF-PiqknqfhPvlcH0VKAnymK_ehlMcdMUVi4MixFACrx3QWhAbXOlpuV-OujT0oqU&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2fsfu9AAXmEiGd7LYVtJlg8AsKOKgfMLTFcye-tnQpWpIdWsqqukn0ftzyja08Bctz0KHyG8Q477YVcHqhMa4N8l-kxXb2DGg87TgddC4MYmyvOIssO1a6FQkqGa1t9Vto1xD2voPWAMcHxB92PVnQ4BzEEIEWaC20DyrfTWaWuo_SsbSB8gvWYUaJHWWxN7X4Z96lLRBW9lLHpkBM26krHvp-RvFkAWY81T-yQxERfhI3qT6ZEDLI5sNUR4WJEGvbKz0rDv3YlLzBk5oHAS7DH2PGrnEZzcCArf1b_Rkw&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2fYTVarvJCGawPb91rjlP8YBBhW6qjftD1jBABthN1bGJoQtBGvS2_d1SEDqjeZFWAUwwaQ13rJGlouxGPaGqf4Chh7YqhhBssq3P0Ku-FP7nDY0Fo-4iDlMEkoEs-AHlJ3aEVS6GoI0p6YJi_pZYG3wnY7u9IytulOH2btrvAT_kBPHDb35RlrMlOqBW7bUIRwprNqVYCDlU-vR338Jc56PEaU9iWm931ixpHQznNEDG90OZaDCy8pDja3f2UhZCfwc1F8dXqIjGGzOkgP_Mh63d74L7ieIigMKsLnv2QWbse5hcia1EKMIovWsDfxAqRZe3lp6lFgiMX0JOVVpb6UDEZ5A-NjFZTPEkrrNr36iNilyO_BNrjNUqXRGKNMnB9P4ufh41r54a7LW-E0ZP3OWqYGJfJul84ePttkNZjFJms&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2c-EUz7T48E31PIWp5RufF7_M7mkneEbYwEB6212hNo0NPLfWVKzpjKBmyiLco9FETJjwqp3lbs5PFnIrIlgUv57tWejD4FN-JdGDd2U3LKZEbFFVPft2c-b_pMgYYK3YjdvZ2zAjfLasOfCX9qf3pb-pUN59HNbDeFtmZ4q9uTEEjGdju4_PlHMCU1y8DRkdQbrPz63p1J3pSPOXBab-Zdw1BCidEY8k3NHIDRQ_bi15p2LFohzvv97-ScGYhUsSZUtocVJbgszbLpeThWyzgu7x5JHNYlGqVkY1EOGz8&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2cmiudDGCrAsxGU06VoDzZmaZXvvvC-874z0c0MmT7wWODYof6WTAx9vQPA3qi4q7pnMXyI6TKZdejP0Gm50eJnlVzIAaD8OoGf4-0zY9vD9B3tPCy1f1LlWGe2YfU19Rbsfn17V2OLvrRXjMsUyCex_PJ_3KBnsUlyy4thvUzhAPuF6x1pahw_c_TmG8qMB6sBpM87Tupghj06LH00kjGGxCO5OSQ3CgFR6RtrYppV-o0_AAdSLHzbmFBfbw8NppdDUi0YJMZkxujJzEOBPOsH0RY4qcxzFgYV400-oQtf6aWmZmbqnCwEEVLqAVC-q44EbECAtTqHAX_yD0AaWUsqWPpuxFoZ3Wk4o68XAVfdr1T2DgfKxcMrS-sQGjIBBLKVwxhb_GjaQWX68zoAXVdGN2YwoCHi5IMXWDvoCO6V0g&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2euCEfCefP7NwPlZMxcl_wcr3hkvBttLblJ3XRHir9Sm3ztXWihqyZeZEUDOgdDLwCl-R70XD91_AP1r4Oma_3VR9GQ70BWVckkMtKKRp2-Qq706IReBzOg3zxF70F0-pjAVruyPxs1Nz7ZV8i2x7xYyl5K7kiu-yKwCGgT-9G-c_TQRvYKcxRjSx7HDzEQsgwXtiwIJ3H1BYAs8y3mf6PHpmU4xQJlHH4UvyrJqaQ42bJ6fl-xYD7KC8oCPvQapl4pWzzqTzLuVFFyzf7CBwefnOhnlL3gwT9xEJMR_-w&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2eBdIzko5mo_llfPpqQvBxLkqbZpYgGREHR1eL5UeBzyV9GYjo3GYMnhLUwCItoXA3PiNQOBX-OJlo9EpHvRlyDAksKzLtMPWa7agT0Z25mlgLQ_dWbiYsRMpvTHJX2aOdC4_JIwKGGg8xhMlJddGTJcgaFM33V024E4HfAY_JjN-Sk44rT_pVDL0yblQU6r1wuwstU6j5fdDIPk3ifdBEGlJtxGdc1r6vTa1BUfvqrFqu68Dg7aiN5rItSBQmNLyd_HWUaptnx3Sh7cIJSowEYxGPIBjVtvk4-txqqhQc&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2feF9puLKUHy_hAX0ghshdPDrFV39yDNCtrlgDa4GHyulfvMzh9pRShCywz9mqydkUYnNAzxgx747F09m-ruz__3F-b809XfshibqQsbVoGw2nFFLdWWiMSM1ve0Mxq0ZgPWXZJ8bP11I2sWwGTUNcmhgyuToXY11KJKBxWr_NW1BrpymvzhVG4AtifIwVkV2dlY8IjRFG2IvhcRY1Uj8-hvPV8NRl5Y_ksJZ7jPGEKvoWhoB17V258Bk2Z2ISMTDFLEMzU7U_cDRZKJg5oklT3GdcXn1u4ivu80cXS-iE&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AciIO2dA-PKMAdcOIZ5BKGdNwIREUG6BqdPCkjb_ldpXMcBuuAnrJOVWwIWJzAwTj-WJTiLRvfMH65nahEwaY6r87iuJeGcnzbsBVcoRLurt7XlX2wJel1Cb8fW3XNuMp2nKoqOp9Vj05gPFNaWLV6yzmia3th-UJvuB12YMfSHw8mWCdx1wV2WAozxxEe65ZTgleveExeBxBikl5BCOkwY6K7OnzjqqmlIbedaq_TGrJN94XYsYw8Om5w68ERBzFuFR1atxYFpeFeXPzbXlFqiOK9fuR2vAv1R4EjwYg-A8Kqg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 68,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": true,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 80,
+      "totalReviews": 55,
+      "averageRating": 4,
+      "sentimentBreakdown": {
+        "positive": 73,
+        "neutral": 4,
+        "negative": 24
+      },
+      "reviewSources": [
+        "Google Places API (Apify Enhanced)"
+      ],
+      "keyThemes": [
+        "Portion Size",
+        "Food Quality",
+        "Wait Time",
+        "Service",
+        "Pricing",
+        "Atmosphere",
+        "Location",
+        "Cleanliness"
+      ],
+      "recentReviews": [
+        {
+          "rating": 5,
+          "text": "Family favorite just like I remember from when I was a kid!\n\n- Pan Bacon: Classic!  The crust comes up at the edges and is soft and not too thick.  Be careful ordering extra bacon as the normal amount is already a lot.  We like bacon a lot and extra bacon was too much.  So good, though!\n\n- Original Bacon: The original crust was a little on the thinner side, almost too thin.\n\n- Gluten-Free Pepperoni: My wife and daughter shared a gluten-free pepperoni pizza and both thoroughly enjoyed it!  They are both not super sensitive to gluten, though.  If you are really sensitive, this place will not work for you.\n\nWe had the pizzas on Friday at 5pm.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "We get happy joes every Tuesday for the 25% off discount. The employees have always been very friendly and have gone out of their way to be kind! I wish I could remember the person's name who helped me tonight, because he was wonderful! Their taco pizza is 10/10, and everything else is decent too, but nothing out of this world like you might get at a small local pizza place.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 2,
+          "text": "We ordered happy joes tonight for the first time since the sit down restaurant closed. It tasted a little off but again I haven’t had it in forever. 2 hours later my son and I both are having to run to the restroom and are super puky! Definitely feels like a case of food poisoning",
+          "platform": "Google Places (Apify)",
+          "sentiment": "negative"
+        },
+        {
+          "rating": 1,
+          "text": "Ordered online for delivery.   Delivery time was 2 hours, which wasn't an issue for us.  The problem lied in that the pizzas had clearly been in the delivery vehicle for most of that time frame. The pizzas were inedible by the time they arrived.  The delivery driver was very pleasant, which was the only bright spot.  $55 for 2 pizzas that we couldn't eat isn't ideal.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "negative"
+        },
+        {
+          "rating": 5,
+          "text": "Super fast deliver; piping hot and delicious!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 1,
+          "text": "Just had your delivery driver in a black suv try to run me off the road and flip\nMe off. Will NEVER order from a place that allows this",
+          "platform": "Google Places (Apify)",
+          "sentiment": "negative"
+        },
+        {
+          "rating": 4,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 2,
+          "text": "First time ordering happy joes. The food tastes good and the staff were great. But something is terribly wrong in the food. Ate the food yesterday (and was the only meal I had yesterday, with leftovers later that day) and today it has got me vomitting, with chills and diahrrea. Definitely a case of food poisoning, the quality of the food needs to be checked out immediately.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "negative"
+        },
+        {
+          "rating": 5,
+          "text": "Amazing!!! Great Service, Great Customer service! Fantastic Pizza, Sticks, Wings. Thank you, Delivery Time on time and quick!! 10 / 10",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Staff was very nice, pizza was great!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        }
+      ],
+      "detailedReviews": [
+        {
+          "author": "Aaron Lehrman",
+          "rating": 5,
+          "text": "Family favorite just like I remember from when I was a kid!\n\n- Pan Bacon: Classic!  The crust comes up at the edges and is soft and not too thick.  Be careful ordering extra bacon as the normal amount is already a lot.  We like bacon a lot and extra bacon was too much.  So good, though!\n\n- Original Bacon: The original crust was a little on the thinner side, almost too thin.\n\n- Gluten-Free Pepperoni: My wife and daughter shared a gluten-free pepperoni pizza and both thoroughly enjoyed it!  They are both not super sensitive to gluten, though.  If you are really sensitive, this place will not work for you.\n\nWe had the pizzas on Friday at 5pm.",
+          "date": "2024-07-17T01:26:10.155Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURydXNHNk5BEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUsGJrsfWeLJQDjGbWKQHHbVWu5IqUr1EufSpBtdPMlBcjYaEASYA=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114191817115635786450?hl=en",
+          "reviewerNumberOfReviews": 394,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sydney Koeppen",
+          "rating": 5,
+          "text": "We get happy joes every Tuesday for the 25% off discount. The employees have always been very friendly and have gone out of their way to be kind! I wish I could remember the person's name who helped me tonight, because he was wonderful! Their taco pizza is 10/10, and everything else is decent too, but nothing out of this world like you might get at a small local pizza place.",
+          "date": "2024-07-10T03:02:41.635Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNycmRMRGF3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKR8H02OGazVubHVrUZHYUxOMWZHO0a9Jcc3cQRfKCW1XJqt9s=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106823588841080050110?hl=en",
+          "reviewerNumberOfReviews": 21,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Elizabeth Berry",
+          "rating": 2,
+          "text": "We ordered happy joes tonight for the first time since the sit down restaurant closed. It tasted a little off but again I haven’t had it in forever. 2 hours later my son and I both are having to run to the restroom and are super puky! Definitely feels like a case of food poisoning",
+          "date": "2024-06-23T02:19:44.236Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNMODlfcEFREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXHCL0iJO0GbZtHh0O4WDHRLGxvK8yMFbQSyn1g6S9yaryyK2TyCg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113778397203748300388?hl=en",
+          "reviewerNumberOfReviews": 27,
+          "sentiment": "negative"
+        },
+        {
+          "author": "iowanole",
+          "rating": 1,
+          "text": "Ordered online for delivery.   Delivery time was 2 hours, which wasn't an issue for us.  The problem lied in that the pizzas had clearly been in the delivery vehicle for most of that time frame. The pizzas were inedible by the time they arrived.  The delivery driver was very pleasant, which was the only bright spot.  $55 for 2 pizzas that we couldn't eat isn't ideal.",
+          "date": "2024-05-13T01:08:47.103Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNUc3RMOHFBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK9JvFISIt4uz58KtNsev-PqUJQcVKdUzvt4GY7M-jZJPv9Yg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106527235730810293825?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Heather Schoon",
+          "rating": 5,
+          "text": "Super fast deliver; piping hot and delicious!",
+          "date": "2024-04-20T01:05:04.006Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNqeXZpb09BEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocInyoY3YSy3Kjc0LWkSoEn83QYXGr_EI5rWox_9q5bmsSjn7kI=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107485756391227263386?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "sonja evers",
+          "rating": 1,
+          "text": "Just had your delivery driver in a black suv try to run me off the road and flip\nMe off. Will NEVER order from a place that allows this",
+          "date": "2024-04-20T00:17:31.972Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNqaXV2UWhRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU4Fx25GnIWIjPG3xACzk5nwtV2XZ7awF3b9eeeEjiwBVdPTfiE=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112288984905231113220?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "negative"
+        },
+        {
+          "author": "CHRISTY PRIMLEY",
+          "rating": 4,
+          "text": "",
+          "date": "2024-03-08T05:19:41.777Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUM5allpSU93EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLjO2iVkh97OjFbfAf_TtnVW3Vo3IwFgplg3PM44Za0YMs74Q=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100002725646389802028?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jake",
+          "rating": 2,
+          "text": "First time ordering happy joes. The food tastes good and the staff were great. But something is terribly wrong in the food. Ate the food yesterday (and was the only meal I had yesterday, with leftovers later that day) and today it has got me vomitting, with chills and diahrrea. Definitely a case of food poisoning, the quality of the food needs to be checked out immediately.",
+          "date": "2024-01-23T20:28:35.324Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURONmZXdWlRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWWP_hDg0PYw5kgT7lVbREHJ6729vOonPq2serIQvQCgIQ5_JrF=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102404480349412621175?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "negative"
+        },
+        {
+          "author": "b sommers",
+          "rating": 5,
+          "text": "Amazing!!! Great Service, Great Customer service! Fantastic Pizza, Sticks, Wings. Thank you, Delivery Time on time and quick!! 10 / 10",
+          "date": "2024-01-08T01:52:23.962Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQxOFpHa1dREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLNSI3TWlqXTfvQldoEKCNswoA_vQ5hMJL8cK5jvAx4rPGrqQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108119372290652627903?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Amy Wiemerslage",
+          "rating": 5,
+          "text": "Staff was very nice, pizza was great!",
+          "date": "2023-11-20T01:26:55.556Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNsd2ZEXzJRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLD7yp6qm537l8TrIWj3Dm3Y70gwlLihHABk_U5KRit1obnhA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101372083356462404322?hl=en",
+          "reviewerNumberOfReviews": 14,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Zach",
+          "rating": 5,
+          "text": "Fast and quick. The food is always good. Wish the website was a bit easier and the prices to be cheaper but at least it makes up for it the amount of food you get.",
+          "date": "2023-07-02T03:50:01.226Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURSOXZySFlREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWJKPiswhTvg6bdy0ZmwG2g5EoXIliQpHItrtM-IMOQXnblqI4r=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104962517155686503570?hl=en",
+          "reviewerNumberOfReviews": 72,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Max Goetz",
+          "rating": 5,
+          "text": "",
+          "date": "2023-07-01T01:17:58.926Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNKaGRDa0FnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUukph6_8RX2G3576UGJMWmbb35S8_pwJUaKlJ2AwoZpsUzK-muqQ=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109410591279608625512?hl=en",
+          "reviewerNumberOfReviews": 81,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Damon Knowling",
+          "rating": 5,
+          "text": "Fast and delicious.",
+          "date": "2023-06-16T00:41:17.149Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR4aDRhSGVREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ2lFDtSHfNP641m5gdhmzWwWwhW_vZp_yDi6_nYtxJtXNbGA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103237945032924126060?hl=en",
+          "reviewerNumberOfReviews": 33,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Bethany Parker",
+          "rating": 5,
+          "text": "Great pizza and service today.\nThanks Clint!",
+          "date": "2023-06-10T18:03:47.103Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR4aWRxalNnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXMoyWDolyy1WlTjXLn6raDgwrTi0XgzkP86j6aYK0zvciwSZE=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101075040712812098168?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "JoeBond209",
+          "rating": 5,
+          "text": "",
+          "date": "2023-06-10T16:52:38.914Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUR4aVlDRi1nRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWTCR_v4HVmqdUnfMUMQuAFagssYBKWbUoXdYHvimGNYqYLIPEU=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109437927236042529696?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Greg Wolfe",
+          "rating": 4,
+          "text": "",
+          "date": "2023-05-29T16:59:48.397Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN4My03bzB3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK1LC3pOgiB2KMFmOR6eixBfgSNMohECXYKMU1CGz75Y006JQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108465574724820734159?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Marylu Carl",
+          "rating": 1,
+          "text": "This visit  so sad. I had Happy Joe's Canadian bacon and sauerkraut pizza when I was in boarding school out in the cornfields of IA back in 1976 and 1977. DELICIOUS! Came back to visit in 1979. DELICIOUS. 44 years later, now it's delivery or carry out. But still hoping for that DELICIOUS pizza. :.(\n\nI bought a large cb and s pizza. I knew I would have a slice in the car on the way to take it to people I visited last in 2019. You know how you take a slice and it is super hot so you quickly get it out of the box and put it down? This pizza was barely warm. Part of the crust was burnt (2 slices). The tips(?) Of the sauerkraut were burnt (black). I never had that before! It was dry. All we could figure out was maybe they had made it for earlier in the day and kept it in a warmer(right at the counter). It was bad, even if it was just plain cheese. So sad. I waited 44 years to have that pizza again. If this is how that pizza is made now, sad. The guy that waited on me was in his 50s I think. Silly me, I thought he might be the manager, so I will definitely get a great pizza. Sad. Sad Sad.",
+          "date": "2023-05-10T16:28:22.196Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN4aFB2OWp3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUY_ztCCb3Gt9Ac6qhCKLiDWzs1vV__edaiue_uk_Ic1lJOEqiD=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106316364170584693606?hl=en",
+          "reviewerNumberOfReviews": 106,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Chris Hagerman",
+          "rating": 1,
+          "text": "Had 2 orders for carryout. 1 came out edible, and the other was God awful. Looked like it was 5 days old. Completely unedible. Both orders called in within 1 minute of each other. Got tossed after sampling multiple pieces. The garlic bread was just as bad, if not worse. Customer service was ok, but that pizza was by far the worst pizza we have ever tried. Will not be ordering anymore happy joes pizzas.",
+          "date": "2023-02-21T22:33:52.060Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNoODRPQlV3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKPx5eKb9lghre59NnyQs-zrBI98UfJI6qc6HoT_nZIugwyRQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102499976475674857954?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Tim Shannon",
+          "rating": 4,
+          "text": "",
+          "date": "2023-01-19T22:35:03.771Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURCN3RDNTRRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUehN9_BweYAoiLhpRkF11HIN0GzdghZXDYbZu9eR9m1WrCyuMT=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117665957321432408264?hl=en",
+          "reviewerNumberOfReviews": 55,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sam Clingan-Siverly",
+          "rating": 5,
+          "text": "The person who took our order was the most friendly person. The kind of person that really just lights up your day no matter what mood you are in.\nOrdered a taco pizza and it is sooo tasty. Best taco pizza ever!\nAnd the lobby was so nicely decorated too! Just a very welcoming environment overall.\nI'll definitely be back.",
+          "date": "2023-01-06T03:35:51.651Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNCeF9PbHJRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXmEhlpnSV-xd_Cl7P0IGFwQogA5hKz1kPcftzuSHzrgpAs4ze5Mg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115014531658903491987?hl=en",
+          "reviewerNumberOfReviews": 52,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Diane Anderson",
+          "rating": 4,
+          "text": "I went there to purchase a gift card.",
+          "date": "2022-12-26T05:48:29.845Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNCcnBXUFlBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIEIpWq8QJWcKn7RjhH_-emLuH1wweMYEUOUU6sTlK5m4iqRA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104235750545773245175?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Greg Finch",
+          "rating": 2,
+          "text": "Never been there just me so ordered a small beef and mushroom pizza ..15.00!!! For something smaller than a dinner plate! .the beef dried out the sauce almost none this tasted like a store bought 3.00  pizza I couldn't even eat it sadly staff was nice and friendly ,but the price waaaaayyyyyy to high for almost nothing , I mean I could have bought a frozen pizza for half or a burger for 6.00  .cannot recommend and I was hoping I could",
+          "date": "2022-12-02T07:21:12.913Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQta2IyYXl3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVaMpnjNfgNcw6dwivxxTRSD-hXrSspbhW8nwB7R6QyLRFEAq4=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114480268658185979843?hl=en",
+          "reviewerNumberOfReviews": 278,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Scott Niles",
+          "rating": 5,
+          "text": "Showed up on my lunch break.  Pizza was made and ready in about 10 minutes. I  love Happy Joe's pizza 🍕 Yum",
+          "date": "2022-10-21T02:12:58.527Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURleDZyZXNBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXIalnLeS3mRjc3XyyitfI0DN5-oZJqBbajBY2cah0go_XHqKCLNQ=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106316926438517535883?hl=en",
+          "reviewerNumberOfReviews": 121,
+          "sentiment": "positive"
+        },
+        {
+          "author": "MANKICKIN",
+          "rating": 4,
+          "text": "Pizza taste the same as it always has really tasty",
+          "date": "2022-09-15T01:10:48.435Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNlM3UzV3B3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUBtb41QGuOiEPyr12f25lRC5JAmnWbZXg2JAnPYv6miPdKWAFK=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101087520705601095212?hl=en",
+          "reviewerNumberOfReviews": 283,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tina Kilker",
+          "rating": 3,
+          "text": "Do not get the taco pizza",
+          "date": "2022-09-03T20:07:30.930Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNla0ozMzJBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI0JwM3S7t-yDus_b5u0ZWt0og4T91rbBZVYEnZGXb-pVuGNw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111909571732067332299?hl=en",
+          "reviewerNumberOfReviews": 133,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Casey Stelken",
+          "rating": 2,
+          "text": "Food is great... when they get it right.  We've received our orders from this location wrong more times than we've had them right (no, really), hence the low rating.\n\nBut when they get it right, damn is it good.  And some of the employees are super friendly, which is always a plus.",
+          "date": "2022-08-31T19:27:54.937Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN1ajlTMHhBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX4Bo0ay6lhl_6Af3Tn0ZXzmn1vr5Y1Tn9Tn0KrkCEUdMk8d5Tw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113917757709946142019?hl=en",
+          "reviewerNumberOfReviews": 37,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Brad Neilly",
+          "rating": 5,
+          "text": "Friendly staff. Always great tasting pizza. Use the app for deals and discounts.",
+          "date": "2022-08-15T15:35:07.837Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUR1N0pid3JRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXhikyAKP_R7kJUvkgmcnS8rmg4vhguQNxbwDrNL591G2S9-b5v=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104901945398883017196?hl=en",
+          "reviewerNumberOfReviews": 261,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jason Wright Jr",
+          "rating": 5,
+          "text": "",
+          "date": "2022-08-09T22:27:53.573Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUN1My02WWRnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUgqbHqmp8RGntI59yh6wr5s7gMKjrY8xFyzHUKI0f4TSuD0E-T=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107906271691466696742?hl=en",
+          "reviewerNumberOfReviews": 14,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Nikki Blix",
+          "rating": 5,
+          "text": "Well, they had the best pizza. I guess they changed their BLT pizza. They gave it to us deconstructed. My son said the mayo was in a package and it was disgusting. I'm so disappointed. It was my favorite pizza. We won't come back until they change it back. *Sorry, someone told us it wasn't temporary. We look forward to the BLT comeback!!!! Very glad to hear this.",
+          "date": "2022-06-11T00:30:44.165Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNPM3F6Nm5nRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU-037SHtaejrO0bjtzWk0whNtec0arXH89Bp3us4rAVpjZCxq-=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106544831454038207616?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kymm Smith",
+          "rating": 5,
+          "text": "Great food and service. Jay was a great help with my pick up order",
+          "date": "2022-05-11T17:19:12.157Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURDbEpMWWl3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIZ1aFEQDtTneUJfx3arYFyMsnheIR_0jVJmq5ndVF2uXeZwA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100447694749318069495?hl=en",
+          "reviewerNumberOfReviews": 96,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jen",
+          "rating": 5,
+          "text": "Super fast, super nice staff. Pizza was hot and ready and on time. Can't ask for much more. And Mondays and Tuesdays right now are running a special - when you order any large pizza (including taco!) it's only $15!",
+          "date": "2022-04-09T05:19:55.812Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURHbHV5OFN3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXiEaxQ8cqJF6envrVEAZ5Lu3zp9MmiT0xPuCIku9SZgjhGd7lWbQ=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117256088277235660660?hl=en",
+          "reviewerNumberOfReviews": 147,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jerry Kvarda",
+          "rating": 4,
+          "text": "Pizza was good but some of the toppings were a little crispy.   Google maps shows dine-in but it is carry out and delivery only.",
+          "date": "2022-03-04T22:25:43.877Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNXX2M2Y3R3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWvl9UWcEAsVLlfB7R4UaXrMVPuZ_yW6pS8bPKKwpeL-Y_X5W3c=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114848300861088360626?hl=en",
+          "reviewerNumberOfReviews": 178,
+          "sentiment": "positive"
+        },
+        {
+          "author": "tech king",
+          "rating": 5,
+          "text": "Good",
+          "date": "2022-01-18T02:22:07.975Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURtbUpfQndBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUT0qnDCSYtoaA-HcCBzhbDmg3YqqH8aGqp2BwebFlBG_3BqfbB=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113981550904763644672?hl=en",
+          "reviewerNumberOfReviews": 464,
+          "sentiment": "positive"
+        },
+        {
+          "author": "April Gatefold",
+          "rating": 3,
+          "text": "Daughter loved the gluten-free taco, the rest of us were like meh, we've had better for that price. $54 for 2 lrg & a small GF",
+          "date": "2022-01-05T04:13:20.753Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNtdGZma2lnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV8ls0VVSZKiENe9R90xUkeuOC6IfbMuk3s4Yc4dLaHTG20VM3N=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104148105032349432035?hl=en",
+          "reviewerNumberOfReviews": 222,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Gary Davis",
+          "rating": 5,
+          "text": "",
+          "date": "2021-10-31T17:50:20.457Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNHb2M2M01REAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJkFC4brpbu6nnU_sWGo--H-RpJooZMiWfRiXfNGxFfCkBNIQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115312851829038824565?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "John Gagnon",
+          "rating": 2,
+          "text": "$42 for a small, medium pizza and bread sticks.  Too pricey and the quality of the pizzas was poor.",
+          "date": "2021-10-30T20:23:38.489Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNHdnJ1VTV3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIo5QBwczt_Rmq94Srx8MzjV8GBG9w_ybdke5X8VrBoFvp1bg=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101557477399933855944?hl=en",
+          "reviewerNumberOfReviews": 23,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Troy Springer",
+          "rating": 1,
+          "text": "I have been a long time customer of Happy Joe\"s pizza. As of late the pizza quality and service has slipped. The \"Deal breaker\" happened on 9/25/21 when I waited over an hour for my pizza ( that is not the problem because I agreed to the time) and when it arrived it was dried out and just warm. Because issues like this have happened a few times we just are not going to be able to do business any longer.",
+          "date": "2021-09-25T10:31:59.875Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQ2MHBfVGlBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL-xM9dKX3YQkzqyqEcuzmHwZFUI4sLBJ5TEy4O9By88T5dMA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117921399301017677513?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "negative"
+        },
+        {
+          "author": "dawnya grice",
+          "rating": 5,
+          "text": "",
+          "date": "2021-09-13T22:46:03.947Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUM2MjZlUjRRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUdhdAsB9BYKUYdhrnIZEZmM7D7XuMrz0YkKW-bxLI55r0RSdQ0OQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100800415278183210598?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Teresa Kohlmeyer",
+          "rating": 5,
+          "text": "Best taco pizza ever!!!",
+          "date": "2021-07-04T21:22:28.822Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURxeW9hYm5RRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKfBW2XDj2aStK1W5IJBU-jn4kotzROTj6LaQuuYm6-paKGiw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113538507699266259929?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Shaun Scott",
+          "rating": 5,
+          "text": "Best Service! We ordered a  Large Canadian bacon pizza to be ready at 11 to pick up. Our daughter had an emergency at school and we had to drive back across town leaving our pizza sit there for 45 minutes. Called the store to ask them if our pizza was still there and hadn't been tossed but that we would still be on our way to pick it up. On arrival at 1150ish we went in to grab the pizza and they told us that it was almost done. I was confused because I didn't ask for a new one, it was my fault anyway. The general manager Teagan had already taken the initiative and made us a new pizza because she didn't want us to eat and old looking one. She went above and beyond to make our experience good even though it was our fault and not theirs!!!!! I will forever go to this location from now on.",
+          "date": "2021-05-20T17:04:49.640Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURLei1LZXlRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKMuzg01pZ6V9Wqbhlam5DwueAKO3xNW2weBYMQz855ccUXiw=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100172912891247810478?hl=en",
+          "reviewerNumberOfReviews": 58,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tiana Doll",
+          "rating": 5,
+          "text": "Ordered pick up tonight. Very clean and organized pick up. The front desk employee was so sweet and after I signed my receipt I offered to wait in my car and come back in when it was finished. She was sweet enough to bring the food out to me when it got done so I wouldn't have walk back in.",
+          "date": "2020-11-30T23:42:10.026Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURpa3I2cHZ3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVv-wiSedAv5UPIXmZ2GSiC8JsVGMyLqkMh5E9BQ9pgqf47f6QQJw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108991486048150257384?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "jane peck",
+          "rating": 5,
+          "text": "",
+          "date": "2020-07-09T19:46:19.949Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUM4aVlhS1FREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVTQFuZBZdhKd65mELObhnDqg2tUmfG8KHYUAqyHDP3wDRqUQit=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104021640918920777462?hl=en",
+          "reviewerNumberOfReviews": 31,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jacob Herring",
+          "rating": 5,
+          "text": "",
+          "date": "2020-02-08T23:37:58.742Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNzNWJIdXhBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUEatvZ47ZpjlCzU4djUv7i6IOSlRHq7eEUqkAXOA9sKgaj1CN0=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106393790992472390515?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kevin over 60",
+          "rating": 5,
+          "text": "Best Taco Pizza in CR area.  My family is eatting these more instead of tacos. (Taco restaurants need to improve their amounts inside taco shell.)  This Happy Joes Pizza taco pizza is full of meat, cheese, lettuce and more.  They give you packets of flavorful taco sauces too.  Note on Mondays and Tuesdays, they are much cheaper (less than $19) ... a real bargain!",
+          "date": "2019-12-16T03:46:40.668Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURNdUx6dHdnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKaC_U9veuM23QXf3hswTPtjmwe5Znad0A-2QXidVqexXsstw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116364527482203395514?hl=en",
+          "reviewerNumberOfReviews": 233,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kdogisdabomb Sojka",
+          "rating": 5,
+          "text": "",
+          "date": "2019-12-10T01:06:06.645Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNNOTkzQUt3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWlsAM9-xhZ0lzzm0kLAVLMVaQcAWFojEZdgTDA1zJQ1kKLlN3V=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115571556023329415374?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jon Burdt",
+          "rating": 5,
+          "text": "Best taco pizza",
+          "date": "2019-11-09T13:16:40.518Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQwc2VIRTlRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocILZIwwzdvT1JBo49gdOmG5yhLh-R2uP2iJFBtnVJ7TClr5AQ=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106028972527427722185?hl=en",
+          "reviewerNumberOfReviews": 249,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Diana Usher",
+          "rating": 1,
+          "text": "Not there",
+          "date": "2019-10-18T03:24:15.386Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQwb0ttR1RBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJxYm_6k6tz2sdTCka15oKVSc5WEUspxC4v0JIbFlUhtk-NKQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107782438029351139355?hl=en",
+          "reviewerNumberOfReviews": 51,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Nicole Shanstrom",
+          "rating": 4,
+          "text": "",
+          "date": "2019-10-14T03:09:44.523Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUMwdDhhUUVREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK1PUkVok2XeS5IWXOrdCQsB88cF6lDfUXGq2vgmfmY_PhzGQ=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104637363832996668910?hl=en",
+          "reviewerNumberOfReviews": 55,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Don Danielson",
+          "rating": 2,
+          "text": "Expensive pizza and no sit down dining",
+          "date": "2019-09-29T20:17:06.256Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUMwNGUyUElnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWTbKY5DbzMBsB4vyCaGS5tMDpOVYdagXoaPWib4R1Ky8sq8BCh=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102481886555350866179?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "negative"
+        },
+        {
+          "author": "David Ovenshire",
+          "rating": 4,
+          "text": "",
+          "date": "2019-07-28T11:48:12.826Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNVNmRhVXlBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKn3nWeIEKdmj75B6YcsnQiPwJHvp5vYddE2w235GvUXNigsA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103280568288351778101?hl=en",
+          "reviewerNumberOfReviews": 25,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Don Daugherty",
+          "rating": 5,
+          "text": "They have a very friendly staff, especially two sisters Kathy&Tina that are just a hoot. They not only see you to your every want or need, but they make you feel extremely welcome, which makes you want to hurry back.    The buffet area is always well stocked , replenished and clean. It's always my family's first choice.",
+          "date": "2019-07-14T02:59:47.532Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNVb09UblVREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJyDI1V1SrixCggvp4jXipMgYjOE9Vrbo5UW5IRptfi2Zk-5A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112160130969025382082?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tony Camenich",
+          "rating": 5,
+          "text": "",
+          "date": "2019-06-16T00:56:27.335Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNFekl5bEFREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKc0hJdaV-SptzeP77XJzmood1J2OTSt9y9ZiKvkK36JP1Izg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115123057073923137563?hl=en",
+          "reviewerNumberOfReviews": 53,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Noah B",
+          "rating": 5,
+          "text": "Consistently great.",
+          "date": "2019-06-02T19:18:53.921Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUM0eE8tcTd3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXOvnqogKIum1iOYqSPXoJnoKCIbDj-wUlSzuz1Igz1CpKqdLhG=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111470247724958847951?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Nicole Allen",
+          "rating": 2,
+          "text": "Did not know it was carry out or delivery only so had to go somewhere else as we were on motorcycles.",
+          "date": "2019-05-31T03:23:58.452Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUM0OE5fU3h3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJoZacMxgeTtGNhfX6cj0jvzH2q4aqPm5Fee547_GdH7jk5YKY=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115359825557305313254?hl=en",
+          "reviewerNumberOfReviews": 43,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Sam Bolte",
+          "rating": 5,
+          "text": "",
+          "date": "2019-05-05T16:30:57.688Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURZa3ZhTGxnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUhGhjSv7qr0Uld__8EtWnzzMCyMde38GaZHAMK53SDWMtMiKIVkA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105008126612768344801?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        }
+      ],
+      "customerMoodAnalysis": {
+        "overallMood": "mixed",
+        "sentimentSummary": "Customer opinions are divided. The 4.0/5 rating from 55 recent reviews suggests some great experiences mixed with areas needing attention.",
+        "sentimentDistribution": {
+          "ecstatic": 2,
+          "delighted": 56,
+          "satisfied": 18,
+          "neutral": 0,
+          "frustrated": 11,
+          "disappointed": 11,
+          "angry": 2
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "food quality",
+            "mentions": 12
+          },
+          {
+            "theme": "service excellence",
+            "mentions": 8
+          },
+          {
+            "theme": "speed of service",
+            "mentions": 7
+          },
+          {
+            "theme": "slow service",
+            "mentions": 5
+          },
+          {
+            "theme": "overpriced",
+            "mentions": 3
+          },
+          {
+            "theme": "cleanliness",
+            "mentions": 2
+          },
+          {
+            "theme": "food issues",
+            "mentions": 2
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 13,
+          "satisfaction": 23,
+          "disappointment": 1,
+          "frustration": 0,
+          "anger": 1
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "Customers love the fast delivery and consistently hot, delicious pizza. - social media marketing can showcase this strength",
+            "The friendly and welcoming staff create a positive dining experience that customers appreciate. - review management can highlight this positive aspect",
+            "The taco pizza is a standout favorite, often described as the best ever. - Boostly marketing services can amplify this"
+          ],
+          "improvementOpportunities": [
+            "Negative reviews and reputation issues related to food quality and delivery experiences - review management can address this concern",
+            "Poor online visibility and incorrect information about dine-in options - SEO services can solve this visibility issue",
+            "Lack of awareness about the restaurant's current offerings and ambiance - social media marketing can improve this area"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 55,
+          "averageRating": 4,
+          "ratingDistribution": {
+            "1": 11,
+            "2": 13,
+            "3": 4,
+            "4": 15,
+            "5": 58
+          },
+          "sentimentTrends": {
+            "trend": "declining",
+            "recentAverageRating": 3.5,
+            "previousAverageRating": 4.1,
+            "recentReviewsCount": 10
+          }
+        }
+      },
+      "examples": {
+        "positive": [
+          {
+            "author": "Aaron Lehrman",
+            "rating": 5,
+            "text": "Family favorite just like I remember from when I was a kid!\n\n- Pan Bacon: Classic!  The crust comes up at the edges and is soft and not too thick.  Be careful ordering extra bacon as the normal amount is already a lot.  We like bacon a lot and extra bacon was too much.  So good, though!\n\n- Original Bacon: The original crust was a little on the thinner side, almost too thin.\n\n- Gluten-Free Pepperoni: My wife and daughter shared a gluten-free pepperoni pizza and both thoroughly enjoyed it!  They are both not super sensitive to gluten, though.  If you are really sensitive, this place will not work for you.\n\nWe had the pizzas on Friday at 5pm.",
+            "date": "2024-07-17T01:26:10.155Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURydXNHNk5BEAE",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUsGJrsfWeLJQDjGbWKQHHbVWu5IqUr1EufSpBtdPMlBcjYaEASYA=s1920-c-rp-mo-ba6-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/114191817115635786450?hl=en",
+            "reviewerNumberOfReviews": 394
+          },
+          {
+            "author": "Sydney Koeppen",
+            "rating": 5,
+            "text": "We get happy joes every Tuesday for the 25% off discount. The employees have always been very friendly and have gone out of their way to be kind! I wish I could remember the person's name who helped me tonight, because he was wonderful! Their taco pizza is 10/10, and everything else is decent too, but nothing out of this world like you might get at a small local pizza place.",
+            "date": "2024-07-10T03:02:41.635Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNycmRMRGF3EAE",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKR8H02OGazVubHVrUZHYUxOMWZHO0a9Jcc3cQRfKCW1XJqt9s=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/106823588841080050110?hl=en",
+            "reviewerNumberOfReviews": 21
+          },
+          {
+            "author": "Heather Schoon",
+            "rating": 5,
+            "text": "Super fast deliver; piping hot and delicious!",
+            "date": "2024-04-20T01:05:04.006Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNqeXZpb09BEAE",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocInyoY3YSy3Kjc0LWkSoEn83QYXGr_EI5rWox_9q5bmsSjn7kI=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/107485756391227263386?hl=en",
+            "reviewerNumberOfReviews": 1
+          }
+        ],
+        "neutral": [
+          {
+            "author": "Tina Kilker",
+            "rating": 3,
+            "text": "Do not get the taco pizza",
+            "date": "2022-09-03T20:07:30.930Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNla0ozMzJBRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI0JwM3S7t-yDus_b5u0ZWt0og4T91rbBZVYEnZGXb-pVuGNw=s1920-c-rp-mo-ba4-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/111909571732067332299?hl=en",
+            "reviewerNumberOfReviews": 133
+          },
+          {
+            "author": "April Gatefold",
+            "rating": 3,
+            "text": "Daughter loved the gluten-free taco, the rest of us were like meh, we've had better for that price. $54 for 2 lrg & a small GF",
+            "date": "2022-01-05T04:13:20.753Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNtdGZma2lnRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV8ls0VVSZKiENe9R90xUkeuOC6IfbMuk3s4Yc4dLaHTG20VM3N=s1920-c-rp-mo-ba5-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/104148105032349432035?hl=en",
+            "reviewerNumberOfReviews": 222
+          }
+        ],
+        "negative": [
+          {
+            "author": "Elizabeth Berry",
+            "rating": 2,
+            "text": "We ordered happy joes tonight for the first time since the sit down restaurant closed. It tasted a little off but again I haven’t had it in forever. 2 hours later my son and I both are having to run to the restroom and are super puky! Definitely feels like a case of food poisoning",
+            "date": "2024-06-23T02:19:44.236Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNMODlfcEFREAE",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXHCL0iJO0GbZtHh0O4WDHRLGxvK8yMFbQSyn1g6S9yaryyK2TyCg=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/113778397203748300388?hl=en",
+            "reviewerNumberOfReviews": 27
+          },
+          {
+            "author": "iowanole",
+            "rating": 1,
+            "text": "Ordered online for delivery.   Delivery time was 2 hours, which wasn't an issue for us.  The problem lied in that the pizzas had clearly been in the delivery vehicle for most of that time frame. The pizzas were inedible by the time they arrived.  The delivery driver was very pleasant, which was the only bright spot.  $55 for 2 pizzas that we couldn't eat isn't ideal.",
+            "date": "2024-05-13T01:08:47.103Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNUc3RMOHFBRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK9JvFISIt4uz58KtNsev-PqUJQcVKdUzvt4GY7M-jZJPv9Yg=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/106527235730810293825?hl=en",
+            "reviewerNumberOfReviews": 5
+          },
+          {
+            "author": "sonja evers",
+            "rating": 1,
+            "text": "Just had your delivery driver in a black suv try to run me off the road and flip\nMe off. Will NEVER order from a place that allows this",
+            "date": "2024-04-20T00:17:31.972Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNqaXV2UWhRRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU4Fx25GnIWIjPG3xACzk5nwtV2XZ7awF3b9eeeEjiwBVdPTfiE=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/112288984905231113220?hl=en",
+            "reviewerNumberOfReviews": 13
+          }
+        ]
+      },
+      "trends": {
+        "ratingTrend": "declining",
+        "volumeTrend": "stable",
+        "responseRate": 0,
+        "averageResponseTime": "No responses"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ]
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/happyjoeshiawatha",
+      "instagram": "https://www.instagram.com/happyjoeshiawatha",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null
+  },
+  "metadata": {
+    "cachedAt": "2025-09-16T01:53:48.084Z",
+    "expiresAt": "2025-10-16T01:53:48.084Z",
+    "placeId": "ChIJRyUxTQP75IcRmV1IQdjFbWg",
+    "restaurantName": "Happy Joe's Hiawatha",
+    "cacheVersion": "1.0.0"
+  }
+}

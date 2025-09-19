@@ -1,0 +1,2722 @@
+{
+  "data": {
+    "domain": "ondemandsushi.com",
+    "restaurantName": "On Demand Sushi",
+    "placeId": "ChIJE_4Xnbm4yIARYNxBi2rgqpM",
+    "overallScore": 76,
+    "performance": 100,
+    "seo": 64,
+    "mobile": 62,
+    "userExperience": 89,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "sushi near me",
+        "position": 0,
+        "searchVolume": 40500,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "sushi delivery Las Vegas",
+        "position": 10,
+        "searchVolume": 50,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://ondemandsushi.com/",
+        "title": "On Demand Sushi: Home",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best sushi Las Vegas",
+        "position": 0,
+        "searchVolume": 6600,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "sushi",
+        "position": 0,
+        "searchVolume": 22200,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "sushi places near me",
+        "position": 0,
+        "searchVolume": 720,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "sushi Las Vegas Nevada",
+        "position": 0,
+        "searchVolume": 5400,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "sushi delivery near me",
+        "position": 0,
+        "searchVolume": 880,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "sushi open now",
+        "position": 0,
+        "searchVolume": 210,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 0,
+        "keywords_appeared": 0,
+        "total_keywords": 8,
+        "average_position": 0,
+        "best_position": 0
+      },
+      "keyword_results": [
+        {
+          "keyword": "sushi near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Sushi Ichiban",
+              "address": "Las Vegas, NV ",
+              "website": "http://www.sushiichibanlv.com/",
+              "rating": 4.6,
+              "reviews": 763
+            },
+            {
+              "position": 2,
+              "name": "Tako Sushi",
+              "address": "Las Vegas, NV ",
+              "website": "https://takosushilasvegas.com/",
+              "rating": 4.7,
+              "reviews": 30
+            },
+            {
+              "position": 3,
+              "name": "I Heart Sushi",
+              "address": "Las Vegas, NV ",
+              "website": "https://www.iheartsushicatering.com/",
+              "rating": 4.9,
+              "reviews": 58
+            }
+          ]
+        },
+        {
+          "keyword": "sushi",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Sushi Ichiban",
+              "address": "Las Vegas, NV ",
+              "website": "http://www.sushiichibanlv.com/",
+              "rating": 4.6,
+              "reviews": 763
+            },
+            {
+              "position": 2,
+              "name": "Sakana Sushi (All You Can Eat)",
+              "address": "Las Vegas, NV ",
+              "website": "https://www.dragonfactories.com/sakana",
+              "rating": 4.6,
+              "reviews": 3700
+            },
+            {
+              "position": 3,
+              "name": "Sushi Culiacán & Mariscos",
+              "address": "Las Vegas, NV ",
+              "website": "https://www.lasvegasmariscos.com/",
+              "rating": 4.4,
+              "reviews": 1500
+            }
+          ]
+        },
+        {
+          "keyword": "best sushi Las Vegas",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "I Heart Sushi",
+              "address": "Las Vegas, NV ",
+              "website": "https://www.iheartsushicatering.com/",
+              "rating": 4.9,
+              "reviews": 58
+            },
+            {
+              "position": 2,
+              "name": "Sushi Ichiban",
+              "address": "Las Vegas, NV ",
+              "website": "http://www.sushiichibanlv.com/",
+              "rating": 4.6,
+              "reviews": 763
+            },
+            {
+              "position": 3,
+              "name": "Master (All You Can Eat) Sushi & Oyster",
+              "address": "Las Vegas, NV ",
+              "website": "",
+              "rating": 4.8,
+              "reviews": 157
+            }
+          ]
+        },
+        {
+          "keyword": "sushi delivery near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Nyotaimori Naked Sushi Party Las Vegas",
+              "address": "Las Vegas, NV ",
+              "website": "https://nyotaimorinakedsushi.com/",
+              "rating": 4.7,
+              "reviews": 43
+            },
+            {
+              "position": 2,
+              "name": "I Heart Sushi",
+              "address": "Las Vegas, NV ",
+              "website": "https://www.iheartsushicatering.com/",
+              "rating": 4.9,
+              "reviews": 58
+            },
+            {
+              "position": 3,
+              "name": "Sushi Ichiban",
+              "address": "Las Vegas, NV ",
+              "website": "http://www.sushiichibanlv.com/",
+              "rating": 4.6,
+              "reviews": 763
+            }
+          ]
+        },
+        {
+          "keyword": "sushi Las Vegas Nevada",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Sushi Ichiban",
+              "address": "Las Vegas, NV ",
+              "website": "http://www.sushiichibanlv.com/",
+              "rating": 4.6,
+              "reviews": 763
+            },
+            {
+              "position": 2,
+              "name": "Sushi Neko",
+              "address": "Las Vegas, NV ",
+              "website": "",
+              "rating": 4.6,
+              "reviews": 3600
+            },
+            {
+              "position": 3,
+              "name": "I Heart Sushi",
+              "address": "Las Vegas, NV ",
+              "website": "https://www.iheartsushicatering.com/",
+              "rating": 4.9,
+              "reviews": 58
+            }
+          ]
+        },
+        {
+          "keyword": "top sushi Las Vegas",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Top Sushi & Oyster Sahara",
+              "address": "Las Vegas, NV ",
+              "website": "",
+              "rating": 4.7,
+              "reviews": 30
+            },
+            {
+              "position": 2,
+              "name": "Top Sushi & Oyster",
+              "address": "Las Vegas, NV ",
+              "website": "https://topsushi.top/",
+              "rating": 4.5,
+              "reviews": 918
+            }
+          ]
+        },
+        {
+          "keyword": "sushi restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Sushi Ichiban",
+              "address": "Las Vegas, NV ",
+              "website": "http://www.sushiichibanlv.com/",
+              "rating": 4.6,
+              "reviews": 763
+            },
+            {
+              "position": 2,
+              "name": "Sakana Sushi (All You Can Eat)",
+              "address": "Las Vegas, NV ",
+              "website": "https://www.dragonfactories.com/sakana",
+              "rating": 4.6,
+              "reviews": 3700
+            },
+            {
+              "position": 3,
+              "name": "Sapporo Revolving Sushi",
+              "address": "Las Vegas, NV ",
+              "website": "http://sapporolv.com/",
+              "rating": 4.6,
+              "reviews": 3200
+            }
+          ]
+        },
+        {
+          "keyword": "sushi food Las Vegas",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "I Heart Sushi",
+              "address": "Las Vegas, NV ",
+              "website": "https://www.iheartsushicatering.com/",
+              "rating": 4.9,
+              "reviews": 58
+            },
+            {
+              "position": 2,
+              "name": "Sushi Ichiban",
+              "address": "Las Vegas, NV ",
+              "website": "http://www.sushiichibanlv.com/",
+              "rating": 4.6,
+              "reviews": 763
+            },
+            {
+              "position": 3,
+              "name": "Sakana Sushi (All You Can Eat)",
+              "address": "Las Vegas, NV ",
+              "website": "https://www.dragonfactories.com/sakana",
+              "rating": 4.6,
+              "reviews": 3700
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"sushi near me\", \"sushi\", \"best sushi Las Vegas\", \"sushi delivery near me\", \"sushi Las Vegas Nevada\", \"top sushi Las Vegas\", \"sushi restaurant near me\", \"sushi food Las Vegas\" - optimize Google My Business profile with these keywords",
+        "Low Local Pack visibility (0%) - audit your Google My Business completeness, categories, and local citations"
+      ],
+      "scan_metadata": {
+        "location": "Las Vegas,Nevada,United States",
+        "timestamp": "2025-09-15T17:57:22.809Z",
+        "total_scan_time_ms": 48521
+      }
+    },
+    "competitors": [
+      {
+        "name": "Top of the World",
+        "domain": "topoftheworld.com",
+        "performance": 86,
+        "seo": 77,
+        "accessibility": 73,
+        "bestPractices": 82,
+        "overallScore": 80,
+        "rating": 4.3,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1313,
+        "keywords": 34,
+        "domainAuthority": 70,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 1101
+      },
+      {
+        "name": "Yardbird Table & Bar",
+        "domain": "yardbirdtablebar.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1443,
+        "keywords": 61,
+        "domainAuthority": 81,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 1073
+      },
+      {
+        "name": "Sparrow + Wolf",
+        "domain": "sparrowwolf.com",
+        "performance": 94,
+        "seo": 85,
+        "accessibility": 80,
+        "bestPractices": 89,
+        "overallScore": 87,
+        "rating": 4.7,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 781,
+        "keywords": 62,
+        "domainAuthority": 74,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 910
+      },
+      {
+        "name": "Mon Ami Gabi",
+        "domain": "monamigabi.com",
+        "performance": 94,
+        "seo": 85,
+        "accessibility": 80,
+        "bestPractices": 89,
+        "overallScore": 87,
+        "rating": 4.7,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1124,
+        "keywords": 54,
+        "domainAuthority": 73,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 1162
+      },
+      {
+        "name": "Eureka! Discover American Craft",
+        "domain": "eurekadiscoveramericancraft.com",
+        "performance": 92,
+        "seo": 83,
+        "accessibility": 78,
+        "bestPractices": 87,
+        "overallScore": 85,
+        "rating": 4.6,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 976,
+        "keywords": 40,
+        "domainAuthority": 86,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 804
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 80,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-15T17:58:17.841Z",
+    "businessProfile": {
+      "name": "On Demand Sushi",
+      "address": "5660 S Hualapai Wy #105, Las Vegas, NV 89148, USA",
+      "rating": 4.7,
+      "reviewCount": 376,
+      "phoneNumber": "(702) 914-0033",
+      "website": "https://ondemandsushi.com/summerlin/",
+      "formatted_address": "5660 S Hualapai Wy #105, Las Vegas, NV 89148, USA",
+      "address_components": [
+        {
+          "long_name": "#105",
+          "short_name": "#105",
+          "types": [
+            "subpremise"
+          ]
+        },
+        {
+          "long_name": "5660",
+          "short_name": "5660",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "South Hualapai Way",
+          "short_name": "S Hualapai Wy",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Desert Hills",
+          "short_name": "Desert Hills",
+          "types": [
+            "neighborhood",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Las Vegas",
+          "short_name": "Las Vegas",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Clark County",
+          "short_name": "Clark County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Nevada",
+          "short_name": "NV",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "89148",
+          "short_name": "89148",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "state": "Nevada",
+      "city": "Las Vegas",
+      "place_id": "ChIJE_4Xnbm4yIARYNxBi2rgqpM",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "reviews": [
+        {
+          "author_name": "Brianna Boulay",
+          "author_url": "https://www.google.com/maps/contrib/111865173444494967836/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKTZxhtTtdCEZIkwhby_4lFwWvJ49U_93YhNmNuD31FGAqzMS0=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "Picked up the 5 for $50 platter and it was beyond worth it! Everything was super fresh, beautifully arranged, and tasted amazing. The variety was perfect — a great mix of rolls and nigiri with really high-quality fish. The jalapeño nigiri was such a fun touch too. You can tell they care about presentation and flavor. It felt like a high-end sushi experience for a great price. Will definitely be coming back for more!",
+          "time": 1745775593,
+          "translated": false
+        },
+        {
+          "author_name": "Sharon Glasgow",
+          "author_url": "https://www.google.com/maps/contrib/117091425610523764234/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL65d0cjOu-gTOnMJDgpuHHzOcuXqoTE3dHwr-g2OREMRSVlQ=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 weeks ago",
+          "text": "Absolutely flawless and a pleasant surprise. The food was fresh, well prepared and packaged. The portions were substantial and deliciously flavorful. This food was in the same category as any top Sushi restaurant. The Chef ran a tight ship. Service was friendly and professional. I was a little early for pickup and I saw the restaurant was clean and well organized. This will be my go to from now on especially with the beautiful catering boat options.",
+          "time": 1756696554,
+          "translated": false
+        },
+        {
+          "author_name": "Suzi Danlag",
+          "author_url": "https://www.google.com/maps/contrib/102285295904735737133/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJ99tWmPonu39fzIbK-_vCdAWacQs7WRpgDLPgMAVfiJ6c5MA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "9 months ago",
+          "text": "Sushi is delicious.  We enjoyed Miso soup, Avocado Bowl, Chicken Furikaki Bowl, Wall Eye Bowl (the fish was perfectly cooked), Knight Time Roll,Alaskan Roll and a Yellowtail Nigri.  Staff is wonderful.",
+          "time": 1733018296,
+          "translated": false
+        },
+        {
+          "author_name": "Ray Ju",
+          "author_url": "https://www.google.com/maps/contrib/106137835166230554199/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKgpP-pvRGKlBNnQ96BJnbHdWIGlHmLyRV5tuBdrrAUjtBEZQ=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 4,
+          "relative_time_description": "a year ago",
+          "text": "The parking spaces for the sushi place is tight.  The parking spaces are limited since sharing with other shops.  There is a small indoor and outdoor dining area.  The service is very good.  There are decent amount of choices on the menu.  The shrimp tempura was very good.  The sushi lunch special is worth a try.",
+          "time": 1712937137,
+          "translated": false
+        },
+        {
+          "author_name": "Cheramie Thompson (Cher)",
+          "author_url": "https://www.google.com/maps/contrib/106253446606079345358/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUkB363swn0dvigFchiglr1xWTQeuzo4Q7a3bZvGD1i5tLgyVyx=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "a year ago",
+          "text": "This is a quaint little spot near a shell gas station that I stumbled upon. My sushi picture is after I turned my sushi upside down 🙃 everything was fresh and great. They were really quick with preparing my sushi. There are seats available if you want to dine in and there is an ordering portal online. The menu is pretty vast too!",
+          "time": 1712187436,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 2269,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101554111569800178778\">On Demand Sushi</a>"
+          ],
+          "photo_reference": "ATKogpdJsXRvdVvFvje6_iXB-jEu4xBf9f_OwaYCilYijZvwrPBFUjffq2jM7XIflKOnn-qxtnRqaqLJm3wYuEl1WTVvCt0da43JQ3eyaFnbTnetq0RFXmDJbDc49x8E9x0kblrriqp0KQuXEJL9eCZRhHRTKuU-KjAWcQluAIdSEJ_Vkve4ZgRYrxSf4mI8a4BmTwlgQaD0wEHFBIa3dmv1TI_6v_rB_UXmWgMpbaXeqj8v_gPiMzfsFkUCF7cK-zzAQcS6vuvCK11lU_u-TS5RyNzk1-6xVSXd-oNBOLnVbWNblA",
+          "width": 4032
+        },
+        {
+          "height": 800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101554111569800178778\">On Demand Sushi</a>"
+          ],
+          "photo_reference": "ATKogpccGUs_le--dwT3o9EGZaDoIKO5dWhWuGBNXx0Sw62_aWgNm9Q3L5sZPYpbu1fWOr5QZoKwKHxqOwaqLl6zEiK4lDcdwPWA2QL9L8xEp1Ph-Dohth9xVBB0Lp8zHvVjQj5d7mfRnBfGiQdiNW3vMT3WWkZgPS-0faQ6nwg1_PFF2iXl0IwK186OkBJGcyZaS3VrzaE88EmhcjKGfd_91jyyrwc-ThqGpkCIKt98XHSeQNGe7WBn9_kNgpjvuYATk8ky96S17PQKUk9rXtRKLbPKhHr0WuRSGDAL2jq9wfg3XQ",
+          "width": 800
+        },
+        {
+          "height": 800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101554111569800178778\">On Demand Sushi</a>"
+          ],
+          "photo_reference": "ATKogpfWCGBcHDXuBZjR_ZK7AFep6kHXwGjmY6eErC9e9rj-ro5dZPpDXOQMA3K4buMmGidXImygC1clvwKjHTU6qSI7n7ktRIRNVRmnd4SsflifezhNkpz5-9FLTlROUcPm509R4vjaD-NKlZ9Z0_h6uNNuAhqfOqd3h7FTy3sm2ESrNEOJYc1iG87Uz1cJHWUmjcUSfVg5HeEqYmMSdDAk5l_Xo9bQHsUk4VyR-2e0PfCN6qWarSA5oR5fNfaMASGO50Q69zzs3zpCu5dSkhDhC-pDhSehLSk6DejDjCSZBQEqAw",
+          "width": 800
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110454939303830578132\">Rojan L</a>"
+          ],
+          "photo_reference": "ATKogpcozDPE5Bd9XFtXPCuEPQqflYJCOJyAwc0pYySEVhOKz3VnpAYVbjMUpmynd_8mqDEzBXInLxnt88-3p7cwOOV7zs4XSBBZ_CSJ4TG26WAl9ly1jKBCMPmsbVxboP9V_QiPVvu9aJIxJeQSwezP-Nd3bYrWi9V77uLlFKChGF73HSGF_Bw7SAEEPVKHaUbcwG2ejgFA6YZ9AwTwXMrySL38XiLsZ9M_uF3ceaBEmU3rljNGo_d8tONQTGUbSNEoDY6w8ZHMFnFGu8PuhtMuzKOfGZ2CoO4IeuMOVLgdzlJKFXPjCtVuBt6lA--gVIw-2DJKbRzo2y8_dkg7ZTmf5ToYk4LFJVbTvIqVRyZcsHw2oyuAHkej0WwJG9769pStew39yP9u5MNNOtFWHKwrJc7GM6wqEXR5tCPxk6zcT4nFlZMo",
+          "width": 4032
+        },
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/106137835166230554199\">Ray Ju</a>"
+          ],
+          "photo_reference": "ATKogpfmOhUYOahXGzkhOYYKbkzb8OWrrmTdFjtfg1ueZbb54GGSZP27FT3zRerNguVzBnpXnCfaZB_NixJ8zVgMNSxI4DL2B038WGUiDCErhVDVBg6ZkPIA77wYmRxnV7RJtucB68XlhO8dbLxrtLYVhVydErejqYJOrkmu7jC-_8nIg8ZVzJRbiadz-L8SpKotaCkSgLE-bfdUr6Vq3rnm4hKzB90aoxQorRijIqFF8JEc8Q_cD1XqQfxsA2-lEYd-u2BMw1VaRBKJPRH2aMJBReNI8W8EgBiw5YryjMdnaQUGVunksYar7XGSrQzYC31lWerjk4otJA8plA_MZYptP-HmLoGSPSlMdMOqrX4I_-9Ns98fCLIyFtl3OMD3uqrueeH0rs3KNAehSfwwDJLntUY99a5zXWuOOA1i5qqgi56IUw",
+          "width": 3000
+        },
+        {
+          "height": 2881,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105591804824277981560\">John Almarez</a>"
+          ],
+          "photo_reference": "ATKogpc8LYj3aAyRCLYkXO8vOQJj2pr1Rus5IY_2NDbCEfA6T8YNqKO38doni_Wy_PQ--9iBpx6EXuyBKmTzmvqChgUjbV8F0pVFqgsnwYWxVjzU-uF3pr5EzOBg8ob3xwq539XdN8lCZ4LPmDlM-wI9mytjAclAzqkx_UjXEytlKHlk0fU2sGTf5KyhUPeWRJgUD12DTTq05_b77xc3quPfH2NUyA5Vds-yoRSXKJ2bBt53iACv6AC0dN-UHRCIZtcdujBKHf4a-QIvgjK0nvHZsrFuNwLFn4R3a2wosS-T1BPH7GuTm8kDvIvp2yQmOk4eEiL9hhXiNrWAjeD6bX8YfnkfM-uRy233m7XiOsh8AT5wsASUDgcbO3veL16eIr43fK-UcVSIjnO10ltAxeWwnNp-WGGLL5m_4YdLmb-iXLClAQ",
+          "width": 3632
+        },
+        {
+          "height": 768,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115062397397151123013\">Dalal Gullotta-Homes By Dalal</a>"
+          ],
+          "photo_reference": "ATKogpfR5biAGrx8bPHwau9382fHxCqeWHWXpOv1Bjn1c0B_BKe1aIhji2bYFdWxL0dR7C8_rbfPSk_zCpW47VVB4-ESw2CZisCG9ZwxT9nfBLt4iru8DKDE9uKaFvGCGDUJ6NmJpAshrE0VSy9N3V3KHCkfIKL9km4WBm_jciGYCQoPOu3XRRvHHrR0yQIIe1MSKbLVV7rWnoc3-pvye4YwvVmu4Xy50aditRWqmGX0XeY01M_eWtMJqKL0b38JmEAF0kO_f3aUGUWfWce6mer6XtRyLIL2gZddv8OG4lkrxLmPadHln4YTvAptvsfNaIfPaOWJWkeCQcVlmGLUCri4FiJOZ32IgcCjsqYh-MIXpwnevzFw6Z6Z2cVALWMgDk2GVpTS8aoHTXtSJB3i_c2Vk94mt5e1B4kDS1wzecQ-hqiTOQ",
+          "width": 1024
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102285295904735737133\">Suzi Danlag</a>"
+          ],
+          "photo_reference": "ATKogpdvQ10gj9qYXYzFYpaIFFAykyrJj6L6D4DZczpeXCY7qcxEKv7SIvKHw-Y9G9DveeiJUn_PYinuShFOMuxEkxMHpfBb9Wv2hAyv50ifq-E-rDvyzJ-U7S1KhbegLwv6Moi0szUOSRoQ7lIvpXAydP5PCOMT75V1k02GhcTWdXA0O3yxs1IfZLK62DZrq2oSLTOUFlJNbmhg3EPk82Kna10INh8ZzpXHK7BombfDBYT5IDmD_7i8LafLigADBkFIREIbo7FndiKnX05ZRXLGhyLHmG4mLhnlIigkfOsegxEcVdUKew2nvAh4hhBVTdLuRGvcIJmuSRS6rbfyqzzoHK3HDIe4zruHPgOS0Ch2us1LZCNb2IPu4fUg0N_yH-c0IMpBMPlnvSRgIg4B8GraTf2uVcZMJPmFn8U3FdOYu2L8DN3c",
+          "width": 3024
+        },
+        {
+          "height": 800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101554111569800178778\">On Demand Sushi</a>"
+          ],
+          "photo_reference": "ATKogpf0AC-wHShp9Z4U5CsRa2ZpaEuPlT8mfXi-wK3iTMpyeGaTU86t6CRtb1nbs65_ERe7kwVuAmcFormq9_FXlG9yrPVPYXc_jlvzigrxAr_0OqISgy6ONCcoeidIRkHBhmNKF7ypIvESstkgegtCdTrgTQWcFaG1nLjJQg4pdTCCbYidmUljCn4HD_WIwyA7TrLUaYFsfT5C8vWbtUQGVeQ-yAi36Xkzjx4n-uQTWxaz5KjxHaDwdBPTCOc3qPXMDbPEM5nft4OQ8zUcW1tjN5a0pWtuKwHjoQKyECoUSLOfyw",
+          "width": 800
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100593923623271755697\">Vanessa Vega</a>"
+          ],
+          "photo_reference": "ATKogpdMGAtFDOjL9_NbUnTqq4FsxT_6n1wF0-2gHTGCOJ59S_VUwmqBZRHCNzdn1qETU4s_5B1p3Owjw8fXfDR6pMlW5ZQm7tZzPVU_nYtft5hqbxCK2RO5-1uP4AKGbaWuBQrcZjxmh31KFTS5qKssFp7h-ttc3yRUzP-8rzP8o91aJux2SuJS8MOu-ZYcQYWQZ8T-_hcGoV5y-xk3A7mbxR8eRu-g1K5Z8Nu_75YvMFOFg-uWt0QKdTVGR5GUav3u_gZMKTXu0fsiIJci3WnioUEzMj7G1gbShbfLA7oGfxYGaloRLieFoJ2hJw99dUV5H0Qo0d3v2_OScP1wbsKL1UnaHIsZacKCZUP0M2ExokyAI04K7-zUxaRvz0EYGOD0FxGbHIG0Qy4mUlpHBQmyxxfgbkthKLJHEkzBlBTU1CbAb4bMQz_xP09UTj5G0ZFd",
+          "width": 3024
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "2030"
+            },
+            "open": {
+              "day": 0,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2030"
+            },
+            "open": {
+              "day": 1,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2030"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2030"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2030"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2100"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2100"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 11:00 AM – 8:30 PM",
+          "Tuesday: 11:00 AM – 8:30 PM",
+          "Wednesday: 11:00 AM – 8:30 PM",
+          "Thursday: 11:00 AM – 8:30 PM",
+          "Friday: 11:00 AM – 9:00 PM",
+          "Saturday: 11:00 AM – 9:00 PM",
+          "Sunday: 11:00 AM – 8:30 PM"
+        ]
+      },
+      "price_level": null,
+      "editorial_summary": null,
+      "url": "https://maps.google.com/?cid=10640563817823722592",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdor0RlA6hPh3MF8epOCUFvLwOvJxgoeRISD30jRU96u4L7hQX1gIMDvaUj-mTD24ssQtTLHuvJRPZWdHhO6VZrQ2LrKmMa7x87DKJVV8lIS0Mbgj4Zzjhr6g4ngmYLx6JwDKKRfE-tkjIFyezvn0Lp8ioHkF0c6G36X1_7pbFaowYpT7AQ8HNm9OZbULwrEJRB8AJF-f7t7_Bz0dSo5DGj8foyFyAEarf_1uB_cT_cWZ7Vw8JcyeE3lLb6bN2XwkbC2WBc7VaNUI09VcoB6rRwyAPdaJl5aLICsQQgCOWIXw&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdhm275oh9mLDKZasifdElHf4HT89Lm-39Rx8c6pfTPIHgWoSn7mANlej_mgllpSAPjn1oMMS3S4zpBta3IeIXHXYVRHNjTFsQnvLfiI718-OUnbsnuvkcJNPsUy5kxnMXvGUOhILgjAHoex3nk1TRhmxWOG-iijp5t3C3xwYE9JsefnibtNUlhXHqQ5v9zfv7oz-FJil59axnxxLNcI-T2egRCJLmz8ognlv3pN9LoiHLf8Rd1saj1BiDx9NsVjGEOk5xP78oC03YLl8qVPOr5qCzYHysvV6LiCqlW6o2ehg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpeJO8qxTFJ6wsg7-1oIz7PcV7ad4DyFU7w8juvmKWUWeDdbxeWy8NFccbSM8uS8hm1n2WiHIvHL0FCx1-0-xFAMyGhdnc_A8Qtb9bRq5Le6X9IIJD5pzhTW7NCEHihEP1XGAaejIP2j0IaPHxBWEE1GxfD_pVH-9V__h151CK0dJFmzUaj-A-5-LjXeuShyadg1sgs-oOcRoaadHhGYtVWfRgurjntxFsiQ4ZioumImZuFkLkpsg8VwNbIyDG17G6KxrQKaSKlc0wpcBR2e3VXsXfRtmpFW6zyJFBNyYA_YRQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfrSgsEkfmIVmbh05jcg1tE6-kB0EYLs-M9ryONe_RyiHOsu0dGJxm6prsVpl2ilZjnZABdqaJkfW10eioQh2xpsk413iRggSo4Y13CcC_hvxA_IzPYeEZj8q2gKSdb8fRk3gOv8PK5fL9dbBT3a9pHCMJU46JYcYzyN1EYXZFYtxiq13UwOluvQEw4QpJkbP4bGJdQAYVIoQBU6rQfunLPUcLLoH8GhSYO7eYPSONaSfBUOdTK3O8uUoRRud42lVxemkeFXGXU9QwW7zUipq1RxdsGLAe7EEHdcm843HPJeWCMVTqPHqVhGzF8MNGUPDSM4xbOlyg-PzwasnvnYyyqSroEgZmDeSB00zMsXwloyiPjLe2S9_-mSx7rR5J_Z2CwfEn9IerWAukuUx3j8I13sLr2ctbLtjYXg8B99lltoy-E&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdMi1wtHBgh6-wxtVdobFTT7UW30qFnph1H7vMcLwS7WM-3FCuL6F-YdsHs9smy4Q9tVdKW77KfdAyKY7FWFaHeuA9J1rQU9wVhGD2iOJ5qR8sDMrIFDtG54y7NjHmcyrkMD29vtSJfIQkpWIFzRwRYwdmjWMaTzUXDTrRkifWPWYKn7IgNB19FZSjw3uEyWOT_2ptkMjHJWB4lhgQdXaICjTRSXOfvoKkCyUXuAoJ9p40M_hWJeSBmzUWXDwXQNBZfILimwtguyoecKgEqF8CliYUv7I_Gdo0NtOtjgWRDsUnlJlMo9KNFMQtOQYKYTgujSnHIMqWv1B5tknkjbCIkBRLJ7WNNb_d1xQi70AwzSqVj7dhzwhZqPh9_L7Q3d2Hxp3roHLb3C9GfraajmWDkUDkXSkNo8tUlmIYY-a-L7w&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdEF0KbKwdJ7_p7B8JM3Cw5iYijwlblk3zF5fUOuO4PswHbKh8cHc2srGWs1FFwyjsFCVDObvtqQub4kPojU9Ol3y7ixmz2rUFb8AuQ9OwEXlPFlwSbSLJ3vm_6kZU3VEM96I0-M_T-e0h8GdkReMnzHWpGruWkWRwXtVPqghM3UUGfzcXgHemAnfnGYyn4Qm3te8BAAxA_KAmojknYEq0mMhN9bp2Na9CZ1gRxNxakH_TXx1xQFFg62a4BxzowjaTJBgrK_8vX3XN8eGGVzJbwEIOQrLS5v3zB18Qdkc0A5u0EZkR8Wne12ZRy2JIzPlLt1M6j5LkgZgWywwHj5unZRhtSG2apthlT2pj5PDMGCVwa4DER0AeIaGw_1Zv54j9fDPEn2eMftIdhhWQGTx6a2KU1ckysfy_ZMN-zLE5mEA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpeV7W2OnhrvqJoIOUq_CFT_xXJyHXgk1AmH1oMZ1px3t7g5MpVTft6d_Gn5XX3QZ0lkTFp9uD5lDK6oUF4ld6Q2EswWeWvK2KdIOU6-xrIDMhJdrWAZQH7c5nZ8gVDqf_yiQUcyv3Mz-BkvyJ09VYE_NjNu_Gk9vHEM9J76TV676_5iPRnWMVMv2LN4uZJMLYyf86xiSe-ueuqk2wn6PIN3KpE95i3mYA42aR_mYuuL7Ig1DZTPGiqwl7QBFe-IMYEkNuLZ3dc1XWMcfGRizQ4x38DA9WtVqmz9IyWvz3xxIOWhSGqrniU6o-4HjwbUJC2uBJY9xH6EJDJCN7pBoyjsTm3cV8k3MbPMWUxC1TBTOXEfrmB-Edkgupd9sYI23ulnxrzATSGIhf939mDVM5qGEWkKFGyYNMeKR5e0i3xFsg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcMFVWFKCbj-lmsTx4APWPfng4YqsP57Km3a1fUbf6B9in0UeGGE3vwRvvEOgFqgt6AGyiO_HqNFuZs6yVopcW4zB_cpuJmmPNFlKv0mcyrAWFf1b6AP95TeVQ81_5jHrREntIU7TbeDg4m-8CA9wdS1T_vPdHKPC-POKWE-bj9HUHzQxye09IUItJOhOuijTC6ARybMM5YUz_uwJlkGnydlqQm9mwGJgtCw1xoIPIebtjwErKjvfKtGMpFlx9KSLz0K9VRv8BEuOEvgs1SXc5texreyebhP8XYWIblyKgEVjWigqXb1TAyffvp-2NbyGLke83ejE2fa4ZSp7zXUy4WicijFx5IjWwjMkonT2eXoJeqU0Pxc47Ki1VwCr3uCENZp1P8I6FUagpS2lzFmxinjYPMrxLvr063nN6NbG1GhJX2&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpeBDb1A9ObViUk_uKe-bJRCHCmkPhNdkesvBF4uls79U_4wMIdetrnrK14Nwr6kdm_K89DuztwUNeubng6x6Q82EsEdPHngUI_M34aH-KbgEqyVr2WoxE9JrWOEsBQKmOou-f-_pjpkEeSdLvrNXzDNPLmLT7Z-XD-Hra9U9xBjEkQlLi038QLDBUFtvNsV7FwwDmr_P13Q0hPLqT9PagQEjtF2H9knc5ix6TbYpghnXDHGfMhewq5ZTBP1draI1PrZkkBdpbRa2FGg5A1JiU-A9QVPfTppQpbsWG4b4p5KTw&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpda4SrNm0Af4DIDMnHW4GqzZDmOWNTQmi-Jg3lYxcS7Ejqba3UCsoEt3FZ24a6Jf2TE2XPUbvnkMBZEsWwNAmL8HidA1uGr_FgidwzijLrteFYOyGQApppWdSGO90WbDMEl0-Z8SohCPcySXOsV9dh2ovtuhD4_rY4wp-vc2RRm7oFDGipvRBkUybxn9iiTwb2Che2J8R435HeF-gWizyy6A2EVLn-JN3McbxGptcWh-TxeMCPy_xxnNAbMZ1n6j_4xU7GDLR_H-QmWpCQ5rmZWaMHrT8tIsbYDsA58wTlm75vuA5pXhtc4Wdz-i7nz1jXwvdYj05AyG-blHn_VNcZoZACG39IWhOHRQjlk7GxZB85NOpueVY1UiS9mYsUufbm_c8k-CY6Kv9zmcq1MsNmE_DrlN0p39y70WjlsW62TKLapWlzOU5AvHbMqvFbk&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 62,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": true,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 94,
+      "totalReviews": 376,
+      "averageRating": 4.7,
+      "sentimentBreakdown": {
+        "positive": 86,
+        "neutral": 3,
+        "negative": 11
+      },
+      "reviewSources": [
+        "Google Places API (Apify Enhanced)"
+      ],
+      "keyThemes": [
+        "Food Quality",
+        "Service",
+        "Cleanliness",
+        "Portion Size",
+        "Wait Time",
+        "Pricing",
+        "Location",
+        "Atmosphere"
+      ],
+      "recentReviews": [
+        {
+          "rating": 5,
+          "text": "Absolutely flawless and a pleasant surprise. The food was fresh, well prepared and packaged. The portions were substantial and deliciously flavorful. This food was in the same category as any top Sushi restaurant. The Chef ran a tight ship. Service was friendly and professional. I was a little early for pickup and I saw the restaurant was clean and well organized. This will be my go to from now on especially with the beautiful catering boat options.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 4,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Always happy to order rolls here — they’re always fresh, delicious, and perfectly made. Excellent service and fast delivery. Best sushi bar in the area!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "It was better then all the other sushi places i have tried",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Can’t beat the sushi boats !!! Friendly staff",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 3,
+          "text": "Takeout sushi place with 3 tables to sit for big portions, great value poke and sushi",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "I love how attentive the staff is and I really enjoy how fresh their sushi is. I love coming here I’ve been to all their location and they are all great so happy to have one near by now.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 2,
+          "text": "Had the tempura shrimp and calamari. Both slaughtered in batter. Not what I was expecting. Overpowered the shrimp and calamari.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "negative"
+        },
+        {
+          "rating": 5,
+          "text": "Quick, late night delivery. Good, simple communication/tracking. Delicious sushi! 🍣",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        }
+      ],
+      "detailedReviews": [
+        {
+          "author": "Sharon Glasgow",
+          "rating": 5,
+          "text": "Absolutely flawless and a pleasant surprise. The food was fresh, well prepared and packaged. The portions were substantial and deliciously flavorful. This food was in the same category as any top Sushi restaurant. The Chef ran a tight ship. Service was friendly and professional. I was a little early for pickup and I saw the restaurant was clean and well organized. This will be my go to from now on especially with the beautiful catering boat options.",
+          "date": "2025-09-01T03:15:54.067Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21aUVRUZGliMmx5WjJkM1ZFazVSazVSU1ZKb2FGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL65d0cjOu-gTOnMJDgpuHHzOcuXqoTE3dHwr-g2OREMRSVlQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117091425610523764234?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Peter Holder",
+          "rating": 4,
+          "text": "",
+          "date": "2025-08-20T19:42:05.939Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT200MWJIVTNRekZHZVcxTVV6VmxURTV3TTBGNU4wRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVi-dPDlyC_lLtsmCp4bFav1HtuX5ZNhefZFIU8fJALunD3myhK=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108031237636533444263?hl=en",
+          "reviewerNumberOfReviews": 43,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Andrew Kulish",
+          "rating": 5,
+          "text": "Always happy to order rolls here — they’re always fresh, delicious, and perfectly made. Excellent service and fast delivery. Best sushi bar in the area!",
+          "date": "2025-08-14T03:51:29.624Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT201NFRWaEtRbG94ZUdOUlpFb3lia3hqVlZWS1EwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLuiYwMD8K3km96D3bXdYWeeoDtIMoVhS_gJNI8Prij0Ocb3w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112889132846221837844?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jessica Gutierrez",
+          "rating": 5,
+          "text": "It was better then all the other sushi places i have tried",
+          "date": "2025-08-09T03:30:33.126Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xSallYRnpiVXR2U2kxaldIQmtabXd4V25STldIYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWrNoybJjEnVvvwZNi0cIZ4LOh8GdVkSI7V1UqBLSZnjPaAYXvX=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107400513697656143147?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Vanessa Vega",
+          "rating": 5,
+          "text": "Can’t beat the sushi boats !!! Friendly staff",
+          "date": "2025-07-20T20:48:28.842Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pSR2VVVTVRMU5JVld4dU9GWm5XVGd3Tmt0dFpuYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUIX0XcXeRzzico270305ZMJPeJCHXj3RbA1x4qpg_4IXxgWblFTA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100593923623271755697?hl=en",
+          "reviewerNumberOfReviews": 36,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Olivia Rebanal",
+          "rating": 3,
+          "text": "Takeout sushi place with 3 tables to sit for big portions, great value poke and sushi",
+          "date": "2025-07-18T22:05:01.217Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t0emFVcHhlVXRvUVZGelRFeDFibW94U2tsSlQwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ74pw_cXr5azfXe0roKv7X2K8TmkGrBlTPbRn9PcryJrKJxA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118199947174344913793?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "jennylue",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-18T01:05:43.984Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25oSFlUYzRWRmd0WkVwblZEWXRiMVZTTURsRGFVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLufL-8dizaqRlFLr3-cyrZaWjoSiNXv3NY2ekV_nFA_Eyb6w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107370518043377332755?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Teresa Leyva",
+          "rating": 5,
+          "text": "I love how attentive the staff is and I really enjoy how fresh their sushi is. I love coming here I’ve been to all their location and they are all great so happy to have one near by now.",
+          "date": "2025-07-11T18:54:56.083Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25aVE1rODRPVUZKVkcxcFJUSTVTazV3WlRsQlduYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKd7Fmy-SHwccJkj-Wvr9TvhEWXkr34ZLj2Ofbpn-XS7FAq9g=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107836379525973160134?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Aleksandra Kowalik",
+          "rating": 2,
+          "text": "Had the tempura shrimp and calamari. Both slaughtered in batter. Not what I was expecting. Overpowered the shrimp and calamari.",
+          "date": "2025-07-10T03:10:40.002Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2sxWFFqTmtiMjlKZUdSdVQxZzRTRmw2ZG5kSGIwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX-NSkOGR2fhruT82bX_-68yOCAw2JQaCZWDF3RlTEG-krsJdY7Kw=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104026827813625186717?hl=en",
+          "reviewerNumberOfReviews": 117,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Alexandra Jones",
+          "rating": 5,
+          "text": "Quick, late night delivery. Good, simple communication/tracking. Delicious sushi! 🍣",
+          "date": "2025-06-22T17:33:01.062Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25CMWRuVXlTMkpOU0d4NFJsbEtOa2syWDNscFNHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUVIGGNHTON_-ggNZ1yscLkUK_e5eIB81kCD1Hk70cabvYvxfy4=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102252654399340384048?hl=en",
+          "reviewerNumberOfReviews": 17,
+          "sentiment": "positive"
+        },
+        {
+          "author": "The Litgrrl",
+          "rating": 5,
+          "text": "Their sushi platters are always on point and they are super convenient. Great customer service and convenient online ordering makes this our go-to spot!",
+          "date": "2025-06-21T20:51:03.696Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2taRll6UkVNRXBMY0RsVVNISjVURVoyVjFOTFEwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL2zz22cuCYADZQ_Az-WO6wm9yAuwPksXjgWVOFF9lgU1knzQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116537301404775648102?hl=en",
+          "reviewerNumberOfReviews": 38,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Livixx 555",
+          "rating": 3,
+          "text": "No ice for the drinks ?",
+          "date": "2025-06-07T02:57:48.778Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VLdmtoS3VKcUxDX3BnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWR63q72CwBhOY_B4XskU-QnS28qLJJiHeCj_lvPn_KY0Zc0-Fo=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103572482821624860037?hl=en",
+          "reviewerNumberOfReviews": 121,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Molly Cookie",
+          "rating": 1,
+          "text": "I ordered sashimi salad and the vegetables are rotten and sushi are not fresh.",
+          "date": "2025-06-06T03:10:20.144Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNmdk9id3lRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVtddJ84OCF825rd3PQURk1HLg3NEbth1G8R43GYpFJ3tqz9G8P=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100447464446181171913?hl=en",
+          "reviewerNumberOfReviews": 27,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Roxanne Filoteo",
+          "rating": 5,
+          "text": "",
+          "date": "2025-05-26T19:30:40.578Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VQWGRxcERpdFAyek5nEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXNuJAdirs6GKPY8hIqgLExabRBzqSflbaV_6gohSoRTzBt6XBH=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109579952259640628692?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jeff Kwak",
+          "rating": 2,
+          "text": "Dropped in and decided not to try it. There are a few tables, but no one acknowledged us and not sure what was going on. Went to the counter and no acknowledgement from the counter lady. She finally turned around after getting off her phone and I asked if there was table service and apparently it's a order at the counter deal.\nNo handheld menus, so it's a matter of searching up at the list posted above fast food style.\nFood was probably good, but we left to dine elsewhere.\n\n●My friend and I were in the area and thought we would give it a try. We saw a table with people dining so we went in. One of the cooks made eye contact with me, smiled, but no words. Just very basic table service would have been nice, but that's ok.\nThanks for the re-invite offer Carey. I'm sure the food is good, but maybe some other time. Best regards Jeff ●",
+          "date": "2025-05-09T02:05:56.058Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChRDSUhNMG9nS0VJQ0FnTUN3bzUxQRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWrF2VhDSSkwYvz6OV4KZKifmYxwBVR982w3WubEeryKb7JhkhY=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103067929418022733540?hl=en",
+          "reviewerNumberOfReviews": 299,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Holly Jackson",
+          "rating": 5,
+          "text": "",
+          "date": "2025-05-02T01:21:22.386Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNZak5IYUh3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK2dfNC5xCVNMfszGBHsPT5Eu1bPoQGkwYdZdhO2xLZZNNspQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113699460245910461740?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Brianna Boulay",
+          "rating": 5,
+          "text": "Picked up the 5 for $50 platter and it was beyond worth it! Everything was super fresh, beautifully arranged, and tasted amazing. The variety was perfect — a great mix of rolls and nigiri with really high-quality fish. The jalapeño nigiri was such a fun touch too. You can tell they care about presentation and flavor. It felt like a high-end sushi experience for a great price. Will definitely be coming back for more!",
+          "date": "2025-04-27T17:39:53.476Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURvN2J5Q2JnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKTZxhtTtdCEZIkwhby_4lFwWvJ49U_93YhNmNuD31FGAqzMS0=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111865173444494967836?hl=en",
+          "reviewerNumberOfReviews": 39,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Crysta Wagnre",
+          "rating": 5,
+          "text": "",
+          "date": "2025-04-26T11:32:13.299Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURvNlpYSHNRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV_K9E1CHV6Z7QwI2xIbjDi9ez1Yh7SBF-z7C4tovuBbT4H3y0=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110494072610142784389?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jenny McLauchlan",
+          "rating": 5,
+          "text": "This is such an amazing takeout place, the sushi is exceptional and there is no where in vicinity which even come close to this deliciousness! We’ve been going here for over a year now and it’s consistently great. Keep up the good work!",
+          "date": "2025-04-21T03:32:56.514Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNvdjRXMTBnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJj0eVJrfMKmNV6ze-8g4oe2NkxJzeb6PxqDdm1K3A9avdVlQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110341479358877537630?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Leanna Vasquez",
+          "rating": 5,
+          "text": "This place is my “Go To” for fresh, delicious sushi!",
+          "date": "2025-04-19T02:57:22.359Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNvemJfek1BEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJKCdO6_7dKpQ3eJwQrDyq2wcoGfsUfApce9rThhLYRDfs5SA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113033480524243266508?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Marina Alvarenga",
+          "rating": 5,
+          "text": "I simply LOVE this place! It’s literally the best sushi I’ve ever eaten in Vegas. Such a hidden gem. It’s the only place that will get me motivated enough to drive out of the school I work at 😂 to get this delicious food!",
+          "date": "2025-04-03T19:15:56.450Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNway1lYUVBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUkDMCYjgpxgM5AmHiuPdaUlt2hBk4QE6n67mPgOteEsS5f9IYJDg=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117535675112400234645?hl=en",
+          "reviewerNumberOfReviews": 22,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Elmer Rivera",
+          "rating": 5,
+          "text": "Food awesome. The parking sucks.I could not find parking",
+          "date": "2025-04-02T16:55:26.662Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNJNGFpYm93RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJS2Ozs4vyV0MrWXkd1QILzn-YmpzqV-0ZEH1egXmAMWFOvlg=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102470269717001520721?hl=en",
+          "reviewerNumberOfReviews": 15,
+          "sentiment": "positive"
+        },
+        {
+          "author": "July Rodriguez",
+          "rating": 1,
+          "text": "",
+          "date": "2025-03-26T02:43:56.296Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUR3M3RqN2xnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUQYEpja5isaiU6g4R4Okl6VJq6ZF24Y7_MeGFVubHvv7XfiOXAaQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105267104729634513939?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "negative"
+        },
+        {
+          "author": "pop13 prospect",
+          "rating": 1,
+          "text": "We drove 30min to this place with high recommendation only to be told that they only can do to go orders. Mind you they still had 2 hour till closing and the restaurant was empty. They was no reason to not serve us when they had 3 employees present. If I wanted to go I could off door dash from some place closer. I will not be coming back.",
+          "date": "2025-03-26T02:33:00.168Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUR3bnJmWmdBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVAsfQC4GN78gYUiD8p-iW9v_C6pLSv9vrMp-dwEctyatzRk6xh=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101483807147601211892?hl=en",
+          "reviewerNumberOfReviews": 148,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Catherine Fleming",
+          "rating": 5,
+          "text": "Our go-to for fresh, quality sushi!",
+          "date": "2025-03-20T01:56:07.920Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUN3aGR1cEV3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW3Czp8rUrq7Gvcv21mDzAnJqJdTUDMHo74szD6YH_CRpnm0HY=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105155894016360226379?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tracee Davis",
+          "rating": 5,
+          "text": "The food is always so good! Poke nachos are a must have.Love the fresh ingredients!",
+          "date": "2025-03-17T18:04:54.628Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUN3MHN6TEF3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVJvhnoPsGcWxS-_MV3RR75sdYqPQ7eYkb9mvuhhwSy3QVne0Y=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113284510530764135767?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jesse Sutera",
+          "rating": 5,
+          "text": "Amazing quality sushi. Fresh, delicious, and well presented. We cleaned our plate before I could snap pics!",
+          "date": "2025-03-17T00:22:00.942Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUN3OVBuLVJBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUA084jKpssjPnNtNAo6NDScnv1yVnjoiBq7HABgYmVA9Xg6RLhNg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105883080889028922640?hl=en",
+          "reviewerNumberOfReviews": 33,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tom Meek",
+          "rating": 2,
+          "text": "Website doesn't show this is a small mostly takeout place that doesn't offer the lunch specials listed there or any alcohol.  Loud pop music in the limited inside seating area.  According to staff, only the Rainbow location is full service.",
+          "date": "2025-03-14T21:08:18.965Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTURReDdxa3J3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWG8wi8huM_HL6a5bmcbrtp8fE0Zd68if7SgfClDsHOvLhNNbNf=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101895872900361659903?hl=en",
+          "reviewerNumberOfReviews": 52,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Josh",
+          "rating": 1,
+          "text": "Ordered online 2 days ago they got one of my rolls wrong in order. Ordered again today said they were working on order a whole hour passed by and then\nOrder was canceled. Very frustrating i guess I’ll be finding a new sushi spot. Terrible service",
+          "date": "2025-02-10T02:53:42.472Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURBeWZQcVhBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLsWnXsPEIbQICs40xmAp4J8fvblIPEnoRF643Qpxd90Szqkg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102418841754262684942?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Keeta Simonë",
+          "rating": 5,
+          "text": "So fresh, delicious and timely! Decided to have a lunch meeting with my social media manager here and we were starving. Carey the owner happened to be in at the time and was very warm and welcoming.\n\nAs a small business owner I really appreciated the focus on quality and service!!! Thanks Carey!",
+          "date": "2025-01-20T23:49:59.573Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURfc0pPbUZ3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjULpvzfLCg8YEdOoekAOF21ORLcdKS2SNjiJTSUe3ltEwE_mcrQHA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115041881116111893371?hl=en",
+          "reviewerNumberOfReviews": 14,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Deborah M",
+          "rating": 5,
+          "text": "Just moved to this part of town and found this fabulous restaurant. Prompt, friendly service, sushi was fresh and delicious with a beautiful presentation. Huge bowl of delicious miso soup! Great prices. This is absolutely my new go-to sushi restaurant.",
+          "date": "2025-01-09T20:00:29.337Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURmdzY3RnRBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKzHn6KEJpVW8snRQj-u0aCTafWRihObKwgGmIZcIgD0E1b7Q=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111401913975848474660?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Rob Groce",
+          "rating": 5,
+          "text": "Polite and professional staff. Very wide menu that is both delicious and affordable. Small dining area, and this facility seems to-go oriented.",
+          "date": "2025-01-09T04:21:17.429Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURmamJYd1FnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ_0gX6Lvw9E5fkrcGfXupl3xtgtpPxN5w9RSCs6kB9pmwTPg=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114917426658514085016?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Monica Che",
+          "rating": 5,
+          "text": "Ordered a 5 item sushi platter, and I was very pleased with the presentation and quality of the rolls. The whole family enjoyed it. I recommend this place to all sushi lovers.",
+          "date": "2024-12-12T02:42:15.349Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURocjlfNzNRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWLHwn0ZgyOKlSVvycodFcEBzJUxg41VI13cdpigKniQjEGxGM=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115300419385092069148?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Liudmila Dopca",
+          "rating": 5,
+          "text": "You can’t go wrong on any roll. they all so good , not all you can eat but definitely you should give a try- also they do have specials. Small cozy atmosphere inside .",
+          "date": "2024-12-11T01:31:15.909Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUN2anZmcExnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUX_9Y0Z5N0DxgWOzqtYLBO4PKWOoU0zSdBTBpEUyl4_nEuNc29=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103762192425547949824?hl=en",
+          "reviewerNumberOfReviews": 87,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Suzi Danlag",
+          "rating": 5,
+          "text": "Sushi is delicious.  We enjoyed Miso soup, Avocado Bowl, Chicken Furikaki Bowl, Wall Eye Bowl (the fish was perfectly cooked), Knight Time Roll,Alaskan Roll and a Yellowtail Nigri.  Staff is wonderful.",
+          "date": "2024-12-01T01:58:16.718Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURQeXJXZExBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ99tWmPonu39fzIbK-_vCdAWacQs7WRpgDLPgMAVfiJ6c5MA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102285295904735737133?hl=en",
+          "reviewerNumberOfReviews": 38,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mike",
+          "rating": 5,
+          "text": "",
+          "date": "2024-11-25T02:40:14.977Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNQZ1lmaTFRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLte_CeVEjXV1wtBlEyxaVL2BxVj8DbGyyl7Md1OsqcCek12g=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100940102648979843200?hl=en",
+          "reviewerNumberOfReviews": 25,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Oren Inbar",
+          "rating": 5,
+          "text": "",
+          "date": "2024-11-16T20:30:50.634Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQzaFpTUnh3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXKHewNl5VTAKBm1MuDDfQInqH8y3sWP7YYNU2JNHUmOBA2-abDJg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102703123602874976707?hl=en",
+          "reviewerNumberOfReviews": 51,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Taylor France",
+          "rating": 5,
+          "text": "Wow!! This place does not disappoint!!! They went above and BEYOND for us!! Thank you so much!!",
+          "date": "2024-10-30T03:31:10.382Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURYemE2RmVREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU2iHkTi8OJZkLyS6LZ2z-ANv5W__H54VFj1wVZVpfIjFfYxcPB6w=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115340537319256066745?hl=en",
+          "reviewerNumberOfReviews": 17,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Emily Breeden",
+          "rating": 5,
+          "text": "AMAZING FOOD. So freaking good. Manager at front desk was super duper sweet and helped us choose the bestest rolls. They were a great portion size for the cost, and delicious. Noms.",
+          "date": "2024-10-30T03:30:44.283Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURYemE3Z2RnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVS3SatkVNYxEnsmesKCFb6RvcExZQzaw0uXqEQG5AVphgRCs0v=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108180048915626298399?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tamesha Terrell",
+          "rating": 5,
+          "text": "Holy mackerel this place pops! Its friendly and the severs Jose/sandroval and Yajaira (spelled wrong but the beautiful server with brown hair) they were attentive and as a sushi lover who has lived near the water, their sushi is fresh and yummy!!!",
+          "date": "2024-10-26T03:29:23.657Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURYcW9MMTR3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIXCfZ05lNmGAsLNmNSCJ6rUtarHlnVXN3QzBa1zQDzoyHTXQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110014036291955953012?hl=en",
+          "reviewerNumberOfReviews": 60,
+          "sentiment": "positive"
+        },
+        {
+          "author": "amner romero",
+          "rating": 5,
+          "text": "",
+          "date": "2024-10-11T03:35:03.297Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURuNTd1UE5nEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK5l0qVd-frJ0tGCvAgU2hOWAlRHhODbgsFFRyevyuJEzTrHQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116297920854307627436?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "H C",
+          "rating": 5,
+          "text": "Fresh gluten free options",
+          "date": "2024-10-07T19:03:07.648Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURuLWVfTzl3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVPIc-9FQrICZkLwhB7BovB9g89w09WvETsfPh7c2kv58YrHGCPTw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105227267935500787398?hl=en",
+          "reviewerNumberOfReviews": 83,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jayliya Yun Kim",
+          "rating": 5,
+          "text": "BOMB.Com !! eveything there is so fresh and the quality is just great ! This is my go to spot in Vegas !",
+          "date": "2024-10-03T22:12:19.674Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURuckphWVJ3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW6yyCLd4YatMv8FIB-Bx2AQnmeCpK2g4Dh1UH558VlmQSL4oQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108714048735611047179?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Lalo Diaz",
+          "rating": 5,
+          "text": "I really recommend 👌 it's great place to eat sushi 🍣 and the service wonderful 😀 and very clean place 😀.",
+          "date": "2024-09-10T14:43:35.661Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNIbjdTUU9nEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXJ7IfiABdxKDFPK_ZdW9P00YwWABI7UiO2Q-0MGJKYP0leuQmg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103446054279656211666?hl=en",
+          "reviewerNumberOfReviews": 62,
+          "sentiment": "positive"
+        },
+        {
+          "author": "CJ MM",
+          "rating": 1,
+          "text": "",
+          "date": "2024-09-04T21:13:06.120Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNIOXVUUkZREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW9mbiVY6zTZSaNYAquJfBdBL_wVDfff0Jo7hmFIk9HIJpO4h-7=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116318803795580466993?hl=en",
+          "reviewerNumberOfReviews": 149,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Jennifer Irene",
+          "rating": 5,
+          "text": "We live around the corner and absolutely LOVE the new bar area inside! The food is always so fresh here, and the staff is absolutely wonderful! Grateful to have such a great spot in the neighborhood. Highly recommend the poke nachos and Japanese lasagna! My favorite",
+          "date": "2024-08-27T01:46:20.010Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQ3amRHSlpBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWESQtTBJDCB2m0nQyFYoh0Tc1wccMXV219Yp6yo4BcozE718GM=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111573709026153803741?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Rosa Otten",
+          "rating": 5,
+          "text": "Thank you so much guys you was amazing great sushi 💞🍣 great serving and atmosphere you did for Brianna's birthday 🎊🎂Thank you LEO AND COMPANY",
+          "date": "2024-08-08T01:44:42.243Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURiOVp2NkxnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW16EkulxqwHDjOgW6y3Ex6ruqd57DmcHw3pleco-D0KMy0E7gN3A=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101550673698275216634?hl=en",
+          "reviewerNumberOfReviews": 43,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Cynthia Moreno",
+          "rating": 3,
+          "text": "This place is just OK. Sushi is just OK, it didn’t taste super fresh and it was borderline hot in the tiny little restaurant. So hot It made me question the sanitation of the fish. Price is fairly expensive considering the quality and environment, for 5 item platter it was $50, you can find way better all you can eat sushi joints in town for way cheaper and better fish/environment. Disappointed since it has such good reviews- definitely won’t be coming back.",
+          "date": "2024-08-07T00:46:22.588Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURiNlpiYXVBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJWU6ZK6rmNMShHUbrpiX-NEf6WookLKeseudxhU812zr0WqA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105744226099407013202?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Matthew Nelson",
+          "rating": 5,
+          "text": "Sushi was fantastic, the service was incredibly friendly, all at a very reasonable price.\n\nWe will be back for sure.  Thank you for a wonderful meal!",
+          "date": "2024-07-18T03:17:18.836Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURyNGJhV3JRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ43Sb7ZYmir7XIkzaze7pm4insT0-LErAH33z1ik6CFm5qoA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102309419779474694161?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Anastasiia Gorham",
+          "rating": 5,
+          "text": "",
+          "date": "2024-05-29T23:56:50.381Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN6NEktMjNBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIcKvvGK-D9NqiyDDzXz_oF5GHA6BSNNW-kVuF3qCKLZEyhlQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104088956036394657685?hl=en",
+          "reviewerNumberOfReviews": 17,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Katherine Berlin",
+          "rating": 5,
+          "text": "Really well prepared. Fresh sushi and sashimi at an excellent price. Mostly takeout but there are a couple of tables inside.",
+          "date": "2024-05-22T01:44:18.526Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURUcU5mRURREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVls4cJdD-sYku8Y_RYOGiH6y_RX8qqQk8Egt_5P5EvgsyI1c0vuw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113889456271577366787?hl=en",
+          "reviewerNumberOfReviews": 98,
+          "sentiment": "positive"
+        },
+        {
+          "author": "D F",
+          "rating": 5,
+          "text": "The customer service is great. The special 2 rolls for $20 can't be beat - includes the premium and specialty rolls too. The appetizers are also very good and reasonably priced. To go packaging is perfect. Highly recommend!",
+          "date": "2024-05-18T20:30:04.710Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNUMDlUSFNBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKDLBCJZeLe2jFuN_nSGwJkdGPkuD88uW2c1i6tcD4VDIMBT_Y=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108836672559090348690?hl=en",
+          "reviewerNumberOfReviews": 14,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dave Grondel",
+          "rating": 5,
+          "text": "The sushi was really good. Fresh, made with care. It’s just got a few tables so it’s more of take out place. Again the sushi was great.",
+          "date": "2024-04-26T23:27:53.251Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNqdDdUb19RRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUN6vGUH4UtuMMgc4EOiPOJOShMeLu_rR4kNwA7DpRb8D34fUb5yQ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102871728910184562047?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Cortney Javonillo",
+          "rating": 5,
+          "text": "Quality is supreme, enjoyed the salmon belly (with fresh wasabi) and smoked paprika salmon nigiri the most. Many delicious options.",
+          "date": "2024-04-23T17:25:25.602Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNqMEktcXRnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX9s-IFi3PGHsKTsyFuSG33M7euOFx9Kwu_tDK_4fNCctzNPbXe=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111090042187170229048?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ray Ju",
+          "rating": 4,
+          "text": "The parking spaces for the sushi place is tight.  The parking spaces are limited since sharing with other shops.  There is a small indoor and outdoor dining area.  The service is very good.  There are decent amount of choices on the menu.  The shrimp tempura was very good.  The sushi lunch special is worth a try.",
+          "date": "2024-04-12T15:52:17.759Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUREOWFINEhnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKgpP-pvRGKlBNnQ96BJnbHdWIGlHmLyRV5tuBdrrAUjtBEZQ=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106137835166230554199?hl=en",
+          "reviewerNumberOfReviews": 389,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Richard Gault",
+          "rating": 5,
+          "text": "",
+          "date": "2024-04-09T01:11:50.536Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUREbHFxTWp3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKdSGdGp940eI6r3Gc8kH3hNy8UVUzk2YYku81U7opCoplGgw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103987039110151905827?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Matthew C.",
+          "rating": 5,
+          "text": "",
+          "date": "2024-04-07T23:28:52.424Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUREeXMzeE13EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWzQMhrCekY7vSHcAL1MxnLdqwtzjaJC0Lmcr6p1UcbWvdcuxEu=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111184879676758122582?hl=en",
+          "reviewerNumberOfReviews": 107,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jeremy Chen",
+          "rating": 5,
+          "text": "Pretty good sushi and everyone is always friendly. Has become a staple of mine.  The golden knight roll is a favorite.",
+          "date": "2024-04-06T21:27:57.181Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUREM0szWW1RRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLMzYm7HfifMQmNfcydY1sgCenlLCMGFL2Is9_NFV15UlPyDA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102876442467768537452?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Cheramie Thompson (Cher)",
+          "rating": 5,
+          "text": "This is a quaint little spot near a shell gas station that I stumbled upon. My sushi picture is after I turned my sushi upside down 🙃 everything was fresh and great. They were really quick with preparing my sushi. There are seats available if you want to dine in and there is an ordering portal online. The menu is pretty vast too!",
+          "date": "2024-04-03T23:37:16.785Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNEdjZXWW1BRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUkB363swn0dvigFchiglr1xWTQeuzo4Q7a3bZvGD1i5tLgyVyx=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106253446606079345358?hl=en",
+          "reviewerNumberOfReviews": 98,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jimmy Jefferson",
+          "rating": 5,
+          "text": "",
+          "date": "2024-03-15T22:06:10.282Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUQ5LXRyV21RRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWNUbYsYcwRMlul4Y5TnVP00GaGNtTIB7tyfez8nPgh648tvRUorQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113708894964600203684?hl=en",
+          "reviewerNumberOfReviews": 56,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Chirag Jain",
+          "rating": 4,
+          "text": "",
+          "date": "2024-03-03T07:54:05.638Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUM5OUlIZzV3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXV0ki0DoH8klKk1auKN4moBE7ZB7xJcKfvIhGKNPZFhbz9xrsdwg=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108391112657610258046?hl=en",
+          "reviewerNumberOfReviews": 29,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Rob Burkhart",
+          "rating": 5,
+          "text": "No frills good sushi\nGood value",
+          "date": "2024-03-01T13:57:20.818Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUM5Mk9PRktnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXIHptHU4TYZlCGGIeTZnZTQwHoalykzmVCPeMgxc5E0mRKEeGx=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110301548361139696611?hl=en",
+          "reviewerNumberOfReviews": 653,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Roxanne Naydan",
+          "rating": 5,
+          "text": "My first time was a great experience.  Service was excellent. The sushi was fresh and the presentation was beautiful. Hardy portion, too. Wish I could go more often but will DEFINITELY recommend to others and come back every chance I get. Go. You won't regret it.",
+          "date": "2024-02-17T02:47:18.248Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNkdGVmc0l3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV_Xl3ImevGKlBotTcaZVHFafvTV-cUrMqgAaLqJgo7_AXyru8l=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115109758350331273218?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Natalia Petrova",
+          "rating": 5,
+          "text": "Love this place! Great for dates! Adriana gave us excellent customer service deff will be back!",
+          "date": "2024-02-15T01:18:38.328Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNkbG82bXR3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUAn0CNKN2P79GDu7csFhjGyEJXzNMJHwoO8lY0uDbm3oCmkRk4jQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109019758263798646532?hl=en",
+          "reviewerNumberOfReviews": 39,
+          "sentiment": "positive"
+        },
+        {
+          "author": "david wittenborn",
+          "rating": 5,
+          "text": "Best take-out sushi I've had.\nBig menu, good prices.",
+          "date": "2024-02-13T03:24:43.527Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNkak1xTnN3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX32GPF7WAfRm9FO80koMm5sAok82XC35LnGGkjeKO5JMfblfBnbg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107619193407303108762?hl=en",
+          "reviewerNumberOfReviews": 55,
+          "sentiment": "positive"
+        },
+        {
+          "author": "John Landeroz",
+          "rating": 5,
+          "text": "Can't say enough about On Demand Sushi in SoHi. We absolutely love coming here for sushi and has become one of our favorites sushi spots.",
+          "date": "2024-01-21T17:01:49.261Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUROcXIteXpnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVCZCBH7fj4VY_MTcazZpBHdgD0rA990t0pSuQ6L3NPTxKfq91H=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107830616039095424081?hl=en",
+          "reviewerNumberOfReviews": 67,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kineret Bishop",
+          "rating": 5,
+          "text": "Delicious and amazing service",
+          "date": "2023-11-27T02:23:55.554Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNsaTRfN053EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLmSMqQ7G9kHqpD4pT0OrpqFPdtkSjhq0LWIeFOnxE7I9Q8xQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114179015487042319809?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Lynn D",
+          "rating": 5,
+          "text": "",
+          "date": "2023-11-08T01:25:29.611Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURGa2ZmZWZnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJLPjueUoMCo0pl_c51Q3JpKpz4ExreHK9HQkJzTsBtKPc5-g=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108071647553315760317?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Chandler McCauley",
+          "rating": 5,
+          "text": "The display very nice but the sushi was even better! I was not expecting such sushi tastiness and this place blew it out of the water (flying Hawaiian roll!). The staff is also the absolute best!",
+          "date": "2023-11-06T02:06:36.734Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURGMm9ya3N3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIBYmwfthlN5Wn7tiue7JeHqnQn9x99IyZ_35aEvSS7fbbtOw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113431229892451692990?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Raine Johnson",
+          "rating": 5,
+          "text": "I had poke nachos my hubby had furikake chicken, and we shared gyoza.  Service was outstanding and the food was delicious!",
+          "date": "2023-11-04T03:32:01.385Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURGc0xIUFR3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIJuATr7gWd6cpsLe65rtJ7Q9Sg7U_-eyanpLwqKle4tEc6ng=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118035751748986771203?hl=en",
+          "reviewerNumberOfReviews": 36,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jason Knudson",
+          "rating": 5,
+          "text": "Amazing sushi and service! I’ve never been to a better place for quality sushi that’s quick and easy. Great variety on the menu as well.",
+          "date": "2023-10-29T19:35:41.016Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNGaFpmV0JREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX-Pp1vuD0OGQWwAFUJeMDvcTsPEoU4BUwcvvtkSb9cQ-Egy9M=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117113988269490331806?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "positive"
+        },
+        {
+          "author": "S. Cary D",
+          "rating": 1,
+          "text": "First time customers and we came here because they have 15% off 5 items.  But because I did not specify before I ordered that I was getting 5 items, they did not give me the 15% off.  The young lady taking our order could have easily told us this, or they could put this in writing in the menu.  A sure way to not have customers come back.",
+          "date": "2023-10-15T00:26:29.080Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUM1MGJuUUtBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJcRjEWkrfh9uYSI6DLHFV-DKQJ6ZtJXClfP4KRqMcVHdJDuA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114944166909678515836?hl=en",
+          "reviewerNumberOfReviews": 157,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Evie Harper",
+          "rating": 5,
+          "text": "We are from Vancouver BC and are often less than excited about sushi and seafood in Las Vegas. But I saw an ad for this place on Instagram and decided that it was worth the drive over to Summerland to go and check it out. It did not disappoint!\nThe seafood was probably the freshest and best tasting we have had in Vegas ever! Will definitely be back again\nPokey bowls are full. The avocado bomb was a unique concept. I have yet to see anywhere else. Presentation wise, exquisite.\nStaff were polite and helpful. Service wise, efficient and timely. Prices are reasonable and better than anywhere else I’ve seen in the area.\nSolid 10 out of 10",
+          "date": "2023-10-14T04:46:41.904Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUM1Z2M2R1FnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWyWrx4C6-na1YHJRk5Bp_WMzxSpxKUdnB7VS_fb9UNXsUYMW6G=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107641593181260087898?hl=en",
+          "reviewerNumberOfReviews": 154,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mauro Lopez",
+          "rating": 5,
+          "text": "We came to enjoy the Monday night game between the RAIDERS and PACKERS. We are from California and love sushi. We we’re told about this place called “On Demand Sushi” on Hualapai in Summerlan. Despite being a small space the food and service is AWESOME. We had a server named Adrianna who was very knowledgeable and friendly. Great personality and very attentive. We had 2 boats of sushi and ordered a teriyaki bowl for one in our party. Overall a great experience and would recommend this location to all our friends.",
+          "date": "2023-10-10T23:03:13.929Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUM1MUx6VG93RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLvG_mXLMtl5AqDX31mqK6qzkZkg2LZUpO9_6jeUax9ZfuUYQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117670908710641198315?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "L Urban",
+          "rating": 4,
+          "text": "First time to come here. It's a little place, maybe 6-8 tables but they have a big menu. You order at the cashiers and pay first. Food was fast and we had the lovely cashier as our server. She was very nice.",
+          "date": "2023-10-09T05:58:02.499Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURadjZTRzZBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUh2QjRpLfOw83OYE06fQVGdNhJPTaTOgcMrxodgau0rPIh15QWjQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116202931020889402458?hl=en",
+          "reviewerNumberOfReviews": 24,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kurt Baker",
+          "rating": 5,
+          "text": "We eat here at least twice a month the food and service is always incredible!",
+          "date": "2023-09-18T16:38:18.546Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNabTVieHZ3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL7TwjuttDvcwu5saZNE0zWJUeQBVbTl5CNmjifxgp5om_Low=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100519718985182616946?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jose Lozada",
+          "rating": 5,
+          "text": "",
+          "date": "2023-09-17T23:13:37.236Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNaODd1QWlRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUGiGEK59asHXs66X0J0gFvZ0ubnjWN2X7DNMeQIB0d6vl0sTnECw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106539690164338983355?hl=en",
+          "reviewerNumberOfReviews": 50,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Michelle",
+          "rating": 5,
+          "text": "This is a real gem. Has a very high ratio of quality to price. Tastes like very expensive sushi but the price is good.\n\nWe talked to the owner. You can see an interview with him online (On Demand Sushi Interview with owner and entrepreneur Carey Parriott). He is very careful to make the rice properly, import it from Asia, cook it with the right amount of water for that particular batch of rice, etc. The rice is truly amazing in this sushi. I could eat tons of that sushi rice.\n\nHe also does some things differently from many of the cheap sushi joints in Vegas -- trying to make sushi better and give a better product. They have very fresh fish despite being an affordable sushi place.\n\nIf you get 5 or 8 items, (platter) you get 15% discount on all the rolls/sashimi/etc.\n\nThey have gluten-free non-GMO San-J tamari available at this location. I'm allergic to lots of soy tamari, but this non-GMO one is fine for me.\n\nI believe the wasabi is also gluten-free from looking at the ingredients label (horseradish, corn, maltodextrin, and coloring, so not real wasabi). I think they have fresh actual wasabi available if you ask for it (might be an extra charge).\n\nSome of our favorite rolls are salmon skin maki and Spicy crab. Everything we've had has been good. you can get rolls for under $5 so it's not hard to justify stopping by frequently.",
+          "date": "2023-09-11T00:46:48.964Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNadHRQbF9BRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWq_v6KfFo2DVOiZgLss2nVULshQOKILzn4ue03WRvtEzmIJCB3=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111447655742562610209?hl=en",
+          "reviewerNumberOfReviews": 30,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ashton Diaz",
+          "rating": 5,
+          "text": "Really delicious sushi and great service",
+          "date": "2023-09-07T22:20:53.855Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNaOHZQV09REAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXObfPKPIrjUh5Ms-sSQEbUrOxL23-O835sgsab9J4OCiFEDpo=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110669474998217789172?hl=en",
+          "reviewerNumberOfReviews": 24,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Stephen Bewick",
+          "rating": 4,
+          "text": "Best sushi I have found on this side of town. It is a regular stop for me.",
+          "date": "2023-09-02T03:30:27.363Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNab0xPQlhREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV4pM7QQnhLxyrXVeh7DZ394xd4KO5Ufn-yyY9oPmqvZVHPvHdo=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111294091468286635831?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ming Ming",
+          "rating": 5,
+          "text": "Shocking quality and excellence!\nI purchased a meal package that offers great value. The sushi is incredibly delicious, the fish is very fresh, and the sauces are tasty too! The only downside is that the fried calamari doesn't match the picture. It's not the Japanese or Italian style of fried calamari; it's just regular American-style calamari rings. Also, I hope they can introduce meal packages at different price points. That would make it perfect!",
+          "date": "2023-08-29T07:18:27.224Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURweTRiYmpnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIXyxIgjmir1Tg3JwCXOpysEbi5hMPe1qMSP09Pq_T_4vcRPgM=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110778758510884990505?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "jessica dejarnett",
+          "rating": 5,
+          "text": "",
+          "date": "2023-08-27T18:24:25.955Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURwX2R1cmRREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIvXl5SujQ6FGOGla8ZSjPyBx0PM3475Smm9WyrwrpTjuM_eA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102829077643516394552?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Rojan L",
+          "rating": 5,
+          "text": "Great place for a quick lunch. I recommend the avacado salad.",
+          "date": "2023-08-18T22:16:31.016Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURwNHZQc0VBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJoCzlIkwehb4LTEzoS8C8C0FOyWTrUxzu1b2u-Uo4fg3KQ68XL=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110454939303830578132?hl=en",
+          "reviewerNumberOfReviews": 275,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dalal Gullotta-Homes By Dalal",
+          "rating": 5,
+          "text": "Amazing Sushi-Their sushi boats are incredible. Great for parties. Love Carey Parriott the owner and operator.",
+          "date": "2023-08-13T17:19:27.905Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNwXy1MSi1nRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWd2jE3SIGyoGKxmPhp8EApT4in-ylEnBdf-OA9Y4EanJbL8a5l6g=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115062397397151123013?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Corey Hayes (DocBox)",
+          "rating": 4,
+          "text": "",
+          "date": "2023-07-19T01:06:02.192Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURKc2NLUERREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV0EW3Z6hnZvfjH2iaxRhGO4836k3uAtAd1YLImjwkzPp0qti6-=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107570753199671133319?hl=en",
+          "reviewerNumberOfReviews": 103,
+          "sentiment": "positive"
+        },
+        {
+          "author": "George Kim",
+          "rating": 5,
+          "text": "Excellent party platters!",
+          "date": "2023-07-07T04:48:40.439Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNKOTl6R0ZREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXoIHvBCSZOJvAzhTV5SPSBEZZhlLWc587hcGYdpvds4Fpwyuw7EQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112772069322834471520?hl=en",
+          "reviewerNumberOfReviews": 32,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ciara ML",
+          "rating": 5,
+          "text": "",
+          "date": "2023-07-05T14:39:27.290Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNKMjhERVp3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW_1kz4sCJvArgFXTB-uUNBU-SiMf6oz-7r_JKsjosd_avTPd1e=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106098042777851903738?hl=en",
+          "reviewerNumberOfReviews": 55,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Craig Haughey",
+          "rating": 5,
+          "text": "First time we went to On Demand Sushi we were blown away.  We were surprised by how small the place was but they were able to accommodate us and the food and service was outstanding.  We’ve gone back many times since, as well as ordered for delivery, and we’ve never been disappointed.  Outstanding!",
+          "date": "2023-06-24T20:53:37.675Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNKeXBIT3RnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVuSFmCt8fgQ_5eV3tIXpDiVhu76BxigjPjrHsmkNqnP_U9UAc=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117041245402092116980?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Brian Thomas",
+          "rating": 1,
+          "text": "I only ordered from them for the first time because I just really wanted sushi. I give 1 star because I expect real crab in crab rolls. if you're going to use imitation crab, make sure you specify across all platforms which rolls use imitation crab. And only offering one 2oz container of teriyaki sauce for a teriyaki chicken plate where you didn't marinade before or base during cooking is disrespectful to your customers.\n\nFor reference, I ordered the 8 roll platter and teriyaki chicken plate, all of which totaled about $100. What this has taught me is I have to vet all my sushi places better. Based on the first impression, I'm not coming back",
+          "date": "2023-06-14T19:28:45.793Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR4ODhfOERnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVLN_wnc751B5Emtn5yyDPq5VRaKW9q8UGsg9L2dLDyeh1xmOk=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100445770936566979365?hl=en",
+          "reviewerNumberOfReviews": 29,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Allison Jo",
+          "rating": 5,
+          "text": "Great value! I got a 5-item platter, poke nacho and yakiniku combo. All delicious! White fish sashimi was not the freshest but it was fine. I'll be back.",
+          "date": "2023-05-20T02:20:11.887Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN4c2IzT2xRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLXZAv2WEBInoRAc1I_SR-e4DbWoc-Vj2erVTcvb65XFaxItA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116867552440278407289?hl=en",
+          "reviewerNumberOfReviews": 102,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ruth Kindig",
+          "rating": 5,
+          "text": "Cutest place with amazing sushi! Love that the dining area has a nice and fancy eat-in feel even for the small space/take out vibe!",
+          "date": "2023-05-16T20:37:09.894Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN4bHF5WjN3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKvqqu0ltqCCxGsNemhMgrfrB7wh_DSZousnN79LfAGXbcRPQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102593677434279904373?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ryan Goliath Pratt",
+          "rating": 5,
+          "text": "Quick place for sushi, with an amazing selection and even an All You Can Eat option. Owner genuinely cares about his restaurant.",
+          "date": "2023-04-26T19:43:04.578Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURSd2ViMVlBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWZSp23_OqjpA3zkgKTu2gmSrFHCAkMSyptKHLo0w7jYVqnvhVx=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105209632890529208420?hl=en",
+          "reviewerNumberOfReviews": 218,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Todd Kennedy",
+          "rating": 5,
+          "text": "Tried several weeks ago and have been back many times! Fresh and delicious!",
+          "date": "2023-04-16T17:02:12.231Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURScUtETm9nRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWtG-cfVv-KdQmkvVSqfhEcBC7u5u1OmqNxj2scDCeT0IKGJF20=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118422604801543769218?hl=en",
+          "reviewerNumberOfReviews": 180,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Adrian Barragan",
+          "rating": 5,
+          "text": "High-quality sushi for a great price, the take-out is packed and presented very well.",
+          "date": "2023-04-12T22:15:37.892Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNSdDd5VDFBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWJuGA2UyFi1sOvjJ-FHNhl3sw-g7CGoBOsAXfjtO0zvnzCNYKr=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115004583837380904455?hl=en",
+          "reviewerNumberOfReviews": 53,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Blayne Sheffield",
+          "rating": 5,
+          "text": "Great quick place for sushi, always delicious and reasonably priced.",
+          "date": "2023-03-21T17:39:04.119Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURodl9MOHNBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW2f6fPCGXtR4kZplfGzuUQBjKXw-hgMP3SDWtYrF9KJ7PIwVLVyw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112846964637363960141?hl=en",
+          "reviewerNumberOfReviews": 15,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Leah Longoria-Vargas",
+          "rating": 5,
+          "text": "Very fast and delicious sushi! Vegetarian options are surprisingly plentiful and delicious.",
+          "date": "2023-03-21T02:28:19.504Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURocl9PVkN3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVe8qO2b9ShtIaoJRChqRGguYD6VJR-NctAHyVyfBKoRTh5bYL1tA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101775933084721343958?hl=en",
+          "reviewerNumberOfReviews": 26,
+          "sentiment": "positive"
+        },
+        {
+          "author": "C T",
+          "rating": 5,
+          "text": "The food is great and I met the owner who was super friendly. I highly recommend On Demand Sushi.",
+          "date": "2023-03-01T02:34:16.404Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURodU42S3hnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKtdeZV-YQudPIPXzf3T00cJQ78499R3IYkna4ytdJFmN8-=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112883637181881676435?hl=en",
+          "reviewerNumberOfReviews": 64,
+          "sentiment": "positive"
+        },
+        {
+          "author": "valeria jimenez",
+          "rating": 5,
+          "text": "",
+          "date": "2023-02-25T01:39:30.564Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNoal9LS1NBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWGWz0r0vnNkOrjo_3oVMScrGIepBgi42_R6H1olzRfaATOJgM4Zw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102196816418367359122?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Taritamai Lim",
+          "rating": 2,
+          "text": "I was extremely dissatisfied with their combo platter. I read people’s reviews that their portion sizes are good and you get a lot for your money…well I beg to differ. I ordered their 10 rolls combo party platter. Yeah sounds like a lot except it’s not when you’re just ordering sashimi. They really only had 3 varieties of fish (not including the octopus and eel) and it’s only 4 pieces. Depending on the fish you’re looking at $13-$14 for 4 pieces. I was hoping they’d be pretty big pieces for that price, but they are definitely not. It only looks like a lot if you order rolls because of the rice, but honestly with the amount that I paid for that party platter was definitely not worth it. I’m glad I didn’t do all sashimi, even though that’s what my in-laws wanted since they were serving it for their church members at our house. The tray would have looked so empty. I even ordered an extra roll and told them to put it with the rest so that it looks more full….they did not do that and packed it separately. The large build your own party platter started at $125 plus extra up charge for certain rolls and sashimi fish. With tip, all in all it was roughly $150. I’ll post a picture of the food and you guys can decide if it was worth it. I was trying to feed roughly around 12 elderly Koreans with this fish. Thank goodness I made other food or else this would not have been enough. I’m sorry, but I will not be ordering from this place again. The only reason why I gave it two stars instead of one was because despite the amount, the ones who did get to eat it said it was good.\nAlso at the time (on Tuesday 2/21) their online ordering process was having issues and would not complete my order so I ended up having to call the place twice.",
+          "date": "2023-02-24T00:33:19.182Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNocF9lWEZBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXWNSpyYUDETgXZxaicuU2KEeLa0-rnjeJLujtXJuptk0AauemT=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109614570784424527378?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Sheryl Thomas",
+          "rating": 5,
+          "text": "",
+          "date": "2023-02-16T02:48:54.316Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNoaWNPaXRRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLgic8RhAHDlQ0O3GAdEwX9qWRHsBMrAj-tilLdBdppozZ8vg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109201655990398415516?hl=en",
+          "reviewerNumberOfReviews": 25,
+          "sentiment": "positive"
+        }
+      ],
+      "customerMoodAnalysis": {
+        "overallMood": "satisfied",
+        "sentimentSummary": "Customers have positive experiences overall. Your 4.5/5 rating from 100 recent reviews shows solid satisfaction with room for growth.",
+        "sentimentDistribution": {
+          "ecstatic": 18,
+          "delighted": 62,
+          "satisfied": 9,
+          "neutral": 0,
+          "frustrated": 4,
+          "disappointed": 6,
+          "angry": 1
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "food quality",
+            "mentions": 65
+          },
+          {
+            "theme": "service excellence",
+            "mentions": 16
+          },
+          {
+            "theme": "speed of service",
+            "mentions": 14
+          },
+          {
+            "theme": "atmosphere",
+            "mentions": 8
+          },
+          {
+            "theme": "value for money",
+            "mentions": 8
+          },
+          {
+            "theme": "cleanliness",
+            "mentions": 3
+          },
+          {
+            "theme": "overpriced",
+            "mentions": 2
+          },
+          {
+            "theme": "poor service",
+            "mentions": 1
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 32,
+          "satisfaction": 59,
+          "disappointment": 2,
+          "frustration": 1,
+          "anger": 1
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "Customers consistently praise the freshness and exceptional quality of the sushi, which is described as being on par with top sushi restaurants. - social media marketing can showcase this strength",
+            "The restaurant offers beautifully arranged sushi platters and catering options that enhance the dining experience. - SEO services can leverage this for better visibility",
+            "The friendly and attentive service is frequently mentioned as a standout aspect of the dining experience. - review management can highlight this positive aspect"
+          ],
+          "improvementOpportunities": [
+            "Lack of acknowledgment and unclear service process - social media marketing can improve this area",
+            "Negative reviews about food quality and service issues - review management can address this concern",
+            "Poor online visibility and incorrect information on the website - SEO services can solve this visibility issue"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 100,
+          "averageRating": 4.5,
+          "ratingDistribution": {
+            "1": 7,
+            "2": 4,
+            "3": 3,
+            "4": 6,
+            "5": 80
+          },
+          "sentimentTrends": {
+            "trend": "stable",
+            "recentAverageRating": 4.4,
+            "previousAverageRating": 4.5,
+            "recentReviewsCount": 10
+          }
+        }
+      },
+      "examples": {
+        "positive": [
+          {
+            "author": "Sharon Glasgow",
+            "rating": 5,
+            "text": "Absolutely flawless and a pleasant surprise. The food was fresh, well prepared and packaged. The portions were substantial and deliciously flavorful. This food was in the same category as any top Sushi restaurant. The Chef ran a tight ship. Service was friendly and professional. I was a little early for pickup and I saw the restaurant was clean and well organized. This will be my go to from now on especially with the beautiful catering boat options.",
+            "date": "2025-09-01T03:15:54.067Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21aUVRUZGliMmx5WjJkM1ZFazVSazVSU1ZKb2FGRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL65d0cjOu-gTOnMJDgpuHHzOcuXqoTE3dHwr-g2OREMRSVlQ=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/117091425610523764234?hl=en",
+            "reviewerNumberOfReviews": 8
+          },
+          {
+            "author": "Peter Holder",
+            "rating": 4,
+            "text": "",
+            "date": "2025-08-20T19:42:05.939Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT200MWJIVTNRekZHZVcxTVV6VmxURTV3TTBGNU4wRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVi-dPDlyC_lLtsmCp4bFav1HtuX5ZNhefZFIU8fJALunD3myhK=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/108031237636533444263?hl=en",
+            "reviewerNumberOfReviews": 43
+          },
+          {
+            "author": "Andrew Kulish",
+            "rating": 5,
+            "text": "Always happy to order rolls here — they’re always fresh, delicious, and perfectly made. Excellent service and fast delivery. Best sushi bar in the area!",
+            "date": "2025-08-14T03:51:29.624Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT201NFRWaEtRbG94ZUdOUlpFb3lia3hqVlZWS1EwRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLuiYwMD8K3km96D3bXdYWeeoDtIMoVhS_gJNI8Prij0Ocb3w=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/112889132846221837844?hl=en",
+            "reviewerNumberOfReviews": 6
+          }
+        ],
+        "neutral": [
+          {
+            "author": "Olivia Rebanal",
+            "rating": 3,
+            "text": "Takeout sushi place with 3 tables to sit for big portions, great value poke and sushi",
+            "date": "2025-07-18T22:05:01.217Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t0emFVcHhlVXRvUVZGelRFeDFibW94U2tsSlQwRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ74pw_cXr5azfXe0roKv7X2K8TmkGrBlTPbRn9PcryJrKJxA=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/118199947174344913793?hl=en",
+            "reviewerNumberOfReviews": 5
+          },
+          {
+            "author": "Livixx 555",
+            "rating": 3,
+            "text": "No ice for the drinks ?",
+            "date": "2025-06-07T02:57:48.778Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VLdmtoS3VKcUxDX3BnRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWR63q72CwBhOY_B4XskU-QnS28qLJJiHeCj_lvPn_KY0Zc0-Fo=s1920-c-rp-mo-ba4-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/103572482821624860037?hl=en",
+            "reviewerNumberOfReviews": 121
+          },
+          {
+            "author": "Cynthia Moreno",
+            "rating": 3,
+            "text": "This place is just OK. Sushi is just OK, it didn’t taste super fresh and it was borderline hot in the tiny little restaurant. So hot It made me question the sanitation of the fish. Price is fairly expensive considering the quality and environment, for 5 item platter it was $50, you can find way better all you can eat sushi joints in town for way cheaper and better fish/environment. Disappointed since it has such good reviews- definitely won’t be coming back.",
+            "date": "2024-08-07T00:46:22.588Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURiNlpiYXVBRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJWU6ZK6rmNMShHUbrpiX-NEf6WookLKeseudxhU812zr0WqA=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/105744226099407013202?hl=en",
+            "reviewerNumberOfReviews": 5
+          }
+        ],
+        "negative": [
+          {
+            "author": "Aleksandra Kowalik",
+            "rating": 2,
+            "text": "Had the tempura shrimp and calamari. Both slaughtered in batter. Not what I was expecting. Overpowered the shrimp and calamari.",
+            "date": "2025-07-10T03:10:40.002Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2sxWFFqTmtiMjlKZUdSdVQxZzRTRmw2ZG5kSGIwRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX-NSkOGR2fhruT82bX_-68yOCAw2JQaCZWDF3RlTEG-krsJdY7Kw=s1920-c-rp-mo-ba5-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/104026827813625186717?hl=en",
+            "reviewerNumberOfReviews": 117
+          },
+          {
+            "author": "Molly Cookie",
+            "rating": 1,
+            "text": "I ordered sashimi salad and the vegetables are rotten and sushi are not fresh.",
+            "date": "2025-06-06T03:10:20.144Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNmdk9id3lRRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVtddJ84OCF825rd3PQURk1HLg3NEbth1G8R43GYpFJ3tqz9G8P=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/100447464446181171913?hl=en",
+            "reviewerNumberOfReviews": 27
+          },
+          {
+            "author": "Jeff Kwak",
+            "rating": 2,
+            "text": "Dropped in and decided not to try it. There are a few tables, but no one acknowledged us and not sure what was going on. Went to the counter and no acknowledgement from the counter lady. She finally turned around after getting off her phone and I asked if there was table service and apparently it's a order at the counter deal.\nNo handheld menus, so it's a matter of searching up at the list posted above fast food style.\nFood was probably good, but we left to dine elsewhere.\n\n●My friend and I were in the area and thought we would give it a try. We saw a table with people dining so we went in. One of the cooks made eye contact with me, smiled, but no words. Just very basic table service would have been nice, but that's ok.\nThanks for the re-invite offer Carey. I'm sure the food is good, but maybe some other time. Best regards Jeff ●",
+            "date": "2025-05-09T02:05:56.058Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChRDSUhNMG9nS0VJQ0FnTUN3bzUxQRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWrF2VhDSSkwYvz6OV4KZKifmYxwBVR982w3WubEeryKb7JhkhY=s1920-c-rp-mo-ba5-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/103067929418022733540?hl=en",
+            "reviewerNumberOfReviews": 299
+          }
+        ]
+      },
+      "trends": {
+        "ratingTrend": "declining",
+        "volumeTrend": "stable",
+        "responseRate": 0,
+        "averageResponseTime": "No responses"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ]
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/ondemandsushi",
+      "instagram": "https://www.instagram.com/ondemandsushi",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 64,
+      "social": 100,
+      "local": 49,
+      "reviews": 89,
+      "overall": 76
+    },
+    "originalScores": {
+      "seo": 77,
+      "overallScore": 78,
+      "performance": 82,
+      "userExperience": 72
+    },
+    "migratedAt": "2025-09-16T00:37:21.326Z"
+  },
+  "metadata": {
+    "cachedAt": "2025-09-15T17:58:18.190Z",
+    "expiresAt": "2025-10-15T17:58:18.190Z",
+    "placeId": "ChIJE_4Xnbm4yIARYNxBi2rgqpM",
+    "restaurantName": "On Demand Sushi",
+    "cacheVersion": "2.0.0"
+  }
+}

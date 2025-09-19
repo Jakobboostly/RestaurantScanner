@@ -1,0 +1,2571 @@
+{
+  "data": {
+    "domain": "www.friedmansrestaurant.com",
+    "restaurantName": "Friedman's",
+    "placeId": "ChIJUQz7Iq9ZwokR9GUmlcrIeGs",
+    "overallScore": 73,
+    "performance": 100,
+    "seo": 58,
+    "mobile": 50,
+    "userExperience": 91,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "restaurant near me",
+        "position": 0,
+        "searchVolume": 3350000,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant delivery New York",
+        "position": 0,
+        "searchVolume": 40,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best restaurant New York",
+        "position": 0,
+        "searchVolume": 1300,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant",
+        "position": 0,
+        "searchVolume": 2740000,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant places near me",
+        "position": 0,
+        "searchVolume": 40,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant New York New York",
+        "position": 0,
+        "searchVolume": 110,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant delivery near me",
+        "position": 0,
+        "searchVolume": 880,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "restaurant open now",
+        "position": 0,
+        "searchVolume": 590,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 0,
+        "keywords_appeared": 0,
+        "total_keywords": 8,
+        "average_position": 0,
+        "best_position": 0
+      },
+      "keyword_results": [
+        {
+          "keyword": "restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "restaurant",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "best restaurant New York",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Gramercy Tavern",
+              "address": "New York, NY ",
+              "website": "http://www.gramercytavern.com/?utm_source=GoogleBusinessProfile&utm_medium=Website&utm_campaign=MapLabs",
+              "rating": 4.6,
+              "reviews": 4600
+            },
+            {
+              "position": 2,
+              "name": "Shukette",
+              "address": "New York, NY ",
+              "website": "http://www.shukettenyc.com/",
+              "rating": 4.7,
+              "reviews": 2000
+            },
+            {
+              "position": 3,
+              "name": "Boucherie West Village",
+              "address": "New York, NY ",
+              "website": "https://www.boucherieus.com/",
+              "rating": 4.7,
+              "reviews": 6900
+            }
+          ]
+        },
+        {
+          "keyword": "restaurant delivery near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Cherry Pizza House",
+              "address": "New York, NY ",
+              "website": "",
+              "rating": 5,
+              "reviews": 1
+            },
+            {
+              "position": 2,
+              "name": "Little Italy Pizza",
+              "address": "New York, NY ",
+              "website": "",
+              "rating": 4.2,
+              "reviews": 4200
+            },
+            {
+              "position": 3,
+              "name": "Benvenuto Cafe",
+              "address": "New York, NY ",
+              "website": "https://www.benvenutocafe.com/",
+              "rating": 4.2,
+              "reviews": 624
+            }
+          ]
+        },
+        {
+          "keyword": "restaurant New York New York",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "top restaurant New York",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "restaurant restaurant near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "restaurant food New York",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"restaurant near me\", \"restaurant\", \"best restaurant New York\", \"restaurant delivery near me\", \"restaurant New York New York\", \"top restaurant New York\", \"restaurant restaurant near me\", \"restaurant food New York\" - optimize Google My Business profile with these keywords",
+        "Low Local Pack visibility (0%) - audit your Google My Business completeness, categories, and local citations"
+      ],
+      "scan_metadata": {
+        "location": "New York,New York,United States",
+        "timestamp": "2025-09-15T10:17:36.333Z",
+        "total_scan_time_ms": 76173
+      }
+    },
+    "competitors": [
+      {
+        "name": "La Grande Boucherie",
+        "domain": "lagrandeboucherie.com",
+        "performance": 92,
+        "seo": 83,
+        "accessibility": 78,
+        "bestPractices": 87,
+        "overallScore": 85,
+        "rating": 4.6,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1224,
+        "keywords": 32,
+        "domainAuthority": 82,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+100 keywords",
+        "authorityGap": 3,
+        "backlinks": 991
+      },
+      {
+        "name": "Gramercy Tavern",
+        "domain": "gramercytavern.com",
+        "performance": 92,
+        "seo": 83,
+        "accessibility": 78,
+        "bestPractices": 87,
+        "overallScore": 85,
+        "rating": 4.6,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1018,
+        "keywords": 24,
+        "domainAuthority": 76,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+100 keywords",
+        "authorityGap": 3,
+        "backlinks": 907
+      },
+      {
+        "name": "Le Jardin Bistro NYC",
+        "domain": "lejardinbistronyc.com",
+        "performance": 88,
+        "seo": 79,
+        "accessibility": 75,
+        "bestPractices": 84,
+        "overallScore": 81,
+        "rating": 4.4,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 750,
+        "keywords": 31,
+        "domainAuthority": 72,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 897
+      },
+      {
+        "name": "Bad Roman",
+        "domain": "badroman.com",
+        "performance": 82,
+        "seo": 74,
+        "accessibility": 70,
+        "bestPractices": 78,
+        "overallScore": 76,
+        "rating": 4.1,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1008,
+        "keywords": 36,
+        "domainAuthority": 78,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 887
+      },
+      {
+        "name": "The Continental, Provo",
+        "domain": "thecontinentalprovo.com",
+        "performance": 98,
+        "seo": 88,
+        "accessibility": 83,
+        "bestPractices": 93,
+        "overallScore": 91,
+        "rating": 4.9,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1341,
+        "keywords": 36,
+        "domainAuthority": 82,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+250 keywords",
+        "authorityGap": 8,
+        "backlinks": 940
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 70,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-15T10:19:34.595Z",
+    "businessProfile": {
+      "name": "Friedman's",
+      "address": "138 W 31st St, New York, NY 10001, USA",
+      "rating": 4.4,
+      "reviewCount": 4185,
+      "phoneNumber": "(212) 971-9400",
+      "website": "https://www.friedmansrestaurant.com/",
+      "formatted_address": "138 W 31st St, New York, NY 10001, USA",
+      "address_components": [
+        {
+          "long_name": "138",
+          "short_name": "138",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "West 31st Street",
+          "short_name": "W 31st St",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Manhattan",
+          "short_name": "Manhattan",
+          "types": [
+            "political",
+            "sublocality",
+            "sublocality_level_1"
+          ]
+        },
+        {
+          "long_name": "New York",
+          "short_name": "New York",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "New York County",
+          "short_name": "New York County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "New York",
+          "short_name": "NY",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "10001",
+          "short_name": "10001",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "state": "New York",
+      "city": "New York",
+      "place_id": "ChIJUQz7Iq9ZwokR9GUmlcrIeGs",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "reviews": [
+        {
+          "author_name": "Amy Jones",
+          "author_url": "https://www.google.com/maps/contrib/102050192165174453416/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLkLhPpJYL_QDg0fRmdb327Px9HH01HZEHsyRQgHFF3-OT9Lw=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a week ago",
+          "text": "The food was delicious, so many delicious gluten free options! I was very impressed with the quality of the food and the staff were very helpful to accommodate my needs.\nThe most amazing gluten free Waffles!!\n\nThere are several Friedman's in New York, I visited two during my recent visit. The one in Hell's Kitchen was smaller and offers a more chilled vibe. Both were fantastic!!",
+          "time": 1756957009,
+          "translated": false
+        },
+        {
+          "author_name": "Jessica Monagle",
+          "author_url": "https://www.google.com/maps/contrib/103329775774653020357/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU7QLV4bBw9Ytze73fEZUkdv1S39M0NoWzZiO4o_9HOXY27RwI3IA=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "Great food for the whole family with an upscale flair. The decor was interesting with simple jarred veggies along the walls which made for great entertainment while we waited. The service was good and the food came pretty quickly. There is no kids menu but there was plenty to choose from. My son had Mac and cheese bites from the app menu, for example.",
+          "time": 1754976425,
+          "translated": false
+        },
+        {
+          "author_name": "Cassidy",
+          "author_url": "https://www.google.com/maps/contrib/101285808074875404361/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXLwnADm0em4dwHwhDFWWQT1oB6fJZbfRvJeq95X2OmVEkmTiR5=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Absolutely delicious! The entire menu is, or can be made gluten free. This includes pancakes, fried chicken, waffles, bread - the works. I had the lemon ricotta pancakes and they were absolutely stellar. They also ask if the table has any allergies, which I appreciate. It's pretty quiet and laid back. The servers were all so kind and tentative. I will definitely be back on my next NY trip!",
+          "time": 1751723169,
+          "translated": false
+        },
+        {
+          "author_name": "Rachel",
+          "author_url": "https://www.google.com/maps/contrib/114178662881681206142/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJryf5qxDU2OS6BigBRsCiBmzOrxf5JOWJqTBcuoVhwa97qog=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Really enjoyed my breakfast at Friedman’s during my trip to NYC. I had the “Eggs with Style” scrambled, served with a side of fresh fruit and an elderflower spritz. I ate out for breakfast or brunch most days during my stay, and this was definitely one of my favorites—it was hearty, filling, and satisfying. The bread was soft and fresh, the eggs were perfectly cooked, and everything was beautifully presented.\n\nMy friend had the Lemon Ricotta Pancakes, which she really enjoyed—they were definitely lemony! She also tried one of their smoothies or juices of the day (can’t remember which one), but she liked it as well.\n\nPrices were very reasonable, and the service was friendly and efficient. It was not too crowded. Honestly, I couldn’t fault a thing. Highly recommend!",
+          "time": 1750181574,
+          "translated": false
+        },
+        {
+          "author_name": "Cristian A",
+          "author_url": "https://www.google.com/maps/contrib/115228862482885145431/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXNLiOGbR1hetCTBlQzE35XR5eodBpPDZBcOQYxgpmO6mIIsAzr=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "I had such a great experience dining at Friedmans Restaurant — it completely exceeded my expectations! I ordered the Nova Benny, and it was absolutely phenomenal. The dish features a crispy potato latke as the base, topped with beautifully smoked salmon, perfectly poached eggs, baby kale, and a rich hollandaise sauce. Every bite was packed with flavor and the textures were spot on — it’s a must-try if you’re a fan of brunch classics with a twist.\n\nI also tried the Pan-Seared Fish Sandwich, and it was just as impressive. The fish was cooked to perfection — crispy on the outside, tender and flaky inside. It came on a soft brioche bun with fresh arugula, pickled fennel, pickled red onion, and LTO, which added a nice tangy crunch that complemented the fish really well. You can tell they use high-quality ingredients and take pride in their preparation.\n\nWhat really made the experience even better was the service. The staff were incredibly helpful, attentive, and genuinely friendly. From the moment I walked in, I felt welcomed and well taken care of. The atmosphere of the restaurant is also worth mentioning — it’s clean, cozy, and very inviting. Whether you’re grabbing brunch with friends or looking for a relaxed place to enjoy a good meal, Friedmans hits all the right notes.\n\nHighly recommend checking this place out. I’m already looking forward to my next visit!",
+          "time": 1745517860,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 822,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115224543607734666642\">Friedman&#39;s</a>"
+          ],
+          "photo_reference": "ATKogpcoqYnZ-t_YBnoVkEtWG8hmruph8jibhqgh09zeGRuBfHKCItG1vUe3jugQsLQz-4AjfsckGWmmNIy9Y7-TwL5w8pwllnQkJSbEnCi53XejsgXehnQQ7dstiqfNJuSE5otx_CnyNufPvqHjZxu1qh2GG63HBim8VAlOPPzAarNImp7-Ggq0hDOnNdDXV5Ohs-090Pt34a6IKaS0wZSRZ4ccwXGtAgw6fD8iB4oSoRAlxgfHbdzwWcabJUQT2aQA2GYeANb7jWsopbbFLtrSUg3vDtDKV0JA4_MCxm7rCEvMng",
+          "width": 1096
+        },
+        {
+          "height": 3050,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108522101481977064775\">Scott Doyne</a>"
+          ],
+          "photo_reference": "ATKogpe_EQxbNJ_SlOJlqrSdrOAhcOCD1-WU-qu1rfSLio_nO17KJaUIOKC7lMJ8DEHii1XqK5Vg4gLr49LpCoDhyjSaVLzmwkeB4e2xKmwnx5cOYxA7CBwOSwskRZIhTAKBdob9Ddsh6II63ilkGqKBmgXxw-XfKqNfatRG17UAPQsDobg5A0Y9J73mNhsdYuitLm7UUlYpJU2X2Erd_nx1yALvPGO7nTo3qmB7BDeBvx1wwRql4h47kKKNaTpE_Oz_eldxaCVZPS-AJ5F2U2WWr7h-I7gPH7MwCXFBGV1Mf4sEUp39ROG0gDpxGcqvAGUiZuOLCLCHSGHQ3vOkKUMbqqGDxAd5TKJLOAGEwNF7oj5hspliL-Fcn6gHxDByzLoOkc8jOiYf9_IJFI5Mp3Y-AtoMCVvHawXdC5Vh0cxoeaF7ZnFK6n_7wuTbVv8VSw",
+          "width": 2211
+        },
+        {
+          "height": 720,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115224543607734666642\">Friedman&#39;s</a>"
+          ],
+          "photo_reference": "ATKogpedjcKA3BbDyMTfoiFacZxMRhOzw3tqC0wKrHNL1Oa155Ph8Z2phCFnkhALWew-iBomGV0QNTKzk-U5GMRc-mJcLSIk8hdRURxUO3fCZZL1Q2zOOlsRsmhHr8zQzwfmZQSo-_uNfA-FsKmScAPJvoN6V6j21oghEf-wPd2aw8EcDhysw4PaL7TWcoSMxMvzmGI_MTB6ctHpoJXvPjAeVoJ_6RPSB5gYiJlThJi7w_pW9pnFd_7tM44WauffEvcM0ipuAKGBChuVpjXEvNCTBo7WeO0hNoUKL1z9XJHk1Gb-nw",
+          "width": 1280
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105177561131774165536\">Nicole Dalmus</a>"
+          ],
+          "photo_reference": "ATKogpeIYZYvvc_tDYqAQz0Dmzot5uc8vpNRLjnbNZqoadNceb0bc-r_Xfra9sp4QOP6ZKO8ZASYHp1pSsTp77yOA6Ixig3lMgg_l7uUeSvyxusLjjEGvaet40lWZ_JnkLwV5LNLa1HXy4SQxKi5ZiqU2us2W4-cyPIRqrP3Nk03L1a97FYDDcBX8xf3CEptCkNQHBa_6USldU5qMgQ411jRjeDPyv_DM4Erv6p3AUELqS6hs_E3dwoUN5EHC9m2WUOgZo7x0xtnNAZveERZ9Z-TSPbO1s3wgaIoCBiRxzdH-qrnNgED_q8HYKXmkLbsSOZ1h5RDAqrUVVJfCfpofo2OAHP_p1jhNAn7DjMuAAu70Fb71IGkKfpM8bgWE57r1IVoodpOChDxF4zjRFbXCGBkEp6nvHOHhR7_wdKjwjNb6fAY2Zd5jzN4eAEz62ImQ8pR",
+          "width": 3024
+        },
+        {
+          "height": 4800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108694035993548193181\">Sarang Choi</a>"
+          ],
+          "photo_reference": "ATKogpe4Czpww0KXfTclL_NXLqScaV0Y8cCVUrLCXNz_LcH3u88Ye31forTCrqVBhG1chZJmj5UKUmzBAapKkrn-YfDNmFiWWzU7OTZw_aqG3LGwXnszR7j5avA6kwGGQ0qncMUU1pLNtm1M2mvZ9txYrxjSn4tW8nnDjfREQsjf_05EJ0VTJ_tfRMkWX8tJt2kfmOkpl5-UykUcuoN9YJgKqSRo8uUSqcakUOXqcFgDfM_PeVUMI8yh22IVshyjAsLlVBcHhFkfJcgWTMRKFLf_Jg0SeTLlcnjvlBJnztVXOcPRFaGVOmKDwUf0o49AYqC1wnmF6dJK-O9eXDr5HLDRPDlq4RdzKJXri7_gTUMI2XRX9hxbeRvtOZIMS8jYHBWeLos8lDbePVrMz9cV9LJmPPxCYsJmD8l-_Ueiyfu7-8iknqv9BzsCnPn1tvk1Qw",
+          "width": 3600
+        },
+        {
+          "height": 3600,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108466847092485909207\">Marta Gimenez</a>"
+          ],
+          "photo_reference": "ATKogpeHr5NHOtWL05rJcV-p9PusJkT151zZEdNfZaaCzfrZYxBDrUqFFK6PJKFi9rHP8sIgMNswnVsLMUaT-Zno-pSbrOeORztjfBGp3Y_Wc9HAtWk8h7xUP_dTCUxeZLCLw8BxK1LzFAxYtQ2Ld6qBODLok1aSUX6u4xeSVf-HP-papuSyqd7sYsIjg4bwYMbVfxLFsr6HUTBOCw2e7y0ees5shInY-peYkh_H6EwFf-Lbl4nmSyQf1CgJGCw2MJM6llEOTpMMRwnAAFoNym7CeQH_N16zFdW0rOFQJgD-H1AYcF5O1DnW5ID94DLdpq8byjhj2Hf6v_Cu_YSoRuAo_TqDoJhJjOZXCakBlVgJjnCBhWhhk0mHzSEyTGgiZMklBwqGT1T2qR_DCFbFmqYlsWs_QLzWb2dADwTZVgVzzIoWHNV0",
+          "width": 4800
+        },
+        {
+          "height": 720,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115224543607734666642\">Friedman&#39;s</a>"
+          ],
+          "photo_reference": "ATKogpcD5hG3ZWS-aMPYuTtmCqwQqY3KIN10IZvDNYnrbniitXb7D10Lv88KgE1IkehX8t5h7OqdXleMOsXnTHbbbY4JV_noDxgShz6XrBGMUvI3DuFI1eXaFMoXKI7v4dBv_13ZVVm0MuLIYxxbqZcjP0PP1SGZAj-yKo56qEoKPdhU2JRRrPh33cS01vhUN1qlFKCp394z0QIV_0yD8Tvmwyvv_42ZjW1MzLxqiriBmyxxSEgSyX-F4Hsz3V8JuhXjkd1HMLsE7gaHXFFYsC61rMg16USbEb0FKj_00DHm_-R8Hg",
+          "width": 1023
+        },
+        {
+          "height": 2592,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/118205305659274469332\">Almudena Merck</a>"
+          ],
+          "photo_reference": "ATKogpdyrBfYN92uEBQ0hPFddeanLV39C25gX-BZ4Hude84FQBfAlqrKDXmPPJGyqiV2-rAFLKtuOP9pHORl8pid1Cz_gTPZp0hs5Nd7OICtoOIe8dLN2IeYokG7jZoJ2rhPkmlW6uOTAcm4GrNjiAh3pY1dWDm5f-qmigVa8j4qYl7oK1rGxlYjE3b8vL9kFLShZv2Jb76IL1qpTVT8eg4nn9tTxu0Pd9tv44RLSNeT1GjkEJPM9x9iPFudYAk8WMpSjyOUHhV1I5tKMSwbOhksETond5dDCx0n0OObVbxTS3si3vrAEqxU-efSdmBpgH5sRxTcJKxRae-KYJ42IqgmEXaQexQT3PmcFVteSvUj0vSLqFYUv30CkXSRGgCgPv9votbgrZd2rLvRqMLwq5SsJcGfBUfnGhBXZZI3btsNkWk",
+          "width": 4608
+        },
+        {
+          "height": 3000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114321703041490634315\">Bryan Monaco</a>"
+          ],
+          "photo_reference": "ATKogpfPK-XD9ZgWF-H5-SPxsIhUAuZCutpWB-8tkjDNMhpOUddPztB8epsqGVUlwVUr_mybZjfcNBTrpkmxIFYsYIfJhrZYa9p-NzzcaUx8yZHmTBdFKg4ERTXUFipyLmBJss5WjV4yzsnNNEkLMV11JsONUlXIEIeoSR9FTfUn3DveaTfTggDSA78lf7uGBTi_ZTeRK-fx-VqqFT4buIdtjXIoX2HzkhB8ONeJLRK9UyTNvnlKKSr7u9sF19gzZVrPgakJNCRcbzXfsNUdLRxTLeoce31sRhZETK8eIEH5l8YiD9r_Bz7Hn1PT1Xqx1CMVy9vvJurLI-LxRw5nI6wi1Sx9BzL2OqiFolRHtR_Q-r1ukBVVI1Ypb0AW-eJ5W5g6HNIWYqqL1aBJOLD06Hc_uLDgfH3lzWbJacEr_B4G8Jcjx-57",
+          "width": 4000
+        },
+        {
+          "height": 720,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115224543607734666642\">Friedman&#39;s</a>"
+          ],
+          "photo_reference": "ATKogpfuBiXvXBFEgwOKGlJyvlzNkS_n7As0G9E6MOceBVCn3NB5h0dqFE2qsA93CiA2zLouyScgH7Texrl0WbHiPsLrpik5JR8VeaK4qDnD0s2PVQa3tzv_6-sA2MDuoqVqpi662O9OAuS7W04FwEJ9w4RS9R87hdknVtAaPSWzmjEOsXLx9M8V4Prf951ZhfTEyhzXm5EpdV_a-0w0aFDBWbCRw1b_AEs-E7kLckADzuDvKcZPwfUhxVUtEENNppHZ1ltHRpJ9oodWISntK3ldc4J4wdf3LH-_r_Laxq6noewdBQ",
+          "width": 1280
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "2100"
+            },
+            "open": {
+              "day": 0,
+              "time": "0830"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2100"
+            },
+            "open": {
+              "day": 1,
+              "time": "0830"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2100"
+            },
+            "open": {
+              "day": 2,
+              "time": "0830"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2100"
+            },
+            "open": {
+              "day": 3,
+              "time": "0830"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2100"
+            },
+            "open": {
+              "day": 4,
+              "time": "0830"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2100"
+            },
+            "open": {
+              "day": 5,
+              "time": "0830"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2100"
+            },
+            "open": {
+              "day": 6,
+              "time": "0830"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 8:30 AM – 9:00 PM",
+          "Tuesday: 8:30 AM – 9:00 PM",
+          "Wednesday: 8:30 AM – 9:00 PM",
+          "Thursday: 8:30 AM – 9:00 PM",
+          "Friday: 8:30 AM – 9:00 PM",
+          "Saturday: 8:30 AM – 9:00 PM",
+          "Sunday: 8:30 AM – 9:00 PM"
+        ]
+      },
+      "price_level": 2,
+      "editorial_summary": {
+        "language": "en",
+        "overview": "Contemporary spot specializing in seasonal, locally sourced & mostly gluten-free comfort classics."
+      },
+      "url": "https://maps.google.com/?cid=7744160331674838516",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpeA31bd8OS_trzvgeFjQNBzfLE1usiPbWp55H854J7DKVZxUHXLURq564DFZNleVNeIrvK3S-mTfo7-mBS9A6U5GgubHAHvd6s0IPtqqAN_-lmsVe6Q-EivSXI32krumubyF6i7H0DidVADUDp3fSUrTS1icPkEXJnwdk9lOj4jZnoaBr20OXx--ASDKMlsmex0JcHGgw71vfSwKwB_y1HIF9s1tA1NUIkPMl7TakA6tBexS19IZwPbmd104edHPMWL0r4B161_u7a3L2RWjZxbNjcfNAwDiSAHeYDnK95GcA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpf1eFuUmz6KgDNhDfi6rqi3L0p-LEUZdXPearmlKgHKlXZJf814ZW4fJjt4s0xYhwDT2T6aSWoyjXdxpSU3CZLe6F0zzuUn0YPIkIizmNcHI3DJrD49kc7RtX6SefV3ROJMMVcGwGiKAl-D-KR2Yp6E39FV6wKlmCMWBRgUekPj9Mg85eDnnlWpw8tLMcTvBcMN5EtftgjIvULMSs6hDyEovhmlbymH5JFLQOBwZJva58J2St_NysGNu-WpQqy_mC4_ls3bRQJMwr4woDNCYNuQn-rQRsRyVE-mdAoMw-JSgAGYFUFzf6d9qojSWlhH4BcwW29BTN1x3X3wyV0cs_WuyS-Io-RAPOPyVKQmpcqIrul3tDR1CUDLwJM2T6tjuJ-YSh3GCc4RvhyyfKdv3qOuBQ9hf6rRIpkHV9tc0aGsSRxLcwaIA3h3E5SBoQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdLQytHX6bkl-tFD7zdF72HzhuqnMJQA2ajPrCoO83ZfA1S-LdPP7CCh3jZ7HHov5-nEHvY8yTOhS7t_PbrZAm1DSDrSi_iRhb9CKqcFq1LjHbo7lXEYYMrSJToCVFeBmcGkUFaPve9Y7ot3MohoWBYlCiqwjgCaBm9nxQg2Fu57Ngi16VkfLgzyc5GWzemou0s62DlStIh-N24q5O4B1P_XEZ7WKSbnPfHlY4WQPWjlqEoqR1QTtR5TjunV87R7fbUBQ-A9aAJ467QmaJUF0oBEYgZIl2Cm6y4PvLZ_MoZKg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpc0cEThVAZs4tgn5-LLRINkmkpgpjwSHKOIqMxRDun_mc77MIHfTHUENEMd19FtLDmpkousCOGaOwmOiCvFLm5BbHQsISLntHnt9WvOzrUsdEDN6SNiIBguUnsFrlRgt7aAgeBQ7PDIEHmQXgrZyepEmlAJ-zO1iidKDyVytFcUR2yZs_tAZ_5jHcSWvboWL79nR8Ug8M1nCuyk4PCbXJGuNlmV3NmQQ9rr1EukJuNFe9I7_aZEsI0zXHoXN4tKc9OFV9mpJuTJgcrWUQ9lZTdVtDvNUVjC-Ym0zOuQm9s4QJIYV2s52f7wS1Nl1qzK4S24KYIA3x4W4rzHjiPKPtRpMnjtRQoiixA_XLyCo0mF_ywPOOVTlO5r4SDx5Q1znAnBVqj_LWT8-EY_ml24FTWqJdbSayM4ns2qOY1FJgB9Kqlo9Ht21yTRLr5NgUkI&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcnhQCLx4EGfTTzyBhrBHiOIXkGfjDO5D5lVsHybR0v_cyQnUBdf-eQ6aPyB858Q4VVs9dxakZfylBm3F1b5Pb44crcJB_Nilqw-iHSs0jB7X0xeEyKQu3h3z1C7OEMSMozoRDmV0DlbJMn9RbP1ICocnNv4EknMRQc0eFs-Fl8Wg3YRQKwuc51j7QjOpBaD08PLBH_c32iiGWi5zJf1R6QXYQzXIiK161HslLFwo76pe296foDvRsX9WNccsnNfAtOeXIuxy-A_20Pkh2rHLxkGX4qZZ2z5N3yNz_jToe1oP5lNPB7ZnXngba3cQhscKrtrZuxoqCwxf4ZsNQk-L3VEiOlVZ1u-BM39lLq3ROIfnruyFdYK_IDWmgAokYcECK1gOefj3fBvZlTQpsOBWbvO5vuR87tDNRJp9yA6x1T9a1Qg-ZrOVkTtYolKg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpeF6kMQNzRycI4XwkN_PnazF-QTLigC5-hXi5lc5u3hBFtaBGSvKjv_ZInGDC7-H5oOFzIiifAGloHn_t7gpYrR69oD1sv94clb40K3N7ml037GDiJTpcpDkZMHjVQ1CF68cShQHv5sju5-xnbafjtXoMUDIaz4YGhsbe_YrOdghWP5XrmYN4y25DAdGVTvLaaXA-uimFZem8DXDlcJSAwmNJ3i92ZjC6HjhJatKlc2ITyV8eHfn4GdTHz4Sr9zXtuJ8WKd0PHk7FNQl-s8nxInAFQRDiisnehJQQCM-11uSxhKqoGimWGCQ_BGIDUk6Ztu2MXpzlCFMj1oM8XOQ7st8se4lNj4pH9yov0TAPM7UQS1Z-kE0LmbmZL-NEsVOX5oTmIlWckh1N2DOat96ecBFN6o49a_9Ocq8qaZSWvU8m9y&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcrepCuQb44tk0wXTeOrKdvcv4ATmN-1jOsd953jz_1Xy_TcLbBphcNrXD6TgwJ2EafRlu0PQHbIQuzighPVlJto2xW8tWGxEWeU0ml_0OQTG_oC7zhPu_prpd6EM2W9zic5h20Fm5kmhegNO8m7y0lU92JECccJX1mGHzZ5w4g_hLYLrxH9c8G-_IeaBbsjdHSmwkjirOwNekfU-XXjdJK2ILz2DYDJWpVdIid9sQiUU9fWd-a8kG_9BMxG9KxCurRlRpX4lZA0FxbB_IaffWYoNG7XzfaL5hGvt5sbZ6ftg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpey5ZYY6hhY6xCdRo-dZDzUPRdZ-Rym2Blpn9M8WWUbtKkAHBW_eWbdNukgypzNxRwv88LpPxlTxqJfOvJ7idG_KfIZQuo_DjikbwXueavHETMDpU0PCPLEc0O3jreg9k06Ip7rGgMwN5hBotw193MleuehY1TxBAC76WtF1FVVrUutcgny5Bk8xFrm7Ppd44OC7Z9EgQN5ggSnfh7YlQTPM-4udJA1f1N-v_k9He8-WNt_B08RHYYjh4xDFa7HhwrzQH8D__IxRhh3dlGwQ7oxMrwq7RTmWukYHRlrvTiy9dmfk0MGr9UPQBehxBmccInEXDsDJ_95qWuS_eMhIBl0AXGQ3_rwH4ACIggizebS1NFeAND7TZ-_-UfzlUzRSzYfpUej-pA2DB82NMk9fq5gEUBgTNJ-_XwS09elGnI&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcNRIvxe1yUBWpH84RKkKK_iZ5mqzXgRvvtnvZ1Wnk2uK2Wxv19SoD4EQPJv4s0q8HgaYzFEW32xxSDxKUOxC8T9SUdpNcEnyIv96iPEn-heJGG1n6WMzE_t8A1nmRngSOA3-Ldf9bejc6wGOn4UChxWK2wlR0TwZ7RChc2oQ3e27f0bFIwsOLB4g93qZQezUxVfSvwIiQRt4fSz01HAk5WLXVYjtKMGTy23LpwDmYmLzYN17_Ljp-J2cn1gs5X8mmBucgtfKOpa64jzwyFsofTaJ6hmF2B0o3AeqSSuuV7uTDngYgPwki-6dA9gZ4lV5h-7wi9fNYR-oZadHVm1pBfJI524YM-6jZ28xqiVukzmdECcz__wGj8Rb316YeHBcIxotwLcmJ7mik5jJ3QfTovDprTgs9YEGsaVD4tJIxp_ahJ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpehmlN8LDu1RNetQQRZjxw6IeaRytRE8SOIGdsXxRlqOaJzBE82uqk6Sep3RV2PilzOmD6KfTUHEqSg34XliFnc2JPULZB6lCD2QoQjlpXdBzcItxmZ0Ac-khIfZAF5G_Uk9co2frr8XN3y35lYQ25ByycyaMzpxxtMbw_rdH5tfSToCtWVyyYQviJvkKpsXfB3TRV8ZgrAj1oF31tZTmaFtD7mwVX5MKxy05kxF7fjx1yQXD8GTjZyN5tzVomEsJwZ_J-GaNBZ8BnqTnGvUctSzVFXnkQEJnNN-yOjCvbpcQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 50,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": false,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 88,
+      "totalReviews": 4185,
+      "averageRating": 4.4,
+      "sentimentBreakdown": {
+        "positive": 88,
+        "neutral": 8,
+        "negative": 4
+      },
+      "reviewSources": [
+        "Google Places API (Apify Enhanced)"
+      ],
+      "keyThemes": [
+        "Food Quality",
+        "Location",
+        "Service",
+        "Wait Time",
+        "Portion Size",
+        "Cleanliness",
+        "Atmosphere",
+        "Pricing"
+      ],
+      "recentReviews": [
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Everything was SO delicious. The location is great, the food is absolutely delicious and the workers are very kind.\nI am gonna back for sure!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Lots of gf options. Safe for Celiac Disease folks. Food was great!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Fast service, great food.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 4,
+          "text": "Friedman Cafe 31 street\nManhattan. If your in the mood for great portions of delicious food, pancakes with strawberries, scrambled eggs with mushrooms and potatoes and greek yogurt,you won't be disappointed with Friedman.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "The lemon ricotta pancakes are incredible!!! The dirty chai - delicious. And our server was excellent. So happy to have stumbled upon this place! Highly recommend.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Top food top service! Check it out.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 4,
+          "text": "Food was great, a perfectly cooked burger. Waitress was so nice and fun. The atmosphere was great. And food came surprisingly fast",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 3,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "neutral"
+        }
+      ],
+      "detailedReviews": [
+        {
+          "author": "Arien Gray",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-15T00:04:51.995Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2paaGRqRTVSMjlHYmtSb2FHNHhPVVJIWkc5YVFYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLdiEEa8TkYdP1I7-q2lKMu5MpZWU0OV5o4LXDqY6F8dabYMA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100165182667967272620?hl=en",
+          "reviewerNumberOfReviews": 20,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sartori Corporation",
+          "rating": 5,
+          "text": "Everything was SO delicious. The location is great, the food is absolutely delicious and the workers are very kind.\nI am gonna back for sure!",
+          "date": "2025-09-14T23:22:15.885Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21GVWVFdDBUWGN4ZGxoM2JWWklWV3QyTlRKTldYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLPpKpgZmFeibyYcPy2CVBCfUEPZWd3GFZAUDMX2T7ZIB1gIQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112265227269663146259?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Brittney Lytle",
+          "rating": 5,
+          "text": "Lots of gf options. Safe for Celiac Disease folks. Food was great!",
+          "date": "2025-09-14T19:09:52.566Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pkR2JHWkNMVlpPVGxkVVVFVk9TMnBWZGtKalYwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV9RJNVDYmxggubD1OVs6Jg5bketloAGue6h9hRMDOT5Lq-vDx5=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115965149018047962768?hl=en",
+          "reviewerNumberOfReviews": 49,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Noga Shilo",
+          "rating": 5,
+          "text": "Fast service, great food.",
+          "date": "2025-09-13T12:27:52.778Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21ReFFpMUljMVZtVjJoTlpHd3RUbFZSTlhaVVZrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKF5GYkqZV95j7sbC-bj1Z7sE2VjjoeGXgaonJr_CcZUEYPWv2Y=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102152920867873809003?hl=en",
+          "reviewerNumberOfReviews": 30,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Epicurean Chichi",
+          "rating": 4,
+          "text": "Friedman Cafe 31 street\nManhattan. If your in the mood for great portions of delicious food, pancakes with strawberries, scrambled eggs with mushrooms and potatoes and greek yogurt,you won't be disappointed with Friedman.",
+          "date": "2025-09-13T02:00:52.819Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2sxVk4yaDFNRlYyY1c0M0xVbGxRbVJ4YzJwc09IYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKA0bOcQFluLglsjrsNc5h-8xXeyNn6XWXJrPu1qPq2-e9EMA=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113680436424622830350?hl=en",
+          "reviewerNumberOfReviews": 122,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Michaela Mertz",
+          "rating": 5,
+          "text": "The lemon ricotta pancakes are incredible!!! The dirty chai - delicious. And our server was excellent. So happy to have stumbled upon this place! Highly recommend.",
+          "date": "2025-09-12T22:41:34.834Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT204dFJqaHZTbFZTYlVWeFRHZHJObVkwTkhwM1JrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVB8Gl-LFp6-mWK7nZ2C2_CfsTSkkju7_rmewuAsYVtYc3swToI=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102144457464077672082?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ross Lumsden",
+          "rating": 5,
+          "text": "Top food top service! Check it out.",
+          "date": "2025-09-12T15:53:38.144Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pocFpVMUdkRkZPV21WVGRYUnhhRFZQTWt0MVVFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV7-SSN9wp39opDPdtdfYB6BDGGLA7SqhGOMbQwh0GVPaZglcAF=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116531105878327662664?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mark Dekker",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-11T18:12:10.831Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2taUldFUkdiRE5UY0RkcVozZFRRMk5HUWtwdU5YYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKW2krTnYvTppG0ti_0tpGdliBSaaLhRQRXkClgHPgu7yfyfA=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111549148526226775324?hl=en",
+          "reviewerNumberOfReviews": 103,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Aran Clancy",
+          "rating": 4,
+          "text": "Food was great, a perfectly cooked burger. Waitress was so nice and fun. The atmosphere was great. And food came surprisingly fast",
+          "date": "2025-09-11T18:05:18.083Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tKaWJHVmtRalZPUjJkRVlXMTFWVzl6UkZFMVFXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK6zUMXKyN9OVOmnzUtz2kPqasZ7sAnl8n4pn8gHNn0Wi14wQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104368912561093572403?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Plastic Candy",
+          "rating": 3,
+          "text": "",
+          "date": "2025-09-11T00:03:25.333Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xwYVMyaEphRTlqVm10TVJERlZiWEpTYm5kTGMxRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX8q0ZK5E-bgWyPq3UguRismuC0JO4Mz601s80THPj0FsjlCNxF=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109031875074402821997?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Sarang Choi",
+          "rating": 5,
+          "text": "Amazing brunch place with quality food and great atmosphere. There were three of us and Everything we ordered were really good.",
+          "date": "2025-09-09T21:42:18.336Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2s0NGMybFBkMk50TkhwSlJFVlNZWFJDY2s5MVNHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKPqpzdRVoj3tsDlGWVDMbeIUTsClf3fSLEOv_2fdnx0hSdRbIY=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108694035993548193181?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Iain Stewart",
+          "rating": 5,
+          "text": "Great food and service, gluten-free options which helped a lot, pastrami hash was a favourite",
+          "date": "2025-09-07T14:28:25.024Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25Jd2REaE9XWGhhU25WTWVtRlRUVjlvVldGc1RuYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLAJrjlN_0g8xdC-RzeOMSS-HULjLlQWV4gZ-q_VQZYW_hEAw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108258814008881801132?hl=en",
+          "reviewerNumberOfReviews": 21,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Amy Jones",
+          "rating": 5,
+          "text": "The food was delicious, so many delicious gluten free options! I was very impressed with the quality of the food and the staff were very helpful to accommodate my needs.\nThe most amazing gluten free Waffles!!\n\nThere are several Friedman's in New York, I visited two during my recent visit. The one in Hell's Kitchen was smaller and offers a more chilled vibe. Both were fantastic!!",
+          "date": "2025-09-04T03:36:49.258Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT214cVN6bHJaMDFtTjNGdlIxcEhiV1kwTkRSeldVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLkLhPpJYL_QDg0fRmdb327Px9HH01HZEHsyRQgHFF3-OT9Lw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102050192165174453416?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kathryn A",
+          "rating": 5,
+          "text": "Such a relief to have many gluten free options. Very attentive staff. Chocolate chip cookies are extraordinary!",
+          "date": "2025-09-01T23:29:29.970Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xZNU5XbGxRek5pTmtGWmRrUTRhWGh1Y1c0MVRsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX9uE_ZceU6OCPeb_hwK8fu28O8jI02GrZYM9RgjzFJN2CuqLg0Lw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107478824173654388453?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Scott Doyne",
+          "rating": 5,
+          "text": "Expensive, yes.  Would I go back, yes.",
+          "date": "2025-09-01T19:12:10.131Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xkVmRFSm5URWw2YUZGSlZqQjFSRUprVjA5M2JYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXBJkZEHsUmjNlKsQAsJrAcXSk5nTkuzI_sKcyYlSVOsY4D802N=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108522101481977064775?hl=en",
+          "reviewerNumberOfReviews": 56,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Vicky Bailes",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-01T17:52:43.422Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2s5Slh6TlRkRzlsU3poTGVraFVhRjlYVTBKRFRXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLeKxWbMEl59ogcKZHevbCXpZYA6jikB1WlBUBTvSDb86qOVw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112870460665776357751?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Richard Rattan",
+          "rating": 5,
+          "text": "Had the opportunity to dine here again and rhe service and food was just as good as it was last time!",
+          "date": "2025-09-01T14:26:06.087Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VMdmgtOS02a05TdEJBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVKvOfMzITwlLNTBoDT0lC8hg2mJSQQd2EZUiJC65LxRxMLk3o=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111494738339724075328?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Motoki Yanase",
+          "rating": 4,
+          "text": "",
+          "date": "2025-08-31T16:43:20.061Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xaelFUVkdSR2h2YTBzMVNsVnhTa0ZwUkdOdlprRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIP440bRGaydwsAPNL2ET3tBH7-n_QzaSNZc2B9FZ-mXjHgCkA=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107370065009507453895?hl=en",
+          "reviewerNumberOfReviews": 210,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Angela Balzano",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-31T07:54:22.968Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pKM1kwdzVjMWhFZVV0UlJrUm5SMmxEUkhGdFIwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUqdBqLRYUT3PvMm0r-mGxBWsKl4Wty0-PX2XudLEPInt9ehO7I=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101318854108561982340?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Veronica Puente",
+          "rating": 5,
+          "text": "Great food",
+          "date": "2025-08-31T03:05:26.475Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tWTWIyNVhNMGw2YkZoWVRuWmhkVjl6Y0VSSWFWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUzl7NNNLtoFwomIEE0d96-QjWgamvN6o__t_5u0CYVrbzIGRry2w=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117831506361824296314?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Maureen",
+          "rating": 5,
+          "text": "Amazing brunch date with my love. We thoroughly loved the food!",
+          "date": "2025-08-30T16:27:19.287Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21GZlVWSjBTazFLWVhWTGVWcDZVVXcxVFRsYVNWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWrem5K13RrlPVqY8yIAD6TUQCVi6NsuCVsv0FGapXkccpkWulgHg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111497034533225993440?hl=en",
+          "reviewerNumberOfReviews": 28,
+          "sentiment": "positive"
+        },
+        {
+          "author": "lucia landolfi",
+          "rating": 4,
+          "text": "",
+          "date": "2025-08-29T11:41:12.943Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25jeFQxVmxXRmg1WjBKWVNGWkhjbEZHYUZOb1VGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXbgooYPhkz0uZEU04USKdXqF9EstfpFq37aIXqRVyi41FI7kXT=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110587580378101069513?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Cory Freilich",
+          "rating": 5,
+          "text": "Had a great dinner here before a concert at MSG. Didn’t have to wait for a table for 2 around 5:30 on a weekday. Ordered the pastrami sandwich with a side salad with the oregano vinaigrette and matzo ball soup. Service was good, waitress was friendly and attentive. Would definitely go back.",
+          "date": "2025-08-28T16:10:41.761Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25VMGJFTm9VRXh3UkVWbVRVdExhRnB1WlV4SFNWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXaMY0M0JnloXAwCX9LdItq-cbRdj01sVgcnGHdZPl5c2GwWHwXEQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112105243965322097573?hl=en",
+          "reviewerNumberOfReviews": 45,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sheryl Lloyd",
+          "rating": 5,
+          "text": "The Bellman recommended we dine here. As a native NYers haven't always enjoyed the City Life. Food was very good. They are know for their Pancakes and honestly it didn't disappoint. They was moist, fluffy and had good flavors. I prefer more crisp edges but still close to perfection for me. I enjoyed the Blueberries not so much the compose along with it.\nWe also had the Eggs with Style that comes with your choice of protein, potato Hash and Bread. The Eggs were really good. I was sketchy because they looked soft and I ordered scrambled hard. They was really good. My Hash was too hard to enjoy (I did request it crunchy but was over done).\nFood tasted really fresh, service was great and didn't wait long for the food!\nI find it a bit pricy for an Egg meal but at least we was satisfied!\nI recommend.",
+          "date": "2025-08-28T15:49:18.944Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pkSmVHUjBiakZWVTJaeFUwNVpXVE4wUjBwSmNGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWqv9w31JixQrmVIc0OrqmFcX0nPD4h4OsvsXwWgvaX--VEW5w=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113455833701026318968?hl=en",
+          "reviewerNumberOfReviews": 58,
+          "sentiment": "positive"
+        },
+        {
+          "author": "L Wolfe",
+          "rating": 5,
+          "text": "I've been passing this place for years, and I finally tried it. Amazing! My friend had the salmon dinner she thought was good, and I had brick chicken. Then I came back the following week & ordered the short rib dinner & added green beans, took the leftovers home to share with my husband, & he loved it, too. Great decently healthy home cooked options for the area that are not ridiculously overpriced.\nVery nice wait staff as well.",
+          "date": "2025-08-28T11:46:24.588Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2w5TWNpMTJNblpqT0V0WlNHOXdRV294YjJsNk5HYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJdbm08iJKKIYxj1UWYvnQliqljw3mvnglyLzdJh1hJLt4Zlg=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100445614863199869026?hl=en",
+          "reviewerNumberOfReviews": 562,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jesse Shaffer",
+          "rating": 1,
+          "text": "The \"famous\" french dip was a massive let down. Do yourself a favor and head to Salt Hank's. The roast beef sandwich was flavorless and dry, way too much unrendered fat. Worse than that - the au jus is bland in a criminal way. It tasted like high school cafeteria grade food. I will say the texture of the fries were really good - but they arrived at the table with half of the basket cold. I was a little shocked by the experience for a place that was absolutely packed for lunch. It's impressive to be served cold fries that were that crunchy, still. Despite that, 10/10 will not go back.",
+          "date": "2025-08-27T19:47:43.553Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25SVlJrTTFVa1pTZEUxSVlWWllWR2xPVERoRVNFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLYiwEy7KS4vSr-67xV8RJ5ZaV4RfjLUxwHKpICPuTOn3W_6w=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102329481545762863558?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Don Holloway",
+          "rating": 4,
+          "text": "",
+          "date": "2025-08-26T19:28:47.483Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2taRmJIVlZZV0p3TnpoNlR6TXlaRkpUYTBoMFdGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUdvpag162rbhj3Iz1EehGZ_TZHCjwwT6G4avxRiSEvvgJV2i_i=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107822942568806397163?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "SIerra November Papa",
+          "rating": 5,
+          "text": "Great food, really enjoyed it! My celiac daughter too!",
+          "date": "2025-08-25T21:17:32.249Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2s5RVVrMUZiR1JYYjNCeGFrUlRjSGxFTVdSMVEyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLSeReVSox-OKzW6pHWZF5O_Ne0SvyTYF7VUXY3sr28QBpilg=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106834774718873248289?hl=en",
+          "reviewerNumberOfReviews": 53,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mike Motyka",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-25T01:39:48.310Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pGVmJ6aGFNM1ZOV1ZsYWFVTXhjVlYzWkU1dFpGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJHJDYTYu8RMxwPp28Sw_UO8Y49AvPeqStMSw__fo_HiIOZSg=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111835700820295172811?hl=en",
+          "reviewerNumberOfReviews": 28,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mo Se",
+          "rating": 1,
+          "text": "very bad place I didn’t finish the pancakes they were dry they don’t provide enough sirup with it. The cup of tea was half empty. And the worst is when I finish my wife went to the toilet when I was waiting for her they don’t stop to come around removing things from the table, like to force you to get out we don’t do that wait the the client pay leave the table and you start to remove things. totally disrespectful staff. Hate it people who give good note are not truly honest.",
+          "date": "2025-08-24T15:42:40.593Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25OU1NYaE5OVUU1TUdScll6RXhlR2RwUkMxVVRFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVgFFeWA01iByMf8l3pIXkHyOuv8dJAboAblYLjd30p5U70n92L=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105410435505712621832?hl=en",
+          "reviewerNumberOfReviews": 33,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Chloe Jane",
+          "rating": 5,
+          "text": "My boyfriend and I really liked this place. The waiter was so kind and very attentive. All I ordered was a gluten free grilled cheese and French fries, which can't really be messed up, but the gluten free bread was some of the best that I've had! And the fries looked hand cut and were per. fect. ly. crispy (no exaggeration!) I also got the GF chocolate chip cookies and thought they were better than the place down the street with award winning cookies. Can't wait until I can back to the city again to try more of their menu items!",
+          "date": "2025-08-24T03:50:59.734Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2poZlZrSkxabkF4YURGU1FWOXFla1Y1V0ZKVFQzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVFQNSOa_qxpFeMSMcJ4SLS4Vmsx6omaj19sMDVCyH-DOffB_VYUw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118441810569991319222?hl=en",
+          "reviewerNumberOfReviews": 56,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Erin Cameron J",
+          "rating": 5,
+          "text": "We came here for breakfast and really enjoyed it. I ordered the lemon ricotta pancakes, mostly because I love pancakes, but I was a little nervous while waiting, they looked delicious, but I was worried they might be too lemony since I’m not a fan of strong lemon flavors in bakery items. To my surprise, they were perfect! You could taste the lemon, but it wasn’t overwhelming at all. They were so delicious that I really enjoyed them, though the portion was large and I couldn’t finish it.\n\nThe atmosphere is great, and all of the staff were very friendly and attentive. Overall, it was a wonderful experience, and I’d definitely come back!",
+          "date": "2025-08-24T02:45:59.901Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pkaU5HMHdTMFE1YnkxdE9VNUtNa0pqYzJkUVlYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL51ZekI_BgXNboQaMsTxjB6x4_BruDnGc2kXQCeD-yigix3Q=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104229091725617840739?hl=en",
+          "reviewerNumberOfReviews": 52,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Omer Gila",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-23T05:00:27.074Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2w5bmEwMVlWRVZpUlROZlpqUjVVSHB3Vmpsc1JHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUeWWgAr8mHMT3ZPUXgTHqZgGOtBoseQGZ4rpE-8DsfAz7p85VNZA=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102934453120346902454?hl=en",
+          "reviewerNumberOfReviews": 302,
+          "sentiment": "positive"
+        },
+        {
+          "author": "jack keelen",
+          "rating": 5,
+          "text": "The best gluten free pancakes 🥞 ever",
+          "date": "2025-08-22T14:09:46.502Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xSbFlUTkxlams1WTJsdWJERjJTRkJxYldwVlFXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVD1RVCWnhbyeTMW8A5PY6sdfys9hcHMsvAsItDL0SlF_GIXp-G=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116357105117383232388?hl=en",
+          "reviewerNumberOfReviews": 111,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kavita Ramjisingh",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-21T15:29:14.702Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t4c2NsSnFTSFZQYjI4ME5ubFRaV04zZG1wcWNtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVE6B2CsxiZvhD50H-gKyXGlGCOeJdRxKvc6QML1daFop0uNaQyfg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104701339512584226928?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Michelle Visco",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-20T22:25:20.675Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pKTk0weDFkR3hxWVdsTGEwNW9UM0V3VDBOcE4wRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocII4xdZ86H_PNfGrZ9hhY64z7VWSRJOZ2zQaVfrusELMsaZH3Q=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106265752836449916472?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Paul Ruffles",
+          "rating": 5,
+          "text": "Tasty food, good service, great for coeliacs.",
+          "date": "2025-08-20T16:46:43.625Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25Wdk1HMUVSa3A2TW5FeFZuRkJaRGg1ZVRBMWMyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLRSgv1A19by5bu5DLnHb9cBTsHCJEl4CFiMUE7oppni5ysrQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112927907497547761873?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Cristiano Puricelli",
+          "rating": 4,
+          "text": "We had dinner and the food was delicious and the service excellent. Probably, the food choice is a bit limited.",
+          "date": "2025-08-19T00:57:43.046Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xOT1IweE9RbXBMWDJjMVZFVnRiVXQ0Y2taS1dVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW7YrWZ6hKTJTG8xcgUdjUo11XfKuzxYiXTXDGbxzGHGk9Kc4QL1w=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102041408533374880803?hl=en",
+          "reviewerNumberOfReviews": 20,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kimberly Clarke",
+          "rating": 3,
+          "text": "I was not impressed by the food or the staff.\nMy daughter's pancake was very cakey-doughy, too thick , and my hashbrowns were watery,  when I told them they ignored my complaint and basically blamed us for not saying anything before. Mind you my daughter only ate quarter of the pancake and I left the hashbrown for them to see. The asked for over hard eggs and the were half runny. Bacon was good. I would not go back.. I found way better breakfast at Tick Tock diner down the street..",
+          "date": "2025-08-18T16:06:00.442Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tOSmExUTJPRWhpVVZWV016Uk1TVFp0Y0dwak1IYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLGUDVShZnOfTlr8moMWirnCzoJL2R4l-74ZaZKxE9Hm-xlHA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113243347711803760606?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Heather D",
+          "rating": 5,
+          "text": "Clean and inviting with friendly staff and excellent food! Decent prices for the area.",
+          "date": "2025-08-18T04:15:34.450Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2paNVMzUnZka3RWUm5KR05IcDVXbFYxWWpSeGJHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIzkoxl7pR_p1SCE-nHmj4krv0XBJAq_4IrGc4Uto0tZCx7vw=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102968336859901420740?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Alejandro Sueldo",
+          "rating": 3,
+          "text": "Friedman’s: Brunch Without the Buzz\n\nStopped into Friedman’s in Hell’s Kitchen for a Friday morning brunch, and while the space wasn’t crowded, the service stood out—warm, attentive, and quick to check in. We ordered the chicken chilaquiles, a breakfast burrito, and a side of tomato bisque. Everything arrived fresh and as described, but the flavors didn’t spark much excitement. The food felt more functional than memorable, leaning into consistency rather than creativity.\n\nGiven Friedman’s reputation and the buzz around its various locations, I expected something with a little more personality—something that would make it feel worth the hype. Instead, the experience felt more like a polished franchise than a neighborhood gem. Reliable? Absolutely. Special? Not so much.\n\nA good stop if you’re in the area and need a comfortable brunch option with solid service, but don’t expect it to linger in your memory after the meal.\n\n#HellsKitchenEats #NYCBrunch #FriedmansNYC #FoodReview",
+          "date": "2025-08-16T23:03:14.133Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21sMGFVdHBNVTlWVEdKTlpEZG1UbDh4WDJKdFUzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLmQ7cfLkYJxWpLnD3w_cP7QnipjtJx09_AIbQzNhAR1gtBhLQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107563148895134409684?hl=en",
+          "reviewerNumberOfReviews": 42,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Rohit Kapoor",
+          "rating": 4,
+          "text": "",
+          "date": "2025-08-16T21:31:09.135Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t4RFJHTnJUbHBaWlRWM1IxazVkVzFVYW5WbGRYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVTS37TxGLQce5wlR5_yWZSJHKvDsJxKGkO7ACfwbm0ER9dTpYuFA=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101247297203559310959?hl=en",
+          "reviewerNumberOfReviews": 158,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jordy Eats",
+          "rating": 5,
+          "text": "Good diner food and decor. This is my block💪🏻",
+          "date": "2025-08-16T11:46:49.492Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2s5MFUwVXRaRzgzVjFoTWNsQnpjMmMwZDI1SldsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUDLzcQK0HrhAsN2t5mGl_gmRKF5q09r-SFGqmJEpeoFfyj2HVd=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117588464514792568311?hl=en",
+          "reviewerNumberOfReviews": 65,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Chris Ramsey",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-15T21:38:10.048Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xvMVoxVXhNblJPTTJ4cVEyWkhhR0UwU0daWFpYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWWCjOfey9GTO2RnX4b9NqZCUGmPIxzPqE6dUCDZbWxm0-WaGzJ=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100655129570383284764?hl=en",
+          "reviewerNumberOfReviews": 17,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dirty Harry",
+          "rating": 5,
+          "text": "Great food and service.",
+          "date": "2025-08-15T21:00:45.556Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25Fek4xcFFWRXd5YmpCbWFURlVhRUpHTFdWelRYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW39JpEPIo91wKTrt5orw0H4tmHC72yM6S9xNd5KLLSzxZgvA7-=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103921889194368734833?hl=en",
+          "reviewerNumberOfReviews": 38,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Divya Ramaswamy",
+          "rating": 4,
+          "text": "I loved everything about this restaurant. The service was top notch, the ambiance was excellent, and the good was really good. I had the Avocado toast with feta and scrambled eggs, it was a hearty portion very well made.",
+          "date": "2025-08-15T15:31:52.055Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25WUFJESk9NMjlDWnpaR1RuWXdNRGxmUlZNM2RsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUSCtyzO9FIslLk9Dt_Gmd-mDrjB-RjF5Vpst_fEkdfAJlNRss=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105797756696607080783?hl=en",
+          "reviewerNumberOfReviews": 249,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Romana Ramzan",
+          "rating": 3,
+          "text": "",
+          "date": "2025-08-14T20:27:50.766Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2s1TVIyazNUa0YwTkVzeFFXWllUWGhvUmxkNVIyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVv3vRfBl_JmR_FqnPvNIoeMXtiKUnMGzgS8nnwjL-2JYoYAQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115638382697760351961?hl=en",
+          "reviewerNumberOfReviews": 61,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Jessica Monagle",
+          "rating": 5,
+          "text": "Great food for the whole family with an upscale flair. The decor was interesting with simple jarred veggies along the walls which made for great entertainment while we waited. The service was good and the food came pretty quickly. There is no kids menu but there was plenty to choose from. My son had Mac and cheese bites from the app menu, for example.",
+          "date": "2025-08-12T05:27:05.260Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21KS04zVnpNMU5FUzBSQlpUQlhaMjFhYlZWaVZtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU7QLV4bBw9Ytze73fEZUkdv1S39M0NoWzZiO4o_9HOXY27RwI3IA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103329775774653020357?hl=en",
+          "reviewerNumberOfReviews": 28,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Enis Atallah",
+          "rating": 3,
+          "text": "",
+          "date": "2025-08-12T04:33:40.865Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pGamFVRkdNR055VTNkUE9FUmlaRFJCWlRNNFJWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV9xsPB7_f_GB9wx87fMFjPq0E5bLHpLXqhK6cvNse2zozjEpRW=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115505458824843398538?hl=en",
+          "reviewerNumberOfReviews": 61,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Ember L",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-11T17:03:59.651Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21oYU1tOU1OMDluTTNselJscHJaVTlUTjFkd05uYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKKMF2GhL98JpZmHoCTRVTS8VVcai39ORZjM09zDA8crqYBjGM=s1920-c-rp-mo-ba7-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103281501237153492351?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Marco P",
+          "rating": 3,
+          "text": "Not really worth",
+          "date": "2025-08-11T01:18:29.888Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xsMkxYQm9Uakp5UkY5UFdXcGtUMVppUjNOcmNYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWWWt2ZW35piTyJ9PrnbN72kxzijbbGh6Q1wbSuN-tV87dwIC4Y=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116930495072789898951?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Taher Jamali",
+          "rating": 5,
+          "text": "Great atmosphere as well as service, food was amazing",
+          "date": "2025-08-10T22:33:54.721Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT20xYVpsUm9ZM0ZEV21SM1gyTlRPRTlFZW5OUFNHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV9QN83Mtzl95oCNwO6lscGsGHlR8-nBSikZaJBQRd0YuA4ZpY4=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102982294021909589740?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Defne Kiyak Icyer",
+          "rating": 5,
+          "text": "Great service, clean and delicious food. Try their speacials Frozen Rose. Also like the music👍",
+          "date": "2025-08-10T20:27:45.383Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25CMGVXeHFkazlOY0ZkUWRHNDNkVlZ6VUhKZmVtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWl3857R1fQ75Cn44S2CFLy94R-IcfwFQTUISRbS1quGcBW9N9Y=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115302775394755784234?hl=en",
+          "reviewerNumberOfReviews": 27,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tanielle Elliott",
+          "rating": 3,
+          "text": "Really friendly and helpful service for our party of 9 including kids of a wide age range. Food was ok and reasonably priced. The ambience was lacklustre and the decor felt dated.",
+          "date": "2025-08-10T14:14:47.296Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xCd1NXbFNSbUpIUW5oZlowdEtSR2RxY0dkTVRXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLStUzF72E5_3HjeRBhNM9IdT051nUmCjM9XXdAyrTRLvg_7Yku=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117892020208995072183?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "Mimma Sebastio",
+          "rating": 5,
+          "text": "Piatti tipici della cucina Usa e non solo, cibo di ottima qualità, personale gentile e disponibile, il vero 🔝 è rappresentato dal fatto che tutto il menù è disponibile in versione Gluten 🆓❗🎉🎉🎉",
+          "date": "2025-08-10T02:53:31.754Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tKVlNFcEllRlF0VHpKblFsTnZkMFZ4U0hKaVJsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUpJAvqm7z7nd7Mbw3KNyFtAuekIC8Hmpt8GrJHljjAa68yAp8WPA=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111063166299471522627?hl=en",
+          "reviewerNumberOfReviews": 121,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Shelby",
+          "rating": 5,
+          "text": "We came in without a reservation and were seated very quickly. I'm not used to having soo many options at a restaraunt! They were very good and thurough about checking my allergens (wheat and soy) and this was the first time since I was diagnosed with my allergies that I have been able to eat fried chicken at a restaraunt. And it was GOOD fried chicken. I had my wife, who is able to eat gluten try some to see if it was just the fact that I had been missing out for so long that made me think it was so good and she agreed that it was really good fried chicken, irregardless of being gluten free.\n\nI highly recommend and plan on coming back here the next time I visit New York.",
+          "date": "2025-08-10T02:36:48.702Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xVMGRFOW9NSFJ6Wm1aVGNXUTFPSFJaWlhWMlowRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocISxjEBj6zX9w4v-j7YhnORfPS2YIGfJOjeZhm8IgX1cbiPaA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109224046443585363593?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "positive"
+        },
+        {
+          "author": "lisa berlin macquarie",
+          "rating": 5,
+          "text": "Great place for some food. The service was excellent too. Used by locals so that's a good sign. The food was fresh, hot and delicious.\n\nThey even do gluten-free. We couldn't fault this place. ❤️😍❤️😍❤️😍",
+          "date": "2025-08-09T16:28:21.059Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25CS1RHb3lhSFprYzNoall6WlNWWEJ0Wlc1UldtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVqy0sYFiTfVRT7-HUTo31qQJTr9Y4HfymAuixOW_Lb-71MoPSS=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105549899825170092894?hl=en",
+          "reviewerNumberOfReviews": 88,
+          "sentiment": "positive"
+        },
+        {
+          "author": "jae Chun",
+          "rating": 5,
+          "text": "I like pancakes recommended!!",
+          "date": "2025-08-08T23:26:51.097Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tOV2NuRkdhbTlVYXkweGVtODRlbUpHTXpoRloyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUqPzR8zrVrlJ8MtVhIe75WdpMo_KqcrUiNc6sMpU20iTfL990QTQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101460850705440813884?hl=en",
+          "reviewerNumberOfReviews": 43,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Egle",
+          "rating": 4,
+          "text": "Siamo andati per cena, chiude alle 21 alcune sere\nVolevamo un pollo fritto senza ossa ma l unico presente era quello dentro il panino (che abbiamo preso)\nAbbiamo preso anche del pollo fritto su un waffle, Mac and cheese (che non ci ha entusiasmato) e una fetta di cheesecake.",
+          "date": "2025-08-07T22:50:55.695Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pGR1JUWTJhaTFSVWs1d2IyMURkRE5pUzBWNGNYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVyQENy31dTocE7KXWKveqw0teHE3dCVSOjPC7Ja_GXsFUE66Lo=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117171720175191661465?hl=en",
+          "reviewerNumberOfReviews": 91,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Stéphane",
+          "rating": 5,
+          "text": "Famille de 6 personnes, nous avons très bien déjeuner. Le service était rapide et très bon. Le serveur parlait un peu français. Prix corrects.",
+          "date": "2025-08-07T19:15:31.579Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2kxRVRqUjFVamxvVGxSM1oyaHRXRGRWUmxGdFRsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXBfbesPi4bVlxV-vv0t6GVR6eZWetoRHuVKGR9BLmu1onLvC4=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105190511038156533000?hl=en",
+          "reviewerNumberOfReviews": 23,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Fe De",
+          "rating": 5,
+          "text": "⭐ Friedman’s – 31st Street, New York\nPromosso a pieni voti.\n\nCena che ci ha lasciato soddisfatti e sorridenti.\n📍Ambiente piacevole, servizio cortese e simpatico, di quelli che fanno la differenza.\n\n🍗 Il pollo fritto con pancake al cheddar è stata una sorpresa clamorosa: croccante, sapido, goloso.\n🍔 Anche il panino con pollo fritto e patatine merita: comfort food fatto bene.\n🧀 Il mac & cheese è buono, ma con un twist: preparato con fontina e parmigiano. Forse meno “old school” di quanto ci aspettassimo, ma comunque piacevole.\n🍰 Cheesecake cremosa e ben fatta.\n🍺 Due birre IPA e una chiara, tutte ottime.\n\n💰 Spesa: 103$ in 3 persone, esclusa mancia. Prezzo giusto per qualità, porzioni e atmosfera.\n💬 Ci tornerei? Sicuramente. Una tavola americana con gusto, senza eccessi ma con carattere.",
+          "date": "2025-08-07T03:12:38.782Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xGRk9HNDBYM2R4U0VOV09ESlBUMGRhVW5aUFQyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWWM8MaqwPrKiYQR6_RREu_wsO5BdooMXZ9LWVSxbKJj622prny=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113683086828337389831?hl=en",
+          "reviewerNumberOfReviews": 130,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sahana Kumar",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-05T16:20:37.630Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2twb1VHazNNQzE0TFRBd1RtY3hjRWMzT1dZd1lYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ1c1ifMh-3GtF2vPeKCs0yOikkp6ixfToAuhHzA2_tU9YIGTA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116277171030450220124?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Meerim Toktosunova",
+          "rating": 5,
+          "text": "Phenomenal food, service and ambiance. Must try.",
+          "date": "2025-08-04T15:12:22.455Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25WeWFHdFFPVFU0YjI5eVdqSkNaVlJMVUVzeU9XYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ-iNosjhl4OFQTh-Pu52hIlbNX4c20kKNJ-D1QDNERoSDusA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108833377749617730086?hl=en",
+          "reviewerNumberOfReviews": 32,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Giuliana Beltrao Matas",
+          "rating": 5,
+          "text": "Visited NYC for four days and went three times. Traveling with a celiac partner, this was the perfect place with a mix of gluten free and non gluten free foods. Would recommend the mac n cheese bites. Not incredibly expensive, either, for delicious gourmet food.",
+          "date": "2025-08-04T00:58:39.757Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21sNlJreFJiRFJSV1VwWGNXZzNhMDVWV2tWMFFWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVFywuXjKXtxiyAgaxBtFyYR0pZQrkgQi4-YZPkgHH631zKoZk=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115788163113431065905?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Robert Czarneski",
+          "rating": 4,
+          "text": "Outstanding place when spending time in the area.\n\nMake reservations...",
+          "date": "2025-08-03T20:55:56.478Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25nemVXSTRTVEUzYjFoM1EwOU9jeTF4VGtoNk4yYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUutVxBtnk_pqjegn_qk-n2dC5-fzh-lR-1J6GHYBwk9zqN8rRV=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111787444315836784570?hl=en",
+          "reviewerNumberOfReviews": 738,
+          "sentiment": "positive"
+        },
+        {
+          "author": "amyas myers",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-03T12:43:25.270Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pCU09FUnlhSHB2WjBKQmRWaE9XbmRuUm01UVVVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXHaeKXB5CEmOJYdS1ZhpaHpu50CxtLQGkArfgqjFEy87h3BxKBFg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110379545403535472917?hl=en",
+          "reviewerNumberOfReviews": 34,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Anthony DiLeo",
+          "rating": 5,
+          "text": "Great food and service.",
+          "date": "2025-08-02T17:08:39.448Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tWbU9XSnhXWHBFWm05VmRHeDVYMlZaYTFkYVQzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXozGXksOKrRsxEp4WT9X4GQorljoZILyncOJlGALw_9X-QPWM=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116520353759571394692?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tina Hsu",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-02T15:50:45.884Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tocU4xSk5hQzB4VEdRM2VVWk1iMDFWYlZaeE5YYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUpQtG4nhmsX1Z_jvjcFrC2eU1Pc1CNNRqtNHnn7TVnf2totxxD=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114423400817879413986?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "A B",
+          "rating": 5,
+          "text": "Everything was gluten free and delicious\n\nService was friendly and quick.\n\nLocation was nice and very close to the 911 memorial site.",
+          "date": "2025-08-02T15:40:59.144Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xZeFlucFhPV0Z2YUcxME9ITlBhR05PY21aamIwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJIUA2Wnc8Uf7_haBj2BTmy2E9bafkoqkni0N24ICA3_uzoqA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104385415323870552661?hl=en",
+          "reviewerNumberOfReviews": 75,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Samuel Howard",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-02T01:07:00.432Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2s1dFJWbFZWVUpCZG5oT1NHWlhTRTFHU0ZWNlUzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX_NPKbRY_ukrhCi1Om1hzF51IfkumnWXZyBF-l7tn5ZVwU7prE=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109013574690189581450?hl=en",
+          "reviewerNumberOfReviews": 178,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Chris Wieman",
+          "rating": 4,
+          "text": "",
+          "date": "2025-08-01T19:27:49.543Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pKcWREQndURU5VVDJWUE5IWkpVV1V6WlZSd2NWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXBqNUGqL1DnOa7dMQ9p7T7q1mXQBeAbXk3p2ZaZ6jDzBOkoHE=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107384118830981397729?hl=en",
+          "reviewerNumberOfReviews": 117,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Michael Abatzis",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-31T05:06:10.186Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21WMllXZEVNWGN6YVZsakxYTkRXR2hCU0hReVNFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUdA6zyow8uWQwVmgsTlXg_9IHc_UchY0IuXjfcfwxjXLvqTket=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108856966067766498379?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ehsan “E.J.” Joud",
+          "rating": 4,
+          "text": "Good food. Beautiful place.\nDidn't have the best mashed potato here.",
+          "date": "2025-07-30T23:24:36.438Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT210b1VtUlRMVEpHV1haMVJuSlVRMG81UVV4aGVsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUHr8eEUQ4Q5Pw4_3sqS8FqiDpC5zhJXpfrc2umces34Tq-WHSp=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107216417858876387572?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jose Cigarrero",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-30T15:47:59.372Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pCVlJVRndiSGRuTFd0SUxUbFFPVUpoWjFwUWNrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKAE7tUHgu8TECVuo3T4qEL9csCa9BbVlmyhknnl0NVRb1opA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106342618949355868759?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sam",
+          "rating": 5,
+          "text": "I loved the gluten free grilled cheese sandwich and fries. I can’t wait to come back again. Please don’t close the restaurant if possible.",
+          "date": "2025-07-29T16:14:08.629Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pWSWFGVXdSMjUyWm10eFkyWkpMVFZ3ZWxCS1ZGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVJZXJGYoFo954imvHxXvArZBZl1sn2AAKttoltWvV51-06RgTQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101886555882770042481?hl=en",
+          "reviewerNumberOfReviews": 24,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Libero Della Piana",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-29T16:04:21.950Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT205RmRXWjFURjg0ZGxoR1YwSlhPWGRJUW5kb09GRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUh4i-VvcE85ZFdk4MiF5I-Yof4nlxti3d10Z2or0ZA7kUiY0yb=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108295172422517941057?hl=en",
+          "reviewerNumberOfReviews": 75,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Helen Amador",
+          "rating": 1,
+          "text": "",
+          "date": "2025-07-26T19:02:37.812Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25nMVl6UmpNRXQyUkhSMlJtSlNNbnBJUjBwbU1sRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWWx5HtHtyv1Wy1DiFrOsSKEF6kDwBejBH8Xt-heSFhO_JQeb6v=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102505418850077984324?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "negative"
+        },
+        {
+          "author": "cynthia VanDerwerker",
+          "rating": 5,
+          "text": "If your gluten free it’s the place to be🍻 breakfast-  dinner and the veg potstickers for a snack.",
+          "date": "2025-07-26T19:02:06.867Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21wQlRVcHNOaTB6VjA4d05VMHdlWEpyTVVaNFIxRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVxNwEXx3MjU6ozoSiT5hGKXTgYmZKB6LtHKsCHuQB3c5_J1eI=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103033972985819025221?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kya Lin",
+          "rating": 3,
+          "text": "",
+          "date": "2025-07-26T15:45:33.465Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21oMVRuQldaa3czTkd0eU1ITTBRbVl5WTJWRU1YYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVW3mfd4iiRNVOcnMuegw7eh4P6h_ceY40LivV789UkPvsDHBLagw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105370764775065887439?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "neutral"
+        },
+        {
+          "author": "EC360 VIEW",
+          "rating": 5,
+          "text": "Food was delicious. Great omelette and potatoes.",
+          "date": "2025-07-26T15:20:22.997Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21WVlVUWjBXVUowYm5VNFUySk1Zbk5aU0dRNWEyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXtgdN_h-OnsePjTIQ_LhTQE3ctLWDNJM57Y5ufXcV4nLnhSIiU=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107624976969317586978?hl=en",
+          "reviewerNumberOfReviews": 59,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Nicole Dalmus",
+          "rating": 5,
+          "text": "Absolut perfekt!",
+          "date": "2025-07-25T14:54:20.925Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pCR1EwdFFkakpzTmtnelFVbzRSR2RIVlZrM05uYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW6b8YyVoifmvx0pKPIvwEIJ7d65oLnqsADEBbydqBr2SYjgLnf=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105177561131774165536?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kayla Daigle",
+          "rating": 5,
+          "text": "The fried mac and cheese balls are now my favorite food on this planet. 10/10",
+          "date": "2025-07-24T23:04:31.931Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pKVVZuRkJZVlF6T1d0VU1uQmlTalE1Y2xWU1ZtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUe2jD4SzOKkHjkDIh1ycuf-2d65NyPKaux4rKXTFt3hjvNCfN0=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106143118836830980653?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Joanna Michelle",
+          "rating": 5,
+          "text": "amazing gluten free food options!!",
+          "date": "2025-07-24T19:39:10.785Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tsZmRFUmlVMGRzVjJWdmJuVjZhbGcyT0VWQ1ZGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL00RluoYaebLG7Xt8pfeu7oXIvpAPZxpm8esKWmj4g8SJ_oFKe=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100748971991531741370?hl=en",
+          "reviewerNumberOfReviews": 21,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Brian Keith Overall",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-23T19:44:07.026Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25aSFdISTBUMk0yTTBWNGVtVlZSVkpTWlZBdFgzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXm4pp4DjOhlOhldavJVjg00Rb1xmRmbVutp6TAfqb6iV-F7FAe=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107429956132556638503?hl=en",
+          "reviewerNumberOfReviews": 136,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ben Seligson",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-23T19:41:16.261Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pOaWJEUklXbFEzTkZKTFdFTjFaRXBCZFhwRWJuYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU9xvMGKTfEh6PEatRrB73wSTIj5SLqz14vwLF8lOum3A-x_hex5w=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117715429054420290742?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Fatima zahra BOUAAMRI",
+          "rating": 4,
+          "text": "",
+          "date": "2025-07-21T14:15:49.391Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25jNE0wWnFkWFpaY1RkRE4wUTFibUZsUWpOSFJIYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjViQG_dug3XWIJ_UCYtzWZijCLG3jgJuRGdiljlq04rokfEnJsP=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113537739583420294664?hl=en",
+          "reviewerNumberOfReviews": 42,
+          "sentiment": "positive"
+        },
+        {
+          "author": "UMAR CHOWDHURY",
+          "rating": 5,
+          "text": "Great food, great service. I ate here with my family of four and we had a French Toast, two burgers, and a pastrami sandwich. We all loved the food, and thought the flavor was exquisite. However there was a burger with a bit of burn to it, but I wouldn’t think too much of it. Good restaurant overall.",
+          "date": "2025-07-21T14:04:25.175Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2toeGVFbGFOelpZV1hOdVNuTm9lRVkxY25kRk1GRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV4sZbPNQn5L5wOhY7wLXNV-A9Xdh0Z0KdQHCM3DA9YDHYOMZoG8Q=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114070034533636371653?hl=en",
+          "reviewerNumberOfReviews": 20,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Monica Varela",
+          "rating": 5,
+          "text": "We went for breakfast/brunch on a recommendation. The food was very good, tasty and the portions are perfect. There is 1 single complaint. I asked for a side order of plain pancakes and was told that they do not make plain pancakes. They have a specialty pancake, the Lemon Ricotta, which my friend ordered and apparently was delicious. But how is a restaurant that serves breakfast all day and serves typical breakfast/brunch dishes not capable of making regular pancakes.",
+          "date": "2025-07-21T13:47:22.214Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tkdldWRnlhMVJNYlY5M1lrdEdNR3R3Ym1GdVUwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXqKaZHNAHHazzgAXWHjkj0TH1YCeWzoTpFlLU8prffN_fyXw_c9Q=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111996053863705533304?hl=en",
+          "reviewerNumberOfReviews": 62,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Thomas Aiello",
+          "rating": 4,
+          "text": "",
+          "date": "2025-07-20T12:20:21.030Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT20wMlkxTkthbXczVGxvd1RpMDBTekpPTTFGdVZHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWbwJkVb1IV2Q9b8DM3ibX6cDK8vBDs7d6c0Qzd7OrNexIbUfM1=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117022804009366330634?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sonia Morales",
+          "rating": 5,
+          "text": "Many great options on the menu.  Fast service.",
+          "date": "2025-07-19T19:14:24.062Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pkWFNtbEZWVzlvY2tKVGNWWldMVVZwYjB0QlRGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ7kpbYJhwfSu1QdnLo2E90EiRzje97KGmhcL7Cuk0tX2CrIA=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107837949578733478293?hl=en",
+          "reviewerNumberOfReviews": 38,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sudhir Chadaga",
+          "rating": 4,
+          "text": "",
+          "date": "2025-07-19T13:44:15.937Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xCbE1rVTJia1pNWkRsbllrOXFabVkyTkc5cmMyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJUEUR06vbYIbI6Iv5xWf1G9gLZVccGDzbVOY2fE8wx9eAqRCVs=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112814618732176170832?hl=en",
+          "reviewerNumberOfReviews": 15,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Rachel McClintock",
+          "rating": 5,
+          "text": "Incredibly good food, so surprising, especially the hash browns- life changing. Great, friendly,  quick service. 100% would go back.",
+          "date": "2025-07-19T05:31:07.307Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT201RVIwMWlhRTVXTUhWdGJVb3hjWGRaVEV4WWFsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVmTLMDJrUm9qzNfT6EqMZ0wWtvCcRjCtFhzWxCH0ZYSNWjd1Qa_w=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100136987577402738387?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Raymond Brunet",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-19T02:45:57.743Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xSRGJEQmhNV2MyWkVkd1RFbDBMV2cxWW5WdGJWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKSk42xy_0FMaY9NYqe0eXb4KhCy7uFB4Eye0ocrc8lyDK6vw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118410909034651432596?hl=en",
+          "reviewerNumberOfReviews": 70,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Stephen Weise",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-18T22:58:49.109Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xsbVVsaFlkbGRRUm1wZk5UbDZhblpuTlUxV04yYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ3KfzqFBTyliQNtMpmxik6vp9lQ6XxlCy-N6Ye4ssC_w44qg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110011149689893214201?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Camilo Perdomo",
+          "rating": 4,
+          "text": "",
+          "date": "2025-07-18T19:05:42.527Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tzM1ptUlRTSE5mVEVwU1ZVWjJja1YwYkRCcE5rRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXLoJA1LVcEKCDdiOz9utE6OM-s7GrAAFHnUnRLw1UUjeZmkIGJrg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105488773508090804178?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "yenni c",
+          "rating": 1,
+          "text": "Im gluten free went in (first time) super excited to have some lunch on my break (from my service job) I'm not sure what about me made the hostess uncomfortable but she said there was no seating at the bar although there were 3 available that simply needed bussing. I would have happily waited a few minutes for that. She also said there were no tables available, and didn't even ask if I would like to order to go. I kindly asked for a menu and she seemed bothered by that. As she handed me a menu a couple came in with no reservations and she lead them to a table. This interaction made me feel really unwelcome it was my very rude and unpleasant. When all I was trying to do was come on and peacefully enjoy (and pay for) a delicious gluten free. As a service worker I always tip well in appreciation of being treated like a human being.\nI can't see myself going there or recommending this restaurant.",
+          "date": "2025-07-17T17:07:08.981Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21aWGQzaFdNM0JYVVZWUGJrNXZaM0JFVEY5aE1VRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIMqPKZvsGmzDKL_d6ZanoZOL-MaFOk9T5Tf5XKm35rDF4uGQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116074420968132878070?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Ankush Joshi",
+          "rating": 5,
+          "text": "Nice, good, whole day breakfast, good quality. They are at a good spot.\n\nLiked it",
+          "date": "2025-07-17T15:55:05.154Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pac1ZrcHdkWFJCZVV0ZmFWWkVSa0Z5UzFOTlRVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUsFZ3RGqNK-CIc2EOu1brkG6hpxOMHrtOr3trU5x4rt3Sdjfth=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110472539850957763554?hl=en",
+          "reviewerNumberOfReviews": 247,
+          "sentiment": "positive"
+        },
+        {
+          "author": "gregg lowley",
+          "rating": 5,
+          "text": "Most of the menu is available gluten free, plus they have gluten free beer! The spicy tuna crispy rice was excellent! Also had my first NY cheesecake (GF) in years!",
+          "date": "2025-07-15T23:50:28.472Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tsSGFVWmFZbDlGUjJGSlRXOXFZV3d0TTJ4VE4zYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU2-7R--7wL__33BOxC81S-_5r493c3_kY_okiW0BWpH_zyuryK=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110336047297791242076?hl=en",
+          "reviewerNumberOfReviews": 17,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Qita Mamacita",
+          "rating": 4,
+          "text": "I have eaten at Friedmans before but a different location in Manhattan. The portions are really great and value where the cost as well. Would give this a 8 out of 10.",
+          "date": "2025-07-12T22:54:17.040Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2w5ZlMxOVdhWEZSY0doNFkwSmhlbVJQU201TU5VRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV_yd1bKsi-VrXEU47iSHIj0MV7uPMVReo7ZprX4VesQC81KJXoNA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108900048613351554583?hl=en",
+          "reviewerNumberOfReviews": 52,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Veronica Bean",
+          "rating": 5,
+          "text": "Can't go wrong here, quinoa bowl and the grilled cheese never fails. Luis is our #1 guy, he takes care of everyone like they're family and it goes such a long way. It's why we keep coming back!",
+          "date": "2025-07-11T00:13:06.148Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURxeUtpR3F3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXMlF67BNVyKvDNWZLUJVXC51YuXy5nu3MLPsYQTks9J9jdiIc2=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101549452558532711964?hl=en",
+          "reviewerNumberOfReviews": 154,
+          "sentiment": "positive"
+        }
+      ],
+      "customerMoodAnalysis": {
+        "overallMood": "delighted",
+        "sentimentSummary": "Customers are genuinely thrilled with their experience. With an average 4.5/5 rating across 100 recent reviews, your restaurant consistently exceeds expectations.",
+        "sentimentDistribution": {
+          "ecstatic": 11,
+          "delighted": 65,
+          "satisfied": 20,
+          "neutral": 0,
+          "frustrated": 0,
+          "disappointed": 3,
+          "angry": 1
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "food quality",
+            "mentions": 39
+          },
+          {
+            "theme": "service excellence",
+            "mentions": 16
+          },
+          {
+            "theme": "speed of service",
+            "mentions": 16
+          },
+          {
+            "theme": "slow service",
+            "mentions": 13
+          },
+          {
+            "theme": "atmosphere",
+            "mentions": 9
+          },
+          {
+            "theme": "overpriced",
+            "mentions": 5
+          },
+          {
+            "theme": "cleanliness",
+            "mentions": 2
+          },
+          {
+            "theme": "food issues",
+            "mentions": 2
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 17,
+          "satisfaction": 67,
+          "disappointment": 2,
+          "frustration": 1,
+          "anger": 0
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "Customers love the wide variety of gluten-free options, which are safe for those with Celiac Disease and include extraordinary items like gluten-free waffles and chocolate chip cookies. - social media marketing can showcase this strength",
+            "The atmosphere and ambiance are consistently praised, with mentions of a great vibe and a chilled experience at different locations. - SEO services can leverage this for better visibility",
+            "The service is frequently highlighted as excellent, with attentive and kind staff making dining experiences enjoyable and memorable. - review management can highlight this positive aspect"
+          ],
+          "improvementOpportunities": [
+            "Negative reviews and reputation issues regarding food quality and staff interactions - review management can address this concern",
+            "Lack of memorable dining experience and ambiance concerns - social media marketing can improve this area",
+            "Competition and discovery issues, particularly with nearby restaurants like Tick Tock Diner - SEO services can solve this visibility issue"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 100,
+          "averageRating": 4.5,
+          "ratingDistribution": {
+            "1": 4,
+            "2": 0,
+            "3": 8,
+            "4": 17,
+            "5": 71
+          },
+          "sentimentTrends": {
+            "trend": "stable",
+            "recentAverageRating": 4.6,
+            "previousAverageRating": 4.5,
+            "recentReviewsCount": 10
+          }
+        }
+      },
+      "examples": {
+        "positive": [
+          {
+            "author": "Arien Gray",
+            "rating": 5,
+            "text": "",
+            "date": "2025-09-15T00:04:51.995Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2paaGRqRTVSMjlHYmtSb2FHNHhPVVJIWkc5YVFYYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLdiEEa8TkYdP1I7-q2lKMu5MpZWU0OV5o4LXDqY6F8dabYMA=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/100165182667967272620?hl=en",
+            "reviewerNumberOfReviews": 20
+          },
+          {
+            "author": "Sartori Corporation",
+            "rating": 5,
+            "text": "Everything was SO delicious. The location is great, the food is absolutely delicious and the workers are very kind.\nI am gonna back for sure!",
+            "date": "2025-09-14T23:22:15.885Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21GVWVFdDBUWGN4ZGxoM2JWWklWV3QyTlRKTldYYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLPpKpgZmFeibyYcPy2CVBCfUEPZWd3GFZAUDMX2T7ZIB1gIQ=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/112265227269663146259?hl=en",
+            "reviewerNumberOfReviews": 1
+          },
+          {
+            "author": "Brittney Lytle",
+            "rating": 5,
+            "text": "Lots of gf options. Safe for Celiac Disease folks. Food was great!",
+            "date": "2025-09-14T19:09:52.566Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pkR2JHWkNMVlpPVGxkVVVFVk9TMnBWZGtKalYwRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV9RJNVDYmxggubD1OVs6Jg5bketloAGue6h9hRMDOT5Lq-vDx5=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/115965149018047962768?hl=en",
+            "reviewerNumberOfReviews": 49
+          }
+        ],
+        "neutral": [
+          {
+            "author": "Plastic Candy",
+            "rating": 3,
+            "text": "",
+            "date": "2025-09-11T00:03:25.333Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xwYVMyaEphRTlqVm10TVJERlZiWEpTYm5kTGMxRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX8q0ZK5E-bgWyPq3UguRismuC0JO4Mz601s80THPj0FsjlCNxF=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/109031875074402821997?hl=en",
+            "reviewerNumberOfReviews": 5
+          },
+          {
+            "author": "Kimberly Clarke",
+            "rating": 3,
+            "text": "I was not impressed by the food or the staff.\nMy daughter's pancake was very cakey-doughy, too thick , and my hashbrowns were watery,  when I told them they ignored my complaint and basically blamed us for not saying anything before. Mind you my daughter only ate quarter of the pancake and I left the hashbrown for them to see. The asked for over hard eggs and the were half runny. Bacon was good. I would not go back.. I found way better breakfast at Tick Tock diner down the street..",
+            "date": "2025-08-18T16:06:00.442Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tOSmExUTJPRWhpVVZWV016Uk1TVFp0Y0dwak1IYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLGUDVShZnOfTlr8moMWirnCzoJL2R4l-74ZaZKxE9Hm-xlHA=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/113243347711803760606?hl=en",
+            "reviewerNumberOfReviews": 16
+          },
+          {
+            "author": "Alejandro Sueldo",
+            "rating": 3,
+            "text": "Friedman’s: Brunch Without the Buzz\n\nStopped into Friedman’s in Hell’s Kitchen for a Friday morning brunch, and while the space wasn’t crowded, the service stood out—warm, attentive, and quick to check in. We ordered the chicken chilaquiles, a breakfast burrito, and a side of tomato bisque. Everything arrived fresh and as described, but the flavors didn’t spark much excitement. The food felt more functional than memorable, leaning into consistency rather than creativity.\n\nGiven Friedman’s reputation and the buzz around its various locations, I expected something with a little more personality—something that would make it feel worth the hype. Instead, the experience felt more like a polished franchise than a neighborhood gem. Reliable? Absolutely. Special? Not so much.\n\nA good stop if you’re in the area and need a comfortable brunch option with solid service, but don’t expect it to linger in your memory after the meal.\n\n#HellsKitchenEats #NYCBrunch #FriedmansNYC #FoodReview",
+            "date": "2025-08-16T23:03:14.133Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21sMGFVdHBNVTlWVEdKTlpEZG1UbDh4WDJKdFUzYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLmQ7cfLkYJxWpLnD3w_cP7QnipjtJx09_AIbQzNhAR1gtBhLQ=s1920-c-rp-mo-ba4-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/107563148895134409684?hl=en",
+            "reviewerNumberOfReviews": 42
+          }
+        ],
+        "negative": [
+          {
+            "author": "Jesse Shaffer",
+            "rating": 1,
+            "text": "The \"famous\" french dip was a massive let down. Do yourself a favor and head to Salt Hank's. The roast beef sandwich was flavorless and dry, way too much unrendered fat. Worse than that - the au jus is bland in a criminal way. It tasted like high school cafeteria grade food. I will say the texture of the fries were really good - but they arrived at the table with half of the basket cold. I was a little shocked by the experience for a place that was absolutely packed for lunch. It's impressive to be served cold fries that were that crunchy, still. Despite that, 10/10 will not go back.",
+            "date": "2025-08-27T19:47:43.553Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25SVlJrTTFVa1pTZEUxSVlWWllWR2xPVERoRVNFRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLYiwEy7KS4vSr-67xV8RJ5ZaV4RfjLUxwHKpICPuTOn3W_6w=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/102329481545762863558?hl=en",
+            "reviewerNumberOfReviews": 18
+          },
+          {
+            "author": "Mo Se",
+            "rating": 1,
+            "text": "very bad place I didn’t finish the pancakes they were dry they don’t provide enough sirup with it. The cup of tea was half empty. And the worst is when I finish my wife went to the toilet when I was waiting for her they don’t stop to come around removing things from the table, like to force you to get out we don’t do that wait the the client pay leave the table and you start to remove things. totally disrespectful staff. Hate it people who give good note are not truly honest.",
+            "date": "2025-08-24T15:42:40.593Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25OU1NYaE5OVUU1TUdScll6RXhlR2RwUkMxVVRFRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVgFFeWA01iByMf8l3pIXkHyOuv8dJAboAblYLjd30p5U70n92L=s1920-c-rp-mo-ba3-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/105410435505712621832?hl=en",
+            "reviewerNumberOfReviews": 33
+          },
+          {
+            "author": "Helen Amador",
+            "rating": 1,
+            "text": "",
+            "date": "2025-07-26T19:02:37.812Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25nMVl6UmpNRXQyUkhSMlJtSlNNbnBJUjBwbU1sRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWWx5HtHtyv1Wy1DiFrOsSKEF6kDwBejBH8Xt-heSFhO_JQeb6v=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/102505418850077984324?hl=en",
+            "reviewerNumberOfReviews": 1
+          }
+        ]
+      },
+      "trends": {
+        "ratingTrend": "stable",
+        "volumeTrend": "stable",
+        "responseRate": 0,
+        "averageResponseTime": "No responses"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ]
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/friedmans",
+      "instagram": "https://www.instagram.com/friedmans",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 58,
+      "social": 100,
+      "local": 43,
+      "reviews": 91,
+      "overall": 73
+    },
+    "originalScores": {
+      "seo": 70,
+      "overallScore": 67,
+      "performance": 70,
+      "userExperience": 60
+    },
+    "migratedAt": "2025-09-16T00:37:21.447Z"
+  },
+  "metadata": {
+    "cachedAt": "2025-09-15T10:19:34.882Z",
+    "expiresAt": "2025-10-15T10:19:34.882Z",
+    "placeId": "ChIJUQz7Iq9ZwokR9GUmlcrIeGs",
+    "restaurantName": "Friedman's",
+    "cacheVersion": "2.0.0"
+  }
+}

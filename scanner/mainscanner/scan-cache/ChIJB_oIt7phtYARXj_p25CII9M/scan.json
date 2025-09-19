@@ -1,0 +1,2711 @@
+{
+  "data": {
+    "domain": "thehubpizza.com",
+    "restaurantName": "The Hub Pizza Co.",
+    "placeId": "ChIJB_oIt7phtYARXj_p25CII9M",
+    "overallScore": 84,
+    "performance": 100,
+    "seo": 63,
+    "mobile": 60,
+    "userExperience": 96,
+    "issues": [
+      {
+        "type": "seo",
+        "severity": "critical",
+        "title": "🎯 Missing in Action: Zero SEO Strategy",
+        "description": "Your restaurant is invisible to potential customers searching online. No keyword optimization detected.",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "🔍",
+        "color": "orange",
+        "urgency": "high",
+        "businessImpact": "Missing out on 70% of customers who search online before visiting"
+      },
+      {
+        "type": "mobile",
+        "severity": "critical",
+        "title": "📱 Mobile Disaster: Customers Can't Order",
+        "description": "Mobile performance data unavailable - API configuration required",
+        "impact": "high",
+        "effort": "medium",
+        "icon": "📱",
+        "color": "red",
+        "urgency": "immediate",
+        "businessImpact": "60% of restaurant orders come from mobile - this is costing you sales"
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Improve website performance",
+        "description": "Improve website performance",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "technical"
+      },
+      {
+        "title": "Enhance social media presence",
+        "description": "Enhance social media presence",
+        "impact": "medium",
+        "effort": "medium",
+        "category": "marketing"
+      }
+    ],
+    "keywords": [],
+    "competitiveOpportunityKeywords": [
+      {
+        "keyword": "pizza near me",
+        "position": 0,
+        "searchVolume": 1600,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery Cedar City",
+        "position": 5,
+        "searchVolume": 110,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://thehubpizza.com/",
+        "title": "The Hub Pizza Co. - The Hub Pizza",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "best pizza Cedar City",
+        "position": 5,
+        "searchVolume": 20,
+        "difficulty": 0,
+        "intent": "commercial",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://thehubpizza.com/",
+        "title": "The Hub Pizza Co. - The Hub Pizza",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza",
+        "position": 0,
+        "searchVolume": 1600,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza places near me",
+        "position": 0,
+        "searchVolume": 90,
+        "difficulty": 0,
+        "intent": "local",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza Cedar City Utah",
+        "position": 6,
+        "searchVolume": 720,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": "https://thehubpizza.com/",
+        "title": "The Hub Pizza Co. - The Hub Pizza",
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza delivery near me",
+        "position": 0,
+        "searchVolume": 170,
+        "difficulty": 0,
+        "intent": "transactional",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      },
+      {
+        "keyword": "pizza open now",
+        "position": 0,
+        "searchVolume": 10,
+        "difficulty": 0,
+        "intent": "navigational",
+        "cpc": 0,
+        "competition": 0,
+        "opportunity": 75,
+        "url": null,
+        "title": null,
+        "description": null,
+        "isNew": null,
+        "isLost": null,
+        "positionChange": null,
+        "previousPosition": null
+      }
+    ],
+    "enhancedKeywordDiscovery": [],
+    "competitiveGaps": [],
+    "keywordAnalysis": {
+      "targetKeywords": [],
+      "rankingPositions": [],
+      "searchVolumes": {},
+      "opportunities": [
+        "Competitors rank higher for delivery keywords",
+        "Missing from \"best restaurant\" searches"
+      ]
+    },
+    "domainRankedKeywords": [],
+    "localCompetitorData": [],
+    "localPackReport": {
+      "summary": {
+        "visibility_score": 75,
+        "keywords_appeared": 6,
+        "total_keywords": 8,
+        "average_position": 4,
+        "best_position": 3
+      },
+      "keyword_results": [
+        {
+          "keyword": "pizza near me",
+          "found": true,
+          "position": 4,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "The Hub Pizza Co.",
+            "address": "Cedar City, UT ",
+            "website": "http://thehubpizza.com/",
+            "phone": "(435) 263-0120",
+            "rating": 4.7,
+            "reviews": 617
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Centro Woodfired Pizzeria",
+              "address": "Cedar City, UT ",
+              "website": "http://centropizzeria.com/",
+              "rating": 4.7,
+              "reviews": 3200
+            },
+            {
+              "position": 2,
+              "name": "The Pizza Factory",
+              "address": "Cedar City, UT ",
+              "website": "http://pizzafactorycedarcity.com/",
+              "rating": 4.2,
+              "reviews": 1000
+            },
+            {
+              "position": 3,
+              "name": "The Pizza Cart",
+              "address": "Cedar City, UT ",
+              "website": "http://cedarcitypizzacart.com/",
+              "rating": 4.8,
+              "reviews": 1600
+            }
+          ]
+        },
+        {
+          "keyword": "pizza",
+          "found": true,
+          "position": 5,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "The Hub Pizza Co.",
+            "address": "Cedar City, UT ",
+            "website": "http://thehubpizza.com/",
+            "phone": "(435) 263-0120",
+            "rating": 4.7,
+            "reviews": 617
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Centro Woodfired Pizzeria",
+              "address": "Cedar City, UT ",
+              "website": "http://centropizzeria.com/",
+              "rating": 4.7,
+              "reviews": 3200
+            },
+            {
+              "position": 2,
+              "name": "The Pizza Factory",
+              "address": "Cedar City, UT ",
+              "website": "http://pizzafactorycedarcity.com/",
+              "rating": 4.2,
+              "reviews": 1000
+            },
+            {
+              "position": 3,
+              "name": "The Pizza Cart",
+              "address": "Cedar City, UT ",
+              "website": "http://cedarcitypizzacart.com/",
+              "rating": 4.8,
+              "reviews": 1600
+            }
+          ]
+        },
+        {
+          "keyword": "best pizza Cedar City",
+          "found": true,
+          "position": 3,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "The Hub Pizza Co.",
+            "address": "Cedar City, UT ",
+            "website": "http://thehubpizza.com/",
+            "phone": "(435) 263-0120",
+            "rating": 4.7,
+            "reviews": 617
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Centro Woodfired Pizzeria",
+              "address": "Cedar City, UT ",
+              "website": "http://centropizzeria.com/",
+              "rating": 4.7,
+              "reviews": 3200
+            },
+            {
+              "position": 2,
+              "name": "The Pizza Cart",
+              "address": "Cedar City, UT ",
+              "website": "http://cedarcitypizzacart.com/",
+              "rating": 4.8,
+              "reviews": 1600
+            }
+          ]
+        },
+        {
+          "keyword": "pizza delivery near me",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": []
+        },
+        {
+          "keyword": "pizza Cedar City Utah",
+          "found": true,
+          "position": 5,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "The Hub Pizza Co.",
+            "address": "Cedar City, UT ",
+            "website": "http://thehubpizza.com/",
+            "phone": "(435) 263-0120",
+            "rating": 4.7,
+            "reviews": 617
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Centro Woodfired Pizzeria",
+              "address": "Cedar City, UT ",
+              "website": "http://centropizzeria.com/",
+              "rating": 4.7,
+              "reviews": 3200
+            },
+            {
+              "position": 2,
+              "name": "The Pizza Cart",
+              "address": "Cedar City, UT ",
+              "website": "http://cedarcitypizzacart.com/",
+              "rating": 4.8,
+              "reviews": 1600
+            },
+            {
+              "position": 3,
+              "name": "Craigo's Pizza Take & Bake",
+              "address": "Cedar City, UT ",
+              "website": "",
+              "rating": 4.6,
+              "reviews": 26
+            }
+          ]
+        },
+        {
+          "keyword": "top pizza Cedar City",
+          "found": true,
+          "position": 3,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "The Hub Pizza Co.",
+            "address": "Cedar City, UT ",
+            "website": "http://thehubpizza.com/",
+            "phone": "(435) 263-0120",
+            "rating": 4.7,
+            "reviews": 617
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Centro Woodfired Pizzeria",
+              "address": "Cedar City, UT ",
+              "website": "http://centropizzeria.com/",
+              "rating": 4.7,
+              "reviews": 3200
+            },
+            {
+              "position": 2,
+              "name": "The Pizza Cart",
+              "address": "Cedar City, UT ",
+              "website": "http://cedarcitypizzacart.com/",
+              "rating": 4.8,
+              "reviews": 1600
+            }
+          ]
+        },
+        {
+          "keyword": "pizza restaurant near me",
+          "found": true,
+          "position": 4,
+          "confidence": 100,
+          "matched_fields": [
+            "title",
+            "url"
+          ],
+          "local_pack_data": {
+            "name": "The Hub Pizza Co.",
+            "address": "Cedar City, UT ",
+            "website": "http://thehubpizza.com/",
+            "phone": "(435) 263-0120",
+            "rating": 4.7,
+            "reviews": 617
+          },
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Centro Woodfired Pizzeria",
+              "address": "Cedar City, UT ",
+              "website": "http://centropizzeria.com/",
+              "rating": 4.7,
+              "reviews": 3200
+            },
+            {
+              "position": 2,
+              "name": "The Pizza Factory",
+              "address": "Cedar City, UT ",
+              "website": "http://pizzafactorycedarcity.com/",
+              "rating": 4.2,
+              "reviews": 1000
+            },
+            {
+              "position": 3,
+              "name": "The Pizza Cart",
+              "address": "Cedar City, UT ",
+              "website": "http://cedarcitypizzacart.com/",
+              "rating": 4.8,
+              "reviews": 1600
+            }
+          ]
+        },
+        {
+          "keyword": "pizza food Cedar City",
+          "found": false,
+          "confidence": 0,
+          "matched_fields": [],
+          "competitors": [
+            {
+              "position": 1,
+              "name": "Centro Woodfired Pizzeria",
+              "address": "Cedar City, UT ",
+              "website": "http://centropizzeria.com/",
+              "rating": 4.7,
+              "reviews": 3200
+            },
+            {
+              "position": 2,
+              "name": "Craigo's Pizza Take & Bake",
+              "address": "Cedar City, UT ",
+              "website": "",
+              "rating": 4.6,
+              "reviews": 26
+            },
+            {
+              "position": 3,
+              "name": "The Pizza Cart",
+              "address": "Cedar City, UT ",
+              "website": "http://cedarcitypizzacart.com/",
+              "rating": 4.8,
+              "reviews": 1600
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        "Not appearing for \"pizza delivery near me\", \"pizza food Cedar City\" - optimize Google My Business profile with these keywords",
+        "Ranking below #1 for 6 keywords - increase customer reviews and engagement to improve rankings"
+      ],
+      "scan_metadata": {
+        "location": "Cedar City,Utah,United States",
+        "timestamp": "2025-09-15T06:12:24.141Z",
+        "total_scan_time_ms": 40976
+      }
+    },
+    "competitors": [
+      {
+        "name": "Bowman's Cowboy Kitchen",
+        "domain": "bowmanscowboykitchen.com",
+        "performance": 92,
+        "seo": 83,
+        "accessibility": 78,
+        "bestPractices": 87,
+        "overallScore": 85,
+        "rating": 4.6,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 1339,
+        "keywords": 36,
+        "domainAuthority": 85,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 884
+      },
+      {
+        "name": "The Pub Spirits + Craft Kitchen",
+        "domain": "thepubspiritscraftkitchen.com",
+        "performance": 92,
+        "seo": 83,
+        "accessibility": 78,
+        "bestPractices": 87,
+        "overallScore": 85,
+        "rating": 4.6,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 710,
+        "keywords": 30,
+        "domainAuthority": 84,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 840
+      },
+      {
+        "name": "Red Fort Cuisine of India",
+        "domain": "redfortcuisineofindia.com",
+        "performance": 100,
+        "seo": 90,
+        "accessibility": 85,
+        "bestPractices": 95,
+        "overallScore": 93,
+        "rating": 5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 730,
+        "keywords": 47,
+        "domainAuthority": 95,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "+150 keywords",
+        "authorityGap": 4,
+        "backlinks": 895
+      },
+      {
+        "name": "Rusty's Ranch House",
+        "domain": "rustysranchhouse.com",
+        "performance": 90,
+        "seo": 81,
+        "accessibility": 77,
+        "bestPractices": 86,
+        "overallScore": 83,
+        "rating": 4.5,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 876,
+        "keywords": 61,
+        "domainAuthority": 75,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 909
+      },
+      {
+        "name": "Amber Kay's Cafe",
+        "domain": "amberkayscafe.com",
+        "performance": 92,
+        "seo": 83,
+        "accessibility": 78,
+        "bestPractices": 87,
+        "overallScore": 85,
+        "rating": 4.6,
+        "totalReviews": 0,
+        "photos": {
+          "total": 0,
+          "quality": "fair"
+        },
+        "responseRate": 30,
+        "isVerified": false,
+        "isYou": false,
+        "traffic": 519,
+        "keywords": 43,
+        "domainAuthority": 81,
+        "trafficAdvantage": "Similar traffic",
+        "keywordLead": "Similar keywords",
+        "authorityGap": 0,
+        "backlinks": 792
+      }
+    ],
+    "competitorIntelligence": {
+      "organicCompetitors": [],
+      "keywordGaps": [
+        "best pizza delivery",
+        "pizza restaurant online ordering"
+      ],
+      "trafficEstimates": []
+    },
+    "serpFeatures": [],
+    "domainAuthority": 78,
+    "screenshot": null,
+    "seoAnalysis": {
+      "title": "No title found",
+      "metaDescription": "No meta description found",
+      "h1Tags": [],
+      "imageCount": 0,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "schemaMarkup": false
+    },
+    "metrics": {
+      "fcp": 0,
+      "lcp": 0,
+      "cls": 0,
+      "fid": 0
+    },
+    "backlinks": 0,
+    "organicTraffic": 0,
+    "scanDate": "2025-09-15T06:13:21.982Z",
+    "businessProfile": {
+      "name": "The Hub Pizza Co.",
+      "address": "2002 N Main St #5, Cedar City, UT 84721, USA",
+      "rating": 4.7,
+      "reviewCount": 617,
+      "phoneNumber": "(435) 263-0120",
+      "website": "http://thehubpizza.com/",
+      "formatted_address": "2002 N Main St #5, Cedar City, UT 84721, USA",
+      "address_components": [
+        {
+          "long_name": "#5",
+          "short_name": "#5",
+          "types": [
+            "subpremise"
+          ]
+        },
+        {
+          "long_name": "2002",
+          "short_name": "2002",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "North Main Street",
+          "short_name": "N Main St",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Cedar City",
+          "short_name": "Cedar City",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Iron County",
+          "short_name": "Iron County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Utah",
+          "short_name": "UT",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "84721",
+          "short_name": "84721",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "state": "Utah",
+      "city": "Cedar City",
+      "place_id": "ChIJB_oIt7phtYARXj_p25CII9M",
+      "business_status": "OPERATIONAL",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "reviews": [
+        {
+          "author_name": "Sarah CJ Pugh Fairchild",
+          "author_url": "https://www.google.com/maps/contrib/109047813455088085114/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWU6LGzV0PZqY8R2aOCqB6bF790uyLvB6Z7GhLTTrzfqs5-nFPA=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a week ago",
+          "text": "This place was a fun mini-New York. The workers were so helpful. The person that took our order was so patient while we decided what to get. We ended up getting the Friday special (build your own: Alfredo, spinach, chicken, mushrooms, and red onion). The worker was so nice to let me video the dough toss.  We eat pizza the night before every race. This was race #9 for us, and we both agree that this was the best pizza so far.",
+          "time": 1757114225,
+          "translated": false
+        },
+        {
+          "author_name": "DirtyDave82",
+          "author_url": "https://www.google.com/maps/contrib/114246445131496496605/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWybx6KBegCiYFEQWvGKepnTP-qfklBO6A1cuiYWhlr-jhzVrF-=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "6 months ago",
+          "text": "Probably the best pizza I’ve ever had in my life! I got the Jalapeno popper pizza with added sausage and mushrooms. It had so much flavor and was absolutely delicious. I ordered on the toast app and it was ready within 30 minutes. The service was super friendly while picking up the food. I will definitely be back! My original review was 5 stars but after reviewing my order, I ordered green olives which were not there, and I paid extra for,  and square cut which it was triangle cut to 10 pieces.",
+          "time": 1741959227,
+          "translated": false
+        },
+        {
+          "author_name": "Olivia Williams",
+          "author_url": "https://www.google.com/maps/contrib/110582911801842941182/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU3KiZgRDz1EJaFGl0-8LeWPTiF41fxBn6X7xpJ2KDZYnyhoryA0A=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "4 months ago",
+          "text": "This pizza location is the best in Southern Utah! It’s one of our favorites places to go with family and friends to enjoy some delicious pizza. Jancey’s jalapeño popper pizza will change your world! The best is the cheesy cow pie - it’s worth every bite especially when it’s not cut! Thank you for serving our community!",
+          "time": 1745007245,
+          "translated": false
+        },
+        {
+          "author_name": "Marisa Patch Sanderson",
+          "author_url": "https://www.google.com/maps/contrib/103852359498302435193/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV5phpEJuc8ygMbbFoeI9mg5sPbNjT9NvJ9G5lDVwVzv3G02O5q=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "2 months ago",
+          "text": "Great pizza, love the high quality, fresh toppings, delicious light and crispy crust with extra Parmesan on it. Toys to play with for kids while we waited, and very professional staff. We love going to The Hub! It’s a treat!",
+          "time": 1750977551,
+          "translated": false
+        },
+        {
+          "author_name": "Regina Chandler",
+          "author_url": "https://www.google.com/maps/contrib/109957082135572474782/reviews",
+          "language": "en",
+          "original_language": "en",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVZIssEjkenivXheqtIGeVD9NIsNKcOBWO221zw_QdZRke8UUr6pA=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "a month ago",
+          "text": "I work out on HWY 56 and most businesses won't deliver out here.  I thought my only choice was DD, but hen I called they were super kind and with a small delivery fee they were happy to deliver our order to us.  THANK YOU!  We ordered 4 different pizzas, and I'm just a huge fan of their sweet dough crust.  I love how huge their toppings are, and the sauce balanced out very well on each pie.  Will definitely be calling them again!!",
+          "time": 1753905738,
+          "translated": false
+        }
+      ],
+      "photos": [
+        {
+          "height": 2947,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103260626935025971523\">The Hub Pizza Co.</a>"
+          ],
+          "photo_reference": "ATKogpdgdSnjPWUSyPWnSCvoaqCdL3fls1J9vZPhpnrubHeXpduLUc4zDKScDTEydPWWfCvayUxmcAPf-6tDvaIzREYeRMt4krJBd414q1VtsTS7Z7cMPUtSGJ5NLqbs6PEDg1jc4QYbFzhDq11UOncf9Et3BtPVWRLGJWTlZQQ6rho61VhDy9SDj_m8Lh5K6SJEkVw2eLwOgv_3bF_MWLRSQsujzQFF39WoBqAW71HYDMg4ITfqtDV9HGtFn8Xx64bWjcKblq60QzyM4po_0serKHvm2EkzSWhT-x1SyvFFWIRyaQ",
+          "width": 3929
+        },
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103260626935025971523\">The Hub Pizza Co.</a>"
+          ],
+          "photo_reference": "ATKogpe9lxgYzOR6FUkA8qyGJb000NUZQHeDAT3v_spvjqcdc1RXB7ZOEGhzswWRjT9Ce1hqRVtpr_dkHP8MdY5ipbyXBv4WJXM1msj2IZFKdrU27iGUq7pZHlYoumSaMMobwKPC0g8gCRGy9DyQfgHQhugsi1PtjbQKBn9Q5HMgDlE7DLplfWBrmqE0EwCxY7_dDD_sEOhaBJ_MEgDH0udtHcp8G-uUJDL2e6m1omjEjLdfVRpIldTXiRPIdiN3gKaahqrdUpgJEzQdaDTTEN97-5rjP0RXc6N_QV_DB7I5iWAAnA",
+          "width": 4800
+        },
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103260626935025971523\">The Hub Pizza Co.</a>"
+          ],
+          "photo_reference": "ATKogpf-iCl76W-iwBXtvGa7GEmIjQzKxQJc7uptPFzJ6O00Vp3e8AbkZz-_h7ZZwNaDb-ltVVnpUq4HGgcNusCcXgJ_tyAwiCCeEklRnnH6VHmq65cLvvc87ZpiMG92syxXYN-G8ia0q8a2a3eN2K_RslGKaAHuakc5ppfLKSfIpIVerhAdQXmVQVQyNprVqHoWBPyYPtItrlPYQZOKE-MTxAhPWoakPeTZTgU5eLxIaqOWKHoMOrRb82BRV4kW8go5e5ObvhNI_LT0y6Lj5tQMMYeIWjpgTt2GW0VV5MrN7hZF2Q",
+          "width": 4800
+        },
+        {
+          "height": 2268,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117107583421429081208\">The offgrid Travelers</a>"
+          ],
+          "photo_reference": "ATKogpfy6d93zDCCyjWMupsDa1A2EVZoMVjcOFdEwKmRgtoYQIzCACgXY-QF0YtzbpourXKPu2R_w-sGYl5ovjLhULUf4uqp_PUANSK8Dl27Sn6E75kYeJa5vmQ57yYL4npF7VPepo2DFB127uGLq7s7tE5z8xvbFtOKV2jYw3GkLb4hPeblilRqhFAfUPrVelbl4Vlji8DtiLvi7uzXf7tHaWsTOghd4cRhLzz_ZPWDca3FDsNWAFRzAfQGMCtPMX3eAWuYettH0W3yx6xzY5I_4qfz1oZkhYLiUupBviqYNTOTNPvbbucERcKDC_3jeR9j-4zR7VeTB5mrKe1WywAQgBtL-xdXM-AgzpoWDZnzKAlXrUdw8Vrr6jaVx_iPm9bVZONN1HjOF5Z9E2TSXqMUGhqZKgxhxE_PSKmJeDy-U_iCotELLSqY0XQwSrMxYqrN",
+          "width": 4032
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109047813455088085114\">Sarah CJ Pugh Fairchild</a>"
+          ],
+          "photo_reference": "ATKogpc_aiANMfFQ8-rbxN0Tv6NRTS59z4Bzjp60X2a6ApLRw_IVQatf-0k_a2-u0uexp0WkG2HRqL4LgTSf9hf5n9oPrn9uMQmkoyaOFVRTsfISvNDX1uK3eth4a-q0Zxq96drACE_RWISNZxvjZuzZ0WOwVWU-9LgcK1Gn7NsZPBq5Ey8cb126Ap5DGDCkD3qQrIJpLitOoOIp2rHP6ZUuvWtqToya23xvYTU14Lqcn7OzCidrpt__WwhzKsoC96a_TNaTXaAQHR3S6u3tb74o3DPklQE74RX0TLSGapV2hRTK6CpVPQBiMYIfm5GMw-2bC-Z-MSelBPTIfT7MyEozyOSOFT_yWV8bk4vQKs8LQZszVqG6fpTmKaZS1FMF4x1xeq2PdFkCRJAN3CoNFR7mcIjrfSVR3bNYsqYmDkTEkU5pX19-flQ_15izkxj84EU7",
+          "width": 4032
+        },
+        {
+          "height": 4800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105372206804527670678\">Monica McGlochlin</a>"
+          ],
+          "photo_reference": "ATKogpfmNPRW7F9OaVaaXl6cfkBHsi5FnLPuKyV0oI7XvahYrU_zLoNS9uKIS75--iDbLAXdUXkihbpmMZir32u1uQiwdwxC_flydjNqI-8X9d6dmzg_Lt-nAvGhKJ2G2OHYabiPKTWH6itNpoQltyX39QOS0wJM_6F-RUMOQEoWY4Bzl6L6T5bXBzpXMesFhbGRxh9E3g541wEnLNgDtPswQWmW0qQqVDj1-1DHpLfUGXNpI7uCN9FzM3jYczPYEf213DC-5FKd-wOa56nrVPW7l80wFu0dGlfpmqbJoWizs1bwwEEl3KLxEAXVVBCKbqmzynsP8loEf1_YSD2NdMS7tcB6IWrL51eUzHymw-5kzkY6CAgugCPLPiJVmdY923_hlnMgiw6bSSaIN4M1pJD_XgBYOnpGCXStreJk_mjfT5rdZcjJO_-qgCjOVma8ZJck",
+          "width": 3600
+        },
+        {
+          "height": 1282,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103260626935025971523\">The Hub Pizza Co.</a>"
+          ],
+          "photo_reference": "ATKogpeVdX27mb0r-jiWHpOFAJJYHeYwoZGMR-6LbExAqkQ47Git-Rc2URxe86k85pllGUqjNvcy0Kr8-2RTmjN0ArvEKjN7-aKbq_l-IwTFZmZN2G69LVRB-nVLulS69BV3Eoz5mYoT4gC4tOVGslSjMyvWQtxlMc5ln8zrgWmFLmUZG-6_eto9kP0CViLH4JZBKb8mypYStjwpyh0-yJkd61L88B-Nk-mYMl-qrV-PmvXSQnsEEZzJCMa50DOdDe1_wDH918m8x-DIbb4Dnjp4fypJK6hF_z0CQPSJW4VcYqx8KQ",
+          "width": 1922
+        },
+        {
+          "height": 2947,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103260626935025971523\">The Hub Pizza Co.</a>"
+          ],
+          "photo_reference": "ATKogpf08warPBCfTHh3pUB5UO5d-SGVWQqb9mSd4GgkbGtxzaORSHg4FS4RWlZuOplfDh2jA6btRsBz0DPNKMHY9fmemtV7I3fMZXuZwY1h4UKp6HmF9XtAXfm3Veqa3NdmK5_IzNJaBIKUCc4h5RJ7Z-dECYmB8rPJYYvEDIs7wBYJSdEx79MnD-rUolULBKrbWfofMRwgGWpT7-F_52i9w5KE187l2zvpygutbiQe_SU6X-7vYdIDEKLCcWkL_Q0qIu0tUXiqzq97zwKsAhrewnBsVX7orRmqEmS0t5xFw-bzew",
+          "width": 3929
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/106828434718672059265\">Georgia Goodson</a>"
+          ],
+          "photo_reference": "ATKogpfb2qjtpNg8oMTzPKyhwfDKOfyQ_zAcjVMdp-yic_MKJKlyLeDa8QMLDNKb1Z2-wJh6e8FG-Q6VTpAcFwbtMD3nD4-PdpTurJsjsWDr0A9bK9NMaoDDOAEFqGK9LJyefjsPrEqydGIdS41JyyGhbn0ykt6g_WAjgG_DPlvP5y7XBkTmDl4bhTiWGut_Sd3fqxfmo7NHKZFu3YqGi0osMo0oi9obUPsIqiHs8MvXyB4-0SK_jnb2JGiRtvBJLugixeJL0CBR4Z-ax1hhqhVouba36yV8PqWTIcswZiJxcz_j1fNT6lppn8HL8tHKTe-Sole0rCka4FGx3BNEQ728Y6Dy0LRzP5OjGAgXn_JpRmg0g8jKLnMKx-WchzK4M9witHswLEFBDAtEPjsHSaqBXlxQLbnB2NikHc0fNWGtlXI1rg",
+          "width": 4032
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103852359498302435193\">Marisa Patch Sanderson</a>"
+          ],
+          "photo_reference": "ATKogpcixhu3JkJAfaak0bNb6mxuP3ZRIq7qgy4zKopKvJoKdDOAi64fajRIDEfVosv6sO50FxWazog4WcsTd1PegXxjb9LE-eWtRxPvi5FVIkhu3cP5zip_UCOXsY_Vg5ylifsYeD_8JdjWRP9Afwt6D2C5iOAHxNxdX5UMQpQ8t66uwCxG0lZnrSj2GNvnssjCayi385owLyjty7YFnGfX-JfBmvGIj3lBcdDNSqxhgEq5xryRGAEUZ88WdhB8zrBupTXLdotX6ukeDXnEZ6bL5TAl8OnyYtjElp5pTOs2rTOH-lrZzYWbpU7ph2GlvB6qkA-qvW49HDTHQtM2A4jTf_MbkvlUj1mnt5uc4Oald2Ez0Y7SgPPz7LzIwt9R1njciuQND-sxU3PNWWt_8uRz73jSh7kY5RwroYDTvRXhDMhMoM6ie_nK4lPYatrKR-7S",
+          "width": 3024
+        }
+      ],
+      "photoCount": 10,
+      "opening_hours": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 1,
+              "time": "2100"
+            },
+            "open": {
+              "day": 1,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2100"
+            },
+            "open": {
+              "day": 2,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2100"
+            },
+            "open": {
+              "day": 3,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2100"
+            },
+            "open": {
+              "day": 4,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2100"
+            },
+            "open": {
+              "day": 5,
+              "time": "1100"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2100"
+            },
+            "open": {
+              "day": 6,
+              "time": "1100"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 11:00 AM – 9:00 PM",
+          "Tuesday: 11:00 AM – 9:00 PM",
+          "Wednesday: 11:00 AM – 9:00 PM",
+          "Thursday: 11:00 AM – 9:00 PM",
+          "Friday: 11:00 AM – 9:00 PM",
+          "Saturday: 11:00 AM – 9:00 PM",
+          "Sunday: Closed"
+        ]
+      },
+      "price_level": 1,
+      "editorial_summary": null,
+      "url": "https://maps.google.com/?cid=15214154121933832030",
+      "social_media": null
+    },
+    "businessPhotos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpcmo5xD3IKKpT7337DvahsWaKVx_Oq-DfoobcjOUQG8EdOEyP5HA09UkJwgCn5Mpg1fx0ZShYtJ0KS0EERIWKSiBbcYozBqDgOMqw9ieWZVCxKEhSVyc6281fytNDTRRYqhde--d4EcdiGj2fcqKUPKFYPKQ5Mf_q2B2kckC1ir-ekExKRtyvH1qInDj7wWN8oarAlBpEVeEMoy2UfqQMQdsiAeU8V22yylZNQoNDPJrZd0RhnE8cJRJq0_sCXp5Zy64KAWh2wFWFG9czWH0conpG3Sxh22k2yekoQiLEc_ug&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpeywq1sDZeh2CxpVVIzb8xTkeDUkM7JK6ynEC1T1hyu3VJTYSThvnyRuNK20VvH52qPsRzr2geeosAzMhuaeBvG9BXKPn3jpN1JbP09uLF54JXaoO6nWY8xOl6TXe9n_Aj-yDuynl88kGYwoadw4sHzZp8t6hK2LMmyjrjELjKlkoadHvjTnhn98P_FIHxN1D9fww7bxboel7KCOdALplagsgwZnKX2bZXWFx__JtdsHT9WMyEZM9MHy87WpNhg9z9IIznLXyVaeGgN2I8VhsER5vJikS0RL3liX4cdXHH-_Q&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpd4Y8vfnYCbnrIJwASliFdBuX0Jol-Bqj0DWre-MKo4svCnRgxW1XTyqWdr69DDIsHzyyrDnWPgJHKJcV5iG9UC07hAfUVAoT6_lNY1_4sSgxBjhkjRW01PDX5Lxv5p3WhLwBcDnwc5hF4h6CJPGSOeaWUtjgVR3JGG076ewC515Wqe9FvOK4mu8CBD17OpCXd_BxGcofwLLmO9836AeD-IQsZ7OK8veTVIqEtHVR02g-mBSrggTL995Rr4Kw6-R1kH9_dmmpQbcXU9NBBne2mx53st-qk5WhgHQiKB4uXzSg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdudRe5UXu7HOIkmfDRKt6zFCnxPMINwAORiSp9FstxSur3r4ohXWGf5vC98TEaBb3EfTfrHo3cgBd-r4q5sbqeq8ORkEzeDSnn3zOJSvoI9QrBRwKQX412zurKFT6yl2Sp8ZYn9O-TqVyFUe2KAnbt-HxJSNOcUdroeBZCWndfNNF-DKDxrfZCMnPJu7CwbEV57GT9G1TTsA8MtVsjA9WkOre8VrXPxSHTEJ50FKUl2RScgo9QQiTK_MefD6k2NF8t7JhQvqqn7sOpy3byTispVui3MOo0-XlotQVNWbYoiHmrqNHwAf9QWox7Y6_tCAPovktUo750HWnHi7CGybhv9Eb0bISpQ55D1RY-F01G693TbQY5eUBymJJxfQ862htQbuFRV-HaQjSYPnHi5E75169rkjRU4o2TleKBuKHiAjgYm31qLVS75sdx-Isn&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdnr2No-fn2G-1bY0gRLHd6TVJ34u5BIGZ2aoOpAPpFrbhJiuOa7SE2NaG-ZpY33xm7V7X7Y1SCusc0in7YwicS4nFaWWcSRrRM5o3JGhqSwEbwjTWBTxieJtZSTpSBCbZZWO_5SgyxSITl7M_yvRHs7QXaRtz8iW2nFt900bcFtdqLmYXlKWWcFRgDjVRnCj8gLvfdOjPNb_UchFzHw1I6SL3ls9svjIp39n2uNxZzql8jkynhmYXxEuLdbPGY4aD7Lxco5Q-7Um5QtgaLNYjeUx3TJFO7ExjocLEjEmjbcM-7NvDil80ODGmgCfuFzntKQrQRC1ARB-r45pViQz6XKD732M_c1A9LsMswmHpYQY5J-rZt7lmOt-HVLeYiLDPraQrlGUnynD4J6vjbHOzHZAevLBMz9zf02C4wbR9wwTXBvWgEuX6Irniln0UA&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpckHm65yqA7ScvpxUTNlmXVi7j8wwhB9REk7HS9C8JrLcegBRu7STdnoNgCp2pqMOU9AnJdCreIGazW7rZsgDqniPXgem9YhsQaY2KNIhq5Np-ew-Fb5U8cQtsJbUotkN7JKdzPuQSxn7kGCC_nepiNf89v8eBHmK7ntz0gSz56wohJ51x2SqAjZR7v_riro4O63pw2JXaq_BqDHn6k9JlYqevZmny9xYEuTyB9OVto8XtcyaaPORU_s45p3e2EWC7SGkmtL42IiWvmZQu5NMx0RPd9mfVdQYaiP01AVCP5lScpB3eQzPk-Riy2gANdIa3shPDCr49a_AZ0F1YJrxGg6jA0zCr-LXRbuYQ5HvF5U0wj_FBQUwuiXf9-8avP_OGFHahXMO3utuILpYj-sgudhD7Zxzn15AtQ4EEs86UTuh5v2KT0V1LtW_htXUfj&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfPwQJ8dZq1oSMY59kSjm-I-cBFOc2D39KtycoKLjGRJi10zANxMI1Sas2pAwv5MdWErm8TwA1_l5hQZtIXolykHWHakjtaPDt4sXesnomIj-NZh0ja42QudMzuB6RUA-46z5Qx6sTJeACVN8LEexqDf5lS6JIuQQbf8nLQtaXwyRajhvaamZstDWvFX4LAlORX37ncpl4VxTpB50dQgYhe7dznDa8zn2u04P8f4phDDZ430pmugj6ph-M1fgR4BrOg5YLtYD_tDGIbTE8uDgm2nOVN_ngWcQtBxEyTuFG4Eg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpdjTO7MSl594HI7QftsUTB4RQ0lN6A3KTgple2i9HwzaFDtynYluccXX0EJJQPaSbjMqyrUki_8-Xd-TXOnFK4qNtO1Bj7R8IytuVHgo401MdAr7NJ5lu5j1iIuORI7wmqgfJqZ-wNXH6t4ZZ0bh4AtSgQFkpPRsUv0GrHGb6XiXTq3RIeFXwUABuU-_QW3DLUlt38JBLNCQIKgyUpKc2j6UdKbAPScsY6IXu0HKe24flieD_Jd3pWylG4-w7eje1YW8cKlzStsiKsYK3yQfjLhe0CfHvJoxmlAw0sqZzrVSQ&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpfO5QR9GYncPaISZK1xsQ7DdQZME1oiWt7dNdDyb-cYbklFedk8Ue1SKGDnDmnrar23AmBh-Wlwf5eEX7BcZY5Ps250QHjZ9V7OGXm92gmcObOZU83hbDyTLzNftT_oht6eVHNMpZQRbZVCixJplkkHMCC2CMjlRNaRKyM1_BgfTNpbZNxht03w661fo_52njSoNsmCr2cZggVyFULbAYAHqjgVUbU98QLngyYWmdwgb6lzCXIkRkDKtMES-yaAtpmbOlYcNcZ4B4Un9wxqs0Lnzl5a07vzZsukD5TLQ4Fc-myqAk2MGxtCwa28IeKZLz_LyQO8K7bbNj9yKayxjXPguLYn1B318ZLMumWPpyuB_xJ15Xl375_EWS-7gFkAn15bAE8-pt3rtNFPia2WZqA2g3BJtUdcPsst6HgXXcHhTg&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=ATKogpc8FD083aXgnV7q5krXZmQ_EoHoAASM5kUAj5765WulkFs_QLL8n1wyk06E-i-z77SbwGBxJifKspME6efa8FTc7L0gEpt9mav9SpU5sfhLRp9oK8VJ3XAktAESgufk-revSe2FC4zAuIDafH-I7rmzwZrRofUHD40wZlyW5fpRI3blY84UyBcDYpqnhQ0hp_0H2iS6SxtSlrfg9SZEaEgA__PObSRFo2RY28hQpQuhs8hy1iA6GMiNX2y7QPd6HClcZwA8yrDn8oXuuZuPEg3aju4i-zKDd0VTGub4mGfk4ZO4ogHiTS7rK3qyX2k5zIF-p7_fF-j3OijEUBmqlL3bHa8zK6UDmz2687kUx_YJ4s8NrhOdAYyAnQ9x_cw1hAE8pVIqT6Uv53I32JfSWGRwG2-079GrwF7CmNVAyD6wa2brpg7FpHXrcp56cK0q&key=AIzaSyADLqCeJAQo6qES8aNsfGH2n8fRjOAAMrQ"
+    ],
+    "mobileExperience": {
+      "score": 60,
+      "loadTime": 0,
+      "isResponsive": true,
+      "touchFriendly": true,
+      "textReadable": true,
+      "navigationEasy": false,
+      "issues": [
+        "Mobile performance data unavailable - API configuration required"
+      ],
+      "recommendations": [
+        "Configure Google PageSpeed Insights API for mobile analysis",
+        "Enable mobile performance monitoring",
+        "Test website on mobile devices manually"
+      ]
+    },
+    "reviewsAnalysis": {
+      "overallScore": 94,
+      "totalReviews": 617,
+      "averageRating": 4.7,
+      "sentimentBreakdown": {
+        "positive": 96,
+        "neutral": 1,
+        "negative": 3
+      },
+      "reviewSources": [
+        "Google Places API (Apify Enhanced)"
+      ],
+      "keyThemes": [
+        "Service",
+        "Location",
+        "Portion Size",
+        "Food Quality",
+        "Wait Time",
+        "Atmosphere",
+        "Pricing"
+      ],
+      "recentReviews": [
+        {
+          "rating": 5,
+          "text": "Great place",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Excellent service! I placed an order on the toast app and couldn't remember if I selected delivery,  I called and they were more than happy to help! It was for pick up and they changed it to delivery.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "Hit the spot! We’ll definitely be back soon!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "They are consistent with the pizza taste and quality",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 5,
+          "text": "This place was a fun mini-New York. The workers were so helpful. The person that took our order was so patient while we decided what to get. We ended up getting the Friday special (build your own: Alfredo, spinach, chicken, mushrooms, and red onion). The worker was so nice to let me video the dough toss.  We eat pizza the night before every race. This was race #9 for us, and we both agree that this was the best pizza so far.",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        },
+        {
+          "rating": 1,
+          "text": "I ain't going to any pizza joint located between a funeral home and a clinic!\nJust imagine what could be in that chunk o pizza!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "negative"
+        },
+        {
+          "rating": 5,
+          "text": "Some of the best pizza I’ve had, SO delicious!! The side salad was so good too! Perfect balance with pizza! Joshua was great at answering all my questions about the menu! Highly recommend!",
+          "platform": "Google Places (Apify)",
+          "sentiment": "positive"
+        }
+      ],
+      "detailedReviews": [
+        {
+          "author": "Greg Espinosa",
+          "rating": 5,
+          "text": "Great place",
+          "date": "2025-09-13T21:07:27.079Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pkU2NUUnFRalZMTVhOdVVGUTBRakZsWWpabFZsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLvKEcCNuG7kq3LGQCN_s6_W6XaZkmneThbJky3__6H96dg6Q=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102818137356765233910?hl=en",
+          "reviewerNumberOfReviews": 20,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mike Farr",
+          "rating": 5,
+          "text": "Excellent service! I placed an order on the toast app and couldn't remember if I selected delivery,  I called and they were more than happy to help! It was for pick up and they changed it to delivery.",
+          "date": "2025-09-13T01:31:11.562Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURIMnBuZW5BRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI9hAcQeOJOsnPatnPJFQdPlK4sfatxwc2Y5nETMhCEhEeQEA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105630498878359547197?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ty Palmer",
+          "rating": 5,
+          "text": "Hit the spot! We’ll definitely be back soon!",
+          "date": "2025-09-11T23:28:22.232Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2s1VVZFOU9NMjlqU1VOMmVtcGZjblUzUW5ZemJFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWghG2KqDdBy5O_yNcX-AxE-DRr6HRIPN4SZK3izeUWlFh9lC9J=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102116743421108808710?hl=en",
+          "reviewerNumberOfReviews": 104,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kenzie Dutson",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-09T15:35:48.584Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2paSk4zUkZlVXh4Ukd4aFZWOTRkMlZUU1VaR1YwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUCuT2QqjMRoxLhDq8804R3gk5xvIa46LcthUWQpvhVVTJHO_vQ3Q=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104851623776786704841?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Don Hicks",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-07T14:46:20.118Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21GZk9XbG9aRE15VTBsaGExaDNkRzU2VHpOdmNGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLLNOxWl-IXG8vtePJfx9pWp274WR42HJ-jmfCTjCZyIICqSA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112016326444248656695?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dora Ponnequin",
+          "rating": 5,
+          "text": "They are consistent with the pizza taste and quality",
+          "date": "2025-09-07T01:08:14.453Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21saWJYWjNPR1l0UTJGR1pYQk1OR1JuY1dsVVZGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJ5ih8BlRXB9Jsi3IwyzEBbZkYgJBrx8Rl21DVvgOQK1ZKphOI=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104797965276498937686?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "kevin grant",
+          "rating": 5,
+          "text": "",
+          "date": "2025-09-06T02:34:31.116Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25wQlR6SnZXRE5DV0RneWF6WTBSVkZmZWxsZlFYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJDYunA6UilzGY8GKPQeHGCZq6Ce5bSxKmiIiAWnX4eY4CeWA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107326205096482688667?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sarah CJ Pugh Fairchild",
+          "rating": 5,
+          "text": "This place was a fun mini-New York. The workers were so helpful. The person that took our order was so patient while we decided what to get. We ended up getting the Friday special (build your own: Alfredo, spinach, chicken, mushrooms, and red onion). The worker was so nice to let me video the dough toss.  We eat pizza the night before every race. This was race #9 for us, and we both agree that this was the best pizza so far.",
+          "date": "2025-09-05T23:17:05.930Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xGdFdHdFhhRzlCV1dGblVVTndMV3BXV1d4c2JtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWU6LGzV0PZqY8R2aOCqB6bF790uyLvB6Z7GhLTTrzfqs5-nFPA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109047813455088085114?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Zrd",
+          "rating": 1,
+          "text": "I ain't going to any pizza joint located between a funeral home and a clinic!\nJust imagine what could be in that chunk o pizza!",
+          "date": "2025-09-05T02:32:51.570Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pZd1JIUlFYelZ0U0dOMU1GQm1NRzUyWWs5aWVtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLchphSy6M6ccJLoQ0XUol3sl0RO7_2p2IqJe7WSX6ZbLERAA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103740651835026917062?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Catania Holman",
+          "rating": 5,
+          "text": "Some of the best pizza I’ve had, SO delicious!! The side salad was so good too! Perfect balance with pizza! Joshua was great at answering all my questions about the menu! Highly recommend!",
+          "date": "2025-09-01T21:36:56.351Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2kxM2FrZzFWSGRqY1hKU2JHTlNZbE5UVVhSdVgzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIKJ772JWElBuwAJxwtCMdOia0ebME3N02k2SVRSXzBRSPodQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114067972779906996684?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Raymond Souza",
+          "rating": 5,
+          "text": "First time very impressed. Definitely definitely I'll come back again even though it's a little bit of a drive. But I was told they're going to open up one in my location the original town",
+          "date": "2025-09-01T00:32:21.009Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xSRFJGRmhWRmR5VlZWM1IxOXBUekpWTkhCRVRXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLRkYjHlsUVeTRjaozAGbPWqApijjja3uSdVa_XrMcepNIZHA=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105719751345597004895?hl=en",
+          "reviewerNumberOfReviews": 464,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jessica",
+          "rating": 5,
+          "text": "Great pizza",
+          "date": "2025-08-30T23:13:42.479Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21aWVFVaFlRMGN4UmxGak1UUkNVbDlWYkUxbk1YYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLa8634fs2GVd0BWlFb9NJAYwgJ41ieEHBBOISlrABnKNQ99A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111591396414217467906?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Monica McGlochlin",
+          "rating": 5,
+          "text": "Love the personal pan size so everyone can pick what they want  delicious dessert pizza, and amazing breadsticks",
+          "date": "2025-08-30T00:49:15.927Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xKSVFXdDNTSGt3TFc5Q1MyNU9hRmxNWDBaYU9YYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL-LOW0hrA8cxYqWTh-PxKbUgWu1vp1ikRWPBKbBymN8x9shXY3=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105372206804527670678?hl=en",
+          "reviewerNumberOfReviews": 37,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Adam Wilcock",
+          "rating": 5,
+          "text": "We had The Hub deliver food for a new hire orientation event and it was fantastic! They even made sure we had plates, forks, tongs for the salad and serving spoons for the dessert (frostbites). Everyone loved the food and there was plenty to go around. I will definitely be doing it again in the future.",
+          "date": "2025-08-28T19:02:41.913Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pKU05FMWlRbEJZU1RoTGRrbDFaVFkyYldSalVVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWyNKysxgNPgHxIIvdlZiBdaI5lr9tLXtjVah9_DXo3Zg7ae4fr=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110957157949659996183?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Maria Ocejo",
+          "rating": 5,
+          "text": "Hands down theeeee best pizza I have had besides the one I enjoy back in my home town. But absolutely delicious pizza not gonna lie. Thanks again for the yummy Pizza Hit the spot.",
+          "date": "2025-08-28T02:14:44.650Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tkWmJIVXhUR0ZMYTFsdGVuUXhhVVJxWWxCdWJrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU7QD0_Po5_y1_NCnaKo8RxhSQOa81NZyoblTw6MDHyTOMHj-A=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111711775163813885657?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mary McConnell Terranova",
+          "rating": 5,
+          "text": "New to the area and chose this place for pizza and it was AWESOME!\nCrust was soft & chewy and plenty of cheese - we got the pepperoni pizza and it was spot on!!",
+          "date": "2025-08-27T02:07:04.223Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25WbWEybFdhbkF6VTNWUWNXcG9lR1ZWVEZKdGRGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJuuYPPh0nGmEG2qt12IA0J42fqN2uSNBjrmqaNCPJX1xH9oQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114824210391162007669?hl=en",
+          "reviewerNumberOfReviews": 51,
+          "sentiment": "positive"
+        },
+        {
+          "author": "James",
+          "rating": 5,
+          "text": "Best pizza in Cedar City! Friendly staff! Highly recommended!",
+          "date": "2025-08-26T23:14:56.557Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pkMFRsZENRa05zV1RGUU1HUkhXRk5FU0djNVlXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXN_9QLYI1ZYm97J2tx5Tn1rxGe6wM1bFubEbCikIcuiJo5nPU=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111292818935753803028?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jeff Hansen",
+          "rating": 5,
+          "text": "The cheesy cowpie is super good.",
+          "date": "2025-08-22T00:18:02.048Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pSbFJteFdiWE5hYWtWVGQxYzJaRmRpYms1ZmNsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWO-WUYxGZZUdoO187EfL0iNiPwdpgQYYJ2hIwQBHFtCHWxisc=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100356197163788607932?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kristie Ward",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-20T05:04:04.677Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2trMWVVTTNka2xYWlcxQ1kwTk9OMUZhY0RBMlQyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIUmza_erCby2Ggv6A5oG9xdWvicWdxtCZaMefcmlPN2h5kLA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101356676884732532777?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kevin Johnson",
+          "rating": 5,
+          "text": "My favorite pizza place in Cedar City. It's delicious and they have fantastic breadsticks as well. The service is always good. If I'm waiting for a pickup they never have let me have to wait to get to the front of the line. They come and ask me and have me my food earlier. Just a nice touch and a very good pizza place.",
+          "date": "2025-08-19T00:14:45.244Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pKblJFdGFRMVE1VTBwdFMwaDZkREJXTWxkU05VRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVb45YhoQNYvJm00-pwQ6m-jYWmwljUSNZ3jLtF5NhvdzeAo_SC=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105190068868833932918?hl=en",
+          "reviewerNumberOfReviews": 99,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Pete Anderson",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-17T21:05:35.696Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pWMFlVSkNlVnA2VUVkMmVFVkpMVk4yV2pCbWVYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXRlJ1JFjTrBOqpcRtOBkji3JbWX1v-rSWyX6IdBWj8iw-sZ8M=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114921032161631814486?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "TempWise Heating & Cooling",
+          "rating": 5,
+          "text": "Great pizza locally owned!!",
+          "date": "2025-08-16T01:50:57.705Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tSQlkzRndUM010WWpCeFVrdDFVMVJuVWtabGNtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVm0b5gVBaJy8y7b9UG4hdfpZoOjhOK2sqjjlqhinT30NrOyp0=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111276440695180357301?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Hilary Allen",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-16T00:18:32.451Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUN2N2IzLXV3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXbcS8nIHavZ0-uY3rWNQ66PMWO-X99EOhhgHUsnN5aYRl9Psep0Q=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101166970143864662969?hl=en",
+          "reviewerNumberOfReviews": 26,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mike Rothwell",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-15T22:37:18.103Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xGNlpqWklTRWxEYkZwSE4wOXJlSFZ3V21wS1gzYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUY9fpEAjUugaIizmqNnG_t_zjHFY9FwmsQ22QpmsxNjkoKSmwU=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115763053296862471695?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kayla Ebner",
+          "rating": 5,
+          "text": "I love their gluten free pizza! It’s the closest to regular pizza I can have. The service is good. The atmosphere and seating are good. They are easy to get to. I love coming here!",
+          "date": "2025-08-14T05:32:12.213Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21sVGJDMDFVVXR5VTFkeFUweE1SamRSUlRNNFVuYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUMBH5PobgHU1-QpPJPq8W-TYxYsZCXpq1qfyIaHEf-Efn2oOSpPg=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104286915127273616203?hl=en",
+          "reviewerNumberOfReviews": 49,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ajfonty",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-07T22:25:11.849Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25CVFpHOW1kM2xyTlVGa1RFWkRWV2swWVMwMVVuYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU96owFTr_NIHW8JJVNHY30dNjblNwmTTHf4qrOq57zdq_6TAM4=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107733878000995023508?hl=en",
+          "reviewerNumberOfReviews": 0,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jen Tanner",
+          "rating": 5,
+          "text": "Always great food and service here.",
+          "date": "2025-08-07T01:04:04.034Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tkTVRrZzVWbkJLY1dWeVJVZGtjSHB6YWtWMlQyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWHlRZOVUdYO937TrrJsn0TYtxOoxWcgM7QHvRseW3Jdphm9NUgrQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100926798433724444794?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "The offgrid Travelers",
+          "rating": 5,
+          "text": "Absolutely love this pizza. Hands down the best in Cedar City.\nTruly a authentic Italian pizza, just like one I would eat back east growing up.\nI make the drive every other week from Bryce Canyon just for my pizza fix.😋",
+          "date": "2025-08-06T22:19:03.980Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pCT2NFTXdSV2g0YVZWM1RsZGlURVJQTFdSeU5YYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUxNF3qcnupNbpuvICg2x2djPvUMTHzJkoMRRbt5KPL3pc-gj0f=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117107583421429081208?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Pat Cummings",
+          "rating": 5,
+          "text": "Consistently great pizza, especially with their slice lunch special - and now with more booths! We loved the senior-friendly bench cushions that were along either the west or the east wall. Today we arrived just as the lunch rush left to find honest diner booths along BOTH the east and west walls. Could The Hub get do any more to be our favorite pizza place? I don't think so!\n\n9 months back: Their pizza is marvelous, to start. The lunch special that runs until 4 pm lets you get 2-3 slices of it, mix-and-match. Or you can get the absolutely delicious \"gluten free\" pizza made with a cauliflower crust - that's my favorite, just for the flavor. Check out the 8 varieties of real ice cream, too.",
+          "date": "2025-08-06T20:21:06.077Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNva042dFdREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWBuXlxncjOdgc9EeV8SFd1kh1yNXvTDe51iu24avOQ0MjMpM60=s1920-c-rp-mo-ba6-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106867346209678710884?hl=en",
+          "reviewerNumberOfReviews": 292,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ammon Demke",
+          "rating": 5,
+          "text": "Awesome pizza! Great service as everyone is super friendly",
+          "date": "2025-08-06T02:04:50.997Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21GMVpGQm9SMWwxTm5wVlFubDJOVEpSZEdObWVVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKGB-k-HqjPyr3BSyR4PeUQShXw-b5lhJEMpR1imGS9JdyGag=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116901522288545097060?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "SqueezinKittys",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-06T01:34:41.454Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xwelpWbG1VSEJLVm1RdFowTlZNVE15Y1c0M1JYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVoLE9OUaS-hQkmrKySLnwvYGazIywxl_XuIv9E2qC3es5Gcwx7=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100418417516058562711?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Crista Bairett",
+          "rating": 5,
+          "text": "So good.",
+          "date": "2025-08-05T00:54:56.716Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25CMk9UQnliMnhWT1VGVGNWVnFSbEI0ZURRM1dsRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIMKMkF-tlVuphUEJMB7ovBSzwyV0g8AOOBuHn3YTRmfrU77Q=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102857913123530827439?hl=en",
+          "reviewerNumberOfReviews": 25,
+          "sentiment": "positive"
+        },
+        {
+          "author": "joannie",
+          "rating": 5,
+          "text": "Enjoyed the pizza and ice cream. Service was excellent.",
+          "date": "2025-08-02T01:45:26.219Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21NMlh6RklTekJ4WW04eGJrZ3dXbVpuUXpCS2NWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXhE5YpeIep5hYpF3m0mQ1Z2H3bI1l-jf9JWokrEgYMyNu74r0ePQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106372995414274229347?hl=en",
+          "reviewerNumberOfReviews": 78,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kaycia Winn",
+          "rating": 5,
+          "text": "",
+          "date": "2025-08-01T19:14:21.492Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25CS1kxRlFhV1kyUTBndGVUaFhNRTVyV0hsZlJXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLKtIUtc_JOinM8tQTdEloPVWJFuEEYI0IREoatvtaqRQ9b2A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104675395037681060503?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Danielle Herrera",
+          "rating": 5,
+          "text": "I LOVE THE HUB PIZZA!  Yummmm!",
+          "date": "2025-08-01T00:38:13.586Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tGR2JFdDROV05UZUVwa1RGVkZUQzFHYWpkS2VrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI10tYDvxylF8DF1dOE3OvDfdjLgQP1GK3kSDfWvOQo5BuuXiQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113634019716351832804?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Johann Weller",
+          "rating": 5,
+          "text": "Love the pizza here, its always excellent!",
+          "date": "2025-07-31T02:26:29.162Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNJaWNYZkZREAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJvJgjsuaB7unKjp_JtDS-d57EoWSBG92wcxkVsKVoGOWiGYw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107226222617427839489?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Regina Chandler",
+          "rating": 5,
+          "text": "I work out on HWY 56 and most businesses won't deliver out here.  I thought my only choice was DD, but hen I called they were super kind and with a small delivery fee they were happy to deliver our order to us.  THANK YOU!  We ordered 4 different pizzas, and I'm just a huge fan of their sweet dough crust.  I love how huge their toppings are, and the sauce balanced out very well on each pie.  Will definitely be calling them again!!",
+          "date": "2025-07-30T20:02:18.815Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tKcldVWnZObXBXYzBzM01qaHRNRXQ1Wlhrd1FXYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVZIssEjkenivXheqtIGeVD9NIsNKcOBWO221zw_QdZRke8UUr6pA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109957082135572474782?hl=en",
+          "reviewerNumberOfReviews": 13,
+          "sentiment": "positive"
+        },
+        {
+          "author": "j hill",
+          "rating": 5,
+          "text": "Best pizza in town!",
+          "date": "2025-07-30T00:41:37.276Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VNQ0lwX2p3MUpIeTNRRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXLfwlVAvDcdoN97X4aoEdBRWE47tVLv2q6cqsh7gX6-0HM0dUF=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115158769205878381272?hl=en",
+          "reviewerNumberOfReviews": 17,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Matthew Crawley",
+          "rating": 1,
+          "text": "1 hour wait for a pizza with 10% of the tables filled? Good luck.",
+          "date": "2025-07-26T22:59:04.922Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21kaGNIVXlVVVF0WVVoT2FtaFdUWGgwWDAwNFJVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIAgBXJ8w9AJpZSoWLfGnJOGrTwIiVZ0cAiiHlv9QGESVw4cg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101488240753827219760?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Scot Speck",
+          "rating": 5,
+          "text": "Great pizza",
+          "date": "2025-07-26T13:01:16.579Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNZNHZxSVNBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX7H7QWq_tgRy4e6iGKxKrIcj7uHIrlfxfzqOooJUBcbiLTJJA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118320281267120822825?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sonia Krohn",
+          "rating": 4,
+          "text": "This is a N.Y. pizza style that was only good. It is better for taking out instead of dining in.",
+          "date": "2025-07-26T01:14:17.330Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT210TlRUaHRkVVEyYm1oT1FYTlpSMDFVYmxoVFpYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUwnewVk9TVu8biEVVsVxR1IGLDFYymMYIGvqZuUeHnXpiI6C_YNQ=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106398117682254335513?hl=en",
+          "reviewerNumberOfReviews": 88,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Autumn Cook",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-23T21:10:04.576Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25GVlZtVnFPVUppZUhCNlVIUkhTemczUlU5VmVGRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWmr9GS3pQ_DMvzL3M-8-YYcJU8s6is0e1gi_MdjGmAANhTwrGT=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106549878992775382024?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Maxcine Jensen",
+          "rating": 5,
+          "text": "Awesome pizza!",
+          "date": "2025-07-23T02:32:14.606Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tGSWVVeG5RMWxEYWkxRWJsRjBUbWRMUkZGU1YwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVcu4dMFAetAZMoW-4NmFpq-SZ7eRGoxm5mCKAIqPxyZ_iE6Oeu=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112565168247641319396?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Leslie Leader",
+          "rating": 5,
+          "text": "I love the hub. Pizza, pasta, salad, calzones and much more...it's all delicious",
+          "date": "2025-07-23T00:52:06.220Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUREeUxTcFFBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKxYd42O2_lO5kLVSqXWpviR4kjNyoy4OtGhhSNGtv7WLnjlQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101318862297469089857?hl=en",
+          "reviewerNumberOfReviews": 10,
+          "sentiment": "positive"
+        },
+        {
+          "author": "lovable bunny",
+          "rating": 5,
+          "text": "I'd give more stars if I could decided to see what the prices where prices where outstanding food was phenomenal this will be our new favorite pizza place to come to when we visit Southern Utah",
+          "date": "2025-07-21T18:59:27.174Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xsSlQxUndjSHBQV2tsb1pXTnJUMGhqUkVkYUxYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVLmulmvjjW9vgfSS7PuPkeDPfrrDV-TyE--wdheNGfRGVzxN0=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110236310571411972848?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Barbara Goodwin",
+          "rating": 5,
+          "text": "The Hub always delivers great food and amazing service.",
+          "date": "2025-07-18T18:15:29.745Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xCYVpHOHpNa2xSTm1rM2FIbzBSRUp6UVhGNFNYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVNoE5rYqbyAO-UfSgZGnVea-GR42rqRUqOc8Kt4-hjg3ZsAeD_AQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109078074148628543639?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Barbara Rodriguez",
+          "rating": 5,
+          "text": "Had a last minute dinner get together and the bonus was I had just won a free large pizza in a contest sponsored by The Hub.  Drove over got the pizza ordered and added on an order of Frost Bites.  The food was GREAT, the Frost Bites heavenly, and it was all ready in no more than 15 minutes!  THANKS to The Hub and their friendly employees for making my evening very stress free.",
+          "date": "2025-07-15T03:44:53.918Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xRNVFtOHRMVlJWWkZaQlFXZG1kalpsTW01YUxYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLCnckdKp_kyL6FB5G94FL1x4waBPLnBwfQ3p5iH_QRoMpe=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114393675176131681472?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mason Wilson",
+          "rating": 5,
+          "text": "I have been making pizza since I was 12 years old, I ran a Domino's for 5 years. I've tried pizza from San Francisco to Chicago and many more.\n\nIn my subjective opinion this is the best pizza for the price that I've been able to find. It's dough is the perfect amount of soft and chewy. The sauce isn't too sweet, and the cheese isn't dripping with oil.\n\nThe atmosphere is amazing, just yesterday I walked in and the cashier was kind and patient. While I waited I was able to play the board games they have on hand.\n\nOverall a very well run establishment!",
+          "date": "2025-07-13T17:35:44.262Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21STVIzcFdObk4yTTFrM1ZUUnhUVzg0UlZsZlgxRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK8Jqw9K099Lb4VRiV4QLRAZIKtFBKn_eoAKocxWuzOJ2s2yQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108216312678826113865?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "james stutte",
+          "rating": 4,
+          "text": "Just good pizza.👍",
+          "date": "2025-07-13T01:12:36.717Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2s5U05WSnlMVE0yUm1rMU5VTXRNVm8yWm1sMlkwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL3e-1BjxcE085-m9aEV9zzhS4K7csmQS0ZKgC1lnhptIGXKg=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100176371599540695426?hl=en",
+          "reviewerNumberOfReviews": 18,
+          "sentiment": "positive"
+        },
+        {
+          "author": "John Sage",
+          "rating": 1,
+          "text": "We are locals. This place is TERRIBLE. Strip mall dining at its worst. Unbelievably slow. Three kids working behind the counter and they were clearly more interested in talking rather than working. We ordered two small pizzas and a salad. Had to ask THREE times to get our salad. Been waiting so long for our pizzas we may get up and leave soon. We will NEVER come back here again. Don’t waste your time coming here. Go to Wood Side, or anywhere else. What a joke. They make you pay in advance and once they get the money, you don’t matter anymore. Nice…. OWNERS: Your crew on 7/12/2025 cost you customers and represented your restaurant very poorly. AWFUL!",
+          "date": "2025-07-12T22:56:42.322Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25WcWRYUXRWazFtYzJWalVIWkNTMUp6VDI4MFZYYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLkKbhVWl5Io5crTCLJRb5NvZfV2K6uajIoFx0xPTQxIzYxyA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117830110048355253658?hl=en",
+          "reviewerNumberOfReviews": 15,
+          "sentiment": "negative"
+        },
+        {
+          "author": "Jerni Talbot",
+          "rating": 5,
+          "text": "Wow the best pizza ever, The owner was so nice to my family(sisters) would give this more than 5 stars 🌟 🤩 ✨️",
+          "date": "2025-07-10T20:31:07.426Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25Wd1l6VnBiSFpmWkZremVVOXhXbEJFUVRJeFNIYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI2g6Va3gZGA-mFnrD0AaTkxToWK0DQvapBbW-TnxCEH6n1CQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117041486554558528982?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Keli Andersen",
+          "rating": 5,
+          "text": "Great service!! The high noon was a great pizza, my mom had it on pasta. We were here from out of town and the service was great.",
+          "date": "2025-07-10T20:27:11.584Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21NeVprZzFTVlp2UjNORk0zWTRSMnRLV1RadGRtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIpsmqnF_ppXePaTBLpq-uwGI_5OQ63PnclwUaK2xY5VThOVg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113961816110156751350?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Deborah garcia",
+          "rating": 3,
+          "text": "I love this place!  They serve the best pizza in Cedar, hands-down!   And, the customer service is exceptional!   I will always support them.\n\nUPDATE:  After 5 years of pizza here, we got one that was really bad!  I hope things are not changing with The Hub.  That would be really sad!    See attached pic of experience tonight.  It was NOT GOOD.   And I'm on the fence about going back.  So much grease... its nauseating!  We drive 20 min to get there, and I didnt check it because we've never had anything like this before.   When we got home, I was shocked!  So... IF I go back... that wont happen again!  It will be checked before we leave the store.",
+          "date": "2025-07-09T02:11:30.374Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURYOHNpQXF3RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKEqHI2d8mxvj8u1Jd1wHQaWru2v57ANe2QpyIEXI1kVrOBmw=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114928021441926873272?hl=en",
+          "reviewerNumberOfReviews": 16,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jori Kelly",
+          "rating": 5,
+          "text": "Love this place!",
+          "date": "2025-07-07T23:23:02.540Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pWWmRYcFVYMHhFTjNKQ01VWXdTRlpDY2tJME0yYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLDt3glACMKHhyXa_bEiMJDDrvFCYlw8kEKNtiL20CvO-jEsA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116657336458495240401?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Matthew Gledhill",
+          "rating": 4,
+          "text": "It's good, but just a little more expensive than I think it should be. I like the pizza. Payed like $16 for a large peperoni pizza. It fed 2 dudes, so it was decent sized. Most of the other pizzas were more expensive.",
+          "date": "2025-07-06T20:16:21.011Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21WR2JXTmlXRmhFWWxCYWNESmtRVFpOYVU1WE5uYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWaiM0rSyxp76_GeTugcf2M8k-MyOnU47_5OOuH6cV_dNamUz_B=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104581739236057786107?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Gary Taylor",
+          "rating": 4,
+          "text": "Great pizza!",
+          "date": "2025-07-06T01:09:25.362Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xwdWFVMDBhMjh3TlhwbllYcENVVUZaVmw5aU5rRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJSLLF92TEsJZicU4DSyRPW1uQHuJ3tneCbxTS_EzpvU1ftvQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111300923018916892717?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ruth Runyon",
+          "rating": 5,
+          "text": "",
+          "date": "2025-07-05T23:02:07.464Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xRNWRGOVlkVkZLVEhOaVpHZDJSMmR3Y2paR1ZFRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXp6gHF8FipJXwS2kpttX2W6C6PtJerfgwnyftaj6uJd0PzS_g=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112650730259787211472?hl=en",
+          "reviewerNumberOfReviews": 11,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Mindful Canine",
+          "rating": 5,
+          "text": "A true community gem!! Not only was the pizza great but it was SUPER affordable and the customer service was excellent and memorable. This is an awesome option for a person like me who has a busy service route and doesn't want to break the bank for lunch. 100% recommend!",
+          "date": "2025-07-03T18:53:02.838Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t0VVIwazJkM1V3Y2s5VVlsaFBla0pTY1ZSeFMyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX__VQ4Y-rB2cXXrJUY2miMbu4ekmQzALfPDkH6p-H1AcQY76NS=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100851666622157657932?hl=en",
+          "reviewerNumberOfReviews": 56,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Adora Ream",
+          "rating": 5,
+          "text": "Really good lunchtime is the best",
+          "date": "2025-07-02T16:08:44.933Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21Ga1ZYWmxPRk00TkZFNVlXMVVhSE42VFdkM2QyYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXnnlB65dW2WD-WOAmNX2RVuQ960IndqOp4Lb3ANhdmK-dn2xU=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110635670593083582662?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Genie Fife",
+          "rating": 5,
+          "text": "Pizza and Garlic bread bites were delicious!!!\nWe unfortunately received our delivery an hour past the original estimated time and we did not receive the sauces we paid for. But the manager personally called us and apologized and provided a great service solution.\nGreat experience all around!",
+          "date": "2025-06-29T02:57:34.775Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2twU1F6WTJTR1pJWDBGaWVFMDVjVU5SWVROME4xRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV5XNCvuC2XZ-x9BBOXKLKiEC1mzkGuGR9lYRVfEo2yZcth4Z4=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/112920773317451998786?hl=en",
+          "reviewerNumberOfReviews": 7,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Lee Wiley",
+          "rating": 5,
+          "text": "Amazing food! Great value! Fed our group of 25!",
+          "date": "2025-06-28T19:55:13.573Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2w5clpHOHlWa3RKUmxkaldtSjVSblUxZEVScldHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVhyEyim7sjuDy9Z1KtjkrWYLMFAUf3nwKFGfja9WH4pFSD_gc=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109857449641215521989?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Marisa Patch Sanderson",
+          "rating": 5,
+          "text": "Great pizza, love the high quality, fresh toppings, delicious light and crispy crust with extra Parmesan on it. Toys to play with for kids while we waited, and very professional staff. We love going to The Hub! It’s a treat!",
+          "date": "2025-06-26T22:39:11.144Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2t0UldEVXpUMWgzVGpoU0xWOXlibVF5V2pWS1lrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjV5phpEJuc8ygMbbFoeI9mg5sPbNjT9NvJ9G5lDVwVzv3G02O5q=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103852359498302435193?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Josh",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-26T17:12:42.891Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21KSGJtNTJTVTVDZEVSbFUwUmhUSGxaV1VZeVdtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKEvjr982kjWm3-B_ZFYnHm13WjH2MnmZDlZQeQdFB6OM1TGw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115490235051654249073?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jeff bleazard",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-25T23:39:29.349Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25kUWNIZGxhMUpoVFdaUVYwWlRkR0ZJT0RGbVIwRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX0SJgDQauKqlyFZx3w3T26GS1C-H9lWdtb5IXn5l5Vc3dM1rE_=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113276419623706659562?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Darren Tyler (D-Train 2025)",
+          "rating": 5,
+          "text": "Since it was delivery to my home atmosphere was perfect.  Love the calzones. Top notch each time I have ordered from the hub.",
+          "date": "2025-06-25T01:37:32.777Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21jeFpIZEVhVFoxWm14aGMwRndaRE42VTBKdlRrRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUaQDCLj5eL5fJsTFN6ftXzHBCAqKe41E-apI5NBSzhWfDL3gIROQ=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103348832731399615120?hl=en",
+          "reviewerNumberOfReviews": 69,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Wyatt Wilson (Rando123)",
+          "rating": 4,
+          "text": "",
+          "date": "2025-06-24T16:53:22.345Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT20wNVlrc3dRa05NYlU5ZldVdzJiM3A0WlZWdU5uYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKj6L-OjVPAD2FSus4LjwYnxcdsGNFDBlOfX4CtFAyvESpfxA=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117727624949241482461?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Hayley Rowley",
+          "rating": 5,
+          "text": "Love this place! It’s awesome :)",
+          "date": "2025-06-24T00:36:42.800Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR2LWRlUlJBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIKj4HX66G7095LcNuMW_0-gOapVd81g3TW89LNnL2z5t9BKg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/109509257790432436269?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Monique Mosley",
+          "rating": 5,
+          "text": "",
+          "date": "2025-06-19T21:01:09.261Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2twaVFtRnlOMUl6UVhWS1kzTmtaMUkxYjFKclJHYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK4x9zbIpO4pANkFmqWjp0Sa5CWRF0PRGttzza3zOosBZQ4jQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113573925736049393107?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Marlene Brackin",
+          "rating": 5,
+          "text": "Food always great\nStaff friendly & courtesy prompt food orders",
+          "date": "2025-06-16T19:44:27.896Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUR0OS1MN0ZnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWfa4YV7BgetroxBLZOdQ0bUodOOCZ-cUz0tvXllMb1WgdsTVBn4g=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114440633170856239935?hl=en",
+          "reviewerNumberOfReviews": 14,
+          "sentiment": "positive"
+        },
+        {
+          "author": "J D",
+          "rating": 4,
+          "text": "Pleasantly surprised in the taste of this place. 2- 12 inch pizzas for $37 is a big rich but it was quality. Hit it up when you’re in the area.",
+          "date": "2025-06-16T00:36:31.217Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25wUU5WRjVjV0pTTVRCMU5rbHdNa1k1V0VNd1JWRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocK-UT1qwar1LSxKZDNIbyqvNZ6k7EKObBZ8daJ_YymTmhVzow=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/107614019161483937979?hl=en",
+          "reviewerNumberOfReviews": 60,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sonny Cheser",
+          "rating": 5,
+          "text": "We had pizza, baked pasta and a calzone, all were fantastic top off with a scoop of ice cream service was very nice and friendly will be going back fir sure",
+          "date": "2025-06-11T23:28:05.402Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tzdGVUTlNYM05LVlhsQ04wb3pWVU40VXpCWFJVRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUJ1G72QHFy3xWoI54xF7ZvYAh80ZYXkDpLqakermMF2gJG69_u=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101267175357135552916?hl=en",
+          "reviewerNumberOfReviews": 106,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Josh Foremaster",
+          "rating": 5,
+          "text": "Great pizza and cheesy bread!  We’ll definitely order again.  Loved the original crust Margherita pizza.",
+          "date": "2025-06-07T23:57:45.800Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VOekJ1LVBqaGJXMklnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJJE7_SWq2z-sbkX_Ge_HkOB6PGucueLEMT_MFmQLq5WJExP45q=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101442735860597056905?hl=en",
+          "reviewerNumberOfReviews": 9,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Aurora LeFevre",
+          "rating": 5,
+          "text": "The people here are always so nice and the food is really good. I haven't gotten a single salad with a single piece of lettuce out of place.",
+          "date": "2025-06-07T12:15:10.076Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT201WFNFOXFNelp5YVZsclV6WkhORll0ZFdkTWRtYxAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUk7LOaS0eYIFUuxZHoBJ_HeCuYzEFeSeDUNXxHr0rZhe6A1gschQ=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116839852456052667860?hl=en",
+          "reviewerNumberOfReviews": 51,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ginny McKay Mccomas",
+          "rating": 5,
+          "text": "The pizza is so tasty,  the crust is amazing!!!!",
+          "date": "2025-06-06T21:46:34.810Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUNzc01iaGZnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXg4Q2zbYGBtmScQG_b4QaX_Wz7ca-_JZOQvM9LXOGHorZwYo7uyA=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103566122347645229071?hl=en",
+          "reviewerNumberOfReviews": 46,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Heidi Ream",
+          "rating": 5,
+          "text": "So good the best pizza ever it made everyone in the car happy I had to go back in and get some more it was so good",
+          "date": "2025-06-06T17:56:07.923Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VMekdzS0NadTlhVUZnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWGy9zDi2msgukEvxqzddcAzgXYhoPz35aIjI7qoFLex5LQdaM=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117333150487505996985?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Stephen",
+          "rating": 5,
+          "text": "Best pizza in Cedar City!",
+          "date": "2025-06-02T22:47:41.195Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUR6c3JldXFBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVYFqwvhiLhIe63SwdShk6ZDtCmmXoVj5ITG_WNJXWlLz0ZTmYI=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106996909246715921206?hl=en",
+          "reviewerNumberOfReviews": 44,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Hayley Syrett Wilcock",
+          "rating": 5,
+          "text": "",
+          "date": "2025-05-31T21:45:55.749Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VLYjBwS0M2djZQY213RRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKt_qTRwk7LqXW7lrhrhLPS2aM2Oj9soCKl0zmMOVx44cj9ZQ=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/102652837339423273198?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "J Wilson",
+          "rating": 5,
+          "text": "",
+          "date": "2025-05-30T14:20:52.102Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VQbkg0SXpFM1ppem9nRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJUI7mK3JoktUcShflmTZDqaROUX4X1uT6s6P3cQGAK8Bobxw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/117196352557610360812?hl=en",
+          "reviewerNumberOfReviews": 44,
+          "sentiment": "positive"
+        },
+        {
+          "author": "john bauer",
+          "rating": 4,
+          "text": "",
+          "date": "2025-05-27T06:05:31.965Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VOei1uWldmd3B5M1RBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXoBrNmf12XTmyLxXCId2C32cFmGFCw32lwE5Vc3AILK2kNJAIh=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/113857681417825005974?hl=en",
+          "reviewerNumberOfReviews": 31,
+          "sentiment": "positive"
+        },
+        {
+          "author": "eric c",
+          "rating": 5,
+          "text": "Good customer service and excellent pizza",
+          "date": "2025-05-24T01:44:14.282Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNmLS02dG1BRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLOlECfxSUqYKZ830w3oYKxDYTE_9IyEvIYB-krn695bXh6=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104593115345330967494?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Richard Maloney",
+          "rating": 5,
+          "text": "Love Hub Pizza , best in town!!",
+          "date": "2025-05-21T23:11:24.686Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VKT3d2OWZKeWJuMlpnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjW2k_TXGxvB04on7U9FqaiVSCVenV_lQP4qSdf3gso6LSVlKU0=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/100811346727046661492?hl=en",
+          "reviewerNumberOfReviews": 22,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Elizabeth Ivie",
+          "rating": 5,
+          "text": "top notch on service and taste mmmmmgood",
+          "date": "2025-05-16T01:15:31.887Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VNNzFnLXpmdDUteGhBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWpQ8uMXC01OajX3k-KRvNqxutlR47zztIbvzoZajgfA6SvCos=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114882358962361446012?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "S. C. Baxley",
+          "rating": 5,
+          "text": "Customer service was amazing!",
+          "date": "2025-05-15T20:47:31.616Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VLMm0yWS00N1BxWlN3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUeuddQ1rs4zRL9WgUXPLd2EU5EUSxvG3dj1PdXdGGGEdKoYbp7Ow=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116051868558926363171?hl=en",
+          "reviewerNumberOfReviews": 2,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jennifer Potter",
+          "rating": 5,
+          "text": "Always delicious and always willing to customize!",
+          "date": "2025-05-13T23:52:14.965Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VOcURwNWZycHNPaWhBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJB81Dr0rIeHtyETUCu7u0fwC4GfQOO8RFGrCVmpYWKUVUc=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/111859335500770918697?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Dawn Lloyd",
+          "rating": 5,
+          "text": "From SWFL. The sauce on the pizza was very flavorful. Good tasting pizza. Highly recommend",
+          "date": "2025-05-13T21:43:48.989Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VKRFhfcnkzbzVDSXpnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKyBeN3UhhbYr3KpHZJ1xnOmIk0NYLjzyFeqczpkehholkJNw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104285930802363236443?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Pamella Jacobson",
+          "rating": 5,
+          "text": "Heard about this place. Did not disappoint.  The pizza was wonderful and the canzone was great as well. The staff was very pleasant.",
+          "date": "2025-05-10T00:11:11.653Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VOemZ6cWVxNmZqV2xBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocL-R3gSI-X7FUTakWSwiPCc1hsm4Q2exlkCFCfIzrRMoRW2=s1920-c-rp-mo-ba5-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/103863906146243492241?hl=en",
+          "reviewerNumberOfReviews": 156,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Bonnie McPhie-Huggans",
+          "rating": 5,
+          "text": "We live the Hub pizza!",
+          "date": "2025-05-10T00:10:03.755Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VLMnotOTJHanFqTWhnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWwJb8DRCY_VzQCH4kBh7mbJ1CuLZJtQmwKGbrriRAmOZca3XJURw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118333352327028776930?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Jen Jackson",
+          "rating": 5,
+          "text": "Best pizza in Cedar",
+          "date": "2025-05-09T23:48:36.965Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNmbjYzem5BRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUhH4EHuTlhHbZY0NZ31UI__-GGpZfu3qSKGSpDew5uE5smHU2B=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/115271189318680279767?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Alan Kunihiro",
+          "rating": 5,
+          "text": "The hub has great pizza at a great price!",
+          "date": "2025-05-09T22:43:49.469Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUQ5N01tSFNnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKyH0oTEBCPSeJxdgz1yb7uzgvTiChSj7Dz56hdFpgAycaaKw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106420882947369449924?hl=en",
+          "reviewerNumberOfReviews": 6,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Thom Bluemel",
+          "rating": 5,
+          "text": "If you're looking for a great neighborhood pizza company with excellent pizza and a friendly, helpful, and couteous staff of wonderful local folks, you found a little piece of heaven at the Hub",
+          "date": "2025-05-09T18:44:40.863Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VMVGRycFBDanF1TExBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI4SC6Tp-Cdyecn-YE2ZrkdZmsVoyoeluR8wCpcxR5L-oslrw=s1920-c-rp-mo-ba4-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/104099335235551979272?hl=en",
+          "reviewerNumberOfReviews": 53,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kara Moreno",
+          "rating": 5,
+          "text": "",
+          "date": "2025-05-08T16:44:05.371Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJLUNnYWlaaFBiN25nRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU74eKQtC72-rFS30155tOHDsfcwyBuwEyJfcIB5d1PSQet3dPk=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/116425417055868766948?hl=en",
+          "reviewerNumberOfReviews": 3,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Ben Bush",
+          "rating": 5,
+          "text": "",
+          "date": "2025-05-07T02:38:24.143Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VMTFY4T0M5c3VmWVlnEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXLEPqwK99T6qD6SXdal5nljXAiQqHLIJ5zDw-4qLbMTVgqJbU=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/114634510323240651593?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Michael Blackburn",
+          "rating": 5,
+          "text": "",
+          "date": "2025-05-06T18:11:14.534Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJSEpxc3VNd2F6Ny1nRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVu9jN-6If1J4sjmleUvizzKFcjnVWQSxViP_W7-eMKxWI9qEEF=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110614838730149770723?hl=en",
+          "reviewerNumberOfReviews": 5,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Kelsey Loflin",
+          "rating": 5,
+          "text": "If you're lucky enough to swing by, DO IT. The crust is to DIE FOR. (Even two days later.) We always order a cheese pizza on our first visit anywhere new, but we will absolutely be back for the famed jalapeno popper pizza. (We actually had the pleasure of chatting with the woman who created it ... and obviously, she was awesome, too). 10/10. Go get pizza now!",
+          "date": "2025-05-03T13:44:38.515Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNZbXNxbDRnRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUxOtNqedV1TpXh_q4-ETAM8PgnVayQVJWjsaQ1oUTr3_JtgcmHqA=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/118413783643663092425?hl=en",
+          "reviewerNumberOfReviews": 8,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Janice Harris",
+          "rating": 5,
+          "text": "I try to go to the Hub a couple of Tuesdays a month.  That is when pizza is 179 a slice. It’s as big or possibly bigger than a Costco slice of pizza and 10 times better! Today I was able to redeem my free large cheese pizza for picking one of the numbers in the lotto. I had them put peppers, onions and olives on half that cheese pizza and they only charge me $1.50 it’s a good bargain and it’s a good bite. And the workers there are cheerful and kind and nice!",
+          "date": "2025-05-02T22:37:28.293Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNZNHNubWlBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKFGatQNz6bcahiYBzhTU0dpEjgv2cD2DkkB98pVbuc4A1jwg=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/106214326817474480096?hl=en",
+          "reviewerNumberOfReviews": 12,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Sheri Oar",
+          "rating": 5,
+          "text": "",
+          "date": "2025-05-02T03:07:03.023Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNWaU1YeXlBRRAB",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLjIGZBHiiEkwe3Fq3ZalQQee3Ifnsijq7nKGNOULS3Fl7A9A=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110614413335593719817?hl=en",
+          "reviewerNumberOfReviews": 1,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Tiffani Baker",
+          "rating": 5,
+          "text": "AMAZING!!! This pizza is sooooooooo fresh! Good portions and prices!!",
+          "date": "2025-04-25T18:45:18.870Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURvb1plR1N3EAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU3OidlzwZ9c5qEdSyChyq_RIRsUnZgAwaIwJSgYUNz2KuQHHbkgw=s1920-c-rp-mo-ba3-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/108682922473115263030?hl=en",
+          "reviewerNumberOfReviews": 44,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Billy Fielder",
+          "rating": 5,
+          "text": "Build your own! Delicious as always!",
+          "date": "2025-04-19T01:49:20.376Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUN3cW9xV09nEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKVTrS7PZ-ElWKbQzpjp7KA88hgz0d4VzE6r5uG6mCXfr1nTw=s1920-c-rp-mo-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/105552685320745366653?hl=en",
+          "reviewerNumberOfReviews": 4,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Olivia Williams",
+          "rating": 5,
+          "text": "This pizza location is the best in Southern Utah! It’s one of our favorites places to go with family and friends to enjoy some delicious pizza. Jancey’s jalapeño popper pizza will change your world! The best is the cheesy cow pie - it’s worth every bite especially when it’s not cut! Thank you for serving our community!",
+          "date": "2025-04-18T20:14:05.929Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNvMWFEM1dBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjU3KiZgRDz1EJaFGl0-8LeWPTiF41fxBn6X7xpJ2KDZYnyhoryA0A=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/110582911801842941182?hl=en",
+          "reviewerNumberOfReviews": 17,
+          "sentiment": "positive"
+        },
+        {
+          "author": "Trevor Williams",
+          "rating": 5,
+          "text": "The Hub is not only some of the best pizza in Cedar City, it is one of the best in Southern Utah! And the staff is so awesome. Not many places still do pizza by the slice, and this place still does. I highly recommend! And the prices are great for what you get, great quality food!",
+          "date": "2025-04-18T20:12:16.312Z",
+          "platform": "Google Places (Apify)",
+          "likesCount": 0,
+          "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUNvbGZfWVVBEAE",
+          "responseFromOwner": null,
+          "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJYV9byJrX75EvcsUX4ye7XhjP10zANkOWOdO_LrCeOO4DoGw=s1920-c-rp-mo-ba2-br100",
+          "reviewerUrl": "https://www.google.com/maps/contrib/101073733549777543950?hl=en",
+          "reviewerNumberOfReviews": 19,
+          "sentiment": "positive"
+        }
+      ],
+      "customerMoodAnalysis": {
+        "overallMood": "delighted",
+        "sentimentSummary": "Customers are genuinely thrilled with their experience. With an average 4.8/5 rating across 100 recent reviews, your restaurant consistently exceeds expectations.",
+        "sentimentDistribution": {
+          "ecstatic": 10,
+          "delighted": 80,
+          "satisfied": 7,
+          "neutral": 0,
+          "frustrated": 0,
+          "disappointed": 2,
+          "angry": 1
+        },
+        "keyMoodIndicators": [
+          {
+            "theme": "food quality",
+            "mentions": 22
+          },
+          {
+            "theme": "service excellence",
+            "mentions": 13
+          },
+          {
+            "theme": "slow service",
+            "mentions": 7
+          },
+          {
+            "theme": "atmosphere",
+            "mentions": 3
+          },
+          {
+            "theme": "overpriced",
+            "mentions": 2
+          },
+          {
+            "theme": "value for money",
+            "mentions": 1
+          },
+          {
+            "theme": "speed of service",
+            "mentions": 1
+          }
+        ],
+        "emotionalBreakdown": {
+          "joy": 33,
+          "satisfaction": 57,
+          "disappointment": 0,
+          "frustration": 0,
+          "anger": 2
+        },
+        "businessInsights": {
+          "strengthsPerceived": [
+            "Customers consistently praise the delicious taste and quality of the pizza, often mentioning it as the best they've had in the area. - social media marketing can showcase this strength",
+            "The staff is frequently highlighted for their friendliness, patience, and exceptional service, enhancing the overall dining experience. - review management can highlight this positive aspect",
+            "The restaurant's ability to accommodate special requests, such as changing orders from pickup to delivery, is highly appreciated by customers. - Boostly marketing services can amplify this"
+          ],
+          "improvementOpportunities": [
+            "Long wait times and slow service - Boostly marketing services can improve this",
+            "Negative reviews and reputation issues - review management can address this concern",
+            "Lack of atmosphere/ambiance awareness - social media marketing can improve this area"
+          ]
+        },
+        "detailedMetrics": {
+          "totalReviews": 100,
+          "averageRating": 4.8,
+          "ratingDistribution": {
+            "1": 3,
+            "2": 0,
+            "3": 1,
+            "4": 7,
+            "5": 89
+          },
+          "sentimentTrends": {
+            "trend": "stable",
+            "recentAverageRating": 4.6,
+            "previousAverageRating": 4.8,
+            "recentReviewsCount": 10
+          }
+        }
+      },
+      "examples": {
+        "positive": [
+          {
+            "author": "Greg Espinosa",
+            "rating": 5,
+            "text": "Great place",
+            "date": "2025-09-13T21:07:27.079Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pkU2NUUnFRalZMTVhOdVVGUTBRakZsWWpabFZsRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLvKEcCNuG7kq3LGQCN_s6_W6XaZkmneThbJky3__6H96dg6Q=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/102818137356765233910?hl=en",
+            "reviewerNumberOfReviews": 20
+          },
+          {
+            "author": "Mike Farr",
+            "rating": 5,
+            "text": "Excellent service! I placed an order on the toast app and couldn't remember if I selected delivery,  I called and they were more than happy to help! It was for pick up and they changed it to delivery.",
+            "date": "2025-09-13T01:31:11.562Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURIMnBuZW5BRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocI9hAcQeOJOsnPatnPJFQdPlK4sfatxwc2Y5nETMhCEhEeQEA=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/105630498878359547197?hl=en",
+            "reviewerNumberOfReviews": 4
+          },
+          {
+            "author": "Ty Palmer",
+            "rating": 5,
+            "text": "Hit the spot! We’ll definitely be back soon!",
+            "date": "2025-09-11T23:28:22.232Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2s1VVZFOU9NMjlqU1VOMmVtcGZjblUzUW5ZemJFRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWghG2KqDdBy5O_yNcX-AxE-DRr6HRIPN4SZK3izeUWlFh9lC9J=s1920-c-rp-mo-ba4-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/102116743421108808710?hl=en",
+            "reviewerNumberOfReviews": 104
+          }
+        ],
+        "neutral": [
+          {
+            "author": "Deborah garcia",
+            "rating": 3,
+            "text": "I love this place!  They serve the best pizza in Cedar, hands-down!   And, the customer service is exceptional!   I will always support them.\n\nUPDATE:  After 5 years of pizza here, we got one that was really bad!  I hope things are not changing with The Hub.  That would be really sad!    See attached pic of experience tonight.  It was NOT GOOD.   And I'm on the fence about going back.  So much grease... its nauseating!  We drive 20 min to get there, and I didnt check it because we've never had anything like this before.   When we got home, I was shocked!  So... IF I go back... that wont happen again!  It will be checked before we leave the store.",
+            "date": "2025-07-09T02:11:30.374Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURYOHNpQXF3RRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKEqHI2d8mxvj8u1Jd1wHQaWru2v57ANe2QpyIEXI1kVrOBmw=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/114928021441926873272?hl=en",
+            "reviewerNumberOfReviews": 16
+          }
+        ],
+        "negative": [
+          {
+            "author": "Zrd",
+            "rating": 1,
+            "text": "I ain't going to any pizza joint located between a funeral home and a clinic!\nJust imagine what could be in that chunk o pizza!",
+            "date": "2025-09-05T02:32:51.570Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pZd1JIUlFYelZ0U0dOMU1GQm1NRzUyWWs5aWVtYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLchphSy6M6ccJLoQ0XUol3sl0RO7_2p2IqJe7WSX6ZbLERAA=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/103740651835026917062?hl=en",
+            "reviewerNumberOfReviews": 4
+          },
+          {
+            "author": "Matthew Crawley",
+            "rating": 1,
+            "text": "1 hour wait for a pizza with 10% of the tables filled? Good luck.",
+            "date": "2025-07-26T22:59:04.922Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21kaGNIVXlVVVF0WVVoT2FtaFdUWGgwWDAwNFJVRRAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIAgBXJ8w9AJpZSoWLfGnJOGrTwIiVZ0cAiiHlv9QGESVw4cg=s1920-c-rp-mo-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/101488240753827219760?hl=en",
+            "reviewerNumberOfReviews": 4
+          },
+          {
+            "author": "John Sage",
+            "rating": 1,
+            "text": "We are locals. This place is TERRIBLE. Strip mall dining at its worst. Unbelievably slow. Three kids working behind the counter and they were clearly more interested in talking rather than working. We ordered two small pizzas and a salad. Had to ask THREE times to get our salad. Been waiting so long for our pizzas we may get up and leave soon. We will NEVER come back here again. Don’t waste your time coming here. Go to Wood Side, or anywhere else. What a joke. They make you pay in advance and once they get the money, you don’t matter anymore. Nice…. OWNERS: Your crew on 7/12/2025 cost you customers and represented your restaurant very poorly. AWFUL!",
+            "date": "2025-07-12T22:56:42.322Z",
+            "platform": "Google Places (Apify)",
+            "likesCount": 0,
+            "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25WcWRYUXRWazFtYzJWalVIWkNTMUp6VDI4MFZYYxAB",
+            "responseFromOwner": null,
+            "reviewerPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLkKbhVWl5Io5crTCLJRb5NvZfV2K6uajIoFx0xPTQxIzYxyA=s1920-c-rp-mo-ba2-br100",
+            "reviewerUrl": "https://www.google.com/maps/contrib/117830110048355253658?hl=en",
+            "reviewerNumberOfReviews": 15
+          }
+        ]
+      },
+      "trends": {
+        "ratingTrend": "stable",
+        "volumeTrend": "stable",
+        "responseRate": 0,
+        "averageResponseTime": "No responses"
+      },
+      "recommendations": [
+        {
+          "category": "growth",
+          "priority": "high",
+          "title": "Generate More Reviews",
+          "description": "Encourage satisfied customers to leave reviews",
+          "impact": "Increase online credibility and visibility"
+        }
+      ]
+    },
+    "socialMediaLinks": {
+      "facebook": "https://www.facebook.com/thehubpizzaco",
+      "instagram": "https://www.instagram.com/thehubpizzaco",
+      "twitter": null,
+      "youtube": null,
+      "tiktok": null,
+      "linkedin": null
+    },
+    "profileAnalysis": null,
+    "serpScreenshots": [],
+    "restaurantSearchScreenshot": null,
+    "calculatedScores": {
+      "search": 63,
+      "social": 100,
+      "local": 77,
+      "reviews": 96,
+      "overall": 84
+    },
+    "originalScores": {
+      "seo": 75,
+      "overallScore": 77,
+      "performance": 80,
+      "userExperience": 70
+    },
+    "migratedAt": "2025-09-16T00:37:21.297Z"
+  },
+  "metadata": {
+    "cachedAt": "2025-09-15T06:13:22.146Z",
+    "expiresAt": "2025-10-15T06:13:22.146Z",
+    "placeId": "ChIJB_oIt7phtYARXj_p25CII9M",
+    "restaurantName": "The Hub Pizza Co.",
+    "cacheVersion": "2.0.0"
+  }
+}
