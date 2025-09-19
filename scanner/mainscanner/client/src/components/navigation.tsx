@@ -37,7 +37,10 @@ export default function Navigation() {
             <a href="#about" className="text-gray-700 hover:text-[#28008F] transition-colors">
               About
             </a>
-            <Button className="bg-[#28008F] hover:bg-[#28008F]/90">
+            <Button
+              className="bg-[#28008F] hover:bg-[#28008F]/90"
+              onClick={() => window.location.href = '/demo'}
+            >
               Get Started
             </Button>
           </div>
@@ -66,7 +69,10 @@ export default function Navigation() {
             <a href="#about" className="block px-3 py-2 text-gray-700 hover:text-[#28008F]">
               About
             </a>
-            <Button className="w-full mt-2 bg-[#28008F] hover:bg-[#28008F]/90">
+            <Button
+              className="w-full mt-2 bg-[#28008F] hover:bg-[#28008F]/90"
+              onClick={() => window.location.href = '/demo'}
+            >
               Get Started
             </Button>
           </div>

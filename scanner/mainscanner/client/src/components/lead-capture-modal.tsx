@@ -152,11 +152,11 @@ export function LeadCaptureModal({
                   <div className="p-2 bg-white/20 rounded-lg">
                     <img src="/boostlylogo.png" alt="Boostly" className="h-6 w-6" />
                   </div>
-                  <h2 className="text-2xl font-bold">Get Your Free Analysis</h2>
+                  <h2 className="text-2xl font-bold">Drive more orders and reviews. Guaranteed.</h2>
                 </div>
-                
+
                 <p className="text-white/90">
-                  See how your restaurant performs online and get personalized recommendations to attract more customers
+                  Get your free analysis to see how your restaurant performs online and receive personalized recommendations.
                 </p>
               </div>
               
@@ -283,7 +283,7 @@ export function LeadCaptureModal({
                         Starting Analysis...
                       </span>
                     ) : (
-                      'Start Free Analysis'
+                      'Look at Your Results'
                     )}
                   </Button>
                   

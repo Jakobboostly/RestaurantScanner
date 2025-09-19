@@ -10,6 +10,7 @@ import RestaurantSearch from "@/components/restaurant-search";
 import ScanningAnimation from "@/components/scanning-animation";
 import EnhancedResultsDashboard from "@/components/enhanced-results-dashboard";
 import { RevenueLossGate } from "@/components/revenue-loss-gate";
+import { LeadCaptureModal, LeadData } from "@/components/lead-capture-modal";
 import LiveActivityFeed from "@/components/live-activity-feed";
 import { scanWebsite, getRestaurantDetails } from "@/lib/api";
 import { RestaurantSearchResult, ScanResult } from "@shared/schema";
@@ -32,6 +33,9 @@ export default function HomePage() {
   const [businessPhotos, setBusinessPhotos] = useState<string[]>([]);
   const [showRevenueLossGate, setShowRevenueLossGate] = useState(false);
   const [isAdminFlow, setIsAdminFlow] = useState(false);
+  const [showLeadCapture, setShowLeadCapture] = useState(false);
+  const [isLeadCaptureSubmitting, setIsLeadCaptureSubmitting] = useState(false);
+  const [pendingRestaurant, setPendingRestaurant] = useState<RestaurantSearchResult | null>(null);
   const { toast } = useToast();
 
 
@@ -75,8 +79,17 @@ export default function HomePage() {
 
       console.log('HomePage - setting scan result:', result);
       setScanResult(result);
-      console.log('HomePage - setting view state to results');
-      setViewState('results');
+
+      // Update status to show scan is complete
+      setScanProgress(100);
+      setScanStatus('Analysis complete! Preparing your results...');
+
+      // Wait a moment for the scan animation to complete, then show lead capture
+      setTimeout(() => {
+        setPendingRestaurant(restaurant);
+        setShowLeadCapture(true);
+        // Don't set view state to results yet - wait for lead capture
+      }, 2000); // Wait 2 seconds for scan animation to finish
       
     } catch (error) {
       console.error('Scan error:', error);
@@ -89,12 +102,77 @@ export default function HomePage() {
     }
   };
 
+  const handleLeadSubmit = async (leadData: LeadData) => {
+    setIsLeadCaptureSubmitting(true);
+
+    try {
+      // Prepare HubSpot submission data
+      const HUBSPOT_API_URL = 'https://api.hsforms.com/submissions/v3/integration/submit/3776858/d107313e-621e-4006-8993-db7f248d6cb3';
+
+      const data = {
+        fields: [
+          { name: 'email', value: leadData.email },
+          { name: 'firstname', value: leadData.name.split(' ')[0] || leadData.name },
+          { name: 'lastname', value: leadData.name.split(' ').slice(1).join(' ') || '' },
+          { name: 'phone', value: leadData.phone },
+          { name: 'company', value: leadData.restaurantName },
+          { name: 'lead_source', value: 'post_search_lead_gate' },
+          { name: 'form_source', value: 'scanner_lead_capture' },
+          { name: 'utm_source', value: 'lead_scanner' },
+          { name: 'utm_medium', value: 'web_app' },
+        ]
+      };
+
+      const response = await fetch(HUBSPOT_API_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+
+      if (response.status === 200) {
+        // Lead captured successfully, close modal and show results
+        setShowLeadCapture(false);
+        console.log('HomePage - setting view state to results after lead capture');
+        setViewState('results');
+      } else {
+        throw new Error('Failed to submit lead');
+      }
+    } catch (error) {
+      console.error('Error submitting lead:', error);
+      toast({
+        title: "Error",
+        description: "Failed to submit information. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLeadCaptureSubmitting(false);
+    }
+  };
+
+  const handleAdminBypass = () => {
+    // Admin bypass - close modal and show results without lead capture
+    setShowLeadCapture(false);
+    setViewState('results');
+  };
+
+  const handleAdminRevenueLossGate = () => {
+    // Admin Revenue Loss Gate - for testing purposes
+    setShowLeadCapture(false);
+    setIsAdminFlow(true);
+    setShowRevenueLossGate(true);
+    setViewState('results');
+  };
+
   const handleStartOver = () => {
     setViewState('search');
     setSelectedRestaurant(null);
     setScanResult(null);
     setScanProgress(0);
     setScanStatus('');
+    setShowRevenueLossGate(false);
+    setIsAdminFlow(false);
+    setShowLeadCapture(false);
+    setPendingRestaurant(null);
   };
 
   if (viewState === 'scanning' && selectedRestaurant) {
@@ -108,6 +186,22 @@ export default function HomePage() {
           placeId={selectedRestaurant.placeId}
           businessPhotos={businessPhotos}
           currentReview={currentReview}
+        />
+
+        {/* Lead Capture Modal (shows after scan completes) */}
+        <LeadCaptureModal
+          isOpen={showLeadCapture}
+          onClose={() => {
+            setShowLeadCapture(false);
+            setPendingRestaurant(null);
+            // Go back to search if they close without submitting
+            setViewState('search');
+          }}
+          onSubmit={handleLeadSubmit}
+          onAdminBypass={handleAdminBypass}
+          onAdminRevenueLossGate={handleAdminRevenueLossGate}
+          restaurantName={selectedRestaurant.name}
+          isSubmitting={isLeadCaptureSubmitting}
         />
       </div>
     );
@@ -550,8 +644,9 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <Button 
+            <Button
               size="lg"
               className="bg-white text-[#28008F] hover:bg-gray-100 px-10 py-4 font-semibold text-lg shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105"
               onClick={() => document.querySelector('#restaurant-search')?.scrollIntoView({ behavior: 'smooth' })}
@@ -559,9 +654,32 @@ export default function HomePage() {
               <Search className="w-5 h-5 mr-2" />
               Start Free Analysis
             </Button>
+
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-2 border-white text-white hover:bg-white hover:text-[#28008F] px-10 py-4 font-semibold text-lg transition-all duration-300"
+              onClick={() => window.location.href = '/demo'}
+            >
+              Schedule a Demo
+            </Button>
           </motion.div>
         </div>
       </section>
+
+      {/* Lead Capture Modal */}
+      <LeadCaptureModal
+        isOpen={showLeadCapture}
+        onClose={() => {
+          setShowLeadCapture(false);
+          setPendingRestaurant(null);
+        }}
+        onSubmit={handleLeadSubmit}
+        onAdminBypass={handleAdminBypass}
+        onAdminRevenueLossGate={handleAdminRevenueLossGate}
+        restaurantName={pendingRestaurant?.name || ''}
+        isSubmitting={isLeadCaptureSubmitting}
+      />
     </div>
   );
 }

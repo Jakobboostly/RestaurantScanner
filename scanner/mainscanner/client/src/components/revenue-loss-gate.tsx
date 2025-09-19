@@ -544,6 +544,17 @@ export function RevenueLossGate({ scanData, placeId, onClose, onContinue }: Reve
                         <p className="text-xs text-gray-600">monthly potential</p>
                       </div>
                     </div>
+
+                    {/* CTA Button */}
+                    <div className="mt-6">
+                      <button
+                        onClick={() => window.location.href = '/demo'}
+                        className="w-full bg-gradient-to-r from-green-600 to-emerald-600 text-white font-bold py-3 px-6 rounded-lg hover:from-green-700 hover:to-emerald-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                      >
+                        Start Growing Your Revenue Now →
+                      </button>
+                      <p className="text-xs text-gray-600 text-center mt-2">Get started with Boostly's proven growth strategies</p>
+                    </div>
                   </CardContent>
                 </Card>
               </motion.div>

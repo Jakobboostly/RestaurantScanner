@@ -6,11 +6,15 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import HomePage from "@/pages/home";
 import ScanViewPage from "@/pages/scan-view-page";
 import NotFound from "@/pages/not-found";
+import { BoostlyDemoLanding } from "@/components/boostly-demo-landing";
+import { ThankYouPage } from "@/components/thank-you-page";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={HomePage} />
+      <Route path="/demo" component={BoostlyDemoLanding} />
+      <Route path="/thank-you" component={ThankYouPage} />
       {/* Direct placeId URL for full scan view - must be after specific routes */}
       <Route path="/:placeId" component={ScanViewPage} />
       <Route component={NotFound} />

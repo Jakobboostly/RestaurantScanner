@@ -5,11 +5,11 @@ import { motion } from 'framer-motion';
 const stripMarkdownBold = (text: string) => {
   return text.replace(/\*\*(.*?)\*\*/g, '$1');
 };
-import { 
-  Search, 
-  Users, 
-  MapPin, 
-  Globe, 
+import {
+  Search,
+  Users,
+  MapPin,
+  Globe,
   Star,
   TrendingUp,
   Award,
@@ -42,7 +42,8 @@ import {
   PieChart,
   Smile,
   Meh,
-  Frown
+  Frown,
+  ArrowRight
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -682,6 +683,23 @@ export function PremiumScoreDashboard({ scanResult, restaurantName, placeId }: P
             <Sparkles className="w-8 h-8 text-[#9090FD]" />
           </div>
           <p className="text-lg text-gray-600">Professional Marketing Intelligence Dashboard</p>
+
+          {/* CTA Button */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="mt-6"
+          >
+            <button
+              onClick={() => window.location.href = '/demo'}
+              className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-[#28008F] to-[#4a1fb8] text-white font-bold text-lg rounded-xl hover:from-[#1f0068] hover:to-[#28008F] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl group"
+            >
+              <span className="mr-3">Get Professional Marketing Help</span>
+              <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" />
+            </button>
+            <p className="text-sm text-gray-500 mt-2">Transform these insights into real growth with Boostly</p>
+          </motion.div>
           
           {/* Restaurant Images */}
           {((scanResult.businessPhotos && scanResult.businessPhotos.length > 0) || (scanResult.businessProfile?.photos?.businessPhotos && scanResult.businessProfile.photos.businessPhotos.length > 0)) && (
