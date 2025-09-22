@@ -8,21 +8,22 @@ export default function Navigation() {
   return (
     <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-14 md:h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
-              <a 
-                href="https://www.boostly.com" 
-                target="_blank" 
+              <a
+                href="https://www.boostly.com"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center hover:opacity-80 transition-opacity duration-200"
               >
-                <img 
-                  src="/boostlylogo.png" 
-                  alt="Boostly Logo" 
-                  className="h-8 w-auto mr-3"
+                <img
+                  src="/boostlylogo.png"
+                  alt="Boostly Logo"
+                  className="h-6 md:h-8 w-auto mr-2 md:mr-3"
                 />
-                <span className="text-xl font-bold text-gray-900">Boostly Restaurant Health Scan</span>
+                <span className="text-sm md:text-xl font-bold text-gray-900 hidden sm:inline">Boostly Restaurant Health Scan</span>
+                <span className="text-sm font-bold text-gray-900 sm:hidden">Boostly</span>
               </a>
             </div>
           </div>
