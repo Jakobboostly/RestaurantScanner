@@ -119,6 +119,12 @@ vite.config.ts.*
 # Lead storage (Phase 1)
 leads/
 
+# Scan cache (contains API keys in URLs)
+scan-cache/
+
+# Export files (may contain sensitive data)
+exports/
+
 # Certificates
 *.pem
 *.crt
