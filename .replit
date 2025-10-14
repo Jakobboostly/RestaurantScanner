@@ -1,9 +1,9 @@
-modules = ["nodejs-20", "postgresql-16", "python-3.11", "web"]
+modules = ["nodejs-20", "web", "bash"]
 run = "npm run dev"
 hidden = [".config", ".git", "generated-icon.png", "node_modules", "dist"]
 
 [nix]
-channel = "stable-24_05"
+channel = "stable-25_05"
 packages = ["chromium", "chromedriver"]
 
 [deployment]
@@ -25,13 +25,19 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "workflow.run"
-args = "Start application"
+args = "Restaurant Scanner"
 
 [[workflows.workflow]]
-name = "Start application"
+name = "Restaurant Scanner"
 author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "npm run dev"
+args = "cd scanner/mainscanner && npm run dev"
 waitForPort = 5000
+
+[workflows.workflow.metadata]
+outputType = "webview"
+
+[agent]
+expertMode = true
