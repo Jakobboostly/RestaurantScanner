@@ -120,6 +120,7 @@ export default function HomePage() {
           { name: 'form_source', value: 'scanner_lead_capture' },
           { name: 'utm_source', value: 'lead_scanner' },
           { name: 'utm_medium', value: 'web_app' },
+          { name: 'hubspot_owner_id', value: '75929557' },
         ]
       };
 
