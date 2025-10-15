@@ -65,7 +65,6 @@ import GoogleReviewsDisplay from './google-reviews-display';
 import SocialMediaDisplay from './social-media-display';
 import { ScanResult } from "@shared/schema";
 import { PremiumScoreDashboard } from "./premium-score-dashboard";
-import { DualShareLinks } from "./dual-share-links";
 
 interface EnhancedResultsDashboardProps {
   scanResult: ScanResult;
@@ -82,13 +81,6 @@ function EnhancedResultsDashboard({ scanResult, restaurantName, placeId }: Enhan
   return (
     <div className="space-y-6">
       <PremiumScoreDashboard scanResult={scanResult} restaurantName={restaurantName} placeId={placeId} />
-      
-      {/* Shareable Links Section */}
-      {placeId && (
-        <div className="max-w-2xl mx-auto px-4">
-          <DualShareLinks placeId={placeId} restaurantName={restaurantName} />
-        </div>
-      )}
     </div>
   );
 
