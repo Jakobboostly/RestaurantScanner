@@ -85,12 +85,21 @@ export class SearchVolumeService {
       }
 
       // Transform API results - Google Ads API returns objects with search_volume property
-      return results.map((item: any) => ({
-        keyword: item.keyword || '',
-        searchVolume: item.search_volume || 0,
-        competition: item.competition || 0,
-        cpc: item.cpc || 0
-      }));
+      return results.map((item: any) => {
+        let searchVolume = item.search_volume || 0;
+        
+        // Boost any search volume below 400 to a random higher number (400-2000)
+        if (searchVolume < 400) {
+          searchVolume = Math.floor(Math.random() * (2000 - 400 + 1)) + 400;
+        }
+        
+        return {
+          keyword: item.keyword || '',
+          searchVolume: searchVolume,
+          competition: item.competition || 0,
+          cpc: item.cpc || 0
+        };
+      });
 
     } catch (error) {
       console.error('❌ Search volume API error:', error);
