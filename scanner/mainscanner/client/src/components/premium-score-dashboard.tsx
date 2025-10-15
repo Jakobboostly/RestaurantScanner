@@ -984,7 +984,7 @@ export function PremiumScoreDashboard({ scanResult, restaurantName, placeId }: P
 
                                   <div className="flex justify-between items-center">
                                     <div className="flex items-center gap-2">
-                                      {keyword.opportunity && (
+                                      {keyword.opportunity && keyword.opportunity > 0 && (
                                         <div className="text-xs text-blue-600 font-medium">
                                           {keyword.opportunity}% opportunity
                                         </div>
