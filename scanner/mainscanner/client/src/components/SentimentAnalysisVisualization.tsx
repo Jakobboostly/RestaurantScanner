@@ -270,50 +270,6 @@ export function SentimentAnalysisVisualization({ moodAnalysis, scanResult }: Sen
         </motion.div>
       )}
 
-      {/* Emotional Breakdown */}
-      {moodAnalysis.emotionalBreakdown && Object.keys(moodAnalysis.emotionalBreakdown).length > 0 && (
-        <motion.div 
-          className="bg-white rounded-xl p-6 border border-gray-200"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-        >
-          <div className="flex items-center gap-2 mb-4">
-            <Brain className="w-5 h-5 text-purple-600" />
-            <h5 className="font-semibold text-gray-800">Emotional Keywords Found</h5>
-            <span className="text-xs text-gray-500 ml-2">(word count in all reviews)</span>
-            <div className="group relative ml-2">
-              <Info className="w-4 h-4 text-gray-400 cursor-help" />
-              <div className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 hidden group-hover:block w-72 p-3 bg-gray-900 text-white text-xs rounded-lg shadow-lg z-10">
-                <div className="font-semibold mb-1">Emotional keyword analysis:</div>
-                <div className="space-y-1">
-                  <div>• Counts how many times specific emotional words appear across all {totalReviews} reviews</div>
-                  <div>• Shows which emotions customers express most often</div>
-                  <div>• Higher numbers = more frequent emotional language</div>
-                </div>
-                <div className="mt-2 text-yellow-200">💡 This is different from the pie chart above, which categorizes entire reviews</div>
-              </div>
-            </div>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-            {Object.entries(moodAnalysis.emotionalBreakdown).map(([emotion, count]: [string, any], index) => (
-              <motion.div 
-                key={emotion}
-                className="text-center p-4 bg-gray-50 rounded-lg"
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.3, delay: 0.1 * index }}
-                whileHover={{ scale: 1.05 }}
-              >
-                <div className="text-2xl font-bold text-orange-600 bg-orange-50 px-3 py-1 rounded">{count}</div>
-                <div className="text-sm font-medium text-gray-600 mt-2 capitalize">{emotion}</div>
-                <div className="text-xs text-gray-400">mentions</div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-      )}
     </div>
   );
 }
