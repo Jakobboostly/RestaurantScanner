@@ -594,7 +594,7 @@ export default function HomePage() {
                 Ready to See Your Restaurant's Health Score?
               </h3>
               <p className="text-xl text-purple-100 mb-8 max-w-2xl mx-auto">
-                Get your free scan in 30 seconds. No signup required.
+                Let us walk you through it
               </p>
               <Button
                 size="lg"
@@ -604,7 +604,7 @@ export default function HomePage() {
                 className="bg-white text-[#28008F] hover:bg-gray-100 px-10 py-6 text-lg font-bold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
               >
                 <Search className="w-5 h-5 mr-2" />
-                Get Your Free Scan Now
+                Show Me My Results
               </Button>
             </div>
           </motion.div>
