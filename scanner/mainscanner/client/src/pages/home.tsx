@@ -448,7 +448,7 @@ export default function HomePage() {
                 <div className="flex items-center justify-between">
                   <div>
                     <h4 className="text-white font-bold text-lg">Your restaurant</h4>
-                    <p className="text-purple-100 text-sm">City, State</p>
+                    <p className="text-purple-100 text-sm">Your city, Your state</p>
                   </div>
                   <div className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg">
                     <span className="text-white font-semibold">Score: 62/100</span>
