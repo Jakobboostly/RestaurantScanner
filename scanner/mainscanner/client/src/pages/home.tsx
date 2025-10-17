@@ -594,7 +594,7 @@ export default function HomePage() {
                 Ready to See Your Restaurant's Health Score?
               </h3>
               <p className="text-xl text-purple-100 mb-8 max-w-2xl mx-auto">
-                Let us walk you through it
+                Let us walk you through it.
               </p>
               <Button
                 size="lg"
