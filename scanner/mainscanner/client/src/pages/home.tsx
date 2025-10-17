@@ -425,6 +425,89 @@ export default function HomePage() {
 
           {/* Live Activity Feed */}
           <LiveActivityFeed />
+
+          {/* Scan Preview Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
+            className="mt-12 max-w-6xl mx-auto"
+          >
+            <div className="text-center mb-8">
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
+                Here's What Your Scan Will Look Like
+              </h3>
+              <p className="text-lg text-gray-600">
+                Get instant insights like these in 30 seconds
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">
+              {/* Preview Header */}
+              <div className="bg-gradient-to-r from-[#28008F] to-purple-600 px-6 py-4">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <h4 className="text-white font-bold text-lg">Sample Restaurant Name</h4>
+                    <p className="text-purple-100 text-sm">City, State</p>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg">
+                    <span className="text-white font-semibold">Score: 78/100</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Preview Content - Performance Scores */}
+              <div className="p-6 grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="text-center p-4 bg-green-50 rounded-lg border border-green-200">
+                  <div className="text-3xl font-bold text-green-600 mb-1">92</div>
+                  <div className="text-sm text-gray-600">Performance</div>
+                </div>
+                <div className="text-center p-4 bg-blue-50 rounded-lg border border-blue-200">
+                  <div className="text-3xl font-bold text-blue-600 mb-1">85</div>
+                  <div className="text-sm text-gray-600">SEO Score</div>
+                </div>
+                <div className="text-center p-4 bg-yellow-50 rounded-lg border border-yellow-200">
+                  <div className="text-3xl font-bold text-yellow-600 mb-1">73</div>
+                  <div className="text-sm text-gray-600">Mobile UX</div>
+                </div>
+                <div className="text-center p-4 bg-purple-50 rounded-lg border border-purple-200">
+                  <div className="text-3xl font-bold text-purple-600 mb-1">4.6</div>
+                  <div className="text-sm text-gray-600">Rating</div>
+                </div>
+              </div>
+
+              {/* Preview - Key Insights */}
+              <div className="px-6 pb-6">
+                <div className="bg-gradient-to-br from-gray-50 to-white rounded-lg border border-gray-200 p-5">
+                  <h5 className="font-bold text-gray-900 mb-3 flex items-center gap-2">
+                    <Target className="w-5 h-5 text-[#28008F]" />
+                    Top Opportunities
+                  </h5>
+                  <div className="space-y-2">
+                    <div className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-orange-500 rounded-full mt-2"></div>
+                      <p className="text-gray-700 text-sm">You're not ranking for "best Italian restaurant near me" - 8,200 monthly searches</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-orange-500 rounded-full mt-2"></div>
+                      <p className="text-gray-700 text-sm">Your website loads 3.2x slower than top competitors</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-orange-500 rounded-full mt-2"></div>
+                      <p className="text-gray-700 text-sm">Missing 127 local citations compared to competitors</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* CTA Footer */}
+              <div className="bg-gray-50 px-6 py-4 border-t border-gray-200">
+                <p className="text-center text-gray-600 text-sm">
+                  <span className="font-semibold text-[#28008F]">Plus much more:</span> Keyword rankings, competitor analysis, review sentiment, and actionable recommendations
+                </p>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 
