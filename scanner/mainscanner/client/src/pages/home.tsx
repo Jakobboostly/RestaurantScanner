@@ -599,10 +599,7 @@ export default function HomePage() {
               <Button
                 size="lg"
                 onClick={() => {
-                  document.getElementById('restaurant-search')?.scrollIntoView({ 
-                    behavior: 'smooth',
-                    block: 'center'
-                  });
+                  window.location.href = '/demo';
                 }}
                 className="bg-white text-[#28008F] hover:bg-gray-100 px-10 py-6 text-lg font-bold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
               >
