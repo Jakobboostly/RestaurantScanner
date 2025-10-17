@@ -109,7 +109,7 @@ export default function LiveActivityFeed() {
 
     const updateDisplayedActivities = () => {
       const nextActivities = [];
-      for (let i = 0; i < Math.min(3, allActivities.length); i++) {
+      for (let i = 0; i < Math.min(6, allActivities.length); i++) {
         const activityIndex = (currentIndex + i) % allActivities.length;
         nextActivities.push({
           ...allActivities[activityIndex],
@@ -122,8 +122,8 @@ export default function LiveActivityFeed() {
 
     updateDisplayedActivities();
 
-    // Only rotate if we have more than 3 activities
-    if (allActivities.length > 3) {
+    // Only rotate if we have more than 6 activities
+    if (allActivities.length > 6) {
       const rotateInterval = setInterval(() => {
         setCurrentIndex((prev) => (prev + 1) % allActivities.length);
       }, 4000);
