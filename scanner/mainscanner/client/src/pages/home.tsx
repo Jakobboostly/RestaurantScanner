@@ -581,6 +581,36 @@ export default function HomePage() {
               </Card>
             </motion.div>
           </div>
+
+          {/* CTA Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+            className="mt-16 text-center"
+          >
+            <div className="bg-gradient-to-r from-[#28008F] to-purple-600 rounded-2xl p-8 md:p-12 shadow-2xl">
+              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                Ready to See Your Restaurant's Health Score?
+              </h3>
+              <p className="text-xl text-purple-100 mb-8 max-w-2xl mx-auto">
+                Get your free scan in 30 seconds. No signup required.
+              </p>
+              <Button
+                size="lg"
+                onClick={() => {
+                  document.getElementById('restaurant-search')?.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'center'
+                  });
+                }}
+                className="bg-white text-[#28008F] hover:bg-gray-100 px-10 py-6 text-lg font-bold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+              >
+                <Search className="w-5 h-5 mr-2" />
+                Get Your Free Scan Now
+              </Button>
+            </div>
+          </motion.div>
         </div>
       </section>
 
