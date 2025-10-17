@@ -447,31 +447,31 @@ export default function HomePage() {
               <div className="bg-gradient-to-r from-[#28008F] to-purple-600 px-6 py-4">
                 <div className="flex items-center justify-between">
                   <div>
-                    <h4 className="text-white font-bold text-lg">Sample Restaurant Name</h4>
+                    <h4 className="text-white font-bold text-lg">Your restaurant</h4>
                     <p className="text-purple-100 text-sm">City, State</p>
                   </div>
                   <div className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg">
-                    <span className="text-white font-semibold">Score: 78/100</span>
+                    <span className="text-white font-semibold">Score: 62/100</span>
                   </div>
                 </div>
               </div>
 
               {/* Preview Content - Performance Scores */}
               <div className="p-6 grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div className="text-center p-4 bg-green-50 rounded-lg border border-green-200">
-                  <div className="text-3xl font-bold text-green-600 mb-1">92</div>
+                <div className="text-center p-4 bg-orange-50 rounded-lg border border-orange-200">
+                  <div className="text-3xl font-bold text-orange-600 mb-1">68</div>
                   <div className="text-sm text-gray-600">Performance</div>
                 </div>
-                <div className="text-center p-4 bg-blue-50 rounded-lg border border-blue-200">
-                  <div className="text-3xl font-bold text-blue-600 mb-1">85</div>
+                <div className="text-center p-4 bg-yellow-50 rounded-lg border border-yellow-200">
+                  <div className="text-3xl font-bold text-yellow-600 mb-1">71</div>
                   <div className="text-sm text-gray-600">SEO Score</div>
                 </div>
-                <div className="text-center p-4 bg-yellow-50 rounded-lg border border-yellow-200">
-                  <div className="text-3xl font-bold text-yellow-600 mb-1">73</div>
+                <div className="text-center p-4 bg-orange-50 rounded-lg border border-orange-200">
+                  <div className="text-3xl font-bold text-orange-600 mb-1">59</div>
                   <div className="text-sm text-gray-600">Mobile UX</div>
                 </div>
-                <div className="text-center p-4 bg-purple-50 rounded-lg border border-purple-200">
-                  <div className="text-3xl font-bold text-purple-600 mb-1">4.6</div>
+                <div className="text-center p-4 bg-blue-50 rounded-lg border border-blue-200">
+                  <div className="text-3xl font-bold text-blue-600 mb-1">4.2</div>
                   <div className="text-sm text-gray-600">Rating</div>
                 </div>
               </div>
